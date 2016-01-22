@@ -49,7 +49,7 @@ Features: GSS-Negotiate IDN IPv6 Largefile NTLM SSL libz
 
 You can also install cURL on Microsoft Windows. To do so, visit
 the [cURL homepage](http://www.curl.com/) and download the executable
-from the[Downloads page](http://www.curl.com/download/). The Windows
+from the [Downloads page](http://www.curl.com/download/). The Windows
 binary will require installation of some Microsoft Visual C++ libraries
 to work correctly.
 
@@ -206,7 +206,7 @@ the Identity API sservice is used in the following example. To query the
 service, you need your Rackspace Cloud account username and API key.
 Instructions for locating these credentials are documented in [View and
 Reset your API
-Key](/how-to/view-and-reset-your-api-key).
+Key](http://support-dev.ipa.rackspace.com/how-to/view-and-reset-your-api-key/).
 
 Authenticating requires sending a POST request to the Identity service
 with a document that contains your Cloud credentials. You can submit XML
