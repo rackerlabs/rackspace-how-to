@@ -56,19 +56,17 @@ Perform the following steps:
 4.  On the machine where your existing database is currently located,
     run the following MySQL command to export your database:
 
-<!-- -->
-
          mysqldump -u username -p database_name > database_name.sql
+        
 
-          `database_name` is the name of your existing database.
+- `database_name` is the name of your existing database.
 
-          `database_name.sql` is the name of the exported database file.
+- `database_name.sql` is the name of the exported database file.
 
-
-          Replace `username` with the username you use to access the
+- Replace `username` with the username you use to access the
 original database.
 
-          **Note**: If you are creating a dump from a Cloud Databases
+  **Note**: If you are creating a dump from a Cloud Databases
 Instance, see [exporting
 data](/how-to/exporting-data-from-mysql)
 for information on how to perform this dump.
@@ -78,31 +76,30 @@ for information on how to perform this dump.
 6.  With the .sql file copied to your Cloud Server, use ssh to log into
     the Cloud Server.
 7.  If you don't have a MySQL client installed on your server, install
-    it now. On Ubuntu and Debian, install the client with the following
+    it now. 
+- On Ubuntu and Debian, install the client with the following
     command:
 
-<!-- -->
+      sudo apt-get install mysql-client
 
-         sudo apt-get install mysql-client
+- On Fedora and CentOS, install the client with this command:
 
-           On Fedora and CentOS, install the client with this command:
+      sudo yum install mysql
 
-         sudo yum install mysql
 
 8.  Run the following MySQL import command, substituting that long
     public hostname you copied from the Control Panel for the `hostname`
     in the command:
 
-<!-- -->
-
          mysql -h 31blah2d.rackspaceclouddb.com -u username -p database_name < database_name.sql
+         
 
-           Replace `username` with the username you use to access the
+- Replace `username` with the username you use to access the
 database.
 
-`     database_name` is the name of the database.
+- `database_name` is the name of the database.
 
-           The database is imported and ready to accept new data.
+  The database is imported and ready to accept new data.
 
 Importing to a Cloud Database with public access (HA group or Cloud Load Balancer)
 ----------------------------------------------------------------------------------
@@ -135,37 +132,32 @@ Perform the following steps:
 4.  On the machine where your existing database is currently located,
     run the following MySQL command to export your database:
 
-<!-- -->
-
          mysqldump -u username -p database_name > database_name.sql
 
-          `database_name` is the name of your existing database.
+- `database_name` is the name of your existing database.
 
-          `database_name.sql` is the name of the exported database file.
+- `database_name.sql` is the name of the exported database file.
 
 
-          Replace `username` with the username you use to access the
+- Replace `username` with the username you use to access the
 original database.
 
-          **Note**: If you are creating a dump from a Cloud Databases
+  **Note**: If you are creating a dump from a Cloud Databases
 Instance, see [exporting
 data](/how-to/exporting-data-from-mysql)
 for information on how to perform this dump.
-
 5.  Run the following MySQL import command, substituting that long
     public hostname you copied from the Control Panel for the `hostname`
     in the command:
 
-<!-- -->
-
          mysql -h hostname -u username -p database_name < database_name.sql
 
-           Replace `username` with the username you use to access the
+- Replace `username` with the username you use to access the
 database.
 
-`     database_name` is the name of the database.
+- `database_name` is the name of the database.
 
-           The database is imported and ready to accept new data.
+  The database is imported and ready to accept new data.
 
 Best Practices
 --------------
