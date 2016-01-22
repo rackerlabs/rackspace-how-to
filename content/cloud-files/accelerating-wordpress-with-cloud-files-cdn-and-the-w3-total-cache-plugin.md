@@ -14,7 +14,7 @@ You can enhance your WordPress blog by using Cloud Files with content delivery n
 
 The following steps are best practices and have been tested and verified to optimize performance on a default installation of WordPress with the default theme. This process was last tested using WordPress version 3.8 and W3 Total Cache plugin version 0.9.3.
 
-**Note:** This article assumes that you have already completed the installation of your WordPress website and database. If you have not completed this, go [to Installing WordPress on Cloud Sites](/how-to/installing-wordpress-on-cloud-sites).
+**Note:** This article assumes that you have already completed the installation of your WordPress website and database. If you have not completed this, go [to Installing WordPress on Cloud Sites](http://support-dev.ipa.rackspace.com/how-to/installing-wordpress-on-cloud-sites/).
 
 ### Step 1
 
