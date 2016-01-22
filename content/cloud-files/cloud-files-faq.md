@@ -99,8 +99,8 @@ you can use either the Cloud Files user interface in the Rackspace Cloud
 Control Panel or one of our programming interfaces.
 
 Please see the [How do I use Cloud Files and
-CDN?](/how-to/getting-started-with-cloud-files-and-cdn-0)
-Knowledge Center article for more details.
+CDN?](http://support-dev.ipa.rackspace.com/how-to/getting-started-with-cloud-files-and-cdn-0/)
+How-To article for more details.
 
 #### Where can I find Cloud Files documentation?
 
