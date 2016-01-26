@@ -4,8 +4,8 @@ title: Monitoring entities with Rackspace Intelligence
 type: article
 created_date: '2015-07-17'
 created_by: Rose Coste
-last_modified_date: '2015-08-17'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-26'
+last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -37,8 +37,8 @@ on the list of entities:
 ### Sort entities
 
 You can sort the list of monitored entities by entity name, by the
-number of alarms reported for each entity in the Critical, Warning, and
-OK categories, and by the number of monitoring checks reported for each
+number of alarms reported for each entity in the **Critical**, **Warning**, and
+**OK** categories, and by the number of monitoring checks reported for each
 entity.
 
 ### View the details of an entity
@@ -59,10 +59,12 @@ Panel or by logging in to the server itself.
 
 ### Create an entity
 
-1.  To create a new entity, on the Monitoring page, click **Create
+To create a new entity:
+
+1.  On the **Monitoring** page, click **Create
     Entity**.
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-monitoring-create-entity-button.png" width="606" height="207" />
+        <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-monitoring-create-entity-button.png" width="606" height="207" />
 
 2.  Type a name for your entity and click **Create Entity.**
 
@@ -90,7 +92,9 @@ You can perform the following updates on an entity:
 
 ### Rename an entity
 
-1.  To rename an entity, select **Rename Entity** from the
+To rename an entity:
+
+1.  Select **Rename Entity** from the
     **Actions** menu.
 2.  Type a new name in the **Rename Entity** box, and then
     click **Rename**.
@@ -102,7 +106,9 @@ The new name appears on the entity details page.
 You can add one or more IP addresses to an entity. You can reference
 these IP addresses by the checks on the entity.
 
-1.  To add one or more IP addresses, select **Add IP** from the
+To add one or more IP addresses:
+
+1.  Select **Add IP** from the
     **Actions** menu..
 2.  On the **IP Addresses** page, specify a label for the IP address,
     type the numbers for the IP address, and then click **Add**.
@@ -113,7 +119,9 @@ The IP addresses that you added appear on the entity details page.
 
 ### Delete an entity
 
-1.  To delete an entity, select **Delete Entity** from the
+To delete an entity:
+
+1.  Select **Delete Entity** from the
     **Actions** menu.
 2.  To confirm that you want to permanently delete the entity,
     click **Delete**.
@@ -123,16 +131,18 @@ monitored by Rackspace.
 
 ### Create a check for an entity
 
-1.  To create a check for an entity, select **Create Check** from the
+To create a check for an entity:
+
+1.  Select **Create Check** from the
     **Actions** menu.
 2.  Select a check from the **Check Type** list, and then enter all the
     required information.
 
-**Note:** Different check types require different values of input. For
-more information, see [Working with
-checks.](/how-to/working-with-checks)
+        **Note:** Different check types require different values of input. For
+        more information, see [Working with
+        checks](/how-to/working-with-checks).
 
-1.  Click **Create Check**.
+3.  Click **Create Check**.
 
 Rackspace Intelligence creates the check and displays the details on the
 check details page. If your check requires a monitoring agent to be
@@ -141,19 +151,21 @@ Details** section.
 
 ### Create a suppression
 
-1.  To create a suppression, select **Create Suppression** from the
+To create a suppression:
+
+1.  Select **Create Suppression** from the
     **Actions** menu.
 
-On the **Create a Suppression** page, your entity is displayed in
-the **Suppression Targets** section.
+        On the **Create a Suppression** page, your entity is displayed in
+        the **Suppression Targets** section.
 
-1.  Type a name for your suppression, and specify the start and
+2.  Type a name for your suppression, and specify the start and
     end dates.
-2.  To add an additional entity to this supression, click **Add
-    Entities **and select one or more entities.
-3.  Click **Create Suppression**.
+3.  To add an additional entity to this supression, click **Add
+    Entities** and select one or more entities.
+4.  Click **Create Suppression**.
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-entities-create-suppression.png" width="899" height="607" />
+        <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/intelligence-entities-create-suppression.png" width="899" height="607" />
 
 5.  When asked to confirm that you want to create a suppression,
     click **Create Suppression Now**.

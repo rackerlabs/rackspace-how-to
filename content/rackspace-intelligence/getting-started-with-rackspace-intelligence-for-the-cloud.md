@@ -4,8 +4,8 @@ title: Getting started with Rackspace Intelligence for the cloud
 type: article
 created_date: '2015-10-20'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-01-26'
+last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -46,7 +46,7 @@ both cloud and dedicated devices, it is now
 named *Rackspace* Intelligence. The Rackspace Intelligence team is working
 to add support for dedicated accounts.
 
-### Before you begin using Rackspace Intelligence*
+### Before you begin using Rackspace Intelligence
 
 You can use Rackspace Intelligence most effectively if you prepare
 yourself by learning its terminology and exploring its user interface.

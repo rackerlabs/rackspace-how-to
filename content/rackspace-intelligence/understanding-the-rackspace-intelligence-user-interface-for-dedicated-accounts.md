@@ -4,8 +4,8 @@ title: Understanding the Rackspace Intelligence User Interface for dedicated acc
 type: article
 created_date: '2015-10-01'
 created_by: Constanze Kratel
-last_modified_date: '2015-10-16'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-26'
+last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -27,9 +27,9 @@ You can also examine different aspects of how Rackspace Intelligence is
 configured to monitor your system by accessing the following sections
 from the header:
 
--   **Monitor**
--   **Notify**
--   **Visualize**
+- **Monitor**
+- **Notify**
+- **Visualize**
 
 Within each section, you can refine your focus by choosing from the
 offerings in that section. For example, in the **Monitor** section, you can
@@ -38,11 +38,11 @@ choose to work with entities or open alerts.
 Customers with dedicated accounts can use Rackspace Intelligence
 to view information about the following items:
 
--   Entities monitored by Rackspace Intelligence
--   Open alerts
--   Checks
--   Notifications
--   Notification plans
+- Entities monitored by Rackspace Intelligence
+- Open alerts
+- Checks
+- Notifications
+- Notification plans
 
 You can also use the Rackspace Intelligence dashboard to [view and
 generate graphs to visualize infrastructure

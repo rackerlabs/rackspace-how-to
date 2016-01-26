@@ -4,28 +4,18 @@ title: Log in to Rackspace Intelligence for dedicated accounts
 type: article
 created_date: '2015-10-07'
 created_by: Constanze Kratel
-last_modified_date: '2015-10-30'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-01-26'
+last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
-
-<div class="content">
-
-<div
-class="field field-name-body field-type-text-with-summary field-label-hidden">
-
-<div class="field-items">
-
-<div class="field-item even">
 
 To use Rackspace Intelligence, you must have a dedicated Rackspace
 customer account and you must be logged in to the
 [MyRackspace Customer Portal](https://my.rackspace.com) portal for that account.
 Rackspace Intelligence has no separate login process.
 
-To access Rackspace Intelligence
---------------------------------
+To access Rackspace Intelligence:
 
 1.  Go to [MyRackspace Customer Portal](https://my.rackspace.com) and log in to the portal by
     providing your **Rackspace Account Number**, **Username** and
@@ -50,19 +40,3 @@ accounts](/how-to/working-with-alarms-checks-entities-notifications-and-notifica
 and [Understanding the Rackspace Intelligence user interface for
 dedicated
 accounts](/how-to/understanding-the-rackspace-intelligence-user-interface-for-dedicated-accounts).
-
-
-
-
-
-
-
-
-
-</div>
-
-</div>
-
-</div>
-
-</div>

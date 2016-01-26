@@ -4,7 +4,7 @@ title: Working with alarms
 type: article
 created_date: '2015-07-31'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-13'
+last_modified_date: '2016-01-26'
 last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
@@ -18,56 +18,55 @@ alarm names listed with it.
 
 **agent.cpu**:
 
--   CPU usage
+- CPU usage
 
 **agent.filesystem**:
 
--   Filesystem usage
+- Filesystem usage
 
 **agent.load\_average**:
 
--   High load average
+- High load average
 
 **agent.memory**:
 
--   Memory usage
+- Memory usage
 
 **agent.mysql**:
 
--   Connected threads
+- Connected threads
 
 **agent.network**:
 
--   Network transmit rate
--   Network receive rate
+- Network transmit rate
+- Network receive rate
 
 **remote.dns**:
 
--   DNS record address match
--   SPF TXT record
+- DNS record address match
+- SPF TXT record
 
 **remote.http**:
 
--   Body match - string found
--   Body match - string not found
--   Connection time
--   Status code
--   SSL certificate expiration time
+- Body match - string found
+- Body match - string not found
+- Connection time
+- Status code
+- SSL certificate expiration time
 
 **remote.ping:**
 
--   Ping packet loss
+- Ping packet loss
 
 **remote.ssh**:
 
--   SSH fingerprint match
+- SSH fingerprint match
 
 **remote.tcp**:
 
--   Connection time
+- Connection time
 
-Before you can create an alarm, you must have [created a
-check](/how-to/working-with-checks).
+Before you can create an alarm, you must have [created a check](/how-to/working-with-checks).
 
 ### Create an alarm
 
@@ -75,6 +74,7 @@ To create a new alarm, complete the following steps:
 
 1.  Log in to the [Rackspace Intelligence
     interface](http://intelligence.rackspace.com).
+
 2.  In the **Monitoring** section, click the entity for which you want
     to define an alarm.
 
@@ -88,6 +88,7 @@ To create a new alarm, complete the following steps:
 
 3.  In the **Monitoring Checks** section of the entity details page,
     click the check for which you want to create the alarm.
+
 4.  On the check details page, scroll down to the **Monitoring
     Alarms** section, and click **Create Alarm**.
     Rackspace Intelligence automatically suggests the appropriate alarm
@@ -95,29 +96,34 @@ To create a new alarm, complete the following steps:
     create an alarm for the CPU check type, Rackspace Intelligence
     automatically guides you through the steps for creating a CPU
     alarm.
-    **Note:** If you want to create an alarm for an
-    [agent check type](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#agent-check-types),
-    you must install the Rackspace monitoring agent on the server.
-    Rackspace Intelligence creates an alarm without the agent installed,
-    but you cannot view any metrics for this alarm. See [Creating an
-    alarm for an agent check type without an
-    agent installed.](#createagenttypealarmwithoutagent)
+
+       **Note:** If you want to create an alarm for an
+       [agent check type](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#agent-check-types),
+       you must install the Rackspace monitoring agent on the server.
+       Rackspace Intelligence creates an alarm without the agent installed,
+       but you cannot view any metrics for this alarm. See [Creating an
+       alarm for an agent check type without an
+       agent installed.](#createagenttypealarmwithoutagent).
+
 5.  In the **Choose Alarm Type** section, select the type of alarm, and
     then click **Next Step**.
     The wizard continues to guide you through the steps of setting up
     the alarm. If you selected **Write your own alarm
     criteria (Advanced)** instead, you are presented with an interface
     that lets you define a custom alarm script.
+
 6.  In the **Alarm Details** section of the next page, type a name for
     the alarm, and then select a notification plan from the
     **Notification Plan** list.
+
 7.  In the **Alarm Settings** section, define the criteria for
     your alarm. You must define a threshold for when a Warning is issued
     and a threshold for when the situation becomes Critical. For a CPU
     alarm, for example, the following settings are recommended:
-    -   Warning Threshold = 60
-    -   Critical Threshold = 80
-    -   Consecutive Count = 1
+
+    - Warning Threshold = 60
+    - Critical Threshold = 80
+    - Consecutive Count = 1
 
 8.  Click **Test Alarm**.
     If you set the **Warning Threshold** and **Critical Threshold**

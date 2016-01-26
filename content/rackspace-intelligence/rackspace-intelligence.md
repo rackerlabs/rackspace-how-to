@@ -4,50 +4,27 @@ title: Rackspace Intelligence
 type: article
 created_date: '2015-06-09'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-01-26'
+last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
 
 <hr />
 
-### Differences between Rackspace Intelligence for cloud accounts and dedicated accounts
+Rackspace Intelligence for dedicated accounts differs from Rackspace Intelligence for Rackspace Cloud accounts in the way that several features are supported.
 
-Rackspace Intelligence for dedicated accounts differs from Rackspace Intelligence for Rackspace Cloud accounts in the way that several features are supported. The following table shows the differences in feature support between Rackspace Intelligence for dedicated and cloud accounts.
+For a side-by-side feature comparison, see [Differences between Rackspace Intelligence for cloud accounts and dedicated accounts](/how-to/differences-between-rackspace- intelligence-for-cloud-accounts-and-dedicated-accounts).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Rackspace Intelligence for dedicated accounts</th>
-<th align="left">Rackspace Intelligence for cloud accounts</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Customers <em>cannot</em> create or edit any entities, checks, alarms, notifications, or notification plans. They can use the Rackspace Intelligence UI to view the configuration of these elements.</td>
-<td align="left">Customers can use Rackspace Intelligence to create and edit entities, checks, alarms, notifications, and notification plans.</td>
-</tr>
-<tr class="even">
-<td align="left">Customers <em>cannot</em> configure any suppressions via the Rackspace Intelligence UI. To set up a suppression, customers must contact Support.</td>
-<td align="left">Customers can use the Rackspace Intelligence UI to configure suppressions.</td>
-</tr>
-<tr class="odd">
-<td align="left">Customers can use only the following remote-type checks: <em>tcp</em>, <em>ping</em>, and <em>http</em>. They can view the configuration of these checks in the Rackspace Intelligence UI.</td>
-<td align="left">Customers can use the Rackspace Intelligence UI to configure remote-type and agent-type checks. For more information, see <a href="/how-to/working-with-checks">Working with checks</a>.</td>
-</tr>
-<tr class="even">
-<td align="left">Customers <em>cannot</em> install or use any monitoring agents.</td>
-<td align="left"><p>Customers can configure, install, and use monitoring agents.</p></td>
-</tr>
-</tbody>
-</table>
+Some how-to articles about Rackspace Intelligence are specific to one kind of account. If an account type is not specified in its title, an article is relevant to all users of Rackspace Intelligence.
 
+### For cloud accounts only
 
+- [Getting Started with Rackspace Intelligence for the cloud](/how-to/getting-started-with-rackspace-intelligence-for-the-cloud)
 
+### For dedicated accounts only
 
-
+- [Getting Started with Rackspace Intelligence for dedicated accounts](/how-to/getting-started-with-rackspace-intelligence-for-dedicated-accounts)
+- [Log in to Rackspace Intelligence for dedicated accounts](/how-to/log-in-to-rackspace-intelligence-for-dedicated-accounts)
+- [Understanding the Rackspace Intelligence User Interface for dedicated accounts](/how-to/understanding-the-rackspace-intelligence-user-interface-for-dedicated-accounts)
+- [Viewing and creating graphs of activity in Rackspace Intelligence for dedicated accounts](/how-to/viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts)

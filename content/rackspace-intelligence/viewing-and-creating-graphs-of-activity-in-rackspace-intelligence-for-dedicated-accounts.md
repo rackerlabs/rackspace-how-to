@@ -4,20 +4,11 @@ title: Viewing and creating graphs of activity in Rackspace Intelligence for ded
 type: article
 created_date: '2015-10-14'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-11'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-01-26'
+last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
-
-<div class="content">
-
-<div
-class="field field-name-body field-type-text-with-summary field-label-hidden">
-
-<div class="field-items">
-
-<div class="field-item even">
 
 Rackspace Intelligence offers a variety of reporting options. Use the
 predefined or custom graph options to generate an informative view of
@@ -33,11 +24,11 @@ interface, and then click **Basic Graphs**.
 If you choose a preset time range, Rackspace Intelligence shows data
 collected for the entity during the most recent period of that range:
 
--   One hour
--   Eight hours
--   One day
--   One week
--   One month
+- One hour
+- Eight hours
+- One day
+- One week
+- One month
 
 If you choose a custom time range and click **Apply**, Rackspace
 Intelligence shows data collected for the entity between the first and
@@ -50,8 +41,8 @@ last time stamp.
 You can customize your Rackspace Intelligence graphs by choosing how to
 focus:
 
--   Focus on a single metric, comparing it across multiple entities.
--   Focus on a single entity, examining it with multiple metrics.
+- Focus on a single metric, comparing it across multiple entities.
+- Focus on a single entity, examining it with multiple metrics.
 
 Click **Visualize** at the top of the interface, click **Custom
 Graphs**, and then choose your focus.
@@ -77,11 +68,11 @@ Rackspace Intelligence generates the graphs for the selected entities
 and metrics. You can choose a preset time frame or create a customized
 time frame for which you want the metrics to be generated.
 
--   To change the values for your preset time frame, click one of the
-    preset time ranges.
--   To generate graphs for a custom time range, click **Custom**, select
-    the appropriate date and time for the start and end dates, and then
-    click **Apply**.
+- To change the values for your preset time frame, click one of the
+  preset time ranges.
+- To generate graphs for a custom time range, click **Custom**, select
+  the appropriate date and time for the start and end dates, and then
+  click **Apply**.
 
 Rackspace applies the selected time range to display the graphs for your
 selected checks.
