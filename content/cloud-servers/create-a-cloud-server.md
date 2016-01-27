@@ -26,7 +26,7 @@ Control Panel interface.
 
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.13.25%20AM.png" width="261" height="142" />
 
-5.  In the **Image** section, select which operating system you want to
+5.  In the **Image** area, select which operating system you want to
     use.
 
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.15.30%20AM.png" width="472" height="241" />
