@@ -2,19 +2,6 @@ This article provides some general information about sharing server
 images and provides details about how image sharing works in the Cloud
 Control Panel.
 
--   [How are shared images useful?](#how-useful)
--   [Image sharing overview](#overview)
-    -   [Permissions](#permissions)
--   [Sharing an image in the Cloud Control Panel](#sharing)
-    -   [Before you share an image](#before-sharing)
-    -   [Share an image](#sharing-process)
-        -   [What about Chicago (ORD)?](#ORD)
-    -   [Image sharing courtesy](#courtesy)
--   [Accept or reject a shared image](#accepting)
-    -   [Reject an image after accepting it](#rejectAfterAccept)
-    -   [Accept an image after rejecting it](#acceptAfterReject)
--   [Use a shared image](#using)
-
 ###How are shared images useful?
 -----------------------------
 
