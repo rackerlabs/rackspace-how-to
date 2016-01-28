@@ -17,15 +17,15 @@ and instructions.
 
 In this article ...
 
--   [General requirements][requirements]
--   [Microsoft Windows][windows]
+-   [General requirements](#General-requirements)
+-   [Microsoft Windows](*Microsoft-Windows)
 -   [Preparing an image offline using
-    XenServer][offline-using-xenserver]
+    XenServer](#Preparing-an-image-offline-using-XenServer)
 -   [Preparing an image online in another
-    cloud][online-in-another-cloud]
--   [Alternatives to image import][alternatives]
+    cloud](#Preparing-an-image-online-in-another-cloud)
+-   [Alternatives to image import](#Alternatives-to-image-import)
 
-General Requirements[requirements]
+General Requirements
 --------------------
 
 -   **The image must be a single file in the VHD file format**.
@@ -38,14 +38,14 @@ General Requirements[requirements]
     **Note**: Images with system disks larger than 40 GB can be
     exported, but cannot be imported into the Rackspace open cloud.
 
-Microsoft Windows [windows]
+Microsoft Windows
 -----------------
 
 Microsoft product use rights do not allow the use of License Mobility
 for Windows licenses. *Given the limitations related to this software
 platform, image import is not available for Windows images.*
 
-Preparing an image offline using XenServer [offline-using-xenserver]
+Preparing an image offline using XenServer
 ------------------------------------------
 
 If you are preparing an image specifically for use in the Rackspace open
@@ -60,7 +60,7 @@ articles:
 -   [Creating an Ubuntu 13.10 Image for the Rackspace open
     cloud](/how-to/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud-0 "Creating an Ubuntu 13.10 Image for the Rackspace open cloud")
 
-Preparing an image online in another cloud [online-in-another-cloud]
+Preparing an image online in another cloud
 ------------------------------------------
 
 If you already have a server in another cloud, and you'd like to boot an
@@ -94,7 +94,7 @@ import it. Please see [Bootstrap Your QCOW Images for the Rackspace
 Public
 Cloud](https://developer.rackspace.com/blog/bootstrap-your-qcow-images-for-the-rackspace-public-cloud/).
 
-Alternative method [alternatives]
+Alternative method
 ------------------
 
 Preparing an image for import into the Rackspace OpenCloud is somewhat
