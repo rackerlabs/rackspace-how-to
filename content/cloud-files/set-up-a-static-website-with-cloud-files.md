@@ -58,6 +58,7 @@ URL.
     and pictures, use the HTTP link to access your static website. If
     you want to be securely connected to your site, use the HTTPS
     link.
+
     ![](https://b9002618969a676fa5e9-329656694c46da9401f89a96a819e8df.ssl.cf5.rackcdn.com/cloud%20files/set-up-static-view-all-links.png)
 
 ### Next Steps
@@ -84,6 +85,3 @@ container. To find your target, perform the following steps:
 You can also create your own CNAME using the Rackspace DNS service. For
 instructions, see [Create DNS Records for cloud servers with the Control
 Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
-
-
-
