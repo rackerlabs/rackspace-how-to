@@ -84,7 +84,7 @@ when you see your cloud servers listed under **Systems** in the
 Rackspace Cloud Control Panel. If the agent is not already installed, we
 can install it for you. Check with your account manager and jump ahead
 to [Create A
-Backup](/how-to/rackspace-cloud-backup-create-a-backup-0).
+Backup](/how-to/rackspace-cloud-backup-create-a-backup).
 
 Other users should begin with installing the backup tool:
 
