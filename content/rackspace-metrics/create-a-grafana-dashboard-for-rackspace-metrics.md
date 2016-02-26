@@ -148,7 +148,7 @@ With annotation support, users can submit change event to show along with the gr
 
 #### (Optional) Use Enum metrics
 
-The enum metrics release will allow you to push state based metrics (enums) and get the report from API on the frequency of occurrence of the values. For example, a common report for the IT teams to provide the uptime report based on the occurrences of the response codes from the server, or the state of the alerts during a period of time. Enum support is a stepping stone by providing the data to be used in report or visualization.  See [Use enum suport](https://support.rackspace.com/how-to/rackspace-metrics/use-enum-metrics-support) for additional information.
+The enum metrics release will allow you to push state based metrics (enums) and get the report from API on the frequency of occurrence of the values. For example, a common report for the IT teams to provide the uptime report based on the occurrences of the response codes from the server, or the state of the alerts during a period of time. Enum support is a stepping stone by providing the data to be used in report or visualization.  See [Use enum suport](https://support.rackspace.com/how-to/use-enum-metrics-support/) for additional information.
 
 For API commands and additonal information about sending enum metrics, see [Sending enum metrics](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#sending-enum-metrics) in the API documentation.
 
