@@ -144,11 +144,11 @@ complete the following steps:
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/grafana-mysql-data.png" width="428" height="337" />
 
 #### (Optional) Use Annotation
-With annotation support, users can submit change event to show along with the graph, adding additional information for the graph on the dashboard. See [Use annotation support](https://support.rackspace.com/how-to/rackspace-metrics/use-annotation-support) for additional information. 
+With annotation support, users can submit change event to show along with the graph, adding additional information for the graph on the dashboard. See [Use annotation support](/how-to/use-annotation-support) for additional information. 
 
 #### (Optional) Use Enum metrics
 
-The enum metrics release will allow you to push state based metrics (enums) and get the report from API on the frequency of occurrence of the values. For example, a common report for the IT teams to provide the uptime report based on the occurrences of the response codes from the server, or the state of the alerts during a period of time. Enum support is a stepping stone by providing the data to be used in report or visualization.  See [Use enum suport](https://support.rackspace.com/how-to/rackspace-metrics/use-enum-metrics-support) for additional information.
+The enum metrics release will allow you to push state based metrics (enums) and get the report from API on the frequency of occurrence of the values. For example, a common report for the IT teams to provide the uptime report based on the occurrences of the response codes from the server, or the state of the alerts during a period of time. Enum support is a stepping stone by providing the data to be used in report or visualization.  See [Use enum suport](/how-to/use-enum-metrics-support) for additional information.
 
 For API commands and additonal information about sending enum metrics, see [Sending enum metrics](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#sending-enum-metrics) in the API documentation.
 
