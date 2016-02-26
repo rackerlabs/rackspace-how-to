@@ -16,7 +16,7 @@ Control Panel interface.
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com). The Cloud Servers list opens
     by default.
 2.  Click the **Create Server** button.
-3.  In the **Identity** section, enter a name for your server in
+3.  In the **Details** section, enter a name for your server in
     the **Server Name** field.
 
     <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Screen%20Shot%202015-01-14%20at%209.12.15%20AM.png" width="259" height="163" />
