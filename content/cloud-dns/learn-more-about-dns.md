@@ -1,5 +1,4 @@
 ---
-permalink: learn-more-about-dns/
 node_id: 1497
 title: Learn more about DNS
 type: article

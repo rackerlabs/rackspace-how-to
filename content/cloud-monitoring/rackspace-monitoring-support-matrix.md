@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-monitoring-support-matrix/
 node_id: 5053
 title: Rackspace Monitoring support matrix
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-outlook-2013-for-email-hosted-on-exchange-2013/
 node_id: 3848
 title: Manually configure Outlook 2013 for email hosted on Exchange 2013
 type: article

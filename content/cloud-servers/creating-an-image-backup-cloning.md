@@ -1,5 +1,4 @@
 ---
-permalink: creating-an-image-backup-cloning/
 node_id: 3297
 title: Creating an image backup (cloning)
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: cloud-files-how-to-articles-other-resources/
 node_id: 1821
 title: 'Cloud Files: How to articles & other resources'
 type: article

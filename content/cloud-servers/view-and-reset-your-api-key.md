@@ -1,5 +1,4 @@
 ---
-permalink: view-and-reset-your-api-key/
 node_id: 3288
 title: View and reset your API key
 type: article

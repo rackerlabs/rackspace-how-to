@@ -1,5 +1,4 @@
 ---
-permalink: remap-database-users-in-mylittleadmin/
 node_id: 662
 title: Remap database users in myLittleAdmin
 type: article

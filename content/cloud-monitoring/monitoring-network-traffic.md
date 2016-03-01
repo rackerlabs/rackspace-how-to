@@ -1,5 +1,4 @@
 ---
-permalink: monitoring-network-traffic/
 node_id: 1374
 title: Monitoring Network Traffic
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-power-users-guide/
 node_id: 3189
 title: RackConnect Power Users Guide
 type: article

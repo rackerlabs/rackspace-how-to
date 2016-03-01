@@ -1,5 +1,4 @@
 ---
-permalink: securing-the-cloud-addressing-cloud-computing-security-concerns-with-private-cloud/
 node_id: 1049
 title: 'Securing the Cloud: Addressing Cloud Computing Security Concerns with Private Cloud'
 type: article

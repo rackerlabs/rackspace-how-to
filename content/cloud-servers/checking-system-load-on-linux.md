@@ -1,5 +1,4 @@
 ---
-permalink: checking-system-load-on-linux/
 node_id: 1436
 title: Checking System Load on Linux
 type: article

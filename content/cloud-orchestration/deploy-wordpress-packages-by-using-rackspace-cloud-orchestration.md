@@ -1,5 +1,4 @@
 ---
-permalink: deploy-wordpress-packages-by-using-rackspace-cloud-orchestration/
 node_id: 3773
 title: Deploy WordPress packages by using Rackspace Cloud Orchestration
 type: article

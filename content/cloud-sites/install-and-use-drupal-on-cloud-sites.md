@@ -1,5 +1,4 @@
 ---
-permalink: install-and-use-drupal-on-cloud-sites/
 node_id: 670
 title: Install And Use Drupal on Cloud Sites
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: unsupported-commands-via-cron-on-cloud-sites/
 node_id: 2182
 title: Unsupported commands via CRON on Cloud Sites
 type: article

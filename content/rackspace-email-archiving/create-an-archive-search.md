@@ -1,5 +1,4 @@
 ---
-permalink: create-an-archive-search/
 node_id: 4684
 title: Create an archive search
 type: article

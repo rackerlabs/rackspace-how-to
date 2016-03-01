@@ -1,5 +1,4 @@
 ---
-permalink: enable-internet-access-on-cloud-servers-using-snat-on-a-vyatta-network-appliance/
 node_id: 3256
 title: Enable Internet Access on Cloud Servers Using SNAT on a Vyatta Network Appliance
 type: article

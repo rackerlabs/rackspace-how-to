@@ -1,5 +1,4 @@
 ---
-permalink: test-php-mail-functionality/
 node_id: 569
 title: Test PHP mail functionality
 type: article

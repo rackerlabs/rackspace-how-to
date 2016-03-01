@@ -1,5 +1,4 @@
 ---
-permalink: create-an-isolated-cloud-network-and-attach-it-to-a-server/
 node_id: 2163
 title: Create an isolated Cloud Network and attach it to a server
 type: article

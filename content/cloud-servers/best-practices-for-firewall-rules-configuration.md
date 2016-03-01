@@ -1,5 +1,4 @@
 ---
-permalink: best-practices-for-firewall-rules-configuration/
 node_id: 4451
 title: Best practices for firewall rules configuration
 type: article

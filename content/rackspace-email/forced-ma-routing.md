@@ -1,5 +1,4 @@
 ---
-permalink: forced-ma-routing/
 node_id: 3788
 title: Enable forced MX routing
 type: article

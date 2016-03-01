@@ -1,5 +1,4 @@
 ---
-permalink: configuring-load-balanced-sites-with-ssl-offloading-using-iis/
 node_id: 3229
 title: Configuring Load Balanced Sites with SSL offloading using IIS
 type: article

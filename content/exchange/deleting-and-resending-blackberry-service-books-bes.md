@@ -1,5 +1,4 @@
 ---
-permalink: deleting-and-resending-blackberry-service-books-bes/
 node_id: 1078
 title: Deleting and resending BlackBerry&reg; Service Books - (BES)
 type: article

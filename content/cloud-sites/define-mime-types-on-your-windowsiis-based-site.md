@@ -1,5 +1,4 @@
 ---
-permalink: define-mime-types-on-your-windowsiis-based-site/
 node_id: 558
 title: Define mime types on your Windows/IIS based site
 type: article

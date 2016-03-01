@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-outlook-2013-for-email-hosted-on-exchange-2007/
 node_id: 3688
 title: Manually configure Outlook 2013 for email hosted on Exchange 2007
 type: article

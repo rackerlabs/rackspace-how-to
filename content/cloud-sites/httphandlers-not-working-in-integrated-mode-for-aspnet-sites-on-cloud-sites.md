@@ -1,5 +1,4 @@
 ---
-permalink: httphandlers-not-working-in-integrated-mode-for-aspnet-sites-on-cloud-sites/
 node_id: 118
 title: HttpHandlers not working in integrated mode for ASP.NET sites on Cloud Sites
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: rewrite-urls-from-aspnet-on-cloud-sites/
 node_id: 642
 title: Rewrite URLs from ASP.NET on Cloud Sites
 type: article

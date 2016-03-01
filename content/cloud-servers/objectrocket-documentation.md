@@ -1,5 +1,4 @@
 ---
-permalink: objectrocket-documentation/
 node_id: 3516
 title: ObjectRocket Documentation
 type: article

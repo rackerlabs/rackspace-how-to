@@ -1,5 +1,4 @@
 ---
-permalink: learn-more-about-load-balancers/
 node_id: 1525
 title: Learn more about load balancers
 type: article

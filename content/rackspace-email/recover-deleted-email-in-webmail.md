@@ -1,5 +1,4 @@
 ---
-permalink: recover-deleted-email-in-webmail/
 node_id: 3758
 title: Recover deleted email in Webmail
 type: article

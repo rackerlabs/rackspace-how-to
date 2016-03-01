@@ -1,5 +1,4 @@
 ---
-permalink: ubuntu-mongrel-and-mongrel-cluster-installation/
 node_id: 479
 title: Ubuntu - Mongrel and mongrel cluster installation
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: windows-patches-for-cloud-servers-with-a-managed-operations-service-level/
 node_id: 508
 title: Windows Patches for Cloud Servers with a Managed Operations Service Level
 type: article

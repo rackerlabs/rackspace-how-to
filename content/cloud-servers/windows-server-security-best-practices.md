@@ -1,5 +1,4 @@
 ---
-permalink: windows-server-security-best-practices/
 node_id: 4131
 title: Windows Server security best practices
 type: article

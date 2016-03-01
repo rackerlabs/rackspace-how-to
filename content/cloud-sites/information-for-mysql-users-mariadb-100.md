@@ -1,5 +1,4 @@
 ---
-permalink: information-for-mysql-users-mariadb-100-0/
 node_id: 4729
 title: Information for MySQL Users (MariaDB 10.0)
 type: article

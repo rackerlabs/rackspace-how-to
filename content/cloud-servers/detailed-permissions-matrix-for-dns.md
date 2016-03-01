@@ -1,5 +1,4 @@
 ---
-permalink: detailed-permissions-matrix-for-dns/
 node_id: 3393
 title: Detailed Permissions Matrix for DNS
 type: article

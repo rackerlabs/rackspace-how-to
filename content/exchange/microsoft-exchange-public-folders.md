@@ -1,5 +1,4 @@
 ---
-permalink: microsoft-exchange-public-folders/
 node_id: 1282
 title: Microsoft Exchange public folders
 type: article

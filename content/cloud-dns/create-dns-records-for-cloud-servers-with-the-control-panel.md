@@ -1,5 +1,4 @@
 ---
-permalink: create-dns-records-for-cloud-servers-with-the-control-panel/
 node_id: 1456
 title: Create DNS Records for cloud servers with the Control Panel
 type: article

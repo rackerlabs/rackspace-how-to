@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-dns-additional-resources/
 node_id: 1235
 title: Rackspace Cloud DNS - Additional Resources
 type: article

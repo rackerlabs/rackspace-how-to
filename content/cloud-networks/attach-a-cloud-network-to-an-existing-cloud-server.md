@@ -1,5 +1,4 @@
 ---
-permalink: attach-a-cloud-network-to-an-existing-cloud-server/
 node_id: 2197
 title: Attach a Cloud Network to an Existing Cloud Server
 type: article

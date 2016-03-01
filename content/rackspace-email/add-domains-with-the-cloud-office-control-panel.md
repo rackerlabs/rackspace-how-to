@@ -1,5 +1,4 @@
 ---
-permalink: add-domains-with-the-cloud-office-control-panel/
 node_id: 4009
 title: Add domains with the Cloud Office Control Panel
 type: article

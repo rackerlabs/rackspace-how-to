@@ -1,5 +1,4 @@
 ---
-permalink: viewing-basic-graphs-of-activity-in-rackspace-intelligence/
 node_id: 4742
 title: Viewing basic graphs of activity in Rackspace Intelligence
 type: article

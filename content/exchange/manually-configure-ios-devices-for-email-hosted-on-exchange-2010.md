@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-ios-devices-for-email-hosted-on-exchange-2010/
 node_id: 3790
 title: Manually configure iOS devices for email hosted on Exchange 2010
 type: article

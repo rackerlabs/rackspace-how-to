@@ -1,5 +1,4 @@
 ---
-permalink: next-generation-cloud-servers-migration-considerations-and-options/
 node_id: 1941
 title: Next Generation Cloud Servers migration considerations and options
 type: article

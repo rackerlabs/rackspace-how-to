@@ -1,5 +1,4 @@
 ---
-permalink: support/
 node_id: 3533
 title: How to contact Rackspace support
 type: page

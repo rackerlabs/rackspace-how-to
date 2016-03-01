@@ -1,5 +1,4 @@
 ---
-permalink: cloud-big-data-platform-provisioning-and-pricing/
 node_id: 4063
 title: Cloud Big Data Platform provisioning and pricing
 type: article

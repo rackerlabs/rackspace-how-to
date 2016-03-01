@@ -1,5 +1,4 @@
 ---
-permalink: add-impersonation-for-aspupload-on-cloud-sites/
 node_id: 581
 title: Add impersonation for ASPUpload on Cloud Sites
 type: article

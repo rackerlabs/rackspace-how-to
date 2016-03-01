@@ -1,5 +1,4 @@
 ---
-permalink: cloud-load-balancer-scheduling-algorithms/
 node_id: 1491
 title: Cloud Load Balancer scheduling algorithms
 type: article

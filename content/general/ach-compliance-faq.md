@@ -1,5 +1,4 @@
 ---
-permalink: ach-compliance-faq/
 node_id: 4637
 title: ACH compliance FAQ
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-cloud-sites-logging-into-the-control-panel/
 node_id: 1242
 title: 'Getting Started With Cloud Sites, Logging into the Control Panel'
 type: article

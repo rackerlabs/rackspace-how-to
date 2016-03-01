@@ -1,5 +1,4 @@
 ---
-permalink: updating-your-whois-information/
 node_id: 1147
 title: Update your WHOIS information
 type: article

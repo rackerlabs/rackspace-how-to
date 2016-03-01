@@ -1,5 +1,4 @@
 ---
-permalink: force-ssl-on-your-php-site/
 node_id: 622
 title: Force SSL on your PHP site
 type: article

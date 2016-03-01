@@ -1,5 +1,4 @@
 ---
-permalink: adding-a-rackspace-email-group-list/
 node_id: 1402
 title: Add a Rackspace Email group list
 type: article

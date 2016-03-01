@@ -1,5 +1,4 @@
 ---
-permalink: cloud-files-uploading-large-files/
 node_id: 1310
 title: Cloud Files - Uploading Large Files
 type: article

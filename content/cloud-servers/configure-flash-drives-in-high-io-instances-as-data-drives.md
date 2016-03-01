@@ -1,5 +1,4 @@
 ---
-permalink: configure-flash-drives-in-high-io-instances-as-data-drives/
 node_id: 4121
 title: Configure flash drives in High I/O instances as Data drives
 type: article

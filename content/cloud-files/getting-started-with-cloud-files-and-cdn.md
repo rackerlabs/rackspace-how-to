@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-cloud-files-and-cdn-0/
 node_id: 5122
 title: Getting started with Cloud Files and CDN
 type: article

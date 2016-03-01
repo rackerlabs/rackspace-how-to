@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-v20-automation-features-faq/
 node_id: 3214
 title: RackConnect v2.0 Automation Features FAQ
 type: article

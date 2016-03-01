@@ -1,5 +1,4 @@
 ---
-permalink: getting-data-into-your-big-data-cluster/
 node_id: 3813
 title: Getting data into your Big Data cluster
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: troubleshooting-dns-issues/
 node_id: 1447
 title: Troubleshooting DNS issues
 type: article

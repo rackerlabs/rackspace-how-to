@@ -1,5 +1,4 @@
 ---
-permalink: recover-a-deleted-rackspace-email-mailbox/
 node_id: 4488
 title: Recover a deleted Rackspace Email mailbox
 type: article

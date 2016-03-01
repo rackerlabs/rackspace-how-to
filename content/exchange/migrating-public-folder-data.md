@@ -1,5 +1,4 @@
 ---
-permalink: migrating-public-folder-data/
 node_id: 3791
 title: 'Migrating Public Folder data'
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: view-and-pay-unpaid-invoices-cloud-office-control-panel/
 node_id: 3988
 title: View and pay unpaid invoices in the Cloud Office Control Panel
 type: article

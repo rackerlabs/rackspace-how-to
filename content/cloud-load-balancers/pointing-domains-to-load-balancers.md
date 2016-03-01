@@ -1,5 +1,4 @@
 ---
-permalink: pointing-domains-to-load-balancers/
 node_id: 1490
 title: Pointing Domains to Load Balancers
 type: article

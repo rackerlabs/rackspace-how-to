@@ -1,5 +1,4 @@
 ---
-permalink: cached-media-file-name-extensions-on-cloud-sites/
 node_id: 3990
 title: Cached media file name extensions on Cloud Sites
 type: article

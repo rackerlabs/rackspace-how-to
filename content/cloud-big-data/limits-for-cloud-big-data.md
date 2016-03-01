@@ -1,5 +1,4 @@
 ---
-permalink: limits-for-cloud-big-data/
 node_id: 3978
 title: Limits for Cloud Big Data
 type: article

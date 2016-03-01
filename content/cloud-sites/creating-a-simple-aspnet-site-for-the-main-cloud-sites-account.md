@@ -1,5 +1,4 @@
 ---
-permalink: creating-a-simple-aspnet-site-for-the-main-cloud-sites-account/
 node_id: 533
 title: Creating a Simple ASP.NET site for the main Cloud Sites account
 type: article

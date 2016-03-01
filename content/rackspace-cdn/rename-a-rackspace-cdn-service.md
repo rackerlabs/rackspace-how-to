@@ -1,5 +1,4 @@
 ---
-permalink: rename-a-rackspace-cdn-service/
 node_id: 4664
 title: Rename a Rackspace CDN service
 type: article

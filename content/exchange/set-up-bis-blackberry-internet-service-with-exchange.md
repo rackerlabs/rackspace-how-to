@@ -1,5 +1,4 @@
 ---
-permalink: set-up-bis-blackberry-internet-service-with-exchange/
 node_id: 3667
 title: 'Set up BIS (Blackberry Internet Service) with Exchange'
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: cloud-hosting-faq/
 node_id: 5054
 title: Cloud Hosting FAQ
 type: article

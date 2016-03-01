@@ -1,5 +1,4 @@
 ---
-permalink: public-and-private-access-for-cloud-databases/
 node_id: 1509
 title: Public and Private Access for Cloud Databases
 type: article

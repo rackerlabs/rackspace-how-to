@@ -1,5 +1,4 @@
 ---
-permalink: configure-remote-access-vpn-service-on-a-vyatta-appliance/
 node_id: 3264
 title: Configure Remote Access VPN Service on a Vyatta Appliance
 type: article

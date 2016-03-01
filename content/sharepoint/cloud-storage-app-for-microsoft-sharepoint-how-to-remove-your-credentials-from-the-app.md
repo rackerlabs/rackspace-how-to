@@ -1,5 +1,4 @@
 ---
-permalink: cloud-storage-app-for-microsoft-sharepoint-how-to-remove-your-credentials-from-the-app/
 node_id: 3509
 title: 'Cloud Storage App for Microsoft SharePoint: How to remove your credentials from the app'
 type: article

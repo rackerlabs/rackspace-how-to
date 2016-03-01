@@ -1,5 +1,4 @@
 ---
-permalink: permissions-matrix-for-cloud-load-balancers/
 node_id: 3390
 title: Permissions Matrix for Cloud Load Balancers
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: managing-rackconnect-v20-network-policies/
 node_id: 2024
 title: Managing RackConnect v2.0 network policies
 type: article

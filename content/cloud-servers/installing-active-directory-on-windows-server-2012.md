@@ -1,5 +1,4 @@
 ---
-permalink: installing-active-directory-on-windows-server-2012/
 node_id: 3380
 title: Installing Active Directory on Windows Server 2012
 type: article

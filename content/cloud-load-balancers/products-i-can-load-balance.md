@@ -1,5 +1,4 @@
 ---
-permalink: products-i-can-load-balance/
 node_id: 1494
 title: Products I Can Load Balance
 type: article

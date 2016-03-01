@@ -1,5 +1,4 @@
 ---
-permalink: edit-blacklists-per-domain/
 node_id: 848
 title: Edit blacklists per domain
 type: article

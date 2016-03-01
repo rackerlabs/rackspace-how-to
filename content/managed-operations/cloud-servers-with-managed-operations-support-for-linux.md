@@ -1,5 +1,4 @@
 ---
-permalink: cloud-servers-with-managed-operations-support-for-linux/
 node_id: 1105
 title: Cloud Servers with Managed Operations support for Linux
 type: article

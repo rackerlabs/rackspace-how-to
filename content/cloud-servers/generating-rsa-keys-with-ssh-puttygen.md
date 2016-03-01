@@ -1,5 +1,4 @@
 ---
-permalink: generating-rsa-keys-with-ssh-puttygen/
 node_id: 426
 title: Generating RSA Keys With SSH - PuTTYgen
 type: article

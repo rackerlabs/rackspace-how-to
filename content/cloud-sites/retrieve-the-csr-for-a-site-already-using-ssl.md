@@ -1,5 +1,4 @@
 ---
-permalink: retrieve-the-csr-for-a-site-already-using-ssl/
 node_id: 4402
 title: Retrieve the CSR for a site already using SSL
 type: article

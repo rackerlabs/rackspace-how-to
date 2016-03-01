@@ -1,5 +1,4 @@
 ---
-permalink: numa-vnuma-and-cpu-scheduling/
 node_id: 5135
 title: 'NUMA, VNUMA and CPU Scheduling'
 type: article

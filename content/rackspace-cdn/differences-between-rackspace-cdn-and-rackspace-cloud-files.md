@@ -1,5 +1,4 @@
 ---
-permalink: differences-between-rackspace-cdn-and-rackspace-cloud-files/
 node_id: 4657
 title: Differences between Rackspace CDN and Rackspace Cloud Files
 type: article

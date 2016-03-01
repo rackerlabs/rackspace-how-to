@@ -1,5 +1,4 @@
 ---
-permalink: ubuntu-904-iredmail-installation/
 node_id: 145
 title: Ubuntu 9.04 - iRedMail Installation
 type: article

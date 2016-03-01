@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-ios-devices-for-email-hosted-on-exchange-2013/
 node_id: 3856
 title: Manually configure iOS devices for email hosted on Exchange 2013
 type: article

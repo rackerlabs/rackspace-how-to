@@ -1,5 +1,4 @@
 ---
-permalink: working-with-rackspace-intelligence-notification-plans/
 node_id: 4745
 title: Working with Rackspace Intelligence notification plans
 type: article

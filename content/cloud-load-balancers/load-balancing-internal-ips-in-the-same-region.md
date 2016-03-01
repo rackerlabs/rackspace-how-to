@@ -1,5 +1,4 @@
 ---
-permalink: load-balancing-internal-ips-in-the-same-region/
 node_id: 1527
 title: Load Balancing Internal IPs in the same region
 type: article

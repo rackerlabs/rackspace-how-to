@@ -1,5 +1,4 @@
 ---
-permalink: enable-email-archiving/
 node_id: 4691
 title: Enable email archiving
 type: article

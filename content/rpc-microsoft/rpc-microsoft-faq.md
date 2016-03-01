@@ -1,5 +1,4 @@
 ---
-permalink: rpc-microsoft-faq/
 title: Rackspace Private Cloud Powered by Microsoft Cloud Platform FAQ
 type: product
 created_date: '2016-01-17'

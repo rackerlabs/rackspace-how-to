@@ -1,5 +1,4 @@
 ---
-permalink: how-auto-scale-cooldowns-work/
 node_id: 3840
 title: How Auto Scale Cooldowns Work
 type: article

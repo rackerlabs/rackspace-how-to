@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-backup-system-actions/
 node_id: 2036
 title: Cloud Backup system actions
 type: article

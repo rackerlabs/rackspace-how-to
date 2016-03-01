@@ -1,5 +1,4 @@
 ---
-permalink: disable-caching-on-cloud-sites/
 node_id: 99
 title: Disable caching on Cloud Sites
 type: article

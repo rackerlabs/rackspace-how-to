@@ -1,5 +1,4 @@
 ---
-permalink: configuring-ms-sql-server-for-remote-access/
 node_id: 1184
 title: Configuring MS SQL Server for Remote Access
 type: article

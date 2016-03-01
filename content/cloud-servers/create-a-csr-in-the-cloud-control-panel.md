@@ -1,5 +1,4 @@
 ---
-permalink: create-a-csr-in-the-cloud-control-panel/
 node_id: 4258
 title: Create a CSR in the Cloud Control Panel
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-standard-and-non-standard-images/
 node_id: 3852
 title: Rackspace Standard and Non-Standard Images
 type: article

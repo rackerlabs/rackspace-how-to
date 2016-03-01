@@ -1,5 +1,4 @@
 ---
-permalink: information-for-ms-sql-changes/
 node_id: 4728
 title: Information for MS SQL changes
 type: article

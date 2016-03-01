@@ -1,5 +1,4 @@
 ---
-permalink: utilize-cloud-sites-in-an-e-commerce-solution/
 node_id: 1180
 title: Utilize Cloud Sites in an E-commerce Solution
 type: article

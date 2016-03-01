@@ -1,5 +1,4 @@
 ---
-permalink: log-in-to-the-archive-manager/
 node_id: 4696
 title: Log in to the Archive Manager
 type: article

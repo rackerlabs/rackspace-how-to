@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-directory-sync-administrators-guide/
 node_id: 3433
 title: 'Rackspace Directory Sync Administration Guide'
 type: article

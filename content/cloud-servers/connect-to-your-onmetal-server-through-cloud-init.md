@@ -1,5 +1,4 @@
 ---
-permalink: connect-to-your-onmetal-server-through-cloud-init/
 node_id: 4152
 title: Connect to your OnMetal Server through cloud-init
 type: article

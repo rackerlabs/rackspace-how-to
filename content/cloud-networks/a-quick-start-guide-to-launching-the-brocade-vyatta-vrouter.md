@@ -1,5 +1,4 @@
 ---
-permalink: a-quick-start-guide-to-launching-the-brocade-vyatta-vrouter/
 node_id: 3421
 title: Quick start guide to launching the Brocade Vyatta vRouter
 type: article

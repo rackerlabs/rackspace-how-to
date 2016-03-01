@@ -1,5 +1,4 @@
 ---
-permalink: troubleshooting-alarms/
 node_id: 2097
 title: Troubleshooting Alarms
 type: article

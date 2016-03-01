@@ -1,5 +1,4 @@
 ---
-permalink: items-migrated-during-an-cloud-office-migration/
 node_id: 3776
 title: Items migrated during an Cloud Office migration
 type: article

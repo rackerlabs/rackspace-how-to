@@ -1,5 +1,4 @@
 ---
-permalink: cloud-block-storage-quotas/
 node_id: 3902
 title: Cloud Block Storage quotas
 type: article

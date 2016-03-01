@@ -1,5 +1,4 @@
 ---
-permalink: installing-nginx-and-php-fpm-setup-for-nginx/
 node_id: 1319
 title: Installing NGINX and PHP-FPM - Setup for NGINX
 type: article

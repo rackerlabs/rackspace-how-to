@@ -1,5 +1,4 @@
 ---
-permalink: cloud-servers-faq/
 node_id: 4970
 title: Cloud Servers FAQ
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: basic-cloud-server-use-scenarios/
 node_id: 269
 title: Basic Cloud Server use Scenarios
 type: article

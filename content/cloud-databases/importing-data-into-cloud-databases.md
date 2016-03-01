@@ -1,5 +1,4 @@
 ---
-permalink: importing-data-into-cloud-databases/
 node_id: 1504
 title: Importing data into Cloud Databases
 type: article

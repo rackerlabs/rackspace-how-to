@@ -1,5 +1,4 @@
 ---
-permalink: installing-oscommerce-on-cloud-sites/
 node_id: 685
 title: Installing OSCommerce on Cloud Sites
 type: article

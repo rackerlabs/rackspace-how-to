@@ -1,5 +1,4 @@
 ---
-permalink: comparing-rackconnect-v30-and-rackconnect-v20/
 node_id: 4211
 title: Comparing RackConnect v3.0 and RackConnect v2.0
 type: article

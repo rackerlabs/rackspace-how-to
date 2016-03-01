@@ -1,5 +1,4 @@
 ---
-permalink: cloud-backup-agent-logging-basics/
 node_id: 4081
 title: Cloud Backup agent logging basics
 type: article

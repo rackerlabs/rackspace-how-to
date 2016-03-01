@@ -1,5 +1,4 @@
 ---
-permalink: prepare-to-migrate-a-windows-server/
 node_id: 4489
 title: Prepare to migrate a Windows server
 type: article

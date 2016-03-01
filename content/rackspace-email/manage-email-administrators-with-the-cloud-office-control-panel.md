@@ -1,5 +1,4 @@
 ---
-permalink: manage-email-administrators-with-the-cloud-office-control-panel/
 node_id: 2165
 title: Manage email administrators with the Cloud Office Control Panel
 type: article

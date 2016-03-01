@@ -1,5 +1,4 @@
 ---
-permalink: permissions-matrix-for-cloud-block-storage/
 node_id: 3394
 title: Permissions matrix for Cloud Block Storage
 type: article

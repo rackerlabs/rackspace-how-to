@@ -1,5 +1,4 @@
 ---
-permalink: introduction-to-mailgun-email-automation/
 node_id: 3231
 title: Introduction to Mailgun email automation
 type: article

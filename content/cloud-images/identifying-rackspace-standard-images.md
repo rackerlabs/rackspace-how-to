@@ -1,5 +1,4 @@
 ---
-permalink: identifying-rackspace-standard-images/
 node_id: 3853
 title: Identifying Rackspace Standard Images
 type: article

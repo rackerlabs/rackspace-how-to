@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-entourage-ews-for-email-hosted-on-exchange-2007/
 node_id: 995
 title: 'Manually configure Entourage (EWS) for email hosted on Exchange 2007'
 type: article

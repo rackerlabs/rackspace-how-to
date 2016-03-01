@@ -1,5 +1,4 @@
 ---
-permalink: set-a-catchall-email-address-for-cloud-sites/
 node_id: 717
 title: Set a catchall email address for Cloud Sites
 type: article

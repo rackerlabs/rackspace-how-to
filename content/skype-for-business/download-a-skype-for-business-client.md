@@ -1,5 +1,4 @@
 ---
-permalink: download-a-skype-for-business-client/
 node_id: 4024
 title: Download a Skype for Business client
 type: article

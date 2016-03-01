@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cdn-secure-delivery-options/
 node_id: 4643
 title: Rackspace CDN secure delivery options
 type: article

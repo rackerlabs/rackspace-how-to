@@ -1,5 +1,4 @@
 ---
-permalink: systems-management-simplified-in-the-cloud/
 node_id: 1729
 title: Systems Management, Simplified in the Cloud
 type: article

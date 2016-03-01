@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-private-cloud-sandbox/
 node_id: 3807
 title: Rackspace Private Cloud Sandbox
 type: article

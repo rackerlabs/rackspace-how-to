@@ -1,5 +1,4 @@
 ---
-permalink: learn-more-about-cloud-servers/
 node_id: 1511
 title: Learn more about Cloud Servers
 type: article

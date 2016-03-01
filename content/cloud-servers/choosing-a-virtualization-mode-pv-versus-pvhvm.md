@@ -1,5 +1,4 @@
 ---
-permalink: choosing-a-virtualization-mode-pv-versus-pvhvm/
 node_id: 3862
 title: Choosing a virtualization mode (PV versus PVHVM)
 type: article

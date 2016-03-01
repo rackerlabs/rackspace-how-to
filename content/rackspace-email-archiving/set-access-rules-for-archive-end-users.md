@@ -1,5 +1,4 @@
 ---
-permalink: set-access-rules-for-archive-end-users-0/
 node_id: 4761
 title: Set access rules for archive end users
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: managing-backups-for-cloud-databases/
 node_id: 3854
 title: Managing Backups for Cloud Databases
 type: article

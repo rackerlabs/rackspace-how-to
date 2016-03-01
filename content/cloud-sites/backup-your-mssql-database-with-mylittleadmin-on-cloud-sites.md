@@ -1,5 +1,4 @@
 ---
-permalink: backup-your-mssql-database-with-mylittleadmin-on-cloud-sites/
 node_id: 660
 title: Backup your MSSQL database with myLittleAdmin on Cloud Sites
 type: article

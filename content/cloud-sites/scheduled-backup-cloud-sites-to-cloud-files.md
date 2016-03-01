@@ -1,5 +1,4 @@
 ---
-permalink: scheduled-backup-cloud-sites-to-cloud-files/
 node_id: 3624
 title: Scheduled Backup -- Cloud Sites to Cloud Files
 type: article

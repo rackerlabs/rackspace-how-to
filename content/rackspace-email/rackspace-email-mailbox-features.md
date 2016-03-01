@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-email-mailbox-features/
 node_id: 4208
 title: Rackspace Email mailbox features
 type: article

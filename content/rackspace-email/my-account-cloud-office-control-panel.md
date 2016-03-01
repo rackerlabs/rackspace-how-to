@@ -1,5 +1,4 @@
 ---
-permalink: my-account-cloud-office-control-panel/
 node_id: 3972
 title: Account information in the Cloud Office Control Panel
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: domains-cloud-office-control-panel/
 node_id: 4004
 title: Domains in the Cloud Office Control Panel
 type: article

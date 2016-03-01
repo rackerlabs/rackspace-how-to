@@ -1,5 +1,4 @@
 ---
-permalink: using-onmetal-cloud-servers-with-rackconnect-v20/
 node_id: 4197
 title: Using OnMetal Cloud Servers with RackConnect v2.0
 type: article

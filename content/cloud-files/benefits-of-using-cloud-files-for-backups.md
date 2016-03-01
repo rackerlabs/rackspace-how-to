@@ -1,5 +1,4 @@
 ---
-permalink: benefits-of-using-cloud-files-for-backups/
 node_id: 254
 title: Benefits of using Cloud Files for backups
 type: article

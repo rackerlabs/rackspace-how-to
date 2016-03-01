@@ -1,5 +1,4 @@
 ---
-permalink: controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address/
 node_id: 113
 title: Controlling access to Linux Cloud Sites based on the client IP address
 type: article

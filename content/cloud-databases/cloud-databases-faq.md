@@ -1,5 +1,4 @@
 ---
-permalink: cloud-databases-faq/
 node_id: 5026
 title: Cloud Databases FAQ
 type: article

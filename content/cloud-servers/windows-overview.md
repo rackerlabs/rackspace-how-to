@@ -1,5 +1,4 @@
 ---
-permalink: windows-overview/
 node_id: 515
 title: Windows overview
 type: article

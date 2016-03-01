@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-rackspace-intelligence-for-the-cloud/
 node_id: 4878
 title: Getting started with Rackspace Intelligence for the cloud
 type: article

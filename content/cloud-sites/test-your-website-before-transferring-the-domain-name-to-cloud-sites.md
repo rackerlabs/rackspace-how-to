@@ -1,5 +1,4 @@
 ---
-permalink: test-your-website-before-transferring-the-domain-name-to-cloud-sites/
 node_id: 570
 title: Test your website before transferring the domain name to Cloud Sites
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: self-migrating-a-mysql-4-database-to-mysql-5/
 node_id: 1224
 title: Self-Migrating a MySQL 4 Database to MySQL 5
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: using-ssl-with-your-cloud-database-instance/
 node_id: 4281
 title: Using SSL with your Cloud Database instance
 type: article

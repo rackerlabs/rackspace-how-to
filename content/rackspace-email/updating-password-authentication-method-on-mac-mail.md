@@ -1,5 +1,4 @@
 ---
-permalink: updating-password-authentication-method-on-mac-mail/
 node_id: 3490
 title: Update the password authentication method for Mac Mail
 type: article

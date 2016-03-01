@@ -1,5 +1,4 @@
 ---
-permalink: purging-cloud-sites-webmail/
 node_id: 3669
 title: Purging Cloud Sites Webmail
 type: article

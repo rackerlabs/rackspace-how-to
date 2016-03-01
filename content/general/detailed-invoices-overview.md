@@ -1,5 +1,4 @@
 ---
-permalink: detailed-invoices-overview/
 node_id: 4813
 title: Detailed Invoices Overview
 type: article

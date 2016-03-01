@@ -1,5 +1,4 @@
 ---
-permalink: exporting-data-from-mysql/
 node_id: 1505
 title: Exporting Data from MySQL
 type: article

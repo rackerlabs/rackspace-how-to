@@ -1,5 +1,4 @@
 ---
-permalink: cloud-files-overview/
 node_id: 1479
 title: Cloud Files overview
 type: article

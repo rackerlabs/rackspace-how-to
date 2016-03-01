@@ -1,5 +1,4 @@
 ---
-permalink: restore-your-mssql-database-with-mylittleadmin/
 node_id: 666
 title: Restore your MSSQL database with myLittleAdmin
 type: article

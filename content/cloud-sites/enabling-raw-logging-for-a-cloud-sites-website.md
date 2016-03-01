@@ -1,5 +1,4 @@
 ---
-permalink: enabling-raw-logging-for-a-cloud-sites-website/
 node_id: 545
 title: Enabling raw logging for a Cloud Sites website
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: configure-your-cloud-sites-email-account-in-outlook-2000/
 node_id: 600
 title: Configure your Cloud Sites email account in Outlook 2000
 type: article

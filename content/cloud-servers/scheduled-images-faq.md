@@ -1,5 +1,4 @@
 ---
-permalink: scheduled-images-faq/
 node_id: 3477
 title: Scheduled Images FAQ
 type: article

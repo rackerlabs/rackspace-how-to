@@ -1,5 +1,4 @@
 ---
-permalink: manage-public-folders-in-the-control-panel-for-hosted-exchange-2007-and-2010/
 node_id: 4461
 title: Manage public folders in the control panel for Hosted Exchange 2007 and 2010
 type: article

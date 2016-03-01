@@ -1,5 +1,4 @@
 ---
-permalink: manage-ttl-in-a-cloud-files-container/
 node_id: 6000
 title: Manage Time to Live (TTL) in a Cloud Files container
 type: article

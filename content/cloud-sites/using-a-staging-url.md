@@ -1,5 +1,4 @@
 ---
-permalink: using-a-staging-url/
 node_id: 700
 title: Using a staging URL
 type: article

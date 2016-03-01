@@ -1,5 +1,4 @@
 ---
-permalink: reboot-your-server/
 node_id: 1474
 title: Reboot Your Server
 type: article

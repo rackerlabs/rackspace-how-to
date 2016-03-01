@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cdn-overview/
 node_id: 4650
 title: Rackspace CDN overview
 type: article

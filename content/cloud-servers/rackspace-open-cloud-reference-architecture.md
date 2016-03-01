@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-open-cloud-reference-architecture/
 node_id: 1945
 title: Rackspace Open Cloud Reference Architecture
 type: article

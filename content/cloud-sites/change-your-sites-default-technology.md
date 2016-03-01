@@ -1,5 +1,4 @@
 ---
-permalink: change-your-sites-default-technology/
 node_id: 589
 title: "Change your site's default technology"
 type: article

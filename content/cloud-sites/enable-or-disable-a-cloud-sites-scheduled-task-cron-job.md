@@ -1,5 +1,4 @@
 ---
-permalink: enable-or-disable-a-cloud-sites-scheduled-task-cron-job/
 node_id: 610
 title: Enable or disable a Cloud Sites scheduled task (cron job)
 type: article

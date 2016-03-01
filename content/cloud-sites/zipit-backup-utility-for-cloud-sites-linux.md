@@ -1,5 +1,4 @@
 ---
-permalink: zipit-backup-utility-for-cloud-sites-linux/
 node_id: 1390
 title: Zipit Backup Utility for Cloud Sites - Linux
 type: article

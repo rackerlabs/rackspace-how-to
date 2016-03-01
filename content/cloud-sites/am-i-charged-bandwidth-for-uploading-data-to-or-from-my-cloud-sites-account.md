@@ -1,5 +1,4 @@
 ---
-permalink: am-i-charged-bandwidth-for-uploading-data-to-or-from-my-cloud-sites-account/
 node_id: 197
 title: Am I charged bandwidth for uploading data to or from my Cloud Sites account?
 type: article

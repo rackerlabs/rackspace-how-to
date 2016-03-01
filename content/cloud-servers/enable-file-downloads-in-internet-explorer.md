@@ -1,5 +1,4 @@
 ---
-permalink: enable-file-downloads-in-internet-explorer/
 node_id: 1075
 title: Enable file downloads in Internet Explorer
 type: article

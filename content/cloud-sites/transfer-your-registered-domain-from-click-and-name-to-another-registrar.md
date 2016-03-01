@@ -1,5 +1,4 @@
 ---
-permalink: transfer-your-registered-domain-from-click-and-name-to-another-registrar/
 node_id: 3726
 title: Transfer your registered domain from Click and Name to another registrar
 type: article

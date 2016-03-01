@@ -1,5 +1,4 @@
 ---
-permalink: cloud-storage-app-for-microsoft-sharepoint-how-to-share-a-file-with-another-person/
 node_id: 3508
 title: 'Cloud Storage App for Microsoft SharePoint: How to share a file with another person'
 type: article

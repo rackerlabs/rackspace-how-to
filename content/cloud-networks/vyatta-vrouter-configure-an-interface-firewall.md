@@ -1,5 +1,4 @@
 ---
-permalink: vyatta-vrouter-configure-an-interface-firewall/
 node_id: 4234
 title: 'Vyatta vRouter: Configure an interface firewall'
 type: article

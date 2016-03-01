@@ -1,5 +1,4 @@
 ---
-permalink: traditional-colocation-vs-rackspace-managed-colocation/
 node_id: 1041
 title: Traditional Colocation vs. Rackspace Managed Colocation
 type: article

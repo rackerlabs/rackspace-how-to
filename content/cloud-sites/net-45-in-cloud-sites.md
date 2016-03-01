@@ -1,5 +1,4 @@
 ---
-permalink: net-45-in-cloud-sites/
 node_id: 3235
 title: .NET 4.5 in Cloud Sites
 type: article

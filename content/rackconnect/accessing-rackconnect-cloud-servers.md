@@ -1,5 +1,4 @@
 ---
-permalink: accessing-rackconnect-cloud-servers/
 node_id: 2025
 title: Accessing RackConnect cloud servers
 type: article

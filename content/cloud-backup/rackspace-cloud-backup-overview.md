@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-backup-overview/
 node_id: 2037
 title: Rackspace Cloud Backup overview
 type: article

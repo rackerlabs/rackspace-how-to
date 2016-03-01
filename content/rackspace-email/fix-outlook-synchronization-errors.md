@@ -1,5 +1,4 @@
 ---
-permalink: fix-outlook-synchronization-errors/
 node_id: 4718
 title: Fix Outlook synchronization errors
 type: article

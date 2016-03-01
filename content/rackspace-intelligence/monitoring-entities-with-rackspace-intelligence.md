@@ -1,5 +1,4 @@
 ---
-permalink: monitoring-entities-with-rackspace-intelligence/
 node_id: 4751
 title: Monitoring entities with Rackspace Intelligence
 type: article

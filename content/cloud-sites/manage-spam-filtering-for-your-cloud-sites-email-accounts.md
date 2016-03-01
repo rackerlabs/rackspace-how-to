@@ -1,5 +1,4 @@
 ---
-permalink: manage-spam-filtering-for-your-cloud-sites-email-accounts/
 node_id: 677
 title: Manage spam filtering for your Cloud Sites email accounts
 type: article

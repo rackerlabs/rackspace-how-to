@@ -1,5 +1,4 @@
 ---
-permalink: list-cloud-servers-and-cloud-server-information/
 node_id: 3735
 title: List Cloud Servers and Cloud Server Information
 type: article

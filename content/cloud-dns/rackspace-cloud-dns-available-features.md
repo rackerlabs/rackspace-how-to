@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-dns-available-features/
 node_id: 1232
 title: Rackspace Cloud DNS - Available features
 type: article

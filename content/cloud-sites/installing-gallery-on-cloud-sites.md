@@ -1,5 +1,4 @@
 ---
-permalink: installing-gallery-on-cloud-sites/
 node_id: 550
 title: Installing Gallery on Cloud Sites
 type: article

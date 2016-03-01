@@ -1,5 +1,4 @@
 ---
-permalink: create-and-attach-a-cloud-block-storage-volume/
 node_id: 3134
 title: Create and attach a Cloud Block Storage volume
 type: article

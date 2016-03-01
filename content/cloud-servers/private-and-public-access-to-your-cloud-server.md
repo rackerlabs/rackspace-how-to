@@ -1,5 +1,4 @@
 ---
-permalink: private-and-public-access-to-your-cloud-server/
 node_id: 2034
 title: Private and Public Access to Your Cloud Server
 type: article

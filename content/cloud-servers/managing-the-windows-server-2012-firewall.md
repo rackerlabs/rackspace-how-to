@@ -1,5 +1,4 @@
 ---
-permalink: managing-the-windows-server-2012-firewall/
 node_id: 3429
 title: Managing the Windows Server 2012 Firewall
 type: article

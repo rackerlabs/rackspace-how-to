@@ -1,5 +1,4 @@
 ---
-permalink: configuring-mysql-server-on-ubuntu/
 node_id: 1169
 title: Configuring MySQL server on Ubuntu
 type: article

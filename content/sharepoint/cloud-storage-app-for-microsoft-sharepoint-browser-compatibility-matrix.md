@@ -1,5 +1,4 @@
 ---
-permalink: cloud-storage-app-for-microsoft-sharepoint-browser-compatibility-matrix/
 node_id: 3611
 title: 'Cloud Storage App for Microsoft SharePoint: Browser compatibility matrix'
 type: article

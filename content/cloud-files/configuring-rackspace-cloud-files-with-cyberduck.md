@@ -1,5 +1,4 @@
 ---
-permalink: configuring-rackspace-cloud-files-with-cyberduck/
 node_id: 3203
 title: Configuring Rackspace Cloud Files with Cyberduck
 type: article

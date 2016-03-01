@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-role-based-access-control-rbac-0/
 node_id: 3618
 title: Getting Started with Role-Based Access Control (RBAC)
 type: article

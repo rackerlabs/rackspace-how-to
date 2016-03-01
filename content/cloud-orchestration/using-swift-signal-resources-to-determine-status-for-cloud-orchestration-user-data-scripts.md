@@ -1,5 +1,4 @@
 ---
-permalink: using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts/
 node_id: 4759
 title: Using Swift Signal resources to determine status for Cloud Orchestration user data scripts
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: cloud-big-data-faq/
 node_id: 5029
 title: Cloud Big Data FAQ
 type: article

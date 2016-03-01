@@ -1,5 +1,4 @@
 ---
-permalink: test-php-smtp-functionality/
 node_id: 650
 title: Test PHP SMTP functionality
 type: article

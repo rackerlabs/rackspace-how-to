@@ -1,5 +1,4 @@
 ---
-permalink: migrate-your-email-by-using-the-self-service-tool/
 node_id: 3349
 title: Migrate your email by using the Self-Service tool
 type: article

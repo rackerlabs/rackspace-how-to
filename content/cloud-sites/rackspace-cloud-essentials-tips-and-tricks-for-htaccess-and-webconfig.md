@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig/
 node_id: 712
 title: 'Rackspace Cloud Essentials: Tips and Tricks for .htaccess and web.config'
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: transfer-a-domains-email-services-to-another-account/
 node_id: 4251
 title: "Transfer a domain's email services to another account"
 type: article

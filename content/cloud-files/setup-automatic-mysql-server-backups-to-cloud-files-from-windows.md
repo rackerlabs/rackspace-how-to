@@ -1,5 +1,4 @@
 ---
-permalink: setup-automatic-mysql-server-backups-to-cloud-files-from-windows/
 node_id: 1120
 title: Setup Automatic MySQL Server Backups to Cloud Files from Windows
 type: article

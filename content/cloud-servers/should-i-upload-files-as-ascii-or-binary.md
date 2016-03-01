@@ -1,5 +1,4 @@
 ---
-permalink: should-i-upload-files-as-ascii-or-binary/
 node_id: 131
 title: Upload files as ASCII or binary
 type: article

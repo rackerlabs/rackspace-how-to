@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-essentials-cloud-server-image-limitations/
 node_id: 1177
 title: Rackspace Cloud Essentials - Cloud Server Image Limitations
 type: article

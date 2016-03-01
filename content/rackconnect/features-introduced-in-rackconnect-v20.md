@@ -1,5 +1,4 @@
 ---
-permalink: features-introduced-in-rackconnect-v20/
 node_id: 2020
 title: Features introduced in RackConnect v2.0
 type: article

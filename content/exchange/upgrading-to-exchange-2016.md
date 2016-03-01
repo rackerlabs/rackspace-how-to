@@ -1,5 +1,4 @@
 ---
-permalink: upgrading-to-exchange-2016/
 node_id: 5068
 title: Upgrading to Exchange 2016
 type: article

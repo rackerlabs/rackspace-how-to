@@ -1,5 +1,4 @@
 ---
-permalink: private-cloud-tech-resources/
 node_id: 3280
 title: Private Cloud Tech Resources
 type: article

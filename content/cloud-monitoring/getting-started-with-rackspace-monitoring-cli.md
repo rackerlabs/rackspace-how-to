@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-rackspace-monitoring-cli/
 node_id: 1373
 title: Getting Started with Rackspace Monitoring CLI
 type: article

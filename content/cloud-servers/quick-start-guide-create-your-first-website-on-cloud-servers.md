@@ -1,5 +1,4 @@
 ---
-permalink: quick-start-guide-create-your-first-website-on-cloud-servers/
 node_id: 3768
 title: Quick start guide - Create your first website on Cloud Servers
 type: article

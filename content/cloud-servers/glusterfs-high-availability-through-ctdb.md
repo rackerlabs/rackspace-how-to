@@ -1,5 +1,4 @@
 ---
-permalink: glusterfs-high-availability-through-ctdb/
 node_id: 4178
 title: GlusterFS high availability through CTDB
 type: article

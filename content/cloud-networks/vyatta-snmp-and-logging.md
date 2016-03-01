@@ -1,5 +1,4 @@
 ---
-permalink: vyatta-snmp-and-logging/
 node_id: 4804
 title: Vyatta SNMP and logging
 type: article

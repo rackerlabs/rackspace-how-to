@@ -1,5 +1,4 @@
 ---
-permalink: getting-fanatical-support-6-tickets/
 node_id: 1335
 title: Getting Fanatical Support 6 - Tickets
 type: article

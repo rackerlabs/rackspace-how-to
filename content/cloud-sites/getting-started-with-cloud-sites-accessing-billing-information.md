@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-cloud-sites-accessing-billing-information/
 node_id: 1243
 title: 'Getting Started with Cloud Sites: Accessing billing information'
 type: article

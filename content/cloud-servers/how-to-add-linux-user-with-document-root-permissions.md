@@ -1,5 +1,4 @@
 ---
-permalink: how-to-add-linux-user-with-document-root-permissions/
 node_id: 1259
 title: How to Add Linux User With Document Root Permissions
 type: article

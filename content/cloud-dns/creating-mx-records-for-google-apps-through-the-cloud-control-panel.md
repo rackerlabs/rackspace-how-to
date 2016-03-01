@@ -1,5 +1,4 @@
 ---
-permalink: creating-mx-records-for-google-apps-through-the-cloud-control-panel/
 node_id: 2176
 title: Creating MX records for Google Apps through the Cloud Control Panel
 type: article

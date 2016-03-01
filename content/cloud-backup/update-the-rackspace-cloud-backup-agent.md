@@ -1,5 +1,4 @@
 ---
-permalink: update-the-rackspace-cloud-backup-agent/
 node_id: 3255
 title: Manually update the Rackspace Cloud Backup agent
 type: article

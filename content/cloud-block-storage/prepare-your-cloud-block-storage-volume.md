@@ -1,5 +1,4 @@
 ---
-permalink: prepare-your-cloud-block-storage-volume/
 node_id: 3132
 title: Prepare your Cloud Block Storage volume
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: zipit-backup-utility-for-cloud-sites-iis/
 node_id: 3346
 title: ZipIt Backup Utility for Cloud Sites - IIS
 type: article

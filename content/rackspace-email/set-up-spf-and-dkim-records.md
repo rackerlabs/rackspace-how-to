@@ -1,5 +1,4 @@
 ---
-permalink: set-up-spf-and-dkim-records/
 node_id: 1499
 title: Set up SPF and DKIM records
 type: article

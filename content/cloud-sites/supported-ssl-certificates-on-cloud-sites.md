@@ -1,5 +1,4 @@
 ---
-permalink: supported-ssl-certificates-on-cloud-sites/
 node_id: 117
 title: Supported SSL certificates on Cloud Sites
 type: article

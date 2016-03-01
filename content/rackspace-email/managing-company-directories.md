@@ -1,5 +1,4 @@
 ---
-permalink: managing-company-directories/
 node_id: 4437
 title: Manage company directories
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: modified-medium-trust-on-cloud-sites/
 node_id: 130
 title: Modified Medium Trust on Cloud Sites
 type: article

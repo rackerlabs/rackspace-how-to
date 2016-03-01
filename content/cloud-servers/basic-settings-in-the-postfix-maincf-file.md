@@ -1,5 +1,4 @@
 ---
-permalink: basic-settings-in-the-postfix-maincf-file/
 node_id: 412
 title: Basic settings in the Postfix main.cf file
 type: article

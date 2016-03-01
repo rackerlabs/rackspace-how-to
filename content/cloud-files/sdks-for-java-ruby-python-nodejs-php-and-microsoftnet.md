@@ -1,5 +1,4 @@
 ---
-permalink: sdks-for-java-ruby-python-nodejs-php-and-microsoftnet/
 node_id: 231
 title: 'SDKs for Java, Ruby, Python, Node.js, PHP, and Microsoft.NET'
 type: article

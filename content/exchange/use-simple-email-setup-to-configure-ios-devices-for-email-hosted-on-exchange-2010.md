@@ -1,5 +1,4 @@
 ---
-permalink: use-simple-email-setup-to-configure-ios-devices-for-email-hosted-on-exchange-2010/
 node_id: 2095
 title: 'Use simple email setup to configure iOS devices for email hosted on Exchange 2010'
 type: article

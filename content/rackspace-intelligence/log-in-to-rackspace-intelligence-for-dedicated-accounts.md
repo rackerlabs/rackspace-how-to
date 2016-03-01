@@ -1,5 +1,4 @@
 ---
-permalink: log-in-to-rackspace-intelligence-for-dedicated-accounts/
 node_id: 4836
 title: Log in to Rackspace Intelligence for dedicated accounts
 type: article

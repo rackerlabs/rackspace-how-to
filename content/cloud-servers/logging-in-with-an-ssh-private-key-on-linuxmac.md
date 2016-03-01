@@ -1,5 +1,4 @@
 ---
-permalink: logging-in-with-an-ssh-private-key-on-linuxmac/
 node_id: 3706
 title: Logging in with an SSH Private Key on Linux/Mac
 type: article

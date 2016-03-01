@@ -1,5 +1,4 @@
 ---
-permalink: information-for-customer-ip-addresses-and-dns/
 node_id: 4727
 title: Information for customer IP addresses and DNS
 type: article

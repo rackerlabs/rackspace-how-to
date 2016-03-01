@@ -1,5 +1,4 @@
 ---
-permalink: manage-domain-aliases-with-the-cloud-office-control-panel/
 node_id: 4008
 title: Manage domain aliases with the Cloud Office Control Panel
 type: article

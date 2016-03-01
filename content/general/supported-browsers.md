@@ -1,5 +1,4 @@
 ---
-permalink: supported-browsers/
 title: 'Supported Browsers'
 type: article
 created_date: '2016-01-29'

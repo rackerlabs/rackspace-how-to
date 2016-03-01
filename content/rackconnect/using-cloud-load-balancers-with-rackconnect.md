@@ -1,5 +1,4 @@
 ---
-permalink: using-cloud-load-balancers-with-rackconnect/
 node_id: 2029
 title: Using Cloud Load Balancers with RackConnect
 type: article

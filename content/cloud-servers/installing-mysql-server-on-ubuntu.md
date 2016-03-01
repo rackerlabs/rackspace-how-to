@@ -1,5 +1,4 @@
 ---
-permalink: installing-mysql-server-on-ubuntu/
 node_id: 1162
 title: Installing MySQL Server on Ubuntu
 type: article

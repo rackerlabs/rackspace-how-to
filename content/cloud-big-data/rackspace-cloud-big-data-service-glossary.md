@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-big-data-service-glossary/
 node_id: 3975
 title: Rackspace Cloud Big Data Service Glossary
 type: article

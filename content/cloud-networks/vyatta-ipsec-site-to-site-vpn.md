@@ -1,5 +1,4 @@
 ---
-permalink: vyatta-ipsec-site-to-site-vpn/
 node_id: 4236
 title: Vyatta IPsec site-to-site VPN
 type: article

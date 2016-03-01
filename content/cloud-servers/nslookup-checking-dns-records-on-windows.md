@@ -1,5 +1,4 @@
 ---
-permalink: nslookup-checking-dns-records-on-windows/
 node_id: 1446
 title: Nslookup - Checking DNS Records on Windows
 type: article

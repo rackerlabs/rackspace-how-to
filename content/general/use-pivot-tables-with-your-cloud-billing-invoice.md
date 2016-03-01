@@ -1,5 +1,4 @@
 ---
-permalink: use-pivot-tables-with-your-cloud-billing-invoice/
 node_id: 4625
 title: Use pivot tables with your Cloud Billing invoice
 type: article

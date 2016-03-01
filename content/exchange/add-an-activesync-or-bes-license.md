@@ -1,5 +1,4 @@
 ---
-permalink: add-an-activesync-or-bes-license/
 node_id: 1313
 title: 'Add an ActiveSync or BES license'
 type: article

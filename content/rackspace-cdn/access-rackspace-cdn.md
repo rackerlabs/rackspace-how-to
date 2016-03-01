@@ -1,5 +1,4 @@
 ---
-permalink: access-rackspace-cdn/
 node_id: 4654
 title: Access Rackspace CDN
 type: article

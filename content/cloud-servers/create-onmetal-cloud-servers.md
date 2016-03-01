@@ -1,5 +1,4 @@
 ---
-permalink: create-onmetal-cloud-servers/
 node_id: 4105
 title: Create OnMetal Cloud Servers
 type: article

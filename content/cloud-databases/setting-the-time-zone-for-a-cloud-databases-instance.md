@@ -1,5 +1,4 @@
 ---
-permalink: setting-the-time-zone-for-a-cloud-databases-instance/
 node_id: 4037
 title: Setting the time zone for a Cloud Databases instance
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: add-entries-to-your-webmail-blacklist/
 node_id: 811
 title: Add entries to your webmail blacklist
 type: article

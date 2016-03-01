@@ -1,5 +1,4 @@
 ---
-permalink: spam-preferences-safe-lists-and-black-list-in-rackspace-email-0/
 node_id: 1411
 title: 'Spam preferences, safelists, and blacklists in Rackspace Email'
 type: article

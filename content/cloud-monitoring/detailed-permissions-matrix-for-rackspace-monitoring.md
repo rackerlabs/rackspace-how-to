@@ -1,5 +1,4 @@
 ---
-permalink: detailed-permissions-matrix-for-rackspace-monitoring/
 node_id: 3395
 title: Detailed Permissions Matrix for Rackspace Monitoring
 type: article

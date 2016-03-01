@@ -1,5 +1,4 @@
 ---
-permalink: mounting-rackspace-cloud-files-to-linux-using-cloudfuse/
 node_id: 1121
 title: Mounting Rackspace Cloud Files to Linux Using CloudFuse
 type: article
