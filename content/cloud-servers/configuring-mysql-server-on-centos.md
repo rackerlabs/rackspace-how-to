@@ -1,5 +1,4 @@
 ---
-permalink: configuring-mysql-server-on-centos/
 node_id: 1171
 title: Configuring MySQL server on CentOS
 type: article

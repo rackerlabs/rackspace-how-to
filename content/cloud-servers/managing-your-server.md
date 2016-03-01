@@ -1,5 +1,4 @@
 ---
-permalink: managing-your-server/
 node_id: 1472
 title: Managing Your Server
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: delete-a-rackspace-cdn-service/
 node_id: 4666
 title: Delete a Rackspace CDN service
 type: article

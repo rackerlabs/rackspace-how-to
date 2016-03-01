@@ -1,5 +1,4 @@
 ---
-permalink: the-hosting-spectrum-which-solution-fits-your-business/
 node_id: 1040
 title: 'The Hosting Spectrum: Which Solution Fits your Business?'
 type: article

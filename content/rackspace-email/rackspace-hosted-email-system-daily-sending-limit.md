@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-hosted-email-system-daily-sending-limit/
 node_id: 4556
 title: Daily sending limit for Rackspace hosted email systems
 type: article

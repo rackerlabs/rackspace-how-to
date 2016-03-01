@@ -1,5 +1,4 @@
 ---
-permalink: add-rackspace-email-mailboxes/
 node_id: 829
 title: Add Rackspace Email mailboxes
 type: article

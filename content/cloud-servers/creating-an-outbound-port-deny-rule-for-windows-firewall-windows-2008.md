@@ -1,5 +1,4 @@
 ---
-permalink: creating-an-outbound-port-deny-rule-for-windows-firewall-windows-2008/
 node_id: 324
 title: Creating an Outbound Port Deny Rule for Windows Firewall (Windows 2008)
 type: article

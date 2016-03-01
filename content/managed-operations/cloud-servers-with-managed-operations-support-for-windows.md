@@ -1,5 +1,4 @@
 ---
-permalink: cloud-servers-with-managed-operations-support-for-windows/
 node_id: 514
 title: Cloud Servers with Managed Operations support for Windows
 type: article

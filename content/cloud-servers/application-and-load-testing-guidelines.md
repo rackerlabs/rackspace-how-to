@@ -1,5 +1,4 @@
 ---
-permalink: application-and-load-testing-guidelines/
 node_id: 3147
 title: Application and load testing guidelines
 type: article

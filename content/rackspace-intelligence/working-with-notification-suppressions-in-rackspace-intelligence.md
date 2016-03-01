@@ -1,5 +1,4 @@
 ---
-permalink: working-with-notification-suppressions-in-rackspace-intelligence/
 node_id: 4747
 title: Working with notification suppressions in Rackspace Intelligence
 type: article

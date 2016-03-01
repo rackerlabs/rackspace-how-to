@@ -1,5 +1,4 @@
 ---
-permalink: installing-nginx-and-php-fpm-preface/
 node_id: 1316
 title: Installing NGINX and PHP-FPM - Preface
 type: article

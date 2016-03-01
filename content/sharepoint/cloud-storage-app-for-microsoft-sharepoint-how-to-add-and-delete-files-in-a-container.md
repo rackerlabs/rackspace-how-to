@@ -1,5 +1,4 @@
 ---
-permalink: cloud-storage-app-for-microsoft-sharepoint-how-to-add-and-delete-files-in-a-container/
 node_id: 3507
 title: 'Cloud Storage App for Microsoft SharePoint: How to add and delete files in a container'
 type: article

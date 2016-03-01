@@ -1,5 +1,4 @@
 ---
-permalink: installing-xenserver-tools-on-next-generation-windows-cloud-servers/
 node_id: 3232
 title: Installing XenServer Tools on Next Generation Windows Cloud Servers
 type: article

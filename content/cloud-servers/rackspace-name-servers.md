@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-name-servers/
 node_id: 1529
 title: Rackspace Name Servers
 type: article

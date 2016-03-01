@@ -1,5 +1,4 @@
 ---
-permalink: using-cidr-notation-in-cloud-networks/
 node_id: 2164
 title: Using CIDR notation in Cloud Networks
 type: article

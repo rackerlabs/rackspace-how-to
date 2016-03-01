@@ -1,5 +1,4 @@
 ---
-permalink: set-up-mysql-master-slave-replication/
 node_id: 1118
 title: Set up MySQL master-slave replication
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: refresh-content-in-a-rackspace-cdn-service/
 node_id: 4665
 title: Refresh Content in a Rackspace CDN service
 type: article

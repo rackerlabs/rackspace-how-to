@@ -1,5 +1,4 @@
 ---
-permalink: vnc-install/
 node_id: 502
 title: VNC Install
 type: article

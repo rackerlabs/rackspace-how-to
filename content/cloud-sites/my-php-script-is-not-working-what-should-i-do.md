@@ -1,5 +1,4 @@
 ---
-permalink: my-php-script-is-not-working-what-should-i-do/
 node_id: 683
 title: My PHP script is not working. What should I do?
 type: article

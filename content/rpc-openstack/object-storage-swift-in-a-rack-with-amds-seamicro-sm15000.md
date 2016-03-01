@@ -1,5 +1,4 @@
 ---
-permalink: object-storage-swift-in-a-rack-with-amds-seamicro-sm15000/
 node_id: 3281
 title: "Object Storage (Swift) in a Rack with AMD's SeaMicro SM15000"
 type: article

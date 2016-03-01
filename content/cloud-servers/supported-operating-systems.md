@@ -1,5 +1,4 @@
 ---
-permalink: supported-operating-systems/
 node_id: 4744
 title: Supported Operating Systems
 type: article

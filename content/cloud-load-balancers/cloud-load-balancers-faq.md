@@ -1,5 +1,4 @@
 ---
-permalink: cloud-load-balancers-faq/
 node_id: 5004
 title: Cloud Load Balancers FAQ
 type: article

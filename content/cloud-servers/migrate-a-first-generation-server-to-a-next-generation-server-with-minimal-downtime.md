@@ -1,5 +1,4 @@
 ---
-permalink: migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime/
 node_id: 4782
 title: Migrate a First Generation server to a Next Generation server with minimal downtime
 type: article

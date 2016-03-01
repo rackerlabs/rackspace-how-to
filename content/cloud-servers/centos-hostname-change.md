@@ -1,5 +1,4 @@
 ---
-permalink: centos-hostname-change/
 node_id: 90
 title: CentOS - Hostname change
 type: article

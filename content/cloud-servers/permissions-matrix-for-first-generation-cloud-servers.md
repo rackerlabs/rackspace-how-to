@@ -1,5 +1,4 @@
 ---
-permalink: permissions-matrix-for-first-generation-cloud-servers/
 node_id: 3532
 title: Permissions Matrix for First Generation Cloud Servers
 type: article

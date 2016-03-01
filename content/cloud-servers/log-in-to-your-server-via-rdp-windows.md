@@ -1,5 +1,4 @@
 ---
-permalink: log-in-to-your-server-via-rdp-windows/
 node_id: 368
 title: Log in to your server via RDP (Windows)
 type: article

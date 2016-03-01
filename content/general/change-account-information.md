@@ -1,5 +1,4 @@
 ---
-permalink: change-account-information/
 node_id: 4722
 title: Change account information
 type: article

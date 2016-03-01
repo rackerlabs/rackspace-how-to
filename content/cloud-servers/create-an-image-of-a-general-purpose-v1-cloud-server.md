@@ -1,5 +1,4 @@
 ---
-permalink: create-an-image-of-a-general-purpose-v1-cloud-server/
 node_id: 1488
 title: Create an image of a General Purpose v1 Cloud Server
 type: article

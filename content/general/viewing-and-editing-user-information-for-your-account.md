@@ -1,5 +1,4 @@
 ---
-permalink: viewing-and-editing-user-information-for-your-account/
 node_id: 1204
 title: Viewing and editing user information for your account
 type: article

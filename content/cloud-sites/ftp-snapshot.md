@@ -1,5 +1,4 @@
 ---
-permalink: ftp-snapshot/
 node_id: 547
 title: FTP Snapshot
 type: article

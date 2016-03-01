@@ -1,5 +1,4 @@
 ---
-permalink: cloud-queues-message-patterns/
 node_id: 4040
 title: Cloud Queues message patterns
 type: article

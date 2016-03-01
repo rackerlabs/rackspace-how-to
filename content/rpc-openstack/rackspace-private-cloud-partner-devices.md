@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-private-cloud-partner-devices/
 node_id: 3520
 title: Rackspace Private Cloud - Partner Devices
 type: article

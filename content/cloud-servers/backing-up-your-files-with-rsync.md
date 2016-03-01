@@ -1,5 +1,4 @@
 ---
-permalink: backing-up-your-files-with-rsync/
 node_id: 266
 title: Backing up your files with rsync
 type: article

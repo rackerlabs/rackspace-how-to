@@ -1,5 +1,4 @@
 ---
-permalink: using-the-myrackspace-firewall-manager/
 node_id: 4763
 title: MyRackspace Firewall Manager
 type: article

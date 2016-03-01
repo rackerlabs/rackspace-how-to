@@ -1,5 +1,4 @@
 ---
-permalink: update-billing-information-for-cloud-hosting/
 node_id: 653
 title: Update billing information for Cloud Hosting
 type: article

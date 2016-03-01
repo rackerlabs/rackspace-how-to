@@ -1,5 +1,4 @@
 ---
-permalink: create-a-domain-or-subdomain-that-points-to-a-folder-on-an-existing-cloud-sites-website/
 node_id: 605
 title: Create a domain or subdomain that points to a folder on an existing Cloud Sites website
 type: article

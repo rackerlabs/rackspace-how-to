@@ -1,5 +1,4 @@
 ---
-permalink: best-practices-for-cloud-backup/
 node_id: 3426
 title: Best practices for Cloud Backup
 type: article

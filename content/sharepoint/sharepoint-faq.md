@@ -1,5 +1,4 @@
 ---
-permalink: sharepoint-faq/
 node_id: 4998
 title: Microsoft Sharepoint FAQ
 type: article

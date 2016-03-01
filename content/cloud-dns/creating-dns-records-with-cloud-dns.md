@@ -1,5 +1,4 @@
 ---
-permalink: creating-dns-records-with-cloud-dns/
 node_id: 1462
 title: Creating DNS records with Cloud DNS
 type: article

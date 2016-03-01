@@ -1,5 +1,4 @@
 ---
-permalink: mysql-engines-myisam-vs-innodb/
 node_id: 681
 title: MySQL Engines - MyISAM vs Innodb
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: permissions-matrix-for-cloud-files/
 node_id: 3392
 title: Permissions Matrix for Cloud Files
 type: article

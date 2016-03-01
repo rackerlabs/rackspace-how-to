@@ -1,5 +1,4 @@
 ---
-permalink: understanding-logrotate-utility/
 node_id: 1260
 title: Understanding logrotate utility
 type: article

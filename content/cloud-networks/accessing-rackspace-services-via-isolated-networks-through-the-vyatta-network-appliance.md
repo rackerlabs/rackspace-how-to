@@ -1,5 +1,4 @@
 ---
-permalink: accessing-rackspace-services-via-isolated-networks-through-the-vyatta-network-appliance/
 node_id: 3454
 title: Accessing Rackspace Services Via Isolated Networks through the Vyatta Network Appliance
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: set-up-a-static-website-with-cloud-files/
 node_id: 5099
 title: Set up a static website with Cloud Files
 type: article

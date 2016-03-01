@@ -1,5 +1,4 @@
 ---
-permalink: security-for-rackspace-private-cloud-powered-by-openstack/
 node_id: 4590
 title: Security for Rackspace Private Cloud powered by OpenStack
 type: article

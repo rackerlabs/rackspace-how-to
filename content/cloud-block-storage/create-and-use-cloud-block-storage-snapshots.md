@@ -1,5 +1,4 @@
 ---
-permalink: create-and-use-cloud-block-storage-snapshots/
 node_id: 3138
 title: Create and use Cloud Block Storage snapshots
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: disabling-tcp-offloading-in-windows-server-2012/
 node_id: 3855
 title: Disabling TCP Offloading in Windows Server 2012
 type: article

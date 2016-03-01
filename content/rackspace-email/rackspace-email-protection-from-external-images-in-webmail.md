@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-email-protection-from-external-images-in-webmail/
 node_id: 4873
 title: Protection from external images in Webmail
 type: article

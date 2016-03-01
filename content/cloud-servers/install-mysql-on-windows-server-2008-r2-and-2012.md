@@ -1,5 +1,4 @@
 ---
-permalink: install-mysql-on-windows-server-2008-r2-and-2012/
 node_id: 3626
 title: Install MySQL on Windows Server 2008 R2 and 2012
 type: article

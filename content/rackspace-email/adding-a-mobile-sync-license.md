@@ -1,5 +1,4 @@
 ---
-permalink: adding-a-mobile-sync-license/
 node_id: 1387
 title: Add a Mobile Sync license
 type: article

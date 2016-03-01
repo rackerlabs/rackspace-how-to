@@ -1,5 +1,4 @@
 ---
-permalink: managed-operations-faq/
 node_id: 5032
 title: Managed Operations FAQ
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-email-control-panel-overview/
 node_id: 1403
 title: Rackspace Email control panel overview
 type: article

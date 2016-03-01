@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-monitoring-checks-and-alarms/
 node_id: 3647
 title: Rackspace Monitoring Checks and Alarms
 type: article

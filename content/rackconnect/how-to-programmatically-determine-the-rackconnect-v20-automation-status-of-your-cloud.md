@@ -1,5 +1,4 @@
 ---
-permalink: how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud/
 node_id: 3071
 title: Programmatically determine the RackConnect v2.0 Automation status of your cloud servers
 type: article

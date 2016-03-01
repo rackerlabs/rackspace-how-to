@@ -1,5 +1,4 @@
 ---
-permalink: share-a-microsoft-exchange-2010-calendar-using-outlook-2010/
 node_id: 4094
 title: Share a Microsoft Exchange 2010 calendar using Outlook 2010
 type: article

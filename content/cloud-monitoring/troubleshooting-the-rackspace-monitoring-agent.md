@@ -1,5 +1,4 @@
 ---
-permalink: troubleshooting-the-rackspace-monitoring-agent/
 node_id: 3193
 title: Troubleshooting the Rackspace Monitoring Agent
 type: article

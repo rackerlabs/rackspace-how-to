@@ -1,5 +1,4 @@
 ---
-permalink: cloud-queues-faq/
 node_id: 3690
 title: Cloud Queues FAQ
 type: article

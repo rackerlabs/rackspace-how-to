@@ -1,5 +1,4 @@
 ---
-permalink: detailed-permissions-matrix-for-cloud-images/
 node_id: 3741
 title: Detailed Permissions Matrix for Cloud Images
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: open-ports-in-the-linux-firewall-to-access-pop-and-imap-mail-servers/
 node_id: 71
 title: Open ports in the Linux firewall to access POP and IMAP mail servers
 type: article

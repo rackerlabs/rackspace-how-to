@@ -1,5 +1,4 @@
 ---
-permalink: create-a-clone-of-a-cloud-block-storage-volume/
 node_id: 3934
 title: Create a clone of a Cloud Block Storage volume
 type: article

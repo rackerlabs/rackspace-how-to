@@ -1,5 +1,4 @@
 ---
-permalink: using-ntp-to-sync-time/
 node_id: 3406
 title: Using NTP to Sync Time
 type: article

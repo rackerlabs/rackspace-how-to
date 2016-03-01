@@ -1,5 +1,4 @@
 ---
-permalink: when-is-managed-colocation-a-good-fit/
 node_id: 1044
 title: When is Managed Colocation a Good Fit?
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-private-cloud-software-and-sosreport/
 node_id: 3190
 title: Rackspace Private Cloud Software and sosreport
 type: article

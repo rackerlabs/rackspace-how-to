@@ -1,5 +1,4 @@
 ---
-permalink: creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud-0/
 node_id: 3907
 title: Creating an Ubuntu 13.10 image for the Rackspace open cloud
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: monitoring-differences-between-rackspace-server-users-and-non-rackspace-server-users/
 node_id: 4104
 title: 'Monitoring: Differences Between Rackspace Server Users and Non-Rackspace Server Users'
 type: article

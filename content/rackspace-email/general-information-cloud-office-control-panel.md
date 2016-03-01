@@ -1,5 +1,4 @@
 ---
-permalink: general-information-cloud-office-control-panel/
 node_id: 3985
 title: General information in the Cloud Office Control Panel
 type: article

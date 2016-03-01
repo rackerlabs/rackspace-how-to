@@ -1,5 +1,4 @@
 ---
-permalink: testing-network-services-with-netcat/
 node_id: 1438
 title: Testing Network Services with netcat
 type: article

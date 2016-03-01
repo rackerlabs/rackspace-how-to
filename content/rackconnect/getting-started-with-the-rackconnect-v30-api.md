@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-the-rackconnect-v30-api/
 node_id: 4231
 title: Getting started with the RackConnect v3.0 API
 type: article

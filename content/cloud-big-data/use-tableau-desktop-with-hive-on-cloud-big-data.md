@@ -1,5 +1,4 @@
 ---
-permalink: use-tableau-desktop-with-hive-on-cloud-big-data/
 node_id: 4767
 title: Use Tableau Desktop with Hive on Cloud Big Data
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-v20-compatibility-with-cloud-servers-images/
 node_id: 2031
 title: RackConnect v2.0 compatibility with Cloud Servers images
 type: article

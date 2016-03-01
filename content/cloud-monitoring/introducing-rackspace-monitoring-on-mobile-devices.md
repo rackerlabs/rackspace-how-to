@@ -1,5 +1,4 @@
 ---
-permalink: introducing-rackspace-monitoring-on-mobile-devices/
 node_id: 3909
 title: Introducing Rackspace Monitoring on Mobile Devices
 type: article

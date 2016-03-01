@@ -1,5 +1,4 @@
 ---
-permalink: private-cloud-certified-devices-compute/
 node_id: 3282
 title: Private Cloud Certified Devices - Compute
 type: article

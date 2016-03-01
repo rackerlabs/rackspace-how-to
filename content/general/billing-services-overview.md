@@ -1,5 +1,4 @@
 ---
-permalink: billing-services-overview/
 node_id: 1196
 title: Billing Services Overview
 type: article

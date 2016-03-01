@@ -1,5 +1,4 @@
 ---
-permalink: detach-and-delete-cloud-block-storage-volumes/
 node_id: 3139
 title: Detach and delete Cloud Block Storage volumes
 type: article

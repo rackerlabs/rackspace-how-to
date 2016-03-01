@@ -1,5 +1,4 @@
 ---
-permalink: updating-password-authentication-method-on-your-ios-device/
 node_id: 3481
 title: Update the password authentication method for your iOS device
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: using-the-rackspace-network-effectively/
 node_id: 1528
 title: Using the Rackspace network effectively
 type: article

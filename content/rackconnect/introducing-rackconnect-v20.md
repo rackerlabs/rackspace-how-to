@@ -1,5 +1,4 @@
 ---
-permalink: introducing-rackconnect-v20/
 node_id: 2019
 title: Introducing RackConnect v2.0
 type: article

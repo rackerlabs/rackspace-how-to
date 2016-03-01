@@ -1,5 +1,4 @@
 ---
-permalink: dedicated-vmware-vcloud-faq/
 node_id: 4512
 title: Dedicated VMware vCloud FAQ
 type: article

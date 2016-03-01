@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-sites-essentials-mssql-databases/
 node_id: 520
 title: Rackspace Cloud Sites Essentials - MSSQL Databases
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-mac-mail-for-email-hosted-on-exchange-2007/
 node_id: 951
 title: Manually configure Mac Mail for email hosted on Exchange 2007
 type: article

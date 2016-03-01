@@ -1,5 +1,4 @@
 ---
-permalink: set-up-mobile-sync-for-webmail-on-ios-devices/
 node_id: 1385
 title: Set up Mobile Sync for Webmail on iOS devices
 type: article

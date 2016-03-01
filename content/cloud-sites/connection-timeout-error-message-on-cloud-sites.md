@@ -1,5 +1,4 @@
 ---
-permalink: connection-timeout-error-message-on-cloud-sites/
 node_id: 1378
 title: Connection timeout error message on Cloud Sites
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: email-migration-from-google/
 node_id: 3801
 title: Email migration from Google
 type: article

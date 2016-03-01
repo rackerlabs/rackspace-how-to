@@ -1,5 +1,4 @@
 ---
-permalink: create-an-archive-login-message/
 node_id: 4686
 title: Create an archive login message
 type: article

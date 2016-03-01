@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-cloud-sites-getting-fanatical-support/
 node_id: 1244
 title: 'Getting Started With Cloud Sites: Getting Fanatical Support'
 type: article

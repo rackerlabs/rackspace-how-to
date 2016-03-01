@@ -1,5 +1,4 @@
 ---
-permalink: access-cloud-sites-webmail-on-a-mobile-device/
 node_id: 577
 title: Access Cloud Sites webmail on a mobile device
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: important-scheduled-maintenance-dfw-environment-migration/
 node_id: 4724
 title: 'Important Scheduled Maintenance: DFW Environment Migration'
 type: article

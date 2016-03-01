@@ -1,5 +1,4 @@
 ---
-permalink: windows-server-2012-r2-with-managed-operations-support/
 node_id: 3106
 title: Windows Server 2012 R2 with Managed Operations support
 type: article

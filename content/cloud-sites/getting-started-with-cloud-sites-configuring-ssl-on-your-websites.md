@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-cloud-sites-configuring-ssl-on-your-websites/
 node_id: 127
 title: 'Getting started with Cloud Sites: Configuring SSL on your websites'
 type: article

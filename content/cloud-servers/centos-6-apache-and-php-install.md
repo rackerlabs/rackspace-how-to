@@ -1,5 +1,4 @@
 ---
-permalink: centos-6-apache-and-php-install/
 node_id: 92
 title: CentOS 6 - Apache and PHP Install
 type: article

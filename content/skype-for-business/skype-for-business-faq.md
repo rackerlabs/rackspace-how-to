@@ -1,5 +1,4 @@
 ---
-permalink: skype-for-business-faq/
 node_id: 4997
 title: Microsoft Skype for Business FAQ
 type: article

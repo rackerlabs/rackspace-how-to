@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-v20-with-cloud-networks-faq/
 node_id: 3242
 title: RackConnect v2.0 with Cloud Networks FAQ
 type: article

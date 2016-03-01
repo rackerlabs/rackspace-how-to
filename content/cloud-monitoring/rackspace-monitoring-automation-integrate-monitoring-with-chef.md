@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-monitoring-automation-integrate-monitoring-with-chef/
 node_id: 2005
 title: Rackspace Monitoring Automation - Integrate Monitoring with Chef
 type: article

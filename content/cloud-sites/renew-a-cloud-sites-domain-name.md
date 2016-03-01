@@ -1,5 +1,4 @@
 ---
-permalink: renew-a-cloud-sites-domain-name/
 node_id: 641
 title: Renew a Cloud Sites domain name
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: understanding-the-rackspace-intelligence-dashboard-user-interface/
 node_id: 4741
 title: Understanding the Rackspace Intelligence dashboard user interface
 type: article

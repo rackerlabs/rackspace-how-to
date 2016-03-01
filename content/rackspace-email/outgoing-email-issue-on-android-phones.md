@@ -1,5 +1,4 @@
 ---
-permalink: outgoing-email-issue-on-android-phones/
 node_id: 4631
 title: Outgoing email issue on Android phones
 type: article

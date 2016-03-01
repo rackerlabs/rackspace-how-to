@@ -1,5 +1,4 @@
 ---
-permalink: configure-your-cloud-sites-email-account-on-your-iphone/
 node_id: 601
 title: Configure your Cloud Sites email account on your iPhone
 type: article

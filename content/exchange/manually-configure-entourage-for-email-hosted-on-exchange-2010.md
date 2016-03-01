@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-entourage-for-email-hosted-on-exchange-2010/
 node_id: 1295
 title: 'Manually configure Entourage for email hosted on Exchange 2010'
 type: article

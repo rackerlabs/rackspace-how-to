@@ -1,5 +1,4 @@
 ---
-permalink: cloud-storage-app-for-microsoft-sharepoint-overview/
 node_id: 3503
 title: 'Cloud Storage App for Microsoft SharePoint: Overview'
 type: article

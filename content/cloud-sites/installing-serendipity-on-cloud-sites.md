@@ -1,5 +1,4 @@
 ---
-permalink: installing-serendipity-on-cloud-sites/
 node_id: 693
 title: Installing Serendipity on Cloud Sites
 type: article

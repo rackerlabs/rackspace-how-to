@@ -1,5 +1,4 @@
 ---
-permalink: alarm-language-generic-thresholds-made-easy-0/
 node_id: 1947
 title: Alarm Language - Generic Thresholds Made Easy
 type: article

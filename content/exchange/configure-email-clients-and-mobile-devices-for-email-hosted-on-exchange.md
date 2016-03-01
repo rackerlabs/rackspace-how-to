@@ -1,5 +1,4 @@
 ---
-permalink: configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange/
 node_id: 1416
 title: Configure email clients and mobile devices for email hosted on Exchange
 type: article

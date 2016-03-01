@@ -1,5 +1,4 @@
 ---
-permalink: mysql-replication-masterslave/
 node_id: 406
 title: 'MySQL replication: Master/Slave'
 type: article

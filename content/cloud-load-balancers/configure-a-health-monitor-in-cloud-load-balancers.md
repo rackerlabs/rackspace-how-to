@@ -1,5 +1,4 @@
 ---
-permalink: configure-a-health-monitor-in-cloud-load-balancers/
 node_id: 1492
 title: Configure a health monitor in Cloud Load Balancers
 type: article

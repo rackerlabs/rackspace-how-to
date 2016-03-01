@@ -1,5 +1,4 @@
 ---
-permalink: checking-bandwidth-usage-for-cloud-sites/
 node_id: 267
 title: Checking Bandwidth Usage for Cloud Sites
 type: article

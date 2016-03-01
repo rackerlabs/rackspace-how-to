@@ -1,5 +1,4 @@
 ---
-permalink: faq-role-based-access-control-rbac/
 node_id: 3401
 title: 'FAQ: Role-Based Access Control (RBAC)'
 type: article

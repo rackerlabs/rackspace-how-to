@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-metrics-overview/
 node_id: 4587
 title: Rackspace Metrics overview
 type: article

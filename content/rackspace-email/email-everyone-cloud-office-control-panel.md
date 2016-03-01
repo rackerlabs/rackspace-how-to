@@ -1,5 +1,4 @@
 ---
-permalink: email-everyone-cloud-office-control-panel/
 node_id: 4012
 title: 'Email everyone in a domain: Cloud Office Control Panel'
 type: article

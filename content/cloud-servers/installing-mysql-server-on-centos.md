@@ -1,5 +1,4 @@
 ---
-permalink: installing-mysql-server-on-centos/
 node_id: 1164
 title: Installing MySQL Server on CentOS
 type: article

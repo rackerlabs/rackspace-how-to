@@ -1,5 +1,4 @@
 ---
-permalink: installing-nginx-and-php-fpm-the-fun-begins/
 node_id: 1317
 title: Installing NGINX and PHP-FPM  - The Fun Begins
 type: article

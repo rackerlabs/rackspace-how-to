@@ -1,5 +1,4 @@
 ---
-permalink: removing-networks-from-a-cloud-server/
 node_id: 2250
 title: Removing Networks from a Cloud Server
 type: article

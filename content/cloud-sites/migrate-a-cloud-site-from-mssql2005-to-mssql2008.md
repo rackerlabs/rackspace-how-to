@@ -1,5 +1,4 @@
 ---
-permalink: migrate-a-cloud-site-from-mssql2005-to-mssql2008/
 node_id: 664
 title: Migrate a Cloud Site from MSSQL2005 to MSSQL2008
 type: article

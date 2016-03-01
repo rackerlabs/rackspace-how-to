@@ -1,5 +1,4 @@
 ---
-permalink: ubuntu-mod-rails-installation/
 node_id: 465
 title: Ubuntu - mod rails installation
 type: article

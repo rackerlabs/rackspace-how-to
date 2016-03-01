@@ -1,5 +1,4 @@
 ---
-permalink: sample-logrotate-configuration-and-troubleshooting/
 node_id: 1261
 title: Sample logrotate configuration and troubleshooting
 type: article

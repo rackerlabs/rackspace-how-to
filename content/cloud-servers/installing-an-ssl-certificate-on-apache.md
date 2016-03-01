@@ -1,5 +1,4 @@
 ---
-permalink: installing-an-ssl-certificate-on-apache/
 node_id: 360
 title: Installing an SSL certificate on Apache
 type: article

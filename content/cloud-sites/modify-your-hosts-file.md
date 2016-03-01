@@ -1,5 +1,4 @@
 ---
-permalink: modify-your-hosts-file/
 node_id: 629
 title: Modify your hosts file
 type: article

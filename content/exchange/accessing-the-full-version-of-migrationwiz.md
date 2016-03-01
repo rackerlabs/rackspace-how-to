@@ -1,5 +1,4 @@
 ---
-permalink: accessing-the-full-version-of-migrationwiz/
 node_id: 3736
 title: Accessing the full version of MigrationWiz
 type: article

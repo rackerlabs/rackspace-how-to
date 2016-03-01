@@ -1,5 +1,4 @@
 ---
-permalink: cloud-sites-migration-to-aspnet-351-sp1-and-452-faq/
 node_id: 4529
 title: Cloud Sites migration to ASP.NET 3.5.1 SP1 and 4.5.2 FAQ
 type: article

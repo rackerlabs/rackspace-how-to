@@ -1,5 +1,4 @@
 ---
-permalink: cancel-your-cloud-sites-account/
 node_id: 207
 title: Cancel your Cloud Sites account
 type: article

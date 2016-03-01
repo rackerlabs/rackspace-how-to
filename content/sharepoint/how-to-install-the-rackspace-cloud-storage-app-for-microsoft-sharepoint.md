@@ -1,5 +1,4 @@
 ---
-permalink: how-to-install-the-rackspace-cloud-storage-app-for-microsoft-sharepoint/
 node_id: 3504
 title: How to install the Rackspace Cloud Storage App for Microsoft SharePoint
 type: article

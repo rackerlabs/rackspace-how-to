@@ -1,5 +1,4 @@
 ---
-permalink: set-up-dns-records-for-cloud-office-email-and-skype-for-business/
 node_id: 4189
 title: Set up DNS records for Cloud Office email and Skype for Business
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: prevent-server-overload-with-cloud-load-balancers/
 node_id: 1496
 title: Prevent server overload with Cloud Load Balancers
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: administrator-management-cloud-office-control-panel/
 node_id: 3993
 title: 'Administrator management: Cloud Office Control Panel'
 type: article

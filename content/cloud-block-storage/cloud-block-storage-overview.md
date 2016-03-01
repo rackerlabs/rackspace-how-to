@@ -1,5 +1,4 @@
 ---
-permalink: cloud-block-storage-overview/
 node_id: 3135
 title: Overview of Cloud Block Storage
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: permissions-matrix-for-cloud-orchestration/
 node_id: 3888
 title: Permissions matrix for Cloud Orchestration
 type: article

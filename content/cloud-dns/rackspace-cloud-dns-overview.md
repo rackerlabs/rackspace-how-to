@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-dns-overview/
 node_id: 1231
 title: Rackspace Cloud DNS - Overview
 type: article

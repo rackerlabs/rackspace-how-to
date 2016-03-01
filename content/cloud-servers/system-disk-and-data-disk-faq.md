@@ -1,5 +1,4 @@
 ---
-permalink: system-disk-and-data-disk-faq/
 node_id: 3718
 title: System Disk and Data Disk FAQ
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: migrate-to-rackspace-from-another-hosting-provider/
 node_id: 5208
 title: Migrate to Rackspace from another hosting provider
 type: article

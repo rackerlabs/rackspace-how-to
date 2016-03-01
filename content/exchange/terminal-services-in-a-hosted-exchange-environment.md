@@ -1,5 +1,4 @@
 ---
-permalink: terminal-services-in-a-hosted-exchange-environment/
 node_id: 3772
 title: 'Terminal Services in a Hosted Exchange Environment'
 type: article

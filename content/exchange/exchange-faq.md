@@ -1,5 +1,4 @@
 ---
-permalink: exchange-faq/
 node_id: 4994
 title: Microsoft Exchange FAQ
 type: article

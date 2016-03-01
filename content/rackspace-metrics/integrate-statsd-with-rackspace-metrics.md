@@ -1,5 +1,4 @@
 ---
-permalink: deploying-rackspace-metrics/
 node_id: 4553
 title: Integrate StatsD with Rackspace Metrics
 type: article

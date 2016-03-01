@@ -1,5 +1,4 @@
 ---
-permalink: introduction-to-agent-health-monitoring/
 node_id: 4805
 title: Introduction to Agent Health Monitoring
 type: article

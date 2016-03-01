@@ -1,5 +1,4 @@
 ---
-permalink: email-domain-tools-cloud-office-control-panel/
 node_id: 4011
 title: Email domain tools in the Cloud Office Control Panel
 type: article

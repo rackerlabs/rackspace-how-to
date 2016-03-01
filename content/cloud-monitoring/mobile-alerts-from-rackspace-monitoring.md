@@ -1,5 +1,4 @@
 ---
-permalink: mobile-alerts-from-rackspace-monitoring/
 node_id: 4175
 title: Mobile alerts from Rackspace Monitoring
 type: article

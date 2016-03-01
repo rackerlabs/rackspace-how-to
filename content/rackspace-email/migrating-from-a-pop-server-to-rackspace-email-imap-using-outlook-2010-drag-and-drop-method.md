@@ -1,5 +1,4 @@
 ---
-permalink: migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2010-drag-and-drop-method/
 node_id: 3789
 title: Migrate from a POP server to Rackspace Email IMAP using Outlook 2010
 type: article

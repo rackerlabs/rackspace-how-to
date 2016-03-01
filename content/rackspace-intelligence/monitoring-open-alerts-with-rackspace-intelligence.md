@@ -1,5 +1,4 @@
 ---
-permalink: monitoring-open-alerts-with-rackspace-intelligence/
 node_id: 4750
 title: Monitoring open alerts with Rackspace Intelligence
 type: article

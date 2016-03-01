@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-cloud-servers/
 node_id: 351
 title: Getting Started with Cloud Servers
 type: article

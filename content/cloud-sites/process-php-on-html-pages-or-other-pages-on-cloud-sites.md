@@ -1,5 +1,4 @@
 ---
-permalink: process-php-on-html-pages-or-other-pages-on-cloud-sites/
 node_id: 637
 title: Process PHP on HTML pages or other pages on Cloud Sites
 type: article

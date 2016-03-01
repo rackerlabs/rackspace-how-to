@@ -1,5 +1,4 @@
 ---
-permalink: upgrade-email-hosting-cloud-office-control-panel/
 node_id: 3995
 title: Upgrade email hosting in the Cloud Office Control Panel
 type: article

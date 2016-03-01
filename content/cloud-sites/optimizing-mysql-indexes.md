@@ -1,5 +1,4 @@
 ---
-permalink: optimizing-mysql-indexes/
 node_id: 686
 title: Optimizing MySQL - Indexes
 type: article

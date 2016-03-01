@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-neutron-based-networking-api-faq/
 node_id: 3914
 title: Rackspace Neutron-based Networking API FAQ
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: using-wp-supercache-to-optimize-wordpress-on-cloud-sites/
 node_id: 702
 title: Using WP-SuperCache to optimize Wordpress on Cloud Sites
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: multiple-ssl-certificates-on-a-single-rackconnected-cloud-server-pat/
 node_id: 2056
 title: Multiple SSL certificates on a single RackConnect cloud server (PAT)
 type: article

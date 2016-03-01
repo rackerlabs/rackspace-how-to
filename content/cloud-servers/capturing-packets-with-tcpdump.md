@@ -1,5 +1,4 @@
 ---
-permalink: capturing-packets-with-tcpdump/
 node_id: 3434
 title: Capturing Packets with Tcpdump
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: synchronizing-files-to-cloud-files-with-fileconveyor/
 node_id: 3266
 title: Synchronizing files to Cloud Files with Fileconveyor
 type: article

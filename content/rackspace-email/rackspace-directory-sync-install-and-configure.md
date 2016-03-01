@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-directory-sync-install-and-configure/
 node_id: 3435
 title: 'Rackspace Directory Sync: Install and configure'
 type: article

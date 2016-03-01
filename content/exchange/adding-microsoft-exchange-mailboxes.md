@@ -1,5 +1,4 @@
 ---
-permalink: adding-microsoft-exchange-mailboxes-0/
 node_id: 1401
 title: Adding Microsoft Exchange mailboxes
 type: article

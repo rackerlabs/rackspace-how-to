@@ -1,5 +1,4 @@
 ---
-permalink: cloud-files-curl-cookbook/
 node_id: 1445
 title: Cloud Files cURL Cookbook
 type: article

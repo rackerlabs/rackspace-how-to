@@ -1,5 +1,4 @@
 ---
-permalink: enable-or-disable-logging-in-rackspace-cdn/
 node_id: 4663
 title: Enable or disable logging in Rackspace CDN
 type: article

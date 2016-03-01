@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cdn-and-cloud-sites/
 node_id: 4646
 title: Rackspace CDN and Cloud Sites
 type: article

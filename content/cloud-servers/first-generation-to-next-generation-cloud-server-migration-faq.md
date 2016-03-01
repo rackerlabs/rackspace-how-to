@@ -1,5 +1,4 @@
 ---
-permalink: first-generation-to-next-generation-cloud-server-migration-faq/
 node_id: 4473
 title: First Generation to Next Generation cloud server migration FAQ
 type: article

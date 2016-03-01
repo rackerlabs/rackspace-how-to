@@ -1,5 +1,4 @@
 ---
-permalink: view-your-sql-server-database-in-management-studio-2008/
 node_id: 575
 title: View your SQL Server database in Management Studio 2008
 type: article

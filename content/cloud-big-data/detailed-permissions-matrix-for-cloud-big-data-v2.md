@@ -1,5 +1,4 @@
 ---
-permalink: detailed-permissions-matrix-for-cloud-big-data-v2/
 node_id: 4702
 title: Detailed Permissions Matrix for Cloud Big Data v2
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: cloud-orchestration-disclaimer/
 node_id: 4293
 title: Cloud Orchestration disclaimer
 type: article

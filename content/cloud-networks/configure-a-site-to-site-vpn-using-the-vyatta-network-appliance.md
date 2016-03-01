@@ -1,5 +1,4 @@
 ---
-permalink: configure-a-site-to-site-vpn-using-the-vyatta-network-appliance/
 node_id: 3265
 title: Configure a Site-to-site VPN using the Vyatta Network Appliance
 type: article

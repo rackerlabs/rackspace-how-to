@@ -1,5 +1,4 @@
 ---
-permalink: cloud-dns-faq/
 node_id: 1239
 title: Cloud DNS FAQ
 type: article

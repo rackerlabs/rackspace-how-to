@@ -1,5 +1,4 @@
 ---
-permalink: manage-archive-search-results/
 node_id: 4693
 title: Manage Archive Search Results
 type: article

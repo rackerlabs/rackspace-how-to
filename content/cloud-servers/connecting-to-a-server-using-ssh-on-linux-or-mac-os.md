@@ -1,5 +1,4 @@
 ---
-permalink: connecting-to-a-server-using-ssh-on-linux-or-mac-os/
 node_id: 433
 title: Connecting to a server using SSH on Linux or Mac OS
 type: article

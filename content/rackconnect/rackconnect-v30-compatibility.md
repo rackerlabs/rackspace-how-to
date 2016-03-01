@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-v30-compatibility/
 node_id: 4227
 title: RackConnect v3.0 compatibility
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: split-domain-routing/
 node_id: 1268
 title: Set up split domain routing
 type: article

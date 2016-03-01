@@ -1,5 +1,4 @@
 ---
-permalink: set-up-an-api-key-cloud-office-control-panel/
 node_id: 3992
 title: Set up an API key in the Cloud Office Control Panel
 type: article

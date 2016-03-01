@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-apache-hadoop-on-rackspace-cloud/
 node_id: 3351
 title: Getting Started with Apache Hadoop on Rackspace Cloud
 type: article

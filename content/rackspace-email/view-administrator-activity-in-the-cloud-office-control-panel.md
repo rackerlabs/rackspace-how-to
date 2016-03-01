@@ -1,5 +1,4 @@
 ---
-permalink: view-administrator-activity-in-the-cloud-office-control-panel/
 node_id: 3991
 title: View administrator activity in the Cloud Office Control Panel
 type: article

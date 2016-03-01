@@ -1,5 +1,4 @@
 ---
-permalink: rebuild-an-aspnet-application-in-cloud-sites/
 node_id: 659
 title: Rebuild an ASP.NET application in Cloud Sites
 type: article

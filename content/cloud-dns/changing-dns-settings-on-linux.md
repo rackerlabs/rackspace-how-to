@@ -1,5 +1,4 @@
 ---
-permalink: changing-dns-settings-on-linux/
 node_id: 1157
 title: Changing DNS settings on Linux
 type: article

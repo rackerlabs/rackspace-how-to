@@ -1,5 +1,4 @@
 ---
-permalink: change-dns-to-enable-rackspace-cdn/
 node_id: 4565
 title: Change DNS to enable Rackspace CDN
 type: article

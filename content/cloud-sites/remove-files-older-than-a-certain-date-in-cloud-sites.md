@@ -1,5 +1,4 @@
 ---
-permalink: remove-files-older-than-a-certain-date-in-cloud-sites/
 node_id: 640
 title: Remove files older than a certain date in Cloud Sites
 type: article

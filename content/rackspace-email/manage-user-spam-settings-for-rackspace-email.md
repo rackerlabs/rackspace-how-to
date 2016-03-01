@@ -1,5 +1,4 @@
 ---
-permalink: manage-user-spam-settings-for-rackspace-email/
 node_id: 846
 title: Manage user spam settings for Rackspace Email
 type: article

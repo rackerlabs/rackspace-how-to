@@ -1,5 +1,4 @@
 ---
-permalink: linux-patching-for-cloud-servers-managed-operations-service-level/
 node_id: 365
 title: Linux patching for Cloud Servers managed operations service level
 type: article

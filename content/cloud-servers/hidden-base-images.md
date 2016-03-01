@@ -1,5 +1,4 @@
 ---
-permalink: hidden-base-images/
 node_id: 3753
 title: Hidden Base Images
 type: article

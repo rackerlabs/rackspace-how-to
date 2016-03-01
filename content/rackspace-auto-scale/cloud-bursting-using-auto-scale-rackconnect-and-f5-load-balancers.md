@@ -1,5 +1,4 @@
 ---
-permalink: cloud-bursting-using-auto-scale-rackconnect-and-f5-load-balancers/
 node_id: 4051
 title: 'Cloud Bursting using Auto Scale, RackConnect, and F5 Load Balancers'
 type: article

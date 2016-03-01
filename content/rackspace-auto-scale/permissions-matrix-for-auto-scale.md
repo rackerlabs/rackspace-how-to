@@ -1,5 +1,4 @@
 ---
-permalink: permissions-matrix-for-auto-scale/
 node_id: 3675
 title: Permissions Matrix for Auto Scale
 type: article

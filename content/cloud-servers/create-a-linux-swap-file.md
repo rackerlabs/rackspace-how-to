@@ -1,5 +1,4 @@
 ---
-permalink: create-a-linux-swap-file/
 node_id: 3747
 title: Create a Linux Swap File
 type: article

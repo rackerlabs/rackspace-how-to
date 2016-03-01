@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-windows-phone-devices-for-email-hosted-on-exchange-2010/
 node_id: 3350
 title: Manually configure Windows Phone devices for email hosted on Exchange 2010
 type: article

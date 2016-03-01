@@ -1,5 +1,4 @@
 ---
-permalink: checking-listening-ports-with-netstat/
 node_id: 1437
 title: Checking Listening Ports with netstat
 type: article

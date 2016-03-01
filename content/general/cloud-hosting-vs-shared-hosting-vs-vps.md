@@ -1,5 +1,4 @@
 ---
-permalink: cloud-hosting-vs-shared-hosting-vs-vps/
 node_id: 3682
 title: Cloud Hosting vs Shared Hosting vs VPS
 type: article

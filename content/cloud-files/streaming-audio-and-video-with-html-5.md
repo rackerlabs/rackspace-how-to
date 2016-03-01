@@ -1,5 +1,4 @@
 ---
-permalink: streaming-audio-and-video-with-html-5/
 node_id: 3285
 title: Streaming Audio and Video with HTML 5
 type: article

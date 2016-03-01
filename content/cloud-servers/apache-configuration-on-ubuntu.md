@@ -1,5 +1,4 @@
 ---
-permalink: apache-configuration-on-ubuntu/
 node_id: 450
 title: Apache configuration on Ubuntu
 type: article

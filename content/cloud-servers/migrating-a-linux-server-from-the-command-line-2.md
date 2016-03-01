@@ -1,5 +1,4 @@
 ---
-permalink: migrating-a-linux-server-from-the-command-line-2/
 node_id: 389
 title: Migrate a Linux server per-package from the command line
 type: article

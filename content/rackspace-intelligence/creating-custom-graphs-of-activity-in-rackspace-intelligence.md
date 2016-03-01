@@ -1,5 +1,4 @@
 ---
-permalink: creating-custom-graphs-of-activity-in-rackspace-intelligence/
 node_id: 4743
 title: Creating custom graphs of activity in Rackspace Intelligence
 type: article

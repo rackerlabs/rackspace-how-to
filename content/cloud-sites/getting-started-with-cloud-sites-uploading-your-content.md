@@ -1,5 +1,4 @@
 ---
-permalink: getting-started-with-cloud-sites-uploading-your-content/
 node_id: 738
 title: 'Getting Started With Cloud Sites: Uploading Your Content'
 type: article

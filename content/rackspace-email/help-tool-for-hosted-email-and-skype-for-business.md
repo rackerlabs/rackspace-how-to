@@ -1,5 +1,4 @@
 ---
-permalink: help-tool-for-hosted-email-and-skype-for-business/
 node_id: 4294
 title: Help tool for hosted email and Skype for Business
 type: article

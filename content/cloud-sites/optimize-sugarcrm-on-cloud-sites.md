@@ -1,5 +1,4 @@
 ---
-permalink: optimize-sugarcrm-on-cloud-sites/
 node_id: 632
 title: Optimize SugarCRM on Cloud Sites
 type: article

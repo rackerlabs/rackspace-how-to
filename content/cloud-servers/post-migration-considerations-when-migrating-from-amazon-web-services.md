@@ -1,5 +1,4 @@
 ---
-permalink: post-migration-considerations-when-migrating-from-amazon-web-services/
 node_id: 3579
 title: Post-migration considerations when migrating from Amazon Web Services
 type: article

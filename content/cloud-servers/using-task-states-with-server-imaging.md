@@ -1,5 +1,4 @@
 ---
-permalink: using-task-states-with-server-imaging/
 node_id: 3663
 title: Using task states with server imaging
 type: article

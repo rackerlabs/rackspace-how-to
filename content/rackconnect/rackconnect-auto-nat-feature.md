@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-auto-nat-feature/
 node_id: 3261
 title: RackConnect Auto NAT feature
 type: article

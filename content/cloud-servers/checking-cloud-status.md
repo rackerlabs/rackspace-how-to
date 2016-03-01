@@ -1,5 +1,4 @@
 ---
-permalink: checking-cloud-status/
 node_id: 1328
 title: Checking Cloud Status
 type: article

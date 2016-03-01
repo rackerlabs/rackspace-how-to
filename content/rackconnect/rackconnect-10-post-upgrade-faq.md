@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-10-post-upgrade-faq/
 node_id: 2061
 title: RackConnect 1.0 Post-Upgrade FAQ
 type: article

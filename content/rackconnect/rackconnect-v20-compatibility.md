@@ -1,5 +1,4 @@
 ---
-permalink: rackconnect-v20-compatibility/
 node_id: 3629
 title: RackConnect v2.0 compatibility
 type: article

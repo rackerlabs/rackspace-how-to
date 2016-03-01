@@ -1,5 +1,4 @@
 ---
-permalink: prepare-to-migrate-a-linux-server/
 node_id: 1325
 title: Prepare to migrate a Linux server
 type: article

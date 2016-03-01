@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud/
 node_id: 1312
 title: Rackspace Cloud Essentials - Transferring Your Domain to be Served from Rackspace Cloud
 type: article

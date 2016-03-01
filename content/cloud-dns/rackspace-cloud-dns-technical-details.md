@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-dns-technical-details/
 node_id: 1233
 title: Rackspace Cloud DNS - Technical details
 type: article

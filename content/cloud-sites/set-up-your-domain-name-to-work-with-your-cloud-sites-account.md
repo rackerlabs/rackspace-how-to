@@ -1,5 +1,4 @@
 ---
-permalink: set-up-your-domain-name-to-work-with-your-cloud-sites-account/
 node_id: 646
 title: Set up your domain name to work with your Cloud Sites account
 type: article

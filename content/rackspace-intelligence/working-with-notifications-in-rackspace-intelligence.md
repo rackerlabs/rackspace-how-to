@@ -1,5 +1,4 @@
 ---
-permalink: working-with-notifications-in-rackspace-intelligence/
 node_id: 4746
 title: Working with notifications in Rackspace Intelligence
 type: article

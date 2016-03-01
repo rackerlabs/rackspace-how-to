@@ -1,5 +1,4 @@
 ---
-permalink: add-and-remove-glusterfs-servers/
 node_id: 4091
 title: Add and remove GlusterFS servers
 type: article

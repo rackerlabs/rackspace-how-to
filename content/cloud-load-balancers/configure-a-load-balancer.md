@@ -1,5 +1,4 @@
 ---
-permalink: configure-a-load-balancer/
 node_id: 1469
 title: Configure a load balancer
 type: article

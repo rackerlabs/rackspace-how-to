@@ -1,5 +1,4 @@
 ---
-permalink: limits-for-rackspace-cdn/
 node_id: 4655
 title: Limits for Rackspace CDN
 type: article

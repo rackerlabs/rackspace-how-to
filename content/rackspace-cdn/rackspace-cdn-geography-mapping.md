@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cdn-geography-mapping/
 node_id: 4810
 title: Rackspace CDN geography mapping
 type: article

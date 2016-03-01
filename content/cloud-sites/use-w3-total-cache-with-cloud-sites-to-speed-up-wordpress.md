@@ -1,5 +1,4 @@
 ---
-permalink: use-w3-total-cache-with-cloud-sites-to-speed-up-wordpress/
 node_id: 4481
 title: Use W3 Total Cache with Cloud Sites to speed up WordPress
 type: article

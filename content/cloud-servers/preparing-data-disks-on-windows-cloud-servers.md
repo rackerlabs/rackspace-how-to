@@ -1,5 +1,4 @@
 ---
-permalink: preparing-data-disks-on-windows-cloud-servers/
 node_id: 3750
 title: Preparing data disks on Windows Cloud Servers
 type: article

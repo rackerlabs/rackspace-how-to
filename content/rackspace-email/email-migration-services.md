@@ -1,5 +1,4 @@
 ---
-permalink: email-migration-services/
 node_id: 3619
 title: Email migration services
 type: article

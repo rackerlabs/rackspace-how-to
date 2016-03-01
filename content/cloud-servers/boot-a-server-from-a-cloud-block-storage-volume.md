@@ -1,5 +1,4 @@
 ---
-permalink: boot-a-server-from-a-cloud-block-storage-volume/
 node_id: 4212
 title: Boot a server from a Cloud Block Storage volume
 type: article

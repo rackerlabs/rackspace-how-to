@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-bandwidth-charges/
 node_id: 422
 title: Rackspace Cloud Bandwidth Charges
 type: article

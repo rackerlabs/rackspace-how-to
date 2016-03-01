@@ -1,5 +1,4 @@
 ---
-permalink: factors-that-affect-the-duration-of-email-migrations/
 node_id: 3797
 title: Factors that affect the duration of email migrations
 type: article

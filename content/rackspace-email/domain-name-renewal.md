@@ -1,5 +1,4 @@
 ---
-permalink: domain-name-renewal/
 node_id: 1146
 title: Renew your domain name
 type: article

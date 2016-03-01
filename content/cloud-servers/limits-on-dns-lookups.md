@@ -1,5 +1,4 @@
 ---
-permalink: limits-on-dns-lookups/
 node_id: 4721
 title: Limits on DNS lookups
 type: article

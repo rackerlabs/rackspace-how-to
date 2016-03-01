@@ -1,5 +1,4 @@
 ---
-permalink: brocade-vyatta-vrouter-configuration-guide/
 node_id: 4165
 title: Brocade Vyatta vRouter configuration guide
 type: article

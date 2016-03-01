@@ -1,5 +1,4 @@
 ---
-permalink: upcoming-deprecation-of-resource-rackspacecloudserver-for-cloud-orchestration/
 node_id: 4758
 title: 'Upcoming deprecation of resource Rackspace::Cloud::Server for Cloud Orchestration'
 type: article

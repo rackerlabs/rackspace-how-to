@@ -1,5 +1,4 @@
 ---
-permalink: add-another-wordpress-site-to-an-existing-cloud-orchestration-stack/
 node_id: 3810
 title: Add another WordPress site to an existing Cloud Orchestration stack
 type: article

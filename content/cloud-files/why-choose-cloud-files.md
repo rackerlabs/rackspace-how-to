@@ -1,5 +1,4 @@
 ---
-permalink: why-choose-cloud-files/
 node_id: 1056
 title: Why choose Cloud Files?
 type: article

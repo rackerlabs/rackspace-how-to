@@ -1,5 +1,4 @@
 ---
-permalink: manually-configure-blackberry-10-devices-for-email-hosted-on-exchange-2007/
 node_id: 3365
 title: Manually configure Blackberry 10 devices for email hosted on Exchange 2007
 type: article

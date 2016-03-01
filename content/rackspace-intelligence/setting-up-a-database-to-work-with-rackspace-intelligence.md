@@ -1,5 +1,4 @@
 ---
-permalink: setting-up-a-database-to-work-with-rackspace-intelligence/
 node_id: 4738
 title: Setting up a database to work with Rackspace Intelligence
 type: article

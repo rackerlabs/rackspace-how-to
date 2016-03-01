@@ -1,5 +1,4 @@
 ---
-permalink: creating-nat-rules-for-vyatta-vrouter/
 node_id: 4499
 title: Creating NAT rules for Vyatta vRouter
 type: article

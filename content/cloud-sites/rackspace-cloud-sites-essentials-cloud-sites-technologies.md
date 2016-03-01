@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-cloud-sites-essentials-cloud-sites-technologies/
 node_id: 1251
 title: 'Rackspace Cloud Sites Essentials: Cloud Sites Technologies'
 type: article

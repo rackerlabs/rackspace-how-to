@@ -1,5 +1,4 @@
 ---
-permalink: managing-your-server-resizing-standard-and-general-purpose-servers/
 node_id: 1476
 title: Managing your server - resizing standard and general purpose servers
 type: article

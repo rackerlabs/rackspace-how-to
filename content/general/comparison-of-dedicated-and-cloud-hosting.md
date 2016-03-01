@@ -1,5 +1,4 @@
 ---
-permalink: comparison-of-dedicated-and-cloud-hosting/
 node_id: 1292
 title: Comparison of dedicated and cloud hosting
 type: article

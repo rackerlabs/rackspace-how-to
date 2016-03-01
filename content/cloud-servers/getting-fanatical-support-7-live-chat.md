@@ -1,5 +1,4 @@
 ---
-permalink: getting-fanatical-support-7-live-chat/
 node_id: 1331
 title: Getting Fanatical Support 7 - Live Chat
 type: article

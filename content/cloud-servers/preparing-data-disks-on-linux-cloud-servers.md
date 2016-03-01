@@ -1,5 +1,4 @@
 ---
-permalink: preparing-data-disks-on-linux-cloud-servers/
 node_id: 3749
 title: Preparing Data Disks on Linux Cloud Servers
 type: article

@@ -1,5 +1,4 @@
 ---
-permalink: create-a-cloud-server/
 node_id: 1468
 title: Create a cloud server
 type: article

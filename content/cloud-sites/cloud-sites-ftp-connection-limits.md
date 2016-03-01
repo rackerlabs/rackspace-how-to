@@ -1,5 +1,4 @@
 ---
-permalink: cloud-sites-ftp-connection-limits/
 node_id: 3174
 title: Cloud Sites FTP Connection Limits
 type: article

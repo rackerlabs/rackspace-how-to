@@ -1,5 +1,4 @@
 ---
-permalink: creating-and-configuring-a-user-in-mssql/
 node_id: 329
 title: Creating and Configuring a User in MSSQL
 type: article

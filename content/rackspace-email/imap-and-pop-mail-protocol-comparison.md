@@ -1,5 +1,4 @@
 ---
-permalink: imap-and-pop-mail-protocol-comparison/
 node_id: 1425
 title: IMAP and POP mail protocol comparison
 type: article

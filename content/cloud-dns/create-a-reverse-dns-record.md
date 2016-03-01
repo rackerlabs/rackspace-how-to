@@ -1,5 +1,4 @@
 ---
-permalink: create-a-reverse-dns-record-0/
 node_id: 64
 title: Create a reverse DNS record
 type: article

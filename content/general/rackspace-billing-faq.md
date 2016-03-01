@@ -1,5 +1,4 @@
 ---
-permalink: rackspace-billing-faq/
 node_id: 3860
 title: Rackspace billing FAQ
 type: article

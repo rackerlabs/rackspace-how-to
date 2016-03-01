@@ -1,5 +1,4 @@
 ---
-permalink: migrating-your-drupal-database-to-cloud-servers/
 node_id: 390
 title: Migrating your Drupal database to Cloud Servers
 type: article
