@@ -12,6 +12,7 @@ product_url: cloud-backup
 ---
 
 **Note:** Cloud Backup works only on Rackspace Cloud Servers.
+**WARNING!** Cloud Backup does **not** follow symlinks.
 
 Rackspace Cloud Backup [product
 page](http://www.rackspace.com/cloud/backup/) is a file-based backup
