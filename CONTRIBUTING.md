@@ -8,11 +8,23 @@ Content is grouped into one directory per product. Each directory contains one f
 
 Use the following instructions to create a new article, make edits to an existing one, or suggest edits via an issue.
 
+#### Create a fork of the repository
+
+Before you create a new article or make edits to an existing one, create a fork of the How-to repo by clicking on the **Fork** button located to the far right of the repository name. You will have the option to fork the repository into any of the organizations in which you are currently a member, but be sure to select your personal GitHub account. 
+
+This will create a personal copy of the How-To repository on your GitHub account that is not published to the live site. 
+
+Because your forked copy of the repository is not live, you will need to periodically bring it back up to date. There is a status message above the latest commit activity that informs you whether your forked repo is current with the master How-To repository. If the status states that "This branch is 10 commits behind rackerlabs:master", you will need to update your repo by clicking on the **Pull request** button to the right of the message.
+
+To avoid any merge conflicts or difficulties when making a pull request, always check that your copy of the fork is up to date with the master repository.
+
 #### Create an article
 
 Follow these steps to create a new article within a product folder of the **rackerlabs/rackspace-how-to** repo.
 
-1.	Go to the [Rackspace How-to content folder](https://github.com/rackerlabs/rackspace-how-to/tree/master/content) and click the product for which you want to create an article.
+1.	Go to your fork of the [Rackspace How-to content folder](https://github.com/rackerlabs/rackspace-how-to/tree/master/content) and click the product for which you want to create an article.
+  
+   **Note**: If you haven't already forked the How-to repository, do so by clicking the **Fork** button and selecting your personal GitHub account before proceeding.
 
 2.	Click **New file**.
 
@@ -44,6 +56,8 @@ Follow these steps to create a new article within a product folder of the **rack
 7.	In the **Commit new file** box at the bottom of the page, create a new branch for this commit.
 
 8.	Create a pull request (PR).
+          
+    **Note**: Make sure that the selected base fork is **rackerlabs/rackspace-how-to** and that the head fork is your forked repository. For example, **stephamon/rackspace-how-to**.
 
 Your PR will be reviewed. Depending on the review feedback, you might be asked to make additional changes.
 
@@ -52,7 +66,7 @@ Your PR will be reviewed. Depending on the review feedback, you might be asked t
 #### Edit an article
 Follow these steps to edit an existing article within a product folder of the **rackerlabs/rackspace-how-to** repo.
 
-1. Go to the [Rackspace How-to content folder](https://github.com/rackerlabs/rackspace-how-to/tree/master/content) and click the product for which you want to edit the article.
+1. Go to your fork of the [Rackspace How-to content folder](https://github.com/rackerlabs/rackspace-how-to/tree/master/content) and click the product for which you want to edit the article.
 
 2. Make any edits directly through the GitHub website, through a GitHub desktop client, or on the command line.
 
@@ -67,11 +81,15 @@ Follow these steps to edit an existing article within a product folder of the **
 
 4. Create a PR for your branch.
 
+   **Note**: Make sure that the selected base fork is **rackerlabs/rackspace-how-to** and that the head fork is your forked repository. For example, **stephamon/rackspace-how-to**.
+
 Your PR will be reviewed. Depending on the review feedback, you might be asked to make additional changes.
 
 #### Request an article change
 
 To request a change, create an issue by clicking **Issue** near the top of this page. Describe the changes that you are requesting.
+
+**Note**: Create issues in the master [Rackspace How-to repository](https://github.com/rackerlabs/rackspace-how-to/issues) rather than in your fork.
 
 ### Writing guidelines
 

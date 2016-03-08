@@ -107,9 +107,9 @@ configuration file, these values are set:
 
 The maximum values for these parameters are as follows:
 
-&middot;  MaxBackupIndex: 12
+-  MaxBackupIndex: 12
 
-&middot;  MaxFileSize: unlimited (500 MB recommended)
+-  MaxFileSize: unlimited (500 MB recommended)
 
 After the problem is diagnosed, we recommend that you return these
 parameters to their original values to conserve disk space.
