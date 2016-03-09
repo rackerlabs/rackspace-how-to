@@ -88,6 +88,10 @@ Simple Rules:
 
          sudo iptables -A INPUT -i eth0 -m state --state ESTABLISHED,RELATED -j ACCEPT
 
+- To to allow connections on ServiceNet (required by Cloud products, notably Cloud Backup and Cloud Monitoring)
+
+         sudo iptables -A INPUT -i eth1 -m state --state ESTABLISHED,RELATED -j ACCEPT
+
 -  Allow connections to SSH
 
   Ok, in this case we can make a few different choices, the choices can be
