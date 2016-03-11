@@ -32,8 +32,4 @@ with the recipient server using TLS. If TLS cannot be successfully
 connected, the communication will default back to an unencrypted
 transmission of the data, also referred to as PLAINTEXT.
 
-In order to transmit over SSL you will need to be transmitting over an
-SSL based SMTP port. This also means having an SSL port configured in
-outlook would mean Opportunistic TLS was not followed.
-
 Also our servers will respond to TLS and SSL requests to send mail to us encrypted.

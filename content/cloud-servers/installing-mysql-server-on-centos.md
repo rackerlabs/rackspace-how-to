@@ -139,10 +139,14 @@ password. The following `mysql` shell prompt should appear:
 ### Set the root password
 
 Since you have just installed your MySQL database server, the root
-account within MySQL has no password set yet. You should change that by
-running the following commands:
+account within MySQL has no password set yet. If you are logged into the
+database server you should change that by running the following command:
 
     /usr/bin/mysqladmin -u root password 'new-password'
+
+If you are not logged into the database server you can remotely set the
+root password by specifying the hostname of your database server:
+
     /usr/bin/mysqladmin -u root --password='new-password' -h hostname-of-your-server 'new-password'
 
 **Note:** This article shows SQL commands in all capitals, but you can

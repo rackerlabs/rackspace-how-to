@@ -63,7 +63,7 @@ up-to-date on the system.
 
 2. Update the driveclient.
 
-        yum upgrade --assume-yes driveclient
+        yum upgrade -y driveclient
 
 **Note:** Fedora 22 and later use a new package manager called DNF
 (Dandified Yum).

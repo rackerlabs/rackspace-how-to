@@ -37,6 +37,8 @@ Knowing the language of backup goes a long way towards helping you make informed
 
 ### Choosing what to backup
 
+**Warning:** Cloud Backup does *not* follow symlinks. For example, if a symlink points to a file, the symlink itself is backed up, but the file it points to is not backed up. Likewise, if a symlink points to a folder, the symlink itself is backed up, but the folder and anything under the folder is not be backed up. If you want to back up files or folders to be backed up, do not use a symlink.
+
 Our best guidance is not what to backup, but what not to backup:
 
 - Do not back up running databases -- to backup a database, see the topic on [backing up databases](/how-to/rackspace-cloud-backup-backing-up-databases).
@@ -44,9 +46,9 @@ Our best guidance is not what to backup, but what not to backup:
 - Do not back up frequently changing files, such as logs
 - Do not back up root -- to save all data and the server, [make an image of the server](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image) instead.
 
-Lastly, do not compress your data before backup, as this defeats the purpose of deduplication. Deduplication saves only the updated information and saves you storage space and money during the backup process.
+**Note:** Do not compress your data before backup it is backed up. Doing so defeats the backup deduplication, which is typically far more efficient than simple file compression. Deduplication stores only the updated data, and saves you storage space and money during the backup process.
 
-The Cloud Backup Agent tries to be helpful, and skips the below types of files automatically. You may, however, manually add them to your backup.
+The Cloud Backup Agent tries to be helpful, and skips the below types of files automatically.
 
 - Memory-only file systems (Linux: /proc, etc. )
 - Cloud Backup agent data directories

@@ -13,6 +13,8 @@ product_url: cloud-backup
 
 **Note:** Cloud Backup works only on Rackspace Cloud Servers.
 
+**Warning:** Cloud Backup does *not* follow symlinks. If you want to back up files or folders, do not use a symlink.
+
 Rackspace Cloud Backup [product
 page](http://www.rackspace.com/cloud/backup/) is a file-based backup
 application that lets you choose which files and folders to back up from
