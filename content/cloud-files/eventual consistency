@@ -1,0 +1,19 @@
+   ---
+   title: Eventual Consistency in CLoud Files
+
+   type: article
+
+   created_date: '2016-03-11'
+
+   created_by: Matthew Barker
+
+   last_modified_date: '2016-03-11'
+
+   last_modified_by: Matthew Barker
+
+   product: Cloud Files
+
+   product_url: cloud-files
+   ---
+One of the key characteristics of Cloud Files is that it is "eventually consistent".  In computing, the CAP theorem states that distributed systems must choose two out of consistency, availability, and tolerating network failure. For example, a system can be consistent (i.e. all reads get the most current data) and handle network failures, but it must sacrifice availability to do so. Or a system can choose to handle network failures and have perfect availability, but it must sacrifice consistency to do so. Distributed systems must always handle network failures, so they must choose to sacrifice either availability or consistency.
+Storage systems become distributed as they grow. OpenStack Swift (the basis for Rackspace’s Cloud Files product) chooses to sacrifice consistency for availability and network failure tolerance. This choice allows the system to scale to enormous levels and provide massive uptime, but it also means that in certain scenarios, some data may not be updated throughout the entire system. For example, a container listing may not be up-to-date immediately after writing an object. Swift will queue the container listing update and allow the object write to succeed. This sort of consistency model is called “eventual consistency”.
