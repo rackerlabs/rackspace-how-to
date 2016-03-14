@@ -24,6 +24,8 @@ detach them from a cloud server, you might experience a brief
 interruption (lasting a few seconds) in traffic hitting your cloud
 server while networking is being reset on the server.
 
+**IMPORTANT for RackConnect v2.0:** Attaching/detaching a Cloud Network on a running RackConnected Cloud Server causes the network stack to be reset, which will break the cloud server’s RackConnect connectivity. Therefore, we do not recommend attaching or detaching Cloud Networks to running RackConnect servers. If you do need to attach or detach a network, please contact your Support team prior to making the change.
+
 To attach an isolated network to an existing cloud server by cloning it
 in the Cloud Control Panel, perform the following steps:
 
@@ -69,3 +71,5 @@ attached to the networks that you selected.
 [Using CIDR notation in Cloud Networks](/how-to/using-cidr-notation-in-cloud-networks)
 
 [Cloud Networks Developer Guide](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/)
+
+[RackConnect v2.0 with Cloud Networks FAQ](/how-to/rackconnect-v20-with-cloud-networks-faq/)
