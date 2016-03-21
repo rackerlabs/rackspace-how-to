@@ -8,6 +8,20 @@ Content is grouped into one directory per product. Each directory contains one f
 
 Use the following instructions to create a new article, make edits to an existing one, or suggest edits via an issue.
 
+#### Create a fork of the repository
+
+Before you create a new article or make edits to an existing one, create a *fork* of the How-to repo. 
+
+1. In the top-right corner of the page, click the **Fork** button. 
+
+2. In the pop-up box, select your personal GitHub account. 
+
+A personal copy of the How-To repository is created in your GitHub account. 
+
+Because your forked copy of the repository is not live, you need to periodically bring it back up to date. There is a status message above the latest commit activity that informs you whether your forked repo is current with the master How-To repository. If the status says `This branch is 10 commits behind rackerlabs:master`, update your repo by clicking the **Pull request** button to the right of the message.
+
+To avoid any merge conflicts or difficulties when making a pull request, always check that your copy of the fork is up to date with the master repository.
+
 #### Create an article
 
 Follow these steps to create a new article within a product folder of the **rackerlabs/rackspace-how-to** repo.
