@@ -28,7 +28,7 @@ Use the following steps to create a HA instance group.
 
 3.  In the **Databases** menu, select **MySQL Instance** under **CREATE RESOURCES**.
 
-   ![]({% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-cloud-control-panel/managing-cloud-database-top-nav-create-1.png %})
+   ![]({% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-cloud-control-panel/managing-cloud-databases-top-nav-create-1.png %})
 
 4.  In the **Identity** section, provide a name for the instance and specify the region in which you want to launch the HA instances that you create.
 
