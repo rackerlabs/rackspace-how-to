@@ -45,7 +45,7 @@ Follow these steps to create a new article within a product folder of the **rack
 
 8.	Create a pull request (PR).
 
-Your PR will be reviewed. Depending on the review feedback, you might be asked to make additional changes. **DO NOT MERGE YOUR OWN PULL REQUEST.** The How-to editorial team will merge your pull request once your contribution is reviewed.
+Your PR will be reviewed. Depending on the review feedback, you might be asked to make additional changes. The How-to editorial team will merge your pull request once your contribution is reviewed.
 
 **Note:** If your article includes images, send an email to <how-to@rackspace.com> with the image files. Note where the images belong in the article by using comments: `<!--this is a comment-->`. 
 
