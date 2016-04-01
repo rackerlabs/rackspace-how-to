@@ -11,7 +11,7 @@ product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-Your server can connect to a Cloud Block Storage volume.
+Your OnMetal server can connect to a Cloud Block Storage volume.
 
 Connecting an OnMetal server to a Cloud Block Storage volume is useful
 if you need more than 32 GB of storage but do not have a requirement for
