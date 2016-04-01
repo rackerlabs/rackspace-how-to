@@ -11,7 +11,7 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-When backing up the data disk or disks on your General Purpose Cloud
+BLAH BLAH BLAH When backing up the data disk or disks on your General Purpose Cloud
 Servers you have two convenient choices: Cloud Block Storage or Cloud
 Backup. Identifying which one to use depends on what features are most
 important to you.
