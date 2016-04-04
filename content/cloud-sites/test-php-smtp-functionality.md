@@ -10,7 +10,6 @@ last_modified_by: Stephanie Fillmon
 product: Cloud Sites
 product_url: cloud-sites
 ---
-
 You can test PHP SMTP functions with the following two examples. The
 first one is standard SMTP, and the second one is SMTP with SSL.
 
@@ -19,7 +18,13 @@ Because of stringent anti-spam filters, sending mail through
 unauthenticated SMTP servers (including the localhost relay on Cloud
 Sites) can result in delays or undelivered email.
 
-Be advised that use of Rackspace Email or legacy Cloud Sites email for sending mail will require use of SSL/TLS.
+The host, username, and password values depend on the provider that
+you're using to send your email. If you have a legacy Cloud Sites email
+account or are using Rackspace Email, SSL/TLS is required. The host is
+**secure.emailsrvr.com**, the username is your email address and the port is 465. If
+you're using another service such as Mailgun or Gmail to send email, you
+must provide the SMTP server for that service. You can access Mailgun
+server information in the Mailgun control panel.
 
 ### Sending mail with PHP SMTP
 
@@ -33,15 +38,7 @@ appropriate values for your system:
 -   $host
 -   $username
 -   $password
-
-The host, username, and password values depend on the provider that
-you're using to send your email. If you have a legacy Cloud Sites email
-account or are using Rackspace Email, the host is
-**mail.emailsrvr.com**, and the username is your email address. If
-you're using another service such as Mailgun or Gmail to send email, you
-must provide the SMTP server for that service. You can access Mailgun
-server information in the Mailgun control panel.
-
+```
     <?php
     require_once "Mail.php";
 
@@ -50,7 +47,7 @@ server information in the Mailgun control panel.
     $subject = "Test email using PHP SMTP\r\n\r\n";
     $body = "This is a test email message";
 
-    $host = "mail.emailsrvr.com";
+    $host = "SMTPhostname";
     $username = "webmaster@example.com";
     $password = "yourPassword";
 
@@ -71,7 +68,7 @@ server information in the Mailgun control panel.
       echo("<p>Message successfully sent!</p>");
     }
     ?>
-
+```
 ### Sending mail with PHP SMTP with SSL
 
 For the following variables, replace the example values with the
@@ -84,8 +81,9 @@ appropriate values for your system:
 -   $host
 -   $username
 -   $password
+-   $port
 
-
+```
     <?php
     require_once "Mail.php";
 
@@ -94,7 +92,7 @@ appropriate values for your system:
     $subject = "Test email using PHP SMTP with SSL\r\n\r\n";
     $body = "This is a test email message";
 
-    $host = "ssl://secure.emailsrvr.com";
+    $host = "ssl://SMTPhostname";
     $port = "465";
     $username = "webmaster@example.com";
     $password = "yourPassword";
@@ -117,7 +115,7 @@ appropriate values for your system:
       echo("<p>Message successfully sent!</p>");
     }
     ?>
-
+```
 **Note**: [Mail.php](http://pear.php.net/package/Mail) is a [PEAR](http://pear.php.net/) module and is installed on the server. It is included in the default [include\_path](http://www.php.net/manual/en/ini.core.php) for PHP, so [requiring](http://php.net/manual/en/function.require.php) it here works by default.
 
 ### Related article
