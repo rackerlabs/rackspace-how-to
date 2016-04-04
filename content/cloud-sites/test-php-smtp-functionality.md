@@ -19,6 +19,8 @@ Because of stringent anti-spam filters, sending mail through
 unauthenticated SMTP servers (including the localhost relay on Cloud
 Sites) can result in delays or undelivered email.
 
+Be advised that use of Rackspace Email or legacy Cloud Sites email for sending mail will require use of SSL/TLS.
+
 ### Sending mail with PHP SMTP
 
 For the following variables, replace the example values with the
