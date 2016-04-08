@@ -5,11 +5,15 @@ title: Best practices for Cloud Backup
 type: article
 created_date: '2013-04-22'
 created_by: David Hendler
-last_modified_date: '2016-04-04'
+last_modified_date: '2016-04-08'
 last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
 ---
+
+### This is a test header three.
+
+This is a test of the emergency contribution system...
 
 This article shows you how to get the most out of Rackspace Cloud Backup and addresses frequently encountered scenarios. Working through this article, you will better understand the key backup concepts, how to make smart choices about what to back up (and how often), how to make the most of data restoration, and how to resolve the most commonly encountered Cloud Backup issues.
 
