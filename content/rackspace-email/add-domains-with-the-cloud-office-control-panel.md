@@ -16,7 +16,7 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
 1.  From the **Go to section** menu, select **Domains**.
 2.  In the **Manage** section, click **Add Domain**.
 3.  If you have already purchased the domain, enter it in the **Option 1** text box, and then click **Continue**. Skip to step 6.
-4.  To register a new domain, enter the domain name in the **Option 2** text box and select the top-level domain that you want (for example, **.com** or **.net**).
+4.  To register a new domain, enter the domain name in the **Option 2** text box and select the top-level domain that you want (for example, **.com** or **.newt**).
 5.  Click **Continue** and confirm your domain purchase.
 
     **Note:** When you purchase a new domain, a verification email is sent to the email address on record. You must click the verification link in the email within 15 days to avoid any disruption to your domains. For more information, see [Additional information about Registrant Benefits and     Responsibilities](http://www.rackspace.com/information/legal/RAAInfo).
