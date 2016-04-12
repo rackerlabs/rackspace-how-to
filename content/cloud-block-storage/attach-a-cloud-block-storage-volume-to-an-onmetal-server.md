@@ -19,7 +19,7 @@ the fast I/O normally provided by an OnMetal server. Using an OnMetal
 server with Cloud Block Storage is particularly useful for OnMetal
 Compute and Memory v1 flavors.
 
-
+blah blah
 
 ### Attach a volume
 
