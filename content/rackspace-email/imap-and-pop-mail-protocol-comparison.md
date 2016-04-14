@@ -5,8 +5,8 @@ title: IMAP and POP mail protocol comparison
 type: article
 created_date: '2012-06-04'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-04-14'
+last_modified_by: Kevin Johnson
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -84,7 +84,7 @@ server. Following are some features of POP:
     (that is, without an Internet connection).
 
 ### Mobile Sync
-
+### Test text - Mobile Sync is like Active Sync for non Exchange.
 When you check your email using Mobile Sync, you are accessing and
 managing your email directly from the email server using Microsoft
 ActiveSync technology. Following are some features of Mobile Sync.
