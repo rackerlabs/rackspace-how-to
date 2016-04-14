@@ -125,6 +125,7 @@ records. Use our help tool for the specific DNS records for your domain.
 After you log in with a mailbox that is enabled for Skype for Business,
 you can find the DNS settings through the [Help
 Tool](https://emailhelp.rackspace.com/) as shown in the following image.
+For the email help tool to work, your MX records must first point to Rackspace.
 
 <img src="{% asset_path skype-for-business/set-up-dns-records-for-cloud-office-email-and-skype-for-business/SkypeforBusinessa.png %}" width="656" height="261" />
 
