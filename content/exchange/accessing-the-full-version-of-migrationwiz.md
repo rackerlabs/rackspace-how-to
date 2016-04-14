@@ -21,6 +21,8 @@ see
 Tool](/how-to/migrate-your-email-by-using-the-self-service-tool)
 for the standard steps.
 
+Please see below for full version benefits and details!
+
 ### Benefits of the full version of MigrationWiz
 
 - Designed for power users
