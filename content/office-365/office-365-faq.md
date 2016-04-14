@@ -137,3 +137,4 @@ If your company is interested in Enterprise-level plans (E1 or E3),
 contact our [sales team](https://www.rackspace.com/why-rackspace) for
 more information.
 
+Send all questions between 9:00 PM CST to 7:00 AM CST to Clint Fellows
