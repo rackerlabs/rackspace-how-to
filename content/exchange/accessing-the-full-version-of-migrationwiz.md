@@ -6,7 +6,7 @@ type: article
 created_date: '2013-10-24'
 created_by: Milton Prado
 last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_by: Monica Magoon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -30,6 +30,7 @@ for the standard steps.
 - Can show speed and progress of a migration
 - Can perform date range migrations
 - Can customize migrations
+- More time efficient
 - Can schedule migrations to auto-start
 
 ### Support and cost considerations
