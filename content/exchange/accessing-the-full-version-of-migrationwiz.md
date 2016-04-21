@@ -6,7 +6,7 @@ type: article
 created_date: '2013-10-24'
 created_by: Milton Prado
 last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_by: Benjamin Jeffery
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -85,3 +85,5 @@ Complete the following steps to access the full version of MigrationWiz:
 5. Click **Manage Connectors** to access your migration.
 
    <img src="{% asset_path exchange/accessing-the-full-version-of-migrationwiz/FullMigrationWiz2.png %}" width="478" height="419" />
+
+6. Fake Change 4/21/16
