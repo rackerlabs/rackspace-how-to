@@ -5,11 +5,12 @@ title: 'Best practices for backing up your data: Cloud Block Storage versus Clou
 type: article
 created_date: '2013-10-01'
 created_by: Kyle Laffoon
-last_modified_date: '2016-04-04'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-04-21'
+last_modified_by: Sarah Clark
 product: Cloud Backup
 product_url: cloud-backup
 ---
+practice :)
 
 When backing up the data disk or disks on your General Purpose Cloud
 Servers you have two convenient choices: Cloud Block Storage or Cloud
