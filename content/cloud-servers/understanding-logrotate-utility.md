@@ -190,6 +190,7 @@ for the new archive.
 You can specify a command that will tell logrotate how often to rotate a
 particular log. The possible commands include:
 
+    hourly
     daily
     weekly
     monthly
