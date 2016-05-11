@@ -16,6 +16,8 @@ the migration from First Generation Cloud Servers to Next Generation
 Cloud Servers. If you have additional questions about the migration, see
 the [migration thread in our community forum](https://community.rackspace.com/products/f/25/t/4787).
 
+### Migration FAQ
+
 #### Why is there a migration?
 
 First Generation Cloud Servers is moving to an End of
