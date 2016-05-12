@@ -47,10 +47,6 @@ further protect your data.
 You can find all of the IP addresses for a new server, load balancer or
 database by clicking on it and viewing its Details.
 
-Here's an example of a Server Details page:
-
-<img src="{% asset_path cloud-load-balancers/using-the-rackspace-network-effectively/Server%20Details.png %}" alt="Cloud Server Details" />
-
 #### Related Information
 
 [Learn More About Cloud Servers](/how-to/learn-more-about-cloud-servers)
