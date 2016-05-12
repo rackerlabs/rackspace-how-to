@@ -44,7 +44,7 @@ and click **Create Network**.
 Here's an example of the Create Network popover in the Cloud Control
 Panel. Note the CIDR field is pre-populated with an IP address range:
 
-<img src="{% asset_path cloud-networks/using-cidr-notation-in-cloud-networks/CreateNetworkCIDRExample2.png %}" alt="CIDR" width="493" height="312" />
+<img src="{% asset_path cloud-networks/using-cidr-notation-in-cloud-networks/create-netowrk-ip-address.png %}" alt="CIDR" height="312" />
 
 For complete instructions on how to create a Cloud Network using the
 Cloud Control Panel see [Create an Isolated Cloud Network and attach it
