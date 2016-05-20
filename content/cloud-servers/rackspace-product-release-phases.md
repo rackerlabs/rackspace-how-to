@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-product-release-phases/
-node_id: 3191
+audit_date:
 title: Rackspace Product Release Phases
 type: article
 created_date: '2012-11-09'

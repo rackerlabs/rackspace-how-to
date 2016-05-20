@@ -1,6 +1,6 @@
 ---
 permalink: other-cloud-server-use-scenarios/
-node_id: 408
+audit_date:
 title: Other Cloud Server use Scenarios
 type: article
 created_date: '2011-03-16'

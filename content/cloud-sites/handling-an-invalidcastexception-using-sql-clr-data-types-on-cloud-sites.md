@@ -1,6 +1,6 @@
 ---
 permalink: handling-an-invalidcastexception-using-sql-clr-data-types-on-cloud-sites/
-node_id: 3239
+audit_date:
 title: Handle an InvalidCastException using SQL CLR Data Types on Cloud Sites
 type: article
 created_date: '2012-12-14'

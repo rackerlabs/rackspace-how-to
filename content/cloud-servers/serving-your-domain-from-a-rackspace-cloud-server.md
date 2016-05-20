@@ -1,6 +1,6 @@
 ---
 permalink: serving-your-domain-from-a-rackspace-cloud-server/
-node_id: 1517
+audit_date:
 title: Serve Your Domain From a Rackspace Cloud Server
 type: article
 created_date: '2012-07-24'

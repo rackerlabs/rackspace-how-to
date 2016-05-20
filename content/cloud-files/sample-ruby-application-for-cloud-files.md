@@ -1,6 +1,6 @@
 ---
 permalink: sample-ruby-application-for-cloud-files/
-node_id: 249
+audit_date:
 title: Sample Ruby Application for Cloud Files
 type: article
 created_date: '2011-03-16'

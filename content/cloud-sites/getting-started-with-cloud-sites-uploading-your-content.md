@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-sites-uploading-your-content/
-node_id: 738
+audit_date:
 title: 'Getting Started With Cloud Sites: Uploading Your Content'
 type: article
 created_date: '2011-03-16'

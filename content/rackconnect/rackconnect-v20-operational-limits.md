@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-operational-limits/
-node_id: 3151
+audit_date:
 title: RackConnect v2.0 operational limits
 type: article
 created_date: '2012-10-30'

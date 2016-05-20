@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-faq/
-node_id: 4271
+audit_date:
 title: RackConnect FAQ
 type: article
 created_date: '2014-09-26'

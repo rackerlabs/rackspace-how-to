@@ -1,6 +1,6 @@
 ---
 permalink: configuring-interface-based-firewall-on-the-vyatta-network-appliance/
-node_id: 3370
+audit_date:
 title: Configuring and interface-based firewall on the Vyatta network appliance
 type: article
 created_date: '2013-03-26'

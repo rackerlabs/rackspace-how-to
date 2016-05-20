@@ -1,6 +1,6 @@
 ---
 permalink: deploy-wordpress-packages-by-using-rackspace-cloud-orchestration/
-node_id: 3773
+audit_date:
 title: Deploy WordPress packages by using Rackspace Cloud Orchestration
 type: article
 created_date: '2013-11-12'

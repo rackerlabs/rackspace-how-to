@@ -1,6 +1,6 @@
 ---
 permalink: deleting-your-server/
-node_id: 1478
+audit_date:
 title: Delete your server
 type: article
 created_date: '2012-07-19'

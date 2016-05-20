@@ -1,6 +1,6 @@
 ---
 permalink: new-features-available-in-rackconnect-v30/
-node_id: 4209
+audit_date:
 title: New features available in RackConnect v3.0
 type: article
 created_date: '2014-08-25'

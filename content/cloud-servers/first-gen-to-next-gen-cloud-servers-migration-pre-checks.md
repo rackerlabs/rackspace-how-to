@@ -1,6 +1,6 @@
 ---
 permalink: first-gen-to-next-gen-cloud-servers-migration-pre-checks/
-node_id: 4681
+audit_date:
 title: First Gen to Next Gen Cloud Servers migration pre-checks
 type: article
 created_date: '2015-05-15'

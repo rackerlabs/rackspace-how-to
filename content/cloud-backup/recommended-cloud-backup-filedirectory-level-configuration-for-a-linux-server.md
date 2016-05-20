@@ -1,6 +1,6 @@
 ---
 permalink: recommended-cloud-backup-filedirectory-level-configuration-for-a-linux-server/
-node_id: 4169
+audit_date:
 title: Recommended Cloud Backup file or directory level configuration for a Linux server
 type: article
 created_date: '2014-08-05'

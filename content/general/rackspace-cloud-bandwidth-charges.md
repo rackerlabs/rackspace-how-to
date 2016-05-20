@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-bandwidth-charges/
-node_id: 422
+audit_date:
 title: Rackspace Cloud Bandwidth Charges
 type: article
 created_date: '2011-03-16'

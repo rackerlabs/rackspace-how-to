@@ -1,6 +1,6 @@
 ---
 permalink: migrating-from-a-pop-server-to-rackspace-email-pop-using-outlook-2010/
-node_id: 3786
+audit_date:
 title: Migrate from a POP server to Rackspace Email POP using Outlook 2010
 type: article
 created_date: '2013-11-18'

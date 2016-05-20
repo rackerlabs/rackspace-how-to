@@ -1,6 +1,6 @@
 ---
 permalink: access-the-rackconnect-management-interface/
-node_id: 2023
+audit_date:
 title: Access the RackConnect Management Interface
 type: article
 created_date: '2012-08-21'

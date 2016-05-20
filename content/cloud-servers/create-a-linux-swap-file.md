@@ -1,6 +1,6 @@
 ---
 permalink: create-a-linux-swap-file/
-node_id: 3747
+audit_date:
 title: Create a Linux Swap File
 type: article
 created_date: '2013-10-29'

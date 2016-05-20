@@ -1,6 +1,6 @@
 ---
 permalink: migrate-your-email-by-using-the-self-service-tool/
-node_id: 3349
+audit_date:
 title: Migrate your email by using the Self-Service tool
 type: article
 created_date: '2013-03-18'

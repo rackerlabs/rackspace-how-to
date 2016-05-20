@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-outlook-2007-for-email-hosted-on-exchange-2007/
-node_id: 1070
+audit_date:
 title: Manually configure Outlook 2007 for email hosted on Exchange 2007
 type: article
 created_date: '2011-04-07'

@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-reseller-program/
-node_id: 3704
+audit_date:
 title: Rackspace Reseller Program
 type: article
 created_date: '2013-09-23'

@@ -1,6 +1,6 @@
 ---
 permalink: connect-to-a-cloud-databases-instance/
-node_id: 1508
+audit_date:
 title: Connect to a Cloud Databases instance
 type: article
 created_date: '2012-07-24'

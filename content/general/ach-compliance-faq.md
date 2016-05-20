@@ -1,6 +1,6 @@
 ---
 permalink: ach-compliance-faq/
-node_id: 4637
+audit_date:
 title: ACH compliance FAQ
 type: article
 created_date: '2015-04-09'

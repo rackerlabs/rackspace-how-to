@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-global-faq/
-node_id: 4864
+audit_date:
 title: RackConnect Global FAQ
 type: article
 created_date: '2015-10-16'

@@ -1,6 +1,6 @@
 ---
 permalink: vnc-install/
-node_id: 502
+audit_date:
 title: Install VNC on a Cloud Server
 type: article
 created_date: '2011-03-16'

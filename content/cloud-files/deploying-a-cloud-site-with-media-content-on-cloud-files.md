@@ -1,6 +1,6 @@
 ---
 permalink: deploying-a-cloud-site-with-media-content-on-cloud-files/
-node_id: 230
+audit_date:
 title: Deploy a Cloud Site with media content on Cloud Files
 type: article
 created_date: '2011-04-04'

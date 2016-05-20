@@ -1,6 +1,6 @@
 ---
 permalink: setting-up-a-mail-relay/
-node_id: 439
+audit_date:
 title: Set up a Mail Relay
 type: article
 created_date: '2011-03-16'

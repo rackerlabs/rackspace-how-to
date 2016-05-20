@@ -1,6 +1,6 @@
 ---
 permalink: view-administrator-activity-in-the-cloud-office-control-panel/
-node_id: 3991
+audit_date:
 title: View administrator activity in the Cloud Office Control Panel
 type: article
 created_date: '2014-04-02'

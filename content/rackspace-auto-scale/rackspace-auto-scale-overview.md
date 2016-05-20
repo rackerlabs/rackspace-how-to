@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-auto-scale-overview/
-node_id: 3780
+audit_date:
 title: Rackspace Auto Scale overview
 type: article
 created_date: '2013-11-15'

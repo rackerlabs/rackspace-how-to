@@ -1,6 +1,6 @@
 ---
 permalink: dedicated-vmware-vcloud-support-coverage/
-node_id: 4511
+audit_date:
 title: Rackspace Private Cloud Powered by VMware vCloud support coverage
 type: article
 created_date: '2015-01-29'

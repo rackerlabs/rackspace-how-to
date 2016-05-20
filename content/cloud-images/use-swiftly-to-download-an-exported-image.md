@@ -1,6 +1,6 @@
 ---
 permalink: use-swiftly-to-download-an-exported-image/
-node_id: 4956
+audit_date:
 title: Use Swiftly to download an exported image
 type: article
 created_date: '2015-11-30'

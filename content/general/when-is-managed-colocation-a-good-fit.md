@@ -1,6 +1,6 @@
 ---
 permalink: when-is-managed-colocation-a-good-fit/
-node_id: 1044
+audit_date:
 title: Using Managed Colocation
 type: article
 created_date: '2011-03-25'

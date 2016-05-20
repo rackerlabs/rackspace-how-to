@@ -1,6 +1,6 @@
 ---
 permalink: monitoring-entities-with-rackspace-intelligence/
-node_id: 4751
+audit_date:
 title: Monitor entities with Rackspace Intelligence
 type: article
 created_date: '2015-07-17'

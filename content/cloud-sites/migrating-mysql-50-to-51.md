@@ -1,6 +1,6 @@
 ---
 permalink: migrating-mysql-50-to-51/
-node_id: 1393
+audit_date:
 title: Migrate MySQL 5.0 to 5.1
 type: article
 created_date: '2012-05-15'

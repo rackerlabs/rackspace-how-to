@@ -1,6 +1,6 @@
 ---
 permalink: add-multiple-contacts-to-exchange/
-node_id: 932
+audit_date:
 title: Add multiple contacts to Exchange
 type: article
 created_date: '2011-03-18'

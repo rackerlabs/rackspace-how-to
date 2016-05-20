@@ -1,6 +1,6 @@
 ---
 permalink: setup-automatic-mysql-server-backups-to-cloud-files-from-windows/
-node_id: 1120
+audit_date:
 title: Set up automatic MySQL server backups to Cloud Files from Windows
 type: article
 created_date: '2011-06-07'

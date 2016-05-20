@@ -1,6 +1,6 @@
 ---
 permalink: uses-of-rackspace-cdn/
-node_id: 4653
+audit_date:
 title: Uses of Rackspace CDN
 type: article
 created_date: '2015-05-08'

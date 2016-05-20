@@ -1,6 +1,6 @@
 ---
 permalink: mysql-connect-to-your-database-remotely/
-node_id: 397
+audit_date:
 title: Connect to your MySQL database remotely
 type: article
 created_date: '2011-03-16'

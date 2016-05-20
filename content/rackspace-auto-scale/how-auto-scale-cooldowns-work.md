@@ -1,6 +1,6 @@
 ---
 permalink: how-auto-scale-cooldowns-work/
-node_id: 3840
+audit_date:
 title: Auto Scale Cooldowns
 type: article
 created_date: '2013-12-21'

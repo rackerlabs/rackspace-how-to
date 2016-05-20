@@ -1,6 +1,6 @@
 ---
 permalink: best-practices-for-cloud-backup/
-node_id: 3426
+audit_date:
 title: Best practices for Cloud Backup
 type: article
 created_date: '2013-04-22'

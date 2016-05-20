@@ -1,6 +1,6 @@
 ---
 permalink: mysql-master-master-replication/
-node_id: 1119
+audit_date:
 title: Configure MySQL Master-Master Replication
 type: article
 created_date: '2011-06-07'

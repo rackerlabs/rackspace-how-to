@@ -1,6 +1,6 @@
 ---
 permalink: use-the-api-to-manage-large-files/
-node_id: 6001
+audit_date:
 title: Use the API to manage large files
 type: article
 created_date: '2016-02-10'

@@ -1,6 +1,6 @@
 ---
 permalink: brocade-vyatta-vrouter-faq/
-node_id: 3781
+audit_date:
 title: Brocade Vyatta vRouter FAQ
 type: article
 created_date: '2013-11-18'

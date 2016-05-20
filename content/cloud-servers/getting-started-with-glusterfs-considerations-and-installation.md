@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-glusterfs-considerations-and-installation/
-node_id: 4177
+audit_date:
 title: Get started with GlusterFS - considerations and installation
 type: article
 created_date: '2014-08-14'

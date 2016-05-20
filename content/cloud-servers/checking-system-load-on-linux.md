@@ -1,6 +1,6 @@
 ---
 permalink: checking-system-load-on-linux/
-node_id: 1436
+audit_date:
 title: Check the System Load on Linux
 type: article
 created_date: '2012-06-21'

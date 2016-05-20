@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy/
-node_id: 3785
+audit_date:
 title: Rackspace Auto Scale Control Panel User Guide - Create a scaling policy
 type: article
 created_date: '2013-11-18'

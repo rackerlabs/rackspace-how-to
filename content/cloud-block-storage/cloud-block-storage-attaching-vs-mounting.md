@@ -1,6 +1,6 @@
 ---
 permalink: cloud-block-storage-attaching-vs-mounting/
-node_id: 3133
+audit_date:
 title: Attaching versus mounting in Cloud Block Storage
 type: article
 created_date: '2012-10-22'

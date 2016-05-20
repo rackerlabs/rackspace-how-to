@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-files-and-cdn/
-node_id: 5122
+audit_date:
 title: Getting started with Cloud Files and CDN
 type: article
 created_date: '2016-01-14'

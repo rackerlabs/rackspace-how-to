@@ -1,6 +1,6 @@
 ---
 permalink: installing-mysql-server-on-ubuntu/
-node_id: 1162
+audit_date:
 title: Install MySQL Server on Ubuntu
 type: article
 created_date: '2011-07-29'

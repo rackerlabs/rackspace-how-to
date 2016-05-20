@@ -1,6 +1,6 @@
 ---
 permalink: recovering-from-and-dealing-with-a-site-compromise/
-node_id: 691
+audit_date:
 title: Recover from, and deal with, a site compromise
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: troubleshooting-the-rackspace-monitoring-agent/
-node_id: 3193
+audit_date:
 title: Troubleshoot the Rackspace Monitoring Agent
 type: article
 created_date: '2012-11-13'

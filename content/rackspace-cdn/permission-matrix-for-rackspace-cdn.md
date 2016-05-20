@@ -1,6 +1,6 @@
 ---
 permalink: permission-matrix-for-rackspace-cdn/
-node_id: 4635
+audit_date:
 title: Permission Matrix for Rackspace CDN
 type: article
 created_date: '2015-04-07'

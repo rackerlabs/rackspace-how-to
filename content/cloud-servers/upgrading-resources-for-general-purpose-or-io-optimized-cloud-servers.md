@@ -1,6 +1,6 @@
 ---
 permalink: upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers/
-node_id: 3708
+audit_date:
 title: Upgrade resources for General Purpose or I/O optimized Cloud Servers
 type: article
 created_date: '2013-09-25'

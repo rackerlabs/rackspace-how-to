@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-rescue-mode-on-windows-cloud-servers-behaviors/
-node_id: 423
+audit_date:
 title: Rackspace Cloud Essentials - Rescue Mode on Windows Cloud Servers behaviors
 type: article
 created_date: '2012-03-01'

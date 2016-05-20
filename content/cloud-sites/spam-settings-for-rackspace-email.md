@@ -1,6 +1,6 @@
 ---
 permalink: spam-settings-for-rackspace-email/
-node_id: 697
+audit_date:
 title: Spam Settings for Rackspace Email
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: manage-public-folders-in-the-control-panel-for-hosted-exchange-2007-and-2010/
-node_id: 4461
+audit_date:
 title: Manage public folders in the control panel for Hosted Exchange 2007 and 2010
 type: article
 created_date: '2014-12-12'

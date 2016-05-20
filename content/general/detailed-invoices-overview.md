@@ -1,6 +1,6 @@
 ---
 permalink: detailed-invoices-overview/
-node_id: 4813
+audit_date:
 title: Detailed Invoices Overview
 type: article
 created_date: '2015-09-17'

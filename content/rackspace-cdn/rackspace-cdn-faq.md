@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-faq/
-node_id: 4705
+audit_date:
 title: Rackspace CDN FAQ
 type: article
 created_date: '2015-06-08'

@@ -1,6 +1,6 @@
 ---
 permalink: listing-cloud-queues/
-node_id: 3684
+audit_date:
 title: List Cloud Queues
 type: article
 created_date: '2013-09-16'

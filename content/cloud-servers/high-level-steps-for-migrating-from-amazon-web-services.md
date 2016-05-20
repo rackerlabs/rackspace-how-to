@@ -1,6 +1,6 @@
 ---
 permalink: high-level-steps-for-migrating-from-amazon-web-services/
-node_id: 3570
+audit_date:
 title: High-level steps for migrating from Amazon Web Services
 type: article
 created_date: '2013-07-01'

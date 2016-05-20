@@ -1,6 +1,6 @@
 ---
 permalink: create-an-isolated-cloud-network-and-attach-it-to-a-server/
-node_id: 2163
+audit_date:
 title: Create an isolated Cloud Network and attach it to a server
 type: article
 created_date: '2012-09-17'

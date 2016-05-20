@@ -1,6 +1,6 @@
 ---
 permalink: configuring-mysql-server-on-ubuntu/
-node_id: 1169
+audit_date:
 title: Configure MySQL server on Ubuntu
 type: article
 created_date: '2011-07-29'

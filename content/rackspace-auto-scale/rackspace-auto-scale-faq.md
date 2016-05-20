@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-auto-scale-faq/
-node_id: 5005
+audit_date:
 title: Rackspace Auto Scale FAQ
 type: article
 created_date: '2015-12-09'

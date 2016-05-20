@@ -1,6 +1,6 @@
 ---
 permalink: how-to-scale-multinode-wordpress-by-using-rackspace-orchestration/
-node_id: 3774
+audit_date:
 title: Scale a multi-node WordPress by using Rackspace Orchestration
 type: article
 created_date: '2013-11-12'

@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-neutron-based-networking-api-faq/
-node_id: 3914
+audit_date:
 title: Rackspace Neutron-based Networking API FAQ
 type: article
 created_date: '2014-02-26'

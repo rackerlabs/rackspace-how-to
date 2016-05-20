@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-limitations/
-node_id: 4216
+audit_date:
 title: RackConnect v3.0 limitations
 type: article
 created_date: '2014-08-29'

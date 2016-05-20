@@ -1,6 +1,6 @@
 ---
 permalink: configure-rackspace-auto-scale-web-hooks-with-rackspace-monitoring/
-node_id: 4703
+audit_date:
 title: Configure Rackspace Auto Scale web hooks with Rackspace Monitoring
 type: article
 created_date: '2015-06-04'

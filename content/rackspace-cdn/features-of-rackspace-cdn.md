@@ -1,6 +1,6 @@
 ---
 permalink: features-of-rackspace-cdn/
-node_id: 4668
+audit_date:
 title: Features of Rackspace CDN
 type: article
 created_date: '2015-05-11'

@@ -1,6 +1,6 @@
 ---
 permalink: serve-static-content-for-websites-by-using-cloud-files/
-node_id: 252
+audit_date:
 title: Serve static content for websites by using Cloud Files
 type: article
 created_date: '2011-03-16'

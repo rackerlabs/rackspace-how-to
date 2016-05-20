@@ -1,6 +1,6 @@
 ---
 permalink: installing-cakephp-on-cloud-sites/
-node_id: 125
+audit_date:
 title: Install CakePHP on Cloud Sites
 type: article
 created_date: '2011-03-14'

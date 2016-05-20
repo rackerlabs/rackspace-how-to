@@ -1,6 +1,6 @@
 ---
 permalink: creating-and-configuring-a-user-in-mssql/
-node_id: 329
+audit_date:
 title: Create and Configure a User in MSSQL
 type: article
 created_date: '2011-04-04'

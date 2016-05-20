@@ -1,6 +1,6 @@
 ---
 permalink: access-slow-query-and-general-logs-for-cloud-databases/
-node_id: 4141
+audit_date:
 title: Access slow query and general logs for Cloud Databases
 type: article
 created_date: '2014-07-17'

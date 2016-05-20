@@ -1,6 +1,6 @@
 ---
 permalink: detailed-permissions-matrix-for-cloud-images/
-node_id: 3741
+audit_date:
 title: Detailed Permissions Matrix for Cloud Images
 type: article
 created_date: '2013-10-28'

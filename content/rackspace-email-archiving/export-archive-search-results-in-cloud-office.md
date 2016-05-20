@@ -1,6 +1,6 @@
 ---
 permalink: export-archive-search-results-in-cloud-office/
-node_id: 4689
+audit_date:
 title: Export archive search results in Cloud Office
 type: article
 created_date: '2015-05-18'

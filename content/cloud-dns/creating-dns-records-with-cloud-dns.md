@@ -1,6 +1,6 @@
 ---
 permalink: creating-dns-records-with-cloud-dns/
-node_id: 1462
+audit_date:
 title: Create DNS records with Cloud DNS
 type: article
 created_date: '2012-07-15'

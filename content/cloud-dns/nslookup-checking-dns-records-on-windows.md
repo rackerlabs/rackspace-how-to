@@ -1,6 +1,6 @@
 ---
 permalink: nslookup-checking-dns-records-on-windows/
-node_id: 1446
+audit_date:
 title: Check DNS Records on Windows with nslookup
 type: article
 created_date: '2012-06-27'

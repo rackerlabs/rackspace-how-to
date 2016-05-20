@@ -1,6 +1,6 @@
 ---
 permalink: understanding-the-rackspace-intelligence-user-interface-for-dedicated-accounts/
-node_id: 4818
+audit_date:
 title: Understanding the Rackspace Intelligence User Interface for dedicated accounts
 type: article
 created_date: '2015-10-01'

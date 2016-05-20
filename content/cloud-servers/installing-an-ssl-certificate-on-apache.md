@@ -1,6 +1,6 @@
 ---
 permalink: installing-an-ssl-certificate-on-apache/
-node_id: 360
+audit_date:
 title: Install an SSL certificate on Apache
 type: article
 created_date: '2011-03-16'

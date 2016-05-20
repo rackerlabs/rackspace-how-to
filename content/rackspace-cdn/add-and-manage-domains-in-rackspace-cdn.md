@@ -1,6 +1,6 @@
 ---
 permalink: add-and-manage-domains-in-rackspace-cdn/
-node_id: 4658
+audit_date:
 title: Add and manage domains in Rackspace CDN
 type: article
 created_date: '2015-05-08'

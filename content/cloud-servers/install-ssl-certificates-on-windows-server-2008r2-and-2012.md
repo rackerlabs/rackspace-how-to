@@ -1,6 +1,6 @@
 ---
 permalink: install-ssl-certificates-on-windows-server-2008r2-and-2012/
-node_id: 6005
+audit_date:
 title: Installing SSL certificates on Windows 2008 R2 and 2012 servers
 type: article
 created_date: '2014-02-13'

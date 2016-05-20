@@ -1,5 +1,5 @@
 ---
-node_id: 4706
+audit_date:
 title: Rackspace Intelligence
 type: article
 created_date: '2015-06-09'

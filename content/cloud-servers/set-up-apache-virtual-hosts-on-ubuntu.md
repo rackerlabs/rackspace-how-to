@@ -1,6 +1,6 @@
 ---
 permalink: set-up-apache-virtual-hosts-on-ubuntu/
-node_id: 108
+audit_date:
 title: Set up Apache virtual hosts on Ubuntu
 type: article
 created_date: '2011-03-09'

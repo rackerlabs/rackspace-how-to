@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-windows-phone-devices-for-email-hosted-on-exchange-2007/
-node_id: 3608
+audit_date:
 title: Manually configure Windows Phone devices for email hosted on Exchange 2007
 type: article
 created_date: '2013-07-03'

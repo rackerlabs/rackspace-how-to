@@ -1,6 +1,6 @@
 ---
 permalink: setting-the-time-zone-for-a-cloud-databases-instance/
-node_id: 4037
+audit_date:
 title: Set the time zone for a Cloud Databases instance
 type: article
 created_date: '2014-04-23'

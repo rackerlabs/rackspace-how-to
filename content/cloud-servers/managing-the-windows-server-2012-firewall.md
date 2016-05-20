@@ -1,6 +1,6 @@
 ---
 permalink: managing-the-windows-server-2012-firewall/
-node_id: 3429
+audit_date:
 title: Manage the Windows Server 2012 Firewall
 type: article
 created_date: '2013-04-23'

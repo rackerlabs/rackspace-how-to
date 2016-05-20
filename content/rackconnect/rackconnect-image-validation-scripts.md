@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-image-validation-scripts/
-node_id: 3286
+audit_date:
 title: RackConnect image validation scripts
 type: article
 created_date: '2013-02-01'

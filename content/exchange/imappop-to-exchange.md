@@ -1,6 +1,6 @@
 ---
 permalink: imappop-to-exchange/
-node_id: 1408
+audit_date:
 title: 'Transfer data from IMAP or POP to Exchange'
 type: article
 created_date: '2012-05-24'

@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-10-post-upgrade-faq/
-node_id: 2061
+audit_date:
 title: RackConnect 1.0 post-upgrade FAQ
 type: article
 created_date: '2012-08-23'

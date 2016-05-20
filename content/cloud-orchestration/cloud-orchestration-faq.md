@@ -1,6 +1,6 @@
 ---
 permalink: cloud-orchestration-faq/
-node_id: 5008
+audit_date:
 title: Cloud Orchestration FAQ
 type: article
 created_date: '2015-12-09'

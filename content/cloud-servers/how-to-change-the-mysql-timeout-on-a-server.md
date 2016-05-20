@@ -1,6 +1,6 @@
 ---
 permalink: how-to-change-the-mysql-timeout-on-a-server/
-node_id: 3630
+audit_date:
 title: Change the MySQL Timeout on a Server
 type: article
 created_date: '2013-07-24'

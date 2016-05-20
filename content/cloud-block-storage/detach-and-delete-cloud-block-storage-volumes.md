@@ -1,6 +1,6 @@
 ---
 permalink: detach-and-delete-cloud-block-storage-volumes/
-node_id: 3139
+audit_date:
 title: Detach and delete Cloud Block Storage volumes
 type: article
 created_date: '2012-10-22'

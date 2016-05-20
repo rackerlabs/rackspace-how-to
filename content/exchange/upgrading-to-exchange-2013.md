@@ -1,6 +1,6 @@
 ---
 permalink: upgrading-to-exchange-2013/
-node_id: 3886
+audit_date:
 title: Upgrading to Exchange 2013
 type: article
 created_date: '2014-02-03'

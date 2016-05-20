@@ -1,6 +1,6 @@
 ---
 permalink: deploying-rackspace-cloud-big-data/
-node_id: 4064
+audit_date:
 title: Deploy Rackspace Cloud Big Data
 type: article
 created_date: '2014-05-07'

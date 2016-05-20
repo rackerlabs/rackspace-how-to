@@ -1,6 +1,6 @@
 ---
 permalink: working-with-public-folders-through-outlook-for-exchange-2007-and-2010/
-node_id: 4462
+audit_date:
 title: Work with public folders through Outlook for Exchange 2007 and 2010
 type: article
 created_date: '2014-12-12'

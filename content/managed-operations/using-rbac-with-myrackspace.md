@@ -1,6 +1,6 @@
 ---
 permalink: using-rbac-with-myrackspace/
-node_id: 3633
+audit_date:
 title: Using RBAC with MyRackspace
 type: article
 created_date: '2013-07-30'

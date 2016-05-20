@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-metrics-faq/
-node_id: 4649
+audit_date:
 title: Rackspace Metrics FAQ
 type: article
 created_date: '2015-05-06'

@@ -1,6 +1,6 @@
 ---
 permalink: myrackspace-two-factor-authentication/
-node_id: 4129
+audit_date:
 title: MyRackspace two-factor authentication
 type: article
 created_date: '2014-07-14'

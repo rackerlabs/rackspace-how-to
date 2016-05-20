@@ -1,6 +1,6 @@
 ---
 permalink: speed-up-rsync-when-migrating-a-linux-server-from-the-command-line/
-node_id: 386
+audit_date:
 title: Speed up rsync when migrating a Linux server from the command line
 type: article
 created_date: '2011-06-23'

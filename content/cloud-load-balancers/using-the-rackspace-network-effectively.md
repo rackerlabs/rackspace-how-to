@@ -1,6 +1,6 @@
 ---
 permalink: using-the-rackspace-network-effectively/
-node_id: 1528
+audit_date:
 title: Using the Rackspace network effectively
 type: article
 created_date: '2012-07-24'

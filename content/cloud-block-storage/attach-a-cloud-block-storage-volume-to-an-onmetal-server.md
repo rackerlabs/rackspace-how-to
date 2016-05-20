@@ -1,6 +1,6 @@
 ---
 permalink: attach-a-cloud-block-storage-volume-to-an-onmetal-server/
-node_id: 4755
+audit_date:
 title: Attach a Cloud Block Storage volume to an OnMetal server
 type: article
 created_date: '2015-07-22'

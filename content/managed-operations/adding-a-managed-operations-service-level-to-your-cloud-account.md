@@ -1,6 +1,6 @@
 ---
 permalink: adding-a-managed-operations-service-level-to-your-cloud-account/
-node_id: 1716
+audit_date:
 title: Adding a managed operations service level to your cloud account
 type: article
 created_date: '2011-10-11'

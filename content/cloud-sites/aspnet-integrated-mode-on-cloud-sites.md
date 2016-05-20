@@ -1,6 +1,6 @@
 ---
 permalink: aspnet-integrated-mode-on-cloud-sites/
-node_id: 518
+audit_date:
 title: ASP/.NET integrated mode on Cloud Sites
 type: article
 created_date: '2011-03-16'

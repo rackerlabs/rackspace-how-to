@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-backup-view-backup-information/
-node_id: 2039
+audit_date:
 title: View backup information with Cloud Backup
 type: article
 created_date: '2012-08-22'

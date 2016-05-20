@@ -1,6 +1,6 @@
 ---
 permalink: mssql-2005-2008-upgrade-testing/
-node_id: 679
+audit_date:
 title: MSSQL 2005 - 2008 Upgrade Testing
 type: article
 created_date: '2011-03-16'

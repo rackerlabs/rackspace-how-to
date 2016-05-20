@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-standard-and-non-standard-images/
-node_id: 3852
+audit_date:
 title: Rackspace Standard and Non-Standard Images
 type: article
 created_date: '2014-01-14'

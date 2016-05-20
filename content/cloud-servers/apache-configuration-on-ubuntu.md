@@ -1,6 +1,6 @@
 ---
 permalink: apache-configuration-on-ubuntu/
-node_id: 450
+audit_date:
 title: Configure Apache on Ubuntu
 type: article
 created_date: '2012-07-23'

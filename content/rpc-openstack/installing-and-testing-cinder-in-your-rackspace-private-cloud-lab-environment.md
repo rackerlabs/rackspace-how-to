@@ -1,6 +1,6 @@
 ---
 permalink: installing-and-testing-cinder-in-your-rackspace-private-cloud-lab-environment/
-node_id: 4041
+audit_date:
 title: Install and test Cinder in your Rackspace Private Cloud lab environment
 type: article
 created_date: '2014-04-24'

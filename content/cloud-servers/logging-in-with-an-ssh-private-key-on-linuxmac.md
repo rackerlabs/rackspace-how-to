@@ -1,6 +1,6 @@
 ---
 permalink: logging-in-with-an-ssh-private-key-on-linuxmac/
-node_id: 3706
+audit_date:
 title: Log in with an SSH Private Key on Linux/Mac
 type: article
 created_date: '2013-09-25'

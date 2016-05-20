@@ -1,6 +1,6 @@
 ---
 permalink: architecture-requirements-for-rackspace-private-cloud-powered-by-microsoft/
-node_id: 4574
+audit_date:
 title: Architecture requirements for Rackspace Private Cloud powered by Microsoft
 type: article
 created_date: '2015-03-02'

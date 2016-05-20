@@ -1,6 +1,6 @@
 ---
 permalink: magento-faq/
-node_id: 4065
+audit_date:
 title: Magento FAQ
 type: article
 created_date: '2014-05-07'

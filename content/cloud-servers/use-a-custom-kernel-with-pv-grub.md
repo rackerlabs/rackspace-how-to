@@ -1,6 +1,6 @@
 ---
 permalink: use-a-custom-kernel-with-pv-grub/
-node_id: 499
+audit_date:
 title: Use a custom kernel with pv-grub
 type: article
 created_date: '2015-07-27'

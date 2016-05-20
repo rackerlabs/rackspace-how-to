@@ -1,6 +1,6 @@
 ---
 permalink: rename-a-rackspace-cdn-service/
-node_id: 4664
+audit_date:
 title: Rename a Rackspace CDN service
 type: article
 created_date: '2015-05-11'

@@ -1,6 +1,6 @@
 ---
 permalink: checking-cloud-status/
-node_id: 1328
+audit_date:
 title: Checking Cloud Status
 type: article
 created_date: '2012-03-20'

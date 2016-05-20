@@ -1,6 +1,6 @@
 ---
 permalink: configuring-basic-security/
-node_id: 1501
+audit_date:
 title: Configure basic security
 type: article
 created_date: '2012-07-24'

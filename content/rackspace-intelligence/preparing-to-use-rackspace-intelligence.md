@@ -1,6 +1,6 @@
 ---
 permalink: preparing-to-use-rackspace-intelligence/
-node_id: 4739
+audit_date:
 title: Preparing to use Rackspace Intelligence
 type: article
 created_date: '2015-07-15'

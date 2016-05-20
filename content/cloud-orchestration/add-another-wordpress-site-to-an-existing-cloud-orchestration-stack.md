@@ -1,6 +1,6 @@
 ---
 permalink: add-another-wordpress-site-to-an-existing-cloud-orchestration-stack/
-node_id: 3810
+audit_date:
 title: Add another WordPress site to an existing Cloud Orchestration stack
 type: article
 created_date: '2013-12-13'

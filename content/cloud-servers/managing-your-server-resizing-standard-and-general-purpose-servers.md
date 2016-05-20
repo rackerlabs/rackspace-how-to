@@ -1,6 +1,6 @@
 ---
 permalink: managing-your-server-resizing-standard-and-general-purpose-servers/
-node_id: 1476
+audit_date:
 title: Manage your server - resizing standard and general purpose servers
 type: article
 created_date: '2012-07-19'

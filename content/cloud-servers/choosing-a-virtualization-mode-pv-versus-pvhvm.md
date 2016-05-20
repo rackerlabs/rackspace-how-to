@@ -1,6 +1,6 @@
 ---
 permalink: choosing-a-virtualization-mode-pv-versus-pvhvm/
-node_id: 3862
+audit_date:
 title: Choosing a virtualization mode (PV versus PVHVM)
 type: article
 created_date: '2014-01-21'

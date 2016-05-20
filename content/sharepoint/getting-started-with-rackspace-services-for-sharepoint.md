@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-rackspace-services-for-sharepoint/
-node_id: 2220
+audit_date:
 title: Get started with Rackspace services for SharePoint
 type: article
 created_date: '2012-09-24'

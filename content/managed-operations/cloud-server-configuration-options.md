@@ -1,6 +1,6 @@
 ---
 permalink: cloud-server-configuration-options/
-node_id: 4449
+audit_date:
 title: Cloud Server configuration options
 type: article
 created_date: '2014-12-01'

@@ -1,6 +1,6 @@
 ---
 permalink: adding-a-microsoft-exchange-contact/
-node_id: 1371
+audit_date:
 title: Add a Microsoft Exchange contact
 type: article
 created_date: '2012-04-04'

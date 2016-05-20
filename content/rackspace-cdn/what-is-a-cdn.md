@@ -1,6 +1,6 @@
 ---
 permalink: what-is-a-cdn/
-node_id: 120
+audit_date:
 title: CDN Concepts
 type: article
 created_date: '2011-03-10'

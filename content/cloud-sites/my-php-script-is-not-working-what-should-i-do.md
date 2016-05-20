@@ -1,6 +1,6 @@
 ---
 permalink: my-php-script-is-not-working-what-should-i-do/
-node_id: 683
+audit_date:
 title: Troubleshooting your PHP script
 type: article
 created_date: '2011-03-16'

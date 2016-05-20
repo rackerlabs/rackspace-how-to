@@ -1,6 +1,6 @@
 ---
 permalink: checking-bandwidth-usage-for-cloud-sites/
-node_id: 267
+audit_date:
 title: Check Bandwidth Usage for Cloud Sites
 type: article
 created_date: '2011-03-16'

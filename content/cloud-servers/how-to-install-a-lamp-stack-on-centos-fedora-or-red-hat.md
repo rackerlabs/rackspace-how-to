@@ -1,6 +1,6 @@
 ---
 permalink: how-to-install-a-lamp-stack-on-centos-fedora-or-red-hat/
-node_id: 4168
+audit_date:
 title: 'Install a LAMP stack on CentOS, Fedora, or Red Hat'
 type: article
 created_date: '2014-08-04'

@@ -1,6 +1,6 @@
 ---
 permalink: cloud-servers-attaching-and-detaching-networks/
-node_id: 3814
+audit_date:
 title: Attach and detach networks from a Cloud Server
 type: article
 created_date: '2013-12-17'

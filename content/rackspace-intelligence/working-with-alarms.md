@@ -1,6 +1,6 @@
 ---
 permalink: working-with-alarms/
-node_id: 4769
+audit_date:
 title: Understand and work with alarms
 type: article
 created_date: '2015-07-31'

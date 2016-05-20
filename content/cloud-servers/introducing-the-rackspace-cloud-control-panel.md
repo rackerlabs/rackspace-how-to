@@ -1,6 +1,6 @@
 ---
 permalink: introducing-the-rackspace-cloud-control-panel/
-node_id: 1355
+audit_date:
 title: Introducing the Rackspace Cloud Control Panel
 type: article
 created_date: '2012-03-27'

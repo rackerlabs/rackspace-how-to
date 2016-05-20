@@ -1,6 +1,6 @@
 ---
 permalink: rescue-mode-on-windows-servers/
-node_id: 4812
+audit_date:
 title: Rescue mode on Windows cloud servers
 type: article
 created_date: '2015-09-15'

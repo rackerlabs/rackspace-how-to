@@ -1,6 +1,6 @@
 ---
 permalink: preparing-data-disks-on-linux-cloud-servers/
-node_id: 3749
+audit_date:
 title: Prepare Data Disks on Linux Cloud Servers
 type: article
 created_date: '2013-10-31'

@@ -1,6 +1,6 @@
 ---
 permalink: use-a-later-version-of-mysql-with-net-applications-on-cloud-sites/
-node_id: 4062
+audit_date:
 title: Use a later version of MySQL with .NET applications on Cloud Sites
 type: article
 created_date: '2014-05-07'

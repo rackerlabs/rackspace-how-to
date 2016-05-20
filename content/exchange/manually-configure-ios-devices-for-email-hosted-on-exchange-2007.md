@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-ios-devices-for-email-hosted-on-exchange-2007/
-node_id: 781
+audit_date:
 title: Manually configure iOS devices for email hosted on Exchange 2007
 type: article
 created_date: '2011-10-20'

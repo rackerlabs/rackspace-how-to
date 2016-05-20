@@ -1,6 +1,6 @@
 ---
 permalink: monitoring-differences-between-rackspace-server-users-and-non-rackspace-server-users/
-node_id: 4104
+audit_date:
 title: 'Differences between monitoring Rackspace Server users and non-Rackspace Server users'
 type: article
 created_date: '2014-06-16'

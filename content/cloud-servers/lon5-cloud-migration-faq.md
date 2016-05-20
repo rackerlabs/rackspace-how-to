@@ -1,6 +1,6 @@
 ---
 permalink: lon5-cloud-migration-faq/
-node_id: 4783
+audit_date:
 title: LON5 Cloud Migration FAQ
 type: article
 created_date: '2015-08-11'

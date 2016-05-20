@@ -1,6 +1,6 @@
 ---
 permalink: private-and-public-access-to-your-cloud-server/
-node_id: 2034
+audit_date:
 title: Private and Public Access to Your Cloud Server
 type: article
 created_date: '2012-08-22'

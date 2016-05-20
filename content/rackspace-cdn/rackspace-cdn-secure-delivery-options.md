@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-secure-delivery-options/
-node_id: 4643
+audit_date:
 title: Rackspace CDN secure delivery options
 type: article
 created_date: '2015-04-20'

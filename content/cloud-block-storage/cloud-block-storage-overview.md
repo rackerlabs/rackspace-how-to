@@ -1,6 +1,6 @@
 ---
 permalink: cloud-block-storage-overview/
-node_id: 3135
+audit_date:
 title: Overview of Cloud Block Storage
 type: article
 created_date: '2012-10-22'

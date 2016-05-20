@@ -1,6 +1,6 @@
 ---
 permalink: using-ssl-with-your-cloud-database-instance/
-node_id: 4281
+audit_date:
 title: Use SSL with your Cloud Database instance
 type: article
 created_date: '2014-10-02'

@@ -1,6 +1,6 @@
 ---
 permalink: private-cloud-certified-devices-compute/
-node_id: 3282
+audit_date:
 title: Private Cloud Certified Devices - Compute
 type: article
 created_date: '2013-01-24'

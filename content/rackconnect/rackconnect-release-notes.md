@@ -1,6 +1,6 @@
 ---
 permalink: /rackconnect/
-node_id: 2160
+audit_date:
 title: RackConnect release notes
 type: article
 created_date: '2012-09-14'

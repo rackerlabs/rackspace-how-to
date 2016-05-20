@@ -1,6 +1,6 @@
 ---
 permalink: high-availability-for-cloud-databases/
-node_id: 4708
+audit_date:
 title: High Availability for Cloud Databases
 type: article
 created_date: '2015-06-10'

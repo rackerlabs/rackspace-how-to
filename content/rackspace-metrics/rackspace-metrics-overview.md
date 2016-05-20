@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-metrics-overview/
-node_id: 4587
+audit_date:
 title: Rackspace Metrics overview
 type: article
 created_date: '2015-03-03'

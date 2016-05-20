@@ -1,6 +1,6 @@
 ---
 permalink: creating-a-general-purpose-cloud-server/
-node_id: 3729
+audit_date:
 title: Create a General Purpose cloud server
 type: article
 created_date: '2013-10-16'

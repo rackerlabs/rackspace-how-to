@@ -1,6 +1,6 @@
 ---
 permalink: use-cloud-databases-with-your-cloud-site/
-node_id: 1869
+audit_date:
 title: Use Cloud Databases with Cloud Sites
 type: article
 created_date: '2012-08-01'

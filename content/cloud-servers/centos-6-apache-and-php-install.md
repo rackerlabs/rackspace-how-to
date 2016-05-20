@@ -1,6 +1,6 @@
 ---
 permalink: centos-6-apache-and-php-install/
-node_id: 92
+audit_date:
 title: Install Apache and PHP on CentOS 6
 type: article
 created_date: '2011-03-09'

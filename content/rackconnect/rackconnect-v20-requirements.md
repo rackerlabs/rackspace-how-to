@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-requirements/
-node_id: 2021
+audit_date:
 title: RackConnect v2.0 requirements
 type: article
 created_date: '2012-08-21'

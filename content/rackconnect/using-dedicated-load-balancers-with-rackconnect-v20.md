@@ -1,6 +1,6 @@
 ---
 permalink: using-dedicated-load-balancers-with-rackconnect-v20/
-node_id: 2028
+audit_date:
 title: Using dedicated load balancers with RackConnect v2.0
 type: article
 created_date: '2012-08-21'

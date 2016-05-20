@@ -1,6 +1,6 @@
 ---
 permalink: add-and-remove-glusterfs-servers/
-node_id: 4091
+audit_date:
 title: Add and remove GlusterFS servers
 type: article
 created_date: '2014-06-03'

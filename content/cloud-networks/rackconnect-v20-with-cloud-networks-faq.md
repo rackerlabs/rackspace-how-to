@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-with-cloud-networks-faq/
-node_id: 3242
+audit_date:
 title: RackConnect v2.0 with Cloud Networks FAQ
 type: article
 created_date: '2012-12-19'

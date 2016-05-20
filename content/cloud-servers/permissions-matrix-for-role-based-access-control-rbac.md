@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-role-based-access-control-rbac/
-node_id: 3531
+audit_date:
 title: Permissions Matrix for Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-06-17'

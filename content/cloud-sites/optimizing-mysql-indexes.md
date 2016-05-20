@@ -1,6 +1,6 @@
 ---
 permalink: optimizing-mysql-indexes/
-node_id: 686
+audit_date:
 title: Optimizing MySQL - Indexes
 type: article
 created_date: '2011-03-16'

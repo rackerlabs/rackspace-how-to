@@ -1,6 +1,6 @@
 ---
 permalink: checking-running-services-on-linux/
-node_id: 1435
+audit_date:
 title: Check running services on Linux
 type: article
 created_date: '2012-06-21'

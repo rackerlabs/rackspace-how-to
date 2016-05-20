@@ -1,6 +1,6 @@
 ---
 permalink: items-migrated-during-an-cloud-office-migration/
-node_id: 3776
+audit_date:
 title: Items migrated during an Cloud Office migration
 type: article
 created_date: '2013-11-13'

@@ -1,6 +1,6 @@
 ---
 permalink: monitoring-network-traffic/
-node_id: 1374
+audit_date:
 title: Monitor Network Traffic
 type: article
 created_date: '2012-04-04'

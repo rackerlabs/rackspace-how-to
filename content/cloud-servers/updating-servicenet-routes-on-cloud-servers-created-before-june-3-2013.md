@@ -1,5 +1,5 @@
 ---
-node_id: 3485
+audit_date:
 title: 'Update ServiceNet Routes on Cloud Servers Created Before June 3, 2013'
 type: article
 created_date: '2013-05-28'

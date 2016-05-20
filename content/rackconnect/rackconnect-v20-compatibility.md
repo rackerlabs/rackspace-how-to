@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-compatibility/
-node_id: 3629
+audit_date:
 title: RackConnect v2.0 compatibility
 type: article
 created_date: '2013-07-24'

@@ -1,6 +1,6 @@
 ---
 permalink: adding-a-signature-to-rackspace-email/
-node_id: 799
+audit_date:
 title: Add a signature to Rackspace Email
 type: article
 created_date: '2012-01-18'

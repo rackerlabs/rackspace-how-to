@@ -1,6 +1,6 @@
 ---
 permalink: set-up-an-api-key-cloud-office-control-panel/
-node_id: 3992
+audit_date:
 title: Set up an API key in the Cloud Office Control Panel
 type: article
 created_date: '2014-04-02'

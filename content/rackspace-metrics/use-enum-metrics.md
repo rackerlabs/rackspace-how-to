@@ -1,5 +1,5 @@
 ---
-node_id: 6001
+audit_date:
 title: Use Enum metrics
 type: article
 created_date: '2015-03-03'

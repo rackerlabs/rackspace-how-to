@@ -1,6 +1,6 @@
 ---
 permalink: cloud-queues-curl-cookbook/
-node_id: 3655
+audit_date:
 title: Cloud Queues cURL Cookbook
 type: article
 created_date: '2013-08-21'

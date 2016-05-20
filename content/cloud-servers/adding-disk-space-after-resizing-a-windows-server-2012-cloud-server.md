@@ -1,6 +1,6 @@
 ---
 permalink: adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/
-node_id: 3397
+audit_date:
 title: Add Disk Space After Resizing a Windows Server 2012 Cloud Server
 type: article
 created_date: '2013-04-10'

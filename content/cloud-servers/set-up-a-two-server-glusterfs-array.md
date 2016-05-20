@@ -1,6 +1,6 @@
 ---
 permalink: set-up-a-two-server-glusterfs-array/
-node_id: 4090
+audit_date:
 title: Set up a two-server GlusterFS array
 type: article
 created_date: '2014-06-03'

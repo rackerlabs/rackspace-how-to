@@ -1,6 +1,6 @@
 ---
 permalink: faq-role-based-access-control-rbac/
-node_id: 3401
+audit_date:
 title: 'FAQ: Role-Based Access Control (RBAC)'
 type: article
 created_date: '2013-04-12'

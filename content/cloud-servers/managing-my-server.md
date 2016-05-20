@@ -1,6 +1,6 @@
 ---
 permalink: managing-my-server/
-node_id: 1512
+audit_date:
 title: Manage a Cloud Server
 type: article
 created_date: '2012-07-24'

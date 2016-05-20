@@ -1,6 +1,6 @@
 ---
 permalink: create-a-cloud-server/
-node_id: 1468
+audit_date:
 title: Create a cloud server
 type: article
 created_date: '2012-07-17'

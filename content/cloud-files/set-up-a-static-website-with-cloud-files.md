@@ -1,6 +1,6 @@
 ---
 permalink: set-up-a-static-website-with-cloud-files/
-node_id: 5099
+audit_date:
 title: Set up a static website with Cloud Files
 type: article
 created_date: '2016-01-07'

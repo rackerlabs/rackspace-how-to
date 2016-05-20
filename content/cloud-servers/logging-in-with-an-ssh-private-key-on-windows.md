@@ -1,6 +1,6 @@
 ---
 permalink: logging-in-with-an-ssh-private-key-on-windows/
-node_id: 3707
+audit_date:
 title: Log in with an SSH Private Key on Windows
 type: article
 created_date: '2013-09-25'

@@ -1,6 +1,6 @@
 ---
 permalink: cloud-queues-overview/
-node_id: 3728
+audit_date:
 title: Cloud Queues Overview
 type: article
 created_date: '2013-10-16'

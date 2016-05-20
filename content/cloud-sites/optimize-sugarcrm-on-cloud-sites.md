@@ -1,6 +1,6 @@
 ---
 permalink: optimize-sugarcrm-on-cloud-sites/
-node_id: 632
+audit_date:
 title: Optimize SugarCRM on Cloud Sites
 type: article
 created_date: '2011-03-16'

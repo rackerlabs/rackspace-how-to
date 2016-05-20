@@ -1,6 +1,6 @@
 ---
 permalink: test-php-smtp-functionality/
-node_id: 650
+audit_date:
 title: Test PHP SMTP functionality
 type: article
 created_date: '2011-03-16'

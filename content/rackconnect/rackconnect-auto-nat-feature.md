@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-auto-nat-feature/
-node_id: 3261
+audit_date:
 title: RackConnect Auto NAT feature
 type: article
 created_date: '2013-01-16'

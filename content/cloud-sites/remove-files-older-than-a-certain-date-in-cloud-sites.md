@@ -1,6 +1,6 @@
 ---
 permalink: remove-files-older-than-a-certain-date-in-cloud-sites/
-node_id: 640
+audit_date:
 title: Remove files older than a certain date in Cloud Sites
 type: article
 created_date: '2011-03-16'

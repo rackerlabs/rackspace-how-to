@@ -1,6 +1,6 @@
 ---
 permalink: cloud-files-streaming-with-osmf-plugins/
-node_id: 1209
+audit_date:
 title: Cloud Files Streaming with OSMF Plugins
 type: article
 created_date: '2011-09-12'

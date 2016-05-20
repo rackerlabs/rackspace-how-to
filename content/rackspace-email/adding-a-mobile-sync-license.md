@@ -1,6 +1,6 @@
 ---
 permalink: adding-a-mobile-sync-license/
-node_id: 1387
+audit_date:
 title: Add a Mobile Sync license
 type: article
 created_date: '2012-04-27'

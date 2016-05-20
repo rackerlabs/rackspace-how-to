@@ -1,6 +1,6 @@
 ---
 permalink: installing-serendipity-on-cloud-sites/
-node_id: 693
+audit_date:
 title: Install Serendipity on Cloud Sites
 type: article
 created_date: '2011-03-16'

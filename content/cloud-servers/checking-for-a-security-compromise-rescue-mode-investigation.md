@@ -1,5 +1,5 @@
 ---
-node_id: 3437
+audit_date:
 title: 'Check for a security compromise: Rescue mode investigation'
 type: article
 created_date: '2013-04-26'

@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-auto-scale-tips-and-how-tos/
-node_id: 3849
+audit_date:
 title: "Rackspace Auto Scale tips and how-to's"
 type: article
 created_date: '2014-01-14'

@@ -1,6 +1,6 @@
 ---
 permalink: using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts/
-node_id: 4759
+audit_date:
 title: Use Swift Signal resources with Cloud Orchestration user data scripts
 type: article
 created_date: '2015-07-24'

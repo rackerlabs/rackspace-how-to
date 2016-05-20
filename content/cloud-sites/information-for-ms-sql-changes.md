@@ -1,6 +1,6 @@
 ---
 permalink: information-for-ms-sql-changes/
-node_id: 4728
+audit_date:
 title: Information for MS SQL changes
 type: article
 created_date: '2015-06-25'

@@ -1,6 +1,6 @@
 ---
 permalink: install-pyrax/
-node_id: 4088
+audit_date:
 title: Install pyrax
 type: article
 created_date: '2014-06-02'

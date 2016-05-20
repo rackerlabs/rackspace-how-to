@@ -1,6 +1,6 @@
 ---
 permalink: tips-for-monitoring-your-queues-in-cloud-queues/
-node_id: 3658
+audit_date:
 title: Tips for monitoring your queues
 type: article
 created_date: '2013-08-21'

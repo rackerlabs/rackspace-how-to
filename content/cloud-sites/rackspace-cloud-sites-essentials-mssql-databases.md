@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-sites-essentials-mssql-databases/
-node_id: 520
+audit_date:
 title: Rackspace Cloud Sites Essentials - MSSQL Databases
 type: article
 created_date: '2011-03-16'

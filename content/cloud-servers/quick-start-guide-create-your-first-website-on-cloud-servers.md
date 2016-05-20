@@ -1,6 +1,6 @@
 ---
 permalink: quick-start-guide-create-your-first-website-on-cloud-servers/
-node_id: 3768
+audit_date:
 title: Create your first website on Cloud Servers Quickly
 type: article
 created_date: '2013-11-11'

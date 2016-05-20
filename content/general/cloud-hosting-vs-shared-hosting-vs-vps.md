@@ -1,6 +1,6 @@
 ---
 permalink: cloud-hosting-vs-shared-hosting-vs-vps/
-node_id: 3682
+audit_date:
 title: Cloud Hosting vs Shared Hosting vs VPS
 type: article
 created_date: '2013-09-14'

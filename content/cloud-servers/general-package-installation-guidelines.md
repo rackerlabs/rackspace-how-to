@@ -1,6 +1,6 @@
 ---
 permalink: general-package-installation-guidelines/
-node_id: 344
+audit_date:
 title: General Package Installation Guidelines
 type: article
 created_date: '2011-03-16'

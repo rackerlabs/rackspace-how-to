@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console/
-node_id: 1109
+audit_date:
 title: Rackspace Cloud Essentials - Checking a server's SSH host fingerprint with the web console
 type: article
 created_date: '2011-05-31'

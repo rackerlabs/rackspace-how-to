@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-private-cloud-software-vm-block-migration/
-node_id: 3173
+audit_date:
 title: Rackspace Private Cloud Software - VM Block Migration
 type: article
 created_date: '2012-11-05'

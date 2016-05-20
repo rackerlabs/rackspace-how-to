@@ -1,6 +1,6 @@
 ---
 permalink: installing-python-novaclient-on-windows/
-node_id: 1482
+audit_date:
 title: Install python-novaclient on Windows
 type: article
 created_date: '2012-07-23'

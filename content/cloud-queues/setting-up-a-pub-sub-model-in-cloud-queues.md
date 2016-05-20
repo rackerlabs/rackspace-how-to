@@ -1,6 +1,6 @@
 ---
 permalink: setting-up-a-pub-sub-model-in-cloud-queues/
-node_id: 3656
+audit_date:
 title: Set up a publisher-subscriber model in Cloud Queues
 type: article
 created_date: '2013-08-21'

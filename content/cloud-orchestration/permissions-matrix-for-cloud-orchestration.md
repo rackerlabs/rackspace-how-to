@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-cloud-orchestration/
-node_id: 3888
+audit_date:
 title: Permissions matrix for Cloud Orchestration
 type: article
 created_date: '2014-02-05'

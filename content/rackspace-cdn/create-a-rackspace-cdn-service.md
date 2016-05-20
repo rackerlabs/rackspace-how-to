@@ -1,6 +1,6 @@
 ---
 permalink: create-a-rackspace-cdn-service/
-node_id: 4651
+audit_date:
 title: Create a Rackspace CDN service
 type: article
 created_date: '2015-05-08'

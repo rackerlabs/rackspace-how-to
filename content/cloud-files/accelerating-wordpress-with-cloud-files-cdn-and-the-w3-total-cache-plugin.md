@@ -1,6 +1,6 @@
 ---
 permalink: accelerating-wordpress-with-cloud-files-cdn-and-the-w3-total-cache-plugin/
-node_id: 1464
+audit_date:
 title: 'Accelerate WordPress with Cloud Files, CDN, and the W3 Total Cache Plugin'
 type: article
 created_date: '2012-07-16'

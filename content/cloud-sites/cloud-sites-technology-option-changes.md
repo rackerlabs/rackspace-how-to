@@ -1,6 +1,6 @@
 ---
 permalink: cloud-sites-technology-option-changes/
-node_id: 1430
+audit_date:
 title: Cloud Sites Technology Option Changes
 type: article
 created_date: '2012-06-12'

@@ -1,6 +1,6 @@
 ---
 permalink: quick-set-up-with-rackspace-cloud-orchestration/
-node_id: 4254
+audit_date:
 title: Quick set up with Rackspace Cloud Orchestration
 type: article
 created_date: '2014-09-23'

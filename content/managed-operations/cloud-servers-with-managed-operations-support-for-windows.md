@@ -1,6 +1,6 @@
 ---
 permalink: cloud-servers-with-managed-operations-support-for-windows/
-node_id: 514
+audit_date:
 title: Cloud Servers with Managed Operations support for Windows
 type: article
 created_date: '2011-03-16'

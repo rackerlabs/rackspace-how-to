@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-mac-mail-for-email-hosted-on-exchange-2007/
-node_id: 951
+audit_date:
 title: Manually configure Mac Mail for email hosted on Exchange 2007
 type: article
 created_date: '2012-02-28'

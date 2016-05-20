@@ -1,5 +1,5 @@
 ---
-node_id: 6004
+audit_date:
 title: Public folder permissions for Exchange
 type: article
 created_date: '2016-02-23'

@@ -1,6 +1,6 @@
 ---
 permalink: introducing-rackspace-monitoring-on-mobile-devices/
-node_id: 3909
+audit_date:
 title: Use Rackspace Monitoring on Mobile Devices
 type: article
 created_date: '2014-02-18'

@@ -1,6 +1,6 @@
 ---
 permalink: mysql-replication-masterslave/
-node_id: 406
+audit_date:
 title: 'Configure MySQL Master-Slave replication'
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: modified-medium-trust-on-cloud-sites/
-node_id: 130
+audit_date:
 title: Modified Medium Trust on Cloud Sites
 type: article
 created_date: '2011-03-15'

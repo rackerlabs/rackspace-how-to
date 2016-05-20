@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-monitoring-checks-and-alarms/
-node_id: 3647
+audit_date:
 title: Rackspace Monitoring checks and alarms
 type: article
 created_date: '2013-08-16'

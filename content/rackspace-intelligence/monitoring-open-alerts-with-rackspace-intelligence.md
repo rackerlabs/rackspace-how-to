@@ -1,6 +1,6 @@
 ---
 permalink: monitoring-open-alerts-with-rackspace-intelligence/
-node_id: 4750
+audit_date:
 title: Monitor open alerts with Rackspace Intelligence
 type: article
 created_date: '2015-07-17'

@@ -1,6 +1,6 @@
 ---
 permalink: create-and-manage-restrictions-in-rackspace-cdn/
-node_id: 4662
+audit_date:
 title: Create and manage restrictions in Rackspace CDN
 type: article
 created_date: '2015-05-11'

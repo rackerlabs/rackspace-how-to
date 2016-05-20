@@ -1,6 +1,6 @@
 ---
 permalink: first-generation-to-next-generation-cloud-server-migration-faq/
-node_id: 4473
+audit_date:
 title: First Generation to Next Generation cloud server migration FAQ
 type: article
 created_date: '2015-01-08'

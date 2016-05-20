@@ -1,6 +1,6 @@
 ---
 permalink: windows-server-security-best-practices/
-node_id: 4131
+audit_date:
 title: Windows Server security best practices
 type: article
 created_date: '2014-07-15'

@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-sites-configuring-ssl-on-your-websites/
-node_id: 127
+audit_date:
 title: 'Getting started with Cloud Sites: Configuring SSL on your websites'
 type: article
 created_date: '2011-03-14'

@@ -1,6 +1,6 @@
 ---
 permalink: using-python-novaclient-with-the-rackspace-cloud/
-node_id: 1484
+audit_date:
 title: Using the python-novaclient with Rackspace Cloud Servers
 type: article
 created_date: '2012-07-23'

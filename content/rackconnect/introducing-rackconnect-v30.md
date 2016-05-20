@@ -1,6 +1,6 @@
 ---
 permalink: introducing-rackconnect-v30/
-node_id: 4201
+audit_date:
 title: Introducing RackConnect v3.0
 type: article
 created_date: '2014-08-22'

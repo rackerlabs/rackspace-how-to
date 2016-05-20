@@ -1,6 +1,6 @@
 ---
 permalink: rescue-mode/
-node_id: 1358
+audit_date:
 title: Rescue Mode
 type: article
 created_date: '2012-03-27'

@@ -1,6 +1,6 @@
 ---
 permalink: enable-or-disable-logging-in-rackspace-cdn/
-node_id: 4663
+audit_date:
 title: Enable or disable logging in Rackspace CDN
 type: article
 created_date: '2015-05-11'

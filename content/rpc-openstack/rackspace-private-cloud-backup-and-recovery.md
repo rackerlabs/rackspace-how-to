@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-private-cloud-backup-and-recovery/
-node_id: 1975
+audit_date:
 title: Rackspace Private Cloud Backup and Recovery
 type: article
 created_date: '2012-08-13'

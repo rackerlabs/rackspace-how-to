@@ -1,6 +1,6 @@
 ---
 permalink: next-generation-cloud-servers-migration-considerations-and-options/
-node_id: 1941
+audit_date:
 title: Next Generation Cloud Servers migration considerations and options
 type: article
 created_date: '2012-08-09'

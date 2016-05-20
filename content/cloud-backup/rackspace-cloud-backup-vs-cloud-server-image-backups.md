@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-backup-vs-cloud-server-image-backups/
-node_id: 1427
+audit_date:
 title: Rackspace Cloud Backup vs. Cloud Server Image Backups
 type: article
 created_date: '2012-06-06'

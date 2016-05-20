@@ -1,6 +1,6 @@
 ---
 permalink: examining-the-log-of-alerts-suppressed-by-rackspace-intelligence/
-node_id: 4748
+audit_date:
 title: Examining the log of alerts suppressed by Rackspace Intelligence
 type: article
 created_date: '2015-07-16'

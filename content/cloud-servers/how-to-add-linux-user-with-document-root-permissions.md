@@ -1,6 +1,6 @@
 ---
 permalink: how-to-add-linux-user-with-document-root-permissions/
-node_id: 1259
+audit_date:
 title: Add a Linux User With Document Root Permissions
 type: article
 created_date: '2011-11-23'

@@ -1,6 +1,6 @@
 ---
 permalink: getting-fanatical-support-7-live-chat/
-node_id: 1331
+audit_date:
 title: Get Fanatical Support 7 - Live Chat
 type: article
 created_date: '2012-03-20'

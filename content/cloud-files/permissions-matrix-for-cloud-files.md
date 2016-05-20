@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-cloud-files/
-node_id: 3392
+audit_date:
 title: Permissions Matrix for Cloud Files
 type: article
 created_date: '2013-04-10'

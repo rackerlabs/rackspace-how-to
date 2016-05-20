@@ -1,6 +1,6 @@
 ---
 permalink: cloud-server-name-transitions/
-node_id: 4387
+audit_date:
 title: Cloud server name transitions
 type: article
 created_date: '2014-10-28'

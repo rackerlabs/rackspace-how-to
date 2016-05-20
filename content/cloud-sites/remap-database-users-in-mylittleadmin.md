@@ -1,6 +1,6 @@
 ---
 permalink: remap-database-users-in-mylittleadmin/
-node_id: 662
+audit_date:
 title: Remap database users in myLittleAdmin
 type: article
 created_date: '2011-03-16'

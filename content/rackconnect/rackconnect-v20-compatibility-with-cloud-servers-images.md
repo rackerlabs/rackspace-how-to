@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-compatibility-with-cloud-servers-images/
-node_id: 2031
+audit_date:
 title: RackConnect v2.0 compatibility with Cloud Servers images
 type: article
 created_date: '2012-08-21'

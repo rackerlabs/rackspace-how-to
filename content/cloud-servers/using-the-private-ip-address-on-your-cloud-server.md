@@ -1,6 +1,6 @@
 ---
 permalink: using-the-private-ip-address-on-your-cloud-server/
-node_id: 149
+audit_date:
 title: Using Private IP Address on Cloud Servers
 type: article
 created_date: '2011-03-15'

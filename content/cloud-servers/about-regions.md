@@ -1,6 +1,6 @@
 ---
 permalink: about-regions/
-node_id: 1526
+audit_date:
 title: About regions
 type: article
 created_date: '2012-07-24'

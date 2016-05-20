@@ -1,6 +1,6 @@
 ---
 permalink: sharing-images-in-the-cloud-control-panel/
-node_id: 4528
+audit_date:
 title: Sharing images in the Cloud Control Panel
 type: article
 created_date: '2015-01-29'

@@ -1,6 +1,6 @@
 ---
 permalink: does-rackspace-support-frontpage-extensions/
-node_id: 537
+audit_date:
 title: Rackspace support for FrontPage Extensions
 type: article
 created_date: '2011-03-16'

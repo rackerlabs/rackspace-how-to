@@ -1,6 +1,6 @@
 ---
 permalink: add-rackspace-email-mailboxes/
-node_id: 829
+audit_date:
 title: Add Rackspace Email mailboxes
 type: article
 created_date: '2011-12-18'

@@ -1,6 +1,6 @@
 ---
 permalink: working-with-notifications-in-rackspace-intelligence/
-node_id: 4746
+audit_date:
 title: Work with notifications in Rackspace Intelligence
 type: article
 created_date: '2015-07-16'

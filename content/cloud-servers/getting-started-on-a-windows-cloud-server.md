@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-on-a-windows-cloud-server/
-node_id: 350
+audit_date:
 title: Get Started on a Windows Cloud Server
 type: article
 created_date: '2011-03-16'

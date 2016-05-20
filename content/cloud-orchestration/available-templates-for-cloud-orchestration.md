@@ -1,6 +1,6 @@
 ---
 permalink: available-templates-for-cloud-orchestration/
-node_id: 4221
+audit_date:
 title: Available templates for Cloud Orchestration
 type: article
 created_date: '2014-09-04'

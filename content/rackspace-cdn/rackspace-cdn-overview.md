@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-overview/
-node_id: 4650
+audit_date:
 title: Rackspace CDN overview
 type: article
 created_date: '2015-05-08'

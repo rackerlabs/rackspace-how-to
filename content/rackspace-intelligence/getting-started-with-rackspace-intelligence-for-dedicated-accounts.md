@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-rackspace-intelligence-for-dedicated-accounts/
-node_id: 4897
+audit_date:
 title: Getting started with Rackspace Intelligence for dedicated accounts
 type: article
 created_date: '2015-10-20'

@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-billing-faq/
-node_id: 3860
+audit_date:
 title: Rackspace billing FAQ
 type: article
 created_date: '2014-01-17'

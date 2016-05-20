@@ -1,6 +1,6 @@
 ---
 permalink: migrating-a-linux-server-from-the-command-line-2/
-node_id: 389
+audit_date:
 title: Migrate a Linux server per-package from the command line
 type: article
 created_date: '2011-03-16'

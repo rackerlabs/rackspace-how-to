@@ -1,6 +1,6 @@
 ---
 permalink: migrating-public-folder-data/
-node_id: 3791
+audit_date:
 title: 'Migrate Public Folder data'
 type: article
 created_date: '2013-11-21'

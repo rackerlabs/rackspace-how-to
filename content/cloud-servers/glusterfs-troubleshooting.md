@@ -1,6 +1,6 @@
 ---
 permalink: glusterfs-troubleshooting/
-node_id: 4179
+audit_date:
 title: Troubleshoot GlusterFS
 type: article
 created_date: '2014-08-14'

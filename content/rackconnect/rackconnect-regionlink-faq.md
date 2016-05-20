@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-regionlink-faq/
-node_id: 4452
+audit_date:
 title: RackConnect RegionLink FAQ
 type: article
 created_date: '2014-12-04'

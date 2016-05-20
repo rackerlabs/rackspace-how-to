@@ -1,6 +1,6 @@
 ---
 permalink: checking-listening-ports-with-netstat/
-node_id: 1437
+audit_date:
 title: Check Listening Ports with netstat
 type: article
 created_date: '2012-06-21'

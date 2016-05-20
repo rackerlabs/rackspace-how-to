@@ -1,6 +1,6 @@
 ---
 permalink: why-do-you-need-my-vat-id-number/
-node_id: 223
+audit_date:
 title: VAT ID number importance
 type: article
 created_date: '2011-03-16'

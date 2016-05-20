@@ -1,6 +1,6 @@
 ---
 permalink: glusterfs-high-availability-through-ctdb/
-node_id: 4178
+audit_date:
 title: Explore high availability of GlusterFS through CTDB
 type: article
 created_date: '2014-08-14'

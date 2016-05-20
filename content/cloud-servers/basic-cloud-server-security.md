@@ -1,6 +1,6 @@
 ---
 permalink: basic-cloud-server-security/
-node_id: 268
+audit_date:
 title: Basic Cloud Server Security
 type: article
 created_date: '2011-03-16'

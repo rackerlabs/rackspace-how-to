@@ -1,6 +1,6 @@
 ---
 permalink: upcoming-deprecation-of-resource-rackspacecloudserver-for-cloud-orchestration/
-node_id: 4758
+audit_date:
 title: 'Deprecated resource Rackspace::Cloud::Server for Cloud Orchestration'
 type: article
 created_date: '2015-07-24'

@@ -1,6 +1,6 @@
 ---
 permalink: provisioning-cloud-resources-when-migrating-from-amazon-web-services/
-node_id: 3572
+audit_date:
 title: Provision cloud resources when migrating from Amazon Web Services
 type: article
 created_date: '2013-07-02'

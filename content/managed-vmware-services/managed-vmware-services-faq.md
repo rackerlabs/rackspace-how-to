@@ -1,6 +1,6 @@
 ---
 permalink: managed-vmware-services-faq/
-node_id: 5046
+audit_date:
 title: Managed VMware Services FAQ
 type: article
 created_date: '2015-12-10'

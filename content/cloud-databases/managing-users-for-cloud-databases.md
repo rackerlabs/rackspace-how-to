@@ -1,6 +1,6 @@
 ---
 permalink: managing-users-for-cloud-databases/
-node_id: 1524
+audit_date:
 title: Managing Users for Cloud Databases
 type: article
 created_date: '2012-07-24'

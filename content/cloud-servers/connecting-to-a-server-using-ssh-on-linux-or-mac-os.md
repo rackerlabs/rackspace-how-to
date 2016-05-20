@@ -1,6 +1,6 @@
 ---
 permalink: connecting-to-a-server-using-ssh-on-linux-or-mac-os/
-node_id: 433
+audit_date:
 title: Connect to a server using SSH on Linux or Mac OS
 type: article
 created_date: '2011-03-16'

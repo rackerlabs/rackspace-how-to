@@ -1,6 +1,6 @@
 ---
 permalink: checking-linux-file-permissions-with-ls/
-node_id: 1255
+audit_date:
 title: Check Linux file permissions with ls
 type: article
 created_date: '2011-11-23'

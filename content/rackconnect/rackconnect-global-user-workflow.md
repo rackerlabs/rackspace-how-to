@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-global-user-workflow/
-node_id: 4859
+audit_date:
 title: RackConnect Global user workflow
 type: article
 created_date: '2015-10-16'

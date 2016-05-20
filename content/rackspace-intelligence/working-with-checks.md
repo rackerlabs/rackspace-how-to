@@ -1,6 +1,6 @@
 ---
 permalink: working-with-checks/
-node_id: 4778
+audit_date:
 title: Understand and work with checks
 type: article
 created_date: '2015-08-05'

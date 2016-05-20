@@ -1,6 +1,6 @@
 ---
 permalink: about-cloud-server-images/
-node_id: 1523
+audit_date:
 title: About Cloud Server images
 type: article
 created_date: '2012-07-24'

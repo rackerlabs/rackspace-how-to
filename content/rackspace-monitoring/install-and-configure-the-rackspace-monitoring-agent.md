@@ -1,6 +1,6 @@
 ---
 permalink: install-and-configure-the-rackspace-monitoring-agent/
-node_id: 3194
+audit_date:
 title: Install and configure the Rackspace Monitoring Agent
 type: article
 created_date: '2012-11-13'

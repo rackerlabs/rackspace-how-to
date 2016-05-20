@@ -1,6 +1,6 @@
 ---
 permalink: cloud-queues-message-patterns/
-node_id: 4040
+audit_date:
 title: Cloud Queues message patterns
 type: article
 created_date: '2014-04-24'

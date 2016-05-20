@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-dns-technical-details/
-node_id: 1233
+audit_date:
 title: Rackspace Cloud DNS - Technical details
 type: article
 created_date: '2011-10-19'

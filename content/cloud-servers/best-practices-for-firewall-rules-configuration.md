@@ -1,6 +1,6 @@
 ---
 permalink: best-practices-for-firewall-rules-configuration/
-node_id: 4451
+audit_date:
 title: Best practices for firewall rules configuration
 type: article
 created_date: '2014-12-03'

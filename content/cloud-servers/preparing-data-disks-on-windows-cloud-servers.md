@@ -1,6 +1,6 @@
 ---
 permalink: preparing-data-disks-on-windows-cloud-servers/
-node_id: 3750
+audit_date:
 title: Prepare data disks on Windows Cloud Servers
 type: article
 created_date: '2013-10-31'

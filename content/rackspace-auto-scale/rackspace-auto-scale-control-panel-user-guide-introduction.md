@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-auto-scale-control-panel-user-guide-introduction/
-node_id: 3782
+audit_date:
 title: Rackspace Auto Scale Control Panel User Guide - Introduction
 type: article
 created_date: '2013-11-18'

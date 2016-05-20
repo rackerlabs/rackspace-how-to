@@ -1,6 +1,6 @@
 ---
 permalink: migrating-to-a-general-purpose-or-io-server/
-node_id: 3720
+audit_date:
 title: Migrate to a General Purpose or I/O server
 type: article
 created_date: '2013-10-03'

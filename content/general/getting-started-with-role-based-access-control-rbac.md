@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-role-based-access-control-rbac/
-node_id: 3618
+audit_date:
 title: Getting Started with Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-07-15'

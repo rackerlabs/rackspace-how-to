@@ -1,6 +1,6 @@
 ---
 permalink: differences-between-rackspace-cloud-sites-and-a-traditional-web-hosting-environment/
-node_id: 535
+audit_date:
 title: Differences between Rackspace Cloud Sites and a traditional web hosting environment
 type: article
 created_date: '2011-03-16'

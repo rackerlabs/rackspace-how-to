@@ -1,6 +1,6 @@
 ---
 permalink: mapping-of-amazon-web-services-resources-to-rackspace-resources/
-node_id: 3571
+audit_date:
 title: Mapping of Amazon Web Services resources to Rackspace resources
 type: article
 created_date: '2013-07-01'

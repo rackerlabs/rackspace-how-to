@@ -1,6 +1,6 @@
 ---
 permalink: mobile-alerts-from-rackspace-monitoring/
-node_id: 4175
+audit_date:
 title: Mobile alerts from Rackspace Monitoring
 type: article
 created_date: '2014-08-13'

@@ -1,6 +1,6 @@
 ---
 permalink: using-task-states-with-server-imaging/
-node_id: 3663
+audit_date:
 title: Use task states with server imaging
 type: article
 created_date: '2013-08-28'

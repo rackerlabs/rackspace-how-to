@@ -1,6 +1,6 @@
 ---
 permalink: securing-the-cloud-addressing-cloud-computing-security-concerns-with-private-cloud/
-node_id: 1049
+audit_date:
 title: 'Address Cloud Computing Security Concerns with Private Cloud'
 type: article
 created_date: '2011-03-27'

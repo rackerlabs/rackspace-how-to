@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-email-control-panel-overview/
-node_id: 1403
+audit_date:
 title: Rackspace Email control panel overview
 type: article
 created_date: '2012-05-23'

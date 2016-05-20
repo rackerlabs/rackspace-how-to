@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-power-users-guide/
-node_id: 3189
+audit_date:
 title: RackConnect Power Users Guide
 type: article
 created_date: '2012-11-09'

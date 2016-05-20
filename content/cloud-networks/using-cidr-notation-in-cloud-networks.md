@@ -1,6 +1,6 @@
 ---
 permalink: using-cidr-notation-in-cloud-networks/
-node_id: 2164
+audit_date:
 title: Using CIDR notation in Cloud Networks
 type: article
 created_date: '2012-09-17'

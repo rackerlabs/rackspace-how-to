@@ -1,6 +1,6 @@
 ---
 permalink: compute-cloud-nova-using-seamicro-sm15000/
-node_id: 3279
+audit_date:
 title: Compute Cloud (Nova) using SeaMicro SM15000
 type: article
 created_date: '2013-01-24'

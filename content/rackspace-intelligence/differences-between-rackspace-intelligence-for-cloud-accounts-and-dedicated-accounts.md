@@ -1,6 +1,6 @@
 ---
 permalink: differences-between-rackspace-intelligence-for-cloud-accounts-and-dedicated-accounts/
-node_id: 4856
+audit_date:
 title: Differences between Rackspace Intelligence for cloud accounts and dedicated accounts
 type: article
 created_date: '2015-10-14'

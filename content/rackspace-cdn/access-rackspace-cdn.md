@@ -1,6 +1,6 @@
 ---
 permalink: access-rackspace-cdn/
-node_id: 4654
+audit_date:
 title: Access Rackspace CDN
 type: article
 created_date: '2015-05-08'

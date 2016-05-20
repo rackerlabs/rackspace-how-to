@@ -1,6 +1,6 @@
 ---
 permalink: useful-python-novaclient-commands/
-node_id: 1481
+audit_date:
 title: Useful python-novaclient commands
 type: article
 created_date: '2012-07-23'

@@ -1,6 +1,6 @@
 ---
 permalink: connecting-to-linux-from-mac-os-x-by-using-terminal/
-node_id: 1225
+audit_date:
 title: Connect to Linux from Mac OS X by using Terminal
 type: article
 created_date: '2011-10-06'

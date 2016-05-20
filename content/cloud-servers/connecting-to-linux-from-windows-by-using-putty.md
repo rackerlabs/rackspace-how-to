@@ -1,6 +1,6 @@
 ---
 permalink: connecting-to-linux-from-windows-by-using-putty/
-node_id: 68
+audit_date:
 title: Connect to Linux from Windows by using PuTTY
 type: article
 created_date: '2011-03-08'

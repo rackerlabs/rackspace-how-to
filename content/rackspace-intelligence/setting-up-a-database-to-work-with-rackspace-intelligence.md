@@ -1,6 +1,6 @@
 ---
 permalink: setting-up-a-database-to-work-with-rackspace-intelligence/
-node_id: 4738
+audit_date:
 title: Set up a database to work with Rackspace Intelligence
 type: article
 created_date: '2015-07-15'

@@ -1,6 +1,6 @@
 ---
 permalink: rpc-openstack-faq/
-node_id: 4228
+audit_date:
 title: Rackspace Private Cloud FAQ
 type: article
 created_date: '2014-09-09'

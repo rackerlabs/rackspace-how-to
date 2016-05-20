@@ -1,6 +1,6 @@
 ---
 permalink: postgresql-creating-and-dropping-roles/
-node_id: 416
+audit_date:
 title: Create and Drop Roles in PostgreSQL
 type: article
 created_date: '2011-03-16'

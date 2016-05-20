@@ -1,6 +1,6 @@
 ---
 permalink: detailed-permissions-matrix-for-cloud-big-data/
-node_id: 3680
+audit_date:
 title: Detailed Permissions Matrix for Cloud Big Data
 type: article
 created_date: '2013-09-12'

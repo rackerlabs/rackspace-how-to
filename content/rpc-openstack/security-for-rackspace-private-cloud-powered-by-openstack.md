@@ -1,6 +1,6 @@
 ---
 permalink: security-for-rackspace-private-cloud-powered-by-openstack/
-node_id: 4590
+audit_date:
 title: Security for Rackspace Private Cloud powered by OpenStack
 type: article
 created_date: '2015-03-04'

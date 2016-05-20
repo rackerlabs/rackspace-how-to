@@ -1,6 +1,6 @@
 ---
 permalink: cloud-block-storage-faq/
-node_id: 5022
+audit_date:
 title: Cloud Block Storage FAQ
 type: article
 created_date: '2015-12-10'

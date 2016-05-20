@@ -1,6 +1,6 @@
 ---
 permalink: installing-mysql-server-on-centos/
-node_id: 1164
+audit_date:
 title: Install MySQL Server on CentOS
 type: article
 created_date: '2011-07-29'

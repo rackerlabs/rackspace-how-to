@@ -1,6 +1,6 @@
 ---
 permalink: how-to-change-your-server-rootadmin-password-from-your-account/
-node_id: 4786
+audit_date:
 title: Change your server root/admin password from your account
 type: article
 created_date: '2015-08-13'

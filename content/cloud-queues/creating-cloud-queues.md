@@ -1,6 +1,6 @@
 ---
 permalink: creating-cloud-queues/
-node_id: 3683
+audit_date:
 title: Create a Cloud Queue
 type: article
 created_date: '2013-09-16'

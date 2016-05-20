@@ -1,6 +1,6 @@
 ---
 permalink: become-a-cloud-native/
-node_id: 5088
+audit_date:
 title: Become a Cloud Native
 type: article
 created_date: '2016-01-07'

@@ -1,6 +1,6 @@
 ---
 permalink: capturing-packets-with-tcpdump/
-node_id: 3434
+audit_date:
 title: Capture Packets with Tcpdump
 type: article
 created_date: '2013-04-25'

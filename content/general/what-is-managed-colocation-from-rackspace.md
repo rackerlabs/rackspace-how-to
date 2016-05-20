@@ -1,6 +1,6 @@
 ---
 permalink: what-is-managed-colocation-from-rackspace/
-node_id: 1042
+audit_date:
 title: Rackspace Managed Colocation
 type: article
 created_date: '2011-03-25'

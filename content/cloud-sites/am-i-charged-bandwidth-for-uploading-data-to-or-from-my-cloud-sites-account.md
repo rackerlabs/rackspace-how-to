@@ -1,6 +1,6 @@
 ---
 permalink: am-i-charged-bandwidth-for-uploading-data-to-or-from-my-cloud-sites-account/
-node_id: 197
+audit_date:
 title: Bandwidth charges for uploading data to or from a Cloud Sites account
 type: article
 created_date: '2011-03-16'

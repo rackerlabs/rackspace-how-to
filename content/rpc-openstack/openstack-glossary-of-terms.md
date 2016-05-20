@@ -1,6 +1,6 @@
 ---
 permalink: openstack-glossary-of-terms/
-node_id: 1943
+audit_date:
 title: OpenStack Glossary of Terms
 type: article
 created_date: '2012-08-09'

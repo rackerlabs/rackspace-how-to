@@ -1,6 +1,6 @@
 ---
 permalink: cloud-load-balancer-scheduling-algorithms/
-node_id: 1491
+audit_date:
 title: Cloud Load Balancer scheduling algorithms
 type: article
 created_date: '2012-07-24'

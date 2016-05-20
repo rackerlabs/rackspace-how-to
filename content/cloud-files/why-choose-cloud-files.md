@@ -1,6 +1,6 @@
 ---
 permalink: why-choose-cloud-files/
-node_id: 1056
+audit_date:
 title: Reasons to choose Cloud Files
 type: article
 created_date: '2011-03-28'

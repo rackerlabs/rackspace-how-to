@@ -1,6 +1,6 @@
 ---
 permalink: using-automatic-and-manual-disk-partitioning-on-cloud-servers/
-node_id: 3610
+audit_date:
 title: Automatic and manual disk partitioning on Cloud Servers
 type: article
 created_date: '2013-07-09'

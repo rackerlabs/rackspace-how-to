@@ -1,6 +1,6 @@
 ---
 permalink: adding-an-alias-with-rackspace-email/
-node_id: 933
+audit_date:
 title: Add an alias with Rackspace Email
 type: article
 created_date: '2012-01-18'

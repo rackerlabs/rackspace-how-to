@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-servers/
-node_id: 351
+audit_date:
 title: Get Started with Cloud Servers
 type: article
 created_date: '2011-04-04'

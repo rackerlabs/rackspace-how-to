@@ -1,6 +1,6 @@
 ---
 permalink: manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient/
-node_id: 3875
+audit_date:
 title: Manage SSH Key Pairs for Cloud Servers with python-novaclient
 type: article
 created_date: '2014-01-29'

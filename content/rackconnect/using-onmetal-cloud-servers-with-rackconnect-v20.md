@@ -1,6 +1,6 @@
 ---
 permalink: using-onmetal-cloud-servers-with-rackconnect-v20/
-node_id: 4197
+audit_date:
 title: Using OnMetal Cloud Servers with RackConnect v2.0
 type: article
 created_date: '2014-08-20'

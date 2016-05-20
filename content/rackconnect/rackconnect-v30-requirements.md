@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-requirements/
-node_id: 4215
+audit_date:
 title: RackConnect v3.0 requirements
 type: article
 created_date: '2014-08-28'

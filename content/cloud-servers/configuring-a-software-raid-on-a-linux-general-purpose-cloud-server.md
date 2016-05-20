@@ -1,6 +1,6 @@
 ---
 permalink: configuring-a-software-raid-on-a-linux-general-purpose-cloud-server/
-node_id: 3752
+audit_date:
 title: Configure a Software RAID on a Linux General Purpose Cloud Server
 type: article
 created_date: '2013-11-03'

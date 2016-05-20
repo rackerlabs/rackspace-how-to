@@ -1,6 +1,6 @@
 ---
 permalink: create-an-archive-search/
-node_id: 4684
+audit_date:
 title: Create an archive search
 type: article
 created_date: '2015-05-18'

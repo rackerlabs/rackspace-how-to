@@ -1,6 +1,6 @@
 ---
 permalink: deleting-and-resending-blackberry-service-books-bes/
-node_id: 1078
+audit_date:
 title: Delete and resend BlackBerry&reg; Service Books - (BES)
 type: article
 created_date: '2011-04-21'

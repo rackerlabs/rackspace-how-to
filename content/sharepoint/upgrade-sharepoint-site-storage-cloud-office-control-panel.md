@@ -1,6 +1,6 @@
 ---
 permalink: upgrade-sharepoint-site-storage-cloud-office-control-panel/
-node_id: 4003
+audit_date:
 title: Upgrade SharePoint site storage in the Cloud Office Control Panel
 type: article
 created_date: '2014-04-10'

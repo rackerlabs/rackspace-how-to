@@ -1,6 +1,6 @@
 ---
 permalink: using-wp-supercache-to-optimize-wordpress-on-cloud-sites/
-node_id: 702
+audit_date:
 title: Use WP-SuperCache to optimize Wordpress on Cloud Sites
 type: article
 created_date: '2011-03-16'

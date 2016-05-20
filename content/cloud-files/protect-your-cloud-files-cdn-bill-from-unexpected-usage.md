@@ -1,6 +1,6 @@
 ---
 permalink: protect-your-cloud-files-cdn-bill-from-unexpected-usage/
-node_id: 2162
+audit_date:
 title: Protect Your Cloud Files CDN Bill from Unexpected Usage
 type: article
 created_date: '2012-09-14'

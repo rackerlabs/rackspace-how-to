@@ -1,6 +1,6 @@
 ---
 permalink: sending-html-mail-via-php-in-cloud-sites/
-node_id: 3838
+audit_date:
 title: Send HTML Mail via PHP in Cloud Sites
 type: article
 created_date: '2013-12-18'
