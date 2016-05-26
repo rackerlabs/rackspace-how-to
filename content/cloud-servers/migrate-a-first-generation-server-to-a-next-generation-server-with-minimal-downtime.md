@@ -114,9 +114,9 @@ After the server has been created, you attach it to your load balancer by perfor
       <img src="{% asset_path cloud-servers/migrate-a-first-generation-server-to-a-next-generation-server-with-minimal-downtime/4782-14_1.png %}" width="308" height="248" border="1" alt=""  /></li>
 
    c. Click **Save Condition**.
+      Your server traffic will now use your Next Gen server.
+   d. When you are done using with the load balancer, select **Delete Load Balancer** from the **Actions** menu.
 
-
-Your server traffic will now use your Next Gen server.
 
 ### Optional synchronization tools
 
