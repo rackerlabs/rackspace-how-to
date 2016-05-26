@@ -134,6 +134,7 @@ Following are a few things you should know about the pages in the Auto Scale con
     Server Flavor** pane, is a Cost icon
     <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/image021.png %}" width="19" height="16" />.
     Hover your mouse pointer over it to get pricing information.
+-   At this time, CBS Volume-based Compute and Memory Optimized flavors are not supported in the Control Panel. If you need to use a Volume-based flavor, please use the [API](https://developer.rackspace.com/docs/autoscale/v1/developer-guide/ "Rackspace Autoscale Developer Documentation")
 -   Links generally take you to a status or configuration page for the
     linked item. However, the configuration page that opens might be
     outside of the **Servers > Auto Scale** page and in a different
