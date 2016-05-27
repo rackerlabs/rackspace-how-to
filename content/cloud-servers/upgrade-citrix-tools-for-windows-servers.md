@@ -1,15 +1,22 @@
 ---
 permalink: upgrade-citrix-xen-server-tools-for-windows-cloud-servers/
 node_id:
-title: Upgrade Citrix (Xen Server) Tools for Windows cloud servers
+title: Upgrade Citrix (XenServer) Tools for Windows cloud servers
 type: article
 created_date: '2016-04-05'
 created_by: Luke Repko
-last_modified_date: '2016-04-05'
-last_modified_by: Luke Repko
+last_modified_date: '2016-04-28'
+last_modified_by: Hounsou Dansou
 product: Cloud Servers
 product_url: cloud-servers
 ---
+
+### Supported Operating Systems
+
+- Windows Server 2008
+- Windows Server 2008 R2
+- Windows Server 2012
+- Windows Server 2012 R2
 
 Citrix tools are fundamental to the proper operation of virtualized cloud servers in the Rackspace cloud infrastructure. They are the underlying drivers for the virtual machine, giving it access to virtual hardware, specifically networking and block devices.
 
@@ -19,15 +26,9 @@ This article explains how to upgrade the Citrix Tools for Virtual Machines on Wi
 
 ### Prerequisites
 
-Before you begin, download the following tools to the *production* server before beginning this tutorial.
+Before you begin, You must ensure you have a backup of your server and the latest version of the Windows Agent is installed on the *production* server before beginning this tutorial.
 
-- [Citrix Tools for Virtual Machines 6.0](http://8d268c176171c62fbd4b-7084e0c7b53cce27e6cc2142114e456e.r30.cf1.rackcdn.com/xstools-6.0.zip)
-
-- [Citrix Tools for Virtual Machines 6.2](http://8d268c176171c62fbd4b-7084e0c7b53cce27e6cc2142114e456e.r30.cf1.rackcdn.com/xstools-6.2.zip)
-
-- [Cloud Servers Agent Service](http://5ef1b700b2e853350a6a-52080ce862bc0ea8ae107677959a39ad.r97.cf2.rackcdn.com/Rackspace-Cloud-Servers-Agent-Latest.zip)
-
-### Create an image of the production server
+#### Create an image of the production server
 
 1. Create an image of the production server that needs the upgrades. This can take less than an hour or multiple hours depending on the size of your server's virtual hard drive. You can find more information about images on the  [Cloud Images FAQ](how-to/cloud-images-faq).
 
@@ -36,6 +37,38 @@ Before you begin, download the following tools to the *production* server before
 3. Verify that the new server boots properly and that all data and services are intact.
 
 The new server that you created from the image is considered your *non-production* server. The actions in all of the following sections should be performed on this server.
+
+#### Upgrade the Windows Agent(also known as the Rackspace Cloud Servers agent)
+
+
+#### Online installation
+
+If your upgraded server has an active connection to the internet, you can install the Rackspace Cloud Servers agent by using the following steps.
+
+1. Start a command prompt as an administrator.
+
+2. In the command prompt, run the following code:
+
+         powershell.exe -NoProfile -ExecutionPolicy unrestricted -Command (New-Object Net.WebClient).DownloadFile('http://5ef1b700b2e853350a6a-52080ce862bc0ea8ae107677959a39ad.r97.cf2.rackcdn.com/Rackspace-Cloud-Servers-Agent-Installer-Latest.bat', '%tmp%\Rackspace-Cloud-Servers-Agent-Installer-Latest.bat') & %tmp%\Rackspace-Cloud-Servers-Agent-Installer-Latest.bat
+
+#### Offline installation
+
+If your server *does not* have an active connection to the internet, use the following installation instructions.
+
+1. Extract the archive named, **Rackspace-Cloud-Servers-Agent-Latest.zip**.
+
+   <img src="{% asset_path cloud-servers/upgrade-citrix-tools-for-windows-servers/extract-agent.png %}" alt="" />
+
+2. Inside the extracted folder, right click the **Agent-Services-Install-OR-Upgrade** batch file and choose **Run as administrator**.
+
+### Decide which server to keep
+
+After performing the preceding steps on the new, non-production server, decide whether to use the new server as your production server, or continue using the orginal production server from which you made the new image. This section explains your options.
+
+
+
+
+
 
 ### Upgrade to Xen Server Tools 6.0 on new non-production server
 
@@ -75,31 +108,7 @@ The new server that you created from the image is considered your *non-productio
 
 8. After the installation is complete, a dialog box may appear asking for the server to be restarted. If requested, restart the server.
 
-### Upgrade the Rackspace Cloud Servers agent
 
-#### Online installation
-
-If your upgraded server has an active connection to the internet, you can install the Rackspace Cloud Servers agent by using the following steps.
-
-1. Start a command prompt as an administrator.
-
-2. In the command prompt, run the following code:
-
-         powershell.exe -NoProfile -ExecutionPolicy unrestricted -Command (New-Object Net.WebClient).DownloadFile('http://5ef1b700b2e853350a6a-52080ce862bc0ea8ae107677959a39ad.r97.cf2.rackcdn.com/Rackspace-Cloud-Servers-Agent-Installer-Latest.bat', '%tmp%\Rackspace-Cloud-Servers-Agent-Installer-Latest.bat') & %tmp%\Rackspace-Cloud-Servers-Agent-Installer-Latest.bat
-
-#### Offline installation
-
-If your server *does not* have an active connection to the internet, use the following installation instructions.
-
-1. Extract the archive named, **Rackspace-Cloud-Servers-Agent-Latest.zip**.
-
-   <img src="{% asset_path cloud-servers/upgrade-citrix-tools-for-windows-servers/extract-agent.png %}" alt="" />
-
-2. Inside the extracted folder, right click the **Agent-Services-Install-OR-Upgrade** batch file and choose **Run as administrator**.
-
-### Decide which server to keep
-
-After performing the preceding steps on the new, non-production server, decide whether to use the new server as your production server, or continue using the orginal production server from which you made the new image. This section explains your options.
 
 #### Option 1: Use the new server as the production server
 
@@ -145,6 +154,6 @@ Of all three options, this option takes the longest amount of time. The length o
 
 2. In the Cloud Control Panel, navigate to the original server's detail page.  Underneath the server's **UUID**, click **Rebuild**.
 
-3. In the popup dialog box that appears, click the **Saved** tab to view your saved saved image and then select the image you created in step 1.
+3. In the pop-up dialog box that appears, click the **Saved** tab to view your saved image and then select the image you created in step 1.
 
 4. Click **Rebuild Server**.
