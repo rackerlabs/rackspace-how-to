@@ -1,6 +1,6 @@
 ---
 permalink: scheduled-images-faq/
-node_id: 3477
+audit_date:
 title: Scheduled Images FAQ
 type: article
 created_date: '2013-05-22'

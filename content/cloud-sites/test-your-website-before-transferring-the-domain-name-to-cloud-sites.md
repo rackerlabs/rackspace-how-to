@@ -1,6 +1,6 @@
 ---
 permalink: test-your-website-before-transferring-the-domain-name-to-cloud-sites/
-node_id: 570
+audit_date:
 title: Test your website before transferring the domain name to Cloud Sites
 type: article
 created_date: '2011-03-16'

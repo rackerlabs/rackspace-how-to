@@ -1,7 +1,7 @@
 ---
 permalink: when-am-i-billed-for-my-account/
-node_id: 218
-title: When am I billed for my account?
+audit_date:
+title: Timing of account billing
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

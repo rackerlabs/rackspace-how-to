@@ -1,12 +1,12 @@
 ---
 permalink: manually-configure-ios-devices-for-email-hosted-on-exchange-2007/
-node_id: 781
+audit_date:
 title: Manually configure iOS devices for email hosted on Exchange 2007
 type: article
 created_date: '2011-10-20'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-28'
-last_modified_by: Rose Coste
+last_modified_date: '2016-05-17'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -21,9 +21,7 @@ iOS 4.0 or higher.*
 [Add an ActiveSync license](/how-to/add-an-activesync-or-bes-license)
 and assign it to your email address.
 
-1. Log into your **User
-   Control Panel** at the following
-   URL: **[https://cp.rackspace.com/usercp](http://cp.rackspace.com/usercp)**
+1. Log in to the [Cloud Office Control Panel](http://cp.rackspace.com/usercp).
 
 2. Scroll down to the **Client Setup** section
    and click on the **ActiveSync** link. This opens the **Setting Up

@@ -1,6 +1,6 @@
 ---
 permalink: understanding-the-rackspace-intelligence-dashboard-user-interface/
-node_id: 4741
+audit_date:
 title: Understanding the Rackspace Intelligence dashboard user interface
 type: article
 created_date: '2015-07-16'

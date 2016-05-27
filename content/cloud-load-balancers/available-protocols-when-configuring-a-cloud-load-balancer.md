@@ -1,6 +1,6 @@
 ---
 permalink: available-protocols-when-configuring-a-cloud-load-balancer/
-node_id: 1773
+audit_date:
 title: Available protocols when configuring a Cloud Load Balancer
 type: article
 created_date: '2012-07-31'

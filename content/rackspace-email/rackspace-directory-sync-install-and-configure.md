@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-directory-sync-install-and-configure/
-node_id: 3435
+audit_date:
 title: 'Rackspace Directory Sync: Install and configure'
 type: article
 created_date: '2013-04-25'

@@ -1,6 +1,6 @@
 ---
 permalink: public-folders-availability-for-hosted-exchange-2013/
-node_id: 4450
+audit_date:
 title: Public folders availability for Hosted Exchange 2013 and 2016
 type: article
 created_date: '2014-12-03'

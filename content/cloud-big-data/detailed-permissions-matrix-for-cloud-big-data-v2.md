@@ -1,12 +1,13 @@
 ---
+
 permalink: detailed-permissions-matrix-for-cloud-big-data-v2/
-node_id: 4702
+audit_date:
 title: Detailed Permissions Matrix for Cloud Big Data v2
 type: article
 created_date: '2015-06-01'
 created_by: Catherine Richardson
-last_modified_date: '2016-01-21'
-last_modified_by: Margaret Eker
+last_modified_date: '2016-04-29'
+last_modified_by: Renee Rendon
 product: Cloud Big Data
 product_url: cloud-big-data
 ---
@@ -15,42 +16,70 @@ The following permissions matrix displays specific permissions for the roles in 
 
 **Note:**  For additional information about RBAC, see the [API Documentation](http://developer.rackspace.com/docs).
 
+**As of June 30, 2015**
 
-### As of June 30, 2015
+#### Credentials
 
-Method | API Action | Role | Description
-:---: | :---: | :---:
-**CREDENTIALS** | | |
-List all credentials | <code>GET /credentials</code> | **Observer & Creator & Admin** | Lists all user credentials
-List credentials by type | <code>GET /credentials/{type}</code> | **Observer & Creator & Admin** |	Lists all user credentials of the specified type.
-Create a credential | <code>POST /credentials/{type}</code> | **Creator & Admin** | Creates a new credential of the specified type.
-Update a credential | <code>PUT /credentials/{type}/{name}</code> | **Creator & Admin** | Updates the specified credential.
-Delete a credential | <code>DELETE /credentials/{type}/{name}</code> | **Admin only** | Deletes the specified credential.
-**DISTROS** | | |
-List available distros | <code>GET /distros</code> | **Observer & Creator & Admin** | List all available distros.
-Show distro details | <code>GET /distros/{distroId}</code> | **Observer & Creator & Admin** | For the specified distro, lists all of the supported services and their corresponding components and modes of operation.
-**STACKS** | | |
-Create a stack | <code>POST /stacks</code> | **Creator & Admin** | Creates a new stack. **Note:** This functionality is not yet implemented.
-List all stacks | <code>GET /stacks</code> | **Observer & Creator & Admin** | Lists all stacks, including global stacks and user-created stacks.
-Show stack details | <code>GET /stacks/{stackId}</code | **Observer & Creator & Admin** | Lists details for the specified stack.
-Delete a stack | DELETE /stacks/{type}/{stackId} | **Admin only** | Deletes the specified stack. **Note:** This functionality is not yet implemented.
-**CLUSTERS** | | |
-Create a cluster | <code>POST /clusters</code> | **Creator & Admin**  | Creates a new cluster.
-Delete a cluster | <code>DELETE /clusters/{clusterId}</code> | ** Admin only** | Deletes the specified cluster.
-List all clusters	| <code>GET /clusters</code> | **Observer & Creator & Admin** | Lists all clusters for your account.
-Show cluster details | <code> GET /clusters/{clusterId}</code>	| **Observer & Creator & Admin** | Lists details for the specified cluster.
-Resize a cluster | <code>PUT /clusters/{clusterId}</code> | **Creator & Admin** | Resizes the specified cluster.
-**NODES** | | |
-List cluster nodes | <code>GET /clusters/{clusterId}/nodes</code> | **Observer & Creator & Admin** | Lists all nodes for the specified cluster.
-**SCRIPTS** | | |
-Create a script	| <code>POST /scripts</code> | **Creator & Admin** | Creates a new script.
-List all scripts | <code>GET /scripts</code> | **Observer & Creator & Admin** | Lists all scripts, including global, product-provided scripts and user-created scripts.
-Update a script	| <code>PUT /scripts/{scriptId}</code> | **Creator & Admin** | Updates the specified script.
-Delete a script	| <code>DELETE /scripts/{scriptId}</code> | **Admin only** | Deletes the specified script.
-**FLAVORS** | | |
-List available flavors | <code>GET /flavors</code> | **Observer & Creator & Admin** | Lists all available flavors.
-**RESOURCE LIMITS** | | |
-List resource limits	| <code>GET /limits</code> | **Observer & Creator & Admin** | Lists the resource limits for the user, including the remaining node count, available RAM, and remaining disk space.
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+List all credentials | `GET /credentials` | **Observer<br>Creator<br>Admin** | Lists all user credentials
+List credentials by type | ```GET /credentials/{type}``` | **Observer<br> Creator<br>Admin** |	Lists all user credentials of the specified type.
+Create a credential | ```POST /credentials/{type}``` | **Creator<br>Admin** | Creates a new credential of the specified type.
+Update a credential | ```PUT /credentials/{type}/{name}``` | **Creator<br> Admin** | Updates the specified credential.
+Delete a credential | ```DELETE /credentials/{type}/{name}``` | **Admin only** | Deletes the specified credential.
+
+#### DISTROS
+
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+List available distros | ```GET /distros``` | **Observer<br>Creator<br> Admin** | List all available distros.
+Show distro details | ```GET /distros/{distroId}``` | **Observer<br>Creator Admin** | For the specified distro, lists all of the supported services and their corresponding components and modes of operation.
+
+#### STACKS
+
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+Create a stack | ```POST /stacks``` | **Creator<br>Admin** | Creates a new stack. **Note:** This functionality is not yet implemented.
+List all stacks | ```GET /stacks``` | **Observer<br>Creator<br>Admin** | Lists all stacks, including global stacks and user-created stacks.
+Show stack details | ```GET /stacks/{stackId}``` | **Observer<br>Creator Admin** | Lists details for the specified stack.
+Delete a stack | ```DELETE /stacks/{type}/{stackId}``` | **Admin only** | Deletes the specified stack. **Note:** This functionality is not yet implemented.
+
+#### CLUSTERS
+
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+Create a cluster | ```POST /clusters``` | **Creator<br>Admin**  | Creates a new cluster.
+Delete a cluster | ```DELETE /clusters/{clusterId}``` | **Admin only** | Deletes the specified cluster.
+List all clusters	| ```GET /clusters``` | **Observer<br>Creator<br>Admin** | Lists all clusters for your account.
+Show cluster details | ```GET /clusters/{clusterId}```	| **Observer<br> Creator<br>Admin** | Lists details for the specified cluster.
+Resize a cluster | ```PUT /clusters/{clusterId}``` | **Creator<br>Admin** | Resizes the specified cluster.
+
+#### NODES
+
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+List cluster nodes | ```GET /clusters/{clusterId}/nodes``` | **Observer<br>Creator<br>Admin** | Lists all nodes for the specified cluster.
+
+#### SCRIPTS
+
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+Create a script	| ```POST /scripts``` | **Creator<br>Admin** | Creates a new script.
+List all scripts | ```GET /scripts``` | **Observer<br>Creator<br>Admin** | Lists all scripts, including global, product-provided scripts and user-created scripts.
+Update a script	| ```PUT /scripts/{scriptId}``` | **Creator<br>Admin** | Updates the specified script.
+Delete a script	| ```DELETE /scripts/{scriptId}``` | **Admin only** | Deletes the specified script.
+
+#### FLAVORS
+
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+List available flavors | ```GET /flavors``` | **Observer<br>Creator<br>Admin** | Lists all available flavors.
+
+#### RESOURCE LIMITS
+
+Method Name | API Action | Role | Description
+--- | --- | :---: | ---
+List resource limits	| ```GET /limits``` | **Observer<br>Creator<br>Admin** | Lists the resource limits for the user, including the remaining node count, available RAM, and remaining disk space.
 
 
 ### Cloud Big Data terminology
@@ -67,11 +96,11 @@ Distros provide a list of supported distributions and their corresponding versio
 
 Stacks are high-level building blocks of software that compose a Big Data architecture. Stacks are composed of services, which in turn are composed of components. A stack is specific to a distribution because of to the differences in services that are supported across distributions.
 
-#### Clusters
+####Clusters
 
 A cluster is a group of servers (nodes). In Cloud Big Data, the servers are virtual.
 
-#### Node
+####Node
 
 In a network, a node (or server) is a connection point - either a redistribution point or an end point for data transmissions. In general, a node has programmed or engineered capability to recognize and process or forward transmissions to other nodes. A node is a member of a cluster.
 

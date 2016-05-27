@@ -1,6 +1,6 @@
 ---
 permalink: first-generation-end-of-life-migrations/
-node_id: 4566
+audit_date:
 title: First Generation end-of-life migrations
 type: article
 created_date: '2015-02-16'

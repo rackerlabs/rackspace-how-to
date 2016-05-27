@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-terminology/
-node_id: 4656
+audit_date:
 title: Rackspace CDN terminology
 type: article
 created_date: '2015-05-08'

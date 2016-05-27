@@ -1,6 +1,6 @@
 ---
 permalink: install-epel-and-additional-repositories-on-centos-and-red-hat/
-node_id: 1272
+audit_date:
 title: Install EPEL and additional repositories on CentOS and Red Hat
 type: article
 created_date: '2012-01-11'

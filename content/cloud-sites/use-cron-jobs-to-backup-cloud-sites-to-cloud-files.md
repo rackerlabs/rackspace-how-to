@@ -1,6 +1,6 @@
 ---
 permalink: use-cron-jobs-to-backup-cloud-sites-to-cloud-files/
-node_id: 667
+audit_date:
 title: Use cron jobs to backup Cloud Sites to Cloud Files
 type: article
 created_date: '2011-03-16'

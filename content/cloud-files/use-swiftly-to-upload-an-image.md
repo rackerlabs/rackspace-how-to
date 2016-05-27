@@ -1,6 +1,6 @@
 ---
 permalink: use-swiftly-to-upload-an-image/
-node_id: 4031
+audit_date:
 title: Use Swiftly to upload an image
 type: article
 created_date: '2014-04-21'

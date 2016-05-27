@@ -1,6 +1,6 @@
 ---
 permalink: detailed-permissions-matrix-for-rackspace-monitoring/
-node_id: 3395
+audit_date:
 title: Detailed Permissions Matrix for Rackspace Monitoring
 type: article
 created_date: '2013-04-10'

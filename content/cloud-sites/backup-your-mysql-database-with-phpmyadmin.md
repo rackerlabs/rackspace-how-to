@@ -1,6 +1,6 @@
 ---
 permalink: backup-your-mysql-database-with-phpmyadmin/
-node_id: 661
+audit_date:
 title: Backup your MySQL database with phpMyAdmin
 type: article
 created_date: '2011-03-16'

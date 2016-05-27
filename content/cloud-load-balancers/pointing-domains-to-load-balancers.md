@@ -1,6 +1,6 @@
 ---
 permalink: pointing-domains-to-load-balancers/
-node_id: 1490
+audit_date:
 title: Point Domains to Load Balancers
 type: article
 created_date: '2012-07-24'

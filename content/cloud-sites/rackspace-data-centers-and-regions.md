@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-data-centers-and-regions/
-node_id: 715
+audit_date:
 title: Rackspace data centers and regions
 type: article
 created_date: '2011-03-16'

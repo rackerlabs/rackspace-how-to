@@ -1,7 +1,7 @@
 ---
 permalink: installing-php-on-windows-server-2012/
-node_id: 3424
-title: Installing PHP on Windows Server 2012
+audit_date:
+title: Install PHP on Windows Server 2012
 type: article
 created_date: '2013-04-22'
 created_by: Rackspace Support
@@ -11,9 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article will detail installing, testing, and configuring PHP on the
-Windows Server 2012. This article will use the Microsoft Web Platform
-Installer (Web PI) method of installation. It will not cover the use
+This article details installing, testing, and configuring PHP on the
+Windows Server 2012. The article uses the Microsoft Web Platform
+Installer (Web PI) method of installation. It does not cover the use
 case of installing PHP from source.
 
 ### Requirements

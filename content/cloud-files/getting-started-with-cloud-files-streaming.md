@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-files-streaming/
-node_id: 6003
+audit_date:
 title: Getting started with Cloud Files streaming
 type: article
 created_date: '2016-02-10'

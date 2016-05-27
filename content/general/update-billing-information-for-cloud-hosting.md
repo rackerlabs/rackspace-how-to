@@ -1,6 +1,6 @@
 ---
 permalink: update-billing-information-for-cloud-hosting/
-node_id: 653
+audit_date:
 title: Update billing information for Cloud Hosting
 type: article
 created_date: '2011-03-16'

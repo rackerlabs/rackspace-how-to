@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-sites-accessing-billing-information/
-node_id: 1243
+audit_date:
 title: 'Getting Started with Cloud Sites: Accessing billing information'
 type: article
 created_date: '2011-11-08'

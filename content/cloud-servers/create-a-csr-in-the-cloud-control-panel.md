@@ -1,6 +1,6 @@
 ---
 permalink: create-a-csr-in-the-cloud-control-panel/
-node_id: 4258
+audit_date:
 title: Create a CSR in the Cloud Control Panel
 type: article
 created_date: '2014-09-25'

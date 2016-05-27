@@ -1,7 +1,7 @@
 ---
 permalink: capturing-packets-with-tcpdump/
-node_id: 3434
-title: Capturing Packets with Tcpdump
+audit_date:
+title: Capture Packets with Tcpdump
 type: article
 created_date: '2013-04-25'
 created_by: Rose Contreras
@@ -18,9 +18,9 @@ packets you want to see.
 
 ### Installation
 
-In this example we are using Ubuntu 8.10; however, the installation
+In this example, we are using Ubuntu 8.10, but the installation
 steps are similar for other Linux distributions. The following command
-will install tcpdump under Ubuntu:
+installs tcpdump under Ubuntu:
 
     sudo apt-get install tcpdump
 
@@ -28,13 +28,13 @@ will install tcpdump under Ubuntu:
 
     sudo tcpdump [options] [filter expression]
 
-By default, tcpdump will capture packets on eth0. We can specify a
-different interface using the `-i` command line flag. This command will
-capture all packets on the eth1 interface:
+By default, tcpdump captures packets on eth0. We can specify a
+different interface using the `-i` command line flag. This command 
+captures all packets on the eth1 interface:
 
     sudo tcpdump -i eth1
 
-In the following example we will listen to all UDP connections:
+In the following example, we will listen to all UDP connections:
 
     sudo tcpdump udp
 
@@ -46,18 +46,18 @@ Our command is returning all packets which have port 80 as their
 destination or source port.
 
 Now let's be more specific and capture only packets with destination
-port 80. If you have a web server on your cloud, then you can use the
+port 80. If you have a web server on your cloud, you can use the
 command below to see incoming packets.
 
     sudo tcpdump dst port 80
 
-You can also capture packets for a specific host. This command will
-catch packets coming only from IP 1.2.3.4:
+You can also capture packets for a specific host. This command 
+catches packets coming only from IP 1.2.3.4:
 
     sudo tcpdump src host 1.2.3.4
 
 Tcpdump can take logical arguments such as `and`, as well as `or`. You
-can use logical statements in a tcpdump command. For example, to catch
+can use logical statements in a tcpdump command. For example, this command catches
 all the SSH packets going from an SSH server to a client with IP
 1.2.3.4:
 

@@ -1,7 +1,7 @@
 ---
 permalink: introducing-rackspace-monitoring-on-mobile-devices/
-node_id: 3909
-title: Introducing Rackspace Monitoring on Mobile Devices
+audit_date:
+title: Use Rackspace Monitoring on Mobile Devices
 type: article
 created_date: '2014-02-18'
 created_by: Maria Abrahms
@@ -12,12 +12,12 @@ product_url: rackspace-monitoring
 ---
 
 The new Rackspace Cloud mobile application for iOS and Android
-devices enables you to instantly monitor the health of your cloud
+devices allows you to instantly monitor the health of your cloud
 infrastructure.  The Rackspace Cloud mobile app, when used with
 Rackspace Monitoring, provides you with timely and accurate information
 about how your resources are performing.
 
-This article describes how to get started with the app and perform the
+This article describes how to get started with the app and to perform the
 following Rackspace Monitoring actions on your mobile device:
 
 -   View the status of any current alarm
@@ -30,9 +30,8 @@ following Rackspace Monitoring actions on your mobile device:
 
 First, you need to install Rackspace Monitoring on your cloud resources,
 if it is not already installed.  For information about using the Cloud
-Control Panel or the Rackspace Monitoring API to set up monitoring,
-see [Getting Started With Rackspace
-Monitoring](/how-to/cloud-monitoring).
+Control Panel, or the Rackspace Monitoring API, to set up monitoring,
+see [Getting Started With Rackspace Monitoring](/how-to/cloud-monitoring).
 
 ### Download the application
 
@@ -66,21 +65,18 @@ icons, you can view resources with at least one alarm in **Critical**,
 -   Alarms in a **Critical** state are shown in red.
 -   Alarms in a **Warning** state are shown in yellow.
 -   Alarms in **OK** state are shown as green.
--   Alarms with an error or unknown state are shown in
-    grey.
+-   Alarms with an error or unknown state are shown in grey.
 
 In the following example, the account has one resource with an alarm in
-a critical state, which is shown, and 10 resources with alarms in an OK
-state.
+a critical state, which is shown, and 10 resources with alarms in an OK state.
 
-In the following example, the account has one resource with an alarm in
-a critical state.
+In the following example, the account has one resource with an alarm in a critical state.
 
 <img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/newResourceWithCriticalState.png %}" width="452" height="213" />
 
 If a resource has multiple alarms with different states (for example,
-one critical alarm and one warning alarm), the resource appears by
-default on the status tab of the *most critical state*.
+one critical alarm and one warning alarm), the resource appears, by
+default, on the status tab of the *most critical state*.
 
 ### View monitoring details
 
@@ -113,11 +109,10 @@ can have no status for the following reasons:
 -   You have deleted all alarms.
 
 When there are no alarms configured, there are no thresholds to trigger
-a change in the state of the alarms and the app cannot deliver a status
-for that resource.  You can configure alarms for Cloud Servers
-in the Cloud Control Panel. To configure alarms for
-all other resources, use the Monitoring API.
- For information about how to use the API, see the
+a change in the state of the alarms, and the app cannot deliver a status
+for that resource.  You can configure alarms for Cloud Servers in the 
+Cloud Control Panel. To configure alarms for all other resources, use the Monitoring API.
+For information about how to use the API, see the
 *[Rackspace Monitoring Developer
 Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)*.
 
@@ -133,11 +128,10 @@ the MySQL check.
 The preconfigured alarm provides warning and critical thresholds for low
 disk space *only*.  For this reason, the status bar on any MySQL
 instance shows a green status whenever the disk space is within
-threshold.  There is no status change if other checks are high or low
+threshold.  There is no status change if other checks are high or low,
 because no alarms or thresholds have been set.  You can configure
 additional alarms and notification plans by using the Cloud Databases
 API.  For more information, see the [Monitoring Cloud
 Databases](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#document-general-api-info/monitoring-cloud-databases)
 section in the *Cloud Databases Developer Guide*.  At
-this time, Cloud Database users cannot configure additional
-checks.
+this time, Cloud Database users cannot configure additional checks.

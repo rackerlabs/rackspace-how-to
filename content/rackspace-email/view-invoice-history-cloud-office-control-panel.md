@@ -1,6 +1,6 @@
 ---
 permalink: view-invoice-history-cloud-office-control-panel/
-node_id: 3987
+audit_date:
 title: View invoice history in the Cloud Office Control Panel
 type: article
 created_date: '2014-03-31'

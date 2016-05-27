@@ -1,6 +1,6 @@
 ---
 permalink: introduction-to-mailgun-email-automation/
-node_id: 3231
+audit_date:
 title: Introduction to Mailgun email automation
 type: article
 created_date: '2012-12-06'

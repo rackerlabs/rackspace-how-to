@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-centos-installing-vsftpd/
-node_id: 135
+audit_date:
 title: Rackspace Cloud Essentials - CentOS - Installing vsftpd
 type: article
 created_date: '2011-04-04'

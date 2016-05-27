@@ -1,6 +1,6 @@
 ---
 permalink: accessing-rackconnect-cloud-servers/
-node_id: 2025
+audit_date:
 title: Accessing RackConnect cloud servers
 type: article
 created_date: '2012-08-21'

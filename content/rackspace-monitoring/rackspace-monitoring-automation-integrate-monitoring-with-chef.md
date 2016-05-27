@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-monitoring-automation-integrate-monitoring-with-chef/
-node_id: 2005
+audit_date:
 title: Rackspace Monitoring Automation - Integrate Monitoring with Chef
 type: article
 created_date: '2012-08-14'

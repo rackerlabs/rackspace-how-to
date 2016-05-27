@@ -1,6 +1,6 @@
 ---
 permalink: transferring-images-between-regions-of-the-rackspace-open-cloud/
-node_id: 3915
+audit_date:
 title: Transfer images between regions of the Rackspace open cloud
 type: article
 created_date: '2014-02-27'

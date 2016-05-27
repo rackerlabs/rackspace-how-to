@@ -1,6 +1,6 @@
 ---
 permalink: removing-networks-from-a-cloud-server/
-node_id: 2250
+audit_date:
 title: Removing Networks from a Cloud Server
 type: article
 created_date: '2012-09-25'

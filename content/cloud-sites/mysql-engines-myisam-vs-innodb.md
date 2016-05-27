@@ -1,6 +1,6 @@
 ---
 permalink: mysql-engines-myisam-vs-innodb/
-node_id: 681
+audit_date:
 title: MySQL Engines - MyISAM vs Innodb
 type: article
 created_date: '2011-03-16'

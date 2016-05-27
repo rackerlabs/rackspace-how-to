@@ -1,7 +1,7 @@
 ---
 permalink: preparing-data-disks-on-windows-cloud-servers/
-node_id: 3750
-title: Preparing data disks on Windows Cloud Servers
+audit_date:
+title: Prepare data disks on Windows Cloud Servers
 type: article
 created_date: '2013-10-31'
 created_by: Jered Heeschen
@@ -11,7 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The data disks attached to some Cloud Servers flavors, specifically I/O flavors, are unformatted when created. Before you can use them to hold data on Windows, they have to be prepared by formatting them and assigning each a drive letter.
+The data disks attached to some Cloud Servers flavors, specifically I/O flavors, are 
+unformatted when created. Before you can use them to hold data on Windows, they have to be 
+prepared by formatting them and assigning each a drive letter.
 
 1. Open the Server Management interface.
 

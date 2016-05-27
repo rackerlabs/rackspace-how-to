@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-backup-system-actions/
-node_id: 2036
+audit_date:
 title: Cloud Backup system actions
 type: article
 created_date: '2012-08-22'

@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-account-invoice/
-node_id: 4218
+audit_date:
 title: Rackspace account invoice
 type: article
 created_date: '2014-09-01'

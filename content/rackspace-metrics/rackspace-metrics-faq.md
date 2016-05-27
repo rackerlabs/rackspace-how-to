@@ -1,6 +1,6 @@
 ---
-permalink: rackspace-metrics-frequently-asked-questions/
-node_id: 4649
+permalink: rackspace-metrics-faq/
+audit_date:
 title: Rackspace Metrics FAQ
 type: article
 created_date: '2015-05-06'

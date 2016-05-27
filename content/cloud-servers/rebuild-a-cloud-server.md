@@ -1,6 +1,6 @@
 ---
 permalink: rebuild-a-cloud-server/
-node_id: 1475
+audit_date:
 title: Rebuild a Cloud Server
 type: article
 created_date: '2012-07-19'

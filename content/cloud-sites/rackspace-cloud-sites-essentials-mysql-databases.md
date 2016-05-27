@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-sites-essentials-mysql-databases/
-node_id: 58
+audit_date:
 title: Rackspace Cloud Sites Essentials - MySQL Databases
 type: article
 created_date: '2011-02-28'

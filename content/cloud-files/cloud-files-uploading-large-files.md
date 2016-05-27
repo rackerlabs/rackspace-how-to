@@ -1,6 +1,6 @@
 ---
 permalink: cloud-files-uploading-large-files/
-node_id: 1310
+audit_date:
 title: Cloud Files - Uploading Large Files
 type: article
 created_date: '2012-03-06'

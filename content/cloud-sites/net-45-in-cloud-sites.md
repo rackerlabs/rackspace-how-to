@@ -1,6 +1,6 @@
 ---
 permalink: net-45-in-cloud-sites/
-node_id: 3235
+audit_date:
 title: .NET 4.5 in Cloud Sites
 type: article
 created_date: '2012-12-12'

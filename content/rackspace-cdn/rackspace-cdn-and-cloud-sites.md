@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-and-cloud-sites/
-node_id: 4646
+audit_date:
 title: Rackspace CDN and Cloud Sites
 type: article
 created_date: '2015-04-27'

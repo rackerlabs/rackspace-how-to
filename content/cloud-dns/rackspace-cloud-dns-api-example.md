@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-dns-api-example/
-node_id: 1234
+audit_date:
 title: Rackspace Cloud DNS - API example
 type: article
 created_date: '2011-10-19'

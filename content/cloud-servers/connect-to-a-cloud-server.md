@@ -1,6 +1,6 @@
 ---
 permalink: connect-to-a-cloud-server/
-node_id: 1513
+audit_date:
 title: Connect to a cloud server
 type: article
 created_date: '2012-07-24'

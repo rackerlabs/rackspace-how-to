@@ -1,6 +1,6 @@
 ---
 permalink: cloud-servers-with-managed-operations-support-for-linux/
-node_id: 1105
+audit_date:
 title: Cloud Servers with Managed Operations support for Linux
 type: article
 created_date: '2011-05-26'

@@ -1,6 +1,6 @@
 ---
 permalink: create-and-manage-caching-rules-in-rackspace-cdn/
-node_id: 4661
+audit_date:
 title: Create and manage caching rules in Rackspace CDN
 type: article
 created_date: '2015-05-11'

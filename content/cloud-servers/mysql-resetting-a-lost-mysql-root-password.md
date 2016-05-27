@@ -1,7 +1,7 @@
 ---
 permalink: mysql-resetting-a-lost-mysql-root-password/
-node_id: 405
-title: MySQL - Resetting a lost MySQL root password
+audit_date:
+title: Reset a lost MySQL root password
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

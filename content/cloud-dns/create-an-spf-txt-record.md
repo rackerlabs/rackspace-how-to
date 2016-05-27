@@ -1,6 +1,6 @@
 ---
 permalink: create-an-spf-txt-record/
-node_id: 1500
+audit_date:
 title: Create an SPF TXT record
 type: article
 created_date: '2012-07-24'

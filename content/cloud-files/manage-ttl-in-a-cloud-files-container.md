@@ -1,6 +1,6 @@
 ---
 permalink: manage-ttl-in-a-cloud-files-container/
-node_id: 6000
+audit_date:
 title: Manage Time to Live (TTL) in a Cloud Files container
 type: article
 created_date: '2016-02-10'

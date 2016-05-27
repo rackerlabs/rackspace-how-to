@@ -1,7 +1,7 @@
 ---
 permalink: configuring-mysql-server-on-centos/
-node_id: 1171
-title: Configuring MySQL server on CentOS
+audit_date:
+title: Configure MySQL server on CentOS
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen

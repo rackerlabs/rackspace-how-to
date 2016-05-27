@@ -1,22 +1,17 @@
 ---
 permalink: permissions-matrix-for-cloud-orchestration/
-node_id: 3888
+audit_date:
 title: Permissions matrix for Cloud Orchestration
 type: article
 created_date: '2014-02-05'
 created_by: Renee Rendon
-last_modified_date: '2016-01-27'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-05-02'
+last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
 
 The following permissions matrix displays specific permissions for the roles in Cloud Orchestration. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
-
-[Cloud Orchestration API v1.0 Developer Guide](https://developer.rackspace.com/docs/cloud-orchestration/v1/developer-guide/)
-
-[Cloud Orchestration FAQ](/how-to/cloud-orchestration-faq)
-
 
 #### As of May, 2015
 
@@ -35,7 +30,7 @@ Preview Stack | ```POST /stacks/preview``` | **Creator & Admin** | Previews a st
 **STACK RESOURCES** | | |
 Find Stack Resources | ```GET /stacks/{stack_name}/resources``` | **Observer & Creator & Admin** | Finds the canonical URL for the resource list of a specified stack.
 List Resources | ```GET /stacks/{stack_name}/{stack_id}/resources``` | **Observer & Creator & Admin** |	Lists resources in a stack.
-Get Resource Data | ```GET /stacks/{stack_name}/{stack_id}/resources/{resource_name}``` | Gets data for a specified resource.
+Get Resource Data | ```GET /stacks/{stack_name}/{stack_id}/resources/{resource_name}``` | **Observer & Creator & Admin** | Gets data for a specified resource.
 List Resource Types	| ```GET /resource_types``` | **Observer & Creator & Admin** | Lists the supported template resource types.
 Get Resource Schema | ```GET /resource_types/{type_name}``` | **Observer & Creator & Admin** | Gets the interface schema for a specified resource type.
 Get Resource Template | GET /resource_types/{type_name}/template | **Observer & Creator & Admin** | Gets a template representation for a specified resource type.
@@ -48,8 +43,6 @@ Show Event | ```GET /stacks/{stack_name}/{stack_id}/resources/events/{event_id}`
 Get Stack Template | ```GET /stacks/{stack_name}/{stack_id}/template``` | **Observer & Creator & Admin** | Gets a template for a specified stack.
 **BUILD INFORMATION** | | |
 Get Build Info | ```GET /build_info``` | **Observer & Creator & Admin** | Gets information about the current heat build.
-
-
 
 ### Cloud Orchestration terminology
 

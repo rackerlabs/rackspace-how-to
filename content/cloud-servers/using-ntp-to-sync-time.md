@@ -1,7 +1,7 @@
 ---
 permalink: using-ntp-to-sync-time/
-node_id: 3406
-title: Using NTP to Sync Time
+audit_date:
+title: Use NTP to Sync Time
 type: article
 created_date: '2013-04-15'
 created_by: Jered Heeschen

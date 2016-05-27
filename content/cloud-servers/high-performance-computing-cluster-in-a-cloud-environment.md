@@ -1,6 +1,6 @@
 ---
 permalink: high-performance-computing-cluster-in-a-cloud-environment/
-node_id: 3352
+audit_date:
 title: High Performance Computing Cluster in a Cloud Environment
 type: article
 created_date: '2013-03-18'

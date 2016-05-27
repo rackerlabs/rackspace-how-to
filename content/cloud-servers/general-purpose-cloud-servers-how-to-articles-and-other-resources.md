@@ -1,6 +1,6 @@
 ---
 permalink: general-purpose-cloud-servers-how-to-articles-and-other-resources/
-node_id: 1719
+audit_date:
 title: 'General Purpose Cloud Servers: How-to articles and other resources'
 type: article
 created_date: '2012-07-24'

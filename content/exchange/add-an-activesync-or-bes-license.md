@@ -1,12 +1,12 @@
 ---
 permalink: add-an-activesync-or-bes-license/
-node_id: 1313
+audit_date:
 title: 'Add an ActiveSync or BES license'
 type: article
 created_date: '2012-03-11'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-05-17'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -16,7 +16,7 @@ you need to add an ActiveSync or BlackBerry Enterprise Service (BES)
 license through the Cloud Office Control Panel. Perform the steps in
 this article to add a ActiveSync or BES license.
 
-1. Log in to your control panel and select **Microsoft Exchange** from
+1. Log in to the Cloud Office Control Panel and select **Microsoft Exchange** from
    the **Go to section** menu.
 
    <img src="{% asset_path exchange/add-an-activesync-or-bes-license/(E%26A)ActivesyncBES.png %}" alt="" />
@@ -33,8 +33,8 @@ this article to add a ActiveSync or BES license.
    - Or, all customers can
      access <http://cp.rackspace.com/usercp> directly.
 
-2. In the **Exchange Email Accounts** section, select **Mobile
-   Messaging** under **Other Servcices**.
+2. In the Exchange Email Accounts section, select **Mobile
+   Messaging** under **Other Services**.
 
    <img src="{% asset_path exchange/add-an-activesync-or-bes-license/(E%26A)ActivesyncBes2.png %}" alt="" />
 
@@ -45,6 +45,7 @@ this article to add a ActiveSync or BES license.
    <img src="{% asset_path exchange/add-an-activesync-or-bes-license/(E%26A)ActivesyncBes3.png %}" alt="" />
 
 4. Select the user to whom you are assigning the license.
+
    This works differently for different kinds of licenses:
 
    - If you're adding a BES license, select the user to whom you are

@@ -1,6 +1,6 @@
 ---
 permalink: installing-nginx-and-php-fpm/
-node_id: 1318
+audit_date:
 title: Installing NGINX and PHP-FPM
 type: article
 created_date: '2012-03-13'

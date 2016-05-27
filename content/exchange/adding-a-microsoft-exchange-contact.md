@@ -1,7 +1,7 @@
 ---
 permalink: adding-a-microsoft-exchange-contact/
-node_id: 1371
-title: Adding a Microsoft Exchange contact
+audit_date:
+title: Add a Microsoft Exchange contact
 type: article
 created_date: '2012-04-04'
 created_by: Rae D. Cabello

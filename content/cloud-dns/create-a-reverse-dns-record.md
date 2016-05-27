@@ -1,6 +1,6 @@
 ---
 permalink: create-a-reverse-dns-record/
-node_id: 64
+audit_date:
 title: Create a reverse DNS record
 type: article
 created_date: '2011-04-04'

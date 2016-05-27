@@ -1,6 +1,6 @@
 ---
 permalink: cloud-storage-app-for-microsoft-sharepoint-accessing-cloud-files-containers/
-node_id: 3506
+audit_date:
 title: 'Cloud Storage App for Microsoft SharePoint: Accessing Cloud Files containers'
 type: article
 created_date: '2013-06-04'

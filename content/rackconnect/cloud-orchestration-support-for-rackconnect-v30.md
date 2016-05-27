@@ -1,6 +1,6 @@
 ---
 permalink: cloud-orchestration-support-for-rackconnect-v30/
-node_id: 4559
+audit_date:
 title: Cloud Orchestration support for RackConnect v3.0
 type: article
 created_date: '2015-02-11'

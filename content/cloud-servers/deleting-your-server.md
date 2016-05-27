@@ -1,7 +1,7 @@
 ---
 permalink: deleting-your-server/
-node_id: 1478
-title: Deleting your server
+audit_date:
+title: Delete your server
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support

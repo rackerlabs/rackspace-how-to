@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-requirements/
-node_id: 4215
+audit_date:
 title: RackConnect v3.0 requirements
 type: article
 created_date: '2014-08-28'
@@ -13,7 +13,7 @@ product_url: rackconnect
 
 **Applies to**: RackConnect v3.0
 
-These requirements must be met to implement RackConnect v3.0:
+These requirements must be met to implement RackConnect v3.0.
 
 ### Cloud account
 
@@ -31,7 +31,7 @@ These requirements must be met to implement RackConnect v3.0:
 
 ### Dedicated account
 
-To use RackConnect v3.0, you must have a dedicated account with Rackspace.
+To use RackConnect v3.0, you must have a Dedicated Hosting account with Rackspace.
 
 ### Supported network device
 
@@ -77,5 +77,5 @@ To use RackConnect v3.0, you must have a dedicated account with Rackspace.
     servers that you build must be built with a RackConnect v3.0
     associated cloud network.
 
-If you have any questions, please reach out to us. Contact information
+If you have any questions, reach out to us. Contact information
 is available on the [Contact Us](/how-to/support) page.

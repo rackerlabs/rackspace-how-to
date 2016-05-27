@@ -1,6 +1,6 @@
 ---
 permalink: systems-management-simplified-in-the-cloud/
-node_id: 1729
+audit_date:
 title: Systems Management, Simplified in the Cloud
 type: article
 created_date: '2012-07-27'

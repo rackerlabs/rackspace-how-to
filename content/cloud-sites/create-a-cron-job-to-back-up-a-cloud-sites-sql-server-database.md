@@ -1,6 +1,6 @@
 ---
 permalink: create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database/
-node_id: 557
+audit_date:
 title: Create a cron job to back up a Cloud Sites SQL Server database
 type: article
 created_date: '2011-03-16'

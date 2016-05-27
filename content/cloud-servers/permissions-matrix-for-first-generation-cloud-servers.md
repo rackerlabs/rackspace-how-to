@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-first-generation-cloud-servers/
-node_id: 3532
+audit_date:
 title: Permissions Matrix for First Generation Cloud Servers
 type: article
 created_date: '2013-06-17'

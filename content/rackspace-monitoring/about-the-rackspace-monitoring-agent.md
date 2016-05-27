@@ -1,6 +1,6 @@
 ---
 permalink: about-the-rackspace-monitoring-agent/
-node_id: 3192
+audit_date:
 title: About the Rackspace Monitoring Agent
 type: article
 created_date: '2012-11-13'

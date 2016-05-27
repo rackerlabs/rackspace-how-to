@@ -1,7 +1,7 @@
 ---
 permalink: working-with-audio-and-voice-calls-in-hosted-skype-for-business/
-node_id: 4372
-title: Working with audio and voice calls in Hosted Skype for Business
+audit_date:
+title: Work with audio and voice calls in Hosted Skype for Business
 type: article
 created_date: '2014-10-20'
 created_by: Aaron Medrano

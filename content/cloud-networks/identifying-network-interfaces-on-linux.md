@@ -1,6 +1,6 @@
 ---
 permalink: identifying-network-interfaces-on-linux/
-node_id: 3348
+audit_date:
 title: Identify Network Interfaces on Linux
 type: article
 created_date: '2013-03-15'

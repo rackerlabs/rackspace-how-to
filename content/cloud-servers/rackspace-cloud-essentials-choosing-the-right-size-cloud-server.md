@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-choosing-the-right-size-cloud-server/
-node_id: 1388
+audit_date:
 title: Rackspace Cloud Essentials - Choosing the right-size cloud server
 type: article
 created_date: '2012-05-02'

@@ -1,19 +1,19 @@
 ---
 permalink: adding-microsoft-exchange-mailboxes/
-node_id: 1401
-title: Adding Microsoft Exchange mailboxes
+audit_date:
+title: Add Microsoft Exchange mailboxes
 type: article
 created_date: '2012-05-23'
 created_by: Rae D. Cabello
-last_modified_date: '2016-03-14'
+last_modified_date: '2016-05-17'
 last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
 
-You can create a single Microsoft Exchange mailbox by using the control panel
+You can create a single Microsoft Exchange mailbox by using the Cloud Office Control Panel
 to enter all the information, or you can add multiple Microsoft Exchange boxes
-by using the control panel to import that information from a .CSV file.
+by using the Cloud Office Control Panel to import that information from a .CSV file.
 
 ### Add one Exchange mailbox
 

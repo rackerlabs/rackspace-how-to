@@ -1,6 +1,6 @@
 ---
 permalink: windows-server-2012-r2-with-managed-operations-support/
-node_id: 3106
+audit_date:
 title: Windows Server 2012 R2 with Managed Operations support
 type: article
 created_date: '2012-10-09'

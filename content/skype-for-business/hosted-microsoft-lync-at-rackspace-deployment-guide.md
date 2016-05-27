@@ -1,6 +1,6 @@
 ---
 permalink: hosted-microsoft-lync-at-rackspace-deployment-guide/
-node_id: 4371
+audit_date:
 title: Hosted Microsoft Lync at Rackspace Deployment Guide
 type: article
 created_date: '2014-10-20'
@@ -22,7 +22,7 @@ vary. The overall deployment plan has three basic steps, and this
 article is designed to help you decide the best rollout method for your
 environment.
 
-### **Set up DNS records for Lync**
+### Set up DNS records for Lync
 
 As the first step, you must create Auto-discover entries on your DNS
 server.  If you have an internal DNS you must also set up these records
@@ -36,7 +36,7 @@ instructions, see [Set up DNS records](/how-to/set-up-dns-records-for-cloud-offi
 settings are in addition to what you might currently have for Hosted
 Exchange Autodiscover.
 
-### **Activate Lync for users in the Email Administrator Control Panel**
+### Activate Lync for users in the Email Administrator Control Panel
 
 You can enable Lync for your entire domain or only for selected users.
 In the Email Administrator Control Panel, click on the Lync hyperlink to

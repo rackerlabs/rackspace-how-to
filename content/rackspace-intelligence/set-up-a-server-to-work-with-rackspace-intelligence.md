@@ -1,6 +1,6 @@
 ---
 permalink: set-up-a-server-to-work-with-rackspace-intelligence/
-node_id: 4735
+audit_date:
 title: Set up a server to work with Rackspace Intelligence
 type: article
 created_date: '2015-07-12'

@@ -1,6 +1,6 @@
 ---
 permalink: prevent-server-overload-with-cloud-load-balancers/
-node_id: 1496
+audit_date:
 title: Prevent server overload with Cloud Load Balancers
 type: article
 created_date: '2012-07-24'

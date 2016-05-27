@@ -1,6 +1,6 @@
 ---
 permalink: objectrocket-documentation/
-node_id: 3516
+audit_date:
 title: ObjectRocket Documentation
 type: article
 created_date: '2013-06-06'

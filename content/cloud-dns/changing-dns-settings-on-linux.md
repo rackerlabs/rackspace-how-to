@@ -1,6 +1,6 @@
 ---
 permalink: changing-dns-settings-on-linux/
-node_id: 1157
+audit_date:
 title: Change DNS settings on Linux
 type: article
 created_date: '2011-07-20'

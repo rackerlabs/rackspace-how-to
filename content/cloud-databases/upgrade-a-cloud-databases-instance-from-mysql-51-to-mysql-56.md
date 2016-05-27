@@ -1,6 +1,6 @@
 ---
 permalink: upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56/
-node_id: 4124
+audit_date:
 title: Upgrade a Cloud Databases instance from MySQL 5.1 to MySQL 5.6
 type: article
 created_date: '2014-07-03'

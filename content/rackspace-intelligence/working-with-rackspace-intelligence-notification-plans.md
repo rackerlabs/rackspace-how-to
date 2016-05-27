@@ -1,7 +1,7 @@
 ---
 permalink: working-with-rackspace-intelligence-notification-plans/
-node_id: 4745
-title: Working with Rackspace Intelligence notification plans
+audit_date:
+title: Work with Rackspace Intelligence notification plans
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste

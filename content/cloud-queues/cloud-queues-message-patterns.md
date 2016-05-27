@@ -1,18 +1,18 @@
 ---
 permalink: cloud-queues-message-patterns/
-node_id: 4040
+audit_date:
 title: Cloud Queues message patterns
 type: article
 created_date: '2014-04-24'
 created_by: Megan Meza
-last_modified_date: '2015-07-16'
+last_modified_date: '2016-05-02'
 last_modified_by: Stephanie Fillmon
 product: Cloud Queues
 product_url: cloud-queues
 ---
 
 Cloud Queues was built to be flexible for a wide variety of messaging
-needs.  This article explains some common patterns and their possible
+needs. This article explains some common patterns and their possible
 variations.
 
 ### Task distribution
@@ -25,31 +25,27 @@ Amazon Simple Queue Service (SQS) to feed worker pools, as follows:
 3. A worker processes the message.
 4. The worker deletes the message.
 
-***Each step in the process can have the following variations***:
+Each step in the process can have the following variations:
 
-- **Step 1 - variation 1:** 1a. One or more producers push several messages into a queue. The worker
+- **Step 1 - variation 1:** One or more producers push several messages into a queue. The worker
   can claim batches of messages or a single message at a time.
-
 
 - **Step 2 - variation 1:** The worker does not claim the message before it expires. The
   producer should be adjusted to use a higher TTL value for messages, or
   the worker should poll more frequently.
-
 
 - **Step 2 - variation 2:** There are no messages to claim, because all messages have been
   consumed by this or other workers. The worker continues to periodically send requests to claim messages until new messages are
   available. Alternatively, a governor process might choose to autoscale the worker pool based on load (which can be checked by using
   GET request to retrieve statistics for the queue, or by monitoring whether individual workers are idle).
 
-
 - **Step 3 - variation:** The worker crashes after claiming the message, but before processing
   it. The claim on the message will eventually expire, after which the
   message will be made available again to be claimed by another worker.
 
-
 - **Step 4 - variation:** The worker crashes after processing the message but before deleting
   it. The next worker to claim the message checks whether the message has
-  already been processed before proceeding. In some cases, 
+  already been processed before proceeding. In some cases,
   double-processing of a message might be acceptable, in which case no
   check is necessary.
 
@@ -63,7 +59,7 @@ more consumers or subscribers of an event, as follows:
 3. Subscriber B lists messages in queue, gets message X.
 4. Subscribers A and B individually process message X.
 
-***Step 2 in the process can have the following variations::***
+Step 2 in the process can have the following variations:
 
 - **Step 2 - variation 1:** The subscriber has already listed messages in a previous round. The
   subscriber submits a "next" marker to tell the server what messages it
@@ -79,9 +75,8 @@ more consumers or subscribers of an event, as follows:
   last known marker, until it gets a non-empty response.
 
 - **Step 2 - variation 4:** The subscriber crashes before it can get message X. A process
-  monitor would simply restart the subscriber, and the subscriber would be able to get 
+  monitor would simply restart the subscriber, and the subscriber would be able to get
   message X as long as it is able to poll within the TTL period set by the publisher.
-
 
 ### Point-to-point
 
@@ -98,22 +93,19 @@ Note that bidirectional communication requires only a single queue.
 5. The controller lists messages in the Queue and gets the results
 message.
 
-***A couple steps in the process can have the following variations***:
+A couple steps in the process can have the following variations:
 
 - **Step 2 - variation 1:** The agent could claim messages, but it is slower than simply listing
   messages, and claiming isn't necessary when only one client will ever
   read from the queue.
 
-
 - **Step 2 - variation 2:** The agent crashes before getting the message. As soon as the agent
-   restarts, it can still get the message if it restarts within the TTL 
+   restarts, it can still get the message if it restarts within the TTL
    period set by the controller.
-
 
 - **Step 4 - variation 1:** The agent crashes before posting the result message. The controller
   should have a timeout period after which it no longer expects a response
   from its request.
-
 
 - **Step 4 - variation 2:** If no result is expected, this step and the next step are skipped.
 
@@ -132,9 +124,8 @@ submitted to the billing system correctly.
 
 However, having the ability to delay messages from being claim-able for
 a certain period of time is a feature still needed in order to make
-auditing work really well. Such a feauture would give the auditor a
+auditing work really well. Such a feature would give the auditor a
 chance to list a message before the worker deletes it. Today, workers
 can pause a specified number of seconds after claiming a message before
 deleting it, but this process will be more graceful after message delays
 are implemented.
-

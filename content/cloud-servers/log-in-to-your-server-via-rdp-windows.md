@@ -1,6 +1,6 @@
 ---
 permalink: log-in-to-your-server-via-rdp-windows/
-node_id: 368
+audit_date:
 title: Log in to your server via RDP (Windows)
 type: article
 created_date: '2011-03-16'

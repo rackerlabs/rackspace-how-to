@@ -1,7 +1,7 @@
 ---
 permalink: installing-serendipity-on-cloud-sites/
-node_id: 693
-title: Installing Serendipity on Cloud Sites
+audit_date:
+title: Install Serendipity on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

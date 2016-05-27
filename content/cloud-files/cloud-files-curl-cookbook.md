@@ -1,6 +1,6 @@
 ---
 permalink: cloud-files-curl-cookbook/
-node_id: 1445
+audit_date:
 title: Cloud Files cURL Cookbook
 type: article
 created_date: '2012-06-25'

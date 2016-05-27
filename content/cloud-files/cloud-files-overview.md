@@ -1,6 +1,6 @@
 ---
 permalink: cloud-files-overview/
-node_id: 1479
+audit_date:
 title: Cloud Files overview
 type: article
 created_date: '2012-07-23'

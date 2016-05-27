@@ -1,6 +1,6 @@
 ---
 permalink: legal/
-node_id: 2062
+audit_date:
 title: RACKSPACE HOW-TO LICENSE
 type: page
 created_date: '2012-08-24'

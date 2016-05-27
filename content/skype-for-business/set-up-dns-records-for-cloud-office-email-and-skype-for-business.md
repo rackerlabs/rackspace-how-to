@@ -1,6 +1,6 @@
 ---
 permalink: set-up-dns-records-for-cloud-office-email-and-skype-for-business/
-node_id: 4189
+audit_date:
 title: Set up DNS records for Cloud Office email and Skype for Business
 type: article
 created_date: '2014-08-15'

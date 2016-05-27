@@ -1,6 +1,6 @@
 ---
 permalink: introducing-rackconnect-v20/
-node_id: 2019
+audit_date:
 title: Introducing RackConnect v2.0
 type: article
 created_date: '2012-08-21'

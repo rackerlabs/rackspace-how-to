@@ -1,6 +1,6 @@
 ---
 permalink: migrate-to-rackspace-from-another-hosting-provider/
-node_id: 5208
+audit_date:
 title: Migrate to Rackspace from another hosting provider
 type: article
 created_date: '2016-01-21'

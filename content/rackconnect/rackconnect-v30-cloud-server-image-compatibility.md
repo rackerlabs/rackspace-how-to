@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-cloud-server-image-compatibility/
-node_id: 4245
+audit_date:
 title: RackConnect v3.0 Cloud Servers image compatibility
 type: article
 created_date: '2014-09-19'

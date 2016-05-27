@@ -1,6 +1,6 @@
 ---
 permalink: alarm-language-generic-thresholds-made-easy/
-node_id: 1947
+audit_date:
 title: Alarm Language - Generic Thresholds Made Easy
 type: article
 created_date: '2012-08-10'

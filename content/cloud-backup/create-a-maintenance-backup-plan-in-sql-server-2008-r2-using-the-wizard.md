@@ -1,6 +1,6 @@
 ---
 permalink: create-a-maintenance-backup-plan-in-sql-server-2008-r2-using-the-wizard/
-node_id: 3999
+audit_date:
 title: Create a maintenance backup plan in SQL Server 2008 R2 using the wizard
 type: article
 created_date: '2014-04-04'

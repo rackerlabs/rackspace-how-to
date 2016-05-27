@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-backup-install-the-agent-on-windows/
-node_id: 4055
+audit_date:
 title: Install the Cloud Backup agent on Windows
 type: article
 created_date: '2014-05-01'

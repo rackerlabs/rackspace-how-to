@@ -1,6 +1,6 @@
 ---
 permalink: draining-a-load-balanced-server/
-node_id: 3552
+audit_date:
 title: Drain a load balanced server
 type: article
 created_date: '2013-06-26'

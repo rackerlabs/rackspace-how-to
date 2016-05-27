@@ -1,7 +1,7 @@
 ---
 permalink: managing-cloud-sites-email-dns-records/
-node_id: 1145
-title: Managing Cloud Sites Email DNS Records
+audit_date:
+title: Manage Cloud Sites Email DNS Records
 type: article
 created_date: '2011-11-09'
 created_by: Rackspace Support

@@ -1,6 +1,6 @@
 ---
 permalink: information-for-mysql-users-mariadb-100/
-node_id: 4729
+audit_date:
 title: Information for MySQL Users (MariaDB 10.0)
 type: article
 created_date: '2015-06-25'

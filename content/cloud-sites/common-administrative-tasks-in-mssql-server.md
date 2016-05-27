@@ -1,6 +1,6 @@
 ---
 permalink: common-administrative-tasks-in-mssql-server/
-node_id: 1395
+audit_date:
 title: Common Administrative Tasks in MSSQL Server
 type: article
 created_date: '2012-05-16'

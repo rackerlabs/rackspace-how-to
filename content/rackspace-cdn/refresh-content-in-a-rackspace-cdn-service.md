@@ -1,6 +1,6 @@
 ---
 permalink: refresh-content-in-a-rackspace-cdn-service/
-node_id: 4665
+audit_date:
 title: Refresh Content in a Rackspace CDN service
 type: article
 created_date: '2015-05-11'

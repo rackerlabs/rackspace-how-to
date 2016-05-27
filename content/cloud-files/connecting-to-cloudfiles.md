@@ -1,6 +1,6 @@
 ---
 permalink: connecting-to-cloudfiles/
-node_id: 307
+audit_date:
 title: Connecting to Cloud Files
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: next-generation-cloud-servers-sample-code/
-node_id: 1718
+audit_date:
 title: 'Next Generation Cloud Servers: Sample Code'
 type: article
 created_date: '2012-07-24'

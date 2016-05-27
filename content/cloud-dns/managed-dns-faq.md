@@ -5,8 +5,8 @@ title: Managed DNS FAQ
 type: article
 created_date: '2016-03-14'
 created_by: Nicole Hairston
-last_modified_date: '2016-04-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-05-19'
+last_modified_by: Kyle Laffoon
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -27,7 +27,7 @@ Rackspace Managed DNS (Early Access) enables zone (domain) and record management
 
 **Warning:** If you’re a current Cloud DNS user with a workflow that depends on the Rackspace `pyrax` SDK or Ansible’s Rackspace modules, you need to upgrade to the latest version of `pyrax` (1.9.7) *before you sign up for* Managed DNS (Early Access). Upgrading will prevent the `pyrax` dependency from blocking the use of Cloud DNS.
 
-Sign up for [Rackspace Managed DNS - Early Access Program](https://rackspacemtkg.wufoo.com/forms/z1iyxv0s0x6z481/)! Then, we’ll set up your account and notify you with access details.
+**Note:** Updated May 19, 2016:The signup period for Managed DNS (Early Access) is now closed. Still have questions? Send them to DNS_EA@rackspace.com.
 
 #### Where can I find the Rackspace Managed DNS (Early Access) API documentation?
 

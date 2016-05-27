@@ -1,6 +1,6 @@
 ---
 permalink: list-cloud-servers-and-cloud-server-information/
-node_id: 3735
+audit_date:
 title: List Cloud Servers and Cloud Server Information
 type: article
 created_date: '2013-10-23'

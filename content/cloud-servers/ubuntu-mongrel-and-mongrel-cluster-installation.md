@@ -1,7 +1,7 @@
 ---
 permalink: ubuntu-mongrel-and-mongrel-cluster-installation/
-node_id: 479
-title: Ubuntu - Mongrel and mongrel cluster installation
+audit_date:
+title: Install Mongrel and mongrel clusters on Ubuntu
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

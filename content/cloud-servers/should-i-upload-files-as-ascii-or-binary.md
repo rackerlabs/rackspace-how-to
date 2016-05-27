@@ -1,6 +1,6 @@
 ---
 permalink: should-i-upload-files-as-ascii-or-binary/
-node_id: 131
+audit_date:
 title: Upload files as ASCII or binary
 type: article
 created_date: '2011-03-15'

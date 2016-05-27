@@ -1,6 +1,6 @@
 ---
 permalink: swift-filesystem-for-hadoop/
-node_id: 3809
+audit_date:
 title: Swift Filesystem for Hadoop
 type: article
 created_date: '2013-12-13'

@@ -1,6 +1,6 @@
 ---
 permalink: migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook/
-node_id: 3789
+audit_date:
 title: Migrate from a POP server to Rackspace Email IMAP using Outlook 
 type: article
 created_date: '2013-11-19'

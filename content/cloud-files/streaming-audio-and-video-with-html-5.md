@@ -1,6 +1,6 @@
 ---
 permalink: streaming-audio-and-video-with-html-5/
-node_id: 3285
+audit_date:
 title: Stream Audio and Video with HTML 5
 type: article
 created_date: '2013-02-01'

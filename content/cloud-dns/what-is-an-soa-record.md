@@ -1,6 +1,6 @@
 ---
 permalink: what-is-an-soa-record/
-node_id: 5138
+audit_date:
 title: DNS SOA records
 type: article
 created_date: '2016-01-19'

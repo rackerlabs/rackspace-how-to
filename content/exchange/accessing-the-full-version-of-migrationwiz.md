@@ -1,7 +1,7 @@
 ---
 permalink: accessing-the-full-version-of-migrationwiz/
-node_id: 3736
-title: Accessing the full version of MigrationWiz
+audit_date:
+title: Access the full version of MigrationWiz
 type: article
 created_date: '2013-10-24'
 created_by: Milton Prado
@@ -15,10 +15,8 @@ We provide our customers with a private label version of MigrationWiz.
 This means that many features that are present in the full version of
 MigrationWiz are not readily available. You may use the full version if
 you choose to. If you are not looking for the features provided by the
-full version of MigrationWiz,
-see
-[Migrate your email by using the Self-Service
-Tool](/how-to/migrate-your-email-by-using-the-self-service-tool)
+full version of MigrationWiz, see
+[Migrate your email by using the Self-Service Tool](/how-to/migrate-your-email-by-using-the-self-service-tool)
 for the standard steps.
 
 ### Benefits of the full version of MigrationWiz

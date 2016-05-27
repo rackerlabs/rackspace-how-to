@@ -1,6 +1,6 @@
 ---
 permalink: configure-a-load-balancer/
-node_id: 1469
+audit_date:
 title: Configure a load balancer
 type: article
 created_date: '2012-07-17'

@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-monitoring-how-tos-and-other-resources/
-node_id: 2006
+audit_date:
 title: "Rackspace Monitoring How To's and Other Resources"
 type: article
 created_date: '2012-08-14'

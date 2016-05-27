@@ -1,6 +1,6 @@
 ---
 permalink: prepare-your-cloud-block-storage-volume/
-node_id: 3132
+audit_date:
 title: Prepare your Cloud Block Storage volume
 type: article
 created_date: '2012-10-21'

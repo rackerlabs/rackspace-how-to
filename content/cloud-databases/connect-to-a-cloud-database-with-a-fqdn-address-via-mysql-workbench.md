@@ -1,6 +1,6 @@
 ---
 permalink: connect-to-a-cloud-database-with-a-fqdn-address-via-mysql-workbench/
-node_id: 1892
+audit_date:
 title: Connect to a Cloud Database with a FQDN Address via MySQL Workbench
 type: article
 created_date: '2012-08-02'

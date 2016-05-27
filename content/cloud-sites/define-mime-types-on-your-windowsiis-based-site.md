@@ -1,6 +1,6 @@
 ---
 permalink: define-mime-types-on-your-windowsiis-based-site/
-node_id: 558
+audit_date:
 title: Define mime types on your Windows/IIS based site
 type: article
 created_date: '2011-03-16'

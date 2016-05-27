@@ -1,6 +1,6 @@
 ---
 permalink: cloud-servers-faq/
-node_id: 4970
+audit_date:
 title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'

@@ -1,6 +1,6 @@
 ---
 permalink: the-rackconnect-v20-api/
-node_id: 2032
+audit_date:
 title: RackConnect v2.0 API
 type: article
 created_date: '2012-08-21'

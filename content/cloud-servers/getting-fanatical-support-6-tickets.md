@@ -1,7 +1,7 @@
 ---
 permalink: getting-fanatical-support-6-tickets/
-node_id: 1335
-title: Getting Fanatical Support 6 - Tickets
+audit_date:
+title: Get Fanatical Support 6 - Tickets
 type: article
 created_date: '2012-03-23'
 created_by: Rackspace Support

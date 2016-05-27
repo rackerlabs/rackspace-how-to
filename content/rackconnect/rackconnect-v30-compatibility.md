@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-compatibility/
-node_id: 4227
+audit_date:
 title: RackConnect v3.0 compatibility
 type: article
 created_date: '2014-09-08'
@@ -13,11 +13,11 @@ product_url: rackconnect
 
 **Applies to**: RackConnect v3.0
 
-This article outlines RackConnect v3.0's compatibility with other Rackspace products and offerings.
+This article outlines the compatibility of RackConnect v3.0 with other Rackspace products and offerings.
 
 ###RackConnect v3.0 compatibility with Rackspace public cloud offerings
 
-This table lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. The **Requirements** column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.
+The following table lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. The **Requirements** column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.
 
 **Note**: Cloud Load Balancers and OnMetal Servers are not compatible with RackConnect v3.0.
 
@@ -37,23 +37,23 @@ ObjectRocket | ServiceNet | The ObjectRocket platform is built for scalability, 
 
 ### RackConnect v3.0 compatibility with Rackspace dedicated network device offerings
 
-This table lists the dedicated network device offerings that are compatible with RackConnect v3.0.
+The following table lists the dedicated network device offerings that are compatible with RackConnect v3.0.
 
 Network device | Details
 --- | ---
-Cisco ASA Firewalls | [RackConnect Network Device Comparison](/how-to/rackconnect-network-device-comparison)
-Cisco ASA X Series Firewalls | [RackConnect Network Device Comparison](/how-to/rackconnect-network-device-comparison)
-BIG-IP F5 Load Balancers | [Using Dedicated Load Balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
-Brocade Load Balancer | [Using Dedicated Load Balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
+Cisco ASA Firewalls | [RackConnect network device comparison](/how-to/rackconnect-network-device-comparison)
+Cisco ASA X Series Firewalls | [RackConnect network device comparison](/how-to/rackconnect-network-device-comparison)
+BIG-IP F5 Load Balancers | [Using dedicated load balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
+Brocade Load Balancer | [Using dedicated load balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
 
 ### RackConnect v3.0 compatibility with Rackspace dedicated offerings
 
-This table lists the dedicated offerings that are compatible with RackConnect v3.0. Compatibility with dedicated offerings is based on network connectivity from these offerings to and from your RackConnect v3.0 cloud networks. The correct routes to allow this traffic can be set up by your Network Security team.
+The following table lists the dedicated offerings that are compatible with RackConnect v3.0. Compatibility with dedicated offerings is based on network connectivity from these offerings to and from your RackConnect v3.0 cloud networks. The correct routes to allow this traffic can be set up by your Network Security team.
 
 Network offering | Compatible | Details |
 --- | --- | ---
-Managed Colocation  | Network devices in a Managed Colocation environment are supported only if the network devices are managed by the Network Security team. Customer-managed network devices are not supported. | [Managed Colocation](https://www.rackspace.com/managed_hosting/managed_colocation/)
-Managed Storage | The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment.  The Managed Storage offering cannot be used directly with cloud servers. | [Managed Storage](https://www.rackspace.com/managed_hosting/services/storage/)
+Managed Colocation  | Network devices in a Managed Colocation environment are supported only if the network devices are managed by the Network Security team. Customer-managed network devices are not supported. | [Managed Colocation](https://www.rackspace.com/dedicated-servers/colocation)
+Managed Storage | The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment. The Managed Storage offering cannot be used directly with cloud servers. | [Managed Storage](https://www.rackspace.com/managed_hosting/services/storage/)
 Managed Virtualization | Yes | [Managed Virtualization](https://www.rackspace.com/cloud/private/managed_virtualization/)
 Private Cloud | Yes | [Private Cloud](https://www.rackspace.com/cloud/private/)
 

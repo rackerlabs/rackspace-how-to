@@ -1,6 +1,6 @@
 ---
 permalink: reboot-your-server/
-node_id: 1474
+audit_date:
 title: Reboot Your Server
 type: article
 created_date: '2012-07-19'

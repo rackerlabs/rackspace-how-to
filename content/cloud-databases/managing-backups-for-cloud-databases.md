@@ -1,6 +1,6 @@
 ---
 permalink: managing-backups-for-cloud-databases/
-node_id: 3854
+audit_date:
 title: Managing Backups for Cloud Databases
 type: article
 created_date: '2014-01-15'

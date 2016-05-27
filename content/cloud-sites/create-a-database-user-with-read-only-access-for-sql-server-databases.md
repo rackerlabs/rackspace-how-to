@@ -1,6 +1,6 @@
 ---
 permalink: create-a-database-user-with-read-only-access-for-sql-server-databases/
-node_id: 604
+audit_date:
 title: Create a database user with read-only access for SQL Server databases
 type: article
 created_date: '2011-03-23'

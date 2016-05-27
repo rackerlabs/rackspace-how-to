@@ -1,6 +1,6 @@
 ---
 permalink: what-happens-if-i-do-not-supply-a-vat-id-number/
-node_id: 215
+audit_date:
 title: What happens if I do not supply a VAT ID number?
 type: article
 created_date: '2011-03-16'

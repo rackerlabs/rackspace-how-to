@@ -1,6 +1,6 @@
 ---
 permalink: use-swift-to-manage-large-files/
-node_id: 6002
+audit_date:
 title: Use Swift to manage large files
 type: article
 created_date: '2016-02-10'

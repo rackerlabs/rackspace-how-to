@@ -1,6 +1,6 @@
 ---
 permalink: cloud-images-faq/
-node_id: 3851
+audit_date:
 title: Cloud Images FAQ
 type: article
 created_date: '2014-01-14'

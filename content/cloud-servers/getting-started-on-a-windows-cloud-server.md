@@ -1,7 +1,7 @@
 ---
 permalink: getting-started-on-a-windows-cloud-server/
-node_id: 350
-title: Getting Started on a Windows Cloud Server
+audit_date:
+title: Get Started on a Windows Cloud Server
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
@@ -22,11 +22,7 @@ This article walks through how to get started on a Windows Cloud Server in the [
 -   Login to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com/pages/Login.jsp)
 -   Navigate to **Hosting > Cloud Servers**
 -   Click on **Add Server** button
--   Click on the **Windows** tab in order to see the options as
-    shown below.
-
-  <img src="{% asset_path cloud-servers/getting-started-on-a-windows-cloud-server/Win1.jpg %}" alt="Win1.jpg" />
-
+-   Click on the **Windows** tab in order to see the options.
 -   Press on the **Select** button for the appropriate Windows Operating
     system from the list shown
 -   Alternately select an image from **User Backups**. Refer creating
@@ -41,8 +37,6 @@ This article walks through how to get started on a Windows Cloud Server in the [
     -   2048 MB,80 GB
     -   4096 MB,160 GB
 -   Click on **Create Server** button to start the build
-
-  <img src="{% asset_path cloud-servers/getting-started-on-a-windows-cloud-server/win2.jpg %}" alt="win2.jpg" />
 
 -   Watch the server build process in the Cloud Sites Control Panel
     if interested. Upon completion an email is sent to the contact email

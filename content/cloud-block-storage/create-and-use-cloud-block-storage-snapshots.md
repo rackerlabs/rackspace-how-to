@@ -1,6 +1,6 @@
 ---
 permalink: create-and-use-cloud-block-storage-snapshots/
-node_id: 3138
+audit_date:
 title: Create and use Cloud Block Storage snapshots
 type: article
 created_date: '2012-10-22'

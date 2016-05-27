@@ -1,6 +1,6 @@
 ---
 permalink: getting-rackconnect-support/
-node_id: 2033
+audit_date:
 title: Getting RackConnect support
 type: article
 created_date: '2012-08-21'

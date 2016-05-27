@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-next-generation-cloud-servers/
-node_id: 3386
+audit_date:
 title: Permissions Matrix for Next Generation Cloud Servers
 type: article
 created_date: '2013-04-10'

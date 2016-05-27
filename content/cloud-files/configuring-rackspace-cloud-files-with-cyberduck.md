@@ -1,6 +1,6 @@
 ---
 permalink: configuring-rackspace-cloud-files-with-cyberduck/
-node_id: 3203
+audit_date:
 title: Configure Rackspace Cloud Files with Cyberduck
 type: article
 created_date: '2012-11-15'

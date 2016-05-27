@@ -1,6 +1,6 @@
 ---
 permalink: cloud-load-balancers-ord-region-migration-faq/
-node_id: 4799
+audit_date:
 title: Cloud Load Balancers ORD region migration FAQ
 type: article
 created_date: '2015-08-18'

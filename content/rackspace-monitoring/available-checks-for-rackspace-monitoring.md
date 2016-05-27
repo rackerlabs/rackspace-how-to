@@ -1,6 +1,6 @@
 ---
 permalink: available-checks-for-rackspace-monitoring/
-node_id: 3649
+audit_date: '2016-01-22'
 title: Available checks for Rackspace Monitoring
 type: article
 created_date: '2013-08-19'

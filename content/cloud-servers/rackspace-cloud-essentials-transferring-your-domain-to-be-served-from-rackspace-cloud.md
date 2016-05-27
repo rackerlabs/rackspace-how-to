@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud/
-node_id: 1312
+audit_date:
 title: Rackspace Cloud Essentials - Transferring Your Domain to be Served from Rackspace Cloud
 type: article
 created_date: '2012-03-07'

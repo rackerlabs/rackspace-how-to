@@ -1,7 +1,7 @@
 ---
 permalink: generating-rsa-keys-with-ssh-puttygen/
-node_id: 426
-title: Generating RSA Keys With SSH - PuTTYgen
+audit_date:
+title: Generate RSA Keys With SSH - PuTTYgen
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

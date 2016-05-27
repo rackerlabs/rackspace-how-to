@@ -1,7 +1,7 @@
 ---
 permalink: using-cloud-servers-tags/
-node_id: 1521
-title: Using Cloud Servers tags
+audit_date:
+title: Use Cloud Servers tags
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support

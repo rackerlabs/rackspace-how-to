@@ -1,6 +1,6 @@
 ---
 permalink: install-and-use-drupal-on-cloud-sites/
-node_id: 670
+audit_date:
 title: Install And Use Drupal on Cloud Sites
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: cloud-office-quick-start-for-uk-customers/
-node_id: 4723
+audit_date:
 title: Cloud Office quick start for UK customers
 type: article
 created_date: '2015-06-22'

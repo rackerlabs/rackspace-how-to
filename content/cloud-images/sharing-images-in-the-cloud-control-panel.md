@@ -1,12 +1,12 @@
 ---
 permalink: sharing-images-in-the-cloud-control-panel/
-node_id: 4528
+audit_date:
 title: Sharing images in the Cloud Control Panel
 type: article
 created_date: '2015-01-29'
 created_by: Cloud Images
-last_modified_date: '2016-04-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-05-03'
+last_modified_by: Joe Savak
 product: Cloud Images
 product_url: cloud-images
 ---
@@ -186,13 +186,12 @@ and for which users the request is pending acceptance.
 
 If you are an image producer who wants to share an image in the ORD
 region of the Rackspace cloud, please be aware that the provisioning of
-cloud services in the ORD region has not been available to recent
+cloud services in the ORD region may not be available to some
 customers. If you share an image with such a customer, the sharing will
-occur without error from your perspective. If the consumer you are
-sharing with doesn't have cloud services in ORD, of course, they will
-not see the image and won't be able to boot from it. (If *you* don't
-have service in ORD, this question won't even come up, because you won't
-have any images in ORD to share!)
+occur without error from your perspective. If the customer you are
+sharing an image with doesn't have cloud services in ORD, they will
+not see the image and won't be able to boot a server from the image. The customer can 
+resolve this issue by opening a support ticket to request ORD region access.
 
 A customer can tell if they don't have access to the ORD region by
 looking in the Control Panel - it won't show up as an option in the

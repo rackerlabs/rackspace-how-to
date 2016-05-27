@@ -1,12 +1,12 @@
 ---
 permalink: use-pivot-tables-with-your-cloud-billing-invoice/
-node_id: 4625
+audit_date: '2016-05-24'
 title: Use pivot tables with your Cloud Billing invoice
 type: article
 created_date: '2015-03-24'
 created_by: David Hendler
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-05-24'
+last_modified_by: Zoltan Ver
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -14,6 +14,8 @@ product_url: cloud-servers
 You can use the Rackspace CSV-formatted invoice to filter and manipulate
 your billing data. We provide three pivot tables (linked below) to help
 our customers find the information you need.
+
+**Note:** UK Cloud accounts cannot export the CSV format to pivot tables. We plan on making the CSV export feature available to UK Cloud accounts in September 2016.
 
 ### View billing data in pivot tables
 

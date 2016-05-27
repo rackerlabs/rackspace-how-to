@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd/
-node_id: 274
+audit_date:
 title: Rackspace Cloud Essentials - CentOS - Configuring a user in vsftpd
 type: article
 created_date: '2011-04-04'

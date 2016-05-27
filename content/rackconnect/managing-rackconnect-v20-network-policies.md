@@ -1,6 +1,6 @@
 ---
 permalink: managing-rackconnect-v20-network-policies/
-node_id: 2024
+audit_date:
 title: Managing RackConnect v2.0 network policies
 type: article
 created_date: '2012-08-21'

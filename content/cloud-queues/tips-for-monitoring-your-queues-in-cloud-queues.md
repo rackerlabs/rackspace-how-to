@@ -1,12 +1,12 @@
 ---
 permalink: tips-for-monitoring-your-queues-in-cloud-queues/
-node_id: 3658
+audit_date:
 title: Tips for monitoring your queues
 type: article
 created_date: '2013-08-21'
 created_by: Megan Meza
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-05-09'
+last_modified_by: Stephanie Fillmon
 product: Cloud Queues
 product_url: cloud-queues
 ---
@@ -15,54 +15,42 @@ product_url: cloud-queues
 
 Use the following procedures to get queue statistics, including the number of messages that exist in the queue, and the number of messages for each message status.
 
-### Monitoring through the API
+### Monitor through the API
 
-Send the following request.
+Send the following request to get queue statistics:
 
-#### Queue status template
+    GET /v1/queues/fizbit/stats HTTP/1.1
+    Host: marconi.example.com
 
-       GET /v1/queues/{queue_name}/stats
+The response should look similar to the following:
 
-#### Request
+    HTTP:/1.1 200 OK
+    {
+      "messages": {
+      "free": 146929,
+      "claimed": 2409,
+      "total": 149338,
+      "oldest": {
+          "href": "/v1/queues/fizbit/messages/50b68a50d6f5b8c8a7c62b01",
+          "age": 63,
+          "created": "2013-08-12T20:44:55Z"
+      },
+      "newest": {
+          "href": "/v1/queues/fizbit/messages/50b68a50d6f5b8c8a7c62b01",
+          "age": 12,
+          "created": "2013-08-12T20:45:46Z"
+      }
+    }
 
-Substitute your cloud queue information for the sample information:
-
-       GET /v1/queues/fizbit/stats HTTP/1.1
-       Host: marconi.example.com
-
-The API response returns the queue statistics:
-
-#### Response
-
-       HTTP:/1.1 200 OK
-       {
-         "messages": {
-           "free": 146929,
-           "claimed": 2409,
-           "total": 149338,
-           "oldest": {
-               "href": "/v1/queues/fizbit/messages/50b68a50d6f5b8c8a7c62b01",
-               "age": 63,
-               "created": "2013-08-12T20:44:55Z"
-           },
-           "newest": {
-               "href": "/v1/queues/fizbit/messages/50b68a50d6f5b8c8a7c62b01",
-               "age": 12,
-               "created": "2013-08-12T20:45:46Z"
-           }
-       }
-
-### Monitoring through the Cloud Control Panel
+### Monitor through the Cloud Control Panel
 
 You can view statistics for a queue in the Cloud Control Panel.
 
-1. Log in to the Cloud Control Panel.
+1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
-2. In the top navigation bar, click Servers > Message Queueing.
+2. In the top navigation bar, click **Servers > Message Queueing**.
 
-     <img src="{% asset_path cloud-queues/tips-for-monitoring-your-queues-in-cloud-queues/1560-3658-newimg.png %}" width="483" height="247" border="1" alt=""  />
-
-3. Click on your queue name to go to the Queue Details page.
+3. Click on a queue name to go to the Queue Details page.
 
       <img src="{% asset_path cloud-queues/tips-for-monitoring-your-queues-in-cloud-queues/3658-tipsformonitoring-2_0.png %}" width="793" height="590" border="1" alt=""  />
 

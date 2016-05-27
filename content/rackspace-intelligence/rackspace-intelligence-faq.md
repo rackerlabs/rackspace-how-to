@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-intelligence-faq/
-node_id: 4682
+audit_date:
 title: Rackspace Intelligence FAQ
 type: article
 created_date: '2015-05-15'

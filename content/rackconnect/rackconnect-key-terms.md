@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-key-terms/
-node_id: 2017
+audit_date:
 title: RackConnect key terms
 type: article
 created_date: '2012-08-21'

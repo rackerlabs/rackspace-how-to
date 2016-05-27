@@ -1,6 +1,6 @@
 ---
 permalink: cloud-servers-how-to-articles-other-resources/
-node_id: 1717
+audit_date:
 title: 'Cloud Servers: How to articles & other resources'
 type: article
 created_date: '2012-07-24'

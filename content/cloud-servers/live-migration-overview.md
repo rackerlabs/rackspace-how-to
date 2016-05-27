@@ -1,6 +1,6 @@
 ---
 permalink: live-migration-overview/
-node_id: 4955
+audit_date:
 title: Live migration overview
 type: article
 created_date: '2015-11-24'

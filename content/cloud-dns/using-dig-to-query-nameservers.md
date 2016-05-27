@@ -1,6 +1,6 @@
 ---
 permalink: using-dig-to-query-nameservers/
-node_id: 3486
+audit_date:
 title: Use dig to query nameservers
 type: article
 created_date: '2013-05-28'

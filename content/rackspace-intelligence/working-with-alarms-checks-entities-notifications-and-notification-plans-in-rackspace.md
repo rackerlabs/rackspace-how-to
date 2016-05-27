@@ -1,7 +1,7 @@
 ---
 permalink: working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/
-node_id: 4842
-title: 'Working with alarms, checks, entities, notifications, and notification plans in Rackspace Intelligence for dedicated accounts'
+audit_date:
+title: 'Work with alarms, checks, entities, notifications, and notification plans in Rackspace Intelligence for dedicated accounts'
 type: article
 created_date: '2015-10-14'
 created_by: Constanze Kratel

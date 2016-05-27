@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface/
-node_id: 134
+audit_date:
 title: Rackspace Cloud Sites Essentials - PHPmyAdmin Database Management Interface
 type: article
 created_date: '2011-03-15'

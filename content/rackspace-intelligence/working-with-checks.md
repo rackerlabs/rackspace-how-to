@@ -1,7 +1,7 @@
 ---
 permalink: working-with-checks/
-node_id: 4778
-title: Working with checks
+audit_date:
+title: Understand and work with checks
 type: article
 created_date: '2015-08-05'
 created_by: Constanze Kratel

@@ -1,7 +1,7 @@
 ---
 permalink: configuring-ms-sql-server-for-remote-access/
-node_id: 1184
-title: Configuring MS SQL Server for Remote Access
+audit_date:
+title: Configure MS SQL Server for Remote Access
 type: article
 created_date: '2011-08-16'
 created_by: Rackspace Support

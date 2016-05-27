@@ -1,6 +1,6 @@
 ---
 permalink: general-information-cloud-office-control-panel/
-node_id: 3985
+audit_date:
 title: General information in the Cloud Office Control Panel
 type: article
 created_date: '2014-03-31'

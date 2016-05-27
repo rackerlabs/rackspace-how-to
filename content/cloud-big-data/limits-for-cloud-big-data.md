@@ -1,6 +1,6 @@
 ---
 permalink: limits-for-cloud-big-data/
-node_id: 3978
+audit_date:
 title: Limits for Cloud Big Data
 type: article
 created_date: '2014-03-28'

@@ -1,6 +1,6 @@
 ---
 permalink: create-a-dkim-txt-record/
-node_id: 1502
+audit_date:
 title: Create a DKIM TXT record
 type: article
 created_date: '2012-07-24'

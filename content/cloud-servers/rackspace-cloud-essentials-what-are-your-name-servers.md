@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-what-are-your-name-servers/
-node_id: 731
+audit_date:
 title: Rackspace Cloud Essentials - What Are Your Name Servers?
 type: article
 created_date: '2011-03-16'

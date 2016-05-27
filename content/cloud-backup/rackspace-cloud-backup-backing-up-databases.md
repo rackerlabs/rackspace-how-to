@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-backup-backing-up-databases/
-node_id: 2042
+audit_date:
 title: Back up databases with Cloud Backup
 type: article
 created_date: '2012-08-23'

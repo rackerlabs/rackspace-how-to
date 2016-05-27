@@ -1,6 +1,6 @@
 ---
 permalink: how-rackspace-bills-for-bandwidth/
-node_id: 3911
+audit_date:
 title: How Rackspace Bills for Bandwidth
 type: article
 created_date: '2014-02-19'

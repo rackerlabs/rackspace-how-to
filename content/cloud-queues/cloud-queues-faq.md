@@ -1,11 +1,11 @@
 ---
 permalink: cloud-queues-faq/
-node_id: 3690
+audit_date:
 title: Cloud Queues FAQ
 type: article
 created_date: '2013-09-18'
 created_by: Megan Meza
-last_modified_date: '2016-01-20'
+last_modified_date: '2016-05-02'
 last_modified_by: Stephanie Fillmon
 product: Cloud Queues
 product_url: cloud-queues
@@ -48,7 +48,7 @@ This is on our roadmap.
 
 #### What stats does the API return?
 
-We currently only offer a few very basic per-que stats but intend to develop additional stats for GA The stats currently offered include oldest message, newest message, number of claimed messages, number of unclaimed messages. However, it is easy to hook Graphite up to the **GetQueueStats** call to plot graphs on the amount of free and unclaimed messages.
+We currently only offer a few very basic per-queue stats but intend to develop additional stats for GA The stats currently offered include oldest message, newest message, number of claimed messages, number of unclaimed messages. However, it is easy to hook Graphite up to the `GetQueueStats` call to plot graphs on the amount of free and unclaimed messages.
 
 #### What is the maximum amount of time a message can be stored?
 
@@ -62,6 +62,6 @@ There are no limits on the number of queues or the number of messages that a que
 
 Yes, customers will be limited to 300 request per second per account. Please contact support if you need to exceed this limit.
 
-#### What do I need to enter for the **X-Project-ID** field?
+#### What do I need to enter for the `X-Project-ID` field?
 
 Project ID is the Tenant ID, and is the customer's account number.

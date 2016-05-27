@@ -1,7 +1,7 @@
 ---
 permalink: getting-started-with-the-rackspace-mobile-application-and-managing-accounts/
-node_id: 3617
-title: Getting Started with the Rackspace Mobile Application and Managing Accounts
+audit_date:
+title: Get Started with the Rackspace Mobile Application and Managing Accounts
 type: article
 created_date: '2013-07-12'
 created_by: Jamie Rosenfield

@@ -1,7 +1,7 @@
 ---
 permalink: checking-linux-file-permissions-with-ls/
-node_id: 1255
-title: Checking Linux file permissions with ls
+audit_date:
+title: Check Linux file permissions with ls
 type: article
 created_date: '2011-11-23'
 created_by: Jered Heeschen

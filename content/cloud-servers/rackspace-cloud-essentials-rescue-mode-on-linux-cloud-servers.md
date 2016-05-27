@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers/
-node_id: 3295
+audit_date:
 title: Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers
 type: article
 created_date: '2013-02-11'

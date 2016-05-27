@@ -1,6 +1,6 @@
 ---
 permalink: comparing-rackconnect-v30-and-rackconnect-v20/
-node_id: 4211
+audit_date:
 title: Comparing RackConnect v3.0 and RackConnect v2.0
 type: article
 created_date: '2014-08-26'

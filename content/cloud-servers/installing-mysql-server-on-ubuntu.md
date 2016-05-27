@@ -1,7 +1,7 @@
 ---
 permalink: installing-mysql-server-on-ubuntu/
-node_id: 1162
-title: Installing MySQL Server on Ubuntu
+audit_date:
+title: Install MySQL Server on Ubuntu
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
@@ -31,7 +31,7 @@ Linux - just enough to get you started. Remember that you might need to
 install other packages to let apps use MySQL, like extensions for PHP.
 Check your application documentation for details.
 
-### Installing MySQL
+### Install MySQL
 
 The easiest way to install the MySQL server is through the Ubuntu
 package manager:

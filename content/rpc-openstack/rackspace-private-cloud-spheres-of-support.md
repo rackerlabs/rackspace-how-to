@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-private-cloud-spheres-of-support/
-node_id: 4244
+audit_date:
 title: Rackspace Private Cloud Spheres of Support
 type: article
 created_date: '2014-09-19'

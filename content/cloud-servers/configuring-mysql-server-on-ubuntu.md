@@ -1,7 +1,7 @@
 ---
 permalink: configuring-mysql-server-on-ubuntu/
-node_id: 1169
-title: Configuring MySQL server on Ubuntu
+audit_date:
+title: Configure MySQL server on Ubuntu
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen

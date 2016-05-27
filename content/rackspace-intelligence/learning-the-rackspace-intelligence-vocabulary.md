@@ -1,6 +1,6 @@
 ---
 permalink: learning-the-rackspace-intelligence-vocabulary/
-node_id: 4764
+audit_date:
 title: Learning the Rackspace Intelligence vocabulary
 type: article
 created_date: '2015-07-28'

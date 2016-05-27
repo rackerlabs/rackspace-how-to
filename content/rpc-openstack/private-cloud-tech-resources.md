@@ -1,6 +1,6 @@
 ---
 permalink: private-cloud-tech-resources/
-node_id: 3280
+audit_date:
 title: Private Cloud Tech Resources
 type: article
 created_date: '2013-01-24'

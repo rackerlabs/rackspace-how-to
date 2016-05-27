@@ -1,7 +1,7 @@
 ---
 permalink: working-with-alarms/
-node_id: 4769
-title: Working with alarms
+audit_date:
+title: Understand and work with alarms
 type: article
 created_date: '2015-07-31'
 created_by: Constanze Kratel

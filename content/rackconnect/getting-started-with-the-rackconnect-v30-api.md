@@ -1,7 +1,7 @@
 ---
 permalink: getting-started-with-the-rackconnect-v30-api/
-node_id: 4231
-title: Getting started with the RackConnect v3.0 API
+audit_date:
+title: Get started with the RackConnect v3.0 API
 type: article
 created_date: '2014-09-10'
 created_by: Juan Perez

@@ -1,6 +1,6 @@
 ---
 permalink: managing-your-server/
-node_id: 1472
+audit_date:
 title: Managing Your Server
 type: article
 created_date: '2012-07-19'

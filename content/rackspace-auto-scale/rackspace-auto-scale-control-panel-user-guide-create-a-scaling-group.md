@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/
-node_id: 3784
+audit_date:
 title: Create a scaling group using the Auto Scale Control Panel
 type: article
 created_date: '2013-11-18'

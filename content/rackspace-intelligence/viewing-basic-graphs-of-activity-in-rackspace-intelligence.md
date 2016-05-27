@@ -1,7 +1,7 @@
 ---
 permalink: viewing-basic-graphs-of-activity-in-rackspace-intelligence/
-node_id: 4742
-title: Viewing basic graphs of activity in Rackspace Intelligence
+audit_date:
+title: View basic graphs of activity in Rackspace Intelligence
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste

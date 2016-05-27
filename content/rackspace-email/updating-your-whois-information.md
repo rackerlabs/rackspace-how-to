@@ -1,6 +1,6 @@
 ---
 permalink: updating-your-whois-information/
-node_id: 1147
+audit_date:
 title: Update your WHOIS information
 type: article
 created_date: '2011-10-31'

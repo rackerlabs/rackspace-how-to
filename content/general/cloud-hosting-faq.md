@@ -1,6 +1,6 @@
 ---
 permalink: cloud-hosting-faq/
-node_id: 5054
+audit_date:
 title: Cloud Hosting FAQ
 type: article
 created_date: '2015-12-10'

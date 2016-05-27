@@ -1,6 +1,6 @@
 ---
 permalink: bin-deploy-an-aspnet-assembly-on-cloud-sites/
-node_id: 586
+audit_date:
 title: Bin-deploy an ASP.NET assembly on Cloud Sites
 type: article
 created_date: '2011-03-16'

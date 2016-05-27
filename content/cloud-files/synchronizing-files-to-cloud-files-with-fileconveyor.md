@@ -1,6 +1,6 @@
 ---
 permalink: synchronizing-files-to-cloud-files-with-fileconveyor/
-node_id: 3266
+audit_date:
 title: Synchronize files to Cloud Files with File Conveyor
 type: article
 created_date: '2013-01-22'

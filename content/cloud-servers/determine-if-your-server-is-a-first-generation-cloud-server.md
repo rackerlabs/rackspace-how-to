@@ -1,6 +1,6 @@
 ---
 permalink: determine-if-your-server-is-a-first-generation-cloud-server/
-node_id: 4571
+audit_date:
 title: Determine if your server is a First Generation cloud server
 type: article
 created_date: '2015-02-27'

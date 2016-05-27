@@ -1,6 +1,6 @@
 ---
 permalink: basic-cloud-server-use-scenarios/
-node_id: 269
+audit_date:
 title: Basic Cloud Server use Scenarios
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: install-the-swiftly-client-for-cloud-files/
-node_id: 4030
+audit_date:
 title: Install the Swiftly client for Cloud Files
 type: article
 created_date: '2014-04-21'

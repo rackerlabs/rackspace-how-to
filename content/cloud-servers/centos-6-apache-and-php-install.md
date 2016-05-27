@@ -1,7 +1,7 @@
 ---
 permalink: centos-6-apache-and-php-install/
-node_id: 92
-title: CentOS 6 - Apache and PHP Install
+audit_date:
+title: Install Apache and PHP on CentOS 6
 type: article
 created_date: '2011-03-09'
 created_by: Rackspace Support
@@ -81,7 +81,7 @@ Now that Apache is installed and working, ensure that it is set to start automat
 
 1. Run the following command:
 
-        sudo yum install php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
+        sudo yum php install php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
 
   The preceding command does not install all the modules available, just a few common ones.
 

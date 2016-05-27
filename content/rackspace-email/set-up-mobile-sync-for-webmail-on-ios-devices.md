@@ -1,12 +1,12 @@
 ---
 permalink: set-up-mobile-sync-for-webmail-on-ios-devices/
-node_id: 1385
+audit_date:
 title: Set up Mobile Sync for Webmail on iOS devices
 type: article
 created_date: '2012-04-27'
 created_by: Rackspace Support
-last_modified_date: '2015-02-02'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-05-18'
+last_modified_by: Kyle Laffoon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -34,14 +34,8 @@ differ from the examples.
 
 1.  On the **Home** screen of your device, tap the **Settings** icon.
 
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/(E&amp;A)SettingUpMicrosoftExchangeEmailIphone1.png %}" width="213" />
-
 2.  In **Settings**, tap **Mail, Contacts, Calendars** &gt; **Add
     Account** &gt; **Microsoft Exchange**.
-
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/(E&amp;A)SettingUpMicrosoftExchangeEmailIphone2.png %}" width="213" />
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/(E&amp;A)SettingUpMicrosoftExchangeEmailIphone3.png %}" width="213" />
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/(E&amp;A)SettingUpMicrosoftExchangeEmailIphone4.png %}" width="213" />
 
 3.  On the Exchange setup screen, enter the following information:
 

@@ -1,7 +1,7 @@
 ---
 permalink: creating-and-configuring-a-user-in-mssql/
-node_id: 329
-title: Creating and Configuring a User in MSSQL
+audit_date:
+title: Create and Configure a User in MSSQL
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support

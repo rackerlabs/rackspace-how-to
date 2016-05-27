@@ -1,7 +1,7 @@
 ---
 permalink: installing-ftp-on-windows-server-2012-r2/
-node_id: 3385
-title: Installing FTP on Windows Server 2012 (R2)
+audit_date:
+title: Install FTP on Windows Server 2012 (R2)
 type: article
 created_date: '2013-04-09'
 created_by: Rackspace Support

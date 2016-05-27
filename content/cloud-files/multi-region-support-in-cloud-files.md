@@ -1,6 +1,6 @@
 ---
 permalink: multi-region-support-in-cloud-files/
-node_id: 2157
+audit_date:
 title: Multi-region support in Cloud Files
 type: article
 created_date: '2012-09-12'

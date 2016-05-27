@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-object-is-not-being-cached/
-node_id: 5159
+audit_date:
 title: Object is not being cached
 type: article
 created_date: '2016-01-19'

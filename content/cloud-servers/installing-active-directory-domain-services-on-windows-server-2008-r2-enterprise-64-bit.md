@@ -1,7 +1,7 @@
 ---
 permalink: installing-active-directory-domain-services-on-windows-server-2008-r2-enterprise-64-bit/
-node_id: 356
-title: Installing Active Directory Domain Services on Windows Server 2008 R2 Enterprise 64-bit
+audit_date:
+title: Install Active Directory Domain Services on Windows Server 2008 R2 Enterprise 64-bit
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

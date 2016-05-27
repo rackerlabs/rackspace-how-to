@@ -1,12 +1,12 @@
 ---
 permalink: using-cidr-notation-in-cloud-networks/
-node_id: 2164
+audit_date:
 title: Using CIDR notation in Cloud Networks
 type: article
 created_date: '2012-09-17'
 created_by: David Hendler
-last_modified_date: '2016-01-20'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-05-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -44,7 +44,7 @@ and click **Create Network**.
 Here's an example of the Create Network popover in the Cloud Control
 Panel. Note the CIDR field is pre-populated with an IP address range:
 
-<img src="{% asset_path cloud-networks/using-cidr-notation-in-cloud-networks/CreateNetworkCIDRExample2.png %}" alt="CIDR" width="493" height="312" />
+<img src="{% asset_path cloud-networks/using-cidr-notation-in-cloud-networks/create-network-ip-address.png %}" alt="CIDR" width="" height="312" />
 
 For complete instructions on how to create a Cloud Network using the
 Cloud Control Panel see [Create an Isolated Cloud Network and attach it

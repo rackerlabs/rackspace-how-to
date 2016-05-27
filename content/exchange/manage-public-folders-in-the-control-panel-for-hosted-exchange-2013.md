@@ -1,6 +1,6 @@
 ---
 permalink: manage-public-folders-in-the-control-panel-for-hosted-exchange-2013/
-node_id: 4463
+audit_date:
 title: Manage public folders in the control panel for Hosted Exchange 2013 and 2016
 type: article
 created_date: '2014-12-14'

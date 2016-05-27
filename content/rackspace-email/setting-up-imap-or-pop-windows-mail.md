@@ -1,6 +1,6 @@
 ---
 permalink: setting-up-imap-or-pop-windows-mail/
-node_id: 84
+audit_date:
 title: Set up IMAP or POP for Windows Mail
 type: article
 created_date: '2011-03-09'

@@ -1,6 +1,6 @@
 ---
 permalink: associate-a-cloud-account-with-rackconnect-v30/
-node_id: 4679
+audit_date:
 title: Associate a cloud account with RackConnect v3.0
 type: article
 created_date: '2015-05-14'

@@ -1,7 +1,7 @@
 ---
 permalink: installing-mysql-server-on-centos/
-node_id: 1164
-title: Installing MySQL Server on CentOS
+audit_date:
+title: Install MySQL Server on CentOS
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
@@ -32,7 +32,7 @@ extensions for PHP. Check your application documentation for details.
 **Note:** CentOS 7 has replaced MySQL with MariaDB. To reflect this,
 instructions for MariaDB procedures are included in this article.
 
-### Installing the database application
+### Install the database application
 
 Follow the steps below to install the database core server.
 

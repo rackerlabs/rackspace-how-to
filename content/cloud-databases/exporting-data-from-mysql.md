@@ -1,6 +1,6 @@
 ---
 permalink: exporting-data-from-mysql/
-node_id: 1505
+audit_date:
 title: Export Data from MySQL
 type: article
 created_date: '2012-07-24'

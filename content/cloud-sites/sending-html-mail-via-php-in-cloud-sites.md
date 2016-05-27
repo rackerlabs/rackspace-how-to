@@ -1,7 +1,7 @@
 ---
 permalink: sending-html-mail-via-php-in-cloud-sites/
-node_id: 3838
-title: Sending HTML Mail via PHP in Cloud Sites
+audit_date:
+title: Send HTML Mail via PHP in Cloud Sites
 type: article
 created_date: '2013-12-18'
 created_by: Bryon Farris
@@ -13,7 +13,9 @@ product_url: cloud-sites
 
 **Note:** This article is an expansion of an existing article regarding basic SMTP authentication with PHP, which can be found [here](/how-to/test-php-smtp-functionality).
 
-Within the Cloud Sites environment, it is possible to craft an HTML formatted email message for delivery when using SMTP authentication for delivery by making use of the built in Mail_Mime function provided by the PHP Pear framework.
+Within the Cloud Sites environment, it is possible to craft an HTML formatted email message 
+for delivery when using SMTP authentication for delivery by making use of the built in 
+Mail_Mime function provided by the PHP Pear framework.
 
 ### Sending HTML Enabled Mail via SMTP
 
@@ -30,7 +32,11 @@ The following variables will need to be adjusted as needed:
 -  $username
 -  $password
 
-The code below requires that you supply a valid SMTP hostname along with user credentials for authenticating against. If using a third party mail service, you will need to replace mail.emailsrvr.com with the appropriate SMTP server hostname relative to the service you are employing. The code also allows for the attachment of files from your Cloud Sites filesystem to the message, as long as a valid MIME type definition is supplied.
+The code below requires that you supply a valid SMTP hostname along with user credentials 
+for authenticating against. If using a third party mail service, you will need to replace 
+mail.emailsrvr.com with the appropriate SMTP server hostname relative to the service you 
+are employing. The code also allows for the attachment of files from your Cloud Sites 
+filesystem to the message, as long as a valid MIME type definition is supplied.
 
 ```
 <?php

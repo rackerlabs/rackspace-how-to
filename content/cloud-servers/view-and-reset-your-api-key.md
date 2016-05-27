@@ -1,6 +1,6 @@
 ---
 permalink: view-and-reset-your-api-key/
-node_id: 3288
+audit_date:
 title: View and reset your API key
 type: article
 created_date: '2013-02-05'

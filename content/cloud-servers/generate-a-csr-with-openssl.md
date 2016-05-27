@@ -1,6 +1,6 @@
 ---
 permalink: generate-a-csr-with-openssl/
-node_id: 345
+audit_date:
 title: Generate a CSR with OpenSSL
 type: article
 created_date: '2011-03-16'

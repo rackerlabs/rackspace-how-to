@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-sites-how-to-add-a-new-website/
-node_id: 1132
+audit_date:
 title: 'Getting Started With Cloud Sites: How To Add A New Website'
 type: article
 created_date: '2011-06-15'

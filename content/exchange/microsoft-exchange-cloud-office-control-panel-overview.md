@@ -1,6 +1,6 @@
 ---
 permalink: cloud-office-control-panel-overview/
-node_id: 1404
+audit_date:
 title: Cloud Office Control Panel overview
 type: article
 created_date: '2012-05-23'

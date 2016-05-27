@@ -1,6 +1,6 @@
 ---
 permalink: using-the-myrackspace-firewall-manager/
-node_id: 4763
+audit_date:
 title: MyRackspace Firewall Manager
 type: article
 created_date: '2015-07-28'

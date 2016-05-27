@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-directory-sync-administrators-guide/
-node_id: 3433
+audit_date:
 title: 'Rackspace Directory Sync Administration Guide'
 type: article
 created_date: '2013-04-25'

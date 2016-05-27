@@ -1,6 +1,6 @@
 ---
 permalink: load-balancing-internal-ips-in-the-same-region/
-node_id: 1527
+audit_date:
 title: Load Balancing Internal IPs in the same region
 type: article
 created_date: '2012-07-24'

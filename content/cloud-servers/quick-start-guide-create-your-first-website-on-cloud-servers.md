@@ -1,12 +1,12 @@
 ---
 permalink: quick-start-guide-create-your-first-website-on-cloud-servers/
-node_id: 3768
-title: Quick start guide - Create your first website on Cloud Servers
+audit_date:
+title: Create your first website on Cloud Servers Quickly
 type: article
 created_date: '2013-11-11'
 created_by: David Hendler
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Coste
+last_modified_date: '2016-05-16'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -99,10 +99,6 @@ Apache web server package to turn the server into a web server.
     more power, you want to select a "bigger" Cloud Server, so you
     select a higher capacity flavor. Because this is a test server, save
     some money and select the 1 GB General Purpose flavor.
-
-    Use the slider to select the flavor.
-
-    <img src="{% asset_path cloud-servers/quick-start-guide-create-your-first-website-on-cloud-servers/3768.6.png %}" width="550" height="442" />
 
 6.  Click **Create Server**.
 

@@ -1,7 +1,7 @@
 ---
 permalink: installing-an-ssl-certificate-on-apache/
-node_id: 360
-title: Installing an SSL certificate on Apache
+audit_date:
+title: Install an SSL certificate on Apache
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

@@ -1,6 +1,6 @@
 ---
 permalink: system-disk-and-data-disk-faq/
-node_id: 3718
+audit_date:
 title: System Disk and Data Disk FAQ
 type: article
 created_date: '2013-10-02'

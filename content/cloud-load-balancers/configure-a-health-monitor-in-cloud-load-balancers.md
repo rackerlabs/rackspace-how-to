@@ -1,6 +1,6 @@
 ---
 permalink: configure-a-health-monitor-in-cloud-load-balancers/
-node_id: 1492
+audit_date:
 title: Configure a health monitor in Cloud Load Balancers
 type: article
 created_date: '2012-07-24'

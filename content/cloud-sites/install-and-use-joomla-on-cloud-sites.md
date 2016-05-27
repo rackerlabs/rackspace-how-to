@@ -1,6 +1,6 @@
 ---
 permalink: install-and-use-joomla-on-cloud-sites/
-node_id: 671
+audit_date:
 title: Install and use Joomla on Cloud Sites
 type: article
 created_date: '2011-03-16'

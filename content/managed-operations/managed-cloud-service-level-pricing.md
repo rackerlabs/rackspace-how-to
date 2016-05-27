@@ -1,6 +1,6 @@
 ---
 permalink: managed-cloud-service-level-pricing/
-node_id: 4120
+audit_date:
 title: Managed Cloud Service level pricing
 type: article
 created_date: '2014-07-01'

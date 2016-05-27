@@ -1,7 +1,7 @@
 ---
 permalink: using-python-novaclient-with-the-rackspace-cloud/
-node_id: 1484
-title: Python-novaclient and the Rackspace Cloud
+audit_date:
+title: Using the python-novaclient with Rackspace Cloud Servers
 type: article
 created_date: '2012-07-23'
 created_by: Jered Heeschen
@@ -12,7 +12,7 @@ product_url: cloud-servers
 ---
 
 Python-novaclient is a command-line client for controlling OpenStack
-instances.  Since the next generation of Cloud Servers is based on
+cloud server instances.  Since the next generation of Cloud Servers is based on
 OpenStack, python-novaclient will work with Cloud Servers as well. The
 client provides a bit more functionality than the control panel without
 needing to delve into the API directly.

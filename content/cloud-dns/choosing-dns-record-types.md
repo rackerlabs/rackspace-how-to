@@ -1,6 +1,6 @@
 ---
 permalink: choosing-dns-record-types/
-node_id: 1503
+audit_date:
 title: Choosing DNS record types
 type: article
 created_date: '2012-07-24'

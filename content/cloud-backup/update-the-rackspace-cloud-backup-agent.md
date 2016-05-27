@@ -1,6 +1,6 @@
 ---
 permalink: update-the-rackspace-cloud-backup-agent/
-node_id: 3255
+audit_date:
 title: Manually update the Rackspace Cloud Backup agent
 type: article
 created_date: '2013-01-08'

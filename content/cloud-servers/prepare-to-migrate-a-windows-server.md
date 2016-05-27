@@ -1,6 +1,6 @@
 ---
 permalink: prepare-to-migrate-a-windows-server/
-node_id: 4489
+audit_date:
 title: Prepare to migrate a Windows server
 type: article
 created_date: '2015-01-22'

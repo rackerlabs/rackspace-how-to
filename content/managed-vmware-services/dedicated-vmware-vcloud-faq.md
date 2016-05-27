@@ -1,6 +1,6 @@
 ---
 permalink: dedicated-vmware-vcloud-faq/
-node_id: 4512
+audit_date:
 title: Rackspace Private Cloud Powered by VMware vCloud FAQ
 type: article
 created_date: '2015-01-29'

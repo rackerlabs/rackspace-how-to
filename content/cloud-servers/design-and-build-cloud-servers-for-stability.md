@@ -1,6 +1,6 @@
 ---
 permalink: design-and-build-cloud-servers-for-stability/
-node_id: 3818
+audit_date:
 title: Design and Build Cloud Servers for Stability
 type: article
 created_date: '2013-12-17'

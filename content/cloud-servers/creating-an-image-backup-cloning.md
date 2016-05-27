@@ -1,7 +1,7 @@
 ---
 permalink: creating-an-image-backup-cloning/
-node_id: 3297
-title: Creating an image backup (cloning)
+audit_date:
+title: Create an image backup (cloning)
 type: article
 created_date: '2013-02-12'
 created_by: Renee Rendon

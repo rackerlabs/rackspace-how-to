@@ -1,6 +1,6 @@
 ---
 permalink: cloud-storage-app-for-microsoft-sharepoint-overview/
-node_id: 3503
+audit_date:
 title: 'Cloud Storage App for Microsoft SharePoint: Overview'
 type: article
 created_date: '2013-06-04'

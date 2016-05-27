@@ -1,7 +1,7 @@
 ---
 permalink: how-to-add-linux-user-with-document-root-permissions/
-node_id: 1259
-title: How to Add Linux User With Document Root Permissions
+audit_date:
+title: Add a Linux User With Document Root Permissions
 type: article
 created_date: '2011-11-23'
 created_by: Rackspace Support
@@ -11,15 +11,21 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article will walk you through setting up a Linux user with read and write permissions for your web document root, usually the **/var/www/** directory. Connecting with this user via SFTP will let you upload your website content directly to the **/var/www/your/site/folder**.
+This article will walk you through setting up a Linux user with read and write permissions 
+for your web document root, usually the **/var/www/** directory. Connecting with this user 
+via SFTP will let you upload your website content directly to the **/var/www/your/site/folder**.
 
-For the purposes of this example we'll use an account named "demo". Be sure to replace "demo" in the examples with your preferred name.
+For the purposes of this example we'll use an account named "demo". Be sure to replace "demo" 
+in the examples with your preferred name.
 
-These commands require superuser privileges so they assume you are running them from an account with sudo privileges.
+These commands require superuser privileges so they assume you are running them from an 
+account with sudo privileges.
 
 ### Getting the group and directory
 
-We'll need to know the group the web server process is running under as well as the location of your web server's document root. This information can usually be found in the web server's config file (like httpd.conf or apache2.conf for apache).
+We'll need to know the group the web server process is running under as well as the location 
+of your web server's document root. This information can usually be found in the web server's 
+config file (like httpd.conf or apache2.conf for apache).
 
 We've listed the default values for the apache web server running on some Linux distributions below.
 
@@ -37,7 +43,8 @@ Now we can either create a new user or modify an existing user for our purposes.
 
 #### Creating a new user
 
-If we're creating a new user, we'll want it to be in the same group as the web server with its home directory set to your document root.
+If we're creating a new user, we'll want it to be in the same group as the web server with 
+its home directory set to your document root.
 
 Remember to change the values to match your web server's settings and the username you're using.
 
@@ -93,7 +100,9 @@ And on Ubuntu or Debian:
 
 #### Setting the permissions
 
-Next we make the document root group-writable, but we'll also want to set the "setgid" permission on the document root directory itself. The setgid permission will ensure that new files created in the document root will inherit the group ID from their parent directory.
+Next we make the document root group-writable, but we'll also want to set the "setgid" 
+permission on the document root directory itself. The setgid permission will ensure that new 
+files created in the document root will inherit the group ID from their parent directory.
 
 On CentOS, Fedora, or RHEL you can set the right permissions with the commands:
 
@@ -107,4 +116,6 @@ The Ubuntu and Debian versions of the commands would be:
 
 ### Connect and test
 
-Now you can connect to your server via sftp with the user account you created or modified. Try uploading a file to make sure the permissions were set correctly. If you get a permission denied error run an "ls -la" in the document root to check the directory permissions.
+Now you can connect to your server via sftp with the user account you created or modified. 
+Try uploading a file to make sure the permissions were set correctly. If you get a permission 
+denied error run an "ls -la" in the document root to check the directory permissions.

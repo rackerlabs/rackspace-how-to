@@ -1,6 +1,6 @@
 ---
 permalink: transfer-your-registered-domain-from-click-and-name-to-another-registrar/
-node_id: 3726
+audit_date:
 title: Transfer your registered domain from Click and Name to another registrar
 type: article
 created_date: '2013-10-11'

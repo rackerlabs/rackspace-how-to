@@ -1,19 +1,18 @@
 ---
 permalink: upcoming-deprecation-of-resource-rackspacecloudserver-for-cloud-orchestration/
-node_id: 4758
-title: 'Upcoming deprecation of resource Rackspace::Cloud::Server for Cloud Orchestration'
+audit_date:
+title: 'Deprecated resource Rackspace::Cloud::Server for Cloud Orchestration'
 type: article
 created_date: '2015-07-24'
 created_by: Mike Asthalter
-last_modified_date: '2016-01-27'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-05-02'
+last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
 
 Rackspace hereby announces the full deprecation of the
-Rackspace Cloud Server resource in Cloud Orchestration as of November 1,
-2015. As of this date, Rackspace will automatically map references
+Rackspace Cloud Server resource in Cloud Orchestration as of November 1, 2015. As of this date, Rackspace will automatically map references
 to Rackspace Cloud Server to refer to OS Nova Server instead. This means
 that after deprecation, while the references to Rackspace Cloud Server
 are automatically remapped, using Rackspace Cloud Server will be the
@@ -32,10 +31,7 @@ You may be impacted if you are using custom-built Heat templates, or if
 you have modified any of our pre-built Rackspace templates to suit your
 needs. Please continue to read this article.
 
-
-
-
-### Why is Rackspace doing this? ###
+### Why is Rackspace doing this?
 
 Rackspace Cloud Server was intended as a stopgap to accommodate the
 initial lack of support for Cloud Init on Rackspace Public Cloud as well
@@ -48,9 +44,7 @@ possible. To this end, by moving away from Rackspace Cloud Server and
 adopting OS Nova Server, the service becomes more consistent with this
 goal.
 
-
-
-### What are the key behavioral changes? ###
+### What are the key behavioral changes?
 
 OS::Nova::Server will not provide the following capabilities
 that Rackspace Cloud Server provides by default:
@@ -61,8 +55,7 @@ that Rackspace Cloud Server provides by default:
 3.  The pre-assigned server admin password could be retrieved without
     any additional instrumentation.
 
-
-### What do I need to do to accommodate this change? Are there workarounds to mimic past behavior? ###
+### What do I need to do to accommodate this change? Are there workarounds to mimic past behavior?
 
 If you are already using OS Nova Server successfully in your templates,
 and the above three behavioral changes don't impact your use case, you
@@ -106,8 +99,6 @@ functionalities, the workarounds are described below.
     create the password. An example template snippet of how this would
     work is shown below:
 
-
-
     heat_template_version: '2013-05-23'
 
         outputs:
@@ -140,14 +131,10 @@ functionalities, the workarounds are described below.
 
             type: OS::Nova::Server
 
-
-
 The mechanism shown above can be used to set and retrieve the admin
 password instead of the way it was used earlier with
 Rackspace Cloud Server. As mentioned earlier, the *technique shown below
 will not* work after deprecation is complete.
-
-
 
     heat_template_version: '2013-05-23'
 
@@ -171,9 +158,7 @@ will not* work after deprecation is complete.
 
             type: Rackspace::Cloud::Server
 
-
-
-### Further questions? ###
+### Further questions?
 
 Contact Rackspace via normal support channels and ask for help with the
 Orchestration service, with using Heat templates, or to voice any

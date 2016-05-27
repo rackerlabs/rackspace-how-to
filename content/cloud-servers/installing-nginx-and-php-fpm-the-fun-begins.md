@@ -1,6 +1,6 @@
 ---
 permalink: installing-nginx-and-php-fpm-the-fun-begins/
-node_id: 1317
+audit_date:
 title: Installing NGINX and PHP-FPM  - The Fun Begins
 type: article
 created_date: '2012-03-13'

@@ -1,6 +1,6 @@
 ---
 permalink: using-cdn-edge-purge/
-node_id: 1249
+audit_date:
 title: Using CDN Edge Purge
 type: article
 created_date: '2011-11-10'

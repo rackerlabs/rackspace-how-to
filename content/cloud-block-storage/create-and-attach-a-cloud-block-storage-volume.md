@@ -1,6 +1,6 @@
 ---
 permalink: create-and-attach-a-cloud-block-storage-volume/
-node_id: 3134
+audit_date:
 title: Create and attach a Cloud Block Storage volume
 type: article
 created_date: '2012-10-22'

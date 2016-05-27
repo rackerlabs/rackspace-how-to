@@ -1,6 +1,6 @@
 ---
 permalink: billing-services-overview/
-node_id: 1196
+audit_date:
 title: Billing Services Overview
 type: article
 created_date: '2011-08-24'

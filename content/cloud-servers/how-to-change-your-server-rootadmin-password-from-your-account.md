@@ -1,12 +1,12 @@
 ---
 permalink: how-to-change-your-server-rootadmin-password-from-your-account/
-node_id: 4786
-title: How to change your server root/admin password from your account
+audit_date:
+title: Change your server root/admin password from your account
 type: article
 created_date: '2015-08-13'
 created_by: Nate Archer
-last_modified_date: '2015-08-13'
-last_modified_by: Nate Archer
+last_modified_date: '2015-05-16'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -21,10 +21,10 @@ of cloud servers:
     available actions.
 4.  From the drop-down menu, click **Change Password** to open space to
     enter the password.
-
-  <img src="{% asset_path cloud-servers/how-to-change-your-server-rootadmin-password-from-your-account/Screen%2520Shot%25202015-08-11%2520at%25201.14.10%2520PM.png %}" alt="" />
-
+   
+   <img src="{% asset_path cloud-servers/how-to-change-your-server-rootadmin-password-from-your-account/Screen%2520Shot%25202015-08-11%2520at%25201.14.10%2520PM.png %}" alt="" />
+   
 5.  In the blank space under New Root Admin Password, type the new
     password and click **Change Password.** 
-
-    <img src="{% asset_path cloud-servers/how-to-change-your-server-rootadmin-password-from-your-account/Screen%2520Shot%25202015-08-11%2520at%25201.16.28%2520PM.png %}" alt="" />
+   
+   <img src="{% asset_path cloud-servers/how-to-change-your-server-rootadmin-password-from-your-account/Screen%2520Shot%25202015-08-11%2520at%25201.16.28%2520PM.png %}" alt="" />

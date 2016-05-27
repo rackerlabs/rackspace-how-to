@@ -1,6 +1,6 @@
 ---
 permalink: cloud-big-data-platform-provisioning-and-pricing/
-node_id: 4063
+audit_date:
 title: Cloud Big Data Platform provisioning and pricing
 type: article
 created_date: '2014-05-07'

@@ -1,7 +1,7 @@
 ---
 permalink: creating-a-monitoring-check-using-the-cloud-control-panel/
-node_id: 2010
-title: Creating a monitoring check using the Cloud Control Panel
+audit_date:
+title: Create a monitoring check using the Cloud Control Panel
 type: article
 created_date: '2012-08-15'
 created_by: Susan Million

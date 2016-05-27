@@ -1,6 +1,6 @@
 ---
 permalink: best-practices-for-using-cloud-files/
-node_id: 1269
+audit_date:
 title: Best Practices for Using Cloud Files
 type: article
 created_date: '2012-01-05'

@@ -1,6 +1,6 @@
 ---
 permalink: cloud-networks-faq/
-node_id: 3717
+audit_date:
 title: Cloud Networks - FAQ
 type: article
 created_date: '2013-10-02'

@@ -1,6 +1,6 @@
 ---
 permalink: installing-nginx-and-php-fpm-running-on-unix-file-sockets/
-node_id: 1315
+audit_date:
 title: Installing NGINX and PHP-FPM running on UNIX File Sockets
 type: article
 created_date: '2012-03-12'

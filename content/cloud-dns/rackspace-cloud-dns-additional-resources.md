@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-dns-additional-resources/
-node_id: 1235
+audit_date:
 title: Rackspace Cloud DNS - Additional Resources
 type: article
 created_date: '2011-10-19'

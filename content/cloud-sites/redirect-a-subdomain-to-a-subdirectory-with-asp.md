@@ -1,6 +1,6 @@
 ---
 permalink: redirect-a-subdomain-to-a-subdirectory-with-asp/
-node_id: 665
+audit_date:
 title: Redirect a subdomain to a subdirectory with ASP
 type: article
 created_date: '2011-03-16'

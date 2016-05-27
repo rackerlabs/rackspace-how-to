@@ -1,6 +1,6 @@
 ---
 permalink: importing-data-into-cloud-databases/
-node_id: 1504
+audit_date:
 title: Import data into Cloud Databases
 type: article
 created_date: '2012-07-24'

@@ -1,6 +1,6 @@
 ---
 permalink: ftp-snapshot/
-node_id: 547
+audit_date:
 title: FTP Snapshot
 type: article
 created_date: '2011-03-16'

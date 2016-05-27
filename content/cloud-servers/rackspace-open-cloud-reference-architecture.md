@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-open-cloud-reference-architecture/
-node_id: 1945
+audit_date:
 title: Rackspace Open Cloud Reference Architecture
 type: article
 created_date: '2012-08-10'

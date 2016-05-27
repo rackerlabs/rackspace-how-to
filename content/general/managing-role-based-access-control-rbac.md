@@ -1,7 +1,7 @@
 ---
 permalink: managing-role-based-access-control-rbac/
-node_id: 3567
-title: 'Managing: Role-Based Access Control (RBAC)'
+audit_date:
+title: Use Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-06-28'
 created_by: Renee Rendon

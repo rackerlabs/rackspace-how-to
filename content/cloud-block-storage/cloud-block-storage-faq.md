@@ -1,12 +1,12 @@
 ---
 permalink: cloud-block-storage-faq/
-node_id: 5022
+audit_date:
 title: Cloud Block Storage FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-27'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-05-25'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -252,9 +252,4 @@ overwritten with zeroes before the deleted volume's disk space is
 reallocated to the shared pool of disk resources. At this point, your
 data cannot be recovered and is not visible to other customers.
 
-#### What happens to my data when I delete a Cloud Block Storage volume?
 
-For your security, the used portions of the physical disk are
-overwritten with zeroes before the deleted volume's disk space is
-reallocated to the shared pool of disk resources. At this point, your
-data cannot be recovered and is not visible to other customers.

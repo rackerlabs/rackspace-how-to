@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-hosted-email-system-daily-sending-limit/
-node_id: 4556
+audit_date:
 title: Daily sending limit for Rackspace hosted email systems
 type: article
 created_date: '2015-02-10'

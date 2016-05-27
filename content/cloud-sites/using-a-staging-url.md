@@ -1,7 +1,7 @@
 ---
 permalink: using-a-staging-url/
-node_id: 700
-title: Using a staging URL
+audit_date:
+title: Use a staging URL
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

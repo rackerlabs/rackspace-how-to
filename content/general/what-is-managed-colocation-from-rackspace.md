@@ -1,7 +1,7 @@
 ---
 permalink: what-is-managed-colocation-from-rackspace/
-node_id: 1042
-title: What is Managed Colocation from Rackspace?
+audit_date:
+title: Rackspace Managed Colocation
 type: article
 created_date: '2011-03-25'
 created_by: Rackspace Support

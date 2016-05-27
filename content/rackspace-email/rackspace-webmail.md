@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-webmail/
-node_id: 1422
+audit_date:
 title: Rackspace Webmail overview
 type: article
 created_date: '2012-05-27'

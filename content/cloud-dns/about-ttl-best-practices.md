@@ -1,6 +1,6 @@
 ---
 permalink: about-ttl-best-practices/
-node_id: 1518
+audit_date:
 title: Best practices for using TTL
 type: article
 created_date: '2012-07-23'

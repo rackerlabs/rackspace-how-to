@@ -1,6 +1,6 @@
 ---
 permalink: comparison-of-dedicated-and-cloud-hosting/
-node_id: 1292
+audit_date:
 title: Comparison of dedicated and cloud hosting
 type: article
 created_date: '2012-02-21'

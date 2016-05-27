@@ -1,6 +1,6 @@
 ---
 permalink: understanding-logrotate-utility/
-node_id: 1260
+audit_date:
 title: Understanding logrotate utility
 type: article
 created_date: '2011-11-23'

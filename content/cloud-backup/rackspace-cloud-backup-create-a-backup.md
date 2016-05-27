@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-backup-create-a-backup/
-node_id: 2038
+audit_date:
 title: Create a backup
 type: article
 created_date: '2012-08-22'

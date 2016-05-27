@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-cloud-server-image-limitations/
-node_id: 1177
+audit_date:
 title: Rackspace Cloud Essentials - Cloud Server Image Limitations
 type: article
 created_date: '2011-08-05'

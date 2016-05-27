@@ -1,6 +1,6 @@
 ---
 permalink: migrating-a-net-application-from-amazon-web-services/
-node_id: 3587
+audit_date:
 title: Migrate a .NET application from Amazon Web Services
 type: article
 created_date: '2013-07-02'

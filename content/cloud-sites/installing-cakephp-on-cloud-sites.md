@@ -1,7 +1,7 @@
 ---
 permalink: installing-cakephp-on-cloud-sites/
-node_id: 125
-title: Installing CakePHP on Cloud Sites
+audit_date:
+title: Install CakePHP on Cloud Sites
 type: article
 created_date: '2011-03-14'
 created_by: Rackspace Support
@@ -13,8 +13,7 @@ product_url: cloud-sites
 
 **Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
-This article will show you how to install CakePHP 1.2.x onto your site
-with Cloud Sites.
+This article will show you how to install CakePHP 1.2.x onto your site with Cloud Sites.
 
 ### Prerequisites
 

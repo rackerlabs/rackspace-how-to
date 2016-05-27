@@ -1,6 +1,6 @@
 ---
 permalink: numa-vnuma-and-cpu-scheduling/
-node_id: 5135
+audit_date:
 title: 'NUMA, VNUMA and CPU Scheduling'
 type: article
 created_date: '2016-01-18'

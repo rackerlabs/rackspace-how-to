@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-cloud-block-storage/
-node_id: 3394
+audit_date:
 title: Permissions matrix for Cloud Block Storage
 type: article
 created_date: '2013-04-10'

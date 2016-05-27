@@ -1,6 +1,6 @@
 ---
 permalink: monitoring-cloud-databases-in-the-cloud-control-panel/
-node_id: 4019
+audit_date:
 title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'

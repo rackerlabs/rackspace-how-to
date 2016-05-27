@@ -1,6 +1,6 @@
 ---
 permalink: identifying-rackspace-standard-images/
-node_id: 3853
+audit_date:
 title: Identifying Rackspace Standard Images
 type: article
 created_date: '2014-01-14'

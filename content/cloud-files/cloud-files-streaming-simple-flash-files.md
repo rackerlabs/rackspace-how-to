@@ -1,6 +1,6 @@
 ---
 permalink: cloud-files-streaming-simple-flash-files/
-node_id: 77
+audit_date:
 title: Cloud Files - Streaming simple Flash files
 type: article
 created_date: '2011-03-08'

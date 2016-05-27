@@ -1,6 +1,6 @@
 ---
 permalink: brocade-vyatta-vrouter-supported-actions-through-the-cloud-control-panel/
-node_id: 3480
+audit_date:
 title: 'Brocade Vyatta vRouter: Supported actions through the Cloud Control Panel'
 type: article
 created_date: '2013-05-24'

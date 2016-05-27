@@ -1,6 +1,6 @@
 ---
 permalink: retrieve-the-csr-for-a-site-already-using-ssl/
-node_id: 4402
+audit_date:
 title: Retrieve the CSR for a site already using SSL
 type: article
 created_date: '2014-11-10'

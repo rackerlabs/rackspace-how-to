@@ -1,6 +1,6 @@
 ---
 permalink: deploying-rackspace-metrics/
-node_id: 4553
+audit_date:
 title: Integrate StatsD with Rackspace Metrics
 type: article
 created_date: '2015-02-05'

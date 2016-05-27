@@ -1,6 +1,6 @@
 ---
 permalink: known-issues-and-suggested-workarounds-role-based-access-control-rbac/
-node_id: 3648
+audit_date:
 title: 'Known Issues and Suggested Workarounds: Role-Based Access Control (RBAC)'
 type: article
 created_date: '2013-08-16'

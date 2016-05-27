@@ -1,6 +1,6 @@
 ---
 permalink: cloud-backup-troubleshooting/
-node_id: 4732
+audit_date:
 title: Cloud Backup troubleshooting
 type: article
 created_date: '2015-06-29'
@@ -164,7 +164,7 @@ The agent logs are stored, by default, in the following directories:
 
     The **C:\\ProgramData\\DriveClient** directory can be changed, based on the installer or through the **AgentConfig.exe** executable.
 
--   (Linux) **/var/log/DriveClient.log**
+-   (Linux) **/var/log/driveclient.log**
 
 The only thing that can be manually edited in the **log4cxx.xml** file (log configuration) is the size of the **DriveClient.log** file (`MaxFileSize`) and how many previous versions (`MaxBackupIndex`) are saved before they are deleted. For more information about how to configure this file, see [Cloud Backup agent logging basics](/how-to/cloud-backup-agent-logging-basics).
 

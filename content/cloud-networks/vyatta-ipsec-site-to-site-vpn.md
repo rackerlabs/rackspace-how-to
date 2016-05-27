@@ -1,6 +1,6 @@
 ---
 permalink: vyatta-ipsec-site-to-site-vpn/
-node_id: 4236
+audit_date:
 title: Vyatta IPsec site-to-site VPN
 type: article
 created_date: '2014-09-11'

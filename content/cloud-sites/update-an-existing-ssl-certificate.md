@@ -1,6 +1,6 @@
 ---
 permalink: update-an-existing-ssl-certificate/
-node_id: 1183
+audit_date:
 title: Update an existing SSL certificate
 type: article
 created_date: '2011-08-16'

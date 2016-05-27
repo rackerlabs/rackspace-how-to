@@ -1,6 +1,6 @@
 ---
 permalink: reset-your-server-password/
-node_id: 1477
+audit_date:
 title: Reset Your Server Password
 type: article
 created_date: '2012-07-19'

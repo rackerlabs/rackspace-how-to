@@ -1,7 +1,7 @@
 ---
 permalink: managing-your-server-resizing-standard-and-general-purpose-servers/
-node_id: 1476
-title: Managing your server - resizing standard and general purpose servers
+audit_date:
+title: Manage your server - resizing standard and general purpose servers
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
@@ -26,24 +26,24 @@ resized up or down. General Purpose Servers can only be resized up.
 
     <img src="{% asset_path cloud-servers/managing-your-server-resizing-standard-and-general-purpose-servers/8_Resizenew.png %}" alt="" />
 
--   You will see a pop-up window listing your server size options. Each
+-   Notice the pop-up window listing your server size options. Each
     server size has a different hourly cost for uptime, and the new cost
     goes into effect when the server resize process is completed. This
-    could mean that you will pay different rates for the same server
+    could mean that you pay different rates for the same server
     within a given billing cycle. Press the **Resize Server** button
     to begin.
 
     <img src="{% asset_path cloud-servers/managing-your-server-resizing-standard-and-general-purpose-servers/9_ResizeProcessnew.png %}" alt="" />
 
--   Next you will choose your new **Server Size**. Each server size has
+-   Next, choose your new **Server Size**. Each server size has
     a different hourly cost for uptime, and the new cost goes into
     effect when the server resize process is completed. This could mean
-    that you will pay different rates for the same server within a given
+    that you pay different rates for the same server within a given
     billing cycle. Note that Windows servers cannot be resized down, so
-    smaller sizes will be grayed out. Press the **Resize** button
+    smaller sizes are grayed out. Press the **Resize** button
     to begin.
 
--   You will see the **Status** change on the server details screen
+-   Notice the **Status** change on the server details screen
     throughout the Resize process, going through modes such
     as *Preparing* and *Queueing for Resize*.
 

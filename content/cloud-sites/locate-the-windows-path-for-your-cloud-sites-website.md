@@ -1,6 +1,6 @@
 ---
 permalink: locate-the-windows-path-for-your-cloud-sites-website/
-node_id: 619
+audit_date:
 title: Locate the Windows path for your Cloud Sites website
 type: article
 created_date: '2011-03-16'

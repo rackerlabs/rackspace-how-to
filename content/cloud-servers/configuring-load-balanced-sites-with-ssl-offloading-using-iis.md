@@ -1,7 +1,7 @@
 ---
 permalink: configuring-load-balanced-sites-with-ssl-offloading-using-iis/
-node_id: 3229
-title: Configuring Load Balanced Sites with SSL offloading using IIS
+audit_date:
+title: Configure Load Balanced Sites with SSL offloading using IIS
 type: article
 created_date: '2012-12-03'
 created_by: Rae D. Cabello

@@ -1,12 +1,12 @@
 ---
 permalink: first-gen-to-next-gen-cloud-servers-migration-pre-checks/
-node_id: 4681
+audit_date:
 title: First Gen to Next Gen Cloud Servers migration pre-checks
 type: article
 created_date: '2015-05-15'
 created_by: David Hendler
-last_modified_date: '2016-01-14'
-last_modified_by: Rose Coste
+last_modified_date: '2016-05-10'
+last_modified_by: Aaron Davis
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -102,13 +102,13 @@ The results for this check are pass/fail.
 
 If this check fails, the drivers must be reinstalled before your
 migration window. For Linux distributions, run the following script to
-install or update these drivers:
+install or update these drivers.  This action needs to be completed by
+a user with sudo access or as the user root:
 
-    wget http://437117ba0e2524fdae22-6a87f3acbfcde81a104bb18fbb8cb85f.r47.cf2.rackcdn.com/xen_tools_installer.sh; <br>
-    chmod u+x xen_tools_installer.sh; bash xen_tools_installer.sh; rm -rf xen_tools_installer.sh
+    sudo curl http://437117ba0e2524fdae22-6a87f3acbfcde81a104bb18fbb8cb85f.r47.cf2.rackcdn.com/xen_tools_installer.sh | bash
 
 For Gentoo, Arch, and FreeBSD, or if this installer fails, you must
-install these drivers manually.
+install these drivers manually.  
 
 ### Nova agent check
 

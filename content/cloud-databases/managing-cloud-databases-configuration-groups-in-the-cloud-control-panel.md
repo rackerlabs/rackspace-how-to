@@ -1,6 +1,6 @@
 ---
 permalink: managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/
-node_id: 4427
+audit_date:
 title: Manage Cloud Databases configuration groups in the Cloud Control Panel
 type: article
 created_date: '2014-11-13'

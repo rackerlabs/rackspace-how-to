@@ -1,7 +1,7 @@
 ---
 permalink: configuring-basic-security/
-node_id: 1501
-title: Configuring basic security
+audit_date:
+title: Configure basic security
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support

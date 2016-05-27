@@ -1,6 +1,6 @@
 ---
 permalink: migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services/
-node_id: 3586
+audit_date:
 title: Migrate an application built on a LAMP stack from Amazon Web Services
 type: article
 created_date: '2013-07-02'

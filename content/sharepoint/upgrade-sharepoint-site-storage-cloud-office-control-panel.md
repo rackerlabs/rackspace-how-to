@@ -1,24 +1,21 @@
 ---
 permalink: upgrade-sharepoint-site-storage-cloud-office-control-panel/
-node_id: 4003
+audit_date:
 title: Upgrade SharePoint site storage in the Cloud Office Control Panel
 type: article
 created_date: '2014-04-10'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-05-17'
+last_modified_by: Stephanie Fillmon
 product: Microsoft SharePoint
 product_url: sharepoint
 ---
 
 The SharePoint service provides 250 MB of storage at no charge. When you
-are ready to upgrade, you can do so in 1 GB increments in your control
-panel.
+are ready to upgrade, you can do so in 1 GB increments in the Cloud Office Control
+Panel.
 
-To upgrade SharePoint storage, [log in to the control
-panel](https://cp.rackspace.com), and perform the following steps:
-
-
+To upgrade SharePoint storage, [log in to the Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
 
 1. At the top of the page, click the **Add Storage** link under **Microsoft SharePoint**.
 

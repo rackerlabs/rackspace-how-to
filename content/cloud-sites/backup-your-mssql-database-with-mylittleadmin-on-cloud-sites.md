@@ -1,6 +1,6 @@
 ---
 permalink: backup-your-mssql-database-with-mylittleadmin-on-cloud-sites/
-node_id: 660
+audit_date:
 title: Backup your MSSQL database with myLittleAdmin on Cloud Sites
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: vyatta-snmp-and-logging/
-node_id: 4804
+audit_date:
 title: Vyatta SNMP and logging
 type: article
 created_date: '2015-08-26'

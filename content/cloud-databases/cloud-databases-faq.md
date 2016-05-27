@@ -1,6 +1,6 @@
 ---
 permalink: cloud-databases-faq/
-node_id: 5026
+audit_date:
 title: Cloud Databases FAQ
 type: article
 created_date: '2015-12-10'

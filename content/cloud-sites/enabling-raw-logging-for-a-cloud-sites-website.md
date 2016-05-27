@@ -1,7 +1,7 @@
 ---
 permalink: enabling-raw-logging-for-a-cloud-sites-website/
-node_id: 545
-title: Enabling raw logging for a Cloud Sites website
+audit_date:
+title: Enable raw logging for a Cloud Sites website
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

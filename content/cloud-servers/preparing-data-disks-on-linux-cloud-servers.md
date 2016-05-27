@@ -1,7 +1,7 @@
 ---
 permalink: preparing-data-disks-on-linux-cloud-servers/
-node_id: 3749
-title: Preparing Data Disks on Linux Cloud Servers
+audit_date:
+title: Prepare Data Disks on Linux Cloud Servers
 type: article
 created_date: '2013-10-31'
 created_by: Jered Heeschen
@@ -11,17 +11,22 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The data disks attached to some flavors of Cloud Servers are unformatted when created. Before you can use them to hold data on Linux, they have to be prepared by formatting them, determining their mount points, and adding them to the system's `fstab` file.
+The data disks attached to some flavors of Cloud Servers are unformatted when created. 
+Before you can use them to hold data on Linux, they have to be prepared by formatting them, 
+determining their mount points, and adding them to the system's `fstab` file.
 
 **Note:** If your server has a data disk attached to it, the data disk will be listed in your server's Details page.
 
-The following is a guide to preparing data disks efficiently for standalone use. To configure two data disks in a software RAID, see [Configuring a software RAID on a Linux General Purpose Cloud Server](/how-to/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
+The following is a guide to preparing data disks efficiently for standalone use. To configure 
+two data disks in a software RAID, see 
+[Configuring a software RAID on a Linux General Purpose Cloud Server](/how-to/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
 
 1. List the volumes attached to your server by running the `fdisk` command.
 
         sudo fdisk -l
 
-    In the volume list, the device `/dev/xvda` is the system disk. Other volumes listed will be your data or Cloud Block Storage disks.
+    In the volume list, the device `/dev/xvda` is the system disk. Other volumes listed will 
+    be your data or Cloud Block Storage disks.
 
 2. To partition the disk, run the `fdisk` utility and specify the disk.
 
@@ -102,7 +107,8 @@ The following is a guide to preparing data disks efficiently for standalone use.
         Using default value 1
         Last cylinder, +cylinders or +size{K,M,G} (1-13054, default 13054):
 
-7. Press **Enter** to select the last cylinder of the disk for the partition to use up the entire disk. The last partition is the default.
+7. Press **Enter** to select the last cylinder of the disk for the partition to use up the 
+   entire disk. The last partition is the default.
 
     Example Output:
 
@@ -125,7 +131,8 @@ The following is a guide to preparing data disks efficiently for standalone use.
 
 9. List the disks on your server again.
 
-    Your data disk is ready as a disk. It was attached at `/dev/xvde` and you created one partition on it, so now your available disk appears at `/dev/xvde1`.
+    Your data disk is ready as a disk. It was attached at `/dev/xvde` and you created one 
+    partition on it, so now your available disk appears at `/dev/xvde1`.
 
     Example Input:
 
@@ -161,7 +168,9 @@ The following is a guide to preparing data disks efficiently for standalone use.
 
 10. Create mount points for each data disk as needed.
 
-    Data disks must be assigned directories as mount points in order for the system to use them for storage. If a data disk is meant to hold a database, for example, its mount point should be the database's storage location (like `/var/lib/mysql`).
+    Data disks must be assigned directories as mount points in order for the system to use 
+    them for storage. If a data disk is meant to hold a database, for example, its mount 
+    point should be the database's storage location (like `/var/lib/mysql`).
 
     If the directory does not yet have an assigned disk, create one with the `mkdir` command.
 
@@ -173,7 +182,8 @@ The following is a guide to preparing data disks efficiently for standalone use.
 
         sudo nano /etc/fstab
 
-    Add a line for each disk listing its device name and partition number with the directory to mount it to, following this format:
+    Add a line for each disk listing its device name and partition number with the directory 
+    to mount it to, following this format:
 
          /dev/xvde1   path/to/directory  ext3    defaults,noatime,nofail      0      0
 
@@ -185,4 +195,5 @@ The following is a guide to preparing data disks efficiently for standalone use.
 
         df -h
 
-    If any disks are missing, check the configuration lines in `/etc/fstab` to make sure the device names and options are correct.
+    If any disks are missing, check the configuration lines in `/etc/fstab` to make sure 
+    the device names and options are correct.

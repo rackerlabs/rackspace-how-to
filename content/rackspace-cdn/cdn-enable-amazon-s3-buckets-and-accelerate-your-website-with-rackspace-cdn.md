@@ -1,6 +1,6 @@
 ---
 permalink: cdn-enable-amazon-s3-buckets-and-accelerate-your-website-with-rackspace-cdn/
-node_id: 4809
+audit_date:
 title: CDN-enable Amazon S3 buckets and accelerate your website with Rackspace CDN
 type: article
 created_date: '2015-09-08'

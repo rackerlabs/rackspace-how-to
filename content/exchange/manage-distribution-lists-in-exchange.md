@@ -1,6 +1,6 @@
 ---
 permalink: manage-distribution-lists-in-exchange/
-node_id: 4440
+audit_date:
 title: Manage distribution lists in Exchange
 type: article
 created_date: '2014-11-18'
@@ -65,7 +65,7 @@ Follow the instructions below for the action you want to perform.
 
 4. To configure the following optional sections, click **Advanced**:
 
-   - **Managers:** Select users who can manage this list through Outlook.
+   - **Members:** Search tool to filter specific users.
 
    - **Senders:** To designate who can send email to this list,
 		 select **Anyone** or **Selected addresses on this domain**.

@@ -1,7 +1,7 @@
 ---
 permalink: getting-started-with-apache-hadoop-on-rackspace-cloud/
-node_id: 3351
-title: Getting Started with Apache Hadoop on Rackspace Cloud
+audit_date:
+title: Get Started with Apache Hadoop on Rackspace Cloud
 type: article
 created_date: '2013-03-18'
 created_by: Alyssa Hurtgen

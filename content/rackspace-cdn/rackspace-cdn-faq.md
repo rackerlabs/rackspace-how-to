@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-faq/
-node_id: 4705
+audit_date:
 title: Rackspace CDN FAQ
 type: article
 created_date: '2015-06-08'
@@ -87,8 +87,6 @@ SLA](http://www.rackspace.com/information/legal/service-level-guarantee-rackspac
 
 See [Rackspace CDN
 pricing](http://www.rackspace.com/cloud/cdn-content-delivery-network).
-
-^[back\\ to\\ top](#top)^
 
 #### Is there a list of approved Certificate Authorities (CAs) for Rackspace CDN?
 

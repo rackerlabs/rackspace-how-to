@@ -1,6 +1,6 @@
 ---
 permalink: linux-server-security-best-practices/
-node_id: 4137
+audit_date:
 title: Linux server security best practices
 type: article
 created_date: '2014-07-16'
