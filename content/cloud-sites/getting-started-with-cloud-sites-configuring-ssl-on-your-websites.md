@@ -102,14 +102,30 @@ vendor might require the following details:
 After you have completed your certificate purchase, you're ready to
 [install the certificate](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
 
-###Special rules for EV and wildcard certificates
+###Special rules for EV and wild card certificates
 
-To properly install an EV or wildcard certificate with Cloud Sites, the certificate will need to be installed to an existing domain on the Cloud Sites account. This will need to be accomplished by doing the following when purchasing the certificate from the seller:
+To properly install an EV or wild card certificate with Cloud Sites, the certificate will need to be installed to an existing domain on the Cloud Sites account. This will need to be accomplished by doing the following when purchasing the certificate from the seller:
 
 1. Create the certificate using the existing domain as the Common Name (CN)
-2. Setup the EV domains or Wildcard domain as the Subject Alternative Name (SAN) 
+2. Setup the EV domains or wild card domain as the Subject Alternative Name (SAN) 
 3. Install the certificate to the existing domain
 4. Point the domains specified in the SAN to use the SSL IP provided.
+
+Example of a correctly configured wild card certificate if the site hosting the certificate is ssl.example.com and other subdomains of example.com are used for the wild card:
+
+    Common Name: ssl.example.com
+    Subject Alternative Names: *.example.com
+    Organization: Example.com
+    Organization Unit: IT
+    Locality: San Antonio
+    State: Texas
+    Country: US
+    Valid From: September 25, 2015
+    Valid To: September 26, 2017
+    Issuer: DigiCert SHA2 High Assurance Server CA, DigiCert Inc 
+    Serial Number: 
+   
+This would install to only ssl.domain.com, which would already be setup on Cloud Sites. Again, the domain can be anything you want to install it to, however it must be installed to the site in the Common Name and be setup in Cloud sites, as the *.example.com entry will not work as an entry to install to.
 
 ### Install the certificate
 
