@@ -102,6 +102,15 @@ vendor might require the following details:
 After you have completed your certificate purchase, you're ready to
 [install the certificate](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
 
+###Special rules for EV and wildcard certificates
+
+To properly install an EV or wildcard certificate with Cloud Sites, the certificate will need to be installed to an existing domain on the Cloud Sites account. This will need to be accomplished by doing the following when purchasing the certificate from the seller:
+
+1. Create the certificate using the existing domain as the Common Name (CN)
+2. Setup the EV domains or Wildcard domain as the Subject Alternative Name (SAN) 
+3. Install the certificate to the existing domain
+4. Point the domains specified in the SAN to use the SSL IP provided.
+
 ### Install the certificate
 
 1.  Log in to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com).
@@ -135,11 +144,6 @@ addresses for your site to complete propagation. If you are managing
 your own DNS, click the **Domain** tab to get your new IP addresses.
 
 ### What to watch for
-
-Currently the Rackspace Cloud does not support wildcard
-certificates--such as **\*.domain.com** or **\*.example.com**. These
-certificates might or might not function as necessary. This feature is
-currently under consideration.
 
 Removing an SSL certificate from a site will change the site's IP
 address in the same way that adding a new certificate changes the IP
