@@ -29,7 +29,7 @@ Before you begin, download the following tools to the *production* server before
 
 ### Create an image of the production server
 
-1. Create an image of the production server that needs the upgrades. This can take less than an hour or multiple hours depending on the size of your server's virtual hard drive. You can find more information about images on the  [Cloud Images FAQ](how-to/cloud-images-faq).
+1. [Create an image] (https://support.rackspace.com/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image/) of the production server that needs the upgrades. This can take less than an hour or multiple hours depending on the size of your server's virtual hard drive. You can find more information about images on the  [Cloud Images FAQ](https://support.rackspace.com/how-to/cloud-images-faq/).
 
 2. Create a new server by using the image that you created.
 
