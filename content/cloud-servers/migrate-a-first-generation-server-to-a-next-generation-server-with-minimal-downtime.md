@@ -5,7 +5,7 @@ title: Migrate a First Gen server to a Next Gen server with minimal downtime
 type: article
 created_date: '2015-08-10'
 created_by: Rackspace Support
-last_modified_date: '2016-05-27'
+last_modified_date: '2016-06-01'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
@@ -112,9 +112,7 @@ After the server has been created, attach it to your load balancer by performing
 
 ### Delete the Load Balancer
 
-When you are done using the load balancer, you can delete it.
-
-From the Actions menu on the load balancer details page, select **Delete Load Balancer**. 
+At this time you can delete the load balancer but you must update the DNS. Optionally, you can keep the load balancer and add a second copy of the server behind it to increase your availability. For more information, see [Tiered configuration using Cloud Load Balancers](https://support.rackspace.com/how-to/tiered-configuration-using-cloud-load-balancers/).
 
 ### Optional synchronization tools
 
