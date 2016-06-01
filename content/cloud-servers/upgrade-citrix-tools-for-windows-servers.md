@@ -5,7 +5,7 @@ title: Upgrade Citrix (XenServer) Tools for Windows cloud servers
 type: article
 created_date: '2016-04-05'
 created_by: Luke Repko
-last_modified_date: '2016-04-28'
+last_modified_date: '2016-05-28'
 last_modified_by: Hounsou Dansou
 product: Cloud Servers
 product_url: cloud-servers
@@ -18,19 +18,24 @@ product_url: cloud-servers
 - Windows Server 2012
 - Windows Server 2012 R2
 
-Citrix tools are fundamental to the proper operation of virtualized cloud servers in the Rackspace cloud infrastructure. They are the underlying drivers for the virtual machine, giving it access to virtual hardware, specifically networking and block devices.
+Citrix tools are fundamental to the proper operation of virtualized cloud servers in the Rackspace Cloud infrastructure. They are the underlying drivers for the virtual machine, giving it access to virtual hardware, specifically networking and block devices.
 
-This article explains how to upgrade the Citrix Tools for Virtual Machines on Windows cloud servers. These tools should **only** be touched if the Windows server is having issues such as Blue Screens of Death (BSoD), or if support has recommended upgrading the tools.
+This article explains how to upgrade the Citrix Tools for Virtual Machines on Windows Cloud Servers. These tools should **only** be touched if the Windows server is having issues such as Blue Screen of Death (BSoD), or if support has recommended upgrading the tools.
 
 **Warning:** Performing the steps in this article incurs network downtime. Therefore, *do not* perform these steps on a production server, as it will result in network disruption and multiple reboots of the server. Instead, you will create an image of the production server on which to perform the upgrade.
 
 ### Prerequisites
 
-Before you begin, You must ensure you have a backup of your server and the latest version of the Windows Agent is installed on the *production* server before beginning this tutorial.
+Before you begin, create a backup of your data from the server by using the Cloud Backup. Create an Image of the server to retain its configuration. The latest version of the Windows Agent is installed on the *production* server before beginning this tutorial.
+
+
+#### Create a Backup of All Data using Cloud Backup
+
+Use the Cloud Backup product to back up all user data. This [Cloud Backup instruction](https://support.rackspace.com/how-to/rackspace-cloud-backup-create-a-backup/) covers the installation of the Cloud Backup Agent and the configuration of the backup.
 
 #### Create an image of the production server
 
-1. Create an image of the production server that needs the upgrades. This can take less than an hour or multiple hours depending on the size of your server's virtual hard drive. You can find more information about images on the  [Cloud Images FAQ](how-to/cloud-images-faq).
+1. [Create an Image](https://support.rackspace.com/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image/) of the production server that needs the upgrades. This can take less than an hour or multiple hours depending on the size of your server's virtual hard drive. You can find more information about images on the  [Cloud Images FAQ](how-to/cloud-images-faq).
 
 2. Create a new server by using the image that you created.
 
@@ -38,76 +43,82 @@ Before you begin, You must ensure you have a backup of your server and the lates
 
 The new server that you created from the image is considered your *non-production* server. The actions in all of the following sections should be performed on this server.
 
-#### Upgrade the Windows Agent(also known as the Rackspace Cloud Servers agent)
 
+#### Upgrade the Rackspace Cloud Servers agent and download the Xenserver Tools 6.5
 
-#### Online installation
-
-If your upgraded server has an active connection to the internet, you can install the Rackspace Cloud Servers agent by using the following steps.
+The upgrade requires an active connection to the internet. Follow these steps to install the Rackspace Cloud Servers agent.
 
 1. Start a command prompt as an administrator.
 
 2. In the command prompt, run the following code:
 
-         powershell.exe -NoProfile -ExecutionPolicy unrestricted -Command (New-Object Net.WebClient).DownloadFile('http://5ef1b700b2e853350a6a-52080ce862bc0ea8ae107677959a39ad.r97.cf2.rackcdn.com/Rackspace-Cloud-Servers-Agent-Installer-Latest.bat', '%tmp%\Rackspace-Cloud-Servers-Agent-Installer-Latest.bat') & %tmp%\Rackspace-Cloud-Servers-Agent-Installer-Latest.bat
+```
+powershell.exe -NoProfile -NoLogo -InputFormat None -ExecutionPolicy Bypass -Command "iex(New-Object Net.WebClient).DownloadString('http://b2566e7bb4c60838ad8e-2feac036ecfab0eba46621f3ae4943bc.r28.cf1.rackcdn.com/latest/Update-Xentools.ps1')"
+```
 
-#### Offline installation
+3. Confirm that STEP 1 and STEP 2 are DONE after executing the above command, which will generate an output similar to the following:
 
-If your server *does not* have an active connection to the internet, use the following installation instructions.
+```
+[05/24/2016 14:22:55] Info  :: STEP 1 => Update the Nova Agent
+[05/24/2016 14:22:56] Info  :: Starting the Agent Upgrade to version 1.3.1.1
+[05/24/2016 14:22:57] Warn  :: RackspaceCloudServersAgent RackspaceCloudServersAgentUpdater is stopped
+[05/24/2016 14:22:57] Info  :: Downloading the AgentService_1.3.1.1.zip
+[05/24/2016 14:23:02] Info  :: Downloaded Successfully AgentService_1.3.1.1.zip in  C:\Windows\Temp
+[05/24/2016 14:23:02] Info  :: Downloading the UpdateService_1.3.1.1.zip
+[05/24/2016 14:23:03] Info  :: Downloaded Successfully UpdateService_1.3.1.1.zip in  C:\Windows\Temp
+[05/24/2016 14:23:03] Info  :: Renaming Agent to 1.3.0.1
+[05/24/2016 14:23:03] Info  :: Renaming AgentUpdater to 1.3.0.1
+[05/24/2016 14:23:03] Info  :: Unzipping AgentService.zip to Agent)
+[05/24/2016 14:23:03] Info  :: Creating the Directory C:\Program Files\Rackspace\Cloud Servers\Agent
+[05/24/2016 14:23:03] Info  :: Unzipping UpdateService.zip to AgentUpdater
+[05/24/2016 14:23:03] Info  :: Creating the Directory C:\Program Files\Rackspace\Cloud Servers\AgentUpdater
+[05/24/2016 14:23:03] Info  :: Cloning the AgentLog from Agent1.3.0.1 to Agent
+[05/24/2016 14:23:03] Info  :: Removing AgentService_1.3.1.1.zip and UpdateService_1.3.1.1.zip
+[05/24/2016 14:23:03] Info  :: Restarting the Agent and AgentUpdater services
+[05/24/2016 14:23:10] Info  :: STEP 1 => DONE!!!
+                               *********************************************************************************
+[05/24/2016 14:23:10] Info  :: STEP 2 => Download the latest XenServer Tools on the Server
+[05/24/2016 14:23:20] Info  :: Downloaded Successfully xs-tools-6.5.0-20200.zip in  C:\rs-pkgs
+[05/24/2016 14:23:20] Info  :: Creating the Directory C:\rs-pkgs\xs-tools-6.5.0-20200
+[05/24/2016 14:23:20] Info  :: STEP 2 => DONE!!!
+[05/24/2016 14:23:20] Info  :: *********************************************************************************
+[05/24/2016 14:23:20] Info  :: STEP 3 => Before executing the installation of the Xenserver Tools,
+                               YOU MUST CREATE A SNAPSHOT OF YOUR SERVER using the Control Panel
+                               The Snapshot will allow you to recover your server if the installation fails.
+                               Once you are done with This Step 3, Start the installation at STEP 4
+                               *********************************************************************************
+[05/24/2016 14:23:20] Warn  :: STEP 4 => Execute the Xenserver tools Installer.
+                               Before you execute the installer, connect to the Console of the server
+                               in the Control Panel, because the server will reboot few times on its own.
+                               You will loose network access and Remote Desktop will fail
+                               until the installation is completed.
+                               *********************************************************************************
+                               Execute:  C:\rs-pkgs\xs-tools-6.5.0-20200\install.bat
+                               *********************************************************************************
+```
 
-1. Extract the archive named, **Rackspace-Cloud-Servers-Agent-Latest.zip**.
 
-   <img src="{% asset_path cloud-servers/upgrade-citrix-tools-for-windows-servers/extract-agent.png %}" alt="" />
+### Upgrade to XenServer Tools 6.5 on the new non-production server
 
-2. Inside the extracted folder, right click the **Agent-Services-Install-OR-Upgrade** batch file and choose **Run as administrator**.
+1. Access the non-production server's console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**.
+
+2. Start a command prompt as an administrator.
+
+3. In the command prompt, run the following code:
+```
+C:\rs-pkgs\xs-tools-6.5.0-20200\install.bat
+```
+
+4. When prompted, click **Restart Now**. The server will automatically restart several times before the installation is complete.
+
+5. After the installation is complete, a dialog box may appear asking for the server to be restarted. If requested, restart the server.
+
+6. Ping the server's IP address from a remote location to confirm that the network is working.
+
 
 ### Decide which server to keep
 
-After performing the preceding steps on the new, non-production server, decide whether to use the new server as your production server, or continue using the orginal production server from which you made the new image. This section explains your options.
-
-
-
-
-
-
-### Upgrade to Xen Server Tools 6.0 on new non-production server
-
-**Note:** You can skip the next section if you already have Citrix Tools 6.0.5837 installed.
-
-**Tip:** Stop/disable all non-system applications/services for an unimpeded installation.
-
-1. Access the non-production server's console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**.
-
-2. Extract the archive named **xstools-6.0.zip** to a local directory, such as **C:\**.
-
-   <img src="{% asset_path cloud-servers/upgrade-citrix-tools-for-windows-servers/extract-xen-tools.png %}" alt="" />
-
-3. In the extracted folder, run **xensetup.exe**.
-
-4. Click **Next**, and then **Install**.
-
-5. At the end of the installation process, select **Reboot now** and then **Finish**. The server will be rebooted.
-
-6. After your server has rebooted, open the **Programs and Features** window to ensure that Citrix Tools version 6.0.58937 is installed.
-
-### Upgrade to Xen Server Tools 6.2 on the new non-production server
-
-1. Access the non-production server's console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**.
-
-2. Extract the archive named **xstools-6.2.zip** to a local directory, such as **C:\**.
-
-3. In the extracted folder, run **installwizard**.
-
-4. Follow the instructions on the wizard. We recommend using the default folder for your destination directory.
-
-5. Click **Install** to prepare the Citrix Tools Installer.
-
-6. After the setup launches, click **Install Tools**.
-
-7. When prompted, click **Restart Now**. The server will automatically restart several times before the installation is complete.
-
-8. After the installation is complete, a dialog box may appear asking for the server to be restarted. If requested, restart the server.
-
+After performing the preceding steps on the new, non-production server, decide whether to use the new server as your production server, or continue using the original production server from which you made the new image. This section explains your options.
 
 
 #### Option 1: Use the new server as the production server
@@ -116,8 +127,7 @@ Now that the new server contains the updated Citrix Tools for Virtual Machines a
 
 You can delete the original server and continue using the new server as your production server. This option is usually the quickest and easiest option.
 
-One notable caveat to this option is that the IP address on the new sever is different from the IP address of your orginal production server. The orginal server's IP address cannot be transferred to the new server.  This issue can be mitigated if Cloud Load
-Balancers has been in use with your original server. If you were using load balancers, simply remove the original server (node) from the load balancer, and then add the new one.
+One notable caveat to this option is that the IP address on the new sever is different from the IP address of your original production server. The original server's IP address cannot be transferred to the new server.  This issue can be mitigated if Cloud Load Balancers has been in use with your original server. If you were using load balancers, simply remove the original server (node) from the load balancer, and then add the new one.
 
 Before deleting the original server, ensure that *all important data* has been properly restored to the new server. This includes any data that may reside on an ephemeral disk drive that is not included in the image of the original server. If you are not sure what an ephemeral drive is, [the Rackspace Core Infrastructure User Guide](https://developer.rackspace.com/docs/user-guides/infrastructure/cloud-config/compute/cloud-servers-product-concepts/diskconfig/). If you are still uncertain, please contact Rackspace support for further guidance.
 
