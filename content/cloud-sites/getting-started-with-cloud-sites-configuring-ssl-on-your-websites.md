@@ -47,7 +47,7 @@ The primary certificates supported on Cloud Sites are as follows:
 Cloud Sites allows installation of most chained certificates, including
 Extended Validation (EV), multi-domain, and wild card
 certificates. These will require installation to a primary Common Name
-domain to work properly.
+domain to work properly. _Sites hosted on the .NET/IIS platform may not allow wild card certificates to work due to the architecture._
 
 **Note**: Cloud Sites no longer supports *any* self-signed
 certificates.
