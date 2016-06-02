@@ -67,13 +67,9 @@ Complete the following steps to generate a certificate signing request
 4.  In the **Permissions for Viewing Your Website** section, click
     **Install SSL Certificate**.
 
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-configuring-ssl-on-your-websites/installsslcertificatetab.png %}" alt="" />
-
 5.  Review the order summary and payment details, select the **Terms
     Agreement** check box, and the click Finish. If you have questions
     about the charges, contact Support.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-configuring-ssl-on-your-websites/ssltos.png %}" alt="" />
 
 6.  On the Install SSL Certificate page, click the **Start New
     Certificate** button.
@@ -124,7 +120,7 @@ The following is an example of a correctly configured wild card certificate if t
     Valid To: September 26, 2017
     Issuer: DigiCert SHA2 High Assurance Server CA, DigiCert Inc
     Serial Number:
-   
+
 ### Install the certificate
 
 1.  Log in to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com).
