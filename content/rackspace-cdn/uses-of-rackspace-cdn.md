@@ -48,11 +48,7 @@ Rackspace CDN enables you to selectively cache certain subdomains or URL
 patterns to edge nodes. Users get content from the edge node rather than
 your web servers.
 
+### Additional resources
 
-
-#### [&lt; Features of Rackspace CDN](/how-to/features-of-rackspace-cdn)    -    [Limits for Rackspace CDN &gt;](/how-to/limits-for-rackspace-cdn)
-
-
-
-
-
+- [Features of Rackspace CDN](/how-to/features-of-rackspace-cdn)
+- [Limits for Rackspace CDN](/how-to/limits-for-rackspace-cdn)
