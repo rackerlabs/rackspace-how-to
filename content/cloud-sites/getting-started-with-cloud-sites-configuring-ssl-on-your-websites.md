@@ -102,9 +102,12 @@ After you have completed your certificate purchase, you're ready to
 
 To install an EV or wild card certificate with Cloud Sites, the certificate  needs to be installed to an existing domain on the Cloud Sites account. This can  be accomplished by doing the following when purchasing the certificate from the seller:
 
-1. Create the certificate using the existing domain as the Common Name (CN)
-2. Setup the EV domains or wild card domain as the Subject Alternative Name (SAN)
-3. Install the certificate to the existing domain
+1. Create the certificate using the existing domain as the Common Name (CN).
+
+2. Setup the EV domains or wild card domain as the Subject Alternative Name (SAN).
+
+3. Install the certificate to the existing domain.
+
 4. Point the domains specified in the SAN to use the SSL IP provided.
 
 The following is an example of a correctly configured wild card certificate if the site hosting the certificate is ssl.example.com, an existing domain in your domain in your Cloud Sites account, and other subdomains of example.com are used for the wild card:
