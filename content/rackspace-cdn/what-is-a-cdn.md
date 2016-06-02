@@ -5,8 +5,8 @@ title: CDN Concepts
 type: article
 created_date: '2011-03-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-08'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-06-02'
+last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
