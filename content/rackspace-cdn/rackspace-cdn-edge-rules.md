@@ -5,14 +5,13 @@ title: Rackspace CDN edge rules
 type: article
 created_date: '2015-02-11'
 created_by: Megan Meza
-last_modified_date: '2016-01-21'
+last_modified_date: '2016-06-02'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-Rackspace CDN \[[product
-page](http://www.rackspace.com/cloud/cdn-content-delivery-network)\]
+[Rackspace CDN](http://www.rackspace.com/cloud/cdn-content-delivery-network)
 enables you to create rules for content served over the content delivery
 network (or CDN). You create the rules after you [create the Rackspace
 CDN
@@ -239,5 +238,3 @@ in order from least specific to most specific.
 -   URL path, such as \`/images/\*\`
 -   detailed URL path, such as \`/images/logos/partnerA/\*\`
 -   file extension, such as \`/\*.png\`
-
-
