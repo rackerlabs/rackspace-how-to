@@ -89,8 +89,7 @@ vary.
 The period of time that an asset is cached on the edge node before a new
 origin pull is made.
 
-[&lt; Limits for Rackspace
-CDN](/how-to/limits-for-rackspace-cdn)
--    [Differences between Rackspace CDN and Rackspace Cloud Files
-&gt;](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files)
+### Additional resources
 
+- [Limits for Rackspace CDN](/how-to/limits-for-rackspace-cdn)
+- [Differences between Rackspace CDN and Rackspace Cloud Files](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files)
