@@ -1,12 +1,12 @@
 ---
+permalink: cloud-backup-backup-actions/
 audit_date:
-title: Cloud Backup actions
+title: Cloud Backup backup actions
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
 last_modified_date: '2016-04-08'
 last_modified_by: Margaret Eker
-permalink: cloud-backup-actions/
 product: Cloud Backup
 product_url: cloud-backup
 ---
