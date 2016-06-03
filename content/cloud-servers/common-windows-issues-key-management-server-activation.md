@@ -99,8 +99,8 @@ server:
    
 7. Once the time is synced up, attempt the following:
     
-    w32tm /resync
-    slmgr.vbs /ato
+        w32tm /resync
+        slmgr.vbs /ato
 
 8. You will also need to open UDP port 123 to allow the sync.
 
