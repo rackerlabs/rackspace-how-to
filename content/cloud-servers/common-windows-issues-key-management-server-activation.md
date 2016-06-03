@@ -54,12 +54,12 @@ server:
 
 4. Request activation from the KMS:
     
-      slmgr.vbs /ato
+       slmgr.vbs /ato
 
 5. If step 4 returns an error reading EXACTLY "0xC004F074 The Key 
    Management Server (KMS) is unavailable", run the following:
    
-    w32tm /resync
+        w32tm /resync
    
 6. If the time on the Cloud Server is drastically different than
      what is on the KMS the resync will fail.  At this point you will need to
