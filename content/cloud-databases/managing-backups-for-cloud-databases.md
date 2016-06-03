@@ -5,14 +5,23 @@ title: Managing Backups for Cloud Databases
 type: article
 created_date: '2014-01-15'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-06-03'
+last_modified_by: Steve Croce
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
-You can perform the following operations on your Rackspace Cloud
-Databases instances.
+### Introduction
+
+The Cloud Databases product offers multiple ways to backup and restore your database. This article outlines how to create On-Demand backups and view backups for Cloud Databases instances. In addition, Cloud Databases now allows automatic scheduled backups. For more details on that functionality, please see the [Scheduled Backups for Cloud Databases](/how-to/scheduled-backups-for-cloud-databases) How-To article.
+
+Below are some quick facts about Cloud Databases backups:
+
+- Cloud Databases uses the [Percona Xtrabackup](https://www.percona.com/software/mysql-database/percona-xtrabackup) utility to create a hot backup of your database while minimizing write-locking of the database during the backup process. 
+- Backup files for Cloud Databases are stored in Cloud Files and billed at the standard [Cloud Files rate](https://www.rackspace.com/en-us/cloud/public-pricing#cloud-files).
+- Backups created by Cloud Databases will remain in your Cloud Files account until you delete them, except for scheduled backups which are automatically cleaned up based on a set retention period. 
+- Even if the instance associated with a backup is deleted, the backup will remain until you delete it and can be used to restore to a new Cloud Databases instance.
+- The backup process for [High Availability instance groups](/how-to/high-availability-for-cloud-databases) always attempts to backup from a replica rather than the master instance
 
 ### Create a Backup
 
