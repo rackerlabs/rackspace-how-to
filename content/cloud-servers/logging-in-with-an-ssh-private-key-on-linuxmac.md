@@ -45,7 +45,7 @@ private key.
 
   <img src="{% asset_path cloud-servers/logging-in-with-an-ssh-private-key-on-linuxmac/Linux2.png %}" width="764" height="660" />
 
-3. To save your changes, press Escape. Then, type "":wq"to write the file
+3. To save your changes, press Escape. Then, type ":wq" to write the file
 and return to the command line.
 
 4. After saving the file, run the following command to change the file
