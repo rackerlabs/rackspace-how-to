@@ -19,9 +19,7 @@ including checks for host information and host metrics, and
 custom-defined checks.
 
 For a list of supported operating systems on which the monitoring
-agent can be installed, see [Cloud Servers with Managed
-Operations Support for
-Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
+agent can be installed, see [Cloud Servers with Managed Operations Support for Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
 
 This article describes the following tasks:
 
@@ -81,21 +79,16 @@ certificate or create a repository manually.
 
 1. Log in to the server that you want to monitor.
 
-2. Open a browser to the [Rackspace Monitoring
-Meta
-Packages](http://meta.packages.cloudmonitoring.rackspace.com/) page<span
-class="s1">
+2. Open a browser to the [Rackspace Monitoring Meta Packages](http://meta.packages.cloudmonitoring.rackspace.com/) page.
 
 3. Find your operating system and enter the commands provided.
 
 ### Configure the monitoring agent by using the agent setup program
 
 After you have installed the agent package on your server, you can
-configure the monitoring agent by running the [agent Setup
-program](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-agent-with-setup "4.3.1. Configure the agent with the Setup program").
+configure the monitoring agent by running the [agent Setup program](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#run-agent-setup-program).
 The agent setup program completes the following configuration tasks for
 you:
-
 
 -   Configures an agent token that the agent uses to authenticate with
     Rackspace Monitoring.
@@ -109,23 +102,15 @@ you:
 
 -   Associates the agent with a monitoring entity.
 
-For more information, see the [Configure the agent with the Setup
-program](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-agent-with-setup)
+For more information, see the [Configure the agent with the Setup program](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#run-agent-setup-program)
 section in the *Rackspace Monitoring Developer Guide*.
-
 
 ### Install the monitoring agent by using other methods
 
-
 For more information about the monitoring agent and in-depth
-installation and configuration information, see the following sections
-in the **Rackspace Monitoring Developer Guide**,[Install the
-agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#install-the-agent) and [Configure
-the
-agent](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#configure-the-agent) sections.
+installation and configuration information, see the [Install and configure the agent](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#install-and-configure-the-agent) section of the *Rackspace Monitoring Developer Guide*.
 
 ### Upgrade the agent
-
 
 The agent does not upgrade itself. However, if you've added the agent
 repository to a Linux system, the agent is upgraded when you run a
@@ -133,52 +118,43 @@ system update.
 
 For Windows and other systems that do not have the agent in a package
 repository, you must upgrade the agent manually by following the
-installation instructions found in the [Rackspace Monitoring Developer
-guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#install-agent-windows).
+installation instructions found in the [Rackspace Monitoring Developer guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#install-agent-windows).
 
 If you upgrade manually, we recommend that you check for an upgrade
 to the agent every three to four weeks.
 
 ### Uninstall the agent
 
-
 Use the standard method for your operating system to uninstall the
 agent.
 
-### Ubuntu and Debian
+#### Ubuntu and Debian
 
 On Ubuntu and Debian systems, run the following command:
 
     sudo apt-get remove rackspace-monitoring-agent
 
-### CentOS, Red Hat, and Fedora
+#### CentOS, Red Hat, and Fedora
 
 On CentOS, Red Hat, and Fedora, run the following command:
 
     sudo yum remove rackspace-monitoring-agent
 
-### Windows
+#### Windows
 
 On Windows, use the Add/Remove Programs utility in the Windows Control
 Panel.
 
 ### Next steps
 
-
 After you have installed and configured the monitoring agent, the next
 steps are to create *checks* to gather metrics (specific data points)
 and *alarms* that trigger a notification at certain thresholds. You also
 need to create a notification and notification plan. For details about
-performing these steps in the Cloud Control Panel, see [Rackspace
-Monitoring Checks and
-Alarms](/how-to/rackspace-monitoring-checks-and-alarms "Rackspace Cloud Monitoring Checks and Alarms") and
-[Creating a monitoring check using the Control
-Panel](/how-to/creating-a-monitoring-check-using-the-cloud-control-panel "Creating a Monitoring Check Using the Control Panel").
+performing these steps in the Cloud Control Panel, see [Rackspace Monitoring Checks and Alarms](/how-to/rackspace-monitoring-checks-and-alarms "Rackspace Cloud Monitoring Checks and Alarms") and
+[Creating a monitoring check using the Control Panel](/how-to/creating-a-monitoring-check-using-the-cloud-control-panel "Creating a Monitoring Check Using the Control Panel").
 
 ### Related information
 
-
--   [About the Rackspace Monitoring
-    Agent](/how-to/about-the-rackspace-monitoring-agent "About the Monitoring Agent")
--   [Troubleshooting the Monitoring
-    Agent](/how-to/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
+-   [About the Rackspace Monitoring Agent](/how-to/about-the-rackspace-monitoring-agent "About the Monitoring Agent")
+-   [Troubleshooting the Monitoring Agent](/how-to/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
