@@ -5,8 +5,8 @@ title: Rackspace Metrics overview
 type: article
 created_date: '2015-03-03'
 created_by: Shane Duan
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
@@ -16,11 +16,9 @@ that offers a flexible and affordable platform for storing and serving
 time-series metrics. It provides a REST API for metrics ingestion and
 retrieval. In addition, it also provides out-of-box integration with
 popular open source tools. The software that powers this service is an
-open source project named 'Blueflood', which is built on top of [Apache
-Cassandra](http://cassandra.apache.org/). Rackspace Metrics is designed
+open source project named Blueflood, which is built on top of [Apache Cassandra](http://cassandra.apache.org/). Rackspace Metrics is designed
 to meet the functional and performance requirements of enterprise-scale
 metrics.
-
 
 ### The growth of metrics
 
@@ -46,7 +44,6 @@ without the hassle of managing the metrics storage.
 
 ### Rackspace Metrics components
 
-
 Rackspace Metrics consists of two components: **metrics ingestion** and
 **metrics query**.
 
@@ -59,8 +56,7 @@ Rackspace Metrics consists of two components: **metrics ingestion** and
     You can also choose to leave your existing metrics storage engine
     running for a while to compare against Rackspace Metrics.
 
-    The Metrics Ingestion API is currently in the [Early Access
-    Program](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#early-access-program)
+    The Metrics Ingestion API is currently in the [Early Access Program](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#early-access-program)
     (EAP).
 
 -   **Metrics query**: Rackspace Metrics enables users to retrieve
@@ -76,35 +72,28 @@ Rackspace Metrics consists of two components: **metrics ingestion** and
 
 ### How to grant users access to Rackspace Metrics
 
-
 No registration is required to access data in Rackspace Metrics that has
 been collected through Cloud Monitoring. The data is already available
 to users through the Query API.  When accessing data through the Query
 API, a user must have the appropriate role.
 
 To obtain access to the Rackspace Metrics Ingestion API, sign up through
-[Early Access
-Program](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#early-access-program).
+[Early Access Program](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#early-access-program).
 
-### **How to add the appropriate roles**
+### How to add the appropriate roles
 
-Currently Rackspace Metrics product is not available in [Rackspace Cloud
-Control Panel](https://mycloud.rackspace.com/).  When you sign up for
+Currently Rackspace Metrics product is not available in [Rackspace Cloud Control Panel](https://mycloud.rackspace.com/).  When you sign up for
 the EAP, Rackspace Metrics related roles will be added to your users
 automatically. If you see permission-related issues in testing, please
 let us know.
 
 **Notes:**
-
 -   The roles needed for accessing the Rackspace Metrics API are
     described at:
     <https://developer.rackspace.com/docs/metrics/v2/developer-guide/#roles-available-for-rackspace-metrics>
--   For more information about role-based access control, see [Overview:
-    Role Based Access
-    Control (RBAC)](/how-to/overview-role-based-access-control-rbac).
+-   For more information about role-based access control, see [Overview: Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac).
 
 ### How to access Rackspace Metrics
-
 
 Users can access Rackspace Metrics via simple REST API end points. A
 number of tools are available that can send HTTP requests and capture
@@ -116,17 +105,12 @@ the output, including the following ones:
 
 ### Find more information
 
-
 If you want more information about Rackspace Metrics, such as access
 endpoints, how to determine your tenant ID and retrieve authentication
-tokens, and supported request options, see the [*Rackspace Metrics*
-Getting
-Started Guide](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#document-getting-started)
-and the [Rackspace Metrics Developer
-Guide](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#document-developer-guide).
+tokens, and supported request options, see the [Rackspace Metrics Getting Started Guide](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#document-getting-started)
+and the [Rackspace Metrics Developer Guide](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#document-developer-guide).
 
 ### Get help and provide feedback
-
 
 During the Early Access program, support for Rackspace Metrics will be
 available via email only during regular business hours. If you have
