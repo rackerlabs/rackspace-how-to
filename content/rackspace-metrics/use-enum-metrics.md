@@ -30,18 +30,18 @@ For api commands and additional information on sending enum metrics, see [Sendin
 
 For api command and additional information on retrieving enum metrics, see [Retrieving enum metrics](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#retrieving-enum-metrics) in the API documentation.
 
-
 ### Enum Support in Search API
 
-You can now retrieve the ingested enum values through glob search by adding the parameter "include\_enum\_values=true".
+You can now retrieve the ingested enum values through glob search by adding the parameter `include_enum_values=true`.
 
-Note: there is a five minutes delay before any newly ingested enum\_values show up with glob searching
+**Note:** There is a five minute delay before any newly ingested `enum_values` show up with glob searching
 
 Applying the above example:
 
     curl -X GET 'https://global.metrics.api.rackspacecloud.com/v2.0/737305/metrics/search?query=example.*.*&include_enum_values=true'
 
 Which will then return:
+
     [
     {
       "metric":"example.enums.value",
@@ -53,7 +53,6 @@ Which will then return:
     {"metric":"example.enums.http","enum_values":["200","404","500"]}
     ]
 
-
 ### Grafana Support
 
 The customer can use the existing Grafana support to visualize the enum data in the form of stacked percent bar chart.
@@ -61,27 +60,27 @@ The customer can use the existing Grafana support to visualize the enum data in 
 The following are the screen shots of steps to create dashboard based on enum values. Engineer is working on fixes to make it easier. We will update it once that is done.
 
 1. Enter the metric name manually.
-    
+
     <img src="{% asset_path rackspace-metrics/use-enum-metrics/Enumsupport-manually.png %}" alt="" />
-    
+
 2. Click **Off**. The menu appears.         
-    
+
     <img src="{% asset_path rackspace-metrics/use-enum-metrics/Enumsupport-click-off.png %}" alt="" />
-    
+
 3. Select a value.
-    
+
     <img src="{% asset_path rackspace-metrics/use-enum-metrics/Enumsupport-select-value.png %}" alt="" />
-    
+
 4. Click **duplicate**.
-    
+
     <img src="{% asset_path rackspace-metrics/use-enum-metrics/Enumsupport-clickduplicate.png %}" alt="" />
-    
+
 5. Select all values.
-    
+
     <img src="{% asset_path rackspace-metrics/use-enum-metrics/Enumsupport-selectall.png %}" alt="" />
-    
+
 6. Change graph style to **bar chart** and the stack to **100%**.
-    
+
      <img src="{% asset_path rackspace-metrics/use-enum-metrics/Enumsupport-graphstyle.png %}" alt="" />
 
 
