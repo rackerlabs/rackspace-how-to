@@ -1,6 +1,6 @@
 ---
 permalink: mysql-resetting-a-lost-mysql-root-password/
-audit_date:
+audit_date: 2016-06-07
 title: Reset a lost MySQL root password
 type: article
 created_date: '2011-03-16'
