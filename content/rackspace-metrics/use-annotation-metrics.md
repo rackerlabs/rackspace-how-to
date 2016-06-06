@@ -55,18 +55,17 @@ Annotation is submitted through /events API end point:
 
 ### Adding Annotation to Grafana dashboard
 
-1. Open **Settings** menu and select the **Features** tab.
-2. Select the **Annotations** checkbox to enable annotations.
+1. Click on the gear icon in the upper right-hand corner to open the **Settings** menu and select the **Features** tab.
 
-  <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Annotationsupport-enable-annotations.png %}" alt="" />
+2. Select the **Annotations** checkbox to enable annotations.
 
 3. On the **Add** tab, enter a name for the annotation and select **RackspaceMetrics** as the datasource.
 
-  <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Annotationsupport-datasource.png %}" alt="" />
+   <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Annotationsupport-datasource.png %}" alt="" />
 
 4. Add Annotation by Searching for the tag in the **Blueflood event tags** field.
 
-  <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Anotattionsupport-change-event.png %}" alt="" />
+   <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Anotattionsupport-change-event.png %}" alt="" />
 
 The new annotation shows up in Grafana.
 
