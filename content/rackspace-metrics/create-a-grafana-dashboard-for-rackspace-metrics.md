@@ -5,8 +5,8 @@ title: Create a Grafana dashboard for Rackspace Metrics
 type: article
 created_date: '2015-10-19'
 created_by: Constanze Kratel
-last_modified_date: '2016-02-15'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
@@ -43,11 +43,10 @@ To create a Grafana dashboard, complete the following steps:
 
 7.  Click **Create Template**.
     Your template is created, which might take a few minutes.
-    After the template is complete, you will see a page that displays
+    After the template is complete, a details page displays that shows
     information about your custom template, including a description.
 
     <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-customized-template1.png %}" width="513" height="297" />
-
 
 8.  From the **Actions** menu, choose **Create Stack from Template**.
 9.  On the **Create Stack** page, enter a name for the stack and then
@@ -61,9 +60,6 @@ To create a Grafana dashboard, complete the following steps:
 10. Click **Create Stack**.
     The stack details page is displayed.
     While the stack is being built, the **Status** is **Building**.
-
-    <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-create-stack-building.png %}" width="449" height="400" />
-
 
 When the stack has finished building, the **Status** field changes to
 **Up**. The page also displays an IP address, a Grafana auth password,
@@ -79,10 +75,14 @@ Now that you have created your stack, you can access the Grafana dashboard that 
 To access the Grafana dashboard, perform the following steps:
 
 1.  Open a web browser.
-2.  Type the IP address in the address bar. 
+
+2.  Type the IP address in the address bar.
+
     You are prompted with an authentication page.
+
 3.  Type the username and password that were displayed after you created
     the stack and click **Log In**.
+
     Your Grafana dashboard is displayed.
 
     <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-home-page_0.png %}" width="432" height="284" />
@@ -135,9 +135,8 @@ complete the following steps:
     your database instance.
 
     <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-replace-entty-id1.png %}" width="639" height="76" />
-3.  On the Grafana dashboard, click the folder icon in the top-right corner, click **Import**, click **Choose File**, and then upload     the file to Grafana.
 
-    <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-JSON-file-upload.png %}" width="432" height="184" />
+3.  On the Grafana dashboard, click the folder icon in the top-right corner, click **Import**, click **Choose File**, and then upload the file to Grafana.
 
     The dashboard automatically appears and displays your MySQL database
     instances.
@@ -145,7 +144,7 @@ complete the following steps:
     <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-mysql-data.png %}" width="428" height="337" />
 
 #### (Optional) Use Annotation
-With annotation support, users can submit change event to show along with the graph, adding additional information for the graph on the dashboard. See [Use annotation metrics](/how-to/use-annotation-metrics) for additional information. 
+With annotation support, users can submit change event to show along with the graph, adding additional information for the graph on the dashboard. See [Use annotation metrics](/how-to/use-annotation-metrics) for additional information.
 
 #### (Optional) Use Enum metrics
 
