@@ -5,8 +5,8 @@ title: Manage your server - resizing standard and general purpose servers
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2016-01-04'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2016-06-07'
+last_modified_by: Colin Barker
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -18,8 +18,8 @@ product_url: cloud-servers
 In this article, we dicuss the process for resizing your server -
 changing the RAM and disk space allocation. Note that at this time,
 Windows servers can be resized to a larger allocation but cannot be
-resized down to a lesser allocation. Standard Cloud Servers can be
-resized up or down. General Purpose Servers can only be resized up.
+resized down to a lesser allocation. General Purpose and Standard 
+Servers also can only be resized up. 
 
 -   To allow you to easily scale your server by increasing the amount of
     Disk Space and RAM on your server, click the **Resize** button.
