@@ -1,7 +1,7 @@
 ---
 permalink: logging-in-with-an-ssh-private-key-on-linuxmac/
 audit_date:
-title: Log in with an SSH Private Key on Linux/Mac
+title: Log in with an SSH private key on Linux and Mac
 type: article
 created_date: '2013-09-25'
 created_by: Brint Ohearn
@@ -12,54 +12,48 @@ product_url: cloud-servers
 ---
 
 This example demonstrates how to use a private key to log in to a Linux
-server with a private key by using a Terminal session on OS X. However,
+server by using a private key by using a Terminal session on OS X. However,
 you can follow the same process to use a private key when using any
 terminal software on Linux.
 
-You need two software applications to complete this process:
+**Note:** For information about using SSH private keys on Windows operating systems, see [Logging in with an SSH Private Key on Windows](/how-to/logging-in-with-an-ssh-private-key-on-windows).
 
-1.  ssh - SSH client software is installed on your Linux or OS X
+###Prerequisites
+
+To complete this process, you need the following software applications:
+
+ - ssh - SSH client software is installed on your Linux or OS X
     operating system by default
-2.  Your favorite text editor
+ - Your favorite text editor. This example uses the vim text editor.
 
-In this example, we use the vim text editor.
+### Log in with a private key
 
-**Note:** These instructions apply to the Linux and OS X operating
-systems. For information about using SSH private keys on Windows
-operating systems, see [Logging in with an SSH Private Key on Windows](/how-to/logging-in-with-an-ssh-private-key-on-windows).
-
-### Logging in with a private key
-
-1. Using your favorite text editor, create a file to store your private
-key. In this example, we use the **file deployment_key.txt**.
+1. Using a text editor, create a file in which to store your private
+key. This example uses the file **deployment_key.txt**.
 
 2. To edit the file in vim, type the following command
 
           vim deployment_key.txt
 
-3. After the editor starts, press 'i' to turn on insert mode. Then, paste
-the private key into the file.
-   
-   **Note**: You need to include the **BEGIN** and **END** lines to use the
-private key.
+3. After the editor starts, press **i** to turn on insert mode. 
+
+4. Paste the private key into the file. Be sure to include the BEGIN and END lines.
         
      <img src="{% asset_path cloud-servers/logging-in-with-an-ssh-private-key-on-linuxmac/Linux2.png %}" width="764" height="660" />
 
-3. To save your changes, press Escape. Then, type ":wq" to write the file
-and return to the command line.
+5. To save your changes, press **Esc**. 
 
-4. After saving the file, run the following command to change the file
-permissions to 600 to secure the key. You can also set them to 400.
+6. Type **:wq** to write the file and return to the command line.
+
+7. Run the following command to change the file permissions to 600 to secure the key. You can also set them to 400.
 **This step is required**:
 
           chmod 600 deployment_key.txt
 
-5. After saving the key, use it to login to the SSH client as shown in this
-example that loads the key in file **deployment\_key.txt**, and logs in
-as user **demo**,to IP **192.237.248.66**:
+8. Use the key to log in to the SSH client as shown in the following example, which loads the key in file **deployment\_key.txt**, and logs in as user **demo**,to IP **192.237.248.66**:
 
           ssh -i deployment_key.txt demo@192.237.248.66
 
-6. When the prompt displays to confirm the connection request, type
-**yes**. Then, hit enter. If your SSH key requires a password, you will
-be prompted to enter it to complete the connection.
+9. When the prompt to confirm the connection request is displayed, type **yes** and then press **Enter**. 
+
+10. If your SSH key requires a password, enter it when prompted to complete the connection.
