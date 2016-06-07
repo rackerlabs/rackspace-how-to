@@ -1,12 +1,12 @@
 ---
 permalink: logging-in-with-an-ssh-private-key-on-linuxmac/
-audit_date:
+audit_date: 2016-06-07
 title: Log in with an SSH private key on Linux and Mac
 type: article
 created_date: '2013-09-25'
 created_by: Brint Ohearn
-last_modified_date: '2016-01-05'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-06-07'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
