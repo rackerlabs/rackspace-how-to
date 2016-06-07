@@ -34,6 +34,10 @@ Scheduled backups provide the following features:
 - You define the number of full automated backups to retain.
 - You can run the backup process immediately through the client or API by setting the `run now` option.
 
+### Pricing
+
+Scheduled backups are priced exactly the same as On-Demand backups. They're charged based on amount of storage used at the [standard Cloud Files rates](https://www.rackspace.com/en-us/cloud/public-pricing#cloud-files). Those charges are incurred as long as the backups exist, so even if you delete the instance, you may still be charged for the backups if they are not individually deleted.
+
 ### Scheduling backups by using the Control Panel
 
 You can enable, modify, and delete scheduled backups by using the Cloud Control Panel.
@@ -129,6 +133,8 @@ You can manage and restore scheduled backups in the same manner as on-demand bac
 ### Backup retention policy
 
 By default, the automated backup retention policy is set to two full backups. When the third full automated backup is performed, the oldest full automated backup and its child incremental backups are deleted. You can define your own retention policy when you create a schedule, or by updating an existing schedule, with the allowed minimum retention value set to 2. There is no maximum value for the number of full backups to keep.
+
+If the instance associated with a backup is deleted, the backups will remain until you manually delete them. Note that backups will continue to be charged for the Cloud Files storage that they use as long as they exist.
 
 ### HA automated backups
 
