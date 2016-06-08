@@ -89,7 +89,7 @@ The upgrade requires an active connection to the internet. Follow these steps to
    Warn  :: STEP 4 => Execute the Xenserver tools Installer.
                       Before you execute the installer, connect to the Console of the server in the Control Panel, because the server will reboot few times on its own. You will loose network access and Remote Desktop will fail until the installation is completed.*********************************************************************************
                       Execute:  C:\rs-pkgs\xs-tools-6.5.0-20200\install.bat
-                               *********************************************************************************
+                      *********************************************************************************
 ```
 
 
