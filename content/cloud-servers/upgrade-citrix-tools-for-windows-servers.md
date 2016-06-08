@@ -58,41 +58,37 @@ The upgrade requires an active connection to the internet. Follow these steps to
    Your output output similar to the following:
 
    ```
-   [05/24/2016 14:22:55] Info  :: STEP 1 => Update the Nova Agent
-   [05/24/2016 14:22:56] Info  :: Starting the Agent Upgrade to version 1.3.1.1
-   [05/24/2016 14:22:57] Warn  :: RackspaceCloudServersAgent RackspaceCloudServersAgentUpdater is stopped
-   [05/24/2016 14:22:57] Info  :: Downloading the AgentService_1.3.1.1.zip
-   [05/24/2016 14:23:02] Info  :: Downloaded Successfully AgentService_1.3.1.1.zip in  C:\Windows\Temp
-   [05/24/2016 14:23:02] Info  :: Downloading the UpdateService_1.3.1.1.zip
-   [05/24/2016 14:23:03] Info  :: Downloaded Successfully UpdateService_1.3.1.1.zip in  C:\Windows\Temp
-   [05/24/2016 14:23:03] Info  :: Renaming Agent to 1.3.0.1
-   [05/24/2016 14:23:03] Info  :: Renaming AgentUpdater to 1.3.0.1
-   [05/24/2016 14:23:03] Info  :: Unzipping AgentService.zip to Agent)
-   [05/24/2016 14:23:03] Info  :: Creating the Directory C:\Program Files\Rackspace\Cloud Servers\Agent
-   [05/24/2016 14:23:03] Info  :: Unzipping UpdateService.zip to AgentUpdater
-   [05/24/2016 14:23:03] Info  :: Creating the Directory C:\Program Files\Rackspace\Cloud Servers\AgentUpdater
-   [05/24/2016 14:23:03] Info  :: Cloning the AgentLog from Agent1.3.0.1 to Agent
-   [05/24/2016 14:23:03] Info  :: Removing AgentService_1.3.1.1.zip and UpdateService_1.3.1.1.zip
-   [05/24/2016 14:23:03] Info  :: Restarting the Agent and AgentUpdater services
-   [05/24/2016 14:23:10] Info  :: STEP 1 => DONE!!!
-                               *********************************************************************************
-   [05/24/2016 14:23:10] Info  :: STEP 2 => Download the latest XenServer Tools on the Server
-   [05/24/2016 14:23:20] Info  :: Downloaded Successfully xs-tools-6.5.0-20200.zip in  C:\rs-pkgs
+   Info  :: STEP 1 => Update the Nova Agent
+   Info  :: Starting the Agent Upgrade to version 1.3.1.1
+   Warn  :: RackspaceCloudServersAgent RackspaceCloudServersAgentUpdater is stopped
+   Info  :: Downloading the AgentService_1.3.1.1.zip
+   Info  :: Downloaded Successfully AgentService_1.3.1.1.zip in  C:\Windows\Temp
+   Info  :: Downloading the UpdateService_1.3.1.1.zip
+   Info  :: Downloaded Successfully UpdateService_1.3.1.1.zip in  C:\Windows\Temp
+   Info  :: Renaming Agent to 1.3.0.1
+   Info  :: Renaming AgentUpdater to 1.3.0.1
+   Info  :: Unzipping AgentService.zip to Agent)
+   Info  :: Creating the Directory C:\Program Files\Rackspace\Cloud Servers\Agent
+   Info  :: Unzipping UpdateService.zip to AgentUpdater
+   Info  :: Creating the Directory C:\Program Files\Rackspace\Cloud Servers\AgentUpdater
+   Info  :: Cloning the AgentLog from Agent1.3.0.1 to Agent
+   Info  :: Removing AgentService_1.3.1.1.zip and UpdateService_1.3.1.1.zip
+   Info  :: Restarting the Agent and AgentUpdater services
+   Info  :: STEP 1 => DONE!!!
+   *********************************************************************************
+   Info  :: STEP 2 => Download the latest XenServer Tools on the Server
+   Info  :: Downloaded Successfully xs-tools-6.5.0-20200.zip in  C:\rs-pkgs
    [05/24/2016 14:23:20] Info  :: Creating the Directory C:\rs-pkgs\xs-tools-6.5.0-20200
-   [05/24/2016 14:23:20] Info  :: STEP 2 => DONE!!!
-   [05/24/2016 14:23:20] Info  :: *********************************************************************************
-   [05/24/2016 14:23:20] Info  :: STEP 3 => Before executing the installation of the Xenserver Tools,
-                               YOU MUST CREATE A SNAPSHOT OF YOUR SERVER using the Control Panel
-                               The Snapshot will allow you to recover your server if the installation fails.
-                               Once you are done with This Step 3, Start the installation at STEP 4
-                               *********************************************************************************
-  [05/24/2016 14:23:20] Warn  :: STEP 4 => Execute the Xenserver tools Installer.
-                               Before you execute the installer, connect to the Console of the server
-                               in the Control Panel, because the server will reboot few times on its own.
-                               You will loose network access and Remote Desktop will fail
-                               until the installation is completed.
-                               *********************************************************************************
-                               Execute:  C:\rs-pkgs\xs-tools-6.5.0-20200\install.bat
+   Info  :: STEP 2 => DONE!!!
+   Info  :: *********************************************************************************
+   Info  :: STEP 3 => Before executing the installation of the Xenserver Tools,
+                      YOU MUST CREATE A SNAPSHOT OF YOUR SERVER using the Control Panel
+                      The Snapshot will allow you to recover your server if the installation fails.
+                      Once you are done with This Step 3, Start the installation at STEP 4
+                      *********************************************************************************
+   Warn  :: STEP 4 => Execute the Xenserver tools Installer.
+                      Before you execute the installer, connect to the Console of the server in the Control Panel, because the server will reboot few times on its own. You will loose network access and Remote Desktop will fail until the installation is completed.*********************************************************************************
+                      Execute:  C:\rs-pkgs\xs-tools-6.5.0-20200\install.bat
                                *********************************************************************************
 ```
 
