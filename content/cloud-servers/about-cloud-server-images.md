@@ -31,15 +31,8 @@ images:
     Standard backup tools such as `mysqldump` or the SQL Server Management Studio are more suitable for backing up databases. Be sure to always back up your database before you create an image of your
     Cloud Server.
 
--   **Cloud Server images cannot be transferred between accounts**, however 
-    you can share images between accounts **in the same region**. You can
-    build a server from a shared image and take an image of this new server
-    to create a new owned image.
-
--   ISOs cannot be uploaded to Cloud Files and used to build a new Cloud Server.
-
--   Importing images to Rackspace must follow the steps (Preparing an image for import into the Rackspace OpenCloud)[https://support.rackspace.com/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud/], 
-    and must follow the General Requirements to be successful. 
+-   **Cloud Server images cannot be transferred between accounts**.
+    You can, however, share images between accounts **in the same region**. This allows you to build a server from the shared image, and then create a copy of the newly created server.
 
 -   Image creation can take several hours if the disk is extremely large, so be sure to allot an appropriate amount of time to create an image of your server.
 
@@ -80,3 +73,9 @@ images:
     a image of a server that is also a DC, you must first
     demote it from being a DC before performing the image
     creation process.
+
+### Other limitations
+
+-   ISOs cannot be uploaded to Cloud Files and used to build a new Cloud Server.
+
+-   Importing images to Rackspace must follow the steps (Preparing an image for import into the Rackspace OpenCloud)[https://support.rackspace.com/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud/], and must follow the General Requirements to be successful.
