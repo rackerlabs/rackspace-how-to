@@ -52,8 +52,10 @@ Workbench.
     You are prompted for the database instance password. If everything
     is correct, the following information is displayed:
 
-    <img src="{% asset_path cloud-databases/connect-to-a-cloud-database-with-a-fqdn-address-via-mysql-workbench/4.png %}" width="861" height="612" />
-
+     - Confirmation of open database connection
+     - Server version
+     - Server operating system
+     - Statement that database connection tested successfully
 
 After the database connection is tested, the Server Administration screen is
 displayed. You can now work with your database instance.
