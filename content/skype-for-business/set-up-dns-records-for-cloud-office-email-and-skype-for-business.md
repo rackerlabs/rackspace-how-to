@@ -24,9 +24,9 @@ set up for email transfer in Rackspace Email or Hosted Exchange.
 
 Create the following entries, which are described below, on your DNS server:
 
--   [MX records](####MX records)
--   [Autodiscover records](####Autodiscover records)
--   [SPF records](####SPF records)
+-   [MX records](#mx-records)
+-   [Autodiscover records](#autodiscover-records)
+-   [SPF records](#spf-records)
 
 ####MX records
 
