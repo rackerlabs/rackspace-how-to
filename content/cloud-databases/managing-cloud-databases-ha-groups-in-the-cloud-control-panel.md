@@ -4,8 +4,8 @@ title: Managing Cloud Databases HA instance groups in the Cloud Control Panel
 type: article
 created_date: '2016-03-18'
 created_by: Steve Croce
-last_modified_date: '2016-03-18'
-last_modified_by: Steve Croce
+last_modified_date: '2016-06-10'
+last_modified_by: Kyle Laffoon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -28,11 +28,7 @@ Use the following steps to create a HA instance group.
 
 3.  In the **Databases** menu, select **MySQL Instance** under **CREATE RESOURCES**.
 
-   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-top-nav-create-1.png %}" alt="create mysql instance in control panel" />
-
 4.  In the **Identity** section, provide a name for the instance and specify the region in which you want to launch the HA instances that you create.
-
-   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-create-instance-region-2.png %}" alt="create instance and specify region" />
 
    **Note:** The name that you provide in this step will be applied to all instances and then an index (-01, -02, and so on) will be applied to all instance names starting with the master. You can also see this in the **Build** section.
 
@@ -40,11 +36,8 @@ Use the following steps to create a HA instance group.
 
 6.  In the **Build** section, select the amount of RAM and disk space you want *each instance* of your HA group to have. The master instance and each replica instance will be created with this same amount of RAM and disk space.
 
-   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-create-instance-build-3.png %}" alt="select ram and disk space for each instance" />
-
 7.  Also, in the **Build** section, select the **High-Availability Group** option next to **Instance Type**. Some new options are displayed.
 
-   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-create-instance-build-ha-4.png %}" alt="select high availability group" />
 
 8.  Perform the following actions:
    - In the **HA Instances** section, which lists the master and replica instances, remove replicas by clicking the circle next to the last replica, or add a replica by selecting **+ Add another replica** beneath the list. Currently, HA groups support only 1 or 2 replicas.
@@ -80,9 +73,7 @@ Backups | The number of backups for this group and the option to create an on-de
 
 While the group is building, the **HA Group Status** is shown as `Building` and a `Loading` animation is shown in the **HA Group Networks** table.
 
-   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-instance-details-building-6.png %}" alt="building instances show building and loading animations" />
-
-When the group has completed building, the **HA Group Status** value changes to `Running` and the **HA Group Networks** section shows the hostnames and ports that you can use to connect to the instance group. These hostnames will stay the same regardless of failovers and which instance is the master.
+When the group has completed building, the **HA Group Status** value changes to `Running` and the **HA Group Networks** section shows the hostnames and ports that you can use to connect to the instance group. These hostnames will stay the same regardless of failovers and which instance is the master. The following is an example of a successful build.
 
    <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-instance-details-built-7.png %}" alt="completed instances display running status" />
 
@@ -107,8 +98,4 @@ Farther down the Instance Details page, greater detail about the HA group master
 
    All actions that you perform on the HA group will apply to all instances in the group. Resizes occur on all instances. Backups are performed against a replica of the HA group.
 
-   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-instance-details-built-7.png %}" alt="completed images display running status" />
-
 An alternate way to make the modifications from the previous step is to use the Actions menu in the upper-right corner. The meu adds an additional action to delete the HA group.
-
-   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-instance-details-gear-8.png %}" alt="make modifications by using the actions menu" />
