@@ -82,7 +82,7 @@ Now that Apache is installed and working, ensure that it is set to start automat
 
 1. Run the following command:
 
-        sudo yum php install php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
+        sudo yum install php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
 
    The preceding command does not install all the modules available, just a few common ones.
 
