@@ -5,8 +5,8 @@ title: Scheduled backups for Cloud Databases
 type: article
 created_date: '2015-11-02'
 created_by: Rackspace Support
-last_modified_date: '2016-02-15'
-last_modified_by: Steve Croce
+last_modified_date: '2016-06-13'
+last_modified_by: Kyle Laffoon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -50,10 +50,7 @@ You can enable, modify, and delete scheduled backups by using the Cloud Control 
 
 3. In the list of instances, click the gear icon next to the instance for which you want to create a schedule and select **Schedule Backup**.
 
-   <img src="{% asset_path cloud-databases/scheduled-backups-for-cloud-databases/scheduled-backups-for-schedulefromlist.png %}" alt="" />
-
 4. In the pop-up dialog box that appears, select the day of the week for the full backup, specify a time of day to run the daily backups, and specify how many full backups to retain. If you do not specify a time, a random time is selected.
-   <img src="{% asset_path cloud-databases/scheduled-backups-for-cloud-databases/scheduled-backups-for-createdialog.png %}" alt="" />
 
 5. Click **Create Schedule**.
    A message appears at the bottom of the panel that says `Created schedule for instanceName`.
@@ -65,10 +62,8 @@ You can enable, modify, and delete scheduled backups by using the Cloud Control 
 2. At the top of the panel, select **Databases > MySQL**.
 
 3. Click the name of the instance for which you want to view or modify a backup schedule.
-
-   On the instance details page, the schedule is displayed next to **Scheduled Backups**.
-   <img src="{% asset_path cloud-databases/scheduled-backups-for-cloud-databases/scheduled-backups-for-scheduleindetails.png %}" alt="" />
-
+   **Note:** On the instance details page, the schedule is displayed next to **Scheduled Backups**.
+   
 4. To edit the schedule, click the **Edit** link.
 
 #### Delete a scheduled backup
