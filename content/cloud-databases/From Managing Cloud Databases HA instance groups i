@@ -1,0 +1,22 @@
+From Managing Cloud Databases HA instance groups in the Cloud Control Panel article
+
+   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-top-nav-create-1.png %}" alt="create mysql instance in control panel" />
+   
+   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-create-instance-region-2.png %}" alt="create instance and specify region" />
+   
+   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-create-instance-build-3.png %}" alt="select ram and disk space for each instance" />
+
+   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-create-instance-build-ha-4.png %}" alt="select high availability group" />
+
+   <img src="{% asset_path cloud-databases/managing-cloud-databases-ha-groups-in-the-control-panel/managing-cloud-databases-instance-details-building-6.png %}" alt="building instances show building and loading animations" />
+
+
+From Managing Cloud database HA groups in the Cloud Control Panel
+
+managing-cloud-databases-create-instance-build-ha-4.pngmanaging-cloud-databases-create-instance-build-ha-4.png
+
+managing-cloud-databases-create-instance-region-2.png
+
+managing-cloud-databases-instance-details-building-6.png
+
+managing-cloud-databases-top-nav-create-1.png
