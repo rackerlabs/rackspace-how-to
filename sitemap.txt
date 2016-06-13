@@ -40,7 +40,7 @@ https://support.rackspace.com/how-to/adding-disk-space-after-resizing-a-windows-
 https://support.rackspace.com/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/
 https://support.rackspace.com/how-to/adding-microsoft-exchange-mailboxes/
 https://support.rackspace.com/how-to/administrator-management-cloud-office-control-panel/
-https://support.rackspace.com/how-to/alarm-language-generic-thresholds-made-easy/
+https://support.rackspace.com/how-to/alarm-language-in-rackspace-monitoring/
 https://support.rackspace.com/how-to/all/
 https://support.rackspace.com/how-to/all/
 https://support.rackspace.com/how-to/all/
