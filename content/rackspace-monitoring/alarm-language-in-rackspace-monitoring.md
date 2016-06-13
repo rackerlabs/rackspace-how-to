@@ -15,17 +15,17 @@ Rackspace Monitoring provides a powerful [alarm language](https://developer.rack
 
 - Create expressive alarms that validate multiple criteria, using a JavaScript-like language rather than a JSON API. Following is an example alarm definition:
 
-      if (metric['duration'] > 2000) {
-        return CRITICAL, "HTTP request took more than 2 seconds, it took #{duration} milliseconds."
-      }
-      if (metric['duration'] > 1000) {
-        return WARNING, "HTTP request took more than 1 second, it took #{duration} milliseconds."
-      }
-      # Check for an empty body match
-      if (metric['body_match'] == "") {
-        return CRITICAL, "Body match missing"
-      }
-      return OK, "HTTP connection time is normal"
+       if (metric['duration'] > 2000) {
+         return CRITICAL, "HTTP request took more than 2 seconds, it took #{duration} milliseconds."
+       }
+       if (metric['duration'] > 1000) {
+         return WARNING, "HTTP request took more than 1 second, it took #{duration} milliseconds."
+       }
+       # Check for an empty body match
+       if (metric['body_match'] == "") {
+         return CRITICAL, "Body match missing"
+       }
+       return OK, "HTTP connection time is normal"
 
 - Use solution patterns to help you create your own complex alarms. Use our API to keep up-to-date on these examples.
 
