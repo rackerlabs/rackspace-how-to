@@ -18,9 +18,6 @@ product_url: cloud-servers
 This article describes how to create system users in vstfpd and
 chroot them (isolate or "jail" them to their home directory) if necessary.
 
-### Add group for sftp users
-
-    groupadd sftp
 ### Add a system user
 
 If you don't already have a group for your sftp users, add a group.
@@ -63,7 +60,7 @@ Edit the subsystem in sshd_config (/etc/ssh/):
     #Subsystem sftp /usr/lib/openssh/sftp-server
     Subsystem sftp internal-sftp
 
-Add the following to the bottom of the `sshd_config` file:-
+Add the following to the bottom of the `sshd_config` file:
 
     Match group sftp
         X11Forwarding no
@@ -71,8 +68,23 @@ Add the following to the bottom of the `sshd_config` file:-
         AllowTcpForwarding no
         ForceCommand internal-sftp
 
-Change the following directories access to 
+Change access for the the following directories to root:root:
 
+    /var
+    /var/www
+    /var/www/vhosts
+    /var/www/vhosts/domain.com
+
+Restart the sshd:
+
+    service sshd restart
+
+Test the restrictions. Attempt to log in to the server via SFTP with the user test.
+
+    Authentication log:
+    Using username "test".
+
+A successful test will return an `Authentication failed` message.
 
 ### Next steps
 
