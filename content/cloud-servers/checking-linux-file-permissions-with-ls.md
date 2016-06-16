@@ -37,8 +37,9 @@ follows:
 
 The `-h` option changes the way file sizes are displayed. Instead of
 displaying file sizes in raw bytes, `-h` displays them in the
-human-readable format of kilobytes, megabytes, and so on. You can
-accomplish the same result by using the `df -h` command.
+human-readable format of kilobytes, megabytes, and so on. Other linux
+tools such as df also support this flag with `df -h` to show current disk 
+usage in a easier to read format.
 
 #### ls -l
 
