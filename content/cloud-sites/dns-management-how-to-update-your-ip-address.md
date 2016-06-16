@@ -31,7 +31,7 @@ accurately to your Cloud Site.
 4.  Click on the **DNS** tab toward the top of your screen.
 
 5.  Scroll down to the **DNS Management** section within the DNS tab. The two entries that you need are the www.domain.com, and the
-    root domain.com as indicated in the following screenshot.
+    root domain.com.
 
 6.  Replicate these DNS entries to your external DNS provider. The process will differ
     depending on the service. In the preceding screen shot, you can see **A** and **CNAME**"
