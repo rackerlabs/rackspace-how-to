@@ -5,8 +5,8 @@ title: Generate a CSR with OpenSSL
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-15'
+last_modified_by: Aaron Davis
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -33,14 +33,28 @@ installed in a "Yum" style system:
 
     rpm -qa | grep -i openssl
 
-The above command should return the following packages, or something
-similar:
+The above command should return the following or similar packages:
 
-    openssl-0.9.8e-7.el5 openssl-0.9.8e-7.el5 openssl-devel-0.9.8e-7.el5
+    openssl-1.0.1e-48.el6_8.1.x86_64
+    openssl-devel-1.0.1e-48.el6_8.1.x86_64
+    openssl-1.0.1e-48.el6_8.1.i686
 
-If it didn't you'll want to run the following:
+If the packages above are not returned, run the following:
 
     yum install openssl openssl-devel
+
+If you are using Debian or Ubuntu and the packages did not return, run the following:
+
+    dpkg -l |grep openssl
+
+You should receive the following output:
+
+    ii  libgnutls-openssl27:amd64           2.12.23-12ubuntu2.4              amd64        GNU TLS library - OpenSSL wrapper
+    ii  openssl                             1.0.1f-1ubuntu2.16               amd64        Secure Sockets Layer toolkit - cryptographic utility
+
+If you do not have openssl installed you can do so with the following command:
+
+    apt-get install openssl
 
 ### Generate the RSA key
 
