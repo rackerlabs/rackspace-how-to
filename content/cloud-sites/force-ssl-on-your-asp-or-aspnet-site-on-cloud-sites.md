@@ -1,5 +1,6 @@
 ---
-node_id: 621
+permalink: force-ssl-on-your-asp-or-aspnet-site-on-cloud-sites/
+audit_date:
 title: Force SSL on your ASP or ASP.NET site on Cloud Sites
 type: article
 created_date: '2011-03-16'

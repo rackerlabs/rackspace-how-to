@@ -1,5 +1,6 @@
 ---
-node_id: 580
+permalink: getting-started-with-cloud-sites-ftpsshfsftp-clients/
+audit_date:
 title: 'Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients'
 type: article
 created_date: '2011-03-16'
@@ -10,63 +11,49 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note**: This article is written for our [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can get to it from the
-Cloud Control Panel by clicking your name in the upper-right corner and
-selecting [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/).
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 ### Previous section
 
-[Getting Started with Cloud
-Sites](/how-to/cloud-sites)
+[Cloud Sites introduction](/how-to/cloud-sites)
 
-**In this article, we will take a look at [FTP](#ftp), [SSHFS](#sshfs)
-and some of the popular [FTP Clients](#ftp_clients). **Because Cloud
+In this article, we will take a look at FTP, SSHFS
+and some of the popular FTP Clients. Because Cloud
 Sites does not offer full SSH access to the web servers, the other
 recommendations would be to use FTP, or you could use SSHFS (SSH
 Filesystem).
-
-
 
 **File Transfer Protocol (FTP)** is a method for adding content to your
 website. As its name indicates, FTP is a means for transferring files
 from one computer to another, or from a local computer to a remote
 server.
 
-For any website you set up, we will automatically create an FTP address
-(i.e. ftp.yourdomain.com). However, due to the nature of DNS
+For any website you set up, we will automatically create an FTP address. However, due to the nature of DNS
 propagation, your custom ftp address may not work during the initial 48
 hour period after DNS for the site has been set up. If you experience
 any issues using your custom ftp address (ftp.yourdomain.com) during
 this time, you should use the universal ftp address,
-"ftp1.ftptoyoursite.com." This universal ftp address will allow you to
+**ftp1.ftptoyoursite.com**. This universal ftp address will allow you to
 add content to your site before DNS has fully propagated to The
 Rackspace Cloud.
 
-<img src="http://c806394.r94.cf2.rackcdn.com/ftpserver2.png" width="387" />
+<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-ftpsshfsftp-clients/ftpserver2.png %}" alt="" />
 
-Let's take a look at how to accomplish some of the most frequently
-needed tasks with FTP.
+### Tasks frequently needed with FTP
 
 **What is my FTP password?**
 
 You can find your FTP password in the Rackspace Cloud Control Panel
 
--   Log into the [Rackspace Cloud Control
-    Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-&gt;Cloud Sites**
+-   Log into the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
+-   Navigate to **Hosting > Cloud Sites**
 -   **Select a website** from the list of active domains
 -   Your FTP information can be found in the **Viewing and Editing**
     section of the initial page
 
-<img src="http://c806394.r94.cf2.rackcdn.com/ftpsettings.png" width="548" />
-
-
+<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-ftpsshfsftp-clients/ftpsettings.png %}" alt="" />
 
 **How can I add additional FTP users?**
-
-<div>
 
 You can create multiple FTP user accounts through your control panel.
 You can the option to restrict that user to a specified directory in a
@@ -74,37 +61,29 @@ site and create several users.
 
 To create FTP users:
 
--   Log into the [Rackspace Cloud Control
-    Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-&gt;Cloud Sites**
+-   Log into the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
+-   Navigate to **Hosting > Cloud Sites**
 -   Click on the **domain** you want to add another FTP user to
 -   Click on the **Security** tab
 
-<img src="http://c806394.r94.cf2.rackcdn.com/securitytab.png" width="578" />
+<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-ftpsshfsftp-clients/securitytab.png %}" alt="" />
 
--   In the **Permissions For Editing Your Website** section, click on
-    **Add A User**
+1. In the **Permissions For Editing Your Website** section, click on **Add A User**.
 
-<img src="http://c806394.r94.cf2.rackcdn.com/addauser.png" width="600" />
+   <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-ftpsshfsftp-clients/addauser.png %}" alt="" />
 
--   Next, **create** the new FTP user's username and password
+2. **Create** the new FTP user's username and password.
 
-<img src="http://c806394.r94.cf2.rackcdn.com/ftpnewuserpass.png" width="485" />
+   <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-ftpsshfsftp-clients/ftpnewuserpass.png %}" alt="" />
 
--   Last, choose the directory level the new FTP user will have access
-    to
+3. Choose the directory level to which the new FTP user will have access.
 
-<img src="http://c806394.r94.cf2.rackcdn.com/ftppermissions.png" width="600" />
+   <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-ftpsshfsftp-clients/ftppermissions.png %}" alt="" />
 
--   Click **Save** to finish adding the new FTP user
+4. Click **Save** to finish adding the new FTP user.
 
 
-
-</div>
-
-
-
-**SSHFS**
+### SSHFS
 
 According to [Wikipedia](http://en.wikipedia.org/wiki/SSHFS):
 
@@ -128,114 +107,84 @@ designed as an extension of the [Secure
 Shell](http://en.wikipedia.org/wiki/Secure_Shell "Secure Shell") protocol
 (SSH) version 2.0."
 
-**NOTE:** *In order to use SSHFS, you will need to install it on a Mac
+**Note:** *In order to use SSHFS, you will need to install it on a Mac
 or a Linux machine. SSHFS cannot be used on a Windows machine.*
 
-
-
-<div>
-
-Although full ssh access is not available you can mount your ftp
-location in Linux using SSHFS. \*Windows/Mac users see footnote
+Although full ssh access is not available, you can mount your ftp
+location in Linux using SSHFS. Windows Mac users see footnote.
 
 Here are the common methods for installing SSHFS:
 
-\* For Debian:
+- For Debian: `apt-get install fuse-utils sshfs`
 
-    apt-get install fuse-utils sshfs
+- For Ubuntu: `sudo apt-get install fuse-utils sshfs`
 
-\* For Ubuntu:
+- For Fedora and CentOS: `yum install fuse-utils sshfs`
 
-    sudo apt-get install fuse-utils sshfs
+  **Note:**  To install on CentOS, you will need to set your machine up to
+[include the EPEL repository](/how-to/install-epel-and-additional-repositories-on-centos-and-red-hat)
+first.
 
-\* For Fedora and Centos:
+- For Mandriva: urpmi: `urpmi fuse-utils sshfs`
 
-    yum install fuse-utils sshfs
-
-(Note:  To install on CentOS you will need to set your machine up to
-[include the EPEL
-repository](/how-to/install-epel-and-additional-repositories-on-centos-and-red-hat)
-first.)
-
-\* For Mandriva: urpmi:
-
-    urpmi fuse-utils sshfs
-
-You will then need to choose and make a directory to mount the ftp
-storage location to. We'll use /mnt/remote for our example:
+Choose and make a directory to which you will mount the ftp
+storage location. In this example we use **/mnt/remote**:
 
     sudo mkdir /mnt/remote
     sudo chown [system-user]:[your-group] /mnt/remote/
 
-Next you will add yourself to the fuse group:
+Next, add yourself to the fuse group:
 
     sudo adduser [system-user] fuse
 
-Now you will connect and mount the ftp storage location:
+Connect and mount the ftp storage location:
 
     sshfs ftp-user@ftp.domain.com: /mnt/remote/
 
-Note: ftp.domain.com will be either ftp1.ftptoyoursite.com,
+**Note:** ftp.domain.com will be either ftp1.ftptoyoursite.com,
 ftp2.ftptoyoursite.com or ftp.domain.com depending on how you connect to
 ftp.
 
-Additionally you can specify a remote path to mount such as
-www.domain.com/web/content.
+Additionally, you can specify a remote path to mount such as
+**www.domain.com/web/content**.
 
     sshfs ftp-user@ftp.domain.com:www.domain.com/web/content/ /mnt/remote/
 
 You will now be asked to accept the key from our system and then for
 your ftp user password.
 
-Once mounted you can cd to your mounted directory and perform many basic
-commands that do not require root access including but not limited to:
+Once mounted, you can cd to your mounted directory and perform many basic
+commands that do not require root access, including but not limited to:
 
     tar     gzip     gunzip     zip     unzip     chmod
 
-You may also want to update the /etc/fuse.conf file to include a line
-such as below to ensure you do not lose connection while working:
+You may also want to update the **/etc/fuse.conf** file to include a line
+like the one below to ensure that you do not lose connection while working:
 
     ServerAliveInterval = 300
 
-**NOTE:** *For Windows and Mac users you can also
+**Note:** Windows and Mac users can also
 use [ExpanDrive](http://www.expandrive.com/ "http://www.expandrive.com") to
-map your FTP storage location as a local drive. *
-
-
+map your FTP storage location as a local drive.
 
 **FTP Clients**
 
-<div>
-
 We don't have a recommended File Transfer Protocol (FTP) client, but
-here is a list of the more popular FTP clients.
+following is a list of the more popular FTP clients.
 
-<span>Commercial</span>
+Commercial
 
 -   [ExpanDrive](http://www.expandrive.com/ "http://www.expandrive.com") (Mac/Windows)
--   [IP
-    Switch](http://www.ipswitch.com/ "http://www.ipswitch.com/") (Windows)
+-   [IP Switch](http://www.ipswitch.com/ "http://www.ipswitch.com/") (Windows)
 -   [Transmit](http://www.panic.com/ "http://www.panic.com/") (Mac)
 -   [CuteFTP](http://www.cuteftp.com/ "http://www.cuteftp.com") (Mac/Windows)
 
-<span>Free</span>
+Free
 
 -   [SmartFTP](http://www.smartftp.com/ "http://www.smartftp.com/") (Windows)
 -   [Fetch](http://www.fetchsoftworks.com/ "http://www.fetchsoftworks.com/") (Mac)
 -   [Cyberduck](http://cyberduck.ch/ "http://cyberduck.ch/") (Mac)
 -   [FileZilla](http://filezilla-project.org/ "http://filezilla-project.org/") (Mac/Windows/Linux)
--   [FireFTP](http://fireftp.mozdev.org/ "http://fireftp.mozdev.org/") (Firefox
-    Extension - Mac/Windows/Linux)
+-   [FireFTP](http://fireftp.mozdev.org/ "http://fireftp.mozdev.org/") (Firefox Extension - Mac/Windows/Linux)
 -   [WinSCP](http://winscp.net/ "http://winscp.net/") (Windows)
 -   [Net2FTP](http://www.net2ftp.com/ "http://www.net2ftp.com") (Web Based)
-
-
-
-[Back](/how-to/cloud-sites)[](/how-to/cloud-sites)[to](/how-to/cloud-sites)[ ](/how-to/cloud-sites)[Getting
-Started with Cloud
-Sites](/how-to/cloud-sites)
-
-</div>
-
-</div>
-

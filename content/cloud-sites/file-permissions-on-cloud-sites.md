@@ -1,5 +1,6 @@
 ---
-node_id: 548
+permalink: file-permissions-on-cloud-sites/
+audit_date:
 title: File permissions on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -10,42 +11,36 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-<p><a id="Foreward" name="Foreward"></a>Directory permissions in a shared environment are exponentially more important than in a dedicated environment. A shared environment uses shared resources, and to keep those resources protected, you must enforce strong file-level access controls. Cloud Sites treats content storage as a UNIX file system. UNIX file permissions can set <em>who</em> can access a file and <em>what</em> that access level is.</p>
+Directory permissions in a shared environment are exponentially more important than in a dedicated environment. A shared environment uses shared resources, and to keep those resources protected, you must enforce strong file-level access controls. Cloud Sites treats content storage as a UNIX file system. UNIX file permissions can set *who* can access a file and *what* that access level is.
 
-<h3><span class="mw-headline">Who can access files? </span></h3>
+### Who can access files?
 
-<p>Who can access files is divided into three categories: user, group, other.</p>
+Who can access files is divided into three categories: user, group, other.
 
-<ul>
-	<li><em>User</em>, abbreviated as <em>U</em> is generally the person who created the file. Another common term for user is <em>owner</em>.</li>
-	<li><em>Group</em>, abbreviated as <em>G</em> is anyone who belongs to the same group to which the file is assigned. By default, when a file is created it inherits the same group membership as the default group of the creator.</li>
-	<li>Other, abbreviated as <em>O</em>, is everyone else and is often referred to as ‘world’, because it’s the rest of the world. User, group, and other are collectively referred to as ‘UGO’.</li>
-</ul>
+-  **User**, abbreviated as **U** is generally the person who created the file. Another common term for user is **owner**.
+-  Group, abbreviated as **G** is anyone who belongs to the same group to which the file is assigned. By default, when a file is created it inherits the same group membership as the default group of the creator.
+-  **Other**, abbreviated as **O**, is everyone else and is often referred to as **world**, because it's the rest of the world. User, group, and other are collectively referred to as **UGO**.
 
-<p><a id="The_What" name="The_What"></a></p>
+### What can they access?
 
-<h3><span class="mw-headline">What can they access? </span></h3>
+The access level is divided into three categories: read, write, execute. Collectively, these are referred to as **RWX** (X for execute). These attributes have a slightly different context for files than for directories.
 
-<p>The access level is divided into three categories: read, write, execute. Collectively, these are referred to as <em>RWX</em> (X for execute). These attributes have a slightly different context for files than for directories.</p>
+For a file, read is the access to view the contents, write is access to modify the contents, and execute is the ability to execute the file.
 
-<p>For a file, read is the access to view the contents, write is access to modify the contents, and execute is the ability to execute the file.</p>
+For a directory, read is access to list the contents of the directory, write is access to add or remove entries from the directory, and execute is access to traverse the directory. If you think of a directory as nothing more than a special file that contains directory entries, then read and write make more sense. Having write access to a directory allows you to add or remove entries, but does not mean that you can edit the contents of the file, which would require write access to the file. The execute access on a file controls two things. If a directory is not set to execute, then you can't change directory (cd) to it. Also, if a directory is not set to execute, you do not have access to change to any directory below it, regardless of those directories' permissions.
 
-<p>For a directory, read is access to list the contents of the directory, write is access to add or remove entries from the directory, and execute is access to traverse the directory. If you think of a directory as nothing more than a special file that contains directory entries, then read and write make more sense. Having write access to a directory allows you to add or remove entries, but does not mean that you can edit the contents of the file, which would require write access to the file. The execute access on a file controls two things. If a directory is not set to execute, then you can't change directory (cd) to it. Also, if a directory is not set to execute, you do not have access to change to any directory below it, regardless of those directories' permissions.</p>
+<img src="{% asset_path cloud-sites/file-permissions-on-cloud-sites/fileperms1a.png %}" alt="" />
 
-<p><img alt="" border="2" height="151" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/fileperms1a.png" width="546" /></p>
+### Representing access with numbers
 
-<p><a id="Representing_Access_with_Numbers" name="Representing_Access_with_Numbers"></a></p>
+Three digits represent all file access controls for UGO, one digit for each. The RWX are included in a single, three-bit wide digit by using a technique called **bit-mapping**. In bit-mapping, each bit has special meaning that represents a value of either ON or OFF. The following illustration provides a quick overview of binary notation.
 
-<h3><span class="mw-headline">Representing access with numbers </span></h3>
+<img src="{% asset_path cloud-sites/file-permissions-on-cloud-sites/fileperms2.png %}" alt="" />
 
-<p>Three digits represent all file access controls for UGO, one digit for each. The RWX are included in a single, three-bit wide digit by using a technique called <em>bit-mapping</em>. In bit-mapping, each bit has special meaning that represents a value of either ON or OFF. The following illustration provides a quick overview of binary notation.</p>
+The three access levels are assigned to a single to bit in the following order, from high to low: read write execute. Three bits (binary digits) can represent any eight values from 0-7. A range from 0-7 is called octal, as opposed to dealing with 0-9, which is called decimal. Read is in the 4s column. Write is in the 2s column. Execute is in the 1s column. The following table provides a reference:
 
-<p><img alt="" border="2" height="" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/fileperms2.png" width="600" /></p>
-
-<p>The three access levels are assigned to a single to bit in the following order, from high to low: read write execute. Three bits (binary digits) can represent any eight values from 0-7. A range from 0-7 is called octal, as opposed to dealing with 0-9, which is called decimal. Read is in the 4’s column. Write is in the 2’s column. Execute is in the 1’s column. The following table provides a reference:</p>
-
-| Ocal | Read | Write | Execute |
-| ---- | ---- | ----- | ------- |
+| Octal | Read | Write | Execute |
+| ----- | ---- | ----- | ------- |
 | 0 | 0 | 0 | 0 |
 | 1 | 0 | 0 | 1 |
 | 2 | 0 | 1 | 0 |
@@ -55,32 +50,26 @@ product_url: cloud-sites
 | 6 | 1 | 1 | 0 |
 | 7 | 1 | 1 | 1 |
 
-<p>Each entity with access (who) is given one of these octal bit-maps in the following order from high to low: User Group Other. So each <em>who</em> has a way to represent, in octal, the read, write, and execute access for it. The following graphic provides an illustration:</p>
+Each entity with access (who) is given one of these octal bit-maps in the following order from high to low: User Group Other. So each **who** has a way to represent, in octal, the read, write, and execute access for it. The following graphic provides an illustration:
 
-<p><img alt="" height="" norder="2" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/fileperms3.png" width="600" /></p>
+<img src="{% asset_path cloud-sites/file-permissions-on-cloud-sites/fileperms3.png %}" alt="" />
 
-<p>A single octal digit represents the RWX ON and OFF values. Three of these octal values represent all three of the ‘who’. So, the number 777, is not literally seven hundred-seventy-seven, it is actually 7, 7, and 7, where each octal digit indicates that all three bits have been set ON (4+2+1 = 7), thus giving full permissions to User, Group and Other.</p>
+A single octal digit represents the RWX ON and OFF values. Three of these octal values represent all three of the 'who'. So, the number 777, is not literally seven hundred-seventy-seven, it is actually 7, 7, and 7, where each octal digit indicates that all three bits have been set ON (4+2+1 = 7), thus giving full permissions to User, Group and Other.
 
-<p><a id="File_Creation" name="File_Creation"></a></p>
+### File creation
 
-<h3><span class="mw-headline">File creation </span></h3>
+When a file is created, it takes its owner as the person who created the file, and its group is the default group of the user who created the file. The permissions are set against a mask that might specify whether certain bits, and thus permissions, should be turned OFF by default. Most services, such as FTP or Bash, mask OFF the world writable bit, making it impossible to create a file that is world writable. The Rackspace Cloud Sites FTP and SFTP all behave in this manner. The owner can change the permissions after file creation to anything from 000 to 777. As a result, within the Rackspace Cloud Sites environment, there is usually no reason to give Other write permissions to any file or any directory.
 
-<p>When a file is created, it takes its owner as the person who created the file, and its group is the default group of the user who created the file. The permissions are set against a mask that might specify whether certain bits, and thus permissions, should be turned OFF by default. Most services, such as FTP or Bash, mask OFF the world writable bit, making it impossible to create a file that is world writable. The Rackspace Cloud Sites FTP and &nbsp;SFTP all behave in this manner. The owner can change the permissions after file creation to anything from 000 to 777. As a result, within the Rackspace Cloud Sites environment, there is usually no reason to give Other write permissions to any file or any directory.</p>
+### Cloud Sites scenarios
 
-<p><a id="Cloud_Sites_Scenarios" name="Cloud_Sites_Scenarios"></a></p>
+Cloud Sites is continually working to improve security. Following are a few special cases that you need to know about to properly secure files.
 
-<h3><span class="mw-headline">Cloud Sites scenarios </span></h3>
+-  If you are using Cloud Sites only as a PHP solution, you can completely remove all Other permissions from all files and directories. So files could be 600 and directories could be 700.
+-  When you are using multiple FTP users to manage the content of the site, the Group permissions must be considered. FTP users are in the same group as the primary account owner. Their ability to access files is determined through the Group permissions, and in general they should be set the same as the User permissions. 770 is standard for directories, and 660 is standard for files.
+-  When you are using CGI, the CGI files must be set to Executable. So 700 or 770 is the standard for files in the **cgi-bin** directory.
+-  If you are using Cloud Sites classic ASP/.Net solution, we recommend that you use impersonation. Contact our Support for assistance with this.
 
-<p>Cloud Sites is continually working to improve security. Following are a few special cases that you need to know about to properly secure files.</p>
-
-<ul>
-	<li>If you are using Cloud Sites only as a PHP solution, you can completely remove all Other permissions from all files and directories. So files could be 600 and directories could be 700.</li>
-	<li>When you are using multiple FTP users to manage the content of the site, the Group permissions must be considered. FTP users are in the same group as the primary account owner. Their ability to access files is determined through the Group permissions, and in general they should be set the same as the User permissions. 770 is standard for directories, and 660 is standard for files.</li>
-	<li>When you are using CGI, the CGI files must be set to Executable. So 700 or 770 is the standard for files in the <strong>cgi-bin</strong> directory.</li>
-	<li>If you are using Cloud Sites classic ASP/.Net solution, we recommend that you use impersonation. Contact our Support for assistance with this.</li>
-</ul>
-
-<p>The following table provides a reference for each scenario.</p>
+The following table provides a reference for each scenario.
 
 | Type | Permission | User | Group | Other | Description |
 | ---- | ---------- | ---- | ----- | ----- | ----------- |

@@ -1,5 +1,6 @@
 ---
-node_id: 586
+permalink: bin-deploy-an-aspnet-assembly-on-cloud-sites/
+audit_date:
 title: Bin-deploy an ASP.NET assembly on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -22,12 +23,10 @@ deployment*. This article describes how to bin-deploy an assembly.
 ### Prerequisites
 
 -   You must have an existing Cloud Sites website. If you do not have
-    one, see [Adding a new
-    website](/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website).
+    one, see [Adding a new website](/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website).
 -   IIS and ASP.NET should be the default technology on the site or
     should, at a minimum, be enabled on this site.
--   The Rackspace cloud uses [a modified medium trust
-    configuration](/how-to/modified-medium-trust-on-cloud-sites).
+-   The Rackspace cloud uses [a modified medium trust configuration](/how-to/modified-medium-trust-on-cloud-sites).
     To function correctly, the assembly must allow partially
     trusted callers. If you do not know whether the assembly will work
     in medium trust, contact the vendor.
@@ -41,7 +40,7 @@ deployment*. This article describes how to bin-deploy an assembly.
 
 To get started, you must obtain the assembly that you want to bin
 deploy. As an example, the instructions in this article bin-deploy
-[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/"),
+[UrlRewriter.NET](https://sourceforge.net/projects/urlrewriter/),
 a URL rewriter for ASP.NET applications that do not have the URL Rewrite
 Module installed.
 
@@ -50,13 +49,11 @@ Module installed.
 The following steps use UrlRewriter.NET. Substitute with the assembly
 that you want to deploy.
 
-1.  Go to <http://www.urlrewriter.net/>.
-2.  Click the **Download** tab, and then click the **source code** link
+1.  Go to <https://sourceforge.net/projects/urlrewriter/>.
+2.  Click the **Files** tab, and then click the **urlrewriter.net for .net v1.1** link
     to download the binaries and source code.
-3.  Select one of the binary files, which is typically the first link
-    under **Newest Files**.
-    The most recent binary file at the time this article was written was
-    **UrlRewriterNet-1\_8.zip**.
+3.  The most recent binary file at the time this article was written was
+    **UrlRewriterNet-1_8.zip**.
 4.  If the download doesn't start within a few seconds, click the
     direct link.
 5.  Save the file to your computer.
@@ -67,9 +64,7 @@ that you want to deploy.
 To use the assembly from your website code, the module must be located
 in the **Bin** directory on your FTP server, which is the standard
 location for bin-deploying assemblies. Following the example, to
-bin-deploy **Intelligencia.UrlRewriter.dll**, [connect to your website's
-FTP server and upload the DLL
-file](/how-to/getting-started-with-cloud-sites-uploading-your-content)
+bin-deploy **Intelligencia.UrlRewriter.dll**, [connect to your website's FTP server and upload the DLL file](/how-to/getting-started-with-cloud-sites-uploading-your-content)
 to the following directory (**www.example.com** is your website name):
 
     /www.example.com/web/content/Bin
@@ -79,10 +74,7 @@ to the following directory (**www.example.com** is your website name):
 Some assemblies require different definitions in the **web.config** file
 to work correctly. The best way to learn how to load an assembly is to
 consult the vendor's website. In this example, we are bin-deploying
-**Intelligencia.UrlRewriter.dll**, so we consulted the vendor's website
-and found [a help document that explains the
-configuration](http://urlrewriter.net/index.php/support/configuration "http://urlrewriter.net/index.php/support/configuration").
-Using this information, you could load UrlRewriter.NET by using the
+**Intelligencia.UrlRewriter.dll**, you could load UrlRewriter.NET by using the
 following example **web.config** configuration:
 
     <?xml version="1.0" encoding="UTF-8"?>
@@ -116,7 +108,4 @@ Because of the vast amount of assemblies that can be bin-deployed, it's
 impossible to cover usage of them in this article. As with loading the
 assembly, the best way to learn how to use an assembly is to consult the
 vendor's website. To learn how to use the
-**Intelligencia.UrlRewriter.dll** used in this example, [see the article
-on URL rewriting in
-ASP.NET](/how-to/rewrite-urls-from-aspnet-on-cloud-sites).
-
+**Intelligencia.UrlRewriter.dll** used in this example, [see the article on URL rewriting in ASP.NET](/how-to/rewrite-urls-from-aspnet-on-cloud-sites).

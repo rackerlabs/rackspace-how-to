@@ -1,5 +1,6 @@
 ---
-node_id: 2182
+permalink: unsupported-commands-via-cron-on-cloud-sites/
+audit_date:
 title: Unsupported commands via CRON on Cloud Sites
 type: article
 created_date: '2012-09-20'
@@ -10,14 +11,10 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-Unsupported commands via CRON
------------------------------
+### Unsupported commands via CRON
 
 To protect the integrity of the Rackspace Cloud Sites platform, we have
 limited the ability to run some commands via CRON.
-
-Commands:
----------
 
 -   crontab
 -   df
@@ -38,5 +35,3 @@ Commands:
 -   yppasswd
 -   yum
 -   strace
-
-

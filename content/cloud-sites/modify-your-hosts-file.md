@@ -1,178 +1,126 @@
 ---
-node_id: 629
+permalink: modify-your-hosts-file/
+audit_date: '2106-06-08'
 title: Modify your hosts file
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-08'
+last_modified_by: Nate Archer
 product: Cloud Sites
 product_url: cloud-sites
 ---
 
-Modificar seu arquivo hosts permite que voc&ecirc; substitua o dom&iacute;nio DNS em
-uma determinada m&aacute;quina. Isso pode ser usado para avaliar o seu site sem
-o link de teste antes de ir ao vivo com o SSL, verificar se o alias de
-um local funciona antes de altera&ccedil;&otilde;es de DNS, ou por outros motivos
-relacionados com o DNS. Isso faz com que sua m&aacute;quina local somente se
-conecte diretamente com o IP especificado.
+Modifying your **hosts** file enables you to override the DNS for a domain, on that particular machine. This is useful when you want to test your site without the test link, prior to going live with SSL; verify that an alias site works, prior to DNS changes; and for other DNS-related reasons. Modifying your **hosts** file causes your local machine to look directly at the IP address specified.
 
-Seu arquivo hosts precisa de duas entradas secund&aacute;rias que cont&ecirc;m o
-endere&ccedil;o IP do site que voc&ecirc; deseja mostrar e o endere&ccedil;o. Adicionar as
-duas linhas a seguir, por exemplo,
-[www.dominio.com](http://www.dominio.com) e dominio.com aponta direto ao
-nosso PHP5-ITK cluster ("Refreshed" PHP5))
+To modify the hosts file, you add two entries to the file that contains the IP address that you want the site to resolve to and the address. Adding the following two lines, for example, point **www.domain.com** and **domain.com** to our current PHP5-ITK ("Refreshed" PHP5) cluster:
 
     64.49.219.194 www.domain.com
     64.49.219.194 domain.com
 
-Abaixo detalhes de como localizar e editar o arquivo hosts em diferentes
-sistemas operacionais. Uma vez que as informa&ccedil;&otilde;es de um dom&iacute;nio s&atilde;o
-adicionadas, salve o arquivo e o sistema come&ccedil;ar&aacute; a enviar ao IP
-especificado. Ap&oacute;s os testes, estas entradas devem ser removidas.
+The sections in this article provide instructions for locating and editing the hosts file on the following operating systems:
 
--   [Windows 8, Windows 7, and Windows Vista](#Windows_Vista)
--   [Windows NT, Windows 2000, and Windows XP](#Windows_NT2000XP)
--   [Linux](#Linux)
--   [Mac OS X 10.0 through 10.1.5](#Mac_OS_X_100_through_1015)
--   [Mac OS X 10.6 through 10.8](#macosx10.6)
+-   Windows 10, Windows 8, Windows 7, and Windows Vista
+-   Windows NT, Windows 2000, and Windows XP
+-   Linux
+-   Mac OS X 10.0 through 10.1.5
+-   Mac OS X 10.6 through 10.11
 
-Windows 8, Windows 7, e Windows Vista
--------------------------------------
+After you add the domain information and save the file, your system begins resolving to the specified IP address. After testing is finished, remove these entries.
 
-Windows 8, Windows 7 e Windows Vista usam o Controle de Conta de Usu&aacute;rio
-(UAC, sua sigla em Ingl&ecirc;s), de modo que o notebook deve ser executado
-como Administrador.
+### Windows
 
-### Para Windows 8
+Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notepad must be run as Administrator.
 
-1.  Pressione a tecla Windows.
-        Escreva notepad no campo de pesquisa.
-        No campo de pesquisa, pressione o bot&atilde;o direito do mouse sobre
-    Bloco de notas e selecione Executar como administrador.
-        No bloco de notas, abra o arquivo a seguir:
-        C: \\ Windows \\ System32 \\ drivers \\ etc \\ hosts
-        Fa&ccedil;a as altera&ccedil;&otilde;es necess&aacute;rias no arquivo hosts.
-        Pressione Arquivo -&gt; Salvar para salvar as altera&ccedil;&otilde;es.
+**For Windows 10 and 8**
 
+1.  Press the Windows key.
+2.  Type **Notepad** in the search field.
+3.  In the search results, right-click **Notepad** and select **Run as administrator**.
+4.  From Notepad, open the following file: **c:\Windows\System32\Drivers\etc\hosts**
+5.  Make the necessary changes to the file.
+6.  Click **File > Save** to save your changes.
 
-### For Windows 7 and Windows Vista
+**For Windows 7 and Vista**
 
-    Clique Iniciar&gt; Todos os Programas&gt; Acess&oacute;rios.
-    Clique com o bot&atilde;o direito do mouse Bloco de notas e selecione
-Executar como administrador.
-    Clique em Continuar na janela do UAC "Windows precisa da sua
-permiss&atilde;o".
-    Quando o bloco de notas abrir, clique em Arquivo -&gt; Abrir.
-    No campo Nome do arquivo, digite:
-    C: \\ Windows \\ System32 \\ drivers \\ etc \\ hosts
-    Clique Abrir.
-    Fa&ccedil;a as altera&ccedil;&otilde;es necess&aacute;rias no arquivo hosts.
-    Clique Arquivo -&gt; Salvar para salvar as altera&ccedil;&otilde;es.
+1.  Click **Start > All Programs > Accessories**.
+2.  Right-click **Notepad** and select **Run as administrator**.
+3.  Click **Continue** on the Windows needs your permission UAC window.
+4.  When **Notepad** opens, click **File > Open**.
+5.  In the **File name** field, type **C:\Windows\System32\Drivers\etc\hosts**.
+6.  Click **Open**.
+7.  Make the necessary changes to the file.
+8.  Click **File > Save** to save your changes.
 
-Windows NT, Windows 2000, and Windows XP
-----------------------------------------
+**Windows NT, Windows 2000, and Windows XP**
 
-1.  Clique Iniciar -&gt; Todos os Programas&gt; Acess&oacute;rios -&gt; Bloco
-    de Notas.
-        Clique File-&gt; Open.
-        No campo Nome do arquivo, digite:
-        C: \\ Windows \\ System32 \\ drivers \\ etc \\ hosts
-    Clique Abrir.
-        Fa&ccedil;a as altera&ccedil;&otilde;es necess&aacute;rias  no arquivo hosts.
-        Clique Arquivo -&gt; Salvar para salvar as altera&ccedil;&otilde;es.
+1.  Click **Start > All Programs > Accessories > Notepad**.
+2.  Click **File > Open**.
+3.  In the **File name** field, type **C:\Windows\System32\Drivers\etc\hosts**.
+4.  Click **Open**.
+5.  Make the necessary changes to the file.
+6.  Click **File > Save** to save your changes.
 
-Linux
------
+### Linux
 
-1\. Abra uma janela de terminal.
+1.  Open a terminal window.
+2.  Open the hosts file in a text editor (you can use any text editor) by typing the following line:
 
-2. Abra o arquivo hosts em um editor de texto (voc&ecirc; pode usar qualquer
-editor de texto):
+        sudo nano /etc/hosts
 
-sudo nano / etc / hosts
+3.  Enter your domain user password.
+4.  Make the necessary changes to the file.
+5.  Press **Control-x**.
+6.  When asked if you want to save your changes, answer **y**.
 
-3. Digite sua senha
+### Mac OS X 10.0 through 10.11
 
-4. Fa&ccedil;a as altera&ccedil;&otilde;es necess&aacute;rias no arquivo hosts.
+**Mac OS X 10.0 through 10.1.5**
 
-5. Pressione control X (Clique CTRL e pressione X) e, em seguida, clique
-quando perguntado se voc&ecirc; deseja salvar as altera&ccedil;&otilde;es.
+1.  Open **/Applications/Utilities/NetInfo Manager**.
+2.  To allow editing of the NetInfo database, click the padlock in the lower-left corner of the window.
+3.  Enter your domain user password and click **OK**.
+4.  In the second column of the browser view, select the node named machines.
 
+    The third column contains entries for `-DHCP-`, `broadcasthost`, and `localhost`.
 
-Mac OS X 10.0 through 10.1.5
-----------------------------
+5.  In the third column, select `localhost`.
+6.  From the **Edit** menu, select **Duplicate**. (The quickest way to create a new entry is to duplicate an existing one.)
 
-1.  1\. Abra **/Applications/Utilities/NetInfo Manager**..
+    A confirmation alert appears.
 
-    2. Para permitir a edi&ccedil;&atilde;o do banco de dados do NetInfo, clique no
-    cadeado no canto inferior esquerdo da janela.
+7.  Click **Duplicate**.
 
-    3. Digite sua senha e pressione OK.
+    A new entry called localhost copy appears, and its properties are shown below the browser view.
 
-    4. Na segunda coluna da janela do navegador, selecione o n&oacute;(node)
-    chamado `machines`. Voc&ecirc; ver&aacute; -DHCP-, BroadcastHost, e localhost na
-    terceira coluna.
+8.  Double-click the value of the `ip_address` property and enter the IP address of the other computer.
+9.  Double-click the value of the `name` property and enter the hostname you want for the other computer.
+10.  Click the `serves` property and select **Delete** from the **Edit** menu.
+11.  From the **File** menu, select **Save**.
 
-    5. Selecione o elemento de localhost na terceira coluna.
+     A confirmation alert appears.
 
-    6. Escolha Duplicar no menu Editar (o caminho mais r&aacute;pido para criar uma
-    nova entrada &eacute; duplicar uma existente). Um alerta de confirma&ccedil;&atilde;o
-    aparece.
+12.  Click **Update this copy**.
+13.  Repeat steps 6 through 12 for each additional host entry that you want to add.
+14.  From the NetInfo Manager menu, select **Quit**.
 
-    7. Pressione Duplicar. Uma nova entrada chamada **localhost copia** e
-    suas propriedades s&atilde;o mostradas abaixo da janela do browser.
+     You do not need to restart the computer.
 
-    8. Pressione duas vezes o valor da propriedade ip\_address e digite o
-    endere&ccedil;o IP do outro computador.
+**Mac OS X 10.6 through 10.11**
 
-    9. Prima duas vezes o valor da propriedade de nome e digite o nome do
-    host que voc&ecirc; deseja para o outro computador.
+1.  Open **Applications > Utilities > Terminal**.
+2.  Open the **hosts** file by typing the following line in the terminal window:
 
-    Serve 10. Pressione a propriedade e escolha Excluir no menu Editar.
+        sudo nano /private/etc/hosts
 
-    11. Clique em Salvar no menu Arquivo. alerta de confirma&ccedil;&atilde;o aparece.
+3.  Type your domain user password when prompted.
+4.  Edit the **hosts** file.
 
-    12. Clique em Atualizar essa c&oacute;pia.
+    The file contains some comments (lines starting with the # symbol), and some default hostname mappings (for example, 127.0.0.1 – local host). Add your new mappings after the default mappings.
 
-    13. Repita os passos de 6 a 12 para cada entrada de host adicional que
-    voc&ecirc; deseja adicionar.
+5.  Save the hosts file by pressing **Control+x** and answering **y**.
+6.  Make your changes take effect by flushing the DNS cache with the following command:
 
-    14. Selecione Sair do menu de NetInfo Manager. N&atilde;o h&aacute; necessidade de
-    reiniciar o computador.
+        dscacheutil -flushcache
 
-
-Mac OS X 10.6 - 10.8
---------------------
-
-1.  1\. Abra Aplicativos&gt; Utilit&aacute;rios&gt; Terminal.
-
-    2. Abra o arquivo hosts, digitando o seguinte na janela Terminal:
-
-    sudo nano / privado / etc / hosts
-
-    Digite sua senha quando solicitado.
-
-    3. Edite o arquivo hosts. O arquivo hosts cont&eacute;m coment&aacute;rios (linhas que
-    come&ccedil;am com \#), e alguns nomes de host de mapeamento padr&atilde;o (por
-    exemplo, 127.0.0.1 - host local). Fixe seus novos mapeamentos abaixo os
-    mapeamentos padr&atilde;o.
-
-    4. Salve o arquivo hosts pressionando Control + xy e resposta.
-
-    5. Para que as altera&ccedil;&otilde;es tenham efeito, esvaziar o cache DNS com o
-    seguinte comando:
-
-    dscacheutil -flushcache
-
-    6. Agora, aplique o novo mapeamento.
-
-
-
-. Para que se apliquen sus cambios, vac&iacute;e la cach&eacute; del DNS con el
-siguiente comando:
-
-    dscacheutil -flushcache
-
-6\. Ahora se aplicar&aacute;n los nuevos mapeos.
-
+  The new mappings should now take effect.

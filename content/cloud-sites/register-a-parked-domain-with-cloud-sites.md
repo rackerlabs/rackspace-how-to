@@ -1,5 +1,6 @@
 ---
-node_id: 720
+permalink: register-a-parked-domain-with-cloud-sites/
+audit_date:
 title: Register a parked domain with Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -10,23 +11,17 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note:** This article refers to the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can access this
-interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
-by clicking the **Cloud Control Panel** menu at the top of the window
-and selecting **Cloud Sites**.
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 If you want to purchase a domain but are not ready to use it for a
 website, you can "park" the domain. A parked domain is a domain that is
 registered but doesn't point to a website. You always have the option to
 point the domain to a website at a later date.
 
-To register a parked domain with Cloud Sites
---------------------------------------------
+### To register a parked domain with Cloud Sites
 
-1.  Log in to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com "http://manage.rackspacecloud.com").
-2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
+1.  Log in to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com).
+2.  In the left navigation pane, click **Hosting > Cloud Sites**.
 3.  Click **Add A Site**.
 4.  In the Add a New Website dialog box, select the site owner and enter
     the domain name, and then click **Add New Site**.
@@ -36,4 +31,3 @@ To register a parked domain with Cloud Sites
 
 You should receive confirmation that Cloud Sites has added your website
 to your account.
-

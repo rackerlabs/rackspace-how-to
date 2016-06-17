@@ -1,5 +1,6 @@
 ---
-node_id: 649
+permalink: test-cdosys-smtp-functionality/
+audit_date:
 title: Test CDOSYS SMTP functionality
 type: article
 created_date: '2011-03-16'
@@ -19,8 +20,7 @@ Because of stringent anti-spam filters, sending mail through
 unauthenticated SMTP servers (including the localhost relay on Cloud
 Sites) can result in delays or undelivered email.
 
-Example code using CDOSYS
--------------------------
+### Example code using CDOSYS
 
 For the following variables, replace the example values with the
 appropriate values for your system:
@@ -31,7 +31,6 @@ appropriate values for your system:
 -   .To
 -   .From
 
-<!-- -->
 
     <%
     Const cdoSendUsingMethod       = "http://schemas.microsoft.com/cdo/configuration/sendusing"
@@ -84,9 +83,6 @@ appropriate values for your system:
     Set objConfig = Nothing
     %>
 
-Related article
----------------
+### Related article
 
-[Test PHP SMTP
-functionality](/how-to/test-php-smtp-functionality)
-
+[Test PHP SMTP functionality](/how-to/test-php-smtp-functionality)

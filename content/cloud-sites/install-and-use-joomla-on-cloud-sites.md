@@ -1,5 +1,6 @@
 ---
-node_id: 671
+permalink: install-and-use-joomla-on-cloud-sites/
+audit_date:
 title: Install and use Joomla on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -10,13 +11,9 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**NOTE:** This article refers to the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can access this
-interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
-by clicking your username in the upper-right corner of the control panel
-and selecting Cloud Sites Control Panel.
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
-**Prerequisites**
+### Prerequisites
 
 -   Administrative access to the Rackspace Cloud to create domains and
     add databases
@@ -25,47 +22,37 @@ and selecting Cloud Sites Control Panel.
 -   Ftp access to website, and a ftp client like ExpanDrive in order to
     use the ftp method of uploading files (optional)
 
-**Procedure**
+### Procedure
 
--   Login to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com/pages/Login.jsp%7C "http://manage.rackspacecloud.com/pages/Login.jsp|")
--   If you are new to Rackspace Cloud, please refer to [Adding a new
-    website](/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website "/knowledge_center/index.php/Adding_a_new_website").
--   Navigate the Hosting-&gt;Cloud Sites menu to the website hyperlink
+-   Login to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com/)
+-   If you are new to Rackspace Cloud, please refer to [Adding a new website](/how-to/getting-started-with-cloud-sites-how-to-add-a-new-website).
+-   Navigate the **Hosting > Cloud Sites** menu to the website hyperlink
     on which Joomla needs to be installed
 
-NOTE: The domain must have php enabled, and database feature selected.
+  **Note:** The domain must have php enabled, and database feature selected.
 The database feature can be added by using the CHANGE PLAN hyperlink on
 the domain **General Settings** tab.
 
 -   Upload the Joomla files to the desired location on the website using
-    FTP - Refer to [Upload content to a website using
-    FTP](/how-to/getting-started-with-cloud-sites-uploading-your-content "/knowledge_center/index.php/Uploading_content_to_a_website_using_FTP")
+    FTP - Refer to [Upload content to a website using FTP](/how-to/getting-started-with-cloud-sites-uploading-your-content)
     -   To integrate Joomla to the root of domain (e.g.
-        http://example.com/), place all contents of the unzipped Joomla
+        **http://example.com/**), place all contents of the unzipped Joomla
         directory (but excluding the directory itself) into the root
         directory of /web/content/.
     -   To have the Joomla installation in its own subdirectory on the
-        website (e.g. http://example.com/Joomla/), rename the directory
+        website (e.g. **http://example.com/Joomla/**), rename the directory
         to the name of choice and place it on the web server, for e.g.
         to use a subdirectory called "Joomla", rename the directory
         called "Joomlaxxx" to "Joomla" and upload it to /web/content/.
-
-<!-- -->
-
 -   Next create a new Mysql database (e.g. joomla15) with user (e.g.
-    joomla15) (Refer to \* [Add a MySQL database to a website or
-    domain](/how-to/rackspace-cloud-sites-essentials-mysql-databases "/knowledge_center/index.php/Adding_a_MySQL_database_to_a_website_or_domain")).
+    joomla15) (Refer to [Add a MySQL database to a website or domain](/how-to/rackspace-cloud-sites-essentials-mysql-databases)).
 -   Note the database information a) database name b) user name c)
     password d) hostname (not localhost) for use during the
     Joomla installation.
-
-<!-- -->
-
 -   With this, Cloud Sites specific steps are complete. Follow on screen
     prompts to continue the installation.
 -   Run the Joomla installation script by accessing Joomla for the first
-    time in your favorite web browser. ( see below)
+    time in your favorite web browser. (see below)
     -   If Joomla files are placed in the root directory, e.g. visit:
         http://www.example.com
     -   If Joomla is in its own sub-directory called "Joomla", e.g.
@@ -74,9 +61,6 @@ the domain **General Settings** tab.
         in the Cloud Sites Control Panel under the General
         Settings tab, e.g.
         visit: http://www.example.com.php5-7.dfw1-1.websitetestlink.com/Joomla.
-
-<!-- -->
-
 -   Select a language and follow the on-screen prompts
 -   Proceed to next step and note warning that the configuration.php
     file is not writable. (This will happen if a secondary ftp user
@@ -85,9 +69,6 @@ the domain **General Settings** tab.
 -   Select "mysql" as the database type. Fill in the required
     information for database which was noted down when it was
     setup earlier.
-
-
-
 -   Skip the FTP Configuration for now. Default is not to use the
     FTP layer. Accept it and move to next step.
 -   In the Main configuration, customize the site name, specify an
@@ -109,13 +90,9 @@ the domain **General Settings** tab.
         visit: http://www.example.com.php5-7.dfw1-1.websitetestlink.com/Joomla
 -   Sign in as "admin" and customize site as needed
 
+#### Additional Resources
 
-**Additional Resources**
-
--   <span>A video tutorial is available at
-    </span><http://www.rackspace.com/cloud/cloud_hosting_demos/>
+-   >A video tutorial is available at
+    <http://www.rackspace.com/cloud/cloud_hosting_demos/>
 -   Add new articles using the Joomla documentation at
     <http://docs.joomla.org/>
-
----**RKN** - 12/6/2009
-

@@ -1,6 +1,7 @@
 ---
-node_id: 3837
-title: Displaying SVG Images In Cloud Sites PHP Deployments
+permalink: displaying-svg-images-in-cloud-sites-php-deployments/
+audit_date:
+title: Display SVG Images In Cloud Sites PHP Deployments
 type: article
 created_date: '2013-12-18'
 created_by: Bryon Farris
@@ -10,9 +11,9 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-***Note: As of Wordpress 3.8, Wordpress employs an SVG logo for the
+**Note**: As of Wordpress 3.8, Wordpress employs an SVG logo for the
 administration page logo, the following fix will also allow this image
-to properly show.***
+to properly show.
 
 In order to properly show SVG image types within the Cloud Sites PHP
 environment, the following line will need to be added to your .htaccess
@@ -27,8 +28,8 @@ For a very extensive list of what MIME Type Apache supports, please
 review:
 <http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types>
 
-*Note: The following link may not be fully formatted correctly for the
-.htaccess*
+**Note:** The following link may not be fully formatted correctly for the
+.htaccess
 
 
 

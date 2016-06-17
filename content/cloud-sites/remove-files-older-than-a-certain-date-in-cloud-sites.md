@@ -1,5 +1,6 @@
 ---
-node_id: 640
+permalink: remove-files-older-than-a-certain-date-in-cloud-sites/
+audit_date:
 title: Remove files older than a certain date in Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -17,8 +18,7 @@ script that performs similar logic.
 This article describes how to perform this task by using a PHP script
 and a HTML form, as an alternative to using a cron job.
 
-Prerequisites
--------------
+### Prerequisites
 
 Before implementing your script for deletion of older files, understand
 that this is not designed to be used as a cron job. If you want to use a
@@ -27,11 +27,11 @@ cron job, perform one of the following tasks:
 -   Hard code the arguments passed over `HTML GET`.
 -   Pass the arguments on the CLI and use `argv[0]` and `argv[1]`.
 
-#### Example 1
+**Example 1**
 
     ex1 $dir = opendir("/mnt/stor1-wc1-dfw1/111111/www.testform.com/web/content/logs") or die("Could not open directory");
 
-#### <span class="mw-headline">Example 2 </span>
+**Example 2**
 
     ex2 $dir  = opendir($argv[0)) or die("Could not open directory");
 
@@ -40,8 +40,7 @@ content. Secure it with a
 [.htaccess](/how-to/rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig)
 file. You can also delete the form when you're done with it.
 
-The HTML form
--------------
+### The HTML form
 
 The HTML form that sends the directory and age to the PHP script is as
 follows:
@@ -59,8 +58,7 @@ follows:
          </body>
     </html>
 
-The PHP script
---------------
+### The PHP script
 
 The PHP script that takes arguments from the `HTML GET` query string can
 be constructed as follows:
@@ -99,6 +97,3 @@ be constructed as follows:
     closedir($dir);
 
     ?>
-
-
-

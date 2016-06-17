@@ -1,5 +1,6 @@
 ---
-node_id: 4062
+permalink: use-a-later-version-of-mysql-with-net-applications-on-cloud-sites/
+audit_date:
 title: Use a later version of MySQL with .NET applications on Cloud Sites
 type: article
 created_date: '2014-05-07'
@@ -19,18 +20,16 @@ your .NET application.
 This article describes the two approaches to bin deploying a later
 version of MySQL.
 
-<span style="line-height: 1.6;">MySQL versions 6.4.6 (MySQL) and 6.4.4
-(MySQL NuGet) are known to work in Cloud Sites and are medium trust
-compliant.</span>
+MySQL versions 6.4.6 (MySQL) and 6.4.4 (MySQL NuGet) are known to work in Cloud Sites and are medium trust
+compliant.
 
-### [Perform a bin deploy with NuGet and Visual Studio 2013]()
+### Perform a bin deploy with NuGet and Visual Studio 2013
 
 1.  Open Visual Studio and your .NET application.
 
-2.  In Visual Studio, select **Tools** &gt; **NuGet Package
-    Manager** &gt; **Package Manager Console**.
+2.  In Visual Studio, select **Tools > NuGet Package Manager > Package Manager Console**.
 
-    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/packagemanger.png" width="474" height="321" />
+    <img src="{% asset_path cloud-sites/use-a-later-version-of-mysql-with-net-applications-on-cloud-sites/packagemanger.png %}" alt="" />
 
     The console should appear near the bottom of the Visual Studio
     window, depending on how you've set up your views.
@@ -41,20 +40,19 @@ compliant.</span>
 
         Install-Package MySql.Data -Version 6.4.4
 
-    <img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/console.png" width="650" height="300" />
+    <img src="{% asset_path cloud-sites/use-a-later-version-of-mysql-with-net-applications-on-cloud-sites/console.png %}" alt="" />
 
 4.  Check your application's **bin** directory for the
     **MySql.Data.dll** to confirm the MySQL installation.
 
 5.  Publish your application and upload it to Cloud Sites.
 
-### [Perform a bin deploy with an MSI package from MySQL]()
+### Perform a bin deploy with an MSI package from MySQL
 
 We recommend running an MSI installation on a development machine to
 avoid installing extra software on a production machine.
 
-1.  Download a compliant MySQL Connector version from [the MySQL
-    website](http://dev.mysql.com/downloads/connector/net/ "MySql Connector").
+1.  Download a compliant MySQL Connector version from [the MySQL website](http://dev.mysql.com/downloads/connector/net/).
     Version 6.4.6 is known to work with Cloud Sites.
 
 2.  Double-click the MSI file you downloaded (for example,
@@ -70,17 +68,14 @@ avoid installing extra software on a production machine.
 6.  After MySQL Connector is installed, go to Windows Explorer and
     navigate to the directory for the MySQL version you will use.
 
-    -   For .NET 3.5 applications, ;go to **"C:\\Program Files
-        (x86)\\MySQL\\MySQL Connector Net 6.4.6\\Assemblies\\Version
-        2.0"**.
-    -   For .NET 4.0 applications, go to **"C:\\Program Files
-        (x86)\\MySQL\\MySQL Connector Net 6.4.6\\Assemblies\\version
-        4.0"**.
+    -   For .NET 3.5 applications, go to **C:\Program Files
+        (x86)\MySQL\MySQL Connector Net 6.4.6\Assemblies\Version
+        2.0**.
+    -   For .NET 4.0 applications, go to **C:\Program Files
+        (x86)\MySQL\MySQL Connector Net 6.4.6\Assemblies\version
+        4.0**.
 
 7.  Copy the **MySql.Data.dll** file from the directory in the previous
     step to your .NET application's **bin** directory.
 
 8.  Publish your .NET application and upload it to Cloud Sites.
-
-
-

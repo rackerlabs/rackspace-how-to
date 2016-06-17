@@ -1,5 +1,6 @@
 ---
-node_id: 642
+permalink: rewrite-urls-from-aspnet-on-cloud-sites/
+audit_date:
 title: Rewrite URLs from ASP.NET on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -52,8 +53,7 @@ In this example, we match **example.asp**, **example.aspx**, and
 
 ### Example 2: Use regular expressions
 
-The URL Rewrite Module also supports [regular
-expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/").
+The URL Rewrite Module also supports [regular expressions](http://www.regular-expressions.info/).
 You can match characters in the incoming URL and then use **{R:\#}**
 (for example, {R:1} and {R:2}) to reference them in the resulting URL.
 In this example, we want to match **article/*id*/*title*** and have it
@@ -105,7 +105,7 @@ directory and send it to **default.aspx**:
 
 The following example shows an IIS rewrite reading the host header to
 perform a 301 redirect. The example takes a non-www domain and redirects
-to a www.mydomain.com domain.
+to a **www.mydomain.com domain**.
 
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
@@ -126,16 +126,12 @@ to a www.mydomain.com domain.
 
 ### References
 
-The following references are on
-[iis.net](http://www.iis.net/ "http://www.iis.net/"), the official
+The following references are on [iis.net](http://www.iis.net/), the official
 Microsoft IIS site:
 
--   [Using the URL Rewrite
-    Module](http://learn.iis.net/page.aspx/460/using-url-rewrite-module/ "http://learn.iis.net/page.aspx/460/using-url-rewrite-module/")
--   [Creating Rewrite Rules for the URL Rewrite
-    Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/ "http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/")
--   [URL Rewrite Module Configuration
-    Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/ "http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/")
+-   [Using the URL Rewrite Module](http://learn.iis.net/page.aspx/460/using-url-rewrite-module/)
+-   [Creating Rewrite Rules for the URL Rewrite Module](http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/)
+-   [URL Rewrite Module Configuration Reference](http://learn.iis.net/page.aspx/465/url-rewrite-module-configuration-reference/)
 
 ### Third-party solutions
 
@@ -146,29 +142,24 @@ and created modules that could be deployed to add this functionality
 with little effort on the part of the web developer. Some of these
 third-party modules are as follows:
 
--   [UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/")
--   [UrlRewritingNet](http://www.urlrewriting.net/ "http://www.urlrewriting.net/")
--   [Helicon Tech's
-    ISAPI\_Rewrite](http://www.isapirewrite.com/ "http://www.isapirewrite.com/")
+-   [UrlRewriter.NET](http://www.urlrewriter.net/)
+-   [UrlRewritingNet](http://www.urlrewriting.net/)
+-   [Helicon Tech's ISAPI\_Rewrite](http://www.isapirewrite.com/)
 
 For older sites on the Cloud Sites platform, we recommend deploying an
 HttpModule to handle URL rewrites. This article describes using
-[UrlRewriter.NET](http://www.urlrewriter.net/ "http://www.urlrewriter.net/") to
+[UrlRewriter.NET](http://www.urlrewriter.net/) to
 do this.
 
 ### Get started
 
-To get started, [bin-deploy UrlRewriter.NET on Cloud
-Sites](/how-to/bin-deploy-an-aspnet-assembly-on-cloud-sites).
+To get started, [bin-deploy UrlRewriter.NET on Cloud Sites](/how-to/bin-deploy-an-aspnet-assembly-on-cloud-sites).
 
 ### Use UrlRewriter.NET
 
-UrlRewriter.NET provides a [full reference
-guide](http://urlrewriter.net/index.php/support/reference "http://urlrewriter.net/index.php/support/reference")
-and examples of [common
-rules](http://urlrewriter.net/index.php/support/using "http://urlrewriter.net/index.php/support/using").
-When you [bin-deployed
-UrlRewriter.NET](/how-to/bin-deploy-an-aspnet-assembly-on-cloud-sites "How do I bin deploy an ASP/.NET assembly?"),
+UrlRewriter.NET provides a [full reference guide](http://urlrewriter.net/index.php/support/reference)
+and examples of [common rules](http://urlrewriter.net/index.php/support/using).
+When you [bin-deployed UrlRewriter.NET](/how-to/bin-deploy-an-aspnet-assembly-on-cloud-sites),
 you added a `<configSections>` element, which causes the `rewriter`
 configuration section to be processed by UrlRewriter.NET. The following
 examples show rewrite rules that use this configuration element.
@@ -184,8 +175,7 @@ In this example, we match **info** and display the contents of
 
 ### Example 2: Use regular expressions
 
-UrlRewriter.NET also supports [regular
-expressions](http://www.regular-expressions.info/ "http://www.regular-expressions.info/").
+UrlRewriter.NET also supports [regular expressions](http://www.regular-expressions.info/).
 You can match characters in the incoming URL and then use **\$\#** (for
 example, \$1 and \$2) to reference them in the resulting URL. In this
 example, we want to match **products/*id*** and have it processed by
@@ -197,10 +187,6 @@ example, we want to match **products/*id*** and have it processed by
 
 ### References
 
--   [Tip/Trick: Url Rewriting with
-    ASP.NET](http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx "http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx")
+-   [Tip/Trick: Url Rewriting with ASP.NET](http://weblogs.asp.net/scottgu/archive/2007/02/26/tip-trick-url-rewriting-with-asp-net.aspx)
     from Scott Guthrie's blog, particularly approach 3
--   [UrlRewrite.NET home
-    page](http://urlrewriter.net "http://urlrewriter.net")
-
-
+-   [UrlRewrite.NET home page](http://urlrewriter.net "http://urlrewriter.net")

@@ -1,5 +1,6 @@
 ---
-node_id: 100
+permalink: getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers/
+audit_date:
 title: Getting Started With Cloud Sites - Rackspace Nameservers and Creating Custom Nameservers
 type: article
 created_date: '2011-03-09'
@@ -10,20 +11,18 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note:** This article is written for the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can get to it from the
-Cloud Control Panel by clicking the **Rackspace Cloud** menu at the top
-of the panel and selecting **Cloud Sites**.
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
-**Previous section:** [Getting Started with Cloud
-Sites](/how-to/cloud-sites)
+### Previous section
 
-To change your nameservers from your current registrar's to point to the
+[Cloud Sites introduction](/how-to/cloud-sites)
+
+To change your name servers from your current registrar to point to the
 Rackspace Cloud, follow these steps:
 
 1.  Access your account with your current registrar (for example,
-    godaddy.com or register.com).
-2.  Change the nameservers to **dns1.stabletransit.com** and
+    **godaddy.com** or **register.com**).
+2.  Change the name servers to **dns1.stabletransit.com** and
     **dns2.stabletransit.com**.
 
 Your current registrar might offer "transfer lock" or a similar service
@@ -35,8 +34,7 @@ To unlock the domain, you must have access to the administrative email
 address you used when first registering the domain. Your current
 registrar will send an email to this account that will require a reply
 from you, confirming that the transfer is authorized. If you do not have
-access to this email address, contact [customer
-support](http://manage.rackspacecloud.com/SupportMain.do "http://manage.rackspacecloud.com/SupportMain.do")
+access to this email address, contact [customer support](http://manage.rackspacecloud.com/SupportMain.do)
 for help. You can do a WHOIS search to find the administrative email and
 the current registrar for the domain.
 
@@ -44,37 +42,31 @@ All DNS changes take up to 48 hours to take effect. During this time you
 can check your website by using the test URL (for
 example, **www.yourdomain.com.websitetestlink.com**).
 
-Custom nameservers
-------------------
+### Custom name servers
 
-Configuring custom nameservers can be done differently depending on
+Configuring custom name servers can be done differently depending on
 where your DNS is currently hosted. The following sections provide steps
-to set up custom nameservers based on some of the most commonly used DNS
-providers.
+to set up custom name servers based on some of the most commonly used DNS
+providers:
 
--   [GoDaddy](#GoDaddy)
--   [OpenSRS/Tucows/RackSpace Cloud](#OpenSRS_Tucows_RackSpace_Cloud)
--   [Dotster](#Dotster)
--   [eNom](#eNom)
--   [Directi](#Directi)
--   [Name.com](#Name.com)
+-   GoDaddy
+-   OpenSRS/Tucows/RackSpace Cloud
+-   Dotster
+-   eNom
+-   Directi
+-   Name.com
 
 If you are hosting DNS at a provider that is not listed here, contact
 your DNS provider for steps showing you how to configure custom
-nameservers.
+name servers.
 
+#### GoDaddy
 
+[Setting up Custom Nameservers in GoDaddy](http://help.godaddy.com/article/3952)
 
-### GoDaddy
+#### OpenSRS/Tucows/RackSpace Cloud
 
-[Setting up Custom Nameservers in
-GoDaddy](http://help.godaddy.com/article/3952 "http://help.godaddy.com/article/3952")
-
-
-
-### OpenSRS/Tucows/RackSpace Cloud
-
-To register new nameservers or update existing nameservers with OpenSRS,
+To register new name servers or update existing name servers with OpenSRS,
 follow these steps.
 
 1.  Log in to your account at
@@ -82,64 +74,60 @@ follow these steps.
     by entering your domain name, user and password, then clicking
     **Manage Domain**.
 2.  On the domain management page, scroll to the bottom of the page to
-    the link **If you want to create or modify a nameserver which is
-    based on yourhostdomain.com click here**. (Ignore the nameservers
+    the link.
+
+    **Note:** If you want to create or modify a name server which is
+    based on yourhostdomain.com click here. (Ignore the name servers
     link in the main top menu.)
-3.  On the next page, scroll down to the **Create nameserver** section
+
+3.  On the next page, scroll down to the **Create name server** section
     and perform the following steps:
     1.  In the first field, enter the host prefix for your first server
         (example, **ns1**).
-    2.  In the second box, enter the IP address for the nameserver you
+    2.  In the second box, enter the IP address for the name server you
         want to create.
-    3.  Click the **Create Nameserver** button.
+    3.  Click the **Create Name Server** button.
 
 4.  Repeat step 3 for your second DNS server (**ns2**).
 5.  You will now see your DNS servers listed on the page.
 
+#### Dotster
 
-
-### Dotster
-
-To register new or update current nameservers with Dotster, follow these
+To register new or update current name servers with Dotster, follow these
 steps.
 
 1.  Open up your account information at Dotster and click the **My
     Domains** tab.
-2.  Click the domain name for which you want to add the nameservers. (Do
+2.  Click the domain name for which you want to add the name servers. (Do
     not select the check box.)
 3.  In the **Name Servers** section, click the **Register
-    NameServer** link.
-4.  Fill in the form with your nameserver name and IP address.
+    Name Server** link.
+4.  Fill in the form with your name server name and IP address.
 
-
-
-### eNom
+#### eNom
 
 If your domain is registered with Enom, follow these steps to register
 new or update current DNS servers.
 
-1.  Log in to your account at enom.com.
-2.  From the site menu, select **Domains &gt; Advanced Tools &gt;
-    Register a Name Server**.
+1.  Log in to your account at **enom.com**.
+2.  From the site menu, select **Domains > Advanced Tools > Register a Name Server**.
 
-    A page with forms for adding new nameservers and updating old
-    nameservers is displayed.
+    A page with forms for adding new name servers and updating old
+    name servers is displayed.
 
-3.  Add the nameserver name to the form (for example,
+3.  Add the name server name to the form (for example,
     **ns1.yourdomain.com**), enter the old IP address for the DNS server
     (if updating), and enter the new one provided in your migration
     complete email.
 4.  Click **Update**.
 
+#### Directi
 
-
-### Directi
-
-To register new nameservers or update existing nameservers with Directi,
+To register new name servers or update existing name servers with Directi,
 follow these steps.
 
 1.  Log in to your Domain Control Panel.
-2.  From **Domains &gt; Search &gt; Domain Registration Search**, search
+2.  From **Domains > Search > Domain Registration Search**, search
     for the domain name for which you want to manage child name servers.
 3.  Click the domain name under which you want to create child
     name servers.
@@ -150,11 +138,9 @@ follow these steps.
 6.  To modify a DNS server, make the modifications in the **IP Address**
     text box and click **Modify IP Address**.
 
+#### Name.com
 
-
-### Name.com
-
-To register new nameservers or update existing nameservers with
+To register new name servers or update existing name servers with
 Name.com, follow these steps.
 
 1.  Log in to your account.
@@ -168,9 +154,6 @@ Name.com, follow these steps.
     address for the respective host name and click **Add**. Click the
     **remove** link next to the old IP address for each host name.
 
-Next section
-------------
+### Next section
 
-[Creating Sub-domains and/or domain
-aliases](/how-to/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases)
-
+[Creating Sub-domains and/or domain aliases](/how-to/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases)

@@ -1,5 +1,6 @@
 ---
-node_id: 754
+permalink: windows-system-updates-for-cloud-sites/
+audit_date:
 title: Windows System Updates for Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -28,9 +29,7 @@ hot-fixes and hardware BIOS, firmware and drivers is:
     was not found during testing, all systems will have the updates
     applied before the next monthly release.
 
-
-
-**Application and Server updates**
+### Application and Server updates
 
 Any update that affects the web application framework (ASP.NET, ASP and
 SQL) will be communicated to customers before they are deployed to our
@@ -38,9 +37,7 @@ environment. This is intended to allow customers proper time to test
 functional with existing code and make any adjustments necessary to
 function under the new updates.
 
-
-**Critical Updates**
-
+### Critical Updates
 
 From time to time Microsoft determines that an update is too critical to
 wait for the regular update release (for example zero days exploit
@@ -50,4 +47,3 @@ possible from when they are released once they are verified with
 Microsoft as an immediate security risk. Customers will be notified of
 the scheduled critical update run at which time these updates become
 known.
-

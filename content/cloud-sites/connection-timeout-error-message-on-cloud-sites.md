@@ -1,5 +1,6 @@
 ---
-node_id: 1378
+permalink: connection-timeout-error-message-on-cloud-sites/
+audit_date:
 title: Connection timeout error message on Cloud Sites
 type: article
 created_date: '2012-04-05'
@@ -16,14 +17,11 @@ message. This article explains the causes of the error, provides steps
 that you can take to improve the experience, and tells you about the
 steps we have taken to mitigate the problem.
 
+<img src="{% asset_path cloud-sites/connection-timeout-error-message-on-cloud-sites/Capture1.JPG %}" alt="" />
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Capture1.JPG" width="543" height="242" />
+### What the error message means
 
-
-
-### What doe the error message mean?
-
-The `Connection timed out &ndash; please try again` error message is displayed
+The `Connection timed out - please try again` error message is displayed
 when a script exceeds the maximum timeout value of 30 seconds. If the
 load balancer that is serving the content does not receive data from the
 server processing the data, the load balancer closes the connection and
@@ -92,8 +90,6 @@ your site (such as login or member pages, or sometimes even your
 homepage). Although rare, you should clear your browser cache and try
 the page again to verify that this is not the case.
 
-
-
 ### What Rackspace is doing about it
 
 -   Updated and made improvements to the Linux kernel for speed and
@@ -110,12 +106,4 @@ the page again to verify that this is not the case.
 
 Rackspace is committed to constantly improving our infrastructure and
 products to bring you the best possible customer experience. To learn
-how to get more out of Cloud Sites, see [Getting Started Guide for Cloud
-Sites](/how-to/cloud-sites).
-
-<div>
-
-
-
-</div>
-
+how to get more out of Cloud Sites, see the [Cloud Sites introduction](/how-to/cloud-sites).

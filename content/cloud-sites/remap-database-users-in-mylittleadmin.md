@@ -1,5 +1,6 @@
 ---
-node_id: 662
+permalink: remap-database-users-in-mylittleadmin/
+audit_date:
 title: Remap database users in myLittleAdmin
 type: article
 created_date: '2011-03-16'
@@ -36,12 +37,10 @@ owner account, you can use the following command:
 
     ALTER USER [123456_olduser] WITH LOGIN = [123456_newlogin]
 
-Remap database users to logins
-------------------------------
+### Remap database users to logins
 
-1.  To manage your SQL Server database, [log in to the online
-    manager (myLittleAdmin)](/how-to/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface "Working with a MSSQL database").
-2.  Click **Tools &gt; New Query**.
+1.  To manage your SQL Server database, [log in to the online manager (myLittleAdmin)](/how-to/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface).
+2.  Click **Tools > New Query**.
 3.  Enter the following command to reassign ownership to the new login
     that you created in the control panel (the brackets are required).
     Replace your database name and login name.
@@ -50,12 +49,9 @@ Remap database users to logins
         ON Database::[123456_database]
         TO [123456_login]
 
-    ![mssql2.jpg](http://c0476992.cdn.cloudfiles.rackspacecloud.com/mssql2.jpg)
+    <img src="{% asset_path cloud-sites/remap-database-users-in-mylittleadmin/mssql2.jpg %}" alt="mssql2.jpg" />
 
 4.  Verify that the command worked by going to your database and viewing
     the properties.
 
     The login should now be listed as the new owner.
-
-
-

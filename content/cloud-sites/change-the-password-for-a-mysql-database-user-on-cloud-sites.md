@@ -1,5 +1,6 @@
 ---
-node_id: 70
+permalink: change-the-password-for-a-mysql-database-user-on-cloud-sites/
+audit_date:
 title: Change the password for a MySQL database user on Cloud Sites
 type: article
 created_date: '2011-03-08'
@@ -10,27 +11,20 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note:** This article refers to the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can access this
-interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
-by clicking the **Cloud Control Panel** menu at the top of the window
-and selecting **Cloud Sites** from the menu.
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 This article provides instructions for changing the password for a user
 of the MySQL database that is attached to your Cloud Sites website.
 
-Prerequisites
--------------
+### Prerequisites
 
 To perform these steps, you must have administrative access to the
 Rackspace Cloud.
 
-To change the password for a database user
-------------------------------------------
+### To change the password for a database user
 
-1.  Log in to the [Cloud Sites Control
-    Panel](http://manage.rackspacecloud.com/pages/Login.jsp "http://manage.rackspacecloud.com/pages/Login.jsp").
-2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
+1.  Log in to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com/pages/Login.jsp "http://manage.rackspacecloud.com/pages/Login.jsp").
+2.  In the left navigation pane, click **Hosting > Cloud Sites**.
 3.  Click the name of the website that owns the database that you want
     to modify.
 4.  Click the **Features** tab.
@@ -59,5 +53,3 @@ To change the password for a database user
 
 11. Repeat these steps for each database user whose password you want
     to change.
-
-

@@ -1,5 +1,6 @@
 ---
-node_id: 688
+permalink: cloud-sites-php-op-code-cache/
+audit_date:
 title: Cloud Sites PHP Op-code Cache
 type: article
 created_date: '2011-03-16'

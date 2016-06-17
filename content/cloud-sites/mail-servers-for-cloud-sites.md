@@ -1,5 +1,6 @@
 ---
-node_id: 724
+permalink: mail-servers-for-cloud-sites/
+audit_date:
 title: Mail servers for Cloud Sites
 type: article
 created_date: '2011-03-23'

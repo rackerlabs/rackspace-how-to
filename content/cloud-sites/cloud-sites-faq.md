@@ -1,6 +1,7 @@
 ---
-node_id: 5012
-title: Cloud Sites - FAQ
+permalink: cloud-sites-faq/
+audit_date:
+title: Cloud Sites FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Stephanie Fillmon
@@ -42,22 +43,20 @@ environment.
 #### Where can I find your Acceptable Use Policy (AUP)?
 
 You can find a copy of our
-[AUP](http://www.rackspace.com/information/legal/aup), [Terms of
-Service](http://www.rackspace.com/information/legal/cloud/tos) (TOS) and
-[Service Level
-Agreement](http://www.rackspace.com/information/legal/cloud/sla)
+[AUP](http://www.rackspace.com/information/legal/aup), [Terms of Service](http://www.rackspace.com/information/legal/cloud/tos) (TOS) and
+[Service Level Agreement](http://www.rackspace.com/information/legal/cloud/sla)
 (SLA) on our website.
 
 #### Where can I view usage information for my Cloud sites account?
 
-Overall usuage for diskspace and bandwidth is availiable in the **Home**
+Overall usage for diskspace and bandwidth is available in the **Home**
 tab when first logging in.
 
 Individual site usage is available on the **General Settings** tab after
 clicking **Hosting** on the left navigation menu and then click
 on **Cloud Sites** and then on the domain in question.
 
-More detailed information on usage is available in **Reports,**
+More detailed information on usage is available in **Reports**,
 which breaks down bandwidth, MySQL, and MSSQL usage.
 
 #### How many compute cycles will my applications use?
@@ -68,7 +67,7 @@ guess. There are, however, some guidelines that can help. For example,
 
 -   2.1 million page views using a database-driven content management
     system
--   11 million page views of rackspacecloud.com
+-   11 million page views of **rackspacecloud.com**
 -   25 million requests for a static 15KB image
 
 #### How far can I really scale?
@@ -84,9 +83,7 @@ able to compensate for it.
 Also, if you are expecting a massive surge in traffic (perhaps your site
 was featured on Oprah) please contact us via chat, phone, or ticket in
 advance and we will help you prepare for it. The information we will
-need can be found at the end of the article [Optimize your website on
-Cloud
-Sites](/how-to/optimize-your-website-on-cloud-sites).
+need can be found at the end of the article [Optimize your website on Cloud Sites](/how-to/optimize-your-website-on-cloud-sites).
 
 #### What happens if I exceed the included amount?
 
@@ -94,14 +91,13 @@ While most customers will fall well below the included amount, we have
 created fair and simple pricing beyond the base amount that means you
 pay ONLY for what you use and nothing more. There are no onerous
 penalties for exceeding the included plan amounts. The prices for all
-scaling metrics can be found on the [Cloud Sites pricing
-page](http://www.rackspace.com/cloud/sites).
+scaling metrics can be found on the [Cloud Sites pricing page](http://www.rackspace.com/cloud/sites).
 
-#### What is included for \$150?
+#### What is included for $150?
 
 We have included enough resources in the Cloud Sites base package to
 power most business needs. You get 50 GB of high performance storage as
-well as 500 GB of bandwidth permonth. In addition, Cloud Sites uses
+well as 500 GB of bandwidth per month. In addition, Cloud Sites uses
 compute cycles to monitor your computing usage. You get 10,000 compute
 cycles per month across all your sites and applications. Unlike many
 hosting companies, the Rackspace Cloud will never cut you off for using
@@ -189,7 +185,7 @@ authorized. If you do not have access to this email address, contact
 help.
 
 You can do a WHOIS search to find the administrative email and the
-current registar for the domain.
+current registrar for the domain.
 
 #### What happens if my Cloud Sites domain registration expires?
 
@@ -204,8 +200,7 @@ out 10 days after the expiration date. If you do not renew before the
 stated expiration date, the domain name will be held in reserve for a
 redemption period of 45 days. During this redemption period, you may
 incur a registry-imposed redemption fee in order to reactivate your
-domain. To renew or redeem your domain name, please contact [customer
-support](http://manage.rackspacecloud.com/SupportMain.do).
+domain. To renew or redeem your domain name, please contact [customer support](http://manage.rackspacecloud.com/SupportMain.do).
 
 #### Is my domain name set to auto renew?
 
@@ -214,8 +209,7 @@ Cloud Sites domains; the domains must be manually renewed via the
 Control Panel. Please see the following article on how to manually renew
 your domain:
 
-[How Do I Renew My
-Domain?](/how-to/renew-a-cloud-sites-domain-name)
+[How Do I Renew My Domain?](/how-to/renew-a-cloud-sites-domain-name)
 
 #### What does it mean when my domain name is "locked"?
 
@@ -266,8 +260,7 @@ You must have access to the administrative email to approve transfer
 requests when you are changing registrars or updating your name servers.
 Your current registrar will send an email to this account that will
 require a reply from you, confirming that the transfer is authorized. If
-you do not have access to this email address, please contact [customer
-support](http://manage.rackspacecloud.com/SupportMain.do)for help.
+you do not have access to this email address, please contact [customer support](http://manage.rackspacecloud.com/SupportMain.do)for help.
 
 #### Can I purchase a SSL certificate from the Rackspace Cloud?
 
@@ -275,8 +268,7 @@ Unfortunately, we do not provide the actual SSL certificates. Please see
 our article on which SSL certificates we support, you will need to
 purchase your cert from a supported vendor.
 
-Click
-[here](/how-to/supported-ssl-certificates-on-cloud-sites)
+Click [here](/how-to/supported-ssl-certificates-on-cloud-sites)
 for a list of supported SSL certificates. There is a fee associated with
 providing the SSL capability and this can be found on the Cloud Sites
 pricing page [here](http://www.rackspace.com/cloud/sites/pricing/).
@@ -351,9 +343,7 @@ balancers. We store the visitor's IP address in the
 of **X-Cluster-Client-Ip** can be used when configuring allow and deny
 rules.
 
-For instructions, see [Controlling access to Linux Cloud Sites based on
-the client IP
-address](/how-to/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address).
+For instructions, see [Controlling access to Linux Cloud Sites based on the client IP address](/how-to/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-address).
 
 ------------------------------------------------------------------------
 
@@ -361,8 +351,7 @@ address](/how-to/controlling-access-to-linux-cloud-sites-based-on-the-client-ip-
 
 #### How often do Cloud Sites backup information?
 
-The entire Cloud Sites FTP structure is backed up in an [FTP
-Snapshot](/how-to/ftp-snapshot)
+The entire Cloud Sites FTP structure is backed up in an [FTP Snapshot](/how-to/ftp-snapshot)
 at the top of every hour, going back 32 hours. Those backups are rolled
 into a nightly backup, which are retained for two days. However, these
 backups are for disaster recovery on the server side. If for any reason
@@ -415,8 +404,7 @@ For example, with a 404 error:
 You can use this directive to create error pages for other error codes
 as well. You will need to specify the path to the error page relative to
 the location of the .htaccess file. For more information, see the
-[Comprehensive guide to
-.htaccess](http://www.javascriptkit.com/howto/htaccess2.shtml).
+[Comprehensive guide to .htaccess](http://www.javascriptkit.com/howto/htaccess2.shtml).
 
 #### How do I stop PHP scripts from executing in a directory?
 
@@ -458,7 +446,7 @@ and a successful modification of the max upload size will show in your
 PHP info file.
 
 If you're running WordPress and continue to have problems after
-increasing the upload\_max\_filesize value, you can try adding these
+increasing the upload_max_filesize value, you can try adding these
 settings as well:
 
     php_value post_max_size ?M
@@ -471,7 +459,7 @@ If you are continuing to encounter issues, please contact support.
 
 On a PHP-based site, a blank white screen is usually indicative of a PHP
 error. By default, Cloud Sites will store PHP errors under
-the **/log** folder in FTP to a file named **php\_errors.log**.
+the **/log** folder in FTP to a file named **php_errors.log**.
 
 To view the error on the page itself, you can create or edit an
 .htaccess file in the same directory as the executing script or content,
@@ -514,7 +502,7 @@ include this line:
     php_value post_max_size ?M
 
 Replace "?" with the required value needed, such as 16. Our default
-post\_max\_size value is set to 8 MB.
+post_max_size value is set to 8 MB.
 
 #### How do I prevent hotlinking on Cloud Sites?
 
@@ -579,8 +567,6 @@ points to the file containing a list of authorized users.
 -   Open a simple text editor, such as Notepad
 -   Insert the following code:
 
-<!-- -->
-
     # The name of the area
     AuthName "Name of Password Protected Area"
 
@@ -606,7 +592,7 @@ points to the file containing a list of authorized users.
     /mnt/Target01/000000/www.mywebsite.com/web/content/.htpasswd).
 -   Save the file as "htaccess.txt" and upload it to the directory you
     want protected.
--   Rename the file to ".htaccess".
+-   Rename the file to **.htaccess**.
 
 **Create the .htpasswd file**
 
@@ -632,15 +618,13 @@ configure your FTP client to view hidden files.
 
 For a comprehensive explanation on how to use a .htaccess file and how
 to create one, please see one or both of the following links:
-.htaccess-Guide.com's [How to use
-.htaccess](http://www.htaccess-guide.com/how-to-use-htaccess/) and
-JavascriptKit.com's [Comprehensive guide to
-.htaccess](http://www.javascriptkit.com/howto/htaccess.shtml).
+.htaccess-Guide.com's [How to use .htaccess](http://www.htaccess-guide.com/how-to-use-htaccess/) and
+JavascriptKit.com's [Comprehensive guide to .htaccess](http://www.javascriptkit.com/howto/htaccess.shtml).
 
-#### Why is mod\_rewrite not working on my site?
+#### Why is mod_rewrite not working on my site?
 
 On Cloud Sites, due to our unique hosting environment, we require a
-slight addition to the code used for mod\_rewrite. You will also need to
+slight addition to the code used for mod_rewrite. You will also need to
 make sure that the site is using either PHP4 or PHP5 as the default
 technology.
 
@@ -650,14 +634,13 @@ lines:
     RewriteEngine on
     RewriteBase /
 
-Depending on the application, you may need to further specifiy the
+Depending on the application, you may need to further specify the
 RewriteBase / to include the subdirectory the application is installed
 in. For example:
 
     RewriteBase /subdirectory
 
-You can find more information on mod\_rewrite at [Apache's
-website](http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html).
+You can find more information on mod_rewrite at [Apache's website](http://httpd.apache.org/docs/2.0/mod/mod_rewrite.html).
 
 #### How do I enable SSI?
 
@@ -701,19 +684,16 @@ only work if the Cloud Site is configured to utilize this technology.
 This will not work for IIS (ASP / ASP.NET).
 
 Please see this article for converting a site from Windows (IIS) to
-Linux (PHP) technology: [Change your site's default
-technology](/how-to/change-your-sites-default-technology).
+Linux (PHP) technology: [Change your site's default technology](/how-to/change-your-sites-default-technology).
 
 You can also view this article for assistance with rewriting from
-ASP.NET: [How do I rewrite URLs from
-ASP.NET?](/how-to/rewrite-urls-from-aspnet-on-cloud-sites)
+ASP.NET: [How do I rewrite URLs from ASP.NET?](/how-to/rewrite-urls-from-aspnet-on-cloud-sites)
 
 #### How do I install my own PEAR module?
 
 You can deploy PEAR modules and other useful scripts locally on your
-site by modifying [PHP's
-include\_path](http://php.net/manual/en/ini.core.php). The default
-include\_path on a Cloud Site is:
+site by modifying [PHP's include_path](http://php.net/manual/en/ini.core.php). The default
+include_path on a Cloud Site is:
 
     .:/usr/share/pear:/usr/share/php
 
@@ -724,8 +704,7 @@ example, you might add this to your .htaccess:
     php_value include_path ".:/usr/share/pear:/usr/share/php:/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/pear_modules"
 
 You will want to change the path in the example above to use your
-website's absolute path. Please see [this
-article](/how-to/locate-the-linux-path-for-your-cloud-sites-website)
+website's absolute path. Please see [this article](/how-to/locate-the-linux-path-for-your-cloud-sites-website)
 to locate your website's absolute path.
 
 Your website's absolute path should resemble this:
@@ -752,9 +731,7 @@ them.
 
 While Cloud Sites is not designed for credit card storage and is not PCI
 compliant, it can be used as a flexible front-end to a payment gateway.
-For more information, see our article on [utilizing Cloud Sites in an
-e-commerce
-solution](/how-to/utilize-cloud-sites-in-an-e-commerce-solution).
+For more information, see our article on [utilizing Cloud Sites in an e-commerce solution](/how-to/utilize-cloud-sites-in-an-e-commerce-solution).
 
 #### Why can't I see my site using a web browser?
 
@@ -764,21 +741,15 @@ site, check the following:
 -   Has it been at least 48 hours since you completed your domain
     registration? If not, try uploading content to your website using
     the test FTP (ftp1.ftptoyoursite.com) and checking the changes on
-    your test website. [Click
-    here](/how-to/using-a-staging-url)for
+    your test website. [Click here](/how-to/using-a-staging-url)for
     instructions on how to use your test website.
--   Have you put files in the correct folders on the server? See [Where
-    should I put my web content
-    files?](/how-to/getting-started-with-cloud-sites-uploading-your-content)for
+-   Have you put files in the correct folders on the server? See [Where should I put my web content files?](/how-to/getting-started-with-cloud-sites-uploading-your-content)for
     more information.
--   Did you upload the files in the [appropriate
-    format?](/how-to/should-i-upload-files-as-ascii-or-binary)
--   Did you [check your
-    nameservers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)
+-   Did you upload the files in the [appropriate format?](/how-to/should-i-upload-files-as-ascii-or-binary)
+-   Did you [check your nameservers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)
     to make sure that they are pointing to Rackspace nameservers?
 
-If you have checked these points without success [contact
-support](https://manage.rackspacecloud.com/) for more help.
+If you have checked these points without success, [contact support](https://manage.rackspacecloud.com/) for more help.
 
 #### Can I use The Rackspace Cloud as an audio encoder?
 
@@ -793,8 +764,7 @@ or a ShoutCast system to use for live audio streaming.
 
 #### Does Rackspace Cloud Sites provide raw log files for stats?
 
-**Note:** This reply refers to the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can access this
+**Note:** This reply refers to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can access this
 interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
 by clicking your username in the upper-right corner of the control panel
 and selecting Cloud Sites Control Panel.
@@ -802,7 +772,7 @@ and selecting Cloud Sites Control Panel.
 Yes, you can activate raw logs for stats within the Cloud Sites Control
 Panel.
 
-**Pre-requisites**
+**Prerequisites**
 
 -   Administrative access to the Rackspace Cloud
 
@@ -817,15 +787,14 @@ Panel.
 -   Scroll down to **Website Features** section and click on the
     **Enable** hyperlink for Raw logs.
 
-**Note:**The log collection occurs at 12 AM Central Time every day, and
+**Note:** The log collection occurs at 12 AM Central Time every day, and
 log files are purged after 6 days
 
 #### Does Rackspace support FrontPage extensions?
 
 Unfortunately, we do not support FrontPage Extensions. While still used
 on many sites, Microsoft has discontinued support for FrontPage and has
-replaced it with a new set of technologies. Please see [this
-link](http://office.microsoft.com/en-us/frontpage/default.aspx) for
+replaced it with a new set of technologies. Please see [this link](http://office.microsoft.com/en-us/frontpage/default.aspx) for
 additional information from Microsoft.
 
 #### Does The Rackspace Cloud support secure email?
@@ -841,15 +810,11 @@ you can use to configure your email client(s) with:
     -   Address: **secure.emailsrvr.com**
     -   Port: 995
 
-<!-- -->
-
-1.  **IMAP with SSL**
+2.  **IMAP with SSL**
     -   Address: **secure.emailsrvr.com**
     -   Port: 993
 
-<!-- -->
-
-1.  **SMTP with SSL**
+3.  **SMTP with SSL**
     -   Address: **secure.emailsrvr.com**
     -   Ports: 25, 465, 587, 8025, and 2525
 
@@ -862,8 +827,7 @@ you can use to configure your email client(s) with:
 To cancel your Cloud Sites account, you must complete the cancellation
 from the Cloud Sites Control Panel.
 
-1.  Log in to the [Cloud Sites Control
-    Panel](https://manage.rackspacecloud.com/).
+1.  Log in to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com/).
 2.  Click **Your Account** and then click **Cancel Account**.
 3.  Complete the cancellation form and then click **Submit**.
 
@@ -871,8 +835,7 @@ If you want to cancel your Cloud Sites subscription but leave the
 account open for Cloud Servers or other products, open a support ticket
 for this request.
 
-1.  Log in to the [Cloud Sites Control
-    Panel](https://manage.rackspacecloud.com/).
+1.  Log in to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com/).
 2.  At the top of the window, click **Tickets**.
     You are redirected to the Support Tickets page in the Cloud
     Control Panel.
@@ -892,7 +855,7 @@ that we have to earn your business every month.
 #### How can I found out if a bill wasn't collected or a payment wasn't processed?
 
 You can access billing information for Cloud Sites by clicking **Your
-Account** &gt; **Billing** in the Cloud Sites Control Panel. This action
+Account > Billing** in the Cloud Sites Control Panel. This action
 opens the Billing & Payments section of the Cloud Control Panel. This
 section displays important information like your total outstanding
 balance, the date of your most recent invoice, and which credit card is
@@ -912,12 +875,13 @@ being used for payments on the account.
 
 When you sign up for products under the Managed Infrastructure, Managed
 Operations SysOPs, or Managed Operations DevOps Automation service
-levels, your credit card is charged a US \$1.00 authorization charge to
+levels, your credit card is charged a US $1.00 authorization charge to
 confirm it is an active card. The authorization charge returns to your
 card normally within 24-72 hours.
 
 Thirty days after you sign up, your first invoice is processed. Your
 charges consist of service usage accrued within the first 30 days.
+
 **Note**: The exception is Cloud Sites, which charges for the first 30
 days at sign up and continues to charge in advance of monthly usage.
 
@@ -954,8 +918,7 @@ information from the **Cloud Sites Control Panel**.
 
 1.  Log in to your control panel at
     [https://mycloud.rackspace.com](https://mycloud.rackspace.com/).
-2.  In the left navigation menu, click **Your Account** &gt;
-    **Billing**.
+2.  In the left navigation menu, click **Your Account > Billing**.
     You are redirected to the Billing & Payments section of the Cloud
     Control Panel.
 3.  To edit your credit card, click **Edit Credit Card** under
@@ -966,8 +929,7 @@ information from the **Cloud Sites Control Panel**.
 
 1.  Log in to your control panel at
     [https://manage.rackspacecloud.com](https://manage.rackspacecloud.com/).
-2.  In the left navigation menu, click **Your Account** &gt;
-    **Billing**.
+2.  In the left navigation menu, click **Your Account > Billing**.
     You are redirected to the Billing & Payments section of the Cloud
     Control Panel.
 3.  Click the pencil icon next to **Billing Address.**
@@ -1019,9 +981,9 @@ No, FTP bandwidth does not count against your monthly transfer.
 
 The maximum values for PHP configuration options via .htaccess are:
 
--   Memory (**memory\_limit**): 512M
--   Upload size (**upload\_max\_filesize**): 550M
--   Execution time in seconds (**max\_execution\_time**): 30
+-   Memory (**memory_limit**): 512M
+-   Upload size (**upload_max_filesize**): 550M
+-   Execution time in seconds (**max_execution_time**): 30
 
 **Note**: Under some circumstances, PHP may grant an additional 30
 seconds to a process that is still executing at the 30 second mark.
@@ -1038,9 +1000,7 @@ allows us to release new changes more quickly.
 
 #### How do I import a large MySQL database?
 
-You should be able to use the *Online Manager* (see [PHPmyAdmin Database
-Management
-Interface](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface "Working with a MySQL database"))
+You should be able to use the *Online Manager* (see [PHPmyAdmin Database Management Interface](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface "Working with a MySQL database"))
 to import databases that are less than 16 MB in size without issue.
 
 However, if you need to import database data that exceeds 16 MB into
@@ -1055,27 +1015,18 @@ Following is an example to help you set up this script:
 1.  Create a new text file, add the preceding code to it, and save it
     as restore.sh. In the preceding script, replace the placeholders
     with your actual information, as follows:
-    -   *pathToFile*&mdash;This is the absolute path to your files. You can
-        find this path by clicking on Hosting &gt; Cloud Sites &gt;
-        Features in the Cloud Sites Control Panel and scrolling down
+    -   *pathToFile* - This is the absolute path to your files. You can
+        find this path by clicking on **Hosting > Cloud Sites > Features** in the Cloud Sites Control Panel and scrolling down
         the page. This path is the Linux Path listed there. An example
         is /mnt/target02/123456/www.domain.com. (Note that the file name
         is not included in this path.)
 
-    <!-- -->
-
     -   *databaseHost* - The name of the database host. An example
         is mysql5-9.wc1.
 
-    <!-- -->
+    -   *databaseUser* - The name of the database user.
 
-    -   *database*User - The name of the database user.
-
-    <!-- -->
-
-    -   databae\_Password - The password of the target database.
-
-    <!-- -->
+    -   *database_Password* - The password of the target database.
 
     -   *databaseName* - The name of the database to which you
         are restoring.
@@ -1084,13 +1035,16 @@ Following is an example to help you set up this script:
     recommend keep this file outside your webroot) and create a "perl"
     cron job to schedule the task (the perl option runs shell scripts as
     well)..
+
     **Note**: For security purposes, we recommend that you keep this
     file outside your webroot directory.
+
 3.  Put the name of the file, which in this example is import.sh, in the
     "Command To Run" field.
 4.  Select **Perl** as the Command Language and then select the minimum
     interval at which you want to run that script (5 minutes is
     recommended).
+
     Logs are available in your `/logs/` folder each time a cron job is
     performed and you receive an email confirmation informing you if the
     job was successful or not.
@@ -1103,22 +1057,18 @@ problem for you please break up the import into smaller pieces (several
 For more information about cron and related tasks, please see the
 following articles:
 
-**Cron FAQ's:**
+**Cron FAQs:**
 
--   **[What is a cron
-    job?](/how-to/cloud-sites-faq)**
--   **[Enable or disable a Cloud Sites scheduled task
-    (cron job)](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)**
--   **[How do I schedule a cron
-    job?](/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites)**
--   **[Create a cron job to back up a Cloud Sites SQL Server
-    database](/how-to/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database)**
+-   [What is a cron job?](/how-to/cloud-sites-faq)
+-   [Enable or disable a Cloud Sites scheduled task (cron job)](/how-to/enable-or-disable-a-cloud-sites-scheduled-task-cron-job)
+-   [How do I schedule a cron job?](/how-to/how-do-i-schedule-a-cron-job-for-cloud-sites)
+-   [Create a cron job to back up a Cloud Sites SQL Server database](/how-to/create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database)
 
 #### What is the shortest scheduled interval I can set for a Cloud Sites cron job?
 
 The minimum scheduled interval for a cron job is set to 5 minutes.
 
-#### I scheduled my cron job, but I haven&rsquo;t received any email confirmation. Did my task run correctly?
+#### I scheduled my cron job, but I haven't received any email confirmation. Did my task run correctly?
 
 -   Please confirm that you entered in your email address correctly
     within the control panel. If so, please also check your "Junk
@@ -1142,7 +1092,7 @@ hesitate to contact our support team.
 
 #### How do I schedule a cron job for Cloud Sites?
 
-\*\*Note:\*\* This reply refers to the Cloud Sites Control Panel. You
+**Note:** This reply refers to the Cloud Sites Control Panel. You
 can access this interface from the Cloud Control Panel by clicking your
 username in the upper-right corner of the control panel and selecting
 Cloud Sites Control Panel.
@@ -1150,7 +1100,7 @@ Cloud Sites Control Panel.
 Before scheduling a task, take a minute to review the five necessary
 components in creating a scheduled task on Cloud Sites:
 
-Task Name &ndash; You will need to name each cron job you schedule. The name
+Task Name - You will need to name each cron job you schedule. The name
 you choose is completely up to you and does not have any specific
 requirements.
 
@@ -1174,7 +1124,7 @@ option causes a visit to the URL you provide (technically running "curl
 " for the cron task). The output is sent to the task log in your
 webroot's "logs" directory.
 
-Command to Run &ndash; You&rsquo;ll need to indicate the path to the script that you
+Command to Run - You'll need to indicate the path to the script that you
 wish to be execute.
 
 Frequency / Date / Time - How frequently do you want the task to run?
@@ -1183,7 +1133,7 @@ month? Once a month on a certain day of the month? What time of day do
 you want the specified task to run? All of these variations are possible
 through the Classic Cloud Control Panel.
 
-Here&rsquo;s an example of setting up a new scheduled task in the Cloud Sites
+Here's an example of setting up a new scheduled task in the Cloud Sites
 Control Panel.
 
 1.  Log into the Cloud Sites Control Panel
@@ -1192,33 +1142,33 @@ Control Panel.
     "Cloud Sites".
 3.  Click on the site to which you want to add a cron backup.
 4.  Click on the "Features" tab on the top navigation bar.
-5.  Scroll down to the section called &ldquo;Scheduled Tasks (Cron Jobs).&rdquo;
+5.  Scroll down to the section called "Scheduled Tasks (Cron Jobs)."
     This is where you will see all tasks that you have scheduled and
     their status for that particular domain.
-6.  Add a new task by clicking the &ldquo;Add New Task&rdquo; button. (NOTE: All
+6.  Add a new task by clicking the "Add New Task" button. (NOTE: All
     newly created cron jobs are enabled by default.)
-7.  Enter a task name. For this example, let&rsquo;s call our task as &ldquo;Wake Me
-    Up.&rdquo;
+7.  Enter a task name. For this example, let's call our task as "Wake Me
+    Up."
 8.  Enter the email address where you want the output from your task to
-    be sent. For this illustration, we&rsquo;ll enter sleepyuser@myhome.com.
-9.  The script that was chosen is written in Perl. So we&rsquo;ll choose Perl
+    be sent. For this illustration, we'll enter sleepyuser@myhome.com.
+9.  The script that was chosen is written in Perl. So we'll choose Perl
     as the command language.
-10. Under the Command to Run option, it&rsquo;s important to note that the
+10. Under the Command to Run option, it's important to note that the
     top-level fully qualified path will be appended to the script path.
     Now the fully qualified path to our script is:
 
         /mnt/Target01/123456/www.wakeupcall.com/scripts/wakemeup.pl
 
-    In this case, we would only have to enter &ldquo;scripts/wakemeup.pl&rdquo; in
-    the field. &ldquo;/mnt/Target01/123456/www.wakeupcall.com/&rdquo; will
+    In this case, we would only have to enter "scripts/wakemeup.pl" in
+    the field. "/mnt/Target01/123456/www.wakeupcall.com/" will
     automatically be appended. Please also note that the trailing slash
     is automatically added.
 
 11. The next section involves scheduling the time when the job needs to
     be run. In our case, we want the script to run every day at 7:00AM.
-    So we would change the selection under &ldquo;Repeat by the: \\\_\_\\&rdquo;
-    drop down menu to &ldquo;Day.&rdquo; In the &ldquo;Time&rdquo; field, we would enter &ldquo;7:00.&rdquo;
-12. Click the &ldquo;Add Task&rdquo; button at the bottom and the cron job will
+    So we would change the selection under "Repeat by the: \\\_\_\\"
+    drop down menu to "Day." In the "Time" field, we would enter "7:00."
+12. Click the "Add Task" button at the bottom and the cron job will
     be enabled.
 
 **Note:** When you add a website through the Cloud Sites Control Panel,
@@ -1257,4 +1207,3 @@ For in-depth information concerning application pools, please see the
 following article:
 
 <http://www.developer.com/net/asp/article.php/2245511>
-

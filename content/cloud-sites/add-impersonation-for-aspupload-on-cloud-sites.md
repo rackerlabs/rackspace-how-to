@@ -1,5 +1,6 @@
 ---
-node_id: 581
+permalink: add-impersonation-for-aspupload-on-cloud-sites/
+audit_date:
 title: Add impersonation for ASPUpload on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -35,17 +36,11 @@ it.
     </BODY>
     </HTML>
 
+Create another file called **UploadScript1.asp**. Then, copy the the following text
+into the file.
 
-
-Create another file called UploadScript1.asp and save the following text
-below in it.
-
-
-
--   Please note that **domain** is the data center your website is
-    located at. It will either be **DFW**, or **ORD**.
-
-<!-- -->
+**Note:** The **domain** is the data center your website is
+located at. It will either be **DFW**, or **ORD**.
 
     <HTML>
     <BODY>
@@ -63,11 +58,8 @@ below in it.
     </BODY>
     </HTML>
 
-Now, just browse to your url www.mydomain.com/uploads.asp and you are
-ready to upload files.
+You can browse to your url `www.mydomain.com/uploads.asp` to upload the files.
 
 Here's a working example of the above scripts, hosted on Cloud Sites.
 
-For more information, please visit <http://www.aspupload.com/> for more
-examples and the manual.
-
+For more examples and documentation, see the [AspUpload website](http://www.aspupload.com/).

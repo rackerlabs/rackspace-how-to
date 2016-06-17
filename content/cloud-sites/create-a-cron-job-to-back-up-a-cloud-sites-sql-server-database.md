@@ -1,5 +1,6 @@
 ---
-node_id: 557
+permalink: create-a-cron-job-to-back-up-a-cloud-sites-sql-server-database/
+audit_date:
 title: Create a cron job to back up a Cloud Sites SQL Server database
 type: article
 created_date: '2011-03-16'
@@ -10,11 +11,7 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note:** This article is written for the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com). You can access this interface
-from the [Cloud Control Panel](https://mycloud.rackspace.com) by
-clicking the **Cloud Control Panel** menu at the top of the window and
-selecting **Cloud Sites**.
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 Microsoft SQL Server has a built-in backup feature that you can run as a
 query or a stored procedure. You can configure the output file to write
@@ -43,7 +40,7 @@ application.
     Firefox plugin).
 
 **IMPORTANT:** For this specific example to work, the permissions on the
-**/www.domain.com** and **/web** folders must be set to **751**.
+**_/www.domain.com** and **/web** folders must be set to **751**.
 
 ### Create the stored procedure
 
@@ -160,5 +157,3 @@ Schedule a cron job to call the web page.
 8.  Schedule the job to run daily at an off hour. Usually this is a
     late-night period, such as 1:00 a.m., when most sites experience
     less traffic.
-
-

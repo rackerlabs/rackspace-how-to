@@ -1,6 +1,7 @@
 ---
-node_id: 702
-title: Using WP-SuperCache to optimize Wordpress on Cloud Sites
+permalink: using-wp-supercache-to-optimize-wordpress-on-cloud-sites/
+audit_date:
+title: Use WP-SuperCache to optimize Wordpress on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Thomas Hester
@@ -10,8 +11,7 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-WP Super Cache is an available plugin for [Wordpress
-installations](%20http://www.rackspace.com/cloud/sites/web-hosting/wordpress/)
+WP Super Cache is an available plugin for [Wordpress installations](http://www.rackspace.com/cloud/sites/web-hosting/wordpress/)
 to store cached versions of your dynamic PHP pages. Installing WP Super
 Cache can also reduce the number of compute cycles used by a site since
 it reduces the load on the cluster as well.
@@ -42,15 +42,15 @@ increase the efficiency of WP Supercache in Cloud Sites.
 
 Go to settings for SuperCache and click on the **Advanced** tab.
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Tabs.png" width="615" height="52" />
+<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/Tabs.png %}" alt="" />
 
 Mark the following items:
 
 -   Cache hits to this website for quick access. (Recommended)
--   Use mod\_rewrite to serve cache files. (Recommended)
--   Compress pages so they&rsquo;re served more quickly to visitors.
+-   Use mod_rewrite to serve cache files. (Recommended)
+-   Compress pages so they're served more quickly to visitors.
     (Recommended)
--   Don&rsquo;t cache pages for known users. (Recommended)
+-   Don't cache pages for known users. (Recommended)
 -   Cache rebuild. Serve a supercache file to anonymous users while a
     new file is being generated. (Recommended)
 -   Mobile device support. (External plugin or theme required. See the
@@ -60,18 +60,18 @@ Mark the following items:
 
 After making those changes, click **Update Status**.
 
-#### Mod\_rewrite settings
+#### Mod_rewrite settings
 
 After the screen refreshes scroll down to the Mod Rewrite Rules section
-and click **Update Mod\_Rewrite Rules**.
+and click **Update Mod_Rewrite Rules**.
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RewriteRules1.png" width="689" height="200" />
+<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/RewriteRules1.png %}" alt="" />
 
 #### Expiry time and garbage collection
 
 Scroll down to **Expiry Time & Garbage Collection**.
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/gc_1.png" width="645" height="243" />
+<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/gc_1.png %}" alt="" />
 
 Change cache timeout to 0 seconds then click **Change Expiration**.
 
@@ -79,10 +79,10 @@ Change cache timeout to 0 seconds then click **Change Expiration**.
 
 Click on the **Preload** tab next.
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/Preload_0.png" width="949" height="313" />
+<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/Preload_0.png %}" alt="" />
 
--   Select **Preload mode (garbage collection only on legacy
-    cache files. Recommended.)**.
+-   Select **Preload mode** (garbage collection only on legacy
+    cache files. Recommended.).
 -   Set the refresh rate for preloaded supercache files by changing the
     number of minutes in the **Refresh preloaded cache files every
     \_\_\_ minutes** field (0 to disable, minimum 30 minutes) to a
@@ -107,16 +107,9 @@ For security purposes and optimizations, it is important to keep the
 plugin (and Wordpress itself) up-to-date. This can be done through the
 Wordpress Dashboard.
 
-1.  <span style="line-height: 1.538em;">Login to your
-    WordPress Dashboard.</span>
-2.  <span style="line-height: 1.538em;">Click the **Plugins** tab on the
-    left-hand column.</span>
-3.  <span style="line-height: 1.538em;">Check the box next to **Plugin**
-    to select all available plugin updates.</span>
-4.  <span style="line-height: 1.538em;">Click the **Bulk Actions** drop
-    down and select **Update**.</span>
-5.  <span style="line-height: 1.538em;">Click **Apply**.</span>
-6.  <span style="line-height: 1.538em;">The page will change once all of
-    the plugins are updated.</span>
-
-
+1.  Log in to your WordPress Dashboard.
+2.  Click the **Plugins** tab on the left-hand column.
+3.  Check the box next to **Plugin** to select all available plugin updates.
+4.  Click the **Bulk Actions** drop down and select **Update**.
+5.  Click **Apply**.
+6.  The page will change once all of the plugins are updated.

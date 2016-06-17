@@ -1,5 +1,6 @@
 ---
-node_id: 637
+permalink: process-php-on-html-pages-or-other-pages-on-cloud-sites/
+audit_date:
 title: Process PHP on HTML pages or other pages on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -15,22 +16,17 @@ extensions to be served by the PHP handler. You can enable PHP
 processing on **.htm** and **.html** files in your **.htaccess** file
 with the following directives:
 
-``` {.p1}
-AddHandler application/x-httpd-php php htm html
-AddType text/html php
-```
+    AddHandler application/x-httpd-php php htm html
+    AddType text/html php
 
 Following the preceding example, if you wanted to process PHP on files
-with the **.test **<span>extension</span><span>, you would use the
-following code:</span>
+with the **.test** extension, you would use the
+following code:
 
-``` {.p1}
-AddHandler application/x-httpd-php php test
-AddType text/html php
-```
+    AddHandler application/x-httpd-php php test
+    AddType text/html php
 
 You can find more information about `AddHandler` and `AddType` on
 [Apache's website](http://httpd.apache.org/docs/2.0/mod/mod_mime.html).
 
 **Note**: We recommend using just the **.php** extension for PHP pages.
-

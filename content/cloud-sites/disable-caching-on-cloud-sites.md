@@ -1,5 +1,6 @@
 ---
-node_id: 99
+permalink: disable-caching-on-cloud-sites/
+audit_date:
 title: Disable caching on Cloud Sites
 type: article
 created_date: '2011-03-09'
@@ -20,8 +21,7 @@ performance on your site for end users and, in some cases, will increase
 your bandwidth fees. Use them only if you need them, and only for the
 files you need them for.
 
-Disable caching by using .htaccess (Linux technology only)
-----------------------------------------------------------
+### Disable caching by using .htaccess (Linux technology only)
 
     <IfModule mod_php5.c>
               <IfModule mod_headers.c>
@@ -32,8 +32,7 @@ Disable caching by using .htaccess (Linux technology only)
     </IfModule>
 
 
-Disable caching by using web.config (Windows technology only)
--------------------------------------------------------------
+### Disable caching by using web.config (Windows technology only
 
     <configuration>
               <system.webServer>
@@ -44,4 +43,3 @@ Disable caching by using web.config (Windows technology only)
                   </httpProtocol>
               </system.webServer>
     </configuration>
-

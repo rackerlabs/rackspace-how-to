@@ -1,5 +1,6 @@
 ---
-node_id: 1060
+permalink: cloud-sites-website-security/
+audit_date:
 title: Cloud Sites Website Security
 type: article
 created_date: '2011-04-01'

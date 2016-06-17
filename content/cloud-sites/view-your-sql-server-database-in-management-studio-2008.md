@@ -1,5 +1,6 @@
 ---
-node_id: 575
+permalink: view-your-sql-server-database-in-management-studio-2008/
+audit_date:
 title: View your SQL Server database in Management Studio 2008
 type: article
 created_date: '2011-03-16'

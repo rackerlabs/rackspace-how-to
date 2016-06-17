@@ -1,5 +1,6 @@
 ---
-node_id: 1247
+permalink: getting-started-with-cloud-sites-managing-dns-records/
+audit_date:
 title: Getting Started With Cloud Sites - Managing DNS Records
 type: article
 created_date: '2011-11-09'
@@ -10,100 +11,83 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note**: This article is written for our [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can get to it from the
-Cloud Control Panel by clicking your name in the upper-right corner and
-selecting [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/).
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 ### Previous section
 
-[Getting Started with Cloud
-Sites](/how-to/cloud-sites)
-
-
+[Cloud Sites introduction](/how-to/cloud-sites)
 
 This article provides a quick set of step-by-step instructions for
 managing your DNS records via the Rackspace Cloud Control Panel.
 
--   Log into the [Rackspace Cloud Control
-    Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting-&gt;Cloud Sites**
+-   Log into the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
+-   Navigate to **Hosting > Cloud Sites**
 
-![](http://c806394.r94.cf2.rackcdn.com/cloudsites.png)
+  <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/cloudsites.png %}" alt="" />
 
 -   Click on any **Domain Name** (The Domain tab is accessible from the
     Domain Details screen of any of your websites. All DNS entries are
     visible and editable from the Domain tab).
 -   Click on the **Domain** Tab
 
-![](http://c806394.r94.cf2.rackcdn.com/domaintab.png)
+  <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/domaintab.png %}" alt="" />
 
 The Domain Tab contains 4 sections:
 
-1.  [Website Domain Information](#website_domain_information)
-2.  [DNS Management](#dns_management)
-3.  [MX (Mail Exchanger) Management](#mx_management)
-4.  [SPF (Sender Policy Framework) Records](#spf)
+1.  Website domain information
+2.  DNS management
+3.  MX (Mail Exchanger) management
+4.  SPF (Sender Policy Framework) records
 
 Let's take a closer look at each of these sections and review their
 contents.
 
-
-
-**Website Domain Information**
+### Website domain information
 
 This section will allow you to manage your domains **nameserver
 settings**, **register an unregistered domain (if applicable)** and
 **transfer your domain (if applicable)**.
 
-[![Click here to view full size
-image](http://c806394.r94.cf2.rackcdn.com/websitedomaininfo.png "Click here to view full size image")](http://c806394.r94.cf2.rackcdn.com/websitedomaininfo.png)
+[<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/websitedomaininfo.png  %}"Click here to view full size image")](http://c806394.r94.cf2.rackcdn.com/websitedomaininfo.png" alt="Click here to view full size image" />
 
-
-
-**DNS Management**
+### DNS management
 
 This section will show you all of your DNS records, **add new records**,
 **modify existing records** and **delete records**.
 
-[![Click here to view full size
-image](http://c806394.r94.cf2.rackcdn.com/dnsmanagement.png "Click here to view full size image")](http://c806394.r94.cf2.rackcdn.com/dnsmanagement.png)
+[<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/dnsmanagement.png  %}"Click here to view full size image")](http://c806394.r94.cf2.rackcdn.com/dnsmanagement.png" alt="Click here to view full size image" />
 
-**Add New Record**
+#### Add new record
 
--   To add a new record, choose **Add A Record**
+-   To add a new record, choose **Add A Record**.
 
-![](http://c806394.r94.cf2.rackcdn.com/addrecord.png)
+  <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/addrecord.png %}" alt="" />
 
 -   Fill in the **Domain Record** and **Content** with the desired
-    values
+    values.
 
-**Modify Existing Record**
+#### Modify Existing Record
 
--   Scroll down to the **DNS Management** portion of the **Domain Tab**
+-   Scroll down to the **DNS Management** portion of the **Domain Tab**.
 
 -   This area will provide you with all of the DNS entries for your
-    currently-viewed domain within Cloud Sites
+    currently-viewed domain within Cloud Sites.
 
-    [![Click here to view full size
-    image](http://c766433.r33.cf2.rackcdn.com/arecords.png "Click here to view full size image")](http://c766433.r33.cf2.rackcdn.com/arecords.png)
+    [<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/arecords.png  %}"Click here to view full size image")](http://c766433.r33.cf2.rackcdn.com/arecords.png" alt="Click here to view full size image" />
 
 -   Click on the domain name next to the record **Type** you would like
-    to modify
+    to modify.
 
--   Enter in the new **Value** for the DNS entry
+-   Enter in the new **Value** for the DNS entry.
 
-*This value could be entered as an IP address for an A record change, or
-a FQDN for a CNAME record change. *
+  **Note:** This value could be entered as an IP address for an A record change, or
+a FQDN for a CNAME record change.
 
-![](http://c806394.r94.cf2.rackcdn.com/changednsrecord.png)
+  <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/changednsrecord.png %}" alt="" />
 
--   Click **Save** to update the change in the DNS entry
+-   Click **Save** to update the change in the DNS entry.
 
-
-
-**MX (Mail Exchanger) Management**
+### MX (Mail Exchanger) Management
 
 The Rackspace Cloud's network currently has two mail exchangers (MX
 hosts) to provide you with a highly available mail solution. If you
@@ -121,9 +105,7 @@ MX hosts up to date. Of course, if you host your DNS with The Rackspace
 Cloud, you will not need to make any changes and all of the MX hosts
 will be updated automatically.
 
-
-
-**SPF (Sender Policy Framework) Records**
+### SPF (Sender Policy Framework) Records
 
 A SPF record is a DNS TXT record and is added to our DNS zone in the
 same manner that A records and MX records are added.
@@ -155,7 +137,7 @@ In this section, you will be presented with two options:
 1.  Use The Rackspace Cloud's default SPF records
 2.  Do not use The Rackspace Cloud's default SPF records
 
-![](http://c806394.r94.cf2.rackcdn.com/spfmanagement.png)
+<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-managing-dns-records/spfmanagement.png %}" alt="" />
 
 Our suggestion would be, if you are not familiar with SPF records and
 are not comfortable configuring your own, then opt to use The Rackspace
@@ -166,6 +148,4 @@ domain in a record of type "TXT" in the DNS Management section.
 
 ### Next section
 
-[Using the Rackspace
-nameservers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)
-
+[Using the Rackspace name servers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)

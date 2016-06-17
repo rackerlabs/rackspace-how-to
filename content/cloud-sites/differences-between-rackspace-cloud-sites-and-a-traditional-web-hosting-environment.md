@@ -1,5 +1,6 @@
 ---
-node_id: 535
+permalink: differences-between-rackspace-cloud-sites-and-a-traditional-web-hosting-environment/
+audit_date:
 title: Differences between Rackspace Cloud Sites and a traditional web hosting environment
 type: article
 created_date: '2011-03-16'
@@ -13,7 +14,7 @@ product_url: cloud-sites
 The Rackspace Cloud Sites environment differs from a traditional hosting
 environment in the following ways:
 
--   More than one server serves a specific website's request becausethe
+-   More than one server serves a specific website's request because the
     load balancing capability is made available to all websites.
     Depending on file extensions, the load balancer directs traffic to
     appropriate servers.
@@ -22,7 +23,7 @@ environment in the following ways:
 
 -   The operational architecture of Cloud Sites uses a caching mechanism
     for media content and ASPX requests. As a result, some updates might
-    not take effect immedtiately.
+    not take effect immediately.
 
 -   The databases needed to host a site are usually on different virtual
     machines and users can provision them through the control panel.
@@ -37,5 +38,3 @@ environment in the following ways:
 -   By default website statistics and raw logging are turned off. Users
     must explicitly enable them if needed. By default, PHP and cron job
     task logs are written to the logs directory.
-
-

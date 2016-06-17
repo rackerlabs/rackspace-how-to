@@ -1,5 +1,6 @@
 ---
-node_id: 130
+permalink: modified-medium-trust-on-cloud-sites/
+audit_date:
 title: Modified Medium Trust on Cloud Sites
 type: article
 created_date: '2011-03-15'
@@ -10,10 +11,10 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-The Rackspace Cloud&rsquo;s Windows environment operates in modified Medium
+The Rackspace Cloud's Windows environment operates in modified Medium
 Trust.
 
-### <span>Overview</span>
+### Overview
 
 The "trust level" refers to permissions set in the Web.config file that
 dictate what operations can and cannot be performed by web applications.
@@ -44,84 +45,70 @@ Applications operating under a Medium Trust level have no registry
 access, and no access to the Windows event log. Both network and file
 system access will be limited.
 
-### <span class="mw-headline">Running Applications under Medium Trust</span>
+### Running Applications under Medium Trust
 
-<span class="mw-headline">**DotNetNuke**</span>
+**DotNetNuke**
 
 DotNetNuke can be installed in our modified Medium Trust environment by
-following [our
-guide](/how-to/install-dotnetnuke-on-cloud-sites "DotNetNuke"). If you do
+following [our guide](/how-to/install-dotnetnuke-on-cloud-sites). If you do
 encounter any issues with the installation of the CMS, please report the
-issue to our support team, post in our forums, or [visit DotNetNuke's
-community
-forums](http://www.dotnetnuke.com/tabid/795/default.aspx "http://www.dotnetnuke.com/tabid/795/default.aspx").
+issue to our support team, post in our forums, or [visit DotNetNuke's community forums](http://www.dotnetnuke.com/tabid/795/default.aspx).
 
-<span class="mw-headline">**ASPDotNetStoreFront**</span>
+**ASPDotNetStoreFront**
 
-Per [this article at ASPDotNetStoreFront's
-website](https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105 "https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105"):
+Per [this article at ASPDotNetStoreFront's website](https://support.aspdotnetstorefront.com/index.php?_m=knowledgebase&_a=viewarticle&kbarticleid=105):
+
 "Beginning with version 7.0.2.5, the software will run in Medium Trust
 natively. Customers on earlier versions than that will need to contact
-[ASPDotNetStoreFront's
-support](http://www.aspdotnetstorefront.com/t-support.aspx "http://www.aspdotnetstorefront.com/t-support.aspx")
+[ASPDotNetStoreFront's support](http://www.aspdotnetstorefront.com/t-support.aspx)
 with their original order number for a special medium trust build."
 
-<span class="mw-headline">**Umbraco**</span>
+**Umbraco**
 
 [Umbraco](http://umbraco.com/) can be configured to run in a Medium
 Trust environment.
 
-<span class="mw-headline">**BlogEngine**</span>
+**BlogEngine**
 
 BlogEngine works in our modified Medium Trust environment. If you do
 encounter any issues with the installation of the CMS, please report the
-issue to our support team, post in our forums, or [visit BlogEngine&rsquo;s
-community
-forums](http://www.codeplex.com/blogengine/Thread/List.aspx "http://www.codeplex.com/blogengine/Thread/List.aspx").
+issue to our support team, post in our forums, or [visit BlogEngine's community forums](http://www.codeplex.com/blogengine/Thread/List.aspx).
 
-<span class="mw-headline">**mojoPortal**</span>
+**mojoPortal**
 
 mojoPortal works in our modified Medium Trust environment. If you do
 encounter any issues with the installation of the CMS, please report the
-issue to our support team, post in our forums, or [visit mojoPortal's
-community
-forums](http://www.mojoportal.com/forums.aspx "http://www.mojoportal.com/forums.aspx").
+issue to our support team, post in our forums, or [visit mojoPortal's community forums](http://www.mojoportal.com/forums.aspx).
 
-### <span class="mw-headline">Partially Trusted Callers</span>
+### Partially Trusted Callers
 
 If you do experience trust-related issues, it may relate to assemblies
 that do not allow *Partially Trusted Callers*. For additional
-information on this, please review Microsoft&rsquo;s documentation regarding
+information on this, please review Microsoft's documentation regarding
 Partially Trusted Callers
-[here](http://msdn.microsoft.com/en-us/library/wyts434y.aspx "http://msdn.microsoft.com/en-us/library/wyts434y.aspx")
+[here](http://msdn.microsoft.com/en-us/library/wyts434y.aspx)
 and
-[here](http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7 "http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7")
+[here](http://msdn.microsoft.com/en-us/library/ms364059%28VS.80%29.aspx#prtltrstpro_topic7)
 (these are components that will **NOT** work with Partially Trusted
 Callers).
 
 Many components also have support documentation concerning functioning
 in a Medium Trust.
 
-### <span class="mw-headline">Other Items</span>
+### Other Items
 
-<span class="mw-headline">**AspJpeg**</span>
+**AspJpeg**
 
 The Rackspace Cloud has been working with Persists, the creator of
 AspJpeg, to determine if their component will work under .NET in our
 modified Medium Trust environment. It should be noted, however, that the
 AspJpeg component is fully functional under Classic ASP.
 
-<span class="mw-headline">**Configurations**</span>
+**Configurations**
 
 To facilitate your ability to test your applications on your local
 development machine, we have made our modified Medium Trust
 configuration available:
 
--   [Click here to download modified Medium Trust configuration file for
-    .NET
-    3.5](http://c4959820.r20.cf2.rackcdn.com/web_customtrust.config)
--   [<span>Click here to download modified Medium Trust configuration
-    file for .NET
-    4</span>.0](http://c4959820.r20.cf2.rackcdn.com/web_custom40.config)
-
-
+-   [Click here to download modified Medium Trust configuration file for .NET 3.5](http://c4959820.r20.cf2.rackcdn.com/web_customtrust.config)
+-   [Click here to download modified Medium Trust configuration file for .NET 4</span>.0](http://c4959820.r20.cf2.rackcdn.com/web_custom40.config)

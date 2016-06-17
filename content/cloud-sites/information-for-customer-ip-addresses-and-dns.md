@@ -1,5 +1,6 @@
 ---
-node_id: 4727
+permalink: information-for-customer-ip-addresses-and-dns/
+audit_date:
 title: Information for customer IP addresses and DNS
 type: article
 created_date: '2015-06-25'
@@ -10,8 +11,7 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**What is changing?**
----------------------
+### What is changing?
 
 -   Outbound IP addresses for access to external services, such as
     Twitter or Facebook, will change. If you have an external service
@@ -22,8 +22,6 @@ product_url: cloud-sites
     -   *72.32.10.144 - 72.32.10.159 (WC1.DFW3)*
     -   *72.32.47.176 - 72.32.47.191 (WC2.DFW3)*
 
-
-
 -   Outbound IP addresses for access to ServiceNet resources
     will change. If you have any ServiceNet resources such as Cloud
     Servers, Cloud Databases, etc., restricting access by IP address,
@@ -33,7 +31,7 @@ product_url: cloud-sites
     technology, please reference
     [MSSQL](/how-to/information-for-ms-sql-changes)
     or
-    [MySQL](/how-to/information-for-mysql-users-mariadb-100-0)
+    [MySQL](/how-to/information-for-mysql-users-mariadb-100)
     for more information.
 
 -   Test links for websites will be changing to reflect their
@@ -47,22 +45,20 @@ product_url: cloud-sites
         testlink URL follows this pattern:
         www.yoursite.com.*cluster.***dfw3-2**.websitetestlink.com
 
-**What is not changing?**
--------------------------
+### What is not changing?
 
 -   Customers will not need to update their DNS entries for
-    their websites. We will be migrating SSL and cluster IPs over\*.
+    their websites. We will be migrating SSL and cluster IPs over.
 
 -   Customers using 3rd party DDoS mitigation services (such
     as CloudFlare) will not need to update anything on their end.
 
--   FTP records and IPs will also remain the same\*.
+-   FTP records and IPs will also remain the same.
 
     **Note:** Old DNS entries (i.e., test links) will be retired by end
     of Q2 2016.
 
-**How does this affect me?**
-----------------------------
+### How does this affect me?
 
 Most customers will not have to make any changes in order to continue
 functioning correctly.
@@ -77,8 +73,7 @@ practices. Here are examples of websites likely affected:
     access
 -   Websites that have hard-coded IP addresses instead of a hostname
 
-**FAQ**
--------
+### FAQ
 
 **My site feed (example: Twitter, Facebook, Instagram) stopped working
 after the maintenance. What could have occurred?**
@@ -101,29 +96,20 @@ occurred?**
 **MySQL Workbench/SQL Server Management Studio stopped connecting after
 the maintenance. What could have occurred?**
 
--   External database management IPs will be changing.<span>Based on
+-   External database management IPs will be changing. Based on
     your technology, please
-    reference </span>[MSSQL](/how-to/information-for-ms-sql-changes)<span> or </span>[MySQL](/how-to/information-for-mysql-users-mariadb-100-0)<span> for
-    more information</span>
+    reference [MSSQL](/how-to/information-for-ms-sql-changes) or [MySQL](/how-to/information-for-mysql-users-mariadb-100) for
+    more information
 
 **My test links stopped working after the maintenance. What occurred?**
 
 -   After the maintenance, test links will be changing to a new format
     to reflect the new datacenter. Please see test link table above.
 
-
-
 **Related Topics**
 
--   [Important scheduled maintenance: DFW environment
-    migration](/how-to/important-scheduled-maintenance-dfw-environment-migration)
--   [Information for Customer IPs &
-    DNS](/how-to/information-for-customer-ip-addresses-and-dns)
--   [Information for MS SQL
-    changes](/how-to/information-for-ms-sql-changes)
--   [Information for MySQL Users
-    (MariaDB 10.0)](/how-to/information-for-mysql-users-mariadb-100-0)
--   [Information for new PHP 5.6 & Apache
-    version](/how-to/information-for-new-php-56-apache-version-0)
-
-
+-   [Important scheduled maintenance: DFW environment migration](/how-to/important-scheduled-maintenance-dfw-environment-migration)
+-   [Information for Customer IPs & DNS](/how-to/information-for-customer-ip-addresses-and-dns)
+-   [Information for MS SQL changes](/how-to/information-for-ms-sql-changes)
+-   [Information for MySQL Users (MariaDB 10.0)](/how-to/information-for-mysql-users-mariadb-100)
+-   [Information for new PHP 5.6 & Apache version](/how-to/information-for-new-php-56-apache-version)

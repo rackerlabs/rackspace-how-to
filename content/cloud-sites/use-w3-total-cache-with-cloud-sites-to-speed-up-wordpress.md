@@ -1,5 +1,6 @@
 ---
-node_id: 4481
+permalink: use-w3-total-cache-with-cloud-sites-to-speed-up-wordpress/
+audit_date:
 title: Use W3 Total Cache with Cloud Sites to speed up WordPress
 type: article
 created_date: '2015-01-19'
@@ -12,7 +13,7 @@ product_url: cloud-sites
 
 W3 Total Cache is a plugin that enables you to store cached versions of your dynamic PHP pages during the  [Wordpress installation](http://www.rackspace.com/cloud/sites/web-hosting/wordpress/) process. Because W3 Total Cache reduces the load on the cluster, it also reduces the number of compute cycles used by a site.
 
-## Install W3 Total Cache
+### Install W3 Total Cache
 
 Download the W3 Total Cache plugin at [https://wordpress.org/plugins/w3-total-cache/](https://wordpress.org/plugins/w3-total-cache/).
 
@@ -20,7 +21,7 @@ Before you begin the W3 Total Cache installation, ensure that you have your Rack
 
 Follow the installation instructions provided at the [W3 Total Cache plugin installation page](https://wordpress.org/plugins/w3-total-cache/installation/).
 
-## Configure recommended W3 Total Cache settings
+### Configure recommended W3 Total Cache settings
 
 The settings for W3 Total Cache can usually be used across different hosts. However, Cloud Sites has a unique infrastructure setup that requires specific settings for the page cache to provide the best experience for a given site.
 
@@ -28,11 +29,11 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
     The W3 Total Cache settings commands are expanded.
 
-    <img alt="" height="204" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_menu.png" width="159" border="1" />
+    <img src="{% asset_path cloud-sites/use-w3-total-cache-with-cloud-sites-to-speed-up-wordpress/w3tc_menu.png %}" alt="" />
 
 2. Click **General Settings**.
 
-    <img alt="" height="204" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_general.png" width="166" border="1" />
+    <img src="{% asset_path cloud-sites/use-w3-total-cache-with-cloud-sites-to-speed-up-wordpress/w3tc_general.png %}" alt="" />
 
 3. Set the following options and then click **Save all settings**:
 
@@ -49,7 +50,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 4. In the menu, click **Page Cache**.
 
-    <img alt="" height="204" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_pagecache.png" width="160" border="1" />
+    <img src="{% asset_path cloud-sites/use-w3-total-cache-with-cloud-sites-to-speed-up-wordpress/w3tc_pagecache.png %}" alt="" />
 
 5. Set the following options and then click **Save all settings**:
 
@@ -65,7 +66,6 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 6. In the menu, click **Minify**.
 
-
 7. Set the following options and then click **Save all settings**:
 
 	- Select **Rewrite URL structure**.
@@ -80,7 +80,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 8. In the menu, click **Browser Cache**.
 
-    <img alt="" height="216" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_browsercache.png" width="158" border="1" />
+    <img src="{% asset_path cloud-sites/use-w3-total-cache-with-cloud-sites-to-speed-up-wordpress/w3tc_browsercache.png %}" alt="" />
 
 9. Set the following options and then click **Save all settings**:
 
@@ -107,7 +107,6 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
     Exporting the settings enables you to import them to a different site for more rapid deployment of the plugin.
 
-
 ### To Optionally Enable Cloud Files CDN
 
 1. In the WordPress menu, click **Performance > General Settings**.
@@ -120,7 +119,7 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 5. In the menu, click **CDN**.
 
-    <img alt="" height="128" src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/w3tc_cdn.png" width="162" border="1" />
+    <img src="{% asset_path cloud-sites/use-w3-total-cache-with-cloud-sites-to-speed-up-wordpress/w3tc_cdn.png %}" alt="" />
 
 6. In the **General** section, clear the following check boxes:
 
@@ -156,13 +155,10 @@ The settings for W3 Total Cache can usually be used across different hosts. Howe
 
 	-	**Upload theme files**
 
-## Final steps
+### Final steps
 
 After you've successfully set up W3 Total Cache, in the WordPress menu, click **Performance > Dashboard** and choose to empty all caches.
 
 Visit the page once or twice to trigger the building of the cache by the WordPress cron.
 
 After the cache is built, you should see a significant change in the speed of your site on both the front end and the back end.
-
-
-<p>&nbsp;</p>

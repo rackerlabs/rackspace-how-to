@@ -1,11 +1,12 @@
 ---
-node_id: 1129
+permalink: cloud-sites-subaccounts/
+audit_date:
 title: Cloud Sites subaccounts
 type: article
 created_date: '2011-06-15'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2015-06-16'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -17,8 +18,7 @@ sub-account owner is also allocated websites, databases, and FTP users,
 based on your previously selected preferences. This article provides
 more information about sub-accounts and their limitations.
 
-Isolated file structure
------------------------
+### Isolated file structure
 
 All sites created within a sub-account are segregated from the main
 account and other sub-accounts. When a site is created under a
@@ -29,7 +29,7 @@ spread to other subaccounts or the main account. Although this feature
 cannot prevent individual site vulnerabilities from being exploited, it
 can prevent compromises from leaving the account.
 
-### Limitation
+#### Limitations
 
 Because these subaccount sites are in their own portion of the file
 structure, the main FTP user account (and other sub-account FTP user
@@ -38,8 +38,7 @@ must either use the subaccount FTP user account to log in to the file
 structure or create site-specific FTP users to access the sub-account
 file structure.
 
-White label control panel
--------------------------
+### White label control panel
 
 Each subaccount has access to a white label control panel (at
 https://www.websitesettings.com). This control panel provides a subset
@@ -125,9 +124,7 @@ users.
 </tbody>
 </table>
 
-
-
-### Limitations
+#### Limitations
 
 Cloud Sites does not provide direct support to sub-account users. All
 sub-accounts must go to the main account owner to receive support. All
@@ -140,18 +137,15 @@ instances, which incur a cost at creation (see
 [rackspace.com/cloud/sites](http://www.rackspace.com/cloud/sites) for
 pricing information). MySQL databases do not incur a cost at creation.
 
-Sub-account actions from the main control panel
------------------------------------------------
+### Sub-account actions from the main control panel
 
 Navigate to the subaccount actions from within the Cloud Sites Control
 Panel as follows
 
-1.  Click **Hosting &gt; Cloud Sites**.
+1.  Click **Hosting > Cloud Sites**.
 2.  Click the **Subaccounts** tab.
 3.  Click a subaccount name to display the **General Settings** tab for
     the subaccount.
-
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/edit_subaccount.png" width="600" height="379" />
 
 On this tab you can complete the following actions:
 
@@ -164,11 +158,8 @@ On this tab you can complete the following actions:
     in as Sub-Account** link.
 -   Display usage reports per sub-account.
 
-### Limitation
+#### Limitation
 
 Given the unique infrastructure configuration of IIS sites, the suspend
 function does not work for IIS sites in the Cloud Sites environment.
 Main account users must contact support to suspend IIS sites.
-
-
-

@@ -1,5 +1,6 @@
 ---
-node_id: 4729
+permalink: information-for-mysql-users-mariadb-100/
+audit_date:
 title: Information for MySQL Users (MariaDB 10.0)
 type: article
 created_date: '2015-06-25'
@@ -10,13 +11,7 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-<div class="table-wrap">
-
-
--
-
-**What is changing?**
----------------------
+### What is changing?
 
 Within our DFW datacenter, Cloud Sites will be updating existing MySQL
 databases to MariaDB 10.0 which is a highly compatible, drop in
@@ -64,7 +59,7 @@ NEW phpMyAdmin URL
 </tbody>
 </table>
 
-**Technology Reference for MariaDB 10.0**
+### Technology Reference for MariaDB 10.0
 
 -   Feature comparisons:
     <https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/>
@@ -73,73 +68,54 @@ NEW phpMyAdmin URL
 -   MariaDB FAQ site:
     <https://mariadb.com/kb/en/meta/about-the-mariadb-knowledge-base/>
 
-**What is not changing?**
--------------------------
+### What is not changing?
 
 -   Plugins and database connectors that utilize your DB will not need
     to be updated. Maria DB is a drop in replacement for MySQL
 -   We will create an alias from the old hostname to the new
-    hostname automatically. \*Note - In the future we will deprecate the
+    hostname automatically.
+
+    **Note:** In the future we will deprecate the
     former hostnames at end of Q2 2016
 -   Cloud Database instances are not subject to this migration (Note:
     Our outbound IPs will be changing, if you are using any IP based
     ACLs on external resources, please see
     [here](/how-to/information-for-customer-ip-addresses-and-dns)
 
+### FAQ
 
--
-
-**FAQ**
--------
-
-**MySQL Workbench stopped connecting after the maintenance. What could
-have occurred?**
+#### MySQL Workbench stopped connecting after the maintenance. What could have occurred?
 
 -   External database Management IPs will be changing. These IPs will be
     visible in your control panel's page within the database section.
 
-**How do I reference my database IP information?**
+#### How do I reference my database IP information?
 
 -   Log into your Cloud Sites control panel
     at [manage.rackspacecloud.com](http://manage.rackspacecloud.com)
--   Click on 'Hosting' &gt;&gt; 'Cloud Sites' and select the domain
+-   Click on **Hosting > Cloud Sites** and select the domain
     under which the database was created
--   From the domain details page click on the 'Features' tab and select
+-   From the domain details page click on the **Features** tab and select
     the active database you wish to reference:
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/MySQL.png" width="756" height="628" />
+  <img src="{% asset_path cloud-sites/information-for-mysql-users-mariadb-100/MySQL.png %}" alt="" />
 
-**Will my database content be affected after the maintenance?**
+#### Will my database content be affected after the maintenance?
 
 -   No. Data will not be modified during the maintenance. Only Hostname
     and IP information will be changing
 
-**Will my former hostname information be affected after the
-maintenance?**
+#### Will my former hostname information be affected after the maintenance?
 
 -   External IPs for your instances will be updated and the former IPs
     will no longer be usable for connection strings
 -   Former hostnames will automatically be aliased to the new database
     host
 
+#### Related Topics
 
-
-**Related Topics**
-
-</div>
-
-<div id="logged_content" class="messages warning">
-
--   [Important scheduled maintenance: DFW environment
-    migration](/how-to/important-scheduled-maintenance-dfw-environment-migration)
--   [Information for Customer IPs &
-    DNS](/how-to/information-for-customer-ip-addresses-and-dns)
--   [Information for MS SQL
-    changes](/how-to/information-for-ms-sql-changes)
--   [Information for MySQL Users
-    (MariaDB 10.0)](/how-to/information-for-mysql-users-mariadb-100-0)
--   [Information for new PHP 5.6 & Apache
-    version](/how-to/information-for-new-php-56-apache-version-0)
-
-</div>
-
+-   [Important scheduled maintenance: DFW environment migration](/how-to/important-scheduled-maintenance-dfw-environment-migration)
+-   [Information for Customer IPs & DNS](/how-to/information-for-customer-ip-addresses-and-dns)
+-   [Information for MS SQL changes](/how-to/information-for-ms-sql-changes)
+-   [Information for MySQL Users (MariaDB 10.0)](/how-to/information-for-mysql-users-mariadb-100)
+-   [Information for new PHP 5.6 & Apache version](/how-to/information-for-new-php-56-apache-version)

@@ -1,5 +1,6 @@
 ---
-node_id: 116
+permalink: set-up-email-forwarding-on-cloud-sites/
+audit_date:
 title: Set up email forwarding on Cloud Sites
 type: article
 created_date: '2011-03-10'
@@ -10,14 +11,10 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note:** This article refers to the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com). You can access this interface
-from the [Cloud Control Panel](https://mycloud.rackspace.com) by
-clicking the **Cloud Control Panel** menu at the top of the window and
-selecting **Cloud Sites** from the menu.
-
 **Note:** Email is no longer offered as a feature for Cloud Sites. This
 article exists to support customers with legacy email accounts.
+
+This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 Email forwarding enables you to automatically send all of the emails
 received at a configured email account to one or more email addresses.
@@ -27,12 +24,10 @@ addresses, a maximum of 4 of them can be on an external domain (a domain
 other than that on which the email is configured). These entries must be
 separated by commas.
 
-To set up an email forward for one of your email accounts
----------------------------------------------------------
+### To set up an email forward for one of your email accounts
 
-1.  Log in to the [Cloud Sites Control
-    Panel](https://manage.rackspacecloud.com/).
-2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
+1.  Log in to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com/).
+2.  In the left navigation pane, click **Hosting > Cloud Sites**.
 3.  Select the Cloud Site domain name that contains the email account to
     which you want to add the email forwards.
 4.  Click the **Email accounts** tab.
@@ -41,6 +36,7 @@ To set up an email forward for one of your email accounts
     forward to in the **Forwarding Address** field (multiple entries
     *must* be separated by commas).
 7.  Click **Save**.
+
     It might take up to 15 minutes for the changes to the mail account
     to become effective.
 
@@ -48,8 +44,7 @@ To set up an email forward for one of your email accounts
 arrive at this mailbox. It will be immediately sent to the forward
 addresses.
 
-To have the mail server retain a copy of the message
-----------------------------------------------------
+### To have the mail server retain a copy of the message
 
 1.  Log in to webmail
     ([http://webmail.emailsrvr.com](http://webmail.emailsrvr.com/ "http://webmail.emailsrvr.com"))
@@ -60,6 +55,5 @@ To have the mail server retain a copy of the message
 4.  Under the **Forwarding** tab, check the **Save a copy of forwarded
     email** check box.
 5.  Click **Save**.
+
     Again, allow up to 15 minutes for these changes to take effect.
-
-

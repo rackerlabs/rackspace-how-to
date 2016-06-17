@@ -1,6 +1,7 @@
 ---
-node_id: 1071
-title: How Can I Contact The Cloud Sites Billing Team?
+permalink: how-can-i-contact-the-cloud-sites-billing-team/
+audit_date:
+title: Contact The Cloud Sites Billing Team
 type: article
 created_date: '2011-04-07'
 created_by: Rackspace Support

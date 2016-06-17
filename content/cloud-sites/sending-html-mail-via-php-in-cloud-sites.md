@@ -1,6 +1,7 @@
 ---
-node_id: 3838
-title: Sending HTML Mail via PHP in Cloud Sites
+permalink: sending-html-mail-via-php-in-cloud-sites/
+audit_date:
+title: Send HTML Mail via PHP in Cloud Sites
 type: article
 created_date: '2013-12-18'
 created_by: Bryon Farris
@@ -10,8 +11,34 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-<p><em>This article is an expansion of an existing article regarding basic SMTP authentication with PHP, which can be found <a href="/how-to/test-php-smtp-functionality" target="_blank">here</a>.&nbsp;</em></p><p>Within the Cloud Sites environment, it is possible to craft an HTML formatted email message for delivery when using SMTP authentication for delivery by making use of the built in Mail_Mime function provided by the PHP Pear framework.</p><p><strong>Sending HTML Enabled Mail via SMTP</strong></p><p>The following variables will need to be adjusted as needed:</p><ul><li><span style="line-height: 1.538em;" data-mce-mark="1">$from</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$to</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$subject</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$text</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$html</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$file</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$mimetype</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$host</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$username</span></li><li><span style="line-height: 1.538em;" data-mce-mark="1">$password</span></li></ul><p>The code below requires that you supply a valid SMTP hostname along with user credentials for authenticating against. If using a third party mail service, you will need to replace mail.emailsrvr.com with the appropriate SMTP server hostname relative to the service you are employing. The code also allows for the attachment of files from your Cloud Sites filesystem to the message, as long as a valid MIME type definition is supplied.&nbsp;</p>
-<pre id="pre-0"><div class="syntax"><a id="highlighter-0"></a></div>
+**Note:** This article is an expansion of an existing article regarding basic SMTP authentication with PHP, which can be found [here](/how-to/test-php-smtp-functionality).
+
+Within the Cloud Sites environment, it is possible to craft an HTML formatted email message 
+for delivery when using SMTP authentication for delivery by making use of the built in 
+Mail_Mime function provided by the PHP Pear framework.
+
+### Sending HTML Enabled Mail via SMTP
+
+The following variables will need to be adjusted as needed:
+
+-  $from
+-  $to
+-  $subject
+-  $text
+-  $html
+-  $file
+-  $mimetype
+-  $host
+-  $username
+-  $password
+
+The code below requires that you supply a valid SMTP hostname along with user credentials 
+for authenticating against. If using a third party mail service, you will need to replace 
+mail.emailsrvr.com with the appropriate SMTP server hostname relative to the service you 
+are employing. The code also allows for the attachment of files from your Cloud Sites 
+filesystem to the message, as long as a valid MIME type definition is supplied.
+
+```
 <?php
  require_once "Mail.php";
  require_once "Mail/mime.php";
@@ -19,12 +46,12 @@ product_url: cloud-sites
  // see http://pear.php.net/manual/en/package.mail.mail-mime.php
  // for further extended documentation on Mail_Mime
 
- $from = "Web Master &lt;webmaster@example.com&gt;";
- $to = "Nobody &lt;nobody@example.com&gt;";
+ $from = "Web Master <webmaster@example.com>";
+ $to = "Nobody <nobody@example.com>";
  $subject = "Test HTML email using PHP Pear w/ SMTP\r\n\r\n";
  $text = "This is a text test email message";
- $html = "&lt;html&gt;&lt;body&gt;&lt;p&gt;This is an html test email message
- &lt;a href=\&quot;http://www.rackspace.com\&quot;&gt;This Is A Link&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;";
+ $html = "<html><body><p>This is an html test email message
+ <a href=\"http://www.rackspace.com\">This Is A Link</a></p></body></html>";
  $crlf = "\n";
 
  // create a new Mail_Mime for use
@@ -65,9 +92,21 @@ product_url: cloud-sites
  $mail = $smtp->send($to, $headers, $body);
 
  if (PEAR::isError($mail)) {
-  echo("<p>" . $mail->getMessage() . "</p>");
+  echo("
+" . $mail->getMessage() . "
+
+");
 } else {
-  echo("<p>Message successfully sent!</p>");
+  echo("
+Message successfully sent!
+
+");
 }
 ?>
-</pre><p><strong style="color: #333333; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;">Note</strong><span style="color: #333333; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;">:&nbsp;</span><a class="external text" style="color: #c40022; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;" title="http://pear.php.net/package/Mail" href="http://pear.php.net/package/Mail" rel="nofollow">Mail.php</a><span style="color: #333333; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;">&nbsp;and <a href="http://pear.php.net/package/Mail_Mime/" target="_blank">Mail/mime.php</a> are&nbsp;</span><a class="external text" style="color: #c40022; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;" title="http://pear.php.net/" href="http://pear.php.net/" rel="nofollow">PEAR</a><span style="color: #333333; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;">&nbsp;modules and are installed on the server. They are included in the default&nbsp;</span><a class="external text" style="color: #c40022; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;" title="http://www.php.net/manual/en/ini.core.php#ini.include-path" href="http://www.php.net/manual/en/ini.core.php" rel="nofollow">include_path</a><span style="color: #333333; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;">&nbsp;for PHP, so&nbsp;</span><a class="external text" style="color: #c40022; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;" title="http://php.net/manual/en/function.require.php" href="http://php.net/manual/en/function.require.php" rel="nofollow">requiring</a><span style="color: #333333; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;">&nbsp;it here will work by default without any additional effort on your part.</span></p><p><strong><span style="color: #333333; font-family: arial; font-size: 13.333333969116211px; line-height: 18.19444465637207px;">See Also</span></strong></p><ul><li><a href="/how-to/test-php-smtp-functionality" target="_blank"><span style="color: #333333; font-family: arial;"><span style="line-height: 18.1875px;">How do I test PHP SMTP functionality?</span></span></a></li></ul>
+```
+
+**Note:** [Mail.php](http://pear.php.net/package/Mail) and [Mail/mime.php](http://pear.php.net/package/Mail_Mime/) are [PEAR](http://pear.php.net/) modules and are installed on the server. They are included in the default [include_path](http://www.php.net/manual/en/ini.core.php) for PHP, so [requiring](http://php.net/manual/en/function.require.php) it here will work by default without any additional effort on your part.
+
+### Related article
+
+-  [Test PHP SMTP functionality](/how-to/test-php-smtp-functionality)

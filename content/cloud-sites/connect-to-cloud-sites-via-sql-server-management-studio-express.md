@@ -1,5 +1,6 @@
 ---
-node_id: 602
+permalink: connect-to-cloud-sites-via-sql-server-management-studio-express/
+audit_date:
 title: Connect to Cloud Sites via SQL Server Management Studio Express
 type: article
 created_date: '2011-03-23'
@@ -10,11 +11,7 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**Note:** This article refers to the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can access this
-interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
-by clicking the **Cloud Control Panel** menu at the top of the window
-and selecting **Cloud Sites**.
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 Microsoft SQL Server Management Studio Express provides a graphical
 management tool for SQL Server. You can use SQL Server Management Studio
@@ -26,7 +23,9 @@ the only one who is allowed to connect via SQL Server Management Studio
 Express. Any secondary users who have been added who need to make
 changes must use
 [myLittleAdmin](/how-to/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface "Working with a MSSQL database")
-to connect.<span style="line-height: 1.2;">Prerequisite</span>
+to connect.
+
+### Prerequisite
 
 Ensure that you have installed the latest version of SQL Server
 Management Studio Express and any available service packs. As of the
@@ -39,9 +38,8 @@ was available at
 To make an external connection, you need the external IP address for
 your database. You can get the IP address by following these steps:
 
-1.  Log in to [the Cloud Sites Control
-    Panel](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com").
-2.  In the left navigation pane, click **Hosting** **&gt; Cloud Sites**.
+1.  Log in to [the Cloud Sites Control Panel](https://manage.rackspacecloud.com "https://manage.rackspacecloud.com").
+2.  In the left navigation pane, click **Hosting > Cloud Sites**.
 3.  Click the domain name under which the database exists.
 4.  Click the **Features** tab.
 5.  Click the database name that you want to connect to.
@@ -52,7 +50,7 @@ need this address in the next section.
 ### Connect by using the external IP address
 
 1.  Open Microsoft SQL Server Management Studio Express.
-    If <span>the connection dialog box </span>does not open, click the
+    If the connection dialog box does not open, click the
     **File** menu and then select **Connect Object Explorer**.
 2.  From the **Server type** menu, select **Database Engine**.
 3.  In the **Server Name** box, enter the external IP address for
@@ -62,7 +60,7 @@ need this address in the next section.
 5.  In the **Login** box, enter the primary user name for the
     database.
     The user name must be prefixed by an account ID, so you must use the
-    full user name; for example, **123456\_user** and not just
+    full user name; for example, **123456_user** and not just
     **user***.*
 6.  Enter that user's corresponding password.
 7.  Enter the port number. To successfully connect, you must use port
@@ -74,5 +72,3 @@ need this address in the next section.
 9.  On the **Connection Properties** tab, enter your database name in
     the **Connect to database** box.
 10. Click the **Connect** button.
-
-

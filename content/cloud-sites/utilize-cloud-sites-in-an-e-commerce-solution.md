@@ -1,5 +1,6 @@
 ---
-node_id: 1180
+permalink: utilize-cloud-sites-in-an-e-commerce-solution/
+audit_date:
 title: Utilize Cloud Sites in an E-commerce Solution
 type: article
 created_date: '2011-08-10'
@@ -20,7 +21,7 @@ designed for the storage or archival of any credit card related
 information, all credit card information must be handled on the payment
 gateway.
 
-<img src="http://c691243.r43.cf2.rackcdn.com/sitesecommerce.png" alt="Cloud Sites Ecommerce" class="MsoNormal" />
+<img src="{% asset_path cloud-sites/utilize-cloud-sites-in-an-e-commerce-solution/sitesecommerce.png %}" alt="" />
 
 In the Cloud Sites infrastructure you can have the entire e-commerce
 environment up until the point the customer provides credit card
@@ -35,21 +36,22 @@ After the Card Processing System validates the transaction it will
 return an authorized/failed message.  The failure messages can contain
 details such as:  insufficient funds, invalid card number, failed to
 complete transaction.  The communication from the Card Processing System
-to the Web Front End can never contain cardholder data.  **Cardholder
-data includes: primary account number, expiration date, name as it
+to the Web Front End can never contain cardholder data.  
+
+**Note:** Cardholder data includes: primary account number, expiration date, name as it
 appears on the card, CVV, CVV2, and magnetic stripe information.  In
 other words, all credit card related information must be handled by the
-gateway and not handled by or stored on Cloud Sites.**
+gateway and not handled by or stored on Cloud Sites.
 
 The Web Application Database can store information to uniquely identify
 the transaction with the Payment Processing System such as:  transaction
 ID, customer name, dollar amount of the transaction, date/time of
 transaction, return status of the payment request.
 
-**Below is an example proves flow that shows where the hand-off occurs
-between the e-commerce site and the payment gateway provider:**
+Following is an example proves flow that shows where the hand-off occurs
+between the e-commerce site and the payment gateway provider:
 
-<img src="http://c691243.r43.cf2.rackcdn.com/sampleconfig.png" alt="Cloud Sites Ecommerce Sample Configuration" class="MsoNormal" />
+<img src="{% asset_path cloud-sites/utilize-cloud-sites-in-an-e-commerce-solution/sampleconfig.png %}" alt="" />
 
 ### Cloud Sites vulnerability scan policy
 
@@ -58,4 +60,3 @@ solution, scans for PCI compliance or vulnerability are not allowed per
 the Cloud Sites acceptable use policy.
 
 <http://www.rackspace.com/cloud/legal/aup/>
-

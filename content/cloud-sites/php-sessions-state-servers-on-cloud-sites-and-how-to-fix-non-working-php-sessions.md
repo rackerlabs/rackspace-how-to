@@ -1,5 +1,6 @@
 ---
-node_id: 89
+permalink: php-sessions-state-servers-on-cloud-sites-and-how-to-fix-non-working-php-sessions/
+audit_date:
 title: PHP Sessions State Servers on Cloud Sites And How To Fix Non Working PHP Sessions
 type: article
 created_date: '2011-03-09'
@@ -24,11 +25,9 @@ emulate sharing of a file system directory. If you set the same save
 path between multiple sites on a single account it has the same effect
 as using a shared file system folder. If for some reason the session
 handler does not work, the original behavior can be restored in
-.htaccess with the following:
+**.htaccess** with the following:
 
     php_value session.save_handler files
-
-
 
 If you are experiencing a problem with the standard way sessions are
 stored, you can change how your PHP sessions are handled by using a
@@ -36,12 +35,9 @@ stored, you can change how your PHP sessions are handled by using a
 the 'files' handler, we suggest disabling it  or explicitly setting it
 to 'redisr' to benefit from the performance of the state servers.
 
+### How do I make the changes?
 
-
-<span class="mw-headline">How do I make the changes?</span>
------------------------------------------------------------
-
-You can change how your PHP sessions are handled by using a .htaccess
+You can change how your PHP sessions are handled by using a **.htaccess**
 file containing the following directives:
 
     php_value session.save_path /mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions
@@ -51,28 +47,22 @@ This changes the life time of the session and sets your application to
 save the session in a place of your choosing.
 
 You will want to change the path of the last line in the example above
-to use your website's absolute path. [Please see this
-article](/how-to/locate-the-linux-path-for-your-cloud-sites-website "How do I find my website's Linux path?")
+to use your website's absolute path. [Please see this article](/how-to/locate-the-linux-path-for-your-cloud-sites-website)
 to locate your website's absolute path.
 
 Your website's absolute path should resemble this:
 **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/content**
 
-
-
-<span class="mw-headline">Where should I store my sessions?</span>
-------------------------------------------------------------------
+### Where should I store my sessions?
 
 We recommend storing your sessions in a directory above the
 public-facing **content** directory, such as the **web** directory. The
 recommended practice is to login to your FTP and create a **sessions**
 directory within your **web** directory. At this point your session save
 path should be:
+
 **/mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions**
 
-So the last line in your .htaccess file would resemble the following:
+So the last line in your **.htaccess** file would resemble the following:
 
     php_value session.save_path /mnt/stor1-wc1-dfw1/123456/www.domain.com/web/sessions
-
-
-

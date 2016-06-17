@@ -1,5 +1,6 @@
 ---
-node_id: 1052
+permalink: cms-comparison-drupal-joomla-and-wordpress/
+audit_date:
 title: 'CMS Comparison: Drupal, Joomla, and WordPress'
 type: article
 created_date: '2011-03-27'

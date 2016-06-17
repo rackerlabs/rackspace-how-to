@@ -1,5 +1,6 @@
 ---
-node_id: 665
+permalink: redirect-a-subdomain-to-a-subdirectory-with-asp/
+audit_date:
 title: Redirect a subdomain to a subdirectory with ASP
 type: article
 created_date: '2011-03-16'
@@ -20,14 +21,11 @@ redirect the requests to a specific file.
 
 **Examples:**
 
-http://subdomain1.YourHostedDomainName.com &gt;
-http://subdomain1.YourHostedDomainName.com/subdomain1
+    http://subdomain1.YourHostedDomainName.com > http://subdomain1.YourHostedDomainName.com/subdomain1
 
-http://subdomain2.YourHostedDomainName.com &gt;
-http://subdomain2.YourHostedDomainName.com/subdomain2
+    http://subdomain2.YourHostedDomainName.com > http://subdomain2.YourHostedDomainName.com/subdomain2
 
-http://subdomain3.YourHostedDomainName.com &gt;
-http://subdomain3.YourHostedDomainName.com/subdomain3/home.asp
+    http://subdomain3.YourHostedDomainName.com > http://subdomain3.YourHostedDomainName.com/subdomain3/home.asp
 
 You can use the following sample script to redirect a subdomain. You
 will need to place it as the default document on your document root.
@@ -49,5 +47,3 @@ will need to place it as the default document on your document root.
 -   Replace `/subdomain#` with your actual subdirectory name.
 -   The last redirection statement in the example shows how to redirect
     to a specific file.
-
-

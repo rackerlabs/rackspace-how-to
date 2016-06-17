@@ -1,5 +1,6 @@
 ---
-node_id: 112
+permalink: configure-your-cloud-sites-email-account-in-chatteremail/
+audit_date:
 title: Configure your Cloud Sites email account in ChatterEmail
 type: article
 created_date: '2011-03-10'
@@ -13,14 +14,13 @@ product_url: cloud-sites
 **Note:** This article refers to a feature that is no longer available
 for Cloud Sites. This article exists for legacy support only.
 
-Set up ChatterEmail on your Treo for the first time
----------------------------------------------------
+### Set up ChatterEmail on your Treo for the first time
 
 If you have not loaded ChatterEmail on your Treo device, perform the
 following steps to load the software on your Treo for a free 30 day
 trial.
 
-1.  Go to your Treo device&rsquo;s built-in browser.
+1.  Go to your Treo device's built-in browser.
 2.  Type **get.chatteremail.com** in the **URL** section.
 3.  Accept the Palm installer application into applications.
 4.  Select **Save** and **Open**, and do not change the location of the
@@ -36,8 +36,7 @@ trial.
 
 Your device is now set up for push email with your Webmail.us account.
 
-Set up a mail account if ChatterEmail is already loaded on your device
-----------------------------------------------------------------------
+### Set up a mail account if ChatterEmail is already loaded on your device
 
 1.  Tap the **Menu** button to activate the main menu.
 2.  Select **New Account** from the box menu.
@@ -49,8 +48,7 @@ Set up a mail account if ChatterEmail is already loaded on your device
 
 Your device is now set up for push email with your Webmail.us account.
 
-Assign SSL secure server settings
----------------------------------
+### Assign SSL secure server settings
 
 After setting up your mail account, you can follow these steps to adjust
 your account settings to use the secure (SSL) server. The SSL protocol
@@ -67,5 +65,3 @@ allows you to send and receive secure email messages.
     **secure.emailsrvr.com**
 8.  At the bottom of the screen, select **SSL**.
 9.  Tap the **OK** button.
-
-

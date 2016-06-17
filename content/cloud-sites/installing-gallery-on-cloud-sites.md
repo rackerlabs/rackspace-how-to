@@ -1,6 +1,7 @@
 ---
-node_id: 550
-title: Installing Gallery on Cloud Sites
+permalink: installing-gallery-on-cloud-sites/
+audit_date:
+title: Install Gallery on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
@@ -10,24 +11,18 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-**NOTE:** This article refers to the [Cloud Sites Control
-Panel](https://manage.rackspacecloud.com/). You can access this
-interface from the [Cloud Control Panel](https://mycloud.rackspace.com/)
-by clicking your username in the upper-right corner of the control panel
-and selecting Cloud Sites Control Panel.
+**Note:** This article is written for our [Cloud Sites Control Panel](https://manage.rackspacecloud.com/). You can get to it from the [Cloud Control Panel](https://mycloud.rackspace.com) by clicking **Rackspace Cloud** in the upper-left corner and selecting **Cloud Sites**. You can also navigate directly to <https://manage.rackspacecloud.com/>.
 
 This article will lead you through prepping your Cloud Sites domain to
 host a php based photo gallery using "Gallery", an open source and
 readily available site application.
 
+### Getting Started
 
-
-### <span class="mw-headline">Getting Started </span>
-
-If you have not already done so, goto <http://gallery.menalto.com/> and
+If you have not already done so, go to <http://gallery.menalto.com/> and
 download the latest stable release of Gallery.
 
-Here is the link that was current at the time of this article:
+Following is the link that was current at the time of this article:
 
     http://sourceforge.net/project/downloading.php?group_id=7130&filename=gallery-2.3-typical-en.zip
 
@@ -35,42 +30,32 @@ Here is the link that was current at the time of this article:
 
     http://codex.gallery2.org/Downloads
 
-
-
-### <span class="mw-headline">Setting up the Sites </span>
+### Setting up the Sites
 
 1.  Create your new domain from the Cloud Sites Control Panel with
     minimum requirements being PHP 4, and MySQL 4 or 5.
 2.  Once the domain has finished creating, create your database. To do
-    this, click on the &lsquo;Features&rsquo; tab from the top menu. Click &lsquo;Add&rsquo;,
-    and then select &lsquo;MySQL 4 or 5&rsquo;. Type in whatever name you would like
+    this, click on the **Features** tab from the top menu. Click **Add**,
+    and then select **MySQL 4 or 5**. Type in whatever name you would like
     to call the DB, type in a username and password of your choice.
     Follow prompts to finish creation. (You may want to write down the
     information provided, the hostname, database name, database username
     and, database password.)
 
-
-
-### <span class="mw-headline">Prepare your data </span>
+### Prepare your data
 
 1.  Extract the content of the Gallery file you downloaded earlier to
     your local computer.
 2.  Open up your FTP client software and login to your new domain. If
-    you are not familiar with uploading content, go here: [What FTP
-    software should I
-    use?](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients "What FTP software should I use?")
-    and use the information to connect provided here: [Getting Started
-    With Cloud Sites, FTP/SSHFS/FTP
-    Clients](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients) .
-    Your best bet will be to upload everything inside the &lsquo;gallery&rsquo;
-    folder contained within the .zip file you downloaded to your
+    you are not familiar with uploading content, go here: [What FTP software should I use?](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients)
+    and use the information to connect provided here: [Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients](/how-to/getting-started-with-cloud-sites-ftpsshfsftp-clients).
+    Your best bet will be to upload everything inside the **gallery**
+    folder contained within the **.zip** file you downloaded to your
     web/content folder.
 3.  Once the files have finished uploading, you are ready to get started
     with the installation of the Gallery and its settings.
 
-
-
-### <span class="mw-headline">Configure the Site</span>
+### Configure the Site<
 
 1.  The information needed here is provided when you created your
     Database, if did you not already write them down, you can view this
@@ -86,11 +71,9 @@ Here is the link that was current at the time of this article:
 3.  The admin account username and password for Gallery will be
     auto generated. Make sure to write this down because you will need
     it.
-4.  Click Start Using Gallery.
+4.  Click **Start Using Gallery**.
 
-
-
-### <span class="mw-headline">Success </span>
+### Success
 
 You have now successfully installed Gallery. Please keep in mind that
 this is a very much used and known PHP application, just like any well
@@ -98,4 +81,3 @@ used software it is susceptible to exploit. The best way to protect
 yourself and your data is to update your software regularly, I recommend
 joining their mailing list, this will keep you up to date on releases
 and security problems, so you can react accordingly.
-

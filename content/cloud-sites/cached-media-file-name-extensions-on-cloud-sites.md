@@ -1,5 +1,6 @@
 ---
-node_id: 3990
+permalink: cached-media-file-name-extensions-on-cloud-sites/
+audit_date:
 title: Cached media file name extensions on Cloud Sites
 type: article
 created_date: '2014-04-01'
@@ -32,7 +33,4 @@ following media filename extensions:
 Files will stay in cache for a maximum of 15 minutes, depending on the
 device's resource availability.
 
-For information about bypassing the cache, see: [Disable caching on
-Cloud
-Sites?](/how-to/disable-caching-on-cloud-sites)
-
+For information about bypassing the cache, see: [Disable caching on Cloud Sites](/how-to/disable-caching-on-cloud-sites)

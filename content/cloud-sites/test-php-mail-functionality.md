@@ -1,5 +1,6 @@
 ---
-node_id: 569
+permalink: test-php-mail-functionality/
+audit_date:
 title: Test PHP mail functionality
 type: article
 created_date: '2011-03-16'

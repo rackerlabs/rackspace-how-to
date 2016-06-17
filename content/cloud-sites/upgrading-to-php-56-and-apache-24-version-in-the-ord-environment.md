@@ -1,5 +1,6 @@
 ---
-node_id: 4963
+permalink: upgrading-to-php-56-and-apache-24-version-in-the-ord-environment/
+audit_date:
 title: Upgrading to PHP 5.6 and Apache 2.4 version in the ORD environment
 type: article
 created_date: '2015-11-30'
@@ -19,7 +20,7 @@ We are proactively providing test links to help identify potential site
 break changes that might occur on your sites. PHP5.6 test links will be
 shared in customer ticket notification
 
-Following is a timeline for PHP 5.6 availibility:
+Following is a timeline for PHP 5.6 availability:
 
 -   **Available now**: PHP 5.6 is currently available.
 -   **Early Q1 2016**: PHP 5.3 and 5.4 clusters will be updated to
@@ -27,7 +28,7 @@ Following is a timeline for PHP 5.6 availibility:
 -   **Mid Q1 2016**: Migrations to PHP 5.6 will begin for all ORD
     customer nodes.
 
-#### **Access control (.htaccess) updates**
+### Access control (.htaccess) updates
 
 In Apache 2.2, access control is based on client hostname, IP address,
 and other characteristics of client requests. The operations were
@@ -37,11 +38,11 @@ and [Satisfy](http://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#satisf
 
 In Apache 2.4, access control is performed in the same way as other
 authorization checks, by using the new module
-[mod\_authz\_host](http://httpd.apache.org/docs/2.4/mod/mod_authz_host.html).
+[mod_authz_host](http://httpd.apache.org/docs/2.4/mod/mod_authz_host.html).
 We recommend you replace the old access control idioms with the new
 authentication mechanisms, although for compatibility with old
 configurations, the new
-module [mod\_access\_compat](http://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) is
+module [mod_access_compat](http://httpd.apache.org/docs/2.4/mod/mod_access_compat.html) is
 provided.
 
 For more information, see
@@ -50,8 +51,8 @@ For more information, see
 **Server Side Includes**
 
 Sites that use legacy Server Side Includes (SSI) syntax will need to be
-updated to the new Apache syntax or SSILegacyExprParser must be enabled
-via .htaccess:
+updated to the new Apache syntax or `SSILegacyExprParser` must be enabled
+via **.htaccess**:
 
      SSILegacyExprParser on
 
@@ -60,14 +61,12 @@ For more information, see:
 -   <http://httpd.apache.org/docs/2.4/mod/mod_include.html#ssilegacyexprparser>
 -   <http://httpd.apache.org/docs/2.4/expr.html>
 
-**What is not changing?**
--------------------------
+### What is not changing?
 
 -   No website DNS changes will be required.
 -   FTP services will not change.
 
-**How does this affect me?**
-----------------------------
+### How does this affect me?
 
 Given the changes from PHP 5.3 and 5.4 to 5.6 (to include the upgrade
 from Apache 2.2 to 2.4), we ask that customers view the provided links
@@ -83,54 +82,26 @@ link for your site on PHP 5.6 is
 Replace the 53 or 54 in your current test link with 56 tin the new test
 link, as shown in the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left"><p><strong>Example current testl ink URL</strong></p></th>
-<th align="left"><p><strong>Example new test link URL</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>www.yoursite.com.php53-10<em>.</em>ord1-1.websitetestlink.com</p></td>
-<td align="left"><p>www.yoursite.com.php56-10<em>.</em>ord1-1.websitetestlink.com</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>www.yoursite.com.php54-1<em>.</em>ord1-1.websitetestlink.com</p></td>
-<td align="left"><p>www.yoursite.com.php56-1<em>.</em>ord1-1.websitetestlink.com</p></td>
-</tr>
-</tbody>
-</table>
+Example current test link URL | Example new test link URL
+------|------
+www.yoursite.com.php53-10.ord1-1.websitetestlink.com | www.yoursite.com.php56-10.ord1-1.websitetestlink.com
+www.yoursite.com.php54-1.ord1-1.websitetestlink.com | www.yoursite.com.php56-1.ord1-1.websitetestlink.com
 
 The preceding test links will be used until the environment has been
 made fully available, at which point they will be updated.
 
-Note: SSL is unavailable because the test links do not support HTTPS.
+**Note:** SSL is unavailable because the test links do not support HTTPS.
 
-**FAQ**
--------
+### FAQ
 
-**Is this Apache version fixing CVE \#\#\#?**
+#### Is this Apache version fixing CVE?
 
--   The version of Apache has been updated to 2.4 along with all of its
-    relevant CVE updates.
+The version of Apache has been updated to 2.4 along with all of its relevant CVE updates.
 
-**After the maintenance, my website&rsquo;s php\_errors.log is showing &ldquo;PHP
-Warning Deprecated&rdquo; alerts. What happened?**
+#### After the maintenance, my website's php_errors.log is showing "PHP Warning Deprecated" alerts. What happened?
 
--   The PHP application should continue to run as normal, but it might
-    not be supported by newer versions of PHP.
--   We recommend that you update the application to use the newer
-    functions for PHP 5.6.
+The PHP application should continue to run as normal, but it might not be supported by newer versions of PHP. We recommend that you update the application to use the newer functions for PHP 5.6.
 
-**My site keeps saying &ldquo;connection refused&rdquo; when trying to test HTTPS
-when utilizing the updated test links. What happened?**
+#### My site keeps saying "connection refused" when trying to test HTTPS when utilizing the updated test links. What happened?
 
--   Cloud Sites test links do not support SSL, so any requests made to
-    them with HTTPS fail.
-
-
+Cloud Sites test links do not support SSL, so any requests made to them with HTTPS fail.

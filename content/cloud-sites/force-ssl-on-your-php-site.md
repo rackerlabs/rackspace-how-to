@@ -1,5 +1,6 @@
 ---
-node_id: 622
+permalink: force-ssl-on-your-php-site/
+audit_date:
 title: Force SSL on your PHP site
 type: article
 created_date: '2011-03-16'

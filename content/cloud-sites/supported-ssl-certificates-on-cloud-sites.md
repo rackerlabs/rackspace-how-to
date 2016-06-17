@@ -1,5 +1,6 @@
 ---
-node_id: 117
+permalink: supported-ssl-certificates-on-cloud-sites/
+audit_date:
 title: Supported SSL certificates on Cloud Sites
 type: article
 created_date: '2011-03-10'
@@ -12,27 +13,23 @@ product_url: cloud-sites
 
 The following SSL certificates are supported on Cloud Sites:
 
-<div>
 
 -   Apache + OpenSSL (PEM format).
 -   Single Root Level certificates.Chained Root SSL certificates.
 -   Extended Validation (EV) Certificates. See the following section for
     installation information.
 -   Subject Alternative Name certificates to be used with a primary
-    domain and their aliases. The common name must matchs the primary
+    domain and their aliases. The common name must matches the primary
     FQDN, and each alias must be listed as a Subject Alternative.
 -   Multi-domain (UCC) and wildcard certificates. We do not directly
     support the intermediate chains required for them, because they need
     to be provided by the issuer. See the following section for
     installation information.
 
-**Note:**<span> Cloud Sites does not support self-signed SSL
-certificates.</span>
+**Note:** Cloud Sites does not support self-signed SSL
+certificates.
 
-
-
-Installing EV, multi-domain or wildcard certificates
-----------------------------------------------------
+### Installing EV, multi-domain or wildcard certificates
 
 When you install EV, multi-domain or wildcard certificates, the
 certificate must be installed to the name contained in the certificate's
@@ -41,7 +38,7 @@ visit https://www.sslshopper.com/certificate-decoder.html and enter the
 certificate. The information is displayed as shown in the following
 example:
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/cert_info.png" width="595" height="259" />
+<img src="{% asset_path cloud-sites/supported-ssl-certificates-on-cloud-sites/cert_info.png %}" alt="" />
 
 After installation you must point the DNS records of any domains in the
 **Subject Alternative Names** field to the IP address provided for the
@@ -51,9 +48,4 @@ If you encounter any errors during installation, contact a member of our
 Support team to help complete the installation.
 
 For instruction on how to install an SSL certificate for your website on
-Cloud Sites, see [Getting started with Cloud Sites: Configuring SSL on
-your
-websites](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
-
-</div>
-
+Cloud Sites, see [Getting started with Cloud Sites: Configuring SSL on your websites](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).

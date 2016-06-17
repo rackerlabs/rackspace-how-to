@@ -1,5 +1,6 @@
 ---
-node_id: 614
+permalink: set-up-custom-error-messages-in-aspnet-on-cloud-sites/
+audit_date:
 title: Set up custom error messages in ASP.NET on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -42,9 +43,5 @@ The following example is for ASP.NET 2.0 to 3.5 without SP1:
 For more information about security, see the following ASP.NET security
 references:
 
--   [Important: ASP.NET Security
-    Vulnerability](http://weblogs.asp.net/scottgu/archive/2010/09/18/important-asp-net-security-vulnerability.aspx)
--   [Understanding the ASP.NET
-    Vulnerability](http://blogs.technet.com/b/srd/archive/2010/09/17/understanding-the-asp-net-vulnerability.aspx)
-
-
+-   [Important: ASP.NET Security Vulnerability](http://weblogs.asp.net/scottgu/archive/2010/09/18/important-asp-net-security-vulnerability.aspx)
+-   [Understanding the ASP.NET Vulnerability](http://blogs.technet.com/b/srd/archive/2010/09/17/understanding-the-asp-net-vulnerability.aspx)

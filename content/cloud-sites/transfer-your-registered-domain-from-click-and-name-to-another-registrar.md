@@ -1,5 +1,6 @@
 ---
-node_id: 3726
+permalink: transfer-your-registered-domain-from-click-and-name-to-another-registrar/
+audit_date:
 title: Transfer your registered domain from Click and Name to another registrar
 type: article
 created_date: '2013-10-11'
@@ -15,8 +16,7 @@ document is meant to serve as a general guideline. It applies only to
 customers who have either *registered* or *transferred* their domains
 through the Cloud Sites Control Panel.
 
-Terms and definitions
----------------------
+### Terms and definitions
 
 -   **Losing registrar**: The registrar from which the domain is
     being transferred. In this case, Click and Name (Cloud
@@ -24,37 +24,33 @@ Terms and definitions
 -   **Winning registrar**: The registrar that is requesting the domain
     transfer (for example, Name.com, Network Solutions, or GoDaddy).
 
-Initiate a transfer request
----------------------------
+### Initiate a transfer request
 
 Sign up with the domain registrar of your choice (for example, Name.com,
 Network Solutions, or GoDaddy) and initiate a *domain transfer request*,
 following the registrar's instructions.
 
-Obtain an authorization code from Click and Name
-------------------------------------------------
+### Obtain an authorization code from Click and Name
 
 To transfer the domain, the winning registrar will likely require you to
 provide them with the domain authorization code (also called the EPP
 code). To obtain the code, follow these steps:
 
-1.  Log in to the [Cloud Sites Control
-    Panel](https://manage.rackspacecloud.com).
-2.  In the left navigation pane, click **Hosting &gt; Cloud Sites**.
+1.  Log in to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com).
+2.  In the left navigation pane, click **Hosting > Cloud Sites**.
 3.  Click the domain for which you want to obtain the
     authorization code.
 4.  Click the **DNS** tab.
 5.  Under **Domain Registration**, click **Retrieve Domain Authcode**.
 
-<img src="https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/DNS_Tabblur.png" width="854" height="356" />
+  <img src="{% asset_path cloud-sites/transfer-your-registered-domain-from-click-and-name-to-another-registrar/DNS_Tabblur.png %}" alt="" />
 
 **Note:** If the domain is either an alias or has been removed from the
 control panel, contact Rackspace Support. Support can send an automated
 email with the authorization code, if the email address in the WHOIS
 record is valid.
 
-Provide the authorization code to the winning registrar
--------------------------------------------------------
+### Provide the authorization code to the winning registrar
 
 After you obtain the authorization code, you provide it to the winning
 registrar. Depending on the registrar, you might receive an email with
@@ -64,4 +60,3 @@ After you complete these steps, the process should be automated; no
 further action should be required of you. Although Support cannot
 process the domain transfer for you, contact us for any questions you
 have about the process.
-
