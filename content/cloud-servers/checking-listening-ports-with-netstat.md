@@ -5,7 +5,7 @@ title: Check Listening Ports with netstat
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
+last_modified_date: '2016-09-16'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -23,8 +23,8 @@ troubleshooting are the addresses the daemon is listening on (including
 the port number), the daemon's PID (process identifier), and the program
 name.
 
-Of course, you need to run `netstat` on the server running the service.
-Remember that `netstat` is not affected by your firewall configuration.
+You need to run `netstat` on the server running the service.
+`Netstat` is not affected by your firewall configuration.
 
 ### Checking ports
 
@@ -69,14 +69,11 @@ Common outcomes are:
 is listening on the port this may be desired. See above for details on
 looking at your xinetd configuration.
 
-If something else is listening to the port, try disabling that program,
-e.g. "sudo service httpd stop", or changing its configuration so it no
+If something else is listening to the port, try disabling that program by using `sudo service httpd stop`, or changing its configuration so it no
 longer listens on the required port. Then enable the correct service
 when netstat shows the port is free, e.g. "sudo service vsftpd start".
 
-If you make any changes because the incorrect service is listening or
-nothing is, run the netstat command again to see if it has made a
-difference. If netstat doesn't show the program listening on the correct
+If you make any changes because the incorrect service is listening, run the `netstat` command again. If netstat doesn't show the program listening on the correct
 port you need to address its configuration before you go any further.
 
 ### Outcome
@@ -84,4 +81,4 @@ port you need to address its configuration before you go any further.
 If you make changes at this point make sure to test your setup - you may
 have resolved your issue.
 
-If not, let's continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)
+If using the `netsec` did not resolve your port issues, continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)

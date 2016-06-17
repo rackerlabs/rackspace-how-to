@@ -42,6 +42,7 @@ The following table displays which name server IP addresses to use depending on 
 | Datacenter | Name server IP |
 |---|---|
 | Hong Kong (HKG) | nameserver 120.136.32.63 <br /> nameserver 120.136.32.62 |
+| Northern Virgina (IAD) | nameserver 69.20.0.164 <br /> nameserver 69.20.0.196 |
 | London (LON) | nameserver 83.138.151.80 <br /> nameserver 83.138.151.81 |
 | Chicago (ORD) | nameserver 173.203.4.8 <br /> nameserver 173.203.4.9 |
 | Dallas/Fort Worth (DFW) | nameserver 73.3.128.240 <br /> nameserver 72.3.128.241 |

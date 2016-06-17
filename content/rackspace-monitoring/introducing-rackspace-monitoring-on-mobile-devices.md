@@ -27,7 +27,6 @@ following Rackspace Monitoring actions on your mobile device:
 
 ### Get started
 
-
 First, you need to install Rackspace Monitoring on your cloud resources,
 if it is not already installed.  For information about using the Cloud
 Control Panel, or the Rackspace Monitoring API, to set up monitoring,
@@ -35,27 +34,22 @@ see [Getting Started With Rackspace Monitoring](/how-to/cloud-monitoring).
 
 ### Download the application
 
-
 To download the Rackspace cloud app for mobile devices, click the
 following link for your device:
 
 [<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/Download_on_the_App_Store_Badge_US-UK.png %}" width="203" height="60" />](https://itunes.apple.com/us/app/rackspace-cloud-control/id672443103?mt=8)
 
-  [<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/en_app_rgb_wo_60.png %}" width="172" height="60" />](https://play.google.com/store/apps/details?id=com.rackspace.cloudmobile)
+[<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/en_app_rgb_wo_60.png %}" width="172" height="60" />](https://play.google.com/store/apps/details?id=com.rackspace.cloudmobile)
 
 For instructions on how to log in and add accounts to your device, see
-[Getting Started with the Rackspace Mobile Application and Managing
-Accounts](/how-to/getting-started-with-the-rackspace-mobile-application-and-managing-accounts).
+[Getting Started with the Rackspace Mobile Application and Managing Accounts](/how-to/getting-started-with-the-rackspace-mobile-application-and-managing-accounts).
 
 ### Open the monitoring screen
-
 
 On the main menu of the app on your device, tap **Monitoring**.  A
 number on the main menu, as shown in the following example, indicates
 that you have one or more resources with an alarm in a critical or
 warning state.
-
-<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/newMonitoringScreen.png %}" width="468" height="337" />
 
 On the Monitoring home screen, you can view a list of monitored
 resources and their current status.  By tapping the different status
@@ -66,13 +60,6 @@ icons, you can view resources with at least one alarm in **Critical**,
 -   Alarms in a **Warning** state are shown in yellow.
 -   Alarms in **OK** state are shown as green.
 -   Alarms with an error or unknown state are shown in grey.
-
-In the following example, the account has one resource with an alarm in
-a critical state, which is shown, and 10 resources with alarms in an OK state.
-
-In the following example, the account has one resource with an alarm in a critical state.
-
-<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/newResourceWithCriticalState.png %}" width="452" height="213" />
 
 If a resource has multiple alarms with different states (for example,
 one critical alarm and one warning alarm), the resource appears, by
@@ -91,16 +78,12 @@ swipe to view multiple graphs.
 
 ### View errors
 
-
 Monitored resources that are highlighted in grey might have an error.
 You can diagnose errors with checks by visiting the Cloud Control Panel
 (for Cloud Servers), or by using the Rackspace Monitoring API (for all
 other resources).
 
-<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/newDetailsGray.png %}" width="524" height="389" />
-
 ### View resources with No Status Available
-
 
 If your monitored resource is grey, it might have no status.  A resource
 can have no status for the following reasons:
@@ -110,16 +93,13 @@ can have no status for the following reasons:
 
 When there are no alarms configured, there are no thresholds to trigger
 a change in the state of the alarms, and the app cannot deliver a status
-for that resource.  You can configure alarms for Cloud Servers in the 
+for that resource.  You can configure alarms for Cloud Servers in the
 Cloud Control Panel. To configure alarms for all other resources, use the Monitoring API.
 For information about how to use the API, see the
 *[Rackspace Monitoring Developer
 Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)*.
 
-<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/newDetailsNoAlarm.png %}" width="555" height="226" />
-
 ### Monitor Cloud Databases
-
 
 Cloud Databases are provisioned with six default checks and one alarm.
 Cloud Database users can view metrics and graphs for all checks *except*

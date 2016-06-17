@@ -5,7 +5,7 @@ title: Rackspace Cloud Sites Essentials - MSSQL Databases
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-28'
+last_modified_date: '2016-06-16'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites

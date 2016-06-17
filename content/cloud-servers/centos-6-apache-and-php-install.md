@@ -5,8 +5,8 @@ title: Install Apache and PHP on CentOS 6
 type: article
 created_date: '2011-03-09'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-06-10'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -23,11 +23,11 @@ This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 co
 
         sudo /usr/sbin/apachectl start
 
-  The following message is displayed:
+   The following message is displayed:
 
         Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
 
- The IP address (shown in this example as 127.0.0.1) is used as the server name by default. In the following steps, set the server name for the next time the server is started.
+    The IP address (shown in this example as 127.0.0.1) is used as the server name by default. In the following steps, set the server name for the next time the server is started.
 
 3. Open the main Apache configuration file.
 
@@ -66,6 +66,7 @@ If the default CentOS Apache welcome screen is displayed, the installation was s
 <img alt=" centos_apache_welcome.jpg" height="342" src="{% asset_path cloud-servers/centos-6-apache-and-php-install/Cent0SWelcome01.png %}" width="490" />
 
 ### Run chkconfig
+
 Now that Apache is installed and working, ensure that it is set to start automatically when the server is rebooted.
 
 1. Run the following command:
@@ -81,9 +82,9 @@ Now that Apache is installed and working, ensure that it is set to start automat
 
 1. Run the following command:
 
-        sudo yum php install php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
+        sudo yum install php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
 
-  The preceding command does not install all the modules available, just a few common ones.
+   The preceding command does not install all the modules available, just a few common ones.
 
 2. Reload Apache.
 

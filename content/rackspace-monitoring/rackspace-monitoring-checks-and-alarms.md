@@ -27,8 +27,6 @@ The major groups of checks are remote check, agent checks, and hostinfo checks. 
 
 ### Remote checks
 
-<img src="{% asset_path rackspace-monitoring/rackspace-monitoring-checks-and-alarms/rackspace-monitoring-checks-and-alarms-remote-checks.png %}" alt="" />
-
 Remote checks monitor an entity’s Internet connectivity, and can be performed from multiple monitoring zones. These zones are deployed in the six data centers around the globe, and you can choose the zones from which to perform a remote check. Each selected monitoring zone performs the configured remote check, and the collected data from each monitoring zone is used to evaluate the alarm criteria. You receive notifications only if the observations from the monitoring zones reach quorum on the resulting alarm state. As a result, you can filter out cases where a single monitoring zone is having an isolated issue connecting to your server.
 
 #### Consistency level
@@ -43,15 +41,14 @@ You can also tune the sensitivity level of the alarms by setting the **consecuti
 
 You should also think about choosing the right monitoring zones for your server. The monitoring zones initiate remote checks from the data center in which they are deployed. Checks are not executed from your users' browsers, so it is still different from Real User Monitoring (RUM). However, the checks are fairly accurate in detecting cross-region connectivity.
 
-From the metrics that Rackspace has collected in the system, we did noticed, that the three data centers in the US (IAD, DFW and ORD) generally have better connections among themselves, and this is also the case for the other three non-US data centers (HKG, LON, and SYD). The following table shows our recommentation for how to determine which monitoring zones to choose for servers deployed in each data center.
+From the metrics that Rackspace has collected in the system, we did noticed, that the three data centers in the US (IAD, DFW and ORD) generally have better connections among themselves, and this is also the case for the other three non-US data centers (HKG, LON, and SYD). The following table shows our recommendation for how to determine which monitoring zones to choose for servers deployed in each data center.
 
-| Data center where server is deployed                                                                                                                                                | Recommended monitoring zones                                                                                                                                         |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SYD | SYD, HKG, ORD                                                                                           |
-| HKG | HKG, SYD, IAD                                                                                           |
-| IAD | IAD, ORD, DFW                                                                                           |
-| ORD | ORD, IAD, DFW                                                                                           |
-
+| Data center where server is deployed | Recommended monitoring zones |
+| --- | --- |
+| SYD | SYD, HKG, ORD |
+| HKG | HKG, SYD, IAD |
+| IAD | IAD, ORD, DFW |
+| ORD | ORD, IAD, DFW |
 
 ### Email notifications
 

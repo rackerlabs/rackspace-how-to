@@ -1,12 +1,12 @@
 ---
 permalink: managing-backups-for-cloud-databases/
 audit_date:
-title: Managing Backups for Cloud Databases
+title: Manage Backups for Cloud Databases
 type: article
 created_date: '2014-01-15'
 created_by: Rackspace Support
-last_modified_date: '2016-06-03'
-last_modified_by: Steve Croce
+last_modified_date: '2016-06-09'
+last_modified_by: Kyle Laffoon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -23,18 +23,13 @@ Below are some quick facts about Cloud Databases backups:
 - Even if the instance associated with a backup is deleted, the backup will remain until you delete it and restore it to a new Cloud Databases instance.
 - The backup process for [High Availability instance groups](/how-to/high-availability-for-cloud-databases) always attempts to backup from a replica rather than the master instance.
 
+
 ### Create a Backup
 
-To create backup of a database instance, click the Actions cog next to
+To create backup of a database instance, click the gear icon next to
 the name of the instance you want to backup, and select **Create
 Backup**.  Once selected, a dialogue box will open, asking for a backup
 name and description.
-
-<img src="{% asset_path cloud-databases/managing-backups-for-cloud-databases/CreateBackup.png %}" width="975" height="345" />
-You can also create a backup by clicking on the instance name and
-selecting the **Create Backup** option.
-
-<img src="{% asset_path cloud-databases/managing-backups-for-cloud-databases/InstanceDetails.png %}" width="708" height="489" />
 
 -   The name of the backup is required, and the maximum length for the
     name is 64 characters.
@@ -77,35 +72,28 @@ following details for your backups:
 -   The date the backup was created.
 -   The most recent date the backup was updated.
 
-
-<img src="{% asset_path cloud-databases/managing-backups-for-cloud-databases/ListBackup.png %}" width="904" height="390" />
-
 You can also filter the backups for different regions by clicking on the
 **Regions** filter from the drop-down.
 
 ### List Details of All Backups for an Instance
 
 To view all the backups for an instance, click on the instance name to
-view the Instance Details page.  there is a link for all the backups
+view the Instance Details page.  There is a link for all the backups
 associated for that instance.
 
-<img src="{% asset_path cloud-databases/managing-backups-for-cloud-databases/ListDetailsInstance.png %}" width="664" height="512" />
+<img src="{% asset_path cloud-databases/managing-backups-for-cloud-databases/ListDetailsInstance.png %}" width="611" height="471" />
 
 ### Delete a Backup
 
-To delete a backup you can click on the Actions cog next to the backup
+To delete a backup you can click on the gear icon next to the backup
 name.
-
-<img src="{% asset_path cloud-databases/managing-backups-for-cloud-databases/InstanceBackups.png %}" width="913" height="339" />
 
 You can also delete any backups for an instance from the **Instance
 Details** page.
 
 ### Restore a Backup
 
-To restore a backup, click on the Actions cog next to the backup name.
-
-<img src="{% asset_path cloud-databases/managing-backups-for-cloud-databases/RestoreBackup.png %}" width="900" height="324" />
+To restore a backup, click on the gear icon next to the backup name.
 
 You can also restore any backup for an instance from within the Instance
 Details page.

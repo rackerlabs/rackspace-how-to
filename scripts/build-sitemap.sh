@@ -19,4 +19,7 @@ for file in $(find $DIR/content -name "*.md"); do
 done
 sort -o $SITEMAP $SITEMAP
 # add front-matter yaml to make Jekyll happy
-sed -i '1s/^/---\npermalink: sitemap.txt\n---\n/' $SITEMAP
+sed -i '' '1s/^/---\
+permalink: sitemap.txt\
+---\
+/' $SITEMAP

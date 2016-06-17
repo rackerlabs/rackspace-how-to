@@ -58,11 +58,11 @@ Complete the following steps to generate a certificate signing request
 (CSR), which you will need to have when you purchase an SSL certificate.
 
 1.  Log in to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com).
+
 2.  Click **Hosting > Cloud Sites**.
+
 3.  Click the domain you want to add SSL to, and then click the
     **Security** tab.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-configuring-ssl-on-your-websites/securitytab.png %}" alt="" />
 
 4.  In the **Permissions for Viewing Your Website** section, click
     **Install SSL Certificate**.

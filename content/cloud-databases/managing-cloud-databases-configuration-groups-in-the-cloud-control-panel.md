@@ -5,8 +5,8 @@ title: Manage Cloud Databases configuration groups in the Cloud Control Panel
 type: article
 created_date: '2014-11-13'
 created_by: Rose Contreras
-last_modified_date: '2015-04-03'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-06-09'
+last_modified_by: Kyle Laffoon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -36,15 +36,15 @@ region and apply it to instance in DFW.
 
 #### Create a new configuration group
 
-1.	Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
-2.	At the top of the panel, select **Databases**.
+2. At the top of the panel, select **Databases**.
 
-3.	In the **Databases** menu, select **MySQL Configurations** under **MANAGE EXTRAS**.
+3. In the **Databases** menu, select **MySQL Configurations** under **MANAGE EXTRAS**.
 
-4.	On the Configurations page, click **Create Configuration**.
+4. On the Configurations page, click **Create Configuration**.
 
-5.	In the Identity section, provide a name and description for the configuration, and 
+5. In the Identity section, provide a name and description for the configuration, and 
    specify the region in which you want to use the configuration.
 
 6. In the Settings section, select the datastore of the database instance or instances to 
@@ -60,16 +60,13 @@ region and apply it to instance in DFW.
     of any of these parameters is changed, all instances attached to the configuration group 
     will require an instance restart.
 
-    The configuration group is displayed on the Configurations page showing the database 
+    The configuration group is displayed on the Configuration Parameters page showing the database 
     type it can be applied to and last updated timestamp.
 
+8. Click **Create Configuration**.
 
-	<img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/CofigParamEx-Step4_0.png %}" width="562" height="527" border="1" alt=""  />
-
-8.	Click **Create Configuration**.
-
-	The configuration group is displayed in the Configurations page is available to use for 
-	your database instances.
+    The configuration group is displayed in the Configurations page is available to use for 
+    your database instances.
 
     **Note:** The most frequently used parameters are displayed at the top of the list and 
     the remaining parameters will be listed underneath.
@@ -82,22 +79,20 @@ with the default configuration.
 
 #### Apply a configuration from the Configurations page
 
-1.	Log in to the Cloud Control Panel and select **Databases > Configurations**.
+1. Log in to the Cloud Control Panel and select **Databases > Configurations**.
 
-2.	On the Configurations page, click the gear icon next to the database configuration that 
+2. On the Configurations page, click the gear icon next to the database configuration that 
 you want to apply to an instance.
 
-3.	Click **Apply to Existing Instances**.
+3. Click **Apply to Existing Instances**.
 
 	The database instances in the same region that use the datastore specified in the 
 	configuration group are displayed in a popup dialog box.
 
-	<img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/Applying-3.png %}" width="424" height="263" border="1" alt=""  />
-
-4.	Select all the instances to which you want to apply the configuration, and then click 
+4. Select all the instances to which you want to apply the configuration, and then click 
    **Apply Configuration**.
 
-5.	In case non-dynamic parameters are changed in the configuration group, all the instances 
+5. In case non-dynamic parameters are changed in the configuration group, all the instances 
    attached to the configuration group will require an instance restart. To restart the 
    affected instances:
 
@@ -106,36 +101,30 @@ you want to apply to an instance.
 	B. The instances that require restart are displayed in orange. Click the gear icon next 
 	   to the instance to which you just applied the configuration group, and select **Restart Instance**.
 
-	   <img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/RestartInstance_0.png %}" width="138" height="98" border="1" alt=""  />
-
 #### Apply a configuration to an instance with the default configuration from the Instance Details page
 
-1.	On the Database Instances page, click the newly created instance to which you want to 
+1. On the Database Instances page, click the newly created instance to which you want to 
    apply a configuration.
 
-2.	Under Instance Details, click Choose Configuration.
+2. Under Instance Details, click **Choose Configuration**.
 
-    <img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/Choose_Cfg_1.png %}" width="310" height="28" border="1" alt=""  />
+3. Select the configuration that you want to apply to the instance and click Use Selected.
 
-3.	Select the configuration that you want to apply to the instance and click Use Selected.
-
-4.	Restart the database instance so that the changes will take effect.
+4. Restart the database instance so that the changes will take effect.
 
 ### Create a new instance with a configuration group
 
-1.	Log in to the Cloud Control Panel and select **Databases > Configurations**.
+1. Log in to the Cloud Control Panel and select **Databases > Configurations**.
 
-2.	On the Configurations page, click the gear icon next to the configuration that you want 
+2. On the Configurations page, click the gear icon next to the configuration that you want 
    to use to create an instance. Select **Create Instance**.
 
-3.	In the popup dialog box, provide a name for the instance and specify the RAM and disk 
+3. In the popup dialog box, provide a name for the instance and specify the RAM and disk 
    size for the instance.
 
     The region and datastore type are defined by the configuration group and cannot be changed.
 
-	<img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/NewInstance-3.png %}" width="327" height="237" border="1" alt=""  />
-
-4.	Click **Create Instance**.
+4. Click **Create Instance**.
 
 ### Modify configuration parameters for a configuration group
 
@@ -146,76 +135,64 @@ those instances.
 
 #### Change the values of configuration parameters in a configuration group
 
-1.	On the Configurations page in the control panel, click the configuration group for which 
+1. On the Configurations page in the control panel, click the configuration group for which 
    you want to modify the parameters.
 
-    <img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/DBConfig3.png %}" width="216" height="42" border="1" alt=""  />
-
-2.	On the Configuration Details page, click the gear icon for the parameter that you want 
+2. On the Configuration Details page, click the gear icon for the parameter that you want 
    to delete and click **Edit Parameter**.
 
-	<img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/EditParam_MaxConn.png %}" width="279" height="122" border="1" alt=""  />
-
-3.	Modify the value.
+3. Modify the value.
 
     **NOTE:** Some configuration parameters cannot be deleted and require at least a 
     minimum value. For example, max_connections must be set to a minimum value of 1.
 
-    <img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/CHG_MAXCONN.png %}" width="332" height="161" border="1" alt=""  />
-
-4.	Click **Apply Changes**.
+4. Click **Apply Changes**.
 
 #### Add new configuration parameters to a configuration group
 
-1.	On the Configurations page in the control panel, click the configuration group for which 
+1. On the Configurations page in the control panel, click the configuration group for which 
    you want to add parameters.
 
-2.	On the Configuration Details page, click **Add Parameters**. Only the parameters that 
+2. On the Configuration Details page, click **Add Parameters**. Only the parameters that 
    are undefined appear in the list.
 
-	<img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/addparam.png %}" width="405" height="412" border="1" alt=""  />
+3. In the popup dialog box, provide values for the parameters that you want to add.
 
-3.	In the popup dialog box, provide values for the parameters that you want to add.
-
-4.	Click **Add Parameters**.
+4. Click **Add Parameters**.
 
 #### Remove configuration parameters from a configuration group
 
-1.	On the Configurations page in the control panel, click the configuration group for 
+1. On the Configurations page in the control panel, click the configuration group for 
    which you want to modify parameters.
 
-2.	On the Configuration Details page, click the gear icon for the parameter that you want 
+2. On the Configuration Details page, click the gear icon for the parameter that you want 
    to delete and click **Edit Parameter**.
 
-3.	Change the value to 0.
+3. Change the value to 0.
 
-	**Note:** Some configuration parameters cannot be deleted and require at least a minimum 
-	value. For example, max_connections must be set to a minimum value of 1.
+    **Note:** Some configuration parameters cannot be deleted and require at least a minimum 
+    value. For example, max_connections must be set to a minimum value of 1.
 
-4.	Click **Apply Changes**.
+4. Click **Apply Changes**.
 
 ### Remove a configuration from an instance
 
-1.	In the control panel, select **Databases > Database Instances**.
+1. In the control panel, select **Databases > Database Instances**.
 
-2.	Click the name of the instance from which you want to modify the configuration.
+2. Click the name of the instance from which you want to modify the configuration.
 
-3.	Under Instance Details, next to the **Configuration** field, click **Revert to Default**.
-
-	<img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/REVISED-SCREENSHOT2.png %}" width="561" height="158" border="1" alt=""  />
+3. Under Instance Details, next to the **Configuration** field, click **Revert to Default**.
 
 ### Delete a configuration group
 
 #### Delete a configuration group using the Configurations page.
 
-1.	In the control panel, select **Databases > Configurations**.
+1. In the control panel, select **Databases > Configurations**.
 
 2. On the Configurations page, click the gear icon next to the database configuration that 
    you want to delete.
 
-3.	From the menu, select **Delete Configuration**.
-
-	<img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/1426-CreateInstance1.png %}" width="155" height="190" border="1" alt=""  />
+3. From the menu, select **Delete Configuration**.
 
 #### Delete a configuration group using the Instance Details page
 
@@ -223,13 +200,9 @@ those instances.
 
 2. Click the name of the configuration that you want to delete.
 
-3. On the Instance Details page, click the Action icon.
-
-     <img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/4427-deleteconfig-a.png %}" width="490" height="61" border="1" alt=""  />
+3. On the Instance Details page, click the Action menu.
 
 4. Select **Delete Instance**.
-
-     <img src="{% asset_path cloud-databases/managing-cloud-databases-configuration-groups-in-the-cloud-control-panel/4427-deleteconfig-2a.png %}" width="132" height="193" border="1" alt=""  />
 
 ### Special cases - Rebuilding FULLTEXT indexes
 

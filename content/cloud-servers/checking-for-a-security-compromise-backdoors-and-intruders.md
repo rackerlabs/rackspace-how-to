@@ -1,11 +1,12 @@
 ---
+permalink: check-for-a-security-compromise-back-doors-and-intruders/
 audit_date:
-title: 'Checking for a security compromise: back doors and intruders'
+title: 'Check for a security compromise: back doors and intruders'
 type: article
 created_date: '2013-04-25'
 created_by: Rose Contreras
-last_modified_date: '2015-05-27'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-06-10'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---

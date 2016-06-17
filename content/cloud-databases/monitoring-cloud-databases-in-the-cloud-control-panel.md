@@ -5,8 +5,8 @@ title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2016-01-21'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-06-13'
+last_modified_by: Kyle Laffoon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -110,9 +110,6 @@ You can view and create alarms from a check's details page.
     of the check for which you want to create an alarm.
 2.  In the **Alarms** section at the bottom of the page, click the
     **Create Alarm button**.
-
-    <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbfilesystemalarm.png %}" width="470" height="136" />
-
 3.  In the **Alarm Name** field, enter a name for the alarm.
 4.  Select the contact who will receive notifications from the alarm.
 

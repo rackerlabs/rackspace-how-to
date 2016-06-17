@@ -21,11 +21,11 @@ product_url: cloud-servers
 
 3. Under the **Storage** folder in the left pane, select **Disk Management**.
 
-   In the left pane of Disk Management you will see the current formatted hard drive for your server, and the amount of unallocated space in the right pane.
+   The left pane of Disk Management displays the current formatted hard drive for your server, and the right pane shows the amount of unallocated space.
 
 4. Right-click on the Unallocated space and choose **New Partition** from the menu.
 
-  <img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-2003-cloud-server/Win2003NewPartition.png %}" alt="" />
+   <img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-2003-cloud-server/Win2003NewPartition.png %}" alt="" />
 
 5. The **New Partition Wizard** pop-up dialog box displays. Click **Next** to begin the wizard.
 

@@ -16,6 +16,8 @@ Cloud Databases now offers the ability to replicate database backups to other re
 
 Currently, you can copy a single backup at a time from one region to another. In the future, we will add the ability to add backup replication to a backup schedule, so every backup in a schedule gets automatically copied to another region.
 
+Each backup copy costs the same as the original backup: by size of backup in Cloud Files at [standard Cloud Files rates](https://www.rackspace.com/en-us/cloud/public-pricing#cloud-files)
+
 ### Copy a single backup to another region
 
 Use the following steps to copy individual backups from one region to another. These steps assume that you already have database backups available in your cloud account. For instructions on how to create backups, see [Managing Backups for Cloud Databases](/how-to/managing-backups-for-cloud-databases/).
