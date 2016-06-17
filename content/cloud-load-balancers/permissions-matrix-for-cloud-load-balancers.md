@@ -5,8 +5,8 @@ title: Permissions Matrix for Cloud Load Balancers
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2016-04-21'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-17'
+last_modified_by: Kelly Holcomb
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
@@ -48,7 +48,7 @@ List Allowed Domains | `GET /loadbalancers/alloweddomains` | **Observer & Creato
 **USAGE REPORTS** | | |
 List Billable Load Balancers | `GET /loadbalancers/billable{?startTime,endTime,offset, limit}` | **Observer & Creator & Admin** | List billable load balancers for the given date range. The response is paginated with a default limit of 500 and a maximum limit of 1000.
 Show Account-level Usage | `GET /loadbalancers/usage{?startTime,endTime}` | **Observer & Creator & Admin** | Show account-level usage.
-Show Historical Usage | `GET /loadbalancers/{loadBalancerId}/usage{?startTime,endTime}` | **Observer & Creator & Admin** | Show historical usage. ***
+Show Historical Usage | `GET /loadbalancers/{loadBalancerId}/usage{?startTime,endTime}` | **Observer & Creator & Admin** | Show historical usage. **Note:** Historical usage data is available for up to 90 days of service activity.
 Show Current Usage | `GET /loadbalancers/{loadBalancerId}/usage/current/{?startTime,endTime}` | **Observer & Creator & Admin** | Show current usage.
 **ACCESS LISTS** | | |
 Show Access List | `GET /loadbalancers/{loadBalancerId}/accesslist` | **Observer & Creator & Admin** | Show the access list.
@@ -80,7 +80,7 @@ List Load Balancer Protocols | `GET /loadbalancers/protocol` | **Observer & Crea
 List Load Balancer Algorithms | `GET /loadbalancers/algorithms` | **Observer & Creator & Admin** | List all supported load balancing algorithms.
 **SSL TERMINATION / CERTIFICATE MAPPINGS** | | |
 Show SSL Termination Configuration | `GET /loadbalancers/{loadBalancerId}/ssltermination` | **Observer & Creator & Admin** | Show the load balancer's SSL termination configuration.
-Update SSL Termination | `PUT /loadbalancers/{loadBalancerId}/ssltermination` | **Creator & Admin** | Update the SSL termination. *****
+Update SSL Termination | `PUT /loadbalancers/{loadBalancerId}/ssltermination` | **Creator & Admin** | Update the SSL termination. **Warning:** If SSL is enabled on a load balancer that is configured with nodes that are NOT in the same datacenter, then decrypted traffic will be sent in clear text over the public internet to the external node(s) and will no longer be secure.
 Delete SSL Termination | `DELETE /loadbalancers/{loadBalancerId}/ssltermination` | **Admin only** | Delete SSL termination.
 List Certificate Mappings | `GET /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Observer & Creator & Admin** | List certificate mappings that are configured for a specified load balancer.
 Add Certificate Mapping | `POST /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Creator & Admin** | Add a certificate mapping to a specified load balancer.
@@ -104,20 +104,11 @@ Delete Load Balancer Node Metadata Item | `loadbalancers/{loadBalancerId}/nodes/
 List Absolute Limits | `GET /loadbalancers/absolutelimits/` | **Observer & Creator & Admin** | Return the current absolute limits for the account.
 List Limits | `GET /loadbalancers/limits` | **Observer & Creator & Admin** | Return the current limits for the account.
 
-
-\* This operation is not capable of returning details for a load balancer which has been deleted.
-
-** Currently only Rackspace-based domain names are supported.
-
-*** Historical usage data is available for up to 90 days of service activity.
-
-***** **Warning:** If SSL is enabled on a load balancer that is configured with nodes that are NOT in the same datacenter, then decrypted traffic will be sent in clear text over the public internet to the external node(s) and will no longer be secure.
-
 ### Cloud Load Balancer Terminology
 
 #### Algorithm
 
-A Process that defines how traffic should be directed between back-end nodes.
+A process that defines how traffic should be directed between back-end nodes.
 
 #### Connection Logging
 
