@@ -5,8 +5,8 @@ title: 'Getting Started With Cloud Sites: How To Add A New Website'
 type: article
 created_date: '2011-06-15'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-17'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -21,23 +21,15 @@ This article will show you how to create your domain through the [Cloud Sites Co
 
 -   Let's get started by first logging into the [Cloud Sites Control Panel](https://manage.rackspacecloud.com).
 -   After we're logged in, navigate to **Hosting > Cloud Sites**
-
-  <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/cloudsites.png %}" alt="" />
-
 -   Now let's click on the **Add A Site** button shown in the image
     below
-
-  ![](http://c806394.r94.cf2.rackcdn.com/addasite.png
-
 -   We'll now have a pop-up menu that will ask us two things:
 
     1.  Who is this website for?
     2.  What is the domain name?
 
- <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/namesite.png %}" alt="" />
-
 -   Once you've selected who the website will be for, and you've entered
-    your new domain name, proceed by clicking **Add New Site**
+    your new domain name, proceed by clicking **Add New Site**.
 -   Next, depending on the domain name you are trying to add, you could
     be presented with one out of three different screens. You will
     either be asked to register your new domain name, pick a different
@@ -46,8 +38,6 @@ This article will show you how to create your domain through the [Cloud Sites Co
     below:
 
 ### Register new domain name
-
-[<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/registerdomain.png %}" title="Click here to view full size image" width="600" />](http://c806394.r94.cf2.rackcdn.com/registerdomain.png)
 
 -   If the domain name is available, you will be asked to register the
     domain name. You also have the option to choose the domain name
@@ -64,8 +54,6 @@ someone has already setup this domain name on the Rackspace Cloud and it
 cannot be duplicated in our system. You can try a different domain name
 in the box below *Domain Name* and click **Continue** to proceed.
 
-<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/usedbyotherclient.png %}" alt="" />
-
 ### Domain cannot be automatically registered Or transferred
 
 If you get the message that *the domain cannot be automatically
@@ -75,37 +63,25 @@ the Rackspace Cloud. If you are the owner of the domain do not worry,
 **you can still proceed** with adding the domain to the Rackspace Cloud
 by clicking on **Continue**.
 
-![]http://c806394.r94.cf2.rackcdn.com/noautotransfer.png)
+-   Proceed by clicking in the box next to *"I already
+    own this domain"*, and then click on **Next Step**
 
--   You can proceed by simply clicking in the box next to *"I already
-    own this domain"*, and then clicking on **Next Step**
+Choose your website's default technology and any additional features you
+may need, such as a database.
 
-We're almost done! The only steps left will be to choose our websites
-default technology and any additional features you may need such as a
-database.
-
--   The next page will offer you 3 different options. The first option
+-   The next page offers 3 different options. The first option
     will allow you to add Microsoft SQL Server Storage space.
 
-[<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/mssqlserverstorage.png %}" title="Click here to view full size image" alt="Click here to view full size image" width="600" />](http://c806394.r94.cf2.rackcdn.com/mssqlserverstorage.png)
-
--   Below that, you will be able to choose a number of Databases you
-    would like.
-
-[<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/numberofdatabases.png %}" title="Click here to view full size image" alt="Click here to view full size image" width="600" />](http://c806394.r94.cf2.rackcdn.com/numberofdatabases.png)
+-   Below that, choose the number of Databases you want to use.
 
 -   The last section will be where you will choose your websites
     default technology. For an extensive breakdown on the available
     technology in Cloud Sites, please click
     [here](http://www.rackspace.com/cloud/cloud_hosting_products/sites/technology/).
 
-[<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/defaulttechnology.png %}" title="Click here to view full size image" alt="Click here to view full size image" width="600" />](http://c806394.r94.cf2.rackcdn.com/defaulttechnology.png)
-
 -   Click on **Next Step** to proceed once you have made your selections.
 
-  <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-a-new-website/review.png %}" alt="" />
-
--   Last, you will review your order, and click on **Finish** once you
+-   Review your order, and click on **Finish** once you
     have verified everything is correct. If you would like to make any
     changes to your new domain order, click on **Back**
 
