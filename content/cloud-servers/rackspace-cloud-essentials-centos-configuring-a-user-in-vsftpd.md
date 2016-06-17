@@ -27,9 +27,9 @@ Create a new user for FTP access in vsftpd by creating a new valid Linux system 
 
 The default user creation script gives a user the `/bin/bash` shell,
 which can be a little too powerful. If you don't want your users
-to log in to your server via SSH, you can block this access. When you 
+to log in to your server via SSH, you can block this access. When you
 change the shell to `/bin/false`, the users can log in only
-via FTP or mail if you have that set up. 
+via FTP or mail if you have that set up.
 
 Modify the user access as follows:
 
@@ -37,16 +37,16 @@ Modify the user access as follows:
 
 ### Chroot a user
 
-For VSftpd you can chroot a user by editing the file /etc/vsftpd/vsftpd.conf.  You will want to edit the following.  
+With vsftpd, you can chroot a user by editing the following in the file `/etc/vsftpd/vsftpd.conf`:  
 
     chroot_local_user=YES
     chroot_list_enable=YES
     chroot_list_file=/etc/vsftpd/vsftpd.chroot_list
 
-You will need to create a vsftp.chroot_list file and put users in it who ARE NOT chrooted. Everyone is chrooted by default. You need to create the file even if it's going to be empty:
+You will need to create a vsftp.chroot_list file and enter users who do *not* use chroot. Ever user chroots by default. Therefore, create a chroot_list file, even if the file is going to remain empty:
 
     touch /etc/vsftpd/vsftpd.chroot_list
-    
+
 Once the file is created and you have setup your users all you need to do is restart vsftpd.
 
     service vsftpd restart
