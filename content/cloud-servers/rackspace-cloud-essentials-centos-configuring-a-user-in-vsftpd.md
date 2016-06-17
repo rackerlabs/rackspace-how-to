@@ -6,7 +6,7 @@ type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
 last_modified_date: '2016-06-15'
-last_modified_by: Kyle Laffoon
+last_modified_by: Aaron Davis
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -17,15 +17,6 @@ product_url: cloud-servers
 
 This article describes how to create system users in vstfpd and
 chroot them (isolate or "jail" them to their home directory) if necessary.
-
-### Add group for sftp users
-
-    groupadd sftp
-### Add a system user
-
-If you don't already have a group for your sftp users, add a group.
-
-    groupadd sftp
 
 Create a new user for FTP access in vsftpd by creating a new valid Linux system user.
 
@@ -46,33 +37,19 @@ Modify the user access as follows:
 
 ### Chroot a user
 
-Now you can configure vsftpd to be able to chroot (commonly referred to as jailing) 
-users to their home directories for security and privacy. When you chroot users, 
-they can’t move up a level in the directory structure after they log in.
+For VSftpd you can chroot a user by editing the file /etc/vsftpd/vsftpd.conf.  You will want to edit the following.  
 
-Change the user's group to the 'sftp' group:-
+    chroot_local_user=YES
+    chroot_list_enable=YES
+    chroot_list_file=/etc/vsftpd/vsftpd.chroot_list
 
-    usermod -g sftp test
+You will need to create a vsftp.chroot_list file and put users in it who ARE NOT chrooted. Everyone is chrooted by default. You need to create the file even if it's going to be empty:
 
-Set the user's shell to /bin/false:-
+    touch /etc/vsftpd/vsftpd.chroot_list
+    
+Once the file is created and you have setup your users all you need to do is restart vsftpd.
 
-    usermod -s /bin/false test
-
-Edit the subsystem in sshd_config (/etc/ssh/):
-
-    #Subsystem sftp /usr/lib/openssh/sftp-server
-    Subsystem sftp internal-sftp
-
-Add the following to the bottom of the `sshd_config` file:-
-
-    Match group sftp
-        X11Forwarding no
-        ChrootDirectory %h
-        AllowTcpForwarding no
-        ForceCommand internal-sftp
-
-Change the following directories access to 
-
+    service vsftpd restart
 
 ### Next steps
 
