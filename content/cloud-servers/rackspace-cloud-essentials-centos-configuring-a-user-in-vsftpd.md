@@ -47,7 +47,7 @@ You will need to create a vsftp.chroot_list file and enter users who do *not* us
 
     touch /etc/vsftpd/vsftpd.chroot_list
 
-Once the file is created and you have setup your users all you need to do is restart vsftpd.
+Once the file is created and you have setup your chroot_list, restart vsftpd.
 
     service vsftpd restart
 
