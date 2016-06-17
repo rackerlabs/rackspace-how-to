@@ -25,10 +25,11 @@ set up for email transfer in Rackspace Email or Hosted Exchange.
 Create the following entries, which are described below, on your DNS server:
 
 -   [MX records](#mx-records)
--   [Autodiscover record](#autodiscover-record)
--   [SPF record](#spf-record) 
+-   [Autodiscover records](#autodiscover-records)
+-   [SPF records](#spf-records)
 
-#### **MX records**
+
+#### MX records
 
 A mail exchange (MX) record directs incoming email sent to your domain
 to the specific server set up to accept email traffic for your domain.
@@ -62,7 +63,7 @@ for changes to DNS records to fully propagate. We recommend updating
 your DNS records during off-peak traffic hours to allow for DNS
 propagation. No mail is lost during this time.
 
-#### **Autodiscover record**
+#### Autodiscover records
 
 Autodiscover is a service that enables you and your team to easily
 configure your email clients by knowing only your Rackspace Email or
@@ -83,7 +84,7 @@ Replace *example.com* with your own domain name.
 -   **Record type:** CNAME
 -   **Destination:** `autodiscover.emailsrvr.com`
 
-#### **SPF record**
+#### SPF records
 
 The Sender Policy Framework (SPF) record is a DNS record designed to
 combat and reduce spam for your domain. SPF records help mail servers
@@ -100,7 +101,7 @@ have them add the following TXT record to your DNS:
 -   **Record type:** TXT
 -   **Destination:** `v=spf1 include:emailsrvr.com ~all`
 
-### **Set up DNS records for Hosted Skype for Business** ###
+### **Set up DNS records for Hosted Skype for Business** 
 
 To complete the configuration of your hosted implementation of Microsoft
 Skype for Business formerly Microsoft Lync, you must set up DNS records.
@@ -135,5 +136,3 @@ Tool](https://emailhelp.rackspace.com/) as shown in the following image.
 -   If you want to enable Lync federation with domains hosted outside of
     Rackspace or domains that are hosted within Rackspace, contact our
     support team to learn more.
-
-
