@@ -19,18 +19,18 @@ product_url: cloud-sites
 
 This article will show you how to create your domain through the [Cloud Sites Control Panel](https://manage.rackspacecloud.com).
 
--   Let's get started by first logging into the [Cloud Sites Control Panel](https://manage.rackspacecloud.com).
--   After we're logged in, navigate to **Hosting > Cloud Sites**
--   Now let's click on the **Add A Site** button shown in the image
-    below
--   We'll now have a pop-up menu that will ask us two things:
+1. Log in to the [Cloud Sites Control Panel](https://manage.rackspacecloud.com).
+2. Navigate to **Hosting > Cloud Sites**.
+3. Click **Add A Site**.
+    A pop-up menu opens and ask two things:
 
-    1.  Who is this website for?
-    2.  What is the domain name?
+      1.  Who is this website for?
+      2.  What is the domain name?
 
--   Once you've selected who the website will be for, and you've entered
-    your new domain name, proceed by clicking **Add New Site**.
--   Next, depending on the domain name you are trying to add, you could
+4. Selected who the website will be for, enter the new domain name, and then
+    click **Add New Site**.
+
+    **Note** depending on the domain name you are trying to add, you could
     be presented with one out of three different screens. You will
     either be asked to register your new domain name, pick a different
     domain name or that the domain name cannot be automatically
@@ -39,13 +39,13 @@ This article will show you how to create your domain through the [Cloud Sites Co
 
 ### Register new domain name
 
--   If the domain name is available, you will be asked to register the
-    domain name. You also have the option to choose the domain name
-    without registering it.
+If the domain name is available, you will be asked to register the
+domain name. You also have the option to choose the domain name
+without registering it.
 
-    **Note:** If you choose not to register your domain name, it will not be accessible for pubic viewing on the Internet.
+    **Note:**If you choose not to register your domain name, it will not be accessible for pubic viewing on the Internet.
 
--   Once you have made your selection, click **Next Step** to proceed
+Once you have made your selection, click **Next Step** to proceed
 
 ### Domain name already exists
 
@@ -79,11 +79,11 @@ may need, such as a database.
     technology in Cloud Sites, please click
     [here](http://www.rackspace.com/cloud/cloud_hosting_products/sites/technology/).
 
--   Click on **Next Step** to proceed once you have made your selections.
+-   Click **Next Step** to proceed once you have made your selections.
 
--   Review your order, and click on **Finish** once you
+-   Review your order, and click **Finish** once you
     have verified everything is correct. If you would like to make any
-    changes to your new domain order, click on **Back**
+    changes to your new domain order, click **Back**.
 
 **Note:** You may incur charges depending on whether you are
 registering or transferring a domain to the Rackspace Cloud. You may
@@ -95,8 +95,7 @@ price guide for registering, transferring domains, or adding additional
 features to your Cloud Sites website(s), please click
 [here](http://www.rackspace.com/cloud/cloud_hosting_products/sites/pricing/).
 
-This concludes how to add a new website to your Cloud Sites account. In
-the next article we'll discuss [how to upload content to your new website](/how-to/getting-started-with-cloud-sites-uploading-your-content).
+In the next article [how to upload content to your new website](/how-to/getting-started-with-cloud-sites-uploading-your-content) is discussed.
 
 ### Next section
 
