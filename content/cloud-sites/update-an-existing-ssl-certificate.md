@@ -43,8 +43,8 @@ recommended sellers are:
 Follow your vendor's SSL Certificate renewal process; in particular you
 may require the following details:
 
--   **Server type**: Apache 2
--   **SSL type**: OpenSSL
+-   **Server type**: Apache 2.4
+-   **SSL type**: OpenSSL (some vendors label this modSSL)
 -   **CSR**
 
 Once you have completed your certificate renewal, you're ready to install the new certificate.
@@ -74,12 +74,4 @@ Because you are updating an existing SSL certificate, you will not need
 to wait for propagation as you would when installing a new SSL
 Certificate.
 
-### What To Watch For
-
--   Rackspace Cloud Sites does not support wildcard certificates - such
-    as **\*.domain.com** or **\*.example.com**. - or
-    self-signed certificates.
--   Rackspace Cloud Sites does not support Extended Validation
-    certificates (EV).
--   Removing the SSL certificate from your site will change its IP
-    address, which can require a DNS change.
+**NOTE**: Removing the SSL certificate from your site will change its IP address, which can require a DNS change.
