@@ -5,13 +5,11 @@ title: Check Listening Ports with netstat
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2016-09-16'
+last_modified_date: '2016-06-10'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
-
-### netstat
 
 If you're troubleshooting a service that you know [is running normally](/how-to/checking-system-load-on-linux)
 the next step is to make sure it's listening to the right network port.
@@ -26,7 +24,7 @@ name.
 You need to run `netstat` on the server running the service.
 `Netstat` is not affected by your firewall configuration.
 
-### Checking ports
+### Check ports
 
 To list tcp ports that are being listened on, along with the name of
 each listener's daemon and its PID, run:
@@ -44,7 +42,7 @@ that are listening on three different sockets.
     tcp        0      0 :::80                       :::*                        LISTEN      2218/httpd
     tcp        0      0 :::22                       :::*                        LISTEN      1051/sshd
 
-### Filtering the list
+### Filter the list
 
 If the list of listening daemons is long you can use grep to filter it.
 For example, to filter out everything except the default web server port, number 80, run:
@@ -52,7 +50,7 @@ For example, to filter out everything except the default web server port, number
     $ sudo netstat -plnt | grep ':80'
     tcp        0      0 :::80                       :::*                        LISTEN      8448/httpd
 
-### Analysing the results
+### Analyze the results
 
 Common outcomes are:
 
@@ -75,8 +73,6 @@ when netstat shows the port is free, e.g. "sudo service vsftpd start".
 
 If you make any changes because the incorrect service is listening, run the `netstat` command again. If netstat doesn't show the program listening on the correct
 port you need to address its configuration before you go any further.
-
-### Outcome
 
 If you make changes at this point make sure to test your setup - you may
 have resolved your issue.

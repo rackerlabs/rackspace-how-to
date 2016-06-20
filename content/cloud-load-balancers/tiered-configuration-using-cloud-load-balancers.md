@@ -21,7 +21,7 @@ Tiered configurations augment a single server with a cloud load balancer and at 
 
 <img src="{% asset_path cloud-load-balancers/tiered-configuration-using-cloud-load-balancers/tiered-config.svg %}" alt="Tiered configuration diagram" />
 
-The size of the *Web 1* and *Web 2* servers are half the size of the single server. For example, if your single server is 4 GB, the size of your web servers is 2 GB.
+The size of both general purpose servers are half the size of the single server. For example, if your single server is 4 GB, the size of your web servers is 2 GB.
 
 ### Set up a tiered configuration
 

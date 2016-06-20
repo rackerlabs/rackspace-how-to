@@ -11,8 +11,7 @@ product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
 
-### Previous section
-[Getting Started with Rackspace Private Cloud - OpenStack ](/how-to/rpc-openstack)
+**Previous section**: [Getting Started with Rackspace Private Cloud - OpenStack ](/how-to/rpc-openstack)
 
 Rackspace Private Cloud is powered by OpenStack and delivers the agility and efficiency of a public cloud combined with the enhanced security, control and performance of a dedicated environment.  It can be deployed in your data center or ours, is managed by our OpenStack experts and backed by Fanatical Support&reg;.  Rackspace Private Cloud gives you all the power of the cloud without the pain of running it, so you can focus on your core business.
 
