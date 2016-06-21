@@ -1,28 +1,26 @@
 ---
 permalink: checking-linux-file-permissions-with-ls/
-audit_date:
+audit_date: '2016-06-22'
 title: Check Linux file permissions with ls
 type: article
 created_date: '2011-11-23'
 created_by: Jered Heeschen
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-22'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article focuses on the basics of how to use the `ls` command to
+This article focuses on the `ls` command - how to use it to
 check Linux file permissions and what it can tell you about a file's
 type and permissions.
 
 ### ls command
 
-You use the `ls` command (the first letter is a lowercase L) to see what
+Use the `ls` command (the first letter is a lowercase 'L') to see what
 files are in a directory. When run by itself, `ls` returns a list of the
-current working directory (essentially, the directory you are in). You
-can also specify a directory to list. For example, a list of the first
-few files in the /etc directory on a Gentoo system might look as
-follows:
+current working directory. You can also specify a directory to list. The following
+example shows a list of the first few files in the /etc directory on a Gentoo system.
 
     $ ls /etc
     DIR_COLORS            gentoo-release      man.conf            runlevels
@@ -38,47 +36,13 @@ follows:
 The `-h` option changes the way file sizes are displayed. Instead of
 displaying file sizes in raw bytes, `-h` displays them in the
 human-readable format of kilobytes, megabytes, and so on. Other linux
-tools such as df also support this flag with `df -h` to show current disk 
+tools such as df also support this flag. The command `df -h` shows current disk
 usage in a easier to read format.
-
-#### ls -l
-
-To get more information about the files in a directory, use the `-l`
-option with ls. The following example shows a result of using the `-l`
-option:
-
-    $ ls -l /etc
-    total 492
-    -rw-r--r-- 1 root root  4468 Nov 19  2009 DIR_COLORS
-    -rw-r--r-- 1 root root    10 Jun 30 03:29 adjtime
-    drwxr-xr-x 4 root root  4096 Jun 30 03:44 apache2
-    drwxr-xr-x 2 root root  4096 Nov 19  2009 bash
-    drwxr-xr-x 3 root root  4096 Nov 19  2009 ca-certificates
-    -rw-r--r-- 1 root root  5955 Nov 19  2009 ca-certificates.conf
-    drwxr-xr-x 2 root root  4096 Jul  5 20:37 conf.d
-    drwxr-xr-x 2 root root  4096 Dec  3  2009 cron.d
-    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.daily
-    -rw-r--r-- 1 root root   220 Dec  3  2009 cron.deny
-    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.hourly
-    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.monthly
-    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.weekly
-    -rw-r--r-- 1 root root   611 Dec  3  2009 crontab
-    ...
-
-The files names are on the far right side of each line, and the file
-details precede the names. The details you need to know in order to
-check permission are the series of letters and dashes on the far left of
-each line and the columns that have root in them. The rest of this
-article explains how to interpret and use these details.
-
-However, before going into those details, you should know about one
-other option that can be used with `ls` to return a comprehensive list
-of files, `-a`.
 
 #### ls -a
 
-When you use the `ls` command, if you want to see any files whose names
-start with a period, you must use the `-a` option. For example, if you
+If you want to display hidden files, whose names start with a period, using the `ls`
+command, you must use the `-a` option. For example, if you
 use only `ls` to look at a directory listing for root's home directory
 on a clean Linux installation, no files are returned:
 
@@ -90,7 +54,7 @@ files:
     $ ls -a /root
     .  ..  .bash_history  .bashrc  .profile  .viminfo
 
-Files that start with a period are usually system files and application
+Files that start with a period are often system files and application
 settings files, and you usually don't want them included in directory
 lists. But it's important to know that they're there and how to see
 them. The .bashrc file is especially useful to know about because it
@@ -110,15 +74,42 @@ details of those hidden files:
 
 Consider the single period and double period in both directory lists:
 
--   The single period (.) refers to the directory itself. If you type
-    `cd .` the directory changes back into the directory you started
-    with (in the example, `/root`). Knowing this is convenient when
-    you're running a command and you want it to refer to your current
-    directory (for example, when you want to copy a file there).
+-   The single period (.) refers to the directory itself. This is convenient if
+    you want it to run a command and reference your current directory
+    (for example, when you want to copy a file there).
 -   The double period (..) refers to the parent directory. If you type
     `cd ..` the directory changes to the one above the one you're in, in
-    the file system hierarchy. In the preceding example, typing `cd ..`
-    would take you above `/root` to `/`, the very top of the hierarchy.
+    the file system hierarchy. If your current directory is `/root`, typing `cd ..`
+    would take you to `/`, the very top of the hierarchy.
+
+#### ls -l
+
+To get more information about the files in a directory, use the `-l`
+option with ls, as shown in this example.
+
+    $ ls -l /etc
+    total 492
+    -rw-r--r-- 1 root root  4468 Nov 19  2009 DIR_COLORS
+    -rw-r--r-- 1 root root    10 Jun 30 03:29 adjtime
+    drwxr-xr-x 4 root root  4096 Jun 30 03:44 apache2
+    drwxr-xr-x 2 root root  4096 Nov 19  2009 bash
+    drwxr-xr-x 3 root root  4096 Nov 19  2009 ca-certificates
+    -rw-r--r-- 1 root root  5955 Nov 19  2009 ca-certificates.conf
+    drwxr-xr-x 2 root root  4096 Jul  5 20:37 conf.d
+    drwxr-xr-x 2 root root  4096 Dec  3  2009 cron.d
+    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.daily
+    -rw-r--r-- 1 root root   220 Dec  3  2009 cron.deny
+    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.hourly
+    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.monthly
+    drwxr-x--- 2 root root  4096 Dec  3  2009 cron.weekly
+    -rw-r--r-- 1 root root   611 Dec  3  2009 crontab
+    ...
+
+The file names are on the far right side of each line, and the file
+details precede the names. The necessary details to check file permissions
+are (1) the series of letters and dashes on the far left of each line and
+(2) the two columns that have "root" in them. The rest of this article explains
+how to interpret and use these details.
 
 ### Permission details
 
@@ -130,17 +121,15 @@ file permissions.
 In the preceding examples, the first character in each list was either a
 dash (-) or the letter `d`.
 
--   A dash (-) indicates that the file is a regular file. That's the
-    sort of file that you'll usually work with when you're saving some
-    text or running a command.
--   The letter `d` indicates that the file is a directory, which are
+-   A dash (-) indicates that the file is a regular file.
+-   The letter `d` indicates that the file is a directory, which is
     basically a special kind of file. Knowing that makes it easier to
     think of that first slot in the full directory listing as the *file
     type*.
 
 #### Another file type: symlink
 
-A special file type that you will see frequently is a symlink, sometimes
+A special file type that you might see is a symlink, sometimes
 called a soft link. It begins with a lowercase `L`, as shown in the
 following example:
 
@@ -160,33 +149,30 @@ shown in the following example:
 In this example, the first symlink uses an absolute path to reference
 its target, and the second one uses a relative path.
 
-#### The next three characters: user permissions
+#### Permissions abbreviations
 
-The next three letters in a file list cover the `user` category of
-permissions. Consider the following example:
-
-    drwxrwxr-x 2 root mail 4096 Dec  3  2009 mail
-
-After the letter `d`, which tells us that the file is a directory, are
-the letters `rwx`. These letters are abbreviations of the types of
-permissions that can be set:
+Permissions for files are represented by the following letters.
 
 -   `r` refers to the read permission.
 -   `w` refers to the write permission.
 -   `x` refers to the execute permission.
 
-#### The second trio of characters: group permissions
+#### The permissions characters
+
+Consider the following example:
+
+    drwxrwxr-x 2 root mail 4096 Dec  3  2009 mail
+
+The first trio of letters after the file type in a file list (`rwx`)
+cover the `user`, or file owner, category of permissions.
 
 The next trio of characters (also `rwx`) shows the permissions for the
-`group` category, and the letters mean the same thing as they did for
-the user. For this directory, the group has as many permissions as the
-owner (`rwx`).
-
-#### The third trio of characters: other permissions
+`group` category.
 
 The last trio of characters (`r-x`) shows the permissions for the final
-category, `other`. In this example, `other` does not have write
-permission for the directory, which is indicated by the dash (-).
+category, `other`. In this example, users who are neither the file owner nor
+in the group have read and execute permissions but not write, as
+indicated by the dash (-) in the middle position.
 
 Notice the specific order to the permissions in a triplet: read, write,
 execute. A dash in place of a letter for a permission means that
@@ -201,21 +187,20 @@ To summarize:
 
 #### The first number
 
-After the permissions, there's a number. It has nothing to do with file
-permissions, so you can ignore it.
+After the permissions, there's a number, which indicates the number of links.
 
 #### Owner and group
 
-After the number, two names are listed. In the preceding example, the
-names are root and mail.
+After the number of links, two names are listed. In the preceding example, the
+names are 'root' and 'mail'.
 
-The first name is the name of the owner of the file. The `user`
-permissions apply to that user when it attempts to access the directory.
-In this case, the user root.
+The first name indicates the owner of the file. The `user` permissions apply to
+owner of the file (in this case, the user 'root'), so the 'root' user has read,
+write, and execute permissions for this directory.
 
 The second name is the file's group. The `group` permissions apply to
-any user (that is not the file owner) in the same group as the file. In
-this case, those permissions apply to anyone in the mail group.
+any user in the same group as the file, so those permissions
+apply to anyone in the 'mail' group, in this case.
 
 ### Summary
 
