@@ -57,7 +57,7 @@ details, please [see this blog post](http://www.rackspace.com/blog/install-drupa
 With the preivous steps completed, the Cloud Sites specific steps are complete.
 The following steps start the process of installing Drupal.
 
-1. Copy `default.settings.php` to `settings.php` in the
+1. Copy the `default.settings.php` file to file `settings.php` in the
    /sites/default and ensure write permissions on `settings.php`
 2. Visit the index page of the website, (e.g. visit:
   http://www.example.com/info).
