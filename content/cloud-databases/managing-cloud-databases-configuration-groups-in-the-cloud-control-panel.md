@@ -15,13 +15,15 @@ A configuration group is a collection of settings that you can save and apply to
 more Cloud Databases instances. A configuration group consists of one or more configuration 
 parameters, which represent options for a database instance.
 
-For example, you can set the <code>max\_connections</code> parameter in a configuration 
+For example, you can set the `max_connections` parameter in a configuration 
 group to 80, which means that the instance to which the configuration group is applied can 
 have a maximum of 80 clients connected simultaneously. You can also set the default time 
-zone for an instance by defining the <code>default\_time_zone</code> parameter in a 
+zone for an instance by defining the `default_time_zone` parameter in a 
 configuration group.
 
 This article describes how to manage configurations using the Cloud Control Panel.
+
+**Note:** Applying configurations to Cloud Databases HA groups is not yet supported in the Cloud Control Panel. You can create the configuration group, but it must be applied via the API. The Cloud Databases Developer Guide has details on how to [attach configuration groups to HA groups via the API](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#attach-configuration-group-to-ha-instance).
 
 For details about configuration parameters, see the MySQL documentation 
 [5.1.4 Server System Variables](http://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html).
