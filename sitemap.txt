@@ -159,7 +159,6 @@ https://support.rackspace.com/how-to/cloud-files-streaming-simple-flash-files/
 https://support.rackspace.com/how-to/cloud-files-streaming-with-flowplayer-plugins/
 https://support.rackspace.com/how-to/cloud-files-streaming-with-osmf-plugins/
 https://support.rackspace.com/how-to/cloud-files-uploading-large-files/
-https://support.rackspace.com/how-to/cloud-hosting-faq/
 https://support.rackspace.com/how-to/cloud-hosting-vs-shared-hosting-vs-vps/
 https://support.rackspace.com/how-to/cloud-images-faq/
 https://support.rackspace.com/how-to/cloud-load-balancer-scheduling-algorithms/
