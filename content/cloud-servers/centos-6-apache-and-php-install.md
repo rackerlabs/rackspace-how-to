@@ -1,17 +1,21 @@
 ---
 permalink: centos-6-apache-and-php-install/
-audit_date:
+audit_date: '2016-06-22'
 title: Install Apache and PHP on CentOS 6
 type: article
 created_date: '2011-03-09'
 created_by: Rackspace Support
-last_modified_date: '2016-06-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-21'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 comes with Apache 2.2.3 and PHP 5.1.6, and you can install them by using the default CentOS Package Manager, `yum`. The advantages of using `yum` (as opposed to installing by using source code) are that you get any security updates (if and when they are distributed) and dependencies are automatically taken care of.
+This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 comes with
+Apache 2.2.3 and PHP 5.1.6, and you can install them by using the default CentOS Package
+Manager, `yum`. The advantages of using `yum` (as opposed to installing by using source
+code) are that you get any security updates (when they are distributed) and
+dependencies are automatically taken care of.
 
 ### Install Apache
 
@@ -19,7 +23,8 @@ This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 co
 
         sudo yum install httpd mod_ssl
 
-2. Because the server does not start automatically when you install Apache, you have to start it manually.
+2. Because the server does not start automatically when you install Apache, you have to
+   start it manually.
 
         sudo /usr/sbin/apachectl start
 
@@ -27,17 +32,20 @@ This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 co
 
         Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1 for ServerName
 
-    The IP address (shown in this example as 127.0.0.1) is used as the server name by default. In the following steps, set the server name for the next time the server is started.
+   The IP address (shown in this example as 127.0.0.1) is used as the server name by default.
+   In the following steps, set the server name for the next time the server is started.
 
 3. Open the main Apache configuration file.
 
         sudo nano /etc/httpd/conf/httpd.conf
 
-4. Toward the end of the file, locate the section that starts with `ServerName` and gives an example.
+4. Toward the end of the file, locate the section that starts with `ServerName` and gives
+   an example.
 
         #ServerName www.example.com:80
 
-5. Enter your cloud server host name or a fully qualified domain name. In the following example, the host name is `demo`.
+5. Enter your cloud server host name or a fully qualified domain name. In the following
+   example, the host name is `demo`.
 
         ServerName demo
 
@@ -47,13 +55,15 @@ This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 co
 
 ### Open the port to run Apache
 
-In some versions of CentOS, a firewall is installed by default that blocks access to port 80, on which Apache runs.
+In some versions of CentOS, a firewall, installed by default, blocks access to
+port 80, on which Apache runs.
 
 1. To open the port, run the following command:
 
         sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 
-2. After adding that instruction, save your firewall rules so your web server will be accessible the next time you reboot.
+2. After adding that instruction, save your firewall rules so your web server will be
+   accessible the next time you reboot.
 
         sudo service iptables save
 
@@ -61,11 +71,11 @@ In some versions of CentOS, a firewall is installed by default that blocks acces
 
 Navigate to your Cloud Server IP address (for example, `http://123.45.67.89`).
 
-If the default CentOS Apache welcome screen is displayed, the installation was successful.
+If the default CentOS Apache "welcome" screen is displayed, the installation was successful.
 
 ### Run chkconfig
 
-Now that Apache is installed and working, ensure that it is set to start automatically when the server is rebooted.
+Now that Apache is installed and working, set to start automatically when the server is rebooted.
 
 1. Run the following command:
 
