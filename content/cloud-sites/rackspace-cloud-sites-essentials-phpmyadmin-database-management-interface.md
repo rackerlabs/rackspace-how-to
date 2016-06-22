@@ -64,7 +64,7 @@ well.
    of them. The number that prefixes the user name is the account number
    for the website owner (yourself or your client) and is important when
    logging in, so be sure to enter the user name exactly as it is listed
-   on this page. 
+   on this page.
 
    The password is the password associated with the database user,
    which would have been chosen when you created the database and
@@ -88,7 +88,9 @@ With the information described above, you're ready to start working
 with the database. Use the following steps to begin using the database.
 
 1. Click the **Online Manager** link.
+
    A phpMyAdmin interface will display in the browser.
+
 2. Enter the **user name** (including the numbered prefix) and password.
 3. Select the **Hostname** (on the details page) from the drop-down list.
 

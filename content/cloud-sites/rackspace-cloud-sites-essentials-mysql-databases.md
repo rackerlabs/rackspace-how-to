@@ -51,7 +51,8 @@ through Cloud Sites. Follow the steps below:
    identifier.
 
 10. A clock icon is displayed while the database completes the setup.
-   Click the **Features** tab to refresh the status.
+    Click the **Features** tab to refresh the status.
+    
 11. Confirm that the new database is active by verifying that the
     Status column has a green check mark icon to the left of the
     database name.
@@ -64,7 +65,7 @@ through Cloud Sites. Follow the steps below:
 With the preceding steps completed, you have added a MySQL database to your
 website. Users can now start working with the new MySQL database.
 
-The next article demonstrates how to work with your new database through 
+The next article demonstrates how to work with your new database through
 our online MySQL database interface.
 
 ### Next section
