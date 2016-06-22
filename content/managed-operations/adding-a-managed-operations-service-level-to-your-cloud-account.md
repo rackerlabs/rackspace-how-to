@@ -5,8 +5,8 @@ title: Adding a managed operations service level to your cloud account
 type: article
 created_date: '2011-10-11'
 created_by: Rackspace Support
-last_modified_date: '2016-01-12'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-22'
+last_modified_by: Nate Archer
 product: Managed Operations
 product_url: managed-operations
 ---
