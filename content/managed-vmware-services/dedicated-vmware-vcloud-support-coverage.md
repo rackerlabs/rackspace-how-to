@@ -5,8 +5,8 @@ title: Rackspace Private Cloud Powered by VMware vCloud support coverage
 type: article
 created_date: '2015-01-29'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-22'
+last_modified_by: Nate Archer
 product: Managed VMware Services
 product_url: managed-vmware-services
 ---
