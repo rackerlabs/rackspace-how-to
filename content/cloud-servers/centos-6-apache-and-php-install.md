@@ -15,7 +15,7 @@ This article demonstrates how to install Apache and PHP on CentOS 6. CentOS 6 co
 Apache 2.2.3 and PHP 5.1.6, and you can install them by using the default CentOS Package
 Manager, `yum`. The advantages of using `yum` (as opposed to installing by using source
 code) are that you get any security updates (when they are distributed) and
-dependencies are automatically taken care of.
+dependencies are automatically handled.
 
 ### Install Apache
 
@@ -23,7 +23,7 @@ dependencies are automatically taken care of.
 
         sudo yum install httpd mod_ssl
 
-2. Because the server does not start automatically when you install Apache, you have to
+2. Because the server does not start automatically when you install Apache, you must
    start it manually.
 
         sudo /usr/sbin/apachectl start
@@ -55,14 +55,14 @@ dependencies are automatically taken care of.
 
 ### Open the port to run Apache
 
-In some versions of CentOS, a firewall, installed by default, blocks access to
-port 80, on which Apache runs.
+Apache runs on port 80. In some versions of CentOS, a firewall, which is installed
+by default, blocks access to port 80. Perform the following steps to open the port.
 
-1. To open the port, run the following command:
+1. Run the following command:
 
         sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT
 
-2. After adding that instruction, save your firewall rules so your web server will be
+2. After adding that instruction, save your firewall rules so that your web server is
    accessible the next time you reboot.
 
         sudo service iptables save
@@ -71,9 +71,10 @@ port 80, on which Apache runs.
 
 Navigate to your Cloud Server IP address (for example, `http://123.45.67.89`).
 
-If the default CentOS Apache "welcome" screen is displayed, the installation was successful.
+If the default CentOS Apache "welcome" screen is displayed, the installation was
+successful. Contact Rackspace support if you have any problems.
 
-### Run chkconfig
+### Configure Apache to run automatically
 
 Now that Apache is installed and working, set to start automatically when the server is rebooted.
 
