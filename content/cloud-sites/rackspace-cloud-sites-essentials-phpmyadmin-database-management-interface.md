@@ -64,7 +64,7 @@ well.
    of them. The number that prefixes the user name is the account number
    for the website owner (yourself or your client) and is important when
    logging in, so be sure to enter the user name exactly as it is listed
-   on this page.
+   on this page. 
 
    The password is the password associated with the database user,
    which would have been chosen when you created the database and
