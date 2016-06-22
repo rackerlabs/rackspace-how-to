@@ -37,7 +37,7 @@ first few files in the `/etc` directory on a Gentoo system.
 
 The `-h` option changes the way file sizes are displayed. When you use the -h option,
 files sizes are displayed in the human-readable format of kilobytes, megabytes,
-and so on, rather than in raw bytes. Other linux tools such as df also support
+and so on, rather than in raw bytes. Other linux tools such as `df` also support
 this flag. The command `df -h` shows current disk usage in a easier to read format.
 
 #### ls -a
