@@ -82,8 +82,6 @@ So where do you go from here? These are a few tips.
 
 4. To show NUMA-related fields, enter g again.
 
-<img src="{% asset_path managed-vmware-services/numa-vnuma-and-cpu-scheduling/NUMA3.png %}" width="500" height="" alt=""  />
-
 If NUMA is enabled, you will see values (like 0, 1, or 2 for each node) on the NHN column:
 
 <img src="{% asset_path managed-vmware-services/numa-vnuma-and-cpu-scheduling/NUMA4.png %}" width="600" height="" alt=""  />
