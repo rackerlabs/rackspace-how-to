@@ -1,12 +1,12 @@
 ---
 permalink: mysql-connect-to-your-database-remotely/
-audit_date:
+audit_date: '2016-06-23'
 title: Connect to your MySQL database remotely
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-23'
+last_modified_by: Brian King
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -16,26 +16,28 @@ server to connect remotely.
 
 The following items are assumed:
 
--   You have access to login as the 'root' MySQL user
+-   You have local server access to login as the 'root' MySQL user
 
 ### Getting your IP address
 
 You will need to know what the IP address you are connecting from. To
 find this you can go to one of the following sites:
 
--   <http://www.ipchicken.com>
--   <http://www.whatismyip.com>
+-   <https://icanhazip.com>
+-   <https://www.whatismyip.com>
 
 ### Granting access
 
 Granting access to a user from a remote host is fairly simple and can be
-accomplished from just a few steps. First you will need to login to your
+accomplished from just a few steps. First you will need to login locally to your
 MySQL server as the *root* user. You can do this by typing the following
 command:
 
     # mysql -u root -p
 
-This will prompt you for your MySQL root password.
+This will prompt you for your MySQL root password. (If you get into MySQL without a 
+password, you may wish to run the script 'mysql_secure_installation,' which sets a MySQL
+ root password as well as tweaking other settings to increase security).
 
 Once you are logged into MySQL you need to issue the GRANT command that
 will enable access for your remote user. In this example we will be
