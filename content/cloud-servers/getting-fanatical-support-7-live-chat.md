@@ -1,7 +1,7 @@
 ---
 permalink: getting-fanatical-support-7-live-chat/
 audit_date:
-title: Get Fanatical Support 7 - Live Chat
+title: Get support by using Live Chat
 type: article
 created_date: '2012-03-20'
 created_by: Rackspace Support
