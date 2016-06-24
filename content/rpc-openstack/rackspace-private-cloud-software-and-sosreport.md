@@ -5,8 +5,8 @@ title: Rackspace Private Cloud Software and sosreport
 type: article
 created_date: '2012-11-09'
 created_by: Karin Levenstein
-last_modified_date: '2012-11-15'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-06-24'
+last_modified_by: Kyle Laffoon
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
@@ -30,7 +30,7 @@ PPA](https://launchpad.net/~osops-packaging/+archive/ppa).
 The complete list of `sosreport` options is displayed with
 `sosreport --help`.
 
-``` {.screen}
+``{.screen}
 $ sosreport --help
 Usage: sosreport [options]
 
@@ -66,7 +66,7 @@ Options:
   -z COMPRESSION_TYPE, --compression-type=COMPRESSION_TYPE
                         compression technology to use [auto, zip, gzip, bzip2,
                         xz] (default=auto)
-```
+``
 
 ### Using sosreport
 
@@ -80,9 +80,9 @@ Once you are successfully logged in, use <span class="command">**sudo
 To generate a basic report with default settings, run the command on the
 command line:
 
-``` {.screen}
+``{.screen}
 $ sosreport
-```
+``
 
 You will be prompted to confirm that you want to generate the report.
 Press **Enter** to continue.
@@ -91,21 +91,21 @@ At the prompt, enter your first initial and last name. If you have been
 assigned a case number by your Rackspace support representative, enter
 it at the prompt.
 
-``` {.screen}
+`` {.screen}
 Please enter your first initial and last name [ctrl]: jdoe
 Please enter the case number that you are generating this report for: 1234
-```
+``
 
 When the report is complete, the utility will display a message showing
 you where the report `tar.xz`{.filename} file has been saved and the
 checksum for the report.
 
-``` {.screen}
+`` {.screen}
 Your sosreport has been generated and saved in:
   /tmp/sosreport-jdoe.1234-20120907125725.tar.xz
 
 The checksum is: acfcceaa72242483edece9e3b97687f1
-```
+``
 
 You can now send the `.tar.xz`{.filename} file to Rackspace Support.
 
@@ -122,7 +122,7 @@ may need to disable or enable certain plugins when the report is
 generated. To view a full list of the plugins, use **sosreport -l**. The output will be similar to
 the following example.
 
-``` {.screen}
+`` {.screen}
 root@ctrl:~# sosreport -l
 
 sosreport (version 2.3)
@@ -181,25 +181,25 @@ The following plugin options are available:
  libraries.ldconfigv   off  the name of each directory as it is scanned,
                             and any links that are created.
  printing.cups         50   max size (MiB) to collect per cups log file
-```
+``
 
 Here are some examples of using sosreport plugins to customize the
 report.
 
 -   To enable only the OpenStack plugin:
 
-    ``` {.screen}
+    `` {.screen}
     $ sosreport -o openstack
-    ```
+    ``
 
 -   To disable apache and xll plugins:
 
-    ``` {.screen}
+    `` {.screen}
     $ sosreport -n apache,xll
-    ```
+    ``
 
 -   To collect all log files defined in syslog.conf:
 
-    ``` {.screen}
+    `` {.screen}
     $ sosreport -k general.all_logs=on
-    ```
+    ``
