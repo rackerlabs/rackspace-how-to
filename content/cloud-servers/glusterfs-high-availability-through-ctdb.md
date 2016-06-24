@@ -5,7 +5,7 @@ title: Explore high availability of GlusterFS through CTDB
 type: article
 created_date: '2014-08-14'
 created_by: Marcin Stangel
-last_modified_date: '2016-01-12'
+last_modified_date: '2016-06-24'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
