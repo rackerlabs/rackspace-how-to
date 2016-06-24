@@ -30,7 +30,7 @@ PPA](https://launchpad.net/~osops-packaging/+archive/ppa).
 The complete list of `sosreport` options is displayed with
 `sosreport --help`.
 
-    ````{.screen}
+    ```{.screen}
     $ sosreport --help
     Usage: sosreport [options]
 
@@ -66,7 +66,7 @@ The complete list of `sosreport` options is displayed with
     -z COMPRESSION_TYPE, --compression-type=COMPRESSION_TYPE
                         compression technology to use [auto, zip, gzip, bzip2,
                         xz] (default=auto)
-    ````
+    ```
 
 ### Using sosreport
 
