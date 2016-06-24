@@ -30,43 +30,43 @@ PPA](https://launchpad.net/~osops-packaging/+archive/ppa).
 The complete list of `sosreport` options is displayed with
 `sosreport --help`.
 
-``{.screen}
+``` {.screen}
 $ sosreport --help
 Usage: sosreport [options]
 
 Options:
--h, --help            show this help message and exit
--l, --list-plugins    list plugins and available plugin options
--n NOPLUGINS, --skip-plugins=NOPLUGINS
-                skip these plugins
--e ENABLEPLUGINS, --enable-plugins=ENABLEPLUGINS
-                    enable these plugins
--o ONLYPLUGINS, --only-plugins=ONLYPLUGINS
-                    enable these plugins only
+  -h, --help            show this help message and exit
+  -l, --list-plugins    list plugins and available plugin options
+  -n NOPLUGINS, --skip-plugins=NOPLUGINS
+                        skip these plugins
+  -e ENABLEPLUGINS, --enable-plugins=ENABLEPLUGINS
+                        enable these plugins
+  -o ONLYPLUGINS, --only-plugins=ONLYPLUGINS
+                        enable these plugins only
   -k PLUGOPTS           plugin options in plugname.option=value format (see
-                      -l)
+                        -l)
   -a, --alloptions      enable all options for loaded plugins
   -u UPLOAD, --upload=UPLOAD
-                      upload the report to an ftp server
---batch               do not ask any question (batch mode)
---no-colors           do not use terminal colors for text
--v, --verbose         increase verbosity
---silent              Only display FATAL errors on stdout
---debug               enabling debugging through python debugger
---ticket-number=TICKETNUMBER
-                    set ticket number
---name=CUSTOMERNAME   define customer name
---config-file=CONFIG_FILE
-                    specify alternate configuration file
---tmp-dir=TMP_DIR     specify alternate temporary directory
---diagnose            enable diagnostics
---analyze             enable analyzations
---report              Enable html/xml reporting
---profile             turn on profiling
--z COMPRESSION_TYPE, --compression-type=COMPRESSION_TYPE
-                    compression technology to use [auto, zip, gzip, bzip2,
-                    xz] (default=auto)
-``
+                        upload the report to an ftp server
+  --batch               do not ask any question (batch mode)
+  --no-colors           do not use terminal colors for text
+  -v, --verbose         increase verbosity
+  --silent              Only display FATAL errors on stdout
+  --debug               enabling debugging through python debugger
+  --ticket-number=TICKETNUMBER
+                        set ticket number
+  --name=CUSTOMERNAME   define customer name
+  --config-file=CONFIG_FILE
+                        specify alternate configuration file
+  --tmp-dir=TMP_DIR     specify alternate temporary directory
+  --diagnose            enable diagnostics
+  --analyze             enable analyzations
+  --report              Enable html/xml reporting
+  --profile             turn on profiling
+  -z COMPRESSION_TYPE, --compression-type=COMPRESSION_TYPE
+                        compression technology to use [auto, zip, gzip, bzip2,
+                        xz] (default=auto)
+```
 
 ### Using sosreport
 
@@ -98,12 +98,12 @@ When the report is complete, the utility will display a message showing
 you where the report `tar.xz`{.filename} file has been saved and the
 checksum for the report.
 
-``{.screen}
+``` {.screen}
 Your sosreport has been generated and saved in:
-/tmp/sosreport-jdoe.1234-20120907125725.tar.xz
+  /tmp/sosreport-jdoe.1234-20120907125725.tar.xz
 
 The checksum is: acfcceaa72242483edece9e3b97687f1
-``
+```
 
 You can now send the `.tar.xz`{.filename} file to Rackspace Support.
 
