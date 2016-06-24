@@ -5,7 +5,7 @@ title: High Performance Computing Cluster in a Cloud Environment
 type: article
 created_date: '2013-03-18'
 created_by: Alyssa Hurtgen
-last_modified_date: '2016-01-12'
+last_modified_date: '2016-06-24'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
