@@ -11,7 +11,7 @@ product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
 
-## Rackspace Private Cloud Certified and Supported Devices
+### Rackspace Private Cloud Certified and Supported Devices
 
 **Private Cloud Deployed in Your Data Center** | **Private Cloud Deployed in Rackspace Data Center**
 --- | --- |
@@ -20,7 +20,7 @@ product_url: rpc-openstack
 **Note:** Rackspace Private Cloud provides secure and auditable access.
 
 
-## Rackspace Private Cloud Partner Devices
+### Rackspace Private Cloud Partner Devices
 
 &nbsp; | **HW Support in RAX DC** | **Distribution Certified For** | **Software Support in RAX DC** | **HW Support Off-Prem.** | **SW Support Off-Prem.** | **Certified for RPC/Reference Architecture** | **Supported Use Cases For Current Version of RPC** | **HW Support in Customer DC Only**
 --- | --- | --- | --- | --- | --- | --- | --- | ---

@@ -129,55 +129,55 @@ sosreport (version 2.3)
 The following plugins are currently enabled:
 
 --- | --- |
- apache | Apache related information for Debian distributions
- apparmor | Apparmor related information
- apport | apport information
- bootloader | Bootloader information
- crontab | Crontab information
- dpkg | dpkg information
- filesys | information on filesystems
- gdm | gdm related information
- general | Basic system information for Debian based distributions
- hardware | hardware related information for Debian distribution
- i18n | i18n related information
- kernel | kernel related information
- kvm | KVM related information
- libraries | information on shared libraries
- libvirt | libvirt-related information
- memory | memory usage information
- openssl | openssl related information for Debian distributions
- printing | printing related information (cups)
- ssh | ssh-related information
- x11 | X related information
+apache | Apache related information for Debian distributions
+apparmor | Apparmor related information
+apport | apport information
+bootloader | Bootloader information
+crontab | Crontab information
+dpkg | dpkg information
+filesys | information on filesystems
+gdm | gdm related information
+general | Basic system information for Debian based distributions
+hardware | hardware related information for Debian distribution
+i18n | i18n related information
+kernel | kernel related information
+kvm | KVM related information
+libraries | information on shared libraries
+libvirt | libvirt-related information
+memory | memory usage information
+openssl | openssl related information for Debian distributions
+printing | printing related information (cups)
+ssh | ssh-related information
+x11 | X related information
 
 The following plugins are currently disabled:
 
 --- | --- | ---
- as7 | inactive | JBoss related information
- autofs | inactive | autofs server-related on Debian based distributions
- dhcp | inactive | DHCP related information for Debian based distributions
- initrd  | not default | initrd related information
- ipsec | inactive | ipsec related information for Debian distributions
- iscsi | inactive | iscsi-initiator related information Debian based distributions
- kdump | inactive | Kdump related information for Debian distributions
- nscd | inactive | NSCD related information
- openstack | inactive | OpenStack related information for Debian based distributions
- radius | inactive | radius related information on Debian distributions
- sar | inactive | Generate the sar file from /var/log/sa/saXX files
- sssd | inactive | sssd-related Diagnostic Information on Debian based distributions
- xinetdv | inactive | xinetd information
+as7 | inactive | JBoss related information
+autofs | inactive | autofs server-related on Debian based distributions
+dhcp | inactive | DHCP related information for Debian based distributions
+initrd  | not default | initrd related information
+ipsec | inactive | ipsec related information for Debian distributions
+iscsi | inactive | iscsi-initiator related information Debian based distributions
+kdump | inactive | Kdump related information for Debian distributions
+nscd | inactive | NSCD related information
+openstack | inactive | OpenStack related information for Debian based distributions
+radius | inactive | radius related information on Debian distributions
+sar | inactive | Generate the sar file from /var/log/sa/saXX files
+sssd | inactive | sssd-related Diagnostic Information on Debian based distributions
+xinetdv | inactive | xinetd information
 
 The following plugin options are available:
 
 --- | --- | ---
- apache.log | off | gathers all apache logs
- filesys.dumpe2fs | off | dump filesystem information
- general.syslogsize | 15 | max size (MiB) to collect per syslog file
- general.all_logs | off | collect all log files defined in syslog.conf
- kernel.modinfo | on | gathers information on all kernel modules
- kvm.topOutput | off | 5x iterations of top data
- libraries.ldconfigv | off | the name of each directory as it is scanned, and any links that are created.
- printing.cups | 50 | max size (MiB) to collect per cups log file
+apache.log | off | gathers all apache logs
+filesys.dumpe2fs | off | dump filesystem information
+general.syslogsize | 15 | max size (MiB) to collect per syslog file
+general.all_logs | off | collect all log files defined in syslog.conf
+kernel.modinfo | on | gathers information on all kernel modules
+kvm.topOutput | off | 5x iterations of top data
+libraries.ldconfigv | off | the name of each directory as it is scanned, and any links that are created.
+printing.cups | 50 | max size (MiB) to collect per cups log file
 
 
 Here are some examples of using sosreport plugins to customize the
