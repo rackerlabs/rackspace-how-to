@@ -120,11 +120,12 @@ may need to disable or enable certain plugins when the report is
 generated. To view a full list of the plugins, use **sosreport -l**. The output will be similar to
 the following example.
 
-    ``` {.screen}
-    root@ctrl:~# sosreport -l
+``` {.screen}
+root@ctrl:~# sosreport -l
 
-    sosreport (version 2.3)
-    ```
+sosreport (version 2.3)
+```
+
 The following plugins are currently enabled:
 
 --- | --- |

@@ -287,23 +287,23 @@ For that, we can go and look in the nova-scheduler log
 (`/var/log/nova/nova-scheduler.log`)on the Alamo controller node. Toward
 the end of that file, we find an error block:
 
-    ``2012-08-30 08:11:57 WARNING nova.scheduler.manager [req-10302630-7f13-49fd-aeed-b73e1bbe69ef 03332d7fa8db4006aed4526fb5a6d8e8
-    502c4cc57e6240438eb9b0bd2041701f] Failed to schedule_live_migration: Unable to migrate instance (89a5e582-d3f3-4665-afc2-03c2114f0bbb) to current host (compute2).
-    2012-08-30 08:11:57 ERROR nova.rpc.amqp [req-10302630-7f13-49fd-aeed-b73e1bbe69ef 03332d7fa8db4006aed4526fb5a6d8e8 502c4cc57e6240438eb9b0bd2041701f] Exception during message handling
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp Traceback (most recent call last):
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/rpc/amqp.py", line 253, in _process_data
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp     rval = node_func(context=ctxt, **node_args)
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/manager.py", line 97, in _schedule
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp     context, ex, *args, **kwargs)
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/contextlib.py", line 24, in __exit__
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp     self.gen.next()
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/manager.py", line 92, in _schedule
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp     return driver_method(*args, **kwargs)
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/driver.py", line 218, in schedule_live_migration
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp     disk_over_commit)
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/driver.py", line 294, in _live_migration_dest_check
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp     instance_id=instance_ref['uuid'], host=dest)
-    2012-08-30 08:11:57 TRACE nova.rpc.amqp UnableToMigrateToSelf: Unable to migrate instance (89a5e582-d3f3-4665-afc2-03c2114f0bbb) to current host (compute2).``
+``2012-08-30 08:11:57 WARNING nova.scheduler.manager [req-10302630-7f13-49fd-aeed-b73e1bbe69ef 03332d7fa8db4006aed4526fb5a6d8e8
+502c4cc57e6240438eb9b0bd2041701f] Failed to schedule_live_migration: Unable to migrate instance (89a5e582-d3f3-4665-afc2-03c2114f0bbb) to current host (compute2).
+2012-08-30 08:11:57 ERROR nova.rpc.amqp [req-10302630-7f13-49fd-aeed-b73e1bbe69ef 03332d7fa8db4006aed4526fb5a6d8e8 502c4cc57e6240438eb9b0bd2041701f] Exception during message handling
+2012-08-30 08:11:57 TRACE nova.rpc.amqp Traceback (most recent call last):
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/rpc/amqp.py", line 253, in _process_data
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     rval = node_func(context=ctxt, **node_args)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/manager.py", line 97, in _schedule
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     context, ex, *args, **kwargs)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/contextlib.py", line 24, in __exit__
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     self.gen.next()
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/manager.py", line 92, in _schedule
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     return driver_method(*args, **kwargs)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/driver.py", line 218, in schedule_live_migration
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     disk_over_commit)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp   File "/usr/lib/python2.7/dist-packages/nova/scheduler/driver.py", line 294, in _live_migration_dest_check
+2012-08-30 08:11:57 TRACE nova.rpc.amqp     instance_id=instance_ref['uuid'], host=dest)
+2012-08-30 08:11:57 TRACE nova.rpc.amqp UnableToMigrateToSelf: Unable to migrate instance (89a5e582-d3f3-4665-afc2-03c2114f0bbb) to current host (compute2).``
 
 In this case, we can see that the migration failed as we were attempting
 to migrate the guest to the host on which it was already running.
@@ -312,14 +312,14 @@ For example, if nova-compute on the destination host is not
 running/unavailable for some reason, you'll see a message similar to the
 following in the `nova-scheduler.log`:
 
-    2012-08-30 08:18:28 TRACE nova.rpc.amqp Timeout: Timeout while waiting on RPC response.
+``2012-08-30 08:18:28 TRACE nova.rpc.amqp Timeout: Timeout while waiting on RPC response.``
 
 Another fairly common error you may see is if you attempt a migration as
 a non-admin user. This error will occur even if your user is a member of
 the admin tenant:
 
-    $ nova live-migration --block_migrate 89a5e582-d3f3-4665-afc2-03c2114f0bbb compute1
-    ERROR: Policy doesn't allow compute_extension:admin_actions:migrateLive to be performed. (HTTP 403)
+``$ nova live-migration --block_migrate 89a5e582-d3f3-4665-afc2-03c2114f0bbb compute1
+ERROR: Policy doesn't allow compute_extension:admin_actions:migrateLive to be performed. (HTTP 403)``
 
 Generally, if you have any issues migrating your guests, the best places
 to check would be the following log files:
