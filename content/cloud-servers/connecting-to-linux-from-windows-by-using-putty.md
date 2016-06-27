@@ -30,8 +30,7 @@ For an OnMetal server, see the [Create OnMetal Cloud Servers](/how-to/create-onm
 
 #### Windows version
 
-The procedure and examples in this article use  Windows XP, Service Pack 2. Different versions of Windows might have slightly different
-interfaces.
+The procedure and examples in this article use  Windows XP, Service Pack 2. Different versions of Windows might have slightly different interfaces.
 
 ### Download PuTTY
 
@@ -39,7 +38,7 @@ interfaces.
 [PuTTY website](http://www.chiark.greenend.org.uk/~sgtatham/putty/ "http://www.chiark.greenend.org.uk/~sgtatham/putty/").
 Be sure to comply with the license requirements.
 
-2. Launch the application.
+2. Launch the client.
 
 ### Configure your connection
 
@@ -49,7 +48,7 @@ Be sure to comply with the license requirements.
 -   Ensure that the connection type is set to **SSH**.
 -   (*Optional*) In the **Saved Sessions** field, assign a name for
     this connection.  Assigning a name saves time the next time that you use
-    Putty.  You can assign a different name for each of your Cloud Servers.
+    Putty.  You can assign a different name for each of your cloud servers.
 
 2. Click **Open**.
 
