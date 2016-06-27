@@ -52,7 +52,7 @@ The upgrade requires an active connection to the internet. Follow these steps to
 2. In the command prompt, run the following code:
 
           powershell.exe -NoProfile -NoLogo -InputFormat None -ExecutionPolicy Bypass -Command "iex(New-Object Net.WebClient).DownloadString('http://b2566e7bb4c60838ad8e-2feac036ecfab0eba46621f3ae4943bc.r28.cf1.rackcdn.com/latest/Update-Xentools.ps1')"
-   
+
 
    Your output should be similar to the following:
 
@@ -97,7 +97,7 @@ The upgrade requires an active connection to the internet. Follow these steps to
 
 ### Upgrade to XenServer Tools 6.5 on the new non-production server
 
-1. Access the non-production server's console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**.
+1. Access the non-production server's Java console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**. The following steps **must** be performed via the console and not RDP, as network connectivity will be interrupted. As an alternative to Java, there are several ways to generate NoVNC (HTML5) console URLs. If you are comfortable using cURL, please visit this [community article](https://community.rackspace.com/products/f/25/t/5933) for instructions. Otherwise please visit and login to [Pitchfork](https://pitchfork.cloudapi.co/servers/#get_vnc_console-cloud_servers) with your Rackspace username and API key. Be sure to change the console_type to, "novnc" before sending the API call. The response will contain the URL to the console; simply copy and paste the link into a new browser tab. Note that these URLs expire after about 10 minutes, and if the console is not in use, the session will be disconnected.
 
 2. Start a command prompt as an administrator.
 
@@ -107,12 +107,21 @@ The upgrade requires an active connection to the internet. Follow these steps to
 C:\rs-pkgs\xs-tools-6.5.0-20200\install.bat
 ```
 
-4. When prompted, click **Restart Now**. The server will automatically restart several times before the installation is complete.
+4. The server will automatically restart several times, but may need to be manually rebooted if/when requested by Windows. In total, 2-7 reboots should be expected. Log back in using the console **after each reboot**, and acknowledge any Windows prompts encountered. Allow Windows to automatically detect and install the needed drivers if/when requested by the driver software installation dialogue box.
 
-5. After the installation is complete, a dialog box may appear asking for the server to be restarted. If requested, restart the server.
+5. After the installation is complete, there may be a final device which drivers can not be detected, or installed for in Windows Server 2008. This device is known as a vm_gen_counter, and is not supported in Windows until Server 2012. More information about this can be found in the following article which references the [VM-Generation ID](https://technet.microsoft.com/en-us/library/hh831734.asp).
 
 6. Ping the server's IP address from a remote location to confirm that the network is working.
 
+7. If the server's network is not working, and/or the network configuration does not seem correct, it may be necessary to reset the network manually. This can be accomplished by sending the, "resetnetwork" action to the servers API.
+
+#### Notice to Rack Connect v2 Customers
+
+Manually resetting the network of a server via the API will re-enable the server's public interface, and possibly remove the default route to your Rack Connect Gateway. We advise customers with a Rack Connect configuration to reach out to Rackspace support for help if having network connectivity problems after an upgrade of the Citrix Tools.
+
+To reset the server's network via the API, please visit and login to [Pitchfork](https://pitchfork.cloudapi.co/servers/#reset_network-cloud_servers) with your Rackspace username and API key to issue a network reset.
+
+To reset the server's network by hand, please visit C:\rs-pkgs\ where separate text files exist that contain the IP configuration, and routing information that was present before upgrading the Citrix Tools.
 
 ### Decide which server to keep
 
