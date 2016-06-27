@@ -97,9 +97,9 @@ The upgrade requires an active connection to the internet. Follow these steps to
 
 ### Upgrade to XenServer Tools 6.5 on the new non-production server
 
-1. Access the non-production server's Java console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**.
+**Note:** The following steps **must** be performed via the console and not RDP, as network connectivity will be interrupted. As an alternative to Java, there are several ways to generate NoVNC (HTML5) console URLs.
 
-  **Note:** The following steps **must** be performed via the console and not RDP, as network connectivity will be interrupted. As an alternative to Java, there are several ways to generate NoVNC (HTML5) console URLs.
+1. Access the non-production server's Java console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**.
 
   If you are comfortable using cURL, please visit this [community article](https://community.rackspace.com/products/f/25/t/5933) for instructions. Otherwise and login to [Pitchfork](https://pitchfork.cloudapi.co/servers/#get_vnc_console-cloud_servers) with your Rackspace username and API key. Be sure to change the console_type to, "novnc" before sending the API call. The response will contain the URL to the console; simply copy and paste the link into a new browser tab. Note that these URLs expire after about 10 minutes, and if the console is not in use, the session will be disconnected.
 
