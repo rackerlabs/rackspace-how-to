@@ -1,28 +1,27 @@
 ---
 permalink: nslookup-checking-dns-records-on-windows/
-audit_date:
-title: Check DNS Records on Windows with nslookup
+audit_date: '2016-06-27'
+title: Check DNS records on Windows with nslookup
 type: article
 created_date: '2012-06-27'
 created_by: Rackspace Support
-last_modified_date: '2016-04-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-27'
+last_modified_by: Kyle Laffoon
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-If you ever need to check the status of your DNS records, Windows has a
-built-in tool for just that task. There are a number of reasons you may
-want to do this, for example to check that any updates are correct or to
-troubleshoot issues accessing a particular service.
+You might need to check the status of your DNS records for many reasons. For
+example, you might need to verify that any updates are correct or to
+troubleshoot issues accessing a particular service. Windows has a
+built-in tool for checking your DNS records, `nslookup`.
 
-To access the tool you need to open up a command prompt, you should be
-able to find this under **Start > All Programs > Accessories > Command Prompt**.
+To access `nslookup` open up a command prompt window. Go to **Start > All Programs > Accessories > Command Prompt**.
 
 ### Check for a record
 
-To check for a specific record you need to specify the record type,
-for example, A, MX, or TXT, and the host name you want to check. The following
+To check for a specific record you need to specify the `nslookip` command,
+the record type&mdashfor example, A, MX, or TXT&mdashand the host name you want to check. The following
 example shows how to check for any A records for **rackspace.co.uk**:
 
     C:\Users\Administrator>nslookup -type=A rackspace.co.uk
@@ -35,7 +34,7 @@ example shows how to check for any A records for **rackspace.co.uk**:
     Address:  212.64.133.165
 
 The first two lines of output specify the server to which the request
-was directed; this will be the default server your system uses for DNS
+was directed which is the default server that your system uses for DNS
 name resolution. The second section, which specifies a non-authoritative
 answer, gives the name of the record and the corresponding IP address.
 The answer is non-authoritative because the answer comes from a server,
@@ -44,11 +43,11 @@ those records.
 
 ### Get an authoritative answer
 
-To get an authoritative answer you need to go to the source. This can be
-done by specifying the authoritative name server at the end of the
+To get an authoritative answer you need to go to the source. You can do this
+by specifying the authoritative name server at the end of the
 request.
 
-You can use the **-type=soa** option to tell `nslookup` to display the
+Use the `-type=soa` option to tell `nslookup` to display the
 authoritative (primary) name server.
 
     C:\Users\Administrator>nslookup -type=soa rackspace.co.uk
@@ -67,7 +66,7 @@ authoritative (primary) name server.
 
     ns.rackspace.com        internet address = 69.20.95.4
 
-The address labeled **primary name server** is the DNS authority for the
+The address labeled `primary name server` is the DNS authority for the
 domain.
 
 If you add the address of the authoritative name server
@@ -85,11 +84,13 @@ against that name server.
 
 DNS uses caching, which reduces the load on authoritative name servers
 but means that sometimes records can be out of date. If the
-authoritative and non-authoritative answers differ, this means you will
-have a cached response from the resolver name server you are using. The
-length of time a record is cached depends on its time-to-live (TTL)
-value. This is a number specified in seconds. To see how long a record
-will be cached for requires the debug switch.
+authoritative and non-authoritative answers differ, you will have a cached
+response from the resolver name server you are using. The length of time that a
+record is cached depends on its time-to-live (TTL) value. This is a number
+specified in seconds.
+
+To see how long a record is cached, include the `debug` option, as shown in
+the following example:
 
     C:\Users\Administrator>nslookup -type=A -debug rackspace.co.uk
 
@@ -163,23 +164,23 @@ will be cached for requires the debug switch.
     Name:    rackspace.co.uk
     Address:  212.64.133.165
 
--   The first "Got answer" section of this example is used to get the
-    hostname of the server you are requesting the A record from, in this
-    case cachens1.lon.rackspace.com.
--   The second "Got answer" section relates to your actual request.
--   The header section contains details about the type of request and
+-   The first `Got answer` section of this example is used to get the
+    hostname of the server from which you are requesting the A record from,
+    in this case **cachens1.lon.rackspace.com**.
+-   The second `Got answer` section relates to your actual request.
+-   The `HEADER` section contains details about the type of request and
     its success.
--   The questions section shows that the request was for A records
+-   The `QUESTIONS` section shows that the request was for A records
     for rackspace.co.uk.
--   The answers section displays one record with an IP address of
+-   The `ANSWERS` section displays one record with an IP address of
     212.64.133.165 and a TTL of 279 seconds (4 minutes 39 seconds).
--   The authority records section specifies the name servers that
+-   The `AUTHORITY RECORDS` section specifies the name servers that
     correspond to the domain
--   The additional records are A records for the name servers listed in
-    the authority records section
+-   The `ADDITIONAL RECORDS` section lists A records for the name servers
+    listed in the authority records section
 
-So from this you can see that the name server being used by the client
-computer will keep reusing the same A record for **rackspace.co.uk** for the
+So from this response, you can see that the name server being used by the client
+computer will reuse the same A record for **rackspace.co.uk** for the
 next 4 minutes and 39 seconds. If you were to run the same command on
 the authoritative name server you would see what the current maximum TTL
 for the record is.
