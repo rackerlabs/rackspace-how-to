@@ -5,7 +5,7 @@ title: Change DNS settings on Linux
 type: article
 created_date: '2011-07-20'
 created_by: Jered Heeschen
-last_modified_date: '2016-04-12'
+last_modified_date: '2016-06-29'
 last_modified_by: Kyle Laffoon
 product: Cloud DNS
 product_url: cloud-dns
