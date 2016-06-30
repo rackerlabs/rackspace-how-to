@@ -48,7 +48,7 @@ for more information.
 
 #### What are the DNS servers for my Cloud Server?
 
-**ns.stabletransit.com** and **ns2.stabletransit.com**
+**ns1.stabletransit.com** and **ns2.stabletransit.com**
 
 #### How many domains can I host?
 

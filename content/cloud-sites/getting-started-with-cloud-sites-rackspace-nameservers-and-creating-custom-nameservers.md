@@ -22,7 +22,7 @@ Rackspace Cloud, follow these steps:
 
 1.  Access your account with your current registrar (for example,
     **godaddy.com** or **register.com**).
-2.  Change the name servers to **ns.stabletransit.com** and
+2.  Change the name servers to **ns1.stabletransit.com** and
     **ns2.stabletransit.com**.
 
 Your current registrar might offer "transfer lock" or a similar service

@@ -24,7 +24,7 @@ To learn more about A, MX, and CNAME records for Cloud Sites, see
 
 Following are the DNS servers for your cloud servers:
 
--   ns.stabletransit.com
+-   ns1.stabletransit.com
 -   ns2.stabletransit.com
 
 ### Create a DNS zone for your domain

@@ -58,7 +58,7 @@ domain.
 
 For Rackspace Cloud services, the name servers you need to use are:
 
-**ns.stabletransit.com** & **ns2.stabletransit.com**
+**ns1.stabletransit.com** & **ns2.stabletransit.com**
 
 #### How do I transfer the domain?
 
