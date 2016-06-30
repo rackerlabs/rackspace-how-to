@@ -5,8 +5,8 @@ title: Install Active Directory on Windows Server 2012
 type: article
 created_date: '2013-04-03'
 created_by: Rackspace Support
-last_modified_date: '2016-06-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-30'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -27,33 +27,58 @@ see [Install Active Directory Domain Services on Windows Server 2008 R2 Enterpri
 
 2. From the **Server Manager** Dashboard, select **Add roles and features**.
 
-   This will launch the Roles and Features Wizard allowing for modifications to be performed on the Windows Server 2012 instance.
+   This will launch the Roles and Features Wizard allowing for modifications
+   to be performed on the Windows Server 2012 instance.
 
 3. Select **Role-based or features-based** installation from the
-Installation Type screen and click **Next**.
+   Installation Type screen and click **Next**.
 
-   **Note**: Roles are the major feature sets of the server, such as IIS, and features provide additional functionality for a given role.
+   **Note**: Roles are the major feature sets of the server, such as IIS, and
+   features provide additional functionality for a given role.
 
-4. The current server is selected by default. Click **Next** to
-proceed to the Server Roles tab.
+4. The current server is selected by default. Click **Next** to proceed to
+   the Server Roles tab.
 
-5. From the Server Roles page place a check mark in
-the box next to **Active Directory Domain Services.** A notice will
-appear explaining additional roles services or features are also
-required to install domain services, click **Add Features**.
+5. From the Server Roles page place a check mark in the check box next
+   to **Active Directory Domain Services.** A notice will appear explaining
+   additional roles services or features are also required to install domain
+   services, click **Add Features**.
 
-   **Note**: There are other options including, Certificate services, federation services, lightweight directory services and rights management. Domain Services is the glue that holds this all together and needs to be installed prior to these other services.
+   **Note**: There are other options including, Certificate services,
+   federation services, lightweight directory services and rights management.
+   Domain Services is the glue that holds this all together and needs to be
+   installed prior to these other services.
 
 6. Review and **select optional features** to install during the AD DS
-installation by placing a check in the box next to any desired features, and then click **Next**.
+   installation by placing a check in the box next to any desired features,
+   and then click **Next**.
 
    <img src="{% asset_path cloud-servers/installing-active-directory-on-windows-server-2012/features_0.png %}" width="700" height="496" />
 
 7. Review the information on the **AD DS tab** and click **Next**.
 
-8. On the **Confirm installation selections** screen, review the installation and then click **Install**.
+8. On the **Confirm installation selections** screen, review the installation
+   and then click **Install**.
 
-   **Note**: The installation progress will be displayed on the screen. Once installed, the AD DS role will be displayed on the 'Server Manager' landing page.
+   **Note**: The installation progress will be displayed on the screen. Once
+   installed, the AD DS role will be displayed on the 'Server Manager' landing
+   page.
+
+### Start remote registry service
+
+Before promoting the server to domain controller, the remote registry service
+must be started.
+
+1. Click **Start > Control Panel**.
+
+2. Under **Services**, right-click **Remote Registry** and open the
+   **Properties** menu.
+
+3. From the *Startup type:** drop-down menu, select **Automatic**.
+
+4. Under **Service Status**, select **Start**.
+
+The  remote registry service will start.
 
 ### Configure Active Directory
 
