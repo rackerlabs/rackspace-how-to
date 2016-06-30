@@ -11,8 +11,8 @@ product: Cloud DNS
 product_url: cloud-dns
 ---
 
-It is easy to create DNS records for your domain by using the 
-[Cloud Control Panel](https://mycloud.rackspace.com). In this article, we 
+It is easy to create DNS records for your domain by using the
+[Cloud Control Panel](https://mycloud.rackspace.com). In this article, we
 look at creating a DNS zone for your domain and adding basic A, MX, and
 CNAME records by using the Cloud Control Panel. We also demonstrate deleting records
 and domains.
@@ -30,14 +30,14 @@ and domains.
 
     **Note**: Time To Live indicates how log a DNS record is cached before it's updated.
 
-3.  Now, your domain is listed in the domain section, along with options to create other DNS 
+3.  Now, your domain is listed in the domain section, along with options to create other DNS
     records.
 
 ### Add an A record for your domain.
 
 1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com),
     and from the **Networking** menu at the top, select **Cloud DNS**.
-2.  Select your domain in the list, and then select **Add Record** under Records. Select 
+2.  Select your domain in the list, and then select **Add Record** under Records. Select
     **A/AAAA Record** for the type, and fill out the following fields accordingly.
 
     <img src="{% asset_path cloud-dns/creating-dns-records-with-cloud-dns/3.png %}" alt="" />
@@ -48,7 +48,7 @@ and domains.
 
 1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com),
     and from the **Networking** menu at the top, select **Cloud DNS**.
-2.  Select your domain in the list, and then select **Add Record** under Records. Select 
+2.  Select your domain in the list, and then select **Add Record** under Records. Select
     **CNAME Record** for the type, and fill out the following fields accordingly.
 
     <img src="{% asset_path cloud-dns/creating-dns-records-with-cloud-dns/4.png %}" alt="" />
@@ -59,7 +59,7 @@ and domains.
 
 1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com),
     and from the **Networking** menu at the top, select **Cloud DNS**.
-2.  Select your domain in the list, and then select **Add Record** under Records. Select 
+2.  Select your domain in the list, and then select **Add Record** under Records. Select
     **MX Record** for the type, and fill out the following fields accordingly.
 
     <img src="{% asset_path cloud-dns/creating-dns-records-with-cloud-dns/5.png %}" alt="" />
@@ -85,5 +85,5 @@ and domains.
 If you're setting the canonical name servers for your domain with your
 domain registrar (the NS records), use the following addresses:
 
-    dns1.stabletransit.com
-    dns2.stabletransit.com
+    ns1.stabletransit.com
+    ns2.stabletransit.com

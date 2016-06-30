@@ -48,7 +48,7 @@ running .NET 4.0.
 **Note**: Changing the default technology from .NET 4.0 to .NET
 4.5 will change the site's IP address. If you are managing your DNS with
 Rackspace Cloud (your site is pointing to our name servers:
-ns.stabletransit.com or ns2.stabletransit.com) your IP address will
+ns1.stabletransit.com or ns2.stabletransit.com) your IP address will
 be automatically updated. If you are managing your own DNS (your site is
 not pointing to our name servers) you will need to update your DNS to
 point the site to the new IP address.

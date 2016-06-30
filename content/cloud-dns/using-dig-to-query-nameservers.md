@@ -20,7 +20,7 @@ domain name to your website and email hosting. Essentially, name servers
 tell the internet where to find your website and where to deliver your
 email. Our name servers are:
 
-    ns.stabletransit.com
+    ns1.stabletransit.com
     ns2.stabletransit.com
 
 If you have a domain that you have already registered and you want to
@@ -75,7 +75,7 @@ The result of your test should be:
 
     ns2.stabletransit.com.
 
-    ns.stabletransit.com.
+    ns1.stabletransit.com.
 
 If the external DNS server you're querying returns those results, then the change has propagated properly. If you see something different, such as the authoritative DNS servers of your previous
 hosting company, then either the domain has not been transferred properly or the change is taking a while to propagate to the rest of the Internet. The reasons for delay vary, but a wait of several hours before a change completely works its way through the rest of the Internet is
