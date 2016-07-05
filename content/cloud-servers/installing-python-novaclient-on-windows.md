@@ -5,8 +5,8 @@ title: Install python-novaclient on Windows
 type: article
 created_date: '2012-07-23'
 created_by: Jered Heeschen
-last_modified_date: '2016-01-04'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2016-07-05'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
