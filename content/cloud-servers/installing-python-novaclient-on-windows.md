@@ -52,7 +52,7 @@ After downloading, run the installer.
 
 #### Install the python-novaclient package
 
-After ActiveState Python is installed you can use the python package installer "pip" to
+After ActiveState Python is installed you can use the python package installer `pip` to
 automatically download and install the nova client.
 
 Open a command window by going to the Start Menu and typing "cmd" into the Search box. In

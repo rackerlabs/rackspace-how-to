@@ -83,7 +83,7 @@ resides in the root of the local installation.
 
    **Note**: The currently loaded configuration file can be found by leveraging the `phpinfo();` script in the preceding section.
 
-2. Open the file with text editor and perform any necessarymodifications.
+2. Open the file with text editor and perform any necessary modifications.
 
    **Note**: Explaining the php directives that can be modified is beyond the scope of this article. Those seeking additional assistance should consult the official [PHP Manual](http://php.net/manual/en).
 
