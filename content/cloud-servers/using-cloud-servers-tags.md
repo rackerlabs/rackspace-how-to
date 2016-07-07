@@ -22,9 +22,6 @@ mechanisms.
 
 1.  In the Cloud Servers list, click the gear icon next to the server
     name and select **Add Tag**.
-
-    <img src="{% asset_path cloud-servers/using-cloud-servers-tags/Screen%20Shot%202015-01-12%20at%207.19.50%20AM.png %}" alt="" />
-
 2.  In the **Add or remove tags** popup box, type a tag label and then
     press **Enter**. You can enter as many tags as you want, pressing
     **Enter** after each one.
