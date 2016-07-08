@@ -23,7 +23,7 @@ A new agent installation disconnects any previous registrations from that server
 
 ### Download the installer
 
-Determine whether your Windows server architecture is 64-bit or 32-bit, and download the latest MSI installation file for that architecture from<http://agentrepo.drivesrvr.com/>.
+Determine whether your Windows server architecture is 64-bit or 32-bit, and download the latest MSI installation file for that architecture from <http://agentrepo.drivesrvr.com/>.
 
 -   [32-bit Windows
     .msi](http://97a6455ef60243cc8c74-57c93634a2c6eae60c16d098c741cf9b.r43.cf1.rackcdn.com/win32/driveclient-latest.msi)
@@ -210,7 +210,7 @@ does not exist there, you use the command line to uninstall.
 **Note**: If the agent installed on your server is not the latest agent, you have to download
 the old MSI installer file in order to use it to uninstall the old agent. Your current agent
 version is displayed as **Agent Version:** on the **Backups System Details** page. You can find
-and download the MSI for this version at http://agentrepo.drivesrvr.com/win64/old_msi/.
+and download the MSI for this version at <http://agentrepo.drivesrvr.com/win64/old_msi/>.
 
 The following changes should occur:
 
