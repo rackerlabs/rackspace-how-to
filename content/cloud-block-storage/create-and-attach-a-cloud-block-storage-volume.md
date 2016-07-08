@@ -31,8 +31,8 @@ Panel](https://mycloud.rackspace.com/).
 Confirm the name and region of the server you will attach the volume to.
 Volumes can be attached to only servers in the same region.
 
-1.  Click **Servers** in the main navigation.
-2.  Click **Block Storage** in the Servers sub-navigation.
+1.  Click **Storage** in the main navigation.
+2.  Click **Block Storage Volumes** in the Storage sub-navigation.
 3.  Click the **Create Volume** button.
 4.  Give your volume a name.
 5.  Select the region. Volumes can be attached only to servers in
