@@ -5,8 +5,8 @@ title: Install the Cloud Backup agent on Windows
 type: article
 created_date: '2014-05-01'
 created_by: Megan Meza
-last_modified_date: '2016-04-11'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-07-08'
+last_modified_by: Catherine Richardson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -104,7 +104,7 @@ Verify that installation performed the following actions:
 
 2.  Placed files in the `Program Files\driveclient` directory:
 
-        c:\>dir "%programfiles%\driveclient" /a-d
+        C:\>dir "%programfiles%\driveclient" /a-d
         Volume in drive C is OS
         Volume Serial Number is EE4C-78FC
         Directory of C:\Program Files\driveclient
@@ -136,7 +136,7 @@ Verify that installation performed the following actions:
 
 5.  Created a DriveClientSvc service:
 
-        c:\>sc query DriveClient
+        C:\>sc query DriveClient
         SERVICE_NAME: DriveClientSvc
         TYPE : 10 WIN32_OWN_PROCESS
         STATE : 1 STOPPED
@@ -152,7 +152,7 @@ Verify that installation performed the following actions:
 
 Run `driveclient-setup-latest.exe` to show any updated files in `program files\driveclient`. This is the same as running the setup with no parameters.
 
-    c:\>dir "%programfiles%\driveclient\driveclient.exe"
+    C:\>dir "%programfiles%\driveclient\driveclient.exe"
     Volume in drive C is OS
     Volume Serial Number is EE4C-78FC
     Directory of C:\Program Files\driveclient
@@ -201,46 +201,54 @@ To troubleshoot these error status, see [Cloud Backup Troubleshoot](/how-to/clou
 
 ### Uninstall Cloud Backup agent on Windows
 
-To uninstall the Cloud Backup agent, the preferred method is to
-uninstall using the Windows Control Panel. However, you can also use
-msiexec from the command line.
+To uninstall the Cloud Backup agent, the preferred method is to use Add/Remove Programs
+in the Windows Control Panel. However, in cases where the Rackspace Cloud Backup entry
+does not exist there, you use the command line to uninstall.
 
-    msiexec /x driveclient-1.18.007148-en-us.msi /qn /l*v %tmp%\uninstall-1.18.007148.log
+    msiexec /x driveclient-latest.msi /qb /l*v %tmp%\uninstall.log
 
-Run `%programfiles%\driveclient\uninst.exe`.
+**Note**: If the agent installed on your server is not the latest agent, you have to download
+the old MSI installer file in order to use it to uninstall the old agent. Your current agent
+version is displayed as **Agent Version:** on the **Backups System Details** page. You can find
+and download the MSI for this version at http://agentrepo.drivesrvr.com/win64/old_msi/.
 
 The following changes should occur:
 
--   The path %programfiles%\\driveclient contains a single file:
-    `install.log`
+-   The %programdata%\driveclient path contains files and folders that you can use to reinstall
+    the agent without re-registering, if desired. If you are sure that you will not reinstall
+    the agent, these files and folders may be deleted.
 
-        c:\>dir "%programfiles%\driveclient" /a-d
-        Volume in drive C is OS
-        Volume Serial Number is EE4C-78FC
-        Directory of C:\Program Files\driveclient
-        10/05/2011 01:29 PM 607,013 install.log
-        1 File(s) 607,013 bytes
-        2 Dir(s) 449,805,914,112 bytes free
+        C:\>dir %programdata%\driveclient
+        Volume in drive C is System
+        Volume Serial Number is 9A20-F50E
 
--   The %programdata%\\driveclient path does not exist.
+        Directory of C:\ProgramData\driveclient
 
-        c:\>dir "%programdata%\driveclient"
-        Volume in drive C is OS
-        Volume Serial Number is EE4C-78FC
-        Directory of C:\ProgramData
-        File Not Found
+        06/17/2016  04:00 PM    <DIR>          .
+        06/17/2016  04:00 PM    <DIR>          ..
+        05/27/2016  02:16 PM                 0 backup-running.lock
+        06/17/2016  03:54 PM             3,720 bootstrap.json
+        04/01/2016  07:25 PM             3,801 bootstrap.json.20160426102748
+        04/01/2016  07:25 PM    <DIR>          log
+        06/17/2016  03:58 PM               827 log4cxx.xml
+        05/27/2016  02:16 PM    <DIR>          MossoCloudFS_ede95edd-78f8-4097-82de-5dfa7941b7c7
+        06/17/2016  03:54 PM               451 public-key.pem
+        05/27/2016  02:19 PM               305 rse-client-state.json
+        05/27/2016  02:16 PM    <DIR>          vss
+                      10 File(s)         23,984 bytes
+                       5 Dir(s)   6,035,111,936 bytes free
+
 
 -   No driveclient.exe entry exists in **Control Panel > Programs
     and Features**.
 
 -   No DriveClientSvc service is installed.
 
-    -   There should be no scheduled tasks to "check for driveclient
-        update."
-
-        c:\>sc query driveclientsvc
+        C:\>sc query driveclient
         [SC] EnumQueryServicesStatus:OpenService FAILED 1060:
-        The specified service does not exist as an installed service.
+        
+        The specified service does not exist as an installed service.              
+
 
 ### Uninstall the agent from older versions of Windows
 
@@ -259,7 +267,7 @@ The following changes should occur:
 -   The path `%programfiles%\driveclient` contains a single file:
     install.log
 
-    c:\>dir %programfiles%\driveclient /a-d
+    C:\>dir %programfiles%\driveclient /a-d
      Volume in drive C is OS
      Volume Serial Number is EE4C-78FC
      Directory of C:\Program Files\driveclient
@@ -269,7 +277,7 @@ The following changes should occur:
 
 -   The %programdata%\\driveclient path does not exist.
 
-    c:\>dir "%programdata%\driveclient"
+    C:\>dir "%programdata%\driveclient"
      Volume in drive C is OS
      Volume Serial Number is EE4C-78FC
 
@@ -285,7 +293,7 @@ The following changes should occur:
 -   There should be no scheduled tasks to "check for
     driveclient update".
 
-        c:\>sc query driveclientsvc
+        C:\>sc query driveclientsvc
         [SC] EnumQueryServicesStatus:OpenService FAILED 1060:
 
         The specified service does not exist as an installed service.
