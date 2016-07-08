@@ -207,8 +207,9 @@ does not exist there, you use the command line to uninstall.
 
     msiexec /x driveclient-latest.msi /qb /l*v %tmp%\uninstall.log
 
-**Note**: If the agent installed on your server is not the latest agent, you have to download
-the old MSI installer file in order to use it to uninstall the old agent. Your current agent
+**Note**: If the agent installed on your server is not the latest agent, you can download the
+corresponding old MSI file to use it to uninstall the outdated agent. The version of the MSI
+must match the version of your currently installed agent or the uninstall fails. Your current agent
 version is displayed as **Agent Version:** on the **Backups System Details** page. You can find
 and download the MSI for this version at <http://agentrepo.drivesrvr.com/win64/old_msi/>.
 
