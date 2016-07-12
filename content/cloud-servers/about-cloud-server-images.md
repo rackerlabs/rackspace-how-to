@@ -5,11 +5,14 @@ title: About Cloud Server images
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-06-10'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-07-12'
+last_modified_by: How Now Test Person
 product: Cloud Servers
 product_url: cloud-servers
 ---
+
+This is a test of the GitHub contribution system...
+
 
 Creating an image enables you to have saved images for later use as a
 template or master image. You can then use the saved images to easily
