@@ -176,31 +176,31 @@ In addition to moving the cache location for the agent, you can use the **AgentC
 
 When you click the blue **Save** icon at the top of the **Agent Configuration** window, you can save multiple changes in the settings at one time.
 
-##### Disable VSS backups
+##### **Disable VSS backups**
 
 By default, VSS is used to make backups more reliable, but there might be times when you want to disable it. For example, VSS might take up disk space on a volume that is already running low.
 
 To turn off VSS shadowing for backups, select **VSS Disable** and then click **Save**.
 
-##### Turn off auto-update
+##### **Turn off auto-update**
 
 Auto-update is a service that continually keeps the Cloud Backup agent updated. In rare cases, you might want to turn this service off.
 
 To turn off auto-update, select  **Auto Update Disable** and then click **Save**.
 
-##### Debug auto-update
+##### **Debug auto-update**
 
 There might be times when you need to debug auto-update. The **Auto Update Debug** option debugs not only the auto-updater service (in the Event Logger), but also the installer and MSI.
 
 To turn on debugging for auto-update, select **Auto Update Debug** and then click **Save**.
 
-##### Repair the Add/Remove Programs listing
+##### **Repair the Add/Remove Programs listing**
 
 Older versions of the agent were sometimes installed without adding an entry in the **Add/Remove Programs** console.
 
 To repair this issue, select  **Repair Add/Remove Programs Listing** and then click **Save**.
 
-##### Control log file configuration
+##### **Control log file configuration**
 
 You can change the most commonly changed log file settings by using the **AgentConfig.exe** tool.
 
