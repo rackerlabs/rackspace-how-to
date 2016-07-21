@@ -17,7 +17,7 @@ For more information see: https://one.rackspace.com/display/devdoc/How-To+suppor
 - July 11 -15: Nate
 - July 18 - 22: Kyle
 - July 25 - 29: Stephanie
-- Aug 1 - 5: Renée
+- Aug 1 - 5: Nate
 - Aug 8 - 12:
 - Aug 15 - 19:
 - Aug 22 - 26: Stephanie
