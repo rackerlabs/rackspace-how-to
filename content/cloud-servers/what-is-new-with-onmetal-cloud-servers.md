@@ -5,8 +5,8 @@ title: What is new with OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Kyle Laffoon
-last_modified_date: '2016-07-15'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-07-22'
+last_modified_by: Aurimas Mickevicius
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -29,11 +29,8 @@ thinking about moving from colo to cloud, or vice versa:
     API for OnMetal is the OpenStack Nova API. It's familiar to users of
     any OpenStack public cloud. Users don't have to worry about
     vendor lock-in.
-
 -   OnMetal servers are customized for specific workloads.
-
 -   There is no hypervisor, and no virtualization tax.
-
 -   There is no sharing of metal with any other user.
 
 ### Disk structure
@@ -45,7 +42,7 @@ metal machines means less over-engineering, more simplicity and ultimately lower
 Managed Cloud portfolio, you won't spend as much managing your servers.
 
 The chassis is all solid-state. We removed cooling fans from the boxes
-and do not using any spinning media. This reduces heat and vibration,
+and do not use any spinning media. This reduces heat and vibration,
 and helps increase MTBF. In order to deliver the economy of colocation
 that customers require, we optimized the configuration based on specific
 workload requirements like "database transactions per second per dollar"
