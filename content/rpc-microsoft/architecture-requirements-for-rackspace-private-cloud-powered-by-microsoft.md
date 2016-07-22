@@ -44,23 +44,34 @@ Base Cloud is a basic System Center 2012 R2 plus Windows Azure Pack that
 allows for the minimum compliant Cloud Platform. It is composed of the
 following applications and roles:
 
-| Application or role    | VM name    | Quantity | Software suite     | vCPU | vRAM | vDisk  |
-|------------------------|------------|----------|--------------------|------|------|--------|
-| Management Server      | WAPWEBMN01 | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
-| Controller             | WAPWEBCN   | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
-| Database               | WAPWEBDB   | 1        | Windows Azure Pack | 2    | 4 GB | 300 GB |
-| Publisher              | WAPWEBPUB  | 2        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
-| Fileserver             | WAPWEBFS   | 1        | Windows Azure Pack | 2    | 4 GB | 100 GB |
-| Frontend               | WAPWEBFE   | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
-| Shared Web Worker      | WAPWEBWWS  | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
-| Reserved Worker Server | WAPWEBWR   | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
-| SQL Server DBaaS       | SQLCLOUD   | 1        | Windows Azure Pack | 2    | 8 GB | 60 GB  |
-| MySQL DBaaS            | MYSQL      | 1        | Windows Azure Pack | 2    | 8 GB | 60 GB  |
-| App Controller         | AC         | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Application or role                            | VM Name      | Quantity | Software Suite     | vCPU | vRAM | vDisk  |
+|------------------------------------------------|--------------|----------|--------------------|------|------|--------|
+| Microsoft SQL Server Standard Edition          | DB           | 2        | System Center      | 2    | 8 GB | 60 GB  |
+| Operations Manager                             | SCOM         | 2        | System Center      | 2    | 4 GB | 60 GB  |
+| Service Provider Foundation                    | SPF          | 2        | System Center      | 2    | 4 GB | 60 GB  |
+| Virtual Machine Manager                        | VMM          | 2        | System Center      | 2    | 8 GB | 60 GB  |
+| Operations Manager Reporting Server            | OMRP         | 1        | System Center      | 2    | 4 GB | 60 GB  |
+| Orchestrator                                   | OR           | 1        | System Center      | 2    | 4 GB | 60 GB  |
+| Service Reporting                              | SR           | 1        | System Center      | 2    | 4 GB | 60 GB  |
+| Service Manager                                | SM           | 1        | System Center      | 2    | 4 GB | 60 GB  |
+| Library Server                                 | LIB          | 1        | System Center      | 2    | 8 GB | 1 TB   |
+| Service Management Automation                  | SMA          | 1        | Windows Azure Pack | 2    | 8 GB | 60 GB  |
+| Service Management Automation Reporting Worker | SMARW        | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Management Portal for Administrators           | WAPADMIN     | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Management Portal for Tenants                  | WAPTENANT    | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Admin Authentication Site                      | WAPADMINAUTH | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Admin API                                      | WAPADMINAPI  | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Tenant API                                     | WAPTENANTAPI | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Tenant Public API                              | WAPTENPUBAPI | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Tenant Authentication Site                     | WAPTENAUTH   | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
+| Active Directory Domain Controller             | DC           | 1        | Windows Server     | 2    | 4 GB | 60 GB  |
+| Remote Desktop Services                        | RD           | 1        | Windows Server     | 2    | 4 GB | 60 GB  |
+| Windows Server Update Services                 | WSUS         | 1        | Windows Server     | 2    | 4 GB | 100 GB |
+| Active Directory Certificate Authority         | PKI          | 1        | Windows Server     | 2    | 4 GB | 60 GB  |
 
 
-The minimum system requirements to run the Base Cloud components are 60
-vCPU, 136 GBs of RAM, and 3 TB of storage.  This workload is split
+The minimum system requirements to run the Base Cloud components are 52
+vCPU, 128 GBs of RAM, and 2.3 TB of storage.  This workload is split
 across two physical host servers that are configured in a failover
 cluster.
 
