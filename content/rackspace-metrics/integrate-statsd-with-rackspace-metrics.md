@@ -11,44 +11,54 @@ product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
 
-To deploy the Rackspace Metrics service, you first need to complete the
-following steps:
+This article describes how you can configure your StastD to send metrics to Rackspace Metrics. If you don't have StatsD installed, please check out [StatsD Website](https://github.com/etsy/statsd/blob/master/README.md) first.
 
--   Install the Rackspace Metrics statsd backend engine
--   Integrate with Rackspace Metrics
+To configure StatsD for the Rackspace Metrics service, you just need to complete the
+following easy steps:
 
-### Install the Rackspace Metrics statsd backend engine
+-   Install the blueflood module for StatsD
+-   Configure with your Rackspace account information
+-   Restart StatsD
 
-1. Clone the statsd repository by typing the following at a command-line
-interface:
+### Configure StatsD for Rackspace Metrics
 
-        git clone https://github.com/etsy/statsd.git
-
-2. Then, in a separate directory, clone the statsd backend engine by typing the following:
-
-        git clone git@github.com:tilogaat/blueflood-statsd-backend.git
-
-3. Install nodejs by typing the following:
-
-        sudo apt-get install nodejs
-
-      If you are running Ubuntu, another program called node installed. Be sure to delete this program and then install nodejs.
-
-4. Install the node package manager program npm by typing the following:
-
-        sudo apt-get install npm
-
-5. Navigate to the statsd directory by typing the following:
+1. Navigate to the statsd directory by typing the following:
 
         cd /path/to/statsd
 
-6. Install the statsd backend engine by typing the following:
+2. Install the statsd backend engine by typing the following:
 
-        npm install /path/to/blueflood-statsd-backend
+        npm install statsd-blueflood-backend
 
       If the installation is successful, you should see the module under node_modules.
 
-7. As a next step, create a statsd config file called **local.config** and add the following configuration information:
+3. As a next step, create a statsd config file called **local.config** and add the following configuration information. Be sure to set the `deleteIdleStats` flag to true.
+
+        {
+         backends: ["statsd-blueflood-backend"],
+         port: 8125,
+         flushInterval: 10000,
+         dumpMessages: true,
+         deleteIdleStats: true,
+         "blueflood": {
+             "tenantId": "<tentant_id>",
+             "endpoint": "https://global.metrics-ingest.api.rackspacecloud.com/v2.0",
+             "authModule": "./auth",
+             "authClass": "RaxAuth",
+             "authParams": {
+                     "raxusername": "<username>",
+                     "raxapikey": "<api key>"
+             }
+           }
+         }
+
+4. Run statsd with the configuration you have provided by typing the following:
+
+    nodejs stats.js local.config
+
+### Integrate with Your Own Blueflood Instance
+
+To configure your statsd to integrate with your own [blueflood instance](https://blueflood.io), you need to modify the end point URL.  This configuration assumes that blueflood ingestion is running on  IP address http://127.0.0.1 and port 19000.
 
         {
         backends: ["statsd-blueflood-backend"],
@@ -57,44 +67,18 @@ interface:
         dumpMessages: true,
         deleteIdleStats: true,
         "blueflood": {
-            "tenantId": "333333",
+            "tenantId": "<tenant_id>",
             "endpoint": "http://127.0.0.1:19000",
             "authModule": "./auth",
             "authClass": "RaxAuth",
             "authParams": {
-                    "raxusername": "my_cloud_user_name",
-                    "raxapikey": "my_rax_api_key"
+                    "raxusername": "<username>",
+                    "raxapikey": "<api_key>"
             }
           }
         }
 
-    This configuration assumes that blueflood ingestion is running on  IP address http://127.0.0.1
-      and port 19000 (You can view an example configuration here:
-      <https://github.com/etsy/statsd/blob/master/exampleConfig.js>).
-      Be sure to set the `deleteIdleStats` flag to true.
-
-### Integrate with Rackspace Metrics
-
-To ingrate your statsd configuration with Rackspace Metric, you need to add your Rackspace Cloud account username and Api key to the configuration file. If the API key is
-present, the metrics are sent to the Rackspace Metrics endpoint. If
-not, the metrics are sent to the endpoint that is specified in the configuration:
-
-      "blueflood": {
-        "tenantId": "333333",
-        "endpoint": "http://iad.metrics-ingest.api.rackspacecloud.com:80",
-        "authModule": "./auth",
-        "authClass": "RaxAuth",
-        "authParams": {
-          "raxusername": "my_cloud_user_name",
-          "raxapikey": "my_rax_api_key"
-        }
-      }
-
-Now you can run statsd with the configuration you have provided by typing the following:
-
-    nodejs stats.js local.config
-
-#### Troubleshooting tip
+### Troubleshooting tip
 
 If you encounter an error that the server cannot find the
 module "statsd-blueflood-backend", then type the following to check if that module has been installed:
