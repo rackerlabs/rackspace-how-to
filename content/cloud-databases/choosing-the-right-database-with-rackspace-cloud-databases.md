@@ -5,13 +5,13 @@ title: Choosing the right database with Rackspace Cloud Databases
 type: article
 created_date: '2014-07-16'
 created_by: Ross Diaz
-last_modified_date: '2016-01-18'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-08-01'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
-Cloud Databases supports MySQL 5.6 and 5.7, Percona 5.6 and 5.7, and MariaDB 10 and 10.1.
+Cloud Databases supports MySQL 5.1 and 5.6, Percona 5.6 and 5.7, and MariaDB 10 and 10.1.
 Innovation is happening in each of these communities, and this article
 highlights some of the key aspects to consider when choosing a MySQL
 based datastore that best fits your application.
@@ -21,18 +21,17 @@ based datastore that best fits your application.
 MySQL, an open-source database developed by Oracle, is the recommended
 choice of the MySQL database administrator community, and is a good fit
 for customers concerned about maintaining compatibility with upstream,
-and who prefer a quick release schedule for upstream updates. MySQL 5.7
-is the latest version that is in general availability. MySQL 5.7 delivers greater performance, scalability and manageability, plus enhanced NoSQL capabilities with JSON support. For more information, see
+and who prefer a quick release schedule for upstream updates. For more information, see
 the [MySQL documentation](http://dev.mysql.com).
 
 ### Benefit
 
-Upstream controlled by Oracle
+Upstream is controlled by Oracle.
 
 ### Limitation
 
 Bug fixes are delayed behind forks that might have already been resolved
-by community patches
+by community patches.
 
 ### Percona server
 
@@ -66,7 +65,7 @@ documentation](http://www.percona.com/software/percona-server).
 ### Limitation
 
 After using features specific to Percona, you might not be able to
-directly roll back the database
+directly roll back the database.
 
 ### MariaDB
 
