@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-billing-faq/
-audit_date:
+audit_date: '2016-08-02'
 title: Rackspace billing FAQ
 type: article
 created_date: '2014-01-17'
 created_by: Rackspace Support
-last_modified_date: '2016-06-22'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-08-02'
+last_modified_by: Kyle Laffoon
 product: undefined
 product_url: undefined
 ---
