@@ -21,12 +21,9 @@ MariaDB database. This article provides the steps for such a migration.
 
 **Notes:**
 
--   MySQL 5.1 can still be provisioned, and no databases will be forced
-    to migrate.
-
--   Currently, customers cannot perform MariaDB backups that call _mysqldump_
+-   Currently, customers in ORD cannot perform MariaDB backups that call _mysqldump_
     because the version on the servers is incompatible with MariaDB 10.1.
-    However, Support can perform these backups if necessary.
+    Support can perform these backups, if necessary.
 
 ### Availability of MariaDB
 
