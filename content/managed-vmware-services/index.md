@@ -22,22 +22,22 @@ product_url: managed-vmware-services
 
 ###  Dedicated vCloud
 
-- [Dedicated vCloud Handbook](https://developer.rackspace.com/docs/private-cloud/dedicated-vcloud/vcloud-handbook-v1.5/)
-- [Dedicated vCloud Product Page](http://www.rackspace.com/managed-virtualization/vmware-vcloud)
+- [Dedicated vCloud Product Page](https://www.rackspace.com/managed-hosting/vmware/vmware-vcloud)
+- [Dedicated vCloud Handbook](https://developer.rackspace.com/docs/managed-vmware-services/vcloud/v1.5/)
 - [FAQ](/how-to/dedicated-vmware-vcloud-faq)
 - [Spheres of Support](/how-to/dedicated-vmware-vcloud-support-coverage)
-- [Resources](http://www.rackspace.com/managed-virtualization/vmware-vcloud/resources/)
+- [Resources](https://www.rackspace.com/managed-hosting/vmware/vmware-vcloud/resources)
 
 ###  Server Virtualization powered by VMware
 
-- [Server Virtualization Product Page](http://www.rackspace.com/managed-virtualization/server-virtualization/)
-- [Resources](http://www.rackspace.com/managed-virtualization/server-virtualization/resources/)
+- [Server Virtualization Product Page](https://www.rackspace.com/managed-hosting/vmware/server-virtualization)
+- [Resources](https://www.rackspace.com/managed-hosting/vmware/server-virtualization/resources)
 
 ###  Dedicated VMware vCenter Server
 
-- [Dedicated vCenter Server Product Page](http://www.rackspace.com/managed-virtualization/dedicated-vcenter/)
-- [Dedicated VMware vCenter Server Customer Handbook](https://developer.rackspace.com/docs/private-cloud/dedicated-vcloud/vcenter-handbook/)
-- [Resources](https://www.rackspace.com/dedicated-servers/vmware/dedicated-vcenter/resources)
+- [Dedicated vCenter Server Product Page](https://www.rackspace.com/managed-hosting/vmware/dedicated-vcenter)
+- [Dedicated VMware vCenter Server Customer Handbook](https://developer.rackspace.com/docs/managed-vmware-services/vcenter/)
+- [Resources](https://www.rackspace.com/managed-hosting/vmware/dedicated-vcenter/resources)
 
 ###  More information
 
