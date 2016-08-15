@@ -11,11 +11,10 @@ product: Cloud Networks
 product_url: cloud-networks
 ---
 
-This article describes how to run an Apache2 web server on a pair of
-cloud servers with a shared public IPv4 IP address. The shared IP
-address ensures that users of services don't need to change addresses
-when the second server seamlessly takes over from the first after the
-first server goes down.
+This article describes how to run an Apache2 web server on a pair of cloud servers with a 
+shared public IPv4 IP address. The shared IP address ensures that users of services don't 
+need to change addresses when the second server seamlessly takes over from the first after
+the first server goes down.
 
 The use case in this article shows an Apache web server deployed on two
 Ubuntu cloud servers with a shared IP address on PublicNet that is used 
