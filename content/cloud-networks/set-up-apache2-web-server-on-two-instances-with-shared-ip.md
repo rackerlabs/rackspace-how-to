@@ -1,12 +1,14 @@
 ---
-title: Set up an Apache2 web server on two instances with a shared IP address
+permalink: set-up-apache2-web-server-on-two-instances-with-shared-ip/
+audit_date:
+title: Basic Set up Apache2 web server on two instances with shared ip
 type: article
-created_date: '2015-08-21'
-created_by: Cat Lookabaugh
-last_modified_date: '2016-02-11'
+created_date: '2016-08-15'
+created_by: Rackspace Support
+last_modified_date: '2016-08-15'
 last_modified_by: Cat Lookabaugh
-product: Cloud Servers
-product_url: cloud-servers
+product: Cloud Networks
+product_url: cloud-networks
 ---
 
 This article describes how to run an Apache2 web server on a pair of
