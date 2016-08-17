@@ -5,7 +5,7 @@ title: Change DNS settings on Linux
 type: article
 created_date: '2011-07-20'
 created_by: Jered Heeschen
-last_modified_date: '2016-06-29'
+last_modified_date: '2016-08-17'
 last_modified_by: Kyle Laffoon
 product: Cloud DNS
 product_url: cloud-dns
@@ -38,12 +38,12 @@ after it knows how to get to the DNS servers.
 
    | Data center | Name server IP address |
    |---|---|
-   | Hong Kong (HKG) | nameserver 120.136.32.63 <br /> nameserver 120.136.32.62 |
+   | Hong Kong (HKG) | nameserver 120.136.32.62 <br /> nameserver 120.136.32.63 |
    | Northern Virginia (IAD) | nameserver 69.20.0.164 <br /> nameserver 69.20.0.196 |
    | London (LON) | nameserver 83.138.151.80 <br /> nameserver 83.138.151.81 |
    | Chicago (ORD) | nameserver 173.203.4.8 <br /> nameserver 173.203.4.9 |
-   | Dallas/Fort Worth (DFW) | nameserver 73.3.128.240 <br /> nameserver 72.3.128.241 |
-   | Sydney (SYD) | nameserver 119.9.60.63 <br /> nameserver 119.9.60.62 |
+   | Dallas/Fort Worth (DFW) | nameserver 72.3.128.240 <br /> nameserver 72.3.128.241. |
+   | Sydney (SYD) | nameserver 119.9.60.62 <br /> nameserver 119.9.60.63. |
 
 3. Save the file.
 
