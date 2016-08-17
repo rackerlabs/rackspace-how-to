@@ -27,7 +27,7 @@ After the stack has been successfully created you will need to configure your da
 
 1. Log on to the server via SSH either as `root` using the SSH key provided, or as `parse` using the password provided.
 
-  Additional information on the server login process can be found [here](how-to/connecting-to-linux-from-mac-os-x-by-using-terminal) for Mac/Linux users or [here](how-to/connecting-to-linux-from-windows-by-using-putty) for Windows users.
+   Additional information on the server login process can be found [here](how-to/connecting-to-linux-from-mac-os-x-by-using-terminal) for Mac/Linux users or [here](how-to/connecting-to-linux-from-windows-by-using-putty) for Windows users.
 
 2. After you have logged in to the primary server, modify `/home/parse/ecosystem.json` with your
    - MongoDB Connection String
