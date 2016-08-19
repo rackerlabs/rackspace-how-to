@@ -166,7 +166,7 @@ Account administrators can update MyRackspace account-wide settings to require a
     authentication are logged out after seeing an error message like the
     following one:
 
-    <img src="{% asset_path cloud-sites/multi-factor-authentication-myrackspace-control-panel/set-accout-user-policy.png %}" %}" alt="Set accout user policy." />
+    <img src="{% asset_path cloud-sites/multi-factor-authentication-myrackspace-control-panel/set-account-user-policy.png %}" %}" alt="Set account user policy." />
 
     When these users log back in, they are guided through the
     multi-factor authentication set up.
