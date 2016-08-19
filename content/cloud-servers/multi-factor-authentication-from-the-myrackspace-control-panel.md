@@ -7,8 +7,8 @@ created_date: '2014-07-17'
 created_by: Margaret Eker
 last_modified_date: '2016-08-18'
 last_modified_by: Kyle Laffoon
-product: Cloud Sites
-product_url: cloud-sites
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Customers can increase security on Rackspace Cloud accounts by using the
