@@ -34,7 +34,7 @@ a device with your account, authentication becomes a two-step process:
     a passcode and sends it to the associated device.
 
 2.  After the passcode is sent, the system prompts you to type the
-    passcode and submit it to the Identity service to complete the
+    passcode and submit it to the identity service to complete the
     authentication process.
 
     **Note:** Standard text message rates and data fees apply based on
@@ -163,8 +163,7 @@ can select the default multi-factor authentication method from the
 5.  In the pop-up dialog box, select the default method that you want and then
 click **Save**.
 
-### Configure account-wide multi-factor authentication settings from an
-Administrator account
+### Configure account-wide multi-factor authentication settings from an administrator account
 
 Account administrators can update MyRackspace account-wide settings to require
 all users to authenticate by using multi-factor authentication. When this
