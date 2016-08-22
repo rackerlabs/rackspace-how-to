@@ -1,7 +1,7 @@
 ---
-permalink: multi-factor-authentication-from-the-cloud-control-panel/
+permalink: multi-factor-authentication-from-the-myracksapce-portal/
 audit_date: '2016-08-22'
-title: Multi-factor authentication from the Cloud Control Panel
+title: Multi-factor authentication from the MyRackspace portal
 type: article
 created_date: '2014-07-17'
 created_by: Margaret Eker
