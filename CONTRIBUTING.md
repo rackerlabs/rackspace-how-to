@@ -59,7 +59,7 @@ Follow these steps to create a new article within a product folder of the **rack
            ---
            permalink: title-of-article/
            
-           audit_date: 2016-08-22
+           audit_date: '2016-08-22'
            
            title: Checking cloud status
 
