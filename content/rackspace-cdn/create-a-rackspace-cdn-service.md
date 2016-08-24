@@ -49,9 +49,9 @@ URL you need to use to create your CNAME record.
 
    A box opens showing the progress of the creating of the service. When the setup of the service is complete, a box opens that provides the URL to use to create your CNAME record and a link to update DNS to complete the setup. (For instructions to update DNS, see [Change DNS to enable Rackspace CDN](/how-to/change-dns-to-enable-rackspace-cdn).)
 
-   **Note:** Before you update DNS, you must make sure that your web servers are configured to accept the domain name that you chose because the domain that is generated for https will produce an error.
+   **Note:** When Creating an HTTPS service, before you update DNS, you must make sure that your web servers are configured to accept the domain name that you chose, because CDN requests to the origin will send this domain name as the host header.
 
-   For example, if the CDN domain is `cdn.customer.com.cdn306.raxcdn.com`, to update the website configuration (origin) for Apache, you need to include the CDN domain `cdn.customer.com.cdn306.raxcdn.com `as `ServerAlias `for Apache or as `Server_Name` for Nginx.
+   For example, if the HTTPS CDN domain is `cdn.customer.com.cdn306.raxcdn.com`, to update the website configuration (origin) for Apache, you need to include the CDN domain `cdn.customer.com.cdn306.raxcdn.com `as `ServerAlias `for Apache or as `Server_Name` for Nginx.
 
    After you have configured the website and before you update your DNS records, test that the web server is responding by using a cURL statement similar to the following one:
 
