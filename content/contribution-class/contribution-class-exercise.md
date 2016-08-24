@@ -26,7 +26,7 @@ Yes
 
 
 #### How often do you think you will use the training?
-Somewhat often
+Never
 **Answer options**
 - Often
 - Somewhat often
