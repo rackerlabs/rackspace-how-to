@@ -4,7 +4,7 @@ type: practice
 created_date: '2016-05-25'
 created_by: Nate Archer
 last_modified_date: '2016-08-24'
-last_modified_by: Cory Aldrich
+last_modified_by: Catherine Richardson
 product: undefined
 product_url: undefined
 ---
