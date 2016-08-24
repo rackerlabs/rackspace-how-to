@@ -64,9 +64,9 @@ details about the new service.
 
    On this page, [add and manage your domains](/how-to/add-and-manage-domains-in-rackspace-cdn) and define the following optional rules:
 
-     - [Origin rules](/how-to/work-with-origins-and-origin-rules-in-rackspace-cdn/)
-     - [Caching rules](/how-to/create-and-manage-caching-rules-in-rackspace-cdn/)
-     - [Restrictions](/how-to/create-and-manage-restrictions-in-rackspace-cdn/)
+   - [Origin rules](/how-to/work-with-origins-and-origin-rules-in-rackspace-cdn/)
+   - [Caching rules](/how-to/create-and-manage-caching-rules-in-rackspace-cdn/)
+   - [Restrictions](/how-to/create-and-manage-restrictions-in-rackspace-cdn/)
 
    **Note**: The **Actions** menu on the top right side of the page enables the actions for managing your service, which are described in [Section 3. Manage a CDN Service](/how-to/rackspace-cdn).
 
