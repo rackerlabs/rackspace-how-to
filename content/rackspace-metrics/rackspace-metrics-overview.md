@@ -4,7 +4,7 @@ audit_date:
 title: Rackspace Metrics overview
 type: article
 created_date: '2015-03-03'
-created_by: Shane Duan
+created_by: Shane "The Dan" Duan
 last_modified_date: '2016-06-06'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
