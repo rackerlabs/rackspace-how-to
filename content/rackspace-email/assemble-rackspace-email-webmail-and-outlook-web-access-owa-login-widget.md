@@ -30,25 +30,25 @@ the script and the corresponding image to use.
 </code></pre>|
 |
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/ftrnavwide820x50.png %}
-| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+|
 <pre><code>
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/ftrnavwide820x50-Script.html %}
 </code></pre>|
 |
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/ftrnavnarrow520x70.png %}
-| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+|
 <pre><code>
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/ftrnavnarrow520x70-Script.html %}
 </code></pre>|
 |
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/vrttall200x290.png %}
-| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+|
 <pre><code>
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/vrttall200x290-Script.html %}
 </code></pre>|
 |
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/vrtshort200x220.png %}
-| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+|
 <pre><code>
 {% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/vrtshort200x220-Script.html %}
 </code></pre>|
