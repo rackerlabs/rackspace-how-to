@@ -1,0 +1,54 @@
+---
+permalink: assemble-rackspace-email-webmail-and-outlook-web-access-owa-login-widget/
+audit_date:
+title: Assemble Rackspace Email webmail and Outlook web access (OWA) login widget
+type: article
+created_date: '2016-08-24'
+created_by: Tom Mitchell
+last_modified_date: '2016-08-24'
+last_modified_by: Kyle Laffoon
+product: Rackspace Email
+product_url: rackspace-email
+---
+
+Select and run one of the following scripts to add a login portal on your site
+for webmail through both Rackspace Email and Exchange mailboxes. Download both
+the script and the corresponding image to use.
+
+| **Image** | **Script** |
+| --- | --- |
+|
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/stdtall350x210.png %}
+|<pre><code>
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/stdtall350x210-Script.html %}
+</code></pre>|
+|
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/stdshort320x150.png %}
+|
+<pre><code>
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/stdshort320x150-Script.html %}
+</code></pre>|
+|
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/ftrnavwide820x50.png %}
+| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+<pre><code>
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/ftrnavwide820x50-Script.html %}
+</code></pre>|
+|
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/ftrnavnarrow520x70.png %}
+| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+<pre><code>
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/ftrnavnarrow520x70-Script.html %}
+</code></pre>|
+|
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/vrttall200x290.png %}
+| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+<pre><code>
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/vrttall200x290-Script.html %}
+</code></pre>|
+|
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Images/vrtshort200x220.png %}
+| If you get an error message when registering a phone number, verify that you have entered the correct country code and a valid phone number with no extra characters or spaces. |
+<pre><code>
+{% include rackspace-email/rackspace-email-and-outlook-web-access-login-widget/Scripts/vrtshort200x220-Script.html %}
+</code></pre>|
