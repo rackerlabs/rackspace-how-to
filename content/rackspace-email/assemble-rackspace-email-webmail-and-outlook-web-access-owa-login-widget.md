@@ -18,6 +18,7 @@ the script and the corresponding image to use.
 ####Standard tall 350x x 210px
 
 **Image**
+   
    <img src="{% asset_path rackspace-email/assemble-email-and-outlook-login-widget/stdtall350x210.png %}"/> 
 
 **Script** 
@@ -28,6 +29,7 @@ the script and the corresponding image to use.
 ####Standard short 320x x 150px 
 
 **Image** 
+   
    <img src="{% asset_path rackspace-email/assemble-email-and-outlook-login-widget/stdshort320x150.png%}" /> 
 
 **Script** 
