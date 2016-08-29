@@ -5,15 +5,15 @@ title: Migrate your email by using the Self-Service tool
 type: article
 created_date: '2013-03-18'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-01-07'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-08-29'
+last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
 This article demonstrates how to use the Self-Service Migration Tool
 provided in the Cloud Office Control Panel to copy email data from your
-previous provider to Rackspace Email or Microsoft Exchange. The
+previous provider to Rackspace Email or Rackspace Hosted Exchange. The
 Self-Service Migration Tool uses our private-label version of
 MigrationWiz, which you can run at any time at no additional cost.
 
@@ -23,7 +23,33 @@ Self-Service Migration Tool. If you want to use the full version, see
 [Accessing the Full Version of
 MigrationWiz](/how-to/accessing-the-full-version-of-migrationwiz).
 
-### Premigration steps
+### Before you migrate
+
+Perform the following steps before using the MigrationWiz tool.
+
+1. Gather all email addresses, usernames, and passwords for mailboxes on both your source (current) and destination (Rackspace Email/Rackspace Hosted Exchange) mail servers. This information is required for migrating email data with the Self-Service Migration Tool.
+
+**Note:** The username for a mailbox is typically the same username you would use to log in to the Outlook Web App(OWA) or webmail in a web browser. For Rackspace, the username is the full email address
+
+2. Make sure that you can updated your mailboxes' DNS records, either through a DNS manager or by contacting the DNS host directly. You can find information about the best DNS records for Rackspace in the article, [Set up DNS records for Cloud Office email and Skype for business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business/).
+
+3. Review the list of items that are migrated and not migrated in the article, [Items migrated during a Cloud Office migration](/how-to/items-migrated-during-an-cloud-office-migration/).
+
+4. Request that users who use your mail server delete folder that they no longer require. This will drastically improve the speed of your migration.
+
+5. Make sure that the size of your destination mailbox is sufficient. We recommend that the size of your source mailbox not exceed 70% of your new mailbox's capacity.
+
+6. Copy email from the source server so that no data is lost. Some email messages may be corrupt and not migrate. If you want to back up your mailbox locally, refer to the section titled "Export data into a .PST file" in the article, [Migrating Exchange to Exchange via Outlook](/how-to/migrating-exchange-to-exchange-via-outlook/).
+
+7. Inform users and administrators of both your source and destination servers to refrain from changing their passwords during the migration process.
+
+8. Prepare users for reconfiguring Outlook, mail clients, and mobile devices once the migration is complete. Users can visit https://emailhelp.rackspace.com for instructions specific to the users' needs. Read the article, [Email access options during an email migration](/how-to/email-access-options-during-an-email-migration/).
+
+Remember, **DO NOT** cancel your source mail server service until you have confirmed with all users that they have their email data.
+
+For more information on the migration preparation required for POP, IMAP, and Exchange servers, read the article (Prepare for POP, IMAP, and Exchange server )
+
+### Create mailboxes
 
 Before you begin your migration, you need to create your mailboxes on
 the Rackspace environment. The migration tool does not create your
@@ -48,7 +74,7 @@ Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-busine
 To configure your email clients and mobile devices, you can use our
 Email Setup Assistant: <http://emailhelp.rackspace.com>
 
-### To migrate your email
+### Migrate your mail
 
 1.  Log in to your control panel.
 2.  To create your self-service migration portal, click **Get Started
@@ -82,15 +108,20 @@ Email Setup Assistant: <http://emailhelp.rackspace.com>
         typically looks like **https://mail.domain.com/owa** or
         **https://mail.domain.com/exchange**.
 
+    **Note:** You may also use your server's IP address in place of any host names and server addresses.
+
 5.  Click **Next**.
 6.  Enter your source and destination server configuration settings.
 
     -  Select the source server system type and enter the
         server address. For IMAP, you must also enter a port number.
-        IMAP ports are 993 (secure) and 143 (non-secure).
+        IMAP ports are 993 (SSL) and 143 (non-SSL).
     -  For the destination server, select the service that you are
-        migrating to, Rackspace Email or Microsoft Exchange 2013, and
+        migrating to, Rackspace Email or Rackspace Exchange 2016, and
         then click **Next**.
+
+    **Note:** If you are migrating to a hybrid solution (both Rackspace email and Rackspace Exchange), you will have to create more than one migration project. Please see step 12 for information on starting a new project.
+
 
     <img src="{% asset_path rackspace-email/migrate-your-email-by-using-the-self-service-tool/8-2_0.png %}" width="450" height="328" />
 
