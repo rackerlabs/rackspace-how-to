@@ -114,7 +114,7 @@ We are launching security groups as limited availability in all data centers, so
 
 #### What features are supported at launch?
 
-With the limited availability launch in early 2015, we support only inbound security groups on both PublicNet and ServiceNet interfaces. This means that customers can filter incoming traffic to their PublicNet and ServiceNet ports. We will add outbound security group support later in 2015.
+With the limited availability launch in early 2015, we support inbound and outbound security groups on both PublicNet and ServiceNet interfaces. This means that customers can filter incoming traffic to their PublicNet and ServiceNet ports.
 
 #### Is this feature available to all Rackspace Cloud customers?
 
