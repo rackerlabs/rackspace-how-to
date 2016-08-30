@@ -5,8 +5,8 @@ title: Cloud Networks FAQ
 type: article
 created_date: '2013-10-02'
 created_by: Sameer Satyam
-last_modified_date: '2016-08-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-08-30'
+last_modified_by: Kyle Laffoon
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -92,7 +92,11 @@ Cloud networks are regional in scope and can be attached to any of your cloud se
 
 #### What are security groups?
 
-Security groups are named collections of network access rules that enable Rackspace Public Cloud users to specify the types of traffic that are allowed to pass through PublicNet and ServiceNet ports on a Cloud Servers instance. A security group is a container for security group rules. After you launch an instance, you can assign one or more security groups to ports on that instance. Security groups act as a stateful firewall for your Cloud Server instances.
+Security groups are containers for a set of inbound and outbound traffic rules that are directly applied to a Neutron port (PublicNet, ServiceNet or Cloud Network). After you launch an instance, you can assign one or more security groups to ports on that instance. Security groups act as a stateful firewall for your Cloud Server instances.
+
+#### What is the difference between security groups and a firewall?
+
+Security groups act as a distributed firewall for your Cloud Server instances. After you launch an instance, you can assign one or more security groups to ports on that instance.
 
 #### Where is the documentation?
 
@@ -112,13 +116,21 @@ We are launching security groups as limited availability in all data centers, so
 
 With the limited availability launch in early 2015, we support only inbound security groups on both PublicNet and ServiceNet interfaces. This means that customers can filter incoming traffic to their PublicNet and ServiceNet ports. We will add outbound security group support later in 2015.
 
+#### Is this feature available to all Rackspace Cloud customers?
+
+No. This feature is currently in limited availability in all data centers. Please contact Rackspace support or your Account Manager to request access.
+
+#### What limitations does the feature currently have?
+
+A security group can't be added as a child of another security group. You also can't edit a security group rule - you must add a new security group to replace the old one.
+
 #### Will security groups be supported via the neutron client?
 
 Yes. Users can provision security groups via the neutron client.
 
 #### Is this functionality integrated with and available from the Cloud Control Panel?
 
-Not yet. The product will be available soon. In the interim, you can use either the neutron client or the API.
+Yes, but only inbound PublicNet and ServiceNet security groups are currently available in the control panel. To access additional features, you can use either the neutron client or the API.
 
 #### Are security groups supported for OnMetal users?
 
@@ -130,7 +142,7 @@ No default security groups are applied. Users must create a security group thems
 
 #### Can I apply security groups to ports on an instance at boot time?
 
-No. Security groups can be applied only after the instance is active.
+No. Security groups can be applied only after the instance is active.  We are actively working to include this feature in an upcoming release.
 
 #### What happens when a security group rule is added to the security group?
 
@@ -142,7 +154,7 @@ No. Traffic that matches a rule is permitted, and any traffic that is not part o
 
 #### Is there any traffic that is permitted or allowed by default by security groups?
 
-DNS responses from Rackspace Provider DNS servers (UDP source port 53) are allowed by default even if a security group does not explicitly allow them. Also the TCP flags ACK and RST are permitted by default.
+Very basic network operations, such as DNS responses from Rackspace Provider DNS servers (UDP source port 53), are allowed by default even if a security group does not explicitly allow them. Also the TCP flags ACK and RST are permitted by default.
 
 #### What kinds of traffic can be matched by the security group rules?
 
@@ -160,9 +172,9 @@ Yes. Such a security group will deny or block all traffic.
 
 #### Are security groups applied to instances?
 
-No. Security groups are applied to a Neutron port on a network that is attached to an instance and not to an instance itself.
+No. Security groups are applied to a Neutron port on a network that is attached to an instance and not to an instance itself. In the near future, when updating a security group, changes will be applied automatically to any port associated with that security group.
 
-#### What are the limits for security groups and rules?
+#### What are the available quotas for security groups and rules?
 
 - You can apply up to 5 security groups per port.
 - You can have up to 20 security group rules per security group
@@ -288,6 +300,7 @@ The Shared IP sections are:
 #### What features are supported for LA?
 
 The LA release supports the ability to create, associate, disassociate and delete shared IP addresses.  
+
 #### Is this feature supported for all Rackspace Cloud customers?  
 
 This feature is supported for cloud-only customers that have been approved for the Limited Availability (LA) program. Please contact your Account Manager or Rackspace Support to considered for LA access.
