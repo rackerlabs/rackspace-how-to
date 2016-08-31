@@ -1,7 +1,7 @@
 ---
 permalink: assemble-rackspace-email-webmail-and-outlook-web-access-owa-login-widget/
 audit_date:
-title: Assemble Rackspace Email webmail and Outlook web access (OWA) login widget
+title: Add an email login portal for Rackspace Email webmail and Outlook Web Access
 type: article
 created_date: '2016-08-24'
 created_by: Tom Mitchell
@@ -15,7 +15,7 @@ Select and run one of the following scripts to add a login portal on your site
 for webmail through both Rackspace Email and Exchange mailboxes. Download both
 the script and the corresponding image to use.
 
-**Standard tall (350x x 210px) image:**
+**Standard tall (350px x 210px) image**
    
    <img src="{% asset_path rackspace-email/assemble-email-and-outlook-login-widget/stdtall350x210.png %}"/> 
 
@@ -35,7 +35,7 @@ the script and the corresponding image to use.
 
 - - -
 
-**Footer and navigation wide (820px × 50px) image:**
+**Footer and navigation wide (820px × 50px) image**
 
    <img src="{% asset_path rackspace-email/assemble-email-and-outlook-login-widget/ftrnavwide820x50.png %}" />  
    
@@ -45,7 +45,7 @@ the script and the corresponding image to use.
 
 - - -
 
-**Footer and navigation narrow (520px × 70px) image:**
+**Footer and navigation narrow (520px × 70px) image**
 
    <img src="{% asset_path rackspace-email/assemble-email-and-outlook-login-widget/ftrnavnarrow520x70.png %}" />  
 
@@ -55,7 +55,7 @@ the script and the corresponding image to use.
 
 - - -
 
-**Vertical tall (200px x 290px) image:**
+**Vertical tall (200px x 290px) image**
 
    <img src="{% asset_path rackspace-email/assemble-email-and-outlook-login-widget/verttall200x290.png  %}" />  
 
@@ -65,12 +65,12 @@ the script and the corresponding image to use.
 
 - - -
 
-**Vertical short (200px × 220px) image:**
+**Vertical short (200px × 220px) image**
 
    <img src="{% asset_path rackspace-email/assemble-email-and-outlook-login-widget/vertshort200x220.png  %}" />  
 
 **Script**   
 
-      <div style="background-image:url(http://rackspace.com/apps/support/media/widget/BG-200x220.png);width:200px;height:220px;background-repeat:no-repeat;"> <div style="padding:10px 20px;font-family:verdana, geneva, sans-serif;font-size:11px;color:#333;"> <form name="loginForm" style="margin:0px" onSubmit="submitForm();" action="https://apps.rackspace.com/login.php" method="post"> <div>Username:</div> <input type="text" name="user_name" class="small" style="width:150px;margin:3px 0px 0px 0px;"></td> <div style="margin:5px 0px 0px 0px;">Password:</div> <input type="password" name="password" class="small" style="width:150px;margin:3px 0px 0px 0px;"> <input type=hidden name='useSSL' id='useSSL' value=''> <input type="submit" value="Login" class="small" style="width:60px;margin:5px 0px 0px 0px;"> <div style="padding:10px 0px 10px 0px"><input type="checkbox" name="remember" id="remember" style="width:12px;margin:0px 5px 0px 0px;"><font style="font-size:9px;">Remember Me</font></div> </form> <div style="text-align:center"> <font style="font-size:9px;line-height:14px"> <a href="http://www.rackspace.com/apps/email_hosting/exchange_hybrid" color="#0000FF" style="text-decoration:none;" target="_blank">Rackspace Email and MS Exchange Hosting</a> </font> </div> </div> </div> <script type="text/javascript" src="http://webmail.emailsrvr.com/mail/js/login.js"></script><script type="text/javascript">preloadForm(); if (getQueryVariable("fail") == 1) {alert("Incorrect username or password.")}</script> 
+      <div style="background-image:url(http://rackspace.com/apps/support/media/widget/BG-200x220.png);width:200px;height:220px;background-repeat:no-repeat;"> <div style="padding:10px 20px;font-family:verdana, geneva, sans-serif;font-size:11px;color:#333;"> <form name="loginForm" style="margin:0px" onSubmit="submitForm();" action="https://apps.rackspace.com/login.php" method="post"> <div>Username:</div> <input type="text" name="user_name" class="small" style="width:150px;margin:3px 0px 0px 0px;"></td> <div style="margin:5px 0px 0px 0px;">Password:</div> <input type="password" name="password" class="small" style="width:150px;margin:3px 0px 0px 0px;"> <input type=hidden name='useSSL' id='useSSL' value=''> <input type="submit" value="Login" class="small" style="width:60px;margin:5px 0px 0px 0px;"> <div style="padding:10px 0px 10px 0px"><input type="checkbox" name="remember" id="remember" style="width:12px;margin:0px 5px 0px 0px;"><font style="font-size:9px;">Remember Me</font></div> </form> <div style="text-align:center"> <font style="font-size:9px;line-height:14px"> <a href="http://www.rackspace.com/apps/email_hosting/exchange_hybrid" color="#0000FF" style="text-decoration:none;" target="_blank">Rackspace Email and Microsoft Exchange Hosting</a> </font> </div> </div> </div> <script type="text/javascript" src="http://webmail.emailsrvr.com/mail/js/login.js"></script><script type="text/javascript">preloadForm(); if (getQueryVariable("fail") == 1) {alert("Incorrect username or password.")}</script> 
 
-- - -
+
