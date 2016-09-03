@@ -126,9 +126,9 @@ The `parameters` section specifies the input parameters used to customize each d
         default: CentOS 7 (PVHVM) (Orchestration)
       constraints:
         - allowed_values:
-        - CentOS 7 (PVHVM) (Orchestration)
-        - Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM) (Orchestration)
-        description: Must be a supported operating system
+          - CentOS 7 (PVHVM) (Orchestration)
+          - Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM) (Orchestration)
+          description: Must be a supported operating system
 
 
 #### Outputs and resources
