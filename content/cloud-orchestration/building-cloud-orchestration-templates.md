@@ -100,16 +100,16 @@ The `parameter_groups` section specifies how the input parameters are grouped. E
 
     parameter_groups:
       - label: Server Settings
-    parameters:
-      - srv_flavour
-      - srv_image
-      - srv_key
+        parameters:
+        - srv_flavour
+        - srv_image
+        - srv_key
 
-    label: Server Settings
-    parameters:
-      - db_flavour
-      - db_ram
-      - db_version
+      - label: Database Settings
+        parameters:
+        - db_flavour
+        - db_ram
+        - db_version
 
 
 #### Parameters
@@ -577,7 +577,7 @@ Use the following template to create a domain in Cloud DNS and create records. N
 
 ####  Create a cloud queue
 
-Use the following template to create queue a Cloud Queues:
+Use the following template to create queue a Cloud Queue:
 
 
     heat_template_version: 2013-05-23
