@@ -23,9 +23,9 @@ https://support.rackspace.com/how-to/
 - Aug 29 - Sep 2: Nate
 - Sep 5 - 9: Renée
 - Sep 12 - 16:
-- Sep 19 - 23:
+- Sep 19 - 23: Stephanie
 - Sep 26 - 30:
 - Oct 3 - 7: Renée
-- Oct 10 - 14:
+- Oct 10 - 14: 
 - Oct 17 - 21:
-- Oct 24 - 28:
+- Oct 24 - 28: Stephanie
