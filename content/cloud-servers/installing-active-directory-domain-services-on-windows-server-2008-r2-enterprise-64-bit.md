@@ -159,7 +159,7 @@ command prompt. Then, skip to step 4.
 
     The installation begins.
 
-   **Note:** If you want the server to restart automatically after the
+    **Note:** If you want the server to restart automatically after the
     installation is completed, select the **Reboot on completion** check
     box.
 
