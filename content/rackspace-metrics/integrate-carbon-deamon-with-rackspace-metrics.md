@@ -4,8 +4,8 @@ title: Integrate carbon daemons with Rackspace Metrics
 type: article
 created_date: '2016-03-03'
 created_by: Shane Duan
-last_modified_date: '2016-03-03'
-last_modified_by: Shane Duan
+last_modified_date: '2016-09-14'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
