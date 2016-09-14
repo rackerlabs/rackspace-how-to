@@ -6,8 +6,6 @@ type: article
 created_date: '2011-06-23'
 created_by: Rackspace Support
 last_modified_date: '2016-09-13'
-=======
-last_modified_date: '2016-09-12'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
