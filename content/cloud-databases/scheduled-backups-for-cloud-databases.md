@@ -5,8 +5,8 @@ title: Scheduled backups for Cloud Databases
 type: article
 created_date: '2015-11-02'
 created_by: Rackspace Support
-last_modified_date: '2016-06-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-09-13'
+last_modified_by: Steve Croce
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -42,7 +42,7 @@ Scheduled backups are priced exactly the same as On-Demand backups. They're char
 
 You can enable, modify, and delete scheduled backups by using the Cloud Control Panel.
 
-#### Create a scheduled backup
+#### Create a backup schedule on an existing instance
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -54,6 +54,22 @@ You can enable, modify, and delete scheduled backups by using the Cloud Control 
 
 5. Click **Create Schedule**.
    A message appears at the bottom of the panel that says `Created schedule for instanceName`.
+
+#### Create a backup schedule on a new instance
+
+**Note:** The ability to create a schedule during instance creation is only available on High Availability groups at this time
+
+1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+
+2. At the top of the panel, select **Databases > MySQL**.
+
+3. Above the list of instances, select **Create High Availability Group**.
+
+4. Under **Advanced Settings**, ensure the box next to "Protect your data with Daily Scheduled Backups" is selected. 
+
+5. Select **Specify Scheduled Backup Settings…** to specify the exact time for the daily backups, the day of the week for the weekly full backup, and the number of weekly full backups to retain. If any of those values are not specified, they will be selected randomly.
+
+7. After you've selected all of the other settings for the HA group, click **Create HA Group**.
 
 #### View and modify a scheduled backup
 
@@ -133,18 +149,15 @@ If the instance associated with a backup is deleted, the backups will remain unt
 
 ### HA automated backups
 
-For HA groups, the backup is performed with the current active node
-as the source, and the backup is a full or incremental backup based on the
-schedule settings. If a master/slave setup is converted to an HA group,
+For HA groups, the backup schedule applies to the entire HA group and backups are performed against the most up-to-date replica. If a master/slave setup is converted to an HA group,
 and either the master or slave nodes has scheduled backups enabled, the
 resulting HA group will also have a schedule enabled with the same time
 settings as the master or first slave node's schedule. The individual
-schedules for the master and slave nodes are deleted.
+schedules for the master and slave nodes themselves are then deleted.
 
 ### Limitations
 
-- An automated backup schedule for HA instances can be created only after the HA group is completed. If an HA setup has just been created, all of the nodes must be active before you can create a backup schedule.
-- Backup schedules cannot be directly assigned to instances that are part of an HA group.
-- Only one backup schedule is allowed per source, either a single instance or HA group.
+- Backup schedules cannot be directly assigned to instances that are part of an HA group. Instead they must be applied to the HA group UUID
+- Only one backup schedule is allowed per source instance.
 
 For more information about backups with Cloud Databases, see [Managing backups for Cloud Databases](/how-to/managing-backups-for-cloud-databases).
