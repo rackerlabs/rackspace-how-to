@@ -1,4 +1,5 @@
 ---
+permalink: integrate-carbon-daemons-with-rackspace-metrics/
 title: Integrate carbon daemons with Rackspace Metrics
 type: article
 created_date: '2016-03-03'
@@ -8,7 +9,7 @@ last_modified_by: Shane Duan
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
-   
+
 #### Description
 
 Carbon Forwarder enables you to integrate with the carbon daemons that make up the storage back end of a Graphite installation.
@@ -78,4 +79,3 @@ If not using your own LogObserver, use the following command to control logging 
 
 - For details about carbon daemons, see [http://graphite.readthedocs.org/en/1.0/carbon-daemons.html](http://graphite.readthedocs.org/en/1.0/carbon-daemons.html)
 - For details about the Carbon Forwarder project, see https://github.com/rackerlabs/blueflood-carbon-forwarder
-
