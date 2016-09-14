@@ -13,6 +13,7 @@ product_url: cloud-databases
 
 Scheduled backups for Cloud Databases enable you to schedule periodic
 backups of their single instances, replica sets, and high availability (HA) instance groups.
+
 You define a day of the week when a full backup is performed on
 your selected instance type, and optionally specify the hour
 and minute when full and incremental backups are performed.
@@ -65,7 +66,7 @@ You can enable, modify, and delete scheduled backups by using the Cloud Control 
 
 3. Above the list of instances, select **Create High Availability Group**.
 
-4. Under **Advanced Settings**, ensure the box next to "Protect your data with Daily Scheduled Backups" is selected. 
+4. Under **Advanced Settings**, make sure the box next to "Protect your data with Daily Scheduled Backups" is selected.
 
 5. Select **Specify Scheduled Backup Settings…** to specify the exact time for the daily backups, the day of the week for the weekly full backup, and the number of weekly full backups to retain. If any of those values are not specified, they will be selected randomly.
 
@@ -157,7 +158,7 @@ schedules for the master and slave nodes themselves are then deleted.
 
 ### Limitations
 
-- Backup schedules cannot be directly assigned to instances that are part of an HA group. Instead they must be applied to the HA group UUID
+- Backup schedules cannot be directly assigned to instances that are part of an HA group. Instead they must be applied to the HA group UUID.
 - Only one backup schedule is allowed per source instance.
 
 For more information about backups with Cloud Databases, see [Managing backups for Cloud Databases](/how-to/managing-backups-for-cloud-databases).
