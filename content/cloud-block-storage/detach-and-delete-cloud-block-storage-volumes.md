@@ -40,7 +40,7 @@ prevent errors.
 
   At your server, use the **df -h** command to see how it is mounted.
 
-    <img src="{% asset_path cloud-block-storage/detach-and-delete-cloud-block-storage-volumes/mount_point.png %}" width="571" height="122" />
+   <img src="{% asset_path cloud-block-storage/detach-and-delete-cloud-block-storage-volumes/mount_point.png %}" width="571" height="122" />
 
 2. Use the value under **Mounted On** in the unmount command.
 
