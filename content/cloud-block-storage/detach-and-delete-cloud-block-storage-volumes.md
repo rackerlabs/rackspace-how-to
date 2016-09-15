@@ -38,7 +38,7 @@ prevent errors.
 
 1. Confirm in the Control Panel how the volume is presented to the cloud server.
 
-  At your server, use the **df -h** command to see how it is mounted.
+   At your server, use the **df -h** command to see how it is mounted.
 
    <img src="{% asset_path cloud-block-storage/detach-and-delete-cloud-block-storage-volumes/mount_point.png %}" width="571" height="122" />
 
