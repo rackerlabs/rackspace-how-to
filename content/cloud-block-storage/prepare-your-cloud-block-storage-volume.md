@@ -215,6 +215,8 @@ Your drive is ready for use with your Linux server. However, you should
 consider performing the following step to ensure that your volume
 remains persistent after a server reboot.
 
+**Note:** If you ever decide to move the volume to a different server, begin by un-mounting the volume. Use the **unmount** command to unmount the volume, and then repeat this **Mount the volume** process for the new endpoint.
+
 #### Make the volume permanent.
 
 This step is optional, but it keeps your volume attached to your server
