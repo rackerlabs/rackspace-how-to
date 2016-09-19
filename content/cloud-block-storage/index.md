@@ -27,11 +27,8 @@ product_url: cloud-block-storage
 - [Create and attach a Cloud Block Storage volume](/how-to/create-and-attach-a-cloud-block-storage-volume)
 - [Attach a Cloud Block Storage volume to an OnMetal server](/how-to/attach-a-cloud-block-storage-volume-to-an-onmetal-server#attach-volume-to-an-onmetal-server)
 - [Move a Cloud Block Storage volume between servers](/how-to/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another)
+- [Prepare your Cloud Block Storage volume](/how-to/prepare-your-cloud-block-storage-volume)
 
-###  Prepare your volume
-
-- [Prepare your volume for use with a Linux server](/how-to/prepare-your-cloud-block-storage-volume#prepare_linux)
-- [Prepare your volume for use with a Windows server](/how-to/prepare-your-cloud-block-storage-volume#prepare_windows)
 
 ###  Create and use snapshots
 
