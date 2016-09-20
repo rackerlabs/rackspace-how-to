@@ -19,6 +19,7 @@ Answer each of the following questions by typing one of the answer options provi
 #### Was the training easy to understand?
 Yes
 Yes
+Somewhat
 **Answer options**
 - Yes 
 - Somewhat
@@ -29,12 +30,14 @@ Yes
 #### How often do you think you will use the training?
 Somewhat Often
 Somewaht often
+Somewhat Often
 **Answer options**
 - Often
 - Somewhat often
 - Never
 
 #### Would you recommend this training to others?
+Yes
 Yes
 Yes
 **Answer options**
@@ -44,6 +47,7 @@ Yes
 #### Are you interested in taking an advanced level contribution class?
 Yes
 Yes
+Yes
 **Answer options**
 - Yes
 - No
@@ -51,6 +55,7 @@ Yes
 #### Is there anything else you'd like to share about the training?
 Cool gateway to programming
 Knowing is half the battle
+I had to keep going back since there was no pause button but easy, 10 min training that helps anyone get started with contributing to support/how to articles.
 **Answer options**
 - Open ended
 
