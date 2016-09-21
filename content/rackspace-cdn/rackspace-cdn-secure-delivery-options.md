@@ -5,7 +5,7 @@ title: Rackspace CDN secure delivery options
 type: article
 created_date: '2015-04-20'
 created_by: Megan Meza
-last_modified_date: '2016-01-21'
+last_modified_date: '2016-09-21'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -63,7 +63,6 @@ Following is a list of approved CAs:
 -   QuoVadis Root CA 3
 -   QuoVadis Root CA 2
 -   SecureTrust CA
--   StartCom Certification Authority
 -   SwissSign Gold CA - G2
 -   SwissSign Silver CA - G2
 -   TC TrustCenter Class 2 CA II
