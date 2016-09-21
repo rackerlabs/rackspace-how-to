@@ -11,9 +11,7 @@ product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-[Rackspace CDN](http://www.rackspace.com/cloud/cdn-content-delivery-network)
-offers the following certificate types for secure delivery: Rackspace
-shared domain, SAN, and Custom. These types are distinguished by how
+[Rackspace CDN](http://www.rackspace.com/cloud/cdn-content-delivery-network) offers the following certificate types for secure delivery: Rackspace shared domain, SAN, and Custom. These types are distinguished by how
 much ownership a customer has over the secure certificate.
 
 ### Requirements for all Rackspace CDN certificate types
