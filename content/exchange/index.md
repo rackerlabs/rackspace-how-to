@@ -3,7 +3,7 @@ title: Microsoft Exchange
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2016-05-17'
+last_modified_date: '2016-09-22'
 last_modified_by: Stephanie Fillmon
 permalink: /exchange/
 product: Microsoft Exchange
@@ -20,8 +20,8 @@ Welcome to Microsoft Exchange hosted by Rackspace! Use this brief step-by-step g
 
 ###  Cloud Office Control Panel basics
 
-- [Create an Exchange mailbox](https://cp.rackspace.com/Exchange/Mail/Mailboxes/List.aspx)
-- [Create a Rackspace Email mailbox](https://cp.rackspace.com/EmailHosting/Mail/Mailboxes/List.aspx)
+- [Add Microsoft Exchange mailboxes](/how-to/adding-microsoft-exchange-mailboxes)
+- [Add Rackspace Email mailboxes](/how-to/add-rackspace-email-mailboxes)
 - [Rackspace Email mailbox features](/how-to/exchange-email-mailbox-features)
 - [Exchange Mailbox Features](/how-to/exchange-email-mailbox-features)
 
