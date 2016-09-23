@@ -77,7 +77,7 @@ Rackspace support tech can help you analyze the results and make the
 right recommendations.
 
 -   [Soasta](https://cloudtools.rackspace.com/apps/381?restoreSearch=true#!overview)
--   [Apica](https://cloudtools.rackspace.com/apps/207?restoreSearch=true#!overview)
+-   [Apica](https://www.apicasystem.com)
 -   [Load Impact](https://cloudtools.rackspace.com/apps/897?restoreSearch=true#!overview)
 
 ### RackConnect
