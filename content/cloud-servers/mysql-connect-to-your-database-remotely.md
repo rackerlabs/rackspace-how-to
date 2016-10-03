@@ -77,7 +77,7 @@ When setting up remote users, consider the following items:
    **fooUser@localhost** is not the same as **fooUser@1.2.3.4**. If you want
    both users to have the same permissions, you need to duplicate permissions.
 
- - WE do no recommend granting ALL permissions. For a normal user, we
+ - WE do not recommend granting ALL permissions. For a normal user, we
    recommend using `GRANT SELECT,INSERT,UPDATE,DELETE`.
 
  - To grant access to only a specific table, you can use `database.table`.
