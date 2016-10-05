@@ -20,8 +20,8 @@ To access `nslookup` open up a command prompt window. Go to **Start > All Progra
 
 ### Check for a record
 
-To check for a specific record you need to specify the `nslookip` command,
-the record type&mdashfor example, A, MX, or TXT&mdashand the host name you want to check. The following
+To check for a specific record you need to specify the `nslookup` command,
+the record type &mdash; for example, A, MX, or TXT &mdash; and the host name you want to check. The following
 example shows how to check for any A records for **rackspace.co.uk**:
 
     C:\Users\Administrator>nslookup -type=A rackspace.co.uk
