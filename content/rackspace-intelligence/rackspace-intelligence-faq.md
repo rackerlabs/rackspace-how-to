@@ -70,7 +70,7 @@ with a Cloud services account.
 Rackspace Intelligence currently does not expose an API. However, many
 monitoring-related features, such as the creation and editing of checks
 and alarms, are built using the
-[Rackspace Monitoring API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-developer-guide).
+[Rackspace Monitoring API](https://developer.rackspace.com/docs/rackspace-monitoring/v1/).
 
 ------------------------------------------------------------------------
 
