@@ -1,6 +1,6 @@
 ---
 permalink: architecture-requirements-for-rackspace-private-cloud-powered-by-microsoft/
-audit_date:
+audit_date: '2016-10-14'
 title: Architecture requirements for Rackspace Private Cloud powered by Microsoft
 type: article
 created_date: '2015-03-02'
@@ -14,7 +14,7 @@ product_url: rpc-microsoft
 To compete in the global economy and keep up with the pace of
 innovation, organizations must improve their ability to quickly and
 flexibly respond to changing business needs, improve efficiency, and
-better manage costs.  Some ways to accomplish this include automation of
+better manage costs. Some ways to accomplish this include automation of
 repeatable tasks, cross-platform interoperability, and the creation and
 deployment of modern, self-service, and highly available applications
 that can span data centers. The Microsoft Cloud Platform powered by
@@ -26,17 +26,19 @@ Microsoft workloads.
 Rackspace has worked directly with Microsoft to design a product line
 architecture (PLA)-compliant cloud to help our customers develop and
 implement private cloud infrastructures quickly while reducing
-complexity and risk. The Microsoft Cloud Platform powered by Rackspace
+complexity and risk.
+
+The Microsoft Cloud Platform powered by Rackspace
 provides a solution that combines Microsoft software, consolidated
 guidance, and best-practice architecture with Rackspace's vast
-experience providing Fanatical Support^&reg;^ hosting and supporting
+experience providing Fanatical Support&reg;, and hosting
 solutions for compute, network, and storage architectures.
 
 The Microsoft Private Cloud PLA uses the core capabilities of the
 Microsoft Windows Server operating system, Hyper-V, and System Center to
-deliver a private cloud infrastructure as a service offering. Following
-are the key software features and components used for every
-implementation hosted at Rackspace.
+deliver a private cloud infrastructure as a service offering. The following
+are the software features and components used for every
+implementation Rackspace hosts.
 
 ### Cloud Platform Base Cloud
 
@@ -71,7 +73,7 @@ following applications and roles:
 
 
 The minimum system requirements to run the Base Cloud components are 52
-vCPU, 128 GBs of RAM, and 2.3 TB of storage.  This workload is split
+vCPU, 128 GBs of RAM, and 2.3 TB of storage. Base Cloud workload is split
 across two physical host servers that are configured in a failover
 cluster.
 
@@ -79,10 +81,10 @@ cluster.
 
 In addition to the Base Cloud offering, there are three optional add-on
 services that you can use to enhance your Microsoft Cloud Platform at
-Rackspace.  You can deploy one, two, or all three of these services.
-Keep in mind that if you add any of them, the minimum required compute
-and storage needs to account for the additional compute and storage
-loads.
+Rackspace. You can deploy a single add-on, two add-ons, or all three of
+these services on your Microsoft Cloud Platform. Keep in mind that if
+you add any optional add-ons, the minimum required compute and storage
+needs to account for the additional compute and storage loads.
 
 ### Web Sites Cloud
 
@@ -93,11 +95,11 @@ application gallery of open source web applications that integrate with
 source control systems for custom-developed websites and applications.
 
 With Microsoft SQL Server and MySQL Server, you can create the ideal
-environment to leverage database as a service (DBaaS) for your company,
-bringing it into the cloud era while maintaining private cloud security.
-You can add one or more Microsoft SQL Server or MySQL Server instances
-for tenants to deploy and use. Tenants use these databases with the Web
-Sites Cloud service.
+environment to leverage a database as a service (DBaaS) for your company,
+which brings your company into the cloud era while maintaining private
+cloud security. You can add one or more Microsoft SQL Servers or MySQL
+Server instances for tenants to deploy and use. Tenants use these
+databases with the Web Sites Cloud service.
 
 | Application or role    | VM name    | Quantity | Software suite     | vCPU | vRAM | vDisk  |
 |------------------------|------------|----------|--------------------|------|------|--------|
@@ -114,9 +116,9 @@ Sites Cloud service.
 | App Controller         | AC         | 1        | Windows Azure Pack | 2    | 4 GB | 60 GB  |
 
 The minimum system requirements to run the Web Sites Cloud components
-are 24 vCPU, 56 GB of RAM, and 1 TB of storage.  This workload is in
-addition to the Base Cloud system, which is split across two physical
-host servers configured in a failover cluster.
+are 24 vCPU, 56 GB of RAM, and 1 TB of storage. The Web Sites Cloud
+workload is in addition to the Base Cloud system, which is split across
+two physical host servers configured in a failover cluster.
 
 ### Service Bus
 
@@ -129,7 +131,7 @@ topic-based publish and subscribe capabilities.
 | Service Bus         | SB      |     1    | Windows Azure Pack | 2    | 4 GB | 60 GB |
 
 The minimum system requirements to run the Service Bus component are 2
-vCPU, 4 GB of RAM, and 60 GB of storage.  This workload is in addition
+vCPU, 4 GB of RAM, and 60 GB of storage. Service Bus workload is in addition
 to the Base Cloud system, which is split across two physical host
 servers configured in a failover cluster.
 
@@ -145,6 +147,6 @@ in federation partner organizations, or in the cloud.
 | Active Directory Federation Services | ADFS    | 2        | Windows Azure Pack | 2    | 4 GB | 60 GB |
 
 The minimum system requirements to run the ADFS component are 4 vCPU, 8
-GB of RAM, and 120 GB of storage.  This workload is in addition to the
+GB of RAM, and 120 GB of storage.  The ADFS workload is in addition to the
 Base Cloud system, which is split across two physical host servers
 configured in a failover cluster.
