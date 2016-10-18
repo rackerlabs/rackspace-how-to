@@ -32,21 +32,20 @@ that all SSL certs be on their own IP address.
 #### Copy the files in into the default locale
 
 When you receive your SSL certificate from your authority, upload it to
-your server and place it in \~/domain.com.ssl/domain.com.crt
+your server.
 
--   Copy the certificate, key, and csr into the Apache server directory
+**Note**: Copy the entire contents of the certificate from (and including)
+the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- lines. Save
+this file as: domain.com.crt
+
+-   Copy the certificate and private key into the Apache server directory
     in which you plan to store your certificates (by default:
     /usr/local/apache/conf/ssl.crt/ or /etc/httpd/conf/ssl.crt/).
 
-**Note**: Copy the entire contents of the certificate from (and including)
-the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- lines.
-
 #### Edit the httpd.conf
 
-Open the Apache httpd.conf file in a text editor(I prefer VIM, the true
-editor).
-
-Create the following Virtual Host:
+Open the Apache httpd.conf file in a text editor, and create the following
+Virtual Host:
 
     <VirtualHost 123.45.67.89:443>
     ServerName www.domain.com
@@ -60,7 +59,8 @@ Create the following Virtual Host:
     CustomLog logs/ssl.domain.com.access_log combined
     </VirtualHost>
 
-**Note**: Keep in mind that the paths to the certificate files will need to be changed to where ever you choose to place your certificate.
+**Note**: Keep in mind that the paths to the certificate files will need to 
+be changed to where ever you choose to place your certificate.
 
 Save the changes and exit the editor.
 
