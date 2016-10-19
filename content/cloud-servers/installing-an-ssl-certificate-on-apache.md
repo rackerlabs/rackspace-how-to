@@ -5,13 +5,13 @@ title: Install an SSL certificate on Apache
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
-last_modified_by: Nate Archer
+last_modified_date: '2016-10-19'
+last_modified_by: zeta0134
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article is a continuation of [Generate a CSR](/how-to/generate-a-csr-with-openssl "Generate a CSR") and
+This article is a continuation of [Generate a CSR](/how-to/generate-a-csr-with-openssl/) and
 will take you from creating and receiving your SSL cert from your
 authority of choice to installing it in apache. I've chosen to Apache
 since it is the most common web server on Linux and the Internet. Again,
@@ -34,13 +34,10 @@ that all SSL certs be on their own IP address.
 When you receive your SSL certificate from your authority, upload it to
 your server.
 
-**Note**: Copy the entire contents of the certificate from (and including)
-the -----BEGIN CERTIFICATE----- and -----END CERTIFICATE----- lines. Save
-this file as: domain.com.crt
+1. Copy all the contents of the certificate, including the `BEGIN CERTIFICATE` and `END CERTIFICATE` lines. Save the copied text as `domain.com.crt`.
 
--   Copy the certificate and private key into the Apache server directory
-    in which you plan to store your certificates (by default:
-    /usr/local/apache/conf/ssl.crt/ or /etc/httpd/conf/ssl.crt/).
+2. Copy the certificate and private key into the Apache server directory in which you plan to store your certificates (by default:
+`/usr/local/apache/conf/ssl.crt/` or `/etc/httpd/conf/ssl.crt/`).
 
 #### Edit the httpd.conf
 
@@ -59,8 +56,7 @@ Virtual Host:
     CustomLog logs/ssl.domain.com.access_log combined
     </VirtualHost>
 
-**Note**: Keep in mind that the paths to the certificate files will need to 
-be changed to where ever you choose to place your certificate.
+**Note**: Keep in mind that the paths to the certificate files will need to be changed to where ever you choose to place your certificate.
 
 Save the changes and exit the editor.
 
