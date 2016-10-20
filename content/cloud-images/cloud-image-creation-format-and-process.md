@@ -11,88 +11,95 @@ product: Cloud Images
 product_url: cloud-images
 ---
 
+When you create server images, you need to consider many things, from disk
+storage to scheduling to how long the process takes. This article addresses
+some of those topics.
+
 ### Disk storage
 
-Rackspace Cloud Servers, with the exception of the OnMetal and "Boot from
-Volume" flavors, use a format known as Virtual Hard Disk (VHD) to store their
+Rackspace cloud servers, with the exception of the OnMetal and Boot from
+Volume flavors, use a format known as Virtual Hard Disk (VHD) to store their
 system disks. When a server writes to the disk, the VHD writes each difference
-between your original, base hard drive and the current system. Because of this,
-deleting files off a server's hard disk actually causes the underlying VHD
+between the original, base hard drive and the current system. Because of this,
+deleting files from a server's hard disk actually causes the underlying VHD
 to grow slightly. In the Rackspace Cloud, VHDs can only get larger, and they
-will generally be slightly larger than the underlying filesystem at its largest
+are generally slightly larger than the underlying file system at its largest
 point. For example:
 
 | **Build** | **current 'df –h' size** | **VHD size** |
 | --- | --- | --- |
-| Base Cloud Server Build | 1.8 GB | 2.5 GB |
-| Cloud Server, with 100 GB | 100 GB | 108 GB |
-| Cloud Server, which used to have 100 GB | 5 GB | 115 GB |
+| Base cloud server Build | 1.8 GB | 2.5 GB |
+| Cloud server, with 100 GB | 100 GB | 108 GB |
+| Cloud server, which used to have 100 GB | 5 GB | 115 GB |
 
-For more information on the VHD format and the imaging process, see
+For more information about the VHD format and the imaging process, see
 [Understanding the Cloud Imaging Process](https://community.rackspace.com/products/f/25/t/3778).
 
 ### Image creation process
 
-The steps below outline the cloud Server imaging prices at a high level. For a
-more in depth guide, see
+The following steps outline high level process of creating a cloud server image.
+For a more in-depth guide, see
 [Understanding the Cloud Imaging Process](https://community.rackspace.com/products/f/25/t/3778).
 
-1. The image is queued for creation or preparing to start, and a Coalesce is
-preformed to attempt the elimination of duplicate data between the backend
-VHDs. The API reports 0% progress.
+1. The image is queued for creation or is preparing to start.  During this
+time, the coalesce is preformed to eliminate duplicate data between the
+back-end VHDs. The API reports 25% progress.
 
-2. The image is currently being created. This step saves the backend VHD file
-and compresses it. The API reports 25% progress.
+2. The image is being created. This step saves, compresses, and uploads the
+back-end VHD file to Cloud Files. This step generally takes the longest to
+complete, because the data is transferred to Cloud Files. The API reports 50%
+progress.
 
-3. The image is being uploaded to Cloud Files. This step generally takes the
-longest to complete, because the data is transferred from the backend
-hypervisor to Cloud Files. The larger the VHD size, the longer it takes. The
-API reports 50% progress.
+3. The image creation and upload is complete, and the image process is cleaned
+up on the back-end. The API reports 100% progress.
 
 ### Image creation duration
 
 A rule of thumb is once the image creation or upload starts (Image creation
 steps 2 and 3), this generally takes 2 minutes per GB of data on the underlying
 VHD. This is based on how much data the servers file system contained when it
-was at it largest.  Several factors affect imaging time:
+was at its largest.  Several factors affect imaging time:
 
-- **Daily / Weekly Imaging &amp; Coalescing**. A Coalesce is a backend
-operation preformed during step 1, which attempts to merge duplicate data in
-the VHD chain. If there is a large amount of differential data between the VHDs
-this can take some time to complete, and the image creation starts once this is
-done.
+- **Daily and weekly imaging**: During image creation, a coalesce is the backend
+operation performed during step 1 that attempts to merge duplicated data in
+the VHD chain. If a large amount of differential data exists between the VHDs,
+this process can take some time to complete, and the image creation starts
+after this process is done.
 
-- **File System Size.** The system size is how much disk space is taken up on
-your Cloud Server / How much at a did the server have when the file system was
-at its largest
+- **File system size**: The system size is how much disk space is used on
+your Cloud Server, at its largest.
 
-- **File System Activity**. Reads will not be highly impactful, but writes can
+- **File system activity**: Reads are not highly impactful, but writes can
 make the image coalesce and creation take much longer.
 
-- **Cloud**  **Server Age.** Older servers tend to have larger VHDs.
+- **Cloud server age**: Older servers tend to have larger VHDs,which take
+longer to image.
 
-- **Cloud Server Flavor.** Because the public cloud is a shared environment,
-resources such as disk and network are shared. Newer Rackspace Cloud flavors
-such as General Purpose, Performance, and I/O have greater I/O and network
-resources.
+- **Cloud server flavor**: Because the public cloud is a shared environment,
+resources such as disk and network are shared. Resource constraints on older
+flavors can slow the imaging process. Newer Rackspace Cloud flavors, such as
+General Purpose, Performance, and I/O, have greater I/O and network resources,
+improving performance.
 
-### Reasons image creation fails
+### Reasons that image creation fails
 
-**Cloud Server Age** - Older flavor classes such as Standard and Classic exist
-on older hardware that have limited network bandwidth for imaging operations.
-This causes imaging to take longer to complete. There only ways around this are
-to migrate to a newer flavor type, such as General Purpose, or to use a file
-level backup tool such as Cloud Backup.
+If the image creation fails, one of the following issues might be the reason.
 
-**Coalesce Timeout** - If you do not image your cloud server frequently, or if
-you have a large amount of data being changed, added, or modified, these can
-increase the completion time of the coalesce. If a timeout is reached, simply
-wait and then issue the image creation request again. If you see this issue
-repeatedly, it may be necessary to limit filesystem activity while imaging. If
-image creation continues to fail, support can trigger a Coalesce outside of a
-Cloud Server Image.
+**Age of the server** - Older flavor classes, such as Standard and Classic,
+exist on older hardware that has limited network bandwidth for imaging
+operations. This limit causes imaging to take longer to complete. To work
+around this issue, you can migrate to a newer flavor type, such as General
+Purpose, or use a file-level backup tool such as Cloud Backup.
 
-And as always, if none of these failure scenarios seem to apply, you can check
-[System Status](https://status.rackspace.com/) to determine if there is a
-larger issue affecting your imaging attempt.
+**Coalesce timeout** - If you do not image your cloud server frequently, or if
+a large amount of data is changed, added, or modified, the completion time of
+the coalesce process can increase. If a timeout is reached, you can wait and
+then send the image creation request again. If you see this issue repeatedly,
+you might need to limit file system activity while imaging. If image creation
+continues to fail, Rackspace Support can trigger the coalesce process outside
+of a Cloud Server Image.
+
+If neither of these failure scenarios applies, you can check the
+[System Status](https://status.rackspace.com/) to determine if a larger
+system issue is affecting your imaging attempt.
 
