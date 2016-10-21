@@ -1,6 +1,6 @@
 ---
 permalink: rpc-microsoft-faq/
-audit_date:
+audit_date: '2016-10-21'
 title: Rackspace Private Cloud Powered by Microsoft Cloud Platform FAQ
 type: product
 created_date: '2016-01-17'
@@ -34,16 +34,12 @@ product_url: rpc-microsoft
     Pack, provision and manage Microsoft SQL Server&reg; or MySQL&reg; databases
     through a convenient web interface running on your dedicated,
     secure hardware.
--   **Storage spaces** - Leverage software defined storage as the data
-    store for Microsoft Cloud Platform.
--
 
 #### Why should I use Microsoft Private Cloud?
 
--   **Backed by Fanatical Support&reg;** - Microsoft Private Cloud includes
-    full support of the Microsoft Cloud Platform components; the
-    infrastructure is 100% backed 24x7x365; Guest VM support is
-    available on your terms; and Guest VMs are also supported.
+-   **Backed by Fanatical Support&reg;** - Microsoft Private Cloud
+    includes full infrastructure support backed 24x7x365; Guest VM
+    support is available on your terms; and Guest VMs are also supported.
 -   **Expertise** - We're a four-time Microsoft Hosting partner of
     the year. We have hundreds of Microsoft Certified Professionals
     running thousands of Microsoft workloads every day.
@@ -64,8 +60,8 @@ product_url: rpc-microsoft
 -   **Core infrastructure** - Microsoft Systems Center is an ideal
     choice whenever seasonal spikes require additional power from your
     hardware reserves or Microsoft Azure.
--   **Application hosting** - Consisting of Microsoft SharePoint, Lync,
-    and Exchange, the Rackspace dedicated Cloud Office product is the
+-   **Application hosting** - Consisting of Microsoft SharePoint and
+    Exchange. The Rackspace dedicated Cloud Office product is the
     ultimate application for the Microsoft Cloud OS platform.
 -   **Web hosting** - Hosts production, QA, and Dev environments on
     Systems Center with confidence.
