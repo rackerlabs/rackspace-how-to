@@ -5,21 +5,31 @@ title: Upgrading to Exchange 2016
 type: article
 created_date: '2015-12-16'
 created_by: Ronnie Canizales
-last_modified_date: '2016-02-25'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-10-18'
+last_modified_by: Aaron Medrano
 product: Microsoft Exchange
 product_url: exchange
 ---
 
-To have an Exchange Upgrade performed, you must contact the Cloud Office Internal Migrations team and work with them via ticket. After you create the ticket, the Migrations team provides you with a migration plan to upgrade your Exchange environment.
+# Self Service Exchange Upgrade Tool Instructions
 
 This article provides information about the upgrade from your current Exchange environment to Exchange 2016. Follow the steps in this article to ensure a successful migration to Exchange 2016.
 
-**Note**: Migrations from Exchange 2007 to Exchange 2016 are not available. The Exchange 2007 domain must be upgraded to Exchange 2013 first.
+# Helpful Information:
 
-### Before migration
+- There is no cost for this migration through this tool
+- You can run an Exchange upgrade through this tool 24/7/365. Support is available during that time to assist, but should your migration error out and need the assistance of the Internal Migration Team, be advised that team is only in office M-F from 7am to 7pm CST.
 
-Before migration, you should be aware of how the Exchange 2016 environment is different. You should also perform some actions to ensure a seamless migration.
+- WHAT IS MIGRATED: Current Exchange environment which includes:
+  - Exchange Mailboxes
+  - Email data
+  - Contacts
+  - Calendar
+  - Tasks
+  - Notes
+  - Exchange Contacts
+  - Distribution Lists
+  - Resources
 
 #### Back up data
 
@@ -38,16 +48,108 @@ The Outlook Web Access (OWA) tool will be available via the following links:
 - Rackspace unified login - [https://apps.rackspace.com](https://apps.rackspace.com/)
 - Direct login - [https://mex09.emailsrvr.com](https://mex08.emailsrvr.com/)
 
-#### Public folders
 
-Exchange 2016 offers public folders on a hosted environment and has the following limitations:
+# Helpful Information:
 
-- There is a limit of 25 folders with a maximum size of 250 MB per folder (root folder included).
-- Exchange 2016 administrators must use the Control Panel to manage public folders.
-- Public folder administration (create, edit, move,  and so on) is disabled in Outlook for Exchange 2016 customers.
-- User permissions (such as granting read, edit, and delete access) is not available.
+- There is no cost for this migration through this tool
+- You can run an Exchange upgrade through this tool 24/7/365. Support is available during that time to assist, but should your migration error out and need the assistance of the Internal Migration Team, be advised that team is only in office M-F from 7am to 7pm CST.
+- WHAT IS MIGRATED: Current Exchange environment which includes:
+  - Exchange Mailboxes
+  - Email data
+  - Contacts
+  - Calendar
+  - Tasks
+  - Notes
+  - Exchange Contacts
+  - Distribution Lists
+  - Resources
 
-**Note**: For a complete list of public folder limitations, review the migration plan provided by the Migrations team.
+## Exchange Upgrade Tool Requirements:
+
+In order to utilize this tool, you **MUST** have the following items:
+
+- Make sure your Autodiscover record is set up and points to Rackspace. To Setup Autodiscover: [http://www.rackspace.com/knowledge\_center/article/how-to-set-up-dns-records-for-email-and-skype-for-business](http://www.rackspace.com/knowledge_center/article/how-to-set-up-dns-records-for-email-and-skype-for-business)
+- Less than 25 Public Folders currently with your Exchange 2007 services (more details listed below)
+
+# Prior to your Migration:
+
+### Here are the supported email clients for Exchange 2016:
+
+Anything older clients will not be able to successfully connect to our Exchange 2016 environment.
+
+- Outlook 2016
+- Outlook 2013
+- Outlook 2011 for Mac
+- Outlook 2010
+- Outlook 2007 SP3
+- Entourage 2008 EWS
+- Mac Mail
+
+### Here are some other things to consider prior to utilizing this tool:
+
+- This type of migration requires all users to migrate at once.
+- We highly recommend performing a local backup of your data since corrupt items will not migrate.
+- The spam handling in Exchange 2016 **DOES NOT** utilize the quarantine manager for exchange mailboxes. Messages marked as spam will be delivered to the **JUNK-EMAIL** folder of the user&#39;s mailbox. The domain quarantine will still receive spam messages for other exchange addresses such as contacts, distribution lists and resources.
+- Custom permissions for distribution lists (such as Send As/Restricted) and custom permissions for shared calendars in your email clients are **NOT** migrated.
+
+# Running the Migration
+
+## During the Migration:
+
+- **DO NOT** make changes to the domain within the admin control panel because it will negatively impact the migration.
+- This migration is a &quot;live mailbox move&quot;, which means that users can send and receive mail as the migration is taking place.
+
+## Step 1:
+
+Log in at [Rackspacemigrations.com](https://rackspacemigrations.com/Account/Login) with the following information:
+
+- Account number
+- Admin ID
+- Password
+
+You will be taken to a portal that lists all of your domains with Exchange services. Select the gear icon next to the domain you would like to upgrade (see below):
+
+ ![Exchagne Upgrades 1.jpg]
+
+## Step 2:
+
+You will be prompted to select a date and time (time zone is Central Standard Time). You can only schedule migrations every hour, on the hour.
+
+ ![Exchagne Upgrades 2.jpg]
+
+## Step 3:
+
+After selecting the date and time you will be taken to a screen that will seek your confirmation. Click &quot;Submit Migration&quot; when ready.
+
+ ![Exchagne Upgrades 3.jpg]
+
+You will then be taken back to the main screen. You will see the status for your migration as well as the Support Ticket number created to track your migration. Unless you log into your mail control panel and update this ticket, no automatic responses will be emailed directly to you.
+
+As you can see from the screen shot, you have the ability to Reschedule or Cancel your migration prior to it starting.
+
+\*\*Some things that affect the length of the migration are:
+
+- Item count
+- Mailbox size
+- Total size of attachments
+- Number of mailboxes on the domain
+- Provisioning delays in our Exchange environment (you can consult our Rackspace Status Page, http://status.apps.rackspace.com/) for notice on this type of issue.
+
+ ![Exchagne Upgrades 4.jpg]
+
+## Step 4:
+
+Once the migration begins you can monitor the status in the home page of rackspacemigrations.com. When the migration completes you can log into your Mail Control Panel and manage the mailboxes.
+
+ ![Exchagne Upgrades 5.jpg]
+
+ 
+# Post Migration:
+
+- Users will have immediate access to the new Outlook Web Access: apps.rackspace.com
+- The following link contains set up guides for manual configurations and our auto-configuration tool: https://emailhelp.rackspace.com
+
+**Note**: Outlook 2003 and 2007 and Entourage 2004 are not supported with Exchange 2016. Users on Outlook 2003 or 2007 must be upgraded to Outlook 2010 or later.
 
 #### Spam filtering
 
@@ -55,21 +157,6 @@ The spam handling in Exchange 2016 is the same as Exchange 2013, and is differen
 
 The domain quarantine will still receive spam messages for other Exchange addresses (contacts, distribution lists, public folders, and resources). You can set the user's spam to be delivered to the domain quarantine, but only an administrator can access this quarantine manager.
 
-### After migration: Mail client and mobile device configuration
-
-**Note**: Outlook 2003 and 2007 and Entourage 2004 are not supported with Exchange 2016. Users on Outlook 2003 or 2007 must be upgraded to Outlook 2010 or later.
-
-#### Autodiscover
-
-After your migration is complete, an alert will appear indicating that Autodiscover is requesting to reconfigure your email profile. Select **Always Do This Option** , and then select **Allow**. The Exchange 2016 mailbox will begin to resynchronize.
-
-#### Manual configurations
-
-We recommend using Autodiscover to configure users. If a manual configuration is needed, visit the following link for our setup guides: [Setup Up Microsoft Exchange Email Clients and Mobile Devices](https://admin.rackspace.com/knowledge_center/article/setting-up-microsoft-exchange-email-clients-mobile-devices).
-
-#### Rackspace Auto Configuration Tool (Outlook 2010 and Outlook 2013)
-
-Your users can download the Rackspace Auto Configuration Tool to set up Outlook for Rackspace Exchange. The tool requires only the user's email address and password to automatically configure Outlook.
 
 ### Frequently asked questions
 
