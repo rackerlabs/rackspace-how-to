@@ -7,7 +7,7 @@ created_date: '2016-01-17'
 created_by: Rackspace Support
 last_modified_date: '2016-01-17'
 last_modified_by: Rackspace Support
-product: Rackspace Private Cloud Powered by Microsoft Cloud Platform
+product: Rackspace Private Cloud Powered By Microsoft Cloud Platform
 product_url: rpc-microsoft
 ---
 
@@ -62,19 +62,19 @@ Private Cloud powered by Microsoft Cloud Platform can work for you.
 
 #### What are some use cases for Microsoft Cloud Platform?
 
--   **Core infrastructure**: Microsoft Systems Center is an ideal
+-   **Core infrastructure**: Microsoft System Center is an ideal
     choice whenever seasonal spikes require additional power from your
     hardware reserves or Microsoft Azure.
 -   **Application hosting**: Consisting of Microsoft SharePoint and
     Exchange, the Rackspace dedicated Cloud Office product is the
     ultimate application for the Microsoft Cloud OS platform.
 -   **Web hosting**: You can host production, QA, and development
-    environments on Systems Center with confidence.
+    environments on System Center with confidence.
 -   **Database hosting**: System Centers, Windows Azure Pack, and either
     SQL Server or MySQL Server, deliver the essential environment to
     architect an enterprise-grade SQL database service, and
     private-cloud security is maintained. You can natively manage database
-    servers through Systems Center or DBaaS.
+    servers through System Center or DBaaS.
 -   **Disaster recovery** - The Microsoft virtualization stack provides for
     disaster recovery. Build out these critical environments by using known
     technologies, such as PowerShell and Windows Server, on a platform
