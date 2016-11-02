@@ -35,12 +35,12 @@ Private Cloud powered by Microsoft Cloud Platform can work for you.
     from a central portal. You can connect and manage servers in your own data
     center, and burst out to public Azure.
 -   **Database as a service**: The Windows Azure pack enables DBaaS, so that
-    you can provision and manage Microsoft SQL Server&reg or MySQL&reg databases
+    you can provision and manage Microsoft SQL Server&reg; or MySQL&reg; databases
     through a web interface running on your dedicated, secure hardware.
 
 #### Why should I use Microsoft Cloud Platform?
 
--   **Backed by *Fanatical Support*&reg**: Microsoft Cloud Platform
+-   **Backed by *Fanatical Support*&reg;**: Microsoft Cloud Platform
     includes full infrastructure support backed 24x7x365. Guest Virtual
     Machine (VM) support is available on your terms, and guest VMs are also
     supported.
