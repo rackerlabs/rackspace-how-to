@@ -16,7 +16,7 @@ data center goals by delivering enterprise-class capabilities, including
 best-in-class management of your Microsoft Windows Server infrastructure
 and first-party Microsoft workloads. It combines Microsoft software,
 consolidated guidance, and best-practice architecture with Rackspace's
-experience providing **_Fanatical Support &reg;_** and hosting solutions
+experience providing **_Fanatical Support&reg;_** and hosting solutions
 for compute, network, and storage architectures.
 
 Rackspace worked with Microsoft to design a cloud that complies
