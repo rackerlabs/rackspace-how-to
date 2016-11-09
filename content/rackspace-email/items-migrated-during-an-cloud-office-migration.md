@@ -5,8 +5,8 @@ title: Items migrated during an Cloud Office migration
 type: article
 created_date: '2013-11-13'
 created_by: Milton Prado
-last_modified_date: '2016-01-18'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-11-09'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -19,7 +19,7 @@ to, the items that are migrated by MigrationWiz might differ.
 
 The following table shows which items are automatically migrated by the tool.
 
-<img src="{% asset_path rackspace-email/items-migrated-during-an-cloud-office-migration/WhatWeMigrate%20copy.png %}" width="681" height="626" />
+<img src="{% asset_path rackspace-email/items-migrated-during-an-cloud-office-migration/items-migrated-table.png %}" width="681" height="626" />
 
 ### Items that are not migrated
 
