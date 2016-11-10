@@ -41,7 +41,7 @@ VPN user automation currently does not allow for the following modifications:
 - VPN-filters
 - Group-lock
 - Framed IP addresses
-- Remove a VPN user
-- Modify a VPN user password
+- VPN user removal
+- VPN user password modification
 
 If you require any of the above modifications, open a ticket, and Rackspace Support will process your request manually.
