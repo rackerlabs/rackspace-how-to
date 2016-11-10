@@ -1,6 +1,6 @@
 ---
-permalink: /dedicated-hosting/
-audit_date:
+permalink: dedicated-hosting/
+audit_date: '2016-11-09'
 title: Dedicated Hosting
 type: product
 created_date: '2016-11-01'
