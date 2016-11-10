@@ -4,7 +4,7 @@ audit_date:
 title: Add a new VPN user in the MyRackspace Portal
 type: product
 created_date: '2016-11-10'
-created_by: Stephanie Fillmon
+created_by: Trevor Becker
 last_modified_date: '2016-11-10'
 last_modified_by: Stephanie Fillmon
 product: Dedicated Hosting
