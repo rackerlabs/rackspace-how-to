@@ -11,6 +11,8 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
+### General
+
 #### Where can I learn more about the service levels for dedicated managed hosting?
 
 You can find a comparison of the service levels on the [Managed Hosting product page](https://www.rackspace.com/managed-hosting/service-levels).
