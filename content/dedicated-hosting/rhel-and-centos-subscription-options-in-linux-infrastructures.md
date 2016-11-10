@@ -1,6 +1,6 @@
 ---
-permalink: /rhel-and-centos-subscription-options-in-linux-infrastructures/
-audit_date:
+permalink: rhel-and-centos-subscription-options-in-linux-infrastructures/
+audit_date: '2016-11-09'
 title: Red Hat and CentOS subscription options in Linux infrastructures
 type: product
 created_date: '2016-11-02'
