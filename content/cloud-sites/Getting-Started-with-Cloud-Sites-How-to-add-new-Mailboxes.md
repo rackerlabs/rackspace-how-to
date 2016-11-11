@@ -1,24 +1,38 @@
-Note: This article is written for our Cloud Sites Email Control Panel, which is a new feature added for Classic Customers in November 2016.   Navigate directly to the control panel here:   https://cloudsites.mycpsrvr.com.
+---
+permalink: getting-started-with-cloud-sites-how-to-add-new-mailboxes/
+audit_date:
+title: 'Getting Started With Cloud Sites: How to add new mailboxes'
+type: article
+created_date: '2016-11-11'
+created_by: Thomas Hester
+last_modified_date: '2016-11-11'
+last_modified_by: Stepanie Fillmon
+product: Cloud Sites
+product_url: cloud-sites
+---
 
+**Note:** This article is written for our Cloud Sites Email Control Panel, which is a new feature added for Classic Customers in November 2016.   Navigate directly to the control panel here:   https://cloudsites.mycpsrvr.com.
 
+This article shows how to add new mailboxes through the Cloud Sites Email Control Panel.
 
+### Add new mailboxes individually
 
-This article will show you how to add new mailboxes through the Cloud Sites Email Control Panel.
+1. Log in to the [Cloud Sites Email Control Panel](https://cloudsites.mycpsrvr.com) using your username and password.
 
-###Adding Mailboxes Individually###
-1. Log in to the Cloud Sites Email Control Panel using your username and password.
-2. In the Email Hosting section, choose Mailboxes.
-3. If you have multiple domains, select the appropriate domain name 
-4. Select **Add Mailbox** button and enter the following required information in the spaces provided:
-  * User Name:   Enter a unique user name for the email account in all lowercase letters
-  * Password:  Enter a password for the email account
-  * Confirm:   Retype the password just entered.
-  * If desired, you can enter additional information about the user in the fields provided.  The **Display Name** is the name that will be displayed when the user sends email.  To add further personal or organizational information, select the **Contact Info** tab.
+2. In the **Email Hosting** section, choose **Mailboxes**.
 
-5. Press **Submit** once the required fields have been completed.
+3. If you have multiple domains, select the appropriate domain name.
 
-[csemail1.png]
+4. Select **Add Mailbox** and enter the following required information in the spaces provided:
 
+   - User Name: Enter a unique user name for the email account in all lowercase letters
+   - Password: Enter a password for the email account
+   - Confirm: Retype the password just entered.
+   - If desired, you can enter additional information about the user in the fields provided. The **Display Name** is the name that will be displayed when the user sends email. To add further personal or organizational information, select the **Contact Info** tab.
+
+   <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-how-to-add-new-mailboxes/CSEMAIL1.png %}" />
+
+5. Click **Save** after you complete the required fields.
 
 ###Adding or Editing Multiple Mailboxes###
 
@@ -39,8 +53,3 @@ Once you have the desired changes entered in the CSV or Excel document, **Choose
 
 
 **NOTE:** These changes will only affect mailboxes specified in the uploaded file.   Any fields left empty in the CSV or Excel document will remain unchanged in the control panel if data previously existed.  However, the **Username, Password,** and **Enabled** fields are required for each mailbox being updated.
-
-
-
-
-
