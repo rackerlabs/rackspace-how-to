@@ -23,7 +23,7 @@ Adding new client VPN users is now an automated task within the MyRackspace port
 
 3. On the **Create New Ticket** page, click the **Subject** text field, and in the drop down menu, select **Create New VPN User on Firewall**.
 
-   <img src="{% asset_path dedicated-hosting/add-new-vpn-user-myrackspace-portal/add-new-vpn-user-select-ticket.png %}" width="681" height="626" />
+   <img src="{% asset_path dedicated-hosting/add-new-vpn-user-myrackspace-portal/add-new-vpn-user-select-ticket.png %}" />
 
 4. Enter your desired VPN username in the **VPN Username** field, and then select which firewall(s) to which you want to add the new user. Then, click **Create Ticket**.
 
