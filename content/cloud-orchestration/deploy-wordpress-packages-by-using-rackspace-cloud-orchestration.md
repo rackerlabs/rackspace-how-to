@@ -1,6 +1,6 @@
 ---
 permalink: deploy-wordpress-packages-by-using-rackspace-cloud-orchestration/
-audit_date:
+audit_date: '2016-11-11'
 title: Deploy WordPress packages by using Rackspace Cloud Orchestration
 type: article
 created_date: '2013-11-12'
@@ -11,7 +11,10 @@ product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
 
-Rackspace Cloud Orchestration for Cloud Servers simplifies the process of creating a WordPress environment, either as a stand-alone server or in a multiple-server cluster. This article shows how to deploy WordPress packages by using Cloud Orchestration.
+Rackspace Cloud Orchestration for Cloud Servers simplifies the process
+of creating a WordPress environment, either as a stand-alone server or
+in a multiple-server cluster. This article shows how to deploy WordPress
+packages by using Cloud Orchestration.
 
 ### Deploy the servers
 
@@ -19,19 +22,22 @@ Rackspace Cloud Orchestration for Cloud Servers simplifies the process of creati
 
 2. In the top navigation bar, click **Orchestration**, and under Create Resources, click **Stack**.
 
-3. Specify a name and region for your stack.
+3. Click on the type of stack you want to create. Popular stack types are listed first, followed by all available stack templates.
 
-4. In the **Application Name** list, select **WordPress** and then choose the flavor, either **Single Linux server** or **Multiple Linux servers**.
+4. If required, Create a custom stack by selecting **Create Custom Template** under the **All Stacks** heading.
 
-5. Click **Next Step**.
+5. Click **Create Stack**, and then select the flavor. You can choose either _Production_ or _Deployment_.
 
-6. On the next page, specify server and WordPress settings.
+6. Specify a name and region for your stack.
 
-7. Under Advanced Options, enter the database name.
+7. In the following section, specify server and WordPress settings.
 
-8. Click **Create Stack**.
+8. Under Advanced Options, if required, enter the Cloud Database Flavor, the Database Disk Size (in GB), Server Flavor, the secondary servers number, and the Server Image.
+
+9. Click **Create Stack**.
 
 On the stack details page you will see a green **Up** status in the status field when the stack is complete.
+It may take several minutes for the stack build process to finish.
 
 ### Access the servers
 
