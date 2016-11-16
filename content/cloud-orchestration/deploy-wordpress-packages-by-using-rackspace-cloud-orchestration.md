@@ -55,4 +55,4 @@ After you are finished, you can start using WordPress by navigating to the URL t
 
 ### Related Articles
 
-For more information about creating and working with stacks in Cloud Orchestration, see [Get started quickly with Rackspace Cloud Orchestration](how-to/quick-set-up-with-rackspace-cloud-orchestration).
+For more information about creating and working with stacks in Cloud Orchestration, see [Get started quickly with Rackspace Cloud Orchestration](/how-to/quick-set-up-with-rackspace-cloud-orchestration).
