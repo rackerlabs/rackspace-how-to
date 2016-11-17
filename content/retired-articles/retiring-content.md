@@ -50,11 +50,16 @@ by using the @ht-review tag.
 
 ## Make a copy of the retired article for the archive folder
 
-1. On your PC, copy the original article and paste it into the
-content/retired-articles folder.
+1. On your PC, copy the original article.
 
-2. Commit the change and create a pull request. After the pull request is
-created, post a link in the Rackdx "how-to" slack channel for review and merge,
+2. Go to the [Rackspace How-To retired articles folder](https://github.com/rackerlabs/rackspace-how-to/tree/master/content/retired-articles). 
+
+3. Click **Create new file**.
+
+4. Paste the original article into the GitHub text editor. Don't forget to enter the file name in *Name your file* box at the top of the page. The file name should match the `permalink` metadata field from the original article, followed by the file extension `.md`. 
+
+5. Commit the change and create a pull request. After the pull request is
+created, post a link in the Rackdx "how-to" slack channel for review and merge
 by using the @ht-review tag.
 
 
