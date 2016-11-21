@@ -1,84 +1,69 @@
-Using your [**Cloud Sites Email Control Panel**](https://cloudsites.mycpsrvr.com), you can manage both Safelists
-and Blacklists, adding sender’s email address, domains, or IP address to
-the appropriate mailbox or domain level lists.
+---
+permalink: managing-safe-and-blacklists/
+audit_date:
+title: Manage safelists and blacklists
+type: article
+created_date: '2016-11-20'
+created_by: Thomas Hester
+last_modified_date: '2016-11-20'
+last_modified_by: Laura Santamaria
+product: Cloud Sites
+product_url: cloud-sites
+---
 
-**Manage Safelists**
+Using your [**Cloud Sites Email Control Panel**](https://cloudsites.mycpsrvr.com), you can manage both safelists and blacklists, adding a sender's email address, domain, or IP address to the appropriate mailbox- or domain-level lists.
 
-Safelists allow you to add a sender’s email address, domains, or IP
-address to deliver directly to the mailbox. This is useful when a sender
-is flagged as spam but you don’t want the sender’s email to be delivered
-to the Spam/Junk Folder.
+### Manage safelists
 
-1.  For individual mailboxes, click **Safelists** in the **Email
-    > Hosting** section. For the domain, click **Safelists** in the
-    > **Domains** section.
+Safelists allow you to add a sender's email address, domain, or IP
+address to a list that delivers directly to the mailbox. This action is useful when a sender is flagged as spam but you don't want the sender's email to be delivered to the **spam** or **junk** folder.
 
-![](safelist1.png)
+To access the safelists for individual mailboxes, click **Safelists** in the **Email Hosting** section. To access the safelists for mailboxes in the entire domain, click **Safelists** in the **Domains** section.
 
-1.  To add a domain name or email address to the safelist, enter the
-    > domain or email address in the box, and then click **Add**.
+#### Add email addresses, domains, and IP addresses
 
-2.  To remove a domain or email address, select the name in the list and
-    > then click **Remove**. To remove all domain names or email
-    > addresses listed in the window, click **Clear**.
+1. Enter the email address, domain, or IP address or range in the box.
 
-> NOTE: If you have multiple domain names or email addresses to add, use
-> the bulk import option to upload a .csv or .txt file containing the
-> information.
+2. Click **Add**.
 
-![](safelist2.png)
+  **Note:** If you have multiple email addresses, domain names, or IP addresses to add, use the bulk import option to upload a **.csv** or **.txt** file containing the information.
 
-1.  To add an IP address to the safelist, enter the IP address
-    > (or range) in the box and then click **Add**.
+3. Click **Save**.
 
-2.  To remove an IP address, select the address in the list and then
-    > click **Remove**. To remove all IP addresses listed in the window,
-    > click **Clear**.
+#### Remove email addresses, domains, and IP addresses
 
-> NOTE: If you have multiple IP addresses to add, use the bulk import
-> option to upload a .csv or .txt file containing the information.
+1. Select email address, domain, or IP address or range from the list.
 
-![](safelist3.png)
+2. Click **Remove**.
 
-1.  Click **Save.**
+   To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
 
-**Manage Blacklists**
+3. Click **Save**.
 
-Blacklists allow you to block a sender’s email address, domain, or IP
-address from delivering to your mailbox. Objects that are blacklisted
+### Manage blacklists
+
+Blacklists allow you to block a sender's email address, domain, or IP
+address from delivering to a mailbox. Objects that are blacklisted
 are not delivered to the mailbox.
 
-1.  For individual mailboxes, click **Blacklists** in the **Email
-    > Hosting** section. For the domain, click **Safelists** in the
-    > **Domains** section.
+To access the blacklist for individual mailboxes, click **Blacklists** in the **Email Hosting** section. To access the blacklist for mailboxes in the entire domain, click **Safelists** in the **Domains** section.
 
-![](safelist4.png)
+#### Add email addresses, domains, and IP addresses
 
-1.  To add a domain name or email address to the blacklist, enter the
-    > domain or email address in the box, and then click **Add**.
+1. Enter the email address, domain, or IP address or range in the box.
 
-2.  To remove a domain or email address, select the name in the list and
-    > then click **Remove**. To remove all domain names or email
-    > addresses listed in the window, click **Clear**.
+2. Click **Add**.
 
-> NOTE: If you have multiple domain names or email addresses to add, use
-> the bulk import option to upload a .csv or .txt file containing the
-> information.
+  **Note:** If you have multiple email addresses, domain names, or IP addresses to add, use the bulk import option to upload a **.csv** or **.txt** file containing the information.
 
-![](safelist5.png)
+3. Click **Save**.
 
-1.  To add an IP address to the blacklist, enter the IP address
-    > (or range) in the box, and then click **Add**.
+#### Remove email addresses, domains, and IP addresses
 
-2.  To remove an IP address, select the address in the list and then
-    > click Remove. To remove all IP addresses listed in the window,
-    > click **Clear**.
+1. Select email address, domain, or IP address or range from the list.
 
-> NOTE: If you have multiple IP addresses to add, use the bulk import
-> option to upload a .csv or .txt file containing the information.
+2. Click **Remove**.
 
-![](safelist6.png)
+   To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
 
-1.  Click **Save**.
-
-<span id="_gjdgxs" class="anchor"></span>
+3. Click **Save**.
