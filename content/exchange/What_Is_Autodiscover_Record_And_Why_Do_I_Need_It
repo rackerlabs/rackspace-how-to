@@ -1,0 +1,50 @@
+---
+permalink: What_Is_Autodiscover_Record_And_Why_Do_I_Need_It/
+audit_date: '2016-1-27'
+title: What Is Autodiscover And Why Do I Need It
+type: article
+created_date: '2016-10-25'
+created_by: Aaron Medrano
+last_modified_date: '2016-1-27'
+last_modified_by: Aaron Medrano
+product: Microsoft Exchange
+product_url: exchange
+---
+
+# What is Autodiscover?
+In order for Exchange account to function properly in Outlook, you must have a special DNS record set up for your domain name which points to Rackspace Cloud Office's Autodiscover server.
+
+# What Features Does Autodiscover Provide?
+You need to set up the Autodiscover record for your domain name to have the following Exchange features:
+1. Setup Outlook 2007/2010/2013/2016 for Windows setup using Autodiscovery.
+2. Setup Outlook 2011/2016 for Mac using Autodiscovery.
+3. Free/Busy information for Calendar Scheduling
+4. Out of Office setup and management through Outlook.
+**Note**: Without the Autodiscover record you can use Outlook Web Access to set up automatic replies. 
+5. Offline Address Book synchronization.
+6. Sharing Calendars, Contacts, and Folders using Sharing invitation within Outlook.
+7. Access to Public Folders in Exchange 2013 and Exchange 2016.
+8. Automapping of Shared Mailboxes
+
+# How Do I Setup Autodiscover?
+For a full breakdown of setting up Autodiscvoer with your DNS host, please check out our article [Set up DNS records for Cloud Office email and Skype for Business](https://support.rackspace.com/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business/)
+
+#How do I Check if Autodiscover is Resolving Correctly to Rackspace?
+
+To determine if the Autodiscover service is configured properly, you may use the **Test E-mail AutoConfiguration tool** in Outlook.
+
+1. While Outlook is running, hold down the CTRL key, right-click the Outlook icon in your system tray or notification area (lower right corner of computer screen). Select **Test E-mail AutoConfiguration**.
+<![autodiscover1.jpg]>
+
+2. Enter email address and password
+3. Uncheck the boxes next to **Use Guessmart** and **Secure Guessmart Authentication**. **Use Autodiscover** must be checked
+4. Select **Test** to run test.
+
+<![autodiscover2.jpg]>
+
+You can also check if it resolves correctly if the **Log** tab shows:
+1. Redirect Check
+2. Autodiscover to https://secure.autodiscover.emailsrvr.com/autodiscover/autodiscover.xml starting
+3. Autodiscover to https://secure.autodiscover.emailsrvr.com/autodiscover/autodiscover.xml Succeeded (0x00000000)
+
+<![autodiscover3.jpg]>
