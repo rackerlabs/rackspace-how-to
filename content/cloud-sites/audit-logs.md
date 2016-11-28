@@ -1,18 +1,32 @@
+---
+permalink: audit-logs/
+audit_date:
+title: Review audit logs
+type: article
+created_date: '2016-11-22'
+created_by: Thomas Hester
+last_modified_date: '2016-11-22'
+last_modified_by: Laura Santamaria
+product: Cloud Sites
+product_url: cloud-sites
+---
+
 All administrator activity is logged, including logging in to the control panel, changing administrators, and adjusting and logging in to mailboxes. Administrator logs are available in the control panel for three months.
 
-To review these logs, log into the Cloud Sites Email Control Panel and perform the following steps:
+### Review audit logs
 
-1.  At the top of the page, click your account name and select Audit Logs.
+1. Log in to the Cloud Sites Email Control Panel.
 
-   [auditlogs1.png]
+1. At the top of the page, click your account name.
 
+1. Select **Audit Logs**.
 
+  ![Audit Logs option in the dropdown at the top of the Cloud Sites Email Control Panel page](_assets/img/cloud-sites/audit-logs/auditlogs1.png)
 
-2.  Filter by date, control panel area, or action.  The default settings is all actions when you come to this page.
-   
-   [auditlogs2.png]
+1. Filter by date, control panel area, or action.
 
+  ![Audit logs page](_assets/img/cloud-sites/audit-logs/auditlogs2.png)
 
-3.  Click **Export List (.csv)** to export the administrator activity report as an Excel-compatible CSV file.
+  The default setting is to show all actions when you come to this page.
 
-
+1. Click **Export List (.csv)** to export the administrator activity report as an Excel-compatible **.csv** file.
