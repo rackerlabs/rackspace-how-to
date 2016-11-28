@@ -21,11 +21,17 @@ Mailboxes can be moved in batches to make the move more manageable for administr
 
 1. Click the **Domains** section.
 
-1. In the **Tools** section, click **Split Domain Routing**.
+  ![Domains section of the Cloud Sites Email Control Panel](_assets/img/cloud-sites/split-domain-routing/splitrouting1.png)
 
-1. If you have multiple domains, select the appropriate domain name. To change domains at any time, click the **change domain** link.
+1. In the **Tools** section, click **Split Domain**.
 
-1. Click on the option to **Enable Split Domain** routing.
+  ![Split Domain option in the Tools section of the Domains Home tab](_assets/img/cloud-sites/split-domain-routing/splitrouting2.png)
+
+1. If you have multiple domains, select the appropriate domain name. To change domains at any time, click the **change domain** link at the top of the page.
+
+1. Click on the option to **Enable Split Domain Routing**.
+
+  ![Split Domain settings page in the Tools tab](_assets/img/cloud-sites/split-domain-routing/splitrouting3.png)
 
 1. Add your external mail server and a valid email address hosted by the external mail server.
 
