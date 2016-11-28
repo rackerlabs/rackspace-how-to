@@ -38,7 +38,7 @@ List Domain Changes	| ```GET /domains/domainId/changes?since=[date/time]``` | **
 Export Domain	| ```GET /domains/domainId/export``` | **Admin<br />Creator<br />Observer** | Exports details of the specified domain.
 Search Domains | ```GET /domains/search{?name}``` | **Admin<br />Creator<br />Observer** | Lists all names manageable by the specified account that have the value of the name parameter as part of their name.
 Create Domain(s) | ```POST /domains``` | **Admin<br />Creator<br />Observer**	| Creates a new domain.
-Clone Domain | ```POST /domains/domainId/clone?cloneName=new-domain-name``` | **Admin<br />Creator** | Creates the specified domain by cloning the domain with ```iddomainId```.
+Clone Domain | ```POST /domains/domainId/clone?cloneName=new-domain-name``` | **Admin<br />Creator** | Creates the specified domain by cloning the domain with the ID ```domainId```.
 Import Domain | ```POST /domains/import``` | **Admin<br />Creator** | Imports a new domain with the configuration specified by the request.
 Modify Single Domain | ```PUT /domains/domainId``` | **Admin<br />Creator** | Modifies the configuration of a domain.
 Modify Multiple Domains | ```PUT /domains``` | **Admin<br />Creator** | Modifies multiple domains.
@@ -53,7 +53,7 @@ Method | API Action | Role | Description
 --- | --- | --- | ---
 List Subdomains	| ```GET /domains/domainId/subdomains``` | **Admin<br />Creator<br />Observer** | Lists domains that are subdomains of the specified domain.
 
-#### Records
+### Records
 
 Method | API Action | Role | Description
 --- | --- | --- | ---
