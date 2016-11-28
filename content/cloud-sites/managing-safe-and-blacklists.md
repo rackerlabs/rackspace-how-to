@@ -11,14 +11,15 @@ product: Cloud Sites
 product_url: cloud-sites
 ---
 
-Using your [**Cloud Sites Email Control Panel**](https://cloudsites.mycpsrvr.com), you can manage both safelists and blacklists, adding a sender's email address, domain, or IP address to the appropriate mailbox- or domain-level lists.
+Using your [Cloud Sites Email Control Panel](https://cloudsites.mycpsrvr.com), you can manage both safelists and blacklists, adding a sender's email address, domain, or IP address to the appropriate mailbox- or domain-level lists.
 
 ### Manage safelists
 
-Safelists allow you to add a sender's email address, domain, or IP
-address to a list that delivers directly to the mailbox. This action is useful when a sender is flagged as spam but you don't want the sender's email to be delivered to the **spam** or **junk** folder.
+Safelists allow you to add a sender's email address, domain, or IP address to a list that delivers directly to the mailbox. This action is useful when a sender is flagged as spam but you don't want the sender's email to be delivered to the **spam** or **junk** folder.
 
 To access the safelists for individual mailboxes, click **Safelists** in the **Email Hosting** section. To access the safelists for mailboxes in the entire domain, click **Safelists** in the **Domains** section.
+
+![Safelists option under Spam Filtering in the Domains Home section](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist1.png)
 
 #### Add email addresses, domains, and IP addresses
 
@@ -27,6 +28,10 @@ To access the safelists for individual mailboxes, click **Safelists** in the **E
 2. Click **Add**.
 
   **Note:** If you have multiple email addresses, domain names, or IP addresses to add, use the bulk import option to upload a **.csv** or **.txt** file containing the information.
+
+  ![Domain and Email Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist2.png)
+
+  ![IP Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist3.png)
 
 3. Click **Save**.
 
@@ -37,6 +42,10 @@ To access the safelists for individual mailboxes, click **Safelists** in the **E
 2. Click **Remove**.
 
    To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
+
+   ![Domain and Email Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist2.png)
+
+   ![IP Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist3.png)
 
 3. Click **Save**.
 
@@ -48,6 +57,8 @@ are not delivered to the mailbox.
 
 To access the blacklist for individual mailboxes, click **Blacklists** in the **Email Hosting** section. To access the blacklist for mailboxes in the entire domain, click **Safelists** in the **Domains** section.
 
+![Blacklists option in the Spam Filtering section of the Domains Home section](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist4.png)
+
 #### Add email addresses, domains, and IP addresses
 
 1. Enter the email address, domain, or IP address or range in the box.
@@ -55,6 +66,10 @@ To access the blacklist for individual mailboxes, click **Blacklists** in the **
 2. Click **Add**.
 
   **Note:** If you have multiple email addresses, domain names, or IP addresses to add, use the bulk import option to upload a **.csv** or **.txt** file containing the information.
+
+  ![Domain and Email Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist5.png)
+
+  ![IP Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist6.png)
 
 3. Click **Save**.
 
@@ -65,5 +80,9 @@ To access the blacklist for individual mailboxes, click **Blacklists** in the **
 2. Click **Remove**.
 
    To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
+
+   ![Domain and Email Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist5.png)
+
+   ![IP Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist6.png)
 
 3. Click **Save**.
