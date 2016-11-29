@@ -23,11 +23,11 @@ A catch-all address receives all email sent to invalid mailboxes at a user's dom
 
 1. In the **Tools** section, click **Catch-All Address**.
 
-  <img src="{% asset_path cloud-sites/catch-all-addresses/catchall2.png %}" alt="Catch-All Address link in the Tools section of the Domains panel of the Cloud Sites Email Control Panel" />
+  <img src="{% asset_path cloud-sites/set-up-catch-all-addresses/catchall2.png %}" alt="Catch-All Address link in the Tools section of the Domains panel of the Cloud Sites Email Control Panel" />
 
 1. If you have multiple domains, select the appropriate domain name. To change domains, click **change domain** at the top of the page.
 
-  <img src="{% asset_path cloud-sites/catch-all-addresses/catchall3.png %}" alt="The Catch-All Address tool panel" />
+  <img src="{% asset_path cloud-sites/set-up-catch-all-addresses/catchall3.png %}" alt="The Catch-All Address tool panel" />
 
 1. Select the **Activate Catch-All Address** check box.
 
