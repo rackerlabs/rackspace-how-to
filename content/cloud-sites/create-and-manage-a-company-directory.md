@@ -1,11 +1,11 @@
 ---
-permalink: company-directory/
+permalink: create-and-manage-a-company-directory/
 audit_date:
 title: Create and manage a company directory
 type: article
-created_date: '2016-11-22'
+created_date: '2016-11-29'
 created_by: Thomas Hester
-last_modified_date: '2016-11-22'
+last_modified_date: '2016-11-29'
 last_modified_by: Laura Santamaria
 product: Cloud Sites
 product_url: cloud-sites
@@ -19,11 +19,11 @@ When you create a company directory, users in the directory have access to up-to
 
 1. Click on the **Email Hosting** section.
 
-  ![Email Hosting section of the Cloud Sites Email Control Panel](_assets/img/cloud-sites/company-directory/companydir1.png)
+    <img src="{% asset_path cloud-sites/create-and-manage-a-company-directory/companydir1.png %}" alt="Email Hosting section of the Cloud Sites Email Control Panel" />
 
 1. In the **Collaboration** section, click **Company Directory**.
 
-  ![Company Directory section of the Collaboration page](_assets/img/cloud-sites/company-directory/companydir2.png)
+    <img src="{% asset_path cloud-sites/create-and-manage-a-company-directory/companydir2.png %}" alt="Company Directory section of the Collaboration page" />
 
   From here, you can add, edit, or delete an alias.
 
@@ -31,7 +31,7 @@ When you create a company directory, users in the directory have access to up-to
 
 1. While viewing the **Company Directory** list, click the name of the directory you want to edit. If you are creating a new directory, click **Add Directory**.
 
-  ![Add Directory button on the Company Directory page](_assets/img/cloud-sites/company-directory/companydir3.png)
+    <img src="{% asset_path cloud-sites/create-and-manage-a-company-directory/companydir3.png %}" alt="Add Directory button on the Company Directory page" />
 
 1. In the **Name** box, change or create the directory's name.
 
