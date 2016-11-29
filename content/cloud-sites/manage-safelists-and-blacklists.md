@@ -1,5 +1,5 @@
 ---
-permalink: managing-safe-and-blacklists/
+permalink: manage-safelists-and-blacklists/
 audit_date:
 title: Manage safelists and blacklists
 type: article
@@ -19,7 +19,7 @@ Safelists allow you to add a sender's email address, domain, or IP address to a 
 
 To access the safelists for individual mailboxes, click **Safelists** in the **Email Hosting** section. To access the safelists for mailboxes in the entire domain, click **Safelists** in the **Domains** section.
 
-![Safelists option under Spam Filtering in the Domains Home section](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist1.png)
+  <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist1.png %}" alt="Safelists option under Spam Filtering in the Domains Home section" />
 
 #### Add email addresses, domains, and IP addresses
 
@@ -29,9 +29,9 @@ To access the safelists for individual mailboxes, click **Safelists** in the **E
 
   **Note:** If you have multiple email addresses, domain names, or IP addresses to add, use the bulk import option to upload a **.csv** or **.txt** file containing the information.
 
-  ![Domain and Email Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist2.png)
+    <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist2.png %}" alt="Domain and Email Safelist settings page" />
 
-  ![IP Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist3.png)
+    <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist3.png %}" alt="IP Safelist settings page" />
 
 3. Click **Save**.
 
@@ -43,9 +43,9 @@ To access the safelists for individual mailboxes, click **Safelists** in the **E
 
    To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
 
-   ![Domain and Email Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist2.png)
+     <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist2.png %}" alt="Domain and Email Safelist settings page" />
 
-   ![IP Safelist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist3.png)
+     <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist3.png %}" alt="IP Safelist settings page" />
 
 3. Click **Save**.
 
@@ -57,7 +57,7 @@ are not delivered to the mailbox.
 
 To access the blacklist for individual mailboxes, click **Blacklists** in the **Email Hosting** section. To access the blacklist for mailboxes in the entire domain, click **Safelists** in the **Domains** section.
 
-![Blacklists option in the Spam Filtering section of the Domains Home section](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist4.png)
+  <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist4.png %}" alt="Blacklists option in the Spam Filtering section of the Domains Home section" />
 
 #### Add email addresses, domains, and IP addresses
 
@@ -67,9 +67,9 @@ To access the blacklist for individual mailboxes, click **Blacklists** in the **
 
   **Note:** If you have multiple email addresses, domain names, or IP addresses to add, use the bulk import option to upload a **.csv** or **.txt** file containing the information.
 
-  ![Domain and Email Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist5.png)
+    <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist5.png %}" alt="Domain and Email Blacklist settings page" />
 
-  ![IP Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist6.png)
+    <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist6.png %}" alt="IP Blacklist settings page" />
 
 3. Click **Save**.
 
@@ -81,8 +81,8 @@ To access the blacklist for individual mailboxes, click **Blacklists** in the **
 
    To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
 
-   ![Domain and Email Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist5.png)
+     <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist5.png %}" alt="Domain and Email Blacklist settings page" />
 
-   ![IP Blacklist settings page](_assets/img/cloud-sites/managing-safe-and-blacklists/safelist6.png)
+     <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist6.png %}" alt="IP Blacklist settings page" />
 
 3. Click **Save**.
