@@ -44,7 +44,7 @@ When you create a company directory, users in the directory have access to up-to
 
 1. In the **Domains** section, select a domain to add to the directory.
 
-  Use the Filter or Search tools to locate a domain. You can add several domains to the same directory, but each domain can belong to only one directory.
+   Use the Filter or Search tools to locate a domain. You can add several domains to the same directory, but each domain can belong to only one directory.
 
 1. Click **Add**.
 
