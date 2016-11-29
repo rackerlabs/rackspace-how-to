@@ -5,18 +5,23 @@ title: Permissions Matrix for Cloud Files
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2016-04-29'
-last_modified_by: Renee Rendon
+last_modified_date: '2016-11-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
 
-The following matrix displays specific permissions for the roles in Cloud Files. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
+The Cloud Files permissions matrix displays specific permissions for the following roles:
+
+- **Admin** - provides full access to create, read, update, and delete.
+- **Observer** - provides read-only access.
+
+The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
 
 ### As of September 26, 2013
 
-Method Name | API Action | Role | Description
---- | --- | :---: | :---: | ---
+Method | API Action | Role | Description
+--- | --- | --- | ---
 Read Account Metadata | ```HEAD /account``` | **Observer Admin** | View quick metadata on an account.
 Write Account Metadata | `POST /account` | **Admin only** | Write metadata on an account.
 List Containers | `GET /account` | **Observer Admin** | View a list of containers in an account.
@@ -32,5 +37,6 @@ Delete Object | `DELETE /account/container/object` | **Admin only** | Permanentl
 Retrieve Object Metadata | `HEAD /account/container/object` | **Observer Admin** | Retrieve object metadata and other standard HTTP headers.
 Update Object Metadata | `POST /account/container/object` |  **Admin only** | Set your own custom object metadata.
 
+### Related article
 
-**Next steps:** [Permission Matrix for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
+[Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](/how-to/permissions-matrix-for-role-based-access-control-rbac)
