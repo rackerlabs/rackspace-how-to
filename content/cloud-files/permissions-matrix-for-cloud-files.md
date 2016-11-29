@@ -18,8 +18,6 @@ The Cloud Files permissions matrix displays specific permissions for the followi
 
 The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
 
-### As of September 26, 2013
-
 Method | API Action | Role | Description
 --- | --- | --- | ---
 Read Account Metadata | ```HEAD /account``` | **Observer Admin** | View quick metadata on an account.
