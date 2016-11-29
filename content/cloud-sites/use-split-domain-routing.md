@@ -1,5 +1,5 @@
 ---
-permalink: split-domain-routing/
+permalink: use-split-domain-routing/
 audit_date:
 title: Use split domain routing
 type: article
@@ -17,21 +17,21 @@ Mailboxes can be moved in batches to make the move more manageable for administr
 
 **Note:** Split domain routing can be a complicated email setup process and should only be utilized if you are sure that you need this option turned on for your domain. We cannot troubleshoot SDR issues for your domain.
 
-1. Log into the **Cloud Sites Email Control Panel**.
+1. Log in to the Cloud Sites Email Control Panel.
 
 1. Click the **Domains** section.
 
-  ![Domains section of the Cloud Sites Email Control Panel](_assets/img/cloud-sites/split-domain-routing/splitrouting1.png)
+    <img src="{% asset_path cloud-sites/use-split-domain-routing/splitrouting1.png %}" alt="Domains section of the Cloud Sites Email Control Panel" />
 
 1. In the **Tools** section, click **Split Domain**.
 
-  ![Split Domain option in the Tools section of the Domains Home tab](_assets/img/cloud-sites/split-domain-routing/splitrouting2.png)
+    <img src="{% asset_path cloud-sites/use-split-domain-routing/splitrouting2.png %}" alt="Split Domain option in the Tools section of the Domains Home tab" />
 
 1. If you have multiple domains, select the appropriate domain name. To change domains at any time, click the **change domain** link at the top of the page.
 
 1. Click on the option to **Enable Split Domain Routing**.
 
-  ![Split Domain settings page in the Tools tab](_assets/img/cloud-sites/split-domain-routing/splitrouting3.png)
+    <img src="{% asset_path cloud-sites/use-split-domain-routing/splitrouting3.png %}" alt="Split Domain settings page in the Tools tab" />
 
 1. Add your external mail server and a valid email address hosted by the external mail server.
 
