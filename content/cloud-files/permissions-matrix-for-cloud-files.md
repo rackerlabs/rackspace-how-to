@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-cloud-files/
-audit_date:
+audit_date: '2016-11-29'
 title: Permissions Matrix for Cloud Files
 type: article
 created_date: '2013-04-10'
