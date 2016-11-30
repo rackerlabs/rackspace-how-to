@@ -42,9 +42,10 @@ To access the safelists for individual mailboxes, click **Safelists** in the **E
 
 2. Click **Remove**.
 
-  To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
+    To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
 
     <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist2.png %}" alt="Domain and Email Safelist settings page" />
+    
 
     <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist3.png %}" alt="IP Safelist settings page" />
 
@@ -81,10 +82,11 @@ To access the blacklist for individual mailboxes, click **Blacklists** in the **
 
 2. Click **Remove**.
 
-  To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
+   To remove all email addresses, domain names, or IP addresses or ranges listed in the window, click **Clear**.
 
-  <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist5.png %}" alt="Domain and Email Blacklist settings page" />
+    <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist5.png %}" alt="Domain and Email Blacklist settings page" />
+    
      
-  <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist6.png %}" alt="IP Blacklist settings page" />
+    <img src="{% asset_path cloud-sites/manage-safelists-and-blacklists/safelist6.png %}" alt="IP Blacklist settings page" />
 
 3. Click **Save**.
