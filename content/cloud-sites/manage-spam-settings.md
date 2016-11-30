@@ -1,11 +1,11 @@
 ---
-permalink: managing-spam-settings/
+permalink: manage-spam-settings/
 audit_date:
 title: Manage spam settings
 type: article
-created_date: '2016-11-20'
+created_date: '2016-11-30'
 created_by: Thomas Hester
-last_modified_date: '2016-11-20'
+last_modified_date: '2016-11-30'
 last_modified_by: Laura Santamaria
 product: Cloud Sites
 product_url: cloud-sites
@@ -21,7 +21,7 @@ Using your [Cloud Sites Email Control Panel](https://cloudsites.mycpsrvr.com), y
 
 1. In the **Spam Filtering** section, click **Filter Settings**.
 
-  ![Filter Settings link in the Spam Filtering section of the Email Hosting Home tab in the Cloud Sites Email Control Panel](_assets/img/cloud-sites/managing-spam-settings/managingspam1.png)
+    <img src="{% asset_path cloud-sites/manage-spam-settings/managingspam1.png %}" alt="Filter Settings link in the Spam Filtering section of the Email Hosting Home tab in the Cloud Sites Email Control Panel" />
 
 ### Modify domain-level spam settings
 
@@ -31,7 +31,7 @@ Using your [Cloud Sites Email Control Panel](https://cloudsites.mycpsrvr.com), y
 
 1. In the **Spam Filtering** section, click **Filter Settings**.
 
-  ![Filter Settings link in the Spam Filtering section of the Domains Home tab in the Cloud Sites Email Control Panel](_assets/img/cloud-sites/managing-spam-settings/managingspam2.png)
+    <img src="{% asset_path cloud-sites/manage-spam-settings/managingspam2.png %}" alt= "Filter Settings link in the Spam Filtering section of the Domains Home tab in the Cloud Sites Email Control Panel" />
 
 1. Select the mailbox or domain you wish to modify.
 
@@ -53,7 +53,7 @@ Using your [Cloud Sites Email Control Panel](https://cloudsites.mycpsrvr.com), y
 
  - **Deliver to the email address** - Spam messages are sent to an address in your domain that you specify.
 
- ![Spam Filtering Settings page for a domain](_assets/img/cloud-sites/managing-spam-settings/managingspam3.png)
+   <img src="{% asset_path cloud-sites/manage-spam-settings/managingspam3.png %}" alt="Spam Filtering Settings page for a domain" />
 
 1. _(Optional)_ If managing at the domain level, select the desired **Override Options**:
 
@@ -61,8 +61,8 @@ Using your [Cloud Sites Email Control Panel](https://cloudsites.mycpsrvr.com), y
 
   - Override preferences for **all** users regardless of their own preferences.
 
- ![Override Options list](_assets/img/cloud-sites/managing-spam-settings/managingspam4.png)
+     <img src="{% asset_path cloud-sites/manage-spam-settings/managingspam4.png %}" alt="Override Options list" />
 
 1.  Click **Save**.
 
-  ![Spam Filtering Settings page for a domain](_assets/img/cloud-sites/managing-spam-settings/managingspam5.png)
+    <img src="{% asset_path cloud-sites/manage-spam-settings/managingspam5.png %}" alt="Spam Filtering Settings page for a domain" />
