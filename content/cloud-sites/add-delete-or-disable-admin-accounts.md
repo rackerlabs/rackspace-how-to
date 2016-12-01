@@ -41,7 +41,7 @@ This article explains how to add, delete, and disable an administrator through t
 
         - **Standard** - Allows full access to the control panel but restricts the administrator from certain areas of the account section of the control panel.
 
-        - **Limited** - Allows access to only the control panel areas that you specify.
+        - **Limited** - Allows access to only the control panel areas that you specify. Note that Limited Administrators will be able to see the number of domains, but will only be able to affect what they are setup as admins for.
 
         You can select the specific areas at the bottom of the screen after selecting **Limited**. See step 6.
 
