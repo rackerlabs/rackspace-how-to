@@ -11,13 +11,13 @@ product: Cloud DNS
 product_url: cloud-dns
 ---
 
-The Cloud DNS permissions matrix displays specific permissions for the following roles:
+The Cloud DNS permissions matrix displays specific permissions for the following role-based access control (RBAC) roles:
 
  - **Admin** - provides full access to create, read, update, and delete.
  - **Creator** - provides access to create, read, and update.
  - **Observer** - provides read-only access.
 
-The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
+The matrix displays the method names, their corresponding RESTful API commands, and the RBAC roles that are supported.
 
 ### Limits
 
@@ -37,7 +37,7 @@ List Domain Details	| ```GET /domains/domainId``` | **Admin<br />Creator** | Lis
 List Domain Changes	| ```GET /domains/domainId/changes?since=[date/time]``` | **Admin<br />Creator<br />Observer** | Shows all changes to the specified domain since the specified date or time.
 Export Domain	| ```GET /domains/domainId/export``` | **Admin<br />Creator<br />Observer** | Exports details of the specified domain.
 Search Domains | ```GET /domains/search{?name}``` | **Admin<br />Creator<br />Observer** | Lists all names manageable by the specified account that have the value of the name parameter as part of their name.
-Create Domain(s) | ```POST /domains``` | **Admin<br />Creator<br />Observer**	| Creates a new domain.
+Create Domain(s) | ```POST /domains``` | **Admin<br />Creator**	| Creates a new domain.
 Clone Domain | ```POST /domains/domainId/clone?cloneName=new-domain-name``` | **Admin<br />Creator** | Creates the specified domain by cloning the domain with the ID ```domainId```.
 Import Domain | ```POST /domains/import``` | **Admin<br />Creator** | Imports a new domain with the configuration specified by the request.
 Modify Single Domain | ```PUT /domains/domainId``` | **Admin<br />Creator** | Modifies the configuration of a domain.
@@ -87,5 +87,5 @@ View Jobs Status | <code>GET /status/jobId?showDetails=[true&#124;false]<br />GE
 ### Related articles
 
 - [Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](/how-to/permissions-matrix-for-role-based-access-control-rbac)
-- [API Documentation](https://developer.rackspace.com/docs/)
+- [API Documentation for RBAC in Cloud DNS](https://developer.rackspace.com/docs/cloud-dns/v1/general-api-info/role-based-access-control/)
 - [Related How-To Articles](/how-to/cloud-dns/)
