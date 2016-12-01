@@ -1,20 +1,17 @@
 ---
 permalink: email-access-options-during-an-email-migration/
 audit_date:
-title: Email access options during an email migration
+title: Email access options when migrating to Rackspace
 type: article
 created_date: '2013-12-04'
 created_by: Milton Prado
-last_modified_date: '2016-01-18'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-12-01'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Although it is common to set up email clients such as Outlook after a
-migration, Rackspace mailboxes can be accessed at any time after they
-are created. Accessing the mailbox does not interrupt a migration in
-process.
+When migrating from your current email host to Rackspace, it is common to set up email clients such as Outlook after a migration is completed. Rackspace mailboxes, however, can be accessed at any time after they are created. Accessing the mailbox does not interrupt a migration in process.
 
 Users who prefer Webmail can log in via the [Rackspace Webmail
 URL](https://apps.rackspace.com).
@@ -94,8 +91,7 @@ click **Add Account** in the Account Information section.
 
 ### Configuration resources
 
-- [Webmail link for Rackspace Email and
-Exchange](https://apps.rackspace.com)
+- [Webmail link for Rackspace Email and Exchange](https://apps.rackspace.com)
 
 - [Auto-Config Tool](https://emailhelp.rackspace.com) (recommended for new
 client setups)
