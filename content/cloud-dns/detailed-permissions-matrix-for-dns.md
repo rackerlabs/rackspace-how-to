@@ -1,6 +1,6 @@
 ---
 permalink: detailed-permissions-matrix-for-dns/
-audit_date:
+audit_date: '2016-12-02'
 title: Detailed permissions matrix for Cloud DNS
 type: article
 created_date: '2013-04-10'
