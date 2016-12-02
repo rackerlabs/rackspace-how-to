@@ -82,7 +82,7 @@ Delete PTR records | ```DELETE /rdns/{service-name}?href=deviceResourceUri&ip=op
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-View Jobs Status | <code>GET /status/&#123;jobId&#125;?showDetails=[true&#124;false]<br />GET /status?/<br />showDetails=true&#124;false&showErrors=true&#124;false&showRunning= true&#124;false&showCompleted=true&#124;false&limit=int1&offset=int2</code> | **Admin,<br />Creator,<br />Observer** | Lists the status of all asynchronous job requests for an account and filters the information requested by using the optional Boolean request parameters.
+View Jobs Status | <code>GET /status/&#123;jobId&#125;?showDetails=[true&#124;false]<br />GET /status?/showDetails=true&#124;false&showErrors=true&#124; \ <br />false&showRunning=true&#124;false&showCompleted=true&#124;false&limit=int1&offset=int2</code> | **Admin,<br />Creator,<br />Observer** | Lists the status of all asynchronous job requests for an account and filters the information requested by using the optional Boolean request parameters.
 
 ### Related articles
 
