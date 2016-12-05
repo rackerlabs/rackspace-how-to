@@ -5,7 +5,7 @@ title: Security for Rackspace Private Cloud powered by OpenStack
 type: article
 created_date: '2015-03-04'
 created_by: Kenny Johnston
-last_modified_date: '2016-12-01'
+last_modified_date: '2016-12-05'
 last_modified_by: Laura Santamaria
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
@@ -79,6 +79,16 @@ the following actions:
 - View an availability zone but not create one
 
 #### Host operating systems
+
+Starting with version 12.2, RPCO has an optional security-hardening role that
+provides an automated, approved process for meeting the hardening needs of
+private clouds. The controls are based on the Security Technical Implementation
+Guide (STIG) from the United States government, and our OpenStack engineers have
+reviewed the controls to ensure compatibility or to document incompatibility
+with OpenStack clouds. For more technical details, see
+[Rackspace Private Cloud Security Hardening (PDF)](https://dab35129f0361dca3159-2fe04d8054667ffada6c4002813eccf0.ssl.cf1.rackcdn.com/downloads/pdfs/private-cloud-security-hardening-in-rpc-white-paper.pdf)
+and the
+[developer documentation on security hardening in RPCO](https://developer.rackspace.com/docs/private-cloud/rpc/v12/rpc-releasenotes/whats-new-v12-2/#security-hardening).
 
 RPCO recommends hardening the host operating systems. Many current RPCO
 customers currently do this, and our Openstack Private Cloud team will
