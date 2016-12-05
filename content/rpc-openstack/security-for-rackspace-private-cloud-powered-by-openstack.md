@@ -80,7 +80,7 @@ the following actions:
 
 #### Host operating systems
 
-Starting with version 12.2, RPCO has an optional security-hardening role that
+Starting with version 12.2, RPCO has an optional security hardening role that
 provides an automated, approved process for meeting the hardening needs of
 private clouds. The controls are based on the Security Technical Implementation
 Guide (STIG) from the United States government, and our OpenStack engineers have
