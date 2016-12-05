@@ -5,7 +5,7 @@ title: Add, delete, or disable admin accounts
 type: article
 created_date: '2016-11-30'
 created_by: Thomas Hester
-last_modified_date: '2016-11-30'
+last_modified_date: '2016-12-01'
 last_modified_by: Laura Santamaria
 product: Cloud Sites
 product_url: cloud-sites
@@ -42,8 +42,8 @@ This article explains how to add, delete, and disable an administrator through t
         - **Standard** - Allows full access to the control panel but restricts the administrator from certain areas of the account section of the control panel.
 
         - **Limited** - Allows access to only the control panel areas that you specify.
-
-        You can select the specific areas at the bottom of the screen after selecting **Limited**. See step 6.
+        
+            Note that Limited Administrators are able to see the number of domains but can only affect those domains for which they are set up as admins. You can select the specific areas at the bottom of the screen after selecting **Limited**. See step 6.
 
     - **Password** - Enter a password for this administrator account.
 
