@@ -1,5 +1,5 @@
 ---
-permalink: best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup/
+permalink: best-practices-for-backing-up-data-cloud-block-storage-versus-cloud-backup/
 audit_date:
 title: 'Best practices for backing up your data: Cloud Block Storage versus Cloud Backup'
 type: article
