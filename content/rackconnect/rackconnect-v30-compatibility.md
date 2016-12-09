@@ -5,8 +5,8 @@ title: RackConnect v3.0 compatibility
 type: article
 created_date: '2014-09-08'
 created_by: Juan Perez
-last_modified_date: '2016-09-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-12-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -19,7 +19,7 @@ This article outlines the compatibility of RackConnect v3.0 with other Rackspace
 
 The following table lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. The **Requirements** column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.
 
-**Note**: Cloud Load Balancers and OnMetal Servers are not compatible with RackConnect v3.0.
+**Note**: Cloud Load Balancers and OnMetal v1 Servers are not compatible with RackConnect v3.0. OnMetal v2 Servers are compatible, but may require provisioning a new Cloud Network in your RackConnect environment. Contact your support team for assistance.
 
 Product | Requirements | Details | Product information
 --- | --- | --- | ---
