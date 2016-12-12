@@ -7,7 +7,7 @@ created_date: '2015-03-04'
 created_by: Kenny Johnston
 last_modified_date: '2016-12-12'
 last_modified_by: Laura Santamaria
-product: Rackspace Private Cloud Powered By OpenStack
+product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
 
