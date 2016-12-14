@@ -5,7 +5,7 @@ title: Scale a multi-node WordPress by using Rackspace Orchestration
 type: article
 created_date: '2013-11-12'
 created_by: Rackspace Support
-last_modified_date: '2016-12-13'
+last_modified_date: '2016-12-14'
 last_modified_by: Laura Santamaria
 product: Cloud Orchestration
 product_url: cloud-orchestration
@@ -21,15 +21,15 @@ This guide provides instructions for adding a new node to scale a multi-node Wor
 
 2. In the top navigation bar, click **Orchestration > Stacks**.
 
-3. On the Stacks page, click the name of the stack that you want to scale.
+3. On the Stacks page, click the name of the stack to scale.
 
-4. In the Infrastructure section of the stack details page, click the name of the first web node (web01) to load the cloud Server Details page.
+4. In the Infrastructure section of the stack details page, click the name of the first web node (`web01`) to load the cloud server details page.
 
-5. In the Server Details page, go to the **Actions** menu, and select **Create Image**.
+5. In the server details page, go to the **Actions** menu, and select **Create Image**.
 
 6. When prompted, enter a name for the image, and click **Create Image**.
 
-7. To monitor the image creation progress, click **View Images** in the Images section of the Server Details page.
+7. To monitor the image creation progress, click **View Images** in the Images section of the server details page.
 
    After the image is created, the image name and its creation time stamp are displayed.
 
@@ -41,7 +41,7 @@ This guide provides instructions for adding a new node to scale a multi-node Wor
 
 10. On the server creation page, enter a name for the new server, and select the region where it will be created.
 
-    We recommend following the stack naming convention (for example, **web02.example.com**), and creating the new server in the same region as the other nodes in the stack.
+    We recommend following the stack naming convention (for example, **web02.example.com**) and creating the new server in the same region as the other nodes in the stack.
 
 11. In the Image section of the page, select the newly created image.
 
@@ -51,7 +51,7 @@ This guide provides instructions for adding a new node to scale a multi-node Wor
 
 After the server is created and active, you need to make a few adjustments before it is ready to be used by WordPress.
 
-1. From the server detail page, note the ServiceNet IP address of the new server. You will need this information in a later step.
+1. From the Server Detail page, note the ServiceNet IP address of the new server. You will need this information in a later step.
 
     <img src="{% asset_path cloud-orchestration/how-to-scale-multinode-wordpress-by-using-rackspace-orchestration/cpservicenet.png %}" width="600" border="2" alt="" />
 
@@ -63,9 +63,9 @@ After the server is created and active, you need to make a few adjustments befor
 
    If you do not have the stack's private key, you can reset the master server's root password.
 
-   For help using the SSH key with your server, see the How To article on the subject for [Mac/Linux](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](/how-to/logging-in-with-an-ssh-private-key-on-windows).
+   For help using the SSH key with your server, see the How-To articles for [Mac and Linux](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac) or [Windows](/how-to/logging-in-with-an-ssh-private-key-on-windows).
 
-5. After you have logged in to the master server, change the directory to **/etc/lsyncd** and open the **lsyncd.conf.lua** file with `nano`.
+5. After you have logged in to the master server, change the directory to **/etc/lsyncd**, and open the **lsyncd.conf.lua** file with `nano`.
 
         cd /etc/lsyncd
         sudo nano lsyncd.conf.lua
@@ -83,14 +83,14 @@ After the server is created and active, you need to make a few adjustments befor
           source = "/var/www/vhosts/iloveblog.rackspace.com/http_docs",
           target = "wp_user@10.176.129.22:/var/www/vhosts/iloveblog.rackspace.com/http_docs",
           excludeFrom = "/etc/lsyncd/lsyncd.exclude",
-          rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking=no"}
+          rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking = no"}
         }
 
-6. Copy the last `sync{ ... }` section and paste a new copy at the end of the file.
+6. Copy the last `sync{ ... }` section, and paste a new copy at the end of the file.
 
 7. Replace the IP address in the value for `target` in the new `sync` block with the ServiceNet IP of the new server that you created earlier.
 
-    The line to edit looks similar to `target="wp_user@10.176.129.22:/var/www/vhosts/iloveblog.rackspace.com/http_docs"`, as in the following example:
+    The line to edit looks similar to `target = "wp_user@10.176.129.22:/var/www/vhosts/iloveblog.rackspace.com/http_docs"`, as in the following example:
 
         settings = {
           logfile = "/var/log/lsyncd/lsyncd.log",
@@ -103,14 +103,14 @@ After the server is created and active, you need to make a few adjustments befor
           source = "/var/www/vhosts/iloveblog.rackspace.com/http_docs",
           target = "wp_user@10.176.129.22:/var/www/vhosts/iloveblog.rackspace.com/http_docs",
           excludeFrom = "/etc/lsyncd/lsyncd.exclude",
-          rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking=no"}
+          rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking = no"}
         }
         sync{
           default.rsync,
           source = "/var/www/vhosts/iloveblog.rackspace.com/http_docs",
           target = "wp_user@10.176.130.89:/var/www/vhosts/iloveblog.rackspace.com/http_docs",
           excludeFrom = "/etc/lsyncd/lsyncd.exclude",
-          rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking=no"}
+          rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking = no"}
         }
 
 8. When you are finished, press `Ctrl-o` and `Enter` to write the changes, and then press `Ctrl+x` to exit `nano`.
