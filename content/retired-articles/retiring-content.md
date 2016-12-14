@@ -62,15 +62,16 @@ by using the @ht-review tag.
 created, post a link in the Rackdx "how-to" slack channel for review and merge
 by using the @ht-review tag.
 
+## Remove the article from the index.md page
 
+This step is optional and should only be completed if the article is on the index page (the intro page or the landing page) for the topic.
 
+**Important:** Complete this step in the same PR as the one you retired the article.
 
+1. Locate and open `index.md` found in the retired article's folder.
+    
+    You can edit the article in GitHub or in your chosen text editor after opening a new branch.
 
+2. Remove the article's link and alt text.
 
-
-
-
-
-
-
-
+3. Commit the changes and push them up to the branch where you retired the article to update the PR to the master branch.
