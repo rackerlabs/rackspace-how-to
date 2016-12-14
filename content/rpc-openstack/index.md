@@ -1,10 +1,10 @@
 ---
-title: Rackspace Private Cloud Powered by OpenStack
+title: Rackspace Private Cloud Powered By OpenStack
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2016-11-02'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-12-14'
+last_modified_by: Laura Santamaria
 permalink: /rpc-openstack/
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
@@ -21,7 +21,6 @@ product_url: rpc-openstack
 ###  General resources
 
 - [FAQ](https://support.rackspace.com/how-to/rpc-openstack-faq/)
-- [Spheres of Support](https://support.rackspace.com/how-to/rackspace-private-cloud-spheres-of-support/)
 - [Private Cloud Tech Resources](https://support.rackspace.com/how-to/private-cloud-tech-resources/)
 - [Rackspace Private Cloud Software and Reference Architecture](http://www.rackspace.com/cloud/private/openstack/software/)
 - [Rackspace Private Cloud Support](http://www.rackspace.com/cloud/private/openstack/support/)
