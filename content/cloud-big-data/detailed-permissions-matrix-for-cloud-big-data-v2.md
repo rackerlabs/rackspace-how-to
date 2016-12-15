@@ -14,9 +14,9 @@ product_url: cloud-big-data
 
 The Cloud Big Data v2 permissions matrix displays specific permissions for the following role-based access control (RBAC) roles:
 
-    - **Admin** provides full access to create, read, update, and delete.
-    - **Creator** provides access to create, read, and update.
-    - **Observer** provides read-only access.
+  - **Admin** provides full access to create, read, update, and delete.
+  - **Creator** provides access to create, read, and update.
+  - **Observer** provides read-only access.
 
 The matrix displays the Cloud Big Data v2 methods, their corresponding RESTful API commands, and the RBAC roles that are supported.
 
@@ -41,16 +41,16 @@ Show distro details | `GET /v2/{tenantId}/distros/{distroId}` | **Admin<br/>Crea
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Create a stack | `POST /v2/{tenantId}/stacks` | **Admin<br/>Creator** | Creates a new stack. **Note:** This functionality is not yet implemented.
+Create a stack | `POST /v2/{tenantId}/stacks` | **Admin<br/>Creator** | Creates a new stack.<br/>**Note:** This functionality is not yet implemented.
 List all stacks | `GET /v2/{tenantId}/stacks` | **Admin<br/>Creator<br/>Observer** | Lists all stacks, including global stacks and user-created stacks.
 Show stack details | `GET /v2/{tenantId}/stacks/{stackId}` | **Admin<br/>Creator<br/>Observer** | Shows details for the specified stack.
-Delete a stack | `DELETE /v2/{tenantId}/stacks/{stackId}` | **Admin** | Deletes the specified stack. **Note:** This functionality is not yet implemented.
+Delete a stack | `DELETE /v2/{tenantId}/stacks/{stackId}` | **Admin** | Deletes the specified stack.<br/>**Note:** This functionality is not yet implemented.
 
 ### Clusters
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Create a cluster | `POST /v2/{tenantId}/clusters` | **Admin<br/>Creator** | Creates a new cluster. **Note:** You must create a stack before you create a cluster.
+Create a cluster | `POST /v2/{tenantId}/clusters` | **Admin<br/>Creator** | Creates a new cluster.<br/>**Note:** You must create a stack before you create a cluster.
 Delete a cluster | `DELETE /v2/{tenantId}/clusters/{clusterId}` | **Admin** | Deletes the specified cluster.
 List all clusters | `GET /v2/{tenantId}/clusters` | **Admin<br/>Creator<br/>Observer** | Lists all clusters for your account.
 Show cluster details | `GET /v2/{tenantId}/clusters/{clusterId}` | **Admin<br/>Creator<br/>Observer** | Shows details for the specified cluster.
