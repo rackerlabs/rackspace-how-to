@@ -1,6 +1,6 @@
 ---
 permalink: install-mysql-on-windows-server-2008-r2-and-2012/
-audit_date: `2016-11-22`
+audit_date: '2016-11-22'
 title: Install MySQL on Windows Server 2008 R2 and 2012
 type: article
 created_date: '2013-07-22'
@@ -41,6 +41,6 @@ Download the most recent version of Web PI on your server from
 
 6.  After the installation is completed, click **Finish**.
 
-**Note**: You can launch MySQL by running the `mysqld.exe` command from
+**Note:** You can launch MySQL by running the `mysqld.exe` command from
 the installation directory. By default, this directory is set to **C:\\Program
 Files\\MySQL\\MySQL Server 5.1\\bin**.
