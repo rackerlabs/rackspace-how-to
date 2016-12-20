@@ -1,7 +1,7 @@
 ---
 
 permalink: detailed-permissions-matrix-for-cloud-big-data-v2/
-audit_date:
+audit_date: '2016-12-20'
 title: Detailed permissions matrix for Cloud Big Data v2
 type: article
 created_date: '2015-06-01'
