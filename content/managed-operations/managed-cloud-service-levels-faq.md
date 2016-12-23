@@ -1,7 +1,7 @@
 ---
 permalink: managed-cloud-service-levels-faq/
 audit_date:
-title: Managed Cloud Service Levels FAQ
+title: Managed Cloud service levels FAQ
 type: article
 created_date: '2014-07-14'
 created_by: David Hendler
@@ -47,7 +47,7 @@ customers who do value support and are willing to pay for it.
 
 #### What do I get with Fanatical Support?
 
-There are five foundational components to ***Fanatical Support&reg;***:
+There are five foundational components to ***Fanatical Support***<sup>&reg;</sup>:
 
 -   **Architecture advisors**: Move beyond one-size-fits-all reference
     architectures. Let our experts tailor your workload architecture to your
