@@ -5,8 +5,8 @@ title: Reboot Your Server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
-last_modified_date: '2016-07-08'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-01-03'
+last_modified_by: Laura Santamaria
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -42,7 +42,8 @@ appropriate section for your server operating system:
 
 #### Windows
 
-Issue a restart request by clicking **Start > Shut down**.
+Issue a restart request by clicking **Start > Shut down > Restart** from the
+dropdown menu.
 
 Alternatively, you can initiate a soft reboot from the command line by
 entering the following command:
