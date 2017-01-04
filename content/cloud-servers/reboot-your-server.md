@@ -30,9 +30,6 @@ To perform a soft reboot of a server, you must be logged in to the
 server using an account with superuser or administrator permissions. For
 information about logging in to a cloud server, see [Connect to a cloud server](/how-to/connect-to-a-cloud-server).
 
-**Note**: OS reboots, such as the `sudo reboot` shown below, do not
-trigger the FG2NG migration.
-
 For the command you should use to soft reboot your server, see the
 appropriate section for your server operating system:
 
