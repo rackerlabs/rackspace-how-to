@@ -5,7 +5,7 @@ title: Add Rackspace Email mailboxes
 type: article
 created_date: '2011-12-18'
 created_by: Rackspace Support
-last_modified_date: '2017-01-03'
+last_modified_date: '2017-01-04'
 last_modified_by: Laura Santamaria
 product: Rackspace Email
 product_url: rackspace-email
@@ -79,13 +79,13 @@ To add multiple mailboxes at once, create a CSV or Excel file with the mailbox i
 
 	- Alphanumeric symbols (such as !, #, $, %)
 
-7.	In the **Import File** section, click **Browse**.
+7.	In the **Import File** section, click **Browse** or **Choose File**.
 
 8.	Locate and select the CSV or Excel file that you created.
 
 9.	Click **Open** and then **Import**.
 
-The mailboxes appear in the list. Any errors that occur are detailed in the import.
+The mailboxes appear in the list. Any errors that occur are detailed in the import log.
 
 ### Add licenses
 
