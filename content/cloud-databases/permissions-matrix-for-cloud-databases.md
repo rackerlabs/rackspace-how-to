@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-cloud-databases/
-audit_date: `2017-01-04`
+audit_date: '2017-01-04'
 title: Permissions matrix for Cloud Databases
 type: article
 created_date: '2013-04-10'
