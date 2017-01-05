@@ -5,7 +5,7 @@ title: Upgrade to Managed Operations service level
 type: article
 created_date: '2014-07-10'
 created_by: Kyle Laffoon
-last_modified_date: '2017-01-04'
+last_modified_date: '2017-01-05'
 last_modified_by: Laura Santamaria
 product: Managed Operations
 product_url: managed-operations
@@ -33,8 +33,8 @@ following labels: **Managed Infrastructure** or **Managed Ops: SysOps**.
 4.  *(Optional)* Click **View Server Pricing** for any of the options to
     calculate an estimate of your services with the selected service level.
 
-5.  To upgrade your service level to Managed Ops: SysOps or Managed Ops: DevOps,
-    click **Learn More** at the bottom of the appropriate column.
+5.  To upgrade your service level to Managed Ops: SysOps, click **Learn More**
+    under Managed Operations.
 
     **Important:** If you upgrade your service level, you cannot revert back to
     the previous level.
