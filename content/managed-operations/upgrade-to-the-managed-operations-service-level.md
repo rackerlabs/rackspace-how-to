@@ -1,6 +1,6 @@
 ---
 permalink: upgrade-to-the-managed-operations-service-level/
-audit_date:
+audit_date: '2017-01-05'
 title: Upgrade to the Managed Operations service level
 type: article
 created_date: '2014-07-10'
