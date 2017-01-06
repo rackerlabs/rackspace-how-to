@@ -13,6 +13,8 @@ product_url: exchange
 
 When you create a public folder in Exchange 2007 and 2010, you can assign permissions to limit how much access others have to that folder. Following are the different roles available to assign and the permissions granted to that role.
 
+**Note:** Only administrators can manage public folders for Exchange 2013 and 2016. For more information, see [Manage public folders in the control panel for Hosted Exchange 2013 and 2016](/how-to/https://support.rackspace.com/how-to/manage-public-folders-in-the-control-panel-for-hosted-exchange-2013/).
+
 | Role              | Permission           |
 |-------------------|----------------------|
 | Owner             | Create, read, modify, and delete all items and files. Create subfolders. Change the permission levels that other people have for the folder. |
@@ -27,3 +29,9 @@ When you create a public folder in Exchange 2007 and 2010, you can assign permis
 | None              | You have no permission. You cannot open the folder. |
 
 **Note**: You might see several groups on the **Permissions** tab. That is normal. It is important to leave these groups intact so that we can help you if you need it. There are also two special groups called **FolderAdmins** and **FolderUsers**. These groups allow you to set permissions for all of your public folder administrators or users at once.
+
+### Related articles
+
+- [Manage public folders in the control panel for Hosted Exchange 2007 and 2010](/how-to/manage-public-folders-in-the-control-panel-for-hosted-exchange-2007-and-2010/)
+
+- [Work with public folders through Outlook for Exchange 2007 and 2010](/how-to/working-with-public-folders-through-outlook-for-exchange-2007-and-2010/)
