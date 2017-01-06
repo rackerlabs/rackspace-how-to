@@ -1,7 +1,7 @@
 ---
-permalink: public-folder-permissions-for-exchange/
+permalink: public-folder-permissions-for-exchange-2007-and-2010/
 audit_date:
-title: Public folder permissions for Exchange
+title: Public folder permissions for Exchange 2007 and 2010
 type: article
 created_date: '2016-02-23'
 created_by: Stephanie Fillmon
@@ -11,7 +11,7 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-When you create a public folder, you can assign permissions to limit how much access others have to that folder. Following are the different roles available to assign and the permissions granted to that role.
+When you create a public folder in Exchange 2007 and 2010, you can assign permissions to limit how much access others have to that folder. Following are the different roles available to assign and the permissions granted to that role.
 
 | Role              | Permission           |
 |-------------------|----------------------|
