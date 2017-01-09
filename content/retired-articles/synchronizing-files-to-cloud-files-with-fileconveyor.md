@@ -1,3 +1,4 @@
+<!---
 ---
 permalink: synchronizing-files-to-cloud-files-with-fileconveyor/
 audit_date:
@@ -10,6 +11,7 @@ last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
+--->
 
 Many file synchronization applications exist, but few are as versatile as the open-source [File Conveyor](http://fileconveyor.org/). The File Conveyor source code is fully documented, and the tool is easy to install. In a matter of minutes, you can have the project synchronizing the local files on your server to a destination such as Rackspace Cloud Files.
 
