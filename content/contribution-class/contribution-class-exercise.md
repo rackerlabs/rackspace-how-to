@@ -22,6 +22,7 @@ Yes
 Somewhat
 Yes
 Yes
+Yes
 **Answer options**
 - Yes 
 - Somewhat
@@ -35,6 +36,7 @@ Somewaht often
 Somewhat Often
 Somewhat Often
 Somewhat Often
+Often
 **Answer options**
 - Often
 - Somewhat often
@@ -46,6 +48,7 @@ Yes
 Yes
 Yes, if they have a need to edit the How-To
 Yes
+Yes
 **Answer options**
 - Yes
 - No
@@ -56,6 +59,7 @@ Yes
 Yes
 No
 Yes (potentially, it'd depend on how much I'd actually get out of it)
+Yes
 **Answer options**
 - Yes
 - No
@@ -65,6 +69,7 @@ Cool gateway to programming
 Knowing is half the battle
 I had to keep going back since there was no pause button but easy, 10 min training that helps anyone get started with contributing to support/how to articles.
 Consideration for how people will come across this training; a lot of people will come from the one.rackspace wiki. Having links to this GitHub page along with next-steps on what to do to gain access (go to this GitHub proj and watch the training video, etc)
+Finally can update all this out of date documentation
 **Answer options**
 - Open ended
 
