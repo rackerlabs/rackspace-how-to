@@ -384,20 +384,6 @@ class).
 
 <img src="{% asset_path general/networking-fundamentals/digital-interpretation.png %}" width="655" height="299" />
 
-```
-  5   |                | |               |
-  4.5 |              |     |          |    |
-V 4   |            |         |      |        |
-o 3.5 |          |             |  |           |
-l 3   | ===========================================================
-t 2.5 |      |                                   |               |
-s 2   |    |                                       |          |
-  1.5 |  |                                           |      |
-  1   | |                                              |  |
-      -------------------------------------------------------------
-        |  0  |  |     1       |   |     1     |  |      0       |
-```
-
 This should clearly show how changing voltage, even though the change
 is analogue, can be interpreted as ones and zeros digitally.
 
@@ -791,6 +777,363 @@ subnet as a "Class C" network for example.
 
 ## Route Determination
 
+Finally!  Things have gotten interesting.  At last we have come to that
+part of networking that allows us to send information in the form of
+packets to places that we've never seen.  Subnetting tells us what IP
+Addresses we should be able to communicate with without going through a
+router, but what about other IP Addresses?
+
+Every computer has a routing table, though it looks different depending
+on your operating system.  Here's what my routing table currently looks
+like on Slackware Linux 14.2.
+
+```
+alan9228@whippoorwill:~# ip route show
+default via 172.30.16.1 dev eth0  metric 202
+10.15.160.0/20 dev tun0  scope link
+72.32.144.37 via 172.30.16.1 dev eth0  src 172.30.16.28
+72.32.144.38 via 172.30.16.1 dev eth0  src 172.30.16.28
+127.0.0.0/8 dev lo  scope link
+172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28 metric 202
+```
+
+This requires a little bit of explanation. When a packet is being
+transmitted outward, the kernel checks the packet's Destination IP
+Address against the first column of the routing table. This column
+lists networks and their subnets. The kernel always prefers the **most
+specific** match. Let's look at a few examples.
+
+My computer (whippoorwill, 172.30.16.28) wishes to send a packet to
+another (nightingale, 172.30.16.19). It forms a packet and sets the
+Destination IP address to 172.30.16.19. Then the kernel checks its
+routing table and finds two matches for this address.
+
+```
+default via 172.30.16.1 dev eth0  metric 202
+172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
+metric 202
+```
+The default route is a "catch-all" that should always match.
+Essentially, it is the network 0.0.0.0/0 - the entire Internet.
+However, 172.30.16.0/26 also matches, and is a much smaller subnet, so
+the kernel chooses to use it instead as it is more specific. This
+specific example has a lot of information here, but for now there's
+really only two things we are interested in.
+
+    `Does the route include a "via IP_ADDRESS" statement?`
+    `What "dev INTERFACE" statement is included?`
+
+The first statement tells us if we need to use a router (gateway) and
+what that router's IP address is. In this case, no router is specified,
+so we know we are not using one. The second statement tells us that
+this packet should leave our eth0 interface in order to reach its
+destination.
+
+Now another example. Suppose whippoorwill wants to talk to
+www.google.com, which it learns has an IP address of 74.125.21.105.The
+kernel checks the routing table and determines that the only match is
+the catch-all.
+
+`default via 172.30.16.1 dev eth0  metric 202`
+
+It's important to note that no packet is transmitted to an IP Address.
+IP Addresses are merely used to determine the route that a packet must
+take to reach its eventual destination.  Packets are instead
+transmitted to MAC Addresses.  This will all make sense later when we
+put everything together.
+
+## ICMP
+
+ICMP is formally described in RFC 792.
+
+Internet Control Message Protocol, or ICMP for short, is mostly used to
+transmit error messages between machines.  For example, if a router
+can't seem to find a node you're attempting to communicate with,  you
+may see an "ICMP Destination Unreachable" error message.  ICMP is used
+to transmit the most basic of information between nodes, and is highly
+specialized to this task to the point that it cannot carry arbitrary
+data in the way that TCP or UDP can (more on these later).  Each ICMP
+packet is given a certain "type" that specifies its use.  Certain types
+may have a (sometimes optional) data section that can carry some small
+amount of arbitrary data.
+
+The most common intentional use of ICMP by a user is the ping(8)
+program.  ping generates an ICMP type 8 packet.  Type 8 is known as the
+"Echo Request".  When a machine receives such a packet, it replies to
+it with an ICMP type 0 "Echo Reply" packet.
+
+Another common way of using ICMP is the traceroute(8) command.  This
+works by generating UDP packets with very short Time To Live (TTL)
+values.  If a router sees a packet with a TTL value of 0, it will  send
+out an ICMP type 11 "Time Exceeded" packet.  Since every router that
+handles a packet must decriment the TTL value by 1, this creates an
+easy method of seeing what routers (and how many) two  nodes are
+communicating through.
+
+By far the most common uses of ICMP packets however, are those you
+never see.  ICMP will send error messages telling a sending node that
+no more bandwidth is available.  It will tell the sending node to
+redirect a message to a different route.  In short, ICMP is the often
+unseen little janitor of the TCP/IP Suite that keeps everything clean
+and tidy and informs everyone when the floor is wet and slippery.
+
+# Transport Layer
+
+The Transport Layer is every bit as simple and complex as the network
+layer.  It is responsible for communicating the wishes of the
+Application Layer with the Network Layer, and in some cases, is
+responsible for ensuring that data arrives at its destination.  You
+might think of the Transport Layer as a postman.  He accepts letters
+(data) from you, and passes them off to be routed to their final
+destination.  If you have to be certain the letter arrives at its
+destination, you can send it certified mail and get reasonable
+confirmation that it was indeed delivered.
+
+## TCP (Transport Control Protocol)
+
+TCP is formally described in RFC 793.
+
+Transmission Control Protocol is the most widely used protocol in the
+transport layer, and the only thing in the entire TCP/IP suite that
+garauntees delivery of packets by using some fairly ingenious
+techniques.  To start, TCP marks every packet with a sequence
+identification number.  In the event that some packets are received out
+of order, the receiving node can re-arrange them correctly.  Also, TCP
+requires an acknowledgement of receipt for every packet, so the sending
+node knows without doubt if a packet was received.  Finally, TCP
+includes a rudimentary checksum to verify that the data sent has  not
+been changed en route.
+
+TCP is known as a "connection oriented" protocol, because it sends all
+data in the framework of an open connection, rather than simply firing
+the data off like every other protocol and hoping the destination node
+receives it.
+
+### Ports
+
+Ports are a way of communicating with the Application Layer.  TCP has
+65,536 total ports.  Every TCP packet has a Source Port and a
+Destination Port.  When a TCP packet is received, the kernel looks at
+the port number (1 - 65,536) and determines what application to send
+the data to based on this information.
+
+### Flags
+
+TCP makes use of a number of "Flags" to specify the type of TCP packet
+in much the same way that ICMP does.  Unlike ICMP, a TCP packet can
+have multiple flags set at the same time.  In this document, we're only
+going to discuss the four most common.
+
+```
+  SYN - Synchronize and prepare for a connection
+  ACK - Acknowledge that a packet has been received (and which one)
+  FIN - Finished sending data
+  RST - Reset connection immediately
+```
+
+### Connection Initialization
+
+The three-way handshake is used to initiate a TCP connection.  It's
+responsible for ensuring that both end nodes are available and are
+ready for data to be transmitted.
+
+Let's assume that whippoorwill decides to get some files from
+nightingale on a TCP connection.  First, whippoorwill sends a packet to
+nightingale telling him that robin is trying to initiate a TCP
+connection with a SYN packet. As soon as nightingale receives this
+packet, he knows that whipoorwill wants to talk to him and acknowledges
+it with a SYN-ACK packet.
+
+Finally, when whippoorwill receives this packet, he replies with an ACK
+to nightingale.  This packet is sometimes called the SYN-ACK-ACK
+packet, but it's really just an ACK packet.  Anyhow, this lets both
+nodes know that everything is ready to roll.  It all goes something
+like this.
+
+```
+  whippoorwill to nightingale - SYN
+  nightingale to whippoorwill - SYN-ACK
+  whippoorwill to nightingale - ACK
+```
+
+At this point, they are ready to transmit information.  whippoorwill
+can send TCP packets without any flags and nightingale will reply to
+each packet with an ACK so whippoorwill knows the data was received.
+If for whatever reason, whippoorwill doesn't see an ACK packet for some
+data it sent, it will resend that packet.
+
+### Connection Termination
+
+So now that we know how to initiate a TCP connection, how do we stop
+one?  The answer is the four-way handshake.
+
+To stop a TCP connection gracefully, both sides must agree that all
+data transmission has finished.  When each node has completed all the
+transmission it intends to do, it will send a FIN packet.  This is
+responded to by an ACK.  Once both nodes have sent FIN and ACK packets,
+the connection is over.  The reason that both nodes must agree that a
+transmission is over is simple.  One node may no longer wish to send
+data, but the other still has lots to transmit.  When one node has
+finished a connection but the other hasn't, the connection is called
+"half-open".
+
+Here's an example.  Going back to whippoorwill and nightingale,
+whippoorwill has requested a rather large file be sent to him.  Once
+this file has begun transmission, whippoorwill decides that he no
+longer wishes to send anymore requests and gives nightingale a FIN
+packet.  nightingale ACKs the FIN, but continues to send that large
+file until that is complete before sending its own FIN.  Here we will
+begin with the three-way handshake, begin transmitting data, and end
+with a four-way handshake.
+
+```
+Sender             Receiver       Flags       Content
+  ======             ========       =====       =======
+  (three-way handshake)
+  whippoorwill      nightingale     SYN
+  nightingale       whippoorwill    SYN-ACK
+  whippoorwill      nightingale     ACK
+  (begin data transmission)
+  whippoorwill      nightingale                 Give me BIG_FILE
+  nightingale       whippoorwill    ACK
+  nightingale       whippoorwill                BIG_FILE part 1
+  whippoorwill      nightingale     ACK
+  nightingale       whippoorwill                BIG_FILE part 2
+  whippoorwill      nightingale     ACK
+  nightingale       whippoorwill                BIG_FILE part 3
+  whippoorwill      nightingale     ACK
+  nightingale       whippoorwill                BIG_FILE part 4
+  whippoorwill      nightingale     ACK
+  (begin four-way handshake)
+  whippoorwill      nightingale     FIN
+  nightingale       whippoorwill    ACK
+  (half-open connection)
+  nightingale       whippoorwill                BIG_FILE part 5
+  whippoorwill      nightingale     ACK
+  nightingale       whippoorwill                BIG_FILE part 6
+  whippoorwill      nightingale     ACK
+  nightingale       whippoorwill                BIG_FILE part 7
+  whippoorwill      nightingale     ACK
+  nightingale       whippoorwill                BIG_FILE part 8
+  whippoorwill      nightingale     ACK
+  (complete four-way handshake)
+  nightingale       whippoorwill    FIN
+  whippoorwill      nightingale     ACK
+  (connection torn down)
+```
+
+There is one other way to tear down a TCP connection, and that is the
+deadly RST packet!  When one node sends the other node an RST packet,
+everything is over.  Both nodes immediately cease  transmiting data and
+close the connection.
+
+## UDP (User Datagram Protocol)
+
+UDP is formally described in RFC 768.
+
+UDP is, quite simply, the simpler cousin of TCP.  UDP's one and only
+focus is to communicate between the Network Layer and the Application
+Layer.  At first glance, it looks a lot like TCP, but unlike it's
+genius cousin, UDP can't work on connections.  Rather, UDP simply
+"fires and forgets".  This is actually preferred for many forms of
+transmission.  Since UDP doesn't clutter up things with sequence
+numbers, flags, handshakes, and acknowledgements, it can transmit data
+a lot faster than TCP.  For anything that needs to function in
+real-time, like a video game or streaming audio, it's preferable to
+loose some data or have it arrive out of order rather than waiting for
+out of sequence information to be resent.
+
+### Ports
+
+UDP ports work exactly the same way that TCP ports do.  They are simply
+placeholders that tell the kernel what application to hand off the data
+to.  It's important to note though, that UDP and TCP ports are
+exclusive.  UDP port 80 and TCP port 80 are entirely different and
+likely correspond to different applications.
+
+# Application Layer
+
+The Application Layer is responsible for talking to the Transport
+Layer, and finally talking to the kernel or any user-land applications
+that make network requests.  We won't go into much detail here, as
+there are literally hundreds of common protocols, thousands of uncommon
+ones, and untold millions of network applications.  There are however,
+two notable protocols that bare mentioning here as they allow are
+responsible for setting things up for the Network Layer.
+
+## DNS
+
+As we all know, computers work with numbers, and in networking, those
+numbers usually take the form of IP Addresses.  But human beings aren't
+good at remembering long strings of numbers, otherwise we'd not call
+computers by names.  The Domain Name System (or Service) is what allows
+us to turn domain names like nightingale.ctsmacon.com into IP Addresses
+like 192.168.1.197.  DNS will play a key roll in some of the examples
+we will use in later sections.
+
+## DHCP / Bootp
+
+The Dynamic Host Control Protocol is an ingenious method of assigning
+IP Addresses to nodes.  Instead of requiring a person to input an IP
+Address for a machine, DHCP will instead assign that, along with a lot
+of other helpful network information for him.  DHCP operates by sending
+a UDP packet to the broadcast address 255.255.255.255.  Unless a
+machine is acting as a DHCP server, the packet will be silently
+dropped.  But, a DHCP server will reply with another packet that
+includes all the information that machine needs to setup basic network
+services: IP Address, Subnet Mask, Routers, DNS Servers, and
+optionally much much more.
+
+# Packet Crafting
+
+So now that we know about all the different layers and all the
+different things that play a part in networking, let's build an actual
+packet, hand-crafted with love.  For our purposes, we're going to skip
+DNS and assume we know the IP Addresses.  This is a data packet being
+crafted by whippoorwill (172.30.16.28) destined for the webserver at
+www.google.com (74.125.21.105).
+
+## Application Data
+
+All packets begin at the Application Layer.  In this case, our
+application is Firefox.  I've just opened it on my workstation, and am
+in the process of making a request for http://www.google.com/.  Since
+I'm
+making an HTTP connection (that's what that whole http:// thing is all
+about after all), Firefox knows that I'm making a TCP connection to
+port 80 at 72.14.207.99.  But first, it has to form the data portion of
+the packet.  This data portion is referred to as the packet's
+"payload".  Every other portion of a packet is designed to get the
+payload to its destination and has no meaning outside of that.
+At this point, our packet is nothing but a payload and looks like this:
+
+```
+| Payload |
+```
+
+## Transport Wrapping
+
+Here things become interesting.  This is the first layer that will add
+information to the payload and begin forming something more than just
+raw data.  Here, we add a number of fields.  This adding of fields is
+known as "wrapping" because of the way it encapsulates higher layers in
+lower layers.  I won't go into details on all of the possible fields,
+but pretty much everything is shown below.
+
+```
+| Src Port | Dst Port |
+| Sequence Num |
+| Acknowledgement Num |
+| Data Offset | Reserved | Flags | Window |
+| Checksum | Urgent Pointer |
+| Options |
+| Payload |
+```
+- Source Port - 16 bits
+- Destination Port - 16 bits
+- Sequence Number - 32 bits
+- Acknowledgement Number - 32 bits
+- Data Offset - 4 bits
 
 
 
