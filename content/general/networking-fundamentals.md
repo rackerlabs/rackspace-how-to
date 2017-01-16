@@ -368,7 +368,7 @@ class).
 
 
 <!-- Location for digital-interpretation.png -->
-<img src="{% asset_path general/networking-fundamentals/digital-interpretation.png %}" width="655" height="299" />
+<img src="{% asset_path general/networking-fundamentals/digital-interpretation.png %}" width="570" height="620" />
 
 This should clearly show how changing voltage, even though the change
 is analogue, can be interpreted as ones and zeros digitally.
