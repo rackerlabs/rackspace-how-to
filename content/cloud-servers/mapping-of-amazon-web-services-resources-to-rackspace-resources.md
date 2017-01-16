@@ -5,8 +5,8 @@ title: Mapping of Amazon Web Services resources to Rackspace resources
 type: article
 created_date: '2013-07-01'
 created_by: David Hendler
-last_modified_date: '2016-01-08'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-01-16'
+last_modified_by: Laura Santamaria
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -36,7 +36,7 @@ products.
 | Amazon SES, SNS        | Mailgun                                                                                                  |
 | Elastic Transcoder     | Partner solutions - encoding.com                                                                         |
 | IAM & Mgmt Console     | [Cloud Control Panel](http://mycloud.rackspace.com)                                                      |
-| AWS CloudWawtch        | [Cloud Monitoring product and pricing](http://www.rackspace.com/cloud/monitoring)<br />[Cloud Monitoring API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)          |
+| AWS CloudWatch        | [Cloud Monitoring product and pricing](http://www.rackspace.com/cloud/monitoring)<br />[Cloud Monitoring API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)          |
 | AWS Elastic Beanstalk  | [Cloud Sites (.NET and PHP)](https://www.rackspace.com/cloud/sites), Partner Solutions                   |
 | AWS CloudFormation     | Deployments                                                                                              |
 | CloudSearch & Redshift | Non Core - Partner                                                                                       |
