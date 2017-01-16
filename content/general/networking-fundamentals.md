@@ -363,9 +363,7 @@ changes, the remote NIC interprets this change as either a 1 or a 0.
 Let's assume your NIC is capable of producing voltages between 1 and
 5 volts and that above 3 Volts is considered a "1" and below 3 Volts is
 considered a "0".  Voltage always changes on a curve that resembles a
-sine wave (yes, you should have paid attention in your high school Trig
-class).
-
+sine wave.
 
 <!-- Location for digital-interpretation.png -->
 <img src="{% asset_path general/networking-fundamentals/digital-interpretation.png %}" width="570" height="620" />
