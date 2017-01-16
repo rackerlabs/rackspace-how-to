@@ -798,14 +798,12 @@ router, but what about other IP Addresses?
 
 Every computer has a routing table, though it looks different depending
 on your operating system.  Here's what my routing table currently looks
-like on Slackware Linux 14.2.
+like on Slackware Linux 14.2. Other operating systems format their
+routing tables differently, but the functionality is the same.
 
 ```
 alan9228@whippoorwill:~# ip route show
 default via 172.30.16.1 dev eth0  metric 202
-10.15.160.0/20 dev tun0  scope link
-72.32.144.37 via 172.30.16.1 dev eth0  src 172.30.16.28
-72.32.144.38 via 172.30.16.1 dev eth0  src 172.30.16.28
 127.0.0.0/8 dev lo  scope link
 172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28 metric 202
 ```
@@ -833,8 +831,8 @@ the kernel chooses to use it instead as it is more specific. This
 specific example has a lot of information here, but for now there's
 really only two things we are interested in.
 
-`Does the route include a "via IP_ADDRESS" statement?`
-`What "dev INTERFACE" statement is included?`
+- Does the route include a "via IP_ADDRESS" statement?
+- What "dev INTERFACE" statement is included?
 
 The first statement tells us if we need to use a router (gateway) and
 what that router's IP address is. In this case, no router is specified,
@@ -842,12 +840,15 @@ so we know we are not using one. The second statement tells us that
 this packet should leave our eth0 interface in order to reach its
 destination.
 
-Now another example. Suppose whippoorwill wants to talk to
-www.google.com, which it learns has an IP address of 74.125.21.105.The
-kernel checks the routing table and determines that the only match is
-the catch-all.
+Now another example. Suppose whippoorwill wants to talk to Google,
+which it has learned has an IP address of 74.125.21.105.The kernel
+checks the routing table and determines that the only match is the
+catch-all.
 
 `default via 172.30.16.1 dev eth0  metric 202`
+
+This time, the packet will be sent out the eth0 interface with a local
+destination of the gateway 172.30.16.1.
 
 It's important to note that no packet is transmitted to an IP Address.
 IP Addresses are merely used to determine the route that a packet must
@@ -870,12 +871,12 @@ packet is given a certain "type" that specifies its use.  Certain types
 may have a (sometimes optional) data section that can carry some small
 amount of arbitrary data.
 
-The most common intentional use of ICMP by a user is the ping(8)
-program.  ping generates an ICMP type 8 packet.  Type 8 is known as the
-"Echo Request".  When a machine receives such a packet, it replies to
-it with an ICMP type 0 "Echo Reply" packet.
+The most common intentional use of ICMP by a user is the ping program.
+ping generates an ICMP type 8 packet.  Type 8 is known as the "Echo
+Request".  When a machine receives such a packet, it replies to it with
+an ICMP type 0 "Echo Reply" packet.
 
-Another common way of using ICMP is the traceroute(8) command.  This
+Another common way of using ICMP is the traceroute command.  This
 works by generating UDP packets with very short Time To Live (TTL)
 values.  If a router sees a packet with a TTL value of 0, it will  send
 out an ICMP type 11 "Time Exceeded" packet.  Since every router that
@@ -1000,7 +1001,7 @@ begin with the three-way handshake, begin transmitting data, and end
 with a four-way handshake.
 
 ```
-Sender             Receiver       Flags       Content
+  Sender             Receiver       Flags       Content
   ======             ========       =====       =======
   (three-way handshake)
   whippoorwill      nightingale     SYN
@@ -1292,10 +1293,9 @@ Here, we're going to assume that thrasher.lizella.net (104.130.169.14)
 is serving an HTTP document to one of googlebot's crawlers
 (66.249.66.1). We'll just call the payload "Payload" rather than create
 a fictional web page to include here. Some of the other data will be
-fictionalized as well, such as Data Offset and Total Length.  In no
-cases is any fictional data important to the understanding of the
-concepts discussed here. As much as possible, I'll use binary values to
-show information.
+fictionalized as well.  In no cases is any fictional data important to
+understanding the concepts discussed here. As much as possible, I'll use
+binary values to show information.
 
 To start, we'll just look at the transport headers and add on other
 headers.
@@ -1339,12 +1339,12 @@ As you can see, this packet is leaving port 80, going to port 13,145,
 and is the first packet in the sequence.  Since there are no flags set,
 we know this isn't a SYN, ACK, FIN, RST, or any other special TCP
 packet.  This is just a plain old packet that sends data in a
-connection that has already been set up.  Since this isn't an ACK
+connection that has already been established.  Since this isn't an ACK
 packet, the Acknowledgement Number is set to "0".  As you can clearly
 see, there are 5 32-bit "words" before we reach the payload, so our
-Data Offset is set to "5".  Easy isnt't it?  The Checksum value in
+Data Offset is set to "5".  Easy isnt't it?  (The Checksum values in
 this example are completely random and do not actually reflect a valid
-checksum for the packet.
+checksum for the packet.)
 
 Now that we've got the Transport layer finished, it's time to add on
 the Network Layer.
@@ -1581,11 +1581,10 @@ discarded).
 #### TCP from SYN to FIN
 
 It might be of benefit to show an actual TCP connection from start to
-finish.  Here, I have striped the Data-Link Header for clarity. The IP
-Header has been left in, but largely stripped of extraneous data.  In
-addition, we won't be looking at any of the packets in this connection
-in binary form, and rather than entering IP Addresses for the nodes
-involved, we'll simply use the short form of their host-name.
+finish.  Here, I have striped the Data-Link and Network Headers for
+clarity. In addition, we won't be looking at any of the packets in this
+connection in binary form, and rather than entering IP Addresses for the
+nodes involved, we'll simply use the short form of their host-name.
 
 Let's assume whippoorwill (172.30.16.28) wants to retrieve a webpage
 from rackspace.com (173.203.44.122). Naturally, the first thing it
@@ -1598,12 +1597,14 @@ Dst Port      80
 Flags         SYN
 Seq Num       0
 Ack Num       0
+
 rackspace     ->   whippoorwill
 Src Port      80
 Dst Port      3560
 Flags         SYN/ACK
 Seq Num       0
 Ack Num       0
+
 whippoorwill  ->   rackspace
 Src Port      3560
 Dst Port      80
@@ -1624,6 +1625,7 @@ Flags         None
 Seq Num       1
 Ack Num       0
 Payload       "Give me index.html"
+
 rackspace     ->  whippoorwill
 Src Port      80
 Dst Port      3560
@@ -1644,12 +1646,14 @@ Flags         None
 Seq Num       1000
 Ack Num       0
 Payload       "Part 0 of index.html."
+
 whippoorwill  ->   rackspace
 Src Port      3560
 Dst Port      80
 Flags         ACK
 Seq Num       0
 Ack Num       1000
+
 rackspace     ->   whippoorwill
 Src Port      80
 Dst Port      3560
@@ -1657,6 +1661,7 @@ Flags         None
 Seq Num       1001
 Ack Num       0
 Payload       "Part 1 of index.html."
+
 whippoorwill  ->   rackspace
 Src Port      3560
 Dst Port      80
@@ -1665,10 +1670,10 @@ Seq Num       0
 Ack Num       1001
 ```
 
-Rackspace has sent the first 2 parts of the page (remember, computers
-always start counting at 0 and you should too!) and whippoorwill has
+Rackspace has sent the first 2 parts of the page and whippoorwill has
 acknowledged both of those parts.  Now, whippoorwill decides that it's
-ready to terminate the connection.
+ready to terminate the connection as it will no longer be requesting
+further data.
 
 ```
 whippoorwill  ->   rackspace
@@ -1677,6 +1682,7 @@ Dst Port      80
 Flags         FIN
 Seq Num       0
 Ack Num       0
+
 rackspace     ->   whippoorwill
 Src Port      80
 Dst Port      3560
@@ -1700,12 +1706,14 @@ Flags         None
 Seq Num       1002
 Ack Num       0
 Payload       "Part 2 of index.html."
+
 whippoorwill  ->   rackspace
 Src Port      3560
 Dst Port      80
 Flags         ACK
 Seq Num       0
 Ack Num       1002
+
 rackspace     ->   whippoorwill
 Src Port      80
 Dst Port      3560
@@ -1713,6 +1721,7 @@ Flags         None
 Seq Num       1003
 Ack Num       0
 Payload       "Part 3 of index.html."
+
 whippoorwill  ->   rackspace
 Src Port      3560
 Dst Port      80
@@ -1731,6 +1740,7 @@ Dst Port      3560
 Flags         FIN
 Seq Num       0
 Ack Num       0
+
 whippoorwill  ->   rackspace
 Src Port      3560
 Dst Port      80
@@ -1767,7 +1777,6 @@ what its routing table looks like.
 default dev tun0  scope link
 default via 172.30.16.1 dev eth0  metric 202
 10.15.160.0/20 dev tun0  scope link
-72.32.144.37 via 172.30.16.1 dev eth0  src 172.30.16.28
 72.32.144.38 via 172.30.16.1 dev eth0  src 172.30.16.28
 127.0.0.0/8 dev lo  scope link
 172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
@@ -1776,7 +1785,7 @@ metric 202
 
 When I send a packet out to any IP address matching my default tun0
 route, the packet gets encrypted and encapsulated into a new packet
-destined for 72.32.144.37. Let's see this in action. Suppose I am
+destined for 72.32.144.38. Let's see this in action. Suppose I am
 sending a simple HTTP GET request to www.google.com (74.125.21.105).
 The kernel begins building out the packet normally, starting with the
 HTTP Payload, the TCP header, and the IPv4 header.
@@ -1816,7 +1825,7 @@ payload.
 
 Now the kernel takes this encrypted packet as the payload for an
 entirely new UDP packet destined for the other VPN endpoint (in our
-example: 74.125.21.105).
+example: 72.32.144.38).
 
 ```
 01000101000000000010110010010100  -- IPv4 Header
