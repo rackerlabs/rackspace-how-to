@@ -1134,6 +1134,702 @@ but pretty much everything is shown below.
 - Sequence Number - 32 bits
 - Acknowledgement Number - 32 bits
 - Data Offset - 4 bits
+- Reserved - 4 bits
+- Flags - 8 bits
+- Window - 16 bits
+- Checksum - 16 bits
+- Urgent Pointer - 16 bits
+- Options - 32 bits (if present)
+
+Here we've added the "Source Port", "Destination Port", "Sequence
+Number", "Acknowledgement Number", "Data Offset", "Reserved", "Flags",
+"Window", "Checksum", "Urgent Pointer and "Options" fields.  We haven't
+previously discussed several of these fields, so now's the time to do
+just that.
+
+- Data Offset - This is the size of the TCP Header in 32-bit chunks
+(or words). This lets us know exactly where the header ends and the
+Payload begins.
+- Reserved - These bits aren't currently used and should always be 0.
+- Flags - Each bit represents a different flag: SYN, ACK, FIN, RST, and
+others.
+- Window - This is basically the most data that the destination node can
+receive at a time.
+- Checksum - This is just a basic error-checking routine similar to the
+parity bit in ASCII.
+- Urgent Pointer - This is largely unused and we won't muddy the waters
+discussing it now.
+- Options - Another mostly unused field that we will ignore in this
+discussion.
+
+## Network Wrapping
+
+Now we get to add actual routing information to the packet.
+
+```
+| Version | Header Length | Type of Service | Total Length |
+| Identification Number | Flags | Fragment Offset |
+| TTL | Protocol | Header Checksum |
+| Src Addr |
+| Dst Addr |
+| Options |
+| Src Port | Dst Port |
+| Sequence Num |
+| Acknowledgement Num |
+| Data Offset | Reserved | Flags | Window |
+| Checksum | Urgent Pointer |
+| Options |
+| Payload |
+```
+
+- Version - 4 bits, typically version 4 but IP version 6 is becoming
+more common.
+- Header Length - 4 bits
+- Type of Service - 8 bits
+- Total Length - 16 bits
+- Identification Number - 16 bits
+- Flags - 3 bits
+- Fragment Offset - 13 bits
+- TTL - 8 bits
+- Protocol - 8 bits
+- Header Checksum - 16 bits
+- Source Address - 32 bits
+- Destination Address - 32 bits
+- Options - 32 bits
+
+Notice that we've left the TCP header intact and we've added the IP
+Header information. Here's a breakdown of each of these pieces.
+
+- Version - Either 4 or 6 for IPv4 or IPv6. In this document we only
+discuss IPv4. Just know the version can also be 6.
+- Header Length - This is basically identical to the Data Offset we was
+in Transport Wrapping. It is the entire length of the IP Header.
+- Type of Service - This was originally intended to specify a
+preference for fast transport or higher reliability. It is now almost
+entirely unused.
+- Total Length - The total length of the packet at this point. Header
+Length tells us where the IP Header ends. Total Length tells us where
+the entire packet ends.
+- Identification Number - This is used for identifying IP fragments.
+Fragments are created when a node can't transmit the entire packet at
+once, so the packet is split (fragmented) into smaller packets and each
+is given an Identification Number. Otherwise this is set to 0.
+- Flags - Used to enforce or deny fragmentation
+- Fragment Offset - If the packet is a fragment, this is the number of
+bytes that have been handled by previous fragments.
+- TTL - the number of intermediary routers allowed to handle the packet
+before failing. This field gets decremented each time a router handles
+it.
+- Protocol - What Transport Later protocol we are using. In this
+particular example it's TCP, but it could be UDP as well. This is
+necessary so the receiving node (or any firewalls in between) don't
+confuse the Transport Layer's header.
+- Header Checksum - Similar to the TCP Checksum, except that this has
+to be recalculated at each point because the TTL value has changed.
+- Source Address - The IP Address of the original sending node.
+- Destination Address - The IP Address of the final receiving node.
+- Options - Again, a variable length field that can contain a lot of
+optional data.
+
+## Data-Link Wrapping
+
+Now we get to the final step of adding information to the packet.
+
+```
+| Dst MAC |
+| Src MAC |
+| Version | Header Length | Type of Service | Total Length |
+| Identification Number | Flags | Fragment Offset |
+| TTL | Protocol | Header Checksum |
+| Src Addr |
+| Dst Addr |
+| Options |
+| Src Port | Dst Port |
+| Sequence Num |
+| Acknowledgement Num |
+| Data Offset | Reserved | Flags | Window |
+| Checksum | Urgent Pointer |
+| Options |
+| Payload |
+| Checksum |
+```
+
+- Destination MAC - 48 bits
+- Source MAC - 48 bits
+- Checksum - 32 bits
+
+The values of all these fields change every time a router forwards the
+packet along.
+
+- Destination MAC - the MAC address of the next hop (either the next
+router along the way or the final destination)
+- Source MAC - the MAC address of the sending node (either the original
+sender or the last router that handled the packet)
+- Checksum - a standard cyclic redundancy check. This is very similar
+to an md5sum in many ways.
+
+At this point, the packet is ready for transmission on the physical
+layer.
+
+# All Together Now
+
+Now that we've lovingly crafted a packet by hand, let's fill in the
+values for this packet, and see how it fairs out in the real world.
+Here, we're going to assume that thrasher.lizella.net (104.130.169.14)
+is serving an HTTP document to one of googlebot's crawlers
+(66.249.66.1). We'll just call the payload "Payload" rather than create
+a fictional web page to include here. Some of the other data will be
+fictionalized as well, such as Data Offset and Total Length.  In no
+cases is any fictional data important to the understanding of the
+concepts discussed here. As much as possible, I'll use binary values to
+show information.
+
+To start, we'll just look at the transport headers and add on other
+headers.
+
+```
+| Src Port | Dst Port |
+| Sequence Number |
+| Acknowledgement Number |
+| Data Offset | Reserved | Flags | Window |
+| Checksum | Urgent Pointer |
+| Options |
+| Payload |
+ 
+ 
+00000000010100000011001101011001
+00000000000000000000000000000001
+00000000000000000000000000000000
+01010000000000000000000000000000
+00100100101011010000000000000000
+|---------Payload--------------|
+ 
+ 
+Type                  Binary (0 - 15)       Explaination
+----                  ----------------      ------------
+Source Port           0000000001010000      80
+Destination Port      0011001101011001      13145
+Sequence Number       0000000000000000      1
+                      0000000000000001
+Acknowledgement Num   0000000000000000      0
+                      0000000000000000
+Data Offset           0101                  5
+Reserved              0000                  (Not Used Here)
+Flags                 00000000              (No Flags Set)
+Window                0000000000000000      (Not described here)
+Checksum              0010010010101101      (Made up checksum)
+Urgent Pointer        0000000000000000      (Not Used Here)
+Options               (Not Included)        (Not Used Here)
+```
+
+As you can see, this packet is leaving port 80, going to port 13,145,
+and is the first packet in the sequence.  Since there are no flags set,
+we know this isn't a SYN, ACK, FIN, RST, or any other special TCP
+packet.  This is just a plain old packet that sends data in a
+connection that has already been set up.  Since this isn't an ACK
+packet, the Acknowledgement Number is set to "0".  As you can clearly
+see, there are 5 32-bit "words" before we reach the payload, so our
+Data Offset is set to "5".  Easy isnt't it?  The Checksum value in
+this example are completely random and do not actually reflect a valid
+checksum for the packet.
+
+Now that we've got the Transport layer finished, it's time to add on
+the Network Layer.
+
+```
+| Version | Header Length | Type of Service | Total Length |
+| Identification Number | Flags | Fragment Offset |
+| TTL | Protocol | Header Checksum |
+| Src Addr |
+| Dst Addr |
+| Options |
+| TCP Header |
+| Payload |
+ 
+ 
+01000101000000000010110010010100
+00000000000000000000000000000000
+01000000000001100010100000101000
+01101000100000101010100100001110
+01000100111110010100010000000001
+|----------TCP Header----------|
+|------------Payload-----------|
+ 
+ 
+Type                  Binary (0 - 15)       Explaination
+----                  ----------------      ------------
+Version               0100                  4
+Header Length         0101                  5
+Type of Service       0000000               (Not Used)
+Total Length          00010110010010100     11412
+Identification        00000000000000000     (Not Used)
+Flags                 000                   (No Flags)
+Fragment Offset       0000000000000         (Not Used)
+TTL                   00100000              32
+Protocol              00000110              6 (TCP)
+Header Checksum       0010100000101000      (Made up checksum)
+Source Addr           0110100010000010      104.130.169.14
+                      1010100100001110
+Destination Addr      0100010011111001      66.249.66.1
+                      0100010000000001
+Options               (Not Included)        (Not Used Here)
+```
+
+Last but not least, we'll wrap the packet in the Data-Link Layer.
+
+```
+| Dst MAC |
+| Src MAC |
+| IP Header |
+| TCP Header |
+| Payload |
+| Checksum |
+ 
+ 
+10111100011101100100111000100000
+01111000110010110000000000000000
+00001100100111111111000000000001
+|----------IP Header-----------|
+|----------TCP Header----------|
+|-----------Payload------------|
+10100100011101010010110000110101
+Type                  Binary (0 - 15)       Explaination
+----                  ----------------      ------------
+Destination Mac       1011110001110110      bc:76:4e:20:78:cb
+                      0100111000100000
+                      0111100011001011
+Source Mac            0000000000000000      00:00:0c:9f:f0:01
+                      0000110010011111
+                      1111000000000001
+Checksum              1010010001110101      (Made up checksum)
+```
+
+In this case, the Destination MAC Address is the MAC Address of
+thrasher's router and the Source MAC Address is the MAC Address of
+thrasher himself.  Always remember that these two values change
+everytime you traverse a subnet.
+
+So what does the entire packet look like?
+
+```
+  10111100011101100100111000100000
+  01111000110010110000000000000000
+  00001100100111111111000000000001
+  01000101000000000010110010010100
+  00000000000000000000000000000000
+  01000000000001100010100000101000
+  01101000100000101010100100001110
+  01000100111110010100010000000001
+  00000000010100000011001101011001
+  00000000000000000000000000000001
+  00000000000000000000000000000000
+  01010000000000000000000000000000
+  00100100101011010000000000000000
+  |-----------Payload------------|
+  10100100011101010010110000110101
+ 
+Or...
+ 
+  | Dst MAC |
+  | Src MAC |
+  | Version | Header Length | Type of Service | Total Length |
+  | Identification Number | Flags | Fragment Offset |
+  | TTL | Protocol | Header Checksum |
+  | Src Addr |
+  | Dst Addr |
+  | Options |
+  | Src Port | Dst Port |
+  | Sequence Number |
+  | Acknowledgement Number |
+  | Data Offset | Reserved | Flags | Window |
+  | Checksum | Urgent Pointer |
+  | Options |
+  | Payload |
+  | Checksum |
+```
+
+# A Day in the TTL of a Packet
+
+Well, we've constructed packets and we've learned what everything does.
+Now it's time to look at sets of packets.
+
+## Traversing the Subnet for Fun and Profit
+
+We've told you that a packet changes; well, now it's time to learn just
+how it changes.  To start with, everytime a packet crosses a router, it
+gets an entirely new Data-Link Layer header.  This is necessary because
+every piece of information changes to facilitate transmisison to the
+next hop in its route.  Here's an example traceroute to show all the
+routers a packet must traverse to reach its final destination.  (Note
+that this is different for any two end-points.)
+
+```
+root@whippoorwill:~# traceroute -n 8.8.8.8
+traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
+ 1  172.30.16.1  0.140 ms  0.148 ms  0.160 ms
+ 2  10.9.36.1  9.797 ms  10.717 ms  14.559 ms
+ 3  216.198.98.1  15.807 ms  16.775 ms  16.787 ms
+ 4  12.247.149.165  17.742 ms  17.844 ms  18.743 ms
+ 5  12.122.140.242  18.941 ms * *
+ 6  * * *
+ 7  12.122.96.81  101.591 ms  92.955 ms  92.125 ms
+ 8  12.252.250.6  12.678 ms  17.382 ms  16.387 ms
+ 9  64.233.174.121  15.227 ms 209.85.253.171  15.355 ms 64.233.174.121
+15.171 ms
+10  216.239.63.167  14.459 ms 216.239.62.211  16.727 ms 216.239.63.167
+13.751 ms
+11  8.8.8.8  12.080 ms  15.694 ms  14.635 ms
+```
+
+Here we can see that we'll have to make 11 hops to reach our
+destination. I'm only going to detail one of these hops in addition to
+those fields in the packet header that are prone to change. In this
+example, our workstation whipporwill (172.30.16.28) is going to make a
+DNS lookup from google's DNS server at 8.8.8.8. Here's our packet.
+(Note: This is a UDP packet, so the Transport Layer is significantly
+shorter, consisting only of a Source Port, Destination Port, Header
+Length, and optional Checksum.)
+
+```
+00000000001000100110101110111100  -- 802.3 Header
+10001110010100111110000011001011
+01001110010011110010001010101101  -- 802.3 Header
+01000101000000000010110010010100  -- IPv4 Header
+00000000000000000000000000000000
+01000000000010001010100000101000
+10101100000111100001000000011100
+00001000000010000000010000000100  -- IPv4 Header
+10100001011011110000000000110101  -- UDP Header
+00000000010011110100110001011101  -- UDP Header
+|---------Payload--------------|
+10100100011101010010110000110101  -- 802.3 Checksum
+```
+
+When whippoorwill's router receives this packet, the first thing it
+will do is check to see if the Destination MAC address (e0cb4e4f22ad -
+111000001100101101001110010011110010001010101101) matches it's
+interface. Assuming it does, it then strips away the entire Data-Link
+Layer. In this example, the Data-Link Layer is in 802.3 (Ethernet)
+format. Everything in this layer will get replaced.
+
+```
+01000101000000000010110010010100  -- IPv4 Header
+00000000000000000000000000000000
+01000000000010001010100000101000
+10101100000111100001000000011100
+00100000000010000000010000000100  -- IPv4 Header
+10100001011011110000000000110101  -- UDP Header
+00000000010011110100110001011101  -- UDP Header
+|---------Payload--------------|
+```
+
+At this point, the router checks the Destination IP Address (8.8.8.8
+00001000000010000000100000001000) and determines that it does not match
+itself, so it must forward the packet onward. It decrements the TTL
+value from 32 (00100000) to 31 (00011111) and recalculates the Header
+Checksum (because the TTL value has changed). As usual, I'm inserting
+random value for the Header Checksum.
+
+```
+01000101000000000010110010010100  -- IPv4 Header
+00000000000000000000000000000000
+01000000000010001010100000101000
+10101100000111100001000000011100
+00011111000010000000010101000001  -- IPv4 Header
+10100001011011110000000000110101  -- UDP Header
+00000000010011110100110001011101  -- UDP Header
+|---------Payload--------------|
+```
+
+Now the router checks its own routing table to determine the next hop.
+As we saw in our traceroute above, that is the node with the IP address
+10.9.36.1. Our router now builds a brand-new Data-Link header with its
+Source MAC Address and the Destination MAC Address of 10.9.36.1.
+
+```
+00000000001000100110101110111100  -- 802.3 Header
+10001110010100110101000000111101
+11100101010100000010011111000101  -- 802.3 Header
+01000101000000000010110010010100  -- IPv4 Header
+00000000000000000000000000000000
+01000000000010001010100000101000
+10101100000111100001000000011100
+00011111000010000000010101000001  -- IPv4 Header
+10100001011011110000000000110101  -- UDP Header
+00000000010011110100110001011101  -- UDP Header
+|---------Payload--------------|
+01111000011011100010010110010011  -- 802.3 Checksum
+```
+
+This process continues until the packet either reaches its final
+destination or until the TTL drops to 0 (at which point the packet is
+discarded).
+
+## TCP from SYN to FIN
+
+It might be of benefit to show an actual TCP connection from start to
+finish.  Here, I have striped the Data-Link Header for clarity. The IP
+Header has been left in, but largely stripped of extraneous data.  In
+addition, we won't be looking at any of the packets in this connection
+in binary form, and rather than entering IP Addresses for the nodes
+involved, we'll simply use the short form of their host-name.
+
+Let's assume whippoorwill (172.30.16.28) wants to retrieve a webpage
+from rackspace.com (173.203.44.122). Naturally, the first thing it
+needs to do is initiate a three-way handshake.
+
+```
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         SYN
+Seq Num       0
+Ack Num       0
+rackspace     ->   whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         SYN/ACK
+Seq Num       0
+Ack Num       0
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         ACK
+Seq Num       0
+Ack Num       0
+```
+
+At this point, the three-way handshake has been initialized and we're
+ready for the first packets with any real data in them to be
+transmitted.
+
+```
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         None
+Seq Num       1
+Ack Num       0
+Payload       "Give me index.html"
+rackspace     ->  whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         ACK
+Seq Num       0
+Ack Num       1 
+```
+
+whippoorwill has asked for the document "index.html" and rackspace has
+responded with an acknowledgement.  Next, rackspace will begin to send
+the page.
+
+```
+rackspace     ->   whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         None
+Seq Num       1000
+Ack Num       0
+Payload       "Part 0 of index.html."
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         ACK
+Seq Num       0
+Ack Num       1000
+rackspace     ->   whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         None
+Seq Num       1001
+Ack Num       0
+Payload       "Part 1 of index.html."
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         ACK
+Seq Num       0
+Ack Num       1001
+```
+
+Rackspace has sent the first 2 parts of the page (remember, computers
+always start counting at 0 and you should too!) and whippoorwill has
+acknowledged both of those parts.  Now, whippoorwill decides that it's
+ready to terminate the connection.
+
+```
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         FIN
+Seq Num       0
+Ack Num       0
+rackspace     ->   whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         FIN/ACK
+Seq Num       0
+Ack Num       0
+```
+
+whippoorwill has sent a FIN packet to Rackspace, asking Rackspace to
+tear-down the connection gracefully.  Racksapce has in turn
+acknowledged this termination request, but isn't yet finished sending
+the web page.  (If whippoorwill wanted Rackspace to immediately drop
+what it was doing and tear down the connection, he would have sent an
+RST packet instead.)
+
+```
+racksapce     ->   whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         None
+Seq Num       1002
+Ack Num       0
+Payload       "Part 2 of index.html."
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         ACK
+Seq Num       0
+Ack Num       1002
+rackspace     ->   whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         None
+Seq Num       1003
+Ack Num       0
+Payload       "Part 3 of index.html."
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         ACK
+Seq Num       0
+Ack Num       1003
+```
+
+Now that rackspace has completed sending all its data, it will let
+whippoorwill know that it too is closing the connection.
+
+```
+rackspace     ->   whippoorwill
+Src Port      80
+Dst Port      3560
+Flags         FIN
+Seq Num       0
+Ack Num       0
+whippoorwill  ->   rackspace
+Src Port      3560
+Dst Port      80
+Flags         FIN/ACK
+Seq Num       0
+Ack Num       0
+```
+
+And now the connection is completely torn down.
+
+# Appendix
+
+Most of these topics cannot be thought of as "fundamental", but could
+be advantageous to know.
+
+## Packet Encapsulation
+
+Like it's name suggests, packet encapsulation is the process of
+wrapping one packet up inside of another. This is commonly used in VPNs
+for example. It lets create and send normal plain-text packets, then
+encrypts them and wraps that encrypted data up as the payload for a new
+packet. In the reverse, it strips away the encapsulation, unencrypts
+the payload, and injects it back into the kernel as a regular packet.
+The great benefit of this is that our applications don't need to speak
+the encrypted protocol; we can simply use them normally and all the
+encryption is done transparently for us. Let's take a look at how this
+works.
+
+Currently, my workstation whippoorwill is connected to a VPN. Here's
+what its routing table looks like.
+
+```
+# ip route show
+default dev tun0  scope link
+default via 172.30.16.1 dev eth0  metric 202
+10.15.160.0/20 dev tun0  scope link
+72.32.144.37 via 172.30.16.1 dev eth0  src 172.30.16.28
+72.32.144.38 via 172.30.16.1 dev eth0  src 172.30.16.28
+127.0.0.0/8 dev lo  scope link
+172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
+metric 202
+```
+
+When I send a packet out to any IP address matching my default tun0
+route, the packet gets encrypted and encapsulated into a new packet
+destined for 72.32.144.37. Let's see this in action. Suppose I am
+sending a simple HTTP GET request to www.google.com (74.125.21.105).
+The kernel begins building out the packet normally, starting with the
+HTTP Payload, the TCP header, and the IPv4 header.
+
+```
+01000101000000000010110010010100
+00000000000000000000000000000000
+01000000000001100010100000101000
+01101000100000101010100100001110
+01000100111110010100010000000001
+00000000010100000011001101011001
+00000000000000000000000000000001
+00000000000000000000000000000000
+01010000000000000000000000000000
+00100100101011010000000000000000
+|-----------Payload------------| 
+```
+
+At this point, the magic happens! The kernel passes the packet to the
+tun0 interface to begin building the Data-Link layer, but instead of
+doing that, it takes the entire packet as-is and encrypts it as a new
+payload.
+
+```
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+```
+
+Now the kernel takes this encrypted packet as the payload for an
+entirely new UDP packet destined for the other VPN endpoint (in our
+example: 74.125.21.105).
+
+```
+01000101000000000010110010010100  -- IPv4 Header
+00000000000000000000000000000000
+01000000000010001010100000101000
+00001010000011111011011011010100  -- 10.15.182.212
+01001000001000001001000000100110  -- 72.32.144.38
+10100001011011110000000000110101  -- UDP Header
+00000000010011110100110001011101  -- UDP Header
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+|------Encrypted Payload-------|
+```
+
+
+
+
+
 
 
 
