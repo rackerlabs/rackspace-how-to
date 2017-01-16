@@ -833,8 +833,8 @@ the kernel chooses to use it instead as it is more specific. This
 specific example has a lot of information here, but for now there's
 really only two things we are interested in.
 
-`  Does the route include a "via IP_ADDRESS" statement?`
-`  What "dev INTERFACE" statement is included?`
+`Does the route include a "via IP_ADDRESS" statement?`
+`What "dev INTERFACE" statement is included?`
 
 The first statement tells us if we need to use a router (gateway) and
 what that router's IP address is. In this case, no router is specified,
