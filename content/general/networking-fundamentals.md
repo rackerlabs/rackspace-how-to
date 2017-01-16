@@ -378,20 +378,22 @@ Your copper cable always carries a voltage, and as this voltage
 changes, the remote NIC interprets this change as either a 1 or a 0.
 Let's assuming your NIC is capable of producing voltages between 1 and
 5 volts and that above 3 Volts is considered a "1" and below 3 Volts is
-considered a "0".  Voltage always changes on a curve that resembled a
+considered a "0".  Voltage always changes on a curve that resembles a
 sine wave (yes, you should have paid attention in your high school Trig
-class).  Another one of my insanely ugly ASCII-art graphs follows.
+class).
+
+<img src="{% asset_path general/networking-fundamentals/digital-interpretation.png %}" width="655" height="299" />
 
 ```
-  5   |                . .               .
-  4.5 |              .     .          .    .
-V 4   |            .         .      .        .
-o 3.5 |          .             .  .           .
+  5   |                | |               |
+  4.5 |              |     |          |    |
+V 4   |            |         |      |        |
+o 3.5 |          |             |  |           |
 l 3   | ===========================================================
-t 2.5 |      .                                   .               .
-s 2   |    .                                       .          .
-  1.5 |  .                                           .      .
-  1   | .                                              .  .
+t 2.5 |      |                                   |               |
+s 2   |    |                                       |          |
+  1.5 |  |                                           |      |
+  1   | |                                              |  |
       -------------------------------------------------------------
         |  0  |  |     1       |   |     1     |  |      0       |
 ```
@@ -607,6 +609,187 @@ non-IP networks like Chaosnet. These days, everyone uses Internet
 Protocol. In IPv6, this functionality is handled by the similar
 Neighbor Discovery Protocol (RFC 4861).
 
+# Network Layer
+
+This is without a doubt the most fun and most difficult layer to learn.
+Without this layer, no machine could address any other machine without
+knowing its MAC address, and those machines would have to be on
+connected hubs, bridges, and switches.  The Network Layer is
+responsible for determining the final destination of a packet and
+determining just how to get there from here.
+
+## IP Addressing
+
+Alright, so you all know what an IP address is don't you?  Everyone has
+one these days.  In fact, some of us have lots of them.  They're those
+funny little numbers like 207.69.188.185.  What do they mean?  Why
+can't I just use whatever numbers I want there?  And why do they only
+go up to 255?
+
+Simply put, an IP address is a 32-bit binary number.  It's a string of
+1s and 0s 32 digits long.  For various reasons, we split that 32-bit
+number up into 4 8-bit numbers.  Let me use a common example.
+
+192.168.1.100 is a common IP address on many private networks as it's
+one of the most easily remembered default IP addresses for a private
+LAN. (We'll discuss private IP ranges later.  For now, play along.)
+What does the computer see when we send a packet to this address? To
+answer that question we need to know something about binary arithmetic.
+If you skipped our section on binary arithmetic, now may be a good time
+to go back and review it.
+
+  `192.168.001.100 = 11000000.10101000.00000001.01100110`
+
+In reality, the dots don't exist.  They are only there to help us work
+with four 8-bit numbers instead of 1 big 32-bit number.  In reality,
+the computer just sees "11000000101010000000000101100110".
+
+So now you know what an IP address is.  Just like with the MAC address,
+every packet has a Destination IP Address and a Source IP Address.
+
+## Subnetting
+
+Subnetting today is properly called "Classless Inter-Domain Routing"and
+is formally described in the RFCs 1518 and 1519.
+
+Subnetting is a way of determined what IP addresses are on our network.
+Basically, it tells us what nodes we can talk to directly without
+communicating through a router of some sort.  You've probably seen
+subnets like 255.255.255.0 or heard of them talked about as
+192.168.1.0/24, but what do those numbers mean?
+
+A subnet mask (or just a net mask for short) is a bit mask that
+basically tells the computer not to look at certain numbers.  To
+understand this, we have to look at those numbers in binary.
+
+  `255.255.255.0 = 11111111.11111111.11111111.00000000`
+
+  `192.168.1.100 = 11000000.10101000.00000001.01100110`
+
+In this example, a node (be that a computer, a managed switch, a
+router, or something else) can look at these two numbers and self to
+itself "looks like all numbers that begin 192.168.1 are on the same
+subnet".
+
+Another way of looking writing this is 192.168.1.100/24.  The /n tells
+us how many bits is in the bitmask.  In this case, 24. 
+
+            `/24 = 11111111.11111111.11111111.00000000`
+
+  `192.168.1.100 = 11000000.10101000.00000001.01100110`
+
+A helpful little table here should help you understand the basics.
+
+```
+Subnet             Bitmask      Value
+===============    =======      ===================================
+255.255.255.255    /32          11111111.11111111.11111111.11111111
+255.255.255.254    /31          11111111.11111111.11111111.11111110
+255.255.255.252    /30          11111111.11111111.11111111.11111100
+255.255.255.248    /29          11111111.11111111.11111111.11111000
+255.255.255.240    /28          11111111.11111111.11111111.11110000
+255.255.255.224    /27          11111111.11111111.11111111.11100000
+255.255.255.192    /26          11111111.11111111.11111111.11000000
+255.255.255.128    /25          11111111.11111111.11111111.10000000
+255.255.255.0      /24          11111111.11111111.11111111.00000000
+255.255.254.0      /23          11111111.11111111.11111110.00000000
+255.255.252.0      /22          11111111.11111111.11111100.00000000
+255.255.248.0      /21          11111111.11111111.11111000.00000000
+255.255.240.0      /20          11111111.11111111.11110000.00000000
+255.255.0.0        /16          11111111.11111111.00000000.00000000
+255.0.0.0          /8           11111111.00000000.00000000.00000000
+0.0.0.0            /0           00000000.00000000.00000000.00000000
+```
+
+This is a table of the most common subnets you will run across from the
+smallest (/32, a single node) to the widest (/0, everything).
+
+The number of address on a given subnet is easily found using the
+following formula.
+
+  `max_addr = 2^(32 - bit_mask)`
+
+So, if your bitmask is /32...
+
+  `max_addr = 2^(32 - 32) = 2^0 = 1`
+
+If it's /24...
+
+  `max_addr = 2$(32 - 24) = 2^8 = 256`
+
+But what IP addresses are included in one of those subnets?  It's easy
+to figure out that 192.168.1.0/24 means all addresses from 192.168.1.0
+to 192.168.1.255, but what about some obscure ones like
+172.16.25.208/29?  To determine this, we'll have to simply count up
+from 0.
+
+A /29 subnet has 8 IP Addresses, meaning that there is exactly 32 /29
+subnets inside a /24 subnet.  Let me make another table.
+
+```
+Subnet             Min IP           Max IP
+======             ======           ======
+172.16.25.0/29     172.16.25.0      172.16.25.7
+172.16.25.8/29     172.16.25.8      172.16.25.15
+172.16.25.16/29    172.16.25.16     172.16.25.23
+.....
+172.16.25.208/29   172.16.25.208    172.16.25.215
+```
+
+An alternative way of looking at this is to split the subnets one at a
+time.  Here we start with a known /24 and break it down into two /25s.
+Whichever /25 contains our IP address will be broken down into two
+/26s and so on until we reach the final /29.
+
+```
+Subnet             Min IP           Max IP
+======             ======           ======
+172.16.25.0/24     172.16.25.0      172.16.25.255
+...
+172.16.25.0/25     172.16.25.0      172.16.25.127
+172.16.25.128/25   172.16.25.128    172.16.25.255
+...
+172.16.25.128/26   172.16.25.128    172.16.25.191
+172.16.25.192/26   172.16.25.192    172.16.25.255
+...
+172.16.25.192/27   172.16.25.192    172.16.25.223
+172.16.25.224/27   172.16.25.224    172.16.25.255
+...
+172.16.25.192/28   172.16.25.192    172.16.25.207
+172.16.25.208/28   172.16.25.208    172.16.25.223
+...
+172.16.25.208/29   172.16.25.208    172.16.25.215
+```
+
+Simple, right?  Well, it used to be even simpler when we only had three
+netmasks.
+
+Years ago, when the Internet was young, there were only three subnets.
+These were believed to be sufficient at the time, because the Internet
+was mostly private, very small, and no one dreamed that so  many people
+would be on it today.  (Technically, there were other subnets, but
+they were restricted to specialty uses such as multi-cast.  We will not
+discuss them further.)
+
+```
+  Class   Network          Addresses
+  =====   =======          =========
+  A       255.0.0.0        16,777,216
+  B       255.255.0.0      65,536
+  C       255.255.255.0    256
+```
+
+If an organization needed 300 IP addresses, they were given 65,536.  If
+they needed 100,000, they were given 16,777,216.  Clearly this was very
+wasteful, and created shortages.  To address this, classless subnetting
+was invented, allowing organizations such as ISPs to get only as many
+IPs as they needed (or pretty close to it).  If I need 300 IP addresses,
+I don't need a /16.  A /23 includes 512 IP Addresses, and that's more
+than enough without wasting the other 65,024.  Today, you'll still hear
+this terminology from time to time.  People often refer to any /24
+subnet as a "Class C" network for example.
+
+## Route Determination
 
 
 
