@@ -61,43 +61,39 @@ fingers as individual bits that can be turned on and off (as a
 computer would), you'll realize you can count all the way to 31. If a
 finger is "down", that finger is a "0". If it is up it becomes a "1".
 
-```
-Decimal      Binary
-0            00000
-1            00001
-2            00010
-3            00011
-4            00100
-5            00101
-6            00110
-7            00111
-8            01000
-9            01001
-10           01010
-11           01011
-12           01100
-13           01101
-14           01110
-15           01111
-16           10000
-..           .....
-31           11111
-```
+    Decimal      Binary
+    0            00000
+    1            00001
+    2            00010
+    3            00011
+    4            00100
+    5            00101
+    6            00110
+    7            00111
+    8            01000
+    9            01001
+    10           01010
+    11           01011
+    12           01100
+    13           01101
+    14           01110
+    15           01111
+    16           10000
+    ..           .....
+    31           11111
 
 Those of you who are particularly smart are thinking "Hmmm.... binary
 means two, right?  What are the powers of 2?"
 
-```
-Power        Decimal        Binary
-0            1              00000001
-1            2              00000010
-2            4              00000100
-3            8              00001000
-4            16             00010000
-5            32             00100000
-6            64             01000000
-7            128            10000000
-```
+    Power        Decimal        Binary
+    0            1              00000001
+    1            2              00000010
+    2            4              00000100
+    3            8              00001000
+    4            16             00010000
+    5            32             00100000
+    6            64             01000000
+    7            128            10000000
 
 We could go further out to the nth power, but this is as far as we need
 to go for most practical purposes.  Here you can easily see what I call
@@ -105,14 +101,12 @@ the "Staircase of Two".  Each power of 2 shifts the "1" to the left
 just a single bit.  Compare the above "base 2" table to the more
 familiar "base 10" table.
 
-```
-Power        Decimal        Base Ten
-0            1              00000001
-1            10             00000010
-2            100            00000100
-..           ...            ........
-7            10000000       10000000
-```
+    Power        Decimal        Base Ten
+    0            1              00000001
+    1            10             00000010
+    2            100            00000100
+    ..           ...            ........
+    7            10000000       10000000
 
 Here you can easily see the "ones place", the "tens place", the
 "hundreds place" and so on.  In binary, we have the same thing, except
@@ -258,12 +252,10 @@ different colored pairs of wire.  In 10/100 Mbps ethernet, only pairs 1
 and 2 transmit data.  Pairs 3 and 4 are left vacant, but can be used to
 power a remote node using Power of Etherner (PoE).
 
-```
-  Pair 1: Orange / Orange-white
-  Pair 2: Green / Green-white
-  Pair 3: Blue / Blue-white
-  Pair 4: Brown / Brown-white
-```
+    Pair 1: Orange / Orange-white
+    Pair 2: Green / Green-white
+    Pair 3: Blue / Blue-white
+    Pair 4: Brown / Brown-white
 
 Unfortunately, how these pairs are wired is a little counter-intuitive,
 and depends on whether you are using an intermediate hub or switch, or
@@ -271,38 +263,34 @@ if you are connecting two Network Interface Cards (NICs) directly.  The
 typical way of terminating these cables is known as 568B.  A 568B
 termination looks a bit like this.
 
-```
-                   RJ-45 Terminator
-             ===========================
-             ||  Orange-white --------||
-             ||  Orange       --------||
-=============||  Green-white  --------||
- Cat5e Cable ||  Blue         --------||
-=============||  Blue-white   --------||
-             ||  Green        --------||
-             ||  Brown-white  --------||
-             ||  Brown        --------||
-             ===========================
-```
+                       RJ-45 Terminator
+                 ===========================
+                 ||  Orange-white --------||
+                 ||  Orange       --------||
+    =============||  Green-white  --------||
+     Cat5e Cable ||  Blue         --------||
+    =============||  Blue-white   --------||
+                 ||  Green        --------||
+                 ||  Brown-white  --------||
+                 ||  Brown        --------||
+                 ===========================
 
 If both ends of the cable are terminated in this fasion, then the cable
 is called a patch cable.  However, if only one end is terminated in the
 following fashion, then the cable is known as a crossover cable and can
 connect two computers without an intervening switch or hub.
 
-```
-                   RJ-45 Terminator
-             ===========================
-             ||  Green-white  --------||
-             ||  Green        --------||
-=============||  Orange-white --------||
- Cat5e Cable ||  Brown        --------||
-=============||  Brown-white  --------||
-             ||  Orange       --------||
-             ||  Blue-white   --------||
-             ||  Blue         --------||
-             ===========================
-```
+                       RJ-45 Terminator
+                 ===========================
+                 ||  Green-white  --------||
+                 ||  Green        --------||
+    =============||  Orange-white --------||
+     Cat5e Cable ||  Brown        --------||
+    =============||  Brown-white  --------||
+                 ||  Orange       --------||
+                 ||  Blue-white   --------||
+                 ||  Blue         --------||
+                 ===========================
 
 Those of you who are ahead of the class are wondering why this isn't
 necessary if the cable is to be plugged into a hub or switch.  The
@@ -313,56 +301,50 @@ according to whether they are to transmit or receive data. (100Mb
 Ethernet only uses two wire pairs. Gigabit Ethernet uses all 4.) Each
 pair has a positive cable and a ground cable.
 
-```
-        NIC                  Hub or Switch
-===================       =================
-||  Output  -----|| 1   1 ||---- Input   ||
-||  Output  -----|| 2   2 ||---- Input   ||
-||  Input   -----|| 3   3 ||---- Output  ||
-||  Unused  -----|| 4   4 ||---- Unused  ||
-||  Unused  -----|| 5   5 ||---- Unused  ||
-||  Input   -----|| 6   6 ||---- Output  ||
-||  Unused  -----|| 7   7 ||---- Unused  ||
-||  Unused  -----|| 8   8 ||---- Unused  ||
-===================       =================
-```
+            NIC                  Hub or Switch
+    ===================       =================
+    ||  Output  -----|| 1   1 ||---- Input   ||
+    ||  Output  -----|| 2   2 ||---- Input   ||
+    ||  Input   -----|| 3   3 ||---- Output  ||
+    ||  Unused  -----|| 4   4 ||---- Unused  ||
+    ||  Unused  -----|| 5   5 ||---- Unused  ||
+    ||  Input   -----|| 6   6 ||---- Output  ||
+    ||  Unused  -----|| 7   7 ||---- Unused  ||
+    ||  Unused  -----|| 8   8 ||---- Unused  ||
+    ===================       =================
 
 Here, you would want to use a patch cable, as the NIC's Output lines up
 with the hub's input and vice-versa.  A crossover cable simply handles
 this for you if the two interface ports have the same pin setup.
 Consider this example:
 
-```
-       NIC 1                     NIC 2
-===================       =================
-||  Output  -----|| 1   1 ||---- Output  ||
-||  Output  -----|| 2   2 ||---- Output  ||
-||  Input   -----|| 3   3 ||---- Ipnut   ||
-||  Unused  -----|| 4   4 ||---- Unused  ||
-||  Unused  -----|| 5   5 ||---- Unused  ||
-||  Input   -----|| 6   6 ||---- Input   ||
-||  Unused  -----|| 7   7 ||---- Unused  ||
-||  Unused  -----|| 8   8 ||---- Unused  ||
-===================       =================
-```
+           NIC 1                     NIC 2
+    ===================       =================
+    ||  Output  -----|| 1   1 ||---- Output  ||
+    ||  Output  -----|| 2   2 ||---- Output  ||
+    ||  Input   -----|| 3   3 ||---- Ipnut   ||
+    ||  Unused  -----|| 4   4 ||---- Unused  ||
+    ||  Unused  -----|| 5   5 ||---- Unused  ||
+    ||  Input   -----|| 6   6 ||---- Input   ||
+    ||  Unused  -----|| 7   7 ||---- Unused  ||
+    ||  Unused  -----|| 8   8 ||---- Unused  ||
+    ===================       =================
 
 f we were to connect a patch cable between these two NICs, no data
 could flow through as each NIC would attempt to transmit and receive on
 the same pairs.  But by connecting a cross-over cable...
 
-```
-       NIC 1                     NIC 2
-===================       =================
-||  Output  -----|| 1   3 ||---- Output  ||
-||  Output  -----|| 2   6 ||---- Output  ||
-||  Input   -----|| 3   1 ||---- Input   ||
-||  Unused  -----|| 4   4 ||---- Unused  ||
-||  Unused  -----|| 5   5 ||---- Unused  ||
-||  Input   -----|| 6   2 ||---- Input   ||
-||  Unused  -----|| 7   7 ||---- Unused  ||
-||  Unused  -----|| 8   8 ||---- Unused  ||
-===================       =================
-```
+           NIC 1                     NIC 2
+    ===================       =================
+    ||  Output  -----|| 1   3 ||---- Output  ||
+    ||  Output  -----|| 2   6 ||---- Output  ||
+    ||  Input   -----|| 3   1 ||---- Input   ||
+    ||  Unused  -----|| 4   4 ||---- Unused  ||
+    ||  Unused  -----|| 5   5 ||---- Unused  ||
+    ||  Input   -----|| 6   2 ||---- Input   ||
+    ||  Unused  -----|| 7   7 ||---- Unused  ||
+    ||  Unused  -----|| 8   8 ||---- Unused  ||
+    ===================       =================
 
 ... everything flows smoothly.
 
@@ -490,16 +472,14 @@ However, if they are on different interfaces, it propogates the packet
 only along the proper interface.  A couple of diagrams may help
 explain.
 
-```
-=======================                    =======================
-|      Hub A          |--------------------|        Hub B        |
-=======================                    =======================
-    |           |                              |           |
-    |           |                              |           |
-==========  ==========                     ==========  ==========
-| Node 1 |  | Node 2 |                     | Node 3 |  | Node 4 |
-==========  ==========                     ==========  ==========
-```
+    =======================                    =======================
+    |      Hub A          |--------------------|        Hub B        |
+    =======================                    =======================
+        |           |                              |           |
+        |           |                              |           |
+    ==========  ==========                     ==========  ==========
+    | Node 1 |  | Node 2 |                     | Node 3 |  | Node 4 |
+    ==========  ==========                     ==========  ==========
 
 In this example, if Node 1 sends a packet to Node 2, the packet
 traverses both hubs, so nodes 2, 3, and 4 will all see the packet. Only
@@ -507,16 +487,14 @@ node 2 will act on it, and the others will ignore it.  Obviously, this
 is less efficient since every single node has to do collision detection
 for three other nodes.
 
-```
-=======================     ==========     =======================
-|      Hub A          |-----| Bridge |-----|        Hub B        |
-=======================     ==========     =======================
-    |           |                              |           |
-    |           |                              |           |
-==========  ==========                     ==========  ==========
-| Node 1 |  | Node 2 |                     | Node 3 |  | Node 4 |
-==========  ==========                     ==========  ==========
-```
+    =======================     ==========     =======================
+    |      Hub A          |-----| Bridge |-----|        Hub B        |
+    =======================     ==========     =======================
+        |           |                              |           |
+        |           |                              |           |
+    ==========  ==========                     ==========  ==========
+    | Node 1 |  | Node 2 |                     | Node 3 |  | Node 4 |
+    ==========  ==========                     ==========  ==========
 
 In this example network, if Node 1 sends a packet to Node 2, both Node
 2 and the bridge see the packet.  Node 2 accepts the packet, and the
@@ -557,18 +535,16 @@ intended for it.  Not only does this prevent collisions, but it also
 increases overall throughput as multiple machines may send packets at
 the same time.
 
-```
-=================================================================
-|                            Switch A                           |
-=================================================================
-  | 1 |      | 2 |      | 3 |      | 4 |      | 5 |      | 6 |
-  =====      =====      =====      =====      =====      =====
-    |          |          |          |          |          |
-    |          |          |          |          |          |
-========== ========== ========== ========== ========== ==========
-| Node A | | Node B | | Node C | | Node D | | Node E | | Node F |
-========== ========== ========== ========== ========== ==========
-```
+    =================================================================
+    |                            Switch A                           |
+    =================================================================
+      | 1 |      | 2 |      | 3 |      | 4 |      | 5 |      | 6 |
+      =====      =====      =====      =====      =====      =====
+        |          |          |          |          |          |
+        |          |          |          |          |          |
+    ========== ========== ========== ========== ========== ==========
+    | Node A | | Node B | | Node C | | Node D | | Node E | | Node F |
+    ========== ========== ========== ========== ========== ==========
 
 This is a typical 6-port switch with 6 nodes attached to it.  Say that
 Node A wants to send a packet to Node B.  The switch receives the
@@ -675,26 +651,24 @@ us how many bits are in the bitmask.  In this case, 24.
 
 A helpful little table here should help you understand the basics.
 
-```
-Subnet             Bitmask      Value
-===============    =======      ===================================
-255.255.255.255    /32          11111111.11111111.11111111.11111111
-255.255.255.254    /31          11111111.11111111.11111111.11111110
-255.255.255.252    /30          11111111.11111111.11111111.11111100
-255.255.255.248    /29          11111111.11111111.11111111.11111000
-255.255.255.240    /28          11111111.11111111.11111111.11110000
-255.255.255.224    /27          11111111.11111111.11111111.11100000
-255.255.255.192    /26          11111111.11111111.11111111.11000000
-255.255.255.128    /25          11111111.11111111.11111111.10000000
-255.255.255.0      /24          11111111.11111111.11111111.00000000
-255.255.254.0      /23          11111111.11111111.11111110.00000000
-255.255.252.0      /22          11111111.11111111.11111100.00000000
-255.255.248.0      /21          11111111.11111111.11111000.00000000
-255.255.240.0      /20          11111111.11111111.11110000.00000000
-255.255.0.0        /16          11111111.11111111.00000000.00000000
-255.0.0.0          /8           11111111.00000000.00000000.00000000
-0.0.0.0            /0           00000000.00000000.00000000.00000000
-```
+    Subnet             Bitmask      Value
+    ===============    =======      ===================================
+    255.255.255.255    /32          11111111.11111111.11111111.11111111
+    255.255.255.254    /31          11111111.11111111.11111111.11111110
+    255.255.255.252    /30          11111111.11111111.11111111.11111100
+    255.255.255.248    /29          11111111.11111111.11111111.11111000
+    255.255.255.240    /28          11111111.11111111.11111111.11110000
+    255.255.255.224    /27          11111111.11111111.11111111.11100000
+    255.255.255.192    /26          11111111.11111111.11111111.11000000
+    255.255.255.128    /25          11111111.11111111.11111111.10000000
+    255.255.255.0      /24          11111111.11111111.11111111.00000000
+    255.255.254.0      /23          11111111.11111111.11111110.00000000
+    255.255.252.0      /22          11111111.11111111.11111100.00000000
+    255.255.248.0      /21          11111111.11111111.11111000.00000000
+    255.255.240.0      /20          11111111.11111111.11110000.00000000
+    255.255.0.0        /16          11111111.11111111.00000000.00000000
+    255.0.0.0          /8           11111111.00000000.00000000.00000000
+    0.0.0.0            /0           00000000.00000000.00000000.00000000
 
 This is a table of the most common subnets you will run across from the
 smallest (/32, a single node) to the widest (/0, everything).
@@ -721,40 +695,36 @@ from 0.
 A /29 subnet has 8 IP Addresses, meaning that there are exactly 32 /29
 subnets inside a /24 subnet.  Let me make another table.
 
-```
-Subnet             Min IP           Max IP
-======             ======           ======
-172.16.25.0/29     172.16.25.0      172.16.25.7
-172.16.25.8/29     172.16.25.8      172.16.25.15
-172.16.25.16/29    172.16.25.16     172.16.25.23
-.....
-172.16.25.208/29   172.16.25.208    172.16.25.215
-```
+    Subnet             Min IP           Max IP
+    ======             ======           ======
+    172.16.25.0/29     172.16.25.0      172.16.25.7
+    172.16.25.8/29     172.16.25.8      172.16.25.15
+    172.16.25.16/29    172.16.25.16     172.16.25.23
+    .....
+    172.16.25.208/29   172.16.25.208    172.16.25.215
 
 An alternative way of looking at this is to split the subnets one at a
 time.  Here we start with a known /24 and break it down into two /25s.
 Whichever /25 contains our IP address will be broken down into two
 /26s and so on until we reach the final /29.
 
-```
-Subnet             Min IP           Max IP
-======             ======           ======
-172.16.25.0/24     172.16.25.0      172.16.25.255
-...
-172.16.25.0/25     172.16.25.0      172.16.25.127
-172.16.25.128/25   172.16.25.128    172.16.25.255
-...
-172.16.25.128/26   172.16.25.128    172.16.25.191
-172.16.25.192/26   172.16.25.192    172.16.25.255
-...
-172.16.25.192/27   172.16.25.192    172.16.25.223
-172.16.25.224/27   172.16.25.224    172.16.25.255
-...
-172.16.25.192/28   172.16.25.192    172.16.25.207
-172.16.25.208/28   172.16.25.208    172.16.25.223
-...
-172.16.25.208/29   172.16.25.208    172.16.25.215
-```
+    Subnet             Min IP           Max IP
+    ======             ======           ======
+    172.16.25.0/24     172.16.25.0      172.16.25.255
+    ...
+    172.16.25.0/25     172.16.25.0      172.16.25.127
+    172.16.25.128/25   172.16.25.128    172.16.25.255
+    ...
+    172.16.25.128/26   172.16.25.128    172.16.25.191
+    172.16.25.192/26   172.16.25.192    172.16.25.255
+    ...
+    172.16.25.192/27   172.16.25.192    172.16.25.223
+    172.16.25.224/27   172.16.25.224    172.16.25.255
+    ...
+    172.16.25.192/28   172.16.25.192    172.16.25.207
+    172.16.25.208/28   172.16.25.208    172.16.25.223
+    ...
+    172.16.25.208/29   172.16.25.208    172.16.25.215
 
 Simple, right?  Well, it used to be even simpler when we only had three
 netmasks.
@@ -766,13 +736,11 @@ would be on it today.  (Technically, there were other subnets, but
 they were restricted to specialty uses such as multi-cast.  We will not
 discuss them further.)
 
-```
-  Class   Network          Addresses
-  =====   =======          =========
-  A       255.0.0.0        16,777,216
-  B       255.255.0.0      65,536
-  C       255.255.255.0    256
-```
+    Class   Network          Addresses
+    =====   =======          =========
+    A       255.0.0.0        16,777,216
+    B       255.255.0.0      65,536
+    C       255.255.255.0    256
 
 If an organization needed 300 IP addresses, they were given 65,536.  If
 they needed 100,000, they were given 16,777,216.  Clearly this was very
@@ -801,12 +769,10 @@ on your operating system.  Here's what my routing table currently looks
 like on Slackware Linux 14.2. Other operating systems format their
 routing tables differently, but the functionality is the same.
 
-```
-alan9228@whippoorwill:~# ip route show
-default via 172.30.16.1 dev eth0  metric 202
-127.0.0.0/8 dev lo  scope link
-172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28 metric 202
-```
+    alan9228@whippoorwill:~# ip route show
+    default via 172.30.16.1 dev eth0  metric 202
+    127.0.0.0/8 dev lo  scope link
+    172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28 metric 202
 
 This requires a little bit of explanation. When a packet is being
 transmitted outward, the kernel checks the packet's Destination IP
@@ -819,11 +785,9 @@ another (nightingale, 172.30.16.19). It forms a packet and sets the
 Destination IP address to 172.30.16.19. Then the kernel checks its
 routing table and finds two matches for this address.
 
-```
-default via 172.30.16.1 dev eth0  metric 202
-172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
-metric 202
-```
+    default via 172.30.16.1 dev eth0  metric 202
+    172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
+    metric 202
 The default route is a "catch-all" that should always match.
 Essentially, it is the network 0.0.0.0/0 - the entire Internet.
 However, 172.30.16.0/26 also matches, and is a much smaller subnet, so
@@ -938,12 +902,10 @@ in much the same way that ICMP does.  Unlike ICMP, a TCP packet can
 have multiple flags set at the same time.  In this document, we're only
 going to discuss the four most common.
 
-```
-  SYN - Synchronize and prepare for a connection
-  ACK - Acknowledge that a packet has been received (and which one)
-  FIN - Finished sending data
-  RST - Reset connection immediately
-```
+- SYN - Synchronize and prepare for a connection
+- ACK - Acknowledge that a packet has been received (and which one)
+- FIN - Finished sending data
+- RST - Reset connection immediately
 
 ##### Connection Initialization
 
@@ -964,11 +926,9 @@ packet, but it's really just an ACK packet.  Anyhow, this lets both
 nodes know that everything is ready to roll.  It all goes something
 like this.
 
-```
-  whippoorwill to nightingale - SYN
-  nightingale to whippoorwill - SYN-ACK
-  whippoorwill to nightingale - ACK
-```
+    whippoorwill to nightingale - SYN
+    nightingale to whippoorwill - SYN-ACK
+    whippoorwill to nightingale - ACK
 
 At this point, they are ready to transmit information.  whippoorwill
 can send TCP packets without any flags and nightingale will reply to
@@ -1000,41 +960,39 @@ file until that is complete before sending its own FIN.  Here we will
 begin with the three-way handshake, begin transmitting data, and end
 with a four-way handshake.
 
-```
-  Sender             Receiver       Flags       Content
-  ======             ========       =====       =======
-  (three-way handshake)
-  whippoorwill      nightingale     SYN
-  nightingale       whippoorwill    SYN-ACK
-  whippoorwill      nightingale     ACK
-  (begin data transmission)
-  whippoorwill      nightingale                 Give me BIG_FILE
-  nightingale       whippoorwill    ACK
-  nightingale       whippoorwill                BIG_FILE part 1
-  whippoorwill      nightingale     ACK
-  nightingale       whippoorwill                BIG_FILE part 2
-  whippoorwill      nightingale     ACK
-  nightingale       whippoorwill                BIG_FILE part 3
-  whippoorwill      nightingale     ACK
-  nightingale       whippoorwill                BIG_FILE part 4
-  whippoorwill      nightingale     ACK
-  (begin four-way handshake)
-  whippoorwill      nightingale     FIN
-  nightingale       whippoorwill    ACK
-  (half-open connection)
-  nightingale       whippoorwill                BIG_FILE part 5
-  whippoorwill      nightingale     ACK
-  nightingale       whippoorwill                BIG_FILE part 6
-  whippoorwill      nightingale     ACK
-  nightingale       whippoorwill                BIG_FILE part 7
-  whippoorwill      nightingale     ACK
-  nightingale       whippoorwill                BIG_FILE part 8
-  whippoorwill      nightingale     ACK
-  (complete four-way handshake)
-  nightingale       whippoorwill    FIN
-  whippoorwill      nightingale     ACK
-  (connection torn down)
-```
+    Sender             Receiver       Flags       Content
+    ======             ========       =====       =======
+    (three-way handshake)
+    whippoorwill      nightingale     SYN
+    nightingale       whippoorwill    SYN-ACK
+    whippoorwill      nightingale     ACK
+    (begin data transmission)
+    whippoorwill      nightingale                 Give me BIG_FILE
+    nightingale       whippoorwill    ACK
+    nightingale       whippoorwill                BIG_FILE part 1
+    whippoorwill      nightingale     ACK
+    nightingale       whippoorwill                BIG_FILE part 2
+    whippoorwill      nightingale     ACK
+    nightingale       whippoorwill                BIG_FILE part 3
+    whippoorwill      nightingale     ACK
+    nightingale       whippoorwill                BIG_FILE part 4
+    whippoorwill      nightingale     ACK
+    (begin four-way handshake)
+    whippoorwill      nightingale     FIN
+    nightingale       whippoorwill    ACK
+    (half-open connection)
+    nightingale       whippoorwill                BIG_FILE part 5
+    whippoorwill      nightingale     ACK
+    nightingale       whippoorwill                BIG_FILE part 6
+    whippoorwill      nightingale     ACK
+    nightingale       whippoorwill                BIG_FILE part 7
+    whippoorwill      nightingale     ACK
+    nightingale       whippoorwill                BIG_FILE part 8
+    whippoorwill      nightingale     ACK
+    (complete four-way handshake)
+    nightingale       whippoorwill    FIN
+    whippoorwill      nightingale     ACK
+    (connection torn down)
 
 There is one other way to tear down a TCP connection, and that is the
 deadly RST packet!  When one node sends the other node an RST packet,
@@ -1121,9 +1079,7 @@ the packet.  This data portion is referred to as the packet's
 payload to its destination and has no meaning outside of that.
 At this point, our packet is nothing but a payload and looks like this:
 
-```
-| Payload |
-```
+    | Payload |
 
 #### Transport Wrapping
 
@@ -1134,15 +1090,13 @@ known as "wrapping" because of the way it encapsulates higher layers in
 lower layers.  I won't go into details on all of the possible fields,
 but pretty much everything is shown below.
 
-```
-| Src Port | Dst Port |
-| Sequence Num |
-| Acknowledgement Num |
-| Data Offset | Reserved | Flags | Window |
-| Checksum | Urgent Pointer |
-| Options |
-| Payload |
-```
+    | Src Port | Dst Port |
+    | Sequence Num |
+    | Acknowledgement Num |
+    | Data Offset | Reserved | Flags | Window |
+    | Checksum | Urgent Pointer |
+    | Options |
+    | Payload |
 - Source Port - 16 bits
 - Destination Port - 16 bits
 - Sequence Number - 32 bits
@@ -1180,21 +1134,19 @@ discussion.
 
 Now we get to add actual routing information to the packet.
 
-```
-| Version | Header Length | Type of Service | Total Length |
-| Identification Number | Flags | Fragment Offset |
-| TTL | Protocol | Header Checksum |
-| Src Addr |
-| Dst Addr |
-| Options |
-| Src Port | Dst Port |
-| Sequence Num |
-| Acknowledgement Num |
-| Data Offset | Reserved | Flags | Window |
-| Checksum | Urgent Pointer |
-| Options |
-| Payload |
-```
+    | Version | Header Length | Type of Service | Total Length |
+    | Identification Number | Flags | Fragment Offset |
+    | TTL | Protocol | Header Checksum |
+    | Src Addr |
+    | Dst Addr |
+    | Options |
+    | Src Port | Dst Port |
+    | Sequence Num |
+    | Acknowledgement Num |
+    | Data Offset | Reserved | Flags | Window |
+    | Checksum | Urgent Pointer |
+    | Options |
+    | Payload |
 
 - Version - 4 bits, typically version 4 but IP version 6 is becoming
 more common.
@@ -1249,24 +1201,22 @@ optional data.
 
 Now we get to the final step of adding information to the packet.
 
-```
-| Dst MAC |
-| Src MAC |
-| Version | Header Length | Type of Service | Total Length |
-| Identification Number | Flags | Fragment Offset |
-| TTL | Protocol | Header Checksum |
-| Src Addr |
-| Dst Addr |
-| Options |
-| Src Port | Dst Port |
-| Sequence Num |
-| Acknowledgement Num |
-| Data Offset | Reserved | Flags | Window |
-| Checksum | Urgent Pointer |
-| Options |
-| Payload |
-| Checksum |
-```
+    | Dst MAC |
+    | Src MAC |
+    | Version | Header Length | Type of Service | Total Length |
+    | Identification Number | Flags | Fragment Offset |
+    | TTL | Protocol | Header Checksum |
+    | Src Addr |
+    | Dst Addr |
+    | Options |
+    | Src Port | Dst Port |
+    | Sequence Num |
+    | Acknowledgement Num |
+    | Data Offset | Reserved | Flags | Window |
+    | Checksum | Urgent Pointer |
+    | Options |
+    | Payload |
+    | Checksum |
 
 - Destination MAC - 48 bits
 - Source MAC - 48 bits
@@ -1300,40 +1250,38 @@ binary values to show information.
 To start, we'll just look at the transport headers and add on other
 headers.
 
-```
-| Src Port | Dst Port |
-| Sequence Number |
-| Acknowledgement Number |
-| Data Offset | Reserved | Flags | Window |
-| Checksum | Urgent Pointer |
-| Options |
-| Payload |
- 
- 
-00000000010100000011001101011001
-00000000000000000000000000000001
-00000000000000000000000000000000
-01010000000000000000000000000000
-00100100101011010000000000000000
-|---------Payload--------------|
- 
- 
-Type                  Binary (0 - 15)       Explaination
-----                  ----------------      ------------
-Source Port           0000000001010000      80
-Destination Port      0011001101011001      13145
-Sequence Number       0000000000000000      1
-                      0000000000000001
-Acknowledgement Num   0000000000000000      0
-                      0000000000000000
-Data Offset           0101                  5
-Reserved              0000                  (Not Used Here)
-Flags                 00000000              (No Flags Set)
-Window                0000000000000000      (Not described here)
-Checksum              0010010010101101      (Made up checksum)
-Urgent Pointer        0000000000000000      (Not Used Here)
-Options               (Not Included)        (Not Used Here)
-```
+    | Src Port | Dst Port |
+    | Sequence Number |
+    | Acknowledgement Number |
+    | Data Offset | Reserved | Flags | Window |
+    | Checksum | Urgent Pointer |
+    | Options |
+    | Payload |
+     
+     
+    00000000010100000011001101011001
+    00000000000000000000000000000001
+    00000000000000000000000000000000
+    01010000000000000000000000000000
+    00100100101011010000000000000000
+    |---------Payload--------------|
+     
+     
+    Type                  Binary (0 - 15)       Explaination
+    ----                  ----------------      ------------
+    Source Port           0000000001010000      80
+    Destination Port      0011001101011001      13145
+    Sequence Number       0000000000000000      1
+                          0000000000000001
+    Acknowledgement Num   0000000000000000      0
+                          0000000000000000
+    Data Offset           0101                  5
+    Reserved              0000                  (Not Used Here)
+    Flags                 00000000              (No Flags Set)
+    Window                0000000000000000      (Not described here)
+    Checksum              0010010010101101      (Made up checksum)
+    Urgent Pointer        0000000000000000      (Not Used Here)
+    Options               (Not Included)        (Not Used Here)
 
 As you can see, this packet is leaving port 80, going to port 13,145,
 and is the first packet in the sequence.  Since there are no flags set,
@@ -1349,73 +1297,69 @@ checksum for the packet.)
 Now that we've got the Transport layer finished, it's time to add on
 the Network Layer.
 
-```
-| Version | Header Length | Type of Service | Total Length |
-| Identification Number | Flags | Fragment Offset |
-| TTL | Protocol | Header Checksum |
-| Src Addr |
-| Dst Addr |
-| Options |
-| TCP Header |
-| Payload |
- 
- 
-01000101000000000010110010010100
-00000000000000000000000000000000
-01000000000001100010100000101000
-01101000100000101010100100001110
-01000100111110010100010000000001
-|----------TCP Header----------|
-|------------Payload-----------|
- 
- 
-Type                  Binary (0 - 15)       Explaination
-----                  ----------------      ------------
-Version               0100                  4
-Header Length         0101                  5
-Type of Service       0000000               (Not Used)
-Total Length          00010110010010100     11412
-Identification        00000000000000000     (Not Used)
-Flags                 000                   (No Flags)
-Fragment Offset       0000000000000         (Not Used)
-TTL                   00100000              32
-Protocol              00000110              6 (TCP)
-Header Checksum       0010100000101000      (Made up checksum)
-Source Addr           0110100010000010      104.130.169.14
-                      1010100100001110
-Destination Addr      0100010011111001      66.249.66.1
-                      0100010000000001
-Options               (Not Included)        (Not Used Here)
-```
+    | Version | Header Length | Type of Service | Total Length |
+    | Identification Number | Flags | Fragment Offset |
+    | TTL | Protocol | Header Checksum |
+    | Src Addr |
+    | Dst Addr |
+    | Options |
+    | TCP Header |
+    | Payload |
+     
+     
+    01000101000000000010110010010100
+    00000000000000000000000000000000
+    01000000000001100010100000101000
+    01101000100000101010100100001110
+    01000100111110010100010000000001
+    |----------TCP Header----------|
+    |------------Payload-----------|
+     
+         
+    Type                  Binary (0 - 15)       Explaination
+    ----                  ----------------      ------------
+    Version               0100                  4
+    Header Length         0101                  5
+    Type of Service       0000000               (Not Used)
+    Total Length          00010110010010100     11412
+    Identification        00000000000000000     (Not Used)
+    Flags                 000                   (No Flags)
+    Fragment Offset       0000000000000         (Not Used)
+    TTL                   00100000              32
+    Protocol              00000110              6 (TCP)
+    Header Checksum       0010100000101000      (Made up checksum)
+    Source Addr           0110100010000010      104.130.169.14
+                          1010100100001110
+    Destination Addr      0100010011111001      66.249.66.1
+                          0100010000000001
+    Options               (Not Included)        (Not Used Here)
 
 Last but not least, we'll wrap the packet in the Data-Link Layer.
 
-```
-| Dst MAC |
-| Src MAC |
-| IP Header |
-| TCP Header |
-| Payload |
-| Checksum |
- 
- 
-10111100011101100100111000100000
-01111000110010110000000000000000
-00001100100111111111000000000001
-|----------IP Header-----------|
-|----------TCP Header----------|
-|-----------Payload------------|
-10100100011101010010110000110101
-Type                  Binary (0 - 15)       Explaination
-----                  ----------------      ------------
-Destination Mac       1011110001110110      bc:76:4e:20:78:cb
-                      0100111000100000
-                      0111100011001011
-Source Mac            0000000000000000      00:00:0c:9f:f0:01
-                      0000110010011111
-                      1111000000000001
-Checksum              1010010001110101      (Made up checksum)
-```
+    | Dst MAC |
+    | Src MAC |
+    | IP Header |
+    | TCP Header |
+    | Payload |
+    | Checksum |
+     
+     
+    10111100011101100100111000100000
+    01111000110010110000000000000000
+    00001100100111111111000000000001
+    |----------IP Header-----------|
+    |----------TCP Header----------|
+    |-----------Payload------------|
+    10100100011101010010110000110101
+    Type                  Binary (0 - 15)       Explaination
+    ----                  ----------------      ------------
+    Destination Mac       1011110001110110      bc:76:4e:20:78:cb
+                          0100111000100000
+                          0111100011001011
+    Source Mac            0000000000000000      00:00:0c:9f:f0:01
+                          0000110010011111
+                          1111000000000001
+    Checksum              1010010001110101      (Made up checksum)
 
 In this case, the Destination MAC Address is the MAC Address of
 thrasher's router and the Source MAC Address is the MAC Address of
@@ -1424,42 +1368,40 @@ everytime you traverse a subnet.
 
 So what does the entire packet look like?
 
-```
-  10111100011101100100111000100000
-  01111000110010110000000000000000
-  00001100100111111111000000000001
-  01000101000000000010110010010100
-  00000000000000000000000000000000
-  01000000000001100010100000101000
-  01101000100000101010100100001110
-  01000100111110010100010000000001
-  00000000010100000011001101011001
-  00000000000000000000000000000001
-  00000000000000000000000000000000
-  01010000000000000000000000000000
-  00100100101011010000000000000000
-  |-----------Payload------------|
-  10100100011101010010110000110101
+    10111100011101100100111000100000
+    01111000110010110000000000000000
+    00001100100111111111000000000001
+    01000101000000000010110010010100
+    00000000000000000000000000000000
+    01000000000001100010100000101000
+    01101000100000101010100100001110
+    01000100111110010100010000000001
+    00000000010100000011001101011001
+    00000000000000000000000000000001
+      00000000000000000000000000000000
+    01010000000000000000000000000000
+    00100100101011010000000000000000
+    |-----------Payload------------|
+    10100100011101010010110000110101
  
 Or...
  
-  | Dst MAC |
-  | Src MAC |
-  | Version | Header Length | Type of Service | Total Length |
-  | Identification Number | Flags | Fragment Offset |
-  | TTL | Protocol | Header Checksum |
-  | Src Addr |
-  | Dst Addr |
-  | Options |
-  | Src Port | Dst Port |
-  | Sequence Number |
-  | Acknowledgement Number |
-  | Data Offset | Reserved | Flags | Window |
-  | Checksum | Urgent Pointer |
-  | Options |
-  | Payload |
-  | Checksum |
-```
+    | Dst MAC |
+    | Src MAC |
+    | Version | Header Length | Type of Service | Total Length |
+    | Identification Number | Flags | Fragment Offset |
+    | TTL | Protocol | Header Checksum |
+    | Src Addr |
+    | Dst Addr |
+    | Options |
+    | Src Port | Dst Port |
+    | Sequence Number |
+    | Acknowledgement Number |
+    | Data Offset | Reserved | Flags | Window |
+    | Checksum | Urgent Pointer |
+    | Options |
+    | Payload |
+    | Checksum |
 
 ### A Day in the TTL of a Packet
 
@@ -1476,23 +1418,21 @@ next hop in its route.  Here's an example traceroute to show all the
 routers a packet must traverse to reach its final destination.  (Note
 that this is different for any two end-points.)
 
-```
-root@whippoorwill:~# traceroute -n 8.8.8.8
-traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
- 1  172.30.16.1  0.140 ms  0.148 ms  0.160 ms
- 2  10.9.36.1  9.797 ms  10.717 ms  14.559 ms
- 3  216.198.98.1  15.807 ms  16.775 ms  16.787 ms
- 4  12.247.149.165  17.742 ms  17.844 ms  18.743 ms
- 5  12.122.140.242  18.941 ms * *
- 6  * * *
- 7  12.122.96.81  101.591 ms  92.955 ms  92.125 ms
- 8  12.252.250.6  12.678 ms  17.382 ms  16.387 ms
- 9  64.233.174.121  15.227 ms 209.85.253.171  15.355 ms 64.233.174.121
-15.171 ms
-10  216.239.63.167  14.459 ms 216.239.62.211  16.727 ms 216.239.63.167
-13.751 ms
-11  8.8.8.8  12.080 ms  15.694 ms  14.635 ms
-```
+    root@whippoorwill:~# traceroute -n 8.8.8.8
+    traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
+     1  172.30.16.1  0.140 ms  0.148 ms  0.160 ms
+     2  10.9.36.1  9.797 ms  10.717 ms  14.559 ms
+     3  216.198.98.1  15.807 ms  16.775 ms  16.787 ms
+     4  12.247.149.165  17.742 ms  17.844 ms  18.743 ms
+     5  12.122.140.242  18.941 ms * *
+     6  * * *
+     7  12.122.96.81  101.591 ms  92.955 ms  92.125 ms
+     8  12.252.250.6  12.678 ms  17.382 ms  16.387 ms
+     9  64.233.174.121  15.227 ms 209.85.253.171  15.355 ms 64.233.174.121
+    15.171 ms
+    10  216.239.63.167  14.459 ms 216.239.62.211  16.727 ms 216.239.63.167
+    13.751 ms
+    11  8.8.8.8  12.080 ms  15.694 ms  14.635 ms
 
 Here we can see that we'll have to make 11 hops to reach our
 destination. I'm only going to detail one of these hops in addition to
@@ -1503,20 +1443,18 @@ DNS lookup from google's DNS server at 8.8.8.8. Here's our packet.
 shorter, consisting only of a Source Port, Destination Port, Header
 Length, and optional Checksum.)
 
-```
-00000000001000100110101110111100  -- 802.3 Header
-10001110010100111110000011001011
-01001110010011110010001010101101  -- 802.3 Header
-01000101000000000010110010010100  -- IPv4 Header
-00000000000000000000000000000000
-01000000000010001010100000101000
-10101100000111100001000000011100
-00001000000010000000010000000100  -- IPv4 Header
-10100001011011110000000000110101  -- UDP Header
-00000000010011110100110001011101  -- UDP Header
-|---------Payload--------------|
-10100100011101010010110000110101  -- 802.3 Checksum
-```
+    00000000001000100110101110111100  -- 802.3 Header
+    10001110010100111110000011001011
+    01001110010011110010001010101101  -- 802.3 Header
+    01000101000000000010110010010100  -- IPv4 Header
+    00000000000000000000000000000000
+    01000000000010001010100000101000
+    10101100000111100001000000011100
+    00001000000010000000010000000100  -- IPv4 Header
+    10100001011011110000000000110101  -- UDP Header
+    00000000010011110100110001011101  -- UDP Header
+    |---------Payload--------------|
+    10100100011101010010110000110101  -- 802.3 Checksum
 
 When whippoorwill's router receives this packet, the first thing it
 will do is check to see if the Destination MAC address (e0cb4e4f22ad -
@@ -1525,16 +1463,14 @@ interface. Assuming it does, it then strips away the entire Data-Link
 Layer. In this example, the Data-Link Layer is in 802.3 (Ethernet)
 format. Everything in this layer will get replaced.
 
-```
-01000101000000000010110010010100  -- IPv4 Header
-00000000000000000000000000000000
-01000000000010001010100000101000
-10101100000111100001000000011100
-00100000000010000000010000000100  -- IPv4 Header
-10100001011011110000000000110101  -- UDP Header
-00000000010011110100110001011101  -- UDP Header
-|---------Payload--------------|
-```
+    01000101000000000010110010010100  -- IPv4 Header
+    00000000000000000000000000000000
+    01000000000010001010100000101000
+    10101100000111100001000000011100
+    00100000000010000000010000000100  -- IPv4 Header
+    10100001011011110000000000110101  -- UDP Header
+    00000000010011110100110001011101  -- UDP Header
+    |---------Payload--------------|
 
 At this point, the router checks the Destination IP Address (8.8.8.8
 00001000000010000000100000001000) and determines that it does not match
@@ -1543,36 +1479,32 @@ value from 32 (00100000) to 31 (00011111) and recalculates the Header
 Checksum (because the TTL value has changed). As usual, I'm inserting
 random value for the Header Checksum.
 
-```
-01000101000000000010110010010100  -- IPv4 Header
-00000000000000000000000000000000
-01000000000010001010100000101000
-10101100000111100001000000011100
-00011111000010000000010101000001  -- IPv4 Header
-10100001011011110000000000110101  -- UDP Header
-00000000010011110100110001011101  -- UDP Header
-|---------Payload--------------|
-```
+    01000101000000000010110010010100  -- IPv4 Header
+    00000000000000000000000000000000
+    01000000000010001010100000101000
+    10101100000111100001000000011100
+    00011111000010000000010101000001  -- IPv4 Header
+    10100001011011110000000000110101  -- UDP Header
+    00000000010011110100110001011101  -- UDP Header
+    |---------Payload--------------|
 
 Now the router checks its own routing table to determine the next hop.
 As we saw in our traceroute above, that is the node with the IP address
 10.9.36.1. Our router now builds a brand-new Data-Link header with its
 Source MAC Address and the Destination MAC Address of 10.9.36.1.
 
-```
-00000000001000100110101110111100  -- 802.3 Header
-10001110010100110101000000111101
-11100101010100000010011111000101  -- 802.3 Header
-01000101000000000010110010010100  -- IPv4 Header
-00000000000000000000000000000000
-01000000000010001010100000101000
-10101100000111100001000000011100
-00011111000010000000010101000001  -- IPv4 Header
-10100001011011110000000000110101  -- UDP Header
-00000000010011110100110001011101  -- UDP Header
-|---------Payload--------------|
-01111000011011100010010110010011  -- 802.3 Checksum
-```
+    00000000001000100110101110111100  -- 802.3 Header
+    10001110010100110101000000111101
+    11100101010100000010011111000101  -- 802.3 Header
+    01000101000000000010110010010100  -- IPv4 Header
+    00000000000000000000000000000000
+    01000000000010001010100000101000
+    10101100000111100001000000011100
+    00011111000010000000010101000001  -- IPv4 Header
+    10100001011011110000000000110101  -- UDP Header
+    00000000010011110100110001011101  -- UDP Header
+    |---------Payload--------------|
+    01111000011011100010010110010011  -- 802.3 Checksum
 
 This process continues until the packet either reaches its final
 destination or until the TTL drops to 0 (at which point the packet is
@@ -1590,106 +1522,98 @@ Let's assume whippoorwill (172.30.16.28) wants to retrieve a webpage
 from rackspace.com (173.203.44.122). Naturally, the first thing it
 needs to do is initiate a three-way handshake.
 
-```
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         SYN
-Seq Num       0
-Ack Num       0
-
-rackspace     ->   whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         SYN/ACK
-Seq Num       0
-Ack Num       0
-
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         ACK
-Seq Num       0
-Ack Num       0
-```
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         SYN
+    Seq Num       0
+    Ack Num       0
+    
+    rackspace     ->   whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         SYN/ACK
+    Seq Num       0
+    Ack Num       0
+    
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         ACK
+    Seq Num       0
+    Ack Num       0
 
 At this point, the three-way handshake has been initialized and we're
 ready for the first packets with any real data in them to be
 transmitted.
 
-```
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         None
-Seq Num       1
-Ack Num       0
-Payload       "Give me index.html"
-
-rackspace     ->  whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         ACK
-Seq Num       0
-Ack Num       1 
-```
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         None
+    Seq Num       1
+    Ack Num       0
+    Payload       "Give me index.html"
+    
+    rackspace     ->  whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         ACK
+    Seq Num       0
+    Ack Num       1 
 
 whippoorwill has asked for the document "index.html" and Rackspace has
 responded with an acknowledgement.  Next, Rackspace will begin to send
 the page.
 
-```
-rackspace     ->   whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         None
-Seq Num       1000
-Ack Num       0
-Payload       "Part 0 of index.html."
-
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         ACK
-Seq Num       0
-Ack Num       1000
-
-rackspace     ->   whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         None
-Seq Num       1001
-Ack Num       0
-Payload       "Part 1 of index.html."
-
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         ACK
-Seq Num       0
-Ack Num       1001
-```
+    rackspace     ->   whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         None
+    Seq Num       1000
+    Ack Num       0
+    Payload       "Part 0 of index.html."
+    
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         ACK
+    Seq Num       0
+    Ack Num       1000
+    
+    rackspace     ->   whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         None
+    Seq Num       1001
+    Ack Num       0
+    Payload       "Part 1 of index.html."
+    
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         ACK
+    Seq Num       0
+    Ack Num       1001
 
 Rackspace has sent the first 2 parts of the page and whippoorwill has
 acknowledged both of those parts.  Now, whippoorwill decides that it's
 ready to terminate the connection as it will no longer be requesting
 further data.
 
-```
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         FIN
-Seq Num       0
-Ack Num       0
-
-rackspace     ->   whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         FIN/ACK
-Seq Num       0
-Ack Num       0
-```
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         FIN
+    Seq Num       0
+    Ack Num       0
+    
+    rackspace     ->   whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         FIN/ACK
+    Seq Num       0
+    Ack Num       0
 
 whippoorwill has sent a FIN packet to Rackspace, asking Rackspace to
 tear-down the connection gracefully.  Racksapce has in turn
@@ -1698,56 +1622,52 @@ the web page.  (If whippoorwill wanted Rackspace to immediately drop
 what it was doing and tear down the connection, he would have sent an
 RST packet instead.)
 
-```
-racksapce     ->   whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         None
-Seq Num       1002
-Ack Num       0
-Payload       "Part 2 of index.html."
-
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         ACK
-Seq Num       0
-Ack Num       1002
-
-rackspace     ->   whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         None
-Seq Num       1003
-Ack Num       0
-Payload       "Part 3 of index.html."
-
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         ACK
-Seq Num       0
-Ack Num       1003
-```
+    racksapce     ->   whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         None
+    Seq Num       1002
+    Ack Num       0
+    Payload       "Part 2 of index.html."
+    
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         ACK
+    Seq Num       0
+    Ack Num       1002
+    
+    rackspace     ->   whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         None
+    Seq Num       1003
+    Ack Num       0
+    Payload       "Part 3 of index.html."
+    
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         ACK
+    Seq Num       0
+    Ack Num       1003
 
 Now that Rackspace has completed sending all its data, it will let
 whippoorwill know that it too is closing the connection.
 
-```
-rackspace     ->   whippoorwill
-Src Port      80
-Dst Port      3560
-Flags         FIN
-Seq Num       0
-Ack Num       0
-
-whippoorwill  ->   rackspace
-Src Port      3560
-Dst Port      80
-Flags         FIN/ACK
-Seq Num       0
-Ack Num       0
-```
+    rackspace     ->   whippoorwill
+    Src Port      80
+    Dst Port      3560
+    Flags         FIN
+    Seq Num       0
+    Ack Num       0
+    
+    whippoorwill  ->   rackspace
+    Src Port      3560
+    Dst Port      80
+    Flags         FIN/ACK
+    Seq Num       0
+    Ack Num       0
 
 And now the connection is completely torn down.
 
@@ -1772,16 +1692,14 @@ works.
 Currently, my workstation whippoorwill is connected to a VPN. Here's
 what its routing table looks like.
 
-```
-# ip route show
-default dev tun0  scope link
-default via 172.30.16.1 dev eth0  metric 202
-10.15.160.0/20 dev tun0  scope link
-72.32.144.38 via 172.30.16.1 dev eth0  src 172.30.16.28
-127.0.0.0/8 dev lo  scope link
-172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
-metric 202
-```
+    # ip route show
+    default dev tun0  scope link
+    default via 172.30.16.1 dev eth0  metric 202
+    10.15.160.0/20 dev tun0  scope link
+    72.32.144.38 via 172.30.16.1 dev eth0  src 172.30.16.28
+    127.0.0.0/8 dev lo  scope link
+    172.30.16.0/26 dev eth0  proto kernel  scope link  src 172.30.16.28
+    metric 202
 
 When I send a packet out to any IP address matching my default tun0
 route, the packet gets encrypted and encapsulated into a new packet
@@ -1790,63 +1708,57 @@ sending a simple HTTP GET request to www.google.com (74.125.21.105).
 The kernel begins building out the packet normally, starting with the
 HTTP Payload, the TCP header, and the IPv4 header.
 
-```
-01000101000000000010110010010100
-00000000000000000000000000000000
-01000000000001100010100000101000
-01101000100000101010100100001110
-01000100111110010100010000000001
-00000000010100000011001101011001
-00000000000000000000000000000001
-00000000000000000000000000000000
-01010000000000000000000000000000
-00100100101011010000000000000000
-|-----------Payload------------| 
-```
+    01000101000000000010110010010100
+    00000000000000000000000000000000
+    01000000000001100010100000101000
+    01101000100000101010100100001110
+    01000100111110010100010000000001
+    00000000010100000011001101011001
+    00000000000000000000000000000001
+    00000000000000000000000000000000
+    01010000000000000000000000000000
+    00100100101011010000000000000000
+    |-----------Payload------------| 
 
 At this point, the magic happens! The kernel passes the packet to the
 tun0 interface to begin building the Data-Link layer, but instead of
 doing that, it takes the entire packet as-is and encrypts it as a new
 payload.
 
-```
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-```
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
 
 Now the kernel takes this encrypted packet as the payload for an
 entirely new UDP packet destined for the other VPN endpoint (in our
 example: 72.32.144.38).
 
-```
-01000101000000000010110010010100  -- IPv4 Header
-00000000000000000000000000000000
-01000000000010001010100000101000
-00001010000011111011011011010100  -- 10.15.182.212
-01001000001000001001000000100110  -- 72.32.144.38
-10100001011011110000000000110101  -- UDP Header
-00000000010011110100110001011101  -- UDP Header
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-|------Encrypted Payload-------|
-```
+    01000101000000000010110010010100  -- IPv4 Header
+    00000000000000000000000000000000
+    01000000000010001010100000101000
+    00001010000011111011011011010100  -- 10.15.182.212
+    01001000001000001001000000100110  -- 72.32.144.38
+    10100001011011110000000000110101  -- UDP Header
+    00000000010011110100110001011101  -- UDP Header
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
+    |------Encrypted Payload-------|
 
 
 
