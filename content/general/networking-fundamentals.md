@@ -669,9 +669,9 @@ subnet".
 Another way of looking writing this is 192.168.1.100/24.  The /n tells
 us how many bits are in the bitmask.  In this case, 24. 
 
-             /24 = 11111111.11111111.11111111.00000000
+`/24           = 11111111.11111111.11111111.00000000`
 
-  `192.168.1.100 = 11000000.10101000.00000001.01100110`
+`192.168.1.100 = 11000000.10101000.00000001.01100110`
 
 A helpful little table here should help you understand the basics.
 
@@ -718,7 +718,7 @@ to 192.168.1.255, but what about some obscure ones like
 172.16.25.208/29?  To determine this, we'll have to simply count up
 from 0.
 
-A /29 subnet has 8 IP Addresses, meaning that there is exactly 32 /29
+A /29 subnet has 8 IP Addresses, meaning that there are exactly 32 /29
 subnets inside a /24 subnet.  Let me make another table.
 
 ```
@@ -776,13 +776,17 @@ discuss them further.)
 
 If an organization needed 300 IP addresses, they were given 65,536.  If
 they needed 100,000, they were given 16,777,216.  Clearly this was very
-wasteful, and created shortages.  To address this, classless subnetting
+wasteful and created shortages.  To address this, classless subnetting
 was invented, allowing organizations such as ISPs to get only as many
 IPs as they needed (or pretty close to it).  If I need 300 IP addresses,
 I don't need a /16.  A /23 includes 512 IP Addresses, and that's more
-than enough without wasting the other 65,024.  Today, you'll still hear
-this terminology from time to time.  People often refer to any /24
-subnet as a "Class C" network for example.
+than enough without wasting the other 65,024. An even better solution
+would be to provide me with a /24 network (256 addresses) and a second
+/26 network (64 addresses) for a total of 320. This of course, would
+require a router to pass packets between the two different subnets.
+
+Today, you'll still hear this terminology from time to time.  People
+often refer to any /24 subnet as a "Class C" network for example.
 
 #### Route Determination
 
@@ -829,8 +833,8 @@ the kernel chooses to use it instead as it is more specific. This
 specific example has a lot of information here, but for now there's
 really only two things we are interested in.
 
-    `Does the route include a "via IP_ADDRESS" statement?`
-    `What "dev INTERFACE" statement is included?`
+`  Does the route include a "via IP_ADDRESS" statement?`
+`  What "dev INTERFACE" statement is included?`
 
 The first statement tells us if we need to use a router (gateway) and
 what that router's IP address is. In this case, no router is specified,
