@@ -1,12 +1,12 @@
 ---
 permalink: cloud-servers-with-managed-operations-support-for-windows/
-audit_date:
+audit_date: '2017-01-10'
 title: Cloud Servers with Managed Operations support for Windows
 type: article
 created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2016-01-13'
-last_modified_by: Nate Archer
+last_modified_date: '2017-01-10'
+last_modified_by: Cat Lookabaugh
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -113,9 +113,9 @@ Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
 
 ### Other packages
 
-<span>While we do not support all technologies, we do offer reasonable
-endeavor support which extends our support into offering alternative
-solutions. The reasonable endeavor support can include help from Rackspace partners and other
+<span>While we do not support all technologies, we do offer reasonable-endeavor
+support which extends our support into offering alternative solutions. The
+reasonable-endeavor support can include help from Rackspace partners and other
 third party services.
 
 -   **Load Balancing** - Support is provided through the use of Cloud
@@ -123,7 +123,7 @@ third party services.
 
 -   **Email** - Support is provided through Rackspace Email and using
     IIS SMTP on the server. Cloud Servers with a Managed Service Level
-    are pre-configured to use our mail relay service Mailgun to ensure
+    are pre-configured to use Mailgun, our mail relay service, to ensure
     reliable mail delivery. The first 50,000 emails sent each month are
     free, and your mail package can be upgraded if higher volume
     is expected. For more details see our [Mailgun Rackspace pricing
@@ -138,16 +138,15 @@ third party services.
 
 -   **Terminal Services** - We will install the role and license.
 
--   **Cloud Files** - Integration with Cloud Files is supported via the
-    API, however no development assistance will be offered in
-    utilization via the API.
+-   **Cloud Files** - Integration with Cloud Files is supported by using the
+    API, however no development assistance will be offered with using the API.
 
 ### End of life support dates
 
 Rackspace makes every effort to align our support dates for operating
-systems with the manufacturer's support dates. The 'end of life' support
+systems with the manufacturer's support dates. The end-of-life support
 dates listed are provided by the manufacturer and are subject to change.
-Should the manufacturer decide to shorten the support life of an
+If the manufacturer decides to shorten the support life of an
 operating system, Rackspace may be forced to end support sooner than the
 published date.
 
