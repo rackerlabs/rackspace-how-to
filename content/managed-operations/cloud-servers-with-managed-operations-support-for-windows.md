@@ -51,9 +51,9 @@ Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
 
 |    | **Installation** | **Configuration** | **Troubleshooting** | **Monitoring** | **Patching** |
 | --- | --- | --- | --- | --- | --- |
-| [SQL Server 2008 R2](http://www.microsoft.com/en-us/server-cloud/products/sql-server/) |**Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-|[SQL Server 2012 (Standard and Web Edition)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)| **Yes** |**Yes** | **Yes** | **Yes** | **Yes** |
-| [SQL Server 2014](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)| **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| [SQL Server 2008 R2 (Standard and Web Edition)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/) |**Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| [SQL Server 2012 (Standard and Web Edition)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)| **Yes** |**Yes** | **Yes** | **Yes** | **Yes** |
+| [SQL Server 2014 (Standard and Web Edition)](http://www.microsoft.com/en-us/server-cloud/products/sql-server/)| **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 | [MySQL](http://www.mysql.com/why-mysql/windows/) | **Yes** | No | No | **Yes** | No |
 
 **Note:** Rackspace does not support SQL express 2008, 2012, and 2014.
