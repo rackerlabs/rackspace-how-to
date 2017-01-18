@@ -14,7 +14,7 @@ product_url: cloud-block-storage
 **Previous section:** [Create and use Cloud Block Storage snapshots](/how-to/create-and-use-cloud-block-storage-snapshots)
 
 Detaching a Cloud Block Storage volume will prevent you from writing to it when
-\you want to take a snapshot. It is also useful when you want to take a volume
+you want to take a snapshot. It is also useful when you want to take a volume
 offline for archival purposes, or to move a volume to another server. A Cloud
 Block Storage volume must be detached before resizing the server to which it is
 mounted. You should also detach a volume before you delete it. In all cases, you
