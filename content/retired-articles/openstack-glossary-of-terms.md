@@ -7,8 +7,6 @@ created_date: '2012-08-09'
 created_by: Karin Levenstein
 last_modified_date: '2012-08-15'
 last_modified_by: Rae D. Cabello
-product: Rackspace Private Cloud Powered by OpenStack
-product_url: rpc-openstack
 ---
 
 #### Compute
@@ -58,6 +56,3 @@ Security groups at this time exist mostly as tags for the servers and can be con
 #### Floating IP address
 
 A floating IP address is an IP address (typically public) that can be dynamically assigned to an instance. This address enables network address translation (NAT) and allows an instance to be accessed from outside the nova fixed network.
-
-
-
