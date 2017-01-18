@@ -76,9 +76,8 @@ Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
 
 |    | **Installation** | **Configuration** | **Troubleshooting** | **Monitoring** | **Patching** |
 | --- | --- | --- | --- | --- | --- |
-|[Windows FTP 7.5](https://www.microsoft.com/en-us/download/details.aspx?id=14045) |**Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| [IIS 8 FTP](https://technet.microsoft.com/en-us/library/hh831655.aspx)| **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
-| [FileZilla](https://filezilla-project.org/) | **Yes** |**Yes** | **Yes** | **Yes** | No |
+| [IIS 7.5 FTPS](https://www.microsoft.com/en-us/download/details.aspx?id=14045) |**Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
+| [IIS 8.5 FTPS](https://technet.microsoft.com/en-us/library/hh831655.aspx)| **Yes** | **Yes** | **Yes** | **Yes** | **Yes** |
 
 #### SMTP
 
@@ -88,7 +87,7 @@ Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
 
 #### Active Directory (US Only)
 
-| Supported | Windows 2008 | Windows 2012 |
+| Supported | Windows 2008 R2| Windows 2012 R2|
 | --------- | -------------| ------------ |
 | Set up AD Controller | **Yes** | **Yes** |
 |Add Users to AD | **Yes** | **Yes** |
