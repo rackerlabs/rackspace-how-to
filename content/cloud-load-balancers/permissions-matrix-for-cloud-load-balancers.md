@@ -64,7 +64,7 @@ Method | API action | Role | Description
 --- | --- | --- | ---
 List virtual IPs | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips` | **Admin,<br/>Creator,<br/>Observer** | Lists virtual IPs associated with the specified load balancer.
 Add virtual IP version 6 | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips` | **Admin,<br/>Creator** | Adds virtual IP version 6.
-Bulk-delete virtual IPs | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips?id='{virtualIpId}' & id='{virtualIpId}'` | **Admin** | Bulk-deletes specified virtual IPs.
+Bulk-delete virtual IPs | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/`<br/>`virtualips?id='{virtualIpId}' & id='{virtualIpId}'` | **Admin** | Bulk-deletes specified virtual IPs.
 Delete virtual IP | `DELTE /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}` | **Admin** | Deletes the specified virtual IP.
 
 ### Allowed domains
@@ -89,7 +89,7 @@ Method | API action | Role | Description
 Show access list | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator,<br/>Observer** | Shows the access list.
 Create or update access list | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator** | Creates or appends to an access list.
 Delete access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin** | Deletes the entire access list.
-Bulk-delete networks from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist?id='{id1}' & id='{id2}'` | **Admin** | Bulk-deletes the specified networks from an access list.
+Bulk-delete networks from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/`<br/>`accesslist?id='{id1}' & id='{id2}'` | **Admin** | Bulk-deletes the specified networks from an access list.
 Delete network from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist/{networkItemId}` | **Admin**  | Deletes the specified network item from the specified access list.
 
 ### Monitor health
@@ -156,9 +156,9 @@ Method | API action | Role | Description
 --- | --- | --- | ---
 List certificate mappings | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Admin,<br/>Creator,<br/>Observer** | Lists certificate mappings configured for the specified load balancer. **Note:** Only the `id` and `hostName` attributes are displayed.
 Add certificate mapping | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Admin,<br/>Creator** | Adds a certificate mapping to the specified load balancer.
-Show certificate mappings details | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator,<br/>Observer** | Shows the details for the specified certificate mapping. **Note:** The `privateKey` attribute is not displayed for security purposes.
-Update certificate mapping | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator** | Updates the configuration for the specified certificate mapping on the specified load balancer. **Note:** The `privateKey` attribute is not displayed for security purposes.
-Delete certificate mapping | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin** | Deletes the specified certificate mapping from the specified load balancer.
+Show certificate mappings details | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/`<br/>`certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator,<br/>Observer** | Shows the details for the specified certificate mapping. **Note:** The `privateKey` attribute is not displayed for security purposes.
+Update certificate mapping | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/`<br/>`certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator** | Updates the configuration for the specified certificate mapping on the specified load balancer. **Note:** The `privateKey` attribute is not displayed for security purposes.
+Delete certificate mapping | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/`<br/>`certificatemappings/{certificateMappingId}` | **Admin** | Deletes the specified certificate mapping from the specified load balancer.
 
 ### Metadata
 
@@ -166,13 +166,13 @@ Method | API action | Role | Description
 --- | --- | --- | ---
 Add load balancer metadata | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata` | **Admin,<br/>Creator,<br/>Observer** | Adds a metadata item to the load balancer.
 Show load balancer metadata | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata` | **Admin,<br/>Creator,<br/>Observer** | Shows all metadata associated with the specified load balancer.
-Bulk-delete load balancer metadata items | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata?id={metaId} & id={metaId}` | **Admin** | Bulk-deletes the metadata items given in the specified ID list.
+Bulk-delete load balancer metadata items | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/`<br/>`metadata?id={metaId} & id={metaId}` | **Admin** | Bulk-deletes the metadata items given in the specified ID list.
 Show load balancer metadata item | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator,<br/>Observer** | Shows details for the specified metadata item for the specified load balancer.
 Update load balancer metadata item | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Updates the configuration of the specified metadata item on the specified load balancer.
 Delete load balancer metadata item | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Deletes a metadata item from the load balancer.
 Show load balancer node metadata | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Shows all metadata associated with the specified node and load balancer.
 Add load balancer node metadata item | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Adds a metadata item to the specified node and load balancer.
-Bulk-delete load balancer node metadata items | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata?id='{metaId}' & id='{metaId}'` | **Admin** | Bulk-deletes the metadata items given in the specified ID list.
+Bulk-delete load balancer node metadata items | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/`<br/>`metadata?id='{metaId}' & id='{metaId}'` | **Admin** | Bulk-deletes the metadata items given in the specified ID list.
 Show load balancer node metadata item | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin,<br/>Creator,<br/>Observer** | Shows details for the specified metadata item for the specified node and load balancer.
 Update load balancer node metadata item | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin,<br/>Creator** | Updates the configuration of a metadata item on the node. **Note:** The metadata item's ID and key are immutable attributes and cannot be modified with a `PUT` request.
 Delete load balancer node metadata item | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin** | Deletes the specified metadata item from the node.
