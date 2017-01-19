@@ -1,11 +1,11 @@
 ---
 permalink: permissions-matrix-for-cloud-load-balancers/
 audit_date:
-title: Permissions Matrix for Cloud Load Balancers
+title: Permissions matrix for Cloud Load Balancers
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2017-01-18'
+last_modified_date: '2017-01-19'
 last_modified_by: Laura Santamaria
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
@@ -19,7 +19,7 @@ The Cloud Load Balancers permissions matrix displays specific permissions for th
 
  The matrix displays the Cloud Load Balancers methods grouped by category, their corresponding RESTful API commands, and the RBAC roles that are supported.
 
-**Warning:** If SSL is enabled on a load balancer that is configured with nodes that are NOT in the same datacenter, then decrypted traffic will be sent in clear text over the public internet to the external nodes and will no longer be secure.
+**Warning:** If SSL is enabled on a load balancer configured with nodes that are _not_ in the same datacenter, then decrypted traffic will be sent in clear text over the public Internet to the external nodes and will no longer be secure.
 
 ### Load balancer
 
@@ -64,7 +64,7 @@ Method | API action | Role | Description
 --- | --- | --- | ---
 List virtual IPs | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips` | **Admin,<br/>Creator,<br/>Observer** | Lists virtual IPs associated with the specified load balancer.
 Add virtual IP version 6 | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips` | **Admin,<br/>Creator** | Adds virtual IP version 6.
-Bulk-delete virtual IPs | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips?={virtualIpId}` | **Admin** | Bulk-deletes specified virtual IPs.
+Bulk-delete virtual IPs | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips?id='{virtualIpId}' & id='{virtualIpId}'` | **Admin** | Bulk-deletes specified virtual IPs.
 Delete virtual IP | `DELTE /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}` | **Admin** | Deletes the specified virtual IP.
 
 ### Allowed domains
@@ -89,7 +89,7 @@ Method | API action | Role | Description
 Show access list | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator,<br/>Observer** | Shows the access list.
 Create or update access list | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator** | Creates or appends to an access list.
 Delete access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin** | Deletes the entire access list.
-Bulk-delete networks from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist?id={id1}` | **Admin** | Bulk-deletes the specified networks from an access list.
+Bulk-delete networks from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist?id='{id1}' & id='{id2}'` | **Admin** | Bulk-deletes the specified networks from an access list.
 Delete network from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist/{networkItemId}` | **Admin**  | Deletes the specified network item from the specified access list.
 
 ### Monitor health
@@ -168,20 +168,20 @@ Add load balancer metadata | `POST /v1.0/{account}/loadbalancers/{loadBalancerId
 Show load balancer metadata | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata` | **Admin,<br/>Creator,<br/>Observer** | Shows all metadata associated with the specified load balancer.
 Bulk-delete load balancer metadata items | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata?id={metaId} & id={metaId}` | **Admin** | Bulk-deletes the metadata items given in the specified ID list.
 Show load balancer metadata item | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator,<br/>Observer** | Shows details for the specified metadata item for the specified load balancer.
-Update load balancer metadata item | `PUT /loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Update the configuration of a metadata item on the load balancer.
-Delete Load Balancer Metadata Item | `DELETE /loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Delete a metadata item from the load balancer.
-Show Load Balancer Node Metadata | `GET loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Show all metadata associated with a specified node and load balancer.
-Add Load Balancer Node Metadata | `POST loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Adds a metadata item to a specified node and load balancer.
-Bulk-delete Load Balancer Node Metadata Items | `DELETE loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata{?metaId}` | **Admin** | Bulk-deletes the metadata items given specified id list.
-Show Load Balancer Node Metadata Item | `GET loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin,<br/>Creator,<br/>Observer** | Show details for a specified metadata item for a specified node and load balancer.
-Update Load Balancer Node Metadata Item | `PUT loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin,<br/>Creator** | Update the configuration of a metadata item on the node.
-Delete Load Balancer Node Metadata Item | `loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin** | Delete a metadata item from the node.
+Update load balancer metadata item | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Updates the configuration of the specified metadata item on the specified load balancer.
+Delete load balancer metadata item | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Deletes a metadata item from the load balancer.
+Show load balancer node metadata | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Shows all metadata associated with the specified node and load balancer.
+Add load balancer node metadata item | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Adds a metadata item to the specified node and load balancer.
+Bulk-delete load balancer node metadata items | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata?id='{metaId}' & id='{metaId}'` | **Admin** | Bulk-deletes the metadata items given in the specified ID list.
+Show load balancer node metadata item | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin,<br/>Creator,<br/>Observer** | Shows details for the specified metadata item for the specified node and load balancer.
+Update load balancer node metadata item | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin,<br/>Creator** | Updates the configuration of a metadata item on the node. **Note:** The metadata item's ID and key are immutable attributes and cannot be modified with a `PUT` request.
+Delete load balancer node metadata item | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata/{metaId}` | **Admin** | Deletes the specified metadata item from the node.
 
 ### Limits
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-List Absolute Limits | `GET /loadbalancers/absolutelimits/` | **Admin,<br/>Creator,<br/>Observer** | Return the current absolute limits for the account.
-List Limits | `GET /loadbalancers/limits` | **Admin,<br/>Creator,<br/>Observer** | Return the current limits for the account.
+List absolute limits | `GET /v1.0/{account}/loadbalancers/absolutelimits` | **Admin,<br/>Creator,<br/>Observer** | Lists the current absolute limits for the account.
+List limits | `GET /v1.0/{account}/loadbalancers/limits` | **Admin,<br/>Creator,<br/>Observer** | Lists the current limits for the account.
 
 [Permission matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
