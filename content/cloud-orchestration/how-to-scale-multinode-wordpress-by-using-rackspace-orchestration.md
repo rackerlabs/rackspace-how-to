@@ -1,21 +1,21 @@
 ---
 permalink: how-to-scale-multinode-wordpress-by-using-rackspace-orchestration/
 audit_date:
-title: Scale a multi-node WordPress by using Rackspace Orchestration
+title: Scale a multinode WordPress stack by using Rackspace Orchestration
 type: article
 created_date: '2013-11-12'
 created_by: Rackspace Support
-last_modified_date: '2016-12-14'
+last_modified_date: '2017-01-19'
 last_modified_by: Laura Santamaria
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
 
-This guide provides instructions for adding a new node to scale a multi-node WordPress environment that was created by using Rackspace Orchestration.
+This article provides instructions for adding a new server, or node, to scale a multinode WordPress environment that was created by using Rackspace Orchestration.
 
-**Note:** If you need to scale a single WordPress instance, we recommend that you create a new multi-node WordPress stack and migrate your data. Many WordPress plug-ins, such as [duplicator](http://wordpress.org/plugins/duplicator/) or [WP Migrate DB](http://wordpress.org/plugins/wp-migrate-db/), can help with this process.
+**Note:** If you need to scale a single WordPress instance, we recommend that you create a new multinode WordPress stack and migrate your data. Many WordPress plug-ins, such as [duplicator](http://wordpress.org/plugins/duplicator/) or [WP Migrate DB](http://wordpress.org/plugins/wp-migrate-db/), can help with this process.
 
-### Create the node
+### Create the server
 
 1. Log in to [the Cloud Control Panel](https://mycloud.rackspace.com).
 
@@ -23,7 +23,7 @@ This guide provides instructions for adding a new node to scale a multi-node Wor
 
 3. On the Stacks page, click the name of the stack to scale.
 
-4. In the Infrastructure section of the stack details page, click the name of the first web node (`web01`) to load the cloud server details page.
+4. In the Infrastructure section of the stack details page, click the name of the first web server (`web01`) to load the cloud server details page.
 
 5. In the server details page, go to the **Actions** menu, and select **Create Image**.
 
@@ -33,25 +33,23 @@ This guide provides instructions for adding a new node to scale a multi-node Wor
 
    After the image is created, the image name and its creation time stamp are displayed.
 
-8. Under Images, click **View *n* Image**.
-
-9. In the pop-up dialog box, click the gear icon next to the name of the new image, and select **Create Server with Image** from the menu.
+8. Click the gear icon next to the name of the new image, and select **Create Server with Image** from the menu.
 
     <img src="{% asset_path cloud-orchestration/how-to-scale-multinode-wordpress-by-using-rackspace-orchestration/cpviewimage.png %}" width="600" alt="" border="1"  />
 
-10. On the server creation page, enter a name for the new server, and select the region where it will be created.
+9. On the server creation page, enter a name for the new server, and select the region where it will be created.
 
     We recommend following the stack naming convention (for example, **web02.example.com**) and creating the new server in the same region as the other nodes in the stack.
 
-11. In the Image section of the page, select the newly created image.
+10. In the Image section of the page, select the newly created image.
 
-12. Select a size for the new node, then click **Create Server** at the bottom of the page.
+11. Select a size for the new server, then click **Create Server** at the bottom of the page.
 
-### Prepare the new node
+### Prepare the new server
 
 After the server is created and active, you need to make a few adjustments before it is ready to be used by WordPress.
 
-1. From the Server Detail page, note the ServiceNet IP address of the new server. You will need this information in a later step.
+1. From the server details page, note the ServiceNet IP address of the new server. You will need this information in a later step.
 
     <img src="{% asset_path cloud-orchestration/how-to-scale-multinode-wordpress-by-using-rackspace-orchestration/cpservicenet.png %}" width="600" border="2" alt="" />
 
@@ -59,7 +57,7 @@ After the server is created and active, you need to make a few adjustments befor
 
 3. In the Infrastructure section of the stack's page, click the link for the master server in the list of nodes.
 
-4. From the master server's detail page, find the PublicNet IP address in the Networks section, and use it to log in to your server via SSH.
+4. From the master server's details page, find the PublicNet IP address in the Networks section, and use it to log in to the server via SSH.
 
    If you do not have the stack's private key, you can reset the master server's root password.
 
@@ -86,9 +84,9 @@ After the server is created and active, you need to make a few adjustments befor
           rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking = no"}
         }
 
-6. Copy the last `sync{ ... }` section, and paste a new copy at the end of the file.
+6. Copy the last `sync{ ... }` section, and paste a new copy of the section at the end of the file.
 
-7. Replace the IP address in the value for `target` in the new `sync` block with the ServiceNet IP of the new server that you created earlier.
+7. In the new `sync` block, replace the IP address in the value for `target` with the ServiceNet IP address of the new server that you created earlier.
 
     The line to edit looks similar to `target = "wp_user@10.176.129.22:/var/www/vhosts/iloveblog.rackspace.com/http_docs"`, as in the following example:
 
@@ -153,7 +151,7 @@ After the server is created and active, you need to make a few adjustments befor
 
     If you see an error, go back and check the **/etc/lsyncd/lsyncd.conf.lua** file to ensure that there are no mistakes.
 
-### Adding the new node to the load balancer
+### Add the new server to the load balancer
 
 After you have confirmed that the new server is receiving content, you can add it to the stack load balancer.
 
@@ -163,6 +161,6 @@ After you have confirmed that the new server is receiving content, you can add i
 
 3. In the Nodes section of the load balancer details page, click **Add Cloud Servers**.
 
-4. From the list of servers, select the checkbox next to the server that you just created, and click **Add Selected Servers** at the bottom of the page.
+4. From the list of servers, select the check box next to the server that you just created, and click **Add Selected Servers** at the bottom of the page.
 
-After your node is added to the load balancer, you are done. You can repeat these steps as needed to add more nodes.
+After the server is added to the load balancer, you are done. You can repeat these steps as needed to add more servers to the stack.
