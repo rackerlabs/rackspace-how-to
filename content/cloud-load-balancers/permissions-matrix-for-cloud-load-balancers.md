@@ -86,84 +86,89 @@ Show current usage | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/usage/c
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Show Access List | `GET /loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator,<br/>Observer** | Show the access list.
-Create or Update Access List | `POST /loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator** | Create or append to an existing access list.
-Delete Access List | `DELETE /loadbalancers/{loadBalancerId}/accesslist` | **Admin** | Delete the entire access list.
-Bulk-delete Specified Networks | `DELETE /loadbalancers/{loadBalancerId}/accesslist/{?networkItemId}` | **Admin** | Bulk-delete the specified networks from an access list.
-Delete Network Item from Access List | `DELETE /loadbalancers/{loadBalancerId}/accesslist/{networkItemId}` | **Admin**  | Delete a network item from a specified access list.
+Show access list | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator,<br/>Observer** | Shows the access list.
+Create or update access list | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin,<br/>Creator** | Creates or appends to an access list.
+Delete access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist` | **Admin** | Deletes the entire access list.
+Bulk-delete networks from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist?id={id1}` | **Admin** | Bulk-deletes the specified networks from an access list.
+Delete network from access list | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/accesslist/{networkItemId}` | **Admin**  | Deletes the specified network item from the specified access list.
 
 ### Monitor health
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Show Health Monitor Configuration | `GET /loadbalancers/{loadBalancerId}/healthmonitor` | **Admin,<br/>Creator,<br/>Observer** | Show the health monitor configuration, if one exists.
-Update Health Monitor | `PUT /loadbalancers/loadBalancerId/healthmonitor` | **Admin,<br/>Creator** | Update the settings for a health monitor.
-Delete Health Monitor | `DELETE /loadbalancers/loadBalancerId/healthmonitor` | **Admin** | Delete a health monitor.
+Show health monitor configuration | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/healthmonitor` | **Admin,<br/>Creator,<br/>Observer** | Shows the health monitor configuration, if one exists.
+Update health monitor | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/healthmonitor` | **Admin,<br/>Creator** | Updates the settings for a health monitor.
+Delete health monitor | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/healthmonitor` | **Admin** | Deletes a health monitor.
 
 ### Session persistence
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Show Session Persistence Configuration | `GET /loadbalancers/{loadBalancerId}/sessionpersistence` | **Admin,<br/>Creator,<br/>Observer** | List session persistence configuration.
-Enable Session Persistence | `PUT /loadbalancers/{loadBalancerId}/sessionpersistence` | **Admin,<br/>Creator** | Enable session persistence.
-Disable Session Persistence | `DELETE /loadbalancers/{loadBalancerId}/sessionpersistence` | **Admin** | Disable session persistence.
+Show session persistence configuration | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/sessionpersistence` | **Admin,<br/>Creator,<br/>Observer** | Shows the session persistence configuration.
+Enable session persistence | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/sessionpersistence` | **Admin,<br/>Creator** | Enables session persistence.
+Disable session persistence | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/sessionpersistence` | **Admin** | Disables session persistence.
 
 ### Log connections
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Show Connection Logging Configuration | `GET /loadbalancers/{loadBalancerId}/connectionlogging` | **Admin,<br/>Creator,<br/>Observer** | Show connection logging configuration.
-Enable or Disable Connection Logging | `PUT /loadbalancers/{loadBalancerId}/connectionlogging` | **Admin,<br/>Creator** | Enable or disable connection logging. **Note:** Enable connection logging requires that the user have access to Cloud Files, which is used for storing the logs.
+Show connection logging configuration | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/connectionlogging` | **Admin,<br/>Creator,<br/>Observer** | Shows the connection logging configuration.
+Enable or disable connection logging | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/connectionlogging` | **Admin,<br/>Creator** | Enables or disables connection logging.
 
 ### Throttle connections
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Show Connection Throttling Configuration | `GET /loadbalancers/{loadBalancerId}/connectionthrottling` | **Admin,<br/>Creator,<br/>Observer** | Show connection throttling configuration.
-Create or Update Connection Throttling Configuration | `PUT /loadbalancers/{loadBalancerId}/connectionthrottling` | **Admin,<br/>Creator** | Create or update throttling configuration.
-Delete Connection Throttling Configuration | `DELETE /loadbalancers/{loadBalancerId}/connectionthrottling` | **Admin** | Delete connection throttling configurations.
+Show connection throttling configuration | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/connectionthrottle` | **Admin,<br/>Creator,<br/>Observer** | Shows the connection throttling configuration.
+Create or update connection throttling configuration | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/connectionthrottle` | **Admin,<br/>Creator** | Creates or updates the throttling configuration. **Note:** You must specify all attributes when initially creating the connection throttle. However, when you update an existing setting, you can pass as few as one attribute.
+Delete connection throttling configuration | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/connectionthrottle` | **Admin** | Deletes the connection throttling configuration.
 
 ### Content caching
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Show Content Caching Configuration | `GET /loadbalancers/{loadBalancerId}/contentcaching` | **Admin,<br/>Creator,<br/>Observer**	| Show current configuration of content caching.
-Enable or Disable Content Caching | `PUT /loadbalancers/{loadBalancerId}/contentcaching` | **Admin,<br/>Creator** | Enable or disable content caching.
+Show content caching configuration | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/contentcaching` | **Admin,<br/>Creator,<br/>Observer** | Shows the current configuration of content caching.
+Enable or disable content caching | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/contentcaching` | **Admin,<br/>Creator** | Enables or disables content caching.
 
 ### Protocols
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-List Load Balancer Protocols | `GET /loadbalancers/protocol` | **Admin,<br/>Creator,<br/>Observer** | List supported load balancing protocols.
+List load balancing protocols | `GET /v1.0/{account}/loadbalancers/protocols` | **Admin,<br/>Creator,<br/>Observer** | Lists supported load balancing protocols.
 
 ### Algorithms
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-List Load Balancer Algorithms | `GET /loadbalancers/algorithms` | **Admin,<br/>Creator,<br/>Observer** | List all supported load balancing algorithms.
+List load balancing algorithms | `GET /v1.0/{account}/loadbalancers/algorithms` | **Admin,<br/>Creator,<br/>Observer** | Lists all supported load balancing algorithms.
 
-### SSL termination and certificate mappings
+### SSL termination
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Show SSL Termination Configuration | `GET /loadbalancers/{loadBalancerId}/ssltermination` | **Admin,<br/>Creator,<br/>Observer** | Show the load balancer's SSL termination configuration.
-Update SSL Termination | `PUT /loadbalancers/{loadBalancerId}/ssltermination` | **Admin,<br/>Creator** | Update the SSL termination.
-Delete SSL Termination | `DELETE /loadbalancers/{loadBalancerId}/ssltermination` | **Admin** | Delete SSL termination.
-List Certificate Mappings | `GET /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Admin,<br/>Creator,<br/>Observer** | List certificate mappings that are configured for a specified load balancer.
-Add Certificate Mapping | `POST /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Admin,<br/>Creator** | Add a certificate mapping to a specified load balancer.
-Show Certificate Mappings Details | `GET /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator,<br/>Observer** | Show details for a specified certificate mapping.
-Update Certificate Mapping | `PUT /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator** | Update the configuration for a specified certificate mapping on a specified load balancer.
-Delete Certificate Mapping | `DELETE /loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin** | Delete a certificate mapping from a specified load balancer.
+Show SSL termination configuration | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination` | **Admin,<br/>Creator,<br/>Observer** | Shows the load balancer's SSL termination configuration.
+Update SSL termination configuration | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination` | **Admin,<br/>Creator** | Updates the SSL termination configuration.
+Delete SSL termination | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination` | **Admin** | Deletes SSL termination.
+
+### Certificate mappings
+
+Method | API action | Role | Description
+--- | --- | --- | ---
+List certificate mappings | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Admin,<br/>Creator,<br/>Observer** | Lists certificate mappings configured for the specified load balancer. **Note:** Only the `id` and `hostName` attributes are displayed.
+Add certificate mapping | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings` | **Admin,<br/>Creator** | Adds a certificate mapping to the specified load balancer.
+Show certificate mappings details | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator,<br/>Observer** | Shows the details for the specified certificate mapping. **Note:** The `privateKey` attribute is not displayed for security purposes.
+Update certificate mapping | `PUT /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin,<br/>Creator** | Updates the configuration for the specified certificate mapping on the specified load balancer. **Note:** The `privateKey` attribute is not displayed for security purposes.
+Delete certificate mapping | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/ssltermination/certificatemappings/{certificateMappingId}` | **Admin** | Deletes the specified certificate mapping from the specified load balancer.
 
 ### Metadata
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Add Load Balancer Metadata | `POST /loadbalancers/{loadBalancerId}/metadata` | **Admin,<br/>Creator,<br/>Observer** | Add a new metadata item to the load balancer.
-Show Load Balancer Metadata | `GET /loadbalancers/{loadBalancerId}/metadata` | **Admin,<br/>Creator,<br/>Observer** | Show all metadata associated with the specified load balancer.
-Bulk-delete Load Balancer Metadata Items | `DELETE /loadbalancers/{loadBalancerId}/metadata{?metaId}` | **Admin** | Bulk-delete the metadata items given specified id list.
-Show Load Balancer Metadata Item | `GET /loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator,<br/>Observer** | Show details for a specified metadata item for a specified load balancer.
-Update Load Balancer Metadata Item | `PUT /loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Update the configuration of a metadata item on the load balancer.
+Add load balancer metadata | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata` | **Admin,<br/>Creator,<br/>Observer** | Adds a metadata item to the load balancer.
+Show load balancer metadata | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata` | **Admin,<br/>Creator,<br/>Observer** | Shows all metadata associated with the specified load balancer.
+Bulk-delete load balancer metadata items | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata?id={metaId} & id={metaId}` | **Admin** | Bulk-deletes the metadata items given in the specified ID list.
+Show load balancer metadata item | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator,<br/>Observer** | Shows details for the specified metadata item for the specified load balancer.
+Update load balancer metadata item | `PUT /loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Update the configuration of a metadata item on the load balancer.
 Delete Load Balancer Metadata Item | `DELETE /loadbalancers/{loadBalancerId}/metadata/{metaId}` | **Admin,<br/>Creator** | Delete a metadata item from the load balancer.
 Show Load Balancer Node Metadata | `GET loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Show all metadata associated with a specified node and load balancer.
 Add Load Balancer Node Metadata | `POST loadbalancers/{loadBalancerId}/nodes/{nodeId}/metadata` | **Admin,<br/>Creator** | Adds a metadata item to a specified node and load balancer.
