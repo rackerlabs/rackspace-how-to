@@ -112,7 +112,7 @@ Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
 
 ### Other packages
 
-<span>While we do not support all technologies, we do offer reasonable-endeavor
+While we do not support all technologies, we do offer reasonable-endeavor
 support which extends our support into offering alternative solutions. The
 reasonable-endeavor support can include help from Rackspace partners and other
 third party services.
