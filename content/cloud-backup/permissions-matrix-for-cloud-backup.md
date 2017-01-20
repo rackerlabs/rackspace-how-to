@@ -13,9 +13,9 @@ product_url: cloud-backup
 
 The Cloud Backup permissions matrix displays specific permissions for the following role-based access control (RBAC) roles:
 
-- **Admin** - provides full access to create, read, update, and delete.
-- **Creator** - provides limited access to create, read, and update.
-- **Observer** - provides read-only access.
+- **Admin** provides full access to create, read, update, and delete.
+- **Creator** provides limited access to create, read, and update.
+- **Observer** provides read-only access.
 
 The matrix displays the Cloud Backup methods grouped by category, their corresponding RESTful API methods, and the RBAC roles that are supported.
 
@@ -23,14 +23,14 @@ The matrix displays the Cloud Backup methods grouped by category, their correspo
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-List the agent details | `GET /v1.0/{tenant_id}/agent/{machineAgentId}` | **Observer, Creator, Admin** | Lists details about the machine and its agent.
+List the agent details | `GET /v1.0/{tenant_id}/agent/{machineAgentId}` | **Observer, Creator, Admin** | Lists details about the agent and the server on which it is installed.
 Enable or disable an agent | `POST /v1.0/{tenant_id}/agent/enable` | **Creator, Admin** | Enables or disables an agent. Disabling an agent does not delete it or its data. You can re-enable disabled agents later.
 Enable volume encryption | `POST /v1.0/{tenant_id}/agent/encrypt` | **Creator, Admin** | Enables volume encryption with AES-256 encryption if it is not already enabled.
 Change the encryption password | `POST /v1.0/{tenant_id}/agent/changeencryption` | **Admin** | Changes the encryption password.
-Delete an agent | `POST /v1.0/{tenant_id}/agent/delete` | **Admin** | Immediately permanently deletes an agent and its backup data.
-Migrate a vault | `PUT /v1.0/{tenant_id}/agent/migratevault` | **Admin** | Migrates a backup vault from one machine agent to another.
+Delete an agent | `POST /v1.0/{tenant_id}/agent/delete` | **Admin** | Immediately and permanently deletes an agent and its backup data.
+Migrate a vault | `PUT /v1.0/{tenant_id}/agent/migratevault` | **Admin** | Migrates a backup vault from one agent to another.
 Update the agent backup behavior | `POST /v1.0/{tenant_id}/agent/{machineAgentId}` | **Creator, Admin** | Updates the backup data center, or enables or disables ServiceNet for the Cloud Backup agent, or both.
-List the agent details by host server ID | `GET /v1.0/{tenant_id}/agent/server/{hostServerId}` | **Observer, Creator, Admin** | Lists details about the machine and its agent using the host server ID.
+List the agent details by host server ID | `GET /v1.0/{tenant_id}/agent/server/{hostServerId}` | **Observer, Creator, Admin** | Lists details about the server and its agent by using the host server ID.
 
 ### User operations
 
@@ -66,8 +66,8 @@ Method | API action | Role | Description
 --- | --- | --- | ---
 Create a restore configuration | `PUT /v1.0/{tenant_id}/restore` | **Creator, Admin** | Creates a new restore configuration and returns detailed information about the restore.
 Update a restore configuration | `POST /v1.0/{tenant_id}/restore` | **Creator, Admin** | Updates an existing restore configuration.
-Include or exclude a file in a restore configuration | `PUT /v1.0/{tenant_id}/restore/files` | **Creator, Admin** | Creates a restore file associated with a restore.
-List included or excluded files in a restore configuration | `GET /v1.0/{tenant_id}/restore/files/{restoreId}` | **Observer, Creator, Admin** | Lists files that are included or excluded in a restore.
+Include or exclude a file in a restore configuration | `PUT /v1.0/{tenant_id}/restore/files` | **Creator, Admin** | Specifies whether to include a file in or exclude a file from a restore configuration.
+List included or excluded files in a restore configuration | `GET /v1.0/{tenant_id}/restore/files/{restoreId}` | **Observer, Creator, Admin** | Lists files that are included in or excluded from a restore configuration.
 Delete a restore configuration | `DELETE /v1.0/{tenant_id}/restore/files/{restoreId}` | **Creator, Admin** | Deletes a restore configuration file.
 
 ### Restore operations
