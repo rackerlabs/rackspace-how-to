@@ -68,7 +68,7 @@ Create a restore configuration | `PUT /v1.0/{tenant_id}/restore` | **Creator, Ad
 Update a restore configuration | `POST /v1.0/{tenant_id}/restore` | **Creator, Admin** | Updates an existing restore configuration.
 Include or exclude a file in a restore configuration | `PUT /v1.0/{tenant_id}/restore/files` | **Creator, Admin** | Creates a restore file associated with a restore.
 List included or excluded files in a restore configuration | `GET /v1.0/{tenant_id}/restore/files/{restoreId}` | **Observer, Creator, Admin** | Lists files that are included or excluded in a restore.
-Delete a restore configuration | `DELETE /v1.0/{tenant_id}/restore/files/{restoreId}` | **Admin** | Deletes a restore configuration file.
+Delete a restore configuration | `DELETE /v1.0/{tenant_id}/restore/files/{restoreId}` | **Creator, Admin** | Deletes a restore configuration file.
 
 ### Restore operations
 
