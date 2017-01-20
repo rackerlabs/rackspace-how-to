@@ -5,19 +5,19 @@ title: Permissions matrix for Cloud Orchestration
 type: article
 created_date: '2014-02-05'
 created_by: Renee Rendon
-last_modified_date: '2017-01-16'
+last_modified_date: '2017-01-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
 
-The Cloud Orchestration permissions matrix displays specific permissions for the following roles:
+The Cloud Orchestration permissions matrix displays specific permissions for the following role-based access control (RBAC) roles:
 
 - **Admin** - provides full access to create, read, update, and delete.
 - **Creator** - provides limited access to create, read, and update.
 - **Observer** - provides read-only access.
 
-The matrix displays the Cloud Orchestration methods, their corresponding RESTful API commands, and the roles that are supported.
+The matrix displays the Cloud Orchestration methods grouped by category, their corresponding RESTful API commands, and the RBAC roles that are supported.
 
 ### Stack operations
 
