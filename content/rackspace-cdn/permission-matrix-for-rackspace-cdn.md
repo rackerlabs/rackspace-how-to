@@ -17,7 +17,7 @@ The Rackspace CDN permissions matrix displays specific permissions for the follo
 - **Creator** - provides limited access to create, read, and update.
 - **Observer** - provides read-only access.
 
-The matrix displays the Rackspace CDN methods grouped by category, their corresponding RESTful API methods, and the roles that are supported.
+The matrix displays the Rackspace CDN methods grouped by category, their corresponding RESTful API methods, and the RBAC roles that are supported.
 
 ### Base operations
 
