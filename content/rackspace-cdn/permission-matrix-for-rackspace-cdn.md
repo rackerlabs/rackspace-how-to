@@ -1,23 +1,23 @@
 ---
 permalink: permission-matrix-for-rackspace-cdn/
 audit_date: '2016-06-02'
-title: Permissions Matrix for Rackspace CDN
+title: Permissions matrix for Rackspace CDN
 type: article
 created_date: '2015-04-07'
 created_by: Catherine Richardson
-last_modified_date: '2017-01-16'
+last_modified_date: '2017-01-20'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-The Rackspace CDN permissions matrix displays specific permissions for the following roles:
+The Rackspace CDN permissions matrix displays specific permissions for the following role-based access control (RBAC) roles:
 
 - **Admin** - provides full access to create, read, update, and delete.
 - **Creator** - provides limited access to create, read, and update.
 - **Observer** - provides read-only access.
 
-The matrix displays the Rackspace CDN methods, their corresponding RESTful API methods, and the roles that are supported.
+The matrix displays the Rackspace CDN methods grouped by category, their corresponding RESTful API methods, and the roles that are supported.
 
 ### Base operations
 
