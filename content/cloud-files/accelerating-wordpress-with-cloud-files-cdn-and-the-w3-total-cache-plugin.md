@@ -11,15 +11,16 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-You can enhance your WordPress blog by Rackspace content delivery network (CDN)
+You can enhance your WordPress blog with Rackspace content delivery network (CDN)
 technology to display content to users faster and more efficiently. You can distribute
 common files or content such as CSS, JavaScript, images, videos and much more through a CDN,
 which serves the content from the closest edge server to the end user.
 
 The following steps are best practices and have been tested and verified to optimize
 performance on a default installation of WordPress with the default theme.
-This process was last tested using WordPress version 3.8 and W3 Total Cache plugin
-version 0.9.3.
+
+**Note:** This process was last tested using WordPress version 3.8 and W3 Total
+Cache plugin version 0.9.3.
 
 **Note:** This article assumes that you have already completed the installation of your
 WordPress website and database. If you have not completed this, go
@@ -30,7 +31,7 @@ WordPress website and database. If you have not completed this, go
 Download the W3 Total Cache WordPress plugin from the
 [W3 Total Cache website](http://wordpress.org/extend/plugins/w3-total-cache/). If you are
 using any other caching plugins, deactivate and uninstall them. Ensure that WordPress has
-write permissions to the **wp-content** directory.  You can do this from the server's
+write permissions to the **wp-content** directory. You can do this from the server's
 command line by changing to the WordPress directory and running the following command:
 
     sudo chmod go+w wp-content
@@ -76,12 +77,12 @@ FAQ for more information about usage. Save your changes.
 
 ### Step 6
 
-If you already have a content delivery network (CDN) provider, go to the **Content Delivery
-Network** tab and populate the fields and set your preferences. If you are using Rackspace
+If you already have a CDN provider, go to the **Content Delivery Network** tab and
+populate the fields and set your preferences. If you are using the Rackspace
 CDN, log into your Rackspace account, and set up a CDN using the following procedure.
 
 If you do not have a CDN provider, you can still improve your website's performance using
-the "self-hosted" method. On your own server, create a subdomain and matching DNS zone
+the self-hosted method. On your own server, create a subdomain and matching DNS zone
 record (for example, static.domain.com) and configure FTP options on the **Content Delivery
 Network** tab accordingly. Use FTP to upload the appropriate files, using the available
 upload buttons.
