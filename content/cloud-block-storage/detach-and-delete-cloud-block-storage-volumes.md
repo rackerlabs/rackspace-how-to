@@ -53,7 +53,7 @@ prevent errors.
 #### Unmount a volume from a Windows server
 
 **Note:** You cannot unmount and detach the operating system disk (C:). See
-Working with an operating system disk on a Windows server.
+Working with Boot from Volume (operating system disks).
 
 1.  In the Server Manager, select **File and Storage Services > Disks**.
 2.  Under the **Disks** window, right-click the Cloud Block Storage volume.
@@ -87,7 +87,17 @@ The Cloud Block Storage volume no longer displays as a drive under **Computer**.
 **Note:** If a snapshot of the volume exists, you cannot delete the volume until
 you delete the snapshot.
 
-### Working with an operating system disk on a Windows server
+### Working with Boot from Volume (operating system disks)
+
+Boot from Volume allows Cloud Servers to boot the operating system (Windows and
+Linux) from a cloud block storage volume instead of local storage. Detaching a
+volume running the operating system works differently to Cloud Block Storage,
+which is used as additional storage. You must first make sure the flag
+`delete-on-termination` is set to `False`; this will preserve the volume when
+you delete the cloud server. If you are unsure, please contact support. After
+deletion, you will be left with the volume in a detached state, ready to be
+attached to another cloud server as an additional volume or to be used with a
+new cloud server.
 
 Operating system disks on Windows servers are slightly different. By default,
 the operating system disk itself is preserved as a block storage volume when a
