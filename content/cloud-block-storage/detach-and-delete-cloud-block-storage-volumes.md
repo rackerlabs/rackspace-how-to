@@ -101,8 +101,8 @@ storage.
 1. Ensure the flag `delete-on-termination` is set to `False` to preserve the
 volume when you delete the cloud server.
 
-  **Note:** The Cloud Control Panel generally sets this flag to `False` by
-  default. If you are unsure whether your volume is properly flagged, contact support.
+    **Note:** The Cloud Control Panel generally sets this flag to `False` by
+    default. If you are unsure whether your volume is properly flagged, contact support.
 
 2. [Delete the server](/how-to/deleting-your-server).
 
