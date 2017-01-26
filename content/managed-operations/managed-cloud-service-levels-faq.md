@@ -28,10 +28,6 @@ No, new customers can choose *only* between Managed Infrastructure or Managed Op
 
 Customers who have the Infrastructure service level are grandfathered into their current pricing plan and continue to receive the same support as always, along with any enhancements we announce.
 
-#### Is Rackspace improving the support experience?
-
-Yes, we are always looking at ways to improve our support. We expect that our pricing changes will cause some new customers who don't value support to choose other providers. As a result, we will be able to shift more resources to serve customers who do value support and are willing to pay for it.
-
 #### What do I get with Fanatical Support?
 
 There are five foundational components to ***Fanatical Support***<sup>&reg;</sup>:
