@@ -11,7 +11,7 @@ product: Managed Operations
 product_url: managed-operations
 ---
 
-Get quick answers to common questions about Rackspace Managed Cloud service levels.
+Get quick answers to common questions about the Rackspace Managed Cloud service levels.
 
 #### What are the Rackspace service levels?
 
