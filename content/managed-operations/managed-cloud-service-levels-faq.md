@@ -1,7 +1,7 @@
 ---
 permalink: managed-cloud-service-levels-faq/
 audit_date:
-title: Managed Cloud service levels FAQ
+title: Managed Public Cloud service levels FAQ
 type: article
 created_date: '2014-07-14'
 created_by: David Hendler
@@ -11,39 +11,26 @@ product: Managed Operations
 product_url: managed-operations
 ---
 
-Get quick answers to common questions about the Rackspace Managed Cloud service levels.
+Get quick answers to common questions about the Managed Public OpenStack Cloud service levels.
 
-#### What are the Rackspace service levels?
+#### What are the service levels for Managed Public OpenStack Cloud?
 
-The Rackspace Public Cloud has two service levels: Managed Infrastructure and Managed Operations.
+Managed Public OpenStack Cloud has two service levels: Managed Infrastructure and Managed Operations.
 
 -   **Managed Infrastructure**: Rackspace manages the data center, infrastructure, and virtualization layers.
 -   **Managed Operations**: Rackspace manages the data center, infrastructure, virtualization layers, operating system, database layer, and web server.
 
-#### Can new public-cloud customers choose other service levels?
+#### Can new customers choose other service levels for Managed Public OpenStack Cloud?
 
-No, new customers can choose *only* between Managed Infrastructure or Managed Operations. Customers with a previous pricing model can stay on that model or may choose to move to the new pricing model. Customers cannot return to the old model after they upgrade to Managed Infrastructure or Managed Operations service levels.
+No, new customers can choose *only* between Managed Infrastructure or Managed Operations. Customers with a previous pricing model can stay on that model or may choose to move to the new pricing model. Customers cannot return to the old model after they upgrade to another service level.
 
 #### What happens with customers who are on the old Infrastructure service level?
 
 Customers who have the Infrastructure service level are grandfathered into their current pricing plan and continue to receive the same support as always, along with any enhancements we announce.
 
-#### What do I get with Fanatical Support?
-
-There are five foundational components to ***Fanatical Support***<sup>&reg;</sup>:
-
--   **Architecture advisors**: Move beyond one-size-fits-all reference architectures. Let our experts tailor your workload architecture to your exact needs.
--   **Security guidance**: Let us apply our cloud expertise to your workload to help identify potential vulnerabilities and enable more secure deployments.
-
-    **Note:** Full security consulting is not included in any Managed Cloud service level. The Rackspace Managed Security team provides full security consulting if you need it.
-
--   **Code development assistance**: Standard developer guides alone aren't enough. Use our experts for your code, leveraging our interfaces (for example, APIs and SDKs) to the fullest.
--   **Launch assistance**: Use our specialists to help understand your unique needs and get up and running fast.
--   **24x7x365 access to system administrators**: Reach our experts when you need them and when your business is depending on it.
-
 #### Do Managed Operations customers get additional services?
 
-Yes. Customers at the Managed Operations service level can take advantage of the following additional services:
+Yes, customers at the Managed Operations service level can take advantage of the following additional services:
 
 -   Platform maintenance
 -   Cloud app installation
@@ -57,7 +44,7 @@ Yes. Customers at the Managed Operations service level can take advantage of the
 
 -   *Credit percentage*: Standard rate is 5 percent per every 30 minutes of downtime, up to 100 percent of cloud monthly spend.
 
-**2x SLA Accelerator Credit percentage**: For *Managed Operations* service level customers, we will double the credit percentage of all applicable SLA violations.
+**2x SLA Accelerator Credit percentage**: For *Managed Operations* service level customers, we double the credit percentage of all applicable SLA violations.
 
 -   *Credit percentage*: 2x up to 100 percent of cloud monthly spend. For example, if the standard payout is 5 percent per 30 minutes of downtime, Managed Operations will be 10 percent per 30 minutes.
 -   This 2x accelerator also applies to *Support SLA* credit payouts.
