@@ -1,42 +1,56 @@
 ---
 permalink: migrating-from-parse-to-rackspace/
-audit_date:
+audit_date: '2017-01-26'
 title: Migrating From Parse To Rackspace
 type: article
 created_date: '2016-03-25'
 created_by: Amanda Clark
-last_modified_date: '2016-08-17'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-01-26'
+last_modified_by: Chris Hultin
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article assumes you have already migrated your database from Parse to ObjectRocket. If you have not, you can find more information [here.](https://objectrocket.com/parse)
+This article provides instructions for migrating your Parse database to Rackspace. It
+assumes that you have already migrated your database from Parse to ObjectRocket. If
+you have not, you can find more information [on the ObjectRocket website.](https://objectrocket.com/parse)
 
 ### Deploy the Parse stack
 
-From the [Cloud Control Panel](https://mycloud.rackspace.com), go to the **Orchestration** tab and click on **Stack Templates**. Select **Parse** from the list, then click **Create Stack**.
+1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
-Or, [click here](https://mycloud.rackspace.com/cloud/servers#templates/orchestrationTemplates,cloudOrchestrationTemplates/parse/rackspace) to go directly to the Parse template.
+2. In the top navigation bar, click **Orchestration** > **Stack Templates**.
 
-On the Create Stack page, enter your Parse site domain and email address. Optionally, you can also add Git repository information and your custom code will be automatically pulled and installed on your server.  
+3. In the All Stacks list, scroll to **Parse** and click **Create Stack**.
 
-### Configure your new server
+4. In the pop-up box, choose the flavor and then click **Create Stack**.
 
-After the stack has been successfully created you will need to configure your database authentication information.
+5. On the Create Stack page, enter a name and region for the stack, and enter your Parse site domain and email address. 
 
-1. Log on to the server via SSH either as `root` using the SSH key provided, or as `parse` using the password provided.
+6. (Optional) To automatically pull in and install your custom code on the new server, enter GitHub repository information.
 
-   Additional information on the server login process can be found [here](how-to/connecting-to-linux-from-mac-os-x-by-using-terminal) for Mac/Linux users or [here](how-to/connecting-to-linux-from-windows-by-using-putty) for Windows users.
+7. Click **Create Stack**.
 
-2. After you have logged in to the primary server, modify `/home/parse/ecosystem.json` with your
-   - MongoDB Connection String
-   - Application ID
-   - Master Key
+   On the stack details page, a green **Up** status in the Status field indicates when the stack is active. 
+ 
 
-   The MongoDB Connection String can be found in the ObjectRocket Control Panel, listed as **Connect** under the instance you plan to use. The Application ID and Master Key values can be found in your **Parse.com** account under **App Settings > Security and Keys**.  Any other application-specific keys are optional. They should be left blank if not used.  
+### Configure the new server
 
-   Following is an example **ecosystem.json** config file:  
+After the stack has been successfully created, configure your database authentication information. Repeat this procedure on all Parse servers created in the stack. These servers are linked from the stack details page, which is displayed after you create the stack. The parse password should be the same for all servers.
+
+1. Log in to the new primary server via SSH either as `root` by using the SSH key provided or as `parse` by using the password provided.
+
+   For more information about logging in to a server, see [Connect to a cloud server](/how-to/connect-to-a-cloud-server/).
+
+2. Edit the **/home/parse/parse.json** configuration file to add the following values:
+
+  - MongoDB Connection String
+  - Application ID
+  - Master Key
+
+  You can find the MongoDB Connection String value in the ObjectRocket Control Panel, listed as **Connect** under the instance that you plan to use. The Application ID and Master Key values are in your Parse.com account under **App Settings** > **Security and Keys**. Any other application-specific keys are optional. Leave them blank if you aren’t going to use them.
+
+   Following is an example **parse.json** config file:  
 
 	    {
 		  "apps" : [{
@@ -62,46 +76,54 @@ After the stack has been successfully created you will need to configure your da
           }]
         }
 
-3. Parse must be restarted after any changes are made to **ecosystem.json**.  Do so by running the following two commands while logged in as the `Parse` user:
+3. Restart Parse by running the following, commands while logged in as the `parse` user:
 
-	    pm2 stop parse-wrapper
-	    pm2 start ecosystem.json
+	    pm2 stop 'Your Application'
+	    pm2 start parse.json
 
-   Repeat this step on all Parse servers created by this stack. These servers will be linked from the Stack page, which should be displayed after you create your stack. You can also select the **Orchestration** tab in the Cloud Control Panel, click on **Stacks** from the dropdown menu, and the click on the name of your stack. The `parse` password should be the same across all servers.
 
-Custom code will likely need to be modified before it will run successfully. You can find more information about this process [here.](https://github.com/ParsePlatform/parse-server/wiki/Migrating-an-Existing-Parse-App#3-cloud-code). This stack already has all of the Cloud Code replacements installed.  
+You will likely need to modify custom code for it to run successfully. You can find more information about this process on the [Parse website](https://parse.com/migration). The Parse stack already has all of the Cloud Code replacements installed. 
 
 For debugging purposes, you can view the Parse logs at `/home/parse/.pm2/logs/`.
 
+
 ### Install and configure your certificate
 
-After Parse is running, you can configure a valid certificate within NGINX by modifying `/etc/nginx/conf.d/<your_url>.conf`, where `<your_url>` is replaced with the URL you provided when you deployed your Parse stack.
+After Parse is running, you can configure a valid certificate within NGINX. If you do not
+have a valid certificate, you can purchase one through Rackspace if you are hosting a
+physical server with us. If you have questions, contact your Account Manager or
+Rackspace Support.
 
-**Note:** If you need help installing your SSL certificate, see NGINX's information on [SSL certificate chains](http://nginx.org/en/docs/http/configuring_https_servers.html#chains).
+1. Modify `/etc/nginx/conf.d/<your_url>.conf`, where `<your_url>` is the URL that you provided when you deployed your Parse stack.
 
-Validate your SSL certificate by using the following command:
+  If you need help installing your SSL certificate, see NGINX's information on [SSL certificate chains](http://nginx.org/en/docs/http/configuring_https_servers.html#chains).
 
-    nginx -t -c /etc/nginx/nginx.conf
+2. Validate your SSL certificate by using the following command:
 
-If you do not have a valid certificate, you can purchase one through Rackspace if you are hosting a physical server with us. Please contact your Account Manager or Rackspace Support with further questions.
+       nginx -t -c /etc/nginx/nginx.conf
 
-### Configure your Parse Dashboard
 
-This stack also comes with Parse Dashboard, which enables you to visualize all the Parse applications running on your server. The Dashboard is configured separately from `parse-server`, and the configuration file is located in `/home/parse/parse-dashboard-config.json`. You must configure your Application ID and Master Key in this file in order to use Parse Dashboard.  
+### Configure the Parse dashboard
 
-Following is an example `parse-dashboard-config.json` file:
+The Parse stack also comes with a Parse dashboard, which enables you to visualize all
+the Parse applications running on your server. The dashboard is configured separately
+from the server.
 
-    {
-      "apps": [
-        {
-          "serverURL": "https://your_api_url/parse",
-          "appId": "your_application_id",
-          "masterKey": "your_master_key",
-          "appName": "Your Application"
-        }
-      ]
-    }
+1. Edit the `/home/parse/parse-dashboard-config.json` configuration file and add the Application ID and Master Key values.
 
-After you modify this file, you will need to restart the Parse Dashboard service by running the following command:
+  Following is an example `parse-dashboard-config.json` file:
 
-    service parse-dashboard restart
+	  {
+	   "apps": [
+	       {
+	         "serverURL": "https://your_api_url/parse",
+	         "appId": "your_application_id",
+	         "masterKey": "your_master_key",
+	         "appName": "Your Application"
+	       }
+	     ]
+	   }
+
+2. Restart the Parse dashboard service by running the following command (as `root`):
+
+       service parse-dashboard restart
