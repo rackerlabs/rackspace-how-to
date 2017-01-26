@@ -662,7 +662,7 @@ All four are internally identical.
 If you're interested in learning more, we recommend reading the
 following external sites:
 
-    * [Domain Names - Concepts and Facilities](https://tools.ietf.org/html/rfc1034)
-    * [Domain Names - Implementation and Specification](https://tools.ietf.org/html/rfc1035)
-    * [Wikipedia - Zone Files](https://en.wikipedia.org/wiki/Zone_file)
-    * [Wikipedia - DNS Record Types](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
+* [Domain Names - Concepts and Facilities](https://tools.ietf.org/html/rfc1034)
+* [Domain Names - Implementation and Specification](https://tools.ietf.org/html/rfc1035)
+* [Wikipedia - Zone Files](https://en.wikipedia.org/wiki/Zone_file)
+* [Wikipedia - DNS Record Types](https://en.wikipedia.org/wiki/List_of_DNS_record_types)
