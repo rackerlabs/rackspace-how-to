@@ -5,7 +5,7 @@ title: E-mail Fundamentals
 type: article
 created_date: '2017-01-27'
 created_by: Alan Hicks
-last_modified_date: '2017-01-27'
+last_modified_date: '2017-01-30'
 last_modified_by: Alan Hicks
 product: undefined
 product_url: undefined
@@ -22,9 +22,10 @@ decisions that were made decades ago by people who never envisioned
 e-mail or the Internet to be a fraction as large as it is today. In the
 years that have followed, e-mail systems have been cobbled together
 from many different resources to try to deal with these issues - with
-varying degrees of success. Let's take a look at some of these
-decisions that have proven problematic for the world over the last 30
-years.
+varying degrees of success. In this article, we're going to take a look
+at the protocols used to implement e-mail delivery and retrieval, as
+well as offer some best practice advice so you can begin to implement
+your own solution.
 
 #### No Single Protocol
 
@@ -837,7 +838,7 @@ transaction with minimal delay or overhead, and are very unlikely to
 result in false positives (legitimate mail being refused as SPAM). You
 may also wish to explore further options than these.
 
-#### DNS Record Checks
+#### Proper DNS Records
 
 Compromised servers and workstations are a constant source of spam.
 Spammers love to relay their junk through some one else's compromised
@@ -866,20 +867,46 @@ matches. Here's an example of a successful match.
     # dig cluster-g.mailcontrol.com. a +short
     208.87.233.190
 
-If any of these lookups fails (the most common reason being that no PTR
-record exists) or if the IP address of the A record does not match the
-IP address of the connection, the server will automatically fail the
-connection. Furthermore, many e-mail servers will refuse connections
-from an address if the PTR record looks like this:
+In order to better ensure mails your server sends are actually
+delivered, it's imperative that you setup proper PTR records for your
+servers and proper A (and/or AAAA) records for your domain. Failure to
+do so will result in your e-mails being rejected by a sizable number of
+recipients.
 
-    # dig 41.98.198.216.in-addr.arpa. ptr +short
-    dsl-216-198-98-41.pstel.net.
+#### Protocol Checks
 
-This PTR record appears to belong to an ISP's dynamically-assigned
-pool. As such, it probably points to a consumer Internet account rather
-than a legitimate e-mail server. Larger mail systems (in particular
-we see this from Yahoo! and Google) routinely block delivery from any IP
-with a PTR record that includes the IP address.
+Much of the SPAM we see every day is sent from compromised computers as
+part of a large botnet.  These compromised devices typically implement
+only a primitive SMTP service. As a result, they rarely follow best
+practices and often even violate parts of the SMTP protocol. By
+checking for such violations and refusing mail when they are present,
+we can eliminate much SPAM without negatively impacting e-mails sent
+from legitimate servers.
+
+Configuring these sorts of checks is different for every mail server,
+and not every SMTP implementation is guaranteed to offer the same
+checks, but we'll address the most common ones here.
+
+- Reject Invalid HELO/EHLO Hostnames
+  - refuse delivery if the client specifies a malformed hostname during
+    the HELO/EHLO command
+- Reject Non-FQDN HELO/EHLO Hostnames
+  - refuse delivery if the client does not specify a fully-qualified
+    domain name (FQDN) during the HELO/EHLO command
+- Reject Non-FQDN Senders
+  - refuse delivery if the MAIL FROM address does not include a FQDN
+- Reject Non-FQDN Recipient
+  - refuse delivery if the RCPT TO address does not include a FQDN
+- Reject Unknown Sender Domain
+  - refuse delivery if the MAIL FROM domain does not have a proper MX
+    record
+- Reject Unknown Recipient Domain
+  - refuse delivery if the RCPT TO domain does not have a proper MX
+    record
+- Reject Clients With Improper DNS Records
+  - refuse delivery if the connecting client does not have a PTR record
+    and if the PTR record does not have an A record mapping back to the
+    client's IP address
 
 #### SPF Records
 
@@ -900,10 +927,163 @@ DNS. Rather, this record sort of piggybacks within the TXT record for
 the domain. Also, the records are not the easiest thing in the world to
 read. Let's take a look at one.
 
-    # dig slackware.com txt +short
-    "v=spf1 ip4:64.57.102.32/29 -all"
+    # dig wikimedia.org txt +short
+    "v=spf1 ip4:91.198.174.0/24 ip4:208.80.152.0/22 ip6:2620:0:860::/46 include:_spf.google.com ip4:74.121.51.111 ?all"
 
+The "v=spf1" prefix informs us that this TXT record should be
+interpreted as an SPF version 1 record. This particular record is
+relatively simple. The domain owner has whitelisted three different
+subnets, 91.198.174.0/24, 208.80.152.0/22, and 2620:0:860::/46. They
+are also including an additional record for "_spf.google.com".
+Apparently wikipedia utilizes Google's G Suite. They've also explicitly
+allowed the IP address 74.121.51.111 to send e-mail on their behalf.
+Finally, they have ended the record with "?all" which states that no
+other servers are explicitly allowed to send e-mail on their behalf,
+but doesn't recommend blocking such e-mails either. Let's drill down
+further and have a look at that included record, "_spf.google.com".
 
+    # dig _spf.google.com txt +short
+    "v=spf1 include:_netblocks.google.com include:_netblocks2.google.com include:_netblocks3.google.com ~all"
+    # dig _netblocks.google.com txt +short
+    "v=spf1 ip4:64.18.0.0/20 ip4:64.233.160.0/19 ip4:66.102.0.0/20 ip4:66.249.80.0/20 ip4:72.14.192.0/18 ip4:74.125.0.0/16 ip4:108.177.8.0/21 ip4:173.194.0.0/16 ip4:207.126.144.0/20 ip4:209.85.128.0/17 ip4:216.58.192.0/19 ip4:216.239.32.0/19 ~all"
+    # dig _netblocks2.google.com txt +short
+    "v=spf1 ip6:2001:4860:4000::/36 ip6:2404:6800:4000::/36 ip6:2607:f8b0:4000::/36 ip6:2800:3f0:4000::/36 ip6:2a00:1450:4000::/36 ip6:2c0f:fb50:4000::/36 ~all"
+    # dig _netblocks3.google.com txt +short
+    "v=spf1 ip4:172.217.0.0/19 ip4:108.177.96.0/19 ~all"
 
+Here we can see that the SPF records for _spf.google.com are quite
+extensive. Google has whitelisted 14 different (rather large) IPv4
+subnets as valid e-mail senders. They've also whitelisted 6 different
+IPv6 subnets which are enormous. Each of these records ends with the
+"~all" keyword which is a "Soft Fail" scenario. This means that any
+records not stated are not authorized to send e-mail, but
+allowing mail from those addresses is not explicitly prohibited.
 
+It's important to note that SPF only protects against SPAM that
+includes a spoofed from address, and even then it only protects against
+spam if both the receiving mail server and the domain's owner have
+implemented SPF. Spammers can continue to spoof your domain to mail
+servers that don't implement SPF checks. If your mail server implements
+SPF, you'll still get spoofed messages from domains that don't
+implement this, and if the spammer controls his own domain and doesn't
+attempt to spoof the sending address, SPF will do nothing to protect
+you.
 
+#### Relational Block Lists
+
+Relational block lists are a common and effective way of reducing the
+amount of spam your mail server receives. Relational block lists are
+either public or private services which track a variety of factors such
+as known spam IPs, consumer IP subnets, and open proxies that might be
+used for spam. Modern e-mail systems can then make a simple DNS query
+whenever it receives a connection to determine if that address is a
+known or likely source of spam.
+
+The most common public relational blacklist is zen.spamhaus.org. Let's
+take a look a couple different DNS queries using this blacklist.
+
+    # dig @0.ns.spamhaus.org. 52.1.234.206.zen.spamhaus.org +short
+    # dig @0.ns.spamhaus.org. 52.1.234.207.zen.spamhaus.org +short
+    127.0.0.2
+    127.0.0.9
+
+In the first query we received no response. This indicates that
+52.1.234.206 is a legitimate e-mail service (according to
+zen.spamhaus.org). In the second query we received responses of
+127.0.0.2 and 127.0.0.9. Since the RBL has at least one value for this
+IP address, this address is likely source of spam and the mail server
+can chose to reject the message based on this information alone.
+
+Relational block lists aren't fool proof. Often legitimate mail servers
+can be caught by them, so reputable block lists typically include some
+way to dispute your IP address's standing on the list.
+
+### Other Common SPAM Fighting Techniques
+
+These techniques aren't always a "best fit" for every e-mail server, so
+they don't fall under our previous Best Practices category. They tend
+to be more complex to setup, have a higher overhead, are more likely to
+introduce false positives, or some combination of the above. If you
+stick around long enough, you'll come across these somewhere along the
+line.
+
+#### Bayesian Filtering
+
+Bayesian Filtering is a technique that applies a bit of Artificial
+Intelligence to the content of e-mail to determine if the message is
+SPAM. Since the entire e-mail must be inspected, this step
+requires that the mail be delivered fully to the server before a
+decision can be made. This means that Bayesian filtering requires a
+much higher network overhead than other techniques in addition to a
+high CPU overhead. Still, it can be a highly effective method for
+filtering out SPAM. Bayesian filtering can often have a high
+false-positive rate, so care needs to be taken in applying it to a
+server. Generally, each e-mail account should have its own Bayesian
+database (as each user's e-mail is different) and mail should be marked
+as SPAM or moved to a SPAM folder rather than be deleted outright. The
+big improvement here is that Bayesian filtering "learns" what should be
+marked as SPAM and what should be passed as ham. This requires some
+method by which the user can train the Bayesian filter. As such, proper
+setup is difficult and complex, often with a lot of permissions
+juggling. This is particularly true when e-mail accounts are stored in
+a relational database.
+
+#### Greylisting
+
+Greylisting is a technique in which connections from unknown IP
+addresses are temporarily refused, then later white-listed or
+black-listed depending on latter behavior. The technique has a very low
+false-positive rate, but introduces a sometimes cumbersome delay in
+mail delivery. Typically, the mail server responds with a temporary
+error message. After a configurable length of time, if the client
+reconnects the e-mail server accepts delivery. The working theory here
+is that spammers are often using primitive SMTP clients that don't
+support the full range of SMTP error codes. As such, they rarely retry
+a failed connection. This doesn't always work, so a portion of spam
+will leak through, but many admins are content with the trade-offs
+involved with greylisting, particularly since it so rarely blocks
+legitimate e-mail.
+
+#### Challenge-Response
+
+Spend long enough on the Internet and you'll stumble across some one
+advocating challenge-response schemes for fighting SPAM. Usually these
+people will claim that they have implemented such a system and have
+never gotten a single SPAM message since. The claims these people will
+make are incredible. *In* (from the Latin) meaning "not", and
+*credible* from the vernacular meaning "convincing".
+
+The primary problem with challenge response methods is that it places
+the burden of spam prevention upon the sender. Whenever an e-mail
+server implementing challenge-response schemes receives a message from
+a new sender, it holds that message in a queue. It then sends an e-mail
+to the original sender challenging them to reply. When the server
+receives a response to this challenge, it white-lists that sender. It
+should become immediately apparent that automated systems (Rackspace's
+ticket notification system for example) will never send a response and
+thus cannot be automatically white-listed. Furthermore, many senders
+simply won't bother responding to the challenge, so a lot of legitimate
+e-mail will never be delivered and neither the sender nor the recipient
+will even know why.
+
+This is even more deadly when the sender is also behind a
+challenge-response system. In that scenario, the original sender will
+receive a challenge. That challenge will get queued and a second
+challenge will be sent to the original recipient. Until the original
+sender replies to a challenge, his own challenges will be rejected. In
+this scenario, these two users can never communicate with one another.
+Additionally, they may never even know that their e-mails were not
+received.
+
+### Conclusion
+
+Hopefully this document has given you a better understanding of the
+complexities of modern e-mail systems. Unfortunately, e-mail is always
+something of a moving target. The conflict between mail providers and
+spammers can be likened to an arms race. Both sides are eternally
+struggling to outdo the other, so mail providers need to keep up to
+date on the latest spam prevention techniques. While this document
+can't hope to be a definitive resource on hosting your own mail server,
+hopefully it has provided you with a solid base from which to evaluate
+your requirements and implement a service which works best for your
+business.
