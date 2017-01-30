@@ -1,6 +1,6 @@
 ---
 permalink: use-cron-to-extract-and-compress-zip-unzip-on-cloud-sites/
-node_id: 699
+audit_date:
 title: 'Use cron to extract and compress (zip & unzip) on Cloud Sites'
 type: article
 created_date: '2011-03-16'

@@ -1,12 +1,12 @@
 ---
 permalink: ach-compliance-faq/
-node_id: 4637
+audit_date:
 title: ACH compliance FAQ
 type: article
 created_date: '2015-04-09'
 created_by: Andrea Gillespie
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-14'
+last_modified_by: Kelly Holcomb
 product: undefined
 product_url: undefined
 ---
@@ -24,35 +24,27 @@ For Rackspace to comply with NACHA regulations, we need to make the
 following changes to our ACH process:
 
 -   Record your agreement to the Terms and Conditions that authorizes
-    ACH payments
--   Provide you with the ability to cancel automatic ACH payments
--   Pre-authorize your checking account to confirm that the account
-    exists, and store the pre-authorization information
+    ACH payments.
+-   Provide you with the ability to cancel automatic ACH payments.
+-   Preauthorize your checking account to confirm that the account
+    exists, and store the preauthorization information.
 
-#### Where do I go to access or view my payment information?
+#### How do I access or view my payment information?
 
-Log in to the MyRack Portal. Click **Account**, and then select
-**Payments** from the menu.
+1. Log in to the MyRackspace Portal.
 
-<img src="{% asset_path general/ach-compliance-faq/ACHFAQ1.png %}" width="185" height="305" />
+2. Click **Account**, and then select **Payments** from the menu.
+
+  <img src="{% asset_path general/ach-compliance-faq/ACHFAQ1.png %}" width="185" height="305" />
 
 
-#### Where do I go to re-enter my ACH payment information?
+#### Do I need to update any of my ACH information?
 
-On the Payments page in the MyRackspace Portal, click **Recurring
-Payments** at the top of the screen. Update your payment information in
-the fields on the **Direct Debit / E-Check** tab.
+You need to enter information in the fields on the **Direct Debit / E-Check** tab. To get to this tab, go to the Payments page in the MyRackspace Portal and click **Recurring Payment** at the top of the screen.
 
 <img src="{% asset_path general/ach-compliance-faq/ACHFAQ2a.png %}" width="595" height="326" />
 
-#### What ACH information will I need to re-enter?
-
-You need to enter information in the fields on the **Direct Debit /
-E-Check** tab.
-
-<img src="{% asset_path general/ach-compliance-faq/ACHFAQ3.png %}" width="453" height="102" />
-
-This information includes:
+On the **Direct Debit / E-Check tab**, enter or update the following information:
 
 -   The location of the account (inside or outside of the US)
 -   Name on the account
@@ -67,5 +59,5 @@ portal. In the top menu, click  **E-Check Payment History**.
 
 <img src="{% asset_path general/ach-compliance-faq/ACHFAQ4a.png %}" width="454" height="120" />
 
-**Note**: This feature maintains a history of only e-Check payments.
+**Note**: This feature maintains a history of e-Check payments only.
 Payments made with other payment methods do not appear in this list.

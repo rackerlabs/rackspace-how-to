@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-rackspace-intelligence-for-dedicated-accounts/
-node_id: 4897
+audit_date:
 title: Getting started with Rackspace Intelligence for dedicated accounts
 type: article
 created_date: '2015-10-20'
@@ -43,7 +43,7 @@ As a customer with a dedicated account:
     accounts](/how-to/understanding-the-rackspace-intelligence-user-interface-for-dedicated-accounts)
 -   [Learn about the differences between Rackspace Intelligence for
     Cloud accounts and for dedicated
-    accounts](/how-to/differences-between-rackspace-intelligence-for-cloud-accounts-and-dedicated-accounts)
+    accounts](/how-to/differences-between-rackspace-intelligence-for-cloud-account-and-dedicated-account)
 
 **When you want to log into Rackspace Intelligence**
 

@@ -1,7 +1,7 @@
 ---
 permalink: creating-a-simple-aspnet-site-for-the-main-cloud-sites-account/
-node_id: 533
-title: Creating a Simple ASP.NET site for the main Cloud Sites account
+audit_date:
+title: Create a Simple ASP.NET site for the main Cloud Sites account
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

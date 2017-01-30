@@ -1,12 +1,12 @@
 ---
 permalink: first-gen-to-next-gen-cloud-servers-migration-pre-checks/
-node_id: 4681
+audit_date:
 title: First Gen to Next Gen Cloud Servers migration pre-checks
 type: article
 created_date: '2015-05-15'
 created_by: David Hendler
-last_modified_date: '2016-01-14'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-23'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -45,7 +45,7 @@ take significantly longer to complete. We recommend that before you
 initiate your self-migration, you move any unnecessary data off the
 server. You can use Rackspace Cloud Backup to perform this task.
 
-You can verify the results of this check by running **`df -h`** on a
+You can verify the results of this check by running `df -h` on a
 Linux cloud server, or by checking the properties of your disk from the
 **My Computer** screen in Windows.
 
@@ -55,7 +55,7 @@ In a subset of the First Gen Linux infrastructure, the kernel and
 initial RAM disk are handled by the hypervisor instead of within your
 cloud server. Because the Next Gen environment uses only self-managed
 kernels, the migration process must inject your shared kernel and
-initramfs into your file system. This check ensures that there is
+`initramfs` into your file system. This check ensures that there is
 sufficient free space on your disk for the kernel to be injected.
 
 The results for this check are pass/fail.
@@ -76,7 +76,7 @@ indicate that your cloud server migration will fail, but an extremely
 high inode count will substantially increase migration time on early
 Linux cloud servers.
 
-To verify this check, run **`df -i`** from your Linux cloud server.
+To verify this check, run `df -i` from your Linux cloud server.
 Because there are no Windows cloud servers in our earliest environment,
 this check is not necessary for Windows cloud servers.
 
@@ -102,13 +102,13 @@ The results for this check are pass/fail.
 
 If this check fails, the drivers must be reinstalled before your
 migration window. For Linux distributions, run the following script to
-install or update these drivers:
+install or update these drivers.  This action needs to be completed by
+a user with sudo access or as the user root:
 
-    wget http://437117ba0e2524fdae22-6a87f3acbfcde81a104bb18fbb8cb85f.r47.cf2.rackcdn.com/xen_tools_installer.sh; <br>
-    chmod u+x xen_tools_installer.sh; bash xen_tools_installer.sh; rm -rf xen_tools_installer.sh
+    sudo curl http://437117ba0e2524fdae22-6a87f3acbfcde81a104bb18fbb8cb85f.r47.cf2.rackcdn.com/xen_tools_installer.sh | bash
 
 For Gentoo, Arch, and FreeBSD, or if this installer fails, you must
-install these drivers manually.
+install these drivers manually.  
 
 ### Nova agent check
 
@@ -124,15 +124,15 @@ The results for this check are pass/fail.
 If your Linux server fails this check, run the following script as root
 to reinstall the agent through SSH or your Java console:
 
-    curl https://756c096c4fdec88dc549-ad3ecb862ed1ff9a4f44bb8d95040816.ssl.cf5.rackcdn.com/rax_nova_agent_install.sh | bash
+    curl http://e584a326fabd876c3b87-5cc4f7b75bc093abc6d4ecc36a7bc696.r2.cf1.rackcdn.com/linux-nova-agent-installer.sh | bash
 
 If your Windows server fails this check, follow these instructions:
 
 1.  Download the following package to your computer:
 
-        http://c4f6d65e7c9c0356f5c6-f834e6ac12bf8372533a9a3497063644.r92.cf2.rackcdn.com/AgentService.zip
+        http://e584a326fabd876c3b87-5cc4f7b75bc093abc6d4ecc36a7bc696.r2.cf1.rackcdn.com/AgentService.zip
 
 2.  Unzip the archive.
 
-3.  In the folder that is created, run the **`installagentservice.bat`**
+3.  In the folder that is created, run the `installagentservice.bat`
     script from an administrator command prompt.

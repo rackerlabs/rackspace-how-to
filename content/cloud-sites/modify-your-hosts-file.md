@@ -1,47 +1,47 @@
 ---
 permalink: modify-your-hosts-file/
-node_id: 629
+audit_date: '2106-06-08'
 title: Modify your hosts file
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-02-08'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-06-08'
+last_modified_by: Nate Archer
 product: Cloud Sites
 product_url: cloud-sites
 ---
 
-Modifying your **hosts** file allows you to override the DNS for a domain, on that particular machine. This is useful when you want to test your site without the test link, prior to going live with SSL; verify that an alias site works, prior to DNS changes; and for other DNS-related reasons. Modifying your **hosts** file causes your local machine only to look directly at the IP address specified.
+Modifying your **hosts** file enables you to override the DNS for a domain, on that particular machine. This is useful when you want to test your site without the test link, prior to going live with SSL; verify that an alias site works, prior to DNS changes; and for other DNS-related reasons. Modifying your **hosts** file causes your local machine to look directly at the IP address specified.
 
-You need to add two entries to your **hosts** file that contain the IP address that you want the site to resolve to and the address. Adding the following two lines, for example, point **www.domain.com** and **domain.com** to our current PHP5-ITK ("Refreshed" PHP5) cluster:
+To modify the hosts file, you add two entries to the file that contains the IP address that you want the site to resolve to and the address. Adding the following two lines, for example, point **www.domain.com** and **domain.com** to our current PHP5-ITK ("Refreshed" PHP5) cluster:
 
     64.49.219.194 www.domain.com
     64.49.219.194 domain.com
 
-The sections in this article provide instructions for locating and editing the hosts file on the operating systems that are listed below:
+The sections in this article provide instructions for locating and editing the hosts file on the following operating systems:
 
--   Windows 8, Windows 7, and Windows Vista
+-   Windows 10, Windows 8, Windows 7, and Windows Vista
 -   Windows NT, Windows 2000, and Windows XP
 -   Linux
 -   Mac OS X 10.0 through 10.1.5
--   Mac OS X 10.6 through 10.10
-  
+-   Mac OS X 10.6 through 10.11
+
 After you add the domain information and save the file, your system begins resolving to the specified IP address. After testing is finished, remove these entries.
 
-### Windows 8, Windows 7, and Windows Vista
+### Windows
 
-Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notepad must be run as Administrator.
+Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notepad must be run as Administrator.
 
-**For Windows 8**
+**For Windows 10 and 8**
 
 1.  Press the Windows key.
 2.  Type **Notepad** in the search field.
 3.  In the search results, right-click **Notepad** and select **Run as administrator**.
-4.  In Notepad, open the following file: **c:\Windows\System32\Drivers\etc\hosts**
+4.  From Notepad, open the following file: **c:\Windows\System32\Drivers\etc\hosts**
 5.  Make the necessary changes to the file.
 6.  Click **File > Save** to save your changes.
 
-**For Windows 7 and Windows Vista**
+**For Windows 7 and Vista**
 
 1.  Click **Start > All Programs > Accessories**.
 2.  Right-click **Notepad** and select **Run as administrator**.
@@ -73,7 +73,7 @@ Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notep
 5.  Press **Control-x**.
 6.  When asked if you want to save your changes, answer **y**.
 
-### Mac OS X 10.0 - 10.10
+### Mac OS X 10.0 through 10.11
 
 **Mac OS X 10.0 through 10.1.5**
 
@@ -82,7 +82,7 @@ Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notep
 3.  Enter your domain user password and click **OK**.
 4.  In the second column of the browser view, select the node named machines.
 
-    You will see entries for `-DHCP-`, `broadcasthost`, and `localhost` in the third column.
+    The third column contains entries for `-DHCP-`, `broadcasthost`, and `localhost`.
 
 5.  In the third column, select `localhost`.
 6.  From the **Edit** menu, select **Duplicate**. (The quickest way to create a new entry is to duplicate an existing one.)
@@ -91,8 +91,8 @@ Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notep
 
 7.  Click **Duplicate**.
 
-    A new entry called localhost copy appears, and its properties are shown below the browser view. 
-    
+    A new entry called localhost copy appears, and its properties are shown below the browser view.
+
 8.  Double-click the value of the `ip_address` property and enter the IP address of the other computer.
 9.  Double-click the value of the `name` property and enter the hostname you want for the other computer.
 10.  Click the `serves` property and select **Delete** from the **Edit** menu.
@@ -106,7 +106,7 @@ Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notep
 
      You do not need to restart the computer.
 
-**Mac OS X 10.6 - 10.10**
+**Mac OS X 10.6 through 10.11**
 
 1.  Open **Applications > Utilities > Terminal**.
 2.  Open the **hosts** file by typing the following line in the terminal window:
@@ -117,7 +117,7 @@ Windows 8, Windows 7, and Windows Vista use User Account Control (UAC), so Notep
 4.  Edit the **hosts** file.
 
     The file contains some comments (lines starting with the # symbol), and some default hostname mappings (for example, 127.0.0.1 – local host). Add your new mappings after the default mappings.
-  
+
 5.  Save the hosts file by pressing **Control+x** and answering **y**.
 6.  Make your changes take effect by flushing the DNS cache with the following command:
 

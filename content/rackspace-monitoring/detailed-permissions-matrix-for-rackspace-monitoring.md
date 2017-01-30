@@ -1,12 +1,12 @@
 ---
 permalink: detailed-permissions-matrix-for-rackspace-monitoring/
-node_id: 3395
+audit_date:
 title: Detailed Permissions Matrix for Rackspace Monitoring
 type: article
 created_date: '2013-04-10'
 created_by: Megan Meza
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-06-09'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -16,15 +16,7 @@ roles in Rackspace Monitoring. The matrix displays the method names,
 their corresponding RESTful API commands, and the roles that are
 supported.
 
-**[Rackspace Monitoring Developer
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)**
-
-**[Related How-To
-Articles](/how-to/)**
-
-**[Rackspace Monitoring Terminology](#monitoring)**
-
-### **As of October 8, 2013       **
+### As of October 8, 2013
 
 Method Name	| API Call | Role | Description
 --- | --- | --- | ---
@@ -130,46 +122,4 @@ Update Suppression | ```PUT /v1.0/suppressions/:suppressionId``` | **Admin only*
 Delete Suppression| ```DELETE /v1.0/suppressions/:suppressionId``` | **Admin only** | Deletes a specific suppression.
 Create Suppression | ```POST /v1.0/suppressions``` | **Admin only** | Creates a suppression.
 
-### Cloud Monitoring Terminology
-
-
-### Agent
-
-A monitoring daemon that resides on the server being monitored.
-The agent gathers metrics based on agent checks and pushes them to Cloud
-Monitoring.
-
-### Agent Token
-
-An authentication token used to identify the agent when it
-communicates with Cloud Monitoring.
-
-### Alarm
-
-An alarm contains a set of rules that determine when a
-notification is triggered.
-
-### Check
-
-Checks explicitly specify how you want to monitor an
-entity.
-
-### Entity
-
-An entity is a resource that you want to monitor. Some examples
-are a server, a website, or a service.
-
-### Notification
-
-A notification is an informational message sent to one or more
-addresses when an alarm is triggered.
-
-### RESTful
-
-A type of web service API that uses Representational State
-Transfer. REST is the architectural style for hypermedia systems used
-for the World Wide Web.
-
-
-
-[Permission Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
+**Related information**: [Permission Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)

@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface/
-node_id: 538
+audit_date:
 title: Rackspace Cloud Sites Essentials - MyLittleAdmin Database Management Interface
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
+last_modified_date: '2016-06-22'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
@@ -44,36 +44,24 @@ well.
 
 1.  Log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com).
 2.  Navigate to **Hosting > Cloud Sites**.
-
-    <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface/hosting_0.png %}" alt="" />
-
-3.  Click on the **domain name** that the database exists under.
-4.  Click on the **Features** tab.
-
-    <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface/sites_tabs.png %}" alt="" />
-
+3.  Click the **domain name** that the database exists under.
+4.  Click the **Features** tab.
 5.  Confirm that the database is active by scrolling to
     the Databases section. If the database is active it will display a
-    green check mark icon in the status column as shown in the following
-    figure:
-
-    <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface/sites_dblist_0.png %}" alt="" />
+    green check mark icon in the status column.
 
 To start working with this database, you will need the **Hostname**,
 **username** and **password**. The details can be viewed by clicking on
-the hyperlink for the database, which results in a page that should be
-similar to this:
-
-<img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface/dbinfo_0.png %}" alt="" />
+the hyperlink for the database.
 
 -   The Server Name is listed as **Hostname** under
     the Database Information section.
 -   The Login is the **username**.
 
-**Note:** The usernames are listed under the Database Users section; by
-default there is only one user and this would be the username you would
-use to login to myLittleAdmin. If there are multiple users listed, you
-may login with any of them. The number that prefixes the username is the
+**Note:** The usernames are listed under the Database Users section. By
+default, there is only one user and this would be the username you would
+use to log in to myLittleAdmin. If there are multiple users listed, you
+may log in with any of them. The number that prefixes the username is the
 account number for the website owner (yourself or your client)
 and is important when logging in, so be sure to enter the username
 exactly as it is listed on this page.
@@ -106,27 +94,24 @@ database.
     shown below).
 5.  Finally, enter the **password** for this database user and
     click **Connect**.
-
-    <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-mylittleadmin-database-management-interface/dblogin_0.png %}" alt="" />
-
-6.  Now that you're logged into myLittleAdmin, you can manage your MSSQL
+6.  Now that you're logged in to myLittleAdmin, you can manage your MSSQL
     database as necessary.
 
 ### Backing Up Your MSSQL Database
 
-1.  After you are logged into the online manager, click on **Tools** in
+1.  After you are logged in to the online manager, click **Tools** in
     the bottom of the left frame.
 
-2.  Then on the **Tools** menu, click **Database Backup and Restore.**
+2.  Then on the **Tools** menu, click **Database Backup and Restore**.
 
     This will open the myLittleBackup interface in a new window.
 
-3.  From myLittleBackup, click on **Backup databases** from the left
+3.  From myLittleBackup, click **Backup databases** from the left
     menu.
 
     The database backup form will load in the window's right frame.
 
-4.  In step 1, choose the database you would like to backup from the
+4.  In Step 1, choose the database you would like to backup from the
     drop-down menu (which should be the only one listed) and click **OK** to
     continue.
 
@@ -144,13 +129,12 @@ database.
 
     If you don't want choose a backup set name and description or you're
     not sure what to use, just leave it blank or use the database name
-    as both!
+    for both.
 
-7.  If everything above looks correct, you're ready to click
-    the **Backup** button in Step 4.
+7.  If everything above looks correct, click the **Backup** button in Step 4.
 
     During this time you will see a loading message on the screen.
-    Please take heed of the warning myLittleBackup gives: **You're now
+    Take heed of the warning myLittleBackup gives: **You're now
     ready to backup your database. The process can take several minutes.
     Be patient and do not click the stop button until done.**
 

@@ -1,12 +1,12 @@
 ---
 permalink: log-in-to-rackspace-intelligence-for-dedicated-accounts/
-node_id: 4836
+audit_date:
 title: Log in to Rackspace Intelligence for dedicated accounts
 type: article
 created_date: '2015-10-07'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -24,8 +24,6 @@ To access Rackspace Intelligence:
 
 2.  On the [MyRackspace Customer Portal](https://my.rackspace.com), click **Services** and then
     select **Availability Monitoring** from the list.
-
-    <img src="{% asset_path rackspace-intelligence/log-in-to-rackspace-intelligence-for-dedicated-accounts/Myrack1.png %}" width="600" />
 
     This takes you to the **Entities** page, which lists all of your
     available entities. From this page, you can explore all the details

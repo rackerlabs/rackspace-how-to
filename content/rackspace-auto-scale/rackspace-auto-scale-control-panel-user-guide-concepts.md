@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-auto-scale-control-panel-user-guide-concepts/
-node_id: 3783
+audit_date:
 title: Rackspace Auto Scale Control Panel User Guide - Concepts
 type: article
 created_date: '2013-11-18'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-05-31'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Autoscale
 product_url: rackspace-auto-scale
 ---
@@ -29,7 +29,7 @@ have saved server images. If you create a server by using the **Cloud
 Servers** tab in the Cloud Control Panel and save the image, the image
 automatically appears in the **Auto Scale** tab.
 
-### Server image
+#### Server image
 
 A *server image* is a copy of a server's disk. It contains the operating
 system and all of the installed data and software on the server at the
@@ -62,7 +62,7 @@ generated. Server images can be created so that they update themselves
 at startup with the newest version of software. Or you can create a new
 image and edit the scaling group to incorporate new software versions.
 
-### Server flavor
+#### Server flavor
 
 The *server flavor* is the amount of CPU, RAM, system disk, networks
 (the aggregate outbound bandwidth across all attached networks), and
@@ -70,7 +70,7 @@ disk I/O that you assign when you configure a server. For example, the
 **512MB Standard Instance** server flavor corresponds to 1 vCPU, 512 MB
 RAM, 20 GB system disk, 80 Mb/s network, and Good disk I/O.
 
-### Server networks
+#### Server networks
 
 The *server networks* that you choose are all of the networks on which
 your service operates.
@@ -102,13 +102,11 @@ because those policies are triggered by events that could occur before a
 required cooldown period. Schedule-based policies that conflict with a
 cooldown period are not executed.
 
-The following graph illustrates how cooldowns affect policy execution.
+For more information about cooldowns, see [How Auto Scale cooldowns work](/how-to/how-auto-scale-cooldowns-work).
 
-<img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts/image001_4.png %}" width="599" height="449" />
+### Scaling policies
 
-## Scaling policies
-
-The *scaling policy*<span style="line-height: 1.6;"> determines what kind of scaling occurs - up or down - and when scaling occurs. You must define separate polices for scaling up and scaling down. You can have multiple scaling policies per scaling group.
+The *scaling policy* determines what kind of scaling occurs - up or down - and when scaling occurs. You must define separate polices for scaling up and scaling down. You can have multiple scaling policies per scaling group.
 
 For schedule-based policies, you can use a cron job to configure the
 schedule. At the specified time, Auto Scale adds servers or removes them
@@ -127,7 +125,7 @@ Developers Guide* section on
 The following diagrams illustrate some of the principles governing
 scaling policies.
 
-### Scale up by percentage policy
+#### Scale up by percentage policy
 
 The following diagram illustrates how a percentage scale-up policy
 translates into a different amount of scaling each time that it is
@@ -135,14 +133,14 @@ invoked and changes the total number of servers.
 
 <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts/image003_3.png %}" width="600" height="450" />
 
-### Scale by schedule policy
+#### Scale by schedule policy
 
 The following diagram illustrates how a scheduled scale-up policy can be
 configured to respond to anticipated increases in traffic.
 
 <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts/image005_3.png %}" width="600" height="450" />
 
-### Scaling policies restricted by minimum and maximum values
+#### Scaling policies restricted by minimum and maximum values
 
 The following diagram illustrates how the configured minimum and maximum
 number of servers in the scaling group restricts scale-ups and
@@ -150,7 +148,7 @@ scale-downs.
 
 <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-concepts/image007_3.png %}" width="600" height="450" />
 
-###  Delete servers policy
+####  Delete servers policy
 
 The following diagram illustrates how a scale-down policy operates first
 on pending servers (servers in the process of being added) and then on
@@ -167,14 +165,9 @@ from the load balancers that you have added to your cloud server
 account. The load balancer sends traffic to your cloud servers on the
 node port that you configure.
 
-
 ### User Guide sections
 
--   [Rackspace Auto Scale Control Panel User Guide -
-    Introduction](/how-to/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
--   [Rackspace Auto Scale Control Panel User Guide -
-    Concepts](/how-to/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
--   [Rackspace Auto Scale Control Panel User Guide - Create a scaling
-    group](http://rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
--   [Rackspace Auto Scale Control Panel User Guide - Create a scaling
-    policy](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Crating Scaling Policies")
+-   [Rackspace Auto Scale Control Panel User Guide - Introduction](/how-to/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
+-   [Rackspace Auto Scale Control Panel User Guide - Concepts](/how-to/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
+-   [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
+-   [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Crating Scaling Policies")

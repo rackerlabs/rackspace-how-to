@@ -1,12 +1,12 @@
 ---
 permalink: adding-a-managed-operations-service-level-to-your-cloud-account/
-node_id: 1716
+audit_date:
 title: Adding a managed operations service level to your cloud account
 type: article
 created_date: '2011-10-11'
 created_by: Rackspace Support
-last_modified_date: '2016-01-12'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-22'
+last_modified_by: Nate Archer
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -27,10 +27,7 @@ online support ticket. The team will support your cloud servers from the
 operating system level up through the application stack of Microsoft SQL
 Server, .NET and IIS, and the LAMP stack on Linux. Your cloud server
 will be regularly patched and updated. Additionally, Rackspace will
-manage your [Cloud
-Databases](http://www.rackspace.com/cloud/public/databases/), providing
-basic DBA assistance such as user and table management and data backup.
-Monitoring services are included, with the Managed Operations team
+manage your [Cloud Databases](http://www.rackspace.com/cloud/public/databases/), providing basic DBA assistance such as user and table management and data backup. Monitoring services are included, with the Managed Operations team
 proactively responding to any alerts. As a Managed Operations customer
 you can configure up to eight monitors per server with any combination
 of ping, port, or URL.
@@ -108,8 +105,6 @@ calculator:
 
 To get pricing information for Cloud Servers with Managed Operations,
 make sure to check the box in the lower-right corner of the screen:
-
-<img src="{% asset_path managed-operations/adding-a-managed-operations-service-level-to-your-cloud-account/ManagedCalc.png %}" width="192" height="139" />
 
 ### Why is there an account fee as well as a per-instance service fee?
 

@@ -1,6 +1,6 @@
 ---
 permalink: accessing-rackconnect-cloud-servers/
-node_id: 2025
+audit_date:
 title: Accessing RackConnect cloud servers
 type: article
 created_date: '2012-08-21'
@@ -77,7 +77,7 @@ alternative methods for connecting to these cloud servers:
     Panel](https://mycloud.rackspace.com/).
 
 -   If you are using a Cisco ASA as your RackConnect edge network
-    device, it may be feasible to use a site-to-site VPN or client VPN
+    device, it might be feasible to use a site-to-site VPN or client VPN
     solution to allow direct access to your cloud servers. With
     RackConnect v2.0, this option also requires that you have an
     appropriate Dedicated to Cloud Servers network policy deployed to
@@ -87,10 +87,10 @@ alternative methods for connecting to these cloud servers:
     you are interested in setting up a VPN solution with your
     RackConnect environment, contact support.
 
-**Important:** When connecting between your cloud and dedicated
+**Important:** When connecting between cloud and dedicated
 environments with RackConnect, always use the private IP addresses of
-your dedicated and cloud servers to avoid bandwidth charges.
+the dedicated and cloud servers to avoid bandwidth charges.
 
-If you have any questions, please reach out to us. Our contact
+If you have any questions, reach out to us. Our contact
 information is available on the [Contact
 Us](/how-to/support) page.

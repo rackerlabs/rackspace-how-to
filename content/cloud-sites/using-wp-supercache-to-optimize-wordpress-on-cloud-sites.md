@@ -1,12 +1,12 @@
 ---
 permalink: using-wp-supercache-to-optimize-wordpress-on-cloud-sites/
-node_id: 702
-title: Using WP-SuperCache to optimize Wordpress on Cloud Sites
+audit_date:
+title: Use WP-SuperCache to optimize Wordpress on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Thomas Hester
-last_modified_date: '2014-10-15'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -40,55 +40,45 @@ increase the efficiency of WP Supercache in Cloud Sites.
 
 #### Advanced settings
 
-Go to settings for SuperCache and click on the **Advanced** tab.
+1. Go to settings for SuperCache and click on the **Advanced** tab.
 
-<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/Tabs.png %}" alt="" />
+2. Mark the following items:
 
-Mark the following items:
+   -   Cache hits to this website for quick access. (Recommended)
+   -   Use mod_rewrite to serve cache files. (Recommended)
+   -   Compress pages so they're served more quickly to visitors.
+       (Recommended)
+   -   Don't cache pages for known users. (Recommended)
+   -   Cache rebuild. Serve a supercache file to anonymous users while a
+       new file is being generated. (Recommended)
+   -   Mobile device support. (External plugin or theme required. See the
+       FAQ for further details.)
+   -   Extra homepage checks. (Very occasionally stops homepage caching)
+       (Recommended)
 
--   Cache hits to this website for quick access. (Recommended)
--   Use mod_rewrite to serve cache files. (Recommended)
--   Compress pages so they're served more quickly to visitors.
-    (Recommended)
--   Don't cache pages for known users. (Recommended)
--   Cache rebuild. Serve a supercache file to anonymous users while a
-    new file is being generated. (Recommended)
--   Mobile device support. (External plugin or theme required. See the
-    FAQ for further details.)
--   Extra homepage checks. (Very occasionally stops homepage caching)
-    (Recommended)
+3. After making those changes, click **Update Status**.
 
-After making those changes, click **Update Status**.
+4. After the screen refreshes scroll down to the Mod Rewrite Rules section
+   and click **Update Mod_Rewrite Rules**.
 
-#### Mod_rewrite settings
+5. Scroll down to **Expiry Time & Garbage Collection**.
 
-After the screen refreshes scroll down to the Mod Rewrite Rules section
-and click **Update Mod_Rewrite Rules**.
-
-<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/RewriteRules1.png %}" alt="" />
-
-#### Expiry time and garbage collection
-
-Scroll down to **Expiry Time & Garbage Collection**.
-
-<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/gc_1.png %}" alt="" />
-
-Change cache timeout to 0 seconds then click **Change Expiration**.
+6. Change cache timeout to 0 seconds then click **Change Expiration**.
 
 #### Preload settings
 
-Click on the **Preload** tab next.
+1. Click on the **Preload** tab next.
 
-<img src="{% asset_path cloud-sites/using-wp-supercache-to-optimize-wordpress-on-cloud-sites/Preload_0.png %}" alt="" />
+2. Select **Preload mode** (garbage collection only on legacy
+   cache files. Recommended.).
 
--   Select **Preload mode** (garbage collection only on legacy
-    cache files. Recommended.).
--   Set the refresh rate for preloaded supercache files by changing the
-    number of minutes in the **Refresh preloaded cache files every
-    \_\_\_ minutes** field (0 to disable, minimum 30 minutes) to a
-    number appropriate for the traffic your site receives, like 1440
-    (24 hours) or 10080 (1 week).
--   Click **Update Settings**, then after the page refreshes click
+3. Set the refresh rate for preloaded supercache files by changing the
+   number of minutes in the **Refresh preloaded cache files every
+   \_\_\_ minutes** field (0 to disable, minimum 30 minutes) to a
+   number appropriate for the traffic your site receives, like 1440
+   (24 hours) or 10080 (1 week).
+
+4. Click **Update Settings**, then after the page refreshes click
     **Preload Cache Now** and in around 10 or 15 seconds the cache will
     start building for the site. Depending on the size of the site and
     amount of content, the cache will take a few seconds to a minute

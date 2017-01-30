@@ -1,17 +1,19 @@
 ---
 permalink: open-ports-in-the-linux-firewall-to-access-pop-and-imap-mail-servers/
-node_id: 71
+audit_date: '2016-07-29'
 title: Open ports in the Linux firewall to access POP and IMAP mail servers
 type: article
 created_date: '2011-03-08'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-07-29'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-To access services such as POP and IMAP mail servers, you'll need to open certain ports to allow the services through the firewall. There are a few standard ports that are used to access most services. For example, accessing a website generally uses port 80 for normal (HTTP) web pages and port 443 for secure (HTTPS) pages.
+To access services such as POP and IMAP mail servers, you must open certain ports to allow the services through the firewall. A few standard ports are used to access most services. For example, access for a website generally uses port 80 for normal (HTTP) web pages and port 443 for secure (HTTPS) pages.
+
+The following table lists the ports used be each of the TCP/IP protocols for mail delivery.
 
 | Server  | Port  |
 |----------|-------|
@@ -21,54 +23,76 @@ To access services such as POP and IMAP mail servers, you'll need to open certai
 | IMAP    | 143   |
 | IMAP3  | 993   |
 
-\* Though SMTP generally uses port 25 for connections, port 587 is actually the preferred port for outbound SMTP traffic due to the widespread abuse of port 25.
+\* Although SMTP generally uses port 25 for connections, port 587 is the preferred port for outbound SMTP traffic because of the widespread abuse of port 25.
 
-### Edit iptables rules
+### Edit firewall rules
 
-Following from the Cloud Server setup, we need to edit the **iptables.test.rules** files to allow access to those ports. We will use port 25 for SMTP at the moment. You can change it as you see fit.
+**For Centos 7 and later:**
 
-1. Open the test rules file using the following command:
+1. Enter the following commands to open the preceding ports:
 
-       sudo nano /etc/iptables.test.rules
+      firewall-cmd --zone=public --add-port=25/tcp --permanent
 
-2. Just before the HTTP and HTTPS entries, add the following details:
+   Repeat this command, replacing the port number, for each of the preceding ports.**
 
-       # Allows SMTP access
-       -A INPUT -p tcp --dport 25 -j ACCEPT
+2. List the rules on a given zone by running the following command:
 
-       # Allows pop and pops connections
-       -A INPUT -p tcp --dport 110 -j ACCEPT
-       -A INPUT -p tcp --dport 995 -j ACCEPT
+      firewall-cmd --query-service=<service name>
 
-       # Allows imap and imaps connections
-       -A INPUT -p tcp --dport 143 -j ACCEPT
-       -A INPUT -p tcp --dport 993 -j ACCEPT
+**For Debian and CentOS 6 and earlier:**
 
-3. Apply the new rules using the following command:
+Edit the `iptables.test.rules` file to allow access to those ports. Although the example uses port 25, you can change it to the recommended value.
 
-       sudo iptables-restore < /etc/iptables.test.rules
+1. Open the rules file with the following command: `sudo nano /etc/iptables.test.rules`
+2. Just before the HTTP and HTTPS entries, add the following lines:
 
-4. Now check that the rules have been applied using the following command:
+         # Allows SMTP access
+         -A INPUT -p tcp --dport 25 -j ACCEPT
 
-       sudo iptables -L
+         # Allows pop and pops connections
+         -A INPUT -p tcp --dport 110 -j ACCEPT
+         -A INPUT -p tcp --dport 995 -j ACCEPT
 
-  This information should be in the output from the command:
+         # Allows imap and imaps connections
+         -A INPUT -p tcp --dport 143 -j ACCEPT
+         -A INPUT -p tcp --dport 993 -j ACCEPT
 
-       ACCEPT     all  --  anywhere             anywhere            state RELATED,ESTABLISHED
-       ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:smtp
-       ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:pop3
-       ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:pop3s
-       ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:imap2
-       ACCEPT     tcp  --  anywhere             anywhere            tcp dpt:imaps
+3. Apply the new rules:
 
-5. Now we have tested the rules, we need to have them applied on a permanent basis. You will need to have full root access for the next command so use this command in order to enter the root shell:
+   For Debian:
 
-       sudo -i
+         sudo iptables-restore < /etc/iptables.test.rules
 
-6. Now use the following command:
+   For CentOS 6 and earlier:
 
-       iptables-save > /etc/iptables.up.rules
+      Skip this step and proceed to the following step.
 
-7. Now that you have saved the new iptables rules, you can exit the root shell by typing the following command:
+4. Check that the rules have been applied:
 
-       exit
+         sudo iptables -L
+
+   The following information should be in the output from the command:
+
+         ACCEPT all -- anywhere anywhere state RELATED,ESTABLISHED
+         ACCEPT tcp -- anywhere anywhere tcp dpt:smtp
+         ACCEPT tcp -- anywhere anywhere tcp dpt:pop3
+         ACCEPT tcp -- anywhere anywhere tcp dpt:pop3s
+         ACCEPT tcp -- anywhere anywhere tcp dpt:imap2
+         ACCEPT tcp -- anywhere anywhere tcp dpt:imaps
+
+5. Enter the root shell. You must have full root access to save the iptables rules.
+
+         sudo -i
+
+6. Save the iptables rules:
+   For Debian:
+
+         iptables-save > /etc/iptables.up.rules
+
+   For CentOS 6 and earlier:
+
+         iptables-save > sudo iptables-restore &lt;
+
+7. Exit the root shell:
+
+         exit

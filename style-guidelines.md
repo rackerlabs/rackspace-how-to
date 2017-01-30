@@ -13,7 +13,7 @@ Follow these guidelines when writing content:
 - [Write clear and consistent code examples](#write-clear-and-consistent-code-examples)
 - [Use consistent terminology](#use-consistent-terminology)
 
-For comprehensive writing and style guidelines, see the [complete style guide for technical content](https://github.com/rackerlabs/docs-rackspace/tree/master/style-guide).
+For comprehensive writing and style guidelines, see the [complete style guide for technical content](https://github.com/rackerlabs/docs-rackspace/tree/master/doc/style-guide).
 
 ### Use sentence-style capitalization for titles and headings
 
@@ -27,7 +27,7 @@ Following are some examples:
 - Troubleshooting a Vyatta site-to-site VPN connection
 - Differences between IMAP and POP
 
-For more information about titles and headings, see the [Titles and headings](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/m-z-style-guidelines.md#titles-headings) topic in the complete style guide.
+For more information about titles and headings, see the [Titles and headings](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/m-z-style-guidelines.md#titles-and-headings) topic in the complete style guide.
 
 ### Use active voice
 
@@ -45,7 +45,7 @@ Following are examples of active voice:
 - Create a server.                                              
 - Rackspace products and services solve your business problems.
 
-For more information about voice, see the [Use active voice](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/basic-writing-guidelines.md#use-active-voice) section in the complete style guide.
+For more information about voice, see the [Use active voice](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/basic-writing-guidelines.md#use-active-voice) section in the complete style guide.
 
 ### Use present tense
 
@@ -76,7 +76,7 @@ Avoid switching person (point of view) in the same document.
 
 ### Write clear and consistent step text
 
-When you are providing instructions to users, you should generally number the steps (unless you have just one step). For the steps, use the following guidelines. The guidelines are followed by an example. For more extensive examples, see the [Procedural steps](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/m-z-style-guidelines.md#tasks-steps) section of the complete style guide.
+When you are providing instructions to users, you should generally number the steps (unless you have just one step). For the steps, use the following guidelines. The guidelines are followed by an example. For more extensive examples, see the [Procedural steps](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/m-z-style-guidelines.md#tasks-and-procedures) section of the complete style guide.
 
 - Write each step as a complete imperative sentence (that is, a sentence that starts with an imperative verb) and use ending punctuation. In steps, the focus is on the user, and the voice is active.
 
@@ -116,7 +116,7 @@ When you are providing instructions to users, you should generally number the st
 
 Certain text should be formatted differently from the surrounding text to designate a special meaning or to make the text stand out to the user. Usually this formatting is accomplished by applying a different font treatment (such as bold, italics, or monospace).
 
-The following table covers the most common items that should be formatted. For more detailed formatting information, see the [Text formatting](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/m-z-style-guidelines.md#text-formatting) section of the complete style guide.
+The following table covers the most common items that should be formatted. For more detailed formatting information, see the [Text formatting](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/m-z-style-guidelines.md#text-formatting) section of the complete style guide.
 
 Text item | Treatment | Example
 --- | --- | ---
@@ -140,7 +140,7 @@ Pronouns are useful, but you must ensure that their antecedents (the words that 
 
 - **That** - Avoid using *that* as a demonstrative pronoun (which stands in for or points to a noun). Instead, use it as an adjective and follow it with a noun.
 
-For more examples, see the [Clarify pronouns](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/basic-writing-guidelines.md#clarify-pronouns) section of the complete style guide.
+For more examples, see the [Clarify pronouns](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/basic-writing-guidelines.md#clarify-pronouns) section of the complete style guide.
 
 ### Clarify gerunds and participles
 
@@ -168,7 +168,7 @@ Observe the following guidelines when creating blocks of code as input or output
 
 - If the input includes a list of arguments or parameters, show the important or relevant ones first, and group related ones. If no other order makes sense, use alphabetical order. If you explain the arguments or parameters in text, show them in the same order that they appear in the code block.
 
-The following example illustrates many of these guidelines. For more examples, see the [Code examples](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/a-l-style-guidelines.md#code-examples) section of the complete style guide.
+The following example illustrates many of these guidelines. For more examples, see the [Code examples](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/a-l-style-guidelines.md#code-examples) section of the complete style guide.
 
 #### Example: Create a VM running a Docker host
 1. Show all the available virtual machines (VMs) that are running Docker.
@@ -263,5 +263,5 @@ since |	because (describing a reason for)
 using |	by using
 
 For more guidelines about terminology, see the following sections in the complete style guide:
-- [Write for a global audience](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/basic-writing-guidelines.md#write-for-a-global-audience)
-- [Terminology](https://github.com/rackerlabs/docs-rackspace/blob/master/style-guide/terminology-guidelines.md)
+- [Write for a global audience](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/basic-writing-guidelines.md#write-for-a-global-audience)
+- [Terminology](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/style-guide/terminology-guidelines.md)

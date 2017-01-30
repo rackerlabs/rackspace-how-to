@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-overview/
-node_id: 4650
+audit_date:
 title: Rackspace CDN overview
 type: article
 created_date: '2015-05-08'
@@ -11,8 +11,7 @@ product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-Rackspace CDN \[[product
-page](http://www.rackspace.com/cloud/cdn-content-delivery-network)\] is
+[Rackspace CDN](http://www.rackspace.com/cloud/cdn-content-delivery-network) is
 a content delivery network (CDN) service that you can use to CDN-enable
 your website. It offers features such as pulling content from your
 website's origin servers, rules for caching, access restrictions, and
@@ -51,19 +50,14 @@ The Rackspace CDN architecture includes the following components:
 The following articles provide more general information about Rackspace
 CDN:
 
--   [Features of Rackspace
-    CDN](/how-to/features-of-rackspace-cdn)
--   [Uses of Rackspace
-    CDN](/how-to/uses-of-rackspace-cdn)
--   [Limits for Rackspace
-    CDN](/how-to/limits-for-rackspace-cdn)
--   [Rackspace CDN
-    terminology](/how-to/rackspace-cdn-terminology)
--   [Differences between Rackspace CDN and Rackspace Cloud
-    Files](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files)
--   [Access Rackspace
-    CDN](/how-to/access-rackspace-cdn)
+-   [Features of Rackspace CDN](/how-to/features-of-rackspace-cdn)
+-   [Uses of Rackspace CDN](/how-to/uses-of-rackspace-cdn)
+-   [Limits for Rackspace CDN](/how-to/limits-for-rackspace-cdn)
+-   [Rackspace CDN terminology](/how-to/rackspace-cdn-terminology)
+-   [Differences between Rackspace CDN and Rackspace Cloud Files](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files)
+-   [Access Rackspace CDN](/how-to/access-rackspace-cdn)
 
+### Additional resources
 
-
-#### [&lt; Rackspace CDN User Guide](/how-to/rackspace-cdn)    -    [Features of Rackspace CDN &gt;](/how-to/features-of-rackspace-cdn)
+- [Rackspace CDN User Guide](/how-to/rackspace-cdn)
+- [Features of Rackspace CDN](/how-to/features-of-rackspace-cdn)

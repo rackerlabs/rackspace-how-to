@@ -1,12 +1,12 @@
 ---
 permalink: cloud-files-faq/
-node_id: 4980
+audit_date:
 title: Cloud Files - FAQs
 type: article
 created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2016-03-17'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-14'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -30,12 +30,12 @@ to a folder in Windows&reg; or a directory in UNIX&reg;. The primary difference
 between a container and these other "file system" constructs is that
 containers cannot be nested. You can have up to 500,000 Containers in
 your account, but they only exist at the "top level" of your account and
-containers cannot reside within other Containers.
+containers cannot reside within other containers.
 
 Containers scale to about one million objects before
 performance degrades. Containers can only be removed from Cloud Files if
 they do NOT contain any storage Objects. In other words, make sure the
-Container is empty before attempting to delete it.
+container is empty before attempting to delete it.
 
 #### What are the naming requirements for Cloud Files objects and containers?
 
@@ -75,15 +75,14 @@ Storage systems become distributed as they grow. OpenStack Swift (the basis for 
 #### Can Cloud Files be used for my Cross-domain policy file?
 
 No. The Cloud Files CDN does not support exposing a custom
-crossdomain.xml file, as this is a required file by the OpenStack Swift
+**crossdomain.xml** file, as this is a required file by the OpenStack Swift
 project. OpenStack Swift uses this as a global configuration file for
 the installation, and can not be modified for multiple tenants, such as
 our Public Cloud.
 
 #### Is there a Cloud Files specific SLA?
 
-Please click here to view [The Rackspace Cloud Terms of
-Service](http://www.rackspace.com/cloud/legal/).
+Please click here to view [The Rackspace Cloud Terms of Service](http://www.rackspace.com/cloud/legal/).
 
 ------------------------------------------------------------------------
 
@@ -91,7 +90,7 @@ Service](http://www.rackspace.com/cloud/legal/).
 
 #### Why does uploading a file in the Control Panel set the Allow-Origin header on my container?
 
-When you upload a file in the Cloud Control Panel, an Allow-Origin
+When you upload a file in the Cloud Control Panel, an `Allow-Origin`
 header is set on the container to support cross-origin resource sharing
 (CORS). Browsers prevent AJAX requests between different domains by
 default. Because the Cloud Files API and the Control Panel reside on
@@ -104,7 +103,7 @@ maximum upload performance can be achieved.
 Read more about CORS at
 <http://en.wikipedia.org/wiki/Cross-origin_resource_sharing> .
 
-#### Cloud Files - How do Permissions Work?
+#### How do permissions work?
 
 There are no permissions or access controls around containers or objects
 other than being split into separate accounts. Users must authenticate
@@ -131,17 +130,15 @@ will have access to them.
 
 #### Why are we not using RTMP?
 
--   RTMP is probably the most popular delivery format today, but the
-    market is quickly moving towards HTTP delivery for
-    Streaming content. Here are just a few reasons the market is moving
-    towards HTTP.
--   Accessibility- Many firewalls block RTMP and RTSP streaming
+RTMP is probably the most popular delivery format today, but the market is quickly moving towards HTTP delivery for Streaming content. Following are just a few reasons the market is moving towards HTTP:
+
+-   Accessibility - Many firewalls block RTMP and RTSP streaming
     protocols because corporations don't want users watching video
     at work. HTTP appears to be normal web traffic, meaning that videos
     served over HTTP are usually left open.
--   Startup times- Akamai sees a significant reduction in stream startup
+-   Startup times - Akamai sees a significant reduction in stream startup
     times on average for traffic served via HTTP.
--   Throughput (image quality)- With the HTTP network being larger than
+-   Throughput (image quality) - With the HTTP network being larger than
     many other networks, Akamai is closer to the end user on their HTTP
     network meaning they get better throughput of data. that means
     customers will experience higher bit rates uninterrupted (and
@@ -157,17 +154,17 @@ Yes, this is available to both US and UK Cloud customers.
 
 #### Does CDN management in Cloud Files support exposing a custom crossdomain.xml file?
 
-Cloud Files CDN does not support exposing a custom crossdomain.xml file
+Cloud Files CDN does not support exposing a custom **crossdomain.xml** file
 because this file is required by the OpenStack Swift project, on which
 Cloud Files is based.
 
-OpenStack Swift uses the crossdomain.xml file as a global configuration
+OpenStack Swift uses the **crossdomain.xml** file as a global configuration
 file for installation. The file cannot be modified for multiple tenants,
 such as our Rackspace Public Cloud.
 
 For more information, see [Cross-domain Policy File](http://docs.openstack.org/developer/swift/crossdomain.html).
 
-If your site requires a custom crossdomain.xml file, we suggest you take
+If your site requires a custom **crossdomain.xml** file, we suggest you take
 a look at [Rackspace CDN](http://www.rackspace.com/cloud/cdn-content-delivery-network).
 Rackspace CDN allows you to customize your configuration and define your
 own origin web server.
@@ -230,10 +227,10 @@ No, all customers facing API calls will remain the same.
 
 -   Higher capacity and scale- Strategically placed servers increase the
     network backbone capacity and number of concurrent users handled.
-    For instance, when there is a 10 Mbit/s network backbone and 100
-    Mbit/s central server capacity, only 10 Mbit/s can be delivered. But
+    For instance, when there is a 10 Mb/s network backbone and 100
+    Mb/s central server capacity, only 10 Mb/s can be delivered. But
     when 10 servers are moved to 10 edge locations, total capacity can
-    be 10\*10 Mbit/s.
+    be 10*10 Mb/s.
 -   Lower delivery costs - Strategically placed edge servers decrease
     the load on interconnects, public peers, private peers and
     backbones, freeing up capacity and lowering delivery costs. A CDN

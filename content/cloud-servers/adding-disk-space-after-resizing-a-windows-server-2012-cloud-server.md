@@ -1,12 +1,12 @@
 ---
 permalink: adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/
-node_id: 3397
-title: Adding Disk Space After Resizing a Windows Server 2012 Cloud Server
+audit_date:
+title: Add Disk Space After Resizing a Windows Server 2012 Cloud Server
 type: article
 created_date: '2013-04-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Zach Corleissen
+last_modified_date: '2016-06-10'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -17,57 +17,34 @@ available for your server. In Windows Server 2012 you can merge the
 newly available disk space into one drive by expanding your original
 drive.
 
-### Open Computer Management
+### Extend your drive
 
-From the Desktop of your Windows Server 2012 Cloud Server, open
-the **Server Manager** and select **Tools > Computer
+1. From the desktop of your Windows Server 2012 Cloud Server, open
+the **Server Manager** and select **Tools > Computer Management**.
+
+2. Under the **Storage** folder in the left pane, select **Disk
 Management**.
 
-<img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/tools_computer_manager.png %}" alt="" />
+   The left pane of Disk Management displays the current formatted hard drive for your server, generally (C:), and the right pane displays the amount of unallocated space.
 
-### Open Disk Management
-
-Under the **Storage** folder in the left pane, select **Disk
-Management**. In the left pane of Disk Management you will see the
-current formatted hard drive for your server, generally (C:), and you
-should also see an amount of unallocated space in the right pane. In
-this example we have a server with 40 GB of hard disk space that we have
-resized to 80 GB. That expanded storage space is the unallocated 40 GB.
-
-<img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/disk_managment.png %}" alt="" />
-
-### Extend the Volume
-
-Select the **C:&#92;&#92;** drive and right-click on it.  Choose **Extend
+3. Select the **C:&#92;&#92;** drive and right-click on it. Choose **Extend
 Volume** from the drop down menu.
 
-<img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/extend_volume.png %}" alt="" />
+   This will open the Extend Volume Wizard. Click **Next** to begin the process.
 
-### Extend Volume Wizard
-
-This will open the Extend Volume Wizard. Click **Next** to begin the
-process.
-
-<img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/extend_1.png %}" alt="" />
-
-### Select the Volume you wish to Extend
-
-To add all available space to your **C:&#92;&#92;** drive (Disk 0) you can keep
+4. To add all available space to your **C:&#92;&#92;** drive (Disk 0) you can keep
 the default selections and press **Next**.
 
-<img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/extend_2.png %}" alt="" />
+   <img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/extend_2.png %}" alt="" />
 
-You will now see the **C:&#92;&#92;** drive expand to the maximum available space.
-To finalize the modifications click **Finish**.
+   You will now see the **C:&#92;&#92;** drive expand to the maximum available space.
 
-<img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/extend_3.png %}" alt="" />
+5. To finalize the modifications click **Finish**.
 
-### Verify Disk Space
+### Verify disk space
 
-You will now see the additional disk drive volume that you created. Close Computer Management and begin using the additional space that you
-have just created. You can verify that the Extend process worked
-correctly by loading the **Computer Manager** from the Server
+The additional disk drive volume is now displayed in Computer Management and is available to use.
+
+You can verify that the Extend process worked correctly by loading the **Computer Manager** from the Server
 Manager and checking the disk size for the **C:&#92;&#92;** drive in **Disk
 Management**.
-
-<img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/verify.png %}" alt="" />

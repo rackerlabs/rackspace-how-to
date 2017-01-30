@@ -1,6 +1,6 @@
 ---
 permalink: vyatta-vrouter-configure-an-interface-firewall/
-node_id: 4234
+audit_date:
 title: 'Vyatta vRouter: Configure an interface firewall'
 type: article
 created_date: '2014-09-11'

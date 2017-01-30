@@ -1,75 +1,119 @@
 ---
 permalink: upgrading-to-exchange-2016/
-node_id: 5068
+audit_date: '2016-10-27'
 title: Upgrading to Exchange 2016
 type: article
-created_date: '2015-12-16'
-created_by: Ronnie Canizales
-last_modified_date: '2016-02-25'
-last_modified_by: Stephanie Fillmon
+created_date: '2016-10-25'
+created_by: Aaron Medrano
+last_modified_date: '2016-10-27'
+last_modified_by: Nate Archer
 product: Microsoft Exchange
 product_url: exchange
 ---
 
-To have an Exchange Upgrade performed, you must contact the Cloud Office Internal Migrations team and work with them via ticket. After you create the ticket, the Migrations team provides you with a migration plan to upgrade your Exchange environment.
+This article provides instructions for upgrading your current Exchange environment to Exchange 2016 using a self-service upgrade tool.
 
-This article provides information about the upgrade from your current Exchange environment to Exchange 2016. Follow the steps in this article to ensure a successful migration to Exchange 2016.
+### Supported email clients for Exchange 2016
 
-**Note**: Migrations from Exchange 2007 to Exchange 2016 are not available. The Exchange 2007 domain must be upgraded to Exchange 2013 first.
+Only the following email clients can safely upgrade to Exchange 2016:
+
+- Outlook 2016
+- Outlook 2013
+- Outlook 2011 for Mac
+- Outlook 2010
+- Outlook 2007 SP3
+- Entourage 2008 EWS
+- Mac Mail
+
+**Note:** Outlook 2003, Outlook 2007, and Entourage 2004 are not supported with
+Exchange 2016. Users on Outlook 2003 or 2007 must upgrade to Outlook 2010 or later.
+
+### What is migrated
+
+Everything from your current Exchange environment is migrated, including the following:
+
+  - Exchange mailboxes
+  - Email data
+  - Contacts
+  - Calendar
+  - Tasks
+  - Notes
+  - Exchange contacts
+  - Distribution lists
+  - Resources
 
 ### Before migration
 
-Before migration, you should be aware of how the Exchange 2016 environment is different. You should also perform some actions to ensure a seamless migration.
+Before migrating to Exchange 2016, consider the following information and perform the following tasks.
 
 #### Back up data
 
-We do not anticipate any issues with the migration; however, we recommend that you back up your data before the migration. You can back up your data by performing a PST export using Outlook. Note that any corrupt data will not be migrated.
+Although we do not anticipate any issues with the migration, we recommend that you back up your data before the migration. You can back up your data by performing a PST export with Outlook. Note that any corrupt data is not migrated.
 
 #### Autodiscover
 
-Set up your Autodiscover DNS record for Exchange 2016. Features such as Automatic Outlook Configuration, Free/Busy Time, Out of Office, and Public Folders function only if this record is in place.
-
-Complete instructions for setting up your Autodiscover record are located in [Set up DNS records for Cloud Office email and Skype for Business](http://www.rackspace.com/knowledge_center/article/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
-
-#### Outlook Web Access
-
-The Outlook Web Access (OWA) tool will be available via the following links:
-
-- Rackspace unified login - [https://apps.rackspace.com](https://apps.rackspace.com/)
-- Direct login - [https://mex09.emailsrvr.com](https://mex08.emailsrvr.com/)
+Ensure that your Autodiscover DNS record points to Rackspace. For instructions on setting up a DNS record, see [Set up DNS records for Cloud Office email and Skype for Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business/).
 
 #### Public folders
 
 Exchange 2016 offers public folders on a hosted environment and has the following limitations:
 
 - There is a limit of 25 folders with a maximum size of 250 MB per folder (root folder included).
-- Exchange 2016 administrators must use the Control Panel to manage public folders.
-- Public folder administration (create, edit, move,  and so on) is disabled in Outlook for Exchange 2016 customers.
-- User permissions (such as granting read, edit, and delete access) is not available.
 
-**Note**: For a complete list of public folder limitations, review the migration plan provided by the Migrations team.
+- Exchange 2016 administrators must use the Admin Control Panel to manage public folders.
+
+- Public folder administration (create, edit, move, and so on) is disabled in Outlook for Exchange 2016 customers.
+
+- User permissions (such as granting read, edit, and delete access) is not available.
 
 #### Spam filtering
 
-The spam handling in Exchange 2016 is the same as Exchange 2013, and is different from Exchange 2007 and 2010. We are no longer using the quarantine manager for Exchange mailboxes, and any spam messages that are sent to users will be delivered to the junk/spam folder.
+The spam handling in Exchange 2016 is the same as Exchange 2013, and is different from Exchange 2007 and 2010. The quarantine manager is no longer used for Exchange mailboxes, and any spam messages that are sent to users are delivered to the junk/spam folder.
 
-The domain quarantine will still receive spam messages for other Exchange addresses (contacts, distribution lists, public folders, and resources). You can set the user's spam to be delivered to the domain quarantine, but only an administrator can access this quarantine manager.
+The domain quarantine still receives spam messages for other Exchange addresses (contacts, distribution lists, public folders, and resources). You can set the user's spam to be delivered to the domain quarantine, but only an administrator can access this quarantine manager.
 
-### After migration: Mail client and mobile device configuration
+#### Length of migration
 
-**Note**: Outlook 2003 and 2007 and Entourage 2004 are not supported with Exchange 2016. Users on Outlook 2003 or 2007 must be upgraded to Outlook 2010 or later.
+The following items affect the length of your migration:
 
-#### Autodiscover
+- Item count
+- Mailbox size
+- Total size of attachments
+- Number of mailboxes on the domain
+- Provisioning delays in our Exchange environment (see the [System Status Page](http://status.apps.rackspace.com/) for notice on this type of issue).
 
-After your migration is complete, an alert will appear indicating that Autodiscover is requesting to reconfigure your email profile. Select **Always Do This Option** , and then select **Allow**. The Exchange 2016 mailbox will begin to resynchronize.
+### Upgrade Exchange
 
-#### Manual configurations
+You can use the self-service tool to upgrade Exchange at any time. All users of your Exchange server must migrate during the upgrade. If you receive an error while using the tool, contact [Rackspace Support](https://www.rackspace.com/support).
 
-We recommend using Autodiscover to configure users. If a manual configuration is needed, visit the following link for our setup guides: [Setup Up Microsoft Exchange Email Clients and Mobile Devices](https://admin.rackspace.com/knowledge_center/article/setting-up-microsoft-exchange-email-clients-mobile-devices).
+1. Log in to [Rackspacemigrations.com](https://rackspacemigrations.com/Account/Login) with the following information:
 
-#### Rackspace Auto Configuration Tool (Outlook 2010 and Outlook 2013)
+   - Account number
+   - Admin ID
+   - Password
 
-Your users can download the Rackspace Auto Configuration Tool to set up Outlook for Rackspace Exchange. The tool requires only the user's email address and password to automatically configure Outlook.
+   The migration portal lists all of your domains that use Exchange services.
+
+2. Click the gear icon next to the domain that you want to upgrade and select **Create migration**.
+
+   <img src="{% asset_path exchange/upgrade-to-exchange-2016/exchange-upgrade-step-1.png %}" />
+
+3. On the Create Migration page, select a date and time to schedule the migration and then click **Next**.
+
+   <img src="{% asset_path exchange/upgrade-to-exchange-2016/exchange-upgrade-2.png %}" />
+
+4. On the confirmation page, verify the date and time, then click **Submit Migration**.
+
+After you submit the migration information, you are returned to the [Rackspace migrations home page](https://rackspacemigrations.com/).
+
+On the home page, you can see the status of your migration and see the Support ticket number used to track your migration. No automatic responses from this support ticket will be emailed to you, unless you log in to the Mail control panel and update the ticket.
+
+You can also reschedule or cancel the migration before the scheduled time by clicking the gear icon next to the domain you are migrating and selecting the appropriate command.
+
+  <img src="{% asset_path exchange/upgrade-to-exchange-2016/exchange-upgrade-5.png %}" />  
+
+When the migration completes you can log into the [Mail Control Panel](https://apps.rackspace.com/) and manage the mailboxes.
+
 
 ### Frequently asked questions
 
@@ -77,32 +121,32 @@ This section provides answers to questions that you might have about the Exchang
 
 #### Do I need to change my MX records?
 
-In most cases, you do not need to change your MX records because they should already be pointed to our environment. Our MX record details are located here in [Set up DNS records for Cloud Office email and Skype for Business](https://admin.rackspace.com/knowledge_center/article/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
+In most cases, you do not need to change your MX records because they should already be pointed to our environment. Our MX record details are located here in [Set up DNS records for Cloud Office email and Skype for Business](how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business/).
 
-#### Could we migrate a portion of our mailboxes?
+#### Can we migrate only some of our mailboxes?
 
 No. This type of migration requires all users to migrate at once. This is because our environment allows the domain to reside in one exchange environment.
 
 #### If Autodiscover is not set up, and I set it up now, will my users receive a prompt?
 
-The reconfiguration prompt will occur in the following situations:
+The reconfiguration prompt occurs in the following situations:
 
   - The user is using Outlook 2010 or 2013.
   - The user's profile was set up using Autodiscover.
-  - The Autodiscover CNAME points to **autodiscover.emailsrvr.com** and the profile was configured using Autodiscover._ _
+  - The Autodiscover CNAME points to **autodiscover.emailsrvr.com** and the profile was configured using Autodiscover.
 
 #### Is there any downtime?
 
-There is no downtime during the migration. Mail will be delivered without interruption. Users can send and receive email normally throughout the migration process.
+There is no downtime during the migration. Mail is delivered without interruption. Users can send and receive email normally throughout the migration process.
 
-#### How long will the migration take?
+#### How long does the migration take?
 
-Many factors affect the speed of the migration, so we cannot accurately predict how long the migration will take.
+Many factors affect the speed of the migration, so we cannot accurately predict how long the migration takes. For factors that affect the migration, see the “Length of migration” section.
 
-#### Will I need to reconfigure my mobile devices?
+#### Do I need to reconfigure my mobile devices?
 
-Yes, all mobile devices must be reconfigured. For all ActiveSync devices, you can either update the existing entries or remove the account and then add it again. Blackberry Enterprise Server 5 is not compatible with Exchange 2016. For Blackberry devices with software version 10.0 and later using ActiveSync, no wipe is necessary.
+Yes, all mobile devices must be reconfigured. For all ActiveSync devices, you can either update the existing entries or remove the account and then add it again. Blackberry Enterprise Server 5 is not compatible with Exchange 2016. For Blackberry devices with software version 10.0 and later using ActiveSync, no reconfiguration is necessary.
 
 #### Will I have access to my Admin Control Panel during the migration?
 
-Yes, but it is important that you do not make any changes to your domain. Changes made during the migration will cause issues.
+Yes, but it is important that you do not make any changes to your domain. Changes made during the migration cause issues.

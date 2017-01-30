@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-email-archiving-known-limitations/
-node_id: 4695
+audit_date:
 title: Rackspace Email Archiving known limitations
 type: article
 created_date: '2015-05-19'

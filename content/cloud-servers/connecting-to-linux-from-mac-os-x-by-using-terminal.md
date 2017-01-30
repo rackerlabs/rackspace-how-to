@@ -1,11 +1,11 @@
 ---
 permalink: connecting-to-linux-from-mac-os-x-by-using-terminal/
-node_id: 1225
-title: Connecting to Linux from Mac OS X by using Terminal
+audit_date:
+title: Connect to Linux from Mac OS X by using Terminal
 type: article
 created_date: '2011-10-06'
 created_by: Rose Contreras
-last_modified_date: '2015-12-31'
+last_modified_date: '2016-06-10'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -26,8 +26,6 @@ server for the first time. If you're connecting as a non-root user,
 replace *root* in the instructions with your username.
 
 1.  Go to **Applications > Utilities**, and open **Terminal**.
-
-    <img src="{% asset_path cloud-servers/connecting-to-linux-from-mac-os-x-by-using-terminal/1-FindTerm_1_0.png %}" width="550" />
 
     A terminal window interface is displayed:
 

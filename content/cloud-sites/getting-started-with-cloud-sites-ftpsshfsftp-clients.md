@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-sites-ftpsshfsftp-clients/
-node_id: 580
+audit_date:
 title: 'Getting Started With Cloud Sites, FTP/SSHFS/FTP Clients'
 type: article
 created_date: '2011-03-16'

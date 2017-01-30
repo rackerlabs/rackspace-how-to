@@ -1,12 +1,12 @@
 ---
 permalink: working-with-checks/
-node_id: 4778
-title: Working with checks
+audit_date:
+title: Understand and work with checks
 type: article
 created_date: '2015-08-05'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -104,7 +104,6 @@ To create a new check, complete the following steps:
     create the check.
 3.  In the **Monitoring Checks** section of the entity details page,
     click **Create Check**.
-    <img src="{% asset_path rackspace-intelligence/working-with-checks/intelligence-checks-create-check.png %}" width="655" height="127" />
 4.  In the popup dialog box, click the **Check Type** box and select the
     appropriate check type from the list.
 5.  In the **Check Name** box, type a name for the check.

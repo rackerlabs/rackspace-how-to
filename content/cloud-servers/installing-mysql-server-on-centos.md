@@ -1,94 +1,92 @@
 ---
 permalink: installing-mysql-server-on-centos/
-node_id: 1164
-title: Installing MySQL Server on CentOS
+audit_date: '2016-06-27'
+title: Install a MySQL server on CentOS
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2016-01-15'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-06-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Overview
-
-MySQL is an open-source relational database. For those unfamiliar with
-these terms, a database is where an application keeps its data, and
-relational refers to how the data is organized and accessed within the
-database. SQL refers to the language used by application queries to
-retrieve and store data: Structured Query Language.
-
-MySQL is free and widely used, meaning that you can find a large amount
-of application support, tools, and community help for it. MySQL is a
-safe choice if you know that you need a database but don't know much
-about all of the available the options.
+MySQL is an open-source relational database that is free and widely used. It
+is a good choice if you know that you need a database but don't know much
+about all of the available options.
 
 This article describes a basic installation of a MySQL database server
-on CentOS Linux, just enough to get you started. Remember that you might
-need to install other packages to let applications use MySQL, like
-extensions for PHP. Check your application documentation for details.
+on CentOS Linux. You might need to install other packages to let applications
+use MySQL, like extensions for PHP. Check your application documentation for
+details.
 
 **Note:** CentOS 7 has replaced MySQL with MariaDB. To reflect this,
 instructions for MariaDB procedures are included in this article.
 
-### Installing the database application
+  - Install the database application
+  - Start and stop the database service
+  - Start the mysql shell
+  - Set the root password
+  - View users
+  - Create a database
+  - Manage users and permissions
+  - Summary
 
-Follow the steps below to install the database core server.
+### Install the database server
 
-### MySQL installation
+Follow the steps in this section to install the core database server.
 
-Install the MySQL server through the CentOS package manager by running
-the following commands at a command prompt:
+#### Install MySQL
 
-    sudo yum install mysql-server
-    sudo /sbin/service mysqld start
+1. Install the MySQL database through the CentOS package manager (yum) by
+   running the following commands at a command prompt:
 
-Then, run the following command:
+        sudo yum install mysql-server
+        sudo /sbin/service mysqld start
 
-    sudo /usr/bin/mysql_secure_installation
+2. Run the following command:
 
-Press enter to give no password for root when that program asks for it.
-To apply some reasonable security to your new MySQL server answer "yes"
-to all the questions that the program asks. In order, those questions
-enable you set the root password, remove anonymous users, disable remote
-root logins, delete the test database that the installer included, and
-then reload the privileges so that your changes will take effect.
+        sudo /usr/bin/mysql_secure_installation
 
-### MariaDB installation
+3. Press **Enter** to give no password for root when prompted for it.
+
+4. To apply some reasonable security to your new MySQL server answer **yes**
+   to all the prompts. In order, those prompts enable you set the root
+   password, remove anonymous users, disable remote root logins, delete the
+   test database that the installer included, and then reload the privileges
+   so that your changes will take effect.
+
+#### Install MariaDB
+
+Install the MariaDB server through the CentOS package manager (yum) by running
+the following command at a command prompt:
 
     sudo yum install mariadb-server mariadb
 
-### Allow remote access
+#### Allow remote access
 
 If you have iptables enabled and want to connect to the MySQL database
-from another machine, you need to open a port in your server's firewall
+from another computer, you must open a port in your server's firewall
 (the default port is 3306). You don't need to do this if the application
-using MySQL is running on the same machine.
+that uses MySQL is running on the same server.
 
-If you do need to open a port, you can use the following rules in
-iptables to open port 3306:
+If you need to open a port, add the following rules in iptables to open
+port 3306:
 
-    -I INPUT -p tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
-    -I OUTPUT -p tcp --sport 3306 -m state --state ESTABLISHED -j ACCEPT
+    iptables -I INPUT -p tcp --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
+    iptables -I OUTPUT -p tcp --sport 3306 -m state --state ESTABLISHED -j ACCEPT
 
-**Note:** The `iptables` command was deliberately left out of the
-iptables rules in the instructions above. Some people using
-distributions that do not have their own iptables service might instead
-have a rules file they can import using `iptables-restore`. The format
-of the lines in that file would be similar to the format used above:
-iptables options without the `iptables` command in front of them. For
-this reason, the instructions in this article represent a compromise. It
-is easy to paste the lines into a rules file, and they can be used with
-the `iptables` command instead.
+**Note:** If you edit the iptables rules file rather than using the command
+line to add rules, omit the `iptables` command at the beginning of each line
+when you add them to the file.
 
-### Starting and stopping the database service
+### Start and stop the database service
 
-When you've completed the installation, you can start the service by
-using the commands shown below. If the system is already started, you
-will see a message telling you that the service is already running.
+After the installation is complete, you can start the database service by
+using the commands in this section. If the system is already started, a message
+informs you that the service is already running.
 
-### Starting and stopping MySQL
+#### Start and stop MySQL
 
 Use the following command to start MySQL:
 
@@ -98,7 +96,7 @@ Use the following command to stop MySQL:
 
     sudo /sbin/service mysqld stop
 
-### Starting and stopping MariaDB
+#### Start and stop MariaDB
 
 Use the following command to start MariaDB:
 
@@ -108,92 +106,80 @@ Use the following command to stop MariaDB:
 
     sudo systemctl stop mariadb.service
 
-### Launching at reboot
+### Launch at reboot
 
 To ensure that the database server launches after a reboot, you must
 enable the chkconfig utility. Use the following commands to do this.
 
-**Enable chkconfig on MySQL**
+Enable chkconfig on MySQL
 
     sudo chkconfig mysqld on
 
-**Enable chkconfig on MariaDB**
+Enable chkconfig on MariaDB
 
     sudo systemctl enable mariadb.service
 
-### The MySQL shell
+### Start the mysql shell
 
 There is more than one way to work with a MySQL server, but this article
-focuses on the most basic and compatible approach: The `mysql` shell.
-At the command prompt, run the following command to launch the `mysql`
+focuses on the most basic and compatible approach: the `mysql` shell.
+
+1. At the command prompt, run the following command to launch the `mysql`
 shell and enter it as the root user:
 
-    /usr/bin/mysql -u root -p
+        /usr/bin/mysql -u root -p
 
-When you're prompted for a password, enter the one that you set at
-installation or, if you haven't set one, just press enter to submit no
-password. The following `mysql` shell prompt should appear:
+2. When you're prompted for a password, enter the one that you set at
+installation or, if you haven't set one, press **Enter** to submit no
+password. 
 
-    mysql>
+  The following `mysql` shell prompt should appear:
+
+        mysql>
 
 ### Set the root password
 
-Since you have just installed your MySQL database server, the root
-account within MySQL has no password set yet. If you are logged into the
-database server you should change that by running the following command:
+Because you have just installed the MySQL database server, the root
+account within MySQL has no password set yet. If you are logged in to the
+database server, set the root password by running the following command:
 
     /usr/bin/mysqladmin -u root password 'new-password'
 
-If you are not logged into the database server you can remotely set the
+If you are not logged in to the database server you can remotely set the
 root password by specifying the hostname of your database server:
 
     /usr/bin/mysqladmin -u root --password='new-password' -h hostname-of-your-server 'new-password'
 
-**Note:** This article shows SQL commands in all capitals, but you can
+**Note:** The rest of this article shows SQL commands in all capitals, but you can
 also type them in lowercase. The commands are shown capitalized by
-convention, to make them stand out from field names and other data
-that's being manipulated.
+convention, to make them stand out from field names and other data.
 
-### Viewing users
+### View users
 
-As mentioned in the preceding section, MySQL stores the user information
-in its own database. The name of the database is "mysql". Inside that
-database, the user information is in a "table", a dataset, named "User".
-If you want to see what users are set up in MySQL table, or dataset,
-named "user".
+MySQL stores user information in its own database. The name of the database
+is **mysql**. Inside that database, the user information is in a table, a
+dataset, named **user**. If you want to see what users are set up in the
+MySQL user table, run the following command:
 
     SELECT User, Host, Password FROM mysql.user;
 
-The list below lists the descriptions for the parts of that command:
+The following list describes the parts of that command:
 
--   **SELECT** - tells MySQL that you are asking for data.
+-   **SELECT** tells MySQL that you are asking for data.
 
--   **User, Host, Password** - tells MySQL what fields you want it to
+-   **User, Host, Password** tells MySQL what fields you want it to
     look in. Fields are categories for the data in a table. In this
     case, you are looking for the username, the host associated with the
     username, and the encrypted password entry.
--   **FROM mysql.user** - tells MySQL to get the data from the mysql
-    database and the user table.
--   **;** - The command ends with a semicolon.
 
-### Ending SQL queries with a semicolon
+-   **FROM mysql.user** tells MySQL to get the data from the **mysql**
+    database and the **user** table.
+-   **;** (a semicolon) ends the command.
 
-All SQL queries end in a semicolon. MySQL does not process a query until
-you type a semicolon.
+**Note:** All SQL queries end in a semicolon. MySQL does not process a query
+until you type a semicolon.
 
-This means that you can break up queries onto multiple lines to make
-them easier to read. For example, the preceding command also works if
-you enter it on multiple lines in the `mysql` shell, as follows:
-
-    mysql> SELECT User, Host, Password
-        -> FROM mysql.user;
-
-When you press enter after the Password part, you get a new line, so you
-can keep typing. The `>` symbol indicates that you are still in the
-middle of a statement. You can type a semicolon by itself to end a
-command if you forget to type it on the same line as the command.
-
-### User hosts
+#### User hosts
 
 Following is example output for the preceding query:
 
@@ -208,52 +194,48 @@ Following is example output for the preceding query:
     +------------------+-----------+------------------------------------------+
 
 Users are associated with a host, specifically the host to which they
-connect. The "root" user in this example is defined for localhost, for
-the IP address of localhost, and the hostname of the server ("demohost"
+connect. The root user in this example is defined for **localhost**, for
+the IP address of **localhost**, and the hostname of the server (**demohost**
 in this example). You usually need to set a user for only one host, the
 one from which you typically connect.
 
-If you're running your application on the same machine as the MySQL
-server the host it connects to by default is "localhost". Any new users
-that you create must have "localhost" in their "host" field.
+If you're running your application on the same computer as the MySQL
+server, the host that it connects to by default is **localhost**. Any new users
+that you create must have **localhost** in their **host** field.
 
-If your application connects remotely, the "host" entry that MySQL looks
-for is the IP address or DNS hostname of the remote machine (the one
+If your application connects remotely, the **host** entry that MySQL looks
+for is the IP address or DNS hostname of the remote computer (the one
 from which the client is coming).
 
 A special value for the host is `%`, as you can see in the preceding
 output for the blank, or anonymous, user (see the following section).
-The `%` symbol is a wildcard that applies to any host value. You
-usually don't want to use that because it's more secure to limit access
-specifically to trusted hosts.
+The `%` symbol is a wildcard that applies to any host value.
 
-### Anonymous users
+#### Anonymous users
 
 In the example output, one entry has a host value but no username or
-password. That's an "anonymous user". When a client connects with no
-username specified, it's trying to connect as an "anonymous" user.
+password. That's an *anonymous user*. When a client connects with no
+username specified, it's trying to connect as an anonymous user.
 
 You usually don't want any anonymous users, but some MySQL installations
 include one by default. If you see one, you should either delete the
 user (refer to the username with empty quotes, like '') or set a
-password for it. Both tasks are covered later in this series of
-articles.
+password for it.
 
 ### Create a database
 
-There is a difference between database server and an actual database,
+There is a difference between a *database server* and a *database*,
 even though those terms are often used interchangeably. MySQL is a
-database server, meaning that it keeps track of databases and controls
-access to them. An actual database is where all the data goes is stored,
-and it is the database that applications are trying to access when they
-interact with MySQL.
+database server, meaning that it tracks databases and controls
+access to them. The database stores the data, and it is the database that
+applications are trying to access when they interact with MySQL.
 
 Some applications create a database as part of their setup process, but
 others require you to create a database and tell the application about
-it. Fortunately, creating a database is simple.
+it.
 
 To create a database, log in to the `mysql` shell and run the
-following command, replacing demodb with the name of the database that
+following command, replacing `demodb` with the name of the database that
 you want to create:
 
     CREATE DATABASE demodb;
@@ -272,18 +254,22 @@ output:
     +--------------------+
     3 rows in set (0.00 sec)
 
-### Adding users and permissions
+### Manage users and privileges
+Use the instructions in this section to add users for the database and grant
+and revoke privileges.
+
+#### Add users and privileges
 
 When applications connect to the database using the root user, they
 usually have more privileges than they need. You can create a new user
 that applications can use to connect to the new database. In the
-following example, a user named demouser is created.
+following example, a user named **demouser** is created.
 
 To create a new user, run the following command in the `mysql` shell:
 
     CREATE USER 'demouser'@'localhost' IDENTIFIED BY 'demopassword';
 
-You can verify that the user was created by running that "SELECT" query
+You can verify that the user was created by running a SELECT query
 again:
 
     SELECT User, Host, Password FROM mysql.user;
@@ -296,44 +282,45 @@ again:
     | demouser | localhost | 0756A562377EDF6ED3AC45A00B356AAE6D3C6BB6 |
     +----------+-----------+------------------------------------------+
 
-### Grant database user permissions
+#### Grant database user privileges
 
 Right after you create a new user, it has no privileges. The user can be
 used to log in to MySQL, but it can't be used to make any database
-changes. Give the user full permissions for your new database by running
+changes.
+
+1. Give the user full privileges for your new database by running
 the following command:
 
-    GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost;
+        GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost;
 
-Then, flush the privileges to make the change take effect.
+2. Flush the privileges to make the change take effect.
 
-    FLUSH PRIVILEGES;
+        FLUSH PRIVILEGES;
 
-To verify that the privileges were set, run the following command:
+3. To verify that the privileges were set, run the following command:
 
-    SHOW GRANTS FOR 'demouser'@'localhost';
+        SHOW GRANTS FOR 'demouser'@'localhost';
 
-MySQL returns the commands needed to reproduce that user's permissions
-if you were to rebuild the server. The "USAGE on \*.\*" part basically
-means that the user gets no privileges on anything by default. That
-command is overridden by the second command, which is the grant you ran
-for the new database.
+   MySQL returns the commands needed to reproduce that user's privileges
+   if you were to rebuild the server. The `USAGE on \*.\*` part 
+   means that the user gets no privileges on anything by default. That
+   command is overridden by the second command, which is the grant you ran
+   for the new database.
 
-    +-----------------------------------------------------------------------------------------------------------------+
-    | Grants for demouser@localhost                                                                                   |
-    +-----------------------------------------------------------------------------------------------------------------+
-    | GRANT USAGE ON *.* TO 'demouser'@'localhost' IDENTIFIED BY PASSWORD '*0756A562377EDF6ED3AC45A00B356AAE6D3C6BB6' |
-    | GRANT ALL PRIVILEGES ON `demodb`.* TO 'demouser'@'localhost'                                                    |
-    +-----------------------------------------------------------------------------------------------------------------+
-    2 rows in set (0.00 sec)
+        +-----------------------------------------------------------------------------------------------------------------+
+        | Grants for demouser@localhost                                                                                   |
+        +-----------------------------------------------------------------------------------------------------------------+
+        | GRANT USAGE ON *.* TO 'demouser'@'localhost' IDENTIFIED BY PASSWORD '*0756A562377EDF6ED3AC45A00B356AAE6D3C6BB6' |
+        | GRANT ALL PRIVILEGES ON `demodb`.* TO 'demouser'@'localhost'                                                    |
+        +-----------------------------------------------------------------------------------------------------------------+
+        2 rows in set (0.00 sec)
 
-### Revoking privileges
+#### Revoke privileges
 
-Sometimes you might need to revoke (remove) privileges form a user, for
-different reason. For example: you were granting `ALL` privileges to
-'demouser'@'localhost', but by accident (can happen to the best of us
-any time!) instead of granting them only on the demodb database, you
-granted them to all other databases too:
+Sometimes you might need to revoke (remove) privileges from a user. For
+example: suppose that you were granting `ALL` privileges to
+'demouser'@'localhost', but you accidentally granted privileges to all other
+databases, too:
 
     +-----------------------------------------------------------------------------------------------------------------+
     | Grants for demouser@localhost                                                                                   |
@@ -343,9 +330,8 @@ granted them to all other databases too:
     +-----------------------------------------------------------------------------------------------------------------+
     2 rows in set (0.00 sec)
 
-After realizing your mistake, you decided to do something to correct it.
-The easiest way is to use a `REVOKE` statement, followed by `GRANT`
-statement to apply correct privileges.
+To correct the mistake, you can use a `REVOKE` statement, followed by `GRANT`
+statement to apply the correct privileges.
 
     REVOKE ALL ON *.* FROM demouser@localhost;
     GRANT ALL PRIVILEGES ON demodb.* to demouser@localhost;
@@ -355,11 +341,11 @@ statement to apply correct privileges.
     | Grants for demouser@localhost                                                                                   |
     +-----------------------------------------------------------------------------------------------------------------+
     | GRANT USAGE ON *.* TO 'demouser'@'localhost' IDENTIFIED BY PASSWORD '*0756A562377EDF6ED3AC45A00B356AAE6D3C6BB6' |
-    | GRANT ALL PRIVILEGES ON *.* TO 'demouser'@'localhost'                                                           |
+    | GRANT ALL PRIVILEGES ON 'demodb'TO 'demouser'@'localhost'                                                           |
     +-----------------------------------------------------------------------------------------------------------------+
     2 rows in set (0.00 sec)
 
-Now your user has correct permission, and therefore your database server
+Now your user has the correct privileges, and therefore your database server
 is slightly more secure (granting privileges like `ALL on *.*` is deemed
 as a very bad practice). You should also read official MySQL
 documentation regarding possible privilege choices, to grant only those
@@ -373,4 +359,4 @@ learn more.
 
 ### Next section
 
-[Configuring MySQL server on CentOS](/how-to/configuring-mysql-server-on-centos)
+[Configure MySQL server on CentOS](/how-to/configuring-mysql-server-on-centos)

@@ -1,6 +1,6 @@
 ---
 permalink: create-an-image-of-a-server-and-restore-a-server-from-a-saved-image/
-node_id: 1460
+audit_date:
 title: Create an image of a server and restore a server from a saved image
 type: article
 created_date: '2012-07-15'

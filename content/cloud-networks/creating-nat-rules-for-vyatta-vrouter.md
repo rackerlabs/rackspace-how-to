@@ -1,6 +1,6 @@
 ---
 permalink: creating-nat-rules-for-vyatta-vrouter/
-node_id: 4499
+audit_date:
 title: Creating NAT rules for Vyatta vRouter
 type: article
 created_date: '2015-01-26'

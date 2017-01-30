@@ -1,12 +1,12 @@
 ---
 permalink: definition-of-personally-identifiable-information-pii/
-node_id: 1381
+audit_date:
 title: Definition of Personally Identifiable Information (PII)
 type: article
 created_date: '2012-04-11'
 created_by: Rackspace Support
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-16'
+last_modified_by: Kelly Holcomb
 product: undefined
 product_url: undefined
 ---
@@ -16,7 +16,7 @@ sensitivity of information that is being stored, processed, or
 transmitted by the application is important. Personally Identifiable
 Information (PII) must be handled with extra security. PII is data that
 is considered personal in nature and could be used to compromise the
-privacy of an individual or used for identity theft. Extra care should
+privacy of an individual or for identity theft. Extra care should
 be taken with servers that contain PII. To address this specific need,
 some Rackspace content discusses PII.
 
@@ -38,8 +38,8 @@ in the Gramm-Leach-Bliley Act found at 15 USC Subchapter 1, &sect;6809(4),
 and **(iii)** "protected health information" as defined in the Health
 Insurance Portability and Accountability Act found at 45 CFR &sect;160.103.
 
-### Rackspace How-To Articles That Reference PII
+### Rackspace How-To articles that reference PII
 
--   [SSL Termination on Cloud Load Balancers](/how-to/cloud-load-balancers-faq)
+-   [Load Balancers FAQ: SSL termination](/how-to/cloud-load-balancers-faq)
 -   [Picking the Right Option for Hosted Storage](/white-paper/picking-the-right-option-for-hosted-storage)
 -   [Cloud: Vision to Reality](/white-paper/cloud-vision-to-reality)

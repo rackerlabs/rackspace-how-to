@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-account-invoice/
-node_id: 4218
+audit_date:
 title: Rackspace account invoice
 type: article
 created_date: '2014-09-01'
 created_by: Kenny Johnston
-last_modified_date: '2015-08-10'
-last_modified_by: Nate Archer
+last_modified_date: '2016-09-12'
+last_modified_by: Kyle Laffoon
 product: undefined
 product_url: undefined
 ---
@@ -16,18 +16,18 @@ information, payment information, tax information, and summaries of your
 service, promotions, and discounts. This article provides a detailed
 description of each page and field in your PDF or CSV invoice.
 
+**Note:** For information about a detailed invoice that shows an itemized, per-service, per-device overview of your billing charges, see [Detailed invoices overview](/how-to/detailed-invoices-overview/).
+
 ### Recent changes
 
 The invoice format has been improved. The information on your invoice is
 now better summarized to eliminate an excessively long invoice. Your
 invoice now also provides a **Service Summary**.
 
-### Billing and account information
+### Account and billing information
 
 The first page of your invoice contains a detailed overview of your
 account and billing information.
-
-<img src="{% asset_path general/rackspace-account-invoice/832-2.png %}" width="416" height="128" />
 
 ### Account summary
 
@@ -35,11 +35,11 @@ The bottom portion of the first page of your invoice includes the
 following information:
 
 -   **Previous Balance** - The amount billed before current invoice
--   **Payments** - The total of payments received during your last bill
+-   **Payments** - The total of payments received during your last billing
     cycle
 -   **Adjustments** - The total of any debits or credits from your last
     billing cycle
--   **Balance Forward** - The unpaid charges from your last bill cycle
+-   **Balance Forward** - The unpaid charges from your last billing cycle
 -   **Current Invoice Charges** - The sum of all charges incurred since
     the prior bill
 -   **Current Invoice Taxes** - Taxes applied based on net charges
@@ -48,7 +48,7 @@ following information:
 -   **Total Amount Due** - The total of your Current Invoice Charges
     plus any Balance Forward amount
 -   **Payment Terms** - Indicates when your payment is due
--   **Remit Section** (if applicable) - Please detach and send with your
+-   **Remit Section** (if applicable) - Section to detach and send with your
     payment
 
 <img src="{% asset_path general/rackspace-account-invoice/832-2a.png %}" width="688" height="136" />
@@ -75,14 +75,12 @@ and other charges, and is organized as follows:
 
 <img src="{% asset_path general/rackspace-account-invoice/832-3.png %}" width="684" height="591" />
 
-Although most of the service summary items are self-explanatory, there
-are two services that warrant additional description:
+Most of the service summary items are self-explanatory, but two services warrant additional description:
 
 -   **Cloud Servers** - The Cloud Servers service line includes all
-    Cloud Servers flavor classes, for example First Gen, Next Gen, and
-    OnMetal
+    Cloud Servers flavor classes, for example, OnMetal.
 -   **Cloud Bandwidth** - The Cloud Bandwidth service line includes both
-    Public and CDN Bandwidth
+    Public and CDN Bandwidth.
 
 ### Adjustment summary
 
@@ -95,8 +93,8 @@ occurred during the billing period.
     adjustment
 -   **Adjustment Date** - The date that the adjustment was processed by
     Rackspace
--   **Description** - Any details of the adjustment
--   **Net Amount** - The pre-tax amount of the adjustment
+-   **Description** - Any details about the adjustment
+-   **Net Amount** - The pretax amount of the adjustment
 -   **Taxes** - The calculated tax amount based on the net amount of the
     adjustment
 -   **Total Amount** - The sum of Net Amount and Taxes for an individual
@@ -118,7 +116,7 @@ discounts for the billing period.
 
 ### Tax summary
 
-The **Tax Description** explains, in detail, the taxes being applied to
+The **Tax Summary** section explains, in detail, the taxes being applied to
 your bill.
 
 <img src="{% asset_path general/rackspace-account-invoice/taxsummary.png %}" width="731" height="198" />
@@ -137,16 +135,16 @@ taxable (T) and non-taxable charges for the given billing period.
 
 The CSV document shows a detailed view of your daily usage activity that
 occurred during the course of your billing cycle. Each row contains a
-daily usage item and an associated charge. It also shows a breakdown of
+daily usage item and an associated charge. It also shows details of
 your charges in three different views. For example:
 
 -   To see charges summarized across the entire billing cycle related to
-    a given resource, you can create a PivotTable on the RES_ID column
+    a given resource, you can create a PivotTable on the RES_ID column.
 -   To see charges summarized across the billing cycle related to a
     given service, you can create a PivotTable on the SERVICE_TYPE
-    column
+    column.
 -   To see charges summarized across the billing cycle related to a
-    given data center, you can create a PivotTable on the DC_ID column
+    given data center, you can create a PivotTable on the DC_ID column.
 
 ### CSV column description
 
@@ -173,6 +171,6 @@ your charges in three different views. For example:
 -   **RES_ID** - Unique resource ID
 -   **RES_NAME** - Customer-provided resource name
 -   **ATTRIBUTE 1** - Resource attribute; for Cloud Servers, this
-    provides the Flavor Name
+    value is the Flavor Name
 -   **ATTRIBUTE 2** - Resource attribute; for Cloud Servers, this
-    provides the Option Name
+    values is the Option Name

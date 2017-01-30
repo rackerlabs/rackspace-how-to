@@ -1,12 +1,12 @@
 ---
 permalink: change-dns-to-enable-rackspace-cdn/
-node_id: 4565
+audit_date: 
 title: Change DNS to enable Rackspace CDN
 type: article
 created_date: '2015-02-12'
 created_by: Megan Meza
-last_modified_date: '2016-01-25'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-06-01'
+last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
@@ -15,20 +15,17 @@ After you create your CDN service, you must activate it by pointing the DNS reco
 
 ### Get your CDN URL
 
-1\. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
-2\. In the top navigation bar, click **Storage** and then select **CDN**.
+2. In the top navigation bar, click **Storage** and then select **CDN**.
 
-3\. In the list of services, click the service for which you want to activate the CDN.
+3. In the list of services, click the service for which you want to activate the CDN.
 
-4\. On the **CDN Service** page, look at the **Domains** section. Click on **Domain Not Configured** under **Status**.
+4. On the **CDN Service** page, in the **Domains** section, click on **Domain Not Configured** under **Status**.
 
-<img src="{% asset_path rackspace-cdn/change-dns-to-enable-rackspace-cdn/Screen%20Shot%202015-12-17%20at%209.22.50%20AM.png %}" width="643" height="441" alt="" border="1"  />
+5. Use the URL and the instructions in the box that opens, which is similar to the following figure, to configure your service.
 
-Use the URL and the instructions in the box that opens, which is similar to the following figure, to configure your service.
-
-<img src="{% asset_path rackspace-cdn/change-dns-to-enable-rackspace-cdn/Screen%20Shot%202015-12-16%20at%204.56.08%20PM.png %}" width="531" height="272" alt="" border="1"  />
-
+   <img src="{% asset_path rackspace-cdn/change-dns-to-enable-rackspace-cdn/Screen%20Shot%202015-12-16%20at%204.56.08%20PM.png %}" width="531" height="272" alt="" border="1"  />
 
 ### Create a CNAME record with your DNS provider
 

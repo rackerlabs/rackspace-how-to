@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-operational-limits/
-node_id: 3151
+audit_date:
 title: RackConnect v2.0 operational limits
 type: article
 created_date: '2012-10-30'
@@ -13,9 +13,7 @@ product_url: rackconnect
 
 **Applies to**: RackConnect v2.0
 
-This article details the recommended RackConnect operational limits to use when building multiple cloud servers through the Cloud Servers API.
-
-These limits are guidelines and might not match what is possible in your environment. The following variables can affect the limits for your environment:
+This article describes the recommended RackConnect operational limits to use when building multiple cloud servers through the Cloud Servers API. These limits are guidelines and might not match what is possible in your environment. The following variables can affect the limits for your environment:
 
 -   The number of RackConnect network policies that are active in your environment
 -   The type of network devices that you are using with RackConnect
@@ -64,5 +62,5 @@ Potential time to build 100 (1 GB) Windows cloud servers (bursting 50 at a time)
 For more information about using the available APIs, see the following documentation:
 
 -   [Cloud Servers API documentation](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/)
--   [The RackConnect v2.0 API](/how-to/the-rackconnect-v20-api)
+-   [RackConnect v2.0 API](/how-to/the-rackconnect-v20-api)
 -   [Programmatically determine the RackConnect v2.0 automation status of your cloud servers](/how-to/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud)

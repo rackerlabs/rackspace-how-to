@@ -1,19 +1,15 @@
 ---
 permalink: rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console/
-node_id: 1109
+audit_date:
 title: Rackspace Cloud Essentials - Checking a server's SSH host fingerprint with the web console
 type: article
 created_date: '2011-05-31'
 created_by: Jered Heeschen
-last_modified_date: '2016-01-04'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-07-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
-
-### Previous section
-
-[Create a Cloud Server](/how-to/create-a-cloud-server)
 
 One of the fundamentals of [SSH](/how-to/connecting-to-linux-from-windows-by-using-putty)
 is that it uses a "fingerprint" generated using a server's unique "host
@@ -268,6 +264,4 @@ check you can run through easily when you connect from a new machine.
 Next we are going to look at the the [basics of security in a Linux system](/how-to/basic-cloud-server-security),
 adding to what we learned about SSH connections and host keys.
 
-### Next section
-
-[Basics of security in a Linux system](/how-to/basic-cloud-server-security)
+**Next section:** [Basics of security in a Linux system](/how-to/basic-cloud-server-security)

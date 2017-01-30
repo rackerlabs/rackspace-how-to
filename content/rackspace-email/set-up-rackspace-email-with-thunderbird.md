@@ -1,6 +1,6 @@
 ---
 permalink: set-up-rackspace-email-with-thunderbird/
-node_id: 4070
+audit_date:
 title: Set up Rackspace Email with Thunderbird
 type: article
 created_date: '2014-05-20'

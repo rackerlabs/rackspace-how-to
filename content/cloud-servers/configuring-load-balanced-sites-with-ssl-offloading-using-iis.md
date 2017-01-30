@@ -1,12 +1,12 @@
 ---
 permalink: configuring-load-balanced-sites-with-ssl-offloading-using-iis/
-node_id: 3229
-title: Configuring Load Balanced Sites with SSL offloading using IIS
+audit_date:
+title: Configure Load Balanced Sites with SSL offloading using IIS
 type: article
 created_date: '2012-12-03'
 created_by: Rae D. Cabello
-last_modified_date: '2013-08-02'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-06-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -27,8 +27,6 @@ make sure it is functioning correctly.
 allowing secure and insecure traffic and using the default HTTPS port 443. Then fill in the
 certificate information:
 
-  <img src="{% asset_path cloud-servers/configuring-load-balanced-sites-with-ssl-offloading-using-iis/load-balanced-sites-IIS.png %}" width="444" height="438" />
-
 ### Create a Conditional Redirect
 
 1. IIS 7 does not support conditional redirects out of the box. You will
@@ -45,20 +43,18 @@ For this example, we are going to use rewrite on the Site level. Insert
 the following XML into your **web.config** file in the system.webServer
 section:
 
-    ```
-<rewrite>
-    <globalRules>
-<rule name="HTTPS Redirect" enabled="true" stopProcessing="true">
-    <match url="(.*)" />
-<conditions>
-<add input="{HTTP_X_FORWARDED_PROTO}" pattern="https" negate="true" />
-<add input="{SERVER_PORT}" pattern="8080" negate="true" />
-    </conditions>
-<action type="Redirect" url="https://{HTTP_HOST}/{R:1}" />
-</rule>
-    </globalRules>
-</rewrite>
-    ```
+        <rewrite>
+            <globalRules>
+        <rule name="HTTPS Redirect" enabled="true" stopProcessing="true">
+            <match url="(.*)" />
+        <conditions>
+        <add input="{HTTP_X_FORWARDED_PROTO}" pattern="https" negate="true" />
+        <add input="{SERVER_PORT}" pattern="8080" negate="true" />
+            </conditions>
+        <action type="Redirect" url="https://{HTTP_HOST}/{R:1}" />
+        </rule>
+            </globalRules>
+        </rewrite>
 
 4. In addition to adding this rule, you will need to add a binding to
 the site for port 8080. This will allow for monitoring services to test
@@ -86,8 +82,4 @@ hosting multiple sites on the server, you will need to give the server
 its own DNS name (i.e. **web1.customerdomain.com**). Use this domain name
 instead of the IP address and make sure to designate port 8080.
 
-  <img src="{% asset_path cloud-servers/configuring-load-balanced-sites-with-ssl-offloading-using-iis/load-balanced-sites-iis-2.png %}" width="591" height="167" />
-
-6. Click **Create Check** to confirm your entries
-
-  <img src="{% asset_path cloud-servers/configuring-load-balanced-sites-with-ssl-offloading-using-iis/load-balanced-sites-iis-3.png %}" width="354" height="218" />
+6. Click **Create Check** to confirm your entries.

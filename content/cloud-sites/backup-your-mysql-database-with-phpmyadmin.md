@@ -1,12 +1,12 @@
 ---
 permalink: backup-your-mysql-database-with-phpmyadmin/
-node_id: 661
+audit_date:
 title: Backup your MySQL database with phpMyAdmin
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-12'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-14'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -15,23 +15,18 @@ product_url: cloud-sites
 
 1. Log in to the [online manager (phpMyAdmin)](/how-to/rackspace-cloud-sites-essentials-phpmyadmin-database-management-interface).
 
-2. To view information, click on a database or table in the left frame
-   as shown in the following figure:
+2. To view information, click on a database or table in the left frame.
 
-   <img src="{% asset_path cloud-sites/backup-your-mysql-database-with-phpmyadmin/phpmyadmin-dbs.png %}" alt="" />
+3. To export the database to a backup file, click **Export**.
 
-3. To export the database to a backup file, click **Export**:
-
-   <img src="{% asset_path cloud-sites/backup-your-mysql-database-with-phpmyadmin/phpmyadmin-export.png %}" alt="phpMyAdmin Export tab" />
 
 4. To save the backup file to your system, click **Save as
    file**.
 
    When you save the file, you can change the name of the backup file and the
    compression method, or use the defaults. Compression reduces the size of the backup file.
-   The recommended compression method is *gzipped*:
+   The recommended compression method is *gzipped*.
 
-   <img src="{% asset_path cloud-sites/backup-your-mysql-database-with-phpmyadmin/phpmyadmin-saveasfile.png %}" alt="" />
 
 5. To start the backup process, click **Go**.
 

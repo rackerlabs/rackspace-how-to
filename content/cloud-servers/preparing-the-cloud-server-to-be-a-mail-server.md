@@ -1,7 +1,7 @@
 ---
 permalink: preparing-the-cloud-server-to-be-a-mail-server/
-node_id: 418
-title: Preparing the Cloud Server to be a Mail Server
+audit_date:
+title: Prepare the Cloud Server to be a Mail Server
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
@@ -29,7 +29,8 @@ settings on the Cloud Server.
 
 The only assumptions made for these email articles are:
 
--  You are running and have set up Ubuntu Hardy (The instructions may work on other distros but it has not been tested and is not guaranteed).
+-  You are running and have set up Ubuntu Hardy (The instructions may work on other distros 
+   but it has not been tested and is not guaranteed).
 
 ### Configure hostname
 
@@ -129,5 +130,5 @@ In this case, the output includes the correct answer:
 
 ### Summary
 
-Preparing the Cloud Server is a vital step in any mail setup - even if only sending mail from your application to an administrator, it is
-very important to get the basics right.
+Preparing the Cloud Server is a vital step in any mail setup - even if only sending mail 
+from your application to an administrator, it is very important to get the basics right.

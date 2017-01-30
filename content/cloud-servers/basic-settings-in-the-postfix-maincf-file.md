@@ -1,6 +1,6 @@
 ---
 permalink: basic-settings-in-the-postfix-maincf-file/
-node_id: 412
+audit_date:
 title: Basic settings in the Postfix main.cf file
 type: article
 created_date: '2011-03-16'

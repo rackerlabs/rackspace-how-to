@@ -1,12 +1,12 @@
 ---
 permalink: viewing-basic-graphs-of-activity-in-rackspace-intelligence/
-node_id: 4742
-title: Viewing basic graphs of activity in Rackspace Intelligence
+audit_date:
+title: View basic graphs of activity in Rackspace Intelligence
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -17,9 +17,7 @@ for your monitoring entities. Rackspace Intelligence now displays
 out-of-the-box graphs for all of your checks.
 
 If you want to explore a metric across multiple entities, consider using
-custom graphs. For more information, read [Creating custom graphs of
-activity in Rackspace
-Intelligence](/how-to/creating-custom-graphs-of-activity-in-rackspace-intelligence).
+custom graphs. For more information, read [Creating custom graphs of activity in Rackspace Intelligence](/how-to/creating-custom-graphs-of-activity-in-rackspace-intelligence).
 
 ### View default graphs
 
@@ -38,8 +36,6 @@ graphs, such as **CPU**.
 
 A list of graphs are displayed that are available for your check.
 
-<img src="{% asset_path rackspace-intelligence/viewing-basic-graphs-of-activity-in-rackspace-intelligence/BG_Check.2.png %}" width="650" height="405" />
-
 ### Work with favorites
 
 Rackspace Intelligence lets you specify one or more favorite graphs and
@@ -50,8 +46,6 @@ title of the graph.
 
 To filter for your favorite graphs, click **Favorites** under **Graph
 Collections.**
-
-<img src="{% asset_path rackspace-intelligence/viewing-basic-graphs-of-activity-in-rackspace-intelligence/BG_Fav.1.png %}" width="650" height="405" />I
 
 ### Specify a time range
 
@@ -71,8 +65,6 @@ If you choose a custom time range and click **Apply**, Rackspace
 Intelligence shows data collected for the entity between the first and
 last time stamp.
 
-<img src="{% asset_path rackspace-intelligence/viewing-basic-graphs-of-activity-in-rackspace-intelligence/preset1.1.png %}" width="584" height="41" />
-
 ### Adjust the layout of your graph page
 
 You can adjust the way your graphs are displayed on the page by
@@ -87,6 +79,3 @@ You can choose from one of the two display options:
 The following example shows a grid layout:
 
 <img src="{% asset_path rackspace-intelligence/viewing-basic-graphs-of-activity-in-rackspace-intelligence/gridlayout.png %}" width="765" height="594" />
-
-
-

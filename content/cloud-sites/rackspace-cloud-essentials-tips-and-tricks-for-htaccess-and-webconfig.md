@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-tips-and-tricks-for-htaccess-and-webconfig/
-node_id: 712
+audit_date:
 title: 'Rackspace Cloud Essentials: Tips and Tricks for .htaccess and web.config'
 type: article
 created_date: '2011-03-16'

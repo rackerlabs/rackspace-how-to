@@ -1,12 +1,12 @@
 ---
 permalink: cloud-feeds-faq/
-node_id: 4166
+audit_date:
 title: Cloud Feeds FAQ
 type: article
 created_date: '2014-07-31'
 created_by: David Hendler
-last_modified_date: '2016-01-19'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-09-09'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -49,7 +49,7 @@ events, that you can receive for various Rackspace Cloud services.
 | Cloud Load Balancers           | /lbaas/events      | Load Balancer, Usage System, Status Events          |
 | Cloud Monitoring               | /monitoring/events | Monitoring Usage                                    |
 | Cloud Queues                   | /queues/events     | Bandwidth Usage, System Usage                       |
-| First Generation Cloud Servers | /servers/events    | Bandwidth Usage, Server Usage, System Status Events |
+| Cloud Servers | /servers/events    | Bandwidth Usage, Server Usage, System Status Events |
 
 Event notifications are stored for up to three days so they can be
 retrieved when convenient. Events are published in XML format. At this

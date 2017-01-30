@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-retained-public-ip-addresses/
-node_id: 5001
+audit_date:
 title: RackConnect v3.0 retained public IP addresses
 type: article
 created_date: '2015-12-04'

@@ -1,11 +1,12 @@
 ---
-node_id: 3432
-title: 'Checking for a security compromise: back doors and intruders'
+permalink: check-for-a-security-compromise-back-doors-and-intruders/
+audit_date:
+title: 'Check for a security compromise: back doors and intruders'
 type: article
 created_date: '2013-04-25'
 created_by: Rose Contreras
-last_modified_date: '2015-05-27'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-06-10'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -14,7 +15,7 @@ Cloud servers can be compromised as a result of various factors: weak passwords,
 
 If your cloud server has been compromised, don't panic. Panic leads to poor decisions, which could make the situation worse. Instead, try to understand what happened and ensure that your cloud server is not compromised again in the same manner. This article's objective is simple: Learn from your mistakes, and don't make the same mistakes twice.
 
-This article describes some techniques and tools that you can use to investigate your servers if you suspect that they have been compromised. You should use these tools before going into rescue mode (which is covered in [Checking for a security compromise: Rescue mode investigation](/how-to/checking-for-a-security-compromise-rescue-mode-investigation)). The cloud server used for this article was running Ubuntu 8.10; however, the steps demonstrated will be similar for other Linux distributions.
+This article describes some techniques and tools that you can use to investigate your servers if you suspect that they have been compromised. You should use these tools before going into rescue mode (which is covered in [Checking for a security compromise: Rescue mode investigation](/how-to/check-for-a-security-compromise-rescue-mode-investigation)). The cloud server used for this article was running Ubuntu 8.10; however, the steps demonstrated will be similar for other Linux distributions.
 
 ### Important warning
 

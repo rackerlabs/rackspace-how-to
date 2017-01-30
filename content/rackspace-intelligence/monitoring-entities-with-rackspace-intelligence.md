@@ -1,25 +1,25 @@
 ---
 permalink: monitoring-entities-with-rackspace-intelligence/
-node_id: 4751
-title: Monitoring entities with Rackspace Intelligence
+audit_date:
+title: Monitor entities with Rackspace Intelligence
 type: article
 created_date: '2015-07-17'
 created_by: Rose Coste
-last_modified_date: '2016-01-27'
-last_modified_by: Rose Coste
+last_modified_date: '2017-01-12'
+last_modified_by: Shane Duan
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
 
 Rackspace Intelligence lets you create, edit, and view entities.
 
-Like Cloud Monitoring, Rackspace Intelligence uses *entities* to
+Like Rackspace Monitoring, Rackspace Intelligence uses *entities* to
 represent any object or resource that you want to monitor. An entity can
 be a set of servers or non-server objects, but most often an entity
 refers to an individual server.
 
 You can define an entity in Rackspace Intelligence that is something
-other than a Rackspace cloud server or a Rackspace cloud database. You
+other than a Rackspace cloud server, a Rackspace cloud database, or a Rackspace dedicated device. You
 can create an entity to represent any server or website that you want to
 monitor, even if it is not hosted at Rackspace.
 
@@ -29,8 +29,6 @@ Intelligence entities representing them are created automatically.
 To see a list of the entities known to Rackspace Intelligence,
 select **Monitor** at the top of the Rackspace Intelligence interface,
 and then click **Entities**.
-
-<img src="{% asset_path rackspace-intelligence/monitoring-entities-with-rackspace-intelligence/intelligence-monitoring-create-entity-top-bar.png %}" width="729" height="283" />
 
 From the **Monitor Entities** section, you can perform the following actions
 on the list of entities:
@@ -63,8 +61,6 @@ Panel or by logging in to the server itself.
 To create a new entity:
 
 1. On the **Monitoring** page, click **Create Entity**.
-
-   <img src="{% asset_path rackspace-intelligence/monitoring-entities-with-rackspace-intelligence/intelligence-monitoring-create-entity-button.png %}" width="606" height="207" />
 
 2. Type a name for your entity and click **Create Entity.**
 
@@ -142,9 +138,6 @@ To create a suppression:
 2. Type a name for your suppression, and specify the start and end dates.
 3. To add an additional entity to this supression, click **Add Entities** and select one or more entities.
 4. Click **Create Suppression**.
-
-   <img src="{% asset_path rackspace-intelligence/monitoring-entities-with-rackspace-intelligence/intelligence-entities-create-suppression.png %}" width="899" height="607" />
-
 5. When asked to confirm that you want to create a suppression,
    click **Create Suppression Now**.
 

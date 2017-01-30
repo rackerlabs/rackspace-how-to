@@ -1,6 +1,6 @@
 ---
 permalink: use-simple-email-setup-to-configure-ios-devices-for-email-hosted-on-exchange-2010/
-node_id: 2095
+audit_date:
 title: 'Use simple email setup to configure iOS devices for email hosted on Exchange 2010'
 type: article
 created_date: '2012-09-03'

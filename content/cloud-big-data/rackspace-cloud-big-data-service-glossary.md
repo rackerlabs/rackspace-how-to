@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-big-data-service-glossary/
-node_id: 3975
+audit_date:
 title: Rackspace Cloud Big Data Service Glossary
 type: article
 created_date: '2014-03-28'

@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-rackspace-intelligence-for-the-cloud/
-node_id: 4878
+audit_date:
 title: Getting started with Rackspace Intelligence for the cloud
 type: article
 created_date: '2015-10-20'

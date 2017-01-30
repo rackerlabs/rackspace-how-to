@@ -1,12 +1,12 @@
 ---
 permalink: exchange-faq/
-node_id: 4994
+audit_date:
 title: Microsoft Exchange FAQ
 type: article
 created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2016-01-27'
-last_modified_by: Rose Coste
+last_modified_date: '2016-05-17'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -46,7 +46,7 @@ folders](/how-to/microsoft-exchange-public-folders).
 #### Where do I add an Activesync/Blackberry BES liscense?
 
 Adding a Blackberry or Activesync license is done by your
-administrator through the Cloud Office control panel. To learn more
+administrator through the Cloud Office Control Panel. To learn more
 about adding the license, see [Adding An
 Activesync/BES
 license](/how-to/add-an-activesync-or-bes-license).
@@ -62,8 +62,7 @@ For Cloud Office system status verification, use the following link:
 
 #### Where can I view my Cloud Office billing invoice?
 
-Your billing invoice can be viewed through the [Cloud Office control
-panel](https://cp.rackspace.com/). Log in, navigate to
+Your billing invoice can be viewed through the [Cloud Office Control Panel](https://cp.rackspace.com/). Log in, navigate to
 **My Account** on the right hand side, and select **Invoice History**.
 You can then select any of your past invoices to view them.
 
@@ -74,8 +73,8 @@ dedicated support team for help.
 
 #### How do I purchase more storage, mailboxes, and licenses for my account?
 
-To purchase or make an upgrade to your account, log in to your control
-panel and on the right hand side, under **My Account**, select
+To purchase or make an upgrade to your account, log in to the Cloud Office Control
+Panel and on the right hand side, under **My Account**, select
 **General Information**. After you've selected **General Information**,
 select **Upgrade** on the red navigation bar. Select the product you
 would like to purchase and the target domain and you'll be presented
@@ -84,7 +83,7 @@ with a list of items you may add to your account. Afterwards, select
 
 #### How do I add an admin to my account?
 
-Log in to your control panel and on the right hand side under **My
+Log in to the Cloud Office Control Panel and on the right hand side under **My
 Account** select **Manage Administrators**. Now select **Add
 Administrator** and fill out the information on the next page.
 
@@ -93,7 +92,7 @@ You may have a maximum of three administrators per account.
 
 #### How do I submit a ticket?
 
-Log in to your control panel, navigate
+Log in to the Cloud Office Control Panel, navigate
 to **Support** at the bottom, and select **View/Create Ticket**. To
 create a new ticket, select **Create New Ticket** and fill out the
 information describing your request or issue. Then submit the ticket.

@@ -1,6 +1,6 @@
 ---
 permalink: common-windows-issues-key-management-server-activation/
-node_id: 1181
+audit_date:
 title: 'Common Windows Issues: Key Management Server Activation'
 type: article
 created_date: '2011-08-15'
@@ -54,12 +54,12 @@ server:
 
 4. Request activation from the KMS:
     
-      slmgr.vbs /ato
+       slmgr.vbs /ato
 
 5. If step 4 returns an error reading EXACTLY "0xC004F074 The Key 
    Management Server (KMS) is unavailable", run the following:
    
-    w32tm /resync
+        w32tm /resync
    
 6. If the time on the Cloud Server is drastically different than
      what is on the KMS the resync will fail.  At this point you will need to
@@ -97,12 +97,13 @@ server:
      </tr>
      </table>
    
-7. Once the time is synced up, attempt the following:
+7. Once the time is synced up, attempt each of the following commands:
     
-    w32tm /resync
-    slmgr.vbs /ato
+        w32tm /resync
 
-8. You will also need to open UDP port 123 to allow the sync.
+        slmgr.vbs /ato
+
+8. You must open UDP port 123 to allow the sync.
 
 9. Make sure your firewall allows outbound connections to TCP port
    1688.

@@ -1,6 +1,6 @@
 ---
 permalink: configure-email-clients-and-mobile-devices-for-email-hosted-on-exchange/
-node_id: 1416
+audit_date:
 title: Configure email clients and mobile devices for email hosted on Exchange
 type: article
 created_date: '2012-05-27'

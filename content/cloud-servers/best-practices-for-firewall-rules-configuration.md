@@ -1,11 +1,11 @@
 ---
 permalink: best-practices-for-firewall-rules-configuration/
-node_id: 4451
+audit_date:
 title: Best practices for firewall rules configuration
 type: article
 created_date: '2014-12-03'
 created_by: Rose Contreras
-last_modified_date: '2016-01-11'
+last_modified_date: '2016-06-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -33,17 +33,17 @@ As many parameters as possible should be specified in the rule used to define ne
 
 ### Specify source IP addresses
 
-If the service should be accessible to everyone on the Internet, then <code>any</code> source IP address is the correct option. In all other cases, you should specify the source address.
+If the service should be accessible to everyone on the Internet, then *any* source IP address is the correct option. In all other cases, you should specify the source address.
 
 It's acceptable to allow all source addresses to access your HTTP server. It's generally not acceptable to allow all source addresses to access your server management ports (22 for Linux SSH and 3389 for Windows RDP) or database (1433 for SQL Server, 1521 for Oracle, and 2206 for MySQL). Be as specific as practical about who can reach these ports. When it is impractical to define source IP addresses for network management, you might consider another solution like a remote access VPN as a compensating control to allow the access required and protect your network.
 
 ### Specify the destination IP address
 
-The destination IP address is the IP address of the server that runs the service to which you want to allow access. Always specify which server (or group of servers) can be accessed. Configuring a destination value of <code>any</code> is discouraged, because doing so could create future issues, such as a security breach or server compromise for a protocol that you might not intend to use on a server that might be accessible by default.
+The destination IP address is the IP address of the server that runs the service to which you want to allow access. Always specify which server (or group of servers) can be accessed. Configuring a destination value of `any` is discouraged, because doing so could create future issues, such as a security breach or server compromise for a protocol that you might not intend to use on a server that might be accessible by default.
 
 ### Specify the destination port
 
-The destination port corresponds to the service that needs to be accessed. This value of this field should never be <code>any</code>. The service that runs on the server and needs to be accessed is defined, and only this port needs to be allowed. For example, allowing all ports will greatly impact the security of the server by allowing a malicious entity to perform a dictionary attack to guess the password, as well as execute exploits for any port and protocol that is configured on the server.
+The destination port corresponds to the service that needs to be accessed. This value of this field should never be `any`. The service that runs on the server and needs to be accessed is defined, and only this port needs to be allowed. For example, allowing all ports will greatly impact the security of the server by allowing a malicious entity to perform a dictionary attack to guess the password, as well as execute exploits for any port and protocol that is configured on the server.
 
 Avoid using too wide a range of ports. If dynamic ports are used, firewalls sometimes provide inspection policies to securely allow them through.
 
@@ -51,12 +51,12 @@ Avoid using too wide a range of ports. If dynamic ports are used, firewalls some
 
 This section describes bad examples of firewall rules, but also shows some alternative good rules to follow when configuring firewall rules.
 
-<code>permit ip any any</code> - Allows all traffic from any source on any port to any destination. This is the worst type of access control rule. It contradicts both of the security concepts of denying traffic by default and the principal of least privilege. The destination port should be always specified, and the destination IP address should be specified when practical. The source IP address should be specified unless the application is built to receive clients from the Internet, such as a web server. A good rule would be <code>permit tcp any WEB-SERVER1 http</code>.
+`permit ip any any` - Allows all traffic from any source on any port to any destination. This is the worst type of access control rule. It contradicts both of the security concepts of denying traffic by default and the principal of least privilege. The destination port should be always specified, and the destination IP address should be specified when practical. The source IP address should be specified unless the application is built to receive clients from the Internet, such as a web server. A good rule would be `permit tcp any WEB-SERVER1 http`.
 
-<code>permit ip any any WEB-SERVER1</code> - Allows all traffic from any source to a web server. Only specific ports should be allowed; in the case of a web server, ports 80 (HTTP) and 443 (HTTPS). Otherwise, the management of the server is vulnerable. A good rule would be <code>permit ip any WEB-SERVER1 http</code>.
+`permit ip any any WEB-SERVER1`  - Allows all traffic from any source to a web server. Only specific ports should be allowed; in the case of a web server, ports 80 (HTTP) and 443 (HTTPS). Otherwise, the management of the server is vulnerable. A good rule would be `permit ip any WEB-SERVER1 http`.
 
-<code>permit tcp any WEB-SERVER1 3389</code> - Allows RDP access from any source to the web server. It is generally a bad practice to allow everyone access to your management ports. Be specific about who can access the server management. A good rule would be <code>permit tcp 12.34.56.78 3389 WEB-SERVER1</code> (where <code>12.34.56.78</code> is the IP address of the administrator's computer on the Internet).
+`permit tcp any WEB-SERVER1 3389` - Allows RDP access from any source to the web server. It is generally a bad practice to allow everyone access to your management ports. Be specific about who can access the server management. A good rule would be `permit tcp 12.34.56.78 3389 WEB-SERVER1` (where `12.34.56.78` is the IP address of the administrator's computer on the Internet).
 
-<code>permit tcp any DB-SERVER1 3306</code> - Allows MySQL access from any source to the database. Database servers should never be exposed to the whole Internet. If you need database queries to run across the public Internet, specify the exact source IP address. A good rule would be <code>permit tcp 23.45.67.89 DB-SERVER1 3306</code> (where <code>23.45.67.89</code> is the IP address of the host on the Internet that needs access to the database). A best practice would be to allow database traffic over a VPN and not in clear text across the public Internet.
+`permit tcp any DB-SERVER1 3306` - Allows MySQL access from any source to the database. Database servers should never be exposed to the whole Internet. If you need database queries to run across the public Internet, specify the exact source IP address. A good rule would be `permit tcp 23.45.67.89 DB-SERVER1 3306` (where `23.45.67.89` is the IP address of the host on the Internet that needs access to the database). A best practice would be to allow database traffic over a VPN and not in clear text across the public Internet.
 
 If you need help implementing these best practices, contact your Rackspace support team.

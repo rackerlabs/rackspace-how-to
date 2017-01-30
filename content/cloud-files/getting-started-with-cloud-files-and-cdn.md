@@ -1,24 +1,22 @@
 ---
 permalink: getting-started-with-cloud-files-and-cdn/
-node_id: 5122
+audit_date:
 title: Getting started with Cloud Files and CDN
 type: article
 created_date: '2016-01-14'
 created_by: Stephanie Fillmon
-last_modified_date: '2016-01-14'
+last_modified_date: '2016-04-18'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
 
-This guide provides an overview of Rackspace Cloud Files and its
+This article provides an overview of Rackspace Cloud Files and its
 features to help you get started quickly and serve content over Akamai's
 CDN service.
 
-### Overview
-
 Cloud Files allows you to store data on the Rackspace infrastructure.
-The [Cloud Control Panel](https://mycloud.rackspace.com/) allows
+The [Cloud Control Panel](https://mycloud.rackspace.com/) enables
 customers to accomplish most tasks for managing data, but the [Cloud Files API Developer Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/)
 and some third-party tools are also available.
 
@@ -102,11 +100,10 @@ a link to the photo with link like
 http://c0000532.cdn.cloudfiles.rackspace.com/IMG_3432.jpg. When that
 link is accessed, the photo is served from the CDN.
 
-
 ### Create a container
 
 1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
-2.  In the top navigation bar, select **Storage &gt; Files**.
+2.  In the top navigation bar, select **Storage > Files**.
 3.  Click **Create Container**.
 4.  Name the container, and then click **Create Container**.
 5.  Click the gear icon next to the container to be made public and
@@ -130,7 +127,5 @@ You can now share the files within the container.
     Options for sharing your file are displayed.
 
 To learn more about how to operate with Cloud Files through the API,
-read the article [Connecting to Cloud
-Files](/how-to/connecting-to-cloudfiles)
-and read the [Cloud Files API Developer
-Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/).
+see [Connecting to Cloud Files](/how-to/connecting-to-cloudfiles)
+and the [Cloud Files API Developer Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/).

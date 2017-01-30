@@ -1,17 +1,17 @@
 ---
 permalink: cloud-images-faq/
-node_id: 3851
+audit_date:
 title: Cloud Images FAQ
 type: article
 created_date: '2014-01-14'
 created_by: Cloud Images
-last_modified_date: '2016-01-20'
+last_modified_date: '2016-04-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Images
 product_url: cloud-images
 ---
 
-### Cloud Images
+### Getting Started
 
 #### Where is the documentation?
 
@@ -70,8 +70,7 @@ responses in XML.
 #### Can I share or accept images in the Control Panel?
 
 Yes! Image sharing is now available in the Cloud Control Panel. Please
-see the following How-To article for details: [Sharing images
-in the Cloud Control Panel](/how-to/sharing-images-in-the-cloud-control-panel).
+see the following How-To article for details: [Sharing images in the Cloud Control Panel](/how-to/sharing-images-in-the-cloud-control-panel).
 
 #### Where can I read a quick summary of image sharing?
 
@@ -111,9 +110,9 @@ charged at normal Cloud Files rates.
 
 #### What information is required to share an image from one account to another?
 
-You need to know the DDI (customer number) of the customer with whom you
+You need to know the account number of the customer with whom you
 want to share the image. When the customer is logged in to the Cloud
-Control Panel, their DDI is displayed under their account name in the
+Control Panel, their account number is displayed under their account name in the
 upper-right of the Control Panel (it is the first item in the
 **Account** menu.
 
@@ -140,7 +139,7 @@ access to the ORD region by looking in the Control Panel - it won't show
 up as an option in the Region dropdown on either the Server List or
 Create Server pages. API users can look directly in their service
 catalog. To learn more about regions in the Rackspace cloud, please see
-the How-To article [Where are the Rackspace data centers located?](/how-to/rackspace-data-centers-and-regions).
+the How-To article [Rackspace data centers and regions](/how-to/rackspace-data-centers-and-regions).
 
 #### What if someone shares an image to me that I don't want, or if I don't know the person?
 
@@ -327,7 +326,7 @@ the vendor.
 
 #### Is Rackspace responsible for the content of imported images?
 
-No, as covered in the [Cloud Servers Terms and Conditions](#where-can-i-find-the-rackspace-cloud-terms-of-service) (and
+No, as covered in the [Rackspace Cloud Terms of Service](https://www.rackspace.com/information/legal/cloud/tos) (and
 standard practice among hosting providers), Rackspace can take no
 responsibility for content or application licensing when it is uploaded
 by the customer.
@@ -360,7 +359,9 @@ appropriate software vendor if you have questions.
 
 First, only the image owner can export an image. You cannot export a
 Rackspace public image and you cannot export an image that has been
-shared with you. **Note:** If you have a use case where you really want
+shared with you.
+
+**Note:** If you have a use case where you really want
 to export one of these, you can create a server from that image then
 make an image of the new server to get your own copy of the original
 image.
@@ -443,7 +444,7 @@ See the How-To article [Preparing an Image for Import into the Rackspace Open Cl
 
 #### Can you recommend a way to upload my image to Cloud Files so it can be imported?
 
-We recommend using the **swiftly** Cloud Files client. Please see this
+We recommend using the **Swiftly** Cloud Files client. Please see this
 How-To article: [Use Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image).
 
 #### Can you give me step-by-step instructions for importing an image?

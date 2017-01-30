@@ -1,6 +1,6 @@
 ---
 permalink: cancel-your-cloud-sites-account/
-node_id: 207
+audit_date:
 title: Cancel your Cloud Sites account
 type: article
 created_date: '2011-03-16'
@@ -27,6 +27,4 @@ from our systems when we process the account closure. If you want your data remo
 2.  Click **Your Account**, and then click **Cancel Account**.
 3.  Complete the cancellation form, and then click **Submit**.
 
-Allow 48-72 hours for your request to be processed. If you have any
-questions, you can contact our Cancellation Department directly at 1 800
-480 3369.
+Allow 48-72 hours for your request to be processed. If you have any questions, please submit a ticket with the cancellation request, as these cannot be handled over the phone or in chat.

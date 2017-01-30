@@ -1,12 +1,12 @@
 ---
 permalink: configure-a-load-balancer/
-node_id: 1469
+audit_date:
 title: Configure a load balancer
 type: article
 created_date: '2012-07-17'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-04-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
@@ -14,7 +14,6 @@ product_url: cloud-load-balancers
 Mission-critical web-based applications and workloads require a high availability (HA) solution. Load balancing distributes workloads across two or more servers, network links, and other resources to maximize throughput, minimize response time, and avoid overload. Rackspace Cloud Load Balancers enable you to quickly load balance multiple cloud servers or external servers for optimal resource utilization.
 
 This article provides instructions for setting up and configuring a load balancer in the Rackspace Cloud.
-
 
 ### Set up a load balancer
 
@@ -41,7 +40,7 @@ This article provides instructions for setting up and configuring a load balance
     **Note:** This is a very important attribute to set, especially as your load balancer implementation gets more complex. In most cases, the Random, Round Robin, or Least Connections algorithm are sufficient when load balancing two identical servers for increased web traffic. If your servers are unequal in size or resources, consider using weighted algorithms to favor the servers that have more resources.
 
 8.	Under **Add Nodes**, click **Add Cloud Servers** to set your load balancer to operate on one or more of your cloud servers.
-<a name="hostname"></a>
+
 9.	To add one or more external nodes, click **Add External Node**, and then enter the IP address and port (usually port 80 for HTTP traffic) of the service that you want load balanced. You can then enable or disable the load-balancing service on your external node directly through the control panel.
 
     **Note**: The only domain names that can be used are hostnames associated with Cloud Database hostnames.
@@ -62,7 +61,6 @@ On the details page for the load balancer, you can set the following options:
 
 - **Logging:** To simplify log management, the logging feature allows for Apache-style access logs (for HTTP-based protocol traffic) or connection and transfer logging (for all other traffic) to your Cloud Files account. If you need raw data in one place for performance tuning or web analytics, logs are sorted, aggregated, and delivered to Cloud Files.
 
-
 ### Pricing
 
 The cost for each load balancer (instance) is based on an hourly rate plus the number of concurrent connections plus bandwidth.  You can view pricing details on the product pages for Cloud Load Balancers:
@@ -70,8 +68,4 @@ The cost for each load balancer (instance) is based on an hourly rate plus the n
 - [US product page for Cloud Load Balancers](http://www.rackspace.com/cloud/load-balancing/)
 - [UK product page for Cloud Load Balancers](http://www.rackspace.co.uk/cloud-load-balancers/)
 
-
-
-### Next steps
-
-Learn how to use [Cloud Files and the Content Delivery Network](/how-to/getting-started-with-cloud-files-and-cdn/) for website acceleration and mass object-storage.
+**Next steps:** [Cloud Files and the Content Delivery Network](/how-to/getting-started-with-cloud-files-and-cdn/)

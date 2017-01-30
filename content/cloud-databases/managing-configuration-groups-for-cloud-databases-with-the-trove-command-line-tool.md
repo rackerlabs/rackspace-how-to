@@ -1,7 +1,7 @@
 ---
 permalink: managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool/
-node_id: 3931
-title: Managing configuration groups for Cloud Databases with the trove command-line tool
+audit_date:
+title: Manage configuration groups for Cloud Databases with the trove command-line tool
 type: article
 created_date: '2014-03-17'
 created_by: Neha Verma

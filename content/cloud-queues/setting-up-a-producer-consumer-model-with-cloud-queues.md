@@ -1,12 +1,12 @@
 ---
 permalink: setting-up-a-producer-consumer-model-with-cloud-queues/
-node_id: 3657
-title: Setting Up a Producer-Consumer Model with Cloud Queues
+audit_date:
+title: Set up a producer-consumer model with Cloud Queues
 type: article
 created_date: '2013-08-21'
 created_by: Megan Meza
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-05-09'
+last_modified_by: Stephanie Fillmon
 product: Cloud Queues
 product_url: cloud-queues
 ---
@@ -24,78 +24,71 @@ The producer-consumer mode has the following characteristics:
 
 This mode is ideal for dispatching jobs to multiple processors.
 
-### Posting messages to a queue
+### Post messages to a queue
 
-Queues support posting 10 messages at the same time, so lets try to post
-two within the same request.
+Queues support posting 10 messages at the same time. The following cURL command posts two messages within the same request:
 
-***Request***
+    $ curl -i -X POST https://$ENDPOINT:443/v1/queues/samplequeue/messages \
+    -d '[{"ttl": 300, "body": {"event": "two"}}, {"ttl": 60, "body": {"event": "three"}}]' \
+    -H "Content-type: application/json" \
+    -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830" \
+    -H "X-Auth-Token: $TOKEN"
 
-        $ curl -i -X POST https://$ENDPOINT:443/v1/queues/samplequeue/messages \
-          -d '[{"ttl": 300, "body": {"event": "two"}}, {"ttl": 60, "body": {"event": "three"}}]' \
-          -H "Content-type: application/json" \
-          -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830" \
-          -H "X-Auth-Token: $TOKEN"
+**Note:** Use Claim TTLs to protect from agent/client failure while they have a message claimed. In the event that a server goes offline and cannot complete the message it has claimed, the claim TTL will expire and that message will be returned to the queue for other consumers or workers to claim.
 
-**Note:** Use Claim TTLs to protect from agent/client failure while they have a message claimed.  In the event that a server goes offline and cannot complete the message it has claimed, the claim TTL will expire and that message will be returned to the queue for other consumers or workers to claim.
+The response should look similar to the following:
 
-***Response***
+    HTTP/1.1 201 Created     
+    Content-Length: 153     
+    Content-Type: application/json; charset=utf-8     
+    Location: /v1/queues/samplequeue/messages?ids=51e840e71d10b2055fd565fb,51e840e71d10b2055fd565fc{partial": false, "resources": ["/v1/queues/samplequeue/messages/51e840e71d10b2055fd565fb", "/v1/queues/samplequeue/messages/51e840e71d10b2055fd565fc"]}
 
-        HTTP/1.1 201 Created     
-        Content-Length: 153     
-        Content-Type: application/json; charset=utf-8     
-        Location: /v1/queues/samplequeue/messages?ids=51e840e71d10b2055fd565fb,51e840e71d10b2055fd565fc{partial": false, "resources": ["/v1/queues/samplequeue/messages/51e840e71d10b2055fd565fb", "/v1/queues/samplequeue/messages/51e840e71d10b2055fd565fc"]}
-
-Above, if you check the response, you will see that the queue returned
-two ids. It is always a good practice to post messages in batches as
+In the response, you can see that the queue returned
+two IDs. It is always a good practice to post messages in batches as
 network latency will be a smaller factor in overall performance compared
 to sending one message at a time.
 
-### Claiming messages
+### Claim messages
 
-Claiming a message is pretty much like marking a message so it will be
-invisible when another worker wants to claim messages. By default 10
-messages are claimed. In the sample request below, we will get 2
-messages claimed as we use pass 2 as limit.
+Claiming a message is similar to marking a message so that it will be
+invisible when another worker wants to claim messages. Cloud Queues claims 10 messages by default.
 
-***Request***
+The following cURL command limits the number of claims to two:
 
     $ curl -i -X POST https://\
-      $ENDPOINT:443/v1/queues/samplequeue/claims?limit=2 -d ' { "ttl": 60, "grace": 60} '\ 
-      -H "X-Auth-Token: $TOKEN" \
-      -H "Content-type: application/json" -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830"
+    $ENDPOINT:443/v1/queues/samplequeue/claims?limit=2 -d ' { "ttl": 60, "grace": 60} '\
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-type: application/json" -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830"
 
-***Response***
+The response should look similar to the following. Note that there are only two messages returned because of the limit used in the request.
 
-    HTTP/1.1 200 OK Content-Length: 306 
-    Content-Type: application/json; charset=utf-8 
-    Location: /v1/queues/samplequeue/claims/51e852d01d10b2056dd5703c [{"body": {"event": "two"}, "age": 5, \        "href":"/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f10?claim\_id=51e852d01d10b2056dd5703c",
+    HTTP/1.1 200 OK Content-Length: 306
+    Content-Type: application/json; charset=utf-8
+    Location: /v1/queues/samplequeue/claims/51e852d01d10b2056dd5703c [{"body": {"event": "two"}, "age": 5,         "href":"/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f10?claim_id=51e852d01d10b2056dd5703c",
     "ttl": 300}, {"body": {"event": "three"}, "age": 5, "href":
-    "/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f11?claim\_id=51e852d01d10b2056dd5703c",
-    "ttl": 120}\]
+    "/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f11?claim_id=51e852d01d10b2056dd5703c",
+    "ttl": 120}]
 
-### Deleting completed messages
+### Delete messages
 
-***Request***
+The following cURL command deletes messages that have been processed by a worker:
 
-    $ curl -i -X DELETE https://\
-      $ENDPOINT:443/v1/queues/samplequeue/messages/51e852cb1d10b20571d56f10?claim\
-      _id=51e852d01d10b2056dd5703c \
-      -H "X-Auth-Token: $TOKEN" \
-      -H "Content-type: application/json" 
-      -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830"
+    $ curl -i -X DELETE $API_ENDPOINT/queues/samplequeue/messages/51ca00a0c508f154c912b85c?claim_id=51ca011c821e7250f344efd6 \
+    -H "Content-type: application/json" \
+    -H "X-Auth-Token: $AUTH_TOKEN" \
+    -H "Client-ID: e58668fc-26eb-11e3-8270-5b3128d43830" \
+    -H "Accept: application/json" \
+    -H "X-Project-Id: $TENANT_ID"
 
-***Response***
+The response should look similar to the following:
 
     HTTP/1.1 204 No Content
 
-204 is a valid response which validates that there isn't a message with
-the given message and claim id. It doesn't necessarily say that message
-is deleted, though.
+`204 No Content` validates that there are no existing messages with
+the given message and claim id. However, it doesn't necessarily indicate that message
+is deleted.
 
-**Note**: 
-For additional API documentations, see the following resources: 
+For additional API documentations, see the following resources:
+
 - [Rackspace Cloud Queues Getting Started Guide](https://developer.rackspace.com/docs/cloud-queues/v1/developer-guide/#getting-started)
 - [Rackspace Cloud Queues API Developer Guide](https://developer.rackspace.com/docs/cloud-queues/v1/developer-guide/#developer-guide)
-
-

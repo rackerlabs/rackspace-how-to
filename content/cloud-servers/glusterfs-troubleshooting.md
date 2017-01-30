@@ -1,28 +1,26 @@
 ---
 permalink: glusterfs-troubleshooting/
-node_id: 4179
-title: GlusterFS - troubleshooting
+audit_date:
+title: Troubleshoot GlusterFS
 type: article
 created_date: '2014-08-14'
 created_by: Marcin Stangel
-last_modified_date: '2016-01-12'
+last_modified_date: '2016-06-24'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Previous section
-
-[GlusterFS build steps](/how-to/getting-started-with-glusterfs-considerations-and-installation)
+**Previous section** - [GlusterFS build steps](/how-to/getting-started-with-glusterfs-considerations-and-installation)
 
 This article describes two GlusterFS issues that you might encounter and provides steps for resolving them:
 
 - Healing replicated volumes
 - Fixing a split-brain problem
 
-### Healing replicated volumes
+### Heal replicated volumes
 
-When any brick in a replicated volume goes offline, the glusterd daemons on the remaining nodes keep track of all the files that are not replicated to the offline brick. When the offline brick becomes available again, the cluster initiates a healing process, replicating the updated files to that brick. The start of this process can take up to 10 minutes, based on observation.
+When any brick in a replicated volume goes offline, the `glusterd` daemons on the remaining nodes keep track of all the files that are not replicated to the offline brick. When the offline brick becomes available again, the cluster initiates a healing process, replicating the updated files to that brick. The start of this process can take up to 10 minutes, based on observation.
 
 You can view information about which files need to be replicated by running the following command:
 
@@ -44,11 +42,11 @@ Optional:
 
     gluster volume heal volumeName full
 
-### Fixing a split-brain problem
+### Fix a split-brain problem
 
 A *split-brain* problem occurs when one of the replicated nodes goes offline (or is disconnected from the cluster) and a file on one of its bricks is updated. After the node rejoins the GlusterFS cluster, the healing process fails because of the conflict caused by two different versions of the file.
 
-In the following example, this problem is triggered manually and then fixed. The node called gluster4 is disconnected and one of the files stored on its brick is modified:
+In the following example, this problem is triggered manually and then fixed. The node called `gluster4` is disconnected and one of the files stored on its brick is modified:
 
     [root@gluster1 ~]# cat /mnt/gluster/gvol0/testfile.txt
     This is version 1 of the file
@@ -140,6 +138,4 @@ On one of the nodes, the file itself, as well as the associated GFID file (in th
     [root@gluster4 ~]# cat /var/lib/gvol0/brick4/testfile.txt
     This is version 1 of the file
 
-### Next section
-
-[GlusterFS HA and load balancing](/how-to/glusterfs-high-availability-through-ctdb)
+**Next section** - [GlusterFS HA and load balancing](/how-to/glusterfs-high-availability-through-ctdb)

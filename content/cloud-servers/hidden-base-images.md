@@ -1,6 +1,6 @@
 ---
 permalink: hidden-base-images/
-node_id: 3753
+audit_date:
 title: Hidden Base Images
 type: article
 created_date: '2013-11-04'

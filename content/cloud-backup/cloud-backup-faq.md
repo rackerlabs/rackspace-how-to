@@ -1,6 +1,6 @@
 ---
 permalink: cloud-backup-faq/
-node_id: 5043
+audit_date:
 title: Cloud Backup FAQ
 type: article
 created_date: '2015-12-10'
@@ -142,7 +142,7 @@ If you have a server with a Managed Operations Service Level, you may
 already have the Cloud Backup agent installed on your system. If not,
 contact your account representative to get started.
 
-For more information, see the Rackspace Cloud Backup [overview](/how-to/rackspace-cloud-backup-overview).
+For more information, see the [Rackspace Cloud Backup introduction](/how-to/cloud-backup).
 
 #### How long are my Cloud Backups kept?
 

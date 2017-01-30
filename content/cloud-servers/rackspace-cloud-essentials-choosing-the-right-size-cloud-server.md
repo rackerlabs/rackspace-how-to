@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-cloud-essentials-choosing-the-right-size-cloud-server/
-node_id: 1388
+audit_date:
 title: Rackspace Cloud Essentials - Choosing the right-size cloud server
 type: article
 created_date: '2012-05-02'
 created_by: Rackspace Support
-last_modified_date: '2016-01-15'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-07-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -48,21 +48,13 @@ Flavor classes for different workloads
 
 If your application is running on a Linux system, there are many utilities that you can use to determine how well your server is handling the load.  The main statistics you should examine are the **load average** on the server and the **available memory** while your application is running.
 
--  **free**: This is a quick and easy monitoring utility that gives you a snapshot view of the amount of available memory on your server. Adding the -m switch to the command shows you available memory in megabytes (as opposed to the default kilobytes).
+-  `free`: This is a quick and easy monitoring utility that gives you a snapshot view of the amount of available memory on your server. Adding the `-m` switch to the command shows you available memory in megabytes (as opposed to the default kilobytes).
 
-  <img src="{% asset_path cloud-servers/rackspace-cloud-essentials-choosing-the-right-size-cloud-server/free-m.png %}" alt="" />
+-  `top`: This utility is useful for more than just checking available memory.  You can also view the load average on the server, and the processes that are using the most resources on your server.
 
--  **Top**: This utility is useful for more than just checking available memory.  You can also view the load average on the server, and the processes that are using the most resources on your server.
+-  `iotop`: You can use the `iotop` command to monitor disk I/O on a per-process basis.
 
-  <img src="{% asset_path cloud-servers/rackspace-cloud-essentials-choosing-the-right-size-cloud-server/top.png %}" alt="" />
-
--  **iotop**: You can use the `iotop` command to monitor disk I/O on a per-process basis.
-
-  <img src="{% asset_path cloud-servers/rackspace-cloud-essentials-choosing-the-right-size-cloud-server/2013-08-08_1232.png %}" alt="" />
-
--  **dstat**: The `dstat` command also shows you the I/O statistics and other information with more versatility than other commands, in terms of reporting.
-
-  <img src="{% asset_path cloud-servers/rackspace-cloud-essentials-choosing-the-right-size-cloud-server/dstat.png %}" alt="" />
+-  `dstat`: The `dstat` command also shows you the I/O statistics and other information with more versatility than other commands, in terms of reporting.
 
 Both `iotop` and `dstat` might require extra packages to be installed on your server.
 

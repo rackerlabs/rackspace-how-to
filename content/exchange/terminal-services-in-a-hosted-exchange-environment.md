@@ -1,6 +1,6 @@
 ---
 permalink: terminal-services-in-a-hosted-exchange-environment/
-node_id: 3772
+audit_date:
 title: 'Terminal Services in a Hosted Exchange Environment'
 type: article
 created_date: '2013-11-12'

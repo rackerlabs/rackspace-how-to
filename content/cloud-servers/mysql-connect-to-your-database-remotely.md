@@ -1,62 +1,63 @@
 ---
 permalink: mysql-connect-to-your-database-remotely/
-node_id: 397
-title: MySQL - Connect to your database remotely
+audit_date: '2016-06-23'
+title: Connect to a MySQL database remotely
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-10-03'
+last_modified_by: Ben Sampson
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This tutorial will walk you through setting up a user on your MySQL
-server to connect remotely.
+This article explains how to set up a user on your MySQL server to connect
+remotely.
 
-The following items are assumed:
+To perform these steps, you must have local server access to login as the
+'root' MySQL user.
 
--   You have access to login as the 'root' MySQL user
+### Get your IP address
 
-### Getting your IP address
+You need to know the IP address of the computer from which you are connecting.
+To get this you can go to one of the following sites:
 
-You will need to know what the IP address you are connecting from. To
-find this you can go to one of the following sites:
+-   <https://icanhazip.com>
+-   <https://www.whatismyip.com>
 
--   <http://www.ipchicken.com>
--   <http://www.whatismyip.com>
+### Grant access
 
-### Granting access
+Perform the following steps to grant access to a user from a remote host.
 
-Granting access to a user from a remote host is fairly simple and can be
-accomplished from just a few steps. First you will need to login to your
-MySQL server as the *root* user. You can do this by typing the following
-command:
+1. Log in locally to your MySQL server as the root user. You can do this by
+   typing the following command:
 
     # mysql -u root -p
 
-This will prompt you for your MySQL root password.
+   You will be prompted for your MySQL root password. (If you get into MySQL
+   without a password, consider runing the 'mysql_secure_installation,' script,
+   which sets a MySQL root password and updates other settings to increase
+   security).
 
-Once you are logged into MySQL you need to issue the GRANT command that
-will enable access for your remote user. In this example we will be
-creating a brand new user (fooUser) that will have full access to the
-*fooDatabase* database.
+2. Issue the GRANT command which enables access for the remote user. The
+   following example creates a new user (fooUser) that will have full access
+   to the fooDatabase database.
 
-Keep in mind that this statement is not complete and will need some
-items changed. Please change **1.2.3.4** to the IP address that we
-obtained above. You will also need to change **my_password** with the
-password that you would like to use for **fooUser**.
+   Be sure that this statement is not complete and will need some
+   items changed. Please change **1.2.3.4** to the IP address that we
+   obtained above. You will also need to change **my_password** with the
+   password that you would like to use for **fooUser**.
 
     mysql> GRANT ALL ON fooDatabase.* TO fooUser@'1.2.3.4' IDENTIFIED BY 'my_password';
 
-This statement will grant ALL permissions to the newly created user
-*fooUser* with a password of 'my_password' when they connect from the
-IP address *1.2.3.4*.
+   This statement grants ALL permissions to the newly created user with the
+   specified password when the user connects from the specified IP address.
 
-### Testing remotely
+### Test the connection remotely
 
-Now you can test your connection remotely. You can access your MySQL
-server from another Linux server:
+To test the connection remotely, you can access the MySQL server from another
+Linux server, as follows. In this example, IP address of the MySQL server is
+44.55.66.77.
 
     # mysql -u fooUser -p -h 44.55.66.77
     Enter password:
@@ -68,24 +69,24 @@ server from another Linux server:
 
     mysql> _
 
-Note that the IP of our MySQL server is 44.55.66.77 in this example.
+### Considerations
 
-### Notes
+When setting up remote users, consider the following items:
 
-There are a few things to note when setting up these remote users:
+ - A local user is not the same thing as a remote user. For example
+   **fooUser@localhost** is not the same as **fooUser@1.2.3.4**. If you want
+   both users to have the same permissions, you need to duplicate permissions.
 
--   When setting up users a local user is not the same thing as a
-    remote user. For instance fooUser@localhost is not the same
-    as fooUser@1.2.3.4. You will have to duplicate permissions if you
-    want them to have the same permissions.
--   Granting ALL permissions is **not advised**. Using *GRANT
-    SELECT,INSERT,UPDATE,DELETE* is a wise alternative for a
-    normal user.
--   If you would like to grant only to a specific table you can use
-    *database.table* instead of *database.\**. In respect to our example
-    above you could put *fooDatabase.fooTable*.
--   If you are using **iptables** you will need to make an entry in your
-    firewall for TCP port 3306. When creating your firewall rule you can
-    simply use the name 'mysql' for the port number. Search our wiki for
-    *iptables* and you will find a list of common rule sets which
-    include an entry for MySQL.
+ - WE do not recommend granting ALL permissions. For a normal user, we
+   recommend using `GRANT SELECT,INSERT,UPDATE,DELETE`.
+
+ - To grant access to only a specific table, you can use `database.table`.
+   For example, in the receding step, you could use `fooDatabase.fooTable`
+   instead of `fooDatabase`.* In respect to our example
+   above you could put .
+
+ - If you are using iptables you will need to create an entry in your
+   firewall for TCP port 3306. When you create the firewall rule you can
+   simply use the name `mysql` for the port number. Search our wiki for
+   *iptables* and you will find a list of common rule sets which
+   include an entry for MySQL.

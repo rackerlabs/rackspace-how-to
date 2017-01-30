@@ -1,12 +1,12 @@
 ---
 permalink: accessing-the-full-version-of-migrationwiz/
-node_id: 3736
-title: Accessing the full version of MigrationWiz
+audit_date:
+title: Access the full version of MigrationWiz
 type: article
 created_date: '2013-10-24'
 created_by: Milton Prado
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-09-01'
+last_modified_by: Nate Archer
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -15,10 +15,8 @@ We provide our customers with a private label version of MigrationWiz.
 This means that many features that are present in the full version of
 MigrationWiz are not readily available. You may use the full version if
 you choose to. If you are not looking for the features provided by the
-full version of MigrationWiz,
-see
-[Migrate your email by using the Self-Service
-Tool](/how-to/migrate-your-email-by-using-the-self-service-tool)
+full version of MigrationWiz, see
+[Migrate your email by using the Self-Service Migration Tool](/how-to/migrate-your-email-by-using-the-self-service-migration-tool)
 for the standard steps.
 
 ### Benefits of the full version of MigrationWiz
@@ -40,13 +38,13 @@ consider how that choice can affect migration costs and support procedure.
 #### Cost differences
 
 When migrating to Rackspace Email and Apps, users will receive
-the discounted rate of $4.99 per mailbox only when purchased via
+the discounted rate of $0 per mailbox only when migrating via
 the Private Label Portal at <http://rackspace.selfmigration.com>.  
 
 If purchasing licenses through <http://migrationwiz.com>, those licenses
 will be listed at the retail price of $11.99 per mailbox.  In order
 to take advantage of the discounted rate in the full version of
-MigrationWiz, licenses must first be purchased in the Private Label
+MigrationWiz, migrations must first be initiated in the Private Label
 Portal, then used in the full version.
 
 #### Support differences

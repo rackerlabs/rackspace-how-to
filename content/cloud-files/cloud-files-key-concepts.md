@@ -1,6 +1,6 @@
 ---
 permalink: cloud-files-key-concepts/
-node_id: 5166
+audit_date:
 title: Cloud Files Key Concepts
 type: article
 created_date: '2016-01-20'

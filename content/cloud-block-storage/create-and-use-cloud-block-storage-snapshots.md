@@ -1,18 +1,17 @@
 ---
 permalink: create-and-use-cloud-block-storage-snapshots/
-node_id: 3138
+audit_date:
 title: Create and use Cloud Block Storage snapshots
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-01-22'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-06-06'
+last_modified_by: Nate Archer
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-**Previous section:** [Prepare your Cloud Block Storage
-volume](/how-to/prepare-your-cloud-block-storage-volume)
+**Previous section:** [Prepare your Cloud Block Storage volume](/how-to/prepare-your-cloud-block-storage-volume)
 
 A snapshot is a copy made of your volume at a specific moment in time.
 It contains the full directory structure of the volume. Snapshots can be
@@ -28,12 +27,9 @@ the new volume must be of equal size or larger than the original volume
 from which you made the snapshot. The new volume must be in the same
 region. It can, however, be a different type.
 
-Read [Allowing snapshots without detaching the
-volumes](/white-paper/allowing-snapshots-without-detaching-the-volumes) for
+Read [Allowing snapshots without detaching the volumes](/white-paper/allowing-snapshots-without-detaching-the-volumes) for
 additional information on allowing snapshots without detaching the
 volumes.
-
-
 
 ### Create a snapshot
 
@@ -41,11 +37,8 @@ It is a good idea to detach your volume from your server before you take
 a snapshot. This is the safest method to prevent your server from
 writing information while you are backing it up. That could get your
 data out of sync and could create a problem. To detach your volume, see
-the instructions on how to [detach and delete
-volumes](/how-to/detach-and-delete-cloud-block-storage-volumes).
-You can always re-attach the volume by following the steps in [Allowing
-snapshots without detaching the
-volumes](/how-to/create-and-attach-a-cloud-block-storage-volume) steps
+the instructions on how to [detach and delete volumes](/how-to/detach-and-delete-cloud-block-storage-volumes).
+You can always re-attach the volume by following the steps in [Allowing snapshots without detaching the volumes](/how-to/create-and-attach-a-cloud-block-storage-volume) steps
 on the Create/Attach Volume page.
 
 More advanced users may sync the file system in order ensure the
@@ -57,7 +50,7 @@ volume prior to snapshotting.
 There are two ways to create a snapshot - either from the Actions button
 or from the Storage Snapshots screen.
 
-From the **Actions** button:
+#### From the **Actions** button:
 
 1.  From the Actions button on the list of Cloud Block Storage Volumes
     -   Click the **Actions** button on the **Volume Details** screen.
@@ -70,8 +63,8 @@ From the **Actions** button:
     numbered snapshot (for instance, My-CBS-Volume-3 for the
     third snapshot).
 4.  Click the **Create Snapshot** button.
-5.  After you click the  **Create Snapshot** button and the **Creating
-    snapshot for volume&mldr;** popup no longer displays, you can safely
+5.  After you click the  **Create Snapshot** button and the "Creating
+    snapshot for volume" popup no longer displays, you can safely
     reattach your volume.
 
     **Note**: The data in the snapshot is instant at the point in time
@@ -81,7 +74,7 @@ From the **Actions** button:
     snapshot is compressed, de-duped, and transferred to Cloud Files
     storage, where it is backed up in triplicate.
 
-From the **Storage Snapshots** screen:
+#### From the **Storage Snapshots** screen:
 
 1.  From the Storage Snapshots screen, click the **Create Snapshot**
     button.
@@ -92,7 +85,7 @@ From the **Storage Snapshots** screen:
     third snapshot).
 4.  Click the **Create Snapshot** button.
 5.  After you click the  **Create Snapshot** button and the "Creating
-    snapshot for volume&mldr;" popup no longer displays, you can safely
+    snapshot for volume" popup no longer displays, you can safely
     reattach your volume.
 
     The note above after the preceding Actions button procedure also
@@ -133,7 +126,4 @@ The larger your volume, the longer it may take to create.
 2.  Click the **Delete Snapshot** link.
 
 
-### Next steps
-
-[Detach and delete Cloud Block Storage
-volumes](/how-to/detach-and-delete-cloud-block-storage-volumes)
+**Next steps:** [Detach and delete Cloud Block Storage volumes](/how-to/detach-and-delete-cloud-block-storage-volumes)

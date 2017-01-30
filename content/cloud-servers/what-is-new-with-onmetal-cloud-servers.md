@@ -1,12 +1,12 @@
 ---
 permalink: what-is-new-with-onmetal-cloud-servers/
-node_id: 4106
+audit_date:
 title: What is new with OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Kyle Laffoon
-last_modified_date: '2016-01-05'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-07-22'
+last_modified_by: Aurimas Mickevicius
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -29,11 +29,8 @@ thinking about moving from colo to cloud, or vice versa:
     API for OnMetal is the OpenStack Nova API. It's familiar to users of
     any OpenStack public cloud. Users don't have to worry about
     vendor lock-in.
-
 -   OnMetal servers are customized for specific workloads.
-
 -   There is no hypervisor, and no virtualization tax.
-
 -   There is no sharing of metal with any other user.
 
 ### Disk structure
@@ -45,7 +42,7 @@ metal machines means less over-engineering, more simplicity and ultimately lower
 Managed Cloud portfolio, you won't spend as much managing your servers.
 
 The chassis is all solid-state. We removed cooling fans from the boxes
-and do not using any spinning media. This reduces heat and vibration,
+and do not use any spinning media. This reduces heat and vibration,
 and helps increase MTBF. In order to deliver the economy of colocation
 that customers require, we optimized the configuration based on specific
 workload requirements like "database transactions per second per dollar"
@@ -54,17 +51,13 @@ configurations:
 
 | Instance name  | CPU/RAM/disk/network         | Description                              |
 |----------------|------------------------------|------------------------------------------|
-|**Compute** (High CPU)   | **10 Cores**, 32 GB RAM, no disk, 10 gigabit   | Latest Xeons optimized for CPU per dollar, perfect for handling web requests and doing background processing. Optimized for high CPU activity like network requests, application logic, web servers, and load balancers. |
-| **High I/O** (High RAM)   | **20 cores, 128 GB RAM, **3.2 TB of PCIe Flash**, 10 gigabit** | Optimized for the best performance per dollar for the most common open source databases. Optimized for high I/O activity like NoSQL and SQL databases                                                                    |
-| **Memory**      | **12 cores, **512 GB RAM**, no disk, 10 gigabit**     | Optimized for the best RAM per dollar ratio or memory-heavy workloads. Especially useful for high RAM activity like in-memory SQL configurations, caching, and searching indexes.   |
+|**OnMetal GP v2 Small**   | **2.4 Ghz, 6 core Intel® Xeon® E5-2620 v3**, 32GB RAM, redundant 800GB hot-swappable SSDs configured in a RAID 1 mirror, redundant 10Gb/s network   | Great for all-around cloud needs and workloads. Perfect for large network requests, load balancers like HA Proxy, handling web server workloads and doing background processing. |
+| **OnMetal GP v2 Medium** | **Dual 2.4 Ghz, 6 core Intel® Xeon® E5-2620 v3**, 64GB RAM, redundant 800GB hot-swappable SSDs configured in a RAID 1 mirror, redundant 10Gb/s network  | Optimized for larger web server workloads and most common open source databases, also container platforms like Docker.    |
+| **OnMetal GP v2 Large**  | **Dual 2.4 Ghz, 6 core Intel® Xeon® E5-2620 v3**, 128GB RAM, redundant 800GB hot-swappable SSDs configured in a RAID 1 mirror, redundant 10Gb/s network  | Optimized for memory-heavy workloads. Especially useful for high RAM activity like in-memory SQL configurations, caching servers, and search indexes.   |
+| **OnMetal I/O v2**  | **Dual 2.6 GHz, 10 core Intel® Xeon® E5-2660 v3**, 128GB RAM, 240GB hot-swappable SSDs configured in a RAID 1 mirror, **Dual Seagate Nytro XP6302 1.6 TB PCIe flash cards**,  redundant 10Gb/s network  | Designed to support low-latency and extreme throughput to local storage. Optimized for large relational databases and NoSQL data stores like Cassandra or MongoDB, latency-sensitive applications, online transaction processing and real-time analytics.   |
 
-The fast 10-gigabit network is used for all instance types, because
-network performance is becoming increasingly important. All OnMetal
-server flavors have a 32 GB system disk. The OnMetal High I/O flavor
-also has two 1.6 TB PCIe flash drives, which are mounted directly into
-**/dev** as regular disks. Rackspace recommends using Linux built-in
-software RAID. OnMetal Compute and Memory flavors only use the 32 GB
-system disk and are considered "diskless", with no data disks. Cloud
+All OnMetal v2 are built on second generation Open Compute hardware, General Purpose v2 utilize Intel Xeon E5-2620 v3 processors and I/O v2 - Intel Xeon E5-2660 v3 processor. Fast and redundant 10-gigabit network is used for all instance types, because
+network performance is becoming increasingly important. Integration with Cloud Networks and RackConnect 3.0 allow to isolate traffic for complete security. All OnMetal v2 server flavors have redundant hot-swappable SSDs configured in a RAID 1 mirror to reduce the risk of lost data. The  I/O v2 flavor also has two Seagate Nytro XP6302 1.6 TB PCIe flash cards for extreme throughput to local storage. Cloud
 Block Storage can be attached to any OnMetal server instance (see
 [Attach a Cloud Block Storage volume to an OnMetal server](/how-to/attach-a-cloud-block-storage-volume-to-an-onmetal-server)
 ). However, configuring the available flash drives as data drives
@@ -106,16 +99,13 @@ information on generating SSH keys, see [Manage SSH Key Pairs for Cloud Servers 
 
 ### Limitations
 
-After an OnMetal server is built, there is a slight delay in network
-availability. Even after the status reads ACTIVE, a few additional
-minutes (3 to 4) are needed for the network configuration to complete.
-After the new OnMetal server pings successfully, you can begin to use
-it.
+After an OnMetal server is built, there is a slight delay in network availability. Even after the status reads ACTIVE, a few additional minutes (3 to 4) are needed for the network configuration to complete. After the new OnMetal server pings successfully, you can begin to use it.
 
-You cannot attach a private network to an OnMetal server. Future
-generations of OnMetal servers will have this capability. Until then,
-use ServiceNet for internal traffic, and remember to secure your OnMetal
-server because ServiceNet is open to other Rackspace customers.
+You can attach a private network to OnMetal V2 servers at boot time, but
+post-boot attachment to OnMetal v2 servers is not supported yet. OnMetal V1
+servers do not support configuration of private networks. With OnMetal v1
+servers, use ServiceNet for internal traffic, and remember to secure your
+OnMetal server because ServiceNet is open to other Rackspace customers.
 
 With no hypervisor, there is also not a web terminal or console as on
 other Rackspace cloud servers. This limits the options available if you

@@ -1,12 +1,12 @@
 ---
 permalink: configure-rackspace-auto-scale-web-hooks-with-rackspace-monitoring/
-node_id: 4703
+audit_date:
 title: Configure Rackspace Auto Scale web hooks with Rackspace Monitoring
 type: article
 created_date: '2015-06-04'
 created_by: Jake Coe
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-05-31'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Autoscale
 product_url: rackspace-auto-scale
 ---
@@ -22,14 +22,11 @@ webhooks is needed for the Auto Scale service to perform correctly.
 
 ### Before you begin
 
-
-Before you can configure the webhooks, you must  [create an Auto Scale
-group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group).
+Before you can configure the webhooks, you must [create an Auto Scale group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group).
 
 ### Create Auto Scale policies
 
-
-1.  In the Cloud Control Panel, select **Servers** > **Auto Scale**.
+1.  In the Cloud Control Panel, select **Servers > Auto Scale**.
 2.  Select your Auto Scale group from the list.
 3.  Scroll down to **Policies** and click **Create Policy**.
 4.  Create two policies, one for scaling up and one for scaling down.
@@ -45,7 +42,6 @@ group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-gr
 
 ### Create a webhook
 
-
 Create a corresponding webhook to activate each of the Auto Scale
 policies you created.
 
@@ -58,25 +54,23 @@ policies you created.
     the next set of steps.
 
     You can now execute a POST request against this URL in order to use
-    your webhook manually via CURL. For more information, see the [Auto
-    Scale Developer
-    Guide](https://developer.rackspace.com/docs/autoscale/v1/developer-guide/#webhooks-and-capability-urls).
-
-
+    your webhook manually via CURL. For more information, see the [Auto Scale Developer Guide](https://developer.rackspace.com/docs/autoscale/v1/developer-guide/#webhooks-and-capability-urls).
 
 ### Set up Rackspace Monitoring
 
-
 1.  On the Scaling group details pages, click the cloud server at the
     bottom of the page.
-2.  Log in to the server and install the Rackspace Monitoring Agent
-    following the instructions in this
-    [article](/how-to/install-and-configure-the-rackspace-monitoring-agent)
+
+2.  Log in to the server and [install the Rackspace Monitoring Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent).
+
 3.  Open Rackspace  Intelligence and click **Notify**.
+
 4.  Create a new **Notification Plan** called **AutoScale**.
+
 5.  Select the notification plan from the list and Select **Add
     Notifications > Create a new notification.**
-6.  In the popup dialog box, specify the following values:****
+
+6.  In the popup dialog box, specify the following values:
     -   **Name**: This name should match the webhook name that you chose
         earlier, for example, **ScaleUp**.
     -   **Type:** Select **Webhook**.
@@ -86,17 +80,25 @@ policies you created.
         **View Webhooks**.
 
 7.  Click **Create and Select Notification**.
+
 8.  At the bottom of the popup dialog box, specify what type of
-    monitoring alarm will trigger the notification. For example, you
+    monitoring alarm will trigger the notification.
+
+    For example, you
     could specify that the ScaleUp notification is triggered when an
     alarm of Critical or Warning occurs, and that ScaleDown is triggered
     if the monitoring is set to OK.
+
 9.  Click Save **Notification Plan**.
+
 10. At the top of the Rackspace Intelligence window, click
     **Monitor**.
+
     The cloud server is listed.
+
 11. Click the cloud server name, and on the details page, click **Create
     Check** under Monitoring Checks.
+
 12. Enter the following information:
     -   **Check Type:** You can select from the list a wide range of
         monitoring checks such as CPU or Memory. Select the type of
@@ -104,6 +106,7 @@ policies you created.
     -   **Check Name:** Enter a name to easily identify the check.
 
 13. Click **Create Check**.
+
     The details page for the check is displayed.
 
 14. To set up the alarm criteria that will trigger the monitoring check

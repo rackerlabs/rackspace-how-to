@@ -1,11 +1,11 @@
 ---
 permalink: getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases/
-node_id: 721
+audit_date:
 title: Getting Started With Cloud Sites - Creating Sub-domains and/or Domain Aliases
 type: article
 created_date: '2011-03-23'
 created_by: Rackspace Support
-last_modified_date: '2015-12-28'
+last_modified_date: '2016-06-16'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
@@ -44,15 +44,9 @@ example: www.photos.example.com.
 
 -   Log into the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
 -   Navigate to **Hosting > Cloud Sites**
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases/cloudsites.png %}" alt="" />
-
 -   Enter the subdomain and domain name into the **Domain Name** text
     box (i.e. subdomain.yourdomain.com)
 -   Click **Add New Site**
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases/addsubdomain.png %}" alt="" />
-
 -   Choose the length of time for which you want to purchase the domain
     name (only if you haven't already registered the domain). Click
     **Next Step**
@@ -75,34 +69,24 @@ easy on Cloud Sites when you follow these simple directions:
 
 -   Log into the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
 -   Navigate to **Hosting > Cloud Sites**
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases/cloudsites.png %}" alt="" />
-
 -   Under **Add a New Website** select the Site Owner from the
     pull-down menu. The Site Owner needs to be the same client account
-    as the domain you are going to alias to
+    as the domain to which you are going to alias
 -   Type the domain or subdomain in the **Domain Name** text box and
     click **Add New Site**
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases/namesite.png %}" alt="" />
-
 -   On the next page choose to either register the domain, or if you
     already own it, simply indicate that you would like to "Set up the
     website without registering the domain." Click **Next Step**
 -   Scroll down until you see the **Other Options** tab. Once there,
     select **Point to another website (alias)** and click **Next Step**
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases/choosealias.png %}" alt="" />
-
 -   Select the website you want to point to from the list, and click
     **Next Step**
 
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases/selectalias.png %}" alt="" />
 
-That's all there is to it! You've now added a domain alias. The domain
+You've now added a domain alias. The domain
 alias will now direct traffic to the domain you selected.
 
-For additional information on Rackspace Cloud DNS, see [Using Cloud DNS](/how-to/rackspace-cloud-dns).
+For additional information on Rackspace Cloud DNS, see [Rackspace Cloud DNS overview](/how-to/rackspace-cloud-dns-overview).
 
 ### Next section
 

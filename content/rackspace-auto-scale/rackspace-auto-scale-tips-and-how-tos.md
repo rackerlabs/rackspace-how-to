@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-auto-scale-tips-and-how-tos/
-node_id: 3849
+audit_date:
 title: "Rackspace Auto Scale tips and how-to's"
 type: article
 created_date: '2014-01-14'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-09-12'
+last_modified_by: Kyle Laffoon
 product: Rackspace Autoscale
 product_url: rackspace-auto-scale
 ---
@@ -65,10 +65,8 @@ If ServiceNet is not part of the configuration, this action fails. To
 recover from this failure, Auto Scale deletes the server that it built,
 which results in no active servers.
 
-You can avoid this problem by adding ServiceNet to the list of networks
-for the Auto Scale group. In the future, Auto Scale will validate
-that the ServiceNet network is part of the launch configuration if a
-load balancer is configured.
+Avoid this problem by adding ServiceNet to the list of networks for
+the Auto Scale group.
 
 ### Connect Auto Scale to a single Tsvld[svr] monitoring alarm
 
@@ -394,8 +392,7 @@ Example RackConnect metadata key and value pair for Auto Scale:
 
 ### Use Auto Scale to change the size of your General Purpose or work-optimized server
 
-General Purpose and work-optimized servers do not resize as simply as
-first-generation and Standard servers. You have to go through a process
+General Purpose and work-optimized servers do not resize as simply as Standard servers. You have to go through a process
 to resize, detailed in [Upgrading resources for General Purpose or I/O
 optimized Cloud
 Servers](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers), in
@@ -404,8 +401,7 @@ use Auto Scale to accomplish server resizing, keeping your IP address,
 and have it happen dynamically in response to load. You pay for the
 higher-flavor servers (for example, General Purpose and
 work-optimized) only when you need them, and when you don't need them,
-you can scale back down to lower-flavor servers (for example,
-first-generation and Standard) - or keep the higher-flavor servers and
+you can scale back down to lower-flavor servers (for example, Standard) - or keep the higher-flavor servers and
 just scale back how many servers are in your group.
 
 When you're ready to set up your scaling system to resize servers

@@ -1,6 +1,6 @@
 ---
 permalink: cloud-orchestration-support-for-rackconnect-v30/
-node_id: 4559
+audit_date:
 title: Cloud Orchestration support for RackConnect v3.0
 type: article
 created_date: '2015-02-11'
@@ -11,27 +11,23 @@ product: RackConnect
 product_url: rackconnect
 ---
 
-Rackspace Cloud Orchestration support for RackConnect v3.0 is now available. This support enables you
+Rackspace Cloud Orchestration support for RackConnect v3.0 enables you
 to build a stack of RackConnect v3.0 cloud servers and have them
 automatically provisioned on your RackConnect v3.0 cloud network,
-assigned public IP addresses, and have them automatically added to your
+assigned public IP addresses, and automatically added to your
 dedicated load balancer pools. When you use Cloud Orchestration, the
-RackConnect v3.0 API calls need to assign a public IP address to a cloud
-server and add it to a load balancer pool are all handled by Cloud
+RackConnect v3.0 API calls needed to assign a public IP address to a cloud
+server and add it to a load balancer pool are handled by Cloud
 Orchestration.
 
-**Note:** Managed operations customers must
+**Note:** Managed Operations customers must
 provide ServiceNet along with the RackConnect
 network.
 
 More details about Cloud Orchestration are available in the following documents:
 
--   [Quickstart for Cloud Orchestration - API
-    v1.0](https://developer.rackspace.com/docs/orchestration/getting-started/)
--   [Rackspace Cloud Orchestration Developer Guide - API
-    v1](https://developer.rackspace.com/docs/cloud-orchestration/v1/developer-guide/)
--   [Rackspace Cloud Orchestration Templates User Guide  - API
-    v1.0](https://developer.rackspace.com/docs/user-guides/orchestration/)
+-   [Rackspace Cloud Orchestration API v1 Developer Guide](https://developer.rackspace.com/docs/cloud-orchestration/v1/developer-guide/)
+-   [Rackspace Cloud Orchestration API v1 Templates User Guide](https://developer.rackspace.com/docs/user-guides/orchestration/)
 -   [Cloud Orchestration FAQ](/how-to/cloud-orchestration-faq)
 
 Although an official RackConnect v3.0 heat template has not been
@@ -48,7 +44,7 @@ resources available with Cloud Orchestration by running the
     heat resource-type-show "Rackspace::RackConnect::PublicIP"
 
 Following is an example of the parameter and resource entries that you
-can use to create a RackConnect v3.0 Heat template. These entries create
+can use to create a RackConnect v3.0 heat template. These entries create
 a cloud server on a RackConnect v3.0 cloud network, add that cloud
 server to a dedicated load balancer pool, and allocate a public IP
 address to the cloud server.
@@ -104,5 +100,5 @@ address to the cloud server.
             rax-heat: { get_param: "OS::stack_id" }
             stack-name: { get_param: "OS::stack_name" }
 
-If you have any questions, please reach out to us. Our contact information is available on the [Contact Us](/how-to/support)
+If you have any questions, reach out to us. Our contact information is available on the [Contact Us](/how-to/support)
 page.

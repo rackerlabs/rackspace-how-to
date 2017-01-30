@@ -1,6 +1,6 @@
 ---
 permalink: cloud-databases-developer-resources-and-how-to-articles/
-node_id: 1721
+audit_date:
 title: 'Cloud Databases: Developer resources and how-to articles'
 type: article
 created_date: '2012-07-24'

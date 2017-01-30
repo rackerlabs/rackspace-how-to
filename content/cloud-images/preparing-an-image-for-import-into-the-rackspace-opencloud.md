@@ -1,11 +1,11 @@
 ---
 permalink: preparing-an-image-for-import-into-the-rackspace-opencloud/
-node_id: 3905
+audit_date:
 title: Preparing an image for import into the Rackspace OpenCloud
 type: article
 created_date: '2014-02-16'
 created_by: Cloud Images
-last_modified_date: '2016-01-18'
+last_modified_date: '2016-04-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Images
 product_url: cloud-images
@@ -18,21 +18,27 @@ and instructions.
 
 ### General Requirements
 
--   **The image must be a single file in the VHD file format**.
+-   The image must be a single file in the VHD file format.
+
     **Note**: A Cloud Files object, whether a Dynamic Large Object or a
     Static Large Object, is considered to be a single file for
     this purpose.
+
 -   Images must not expand to a system disk larger than 40 GB.
+
 -   If you have exported an image from the Rackspace OpenCloud it will
     already be in the VHD format required for import.
+
     **Note**: Images with system disks larger than 40 GB can be
     exported, but cannot be imported into the Rackspace open cloud.
 
 ### Microsoft Windows
 
 Microsoft product use rights do not allow the use of License Mobility
-for Windows licenses. *Given the limitations related to this software
-platform, image import is not available for Windows images.*
+for Windows licenses.
+
+**Note:** Given the limitations related to this software
+platform, image import is not available for Windows images.
 
 ### Preparing an image offline using XenServer
 
@@ -43,10 +49,8 @@ installation of XenServer.
 For instructions for preparing an image on Linux, see the following
 articles:
 
--   [Creating a CentOS 6.5 Image for the Rackspace open
-    cloud](/how-to/creating-a-centos-65-image-for-the-rackspace-open-cloud "Creating a CentOS 6.5 Image for the Rackspace open cloud")
--   [Creating an Ubuntu 13.10 Image for the Rackspace open
-    cloud](/how-to/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud-0 "Creating an Ubuntu 13.10 Image for the Rackspace open cloud")
+-   [Creating a CentOS 6.5 Image for the Rackspace open cloud](/how-to/creating-a-centos-65-image-for-the-rackspace-open-cloud)
+-   [Creating an Ubuntu 13.10 Image for the Rackspace open cloud](/how-to/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud)
 
 ### Preparing an image online in another cloud
 
@@ -77,18 +81,14 @@ Basically, we suggest that you do the following:
 Racker Mike Metral has put together a tutorial on the Rackspace DevOps
 Blog that walks you through this process. His example shows you how
 prepare a QCOW image and convert it to the VHD format so that you can
-import it. Please see [Bootstrap Your QCOW Images for the Rackspace
-Public
-Cloud](https://developer.rackspace.com/blog/bootstrap-your-qcow-images-for-the-rackspace-public-cloud/).
+import it. Please see [Bootstrap Your QCOW Images for the Rackspace Public Cloud](https://developer.rackspace.com/blog/bootstrap-your-qcow-images-for-the-rackspace-public-cloud/).
 
 ### Alternative method
 
 Preparing an image for import into the Rackspace OpenCloud is somewhat
-complicated. As an alternative, consider using boot.rackspace.com, which
+complicated. As an alternative, consider using **boot.rackspace.com**, which
 enables you to prepare an image directly inside the Rackspace OpenCloud.
 For details, see the following posts in the Rackspace DevOps Blog:
 
--   [Introducing
-    boot.rackspace.com](http://developer.rackspace.com/blog/introducing-boot-dot-rackspace-dot-com.html)
--   [Custom Images via boot.rackspace.com - Training Wheels
-    Included](http://developer.rackspace.com/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included.html)
+-   [Introducing boot.rackspace.com](http://developer.rackspace.com/blog/introducing-boot-dot-rackspace-dot-com.html)
+-   [Custom Images via boot.rackspace.com - Training Wheels Included](http://developer.rackspace.com/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included.html)

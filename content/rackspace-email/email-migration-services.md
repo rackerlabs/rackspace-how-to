@@ -1,12 +1,12 @@
 ---
 permalink: email-migration-services/
-node_id: 3619
+audit_date: '2016-11-03'
 title: Email migration services
 type: article
 created_date: '2013-07-15'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-11-03'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -26,7 +26,7 @@ Run your migration at any time of the day or night with MigrationWiz, which is a
 
 The benefits of using the self-service tool are as follows:
 
--   Migrate from any provider to Hosted Exchange or Rackspace Email
+-   Migrate from any provider to Hosted Exchange, Rackspace Email, or Rackspace Office 365
 -   Includes a no-cost trial migration
 -   Migrates contacts, calendars, tasks, and notes data when moving from
     Exchange to Exchange
@@ -66,7 +66,7 @@ our services.
 |--------------------|-------------------|------------|-----------------|----------|----------|-------|-------|
 | POP                | X                 |            |                 |          |          |       |       |
 | IMAP               | X                 | X          | X               |          |          |       |       |
-| Microsoft Exchange | X                 | X          | X               | X        | X        | X     | X     |
+| Microsoft Exchange or Office 365 | X                 | X          | X               | X        | X        | X     | X     |
 
 ### Rackspace archive services
 
@@ -100,9 +100,9 @@ submit a request via a ticket and we'll take care of the rest.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Upgrade from Exchange 2007 or 2010 to Exchange 2013</td>
+<td align="left">Upgrade from Exchange 2007, 2010, or 2013 to Exchange 2016</td>
 <td align="left">No charge</td>
-<td align="left">None</td>
+<td align="left">This type of migration requires all users on the domain to migrate.</td>
 </tr>
 <tr class="even">
 <td align="left">Platform changes</td>
@@ -115,12 +115,12 @@ submit a request via a ticket and we'll take care of the rest.
 <tr class="odd">
 <td align="left">Domain rename</td>
 <td align="left">No charge</td>
-<td align="left">$50 if Rackspace archiving is enabled for the domain</td>
+<td align="left">$50 if Rackspace archiving is enabled for the domain.</td>
 </tr>
 <tr class="even">
-<td align="left">Mailbox rename</td>
+<td align="left">Hosted Exchange Mailbox rename</td>
 <td align="left">No charge</td>
-<td align="left">None</td>
+<td align="left">Rackspace Email mailboxes can be renamed inside your mail control panel.</td>
 </tr>
 <tr class="odd">
 <td align="left">Mailbox data migrations</td>
@@ -132,3 +132,7 @@ submit a request via a ticket and we'll take care of the rest.
 
 **Note**: Charges for internal migration services are applied to the
 next month's statement.
+
+#### Self-service Exchange Upgrade Tool
+
+Customers can now schedule and run their own Hosted Exchange upgrades at rackspacemigrations.com. For more information, see the article [Upgrading to Exchange 2016](/how-to/upgrading-to-exchange-2016/).

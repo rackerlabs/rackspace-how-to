@@ -1,12 +1,12 @@
 ---
 permalink: create-a-grafana-dashboard-for-rackspace-metrics/
-node_id: 4866
+audit_date:
 title: Create a Grafana dashboard for Rackspace Metrics
 type: article
 created_date: '2015-10-19'
 created_by: Constanze Kratel
-last_modified_date: '2016-02-15'
-last_modified_by: Nate Archer
+last_modified_date: '2016-12-13'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
@@ -21,6 +21,8 @@ This article describes how to deploy a Grafana instance for Rackspace
 Metrics by using a custom Cloud Orchestration template. It also provides
 instructions on how to upload a Grafana dashboard for a database
 instance.
+
+If you would prefer to deploy Grafana without the custom Cloud Orchestration template or upgrade your existing Grafana instance, see the project wiki page: <https://github.com/rackerlabs/blueflood/wiki/Grafana-3.0-with-Blueflood-datasource>.
 
 ### Deploy the Grafana instance for Rackspace Metrics
 
@@ -43,11 +45,10 @@ To create a Grafana dashboard, complete the following steps:
 
 7.  Click **Create Template**.
     Your template is created, which might take a few minutes.
-    After the template is complete, you will see a page that displays
+    After the template is complete, a details page displays that shows
     information about your custom template, including a description.
 
-    <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-customized-template1.png %}" width="513" height="297" />
-
+    <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-customized-template1.png %}" width="513"/>
 
 8.  From the **Actions** menu, choose **Create Stack from Template**.
 9.  On the **Create Stack** page, enter a name for the stack and then
@@ -62,15 +63,12 @@ To create a Grafana dashboard, complete the following steps:
     The stack details page is displayed.
     While the stack is being built, the **Status** is **Building**.
 
-    <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-create-stack-building.png %}" width="449" height="400" />
-
-
 When the stack has finished building, the **Status** field changes to
 **Up**. The page also displays an IP address, a Grafana auth password,
 and a Grafana auth username that you can use to access your Grafana
 dashboard. Be sure to record this information.
 
-<img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-metrics-up1.png %}" width="408" height="600" />
+<img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-metrics-up1.png %}" width="408"/>
 
 ### Use the Grafana dashboard
 
@@ -79,11 +77,15 @@ Now that you have created your stack, you can access the Grafana dashboard that 
 To access the Grafana dashboard, perform the following steps:
 
 1.  Open a web browser.
-2.  Type the IP address in the address bar. 
+
+2.  Type the IP address in the address bar.
+
     You are prompted with an authentication page.
+
 3.  Type the username and password that were displayed after you created
     the stack and click **Log In**.
-    Your Grafana dashboard is displayed.
+
+4.  Create your Grafana dashboard from Rackspace Monitoring data by pasting the JSON code found in this [orchestration template](https://github.com/rackspace-orchestration-templates/grafana/blob/master/dashboards/default_dashboard.json).
 
     <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-home-page_0.png %}" width="432" height="284" />
 
@@ -135,9 +137,8 @@ complete the following steps:
     your database instance.
 
     <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-replace-entty-id1.png %}" width="639" height="76" />
-3.  On the Grafana dashboard, click the folder icon in the top-right corner, click **Import**, click **Choose File**, and then upload     the file to Grafana.
 
-    <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-JSON-file-upload.png %}" width="432" height="184" />
+3.  On the Grafana dashboard, click the folder icon in the top-right corner, click **Import**, click **Choose File**, and then upload the file to Grafana.
 
     The dashboard automatically appears and displays your MySQL database
     instances.
@@ -145,15 +146,7 @@ complete the following steps:
     <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-mysql-data.png %}" width="428" height="337" />
 
 #### (Optional) Use Annotation
-With annotation support, users can submit change event to show along with the graph, adding additional information for the graph on the dashboard. See [Use annotation metrics](/how-to/use-annotation-metrics) for additional information. 
-
-#### (Optional) Use Enum metrics
-
-The enum metrics release will allow you to push state based metrics (enums) and get the report from API on the frequency of occurrence of the values. For example, a common report for the IT teams to provide the uptime report based on the occurrences of the response codes from the server, or the state of the alerts during a period of time. Enum support is a stepping stone by providing the data to be used in report or visualization.  See [Use enum suport](/how-to/use-enum-metrics-support) for additional information.
-
-For API commands and additonal information about sending enum metrics, see [Sending enum metrics](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#sending-enum-metrics) in the API documentation.
-
-For API command and additional informationon about retrieving enum metrics, see [Retrieving enum metrics](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#retrieving-enum-metrics) in the API documentation.
+With annotation support, users can submit change event to show along with the graph, adding additional information for the graph on the dashboard. See [Use annotation metrics](/how-to/use-annotation-metrics) for additional information.
 
 ### Grafana FAQ
 

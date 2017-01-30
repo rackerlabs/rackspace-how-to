@@ -1,6 +1,6 @@
 ---
 permalink: request-an-sla-credit/
-node_id: 4754
+audit_date:
 title: Request an SLA credit
 type: article
 created_date: '2015-07-21'
@@ -12,7 +12,7 @@ product_url: undefined
 ---
 
 Every Rackspace product is backed by an industry-leading service level
-agreement (SLA). You can read these agreements at
+agreement (SLA). You can read this agreement at
 <http://www.rackspace.com/information/legal/cloud/sla>. If you
 experience a technical or other issue for which you want to receive an
 SLA credit, follow the procedure in this article.
@@ -21,21 +21,19 @@ SLA credit, follow the procedure in this article.
 
 To receive a credit, the SLA incident must meet the following criteria:
 
--   The SLA incident must have occurred within the last 30 days
--   For specific concerns not mentioned in the SLA, the issue must have occurred within the last 60 days
--   Account balances must be current
+-   The SLA incident must have occurred within the last 30 days.
+-   For specific concerns not mentioned in the SLA, the issue must have occurred within the last 60 days.
+-   Account balances must be current.
 -   You must meet SLA requirements and obligations within the agreed
-    upon Terms of Service
+    upon Terms of Service.
 
 If you meet this criteria, then you can request an account credit.
 
 ### Request an SLA credit
 
-Follow these steps to request your SLA credit:
-
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
-2. Create a support ticket and enter **Credit Request** in the subject field.
+2. Create a support ticket and enter **Credit Request** in the **Subject** field.
 
 3. In the **Message** field, provide the following information:
     -   Services affected
@@ -49,7 +47,7 @@ Follow these steps to request your SLA credit:
 
 4. Click **Submit Ticket**.
 
-Allow 3-5 business days for Rackspace to receive and review your credit
+Allow 3 to 5 business days for Rackspace to receive and review your credit
 request, and to update your support ticket.
 
 ### Issues not addressed by the SLA
@@ -63,5 +61,5 @@ failed you.
 Rackspace will not issue a credit for cases in which the Rackspace Terms
 of Service or Acceptable Use Policy are violated.
 
-Contact the Rackspace Cloud support team at 1 800 961 4454 (US toll
-free) if you have any problems not addressed in this article.
+If you have any problems not addressed in this article, contact the Rackspace Cloud support team at 1 800 961 4454 (US toll
+free).

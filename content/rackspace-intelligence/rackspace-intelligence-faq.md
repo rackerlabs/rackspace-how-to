@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-intelligence-faq/
-node_id: 4682
+audit_date:
 title: Rackspace Intelligence FAQ
 type: article
 created_date: '2015-05-15'
@@ -37,12 +37,9 @@ have a Cloud services account, log in to
 <https://intelligence.rackspace.com> using your Rackspace Cloud
 credentials.
 
-#### Can I use Rackspace Intelligence for both Cloud and Dedicated resources?
+#### Can I use Rackspace Intelligence for both Cloud and Dedicated accounts?
 
-Currently you can use Rackspace Intelligence for your Cloud resources
-only. The Rackspace Intelligence development team is working to enable
-you to use it for your Dedicated resources also. We expect this to be
-available soon and will keep you updated.
+Yes, both Cloud and Dedicated accounts have access to Rackspace Intelligence. For more information, see [Getting Started with Rackspace Intelligence for the cloud](/how-to/getting-started-with-rackspace-intelligence-for-the-cloud) and [Getting Started with Rackspace Intelligence for dedicated accounts](/how-to/getting-started-with-rackspace-intelligence-for-dedicated-accounts).
 
 #### What are the benefits of using Rackspace Intelligence?
 
@@ -73,7 +70,7 @@ with a Cloud services account.
 Rackspace Intelligence currently does not expose an API. However, many
 monitoring-related features, such as the creation and editing of checks
 and alarms, are built using the
-[Rackspace Monitoring API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-developer-guide).
+[Rackspace Monitoring API](https://developer.rackspace.com/docs/rackspace-monitoring/v1/).
 
 ------------------------------------------------------------------------
 
@@ -134,12 +131,10 @@ a certain status is returned by the check.
 
 We plan to provide the following features in future releases:
 
--   Customizable dashboards: Provides the ability to customize your
-    dashboard in Rackspace Intelligence by adding widgets for graphs,
-    drag-and-drop widgets, and more.
--   Details for a monitoring alert: Provides a single page with all the
-    relevant information and insights to help you understand why an
-    issue happened and what steps are needed to resolve it.
--   Access to Rackspace Intelligence for Rackspace Dedicated customers:
-    Provides the ability for Dedicated customers to also access
-    Rackspace Intelligence for their devices.
+-   **Available in GA** - Access to Rackspace Intelligence for Rackspace
+    Dedicated customers: Provides the ability for Dedicated customers to also
+    access Rackspace Intelligence for their devices.
+
+-   **Available in future** - Customizable dashboards: Provides the ability to
+    customize your dashboard in Rackspace Intelligence by adding widgets for
+    graphs, drag-and-drop widgets, and more.

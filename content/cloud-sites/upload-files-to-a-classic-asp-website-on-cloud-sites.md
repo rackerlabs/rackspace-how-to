@@ -1,6 +1,6 @@
 ---
 permalink: upload-files-to-a-classic-asp-website-on-cloud-sites/
-node_id: 654
+audit_date:
 title: Upload files to a classic ASP website on Cloud Sites
 type: article
 created_date: '2011-03-16'

@@ -1,12 +1,12 @@
 ---
 permalink: list-cloud-servers-and-cloud-server-information/
-node_id: 3735
+audit_date:
 title: List Cloud Servers and Cloud Server Information
 type: article
 created_date: '2013-10-23'
 created_by: Rose Contreras
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Coste
+last_modified_date: '2016-07-05'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -50,11 +50,36 @@ whether the region you selected supports General Purpose Cloud Servers:
 
 **Server list for General Purpose and Compute, I/O, or Memory servers**
 
-<img src="{% asset_path cloud-servers/list-cloud-servers-and-cloud-server-information/Screen%20Shot%202013-10-11%20at%205.03.29%20PM_0_0.png %}" width="791" height="205" />
+    +------------------+--------------------+-----------+------+-----------+------+-------+-------------+-----------+
+    | ID               | Name               | Memory_MB | Disk | Ephemeral | Swap | VCPUs | RXTX_Factor | Is_Public |
+    +------------------+--------------------+-----------+------+-----------+------+-------+-------------+-----------+
+    | 2                | 512 MB Standard    | 512       | 20   | 0         | 512  | 1     | 88.0        | N/A       |
+    | 3                | 1 GB Standard      | 1024      | 40   | 0         | 1024 | 1     | 120.0       | N/A       |
+    | 4                | 2 GB Standard      | 2048      | 80   | 0         | 2048 | 2     | 240.0       | N/A       |
+    | 5                | 4 GB Standard      | 4096      | 160  | 0         | 2048 | 2     | 400.0       | N/A       |
+    | 6                | 8 GB Standard      | 8192      | 320  | 0         | 2048 | 4     | 600.0       | N/A       |
+    | 7                | 15 GB Standard     | 15360     | 620  | 0         | 2048 | 6     | 800.0       | N/A       |
+    | 8                | 30 GB Standard     | 30720     | 1200 | 0         | 2048 | 8     | 1200.0      | N/A       |
+    | performance2-120 | 120 GB Performance | 122880    | 40   | 1200      |      | 32    | 10000.0     | N/A       |
+    | performance2-15  | 15 GB Performance  | 15360     | 40   | 150       |      | 4     | 1250.0      | N/A       |
+    | performance2-30  | 30 GB Performance  | 30720     | 40   | 300       |      | 8     | 2500.0      | N/A       |
+    | performance2-60  | 60 GB Performance  | 61440     | 40   | 600       |      | 16    | 5000.0      | N/A       |
+    | performance2-90  | 90 GB Performance  | 92160     | 40   | 900       |      | 24    | 7500.0      | N/A       |
+    +------------------+--------------------+-----------+------+-----------+------+-------+-------------+-----------+
 
 **Server list for only General Purpose servers**
 
-<img src="{% asset_path cloud-servers/list-cloud-servers-and-cloud-server-information/Screen%20Shot%202013-10-11%20at%205.04.01%20PM_0_0.png %}" width="787" height="168" />
+    +------------------+--------------------+-----------+------+-----------+------+-------+-------------+-----------+
+    | ID               | Name               | Memory_MB | Disk | Ephemeral | Swap | VCPUs | RXTX_Factor | Is_Public |
+    +------------------+--------------------+-----------+------+-----------+------+-------+-------------+-----------+
+    | 2                | 512 MB Standard    | 512       | 20   | 0         | 512  | 1     | 88.0        | N/A       |
+    | 3                | 1 GB Standard      | 1024      | 40   | 0         | 1024 | 1     | 120.0       | N/A       |
+    | 4                | 2 GB Standard      | 2048      | 80   | 0         | 2048 | 2     | 240.0       | N/A       |
+    | 5                | 4 GB Standard      | 4096      | 160  | 0         | 2048 | 2     | 400.0       | N/A       |
+    | 6                | 8 GB Standard      | 8192      | 320  | 0         | 2048 | 4     | 600.0       | N/A       |
+    | 7                | 15 GB Standard     | 15360     | 620  | 0         | 2048 | 6     | 800.0       | N/A       |
+    | 8                | 30 GB Standard     | 30720     | 1200 | 0         | 2048 | 8     | 1200.0      | N/A       |
+    +------------------+--------------------+-----------+------+-----------+------+-------+-------------+-----------+
 
 Copy the ID of the configuration that you want to use from the ID field.
 You need it to create your server. To create a cloud server with nova
@@ -68,14 +93,14 @@ server to create (Windows or Linux) and the server configuration that
 best meets your needs. Each server option has a unique configuration of
 RAM, CPU, and disk space.
 
-1.  Log in to the Cloud Control Panel.
-2.  On the Cloud Servers page, click **Create Server**.
-3.  Enter a name and choose a location for your server.
-4.  Select the operating system for your server.
-5.  Select the configuration (flavor) by choosing the class of server:
-    General Purpose, Compute, I/O, or Memory.
-6.  Use the slider bar to select the configuration of your server.
-    The following information is listed for each configuration:
+1. Log in to the Cloud Control Panel.
+2. On the Cloud Servers page, click **Create Server**.
+3. Enter a name and choose a location for your server.
+4. Select the operating system for your server.
+5. Select the configuration (flavor) by choosing the class of server: General Purpose, Compute, I/O, or Memory.
+6. Use the slider bar to select the configuration of your server.
+
+   The following information is listed for each configuration:
     -   CPU - The number of vCPUs
     -   RAM - The amount of RAM
     -   Boot Source - Allows you to boot a server from a remotely
@@ -88,10 +113,7 @@ RAM, CPU, and disk space.
         with the I/O speed of other configurations - Good, Better, or
         Best
 
-A description of the selected configuration can help you decide if the
-configuration is right for you.
-
-<img src="{% asset_path cloud-servers/list-cloud-servers-and-cloud-server-information/CP-PF_IMG.png %}" alt="" />
+   A description of the selected configuration can help you decide if the configuration is right for you.
 
 When you are satisfied with your server information and configuration,
 click **Create Server.**

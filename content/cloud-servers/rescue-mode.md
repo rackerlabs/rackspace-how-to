@@ -1,12 +1,12 @@
 ---
 permalink: rescue-mode/
-node_id: 1358
+audit_date:
 title: Rescue Mode
 type: article
 created_date: '2012-03-27'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-07-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -40,24 +40,18 @@ booting into single-user mode with networking enabled.
 **Getting your server into Rescue mode**
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/),
-    and click **Servers**.
+    and click **Servers > Cloud Servers** in the top navigation bar.
 
-2.  From your list of servers, click the Actions cog next to the server
+2.  From your list of servers, click the gear icon next to the server
     that you want to bring up in Rescue Mode and select **Enter Rescue
     Mode** from the drop-down menu.
-
-    <img src="{% asset_path 'cloud-servers/rescue-mode/Enter%20Rescue%20Mode%20in%20Action%20Cog.png' %}" alt="" />
 
 3.  Read the text in the Rescue Mode pop-over and then click **Enter
     Rescue Mode**.
 
-    <img src="{% asset_path 'cloud-servers/rescue-mode/Enter%20Rescue%20Mode.png' %}" alt="" />
-
 4.  The temporary password is displayed. Copy the password to a safe
     location since you won't be able to see it again after closing
     this message.
-
-    <img src="{% asset_path 'cloud-servers/rescue-mode/Rescue%20Mode%20Temporary%20Password_2.png' %}" alt="" />
 
 5.  After copying the temporary password click **Dismiss Password**.
 
@@ -65,14 +59,10 @@ The server will start to enter Rescue Mode and display an orange status
 field next to the server name. The initial status should be **Preparing
 Rescue**.
 
-<img src="{% asset_path 'cloud-servers/rescue-mode/Preparing%20Rescue%20Mode.png' %}" alt="" />
-
 When the Rescue Mode build is complete, the status will turn red and
 display **Rescue**.
 
-<img src="{% asset_path 'cloud-servers/rescue-mode/server_in_rescue.png' %}" alt="" />
-
-Notice that the rescue environment is limited to 24 hours. This means
+**Note:** The rescue environment is limited to 24 hours. This means
 that you will have one day to correct the problems on your server before
 it automatically reverts to its original state.
 
@@ -80,8 +70,6 @@ it automatically reverts to its original state.
 
 You can now use an SSH client to connect to your server using the public
 IP address and the temporary root password to login to Rescue Mode.
-
-<img src="{% asset_path cloud-servers/rescue-mode/RootAtRescue.png %}" alt="" />
 
 ### Troubleshooting your server in Rescue Mode
 
@@ -95,7 +83,7 @@ After you've logged into your server in Rescue Mode, run the command:
 
     fdisk -l
 
-You'll get output that looks similar to what is below:
+Your output should look similar to the following output:
 
 <img src="{% asset_path cloud-servers/rescue-mode/fdisk.png %}" alt="" />
 

@@ -1,6 +1,6 @@
 ---
 permalink: download-a-skype-for-business-client/
-node_id: 4024
+audit_date:
 title: Download a Skype for Business client
 type: article
 created_date: '2014-04-16'

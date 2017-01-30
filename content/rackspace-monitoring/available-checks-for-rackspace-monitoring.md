@@ -1,29 +1,32 @@
 ---
 permalink: available-checks-for-rackspace-monitoring/
-node_id: 3649
+audit_date: '2016-01-22'
 title: Available checks for Rackspace Monitoring
 type: article
 created_date: '2013-08-19'
 created_by: Jim Culbreath
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-12-12'
+last_modified_by: Shane Duan 
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
 
-In the Cloud Control Panel, you can choose to set monitoring checks on your servers. This article explains each check and the options that you can set for them. For information about setting up one of these monitoring checks, see [Create a monitoring check using the Cloud Control Panel](/how-to/creating-a-monitoring-check-using-the-cloud-control-panel).
+In the Cloud Control Panel, you can choose to set most common monitoring checks on your servers. This article explains these common check and the options that you can set for them on Cloud Control Panel. For information about setting up one of these monitoring checks, see [Create a monitoring check using the Cloud Control Panel](/how-to/creating-a-monitoring-check-using-the-cloud-control-panel).
 
-For API check definitions, see the [Rackspace Monitoring developer documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/check-type-reference).
+### All other Rackspace Monitoring checks
 
+For configuration of all the supported checks and plugin checks, suppressions, notification plans, see [Rackspace Intelligence documentation](/how-to/getting-started-with-rackspace-intelligence-for-the-cloud/).
+
+For complete list of checks you can create with Rackspace Monioring, see [Rackspace Monitoring checks and alarms](/how-to/rackspace-monitoring-checks-and-alarms/).
+
+### Available monitoring checks through Cloud Control Panel for Cloud Servers
 Monitoring checks and alarms are located in the Cloud Servers section of the Cloud Control Panel.
 
 - You can create a check by clicking the gear icon next to your individual server name and selecting **Create Check**.
 - To edit a check, click on the server name and scroll to the **Monitoring Checks** section of the server details page. From there, you can click a check name and make changes to it.
 
-### Available monitoring checks
-This section lists each check that you can create for your server, the options that you can set when you create the check, and the options that you can edit for an existing check.
 
-### HTTP
+#### HTTP
 When you create an HTTP check, you can set the URL and specific body context with regular expressions allowed. Click **Advanced Options** to open a **Body Match** text box in which you can provide more syntax.
 
 You can edit the following options for an existing HTTP check:
@@ -33,7 +36,7 @@ You can edit the following options for an existing HTTP check:
 - **Parameters**: Set how often the check runs and when it will time out, as well as which regions the check uses.
 - **Alarms**: Edit existing alarms or click **Create Alarm** to add an alarm
 
-### TCP
+#### TCP
 When you create a TCP check, you can set the port that you want to monitor for connectivity. Provide the following information:
 
 - Port number
@@ -46,7 +49,7 @@ You can edit the following options for an existing TCP check:
 - **Parameters**: Set how often the check will run and when it will time out.
 - **Alarms**: Edit existing alarms or click **Create Alarm** to add an alarm.
 
-### Ping
+#### Ping
 
 When you create a Ping check, you can select a name and select the target type as IP address or host name.
 
@@ -56,7 +59,7 @@ You can edit the following options for an existing Ping check:
 - **Parameters**: Set how often the check runs and when it will time out, as well as which regions the check will use.
 - **Alarms**: Edit existing alarms or click **Create Alarm** to add an alarm.
 
-### Memory
+#### Memory
 
 There are no special settings when you create a Memory check.
 
@@ -65,7 +68,7 @@ You can edit the following options for an existing Memory check:
 - **Parameters**: Set how often the check will run and when it will time out.
 - **Alarms**: Edit existing alarms or click **Create Alarm** to add an alarm.
 
-### CPU
+#### CPU
 
 There are no special settings with you create a CPU check.
 
@@ -74,7 +77,7 @@ You can edit the following options for an existing CPU check:
 - **Parameters**: Set how often the check runs and when it will time out.
 - **Alarms**: Edit existing alarms or click **Create Alarm** to add an alarm.
 
-### Load Average
+#### Load Average
 
 There are no special settings when you create a Load Average check.
 

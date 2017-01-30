@@ -1,12 +1,12 @@
 ---
 permalink: working-with-alarms/
-node_id: 4769
-title: Working with alarms
+audit_date:
+title: Understand and work with alarms
 type: article
 created_date: '2015-07-31'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -17,55 +17,19 @@ process of creating an alarm for a check on an entity.
 For each alarm type listed below, Rackspace Intelligence supports the
 alarm names listed with it.
 
-**agent.cpu**:
-
-- CPU usage
-
-**agent.filesystem**:
-
-- Filesystem usage
-
-**agent.load\_average**:
-
-- High load average
-
-**agent.memory**:
-
-- Memory usage
-
-**agent.mysql**:
-
-- Connected threads
-
-**agent.network**:
-
-- Network transmit rate
-- Network receive rate
-
-**remote.dns**:
-
-- DNS record address match
-- SPF TXT record
-
-**remote.http**:
-
-- Body match - string found
-- Body match - string not found
-- Connection time
-- Status code
-- SSL certificate expiration time
-
-**remote.ping:**
-
-- Ping packet loss
-
-**remote.ssh**:
-
-- SSH fingerprint match
-
-**remote.tcp**:
-
-- Connection time
+| Alarm type | Alarm name |
+| --- | --- |
+| **agent.cpu** | CPU usage |
+| **agent.filesystem** | Filesystem usage |
+| **agent.load_average** | High load average |
+| **agent.memory** | Memory usage |
+| **agent.mysql** | Connected threads |
+| **agent.network** | Network transmit rate<br />Network receive rate |
+| **remote.dns** | DNS record address match<br />SPF TXT record |
+| **remote.http** | Body match - string found<br />Body match - string not found<br />Connection time<br />Status code<br />SSL certificate expiration time |
+| **remote.ping** | Ping packet loss |
+| **remote.ssh** | SSH fingerprint match |
+| **remote.tcp** | Connection time |
 
 Before you can create an alarm, you must have [created a check](/how-to/working-with-checks).
 
@@ -79,13 +43,9 @@ To create a new alarm, complete the following steps:
 2.  In the **Monitoring** section, click the entity for which you want
     to define an alarm.
 
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms/intelligence-alarms-entities-list.png %}" width="871" height="506" />
-
     On the entity overview page, in the **Monitoring Checks** section,
     select the check for which you want to create the alarm and click
     on it.
-
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms/intelligence-alarms-select-check.png %}" width="893" height="522" />
 
 3.  In the **Monitoring Checks** section of the entity details page,
     click the check for which you want to create the alarm.
@@ -220,7 +180,8 @@ installed. These steps assume that you already created an HTTP check.
     that are greater than the current values for **Warning
     Threshold** and **Critical Threshold**.
 7.  Click **Test Alarm** to test the alarm.
-    **Note: **If your warning threshold is less than the value that is
+
+    **Note:** If your warning threshold is less than the value that is
     displayed for the current value, you receive a **Warning** result
     when you test the alarm. If you click **Create
     Alarm** after receiving a test result of type **Warning** or
@@ -230,6 +191,7 @@ installed. These steps assume that you already created an HTTP check.
     value is less than the values that you have specified for **Warning
     Threshold** and **Critical Threshold**, you receive an **OK** result
     when you click **Test Alarm**.
+
 8.  After you have tested your alarm, click **Create Alarm**.
 
 The new alarm is displayed on the alarm details page.
@@ -250,13 +212,14 @@ system check.
     and then click **Next Step**.
 5.  On the next page, in the **Alarm Details** section, type a name for
     the alarm and select the appropriate notification plan.
-6.  In the **Alarm Settings **section, enter the appropriate values
+6.  In the **Alarm Settings** section, enter the appropriate values
     for **Warning Threshold** and **Critical Threshold**, and then
     click **Test Alarm**. To obtain a test result of OK, enter values
     that are greater than the **Current value** that is displayed on the
     left side of the section.
 7.  After you have successfully tested your alarm, click **Create
     Alarm**.
+
     <img src="{% asset_path rackspace-intelligence/working-with-alarms/intelligence-alarms-filesystem-alarm-settings.png %}" width="850" height="581" />
     The new alarm is displayed on the alarm details page.
 
@@ -279,8 +242,9 @@ check.
     click **Next Step**.
 5.  On the next page, in the **Alarm Details** section, type a name for
     the alarm and select the appropriate notification plan.
-6.  In the **Alarm Settings **section, enter appropriate values
+6.  In the **Alarm Settings** section, enter appropriate values
     for **Warning Threshold** and **Critical Threshold**.
+
     **Note:** No current value is displayed to use as a basis for
     defining your threshold. Rackspace Intelligence does not display a
     current value because no monitoring agent is installed. A warning
@@ -288,9 +252,12 @@ check.
     generate any metrics until a monitoring agent has been installed on
     the server. You can still create the alarm, but you must install an
     agent before you can use the alarm.
+
 7.  Click **Create Alarm**.
+
     A warning is displayed that you do not have a monitoring
     agent installed.
+    
 8.  Click **Create Alarm Anyway**.
 
 The newly created alarm is displayed in the alarm details page. Because

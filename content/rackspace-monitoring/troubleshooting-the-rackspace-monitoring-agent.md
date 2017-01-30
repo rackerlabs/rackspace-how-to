@@ -1,12 +1,12 @@
 ---
 permalink: troubleshooting-the-rackspace-monitoring-agent/
-node_id: 3193
-title: Troubleshooting the Rackspace Monitoring Agent
+audit_date:
+title: Troubleshoot the Rackspace Monitoring Agent
 type: article
 created_date: '2012-11-13'
 created_by: Susan Million
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-05-10'
+last_modified_by: Zoltan Ver
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -34,8 +34,11 @@ This issue might have one of the following causes:
     agent to work correctly, it must be associated with your server by
     using a Rackspace Monitoring entity. The entity is a representation
     of your server in the monitoring system.
+-   The agent is installed but is not started or is not configured to
+    start automatically during startup.
 -   The monitoring agent is unable to determine the appropriate entity
     because there are duplicate entities associated with your account.
+-   Connectivity issues, firewall problems.
 
 ### Resolution steps
 
@@ -50,11 +53,30 @@ performing the following steps:
 2.  Verify that the **/etc/rackspace-monitoring-agent.cfg** file exists
     and contains a valid agent token.
 3.  Check for errors and status information in the
-    **/var/log/rackspace-monitoring-agent.log** file.
-4.  Verify that port 443 is open (added as a public firewall rule).
-5.  Run the following command to verify that the agent is running:
+    **/var/log/rackspace-monitoring-agent.log** file:
+
+        $ less /var/log/rackspace-monitoring-agent.log
+
+    Look for errors like the following excerpt from a log file demonstrates a connection timeout failure:
+
+    "Fri Feb 19 10:02:47 PM 2016 **ERR: Connection**: agent-endpoint-lon.monitoring.api.rackspacecloud.com:443 (agent-endpoint-lon.monitoring.api.rackspacecloud.com:443) -> **ETIMEDOUT**"
+
+4.  Run the following command to verify that the agent is running:
 
         $ ps aux | grep rackspace-monitoring-agent
+
+    or
+
+        $ service rackspace-monitoring-agent status
+
+    Attempt to start it if it's not shown as running:
+
+        $ service rackspace-monitoring-agent start
+
+5.  Make sure that you have firewall rules that allow IPv6 communication.
+    Ff you have IPv6 disabled, make sure that the firewall is permitting
+    the agent to communicate.
+
 
 ### Windows
 
@@ -69,12 +91,12 @@ performing the following steps:
     contains a valid agent token.
 3.  Check for errors and status information in the
     **C:\\ProgramData\\Rackspace Monitoring\\log.txt** file.
-4.  In the Windows Control Panel, open the settings for Windows Firewall
-    and verify that port 443 is open (added as an inbound
-    firewall rule).
-5.  Verify that the monitoring agent is running by opening the Task
+4.  Verify that the monitoring agent is running by opening the Task
     Manager, clicking the **Services** tab and locating the **Rackspace
     Monitoring** agent service.
+5.  Make sure that you have firewall rules that allow IPv6 communication.
+    If you have IPv6 disabled, make sure that the firewall is permitting
+    the agent to communicate.
 
 ### Check for duplicate entities
 

@@ -1,6 +1,6 @@
 ---
 permalink: introducing-rackconnect-v20/
-node_id: 2019
+audit_date:
 title: Introducing RackConnect v2.0
 type: article
 created_date: '2012-08-21'
@@ -15,7 +15,7 @@ product_url: rackconnect
 
 **Important**: The beginning of each RackConnect article now includes an
 **Applies to** label to indicate whether the contents apply to
-RackConnect v3.0, RackConnect v2.0, or both.
+RackConnect v2.0, RackConnect v3.0, or both.
 
 **Note:** This article is a high-level overview of RackConnect v2.0. For
 more technical information about RackConnect, see [RackConnect v2.0 requirements](/how-to/rackconnect-v20-requirements).
@@ -26,7 +26,7 @@ single solution.
 
 RackConnect is a unique solution designed for customers who require the
 flexibility and elasticity of the cloud, and the enhanced security and
-performance characteristics of traditional hosting - the best of both
+performance characteristics of traditional hosting&mdash;the best of both
 worlds. In essence, RackConnect enables customers to realize the power
 of hybrid hosting.
 
@@ -48,7 +48,7 @@ of hybrid hosting.
     Storage](http://www.rackspace.com/cloud/block-storage/) for
     easy scalability.
 
-If you have any questions, please reach out to us. Our contact
+If you have any questions, reach out to us. Our contact
 information is available on the [Contact
 Us](/how-to/support) page.
 

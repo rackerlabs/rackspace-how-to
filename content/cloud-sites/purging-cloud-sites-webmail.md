@@ -1,12 +1,12 @@
 ---
 permalink: purging-cloud-sites-webmail/
-node_id: 3669
-title: Purging Cloud Sites Webmail
+audit_date:
+title: Purge Cloud Sites Webmail
 type: article
 created_date: '2013-09-02'
 created_by: Courtney Dunaway
-last_modified_date: '2014-11-13'
-last_modified_by: David Hendler
+last_modified_date: '2016-06-22'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -29,12 +29,8 @@ space, you'll need to make the following changes:
   -  Move deleted email to the Trash folder
   -  Move purged email to the Trash folder
 
-    <img src="{% asset_path cloud-sites/purging-cloud-sites-webmail/CourtneyPic1.png %}" alt="" />
-
 After you have saved the changes you can then delete or purge messages.
 If you would like to see which folders contain the most messages you can
-go to the "Folder Manager", which is the gold button next to the Inbox.
-This will provide you with the option to "Update Sizes" as well as purge
+go to the **Folder Manager**, which is the gold button next to the Inbox.
+This will provide you with the option to **Update Sizes** as well as to purge
 folders.
-
-<img src="{% asset_path cloud-sites/purging-cloud-sites-webmail/CourtneyPic2.png %}" alt="" />

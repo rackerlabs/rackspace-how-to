@@ -1,19 +1,17 @@
 ---
 permalink: rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud/
-node_id: 1312
+audit_date:
 title: Rackspace Cloud Essentials - Transferring Your Domain to be Served from Rackspace Cloud
 type: article
 created_date: '2012-03-07'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
+last_modified_date: '2016-07-08'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Previous section
-
-[Rackspace Cloud Essentials - What are your name servers](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
+**Previous section:** [Rackspace Cloud Essentials - What are your name servers](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
 
 In the previous article you learned how to [identify the Rackspace Cloud Nameservers](/how-to/rackspace-cloud-essentials-what-are-your-name-servers),
 and that you will have to update them with your current domain registrar
@@ -117,6 +115,4 @@ configurations. If you have verified that DNS and your firewall are
 correctly configured and your site is still inaccessible, you will need
 to take a closer look at the configuration of your web applications.
 
-### Next steps
-
-[Create DNS records for Cloud Servers with the Control Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel)
+**Next steps:** [Create DNS records for Cloud Servers with the Control Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel)

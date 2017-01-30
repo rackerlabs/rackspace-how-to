@@ -1,11 +1,11 @@
 ---
 permalink: using-automatic-and-manual-disk-partitioning-on-cloud-servers/
-node_id: 3610
+audit_date:
 title: Automatic and manual disk partitioning on Cloud Servers
 type: article
 created_date: '2013-07-09'
 created_by: Trey Hoehne
-last_modified_date: '2014-11-03'
+last_modified_date: '2016-09-12'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
 product_url: cloud-servers
@@ -71,7 +71,7 @@ Changing the Disk Partition from Manual to Auto or Auto to Manual is not
 advised. It is recommended to use only one Disk Configuration option for
 the life of that Cloud Server. **Resizing a server down with the Manual
 Disk Partition option is not currently supported for servers that can be
-resized (first-generation and standard servers only).**
+resized (standard Cloud Servers only).**
 
 #### Snapshots
 

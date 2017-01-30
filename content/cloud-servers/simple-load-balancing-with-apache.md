@@ -1,6 +1,6 @@
 ---
 permalink: simple-load-balancing-with-apache/
-node_id: 105
+audit_date:
 title: Simple load balancing with Apache
 type: article
 created_date: '2011-03-09'

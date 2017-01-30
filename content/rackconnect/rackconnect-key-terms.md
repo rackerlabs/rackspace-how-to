@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-key-terms/
-node_id: 2017
+audit_date:
 title: RackConnect key terms
 type: article
 created_date: '2012-08-21'
@@ -28,7 +28,7 @@ between network segments. Access lists are also called ACLs.
 #### Automation features (v2.0)
 
 Features that control which actions the RackConnect automation systems
-will and will not perform in your environment. In certain cases, the
+do and do not perform in your environment. In certain cases, the
 settings might differ between your cloud account and your individual
 cloud servers. The cloud account settings are used for all new servers
 that you build in the future, while the existing cloud server settings
@@ -62,43 +62,33 @@ both the edge and connected network device roles.
 #### Edge network device role (v2.0 and v3.0)
 
 The outermost dedicated network device in your RackConnect
-configuration - the device that connects directly to the Internet. This
-device is typically a firewall, but it can also be a load balancer in
-certain deployment scenarios. Additionally, a single network device can
-function in both the edge and connected network device roles.
+configuration&mdash;the device that connects directly to the Internet. This device is typically a firewall, but it can also be a load balancer in certain deployment scenarios. Additionally, a single network device can function in both the edge and connected network device roles.
 
 #### Network policies (v2.0)
 
-Define the network access this is allowed in the following RackConnect
-traffic scenarios:
+Policies that define the network access this is allowed in the following RackConnect traffic scenarios:
 
 -   Traffic from cloud servers to dedicated servers
 -   Traffic from cloud servers to the Internet
 -   Traffic from cloud servers to cloud servers (for example, traffic
     between a web tier and an application tier, both hosted on
     cloud servers)
--   Traffic from dedicated to cloud servers
+-   Traffic from dedicated servers to cloud servers
 -   Traffic from the Internet to cloud servers
 
 Network policies provide you with the ability to match network traffic
-based on certain criteria - hosts, networks, and cloud server name
-matches - to limit access to only allowed protocols and ports (or port
-ranges).
+based on certain criteria&mdash;hosts, networks, and cloud server name
+matches&mdash;to limit access to only allowed protocols and ports (or port ranges).
 
 #### Network policy templates (v2.0)
 
-Provide an easy way of getting started with RackConnect network
-policies. The templates enable you to select from some of the most
-common RackConnect network policy options. For example, the Basic Access
-Configuration template, if applied, allows you to have unrestricted
-network access between your dedicated and cloud servers.
+Templates that provide an easy way of getting started with RackConnect network policies. The templates enable you to select from some of the most common RackConnect network policy options. For example, the Basic Access Configuration template, if applied, allows you to have unrestricted network access between your dedicated and cloud servers.
 
 #### PublicNet (v2.0 and v3.0)
 
 A network that can be added to your cloud servers, as a network
 interface, to allow traffic directly with the public Internet. If
-enabled, it is very important to secure this network, as this network is
-vulnerable to attacks from the Internet.
+enabled, it is very important to secure this network because it is vulnerable to attacks from the Internet.
 
 #### QoS (v3.0)
 
@@ -107,8 +97,7 @@ between your cloud and dedicated networks via RackConnect.
 
 #### RackConnect configuration (v2.0 and v3.0)
 
-Represents a single deployment of a RackConnect solution. A
-configuration is composed of dedicated network devices that function in
+A single deployment of a RackConnect solution. A configuration is composed of dedicated network devices that function in
 the RackConnect edge and connected network device roles, along with the
 stored settings needed to make these devices function with RackConnect.
 You can have multiple RackConnect configurations. A configuration is
@@ -121,12 +110,10 @@ servers, as a network interface. It is normally used to allow cloud
 servers to take advantage of other Public Cloud products, such as Cloud
 Files, to communicate between your cloud servers in a given region, or
 in the case of RackConnect v2.0, to communicate with your dedicated
-network. If enabled, it is very important to secure this network, as
-other Rackspace Public Cloud customers are also on this network.
+network. If enabled, it is very important to secure this network because other Rackspace Public Cloud customers are also on this network.
 
-If you have any questions, please reach out to us. Our contact
-information is available on the [Contact
-Us](/how-to/support) page.
+If you have any questions, reach out to us. Our contact
+information is available on the [Contact Us](/how-to/support) page.
 
 ### Next step
 

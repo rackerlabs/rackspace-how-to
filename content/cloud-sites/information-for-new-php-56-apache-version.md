@@ -1,6 +1,6 @@
 ---
 permalink: information-for-new-php-56-apache-version/
-node_id: 4730
+audit_date:
 title: 'Information for new PHP 5.6 & Apache version'
 type: article
 created_date: '2015-06-25'

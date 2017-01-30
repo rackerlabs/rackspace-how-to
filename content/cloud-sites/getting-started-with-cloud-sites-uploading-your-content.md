@@ -1,12 +1,12 @@
 ---
 permalink: getting-started-with-cloud-sites-uploading-your-content/
-node_id: 738
+audit_date:
 title: 'Getting Started With Cloud Sites: Uploading Your Content'
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-04'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-20'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -30,14 +30,9 @@ To find your domain's FTP settings follow these easy steps:
 
 1.  Log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com).
 2.  Navigate to **Hosting > Cloud Sites**.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-uploading-your-content/CSites_MainNav_09.png %}" alt="" />
-
 3.  Click on the domain to which you will be adding content.
 4.  Look under the **General Settings** tab. Your FTP settings are
     listed right under the **Viewing and Editing** section.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-uploading-your-content/ftpserver.png %}" alt="" />
 
     **Note:** There are two FTP servers you can use to add content to
     your site:

@@ -1,6 +1,6 @@
 ---
 permalink: introduction-to-encrypted-authenticated-tokens/
-node_id: 4766
+audit_date:
 title: Introduction to encrypted authenticated tokens
 type: article
 created_date: '2015-07-28'

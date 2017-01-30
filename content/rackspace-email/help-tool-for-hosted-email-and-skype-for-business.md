@@ -1,6 +1,6 @@
 ---
 permalink: help-tool-for-hosted-email-and-skype-for-business/
-node_id: 4294
+audit_date:
 title: Help tool for hosted email and Skype for Business
 type: article
 created_date: '2014-10-03'

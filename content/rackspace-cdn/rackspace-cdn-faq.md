@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-cdn-faq/
-node_id: 4705
+audit_date: '2016-06-02'
 title: Rackspace CDN FAQ
 type: article
 created_date: '2015-06-08'
 created_by: Rackspace Support
-last_modified_date: '2016-01-20'
+last_modified_date: '2016-06-02'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -74,6 +74,13 @@ fully owned certificates. Our custom SSL options satisfy your security,
 budget, and marketing requirements. Pricing for each option is
 different.
 
+#### What are the limits of Rackspace CDN?
+
+Rackspace CDN currently has the following limits:
+
+-   10 domains per service
+-   8 KB maximum size for request body in the API
+
 ------------------------------------------------------------------------
 
 ### General
@@ -87,8 +94,6 @@ SLA](http://www.rackspace.com/information/legal/service-level-guarantee-rackspac
 
 See [Rackspace CDN
 pricing](http://www.rackspace.com/cloud/cdn-content-delivery-network).
-
-^[back\\ to\\ top](#top)^
 
 #### Is there a list of approved Certificate Authorities (CAs) for Rackspace CDN?
 
@@ -154,4 +159,3 @@ domain details and Rackspace Support will reach out to them.
 The administrator for the domain will be contacted by GeoTrust to verify
 the domain. It is critical that customers respond to this verification
 request. Certificates will not be provisioned until it is complete.
-

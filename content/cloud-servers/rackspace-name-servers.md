@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-name-servers/
-node_id: 1529
+audit_date:
 title: Rackspace Name Servers
 type: article
 created_date: '2012-07-24'

@@ -1,6 +1,6 @@
 ---
 permalink: file-permissions-on-cloud-sites/
-node_id: 548
+audit_date:
 title: File permissions on Cloud Sites
 type: article
 created_date: '2011-03-16'
@@ -18,12 +18,12 @@ Directory permissions in a shared environment are exponentially more important t
 Who can access files is divided into three categories: user, group, other.
 
 -  **User**, abbreviated as **U** is generally the person who created the file. Another common term for user is **owner**.
--  Group, abbreviated as **G** is anyone who belongs to the same group to which the file is assigned. By default, when a file is created it inherits the same group membership as the default group of the creator.
+-  **Group**, abbreviated as **G** is anyone who belongs to the same group to which the file is assigned. By default, when a file is created it inherits the same group membership as the default group of the creator.
 -  **Other**, abbreviated as **O**, is everyone else and is often referred to as **world**, because it's the rest of the world. User, group, and other are collectively referred to as **UGO**.
 
 ### What can they access?
 
-The access level is divided into three categories: read, write, execute. Collectively, these are referred to as **RWX** (X for execute). These attributes have a slightly different context for files than for directories.
+The access level is divided into three attribute bits: read, write, execute. Collectively, these are referred to as **RWX** (X for execute). These attributes have a slightly different context for files than for directories.
 
 For a file, read is the access to view the contents, write is access to modify the contents, and execute is the ability to execute the file.
 
@@ -66,8 +66,7 @@ Cloud Sites is continually working to improve security. Following are a few spec
 
 -  If you are using Cloud Sites only as a PHP solution, you can completely remove all Other permissions from all files and directories. So files could be 600 and directories could be 700.
 -  When you are using multiple FTP users to manage the content of the site, the Group permissions must be considered. FTP users are in the same group as the primary account owner. Their ability to access files is determined through the Group permissions, and in general they should be set the same as the User permissions. 770 is standard for directories, and 660 is standard for files.
--  When you are using CGI, the CGI files must be set to Executable. So 700 or 770 is the standard for files in the **cgi-bin** directory.
--  If you are using Cloud Sites classic ASP/.Net solution, we recommend that you use impersonation. Contact our Support for assistance with this.
+-  If you are using Cloud Sites classic ASP/.Net solution, we recommend that you use impersonation. See the following article for assistance with this: https://support.rackspace.com/how-to/add-impersonation-to-your-aspnet-cloud-site/
 
 The following table provides a reference for each scenario.
 
@@ -79,6 +78,6 @@ The following table provides a reference for each scenario.
 | **File** | 660 | RW- | RW- | --- | Gives the group and user full permissions. |
 | **File** | 700 | RWX | --- | --- | Gives the user full permissions and marks the file as an executable. |
 | **File** | 770 | RWX | RWX | --- | Gives the user full permissions and marks the file as executable. |
-| **Directory** | 755 | RWX | R-X | R-X | Gives the user full permissions and allows everyone else to traverse and list directory contents. Required when using .NET w/o impersonation. |
+| **Directory** | 755 | RWX | R-X | R-X | Gives the user full permissions and allows everyone else to traverse and list directory contents. Required when using .NET without impersonation. _This is the default for directories in Cloud Sites._ |
 | **Directory** | 775	 | RWX | RWX | R-X | Gives full read write and execute permissions to both user and group, but limits access to read-only to all others. |
-| **File** | 644 | RW- | R-- | R-- | Gives the user read and write permissions, and give reader permissions to group read and other. |
+| **File** | 644 | RW- | R-- | R-- | Gives the user read and write permissions, and give reader permissions to group read and other. _This is the default for files in Cloud Sites._ |

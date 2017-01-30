@@ -1,19 +1,17 @@
 ---
 permalink: cloud-block-storage-attaching-vs-mounting/
-node_id: 3133
+audit_date:
 title: Attaching versus mounting in Cloud Block Storage
 type: article
 created_date: '2012-10-22'
 created_by: David Hendler
-last_modified_date: '2016-01-22'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-06-06'
+last_modified_by: Nate Archer
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-In Cloud Block Storage you both attach and mount a Volume to a Server.
-These terms might sound similar, so it can get confusing as to their
-differences.
+In Cloud Block Storage you both attach and mount a volume to a server:
 
 **Attach:** When you attach a Cloud Block Storage Volume to a server, a
 logical connection is created from a Cloud Block Storage node to the
@@ -29,5 +27,4 @@ process in which a user instructs the operating system how to logically
 map the directory structure to a physical storage device. You can only
 mount a volume through the computer's operating system.
 
-For more information on how to mount your volume, see [Prepare your
-volume](/how-to/prepare-your-cloud-block-storage-volume).
+For more information on how to mount your volume, see [Prepare your volume](/how-to/prepare-your-cloud-block-storage-volume).

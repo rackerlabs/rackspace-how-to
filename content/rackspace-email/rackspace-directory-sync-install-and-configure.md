@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-directory-sync-install-and-configure/
-node_id: 3435
+audit_date:
 title: 'Rackspace Directory Sync: Install and configure'
 type: article
 created_date: '2013-04-25'
@@ -30,7 +30,7 @@ A functional level of domain controller and Active Directory
     Active Directory. Passwords *must be reset* after installation to
     ensure password synchronization.
 - Directory Sync is compatible with Hosted Exchange 2010, Hosted
-    Exchange 2013, and Rackspace Email only.
+    Exchange 2013, Hosted Exchange 2016, and Rackspace Email only.
 
 #### Software prerequisites
 

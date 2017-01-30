@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-with-cloud-networks-faq/
-node_id: 3242
+audit_date:
 title: RackConnect v2.0 with Cloud Networks FAQ
 type: article
 created_date: '2012-12-19'
@@ -53,10 +53,6 @@ Support team prior to making the change.
  - The **Access Scenario** should be set to "Dedicated to Cloud Server(s)"
  - The **Source Server Network** should be set to the network configured for your Cloud Network
 
-Below is an example of how the Network Policy should be configured to
-allow connectivity across your Cloud Network IP addresses. In this
-example, the Cloud Network is equal to 192.168.x.x/24.
-
 **Note:** This Network Policy will need to be created, even if you already
 have a "Cloud Server(s) to Cloud Server(s)" Network Policy allowing all
 traffic.
@@ -89,6 +85,4 @@ answer is **no.** Your cloud servers connect to RackConnect via a
 ServiceNet NIC, and a separate Cloud Networks NIC is used for Cloud
 Networks connectivity. The ServiceNet Network and the Cloud Network are
 two distinct networks that do not have direct connectivity between
-them. The diagram below should help you to visualize how RackConnect
-and Cloud Networks work on the same cloud server. In the diagram Cloud
-Private Network is equivalent to the Cloud ServiceNet Network.
+them. 

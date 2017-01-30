@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-email-control-panel-overview/
-node_id: 1403
+audit_date:
 title: Rackspace Email control panel overview
 type: article
 created_date: '2012-05-23'
 created_by: Nicholas Fleisig
-last_modified_date: '2015-09-03'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-10-11'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -62,8 +62,6 @@ about options are provided.
     their mobile devices.
 - **Archiving** - Archive all incoming and outgoing email for
     your domain.
-- **Restores** - Restore an active or deleted mailbox to a specific
-    date (30 days).
 - **Settings** - Specify values for folder cleanup, storage, access
     rights, and Webmail settings.
 
@@ -85,8 +83,6 @@ about options are provided.
 - **Mailbox Details** - Get a summary of your domains mailboxes.
 - **Mail Forwarding** - See which mailboxes on your domains have
     forwarding enabled.
-- **Email Statistics** - Get statistics regarding email traffic, spam,
-    and IMAP connectivity.
 
 #### Collaboration
 
@@ -157,4 +153,3 @@ are provided.
 - **Domain Details** - Get a summary of your domain services and products.
 - **Mailbox Details** - Get a summary of your domains mailboxes.
 - **Mail Forwarding** - See which mailboxes on your domains have forwarding enabled.
-- **Email Statistics** - Get statistics regarding email traffic, spam, and IMAP connectivity.

@@ -1,6 +1,6 @@
 ---
 permalink: windows-system-updates-for-cloud-sites/
-node_id: 754
+audit_date:
 title: Windows System Updates for Cloud Sites
 type: article
 created_date: '2011-03-16'

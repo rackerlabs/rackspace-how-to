@@ -1,12 +1,12 @@
 ---
 permalink: attach-a-cloud-network-to-an-existing-cloud-server/
-node_id: 2197
+audit_date:
 title: Attach a Cloud Network to an Existing Cloud Server
 type: article
 created_date: '2012-09-21'
 created_by: Susan Million
-last_modified_date: '2016-03-14'
-last_modified_by: Todd Trimmer
+last_modified_date: '2016-07-07'
+last_modified_by: Kyle Laffoon
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -37,16 +37,11 @@ in the Cloud Control Panel, perform the following steps:
 
     To create an image for the server, in the details page of the server in the Images section, click **Create Image**, enter a name for the image, and then click **Create Image**.
 
-    <img src="{% asset_path cloud-networks/attach-a-cloud-network-to-an-existing-cloud-server/2197-1.png %}" alt="" />
-
     It may take a few minutes to create the image.
 
 5.  In the **Images** section, click **View Images**.
 6.  Next to the image you want to use, click the gear icon and then
     select **Create Server with Image**.
-
-    <img src="{% asset_path cloud-networks/attach-a-cloud-network-to-an-existing-cloud-server/Create%20Server%20from%20Image%20for%20Cloud%20Networks_1.png %}" alt="" />
-
 7.  On the **Create Server** page, enter a name for the new server. The
     image is preselected for you.
 8.  Select a size (flavor) or the server.

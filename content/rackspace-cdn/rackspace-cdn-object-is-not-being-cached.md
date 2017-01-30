@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-object-is-not-being-cached/
-node_id: 5159
+audit_date:
 title: Object is not being cached
 type: article
 created_date: '2016-01-19'
@@ -72,7 +72,7 @@ to be cached are not cached on an edge server:
 -   The **Age** header from the origin is inconsistent.
 -   Authentication or revalidation settings require all objects to check
     freshness with the origin every time.
--   The object is Edge Side Includeds (ESI)-processed or is a fragment
+-   The object is Edge Side Included (ESI)-processed or is a fragment
     from an ESI include.
 -   The ETag is mismatched from the origin.
 -   ESSL is used, and even though a request goes to the same virtual

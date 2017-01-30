@@ -1,24 +1,21 @@
 ---
 permalink: dovecot-installation-and-configuration-on-centos/
-node_id: 2009
+audit_date:
 title: Dovecot installation and configuration on CentOS
 type: article
 created_date: '2012-08-15'
 created_by: Lee Jelley
-last_modified_date: '2014-04-14'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-06-22'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
-
-### Introduction
 
 If you've installed Postfix to operate as the SMTP service on a would-be
 email server you might still need a way to retrieve the incoming mail
 from your server.
 
-To that end, in this article we'll talk about installing and configuring
-Dovecot.
+This article shows how to install and configure Dovecot.
 
 Dovecot is an open-source IMAP and POP3 server application which was
 designed specifically for Linux/Unix Operating Systems. Dovecot
@@ -37,45 +34,42 @@ protocols.
 -   Target Audience: System Administrators, Mail
     Administrators, Postmasters.
 
-### Installation
+### Install Dovecot
 
-The first thing we will need is to download the Dovecot package. This
-command will install it:
+Download and install the Dovecot package by running the following command:
 
-    sudo yum install dovecot
+    $ sudo yum install dovecot
 
-### Configuring Dovecot
+### Configure Dovecot
 
-The next step is to configure the Dovecot services in the config file at
-**/etc/dovecot/dovecot.conf** - use whatever editor you like for the task.
+After installing Dovecot, you need to configure the services in the configuration file at
+**/etc/dovecot/dovecot.conf**. This example uses `nano`, but you can use any text editor you want.
 
-    sudo nano /etc/dovecot/dovecot.conf
+    $ sudo nano /etc/dovecot/dovecot.conf
 
-The following lines will need to be uncommented and if necessary changed
+The following lines will need to be uncommented in the **/etc/dovecot/dovecot.conf** file and, if necessary, changed
 to reflect your plans for the environment:
 
     protocols = imap pop3
     mail_location =  maildir:~/Maildir
 
--   protocols - This specifies the protocols that are available for
+-   `protocols` - Specifies the protocols that are available for
     users to access their email.
--   mail_location - This specifies the format and the location of each
+-   `mail_location` - Specifies the format and the location of each
     user's mailbox.
 
 ### Authentication process file
 
-Next we will configure the authentication process file. This config file
-can be located at **/etc/dovecot/conf.d/10-auth.conf** - use the text
-editor of your choice for this task.
+Next you need to configure the authentication process file. This configuration file
+can be located at **/etc/dovecot/conf.d/10-auth.conf**. This example uses `nano`, but you can use any text editor you want.
 
-    sudo nano /etc/dovecot/conf.d/10-auth.conf
+    $ sudo nano /etc/dovecot/conf.d/10-auth.conf
 
-The following line will need to be uncommented and if necessary changed
-to reflect your plans for your environment:
+The following line will need to be uncommented in the **/etc/dovecot/conf.d/10-auth.conf** file and, if necessary, changed to reflect your plans for your environment:
 
     auth_mechanisms = plain login
 
-auth_mechanisms specifies the way in which the email client authenticates with Dovecot.
+`auth_mechanisms` specifies the way in which the email client authenticates with Dovecot.
 
 ### Mail location
 

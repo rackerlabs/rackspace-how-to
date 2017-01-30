@@ -1,11 +1,11 @@
 ---
 permalink: sharing-images-in-the-cloud-control-panel/
-node_id: 4528
+audit_date:
 title: Sharing images in the Cloud Control Panel
 type: article
 created_date: '2015-01-29'
 created_by: Cloud Images
-last_modified_date: '2015-03-17'
+last_modified_date: '2016-09-09'
 last_modified_by: Kyle Laffoon
 product: Cloud Images
 product_url: cloud-images
@@ -27,72 +27,74 @@ Following are example scenarios in which image sharing would be helpful:
     Users' Group to be able to boot servers from your image.
 -   You work in a company where each department has its own Rackspace
     cloud account, and department A has configured a server to run
-    optimally.  Instead of department B performing the same
+    optimally. Instead of department B performing the same
     configuration work, department A can share an image of this optimal
     server with department B, and department B can boot a server
     directly from the image.
 -   Your company wants to keep strict separation between its production
-    servers and its test servers.  To reduce the possibility that
+    servers and its test servers. To reduce the possibility that
     someone cleaning up the account could delete a production server by
     mistake, the production servers are in account P and the test
-    servers are in account T.  When a particular configuration has
+    servers are in account T. When a particular configuration has
     passed testing, you can create an image of that server in account T
     and share it with account P and then boot a server in the
     production account.
 
-**Note**: Image sharing is only available in Next Generation Cloud
-Servers.  It is not available in First Generation Cloud Servers.
-
 ### Image sharing overview
 
-Here's a quick overview of some aspects of image sharing.  To keep
+Here's a quick overview of some aspects of image sharing. To keep
 things clear, we'll refer to the person who's created an image to share
 as the "producer", and the person who wants to use that image as the
-"consumer".  (Putting it another way, the "producer" is the share-er,
+"consumer". (Putting it another way, the "producer" is the share-er,
 and the "consumer" is the share-ee.)
 
 -   **Support for shared images:** Shared images are considered
-    *nonstandard images* (for more information, see [Standard and
-    Non-Standard
-    Images](/how-to/rackspace-standard-and-non-standard-images)).
-      *Regardless of the service level you are subscribed to, we cannot
-    guarantee supportability of these images. * Your SLA on cloud
+    *nonstandard images* (for more information, see [Standard and Non-Standard Images](/how-to/rackspace-standard-and-non-standard-images)).
+
+    **Note:** Regardless of the service level you are subscribed to, we cannot
+    guarantee supportability of these images. Your SLA on cloud
     servers that use shared images will extend only to the physical
     infrastructure on which the shared image resides.
+
 -   **Visibility of shared images (anti-spam):** If someone shares an
     image with you, you can see it within your list of bootable images
-    only if you want to.  Only images that you have specifically
-    *accepted* appear in your image list.  You always have the option to
+    only if you want to. Only images that you have specifically
+    *accepted* appear in your image list. You always have the option to
     *reject* an image that's been shared with you if you don't want it
     to clutter up your image list.
+
 -   **Image sharing is account-to-account:** If you have an account in
     which you've created additional users, users who have been assigned
     the appropriate RBAC role can perform the following actions:
+
     -   Producer: The user can share *any* image in your account, not
         just those images that the user has specifically created
     -   Consumer: if that user accepts an image, that image appears
         among the bootable images for *all* users in the account.
+
 -   **Image sharing is regional**: In the Rackspace Cloud, each image
-    exists in a particular region.  So if a producer has an image in the
+    exists in a particular region. So if a producer has an image in the
     IAD region and shares it with a consumer, the consumer can use that
     image in the IAD region.
+
 -   **A shared image is *not* a copy**: If a producer shares an image
     with you, you are using the producer's actual image, not a copy.
     The benefit of this is that you don't have to pay for storage for
-    that image.  The disadvantage is that if the producer decides to
+    that image. The disadvantage is that if the producer decides to
     stop sharing the image with you, you no longer have access to
     the image.
-    -   **Tip**: If a particular shared image is useful to you, create
-        your own image from a server that is booted from the
-        shared image.
+
+    **Tip**: If a particular shared image is useful to you, create
+    your own image from a server that is booted from the
+    shared image.
+
 -   **Image sharing is also available in the Cloud Images API:** If you
     share an image with someone who doesn't use the Cloud Control Panel,
     you might want to notify them that the image is available.  Because
     of the anti-spam feature, the image won't appear in their
     image list.
 
-For more information, see the image sharing section of the [Cloud Images
-FAQ](/how-to/cloud-images-faq).
+For more information, see the image sharing section of the [Cloud Images FAQ](/how-to/cloud-images-faq).
 
 #### Permissions
 
@@ -107,8 +109,7 @@ Access Control for Cloud Images. Briefly:
     or equivalent role).
 
 For more information about Cloud Images RBAC, please see the Knowledge
-Center article [Detailed Permission Matrix for Cloud
-Images](/how-to/detailed-permissions-matrix-for-cloud-images).
+Center article [Detailed Permission Matrix for Cloud Images](/how-to/detailed-permissions-matrix-for-cloud-images).
 
 ### Sharing an image in the Cloud Control Panel
 
@@ -119,24 +120,29 @@ Use the following considerations and steps to share server images.
 Before you share an image, consider the following questions:
 
 -   Does the image contain any software whose license prohibits
-    distribution?  By sharing an image, you are distributing the
-    software on it.  It is your responsibility to ensure that such
+    distribution?  
+
+    By sharing an image, you are distributing the
+    software on it. It is your responsibility to ensure that such
     distribution is allowed by each vendor's software license.
--   Does the image contain any of your sensitive information? Before
-    sharing an image, boot a new server from it in your own account.
+
+-   Does the image contain any of your sensitive information?
+
+    Before sharing an image, boot a new server from it in your own account.
     Log in to the server and verify that the image doesn't contain any
     private encryption keys or other sensitive information.
--   Is there any malicious software on the image? You are expected to
-    follow the Rackspace [Acceptable Use
-    Policy](http://www.rackspace.com/information/legal/aup) (AUP) with
-    regard to the type of software included on images.  Ensure that
+
+-   Is there any malicious software on the image?
+
+    You are expected to follow the Rackspace [Acceptable Use Policy](http://www.rackspace.com/information/legal/aup) (AUP) with regard to the type of software included on images. Ensure that
     you're familiar with the AUP before you share an image.
 
 #### Share an image
 
 1.  When your image is ready to share, use one of the following methods
     in the Control Panel to share it:
-    In the Saved Images list (**Servers &gt; Saved Images**), click the
+
+    In the Saved Images list (**Servers > Saved Images**), click the
     gear icon to the left of the image name and then select **Share
     Image**.
 
@@ -150,18 +156,20 @@ Before you share an image, consider the following questions:
     sharing scenarios:
 
     -   **Sharing an image with another account to which you have
-        legitimate access:** In other words, you have legitimate access
+        legitimate access:**
+
+        In other words, you have legitimate access
         to the username and password of a user on that account whose
-        RBAC role is at least as powerful as **cloudImages:admin**.  For
+        RBAC role is at least as powerful as **cloudImages:admin**. For
         example, you are the IT department of a company, and you have
         set up accounts for some other departments. You have prepared
         some images for these departments, and now you want to make the
         images available for people in these departments to use.
-    -   **Sharing an image with another customer:** An example would be
-        the hobbyist use case described earlier.  The members of your
+    -   **Sharing an image with another customer:**
+
+        An example would be the hobbyist use case described earlier. The members of your
         Exotic OS Users' Group have told you their account numbers, but
-        they aren't going to give you their usernames and passwords<span
-        id="cke_bm_139E"> </span>.
+        they aren't going to give you their usernames and passwords.
 
 2.  Enter the information appropriate for your scenario, and
     click **Share Image**.
@@ -175,13 +183,12 @@ and for which users the request is pending acceptance.
 
 If you are an image producer who wants to share an image in the ORD
 region of the Rackspace cloud, please be aware that the provisioning of
-cloud services in the ORD region has not been available to recent
+cloud services in the ORD region may not be available to some
 customers. If you share an image with such a customer, the sharing will
-occur without error from your perspective. If the consumer you are
-sharing with doesn't have cloud services in ORD, of course, they will
-not see the image and won't be able to boot from it. (If *you* don't
-have service in ORD, this question won't even come up, because you won't
-have any images in ORD to share!)
+occur without error from your perspective. If the customer you are
+sharing an image with doesn't have cloud services in ORD, they will
+not see the image and won't be able to boot a server from the image. The customer can
+resolve this issue by opening a support ticket to request ORD region access.
 
 A customer can tell if they don't have access to the ORD region by
 looking in the Control Panel - it won't show up as an option in the
@@ -189,8 +196,7 @@ Region dropdown on either the Server List or Create Server pages. API
 users can look directly in their service catalog.
 
 To learn more about regions in the Rackspace cloud, please see the
-How-To article [Where are the Rackspace data centers
-located?](/how-to/rackspace-data-centers-and-regions).
+How-To article [Rackspace data centers and regions](/how-to/rackspace-data-centers-and-regions).
 
 #### Image sharing courtesy
 
@@ -243,11 +249,11 @@ the notification will remain.
 If you accept an image and then decide later that you don't want it, you
 can reject it.
 
-1.  Find the image in your list of Saved Images. ,
+1.  Find the image in your list of Saved Images.
 2.  Click the gear icon to the left of the image name, and
     select **Remove Image**.
 
-####Accept an image after rejecting it
+#### Accept an image after rejecting it
 
 If you reject an image and decide later that you want it after all, you
 must notify the image producer and ask that the image be re-shared with
@@ -256,22 +262,24 @@ you.
 ### Use a shared image
 
 After you accept a shared image, you can use it to boot a server using
-your normal workflow.  However, we encourage you to consider the
+your normal workflow. However, we encourage you to consider the
 following information before booting a server from a shared image:
 
 -   **Shared images are nonstandard images** (for more information, see
-    [Standard and Non-Standard
-    Images](/how-to/rackspace-standard-and-non-standard-images)).
+    [Standard and Non-Standard Images](/how-to/rackspace-standard-and-non-standard-images)).
     For servers booted from nonstandard images, you may expect that we
     will ensure host servers are functioning properly and that the API
-    availability meets the SLA. *However, we cannot promise to support
+    availability meets the SLA.
+
+    However, we *cannot* promise to support
     servers booted from shared images in the same way we support servers
-    booted from Rackspace base images.*  We create the base images
+    booted from Rackspace base images. We create the base images
     ourselves and know exactly what's on them, whereas the point of
     shared images is to empower our customers to use images we haven't
-    even dreamed of.  So although you can expect support, you can't
+    even dreamed of. So although you can expect support, you can't
     expect our support staff to know the intricacies of Exotic OS, for
     example, in the same way they know CentOS.
+
 -   Verify that there are no strange users with login privileges in
     /**etc/passwd** and that there aren't any strange SSH keys
     preinstalled on the server.

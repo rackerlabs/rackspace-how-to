@@ -1,59 +1,52 @@
 ---
 permalink: permissions-matrix-for-cloud-block-storage/
-node_id: 3394
+audit_date:
 title: Permissions matrix for Cloud Block Storage
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2017-01-09'
+last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-The following permissions matrix displays specific permissions for the roles in Cloud Block Storage. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
+The Cloud Block Storage permissions matrix displays specific permissions for the following role-based access control (RBAC) roles:
 
-- [**API documentation**](https://developer.rackspace.com/docs/cloud-block-storage/v1/developer-guide/)
+ - **Admin** provides full access to create, read, update, and delete.
+ - **Creator** provides access to create, read, and update.
+ - **Observer** provides read-only access.
 
-- [**Related How To articles**](/how-to/)
+The matrix displays the Cloud Block Storage methods, their corresponding RESTful API commands, and the RBAC roles that are supported.
 
-- [**Cloud Block Storage terminology**](#blockstorage)
+### Volumes
 
-#### As of February 7, 2013
+Method | API action | Role | Description
+--- | --- | --- | ---
+Create a volume | `POST /v1/{tenant_Id}/volumes` | **Creator, Admin** | Creates a volume.
+Retrieve volumes | `GET /v1/{tenant_id}/volumes` | **Observer, Creator, Admin** | Retrieves summary information for all block storage volumes that the tenant who submits the request can access.
+Retrieve volumes (detailed) | `GET /v1/{tenant_id}/volumes/detail` | **Observer, Creator, Admin** | Retrieves detailed information for all block storage volumes that the tenant who submits the request can access.
+Retrieve details for a volume | `GET /v1/{tenant_id}/volumes/{volume_id}` | **Observer, Creator, Admin** | Retrieves details for a specified volume.
+Update a volume | `PUT /v1/{tenant_id}/volumes/{volume_id}` | **Observer, Creator, Admin** | Updates the name and description for a volume.
+Delete a volume | `DELETE /v1/{tenant_id}/volumes/{volume_id}` | **Admin** | Deletes a single volume.
+
+### Volume types
 
 Method | API Action | Role | Description
-:---: | :---: | :---: | :---:
-**VOLUMES** |
-Create Volume | <code>POST /volumes</code> | **Creator & Admin** | Creates the volume.
-List Volumes | <code>GET /volumes</code> | **Observer & Creator & Admin** | Lists summary information for all block storage volumes that the tenant who submits the request can access.
-List Volumes (Detailed) | <code>GET /volumes/detail</code> | **Observer & Creator & Admin** | Lists detailed information for all Block Storage volumes that the tenant who submits the request can access.
-Show Volume | <code>GET /volumes/{volume_id}</code> | **Observer & Creator & Admin** | View all information about a single volume.
-Rename Volume | <code>PUT /volumes/{volume_id}</code> | **Observer & Creator & Admin** | Updates a volume's display name and display description.
-Delete Volume | <code>DELETE /volumes/{volume_id}</code> | **Admin only** | Deletes a single volume.
-**VOLUME TYPES** |
-List Volume Types | <code>GET /types</code> | **Observer & Creator & Admin** | Requests a list of volume types.
-Describe Volume Type | <code>GET /types/{volume_type_id}</code> | **Creator & Admin** | Requests a single volume type.
-**SNAPSHOTS** |
-Create Snapshot</td> | <code>POST /snapshots</code> | **Creator & Admin** | Creates a snapshot.
-List Snapshots | <code>GET /snapshots</code> | **Observer & Creator & Admin** | Lists summary information for all Block Storage snapshots that the tenant who submits the request can access.
-List Snapshots (Detailed) | <code>GET /snapshots/detail</code> | **Observer & Creator & Admin** | Lists detailed information for all Block Storage snapshots that the tenant who submits the request can access.
-Show Snapshot | <code>GET /snapshots/{snapshot_id}</code> | View all information about a single snapshot.
-Delete Snapshot | <code>DELETE /snapshots/{snapshot_id}</code> | **Admin only** | Deletes a single snapshot.
+--- | --- | --- | ---
+Retrieve volume types |`GET /v1/{tenant_id}/types` | **Observer, Creator, Admin** | Retrieves volume types.
+Retrieve volume type details | `GET /v1/{tenant_id}/types/{volume_type_id}` | **Creator, Admin** | Retrieves details for a specified volume type.
 
-<a id="blockstorage" name="blockstorage"></a>
+### Snapshots
 
-### Cloud Block Storage terminology
+Method | API Action | Role | Description
+--- | --- | --- | ---
+Create a snapshot | `POST /v1/{tenant_id}/snapshots` | **Creator, Admin** | Creates a snapshot.
+Retrieve snapshots | `GET /v1/{tenant_id}/snapshots` | **Observer, Creator, Admin** | Retrieves summary information for all block storage snapshots that the tenant who submits the request can access.
+Retrieve snapshots (detailed) | `GET /v1/{tenant_id}/snapshots/detail` | **Observer, Creator, Admin** | Retrieves detailed information for all block storage snapshots that the tenant who submits the request can access.
+Retrieve details for a snapshot | `GET /v1/{tenant_id}/snapshots/{snapshot_id}` | **Observer, Creator, Admin** | Retrieves details for the specified snapshot.
+Delete a snapshot | `DELETE /v1/{tenant_id}/snapshots/{snapshot_id}` | **Admin only** | Deletes a snapshot.
 
-#### Snapshot
+### Related articles
 
-A point-in-time copy of the data contained in a volume.
-
-#### Volume
-
-A detachable block storage device. You can think of it as a USB hard drive. It can onlt be attached to one instance at a time.
-
-#### Volume type
-
-The type of a block storage volume. There are two types: SATA for standard performance and SSD for high performance.
-
-**&lt;** [**Permissions matrix for Role-Based Access Control**](/how-to/permissions-matrix-for-role-based-access-control-rbac)
+- [Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](/how-to/permissions-matrix-for-role-based-access-control-rbac)

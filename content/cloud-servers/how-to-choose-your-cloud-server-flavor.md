@@ -1,7 +1,7 @@
 ---
 permalink: how-to-choose-your-cloud-server-flavor/
-node_id: 4383
-title: How to choose your cloud server flavor
+audit_date:
+title: Choosing your cloud server flavor
 type: article
 created_date: '2014-10-24'
 created_by: Thomas Duesing

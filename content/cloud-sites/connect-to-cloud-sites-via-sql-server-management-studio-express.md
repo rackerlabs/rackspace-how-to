@@ -1,6 +1,6 @@
 ---
 permalink: connect-to-cloud-sites-via-sql-server-management-studio-express/
-node_id: 602
+audit_date:
 title: Connect to Cloud Sites via SQL Server Management Studio Express
 type: article
 created_date: '2011-03-23'

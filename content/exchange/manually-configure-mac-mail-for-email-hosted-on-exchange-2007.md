@@ -1,12 +1,12 @@
 ---
 permalink: manually-configure-mac-mail-for-email-hosted-on-exchange-2007/
-node_id: 951
+audit_date:
 title: Manually configure Mac Mail for email hosted on Exchange 2007
 type: article
 created_date: '2012-02-28'
 created_by: Aaron Medrano
-last_modified_date: '2016-01-28'
-last_modified_by: Rose Coste
+last_modified_date: '2016-05-17'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -19,7 +19,7 @@ you're unsure about which OS X version you're running, click the
 **Apple** icon located in the top-left corner and select **About This
 Mac**.
 
-1. Open Mac Mail and select **Mail &gt;** **Preferences**.
+1. Open Mac Mail and select **Mail > Preferences**.
 
 2. In the new window that appears, click the **Accounts** tab in the
    top menu bar and then click the plus (+) symbol in the

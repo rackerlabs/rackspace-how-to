@@ -1,97 +1,80 @@
 ---
 permalink: objectrocket-documentation/
-node_id: 3516
-title: ObjectRocket Documentation
+audit_date: '2016-11-01'
+title: ObjectRocket documentation
 type: article
 created_date: '2013-06-06'
 created_by: Jered Heeschen
-last_modified_date: '2014-03-13'
-last_modified_by: Ross Diaz
+last_modified_date: '2016-10-25'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 ### What is ObjectRocket?
 
-ObjectRocket is a Database as a Service based on the popular MongoDB
+ObjectRocket is a database as a service (DBaaS) that is based on the popular MongoDB
 database. The ObjectRocket infrastructure has been designed for MongoDB.
 
-Learn more by reading the [ObjectRocket API Overview and Concepts](https://docs.objectrocket.com/overview_and_concepts.html) documentation.
-
-Get to know ObjectRocket. [Watch an interview](http://www.youtube.com/watch?v=q_necZ_HG5g) with founder and
+Get to know ObjectRocket by [watching an interview](http://www.youtube.com/watch?v=q_necZ_HG5g) with founder and
 Chief Architect, Kenny Gorman.
 
-### Get Started
+This article provides information about the documentation that is available for
+ObjectRocket. 
 
-The Getting Started Guide will help you understand how to get up and
-running on the ObjectRocket system quickly and easily. It assumes using
-the ObjectRocket web interface. You will walk through the following
+### Getting started
+
+The [Getting Started Guide](https://objectrocket.com/docs/getting_started.html) helps you understand get up and
+running on the ObjectRocket system. It assumes use of
+the ObjectRocket web interface and guides you through the following
 steps:
 
 1.  Get an ObjectRocket account
 2.  Add billing information
-3.  Create a instance
+3.  Create an instance
 4.  Create a database
-5.  Add a Access Conrol List (ACL)
+5.  Add an Access Control List (ACL)
 
-Read the [Getting Started Guide](https://docs.objectrocket.com/getting_started.html)
+Read the [Getting Started Guide](https://objectrocket.com/docs/getting_started.html)
 
-### Backup and Recovery Guide
+### Backup and recovery
 
-Data backups are provided so customers can have access to point in time
-copy of their data. Backups are taken at regular intervals.
+Data backups are provided to give you access to point-in-time
+copies of your data. Backups are taken at regular intervals.
 
-Learn more about Backups in the [Backup and Recovery Guide](https://docs.objectrocket.com/backup_and_recovery.html)
+Learn more about backups in the [Backup and Recovery guide](https://objectrocket.com/docs/mongodb_backup_and_recovery.html)
 
-### The ObjectRocket API
+### ObjectRocket API
 
-The ObjectRocket API is a REST-based HTTP API over SSL. The API can be
-used in addition to and alongside with the MongoDB driver access into
+The ObjectRocket API is a REST-based HTTP API over SSL. You can use the API in addition to and along with the MongoDB driver access into
 ObjectRocket.
 
-[Overview](https://docs.objectrocket.com/api/overview.html)
+-  [Overview](https://objectrocket.com/docs/api_v2_getting_started.html)
+-  [Authentication](https://objectrocket.com/docs/api_v2_getting_started.html#authentication)
+-  [General Resources](http://objectrocket.com/docs/api_v2_general_resources.html)
+-  [Instance Resources](http://objectrocket.com/docs/api_v2_instance_resources.html)
+-  [MongoDB Resources](http://objectrocket.com/docs/api_v2_mongodb_resources.html)
+-  [Redis Resources](http://objectrocket.com/docs/api_v2_redis_resources.html)
 
--  [Authentication](https://docs.objectrocket.com/api/overview.html#authentication)
--  [Data Operations](https://docs.objectrocket.com/api/overview.html#operations)
--  [Metadata Operations](https://docs.objectrocket.com/api/overview.html#metadata-operations)
--  [cURL examples](https://docs.objectrocket.com/api/curl.html)
--  [Python examples](https://docs.objectrocket.com/api/python.html)
--  [Node.js examples](https://docs.objectrocket.com/api/nodejs.html)
--  [Java examples](https://docs.objectrocket.com/api/java.html)
--  [PHP examples](https://docs.objectrocket.com/api/php.html)
+### Connect via native MongoDB Drivers
 
-### Connect via Native MongoDB Drivers
-
--   [Overview](https://docs.objectrocket.com/native_drivers.html#overview)
--   [Python example](https://docs.objectrocket.com/native_drivers.html#python)
--   [Node.js example](https://docs.objectrocket.com/native_drivers.html#node-js)
--   [C\#](https://docs.objectrocket.com/native_drivers.html#c)
-
-### Tools
-
-ObjectRocket has created a couple of example tools to use in conjunction
-with the ObjectRocket service. The ObjectRocket API makes it very easy
-to query the service for data and metadata for various things like
-monitoring or performance tools.
-
--   **Rocketstat** - Rocketstat is a clone of the popular
-    mongostat utility. This utility show various performance metrics
-    about the ObjectRocket instance.
--   **Rockettop** - RocketTop is a real-time statistics viewer
-    for ObjectRocket.
-
-Learn more about the tools and get access to their Github repos on [the Tools page](http://docs.objectrocket.com/tools.html).
+-   [Overview](https://objectrocket.com/docs/mongodb_connection_examples.html)
+-   [Go example](https://objectrocket.com/docs/mongodb_go_examples.html)
+-   [PHP example](https://objectrocket.com/docs/mongodb_go_examples.html)
+-   [Node.js example](https://objectrocket.com/docs/mongodb_node_examples.html)
+-   [Python example](https://objectrocket.com/docs/mongodb_python_examples.html)
+-   [Ruby example](https://objectrocket.com/docs/mongodb_connection_examples.html)
 
 ### Have a question?
 
-Read the [FAQ](http://docs.objectrocket.com/faq.html).
+Read the [FAQ](https://objectrocket.com/docs/faq.html).
 
 ### Support
 
-If you have an issue, you can [submit a ticket](https://objectrocket.zendesk.com/home) or send ObjectRocket an
-email at <support@objectrocket.com>.
+If you have an issue, you can [submit a ticket](https://objectrocket.zendesk.com/home) or send an
+email to support@objectrocket.com.
 
-### Get Started - Get an Account!
+### Get an account!
 
-[Sign up for ObjectRocket](https://app.objectrocket.com/sign_up1). Get
+[Sign up for ObjectRocket](https://app.objectrocket.com/sign_up1) and get
 started with a free 30-day trial.

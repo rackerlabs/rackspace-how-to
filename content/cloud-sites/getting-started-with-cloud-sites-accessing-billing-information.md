@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-sites-accessing-billing-information/
-node_id: 1243
+audit_date:
 title: 'Getting Started with Cloud Sites: Accessing billing information'
 type: article
 created_date: '2011-11-08'
@@ -47,10 +47,7 @@ estimating your monthly charges.
 
 In the Cloud Sites Control Panel, you can access usage data by clicking
 **Your Account > Reports** in the left navigation pane.
-The **Reports** section opens to the **Usage Data** tab, as shown in the
-following figure.
-
-<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-accessing-billing-information/1243.1.png %}" alt="" />
+The **Reports** section opens to the **Usage Data** tab.
 
 The **Usage Data** tab displays a usage summary for your account during
 the current billing period, up to 48 hours prior to the the current day.
@@ -65,8 +62,6 @@ the current billing period, up to 48 hours prior to the the current day.
     bandwidth, and compute cycles. Clicking on the column titles will
     sort the information below.
 
-<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-accessing-billing-information/1243.1.1.png %}" alt="" />
-
 ### Billing
 
 You can access billing information for Cloud Sites by clicking **Your
@@ -75,8 +70,6 @@ opens the **Billing & Payments** section of the Cloud Control Panel.
 This section displays important information like your total outstanding
 balance, the date of your most recent invoice, and which credit card is
 being used for payments on the account.
-
-<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-accessing-billing-information/1243.3.png %}" alt="" />
 
 -   The **Recent Activity** section lists a summary of your most
     recent invoice. This summary includes the date and amount of your

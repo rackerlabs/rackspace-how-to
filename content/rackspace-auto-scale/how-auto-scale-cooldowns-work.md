@@ -1,12 +1,12 @@
 ---
 permalink: how-auto-scale-cooldowns-work/
-node_id: 3840
-title: How Auto Scale Cooldowns Work
+audit_date:
+title: Auto Scale Cooldowns
 type: article
 created_date: '2013-12-21'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-05-31'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Autoscale
 product_url: rackspace-auto-scale
 ---
@@ -52,8 +52,6 @@ minimum cooldown period in order to fully deploy. You should set the
 group minimum cooldown to the length of time that it takes for one
 server to fully deploy.
 
-
-
 ### Use a policy cooldown
 
 When you set a policy **Cooldown**, you are restricting the
@@ -70,10 +68,8 @@ cooldowns allow you to scale up fast and scale down slowly.
 
 ### Cooldowns graph
 
-The following graphs illustrates how cooldowns affect policy execution.
+The following graphs illustrate how cooldowns affect policy execution:
 
 <img src="{% asset_path rackspace-auto-scale/how-auto-scale-cooldowns-work/Slide6.png %}" width="720" height="540" />
-
-
 
 <img src="{% asset_path rackspace-auto-scale/how-auto-scale-cooldowns-work/Slide7.png %}" width="720" height="540" />

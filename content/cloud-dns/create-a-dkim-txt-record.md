@@ -1,12 +1,12 @@
 ---
 permalink: create-a-dkim-txt-record/
-node_id: 1502
+audit_date:
 title: Create a DKIM TXT record
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-27'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -21,11 +21,13 @@ in the "External resources" section below.
 
 The process of setting up DKIM involves several tasks:
 
-1.  Create a selector. This is a simple, user-defined text string that
-    you will associate with a public key in a later step.
+1.  Create a selector. This is a simple, user-defined text string that you will associate with a public key in a later step.
+
 2.  Generate a public/private key pair by using a tool such
     as **ssh-keygen** on Linux or **PuTTYgen** on Windows.
+
 3.  Publish the selector and public key by creating a DNS TXT record.
+
 4.  Attach the token to each outgoing email.
 
 This article describes how to create the selector and publish the DKIM
@@ -34,15 +36,12 @@ TXT record.
 ### Create a DKIM TXT record
 
 **Note:** Before you perform this procedure, choose a text string to use
-as your selector and generate a public/private key pair. To publish the
-DKIM selector and private key
+as your selector and generate a public/private key pair.
 
 **To publish the DKIM selector and private key**:
 
-<img src="{% asset_path cloud-dns/create-a-dkim-txt-record/Add%20DNS%20Record.png %}" alt="Add DNS Record" />
-
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-2.  In the top navigation bar, select **Networking &gt; Cloud DNS**.
+2.  In the top navigation bar, select **Networking > Cloud DNS**.
 3.  Click the gear icon next to the name of an existing domain and
     select **Add DNS Record**.
 4.  In the popup dialog box, select **TXT Record** as the record type.
@@ -53,11 +52,9 @@ DKIM selector and private key
     example, if you use default as the text string and myexampledomain
     is your domain name, the selector would look as follows:
 
-   ```
         default._domainkey.myexampledomain.com
-   ```
 
-    You need to enter only the text string and **`._domainkey`** in the
+    You need to enter only the text string and `._domainkey` in the
     **Hostname** text box.
 
 6.  Expand the **Text** box by dragging the corner, than enter the
@@ -80,8 +77,6 @@ For instructions on attaching the token to your outgoing email, go to
 ### Related articles
 
 [Setting up SPF DNS TXT records](/how-to/create-an-spf-txt-record)
-
-[Learn more about DNS](/how-to/learn-more-about-dns)
 
 ### External resources
 

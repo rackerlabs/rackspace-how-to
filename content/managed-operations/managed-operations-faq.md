@@ -1,6 +1,6 @@
 ---
 permalink: managed-operations-faq/
-node_id: 5032
+audit_date:
 title: Managed Operations FAQ
 type: article
 created_date: '2015-12-10'
@@ -91,8 +91,7 @@ For additional information, see the following How-To articles:
     Panel](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
     or
     [API](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#create-image-of-specified-server).
--   Rackspace Cloud Backup - Create and schedule [file-based
-    backups](/how-to/rackspace-cloud-backup-overview).
+-   Rackspace Cloud Backup - Create and schedule [file-based backups](/how-to/rackspace-cloud-backup-create-a-backup).
 -   [Holland Backup Manager](http://hollandbackup.org/) - An open-source
     backup framework originally developed at Rackspace and written
     in Python.
@@ -167,7 +166,7 @@ Servers.
         or
         [API](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#create-image-of-specified-server).
     -   Rackspace Cloud Backup - Create and schedule [file-based
-        backups](/how-to/rackspace-cloud-backup-overview).
+        backups](/how-to/rackspace-cloud-backup-create-a-backup).
     -   [Holland Backup Manager](http://hollandbackup.org/) - An
         open-source backup framework originally developed at Rackspace
         and written in Python.

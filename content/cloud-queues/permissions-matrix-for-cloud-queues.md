@@ -1,25 +1,19 @@
 ---
 permalink: permissions-matrix-for-cloud-queues/
-node_id: 3650
+audit_date:
 title: Permissions Matrix for Cloud Queues
 type: article
 created_date: '2013-08-19'
 created_by: Renee Rendon
-last_modified_date: '2016-01-18'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-05-09'
+last_modified_by: Stephanie Fillmon
 product: Cloud Queues
 product_url: cloud-queues
 ---
 
 The following permissions matrix displays specific permissions for the roles in Cloud Queues. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
 
-[API Documentation](http://developer.rackspace.com/docs/)
-
-[Related How-To Articles](/how-to/)
-
-[Cloud Queues Terminology](/how-to/permissions-matrix-for-cloud-queues)
-
-## As of October 4, 2013
+### As of October 4, 2013
 
 Method Name | API Action | Role | Description
 --- | --- | --- | ---
@@ -46,14 +40,10 @@ Query Claim	| ```GET/ {version}/queues/{queue_name}/claims/{claimId}``` | **Obse
 Update Claim | ```PATCH/ {version}/queues/{queue_name}/claims/{claimId}``` | **Creator & Admin** | Updates the specified claim for the specified queue.
 Release Claim | ```DELETE/ {version}/queues/{queue_name}/claims/{claimId}``` | **Creator & Admin** | Releases the specified claim for the specified queue.
 
-## Cloud Queues Terminology
+### Cloud Queues Terminology
 
-### Message
+- **Message** - A task, a notification, or any meaningful data that gets posted to the queue. A message exists until it is deleted by a recipient or automatically by the system based on a TTL (time-to-live) value.
 
-A message is a task, a notification, or any meaningful data that gets posted to the queue. A message exists until it is deleted by a recipient or automatically by the system based on a TTL (time-to-live) value.
+- **Queue** - A queue holds messages. Ideally, a queue is created per work type. For example, if you want to compress files, you would create a queue dedicated to this job. Any application that reads from this queue would only compress files.
 
-### Queue
-
-A queue holds messages. Ideally, a queue is created per work type. For example, if you want to compress files, you would create a queue dedicated to this job. Any application that reads from this queue would only compress files.
-
-[**&lt; Permission Matrices for RBAC**](/how-to/permissions-matrix-for-role-based-access-control-rbac)
+**Related article** - [Permission Matrices for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)

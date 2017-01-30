@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-email-mailbox-features/
-node_id: 4208
+audit_date:
 title: Rackspace Email mailbox features
 type: article
 created_date: '2014-08-25'

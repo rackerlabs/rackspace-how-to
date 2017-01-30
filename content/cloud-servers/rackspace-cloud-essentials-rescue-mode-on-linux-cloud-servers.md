@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers/
-node_id: 3295
+audit_date:
 title: Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers
 type: article
 created_date: '2013-02-11'
 created_by: Renee Rendon
-last_modified_date: '2015-07-16'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-07-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -31,14 +31,9 @@ Rescue mode grants the root user full access to your non-bootable server's files
 
 4. Copy the temporary password and click **Dismiss Password**.
 
-    <img src="{% asset_path cloud-servers/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers/Feb%2011%20-%20Rescue%20Mode%20Activated.png %}" alt="" />
+   **Note:** The green bar to the left of the server name will turn yellow during the process of building into Rescue Mode and then red when the process has completed. This may take several minutes.
 
-    **Note:** The green bar to the left of the server name will turn yellow during the process of building into Rescue Mode and then red when the process has completed. This may take several minutes.
-
-    <img src="{% asset_path cloud-servers/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers/Feb%2011%20-%20Yellow%20Bar.png %}" alt="" />
-	<img src="{% asset_path cloud-servers/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers/Feb%2011%20-%20Red%20Box.png %}" alt="" />
-
-5. Once your server is in rescue mode, use an SSH client to connect to your server using the public IP address and the temporary root password to log in to rescue mode.
+5. After your server is in rescue mode, use an SSH client to connect to your server using the public IP address and the temporary root password to log in to rescue mode.
 
 ### Troubleshoot your server in rescue mode
 

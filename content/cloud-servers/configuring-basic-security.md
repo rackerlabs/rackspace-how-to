@@ -1,11 +1,11 @@
 ---
 permalink: configuring-basic-security/
-node_id: 1501
-title: Configuring basic security
+audit_date:
+title: Configure basic security
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
+last_modified_date: '2016-06-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -23,7 +23,7 @@ After you create a new cloud server, we recommend that you perform the
 following tasks to enhance security of the server.
 
 **Note:** Small modifications to the following commands might be
-necesssary if you're using a different distribution. If necessary, refer
+necessary if you're using a different distribution. If necessary, refer
 to your operating system documentation.
 
 ### Log in to the server

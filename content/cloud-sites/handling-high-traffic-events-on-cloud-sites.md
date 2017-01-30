@@ -1,7 +1,7 @@
 ---
 permalink: handling-high-traffic-events-on-cloud-sites/
-node_id: 3108
-title: Handling High Traffic Events on Cloud Sites
+audit_date:
+title: Handle High Traffic Events on Cloud Sites
 type: article
 created_date: '2012-10-10'
 created_by: Tarun Bhatti

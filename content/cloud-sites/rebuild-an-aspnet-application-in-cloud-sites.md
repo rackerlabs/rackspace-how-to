@@ -1,6 +1,6 @@
 ---
 permalink: rebuild-an-aspnet-application-in-cloud-sites/
-node_id: 659
+audit_date:
 title: Rebuild an ASP.NET application in Cloud Sites
 type: article
 created_date: '2011-03-16'

@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-blackberry-enterprise-service-bes-for-email-hosted-on-exchange/
-node_id: 780
+audit_date:
 title: Manually configure BlackBerry Enterprise Service (BES) for email hosted on Exchange
 type: article
 created_date: '2012-03-13'

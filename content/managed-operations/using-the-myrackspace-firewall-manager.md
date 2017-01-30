@@ -1,14 +1,14 @@
 ---
 permalink: using-the-myrackspace-firewall-manager/
-node_id: 4763
+audit_date:
 title: MyRackspace Firewall Manager
 type: article
 created_date: '2015-07-28'
 created_by: Rose Contreras
-last_modified_date: '2016-01-13'
-last_modified_by: Rose Contreras
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2016-06-22'
+last_modified_by: Nate Archer
+product: Managed Operations
+product_url: managed-operations
 ---
 
 The MyRackspace Firewall Manager application is an upgraded version of the firewall control panel, which enables you to view and edit your firewall configurations. The Firewall Manager is available for all Cisco PIX, Cisco ASA, and Juniper SRX 100/240 firewalls. It is not available for Cisco PIX 515/525/535 URFO and firewalls in a high-availability configuration.
@@ -17,19 +17,16 @@ The Firewall Manager allows you to perform the following actions on the firewall
 
 - Add permit policies
 - Add and delete IP addresses to be denied by means of a blacklist
-- Add and delete IP addresses from address sets prefixed with <code>fwcp-</code>
+- Add and delete IP addresses from address sets prefixed with `fwcp`
 - Delete single deny policies
 - Add comments (notes) to a permit policy, deny policy, IP addresses in the blacklist, and IP addresses in an address set
-prefixed with <code>fwcp-</code>
+prefixed with `fwcp-`
 - View and export (.csv) changes that occurred on the firewall
 - Export (.csv) the firewall's inbound access list
 
 ### Firewall user agreement
 
 Every three months, users with administrative and editing privileges are prompted to accept the Firewall User Agreement terms for each firewall. After you accept the user agreement, you and the primary contact person on the account receive a confirmation email. If you choose not to accept the agreement, you can still view your firewall configuration, but you cannot modify it.
-
-<img src="{% asset_path managed-operations/using-the-myrackspace-firewall-manager/926-1.1.png %}" width="482" height="38" alt="" border="1"  />
-
 
 ### Firewall Manager overview
 
@@ -73,7 +70,7 @@ The source IP is often set to **Any IP** for web and similar services. For servi
 
 #### Netmask source and destination
 
-Netmasks are a way to specify a range of IP addresses. If you enter an IP address in the **Source** or **Destination** fields, you can select a netmask. The default option is <code>**/32 (255.255.255.255)**</code>. Netmasks are listed in both Classless Inter-Domain Routing (CIDR) notation (also known as slash notation) and IP format. Following is a list of allowed IP address ranges:
+Netmasks are a way to specify a range of IP addresses. If you enter an IP address in the **Source** or **Destination** fields, you can select a netmask. The default option is `**/32 (255.255.255.255)**`. Netmasks are listed in both Classless Inter-Domain Routing (CIDR) notation (also known as slash notation) and IP format. Following is a list of allowed IP address ranges:
 
 CIDR | Netmask | Number of hosts in each range |
 --- | --- | ---
@@ -122,9 +119,7 @@ You can open a single port to all server IP addresses for a specific IP address.
 
 In the following image, a policy was added to allow an alternate SMTP (Port 587) mail traffic through the firewall from the IP address 207.250.49.146.
 
-**Note:**
-
-<img src="{% asset_path managed-operations/using-the-myrackspace-firewall-manager/926-4763-1_0.png %}" width="550" height="236" border="2" alt=""  />
+<img src="{% asset_path managed-operations/using-the-myrackspace-firewall-manager/Add-image-policy-image-1.png %}" width="550" height="236" border="2" alt=""  />
 
 The following image shows a protocol that was changed to IP (all ports). When you select this protocol, you cannot enter or select a port number.
 
@@ -145,8 +140,8 @@ The **copy** icon is not displayed for these kinds of policies on the Firewall M
 With the File Manager, you can delete permit policies and single deny policies by using the following steps:
 
 
-  - In the Firewall Manager, select the check box for the policy that you want to delete.<br /><br />
-  - Click **Delete Selected Policies** on the side bar.<br /><br />
+  - In the Firewall Manager, select the check box for the policy that you want to delete.
+  - Click **Delete Selected Policies** on the side bar.
 
 If you want to delete multiple policies, you must delete them one at a time. Some policies do not display a check box and cannot be deleted. These policies allow Rackspace support technicians and specific systems to access your server.
 
@@ -156,9 +151,9 @@ You can add a comment to a permit or deny policy after you add the policy to the
 
 ### View and manage IP groups
 
-If a network address set is prefixed with <code>fwcp-</code>, you can add and delete IP addresses from the IP group. If a network address does not have the <code>fwcp-</code> prefix, you can only view the IP group. The address set must contain at least one IP address at all times. You can view updates to address sets in the change log.
+If a network address set is prefixed with `fwcp`, you can add and delete IP addresses from the IP group. If a network address does not have the `fwcp-` prefix, you can only view the IP group. The address set must contain at least one IP address at all times. You can view updates to address sets in the change log.
 
-To manage editable IP groups with the <code>fwcp-</code> prefix, click the hyperlink for the group you want to manage. In the **manage IP group** dialog box that appears, you can manage addresses and comments from the address set from this window.
+To manage editable IP groups with the `fwcp-` prefix, click the hyperlink for the group you want to manage. In the **manage IP group** dialog box that appears, you can manage addresses and comments from the address set from this window.
 
 To view non-editable IP groups, click the hyperlink for the group that you want to view.
 
@@ -169,8 +164,6 @@ To view non-editable IP groups, click the hyperlink for the group that you want 
 The blacklist is a central area for source IP addresses for which you want to deny access. You can add and delete host IP addresses and IP ranges from the Manage Blacklist menu. All IP addresses listed in the earlier version were migrated to this blacklist. Updates to the blacklist are logged in the change log.
 
 Access the blacklist from the **Manage Blacklist** option in the side navigation bar, as shown in the following image. Customers with view-only permissions have the **View Blacklist** option.
-
-<img src="{% asset_path managed-operations/using-the-myrackspace-firewall-manager/926-476-3.png %}" width="219" height="206" border="1" alt=""  />
 
 Use the **Manage Blacklist** dialog box to add IP addresses to and delete IP addresses from the blacklist, and to add comments.
 

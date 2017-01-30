@@ -1,12 +1,12 @@
 ---
 permalink: getting-started-on-a-windows-cloud-server/
-node_id: 350
-title: Getting Started on a Windows Cloud Server
+audit_date:
+title: Get Started on a Windows Cloud Server
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-23'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -17,37 +17,30 @@ This article walks through how to get started on a Windows Cloud Server in the [
 
 -   Administrative access to the Cloud Sites Control Panel
 
-### Procedure
+### Create a Windows cloud server
 
--   Login to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com/pages/Login.jsp)
--   Navigate to **Hosting > Cloud Servers**
--   Click on **Add Server** button
--   Click on the **Windows** tab in order to see the options as
-    shown below.
+1. Login to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com/pages/Login.jsp).
+2. Navigate to **Hosting > Cloud Servers**.
+3. Click **Add Server**.
+4. Click the **Windows** tab in order to see the options.
+5. Press the **Select** button for the appropriate Windows Operating system from the list shown.
 
-  <img src="{% asset_path cloud-servers/getting-started-on-a-windows-cloud-server/Win1.jpg %}" alt="Win1.jpg" />
+   Alternately select an image from **User Backups**. Refer creating servers from backups.
 
--   Press on the **Select** button for the appropriate Windows Operating
-    system from the list shown
--   Alternately select an image from **User Backups**. Refer creating
-    servers from backups
--   Provide a name of the server which serves as a label for the Cloud
-    server (no special characters, please!)
--   Select the memory and drive size configuration from available
-    options such as
+7. Provide a name of the server which serves as a label for the Cloud server.
+
+   **Note:** Avoid using special characters.
+
+8. Select the memory and drive size configuration from available options such as:
     -   256 MB,10 GB
     -   512 MB,20 GB
     -   1024 MB,40 GB
     -   2048 MB,80 GB
     -   4096 MB,160 GB
--   Click on **Create Server** button to start the build
 
-  <img src="{% asset_path cloud-servers/getting-started-on-a-windows-cloud-server/win2.jpg %}" alt="win2.jpg" />
+9. Click **Create Server** to start the build.
 
--   Watch the server build process in the Cloud Sites Control Panel
-    if interested. Upon completion an email is sent to the contact email
-    address for the account with the Administrator password for the new
-    Cloud Server.
+You can see the server build process in the Cloud Sites Control Panel. Upon completion an email is sent to the contact email address for the account with the Administrator password for the new Cloud Server.
 
 ### Additional Resources
 

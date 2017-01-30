@@ -1,7 +1,7 @@
 ---
 permalink: serving-your-domain-from-a-rackspace-cloud-server/
-node_id: 1517
-title: Serving Your Domain From a Rackspace Cloud Server
+audit_date:
+title: Serve Your Domain From a Rackspace Cloud Server
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
@@ -51,11 +51,3 @@ the original domain registrar.
 -   <span>The only product the Rackspace Cloud offers where
     we <span>*can* act as domain registrar is for [Cloud
     Sites](http://www.rackspace.com/cloud/sites/).</span></span>
-
-
-
-### Related Information
-
-[Learn More About
-DNS](/how-to/learn-more-about-dns "Learn More About DNS")
-

@@ -1,6 +1,6 @@
 ---
 permalink: imap-and-pop-mail-protocol-comparison/
-node_id: 1425
+audit_date:
 title: IMAP and POP mail protocol comparison
 type: article
 created_date: '2012-06-04'

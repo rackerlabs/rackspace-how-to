@@ -1,12 +1,12 @@
 ---
 permalink: cloud-servers-attaching-and-detaching-networks/
-node_id: 3814
+audit_date:
 title: Attach and detach networks from a Cloud Server
 type: article
 created_date: '2013-12-17'
 created_by: Rose Contreras
-last_modified_date: '2014-11-07'
-last_modified_by: Ross Diaz
+last_modified_date: '2016-07-07'
+last_modified_by: Kyle Laffoon
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -26,8 +26,6 @@ your cloud server while networking is reset on the server.
 1.  Log in to the Cloud Control Panel at
     [mycloud.rackspace.com](http://mycloud.rackspace.com).
 
-    <img src="{% asset_path cloud-networks/cloud-servers-attaching-and-detaching-networks/attach-2.png %}" width="700" height="568" />
-
 2.  On the Cloud Servers page, click the server to which  you want to
     attach a network. The details page for that server is displayed.
 
@@ -39,16 +37,15 @@ your cloud server while networking is reset on the server.
 4.  Select a network and click **Add Network**.
 
     You can also create a new cloud network and attach it to the
-    server..
+    server.
 
-    <img src="{% asset_path cloud-networks/cloud-servers-attaching-and-detaching-networks/attach-3.png %}" width="700" height="347" />
-
-    <img src="{% asset_path cloud-networks/cloud-servers-attaching-and-detaching-networks/attach-4.png %}" width="450" height="119" />
+    **Note**: Adding networks may take several minutes.
 
     After the network is attached, it is displayed in the list of
     networks for that server.
 
-    <img src="{% asset_path cloud-networks/cloud-servers-attaching-and-detaching-networks/attach-5.png %}" width="700" height="340" />
+    **Note**: Disconnecting networks may also take several minutes.
+
 
 ### To Detach (Disconnect) a Network:
 
@@ -58,9 +55,8 @@ Public or ServiceNet interfaces from cloud servers.
 
 1.  Log in to the Cloud Control Panel at
     [mycloud.rackspace.com](http://mycloud.rackspace.com).
-    <img src="{% asset_path cloud-networks/cloud-servers-attaching-and-detaching-networks/attach-6.png %}" width="702" height="421" />
 
-    <img src="{% asset_path cloud-networks/cloud-servers-attaching-and-detaching-networks/attach-7.png %}" width="453" height="115" />
+    **Note**: Disconnecting networks may also take several minutes. 
 
 2.  On the Cloud Servers page, click the server from which you want to
     detach a network.

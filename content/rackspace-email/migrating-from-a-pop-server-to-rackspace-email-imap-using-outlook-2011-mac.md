@@ -1,6 +1,6 @@
 ---
 permalink: migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/
-node_id: 3794
+audit_date:
 title: Migrate from a POP server to Rackspace Email IMAP using Outlook 2011 - Mac
 type: article
 created_date: '2013-11-25'

@@ -16,7 +16,7 @@ Cloud Hosting,Cloud Sites,cloud-sites,162
 Cloud Hosting,Managed Operations,managed-operations,14
 Cloud Hosting,Managed VMware Services,managed-vmware-services,5
 Cloud Hosting,RackConnect,rackconnect,46
-Cloud Hosting,Rackspace Auto Scale,rackspace-auto-scale,13
+Cloud Hosting,Rackspace Autoscale,rackspace-auto-scale,13
 Cloud Hosting,Rackspace CDN,rackspace-cdn,28
 Cloud Hosting,Rackspace Intelligence,rackspace-intelligence,25
 Cloud Hosting,Rackspace Metrics,rackspace-metrics,8
@@ -28,3 +28,4 @@ Cloud Office,Rackspace Email Archiving,rackspace-email-archiving,14
 Cloud Office,Rackspace Email,rackspace-email,80
 Rackspace Private Cloud,Rackspace Private Cloud Powered by Microsoft Cloud Platform,rpc-microsoft,4
 Rackspace Private Cloud,Rackspace Private Cloud Powered by OpenStack,rpc-openstack,20
+Dedicated Hosting, dedicated-hosting, 2

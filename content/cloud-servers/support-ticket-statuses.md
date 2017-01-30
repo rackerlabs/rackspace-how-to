@@ -1,6 +1,6 @@
 ---
 permalink: support-ticket-statuses/
-node_id: 1136
+audit_date:
 title: Support ticket statuses
 type: article
 created_date: '2011-06-15'

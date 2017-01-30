@@ -1,12 +1,12 @@
 ---
 permalink: cloud-backup-troubleshooting/
-node_id: 4732
+audit_date:
 title: Cloud Backup troubleshooting
 type: article
 created_date: '2015-06-29'
 created_by: Rackspace Support
-last_modified_date: '2016-04-05'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-07-19'
+last_modified_by: Catherine Richardson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -49,8 +49,7 @@ DriveClient service was likely not running at the time of the scheduled
 backup, and the agent was therefore offline.
 
 Verify that the agent is running on the server. If the agent is not
-already running, start it. Next, check the logs to determine why the
-backup job failed.
+already running, start it. Next, check the logs to determine why the agent was not running.
 
 An agent should never go offline by itself. If the agent did not
 respond, then the agent could not reach one of the API endpoints, the
@@ -63,17 +62,19 @@ A backup status of Completed with Errors indicates that the backup
 completed but one or more files could not be backed up. The most common
 issues that cause this status are as follows:
 
--   The file was deleted between the time the index of files completed and the copy of that specific file was attempted. This issue is common with any temporary files, such as PHP session files.
+-   The file was deleted between the time the index of files completed and the copy of that specific file was attempted. This issue is common with any temporary files, such as PHP session files, and is almost always harmless. If it is possible and practical for you to exclude these files from the backup definition, this kind of error goes away.
 
 -   The file was exclusively locked (Windows), so that no other process could read it. This issue is common with database binary files. With databases, you should never back up the binaries themselves, but rather dump the contents of the database to a flat file (such as an SQL file), and back up that flat file. Doing so allows for a quicker backup and an easier restore. We suggest that you break individual databases into different flat files, so that they can be manipulated easier on restore. Then,  you do not have to fully restore the flat file just to restore a single database.
 
 -   Non-UTF-8 characters were used in the path of the file in the operating system. The current version of Cloud Backup supports only UTF-8 characters. When non-UTF-8 characters are used, a `Path Not Found` message is displayed.
 
+For more information, see [Back up databases with Cloud Backup](https://support.rackspace.com/how-to/rackspace-cloud-backup-backing-up-databases/).
+
 #### Backup status "Error"
 
 Many issues might cause a backup status of Error to occur, such as cloud account permissions for the user who configured that agent or the DriveClient not being able to connect to the agent APIs.
 
-Rackspace Support must review the **DriveClient.log** file to determine the cause. If the agent is not connected, attach the **DriveClient.log** file to a ticket so that Support can review it.
+Rackspace Support must review the **driveclient.log** file to determine the cause. If the agent is not connected, attach the **driveclient.log** file to a ticket so that Support can review it. For more information, see [Cloud Backup agent logging basics - Where to store saved logs](https://support.rackspace.com/how-to/cloud-backup-agent-logging-basics/).
 
 Following are some of the issues and some possible fixes:
 
@@ -88,7 +89,15 @@ To work around this issue, edit the **bootstrap.json** file and change the volum
 
 ##### Out of Disk Space
 
-If the local system has less than 100 MB of free disk space, the backup cannot properly decompress the local backup vault database to execute a backup or restore.
+If the local system has less than 100 MB of free disk space, the backup and even the server itself might be critically affected. Effects on the backup agent include but are not limited to the following issues:
+
+-  Logging is throttled or stopped.
+-  The vault database might not be able to compress or decompress for backup, restore, or cleanup operations.
+-  Corruption of the vault database might occur.
+-  Automated log uploads made by using the Cloud Control Panel might not be possible.
+-  File restore operations might partially or completely fail.
+
+If disk space is so low that any of the preceding issues occur, we strongly recommend that you move as many extraneous files as possible off of the local system drive. For possible ways to do this with Cloud Backup files, see [Conserving resources with Cloud Backup](https://support.rackspace.com/how-to/best-practices-for-cloud-backup/).
 
 ##### Container does not exist
 
@@ -160,13 +169,13 @@ If the agent cannot communicate with one or more of the following required API e
 
 The agent logs are stored, by default, in the following directories:
 
--   (Windows) **C:\\ProgramData\\DriveClient\\logs\\DriveClient.log**
+-   (Windows) **C:\\ProgramData\\DriveClient\\logs\\driveclient.log**
 
     The **C:\\ProgramData\\DriveClient** directory can be changed, based on the installer or through the **AgentConfig.exe** executable.
 
--   (Linux) **/var/log/DriveClient.log**
+-   (Linux) **/var/log/driveclient.log**
 
-The only thing that can be manually edited in the **log4cxx.xml** file (log configuration) is the size of the **DriveClient.log** file (`MaxFileSize`) and how many previous versions (`MaxBackupIndex`) are saved before they are deleted. For more information about how to configure this file, see [Cloud Backup agent logging basics](/how-to/cloud-backup-agent-logging-basics).
+The **log4cxx.xml** configuration file controls agent logging. This file is located in the Cloud Backup cache folder. Among the things that you can manually edit in this file are the size of the **driveclient.log** file (`MaxFileSize`) and how many previous versions (`MaxBackupIndex`) are saved before they are deleted. For more information about how to configure this file, see [Cloud Backup agent logging basics](/how-to/cloud-backup-agent-logging-basics).
 
 #### Format of log lines
 
@@ -183,7 +192,7 @@ Log lines have the following format:
 
 #### Common log items
 
-The following common items are included in the **DriveClient.log** file:
+The following common items are included in the **driveclient.log** file:
 
 - `rax::LoggingPolicy::PerformSetup(134)`: Indicates the starte of the DriveClient service.
 - `rax::AgentPolicy::TearDown(38)] Tearing down logging...`: Indicates that the DriveClient service was properly shut down.
@@ -192,7 +201,7 @@ The following common items are included in the **DriveClient.log** file:
 
 Common errors in the log include 401 and 403 errors that are received when the agent is accessing the **rse.drivesrvr.com**, **api.drivesrvr.com**, **rse.drivesrvr.co.uk**, or **api.drivesrvr.co.uk** endpoints.
 
-When you first start the DriveClient service, the RSA key pair for authentication might not properly synchronize immediately, which causes a brief time of 401 and 403 errors in the **DriveClient.log** file. This is normal for the Cloud Backup internal APIs. The DriveClient service handles these errors and retries the appropriate number of times before canceling the startup of that service.
+When you first start the DriveClient service, the RSA key pair for authentication might not properly synchronize immediately, which causes a brief time of 401 and 403 errors in the **driveclient.log** file. This is normal for the Cloud Backup internal APIs. The DriveClient service handles these errors and retries the appropriate number of times before canceling the startup of that service.
 
 If the errors continue for more than 5-10 seconds, contact Rackspace Support.
 

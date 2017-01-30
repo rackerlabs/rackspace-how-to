@@ -1,12 +1,12 @@
 ---
 permalink: using-the-rackspace-network-effectively/
-node_id: 1528
+audit_date:
 title: Using the Rackspace network effectively
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-05-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---

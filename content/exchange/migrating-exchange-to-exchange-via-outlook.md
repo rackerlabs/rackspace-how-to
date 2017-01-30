@@ -1,7 +1,7 @@
 ---
 permalink: migrating-exchange-to-exchange-via-outlook/
-node_id: 1417
-title: 'Migrating Exchange to Exchange via Outlook'
+audit_date:
+title: 'Migrate Exchange to Exchange via Outlook'
 type: article
 created_date: '2012-05-27'
 created_by: Rae D. Cabello

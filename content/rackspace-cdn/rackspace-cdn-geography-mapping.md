@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cdn-geography-mapping/
-node_id: 4810
+audit_date: 
 title: Rackspace CDN geography mapping
 type: article
 created_date: '2015-09-11'

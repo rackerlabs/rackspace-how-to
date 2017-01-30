@@ -1,6 +1,6 @@
 ---
 permalink: cloud-server-images-for-use-with-rackconnect-v20/
-node_id: 2030
+audit_date:
 title: Cloud Servers images for use with RackConnect v2.0
 type: article
 created_date: '2012-08-21'
@@ -14,7 +14,7 @@ product_url: rackconnect
 **Applies to:** RackConnect v2.0
 
 To create new servers, you can use Cloud Servers images that are
-available in the [MyRackspace](https://my.rackspace.com/) portal, the
+available in the [MyRackspace portal](https://my.rackspace.com/), the
 [Cloud Control Panel](https://mycloud.rackspace.com/), or the Cloud
 Servers API. To ensure that you are using a Cloud Servers image that is
 compatible with RackConnect, we recommend that you use the MyRackspace
@@ -44,7 +44,7 @@ with RackConnect:
 
 **Note:** You cannot use the Cloud Control Panel to create Managed
 Infrastructure Windows cloud servers for use with RackConnect. Use the
-MyRackspace Portal or the Cloud Servers API instead.
+MyRackspace portal or the Cloud Servers API instead.
 
 Some Managed Infrastructure Windows Cloud Servers images that are
 available via the Cloud Servers API cannot be used with RackConnect. If
@@ -92,18 +92,17 @@ The difference between the RackConnect and non-RackConnect images is a
 small change in the Windows firewall, which allows access for the
 automation systems.
 
-If you are using the MyRackspace Portal to create cloud servers on a
-Cloud account with RackConnect, you will automatically see the correct
+If you are using the MyRackspace portal to create cloud servers on a
+cloud account with RackConnect, you will automatically see the correct
 Windows images, and no additional action is required. You might not see
-the image IDs through the MyRackspace Portal.
+the image IDs through the MyRackspace portal.
 
 ### Managed Operations images
 
 All standard base images that are available through the API and
-MyRackspace Portal are compatible with RackConnect at the Managed
+MyRackspace portal are compatible with RackConnect at the Managed
 Operations service level.
 
-[Using Cloud Load Balancers with
-RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
-&lt; Previous | Next &gt; [RackConnect compatibility with Cloud Servers
-Images](/how-to/rackconnect-v20-compatibility-with-cloud-servers-images)
+### Related article
+[RackConnect v2.0 compatibility with Cloud Servers
+images](/how-to/rackconnect-v20-compatibility-with-cloud-servers-images)

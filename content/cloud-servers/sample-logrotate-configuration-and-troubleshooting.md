@@ -1,6 +1,6 @@
 ---
 permalink: sample-logrotate-configuration-and-troubleshooting/
-node_id: 1261
+audit_date:
 title: Sample logrotate configuration and troubleshooting
 type: article
 created_date: '2011-11-23'

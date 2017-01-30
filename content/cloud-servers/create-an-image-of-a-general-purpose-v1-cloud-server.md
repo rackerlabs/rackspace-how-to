@@ -1,11 +1,11 @@
 ---
 permalink: create-an-image-of-a-general-purpose-v1-cloud-server/
-node_id: 1488
+audit_date:
 title: Create an image of a General Purpose v1 Cloud Server
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
+last_modified_date: '2016-06-21'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -27,15 +27,13 @@ scheduling the creation of server images.
 
 2.  Locate the server you want to create an image of.
 
-3.  Click the **Actions** cog to the left of the server name and
-    select **Create Image**. A pop-up appears so you can name the image.
+3.  Click the **Actions** gear icon to the left of the server name and
+    select **Create Image**.
 
-    <img src="{% asset_path cloud-servers/create-an-image-of-a-general-purpose-v1-cloud-server/CreateImage.png %}" width="175" height="386" />
+    A pop-up appears so you can name the image.
 
 4.  (Optional) Enter a new image name in the pop-up for the image. If
     you don't enter a name, the server name is used as the image name.
-
-    <img src="{% asset_path cloud-servers/create-an-image-of-a-general-purpose-v1-cloud-server/On-Demand%20Image.png %}" alt="Create Image" />
 
 5.  Click **Create Image**.
 
@@ -47,8 +45,6 @@ or to restore the server.
 
 Alternatively you can create an on-demand image using
 the **Actions** menu from the details page of a specific server:
-
-<img src="{% asset_path cloud-servers/create-an-image-of-a-general-purpose-v1-cloud-server/ImageMenu2.png %}" width="546" height="309" />
 
 ### Locate a Saved Image
 

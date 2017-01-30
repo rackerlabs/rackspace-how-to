@@ -1,51 +1,70 @@
 ---
 permalink: glusterfs-high-availability-through-ctdb/
-node_id: 4178
-title: GlusterFS high availability through CTDB
+audit_date:
+title: Explore high availability of GlusterFS through CTDB
 type: article
 created_date: '2014-08-14'
 created_by: Marcin Stangel
-last_modified_date: '2016-01-12'
+last_modified_date: '2016-11-29'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Previous sectino
+**Previous section** - [GlusterFS troubleshooting](/how-to/glusterfs-troubleshooting)
 
-[GlusterFS troubleshooting](/how-to/glusterfs-troubleshooting)
+In its native form, GlusterFS gives you redundancy and high availability (HA). However,
+the clients that connect to your GlusterFS volumes by using its NFS or Samba exports need
+to have some additional services installed and configured on the GlusterFS nodes. This
+article explains how to add HA to NFS and Samba exports that are managed by the GlusterFS
+nodes when you build your volume.
 
+**Note:** If you use Cluster Trivial Database (CTDB) for the NFS exports, your GlusterFS
+nodes already have the NFS exports created, and the service is installed and configured.
 
-In its native form, GlusterFS gives you redundancy and high availability (HA). However, the clients that connect to your GlusterFS volumes by using its NFS or Samba exports need to have some additional services installed and configured on the GlusterFS nodes. This article explains how to add HA to NFS and Samba exports that are managed by the GlusterFS nodes when you build your volume.
-
-**Note:** If you use Cluster Trivial Database (CTDB) for the NFS exports, your GlusterFS nodes already have the NFS exports created, and the service is installed and configured.
-
-GlusterFS installs and uses a modified version of the NFS service (NFS v3 that uses TCP), and it is managed through the glusterd service scripts, not through the `/etc/init.d/nfs scripts`.
+GlusterFS installs and uses a modified version of the NFS service (NFS v3 that uses TCP),
+and it is managed through the glusterd service scripts, not through the **/etc/init.d/nfs scripts**.
 
 ### Introduction
 
-Previous articles in this series describe the theory behind GlusterFS, the different types of volumes it supports, and the different ways of connecting clients to GlusterFS nodes by using the native Gluster client (FUSE) or the NFS exports managed by GlusterFS nodes.
+Previous articles in this series describe the theory behind GlusterFS, the different types
+of volumes it supports, and the different ways of connecting clients to GlusterFS nodes by
+using the native Gluster client (FUSE) or the NFS exports managed by GlusterFS nodes.
 
-Some clients that need to access GlusterFS volumes might not be compatible with the native FUSE driver for various reasons, and these clients need to connect to the volumes by using NFS or Samba exports provided by your GlusterFS nodes.
+Some clients that need to access GlusterFS volumes might not be compatible with the native
+FUSE driver for various reasons, and these clients need to connect to the volumes by using
+NFS or Samba exports provided by your GlusterFS nodes.
 
-One drawback to using the NFS or Samba exports is that, unlike using the native client, if a node goes offline, your clients won't be able to automatically reconnect to a different GlusterFS node. This can result in problems for your client system, including D state processes and issues that are a direct result of the storage becoming unavailable.
+One drawback to using the NFS or Samba exports is that, unlike using the native client, if
+a node goes offline, your clients won't be able to automatically reconnect to a different
+GlusterFS node. This can result in problems for your client system, including D state
+processes and issues that are a direct result of the storage becoming unavailable.
 
-To battle that problem, developers from the Samba project have created a simple clustering tool called CTDB. You need to configure and deploy CTDB to achieve HA for clients that rely on NFS protocols to access your GlusterFS volumes. This article guides you through the process of adding a Samba export to your nodes and configuring it to be highly available by using CTDB.
+To battle that problem, developers from the Samba project have created a simple clustering
+tool called CTDB. You need to configure and deploy CTDB to achieve HA for clients that rely
+on NFS protocols to access your GlusterFS volumes. This article guides you through the
+process of adding a Samba export to your nodes and configuring it to be highly available
+by using CTDB.
 
 ### Using CTDB
 
-CTDB is a simple clustering daemon developed by Samba developers that provides a simple solution for highly available CIFS and NFS exports. It adds virtual IP addresses and a heartbeat service to each GlusterFS server node. For those volumes that are exported via CIFS, it also adds a locking mechanism.
+CTDB is a simple clustering daemon developed by Samba developers that provides a simple
+solution for highly available CIFS and NFS exports. It adds virtual IP addresses and a
+heartbeat service to each GlusterFS server node. For those volumes that are exported via
+CIFS, it also adds a locking mechanism.
 
 You can find more information about CTDB at [http://ctdb.samba.org](http://ctdb.samba.org/).
 
-Using CTDB ensures that your clients, whichever method they use (NFS or CIFS), can still access the volume in case of a brick failure.
+Using CTDB ensures that your clients, whichever method they use (NFS or CIFS), can still
+access the volume in case of a brick failure.
 
 ### Requirements
 
 The following items are necessary for CTDB installation:
 
 - CTDB installed on all nodes
-- A number of *unused* IP addresses that will be used as floating IP addresses for your bricks and the services used on the bricks to export the volume
+- A number of *unused* IP addresses that will be used as floating IP addresses for your
+  bricks and the services used on the bricks to export the volume
 - Round-robin A records in your DNS (or hosts files on clients) for the virtual IP address
 
 ### Install CTDB
@@ -54,9 +73,12 @@ The following items are necessary for CTDB installation:
 
           yum install ctdb
 
-    You need a shared volume (can be Gluster) to store the lock files and be available to all GlusterFS server nodes. The best practice is use a separated volume, but the following example uses a volume that was already created, `gvol0`.
+    You need a shared volume (can be Gluster) to store the lock files and be available to
+    all GlusterFS server nodes. The best practice is use a separated volume, but the
+    following example uses a volume that was already created, `gvol0`.
 
-2.	On each GlusterFS server node, run the following command, where *N* is the number of the node, so that each node mounts the volume via its own glusterd service:
+2.	On each GlusterFS server node, run the following command, where *N* is the number of
+   the node, so that each node mounts the volume via its own glusterd service:
 
           mount -t glusterfs glusterN:/gvol0 /gluster-volume0/
 
@@ -68,24 +90,20 @@ The following items are necessary for CTDB installation:
 
 5.	Stop Samba.
 
-6.	Add the following configuration to `/etc/samba/smb.conf`, under `[global]`. The `private dir` option specifies where to store the locking information. Ideally you should have a separate replicated volume created, or some other form of shared storage.
-
-          clustering = yes
-          idmap backend = tdb2
-          private dir = /gluster-volume0/
-
-7.	Disable Samba from automatically starting. It will be managed by the CTDB service.
+6.	Disable Samba from automatically starting. It will be managed by the CTDB service.
 
           chkconfig smb off
 
-8.	Configure the CTDB `/etc/sysconfig/ctdb` file, as follows:
+7.	Configure the CTDB **/etc/sysconfig/ctdb** file, as follows:
 
           CTDB_RECOVERY_LOCK=/gluster-volume0/.CTDB-lockfile
           CTDB_PUBLIC_ADDRESSES=/etc/ctdb/public_addresses
           CTDB_MANAGES_SAMBA=yes
           CTDB_NODES=/etc/ctdb/nodes
 
-9.	Configure the `/etc/ctdb/public_addresses` file, which is the list of virtual IP addresses to be assigned to all server nodes. This example uses two virtual IP addresses per server node (one for NFS and one for Samba), so in total it uses eight new private IP addresses.
+8.	Configure the **/etc/ctdb/public_addresses** file, which is the list of virtual IP addresses
+   to be assigned to all server nodes. This example uses two virtual IP addresses per server
+   node (one for NFS and one for Samba), so in total it uses eight new private IP addresses.
 
           vi /etc/ctdb/public_addresses
 
@@ -98,7 +116,7 @@ The following items are necessary for CTDB installation:
           10.0.0.12/24 eth2
           10.0.0.13/24 eth2
 
-10.	In `/etc/ctdb/nodes`, list the server nodes that will be members of the CTDB cluster:
+9.	In **/etc/ctdb/nodes**, list the server nodes that will be members of the CTDB cluster:
 
            vi /etc/ctdb/nodes
 
@@ -126,19 +144,6 @@ The following items are necessary for CTDB installation:
 
     You should see the following output:
 
-    - `ctdb ip` returns a list of all IP addresses and the nodes to which they are assigned:
-
-            [root@centos63-gluster1 ~]# ctdb ip
-            Public IPs on node 0
-            10.0.0.6 node[3] active[] available[eth2] configured[eth2]
-            10.0.0.7 node[2] active[] available[eth2] configured[eth2]
-            10.0.0.8 node[1] active[] available[eth2] configured[eth2]
-            10.0.0.9 node[0] active[eth2] available[eth2] configured[eth2]
-            10.0.0.10 node[3] active[] available[eth2] configured[eth2]
-            10.0.0.11 node[2] active[] available[eth2] configured[eth2]
-            10.0.0.12 node[1] active[] available[eth2] configured[eth2]
-            10.0.0.13 node[0] active[eth2] available[eth2] configured[eth2]
-
     - `ctdb status` returns the following information:
 
             [root@centos63-gluster1 ~]# ctdb status
@@ -156,6 +161,19 @@ The following items are necessary for CTDB installation:
             Recovery mode:NORMAL (0)
             Recovery master:0
 
+    - `ctdb ip` returns a list of all IP addresses and the nodes to which they are assigned:
+
+            [root@centos63-gluster1 ~]# ctdb ip
+            Public IPs on node 0
+            10.0.0.6 node[3] active[] available[eth2] configured[eth2]
+            10.0.0.7 node[2] active[] available[eth2] configured[eth2]
+            10.0.0.8 node[1] active[] available[eth2] configured[eth2]
+            10.0.0.9 node[0] active[eth2] available[eth2] configured[eth2]
+            10.0.0.10 node[3] active[] available[eth2] configured[eth2]
+            10.0.0.11 node[2] active[] available[eth2] configured[eth2]
+            10.0.0.12 node[1] active[] available[eth2] configured[eth2]
+            10.0.0.13 node[0] active[eth2] available[eth2] configured[eth2]
+
     - `ctdb ping -n all` shows the result of issuing a ping to all nodes:
 
             [root@centos63-gluster1 ~]# ctdb ping -n all
@@ -166,7 +184,10 @@ The following items are necessary for CTDB installation:
 
 ### Load balancing
 
-CTDB as explained in this article provides highly available NFS and CIFS services across GlusterFS replica servers. However, it does not load balance connections. To prevent the interfaces from being saturated on any of the GlusterFS servers, you can configure your solution with a round-robin DNS or WINS (or even hosts) for the CTDB-defined IP addresses.
+CTDB as explained in this article provides highly available NFS and CIFS services across
+GlusterFS replica servers. However, it does not load balance connections. To prevent the
+interfaces from being saturated on any of the GlusterFS servers, you can configure your
+solution with a round-robin DNS or WINS (or even hosts) for the CTDB-defined IP addresses.
 
 For example, a round-robin DNS entry could look as follows:
 
@@ -186,7 +207,8 @@ For example, a round-robin DNS entry could look as follows:
         gluster-smb-vip 1 IN A 10.0.0.12
         gluster-smb-vip 1 IN A 10.0.0.13
 
-On your clients that are not supporting the native FUSE client, you could use the following methods:
+On your clients that are not supporting the native FUSE client, you could use the following
+methods:
 
 - NFS:
 
@@ -199,5 +221,5 @@ On your clients that are not supporting the native FUSE client, you could use th
 ### References
 
 -  [http://ctdb.samba.org/](http://ctdb.samba.org/)
--  [http://ctdb.samba.org/testing.html](http://ctdb.samba.org/testing.html)
+-  [hhttps://wiki.samba.org/index.php/CTDB_and_Clustered_Samba](https://wiki.samba.org/index.php/CTDB_and_Clustered_Samba)
 -  [http://www.zytrax.com/books/dns/ch9/rr.html](http://www.zytrax.com/books/dns/ch9/rr.html)

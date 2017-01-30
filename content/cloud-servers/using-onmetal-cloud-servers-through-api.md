@@ -1,7 +1,7 @@
 ---
 permalink: using-onmetal-cloud-servers-through-api/
-node_id: 4156
-title: OnMetal Cloud Servers through API
+audit_date:
+title: Manage OnMetal Cloud Servers through the API
 type: article
 created_date: '2014-07-24'
 created_by: Russell Haering

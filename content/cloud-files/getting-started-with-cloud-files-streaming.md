@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-cloud-files-streaming/
-node_id: 6003
+audit_date:
 title: Getting started with Cloud Files streaming
 type: article
 created_date: '2016-02-10'
@@ -23,9 +23,8 @@ Before you begin, you must CDN-enable the container that holds your
 streaming content. In the Cloud Control Panel, click the gear icon of
 the container and select "Make Public (Enable CDN)".
 
-Once your container is CDN-enabled, you will need its Streaming URLs. In
-the Cloud Control Panel, click the gear icon for the container and
-select "View All Links...". Below is an example of the CDN links that
+After your container is CDN-enabled, you will need its streaming URLs. In
+the [Cloud Control Panel](https://mycloud.rackspace.com), click on **Storage > Files**, and then click the gear icon for the container and select **View All Links**. Following is an example of the CDN links that
 display:
 
     HTTP: http://cdc4c16471588d4846bf-cc339a649709710bbecd3db1e126ec2b.r3.cf1.rackcdn.com
@@ -33,8 +32,8 @@ display:
     Streaming: http://b0c42c537095921be66c-cc339a649709710bbecd3db1e126ec2b.r3.stream.cf1.rackcdn.com
     iOS Streaming: http://09ac235af93af07922d6-cc339a649709710bbecd3db1e126ec2b.iosr.cf1.rackcdn.com
 
-There are several different ways to stream your content with Cloud
-Files. Click a link below to find out more for each approach.
+Following are several different ways to stream your content with Cloud
+Files:
 
 -   [JW Player](/how-to/streaming-cloud-files-with-jw-player)
 -   [FlowPlayer](/how-to/cloud-files-streaming-with-flowplayer-plugins)

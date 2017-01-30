@@ -1,12 +1,12 @@
 ---
 permalink: update-an-existing-ssl-certificate/
-node_id: 1183
+audit_date:
 title: Update an existing SSL certificate
 type: article
 created_date: '2011-08-16'
 created_by: Chris Farmer
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -43,8 +43,8 @@ recommended sellers are:
 Follow your vendor's SSL Certificate renewal process; in particular you
 may require the following details:
 
--   **Server type**: Apache 2
--   **SSL type**: OpenSSL
+-   **Server type**: Apache 2.4
+-   **SSL type**: OpenSSL (some vendors label this modSSL)
 -   **CSR**
 
 Once you have completed your certificate renewal, you're ready to install the new certificate.
@@ -60,9 +60,7 @@ In order to install your new SSL certificate, you will need the following inform
 
 Once you have the above information, you can install your new
 certificate by clicking on the **Security** tab of your site, then click on
-the **Edit Certificate link**:
-
-<img src="{% asset_path cloud-sites/update-an-existing-ssl-certificate/Edit%20Certificate.png %}" alt="" />
+the **Edit Certificate link**.
 
 On the next screen, you will see three fields for Certificate, Private
 Key, and Intermediate Certificate; simply replace the current
@@ -74,12 +72,4 @@ Because you are updating an existing SSL certificate, you will not need
 to wait for propagation as you would when installing a new SSL
 Certificate.
 
-### What To Watch For
-
--   Rackspace Cloud Sites does not support wildcard certificates - such
-    as **\*.domain.com** or **\*.example.com**. - or
-    self-signed certificates.
--   Rackspace Cloud Sites does not support Extended Validation
-    certificates (EV).
--   Removing the SSL certificate from your site will change its IP
-    address, which can require a DNS change.
+**NOTE**: Removing the SSL certificate from your site will change its IP address, which can require a DNS change.

@@ -1,12 +1,12 @@
 ---
-permalink: rackspace-metrics-frequently-asked-questions/
-node_id: 4649
+permalink: rackspace-metrics-faq/
+audit_date:
 title: Rackspace Metrics FAQ
 type: article
 created_date: '2015-05-06'
 created_by: Constanze Kratel
-last_modified_date: '2016-02-15'
-last_modified_by: Nate Archer
+last_modified_date: '2016-07-25'
+last_modified_by: Kyle Laffoon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
@@ -43,9 +43,13 @@ Overview](/how-to/rackspace-metrics-overview).
 
 We plan to provide the following features in future releases:
 
--   Support for enum and boolean metric types.
--   Tighter integration with open-source tools like Graphite, Grafana,
-    CollectD, and StatsD.
+ - **Available in GA** - Access to Rackspace Intelligence for Rackspace
+ Dedicated customers: Provides the ability for Dedicated customers to also
+ access Rackspace Intelligence for their devices.
+
+ - **Available in Future** - Customizable dashboards: Provides the ability to
+ customize your dashboard in Rackspace Intelligence by adding widgets for
+ graphs, drag-and-drop widgets, and more.
 
 #### Where is Rackspace Metrics available?
 

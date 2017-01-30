@@ -1,12 +1,12 @@
 ---
 permalink: cloud-networks-faq/
-node_id: 3717
-title: Cloud Networks - FAQ
+audit_date:
+title: Cloud Networks FAQ
 type: article
 created_date: '2013-10-02'
 created_by: Sameer Satyam
-last_modified_date: '2016-01-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-09-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -22,13 +22,13 @@ The Rackspace Cloud contains the following networks:
     PublicNet connects a cloud server to the Internet. When you create cloud servers with PublicNet, your servers get an IPv4 address and an IPv6 address. Outbound public traffic is billed according to [published rates](http://www.rackspace.com/cloud/public-pricing/#bandwidth). You can create a server without a public network; however, access to operating system updates, Cloud Monitoring remote checks, and so on might not work. For more information about the limitations of not having a public network, see [Removing Networks from a Cloud Server](/how-to/removing-networks-from-a-cloud-server).
 
     **Note**: PublicNet is required for RackConnect and Managed Operations service level customers.
-   
+
 - **ServiceNet** (Private)
-   
+
     ServiceNet is an internal, multi-tenant network within each Rackspace Cloud region. It provides cloud servers access to regional services, such as Cloud Files, Cloud Load Balancers, Cloud Databases, and Cloud Backup, at no cost. ServiceNet is currently IPv4 only. Historically, ServiceNet was used for server-to-server communication, but Cloud Networks is now recommended for this purpose. ServiceNet is also required for Windows cloud server activation. We recommend that cloud servers be connected to ServiceNet and that all new connections inbound to the server be denied by a software firewall such as iptables or Windows Firewall. For more information, see [Removing Networks from a Cloud Server](/how-to/removing-networks-from-a-cloud-server).
 
     **Note**: ServiceNet is required for RackConnect and Managed Operations service level customers.
-    
+
 - **Cloud networks** (isolated)
 
     Cloud networks are isolated networks that can be used for secure communication between your cloud servers. Cloud networks are completely private and single tenant, and can be either IPv4 or IPv6. Cloud networks are recommended for all communication between cloud servers. Like ServiceNet, all bandwidth on cloud networks is provided at no charge.
@@ -37,7 +37,7 @@ The Rackspace Cloud contains the following networks:
 
 The Rackspace Cloud has two networking APIs - Neutron and Nova-Network.
 
-Rackspace first introduced networking services that were based on the OpenStack Nova-Network API. This version of the service is now superseded by the current networking API, based on OpenStack Neutron, which offers a richer suite of networking services. Both APIs continue to function, but the Neutron API will be the base for all the future networking services that Rackspace offers. For more information, see [Networking: Neutron versus Nova-Network](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#networking-neutron-versus-nova-network) in the Cloud Networks Developer Guide.
+Rackspace first introduced networking services that were based on the OpenStack Nova-Network API. This version of the service is now superseded by the current networking API, based on OpenStack Neutron, which offers a richer suite of networking services. Both APIs continue to function, but the Neutron API will be the base for all new networking services that Rackspace offers. For more information, see [Networking: Neutron versus Nova-Network](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#networking-neutron-versus-nova-network) in the Cloud Networks Developer Guide.
 
 #### How many cloud networks can I create?
 
@@ -92,11 +92,15 @@ Cloud networks are regional in scope and can be attached to any of your cloud se
 
 #### What are security groups?
 
-Security groups are named collections of network access rules that enable Rackspace Public Cloud users to specify the types of traffic that are allowed to pass through PublicNet and ServiceNet ports on a Cloud Servers instance. A security group is a container for security group rules. After you launch an instance, you can assign one or more security groups to ports on that instance. Security groups act as a stateful firewall for your Cloud Server instances.
+Security groups are containers for a set of inbound and outbound traffic rules that are directly applied to a Neutron port (PublicNet, ServiceNet or Cloud Network). After you launch an instance, you can assign one or more security groups to ports on that instance. Security groups act as a stateful firewall for your Cloud Server instances.
+
+#### What is the difference between security groups and a firewall?
+
+Security groups act as a distributed firewall for your Cloud Server instances. After you launch an instance, you can assign one or more security groups to ports on that instance.
 
 #### Where is the documentation?
 
-[Cloud Networks Developer Guide](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-concepts/concepts-security-groups)
+[Cloud Networks Developer Guide](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-api-operations/floating-ip-address-operations)
 
 [Cloud Networks API Reference](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-api-operations/sec-group-operations)
 
@@ -110,7 +114,15 @@ We are launching security groups as limited availability in all data centers, so
 
 #### What features are supported at launch?
 
-With the limited availability launch in early 2015, we support only inbound security groups on both PublicNet and ServiceNet interfaces. This means that customers can filter incoming traffic to their PublicNet and ServiceNet ports. We will add outbound security group support later in 2015.
+With the limited availability launch in early 2015, we support inbound and outbound security groups on both PublicNet and ServiceNet interfaces. This means that customers can filter incoming traffic to their PublicNet and ServiceNet ports.
+
+#### Is this feature available to all Rackspace Cloud customers?
+
+No. This feature is currently in limited availability in all data centers. Please contact Rackspace support or your Account Manager to request access.
+
+#### What limitations does the feature currently have?
+
+A security group can't be added as a child of another security group. You also can't edit a security group rule - you must add a new security group to replace the old one.
 
 #### Will security groups be supported via the neutron client?
 
@@ -118,7 +130,7 @@ Yes. Users can provision security groups via the neutron client.
 
 #### Is this functionality integrated with and available from the Cloud Control Panel?
 
-Not yet. The product will be available soon. In the interim, you can use either the neutron client or the API.
+Yes, but only inbound PublicNet and ServiceNet security groups are currently available in the control panel. To access additional features, you can use either the neutron client or the API.
 
 #### Are security groups supported for OnMetal users?
 
@@ -130,7 +142,7 @@ No default security groups are applied. Users must create a security group thems
 
 #### Can I apply security groups to ports on an instance at boot time?
 
-No. Security groups can be applied only after the instance is active.
+No. Security groups can be applied only after the instance is active.  We are actively working to include this feature in an upcoming release.
 
 #### What happens when a security group rule is added to the security group?
 
@@ -142,7 +154,7 @@ No. Traffic that matches a rule is permitted, and any traffic that is not part o
 
 #### Is there any traffic that is permitted or allowed by default by security groups?
 
-DNS responses from Rackspace Provider DNS servers (UDP source port 53) are allowed by default even if a security group does not explicitly allow them. Also the TCP flags ACK and RST are permitted by default.
+Very basic network operations, such as DNS responses from Rackspace Provider DNS servers (UDP source port 53), are allowed by default even if a security group does not explicitly allow them. Also the TCP flags ACK and RST are permitted by default.
 
 #### What kinds of traffic can be matched by the security group rules?
 
@@ -160,9 +172,9 @@ Yes. Such a security group will deny or block all traffic.
 
 #### Are security groups applied to instances?
 
-No. Security groups are applied to a Neutron port on a network that is attached to an instance and not to an instance itself.
+No. Security groups are applied to a Neutron port on a network that is attached to an instance and not to an instance itself. In the near future, when updating a security group, changes will be applied automatically to any port associated with that security group.
 
-#### What are the limits for security groups and rules?
+#### What are the available quotas for security groups and rules?
 
 - You can apply up to 5 security groups per port.
 - You can have up to 20 security group rules per security group
@@ -171,3 +183,143 @@ No. Security groups are applied to a Neutron port on a network that is attached 
 #### Can I have traffic blocked or denied based on a Security Group rule?
 
 Traffic that matches a rule is permitted. Any traffic that is not part of the ruleset for that Security Group is denied / blocked. There is no way to specify that traffic matching a rule should be denied. This is how the OpenStack Security Groups API was designed. Hence the Security Groups API is a white-list. Traffic that doesn't match any of the rules in the white-list is automatically black-listed.
+
+---------
+
+### Early Access (EA) release of floating IP addresses
+
+#### What are floating IP addresses?
+
+A floating IP address is a static IP address that has the ability to move or “float” between cloud resources within a region, primarily cloud servers. It is reserved at the tenant level and does not need to be associated with a specific port on a VM.
+
+#### Where is the documentation?
+
+API guide: 
+Documentation for the EA release will be available soon, and this FAQ will be updated with links to it.
+
+Getting Started:
+Documentation for the EA release will be available soon, and this FAQ will be updated with links to it.
+
+#### What makes a floating IP address better than a fixed IP address?
+
+Floating IP addresses enable you to reserve an IP address if you terminate your cloud server. This is important for a few reasons:
+
+ - Constantly changing cloud resources – Creating and removing cloud resources
+   is a common exercise. However, each time you create a new cloud    resource,
+   the default fixed IP address provided changes, which requires updates to
+   configuration files, DNS entries, and so on. Using floating IP addresses
+   enables you to keep the same IP addresses no matter how many times resources
+   are created and removed.
+ - IP address reputation – An IP address can have a reputation. Some IP
+   addresses have good reputations and become whitelisted by trusting sources
+   across the Internet. More importantly, however, some IP addresses have bad
+   reputations and get blacklisted. If you happen to get a “bad IP address,”
+   your infrastructure can become unreachable by certain areas of the Internet.
+   Using a floating IP address enables you to build a good reputation for an IP
+   address and keep it.
+
+
+#### Is this feature supported for all Rackspace Cloud customers?
+
+This feature is supported for cloud-only customers that have been approved for the Early Access (EA) program. Please contact Rackspace to considered for EA access.
+
+#### What features are supported for EA?
+
+The EA release supports the ability to create, associate, disassociate and delete floating IP addresses.
+
+#### Are floating IP adderesses supported via the neutron client?
+
+Yes.
+
+#### Is this feature available from the Cloud Control Panel?
+
+For EA release, no. We plan to provide Cloud Control Panel support for Limited Availability and later.
+
+#### Are floating IP addresses supported for OnMetal users?
+
+No, floating IP addresses are currently supported only for virtual cloud servers.
+
+#### Are floating IP addresses supported for RackConnect v3.0 users?
+
+No, floating IP addresses do not work with a RackConnect v3.0 cloud network.
+
+#### Is there a limit on the number of floating IP addresses that a tenant can have?
+
+The default limit is 5 floating IP addresses per tenant. You can create a support ticket to raise the limit, but requests might be temporarily denied depending on capacity.
+
+#### How is floating IP address different from a shared IP address?
+
+A shared IP address is used for active/passive high availability (HA), where one IP address is needed between two or more servers for the purpose of redundancy (active-standby). The IP address is owned by one of the servers at any given time, and clients or other servers use this IP address for communication with the HA pair.
+
+Although a floating IP address can be used to solve the active/passive HA problem, it would require monitoring and API calls to achieve the same result. Thus, a shared IP address is the preferred method to solve the active/passive HA problem.
+
+#### Can existing cloud servers' public IP addresses be used as floating IP addresses?
+
+No, the floating IP addresses are a new pool of IP addresses. You can't migrate existing IP addresses on your cloud servers to become floating IP adresses.
+
+#### What do I need to know when I associate a floating IP address with my cloud server ?
+
+Because cloud servers come with a fixed public IPv4 address you can remove the fixed IP address and replace it with a floating IP address. If you want to keep the fixed IP address in addition to using the floating IP address, then you must configure the  server to handle traffic appropriately. For details about how to do this, see the API and How-To documentation.
+
+#### What are the features limitations for EA?
+
+ - Floating IP addresses are intended to work only with Cloud Servers. Floating IP addresses do not work with other products such as OnMetal, Cloud Load Balancers, and RackConnect v3.0.
+ - You can't convert current public IPv4 addresses to floating IP addresses. You must provision a new floating IP address.
+ - The quota is limited to 5 floating IP addresses per tenant. Quotas will be raised during Limited Availability and later.
+ - There is no support for floating IP addresses in the Cloud Control Panel.
+ - Currently, the feature supports only IPv4.
+
+### Shared IP
+
+#### What is a shared IP?
+
+A shared IP allows for active/passive high availability platforms to share a single IP Address between two instances in our cloud. The IP then moves between the two instances based on instance state (up/down) through the configuration of a high availability protocol such as heartbeat or corosync. Active-standby applications can then achieve full redundancy in our cloud.  
+
+#### Where is the documentation?
+
+[Cloud Networks API Guide](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/)
+
+The Shared IP sections are:
+
+- [Concepts](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#shared-ip-addresses)
+
+- [API operations](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-api-operations/shared-ip-address-operations)
+
+- [Getting started](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#sharing-ip-address-between-servers)
+
+#### What features are supported for LA?
+
+The LA release supports the ability to create, associate, disassociate and delete shared IP addresses.  
+
+#### Is this feature supported for all Rackspace Cloud customers?  
+
+This feature is supported for cloud-only customers that have been approved for the Limited Availability (LA) program. Please contact your Account Manager or Rackspace Support to considered for LA access.
+
+#### Is this feature available from the Cloud Control Panel?
+
+We do not plan to provide Cloud Control Panel support for LA.
+
+#### Is there a limit on the number of shared IP addresses that a tenant can have?
+
+The default limit is 10 shared IP Addresses per tenant. A quota increase is currently not supported per tenant via a request, but we may support this in the future.   
+#### Which high availability protocols are supported?
+
+Some high availability protocols depend on an interface floating MAC address to move with the shared IP during an impacting event, i.e. activating the standby instance in a passive state. These protocols are not supported in our cloud, as our underlying data plane implementation doesn't support MACs moving between instances. Therefore, high availability protocols such as heartbeat, corosync and other similar protocols are favored to function in our cloud over protocols requiring a floating MAC address.  
+
+#### How is shared IP address different from a floating IP address?
+
+A shared IP address is used for active/passive high availability (HA), where one IP address is needed between two or more servers for the purpose of redundancy (active-standby). The IP address is owned by one of the servers at any given time, and clients or other servers use this IP address for communication with the HA pair.  
+
+Although a floating IP address can be used to solve the active/passive HA problem, it would require monitoring and API calls to achieve the same result. Thus, a shared IP address is the preferred method to solve the active/passive HA problem.  
+
+#### Can existing cloud servers’ public IP addresses be used as a shared IP address?
+
+No, the shared IP address is an additional public IP assigned to an instance port.  The existing public IP must also reside on each instance for the purpose of active-standby detection from high availability protocols such as heartbeat and corosync.  
+
+#### Are shared IP addresses supported for OnMetal users?
+
+No, shared IP addresses are currently supported only for virtual cloud servers.  
+
+#### Are shared IP addresses supported for RackConnect v3.0 users?
+
+No, shared IP addresses do not work with a RackConnect v3.0 cloud network.  

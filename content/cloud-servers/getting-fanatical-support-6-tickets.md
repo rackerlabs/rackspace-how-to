@@ -1,11 +1,11 @@
 ---
-permalink: getting-fanatical-support-6-tickets/
-node_id: 1335
-title: Getting Fanatical Support 6 - Tickets
+permalink: create-a-support-ticket-in-the-cloud-control-panel/
+audit_date:
+title: Create a support ticket in the Cloud Control Panel
 type: article
 created_date: '2012-03-23'
 created_by: Rackspace Support
-last_modified_date: '2015-08-13'
+last_modified_date: '2016-06-23'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -15,27 +15,18 @@ Creating a support ticket in your [Cloud Control Panel](https://mycloud.rackspac
 with Rackspace Support Technicians. Following are the two ways through
 which you can create a ticket:
 
--   After you are logged in, click on the **Support** button in the top
+1.  After you are logged in, click **Support** in the top
     navigation bar and select **Create or View a Ticket** in the
     pop-up window.
 
-  <img src="{% asset_path cloud-servers/getting-fanatical-support-6-tickets/control-panel-support-button.png %}" alt="" />
-
-  <img src="{% asset_path cloud-servers/getting-fanatical-support-6-tickets/control-panel-support-options.png %}" alt="" />
-
--   Click on your **Account** in the top navigation bar, and in the
+2.  Click on your **Account** in the top navigation bar, and in the
     drop-down menu, select **Support Tickets**.
-
-  <img src="{% asset_path cloud-servers/getting-fanatical-support-6-tickets/control-panel-drop-down-support.png %}" width="250" height="279" />
 
 When you click on the **Support Tickets** or **Create or View a
 Ticket** link, you will see a list displaying your currently open
 tickets, and a tab with the option to view your closed tickets. Each
 ticket entry displays the name, the date it was last updated, the ticket
-status, and ticket ID number. To create a new ticket, click on
-the **Create Ticket** button.
-
-<img src="{% asset_path cloud-servers/getting-fanatical-support-6-tickets/control-panel-support-tickets.png %}" alt="" />
+status, and ticket ID number. To create a new ticket, click **Create Ticket**.
 
 When you create a new ticket, you can select a broad product category,
 such as Cloud Servers, Cloud Sites, or Cloud Databases, and then a more

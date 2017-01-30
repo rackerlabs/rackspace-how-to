@@ -1,7 +1,7 @@
 ---
 permalink: postgresql-creating-and-dropping-roles/
-node_id: 416
-title: PostgreSQL - Creating and Dropping Roles
+audit_date:
+title: Create and Drop Roles in PostgreSQL
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

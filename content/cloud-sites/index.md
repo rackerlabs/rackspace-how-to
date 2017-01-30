@@ -12,8 +12,6 @@ product_url: cloud-sites
 
 The First 48 series of resource guides covers everything you'll need to know during your first 48 hours as a new Rackspace customer - including how to add your first domain, setup your website and databases. These guides are part of the larger Rackspace How-To, which is your one-stop hub for tutorials, articles, white papers, and case studies that will help you get the most out of our services. Also, our active community of customer comments and feedback will give you a real-world perspective on cutting-edge topics in technology today. Maximize your potential in the cloud.
 
-<hr />
-
 ###  Managing Your Account
 
 - [Logging into the Control Panel](/how-to/getting-started-with-cloud-sites-logging-into-the-control-panel)
@@ -31,7 +29,7 @@ The First 48 series of resource guides covers everything you'll need to know dur
 - [Managing DNS records](/how-to/getting-started-with-cloud-sites-managing-dns-records)
 - [Using the Rackspace nameservers](/how-to/getting-started-with-cloud-sites-rackspace-nameservers-and-creating-custom-nameservers)
 - [Creating Sub-domains and/or domain aliases](/how-to/getting-started-with-cloud-sites-creating-sub-domains-andor-domain-aliases)
-- [Using Cloud DNS](/how-to/rackspace-cloud-dns)
+- [Rackspace Cloud DNS overview](/how-to/rackspace-cloud-dns-overview)
 
 ###  Managing Cloud Sites Databases
 

@@ -1,6 +1,6 @@
 ---
 permalink: renew-a-cloud-sites-domain-name/
-node_id: 641
+audit_date:
 title: Renew a Cloud Sites domain name
 type: article
 created_date: '2011-03-16'

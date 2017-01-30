@@ -1,17 +1,20 @@
 ---
 permalink: deploy-wordpress-packages-by-using-rackspace-cloud-orchestration/
-node_id: 3773
-title: Deploy WordPress packages by using Rackspace Cloud Orchestration
+audit_date: '2016-11-11'
+title: Deploy WordPress by using Rackspace Cloud Orchestration
 type: article
 created_date: '2013-11-12'
 created_by: Rackspace Support
-last_modified_date: '2016-01-27'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-05-02'
+last_modified_by: Stephanie Fillmon
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
 
-Rackspace Cloud Orchestration for Cloud Servers simplifies the process of creating a WordPress environment, either as a stand-alone server or in a multiple-server cluster.
+Rackspace Cloud Orchestration simplifies the process of creating a
+WordPress environment, either as a stand-alone server or
+in a multiple-server cluster. This article shows how to deploy WordPress
+by using Cloud Orchestration.
 
 ### Deploy the servers
 
@@ -19,38 +22,37 @@ Rackspace Cloud Orchestration for Cloud Servers simplifies the process of creati
 
 2. In the top navigation bar, click **Orchestration**, and under Create Resources, click **Stack**.
 
-     <img src="{% asset_path cloud-orchestration/deploy-wordpress-packages-by-using-rackspace-cloud-orchestration/1560-3549-newimage_1.png %}" width="481" height="134" border="1" alt=""  />
+3. At then bottom of the **All Stacks** list, click the description for the WordPress template.
 
-3. Specify a name and region for your stack.
+4. Click **Create Stack**, select the flavor (Production or Deployment), and then click **Create Stack** again.
 
-4. In the **Application Name** list, select **WordPress** and then choose the flavor, either **Single Linux server** or **Multiple Linux servers**.
+6. On the Create Stack page, specify a name and region for your stack.
 
-5. Click **Next Step**.
+7. Specify server and WordPress settings.
 
-6. On the next page, specify server and WordPress settings.
+8. Under Advanced Options, if required, enter database and server details.
 
-7. Under Advanced Options, enter the database name.
+9. Click **Create Stack**.
 
-8. Click **Create Stack**.
-
-On the stack details page you will see Up in the status field when the stack is complete.
-
-<img src="{% asset_path cloud-orchestration/deploy-wordpress-packages-by-using-rackspace-cloud-orchestration/3773Wordpressscreen.png %}" width="782" height="608" alt=""  border="1"/>
+On the stack details page, a green **Up** status in the Status field indicates when the stack is active.
+The stack build process might take several minutes to finish.
 
 ### Access the servers
 
-When your stack is up, go to the Stack Details page and click **View Credentials** to access the log in information for your new servers.
+After your stack is active, on the stack details page, click **View Credentials** to access the login information for your new servers.
 
-<img src="{% asset_path cloud-orchestration/deploy-wordpress-packages-by-using-rackspace-cloud-orchestration/3773Wordpressscreen_0.png %}" width="220" height="26" border="1" alt=""  />
+The Stack Credentials pop-up dialog box displays the root passwords for the database, an SSH private key that you can use to access the servers in your stack as the root user, and the WordPress password.
 
-In the Stack Credentials window, you will see an SSH private key that you can use to access the servers in your stack as the root user, the root password for the database, and the WordPress password.
-
-For more information about using the provided SSH key to access your servers, see [Logging in with a SSH private key on Windows](/how-to/logging-in-with-an-ssh-private-key-on-windows) or [Logging in with a SSH private key on Linux and Mac](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
+For more information about using the provided SSH key to access your servers, see [Logging in with an SSH Private Key on Windows](/how-to/logging-in-with-an-ssh-private-key-on-windows) or [Log in with a SSH private key on Linux and Mac](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
 
 ###  Set up DNS
 
-If you host your DNS with Rackspace DNS, you can now add a DNS record for your new WordPress stack. For information about adding a DNS record, see [Creating DNS Records for Cloud Servers](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel). Point your domain to the public IP address of the load balancer that was created for you.
+If you host your DNS with Rackspace DNS, you can add a DNS record for your new WordPress stack. For information about adding a DNS record, see [Create DNS Records for cloud servers](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel). Point your domain to the public IP address of the load balancer that was created for you.
 
-If you are not ready to use public DNS with WordPress, modify your desktop's Hosts file to point your domain to your new stack. For information about modifying your Hosts file, see [Modify your hosts file](/how-to/modify-your-hosts-file). Be sure to use the load balancer public IP address.
+If you are not ready to use public DNS with WordPress, modify your desktop's hosts file to point your domain to your new stack. For more information see [Modify your hosts file](/how-to/modify-your-hosts-file). Be sure to use the load balancer public IP address.
 
 After you are finished, you can start using WordPress by navigating to the URL that you entered during the stack configuration.
+
+### Related Articles
+
+For more information about creating and working with stacks in Cloud Orchestration, see [Get started quickly with Rackspace Cloud Orchestration](/how-to/quick-set-up-with-rackspace-cloud-orchestration).

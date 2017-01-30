@@ -1,6 +1,6 @@
 ---
 permalink: private-cloud-is-rad-how-to-leverage-private-cloud-for-rapid-application-development/
-node_id: 1048
+audit_date:
 title: 'Private Cloud is RAD: How to Leverage Private Cloud for Rapid Application Development'
 type: article
 created_date: '2011-03-27'

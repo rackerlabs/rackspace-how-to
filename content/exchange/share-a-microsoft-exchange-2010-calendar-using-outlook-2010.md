@@ -1,6 +1,6 @@
 ---
 permalink: share-a-microsoft-exchange-2010-calendar-using-outlook-2010/
-node_id: 4094
+audit_date:
 title: Share a Microsoft Exchange 2010 calendar using Outlook 2010
 type: article
 created_date: '2014-06-04'

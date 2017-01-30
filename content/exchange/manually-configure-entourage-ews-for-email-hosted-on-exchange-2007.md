@@ -1,12 +1,12 @@
 ---
 permalink: manually-configure-entourage-ews-for-email-hosted-on-exchange-2007/
-node_id: 995
+audit_date:
 title: 'Manually configure Entourage (EWS) for email hosted on Exchange 2007'
 type: article
 created_date: '2011-12-01'
 created_by: Rackspace Support
-last_modified_date: '2016-01-28'
-last_modified_by: Rose Coste
+last_modified_date: '2016-05-17'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -19,11 +19,8 @@ of Entourage version you have, go to **Entourage** located at the top, select
 **About Entourage**, and look under **Web Services
 Edition**.
 
-
-1. Log into your
-   User Control Panel
-   at [cp.rackspace.com/usercp](http://cp.rackspace.com/usercp)
-   and select the Enourage 2008 icon/link. This link will provide a pop-up
+1. Log in to the [Cloud Office Control Panel](http://cp.rackspace.com/usercp)
+   and select the Entourage 2008 icon/link. This link will provide a pop-up
    window with information needed to set up
    your account.
 

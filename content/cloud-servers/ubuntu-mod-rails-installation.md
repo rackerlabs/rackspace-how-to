@@ -1,7 +1,7 @@
 ---
 permalink: ubuntu-mod-rails-installation/
-node_id: 465
-title: Ubuntu - mod rails installation
+audit_date:
+title: Install mod rails on Ubuntu 9.04
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

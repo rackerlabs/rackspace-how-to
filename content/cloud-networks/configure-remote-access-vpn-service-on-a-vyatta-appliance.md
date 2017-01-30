@@ -1,6 +1,6 @@
 ---
 permalink: configure-remote-access-vpn-service-on-a-vyatta-appliance/
-node_id: 3264
+audit_date:
 title: Configure Remote Access VPN Service on a Vyatta Appliance
 type: article
 created_date: '2013-01-17'

@@ -1,6 +1,6 @@
 ---
 permalink: cloud-big-data-faq/
-node_id: 5029
+audit_date:
 title: Cloud Big Data FAQ
 type: article
 created_date: '2015-12-10'

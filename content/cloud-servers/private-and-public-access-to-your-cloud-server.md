@@ -1,17 +1,17 @@
 ---
 permalink: private-and-public-access-to-your-cloud-server/
-node_id: 2034
+audit_date:
 title: Private and Public Access to Your Cloud Server
 type: article
 created_date: '2012-08-22'
 created_by: Susan Million
-last_modified_date: '2016-01-06'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-09-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-All Next Generation Cloud Servers automatically receive three static IP
+All Cloud Servers automatically receive three static IP
 addresses upon creation:
 
 -   A version 4 **IP Address** that provides public access to your

@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-product-release-phases/
-node_id: 3191
+audit_date:
 title: Rackspace Product Release Phases
 type: article
 created_date: '2012-11-09'
@@ -24,7 +24,7 @@ ready.
 ### Early Access Program
 
 Access expanded to a larger number of customers. Varied support levels,
-no SLA, no pricing, often API only and is not production ready.
+no SLA, may or may not have pricing, often API only and is not production ready.
 
 ### Limited Availability
 

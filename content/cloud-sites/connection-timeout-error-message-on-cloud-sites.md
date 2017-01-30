@@ -1,6 +1,6 @@
 ---
 permalink: connection-timeout-error-message-on-cloud-sites/
-node_id: 1378
+audit_date:
 title: Connection timeout error message on Cloud Sites
 type: article
 created_date: '2012-04-05'

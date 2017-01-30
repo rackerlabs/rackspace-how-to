@@ -1,12 +1,12 @@
 ---
 permalink: test-cdosys-smtp-functionality/
-node_id: 649
+audit_date:
 title: Test CDOSYS SMTP functionality
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -32,28 +32,29 @@ appropriate values for your system:
 -   .From
 
 
-    <%
-    Const cdoSendUsingMethod       = "http://schemas.microsoft.com/cdo/configuration/sendusing"
-    Const cdoSendUsingPort         = 2
-    Const cdoSMTPServer            = "http://schemas.microsoft.com/cdo/configuration/smtpserver"
-    Const cdoSMTPServerPort        = "http://schemas.microsoft.com/cdo/configuration/smtpserverport"
-    Const cdoSMTPConnectionTimeout = "http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout"
-    Const cdoSMTPAuthenticate      = "http://schemas.microsoft.com/cdo/configuration/smtpauthenticate"
-    Const cdoBasic                 = 1
-    Const cdoSendUserName          = "http://schemas.microsoft.com/cdo/configuration/sendusername"
+        <%
+        Const cdoSendUsingMethod       = "http://schemas.microsoft.com/cdo/configuration/sendusing"
+        Const cdoSendUsingPort         = 2
+        Const cdoSMTPServer            = "http://schemas.microsoft.com/cdo/configuration/smtpserver"
+        Const cdoSMTPServerPort        = "http://schemas.microsoft.com/cdo/configuration/smtpserverport"
+        Const cdoSMTPConnectionTimeout = "http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout"
+        Const cdoSMTPAuthenticate      = "http://schemas.microsoft.com/cdo/configuration/smtpauthenticate"
+        Const cdoBasic                 = 1
+        Const cdoSendUserName          = "http://schemas.microsoft.com/cdo/configuration/sendusername"
 
-    Const cdoSendPassword          = "http://schemas.microsoft.com/cdo/configuration/sendpassword"
+        Const cdoSendPassword          = "http://schemas.microsoft.com/cdo/configuration/sendpassword"
 
-    Dim objConfig  ' As CDO.Configuration
-    Dim objMessage ' As CDO.Message
-    Dim Fields     ' As ADODB.Fields
+        Dim objConfig  ' As CDO.Configuration
+        Dim objMessage ' As CDO.Message
+        Dim Fields     ' As ADODB.Fields
 
-    ' Get a handle on the config object and it's fields
-    Set objConfig = Server.CreateObject("CDO.Configuration")
-    Set Fields = objConfig.Fields
+        `Get a handle on the config object and it's fields.`
 
-    ' Set config fields we care about
-    With Fields
+        Set objConfig = Server.CreateObject("CDO.Configuration")
+        Set Fields = objConfig.Fields
+
+        `Set config fields we care about`
+        With Fields
             .Item(cdoSendUsingMethod)       = cdoSendUsingPort
             .Item(cdoSMTPServer)            = "mail.(domain.com)"
             .Item(cdoSMTPServerPort)        = 25
@@ -63,25 +64,24 @@ appropriate values for your system:
             .Item(cdoSendPassword)          = "yourPassword"
 
             .Update
-    End With
 
-    Set objMessage = Server.CreateObject("CDO.Message")
+        `End With`
 
-    Set objMessage.Configuration = objConfig
+        Set objMessage = Server.CreateObject("CDO.Message")
 
-    With objMessage
+        Set objMessage.Configuration = objConfig
+
+        With objMessage
             .To       = "Nobody <nobody@example.com>"
             .From     = "Web Master <webmaster@example.com>"
             .Subject  = "Test message using CDOSYS SMTP"
 
             .TextBody = "This is a test email message using CDOSYS SMTP Sent @ " & Now()
             .Send
-    End With
-
-    Set Fields = Nothing
-    Set objMessage = Nothing
-    Set objConfig = Nothing
-    %>
+        End With
+            Set Fields = Nothing
+            Set objMessage = Nothing
+            Set objConfig = Nothing %>
 
 ### Related article
 

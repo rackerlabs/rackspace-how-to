@@ -1,6 +1,6 @@
 ---
 permalink: spam-preferences-safe-lists-and-black-list-in-rackspace-email/
-node_id: 1411
+audit_date:
 title: 'Spam preferences, safelists, and blacklists in Rackspace Email'
 type: article
 created_date: '2012-05-25'

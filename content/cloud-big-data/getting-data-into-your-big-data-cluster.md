@@ -1,6 +1,6 @@
 ---
 permalink: getting-data-into-your-big-data-cluster/
-node_id: 3813
+audit_date:
 title: Transfer data into your Big Data cluster
 type: article
 created_date: '2013-12-14'

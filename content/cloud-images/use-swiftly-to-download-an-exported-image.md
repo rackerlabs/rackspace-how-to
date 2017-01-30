@@ -1,12 +1,12 @@
 ---
 permalink: use-swiftly-to-download-an-exported-image/
-node_id: 4956
+audit_date:
 title: Use Swiftly to download an exported image
 type: article
 created_date: '2015-11-30'
 created_by: Cloud Images
-last_modified_date: '2015-11-30'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Images
 product_url: cloud-images
 ---
@@ -17,15 +17,12 @@ Images. It presumes that you have already used a Cloud Images export
 task to export one of your images from the Rackspace open cloud, that
 you understand how exported images are stored in Cloud Files as Dynamic
 Large Objects, and that you have installed the Swiftly client for Cloud
-Files.  If you need help on any of these topics,see the following
+Files. If you need help on any of these topics,see the following
 sources:
 
--   Cloud Images API Documentation: [Task to Export an
-    Image](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#document-api-reference)
--   [How Exported Images are Stored as Dynamic Large
-    Objects](http://support.rackspace.com/how-to/cloud-images-faq/)
--   [Installing the Swiftly Cloud Files
-    Client](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/)
+-   Cloud Images API Documentation: [Task to Export an Image](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#document-api-reference)
+-   [How Exported Images are Stored as Dynamic Large Objects](http://support.rackspace.com/how-to/cloud-images-faq/)
+-   [Installing the Swiftly Cloud Files Client](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/)
 
 ### Downloading your entire image at once
 
@@ -42,27 +39,24 @@ In a bash shell, set the following environment variables:
     CONTAINER=        # the container in Cloud Files containing your exported image
     IMAGEFILENAME=    # the name of your exported image in Cloud Files
 
-For information about viewing your Rackspace API key, see [View and
-reset your API
-key.](https://support.rackspace.com/how-to/view-and-reset-your-api-key/)
+For information about viewing your Rackspace API key, see [View and reset your API key.](https://support.rackspace.com/how-to/view-and-reset-your-api-key/)
 
 #### Invoke Swiftly
 
 After you set the environment variables, invoke Swiftly from the command
 line to perform the download, as follows.
 
-**Note**: Consider using a screen session to perform this task. If
+**Note:** Consider using a screen session to perform this task. If
 you're not familiar with the GNU Screen program, you can find an
-introduction in [Installing the Swiftly Cloud Files
-Client](/how-to/install-the-swiftly-client-for-cloud-files).
+introduction in [Installing the Swiftly Cloud Files Client](/how-to/install-the-swiftly-client-for-cloud-files).
 
-    swiftly <br>
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
-      --auth-user=$CF_USERNAME <br>
-      --auth-key=$CF_API_KEY <br>
-      --region=$CF_REGION <br>
-      get <br>
-        --output=${LOCALFILENAME} <br>
+    swiftly
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0
+      --auth-user=$CF_USERNAME
+      --auth-key=$CF_API_KEY
+      --region=$CF_REGION
+      get
+        --output=${LOCALFILENAME}
       ${CONTAINER}/${IMAGEFILENAME}
 
 If you are downloading to a cloud server that's already in the Rackspace
@@ -72,18 +66,18 @@ you want Swiftly to notify you about what it's doing as it downloads
 your image file, you can add the **--verbose** option. If you add these
 options, your invocation will look as follows:
 
-    swiftly <br>
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
-      --auth-user=$CF_USERNAME <br>
-      --auth-key=$CF_API_KEY <br>
-      --region=$CF_REGION <br>
-      --snet <br>
-      --verbose <br>
-      get <br>
-        --output=${LOCALFILENAME} <br>
+    swiftly
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0
+      --auth-user=$CF_USERNAME
+      --auth-key=$CF_API_KEY
+      --region=$CF_REGION
+      --snet
+      --verbose
+      get
+        --output=${LOCALFILENAME}
       ${CONTAINER}/${IMAGEFILENAME}
 
-Following is a sample verbose response for the precding call. (This
+Following is a sample verbose response for the preceding call. (This
 image is a little over 2 GB.)
 
     VERBOSE 0.00 1 Attempting auth v2 RAX-KSKEY:apiKeyCredentials with https://identity.api.rackspacecloud.com/v2.0
@@ -114,12 +108,12 @@ system:
 You can use Swiftly to determine the size of the file as it exists in
 Cloud Files:
 
-    swiftly <br>
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
-      --auth-user=$CF_USERNAME <br>
-      --auth-key=$CF_API_KEY <br>
-      --region=$CF_REGION <br>
-      head <br>
+    swiftly
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0
+      --auth-user=$CF_USERNAME
+      --auth-key=$CF_API_KEY
+      --region=$CF_REGION
+      head
       ${CONTAINER}/${IMAGEFILENAME}
 
 Your response will look something like the following one. You're
@@ -152,12 +146,12 @@ This section describes an alternative method: instead of downloading the
 entire object at once, you download the individual segments that make it
 up. This method has the following advantages:
 
-&middot;  You have smaller, more manageable pieces to work with.
-&middot;  You can verify the checksum for each of the pieces to ensure that no
+- You have smaller, more manageable pieces to work with.
+- You can verify the checksum for each of the pieces to ensure that no
 part is corrupted.
-&middot;  If a segment is faulty, you can download only that faulty segment
+- If a segment is faulty, you can download only that faulty segment
 again.
-&middot;  After you have all the pieces, you can stream them locally into a
+- After you have all the pieces, you can stream them locally into a
 single VHD file.
 
 This section assumes that you have set all the environment variables
@@ -167,12 +161,12 @@ described in the preceding section.
 
 Use the following command to get the Dynamic Large Object manifest:
 
-    swiftly <br>
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
-      --auth-user=$CF_USERNAME <br>
-      --auth-key=$CF_API_KEY <br>
-      --region=$CF_REGION <br>
-      head <br>
+    swiftly
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0
+      --auth-user=$CF_USERNAME
+      --auth-key=$CF_API_KEY
+      --region=$CF_REGION
+      head
       ${CONTAINER}/${IMAGEFILENAME}
 
 The response will look something like the following one:
@@ -197,9 +191,7 @@ streams them out to you in alphabetical order.
 
 #### Get the detailed list of segments
 
-**Note**: Before reading this section, you might want to review [How
-Exported Images are Stored as Dynamic Large
-Objects](/how-to/cloud-images-faq) for
+**Note**: Before reading this section, you might want to review [How Exported Images are Stored as Dynamic Large Objects](/how-to/cloud-images-faq) for
 a reminder of the naming conventions used by the Cloud Images export
 task.
 
@@ -209,14 +201,14 @@ use Swiftly to get a detailed list of the segments:
 
     CONTAINER="exports"
     PATTERN="9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-"
-    swiftly <br>
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
-      --auth-user=$CF_USERNAME <br>
-      --auth-key=$CF_API_KEY <br>
-      --region=$CF_REGION <br>
-      get <br>
-        --prefix=${PATTERN} <br>
-        --full <br>
+    swiftly
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0
+      --auth-user=$CF_USERNAME
+      --auth-key=$CF_API_KEY
+      --region=$CF_REGION
+      get
+        --prefix=${PATTERN}
+        --full
       ${CONTAINER}
 
 Following is a sample response:
@@ -239,16 +231,16 @@ directory, as follows. Ensure that this directory already exists in your
 file system before attempting the download.
 
     LOCAL_DIR="my-images"
-    swiftly <br>
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
-      --auth-user=$CF_USERNAME <br>
-      --auth-key=$CF_API_KEY <br>
-      --region=$CF_REGION <br>
-      --verbose <br>
-      get <br>
-        --prefix=${PATTERN} <br>
-        --all-objects <br>
-        --output=${LOCAL_DIR}/ <br>
+    swiftly
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0
+      --auth-user=$CF_USERNAME
+      --auth-key=$CF_API_KEY
+      --region=$CF_REGION
+      --verbose
+      get
+        --prefix=${PATTERN}
+        --all-objects
+        --output=${LOCAL_DIR}/
       ${CONTAINER}
 
 Following is some sample output with the Swiftly verbose option enabled:
@@ -281,19 +273,15 @@ In this example, the following segments were downloaded:
     -rw-rw-r-- 1 joeuser joeuser  362443328 Feb 28 21:35 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00002
     -rw-rw-r-- 1 joeuser joeuser  487424512 Feb 28 21:36 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00003
 
-Do you see a problem? Recall from [How Exported Images are Stored as
-Dynamic Large
-Objects](/how-to/cloud-images-faq) that
-each segment should be the same size except for the final segment (which
+Do you see a problem? Recall from [How Exported Images are Stored as Dynamic Large Objects](/how-to/cloud-images-faq) that each segment should be the same size except for the final segment (which
 can be smaller). Thus, segment-00002 should be the same size as
 segment-00001, and it is not. So segment-00002 is corrupted.
 
 How do you know that the final segment is the correct size? Recall that
 earlier you invoked Swiftly with the **--full** option to get the full
 details on all the segments in the  **exports** container that match the
-pattern **9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-**. From [that sample
-output](#container-detail-listing "Swiftly container detail (full) listing example"),
-you can see that the final segment should be 487424512 bytes, and
+pattern **9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-**. From that sample
+output, you can see that the final segment should be 487424512 bytes, and
 segment-00003 matches that value.
 
 #### Download a segment (if necessary)
@@ -301,14 +289,14 @@ segment-00003 matches that value.
 Use the following commands to get a fresh copy of the bad segment:
 
     SEGMENT_NAME="9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00002"
-    swiftly <br>
-      --auth-url=https://identity.api.rackspacecloud.com/v2.0 <br>
-      --auth-user=$CF_USERNAME <br>
-      --auth-key=$CF_API_KEY <br>
-      --region=$CF_REGION <br>
-      --verbose <br>
-      get <br>
-        --output=${LOCAL_DIR}/${SEGMENT_NAME} <br>
+    swiftly
+      --auth-url=https://identity.api.rackspacecloud.com/v2.0
+      --auth-user=$CF_USERNAME
+      --auth-key=$CF_API_KEY
+      --region=$CF_REGION
+      --verbose
+      get
+        --output=${LOCAL_DIR}/${SEGMENT_NAME}
       ${CONTAINER}/${SEGMENT_NAME}
 
 Following is some sample verbose output:
@@ -339,8 +327,8 @@ segment correct? To verify that it is, you can get the MD5 checksum of
 each segment and compare it to the MD5 checksum of the corresponding
 segment in Cloud Files. (You already have the list of MD5 checksums of
 the segments in Cloud Files; they were displayed when you invoked
-Swiftly with the **--full** option above to get [the detailed list of
-segments](#container-detail-listing "Swiftly container detail (full) listing example").)
+Swiftly with the **--full** option above to get the detailed list of
+segments.)
 
     $ cd my-images
 
@@ -351,8 +339,7 @@ segments](#container-detail-listing "Swiftly container detail (full) listing exa
 
 In the output from the md5sum command, the checksum is on the left and
 the file name is on the right. If you compare the checksums displayed
-here to the ones you got from Cloud Files earlier (displayed
-[here](#container-detail-listing "Swiftly container detail (full) listing example")),
+here to the ones you got from Cloud Files earlier,
 you can see that they match. You have successfully downloaded the
 segments.
 
@@ -372,8 +359,7 @@ single VHD file, as follows:
     -rw-rw-r-- 1 joeuser joeuser 1048576000 Apr 29 02:59 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00002
     -rw-rw-r-- 1 joeuser joeuser  487424512 Feb 28 21:36 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00003
 
-[Earlier in the
-article](#swiftly-head-response "Swiftly HEAD response for a DLO example"),
+Earlier in the article,
 you used swiftly to perform a HEAD request on the Dynamic Large Object
 in Cloud Files. There you determined that the **Content-Length** for a
 request of the Dynamic Large Object would be 2584576512 bytes. That is
@@ -436,6 +422,4 @@ VHD file).
 This article discussed two ways for you to use Swiftly to download from
 Cloud Files an image that you've exported from Cloud Images. If you'd
 like to use Swiftly to upload a VHD to Cloud Files so that you can
-import it into the Rackspace open cloud, see [Using Swiftly to upload an
-image to be
-imported](/how-to/use-swiftly-to-upload-an-image).
+import it into the Rackspace open cloud, see [Using Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image).

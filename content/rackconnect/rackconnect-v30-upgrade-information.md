@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-upgrade-information/
-node_id: 5071
+audit_date:
 title: RackConnect v3.0 upgrade information
 type: article
 created_date: '2015-12-21'
@@ -184,9 +184,7 @@ and caveats for this upgrade path:
     RackConnect v2.0 Network Policy rules during the migration, though
     you can create new RackConnect v3.0 cloud servers.
 
--   **Downtime will be on a per-server basis**: It is anticipated
-    to be a few seconds as we add and move to the RackConnect Cloud
-    Network.
+-   **Downtime will be on a per-server basis**: Downtime lasts approximately 1 to 2.5 minutes as we add and move to the RackConnect Cloud Network.
 
 -   **After the upgrade maintenance process starts, it should be
     completed in one batch**: The upgrade *can* occur in multiple

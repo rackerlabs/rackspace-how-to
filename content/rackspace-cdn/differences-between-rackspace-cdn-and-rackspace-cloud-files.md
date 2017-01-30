@@ -1,6 +1,6 @@
 ---
 permalink: differences-between-rackspace-cdn-and-rackspace-cloud-files/
-node_id: 4657
+audit_date:
 title: Differences between Rackspace CDN and Rackspace Cloud Files
 type: article
 created_date: '2015-05-08'
@@ -32,15 +32,16 @@ Rackspace CDN and Cloud Files:
 
 These, and other differences, are summarized in the following table:
 
-<img src="{% asset_path rackspace-cdn/differences-between-rackspace-cdn-and-rackspace-cloud-files/Screen%20Shot%202015-10-01%20at%2011.45.33%20AM.png %}" width="717" height="321" />
+| | Rackspace CDN | Cloud Files CDN |
+| --- | --- | --- |
+| Origin | Any public web server | Cloud Files CDN-enabled Container |
+| Custom domains | Customizable for HTTP and HTTPS (HTTPS via SAN or Custom SSL) | CNAME for HTTP only |
+| Caching rules (TTL) | Customizable | Flat per Container |
+| Force Refresh Content | Purge (per file)<br />Invalidate (Simple RegEX) | Purge (per file)<br />Limit 25 per day |
+| Restrictions | HTTP Referrer, GeoLocation, IP Address | N/A |
+| Streaming | No Support Provided (HTML5 compatible) | Chunked encoded streaming and iOS streaming available |
 
+### Additional resources
 
-
-#### [&lt; Rackspace CDN terminology](/how-to/rackspace-cdn-terminology)    -    [Access Rackspace CDN &gt;](/how-to/access-rackspace-cdn)
-
-
-
-
-
-
-
+- [Rackspace CDN terminology](/how-to/rackspace-cdn-terminology)
+- [Access Rackspace CDN](/how-to/access-rackspace-cdn)

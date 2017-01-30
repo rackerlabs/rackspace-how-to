@@ -1,12 +1,12 @@
 ---
 permalink: using-cloud-load-balancers-with-rackconnect/
-node_id: 2029
-title: Using Cloud Load Balancers with RackConnect
+audit_date:
+title: Use Cloud Load Balancers with RackConnect
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2016-02-08'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-24'
+last_modified_by: Blake Moore
 product: RackConnect
 product_url: rackconnect
 ---
@@ -28,71 +28,66 @@ v3.0 and v2.0, see the following articles:
 ### Configure RackConnect v2.0 to allow cloud load balancer traffic
 
 To configure RackConnect to allow cloud load balancer traffic to your
-cloud servers, you must create a Dedicated to Cloud network policy in
-RackConnect. You can use cloud load balancers with RackConnect by
-following these steps:
+cloud servers, you must create a Dedicated to Cloud Servers network policy in
+RackConnect.
 
-1.  Create a Dedicated to Cloud network policy.
+1. Log in to RackConnect Management Interface.
 
-2.  Set the **Source Type** to **Network**.
+1. On the **Network Policies** tab, add a new policy.
 
-3.  Use the appropriate 10.*nnn*.*nnn*.*nnn*/*nn* network as the
+1. Set **Access Scenario** to **Dedicated to Cloud Servers**.
+
+1. Set the **Source Type** to **Network**.
+
+1. Use the appropriate 10.*nnn*.*nnn*.*nnn*/*nn* network as the
     **Source Server Network**:
 
     -   DFW region:
 
-            10.183.250.0/24
             10.189.254.0/24
-            10.183.251.0/24
-            10.189.255.0/24
-            10.187.186.0/24
             10.189.252.0/24
             10.183.248.0/24
+            10.187.186.0/24
+            10.183.250.0/24
 
     -   IAD region:
 
-            10.189.252.0/24
-            10.187.190.0/24
             10.187.191.0/24
             10.189.255.0/24
+            10.187.186.0/24
             10.189.254.0/24
 
     -   ORD region:
 
             10.183.253.0/24
-            10.187.191.0/24
+            10.183.250.0/24
+            10.189.246.0/24
             10.187.187.0/24
-            10.187.190.0/24
-            10.189.245.0/24
-            10.189.247.0/24
-            10.183.251.0/24
             10.187.186.0/24
             10.183.252.0/24
-            10.189.246.0/24
-            10.189.244.0/24
-            10.183.250.0/24
+            10.189.245.0/24
+            10.183.251.0/24
 
     -   LON region:
 
-            10.189.247.0/24
-            10.190.255.0/24
-            10.189.246.0/24
-            10.187.254.0/24
+            10.187.191.0/24
             10.190.254.0/24
+            10.189.246.0/24
+            10.190.255.0/24
+            10.187.190.0/24
+            10.189.247.0/24
 
     -   SYD region:
 
-            10.189.255.0/24
             10.189.254.0/24
 
     -   HKG region:
 
-            10.189.255.0/24
             10.189.254.0/24
 
-4.  Set the **Destination Type**, **Destination Protocol**, and
-    **Destination Port or Port Range** to specify the resources that the
-    load balancer will access.
+1. Set the **Destination Type**, **Destination Protocol**, and **Destination Port or Port Range** to specify the resources that the load balancer will access.
+
+1. Click **Create Rule**.
 
 ### More details about using cloud load balancers with RackConnect
 
@@ -107,10 +102,10 @@ Following is a normal use case for using cloud load balancers with
 RackConnect:
 
 -   Use cloud load balancers to balance web traffic between cloud
-    servers
+    servers.
 
 -   Use RackConnect to provide back-end connectivity to dedicated
-    database servers from your cloud servers
+    database servers from your cloud servers.
 
 <img src="{% asset_path rackconnect/using-cloud-load-balancers-with-rackconnect/RC.CLB_.png %}" width="700" />
 

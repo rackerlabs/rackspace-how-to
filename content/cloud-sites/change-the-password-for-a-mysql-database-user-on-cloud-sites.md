@@ -1,6 +1,6 @@
 ---
 permalink: change-the-password-for-a-mysql-database-user-on-cloud-sites/
-node_id: 70
+audit_date:
 title: Change the password for a MySQL database user on Cloud Sites
 type: article
 created_date: '2011-03-08'

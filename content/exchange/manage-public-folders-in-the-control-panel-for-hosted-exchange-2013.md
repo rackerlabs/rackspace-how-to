@@ -1,18 +1,18 @@
 ---
 permalink: manage-public-folders-in-the-control-panel-for-hosted-exchange-2013/
-node_id: 4463
-title: Manage public folders in the control panel for Hosted Exchange 2013
+audit_date: '2016-05-12'
+title: Manage public folders in the control panel for Hosted Exchange 2013 and 2016
 type: article
 created_date: '2014-12-14'
 created_by: Theresa Kinney
-last_modified_date: '2016-01-27'
-last_modified_by: Rose Coste
+last_modified_date: '2016-02-12'
+last_modified_by: Nate Archer
 product: Microsoft Exchange
 product_url: exchange
 ---
 
-You can add public folders to your Hosted Microsoft Exchange 2013
-domain. Each Exchange 2013 domain is allotted 25 folders, with up to 250MB
+You can add public folders to your Hosted Microsoft Exchange 2013 and Hosted Microsoft Exchange 2016
+domains. Each is allotted 25 folders, with up to 250 MB
 of storage per folder. You can manage your public folders within the
 Cloud Office Control Panel. You can create, rename, delete, and
 mail-enable folders directly in the control panel.
@@ -20,9 +20,9 @@ mail-enable folders directly in the control panel.
 To begin working with public folders, navigate to the Microsoft Exchange
 section of the Cloud Office Control Panel and click **Folders**. If you
 do not already have public folders enabled, you are prompted to enable
-public folders.
+them.
 
-From **Folders**, you can list public folders, manage public folders,
+From the Folders page, you can list public folders, manage public folders,
 view and create subfolders, edit mail settings, and manage permissions.
 
 ### List public folders
@@ -30,7 +30,7 @@ view and create subfolders, edit mail settings, and manage permissions.
 When you click **Folders**, a page that lists all of your public folders
 is displayed.
 
-The **Folders** page displays the following information about the public
+The Folders page displays the following information about the public
 folders that you have created:
 
 - Folder name
@@ -42,12 +42,10 @@ folders that you have created:
 
 ### Manage your public folders
 
-To manage your folders, click the gear icon on the **Public Folders** page.
-Clicking the gear icon displays a menu from which you can
-choose to rename folders, edit mail settings, create subfolders, or
-delete a specific folder. Additionally, on this page you can bulk delete
-folders, create new folders, and manage different components of the
-folder.
+To manage your folders, click the gear icon on the Folders page. From the menu, you
+can choose to rename folders, edit mail settings, create subfolders, or delete a specific
+folder. Additionally, on this page you can bulk delete folders, create new folders, and
+manage different components of a folder.
 
 <img src="{% asset_path exchange/manage-public-folders-in-the-control-panel-for-hosted-exchange-2013/Manage_0.png %}" width="740" height="269" />
 
@@ -58,21 +56,15 @@ steps:
 
 1. Click **Create Folder**.
 
-   A popup dialog box is displayed.
+2. In the popup dialog box, enter a name for the folder.
 
-2. Name the folder.
-
-   This is the name that will appear in the list of folders.
+   The name will appear in the list of folders.
 
 3. Select the type of folder.
 
 4. To mail-enable the folder, select the **Enabled** check box.
 
-5. Specify or edit the display name.
-
-6. Specify or edit the email address for the folder.
-
-7. Select or edit the reply-to address.
+5. If you selected the **Enabled** check box, specify the folder’s display name, email address, and reply-to address. 
 
 8. Click **Save** to create the folder
 
@@ -126,7 +118,7 @@ the subfolder list. See the following example:
 
 You can create a subfolder in the following ways:
 
-- From the main (or parent) **Folders** page.
+- From the main (or parent) Folders page.
 
 - By clicking the parent's folder and creating the subfolder from the
   subfolder list page.
@@ -136,27 +128,21 @@ You can create a subfolder in the following ways:
 1. Click the gear icon next to the folder for which you want to
    create subfolders.
 2. Select **Create Subfolder**.
-3. In the **Folder Name** field, specify a name for the subfolder.
-4. Select the type of folder.
-5. To mail-enable the folder, select the **Enabled** check box.
-6. Specify or edit the display name.
-7. Specify or edit the email address for the folder.
-8. Select or edit the reply-to address.
-9. Click **Save** to create the subfolder.
+3. Specify all the information for the subfolder, as described in [Create a folder](#create-a-folder).
+4. Click **Save**.
 
 #### Create a subfolder from the subfolder list page
 
 1. In the folder list, click the name of the folder for which you want
    to create a subfolder.
+   
    The subfolder view is displayed.
+   
 2. Click **Create Folder**.
-3. In the **Folder Name** field specify a name for the subfolder.
-4. Select the type of folder.
-5. To mail-enable the folder, select the **Enabled** check box.
-6. Specify or edit the display name.
-7. Specify or edit the email address for the folder.
-8. Select or edit the reply-to address.
-9. Click **Save** to create the folder.
+
+3. Specify all the information for the subfolder, as described in [Create a folder](#create-a-folder).
+
+4. Click **Save** to create the folder.
 
 ### Search for a specific folder or subfolder
 
@@ -181,30 +167,22 @@ steps:
 
 1. Click on the gear icon next to the folder name.
 2. From the menu, select **Edit Email Settings**.
-3. If you want to mail-enable the folder, select the **Enabled**
-   check box.
-4. Specify or edit the display name.
-5. Specify or edit the email address for the folder.
-6. Select or edit the reply-to address.
-7. Click **Save**.
-
-<img src="{% asset_path exchange/manage-public-folders-in-the-control-panel-for-hosted-exchange-2013/cupcakesandkittens_a.png %}" width="583" height="315" />
+3. To mail-enable the folder, select the **Enabled** check box and specify the rest of the information in the popup dialog box.
+4. To disable email, clear the **Enabled** check box.
+5. Click **Save**.
 
 ### Manage permissions
 
-Public folders for Hosted Exchange 2013 are managed exclusively through
+Public folders for Hosted Exchange 2013 and 2016 are managed exclusively through
 the administrator control panel. Any users who need to manage public
 folders must have administrator access.
 
 ### Authorization to add, delete, or modify content
 
 Unlike Exchange 2007 and 2010, individual permissions are not
-managed through Outlook for Exchange 2013.  We are working on a release
-that will allow you to assign different levels of permissions for each
-user.  For the current release, your users have the following
+managed through Outlook for Exchange 2013 or 2016. For these versions, your users have the following
 permission levels:
 
-- Any user on the domain can create and delete their own items only,
-  but they cannot modify any items.
-- Public folder administrators can add, delete, and modify any content by any
-  user.
+- Reviewer:  Allows all users on the domain to view all public folders
+
+- Publishing author: Automatically given to administrators who create public folders in the control panel. Each action applies only the to folders that the administrators create.

@@ -1,11 +1,11 @@
 ---
 permalink: attach-a-cloud-block-storage-volume-to-an-onmetal-server-through-the-cloud-control-panel/
-node_id: 4733
+audit_date:
 title: Attach a Cloud Block Storage volume to an OnMetal server through the Cloud Control Panel
 type: article
 created_date: '2015-07-09'
 created_by: Renee Rendon
-last_modified_date: '2016-03-23'
+last_modified_date: '2016-06-06'
 last_modified_by: Nate Archer
 product: Cloud Block Storage
 product_url: cloud-block-storage
@@ -23,8 +23,6 @@ Use the following procedure to attach a volume to your OnMetal
 server via the Cloud Control Panel. The procedure assumes
 that the server instance already exists.
 
-
-
 ### Create a new volume
 
 If you want to create a new volume, the following steps will guide you.
@@ -37,9 +35,6 @@ If you have already created a volume, go to the "Attach a volume" section.
 3. Click **Create Volume** and complete the fields.
 
 4. Click **Create Volume** again.
-
-
-
 
 ### Attach a volume
 
@@ -97,7 +92,7 @@ You must use a CLI to complete steps 5 - 12.
         $ iscsiadm -m discovery --type sendtargets --portal $TARGET_PORTAL
         10.190.254.69:3260,1 iqn.2010-11.com.rackspace:3e7af99d-655f-4af1-93bb-9160ee505d9f
         10.13.236.75:3260,1 iqn.2010-11.com.rackspace:3e7af99d-655f-4af1-93bb-9160ee505d9f
-      
+
         $ iscsiadm -m node --targetname=$TARGET_IQN --portal $TARGET_PORTAL --login
         Logging in to [iface: default, target: iqn.2010-11.com.rackspace:3e7af99d-655f-4af1-93bb-9160ee505d9f, portal: 10.190.254.69,3260] (multiple)
         Login to [iface: default, target: iqn.2010-11.com.rackspace:3e7af99d-655f-4af1-93bb-9160ee505d9f, portal: 10.190.254.69,3260] successful.
@@ -113,11 +108,8 @@ You must use a CLI to complete steps 5 - 12.
         sdc      8:32   0   1.5T  0 disk
         sdd      8:48   0     2G  0 disk
 
-Now you can use the device, just like on other cloud servers. For more
-information, see [Prepare your Cloud Block Storage
-volume](/how-to/prepare-your-cloud-block-storage-volume).
-
-
+Now you can use the device just like other cloud servers. For more
+information, see [Prepare your Cloud Block Storage volume](/how-to/prepare-your-cloud-block-storage-volume).
 
 ### Detach a volume
 
@@ -133,6 +125,4 @@ from within the OnMetal server before following the steps below.
 
 3. Click **Detach Volume**.
 
-**Note**: If any volumes are attached to an instance, deleting the
-instance fails. Detaching the instances and re-deleting will
-succeed.
+**Note**: When volumes are attached to an instance, you can not delete a volume from that instance. The instance will succeed if you detach the volume, than delete the volume again.

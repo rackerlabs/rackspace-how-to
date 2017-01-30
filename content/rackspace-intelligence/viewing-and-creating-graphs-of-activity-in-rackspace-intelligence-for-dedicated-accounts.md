@@ -1,12 +1,12 @@
 ---
 permalink: viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts/
-node_id: 4843
-title: Viewing and creating graphs of activity in Rackspace Intelligence for dedicated accounts
+audit_date:
+title: View and create graphs of activity in Rackspace Intelligence for dedicated accounts
 type: article
 created_date: '2015-10-14'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -34,8 +34,6 @@ collected for the entity during the most recent period of that range:
 If you choose a custom time range and click **Apply**, Rackspace
 Intelligence shows data collected for the entity between the first and
 last time stamp.
-
-<img src="{% asset_path rackspace-intelligence/viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts/preset1.1_0.png %}" width="640" height="50" />
 
 ### Work with custom graphs
 

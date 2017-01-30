@@ -1,12 +1,12 @@
 ---
 permalink: features-of-rackspace-cdn/
-node_id: 4668
+audit_date: '2016-06-02'
 title: Features of Rackspace CDN
 type: article
 created_date: '2015-05-11'
 created_by: Catherine Richardson
-last_modified_date: '2015-05-28'
-last_modified_by: David Hendler
+last_modified_date: '2016-06-02'
+last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
@@ -94,6 +94,7 @@ Rackspace CDN enables you to implement edge rules based on resource
 path, meaning that your rules can apply to multiple levels of
 granularity, from the entire site to a specific file.
 
+### Additional resources
 
-
-#### [&lt; Rackspace CDN overview](/how-to/rackspace-cdn-overview)    -    [Uses of Rackspace CDN &gt;](/how-to/uses-of-rackspace-cdn)
+- [Rackspace CDN overview](/how-to/rackspace-cdn-overview)
+- [Uses of Rackspace CDN](/how-to/uses-of-rackspace-cdn)

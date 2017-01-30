@@ -1,42 +1,41 @@
 ---
 permalink: permissions-matrix-for-cloud-files/
-node_id: 3392
-title: Permissions Matrix for Cloud Files
+audit_date: '2016-12-01'
+title: Permissions matrix for Cloud Files
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-12-01'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
 
-The following matrix displays specific permissions for the roles in Cloud Files. The matrix displays the method names, their corresponding RESTful API commands, and the roles that are supported.
+The Cloud Files permissions matrix displays specific permissions for the following roles:
 
-[API Documentation](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#developer-guide)
+- **Admin** provides full access to create, read, update, and delete.
+- **Observer** provides read-only access.
 
-[Related How To Articles](/how-to/)
+The matrix displays the Cloud Files methods, their corresponding RESTful API commands, and the roles that are supported.
 
-[Cloud Files Terminology](/how-to/cloud-files-faq)
+Method | API action | Role | Description
+------ | ---------- | ---- | -----------
+Get account metadata | `HEAD /v1/{account}` | **Observer, Admin** | Shows account metadata.
+Create or update account metadata | `POST /v1/{account}` | **Admin** | Creates or updates account metadata.
+Show account details and list containers | `GET /v1/{account}` | **Observer, Admin** | Lists the storage containers in your account and sorts them by name.
+Delete account metadata | `POST /v1/{account}` | **Admin** | Deletes account metadata.
+Create container | `PUT /v1/{account}/{container}` | **Admin** | Creates a Cloud Files container.
+Delete container | `DELETE /v1/{account}/{container}` | **Admin** | Deletes an empty container.
+Show container metadata | `HEAD /v1/{account}/{container}` | **Observer, Admin** | Shows container metadata.
+Create or update container metadata | `POST /v1/{account}/{container}` | **Admin** | Creates or updates the container metadata.
+Show container details and list objects | `GET /v1/{account}/{container}` | **Observer, Admin** | Shows details for a specified container and lists objects in the container.
+Get object content and metadata | `GET /v1/{account}/{container}/{object}` | **Observer, Admin** | Retrieves the content and metadata for the object.
+Create or update object | `PUT /v1/{account}/{container}/{object}` | **Admin** | Creates or updates the content and metadata for a specified object.
+Copy object | `COPY /v1/{account}/{container}/{object}` | **Admin** | Copies an existing object to another object with a new name.
+Delete object | `DELETE /v1/{account}/{container}/{object}` | **Admin** | Permanently deletes an object.
+Show object metadata | `HEAD /v1/{account}/{container}/{object}` | **Observer, Admin** | Retrieves object metadata.
+Create or update object metadata | `POST /v1/{account}/{container}/{object}` |  **Admin** | Creates or updates object metadata.
 
-### As of September 26, 2013
+### Related article
 
-Method Name | API Action | Role | Description
---- | --- | :---: | :---: | ---
-Read Account Metadata | ```HEAD /account``` | **Observer & Admin** | View quick metadata on an account.
-Write Account Metadata | POST /account | **Admin only** | Write metadata on an account.
-List Containers | GET /account | **Observer & Admin** | View a list of containers in an account.
-Create Container | PUT /account/container | **Admin only** | Create containers, or storage compartments, for your data.
-Delete Container | DELETE /account/container | **Admin only** | Permanently remove a container. (The container must be empty before it can be removed.)
-Read Container Metadata | HEAD /account/container | **Observer & Admin** | View quick metadata on a container.
-Write Container metadata | POST /account/container | **Admin only** | Write metadata on a container.
-List Objects | GET /account/container | **Observer & Admin** | View names and details of objects within a container.
-Read Object | GET /account/container/object | **Observer & Admin** | Retrieve the object's data.
-Create/Update Object | PUT /account/container/object | **Admin only** | Write or overwrite an object's content and metadata.
-Copy Object | PUT /account/container/destobject | **Admin only** | Copy an existing object to another object in Cloud Files. (The destination container must exist before attempting the copy.)
-Delete Object | DELETE /account/container/object | **Admin only** | Permanently remove an object from the storage system (data and metadata).
-Retrieve Object Metadata | HEAD /account/container/object | **Observer & Admin** | Retrieve object metadata and other standard HTTP headers.
-Update Object Metadata |POST /account/container/object |  **Admin only** | Set your own custom object metadata.
-
-
-#### Next: [Permission Matrix for RBAC](/how-to/permissions-matrix-for-role-based-access-control-rbac)
+[Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting](/how-to/permissions-matrix-for-role-based-access-control-rbac)

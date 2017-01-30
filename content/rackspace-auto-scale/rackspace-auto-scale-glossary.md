@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-auto-scale-glossary/
-node_id: 3757
+audit_date:
 title: Rackspace Auto Scale Glossary
 type: article
 created_date: '2013-11-05'

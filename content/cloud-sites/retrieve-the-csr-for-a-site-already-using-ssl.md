@@ -1,12 +1,12 @@
 ---
 permalink: retrieve-the-csr-for-a-site-already-using-ssl/
-node_id: 4402
+audit_date:
 title: Retrieve the CSR for a site already using SSL
 type: article
 created_date: '2014-11-10'
 created_by: Thomas Hester
-last_modified_date: '2015-03-05'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-22'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -38,10 +38,8 @@ When you have completed the required tasks, follow these steps to retrieve your 
 3.	In the sites list, click the site for which you want to retrieve the CSR.
 
 4.	Click the **Security** tab.
+   You will see the **View CSR** link in the control panel.
 
-5.	You will see the **View CSR** link in the control panel.
-
-    <img src="{% asset_path cloud-sites/retrieve-the-csr-for-a-site-already-using-ssl/view_csr.png %}" alt="" />
 
 ### Tips
 

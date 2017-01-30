@@ -1,11 +1,11 @@
 ---
 permalink: configure-cloud-feeds-archiving-in-the-cloud-control-panel/
-node_id: 4633
+audit_date:
 title: Configure Cloud Feeds archiving in the Cloud Control Panel
 type: article
 created_date: '2015-04-03'
 created_by: Greg Sharek
-last_modified_date: '2016-01-15'
+last_modified_date: '2016-06-10'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -48,7 +48,7 @@ Cloud Feeds provides the following options for storing the archive data:
 2.  On the top-right corner, click the **Account** menu, and then
     select **Account Settings**.
 
-3.  In the **Cloud Feeds Archiving **section, click **Enable
+3.  In the **Cloud Feeds Archiving** section, click **Enable
     Archiving**.
 
 4.  In the Cloud Feeds Archiving dialog box, select one or more check
@@ -67,8 +67,6 @@ Cloud Feeds provides the following options for storing the archive data:
     use the [Cloud Feeds Archiving Configuration API](http://docs.rackspace.com/cloud-feeds/api/v1.0/feeds-devguide/content/Preferences_API.html).
 
 6.  Click **Save Configuration**.
-
-    <img src="{% asset_path cloud-servers/configure-cloud-feeds-archiving-in-the-cloud-control-panel/Cloud%20Feeds%20archiving.png %}" width="497" height="335" />
 
 For more information about Cloud Feeds archiving, see [Archiving overview](http://docs.rackspace.com/cloud-feeds/api/v1.0/feeds-devguide/content/Archiving_Overview.html) in
 the [Rackspace Cloud Feeds Developer Guide](http://docs.rackspace.com/cloud-feeds/api/v1.0/feeds-devguide/content/overview.html).

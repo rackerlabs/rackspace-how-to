@@ -1,12 +1,12 @@
 ---
 permalink: view-and-reset-your-api-key/
-node_id: 3288
+audit_date:
 title: View and reset your API key
 type: article
 created_date: '2013-02-05'
 created_by: Kyle Laffoon
-last_modified_date: '2016-01-11'
-last_modified_by: Renee Rendon
+last_modified_date: '2016-07-08'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -23,15 +23,9 @@ Before you can start using Rackspace APIs, you need to have your API key. Your A
 
 1.	In the upper-right corner of the Cloud Control Panel, click the **Account:** ***userName***  menu and select **Account Settings**.
 
-  <img src="{% asset_path cloud-servers/view-and-reset-your-api-key/Account_Settings.png %}" alt="" />
-
 2.	To view your API key, click on the link labeled **Show** next to **API Key**. You can copy and paste the API key from this screen.
 
-	<img src="{% asset_path cloud-servers/view-and-reset-your-api-key/API_Key.png %}" alt="" />
-
 3.	To create a new API key, click the **Reset** link. A confirmation window is displayed.
-
-	<img src="{% asset_path cloud-servers/view-and-reset-your-api-key/RegenAPIimage_0.jpeg %}" alt="" />
 
 4.	Click **Generate New Key** to confirm.
 

@@ -1,6 +1,6 @@
 ---
 permalink: updating-password-authentication-method-on-mac-mail/
-node_id: 3490
+audit_date:
 title: Update the password authentication method for Mac Mail
 type: article
 created_date: '2013-05-29'

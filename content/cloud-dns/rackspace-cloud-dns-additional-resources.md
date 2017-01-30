@@ -1,21 +1,19 @@
 ---
 permalink: rackspace-cloud-dns-additional-resources/
-node_id: 1235
+audit_date:
 title: Rackspace Cloud DNS - Additional Resources
 type: article
 created_date: '2011-10-19'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-04-13'
+last_modified_by: Stephanie Fillmon 
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-### Previous section
+**Previous section:** [Rackspace Cloud DNS - API Example](/how-to/rackspace-cloud-dns-api-example)
 
-[Rackspace Cloud DNS - API Example](/how-to/rackspace-cloud-dns-api-example)
-
-For more information regarding the API, we encourage you to review the Rackspace Cloud DNS API documentation which is located [here](https://developer.rackspace.com/docs/cloud-dns/v1/developer-guide/).
+For more information regarding the API, we encourage you to review the [Rackspace Cloud DNS API documentation](https://developer.rackspace.com/docs/cloud-dns/v1/developer-guide/).
 
 ### Supported Record Types
 
@@ -26,7 +24,7 @@ For more information regarding the API, we encourage you to review the Rackspace
     like an alias.
 -   **MX** - Used to specify a mail server that is responsible for
     accepting email messages on behalf of a recipient domain.
--   **SOA** - Specifies authoritive information about a domain,
+-   **SOA** - Specifies authoritative information about a domain,
     including the primary name server(s), the email of the domain
     administrator, the domain serial number, and TTL's.
 -   **AAAA** - IPv6 address used to map hostnames to an IP address of
@@ -46,6 +44,4 @@ e-mail, thereby allowing an organization to take responsibility for a
 message in a way that can be validated by a recipient.
 -   **SRV** - Used to define the location (hostname and port) of servers used for a specific service.
 
-### Next steps
-
-[Cloud DNS FAQ](/how-to/cloud-dns-faq)
+**Next steps:** [Cloud DNS FAQ](/how-to/cloud-dns-faq)

@@ -1,12 +1,12 @@
 ---
 permalink: protect-your-cloud-files-cdn-bill-from-unexpected-usage/
-node_id: 2162
+audit_date:
 title: Protect Your Cloud Files CDN Bill from Unexpected Usage
 type: article
 created_date: '2012-09-14'
 created_by: David Hendler
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-18'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -33,23 +33,21 @@ linking in the following ways:
 - Proactive measures to make it more difficult to access your site's
 source code
 
-
 ### Monitor usage in the Cloud Control Panel
 
 One way to monitor your current CDN usage is through the Cloud Control
 Panel.
 
 1.  Log in to [http://mycloud.rackspace.com](http://mycloud.rackspace.com/).
-2.  In the upper-right corner of the panel, click the **Account:
-    *yourCloudAccountUsername*** menu and select **Usage Overview**.
+2.  In the upper-right corner of the panel, click on your username and select **Usage Overview**.
+
     On the Current Usage page, you can see the service usage for all of
     your Rackspace products and services.
+
 3.  Next to any service, click the down arrow for more information about
     how you are using your services. If you are using multiple Rackspace
     Cloud products, you might need to scroll down to find your Cloud
     Files usage.
-
-  <img src="{% asset_path cloud-files/protect-your-cloud-files-cdn-bill-from-unexpected-usage/1560-2162-newimg.png %}" alt="" />
 
 ### Examine CDN logs
 
@@ -65,14 +63,12 @@ performing the following steps:
 2. Click the gear icon next to the container for which you want to
 enable CDN logs, and select **Enable Logs**.
 
-  <img src="{% asset_path cloud-files/protect-your-cloud-files-cdn-bill-from-unexpected-usage/1560-2162-newimg2.png %}" alt="" />
-
 After you have enabled CDN logs for your content, Cloud Files creates a
-container for you and delivers logs to that container.  The frequency of
+container for you and delivers logs to that container. The frequency of
 log delivery can vary depending on how heavy traffic is on the CDN, but
 logs are usually delivered every four hours.
 
-The log files inside of the .CDN_ACCESS_LOGS container will be
+The log files inside of the **.CDN_ACCESS_LOGS** container will be
 prefixed with the name of the container they are logging, followed by
 the date and time stamp. This makes it easy to find logs for a specific
 time period.
@@ -80,23 +76,21 @@ time period.
 **Third-party log analysis**
 
 Several companies in the market will take the hassle out of parsing the
-logs in your CDN log container.  These companies take the raw logs that
+logs in your CDN log container. These companies take the raw logs that
 Rackspace delivers to your account and make them easy to consume and
-understand.  For example, they will show you peak traffic times and
+understand. For example, they will show you peak traffic times and
 geographic regions that access your data the most.
 
 For monitoring purposes, most of these tools allow you to set up alerts
 to indicate when usage reaches a certain level, or if it has increased
-by a certain amount.  This is a great way to get monitoring without
+by a certain amount. This is a great way to get monitoring without
 having to code a solution yourself.
-
-Review the [Rackspace Cloud Tools Partners](https://cloudtools.rackspace.com/home) list for third-party monitoring options.
 
 ### Hide source code
 
 Although completely hiding your source code is impossible, following are
 some common tools that can serve as a first line of defense against
-those trying to steal content.  Although someone with more technical
+those trying to steal content. Although someone with more technical
 knowledge will find ways around these defenses, it might take long
 enough for them to give up.
 

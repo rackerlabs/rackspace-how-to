@@ -1,7 +1,7 @@
 ---
 permalink: installing-oscommerce-on-cloud-sites/
-node_id: 685
-title: Installing OSCommerce on Cloud Sites
+audit_date:
+title: Install OSCommerce on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

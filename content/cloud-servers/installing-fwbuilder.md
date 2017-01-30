@@ -1,7 +1,7 @@
 ---
 permalink: installing-fwbuilder/
-node_id: 361
-title: Installing fwbuilder
+audit_date:
+title: Install fwbuilder
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

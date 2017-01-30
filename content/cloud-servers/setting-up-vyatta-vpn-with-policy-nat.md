@@ -1,6 +1,6 @@
 ---
 permalink: setting-up-vyatta-vpn-with-policy-nat/
-node_id: 3671
+audit_date:
 title: Setting Up Vyatta VPN with Policy NAT
 type: article
 created_date: '2013-09-03'

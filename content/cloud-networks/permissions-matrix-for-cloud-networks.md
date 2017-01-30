@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-cloud-networks/
-node_id: 3653
+audit_date:
 title: Permissions Matrix for Cloud Networks
 type: article
 created_date: '2013-08-20'

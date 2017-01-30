@@ -1,11 +1,11 @@
 ---
 permalink: high-performance-computing-cluster-in-a-cloud-environment/
-node_id: 3352
+audit_date:
 title: High Performance Computing Cluster in a Cloud Environment
 type: article
 created_date: '2013-03-18'
 created_by: Alyssa Hurtgen
-last_modified_date: '2016-01-12'
+last_modified_date: '2016-06-24'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -204,14 +204,6 @@ and follow these steps to create an image:
 5.  When prompted, provide a meaningful name as shown in *Figure 3*.
 6.  Finally, click **Create Image** and wait a few minutes for the image
     to be created.
-
-<img src="{% asset_path cloud-servers/high-performance-computing-cluster-in-a-cloud-environment/create%20image%20AM.png %}" alt="Creating a Server Image" width="431" height="139" />
-
-*Figure 2 - Creating a Server Image*
-
-<img src="{% asset_path cloud-servers/high-performance-computing-cluster-in-a-cloud-environment/create%20image.png %}" alt="Naming the Image" width="400" height="127" />
-
-*Figure 3 - Naming the Image*
 
 When completed, deploy a new Cloud Server using our prior procedure with
 the following exception; when prompted for image, click the Saved tab.

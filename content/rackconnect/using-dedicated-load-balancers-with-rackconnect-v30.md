@@ -1,6 +1,6 @@
 ---
 permalink: using-dedicated-load-balancers-with-rackconnect-v30/
-node_id: 4414
+audit_date:
 title: Using dedicated load balancers with RackConnect v3.0
 type: article
 created_date: '2014-11-11'
@@ -43,7 +43,7 @@ servers with one or more load balancer pools:
 ### Use the Cloud Control Panel
 
 After you initially create your cloud server by using the [Cloud Control
-Panel](https://mycloud.rackspace.com/), the management page for the
+Panel](https://mycloud.rackspace.com/), the details page for the
 newly created cloud server is displayed. On this page, you can see
 details regarding your server.
 
@@ -51,22 +51,20 @@ In the **RackConnect Details** section (located directly below the **Server
 Details** section), you have the option to manage (add or remove) the
 cloud server from a list of automation-compatible load balancer pools.
 
-<img src="{% asset_path rackconnect/using-dedicated-load-balancers-with-rackconnect-v30/Fig2_REACH_RC_Detail_PNG_B.png %}" width="483" height="507" />
-
 #### To add a server to a load balancer pool
 
-1.  In the **RackConnect Details** section of the cloud server's management page, click **Select Pools**.
+1.  In the **RackConnect Details** section of the cloud server's details page, click **Select Pools**.
+2.  In the pop-up dialog box, select the check box for each load balancer pool to which you want to add the cloud server.
 
     <img src="{% asset_path rackconnect/using-dedicated-load-balancers-with-rackconnect-v30/Fig3_REACH_LB_Pool_Modal_PNG_smaller-border.png %}" width="500" height="241" />
 
-2.  In the popup dialog box, select the check box for each load balancer pool to which you want to add the cloud server.
-3.  To save your changes, click **Save Selected Load Balancer Pools**.
+3.  Click **Save Selected Load Balancer Pools**.
 
 #### To remove a server from a  load balancer pool
 
-1.  In the RackConnect Details section of the cloud server's management page, click **Select Pools**.
+1.  In the RackConnect Details section of the cloud server's details page, click **Select Pools**.
 2.  Clear the check box for each load balancer pool from which you want to remove the cloud server.
-3.  Click **Save Selected Load Balancer Pools** to save your changes.
+3.  Click **Save Selected Load Balancer Pools**.
 
 #### Automation-compatible load balancer pools
 
@@ -75,11 +73,10 @@ following requirements must be met:
 
 -   At least one pool member exists. A disabled pool member (existing,
     but not actively used) is used as a placeholder by default.
--   All pool members use the same forwarding port
+-   All pool members use the same forwarding port.
 
-If you do not see any available pools, when adding pool members from the
-control panel (in the **Load Balancer pools** section under
- **RackConnect Details**), RackConnect automation was not able to detect
+When you are adding pool members from the control panel (in the **Load Balancer pools** section under
+**RackConnect Details**), if you do not see any available pools, RackConnect automation was not able to detect
 any automation-compatible load balancer pools on your dedicated load
 balancer. If this is the case, contact Rackspace Network Security to
 request the creation of one or more load balancer pools that are

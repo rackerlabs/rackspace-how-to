@@ -1,12 +1,12 @@
 ---
 permalink: mapping-of-amazon-web-services-resources-to-rackspace-resources/
-node_id: 3571
+audit_date:
 title: Mapping of Amazon Web Services resources to Rackspace resources
 type: article
 created_date: '2013-07-01'
 created_by: David Hendler
-last_modified_date: '2016-01-08'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-01-16'
+last_modified_by: Laura Santamaria
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -25,7 +25,6 @@ products.
 | Amazon VPC             | [Cloud Networks product and pricing](https://www.rackspace.com/cloud/networks)                           |
 | Amazon Route 53        | [Cloud DNS product and pricing](https://www.rackspace.com/cloud/dns)                                     |
 | AWS Direct Connect     | [RackConnect](https://www.rackspace.com/cloud/hybrid/rackconnect)                                        |
-| AWS Marketplace        | [Cloud Tools Marketplace](https://marketplace.rackspace.com/home)                                        |
 | Amazon S3              | [Cloud Files product and pricing](http://www.rackspace.com/cloud/files)<br />[Cloud Files API](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/)|
 | Amazon Glacier         | [Cloud Backup (with compression)](https://www.rackspace.com/cloud/backup)                                |
 | Amazon EBS             | [Cloud Block Storage product and pricing](http://www.rackspace.com/cloud/block-storage)<br />[Cloud Block Storage API](https://developer.rackspace.com/docs/cloud-block-storage/v1/developer-guide/)     |
@@ -37,7 +36,7 @@ products.
 | Amazon SES, SNS        | Mailgun                                                                                                  |
 | Elastic Transcoder     | Partner solutions - encoding.com                                                                         |
 | IAM & Mgmt Console     | [Cloud Control Panel](http://mycloud.rackspace.com)                                                      |
-| AWS CloudWawtch        | [Cloud Monitoring product and pricing](http://www.rackspace.com/cloud/monitoring)<br />[Cloud Monitoring API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)          |
+| AWS CloudWatch        | [Cloud Monitoring product and pricing](http://www.rackspace.com/cloud/monitoring)<br />[Cloud Monitoring API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)          |
 | AWS Elastic Beanstalk  | [Cloud Sites (.NET and PHP)](https://www.rackspace.com/cloud/sites), Partner Solutions                   |
 | AWS CloudFormation     | Deployments                                                                                              |
 | CloudSearch & Redshift | Non Core - Partner                                                                                       |

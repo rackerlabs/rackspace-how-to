@@ -1,12 +1,12 @@
 ---
 permalink: why-choose-cloud-files/
-node_id: 1056
-title: Why choose Cloud Files?
+audit_date:
+title: Reasons to choose Cloud Files
 type: article
 created_date: '2011-03-28'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-19'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -20,7 +20,6 @@ There are a number of reasons to choose the Cloud Files service over similar ser
 - World-class support
 
 This article provides details about the reasons why you should use Cloud Files.
-
 
 ### Simplicity
 
@@ -52,14 +51,14 @@ With Cloud Files, world-class technical support is only a click away. Live suppo
 
 ### Data redundancy
 
-The Cloud Files storage system is designed to be highly available and fault tolerant. Cloud Files achieves client data redundancy by replicating three full copies on different storage nodes. Storage nodes are grouped in logical Zones within Rackspace datacenters. Zones are connected to redundant Internet backbone providers and reside on redundant power supplies and generators. The system has been engineered in such a way as to continue to by fully functional even in the event of a major service disruption within a Datacenter. Content on the CDN provides an additional layer of data redundancy.
+The Cloud Files storage system is designed to be highly available and fault tolerant. Cloud Files achieves client data redundancy by replicating three full copies on different storage nodes. Storage nodes are grouped in logical Zones within Rackspace datacenters. Zones are connected to redundant Internet backbone providers and reside on redundant power supplies and generators. The system has been engineered in such a way as to continue to be fully functional even in the event of a major service disruption within a Datacenter. Content on the CDN provides an additional layer of data redundancy.
 
 ### Security
 
-Cloud Files uses a number of different measures to ensure that your data is kept safe. First and foremost, all traffic between clients and the Cloud Files system uses SSL to establish a secure, encrypted communication channel. This ensures that any data (usernames, passwords, and content) cannot be intercepted and read by a third-party. Users authenticate with a valid Rackspace Cloud account username and API Access Key and are granted a session authentication token. These authentication tokens are used to validate all operations against Cloud Files. There is no way to terminate a valid session by the user, but the session tokens will automatically expire after 24 hours, forcing clients to resend their credentials.
+Cloud Files uses a number of different measures to ensure that your data is kept safe. First, all traffic between clients and the Cloud Files system uses SSL to establish a secure, encrypted communication channel. This ensures that any data (usernames, passwords, and content) cannot be intercepted and read by a third-party. Users authenticate with a valid Rackspace Cloud account username and API Access Key and are granted a session authentication token. These authentication tokens are used to validate all operations against Cloud Files. There is no way to terminate a valid session by the user, but the session tokens will automatically expire after 24 hours, forcing clients to resend their credentials.
 
 The API Access Key is only available from within the Rackspace Cloud's control panel. Users must enter their valid Rackspace Cloud account username and password to gain access to view the API Access Key or to generate a new key. For information about how to find your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).
 
-It is important to note that Cloud Files does not apply any transformations to data before storing it. This means that Cloud Files \*will not\* store data in encrypted form unless the client encrypts it prior to transmission. This allows users to select the type and level of encryption best suited for their application.
+It is important to note that Cloud Files does not apply any transformations to data before storing it. This means that Cloud Files *will not* store data in encrypted form unless the client encrypts it prior to transmission. This allows users to select the type and level of encryption best suited for their application.
 
 When deleting storage Objects from the Cloud Files system, all copies of data are permanently removed within a matter of minutes. Furthermore, the physical blocks making up the customer's data is zeroed over before that space is re-used for other customer data. In other words, after a delete request, the data will be unrecoverable.

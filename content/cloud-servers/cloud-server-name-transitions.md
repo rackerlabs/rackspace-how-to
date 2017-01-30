@@ -1,12 +1,12 @@
 ---
 permalink: cloud-server-name-transitions/
-node_id: 4387
+audit_date:
 title: Cloud server name transitions
 type: article
 created_date: '2014-10-28'
 created_by: Thomas Duesing
-last_modified_date: '2016-01-14'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -37,7 +37,7 @@ The current flavor names relate to deprecated flavor names as follows:
 -   **OnMetal Memory** flavor class for *virtual* cloud servers had no
     previous name.
 
-The new flavor names eflect new functional differences. We now offer
+The new flavor names reflect new functional differences. We now offer
 servers that are optimized for memory, compute, and I/O. Additionally,
 the General Purpose servers (which were previously Performance 1) can
 have a larger system disk instead of using split system and data disks.

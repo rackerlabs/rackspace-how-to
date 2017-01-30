@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-mac-mail-for-email-hosted-on-exchange-2013/
-node_id: 3884
+audit_date:
 title: Manually configure Mac Mail for email hosted on Exchange 2013
 type: article
 created_date: '2014-01-31'

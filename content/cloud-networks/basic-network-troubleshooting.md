@@ -1,6 +1,6 @@
 ---
 permalink: basic-network-troubleshooting/
-node_id: 270
+audit_date:
 title: Basic Network Troubleshooting
 type: article
 created_date: '2011-03-16'

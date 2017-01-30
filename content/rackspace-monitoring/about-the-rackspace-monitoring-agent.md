@@ -1,12 +1,12 @@
 ---
 permalink: about-the-rackspace-monitoring-agent/
-node_id: 3192
+audit_date:
 title: About the Rackspace Monitoring Agent
 type: article
 created_date: '2012-11-13'
 created_by: Susan Million
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-06-09'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -28,27 +28,20 @@ system information:
 -   CPU
 -   Network
 
-
--
-
 ### Using the Monitoring Agent
 
 The first step to using the Monitoring Agent is to install it on your
 Cloud Server. If you are a Rackspace Managed Cloud customer the agent is
 automatically installed on all Cloud Servers. All other Rackspace
 customers can learn about installing the agent on a Cloud Server by
-reading [Installing the Monitoring
-Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent "Install the Monitoring Agent").
-Once the agent is installed on your Cloud Server, it immediately
+reading [Installing the Monitoring Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent "Install the Monitoring Agent").
+
+After the agent is installed on your Cloud Server, it immediately
 provides CPU, Filesystem, and Memory metrics. You can manage the agent
 using either the Cloud Control panel or the Monitoring API, which you
-can learn about by reading the [Rackspace Monitoring API Developer
-Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/ "Rackspace Monitoring API Developer Guide").
+can learn about by reading the [Rackspace Monitoring API Developer Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/ "Rackspace Monitoring API Developer Guide").
 
-
--
-
-### Live Host Statistics in the Cloud Control Panel
+### Live host statistics in the Cloud Control Panel
 
 You can view the host statistics of a Cloud Server provided by the agent
 on the Server Details page of the Cloud Control Panel:
@@ -57,8 +50,5 @@ on the Server Details page of the Cloud Control Panel:
 
 ### Related Information
 
-[Install the Monitoring
-Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent "Install the Monitoring Agent Manually")
-
-[Troubleshoot the Monitoring
-Agent](/how-to/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")
+- [Install the Monitoring Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent "Install the Monitoring Agent Manually")
+- [Troubleshoot the Monitoring Agent](/how-to/troubleshooting-the-rackspace-monitoring-agent "Troubleshoot the Monitoring Agent")

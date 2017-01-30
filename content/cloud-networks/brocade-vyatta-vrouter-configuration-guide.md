@@ -1,6 +1,6 @@
 ---
 permalink: brocade-vyatta-vrouter-configuration-guide/
-node_id: 4165
+audit_date:
 title: Brocade Vyatta vRouter configuration guide
 type: article
 created_date: '2014-07-30'

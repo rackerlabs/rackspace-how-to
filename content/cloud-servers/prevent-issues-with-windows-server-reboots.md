@@ -1,6 +1,6 @@
 ---
 permalink: prevent-issues-with-windows-server-reboots/
-node_id: 4798
+audit_date:
 title: Prevent issues with Windows Server reboots
 type: article
 created_date: '2015-08-18'

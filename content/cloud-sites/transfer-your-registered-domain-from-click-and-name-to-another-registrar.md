@@ -1,12 +1,12 @@
 ---
 permalink: transfer-your-registered-domain-from-click-and-name-to-another-registrar/
-node_id: 3726
+audit_date:
 title: Transfer your registered domain from Click and Name to another registrar
 type: article
 created_date: '2013-10-11'
 created_by: Luis Garcia
-last_modified_date: '2016-01-11'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -42,8 +42,6 @@ code). To obtain the code, follow these steps:
     authorization code.
 4.  Click the **DNS** tab.
 5.  Under **Domain Registration**, click **Retrieve Domain Authcode**.
-
-  <img src="{% asset_path cloud-sites/transfer-your-registered-domain-from-click-and-name-to-another-registrar/DNS_Tabblur.png %}" alt="" />
 
 **Note:** If the domain is either an alias or has been removed from the
 control panel, contact Rackspace Support. Support can send an automated

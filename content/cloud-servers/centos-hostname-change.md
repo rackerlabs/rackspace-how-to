@@ -1,12 +1,12 @@
 ---
 permalink: centos-hostname-change/
-node_id: 90
-title: CentOS - Hostname change
+audit_date: 2016-06-07
+title: Change a server's hostname in CentOS
 type: article
 created_date: '2011-03-09'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-06-08'
+last_modified_by: Renee Rendon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -17,27 +17,47 @@ Qualified Domain Name (FQDN) for the hostname to be used during their
 licensing verification system. This article describes how to change a
 server hostname in CentOS.
 
-### Change a server hostname
+### Change a server's hostname
 
-1.  Using a text editor, open the **/etc/sysconfig/network** file.
+1.  Using a text editor, open the server's **/etc/sysconfig/network** file.
+
+         # sudo nano /etc/sysconfig/network
+
 2.  Modify the `HOSTNAME=` value to match your FQDN hostname.
 
-        # sudo nano /etc/sysconfig/network
-        HOSTNAME=myserver.domain.com
+         HOSTNAME=myserver.domain.com
 
 3.  For internal networking, change the host that is associated with the
-    main IP address for your server, (found at **/etc/hosts**).
+    main IP address for your server (found at **/etc/hosts**).
 
-    <img src="{% asset_path cloud-servers/centos-hostname-change/hosts.png %}" alt="hosts.png" />
+         127.0.0.1      localhost localhost.localdomain
+    
+         123.45.67.89   hostname.domain.com   hostname
+    
+         ~
+    
+         ~
+    
+         ~
+    
+         ~
+    
+         -- INSERT --                         2,43-57    ALL
 
 4.  Run the `hostname` command. This command lets you change the
     hostname on the server that the command line remembers, but it does
     not actively update all programs that are running under the
     old hostname.
 
-    <img src="{% asset_path cloud-servers/centos-hostname-change/hostname.png %}" alt="hostname.png" />
+         [root@defiant ~]# hostname hostname.domain.com
+    
+         [root@defiant ~]# hostname
+    
+         hostname.domain.com
+    
+         [root@defiant ~]#
 
 5.  Restart networking on your server to ensure that changes will
     persist on restart.
 
-        # /etc/init.d/network restart
+         # /etc/init.d/network restart

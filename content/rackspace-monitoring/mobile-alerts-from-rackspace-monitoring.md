@@ -1,6 +1,6 @@
 ---
 permalink: mobile-alerts-from-rackspace-monitoring/
-node_id: 4175
+audit_date:
 title: Mobile alerts from Rackspace Monitoring
 type: article
 created_date: '2014-08-13'
@@ -32,7 +32,7 @@ If you are not yet using Rackspace Monitoring, sign up at no cost on [the Racksp
 
 ## Set up alerts
 
-You configure SMS alerts for your account by adding one or more new notifications via the [raxmon CLI](/how-to/getting-started-with-rackspace-monitoring-cli). You can add SMS alerts to an existing notification plan, or you can create a new one. Be sure to attach the notification plan to one or more alarms. For step-by-step guidance, see the tutorial on setting up notifications and notification plans in the Rackspace Monitoring [_Getting Started Guide_](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#setting-up-notifications).
+You configure SMS alerts for your account by adding one or more new notifications via the [raxmon CLI](/how-to/getting-started-with-rackspace-monitoring-cli). You can add SMS alerts to an existing notification plan, or you can create a new one. Be sure to attach the notification plan to one or more alarms. For step-by-step guidance, see the tutorial on setting up notifications and notification plans in the Rackspace Monitoring [_Getting Started Guide_](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#document-api-operations/notifications-operations).
 
 **Note:** You can create alarms and notifications in any order, but to create a new notification plan, you need to create a notification first.
 
@@ -49,10 +49,8 @@ The SMS alerting functionality is available to US and UK Rackspace Monitoring cu
 
 ### Contact and help
 
-freenode IRC #cloudmonitoring
+- freenode IRC #cloudmonitoring
 
-Continue to send us feature requests on the [Rackspace Monitoring Customer Forum](https://feedback.rackspace.com/forums/250746-cloud-hosting/category/81812-cloud-monitoring).
+- Continue to send us feature requests on the [Rackspace Monitoring Customer Forum](https://feedback.rackspace.com/forums/250746-cloud-hosting/category/81812-cloud-monitoring).
 
-Complete API documentation on Rackspace Monitoring notifications:
-
-[https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/notifications-operations](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-api-operations/notifications-operations)
+- Complete API documentation for [Rackspace Monitoring](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#document-developer-guide)

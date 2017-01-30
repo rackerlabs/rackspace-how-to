@@ -1,7 +1,7 @@
 ---
 permalink: mysql-master-master-replication/
-node_id: 1119
-title: MySQL Master-Master Replication
+audit_date:
+title: Configure MySQL Master-Master Replication
 type: article
 created_date: '2011-06-07'
 created_by: Rackspace Support

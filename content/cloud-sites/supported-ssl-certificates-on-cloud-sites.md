@@ -1,11 +1,11 @@
 ---
 permalink: supported-ssl-certificates-on-cloud-sites/
-node_id: 117
+audit_date:
 title: Supported SSL certificates on Cloud Sites
 type: article
 created_date: '2011-03-10'
 created_by: Rackspace Support
-last_modified_date: '2015-11-06'
+last_modified_date: '2016-06-23'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
@@ -35,10 +35,7 @@ When you install EV, multi-domain or wildcard certificates, the
 certificate must be installed to the name contained in the certificate's
 **Common Name** field. If you are unsure what the name is,
 visit https://www.sslshopper.com/certificate-decoder.html and enter the
-certificate. The information is displayed as shown in the following
-example:
-
-<img src="{% asset_path cloud-sites/supported-ssl-certificates-on-cloud-sites/cert_info.png %}" alt="" />
+certificate.
 
 After installation you must point the DNS records of any domains in the
 **Subject Alternative Names** field to the IP address provided for the

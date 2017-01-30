@@ -1,6 +1,6 @@
 ---
 permalink: managing-users-for-cloud-databases/
-node_id: 1524
+audit_date:
 title: Managing Users for Cloud Databases
 type: article
 created_date: '2012-07-24'
@@ -20,7 +20,6 @@ Databases.
 Control Panel by clicking on an existing instance name and then clicking
 Create User in the Users section of the Instance Details page.
 
-<img src="{% asset_path cloud-databases/managing-users-for-cloud-databases/dbactionsmenu.png %}" width="746" height="372" />
 
 #### Creating Users
 
@@ -44,7 +43,7 @@ The following characters are valid for user names and passwords:
     spaces are not allowed at the beginning or end of the user name
     or password.
 -   The underscore symbol (\_) is allowed anywhere in the database name,
-    user name, or password.
+    user name, or password
 
 #### Limitations on User Names and Passwords
 
@@ -76,8 +75,6 @@ value of %, which allows them to connect to the database from any host.
 You can perform the following operations to modify a user by clicking
 the cog icon next to the user name:
 
-<img src="{% asset_path cloud-databases/managing-users-for-cloud-databases/dbmodifyusers.png %}" width="397" height="245" />
-
 -   Edit the user name and host
 -   Change the user's password
 -   Delete the user
@@ -90,14 +87,12 @@ Clicking the Manage Database Access command in the actions menu will let
 you control user access to each database. To revoke a user's access to a
 database, click the "-" button next to the database name in the list.
 
- <img src="{% asset_path cloud-databases/managing-users-for-cloud-databases/dbmanageaccess.png %}" width="866" height="421" />
 
 To grant a user access to a database, click the Add Access button. In
 the list of databases for which the user does not already have access,
 select the check boxes next to the appropriate database names and then
 submit the changes to put them into effect.
 
-<img src="{% asset_path cloud-databases/managing-users-for-cloud-databases/dbaddaccess.png %}" width="761" height="460" />
 
 **Note:** Through the Control Panel, users can only be granted or
 revoked full permissions on a database. To add more specific

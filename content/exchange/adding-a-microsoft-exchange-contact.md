@@ -1,12 +1,12 @@
 ---
 permalink: adding-a-microsoft-exchange-contact/
-node_id: 1371
-title: Adding a Microsoft Exchange contact
+audit_date:
+title: Add a Microsoft Exchange contact
 type: article
 created_date: '2012-04-04'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-10-11'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -15,22 +15,23 @@ The following article explains how to create a contact with
 Microsoft Exchange. You can use a contact to create an alias that
 forwards to a mailbox hosted outside of your domain, such as at Gmail or Yahoo.
 
-1. Select **Manage Contacts** in the Microsoft Exchange box.
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
 
-   <img src="{% asset_path exchange/adding-a-microsoft-exchange-contact/(E%26A)AddingAnExchangeContact.png %}" alt="" />
+2. In the **Microsoft Exchange** section, select **Contacts**.
 
-2. In the contacts window, select **Add Contact**.
-
-   <img src="{% asset_path exchange/adding-a-microsoft-exchange-contact/(E%26A)AddingAnExchangeContact2.png %}" alt="" />
+3. In the contacts window, select **Add Contact**.
 
    **Note:** If you have multiple domains you may be prompted to select a
    domain name.
 
-3. Enter the name of the contact, the display name that will be
-   displayed in the Global Address Book, an email address, and the external
-   email address that the email will route to. Then select **Save**.
+4. Enter the following **User Details**:
 
-   <img src="{% asset_path exchange/adding-a-microsoft-exchange-contact/(E%26A)AddingAnExchangeContact3.png %}" alt="" />
+   - First name
+   - Last name
+   - Display name - the name that is displayed in the Global Address Book.
+   - User name
+   - External email - the email address that the email will route to.
 
-If you do not want this contact to be visible in the Global Address Book,
-Check the **Hide from Global Address List** check box.
+   If you do not want this contact to be visible in the Global Address Book, Check the **Hide from Global Address List** check box.
+
+5. Click **Save**.

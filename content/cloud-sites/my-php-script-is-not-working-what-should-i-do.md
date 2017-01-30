@@ -1,7 +1,7 @@
 ---
 permalink: my-php-script-is-not-working-what-should-i-do/
-node_id: 683
-title: My PHP script is not working. What should I do?
+audit_date:
+title: Troubleshooting your PHP script
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support

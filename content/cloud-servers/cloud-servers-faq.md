@@ -1,11 +1,11 @@
 ---
 permalink: cloud-servers-faq/
-node_id: 4970
+audit_date:
 title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
+last_modified_date: '2016-09-13'
 last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
@@ -251,7 +251,7 @@ per datacenter.
 
 #### Can I buy extra public IPs?
 
-Yes. For more information on the IP request process, see [Requesting Additional IPv4 Addresses for First and Next Generation Cloud Servers](/how-to/requesting-additional-ipv4-addresses-for-cloud-servers).
+Yes. For more information about the IP request process, see [Requesting Additional IPv4 Addresses for Cloud Servers](/how-to/requesting-additional-ipv4-addresses-for-cloud-servers).
 
 #### I would like to set up multiple servers from the same image. Can I do this?
 
@@ -291,8 +291,8 @@ server.
 Yes, the Rackspace [Cloud Control Panel](https://mycloud.rackspace.com/)
 is a web-based management interface for restarting your cloud server,
 starting support discussions, viewing stats, and scheduling snapshots.
-However, we do not offer a control panel like Plesk or cPanel. You're
-free to install such packages for your own cloud server.
+However, we do not offer a control panel like Plesk or cPanel. You're free to install such packages for your own cloud server. If you are installing cPanel, be sure to install on a clean (empty) server. See [CentOS/RHEL - Installing cPanel & WHM 11.24](https://community.rackspace.com/products/f/25/t/6798) for additional information.
+The usage of Plesk or cPanel is not supported and strongly discouraged for customers under the Managed Operations SLA as it interferes with our server administration. See [Using Plesk or cPanel with the Managed Operations Service Level Agreement](https://community.rackspace.com/products/f/25/t/4888) for additional information.
 
 You may be interested in installing the free monitoring agent on your
 server and using the [Cloud Intelligence dashboard](https://intelligence.rackspace.com/), which offers many of
@@ -363,7 +363,7 @@ data storage space in one of two ways:
     Volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
 -   Migrate to a larger size server with more RAM, disk space,
     and vCPUs. For  more information on resizing, see [Changing the Size
-    of Your First Generation Cloud
+    of Your Cloud
     Server](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
 
 #### How many users go onto each machine?
@@ -371,12 +371,11 @@ data storage space in one of two ways:
 The number of customers on a Cloud Server host machine depends on the
 size of the customers' Cloud Servers, and the type of operating system.
 
-#### How does the CPU scheduling work on Standard Next Generation servers?
+#### How does the CPU scheduling work on Standard servers?
 
 **Note**: [General Purpose Cloud Servers](/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers)
 have specific virtual CPU allocations, as detailed on the [Cloud Servers pricing page](http://www.rackspace.com/cloud/servers/pricing/). The
-following information on CPU scheduling applies only to next-generation
-standard (for example, not General Purpose) Cloud Servers.
+following information on CPU scheduling applies to standard Cloud Servers only.
 
 For Windows images, each Cloud Server is assigned a number of virtual
 cores based on the size of the Cloud Server. The Standard 1 GB Cloud
@@ -416,8 +415,7 @@ There are different processes of resizes, as follows:
     powered on during the "Prep-Resize" step, and only powers down
     during the second step of the resize process.
 
-    This includes: First Generation Server resize up and resize down,
-    and Standard resize up.
+    This includes: Standard resize up.
 
 -   **Offline Resizes**: Power down as the first "Prep-Resize" step.
 
@@ -498,13 +496,11 @@ Yes. Users can provision security groups via Neutron client.
 
 #### Are Security Groups on Cloud Networks supported?
 
-No. Rackspace will add Security Group support for Cloud Networks in the
-near future.
+Yes. For Additional information see [API Developer Guide, Concept section](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-concepts/index).
 
 #### Are Outbound Security Groups supported?
 
-No. Rackspace will add Outbound security Group support in the near
-future.
+Yes. For Additional information see [API Developer Guide, Concept section](https://developer.rackspace.com/docs/cloud-networks/v2/developer-guide/#document-concepts/index).
 
 #### What features are supported at launch for Security Groups?
 
@@ -615,10 +611,7 @@ The maximum limits are as follows:
 
 #### When a Cloud Server is deleted how is the data removed from the host server?
 
--   First Generation Cloud Servers on xen classic use LVM storage. As
-    such, when a server is deleted it is scrubbed by writing 0's over
-    the partition.
--   Next Generation Cloud Servers use VHD storage. Once a server is
+-   Cloud Servers use VHD storage. Once a server is
     deleted the VHD is deleted, similar to the way you would do a rm
     command in Linux. When that is done the VHD is completely removed
     thus allowing another one to be created.

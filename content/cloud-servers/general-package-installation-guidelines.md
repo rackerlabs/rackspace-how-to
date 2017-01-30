@@ -1,28 +1,27 @@
 ---
 permalink: general-package-installation-guidelines/
-node_id: 344
+audit_date:
 title: General Package Installation Guidelines
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2013-01-11'
-last_modified_by: Jered Heeschen
+last_modified_date: '2016-06-23'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
-
 
 Throughout Rackspace How-To, we present many articles detailing how
 to install and configure various Linux software packages and utilities.
 By taking a closer look at the articles across multiple Linux
 distributions, you might notice something interesting -- the procedure
-for installing a package is very similar even between different distros!
+for installing a package is very similar even between different distros.
 For this reason, we will not always provide separate instructions for
 each distribution. The purpose of this article is to aid you in making
 the adaptations needed to apply a given set of instructions to your
 Cloud Server.
 
-### Package Managers and Repositories
+### Package managers and repositories
 
 Package management is an important concept for a novice Linux user to
 understand. Unlike Windows-based operating systems, in which software
@@ -33,8 +32,8 @@ package on the system can be installed using the same tools!
 In addition to a centralized method of installing packages on a given
 system, Linux package management also features centralized software
 sources known as **repositories**. Typically, when a command such as
-'yum install iptables' is run, the package manager (in this case, Yum)
-will download the relevant packages (in this case, iptables) from its
+`yum install iptables` is run, the package manager (in this case, `Yum`)
+will download the relevant packages (in this case, `iptables`) from its
 repositories and install them on the system.
 
 Every distribution offered by Cloud Servers comes with its own package
@@ -42,7 +41,7 @@ manager. We've included basic summaries of each of these; however, Linux
 novices would do well to become familiar with the details by reading the
 relevant documentation.
 
-### APT/Dpkg (Debian, Ubuntu)
+#### APT/Dpkg (Debian, Ubuntu)
 
 -   Install package:
 
@@ -84,7 +83,7 @@ For more information on APT-based package management, please see the
 [Debian GNU/Linux FAQ](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html "http://www.debian.org/doc/FAQ/ch-pkgtools.en.html")
 and the [APT HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.debian.org/doc/manuals/apt-howto/").
 
-### Yum/RPM (CentOS, Fedora, Red Hat)
+#### Yum/RPM (CentOS, Fedora, Red Hat)
 
 -   Install package:
 
@@ -138,7 +137,7 @@ For more information on RPM-based package management, please see the
 [Linux Home Server HOWTO](http://www.brennan.id.au/07-Package_Management.html "http://www.brennan.id.au/07-Package_Management.html")
 and [Maximum RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/").
 
-### Pacman (Arch)
+#### Pacman (Arch)
 
 -   Install package:
 
@@ -175,7 +174,7 @@ and [Maximum RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/").
 For more information on Pacman, please see the
 [ArchWiki](http://wiki.archlinux.org/index.php/Pacman "http://wiki.archlinux.org/index.php/Pacman").
 
-### Emerge/Portage (Gentoo)
+#### Emerge/Portage (Gentoo)
 
 -   Install package:
 
@@ -218,7 +217,7 @@ start. [Rpmfind](http://rpmfind.net "http://rpmfind.net") is another
 good source for RPM packages. Once you've located and downloaded the
 package, you can still use your distro's package manager to install it.
 
-### Installing from Source
+### Installing from source
 
 In some situations, you may have no choice but to compile and install a
 package manually. Maybe you need special customizations that weren't

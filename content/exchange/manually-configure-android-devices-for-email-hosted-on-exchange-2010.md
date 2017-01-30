@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-android-devices-for-email-hosted-on-exchange-2010/
-node_id: 3697
+audit_date:
 title: Manually configure Android devices for email hosted on Exchange 2010
 type: article
 created_date: '2013-09-20'

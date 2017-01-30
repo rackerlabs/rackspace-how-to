@@ -1,12 +1,12 @@
 ---
 permalink: cloud-files-uploading-large-files/
-node_id: 1310
+audit_date:
 title: Cloud Files - Uploading Large Files
 type: article
 created_date: '2012-03-06'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-18'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -23,12 +23,12 @@ Following are a few limitations:
 
 There are two options for uploading large files.
 
-### Automatically Segment & Upload
+### Automatically segment and upload
 
 The Swift Tool will segment your large file for you, create a manifest
-file, and upload them accordingly,  After the file has been uploaded
+file, and upload them accordingly. After the file has been uploaded
 this tool manages your file segments for you, deleting and updating
-segments as needed.  It will look like this:
+segments as needed. Following is a sample output:
 
     $ st -A https://auth.api.rackspacecloud.com/v1.0 -U glh -K 3a25c2dc74f24c3122407a26566093c8 upload -S 1048576 test_container largefile.iso
     largefile.iso segment 1
@@ -43,10 +43,10 @@ segments as needed.  It will look like this:
     largefile.iso segment 0
     largefile.iso
 
-### Use the API with your Application
+### Use the API with your application
 
 You can use the Cloud Files API to incorporate large file support
-directly into your application. Here is a simple cURL example of how you
+directly into your application. Following is a simple cURL example of how you
 can use the API:
 
     # First, upload the segments
@@ -62,7 +62,4 @@ can use the API:
     curl -H 'X-Auth-Token: <token>' \
     http://<storage_url>/container/myobject
 
-### For more information
-
-See [Large Object Creation API
-Documentation.](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#creating-large-objects)
+For more information, see the [Creating large objects](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#creating-large-objects) section in the Cloud Files Developer Guide.

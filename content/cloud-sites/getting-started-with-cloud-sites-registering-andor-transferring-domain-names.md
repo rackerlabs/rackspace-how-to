@@ -1,12 +1,12 @@
 ---
 permalink: getting-started-with-cloud-sites-registering-andor-transferring-domain-names/
-node_id: 638
+audit_date:
 title: Getting Started With Cloud Sites - Registering and/or Transferring Domain Names
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-20'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -29,25 +29,15 @@ Panel, the DNS will automatically be setup for you to point to the
 Rackspace Cloud. Please see the [What Top Level Domain extensions can I purchase through the control panel?](/how-to/cloud-sites-faq)
 article for a list of domain extensions available for purchase.
 
--   First, log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting > Cloud Sites**.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-registering-andor-transferring-domain-names/capture_1_0.png %}" alt="" />
-
--   Click **Add a Site**.
--   Select the correct **Site Owner** (usually "You").
--   Next, enter the domain name you want to purchase in the "Domain
-    Name" text box (i.e. www.yourdomain.com).
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-registering-andor-transferring-domain-names/namesite.png %}" alt="" />
-
--   Choose the length of time for which you want to purchase the domain
-    name.
-
-    [<img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-registering-andor-transferring-domain-names/registerdomain.png %}" title="Click here to view full size image" alt="Click here to view full size image" width="550" />](http://c806394.r94.cf2.rackcdn.com/registerdomain.png)
-
--   The next screen will allow you to review your new domain
-    purchase order. If you are ready to purchase, then click **Finish**.
+1. Log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
+2. Navigate to **Hosting > Cloud Sites**.
+3. Click **Add a Site**.
+4. Select the correct **Site Owner** (usually "You").
+5. Enter the domain name you want to purchase in the **Domain
+   Name** text box (for example, www.yourdomain.com).
+6. Choose the length of time for which you want to purchase the domain name.
+7. Review your domain purchase order on the next screen. If you are ready
+   to purchase, then click **Finish**.
 
 ### Transferring your existing domain
 
@@ -66,25 +56,15 @@ Follow these steps to transfer your existing domain name to Cloud Sites:
 
 #### For a new site:
 
--   Log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
--   Navigate to **Hosting > Cloud Sites**.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-registering-andor-transferring-domain-names/capture_1_0.png %}" alt="" />
-
--   Click Add A Site and then enter the domain name in the **Domain
+1. Log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com)
+2. Navigate to **Hosting > Cloud Sites**.
+3. Click **Add A Site** and then enter the domain name in the **Domain
     Name** text box.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-registering-andor-transferring-domain-names/namesite.png %}" alt="" />
-
--   Check the **I already own/manage this domain name** check box
--   Select **Transfer the domain name** from the pull-down menu.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-registering-andor-transferring-domain-names/transferdomain.png %}" alt="" />
-
--   Click **Next Step**.
-
--   Last, you will review your order and click **Finish** once you are
-    ready to process the order.
+4. Check the **I already own/manage this domain name** check box.
+5. Select **Transfer the domain name** from the pull-down menu.
+6. Click **Next Step**.
+7. Review your order and click **Finish**, when you are ready
+   to process the order.
 
 **Note:** Your current registrar may offer "transfer lock" or a similar
 service as a security measure to prevent unauthorized transfer of your
@@ -106,15 +86,12 @@ this time you can check your website by [using the test URL](/how-to/test-your-w
 
 #### For a site already in your control panel
 
--   Log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com).
--   Navigate to **Hosting > Cloud Sites**.
--   Click the domain you wish to transfer.
--   Click the **DNS** tab.
-
-  <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-registering-andor-transferring-domain-names/renewal.png %}" alt="" />
-
--   Click **Transfer Domain**,
--   Review the Order Screen and Click **Finish**.
+1. Log in to the [Rackspace Cloud Control Panel](http://manage.rackspacecloud.com).
+2. Navigate to **Hosting > Cloud Sites**.
+3. Click the domain you wish to transfer.
+4. Click the **DNS** tab.
+5. Click **Transfer Domain**.
+6. Review the Order Screen and Click **Finish**.
 
 This concludes How to Register Your Domain and Domain Transfers. If at
 any point you need additional assistance, please contact Support and a

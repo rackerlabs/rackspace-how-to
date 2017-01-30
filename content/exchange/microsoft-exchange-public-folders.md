@@ -1,6 +1,6 @@
 ---
 permalink: microsoft-exchange-public-folders/
-node_id: 1282
+audit_date:
 title: Microsoft Exchange public folders
 type: article
 created_date: '2012-02-06'

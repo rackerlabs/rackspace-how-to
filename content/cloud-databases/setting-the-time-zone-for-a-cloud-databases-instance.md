@@ -1,7 +1,7 @@
 ---
 permalink: setting-the-time-zone-for-a-cloud-databases-instance/
-node_id: 4037
-title: Setting the time zone for a Cloud Databases instance
+audit_date:
+title: Set the time zone for a Cloud Databases instance
 type: article
 created_date: '2014-04-23'
 created_by: Jered Heeschen
@@ -30,7 +30,7 @@ trove](/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-
 ### Setting the server time zone
 
 The server time zone is set in MySQL in the `default_time_zone`
-parameter and the default value is `SYSTEM`. To set `default_time_zone`
+parameter, and the default value is `SYSTEM`. To set `default_time_zone`
 to a different value you can use the named time zone for the
 region (from the [IANA Time Zone
 Database](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones))
@@ -50,8 +50,7 @@ zone parameter to an existing configuration group.
 
 ### Create a new configuration group
 
-To create a new configuration group for custom time zone information,
-run the
+To create a new configuration group for custom time zone information, run the
 [configuration-create](/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#creategroup)
 command with `trove`.
 
@@ -71,23 +70,19 @@ which is `+5:30`, use the offset value for `default_time_zone`:
 
 #### Apply the configuration group
 
-To apply the configuration group to an existing Cloud Databases
-instance, run the
+To apply the configuration group to an existing Cloud Databases instance, run the
 [configuration-attach](/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#applying)
 command with `trove`, as follows:
 
     trove configuration-attach aab79bba-9eaa-4ac3-94fc-e4aaf46b4efb 26f6f753-3853-4bf5-9bfe-1765966ad2f6
 
-The first argument is the instance ID and the second is the
-configuration group ID.
+The first argument is the instance ID and the second is the configuration group ID.
 
-You can get a list of instances and their IDs by running the list
-command with `trove`.
+You can get a list of instances and their IDs by running the list command with `trove`.
 
     trove list
 
-**Note:** For the time zone setting to take effect, the Cloud Databases
-instance must be restarted.
+**Note:** For the time zone setting to take effect, the Cloud Databases instance must be restarted.
 
 #### Add to an existing configuration group
 
@@ -96,19 +91,16 @@ configuration group by running the
 [configuration-patch](/how-to/managing-configuration-groups-for-cloud-databases-with-the-trove-command-line-tool#modifying)
 command with `trove`.
 
-The following example adds the India Standard Time (IST) time zone to a
-configuration group:
+The following example adds the India Standard Time (IST) time zone to a configuration group:
 
     trove configuration-patch 26f6f753-3853-4bf5-9bfe-1765966ad2f6 '{"default_time_zone":"Asia/Calcutta"}'
 
-**Note:** For the time zone setting to take effect, the Cloud Databases
-instance must be restarted.
+**Note:** For the time zone setting to take effect, the Cloud Databases instance must be restarted.
 
 ### Checking the server time zone
 
 You can check the current time zone setting for an instance by [logging
-in to the mysql
-console](/how-to/connect-to-a-cloud-databases-instance)
+in to the mysql console](/how-to/connect-to-a-cloud-databases-instance)
 and querying the value of global.time\_zone parameter.
 
     SELECT @@global.time_zone;

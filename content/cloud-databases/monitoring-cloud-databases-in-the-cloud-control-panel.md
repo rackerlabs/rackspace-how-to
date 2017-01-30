@@ -1,12 +1,12 @@
 ---
 permalink: monitoring-cloud-databases-in-the-cloud-control-panel/
-node_id: 4019
+audit_date:
 title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2016-01-21'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-06-13'
+last_modified_by: Kyle Laffoon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -86,11 +86,10 @@ traffic in kilobytes per second.
 
 #### MySQL check
 
-Graphs that report metrics for the MySQL datastore running on your
-instance will be added to the Cloud Control Panel in the future. In the
-meantime, graphs for MySQL metrics are available on our [Cloud
-Intelligence Site](https://intelligence.rackspace.com/), currently in
-beta.
+Graphs that report metrics for the MySQL datastore running on your instance
+are available in the Cloud Control Panel under **Monitoring Alerts**. This area
+links to our [Rackspace Intelligence site](https://intelligence.rackspace.com/),
+currently in beta.
 
 ### Alarms
 
@@ -110,9 +109,6 @@ You can view and create alarms from a check's details page.
     of the check for which you want to create an alarm.
 2.  In the **Alarms** section at the bottom of the page, click the
     **Create Alarm button**.
-
-    <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbfilesystemalarm.png %}" width="470" height="136" />
-
 3.  In the **Alarm Name** field, enter a name for the alarm.
 4.  Select the contact who will receive notifications from the alarm.
 

@@ -1,12 +1,12 @@
 ---
 permalink: use-a-later-version-of-mysql-with-net-applications-on-cloud-sites/
-node_id: 4062
+audit_date:
 title: Use a later version of MySQL with .NET applications on Cloud Sites
 type: article
 created_date: '2014-05-07'
 created_by: Matt Costello
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -29,8 +29,6 @@ compliant.
 
 2.  In Visual Studio, select **Tools > NuGet Package Manager > Package Manager Console**.
 
-    <img src="{% asset_path cloud-sites/use-a-later-version-of-mysql-with-net-applications-on-cloud-sites/packagemanger.png %}" alt="" />
-
     The console should appear near the bottom of the Visual Studio
     window, depending on how you've set up your views.
 
@@ -39,8 +37,6 @@ compliant.
     the MySQL version:
 
         Install-Package MySql.Data -Version 6.4.4
-
-    <img src="{% asset_path cloud-sites/use-a-later-version-of-mysql-with-net-applications-on-cloud-sites/console.png %}" alt="" />
 
 4.  Check your application's **bin** directory for the
     **MySql.Data.dll** to confirm the MySQL installation.

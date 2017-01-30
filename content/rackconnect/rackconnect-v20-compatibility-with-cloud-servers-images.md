@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v20-compatibility-with-cloud-servers-images/
-node_id: 2031
+audit_date:
 title: RackConnect v2.0 compatibility with Cloud Servers images
 type: article
 created_date: '2012-08-21'
@@ -13,11 +13,11 @@ product_url: rackconnect
 
 **Applies to:** RackConnect v2.0
 
-For the Rackspace Open Cloud offering, the image list for RackConnect
+For the Rackspace Public Cloud offering, the image list for RackConnect
 customers with the Managed Infrastructure service level has been
 simplified. If your RackConnect implementation is complete, you can
 select any of the base images displayed in your image list (via the API,
-[MyRackspace portal](https://my.rackspace.com/), or the [Cloud Control
+the [MyRackspace portal](https://my.rackspace.com/), or the [Cloud Control
 Panel](https://mycloud.rackspace.com/)), and we can configure
 RackConnect on your cloud servers. This is now true for Windows and
 Linux images, as well as for Managed Operations service level and
@@ -53,5 +53,6 @@ post-build updates. Because these values can be updated via the public
 API, it is possible (although not recommended) for you to modify the
 values.
 
-[Cloud Server images for use with RackConnect v2.0](/how-to/cloud-server-images-for-use-with-rackconnect-v20)
-&lt; Previous | Next &gt; [The RackConnect v2.0 API](/how-to/the-rackconnect-v20-api)
+### Related article
+
+[RackConnect v2.0 API](/how-to/rackconnect-v20-api)

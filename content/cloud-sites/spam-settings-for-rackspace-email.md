@@ -1,12 +1,12 @@
 ---
 permalink: spam-settings-for-rackspace-email/
-node_id: 697
+audit_date:
 title: Spam Settings for Rackspace Email
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -41,9 +41,7 @@ mailbox. To manage your blacklist, do the following:
 2.  In the left pane, click **Spam Settings**.
 3.  Click the **Blacklist** tab.
 
-  <img src="{% asset_path cloud-sites/spam-settings-for-rackspace-email/wm_addblacklist_001.gif %}" alt="wm\_addblacklist\_001.gif" />
-
-To add a domain or email address to the list:
+**To add a domain or email address to the list:**
 
 1.  Click the **Add** button.
 2.  Enter a domain or email address in the space provided.
@@ -54,22 +52,22 @@ To add a domain or email address to the list:
     example: @%.ru).
 3.  Click the **Add** button.
 
-**Note:** Domains and email addresses that are blacklisted
-will appear in the **Blacklisted Domains & Email
-Addresses** box.
+    **Note:** Domains and email addresses that are blacklisted
+    will appear in the **Blacklisted Domains & Email
+    Addresses** box.
 
-To add an IP to the list:
+**To add an IP to the list:**
 
-1.  Click the **Add** button.
+1.  Click **Add**.
 2.  Enter an IP or IP range in the space provided. Note: You
     can use a "%" as a wildcard in the last three octets to specify
     IP ranges. For example: 216.12.34.%, 216.12.%.%, and 216.%.%.% are
     all valid ranges.
-3.  Click the **Add** button.
-4.  Click the **Save** button.
+3.  Click **Add**.
+4.  Click **Save**.
 
-**Note:** IP addresses that are blacklisted will appear in
-the **Blacklisted IP Addresses** box.
+    **Note:** IP addresses that are blacklisted will appear in
+    the **Blacklisted IP Addresses** box.
 
 ### Removing Users/Domains From the Blacklist
 
@@ -77,17 +75,14 @@ Email sent to you from domains, email addresses, and IPs on
 your blacklist will be blocked and will not be delivered to your
 mailbox. To manage your blacklist, do the following:
 
-Click the **Settings** link, located in the upper right
+Click **Settings**, located in the upper right
 corner of the webmail window.
 
 1.  In the left pane, click **Spam Settings**,
-    then **Click the **Blacklist** tab.
+    then click the **Blacklist** tab.
 2.  Click the corresponding **Delete** button.
-3.  To confirm you want to delete the items, click
-    the **Yes** button.
-4.  Click the **Save** button.
-
-  <img src="{% asset_path cloud-sites/spam-settings-for-rackspace-email/wm_deleteblacklist_001.gif %}" alt="wm\_deleteblacklist\_001.gif" />
+3.  Click **Yes** to confirm you want to delete the items.
+4.  Click **Save**.
 
 ### Adding users/domains to your Safelist
 
@@ -96,17 +91,16 @@ IPs on your safelist will bypass the spam filters, ensuring you receive
 email from those senders. To add a domain, email address, or IP to your
 safelist, do the following:
 
-1.  Click the **Settings** link, located in the upper right
+1.  Click **Settings**, located in the upper right
     corner of the webmail window.
 2.  In the left pane, click **Spam Settings**.
 3.  Click the **Safelist** tab.
-
-  <img src="{% asset_path cloud-sites/spam-settings-for-rackspace-email/wm_addsafelist_001.gif %}" alt="wm\_addsafelist\_001.gif" />
 
 To add a domain or email address to the list:
 
 1.  Click the **Add** button.
 2.  Enter a domain or email address in the space provided.
+
     **Note**: We recommend that you not safelist domains from large
     email systems, such as hotmail.com or yahoo.com, as this could
     result in spam arriving in your Inbox. Also, you can use a "%" as a
@@ -136,11 +130,9 @@ the **Safelisted IP Addresses** box.
 To report unfiltered spam, in any folder other than the
 Spam folder, do one of the following:
 
-1.  Select or open the email, and then click the **Report
-    Spam** link. Or, right-click the email and select **Report
-    Spam**.
-
-  <img src="{% asset_path cloud-sites/spam-settings-for-rackspace-email/wm_reportspam_001.gif %}" alt="wm\_reportspam\_001.gif" />
+1.  Select or open the email.
+2.  Click **Report Spam**.
+    *Optionally*, you can also right-click the email and select **Report Spam**.
 
 To report several emails, select the check box next to
 each email you want to report, then:
@@ -162,12 +154,10 @@ following:
 2.  Click the **Not Spam** link, or right-click the email
     and select **Not Spam**.
 
-  <img src="{% asset_path cloud-sites/spam-settings-for-rackspace-email/wm_reportnotspam_001.gif %}" alt="wm\_reportnotspam\_001.gif" />
-
 To report several emails, select the check box next to each
 email you want to report, then:
 
-1.  Click the **Select Action** drop-down menu
+1.  Click the **Select Action** drop-down menu.
 2.  Select **Not Spam**.
 
 **Note**: When you mark an email as "Not Spam," the email
@@ -182,12 +172,8 @@ regardless of your email software; even if you use Outlook, Netscape
 Mail, Eudora, etc., your spam will be filtered, according to your
 preferences, before the email reaches your inbox.
 
-1.  Click the **Settings** link, located in the upper right
-    corner of the webmail window.
-2. Click **Spam Settings**, located in the
-    left pane.
-
-  <img src="{% asset_path cloud-sites/spam-settings-for-rackspace-email/wm_managepreferences_001.gif %}" alt="wm\_managepreferences\_001.gif" />
+1. Click **Settings**, located in the upper right corner of the webmail window.
+2. Click **Spam Settings**, located in the left pane.
 
 In the **Spam Filtering** section, you can turn spam
 filtering on or off. Or, you can turn on the **Exclusive** setting,

@@ -1,6 +1,6 @@
 ---
 permalink: enable-log-delivery-in-rackspace-cdn/
-node_id: 4904
+audit_date:
 title: Logs in Rackspace CDN
 type: article
 created_date: '2015-10-29'

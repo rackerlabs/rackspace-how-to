@@ -1,12 +1,12 @@
 ---
 permalink: working-with-rackspace-intelligence-notification-plans/
-node_id: 4745
-title: Working with Rackspace Intelligence notification plans
+audit_date:
+title: Work with Rackspace Intelligence notification plans
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-09'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -21,12 +21,8 @@ existing notification plan, click **Notify** at
 the top of the Rackspace Intelligence interface and then click
 **Notification Plans**.
 
-<img src="{% asset_path rackspace-intelligence/working-with-rackspace-intelligence-notification-plans/4745.1a_0.png %}" width="704" height="276" />
-
 You can sort the list of notification plans by name, number of
 notifications, or number of alarms.
-
-<img src="{% asset_path rackspace-intelligence/working-with-rackspace-intelligence-notification-plans/4745.2_0.png %}" width="93" height="197" />
 
 Sorting by the number of alarms can help you prioritize follow-up
 investigations.
@@ -36,7 +32,7 @@ investigations.
 To create a usable notification plan,
 create the plan itself and then add at least one notification to the plan.
 
-#### Create the plan itself
+#### Create the plan
 
 1. On the **Notification Plans** page, click **Create
    Notification** Plan.

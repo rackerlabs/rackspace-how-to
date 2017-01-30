@@ -1,6 +1,6 @@
 ---
 permalink: public-and-private-access-for-cloud-databases/
-node_id: 1509
+audit_date:
 title: Public and Private Access for Cloud Databases
 type: article
 created_date: '2012-07-24'

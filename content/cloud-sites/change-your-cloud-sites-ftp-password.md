@@ -1,6 +1,6 @@
 ---
 permalink: change-your-cloud-sites-ftp-password/
-node_id: 588
+audit_date:
 title: Change your Cloud Sites FTP password
 type: article
 created_date: '2011-03-16'

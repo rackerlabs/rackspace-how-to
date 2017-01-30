@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-cloud-sites-essentials-cloud-sites-technologies/
-node_id: 1251
+audit_date:
 title: 'Rackspace Cloud Sites Essentials: Cloud Sites Technologies'
 type: article
 created_date: '2011-11-11'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
+last_modified_date: '2016-06-22'
 last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
@@ -47,20 +47,13 @@ to change this technology.
 1.  After you've logged into the Cloud Sites Control Panel, navigate to
 **Hosting > Cloud Sites**.
 
-  <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-cloud-sites-technologies/hosting.png %}" alt="" />
+2.  Click the domain name to which you would like to make technology changes.
 
-2.  Click on the domain name to which you would like to make technology changes.
-3.  Click on the **Features** tab.
+3.  Click the **Features** tab.
 
-  <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-cloud-sites-technologies/featurestab.png %}" alt="" />
-
-4.  Click on the **Change Technology** button in the **Technologies** section.
-
-  <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-cloud-sites-technologies/technologies_1.png %}" alt="" />
+4.  Click **Change Technology** in the **Technologies** section.
 
 5.  Choose the **Site Technology** you would like your website to use.
-
-  <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-cloud-sites-technologies/change-technology_1.png %}" alt="" />
 
 6.  Click **Change Technology** to complete your change.
 
@@ -79,23 +72,19 @@ each of your domains.
 
 1.  Navigate to **Hosting > Cloud Sites**
 
-  <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-cloud-sites-technologies/hosting.png %}" alt="" />
-
 2.  Click on the **domain name** for which you would like to review its website features.
 
   After it opens, you will be on  the **General Settings tab** by default.
 
 3.  Scroll down to **Website Features**.
 
-  <img src="{% asset_path cloud-sites/rackspace-cloud-sites-essentials-cloud-sites-technologies/web_features.png %}" alt="" />
-
-What you have here is a breakdown of your website's current features
-including its currently enabled technologies, its number of
-databases and whether the Raw Logs are enabled or disabled. (Raw Logs
+Displayed under **Website Features** is a breakdown of your website's current
+features including its currently enabled technologies, its number of
+databases, and whether the Raw Logs are enabled or disabled. (Raw Logs
 are disabled by default).
 
 This concludes this article regarding Cloud Sites Web Technologies.
-We've learned how to change your websites default technology and how to
+This article covered how to change your websites default technology and how to
 view a summary of your websites features quickly. The next article will
 discuss two of the most commonly talked about features on the Rackspace
 Cloud Sites, managing your website through .htaccess (Linux) and/or

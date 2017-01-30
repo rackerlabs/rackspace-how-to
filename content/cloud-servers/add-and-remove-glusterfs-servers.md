@@ -1,17 +1,17 @@
 ---
 permalink: add-and-remove-glusterfs-servers/
-node_id: 4091
+audit_date:
 title: Add and remove GlusterFS servers
 type: article
 created_date: '2014-06-03'
 created_by: Matt Sherborne
-last_modified_date: '2016-01-12'
+last_modified_date: '2016-06-10'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the [previous article](/how-to/set-up-a-two-server-glusterfs-array), you created a two-server GlusterFS array.
+**Previous section:** [Set up a two-server GlusterFS array](/how-to/set-up-a-two-server-glusterfs-array)
 
 This article describes how to add a new node, balance it into the array, and then remove it.
 
@@ -21,7 +21,7 @@ Use the `nova boot` command from the previous article to create a server called 
 
     nova boot --image bb02b1a3-bc77-4d17-ab5b-421d89850fca --flavor performance1-4 web3
 
-You could also use the [Rackspace Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel) to create the new server.
+You could also use the [Rackspace Cloud Control Panel](/how-to/create-a-cloud-server) to create the new server.
 
 ### Add the server to the Rackspace custom network
 
@@ -31,7 +31,9 @@ In the previous article, you added a Rackspace custom network.
 
        nova network-list
 
-2. After you have the UUID, associate the new host with it. Replace `UUID` in the following command with the actual UUID (for example, 5492de89-1497-4aa0-96eb-bcdd55e1195c). `web03` is the host name of the server that you want to add.
+2. After you have the UUID, associate the new host with it.
+
+   Replace `UUID` in the following command with the actual UUID (for example, 5492de89-1497-4aa0-96eb-bcdd55e1195c). `web03` is the host name of the server that you want to add.
 
        nova network-associate-host UUID web03
 
@@ -43,7 +45,7 @@ When you are done, the new server should have the IP address 192.168.0.3 on inte
 
 1.  Use SSH to log in to the server.
 
-2.  Using the instructions from the previous article, install GlusterFS and format the `bricks` partition as follows:
+2.  Using the instructions from the [previous article](/how-to/set-up-a-two-server-glusterfs-array), install GlusterFS and format the `bricks` partition as follows:
 
         apt-get update
         apt-get install -y glusterfs-server glusterfs-client
@@ -58,7 +60,7 @@ When you are done, the new server should have the IP address 192.168.0.3 on inte
 
 1.  Use SSH to log in to either web01 or web02.
 
-2.  Tell GlusterFS to trust the new server:
+2.  The following command instructs the GlusterFS volume to trust the new server:
 
         root@web02 :~# gluster peer probe 192.168.0.3
         peer probe: success
@@ -70,20 +72,20 @@ When you are done, the new server should have the IP address 192.168.0.3 on inte
 
 The parts of the command are as follows:
 
- * `gluster` - The command is for GlusterFS.
- * `volume` - The command is related to a volume.
- * `add-brick` - You are adding a brick to the volume.
- * `www` - This is the name of the volume.
- * `replica 3` - After you add this brick, the volume will keep at least three copies of each file, one copy per brick, and in this case, one copy per server (because there is only one brick on each server).
- * `192.168.0.3:/srv/.bricks/www` - This is the IP address of the Gluster server, followed by the absolute path to where the brick data should be stored.
+ - `gluster` - The command is for GlusterFS.
+ - `volume` - The command is related to a volume.
+ - `add-brick` - You are adding a brick to the volume.
+ - `www` - This is the name of the volume.
+ - `replica 3` - After you add this brick, the volume will keep at least three copies of each file, one copy per brick, and in this case, one copy per server (because there is only one brick on each server).
+ - `192.168.0.3:/srv/.bricks/www` - This is the IP address of the Gluster server, followed by the absolute path to where the brick data should be stored.
 
 ### Volume storage strategies
 
 GlusterFS offers different types of volume storage strategies:
 
- * **Distributed** - One file on one brick, the next file on the next. This strategy gives you more space because your volume is the sum of all the bricks.
- * **Replicated** - Every file is copied to every server. This is the strategy that we recommend.
- * **Striped** - Files are cut into chunks, and one chunk is written to the first brick, one chunk is written to the second brick, and so on.
+ - **Distributed** - One file on one brick, the next file on the next. This strategy gives you more space because your volume is the sum of all the bricks.
+ - **Replicated** - Every file is copied to every server. **This is the strategy that we recommend.**
+ - **Striped** - Files are cut into chunks, and one chunk is written to the first brick, one chunk is written to the second brick, and so on.
 
 You can also combine strategies, for example replicated-distributed, as illustrated in the following example:
 
@@ -186,6 +188,4 @@ Now that you have a clean location in which to store the brick, adding the brick
     root@web01:/srv# gluster volume add-brick www replica 3 192.168.0.2:/srv/.bricks/www
     volume add-brick: success
 
-### Next section
-
-[How to recover from a failed server in a GlusterFS array](/how-to/recover-from-a-failed-server-in-a-glusterfs-array)
+**Next section** - [How to recover from a failed server in a GlusterFS array](/how-to/recover-from-a-failed-server-in-a-glusterfs-array)

@@ -1,86 +1,52 @@
 ---
 permalink: managing-your-server-resizing-standard-and-general-purpose-servers/
-node_id: 1476
-title: Managing your server - resizing standard and general purpose servers
+audit_date:
+title: Manage your server - resizing standard and general purpose servers
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2016-01-04'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2016-07-07'
+last_modified_by: Stephanie
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Previous section
+**Previous section:** [Create a Cloud Server](/how-to/create-a-cloud-server)
 
-[Create a Cloud Server](/how-to/create-a-cloud-server)
+This article shows how to resize your server&mdash;change the RAM and disk space allocation&mdash;in the Cloud Control Panel.
 
-In this article, we dicuss the process for resizing your server -
-changing the RAM and disk space allocation. Note that at this time,
-Windows servers can be resized to a larger allocation but cannot be
-resized down to a lesser allocation. Standard Cloud Servers can be
-resized up or down. General Purpose Servers can only be resized up.
+**Note:** Standard servers can be resized to both smaller and larger servers, but be mindful of the potential for data loss if you size down. General Purpose servers can only be resized to larger servers. All other flavors, OnMetal servers, and any server that boots from a Cloud Block Storage volume cannot be resized.
 
--   To allow you to easily scale your server by increasing the amount of
-    Disk Space and RAM on your server, click the **Resize** button.
+1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
-    <img src="{% asset_path cloud-servers/managing-your-server-resizing-standard-and-general-purpose-servers/8_Resizenew.png %}" alt="" />
+2. In the top navigation bar, click **Servers > Cloud Servers** to view a list of your existing servers.
 
--   You will see a pop-up window listing your server size options. Each
-    server size has a different hourly cost for uptime, and the new cost
-    goes into effect when the server resize process is completed. This
-    could mean that you will pay different rates for the same server
-    within a given billing cycle. Press the **Resize Server** button
-    to begin.
+3. Click the gear icon next to the server which you want to resize, and then click **Resize**.
 
-    <img src="{% asset_path cloud-servers/managing-your-server-resizing-standard-and-general-purpose-servers/9_ResizeProcessnew.png %}" alt="" />
+   A pop-up window listing your server size options is displayed.
 
--   Next you will choose your new **Server Size**. Each server size has
-    a different hourly cost for uptime, and the new cost goes into
-    effect when the server resize process is completed. This could mean
-    that you will pay different rates for the same server within a given
-    billing cycle. Note that Windows servers cannot be resized down, so
-    smaller sizes will be grayed out. Press the **Resize** button
-    to begin.
+4. Choose your new server size and then click **Resize Server**.
 
--   You will see the **Status** change on the server details screen
-    throughout the Resize process, going through modes such
-    as *Preparing* and *Queueing for Resize*.
+   **Note:** Each server size has a different hourly cost for uptime, and the new cost goes into effect when the server resize process is completed. This could mean that you pay different rates for the same server within a given billing cycle.
 
--   **Verify the Resize.** This is an important step because it is the
-    last chance you will have to revert to the original size and cancel
-    any changes to your server. You will receive a notification
-    prompting you to verify the changes made to your system resources
-    and to verify that there was no adverse impact to your server. The
-    best way to do this is to remotely login to your server and verify
-    your system resources and filesystem integrity. Do not rely on the
-    availability of your website as an indicator of whether the resize
-    was successful, as certain server processes may be suspended while
-    the resize is waiting to be verified.
+   A notification displays prompting you to verify the changes made to your system resources and that there was no adverse impact to your server.
 
-    <img src="{% asset_path cloud-servers/managing-your-server-resizing-standard-and-general-purpose-servers/14_ConfirmRollbacknew.png %}" alt="" />
+5. Verify that your server was resized correctly by remotely logging in to your server and verifying your system resources and filesystem integrity.
 
--   For a Linux server, you can SSH to either the public or private IP
-    address and run the commands 'df -h' (Hard Disk usage) and 'free -m'
-    (available RAM memory) to verify the changes.  Below you can see
-    that my server, which previously had 10 GB of HD space and 256 MB of
-    RAM, now has 20 GB of HD space and 500 MB of RAM.
+   **Note:** Verification is an important step because it is the last chance you will have to revert to the original size and cancel any changes to your server. Do not rely on the availability of your website as an indicator of whether the resize was successful, as certain server processes may be suspended while the resize is waiting to be verified.
 
-    **Note:** For a Windows server, there are additional steps required
-    to use the additional space after a resize.  Please follow the
-    instructions from this article: [Adding Disk Space After Resizing a Windows Server 2012 Cloud Server](/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server)
+   For a Linux server, you can SSH to either the public or private IP address and run the commands `df -h` (Hard Disk usage) and `free -m` (available RAM memory) to verify the changes.
 
-    <img src="{% asset_path cloud-servers/managing-your-server-resizing-standard-and-general-purpose-servers/15_VerifyResizeSSH.png %}" alt="" />
+   For a Windows server, there are additional steps required to use the additional space after a resize.  Please follow the instructions from this article: [Adding Disk Space After Resizing a Windows Server 2012 Cloud Server](/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server)
 
--   Now that you've verified the system resources and checked your
-    filesystems, you can choose to **Confirm** the resize
-    or **Revert** to the original size.  Choosing to Confirm the resize
-    will change the server status. The process will be complete when
-    the **Status** reads **Active**, the **Current Action** is **None**,
-    and the server has come back up from a reboot. Any web services
-    that you had running may require you to log in and manually
-    restart them.
+6. Now that you've verified the system resources and checked your filesystems, you can choose to **Confirm** the resize or **Revert** to the original size.  
 
-### Next section
+   Choosing to Confirm the resize will change the server status. The process will be complete when the **Status** reads **Active**, the **Current Action** is **None**, and the server has come back up from a reboot. Any web services that you had running may require you to log in and manually restart them.
 
-[Reset your server password](/how-to/reset-your-server-password)
+### Additional resources
+
+- [Reset your server password](/how-to/reset-your-server-password)
+- [Basic Cloud Server security](/how-to/basic-cloud-server-security)
+- [Reboot your server](/how-to/reboot-your-server)
+- [Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server)
+- [Delete your server](/how-to/deleting-your-server)

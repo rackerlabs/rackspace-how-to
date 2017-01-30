@@ -1,7 +1,7 @@
 ---
 permalink: using-ssl-with-your-cloud-database-instance/
-node_id: 4281
-title: Using SSL with your Cloud Database instance
+audit_date:
+title: Use SSL with your Cloud Database instance
 type: article
 created_date: '2014-10-02'
 created_by: Neha Verma
@@ -32,11 +32,19 @@ associated with Cloud Databases.
 **Note:** All database instances created before October 20, 2014, should
 be restarted before accepting SSL connections.
 
-[Download the SSL
+Download the appropriate SSL certificate, based on when the Cloud Databases instance was created.
+
+-   For instances created before March 1, 2016, [download the SSL
 certificate](http://ssl.rackspaceclouddb.com/ca-cert.pem) from the
 following URL:
 
-    http://ssl.rackspaceclouddb.com/ca-cert.pem
+    `http://ssl.rackspaceclouddb.com/ca-cert.pem`
+    
+-   For instances created on or after March 1, 2016, [download the SSL
+certificate](http://ssl.rackspaceclouddb.com/rackspace-ca-2016.pem) from the
+following URL:
+
+    `http://ssl.rackspaceclouddb.com/rackspace-ca-2016.pem`
 
 Your applications should use the downloaded certificate as the CA
 certificate for SSL connections to your database.

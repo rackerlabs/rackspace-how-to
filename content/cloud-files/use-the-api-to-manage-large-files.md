@@ -1,11 +1,11 @@
 ---
 permalink: use-the-api-to-manage-large-files/
-node_id: 6001
+audit_date:
 title: Use the API to manage large files
 type: article
 created_date: '2016-02-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2016-02-10'
+last_modified_date: '2016-04-19'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
@@ -13,7 +13,11 @@ product_url: cloud-files
 
 If you are interested in developing against the Rackspace Large File
 Support code to incorporate into your application, you should work
-directly with the Cloud Files API. Use the following steps:
+directly with the Cloud Files API.
+
+**Note:** If you prefer to use the Swift tool, see [Use Swift to manage large files](/how-to/use-swift-to-manage-large-files), and if you prefer Swiftly, see [Use Swiftly to upload an image](/how-to/use-swiftly-to-upload-an-image).
+
+Use the following steps:
 
 1.  Upload the segments:
 

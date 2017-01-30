@@ -1,7 +1,7 @@
 ---
 permalink: known-issues-and-suggested-workarounds-role-based-access-control-rbac/
-node_id: 3648
-title: 'Known Issues and Suggested Workarounds: Role-Based Access Control (RBAC)'
+audit_date:
+title: Known issues and suggested workarounds for RBAC
 type: article
 created_date: '2013-08-16'
 created_by: Renee Rendon
@@ -11,18 +11,16 @@ product: undefined
 product_url: undefined
 ---
 
-### Previous section
+**Previous section:** [Role-Based Access Control (RBAC) FAQ](/how-to/faq-role-based-access-control-rbac)
 
-[RBAC FAQ](/how-to/faq-role-based-access-control-rbac)
-
-This is a list of known issues with Role-based Access Control
+This article describes known issues with Role-based Access Control
 (RBAC). We are diligently working to resolve these issues. If you are
-experiencing an issue that is not listed, please contact customer
-support at 1-800-961-4454.
+experiencing an issue that is not listed, contact customer
+support at 1 800 961 4454.
 
-### Custom Role
+### Custom role
 
-**Known Issue:** After a user has been assigned the custom
+**Known issue:** After a user has been assigned the custom
 role, the account owner cannot change this role to a multiproduct role
 by using the Cloud Control Panel.
 
@@ -32,33 +30,32 @@ products. To simulate the read-only access role, the account owner can
 assign to the user the observer role for all available
 products.
 
-**Note:** The custom role will not be updated
+**Note:** If you use this workaround, the custom role will not be updated
 automatically when new Rackspace products become RBAC enabled. The
 account owner must update custom roles to include the new
 products.
 
 You can also change the custom role to a multiproduct role
-by contacting Support at 1-800-961-4454.
+by contacting Support at 1 800 961 4454.
 
-### Multiple Roles for One User
+### Multiple roles for one user
 
-**Known Issue:** Multiple roles for one user can only be assigned
+**Known issue:** Multiple roles for one user can be assigned only
 through the [API](https://developer.rackspace.com/docs/). The Cloud Control Panel
 displays only the first role assigned to users that have multiple
 roles.
 
-**Workaround:** A user's multiple roles can be viewed
-through the [API](https://developer.rackspace.com/docs/).
+**Workaround:** View a user's multiple roles through the [API](https://developer.rackspace.com/docs/).
 
-### Suspended Account
+### Suspended account
 
-**Known Issue:** When an account is suspended, all users of the
+**Known issue:** When an account is suspended, all users of the
 account are disabled. Users are not automatically re-enabled when the
 account is reactivated.
 
 **Workaround:** When the account is reactivated, the account owner
 must re-enable users through the API or by contacting support at
-1-800-961-4454.
+1 800 961 4454.
 
 ### Next section
-[Getting Started with RBAC](/how-to/getting-started-with-role-based-access-control-rbac)
+[Getting started with RBAC](/how-to/getting-started-with-role-based-access-control-rbac)

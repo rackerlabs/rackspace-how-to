@@ -1,6 +1,6 @@
 ---
 permalink: migrating-to-the-rackspace-cloud-from-amazon-web-services/
-node_id: 3573
+audit_date:
 title: Migrating to the Rackspace Cloud from Amazon Web Services
 type: article
 created_date: '2013-07-02'

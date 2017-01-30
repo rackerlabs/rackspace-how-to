@@ -1,12 +1,12 @@
 ---
 permalink: set-up-apache-virtual-hosts-on-ubuntu/
-node_id: 108
+audit_date:
 title: Set up Apache virtual hosts on Ubuntu
 type: article
 created_date: '2011-03-09'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-07-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -136,7 +136,7 @@ The contents looks as follows:
       LogLevel warn
       ErrorLog /var/log/apache2/error-mydomainname.com.log
       CustomLog /var/log/apache2/access-mydomainname.com.log combined
-      
+
     </VirtualHost>
 
 
@@ -181,19 +181,12 @@ Failure to remove them might lead to confusion on your part and
 inaccurate tests of new or modified public DNS records.
 
 With such changes made for testing purposes, you can navigate to your
-site in a web browser on your local computer:
-
-<img src="{% asset_path cloud-servers/set-up-apache-virtual-hosts-on-ubuntu/apache-vhostworking-domain1.jpg %}" alt="apache-vhostworking-domain1.jpg" />
-
-The contents of public/index.html file is shown.
-
+site in a web browser on your local computer and the contents of public/index.html file is shown.
 
 ### Use the ServerAlias
 
 Note that in the vhost file, you set a ServerAlias. If you have the DNS
-set up correctly, you can also use that address:
-
-<img src="{% asset_path cloud-servers/set-up-apache-virtual-hosts-on-ubuntu/apache-vhostworking-wwwdomain1.jpg %}" alt="apache-vhostworking-wwwdomain1.jpg" />
+set up correctly, you can also use that address.
 
 We'll talk about forcing one address or the other in a later article
 about rewrite rules.

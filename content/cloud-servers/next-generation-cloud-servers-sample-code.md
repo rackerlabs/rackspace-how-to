@@ -1,12 +1,12 @@
 ---
 permalink: next-generation-cloud-servers-sample-code/
-node_id: 1718
-title: 'Next Generation Cloud Servers: Sample Code'
+audit_date:
+title: 'Cloud Servers: Sample Code'
 type: article
 created_date: '2012-07-24'
 created_by: Jerry Schwartz
-last_modified_date: '2015-09-03'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-09-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -291,9 +291,7 @@ You can also update or delete a user.
 **Legal Disclaimer**
 
 This information is intended for software developers who want to develop
-applications by using the next generation Rackspace Cloud Servers
-powered by OpenStack application programming interface (API). The
-information is for informational purposes only and is provided "as is."
+applications by using the Rackspace Cloud Servers powered by OpenStack application programming interface (API). The information is for informational purposes only and is provided "as is."
 
 Rackspace makes no representations or warranties of any kind, express or
 implied, as to the accuracy or completeness of the contents of this

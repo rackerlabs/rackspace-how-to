@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-cdn-and-cloud-sites/
-node_id: 4646
+audit_date:
 title: Rackspace CDN and Cloud Sites
 type: article
 created_date: '2015-04-27'
 created_by: Megan Meza
-last_modified_date: '2016-01-21'
+last_modified_date: '2016-06-02'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -18,48 +18,35 @@ To get your website set up with Rackspace CDN, you need to create a
 Rackspace CDN service and then change the DNS for your site. You can use
 the DNS management tool in the Cloud Sites Control Panel to create,
 modify, and delete DNS records. For more information about the DNS
-management tool in Cloud Sites, see [Getting Started with Cloud Sites -
-Managing DNS
-records](/how-to/getting-started-with-cloud-sites-managing-dns-records).
+management tool in Cloud Sites, see [Getting Started with Cloud Sites - Managing DNS records](/how-to/getting-started-with-cloud-sites-managing-dns-records).
 
 ### Create a CDN service
 
 To create a CDN service to use with your webiste, you need to know the
 IP address of your site (your origin) and and the **www** address of
 your site (your domain). For complete instructions for creating a CDN
-service, see [Create a CDN service with Rackspace
-CDN](/how-to/create-a-rackspace-cdn-service).
+service, see [Create a CDN service with Rackspace CDN](/how-to/create-a-rackspace-cdn-service).
 
-1\. Log in to the Rackspace [Cloud Control
-Panel](https://mycloud.rackspace.com).
+1. Log in to the Rackspace [Cloud Control Panel](https://mycloud.rackspace.com).
 
-2\. From the **Storage** or **Networking** menu, select  **CDN**.
+2. From the **Storage** or **Networking** menu, select  **CDN**.
 
-3\. Click **Create Service**.
+3. Click **Create Service**.
 
-<img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-12-17%20at%209.42.19%20AM.png %}" width="619" height="493" />
+   A pop-up dialog box displays with the following fields: **Service Name**, **Choose Traffic Type**, **Domain Name**, and **Origin**.
 
-4\. In the **Domain Name** field, enter the **www** address for your
-site. You can find this address in the Cloud Sites Control Panel, as
-shown in the following figure.
+   -  In the **Domain Name** field, enter the **www** address for your site.
+   - In the **Origin** field, enter the IP address for your site. You can find the IP address on the **General Settings** tab in the Cloud Sites Control Panel.
 
-<img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-09-16%20at%204.05.52%20PM.png %}" width="627" height="308" />
+4. Click **Create Service**.
 
-5\. In the **Origin** field, enter the IP address for your site. You can
-find the IP address on the **General Settings** tab in the Cloud Sites
-Control Panel, as shown in the following figure.
+   After the service is created, the service details page is displayed.
 
-<img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-09-16%20at%204.14.51%20PM.png %}" width="637" height="478" />
-
-6\. Click **Create Service**.
-
-After the service is created, the service details page is displayed.
-
-7\. In the Service Details section, hover over the **Domain Name** value
+5. In the Service Details section, hover over the **Domain Name** value
 and copy the **CDN Domain** URL that is displayed in the pop-up menu.
 You need this URL in the next section, to update your DNS records.
 
-<img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-09-16%20at%204.21.48%20PM.png %}" width="647" height="377" />
+   <img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-09-16%20at%204.21.48%20PM.png %}" width="647" height="377" />
 
 ### Update DNS
 
@@ -67,28 +54,21 @@ After you have created your Rackspace CDN service, use the Cloud Sites
 DNS management tool to update the DNS for your **www** domain by
 performing the following steps.
 
-1\. In the Cloud Sites Control Panel, click the **DNS** tab for your
+1. In the Cloud Sites Control Panel, click the **DNS** tab for your
 site.
 
-2\. Delete the existing A record by selecting it, clicking on **Delete
+2. Delete the existing A record by selecting it, clicking on **Delete
 Selected**, and confirming the deletion.
 
-<img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-09-17%20at%202.31.45%20PM.png %}" width="655" height="252" />
+3. In the DNS Management section, click **Add Record**.
 
-3\. In the DNS Management section, click **Add Record**.
-
-4\. Create a new CNAME record. For **Record Name**, enter **www** domain.
+4. Create a new CNAME record. For **Record Name**, enter **www** domain.
 For Content, enter the CDN domain URL that you copied at the end of
 "Create a CDN service."
 
-<img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-09-16%20at%204.37.58%20PM.png %}" width="666" height="391" />
+   <img src="{% asset_path rackspace-cdn/rackspace-cdn-and-cloud-sites/Screen%20Shot%202015-09-16%20at%204.37.58%20PM.png %}" width="666" height="391" />
 
-
-**Note:** After you have updated the CNAME and verified that the change
-has been propagated, you can then access any files stored within the
-origin via the specified domain name. In the example for this article,
-anything stored on **www.brandedexample.com** is now available via the
-CDN.
+   **Note:** After you have updated the CNAME and verified that the change has been propagated, you can then access any files stored within the origin via the specified domain name. In the example for this article, anything stored on **www.brandedexample.com** is now available via the CDN.
 
 ### Create caching rules
 
@@ -109,4 +89,3 @@ Community](https://community.rackspace.com/) forum.
 For more information about caching rules and other Rackspace CDN edge
 rules, see [Rackspace CDN edge
 rules](/how-to/rackspace-cdn-edge-rules).
-

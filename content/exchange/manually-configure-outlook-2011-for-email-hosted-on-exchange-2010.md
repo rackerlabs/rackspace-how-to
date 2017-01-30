@@ -1,6 +1,6 @@
 ---
 permalink: manually-configure-outlook-2011-for-email-hosted-on-exchange-2010/
-node_id: 1284
+audit_date:
 title: Manually configure Outlook 2011 for email hosted on Exchange 2010
 type: article
 created_date: '2012-02-08'

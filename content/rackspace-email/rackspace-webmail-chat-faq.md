@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-webmail-chat-faq/
-node_id: 4123
+audit_date:
 title: Rackspace Webmail Chat FAQ
 type: article
 created_date: '2014-07-02'
 created_by: Aaron Medrano
-last_modified_date: '2015-09-15'
+last_modified_date: '2016-08-11'
 last_modified_by: Kyle Laffoon
 product: Rackspace Email
 product_url: rackspace-email
@@ -63,27 +63,23 @@ support earlier versions of Internet Explorer.
 #### How long are chat logs retained?
 
 We don't store chat logs on our system, but users are able to see any
-messages sent or received during their current Webmail session. We plan
-to add message archiving in the future. Please [submit your
+messages sent or received during their current Webmail session. [submit your
 feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 #### Is it possible to chat with a group or team?
 
-Currently it is not possible to chat with a group or team. We plan to
-add group/team chat in the future. Please [submit your
+Currently it is not possible to chat with a group or team. Please [submit your
 feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 #### Can I chat with Skype for Business users?
 
-Currently it is not possible to chat with Skype for Business users. We
-are researching this capability for potential future enhancement. Please
+Currently it is not possible to chat with Skype for Business users. Please
 [submit your
 feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 #### Can I use Rackspace Webmail Chat with third-party IM clients?
 
-Currently it is not possible to use third-party IM clients. We plan to
-allow access via third-party clients in the future. Please [submit your
+Currently it is not possible to use third-party IM clients. Please [submit your
 feedback](http://feedback.rackspace.com/ "submit your feedback").
 
 #### How do I enable or disable HTML5 notifications after the initial permissions request?

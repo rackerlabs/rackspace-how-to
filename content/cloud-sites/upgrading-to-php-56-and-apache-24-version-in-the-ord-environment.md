@@ -1,6 +1,6 @@
 ---
 permalink: upgrading-to-php-56-and-apache-24-version-in-the-ord-environment/
-node_id: 4963
+audit_date:
 title: Upgrading to PHP 5.6 and Apache 2.4 version in the ORD environment
 type: article
 created_date: '2015-11-30'

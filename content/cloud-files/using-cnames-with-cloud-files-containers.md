@@ -1,6 +1,6 @@
 ---
 permalink: using-cnames-with-cloud-files-containers/
-node_id: 1080
+audit_date:
 title: Using CNAMEs with Cloud Files containers
 type: article
 created_date: '2011-04-27'

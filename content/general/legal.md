@@ -1,35 +1,31 @@
 ---
 permalink: legal/
-node_id: 2062
+audit_date:
 title: RACKSPACE HOW-TO LICENSE
 type: page
 created_date: '2012-08-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-06'
-last_modified_by: Renee Rendon
+last_modified_date: '2016-06-17'
+last_modified_by: Kelly Holcomb
 product: undefined
 product_url: undefined
 ---
 
-Except where otherwise noted, Rackspace How-To site and
-documentation is licensed under the Creative Commons
-Attribution-NonCommercial-NoDerivs 3.0 Unported License.
-
-<img src="http://creativecommons.org/licenses/by-nc-nd/3.0/" alt="" />
-
-That means:
+Except where otherwise noted, the Rackspace How-To site and
+documentation is licensed under the [Creative Commons
+Attribution-NonCommercial-NoDerivs 3.0 Unported license](http://creativecommons.org/licenses/by-nc-nd/3.0/).
 
 -   **Attribution:**  Rackspace How-To documents are intended
-    for use by Rackspace customers. Please credit Rackspace for the
-    documentation and don't pass around old versions that may not
+    for use by Rackspace customers. Credit Rackspace for the
+    documentation, and don't distrubute old versions that might not
     reflect the latest changes.
 -   **Non-Commercial Use:** Rackspace defines "commercial use" of the
-    Rackspace How To documentation as republication
+    Rackspace How-To documentation as republication
     for profit. Using the documentation within a commercial enterprise,
-    or using the guide to develop for-profit applications using
-    Rackspace's Cloud Servers API is allowed and encouraged.
--   **No Derivative Works:** Please do not alter, edit, or modify
-    this documentation. Rackspace tries to make sure that this document
+    or using the guide to develop for-profit applications by using the
+    Rackspace Cloud Servers API is allowed and encouraged.
+-   **No Derivative Works:** Do not alter, edit, or modify
+    this documentation. Rackspace tries to ensure that this documentation
     is kept up-to-date with the latest changes and best practices, so it
     is important that this documentation be maintained in a consistent
     state.
@@ -38,8 +34,6 @@ Your use of any API you download from the Rackspace website, as well as
 the code examples contained within the documentation, are governed by
 the license terms included with the code in the file named "README",
 "COPYING" or "LICENSE" or like caption.
-
-
 
 ### RACKSPACE HOW-TO DISCLAIMER
 
@@ -92,10 +86,6 @@ are property of their respective owners.  We do not intend our use or
 display of other companies' tradenames, trademarks, or service marks to
 imply a relationship with, or endorsement or sponsorship of us by, these
 other companies.
-
-
-
-
 
 ### The Use of the word PARTNER
 

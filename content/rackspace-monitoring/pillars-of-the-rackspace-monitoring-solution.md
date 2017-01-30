@@ -1,20 +1,19 @@
 ---
 permalink: pillars-of-the-rackspace-monitoring-solution/
+audit_date:
 title: Pillars of the Rackspace monitoring solution
 type: article
 created_date: '2016-03-03'
 created_by: Shane Duan
-last_modified_date: '2016-03-03'
-last_modified_by: Shane Duan
+last_modified_date: '2016-06-29'
+last_modified_by: Nate Archer
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
 
-
-
 Rackspace offers its monitoring solution through three pillars of products: Rackspace Monitoring, Rackspace Metrics and Rackspace Intelligence—the MMI products. Through the seamless integration, the MMI products enable customers to improve system performance and availability through through a single pane of glass and enterprise-grade platform.
 
-<img src="{% asset_path rackspace-monitoring/pillars-of-the-rackspace-monitoring-solution/rackspace-monitoring-mmi.png %}" alt="" />
+<img src="{% asset_path rackspace-monitoring/pillars-of-the-rackspace-monitoring-solution/monitoring-mmi.svg %}" alt="Monitoring and Intelligence improve data gathering, alert generation, and data storage." />
 
 - Rackspace Monitoring offers reliable data gathering and accurate alert generation. For details, see the following concepts section.
 - Rackspace Metrics provides on economical and reliable data storage at scale. For details, see the [Rackspace Metrics overview](https://support.rackspace.com/how-to/rackspace-metrics-overview/).
@@ -35,4 +34,3 @@ The following diagram illustrates the key concepts of the Rackspace Monitoring p
     - A notification plan is a group of notifications used by alarms.
 
 For other terms and concepts in Rackspace Monitoring, see [Monitoring key terms and concepts](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#monitoring-key-terms-and-concepts).
-

@@ -1,12 +1,12 @@
 ---
 permalink: optimize-sugarcrm-on-cloud-sites/
-node_id: 632
+audit_date:
 title: Optimize SugarCRM on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-22'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -18,12 +18,12 @@ Rackspace recommends consulting the vendors of the application. However,
 SugarCRM does have detailed documentation on their [Support Wiki](http://www.sugarcrm.com/kb/index.php?title=Sugar_Support_Wiki),
 some of which we have made available here.
 
-### Quick guide<
+### Quick guide
 
 Following is the quick guide to modifying your SugarCRM configuration
 for improved performance in the cloud.
 
-**.htaccess**
+**Modify the .htaccess file**
 
 Add the following PHP configuration directives to your **.htaccess**
 file:
@@ -52,7 +52,7 @@ following example when done:
     php_value timeout 601
     </IfModule>
 
-**<config_override.php**
+**Modify the config_override.php file**
 
 **Note:** The following configuration options should improve the
 performance of your SugarCRM installation, but might change the way some

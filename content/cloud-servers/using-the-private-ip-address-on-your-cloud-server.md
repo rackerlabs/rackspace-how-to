@@ -1,7 +1,7 @@
 ---
 permalink: using-the-private-ip-address-on-your-cloud-server/
-node_id: 149
-title: Private IP Address on Cloud Servers
+audit_date:
+title: Using Private IP Address on Cloud Servers
 type: article
 created_date: '2011-03-15'
 created_by: Rackspace Support

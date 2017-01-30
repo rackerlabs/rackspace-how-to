@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-regionlink-faq/
-node_id: 4452
+audit_date:
 title: RackConnect RegionLink FAQ
 type: article
 created_date: '2014-12-04'
@@ -11,11 +11,13 @@ product: RackConnect
 product_url: rackconnect
 ---
 
+Get quick answers to common questions about RackConnect RegionLink.
+
 #### What is RackConnect RegionLink?
 
 RackConnect RegionLink is a Limited Availability service that enables
 Dedicated Hosting customers to connect infrastructure that they have
-deployed across two or more Rackspace data centers. The service uses
+deployed across two or more Rackspace regions. The service uses
 multiprotocol label switching (MPLS) virtual private network (VPN)
 across Rackspace Backbone and enables connectivity between resources at
 Layer 2 or Layer 3.
@@ -24,7 +26,7 @@ Layer 2 or Layer 3.
 
 Some Dedicated Hosting customers cannot tolerate the risk of unexpected
 downtime. To mitigate the risk of an outage caused by a problem with a
-single Rackspace region, customers might want to distribute their
+single Rackspace region, customers can distribute their
 compute resources across multiple Rackspace regions. Interregional
 connectivity is a way to transfer data between Rackspace regions at
 lower latency and with better throughput than over the Internet.
@@ -48,9 +50,9 @@ customers to minimize latency and improve network performance.
 The RackConnect RegionLink service is available only for Dedicated
 Hosting customers at this time.
 
-#### In which data centers is this service available?
+#### In which regions is this service available?
 
-The service is currently available in IAD, DFW, and ORD data centers.
+The service is currently available in IAD, DFW, and ORD regions.
 
 #### Is a dedicated aggregation (customer edge) device needed to use this service?
 
@@ -70,7 +72,7 @@ the way through without hitting the Internet.
 #### What kind of speeds are supported?
 
 At launch, the service supports connectivity speeds of 100 Mbps, 500
-Mbps, and 1 Gbps. Faster speeds will be supported on a case-by-case
+Mbps, and 1 Gbps. Faster speeds are supported on a case-by-case
 basis.
 
 #### Is redundancy built in to the solution?

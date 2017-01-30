@@ -1,6 +1,6 @@
 ---
 permalink: restore-your-mssql-database-with-mylittleadmin/
-node_id: 666
+audit_date:
 title: Restore your MSSQL database with myLittleAdmin
 type: article
 created_date: '2011-03-16'

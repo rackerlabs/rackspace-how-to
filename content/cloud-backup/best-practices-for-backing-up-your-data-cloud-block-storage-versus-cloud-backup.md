@@ -1,12 +1,12 @@
 ---
 permalink: best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup/
-node_id: 3714
+audit_date:
 title: 'Best practices for backing up your data: Cloud Block Storage versus Cloud Backup'
 type: article
 created_date: '2013-10-01'
 created_by: Kyle Laffoon
-last_modified_date: '2016-04-04'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-07-18'
+last_modified_by: Catherine Richardson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -56,12 +56,11 @@ process to complete. Manual backup is also available on Cloud Backup.
 
 With Cloud Backup, enterprise-grade encryption (Advanced Encryption
 Standard, 256-bit key) is available. When encryption is enabled, your
-data will be encrypted with a passphrase that only you know. After you
+data will be encrypted with a password that only you know. After you
 create your AES-256 encryption key, your data is encrypted before it
 leaves the server and remains safely encrypted while stored.
 
-**Note**: After AES-encryption is set, it cannot be removed from your
-files.
+**Warning**: IMPORTANT! You **must** keep track of this password. After AES-encryption is set, this password cannot be removed from the files of the backup data for which it was used. Any data backed up with this password requires that specific password to restore those files. If you forget the password that you used to backup the data, that backup data is **LOST** and cannot be recovered.
 
 #### Limitations
 

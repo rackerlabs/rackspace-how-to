@@ -1,6 +1,6 @@
 ---
 permalink: vyatta-vrouter-allow-an-ip-address-to-access-the-vrouter-via-ssh/
-node_id: 4229
+audit_date:
 title: 'Vyatta vRouter: Allow an IP address to access the vRouter via SSH'
 type: article
 created_date: '2014-09-09'

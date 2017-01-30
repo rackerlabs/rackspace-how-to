@@ -1,11 +1,11 @@
 ---
 permalink: design-and-build-cloud-servers-for-stability/
-node_id: 3818
+audit_date:
 title: Design and Build Cloud Servers for Stability
 type: article
 created_date: '2013-12-17'
 created_by: Joseph Palumbo
-last_modified_date: '2016-01-07'
+last_modified_date: '2016-09-23'
 last_modified_by: Rose Contreras
 product: Cloud Servers
 product_url: cloud-servers
@@ -26,15 +26,14 @@ in the cloud.
 
 -   Learn more about [Cloud Monitoring](/how-to/available-checks-for-rackspace-monitoring)
     and read an [Introduction to Cloud Monitoring](https://community.rackspace.com/products/f/25/t/1892.aspx).
--   Learn more about [Cloud Backup](/how-to/rackspace-cloud-backup-overview)
+-   Learn more about [Cloud Backup](/how-to/cloud-backup)
     and read an [Introduction to Cloud Backup](https://community.rackspace.com/products/f/25/t/1887.aspx).
 
 In addition to the Rackspace Monitoring, it is also useful to look at
 some of our partners that specialize in monitoring and reporting in the
-cloud. [New Relic](https://cloudtools.rackspace.com/apps/347#!overview) offers a
+cloud. [New Relic](https://newrelic.com/) offers a
 performance management solution that enables developers to diagnose and
-fix application performance problems in real time. You'll also find a
-number of other monitoring solutions within the [Cloud Tools Marketplace](https://cloudtools.rackspace.com/home#!category/65).
+fix application performance problems in real time.
 
 ### RAID Configuration of Your Cloud Block Storage Volumes
 
@@ -54,12 +53,12 @@ will start sending your traffic to a different IP address if it detects
 a failure in your primary configuration. This second IP address can even
 be to a configuration in a different region for geographic redundancy.
 
-[Cedexis](https://cloudtools.rackspace.com/listing?q=cedexis#!/list/page/1/search=cedexis)
+[Cedexis](http://www.cedexis.com/)
 offers multiple solutions that can improve performance and availability
 by load balancing between multiple cloud regions.
 
 Through an application-aware global CDN platform,
-[Incapsula](https://cloudtools.rackspace.com/apps/201?restoreSearch=true#!overview)
+[Incapsula](https://www.incapsula.com/)
 provides any website and web application with best-of-breed security,
 DDoS protection, and load balancing and failover solutions. Incapsula
 is available as a stand-alone service or as an integrated solution.
@@ -76,9 +75,10 @@ Rackspace has several partners that can provide this service, and a
 Rackspace support tech can help you analyze the results and make the
 right recommendations.
 
--   [Soasta](https://cloudtools.rackspace.com/apps/381?restoreSearch=true#!overview)
--   [Apica](https://cloudtools.rackspace.com/apps/207?restoreSearch=true#!overview)
--   [Load Impact](https://cloudtools.rackspace.com/apps/897?restoreSearch=true#!overview)
+-   [Soasta](https://www.soasta.com/)
+-   [Apica](https://www.apicasystem.com)
+-   [Load Impact](https://loadimpact.com/)
+-   [LoadView](https://www.loadview-testing.com/)
 
 ### RackConnect
 

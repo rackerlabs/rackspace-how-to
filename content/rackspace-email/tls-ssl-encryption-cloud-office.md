@@ -1,6 +1,6 @@
 ---
 permalink: tls-ssl-encryption-cloud-office/
-node_id: 3694
+audit_date:
 title: TLS and SSL encryption in Cloud Office
 type: article
 created_date: '2013-09-19'

@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/
-node_id: 3784
+audit_date:
 title: Create a scaling group using the Auto Scale Control Panel
 type: article
 created_date: '2013-11-18'
 created_by: Rackspace Support
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2016-05-31'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Autoscale
 product_url: rackspace-auto-scale
 ---
@@ -111,7 +111,6 @@ Following are a few things you should know about the pages in the Auto Scale con
     Regions (Global)** to see all scaling groups. The default region
     displayed is **United States**.
 -   To the left of each existing group is a gear icon
-    <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/image013.png %}" width="23" height="23" />
     that you can click to open a menu of editing options. Wherever you
     see this icon, sometimes used with an **Actions** menu on other
     pages, you can edit, delete, or make other changes to the
@@ -119,20 +118,13 @@ Following are a few things you should know about the pages in the Auto Scale con
 -   Click the name link for any existing scaling group, load balancer,
     or policy to open a Status page with options to edit
     those configurations.
--   Some text has a dashed underline, such as
-    <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/image015.png %}" width="122" height="22" />.
-    You can hover your mouse pointer over this text and see a tooltip or
-    information about the setting. Also, you can hover your mouse
-    pointer over a Help icon
-    <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/image017.png %}" width="15" height="14" />
-    to get information.
--   You can use the Edit icon
-    <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/image019.png %}" width="24" height="22" />
+-   Some text has a dashed underline. This indicates that you can hover your mouse pointer over this text and see a tooltip or information about the setting. Also, you can hover your mouse
+    pointer over a question mark help icon to get information.
+-   You can use the edit pencil
     to open a configuration area and make changes to an
     existing configuration.
 -   At the bottom of the **Create Group** page, and on the **Select
-    Server Flavor** pane, is a Cost icon
-    <img src="{% asset_path rackspace-auto-scale/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group/image021.png %}" width="19" height="16" />.
+    Server Flavor** pane, is a dollar sign cost icon.
     Hover your mouse pointer over it to get pricing information.
 -   Links generally take you to a status or configuration page for the
     linked item. However, the configuration page that opens might be
@@ -141,14 +133,9 @@ Following are a few things you should know about the pages in the Auto Scale con
     balancer link takes you to the status page for that load balancer
     under the top-level **Load Balancer** page.
 
-
 ### User Guide sections
 
--   [Rackspace Auto Scale Control Panel User Guide -
-    Introduction](/how-to/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
--   [Rackspace Auto Scale Control Panel User Guide -
-    Concepts](/how-to/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
--   [Rackspace Auto Scale Control Panel User Guide - Create a scaling
-    group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
--   [Rackspace Auto Scale Control Panel User Guide - Create a scaling
-    policy](http://rackspace.com/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Creating Scaling Policies")
+-   [Rackspace Auto Scale Control Panel User Guide - Introduction](/how-to/rackspace-auto-scale-control-panel-user-guide-introduction "Introduction")
+-   [Rackspace Auto Scale Control Panel User Guide - Concepts](/how-to/rackspace-auto-scale-control-panel-user-guide-concepts "Concepts")
+-   [Rackspace Auto Scale Control Panel User Guide - Create a scaling group](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-group "Creating Scaling Groups")
+-   [Rackspace Auto Scale Control Panel User Guide - Create a scaling policy](/how-to/rackspace-auto-scale-control-panel-user-guide-create-a-scaling-policy "Creating Scaling Policies")

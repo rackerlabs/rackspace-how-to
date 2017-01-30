@@ -1,19 +1,17 @@
 ---
 permalink: reboot-your-server/
-node_id: 1474
+audit_date:
 title: Reboot Your Server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
-last_modified_date: '2016-01-04'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2017-01-04'
+last_modified_by: Laura Santamaria
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Previous section
-
-[Create a Cloud Server](/how-to/create-a-cloud-server)
+**Previous section:** [Create a Cloud Server](/how-to/create-a-cloud-server)
 
 You can reboot a server in one of two ways. A *soft reboot* uses the
 operating system's reboot process so that applications are shut down
@@ -32,9 +30,6 @@ To perform a soft reboot of a server, you must be logged in to the
 server using an account with superuser or administrator permissions. For
 information about logging in to a cloud server, see [Connect to a cloud server](/how-to/connect-to-a-cloud-server).
 
-**Note**: OS reboots, such as the `sudo reboot` shown below,  do not
-trigger the FG2NG migration.
-
 For the command you should use to soft reboot your server, see the
 appropriate section for your server operating system:
 
@@ -44,12 +39,17 @@ appropriate section for your server operating system:
 
 #### Windows
 
-Issue a restart request by clicking **Start > Shut down**.
+Select the method that matches your installation:
+
+- Open **Settings** in the Charms Bar. Click **Power > Restart**.
+- Click **Start**. Click the arrow next to **Shut down**, and select **Restart** from the menu.
 
 Alternatively, you can initiate a soft reboot from the command line by
 entering the following command:
 
     shutdown /r
+
+If a dialog box appears, select **Restart** from the dropdown menu. Click **OK**.
 
 ### Perform a hard reboot
 
@@ -61,15 +61,9 @@ server.
 and can result in data loss.
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-2.  On the Servers page, click the gear icon next to the server that you
-    want to reboot.
-3.  Select** Reboot**.
-
-    <img src="{% asset_path cloud-servers/reboot-your-server/rebootmenu_0.png %}" alt="" />
-
+2.  In the top navigation bar, click **Servers > Cloud Servers**, and then click the gear icon next to the server that you want to reboot.
+3.  Select **Reboot**.
 4.  In the pop-up dialog box, click **Reboot Server**.
-
-    <img src="{% asset_path cloud-servers/reboot-your-server/Hard%20Reboot_0.png %}" alt="" />
 
 The server status on the Servers page updates while the server is
 rebooting. When the reboot is complete, check your server to confirm
@@ -110,6 +104,4 @@ entering the following command:
 
     shutdown /s
 
-### Next section
-
-[Recue mode](/how-to/rescue-mode)
+**Next section:** [Rescue mode](/how-to/rescue-mode)

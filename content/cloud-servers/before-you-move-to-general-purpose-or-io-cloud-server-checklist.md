@@ -1,12 +1,12 @@
 ---
 permalink: before-you-move-to-general-purpose-or-io-cloud-server-checklist/
-node_id: 3754
+audit_date:
 title: Before you move to General Purpose or I/O Cloud Server (checklist)
 type: article
 created_date: '2013-11-04'
 created_by: David Hendler
-last_modified_date: '2015-11-12'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2016-09-09'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -27,11 +27,7 @@ downtime or requiring DNS changes.
 
 ### Premigration actions
 
--   If you currently have a First Generation Cloud Server, you must back
-    up your data with Cloud Backup before you manually migrate
-    your server. If you want to build a server based on Linux, you can
-    move your data with rsync after your new server is built.
--   If you have a Next Generation cloud server, you might be able to
+-   If you have a Cloud Server, you might be able to
     create an image to migrate to General Purpose Cloud Servers.
     - For a 512 MB server, create a 1 GB or larger General Purpose Cloud Server via image.
     - For a 1 GB server, create a 2 GB or larger General Purpose Cloud Server via image.

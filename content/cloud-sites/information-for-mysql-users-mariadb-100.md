@@ -1,12 +1,12 @@
 ---
 permalink: information-for-mysql-users-mariadb-100/
-node_id: 4729
+audit_date:
 title: Information for MySQL Users (MariaDB 10.0)
 type: article
 created_date: '2015-06-25'
 created_by: Alonzo Garza
-last_modified_date: '2016-01-04'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-20'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -91,14 +91,12 @@ NEW phpMyAdmin URL
 
 #### How do I reference my database IP information?
 
--   Log into your Cloud Sites control panel
-    at [manage.rackspacecloud.com](http://manage.rackspacecloud.com)
--   Click on **Hosting > Cloud Sites** and select the domain
-    under which the database was created
--   From the domain details page click on the **Features** tab and select
-    the active database you wish to reference:
-
-  <img src="{% asset_path cloud-sites/information-for-mysql-users-mariadb-100/MySQL.png %}" alt="" />
+1. Log in to your Cloud Sites control panel
+   at [manage.rackspacecloud.com](http://manage.rackspacecloud.com)
+2. Click on **Hosting > Cloud Sites** and select the domain
+   under which the database was created
+3. From the domain details page click on the **Features** tab and select
+   the active database you wish to reference.
 
 #### Will my database content be affected after the maintenance?
 

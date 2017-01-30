@@ -1,7 +1,7 @@
 ---
 permalink: creating-custom-graphs-of-activity-in-rackspace-intelligence/
-node_id: 4743
-title: Creating custom graphs of activity in Rackspace Intelligence
+audit_date:
+title: Create custom graphs of activity in Rackspace Intelligence
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste

@@ -1,12 +1,12 @@
 ---
 permalink: set-up-wordpress-multisite-with-cloud-sites/
-node_id: 4049
+audit_date:
 title: Set up WordPress Multisite with Cloud Sites
 type: article
 created_date: '2014-04-29'
 created_by: Thomas Hester
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -59,8 +59,6 @@ following articles:
 **Note:** For this specific installation, we do not recommend the use of
 the one-click installer.
 
-<img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_DB_configuration.PNG %}" alt="" />
-
 ### Configure WordPress
 
 #### Adjust the WordPress address URL
@@ -69,8 +67,6 @@ In the WordPress Administration console, go to **Settings** and change
 the **WordPress Address** (**URL**) value to use
 **http://*yourDomain***. Remove the **www** from the URL if it's not
 already set this way. For example: **http://example.com**.
-
-<img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_url_configuration.PNG %}" alt="" />
 
 #### Allow WordPress Multisite in wp-config.php
 
@@ -86,8 +82,6 @@ already set this way. For example: **http://example.com**.
 1.  In WordPress, go to the admin area, click the **Tools** menu, and
     then click **Network Setup**.
 
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_networksetup_menu.PNG %}" alt="" />
-
     **Note:** If you are unable to see the Network Setup option, ensure
     that the **wp-config.php** file has been set to allow WordPress
     Multisite, as described in the previous step.
@@ -95,22 +89,19 @@ already set this way. For example: **http://example.com**.
 2.  Under **Addresses of Sites in your Network**, select
     the **Subdomains** value if you plan to use domain mapping for
     multiple URLs. This will make managing the urls easier.
-3.  a.  Under **Addresses of Sites in your Network**, select
+     - Under **Addresses of Sites in your Network**, select
         the **Subdomains** value if you plan to use domain mapping for
         multiple URLs. This will make managing the urls easier.
-    b.  Under **Network Details**, enter values for the **Network
-        Title** and **Network Admin Email** address.
-    c.  Click **Install**.
-
-      <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_networksetup_0.PNG %}" alt="" />
+     - Under **Network Details**, enter values for the **Network
+       Title** and **Network Admin Email** address.
+3.  Click **Install**.
 
 #### Establish the network
 
 1.  In the **pathToYourSite/web/content** folder, open
     the **wp-config.php** file.
-
-2.  Locate the line /\* That's all, stop editing! Happy blogging. \*/
-3.  Above the line, add the following lines`:`
+2.  Locate the line `\* That's all, stop editing! Happy blogging. \*/`
+3.  Above the line, add the following lines:
 
         define ('MULTISITE', true);
         define ('SUBDOMAIN_INSTALL', true);
@@ -170,15 +161,11 @@ the WordPress MU Domain Mapping plug-in, as follows:
 
 1.  Go to **My Sites > Network Admin > Plugins**.
 
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/wpmu-menuhighlighted.png %}" alt="" />
-
 2.  Click the **Add New** button.
 
 3.  Search for **WordPress MU Domain Mapping**.
 
 4.  Click **Install Now**.
-
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_MultidomainPluginInstall.PNG %}" alt="" />
 
 5.  Activate the plug-in by clicking **Network Activate**.
 
@@ -195,6 +182,7 @@ the WordPress MU Domain Mapping plug-in, as follows:
 
 3.  In the WordPress Administration console, click **Settings &gt;
     Domain Mapping**.
+
 4.  Set the **Server IP Address** value to the current site's IP
     address.
 
@@ -202,10 +190,9 @@ the WordPress MU Domain Mapping plug-in, as follows:
     Control Panel, on the **General Settings** tab or the **DNS** tab
     (for SSL-enabled sites).
 
-5.  Under **Domain Options**, select check boxes 2 and 3 only (ensure
-    that the other check boxes are clear), and then click **Save**.
-
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/dmapping-settings_0.png %}" alt="" />
+5.  Under **Domain Options**, select only the check boxes for 'Permanent
+    redirect (better for your blogger's pagerank)' and 'User domain mapping
+    page'. Ensure that the other check boxes are clear and then click **Save**.
 
 ### Add sites to the WordPress network
 
@@ -218,42 +205,26 @@ similar to
 
 1.  In the WordPress Administration console, click **My Sites > Network Admin > Sites**.
 2.  Click **Add New**.
-
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_SiteConfiguration.PNG %}" alt="" />
-
 3.  Enter the information for the site that you want to add to
     the network.
-
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_addnewsite.PNG %}" alt="" />
-
 4.  Click **Add Site**.
-
 5.  Go back to the **Sites** list by clicking on **Sites > All Sites** in the left navigation pane.
-
 6.  From the list, click the site you just added.
-
 7.  Note the number that follows after **?id=**. This is the site's
     **ID** number, and you will need it in the next steps.
-
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_siteidURL.PNG %}" alt="" />
-
 8.  In the navigation pane, click on **Settings > Domains**.
-
 9.  Under **New Domain**, in the **Site ID** field enter the number that
     you obtained from the URL.
-
 10. Clear the **Primary** check box.
-
-    <img src="{% asset_path cloud-sites/set-up-wordpress-multisite-with-cloud-sites/WP_NewDomainID.PNG %}" alt="" />
-
 11. Click **Save**.
 
     **Note**: It is necessary to use the domain without the **www**.
     If you are using a subdomain, use only the subdomain (for example,
     **subdomain.domain.com**).
 
-Repeat the steps from this section for any other sites that you want to
-add to the WordPress Multisite network. Remember to add your alias.
+Repeat the steps from this [section](#Add sites to the WordPress network) for
+any other sites that you want to add to the WordPress Multisite network.
+Remember to add your alias.
 
 You can make adjustments, such as using www instead of non-www. This
 change, however, will require a different URL rewrite in the

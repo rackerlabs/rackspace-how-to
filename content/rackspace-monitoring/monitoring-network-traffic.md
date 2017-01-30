@@ -1,7 +1,7 @@
 ---
 permalink: monitoring-network-traffic/
-node_id: 1374
-title: Monitoring Network Traffic
+audit_date:
+title: Monitor Network Traffic
 type: article
 created_date: '2012-04-04'
 created_by: Rackspace Support
@@ -30,27 +30,26 @@ Basic administration principles state that you, the administrator,
 should have a strong grasp on what your server is doing at all times.
 One major metric that is sometimes missed is overall network activity.
 The metrics gained by proper network monitoring can reveal your traffic
-trends which will lead to a better understanding in the trends for your
+trends, which will lead to a better understanding of the trends for your
 application, the load times on your system, and any activity that may
 not have been accounted for. Monitoring is essential to a successful
-infrastructure, and without it you will be forced to guess and or
-interpret logs which will lead to a misunderstanding of real traffic
-going to and leaving your server.
+infrastructure, and, without it, you will be forced to guess or
+interpret logs, which may lead to a misunderstanding of the real traffic
+going to, and leaving, your server.
 
 **Note:** As an alternative to the setup described in this article,
 Rackspace offers its [Cloud
 Monitoring](http://www.rackspace.com/cloud/monitoring/) service at no
 cost for use with Cloud Servers. For more information about this
-flexible service, see [Getting Started with Cloud
-Monitoring](/how-to/cloud-monitoring).
+flexible service, see [Getting Started with Cloud Monitoring](/how-to/cloud-monitoring).
 
 
 ### Monitoring in Linux
 
-In the world of Linux there are many open source solutions that can
+In the world of Linux, there are many open source solutions that can
 accomplish the lofty goals of monitoring and logging "**Actual**"
-traffic. Most of these free and Open Source tools can work with minimal
-setup and achieve very high accuracy. Out of all the tools available I
+traffic. Most of these free, Open Source tools can work with minimal
+setup and achieve very high accuracy. Out of all the tools available, I
 am partial to VNstat and IPtraf. Both of these can be found in most
 repositories, have minimal dependencies, and work on ALL Linux systems.
 
@@ -62,14 +61,13 @@ repositories, have minimal dependencies, and work on ALL Linux systems.
 
 VNstat is a console-based network traffic monitor for Linux and BSD
 that keeps a log of network traffic for the selected interface(s). It
-uses the network interface statistics provided by the kernel as
+uses the network interface statistics provided by the kernel as an
 information source. This means that VNstat won't actually be sniffing
 any traffic and also ensures light use of system resources. With
-VNstat you are able to keep a log of all incoming and outgoing traffic
-which will be logged by Minute,Hour,Day,Month,Year.
+VNstat, you are able to keep a log of all incoming and outgoing traffic,
+which will be logged by Minute, Hour, Day, Month, and Year.
 
-**IPtraf** : *[Learn More about
-IPtraf](http://iptraf.seul.org/about.html)*
+**IPtraf** : *[Learn More about IPtraf](http://iptraf.seul.org/about.html)*
 
 IPTraf is a console-based network statistics utility for Linux. It
 gathers a variety of figures such as TCP connection packet and byte
@@ -81,10 +79,9 @@ breakdowns, and LAN station packet and byte counts.
 
 ### Ubuntu / Debian
 
-*Here is how to install VNstat as well as IPtraf on a Ubuntu / Debian
-Slice.*
+*Here is how to install VNstat as well as IPtraf on a Ubuntu or Debian Slice.*
 
-Both of these tools are readily available on a Debian / Ubuntu Server.
+Both of these tools are readily available on a Debian or Ubuntu Server.
 
 A quick search will yield these packages.
 
@@ -96,12 +93,11 @@ A quick search will yield these packages.
     apt-cache search vnstat
     ## vnstat - console-based network traffic monitor
 
-To do the installation of the tools on your server simply execute this
-command.
+To do the installation of the tools on your server, simply execute this command.
 
     apt-get install iptraf vnstat
 
-Lastly we setup VNstat to begin monitoring the interfaces.
+Lastly, we setup VNstat to begin monitoring the interfaces.
 
     # Public Interface
     vnstat -u -i eth0
@@ -118,14 +114,13 @@ Slice.*
 In the base repositories for CentOS and RHEL, IPtraf is easily
 installed. However, VNstat is not not found in these repositories and
 will either need to be installed via a third-party repository, or
-compiled from source. In this instance I choose to install from source.
-I made this choice because VNstat is a small package and has no real
-dependencies. At the time of this writing, VNstat 1.12 is the latest
-version available.
+compiled from source. In this instance, I choose to install from source,
+because VNstat is a small package and has no real dependencies. At the time 
+of this writing, VNstat 1.12 is the latest version available.
 
-VNstat is a simple package to install and here are the commands
+VNstat is a simple package to install by using the following commands.
 
-**First** - Download the source and unpack the source
+**First** - Download and unpack the source.
 
     cd ~/
     wget http://humdi.net/vnstat/vnstat-1.12.tar.gz
@@ -133,13 +128,13 @@ VNstat is a simple package to install and here are the commands
     cd ~/vnstat-1.12
 
 **Second** - Now make sure that you have the two needed packages
-installed, which are gcc and make, and then install vnstat
+installed, which are gcc and make, and then install vnstat.
 
     yum install gcc make
     make
     make install
 
-**Third** - Now that the package is installed we need to make it start,
+**Third** - Now that the package is installed, we need to make it start,
 and automatically restart on boot.
 
     cp ~/vnstat-1.12/examples/init.d/redhat/vnstat /etc/init.d/vnstat
@@ -150,7 +145,7 @@ and automatically restart on boot.
     chkconfig vnstat on
     cd ~/
 
-**Fourth** - Lastly we setup VNstat to begin monitoring the interfaces.
+**Fourth** - Lastly, we setup VNstat to begin monitoring the interfaces.
 
     # Public Interface
     vnstat -u -i eth0
@@ -158,15 +153,14 @@ and automatically restart on boot.
     # Private Interface
     vnstat -u -i eth1
 
-Here is the package that we will need to install on your server for
-IPtraf
+Here is the package that we will need to install on your server for IPtraf.
 
-You can search for the package like this :
+You can search for the package like this:
 
     yum search iptraf
     ## iptraf.x86_64 : A console-based network monitoring utility.
 
-To install here is the command :
+To install, here is the command :
 
     yum install iptraf.x86_64
 
@@ -185,8 +179,7 @@ A quick search will yield these packages.
     yum search vnstat
     ## vnstat.x86_64 : Console-based network traffic monitor
 
-The installation of the tools on your server is done by simply executing
-this command.
+To install the tools on your server, simply execute the following command.
 
     yum install iptraf vnstat
 
@@ -198,7 +191,7 @@ We need to setup VNstat to begin monitoring the interfaces.
     # Private Interface
     vnstat -u -i eth1
 
-Lastly we create a symlink for legacy purposes
+Lastly, we create a symlink for legacy purposes.
 
     ln -s /usr/sbin/iptraf-ng /usr/sbin/iptraf
 
@@ -208,12 +201,12 @@ Lastly we create a symlink for legacy purposes
 *Here is how to install VNstat as well as IPtraf on a openSUSE Slice.*
 
 Like CentOS and RHEL, IPtraf is easily installed in openSUSE. However,
-VNstat is not not found in the repositories. You will either need to be
+VNstat is not not found in the repositories. It either needs to be
 installed via a third-party repository, or compiled from source. In this
-instance I choose to install from source. I made this choice because
-VNstat is a small package and has no real dependencies.
+instance, I choose to install from source, because VNstat is a small package, 
+easy to install, and has no real dependencies.
 
-VNstat is a simple package to install here are the commands:
+Here are the commands to install VNstat:
 
 **First** - Download the source and unpack the source:
 
@@ -222,7 +215,7 @@ VNstat is a simple package to install here are the commands:
     tar xzf vnstat-1.12.tar.gz
     cd ~/vnstat-1.12
 
-**Second** - Now make sure that you have the 2 needed packages
+**Second** - Now make sure that you have the two needed packages
 installed, which are 'gcc' and 'make', and then install vnstat.
 
     zypper ref
@@ -230,8 +223,8 @@ installed, which are 'gcc' and 'make', and then install vnstat.
     make
     make install
 
-**Third** - Now that the package is installed we need to make it start
-and automatically restart on boot.
+**Third** - Now that the package is installed, we need to make it start,
+and automatically restart, on boot.
 
     cp ~/vnstat-1.12/examples/init.d/redhat/vnstat /etc/init.d/vnstat
     chmod +x /etc/init.d/vnstat
@@ -241,7 +234,7 @@ and automatically restart on boot.
     chkconfig vnstat on
     cd ~/
 
-**Fourth** - Lastly we setup VNstat to begin monitoring the interfaces.
+**Fourth** - Lastly, we setup VNstat to begin monitoring the interfaces.
 
     # Public Interface
     vnstat -u -i eth0
@@ -249,15 +242,14 @@ and automatically restart on boot.
     # Private Interface
     vnstat -u -i eth1
 
-Here is the package that we will need to install on your server for
-IPtraf.
+Here is the package that we need to install on your server for IPtraf.
 
 A quick Search for the package reveals :
 
     zypper se iptraf
     ## iptraf    | TCP/IP Network Monitor | srcpackage
 
-To install iptraf type the following command :
+To install iptraf, type the following command :
 
     zypper in iptraf
 
@@ -268,7 +260,7 @@ To install iptraf type the following command :
 
 To learn more about VNstat, check out the [Manual Page for VNstat](http://linux.die.net/man/1/vnstat).
 
-Once you have installed and set up VNstat on your system you will have to
+Once you have installed and set up VNstat on your system, you need to
 allow for at least ONE hour. After that time frame, your database will
 contain data and begin showing you metrics.
 
@@ -342,10 +334,9 @@ Snapshot : **vnstat**
 
 ### Using IPtraf :
 
-IPtraf is an application that can be used just as soon as it is
-installed. IPtraf watches traffic in real time.
+You can use IPtraf as soon as it is installed. IPtraf watches traffic in real time.
 
-To learn more about IPtreaf, check out the [Manual Page for IPtraf](http://linux.die.net/man/8/iptraf).
+To learn more about IPtraf, check out the [Manual Page for IPtraf](http://linux.die.net/man/8/iptraf).
 
 **IPtraf Commands**
 
@@ -366,9 +357,9 @@ To learn more about IPtreaf, check out the [Manual Page for IPtraf](http://linux
 
 ### Conclusion
 
-Now that you have installed these packages you should have full network
-monitoring in place. VNstat will monitor the servers internal and
-external network interfaces for all sent and received traffic. While
-IPtraf will allow you the ability to use a utility from the shell to
+Now that you have installed these packages, you should have full network
+monitoring in place. VNstat monitors the servers' internal and
+external network interfaces for all sent and received traffic. 
+IPtraf allows you to use a utility from the shell to
 gauge network traffic in real time. These tools are invaluable and
 should provide a lot more insight into your overall operations.

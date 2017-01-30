@@ -1,12 +1,12 @@
 ---
 permalink: what-is-a-cdn/
-node_id: 120
-title: What is a CDN?
+audit_date:
+title: CDN Concepts
 type: article
 created_date: '2011-03-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-08'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-06-02'
+last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
@@ -55,21 +55,15 @@ user with data from the closest or most appropriate server. CDNs reduce
 the number of hops needed to handle a request. The difference is shown
 in the following figures.
 
-#### **Before the Use of a CDN**
+#### Before the Use of a CDN
 
 -   End user requests www.rackspace.com (origin server) in browser.
 -   End user's browser receives content through multiple servers.
 
-<img src="{% asset_path rackspace-cdn/what-is-a-cdn/CDN-BEFORE_0.png %}" width="715" height="386" />
-
-
-
-#### **After the Use of a CDN**
+#### After the Use of a CDN
 
 -   End user requests www.rackspace.com (origin server) in browser.
 -   End user's browser receives content from the optimum servers.
-
-<img src="{% asset_path rackspace-cdn/what-is-a-cdn/CDN-AFTER_0.png %}" width="723" height="363" />
 
 CDNs focus on improving performance of web page delivery. CDNs like the
 Akamai CDN support progressive downloads, which optimizes delivery of
@@ -104,10 +98,6 @@ optimization goals.
     the load of a failed web server and providing server health checks.
 
 **Global Server Load Balancing**
-
-
-
-[<img src="{% asset_path rackspace-cdn/what-is-a-cdn/CDN-thirdIMAGE.png %}" width="783" height="419" />](#_msocom_4)
 
 -   Request routing directs client requests to the content source best
     able to serve the request. This may involve directing a client

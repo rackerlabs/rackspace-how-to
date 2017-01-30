@@ -1,6 +1,6 @@
 ---
 permalink: skype-for-business-faq/
-node_id: 4997
+audit_date:
 title: Microsoft Skype for Business FAQ
 type: article
 created_date: '2015-12-03'

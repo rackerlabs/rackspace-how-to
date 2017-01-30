@@ -1,11 +1,11 @@
 ---
 permalink: working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/
-node_id: 4842
-title: 'Working with alarms, checks, entities, notifications, and notification plans in Rackspace Intelligence for dedicated accounts'
+audit_date:
+title: 'Work with alarms, checks, entities, notifications, and notification plans in Rackspace Intelligence for dedicated accounts'
 type: article
 created_date: '2015-10-14'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-27'
+last_modified_date: '2016-06-06'
 last_modified_by: Rose Coste
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
@@ -25,13 +25,9 @@ perform the following steps:
 
 1.  Click **Monitor** and then click the **Entities** tab.
 
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/Entity%20List1_0.png %}" width="600" />
-
 2.  To view details about a specific entity, click the link for the
     entity.
     The top of the details page shows information about the  entity.
-
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/Entity%20Details1.png %}" width="359" height="346" />
 
 ### Checks
 
@@ -58,8 +54,6 @@ steps:
     and click the link for the check that you want to view.
     A page that lists the check details is displayed.
 
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/Check%20Details1.png %}" width="600" />
-
 ### Alarms
 
 Rackspace Intelligence supports alarms that analyze the data that is
@@ -78,8 +72,6 @@ To view an alarm, perform the following steps:
     for which you want to view details.
     The alarm detail are displayed.
 
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/Alarm%20Details1.png %}" width="582" height="570" />
-
 ### Open alerts
 
 Open alerts report statuses that you have asked Rackspace Intelligence
@@ -87,8 +79,6 @@ to monitor.
 
 You can view a list of all open alerts by clicking **Monitor** at the
 top of the Rackspace Intelligence interface and then clicking **Open Alerts**.
-
-<img src="{% asset_path rackspace-intelligence/working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/Open%20Alerts.png %}" width="610" height="308" />
 
 ### Notifications
 
@@ -104,8 +94,6 @@ click the **Notifications** tab. This action displays the
 **Notifications** page, which lists all the notifications that have been
 configured for you.
 
-<img src="{% asset_path rackspace-intelligence/working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/Notifications1.png %}" width="600" />
-
 ### Notification plans
 
 You can have notification plans defined that work with your monitoring
@@ -117,5 +105,3 @@ To view the notification plans that have been configured for you, select
 **Notify** at the top of the Rackspace Intelligence interface, and then
 click the **Notification Plans** tab. This action displays the
 **Notification Plans** page.
-
-<img src="{% asset_path rackspace-intelligence/working-with-alarms-checks-entities-notifications-and-notification-plans-in-rackspace/Notification%20Plans1.png %}" width="600" />

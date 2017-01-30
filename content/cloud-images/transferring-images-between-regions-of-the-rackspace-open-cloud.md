@@ -1,57 +1,44 @@
 ---
 permalink: transferring-images-between-regions-of-the-rackspace-open-cloud/
-node_id: 3915
-title: Transferring images between regions of the Rackspace open cloud
+audit_date:
+title: Transfer images between regions of the Rackspace open cloud
 type: article
 created_date: '2014-02-27'
 created_by: Cloud Images
-last_modified_date: '2016-01-12'
+last_modified_date: '2016-04-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Images
 product_url: cloud-images
 ---
 
-A common request we receive is, "Dear Rackspace, I've got a server in
-your DFW region and I want one exactly like it in SYD.  How can I make
-that happen?"
-
-You can make it happen by using Cloud Images.  This article explains how
-to do it.
-
-### Setting expectations
+This article explains how to use Cloud Images to transfer images between regions of the Rackspace cloud.
 
 Before we get into the details, consider the following information:
 
--   You can't really copy a server.  Instead, you create an image of the
+-   You can't really copy a server. Instead, you create an image of the
     server that you want to copy (by using either the Cloud Servers API
     or the Cloud Control Panel), export the image out of the source
     region (DFW in the example in this article), import it into the
-    target region (SYD in this article), and then boot a server from the
-    imported image.
+    target region (SYD in this article), and then boot a new server in the target region
+    from the imported image.
     -   The *source region* is the region where the server you want to
         copy is located.
     -   The *target region* is the region where you want to build a new
         server just like the one you have in the source region.
 -   Because not all images are exportable, not all images can
-    be transferred. See [How can I tell if an image can
-    exported?](/how-to/cloud-images-faq)
-    in the Cloud Images FAQ for details.
--   Cloud Images is currently accessible only through the [Cloud Images
-    v2
-    API](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/);
-    it's not available in the Cloud Control Panel yet.
--   Cloud Images uses only JSON; it does not use XML.
+    be transferred. See [How can I tell if an image can exported?](/how-to/cloud-images-faq) in the Cloud Images FAQ for details.
+-   Cloud Images uses only JSON. It does not use XML.
 
 ### Working in the source region
 
 1.  Create an image of the source server.
 
     This example uses a server named Slave Database 3 in the
-    source region.  You can use either the Cloud Servers API or the
+    source region. You can use either the Cloud Servers API or the
     Cloud Control Panel to create the image.
 
 2.  Optionally, use the metadata function of the API to assign an
-    identifying property to the image.  If you want to transfer several
+    identifying property to the image. If you want to transfer several
     images, we recommend that you perform this step to help organize
     your images and track them across regions.
 
@@ -75,19 +62,22 @@ Before we get into the details, consider the following information:
 3.  You need a container in your Cloud Files account to put the exported
     image in. If you don't already have one, you can create a container
     by using the Cloud Control Panel, as follows:
-    A. In the top navigation bar, click **Storage &gt; Files**.
-    B. Click **Create Container**.
-    C. Specify a name, the source region, and the container type.
-    D. Click **Create Container**.
+
+    1. In the top navigation bar, click **Storage > Files**.
+    2. Click **Create Container**.
+    3. Specify a name, the source region, and the container type.
+    4. Click **Create Container**.
+
 4.  Create a Cloud Images `export` task in the source region. When this
     task is executed, it copies the image in Cloud Images and puts the
     copy into the container named `exported-images` in your Cloud Files
     account (also in the source region).
-5.  curl -X POST <br>
-          -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>
-          -H "Content-Type: application/json" <br>
-          -d "{\"type\": \"export\", \"input\": {\"receiving_swift_container\": \"exported-images\", \"image_uuid\": \"$MY_IMG\"} }" <br>
-          "$OS_IMAGE_URL/v2/tasks"
+
+        curl -X POST <br>
+              -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>
+              -H "Content-Type: application/json" <br>
+              -d "{\"type\": \"export\", \"input\": {\"receiving_swift_container\": \"exported-images\", \"image_uuid\": \"$MY_IMG\"} }" <br>
+              "$OS_IMAGE_URL/v2/tasks"
 
     Cloud Images returns a 201 (Created) response. The body of the
     response contains an `id` element whose value is the UUID of your
@@ -112,7 +102,7 @@ Before we get into the details, consider the following information:
     Note that the ID of the task in the above example is
     `7bdc8ede-9098-4d79-9477-697f586cb333`.
 
-6.  Poll your task to monitor its status, by using the task ID. If your
+5.  Poll your task to monitor its status, by using the task ID. If your
     image is large, it might take some time to be processed and
     transferred to your Cloud Files account. Do not poll more frequently
     than every 30 seconds. Following is an example Cloud Images API call
@@ -167,16 +157,12 @@ How exactly you accomplish this is up to you. Here are some suggestions:
     [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient).
 -   Use [turbolift](https://github.com/cloudnull/turbolift).
 -   Use [swiftly](https://github.com/gholt/swiftly):
-    -   [Using Swiftly to download an exported
-        image](/how-to/use-swiftly-to-download-an-exported-image)
-    -   [Using Swiftly to upload an image to be
-        imported](/how-to/use-swiftly-to-upload-an-image)
+    -   [Using Swiftly to download an exported image](/how-to/use-swiftly-to-download-an-exported-image)
+    -   [Using Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image)
 
 We don't recommend using the Cloud Control Panel for this operation.
- Most images are large enough you would likely have a poor user
-experience.  Feel free to record your experience with any of these tools
-in the comments section of this article so other users can benefit from
-your experience.
+Most images are large enough you would likely have a poor user
+experience.  
 
 ### Working in the target region
 
@@ -187,8 +173,7 @@ named `imported-files` in your Cloud Files account in the target region.
 After you upload the image copy to Cloud Files in the target region, you
 can import it for use with Cloud Servers.
 
-1.  Create an `import` task in the target region by using the Cloud
-    Images API.
+1.  Create an `import` task in the target region by using the Cloud Images API.
 
         OS_AUTH_TOKEN="<your auth token>"
         OS_IMAGE_URL="<cloud images baseurl in target region>"
@@ -267,6 +252,7 @@ can import it for use with Cloud Servers.
 4.  You can now create a server in the target region with the
     imported image. You can use the Cloud Servers API or the Cloud
     Control Panel for this task.
+
 5.  To find your imported image in the image selector on the Create
     Server page of the Control Panel, click **Saved** under **Image**,
     and among the saved images, look for the images of **Deleted
@@ -275,7 +261,5 @@ can import it for use with Cloud Servers.
 
 ### Related information
 
--   [Rackspace Cloud Images Developer
-    Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/)
--   [Cloud Images
-    FAQ](/how-to/cloud-images-faq)
+-   [Rackspace Cloud Images Developer Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/)
+-   [Cloud Images FAQ](/how-to/cloud-images-faq)

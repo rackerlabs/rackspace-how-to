@@ -1,6 +1,6 @@
 ---
 permalink: the-hosting-spectrum-which-solution-fits-your-business/
-node_id: 1040
+audit_date:
 title: 'The Hosting Spectrum: Which Solution Fits your Business?'
 type: article
 created_date: '2011-03-24'

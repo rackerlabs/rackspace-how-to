@@ -10,9 +10,9 @@ product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
 
-Rackspace Metrics is a multi-tenant software-as-a-service (SaaS) product that offers a flexible and affordable platform for storing and serving time-series metrics. It provides a REST API for metrics ingestion and retrieval. In addition, it also provides out-of-box integration with popular open source tools. Rackspace Metrics is designed to meet the functional and performance requirements of enterprise-scale metrics.
+**To sign up for Rackspace Metrics, please go to <http://go.rackspace.com/metrics>**
 
-<hr />
+Rackspace Metrics is a multi-tenant software-as-a-service (SaaS) product that offers a flexible and affordable platform for storing and serving time-series metrics. It provides a REST API for metrics ingestion and retrieval. In addition, it also provides out-of-box integration with popular open source tools. Rackspace Metrics is designed to meet the functional and performance requirements of enterprise-scale metrics.
 
 ### Introduction
 
@@ -21,7 +21,7 @@ Rackspace Metrics is a multi-tenant software-as-a-service (SaaS) product that of
 ### General information
 
 - [Create a Grafana dashboard for Rackspace Metrics](/how-to/create-a-grafana-dashboard-for-rackspace-metrics)
-- [Deploy Rackspace Metrics](/how-to/deploying-rackspace-metrics)
+- [Integrate statsD with Rackspace Metrics](/how-to/integrate-statsd-with-rackspace-metrics)
 
 ### Information for developers
 

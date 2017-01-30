@@ -1,7 +1,7 @@
 ---
 permalink: using-python-novaclient-to-manage-scheduled-images/
-node_id: 3473
-title: Using python-novaclient to manage scheduled images
+audit_date:
+title: Manage scheduled images with the python-novaclient
 type: article
 created_date: '2013-05-16'
 created_by: Brian Rosmaita

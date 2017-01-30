@@ -1,6 +1,6 @@
 ---
 permalink: first-generation-cloud-servers-sample-code/
-node_id: 1720
+audit_date:
 title: 'First Generation Cloud Servers: Sample Code'
 type: article
 created_date: '2012-07-24'

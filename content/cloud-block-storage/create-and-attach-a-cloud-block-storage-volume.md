@@ -1,6 +1,6 @@
 ---
 permalink: create-and-attach-a-cloud-block-storage-volume/
-node_id: 3134
+audit_date:
 title: Create and attach a Cloud Block Storage volume
 type: article
 created_date: '2012-10-22'
@@ -23,28 +23,21 @@ charged by the GB of storage you provision, so create volumes of the
 size you need. Volumes can be anywhere from 50 GB (SSD) or 75 GB (SATA)
 to 1 TB, and you can always create larger volumes later.
 
-
-
 ###  Create the volume
 
 Make sure you are logged in to the [Cloud Control
 Panel](https://mycloud.rackspace.com/).
 
 Confirm the name and region of the server you will attach the volume to.
-<span>Volumes can be attached to only servers in the same region</span>.
+Volumes can be attached to only servers in the same region.
 
-1.  Click **Servers** in the main navigation.
-2.  Click **Block Storage** in the Servers sub-navigation.
-
-    <img src="{% asset_path cloud-block-storage/create-and-attach-a-cloud-block-storage-volume/cbs%20-%20no%20volumes.png %}" width="667" height="304" />
-
+1.  Click **Storage** in the main navigation.
+2.  Click **Block Storage Volumes** in the Storage sub-navigation.
 3.  Click the **Create Volume** button.
-
-    <img src="{% asset_path cloud-block-storage/create-and-attach-a-cloud-block-storage-volume/create%20volume.png %}" width="465" height="452" />
-
 4.  Give your volume a name.
-5.  Select the region. <span>Volumes can be attached only to servers in
-    the same region</span>.
+5.  Select the region. Volumes can be attached only to servers in
+    the same region.
+
 6.  Select a volume type:
     -   **Standard** - This is a standard SATA drive for users who need
         additional storage on their Cloud Server.
@@ -73,11 +66,7 @@ Block Storage Volumes list.
 
 The next step is to attach your volume, as described below.
 
-To detach and delete the volume, see [Detach and delete Cloud Block
-Storage
-volumes](/how-to/detach-and-delete-cloud-block-storage-volumes).
-
-
+To detach and delete the volume, see [Detach and delete Cloud Block Storage volumes](/how-to/detach-and-delete-cloud-block-storage-volumes).
 
 ###  View volume details
 
@@ -85,8 +74,6 @@ The **Volume Details** screen displays basic information about the volume.
 Here you can see the Volume's Status, what server it may be attached to,
 its size, region, and type. Additionally, if your volume is attached to
 a Linux server, you can see its path.
-
-<img src="{% asset_path cloud-block-storage/create-and-attach-a-cloud-block-storage-volume/cbsvolume.png %}" width="426" height="303" />
 
 The **Volume Details** screen displays by default once you create the
 volume.
@@ -106,22 +93,20 @@ statuses are
 **Attached to:** This section displays the attachment status of your
 volume. Possible statuses are:
 
--   Unattached -- The volume is not attached to a server.
-    -   Attach Volume... -- Click this to display a list of servers you
+-   `Unattached`: The volume is not attached to a server.
+    -   `Attach Volume...`: Click this to display a list of servers you
         can attach the volume to.
--   &lt;Name of Server&gt; -- If your volume is attached, you can click
+-   `Name of Server`: If your volume is attached, you can click
     the server's name to see the server's details.
     -   Detach Volume... -- Volume is attached; click this link to
         detach it. Note: you should make sure the volume is unmounted
         before you detach it. See [Detach and Delete Cloud Block Storage
         Volumes](/how-to/detach-and-delete-cloud-block-storage-volumes)
         for details.
--   &lt;path&gt; -- If your volume is attached to a Linux server, its
-    path (/dev/XXXX) displays here.
+-   `path`: If your volume is attached to a Linux server, its
+    path (`/dev/XXXX`) displays here.
 
-    A brief word on &lt;path&gt;:
-
-    The file path /dev/XXXX is what is known as a device file, or
+    **Note:** The file path /dev/XXXX is what is known as a device file, or
     special file. It appears as an ordinary system file, but it serves
     as an interface for a device driver. It allows the operating system
     to read and write data with attached devices, such as
@@ -129,20 +114,18 @@ volume. Possible statuses are:
     available devices once you have attached them to your cloud server.
 
 
--   **ID:** This is the ID of the volume.
+-   `ID`: This is the ID of the volume.
 
--   **Size:** The size of the volume.
+-   `Size`: The size of the volume.
 
--   **Region:** Where the volume is located.
+-   `Region`: Where the volume is located.
 
--   **Type:** The type of volume, either Standard (a SATA drive) or High
+-   `Type`: The type of volume, either Standard (a SATA drive) or High
 Performance (an SSD drive).
 
--   **Snapshots:** This section displays how many snapshots you have of the
+-   `Snapshots`: This section displays how many snapshots you have of the
 volume. There is also a link which allows you to create a snapshot.
 Snapshots are described [later in this product overview](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
-
-
 
 ###  Attach the volume to a server
 
@@ -153,8 +136,7 @@ for all servers. After you attach the volume, you must partition,
 format, and mount it, which we cover on the next page.
 
 If you'd like to know more about the differences between attaching and
-mounting a volume, read the article on [attaching versus
-mounting](/how-to/cloud-block-storage-attaching-vs-mounting).
+mounting a volume, read the article [attaching versus mounting](/how-to/cloud-block-storage-attaching-vs-mounting).
 
 You may only attach a volume to a server in the same region.
 
@@ -174,9 +156,4 @@ yellow in the Block Storage Volumes list. When it is done attaching, its
 status bar will turn green and the name of the server it is attached to
 displays under the heading **Attached to**.
 
-
-
-### Next steps
-
-[Prepare your Cloud Block Storage
-volume](/how-to/prepare-your-cloud-block-storage-volume)
+**Next steps:** [Prepare your Cloud Block Storage volume](/how-to/prepare-your-cloud-block-storage-volume)

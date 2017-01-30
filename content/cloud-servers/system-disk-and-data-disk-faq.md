@@ -1,12 +1,12 @@
 ---
 permalink: system-disk-and-data-disk-faq/
-node_id: 3718
+audit_date:
 title: System Disk and Data Disk FAQ
 type: article
 created_date: '2013-10-02'
 created_by: Ross Diaz
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-09-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -39,8 +39,7 @@ retain information from the data disk(s)..
 
 ### What About Scaling and Resizing?
 
-Only first-generation and standard servers can be directly
-resized. Other servers can be scaled by either hosting your application
+Servers can be scaled by either hosting your application
 on a load-balanced cluster (horizontal scaling) or by recreating the
 server with a different server flavor.
 

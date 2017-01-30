@@ -1,12 +1,12 @@
 ---
 permalink: getting-started-with-cloud-sites-configuring-ssl-on-your-websites/
-node_id: 127
+audit_date:
 title: 'Getting started with Cloud Sites: Configuring SSL on your websites'
 type: article
 created_date: '2011-03-14'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Contreras
+last_modified_date: '2016-06-02'
+last_modified_by: Thomas Hester
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -47,7 +47,7 @@ The primary certificates supported on Cloud Sites are as follows:
 Cloud Sites allows installation of most chained certificates, including
 Extended Validation (EV), multi-domain, and wild card
 certificates. These will require installation to a primary Common Name
-domain to work properly.
+domain to work properly. _Sites hosted on the .NET/IIS platform may not allow wild card certificates to work due to the architecture._
 
 **Note**: Cloud Sites no longer supports *any* self-signed
 certificates.
@@ -58,22 +58,18 @@ Complete the following steps to generate a certificate signing request
 (CSR), which you will need to have when you purchase an SSL certificate.
 
 1.  Log in to the [Cloud Sites Control Panel](http://manage.rackspacecloud.com).
+
 2.  Click **Hosting > Cloud Sites**.
+
 3.  Click the domain you want to add SSL to, and then click the
     **Security** tab.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-configuring-ssl-on-your-websites/securitytab.png %}" alt="" />
 
 4.  In the **Permissions for Viewing Your Website** section, click
     **Install SSL Certificate**.
 
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-configuring-ssl-on-your-websites/installsslcertificatetab.png %}" alt="" />
-
 5.  Review the order summary and payment details, select the **Terms
     Agreement** check box, and the click Finish. If you have questions
     about the charges, contact Support.
-
-    <img src="{% asset_path cloud-sites/getting-started-with-cloud-sites-configuring-ssl-on-your-websites/ssltos.png %}" alt="" />
 
 6.  On the Install SSL Certificate page, click the **Start New
     Certificate** button.
@@ -101,6 +97,32 @@ vendor might require the following details:
 
 After you have completed your certificate purchase, you're ready to
 [install the certificate](/how-to/getting-started-with-cloud-sites-configuring-ssl-on-your-websites).
+
+### Special rules for EV and wild card certificates
+
+To install an EV or wild card certificate with Cloud Sites, the certificate  needs to be installed to an existing domain on the Cloud Sites account. This can  be accomplished by doing the following when purchasing the certificate from the seller:
+
+1. Create the certificate using the existing domain as the Common Name (CN).
+
+2. Setup the EV domains or wild card domain as the Subject Alternative Name (SAN).
+
+3. Install the certificate to the existing domain.
+
+4. Point the domains specified in the SAN to use the SSL IP provided.
+
+The following is an example of a correctly configured wild card certificate if the site hosting the certificate is ssl.example.com, an existing domain in your domain in your Cloud Sites account, and other subdomains of example.com are used for the wild card:
+
+    Common Name: ssl.example.com
+    Subject Alternative Names: *.example.com
+    Organization: Example.com
+    Organization Unit: IT
+    Locality: San Antonio
+    State: Texas
+    Country: US
+    Valid From: September 25, 2015
+    Valid To: September 26, 2017
+    Issuer: DigiCert SHA2 High Assurance Server CA, DigiCert Inc
+    Serial Number:
 
 ### Install the certificate
 
@@ -135,11 +157,6 @@ addresses for your site to complete propagation. If you are managing
 your own DNS, click the **Domain** tab to get your new IP addresses.
 
 ### What to watch for
-
-Currently the Rackspace Cloud does not support wildcard
-certificates--such as **\*.domain.com** or **\*.example.com**. These
-certificates might or might not function as necessary. This feature is
-currently under consideration.
 
 Removing an SSL certificate from a site will change the site's IP
 address in the same way that adding a new certificate changes the IP

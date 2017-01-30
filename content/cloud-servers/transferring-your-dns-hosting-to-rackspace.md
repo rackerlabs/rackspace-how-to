@@ -1,7 +1,7 @@
 ---
 permalink: transferring-your-dns-hosting-to-rackspace/
-node_id: 770
-title: Transferring your DNS hosting to Rackspace
+audit_date:
+title: Transfer your DNS hosting to Rackspace
 type: article
 created_date: '2011-11-16'
 created_by: Rae D. Cabello

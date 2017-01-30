@@ -1,12 +1,12 @@
 ---
 permalink: common-administrative-tasks-in-mssql-server/
-node_id: 1395
+audit_date:
 title: Common Administrative Tasks in MSSQL Server
 type: article
 created_date: '2012-05-16'
 created_by: Rackspace Support
-last_modified_date: '2012-05-21'
-last_modified_by: Jimmy Rudley
+last_modified_date: '2016-06-16'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -17,12 +17,7 @@ database.
 
 - First you will want to connect to your MS SQL Server database using the *myLittleAdmin* link in your Control Panel.
 - Once connected, click on the *Tools* NavBar in the lower-left frame.
-
-  <img src="{% asset_path cloud-sites/common-administrative-tasks-in-mssql-server/1_Tools.png %}" alt="" />
-
 - To submit a new query, click *New Query* from the Tools Menu and enter your query in the space provided in the center frame, then click *Submit*.
-
-  <img src="{% asset_path cloud-sites/common-administrative-tasks-in-mssql-server/2_NewQuery.png %}" alt="" />
 
 Following are the query commands for some common administrative tasks:
 

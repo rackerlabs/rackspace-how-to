@@ -1,12 +1,12 @@
 ---
 permalink: cloud-block-storage-faq/
-node_id: 5022
+audit_date:
 title: Cloud Block Storage FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-27'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-09-13'
+last_modified_by: Kyle Laffoon
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -52,7 +52,6 @@ Cloud Block Storage is an excellent option for you if you:
 
 You might not be a good fit for the Cloud Block Storage service if you:
 
--   Are leveraging First Generation Cloud Servers
 -   Are not comfortable with low-level system administration tasks, such
     as installing file systems, mounting and partitioning storage
     volumes, or installing your own applications on top of a raw storage
@@ -107,11 +106,6 @@ volume (if supported by your operating system).
 
 When you copy your data within the same data center via the internal
 ServiceNet network, there is no charge for bandwidth.
-
-#### Can a Cloud Block Storage volume be mounted to a first-generation Cloud Server or a Dedicated Server?
-
-No. Cloud Block Storage volumes are available to newer Cloud Servers
-platforms, but not first-generation Cloud Servers.
 
 #### When I am using a volume, how can I know how much space I have left?
 
@@ -223,7 +217,7 @@ or to individual files on the drive. Save your Schedule as normal.
 #### What is Rackspace Cloud Block Storage?
 
 Rackspace Cloud Block Storage provides persistent block-level storage
-volumes for use with Rackspace next generation Cloud Servers. Volumes
+volumes for use with Rackspace Cloud Servers. Volumes
 can be created and deleted independently of the Cloud Servers they are
 attached to. Rackspace Cloud Block Storage customers can create volumes
 ranging from 50 GB for an SSD volume or 75 GB for a SATA volume up to 1
@@ -231,11 +225,7 @@ TB in size.
 
 #### How does Cloud Block Storage differ from the local storage available through Cloud Servers?
 
-Cloud Block Storage provides persistent data storage for next generation
-Cloud Servers. Persistent storage can exist independent of your server,
-even after the server has been deleted. The local storage bundled with
-Cloud Servers is ephemeral and exists only as long as the Cloud Server
-exists. When the server is deleted, so is its local storage.
+Cloud Block Storage provides persistent data storage for Cloud Servers. Persistent storage can exist independent of your server, even after the server has been deleted. The local storage bundled with Cloud Servers is ephemeral and exists only as long as the Cloud Server exists. When the server is deleted, so is its local storage.
 
 We recommend that you [unmount and detach Cloud Block
 Storage](/how-to/detach-and-delete-cloud-block-storage-volumes)
@@ -244,13 +234,6 @@ volumes before deleting the server.
 ------------------------------------------------------------------------
 
 ### Security
-
-#### What happens to my data when I delete a Cloud Block Storage volume?
-
-For your security, the used portions of the physical disk are
-overwritten with zeroes before the deleted volume's disk space is
-reallocated to the shared pool of disk resources. At this point, your
-data cannot be recovered and is not visible to other customers.
 
 #### What happens to my data when I delete a Cloud Block Storage volume?
 

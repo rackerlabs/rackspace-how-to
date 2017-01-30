@@ -1,6 +1,6 @@
 ---
 permalink: nested-imap-folders-in-apple-mail/
-node_id: 3804
+audit_date:
 title: Nested IMAP folders in Apple Mail
 type: article
 created_date: '2013-12-05'

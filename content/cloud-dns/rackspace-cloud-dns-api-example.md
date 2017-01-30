@@ -1,19 +1,17 @@
 ---
 permalink: rackspace-cloud-dns-api-example/
-node_id: 1234
+audit_date:
 title: Rackspace Cloud DNS - API example
 type: article
 created_date: '2011-10-19'
 created_by: Rackspace Support
-last_modified_date: '2016-01-27'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-04-13'
+last_modified_by: Stephanie Fillmon
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-### Previous section
-
-[Rackspace Cloud DNS - Technical details](/how-to/rackspace-cloud-dns-technical-details)
+**Previous section:** [Rackspace Cloud DNS - Technical details](/how-to/rackspace-cloud-dns-technical-details)
 
 This article shows a simple example using the API.
 
@@ -42,7 +40,7 @@ We have endpoints available in the US and the UK.
 -   US `https://dns.api.rackspacecloud.com/v1.0/1234`
 -   UK `https://ion.dns.api.rackspacecloud.com/v1.0/1234`
 
-### List Domain Details request
+### List Domain Details
 
 Next, let's take a look at a simple call to the API. For this example,
 we'll show a List Domain details request. In this request, we are
@@ -51,9 +49,7 @@ the domains for account number 1234, and the domain ID 2725511.
 
     curl -X GET -H "X-Auth-Token:eaaafd18-0fed-4b3a-81b4-663c99ec1cbb" -H "Accept:application/xml" https://dns.api.rackspacecloud.com/v1.0/1234/domains/2725511
 
-### Real response
-
-This is an example response from the List Domains API call. Here we are
+Following is an example response from the List Domains API call. Here we are
 showing the XML response, but the DNS API supports both the JSON and XML
 data serialization formats. The response format can be specified in
 requests by either using the Accept Header or adding a .xml or .json
@@ -78,6 +74,4 @@ precedence.
         </recordsList>
     </domain>
 
-### Next steps
-
-[Rackspace Cloud DNS - Additional resources](/how-to/rackspace-cloud-dns-additional-resources)
+**Next steps:** [Rackspace Cloud DNS - Additional resources](/how-to/rackspace-cloud-dns-additional-resources)

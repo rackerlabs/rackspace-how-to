@@ -1,6 +1,6 @@
 ---
 permalink: create-a-domain-or-subdomain-that-points-to-a-folder-on-an-existing-cloud-sites-website/
-node_id: 605
+audit_date:
 title: Create a domain or subdomain that points to a folder on an existing Cloud Sites website
 type: article
 created_date: '2011-03-23'

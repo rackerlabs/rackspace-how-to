@@ -1,6 +1,6 @@
 ---
 permalink: set-up-bis-blackberry-internet-service-with-exchange/
-node_id: 3667
+audit_date:
 title: 'Set up BIS (Blackberry Internet Service) with Exchange'
 type: article
 created_date: '2013-08-29'

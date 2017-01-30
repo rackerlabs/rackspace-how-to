@@ -1,6 +1,6 @@
 ---
 permalink: cloud-block-storage-quotas/
-node_id: 3902
+audit_date:
 title: Cloud Block Storage quotas
 type: article
 created_date: '2014-02-12'

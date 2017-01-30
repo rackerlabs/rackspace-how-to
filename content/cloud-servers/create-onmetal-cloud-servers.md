@@ -1,6 +1,6 @@
 ---
 permalink: create-onmetal-cloud-servers/
-node_id: 4105
+audit_date:
 title: Create OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'

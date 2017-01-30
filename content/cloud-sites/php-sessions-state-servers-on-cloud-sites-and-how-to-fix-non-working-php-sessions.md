@@ -1,6 +1,6 @@
 ---
 permalink: php-sessions-state-servers-on-cloud-sites-and-how-to-fix-non-working-php-sessions/
-node_id: 89
+audit_date:
 title: PHP Sessions State Servers on Cloud Sites And How To Fix Non Working PHP Sessions
 type: article
 created_date: '2011-03-09'

@@ -1,7 +1,7 @@
 ---
 permalink: exporting-data-from-mysql/
-node_id: 1505
-title: Exporting Data from MySQL
+audit_date:
+title: Export Data from MySQL
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
@@ -19,8 +19,7 @@ database\_name is the name of your existing database. database\_name.sql
 will be the name of the exported database file.
 
 If your database resides on a remote host (as it would if you're using
-Cloud Databases) you'll need to specify the hostname with the "-h"
-option, as in:
+Cloud Databases), specify the hostname with the "-h" option, as in:
 
     mysqldump -h host_name -u username -p database_name > database_name.sql
 
@@ -30,8 +29,7 @@ It's also possible to set the "MYSQL\_HOST" environment variable to the
 remote host's address so you don't have to enter it on the command line.
 
 If you want to import this data to another database, see our article on
-[Importing
-Data.](/how-to/importing-data-into-cloud-databases)
+[Importing Data.](/how-to/importing-data-into-cloud-databases)
 
 ### External Links
 

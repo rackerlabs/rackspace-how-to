@@ -1,39 +1,39 @@
 ---
 permalink: checking-listening-ports-with-netstat/
-node_id: 1437
-title: Checking Listening Ports with netstat
+audit_date: '2016-07-15'
+title: Check listening ports with netstat
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-07-15'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### netstat
-
 If you're troubleshooting a service that you know [is running normally](/how-to/checking-system-load-on-linux)
-the next step is to make sure it's listening to the right network port.
+the next step is to ensure it's listening on the correct network port.
 
 The `netstat` command shows the services listening to ports on a Linux
-server along with the details of any connections currently made to them.
-The connection details we look at during basic network daemon
-troubleshooting are the addresses the daemon is listening on (including
-the port number), the daemon's PID (process identifier), and the program
+server and the details of any connections currently made to them.
+The connection details to consider during basic network daemon
+troubleshooting are the addresses that the daemon is listening on (including
+the port number), the daemon's process identifier (PID), and the program
 name.
 
-Of course, you need to run `netstat` on the server running the service.
-Remember that `netstat` is not affected by your firewall configuration.
+You need to run `netstat` on the server that is running the service.
+`Netstat` is not affected by your firewall configuration.
 
-### Checking ports
+**Note:** You can also use the `isof` and `ss` commands to check ports. Many of the command flags contained in this article are the same when you run the `isof` and `ss` commands. However, the output returned when you use these commands might not resemble the output of the `netstat` tool. For more information about both commands, see the [`isof`](http://linux.die.net/man/8/lsof) and [`ss`](http://linux.die.net/man/8/ss) command manuals.
 
-To list tcp ports that are being listened on, along with the name of
-each listener's daemon and its PID, run:
+### Check ports
+
+To list the TCP ports that are being listened on, and the name of
+each listener's daemon and its PID, run the following command:
 
     sudo netstat -plnt
 
-The following example shows `netstat`'s output for three common programs
+The following example shows the output for three common programs
 that are listening on three different sockets.
 
     $ sudo netstat -plnt
@@ -44,44 +44,36 @@ that are listening on three different sockets.
     tcp        0      0 :::80                       :::*                        LISTEN      2218/httpd
     tcp        0      0 :::22                       :::*                        LISTEN      1051/sshd
 
-### Filtering the list
+### Filter the list
 
-If the list of listening daemons is long you can use grep to filter it.
-For example, to filter out everything except the default web server port, number 80, run:
+If the list of listening daemons is long you can use `grep` to filter it.
+For example, to filter out everything except the default web server port, 80, run the following command:
 
     $ sudo netstat -plnt | grep ':80'
     tcp        0      0 :::80                       :::*                        LISTEN      8448/httpd
 
-### Analysing the results
+### Analyze the results
 
-Common outcomes are:
+Common outcomes are as follows:
 
 -   Nothing is listening on the port. Check the service configuration
-    files then try restarting the service.
+    files, and then restart the service.
 -   The correct service is listening on the correct port. In this case
-    we need to test the service more thoroughly - skip to the article on
+    you need to test the service more thoroughly. Skip to the article on
     [testing the listening service for response using
     netcat](/how-to/testing-network-services-with-netcat).
 -   Something other than the expected service appears to be listening on
     the port.
 
-**Note**: If a super-server, such as xinetd,
-is listening on the port this may be desired. See above for details on
-looking at your xinetd configuration.
+**Note**: A super-server, such as xinetd,
+might be listening on the port. Check your xinetd configuration to ensure that this behavior is acceptable.
 
-If something else is listening to the port, try disabling that program,
-e.g. "sudo service httpd stop", or changing its configuration so it no
-longer listens on the required port. Then enable the correct service
-when netstat shows the port is free, e.g. "sudo service vsftpd start".
+If something else is listening on the port, you can disable the program by running `sudo service httpd stop`, or change its configuration so that it no
+longer listens on the port. When `netstat` shows the port is free, enable the correct service (for example `sudo service vsftpd start`).
 
-If you make any changes because the incorrect service is listening or
-nothing is, run the netstat command again to see if it has made a
-difference. If netstat doesn't show the program listening on the correct
-port you need to address its configuration before you go any further.
+If you make any changes because the incorrect service is listening, run the `netstat` command again. If `netstat` doesn't show the program listening on the correct port, you need to address its configuration before you go any further.
 
-### Outcome
-
-If you make changes at this point make sure to test your setup - you may
+If you make changes at this point, be sure to test your setup; you might
 have resolved your issue.
 
-If not, let's continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)
+If using the `netstat` did not resolve your port issues, continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)

@@ -10,9 +10,7 @@ product: RackConnect
 product_url: rackconnect
 ---
 
-<p class="lead" markdown="1">Welcome to RackConnect<sup>&reg;</sup>! This guide is designed to get you started with RackConnect. It includes an overview, describes how to manage your environment, and covers both RackConnect v3.0 and RackConnect v2.0.</p>
-
-<hr />
+Welcome to RackConnect<sup>&reg;</sup>! These articles are designed to get you started with RackConnect. They include an overview, describe how to manage your environment, and cover RackConnect v3.0 and RackConnect v2.0.
 
 **Important:** The top of each RackConnect article displays an **Applies to** label to indicate whether the article applies to RackConnect v3.0, RackConnect v2.0, or both.
 
@@ -63,4 +61,4 @@ product_url: rackconnect
 - [Using Cloud Load Balancers with RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect)
 - [Cloud Servers images for use with RackConnect v2.0](/how-to/cloud-server-images-for-use-with-rackconnect-v20)
 - [RackConnect v2.0 compatibility with Cloud Servers images](/how-to/rackconnect-v20-compatibility-with-cloud-servers-images)
-- [The RackConnect v2.0 API](/how-to/the-rackconnect-v20-api)
+- [RackConnect v2.0 API](/how-to/the-rackconnect-v20-api)

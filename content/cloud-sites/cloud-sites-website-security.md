@@ -1,6 +1,6 @@
 ---
 permalink: cloud-sites-website-security/
-node_id: 1060
+audit_date:
 title: Cloud Sites Website Security
 type: article
 created_date: '2011-04-01'

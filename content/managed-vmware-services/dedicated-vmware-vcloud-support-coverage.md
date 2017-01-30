@@ -1,12 +1,12 @@
 ---
 permalink: dedicated-vmware-vcloud-support-coverage/
-node_id: 4511
+audit_date:
 title: Rackspace Private Cloud Powered by VMware vCloud support coverage
 type: article
 created_date: '2015-01-29'
 created_by: Karin Levenstein
-last_modified_date: '2016-01-21'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-22'
+last_modified_by: Nate Archer
 product: Managed VMware Services
 product_url: managed-vmware-services
 ---
@@ -15,162 +15,131 @@ Support coverage for Rackspace Private Cloud Powered by VMware vCloud&reg; (here
 
 With Dedicated vCloud, you can designate the service level for virtual machines (VMs) as managed or unmanaged. Both service levels include Rackspace support for the host infrastructure and virtualization software. Managed VMs include additional support for the guest operating system running on the VM.
 
-<a name="managed"> </a>
-
 ### Supported operations for managed VMs
 
-For managed VMs, the following tables show which operations are supported by Rackspace and which operations the customer is responsible for.
-
-<a name="virtualization-managed"> </a>
+The following tables show which operations are supported by Rackspace and which operations the customer is responsible for managed VMs.
 
 #### Virtualization support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
-VMware vCloud Director | X | &nbsp;
-VMware vCenter Server | X | &nbsp;
-VMware vCenter Operations Manager | X | &nbsp;
-VM troubleshooting | X | &nbsp;
-Remote administration for VMs | X | &nbsp;
-
-<a name="hardware-managed"> </a>
+VMware vCloud Director | X |
+VMware vCenter Server | X |
+VMware vCenter Operations Manager | X |
+VM troubleshooting | X |
+Remote administration for VMs | X |
 
 #### Hardware support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Manage delivery of equipment | X | &nbsp;
-Procure and inventory spare parts and "Break-Fix" equipment | X | &nbsp;
-Rackspace fully-managed dedicated NAS | X | &nbsp;
-Rackspace fully-managed dedicated SAN | X | &nbsp;
-
-<a name="os-managed"> </a>
+Manage delivery of equipment | X |
+Procure and inventory spare parts and "Break-Fix" equipment | X |
+Rackspace fully-managed dedicated NAS | X |
+Rackspace fully-managed dedicated SAN | X |
 
 #### Operating system support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Provision Microsoft Windows and Red Hat Enterprise Linux operating system images | X | &nbsp;
-Ensure OS licensing compliance | X | &nbsp;
-Patch operating system | X | &nbsp;
-
-<a name="monitoring-managed"> </a>
+Provision Microsoft Windows and Red Hat Enterprise Linux operating system images | X |
+Ensure OS licensing compliance | X |
+Patch operating system | X |
 
 #### Monitoring support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Provide monitoring for VM OS and applications | X | &nbsp;
-Configure monitoring for VM OS and applications | X | &nbsp;
-Respond to monitoring alerts for VM OS and applications | X | &nbsp;
-Configure and respond to infrastructure monitoring alerts (such as ping and port alerts) | X | &nbsp;
-Configure and respond to vCenter monitoring alerts | X | &nbsp;
-Configure and respond to vCenter Operations Manager alerts (such as ping and port alerts) | X | &nbsp;
-Configure and respond to Infrastructure Navigator alerts (such as(ping and port alerts) | X | &nbsp;
-
-<a name="network-managed"> </a>
+Provide monitoring for VM OS and applications | X |
+Configure monitoring for VM OS and applications | X |
+Respond to monitoring alerts for VM OS and applications | X |
+Configure and respond to infrastructure monitoring alerts (such as ping and port alerts) | X |
+Configure and respond to vCenter monitoring alerts | X |
+Configure and respond to vCenter Operations Manager alerts (such as ping and port alerts) | X |
+Configure and respond to Infrastructure Navigator alerts (such as(ping and port alerts) | X |
 
 #### Network support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Architecture design, review, and consultation | X | &nbsp;
-Configure routing and switching equipment |	X | &nbsp;
-Allocate IP blocks for guest OS VMs | X | &nbsp;
-IP management for IP blocks assigned for all guest OS VMs | X | &nbsp;
-Manage firewalls | X | &nbsp;
-Manage load balancers | X | &nbsp;
-Manage intrusion detection system | X | &nbsp;
-Monitor bandwidth consumption | X | &nbsp;
-Troubleshoot network connectivity | X | &nbsp;
+Architecture design, review, and consultation | X |
+Configure routing and switching equipment |	X |
+Allocate IP blocks for guest OS VMs | X |
+IP management for IP blocks assigned for all guest OS VMs | X |
+Manage firewalls | X |
+Manage load balancers | X |
+Manage intrusion detection system | X |
+Monitor bandwidth consumption | X |
+Troubleshoot network connectivity | X |
 Manage firewall rule sets | X | X |
-Manage VM DNS | &nbsp; | X
-
-<a name="security-managed"> </a>
+Manage VM DNS |  | X
 
 #### Security support - managed
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Maintain security specifications for VMs | &nbsp; | X
-
-<a name="unmanaged"> </a>
+Maintain security specifications for VMs |  | X
 
 ### Supported operations for unmanaged VMs
 
-For unmanaged VMs, including customer-provided images, the following tables show which operations are supported by Rackspace and which operations the customer is responsible for.
-
-<a name="virtualization support - unmanaged"> </a>
+The following tables show which operations are supported by Rackspace and which operations the customer is responsible for unmanaged VMs, including customer-provided images.
 
 #### Virtualization support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
-VM troubleshooting | &nbsp; | X
-vCenter Server appliance support | X | &nbsp;
-VMware vCenter Operations Manager - UI | X | &nbsp;
-VMware vCenter Operations Manager - Analytics | X | &nbsp;
-Remote administration for VMs | &nbsp; | X
-
-<a name="hardware-unmanaged"> </a>
+VM troubleshooting |  | X
+vCenter Server appliance support | X |
+VMware vCenter Operations Manager - UI | X |
+VMware vCenter Operations Manager - Analytics | X |
+Remote administration for VMs |  | X
 
 #### Hardware support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Manage delivery of equipment | X | &nbsp;
-Procure and inventory spare parts and "Break-Fix" equipment | X | &nbsp;
-Rackspace fully-managed dedicated NAS | X | &nbsp;
-Rackspace fully-managed dedicated SAN | X | &nbsp;
-
-<a name="os-unmanaged"> </a>
+Manage delivery of equipment | X |
+Procure and inventory spare parts and "Break-Fix" equipment | X |
+Rackspace fully-managed dedicated NAS | X |
+Rackspace fully-managed dedicated SAN | X |
 
 #### Operating system support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Provision Microsoft Windows and Red Hat Enterprise Linux operating system images | &nbsp; | X
-Ensure OS licensing compliance | &nbsp; | X
-Patch operating systems | &nbsp; | X
-
-<a name="monitoring-unmanaged"> </a>
+Provision Microsoft Windows and Red Hat Enterprise Linux operating system images |  | X
+Ensure OS licensing compliance |  | X
+Patch operating systems |  | X
 
 #### Monitoring support - unmanaged
 
 Operation | Rackspace | Customer
 --- | ---- | ---
-Monitor VM operating systems and applications | &nbsp; | X
-Configure monitoring for <span>VM</span> OS and applications | &nbsp; | X
-Respond to monitoring alerts for <span>VM</span> OS and applications | &nbsp; | X
-Configure and respond to infrastructure monitoring alerts (such as ping and port alerts) | X | &nbsp;
-Configure and respond to vCenter monitoring alerts | X | &nbsp;
-Configure and respond to vCenter Operations Manager alerts (such as ping and port alerts) | X | &nbsp;
-
-<a name="network-unmanaged"> </a>
+Monitor VM operating systems and applications |  | X
+Configure monitoring for VM OS and applications |  | X
+Respond to monitoring alerts for VM OS and applications |  | X
+Configure and respond to infrastructure monitoring alerts (such as ping and port alerts) | X |
+Configure and respond to vCenter monitoring alerts | X |
+Configure and respond to vCenter Operations Manager alerts (such as ping and port alerts) | X |
 
 #### Network support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Architecture design, review and consultation | X | &nbsp;
-Configure routing and switching equipment | X | &nbsp;
-Allocation of IP blocks for guest OS VMs | X | &nbsp;
-IP management for IP blocks assigned for all guest OS VMs | &nbsp; | X
-Manage firewalls | X | &nbsp;
-Manage load balancers | X | &nbsp;
-Manage intrusion detection systems | X | &nbsp;
-Monitor bandwidth consumption | X | &nbsp;
-Troubleshoot network connectivity | X | &nbsp;
+Architecture design, review and consultation | X |
+Configure routing and switching equipment | X |
+Allocation of IP blocks for guest OS VMs | X |
+IP management for IP blocks assigned for all guest OS VMs |  | X
+Manage firewalls | X |
+Manage load balancers | X |
+Manage intrusion detection systems | X |
+Monitor bandwidth consumption | X |
+Troubleshoot network connectivity | X |
 Manage firewall rule sets | X | X
-Manage <span>VM</span> DNS | &nbsp; | X
-
-<a name="security-unmanaged"> </a>
+Manage VM DNS |  | X
 
 #### Security support - unmanaged
 
 Operation | Rackspace | Customer
 --- | --- | ---
-Maintain security specifications for VMs | &nbsp; | X
-
-&nbsp;
-&nbsp;
+Maintain security specifications for VMs |  | X

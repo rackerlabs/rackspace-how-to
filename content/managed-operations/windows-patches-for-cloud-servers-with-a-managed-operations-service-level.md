@@ -1,11 +1,11 @@
 ---
 permalink: windows-patches-for-cloud-servers-with-a-managed-operations-service-level/
-node_id: 508
+audit_date:
 title: Windows Patches for Cloud Servers with a Managed Operations Service Level
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
+last_modified_date: '2016-06-22'
 last_modified_by: Nate Archer
 product: Managed Operations
 product_url: managed-operations
@@ -15,7 +15,7 @@ All Windows patches for cloud servers within the Rackspace Managed Operations se
 
 If you opted in to the Rackspace Managed Windows Patching service, you can manually install any software or updates released by Microsoft but not yet available on our WSUS servers. Use the **Windows Update** command located in the **Start** menu on your server to check for these patches directly from Microsoft. You can download most of these patches manually by visiting the page for the specific KB article related to the patch. You can also contact Rackspace support to assist you with the manual installation of any non-Rackspace approved patches onto your server. However, we cannot be held responsible for any issues that might arise from the manual installation of these patches before they are approved and released for update from our WSUS servers.
 
-## WSUS endpoints
+### WSUS endpoints
 
 WSUS servers are located in each region where you can connect Windows Servers to pull approved Windows updates. We recommend that you get updates from the closest WSUS server.
 
@@ -37,7 +37,7 @@ The WSUS endpoints are as follows:
 | Windows Server 2012 WSUS	 | microsoftupdate.[dc].rackspace.com | Nightly between 1 a.m. and 5 a.m. in your server region's time zone: * IAD - EST * DFW - CST * SYD - AET * HKG - HKT * ORD - CST | Windows Patching Portal |  |
 | Windows Server 2012 R2 | WSUS | microsoftupdate.[dc].rackspace.com | Nightly between 1 a.m. and 5 a.m. in your server region's time zone: &bull; IAD - EST &bull; DFW - CST &bull; SYD - AET &bull; HKG - HKT &bull; ORD - CST | Windows Patching Portal |
 
-## WSUS settings
+### WSUS settings
 
 While you are opted in to the Rackspace Managed Windows Patching service, the following registry setting are configured on the Managed Windows Server:
 
@@ -77,6 +77,6 @@ You can find additional information on the [Rackspace Support site](http://suppo
  - [http://technet.microsoft.com/en-us/library/dd939844%28v=ws.10%29.aspx](http://technet.microsoft.com/en-us/library/dd939844%28v=ws.10%29.aspx)
  - [http://technet.microsoft.com/en-us/library/cc708449%28WS.10%29.aspx](http://technet.microsoft.com/en-us/library/cc708449%28WS.10%29.aspx)
 
-## Opt out of Rackspace Managed Windows Patching
+### Opt out of Rackspace Managed Windows Patching
 
 If you have valid reasons to take full control of and be responsible for managing your patching, you can opt out of Rackspace Managed Patching by following the instructions at [https://community.rackspace.com/general/f/34/t/689](https://community.rackspace.com/general/f/34/t/689).

@@ -1,12 +1,12 @@
 ---
 permalink: set-up-a-server-to-work-with-rackspace-intelligence/
-node_id: 4735
+audit_date:
 title: Set up a server to work with Rackspace Intelligence
 type: article
 created_date: '2015-07-12'
 created_by: Rose Coste
-last_modified_date: '2016-01-04'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -25,30 +25,24 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     [Create a Cloud Server](/how-to/create-a-cloud-server).
 3.  List the server's details by selecting **Servers &gt; Cloud
     Servers** and then clicking the server's name.
-
-    <img src="{% asset_path rackspace-intelligence/set-up-a-server-to-work-with-rackspace-intelligence/servers-list-details-.png %}" alt="" />
-
 4.  On the server details page, scroll down to the **Monitoring
     Data** section and click the **View Server's Metrics in Rackspace
     Intelligence** link.
 5.  Install the monitoring agent on the server by clicking **Get
     Started**.
-
-    <img src="{% asset_path rackspace-intelligence/set-up-a-server-to-work-with-rackspace-intelligence/intelligence-monitoring-notset.png %}" width="672" height="409" />
-
 6.  On the **Monitoring Agent Installation** page, choose the platform
     installed on your server and choose the type of installation
-    instructions that you prefer. 
+    instructions that you prefer.
 
     **Note:** The Monitoring Agent can be automatically installed when
-    creating a new cloud server. After choosing your server image and flavor, 
+    creating a new cloud server. After choosing your server image and flavor,
     select **Monitor recommended server metrics** under Recommended Installs.
-    
+
     The following example shows the **Step By Step** instructions for a Linux platform. Follow the instructions
     to install, configure, and start the agent.
 
     <img src="{% asset_path rackspace-intelligence/set-up-a-server-to-work-with-rackspace-intelligence/intelligence-install-agent-linux_0.png %}" width="649" height="527" />
-    
+
     The instructions require you to send commands to the server. The
     commands you must send to the server vary depending on what kind of
     server you want to monitor. Similarly, detailed procedures for
@@ -61,8 +55,7 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     a different configuration, adapt these instructions to match your
     environment
 
-    **Note:**
-    No matter what kind of server you want to monitor, you
+    **Note:** No matter what kind of server you want to monitor, you
     must know the server's IP address and password before you can log in
     and begin installing the monitoring agent there. The server's IP
     address is provided when you use the Cloud Control Panel to list
@@ -79,20 +72,15 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     Installation** page you can see that the agent connection status
     is **Connected**.
 
-    <img src="{% asset_path rackspace-intelligence/set-up-a-server-to-work-with-rackspace-intelligence/intelligence-agent-connected.png %}" width="359" height="154" />
-    
 7.  Click **Setup Checks** to configure at least one check. In the
     following example, two CPU-related checks are configured, monitoring
     CPU usage and average CPU load.
 
     <img src="{% asset_path rackspace-intelligence/set-up-a-server-to-work-with-rackspace-intelligence/intelligence-check-selection.png %}" width="637" height="555" />
-    
+
 8.  Click **Apply Checks** to activate the checks that you defined. When
     the checks are activated, their status is reported on the entities
     details page for the server, in the **Monitoring Checks** section.
-
-    <img src="{% asset_path rackspace-intelligence/set-up-a-server-to-work-with-rackspace-intelligence/intelligence-monitoring-checks-2set.png %}" width="779" height="202" />
-    
 9.  To make the checks useful, define alarms that identify boundaries
     between OK, Warning, and Critical statuses. For instructions,
     see [Working with alarms](/how-to/working-with-alarms).

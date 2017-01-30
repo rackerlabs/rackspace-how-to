@@ -1,21 +1,18 @@
 ---
 permalink: examining-the-log-of-alerts-suppressed-by-rackspace-intelligence/
-node_id: 4748
+audit_date:
 title: Examining the log of alerts suppressed by Rackspace Intelligence
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste
-last_modified_date: '2015-08-17'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-06-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
 
 You can use the **Suppressed Alerts** log to review alerts that were
 muted but ordinarily would have prompted notifications.
-
-<img src="{% asset_path rackspace-intelligence/examining-the-log-of-alerts-suppressed-by-rackspace-intelligence/4748.1a.png %}" width="735" height="242" />
-----------------------------------------------------------------------------------------------------
 
 It is good practice to check the list of suppressed alerts after a
 suppression period ends to confirm that everything that was suppressed

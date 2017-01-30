@@ -1,12 +1,12 @@
 ---
 permalink: installing-wordpress-on-cloud-sites/
-node_id: 672
-title: Installing WordPress on Cloud Sites
+audit_date:
+title: Install WordPress on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-30'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-06-20'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -71,24 +71,24 @@ This article shows how to manually install WordPress on Cloud Sites.
     <http://www.example.com/blog/wp-admin/install.php>
     -   If DNS is not setup for the domain, use the Testing URL provided in the Cloud Sites Control Panel under the General Settings tab, e.g. http://www.example.com.php5-7.dfw1-1.websitetestlink.com/blog/wp-admin/install.php
 
-With this, Cloud Sites specific steps are complete. Now follow on screen
-prompts to continue the installation.
+    **Note:** With this, the Cloud Sites specific steps are complete. Now follow on screen
+    prompts to continue the installation.
 
--   Provide the necessary database information recorded during the
-    preparation phase and press the **Submit** button
--   Provide details such as blog name, admin email address and press
-    the **Install** button
--   Use the generated password to login as admin and then change the
+9. Provide the necessary database information recorded during the
+   preparation phase and press the **Submit** button.
+10. Provide details such as blog name, admin email address and click
+    **Install**.
+11. Use the generated password to login as admin and then change the
     password if needed.
 
 WordPress should now be fully functional and accessible based on the
-install location
+install location.
 
--   If WordPress files are placed in the root directory, e.g. visit:
+-   If WordPress files are placed in the root directory, for example, visit:
     http://www.example.com
--   If WordPress is in its own subdirectory called blog, e.g. visit:
+-   If WordPress is in its own subdirectory called blog, for example, visit:
     http://www.example.com/blog
--   If DNS is not setup for the domain, visit the Testing URL, e.g.
+-   If DNS is not setup for the domain, visit the Testing URL, for example,
     http://www.example.com.php5-7.dfw1-1.websitetestlink.com/blog
     provided in the Classic Cloud Control Panel under the General
     Settings tab.

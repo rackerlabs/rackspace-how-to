@@ -1,7 +1,7 @@
 ---
 permalink: ubuntu-904-iredmail-installation/
-node_id: 145
-title: Ubuntu 9.04 - iRedMail Installation
+audit_date:
+title: Install iRedMail on Ubuntu 9.04
 type: article
 created_date: '2011-03-15'
 created_by: Rackspace Support

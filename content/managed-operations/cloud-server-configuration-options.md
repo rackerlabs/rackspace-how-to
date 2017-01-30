@@ -1,12 +1,12 @@
 ---
 permalink: cloud-server-configuration-options/
-node_id: 4449
+audit_date:
 title: Cloud Server configuration options
 type: article
 created_date: '2014-12-01'
 created_by: Rose Contreras
-last_modified_date: '2016-01-14'
-last_modified_by: Rose Coste
+last_modified_date: '2016-06-22'
+last_modified_by: Nate Archer
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -36,8 +36,7 @@ must download the tools and configure them individually on the servers.
 If you have the Managed Operations: SysOps service level, ask a Cloud
 Engineer to install the tools on your behalf.
 
-Build configuration options
----------------------------
+### Build configuration options
 
 Depending upon your service level, these options are available for the
 `build_config` metadata key:
@@ -127,8 +126,7 @@ You can combine the `build_config` options. For example:
     identify the directories that you want backed up after the agent
     is installed.
 
-Build options for configuration management software (Chef, Puppet, Ansible, and Salt)
--------------------------------------------------------------------------------------
+### Build options for configuration management software (Chef, Puppet, Ansible, and Salt)
 
 Using the API to build a server with a core option passed does not
 conflict with configuration management software. Such builds have a
@@ -168,6 +166,3 @@ key will have one of the following values:
 
 When the metadata key is set to **Complete**, you can begin your
 configuration management.
-
-
-

@@ -1,12 +1,12 @@
 ---
 permalink: set-up-custom-error-messages-in-aspnet-on-cloud-sites/
-node_id: 614
+audit_date:
 title: Set up custom error messages in ASP.NET on Cloud Sites
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-06-23'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2016-06-23'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -34,11 +34,11 @@ this example:
 The following example is for ASP.NET 2.0 to 3.5 without SP1:
 
     <configuration>
-           <system.web>
-              <customErrors mode="On" defaultRedirect="~/error.html" />
+      <system.web>
+          <customErrors mode="On" defaultRedirect="~/error.html" />
 
-           </system.web>
-        </configuration>
+      </system.web>
+    </configuration>
 
 For more information about security, see the following ASP.NET security
 references:

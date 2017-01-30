@@ -1,12 +1,12 @@
 ---
 permalink: information-for-ms-sql-changes/
-node_id: 4728
+audit_date:
 title: Information for MS SQL changes
 type: article
 created_date: '2015-06-25'
 created_by: Alonzo Garza
-last_modified_date: '2016-01-04'
-last_modified_by: Nate Archer
+last_modified_date: '2016-06-20'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -37,8 +37,8 @@ product_url: cloud-sites
     we will be migrating SQL Server 2012 and SQL Server 2014 over to the
     new environment.
 -   We will create an alias from the old hostname to the new
-    hostname automatically. **Note:** *In the future we will deprecate
-    the former hostnames at end of Q2 2016.*
+    hostname automatically. **Note:** *We will deprecate the former hostnames
+    at a future date.*
 -   Cloud Database instances are not subject to this migration.
 
 ### How does this affect me?
@@ -67,14 +67,12 @@ product_url: cloud-sites
 
 #### How do I reference my database IP information?
 
--   Log into your Cloud Sites control panel at
-    [manage.rackspacecloud.com](http://manage.rackspacecloud.com)
--   Click on **Hosting > Cloud Sites** and select the domain
-    under which the database was created
--   From the domain details page click on the **Features*** tab and select
-    the active database you wish to reference:
-
-  <img src="{% asset_path cloud-sites/information-for-ms-sql-changes/MSSQL.png %}" alt="" />
+1. Log in to your Cloud Sites control panel at
+   [manage.rackspacecloud.com](http://manage.rackspacecloud.com)
+2. Click on **Hosting > Cloud Sites** and select the domain
+   under which the database was created
+3. From the domain details page click on the **Features*** tab and select
+   the active database you wish to reference.
 
 #### Will my database content be affected after the maintenance?
 

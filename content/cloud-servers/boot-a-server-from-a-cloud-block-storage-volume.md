@@ -1,23 +1,21 @@
 ---
 permalink: boot-a-server-from-a-cloud-block-storage-volume/
-node_id: 4212
+audit_date:
 title: Boot a server from a Cloud Block Storage volume
 type: article
 created_date: '2014-08-26'
 created_by: Trey Hoehne
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-09-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Note**: Large Snapshots will not work with boot from volume. Currently snapshots have a min_disk based on the flavor size for example 160GB. Nova expands the file system to fill that entire vhd, qemu-img cannot handle files that are 127GB and larger. This means that if the flavor from which a snapshot was taken has a disk size or the min_disk is >= 127GB, that snapshot will not work.  This will result in a HTTP 412 invalid image when done via the API.
+**Note:** Large Snapshots will not work with boot from volume. Currently snapshots have a min_disk based on the flavor size for example 160GB. Nova expands the file system to fill that entire vhd, qemu-img cannot handle files that are 127GB and larger. This means that if the flavor from which a snapshot was taken has a disk size or the min_disk is >= 127GB, that snapshot will not work.  This will result in a HTTP 412 invalid image when done via the API.
 
 You can now boot most cloud servers from a network-attached [Cloud Block Storage](http://www.rackspace.com/cloud/block-storage/) volume. This feature enables you to boot a server from a remotely attached volume, which moves the system disk from local to remote. Separating the system disk from the server allows for future diskless flavors, features such as "shelving," and improvements in managing and recovering from server outages.
 
-<img src="{% asset_path cloud-servers/boot-a-server-from-a-cloud-block-storage-volume/1424-1.png %}" alt="" />
-
-**Note:** You cannot boot first-generation or standard servers from a Cloud Block Storage volume. Standard servers support local boot systems only.
+**Note:** You cannot boot standard servers from a Cloud Block Storage volume. Standard servers support local boot systems only.
 
 ### Benefits
 
@@ -31,13 +29,7 @@ You can get started through the [Control Panel](https://mycloud.rackspace.com) o
 
 ### Setup options
 
-Servers have a local system and can have one or more data disks depending on the flavor.
-
-<img src="{% asset_path cloud-servers/boot-a-server-from-a-cloud-block-storage-volume/1424-2.png %}" alt="" />
-
-Additional remote data volumes can be attached to a server; however, the local system and data are always present.
-
-<img src="{% asset_path cloud-servers/boot-a-server-from-a-cloud-block-storage-volume/1424-3.png %}" alt="" />
+Servers have a local system and can have one or more data disks depending on the flavor. Additional remote data volumes can be attached to a server; however, the local system and data are always present.
 
 Booting from a remote volume moves the system disk off the local server. The local data disk will still be present if the flavor has one.
 
@@ -45,17 +37,15 @@ Booting from a remote volume moves the system disk off the local server. The loc
 
 Booting from a volume requires a Cloud Block Storage volume built from a valid image or a volume cloned from an existing bootable volume. These volumes are charged at the current Cloud Block Storage rates and can be configured to persist after server deletion.
 
-### Volume preparation
-
-<img src="{% asset_path cloud-servers/boot-a-server-from-a-cloud-block-storage-volume/1424-4.png %}" alt="" />
+#### Volume preparation
 
 Server images are in a VHD file format, but Cloud Block Storage requires them to be in RAW format. When a user specifies the volume type, size, and image ID for a volume, the request is sent to Cloud Block Storage. Cloud Block Storage then sends the request to an available storage node that has capacity, and the node pulls down the image and begins the conversion process. Only one conversion process can be performed at a time on a storage node; this has been identified as a potential bottleneck in the process.
 
-A volume must be created equal to or larger than the <code>min_disk</code> value on an image.
+A volume must be created equal to or larger than the `min_disk` value on an image.
 
-After the volume is prepared, its bootable flag is set to <code>True</code>, and the volume is available to boot from.
+After the volume is prepared, its bootable flag is set to `True`, and the volume is available to boot from.
 
-### Boot a server from a volume (Cloud Control Panel)
+#### Boot a server from a volume (Cloud Control Panel)
 
 Use the following steps to boot a server from a Cloud Block Storage volume through the Cloud Control Panel.
 
@@ -71,9 +61,7 @@ Use the following steps to boot a server from a Cloud Block Storage volume throu
 
 After you create the server, your volume is prepared from the selected image.
 
-If you delete your server, the volume persists and is available when you create a new server (only through the API or the nova client at this time).
-
-<img src="{% asset_path cloud-servers/boot-a-server-from-a-cloud-block-storage-volume/1424-7.png %}" alt="" />
+If you delete your server, the volume persists and is available as a selectable image when you create a new server.
 
 You can also see the volume listed on the **Block Storage** tab.
 
@@ -86,7 +74,6 @@ Use the following API commands to boot a server from a Cloud Block Storage volum
 The API provides two different methods to boot from a volume. One option is a two-step method that separates volume creation from boot, and the other is an all-in-one method that combines the steps into one step.
 
 **Note:** OpenStack community documentation for this function using the python nova client is located [here](http://docs.openstack.org/user-guide/content/create_volume_from_image_and_boot.html).
-
 
 #### Prepare the volume independently (option 1)
 

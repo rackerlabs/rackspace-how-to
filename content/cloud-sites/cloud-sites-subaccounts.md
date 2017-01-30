@@ -1,12 +1,12 @@
 ---
-permalink: cloud-sites-subaccounts/
-node_id: 1129
-title: Cloud Sites subaccounts
+permalink: getting-started-with-cloud-sites-set-up-site-security-with-subaccounts/
+audit_date:
+title: Set up site security with Cloud Sites subaccounts
 type: article
 created_date: '2011-06-15'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-07-12'
+last_modified_by: Kyle Laffoon
 product: Cloud Sites
 product_url: cloud-sites
 ---
@@ -146,8 +146,6 @@ Panel as follows
 2.  Click the **Subaccounts** tab.
 3.  Click a subaccount name to display the **General Settings** tab for
     the subaccount.
-
-  <img src="{% asset_path cloud-sites/cloud-sites-subaccounts/edit_subaccount.png %}" alt="" />
 
 On this tab you can complete the following actions:
 

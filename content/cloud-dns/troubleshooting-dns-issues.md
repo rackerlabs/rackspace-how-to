@@ -1,14 +1,14 @@
 ---
 permalink: troubleshooting-dns-issues/
-node_id: 1447
+audit_date:
 title: Troubleshooting DNS issues
 type: article
 created_date: '2012-06-27'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
+last_modified_date: '2016-04-13'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
+product: Cloud DNS
+product_url: cloud-dns
 ---
 
 To troubleshoot Domain Name System (DNS) issues, it is useful to have at
@@ -23,28 +23,26 @@ Your registrar controls where a lookup is directed when someone tries to
 check a record related to your domain. If you want to change where your
 records are hosted, you must update the location with your registrar. To
 check where your records are currently hosted, you can check your domain
-against the **whois** database system. With whois, you can find out
+against the WHOIS database system. With WHOIS, you can find out
 information about the ownership of a domain.
 
 ### Checking domain registration details
 
-To check a domain with whois, you can use the whois command on both
+To check a domain with WHOIS, use the `whois` command on both
 Linux and Windows. The output is essentially identical on both systems.
 
--   **On Linux,** the whois command should be installed by default.
+-   **On Linux,** the `whois` command should be installed by default.
 -   **On Windows**, if the application is not already installed, you can
-    [download
-    it](http://technet.microsoft.com/en-us/sysinternals/bb897435.aspx) from Microsoft.
+    [download it](http://technet.microsoft.com/en-us/sysinternals/bb897435.aspx) from Microsoft.
     The application does not have an installer, so after you extract it,
     open the command prompt and navigate to the folder where it is
     located before running it.
 
-
-The formatting of the output from whois databases is not standardized
+The formatting of the output from WHOIS databases is not standardized
 because the information is distributed across a number of sources.
 However, the responses should contain similar information, such as
 registrar, name servers, and date registered. The following example
-shows the whois information for rackspace.co.uk:
+shows the WHOIS information for **rackspace.co.uk**:
 
     $ whois rackspace.co.uk
 
@@ -100,8 +98,6 @@ shows the whois information for rackspace.co.uk:
     limits. The data is provided on an 'as-is' basis and may lag behind the
     register. Access may be withdrawn or restricted at any time.
 
-
-
 Important sections of the output for troubleshooting are as follows:
 
 -   **Registrant:** The owner of the domain (if this is your domain,
@@ -128,31 +124,23 @@ Important sections of the output for troubleshooting are as follows:
     this information is not correct, you must contact the company from
     which you purchased the domain to update the details; generally a
     web-based control panel is provided for self-service. If you want to
-    host your DNS records with Rackspace, see [Rackspace Cloud
-    Essentials - What Are Your Name
-    Servers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
+    host your DNS records with Rackspace, see [Rackspace Cloud Essentials - What Are Your Name Servers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
     for details.
 
 To see all the records that are currently being hosted for your domain,
 you must look at the interface provided by your DNS hosting provider.
 Most name servers won't allow someone who doesn't own the domain to
 request a list of all the records for it. If the domain is hosted on
-Rackspace Cloud, you can find instructions in [Create DNS Records for
-cloud servers with the Control
-Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
+Rackspace Cloud, you can find instructions in [Create DNS Records for cloud servers with the Control Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 
 ### DNS lookups
 
 To confirm that a domain name resolves to the correct IP address, Linux
-and Windows provide commandline tools. For Linux, dig is commonly used
-and for Windows, nslookup is the built-in command.
+and Windows provide command line tools. For Linux, `dig` is commonly used
+and for Windows, `nslookup` is the built-in command.
 
-The following article shows you how to check for a record, see if it's
-cached, confirm whether it matched the authoritative name server's copy,
-and understand the output of the tools:
-
--   [nslookup
-    guide](/how-to/nslookup-checking-dns-records-on-windows)
+-  [Using dig to query name servers](/how-to/using-dig-to-query-nameservers)
+-  [Check DNS records on Windows with nslookup](/how-to/nslookup-checking-dns-records-on-windows)
 
 To get an indication of how a record is cached around the world, you can
 use the third-party website <http://www.whatsmydns.net/> . You specify
@@ -168,9 +156,9 @@ the records are cached before checking for a new version.
 If the DNS issue is specific to a single computer, one other thing to
 bear in mind is the **hosts** file stored on that machine. This file
 contains a list of hostnames and IP addresses that your computer checks,
-generally before doing a DNS lookup. nslookup and dig do not check this
-list of hostnames. So, if the IP address your application (for examplet,
-ping) is using does not match what is listed in the look up response,
+generally before doing a DNS lookup. `nslookup` and `dig` do not check this
+list of hostnames. So, if the IP address your application (for example,
+`ping`) is using does not match what is listed in the look up response,
 this mismatch may be the cause.
 
 The locations of the files are as follows:

@@ -1,30 +1,28 @@
 ---
 permalink: high-availability-for-cloud-databases/
-node_id: 4708
+audit_date:
 title: High Availability for Cloud Databases
 type: article
 created_date: '2015-06-10'
 created_by: Neha Verma
-last_modified_date: '2015-12-01'
-last_modified_by: Mike Asthalter
+last_modified_date: '2016-08-11'
+last_modified_by: Steve Croce
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
 High Availability for Cloud Databases means that Cloud Databases users
 can run their critical production workloads without worrying about the
-database becoming unavailable. It improves the reliability of running a
+database becoming unavailable due to the failure of a database component. It improves the reliability of running a
 database in the cloud environment by minimizing downtime and ensuring
-that the application is never down for more than a fraction of a second.
+that the application is never down for more than a few seconds in the event of a failure.
 
 A Cloud Databases High Availability (HA) instance group includes a
 source database instance with one or two replicas. For a true HA setup,
-we recommend that you have two replicas. In the future, we will increase
-the limit on the maximum number of replicas. There is no design
-limitation for the maximum number of replicas. If the source database
+we recommend two replicas. If the source database
 instance becomes unavailable, an automatic failover is initiated to one
 of the replicas. The automatic failover and promotion of the new replica
-is completed within a short downtime (approximately 10-30 seconds).
+is completed in approximately 10-30 seconds.
 
 Currently, HA is supported for MySQL 5.6, Percona 5.6, MariaDB 10, and later versions.
 
@@ -33,15 +31,15 @@ Currently, HA is supported for MySQL 5.6, Percona 5.6, MariaDB 10, and later ver
 -   For critical application workloads, a couple of minutes of
     application downtime can result in huge revenue losses. Users can
     use Cloud Databases HA instances to ensure that their database is
-    always available and will only experience a small amount of downtime
+    highly-available and will only experience a small amount of downtime
     in case of failover.
 
 -   For read-heavy workloads, to improve performance Cloud Databases
     users can redirect writes and reads to source and replica instances
-    (within the HA setup) respectively.
+    (within the HA setup) respectively and reduce the load on the master instance.
 
 **Note:** The user's application must be able to direct the reads and
-writes to a specific endpoint.
+writes to a specific port.
 
 ### Technical/architecture details
 
@@ -50,8 +48,7 @@ MySQL](https://code.google.com/p/mysql-master-ha/) functionality for
 source monitoring, automatic failover, and replica promotion. The
 [replication setup is
 semi-synchronous](https://dev.mysql.com/doc/refman/5.6/en/replication-semisync.html)
-and is set up using GTIDs (for MySQL, Percona, and without GTID
-for MariaDB) between one source and one or two replicas. To improve
+and is set up using GTIDs (for MySQL, Percona; MariaDB does not use GTIDs) between one source and one or two replicas. To improve
 the robustness of the system, the source and replicas are provisioned on
 separate hosts.
 
@@ -71,7 +68,7 @@ source. If some of the replicas have not received the latest relay log
 events, MHA automatically identifies differential relay log events from
 the latest replica and applies them to the other replicas. MHA also
 triggers a script that switches the new source out of the read-only pool
-and updates the write pool. Total downtime is around 10-30 seconds.
+and updates the write pool. The total process is around 10-30 seconds.
 
 **Figure 1. Cloud Databases HA setup**
 <img src="{% asset_path cloud-databases/high-availability-for-cloud-databases/HighAvailabilityforCloudDatabases1b.png %}" width="818" height="605" />
@@ -87,16 +84,16 @@ guide](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#
 
 -   By default, access to an HA instance via the VIP is blocked. To access an HA
     instance, you must explicitly add an ACL that specifies the IP
-    address to grant access for.
+    address(es) to grant access for. ACLs can be set via the API or the Cloud Control Panel.
 -   The `networks` property associated with an HA instance (obtained by
     listing the details of an HA instance) provides the addresses and ports for
     accessing the HA instance. The single access point (VIP) of the HA
     instance is specified as the `address`. All the reads and writes
     directed to the VIP and port 3306 will be sent to the source instance. You can also direct reads to replicas using
     port 3307.
--   The only allowed operations on instances that are part of the HA
-    group are Create users and Create databases (on source only). All
-    other operations are blocked on these instances.
+-   On HA groups, most service actions (resize, configuration, etc.) must be applied to the HA group UUID rather than the individual database instances within the cluster. The only allowed operations on instances that are part of the HA
+    group are Create users and Create databases (on the source/master instance). All
+    other operations are blocked on the instances.
 -   In case a failover occurs, there will be an automatic failover to
     the replica closest to the failed database instance. Cloud Databases
     will remove the failed database instance. A new replica of the same
@@ -107,10 +104,10 @@ guide](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#
     and would switch to `ACTIVE` once the node has been
     successfully added.
 
-**Warning!** Automatically adding a new replica node would
-restart the MHA manager service (which monitors the source/replica
+**Warning!** Automatically adding a new replica node
+restarts the MHA manager service (which monitors the source/replica
 instances to trigger failover) and the haproxy service on the load
-balancer nodes.
+balancer nodes, so any API actions issued to the cluster during the replica add part of the process may not succeed.
 
 **Recommendations:**
 
@@ -128,9 +125,10 @@ balancer nodes.
     and greater.
 -   The source and replicas must have the same size and flavor.
 -   The source and replicas are created in the same region.
--   Backup, resize, and custom configuration commands and changes must be applied to the overall HA group using the group UUID. Applying updates across groups ensures that all instances in the group have the same configuration. Backup commands select the closest replica and create a backup from it. Backup, resize, and custom configuration commands and changes against the individual instances in the HA group are not allowed. 
--   There will be a small delay between the source and the replicas.
+-   Backup, resize, and custom configuration commands and changes must be applied to the overall HA group using the group UUID. Applying updates across groups ensures that all instances in the group have the same configuration. Backup commands select the most up-to-date replica and create a backup from it. Backup, resize, and custom configuration commands and changes against the individual instances in the HA group are not allowed. 
+-   There will be a small delay between the source and the replicas, so ensure all reads that require strong data consistency are made to the source/master instance (port 3306).
 -   Initial setup of the HA group might take anywhere between 5-10 minutes, depending on
     the number of replicas. Because it requires creation of multiple
     nodes, allow some time for the HA instance's `status` property to
     display as ACTIVE when performing a GET in the API.
+-   Currently the instance listing in the cloud control panel shows the master instance for HA groups. To take action on the cluster or view cluster level information, please click the instance name to go to the cluster details page.

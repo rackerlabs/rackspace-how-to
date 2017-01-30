@@ -1,6 +1,6 @@
 ---
 permalink: dedicated-vmware-vcloud-faq/
-node_id: 4512
+audit_date:
 title: Rackspace Private Cloud Powered by VMware vCloud FAQ
 type: article
 created_date: '2015-01-29'
@@ -13,7 +13,7 @@ product_url: managed-vmware-services
 
 Rackspace Private Cloud Powered by VMware vCloud&reg; (hereafter refered to as Dedicated vCloud) is a private cloud offering based on VMware services hosted on a dedicated management cluster. This list of frequently asked questions provides details about Dedicated vCloud features and management options for vApps and virtual machines (VMs).
 
-For more information, see the [Dedicated vCloud product page](http://www.rackspace.com/managed-virtualization/vmware-vcloud).
+For more information, see the [Dedicated vCloud product page](https://www.rackspace.com/managed-hosting/vmware/vmware-vcloud).
 
 ### General
 
@@ -65,7 +65,7 @@ By default, vCloud authenticates to the Rackspace Intensive domain. Rackspace ca
 
 #### What restrictions are there on vCloud features? {#access-restrictions}
 
-Customer role limitations are described in the features and permissions tables in our [Dedicated vCloud Handbook](https://developer.rackspace.com/docs/private-cloud/dedicated-vcloud/vcloud-handbook-v1.5/).
+Customer role limitations are described in the features and permissions tables in our [Dedicated vCloud Handbook](https://developer.rackspace.com/docs/managed-vmware-services/vcloud/v1.5/).
 
 ----
 

@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-cloud-essentials-rescue-mode-on-windows-cloud-servers-behaviors/
-node_id: 423
+audit_date:
 title: Rackspace Cloud Essentials - Rescue Mode on Windows Cloud Servers behaviors
 type: article
 created_date: '2012-03-01'
 created_by: Rackspace Support
-last_modified_date: '2015-11-06'
-last_modified_by: Nate Archer
+last_modified_date: '2016-07-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -18,8 +18,6 @@ When you enter your server into Rescue Mode, your original disk volume is set as
 After the rescue image has completed building, a temporary password is presented. You will need to copy password if you wish to enter into your server in rescue mode through an SSH client. After entering Rescue Mode, you will have 24 hours to repair your instance before it automatically reverts back to the previous instance.
 
 **Note:** Some versions of the Windows OS will modify the original disk signature when mounted a secondary drive. If you reboot, you'll probably get a `winload.exe` error or a `0xc000000e` error. This occurs with the BCD boot loader and not with the NTLDR loader. If that happens, you can re-rescue the system, and fix up the bootloader so it has the proper signature. Please see the instructions below for your OS type.
-
-<img src="{% asset_path cloud-servers/rackspace-cloud-essentials-rescue-mode-on-windows-cloud-servers-behaviors/winresfail.jpg %}" alt="" />
 
 ### Windows 2008 SP2 rescue behavior
 

@@ -1,6 +1,6 @@
 ---
 permalink: rewrite-urls-from-aspnet-on-cloud-sites/
-node_id: 642
+audit_date:
 title: Rewrite URLs from ASP.NET on Cloud Sites
 type: article
 created_date: '2011-03-16'

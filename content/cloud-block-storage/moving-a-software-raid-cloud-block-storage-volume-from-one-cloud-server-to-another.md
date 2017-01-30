@@ -1,12 +1,12 @@
 ---
 permalink: moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another/
-node_id: 3904
-title: Move a software RAID Cloud Block Storage volume from one Cloud server to another
+audit_date:
+title: Move a Cloud Block Storage volume between servers
 type: article
 created_date: '2014-02-14'
 created_by: Trenton Guthrie
-last_modified_date: '2016-01-22'
-last_modified_by: Catherine Richardson
+last_modified_date: '2016-06-06'
+last_modified_by: Nate Archer
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -64,17 +64,10 @@ Actions gear next to each volume that you want to detach, and select
 
 5. In the warning pop-up box, click **Detach Volume**.
 
-  <img src="{% asset_path cloud-block-storage/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another/RAIDImage1.png %}" width="586" height="251" />
-
-  <img src="{% asset_path cloud-block-storage/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another/RAIDImage2.png %}" width="620" height="269" />
-
 ### Attach the RAID volume
 
 1. Attach the RAID volume to the **Destination** server.
 
-  <img src="{% asset_path cloud-block-storage/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another/RAIDImage3.png %}" width="626" height="234" />
-
-  <img src="{% asset_path cloud-block-storage/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another/RAIDImage4.png %}" width="627" height="214" />
 
 2. Run `fdisk -l` to see the device IDs of the newly attached Cloud Block
 Storage volumes.

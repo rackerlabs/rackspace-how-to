@@ -1,7 +1,7 @@
 ---
 permalink: how-to-install-a-lamp-stack-on-centos-fedora-or-red-hat/
-node_id: 4168
-title: 'How to Install a LAMP stack on CentOS, Fedora, or Red Hat'
+audit_date:
+title: 'Install a LAMP stack on CentOS, Fedora, or Red Hat'
 type: article
 created_date: '2014-08-04'
 created_by: Rackspace Support
@@ -11,8 +11,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article provides instructions for installing a LAMP (Linux, Apache, MySQL, PHP) stack on your server.
-Linux (CentOS, Fedora, or Red Hat Enterprise Linux) is your operating
+This article provides instructions for installing a LAMP (Linux, Apache, MySQL, PHP) stack 
+on your server. Linux (CentOS, Fedora, or Red Hat Enterprise Linux) is your operating
 system, and Apache is your web daemon, which serves information that is
 stored in your MySQL database through PHP scripting for your users. By
 the end of this article, you will have a fully operational LAMP server,

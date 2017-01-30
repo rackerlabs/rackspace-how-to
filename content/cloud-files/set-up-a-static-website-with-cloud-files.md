@@ -1,12 +1,12 @@
 ---
 permalink: set-up-a-static-website-with-cloud-files/
-node_id: 5099
+audit_date:
 title: Set up a static website with Cloud Files
 type: article
 created_date: '2016-01-07'
 created_by: Nate Archer
-last_modified_date: '2016-01-13'
-last_modified_by: Nate Archer
+last_modified_date: '2016-04-18'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -17,15 +17,14 @@ Rackspace Cloud Files service.
 
 ### Create a Cloud File container to house your site
 
-1.  Log in to the [Cloud Control
-    Panel](https://mycloud.rackspace.com/).
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
-2.  At the top of the page, select **Storage &gt; Files.**
+2.  At the top of the page, select **Storage > Files**.
 
-3.  On the Cloud Files/Containers page, click **Create Container**
+3.  On the Cloud Files/Containers page, click **Create Container**.
 
 4.  Type a name for your container and select the region where you want
-    to host your site
+    to host your site.
 
 5.  Select the **Static Website** option and then click
     **Create Container**.
@@ -50,7 +49,7 @@ Now your static website content is uploaded to your Cloud Files
 containers. However, to access your static website, you need the CDN
 URL.
 
-1.  In the control panel, go the the Cloud Files / Containers list.
+1.  In the control panel, go the the Cloud Files/Containers list.
 
 2.  Click the gear icon next to the name of your container and select
     **View All Links**.
@@ -64,12 +63,12 @@ URL.
 
 ### Next Steps
 
-If you want to make the URL of your static website more user firendly,
+If you want to make the URL of your static website more user friendly,
 you can set up a CNAME record with your DNS registrar. In order to do
 so, you need to copy the **target (domain)** from your static website
 container. To find your target, perform the following steps:
 
-1.  In the Cloud Files / Containers list, click the gear icon next to
+1.  In the Cloud Files/Containers list, click the gear icon next to
     your static website container and select **View Website
     Settings**.
 
@@ -84,8 +83,4 @@ container. To find your target, perform the following steps:
     - [CloudFlare](https://support.cloudflare.com/hc/en-us/articles/200168706-How-do-I-do-CNAME-setup-)
 
 You can also create your own CNAME using the Rackspace DNS service. For
-instructions, see [Create DNS Records for cloud servers with the Control
-Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
-
-
-
+instructions, see [Create DNS Records for cloud servers with the Control Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).

@@ -1,6 +1,6 @@
 ---
 permalink: notifications-for-unprocessed-payments-or-declined-credit-cards/
-node_id: 225
+audit_date:
 title: Notifications for unprocessed payments or declined credit cards
 type: article
 created_date: '2011-03-16'

@@ -1,7 +1,7 @@
 ---
 permalink: getting-started-with-rackspace-monitoring-cli/
-node_id: 1373
-title: Getting Started with Rackspace Monitoring CLI
+audit_date:
+title: Get Started with Rackspace Monitoring CLI
 type: article
 created_date: '2012-04-04'
 created_by: Rackspace Support
@@ -15,7 +15,8 @@ Rackspace Monitoring is an API driven cloud service built for infrastructure
 monitoring.  It offers a simple yet powerful feature set, allowing
 extreme flexibility in configuration and execution.
 
-This guide is intended to be a supplement to the [Rackspace Monitoriing Developer Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/),
+This guide is intended to be a supplement to the 
+[Rackspace Monitoriing Developer Guide](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/),
 not a replacement for it.
 
 Getting started with an API-based monitoring system can be daunting when
