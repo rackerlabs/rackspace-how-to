@@ -1,5 +1,5 @@
 <div class="article-list">
-  {% for article in site.pages|sort(true,false,'title') %}
+  {% for article in site.pages|sort(attribute='title') %}
     {% if article.product == page.product and article.title != page.title %}
     <div class="article-entry">
       <h4>
