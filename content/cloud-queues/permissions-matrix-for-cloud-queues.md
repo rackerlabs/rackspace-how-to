@@ -5,7 +5,7 @@ title: Permissions Matrix for Cloud Queues
 type: article
 created_date: '2013-08-19'
 created_by: Renee Rendon
-last_modified_date: '2017-01-26'
+last_modified_date: '2017-02-01'
 last_modified_by: Nate Archer
 product: Cloud Queues
 product_url: cloud-queues
@@ -25,37 +25,37 @@ and the roles that are supported.
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Get Home Document |	`GET {version}` |	**Observer, Creator, Admin** | Gets the home document.
+Get home document |	`GET {version}` |	**Observer, Creator, Admin** | Gets the home document.
 
 ### Queues operations
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-List Queues	| `GET/ {version}/queues?marker=string&limit=integer&detailed=boolean` | **Observer, Creator, Admin**	| Lists queues.
-Create Queue | `PUT/ {version}/queues/{queue_name}` | **Admin**	| Creates a queue.
-Delete Queue | `DELETE/ {version}/queues/{queue_name}` | **Admin** | Deletes the queue.
-Queue Existence |	`GET/ {version}/queues/{queue_name}` |**Observer, Creator, Admin**	| Verifies whether the specified queue exists.
-Set Queue Metadata | `PUT/ {version}/queues/{queue_name}/metadata` | **Creator, Admin** | Sets queue metadata.
-Show Queue Metadata | `GET/ {version}/queues/{queue_name}/metadata` | **Observer, Creator, Admin** |	Returns queue metadata.
-Show Queue Stats | `GET/ {version}/queues/{queue_name}/stats` | **Observer, Creator, Admin** | Returns queue statistics.
+List queues	| `GET/ {version}/{project_id}/queues` | **Observer, Creator, Admin**	| Lists queues.
+Create queue | `PUT/ {version}/{project_id}/queues/{queue_name}` | **Admin**	| Creates a queue.
+Delete queue | `DELETE/ {version}/{project_id}/queues/{queue_name}` | **Admin** | Deletes the queue.
+Check queue existence |	`GET/ {version}/{project_id}/queues/{queue_name}` |**Observer, Creator, Admin**	| Verifies whether the specified queue exists.
+Set queue metadata | `PUT/ {version}/{project_id}/queues/{queue_name}/metadata` | **Creator, Admin** | Sets queue metadata.
+Show Queue metadata | `GET/ {version}/{project_id}/queues/{queue_name}/metadata` | **Observer, Creator, Admin** |	Returns queue metadata.
+Show queue stats | `GET/ {version}/{project_id}/queues/{queue_name}/stats` | **Observer, Creator, Admin** | Returns queue statistics.
 
 ### Message operations
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Post Messages | `POST/ {version}/queues/{queue_name}/messages` | **Creator, Admin** | Posts the message or messages for the specified queue.
-Get Messages | `GET/ {version}/queues/{queue_name}/messages?marker=string&limit=integer&echo+=boolean&include_claimed=boolean` | **Creator, Admin** | Gets the message or messages in the specified queue.
-Get Messages by ID | `GET/ {version}/queues/{queue_name}/messages/{messageId}?claim_id=string` | **Observer, Creator, Admin** | Gets the specified set of messages from the specified queue.
-Bulk-delete Messages by ID | `DELETE /{version}/queues/{queue_name}/messages ?ids=string` | **Creator, Admin** | Bulk-deletes for messages.
-Show Message Details | `GET/ {version}/queues/{queue_name}/messages?ids=string&claim_id=string` | **Observer, Creator, Admin** | Shows details for the specified message from the specified queue.
-Delete Message | `DELETE/ {version}/queues/{queue_name}/messages?claim_id=string` | **Admin**	| Deletes the specified message from the specified queue.
+Post messages | `POST/ {version}/{project_id}/queues/{queue_name}/messages` | **Creator, Admin** | Posts the message or messages for the specified queue.
+Get messages | `GET/ {version}/{project_id}/queues/{queue_name}/messages` | **Creator, Admin** | Gets the message or messages in the specified queue.
+Get messages by ID | `GET/ {version}/{project_id}/queues/{queue_name}/messages/{messageId}` | **Observer, Creator, Admin** | Gets the specified set of messages from the specified queue.
+Bulk-delete messages by ID | `DELETE /{version}/queues/{queue_name}/messages` | **Creator, Admin** | Bulk-deletes for messages.
+Show message details | `GET/ {version}/{project_id}/queues/{queue_name}/messages/{messageId}` | **Observer, Creator, Admin** | Shows details for the specified message from the specified queue.
+Delete message | `DELETE/ {version}/{project_id}/queues/{queue_name}/messages/{messageId}` | **Admin**	| Deletes the specified message from the specified queue.
 
 
 ### Claim operations
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Claim Messages | `POST/ {version}/queues/{queue_name}/claim?limit=integer` | **Creator, Admin** | Claims a set of messages from the specified queue.
-Query Claim	| `GET/ {version}/queues/{queue_name}/claims/{claimId}` | **Observer, Creator, Admin** |	Queries the specified claim for the specified queue.
-Update Claim | `PATCH/ {version}/queues/{queue_name}/claims/{claimId}` | **Creator, Admin** | Updates the specified claim for the specified queue.
-Release Claim | `DELETE/ {version}/queues/{queue_name}/claims/{claimId}` | **Creator, Admin** | Releases the specified claim for the specified queue.
+Claim messages | `POST/ {version}/{project_id}/queues/{queue_name}/claim` | **Creator, Admin** | Claims a set of messages from the specified queue.
+Query claim	| `GET/ {version}/{project_id}/queues/{queue_name}/claims/{claimId}` | **Observer, Creator, Admin** |	Queries the specified claim for the specified queue.
+Update claim | `PATCH/ {version}/{project_id}/queues/{queue_name}/claims/{claimId}` | **Creator, Admin** | Updates the specified claim for the specified queue.
+Release claim | `DELETE/ {version}/{project_id}/queues/{queue_name}/claims/{claimId}` | **Creator, Admin** | Releases the specified claim for the specified queue.
