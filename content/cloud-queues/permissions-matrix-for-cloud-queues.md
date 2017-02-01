@@ -25,7 +25,7 @@ and the roles that are supported.
 
 Method | API action | Role | Description
 --- | --- | --- | ---
-Get home document |	`GET {version}` |	**Observer, Creator, Admin** | Gets the home document.
+Get home document |	`GET {version}/{project_id}` |	**Observer, Creator, Admin** | Gets the home document.
 
 ### Queues operations
 
