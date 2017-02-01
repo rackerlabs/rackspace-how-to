@@ -5,7 +5,7 @@ title: Permissions matrix for Cloud Load Balancers
 type: article
 created_date: '2013-04-10'
 created_by: Renee Rendon
-last_modified_date: '2017-01-19'
+last_modified_date: '2017-02-01'
 last_modified_by: Laura Santamaria
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
@@ -18,8 +18,6 @@ The Cloud Load Balancers permissions matrix displays specific permissions for th
 -  **Observer** provides read-only access.
 
  The matrix displays the Cloud Load Balancers methods grouped by category, their corresponding RESTful API commands, and the RBAC roles that are supported.
-
-**Warning:** If SSL is enabled on a load balancer configured with nodes that are _not_ in the same datacenter, then decrypted traffic will be sent in clear text over the public Internet to the external nodes and will no longer be secure.
 
 ### Load balancer
 
