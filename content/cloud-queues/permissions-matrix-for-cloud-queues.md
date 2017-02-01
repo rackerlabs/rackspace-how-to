@@ -18,8 +18,7 @@ following roles:
 - **Creator** provides access to create, read, and update.
 - **Observer** provides read-only access.
 
-The matrix displays the Cloud Queues methods, their corresponding RESTful API commands,
-and the roles that are supported.
+The matrix displays the Cloud Queues methods, their corresponding RESTful API commands, and the roles that are supported.
 
 ### Home document operations
 
