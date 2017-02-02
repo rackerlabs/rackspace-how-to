@@ -1,7 +1,7 @@
 <div class="article-list">
   <!--testingtag-->
   {% for article in site.pages|dictsort(false,'value') %}
-    {% if article.product == page.product and article.title != page.title %}
+    {% if article.product == page.product and article.title == page.title %}
     <div class="article-entry">
       <h4>
         <a href="{{ site.baseurl }}{{ article.permalink }}">{{ article.title }}</a>
