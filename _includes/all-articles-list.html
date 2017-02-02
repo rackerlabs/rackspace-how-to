@@ -4,7 +4,7 @@
     {% if article.product == page.product and article.title != page.title %}
     <div class="article-entry">
       <h4>
-        <a href="{{ site.baseurl }}{{ article.permalink }}">{{ article.title }}</a>
+        <a href="{{ site.baseurl }}{{ article.permalink }}">{{ article.title }}[[{{ article.permalink }}]]</a>
       </h4>
     </div>
     {% endif %}
