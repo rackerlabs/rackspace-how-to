@@ -14,8 +14,6 @@ The archiving feature of Rackspace Cloud Office collects and stores external, in
 
 These articles will help you get started using Rackspace Email Archiving through Cloud Office.
 
-<hr />
-
 ###  Control Panel basics
 
 - [Cloud Office Control Panel overview](/how-to/cloud-office-control-panel-overview)

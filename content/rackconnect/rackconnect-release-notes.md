@@ -1,12 +1,12 @@
 ---
-permalink: /rackconnect/
+permalink: /rackconnect-release-notes/
 audit_date:
 title: RackConnect release notes
 type: article
 created_date: '2012-09-14'
 created_by: Jonathan Hogue
-last_modified_date: '2016-01-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-01-18'
+last_modified_by: Laura Santamaria
 product: RackConnect
 product_url: rackconnect
 ---

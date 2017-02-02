@@ -12,8 +12,6 @@ product_url: exchange
 
 Welcome to Microsoft Exchange hosted by Rackspace! Use this brief step-by-step guide to help you get started.
 
-<hr />
-
 ###  Control Panel basics
 
 - [Cloud Office Control Panel overview](/how-to/cloud-office-control-panel-overview)

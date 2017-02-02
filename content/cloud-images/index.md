@@ -12,8 +12,6 @@ product_url: cloud-images
 
 The Rackspace Cloud Images service offers retrieval, storage, and metadata assignment for Rackspace Cloud Server images.
 
-<hr />
-
 ###  Preparing images
 
 - [Preparing an image for import into the Rackspace open cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud)

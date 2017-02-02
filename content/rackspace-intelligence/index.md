@@ -11,8 +11,6 @@ product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
 
-<hr />
-
 Rackspace Intelligence for dedicated accounts differs from Rackspace Intelligence for Rackspace Cloud accounts in the way that several features are supported.
 
 For a side-by-side feature comparison, see [Differences between Rackspace Intelligence for cloud accounts and dedicated accounts](/how-to/differences-between-rackspace-intelligence-for-cloud-account-and-dedicated-account/).

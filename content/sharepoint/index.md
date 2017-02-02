@@ -10,7 +10,7 @@ product: Microsoft SharePoint
 product_url: sharepoint
 ---
 
-<p class="lead" markdown="1">Our hosted SharePoint service offers all of the benefits of an online SharePoint site plus access to Rackspace's renowned Fanatical Support.</p>
+Our hosted SharePoint service offers all of the benefits of an online SharePoint site plus access to Rackspace's renowned ***Fanatical Support***&reg;.
 
 <hr />
 
