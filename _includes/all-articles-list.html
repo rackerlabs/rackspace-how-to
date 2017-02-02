@@ -1,5 +1,5 @@
 <div class="article-list">
-  {% for article in site.pages|dictsort(false,'title') %}
+  {% for article in site.pages|dictsort(false, article.title) %}
     {% if article.product == page.product and article.title != page.title %}
     <div class="article-entry">
       <h4>
