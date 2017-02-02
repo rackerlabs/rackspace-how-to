@@ -1,6 +1,7 @@
 <div class="article-list">
+  <!--random tag to ensure Nexus fires?-->
   {% for article in site.pages|dictsort(site.pages,false,article.title) %}
-    {% if article.product == page.product and article.title == page.title %}
+    {% if article.product == page.product and article.title != page.title %}
     <div class="article-entry">
       <h4>
         <a href="{{ site.baseurl }}{{ article.permalink }}">{{ article.title }}</a>
