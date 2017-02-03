@@ -1,8 +1,8 @@
 <div class="article-list">
   <!--random tag to ensure Nexus fires?-->
-  {% for article in site.pages|sort(attribute='title') %}
+  {% for article in site.pages %}
     {% if article.product == page.product and article.title != page.title %}
-      {{ article | dump }}
+      {{ article | sort(attribute='title') }}
 <!--      <div class="article-entry">
         <h4>{{ article.title }}&nbsp;&nbsp;&nbsp;&nbsp;[[{{ article.permalink }}]]</h4>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;{{ article.name }}</p>
