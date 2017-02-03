@@ -54,7 +54,7 @@ Follow these steps to create a new article within a product folder of the **rack
 
 1. Go to the [Rackspace How-To content folder](https://github.com/rackerlabs/rackspace-how-to/tree/master/content) and click the product for which you want to create an article.
 
-2. Click **New file**.
+2. Click **Create new file**.
 
 3. Enter a name for your article in the text box at the end of the **rackspace-how-to/content/*productName*/** string. The name should be in the format **your-article-name.md** and should reflect the title of the article.
 
@@ -76,18 +76,18 @@ Follow these steps to create a new article within a product folder of the **rack
 
 6. When you have finished writing your article, review it in the **Preview** tab.
 
-7. Click **Propose new change**.
+7. At the bottom of the page, select "Create a new branch for this commit and start a pull request."
 
-8. Create a pull request (PR). On the "Comparing changes" page, check the following settings:
+8. Click **Propose new file**.
+
+9. Create a pull request (PR). On the "Open a pull request" page, check the following settings:
 
     - `base fork: rackerlabs/rackspace-how-to`
     - `base: master`
     - `head fork: {your-username}/rackspac...`
     - `compare: {your-branch}`
 
-   If the settings are not correct, use the drop down menus to select the correct settings.
-
-   If the settings are correct, click **Create pull request**.
+   If the settings are not correct, use the drop down menus to select the correct settings. The fork menus may not be present.
 
 10. Describe the reasons for your change in the comment box, than select **Create pull request**.
 
@@ -109,18 +109,20 @@ Follow these steps to edit an existing article within a product folder of the **
 
     **Note:** If you are using a desktop client or the command line, and you are forking or cloning the repository, be sure to make your changes in a new branch. Doing so ensures that you are producing a pull request (PR) rather than committing changes directly to the master.
 
-5. When you have finished editing the article, click **Propose file change**.
+5. When you have finished editing the article, review it in the **Preview** tab.
 
-6. On the "Comparing changes" page, check the following settings:
+6. At the bottom of the page, select "Create a new branch for this commit and start a pull request."
+
+7. Click **Propose file change**.
+
+8. On the "Comparing changes" page, check the following settings:
 
     - `base fork: rackerlabs/rackspace-how-to`
     - `base: master`
     - `head fork: {your-username}/rackspac...`
     - `compare: {your-branch}`
 
-   If the settings are not correct, use the drop down menus to select the correct settings.
-
-   If the settings are correct, click **Create pull request**.
+   If the settings are not correct, use the drop down menus to select the correct settings. The fork menus may not be present.
 
 7. Describe the changes that you made in a PR message.
 
@@ -149,7 +151,7 @@ You might be asked by a member of the editorial team to update your PR. Follow t
 
 6. Provide a brief description of the change.
 
-7. Click  the **Commit directly to the `your-branch-name` branch** option, and then click **Commit changes**.
+7. Click the **Commit directly to the `your-branch-name` branch** option, and then click **Commit changes**.
 
 The How-To team will comment on the PR if any more changes need to be made.
 
