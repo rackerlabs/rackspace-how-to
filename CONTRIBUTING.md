@@ -115,7 +115,7 @@ Follow these steps to edit an existing article within a product folder of the **
 
 7. Click **Propose file change**.
 
-8. On the "Comparing changes" page, check the following settings:
+8. On the "Open a pull request" page, check the following settings:
 
     - `base fork: rackerlabs/rackspace-how-to`
     - `base: master`
