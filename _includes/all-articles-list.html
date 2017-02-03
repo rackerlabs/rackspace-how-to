@@ -1,10 +1,10 @@
 <div class="article-list">
   <!--random tag to ensure Nexus fires?-->
-  {% set sortedList = site.pages %}
+{#  {% set sortedList = site.pages %}
   {% filter sort(false,false,'title') %}
     {{ sortedList }}
-  {% endfilter %}
-  {% for article in sortedList %}
+  {% endfilter %} #}
+  {% for article in site.pages | lower %}
     {% if article.product == page.product and article.title != page.title %}
       <div class="article-entry">
         <h4>{{ article.title }}&nbsp;&nbsp;&nbsp;&nbsp;[[{{ article.permalink }}]]</h4>
