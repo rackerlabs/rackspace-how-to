@@ -63,7 +63,7 @@ Method | API action | Role | Description
 List virtual IPs | `GET /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips` | **Admin,<br/>Creator,<br/>Observer** | Lists virtual IPs associated with the specified load balancer.
 Add virtual IP version 6 | `POST /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips` | **Admin,<br/>Creator** | Adds virtual IP version 6.
 Bulk-delete virtual IPs | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/`<br/>`virtualips?id='{virtualIpId}' & id='{virtualIpId}'` | **Admin** | Deletes the specified virtual IPs.
-Delete virtual IP | `DELTE /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}` | **Admin** | Deletes the specified virtual IP.
+Delete virtual IP | `DELETE /v1.0/{account}/loadbalancers/{loadBalancerId}/virtualips/{virtualIpId}` | **Admin** | Deletes the specified virtual IP.
 
 ### Allowed domains
 
