@@ -872,4 +872,10 @@ arithmetic. One of the key advantages to this sort of exponential
 increase in difficulty is that as computers get much faster, we only
 need to increase the size of our numbers slightly to keep pace.
 
-##### The Phi (or ?) Function
+##### The Phi (or \Phi) Function
+
+\Phi
+\phi
+\pi
+\Pi
+\theta
