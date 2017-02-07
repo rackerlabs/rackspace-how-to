@@ -1,6 +1,6 @@
 ---
 permalink: permissions-matrix-for-rackspace-monitoring/
-audit_date:
+audit_date: '2017-02-07'
 title: Permissions matrix for Rackspace Monitoring
 type: article
 created_date: '2013-04-10'
@@ -29,6 +29,7 @@ Update properties on an account| `PUT /v1.0/account` | **Admin** | Updates prope
 Get audit information	| `GET /v1.0/audits` | **Observer, Creator, Admin** | Returns audits information for the account.
 Get limits | `GET /v1.0/limits` | **Observer, Creator, Admin** | Returns account resource limits.
 Get usage | `GET /v1.0/usage` | **Observer, Creator, Admin** | Returns resource and rate limits for the account.
+
 
 ### Agents operations
 
@@ -66,31 +67,40 @@ Delete agent token | `DELETE /v1.0/agent_tokens/{tokenId}` | **Admin** | Deletes
 Create agent token | `POST /v1.0/agent_tokens` | **Observer, Creator, Admin** | Creates a new agent token.
 
 
-### Monitoring zones operations
+### Alarm operations
 
 Method 	| API action | Role | Description
 --- | --- | --- | ---
-List monitoring zones | `GET /v1.0/monitoring_zones` | **Observer, Creator, Admin** | Lists the monitoring zones for the account.
-Get monitoring zone by ID | `GET /v1.0/monitoring_zones/{monitoringZoneId}` | **Observer, Creator, Admin** | Gets information about the specified monitoring zone.
-Perform a traceroute from a monitoring zone | `POST /v1.0/monitoring_zones/{monitoringZoneId}/traceroute` | **Observer, Creator, Admin** | Performs a traceroute from a collector in the specified monitoring zones.
+List alarms | `GET /v1.0/entities/{entityId}/alarms` | **Observer, Creator, Admin** | Lists the alarms on the specified entity.
+Get alarm by ID | `GET /v1.0/entities/{entityId}/alarms/{alarmId}` | **Observer, Creator, Admin** | Gets information about the specified single alarm.
+Update alarm by ID| `PUT /v1.0/entities/{entityId}/alarms/{alarmId}` | **Admin** | Updates an alarm with the specified alarmId. Partial updates to an alarm are acceptable. You may specify only the parameters you would like to update.
+Delete alarm by ID | `DELETE /v1.0/entities/{entityId}/alarms/{alarmId}` | **Admin** | Deletes the specified alarm from the account.
+Create an alarm | `POST /v1.0/entities/{entityId}/alarms` | **Creator, Admin** | Creates a new alarm for the specified entity.
+Test an alarm | `POST /v1.0/entities/{entityId}/test-alarm` | **Observer, Creator, Admin** | Tests whether the alarm criteria is valid and shows how the alarm state is evaluated.
 
+
+### Alarm examples operations
+
+Method 	| API action | Role | Description
+--- | --- | --- | ---
+List alarm examples | `GET /v1.0/alarm_examples` | **Observer, Creator, Admin** | Returns a list of alarm examples.
+Get alarm example by ID| `GET /v1.0/alarm_examples/{alarmExampleId}` | **Observer, Creator, Admin** | Returns information about the specified alarm example.
+Evaluate alarm example | `POST /v1.0/alarm_examples/{alarmExampleId}` | **Observer, Creator, Admin** | Evaluates a specific alarm example.
+
+
+### Alarm notification history operations
+
+Method 	| API action | Role | Description
+--- | --- | --- | ---
+List alarm notification history | `GET /v1.0/entities/{entityId}/alarms/{alarmId}/notification_history` | **Observer, Creator, Admin** | Lists alarm notification history for the specified alarm.
+List alarm notification history by check ID | `GET /v1.0/entities/{entityId}/alarms/{alarmId}/notification_history/{checkId}` | **Observer, Creator, Admin** | Lists alarm notification history for the specified entity, alarm and check.
+List a single alarm notification | `GET /v1.0/entities/{entityId}/alarms/{alarmId}/notification_history/{checkId}/:uuid` | **Observer, Creator, Admin** | Retrieves a single alarm notification history item.
 
 ### Changelogs operation
 
 Method 	| API action | Role | Description
 --- | --- | --- | ---
 List alarm changelogs | `GET /v1.0/changelogs/alarms` | **Observer, Creator, Admin** | Lists alarm changelogs for the account.
-
-
-### Entities operations
-
-Method 	| API action | Role | Description
---- | --- | --- | ---
-List entities for an account | `GET /v1.0/entities` | **Observer, Creator, Admin** | Lists the entities for an account.
-Get an entity by ID | `GET /v1.0/entities/{entityId}` | **Observer, Creator, Admin** | Retrieves the current state of the specified entity.
-Update an entity by ID | `PUT /v1.0/entities/{entityId}` | **Admin** | Updates an entity specified by the entityId.
-Delete entity by ID | `DELETE /v1.0/entities/{entityId}` | **Admin** | Deletes the specified entity from your account. Also deletes any checks and alarms defined for that entity.
-Create an entity | `POST /v1.0/entities` | **Creator, Admin** | Creates a new entity.
 
 
 ### Check operations
@@ -106,33 +116,40 @@ Test an existing check | `POST /v1.0/entities/{entityId}/checks/{checkId}/test` 
 Test a check | `POST /v1.0/entities/{entityId}/test-check` | **Observer Creator, Admin** | Tests a check before you create it.
 
 
-### Alarm operations
-
-Method 	| API action | Role | Description
---- | --- | --- | ---
-List alarms | `GET /v1.0/entities/{entityId}/alarms` | **Observer, Creator, Admin** | Lists the alarms on the specified entity.
-Get alarm by ID | `GET /v1.0/entities/{entityId}/alarms/{alarmId}` | **Observer, Creator, Admin** | Gets information about the specified single alarm.
-Update alarm by ID| `PUT /v1.0/entities/{entityId}/alarms/{alarmId}` | **Admin** | Updates an alarm with the specified alarmId. Partial updates to an alarm are acceptable. You may specify only the parameters you would like to update.
-Delete alarm by ID | `DELETE /v1.0/entities/{entityId}/alarms/{alarmId}` | **Admin** | Deletes the specified alarm from the account.
-Create an alarm | `POST /v1.0/entities/{entityId}/alarms` | **Creator, Admin** | Creates a new alarm for the specified entity.
-Test an alarm | `POST /v1.0/entities/{entityId}/test-alarm` | **Observer, Creator, Admin** | Tests whether the alarm criteria is valid and shows how the alarm state is evaluated.
-
-
-### Alarm notification history operations
-
-Method 	| API action | Role | Description
---- | --- | --- | ---
-List alarm notification history | `GET /v1.0/entities/{entityId}/alarms/{alarmId}/notification_history` | **Observer, Creator, Admin** | Lists alarm notification history for the specified alarm.
-List alarm notification history by check ID | `GET /v1.0/entities/{entityId}/alarms/{alarmId}/notification_history/{checkId}` | **Observer, Creator, Admin** | Lists alarm notification history for the specified entity, alarm and check.
-List a single alarm notification | `GET /v1.0/entities/{entityId}/alarms/{alarmId}/notification_history/{checkId}/:uuid` | **Observer, Creator, Admin** | Retrieves a single alarm notification history item.
-
-
 ### Check type operations
 
 Method 	| API action | Role | Description
 --- | --- | --- | ---
 List check types | `GET /v1.0/check_types` | **Observer, Creator, Admin** | List all the available check types.
 Get a check type by ID| `GET /v1.0/check_types/{checkTypeId}` | **Observer, Creator, Admin** | Retrieves information for the specified check type.
+
+
+### Entities operations
+
+Method 	| API action | Role | Description
+--- | --- | --- | ---
+List entities for an account | `GET /v1.0/entities` | **Observer, Creator, Admin** | Lists the entities for an account.
+Get an entity by ID | `GET /v1.0/entities/{entityId}` | **Observer, Creator, Admin** | Retrieves the current state of the specified entity.
+Update an entity by ID | `PUT /v1.0/entities/{entityId}` | **Admin** | Updates an entity specified by the entityId.
+Delete entity by ID | `DELETE /v1.0/entities/{entityId}` | **Admin** | Deletes the specified entity from your account. Also deletes any checks and alarms defined for that entity.
+Create an entity | `POST /v1.0/entities` | **Creator, Admin** | Creates a new entity.
+
+
+### Metrics operations
+
+Method 	| API action | Role | Description
+--- | --- | --- | ---
+List metrics by check ID | `GET /v1.0/entities/{entityId}/checks/{checkId}/metrics` | **Observer, Creator, Admin** | Lists the metrics associated with the specified check.
+Get data points by metric name | `GET /v1.0/entities/{entityId}/checks/{checkId}/metrics/{metricNate}/plot` | **Observer, Creator, Admin** | Queries for all data points of the specified metric between two points in time.
+
+
+### Monitoring zones operations
+
+Method 	| API action | Role | Description
+--- | --- | --- | ---
+List monitoring zones | `GET /v1.0/monitoring_zones` | **Observer, Creator, Admin** | Lists the monitoring zones for the account.
+Get monitoring zone by ID | `GET /v1.0/monitoring_zones/{monitoringZoneId}` | **Observer, Creator, Admin** | Gets information about the specified monitoring zone.
+Perform a traceroute from a monitoring zone | `POST /v1.0/monitoring_zones/{monitoringZoneId}/traceroute` | **Observer, Creator, Admin** | Performs a traceroute from a collector in the specified monitoring zones.
 
 
 ### Notification operations
@@ -166,30 +183,6 @@ Delete a notification plan| `DELETE /v1.0/notification_plans/{notificationPanId}
 Create a notification plan | `POST /v1.0/notification_plans` | **Creator, Admin** | Creates a notification plan.
 
 
-### Metrics operations
-
-Method 	| API action | Role | Description
---- | --- | --- | ---
-List metrics by check ID | `GET /v1.0/entities/{entityId}/checks/{checkId}/metrics` | **Observer, Creator, Admin** | Lists the metrics associated with the specified check.
-Get data points by metric name | `GET /v1.0/entities/{entityId}/checks/{checkId}/metrics/{metricNate}/plot` | **Observer, Creator, Admin** | Queries for all data points of the specified metric between two points in time.
-
-
-### Alarm examples operations
-
-Method 	| API action | Role | Description
---- | --- | --- | ---
-List alarm examples | `GET /v1.0/alarm_examples` | **Observer, Creator, Admin** | Returns a list of alarm examples.
-Get alarm example by ID| `GET /v1.0/alarm_examples/{alarmExampleId}` | **Observer, Creator, Admin** | Returns information about the specified alarm example.
-Evaluate alarm example | `POST /v1.0/alarm_examples/{alarmExampleId}` | **Observer, Creator, Admin** | Evaluates a specific alarm example.
-
-
-### Views operations
-
-Method 	| API action | Role | Description
---- | --- | --- | ---
-Get overview | `GET /v1.0/views/overview` | **Observer, Creator, Admin** | Returns a view that contains summary information about the entities in this account.
-Get alarms view by notification plan | `GET /v1.0/views/alarmsByNp/{notificationPlanId}` | **Observer, Creator, Admin** | Returns the alarms using a given notification plan ID.
-
 
 ### Suppressions operations
 
@@ -207,6 +200,15 @@ Create a suppression | `POST /v1.0/suppressions` | **Admin** | Creates a suppres
 Method 	| API action | Role | Description
 --- | --- | --- | ---
 List suppression logs | `GET /v1.0/suppression_logs` | **Observer, Creator, Admin** | Lists suppression logs for the account.
+
+
+### Views operations
+
+Method 	| API action | Role | Description
+--- | --- | --- | ---
+Get overview | `GET /v1.0/views/overview` | **Observer, Creator, Admin** | Returns a view that contains summary information about the entities in this account.
+Get alarms view by notification plan | `GET /v1.0/views/alarmsByNp/{notificationPlanId}` | **Observer, Creator, Admin** | Returns the alarms using a given notification plan ID.
+
 
 ### Related article
 
