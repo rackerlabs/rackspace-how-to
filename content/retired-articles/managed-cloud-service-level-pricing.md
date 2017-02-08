@@ -5,10 +5,8 @@ title: Managed Cloud Service Level pricing
 type: article
 created_date: '2014-07-01'
 created_by: Nicole Schwartz
-last_modified_date: '2017-02-02'
+last_modified_date: '2017-02-08'
 last_modified_by: Laura Santamaria
-product: Managed Operations
-product_url: managed-operations
 ---
 
 The Managed Cloud pricing model provides greater transparency of your total
