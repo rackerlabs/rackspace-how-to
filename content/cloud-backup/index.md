@@ -12,8 +12,6 @@ product_url: cloud-backup
 
 This introduction is designed to get you up and running with Cloud Backup, including tips for troubleshooting, managing your configuration, systems actions, and email preferences.
 
-<hr />
-
 ###  Install the agent
 
 - [Install the agent on Linux systems](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)

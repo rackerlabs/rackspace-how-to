@@ -12,8 +12,6 @@ product_url: cloud-queues
 
 Cloud Queues is an open-source messaging system, designed to help customers build and scale distributed applications in the cloud. The Cloud Queues API is built to be flexible, supporting a variety of messaging patterns like producer-consumer, poll based publisher-subscriber, and point-to-point.
 
-<hr />
-
 ###  Overview
 
 - [Cloud Queues Overview](/how-to/cloud-queues-overview)

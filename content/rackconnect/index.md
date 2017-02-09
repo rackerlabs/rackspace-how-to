@@ -10,9 +10,7 @@ product: RackConnect
 product_url: rackconnect
 ---
 
-<p class="lead" markdown="1">Welcome to RackConnect<sup>&reg;</sup>! These articles are designed to get you started with RackConnect. They include an overview, describe how to manage your environment, and cover RackConnect v3.0 and RackConnect v2.0.</p>
-
-<hr />
+Welcome to RackConnect<sup>&reg;</sup>! These articles are designed to get you started with RackConnect. They include an overview, describe how to manage your environment, and cover RackConnect v3.0 and RackConnect v2.0.
 
 **Important:** The top of each RackConnect article displays an **Applies to** label to indicate whether the article applies to RackConnect v3.0, RackConnect v2.0, or both.
 

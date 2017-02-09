@@ -32,23 +32,9 @@ Fetch Agents | ```GET /v1.0/agents/:agentId``` | **Observer  Creator  Admin** | 
 List Agent Connections | ```GET  /v1.0/agents/:agentId/connections``` | **Observer  Creator  Admin** | Lists the connections for a single agent.
 Fetch Agent Connection | ```GET /v1.0/agents/:agentId/connections/:connId``` | **Observer  Creator  Admin** | Gets details for a specified image member.
 **Agent Host Information Operations** | | |
-GET Agent CPU Information | ```GET /v1.0/agents/:agentId/host_info/cpus``` | **Observer  Creator  Admin** | Gets information on the host's CPUs.
-GET Agent Memory Information | ```GET /v1.0/agents/:agentId/host_info/memory``` | **Observer  Creator  Admin** | Gets information on the host's memory.
-GET Agent Disk Information | ```GET /v1.0/agents/:agentId/host_info/disks``` | **Observer  Creator  Admin** | Gets information on the host's disks.
-GET Agent Network Information | ```GET /v1.0/agents/:agentId/host_info/network_interfaces``` | **Observer  Creator  Admin** | Gets information on the host's network interfaces.
-GET Agent Filesystem Information | ```GET /v1.0/agents/:agentId/host_info/filesystems``` | **Observer  Creator  Admin** | Gets information on the host's filesystems.
-GET Agent Process Information | ```GET /v1.0/agents/:agentId/host_info/processes``` | **Observer  Creator  Admin** | Gets information on the host's processes.
-GET Agent System Information | ```GET /v1.0/agents/:agentId/host_info/system``` | **Observer  Creator  Admin** | Gets system information for the host.
-Get Logged-in User Information | ```GET /v1.0/agents/:agentId/host_info/who``` | **Observer  Creator  Admin** | Gets information on users who are logged into the host.
-Get Agent CPU Information by Entity | ```GET /v1.0/entities/:entityId/agent/host_info/cpus``` | **Observer  Creator  Admin** | Gets agent CPU information by entity.
-Get Agent Memory Information by Entity | ```GET /v1.0/entities/:entityId/agent/host_info/memory``` | **Observer  Creator  Admin** | Gets agent memory information by entity.
-Get Agent Disk Information by Entity | ```GET /v1.0/entities/:entityId/agent/host_info/disks``` | **Observer  Creator  Admin** | Gets agent disk information by entity.
-Get Agent Filesystem Information by Entity | ```GET /v1.0/entities/:entityId/agent/host_info/filesystem``` | **Observer  Creator  Admin** | Gets agent filesystem information by entity.
-Get Agent network_interfaces Information by Entity | ```GET /v1.0/entities/:entityId/agent/host_info/network``` | **Observer  Creator  Admin** | Gets agent network information by entity.
-Get Agent Process Information by Entity | ```GET /v1.0/entities/:entityId/agent/host_info/process``` | **Observer  Creator  Admin** | Gets agent process information by entity.
-Get Agent System Information by Entity | ```GET /v1.0/entities/:entityId/agent/host_info/system``` | **Observer  Creator  Admin** | Gets agent system information by entity.
+GET Host Information 'x' through agent | ```GET /v1.0/agents/:agentId/host_info/x``` | **Observer  Creator  Admin** | Gets information on the host's 'x'.  For complete list of agent host info, see [agent host infor check](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/#hostinfo-check-type-ref).
 **Agent Targets Operations** | | |
-List Agent Check Targets | ```GET /entities/entityId/agent/check_types/agentCheckType/targets``` | **Observer  Creator  Admin** | Enumerates the devices allowed for the specified agent check type on the server where the agent is installed.
+List Agent Check Targets for 'agentCheckType' | ```GET /entities/entityId/agent/check_types/agentCheckType/targets``` | **Observer  Creator  Admin** | Enumerates the devices allowed for the specified agent check type on the server where the agent is installed.  For complete list of check types, see [remote checks](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/#remote-check-type-ref) and [agent checks](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/#agent-check-types).
 **Agent Tokens Operations** | | |
 List Agent Tokens | ```GET /v1.0/agent_tokens``` | **Admin** | Lists the agent tokens.
 GET Agent Token | ```GET /v1.0/agent_tokens/:tokendId``` | **Observer  Creator  Admin** | Gets information for a single agent token.

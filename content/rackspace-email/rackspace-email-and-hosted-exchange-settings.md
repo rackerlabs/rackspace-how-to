@@ -48,7 +48,7 @@ The following server settings provide a secure (SSL) connection:
 
 **Warning:** The following alternative server settings do *not* use SSL and therefore do not make a secure connection to the mail server.
 
-| Protocol | SSL server name | SSL port number |
+| Protocol | Server name | Port number |
 | --- | --- | --- |
 | POP3 (incoming) | pop.emailsrvr.com | 110 |
 | IMAP (incoming) | imap.emailsrvr.com | 143 |
