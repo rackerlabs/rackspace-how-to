@@ -107,6 +107,6 @@ You need to install a JSON validation tool before entering the redirect.
 
   - If you see a green checkmark with **No Issues** displayed, you can proceed.
 
-  - If there is a red X in the status bar with ** *n* errors**, click on the X. The editor window will zoom to the error in your code with an error message. You need to fix the error described at that line.
+  - If there is a red X in the status bar with ***n* errors**, click on the X. The editor window will zoom to the error in your code with an error message. You need to fix the error described at that line.
 
 5. Commit your changes and open a PR to merge your branch from your fork into the master branch in the nexus-control repo.
