@@ -872,14 +872,4 @@ arithmetic. One of the key advantages to this sort of exponential
 increase in difficulty is that as computers get much faster, we only
 need to increase the size of our numbers slightly to keep pace.
 
-##### The Phi (or &Phi;) Function
-
-
-    Raw Markdown
-    &Phi;45 = 4
-
-<code><pre>
-Raw HTML
-&Phi;45 = 4
-</pre></code>
 
