@@ -83,7 +83,7 @@ You need to install a JSON validation tool before entering the redirect.
 
 4. Open the settings for `linter` by clicking the **Settings** button on the package.
 
-5. Ensure at least "Lint As You Type", "Highlight Error Lines in Gutter", "Show Error Panel", "Display Linter Info in the Status Bar" and "Display Linter Status Info in Status Bar" are checked. Check all of the options for ease of use.
+5. Ensure at least **Lint As You Type**, **Highlight Error Lines in Gutter**, **Show Error Panel**, **Display Linter Info in the Status Bar**, and **Display Linter Status Info in Status Bar** are checked. Check all of the options for ease of use.
 
 #### Modify the rewrite file
 
@@ -93,14 +93,20 @@ You need to install a JSON validation tool before entering the redirect.
 
 3. Add the rewrite at the end of the file, substituting your article details.
 
-    ```{
-      "description": "Retire {article name}",
-      "from": "^\\/how-to\\/{permalink-from-article}(.*)$",
-      "to": "/how-to/article-retired/",
-      "rewrite": false,
-      "status": 301
-    }```
+```json
+{
+  "description": "Retire {article name}",
+  "from": "^\\/how-to\\/{permalink-from-article}(.*)$",
+  "to": "/how-to/article-retired/",
+  "rewrite": false,
+  "status": 301
+}
+```
 
-4. Check your linter status.
+4. Check your linter status at the bottom of the editor window.
+
+  - If you see a green checkmark with **No Issues** displayed, you can proceed.
+
+  - If there is a red X in the status bar with ** *n* errors**, click on the X. The editor window will zoom to the error in your code with an error message. You need to fix the error described at that line.
 
 5. Commit your changes and open a PR to merge your branch from your fork into the master branch in the nexus-control repo.
