@@ -93,15 +93,15 @@ You need to install a JSON validation tool before entering the redirect.
 
 3. Add the rewrite at the end of the file, substituting your article details.
 
-```json
-{
-  "description": "Retire {article name}",
-  "from": "^\\/how-to\\/{permalink-from-article}(.*)$",
-  "to": "/how-to/article-retired/",
-  "rewrite": false,
-  "status": 301
-}
-```
+  ```json
+  {
+    "description": "Retire {article name}",
+    "from": "^\\/how-to\\/{permalink-from-article}(.*)$",
+    "to": "/how-to/article-retired/",
+    "rewrite": false,
+    "status": 301
+  }
+  ```
 
 4. Check your linter status at the bottom of the editor window.
 
