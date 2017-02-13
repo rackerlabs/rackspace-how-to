@@ -1,6 +1,6 @@
 ---
 permalink: importing-data-into-cloud-databases/
-audit_date:
+audit_date: '2017-02-13'
 title: Import data into Cloud Databases
 type: article
 created_date: '2012-07-24'
@@ -21,7 +21,7 @@ which is included in the cost of the database, to plan and determine the best
 course of action for your particular database.
 
 You can import from databases on Rackspace's public cloud, on another cloud, or
-in your own data center. If the data is being imported from a location without
+in your own data center. If you are importing the data from a location without
 Rackspace ServiceNet access, such as another cloud or your data center, you must
 either create a cloud server to copy your import file to or enable external
 access on your database by using either a high availability (HA) instance group
