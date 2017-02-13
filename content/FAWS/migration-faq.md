@@ -39,7 +39,7 @@ instead help customers choose the ones that are best for each of their
 workloads. Ultimately, it is our customers who decide how many workloads we
 support on each platform.
 
-#### I heard that your sales representatives no longer available to new buyers of your public cloud. Is that correct?
+#### I heard that your sales representatives are no longer available to new buyers of your public cloud. Is that correct?
 
 No, that is not correct. We continue to sell our OpenStack public cloud
 through sales representatives and through our website.
@@ -50,7 +50,7 @@ through sales representatives and through our website.
 
 Like any beta program, this one is limited in the number of customers it can
 accommodate. Customers who would like take part in the beta program or learn
-more about it should engage with their account manager who will work the
+more about it should engage with their account manager who will work with the
 beta program leader to sign you up for the beta migration program.
 
 #### What happens beyond the beta program? Are you considering a decommission then?
