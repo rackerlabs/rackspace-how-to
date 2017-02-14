@@ -34,7 +34,7 @@ To troubleshoot this issue, open TCP port 1433 for the service itself. If you ne
 
       - *(SQL Server 2005, 2008, 2008 R2)* Go to **Start > All Programs > Microsoft SQL Server 2005 (or 2008 or 2008 R2) > Configuration Tools > SQL Server Configuration Manager**.
 
-      - *(SQL Server 2012)* Use the Windows key or hover the mouse pointer over the lower-left corner of the desktop and select **All Programs > Microsoft SQL Server 2012 > Configuration Tools > SQL Server Configuration Manager**.
+      - *(SQL Server 2012, 2014, 2016)* Use the Windows key or hover the mouse pointer over the lower-left corner of the desktop and select **All Programs > Microsoft SQL Server 2012 > Configuration Tools > SQL Server Configuration Manager**.
 
    2. In the navigation pane, expand **SQL Server Network Configuration** and select the protocols for your SQL Server instance.
 
