@@ -15,7 +15,10 @@ Many businesses are seeking assistance from certified experts in getting the mos
 
 Fanatical Support for AWS is the answer for businesses facing these challenges. Rackspace blends technology and automation plus human experts to deliver ongoing architecture, security, and 24x7x365 operations backed by AWS certified engineers and architects.
 
-Rackspace has created a world-class migration experience that provides the tooling, process, and support to enable you to self-service your migration
-from Rackspace Public Cloud to AWS. Rackspace also provides Rackspace Professional Services with the capability to help you with your migration.
+Rackspace has created a world-class migration experience that provides the
+tooling, process, and support to enable you to self-service your migration
+from Rackspace Public Cloud to AWS while maintaining the Fanatical Support you
+know and love from Rackspace. Rackspace also provides Rackspace Professional
+Services with the capability to help you with your migration.
 
 To learn more, visit the [Fanatical Support for AWS product page](https://www.rackspace.com/managed-aws).
