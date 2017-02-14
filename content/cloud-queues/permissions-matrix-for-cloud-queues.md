@@ -58,3 +58,7 @@ Claim messages | `POST /{version}/{project_id}/queues/{queue_name}/claim` | **Cr
 Query claim	| `GET /{version}/{project_id}/queues/{queue_name}/claims/{claimId}` | **Observer, Creator, Admin** |	Queries the specified claim for the specified queue.
 Update claim | `PATCH/ {version}/{project_id}/queues/{queue_name}/claims/{claimId}` | **Creator, Admin** | Updates the specified claim for the specified queue.
 Release claim | `DELETE /{version}/{project_id}/queues/{queue_name}/claims/{claimId}` | **Admin** | Releases the specified claim for the specified queue.
+
+### Related Article
+
+[Role-based Access Control (RBAC) permissions matrix for Cloud Hosting](https://support.rackspace.com/how-to/permissions-matrix-for-role-based-access-control-rbac/)
