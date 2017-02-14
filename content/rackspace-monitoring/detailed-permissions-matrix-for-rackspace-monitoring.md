@@ -111,7 +111,7 @@ List checks for an entity | `GET /v1.0/entities/{entityId}/checks` | **Creator, 
 Get a check by ID | `GET /v1.0/entities/{entityId}/checks/{checkId}` | **Creator, Admin** | Returns information about the specified check.
 Update a check by ID | `PUT /v1.0/entities/{entityId}/checks/{checkId}` | **Admin** | Updates the specified check.
 Delete a check by ID | `DELETE /v1.0/entities/{entityId}/checks/{checkId}` | **Admin** | Deletes the specfied check from your account.
-Create a check | `POST /v1.0/entities/{entityId}/checks` | **Creator, Admin** | Creates a new check and associates it with an entity using the parameters listed in [Attributes](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#attributes).
+Create a check | `POST /v1.0/entities/{entityId}/checks` | **Creator, Admin** | Creates a new check and associates it with an entity using the parameters listed in [Attributes used for all checks](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/check-operations/#check-operations).
 Test an existing check | `POST /v1.0/entities/{entityId}/checks/{checkId}/test` | **Observer, Creator, Admin** | Tests a check inline.
 Test a check | `POST /v1.0/entities/{entityId}/test-check` | **Observer Creator, Admin** | Tests a check before you create it.
 
