@@ -76,11 +76,9 @@ Follow these steps to create a new article within a product folder of the **rack
 
 6. When you have finished writing your article, review it in the **Preview** tab.
 
-7. At the bottom of the page, select "Create a new branch for this commit and start a pull request."
+7. At the bottom of the page, click **Propose new file**.
 
-8. Click **Propose new file**.
-
-9. Create a pull request (PR). On the "Open a pull request" page, check the following settings:
+8. Create a pull request (PR). On the "Open a pull request" page, check the following settings:
 
     - `base fork: rackerlabs/rackspace-how-to`
     - `base: master`
@@ -89,7 +87,7 @@ Follow these steps to create a new article within a product folder of the **rack
 
    If the settings are not correct, use the drop down menus to select the correct settings. The fork menus may not be present.
 
-10. Describe the reasons for your change in the comment box, than select **Create pull request**.
+9. Describe the reasons for your change in the comment box, and then select **Create pull request**.
 
 **Note:** If your article includes images, send an email to <how-to@rackspace.com> with the image files. Note where the images belong in the article by using comments: `<!--this is a comment-->`.
 
@@ -111,11 +109,9 @@ Follow these steps to edit an existing article within a product folder of the **
 
 5. When you have finished editing the article, review it in the **Preview** tab.
 
-6. At the bottom of the page, select "Create a new branch for this commit and start a pull request."
+6. At the bottom of the page, click **Propose file change**.
 
-7. Click **Propose file change**.
-
-8. On the "Open a pull request" page, check the following settings:
+7. On the "Open a pull request" page, check the following settings:
 
     - `base fork: rackerlabs/rackspace-how-to`
     - `base: master`
