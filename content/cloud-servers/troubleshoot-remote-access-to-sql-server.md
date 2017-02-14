@@ -1,11 +1,11 @@
 ---
 permalink: troubleshoot-remote-access-to-sql-server/
-audit_date:
+audit_date: '2017-02-14'
 title: Troubleshoot remote access to SQL server
 type: article
 created_date: '2011-08-16'
 created_by: Rackspace Support
-last_modified_date: '2016-11-14'
+last_modified_date: '2017-02-14'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -22,7 +22,7 @@ To troubleshoot this issue, open TCP port 1433 for the service itself. If you ne
 2. Verify that the SQL Server service is started.
 
    - *(SQL Server 2005, 2008, 2008 R2)* Select **Start > Administrative Tools > Services**, and verify that the **SQL Server (MSSQLSERVER)** service is started.
-   - *(SQL Server 2012)* Use the Windows key or hover the mouse pointer over the lower-left corner of the desktop, select **Administrative Tools > Services**, and verify that the **SQL Server (MSSQLSERVER)** service is started.
+   - *(SQL Server 2012, 2014, 2016)* Use the Windows key or hover the mouse pointer over the lower-left corner of the desktop, select **Administrative Tools > Services**, and verify that the **SQL Server (MSSQLSERVER)** service is started.
 
 3. Ensure that you are using the correct credentials to authenticate. The default SQL Server administrator account is named **sa**. If you built the server from a server image with SQL Server pre-installed, the password is in a text file on the root of the C partition.
 
