@@ -25,7 +25,7 @@ The matrix displays the Rackspace Monitoring methods groups by category, their c
 Method | API action | Role | Description
 --- | --- | --- | ---
 Get account information | `GET /v1.0/account` | **Observer, Creator, Admin** | Returns account information.
-Update properties on an account| `PUT /v1.0/account` | **Admin** | Updates properties on an account.
+Update properties on an account | `PUT /v1.0/account` | **Admin** | Updates properties on an account.
 Get audit information	| `GET /v1.0/audits` | **Observer, Creator, Admin** | Returns audits information for the account.
 Get limits | `GET /v1.0/limits` | **Observer, Creator, Admin** | Returns account resource limits.
 Get usage | `GET /v1.0/usage` | **Observer, Creator, Admin** | Returns resource and rate limits for the account.
@@ -73,7 +73,7 @@ Method 	| API action | Role | Description
 --- | --- | --- | ---
 List alarms | `GET /v1.0/entities/{entityId}/alarms` | **Observer, Creator, Admin** | Lists the alarms on the specified entity.
 Get alarm by ID | `GET /v1.0/entities/{entityId}/alarms/{alarmId}` | **Observer, Creator, Admin** | Gets information about the specified single alarm.
-Update alarm by ID| `PUT /v1.0/entities/{entityId}/alarms/{alarmId}` | **Admin** | Updates an alarm with the specified alarmId. Partial updates to an alarm are acceptable. You may specify only the parameters you would like to update.
+Update alarm by ID | `PUT /v1.0/entities/{entityId}/alarms/{alarmId}` | **Admin** | Updates an alarm with the specified alarmId. Partial updates to an alarm are acceptable. You may specify only the parameters you would like to update.
 Delete alarm by ID | `DELETE /v1.0/entities/{entityId}/alarms/{alarmId}` | **Admin** | Deletes the specified alarm from the account.
 Create an alarm | `POST /v1.0/entities/{entityId}/alarms` | **Creator, Admin** | Creates a new alarm for the specified entity.
 Test an alarm | `POST /v1.0/entities/{entityId}/test-alarm` | **Observer, Creator, Admin** | Tests whether the alarm criteria is valid and shows how the alarm state is evaluated.
@@ -84,7 +84,7 @@ Test an alarm | `POST /v1.0/entities/{entityId}/test-alarm` | **Observer, Creato
 Method 	| API action | Role | Description
 --- | --- | --- | ---
 List alarm examples | `GET /v1.0/alarm_examples` | **Observer, Creator, Admin** | Returns a list of alarm examples.
-Get alarm example by ID| `GET /v1.0/alarm_examples/{alarmExampleId}` | **Observer, Creator, Admin** | Returns information about the specified alarm example.
+Get alarm example by ID | `GET /v1.0/alarm_examples/{alarmExampleId}` | **Observer, Creator, Admin** | Returns information about the specified alarm example.
 Evaluate alarm example | `POST /v1.0/alarm_examples/{alarmExampleId}` | **Observer, Creator, Admin** | Evaluates a specific alarm example.
 
 
@@ -121,7 +121,7 @@ Test a check | `POST /v1.0/entities/{entityId}/test-check` | **Observer Creator,
 Method 	| API action | Role | Description
 --- | --- | --- | ---
 List check types | `GET /v1.0/check_types` | **Observer, Creator, Admin** | List all the available check types.
-Get a check type by ID| `GET /v1.0/check_types/{checkTypeId}` | **Observer, Creator, Admin** | Retrieves information for the specified check type.
+Get a check type by ID | `GET /v1.0/check_types/{checkTypeId}` | **Observer, Creator, Admin** | Retrieves information for the specified check type.
 
 
 ### Entities operations
@@ -179,7 +179,7 @@ Method 	| API action | Role | Description
 List notification plans | `GET /v1.0/notification_plans` | **Observer, Creator, Admin** | Lists the notification plans for the account.
 Get a notification plan by ID | `GET /v1.0/notification_plans/{notificationPanId}` | **Observer, Creator, Admin** | Gets information about the specified notification plan.
 Update a notification plan by ID | `PUT /v1.0/notification_plans/{notificationPanId}` | **Admin** | Updates the specified notification plan.
-Delete a notification plan| `DELETE /v1.0/notification_plans/{notificationPanId}` | **Admin** | Deletes the specified notification plan.
+Delete a notification plan | `DELETE /v1.0/notification_plans/{notificationPanId}` | **Admin** | Deletes the specified notification plan.
 Create a notification plan | `POST /v1.0/notification_plans` | **Creator, Admin** | Creates a notification plan.
 
 
@@ -189,7 +189,7 @@ Create a notification plan | `POST /v1.0/notification_plans` | **Creator, Admin*
 Method 	| API action | Role | Description
 --- | --- | --- | ---
 List suppressions | `GET /v1.0/suppressions` | **Observer, Creator, Admin** | Returns a list of suppressions.
-Get a suppression by ID| `GET /v1.0/suppressions/{suppressionId}` | **Observer, Creator, Admin** | Gets details of the specified suppression.
+Get a suppression by ID | `GET /v1.0/suppressions/{suppressionId}` | **Observer, Creator, Admin** | Gets details of the specified suppression.
 Update a suppression | `PUT /v1.0/suppressions/{suppressionId}` | **Admin** | Updates the specified suppression.
 Delete a suppression| `DELETE /v1.0/suppressions/{suppressionId}` | **Admin** | Deletes the specified suppression.
 Create a suppression | `POST /v1.0/suppressions` | **Admin** | Creates a suppression.
