@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Your Rackspace email password should be changed regularly in order to keep your email account secure from intruders. Use the following instructions to update your password:
+Your Rackspace Email password should be changed regularly in order to keep your email account secure from intruders. Use the following instructions to update your password:
 
 1. Log in to your Webmail account by going to [apps.rackspace.com](https://apps.rackspace.com).
 2. Click the drop-down menu below the accounts username, then **Settings**.
@@ -25,5 +25,5 @@ Your Rackspace email password should be changed regularly in order to keep your 
 
 After changing your password, don’t forget to update your email password on your mobile device and any email clients that use the Rackspace email account. 
 
-For information on how to reset a forgotten Rackspace email password, see the [Rackspace email password recovery FAQ](https://support.rackspace.com/how-to/rackspace-email-password-recovery-faq/).
+For information on how to reset a forgotten Rackspace Email password, see the [Rackspace Email password recovery FAQ](https://support.rackspace.com/how-to/rackspace-email-password-recovery-faq/).
 
