@@ -1,6 +1,6 @@
 ---
 permalink: change-your-rackspace-email-password/
-audit_date:
+audit_date: 
 title: Change your Rackspace Email password
 type: article
 created_date: '2017-02-10'
@@ -10,11 +10,11 @@ last_modified_by: Brian Cross
 product: Rackspace Email
 product_url: rackspace-email
 ---
-The password to your email address is the most essential tool you have in protecting your valuable information. If an intruder gets access to your email using your password, the intruder has access to your complete digital footprint, including resetting passwords for other sites associated with your email.
+The password to your email address is the most essential tool you have for protecting your valuable information. If an intruder gets access to your email using your password, the intruder has access to your complete digital footprint, including resetting passwords for other sites associated with your email.
 
 To protect your Rackspace Email mail account from intruders, you should regularly change your email password. Use the following instructions to change your password:
 
-**Note**: Rackspace recommends that you make your email password different from the other passwords you use on the internet. The password should be one you have never used before and longer passwords are generally more secure. 
+**Note**: Rackspace recommends that you make your email password different from the other passwords you use on the internet. The password should be one you have never used before. The longer your password, the more secure your account will be.
 
 1. Log in to your Webmail account at [apps.rackspace.com](https://apps.rackspace.com).
 2. In the top-right corner, click the account's username and then select **Settings**.
