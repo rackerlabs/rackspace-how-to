@@ -5,7 +5,7 @@ title: Change your Rackspace Email password
 type: article
 created_date: '2017-02-10'
 created_by: Brian Cross
-last_modified_date: '2017-02-10'
+last_modified_date: '2017-02-21'
 last_modified_by: Brian Cross
 product: Rackspace Email
 product_url: rackspace-email
