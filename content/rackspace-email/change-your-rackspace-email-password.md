@@ -14,7 +14,7 @@ The password to your email address is the most essential tool you have in protec
 
 To protect your Rackspace Email mail account from intruders, you should regularly change your email password. Use the following instructions to change your password:
 
-**Note**: Rackspace recommends that you make your email password different from the other passwords you use on the internet. The password should be one you have never used for. 
+**Note**: Rackspace recommends that you make your email password different from the other passwords you use on the internet. The password should be one you have never used before and longer passwords are generally more secure. 
 
 1. Log in to your Webmail account at [apps.rackspace.com](https://apps.rackspace.com).
 2. In the top-right corner, click the account's username and then select **Settings**.
