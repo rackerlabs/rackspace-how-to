@@ -10,11 +10,11 @@ last_modified_by: Brian Cross
 product: Rackspace Email
 product_url: rackspace-email
 ---
-The password to your email address is the most essential tool you have for protecting your valuable information. If an intruder gets access to your email using your password, the intruder has access to your complete digital footprint, including resetting passwords for other sites associated with your email.
+The password to your email address is the most essential tool that you have for protecting your valuable information. If an intruder gets access to your email by using your password, the intruder has access to your complete digital footprint, including resetting passwords for other sites associated with your email.
 
-To protect your Rackspace Email mail account from intruders, you should regularly change your email password. Use the following instructions to change your password:
+To protect your Rackspace Email mail account from intruders, regularly change your email password. Use the following instructions to change your password:
 
-**Note**: Rackspace recommends that you make your email password different from the other passwords you use on the internet. The password should be one you have never used before. The longer your password, the more secure your account will be.
+**Note**: We recommend that you create a password that you have never used before and that remains unique from all your other passwords. Also, the longer your password, the more secure your account is.
 
 1. Log in to your Webmail account at [apps.rackspace.com](https://apps.rackspace.com).
 2. In the top-right corner, click the account's username and then select **Settings**.
@@ -26,7 +26,7 @@ To protect your Rackspace Email mail account from intruders, you should regularl
 <!--insert image step 4-->
 5. Click **Save**.
 
-After changing your password, remember to update your email password on your mobile device and any email clients that use the Rackspace Email account. 
+After changing your password, remember to update it on your mobile device and any email clients that use the Rackspace Email account. 
 
-For information on how to reset a forgotten Rackspace Email password, see the [Rackspace Email password recovery FAQ](https://support.rackspace.com/how-to/rackspace-email-password-recovery-faq/).
+For information about how to reset a forgotten Rackspace Email password, see the [Rackspace Email password recovery FAQ](https://support.rackspace.com/how-to/rackspace-email-password-recovery-faq/).
 
