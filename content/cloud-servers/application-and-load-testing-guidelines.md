@@ -15,13 +15,13 @@ Part of offering a professional experience to your customers is knowing how your
 
 **Note:** When you perform any testing on or against Rackspace cloud servers, you are operating under the terms of our [Global Acceptable Use Policy (AUP)](http://www.rackspace.com/information/legal/global/aup).
 
-## Policing and enforcement
+### Policing and enforcement
 
 Rackspace monitors all of our cloud host servers for activities that reduce the performance of customers' virtual servers. If we find that a customer's virtual server is being used in a way that affects other customers' virtual servers, we reserve the right to hard reboot, suspend, or switch off the impacting server. We further reserve the right to suspend or terminate the impacting customer's Rackspace Cloud account.
 
 When you perform the recommended application tests, load tests, and performance-benchmarking tests in this article, observe the following guidelines before and during each test, and stop the test immediately if the indicated thresholds are breached.
 
-## Load testing
+### Load testing
 
 You should continually monitor the effect of your test as you apply load. Before running load tests, ensure that you know how to view actual RAM, disk IO, and network usage in real-time. These metrics show whether a test risks interfering with other customers' servers on the same host. See the following sections for specific thresholds. Alternatively, there are several load-testing services that are managed with external servers, located globally. <a href="https://www.loadview-testing.com">Load testing with LoadView,</a> for example, will allow me to use their external servers and can also offer additional testing of api load or application load testing. If you are looking for an all-in-one solution and want to bundle together your page speed testing, DNS testing, etc., then I suggest a company such as theirs.
 
