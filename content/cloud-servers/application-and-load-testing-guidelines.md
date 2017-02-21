@@ -23,11 +23,11 @@ When you perform the recommended application tests, load tests, and performance-
 
 ### Load testing
 
-You should continually monitor the effect of your test as you apply load. Before running load tests, ensure that you know how to view actual RAM, disk IO, and network usage in real-time. These metrics show whether a test risks interfering with other customers' servers on the same host. See the following sections for specific thresholds. Alternatively, there are several load-testing services that are managed with external servers, located globally. <a href="https://www.loadview-testing.com">Load testing with LoadView,</a> for example, will allow me to use their external servers and can also offer additional testing of api load or application load testing. If you are looking for an all-in-one solution and want to bundle together your page speed testing, DNS testing, etc., then I suggest a company such as theirs.
+You should continually monitor the effect of your test as you apply load. Before running load tests, ensure that you know how to view actual RAM, disk IO, and network usage in real-time. These metrics show whether a test risks interfering with other customers' servers on the same host. See the following sections for specific thresholds. Alternatively, there are several load-testing services that are managed with external servers, located globally. [Load testing with LoadView](https://www.loadview-testing.com) will allow you to use their external servers and can also offer additional testing of api load or application load testing. If you are looking for an all-in-one solution and want to bundle together your page speed testing, DNS testing, etc., then we suggest a company such as theirs.
 
 ### Linux virtual servers
 
-Install and use the `screen` package for your Linux distribution to run and view the following commands at the same time. To compile the screen from source, go to the [GNU homepage]( http://www.gnu.org/software/screen/).
+Install and use the `screen` package for your Linux distribution to run and view the following commands at the same time. To compile the screen from source, go to the [GNU homepage](http://www.gnu.org/software/screen/).
 
 #### RAM
 
