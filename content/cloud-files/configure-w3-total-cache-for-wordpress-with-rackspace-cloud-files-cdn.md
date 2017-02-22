@@ -1,11 +1,11 @@
 ---
 permalink: configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/
-audit_date: '2017-02-15'
+audit_date: '2017-02-22'
 title: Configure W3 Total Cache for WordPress with Rackspace Cloud Files
 type: article
 created_date: '2013-10-10'
 created_by: Eric Cavalcanti
-last_modified_date: '2017-02-15'
+last_modified_date: '2017-02-22'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
