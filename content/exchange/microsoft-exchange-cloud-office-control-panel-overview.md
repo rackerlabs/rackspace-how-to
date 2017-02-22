@@ -3,12 +3,12 @@ permalink: cloud-office-control-panel-overview/
 audit_date:
 title: Cloud Office Control Panel overview
 type: article
-created_date: '2012-05-23'
-created_by: Rae D. Cabello
+created_date: '2016-03-14'
+created_by: Beau Bailey
 last_modified_date: '2016-03-14'
 last_modified_by: Stephanie Fillmon
-product: Microsoft Exchange
-product_url: exchange
+product: 'undefined'
+product_url: 'undefined'
 ---
 
 After you sign up for Cloud Office services through Rackspace, the first thing
