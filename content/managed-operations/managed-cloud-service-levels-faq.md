@@ -5,7 +5,7 @@ title: Managed Public Cloud service levels FAQ
 type: article
 created_date: '2014-07-14'
 created_by: David Hendler
-last_modified_date: '2017-02-16'
+last_modified_date: '2017-02-22'
 last_modified_by: Laura Santamaria
 product: Managed Operations
 product_url: managed-operations
