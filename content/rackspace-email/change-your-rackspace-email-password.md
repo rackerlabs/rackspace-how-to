@@ -17,16 +17,20 @@ To protect your Rackspace Email mail account from intruders, regularly change yo
 **Note**: We recommend that you create a password that you have never used before and that remains unique from all your other passwords. Also, the longer your password, the more secure your account is.
 
 1. Log in to your Webmail account at [apps.rackspace.com](https://apps.rackspace.com).
+
 2. In the top-right corner, click the account's username and then select **Settings**.
-<!--insert image step 2a-->
-<!--insert image step 2b-->
+
+  <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/step2b.png %}"/>
+
 3. In the left pane, click **Change Password**.
-<!--insert image step 3-->
+
+   <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/step3.png %}"/>
+
 4. Enter your current password and then enter the new password.
-<!--insert image step 4-->
+
+
 5. Click **Save**.
 
-After changing your password, remember to update it on your mobile device and any email clients that use the Rackspace Email account. 
+After changing your password, remember to update it on your mobile device and any email clients that use the Rackspace Email account.
 
 For information about how to reset a forgotten Rackspace Email password, see the [Rackspace Email password recovery FAQ](https://support.rackspace.com/how-to/rackspace-email-password-recovery-faq/).
-
