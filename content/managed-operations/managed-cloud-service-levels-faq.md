@@ -25,6 +25,26 @@ Managed Infrastructure and Managed Operations.
     infrastructure, virtualization layers, operating system, database
     layer, and web server.
 
+#### What is the service-level pricing model?
+
+The Managed Cloud pricing model provides greater transparency of your total
+cloud expense by separating the cost of infrastructure and support.
+
+The infrastructure rate is based on the number of gigabytes (GB) of random
+access memory (RAM) used during the billing cycle, and not on the types of
+server. This way, many small servers are the same price as fewer larger servers.
+
+The support cost, or Service Level Rate, is determined by the total Compute
+power used. The Service Level Rate covers the maintenance and support of all
+your cloud Compute products (such as servers), and is based on your service
+level. OnMetal servers have a flat hourly rate independent of RAM. If you do not
+meet the minimum Service Level Rate during your billing cycle, the difference is
+assessed to your account.
+
+Your service level and support cover all products, but the Service Level Rate is
+only assessed against Compute products. Storage services such as Cloud Files and
+Cloud Block Storage have no Service Level Rates associated with them.
+
 #### Can new public-cloud customers choose other service levels?
 
 No, new customers can choose *only* between Managed Infrastructure or
@@ -50,7 +70,7 @@ to pay for it.
 
 #### What do I get with Fanatical Support?
 
-There are five foundational components to ***Fanatical Support**&reg;*:
+There are five foundational components to ***Fanatical Support***&reg;:
 
 -   **Architecture advisors**: Move beyond one-size-fits-all
     reference architectures. Let our experts tailor your workload
@@ -111,5 +131,3 @@ Operations.** Limited availability and subject to certain restrictions.
     event per month). For example, if the standard payout is 5 percent
     per 30 minutes, it will become 50 percent per 30 minutes up to
     200 percent.
-
-
