@@ -5,7 +5,7 @@ title: Set up DNS records for Cloud Office email and Skype for Business
 type: article
 created_date: '2014-08-15'
 created_by: Cody Jobson
-last_modified_date: '2017-02-06'
+last_modified_date: '2017-02-22'
 last_modified_by: Stephanie Fillmon
 product: Microsoft Skype for Business
 product_url: skype-for-business
