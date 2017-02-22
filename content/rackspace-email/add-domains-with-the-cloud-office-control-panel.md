@@ -13,7 +13,7 @@ product_url: rackspace-email
 
 To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
 
-1.  From the **Go to section** menu, select **Domains**.
+1.  From the **Go to section** menu, select **Domains**.    Afternoon Class Test!
 2.  In the **Manage** section, click **Add Domain**.
 3.  If you have already purchased the domain, enter it in the **Option 1** text box, and then click **Continue**. Skip to step 6.
 4.  To register a new domain, enter the domain name in the **Option 2** text box and select the top-level domain that you want (for example, **.com** or **.net**).
