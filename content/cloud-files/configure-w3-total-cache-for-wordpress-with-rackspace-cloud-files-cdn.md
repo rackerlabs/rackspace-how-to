@@ -1,27 +1,27 @@
 ---
 permalink: configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/
-audit_date: '2017-02-22'
+audit_date: '2017-02-23'
 title: Configure W3 Total Cache for WordPress with Rackspace Cloud Files
 type: article
 created_date: '2013-10-10'
 created_by: Eric Cavalcanti
-last_modified_date: '2017-02-22'
+last_modified_date: '2017-02-23'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
 
-This tutorial shows the basic steps for setting up the W3 Total Cache plug-in to work with Rackspace Cloud Files. Cloud Files uses a *push* content delivery system, which automatically uploads the content from your primary web server and stores the data on Cloud Files. The benefit of a push CDN is that you free up space on your local server's disk, and it is also easier to scale more servers without having to keep your user generated content in sync.
+This tutorial shows the basic steps for setting up the W3 Total Cache plug-in to work with Rackspace Cloud Files. Cloud Files uses a *push* content delivery network (CDN), which automatically uploads the content from your primary web server and stores the data on Cloud Files. The benefits of a push CDN are more space on your local server's disk and scaling more servers without having to keep your user-generated content in sync.
 
 **Note:** Push CDNs work better for sites that frequently experience surges in traffic that might require servers to scale up or down. If your site experiences consistently moderate to high levels of traffic, see [Configure W3 Total Cache for WordPress with Rackspace CDN](/how-to/configure-w3-total-cache-for-wordpress-with-rackspace-cdn).
 
 ### Prerequisite
 
-A WordPress website and database.
+A WordPress website and database
 
 ### Install and configure W3 Total Cache
 
-1. Log in as admin to your Wordpress blog.
+1. Log in as admin to your WordPress blog.
 
 2. In the navigation sidebar, click **Plugins > Add New**.
 
@@ -47,7 +47,7 @@ A WordPress website and database.
 
 ### Configure the CDN
 
-1. In the navigation menu, click **Performance > CDN**.
+1. In the WordPress navigation menu, click **Performance > CDN**.
 
 2. In the **Configuration** section, click **Authorize**.
 
@@ -63,13 +63,9 @@ A WordPress website and database.
 
    **Note:** This should be the same region where your cloud resources are located.
 
-   <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/select-region.png %}" alt="from the list of options, choose the region in which to host your website files"
-
 5. Create a new Cloud Files container by entering a unique name that you will remember.
 
    This name is primarily used to help you quickly identify the container in the Rackspace Cloud Control Panel.
-
-   <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/add-new-container.png %}" alt="enter a name for your new container into the field" />
 
 6. Click **Apply** to save and apply your settings.
 
@@ -79,29 +75,32 @@ A WordPress website and database.
 
 ### Set up a CNAME record (optional)
 
-1. In the **Configuration** section, set up a CNAME record to give your content links a human-readable name.
+Set up a CNAME record to give your content links a human-readable name.
 
-   1. Copy the **http** and **https** URLs from the CNAME target section. You will need this information when you add the DNS record in the Cloud Control Panel.
-   2. Leave the **SSL support** set to the default **Auto** option.
-   3. Enter any common subdomain you want in the **Replace site's hostname with:** box, and click **Add CNAME**.
+1. In the WordPress navigation menu, click **Performance > CDN**.
 
-   Click **Save all settings**.
+1. In the **Configuration** section, perform the following steps:
 
-    <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/set-up-cname-settings.png %}" alt="" />
+   a. Copy the **http** and **https** URLs from the **CDN host (CNAME target)** section. You will need this information when you add the DNS record in the Cloud Control Panel.
+   b. Leave the **SSL support** set to the default **Auto** option.
+   c. Enter any common subdomain that you want in the **Replace site's hostname with:** box, and click **Add CNAME**.
+   d. Click **Save all settings**.
+
+      <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/set-up-cname-settings.png %}" alt="" />
 
 2. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
 3. In the top navigation bar, click **Networking > Cloud DNS**.
 
-4. Select your domain, and click **Add DNS record**.
+4. Click the gear icon next to your domain, and select **Add DNS Record**.
 
 5. In the pop-up dialog box, enter the following information:
 
-   - **Record Type**: select CNAME Record from the drop-down menu.
-   - **Hostname**: enter the hostname that you created in the step 1.
-   - **Target (Domain)**: paste the **http** and **https** URLs that you copied in step 1.
-   - **Time to Live (TTL)**: choose an appropriate TTL for your site needs.
-
-   Click **Add Record**.
+   - **Record Type**: Select CNAME Record from the drop-down menu.
+   - **Hostname**: Enter the hostname that you created in the step 1.
+   - **Target (Domain)**: Paste the **http** and **https** URLs that you copied in step 1.
+   - **Time to Live (TTL)**: Choose an appropriate TTL value for your site needs.
 
     <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/add-cname-cloud-control-panel.png %}" alt="" />
+
+6. Click **Add Record**.
