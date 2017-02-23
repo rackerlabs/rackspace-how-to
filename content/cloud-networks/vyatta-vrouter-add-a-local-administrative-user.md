@@ -5,8 +5,8 @@ title: 'Vyatta vRouter: Add a local administrative user'
 type: article
 created_date: '2014-09-09'
 created_by: Sameer Satyam
-last_modified_date: '2015-02-18'
-last_modified_by: Rose Contreras
+last_modified_date: '2017-02-22'
+last_modified_by: Nate Archer
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -23,7 +23,7 @@ If you do not have remote access to the vRouter, connect to the vRouter via the 
 
 2.	In the Cloud Servers list, click on the **vRouter** instance.
 
-3.	From the **Actions** menu on the vRouter details page, select **Connect Via Console**.
+3.	From the **Actions** menu on the vRouter details page, select **Emergency Console**.
 
     <img src="{% asset_path cloud-networks/vyatta-vrouter-add-a-local-administrative-user/880-1_0.png %}" alt="" />
 

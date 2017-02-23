@@ -5,7 +5,7 @@ title: Permissions Matrix for Cloud Networks
 type: article
 created_date: '2013-08-20'
 created_by: Renee Rendon
-last_modified_date: '2017-01-18'
+last_modified_date: '2017-02-06'
 last_modified_by: Stephanie Fillmon
 product: Cloud Networks
 product_url: cloud-networks
@@ -63,18 +63,6 @@ List security group rules | `GET /v2.0/security-group-rules` | **Observer, Creat
 Create security group rule | `POST /v2.0/security-group-rules` | **Creator, Admin** | Creates a security group rule.
 Show security group rule | `GET /v2.0/security-group-rules/{rules-security-groups-id}` | **Observer, Creator, Admin** | Retrieves information about the specified security group rule.
 Delete security group rule | `DELETE /v2.0/security-group-rules/{rules-security-groups-id}` | **Admin** | Deletes the specified rule from a security group.
-
-### Floating IP address operations
-
-**Note:** The Floating IP Address API is currently in Early Access and is available only in the Northern Virginia (IAD) region. It is available for Managed Infrastructure and Managed Operations customers, but it is not available for RackConnect customers. To use this feature, contact Rackspace Support.
-
-Method | API action | Role | Description
---- | --- | --- | ---
-Retrieve list of floating IP addresses | `GET /v2.0/floatingips` | **Observer, Creator, Admin** | Retrieves list of floating IP addresses that are accessible to the tenant who submits the request. If an user with the Admin role submits the request, the response body includes all floating IP addresses.
-Create floating IP address | `POST /v2.0/floatingips` | **Creator, Admin** | Creates a floating IP address, and, if you specify port information, associates the floating IP address with an internal port.
-Update floating IP address | `PUT /v2.0/floatingips/{floatingip_id}` | **Creator, Admin** | Updates the association of a floating IP address with a port, either associating or disassociating it.
-Show floating IP address details | `GET /v2.0/floatingips/{floatingip_id}` | **Observer, Creator, Admin** | Retrieves information for a specified floating IP address, using the IP address ID.
-Delete floating IP address | `DELETE /v2.0/floatingips/{floatingip_id}` | **Admin** | Deletes a floating IP address, and, if present, its associated port.
 
 ### Shared IP address operations
 
