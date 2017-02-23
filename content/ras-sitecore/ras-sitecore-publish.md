@@ -15,27 +15,26 @@ product_url: sitecore
 
 ### Getting Started
 
-If your content includes changes that are dependent on any code to be deployed you should deploy your updated code before publishing the new content. 
+- If your content includes changes that are dependent on any custom code to be deployed you should deploy your updated code before publishing the new content. 
+
 [Deploy to Sitecore](/how-to/ras-sitecore-deploy)
 
-[Login to Sitecore](/how-to/ras-sitecore-login) Content Management
+- [Login to Sitecore](/how-to/ras-sitecore-login) Content Management
 
-Click on the Content Editor Icon
+- Click on the Content Editor Icon
 
 <img src="{% asset_path ras-sitecore/sitecoredash.png %}" alt="Sitecore Dashboard" />
 
-Click on the publish tab on the top toolbar. 
+- Click on the publish tab on the top toolbar. 
 
 <img src="{% asset_path ras-sitecore/sitecorepub.png %}" alt="Sitecore Publishing" />
 
-Click the publishing Icon
-
-Click the word publish below the publish icon to open the dropdown menu and select publish site
+- Click the publishing Icon
+- Click the word publish below the publish icon to open the dropdown menu and select publish site
 
 <img src="{% asset_path ras-sitecore/sitecorepubtab.png %}" alt="Sitecore Publishing" />
 
-Select the publishing type
-
-click the **publish** button
-
+- Select the publishing type
+- click the **publish** button
+- check both boxes to **Restart the Sitecore Client** and **Restart the Sitecore Server** and click the **close** button.
 ------------------------------------------------------------------------
