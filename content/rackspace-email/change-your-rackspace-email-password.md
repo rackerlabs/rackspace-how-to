@@ -20,14 +20,13 @@ To protect your Rackspace Email mail account from intruders, regularly change yo
 
 2. In the top-right corner, click the account's username and then select **Settings**.
 
-  <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/step2b.png %}"/>
+     <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/step2b.png %}"/>
 
 3. In the left pane, click **Change Password**.
 
-   <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/step3.png %}"/>
+     <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/step3.png %}"/>
 
 4. Enter your current password and then enter the new password.
-
 
 5. Click **Save**.
 
