@@ -5,8 +5,8 @@ title: Set up DNS records for Cloud Office email and Skype for Business
 type: article
 created_date: '2014-08-15'
 created_by: Cody Jobson
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2017-02-22'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Skype for Business
 product_url: skype-for-business
 ---
@@ -77,9 +77,10 @@ using the Out-of-Office Assistant.
 
 To enable Autodiscover, set up a Canonical Name (CNAME) record with the
 following information.
+
 Replace *example.com* with your own domain name.
 
--   **Hostname:** `autodiscover.*example.com*`
+-   **Hostname:** `autodiscover.example.com`
 -   **Time to live (TTL):** lowest possible
 -   **Record type:** CNAME
 -   **Destination:** `autodiscover.emailsrvr.com`
@@ -101,7 +102,7 @@ have them add the following TXT record to your DNS:
 -   **Record type:** TXT
 -   **Destination:** `v=spf1 include:emailsrvr.com ~all`
 
-### **Set up DNS records for Hosted Skype for Business** 
+### **Set up DNS records for Hosted Skype for Business**
 
 To complete the configuration of your hosted implementation of Microsoft
 Skype for Business formerly Microsoft Lync, you must set up DNS records.
@@ -129,10 +130,4 @@ Tool](https://emailhelp.rackspace.com/) as shown in the following image.
 
 <img src="{% asset_path skype-for-business/set-up-dns-records-for-cloud-office-email-and-skype-for-business/SkypeforBusinessa.png %}" width="656" height="261" />
 
-**Notes**:
-
--   If you have an internal DNS, you must also set up these records on
-    your internal DNS.
--   If you want to enable Lync federation with domains hosted outside of
-    Rackspace or domains that are hosted within Rackspace, contact our
-    support team to learn more.
+**Note:** If you have an internal DNS, you must also set up these records on your internal DNS. If you want to enable Lync federation with domains hosted outside of Rackspace or domains that are hosted within Rackspace, contact our support team to learn more.

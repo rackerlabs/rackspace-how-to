@@ -166,6 +166,7 @@ address.  DNS must be updated in that case as well.
 
 -   [Force SSL on your PHP site](/how-to/force-ssl-on-your-php-site)
 -   [Force SSL on your ASP/.NET site](/how-to/force-ssl-on-your-asp-or-aspnet-site-on-cloud-sites)
+-   [Force SSL on your Apache server using Htaccess](https://webhostingbuddy.com/how-to-force-https-using-htaccess/)
 
 ### Next section
 

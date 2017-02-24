@@ -39,10 +39,12 @@ From the metrics that Rackspace has collected in the system, we did noticed, tha
 
 | Data center where server is deployed | Recommended monitoring zones |
 | --- | --- |
-| SYD | SYD, HKG, ORD |
+| DFW | ORD, IAD, DFW |
 | HKG | HKG, SYD, IAD |
 | IAD | IAD, ORD, DFW |
+| LON | LON, IAD, HKG |
 | ORD | ORD, IAD, DFW |
+| SYD | SYD, HKG, ORD |
 
 ### Agent-based Performance Checks
 You can get deep insight into your resources—including servers and database instances (anything with a standard OS and outgoing network connectivity). Rackspace Monitoring agent is lightweight with a small memory footprint, using around 5MB of memory and rarely consuming more than 2% CPU time.  In addition, automatic upgrades means your agent is always up to date with the latest features, enhancements, bug fixes and security patches.  Agent Health monitoring means that the connectivities of your monitoring agents are also being monitored automatically (in Limited Availability as of September 2016).

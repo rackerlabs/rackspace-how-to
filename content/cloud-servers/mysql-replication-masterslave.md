@@ -140,7 +140,7 @@ Choose one of the following options to copy data over to the slave.
 
 ####  mysqldump
 
-Consnameer this option if the data directory is a reasonable size, and if the you have your tables locked for the duration of the procedure.
+Consider this option if the data directory is a reasonable size, and if you can have your tables locked for the duration of the procedure.
 
      mysqldump -A --flush-privileges --master-data=1 | gzip -1 > ~rack/master.sql.gz
 
@@ -162,9 +162,9 @@ If slave is a newer version of MySQL, run <code>mysql_upgrade</code> on slave be
 
 ### Attach slave to master
 
-You will need the binary log filename and position from the master that corresponds with the backup. If you are using `mysqldump`, this will be included in the **master_data.sql** file itself.
+You will need the binary log filename and position from the master that corresponds with the backup. If you are using `mysqldump`, this will be included in the **master.sql.gz** file itself.
 
-     # zgrep -m 1 -P 'CHANGE MASTER' master_data.sql.gz
+     # zgrep -m 1 -P 'CHANGE MASTER' master.sql.gz
      CHANGE MASTER TO MASTER_LOG_FILE = '<binary log filename>', MASTER_LOG_POS = <binary log position>;
 
 For a file level copy such as a cold copy obtained by shutting down MySQL and using `rsync`, the binary log filename and position will be the first log file created after restarting MySQL.
@@ -228,7 +228,7 @@ In MySQL 5.5, database-level filtering options are case sensitive on platforms s
 
 ### Events
 
-If **my.cnf** has been enabled on the master, you can disable it on the slave. If the event scheduler does need to be enabled on the slave, verify that the existing events were created with `CREATE EVENT ... DISABLE ON SLAVE` with something like: <code>select db, name from mysql.event where status not in ('disabled','slavesnamee_disabled');</code>
+If **my.cnf** has been enabled on the master, you can disable it on the slave. If the event scheduler does need to be enabled on the slave, verify that the existing events were created with `CREATE EVENT ... DISABLE ON SLAVE` with something like: <code>select db, name from mysql.event where status not in ('disabled','slavename_disabled');</code>
 
 ### Monitoring
 

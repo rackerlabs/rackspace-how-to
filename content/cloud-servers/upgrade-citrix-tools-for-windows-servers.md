@@ -5,8 +5,8 @@ title: Upgrade Citrix (XenServer) Tools for Windows cloud servers
 type: article
 created_date: '2016-04-05'
 created_by: Luke Repko
-last_modified_date: '2016-06-27'
-last_modified_by: Luke Repko
+last_modified_date: '2017-02-22'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -99,7 +99,7 @@ The upgrade requires an active connection to the internet. Follow these steps to
 
 **Note:** The following steps **must** be performed via the console and not RDP, as network connectivity will be interrupted. As an alternative to Java, there are several ways to generate NoVNC (HTML5) console URLs.
 
-1. Access the non-production server's Java console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Connect Via Console**.
+1. Access the non-production server's Java console through the [Cloud Control Panel](https://mycloud.rackspace.com/). On the Servers page, click the gear icon next to the server’s name and then select **Emergency Console**.
 
 If you are comfortable using cURL, please visit this [community article](https://community.rackspace.com/products/f/25/t/5933) to find instructions about generating the NoVNC console link. Otherwise, login to [Pitchfork](https://pitchfork.cloudapi.co/servers/#get_vnc_console-cloud_servers) with your Rackspace username and API key. Prior to sending the API call, be sure to change the console_type to, "novnc". The response will contain the URL to the console; simply copy and paste the link into a new browser tab. Note that these URLs expire after about 10 minutes, and if the console is not in use, the session will be disconnected.
 
@@ -122,7 +122,7 @@ C:\rs-pkgs\xs-tools-6.5.0-20200\install.bat
 **Warning to RackConnect v2 Customers:** Manually resetting the network of a server via the API will re-enable the server's public interface, and possibly remove the default route to your RackConnect Gateway. We advise customers with a RackConnect configuration to reach out to Rackspace support for help if having network connectivity problems after an upgrade of the Citrix Tools.
 
 #### Performing a Network Reset
-To reset the server's network via the API, please login to [Pitchfork](https://pitchfork.cloudapi.co/servers/#reset_network-cloud_servers) with yourRackspace username and API key. Issue the, "Reset Network" call using the server UUID. 
+To reset the server's network via the API, please login to [Pitchfork](https://pitchfork.cloudapi.co/servers/#reset_network-cloud_servers) with yourRackspace username and API key. Issue the, "Reset Network" call using the server UUID.
 
 To reset the server's network by hand, find the directory C:\rs-pkgs\ where separate text files exist that contain the IP configuration, and routing information that was present before upgrading the Citrix Tools.
 

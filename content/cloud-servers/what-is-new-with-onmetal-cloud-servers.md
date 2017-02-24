@@ -5,8 +5,8 @@ title: What is new with OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Kyle Laffoon
-last_modified_date: '2016-07-22'
-last_modified_by: Aurimas Mickevicius
+last_modified_date: '2017-02-22'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -119,4 +119,4 @@ The following actions and features are not possible on OnMetal servers:
 -   Server resize
 -   Server image creation
 -   Password change
--   Connect via console
+-   Emergency Console
