@@ -576,8 +576,6 @@ to know the key used to encrypt the data in order to decrypt it. Also,
 many people believed that mathematics, being wholly deterministic,
 could not do such a thing.
 
-<img style="float:right;" src="{% asset_path general/encryption-fundamentals/color-key-exchange.svg %}" width="427" height="641" />
-
 This was known to some to be incorrect. In particular, the British
 government had developed asymmetric ciphers and kept the information
 hidden. Private researchers would later rediscover these secrets and
@@ -589,6 +587,8 @@ this, Alice and Bob both buy different padlocks at different stores,
 both of which have two identical keys. Alice then places one of her
 keys into a box and seals it with her padlock. The box is mailed to
 Bob, who then puts his padlock on it and sends it back.
+
+<img style="float:right;" src="{% asset_path general/encryption-fundamentals/color-key-exchange.svg %}" width="427" height="641" />
 
 When Alice receives the box, it has both her padlock and Bob's on it.
 Within the box is the key to Alice's padlock. Now, Alice uses her spare
