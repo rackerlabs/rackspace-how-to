@@ -25,7 +25,8 @@ ciphers and protocols, sniffers and code breakers. The war-time needs
 to break encryption during World War II and the Cold War are in many
 ways responsible for the development of the modern computer in the late
 20th century. Many of the visionary precursors of the modern computer
-were instrumental in improvements to encryption - often by breaking it.
+were instrumental in creating improvements to encryption - often by
+breaking existing ciphers.
 
 So how do we encrypt things in a way that we can be reasonably certain
 no one can decrypt them without our key? This is a difficult thing to
