@@ -612,7 +612,7 @@ Bob then add their secret color into the other person's mix to generate
 a new color (their shared private key). Here's an example illustration
 of this process provided by Wikipedia. <sup>[4](#4)</sup>
 
-<img src="{% asset_path general/encryption-fundamentals/color-key-exchange.png %}" width="570" height="620" />
+<img src="{% asset_path general/encryption-fundamentals/color-key-exchange.svg %}" width="570" height="620" />
 
 #### Diffie-Hellmann Key Exchange
 
