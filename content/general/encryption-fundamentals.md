@@ -5,7 +5,7 @@ title: Encryption Fundamentals
 type: article
 created_date: '2017-02-02'
 created_by: Alan Hicks
-last_modified_date: '2017-02-09'
+last_modified_date: '2017-02-24'
 last_modified_by: Alan Hicks
 product: undefined
 product_url: undefined
