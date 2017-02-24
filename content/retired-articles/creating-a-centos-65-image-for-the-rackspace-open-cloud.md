@@ -7,8 +7,6 @@ created_date: '2014-02-17'
 created_by: Cloud Images
 last_modified_date: '2016-04-20'
 last_modified_by: Stephanie Fillmon
-product: Cloud Images
-product_url: cloud-images
 ---
 
 Use the Cloud Images service to import custom virtual machine disk images into
