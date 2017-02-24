@@ -588,6 +588,8 @@ both of which have two identical keys. Alice then places one of her
 keys into a box and seals it with her padlock. The box is mailed to
 Bob, who then puts his padlock on it and sends it back.
 
+<img style="float:right;" src="{% asset_path general/encryption-fundamentals/color-key-exchange.svg %}" width="427" height="641" />
+
 When Alice receives the box, it has both her padlock and Bob's on it.
 Within the box is the key to Alice's padlock. Now, Alice uses her spare
 key to remove her lock and mails the box back to Bob. When Bob receives
@@ -611,8 +613,6 @@ attacker will not know each person's randomly chosen color. Alice and
 Bob then add their secret color into the other person's mix to generate
 a new color (their shared private key). Here's an example illustration
 of this process provided by Wikipedia. <sup>[4](#4)</sup>
-
-<img style="float:right;" src="{% asset_path general/encryption-fundamentals/color-key-exchange.svg %}" width="427" height="641" />
 
 #### Diffie-Hellmann Key Exchange
 
