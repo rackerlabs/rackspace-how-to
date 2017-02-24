@@ -1,12 +1,12 @@
 ---
 permalink: application-and-load-testing-guidelines/
-audit_date:
-title: Application load testing
+audit_date: '2017-02-22'
+title: Application and load testing guidelines
 type: article
 created_date: '2012-10-29'
 created_by: Lee Kimber
-last_modified_date: '2016-05-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-02-22'
+last_modified_by: jaymitripp
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -15,19 +15,22 @@ Part of offering a professional experience to your customers is knowing how your
 
 **Note:** When you perform any testing on or against Rackspace cloud servers, you are operating under the terms of our [Global Acceptable Use Policy (AUP)](http://www.rackspace.com/information/legal/global/aup).
 
-## Policing and enforcement
+### Policing and enforcement
 
 Rackspace monitors all of our cloud host servers for activities that reduce the performance of customers' virtual servers. If we find that a customer's virtual server is being used in a way that affects other customers' virtual servers, we reserve the right to hard reboot, suspend, or switch off the impacting server. We further reserve the right to suspend or terminate the impacting customer's Rackspace Cloud account.
 
 When you perform the recommended application tests, load tests, and performance-benchmarking tests in this article, observe the following guidelines before and during each test, and stop the test immediately if the indicated thresholds are breached.
 
-## Load testing
+### Load testing
 
-You should continually monitor the effect of your test as you apply load. Before running load tests, ensure that you know how to view actual RAM, disk IO, and network usage in real-time. These metrics show whether a test risks interfering with other customers' servers on the same host. See the following sections for specific thresholds.
+Be sure to continually monitor the effects of your tests as you apply load. Before running load tests, ensure that you know how to view actual RAM, disk IO, and network usage in real time. These metrics show whether a test risks interfering with other
+customers' servers on the same host. For specific thresholds, see the following Linux and Windows virtual servers sections.
+
+Alternatively, there are several load-testing services that are managed with external servers, located globally. For example, [load testing with LoadView](https://www.loadview-testing.com) allows you to use their external servers and offers additional testing of API load or application load testing. 
 
 ### Linux virtual servers
 
-Install and use the `screen` package for your Linux distribution to run and view the following commands at the same time. To compile the screen from source, go to the [GNU homepage]( http://www.gnu.org/software/screen/).
+Install and use the `screen` package for your Linux distribution to run and view the following commands at the same time. To compile the screen from source, go to the [GNU homepage](http://www.gnu.org/software/screen/).
 
 #### RAM
 
@@ -35,7 +38,7 @@ Use the following command to view RAM usage as you perform tests:
 
      watch free -m
 
-Don't let the value in the Free column in the +/- buffers/cache line go lower than 1,000.
+Don't let the value in the `Free` column in the `+/- buffers/cache` line go lower than 1000.
 
 #### Disk IO
 
@@ -117,13 +120,13 @@ Watch the following memory-related counters during load testing:
 
 - Counter: **Paging File > % Usage > Total**
 
-  Purpose: Review this value in conjunction with Available MBytes to understand paging activity on your system.
+  Purpose: Review this value in conjunction with **Available MBytes** to understand paging activity on your system.
 
   Threshold: Don't let this counter rise above 50 percent of the total paging size.
 
 - Counter: **Memory > Available MBytes**
 
-  Purpose: Free RAM available to be used by new processes, in megabytes
+  Purpose: Shows free RAM available to be used by new processes, in megabytes
 
   Threshold: Don't let this counter fall below 10 percent of total physical RAM.
 
@@ -135,7 +138,7 @@ Watch the following disk use counters during load testing:
 
 - Counter: **PhysicalDisk > Disk Time > _Total**
 
-  Purpose: Amount of time that the disk is active
+  Purpose: Shows the amount of time that the disk is active
 
   Threshold: 90 percent
 
@@ -188,7 +191,7 @@ Threshold: Don't let link speed rise above the **Maximum PerfMon Link Speed (%)*
 
 ### Network latency testing
 
-Remote testing can cause network latency. To test the network latency to our various data centers, ping them and then review the response times or the ping returns. Each Rackspace data center has its own sandbox server that you can use for ping and other network tests. Because most of our Cloud infrastructure is hosted in the same data centers, this test also works for cloud servers.
+Remote testing can cause network latency. To test the network latency to our various data centers, ping them and then review the response times or the ping returns. Each Rackspace data center has its own sandbox server that you can use for ping and other network tests. Because most of our cloud infrastructure is hosted in the same data centers, this test also works for cloud servers.
 
 Ping is publicly accessible for the following servers:
 

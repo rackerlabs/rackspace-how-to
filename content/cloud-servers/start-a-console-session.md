@@ -5,8 +5,8 @@ title: Start a Console session
 type: article
 created_date: '2012-03-27'
 created_by: Rackspace Support
-last_modified_date: '2016-09-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-02-22'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -17,7 +17,7 @@ As the administrator for your cloud servers, you might need to occasionally log 
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com) and click **Servers > Cloud Servers** in the top navigation bar.
 2.  Click on the name of your server to open the details page.
-3.  From the Actions menu, select **Connect Via Console**.
+3.  From the Actions menu, select **Emergency Console**.
 
 A terminal emulator window opens and displays your server's console. If you see a blank screen, hit Enter to bring up a login prompt or Windows desktop.
 
