@@ -873,3 +873,828 @@ arithmetic. One of the key advantages to this sort of exponential
 increase in difficulty is that as computers get much faster, we only
 need to increase the size of our numbers slightly to keep pace.
 
+##### The Phi (or &Phi;) Function
+
+This is almost certainly something you've never heard of before, unless
+you're really into mathematics.  &Phi; is the total number of integers that
+don't share a factor (other than "1") with a given integer. Let's look
+at an example using the number 18.
+
+<pre><code>
+&Phi; 18 = ?
+------------------------------
+Fact(1)  = [  ]
+Fact(2)  = [ 1, 2 ]
+Fact(3)  = [ 1, 3 ]
+Fact(4)  = [ 1, 2, 4 ]
+Fact(5)  = [ 1, 5 ]
+Fact(6)  = [ 1, 2, 3, 6 ]
+Fact(7)  = [ 1, 7 ]
+Fact(8)  = [ 1, 2, 4, 8 ]
+Fact(9)  = [ 1, 3, 9 ]
+Fact(10) = [ 1, 2, 5, 10 ]
+Fact(11) = [ 1, 11 ]
+Fact(12) = [ 1, 2, 3, 4, 6, 12 ]
+Fact(13) = [ 1, 13 ]
+Fact(14) = [ 1, 2, 7, 14 ]
+Fact(15) = [ 1, 3, 5, 15 ]
+Fact(16) = [ 1, 2, 4, 8, 16 ]
+Fact(17) = [ 1, 17 ]
+Fact(18) = [ 1, 2, 3, 6, 9, 18 ]
+------------------------------
+1 5 7 11 13 17
+
+&Phi; 18 = 6
+</code></pre>
+
+From here, we can see that the numbers 1, 5, 7, 11, 13, and 17 do not
+share any factors with 18 (other than "1"). Since there are six of
+these numbers, &Phi; 18 = 6. As you can see, this is a very difficult
+problem to solve as it involves factoring a great deal of numbers, then
+comparing all of those factors for similarities.
+
+But there is one class of numbers for which calculating &Phi; is easy -
+primes.
+
+<pre><code>
+&Phi; 5 = ?                                 &Phi; 7 = ?
+------------------------------          ------------------------------
+Fact(1)  = [  ]                         Fact(1)  = [  ]
+Fact(2)  = [ 1, 2 ]                     Fact(2)  = [ 1, 2 ]
+Fact(3)  = [ 1, 3 ]                     Fact(3)  = [ 1, 3 ]
+Fact(4)  = [ 1, 2, 4 ]                  Fact(4)  = [ 1, 2, 4 ]
+Fact(5)  = [ 1, 5 ]                     Fact(5)  = [ 1, 5 ]
+                                        Fact(6)  = [ 1, 2, 3, 6 ]
+                                        Fact(7)  = [ 1, 7 ]
+------------------------------          ------------------------------
+&Phi; 5 = 4                                 &Phi; 7 = 6
+</code></pre>
+
+From this, we can easily see that "&Phi; n" = "n -1" if "n" is a prime
+number. &Phi; is difficult to compute for most numbers, but ridiculously
+simple for primes.
+
+What's even more interesting is that &Phi; is multiplicative. This means
+that "&Phi; n" * "&Phi; x" = "&Phi; (n*x)". Here's an example to illustrate this.
+
+<pre><code>
+4 * 5 = 20
+--------------------
+&Phi; 4 = 2
+&Phi; 5 = 4
+&Phi; 20 = ?
+------------------------------
+Fact(1)  = [ 1 ]
+Fact(2)  = [ 1, 2 ]
+Fact(3)  = [ 1, 3 ]
+Fact(4)  = [ 1, 2, 4 ]
+Fact(5)  = [ 1, 5 ]
+Fact(6)  = [ 1, 2, 3, 6 ]
+Fact(7)  = [ 1, 7 ]
+Fact(8)  = [ 1, 2, 4, 8 ]
+Fact(9)  = [ 1, 3, 9 ]
+Fact(10) = [ 1, 2, 5, 10 ]
+Fact(11) = [ 1, 11 ]
+Fact(12) = [ 1, 2, 3, 4, 6, 12 ]
+Fact(13) = [ 1, 13 ]
+Fact(14) = [ 1, 2, 7, 14 ]
+Fact(15) = [ 1, 3, 5, 15 ]
+Fact(16) = [ 1, 2, 4, 8, 16 ]
+Fact(17) = [ 1, 17 ]
+Fact(18) = [ 1, 2, 3, 6, 9, 18 ]
+Fact(19) = [ 1, 19 ]
+Fact(20) = [ 1, 2, 4, 5, 10, 20 ]
+------------------------------
+&Phi; 20 = 8    # since 1, 3, 7, 9, 11, 13, 17, 19 do not share any factors with 20
+</code></pre>
+
+Since finding &Phi; for any prime number is easy, if we know the prime
+factors of a number, finding &Phi; for that number is also easy. For
+instance, the prime factors of 90,943 are 199 and 457, so &Phi; 90,943 =
+90,288.
+
+<pre><code>
+&Phi;199 = 198
+&Phi;457 = 456
+&Phi;90,943 = &Phi;199 * &Phi;457
+&Phi;90,943 = 90,288 
+</code></pre>
+
+##### RSA and &Phi;
+
+When RSA keys are generated, we randomly select two very large prime
+numbers. We will call those "p" and "q" in our examples. These two
+primes are then multiplied to produce "N". Since both "p" and "q" are
+prime numbers, it's easy for us to compute the value of "&Phi; N", but
+incredibly difficult for anyone who does not already know the
+factorization of "N".
+
+<pre><code>
+ N = p * q
+&Phi;p = p - 1
+&Phi;q = q - 1
+&Phi;N = (p - 1) * (q -1)
+</code></pre>
+
+This is one of the secrets of RSA. As long as we can be reasonably
+certain that no one else knows the factorization of "N", we can publish
+"N" as part of our public key and "&Phi; N" will be used as part of our
+decryption function.
+
+##### Euler's Theorem
+
+The next bit of higher order math which will twist your neurons into
+knots is Euler's Theorem. This states that if we have two numbers which
+are coprime (we will call them "a" and "b"), then:
+
+<pre><code>
+a**(&Phi;b) = 1 mod b  # If a and b are coprime
+</code></pre>
+
+We should take a moment here to discuss the meaning of "coprime" as
+we've not discussed this yet. Numbers are coprime if they do not share
+any prime factors. Let's back up and look at our factoring table from
+earlier (I've removed all of the factors which are not prime numbers
+for clarity).
+
+    Fact(1)  = [ ]
+    Fact(2)  = [ 2 ]
+    Fact(3)  = [ 3 ]
+    Fact(4)  = [ 2 ]
+    Fact(5)  = [ 5 ]
+    Fact(6)  = [ 2, 3 ]
+    Fact(7)  = [ 7 ]
+    Fact(8)  = [ 2 ]
+    Fact(9)  = [ 3 ]
+    Fact(10) = [ 2, 5 ]
+    Fact(11) = [ 11 ]
+    Fact(12) = [ 2, 3 ]
+    Fact(13) = [ 13 ]
+    Fact(14) = [ 1, 2, 7 ]
+    Fact(15) = [ 3, 5 ]
+    Fact(16) = [ 2 ]
+    Fact(17) = [ 17 ]
+    Fact(18) = [ 2, 3 ]
+    Fact(19) = [ 19 ]
+    Fact(20) = [ 2, 5 ]
+
+This is a list of all the prime factors for any given integer between 1
+and 20. Looking at this table, we can see that "8" and "15" are coprime
+because their respective prime factors ("[ 2 ]" and "[ 3, 5 ]") do not
+overlap.
+
+Using Euler's Theorem, we can see that:
+
+<pre><code>
+8**(&Phi;15) = 1 mod 15
+--------------------
+8**8          = 16,777,216
+16777216 / 15 = 1,118,481.0666
+15 *1,118,481 = 16,777,215
+
+                16,777,216
+              - 16,777,215
+                ----------
+                         1
+</code></pre>
+
+Now, in order to make use of Euler's Theorem, we must modify the
+equation slightly by using two simple rules. The first rule is that "1"
+raised to any power always equals "1".
+
+    1**0 = 1
+    1**1 = 1
+    1**2 = 1
+    1**3 = 1
+    1**x = 1
+
+Since our equation always equals "1" (after the modular arithmetic is
+performed), we can raise it to any exponent. We'll call this exponent
+"k".
+
+<pre><code>
+     a**&Phi;b = 1 mod b       # If a and b are coprime
+(a**&Phi;b)**k = (1 mod b)**k
+a**(k * &Phi;b ) = 1 mod b     # Simplified
+</code></pre>
+
+Similarly, "1" multiplied by any number "x" equals "x".
+
+    1*0 = 0
+    1*1 = 1
+    1*2 = 2
+    1*3 = 3
+    1*x = x
+
+Again, since our function equals 1 (after the modular arithmetic is
+performed), we can multiply it by "a" to get "a" on both sides of the
+equation.
+
+<pre><code>
+    a**(k * &Phi;b ) = 1 mod b         # Simplified "k" function from above
+ a*(a**(k * &Phi;b)) = a * (1 mod b)   # Notice that "a" is now on both
+sides of the equation
+a * a**(k * &Phi;b ) = a mod b         # Simplified
+</code></pre>
+
+We can further simplify this by realizing that "a" times itself is
+simply "a" squared, and "a" times "a" squared is "a" cubed, and so on.
+Essentially, we simply increase the exponent by 1.
+
+<pre><code>
+a * a**(k * &Phi;b ) = a mod b      # Simplified "a" function from above
+a**(k * &Phi;b +1 ) = a mod b       # Further simplified
+</code></pre>
+
+This last equation is the real break-through that gives us a way of
+finding the true value of an encrypted number by using &Phi; N. Let's look
+back at the Diffie-Hellmann formula. Remember that our two partners are
+raising an agreed-upon number to an exponent they determine together,
+then taking the modulus.
+
+    a**x mod N = c1   # Where a and N are agreed upon public numbers and x is Alice's randomly chosen number.
+    a**y mod N = c2   # Where a and N are agreed upon public numbers and y is Bob's randomly chosen number.
+    
+    a**(x * c2) mod N = d
+    a**(y * c1) mod N = d
+
+What's missing from this is the ability for Alice to generate a secret
+key and then use it in her communications with everyone. Since "c1" and
+"c2" are dependent upon values that another person randomly chose, "d"
+is only valid for communications between Alice and Bob. Alice cannot
+use "d" to encrypt her communications with Chuck or Daniel. RSA gives
+us this ability by swapping "(x * c2)" with "(k * &Phi;b +1 )". Let's
+re-write the RSA encryption function slightly using "e" and "d" in
+place of "(k  * &Phi;?N + 1)".
+
+<pre><code>
+d = k + &Phi;N +1
+a**(k * &Phi;N +1) = a mon N
+a**(e * d)     = a mod N
+</code></pre>
+
+If we solve for "d" we get the following.
+
+<pre><code>
+a**(k * &Phi;N +1) = a mod N
+a**(e * d)       = a mod N
+------------------------------
+(e * d)          = k * &Phi;N +1
+d                = (k * &Phi;N +1) / e
+</code></pre>
+
+We're getting a little ahead of ourselves here as we have not defined
+"e" yet (we'll get to that soon; I promise), but this is important.
+Assuming we know the values of "k", "&Phi;N", and "e", finding "d" is easy.
+However, if you do not know the factorization of "N", finding "d" is
+incredibly difficult. This is the trick that makes RSA work. "d" is the
+private key!
+
+Now, let's back up and begin actually generating keys in a real-life
+example.
+
+<pre><code>
+# Step 1. Choose two random prime numbers and generate N and ?N
+p1   = 73
+p2   = 97
+N    = 7,081
+&Phi;N   = 6,912
+</code></pre>
+
+Now that we know &Phi;N, we need to select a public exponent "e". There are
+a few requirements here. It must be an integer greater than 1 and less
+than &Phi;N, and it must be coprime with &Phi;N. Typically, we chose a
+relatively small prime number and ensure it isn't a factor of &Phi;N. Let's
+chose 11.
+
+<pre><code>
+# Step 1. Choose two random prime numbers and generate N and ?N
+p1   = 73
+p2   = 97
+N    = 7,081
+&Phi;N   = 6,912
+# Step 2. Pick a prime number "e" such that "1 < e < &Phi;N)" and e and &Phi;N) are co-prime.
+e    = 11
+</code></pre>
+
+Now that we know "e", we need to solve for "d".
+
+    a**(k * 6,912 +1) = a mod 7,081
+    a**(11 * d)       = a mod 7,081
+    --------------------------------
+    (11 * d)          = k * 6,912 +1
+    d                 = (k * 6,912 +1) / 11
+
+Recall that "k" can be any number. In order to solve for "d" we have to
+chose a value for "k" that makes the equation equal a whole number.
+
+    k      (k * 6,912 +1) / 11  =  d
+    ---    -------------------     --------------
+    k=1    (k * 6,912 + 1 / 11      628.454545455
+    k=2    (k * 6,912 + 1 / 11     1,256.81818182
+    k=3    (k * 6,912 + 1 / 11     1,885.18181818
+    k=4    (k * 6,912 + 1 / 11     2,513.54545455
+    k=5    (k * 6,912 + 1 / 11     3,141.90909091
+    k=6    (k * 6,912 + 1 / 11     3,770.27272727
+    k=7    (k * 6,912 + 1 / 11     4,398.63636364
+    k=8    (k * 6,912 + 1 / 11     5,027
+
+Eureka! "d" = 5,027.
+
+<pre><code>
+# Step 1. Choose two random prime numbers and generate N and &Phi;N
+p1   = 73
+p2   = 97
+N    = 7,081
+&Phi;N = 6,912
+# Step 2. Pick a prime number "e" such that "1 < e < &Phi;N" and e and &Phi;N are co-prime
+e    = 11
+# Step 3. Solve for d by picking values for k
+d    = 5,027
+</code></pre>
+
+At this point, we have generated our keys. We can publish the values of
+"N" and "e" as our public key and keep "d" secret as our private key.
+Let's use these values in an example.
+
+Suppose Bob wants to send Alice a message. Alice has already published
+her public key, so he knows the values of "N" and "e". Bob turns his
+message into a numerical value (perhaps he's using ASCII) and then uses
+the public key to encrypt his message using the following algorithm.
+("m" is the message he wants to send and "c" is the encrypted message.)
+
+    c = m**e mod N
+    --------------
+    m = 109
+    e = 11     # From Alice's public key
+    N = 7,081  # From Alice's public key
+    
+    c = 109**11 mod 7,081
+    c = 18
+
+He then sends this to Alice. In order to decrypt this, she must apply
+the multiplicative inverse of "e", which we determined to be "d".
+
+    m = c**d mod N
+    m = 18**5,027 mod N
+    m = 109
+
+Since d is the multiplicative inverse of "e" (only in modulus N),
+raising "c" to the power of "d" is the same as the following equation.
+
+    m**(e*d) mod N
+    109**(11*5,027) mod 7,081 = 109
+
+This is functionally the same arithmetic we showed in the
+Diffie-Hellman key exchange, but now Bob and Alice don't need to
+generate an encryption key for every session. At first glance, this
+might not seem like a big deal, but it is. Think of all the different
+times you use encryption on the Internet. With Diffie-Hellman, you
+would have to generate a new secret key for every connection, and
+manage those keys. Now imagine if you were a company like a bank, or
+Amazon. Think of the overhead involved in generating new keys for each
+and every customer who needs to use your service. Keeping track of all
+those keys would be a major problem, let alone generating enough
+entropy to ensure you are using sufficiently random numbers. Using RSA
+allows each entity to generate a single key and use that in all
+transactions.
+
+##### RSA Digital Signatures
+
+Having a single RSA key pair also grants us a new ability that
+Diffie-Hellman did not. Namely, it allows us to use our *private* key to
+sign our communications. Then anyone who has our public key can
+"decrypt" the signature and know for a fact that it came from us. Let's
+look at how this works.
+
+Alice sends Bob a message with a numerical value of 65. She applies the
+same function using her private key and publishes the results.
+
+    m = 65
+    s = m**d mod N
+    s = 65**5,027 mod 7,081
+    s = 6,433
+
+Bob receives message "m" and signature "s". He then uses her public
+exponent "e" to "decrypt" the signature to see if it matches "m".
+
+    m = 65
+    s = 6,433
+    
+    S = s**e mod N
+    S = 6,433**11 mod 7,081
+    S = 65
+
+Since "S" and "m" are identical, Bob can be certain that "m" came from
+Alice and not an imposter. This is a crucial piece of our online
+identities as it allows us to prove beyond a reasonable the
+authenticity of a message.
+
+Additionally, digital signatures give us an assurance of data
+integrity, meaning that the data itself has not been modified in
+transit. If the message is altered in any way, "decrypting" the
+signature will result in a mismatch.
+
+##### Hash Algorithms and Digital Signatures
+
+I mentioned earlier that digital hashes were an important part of
+digital signatures. Since computing digital signatures for large
+messages is computationally expensive, it's standard practice to use a
+hashing algorithm like SHA1 or SHA256 to create a smaller message
+digest. Hashing algorithms are comparatively fast and simple, so they
+greatly reduce the overhead required to create a digital signature.
+
+Additionally, hashes provide some important security benefits as well.
+One of the peculiar qualities of RSA is that no message can be signed
+or encrypted if the message is larger than the modulus N. For
+encryption, this presents no major hassle. Typically the message is
+either compressed or broken up into smaller chunks. For signing
+however, breaking a message into chunks creates possible problems.
+Notably, anyone who intercepts both these message chunks and their
+hashes can re-order those chunks in a method that will alter the
+message into gibberish, but also will digitally verify. Let's look at a
+contrived example.
+
+Suppose Alice and Bob are having the following conversation, and
+digitally signing their messages.
+
+    Alice's Message:   I miss you. Don't you still love me?
+    Bob's Message:     I am busy darling, I still love you!
+
+Now let's suppose that each letter has its own unique digital
+signature. To make things clear, I am going to use the opposite case of
+each letter for the signature.
+
+    Alice's Message:   I miss you. Don't you still love me?
+    Alice's Signature: i MISS YOU. dON'T YOU STILL LOVE ME?
+    Bob's Message:     I am busy darling, I still love you!
+    Bob's Signature:   i AM BUSY DARLING, i STILL LOVE YOU!
+
+When Bob and Alice receive each other's messages, they are able to
+verify each piece of the message was indeed sent by the other. But what
+if Eve intercepts these messages and rearranges them?
+
+    Alice's Message:   I miss you. Don't you still love me?
+    Alice's Signature: i MISS YOU. dON'T YOU STILL LOVE ME?
+    Bob's Message:     I am still busy, avoiding your yell!
+    Bob's Signature:   i AM STILL BUSY, AVOIDING YOUR YELL!
+
+By rearranging each piece of the message and its corresponding
+signature, crafty Eve has succeeded in sewing discord between the happy
+couple. One wonders at her motives.<sup>[6](#6)</sup> Had Alice and Bob converted
+their message using a hashing algorithm, Eve's actions could have been
+thwarted.
+
+##### Advantages and Disadvantages of RSA
+
+The advantages of RSA should be pretty self-explanatory at this point.
+In particular, it's ability to digitally sign communications is a key
+part of many encryption protocols. Enciphering and deciphering data
+with RSA is time and resource intensive, however. For this reason,
+symmetric algorithms like AES are preferred for their enhanced
+performance characteristics.
+
+### TLS/SSL
+
+Now that we've talked about symmetric and asymmetric ciphers, it's time
+to look at the protocols that use them, namely Secure Socket Layer
+(SSL) and Transport Layer Security (TLS).<sup>[7](#7)</sup> We won't go into great
+depth regarding the differences between one version and the next, but
+we will discuss how these protocols work overall. First we should spend
+a moment on nomenclature. SSL and TLS are fundamentally the same thing.
+After SSLv3 was released, the name for future versions was changed for
+political reasons.<sup>[8](#8)</sup> People are often confused as to whether they are
+using TLS or SSL, particularly when configuring e-mail clients. Often
+the client asks if the user wants to use SSL or STARTTLS. These seem to
+imply that your mail user agent is asking to use either SSL or TLS, but
+the reality is a bit different. Encryption can either be done
+implicitly on a port (as is done for HTTPS on port 443 and IMAPS on
+port 993) or explicitly as a command on a naturally non-encrypted port
+(as is done with the STARTTLS command in SMTP).
+
+Another thing we should note is that SSL isn't quite dead, but it
+should be. No one should be using SSLv3 (or heavens forbid SSLv2)
+anywhere. These protocols have serious systemic vulnerabilities that
+cannot be mitigated. Every browser produced in the last 15 years has
+supported at least TLS 1.0 (and even that needs to be killed). There is
+no acceptable excuse for a modern server to use anything less thatn
+TLSv1.1. Any software that requires encryption and does not support
+TLSv1.1 is seriously broken. From here on out, I'm only going to refer
+to this as TLS.
+
+Now that we've gotten that out of the way, we should discuss what TLS
+is. TLS is a cryptographic protocol that is used to initiate a secured
+connection, negotiate an acceptable cipher, and guarantee data
+integrity. TLS is NOT an encryption cipher unto itself. Rather, it
+relies upon the ciphers we've discussed above for the actual work of
+encrypting and decrypting communications. TLS uses a series of
+handshakes in order to negotiate an encrypted channel. These handshakes
+are not entirely dissimilar from the TCP handshakes, though they
+function quite differently.
+
+#### TLS Client Hello
+
+When a browser, e-mail client, or any other program speaks to a TLS
+encrypted server, it first sends a client handshake. The purpose of
+this handshake is to establish the specific protocol version (TLS 1.0,
+1.1, 1.2, or soon 1.3), provide the server with a list of encryption
+ciphers that the client supports, and provide a list of the extensions
+the client supports Let's take a look at an example client handshake.
+
+    Secure Sockets Layer
+        TLSv1.2 Record Layer: Handshake Protocol: Client Hello
+            Content Type: Handshake (22)
+            Version: TLS 1.0 (0x0301)
+            Length: 512
+            Handshake Protocol: Client Hello
+                Handshake Type: Client Hello (1)
+                Length: 508
+                Version: TLS 1.2 (0x0303)
+                Random
+                    GMT Unix Time: Jun  8, 2000 10:33:42.000000000 EDT
+                    Random Bytes: 310664a56a9fd1921c018252b654f589672e485d20ab6933...
+                Session ID Length: 0
+                Cipher Suites Length: 158
+                Cipher Suites (79 suites)
+                    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)
+                    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (0xc02c)
+                    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (0xc028)
+                    Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 (0xc024)
+                    Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xc014)
+                    .....
+                    Cipher Suite: TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA (0x000d)
+                    Cipher Suite: TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA (0xc00d)
+                    Cipher Suite: TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA (0xc003)
+                    Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                    Cipher Suite: TLS_EMPTY_RENEGOTIATION_INFO_SCSV (0x00ff)
+                Extensions Length: 309
+                Extension: server_name
+                    Type: server_name (0x0000)
+                    Length: 19
+                    Server Name Indication extension
+                        Server Name list length: 17
+                        Server Name Type: host_name (0)
+                        Server Name length: 14
+                        Server Name: www.google.com
+                ...
+
+Here I've stripped out quit a lot of information to make this more
+readable. In particular, the cipher list and extension list were
+greatly trimmed.
+
+The first thing we can see in this decoded frame is that this is a
+Client Hello utilizing TLS version 1.2. This is the latest release of
+the TLS specification and offers the highest level of protocol security
+(which is separate from cipher strength). Since this is the Client
+Hello, it must include a complete list of ciphers that the client
+supports. We can see that it is offering a total of 79 different
+supported ciphers, and I've included a list of only a few of them.
+Notice that these included ciphers are often combinations of Elliptic
+Curve, Diffie-Hellmann, RSA, and AES with some type of SHA hashes.
+Other cipher types are of course available as well.
+
+Looking further, we reach the Extensions section of the Client Hello.
+Several extensions were cut from this frame, but I've left in place one
+of the most common - SNI (Server Name Indication). This is the
+extension that allows a web server to perform name-based virtual
+hosting for encrypted websites. Without it, every encrypted website
+would require a unique IP address.
+
+Once the client hello has completed, the server processes that
+information and responds with its own hello frame.
+
+#### Server Hello
+
+The server hello is responsible for determining the specific encryption
+cipher to use and providing a public key to the client.
+
+    Secure Sockets Layer
+        TLSv1.2 Record Layer: Handshake Protocol: Server Hello
+            Content Type: Handshake (22)
+            Version: TLS 1.2 (0x0303)
+            Length: 102
+            Handshake Protocol: Server Hello
+                Handshake Type: Server Hello (2)
+                Length: 98
+                Version: TLS 1.2 (0x0303)
+                Random
+                    GMT Unix Time: Nov 25, 2016 13:16:21.000000000 EST
+                    Random Bytes: d9aa70d129b75abd127ab4296f22a9f9b46039790c58a790...
+                Session ID Length: 32
+                Session ID: 46aec95031a757a4b1bba258cfa82250be227eda45284277...
+                Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xc02f)
+                Compression Method: null (0)
+                Extensions Length: 26
+                Extension: renegotiation_info
+                    Type: renegotiation_info (0xff01)
+                    Length: 1
+                    Renegotiation Info extension
+                        Renegotiation info extension length: 0
+                ...
+
+This is but the first part of the Server Hello. Typically, the server
+sends two frames. The first you see above, the second we will discuss
+below.
+
+Recall how the client provided the server with a list of 79 different
+encryption ciphers that it supported? The server maintains its own list
+of supported ciphers in preferential order. It begins comparing its
+cipher list one-by-one to the list provided by the client, starting
+with its most preferred cipher and ending with its least preferred.
+When it detects a match, it stops the comparison and chooses that
+cipher for the connection. This is why it is not always required to
+remove older ciphers from your configuration. If you prefer the
+strongest ciphers, the weaker ciphers will not be used unless they are
+the only ciphers supported by both the client and the server. In this
+case, the server has compared its list with the one we provided in the
+client hello and determined that we will use the
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 cipher.
+
+This part of the Server Hello also checks to see if a session has
+already been negotiated. TLS can re-use a previously negotiated session
+if the client still has the existing keys. This reduces the amount of
+overhead required on the server. For instance, a customer may login to
+an e-commerce site with their account information via HTTPS, then
+return to HTTP for browsing and adding items to their cart. Upon
+checkout, the browser is directed back to HTTPS. If the browser still
+has a valid session from the original login, the full negotiation need
+not be repeated.
+
+Now let's take a look at the second portion of the Server Hello.
+
+    Secure Sockets Layer
+        TLSv1.2 Record Layer: Handshake Protocol: Certificate
+            Content Type: Handshake (22)
+            Version: TLS 1.2 (0x0303)
+            Length: 3081
+            Handshake Protocol: Certificate
+                Handshake Type: Certificate (11)
+                Length: 3077
+                Certificates Length: 3074
+                Certificates (3074 bytes)
+                    Certificate Length: 1156
+                    Certificate: 3082048030820368a003020102020844b848caa05a088330... (id-at-commonName=www.google.com,id-at-organizationName=Google Inc,id-at-localityName=Mountain View,id-at-stateOrProvinceName=California,id-at-countryName=US)
+                        signedCertificate
+                            version: v3 (2)
+                            serialNumber: 4951787825404708995
+                            signature (sha256WithRSAEncryption)
+                                Algorithm Id: 1.2.840.113549.1.1.11 (sha256WithRSAEncryption)
+                            issuer: rdnSequence (0)
+                                ...
+                            subjectPublicKeyInfo
+                                algorithm (rsaEncryption)
+                                    Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)
+                                subjectPublicKey: 3082010a028201010097a410acbcd8d232af6c7fcbfc462b...
+                                    modulus: 0x0097a410acbcd8d232af6c7fcbfc462b8c5ee10a47bd823f...
+                                    publicExponent: 65537
+                            ...
+                    Certificate Length: 1012
+                    Certificate: 308203f0308202d8a0030201020203023a92300d06092a86... (id-at-commonName=Google Internet Authority G2,id-at-organizationName=Google Inc,id-at-countryName=US)
+                        signedCertificate
+                            version: v3 (2)
+                            serialNumber: 146066
+                            signature (sha256WithRSAEncryption)
+                                Algorithm Id: 1.2.840.113549.1.1.11 (sha256WithRSAEncryption)
+                            issuer: rdnSequence (0)
+                            ...
+                            subjectPublicKeyInfo
+                                algorithm (rsaEncryption)
+                                    Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)
+                                subjectPublicKey: 3082010a02820101009c2a04775cd850913a06a382e0d850...
+                                    modulus: 0x009c2a04775cd850913a06a382e0d85048bc893ff119701a...
+                                    publicExponent: 65537
+                            ...
+                    Certificate Length: 897
+                    Certificate: 3082037d308202e6a003020102020312bbe6300d06092a86... (id-at-commonName=GeoTrust Global CA,id-at-organizationName=GeoTrust Inc.,id-at-countryName=US)
+                        signedCertificate
+                            version: v3 (2)
+                            serialNumber: 1227750
+                            signature (sha1WithRSAEncryption)
+                                Algorithm Id: 1.2.840.113549.1.1.5 (sha1WithRSAEncryption)
+                            issuer: rdnSequence (0)
+                                ...
+                            subjectPublicKeyInfo
+                                algorithm (rsaEncryption)
+                                    Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)
+                                subjectPublicKey: 3082010a0282010100dacc186330fdf417231a567e5bdf3c...
+                                    modulus: 0x00dacc186330fdf417231a567e5bdf3c6c38e471b77891d4...
+                                    publicExponent: 65537
+                            ...
+            Handshake Protocol: Server Key Exchange
+                Handshake Type: Server Key Exchange (12)
+                Length: 329
+                EC Diffie-Hellman Server Params
+                    Curve Type: named_curve (0x03)
+                    Named Curve: secp256r1 (0x0017)
+                    Pubkey Length: 65
+                    Pubkey: 04593007dfc1e37d0b4c4ae1ea5d769ed29fa004dad3622c...
+                    Signature Hash Algorithm: 0x0601
+                        Signature Hash Algorithm Hash: SHA512 (6)
+                        Signature Hash Algorithm Signature: RSA (1)
+                    Signature Length: 256
+                    Signature: 439f2523b5bb21983fc3f47f67f4c97c38cc4f777ed08d1d...
+        TLSv1.2 Record Layer: Handshake Protocol: Server Hello Done
+            Content Type: Handshake (22)
+            Version: TLS 1.2 (0x0303)
+            Length: 4
+            Handshake Protocol: Server Hello Done
+                Handshake Type: Server Hello Done (14)
+                Length: 0
+
+There's a lot of information to go over here.
+
+First, the server offers its certificate file to the client. This
+certificate contains a copy of the server's public key as well as
+cryptographically signed hashes of the key. These hashes are signed by
+one or more Certificate Authorities (CAs). Each TLS client whether it
+be a web browser, a mail user agent, or something else, maintains
+copies of the public keys for the CAs it knows and trusts. The client
+then uses those public keys to decipher the signed hash. It can then
+compare this to a hash it takes of the public key. If they match, it
+will trust the public key. If they do not match, the connection will
+not be trusted and the application will either terminate the
+connection, throw an error, or both.
+
+This is an important part of TLS that should not go overlooked. This is
+the only method by which the client can verify the authenticity of the
+server. Without this, man-in-the-middle attacks<sup>[9](#9)</sup> would be trivial.
+This also protects against a number of other attacks wherein the
+attacker may attempt to impersonate the server (example: DNS hjacking).
+
+In the above example, we're utilizing the Diffie-Hellmann key exchange
+as part of our cipher, so this Server Hello also includes the server's
+piece of that key exchange. If Diffie-Hellman was not part of the
+negotiated encryption cipher, we would not see this. Instead, the
+client would generate a PreMaster Secret and encrypt that with the
+server's public RSA key. It looks something like this.
+
+    RSA Encrypted PreMaster Secret
+        Encrypted PreMaster length: 256
+        Encrypted PreMaster: 66d9b7ed1da81bf00382408b3c166c9f754844da7c79dcae...
+
+n either event, now the client and server must agree on a shared secret
+key. This secret key will be used in the symmetric cipher they
+negotiated earlier (in our case,
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256). In order to do that, let's look
+back at two places in both the Client Hello and the Server Hello.
+
+    Client
+    --------------------
+    Random
+        GMT Unix Time: Jun  8, 2000 10:33:42.000000000 EDT
+        Random Bytes: 310664a56a9fd1921c018252b654f589672e485d20ab6933...
+    
+    Server
+    --------------------
+    Random
+        GMT Unix Time: Nov 25, 2016 13:16:21.000000000 EST
+        Random Bytes: d9aa70d129b75abd127ab4296f22a9f9b46039790c58a790...
+
+Both client and server provided a stream of random bytes during their
+handshake. These random bytes, combined with the PreMaster Secret (or
+Diffie-Hellmann negotiated secret) are used to generate the random key
+used in whichever cipher suite was chosen (again,
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 in our case). Finally, its time
+for the last piece of the puzzle.
+
+#### Change Cipher Spec
+
+At this point, the client sends a final handshake to the server to
+change the encryption protocol to their negotiated cipher.
+
+    Secure Sockets Layer
+        TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+            Content Type: Change Cipher Spec (20)
+            Version: TLS 1.2 (0x0303)
+            Length: 1
+            Change Cipher Spec Message
+        TLSv1.2 Record Layer: Handshake Protocol: Multiple Handshake Messages
+            Content Type: Handshake (22)
+            Version: TLS 1.2 (0x0303)
+            Length: 40
+            Handshake Protocol: Hello Request
+                Handshake Type: Hello Request (0)
+                Length: 0
+            Handshake Protocol: Hello Request
+                Handshake Type: Hello Request (0)
+                Length: 0
+
+From this point onward, all traffic uses the symmetric encryption
+algorithm negotiated. This is an important for performance, as
+encrypting and decrypting asynchronous ciphers is computationally
+taxing. By switching to this negotiated cipher, both the client and
+server are able to communicate much more quickly while consuming fewer
+CPU cycles.
+
+### References
+
+1. [http://www.win.tue.nl/hashclash/SoftIntCodeSign/](http://www.win.tue.nl/hashclash/SoftIntCodeSign/) <a name="1"></a>
+2. [https://en.wikipedia.org/wiki/Data_Encryption_Standard](https://en.wikipedia.org/wiki/Data_Encryption_Standard) <a name="2"></a>
+3. [https://en.wikipedia.org/wiki/Advanced_Encryption_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) <a name="3"></a>
+4. [https://en.wikipedia.org/wiki/File:Diffie-Hellman_Key_Exchange.svg (Public Domain)](https://en.wikipedia.org/wiki/File:Diffie-Hellman_Key_Exchange.svg) <a name="4"></a>
+5. [http://www.brynmawr.edu/math/people/stromquist/numbers/primitive.html](http://www.brynmawr.edu/math/people/stromquist/numbers/primitive.html) <a name="5"></a>
+6. [https://imgs.xkcd.com/comics/alice_and_bob.png](https://imgs.xkcd.com/comics/alice_and_bob.png) <a name="6"></a>
+7. [https://en.wikipedia.org/wiki/Transport_Layer_Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) <a name="7"></a>
+8. [http://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html](http://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html) <a name="8"></a>
+9. [https://en.wikipedia.org/wiki/Man-in-the-middle_attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) <a name="9"></a>
+
