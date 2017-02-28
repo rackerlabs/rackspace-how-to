@@ -55,4 +55,4 @@ Get supported methods | **Observer & Admin** | Lists the supported method of pay
 ### Related articles
 
 -  [Billing services overview](/how-to/billing-services-overview)
--  [Permissions Matrix for Role-Based Access Control (RBAC)](/how-to/permissions-matrix-for-role-based-access-control-rbac)
+
