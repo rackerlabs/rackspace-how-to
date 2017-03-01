@@ -64,7 +64,7 @@ steps.
 
 5.  Allow web traffic through the firewall:
 
-        sudo sh -c "iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT && /service iptables save"
+        sudo sh -c "iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT && service iptables save"
 
     This command allows port 80 (web) inbound traffic through the
     firewall, and saves the rule for reboots.
