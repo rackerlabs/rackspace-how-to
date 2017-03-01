@@ -15,7 +15,7 @@ product_url: undefined
 
 We often have this idea that obscuring our systems isn't a legitimate
 way to make things secure, for good reasons. However, sometimes we must
-transmit messages in ways that we can be certain others will see them.
+transmit messages in ways that are easily intercepted.
 People have struggled with this problem for millennia and developed
 many different methods for secure communication; most of them
 involve obscuring the real content of our message behind a wall of
@@ -28,10 +28,10 @@ ways responsible for the development of the modern computer in the late
 were instrumental in creating improvements to encryption - often by
 breaking existing ciphers.
 
-So how do we encrypt things in a way that we can be reasonably certain
-no one can decrypt them without our key? This is a difficult thing to
-explain, so we're going to start with the oldest and simplest types of
-ciphers and begin working our way up to more modern techniques.
+So how do we encrypt things in a manner that provides some certainty
+that no one can decrypt them without our key? This is a difficult thing
+to explain, so we're going to start with the oldest and simplest types
+of ciphers and begin working our way up to more modern techniques.
 
 ### Mono-alphabetic Ciphers
 
@@ -79,7 +79,7 @@ example, in English the most common letters are *e*, *t*, *a*, *o*,
 *i*, and *n*. The least common are *q*, *x*, *j*, *k*, *v*, and *b*.
 Assuming the letters *q*, *w* *e* *r* *t*, and *y* appear most often in
 the cipher-text, we can assume that these probably indicate several of
-the most common letters in the plain-text.  Similarly if 'a*, *s*, *d*,
+the most common letters in the plain-text.  Similarly if *a*, *s*, *d*,
 *f*, *g*, and *h* are the least common letters, there's a strong chance
 that they indicate one or more of the least common letters in the
 English language.
@@ -199,7 +199,7 @@ plain-text:
 
 In this plain-text, several words are used multiple times, particularly
 the words "ICMP", "the", "data", and "message".  I'm going to encrypt
-it with the key of a certain length, and then we're going to determine
+it with a key of a certain length, and then we're going to determine
 what that key is using some basic math and a variation on the frequency
 analysis done in breaking the monoalphabetic cipher.
 
@@ -334,7 +334,7 @@ a single message. Re-using a key for multiple messages presents an
 attack opportunity by comparing the encrypted messages. An attacker can
 make guesses at one cipher-text, then apply that portion of the key to
 other texts to see if his guess is correct. Once any portion of the key
-is known for certain, it can be used to decrypt its corresponding
+is known for certain, it can be used to decrypt the corresponding
 portion of all cipher-texts utilizing it. This often lets the attacker
 make educated guesses about adjacent portions of the key until the
 entire key is known.
@@ -447,14 +447,14 @@ with speed and precision in the 20th century. There are a great many
 symmetric ciphers, so we won't discuss them all. Additionally, due to
 their complexity, we won't go into formal detail of how they work as we
 did with alphabetic ciphers. Instead, I'll include references to online
-articles that describe how these ciphers work in exhausting details.
+articles that describe how these ciphers work in exhausting detail.
 
 Perhaps the most well-understood of all symmetric ciphers is DES (and
 it's close cousin, 3DES), but it's no longer considered
 cryptographically strong. Most symmetric encryption today is handled by
 Rjindael/AES. Other popular symmetric ciphers are Blowfish, Twofish,
 RC4, and IDEA. Of these, AES and Twofish are the strongest. The vast
-majority of raw Internet traffic today is encrypted utilizing symmetric
+majority of encrypted Internet traffic today utilizes symmetric
 keys and the AES cipher. 
 
 Symmetric key ciphers suffer from one universal and enormous limitation
@@ -1011,7 +1011,7 @@ are coprime (we will call them "a" and "b"), then:
 a**(&Phi;b) = 1 mod b  # If a and b are coprime
 </code></pre>
 
-We should take a moment here to discuss the meaning of "coprime" as
+We should take a moment here to review the meaning of "coprime" as
 we've not discussed this yet. Numbers are coprime if they do not share
 any prime factors. Let's back up and look at our factoring table from
 earlier (I've removed all of the factors which are not prime numbers
@@ -1092,8 +1092,7 @@ equation.
 
 <pre><code>
     a**(k * &Phi;b ) = 1 mod b         # Simplified "k" function from above
- a*(a**(k * &Phi;b)) = a * (1 mod b)   # Notice that "a" is now on both
-sides of the equation
+ a*(a**(k * &Phi;b)) = a * (1 mod b)   # Notice that "a" is now on both sides of the equation
 a * a**(k * &Phi;b ) = a mod b         # Simplified
 </code></pre>
 
@@ -1136,7 +1135,7 @@ a**(e * d)     = a mod N
 If we solve for "d" we get the following.
 
 <pre><code>
-a**(k * &Phi;N +1) = a mod N
+a**(k * &Phi;N +1)   = a mod N
 a**(e * d)       = a mod N
 ------------------------------
 (e * d)          = k * &Phi;N +1
@@ -1154,7 +1153,7 @@ Now, let's back up and begin actually generating keys in a real-life
 example.
 
 <pre><code>
-# Step 1. Choose two random prime numbers and generate N and ?N
+# Step 1. Choose two random prime numbers and generate N and &Phi;N
 p1   = 73
 p2   = 97
 N    = 7,081
@@ -1199,7 +1198,7 @@ chose a value for "k" that makes the equation equal a whole number.
     k=7    (k * 6,912 + 1 / 11     4,398.63636364
     k=8    (k * 6,912 + 1 / 11     5,027
 
-Eureka! "d" = 5,027.
+Eureka! We set the value of"k" at 8 and then the value of "d" is 5,027.
 
 <pre><code>
 # Step 1. Choose two random prime numbers and generate N and &Phi;N
@@ -1688,7 +1687,7 @@ CPU cycles.
 
 ### References
 
-1. [http://www.win.tue.nl/hashclash/SoftIntCodeSign/](http://www.win.tue.nl/hashclash/SoftIntCodeSign/) <a name="1"></a>
+1. [https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html](https://security.googleblog.com/2017/02/announcing-first-sha1-collision.html) <a name="1"></a>
 2. [https://en.wikipedia.org/wiki/Data_Encryption_Standard](https://en.wikipedia.org/wiki/Data_Encryption_Standard) <a name="2"></a>
 3. [https://en.wikipedia.org/wiki/Advanced_Encryption_Standard](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) <a name="3"></a>
 4. [https://en.wikipedia.org/wiki/File:Diffie-Hellman_Key_Exchange.svg (Public Domain)](https://en.wikipedia.org/wiki/File:Diffie-Hellman_Key_Exchange.svg) <a name="4"></a>
