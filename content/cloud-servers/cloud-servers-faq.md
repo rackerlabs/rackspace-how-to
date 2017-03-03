@@ -5,8 +5,8 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2016-09-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-03-03'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -27,7 +27,7 @@ accounts, you are responsible for installing and maintaining all
 software on your server. Rackspace does provide support for specific
 software and server configurations on Cloud Servers with Managed
 Operations. For more information on supported systems and third party
-packages, see [Cloud Servers with Managed Operations - Spheres of Support](/how-to/cloud-servers-with-managed-operations-support-for-linux).
+packages, see [Cloud Servers with Managed Operations - Spheres of Support](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops).
 
 #### Do you support Ruby/Python/(insert language or application here)?
 
@@ -83,7 +83,7 @@ installed. We have some articles in Rackspace How-To covering basic
 installation of common applications. We also have community forums where
 you can share tips and tricks with other customers.
 
-If you would like to have a [Managed Operations](/how-to/cloud-servers-with-managed-operations-support-for-linux)
+If you would like to have a [Managed Operations](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
 on your Cloud Servers, we offer that service. This operations level
 provides additional support on Cloud Servers, which includes monitoring,
 operating system and application infrastructure layer support, and

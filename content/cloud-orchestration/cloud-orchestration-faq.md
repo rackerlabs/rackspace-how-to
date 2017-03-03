@@ -364,7 +364,7 @@ the application provider or community.
 
 The stack is supported at the system level with the Managed Operations
 Service Level of support. Only the software in our [Spheres of
-Support](/how-to/cloud-servers-with-managed-operations-support-for-linux)
+Support](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
 is supported. Software installed on top of a web server or database
 server (like WordPress or Drupal) is not directly supported, but the
 underlying system, web server, and database server are supported.
