@@ -151,3 +151,15 @@ Fanatical Support® for Linux will, under reasonable endeavors and without warra
 - [Nginx (vendor)](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
 - [Percona (vendor)](https://www.percona.com/doc/percona-server/LATEST/installation.html#installing-percona-server-from-repositories)
 - [Varnish (vendor)](https://www.varnish-cache.org/releases/install_redhat.html)
+
+#### Disclaimer
+
+**The information contained in this document is a general introduction to the Rackspace Services and does not include any legal commitment on the part of Rackspace.**
+
+You should not rely solely on this document to decide whether to purchase the service. Rackspace detailed services descriptions and legal commitments are stated in its services agreements. Rackspace services’ features and benefits depend on system configuration and may require enabled hardware, software or additional services activation.
+
+Except as set forth in Rackspace general terms and conditions, cloud terms of services and/or other agreements you sign with Rackspace, Rackspace assumes no liability whatsoever, and disclaims any express or implied warranty, relating to its services including, but not limited to, the implied warranty of merchantability, fitness for a particular purpose, and no infringement.
+
+Although part of the document explains how Rackspace services may work with third party products, the information contained in the document is not designed to work with all scenarios. Any use or changes to third party product and/or configurations should be made at the discretion of your administrators and subject to the applicable terms and conditions of such third party. Rackspace does not provide technical support for third party products, other than specified in your hosting services or other agreement you have with Rackspace and Rackspace accepts no responsibility for third-party products.
+
+Rackspace cannot guarantee the accuracy of any information presented after the date of publication. Copyright &copy; 2016 Rackspace | Rackspace&reg;, Fanatical Support&reg; and other Rackspace marks are either registered service marks or service marks of Rackspace US, Inc. in the United States and other countries. All other trademarks, service marks, images, products and brands remain the sole property of their respective holders and do not imply endorsement or sponsorship.
