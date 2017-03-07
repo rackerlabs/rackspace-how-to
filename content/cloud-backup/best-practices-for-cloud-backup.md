@@ -115,7 +115,7 @@ Larger size | Smaller size
 
 #### Effective restores
 
-Test your restores to enaure that your data is saved as you expect. As with any disaster recovery plan, you should schedule semi-regular restore operations of your backed-up data sets. Doing so provides you with a reference for how long this process can take and ensures that your backups are complete and viable.
+Test your restores to ensure that your data is saved as you expect. As with any disaster recovery plan, you should schedule semi-regular restore operations of your backed-up data sets. Doing so provides you with a reference for how long this process can take and ensures that your backups are complete and viable.
 
 Another point to consider is the restore destination. Restoring to the original location and overwriting saves on storage space, but risks accidentally overwriting important existing files. Proceed with caution when restoring.
 
