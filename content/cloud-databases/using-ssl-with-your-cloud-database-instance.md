@@ -54,7 +54,7 @@ certificate for SSL connections to your database.
 To make SSL connections using the `mysql` command line client, specify
 the location of the certificate when you start the client:
 
-    mysql -ssl-ca=/path/to/ca-cert.pem
+    mysql --ssl-ca=/path/to/ca-cert.pem
 
 More information about using SSL with MySQL can be found in the [MySQL
 5.6

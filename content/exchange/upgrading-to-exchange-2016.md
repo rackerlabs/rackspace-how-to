@@ -5,8 +5,8 @@ title: Upgrading to Exchange 2016
 type: article
 created_date: '2016-10-25'
 created_by: Aaron Medrano
-last_modified_date: '2016-10-27'
-last_modified_by: Nate Archer
+last_modified_date: '2017-02-28'
+last_modified_by: Cat Lookabaugh
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -110,9 +110,9 @@ On the home page, you can see the status of your migration and see the Support t
 
 You can also reschedule or cancel the migration before the scheduled time by clicking the gear icon next to the domain you are migrating and selecting the appropriate command.
 
-  <img src="{% asset_path exchange/upgrade-to-exchange-2016/exchange-upgrade-5.png %}" />  
+  <img src="{% asset_path exchange/upgrade-to-exchange-2016/exchange-upgrade-5.png %}" />
 
-When the migration completes you can log into the [Mail Control Panel](https://apps.rackspace.com/) and manage the mailboxes.
+When the migration completes you can log into the [Mail Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f) and manage the mailboxes.
 
 
 ### Frequently asked questions
@@ -121,7 +121,7 @@ This section provides answers to questions that you might have about the Exchang
 
 #### Do I need to change my MX records?
 
-In most cases, you do not need to change your MX records because they should already be pointed to our environment. Our MX record details are located here in [Set up DNS records for Cloud Office email and Skype for Business](how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business/).
+In most cases, you do not need to change your MX records because they should already be pointed to our environment. Our MX record details are located here in [Set up DNS records for Cloud Office email and Skype for Business](https://support.rackspace.com/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business/).
 
 #### Can we migrate only some of our mailboxes?
 
