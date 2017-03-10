@@ -19,13 +19,13 @@ The package file is in fact a zip file which can be unpacked. The zip file conta
 
 To manually install a package:
 
-Open the compressed package file and extract the files from the /files folder preserving the folder structure.
+- Open the compressed package file and extract the files from the /files folder preserving the folder structure.
 
-Delete the /files directory from the zip file.
+- Delete the /files directory from the zip file.
 
-You should now have a set of files and a compressed package file, which contains only /items and /metadata.
+- You should now have a set of files and a compressed package file, which contains only /items and /metadata.
 
-Backup databases and files from the website, remember files that are not located under the website root, for example, files in the data folder which may have been moved to a non-public folder.
+- Backup databases and files from the website, remember files that are not located under the website root, for example, files in the data folder which may have been moved to a non-public folder.
 
 The website should now be considered down for maintenance. You may want to publish an "Under Maintenance" page on your website.
 
@@ -49,6 +49,6 @@ Verify that the website is running.
 
 The website should no longer be considered down for maintenance, so if you used an “Under Maintanance” page it should now be removed.
 
-The advantage of this approach is that the files are copied using the current Windows User, and you do not need to change any security settings.  
+The advantage of this approach is that the files are copied using the current FTP User, and you do not need to change any security settings.  
 
 ------------------------------------------------------------------------

@@ -23,19 +23,16 @@ Download a Mongo Database client application
 
 If you have multiple Object Rocket Instances select the appropriate instance by clicking the Instance name. 
 
-Click the **+Add ACL** button 
+- Click the **+Add ACL** button 
+- Access Control Lists (ACL) limit what IPs connect to your instance.
+**Note*** ObjectRocket denies access by default so you need to add any appropriate ACL’s for servers that are connecting to ObjectRocket.
 
-Access Control Lists (ACL) limit what IPs connect to your instance.
+- Enter an IP address/CIDR block and a description.
+- Only the IP address is mandatory, but adding descriptions can help when maintaining larger lists.
 
-Note* ObjectRocket denies access by default so you need to add any appropriate ACL’s for servers that are connecting to ObjectRocket.
+**Note*** You can click the Add My IP or Allow Any IP to have our system automatically add those options.
 
-Enter an IP address/CIDR block and a description.
-
-Only the IP address is mandatory, but adding descriptions can help when maintaining larger lists.
-
-Note* You can click the Add My IP or Allow Any IP to have our system automatically add those options.
-
-Click Add ACL.
+- Click Add ACL.
 
 _images/createmongo3.png
 
