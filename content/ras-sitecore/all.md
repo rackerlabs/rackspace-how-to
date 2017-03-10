@@ -1,9 +1,9 @@
 ---
-title: Rackspace Private Cloud Powered by Microsoft Cloud Platform – All Articles
-category: Rackspace Private Cloud
-permalink: rpc-microsoft-all-articles/
-product: Rackspace Private Cloud Powered by Microsoft Cloud Platform
-product_url: rpc-microsoft
+title: Rackspace Application Services Sitecore – All Articles
+category: Rackspace Application Services
+permalink: ras-sitecore-all-articles/
+product: Rackspace Application Services Sitecore
+product_url: ras-sitecore
 ---
 
 {% include all-articles-list.html %}

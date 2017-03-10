@@ -26,5 +26,17 @@ product_url: sitecore
 - Click **create**
 
 ### Create a CDN Endpoint
+- [Login to the Azure Portal](/how-to/)
+- browse the Azure portal to **CDN profile**
+- Click the **+Endpoint** button to Add an Endpoint
+- Name the CDN Endpoint
+- Select Origin Type > **Web App**
+- Select the **Origin hostname** for the App Service to enable from the drop down menu.
+**note** if you are using a custom domain you can select Custom Origin for the Origin Type and specify a url for your static content. This is useful for rewriting medialinks and exporting static content to another url. 
+- Click **Add**
 
+
+### Configure Sitecore to load static content from the CDN
+
+ 
 ------------------------------------------------------------------------
