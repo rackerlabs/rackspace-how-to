@@ -24,7 +24,7 @@ The sections in this article provide instructions for locating and editing the h
 -   Windows NT, Windows 2000, and Windows XP
 -   Linux
 -   Mac OS X 10.0 through 10.1.5
--   Mac OS X 10.6 through 10.11
+-   Mac OS X 10.6 through 10.12
 
 After you add the domain information and save the file, your system begins resolving to the specified IP address. After testing is finished, remove these entries.
 
@@ -73,7 +73,7 @@ Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UA
 5.  Press **Control-x**.
 6.  When asked if you want to save your changes, answer **y**.
 
-### Mac OS X 10.0 through 10.11
+### Mac OS X 10.0 through 10.12
 
 **Mac OS X 10.0 through 10.1.5**
 
@@ -106,7 +106,7 @@ Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UA
 
      You do not need to restart the computer.
 
-**Mac OS X 10.6 through 10.11**
+**Mac OS X 10.6 through 10.12**
 
 1.  Open **Applications > Utilities > Terminal**.
 2.  Open the **hosts** file by typing the following line in the terminal window:

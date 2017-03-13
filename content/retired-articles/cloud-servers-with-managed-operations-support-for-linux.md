@@ -7,8 +7,6 @@ created_date: '2011-05-26'
 created_by: David Hendler
 last_modified_date: '2016-11-28'
 last_modified_by: Nate Archer
-product: Managed Operations
-product_url: managed-operations
 ---
 
 The Managed Operations service level provides support beyond the Managed Infrastructure service level, including direct
@@ -28,7 +26,7 @@ The Managed Operations service level supports the following operating systems fo
 - Debian 7 (Wheezy) (PVHVM)
 - Red Hat Enterprise Linux 7 (PVHVM)
 - Red Hat Enterprise Linux 6 (PVHVM)
-- Ubuntu 16.04 LTS (Xenial Xerus) (PVHVM) 
+- Ubuntu 16.04 LTS (Xenial Xerus) (PVHVM)
 - Ubuntu 14.04 LTS (Trusty Tahr) (PVHVM)
 - Ubuntu 12.04 LTS (Precise Pangolin) (PVHVM)
 - Vyatta Network OS (6.7R9)
@@ -127,5 +125,3 @@ services.
 -  **Firewalls**: Support is provided for  [iptables](http://www.netfilter.org/),  [Ubuntu ufw](https://help.ubuntu.com/community/UFW), and  [fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page).
 -  **Control Panels**: Control panel applications such as Plesk, Webmin, or cPanel are  *not* supported at this time.
 -  **DNS**: Managed Operations supports the use of the Rackspace Cloud name servers for DNS.  Bind is *not* supported at this time.
-
-
