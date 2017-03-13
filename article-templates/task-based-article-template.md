@@ -1,6 +1,6 @@
 ---
 permalink: article-title/
-audit_date: 'yyyy-mm-dd'
+audit_date:
 title: 'Article title'
 type: article
 created_date: 'yyyy-mm-dd'
@@ -11,11 +11,11 @@ product: Cloud Product
 product_url: cloud-product
 ---
 
-Provide a descriptive title for the article that begins with an imperative verb. For example: Restore a server from a snapshot.
+Provide a descriptive title for the article that begins with an imperative verb in the metadata above. For example: Restore a server from a snapshot.
 
-Introduce the article by describing the task that the user wants to perform or the issue that the user needs to solve. The primary audience for How-To content are Rackspace customers who might have varying levels of technical expertise.
+Introduce the article by describing the task that the user wants to perform or the issue that the user needs to solve. The primary audience for How-To content are Rackspace customers and Support staff, who might have varying levels of technical expertise.
 
-Write your article in Markdown. You can find Markdown guidelines at https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet.
+Write your article in Markdown. For more information about writing in Markdown, see the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 For general writing guidelines, see the [contribution guidelines](https://github.com/rackerlabs/rackspace-how-to/blob/master/CONTRIBUTING.md).
 

@@ -5,18 +5,18 @@ title: Cloud Servers with Managed Operations support for Windows
 type: article
 created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2017-01-19'
-last_modified_by: Hounsou Dansou
+last_modified_date: '2017-03-03'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
 ---
 
-The Managed Operations service level provides support beyond the 
-Managed Infrastructure service level, including direct assistance 
-with resizes, snapshots, host machine issues, adding and removing 
-servers, and managing IP addresses. To ensure 
-***Fanatical Support&reg;***, Rackspace provides support for 
-specific software and server configurations on Windows cloud servers 
+The Managed Operations service level provides support beyond the
+Managed Infrastructure service level, including direct assistance
+with resizes, snapshots, host machine issues, adding and removing
+servers, and managing IP addresses. To ensure
+***Fanatical Support&reg;***, Rackspace provides support for
+specific software and server configurations on Windows cloud servers
 with Managed Operations support.
 
 ### Operating systems
@@ -30,9 +30,7 @@ operating systems for Windows cloud servers:
 - [Windows Server 2012 with Service Pack
  R2](http://technet.microsoft.com/en-US/windowsserver/hh534429)
 
-**Note:** Detailed information about Linux support is located in [Cloud
-Servers with Managed Operations support for
-Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
+**Note:** Detailed information about Linux support is located in [Linux Spheres of Support for Dedicated and Managed Operations](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops).
 
 ### Web Servers
 
@@ -102,7 +100,7 @@ The Managed Operations service level supports the following SMTP tool:
 
 ### Active Directory (US only)
 
-The following table indicates which Active Directory (AD) actions are 
+The following table indicates which Active Directory (AD) actions are
 supported by the Managed Operations service level:
 
 | Supported | Windows 2008 R2| Windows 2012 R2|
@@ -139,9 +137,9 @@ third party services.
     Load Balancers.
 
 -   **Email:** Support is provided through Rackspace Email and using
-    IIS SMTP on the server. Cloud servers with the Managed Operations 
-    service Level are preconfigured to use Mailgun, our mail relay service, 
-    to ensure reliable mail delivery. The first 50,000 emails sent each 
+    IIS SMTP on the server. Cloud servers with the Managed Operations
+    service Level are preconfigured to use Mailgun, our mail relay service,
+    to ensure reliable mail delivery. The first 50,000 emails sent each
     month are free, and your mail package can be upgraded if higher volume
     is expected. For more details see the [Mailgun Rackspace pricing
     page](http://www.mailgun.com/rackspace).
