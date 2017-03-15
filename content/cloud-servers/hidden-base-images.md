@@ -5,8 +5,8 @@ title: Hidden Base Images
 type: article
 created_date: '2013-11-04'
 created_by: Amanda Clark
-last_modified_date: '2017-02-16'
-last_modified_by: Laura Santamaria
+last_modified_date: '2017-03-15'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -50,11 +50,15 @@ Debian 7 (PV) | 857d7d36-34f3-409f-8435-693e8797be8b | 3/5/14 | Replaced by Debi
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-Fedora 20 (Heisenbug) (PVHVM) | a3307d30-39b9-4abc-be13-1d7134002c2d | 5/26/15 | Replaced by Fedora 22.
+Fedora 17 | 7bf1ac03-48e2-48f1-a363-7a91fa51d782 | 10/11/13 | No longer supported; this is the last image published.
 Fedora 18 | 896caae3-82f1-4b03-beaa-75fbdde27969 | 3/5/14 | No longer supported; this is the last image published.
 Fedora 19 (PV) | 8500226f-b193-4471-9eff-9cba8440bfc8 | 3/5/14 | Replaced by Fedora 19 PVHVM, which uses different virtualization drivers and contains `cloud-init`.
+Fedora 19 (Schrodinger's Cat) (PVHVM) | fda42efc-d20c-4fe7-929d-2aa7d0ef5307 | 1/30/15 | No longer supported; this is the last image published.
 Fedora 20 (PV) | 5ef987c7-0dda-4ebe-ae71-7f5c4a425faa | 3/5/14 | Replaced by Fedora 20 PVHVM, which uses different virtualization drivers and contains `cloud-init`.
-Fedora 17 | 7bf1ac03-48e2-48f1-a363-7a91fa51d782 | 10/11/13 | No longer supported.
+Fedora 20 (Heisenbug) (PVHVM) | a3307d30-39b9-4abc-be13-1d7134002c2d | 5/26/15 | No longer supported; this is the last image published.
+Fedora 21 (PVHVM) | 79f41a1d-ed68-40bc-84d5-e7a36dabcb44 | 3/24/16 | No longer supported; this is the last image published.
+Fedora 22 (PVHVM) | 779851de-9b1e-4500-839a-dc1d6e25cb25 | 6/21/16 | No longer supported; this is the last image published.
+Fedora 23 (PVHVM) | f597d109-f91f-417e-9818-9ae21dca2262 | 12/27/16 | No longer supported; this is the last image published.
 
 ### FreeBSD images
 
@@ -86,6 +90,8 @@ Ubuntu 13.04 PVHVM | 62df001e-87ee-407c-b042-6f4e13f5d7e1 | 1/6/14 | No longer s
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
 OpenSUSE 12.3 | 8955d327-9a69-468f-be5c-60f571267406 | 3/5/14 | Replaced by OpenSUSE 13.1.
+OpenSUSE 13.1 (PVHVM) | 59addab2-1551-4949-b635-bc88f1b6dc7c | 1/15/15 | No longer supported; this is the last image published.
+OpenSUSE 13.2 (PVHVM) | 79436148-753f-41b7-aee9-5acbde16582c | 5/3/16 | No longer supported; this is the last image published.
 
 ### Red Hat Enterprise Linux (RHEL) images
 
