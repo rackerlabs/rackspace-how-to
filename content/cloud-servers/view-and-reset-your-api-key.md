@@ -21,15 +21,15 @@ Before you can start using Rackspace APIs, you need to have your API key. Your A
 
 ### To view or regenerate your API key
 
-#.	In the upper-right corner of the Cloud Control Panel, click the ***userName*** menu and select **My Profile & Settings**.
+1.	In the upper-right corner of the Cloud Control Panel, click the ***userName*** menu and select **My Profile & Settings**.
 
-#.  Scroll down to **Security Settings**.
+2.  Scroll down to **Security Settings**.
 
-#.	To view your API key, click on the link labeled **Show** next to **Rackspace API Key**. You can copy and paste the API key from this screen.
+3.	To view your API key, click on the link labeled **Show** next to **Rackspace API Key**. You can copy and paste the API key from this screen.
 
-#.	To create a new API key, click the **Reset** link. A confirmation window is displayed.
+4.	To create a new API key, click the **Reset** link. A confirmation window is displayed.
 
-#.	Click **Generate New Key** to confirm.
+5.	Click **Generate New Key** to confirm.
 
     Your new key is displayed.
 
