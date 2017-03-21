@@ -23,9 +23,7 @@ Before you can start using Rackspace APIs, you need to have your API key. Your A
 
 2.  Scroll down to **Security Settings**.
 
-3.	To view your API key, click the **Show** link next to **Rackspace API Key**.
-
-    You can copy the API key from this screen.
+3.	To view your API key, click the **Show** link next to **Rackspace API Key**. You can copy the API key from this screen.
 
 4.	To reset your API key, follow these steps.
 
