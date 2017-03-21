@@ -31,6 +31,4 @@ Before you can start using Rackspace APIs, you need to have your API key. Your A
 
     A. Click the **Reset** link next to **Rackspace API Key**.    
 
-    B. In the confirmation window, click **Generate New Key**.
-
-       Your new key is displayed.
+    B. In the confirmation window, click **Generate New Key**. Your new key is displayed.
