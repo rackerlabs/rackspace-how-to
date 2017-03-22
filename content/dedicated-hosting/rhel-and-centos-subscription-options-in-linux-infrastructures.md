@@ -2,7 +2,7 @@
 permalink: rhel-and-centos-subscription-options-in-linux-infrastructures/
 audit_date: '2016-11-09'
 title: Red Hat and CentOS subscription options in Linux infrastructures
-type: product
+type: article
 created_date: '2016-11-02'
 created_by: Stephanie Fillmon
 last_modified_date: '2016-11-09'
