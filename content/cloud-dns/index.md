@@ -5,7 +5,7 @@ created_date: '2016-01-17'
 created_by: Rackspace Support
 last_modified_date: '2016-04-13'
 last_modified_by: Stephanie Fillmon
-permalink: /cloud-dns/
+permalink: cloud-dns/
 product: Cloud DNS
 product_url: cloud-dns
 ---
