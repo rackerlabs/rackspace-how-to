@@ -17,7 +17,7 @@ To learn more about the [Firewall Manager v2](https://support.rackspace.com/how-
 
 ### What is the change log?
 
-The change log documents the events that have been executed on your Cisco firewall through the Firewall Manager tool. Only changes executed through the Firewall Manager interface are logged. Changes that are executed by Network Security Rackers who connect to the device directly are not logged in this utility.
+The change log feature documents the events that have been executed on your Cisco firewall through the Firewall Manager tool. Only changes executed through the Firewall Manager interface are logged. Changes that are executed by Network Security Rackers who connect to the device directly are not logged in this utility.
 
 **Note:** If you would like to identify when or if changes have occurred to any of your platforms, please open a support ticket and a Network Security Racker will complete this task for you.
 
