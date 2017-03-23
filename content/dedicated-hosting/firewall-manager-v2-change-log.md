@@ -29,14 +29,16 @@ The change log feature documents the events that have been executed on your Cisc
 
 3. Click the **Changle Log** tab on the left drop down menu.
 
-  **Example 1.1:** Example location of the change log in the Firewall Manager v2
-  <!-- Image "FWCPv2 Article 4 Image Change Log" --->
+    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-change-log/change-log.png %}" />
+
 
 ### Change log features
 
 The Firewall Manager v2 change log has an export function. To use this feature, click on the **Export to .csv** button. You can download the .csv or open it directly from the next screen prompt
 
 The change log also has a search bar which modifies your change log based on the values you enter, such as a username or IP address.
+
+<img src="{% asset_path dedicated-hosting/firewall-manager-v2-change-log/example-change-log.png %}" />
 
 ### What information does the change log document?
 
@@ -52,5 +54,4 @@ The Firewall Manager v2 change log creates one new entry per task that is perfor
 
 - **Details**: This field identifies addition details of the configuration element that was modified.
 
-  **Example 1.2:** Example image of an active change log in the Firewall Manager v2
   <!-- Image "FWCPv2 Article 4 Image Example Change Log" --->
