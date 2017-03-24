@@ -21,7 +21,7 @@ A port-group is a form of an object-group. Object-groups are used to group like 
 
 A port-group is a single configuration item that logically groups ports together. The benefit to using a port-group is that you can reference a port-group in access-list entries that have object-groups as well. This is better than the alternative of having to create individual access-list entries for each component of the port-group.
 
-A powerful example of an efficient use of port-groups is a single access-list entry that references an object-group of 100 source IPs, an object-group of 10 destination IPs, and a port-group of 5 TCP ports. Using the object-group and port-group strategy, your firewall's running configuration requires only one access-list entry. If you did not use object-groups and port-groups, you would need **5,000 access-list entries** in the running configuration, individually specifying each unique source IP, destination IP, and TCP port.
+A powerful example of an efficient use of port-groups is a single access-list entry that references an object-group of 100 source IPs, an object-group of 10 destination IPs, and a port-group of 5 TCP ports. Using the object-group and port-group strategy, your firewall's running configuration requires only one access-list entry. If you did not use object-groups and port-groups, you would need **5,000 access-list entries** in the running configuration, individually specifying each unique source IP, destination IP, and TCP port combinations.
 
 **Note:** The Firewall Manager v2 allows you to create port-groups using only TCP or UDP ports.
 
