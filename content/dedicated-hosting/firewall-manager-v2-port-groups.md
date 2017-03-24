@@ -97,7 +97,7 @@ It is highly important that you understand the impact of modifying an existing p
 
    Firewall Manager v2 interacts with your firewall and adds the configurations. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
 
-<img src="{% asset_path dedicated-hosting/firewall-manager-v2/FWCPv2-modify-port-group.png %}" alt="" />
+<img src="{% asset_path dedicated-hosting/firewall-manager-v2-port-groups/FWCPv2-modify-port-group.png %}" alt="" />
 
 ### Delete a port-group
 
@@ -111,4 +111,4 @@ It is highly important that you understand the impact of modifying an existing p
 
    A ticket is submitted on your behalf to manually remove the port-group and delete any configuration items that reference the group, such as access-lists, VPN encryption domains, or even other port-groups. The ticket is automatically forwarded to the appropriate Network Security team, and a team member will perform quality checks and confirm with you directly if anything appears to be incorrect.
 
-<img src="{% asset_path dedicated-hosting/firewall-manager-v2/FWCPv2-delete-port-group.png %}" alt="" />
+<img src="{% asset_path dedicated-hosting/firewall-manager-v2-port-groups/FWCPv2-delete-port-group.png %}" alt="" />
