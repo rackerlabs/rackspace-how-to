@@ -2,7 +2,7 @@
 permalink: firewall-manager-v2-change-log/
 audit_date: '2017-03-24'
 title: Firewall Manager v2 change log
-type: product
+type: article
 created_date: '2017-03-22'
 created_by: Trevor Becker
 last_modified_date: '2017-03-22'
