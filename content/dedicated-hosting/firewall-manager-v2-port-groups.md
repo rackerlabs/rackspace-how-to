@@ -31,7 +31,7 @@ Port-groups improve the organization and readability of a firewall's running con
 
 ### Port-groups in the Firewall Manager v2
 
-In Firewall Manager v2, you ca now view, modify, and delete any port-group on your firewall. In the previous version of the Firewall Manager, you were restricted to only modifying port-groups that began with the string *FWCP-*.
+In Firewall Manager v2, you can now view, modify, and delete any port-group on your firewall. In the previous version of the Firewall Manager, you were restricted to only modifying port-groups that began with the string *FWCP-*.
 
 ### View port-groups
 
@@ -45,7 +45,7 @@ In Firewall Manager v2, you ca now view, modify, and delete any port-group on yo
 
 4. Scroll through or search the port-group list and click the appropriate port-group. The contents of the port-group are automatically displayed.
 
-   Firewall Manager v2 organizes the port-groups in case-sensitive, alphabetical order. Therefore, port-group named with uppercase letters are displayed before those with lowercase letters. If you can't locate a port-group, search for the port-group by using your browser's search function.
+   Firewall Manager v2 organizes the port-groups in case-sensitive, alphabetical order. Therefore, port-groups named with uppercase letters are displayed before those with lowercase letters. If you can't locate a port-group, search for the port-group by using your browser's search function.
 
    You can also search the contents of a port-group. This feature enables you to quickly determine whether a TCP or UDP port exists within the specified port-group. To use this feature, type a TCP or UDP port number into the search bar that is automatically displayed when you click the group.
 
@@ -81,7 +81,7 @@ In Firewall Manager v2, you ca now view, modify, and delete any port-group on yo
 
 ### Modify a port-group
 
-It is highly important that you understand the impact of modifying an existing port-group. Incorrectly modifying an existing port-group that is already referenced in an access-list has the potential to either create inappropriate network access or remove critical access.
+It is highly important that you understand the impact of modifying an existing port-group. Incorrectly modifying an existing port-group that is already referenced in an access-list has the potential to either create inappropriate network access or to remove critical access.
 
 1. Navigate to the **Port Groups** tab.
 
