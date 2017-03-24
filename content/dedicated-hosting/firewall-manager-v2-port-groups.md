@@ -1,7 +1,7 @@
 ---
 permalink: firewall-manager-v2-port-groups/
 audit_date:
-title: Firewall Manager v2 port-groups
+title: 'Firewall Manager v2 port-groups'
 type: product
 created_date: '2017-03-22'
 created_by: Trevor Becker
