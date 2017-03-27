@@ -21,7 +21,7 @@ To learn more about the access-list process, see [Firewall Manager v2 access-lis
 
 ### What is an ACL?
 
-Access control lists (ACL)s, or *access-lists*, enable Cisco firewalls to filter traffic. They provide environments with network access control (NAC) by filtering network traffic and controlling whether packets are forwarded or blocked at the firewall's interfaces. As an aspect of the deep-packet-inspection process, Cisco firewalls perform this access control lookup for each packet that attempts to traverse one of its interfaces.
+Access control lists (ACLs), or *access-lists*, enable Cisco firewalls to filter traffic. They provide environments with network access control (NAC) by filtering network traffic and controlling whether packets are forwarded or blocked at the firewall's interfaces. As an aspect of the deep-packet-inspection process, Cisco firewalls perform this access control lookup for each packet that attempts to traverse one of its interfaces.
 
 Access-lists control the traffic that attempts to enter the internal networks from an external, unsecured network. If access-lists are not used, the Cisco firewall's default security policy of security-levels is active, which does not provide the highest level of network security.
 
