@@ -85,7 +85,7 @@ This access-list is dedicated to your DMZ segment. If you have a DMZ, there alwa
 
 #### nonat or 102 ACL
 
-This access-list is dedicated to NAT bypass, or the feature called NAT0, and is used in Cisco firewall code versions earlier than 8.3. On code versions earlier than 8.3, Cisco firewalls are configured to *force* the NAT a packet when it moves from one interface to another.
+This access-list is dedicated to NAT bypass, or the feature called NAT0, and is used in Cisco firewall code versions earlier than 8.3. On code versions earlier than 8.3, the Rackspace standard for Cisco firewalls requires NAT to occur as a packet moves from one interface to another.
 
 Occasionally though, you might not want this action to occur. An example is when two internal segments are communicating with each other or VPN traffic. If your firewall is on a code version later than 8.3, this NAT bypass access-list is no longer needed and can be removed. This syntax is likely the remnants of unused configuration after a mass code upgrade.
 
