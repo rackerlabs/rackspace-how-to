@@ -11,7 +11,6 @@ product: Sitecore
 product_url: sitecore
 ---
 
-
 ### Sitecore Cloud FAQ
 [Sitecore Cloud FAQ](/how-to/ras-sitecore-faq)
 

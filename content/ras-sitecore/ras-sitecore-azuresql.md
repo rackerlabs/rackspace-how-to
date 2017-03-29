@@ -31,13 +31,14 @@ Create a server-level firewall rule
 By default, an Azure SQL Database firewall prevents external connectivity to your logical server and its databases. To enable you to connect to your server, you need to create a firewall rule for the IP address of the computer from which you connect.
 
 1. On the SQL server blade, click Firewall to open the Firewall blade for your server. Notice that the IP address is displayed for your client computer.
-<img src="{% asset_path sitecore/sql-server-firewall.png %}" alt="SQL server firewall" />
+
+<img src="{% asset_path ras-sitecore/ras-sitecore-azuresql/sql-server-firewall.png %}" alt="SQL server firewall" />
 
 2. Click Add client IP on the toolbar to create a firewall rule for your current IP address.
-<img src="{% asset_path sitecore/add-client-ip.png %}" alt="Add client IP" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-azuresql/add-client-ip.png %}" alt="Add client IP" />
 
 3. Click Save on the toolbar to save this server-level firewall rule and then click OK to close the Success dialog box.
-<img src="{% asset_path sitecore/save-firewall-rule.png %}" alt="save firewall rule" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-azuresql/save-firewall-rule.png %}" alt="save firewall rule" />
 
 You can create a firewall rule for a single IP address or an entire range of addresses. Opening the firewall enables SQL administrators and users to log in to any database on the server for which they have valid credentials.
 
@@ -47,10 +48,14 @@ Connect to the server with SSMS
 
 2. In the Connect to Server dialog box, enter your fully qualified server name, select SQL Server Authentication, and then provide the login and password that you specified.
 
-<img src="{% asset_path sitecore/sql-server-login.png %}" alt="SQL server login" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-azuresql/sql-server-login.png %}" alt="SQL server login" />
 
 3. Click Connect to initiate the connection and open Object Explorer in SSMS.
 
 ------------------------------------------------------------------------
 
 Backing up Azure SQL
+
+SQL Database automatically performs a combination of full database backups weekly, differential database backups hourly, and transaction log backups every five minutes to protect your business from data loss. These backups are stored in geo-redundant storage for 35 days for databases in the Standard and Premium service tiers.  If you need to be able to recover data from a period older than 35 days, consider archiving your database regularly to a BACPAC file (a compressed file containing your database schema and associated data) stored either in Azure blob storage or in another location of your choice.
+
+[Export a database to a BACPAC file](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-export-portal)
