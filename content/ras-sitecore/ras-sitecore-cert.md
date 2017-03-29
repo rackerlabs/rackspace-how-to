@@ -15,12 +15,13 @@ product_url: sitecore
 
 ### Getting Started
 
-To secure with HTTPS an app that has a custom domain name, you add a certificate for that domain name. By default, Azure secures the *.azurewebsites.net wildcard domain with a single SSL certificate, so your clients can already access your app at: 
-**https://<appname>.azurewebsites.net**. 
+To secure with HTTPS an app that has a custom domain name, you add a certificate for that domain name. By default, Azure secures the *.azurewebsites.net wildcard domain with a single SSL certificate, so you can already access your app via: 
+**https://\<appname>.azurewebsites.net**
 
-If you would like to use a custom domain, like contoso.com, www.contoso.com, and *.contoso.com, the default certificate cannot secure that. Like all wildcard certificates, the default certificate is not as secure as using a custom domain and your own certificate for that custom domain.
+If you would like to use a custom domain the default certificate cannot secure that. Like all wildcard certificates, the default certificate is not as secure as using a custom domain and your own certificate for that custom domain.
 
 ### Get an SSL certificate
+
 If you do not already have one, you need to get one from a trusted certificate authority (CA). The certificate must meet all the following requirements:
 
 -It is signed by a trusted CA (no private CA servers).

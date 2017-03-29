@@ -1,5 +1,5 @@
 ---
-permalink: sitecore-faq/
+permalink: ras-sitecore-domain/
 audit_date:
 title: Use a custom domain
 type: article
@@ -14,7 +14,6 @@ product_url: sitecore
 [Sitecore Cloud FAQ](/how-to/sitecore-faq)
 
 ### Getting Started
-
 
 https://docs.microsoft.com/en-us/azure/app-service-web/custom-dns-web-site-buydomains-web-app
 
