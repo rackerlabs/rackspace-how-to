@@ -2,7 +2,7 @@
 permalink: network-device-reboot-faq/
 audit_date: '2017-01-16'
 title: Network device reboot FAQ
-type: product
+type: article
 created_date: '2017-01-16'
 created_by: Trevor Becker
 last_modified_date: '2017-01-16'

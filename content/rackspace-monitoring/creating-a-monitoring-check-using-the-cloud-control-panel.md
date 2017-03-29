@@ -49,7 +49,7 @@ only the system disk. The data disk is not monitored.
 
     There are two types of checks that you can monitor:
 
-    a. Remove Service Checks
+    a. Remote Service Checks
        - HTTP Check (Website)
        - TCP Check (Port)
        - Ping Check (Server)

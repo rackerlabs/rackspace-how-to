@@ -2,7 +2,7 @@
 permalink: linux-spheres-of-support-for-dedicated-and-managed-ops/
 audit_date: '2017-03-07'
 title: Linux Spheres of Support for Dedicated and Managed Operations
-type: product
+type: article
 created_date: '2017-03-03'
 created_by: Alex Juarez
 last_modified_date: '2017-03-07'

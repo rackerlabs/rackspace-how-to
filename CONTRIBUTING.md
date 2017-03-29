@@ -4,6 +4,7 @@
 		- [Keeping your fork up to date](#keeping-your-fork-up-to-date)
 	- [Creating and changing articles](#creating-and-changing-articles)
 		- [Create an article](#create-an-article)
+		   - [Using article templates](#using-article-templates)
 		- [Edit an article](#edit-an-article)
 		- [Make a change to a PR](#make-a-change-to-a-pr)
 		- [Request an article change](#request-an-article-change)
@@ -92,6 +93,22 @@ Follow these steps to create a new article within a product folder of the **rack
 **Note:** If your article includes images, send an email to <how-to@rackspace.com> with the image files. Note where the images belong in the article by using comments: `<!--this is a comment-->`.
 
 Your PR will be reviewed. Depending on the review feedback, you might be asked to make additional changes. The How-To editorial team will merge your pull request once your contribution is reviewed.
+
+##### Using article templates
+
+Article templates are available for three types of article: task-based, conceptual, and troubleshooting. Follow these steps to create a new article by using an article template.
+
+**Note**: These templates are intended to be a starting point for a new article. You might not need every section included in each template, or you might have additional sections that aren't included in the template. If you have questions, contact us at [how-to@rackspace.com](mailto:how-to@rackspace.com).
+
+1. Determine what type of article you want to write and click the appropriate template located in the [article-templates folder](https://github.com/rackerlabs/rackspace-how-to/tree/master/article-templates).
+
+2. At the top of the template, click the **Raw** button to view the raw Markdown.
+
+3. Copy the text and paste it into your new article file.
+
+4. Fill in the metadata and follow the guidance in the template to create your new article.
+
+5. Submit your article as a pull request as detailed in the previous section.
 
 #### Edit an article
 

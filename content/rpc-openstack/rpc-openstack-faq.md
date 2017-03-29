@@ -5,8 +5,8 @@ title: Rackspace Private Cloud FAQ
 type: article
 created_date: '2014-09-09'
 created_by: Karin Levenstein
-last_modified_date: '2016-11-29'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2017-03-23'
+last_modified_by: Catherine Richardson
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
@@ -145,8 +145,8 @@ at [rpcsales@rackspace.com](mailto:rpcsales@rackspace.com).
 
 #### What devices are certified for Rackspace Private Cloud compute nodes?
 
-All devices certified for Ubuntu Server 14.04 LTS are certified for Rackspace
-Private Cloud. Refer to the
+All devices certified for Ubuntu Server 14.04 LTS and Ubuntu Server 16.04 LTS
+are certified for Rackspace Private Cloud. Refer to the
 [Ubuntu Server certified hardware page](http://www.ubuntu.com/certification/server/)
 for the full list.
 
@@ -171,55 +171,6 @@ Monitoring you are billed by the hourly usage based on how many checks were
 running in that hour, and from how many monitoring zones were involved. Adjusting
 your usage is quick and easy, and this flexibility can help reduce unnecessary
 costs. Never again will you have to pay for more than you use.
-
----------
-
-### Rackspace Private Cloud Solutions templates
-
-#### What are RPC solution templates?
-They are application-stack templates built by Rackspace experts that enable
-customers to easily deploy a production-ready application stack on top of their
-OpenStack cloud.  These templates are designed to be used with OpenStack
-Orchestration (Heat).
-
-#### Why should customers care about these templates?
-Customers need to deploy applications on top of their cloud as quickly as
-possible to start adding business value for their end users.  The challenge is
-that deploying an application in the cloud can be difficult and time consuming.
-It can take the average customer about two months to deploy an application, and
-typically their deployment ends up being a "snowflake" which isn't automated and
-is difficult to reproduce.  These production-ready templates enable customers to
-deploy popular open-source applications on top of their private cloud in a
-matter of minutes.  They save customers a significant amount of time and help
-them quickly start adding business value.
-
-#### What makes these solution templates production-ready?
-The templates are built and tested by Rackspace's OpenStack experts.  They are
-built using industry standards and best practices and they include software
-plug-ins for enhanced functionality, network isolation and firewalls for robust
-security, are designed for high availability (e.g. database failure, redundant
-caching) and are optimized via extensive performance testing.
-
-#### What solution templates are available from RPC?
-We currently offer eight solution templates: Magento, Drupal, Galera, MongoDB,
-ELK stack, Hortonworks HDP, Gerrit, and Gitlab CE.
-
-#### How much do the solution templates cost?
-The RPC solution templates are available for free.
-
-#### Are the solution templates supported by RPC?
-The solution templates are not supported by RPC.
-
-#### Where are the solutions templates located?
-The general public can download our solution templates at the following GitHub
-site: [http://rcbops.github.io/templates/](http://rcbops.github.io/templates/).
-As part of our v10 release, Rackspace Private Cloud customers can now discover
-and deploy RPC solution templates using the RPC "Solutions" tab in the Horizon
-dashboard.
-
-#### Does Rackspace plan to offer additional templates in the future?
-Yes, Rackspace plans to continue adding new solution templates to the RPC
-"Solutions" tab.
 
 ---------
 
