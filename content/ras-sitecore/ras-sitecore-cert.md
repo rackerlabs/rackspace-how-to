@@ -13,8 +13,6 @@ product_url: sitecore
 
 [Sitecore Cloud FAQ](/how-to/sitecore-faq)
 
-### Getting Started
-
 To secure with HTTPS an app that has a custom domain name, you add a certificate for that domain name. By default, Azure secures the *.azurewebsites.net wildcard domain with a single SSL certificate, so you can already access your app via: 
 **https://\<appname>.azurewebsites.net**
 

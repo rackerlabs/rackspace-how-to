@@ -24,10 +24,9 @@ Sitecore recommends that cache clearing be accomplished by restarting the respec
 
 ### Restarting the App Service
 
--Open your browser of choice and connect to the Azure portal.
--[Sign in to the Azure portal](https://portal.azure.com/)
--On the Sign in page, provide the credentials for your azure subscription.
-
+- Open your browser of choice and connect to the Azure portal.
+- [Sign in to the Azure portal](https://portal.azure.com/)
+- On the Sign in page, provide the credentials for your azure subscription.
 - browse to the App Service you wish to restart in the azure portal 
 - In the Overview section click the **Restart** button. 
 - You will be prompted and warned "are you sure you want to restart **service**", gather your strength and click yes. 

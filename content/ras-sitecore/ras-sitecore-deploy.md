@@ -23,7 +23,7 @@ To access the FTP server for your app, you first need deployment credentials.
 - In the Azure portal, click **App Service > App > Deployment credentials**
 - Configure the user name and password, and then click Save.
 
-<img src="{% asset_path ras-sitecore/deployment_credentials_configure.png %}" alt="Set Deployment credentials" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-deploy/deployment_credentials_configure.png %}" alt="Set Deployment credentials" />
 
 - Obtain the FTP connection information by browsing the Azure portal to 
 **App Service > App > Settings > Properties**, 

@@ -13,11 +13,11 @@ product_url: sitecore
 
 [Sitecore Cloud FAQ](/how-to/ras-sitecore-faq)
 
-#### Installing a Sitecore Package
+### Installing a Sitecore Package
 
 The package file is in fact a zip file which can be unpacked. The zip file contains both content Items and files. The zip file contains 3 folders: Items, files and metadata.
 
-To manually install a package:
+#### To manually install a package:
 
 - Open the compressed package file and extract the files from the /files folder preserving the folder structure.
 - Delete the /files directory from the zip file.
@@ -26,7 +26,7 @@ To manually install a package:
 
 The website should now be considered down for maintenance. You may want to publish an "Under Maintenance" page on your website.
 
-### Install the package with only Items and metadata using the client. 
+#### Install the package with only Items and metadata using the client. 
 
 - Login to Sitecore Content Management
 - Click on the control panel icon from the Sitecore Dashboard
@@ -40,12 +40,11 @@ The website should now be considered down for maintenance. You may want to publi
 - Review the package information and click **Install**
 
 Copy the extracted files to the website preserving the folder structure, so that existing files are overwritten.
+
 [Deploy to Azure](/how-to/ras-sitecore-deploy)
 
 Verify that the website is running.
 
-The website should no longer be considered down for maintenance, so if you used an “Under Maintanance” page it should now be removed.
-
-The advantage of this approach is that the files are copied using the current FTP User, and you do not need to change any security settings.  
+The website should no longer be considered down for maintenance, if you used an “Under Maintanance” page it should now be removed. The advantage of this manual approach is that the files are copied using the current FTP User, and you do not need to change any security settings.  
 
 ------------------------------------------------------------------------

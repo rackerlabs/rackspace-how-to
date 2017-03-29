@@ -35,8 +35,6 @@ product_url: sitecore
 **note** if you are using a custom domain you can select Custom Origin for the Origin Type and specify a url for your static content. This is useful for rewriting medialinks and exporting static content to another url. 
 - Click **Add**
 
-
 ### Configure Sitecore to load static content from the CDN
 
- 
 ------------------------------------------------------------------------

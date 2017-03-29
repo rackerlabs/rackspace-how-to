@@ -23,16 +23,16 @@ product_url: sitecore
 
 - Click on the Content Editor Icon
 
-<img src="{% asset_path ras-sitecore/sitecoredash.png %}" alt="Sitecore Dashboard" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-publish/sitecoredash.png %}" alt="Sitecore Dashboard" />
 
 - Click on the publish tab on the top toolbar. 
 
-<img src="{% asset_path ras-sitecore/sitecorepub.png %}" alt="Sitecore Publishing" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-publish/sitecorepub.png %}" alt="Sitecore Publishing" />
 
 - Click the publishing Icon
 - Click the word publish below the publish icon to open the dropdown menu and select publish site
 
-<img src="{% asset_path ras-sitecore/sitecorepubtab.png %}" alt="Sitecore Publishing" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-publish/sitecorepubtab.png %}" alt="Sitecore Publishing" />
 
 - Select the publishing type
 - click the **publish** button

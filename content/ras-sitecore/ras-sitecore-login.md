@@ -23,7 +23,7 @@ example: **http://gsdk-cm.azurewebsites.net/**
 
 **https://gsdk-cm.azurewebsites.net/sitecore/login**
 
-<img src="{% asset_path sitecore/sitecorelogin.png %}" alt="Login" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-login/sitecorelogin.png %}" alt="Login" />
 
 - Enter your Sitecore Admin or user credentials and click **Log in**
 

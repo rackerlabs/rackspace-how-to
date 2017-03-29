@@ -19,7 +19,7 @@ When working with SQL Database, you should always use the most recent version of
 
 [Download SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms) 
 
-In the Connect to Server dialog box, enter the necessary information to connect to your SQL server using SQL Server Authentication.
+In the **Connect to Server** dialog box, enter the necessary information to connect to your SQL server using SQL Server Authentication.
 To stay up-to-date, the latest version of SSMS prompts you when there is a new version available to download.
 
 [Sign in to the Azure portal](/how-to/sitecore-azure)
