@@ -13,9 +13,7 @@ product_url: sitecore
 
 [Sitecore Cloud FAQ](/how-to/sitecore-faq)
 
-### Getting Started
-
-**Install the newest version of SQL Server Management Studio**
+#### Install the newest version of SQL Server Management Studio
 
 When working with SQL Database, you should always use the most recent version of SQL Server Management Studio (SSMS). The latest version of SSMS is continually updated and optimized to work with Azure and SQL Database. The latest version of SSMS works for all supported versions of SQL Server. To download and install the latest version, see:
 
@@ -26,7 +24,7 @@ To stay up-to-date, the latest version of SSMS prompts you when there is a new v
 
 [Sign in to the Azure portal](/how-to/sitecore-azure)
 
-Create a server-level firewall rule
+### Create a server-level firewall rule
 
 By default, an Azure SQL Database firewall prevents external connectivity to your logical server and its databases. To enable you to connect to your server, you need to create a firewall rule for the IP address of the computer from which you connect.
 
@@ -42,7 +40,7 @@ By default, an Azure SQL Database firewall prevents external connectivity to you
 
 You can create a firewall rule for a single IP address or an entire range of addresses. Opening the firewall enables SQL administrators and users to log in to any database on the server for which they have valid credentials.
 
-Connect to the server with SSMS
+### Connect to the server with SSMS
 
 1. Open SQL Server Management Studio
 
@@ -54,7 +52,7 @@ Connect to the server with SSMS
 
 ------------------------------------------------------------------------
 
-Backing up Azure SQL
+### Backing up Azure SQL
 
 SQL Database automatically performs a combination of full database backups weekly, differential database backups hourly, and transaction log backups every five minutes to protect your business from data loss. These backups are stored in geo-redundant storage for 35 days for databases in the Standard and Premium service tiers.  If you need to be able to recover data from a period older than 35 days, consider archiving your database regularly to a BACPAC file (a compressed file containing your database schema and associated data) stored either in Azure blob storage or in another location of your choice.
 
