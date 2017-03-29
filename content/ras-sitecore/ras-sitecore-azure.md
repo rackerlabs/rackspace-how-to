@@ -25,7 +25,5 @@ Open your browser of choice and connect to the Azure portal.
 
 On the Sign in page, provide the credentials for your azure subscription.
 
-#### How do I ...
-
-<img src="{% asset_path sitecore/azurelogin1.png %}" alt="Azure Cloud Portal login page" />
+<img src="{% asset_path ras-sitecore/ras-sitecore-azure/azurelogin1.png %}" alt="Azure Cloud Portal login page" />
 ------------------------------------------------------------------------

@@ -19,27 +19,35 @@ Rackspace Application Services Sitecore delivers ...
 #### What is included with my account? 
 Depending on the instance size and Sitecore features you've selected you will have one of the following architectures created in the selected region. 
 
-XP1-5 Architecture Diagram 
+|Sitecore Size|Diagram|Details|
+|-------------|-------|-----------------|
+|XP0|DiagramLink|SummarySpecs|
+|XP1|DiagramLink|SummarySpecs|
+|XP2|DiagramLink|SummarySpecs|
+|XP3|DiagramLink|SummarySpecs|
+|XP4|DiagramLink|SummarySpecs|
+|XP5|DiagramLink|SummarySpecs|
+|XP+|DiagramLink|SummarySpecs|
 
-(XM,XP0 coming)
+(XM Diagrams coming soon)
 
 Instance Access information – (Azure portal)
 
-		-Datacenters –Azure Regions, Object Rocket Region
+### Datacenters 
+
 Sitecore on Azure Paas services is available in the following Azure Regions. 
+*For XP packages that use the Experience Database use one of the following Azure and Object Rocket datacenter combinations.
 
-For XP packages that use the Experience Database use one of the following Azure and Object Rocket datacenter combinations.
+- Azure EAST US & Object Rocket Northern Virginia (IAD)
+- Azure NORTH CENTRAL US & Object Rocket Chicago (ORD)
+- Azure SOUTH CENTRAL US & Object Rocket Dallas (DFW)
+- Azure WEST US & Object Rocket San Jose (SJC)
+- Azure NORTH EUROPE & Object Rocket London (LON)
+- Azure EAST ASIA & Object Rocket Hong Kong (HKG)
+- Azure AUSTRALIA EAST & Object Rocket Sydney (SYD)
 
-Azure EAST US & Object Rocket Northern Virginia (IAD)
-Azure NORTH CENTRAL US & Object Rocket Chicago (ORD)
-Azure SOUTH CENTRAL US & Object Rocket Dallas (DFW)
-Azure WEST US & Object Rocket San Jose (SJC)
-Azure NORTH EUROPE & Object Rocket London (LON)
-Azure EAST ASIA & Object Rocket Hong Kong (HKG)
-Azure AUSTRALIA EAST & Object Rocket Sydney (SYD)
-
-		-CM,CD,PRC,REP
-			-URL
-			-FTP URL
-			-FTP Username/Password
-			-Sitecore Username/Password
+-CM,CD,PRC,REP
+-URL
+-FTP URL
+-FTP Username/Password
+-Sitecore Username/Password
