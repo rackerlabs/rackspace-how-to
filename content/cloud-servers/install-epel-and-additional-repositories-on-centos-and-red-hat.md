@@ -111,10 +111,10 @@ plug-in for package replacement to simplify the upgrade process.
 
 The plug-in provides a `yum replace` command that replaces a specified
 package and installs any required dependencies at the same time.  For
-example, to replace the installed PHP package with the PHP 5.3 package
+example, to replace the installed PHP package with the PHP 5.6 package
 from the IUS repository, run the following command:
 
-    sudo yum replace php --replace-with php53
+    sudo yum replace php --replace-with php56u
 
 For more information, see the [IUS Usage Guide](https://ius.io/Usage/).
 
