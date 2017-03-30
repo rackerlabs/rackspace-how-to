@@ -5,8 +5,8 @@ title: Install EPEL, IUS, and Remi repositories on CentOS and Red Hat
 type: article
 created_date: '2012-01-11'
 created_by: Rackspace Support
-last_modified_date: '2016-06-09'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-03-30'
+last_modified_by: b-harper
 product: Cloud Servers
 product_url: cloud-servers
 ---
