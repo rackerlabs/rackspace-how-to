@@ -40,11 +40,6 @@ command:
 If that command doesn't work, perhaps because the CentOS Extras
 repository is disabled, use the following manual installation instructions based on your distribution version:
 
--  CentOS and Red Hat Enterprise Linux 5.*x*
-
-       wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
-       sudo rpm -Uvh epel-release-5*.rpm
-
 -  CentOS and Red Hat Enterprise Linux 6.*x*
 
        wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
@@ -82,11 +77,6 @@ RPM package for your system and installing it. The following
 instructions use the 64-bit packages that work with Cloud Servers
 instances.
 
--  CentOS 5.*x*
-
-       wget https://centos5.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
 -  CentOS 6.*x*
 
        wget https://centos6.iuscommunity.org/ius-release.rpm
@@ -95,11 +85,6 @@ instances.
 -  CentOS 7.*x*
 
        wget https://centos7.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
--  Red Hat 5.*x*
-
-       wget https://rhel5.iuscommunity.org/ius-release.rpm
        sudo rpm -Uvh ius-release*.rpm
 
 -  Red Hat 6.*x*
@@ -156,11 +141,6 @@ support for your server.
 You install the Remi repository by downloading the appropriate RPM
 package for your system and installing it. The following instructions
 use the 64-bit packages that work with Cloud Servers instances.
-
--  CentOS and Red Hat Enterprise Linux 5.*x*
-
-       wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
-       sudo rpm -Uvh remi-release-5*.rpm
 
 -  CentOS and Red Hat Enterprise Linux 6.*x*
 
