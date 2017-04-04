@@ -7,8 +7,6 @@ created_date: '2012-04-27'
 created_by: Rackspace Support
 last_modified_date: '2015-12-31'
 last_modified_by: Stephanie Fillmon
-product: Rackspace Email
-product_url: rackspace-email
 ---
 
 To set up Webmail Mobile Sync with your Rackspace Email account on your mobile device, you need to add an ActiveSync or BlackBerry Enterprise Service (BES) license through the Cloud Office Control Panel. This article shows how to add a ActiveSync or BES license.
