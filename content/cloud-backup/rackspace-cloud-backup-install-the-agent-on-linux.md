@@ -6,7 +6,7 @@ type: article
 created_date: '2014-05-05'
 created_by: Kyle Laffoon
 last_modified_date: '2016-12-16'
-last_modified_by: Cat Lookabaugh
+last_modified_by: Laura Santamaria
 product: Cloud Backup
 product_url: cloud-backup
 ---
