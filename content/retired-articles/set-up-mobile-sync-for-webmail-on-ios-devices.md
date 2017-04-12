@@ -7,8 +7,6 @@ created_date: '2012-04-27'
 created_by: Rackspace Support
 last_modified_date: '2016-05-18'
 last_modified_by: Kyle Laffoon
-product: Rackspace Email
-product_url: rackspace-email
 ---
 
 This article provides instructions for setting up Mobile Sync for
@@ -48,7 +46,7 @@ differ from the examples.
         example, My Work Account). This description will be visible only
         to you.
 
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/1.png %}" width="213" />
+    <!--><img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/1.png %}" width="213" /><!-->
 
     **Note:** The device will attempt to verify the account. You
     might receive an `Unable to Verify Certificate` message. If you
@@ -61,13 +59,13 @@ differ from the examples.
     are displayed next to every field. If any field indicates a problem,
     double-check that setting's value.
 
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/2.png %}" width="213" />
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/3.png %}" width="213" />
+    <!--><img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/2.png %}" width="213" />
+    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/3.png %}" width="213" /><!-->
 
 5.  Slide the **ON/OFF** buttons to select which information to
     synchronize, and then tap **Save**.
 
-    <img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/4.png %}" width="213" />
+    <!--><img src="{% asset_path rackspace-email/set-up-mobile-sync-for-webmail-on-ios-devices/4.png %}" width="213" /><!-->
 
     Depending on how much data is on the server, your iPhone might take
     a few minutes to synchronize all of your information.
