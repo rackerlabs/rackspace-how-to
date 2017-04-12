@@ -67,7 +67,7 @@ the [Cloud Big Data product
 page](http://www.rackspace.com/cloud/big-data). Cloud Servers is also
 part of the Rackspace Cloud, and your use of it through the Cloud
 Control Panel is billed according to [Cloud Servers
-pricing](http://www.rackspace.com/cloud/servers#pricinganchor)
+pricing](https://www.rackspace.com/cloud/servers/pricing)
 
 ------------------------------------------------------------------------
 

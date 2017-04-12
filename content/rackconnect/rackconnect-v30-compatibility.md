@@ -53,7 +53,7 @@ The following table lists the dedicated offerings that are compatible with RackC
 Network offering | Compatible | Details |
 --- | --- | ---
 Managed Colocation  | Network devices in a Managed Colocation environment are supported only if the network devices are managed by the Network Security team. Customer-managed network devices are not supported. | [Managed Colocation](https://www.rackspace.com/dedicated-servers/colocation)
-Managed Storage | The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment. The Managed Storage offering cannot be used directly with cloud servers. | [Managed Storage](https://www.rackspace.com/managed_hosting/services/storage/)
+Managed Storage | The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment. The Managed Storage offering cannot be used directly with cloud servers. | [Managed Storage](https://www.rackspace.com/managed-hosting/data-storage)
 Managed Virtualization | Yes | [Managed Virtualization](https://www.rackspace.com/cloud/private/managed_virtualization/)
 Private Cloud | Yes | [Private Cloud](https://www.rackspace.com/cloud/private/)
 

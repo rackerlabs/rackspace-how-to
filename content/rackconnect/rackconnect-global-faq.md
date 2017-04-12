@@ -108,7 +108,7 @@ is inherently secure.
 
 #### Does the service have an SLA?
 
-Yes. You can read the agreement at https://www.rackspace.com/information/legal/rackconnect-global-regionlink.
+Yes. You can read the agreement at [https://www.rackspace.com/information/legal/rackconnect-global-regionlink](https://www.rackspace.com/information/legal/rackconnect-global-regionlink).
 
 #### What is the high-level procedure by which an RackConnect Global connection can be ordered and provisioned for the customer?
 

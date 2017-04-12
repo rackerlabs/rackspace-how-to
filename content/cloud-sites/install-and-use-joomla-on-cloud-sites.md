@@ -96,7 +96,5 @@ To continue the Joomla installation, follow the on screen prompts.
 
 #### Additional Resources
 
--   >A video tutorial is available at
-    <http://www.rackspace.com/cloud/cloud_hosting_demos/>
 -   Add new articles using the Joomla documentation at
     <http://docs.joomla.org/>

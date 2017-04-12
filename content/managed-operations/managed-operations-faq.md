@@ -18,7 +18,7 @@ product_url: managed-operations
 The Rackspace Cloud environment has not been formally assessed for for
 compliance with the Payment Card Industry (PCI) Data Security Standard
 (DSS). For information about PCI-DSS, see [Cloud Security
-Solutions](http://www.rackspace.com/security/solutions/#pci). For
+Solutions](https://support.rackspace.com/how-to/are-cloud-servers-pci-dss-compliant/). For
 information about PCI-DSS when using Rackspace Dedicated Hosting
 services, see [PCI-Compliant Hosting for E-commerce
 Websites](http://www.rackspace.com/ecommerce-hosting/pci/).
@@ -52,8 +52,7 @@ Rackspace Partner. Any work performed by the Rackspace Professional
 Services Team or a partner incurs additional charges.
 
 For more information, see [Rackspace Professional
-Services](http://www.rackspace.com/enterprise-cloud-solutions/professional-services)
-or call 1-800-440-2149.
+Services](https://www.rackspace.com/en-us/professional-services/).
 
 #### Can I move my servers from my current account to a Managed Operations Service Level account?
 

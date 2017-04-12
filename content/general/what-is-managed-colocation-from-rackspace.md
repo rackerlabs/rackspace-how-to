@@ -28,7 +28,20 @@ longer have to worry about:
 
 ### The Rackspace Difference
 
-When Rackspace takes care of the preceding tasks, you can focus on higher-value activities such as market differentiation and business innovation. Think of Managed Colocation as a Dedicated-Plus hosting solution. We set up a dedicated hardware environment, tailored to your company's needs, in one of our nine world-class data centers around the globe. The "plus" part is that you also gain access to Rackspace optional services, such as [Managed Backup](http://www.rackspace.com/managed_hosting/services/storage/managedbackup.php), [Managed Private Clouds](http://www.rackspace.com/managed_hosting/private_cloud/index.php) and [Managed Storage](http://www.rackspace.com/managed_hosting/services/storage/index.php). We give you the necessary tools to remotely administer your environment, and you have access to our 24x7x365 remote personnel in the data center. No more rushing into the data center with spare parts at 2 a.m. to replace failed hardware. No more sending out a team of technicians to your colocation facility to get a 20-device configuration racked, cabled, imaged, and ready to go.
+When Rackspace takes care of the preceding tasks, you can focus on higher-value
+activities such as market differentiation and business innovation. Think of
+Managed Colocation as a Dedicated-Plus hosting solution. We set up a dedicated
+hardware environment, tailored to your company's needs, in one of our nine
+world-class data centers around the globe. The "plus" part is that you also gain
+access to Rackspace optional services, such as
+[Managed Backup](https://www.rackspace.com/vmware),
+[Managed Private Clouds](http://www.rackspace.com/managed_hosting/private_cloud/index.php)
+and [Managed Storage](https://www.rackspace.com/managed-hosting/data-storage).
+We give you the necessary tools to remotely administer your environment, and you
+have access to our 24x7x365 remote personnel in the data center. No more rushing
+into the data center with spare parts at 2 a.m. to replace failed hardware. No
+more sending out a team of technicians to your colocation facility to get a
+20-device configuration racked, cabled, imaged, and ready to go.
 
 ### Dedicated Support Team
 

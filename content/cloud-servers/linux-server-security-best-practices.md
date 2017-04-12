@@ -233,7 +233,7 @@ On CentOS, Red Hat, and Fedora, run:
 
     sudo service iptables save
 
-### Firewalls 
+### Firewalls
 
 `iptables` is a firewall and networking tool that is available to all Linux distributions and operates by analyzing packets at the kernel level as they are received.
 
@@ -290,7 +290,7 @@ If your system tells you there isn't an iptables service, we'll use `iptables-re
 
     sudo -c "/sbin/iptables-restore < /etc/iptables.rules"
 
-### Account-level security 
+### Account-level security
 
 While securing your servers is an essential part of operations on the Internet, securing your account is also necessary. Your account name, password, and API keys are all essential parts of how you interact with the Rackspace Cloud offerings. Just like any other password or access credentials, you want to keep them secure, but you also need to allow your team to take action and perform necessary tasks.
 
@@ -325,7 +325,7 @@ A popular open source IDS is [OSSEC](http://www.ossec.net/).  OSSEC maintains ag
 
 If you suspect a system has already been compromised, you can investigate with procedures described in our articles on [checking for backdoors and intruders](/knowledge_center/article/checking-for-a-security-compromise-backdoors-and-intruders) and [rescue mode investigation](/knowledge_center/article/checking-for-a-security-compromise-rescue-mode-investigation).
 
-### Keep your OS up-to-date (patching) 
+### Keep your OS up-to-date (patching)
 
 It is very important to keep your kernel, packages, and dependencies up-to-date. This is especially true for security-related modules and packages. Some updates (for example, kernel updates) require your server to be rebooted. Plan for a time that will cause the least amount of disruption during the (normally very short) downtime while your server is rebooting.
 
@@ -356,9 +356,5 @@ Use the following links to find out when your Linux distribution release will re
 - CentOS: See Red Hat
 - Fedora: [https://fedoraproject.org/wiki/End_of_life](https://fedoraproject.org/wiki/End_of_life)
 - Debian: [https://wiki.debian.org/DebianReleases](https://wiki.debian.org/DebianReleases)
-
-### Further reading
-
-- [Rackspace Cloud Essentials Guide - Security & Remote Access](http://www.rackspace.com/knowledge_center/article/rackspace-cloud-essentials-guide-security-remote-access)
 
 --Co-Authored by Reese McJunkin

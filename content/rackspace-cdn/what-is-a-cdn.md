@@ -26,8 +26,7 @@ The Internet is a network of networks. To get content from a server on
 the other side of the planet, IP packets have to travel through a series
 of backbone servers and public network cables.
 
-CDNs like the Rackspace CDN \[[product
-link](http://www.rackspace.com/cloud/cdn-content-delivery-network)\]
+CDNs like the [Rackspace CDN](http://www.rackspace.com/cloud/cdn-content-delivery-network)
 augment the transport network by employing various techniques to
 optimize content delivery. It is fairly easy to see how CDNs help by
 looking at how the Internet works. A trace route to an Internet address

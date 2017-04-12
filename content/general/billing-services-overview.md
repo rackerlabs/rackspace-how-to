@@ -25,7 +25,7 @@ Each product page on the [main Rackspace website](https://www.rackspace.com/) co
 
 ### Access your account information
 
-1. Log in to the [Cloud Control Panel](http://www.rackspace.com/cloud/servers/pricing/).
+1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
 2. In the upper-right corner of the control panel, click your user name.
 
