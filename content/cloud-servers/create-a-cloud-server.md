@@ -26,7 +26,7 @@ Control Panel interface.
 
     For more information about regions and how to use them effectively, see [About regions](/how-to/about-regions).
 
-5.  In the **Image** section, select which operating system you want to
+5.  In the **Image** area, select which operating system you want to
     use.
 
     For a complete list of available images, see the [Images section](https://www.rackspace.com/cloud/servers/features#images) of the Cloud Servers product page.
