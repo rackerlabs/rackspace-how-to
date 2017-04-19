@@ -7,8 +7,6 @@ created_date: '2012-09-14'
 created_by: Jonathan Hogue
 last_modified_date: '2017-01-18'
 last_modified_by: Laura Santamaria
-product: RackConnect
-product_url: rackconnect
 ---
 
 Following is a summary of features, updates, and changes for
