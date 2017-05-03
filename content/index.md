@@ -56,6 +56,9 @@ permalink: /
 					<div class="three columns icon rackconnect">
 						<h4><a href="/how-to/rackconnect/"><span>Rackspace</span> RackConnect</a></h4>
 					</div>
+					<div class="three columns icon rackconnect">
+						<h4><a href="/how-to/networking-fundamentals/"><span>Fundamentals</span> Networking</a></h4>
+					</div>
 				</div>
 			</div>
 			<hr/>
