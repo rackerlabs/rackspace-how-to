@@ -1,0 +1,131 @@
+
+
+
+
+
+
+
+
+
+        
+
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.0 transitional//en">
+<html lang="en">
+		<head>
+				<title>Rackspace</title>
+				<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	 <link href="/nidp/images/favicon.ico" rel="shortcut icon">
+				<link href="/nidp/images/customimages/Rackspace.css" rel="stylesheet">
+	
+	<!-- Rackspace Canon UI CDN -->
+	<link rel="stylesheet" type="text/css" href="https://eafdbc63c97ce6bec9ef-b0a668e5876bef6fe25684caf71db405.ssl.cf1.rackcdn.com/v0-latest/canon.css" />
+	<meta name="viewport" content="width=device-width">
+		
+		<style>
+		#content { width: 100%; border: 0; margin: 0; padding: 0; overflow: none; height: 100%; zoom: .5;}
+		#credentials { width: 100%; height: 100%; }
+		.responsive {  }
+		</style>
+
+				<script>
+				 var g_curCard = null; 		// initial displayed card
+		 var g_cardContainer = null; 	// div that holds all the authentication cards
+		 var g_curSubtab = null; 	// subtab currently displayed
+		 var g_curTab = null; 		// tab currently displayed
+
+				 var menuItem = 0;
+						 function showHide(i)
+						 {
+								 document.getElementById('menu1').style.display='none';
+								 document.getElementById('menu2').style.display='none';
+								 document.getElementById('submenu1').style.display='none';
+								 document.getElementById('submenu2').style.display='none';
+								 document.getElementById('menu' + i).style.display='block';
+								 document.getElementById('submenu' + i).style.display='block';
+				 if (i == 1)
+						 switchContentPage("/nidp/jsp/content.jsp?sid=0");
+				 else 
+						 switchContentPage("/nidp/jsp/IdentityEditor.jsp?sid=0");
+						 }
+
+		 function switchContentPage(newSrc)
+		 {
+					 parent.document.getElementById("content").src = newSrc;
+		 }  
+
+		 function onloadhandler()
+		 {
+				 g_cardContainer = document.getElementById("cardcontainer");
+				 g_curSubtab	   = document.getElementById("loginsubtab");
+				 g_curTab        = document.getElementById("authtab");
+				 g_curCard       = document.getElementById("selectedCard0");
+		 }	
+
+		 function showhideTab(divid)
+		 {
+				 var element1 = document.getElementById(divid);	
+			
+				 if(element1.style.display == "none")
+				 {
+						 element1.style.display = "block";
+				 g_curTab.style.display = "none";
+					
+						 g_curTab = element1;
+				 }
+		 }
+
+		 function subtabchange(divid)
+		 {
+				 var element1 = document.getElementById(divid);
+				 var element2 = g_curSubtab;
+				 element1.className = "selx";
+				 if (element1.id != element2.id)
+				 {
+						 element2.className = "unselx";
+				 }
+				 g_curSubtab = element1;	
+		 }
+			
+		 function showHelp()
+		 {
+				 var helpURL = "login.html";
+								 if (g_curSubtab.id == "fedsubtab")
+						 helpURL = "/nidp/html/help/en/federations.html";
+
+								 else if (g_curSubtab.id == "myprofile")
+				 helpURL = "/nidp/html/help/en/myprofile.html";
+
+								 else if (g_curSubtab.id == "sharing")
+				 helpURL = "/nidp/html/help/en/sharing.html";
+
+								 else if (g_curSubtab.id == "loginsubtab")
+				 helpURL = "/nidp/html/help/en/userlogin.html";
+
+								 else if (g_curSubtab.id == "newcardsubtab")
+				 helpURL = "/nidp/html/help/en/newcard.html";
+
+							 else if (g_curSubtab.id == "logTicketsubtab")
+						 helpURL = "/nidp/html/help/en/logticket.html";
+
+						 var w;
+						 w = window.open(helpURL, "nidsPopupHelp", "toolbar=no,location=no,directories=no,menubar=no,scrollbars=yes,resizable=yes,width=500,height=500");
+						 if (w != null)
+						 {
+							w.focus();
+						 }
+		 }
+				</script>
+		</head>
+
+		<body onload="onloadhandler()">
+			<script type="text/javascript">
+				if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+					document.getElementsByTagName('body')[0].className+=' responsive';
+				}
+			</script>
+				<iframe scrolling=no id="content" src="/nidp/jsp/content.jsp?sid=0&id=997&sid=0&amp;target=https%3A%2F%2Frackerlogin.fedsso.rackspace.com%2Fnidp%2Fsaml2%2Fidpsend%3Fid%3Donewiki%26%26SAMLRequest%3DlVJNa%2BMwEP0rRoe9xXa8m3ZRY4eQUAh0YUk%2FDr1ppbGtWl%2FVyGl%2FfhWnBrO0JT1JaObNm%2FeelqtX%0ArZIDeJTWlGSe5iQBw62QpinJ%2Fd317DdZVUtkWjm67kNr9vDcA4Yk4gzSoVCS3htqGUqkhmlAGji9%0AXf%2B5oUWaU%2BdtsNwqkqwRwYdItLEGew3%2BFvxBcrjf35SkDcEhzTJrIPWMd%2BgYh5RbnTnVN9JgFsEH%0ABSE7ciJakmzjHtKwMKw%2B4o9Y8MpGSFqDiI3%2FjTNSuGFGkcUbghErKcpI%2ByI7%2BYNpd0WS3bYktdJt%0AzdpaMtl1XW1bJrVqnhonnRDiqdG8%2B9c6EffYIfawMxiYCSUp8vnlLC9m%2BcXdfEEXOc2L9OfFr0eS%0APIw2R1vIaOoA9ufbyUYTSfVty5bZlPO0QeHoe6QghoBjOAFepwEXZye8sdoxL%2FEoUksjda%2FfhdLp%0A7I2KKvZQTzjOFv1lG6f8ODo%2B%2F43Hi%2FXiJPlD9upU%2B8yAanRr%2Bu2rNw%3D%3D%26RelayState%3D%2Fdownload%2Fattachments%2F184029797%2FDiffie-Hellman_Key_Exchange.png%3Fversion%3D1%26TARGET%3D%2Fdownload%2Fattachments%2F184029797%2FDiffie-Hellman_Key_Exchange.png%3Fversion%3D1" frameborder=0 style="zoom:1;"></iframe>
+		</body>
+</html>
+
+
+ 
