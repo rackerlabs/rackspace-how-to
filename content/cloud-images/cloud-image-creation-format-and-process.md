@@ -1,6 +1,6 @@
 ---
 permalink: cloud-image-creation-format-and-process/
-audit_date:
+audit_date: '2017-05-04'
 title: Cloud image creation format and process
 type: article
 created_date: '2016-10-20'
@@ -88,7 +88,7 @@ If the image creation fails, one of the following issues might be the reason.
 **Age of the server** - Older flavor classes, such as Standard and Classic,
 exist on older hardware that has limited network bandwidth for imaging
 operations. This limit causes imaging to take longer to complete. To work
-around this issue, you can [migrate to a newer flavor type](https://support.rackspace.com/how-to/migrating-to-a-general-purpose-or-io-server), such as General
+around this issue, you can [migrate to a newer flavor type](/how-to/migrating-to-a-general-purpose-or-io-server), such as General
 Purpose, or use a file-level backup tool such as Cloud Backup.
 
 **Coalesce timeout** - If you do not image your cloud server frequently, or if
