@@ -18,8 +18,8 @@ provides a brief overview of the features that you can access to in the control 
 
 Use one of the following links to log in to the Cloud Control Panel:
 
-[Login for new Cloud Office customers](https://cp.rackspace.com/)
-[Login for UK and MyRackspace customers](https://my.rackspace.com/).
+- [Login for new Cloud Office customers](https://cp.rackspace.com/)
+- [Login for UK and MyRackspace customers](https://my.rackspace.com/)
 
 After you log in, you see sections that represent the services for which you signed up. Each section has several options and tools to choose from. As you sign up for additional services, they appear here to enable you to manage them directly from the landing page.
 
