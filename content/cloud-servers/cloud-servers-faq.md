@@ -5,8 +5,8 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2017-03-03'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-05-04'
+last_modified_by: Brian King
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -215,7 +215,7 @@ support that you need to get the most out of the Cloud.
 #### Can I install the Rackspace Private Cloud on virtual machines?
 
 Rackspace strongly recommends that you install Rackspace Private Cloud
-on physical hardware nodes running Ubuntu 12.04 or CentOS 6.3.
+on physical hardware nodes.
 Installation on virtual platforms should only be performed for
 evaluation purposes.
 
@@ -247,7 +247,8 @@ communicate between servers. The traffic that flows over this interface
 also referred to as ServiceNet. ServiceNet is an internal only,
 multi-tenant network connection within each Rackspace datacenter.
 ServiceNet IPs are not accessible from the public Internet and are local
-per datacenter.
+per datacenter. You can also deploy Cloud Networks, which are single-tenant
+(private to your account only).
 
 #### Can I buy extra public IPs?
 
@@ -300,9 +301,9 @@ the same functions as a control panel.
 
 #### Do you provide Console access?
 
-Yes, via a Java web terminal accessible through the Details section of
+Yes, via an HTML5 web terminal accessible through the Details section of
 each webserver, in the Actions menu under the section labeled Manage,
-you will see a link to Connect Via Terminal.
+you will see a link to Connect Via Emergency Console .
 
 **Note**: Console access is via a secure HTTP connection which is
 different connection from the traditional way to connect via SSH for
@@ -311,9 +312,9 @@ if your server is unresponsive or you have locked yourself out.
 
 #### Can I reboot my machine?
 
-Yes. All Cloud Servers can perform both soft (reset button) and hard
-(power cycle) reboots. These are performed instantly and handled via the
-Cloud Server Control Panel.
+Yes, select "reboot" under Actions in the mycloud control panel, and your
+server will be rebooted immediately. This is useful if your server
+is unresponsive.
 
 #### Will I be billed if my server is powered off?
 
@@ -371,58 +372,10 @@ data storage space in one of two ways:
 The number of customers on a Cloud Server host machine depends on the
 size of the customers' Cloud Servers, and the type of operating system.
 
-#### How does the CPU scheduling work on Standard servers?
+#### How does the CPU scheduling work?
 
-**Note**: [General Purpose Cloud Servers](/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers)
-have specific virtual CPU allocations, as detailed on the [Cloud Servers pricing page](http://www.rackspace.com/cloud/servers/pricing/). The
-following information on CPU scheduling applies to standard Cloud Servers only.
-
-For Windows images, each Cloud Server is assigned a number of virtual
-cores based on the size of the Cloud Server. The Standard 1 GB Cloud
-Server receives 1 virtual core, the standard 2 GB and 4 GB Cloud Servers
-receive 2 virtual cores, the standard 8 GB and 15.5 GB Cloud Servers
-receive 4 virtual cores, and the standard 30GB servers receive 8 virtual
-cores. Each of these cores is given equal weight when allocating CPU
-cycles.
-
-For Linux distributions, each Standard Cloud Server is assigned the
-number of virtual cores and the CPU cycles allocated to these cores, as
-selected when creating the server in the Control Panel.
-
-All standard Cloud Servers receive a guaranteed minimum amount of CPU
-cycles with the ability to burst when excess cycles are available.
-
-#### How long does a standard Cloud Server resize take?
-
-The amount of time a resize takes varies by the size of the server and
-the time of day you are performing the resize. If you have a brand-new
-server with no additional data or software installed, then you might be
-looking at 10 minutes. However, if you have data installed on your
-server and have been installing software then it can take up to 30
-minutes or more. Peak times for resize activity tend to be at the start
-and end of the business day. Expect a short period of downtime while
-your server is being resized.
-
-Note also that resizing a server down can take longer than resizing up
-because the system needs to consolidate and copy data to a smaller disk
-container rather than expand the existing container. Cleaning up
-unneeded files (like old logs and session files) can improve the speed
-of a resize operation.
-
-There are different processes of resizes, as follows:
-
--   **Online Resizes**: Allow for the original sized Cloud Server to be
-    powered on during the "Prep-Resize" step, and only powers down
-    during the second step of the resize process.
-
-    This includes: Standard resize up.
-
--   **Offline Resizes**: Power down as the first "Prep-Resize" step.
-
-    This includes: Standard resize down.
-
-**NOTE**: Resizing is not available for workload-optimized Cloud
-Servers. For information on your available options, see [Changing the size of your workload-optimized Cloud Server](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
+Each Cloud Server is assigned a number of virtual
+CPUs based on the size of and flavor of the Cloud Server. 
 
 #### Can I buy extra storage?
 
@@ -434,22 +387,21 @@ any time with our [Cloud Block Storage](http://www.rackspace.com/cloud/blockstor
 
 ### Performance
 
-#### What is the difference between Standard and General Purpose Cloud Servers?
+#### What is the difference between Standard and Work-Optimized Cloud Servers?
 
-There are several noteworthy differences between Standard and General
-Purpose Cloud Servers:
+There are several noteworthy differences between Standard and Work-Optimized Cloud Servers:
 
--   General Purpose Cloud Servers use faster solid state drives (SSD)
+-   General Purpose and I/O Cloud Servers use faster solid state drives (SSD)
     compared to the standard spinning disk allocation for Standard
     Cloud Servers.
--   Up to 120 GB of RAM is available on General Purpose servers, whereas
+-   Memory and Compute servers require booting from a Cloud Block Storage volume, which can be SATA (mechanical) or SSD.
+-   Work-optimized Cloud Servers top out at 250 GB RAM (Memory flavor), whereas
     Standard Servers provide up to 30 GB of RAM.
--   You can have up to 32 vCPUs running on General Purpose Cloud
-    Servers, comapred to the maximum of 8 on the Standard Cloud Servers.
--   Maximum network bandwidth on Standard Cloud Servers is 300 Mbps
-    public network and 600 Mbps private network. Maximum network
-    bandwidth on General Purpose Cloud Servers is 10,000 Mbps to divide
-    between public and private networks as you choose.
+-   You can have up to 32 vCPUs running on work-optimized Cloud
+    Servers (Compute flavor), compared to a maximum of 8 vCPUs on the Standard Cloud Servers.
+-   Maximum throughput on Standard Cloud Servers is 300 Mbps
+    on the public network and 600 Mbps on ServiceNet or Cloud Networks. Maximum network
+    bandwidth on work-optimized flavors is 5,000 Mbps on the public network and 10,000 Mbps on ServiceNet or Cloud Networks.
 
 For more information about General Purpose Cloud Servers, see [What is new with General Purpose Cloud Servers](/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers).
 
@@ -611,10 +563,9 @@ The maximum limits are as follows:
 
 #### When a Cloud Server is deleted how is the data removed from the host server?
 
--   Cloud Servers use VHD storage. Once a server is
-    deleted the VHD is deleted, similar to the way you would do a rm
-    command in Linux. When that is done the VHD is completely removed
-    thus allowing another one to be created.
+-   Cloud Servers use VHD storage. When a Cloud Server is deleted,
+    the VHD file is securely deleted immediately. It is not possible
+    to recover a Cloud Server that has been deleted.
 
 ------------------------------------------------------------------------
 
