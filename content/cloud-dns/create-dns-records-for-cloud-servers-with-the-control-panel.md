@@ -5,8 +5,8 @@ title: Create DNS Records for cloud servers with the Control Panel
 type: article
 created_date: '2012-07-13'
 created_by: Rackspace Support
-last_modified_date: '2017-04-17'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-05-12'
+last_modified_by: Cat Lookabaugh
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -19,7 +19,12 @@ Control Panel.
 
 ### DNS servers for cloud servers
 
-Following are the DNS servers for your cloud servers:
+Following are the preferred DNS servers for your cloud server:
+
+-   ns.rackspace.com
+-   ns2.rackspace.com
+
+Following are the default DNS servers for your cloud servers:
 
 -   dns1.stabletransit.com
 -   dns2.stabletransit.com

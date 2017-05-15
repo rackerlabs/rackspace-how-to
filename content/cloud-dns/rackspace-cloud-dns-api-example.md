@@ -5,8 +5,8 @@ title: Rackspace Cloud DNS - API example
 type: article
 created_date: '2011-10-19'
 created_by: Rackspace Support
-last_modified_date: '2016-04-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-05-15'
+last_modified_by: Cat Lookabaugh
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -67,8 +67,8 @@ precedence.
         </nameservers>
         <recordsListtotalEntries="5">
             <record id="A-6822994" type="A" name="rtb0007.com" data="110.11.12.16"  ttl="86400" updated="2011-06-24T01:12:52Z" created="2011-06-24T01:12:52Z" />
-            <record id="NS-6251982" type="NS" name="rtb0007.com" data="dns1.stabletransit.com" ttl="3600" updated="2011-06-24T01:12:51Z"  created="2011-06-24T01:12:51Z" />
-            <record id="NS-6251983" type="NS" name="rtb0007.com" data="dns2.stabletransit.com" ttl="3600" updated="2011-06-24T01:12:51Z"  created="2011-06-24T01:12:51Z" />
+            <record id="NS-6251982" type="NS" name="rtb0007.com" data="ns.rackspace.com" ttl="3600" updated="2011-06-24T01:12:51Z"  created="2011-06-24T01:12:51Z" />
+            <record id="NS-6251983" type="NS" name="rtb0007.com" data="ns2.rackspace.com" ttl="3600" updated="2011-06-24T01:12:51Z"  created="2011-06-24T01:12:51Z" />
             <record id="MX-3151218" type="MX" name="rtb0007.com"  data="mail2.rtb0007.com" ttl="3600" priority="5" updated="2011-06-24T01:12:53Z" created="2011-06-24T01:12:53Z" />
             <record id="CNAME-9778009" type="CNAME" name="www.rtb0007.com"  data="rtb0007.com" ttl="5400" updated="2011-06-24T01:12:54Z"       created="2011-06-24T01:12:54Z" />
         </recordsList>

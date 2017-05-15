@@ -5,8 +5,8 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2017-03-03'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-05-12'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -48,7 +48,7 @@ for more information.
 
 #### What are the DNS servers for my Cloud Server?
 
-*dns1.stabletransit.com* and *dns2.stabletransit.com*
+*ns.rackspace.com* and *ns2.rackspace.com*
 
 #### How many domains can I host?
 
