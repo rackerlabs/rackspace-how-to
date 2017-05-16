@@ -15,11 +15,11 @@ This article describes how to publish new content to your Sitecore content manag
 
 ### Prerequisites
 
-- Know how to log in to your Sitecore content management website. The instructions are found in the "Sitecore Cloud management site" section in [Sitecore Cloud portals and account management](/how-to/sitecore-cloud-portals-and-account-management/)
+- Ability to log in to your Sitecore content management website. For instructions see the "Sitecore Cloud content management site" section in [Sitecore Cloud portals and account management](/how-to/sitecore-cloud-portals-and-account-management/)
 
-- Familiarity with [Deploying to Sitecore Cloud using FTP](/how-to/deploy-to-sitecore-cloud-using-ftp/). If your content includes changes that are dependent on any custom code, deploy your updated code before publishing any new content.
+- Familiarity with [deploying to Sitecore Cloud using FTP](/how-to/deploy-to-sitecore-cloud-using-ftp/). If your content includes changes that are depend on custom code, deploy your updated code before publishing new content.
 
-### Publish to Sitecore
+### Publish content to Sitecore
 
 1. Log in to your Sitecore content management site.
 
@@ -27,12 +27,12 @@ This article describes how to publish new content to your Sitecore content manag
 
     <img src="{% asset_path managed-operations/publish-content-to-sitecore/sitecore-dashboard.png %}" alt=""  />   
 
-3. Click on the Publish tab found at the top of the toolbar.
+3. In the navigation bar, click the **Publish** tab.
 
-4. In the tab, click the small arrow next to the word **Publish**. In the dropdown menu, select **Publish site**.
+4. On the tab, click the small arrow on the **Publish** button, and then select **Publish site**.
 
-    <img src="{% asset_path managed-operations/publish-content-to-sitecore/publish-dashboard.png %}" alt=""  /> 
+    <img src="{% asset_path managed-operations/publish-content-to-sitecore/publish-dashboard.png %}" alt=""  />
 
-5. Select **Publish Site** and select the publishing type. After you've selected the publishing type, click **Publish**.
+5. Select the publishing type, and the click **Publish**
 
-6. After publishing is complete, check both **Restart the Sitecore Client** and **Restart the Sitecore Server**, then click **close**.
+6. After publishing is complete, select both **Restart the Sitecore Client** and **Restart the Sitecore Server**, and then click **Close**.
