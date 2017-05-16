@@ -1,11 +1,11 @@
 ---
 permalink: publish-content-to-sitecore/
-audit_date:
+audit_date: '2015-05-16'
 title: Publish content to Sitecore
 type: article
 created_date: '2017-05-08'
 created_by: Juan Garza
-last_modified_date: '2017-05-08'
+last_modified_date: '2017-05-16'
 last_modified_by: Nate Archer
 product: Managed Operations
 product_url: managed-operations
