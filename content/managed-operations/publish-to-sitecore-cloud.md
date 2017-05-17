@@ -33,6 +33,12 @@ This article describes how to publish new content to your Sitecore content manag
 
     <img src="{% asset_path managed-operations/publish-content-to-sitecore/publish-dashboard.png %}" alt=""  />
 
-5. Select the publishing type, and the click **Publish**
+5. Select the publishing type, and the click **Publish**. You can choose from the following publishing types:
+
+   - Incremental publish - publish only changed items.
+   
+   - Smart publish - publish differences between source and target database.
+   
+   - Republish - Publish everything.
 
 6. After publishing is complete, select both **Restart the Sitecore Client** and **Restart the Sitecore Server**, and then click **Close**.
