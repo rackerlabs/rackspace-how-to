@@ -39,6 +39,6 @@ This article describes how to publish new content to your Sitecore content manag
    
    - Smart publish - publish differences between source and target database.
    
-   - Republish - Publish everything.
+   - Republish - publish everything.
 
 6. After publishing is complete, select both **Restart the Sitecore Client** and **Restart the Sitecore Server**, and then click **Close**.
