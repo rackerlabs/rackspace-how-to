@@ -15,7 +15,7 @@ This article describes how to publish new content to your Sitecore content manag
 
 ### Prerequisites
 
-- Ability to log in to your Sitecore content management website. For instructions see the "Sitecore Cloud content management site" section in [Sitecore Cloud portals and account management](/how-to/sitecore-cloud-portals-and-account-management/)
+- Ability to log in to your Sitecore content management website. For instructions, see the "Sitecore Cloud content management site" section in [Sitecore Cloud portals and account management](/how-to/sitecore-cloud-portals-and-account-management/)
 
 - Familiarity with [deploying to Sitecore Cloud using FTP](/how-to/deploy-to-sitecore-cloud-using-ftp/). If your content includes changes that depend on custom code, deploy your updated code before publishing new content.
 
@@ -33,7 +33,7 @@ This article describes how to publish new content to your Sitecore content manag
 
     <img src="{% asset_path managed-operations/publish-content-to-sitecore/publish-dashboard.png %}" alt=""  />
 
-5. Select the publishing type, and the click **Publish**. You can choose from the following publishing types:
+5. Select the publishing type, and then click **Publish**. You can choose from the following publishing types:
 
    - Incremental publish - publish only changed items.
    
