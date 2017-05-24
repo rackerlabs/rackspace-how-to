@@ -45,7 +45,8 @@ Spam definitions change rapidly. However, there are measure you can take to prev
 - Ask your frequent recipients to add your domain to their Safelist/Whitlist to ensure your messages are delivered to their Inbox. [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
 - Ask your frequent recipients to “unflag” or mark messages from you in their spam folder as “not spam”. This is the most effective method for improving the spam reputation of your sending domain.
 
-*Note: Outbound messages are likely being scanned by your recipient's mail provider as well. Each provider has their own policies for filtering spam.*
+
+*Note: Outbound messages are likely being scanned by the recipient's mail provider. Each provider has their own policies for filtering spam.*
 
 The filtering system does not only apply to the “sophisticated spammer”. This system scans all incoming and outgoing traffic regardless of sender or intent. The links above explain how to prevent your outbound messages from being caught in the net alongside those purposefully sending spam.
 Note: Filters cannot determine intent so they must use content and behavior as their point of reference when flagging messages as spam. Our filters will only flag message content that has been deemed as spam by the whole of the internet community.
@@ -57,8 +58,11 @@ The spam filtering system described above scans all incoming messages. The filte
 - Always “unflag” or mark legitimate messages  as “Not Spam”. This is the most effective method for improving the spam reputation of the sender and is a long term solution.
 - Advise the sender that they are being flagged as spam and provide them with [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)
 - Add the sender to your Safelist [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
+*Warning: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
+- Rackspace Cloud Office will not forward any message that is flagged as spam, regardless of it is safelisted. Forwarding spam adversely impacts deliverability for all of our customers.
+*Warning: If the message is sent to an Alias, Contact, Grouplist, or Distribution List, it is considered to be forwarded and will not deliver if the message is flagged as spam.*
 
-*Note: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
+
 
 #### Acceptable Use Policy
 Please reference this link [Acceptable Use Policy](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553) as well as our [Mail Terms](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553) for any questions you may have about properly utilizing your Rackspace Cloud Office hosted email solution.
