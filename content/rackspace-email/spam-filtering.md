@@ -16,9 +16,13 @@ product_url: rackspace-email
 ## Overview
 Explanation of our spam filtering systems as well as how to work with these filters.
 
-[Spam Filtering](#spam-filtering)
-[Outbound Messages](#outbound-messages)
-[Inbound Messages](#inbound-messages)
+[**Spam Filtering**](#spam-filtering)
+
+[**Outbound Messages**](#outbound-messages)
+
+[**Inbound Messages**](#inbound-messages)
+
+[**Acceptable Use Policy**](#acceptable-use-policy)
 
 
 
@@ -34,22 +38,27 @@ Today, over 95% of all e-mail traffic on the Internet is spam. Spammers have gro
 
 #### Outbound messages
 Outbound messages are subject to the same filtering process as incoming messages. This protects deliverability for all users on the Rackspace Cloud Office environment.
-If you are concerned that your outbound messages are spam, please reference the support material that best describes your business need.
-- Are you having problems sending to many recipients? (best prac for many link)
-- Do your personal emails to business contacts or colleagues arrive in their spam/junk folder? (best pract per to per link)
-- Ask your frequent recipients to add your domain to their Safelist/Whitlist to ensure your messages are delivered to their inbox
-- Ask your frequent recipients to “unflag” or mark any messages from you in their spam folder as “not spam”
+Spam definitions change rapidly. However, there are measure you can take to prevent your message from becoming spam:
 
+- Are you having problems sending to many recipients? [Best practices for sending emails to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients/)
+- Do your personal emails to business contacts or colleagues arrive in their spam/junk folder? [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)
+- Ask your frequent recipients to add your domain to their Safelist/Whitlist to ensure your messages are delivered to their Inbox. [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
+- Ask your frequent recipients to “unflag” or mark messages from you in their spam folder as “not spam”. This is the most effective method for improving the spam reputation of your sending domain.
+
+*Note: Outbound messages are likely being scanned by your recipient's mail provider as well. Each provider has their own policies for filtering spam.*
 
 The filtering system does not only apply to the “sophisticated spammer”. This system scans all incoming and outgoing traffic regardless of sender or intent. The links above explain how to prevent your outbound messages from being caught in the net alongside those purposefully sending spam.
 Note: Filters cannot determine intent so they must use content and behavior as their point of reference when flagging messages as spam. Our filters will only flag message content that has been deemed as spam by the whole of the internet community.
 
 
 #### Inbound Messages
-The spam filtering system described above scans all incoming messages. When items that are unwanted are flagged as spam the filter is performing as expected. Here is what you can do if messages you consider legitimate are flagged as spam.
-- Always “unflag” legitimate messages or mark as “Not Spam”. This is the most effective method    for improving the spam reputation of the sender and is a long term solution.
-- Advise the sender that they are being flagged as spam and provide them with ( best pract link)
-- Add the sender to you Safelist (how-to safelist link)
+The spam filtering system described above scans all incoming messages. The filtering system is working as intended when flagging unwanted messages as spam.  Follow these recommendations when a legitimate message is flagged as spam:
 
+- Always “unflag” or mark legitimate messages  as “Not Spam”. This is the most effective method for improving the spam reputation of the sender and is a long term solution.
+- Advise the sender that they are being flagged as spam and provide them with [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)
+- Add the sender to your Safelist [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
 
-*Note: Safelisting does not remove a spam flag. It ensure that the message will be delivered to your Inbox.*
+*Note: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
+
+#### Acceptable Use Policy
+Please reference this link [Acceptable Use Policy](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553) as well as our [Mail Terms](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553) for any questions you may have about properly utilizing your Rackspace Cloud Office hosted email solution.
