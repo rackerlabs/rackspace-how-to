@@ -11,18 +11,26 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 Applies to: User or Administrator
+
 Difficulty: Challenging
+
 Time needed: Undetermined
-Tools required: Access to mailbox
+
+Tools required: Access to your email
 
 
-## Verify email delivery 
+## Verify email delivery
 
 ## Overview
 Emails do not deliver for a variety of reasons. If you are not sure if an email reached it’s  intended recipient or an email sent to you is missing, there are steps you can take to narrow down what may have happened to the message.
 
+
 [**Incoming message delivery**](#incoming-message-delivery)
+
 [**Outgoing message delivery**](#outgoing-message-delivery)
+
+
+
 
 #### Incoming message delivery
 If you expected to receive a message that never arrived, try the following steps:
@@ -30,7 +38,7 @@ If you expected to receive a message that never arrived, try the following steps
 -	Does your mailbox have any rules or filters applied?
 -	Check your Spam/Junk/Trash folders.
 -	Check your recover deleted items folder	.
---	Log into apps.rackspace.com > Place your cursor over “Trash” or “Deleted Items” > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
+  +	Log into apps.rackspace.com > Place your cursor over “Trash” or “Deleted Items” > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
 - Allow ample time to ensure there is not a message delay
 -	Did the recipient receive a bounce message? If so, reference (link to bounces) for possible solutions.
 -	Did the recipient send to an Alias, Contact, Group List, or Distribution List? If so these addresses will not forward any message flagged as spam.
