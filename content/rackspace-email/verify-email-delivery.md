@@ -35,11 +35,12 @@ If you expected to receive a message that never arrived, try the following steps
 -	Check your Spam/Junk/Trash folders.
 -	Check your recover deleted items folder	.
 
-    - Log into apps.rackspace.com > Place your cursor over “Trash” or “Deleted Items” > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
+    - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” or “Deleted Items” > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
 
 - Allow ample time to ensure there is not a message delay
--	Did the recipient receive a bounce message? If so, reference (link to bounces) for possible solutions.
--	Did the recipient send to an Alias, Contact, Group List, or Distribution List? If so these addresses will not forward any message flagged as spam.
+-	Did the sender receive a bounce message? If so, reference [Common Email Bounces](how-to/common-email-bounces/) for possible solutions.
+-	Was the message sent to an Alias, Contact, Group List, or Distribution List? If so these addresses will not forward any message flagged as spam.
+- If the mailbox the message is addressed to has a forward in place, the message will not forward if it is flagged as spam.
 
 #### Outgoing message delivery
 -	Did you receive a bounce message? If so, reference (link to bounces) for possible solutions.
