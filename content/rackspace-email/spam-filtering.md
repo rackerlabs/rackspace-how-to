@@ -54,4 +54,5 @@ The filtering system is working as intended when flagging unwanted incoming mess
 
 
 #### References
-Please reference this link [Acceptable Use Policy]- (https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553) as well as our [Mail Terms]- [Rackspace Cloud Office Mail Terms](https://www.rackspace.com/information/legal/mailterms) for any questions you may have about properly utilizing your Rackspace Cloud Office hosted email solution.
+- [Acceptable Use Policy](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553)
+- [Rackspace Cloud Office Mail Terms](https://www.rackspace.com/information/legal/mailterms) 
