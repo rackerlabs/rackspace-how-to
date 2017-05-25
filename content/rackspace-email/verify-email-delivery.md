@@ -19,10 +19,10 @@ Time needed: Undetermined
 Tools required: Access to your email
 
 
-## Verify email delivery
+### Verify email delivery
 
 
-## Overview
+#### Overview
 Emails do not deliver for a variety of reasons. If you are not sure if an email reached it’s  intended recipient or an email sent to you is missing, there are steps you can take to narrow down what may have happened to the message.
 
 
