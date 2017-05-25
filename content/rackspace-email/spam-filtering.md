@@ -60,7 +60,7 @@ The spam filtering system described above scans all incoming messages. The filte
 - Add the sender to your Safelist [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
 *Warning: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
 - Rackspace Cloud Office will not forward any message that is flagged as spam, regardless of it is safelisted. Forwarding spam adversely impacts deliverability for all of our customers.
-*Warning: If the message is sent to an Alias, Contact, Grouplist, or Distribution List, it is considered to be forwarded and will not deliver if the message is flagged as spam.*
+*Warning: If the message is sent to an Alias, Contact, Group List, or Distribution List, it is considered to be forwarded and will not deliver if the message is flagged as spam.*
 
 
 
