@@ -9,6 +9,7 @@ last_modified_date: '2016-01-21'
 last_modified_by: Margaret Eker
 product: Cloud Big Data
 product_url: cloud-big-data
+noindex: true
 ---
 
 [Tableau Desktop](http://www.tableau.com/products/desktop) is data analytics software that helps deliver business insights from a variety of data sources.  One of the fastest-growing sources is "Big Data", which are data sets so large that they are difficult or impossible to make sense of without specialized tools.  Tableau Desktop, which is typically installed on your laptop or workstation, comes with the ability to access [Apache Hive](https://hive.apache.org), a relational database that provides access to extremely large data sets using a familiar SQL interface.  Rackspace offers a [Cloud Big Data](http://www.rackspace.com/en-us/cloud/big-data) service, which makes it quick and easy to create a cluster of servers that comes pre-installed and configured with many common Big Data software, including Hive.
