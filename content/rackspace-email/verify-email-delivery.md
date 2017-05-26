@@ -10,13 +10,13 @@ last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
-Applies to: User or Administrator
+**Applies to:** User or Administrator
 
-Difficulty: Challenging
+**Difficulty:** Challenging
 
-Time needed: Undetermined
+**Time needed:** Approximately 1 hour
 
-Tools required: Access to your email
+**Tools required:** Access to your email
 
 
 ### Verify email delivery
@@ -30,12 +30,15 @@ Emails do not deliver for a variety of reasons. If you are not sure if an email 
 
 #### Incoming message delivery
 If you expected to receive a message that never arrived, try the following steps:
--	Perform a search on your mailbox. Using your mailbox’s search function will discover a message that was hiding in a sub-folder.
--	Does your mailbox have any rules or filters applied?
+-	Perform a search on your mailbox.
+    - Using your mailbox’s search function will discover a message that could be hiding in a sub-folder.
+-	Does your mailbox have rules or filters applied?
+    - Rules and filters can inadvertently move or even delete messages.
 -	Check your Spam/Junk/Trash folders.
+    - Searching your inbox should uncover messages lurking in these folders. It is best practice to manually check them even if a search does not show the messages in these folders.
 -	Check your recover deleted items folder	.
 
-    - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” or “Deleted Items” > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
+    - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder. Detailed instructions
 
 - Allow ample time to ensure there is not a message delay
 -	Did the sender receive a bounce message? If so, reference [Common Email Bounces](how-to/common-email-bounces/) for possible solutions.
