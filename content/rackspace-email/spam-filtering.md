@@ -10,16 +10,16 @@ last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
-**Applies to:** User and Administrator
+
+This article explains our spam filtering systems.
+
+### Prerequisites
+**Applies to:** - Administrators and Users
 
 
-## Overview
-Explanation of our spam filtering systems as well as how to work with these filters.
 
-
-#### Spam Filtering
+### Spam Filtering
 Today, over 95% of all e-mail traffic on the Internet is spam. Spammers have grown increasingly sophisticated, using innovative methods to trick spam filters and penetrate email inboxes. To prevent harm coming to your users, we utilize a robust filtering system.
-
 
 The filtering system does not only apply to the “sophisticated spammer”. This system scans all incoming and outgoing traffic regardless of sender or intent. The links above explain how to prevent your outbound messages from being caught in the net alongside those purposefully sending spam. Filters cannot determine intent so they must use content and behavior as their point of reference when flagging messages as spam. Our filters will only flag message content that has been deemed as spam by the whole of the internet community.
 
@@ -31,9 +31,9 @@ The filtering system does not only apply to the “sophisticated spammer”. Thi
 
 #### Outbound messages
 Filtering outbound email protects deliverability for all users on the Rackspace Cloud Office environment.
-Spam definitions change rapidly. However, there are measure you can take to prevent your message from becoming spam:
+Spam definitions change rapidly. However, there are measures you can take to prevent your message from becoming spam:
 
-- Are you having problems sending to many recipients? [Best practices for sending emails to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients/)
+- Are you having issues sending transactional, promotional, or marketing emails? [Best practices for sending emails to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients/)
 - Do your personal emails to business contacts or colleagues arrive in their spam or junk folder? [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)
 - Ask your frequent recipients to add your domain to their Safelist or Whitelist to ensure your messages are delivered to their Inbox. [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
 - Ask your frequent recipients to “unflag” or mark messages from you in their spam folder as “not spam”. This is the most effective method for improving the spam reputation of your sending domain.
@@ -47,12 +47,14 @@ The filtering system is working as intended when flagging unwanted incoming mess
 - Always “unflag” or mark legitimate messages  as “Not Spam”. This is the most effective method for improving the spam reputation of the sender and is a long term solution.
 - Advise the sender that they are being flagged as spam and provide them with [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)
 - Add the sender to your Safelist [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
-*Warning: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
+
+    *Warning: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
 - Rackspace Cloud Office will not forward any message that is flagged as spam, regardless of it is safelisted. Forwarding spam adversely impacts deliverability for all of our customers.
-*Warning: If the message is sent to an Alias, Contact, Group List, or Distribution List, it is considered to be forwarded and will not deliver if the message is flagged as spam.*
+
+    *Warning: If the message is sent to an Alias, Contact, Group List, or Distribution List, it is considered to be forwarded and will not deliver if the message is flagged as spam.*
 
 
 
 #### References
 - [Acceptable Use Policy](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553)
-- [Rackspace Cloud Office Mail Terms](https://www.rackspace.com/information/legal/mailterms) 
+- [Rackspace Cloud Office Mail Terms](https://www.rackspace.com/information/legal/mailterms)
