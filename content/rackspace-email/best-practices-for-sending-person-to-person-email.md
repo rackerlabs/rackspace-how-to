@@ -3,99 +3,76 @@ permalink: best-practices-for-sending-person-to-person-email/
 audit_date:
 title: Best practices for sending person-to-person email
 type: article
-created_date: '2015-02-11'
+created_date: '2017-05-17'
 created_by: Beau Bailey
-last_modified_date: '2015-12-22'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-05-23'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Sending person-to-person email is an integral part of our daily
-activities, but it's getting harder to ensure that the mail you send
-gets to the Inbox of the people you intended. Stricter and more
-sophisticated spam filters flag more email than ever as spam. To ensure
-your person-to-person emails reach their destination, Rackspace and the
-mail industry recommend some simple guidelines.
+**Applies to:** User
 
-The following sections provide our recommended best practices for
-sending legitimate person-to-person mail through the Rackspace mail
-system. Most reputable mail providers give their own recommendations,
-and we encourage you to read those as well.
+## Overview
+This article provides recommendations to avoid having legitimate messages flagged as spam. If you require recommendations for sending email to many recipients reference [Best practices for sending email to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients/)
+If you have received a bounce message when sending an email, please reference our list of [Common email bounces](/how-to/common-email-bounces/) for more information.
 
-### Message format
+## Best practices for sending person-to-person email
+Stricter and more sophisticated spam filters, flag more email as spam than ever. To ensure your person-to-person emails reach their destination, Rackspace and the email industry recommend some simple guidelines.
+The following sections provide our recommended best practices for sending legitimate person-to-person email through the Rackspace mail system. Most reputable mail providers give their own recommendations, and we encourage you to read those as well.
 
--   Use a reputable and well-known email client to ensure that the email
-    you send is correctly constructed and communicated. Features like
-    providing HTML and text versions of the message content, correctly
-    constructed and formatted email headers, and adherence to
-    specifications for sending email (SMTP) are fundamental to sending
-    good mail.
--   Make your message's layout as simple as possible. Avoid complex
-    formatting, overly elaborate layouts, and multiple images. This
-    recommendation is especially important if you use HTML content
-    programs like Microsoft Publisher to create your content. These
-    programs create complex HTML and styles.
--   If you are sending HTML email, ensure that it's properly constructed.
-    Items like missing or empty tags, poor formatting, and non-standard
-    conventions are spam indicators.
--   Also, do not use invisible web-based tracking tools in your emails.
--   Don't insert active components (such as JavaScript, ActiveX,
-    and plug-ins) in your message. If you need rich media content, link
-    to a media-rich page on your website.
 
-### Links
+[**Message format**](#message-format)
 
--   Do not use links that contain IP addresses. All reputable sites on
-    the Internet use domain names to identify themselves. Using IP
-    addresses is a trigger for spam filters.
--   If you link to other companies' sites in your message content,
-    ensure that they are reputable sites. If you provide links to
-    disreputable sites in your message content, your email will likely
-    be marked as spam.
--   Be careful about using shortened URLs in your message content.
-    Shortened URLs are often used by spammers to mask the destination of
-    the link, and spam filters often flag messages with shortened URLs
-    as spam.
+[**Links**](#links)
 
-### Word choice
+[**Word choice**](#word-choice)
 
--   Pay particular attention to your subject line. Avoid the following
-    common spam triggers:
-    -   Punctuation (especially exclamation points and question marks)
-    -   Capitalization of all letters
-    -   Words such as *urgent*, *free*, and *guaranteed*
-    -   Spaces between every letter in a word, such as *H e l l o*
--   Use personalized greetings and salutations. For example, use *Hey
-    Bob* instead of *Hey* or *To Whom It May Concern*. Generic
-    salutations make your content more likely to appear as unsolicited
-    mail to spam filters.
--   Don't include a disclaimer that your email isn't spam, and don't
-    claim compliance with some legal criteria. Good mail does not need
-    to advertise compliance because it *is* compliant.
--   Use normal conversational language. Message content that is rigid or
-    follows a consistent limited verbiage can appear like
-    computer-generated (or translated) content, which is often flagged
-    as spam.
--   Avoid using symbols for letters in words. Spellings like *str@nge* and *g00gle* in your emails often classify the emails
-    as spam.
--   Do not overtly reference topics that are highly recognized in spam.
-    For example, Rolex watches, Viagra, sexual innuendo, drugs, and
-    financial schemes are easily recognizable as topics contained
-    in spam. An email that mentions topics typically considered spam
-    will most likely cause your email to be considered spam, even if the
-    intent of the message is legitimate.
+[**Attachments**](#attachments)
 
-### Attachments
+[**Acceptable Use Policy**](#acceptable-use-policy)
 
--   It is becoming preferable to avoid attaching files to your messages.
-    Most cloud file sites (such as Box.com, Microsoft OneDrive, and
-    Google Docs) now offer shareable links to files that you can provide
-    in your email. Because attachments are a common way of distributing
-    viruses (especially for Windows users), filters are becoming
-    increasingly strict about attachments. Blocking zip file attachments
-    is a common example of this.
--   If you do send attachments, ensure that they are named correctly and
-    that the spelling is correct. Also, chose an attachment name that is
-    simple and specific to the nature of the attachment. Oddly named or
-    spelled attachments are a common way of transporting viruses.
+
+
+
+#### Message format
+-	Make your message layout as simple as possible. Avoid complex formatting, elaborate layouts, and multiple images.
+  This recommendation is especially important if you use HTML content programs like Microsoft Publisher to create your  content. These programs create complex HTML and styles.
+-	If sending HTML email, ensure that it is properly constructed. Items like missing or empty tags, poor formatting, and     non-standard conventions are spam indicators.
+-	Do not use invisible web-based tracking tools in your emails.
+-	Do not insert active components (such as JavaScript, ActiveX, and plug-ins) in your message. If you need rich media content, link to a media-rich page on your website.
+-	Use a mail client with features like providing HTML and text versions of the message content, correctly constructed and formatted email headers, and adherence to specifications for sending email are fundamental to sending good mail.
+
+
+#### Links
+-	Do not use links that contain IP addresses. All reputable sites on the Internet use domain names to identify themselves. Using IP addresses is a trigger for spam filters.
+-	If you link to other companies’ sites in your message content, ensure that they are reputable sites. Providing links to disreputable sites in your message content will cause your email to be marked as spam.
+-	Spammers use abbreviated URLs to mask the destination of the link, causing spam filters to flag messages with shortened URLs as spam.
+Note: The reputation of sites or companies referenced in your email is determined by the whole of the internet community.
+
+
+#### Word choice
+-	Avoid the following spam triggers:
+
+    o	Punctuation (especially exclamation points (!) and question marks(?))
+
+    o	Capitalization of all letters (**LIKE THIS**)
+
+    o	Words such as urgent, free, and guaranteed
+
+    o	Spaces between every letter in a word, such as H e l l o
+
+-	Use personalized greetings and salutations. For example, “Hey Bob” instead of “Hey” or “To Whom It May Concern”. Generic greetings make your content more likely to appear as unsolicited mail to spam filters.
+-	Do not include a disclaimer that your email is not spam, and do not claim compliance with some legal criteria. Legitimate email does not need to advertise compliance.
+-	Use conversational language. Message content that follows a consistent limited verbiage or template will appear to be computer-generated content, and will be flagged as spam.
+-	Spellings like “str@nge” or “g00gle” in your emails will classify the emails as spam.
+-	Do not overtly reference topics that are highly recognized in spam. For example, highly recognized brands, medications, sexual innuendo, drugs, and financial schemes are easily recognizable as topics contained in spam. An email that mentions topics considered spam will cause your email to be marked as spam, even if the intent of the message is legitimate.
+
+
+#### Attachments
+-	It is now preferable to avoid attaching files to your messages. Cloud file services such as [Microsoft OneDrive with Rackspace](https://www.rackspace.com/office-365) now offer shareable links to files that you can provide in your email. Attachments are a common way of distributing viruses, making filters increasingly strict about attachments. Blocking zip file attachments is a prolific example of this.
+-	If you send attachments, ensure the spelling is correct and the attachment named correctly. Also, chose an attachment name that is simple and specific. Oddly named or spelled attachments are a common way of transporting viruses.
+
+
+#### Acceptable Use Policy
+Please reference this link [Acceptable Use Policy](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553) as well as our [Mail Terms](https://www.rackspace.com/information/legal/aup?_ga=2.75345873.298003222.1495221511-62538955.1439921553) for any questions you may have about properly utilizing your Rackspace Cloud Office hosted email solution.
