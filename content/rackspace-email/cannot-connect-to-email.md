@@ -16,7 +16,7 @@ product_url: rackspace-email
 
 **Time needed:** Approximately 1 hour
 
-**Tools required:** Access to offending device, Online email access, access to a non-primary computer, access to a non-primary internet network
+**Tools required:** Access to offending device, online email access, access to a non-primary computer, access to a non-primary internet network
 
 
 ### Cannot Connect to Email
@@ -48,4 +48,4 @@ To solve for being unable to connect to your mailbox, the recommendations will s
 - Are you able to connect to your mailbox using a different internet connection?
     - If you are able to connect to your mailbox using a different internet network, the issue may reside with the offending internet network. In this case you will want to contact your network administrator or your internet service provider for further instructions.
 
-Being unable to connect to your mailbox is a an issue that can be challenging to identify because of the multitude of possibilities. If these recommendations do not narrow down those possibilities please contact your administrator for further direction. 
+Being unable to connect to your mailbox is an issue that can be challenging to identify because of the multitude of possibilities. If these recommendations do not narrow down those possibilities please contact your administrator for further direction.
