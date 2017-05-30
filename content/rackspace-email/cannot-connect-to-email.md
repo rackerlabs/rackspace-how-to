@@ -1,5 +1,5 @@
 ---
-permalink: cannot-to-email/
+permalink: cannot-connect-to-email/
 audit_date:
 title: Cannot Connect to Email
 type: article
@@ -10,23 +10,24 @@ last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
-**Applies to:** User
+This article provides troubleshooting recommendations in the event that your local email client cannot make a connection to your mailbox.
 
-**Difficulty:** Challenging
+### Prerequisites
 
-**Time needed:** Approximately 1 hour
+- **Applies to:** User
 
-**Tools required:** Access to offending device, online email access, access to a non-primary computer, access to a non-primary internet network
+- **Difficulty:** Challenging
 
+- **Time needed:** Approximately 1 hour
+
+- **Tools required:** Access to offending device, online email access, access to a non-primary computer, access to a non-primary internet network
+
+See [Cloud Office Terms](/how-to/cloud-office-terms/) for definitions of the above criteria.  
 
 ### Cannot Connect to Email
 
-
-#### Overview
-
 The topic of mailbox connectivity is broad. It is best to take a methodical approach to troubleshooting this issue, ruling out one possibility at a time.
 
-To solve for being unable to connect to your mailbox, the recommendations will start large and become more targeted as you get closer to discovering the underlying issue.
 - Are you able to log into [apps.rackspace.com](apps.rackspace.com)?
     - It is important that you log into the online version of your mailbox to verify that it is still receiving email. This is a good indication that the mailbox itself is functioning properly.
 
@@ -49,3 +50,10 @@ To solve for being unable to connect to your mailbox, the recommendations will s
     - If you are able to connect to your mailbox using a different internet network, the issue may reside with the offending internet network. In this case you will want to contact your network administrator or your internet service provider for further instructions.
 
 Being unable to connect to your mailbox is an issue that can be challenging to identify because of the multitude of possibilities. If these recommendations do not narrow down those possibilities please contact your administrator for further direction.
+
+### References
+
+[Cloud Office Terms](/how-to/cloud-office-terms/)
+[Cloud Office email login portal](apps.rackspace.com)
+[Email Help Tool](emailhelp.rackspace.com)
+[Set up DNS Records for Cloud Office email]((/how-to/set-up-dns-records-for-cloud-office-email/))
