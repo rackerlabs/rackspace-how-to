@@ -76,7 +76,7 @@ If you expected to receive a message that never arrived, try the following steps
 ### References
 
 [Cloud Office Terms](/how-to/cloud-office-terms/)
-[Cloud Office email login portal](apps.rackspace.com)
+[Cloud Office Email Portal](apps.rackspace.com)
 [Email Help Tool](emailhelp.rackspace.com)
 [Common Email Bounce](/how-to/common-email-bounces/)
 [Cannot Connect to Email](/how-to/cannot-connect-to-email/)
