@@ -49,7 +49,16 @@ If you expected to receive a message that never arrived, try the following steps
 
 - If the mailbox the message is addressed to has a forward in place, the message will not forward if it is flagged as spam.
 
-    *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with [DNS setup link]*
+    *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
+
+- Have you recently migrated from another provider?
+
+    - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server. For example if you are using a version of Outlook to access your email, you will want to create a new profile that connects to your new mailbox at Rackspace. Instructions for configuring your mail client to connect with your recently migrated mailbox can be found by logging in at [emailhelp.rackspace.com](emailhelp.rackspace.com).
+
+- Have you upgraded your mailboxes at Rackspace Cloud Office recently?
+
+    - When you upgrade your mailbox, it is possible your mailbox has actually been created again on another sever. For example if you upgrade a mailbox from Exchange 2007 to Exchange 2016, your data is migrated from the Exchange 2007 mailbox, to a new mailbox on Exchange 2016. This means that you will need to configure your local mail client to connect to the mailbox on the new server. Please log into [emailhelp.rackspace.com](emailhelp.rackspace.com) for instructions for configuring your mail client after upgrading.
+
 
 
 #### Outgoing message delivery
