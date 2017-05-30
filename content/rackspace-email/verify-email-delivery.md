@@ -30,20 +30,20 @@ Emails do not deliver for a variety of reasons. If you are not sure if an email 
 
 #### Incoming message delivery
 If you expected to receive a message that never arrived, try the following steps:
-- Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox. If you see the message online, but not in your local mail client(Ex. Outlook) please reference [link to connectivity]
+- Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox. If you see the message online, but not in your local mail client(Ex. Outlook) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections. 
 -	Perform a search on your mailbox.
     - Using your mailbox’s search function will discover a message that could be hiding in a sub-folder.
 -	Does your mailbox have rules or filters applied?
     - Rules and filters can inadvertently move or even delete messages.
 -	Check your Spam/Junk/Trash folders.
     - Searching your inbox should uncover messages lurking in these folders. It is best practice to manually check them even if a search does not show the messages in these folders.
--	Check your recover deleted items folder	.
+-	Check your recover deleted items folder.
 
     - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder. Detailed instructions
 
 - Allow ample time to ensure there is not a message delay.
 -	Did the sender receive a bounce message? If so, reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
--	Was the message sent to an Alias, Contact, Group List, or Distribution List? If so these addresses will not forward any message flagged as spam.
+-	Was the message sent to an Alias, Contact, Group List, or Distribution List? If so, these addresses will not forward any message flagged as spam.
 
     *Note: Adding the sending address to your Safelist will not correct this issue. There is no configuration that will allow spam to be forwarded.*
 
@@ -66,7 +66,7 @@ If you expected to receive a message that never arrived, try the following steps
 -	If you are sending from a desktop mail client such as Outlook, is the message in Drafts or the Outbox? If so, attempt resending the message.
 - If you are sending to a contact, try manually entering the email address and sending again. If this is successful, verify that the contact information is correct.
 -	Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.
-    - If you can successfully send a message online, but not from a desktop mail client you can verify your settings are correct in the [Email Help Tool](emailhelp.rackspace.com).  
+    - If you can successfully send a message online, but not from a desktop mail client you can verify your settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
 -	Try sending the message from a computer connected to a different internet network such as your home, or a different office building.
 -	Verify with the recipient that your message was not stored in one of their sub-folders.
--	Verify with the recipient that your message was not marked as spam. If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)to prevent this in the future.
+-	Verify with the recipient that your message was not marked as spam. If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
