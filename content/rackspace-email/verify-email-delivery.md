@@ -5,32 +5,33 @@ title: Verify Email Delivery
 type: article
 created_date: '2017-05-25'
 created_by: William Loy
-last_modified_date: '2017-05-25'
+last_modified_date: '2017-05-29'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
-**Applies to:** User
+This article provides troubleshooting recommendations in the event that an incoming or outgoing message may not have delivered.
 
-**Difficulty:** Challenging
+### Prerequisites
+- **Applies to:** User
 
-**Time needed:** Approximately 1 hour
+- **Difficulty:** Challenging
 
-**Tools required:** Online email access
+- **Time needed:** Approximately 1 hour
+
+- **Tools required:** Online email access
+
+See [Cloud Office Terms](/how-to/cloud-office-terms/) for definitions of the above criteria.  
 
 
 ### Verify email delivery
 
-
-#### Overview
 Emails do not deliver for a variety of reasons. If you are not sure if an email reached it’s  intended recipient or an email sent to you is missing, there are steps you can take to narrow down what may have happened to the message.
-
-
 
 
 #### Incoming message delivery
 If you expected to receive a message that never arrived, try the following steps:
-- Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox. If you see the message online, but not in your local mail client(Ex. Outlook) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections. 
+- Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox. If you see the message online, but not in your local mail client(Ex. Outlook) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections.
 -	Perform a search on your mailbox.
     - Using your mailbox’s search function will discover a message that could be hiding in a sub-folder.
 -	Does your mailbox have rules or filters applied?
@@ -70,3 +71,12 @@ If you expected to receive a message that never arrived, try the following steps
 -	Try sending the message from a computer connected to a different internet network such as your home, or a different office building.
 -	Verify with the recipient that your message was not stored in one of their sub-folders.
 -	Verify with the recipient that your message was not marked as spam. If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
+
+
+### References
+
+[Cloud Office Terms](/how-to/cloud-office-terms/)
+[Cloud Office email login portal](apps.rackspace.com)
+[Email Help Tool](emailhelp.rackspace.com)
+[Common Email Bounce](/how-to/common-email-bounces/)
+[Cannot Connect to Email](/how-to/cannot-connect-to-email/)
