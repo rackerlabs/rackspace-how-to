@@ -54,6 +54,9 @@ Being unable to connect to your mailbox is an issue that can be challenging to i
 ### References
 
 [Cloud Office Terms](/how-to/cloud-office-terms/)
+
 [Cloud Office email login portal](apps.rackspace.com)
+
 [Email Help Tool](emailhelp.rackspace.com)
+
 [Set up DNS Records for Cloud Office email]((/how-to/set-up-dns-records-for-cloud-office-email/))
