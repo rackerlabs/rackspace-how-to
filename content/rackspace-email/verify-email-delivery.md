@@ -5,7 +5,7 @@ title: Verify Email Delivery
 type: article
 created_date: '2017-05-25'
 created_by: William Loy
-last_modified_date: '2017-05-29'
+last_modified_date: '2017-05-31'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -26,12 +26,15 @@ See [Cloud Office Terms](/how-to/cloud-office-terms/) for definitions of the abo
 
 ### Verify email delivery
 
-Emails do not deliver for a variety of reasons. If you are not sure if an email reached it’s  intended recipient or an email sent to you is missing, there are steps you can take to narrow down what may have happened to the message.
+Emails do not deliver for a variety of reasons. In the event that an incoming or outgoing message was not delivered try these steps to narrow down what might have happened to the message.
 
 
 #### Incoming message delivery
-If you expected to receive a message that never arrived, try the following steps:
-- Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox. If you see the message online, but not in your local mail client(Ex. Outlook) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections.
+If an incoming message never arrived, try the following steps:
+- Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox. If you see the message online, but not in your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections.
+
+*Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
+
 -	Perform a search on your mailbox.
     - Using your mailbox’s search function will discover a message that could be hiding in a sub-folder.
 -	Does your mailbox have rules or filters applied?
@@ -49,8 +52,6 @@ If you expected to receive a message that never arrived, try the following steps
     *Note: Adding the sending address to your Safelist will not correct this issue. There is no configuration that will allow spam to be forwarded.*
 
 - If the mailbox the message is addressed to has a forward in place, the message will not forward if it is flagged as spam.
-
-    *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
 - Have you recently migrated from another provider?
 
