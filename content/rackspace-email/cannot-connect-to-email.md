@@ -32,10 +32,12 @@ The topic of mailbox connectivity is broad. It is best to take a methodical appr
     - It is important that you log into the online version of your mailbox to verify that it is still receiving email. This is a good indication that the mailbox itself is functioning properly.
 
 2. **When did the issue start?**
-    - An event that took place around the same time could have caused the problem. If an event comes to mind, verify that nothing about event could have caused email connectivity problems.  
+    - An event that took place around the same time could have caused the problem.
+    *Example: Changes have been made to your office or home network.*   
 
 3. **Have you recently migrated from another provider?**
-    - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server. For example if you are using a version of Outlook to access your email, you will want to create a new profile that connects to your new mailbox at Rackspace. Instructions for configuring your mail client to connect with your recently migrated mailbox can be found at [emailhelp.rackspace.com](emailhelp.rackspace.com).
+    - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server. 
+    *Example: if you are using a version of Outlook to access your email, you will want to create a new profile that connects to your new mailbox at Rackspace. Instructions for configuring your mail client to connect with your recently migrated mailbox can be found at [emailhelp.rackspace.com](emailhelp.rackspace.com).*
 
 4. **Have you upgraded your mailboxes at Rackspace Cloud Office?**
     - When you upgrade your mailbox, it is possible your mailbox has actually been created again on another sever. For example if you upgrade a mailbox from Exchange 2007 to Exchange 2016, your data is migrated from the Exchange 2007 mailbox, to a new mailbox on Exchange 2016. This means that you will need to configure your local mail client to connect to the mailbox on the new server. Please visit [emailhelp.rackspace.com](emailhelp.rackspace.com) for instructions for configuring your mail client after upgrading.
