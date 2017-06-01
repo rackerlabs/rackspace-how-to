@@ -30,25 +30,25 @@ Emails fail to deliver for a multitude of reasons. Try these suggestions to narr
 
 #### Incoming message delivery
 If an incoming message never arrived, try the following steps:
-- Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox. If you see the message online, but not in your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections.
+- **Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox.** If you see the message online, but not in your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections.
 
-*Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
+    *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
--	Perform a search on your mailbox.
+-	**Perform a search on your mailbox.**
     -  Try a variety of different search criteria to find a message hiding in a sub-folder.
--	Check your Spam/Junk/Trash folders for the message.
--	Check recover deleted items folder for the message.
+-	**Check your Spam/Junk/Trash folders for the message.**
+-	**Check recover deleted items folder for the message.**
 
     - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
 
-    *Note: Messages in recover deleted items are only recoverable for up to 14 days after their deletion*
+    *Note: Messages in recover deleted items are only recoverable for up to 14 days after their deletion.*
 
 -	Does your mailbox have rules or filters applied?
     - Rules and filters will move or even delete messages. Rules and filters can exist in webmail or your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology).
 
 - Allow ample time to ensure there is not a message delay.
 -	Did the sender receive a bounce message? If so, reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
--	Was the message sent to an Alias, Contact, Group List, or Distribution List? If so, these addresses will not forward any message flagged as spam.
+-	Was the message sent to an Alias, Contact, Group List, or Distribution List? If so, these addresses will not deliver any message flagged as spam.
 
     *Note: Adding the sending address to your Safelist will not correct this issue. There is no configuration that will allow spam to be forwarded.*
 
