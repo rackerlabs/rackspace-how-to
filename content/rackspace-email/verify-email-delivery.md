@@ -34,8 +34,7 @@ If an incoming message never arrived, try the following steps:
 
     *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
--	**Perform a search on your mailbox.**
-    -  Try a variety of different search criteria to find a message hiding in a sub-folder.
+-	**Perform a search on your mailbox.**  - Try a variety of different search criteria to find a message hiding in a sub-folder.
 -	**Check your Spam/Junk/Trash folders for the message.**
 -	**Check recover deleted items folder for the message.**
 
@@ -43,30 +42,30 @@ If an incoming message never arrived, try the following steps:
 
     *Note: Messages in recover deleted items are only recoverable for up to 14 days after their deletion.*
 
--	Does your mailbox have rules or filters applied?
+-	**Does your mailbox have rules or filters applied?**
     - Rules and filters will move or even delete messages. Rules and filters can exist in webmail or your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology).
 
-- Allow ample time to ensure there is not a message delay.
--	Did the sender receive a bounce message? If so, reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
--	Was the message sent to an Alias, Contact, Group List, or Distribution List? If so, these addresses will not deliver any message flagged as spam.
+- **Allow ample time to ensure there is not a message delay.**
+-	**Did the sender receive a bounce message?**   -Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
+-	**Was the message sent to an Alias, Contact, Group List, or Distribution List?**  - These type of addresses will not deliver any message flagged as spam.
 
     *Note: Adding the sending address to your Safelist will not correct this issue. There is no configuration that will allow spam to be forwarded.*
 
-- If the mailbox the message is addressed to has a forward in place, the message will not forward if it is flagged as spam.
+- **If the receiving mailbox has a forward in place, a message flagged as spam will not forward.**
 
-- Have you recently migrated from another provider?
+- **Have you recently migrated from another provider?**
 
     - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server. For example if you are using a version of Outlook to access your email, you will want to create a new profile that connects to your new mailbox at Rackspace. Instructions for configuring your mail client to connect with your recently migrated mailbox can be found by logging in at [emailhelp.rackspace.com](emailhelp.rackspace.com).
 
-- Have you upgraded your mailboxes at Rackspace Cloud Office recently?
+- **Have you upgraded your mailboxes at Rackspace Cloud Office recently?**
 
     - When you upgrade your mailbox, it is possible your mailbox has actually been created again on another sever. For example if you upgrade a mailbox from Exchange 2007 to Exchange 2016, your data is migrated from the Exchange 2007 mailbox, to a new mailbox on Exchange 2016. This means that you will need to configure your local mail client to connect to the mailbox on the new server. Please log into [emailhelp.rackspace.com](emailhelp.rackspace.com) for instructions for configuring your mail client after upgrading.
 
 
 
 #### Outgoing message delivery
--	Did you receive a bounce message? If so, reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
--	If you are sending from a desktop mail client such as Outlook, is the message in Drafts or the Outbox? If so, attempt resending the message.
+-	**Did you receive a bounce message?**  - Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
+-	**If you are sending from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) check your Drafts and Outbox for the message.**  -Attempt resending the message.
 - If you are sending to a contact, try manually entering the email address and sending again. If this is successful, verify that the contact information is correct.
 -	Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.
     - If you can successfully send a message online, but not from a desktop mail client you can verify your settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
