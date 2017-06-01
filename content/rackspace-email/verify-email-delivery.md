@@ -26,7 +26,7 @@ See [Cloud Office support terminology](/how-to/cloud-office-support-terminology/
 
 ### Verify email delivery
 
-Emails fail to deliver for a multitude of reasons. Try these suggestions to narrow down what might have happened to the message.
+Emails fail to deliver for a multitude of reasons. Try these steps to narrow down what might have happened to the message.
 
 #### Incoming message delivery
 If an incoming message never arrived, try the following steps:
@@ -69,16 +69,15 @@ If an incoming message never arrived, try the following steps:
 
 
 #### Outgoing message delivery
-1. **Did you receive a bounce message?**
+1. **Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.**
+    - If you can successfully send a message from webmail, but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify your SMTP settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
+2. **Did you receive a bounce message?**
     - Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
-2. **If you are sending from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) check your Drafts and Outbox for the message.**    
+3. **If you are sending from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) check your Drafts and Outbox for the message.**    
     - Attempt resending the message.
 
-3. **If you are sending to a contact, try manually entering the email address and sending again.**  
+4. **If you are sending to a contact, try manually entering the email address and sending again.**  
     - Verify that the contact information is correct.
-
-4. **Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.**
-    - If you can successfully send a message from webmail, but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify your SMTP settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
 
 5. **Test sending the message from a computer connected to a different internet network.**
     - Examples: Home network, alternative office network.
