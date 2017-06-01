@@ -1,6 +1,5 @@
 Category,Product Name,Directory,Number of articles
 Cloud Hosting,Cloud Backup,cloud-backup,21
-Cloud Hosting,Cloud Big Data,cloud-big-data,11
 Cloud Hosting,Cloud Block Storage,cloud-block-storage,14
 Cloud Hosting,Cloud DNS,cloud-dns,22
 Cloud Hosting,Cloud Databases,cloud-databases,23
@@ -27,4 +26,4 @@ Cloud Office,Rackspace Email Archiving,rackspace-email-archiving,14
 Cloud Office,Rackspace Email,rackspace-email,80
 Rackspace Private Cloud,Rackspace Private Cloud Powered by Microsoft Cloud Platform,rpc-microsoft,4
 Rackspace Private Cloud,Rackspace Private Cloud Powered by OpenStack,rpc-openstack,20
-Dedicated Hosting, dedicated-hosting, 2
+Dedicated Hosting,dedicated-hosting,2

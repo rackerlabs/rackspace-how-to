@@ -7,8 +7,6 @@ created_date: '2015-07-28'
 created_by: Rose Contreras
 last_modified_date: '2016-06-22'
 last_modified_by: Nate Archer
-product: Managed Operations
-product_url: managed-operations
 ---
 
 The MyRackspace Firewall Manager application is an upgraded version of the firewall control panel, which enables you to view and edit your firewall configurations. The Firewall Manager is available for all Cisco PIX, Cisco ASA, and Juniper SRX 100/240 firewalls. It is not available for Cisco PIX 515/525/535 URFO and firewalls in a high-availability configuration.
