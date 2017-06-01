@@ -36,7 +36,7 @@ If an incoming message never arrived, try the following steps:
     *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
 2.	**Perform a search on your mailbox.**  
-    - Try a variety of different search criteria to find a message hiding in a sub-folder.
+    - Try a variety of search criteria to find a message hiding in a sub-folder.
 
 3.	**Check your Spam/Junk/Trash folders for the message.**
 4.	**Check recover deleted items folder for the message.**
