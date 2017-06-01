@@ -28,25 +28,25 @@ See [Cloud Office Terms](/how-to/cloud-office-terms/) for definitions of the abo
 
 The topic of mailbox connectivity is broad. It is best to take a methodical approach to troubleshooting this issue, ruling out one possibility at a time.
 
-- Are you able to log into [apps.rackspace.com](apps.rackspace.com)?
+1. **Are you able to log into [apps.rackspace.com](apps.rackspace.com)?**
     - It is important that you log into the online version of your mailbox to verify that it is still receiving email. This is a good indication that the mailbox itself is functioning properly.
 
-- When did the issue start?
+2. **When did the issue start?**
     - An event that took place around the same time could have caused the problem. If an event comes to mind, verify that nothing about event could have caused email connectivity problems.  
 
-- Have you recently migrated from another provider?
+3. **Have you recently migrated from another provider?**
     - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server. For example if you are using a version of Outlook to access your email, you will want to create a new profile that connects to your new mailbox at Rackspace. Instructions for configuring your mail client to connect with your recently migrated mailbox can be found at [emailhelp.rackspace.com](emailhelp.rackspace.com).
 
-- Have you upgraded your mailboxes at Rackspace Cloud Office?
+4. **Have you upgraded your mailboxes at Rackspace Cloud Office?**
     - When you upgrade your mailbox, it is possible your mailbox has actually been created again on another sever. For example if you upgrade a mailbox from Exchange 2007 to Exchange 2016, your data is migrated from the Exchange 2007 mailbox, to a new mailbox on Exchange 2016. This means that you will need to configure your local mail client to connect to the mailbox on the new server. Please visit [emailhelp.rackspace.com](emailhelp.rackspace.com) for instructions for configuring your mail client after upgrading.
 
-- Is this happening for all users on your domain?
+5. **Is this happening for all users on your domain?**
     - If so, you should verify with your administrator that your DNS is properly configured to [receive email at Rackspace Cloud Office](/how-to/set-up-dns-records-for-cloud-office-email/). The expiration of your domain registration, or changes to your DNS can cause you to be unable to synchronize new email to your mail client.
 
-- Are you able to connect to your mailbox from another computer?
+6. **Are you able to connect to your mailbox from another computer?**
     - If you are able to connect to your mailbox from another computer, the issue may be local to your primary computer.
 
-- Are you able to connect to your mailbox using a different internet connection?
+7. **Are you able to connect to your mailbox using a different internet connection?**
     - If you are able to connect to your mailbox using a different internet network, the issue may reside with the offending internet network. In this case you will want to contact your network administrator or your internet service provider for further instructions.
 
 Being unable to connect to your mailbox is an issue that can be challenging to identify because of the multitude of possibilities. If these recommendations do not narrow down those possibilities please contact your administrator for further direction.
