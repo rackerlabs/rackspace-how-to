@@ -7,8 +7,6 @@ created_date: '2013-07-30'
 created_by: Renee Rendon
 last_modified_date: '2016-09-12'
 last_modified_by: Kyle Laffoon
-product: Managed Operations
-product_url: managed-operations
 ---
 
 Users who access their cloud accounts through the MyRackspace Portal are

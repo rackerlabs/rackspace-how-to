@@ -1,27 +1,31 @@
 ---
 permalink: cloud-office-blocked-attachment-files/
-audit_date: '2017-05-25'
+audit_date: '2017-05-30'
 title: Cloud Office Blocked Attachment Types
 type: article
 created_date: '2017-05-19'
 created_by: William Loy
-last_modified_date: '2017-05-23'
+last_modified_date: '2017-05-30'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article includes a comprehensive list of file types that are not permitted when using Rackspace Cloud Office email solutions. If you have received a bounce message when sending an email, please reference our list of [Common email bounces](/how-to/common-email-bounces/) for more information.
+This article provides a comprehensive list of file types that are not permitted when you use Rackspace Cloud Office email solutions. 
 
-### Prerequisites 
+If you receive a bounce message when sending an email, see our list of [common email bounce messages](/how-to/common-email-bounces) for more information.
 
-- **Applies to** - Administrators and Users
+### Prerequisite
 
-### Blocked attachement types
+- **Applies to:** Administrators and Users
 
-**Note:** We cannot make exceptions for any file listed for any reason.
+For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-| File Type | Full File Name |
+### Blocked attachment types
+
+**Note:** We cannot make exceptions for any file type listed for any reason.
+
+| File type | Full file name |
 | --- | --- |
 | ade | Access Project Extension (Microsoft) |
 | adp | Access Project (Microsoft) |
@@ -67,8 +71,8 @@ This article includes a comprehensive list of file types that are not permitted 
 | mau | Access Shortcut Function |
 | mav | Access View Shortcut (Microsoft) |
 | maw | Access Data Access Page (Microsoft) |
-| mda | Access Add-in (Microsoft) MDA Access 2 Workgroup (Microsoft) |
-| mdb | Access Application (Microsoft) MDB Access Database (Microsoft) |
+| mda | Access Add-in MDA Access 2 Workgroup (Microsoft) |
+| mdb | Access Application MDB Access Database (Microsoft) |
 | mde | Access MDE Database File (Microsoft) |
 | mdt | Access Add-in Data (Microsoft) |
 | mdw | Access Workgroup Information (Microsoft) |
@@ -92,11 +96,11 @@ This article includes a comprehensive list of file types that are not permitted 
 | plg | Aston Shell Plug-in |
 | prf | Windows System File |
 | prg | Program File |
-| pst | MS Exchange Address Book File, Outlook Personal Folder File (Microsoft) |
-| reg | Registration Information/Key for W95/98 Registry Data File |
+| pst | Microsoft Exchange Address Book File, Outlook Personal Folder File (Microsoft) |
+| reg | Registration Information or Key for Windows 95 or 98 Registry Data File |
 | scf | Windows Explorer Command |
 | scr | Windows Screen Saver |
-| sct | Windows Script Component Foxpro Screen (Microsoft) |
+| sct | Windows Script Component FoxPro Screen (Microsoft) |
 | shb | Windows Shortcut into a Document |
 | shs | Shell Scrap Object File |
 | sys | Windows System File |
@@ -108,7 +112,7 @@ This article includes a comprehensive list of file types that are not permitted 
 | psc2 | Windows PowerShell Script |
 | tmp | Temporary File/Folder |
 | url | Internet Location |
-| vb | VBScript File or Any VisualBasic Source |
+| vb | VBScript File or Any Visual Basic Source |
 | vbe | VBScript Encoded Script File |
 | vbs | VBScript Script File Visual Basic for Applications Script |
 | vpb | Visual Basic Project File |
@@ -122,4 +126,4 @@ This article includes a comprehensive list of file types that are not permitted 
 | wsf | Windows Script File |
 | wsh | Windows Script Host Settings File |
 | xnk | Exchange Shortcut |
-| xml | Extensible Mark Up Language |
+| xml | Extensible Markup Language |
