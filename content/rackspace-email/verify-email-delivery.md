@@ -30,14 +30,16 @@ Emails fail to deliver for a multitude of reasons. Try these suggestions to narr
 
 #### Incoming message delivery
 If an incoming message never arrived, try the following steps:
-1. **Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox.** If you see the message online, but not in your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections.
+1. **Log in at [apps.rackspace.com](apps.rackspace.com) to verify the message is not in the mailbox.**
+    - If you see the message online, but not in your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) please reference [Cannot Connect to Email](/how-to/cannot-connect-to-email/) for help with troubleshooting mail client connections.
 
     *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
-2.	**Perform a search on your mailbox.**  - Try a variety of different search criteria to find a message hiding in a sub-folder.
+2.	**Perform a search on your mailbox.**  
+    - Try a variety of different search criteria to find a message hiding in a sub-folder.
+
 3.	**Check your Spam/Junk/Trash folders for the message.**
 4.	**Check recover deleted items folder for the message.**
-
     - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
 
     *Note: Messages in recover deleted items are only recoverable for up to 14 days after their deletion.*
@@ -46,8 +48,11 @@ If an incoming message never arrived, try the following steps:
     - Rules and filters will move or even delete messages. Rules and filters can exist in webmail or your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology).
 
 6. **Allow ample time to ensure there is not a message delay.**
-7.	**Did the sender receive a bounce message?**   -Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
-8.	**Was the message sent to an Alias, Contact, Group List, or Distribution List?**  - These type of addresses will not deliver any message flagged as spam.
+7.	**Did the sender receive a bounce message?**   
+    - Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
+
+8.	**Was the message sent to an Alias, Contact, Group List, or Distribution List?**  
+    - These type of addresses will not deliver any message flagged as spam.
 
     *Note: Adding the sending address to your Safelist will not correct this issue. There is no configuration that will allow spam to be forwarded.*
 
@@ -64,18 +69,26 @@ If an incoming message never arrived, try the following steps:
 
 
 #### Outgoing message delivery
-1. **Did you receive a bounce message?**  - Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
-2. **If you are sending from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) check your Drafts and Outbox for the message.**  -Attempt resending the message.
-3. **If you are sending to a contact, try manually entering the email address and sending again.**  - Verify that the contact information is correct.
+1. **Did you receive a bounce message?**
+    - Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
+2. **If you are sending from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) check your Drafts and Outbox for the message.**    
+    -Attempt resending the message.
+
+3. **If you are sending to a contact, try manually entering the email address and sending again.**  
+    - Verify that the contact information is correct.
+
 4. **Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.**
     - If you can successfully send a message from webmail, but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify your SMTP settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
-5. **Test sending the message from a computer connected to a different internet network.**
 
-    Examples: Home network, alternative office network.
+5. **Test sending the message from a computer connected to a different internet network.**
+    - Examples: Home network, alternative office network.
+
     Note: Office network changes can cause  email disruptions. Contact your office's network administrator if the above test is successful on an alternative internet
     network.
+
 6. **Verify with the recipient that your message was not stored in one of their sub-folders.**
-7. **Verify with the recipient that your message was not marked as spam.**   - If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
+7. **Verify with the recipient that your message was not marked as spam.**   
+    - If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
 
 
 
