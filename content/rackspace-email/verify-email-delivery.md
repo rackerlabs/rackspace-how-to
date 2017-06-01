@@ -72,7 +72,7 @@ If an incoming message never arrived, try the following steps:
 1. **Did you receive a bounce message?**
     - Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
 2. **If you are sending from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) check your Drafts and Outbox for the message.**    
-    -Attempt resending the message.
+    - Attempt resending the message.
 
 3. **If you are sending to a contact, try manually entering the email address and sending again.**  
     - Verify that the contact information is correct.
