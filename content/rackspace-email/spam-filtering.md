@@ -14,14 +14,12 @@ product_url: rackspace-email
 This article explains our spam filtering systems.
 
 ### Prerequisites
-**Applies to:** - Administrators and Users
+**Applies to:** - Administrators
 
 
 
 ### Spam Filtering
 Today, over 95% of all e-mail traffic on the Internet is spam. Spammers have grown increasingly sophisticated, using innovative methods to trick spam filters and penetrate email inboxes. To prevent harm coming to your users, we utilize a robust filtering system.
-
-The filtering system does not only apply to the “sophisticated spammer”. This system scans all incoming and outgoing traffic regardless of sender or intent. The links above explain how to prevent your outbound messages from being caught in the net alongside those purposefully sending spam. Filters cannot determine intent so they must use content and behavior as their point of reference when flagging messages as spam. Our filters will only flag message content that has been deemed as spam by the whole of the internet community.
 
 
 1.	Gateway Scan: As soon as an email arrives, our gateway servers try to match the sending IP address to an aggregated blacklist compiled from multiple spammer tracking systems. The servers analyze the email message in comparison to other arriving mail. If a large number of emails arrive simultaneously from a single IP, or are addressed to users that do not exist in our system, it could signify a spam attack, and the servers block the offending email. If the sending address is from a domain in our system but the mailbox does not exist, the servers block the email.
@@ -29,29 +27,30 @@ The filtering system does not only apply to the “sophisticated spammer”. Thi
 3.	Message Sniffer Scan: We scan email with Message Sniffer from ARM Research Labs. Message Sniffer relies on pattern recognition and machine learning technology to detect spam and malware. It searches the entire message for spam and malware features, including unusual headers, message source behaviors, structural artifacts, obfuscation techniques, binary and image signatures, email and URL targets, unusual code fragments, and even coding styles.
 
 
+The filtering system does not only apply to the “sophisticated spammer”. This system scans all incoming and outgoing mail traffic regardless of sender or intent.  Our filters will only flag message content that has been deemed as spam by the whole of the internet community.
+
 #### Outbound messages
 Filtering outbound email protects deliverability for all users on the Rackspace Cloud Office environment.
 Spam definitions change rapidly. However, there are measures you can take to prevent your message from becoming spam:
 
-- Are you having issues sending transactional, promotional, or marketing emails? [Best practices for sending emails to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients/)
-- Do your personal emails to business contacts or colleagues arrive in their spam or junk folder? [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)
+- For sending transactional, promotional, or marketing emails see [Best practices for sending emails to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients/).
+- If your personal emails to friends and business partners are flagged as spam see [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/).
 - Ask your frequent recipients to add your domain to their Safelist or Whitelist to ensure your messages are delivered to their Inbox. [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
-- Ask your frequent recipients to “unflag” or mark messages from you in their spam folder as “not spam”. This is the most effective method for improving the spam reputation of your sending domain.
 
-*Note: Outbound messages are likely being scanned by the recipient's mail provider. Each provider has their own policies for filtering spam.*
+*Note: Outbound messages are likely being scanned by the recipient's mail provider. Each provider has their own policies for flagging and filtering spam.*
 
 
 #### Inbound Messages
-The filtering system is working as intended when flagging unwanted incoming messages as spam.  Follow these recommendations when a legitimate message is flagged as spam:
+Follow these recommendations when a legitimate message is flagged as spam:
 
 - Always “unflag” or mark legitimate messages  as “Not Spam”. This is the most effective method for improving the spam reputation of the sender and is a long term solution.
 - Advise the sender that they are being flagged as spam and provide them with [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/)
-- Add the sender to your Safelist [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists)
+- Add the sender to your Safelist. See [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists).
 
-    *Warning: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
-- Rackspace Cloud Office will not forward any message that is flagged as spam, regardless of it is safelisted. Forwarding spam adversely impacts deliverability for all of our customers.
+    *Note: Safelisting does not remove a spam flag from a message. It ensures the message will be delivered to your Inbox.*
 
-    *Warning: If the message is sent to an Alias, Contact, Group List, or Distribution List, it is considered to be forwarded and will not deliver if the message is flagged as spam.*
+
+    *Warning: Rackspace Cloud Office will not forward any message that is flagged as spam, regardless of it is Safelisted. If the message is sent to an Alias, Contact, Group List, or Distribution List, it is considered to be forwarded and will not deliver if the message is flagged as spam.*
 
 
 
