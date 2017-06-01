@@ -66,12 +66,13 @@ If an incoming message never arrived, try the following steps:
 #### Outgoing message delivery
 -	**Did you receive a bounce message?**  - Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
 -	**If you are sending from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) check your Drafts and Outbox for the message.**  -Attempt resending the message.
-- If you are sending to a contact, try manually entering the email address and sending again. If this is successful, verify that the contact information is correct.
--	Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.
-    - If you can successfully send a message online, but not from a desktop mail client you can verify your settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
--	Try sending the message from a computer connected to a different internet network such as your home, or a different office building.
--	Verify with the recipient that your message was not stored in one of their sub-folders.
--	Verify with the recipient that your message was not marked as spam. If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
+- **If you are sending to a contact, try manually entering the email address and sending again.**  - Verify that the contact information is correct.
+-	**Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.**
+    - If you can successfully send a message from webmail, but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify your SMTP settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
+-	**Test sending the message from a computer connected to a different internet [network](/how-to/cloud-office-support-terminology/#cloud-office-terminology).** Examples: Home network, alternative office network.
+    Note: Office network changes can cause  email disruptions. Contact your office's network administrator if the above test is successful on an alternative internet network.
+-	**Verify with the recipient that your message was not stored in one of their sub-folders.**
+-	**Verify with the recipient that your message was not marked as spam.**   - If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
 
 
 
