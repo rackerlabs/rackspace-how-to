@@ -33,10 +33,12 @@ The topic of mailbox connectivity is broad. It is best to take a methodical appr
 
 2. **When did the issue start?**
     - An event that took place around the same time could have caused the problem.
-    *Example: Changes have been made to your office or home network.*   
+
+    *Example: Changes have been made to your office or home network or you have recently updated your mailbox password.*   
 
 3. **Have you recently migrated from another provider?**
-    - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server. 
+    - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server.
+
     *Example: if you are using a version of Outlook to access your email, you will want to create a new profile that connects to your new mailbox at Rackspace. Instructions for configuring your mail client to connect with your recently migrated mailbox can be found at [emailhelp.rackspace.com](emailhelp.rackspace.com).*
 
 4. **Have you upgraded your mailboxes at Rackspace Cloud Office?**
