@@ -21,13 +21,12 @@ This article provides troubleshooting recommendations in the event that an incom
 
 - **Tools required:** Online email access
 
-See [Cloud Office Terms](/how-to/cloud-office-terms/) for definitions of the above criteria.  
+See [Cloud Office support terminology](/how-to/cloud-office-support-terminology/) for definitions of the above criteria.  
 
 
 ### Verify email delivery
 
-Emails do not deliver for a variety of reasons. In the event that an incoming or outgoing message was not delivered try these steps to narrow down what might have happened to the message.
-
+Emails might not deliver for a multitude of reasons. Try these suggestions to narrow down what might have happened to the message.
 
 #### Incoming message delivery
 If an incoming message never arrived, try the following steps:
@@ -36,14 +35,13 @@ If an incoming message never arrived, try the following steps:
 *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
 -	Perform a search on your mailbox.
-    - Using your mailbox’s search function will discover a message that could be hiding in a sub-folder.
+    - Using your mailbox’s search function will discover a message that could be hiding in a sub-folder. Try a variety of different search criteria.
 -	Does your mailbox have rules or filters applied?
-    - Rules and filters can inadvertently move or even delete messages.
--	Check your Spam/Junk/Trash folders.
-    - Searching your inbox should uncover messages lurking in these folders. It is best practice to manually check them even if a search does not show the messages in these folders.
--	Check your recover deleted items folder.
+    - Rules and filters can inadvertently move or even delete messages. Rules and filters can exist in webmail or your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology)
+-	Check your Spam/Junk/Trash folders for the message.
+-	Check your recover deleted items folder for the message.
 
-    - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder. Detailed instructions
+    - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
 
 - Allow ample time to ensure there is not a message delay.
 -	Did the sender receive a bounce message? If so, reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
@@ -74,9 +72,11 @@ If an incoming message never arrived, try the following steps:
 -	Verify with the recipient that your message was not marked as spam. If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
 
 
+
+
 ### References
 
-[Cloud Office Terms](/how-to/cloud-office-terms/)
+[Cloud Office support terminology](/how-to/cloud-office-support-terminology/)
 [Cloud Office Email Portal](apps.rackspace.com)
 [Email Help Tool](emailhelp.rackspace.com)
 [Common Email Bounce](/how-to/common-email-bounces/)
