@@ -26,7 +26,7 @@ See [Cloud Office support terminology](/how-to/cloud-office-support-terminology/
 
 ### Verify email delivery
 
-Emails might not deliver for a multitude of reasons. Try these suggestions to narrow down what might have happened to the message.
+Emails fail to deliver for a multitude of reasons. Try these suggestions to narrow down what might have happened to the message.
 
 #### Incoming message delivery
 If an incoming message never arrived, try the following steps:
@@ -35,13 +35,16 @@ If an incoming message never arrived, try the following steps:
 *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
 -	Perform a search on your mailbox.
-    - Using your mailbox’s search function will discover a message that could be hiding in a sub-folder. Try a variety of different search criteria.
--	Does your mailbox have rules or filters applied?
-    - Rules and filters can inadvertently move or even delete messages. Rules and filters can exist in webmail or your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology)
+    -  Try a variety of different search criteria to find a message hiding in a sub-folder.
 -	Check your Spam/Junk/Trash folders for the message.
--	Check your recover deleted items folder for the message.
+-	Check recover deleted items folder for the message.
 
     - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
+
+    *Note: Messages in recover deleted items are only recoverable for up to 14 days after their deletion*
+
+-	Does your mailbox have rules or filters applied?
+    - Rules and filters will move or even delete messages. Rules and filters can exist in webmail or your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology).
 
 - Allow ample time to ensure there is not a message delay.
 -	Did the sender receive a bounce message? If so, reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
