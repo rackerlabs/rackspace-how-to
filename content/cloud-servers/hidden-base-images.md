@@ -5,7 +5,7 @@ title: Hidden base images
 type: article
 created_date: '2013-11-04'
 created_by: Amanda Clark
-last_modified_date: '2017-04-04'
+last_modified_date: '2017-05-18'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -90,10 +90,12 @@ Scientific Linux 6.4 (PV) | bced783b-31d2-4637-b820-fa02522c518b | 2014-03-05 | 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
 Ubuntu 10.04 (Lucid Lynx) | 1ee40a10-e249-475f-a799-40428a50c7de | 2015-03-30 | No longer supported by Canonical.
+Ubuntu 12.04 (PV) | c1ea187e-73b1-497d-8e38-beb949cc422d | 2017-04-28 | No longer supported by Canonical.
+Ubuntu 12.04 (PVHVM) | f2d30a56-bc2b-4906-8027-92f8a45bbb10 | 2017-04-28 | No longer supported by Canonical.
 Ubuntu 12.10 (Quantal Quetzal) | f3ae5ef7-dc43-473a-b9d6-65e3f2cb7867 | 2014-04-17 | No longer supported by Canonical.
 Ubuntu 12.10 (Quantal Quetzal) (PVHVM) | ab5354f6-b7a3-4802-a2ad-911f67961197 | 2014-04-17 | No longer supported by Canonical.
-Ubuntu 13.04 | 45975587-fb06-4d56-bc94-38d1038aef8d | 2014-01-06 | No longer supported by Canonical.
-Ubuntu 13.04 PVHVM | 62df001e-87ee-407c-b042-6f4e13f5d7e1 | 2014-01-06 | No longer supported by Canonical.
+Ubuntu 13.04 (PV) | 45975587-fb06-4d56-bc94-38d1038aef8d | 2014-01-06 | No longer supported by Canonical.
+Ubuntu 13.04 (PVHVM) | 62df001e-87ee-407c-b042-6f4e13f5d7e1 | 2014-01-06 | No longer supported by Canonical.
 Ubuntu 13.10 (Saucy Salamancer) | 7b8abc3f-5fd2-4d02-9e9a-16d43fc7128e | 2014-06-23 | No longer supported by Canonical.
 Ubuntu 13.10 (Saucy Salamander) (PVHVM) | aca656d3-dd70-4d7e-a9e5-f12182871cde | 2014-06-23 | No longer supported by Canonical.
 Ubuntu 14.10 (Utopic Unicorn) (PVHVM) | 668b0764-4936-4eec-a2f2-3b5bb2c40b26 | 2015-04-23 | Replaced by 15.04 (Vivid Vervet).

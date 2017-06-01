@@ -33,7 +33,7 @@ permalink: /
 				</div>
 			</div>
 			<hr/>
-			
+
 			<div class="row">
 				<h3>Compute</h3>
 				<div class="twelve columns">
@@ -91,9 +91,6 @@ permalink: /
 				<div class="twelve columns">
 					<div class="primary three columns icon databases">
 						<h4><a href="/how-to/cloud-databases/"><span>Cloud</span> Databases</a></h4>
-					</div>
-					<div class="three columns icon big-data">
-						<h4><a href="/how-to/cloud-big-data/"><span>Cloud</span> Big Data</a></h4>
 					</div>
 					<div class="six columns icon queues">
 						<h4><a href="/how-to/cloud-queues/"><span>Cloud</span> Queues</a></h4>
