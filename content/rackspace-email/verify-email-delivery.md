@@ -69,7 +69,8 @@ If an incoming message never arrived, try the following steps:
 - **If you are sending to a contact, try manually entering the email address and sending again.**  - Verify that the contact information is correct.
 -	**Log into [apps.rackspace.com](apps.rackspace.com) and attempt sending the message again.**
     - If you can successfully send a message from webmail, but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify your SMTP settings are correct by logging into the [Email Help Tool](emailhelp.rackspace.com).  
--	**Test sending the message from a computer connected to a different internet [network](/how-to/cloud-office-support-terminology/#cloud-office-terminology).** Examples: Home network, alternative office network.
+-	**Test sending the message from a computer connected to a different internet network.**
+    Examples: Home network, alternative office network.
     Note: Office network changes can cause  email disruptions. Contact your office's network administrator if the above test is successful on an alternative internet network.
 -	**Verify with the recipient that your message was not stored in one of their sub-folders.**
 -	**Verify with the recipient that your message was not marked as spam.**   - If your message was marked as spam please reference [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/) to prevent this in the future.
@@ -80,7 +81,11 @@ If an incoming message never arrived, try the following steps:
 ### References
 
 [Cloud Office support terminology](/how-to/cloud-office-support-terminology/)
+
 [Cloud Office Email Portal](apps.rackspace.com)
+
 [Email Help Tool](emailhelp.rackspace.com)
+
 [Common Email Bounce](/how-to/common-email-bounces/)
+
 [Cannot Connect to Email](/how-to/cannot-connect-to-email/)
