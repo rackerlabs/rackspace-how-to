@@ -34,30 +34,30 @@ If an incoming message never arrived, try the following steps:
 
     *Warning: If you verify you are not getting any new email in apps.rackspace.com, contact your account administrator and provide them with this article [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email/).*
 
--	**Perform a search on your mailbox.**  - Try a variety of different search criteria to find a message hiding in a sub-folder.
--	**Check your Spam/Junk/Trash folders for the message.**
--	**Check recover deleted items folder for the message.**
+1.	**Perform a search on your mailbox.**  - Try a variety of different search criteria to find a message hiding in a sub-folder.
+2.	**Check your Spam/Junk/Trash folders for the message.**
+3.	**Check recover deleted items folder for the message.**
 
     - Log into [apps.rackspace.com](apps.rackspace.com) > Place your cursor over “Trash” for Rackspace Email users or “Deleted Items” for Exchange users > right-click and select “Recover Deleted Items” from the menu. A box will pop up displaying messages in your recover deleted items folder.
 
     *Note: Messages in recover deleted items are only recoverable for up to 14 days after their deletion.*
 
--	**Does your mailbox have rules or filters applied?**
+4.	**Does your mailbox have rules or filters applied?**
     - Rules and filters will move or even delete messages. Rules and filters can exist in webmail or your [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology).
 
-- **Allow ample time to ensure there is not a message delay.**
--	**Did the sender receive a bounce message?**   -Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
--	**Was the message sent to an Alias, Contact, Group List, or Distribution List?**  - These type of addresses will not deliver any message flagged as spam.
+5. **Allow ample time to ensure there is not a message delay.**
+6.	**Did the sender receive a bounce message?**   -Reference [Common Email Bounces](/how-to/common-email-bounces/) for possible solutions.
+7.	**Was the message sent to an Alias, Contact, Group List, or Distribution List?**  - These type of addresses will not deliver any message flagged as spam.
 
     *Note: Adding the sending address to your Safelist will not correct this issue. There is no configuration that will allow spam to be forwarded.*
 
-- **If the receiving mailbox has a forward in place, a message flagged as spam will not forward.**
+8. **If the receiving mailbox has a forward in place, a message flagged as spam will not forward.**
 
-- **Have you recently migrated from another provider?**
+9. **Have you recently migrated from another provider?**
 
     - After migrating your mailboxes to Rackspace Cloud Office from an external company, it is necessary to have your mail client connect to the mailbox on the new server. For example if you are using a version of Outlook to access your email, you will want to create a new profile that connects to your new mailbox at Rackspace. Instructions for configuring your mail client to connect with your recently migrated mailbox can be found by logging in at [emailhelp.rackspace.com](emailhelp.rackspace.com).
 
-- **Have you upgraded your mailboxes at Rackspace Cloud Office recently?**
+10. **Have you upgraded your mailboxes at Rackspace Cloud Office recently?**
 
     - When you upgrade your mailbox, it is possible your mailbox has actually been created again on another sever. For example if you upgrade a mailbox from Exchange 2007 to Exchange 2016, your data is migrated from the Exchange 2007 mailbox, to a new mailbox on Exchange 2016. This means that you will need to configure your local mail client to connect to the mailbox on the new server. Please log into [emailhelp.rackspace.com](emailhelp.rackspace.com) for instructions for configuring your mail client after upgrading.
 
