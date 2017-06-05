@@ -94,7 +94,7 @@ If an incoming message never arrived, try the following steps:
 
    If the message is in one of those folders, attempt to resend it.
 
-4. **If you are sending to a contact, manually entering the email address and resend the message.**  
+4. **If you are sending to a contact, manually enter the email address and resend the message.**  
 
    Verify that the contact information is correct.
 
