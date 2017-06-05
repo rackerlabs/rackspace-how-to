@@ -1,5 +1,4 @@
 ---
-
 permalink: spam-filtering/
 audit_date: '2017-06-05'
 title: Spam filtering
