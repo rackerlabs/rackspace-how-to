@@ -27,7 +27,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Troubleshooting steps
 
-Because many factors can affect mailbox connectivity, we recommen a methodical approach to troubleshooting this issue. Address each of the following questions before moving on to the next one.
+Because many factors can affect mailbox connectivity, we recommend a methodical approach to troubleshooting this issue. Address each of the following questions before moving on to the next one.
 
 1. **Can you log in to [apps.rackspace.com](https://apps.rackspace.com/index.php)?**
 
@@ -36,7 +36,7 @@ Because many factors can affect mailbox connectivity, we recommen a methodical a
 2. **When did the issue start?**
 
    An event that occurred about the same time could have caused the problem.
-   
+
    For example, changes have been made to your office or home network or you have recently updated your mailbox password.  
 
 3. **Have you recently migrated from another provider?**
