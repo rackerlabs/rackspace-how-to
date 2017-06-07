@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-cloud-backup-install-the-agent-on-linux/
 audit_date:
-title: Install or update the Cloud Backup agent on Linux
+title: "Install or update the Cloud Backup agent on Linux"
 type: article
 created_date: '2014-05-05'
 created_by: Kyle Laffoon
 last_modified_date: '2016-12-16'
-last_modified_by: Cat Lookabaugh
+last_modified_by: Laura Santamaria
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -100,7 +100,7 @@ or superuser privileges.
 
         sudo /usr/local/bin/driveclient --configure --username <username> --apikey <apiKey> --flavor <flavor> --datacenter <dataCenter> --apihost api.drivesrvr.com
 
-      - Use your Rackspace Cloud account username and API key for `<username>` and `<apiKey>`. For information about how to find your API key, see [View and reset your API key.](/how-to/view-and-reset-your-api-key)
+      - Use your Rackspace Cloud account username and API key for `<username>` and `<apiKey>`. For information about how to find your API key, see [View and reset your API key.](/how-to/view-and-reset-your-api-key).
       - The value for `<flavor>` is `privatecloud`, `raxcloudserver`, or `dedicated`. Typically it is `raxcloudserver`.
       - For installation on an OnMetal server, you *must* specify the region and host name for the data center in order to connect. For an OnMetal server, best results have been received by setting `<flavor>` to `privatecloud` with the `--snet` flag.
 
