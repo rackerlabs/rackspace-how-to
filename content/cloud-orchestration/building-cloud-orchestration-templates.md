@@ -85,6 +85,12 @@ The `description` section provides the purpose of the template. Descriptions wit
 
 Use a vertical line (\|)or angle bracket (>) to indicate literal blocks with the line breaks preserved. The description for the template is displayed in the template list in the Cloud Control Panel.
 
+Use a vertical line ( &#124; ) or angle bracket (>) to indicate literal blocks with the line breaks preserved. The description for the template is displayed in the template list in the Cloud Control Panel.
+
+Use a vertical line ( \| ) or angle bracket (>) to indicate literal blocks with the line breaks preserved. The description for the template is displayed in the template list in the Cloud Control Panel.
+
+Use a vertical line ( <code>&#124;</code>  ) or angle bracket (>) to indicate literal blocks with the line breaks preserved. The description for the template is displayed in the template list in the Cloud Control Panel.
+
 You can also use the `description` property within the parameters section of the template, as shown in the following example. See the "Parameters" section for more information.
 
     parameters:
