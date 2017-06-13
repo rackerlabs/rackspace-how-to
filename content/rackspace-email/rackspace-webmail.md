@@ -5,8 +5,8 @@ title: Rackspace Webmail overview
 type: article
 created_date: '2012-05-27'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-06-13'
+last_modified_by: Cory Aldrich
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -82,7 +82,7 @@ options available for users.
 
 #### Composing Email: Composing
 
-- **Composing** provides various options to choose from, such as auto-completing email addresses when composing a new email, default fonts for HTML formats, default size for HTML formats, and so on.
+- **Composing** provides various options to choose from, such as auto-completing email addresses when composing a new email, setting up custom signatures, and so on. 
 - **Replying & Forwarding Citations** provides the ability to select whether you want the original composed message to be included in your reply and to set a user defined start text and end text of your choice.
 
 <img src="{% asset_path rackspace-email/rackspace-webmail/Webmail2.png %}" alt="" />
@@ -114,10 +114,6 @@ options available for users.
 
 - **Safelist** enables you to specify what email should be by passed through filters through the sent user's IP address, email address, or domain.
 - **Blacklist** enables you to specify what email should be blocked through the sent user's IP address, email address, or domain.
-
-#### External Accounts
-
-Because of limited use, after February 4, 2016, external accounts checking will no longer work.
 
 #### Change Password
 
