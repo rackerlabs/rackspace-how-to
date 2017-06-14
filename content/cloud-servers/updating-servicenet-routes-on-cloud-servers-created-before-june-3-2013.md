@@ -6,6 +6,8 @@ created_date: '2013-05-28'
 created_by: Richard Goodwin
 last_modified_date: '2015-07-07'
 last_modified_by: Kyle Laffoon
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 As our cloud infrastructure continues to grow, Rackspace is implementing
