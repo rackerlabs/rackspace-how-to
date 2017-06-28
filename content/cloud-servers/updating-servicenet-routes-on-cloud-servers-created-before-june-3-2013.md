@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Rackspace has implemented two new blocks of IPv4 addresses in our ServiceNet network. With this expansion, we can ad over 1,000,000 new IP addresses to support customers' hosting. The total network range list is now 10.176.0.0/12; 10.208.0.0/12.
+Rackspace has implemented two new blocks of IPv4 addresses in our ServiceNet network. With this expansion, we can add over 1,000,000 new IP addresses to support customers' hosting. The total network range list is now 10.176.0.0/12; 10.208.0.0/12.
 
 Any cloud servers built on or after June 3, 2013 automatically have the new IP address space and routes added, and they can communicate with other cloud servers built within the new network segments.
 
