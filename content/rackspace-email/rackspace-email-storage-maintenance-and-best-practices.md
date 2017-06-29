@@ -16,6 +16,7 @@ This article describes how to monitor user storage in the Cloud Office Control P
 ### Prerequisites
 
 - **Applies to:** Administrator
+- **Difficulty:** Moderate
 - **Tools required:**  Cloud Office Control Panel access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
