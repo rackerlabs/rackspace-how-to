@@ -71,36 +71,4 @@ A WordPress website and database
 
 7. In the **General** section, select the check box next to each type of content that you want to host on the CDN, and then click **Save all settings**.
 
-   <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/select-file-types-to-upload.png %}" alt="click the check box by each file type that you want to host on the cdn" />
-
-### Set up a CNAME record (optional)
-
-Set up a CNAME record to give your content links a human-readable name.
-
-1. In the WordPress navigation menu, click **Performance > CDN**.
-
-1. In the **Configuration** section, perform the following steps:
-
-   a. Copy the **http** and **https** URLs from the **CDN host (CNAME target)** section. You will need this information when you add the DNS record in the Cloud Control Panel.
-   b. Leave the **SSL support** set to the default **Auto** option.
-   c. Enter any common subdomain that you want in the **Replace site's hostname with:** box, and click **Add CNAME**.
-   d. Click **Save all settings**.
-
-      <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/set-up-cname-settings.png %}" alt="" />
-
-2. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-
-3. In the top navigation bar, click **Networking > Cloud DNS**.
-
-4. Click the gear icon next to your domain, and select **Add DNS Record**.
-
-5. In the pop-up dialog box, enter the following information:
-
-   - **Record Type**: Select CNAME Record from the drop-down menu.
-   - **Hostname**: Enter the hostname that you created in the step 1.
-   - **Target (Domain)**: Paste the **http** and **https** URLs that you copied in step 1.
-   - **Time to Live (TTL)**: Choose an appropriate TTL value for your site needs.
-
-    <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/add-cname-cloud-control-panel.png %}" alt="" />
-
-6. Click **Add Record**.
+   <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/select-file-types-to-upload.png %}" alt="click the check box by each file type that you want to host on the cdn" />    
