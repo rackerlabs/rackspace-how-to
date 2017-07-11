@@ -5,8 +5,8 @@ title: Add a domain in Office 365
 type: article
 created_date: '2017-06-29'
 created_by: William Loy
-last_modified_date: '2017-06-30'
-last_modified_by: William Loy
+last_modified_date: '2017-07-11'
+last_modified_by: Paige Warmker
 product: Office 365
 product_url: office-365
 ---
@@ -64,7 +64,7 @@ Before you can set up a domain in the Office 365 portal, you must [create your O
 
       **Note:** **Set up my online services for me** is only available with certain DNS hosts. Before selecting this option, please verify that your DNS host allows use of this feature.
 
-    - **I'll manage my own DNS records**: Provides a list of DNS records that need to be changed on your DNS host to uuse Office 365 services.
+    - **I'll manage my own DNS records**: Provides a list of DNS records that need to be changed on your DNS host to use Office 365 services.
 
       **Warning:** Do not change your DNS records until you are ready to start using your Office 365 services.
 
