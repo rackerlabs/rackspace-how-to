@@ -32,7 +32,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path office-365/add-an-office-365-license/add-office-365-sub-1.png %}" />
 
-3. If "FIRST TIME SETUP", appears above the **Microsoft Office 365** title, perform the steps in [Set up Office 365 - Create a tenant ID](/how-to/office-365/set-up-office-365#create-a-tenant-id), and then return to this article.
+3. If "FIRST TIME SETUP", appears above the **Microsoft Office 365** title, perform the steps in [Set up Office 365 - Create a tenant ID](/how-to/set-up-office-365#create-a-tenant-id), and then return to this article.
 
    If "FIRST TIME SETUP" does not appear (because you have an existing tenant), click **Add Product** to add a new product subscription.
 
