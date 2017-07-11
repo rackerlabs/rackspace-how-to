@@ -28,11 +28,11 @@ For more information about prerequisite terminology, see [Cloud Office support t
 2. Select the **Contacts** tab.
 3. Select **Import/Export Contacts**.
 
-   <img src="{% asset_path rackspace-email/import-or-export-contacts-in-rackspace-email/ImportContactsRSE1.png %}" />
+   <img src="{% asset_path rackspace-email/import-or-export-rackspace-email-contacts/ImportContactsRSE1.png %}" />
 
 4. Under **Import Contacts**, click **Choose File**.
 
-   <img src="{% asset_path rackspace-email/import-or-export-contacts-in-rackspace-email/ImportContactsRSE2.png %}" />
+   <img src="{% asset_path rackspace-email/import-or-export-contacts-in-rackspace-email-contacts/ImportContactsRSE2.png %}" />
 
 5. Select the **.csv** file containing the contacts you wish to import.
 6. Verify the information for each imported contact by clicking **Next**.
@@ -45,7 +45,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 3. Select **My Contacts**.
 4. Select **Import/Export Contacts**.
 
-   <img src="{% asset_path rackspace-email/import-or-export-contacts-in-rackspace-email/ExportContactsRSE.png %}" />
+   <img src="{% asset_path rackspace-email/import-or-export-contacts-in-rackspace-email-contacts/ExportContactsRSE.png %}" />
 
 5. Under **Export Contacts**, select your mail client.
 6. Click **Export**. A **.csv** file of your contacts is downloaded through your web browser.
