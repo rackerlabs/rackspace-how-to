@@ -22,11 +22,11 @@ This article describes how to import contacts to your Rackspace Email account fr
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
-### Import contacts into Rackspace Email
+### Import contacts to Rackspace Email
 
-1. Log in to your Rackspace Email mailbox at [apps.racksapce.com](https://apps.rackspace.com/index.php)
-2. Select the **Contacts** tab.
-3. Select **Import/Export Contacts**.
+1. Log in to your Rackspace Email mailbox at [apps.rackspace.com](https://apps.rackspace.com/index.php)
+2. Click the **Contacts** tab.
+3. Click **Import/Export Contacts**.
 
    <img src="{% asset_path rackspace-email/import-or-export-rackspace-email-contacts/ImportContactsRSE1.png %}" />
 
@@ -34,18 +34,21 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email/import-or-export-rackspace-email-contacts/ImportContactsRSE2.png %}" />
 
-5. Select the **.csv** file containing the contacts you wish to import.
-6. Verify the information for each imported contact by clicking **Next**.
-7. After all contacts are verified to be correct, scroll down and click **Ok** to complete the import.
+5. Save the **.csv** file that contains the contacts that you want to import.
+6. Click **Continue**.
+6. Verify the information for each imported contact. Click **Next** and **Previous** to scroll through the contact list.
+7. After you verify that all contacts are correct, click **OK** to complete the import.
 
 ### Export contacts from your Rackspace Email account
 
 1. Log in to your Rackspace Email mailbox at [apps.rackspace.com](https://apps.rackspace.com/index.php).
-2. Select the **Contacts** tab.
-3. Select **My Contacts**.
-4. Select **Import/Export Contacts**.
+2. Click the **Contacts** tab.
+3. Click **My Contacts**.
+4. Click **Import/Export Contacts**.
 
    <img src="{% asset_path rackspace-email/import-or-export-rackspace-email-contacts/ExportContactsRSE.png %}" />
 
 5. Under **Export Contacts**, select your mail client.
-6. Click **Export**. A **.csv** file of your contacts is downloaded through your web browser.
+6. Click **Export**.
+
+   A **.csv** file of your contacts is downloaded through your web browser.
