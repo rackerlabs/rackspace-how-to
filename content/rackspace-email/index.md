@@ -10,7 +10,28 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Welcome to Rackspace Email! Use this brief step-by-step guide to help you get started.
+Welcome to Rackspace Email! Use this brief step-by-step guide to help you get started. See [Rackspace Office 365](/how-to/office-365) or [Microsoft exchange](/how-to/exchange/) for help with those products.
+
+
+###  Start receiving email
+- [Create mailboxes](/how-to/add-rackspace-email-mailboxes/)
+- [Set up your DNS records for Cloud Office email ](/how-to/set-up-dns-records-for-cloud-office-email)
+
+###  Plan your migration
+
+- [Email migration services](/how-to/email-migration-services)
+
+### Get users started
+- [Rackspace Email Webmail (login page)](https://apps.rackspace.com/index.php)
+- [Set up desktop and mobile devices to receive email](https://emailhelp.rackspace.com/)
+- [Help users change or recover their password](/how-to/rackspace-email-password-recovery-faq/)
+
+### Troubleshoot common email issues
+- [Troubleshoot email delivery](/how-to/troubleshoot-email-delivery/)
+- [Troubleshoot a failed email connection](/how-to/troubleshoot-failed-email-connection/)
+- [Troubleshoot rejected emails](/how-to/common-email-bounces/)
+- [Troubleshoot password issues](/how-to/rackspace-email-password-recovery-faq/)
+- [Troubleshoot storage problems](/how-to/rackspace-email-storage-maintenance-and-best-practices/)
 
 ###  Control Panel basics
 
@@ -24,19 +45,3 @@ Welcome to Rackspace Email! Use this brief step-by-step guide to help you get st
 - [View invoice history in the Cloud Office Control Panel](/how-to/view-invoice-history-cloud-office-control-panel)
 - [View and pay unpaid invoices in the Cloud Office Control Panel](/how-to/view-and-pay-unpaid-invoices-cloud-office-control-panel)
 - [Set up an API key in the Cloud Office Control Panel](/how-to/set-up-an-api-key-cloud-office-control-panel)
-
-###  Plan your migration
-
-- [Email migration services](/how-to/email-migration-services)
-
-###  Start receiving email
-
-- [Help tool for hosted email and Skype for Business](/how-to/help-tool-for-hosted-email-and-skype-for-business)
-- [Rackspace Email and Hosted Exchange settings](/how-to/rackspace-email-and-hosted-exchange-settings)
-- [Set up DNS records for Cloud Office email and Skype for Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
-
-###  Access your mail
-
-- [Rackspace Email Webmail (login page)](https://apps.rackspace.com/index.php)
-- [Exchange Online Web Access (login page)](https://apps.rackspace.com/index.php)
-- [Setup tool for accessing your mail from additional devices and programs (login page)](https://emailhelp.rackspace.com/)
