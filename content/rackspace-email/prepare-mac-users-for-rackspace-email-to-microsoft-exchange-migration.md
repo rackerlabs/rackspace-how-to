@@ -59,8 +59,6 @@ a new **.mbox** file, such as **My Mailbox 3.mbox**.
 
 3.  Click on the **Minus sign(-)** sign on the bottom of the window.
 
-<!--add screen shot file clickontheminussign.png-->
-
 4.  Click **OK**
 
 
