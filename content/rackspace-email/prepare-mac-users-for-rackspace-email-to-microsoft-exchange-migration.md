@@ -5,7 +5,7 @@ title: Prepare Mac users for Rackspace Email to Microsoft Exchange migration.
 type: article
 created_date: '2017-06-22'
 created_by: Maggie Serrano
-last_modified_date: '2017-06-22'
+last_modified_date: '2017-07-12'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -24,7 +24,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 Mac users require special attention when migrating from Rackspace Email to Microsoft Exchange. This is because Apple Mail interacts with IMAP and POP connections
 in such a way that does not translate properly to Microsoft Exchange.
 
-Before beginning, always log into [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that all email data is stored in your mailbox on the server. If it is not, you are at risk of data loss
+Note: Before beginning, always log into [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that all email data is stored in your mailbox on the server. If it is not, you are at risk of data loss
 and should contact your [Administrator](/how-to/cloud-office-support-terminology/) to troubleshoot syncing your mail up to [apps.rackspace.com](https://apps.rackspace.com/index.php).
 
 ### Create a backup by exporting the mailbox:
