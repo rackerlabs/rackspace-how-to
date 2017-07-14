@@ -5,8 +5,8 @@ title: Install EPEL, IUS, and Remi repositories on CentOS and Red Hat
 type: article
 created_date: '2012-01-11'
 created_by: Rackspace Support
-last_modified_date: '2016-06-09'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-03-30'
+last_modified_by: b-harper
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -39,11 +39,6 @@ command:
 
 If that command doesn't work, perhaps because the CentOS Extras
 repository is disabled, use the following manual installation instructions based on your distribution version:
-
--  CentOS and Red Hat Enterprise Linux 5.*x*
-
-       wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-5.noarch.rpm
-       sudo rpm -Uvh epel-release-5*.rpm
 
 -  CentOS and Red Hat Enterprise Linux 6.*x*
 
@@ -82,11 +77,6 @@ RPM package for your system and installing it. The following
 instructions use the 64-bit packages that work with Cloud Servers
 instances.
 
--  CentOS 5.*x*
-
-       wget https://centos5.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
 -  CentOS 6.*x*
 
        wget https://centos6.iuscommunity.org/ius-release.rpm
@@ -95,11 +85,6 @@ instances.
 -  CentOS 7.*x*
 
        wget https://centos7.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
--  Red Hat 5.*x*
-
-       wget https://rhel5.iuscommunity.org/ius-release.rpm
        sudo rpm -Uvh ius-release*.rpm
 
 -  Red Hat 6.*x*
@@ -126,10 +111,10 @@ plug-in for package replacement to simplify the upgrade process.
 
 The plug-in provides a `yum replace` command that replaces a specified
 package and installs any required dependencies at the same time.  For
-example, to replace the installed PHP package with the PHP 5.3 package
+example, to replace the installed PHP package with the PHP 5.6 package
 from the IUS repository, run the following command:
 
-    sudo yum replace php --replace-with php53
+    sudo yum replace php --replace-with php56u
 
 For more information, see the [IUS Usage Guide](https://ius.io/Usage/).
 
@@ -156,11 +141,6 @@ support for your server.
 You install the Remi repository by downloading the appropriate RPM
 package for your system and installing it. The following instructions
 use the 64-bit packages that work with Cloud Servers instances.
-
--  CentOS and Red Hat Enterprise Linux 5.*x*
-
-       wget http://rpms.famillecollet.com/enterprise/remi-release-5.rpm
-       sudo rpm -Uvh remi-release-5*.rpm
 
 -  CentOS and Red Hat Enterprise Linux 6.*x*
 

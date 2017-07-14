@@ -5,8 +5,8 @@ title: Access slow query and general logs for Cloud Databases
 type: article
 created_date: '2014-07-17'
 created_by: Rose Contreras
-last_modified_date: '2016-01-07'
-last_modified_by: Nate Archer
+last_modified_date: '2017-05-03'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -76,7 +76,7 @@ To enable the logging of slow queries:
 			<tr>
 				<td>log_queries_not_using_indexes</td>
 				<td>0 or 1</td>
-				<td>Whether or not to log slow queries that use indexes. &nbsp;Default is 0 (off)</td>
+				<td>Queries that don't use an index, or that perform a full index scan where the index doesn't limit the number of rows, will be logged to the slow query log (regardless of time taken). The slow query log needs to be enabled for this to have an effect.</td>
 			</tr>
 		</tbody>
 	</table>

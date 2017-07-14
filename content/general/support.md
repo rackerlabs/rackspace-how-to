@@ -5,8 +5,8 @@ title: How to contact Rackspace Support
 type: page
 created_date: '2013-06-17'
 created_by: Rackspace Support
-last_modified_date: '2016-06-22'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-06-06'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -32,7 +32,5 @@ The following Support features are available through the [Cloud Control Panel](h
 Check the status and history of your Rackspace products, including
 RackConnect and Rackspace CDN, at the following links:
 
--   [Cloud Sites](https://manage.rackspacecloud.com)
 -   [Cloud Office](https://cp.rackspace.com)
--   [Mailgun](http://status.mailgun.com/)
 -   [Dedicated Hosting](https://my.rackspace.com)

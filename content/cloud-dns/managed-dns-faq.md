@@ -5,8 +5,8 @@ title: Managed DNS FAQ
 type: article
 created_date: '2016-03-14'
 created_by: Nicole Hairston
-last_modified_date: '2016-05-19'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-04-17'
+last_modified_by: Stephanie Fillmon
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -64,10 +64,6 @@ Yes. Although the Managed DNS (Early Access) service is currently accessible via
 For example, it is possible to configure a Managed DNS (Early Access) zone with an A record that points to the IP address of your Rackspace Dedicated server. Managed DNS (Early Access) can also be configured using any valid IPv4 or IPv6 address inside or outside of the Rackspace network.
 
 **Note:** The Managed DNS (Early Access) service will be subject to unscheduled downtime for maintenance, upgrades, and testing during this initial phase and therefore should not be used for any production applications, zones (domains), or subdomains.
-
-#### Does Managed DNS (Early Access) work with Rackspace Cloud Sites?
-
-Managed DNS (Early Access) and Rackspace Cloud Sites domain and DNS management are not integrated, nor are they compatible.
 
 #### How does Managed DNS (Early Access) work for Rackspace Hybrid customers?
 

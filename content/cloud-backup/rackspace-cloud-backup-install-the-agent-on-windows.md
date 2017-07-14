@@ -5,8 +5,8 @@ title: Install the Cloud Backup agent on Windows
 type: article
 created_date: '2014-05-01'
 created_by: Megan Meza
-last_modified_date: '2016-11-10'
-last_modified_by: Nate Archer
+last_modified_date: '2017-06-23'
+last_modified_by: Catherine Richardson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -131,14 +131,14 @@ Verify that installation performed the following actions:
 4.  Placed `bootstrap.json` in the `%programdata%\driveclient` path,
     which looks as follows.
 
-        { 
+        {
             "AccountId" : “<your account ID>",
             "AgentFingerprint" : “<your encoded agent fingerprint ID>",
             "AgentFingerprintPlainText" : “<your plaintext agent fingerprint ID>",
             "AgentId" : <your machine agent ID>,
             "AgentIdV2" : "",
             "AgentKey" : “<your agent key>",
-            "ApiHostName" : "api.drivesrvr.com",
+            "ApiHostName" : "<api drivesrvr>",
             "ApiVersion" : 0,
             "IsRegistered" : true,
             "ProjectId" : "",
@@ -151,6 +151,8 @@ Verify that installation performed the following actions:
     Replace values in brackets with values that match your installation.
     The parameter provided with `/type=install` should be visible in the
     `bootstrap.json` file.
+
+    **Note:** For `ApiHostName` for API servers in the US, use `api.drivesrvr.com` for the value of `<api drivesrvr>`. For `ApiHostName` for API servers in the UK, use `api.drivesrvr.co.uk` for the value of `<api drivesrvr>`.
 
 5.  Created a DriveClient service and an UpgradeRcbuSvc service:
 
@@ -281,7 +283,7 @@ The following changes should occur:
 
         C:\>sc query driveclient
         [SC] EnumQueryServicesStatus:OpenService FAILED 1060:
-        
+
         The specified service does not exist as an installed service.              
 
 

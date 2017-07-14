@@ -5,7 +5,7 @@ title: Managed Operations FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-01-20'
+last_modified_date: '2017-06-06'
 last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
@@ -18,7 +18,7 @@ product_url: managed-operations
 The Rackspace Cloud environment has not been formally assessed for for
 compliance with the Payment Card Industry (PCI) Data Security Standard
 (DSS). For information about PCI-DSS, see [Cloud Security
-Solutions](http://www.rackspace.com/security/solutions/#pci). For
+Solutions](https://support.rackspace.com/how-to/are-cloud-servers-pci-dss-compliant/). For
 information about PCI-DSS when using Rackspace Dedicated Hosting
 services, see [PCI-Compliant Hosting for E-commerce
 Websites](http://www.rackspace.com/ecommerce-hosting/pci/).
@@ -52,8 +52,7 @@ Rackspace Partner. Any work performed by the Rackspace Professional
 Services Team or a partner incurs additional charges.
 
 For more information, see [Rackspace Professional
-Services](http://www.rackspace.com/enterprise-cloud-solutions/professional-services)
-or call 1-800-440-2149.
+Services](https://www.rackspace.com/en-us/professional-services/).
 
 #### Can I move my servers from my current account to a Managed Operations Service Level account?
 
@@ -140,10 +139,6 @@ user-defined ports as well as user-defined URL content.
 We will provide free licensing for the Rackspace Cloud Backup file-based
 backup option ( [standard Cloud Files storage fees
 apply](http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/)).
-Your servers will also be configured to use our Mailgun SMTP relay
-service to ensure smooth email delivery, with the first 50,000 emails
-sent for free every month. For details and options, see the [Mailgun
-Rackspace pricing page](http://www.mailgun.com/rackspace).
 
 #### What is Cloud Servers with a Managed Operations Service Level?
 

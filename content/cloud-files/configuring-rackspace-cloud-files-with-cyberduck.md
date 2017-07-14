@@ -5,7 +5,7 @@ title: Configure Rackspace Cloud Files with Cyberduck
 type: article
 created_date: '2012-11-15'
 created_by: Rae D. Cabello
-last_modified_date: '2016-04-18'
+last_modified_date: '2017-06-06'
 last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
@@ -21,23 +21,17 @@ You can use Cyberduck to manage your Rackspace Cloud Files storage account and t
 
 3.	Log in to the Rackspace [Cloud Control Panel](https://mycloud.rackspace.com) to retrieve your API key.
 
-  For information about viewing your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).
+4.	Follow the instructions in [View and reset your API key](/how-to/view-and-reset-your-api-key) to find your API key.
 
-4.	In the upper-right corner of the control panel, click on your account name, and then select **Account Settings**.
+5.	Open the Cyberduck FTP client.
 
-    **Note:** If you are using an older version of Cyberduck or you are using the API through a command-line interface, you might be asked to enter a value known as the tenant ID. This value is simply your account number, which is listed first in the account menu.
-
-5.	On the Account Settings page, click **Show** next to the **API Key** field to view and copy your API key.
-
-6.	Open the Cyberduck FTP client.
-
-7.	If you do not have a preconfigured bookmark for Rackspace Cloud, start a new connection by clicking on the **Open Connection** icon and selecting **Rackspace Cloud Files** from the drop-down list of protocols.
+6.	If you do not have a preconfigured bookmark for Rackspace Cloud, start a new connection by clicking on the **Open Connection** icon and selecting **Rackspace Cloud Files** from the drop-down list of protocols.
 
     <img src="{% asset_path cloud-files/configuring-rackspace-cloud-files-with-cyberduck/CyberDuckCFMenuSelectProtocol.png %}" width="941" height="529" border="1" alt=""  />
 
-8.	Enter your Rackspace Cloud username, and paste the API key into the **Password** field.
+7.	Enter your Rackspace Cloud username, and paste the API key into the **Password** field.
 
-9.	When the connection is complete, click **Login**.
+8.	When the connection is complete, click **Login**.
 
 After you are logged in, you can view, share, and add Cloud Files content through the Cyberduck interface.
 
@@ -51,7 +45,7 @@ Before uploading any files or folders, ensure that your account contains at leas
 
 3.	Log in to the Rackspace [Cloud Control Panel](https://mycloud.rackspace.com) to retrieve your API key.
 
-4.	In the upper-right corner of the control panel, click your account name and then select **Account Settings**.
+4.	Follow the instructions in [View and reset your API key](/how-to/view-and-reset-your-api-key) to find your API key.
 
     **Note:** If you are using an older version of Cyberduck or you are using the API through a command-line interface, you might be asked to enter a value known as the tenant ID. This value is simply your account number, which is listed first in the account menu.
 

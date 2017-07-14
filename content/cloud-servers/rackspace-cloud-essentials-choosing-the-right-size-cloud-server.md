@@ -5,8 +5,8 @@ title: Rackspace Cloud Essentials - Choosing the right-size cloud server
 type: article
 created_date: '2012-05-02'
 created_by: Rackspace Support
-last_modified_date: '2016-07-08'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-06-20'
+last_modified_by: Brian King
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -31,15 +31,15 @@ Flavor classes for different workloads
 
 | (Prototype) | (Scale) | (Optimize) |
 | --- | --- | --- |
-| General purpose vitual servers | Workload-optimized virtual servers | Workload-optimized OnMetal servers |
+| General purpose virtual servers | General purpose or Workload-optimized virtual servers | General Purpose or Workload-optimized OnMetal servers |
 |   | **Description** |   |
 | VMs running on multi-tenant hosts. Smaller sizes, balanced resources, and CPU and network burst capability provide lowest price points and best value. | VMs running on multi-tenant hosts. Smaller sizes and workload-specific designs allow for price-performance optimization for your particular application. | API-driven, instantly provisioned, single-tenant, bare-metal servers. Full host and workload-specific designs provide large-scale cost efficiencies as  well as maximum and consistent performance. |
 | **General purpose** | **Workload optimized** | **Workload optimized** |
-| Class name: **General Purpose v1 and Standard** | Class name: **Compute v1** | Class name: **OnMetal Compute** |
+| Class name: **General Purpose v1** | Class name: **Compute v1** | Class name: **OnMetal General Purpose** |
 | Use cases:<br /><br /> - Test and development<br /> - Low-to medium-traffic web servers<br /> - Batch processing<br /> - Network appliances<br /> - Small to medium databases | Use cases:<br /><br /> - Medium-to large-traffic web servers, application servers, batch processing, and network appliances | Use cases:<br /><br /> - Large-traffic web servers, application servers, batch processing, and network appliances|
 |   | **I/O optimized** | **I/O optimized** |
 |   | Class name: **I/O v1** | Class name: **OnMetal I/O** |
-|   | Use cases:<br /><br />- Medium to large relational databases and NoSQL data stores | Use cases:<br /><br />- Large-scale online transaction processing (OLTP), relational databases, and NoSQK data stores |
+|   | Use cases:<br /><br />- Medium to large relational databases and NoSQL data stores | Use cases:<br /><br />- Large-scale online transaction processing (OLTP), relational databases, and NoSQL data stores |
 |   | **Memory optimized** | **Memory optimized** |
 |   | Class name: **Memory v1** | Class name: **OnMetal Memory** |
 |   | Use cases:<br /><br /> - Medium to large caches, search indexes, and in-memory analytics | Use cases:<br /><br />- Large caches, search indexes, and in-memory analytics |
@@ -60,19 +60,3 @@ Both `iotop` and `dstat` might require extra packages to be installed on your se
 
 If you use these tools while running your web application and you see an excessive load average or excessive memory usage, you need to tune either your application or choose a more powerful server flavor on which to run it.  Following are some other tools that you can use to benchmark and monitor your servers and applications.
 
-### Resources for testing your system
-
--  **apache "mod_status" module** - Use this module with Apache to see how many connections are being used, and how you might need to change its setup. [Read the detailed article](http://articles.slicehost.com/2010/3/26/enabling-and-using-apache-s-mod_status-overview) on the apache mod_status module.
-
--  [**ApacheBench**](http://httpd.apache.org/docs/2.0/programs/ab.html) - This HTTP load generating tool reports how many requests per second your application can process.
-
--  **[Apache JMeter](http://jmeter.apache.org/)** - provides load testing and performance monitoring for web applications.
-
--  **[Munin](http://munin-monitoring.org/)** - This monitoring system enables you to see your server statistics through a web interface.
-
-### Additional resources:  Scaling, tuning, and load balancing
-
--  [Scaling for the Holidays - To Scale Vertically or Horizontally?](http://www.rackspace.com/blog/scaling-for-the-holidays-part-1-to-scale-vertically-or-horizontally/)
--  [Scaling for the Holidays - Take Advantage of Caching](http://www.rackspace.com/blog/scaling-for-the-holiday-series-part-2-take-advantage-of-caching/%20)
--  [Scaling for the Holidays - Web Server Tuning](http://www.rackspace.com/blog/holiday-scaling-web-server-tuning/)
--  [Scaling for the Holidays - Load Balancers](http://www.rackspace.com/blog/scaling-for-the-holidays-part-4-load-balancers/%20)

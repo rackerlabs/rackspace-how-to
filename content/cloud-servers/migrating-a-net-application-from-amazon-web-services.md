@@ -57,7 +57,7 @@ following figure:
 Using the client that you installed in the preceding section (for
 example, [Cyberduck](/how-to/configuring-rackspace-cloud-files-with-cyberduck)),
 upload the .NET project folder to the Rackspace Cloud Files container
-that you created in the article [Provision cloud resources when migrating from Amazon Web Services](http://www.rackspace.com/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services).
+that you created in the article [Provision cloud resources when migrating from Amazon Web Services](https://support.rackspace.com/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services/).
 
 ### Restore data from Cloud Files to Cloud Servers
 

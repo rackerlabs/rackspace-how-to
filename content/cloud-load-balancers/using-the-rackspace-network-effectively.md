@@ -5,16 +5,14 @@ title: Using the Rackspace network effectively
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-05-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-04-17'
+last_modified_by: Stephanie Fillmon
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
 
 The Rackspace Network is the internal network in each Rackspace region
-(data center). In the Cloud Sites Cloud Control Panel, the Rackspace
-Network was called ServiceNet. In the Cloud Control Panel, it's referred
-to as the Rackspace Network.
+(data center). In the Cloud Control Panel, it's referred to as the Rackspace Network.
 
 ### Using the Rackspace Network internal IP address
 
@@ -38,8 +36,7 @@ offer the first level of network security. For example if you're not
 expecting external traffic to your Cloud Servers, you can create a
 firewall around them and reduce their exposure to outside threats. Note
 that Rackspace creates all new servers with basic security settings,
-however you should follow the instructions located in [Configuring Basic
-Security](/how-to/configuring-basic-security-0)to
+however you should follow the instructions located in [Configuring Basic Security](/how-to/configuring-basic-security) to
 further protect your data.
 
 ### Finding the Rackspace IP address
@@ -54,4 +51,3 @@ Here's an example of a Server Details page:
 #### Related Information
 
 [Learn More About Cloud Servers](/how-to/learn-more-about-cloud-servers)
-

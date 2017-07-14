@@ -5,7 +5,7 @@ title: Create a Grafana dashboard for Rackspace Metrics
 type: article
 created_date: '2015-10-19'
 created_by: Constanze Kratel
-last_modified_date: '2016-06-06'
+last_modified_date: '2016-12-13'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
@@ -21,6 +21,8 @@ This article describes how to deploy a Grafana instance for Rackspace
 Metrics by using a custom Cloud Orchestration template. It also provides
 instructions on how to upload a Grafana dashboard for a database
 instance.
+
+If you would prefer to deploy Grafana without the custom Cloud Orchestration template or upgrade your existing Grafana instance, see the project wiki page: <https://github.com/rackerlabs/blueflood/wiki/Grafana-3.0-with-Blueflood-datasource>.
 
 ### Deploy the Grafana instance for Rackspace Metrics
 

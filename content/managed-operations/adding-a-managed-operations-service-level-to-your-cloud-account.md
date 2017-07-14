@@ -5,8 +5,8 @@ title: Adding a managed operations service level to your cloud account
 type: article
 created_date: '2011-10-11'
 created_by: Rackspace Support
-last_modified_date: '2016-06-22'
-last_modified_by: Nate Archer
+last_modified_date: '2017-04-17'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -35,9 +35,7 @@ of ping, port, or URL.
 ### What operating systems and applications are supported for Cloud Servers with Managed Operations?
 
 You can view the list of supported operating system versions and
-applications for Linux in the following article: [Cloud Servers with
-Managed Operations support for
-Linux.](/how-to/cloud-servers-with-managed-operations-support-for-linux)
+applications for Linux in the following article: [Linux Spheres of Support for Dedicated and Managed Operations.](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
 
 **Note:** Information on Windows support can be found in [Cloud Servers
 with Managed Operations support for
@@ -55,7 +53,7 @@ with the upgrade process.
 
 At this time, the only operating systems we support for a Rackspace
 Managed Operations account are listed in the [articles referenced
-above](/how-to/cloud-servers-with-managed-operations-support-for-linux).
+above](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops).
 If you choose to upgrade to a Managed Operations account, you must
 either delete any active Cloud Servers and images with unsupported
 operating systems or transfer those unsupported images to a separate
@@ -78,9 +76,6 @@ meet the following conditions:
     operating systems.
 -   No Cloud Server images on the account are built on unsupported
     operating systems.
-
-Cloud Sites customers can upgrade their **servers only** to Managed
-Operations.
 
 A technical account manager can assist you to ensure that Managed
 Operations is the best fit for your needs.

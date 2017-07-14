@@ -5,8 +5,8 @@ title: Change account information
 type: article
 created_date: '2015-06-18'
 created_by: David Hendler
-last_modified_date: '2016-06-16'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-06-06'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -30,9 +30,8 @@ the [Cloud Control Panel](https://mycloud.rackspace.com/) by using the following
 **Note:** If you are a Dedicated Hosting customer, you can request this form
 directly from your Account Manager.
 
-1.  In the upper-right corner of the control panel, click your user name and select **Account Settings**.
-2.  In the **Account Details** section, click the **Documents
-    and Forms** link.
+1. In the upper-right corner of the Cloud Control Panel, click the ***userName*** menu and select **Documents and Forms**.
+2.  In the **Rackspace Account Change Forms** section, click the **Assignment and Assumption Form** link.
 3.  Download the **Assignment and Assumption** form and complete it.
 4.  Attach the completed form to a support ticket and submit the ticket.
 
@@ -55,14 +54,13 @@ Request** in the subject line.
 ### New primary contact or billing information
 
 If you have access to the account, you can update the primary contact
-details in the **Account Settings** section in the [Cloud Control Panel](http://mycloud.rackspace.com).
+details in the **My Profile & Settings** section in the [Cloud Control Panel](http://mycloud.rackspace.com).
 
 If you are not the primary contact, you must fill out the **Primary
 Contact Change** form and submit it via a support ticket. You can download this form directly from the Cloud Control Panel by using the following steps:
 
-1.  From the user name menu, select **Account Settings**.
-2.  In the **Account Details** section, click the **Documents
-    and Forms** link.
+1.  From the user name menu, select **Documents and Forms**.
+2.  In the **Rackspace Account Change Forms** section, click the **Primary Contact Change Form** link.
 3.  Download the **Primary Contact Change** form and complete it.
 4.  Attach the completed form to a support ticket and submit the ticket.
 

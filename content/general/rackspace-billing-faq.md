@@ -5,8 +5,8 @@ title: Rackspace billing FAQ
 type: article
 created_date: '2014-01-17'
 created_by: Rackspace Support
-last_modified_date: '2016-08-02'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-06-06'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -20,9 +20,7 @@ Get quick answers to common questions about Rackspace billing.
 Many of our services follow a utility pricing model and are billed for
 hourly usage each month on the anniversary date of the account creation.
 Charges on invoices are based on service usage since the last invoice
-date. The only exception is Cloud Sites, which is invoiced in advance
-of usage per a monthly subscription price. Details about our
-product pricing are located on our [Cloud Pricing Page](http://www.rackspace.com/cloud/public-pricing/).
+date. Details about our product pricing are located on our [Cloud Pricing Page](http://www.rackspace.com/cloud/public-pricing/).
 
 Payments are charged automatically to a credit card.
 
@@ -116,8 +114,7 @@ or are disabled. When you delete the server or service from your
 account, its resources are available for someone else to use and you are no
 longer billed for them.
 
-You can delete cloud servers and services by using the [Cloud Control Panel](http://mycloud.rackspace.com). To cancel a Cloud Sites service
-or Rackspace support for Azure, create a ticket for our billing team.
+You can delete cloud servers and services by using the [Cloud Control Panel](http://mycloud.rackspace.com). To cancel Rackspace support for Azure, create a ticket for our billing team.
 
 #### How do I delete or cancel my services?
 
@@ -134,9 +131,6 @@ submission is your authorized approval for Rackspace to delete and
 cancel your services in their entirety. Rackspace is not liable for data
 loss if you do not have a copy of your data outside of our Cloud
 infrastructure.
-
-The Cloud Sites service can be canceled only after all sites
-are deleted manually from the account.
 
 If you want to keep your account open without receiving future charges,
 you can manually delete all services from your account profile. This

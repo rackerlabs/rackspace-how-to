@@ -15,23 +15,30 @@ permalink: /
 					<li>
 						<a href="/how-to/dedicated-hosting">Dedicated Hosting</a>
                     </li>
-					<li>
-						<a href="https://developer.rackspace.com/docs/user-guides/infrastructure/" class="inactive">Cloud User Guide</a>
-					</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="container">
 		<div class="content home product-type product-type-cloud" id="cloud-display">
+		      <div class="row">
+			      <h3>Rackspace Private Cloud</h3>
+			      <div class="twelve columns">
+				      <div class="four columns primary icon private">
+					      <h4><a href="/how-to/rpc-microsoft/"><span>Rackspace Private Cloud</span> Powered by Microsoft Cloud Platform</a></h4>
+					</div>
+					<div class="five columns icon private">
+						<h4><a href="/how-to/rpc-openstack/"><span>Rackspace Private Cloud</span> Powered by OpenStack</a></h4>
+					</div>
+				</div>
+			</div>
+			<hr/>
+
 			<div class="row">
 				<h3>Compute</h3>
 				<div class="twelve columns">
 					<div class="three columns icon servers primary">
 						<h4><a href="/how-to/cloud-servers/"><span>Cloud</span> Servers</a></h4>
-					</div>
-					<div class="three columns icon sites">
-						<h4><a href="/how-to/cloud-sites/"><span>Cloud</span> Sites</a></h4>
 					</div>
 					<div class="three columns icon images">
 						<h4><a href="/how-to/cloud-images/"><span>Cloud</span> Images</a></h4>
@@ -85,9 +92,6 @@ permalink: /
 					<div class="primary three columns icon databases">
 						<h4><a href="/how-to/cloud-databases/"><span>Cloud</span> Databases</a></h4>
 					</div>
-					<div class="three columns icon big-data">
-						<h4><a href="/how-to/cloud-big-data/"><span>Cloud</span> Big Data</a></h4>
-					</div>
 					<div class="six columns icon queues">
 						<h4><a href="/how-to/cloud-queues/"><span>Cloud</span> Queues</a></h4>
 					</div>
@@ -129,24 +133,6 @@ permalink: /
 				<div class="twelve columns">
 					<div class="primary twelve columns icon managed-operations">
 						<h4><a href="/how-to/managed-operations"><span>Managed</span> Operations</a></h4>
-					</div>
-				</div>
-			</div>
-
-			<hr/>
-
-			<div class="row">
-				<h3>Rackspace Private Cloud</h3>
-				<div class="twelve columns">
-					<div class="four columns primary icon private">
-						<h4>
-							<a href="/how-to/rpc-microsoft/"><span>Rackspace Private Cloud</span> Powered by Microsoft Cloud Platform</a>
-						</h4>
-					</div>
-					<div class="five columns icon private">
-						<h4>
-							<a href="/how-to/rpc-openstack/"><span>Rackspace Private Cloud</span> Powered by OpenStack</a>
-						</h4>
 					</div>
 				</div>
 			</div>

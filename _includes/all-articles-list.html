@@ -1,5 +1,6 @@
 <div class="article-list">
-  {% for article in site.pages %}
+  {% assign doclist = site.pages | sort: 'title'  %}
+  {% for article in doclist %}
     {% if article.product == page.product and article.title != page.title %}
     <div class="article-entry">
       <h4>

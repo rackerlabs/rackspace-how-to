@@ -11,7 +11,7 @@ product: RackspaceMonitoring
 product_url: rackspace-monitoring
 ---
 
-Sometimes, an email alert isn't enough. If you are on call, on the go, or far from Wi-Fi, mobile alerts are a necessity. For the most critical problems, you can set up notifications from multiple form factors, combining SMS with any of our other [notification types](http://www.rackspace.com/cloud/monitoring/features/#alarms).
+Sometimes, an email alert isn't enough. If you are on call, on the go, or far from Wi-Fi, mobile alerts are a necessity. For the most critical problems, you can set up notifications from multiple form factors, combining SMS with any of our other [notification types](https://support.rackspace.com/how-to/rackspace-monitoring-checks-and-alarms/).
 
 <img src="{% asset_path rackspace-monitoring/mobile-alerts-from-rackspace-monitoring/CMSMS1.png %}" alt="" width="320" height="254" border="2" />
 

@@ -5,7 +5,7 @@ title: Cloud Feeds overview
 type: article
 created_date: '2014-07-30'
 created_by: Ross Diaz
-last_modified_date: '2016-01-15'
+last_modified_date: '2017-06-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -13,8 +13,7 @@ product_url: cloud-servers
 
 Rackspace Cloud Feeds is a service that accepts and validates event
 notifications from other Rackspace Cloud services, and presents the data
-to you in a standardized way that is easy to interpret.This article
-provides the following high-level information about Cloud Feeds:
+to you in a standardized way that is easy to interpret.
 
 ### What is Cloud Feeds?
 
@@ -45,27 +44,7 @@ addition, because Cloud Feeds uses the Atom Publishing Protocol
 access notifications from multiple Rackspace Cloud services by using a
 single protocol and format.
 
-### How to grant users access to Cloud Feeds
-
-No registration is required to access Cloud Feeds; it is already
-available through the Cloud Control Panel. Log in and assign the
-**cloudfeeds:observer** role to one or more users by performing the
-following steps:
-
-1.  Log in to the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com/).
-2.  From the **Account** menu (your account name), select **User
-    Management**.
-3.  On the User Management page, click the name of the user that you
-    want to modify.
-4.  Under **Product Access**, ensure that the **Custom (Per
-    Product Access)** option is selected.
-5.  In the **Feeds** menu, select **Observer**.
-6.  Save your changes.
-
-**Note:** For more information about role-based access control, see
-[Overview: Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac).
-
-### How to access Cloud Feeds
+### Access Cloud Feeds
 
 Cloud Feeds events are accessed via the simple Atom Publishing Protocol,
 which is HTTP-based. Several tools are available that can send HTTP

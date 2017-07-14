@@ -5,8 +5,8 @@ title: Reboot Your Server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
-last_modified_date: '2016-07-08'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-01-04'
+last_modified_by: Laura Santamaria
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -30,9 +30,6 @@ To perform a soft reboot of a server, you must be logged in to the
 server using an account with superuser or administrator permissions. For
 information about logging in to a cloud server, see [Connect to a cloud server](/how-to/connect-to-a-cloud-server).
 
-**Note**: OS reboots, such as the `sudo reboot` shown below,  do not
-trigger the FG2NG migration.
-
 For the command you should use to soft reboot your server, see the
 appropriate section for your server operating system:
 
@@ -42,12 +39,17 @@ appropriate section for your server operating system:
 
 #### Windows
 
-Issue a restart request by clicking **Start > Shut down**.
+Select the method that matches your installation:
+
+- Open **Settings** in the Charms Bar. Click **Power > Restart**.
+- Click **Start**. Click the arrow next to **Shut down**, and select **Restart** from the menu.
 
 Alternatively, you can initiate a soft reboot from the command line by
 entering the following command:
 
     shutdown /r
+
+If a dialog box appears, select **Restart** from the dropdown menu. Click **OK**.
 
 ### Perform a hard reboot
 

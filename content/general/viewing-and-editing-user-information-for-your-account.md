@@ -5,48 +5,32 @@ title: Viewing and editing user information for your account
 type: article
 created_date: '2011-09-06'
 created_by: Rackspace Support
-last_modified_date: '2016-06-27'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-06-06'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
 This article provides a closer look at the services available on
-the **Account Settings** and **User Management** pages in the Cloud
+the **My Profile & Settings**, **Account Settings**, and **User Management** pages in the Cloud
 Control Panel. You access these pages from the user name menu located
 in the top-right corner of the control panel.
 
+### My Profile & Settings
+
+Use the My Profile & Settings page to view your primary contact information, view or edit your security settings, and view your account and product permissions.
+
+Use the **Security Settings** section to change your password, enable or disable multi-factor authentication, configure a secret question, and view your API key.
+
 ### Account Settings page
 
-Use the Account Settings page to view or adjust login details, contact
-information for the primary contact on your account, and time zone
-preferences.
+Use the Account Settings page to view your account settings, account details, product preferences, and to view or edit your primary contact information.
 
--   Use the **Login Details** section to update your password, email
-    address, and security question, and to enable multi-factor authentication for the account. Your username is set at the time that
-    you create your account and cannot be changed. To use a different
-    username, you must close the account and create a new one. Each
-    account has only one username, and there are no subaccounts. If you
-    have multiple team members who need to access the Rackspace Cloud
-    account, you must add each one as a member on the **User
-    Management** page.
+In the **Rackspace Account Settings** section, you must have multi-factor authentication enabled before you can edit the settings. To enable multi-factor authentication, click on your username in the upper-right corner and click **My Profile & Settings**.
 
-    Your API key is a unique alphanumeric identifier associated with
-    your account. You can use the API key to manage your assets through
-    a scripting interface. You can view, copy, or reset your API key in
-    the **Login Details** section.
+In the **Primary Contact Information** section, you can view or edit your primary contact information, such as name, address, and phone number.
 
--   In the **Contact Information** section, pay special attention to the
-    information that you have set for the primary contact. The primary
-    contact is the person who is authorized to make service requests,
-    and the specified email address is the only one that is contacted
-    when a service-impacting event occurs. Ensure that the address for
-    the primary contact is set up to receive critical information and is
-    monitored 24 hours a day.
-
--   If you enable multi-factor authentication for the account, you can require that other users of the account use multi-factor authentication, in the **Account-Wide Settings** section. For more information, see [Multi-factor authentication from the Cloud Control Panel](/how-to/multi-factor-authentication-from-the-cloud-control-panel).     
-
--   Select your local time zone in the **Preferences** section.
+You can cancel your account by clicking **Cancel My Account** at the bottom of the page.
 
 ### User Management page
 

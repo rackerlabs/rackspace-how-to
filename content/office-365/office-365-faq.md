@@ -2,13 +2,13 @@
 permalink: office-365-faq/
 audit_date:
 title: Microsoft Office 365 FAQ
-type: product
+type: article
 created_date: '2016-01-20'
 created_by: Nate Archer
 last_modified_date: '2016-01-21'
 last_modified_by: Kelly Holcomb
-product: Control Panel
-product_url: undefined
+product: Office 365
+product_url: office-365
 ---
 
 ### Getting started

@@ -5,8 +5,8 @@ title: RackConnect v3.0 compatibility
 type: article
 created_date: '2014-09-08'
 created_by: Juan Perez
-last_modified_date: '2016-09-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-12-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -19,7 +19,7 @@ This article outlines the compatibility of RackConnect v3.0 with other Rackspace
 
 The following table lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. The **Requirements** column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.
 
-**Note**: Cloud Load Balancers and OnMetal Servers are not compatible with RackConnect v3.0.
+**Note**: Cloud Load Balancers and OnMetal v1 Servers are not compatible with RackConnect v3.0. OnMetal v2 Servers are compatible, but may require provisioning a new Cloud Network in your RackConnect environment. Contact your support team for assistance.
 
 Product | Requirements | Details | Product information
 --- | --- | --- | ---
@@ -32,7 +32,7 @@ Cloud Monitoring | Provisioned public IP address | Cloud Monitoring provides you
 Cloud Networks | None | RackConnect v3.0 depends on and leverages Cloud Networks to connect from your RackConnect cloud servers to your dedicated environment. You use Cloud Networks to create and manage secure, isolated networks in the cloud. These networks are fully single tenant and you have complete control over the network topology, IP addressing, and which cloud servers are attached. Cloud networks are regional in scope and can be attached to any of your cloud servers in a given region. | [Getting Started with Cloud Networks](/how-to/cloud-networks)
 Cloud Orchestration | None | Rackspace Cloud Orchestration helps you set up projects and servers with just a few clicks instead of lengthy installations. You can usually be up and running in less than five minutes, depending on the template that you choose and other factors. Cloud Orchestration provides templates for a LAMP stack to get your web server up and running quickly, a Minecraft server, and a WordPress blog, just to name a few. | [Quick set up with Rackspace Cloud Orchestration](/how-to/quick-set-up-with-rackspace-cloud-orchestration)
 Hadoop | Provisioned public IP address and ServiceNet | Hadoop is an open source project that provides a platform to store and process massive amounts of data. Hadoop uses the Map Reduce paradigm to split large tasks into many smaller chunks and executes them in parallel. Each of these tasks are executed close to the data in the Hadoop Distributed File System. | [Getting Started with Apache Hadoop on Rackspace Cloud](/how-to/getting-started-with-apache-hadoop-on-rackspace-cloud)
-Managed Operations support level | ServiceNet | Managed Operations provides support beyond Managed Infrastructure, including direct assistance with resizes, snapshots, host machine issues, adding and removing servers, and managing IP addresses. To ensure <em><strong>Fanatical Support&reg;</strong></em>, Rackspace provides support for specific software and server configurations on Cloud Servers with Managed Operations support. | [Cloud Servers with Managed Operations support for Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux)
+Managed Operations support level | ServiceNet | Managed Operations provides support beyond Managed Infrastructure, including direct assistance with resizes, snapshots, host machine issues, adding and removing servers, and managing IP addresses. To ensure <em><strong>Fanatical Support&reg;</strong></em>, Rackspace provides support for specific software and server configurations on Cloud Servers with Managed Operations support. | [Linux Spheres of Support for Dedicated and Managed Operations](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
 ObjectRocket | ServiceNet | The ObjectRocket platform is built for scalability, speed, and safety. It provides fully managed instances of MongoDB and Redis in data centers across the globe. <br /><br /> RackConnect v3.0 is <strong>compatible</strong> with <strong>ObjectRocket Redis </strong>instances that have a ServiceNet IP address in the 10.188.0.0/15 range. If an instance has a ServiceNet IP address that is not in this range, contact ObjectRocket support. <br /><br /> RackConnect v3.0 is <strong>compatible</strong> with <strong>MonogoDB</strong>. | [ObjectRocket Getting Started Guide](https://docs.objectrocket.com/getting_started.html)
 
 ### RackConnect v3.0 compatibility with Rackspace dedicated network device offerings
@@ -53,7 +53,7 @@ The following table lists the dedicated offerings that are compatible with RackC
 Network offering | Compatible | Details |
 --- | --- | ---
 Managed Colocation  | Network devices in a Managed Colocation environment are supported only if the network devices are managed by the Network Security team. Customer-managed network devices are not supported. | [Managed Colocation](https://www.rackspace.com/dedicated-servers/colocation)
-Managed Storage | The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment. The Managed Storage offering cannot be used directly with cloud servers. | [Managed Storage](https://www.rackspace.com/managed_hosting/services/storage/)
+Managed Storage | The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment. The Managed Storage offering cannot be used directly with cloud servers. | [Managed Storage](https://www.rackspace.com/managed-hosting/data-storage)
 Managed Virtualization | Yes | [Managed Virtualization](https://www.rackspace.com/cloud/private/managed_virtualization/)
 Private Cloud | Yes | [Private Cloud](https://www.rackspace.com/cloud/private/)
 

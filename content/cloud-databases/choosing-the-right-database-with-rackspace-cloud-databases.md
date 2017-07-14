@@ -5,13 +5,13 @@ title: Choosing the right database with Rackspace Cloud Databases
 type: article
 created_date: '2014-07-16'
 created_by: Ross Diaz
-last_modified_date: '2016-08-01'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2016-12-20'
+last_modified_by: Steve Croce
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
-Cloud Databases supports MySQL 5.1 and 5.6, Percona 5.6 and 5.7, and MariaDB 10 and 10.1.
+Cloud Databases supports MySQL 5.1 and 5.6, Percona 5.6, and MariaDB 10 and 10.1.
 Innovation is happening in each of these communities, and this article
 highlights some of the key aspects to consider when choosing a MySQL
 based datastore that best fits your application.

@@ -5,8 +5,8 @@ title: Timing of account billing
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-06-27'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-04-17'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -16,9 +16,6 @@ Operations SysOps service level, your credit card is charged a US $1.00 authoriz
 
 Thirty days after you sign up, your first invoice is processed. Your
 charges consist of service usage accrued within the first 30 days.
-
-**Note:** The exception is Cloud Sites, which charges for the first 30
-days at sign up and continues to charge in advance of monthly usage.
 
 After the first billing cycle, you are billed every month on the same
 date that you first signed up for service. If you have any questions

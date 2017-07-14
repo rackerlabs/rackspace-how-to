@@ -5,7 +5,7 @@ title: Manage OnMetal Cloud Servers through the API
 type: article
 created_date: '2014-07-24'
 created_by: Russell Haering
-last_modified_date: '2016-01-15'
+last_modified_date: '2017-06-06'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -15,9 +15,7 @@ OnMetal Cloud Servers enables you to boot bare metal servers via the
 Rackspace Cloud Servers API. Use the following steps to set up an
 OnMetal server through the API:
 
-**Note:** For the parallel steps in the Cloud Control Panel, see [Create
-OnMetal Cloud
-Servers](/how-to/create-onmetal-cloud-servers).
+**Note:** For the parallel steps in the Cloud Control Panel, see [Create OnMetal Cloud Servers](/how-to/create-onmetal-cloud-servers).
 
 ### Set up the API client
 
@@ -53,7 +51,7 @@ parameters:
     in the Cloud Control Panel by clicking **Account: *userName* &gt;
     Account Settings**.
 -   **OS\_TENANT\_NAME** Your Rackspace Cloud tenant ID, which is
-    displayed as your **Account \#** in the **Account: *username*** menu
+    displayed as your **Account \#** in the ***userName*** menu
     of the Cloud Control Panel. Do not include the \#.
 
 **IMPORTANT:** OnMetal servers must be created using an SSH key pair.

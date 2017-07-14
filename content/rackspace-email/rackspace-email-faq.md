@@ -5,7 +5,7 @@ title: Rackspace Email FAQ
 type: article
 created_date: '2015-12-02'
 created_by: Rackspace Support
-last_modified_date: '2015-12-02'
+last_modified_date: '2015-06-09'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
@@ -31,7 +31,7 @@ You can find instructions for this in [Add an alias with Rackspace Email](/how-t
 
 #### How many group lists can I create?
 
-There's no limit to how many group lists you can have. The maximum number of recipients for a group list is 50.
+You can create an unlimited number of group lists. Each group list can have an unlimited number of internal recipients and a maximum of 250 external recipients.
 
 #### How can I view my email online?
 

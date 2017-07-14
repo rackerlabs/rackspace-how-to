@@ -5,7 +5,7 @@ title: Cloud DNS FAQ
 type: article
 created_date: '2011-10-25'
 created_by: Rackspace Support
-last_modified_date: '2016-04-12'
+last_modified_date: '2017-04-17'
 last_modified_by: Stephanie Fillmon
 product: Cloud DNS
 product_url: cloud-dns
@@ -38,10 +38,6 @@ Cloud DNS is currently available at no additional cost, and is intended for use 
 #### Can this service be used for Dedicated Servers?
 
 No. The Cloud DNS service is only available for Cloud account resources. Managed and Dedicated customers with RackConnect (i.e. those customers who also have a Cloud account) have access, but can only use the service to manage DNS for their Rackspace Cloud resources.
-
-#### Does Cloud DNS work with Cloud Sites?
-
-Absolutely; in addition to managing DNS in the Cloud Sites Control Panel, you can view, edit and delete Cloud Sites domains can be viewed, edited and deleted via Cloud DNS API. Domain registration is not supported by the Cloud DNS API, but you can still register domains through the existing Cloud Sites Control Panel.
 
 #### How does this work for Hybrid customers?
 

@@ -64,7 +64,7 @@ bug (as of the time of this writing):
 Next, enter the following command to install a metapackage that includes the latest version
 of python-novaclient and the Rackspace extensions all in one go:
 
-    pip install rackspace-novaclient
+    pip install rackspace-novaclient python-novaclient==3.3.0
 
 The "rackspace-novaclient" is a metapackage that causes pip to install the client and all
 Rackspace extensions for the client.  If you have any problems with the metapackage you can

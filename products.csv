@@ -1,6 +1,5 @@
 Category,Product Name,Directory,Number of articles
 Cloud Hosting,Cloud Backup,cloud-backup,21
-Cloud Hosting,Cloud Big Data,cloud-big-data,11
 Cloud Hosting,Cloud Block Storage,cloud-block-storage,14
 Cloud Hosting,Cloud DNS,cloud-dns,22
 Cloud Hosting,Cloud Databases,cloud-databases,23
@@ -12,7 +11,6 @@ Cloud Hosting,Cloud Networks,cloud-networks,26
 Cloud Hosting,Cloud Orchestration,cloud-orchestration,11
 Cloud Hosting,Cloud Queues,cloud-queues,12
 Cloud Hosting,Cloud Servers,cloud-servers,237
-Cloud Hosting,Cloud Sites,cloud-sites,162
 Cloud Hosting,Managed Operations,managed-operations,14
 Cloud Hosting,Managed VMware Services,managed-vmware-services,5
 Cloud Hosting,RackConnect,rackconnect,46
@@ -21,11 +19,11 @@ Cloud Hosting,Rackspace CDN,rackspace-cdn,28
 Cloud Hosting,Rackspace Intelligence,rackspace-intelligence,25
 Cloud Hosting,Rackspace Metrics,rackspace-metrics,8
 Cloud Office,Microsoft Exchange,exchange,63
-Cloud Office,Microsoft Office 365,office-365,2
+Cloud Office,Office 365,office-365,2
 Cloud Office,Microsoft SharePoint,sharepoint,13
 Cloud Office,Microsoft Skype for Business,skype-for-business,6
 Cloud Office,Rackspace Email Archiving,rackspace-email-archiving,14
 Cloud Office,Rackspace Email,rackspace-email,80
 Rackspace Private Cloud,Rackspace Private Cloud Powered by Microsoft Cloud Platform,rpc-microsoft,4
 Rackspace Private Cloud,Rackspace Private Cloud Powered by OpenStack,rpc-openstack,20
-Dedicated Hosting, dedicated-hosting, 2
+Dedicated Hosting,dedicated-hosting,2

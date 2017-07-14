@@ -5,8 +5,8 @@ title: Get Started with Cloud Servers
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
-last_modified_date: '2012-10-02'
-last_modified_by: Tom Hopkins
+last_modified_date: '2017-03-03'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -66,5 +66,5 @@ The following concepts will help you in getting started quickly:
 ### Managed Services Cloud Server Operations
 
 -   [Cloud Server Configuration Options](/how-to/cloud-server-configuration-options)
--   [Cloud Servers with Managed Operations support for Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux)
+-   [Linux Spheres of Support for Dedicated and Managed Operations](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
 -   [Cloud Servers with Managed Operations support for Windows](/how-to/cloud-servers-with-managed-operations-support-for-windows)

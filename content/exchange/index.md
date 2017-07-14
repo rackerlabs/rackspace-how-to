@@ -3,16 +3,14 @@ title: Microsoft Exchange
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2016-11-08'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-06-13'
+last_modified_by: William Loy
 permalink: /exchange/
 product: Microsoft Exchange
 product_url: exchange
 ---
 
 Welcome to Microsoft Exchange hosted by Rackspace! Use this brief step-by-step guide to help you get started.
-
-<hr />
 
 ###  Control Panel basics
 
@@ -21,7 +19,6 @@ Welcome to Microsoft Exchange hosted by Rackspace! Use this brief step-by-step g
 - [General information in the Cloud Office Control Panel](/how-to/general-information-cloud-office-control-panel)
 - [Administrator management: Cloud Office Control Panel](/how-to/administrator-management-cloud-office-control-panel)
 - [View administrator activity in the Cloud Office Control Panel](/how-to/view-administrator-activity-in-the-cloud-office-control-panel)
-- [Cancel Cloud Office services](/how-to/cancel-cloud-office-services)
 - [Upgrades in the Cloud Office Control Panel](/how-to/upgrades-cloud-office-control-panel)
 - [Domains in the Cloud Office Control Panel](/how-to/domains-cloud-office-control-panel)
 - [View invoice history in the Cloud Office Control Panel](/how-to/view-invoice-history-cloud-office-control-panel)

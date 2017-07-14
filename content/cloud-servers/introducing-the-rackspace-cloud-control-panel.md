@@ -5,7 +5,7 @@ title: Introducing the Rackspace Cloud Control Panel
 type: article
 created_date: '2012-03-27'
 created_by: Rackspace Support
-last_modified_date: '2016-07-19'
+last_modified_date: '2017-04-17'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -58,4 +58,4 @@ The control panel provides a variety of ways to perform administrative tasks. Wh
 
 ### Access to other control panels
 
-You can reach the Cloud Sites Control Panel, the Rackspace Intelligence interface, and more by selecting the option from the **Rackspace Cloud** drop-down menu at the top left of the Cloud Control Panel.
+You can reach the Rackspace Intelligence interface and more by selecting the option from the **Rackspace Cloud** drop-down menu at the top left of the Cloud Control Panel.

@@ -5,8 +5,8 @@ title: Serve Your Domain From a Rackspace Cloud Server
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-11'
-last_modified_by: Rose Contreras
+last_modified_date: '2017-05-15'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -30,12 +30,6 @@ name servers by following these steps:
 
 3.  Change the name servers to the Rackspace Cloud name servers:
 
--   **dns1.stabletransit.com**
--   **dns2.stabletransit.com**
-
-The following name servers are associated with our dedicated hosting
-service, and will work as well:
-
 -   **ns.rackspace.com**
 -   **ns2.rackspace.com**
 
@@ -48,6 +42,4 @@ the original domain registrar.
 
 -   <span>For most domains, DNS propagation can take up to
     48 hours.</span>
--   <span>The only product the Rackspace Cloud offers where
-    we <span>*can* act as domain registrar is for [Cloud
-    Sites](http://www.rackspace.com/cloud/sites/).</span></span>
+

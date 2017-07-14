@@ -7,8 +7,6 @@ created_date: '2015-03-03'
 created_by: Kyle Laffoon
 last_modified_date: '2016-02-24'
 last_modified_by: Kyle Laffoon
-product: Retired
-product_url: retired-article
 ---
 
 The enum metrics feature enables you to push state-based metrics (enums) and get a report from the API on the frequency of the occurrence of the values. For example, a common report for the IT teams shows uptime based on the occurrences of the response codes from the server, or the state of the alerts during a period of time. Enum support provides the data to be used in a report or visualization.

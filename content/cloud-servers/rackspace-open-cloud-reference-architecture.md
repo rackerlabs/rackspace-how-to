@@ -5,8 +5,8 @@ title: Rackspace Open Cloud reference architecture
 type: article
 created_date: '2012-08-10'
 created_by: Rae D. Cabello
-last_modified_date: '2016-08-01'
-last_modified_by: Nate Archer
+last_modified_date: '2017-06-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -172,6 +172,6 @@ standards and to takes full advantage of computing resources.
 
 3. [RackConnect](https://www.rackspace.com/cloud/hybrid/rackconnect): Using RackConnect, cloud resources can be connected seamlessly to dedicated hardware, in this case for use as a database server.
 
-4. [Mailgun](http://www.mailgun.com/): Customer email can be sent through **Mailgun**, a Rackspace subsidiary. Customers can also use a payment gateway to meet PCI requirements.
+4. [Mailgun](http://www.mailgun.com/): Customer email can be sent through **Mailgun**, a Rackspace Partner. Customers can also use a payment gateway to meet PCI requirements.
 
 5. [Rackspace Cloud Files](http://www.rackspace.com/cloud/public/files/): Static content can be served through Rackspace Cloud Files and the Akamai CDN for global content delivery.

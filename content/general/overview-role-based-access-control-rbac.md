@@ -5,8 +5,8 @@ title: Learn about Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-04-14'
 created_by: Renee Rendon
-last_modified_date: '2016-09-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-06-06'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -15,7 +15,7 @@ product_url: undefined
 
 This article answers basic questions about the Role-Based Access Control (RBAC) service.
 
-   **Note:** The RBAC service is not currently available for the Cloud Sites, Rackconnect or Mailgun products.
+**Note:** The RBAC service is not currently available for RackConnect.
 
 ### What is RBAC?
 
@@ -205,9 +205,7 @@ New products as they are launched will be RBAC-enabled.
 
 ### Which products will not have RBAC?
 
--   Cloud Sites
 -   RackConnect
--   Mailgun
 
 ### Next section
 

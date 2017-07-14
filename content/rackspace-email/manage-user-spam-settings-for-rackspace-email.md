@@ -5,15 +5,15 @@ title: Manage user spam settings for Rackspace Email
 type: article
 created_date: '2011-03-18'
 created_by: Rackspace Support
-last_modified_date: '2012-11-26'
-last_modified_by: Rae D. Cabello
+last_modified_date: '2017-04-13'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
 This article describes how to manage individual user spam settings and how to save your configuration.
 
-1. [Log in to the Control Panel](https://cp.rackspace.com/).
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 2. Click the **Go to section** menu and select **Domains**.
 3. In the **Spam Filtering** section, click the **Filter Settings**.
 4. If you have multiple domains, select a domain name. Or, to change domains at any time, click the **change domain**.
@@ -45,4 +45,9 @@ into the Quarantine Manager** link. Email that is filtered as spam will be direc
     To receive email updates at an additional address, enter an email
     address in the **Send quarantine notifications to** box.
 
-8. Click the **Save** button.
+8. Set override options by choosing one of the following options:
+
+   - **Set preferences only for users who have not set their own** - This default selection manually toggles the settings on this page and does not affect any current ongoing spam filter settings for other mailboxes.
+   - **Override preferences for all users regardless of their own preferences** - This option manually toggles the settings on this page when you select the radio button and click **Save**. It does not stay enabled, and it only serves as a one-time update for the preferences.
+
+9. Click the **Save** button.

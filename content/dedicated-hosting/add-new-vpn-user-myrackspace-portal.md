@@ -2,7 +2,7 @@
 permalink: add-new-vpn-user-myrackspace-portal/
 audit_date:
 title: Add a new VPN user in the MyRackspace Portal
-type: product
+type: article
 created_date: '2016-11-10'
 created_by: Trevor Becker
 last_modified_date: '2016-11-11'

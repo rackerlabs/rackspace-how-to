@@ -5,8 +5,8 @@ title: Use dig to query nameservers
 type: article
 created_date: '2013-05-28'
 created_by: Jered Heeschen
-last_modified_date: '2016-04-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-05-15'
+last_modified_by: Cat Lookabaugh
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -20,8 +20,8 @@ domain name to your website and email hosting. Essentially, name servers
 tell the internet where to find your website and where to deliver your
 email. Our name servers are:
 
-    dns1.stabletransit.com
-    dns2.stabletransit.com
+	 ns.rackspace.com
+	 ns2.rackspace.com
 
 If you have a domain that you have already registered and you want to
 host it from your Rackspace Cloud Server, you will need to go to the
@@ -39,7 +39,7 @@ now being served by a different IP address.
 perspective of other machines on the Internet.
 
 The `dig` tests we have performed so far contain the option
-"@dns1.stabletransit.com". This option instructs `dig` to query your cloud
+"@ns.rackspace.com". This option instructs `dig` to query your cloud
 server's primary DNS server. With that option we are testing the records
 on your cloud servers's DNS server rather than any DNS records for the
 domain that might be cached on other Internet DNS servers. That means
@@ -51,8 +51,8 @@ When you are happy with the results from the previous tests, it should
 be safe to change the authoritative DNS servers for your domain to your
 server's DNS servers:
 
-    dns1.stabletransit.com
-    dns2.stabletransit.com
+    ns.rackspace.com
+    ns2.rackspace.com
 
 You can set the authoritative DNS servers through your domain's
 registrar via their preferred method (with their own web-based tool or
@@ -73,9 +73,9 @@ public for this purpose.
 
 The result of your test should be:
 
-    dns2.stabletransit.com.
+    ns2.rackspace.com.
 
-    dns1.stabletransit.com.
+    ns.rackspace.com.
 
 If the external DNS server you're querying returns those results, then the change has propagated properly. If you see something different, such as the authoritative DNS servers of your previous
 hosting company, then either the domain has not been transferred properly or the change is taking a while to propagate to the rest of the Internet. The reasons for delay vary, but a wait of several hours before a change completely works its way through the rest of the Internet is

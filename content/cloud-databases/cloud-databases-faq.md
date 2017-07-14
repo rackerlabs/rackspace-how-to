@@ -5,20 +5,18 @@ title: Cloud Databases FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-02-25'
-last_modified_by: Steve Croce
+last_modified_date: '2017-04-17'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
 ### - Getting Started -
 
-#### Can I provision Cloud Databases if I don't have Cloud Servers, Cloud Load Balancers, or Cloud Sites on my account?
+#### Can I provision Cloud Databases if I don't have Cloud Servers or Cloud Load Balancers on my account?
 
 Yes. [High availability instance groups](/how-to/high-availability-for-cloud-databases) allow for both internal connections on their
-data center's internal service network (ServiceNet) as well as external networks via a public IP/hostname. Single instances and replica sets are provisioned only with network interfaces on ServiceNet. Connecting to one of these types of Cloud Databases instances remotely requires either a Cloud Server or Cloud
-Load Balancer to [proxy the
-connection](/how-to/connect-to-a-cloud-databases-instance).
+data center's internal service network (ServiceNet) as well as external networks via a public IP/hostname. Single instances and replica sets are provisioned only with network interfaces on ServiceNet. Connecting to one of these types of Cloud Databases instances remotely requires either a Cloud Server or Cloud Load Balancer to [proxy the connection](/how-to/connect-to-a-cloud-databases-instance).
 
 #### What kind of storage solution does Cloud Databases offer?
 
@@ -142,7 +140,7 @@ directly to your Cloud Files account for storage.
 #### Do you provide database backup and restore features?
 
 Scheduled Backup, on-demand backup and restore operations are currently supported from within
-the Control Panel as well as the Cloud Databases API. For more information, please read the articles [Scheduled Backups for Cloud Databases](/how-to/scheduled-backups-for-cloud-databases) and 
+the Control Panel as well as the Cloud Databases API. For more information, please read the articles [Scheduled Backups for Cloud Databases](/how-to/scheduled-backups-for-cloud-databases) and
 [Managing Backups for Cloud
 Databases](/how-to/managing-backups-for-cloud-databases).
 Alternately you can manage backup operations [via the Cloud Databases
@@ -184,8 +182,8 @@ remove any stored backups.
 
 #### Can I automate my backups?
 
-Yes. With [scheduled backups](/how-to/scheduled-backups-for-cloud-databases) 
-you can set a time of day to take a daily backup and a day of week to take a full backup. 
+Yes. With [scheduled backups](/how-to/scheduled-backups-for-cloud-databases)
+you can set a time of day to take a daily backup and a day of week to take a full backup.
 You can also specify the maximum number of full backups/weeks to retain.  
 
 ------------------------------------------------------------------------
@@ -348,7 +346,7 @@ protected on a redundant SAN.
 
 Cloud Databases provides several options for connecting to your
 database, giving you complete flexibility in how you access your
-database. You can connect to your database by using several methods described at the 
+database. You can connect to your database by using several methods described at the
 following links:
 
 [Public and private access with High Availability Groups](/how-to/high-availability-for-cloud-databases)
@@ -433,7 +431,7 @@ On-demand and scheduled backups are both available for HA instance groups.
 
 #### Can I resize the RAM for my HA instances?
 
-Yes, HA instance groups can be resized. Resizes can only be applied to the entire group 
+Yes, HA instance groups can be resized. Resizes can only be applied to the entire group
 and cannot be applied to individual instances in the HA group.
 
 #### What is the underlying technology for creating HA Cloud Databases instances?
@@ -452,7 +450,7 @@ unavailable, an automatic failover is initiated to the replicas within
 #### What is the pricing for HA instances for Cloud Databases?
 
 HA instances carry a small premium per instance over regular Cloud Databases instances and are charged per instance, similar to replica sets (i.e. An HA group with a master and one slave counts as two instances).
-The additional cost per instance covers the load balancer containers that are added for HA instance groups. 
+The additional cost per instance covers the load balancer containers that are added for HA instance groups.
 You can find the latest pricing on the [Cloud Databases product page](https://www.rackspace.com/cloud/databases).
 
 #### Which databases are supported for HA instances for Cloud Databases?
@@ -474,7 +472,7 @@ Databases](/how-to/high-availability-for-cloud-databases).
 
 #### Can I convert regular instances to High Availability Instances?
 
-Yes. Today, you can convert replica sets to HA groups via the API or control panel. 
+Yes. Today, you can convert replica sets to HA groups via the API or control panel.
 We will be adding the ability to convert a single instance to an HA group at a later date.
 
 ------------------------------------------------------------------------

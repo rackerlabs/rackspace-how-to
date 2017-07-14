@@ -7,8 +7,6 @@ created_date: '2013-07-02'
 created_by: Rackspace Support
 last_modified_date: '2016-01-14'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 **Previous section:** [Provision cloud resources when migrating from Amazon Web Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)

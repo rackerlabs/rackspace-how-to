@@ -10,11 +10,9 @@ product: Managed VMware Services
 product_url: managed-vmware-services
 ---
 
-<p class="lead" markdown="1">Rackspace Managed Virtualization services offer customizable, single-tenant infrastructure that can be architected to support even the most demanding workloads. Our experienced engineers are available 24x7x365 to help architect, deploy, and troubleshoot your hosted VMware environment.</p>
+Rackspace Managed Virtualization services offer customizable, single-tenant infrastructure that can be architected to support even the most demanding workloads. Our experienced engineers are available 24x7x365 to help architect, deploy, and troubleshoot your hosted VMware environment.
 
-<hr />
-
-**Rackspace Private Cloud Powered by VMware vCloud&reg;** (hereafter refered to as Dedicated vCloud) provides a single-tenant hosted private cloud, designed with server, storage, and networking hardware from trusted vendors such as Dell&reg;, EMC&reg;, and Cisco&reg;, that's proactively managed 24x7x365 by our VMware Certified Professionals.
+**Rackspace Private Cloud Powered by VMware vCloud&reg;** (hereafter referred to as Dedicated vCloud) provides a single-tenant hosted private cloud, designed with server, storage, and networking hardware from trusted vendors such as Dell&reg;, EMC&reg;, and Cisco&reg;, that's proactively managed 24x7x365 by our VMware Certified Professionals.
 
 **Server Virtualization powered by VMware&reg;** is a simple, easy-to-consume, managed VMware environment that's perfect for small and medium-sized businesses that want to offload the maintenance and monitoring of the guest OS, VMware software stack, and underlying hardware to Rackspace.
 

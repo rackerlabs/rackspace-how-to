@@ -5,8 +5,8 @@ title: Cloud Server configuration options
 type: article
 created_date: '2014-12-01'
 created_by: Rose Contreras
-last_modified_date: '2016-06-22'
-last_modified_by: Nate Archer
+last_modified_date: '2017-06-06'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -55,16 +55,8 @@ Depending upon your service level, these options are available for the
     Rackspace user name and password, installs and configures the Cloud
     Monitoring agent to the Rackspace defaults, installs and configures
     Cloud Backup to the Rackspace defaults, installs all the support
-    packages, configures Mailgun as the default mail relay service, and
-    enables automatic updates. This is the standard Managed
+    packages, and enables automatic updates. This is the standard Managed
     Operations kick.
-
-`mailgun`
-
--   Available to *Managed Infrastructure* customers.
--   Available to *Managed Operations* customers.
--   Creates a Mailgun account if one doesn't already exist, and then
-    configures Postfix to relay to smtp.mailgun.com.
 
 `backup_agent_only`
 

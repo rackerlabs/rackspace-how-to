@@ -10,9 +10,7 @@ product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
-<p class="lead" markdown="1">Cloud Block Storage lets you extend the storage capacity of your Rackspace Cloud Servers&trade; and OnMetal&trade; Cloud Servers without needing to create a bigger server.</p>
-
-<hr />
+Cloud Block Storage lets you extend the storage capacity of your Rackspace Cloud Servers&trade; and OnMetal&trade; Cloud Servers without needing to create a bigger server.
 
 ###  Overview
 

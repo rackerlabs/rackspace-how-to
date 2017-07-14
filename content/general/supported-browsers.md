@@ -15,5 +15,5 @@ The [Cloud Control Panel](https://mycloud.rackspace.com/) is supported on the fo
 
 - Chrome (latest)
 - Firefox (latest)
-- Safari 6 and 7
-- Internet Explorer 9 and 10
+- Safari (latest)
+- Internet Explorer 11

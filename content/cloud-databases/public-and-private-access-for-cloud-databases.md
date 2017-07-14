@@ -20,8 +20,7 @@ Cloud Database using any of the following methods:
 -   **Connect using the database Hostname string (private access within
     the same Rackspace region)**
 
-If you have additional Rackspace cloud resources, such as Cloud Servers,
-Cloud Sites, and Cloud Load Balancers, you can create a private
+If you have additional Rackspace cloud resources, such as Cloud Servers and Cloud Load Balancers, you can create a private
 connection from these resources to your database using the database
 Hostname string. To use this connection method, the resources must be
 located in the same region. This connection method does not incur
@@ -54,4 +53,3 @@ Database](http://c691244.r44.cf2.rackcdn.com/cloud-databases-network-illustratio
 
 [Connecting to Your Cloud
 Database](/how-to/connect-to-a-cloud-databases-instance "Connecting to Your Cloud Database")
-

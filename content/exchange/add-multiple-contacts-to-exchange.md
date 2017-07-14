@@ -5,8 +5,8 @@ title: Add multiple contacts to Exchange
 type: article
 created_date: '2011-03-18'
 created_by: Rackspace Support
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2017-05-31'
+last_modified_by: Cory Aldrich
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -14,22 +14,16 @@ product_url: exchange
 Exchange only allows internal addresses for email forwarding and
 distribution lists. To use an external address for either of these
 functions, it must be set up as a contact. A contact is simply an
-Exchange alias that points to a real mailbox outside of your domain. To
-add multiple contacts, [log into the control
-panel](https://apps.rackspace.com/?cp), and perform the following
-steps:
+Exchange alias that points to a real mailbox outside of your domain.
 
-1. Mouse over the **Go to section** drop-down menu and select
-   **Microsoft Exchange**.
+1. Log in to the [Cloud Office control panel](https://apps.rackspace.com/?cp).
 
-   <img src="{% asset_path exchange/add-multiple-contacts-to-exchange/cpnavme.gif %}" alt="" />
+2. In the Microsoft Exchange section, click the **Contacts** link.
 
-2. In the **Email Accounts** section, click the **Contacts** link.
-
-   <img src="{% asset_path exchange/add-multiple-contacts-to-exchange/cp_me_editcontact_002.GIF %}" alt="Contacts link highlighted." />
+   <img src="{% asset_path exchange/add-multiple-contacts-to-exchange/microsoft-exchange-contacts-link.png %}" alt="Contacts link highlighted." />
 
 3. If you have multiple domains, select the appropriate domain name.
-   Or, to change domains, click the **change domain** link.
+   Or, to change domains, click the **Change Domain** link.
 
 4. Click the **Add Multiple Contacts** button.
 
@@ -38,14 +32,14 @@ steps:
 
    Use the following column headers:
 
-   - Username (**This is required.** It will be used for the email address, such as username@example.com.)
-   - DisplayName (**This is required.**)
-   - ExternalEmail (**This is required.**)
-   - VisibleToGAL (**This is required.**. 1=Visible, 0=Hidden)
+   - Username (**Required**. It is used for the email address, such as **username@example.com**.)
+   - DisplayName (**Required.**)
+   - ExternalEmail (**Required.**)
+   - VisibleToGAL (**Required.**. 1=Visible, 0=Hidden)
    - Last Name
    - First Name
    - Title
-   - Company,
+   - Company
    - Department
    - Phone Number
    - Street

@@ -5,8 +5,8 @@ title: Overview of Cloud Block Storage
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-09-01'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2016-12-29'
+last_modified_by: Catherine Richardson
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -97,7 +97,7 @@ In this product overview, you will learn how to do the following tasks:
 -   [Prepare your volume for use with a server (Linux or Windows)](/how-to/create-and-attach-a-cloud-block-storage-volume).
 -   [Take snapshots of your volume](/how-to/create-and-use-cloud-block-storage-snapshots).
 -   [Detach and delete a volume](/how-to/detach-and-delete-cloud-block-storage-volumes).
--   [Move a Cloud Block Storage volume between servers](how-to/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another).
+-   [Move a Cloud Block Storage volume between servers](/how-to/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another).
 -   [Attach a Cloud Block Storage volume to an OnMetal server](/how-to/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
 
 

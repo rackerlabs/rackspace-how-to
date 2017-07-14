@@ -1,35 +1,35 @@
 ---
 permalink: use-annotation-metrics/
 audit_date:
-title: Use annotation metrics
+title: Using annotation metrics
 type: article
 created_date: '2016-02-23'
 created_by: Kyle Laffoon
-last_modified_date: '2016-06-06'
+last_modified_date: '2017-01-04'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
 
-Grafana is a popular and beautiful dashboard tool for IT Ops. Rackspace Metrics is designed to meet the functional and performance requirements of enterprise-scale metrics. By integrating with Grafana, Rackspace Metrics changes the cost-structure of metrics collection by replacing the storage component without changing the users' workflow.
+Grafana is a popular dashboard tool for IT Ops. Rackspace Metrics is designed to meet the functional and performance requirements of enterprise-scale metrics. By integrating with Grafana, Rackspace Metrics changes the cost-structure of metrics collection by replacing the storage component without changing the users' workflow.
 
-With the annotation pushed to Rackspace Metrics showing up in Grafana dashboard, customers can now gain insight into the events that might be the cause of the changes in the performance graph.
+When annotations that are sent to Rackspace Metrics appear in a Grafana dashboard, customers can get insight into the events that might have caused the changes in the performance graph.
 
-### Detailed Information
+### Annotations
 
-The concept of "Annotation" can be traced back easily to a blog post by Etsy team, where they use it to make events like release to show up in the performance graph, often providing valuable insights into the changes on the graph.
+The concept of *annotations* can be traced back to a blog post by the Etsy team. In the post, they explain how they used annotations to make events like releases appear in the performance graph, which provided valuable information  about the changes on the graph.
 
-Through Grafana, Rackspace Metrics users can create dashboard that can help identify the performance changes in the system.  While detection is the first step towards managing the application, the next step is often to figure out what has changed.
+Through Grafana, Rackspace Metrics users can create a dashboard that can help identify the performance changes in a system. Although detection is the first step toward managing the application, the next step is to determine what has changed.
 
 <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Anotationsupport-what-changed.png %}" alt="" />
 
-With annotation support, users can submit change event to show along with the graph, adding additional information for the graph on the dashboard. See [Request an annotation](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#retrieve-an-annotation) for additional information. (Mock-ups below)
+With annotation support, users can submit information about change events that appears with the graph. These annotations add information for the graph on the dashboard.
 
 <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Anotattionsupport-change-event.png %}" alt="" />
 
-#### Ingesting Annotation through API
+#### Submit annotations through the API
 
-Annotation is submitted through /events API end point:
+You submit annotations for events through the `/events` API endpoint. Following is an example:
 
     curl https://global.metrics-ingest.api.rackspacecloud.com/v2.0/737305/events -X POST -d '{
           "what": "app03 deployment",
@@ -39,7 +39,7 @@ Annotation is submitted through /events API end point:
         }
     ' -H 'X-Auth-Token: e0247392bdd04ef0afa4f0b868fe99a4' -H 'Content-Type: application/json' -H 'Accept: application/json'
 
-**Note**: The value for the "when" field is the epoch time in milliseconds.  To convert the date strings to and from epoch time, you can use the "date" method in Mac or [http://www.epochconverter.com/](http://www.epochconverter.com/)
+**Note**: The value for the `when` field is the epoch time in milliseconds. To convert the date strings to and from epoch time, you can use the date method in Mac OS X or use [http://www.epochconverter.com/](http://www.epochconverter.com/).
 
     > date +%s
     1452101351
@@ -51,29 +51,35 @@ Annotation is submitted through /events API end point:
     1451940237
 
     > date -r 1451940237
-    Mon Jan  4 12:43:57 PST 2016
+    Mon Jan 4 12:43:57 PST 2016
 
-### Adding Annotation to Grafana dashboard
+For more information about this operation, see [Send an annotation](https://developer.rackspace.com/docs/metrics/v2/ingestion-api-reference/ingestion-events/#send-an-annotation).
 
-1. Click on the gear icon in the upper right-hand corner to open the **Settings** menu and select the **Features** tab.
+### Add annotations to a Grafana dashboard
 
-2. Select the **Annotations** checkbox to enable annotations.
+1. In the upper-right corner of the dashboard, click the gear icon to open the **Settings** window.
 
-3. On the **Add** tab, enter a name for the annotation and select **RackspaceMetrics** as the datasource.
+2. Click the **Features** tab.
+
+3. Select the **Annotations** check box to enable annotations.
+
+4. On the **Add** tab, enter a name for the annotation and select **RackspaceMetrics** as the data source.
 
    <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Annotationsupport-datasource.png %}" alt="" />
 
-4. Add Annotation by Searching for the tag in the **Blueflood event tags** field.
+5. In the **Blueflood event tags** field, search for the annotation's tag.
+
+6. Click **Add**.
 
    <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Anotattionsupport-change-event.png %}" alt="" />
 
-The new annotation shows up in Grafana.
+The new annotation appears in Grafana.
 
 <img src="{% asset_path rackspace-metrics/use-annotation-metrics/Annotationsupport-annotation-appears.png %}" alt="" />
 
-### (optional) Retrieve Annotation from API
+### Retrieve annotations from the API (optional)
 
-If you prefer to use the API command to retrieve your annotation, use the following command.
+If you want to use the API command to retrieve data about your annotations, use the following command:
 
     curl -i -X GET 'http://global.metrics.api.rackspacecloud.com/v2.0/737305/events/getEvents?from=1452105863000&until=1452105883000' \
     > -H "Content-Type: application/json" \
@@ -89,26 +95,16 @@ If you prefer to use the API command to retrieve your annotation, use the follow
 
     [{"tags":"deployment","tenantId":"737305","what":"app03 deployment","when":1452105873000,"data":"deploying prod"}]
 
-### Pricing
+For more information about this operation, see [Retrieve an annotation](https://developer.rackspace.com/docs/metrics/v2/query-api-reference/query-views/#retrieve-an-annotation).
 
-Rackspace Metrics comes bundled free with any cloud or dedicated customer.
+### Troubleshooting
 
-### FAQ
+If you don't see an event for which you created an annotation, ensure that all your API calls return a `200 OK` response code.
 
-#### How can I learn more about Rackspace Metrics product?
+If the response code is `403 Forbidden` and your API calls to other endpoints (like Rackspace Monitoring) with the same tenant and authentication token works, check with the Metrics team to ensure that the account is in the EAP program.
 
-Product Overview:  [http://bit.ly/rax-metrics-overview](http://bit.ly/rax-metrics-overview)
+Also, verify that the dates of the events are within the time window specified by the query.
 
-Grafana support blog post:  [http://bit.ly/grafana-cloudmetrics](http://bit.ly/grafana-cloudmetrics)
+### More information
 
-#### Why don't I see the events that I just pushed?
-
-Make sure all your API calls have 200 OK response code.
-
-  - If it is 403 Forbidden and your API call into other end points (like Rackspace Monitoring) with the same tenant and auth token works, check with metrics team to make sure that the account is in EAP program.
-
-Make sure that the dates of the events are within the time window specified by query.
-
-#### How do I sign up an account for EAP?
-
-Contact <cloudmetrics-earlyaccess@rackspace.com>. For more information on how to sign up for the Early Access Program, see the [Rackspace Metrics Developer Guide](https://developer.rackspace.com/docs/metrics/v2/developer-guide/#document-overview/early-access-program).
+To learn more about the Rackspace Metrics product, see the [Rackspace Metrics Overview](/how-to/rackspace-metrics-overview/).

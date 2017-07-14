@@ -18,8 +18,7 @@ monitor. The agent gathers data based on the checks that you configure,
 including checks for host information and host metrics, and
 custom-defined checks.
 
-For a list of supported operating systems on which the monitoring
-agent can be installed, see [Cloud Servers with Managed Operations Support for Linux](/how-to/cloud-servers-with-managed-operations-support-for-linux).
+Rackspace Montioring agent supports both Windows and Linux platforms. For a list of detailed supported operating systems, see [Rackspace Monitoring support matrix](/how-to/rackspace-monitoring-support-matrix/).
 
 This article describes the following tasks:
 
@@ -32,13 +31,16 @@ This article describes the following tasks:
 -   Upgrade the monitoring agent
 -   Uninstall the monitoring agent
 
-### Install the monitoring agent by using the Rackspace Intelligence interface
+### Install the monitoring agent
+Rackspace Monitoring agents are packaged in the standard way for the ease of installation process.  To check out 
+individual steps for each platform, please see the [Install and configure the agent](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/install-configure/) section of the *Rackspace Monitoring Developer Guide*.
 
 We recommend using the Rackspace Intelligence web-based interface to install
 and configure the monitoring agent. The Rackspace Intelligence
-interface provides easy installation and set up as well as
-graphs for visualizing Rackspace Monitoring. Cloud
-Intelligence has many more monitoring
+interface provides easy installation and set up based on the Windows or Linux platform you select. 
+The Rackspace Intelligence interface also provides graphs for visualizing data collected by Rackspace Monitoring. 
+
+Rackspace Intelligence has many more monitoring
 configuration and visualization options than the Cloud Control Panel,
 including three methods for installing the monitoring
 agent: Quick Install, Step By Step, and Source.
@@ -75,7 +77,7 @@ you can also do within Rackspace Intelligence.
 
 
 The meta packages installation obviates the need to install the
-certificate or create a repository manually.
+certificate or create a repository manually.  This is for Linux distribution only.
 
 1. Log in to the server that you want to monitor.
 
@@ -86,7 +88,7 @@ certificate or create a repository manually.
 ### Configure the monitoring agent by using the agent setup program
 
 After you have installed the agent package on your server, you can
-configure the monitoring agent by running the [agent Setup program](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#run-agent-setup-program).
+configure the monitoring agent by running the [agent Setup program](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/install-configure/#run-agent-setup-program).
 The agent setup program completes the following configuration tasks for
 you:
 
@@ -102,13 +104,8 @@ you:
 
 -   Associates the agent with a monitoring entity.
 
-For more information, see the [Configure the agent with the Setup program](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#run-agent-setup-program)
+For more information, see the [Configure the agent with the Setup program](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/install-configure/#run-agent-setup-program)
 section in the *Rackspace Monitoring Developer Guide*.
-
-### Install the monitoring agent by using other methods
-
-For more information about the monitoring agent and in-depth
-installation and configuration information, see the [Install and configure the agent](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#install-and-configure-the-agent) section of the *Rackspace Monitoring Developer Guide*.
 
 ### Upgrade the agent
 
@@ -118,7 +115,7 @@ system update.
 
 For Windows and other systems that do not have the agent in a package
 repository, you must upgrade the agent manually by following the
-installation instructions found in the [Rackspace Monitoring Developer guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/developer-guide/#install-agent-windows).
+installation instructions found in the [Rackspace Monitoring Developer guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/install-configure/#install-agent-windows).
 
 If you upgrade manually, we recommend that you check for an upgrade
 to the agent every three to four weeks.

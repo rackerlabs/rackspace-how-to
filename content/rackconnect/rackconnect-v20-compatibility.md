@@ -45,8 +45,8 @@ Brocade Load Balancers | Yes, with caveats; see linked article | <a href="/how-t
 
 Network device | Compatible | Details
 --- | --- | ---
-Managed Colocation | Yes | <a href="https://www.rackspace.com/managed_hosting/managed_colocation/">Managed Colocation</a>
-Managed Storage | Yes<sup>1</sup> | <a href="https://www.rackspace.com/managed_hosting/services/storage/">Managed Storage</a>
+Managed Colocation | Yes | <a href="https://www.rackspace.com/dedicated-servers/colocation/">Managed Colocation</a>
+Managed Storage | Yes<sup>1</sup> | <a href="https://www.rackspace.com/managed-hosting/data-storage/">Managed Storage</a>
 Managed Virtualization | Yes | <a href="https://www.rackspace.com/cloud/private/managed_virtualization/">Managed Virtualization</a>
 Private Cloud | Yes | <a href="https://www.rackspace.com/cloud/private/">Private Cloud</a>
 

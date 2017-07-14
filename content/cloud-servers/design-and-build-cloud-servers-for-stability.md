@@ -78,6 +78,7 @@ right recommendations.
 -   [Soasta](https://www.soasta.com/)
 -   [Apica](https://www.apicasystem.com)
 -   [Load Impact](https://loadimpact.com/)
+-   [LoadView](https://www.loadview-testing.com/)
 
 ### RackConnect
 

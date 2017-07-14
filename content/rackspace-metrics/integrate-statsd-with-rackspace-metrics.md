@@ -5,13 +5,20 @@ title: Integrate StatsD with Rackspace Metrics
 type: article
 created_date: '2015-02-05'
 created_by: Constanze Kratel
-last_modified_date: '2016-07-22'
+last_modified_date: '2016-12-13'
 last_modified_by: Shane Duane
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
 
 This article describes how to configure StastD to send metrics to Rackspace Metrics. If you don't have StatsD installed, follow the instructions on the [StatsD Website](https://github.com/etsy/statsd/blob/master/README.md).
+
+You can view metrics submitted through StatsD using the following methods:
+
+- Use client script calling [Rackspace Metrics Query API](https://developer.rackspace.com/docs/metrics/v2/query-api-reference/) directly.
+- Use [Grafana dashboard](/how-to/create-a-grafana-dashboard-for-rackspace-metrics/)
+
+**Note:** Rackspace Intelligence does not allow visulaziation of any metrics submitted outside Rackspace Monitoring at this time.
 
 To configure StatsD for the Rackspace Metrics service, complete the
 following steps:

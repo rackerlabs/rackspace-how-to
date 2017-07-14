@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # Purpose: Identify all *md files in H2 repo where:
-# 1) Created date is the same as last modified date
-# 2) Created date is after date begin date passed in with script call 
-#    and before end date passed in with script call
+# Created date is after date begin date passed in with script call 
+# and before end date passed in with script call
 #
 # Example call: new-files.sh 2016-01-29 2016-04-05
 #
@@ -15,8 +14,11 @@
 # 2) Go to H2 repo content directory (assumption is you are in the scripts dir)
 # 3) Use for loop to go through all *md files in each content sub dir
 #    and list all file names and directories where:
-#    a) create_date and last_modified_date are the same
-#    b) create_date is between begin and end dates (from the script arguments)
+#       create_date is between begin and end dates (from the script arguments)
+#
+# Updates:
+# 7/10/17: remove criteria that create date and modified date must be the same 
+
 
 # assign date arguments to variables
 begdate=$1
@@ -41,16 +43,12 @@ do
    acdate=`echo $cdate | awk -F\' '{print $2}'`
    amdate=`echo $mdate | awk -F\' '{print $2}'`
 
-# if create and mod dates are the same the file is unmodified - proceed
-   if [ "$acdate" = "$amdate" ]; 
-   then
 # if create date is between the begin and end dates passed in - proceed
-      if [[ "$acdate" > "$begdate" ]] && [[ "$acdate" < "$enddate" ]] ; 
-      then
+  if [[ "$acdate" > "$begdate" ]] && [[ "$acdate" < "$enddate" ]] ; 
+  then
 # print out all newly created files
-         echo "File created: " $acdate " " $f;
-         count=$((count+1));
-      fi
-   fi
+     echo "File created: " $acdate " " $f;
+     count=$((count+1));
+  fi
 done
 echo $count " new files added between " $begdate " and " $enddate

@@ -7,8 +7,6 @@ created_date: '2013-12-13'
 created_by: Jered Heeschen
 last_modified_date: '2016-05-12'
 last_modified_by: Kyle Laffoon
-product: Cloud Orchestration
-product_url: cloud-orchestration
 ---
 
 This article shows how to manually add another WordPress site to an existing WordPress Cloud Orchestration stack on Cloud Servers.
