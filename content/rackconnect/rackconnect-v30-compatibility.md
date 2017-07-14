@@ -5,8 +5,8 @@ title: RackConnect v3.0 compatibility
 type: article
 created_date: '2014-09-08'
 created_by: Juan Perez
-last_modified_date: '2016-12-09'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-07-14'
+last_modified_by: Sean Laszakovits
 product: RackConnect
 product_url: rackconnect
 ---
@@ -43,6 +43,7 @@ Network device | Details
 --- | ---
 Cisco ASA Firewalls | [RackConnect network device comparison](/how-to/rackconnect-network-device-comparison)
 Cisco ASA X Series Firewalls | [RackConnect network device comparison](/how-to/rackconnect-network-device-comparison)
+Juniper SRX Series Firewalls | [RackConnect network device comparison](/how-to/rackconnect-network-device-comparison)
 BIG-IP F5 Load Balancers | [Using dedicated load balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
 Brocade Load Balancer | [Using dedicated load balancers with RackConnect](/how-to/using-dedicated-load-balancers-with-rackconnect-v20)
 
