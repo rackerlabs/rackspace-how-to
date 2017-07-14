@@ -5,8 +5,8 @@ title: RackConnect network device comparison
 type: article
 created_date: '2012-11-07'
 created_by: Juan Perez
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-07-14'
+last_modified_by: Sean Laszakovits
 product: RackConnect
 product_url: rackconnect
 ---
