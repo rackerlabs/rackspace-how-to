@@ -98,20 +98,32 @@ into your existing change management and image release process. This option
 allows you to use your existing, hardened images. Consult with the RPCO team for
 a list of the latest supported base operating systems.
 
-#### Multitenancy
+#### Multi-tenant environment
 
-RPCO is a private cloud OpenStack platform in a dedicated physical environment.
-A core element of OpenStack is its support for multitenancy. RPCO leverages
-multitenancy by initially installing a configuration that ensures isolation
-between tenants. Tenant isolation can be used to prevent unrestricted
-communication between business units or application domains. This best practice
-safeguards against cross-VLAN communication by restricting ingress traffic based
-on destination port and source IP addresses. Configurations that allow
-inter-VLAN communication are also possible. RPCO architects work with you to
-understand your needs and to recommend an appropriate solution.
+OpenStack saves costs by allowing users to provision resources at any time and
+those resources will be placed on systems that contain resources for other
+users. In a typical company, this may mean that different applications from
+different departments are running on the same physical server.
 
-This practice extends into the storage platform by leveraging the OpenStack
-Identity security service (keystone).
+The Rackspace OpenStack Private Cloud platform uses several technologies to
+prevent a user from accessing another user's resources or to contain a breach.
+
+[Mandatory Access Control (MAC)](https://en.wikipedia.org/wiki/Mandatory_access_control)
+policies enforced by [AppArmor](https://en.wikipedia.org/wiki/AppArmor)
+provide strong protection between virtual machines. In the event of a breach in
+a single virtual machine, AppArmor policies limit the attacker from moving to
+other virtual machines or onto the hypervisor itself. For more details, review
+the
+[Hardening the virtualization layers](https://docs.openstack.org/security-guide/compute/hardening-the-virtualization-layers.html)
+section of the OpenStack Security Guide.
+
+Proper network segmentation limits the extent of a breach and prevents
+intercommunication between different systems. Rackspace recommends placing
+virtual machines from different users or projects on separate VLANs to prevent
+unauthorized communication. Software defined networks, such as VXLAN networks,
+can subdivide traffic further and allow users to configure their own segmented
+networks. Rackspace architects can create a network solution for your private
+cloud that meets your security and flexibility requirements.
 
 #### Communication
 
