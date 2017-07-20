@@ -1,12 +1,12 @@
 ---
 permalink: security-for-rackspace-private-cloud-powered-by-openstack/
-audit_date: '2016-12-12'
+audit_date: '2017-07-20'
 title: Security for Rackspace Private Cloud Powered By OpenStack
 type: article
 created_date: '2015-03-04'
 created_by: Kenny Johnston
-last_modified_date: '2016-12-12'
-last_modified_by: Laura Santamaria
+last_modified_date: '2017-07-20'
+last_modified_by: Major Hayden
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
@@ -19,10 +19,11 @@ with the security posture and flexibility to meet these challenges.
 
 The key to having a well-secured environment is not just identifying the risks
 but ensuring that appropriate controls are in place and are being actively
-monitored. While RPCO provides the flexibility, ***Fanatical Support<sup>&reg;</sup>***
-brings best practices and expertise to achieve your control objectives.
+monitored. While RPCO provides the flexibility,
+***Fanatical Support<sup>&reg;</sup>*** brings best practices and expertise to
+achieve your control objectives.
 
-This document provides an introductory understanding of the following concepts:
+This document provides an introduction to the following concepts:
 
 1. Security configuration options available within RPCO
 2. Security of your private cloud if hosted at Rackspace
@@ -30,25 +31,76 @@ This document provides an introductory understanding of the following concepts:
 4. Security and ***Fanatical Support*** service for your private cloud hosted
     either at Rackspace or at your data center
 
-### Assumptions
-
-You should have a basic understanding of the following concepts; if not, see the
-linked references:
-
-- The components of [Rackspace Private Cloud Powered By OpenStack](http://www.rackspace.com/cloud/private/)
-    and Rackspace Public Cloud
-- Security industry standards and regulations, including:
-    - [ISO/IEC 27001](https://en.wikipedia.org/wiki/ISO/IEC_27001)
-    - [SSAE 16](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AT-00801.pdf)
-    - [FISMA](http://en.wikipedia.org/wiki/Federal_Information_Security_Management_Act_of_2002)
-    - [HIPAA](http://en.wikipedia.org/wiki/HIPPA)
-- [Differences among software as a service (SaaS), platform as a service (PaaS), and infrastructure as a service (IaaS)](http://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-145.pdf)
-- [OpenStack security information](http://docs.openstack.org/security-guide/content/)
-
 Although Rackspace provides various levels and types of support services, not
-all of the information in this article applies to all such services. For more
-information about which support services meet your needs, contact a sales
-associate.
+all of the information in this article applies to all such services. Contact a
+sales associate for more information about the right support services for your
+business.
+
+### Concepts
+
+This document covers a wide variety of security topics and the following
+sections explain important cloud technology concepts.
+
+#### OpenStack
+
+OpenStack is a community-driven, open source infrastructure management platform
+that provides flexible, reliable access to compute, network, and storage
+infrastructure. It started in 2010 to meet the needs of public and private
+clouds of all sizes in a scalable way.
+
+An OpenStack cloud is made up of multiple services that manage different types
+of infrastructure. Each OpenStack service handles one type of infrastructure
+and the services work together to deliver a cohesive experience for users.
+
+Learn more about
+[how Rackspace manages OpenStack clouds](https://www.rackspace.com/openstack/private)
+and take a deeper dive into the
+[components of an OpenStack cloud](https://www.rackspace.com/openstack/private/openstack).
+
+#### OpenStack Security
+
+The services within an OpenStack cloud are built from the ground up with
+security in mind. All requests must be authenticated and each user must be
+authorized to make a request. Each user, group, and project has quotas to
+ensure that resources are available.
+
+The [OpenStack Security Guide](https://docs.openstack.org/security-guide/)
+covers topics for cloud operators, administrators, and users.
+
+#### Regulations and Compliance
+
+Different business sectors have varying level of regulatory or compliance
+requirements. Rackspace can assist with controls that allow your business to
+meet these compliance requirements in an OpenStack Private Cloud.
+
+The following regulatory and compliance programs may apply to your business:
+
+* [ISO/IEC 27001](https://en.wikipedia.org/wiki/ISO/IEC_27001)
+* [SSAE 16](http://www.aicpa.org/Research/Standards/AuditAttest/DownloadableDocuments/AT-00801.pdf)
+* [FISMA](http://en.wikipedia.org/wiki/Federal_Information_Security_Management_Act_of_2002)
+* [HIPAA](https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act)
+
+#### Cloud Platform Types
+
+There are three main cloud platform types to understand:
+
+  * **Software as a Service (SaaS):** This type of cloud is one that is
+    usually consumed with a subscription and it is hosted in a central
+    location. All of the infrastructure-related work is done by the IaaS
+    provider.
+
+  * **Platform as a Service (PaaS):** In this model, customers can run their
+    own application on a platform that is managed by a service provider.
+    Customers have additional flexibility and control without the burden of
+    maintaining hardware and underlying infrastructure.
+
+  * **Infrastructure as a Service (IaaS):** OpenStack is a type of IaaS
+    platform. This platform provides customers with primitive infrastructure,
+    such as virtual machines, storage allocations, and software-defined
+    networks. All of those primitives are provisioned with APIs.
+
+For a deeper look at the differences between each platform, review the
+[Understanding the cloud computing stack: SaaS, PaaS, IaaS](https://support.rackspace.com/how-to/understanding-the-cloud-computing-stack-saas-paas-iaas/) support page.
 
 ### Security configuration options
 
