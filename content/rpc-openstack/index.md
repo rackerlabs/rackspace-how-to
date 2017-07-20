@@ -21,6 +21,7 @@ You can learn more about Rackspace Private Cloud and OpenStack [on the main prod
 ###  General resources
 
 - [FAQ](how-to/rpc-openstack-faq/)
+- [Security for Rackspace Private Cloud](/how-to/security-for-rackspace-private-cloud-powered-by-openstack/)
 - [Rackspace Private Cloud Support](https://www.rackspace.com/support)
 - [Rackspace Private Cloud Software and Reference Architecture](https://www.rackspace.com/openstack/private/openstack)
 - [Rackspace Private Cloud Resources](https://www.rackspace.com/openstack/private/resources)
