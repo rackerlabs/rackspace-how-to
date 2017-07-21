@@ -83,7 +83,7 @@ If an incoming message never arrived, try the following steps:
 
    If you can successfully send a message from webmail but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify that your SMTP settings are correct by logging in to the [Email Help Tool](https://emailhelp.rackspace.com/).
 
-2. **Determine whether you got a bounce message**
+2. **Determine whether you got a bounce message.**
 
    If so, see [Common email bounce messages](/how-to/common-email-bounces) for possible solutions.
 
