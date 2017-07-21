@@ -49,10 +49,8 @@ Rackspace Email Plus offers more storage and versatility than Rackspace Email. T
     After selecting the domain you would like to upgrade a short video appears explaining the benefits of **Rackspace Email Plus**.
 
 4. After you review the information on this page, click **Upgrade Domain**.
-   
-   **Warning:** Allow at least 15 minutes for the upgrade to complete before making any more changes. 
+
+   **Warning:** Allow the upgrade to complete before making any other changes. The process
+usually takes a few seconds per mailbox being upgraded.  
 
    When the domain has successfully upgraded to Rackspace Email Plus, the mailbox list page appears and a message appears stating "Success! All Rackspace Email users on yourdomainexample.com have been upgraded to Rackspace Email Plus."
-
-  
-
