@@ -48,13 +48,12 @@ Mac users require special attention when migrating from Rackspace Email to Micro
 
    <img src="{% asset_path rackspace-email/prepare-mac-users-for-rackspace-email-to-microsoft-exchange-migration/selectMailAccounts.png %}" />
 
-2.  Click the **IMAP** account that you want to remove.
+2. Click the **IMAP** account that you want to remove.
 
-    **Warning:** Always double-check that you select the correct account. Repeat the steps in the preceding section to back up the mailbox if you are uncertain that the backup was successful. If the account is listed as POP instead of IMAP you should be absolutely certain the back up was successful before proceeding. If it was not, the data will be unrecoverable.
+   **Warning:** Always double-check that you select the correct account. Repeat the steps in the preceding section to back up the mailbox if you are uncertain that the backup was successful. If the account is listed as POP instead of IMAP you should be absolutely certain the back up was successful before proceeding. If it was not, the data will be unrecoverable.
 
-3.  Click on the **Minus sign(-)** sign on the bottom of the window.
-
-4.  Click **OK**.
+3. Click on the **Minus sign(-)** sign on the bottom of the window.
+4. Click **OK**.
 
 After the mailbox has been removed, and your account is ready for migration, reboot your Mac so that your device is ready to re-add your account after your migration is completed.
 
