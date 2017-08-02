@@ -39,6 +39,7 @@ Access to the control panel is the key to the kingdom. Every precaution should b
 Meeting password requirements does not create a password robust enough to stop someone determined to access your account. A strong password is does not fit a pattern. While password requirements help prevent the most egregious of weak passwords, they do not make a password unpredictable which is what we want from a strong password.
 
 Consider the following when crafting a new password:
+
     - Do some research. Is the password you are considering on a list of *Top 25 Most Common Passwords*? If so, you need to start from scratch and craft a new password.
     - Have you used this password before? If so it is time to move on to something new.
     - Do you use this password for other websites or logins? This is never a good idea. If one account is compromised, they are all compromised.
