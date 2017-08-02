@@ -40,16 +40,16 @@ Meeting password requirements does not create a password robust enough to stop s
 
 Consider the following when crafting a new password:
 
-    - Do some research. Is the password you are considering on a list of *Top 25 Most Common Passwords*? If so, you need to start from scratch and craft a new password.
-    - Have you used this password before? If so it is time to move on to something new.
-    - Do you use this password for other websites or logins? This is never a good idea. If one account is compromised, they are all compromised.
-    - Are you repeating patterns in your password? *fourfour44!!* may satisfy a password requirement but it is easily predicted by a program trying to access your most valuable information.
-    - Are there patterns in your password construction? An example would be a password containing a capital letter at the beginning of the password, a symbol at the end and a number in the last two characters.
-    - Do not use personal information or common words or phrases in your password.
+  - Do some research. Is the password you are considering on a list of *Top 25 Most Common Passwords*? If so, you need to start from scratch and craft a new password.
+  - Have you used this password before? If so it is time to move on to something new.
+  - Do you use this password for other websites or logins? This is never a good idea. If one account is compromised, they are all compromised.
+  - Are you repeating patterns in your password? *fourfour44!!* may satisfy a password requirement but it is easily predicted by a program trying to access your most valuable information.
+  - Are there patterns in your password construction? An example would be a password containing a capital letter at the beginning of the password, a symbol at the end and a number in the last two characters.
+  - Do not use personal information or common words or phrases in your password.
         - Do not include your birthday
         - Do not include a family member's birthday
         - Do not include your initials
-    - Create a memorable password by creating a very unique password!
+  - Create a memorable password by creating a very unique password!
         - Example: on3DayWeW!llAllHavEhoV3rCars
 
 It is no longer a question of if a password can be cracked, but how long it will take to crack it. Many password can be cracked in minutes or hours, but a great password will take decades or a millennia for a program to crack.
