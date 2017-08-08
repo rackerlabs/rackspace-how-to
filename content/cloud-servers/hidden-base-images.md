@@ -51,6 +51,7 @@ Fedora 20 (Heisenbug) (PVHVM) | a3307d30-39b9-4abc-be13-1d7134002c2d | 2015-05-2
 Fedora 21 (PVHVM) | 79f41a1d-ed68-40bc-84d5-e7a36dabcb44 | 2016-03-24 | No longer supported by the Fedora Project. This image was the last image of this version published.
 Fedora 22 (PVHVM) | 779851de-9b1e-4500-839a-dc1d6e25cb25 | 2016-06-21 | No longer supported by the Fedora Project. This image was the last image of this version published.
 Fedora 23 (PVHVM) | f597d109-f91f-417e-9818-9ae21dca2262 | 2016-12-27 | No longer supported by the Fedora Project. This image was the last image of this version published.
+Fedora 24 (PVHVM) | 4e284168-69fd-44aa-8d4a-0844058118d9 | 2017-08-08 | No longer supported by the Fedora Project. This image was the last image of this version published.
 
 ### FreeBSD images
 
