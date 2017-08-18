@@ -22,6 +22,7 @@ Images that have been publicly released are never actually deleted, just hidden.
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
 Arch 2013.9 | ba293687-4af0-4ccb-99e5-097d83f72dfe | 2014-03-05 | Replaced by Arch 2014.2.
+Arch 2014.2 | b21af3ef-1a1e-46b5-98ef-bb0c81b25292 | 2017-09-06 | Retired
 
 ### CentOS images
 
@@ -58,12 +59,15 @@ Fedora 24 (PVHVM) | 4e284168-69fd-44aa-8d4a-0844058118d9 | 2017-08-08 | No longe
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
 FreeBSD 9.2 | fb624ffd-81c2-4217-8cd5-da32d32e85c4 | 2014-03-05 | Replaced by FreeBSD 10.0.
+FreeBSD 10  | 1125dfad-61cf-40e4-890c-afdef535dad4 | 2017-09-06 | Retired
+FreeBSD 11  | c656f3c8-12ff-4b2e-9333-9a857c553292 | 2017-09-06 | Retired
 
 ### Gentoo images
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
 Gentoo 13.3 | 73764eb8-3c1c-42a9-8fff-71f6beefc6a7 | 2014-03-05 | Replaced by Gentoo 14.1.
+Gentoo 15.3 | c6693b8d-1e99-4112-b2a0-ceefd18a55ca | 2017-09-06 | Retired
 
 ### OpenSUSE images
 
@@ -72,6 +76,7 @@ Image | ID | Date hidden | Notes
 OpenSUSE 12.3 | 8955d327-9a69-468f-be5c-60f571267406 | 2014-03-05 | Replaced by OpenSUSE 13.1.
 OpenSUSE 13.1 (PVHVM) | 59addab2-1551-4949-b635-bc88f1b6dc7c | 2015-01-15 | No longer supported; this is the last image published.
 OpenSUSE 13.2 (PVHVM) | 79436148-753f-41b7-aee9-5acbde16582c | 2016-05-03 | No longer supported; this is the last image published.
+OpenSUSE Leap 42 | abe0d447-42ea-41ed-aadf-03828639570d | 2017-09-06 | Retired
 
 ### Red Hat Enterprise Linux (RHEL) images
 
@@ -85,6 +90,8 @@ Red Hat Enterprise Linux 6.4 | c6e2fed0-75bf-420d-a744-7cfc75a1889e | 2014-02-20
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
 Scientific Linux 6.4 (PV) | bced783b-31d2-4637-b820-fa02522c518b | 2014-03-05 | Replaced by Scientific Linux 6.4 PVHVM, which uses different virtualization drivers and contains `cloud-init`.
+Scientific Linux 6 (PVHVM) | 51706a83-20cb-42dd-92a8-d704f5a7a1bf | 2017-09-06 | Retired
+Scientific Linux 7 (PVHVM) | 6c0551dd-798d-4b56-b847-de58165dbffa | 2017-09-06 | Retired
 
 ### Ubuntu images
 
