@@ -39,7 +39,7 @@ Warning: If the old email address connects via POP, you will want to migrate the
 
     <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/shared-support.png %}" />
 
-6. Open **Outlook Profile Manager**. You will be taken to a list of existing profiles. Click the **+** sign and name the new profile.
+6. Open **Outlook Profile Manager**. You will be taken to a list of existing profiles. Click the **+** sign and name the new profile. Highlight the new profile, click the gear icon and select **Set as Default**.
 
     <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/profile-manager.png %}" />
 
