@@ -46,7 +46,7 @@ Warning: If the old email address connects via POP, you will want to migrate the
 7. Close **Outlook Profile Manager** and open **Outlook 2016**. You will be prompted to set up your email in the new profile.
 8. Enter the renamed email address and click **Continue**.
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/OL16mac-setup-SC1.png %}" />
+    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/OL16mac-setup-SC2.png %}" />
 
     Note: Outlook 2016 might default to selecting Exchange as the account type. Select **Not Exchange?** in the upper right-hand corner if this happens.
 
