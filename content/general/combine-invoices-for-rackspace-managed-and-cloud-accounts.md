@@ -23,9 +23,15 @@ Instead of paying all of your Rackspace bills separately, you can combine your b
 
    A list of all accounts currently included in your invoice are displayed under the Invoiced Accounts section.
 
-4. Click **Add account to invoice**.
+4. Click **Add Account to Invoice**.
 
-5.
+5. On the Add Account screen, enter the account number that you want to add to the invoice, and then enter the username and password for that account.
+
+6. Click the checkbox to agree to the terms of service, and then click **Add Account**.
+
+   A pop-up dialog box displays and confirms the account information that you want to add to the invoice. Click **Add Account** to confirm.
+   
+After the accounts are consolidated, the Invoiced Accounts section of the **Billing Settings** page displays the new account. 
 
 ### Billing cycle
 
