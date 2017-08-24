@@ -15,7 +15,7 @@ Instead of paying all of your Rackspace bills separately, you can combine your b
 ### Combine invoices
 
 1. For Cloud accounts, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/). For Managed accounts, log in to the [MyRack portal](https://my.rackspace.com/).
-2. Click on your account name in the upper-right corner of the pate, and then click **Billing Overview**.
+2. Click on your account name in the upper-right corner of the page, and then click **Billing Overview** for Cloud accounts and **Transactions** for Managed accounts.
 
    You are redirected to the Rackspace Billing portal.
 
@@ -43,7 +43,7 @@ If your combined invoice includes a Rackspace Managed account, then your next in
 - Combined invoicing is requested on 02/20.
 - On 03/01, an invoice is generated for only the master account.
 - On 03/15, no invoice is generated for the Cloud account.
-- On 04/01, the combined invoice is generated with all Managed and Cloud charges, including the owed Cloud account amount from 02/15 to 04/01.
+- On 04/01, the combined invoice is generated with all Managed and Cloud charges, including the owed Cloud account amount from 02/15 to 03/31.
 - From this point on, the combined invoice is billed on the first of the month.
 
 **Note**: If your Cloud account has discounts applied to it, they are prorated for the period during which no bill is generated.
@@ -56,4 +56,4 @@ To separate a combined invoice, you must contact the account manager to update y
 
 **What types of bills can I combine?**
 
-Currently, you can combine bills from Rackspace Managed and Rackspace Cloud accounts. You cannot combine accounts that are billed in different currencies, are already combined with another invoice, or are of a different account type than Managed or Cloud.
+Currently, you can combine bills from Rackspace Managed and Rackspace Cloud accounts. You cannot combine accounts that are billed in different currencies, already combined with another invoice, a different account type than Managed or Cloud, contracted with different contracting entities, or if there is an outstanding balance on the child account.
