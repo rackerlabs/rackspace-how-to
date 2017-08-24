@@ -4,7 +4,7 @@ title: Combine invoices for Rackspace Managed and Cloud accounts
 type: article
 created_date: '2017-08-07'
 created_by: Stephanie Fillmon
-last_modified_date: '2017-08-07'
+last_modified_date: '2017-08-24'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
