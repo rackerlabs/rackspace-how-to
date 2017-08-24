@@ -31,7 +31,7 @@ These are general settings for Android mobile phones and may vary across Android
 2. Once it launches, tap on **Accounts**.
 3. Tap on **Add Account**.
 4. Select **Email** as the Account Type  and enter the following:
-    - **Email Address:** renamed@yourdomainexample.com (*Use the new mailbox address here*)
+    - **Email Address:** renamed@yourdomainexample.com (*Use the new email address here*)
     - **Password:** You mailbox Password
 
     <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-android-mobile-phone/android-typemail.png %}" />
