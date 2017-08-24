@@ -39,7 +39,7 @@ These are general settings for Android mobile phones and may vary across Android
 5. Tap **Sign In**
 6. Tap **IMAP account**
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-android-mobile-phone/android-type-imap.png %}" />
+    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-android-mobile-phone/account-type-imap.png %}" />
 
 7. Enter the following server details:
 
