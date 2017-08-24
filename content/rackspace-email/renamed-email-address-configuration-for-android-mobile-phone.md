@@ -61,6 +61,7 @@ These are general settings for Android mobile phones and may vary across Android
 10. Tap Next and enter the following:
 
     **Account Name:** Used to distinguish the account in your device
+
     **Your Name:** Name shown on outgoing emails
 
 You have now successfully configured your Android to connect to the renamed mailbox. When you have confirmed your mail data is synced to the phone, you can remove the old account using the previous email address from your phone.
