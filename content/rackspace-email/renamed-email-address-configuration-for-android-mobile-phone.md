@@ -34,12 +34,12 @@ These are general settings for Android mobile phones and may vary across Android
     - **Email Address:** renamed@yourdomainexample.com (*Use the new email address here*)
     - **Password:** You mailbox Password
 
-
+    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-android-mobile-phone/android-typemail.png %}" />
 
 5. Tap **Sign In**
 6. Tap **IMAP account**
 
-
+    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-android-mobile-phone/account-type-imap.png %}" />
 
 7. Enter the following server details:
 
