@@ -65,3 +65,6 @@ These are general settings for Android mobile phones and may vary across Android
     **Your Name:** Name shown on outgoing emails
 
 You have now successfully configured your Android to connect to the renamed mailbox. When you have confirmed your mail data is synced to the phone, you can remove the old account using the previous email address from your phone.
+
+
+Note: You will only be able to sync **Mail** with Rackspace Email. If you need to sync **Mail**, **Contacts**, and **Calendar** items to your mobile device consider upgrading to [**Rackspace Email Plus**](/how-to/upgrade-to-rackspace-email-plus/).
