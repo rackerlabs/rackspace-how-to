@@ -43,6 +43,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 5. Enter the following details:
 
     **Email Address:** renamed@yourdomainexample.com (*Use the new email address here*)
+
     **Password:** Your mailbox password
 
     <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-windows-mobile-phone/account-login.jpg %}" />
@@ -55,11 +56,17 @@ For more information about prerequisite terminology, see [Cloud Office support t
 8.  Enter the following details:
 
     **Incoming email server:** secure.emailsrvr.com
+
     **Account type**: IMAP4
+
     **Username**: renamed@yourdomainexample.com (*Use the new email address here*)
+
     **Password:** Your mailbox password
+
     **Outgoing (SMTP) email server:** secure.emailsrvr.com
+
     **Outgoing server requires authentication:** Checked
+
     **Use the same user name and password for sending email:** Checked
 
 9. Tap **sign in**.
