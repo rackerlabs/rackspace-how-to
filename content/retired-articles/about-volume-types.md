@@ -7,8 +7,6 @@ created_date: '2012-08-14'
 created_by: Susan Million
 last_modified_date: '2016-05-19'
 last_modified_by: Stephanie Fillmon
-product: Cloud Block Storage
-product_url: cloud-block-storage
 ---
 
 Cloud Block Storage offers both a low cost per gigabyte option with standard performance for customers who only require more storage and a high performance option that provides increased storage with higher performance.
