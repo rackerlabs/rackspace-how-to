@@ -1,7 +1,7 @@
 ---
-permalink: export-an-imap-or-pop-email-address-from-outlook-for-windows/
+permalink: export-email-address-data-from-outlook-2016-for-windows/
 audit_date: '2017-08-22'
-title: Export an IMAP or POP email address from Outlook for Windows
+title: Export email address data from Outlook 2016 for Windows
 type: article
 created_date: '2017-08-31'
 created_by: William Loy
@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article provides instructions for exporting a copy of your email address data from Outlook.
+This article provides instructions for exporting a copy of your email address data from Outlook 2016.
 
 ### Prerequisites
 
@@ -39,27 +39,27 @@ It is important that you export a copy of your email address data from Outlook b
 1. Click the **File** tab.
 2. Click **Options** on the left side menu.
 
-    <img src="{% asset_path rackspace-email/export-an-imap-or-pop-email-address-from-outlook-for-windows/options2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/options2016.png %}" />
 
 3. In the **Outlook Options** window, click **Advanced**.
 
-    <img src="{% asset_path rackspace-email/export-an-imap-or-pop-email-address-from-outlook-for-windows/advanced2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/advanced2016.png %}" />
 
 4. Click **Export**.
 
-    <img src="{% asset_path rackspace-email/export-an-imap-or-pop-email-address-from-outlook-for-windows/export2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/export2016.png %}" />
 
 5. In the **Import and Export Wizard**, click **Export to a file**, and then click **Next**.
 
-    <img src="{% asset_path rackspace-email/export-an-imap-or-pop-email-address-from-outlook-for-windows/export_to_file2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/export_to_file2016.png %}" />
 
 6. Click **Outlook Data File (.pst)**, and then click **Next**.
 
-    <img src="{% asset_path rackspace-email/export-an-imap-or-pop-email-address-from-outlook-for-windows/outlook_data-file2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/outlook_data-file2016.png %}" />
 
 7. Select the folder to export, and then click **Next**. In this case you will select the email address at the top of the folder list to export all data.  
 
-    <img src="{% asset_path rackspace-email/export-an-imap-or-pop-email-address-from-outlook-for-windows/export_folder_list2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/export_folder_list2016.png %}" />
 
 8. Click **Browse**, and then select the location where you want the new **.pst** file export to be saved.
 
@@ -69,7 +69,7 @@ It is important that you export a copy of your email address data from Outlook b
 
     Note: You may be prompted to enter a password. This is optional and you can simply click **OK**.
 
-    <img src="{% asset_path rackspace-email/export-an-imap-or-pop-email-address-from-outlook-for-windows/browse_finish2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/browse_finish2016.png %}" />
 
 10. Click **Finish**.
 
