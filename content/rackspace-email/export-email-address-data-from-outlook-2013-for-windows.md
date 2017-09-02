@@ -26,14 +26,14 @@ For more information about prerequisite terminology, see [Cloud Office support t
 There are many situations where you may need to export your email address data from Outlook 2013.
 
     - [Renaming a Rackspace Email address](/how-to/)
-    - Switching from a POP account to an IMAP account()
+    - Switching from a POP account to an IMAP account
     - Migrating to a new domain
-    - Migrating to Microsoft Exchange() or Office 365()
+    - Migrating to [Microsoft Exchange](/how-to/rackspace-email-to-microsoft-exchange-migration/) or [Office 365](/how-to/upgrade-rackspace-email-and-microsoft-exchange-to-office-365-faq/)
 
-It is important that you export a copy of your email address data from Outlook before starting any of the above items to avoid data loss. See instructions for your Outlook version below
+It is important that you export a copy of your email address data from Outlook before starting any of the above items to avoid data loss.
 
 
-#### Export from Outlook 2016
+#### Export from Outlook 2013
 
 1. Click the **File** tab.
 2. Click **Options** on the left side menu.
