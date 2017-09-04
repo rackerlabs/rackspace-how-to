@@ -3,7 +3,7 @@ permalink: export-email-address-data-from-outlook-2013-for-windows/
 audit_date: '2017-09-01'
 title: Export email address data from Outlook 2013 for Windows
 type: article
-created_date: '2017-0-01'
+created_date: '2017-09-01'
 created_by: William Loy
 last_modified_date: '2017-09-01'
 last_modified_by: William Loy
@@ -30,7 +30,7 @@ There are many situations where you may need to export your email address data f
     - Migrating to a new domain
     - Migrating to [Microsoft Exchange](/how-to/rackspace-email-to-microsoft-exchange-migration/) or [Office 365](/how-to/upgrade-rackspace-email-and-microsoft-exchange-to-office-365-faq/)
 
-It is important that you export a copy of your email address data from Outlook before starting any of the above items to avoid data loss.
+It is important that you export a copy of your email address data from Outlook before starting any of the above items to avoid data loss. Follow the applicable link for instructions on exporting from [Outlook 2016 for Windows](/how-to/export-email-address-from-outlook-2016-for-windows/) or [Outlook 2010 for Windows](/how-to/export-email-address-data-from-outlook-2010-for-windows/).
 
 
 #### Export from Outlook 2013
@@ -74,4 +74,4 @@ It is important that you export a copy of your email address data from Outlook b
 
     Warning: Be sure that you click **Finish** in the final step, otherwise the data will not be exported.
 
-Check the folder where you elected to save the export to confirm that the export completed.
+Check the folder where you elected to save the export to confirm that the export completed. If you are ready to import the data into another Outlook 2010 profile, see [Import email address data into Outlook 2013 for Windows]
