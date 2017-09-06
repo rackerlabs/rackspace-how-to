@@ -10,11 +10,11 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Welcome to Rackspace Email! Use this brief step-by-step guide to help you get started. See [Rackspace Office 365](/how-to/office-365) or [Microsoft exchange](/how-to/exchange/) for help with those products.
+Welcome to Rackspace Email! Use this brief step-by-step guide to help you get started. See [Rackspace Office 365](/how-to/office-365) or [Microsoft exchange](/how-to/exchange) for help with those products.
 
 
 ###  Start receiving email
-- [Create mailboxes](/how-to/add-rackspace-email-mailboxes/)
+- [Create mailboxes](/how-to/add-rackspace-email-mailboxes)
 - [Set up your DNS records for Cloud Office email ](/how-to/set-up-dns-records-for-cloud-office-email)
 
 ###  Plan your migration
@@ -27,11 +27,11 @@ Welcome to Rackspace Email! Use this brief step-by-step guide to help you get st
 - [Help users change or recover their password](/how-to/rackspace-email-password-recovery-faq/)
 
 ### Troubleshoot common email issues
-- [Troubleshoot email delivery](/how-to/troubleshoot-email-delivery/)
-- [Troubleshoot a failed email connection](/how-to/troubleshoot-failed-email-connection/)
-- [Troubleshoot rejected emails](/how-to/common-email-bounces/)
-- [Troubleshoot password issues](/how-to/rackspace-email-password-recovery-faq/)
-- [Troubleshoot storage problems](/how-to/rackspace-email-storage-maintenance-and-best-practices/)
+- [Troubleshoot email delivery](/how-to/troubleshoot-email-delivery)
+- [Troubleshoot a failed email connection](/how-to/troubleshoot-failed-email-connection)
+- [Troubleshoot rejected emails](/how-to/common-email-bounces)
+- [Troubleshoot password issues](/how-to/rackspace-email-password-recovery-faq)
+- [Troubleshoot storage problems](/how-to/rackspace-email-storage-maintenance-and-best-practices)
 
 ###  Control Panel basics
 
