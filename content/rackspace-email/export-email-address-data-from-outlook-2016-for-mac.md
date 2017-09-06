@@ -30,7 +30,7 @@ There are many situations where you may need to export your email address data f
     - Migrating to a new domain
     - Migrating to [Microsoft Exchange](/how-to/rackspace-email-to-microsoft-exchange-migration/) or [Office 365](/how-to/upgrade-rackspace-email-and-microsoft-exchange-to-office-365-faq/)
 
-It is important that you export a copy of your email address data from Outlook before starting any of the above items to avoid data loss. Follow the applicable link for instructions on exporting from [Outlook 2016 for Windows](/how-to/export-email-address-from-outlook-2016-for-windows/) or [Outlook 2013 for Windows](/how-to/export-email-address-data-from-outlook-2013-for-windows/).
+It is important that you export a copy of your email address data from Outlook before starting any of the above items to avoid data loss. Follow the applicable link for instructions on exporting from [Outlook 2016 for mac](/how-to/export-email-address-from-outlook-2016-for-mac/) or [Outlook 2013 for mac](/how-to/export-email-address-data-from-outlook-2013-for-mac/).
 
 
 #### Export from Outlook 2016 for Mac
@@ -38,16 +38,20 @@ It is important that you export a copy of your email address data from Outlook b
 1. Click the **File** tab in the upper-left corner.
 2. Click **Export** from dropdown menu
 
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/file_options2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-mac/file_options2016.png %}" />
 
-3. A box will appear asking **What do you want to export?**. Check off all applicable items to be exported and click **Continue**
+3. A box will appear asking **What do you want to export?**. Check off all applicable items to be exported and click **Continue**.
 
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/advanced2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-mac/advanced2016.png %}" />
 
 4. Next you will name the exported file in the space next to **Save As:**
 
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/export2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-mac/export2016.png %}" />
 
 5. A box will appear with the message **Your data has been exported.**. Click **Finish**.
 
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-mac/2016.png %}" />
+
+You have exported a copy of your email data from Outlook 2016 for Mac!
+
+#### Import into Outlook 2016 for Mac
