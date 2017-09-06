@@ -34,50 +34,20 @@ It is important that you export a copy of your email address data from Outlook b
 
 
 #### Export from Outlook 2016 for Mac
-1. Open Outlook 2016 for Mac
+1. Open Outlook 2016 for Mac.
 1. Click the **File** tab in the upper-left corner.
 2. Click **Export** from dropdown menu
 
     <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/file_options2016.png %}" />
 
-3. A box will appear asking **What do you want to export?**. Check off all applicable items to be export
+3. A box will appear asking **What do you want to export?**. Check off all applicable items to be exported and click **Continue**
 
     <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/advanced2016.png %}" />
 
-4. Click **Export**.
+4. Next you will name the exported file in the space next to **Save As:**
 
     <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/export2016.png %}" />
 
-5. In the **Import and Export Wizard**, click **Export to a file**, and then click **Next**.
+5. A box will appear with the message **Your data has been exported.**. Click **Finish**.
 
     <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/2016.png %}" />
-
-6. Click **Outlook Data File (.pst)**, and then click **Next**.
-
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/outlook_data_file2016.png %}" />
-
-7. Select the folder to export, and then click **Next**. In this case you will select the email address at the top of the folder list to export all data.
-
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/folder_list2016.png %}" />
-
-8. Click **Browse**, and then select the location where you want the new **.pst** file export to be saved.
-
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/browse_finish2016.png %}" />
-
-    Note: It is helpful to save the file somewhere that you can easily locate for later use, such as the Desktop.
-
-9. In the File Name box, type the name that you want to use for the new .pst file, and then click **OK**.
-
-    Note: You may be prompted to enter a password. This is optional and you can simply click **OK**.
-
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/password_ok2016.png %}" />
-
-10. Click **Finish**.
-
-
-Note: You may be prompted to enter a password. This is optional and you can simply click **OK**.
-
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-windows/password_ok2016.png %}" />
-
-
-Check the folder where you elected to save the export to confirm that the export completed. If you are ready to import the data into another Outlook 2016 profile, see [Import email address data into Outlook 2016 for Windows]
