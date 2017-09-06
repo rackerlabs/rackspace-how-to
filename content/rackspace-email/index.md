@@ -3,7 +3,7 @@ title: Rackspace Email
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2017-06-13'
+last_modified_date: '2017-09-06'
 last_modified_by: William Loy
 permalink: /rackspace-email/
 product: Rackspace Email
