@@ -17,11 +17,12 @@ This article provides instructions for exporting a copy of your email address da
 
 - **Applies to:** User
 - **Difficulty:** Easy
-- **Time needed:** Approximately 20 minutes. Dependent on amount of data being imported.
+- **Time needed:** Dependent on amount of data being imported
 - **Tools required:**  Access to the Outlook account you wish to import into and a file to import
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
+If you need to export a copy of your email address data from Outlook 2016 for Mac, please reference [Export email address data from outlook 2016 for Mac](/how-to/export-email-address-data-from-outlook-2016-for-mac).
 
 #### Import into Outlook 2016 for Mac
 1. Open Outlook 2016 for Mac.
