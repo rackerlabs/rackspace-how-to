@@ -42,4 +42,4 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
     <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-mac/finish_export2016.png %}" />
 
-You have exported a copy of your email address data from Outlook 2016 for Mac! If you need to import email address data into Outlook 2016 for Mac, see [Import email address data into Outlook 2016 for Mac]
+You have exported a copy of your email address data from Outlook 2016 for Mac! If you need to import email address data into Outlook 2016 for Mac, see [Import email address data into Outlook 2016 for Mac](import-email-address-data-into-outlook-2016-for-mac)
