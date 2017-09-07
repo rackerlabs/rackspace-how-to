@@ -22,7 +22,8 @@ This article provides instructions for exporting a copy of your email address da
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
-If you need to export or import email address data from a different Outlook version reference [Export and Import email address data from Outlook]
+If you need to export or import email address data from a different Outlook version reference [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-in-outlook).
+
 
 #### Export from Outlook 2016
 
