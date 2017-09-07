@@ -5,7 +5,7 @@ title: Export email address data from Outlook 2016 for Mac
 type: article
 created_date: '2017-09-05'
 created_by: William Loy
-last_modified_date: '2017-09-05'
+last_modified_date: '2017-09-06'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -40,6 +40,6 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 5. A box will appear with the message **Your data has been exported.**. Click **Finish**.
 
-    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-mac/2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-from-outlook-2016-for-mac/finish_export2016.png %}" />
 
-You have exported a copy of your email address data from Outlook 2016 for Mac!
+You have exported a copy of your email address data from Outlook 2016 for Mac! If you need to import email address data into Outlook 2016 for Mac, see [Import email address data into Outlook 2016 for Mac]
