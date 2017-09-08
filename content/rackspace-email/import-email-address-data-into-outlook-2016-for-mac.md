@@ -25,6 +25,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 If you need to export or import email address data from a different Outlook version reference [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-in-outlook).
 
 #### Import into Outlook 2016 for Mac
+
 1. Open Outlook 2016 for Mac.
 1. Click the **File** tab in the upper-left corner.
 2. Click **Import** from dropdown menu
