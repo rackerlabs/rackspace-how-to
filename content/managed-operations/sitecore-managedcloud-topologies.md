@@ -12,13 +12,17 @@ product_url: managed-operations
 ---
 
 **Note:** To access other Managed Cloud materials, see the [Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/) article.
-The following table describes differences between various Sitecore XP environments for the Sitecore Managed Cloud service, as well as related Azure components.
-Customers are able to purchase such configurations under both Prod and NonProd SLA.
+
+The following table describes differences between various Sitecore XP environments for the Sitecore Managed Cloud service, as well as their related Azure components.
+
+Customers can purchase these configurations under both Prod and NonProd SLA's.
 
 
-**Note:** Tiers and topologies are subject to availability. Check [Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/) for currently supported Tiers for provisioning new Sitecore Managed Cloud sets, as well as for the Microsoft Azure data center compatibility information.
+**Note:** Tiers and topologies are subject to availability. Check [Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/) for currently supported tiers for provisioning new Sitecore Managed Cloud, as well as for the Microsoft Azure data center compatibility information.
 
 ### Experience Management
+
+
 
 |Component / Performance Rating | xM1 | xM2 | xM3 | xM4 | xM5 |
 |---|---|---|---|---|---|
@@ -39,7 +43,8 @@ Customers are able to purchase such configurations under both Prod and NonProd S
 |Azure Traffic Manager – DNS Queries* | 1 million |	1 million |	1 million | 1 million |	1 million |
 |Health Checks* | + | + | + | + | + |
 |Bandwidth | 20 GB | 40 GB | 40 GB | 60 GB | 100 GB |
-#### * not provisioned by default but supported
+
+* not provisioned by default but supported
 
 
 ### Experience Platform
@@ -63,7 +68,8 @@ Customers are able to purchase such configurations under both Prod and NonProd S
 |Azure Traffic Manager – DNS Queries* | - | 1 million |	1 million |	1 million | 1 million |	1 million |
 |Health Checks* | - | + | + | + | + | + |
 |Bandwidth | 20 GB | 20 GB | 40 GB | 40 GB | 60 GB | 100 GB |
-#### * not provisioned by default but supported
+
+* not provisioned by default but supported
 
 
 ### Experience Database
@@ -87,4 +93,5 @@ Customers are able to purchase such configurations under both Prod and NonProd S
 |Azure Traffic Manager – DNS Queries* | 1 million |	1 million |	1 million | 1 million |	1 million |
 |Health Checks* | + | + | + | + | + |
 |Bandwidth | 20 GB | 40 GB | 40 GB | 60 GB | 100 GB |
-#### * not provisioned by default but supported
+
+* not provisioned by default but supported
