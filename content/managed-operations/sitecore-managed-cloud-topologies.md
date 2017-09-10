@@ -1,5 +1,5 @@
 ---
-permalink: sitecore-managedcloud-topologies/
+permalink: sitecore-managed-cloud-topologies/
 audit_date: '2017-08-16'
 title: Sitecore Managed Cloud Topologies
 type: article
@@ -11,7 +11,7 @@ product: Managed Operations
 product_url: managed-operations
 ---
 
-**Note:** To access other Managed Cloud materials, see the [Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/) article.
+[Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/).
 
 The following table describes differences between various Sitecore XP environments for the Sitecore Managed Cloud service, as well as their related Azure components.
 
@@ -95,3 +95,7 @@ Customers can purchase these configurations under both Prod and NonProd SLA's.
 |Bandwidth | 20 GB | 40 GB | 40 GB | 60 GB | 100 GB |
 
 * not provisioned by default but supported
+
+### Next steps
+
+For more information about Sitecore Managed Cloud, see [Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/).
