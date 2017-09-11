@@ -1,5 +1,5 @@
 ---
-permalink: renamed-email-address-configuration-for-outlook-2016-on-mac/
+permalink: configure-a-renamed-email-address-on-outlook-2016-for-mac/
 audit_date: '2017-08-22'
 title: Configure a renamed email address on Outlook 2016 for Mac
 type: article
