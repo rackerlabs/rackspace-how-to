@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article descries how to configure a renamed email address in Outlook 2016 for Mac.
+After you have renamed a Rackspace Email address, your devices such as desktop computers, laptops, and mobile phones receive new email only after you configure them to connect to the new email address. This article describes how to configure a renamed email address in Outlook 2016 for Mac.
 
 ### Prerequisites
 
@@ -22,13 +22,11 @@ This article descries how to configure a renamed email address in Outlook 2016 f
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
-After you have renamed a Rackspace Email address, your devices such as desktop computers, laptops, and mobile phones receive new email only after you configure them to connect to the new email address.
+**Warning:** If the old email address connects via POP, you must migrate the POP data to an IMAP account so that no data is lost in the rename configuration. Follow the instructions in [Migrate from a POP server to IMAP in Outlook for Mac](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/), before continuing with the instructions for Outlook for 2016 Mac.
 
-Warning: If the old email address connects via POP, you need to migrate the POP data to an IMAP account so that no data is lost in the rename configuration. Follow the instructions in [Migrate from a POP server to IMAP in Outlook for Mac](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/).
+#### Configure mail settings
 
-#### Outlook 2016 for Mac
-
-1. Quit **Outlook 2016** by right-clicking the icon and selecting *Quit*.
+1. Quit Outlook 2016 by right-clicking the icon and selecting **Quit**.
 2. Open **Finder** and select **Applications**.
 3. Highlight **Outlook 2016** in the application menu, and right-click the icon.
 4. Click **Show Package Contents**.
@@ -49,22 +47,22 @@ Warning: If the old email address connects via POP, you need to migrate the POP 
 
     <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/OL16mac-setup-SC1.png %}" />
 
-    Note: If Outlook 2016 defaults to selecting Exchange as the account type, select **Not Exchange?** in the upper right-hand corner.
+    Note: If Outlook 2016 defaults to selecting Exchange as the account type, select **Not Exchange?** in the upper-right corner.
 
 9. Select **IMAP/POP**, and enter the following details:
 
     - **Type:** IMAP
-    - **Email address:** renamedaddress@yourdomainexample.com (*Use the new mailbox address here*)
-    - **Username:** renamedaddress@yourdomainexample.com (*Use the new mailbox address here*)
-    - **Password:** Your mailbox password
-        - *Incoming Server Settings:*
-            - **Incoming Server:** secure.emailsrvr.com
-            - **Port:** 993
-            - **Use SSL to connect:** Checked
-        - *Outgoing Server Settings:*
-            - **Outgoing Server:** secure.emailsrvr.com
-            - **Port:** 465
-            - **Use SSL to connect:** Checked
+    - **Email address:** The new mailbox address
+    - **Username:** The new mailbox address
+    - **Password:** The mailbox password
+    - Incoming Server settings:
+      - **Incoming Server:** secure.emailsrvr.com
+      - **Port:** 993
+      - **Use SSL to connect:** Selected
+    - Outgoing Server settings:
+      - **Outgoing Server:** secure.emailsrvr.com
+      - **Port:** 465
+      - **Use SSL to connect:** Selected
 
     <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/OL16mac-setup-SC2.png %}" />
 
@@ -72,4 +70,4 @@ Warning: If the old email address connects via POP, you need to migrate the POP 
 
 You have now successfully configured Outlook 2016 to connect to the renamed email address.
 
-Warning: If you notice items missing in the new Outlook account, you should import the data from the old profile. See [Migrate from a POP server to Rackspace Email IMAP](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/).
+**Note:** If you notice items missing in the new Outlook account, import the data from the old profile. See [Migrate from a POP server to Rackspace Email IMAP](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/).
