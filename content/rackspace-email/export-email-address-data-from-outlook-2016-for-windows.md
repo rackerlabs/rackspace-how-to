@@ -60,7 +60,7 @@ If you need to export or import email address data from a different Outlook vers
 
     Note: You may be prompted to enter a password. This is optional and you can simply click **OK** to skip it.
 
-    <img src="{% asset_path rackspace-email/export-email-address-from-data-outlook-2016-for-windows/browse_finish2016.png %}" />
+    <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2016-for-windows/browse_finish2016.png %}" />
 
 10. Click **Finish**.
 
