@@ -35,8 +35,8 @@ Regardless of your situation it is important to back up your email data before m
 #### Export from Outlook for Windows
 
 - [Outlook 2016 email address export](/how-to/export-email-address-data-from-outlook-2016-for-windows)
-- [Outlook 2013 email address export](/how-to/export-email-address-from-outlook-2013-for-windows)
-- [Outlook 2010 email address export](/how-to/export-email-address-from-outlook-2010-for-windows)
+- [Outlook 2013 email address export](/how-to/export-email-address-data-from-outlook-2013-for-windows)
+- [Outlook 2010 email address export](/how-to/export-email-address-data-from-outlook-2010-for-windows)
 
 #### Import into Outlook for Windows
 
