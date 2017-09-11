@@ -3,7 +3,7 @@ permalink: export-email-address-data-from-outlook-2016-for-windows/
 audit_date:
 title: Export email address data from Outlook 2016 for Windows
 type: article
-created_date: '2017-08-31'
+created_date: '2017-09-04'
 created_by: William Loy
 last_modified_date: '2017-09-07'
 last_modified_by: William Loy
@@ -22,7 +22,7 @@ This article provides instructions for exporting a copy of your email address da
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
-If you need to export or import email address data from a different Outlook version reference [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-in-outlook).
+If you need to export or import email address data from a different Outlook version reference [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-using-outlook).
 
 
 #### Export from Outlook 2016
@@ -65,4 +65,4 @@ If you need to export or import email address data from a different Outlook vers
 10. Click **Finish**.
 
 
-If you are ready to import the data into another Outlook 2016 profile, see [Import email address data into Outlook 2016 for Windows](how-to/import-email-address-data-into-outlook-2016-for-windows)
+If you are ready to import the data into another Outlook 2016 profile, see [Import email address data into Outlook 2016 for Windows](how-to/import-email-address-data-into-outlook-2016-for-windows).
