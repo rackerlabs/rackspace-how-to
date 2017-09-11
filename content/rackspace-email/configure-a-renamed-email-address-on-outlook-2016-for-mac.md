@@ -31,21 +31,21 @@ For more information about prerequisite terminology, see [Cloud Office support t
 3. Highlight **Outlook 2016** in the application menu, and right-click the icon.
 4. Click **Show Package Contents**.
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/show-pack-contents.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-on-outlook-2016-for-mac/show-pack-contents.png %}" />
 
 5. Click the **Contents** folder, and then click the **SharedSupport** folder.
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/shared-support.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-on-outlook-2016-for-mac/shared-support.png %}" />
 
 6. Open **Outlook Profile Manager** to view the list of existing profiles. Click the **+** sign to add a new profile, and name the new profile. Highlight the new profile, click the gear icon, and select **Set as Default**.
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/profile-manager.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-on-outlook-2016-for-mac/profile-manager.png %}" />
 
 7. Close **Outlook Profile Manager**, and open **Outlook 2016** so that you can set up your email in the new profile.
 
 8. When prompted, enter the renamed email address, and click **Continue**.
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/OL16mac-setup-SC1.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-on-outlook-2016-for-mac/OL16mac-setup-SC1.png %}" />
 
     Note: If Outlook 2016 defaults to selecting Exchange as the account type, select **Not Exchange?** in the upper-right corner.
 
@@ -64,7 +64,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
       - **Port:** 465
       - **Use SSL to connect:** Selected
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-outlook-2016-on-mac/OL16mac-setup-SC2.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-on-outlook-2016-for-mac/OL16mac-setup-SC2.png %}" />
 
 10. Click **Add Account**, and click **Done**.
 
