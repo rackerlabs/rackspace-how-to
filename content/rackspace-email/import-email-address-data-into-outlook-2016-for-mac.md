@@ -30,7 +30,7 @@ If you need to export or import email address data from a different Outlook vers
 1. Click the **File** tab in the upper-left corner.
 2. Click **Import** from dropdown menu
 
-    <img src="{% asset_path rackspace-email/import-email-address-data-into-outlook-2016-for-mac/file_options2016.png %}" />
+    <img src="{% asset_path rackspace-email/import-email-address-data-into-outlook-2016-for-mac/file_import2016.png %}" />
 
 3. A box will appear asking **What do you want to import?**. Select **Outlook for Mac archive file(.olm)** if the file to be imported was also exported from Outlook for Mac.
 
