@@ -56,15 +56,16 @@ For more information about prerequisite terminology, see [Cloud Office support t
 2. In the **Rackspace Email** section, click **Mailboxes**.
 3. In the mailbox list, click the mailbox name for which you want to change the password.
 
-   <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/RSEpasswordresetCPSC2.png %}" />
+    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/RSEpasswordresetCPSC2.png %}" />
 
-4. Under **User Name**, enter the following information:
+4. Beneath the email address, click **RESET PASSWORD**. 
 
-   - **Password:** Enter a new password.
-   - **Confirm:** Enter the new password again.
+    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/reset_password.png %}" />
 
    **Note:** We recommend that you create a password that you have never used before and that remains unique from all your other passwords. Also, longer passwords provide better security for your account.
 
-5. Click **Submit**.
+5. A box will appear prompting you to enter the **New Password** and enter the new password again in the **Confirm Password** field.
 
-   <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/RSEpasswordresetCPSC3.png %}" />
+    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/new_password.png %}" />
+
+6. Click **RESET PASSWORD** in the lower right-hand corner.
