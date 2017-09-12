@@ -1,11 +1,11 @@
 ---
-permalink: renamed-email-address-configuration-for-apple-mail/
-audit_date: '2017-08-23'
-title: Renamed email address configuration for Apple Mail
+permalink: configure-a-renamed-email-address-in-apple-mail/
+audit_date:
+title: Configure a renamed email address for Apple Mail
 type: article
 created_date: '2017-08-23'
 created_by: William Loy
-last_modified_date: '2017-08-23'
+last_modified_date: '2017-09-12'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -33,11 +33,11 @@ Warning: If the old email address connects via POP, you will want to migrate the
 1. Launch **Mail**. If **Mail** is not in your dock, *Command (⌘) + Space Bar*. Then type **Mail** in the Spotlight search. Press enter to launch the **Mail** application.
 2. Within **Mail**, click **Mail** on the top left. Then select **Add Account**.
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-apple-mail/mail_addaccountdropdown.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-in-apple-mail/mail_addaccountdropdown.png %}" />
 
 3. In the pop-up window, select **Other Mail Account** and click **Continue**.
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-apple-mail/accounttype_imap.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-in-apple-mail/accounttype_imap.png %}" />
 
 4. Enter the following:
 
@@ -46,7 +46,7 @@ Warning: If the old email address connects via POP, you will want to migrate the
     - **Password:** Your mailbox password
     - Click **Sign In**
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-apple-mail/imap_logindetails.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-in-apple-mail/imap_logindetails.png %}" />
 
 5. You will see an alert which says Unable to verify account name or password. Along with this alert, you will see more fields that require additional info. Fill in the following details:
 
@@ -57,7 +57,7 @@ Warning: If the old email address connects via POP, you will want to migrate the
     - **Incoming Mail Server:** secure.emailsrvr.com
     - **Outgoing Mail Server:** secure.emailsrvr.com
 
-    <img src="{% asset_path rackspace-email/renamed-email-address-configuration-for-apple-mail/imap_serversettings.png %}" />
+    <img src="{% asset_path rackspace-email/configure-a-renamed-email-address-in-apple-mail/imap_serversettings.png %}" />
 
     Note: Apple Mail will usually clear the *User Name* field after entering the *Incoming and Outgoing Mail Server* fields. Ensure your *User Name* is filled in with your email address *after* entering the server information and *before* clicking *Sign in*
 
