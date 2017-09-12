@@ -15,7 +15,7 @@ This article describes how to update your Sitecore license file. An up to date l
 
 ### Prerequisites
 
-- Familiarity with [deploying to Sitecore Cloud using FTP](/how-to/deploy-to-sitecore-cloud-using-ftp/). If your content includes changes that depend on custom code, deploy your updated code before publishing new content.
+- Familiarity with [deploying to Sitecore Cloud using FTP](/how-to/deploy-to-sitecore-cloud-using-ftp). If your content includes changes that depend on custom code, deploy your updated code before publishing new content.
 
 - An FTP client (for example, [FileZilla](https://filezilla-project.org) or [Cyberduck](https://cyberduck.io/?l=en))
 
