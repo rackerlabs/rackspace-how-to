@@ -1,12 +1,12 @@
 ---
 permalink: sitecore-managed-cloud-topologies/
-audit_date: '2017-08-16'
-title: Sitecore Managed Cloud Topologies
+audit_date: 
+title: Sitecore Managed Cloud topologies
 type: article
 created_date: '2017-08-16'
 created_by: Juan Garza
-last_modified_date: '2017-08-16'
-last_modified_by: Juan Garza
+last_modified_date: '2017-09-11'
+last_modified_by: Nate Archer
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -18,11 +18,11 @@ The following table describes differences between various Sitecore XP environmen
 Customers can purchase these configurations under both Prod and NonProd SLA's.
 
 
-**Note:** Tiers and topologies are subject to availability. Check [Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/) for currently supported tiers for provisioning new Sitecore Managed Cloud, as well as for the Microsoft Azure data center compatibility information.
+**Note:** Tiers and topologies are subject to availability. Check [Sitecore Managed Cloud Premium – FAQ](https://support.rackspace.com/how-to/sitecore-cloud-faq/) for currently supported tiers for provisioning new Sitecore Managed Cloud, as well as Microsoft Azure data center compatibility information.
 
 ### Experience Management
 
-
+* = not provisioned by default but supported
 
 |Component / Performance Rating | xM1 | xM2 | xM3 | xM4 | xM5 |
 |---|---|---|---|---|---|
@@ -44,10 +44,12 @@ Customers can purchase these configurations under both Prod and NonProd SLA's.
 |Health Checks* | + | + | + | + | + |
 |Bandwidth | 20 GB | 40 GB | 40 GB | 60 GB | 100 GB |
 
-* not provisioned by default but supported
+* = not provisioned by default but supported
 
 
 ### Experience Platform
+
+* = not provisioned by default but supported
 
 |Component / Performance Rating | xP0 | xP1 | xP2 | xP3 | xP4 | xP5 |
 |---|---|---|---|---|---|---|
@@ -69,10 +71,9 @@ Customers can purchase these configurations under both Prod and NonProd SLA's.
 |Health Checks* | - | + | + | + | + | + |
 |Bandwidth | 20 GB | 20 GB | 40 GB | 40 GB | 60 GB | 100 GB |
 
-* not provisioned by default but supported
-
-
 ### Experience Database
+
+* = not provisioned by default but supported
 
 |Component / Performance Rating | xDB1 | xDB2 | xDB3 | xDB4 | xDB5 |
 |---|---|---|---|---|---|
@@ -93,8 +94,6 @@ Customers can purchase these configurations under both Prod and NonProd SLA's.
 |Azure Traffic Manager – DNS Queries* | 1 million |	1 million |	1 million | 1 million |	1 million |
 |Health Checks* | + | + | + | + | + |
 |Bandwidth | 20 GB | 40 GB | 40 GB | 60 GB | 100 GB |
-
-* not provisioned by default but supported
 
 ### Next steps
 
