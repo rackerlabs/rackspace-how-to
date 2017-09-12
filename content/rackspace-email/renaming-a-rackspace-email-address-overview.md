@@ -5,13 +5,13 @@ title: Renaming a Rackspace Email address overview
 type: article
 created_date: '2017-09-11'
 created_by: William Loy
-last_modified_date: '2017-09-11'
+last_modified_date: '2017-09-12'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-You can rename an existing Rackspace Email address. This article provides an overview of the process, including information about backing up mail data, renaming the address, reconnecting to the address from your devices, and troubleshooting. 
+You can rename an existing Rackspace Email address. This article provides an overview of the process, including information about backing up mail data, renaming the address, reconnecting to the address from your devices, and troubleshooting.
 
 ### Prerequisites
 
@@ -33,14 +33,14 @@ For instructions, see [Rename a Rackspace Email address](/how-to/rename-a-racksp
 
 ### Connect to the newly named address
 
-After you have backed up the mail data locally, you are ready to connect to the renamed mailbox. Use the following instructions for your mail client. 
+After you have backed up the mail data locally, you are ready to connect to the renamed mailbox. Use the following instructions for your mail client.
 
 #### Desktop clients
 
-- [Outlook 2016, 2013 and 2010 for Windows](/how-to/configure-a-renamed-email-address-configuration-for-outlook-on-windows)
-- [Outlook 2016 for Mac](/how-to/configure-a-renamed-email-address-configuration-for-outlook-2016-on-mac)
-- [Outlook 2011 for Mac](/how-to/configure-a-renamed-email-address-configuration-for-outlook-2011-on-mac)
-- [Apple Mail](/how-to/configure-a-renamed-email-address-configuration-for-apple-mail)
+- [Outlook 2016, 2013 and 2010 for Windows](/how-to/configure-a-renamed-email-address-on-outlook-on-windows)
+- [Outlook 2016 for Mac](/how-to/configure-a-renamed-email-address-on-outlook-2016-for-mac)
+- [Outlook 2011 for Mac](/how-to/configure-a-renamed-email-address-on-outlook-2011-for-mac)
+- [Apple Mail](/how-to/configure-a-renamed-email-address-in-apple-mail)
 
 #### Mobile clients
 
@@ -65,6 +65,3 @@ Yes. When a mailbox is renamed, an alias of the old email address is automatical
 #### Did my password change now that I have a new email address?
 
 No. Although we recommended changing your password regularly to keep your account secure, the rename process does not change the password.
-
-
-
