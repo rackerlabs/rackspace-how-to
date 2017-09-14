@@ -16,24 +16,21 @@ This article explains how to delete a Rackspace email mailbox in your Cloud Offi
 ### Prerequisites
 
 - **Applies to:** Administrator
-
 - **Difficulty:** Easy
-
 - **Time needed:** Approximately 5 minutes
-
 - **Tools required:**  Cloud Office Control Panel access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 
-### Disable versus delete
+### Block access versus delete
 
-It is important to know the difference between disabling a mailbox and deleting a mailbox.
+It is important to know the difference between blocking access to a mailbox and deleting a mailbox.
 
-- Disabling a mailbox prevents access to the mailbox. When a mailbox is disabled, it remains on your account and you continue to be billed for it. The mailbox retains its previous data and receives new mail sent to it.
+- Blocking access to a mailbox prevents users from accessing the mailbox. When mailbox access is blocked, it remains on your account and you continue to be billed for that mailbox. The mailbox retains its previous data and receives new mail sent to it. If you simply need to block access to a mailbox rather than deleting it, please see [Block mailbox access](/how-to/block-mailbox-access) for instructions.
 
 - Deleting a mailbox removes that mailbox and all of its data from Rackspace's
-servers. After you have deleted a mailbox, you must contact Support to have that change reflected on your bill.
+servers.
 
 If you need any of the data in the mailbox, you must export the data before you delete the mailbox. Data exports must be performed through a [local mail client](/how-to/cloud-office-support-terminology) such as Outlook.
 
