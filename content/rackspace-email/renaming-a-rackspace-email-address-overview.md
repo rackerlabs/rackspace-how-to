@@ -37,7 +37,7 @@ After you have backed up the mail data locally, you are ready to connect to the 
 
 #### Desktop clients
 
-- [Outlook 2016, 2013 and 2010 for Windows](/how-to/configure-a-renamed-email-address-on-outlook-on-windows)
+- [Outlook 2016, 2013 and 2010 for Windows](/how-to/configure-a-renamed-email-address-on-outlook-for-windows)
 - [Outlook 2016 for Mac](/how-to/configure-a-renamed-email-address-on-outlook-2016-for-mac)
 - [Outlook 2011 for Mac](/how-to/configure-a-renamed-email-address-on-outlook-2011-for-mac)
 - [Apple Mail](/how-to/configure-a-renamed-email-address-in-apple-mail)
