@@ -38,7 +38,7 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
 
             You will want to update the following Name Server records at your registrar to the following records:
 
-              Primary: **DNS1.NAME-SERVICES.COM**
+              Primary: **DNS1.NAME-SERVICES.COM**</br>
             Secondary: **DNS2.NAME-SERVICES.COM**
             Secondary: **DNS3.NAME-SERVICES.COM**
             Secondary: **DNS4.NAME-SERVICES.COM**
