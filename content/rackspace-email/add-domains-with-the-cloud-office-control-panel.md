@@ -4,7 +4,7 @@ audit_date:
 title: Add domains with the Cloud Office Control Panel
 type: article
 created_date: '2014-04-10'
-created_by: Mawutor Amesawu
+created_by: William Loy
 last_modified_date: '2017-09-15'
 last_modified_by: William Loy
 product: Rackspace Email
@@ -58,5 +58,3 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
         4. [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email) to start receiving email.
 
 5. You have successfully added a domain to your Cloud Office account!
-
-Yo
