@@ -38,13 +38,17 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
             You will want to update the following Name Server records at your registrar to the following records:
 
              `Primary: DNS1.NAME-SERVICES.COM
+
             Secondary: DNS2.NAME-SERVICES.COM
+
             Secondary: DNS3.NAME-SERVICES.COM
+
             Secondary: DNS4.NAME-SERVICES.COM
+
             Secondary: DNS5.NAME-SERVICES.COM`
 
     - Option 3: **I want to register this domain(price varies)** Rackspace will charge an annual renewal fee to register this domain and host my DNS records.
         1.  Check the services you would like to include on the domain, click **Save**.
         2. Confirm your purchase by clicking **Register Domain** and then [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email) to start receiving email.
 
-          **Note:** When you purchase a new domain, a verification email is sent to the email address on record. You must click the verification link in the email within 15 days to avoid any disruption to your domains. For more information, see [Additional information about Registrant Benefits and     Responsibilities](http://www.rackspace.com/information/legal/RAAInfo).
+        **Note:** When you purchase a new domain, a verification email is sent to the email address on record. You must click the verification link in the email within 15 days to avoid any disruption to your domains. For more information, see [Additional information about Registrant Benefits and     Responsibilities](http://www.rackspace.com/information/legal/RAAInfo).
