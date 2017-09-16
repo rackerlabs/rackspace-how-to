@@ -24,9 +24,20 @@ This article explains how to add a domain in your Cloud Office Control Panel.
 To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
 
 1.  From the **Go to section** menu, select **Domains**.
+
+    <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/go_to_domains.png %}" />
+
 2.  In the **Manage** section, click **Domains**.
+
+    <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/manage_domains.png %}" />
+
 3. Click **Add Domain**.
+
+    <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/add_domain.png %}" />
+
 4.  Enter the domain name in the **Domain Name** field and select the applicable option.
+
+    <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/domain_name.png %}" />
 
     - Option 1: **I own this domain** I will continue to use my current domain registrar and DNS hosting company and I will point my [MX records](/how-to/dns-record-definitions) to Rackspace servers.
         1. Select the services you would like to include on the domain, click **Save**
