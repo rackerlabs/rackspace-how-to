@@ -40,13 +40,13 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
     <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/domain_name.png %}" />
 
     - Option 1: **I own this domain** I will continue to use my current domain registrar and DNS hosting company and I will point my [MX records](/how-to/dns-record-definitions) to Rackspace servers.
-        1. Select the services you would like to include on the domain, click **Save**
-        2. [Create mailboxes](/how-to/add-rackspace-email-mailboxes)
+        1. Select the services you would like to include on the domain, click **Save**.
+        2. [Create mailboxes](/how-to/add-rackspace-email-mailboxes).
         3. [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email) to start receiving email at Rackspace.
 
     - Option 2: **I own this domain and want Rackspace to Host my DNS** I will continue to use my current domain registrar, but I would like Rackspace to host my [DNS](/how-to/set-up-dns-records-for-cloud-office-email).  
         1. Select the services you would like to include on the domain, click **Save**.
-        2. [Create mailboxes](/how-to/add-rackspace-email-mailboxes)
+        2. [Create mailboxes](/how-to/add-rackspace-email-mailboxes).
         3. [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email). In order for these records to become active, you must first contact your domain's current registrar and request that the Name Server records be switched over to Rackspace's Name Servers.
 
         4. You will want to [configure your DNS records](/how-to/set-up-dns-records-for-cloud-office-email) within the Cloud Office Control Panel **BEFORE** you change the Name Server records so that you will not experience any interruption of service.
