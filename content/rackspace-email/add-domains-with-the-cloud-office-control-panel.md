@@ -25,6 +25,7 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
 
 1.  From the **Go to section** menu, select **Domains**.
 2.  In the **Manage** section, click **Domains**.
+3. Click **Add Domain**.
 3.  Enter the domain name in the **Domain Name** field and select the applicable option.
 
     - Option 1: **I own this domain** I will continue to use my current domain registrar and DNS hosting company and I will point my [MX records](/how-to/dns-record-definitions) to Rackspace servers.
@@ -37,7 +38,7 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
 
             You will want to update the following Name Server records at your registrar to the following records:
 
-             `Primary: DNS1.NAME-SERVICES.COM
+             Primary: DNS1.NAME-SERVICES.COM
 
             Secondary: DNS2.NAME-SERVICES.COM
 
@@ -45,7 +46,7 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
 
             Secondary: DNS4.NAME-SERVICES.COM
 
-            Secondary: DNS5.NAME-SERVICES.COM`
+            Secondary: DNS5.NAME-SERVICES.COM
 
     - Option 3: **I want to register this domain(price varies)** Rackspace will charge an annual renewal fee to register this domain and host my DNS records.
         1.  Check the services you would like to include on the domain, click **Save**.
