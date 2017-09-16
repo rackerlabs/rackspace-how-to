@@ -53,10 +53,10 @@ To add a domain, log in to the [Cloud Office Control Panel](https://cp.rackspace
 
             You will want to update the following Name Server records at your registrar to the following records:
 
-              Primary: **DNS1.NAME-SERVICES.COM**</br>
-            Secondary: **DNS2.NAME-SERVICES.COM**</br>
-            Secondary: **DNS3.NAME-SERVICES.COM**</br>
-            Secondary: **DNS4.NAME-SERVICES.COM**</br>
+              Primary: **DNS1.NAME-SERVICES.COM**<br>
+            Secondary: **DNS2.NAME-SERVICES.COM**<br>
+            Secondary: **DNS3.NAME-SERVICES.COM**<br>
+            Secondary: **DNS4.NAME-SERVICES.COM**<br>
             Secondary: **DNS5.NAME-SERVICES.COM**
 
     - Option 3: **I want to register this domain(price varies)** Rackspace will charge an annual renewal fee to register this domain and host my DNS records.
