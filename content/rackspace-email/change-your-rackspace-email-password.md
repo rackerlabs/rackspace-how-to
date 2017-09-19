@@ -24,7 +24,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Change your password through webmail
 
-If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Webmail <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/reset_user_password_thumb.png %}" />](https://www.youtube.com/watch?v=wdEXE9JQKfk).
+ If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Webmail <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/reset_user_password_thumb.png %}" />](https://www.youtube.com/watch?v=wdEXE9JQKfk).
 
 1. Log in to your mailbox at [apps.rackspace.com](https://apps.rackspace.com/index.php).
 
@@ -52,7 +52,7 @@ If you prefer a video tutorial, please see [Rackspace Email - Password Resets: W
 
 ### Change a password through Cloud Office Control Panel
 
-If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Admin Control Panel <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/cp_reset_password_thumb.png %}" />](https://www.youtube.com/watch?v=-daShi62uHA).
+ If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Admin Control Panel <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/cp_reset_password_thumb.png %}" />](https://www.youtube.com/watch?v=-daShi62uHA).
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 2. In the **Rackspace Email** section, click **Mailboxes**.
