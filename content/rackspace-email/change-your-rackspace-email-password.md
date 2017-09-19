@@ -5,8 +5,8 @@ title: Change a Rackspace Email mailbox password
 type: article
 created_date: '2017-06-19'
 created_by: William Loy
-last_modified_date: '2017-07-11'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-09-12'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -60,13 +60,10 @@ If you prefer a video tutorial, please see [Rackspace Email - Password Resets: A
 
    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/RSEpasswordresetCPSC2.png %}" />
 
-4. Under **User Name**, enter the following information:
+4. Beneath the email address, click **RESET PASSWORD**.
 
-   - **Password:** Enter a new password.
-   - **Confirm:** Enter the new password again.
+    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/reset_password.png %}" />
 
-   **Note:** We recommend that you create a password that you have never used before and that remains unique from all your other passwords. Also, longer passwords provide better security for your account.
+5. 5. A box will appear prompting you to enter the **New Password** and enter the new password again in the **Confirm Password** field.
 
-5. Click **Submit**.
-
-   <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/RSEpasswordresetCPSC3.png %}" />
+    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/new_password.png %}" />
