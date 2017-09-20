@@ -5,7 +5,7 @@ title: Set up DNS records for Cloud Office email
 type: article
 created_date: '2014-08-15'
 created_by: William Loy
-last_modified_date: '2017-09-19'
+last_modified_date: '2017-09-20'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
