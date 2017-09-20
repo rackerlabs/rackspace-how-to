@@ -5,7 +5,7 @@ title: Set up DNS records for Cloud Office email
 type: article
 created_date: '2014-08-15'
 created_by: William Loy
-last_modified_date: '2017-05-30'
+last_modified_date: '2017-09-19'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -30,7 +30,7 @@ Use the steps in this section to set up your domain to allow proper routing of i
 
 **Warning:** If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
 
-1. Log in to the control panel for your domain DNS host. If you host your DNS with Rackspace Cloud Office please see
+1. Log in to the control panel for your domain DNS host. If you host your DNS with Rackspace Cloud Office please see [Edit DNS in the Cloud Office control panel](/how-to/edit-dns-in-the-cloud-office-control-panel).
 
 2. Set the DNS entries to the following values. Ensure that no other MX record entries exist, or you will experience email complications. For more information, see [Add or edit entries for your DNS host](/how-to/find-dns-host#add-or-edit-entries-for-your-dns-host).
 
