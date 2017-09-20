@@ -28,8 +28,6 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 Use the steps in this section to set up your domain to allow proper routing of incoming and outgoing email.
 
-**Warning:** If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
-
 1. Log in to the control panel for your domain DNS host. If you host your DNS with Rackspace Cloud Office please see [Edit DNS in the Cloud Office control panel](/how-to/edit-dns-in-the-cloud-office-control-panel).
 
 2. Set the DNS entries to the following values. Ensure that no other MX record entries exist, or you will experience email complications. For more information, see [Add or edit entries for your DNS host](/how-to/find-dns-host#add-or-edit-entries-for-your-dns-host).
@@ -42,6 +40,8 @@ Use the steps in this section to set up your domain to allow proper routing of i
    | MX | @ or left blank | **mx2.emailsrvr.com** | 20 | 3600 seconds or lowest allowed |   
    | TXT | @ or left blank | **v=spf1 include:emailsrvr.com ~all** | NA | 3600 seconds or lowest allowed |
    | CNAME | autodiscover | **autodiscover.emailsrvr.com** | NA | 3600 seconds or lowest allowed |
+
+   **Warning:** If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
 
 3.	Save your changes.
 
