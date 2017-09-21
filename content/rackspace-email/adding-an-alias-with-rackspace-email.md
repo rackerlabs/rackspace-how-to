@@ -5,15 +5,24 @@ title: Add an alias with Rackspace Email
 type: article
 created_date: '2012-01-18'
 created_by: Rae D. Cabello
-last_modified_date: '2017-08-16'
+last_modified_date: '2017-09-21'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Aliases are a way to create an alternate name for an existing mailbox. For example, John likes to go by Johnny and would like to receive emails to both John@domain.com, for business partners, and Johnny@domain.com, for friends and family, without checking two different accounts.
-
 This article shows how to create an alias that will forward to another mailbox or to multiple mailboxes on a domain.
+
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** 5 minutes
+- **Tools required:** Cloud Office control panel access
+
+For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
+Aliases are a way to create an alternate name for an existing mailbox. For example, John likes to go by Johnny and would like to receive emails to both John@domain.com, for business partners, and Johnny@domain.com, for friends and family, without checking two different accounts.
 
 ### Add a single alias
 
@@ -23,6 +32,11 @@ This article shows how to create an alias that will forward to another mailbox o
     **Note**: If you have multiple domains, select the appropriate domain name. To change domains select the change domain link.
 4. In the **Create New Alias** box, enter a name for this alias.
 5. From the **Members inside this Domain** box, select one or more mailboxes and click **Add**. They will be added to the **Members of this Alias** box.
+
+    <img src="{% asset_path rackspace-email/adding-an-alias-with-rackspace-email/members_of_domain.png %}" />
+
+    <img src="{% asset_path rackspace-email/adding-an-alias-with-rackspace-email/members_of_alias.png %}" />
+
 6. *(Optional)* Add up to four external addresses for domains like Gmail, Yahoo, or Hotmail.
 7. Click **Save**.
 
@@ -34,3 +48,4 @@ This article shows how to create an alias that will forward to another mailbox o
 4. In the Import File section, click **Choose file**, locate and select the CSV or Excel file that you created, and click **Open**.
 5. On the Import Aliases page, click **Import**.
     Any errors that occur are detailed in the import summary, which is displayed after the import is complete.
+receiving
