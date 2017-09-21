@@ -5,13 +5,11 @@ title: Add a Rackspace Email group list
 type: article
 created_date: '2012-05-23'
 created_by: Rackspace Support
-last_modified_date: '2017-08-16'
+last_modified_date: '2017-09-21'
 last_modified_by: Rackspace Support
 product: Rackspace Email
 product_url: rackspace-email
 ---
-
-
 
 This article shows how to create a group list.
 
