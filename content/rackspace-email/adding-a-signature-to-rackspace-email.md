@@ -4,7 +4,7 @@ audit_date:
 title: Add a signature to Rackspace Email
 type: article
 created_date: '2012-01-18'
-created_by: Rackspace Support
+created_by: Cory Aldrich
 last_modified_date: '2017-09-20'
 last_modified_by: William Loy
 product: Rackspace Email
@@ -16,12 +16,14 @@ This article describes how to set up your email signature, which can include you
 
 ### Prerequisites
 
-- **Applies to:** Administrators
-- **Difficulty:** Moderate
-- **Time needed:** Approximately 30 minutes to configure and an additional 24-48 hours to propagate
-- **Tools required:** DNS host administrator access
+- **Applies to:** Users
+- **Difficulty:** Easy
+- **Time needed:** 5 minutes
+- **Tools required:** Webmail access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
+When creating your signature you should be cautious about what is included. Signatures now more frequently contain elements that are viewed as spam by common email filters, which can hinder email deliverability. See [Best practices for sending person-to-person email](/how-to/best-practices-for-sending-person-to-person-email) for guidance on signature creation.
 
 1. Log in to your Rackspace Email account by going to [apps.rackspace.com](http://apps.rackspace.com).
 
