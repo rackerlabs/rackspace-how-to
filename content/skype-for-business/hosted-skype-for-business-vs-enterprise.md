@@ -3,16 +3,16 @@ permalink: hosted-skype-for-business-vs-enterprise/
 audit_date:
 title: Hosted Skype for Business vs Enterprise Skype for Business
 type: article
-created_date: '2017-06-22'
+created_date: '2017-09-22'
 created_by: William Loy
-last_modified_date: '2017-06-22'
+last_modified_date: '2017-09-22'
 last_modified_by: William Loy
 product: Microsoft Skype for Business
 product_url: skype-for-business
 ---
 
 This article compares our Hosted Microsoft Skype for Business solutions against our
-Enterprise Office 365 Skype for Business solution.
+[Enterprise Office 365 Skype for Business](https://www.rackspace.com/office-365/pick-your-plan) solution.
 
 ### Prerequisites
 
@@ -43,6 +43,8 @@ For more information about prerequisite terminology, see [Cloud Office support t
 |Initiate/schedule multi-party (3+) audio, video conference| | &#10003;
 |Schedule web conferences| | &#10003;
 |Maximum number of people who are allowed to attend a meeting organized by user with this type of license| 100 | 250 |
+
+If you are interested in upgrading your Hosted Microsoft Exchange and Skype for Business product to our Office 365 offering please reference [Rackspace Office 365](/how-to/office-365) for further questions and next steps.
 
 
 Note: Skype for Business Dial-in Conferencing is not supported for both licenses.
