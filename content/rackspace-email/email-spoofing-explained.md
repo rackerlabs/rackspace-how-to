@@ -39,8 +39,11 @@ It is vital that users understand that emails that appear to be sent from co-wor
 Scammers will alter different sections of an email to disguise who the *actual* sender of the message is. To identify the following examples you will need to open the **email headers** of a message you suspect has been spoofed. Examples of properties that are spoofed:
 
 **FROM** boss@companyexample.com(This will appear to come from a legitimate source on any spoofed message)
-**REPLY-TO** This can also be spoofed, but a lazy scammer will leave the actual **REPLY-TO** address. If you see a different esending address here, the email may have been spoofed.
+
+**REPLY-TO** This can also be spoofed, but a lazy scammer will leave the actual **REPLY-TO** address. If you see a different sending address here, the email may have been spoofed.
+
 **RETURN-PATH** This can also be spoofed, but a lazy scammer will leave the actual **RETURN-PATH** address. If you see a different sending address here, the email may have been spoofed.
+
 **SOURCE IP** address or “X-ORIGIN” address. This is typically more difficult to alter but it is possible.
 
 These first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property above, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing.
