@@ -43,9 +43,19 @@ Scammers will alter different sections of an email to disguise who the *actual* 
 **RETURN-PATH** This can also be spoofed, but a lazy scammer will leave the actual **RETURN-PATH** address. If you see a different sending address here, the email may have been spoofed.
 **SOURCE IP** address or “X-ORIGIN” address. This is typically more difficult to alter but it is possible.
 
-These first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property above, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing. Most spoofing attempt
+These first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property above, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing.
 
-Spoofing is possibly the most frustrating abuse issue to deal with, simply because it cannot be stopped. Spoofing is similar to hand-writing many letters, and signing someone else's name to it. You can imagine how difficult that would be to trace.
+    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/group_lists_CP1.png %}" />
+
+In this example, it appears that the recipient has received a message from their office assistant, requesting money. The **subject** line should alert you immediately. This user should contact their assistant through another form of communication to confirm that they did not send this message. Next, you will want to discover who actually sent the message by opening the message headers.
+
+    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/group_lists_CP1.png %}" />
+
+In this message header snippet, we see that the **From:** field shows the message being sent from **"Assistant"<assistant@yourdomainexample.com>**. However, we can also see that the **REPLY-TO:** field lists *spoofer@scam.com*. That is a clear cut example of a spoofed message. You will want Blacklist any address you find in the **REPLY-TO**, **RETURN-PATH**, and **SOURCE IP** field that is not an address/IP you normally receive mail from.
+
+### Combat spoofing
+
+Spoofing is possibly the most frustrating abuse issue to deal with, simply because it cannot be stopped. Spoofing is similar to hand-writing many letters, and signing someone else's name to it. You can imagine how difficult that would be to trace which is why educating your users is so important.
 
 One way you can help combat spoofing and put a little more protection to your domain is adding what is called an SPF record to your DNS. Your IT personnel should already know how to set this up, and if you contact Support, we can also get you pointed in the right direction, or setup if you manage your DNS with us.
 
