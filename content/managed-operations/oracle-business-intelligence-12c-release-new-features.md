@@ -150,24 +150,17 @@ Use the following steps to create an XSA cache schema
 
 1. Create the XSA Cache Schema in a database by connecting to Oracle 11g or 12c
    databases using SQL Developer or SQLPlus.
-
 2. Create a schema owner, for example:
 
    ``CREATE USER XSA_CACHE IDENTIFIED BY welcome1;``
-
 3. Grant session and create table privileges to schema owner, for example:
-
    ``GRANT CREATE SESSION TO XSA_CACHE;``
    or
    ``GRANT CREATE TABLE TO XSA_CACHE;``
-
 4. Create a table space and note the correct data file path, for example:
-
    ``CREATE TABLESPACE XSA_CACHE_TABLESPACE DATAFILE    '/
    scratch/app/12c/oradata/CEAL/datafile/xsa_cache_tablespace.dbf' SIZE 5G``
-
 5. Alter the schema owner to use the table space created above, for example:
-
    ``ALTER USER XSA_CACHE DEFAULT TABLESPACE XSA_CACHE_TABLESPACE;``
    or
    ``ALTER USER XSA_CACHE QUOTA UNLIMITED ON XSA_CACHE_TABLESPACE;``
@@ -179,22 +172,16 @@ Use the following steps to prepare the live repository:
 1. Open a live repository in online mode by using the OBIEE 12.2.1
    Administration Tool on Windows 2012 R2. You can execute this step in
    offline mode as well.
-
 2. Create a physical data source, for example, ``XSACache``.
-
 3. Create a physical schema under the physical data source that was created in
    the previous step, for example, ``XSA_CACHE``.
-
 4. Create a connection pool for the physical data source, for example, ``CP``.
-
 5. Add ``Connect String``, ``User Name``, and ``Password`` for the schema
    that you created in step 3, for example:
-
    ``Connect String = "DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hostname)(PORT=xxxx))
    (CONNECT_DATA=(SERVER=DEDICATED)(SID= xxxx)))"``
    ``User Name = "XSA_CACHE"``
    ``Password = "welcome1"``
-
 6. Check in the online changes and save the online repository, or save the
    offline repository. Don’t do the consistency check.
 
