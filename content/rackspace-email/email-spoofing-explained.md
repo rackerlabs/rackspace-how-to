@@ -22,26 +22,28 @@ This article explains what email spoofing is, and steps you can take to combat t
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-### Email Spoofing
+### What is email spoofing?
 
-The word “spoof” means “falsified”. A spoofed email is when the sender purposely alters parts of the email to masquerade as though it was authored by someone else. Commonly, the sender’s name/address and the body of the message are formatted to appear from a legitimate source, as though the email came from a bank or a newspaper or legitimate company on the Web. Sometimes, the spoofer will make the email appear to come from a private citizen somewhere.
-In many cases, the spoofed email is part of a phishing (scam) attack. In other cases, a spoofed email is used to dishonestly market an online service or sell you a bogus product like scareware, which are fake programs they make you think you need or is missing from your computer.
-Email spoofing is forging an email header to make it look like it came from somewhere or someone other than the actual source. It is often an attempt to trick the recipient into making a damaging statement or releasing sensitive information, such as passwords.
-If you're receiving bounced (returned) emails for messages that you never sent and that use as the return address your domain and addresses you never created, then this could be a case of spoofing.
+The word **spoof** means **falsified**. A spoofed email is when the sender purposely alters parts of the email to make the message appear as though it was authored by someone else. Commonly, the sender’s name/address and the body of the message are formatted to appear from a legitimate source. Sometimes, the spoofer will make the email appear to come from a private citizen somewhere.
 
-### User education
+A spoofed message can appear to be sent from a coworker, a bank, a family member or any number of seemingly trustworthy sources. A good spoof will look like any other email that you would normally receive.
+
+### Why do people spoof email?
+
+In many cases, the spoofed email is part of a **phishing** (scam) attack. In other cases, a spoofed email is used to dishonestly market an online service or sell you a bogus product. The intent is to trick the recipient into making a damaging statement or releasing sensitive information, such as passwords. If you're receiving bounced (returned) emails for messages that you never sent, this could be a case of spoofing.
+
+### Identify a spoofed message
 
 It is vital that users understand that emails that appear to be sent from co-workers, can possibly be forged emails. This is the case w
 
+Scammers will alter different sections of an email to disguise who the *actual* sender of the message is. To identify the following examples you will need to open the **email headers** of a message you suspect has been spoofed. Examples of properties that are spoofed:
 
-Dishonest users will alter different sections of an email so as to disguise the sender as being someone else. Examples of properties that are spoofed:
+**FROM** boss@companyexample.com(This will appear to come from a legitimate source on any spoofed message)
+**REPLY-TO** This can also be spoofed, but a lazy scammer will leave the actual **REPLY-TO** address. If you see a different sending address here, the email may have been spoofed.
+**RETURN-PATH** This can also be spoofed, but a lazy scammer will leave the actual **RETURN-PATH** address. If you see a different sending address here, the email may have been spoofed.
+**SOURCE IP** address or “X-ORIGIN” address. This is typically more difficult to alter but it is possible.
 
-FROM name/address
-REPLY-TO name/address
-RETURN-PATH address
-SOURCE IP address or “X-ORIGIN” address
-
-These first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property above, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing.
+These first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property above, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing. Most spoofing attempt
 
 Spoofing is possibly the most frustrating abuse issue to deal with, simply because it cannot be stopped. Spoofing is similar to hand-writing many letters, and signing someone else's name to it. You can imagine how difficult that would be to trace.
 
