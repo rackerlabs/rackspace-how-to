@@ -1,7 +1,7 @@
 ---
 permalink: oracle-business-intelligence-12c-release-new-features/
 audit_date: '2018-03-26'
-title: Oracle Business Intelligence 12c tips
+title: Oracle Business Intelligence 12c new release features
 type: article
 created_date: '2017-09-26'
 created_by: Catherine Richardson
@@ -27,7 +27,8 @@ are managed by the Oracle WebLogic Management Framework, which includes the
 WebLogic Scripting Tool (WLST), Node Manager. All Oracle BI metadata,
 including the repository, the Oracle BI Presentation Services catalog, and
 user authentication, are stored in Oracle BI application archive (BAR)files.
-The BAR file is a mechanism for managing or moving a self-contained set of Oracle BI metadata between environments.
+The BAR file is a mechanism for managing or moving a self-contained set of
+Oracle BI metadata between environments.
 
 Parameters are now changed directly in files. Parameter changes are no longer
 handled in WebLogic Server® MBeans or with the Oracle Enterprise Manager. A
@@ -41,7 +42,9 @@ Credential Store) is configured in a relational database rather
 than in a file. The database is the same as the one that is used by the
 Repository Creation Utility (RCU) that is available with FMW. Globally unique
 identifiers (GUIDs) have been replaced with user names to make administration
-easier. Accordingly, GUIDS no longer need to be refreshed. The BI System and BISystemUser have been removed, and the system handles their functions internally. Consequently, corrupted system credentials are less of a problem.
+easier. Accordingly, GUIDS no longer need to be refreshed. BI System and
+BISystemUser have been removed, and the system handles their functions
+internally. Consequently, corrupted system credentials are less of a problem.
 
 ### Visual Analyzer
 
@@ -145,7 +148,6 @@ the performance of uploaded content.
 
 Use the following steps to create an XSA cache schema
 
-
 1. Create the XSA Cache Schema in a database by connecting to Oracle 11g or 12c
    databases using SQL Developer or SQLPlus.
 
@@ -202,16 +204,15 @@ Use the following steps to validate the XSA cache setup:
 
 1. Open up the ``obis1-diagnostic.log`` file located at
    ``<ORACLE_HOME>/user_projects/domains/bi/server/obis1/logs``.
-
 2. Search  for the key words ``External Subject Area Cache``.  If the
    configuration is correct, you should see following lines:
-   ``[2017-01-13T12:30:39.123-08:00] [OBIS] [NOTIFICATION:1] [] [] [ecid: ]
-   [sik:ssi] [tid: 69cc1720] [101001]
-   External Subject Area cache is started successfully using
-   configuration from the repository with the logical name ssi.
-   [2017-01-13T12:30:39.123-08:00] [OBIS] [NOTIFICATION:1] [] [] [ecid: ]
-   [sik:ssi] [tid: 69cc1720] [101017]
-   External Subject Area cache has been initialized. Total number of entries:
-   0 Used space: 0 bytes Maximum
-   space: 107374182400 bytes Remaining space: 107374182400 bytes. Cache table
-   name prefix is XC3561241260.``
+   ``[2017-01-13T12:30:39.123-08:00] [OBIS] [NOTIFICATION:1] [] [] [ecid: ]``
+   ``[sik:ssi] [tid: 69cc1720] [101001]``
+   ``External Subject Area cache is started successfully using``
+   ``configuration from the repository with the logical name ssi.``
+   ``[2017-01-13T12:30:39.123-08:00] [OBIS] [NOTIFICATION:1] [] [] [ecid: ]``
+   ``[sik:ssi] [tid: 69cc1720] [101017]``
+   ``External Subject Area cache has been initialized. Total number of``
+   ``entries: 0 Used space: 0 bytes Maximum``
+   ``space: 107374182400 bytes Remaining space: 107374182400 bytes. Cache``
+   ``table name prefix is XC3561241260.``
