@@ -90,34 +90,20 @@ two-dimensional data.
 The new release includes the following improvements for administration:
 
 * You can invoke WLST from a single location.
-
 * Oracle Home location is redefined, and there is no middleware home.
-
 * OPMN is no longer available in Fusion Middleware.
-
 * Oracle Web Cache is not part of Fusion Middleware.
-
 * The move from test to production is carried out differently.
-
 * There are new commands for process control.
-
 * You can manage metadata in BI archive files (BAR file).
-
 * There is a single enterprise installation. No separate "Software only" and
   "Simple Install" is available.
-
 * Configuration is simplified.
-
 * You can manage system component instances by using commands.
-
 * You can collect diagnostic bundles.
-
 * You can configure the Database Security Store.
-
 * SSL configuration is easier.
-
 * You can migrate catalog groups to application roles.
-
 * You can migrate the Oracle BI 11g metadata to 12c, which a two-step process
   that is carried out by using the BI migration script (migration-tool.sh).
 
@@ -151,15 +137,14 @@ Use the following steps to create an XSA cache schema
 1. Create the XSA Cache Schema in a database by connecting to Oracle 11g or 12c
    databases using SQL Developer or SQLPlus.
 2. Create a schema owner, for example:
-
    ``CREATE USER XSA_CACHE IDENTIFIED BY welcome1;``
 3. Grant session and create table privileges to schema owner, for example:
    ``GRANT CREATE SESSION TO XSA_CACHE;``
    or
    ``GRANT CREATE TABLE TO XSA_CACHE;``
 4. Create a table space and note the correct data file path, for example:
-   ``CREATE TABLESPACE XSA_CACHE_TABLESPACE DATAFILE    '/
-   scratch/app/12c/oradata/CEAL/datafile/xsa_cache_tablespace.dbf' SIZE 5G``
+   ``CREATE TABLESPACE XSA_CACHE_TABLESPACE DATAFILE    '/``
+   ``scratch/app/12c/oradata/CEAL/datafile/xsa_cache_tablespace.dbf' SIZE 5G``
 5. Alter the schema owner to use the table space created above, for example:
    ``ALTER USER XSA_CACHE DEFAULT TABLESPACE XSA_CACHE_TABLESPACE;``
    or
