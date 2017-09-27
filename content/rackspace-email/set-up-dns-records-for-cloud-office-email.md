@@ -41,15 +41,15 @@ Use the steps in this section to set up your domain to allow proper routing of i
    | TXT | @ or left blank | **v=spf1 include:emailsrvr.com ~all** | NA | 3600 seconds or lowest allowed |
    | CNAME | autodiscover | **autodiscover.emailsrvr.com** | NA | 3600 seconds or lowest allowed |
 
+   Below is an example of these records set up in Rackspace Cloud Office DNS control panel:
+
+   <img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/rackspace_dns_setup.png %}" />
+
    **Warning:** If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
 
 3.	Save your changes.
 
 **Note:** Your new settings take 24 to 48 hours to propagate to the world. For more information on **propagation**, see [DNS propagation](/how-to/dns-record-definitions#dns-propagation).
-
-Below is an example of these records set up in Rackspace Cloud Office DNS control panel:
-
-     <img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/rackspace_dns_setup.png %}" />
 
 You have successfully set up your DNS for your domain, allowing users to send and receive email from your Rackspace Hosted Email solution.
 
