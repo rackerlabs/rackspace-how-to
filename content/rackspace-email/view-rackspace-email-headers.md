@@ -42,47 +42,43 @@ Example message header:
 ```Delivered-To:	boss@yourdomainexample.com
 Return-Path:	<spoofer@yourdomainexample.com>
 Delivered-To:	boss@yourdomainexample.com
-Received:	from director5.mail.iad3b.rsapps.net ([000.00.00.0]) by backend41.mail.iad3b.rsapps.net (Dovecot) with LMTP id sUcGAvmhylmdZQAAg3iAog for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:41 -0400
-Received:	from proxy17.mail.iad3a.rsapps.net ([000.00.00.0]) by director5.mail.iad3b.rsapps.net (Dovecot) with LMTP id iiJeOeksylk3CgAAPieIkA ; Tue, 26 Sep 2017 14:52:41 -0400
-Received:	from smtp14.gate.iad3a (000.00.00.0) (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits)) by proxy17.mail.iad3a.rsapps.net (Dovecot) with LMTP id rJhmKrqgyllKIgAAR4KW9A ; Tue, 26 Sep 2017 14:52:41 -0400
+Received:	from sapps.net ([000.00.00.0]) by sapps.net (Dovecot) with LMTP id asdkasdfiwlefj for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:41 -0400
+Received:	from proxy.net ([000.00.00.0]) by sapps.net; Tue, 26 Sep 2017 14:52:41 -0400
+Received:	from smtp (000.00.00.0)  by apps.net; Tue, 26 Sep 2017 14:52:41 -0400
 Return-Path:	<spoofer@yourdomainexample.com>
-X-Orig-To:	boss@yourdomainexample.com
 X-Originating-Ip:	[00.000.000.00]
-Authentication-Results:	smtp14.gate.iad3a.rsapps.net; iprev=pass policy.iprev="000.00.00.0"; spf=neutral smtp.mailfrom="spoofer@yourdomainexample.com" smtp.helo="smtp94.iad3a.emailsrvr.com"; dkim=none (message not signed) header.d=none; dmarc=none (p=nil; dis=none) header.from=yourdomainexample.com
-X-Classification-ID:	kjdkfjf12452-4546dfasd-154636
-Received:	from [000.00.00.0] ([000.00.00.0] helo=smtp94.iad3a.emailsrvr.com) by smtp14.gate.iad3a.rsapps.net (envelope-from <spoofer@yourdomainexample.com>) (ecelerity 000.00.00.0 r(Core:000.00.00.0)) with ESMTPS (cipher=DHE-RSA-AES256-GCM-SHA384) id E3/AD-22478-8F1AAC95; Tue, 26 Sep 2017 14:52:40 -0400
-Received:	from smtp12.relay.iad3a.emailsrvr.com (localhost [000.00.00.0]) by smtp12.relay.iad3a.emailsrvr.com (SMTP Server) with ESMTP id 12345 for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
-Received:	from app39.wa-webapps.iad3a (relay-webapps.rsapps.net [000.00.00.0]) by smtp12.relay.iad3a.emailsrvr.com (SMTP Server) with ESMTP id 12345 for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+Received:	from [000.00.00.0] ([000.00.00.0] server.com) by apps.net; Tue, 26 Sep 2017 14:52:40 -0400
+Received:	from server.com (localhost [000.00.00.0]) by server.com for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+Received:	from apps.net (sapps.net [000.00.00.0]) by server.com (SMTP Server)  for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
 X-Sender-Id:	spoofer@yourdomainexample.com
-Received:	from app39.wa-webapps.iad3a (relay-webapps.rsapps.net [000.00.00.0]) by 0.0.0.0:25 (trex/5.7.12); Tue, 26 Sep 2017 14:52:40 -0400
-Received:	from yourdomainexample.com (localhost.localdomain [000.00.00.0]) by app39.wa-webapps.iad3a (Postfix) with ESMTP id 12345 for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+Received:	from  (apps.net [000.00.00.0]) by 0.0.0.0:00; Tue, 26 Sep 2017 14:52:40 -0400
+Received:	from yourdomainexample.com (localhost.localdomain [000.00.00.0]) by apps.net (Postfix) with for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
 Received:	by apps.rackspace.com (Authenticated sender: spoofer@yourdomainexample.com, from: assistant@yourdomainexample.com) with HTTP; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
 Date:	Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
 Subject:	Send $$$
 From:	"Assistant" <assistant@yourdomainexample.com>
 To:	boss@yourdomainexample.com
 Reply-To:	spoofer@scam.com
-MIME-Version:	1.0
-Content-Type:	text/plain;charset=UTF-8
-Content-Transfer-Encoding:	quoted-printable
-Importance:	Normal
-X-Priority:	3 (Normal)
-X-Type:	plain
 Message-ID:	<12345867.91012345@apps.rackspace.com>
-X-Mailer:	webmail/12.9.5-RC
 ```
 This header is an example of a spoofed message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
 
 ### Understanding email headers
 
-- **From:** This displays who the message was sent from. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained).
+- **From:** This displays who the message was sent from. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
 
 - **Subject:** This is the topic of the message as indicated by the sender.
 
 - **Date:**  Indicates the date and time the email message was composed.
 
-- **To:** Displays to whom the message was address.
+- **To:** The "To:" headers of a message with indicate the addresses listed in the "To:" and "CC:" fields. Headers will not show any addresses that were included in the "BCC:" (Blind Carbon Copy) field, as these addresses were intended to remain private.
 
 - **Received:** Received will appear many times in a message header. This displays a sequential list of computer and servers that received this message, the time they received this message, and the final   destination of the message. **Received** hops should be read from bottom to top, as the first hop is at the bottom of the header.
 
-- **
+- **Reply-To:** The email address listing in the "Reply-to:" header will determine which email address is auto-populated when you click the reply button to reply to an email in your email client. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+
+- **Return-Path:** Like the **Reply-To:** address, this is where return mail will be sent. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+
+- **Message-ID** A unique identifier assigned to a message. The **Message-ID** is useful for diagnosing a duplicate email issue. If you compare the **Message-ID** for multiple emails, and the IDs match, you know those messages are duplicates.
+
+- **X-Originating-Ip:** This is the IP address of the computer that sent the message. While this is slightly more difficult to fake, it is still possible. Typically it is the more reliable information about where the message actually came from. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
