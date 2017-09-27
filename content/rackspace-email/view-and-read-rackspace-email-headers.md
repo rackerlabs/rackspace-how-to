@@ -22,17 +22,19 @@ This article explains how to view message headers in Rackspace Email webmail.
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
+### Viewing headers in Rackspace Email
+
 1. Log into your mailbox at [apps.rackspace.com](apps.rackspace.com).
 
 2. Select the message that you would like to view the headers for.
 
 3. Select **More** dropdown from the tool bar about the message preview pane and select **View Full Header**.
 
-    <img src="{% asset_path rackspace-email/view-rackspace-email-headers/view_full_header.png %}" />
+    <img src="{% asset_path rackspace-email/view-and-read-rackspace-email-headers/view_full_header.png %}" />
 
 4. A box will appears titled **Full Header** containing the full contents of the message header.
 
-    <img src="{% asset_path rackspace-email/view-rackspace-email-headers/full_header.png %}" />
+    <img src="{% asset_path rackspace-email/view-and-read-rackspace-email-headers/full_header.png %}" />
 
 You have successfully viewed the message headers in Rackspace Email webmail.
 
@@ -62,7 +64,7 @@ To:	boss@yourdomainexample.com
 Reply-To:	spoofer@scam.com
 Message-ID:	<12345867.91012345@apps.rackspace.com>
 ```
-This header is an example of a spoofed message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
+This header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
 
 ### Understanding email headers
 
