@@ -47,7 +47,7 @@ Use the steps in this section to set up your domain to allow proper routing of i
 
 Below is an example of these records set up in Rackspace Cloud Office DNS control panel:
 
-<img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/rackspace_dns_setup.png %}" />
+    <img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/rackspace_dns_setup.png %}" />
 
 **Note:** Your new settings take 24 to 48 hours to propagate to the world. For more information on **propagation**, see [DNS propagation](/how-to/dns-record-definitions#dns-propagation).
 
