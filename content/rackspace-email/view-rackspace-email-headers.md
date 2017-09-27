@@ -39,7 +39,7 @@ You have successfully viewed the message headers in Rackspace Email webmail.
 
 Example message header:
 
-```Delivered-To:	boss@yourdomainexample.com
+``Delivered-To:	boss@yourdomainexample.com
 Return-Path:	<spoofer@yourdomainexample.com>
 Delivered-To:	boss@yourdomainexample.com
 Received:	from director5.mail.iad3b.rsapps.net ([172.31.157.9]) by backend41.mail.iad3b.rsapps.net (Dovecot) with LMTP id sUcGAvmhylmdZQAAg3iAog for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:41 -0400
@@ -70,6 +70,7 @@ Importance:	Normal
 X-Priority:	3 (Normal)
 X-Type:	plain
 Message-ID:	<1506451960.77624876@apps.rackspace.com>
-X-Mailer:	webmail/12.9.5-RC```
+X-Mailer:	webmail/12.9.5-RC``
+
 
 If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
