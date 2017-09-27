@@ -49,7 +49,7 @@ Use the steps in this section to set up your domain to allow proper routing of i
 
 Below is an example of these records set up in Rackspace Cloud Office DNS control panel:
 
-    <img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/rackspace_dns_setup.png %}" />
+     <img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/rackspace_dns_setup.png %}" />
 
 You have successfully set up your DNS for your domain, allowing users to send and receive email from your Rackspace Hosted Email solution.
 
