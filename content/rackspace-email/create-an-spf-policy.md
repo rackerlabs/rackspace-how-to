@@ -24,6 +24,10 @@ You also need access to update DNS entries for your domain. If you do not know w
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
+An **SPF** policy by itself will not go far in terms of protecting the integrity of your domain's email. To create a truly robust email verification policy, you should create an **SPF** record policy, then [create a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel), and lastly [create a DMARC record policy](/how-to/create-a-dmarc-policy).
+
+### Create an SPF record
+
 1. Log in to the control panel for your domain DNS host.
 
 2. Create a TXT record with the following specifications.
