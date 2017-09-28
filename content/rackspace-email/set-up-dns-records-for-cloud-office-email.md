@@ -37,8 +37,8 @@ Use the steps in this section to set up your domain to allow proper routing of i
 #### DNS records table
 
    | Type | Hostname | Destination | Priority | TTL |
-   | --- | --- | --- | --- | --- |
-   | MX | @ or left blank | :**mx1.emailsrvr.com**: | 10 | 3600 seconds or lowest allowed |
+   | --- | --- | :---: | --- | --- |
+   | MX | @ or left blank | **mx1.emailsrvr.com** | 10 | 3600 seconds or lowest allowed |
    | MX | @ or left blank | **mx2.emailsrvr.com** | 20 | 3600 seconds or lowest allowed |   
    | TXT | @ or left blank | **v=spf1 include:emailsrvr.com ~all** | NA | 3600 seconds or lowest allowed |
    | CNAME | autodiscover | **autodiscover.emailsrvr.com** | NA | 3600 seconds or lowest allowed |
