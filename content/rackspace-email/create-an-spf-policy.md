@@ -41,8 +41,9 @@ For more information on prerequisite terminology, see [Cloud Office support term
 4. Authorize additional mail servers that you utilize by adding their IP or server name just after **include:**.
 
     - For example:
-        | Type | Hostname | Destination | TTL |
-        | :---: | :---: | :---: | :---: |
-        | TXT | @ | **v=spf1 include:emailsrvr.com include:othermailer.com ~all** | 3600 |
+
+    | Type | Hostname | Destination | TTL |
+    | :---: | :---: | :---: | :---: |
+    | TXT | @ | **v=spf1 include:emailsrvr.com include:othermailer.com ~all** | 3600 |
 
 3. Save your changes.
