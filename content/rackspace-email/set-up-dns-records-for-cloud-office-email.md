@@ -28,7 +28,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 Use the steps in this section to set up your domain to allow proper routing of incoming and outgoing email.
 
-Warning: If you host your email through our Office 365 solution please see [Office 365 domain setup](/how-to/add-a-domain-in-office-365/) for instructions.
+**Warning:** If you host your email through our Office 365 solution please see [Office 365 domain setup](/how-to/add-a-domain-in-office-365/) for instructions.
 
 1. Log in to the control panel for your domain DNS host. If you host your DNS with Rackspace Cloud Office please see [Edit DNS in the Cloud Office control panel](/how-to/edit-dns-in-the-cloud-office-control-panel).
 
