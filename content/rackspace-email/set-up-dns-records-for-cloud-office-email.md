@@ -51,7 +51,7 @@ Use the steps in this section to set up your domain to allow proper routing of i
 
 Lastly, **save** your changes. You have successfully set up your DNS for your domain, allowing users to send and receive email from your Rackspace Hosted Email solution.
 
-If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
+**Warning:** If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
 
 If you would like to learn more about the DNS entries that are required to properly use email services at Rackspace, brief explanations are provided below with links to more in-depth articles:
 
