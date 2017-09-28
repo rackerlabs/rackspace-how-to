@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes how to initially configure your domain's DNS to start receiving email through Rackspace Cloud Office. If you do not require instructions, skip to the [DNS records table](#).
+This article describes how to initially configure your domain's DNS to start receiving email through Rackspace Cloud Office. If you do not require instructions, skip to the [DNS records table](#dns-records-table).
 
 ### Prerequisites
 
@@ -34,7 +34,7 @@ Use the steps in this section to set up your domain to allow proper routing of i
 
 2. Set the DNS entries to the following values. Ensure that no other MX record entries exist, or you will experience email complications. For more information, see [Add or edit entries for your DNS host](/how-to/find-dns-host#add-or-edit-entries-for-your-dns-host).
 
-####
+#### DNS records table
 
    | Type | Hostname | Destination | Priority | TTL |
    | --- | --- | --- | --- | --- |
