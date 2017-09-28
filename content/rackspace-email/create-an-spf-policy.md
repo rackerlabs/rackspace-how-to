@@ -17,7 +17,7 @@ This article explains how to create an SPF policy to protect your email traffic.
 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
-- **Time needed:** Approximately 15 minutes to create record, 24-48 hours for the record to propagate 
+- **Time needed:** Approximately 15 minutes to create record, 24-48 hours for the record to propagate
 - **Tools required:**  DNS host administrator access
 
 You also need access to update DNS entries for your domain. If you do not know where your DNS is hosted, see [Find your DNS host](/how-to/find-dns-host).
@@ -41,8 +41,8 @@ For more information on prerequisite terminology, see [Cloud Office support term
 4. Authorize additional mail servers that you utilize by adding their IP or server name just after **include:**.
 
     - For example:
-    | Type | Hostname | Destination | TTL |
-    | :---: | :---: | :---: | :---: |
-    | TXT | @ | **v=spf1 include:emailsrvr.com include:othermailer.com ~all** | 3600 |
+        | Type | Hostname | Destination | TTL |
+        | :---: | :---: | :---: | :---: |
+        | TXT | @ | **v=spf1 include:emailsrvr.com include:othermailer.com ~all** | 3600 |
 
 3. Save your changes.
