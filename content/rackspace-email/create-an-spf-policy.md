@@ -34,9 +34,9 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 3. Before saving changes, decide how you would like to enforce SPF failures.
 
-    - **~**\ all will result in a soft fail(Not authorized, but not explicitly unauthorized).
-    - **-**\ all will result in a hard fail(Unauthorized).
-    - **?**\ all is neutral(As if there is no policy at all).
+    - **~** all will result in a soft fail(Not authorized, but not explicitly unauthorized).
+    - **-** all will result in a hard fail(Unauthorized).
+    - **?** all is neutral(As if there is no policy at all).
 
 4. Authorize additional mail servers that you utilize by adding their IP or server name just after **include:**.
 
