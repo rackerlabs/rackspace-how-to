@@ -5,13 +5,13 @@ title: Set up DNS records for Cloud Office email
 type: article
 created_date: '2014-08-15'
 created_by: William Loy
-last_modified_date: '2017-09-20'
+last_modified_date: '2017-09-27'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes how to initially configure your domain's DNS to start receiving email through Rackspace Cloud Office. Click here to skip to [DNS record table](#|-Type-|-Hostname-|-Destination-|-Priority-|-TTL-|)
+This article describes how to initially configure your domain's DNS to start receiving email through Rackspace Cloud Office. Click here to skip to [DNS record table](#dns-records-table)
 
 ### Prerequisites
 
@@ -35,7 +35,9 @@ Use the steps in this section to set up your domain to allow proper routing of i
 2. Set the DNS entries to the following values. Ensure that no other MX record entries exist, or you will experience email complications. For more information, see [Add or edit entries for your DNS host](/how-to/find-dns-host#add-or-edit-entries-for-your-dns-host).
 
    **Note:** The field headings might vary slightly depending on your DNS host. Refer to your DNS host for details.
-#
+
+#### DNS record table
+
    | Type | Hostname | Destination | Priority | TTL |
    | --- | --- | --- | --- | --- |
    | MX | @ or left blank | **mx1.emailsrvr.com** | 10 | 3600 seconds or lowest allowed |
