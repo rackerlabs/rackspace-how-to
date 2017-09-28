@@ -5,7 +5,7 @@ title: Email spoofing explained
 type: article
 created_date: '2017-09-25'
 created_by: William Loy
-last_modified_date: '2017-09-25'
+last_modified_date: '2017-09-27'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -16,9 +16,9 @@ This article explains what email spoofing is, and steps you can take to combat t
 ### Prerequisites
 
 - **Applies to:** Administrator and User
-- **Difficulty:** Easy
+- **Difficulty:** Moderate
 - **Time needed:** Approximately 15 minutes
-- **Tools required:**  Cloud Office Control Panel access
+- **Tools required:**  Email access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
@@ -27,6 +27,8 @@ For more information on prerequisite terminology, see [Cloud Office support term
 The word **spoof** means **falsified**. A spoofed email is when the sender purposely alters parts of the email to make the message appear as though it was authored by someone else. Commonly, the sender’s name/address and the body of the message are formatted to appear from a legitimate source. Sometimes, the spoofer will make the email appear to come from a private citizen somewhere.
 
 A spoofed message can appear to be sent from a coworker, a bank, a family member or any number of seemingly trustworthy sources. A good spoof will look like any other email that you would normally receive.
+
+Warning: If you suspect you have received a fraudulent message **DO NOT** click any link in the message or enter any information that is requested.
 
 ### Why do people spoof email?
 
@@ -54,11 +56,17 @@ In this example, it appears that the recipient has received a message from their
 
     <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/group_lists_CP1.png %}" />
 
-In this message header snippet, we see that the **From:** field shows the message being sent from **"Assistant"<assistant@yourdomainexample.com>**. However, we can also see that the **REPLY-TO:** field lists *spoofer@scam.com*. That is a clear cut example of a spoofed message. You will want to Blacklist any address you find in the **REPLY-TO**, **RETURN-PATH**, and **SOURCE IP** field that is not an address/IP you normally receive mail from.
+In this message header snippet, we see that the **From:** field shows the message being sent from **"Assistant"<assistant@yourdomainexample.com>**. However, we can also see that the **REPLY-TO:** field lists *spoofer@scam.com*. That is a clear cut example of a spoofed message. You will want to Blacklist any address you find in the **REPLY-TO**, **RETURN-PATH**, and **SOURCE IP** field that is not an address/IP you normally receive mail from. For more information on viewing and understanding email headers, please see [View and read Rackspace email headers](/how-to/view-and-read-rackspace-email-headers).
 
 ### Combat spoofing
 
-Spoofing is possibly the most frustrating abuse issue to deal with, simply because it cannot be stopped. Spoofing is similar to hand-writing many letters, and signing someone else's name to it. You can imagine how difficult that would be to trace which is why educating your users is so important.
+User education is the first line of defense against these types of attacks. If a user receives a spoofed message:
+
+ - Blacklist any address/IP listed in the **REPLY-TO**, **RETURN-PATH**, or **SOURCE IP** that you have determined to be fraudulent.
+ - Immediately [change the password of your email account](/how-to/change-rackspace-email-mailbox-password) if you or your users provided that information at any point.
+ - Alert the rest of your business to the situation
+
+Spoofing is possibly the most frustrating abuse issue to deal with, simply because it cannot be stopped. Spoofing is similar to hand-writing many letters, and signing someone else's name to it. You can imagine how difficult that would be to trace.
 
 The most impactful change you can make as an administrator is to implement **SPF**, **DKIM**, and **DMARC**. These are DNS records that add extra layers of protection to prevent malicious email from being sent out using your domain name.
 
@@ -70,4 +78,12 @@ The most impactful change you can make as an administrator is to implement **SPF
 
    - **Domain Message Authentication Reporting and Compliance (DMARC)** records indicate to recipient mail servers that messages sent from that domain are employing DKIM and SPF sending policies. The recipient mail server then validates the message that you sent by using your DKIM and SPF policies.
 
-Putting these records in place will protect the integrity of internal emails, as well as protect the external reputation of your domain.
+Putting these records in place will protect the integrity of internal emails, as well as protect the external reputation of your domain. Implementing this protection is a multi-step process that must be carefully followed. Please see [Create a DMARC policy](/how-to/create-a-dmarc-policy) for further instruction.
+
+
+### References
+
+[Change a Rackspace email mailbox password](/how-to/change-rackspace-email-mailbox-password)
+[Cloud Office support terminology](/how-to/cloud-office-support-terminology)
+[Create a DMARC policy](/how-to/create-a-dmarc-policy)
+[View and read Rackspace email headers](/how-to/view-and-read-rackspace-email-headers)
