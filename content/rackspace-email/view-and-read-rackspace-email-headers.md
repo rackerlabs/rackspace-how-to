@@ -66,8 +66,6 @@ Message-ID:	<12345867.91012345@apps.rackspace.com>
 ```
 This header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
 
-### Understanding email headers
-
 - **From:** This displays who the message was sent from. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
 
 - **Subject:** This is the topic of the message as indicated by the sender.
@@ -85,3 +83,10 @@ This header is an example of a **spoofed** message. If you suspect that you have
 - **Message-ID** A unique identifier assigned to a message. The **Message-ID** is useful for diagnosing a duplicate email issue. If you compare the **Message-ID** for multiple emails, and the IDs match, you know those messages are duplicates.
 
 - **X-Originating-Ip:** This is the IP address of the computer that sent the message. While this is slightly more difficult to fake, it is still possible. Typically it is the more reliable information about where the message actually came from. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+
+
+### References
+
+[Email spoofing explained](/how-to/email-spoofing-explained)
+
+[Cloud Office support terminology](/how-to/cloud-office-support-terminology)
