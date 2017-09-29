@@ -108,7 +108,8 @@ The new release includes the following improvements for administration:
 
 ### Data blending
 
-Data blending is a new concept in OBIEE 12c that enables you to blend your own data with corporate data.
+Data blending is a new concept in OBIEE 12c that enables you to blend your own
+data with corporate data.
 
 You can include dimensions and measures from external data sources in your
 analyses. The external data is loaded to the database, but is not part of the
@@ -131,7 +132,7 @@ the performance of uploaded content.
 
 #### Create XSA cache schema
 
-Use the following steps to create an XSA cache schema
+Use the following steps to create an XSA cache schema:
 
 1. Connect to Oracle 11g or 12c databases by using SQL Developer or SQLPlus.
 
@@ -184,7 +185,8 @@ Use the following steps to prepare the live repository:
 5. Add ``Connect String``, ``User Name``, and ``Password`` for the schema
    that you created in step 3. For example:
 
-   ``Connect String =`` ``"DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hostname)(PORT=xxxx))``
+   ``Connect String =``
+   ``"DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=hostname)(PORT=xxxx))``
    ``(CONNECT_DATA=(SERVER=DEDICATED)(SID= xxxx)))"``
    ``User Name = "XSA_CACHE"``
    ``Password = "welcome1"``
@@ -202,7 +204,7 @@ Use the following steps to validate the XSA cache setup:
 2. Search for the keywords ``External Subject Area Cache``.
 
    If the configuration is correct, you should see following lines:
-   
+
    ``[2017-01-13T12:30:39.123-08:00] [OBIS] [NOTIFICATION:1] [] [] [ecid: ]``
    ``[sik:ssi] [tid: 69cc1720] [101001]``
    ``External Subject Area cache is started successfully using``
