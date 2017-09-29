@@ -5,7 +5,7 @@ title: Create a DMARC policy
 type: article
 created_date: '2017-06-26'
 created_by: Cory Aldrich
-last_modified_date: '2017-08-02'
+last_modified_date: '2017-09-28'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
@@ -30,8 +30,8 @@ This article shows how to create a DMARC policy to use with Cloud Office.
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
-DMARC enforces SPF and DKIM. DMARC is useful only if you have already set up SPF
-and DKIM records. For more information, see [DNS record definitions](/how-to/dns-record-definitions).
+**DMARC** enforces **SPF** and **DKIM**. DMARC is useful only if you have already set up SPF
+and DKIM records. Before creating your DMARC policy, you must first [create an **SPF** record policy](/how-to/create-an-spf-policy), then [create a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel), and lastly create a DMARC record policy.
 
 ### Considerations for DMARC
 
@@ -47,7 +47,7 @@ as a “soft fail,” which means that the email is further scrutinized or sent 
 When the receiving host processes mail that comes from the domain, the host
 generates reports. These reports are sent to the email address specified in the DMARC
 policy.
-    
+
 ### Parts of a DMARC policy:
 
 Each part of the policy is defined as follows:
@@ -82,7 +82,7 @@ To add your DMARC policy as a TXT record in the Control Panel, follow these step
 
 7. Click **Add Record**
 
-Your new settings take 24 to 48 hours to propagate. For more information on propagation, see [DNS propagation](/how-to/dns-record-definitions#dns-propagation). 
+Your new settings take 24 to 48 hours to propagate. For more information on propagation, see [DNS propagation](/how-to/dns-record-definitions#dns-propagation).
 
 ### Select an aggregator
 
@@ -100,5 +100,3 @@ https://dmarc.org/resources/products-and-services/:
 - [dmarcian](http://dmarcian.com)
 - [250OK](http://250OK.com)
 - [Agari](http://agari.com)
-
-
