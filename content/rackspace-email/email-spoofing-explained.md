@@ -70,15 +70,15 @@ User education is the first line of defense against these types of attacks. If a
 
 Spoofing is possibly the most frustrating abuse issue to deal with, simply because it cannot be stopped. Spoofing is similar to hand-writing many letters, and signing someone else's name to it. You can imagine how difficult that would be to trace.
 
-The most impactful change you can make as an administrator is to implement **SPF**, **DKIM**, and **DMARC**. These are DNS records that add extra layers of protection to prevent malicious email from being sent out using your domain name.
+The most impactful change you can make as an administrator is to implement **SPF**, **DKIM**, and **DMARC** in that order. These are DNS records that add extra layers of protection to prevent malicious email from being sent out using your domain name.
 
-   - **Sender Policy Framework (SPF)** records help recipient mail servers identify unauthorized use of your domain in the form of forgeries (spoofing).
+   - **Sender Policy Framework (SPF)** records help recipient mail servers identify unauthorized use of your domain in the form of forgeries (spoofing). [Create an SPF record policy](/how-to/create-an-spf-policy) first.
 
        Note: If you send email from other providers on behalf of your domain, be sure to include their sending servers in the same SPF record entry. Do not create multiple SPF records.
 
-   - **DomainKeys Identified Mail (DKIM)** records assign a digital signature to mail sent from your domain, marking it as authorized mail sent from your domain. If you require instruction to enable DKIM for your  Rackspace Cloud Office email, see Enable DKIM in the Cloud Office Control Panel.
+   - **DomainKeys Identified Mail (DKIM)** records assign a digital signature to mail sent from your domain, marking it as authorized mail sent from your domain. If you require instruction to enable DKIM for your  Rackspace Cloud Office email, see Enable DKIM in the Cloud Office Control Panel. [Creating a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel) will be the second step in the process. 
 
-   - **Domain Message Authentication Reporting and Compliance (DMARC)** records indicate to recipient mail servers that messages sent from that domain are employing DKIM and SPF sending policies. The recipient mail server then validates the message that you sent by using your DKIM and SPF policies.
+   - **Domain Message Authentication Reporting and Compliance (DMARC)** records indicate to recipient mail servers that messages sent from that domain are employing DKIM and SPF sending policies. The recipient mail server then validates the message that you sent by using your DKIM and SPF policies. [Creating a DMARC record policy](/how-to/create-a-dmarc-policy) will allow you to enforce DKIM and SPF.
 
 Putting these records in place will protect the integrity of internal emails, as well as protect the external reputation of your domain. Implementing this protection is a multi-step process that must be carefully followed. Please see [Create a DMARC policy](/how-to/create-a-dmarc-policy) for further instruction.
 
