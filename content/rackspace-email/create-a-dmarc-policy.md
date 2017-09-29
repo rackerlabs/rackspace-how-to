@@ -31,7 +31,7 @@ This article shows how to create a DMARC policy to use with Cloud Office.
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
 **DMARC** enforces **SPF** and **DKIM**. DMARC is useful only if you have already set up SPF
-and DKIM records. Before creating your DMARC policy, you must first [create an **SPF** record policy](/how-to/create-an-spf-policy), then [create a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel), and lastly create a DMARC record policy.
+and DKIM records. Before creating your DMARC policy, you must first [**create an SPF record policy**](/how-to/create-an-spf-policy), then [**create a DKIM record**](/how-to/enable-dkim-in-the-cloud-office-control-panel), and lastly create a DMARC record policy.
 
 ### Considerations for DMARC
 
