@@ -28,16 +28,22 @@ When you blacklist an email address or IP, this creates a rule that rejects any 
 
 Warning: Use caution when blacklisting entire domains or IP addresses as you may be unintentionally blocking legitimate mail.
 
-1. Log into your mailbox at apps.rackspace.com.
+1. Log into your mailbox at [apps.rackspace.com](https://apps.rackspace.com).
 
 2. Click your email address in the upper right hand corner and select **Settings** from the dropdown menu.
+
+    <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/blacklist_settings.png %}"/>
 
 3. Click **Spam Settings** on the left hand side of the pop up box.
 
 4. Select the third tab labeled **Blacklist**.
 
+    <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/spam_settings.png %}"/>
+
 5. Click **Add** under the box titled **Blacklisted Domains & Email Addresses**.
 
 6. You will be prompted with a box title **Add Blacklisted Domain or Email Address**. Enter the domain or email address you wish to blacklist in the field under **Enter a domain or email address** and click **Add**.
+
+    <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/add_blacklist.png %}"/>
 
 7. Confirm the address is now listed in the box under **Blacklisted Domains & Email Addresses**, then click **Save**.
