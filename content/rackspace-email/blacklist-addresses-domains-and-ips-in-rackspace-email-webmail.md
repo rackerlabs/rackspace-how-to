@@ -58,4 +58,6 @@ If you need to blacklist and IP, follow steps 1-4 above and continue here.
 
 2. You will be prompted with a box title **Add Blacklisted IP Address**. Enter the IP address you wish to blacklist in the field under **Enter an IP address(or range)** and click **Add**.
 
-Confirm the address is now listed in the box under **Blacklisted Domains & Email Addresses**, then click **Save**.
+    <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/add_ip.png %}"/>
+
+3. Confirm the address is now listed in the box under **Blacklisted Domains & Email Addresses**, then click **Save**.
