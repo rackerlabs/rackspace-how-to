@@ -5,7 +5,7 @@ title: Email spoofing explained
 type: article
 created_date: '2017-09-25'
 created_by: William Loy
-last_modified_date: '2017-09-27'
+last_modified_date: '2017-09-29'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -64,7 +64,7 @@ In this message header snippet, we see that the **From:** field shows the messag
 
 User education is the first line of defense against these types of attacks. If a user receives a spoofed message:
 
- - Blacklist any address/IP listed in the **REPLY-TO**, **RETURN-PATH**, or **SOURCE IP** that you have determined to be fraudulent.
+ - Blacklist any address/IP listed in the **REPLY-TO**, **RETURN-PATH**, or **SOURCE IP** that you have determined to be fraudulent. See [Blacklist addresses, domains, and IPs in Rackspace Email webmail](/how-to/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/) for instructions.
  - Immediately [change the password of your email account](/how-to/change-rackspace-email-mailbox-password) if you or your users provided that information at any point.
  - Alert the rest of your business to the situation.
 
@@ -76,7 +76,7 @@ The most impactful change you can make as an administrator is to implement **SPF
 
        Note: If you send email from other providers on behalf of your domain, be sure to include their sending servers in the same SPF record entry. Do not create multiple SPF records.
 
-   - **DomainKeys Identified Mail (DKIM)** records assign a digital signature to mail sent from your domain, marking it as authorized mail sent from your domain. If you require instruction to enable DKIM for your  Rackspace Cloud Office email, see Enable DKIM in the Cloud Office Control Panel. [Creating a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel) will be the second step in the process. 
+   - **DomainKeys Identified Mail (DKIM)** records assign a digital signature to mail sent from your domain, marking it as authorized mail sent from your domain. If you require instruction to enable DKIM for your  Rackspace Cloud Office email, see Enable DKIM in the Cloud Office Control Panel. [Creating a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel) will be the second step in the process.
 
    - **Domain Message Authentication Reporting and Compliance (DMARC)** records indicate to recipient mail servers that messages sent from that domain are employing DKIM and SPF sending policies. The recipient mail server then validates the message that you sent by using your DKIM and SPF policies. [Creating a DMARC record policy](/how-to/create-a-dmarc-policy) will allow you to enforce DKIM and SPF.
 
