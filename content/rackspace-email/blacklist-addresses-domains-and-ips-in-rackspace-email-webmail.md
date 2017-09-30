@@ -26,7 +26,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 When you blacklist an email address or IP, this creates a rule that rejects any mail sent from the email address or IP you have specified. This is useful when trying to [combat spoofing](/how-to/email-spoofing-explained) or spam. If you need to **Safelist** a sender see [Safelist addresses, domains and IPs in Rackspace Email webmail](/how-to/safelist-addresses-domains-and-ips-in-rackspace-email-webmail).
 
-Warning: Use caution when blacklisting entire domains or IP addresses as you may be unintentionally blocking legitimate mail.
+**Warning:** Use caution when blacklisting entire domains or IP addresses as you may be unintentionally blocking legitimate mail.
 
 ### Add a Blacklisted email address or domain
 
