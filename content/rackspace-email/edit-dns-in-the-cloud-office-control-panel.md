@@ -32,18 +32,16 @@ To edit DNS records at Cloud Office, log in to the [Cloud Office Control Panel](
 
     <img src="{% asset_path rackspace-email/edit-dns-in-the-cloud-office-control-panel/manage_dns_settings.png %}" />
 
-3. You will see a list of your domains. Click **DNS Records** under the **Advanced Settings** column next to the domain you would like to edit .
+3. Click **DNS Records** under the **Advanced Settings** column next to the domain you would like to edit .
 
     <img src="{% asset_path rackspace-email/edit-dns-in-the-cloud-office-control-panel/dns_settings.png %}" />
 
-4.  This page is where you will edit your DNS records. Below is an example of the initial DNS record set up to start receiving email at Rackspace Cloud Office.
-
+4. Edit your DNS records. The following is an example of the initial DNS record set up to start receiving email at Rackspace Cloud Office.
 
     <img src="{% asset_path rackspace-email/edit-dns-in-the-cloud-office-control-panel/rackspace_dns_setup.png %}" />
 
-    Warning: Changes to your DNS will impact other services tied to your domain such as website hosting and will cause service disruption if not performed properly.
+    **Warning**: Changes to your DNS impacts other services tied to your domain such as website hosting and will cause service disruption if not performed properly.
 
-5. Once you have completed your edits, click **Save**.
-
+5. After you have completed your edits, click **Save**.
 
 If your DNS is hosted elsewhere, reference **Set up DNS records for Cloud Office email** for instructions.
