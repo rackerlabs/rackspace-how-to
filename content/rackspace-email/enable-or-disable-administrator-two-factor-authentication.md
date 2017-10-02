@@ -17,7 +17,7 @@ This article describes how to enable two-factor authentication for Cloud Office 
 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
-- **Time Needed:** 10 minutes
+- **Time Needed:** Approximately 10 minutes
 - **Tools Needed:** Administrators need access to their Cloud Office Control Panel
   their mobile device, and a two-factor authentication application that supports "time-based one-time password" technology
 
@@ -34,8 +34,11 @@ As the administrator of your company's email solution, your administrator access
 
 3. From the dropdown menu select **Enable Two-Factor Auth**.
 
+    <img src="{% asset_path rackspace-email/enable-or-disable-administrator-two-factor-authentication/two_factor_dropdown.png %}"/>
+
 4. You will be taken to a set a of instructions titled **Enable Two-Factor Authentication**.
 
+    <img src="{% asset_path rackspace-email/enable-or-disable-administrator-two-factor-authentication/qr_code.png %}"/>
 
 5. When you have complete the instructions, click **Enable**.
 
