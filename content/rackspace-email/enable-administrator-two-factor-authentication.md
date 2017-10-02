@@ -11,24 +11,46 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes how to monitor user storage in the Cloud Office Control Panel as well as best practices for mailbox storage.
+This article describes how to enable two-factor authentication for Cloud Office control panel administrators.
 
 ### Prerequisites
 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
 - **Time Needed:** 10 minutes
-- **Tools Needed:** Administrators need access to their Cloud Office Control Panel, their mobile device, and a two-factor authentication application
+- **Tools Needed:** Administrators need access to their Cloud Office Control Panel
+  their mobile device, and a two-factor authentication application that supports "time-based one-time password" technology
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-With the methods available to compromise an account growing in both number and sophistication, properly managing password security is more important
-than ever to ensure that your business is not compromised.
+As the administrator of your company's email solution, your administrator access gives you a great deal of control over you account. If your administrator access is compromised, the results can be devastating to your business. A strong security policy is not complete without enabling two-factor authentication.
 
 
-#### Control Panel Password Management
+#### Enable two factor authentication
 
-Access to the control panel is the key to the kingdom. Every precaution should be taken to prevent unwanted guests from accessing this powerful tool.
+1. Log into your [Cloud Office control panel](cp.rackspace.com).
+
+2. Click your username and account number in the upper right hand corner to expand the drop down menu. Example: **adminusername(acct#)**
+
+3. From the dropdown menu select **Enable Two-Factor Auth**.
+
+4. You will be taken to a set a of instructions titled **Enable Two-Factor Authentication**.
+
+
+5. When you have complete the instructions, click **Enable**.
+
+You have successfully enabled two-factor authentication for your admin ID.
+
+
+#### Log into the control panel with two-factor authentication
+
+1. Navigate to [cp.rackspace.com](cp.rackspace.com). 
+
+2. Enter your **Admin ID** and **Password** as you normally would. Once you have passed the password authentication you will be prompted for the **Two-Factor Verification Code**.
+
+3. Produce this verification code sing the desktop or mobile "two-factor authentication application" that you installed when enabling two-factor authentication.
+
+
 
 - Always set up Two-Factor Authentication.
 - Consider setting restrictions such as for admin access such as [**Login restricted to IP addresses**](/how-to/manage-email-administrators-with-the-cloud-office-control-panel/) or disabling [**Allow simultaneous logins using this Administrative ID**](/how-to/manage-email-administrators-with-the-cloud-office-control-panel/).
