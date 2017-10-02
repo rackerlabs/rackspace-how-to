@@ -37,23 +37,21 @@ If you would prefer a video tutorial see [Rackspace Email - Adding a Domain <img
 
     <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/add_domain.png %}" />
 
-4.  Enter the domain name in the **Domain Name** field and select the applicable option.
+4.  Enter the domain name in the **Domain Name** field and one of the following:
 
     <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/domain_name.png %}" />
 
-    - Option 1: **I own this domain** I will continue to use my current domain registrar and DNS hosting company and I will point my [MX records](/how-to/dns-record-definitions) to Rackspace servers.
-        1. Select the services you would like to include on the domain, click **Save**.
+    - **I own this domain**: Continue to use your current domain registrar and DNS hosting company by pointing your [MX records](/how-to/dns-record-definitions) to Rackspace servers.
+        1. Select the services you would like to include on the domain, and then click **Save**.
         2. [Create mailboxes](/how-to/add-rackspace-email-mailboxes).
         3. [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email) to start receiving email at Rackspace.
 
-    - Option 2: **I own this domain and want Rackspace to Host my DNS** I will continue to use my current domain registrar, but I would like Rackspace to host my [DNS](/how-to/set-up-dns-records-for-cloud-office-email).  
-        1. Select the services you would like to include on the domain, click **Save**.
+    - **I own this domain and want Rackspace to Host my DNS**: Continue to use your current domain registrar, but have Rackspace to host your [DNS](/how-to/set-up-dns-records-for-cloud-office-email).  
+        1. Select the services you would like to include on the domain, and then click **Save**.
         2. [Create mailboxes](/how-to/add-rackspace-email-mailboxes).
         3. [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email). In order for these records to become active, you must first contact your domain's current registrar and request that the Name Server records be switched over to Rackspace's Name Servers.
 
-        4. You will want to [configure your DNS records](/how-to/set-up-dns-records-for-cloud-office-email) within the Cloud Office Control Panel **BEFORE** you change the Name Server records so that you will not experience any interruption of service.
-
-            You will want to update the following Name Server records at your registrar to the following records:
+        4. [Configure your DNS records](/how-to/set-up-dns-records-for-cloud-office-email) in the Cloud Office Control Panel **BEFORE** you change the Name Server records to avoid any interruption of service. Update the following Name Server records at your registrar to the following records:
 
               Primary: **DNS1.NAME-SERVICES.COM**<br>
             Secondary: **DNS2.NAME-SERVICES.COM**<br>
@@ -61,11 +59,11 @@ If you would prefer a video tutorial see [Rackspace Email - Adding a Domain <img
             Secondary: **DNS4.NAME-SERVICES.COM**<br>
             Secondary: **DNS5.NAME-SERVICES.COM**
 
-    - Option 3: **I want to register this domain(price varies)** Rackspace will charge an annual renewal fee to register this domain and host my DNS records.
-        1. Select the services you would like to include on the domain, click **Save**.
+    - **I want to register this domain(price varies)**: Rackspace charges an annual renewal fee to register this domain and hosts your DNS records.
+        1. Select the services you would like to include on the domain, and then click **Save**.
         2. Confirm your purchase by clicking **Register Domain**.
 
-            **Note:** When you purchase a new domain, a verification email is sent to the email address on record. You must click the verification link in the email within 15 days to avoid any disruption to your domains. For more information, see [Additional information about Registrant Benefits and     Responsibilities](http://www.rackspace.com/information/legal/RAAInfo).
+            **Note:** When you purchase a new domain, a verification email is sent to the email address on record. You must click the verification link in the email within 15 days to avoid any disruption to your domains. For more information, see [Additional information about Registrant Benefits and Responsibilities](http://www.rackspace.com/information/legal/RAAInfo).
 
         3. [Create mailboxes](/how-to/add-rackspace-email-mailboxes).
         4. [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email) to start receiving email.
