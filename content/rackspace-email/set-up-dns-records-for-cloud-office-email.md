@@ -13,8 +13,6 @@ product_url: rackspace-email
 
 This article describes how to initially configure your domain's DNS to start receiving email through Rackspace Cloud Office. If you do not require instructions, see the table in step 2 of [Configure DNS to send and receive email](#configure-dns-to-send-and-receive-email) for the required DNS entry values.
 
-If you would prefer a video tutorial see [Rackspace Email - Domain Name System: Introduction & Setup <img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/dns_video_thumb.png %}" /> ](https://www.youtube.com/watch?v=rBAUpPOcatM).
-
 ### Prerequisites
 
 - **Applies to:** Administrators
@@ -62,7 +60,7 @@ You have successfully set up your DNS for your domain.
 **Warning:** If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
 
 
-If you would prefer a video tutorial with more information about DNS, see [Rackspace Email - Domain Name System: Introduction & Setup <img src="{% asset_path rackspace-email/set-up-dns-records-for-cloud-office-email/dns_video_thumb.png %}" /> ](https://www.youtube.com/watch?v=rBAUpPOcatM).
+If you would prefer a video tutorial with more information about DNS, see [Rackspace Email - Domain Name System: Introduction & Setup](https://www.youtube.com/watch?v=rBAUpPOcatM).
 
 ### Related article
 
