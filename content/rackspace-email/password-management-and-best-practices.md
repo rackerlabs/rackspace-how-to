@@ -26,17 +26,36 @@ With the methods available to compromise an account growing in both number and s
 than ever to ensure that your business is not compromised.
 
 
-#### Control Panel Password Management
+### Common password attack types
 
-Access to the control panel is the key to the kingdom. Every precaution should be taken to prevent unwanted guests from accessing this powerful tool.
+**Phishing** - Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and the like. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/). A successful phishing attach is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
 
-- Always set up Two-Factor Authentication
-- Consider setting restrictions such as for admin access such as [**Login restricted to IP addresses**](/how-to/manage-email-administrators-with-the-cloud-office-control-panel/) or disabling [**Allow simultaneous logins using this Administrative ID**](/how-to/manage-email-administrators-with-the-cloud-office-control-panel/).
+    - Never use the same password for different sites and accounts. Employing this policy helps contain the damage if you are phished.
+    - Immediately change your password if you suspect you have fallen victim to a phishing attack.
+    - Alert your company of the attack.
+
+**Malware** - Malicious software that collects information from you without your knowledge. Passwords are captured through keystroke logging.
+
+    - Always make sure that you regularly update things like your operating systems, internet browser, and any other software you regularly use.
+    - Be cautious of any email that includes a link or attachment, regardless of who it appears to be sent from.
+    - Install an antivirus program.
+
+**Hammering** - Hackers will try a list of common passwords against a list of usernames in hopes that a user will match a common password.  
+
+    - Create a stronger password. Is the password you are considering on a list of *Top 25 Most Common Passwords*? Is the password similar in any way? If so, you are a prime target for this attack and should strengthen your password.
+
+**Proof compromise** Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
+
+    - Always keep any contact information current so that outdated information cannot be used to reset your password.
 
 
-### Creating an Effective Password
 
-Meeting password requirements does not create a password robust enough to stop someone determined to access your account. A strong password is does not fit a pattern. While password requirements help prevent the most egregious of weak passwords, they do not make a password unpredictable which is what we want from a strong password.
+
+### Password best practices
+
+Meeting password requirements does not create a password robust enough to stop someone determined to access your account. While password requirements help prevent the most egregious of weak passwords, they do not make a password unbreakable.
+
+1. User education. A compromise that starts with one user will quickly spread to many. Ensure that your users are taking precautions and know
 
 Consider the following when crafting a new password:
 
@@ -52,7 +71,7 @@ Consider the following when crafting a new password:
         - Do not include your initials
 
   - Create a memorable password by creating a very unique password!
-  
-        - Example: on3DayWeW!llAllHavEhoV3rCars
+
+        - Example: on3DayWew!llAllH4vEhoV3r:Cars
 
 It is no longer a question of if a password can be cracked, but how long it will take to crack it. Many password can be cracked in minutes or hours, but a great password will take decades or a millennia for a program to crack.
