@@ -1,24 +1,21 @@
 ---
 permalink: password-management-and-best-practices/
-audit_date: '2017-08-01'
+audit_date:
 title: Password management and best practices
 type: article
-created_date: '2017-008-01'
+created_date: '2017-10-03'
 created_by: William Loy
-last_modified_date: '2017-08-01'
+last_modified_date: '2017-10-03'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes how to monitor user storage in the Cloud Office Control Panel as well as best practices for mailbox storage.
+This article examines common password attack types and password best practices to combat them.
 
 ### Prerequisites
 
 - **Applies to:** Administrator and User
-- **Difficulty:** Easy
-- **Time Needed:** 10 minutes
-- **Tools Needed:** Administrators need access to their Cloud Office Control Panel, Rackspace Email users need access to apps.rackspace.com
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
@@ -40,38 +37,46 @@ than ever to ensure that your business is not compromised.
     - Be cautious of any email that includes a link or attachment, regardless of who it appears to be sent from.
     - Install an antivirus program.
 
-**Hammering** - Hackers will try a list of common passwords against a list of usernames in hopes that a user will match a common password.  
+**Dictionary Attack** - Hackers will try a list of common passwords against a list of usernames in hopes that a user will match a common password.  
 
-    - Create a stronger password. Is the password you are considering on a list of *Top 25 Most Common Passwords*? Is the password similar in any way? If so, you are a prime target for this attack and should strengthen your password.
+    - Create a unique password. Is the password you are considering on a list of *Top 25 Most Common Passwords*?  If so, you are a prime target for this attack and should strengthen your password.
 
 **Proof compromise** Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
 
-    - Always keep any contact information current so that outdated information cannot be used to reset your password.
-
-
-
+    - Always keep contact information current so that outdated information cannot be used to impersonate you.
 
 ### Password best practices
 
 Meeting password requirements does not create a password robust enough to stop someone determined to access your account. While password requirements help prevent the most egregious of weak passwords, they do not make a password unbreakable.
 
-1. User education. A compromise that starts with one user will quickly spread to many. Ensure that your users are taking precautions and know
+1. **User education**. A compromise typically starts with one user, and quickly spreads through a whole company. Ensure that your users are taking precautions and know password best practices.
 
-Consider the following when crafting a new password:
+2. **Avoid patterns**. Patterns are the key to a hackers success. People are very predictable and as such, make predictable passwords.
 
-  - Do some research. Is the password you are considering on a list of *Top 25 Most Common Passwords*? If so, you need to start from scratch and craft a new password.
-  - Have you used this password before? If so it is time to move on to something new.
-  - Do you use this password for other websites or logins? This is never a good idea. If one account is compromised, they are all compromised.
-  - Are you repeating patterns in your password? *fourfour44!!* may satisfy a password requirement but it is easily predicted by a program trying to access your most valuable information.
-  - Are there patterns in your password construction? An example would be a password containing a capital letter at the beginning of the password, a symbol at the end and a number in the last two characters.
-  - Do not use personal information or common words or phrases in your password.
+    - Do you repeat words or characters in your password to meet the character length requirement? *fourfour44!!*  or *PasswordPassword* may satisfy a password length requirement but it is easily predicted by a program trying to access your most valuable information.
 
-        - Do not include your birthday
-        - Do not include a family member's birthday
-        - Do not include your initials
+    - Are you reusing passwords for multiple sites, application or accounts? If your social media account is compromised, a hackers is going to try to access any other accounts you have elsewhere. Reusing passwords ensures that they will succeed.
 
-  - Create a memorable password by creating a very unique password!
+    - Is your password construction similar every time you change it?
+        - Examine the password example *Predictable2017*.  The first letter is capitalized and the password ends in a number. Many people construct their passwords this way which is why a malicious hacking program will always check for it.
+        - You may think you can throw off the hacker with some character substitutions like *Pr3dictab132017*. This is also a predictable pattern that many people use in passwords.
 
-        - Example: on3DayWew!llAllH4vEhoV3r:Cars
+    - Changing aspects of your password is not really changing your password. It is only a good idea to implement a password change schedule if you truly create a new unique password each time.
 
-It is no longer a question of if a password can be cracked, but how long it will take to crack it. Many password can be cracked in minutes or hours, but a great password will take decades or a millennia for a program to crack.
+3. **Password strength**.  Character requirements and password length are only useful if you avoid patterns and be vigilant against attacks like **phishing**, **malware**, **proof attacks** and the like.
+
+    - Avoiding patterns is going to be your primary goal when creating a password. The more unique you make the password, the better.
+
+    - Do not include public or personal information about yourself or those close to you in the password.
+
+        - No birthdays.
+        - No pet names.
+        - No anniversaries.
+        - No company names, founding dates, addresses, etc.
+
+    - Create a memorable password by creating a unique password. An overtly unique password will provide password strength as well as preserve user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
+
+    - Example: *oneDayWew!llAllH4vEhoV6r:Cars*   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character, I leave it lower case. Instead of ending the password with a number, I end with a word. This password as no trace of my company or personal life. I will remember it because I think a hover car would be fun!
+
+
+It is no longer a question of if a password can be cracked, but how long it will take to crack it. Many password can be cracked in minutes or hours, but a proper password will take decades or a millennia for a program to crack.
