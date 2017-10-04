@@ -26,23 +26,19 @@ than ever to ensure that your business is not compromised.
 ### Common password attack types
 
 **Phishing** - Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and the like. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/). A successful phishing attach is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
-
     - Never use the same password for different sites and accounts. Employing this policy helps contain the damage if you are phished.
     - Immediately change your password if you suspect you have fallen victim to a phishing attack.
     - Alert your company of the attack.
 
-**Malware** - Malicious software that collects information from you without your knowledge. Passwords are captured through keystroke logging.
-
+**Malware** - Malicious software that collects information from you without your knowledge. Passwords are captured through keystroke logging
     - Always make sure that you regularly update things like your operating systems, internet browser, and any other software you regularly use.
     - Be cautious of any email that includes a link or attachment, regardless of who it appears to be sent from.
     - Install an antivirus program.
 
 **Dictionary Attack** - Hackers will try a list of common passwords against a list of usernames in hopes that a user will match a common password.  
-
     - Create a unique password. Is the password you are considering on a list of *Top 25 Most Common Passwords*?  If so, you are a prime target for this attack and should strengthen your password.
 
 **Proof compromise** Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
-
     - Always keep contact information current so that outdated information cannot be used to impersonate you.
 
 ### Password best practices
@@ -53,13 +49,13 @@ Meeting password requirements does not create a password robust enough to stop s
 
 2. **Avoid patterns**. Patterns are the key to a hackers success. People are very predictable and as such, make predictable passwords.
 
-    - Do you repeat words or characters in your password to meet the character length requirement? *fourfour44!!*  or *PasswordPassword* may satisfy a password length requirement but it is easily predicted by a program trying to access your most valuable information.
+    - Do you repeat words or characters in your password to meet the character length requirement? **fourfour44!!**  or **PasswordPassword** may satisfy a password length requirement but it is easily predicted by a program trying to access your most valuable information.
 
     - Are you reusing passwords for multiple sites, application or accounts? If your social media account is compromised, a hackers is going to try to access any other accounts you have elsewhere. Reusing passwords ensures that they will succeed.
 
     - Is your password construction similar every time you change it?
-        - Examine the password example *Predictable2017*.  The first letter is capitalized and the password ends in a number. Many people construct their passwords this way which is why a malicious hacking program will always check for it.
-        - You may think you can throw off the hacker with some character substitutions like *Pr3dictab132017*. This is also a predictable pattern that many people use in passwords.
+        - Examine the password example **Predictable2017**.  The first letter is capitalized and the password ends in a number. Many people construct their passwords this way which is why a malicious hacking program will always check for it.
+        - You may think you can throw off the hacker with some character substitutions like **Pr3dictab132017**. This is also a predictable pattern that many people use in passwords.
 
     - Changing aspects of your password is not really changing your password. It is only a good idea to implement a password change schedule if you truly create a new unique password each time.
 
@@ -76,7 +72,7 @@ Meeting password requirements does not create a password robust enough to stop s
 
     - Create a memorable password by creating a unique password. An overtly unique password will provide password strength as well as preserve user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
 
-    - Example: *oneDayWew!llAllH4vEhoV6r:Cars*   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character, I leave it lower case. Instead of ending the password with a number, I end with a word. This password as no trace of my company or personal life. I will remember it because I think a hover car would be fun!
+    - Example: **oneDayWew!llAllH4vEhoV6r:Cars**   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character, I leave it lower case. Instead of ending the password with a number, I end with a word. This password as no trace of my company or personal life. I will remember it because I think a hover car would be fun!
 
 
 It is no longer a question of if a password can be cracked, but how long it will take to crack it. Many password can be cracked in minutes or hours, but a proper password will take decades or a millennia for a program to crack.
