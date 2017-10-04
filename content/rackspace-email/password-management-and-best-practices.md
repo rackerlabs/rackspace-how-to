@@ -19,13 +19,11 @@ This article examines common password attack types and password best practices t
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-With the methods available to compromise an account growing in both number and sophistication, properly managing password security is more important
-than ever to ensure that your business is not compromised.
-
+With the methods available to compromise an account growing in both number and sophistication, properly managing password security is more important than ever to ensure that your business is not compromised.
 
 ### Common password attack types
 
-**Phishing** - Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and the like. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/). A successful phishing attach is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
+**Phishing** - Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and the like. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/email-spoofing-explained). A successful phishing attack is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
 
 - Never use the same password for different sites and accounts. Employing this policy helps contain the damage if you are phished.
 
@@ -80,7 +78,9 @@ Meeting password requirements does not create a password robust enough to stop s
 
     - Create a memorable password by creating a unique password. An overtly unique password will provide password strength as well as preserve user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
 
-    - Example: **oneDayWew!llAllH4vEhoV6r:Cars**   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character, I leave it lower case. Instead of ending the password with a number, I end with a word. This password as no trace of my company or personal life. I will remember it because I think a hover car would be fun!
+    - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character, I leave it lower case. Instead of ending the password with a number, I end with a word. This password as no trace of my company or personal life. I will remember it because I think a hover car would be fun!
+
+
 
 
 It is no longer a question of if a password can be cracked, but how long it will take to crack it. Many password can be cracked in minutes or hours, but a proper password will take decades or a millennia for a program to crack.
