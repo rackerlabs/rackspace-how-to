@@ -27,16 +27,18 @@ than ever to ensure that your business is not compromised.
 
 **Phishing** - Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and the like. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/). A successful phishing attach is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
 
-    - Never use the same password for different sites and accounts. Employing this policy helps contain the damage if you are phished.
+- Never use the same password for different sites and accounts. Employing this policy helps contain the damage if you are phished.
 
-    - Immediately change your password if you suspect you have fallen victim to a phishing attack.
+- Immediately change your password if you suspect you have fallen victim to a phishing attack.
 
-    - Alert your company of the attack.
+- Alert your company of the attack.
 
 **Malware** - Malicious software that collects information from you without your knowledge. Passwords are captured through keystroke logging
 
     - Always make sure that you regularly update things like your operating systems, internet browser, and any other software you regularly use.
+
     - Be cautious of any email that includes a link or attachment, regardless of who it appears to be sent from.
+
     - Install an antivirus program.
 
 **Dictionary Attack** - Hackers will try a list of common passwords against a list of usernames in hopes that a user will match a common password.  
