@@ -5,13 +5,15 @@ title: Add an alias with Rackspace Email
 type: article
 created_date: '2012-01-18'
 created_by: Rae D. Cabello
-last_modified_date: '2015-12-29'
+last_modified_date: '2017-08-16'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article shows how to create an alias that can be used like a mailbox that will forward to another mailbox or to multiple mailboxes on a domain.
+Aliases are a way to create an alternate name for an existing mailbox. For example, John likes to go by Johnny and would like to receive emails to both John@domain.com, for business partners, and Johnny@domain.com, for friends and family, without checking two different accounts.
+
+This article shows how to create an alias that will forward to another mailbox or to multiple mailboxes on a domain.
 
 ### Add a single alias
 

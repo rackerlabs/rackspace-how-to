@@ -16,11 +16,8 @@ If your local email client cannot make a connection to your mailbox, try the tro
 ### Prerequisites
 
 - **Applies to:** User
-
 - **Difficulty:** Challenging
-
 - **Time needed:** Approximately 1 hour
-
 - **Tools required:** Access to offending device, online email access, access to a nonprimary computer, and access to a nonprimary Internet network
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).

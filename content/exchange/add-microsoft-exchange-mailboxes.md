@@ -18,11 +18,8 @@ If you need to add a Rackspace Email mailbox, see [Add Rackspace Email mailboxes
 ### Prerequisites
 
 - **Applies to:** Administrator
-
 - **Difficulty:** Easy
-
 - **Time needed:** Approximately 5 minutes to create a mailbox, and approximately 15 additional minutes for the mailbox to be accessible
-
 - **Tools required:** Cloud Office Control Panel access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
@@ -92,7 +89,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
     If the **Add Mailboxes** button is unavailable, you must add the necessary number of licenses to your account before you can add a mailbox. See [Add a mailbox license](#add-a-mailbox-license) for instructions.
 
-5. Create a CSV or Excel file (XLS) that contains the information detailed in the Data Format section of the Import Mailboxes page. You can download a template from that section to help you create a file with the correct format.
+5. Create a **CSV** or **Excel file (XLS)** that contains the information detailed in the Data Format section of the Import Mailboxes page. You can download a template from that section to help you create a file with the correct format.
 
     **Username**, **Password**, **First Name**, **Last Name** and **Enabled(Enabled=1 Disabled=0)** fields are required on all CSV or Excel imports when adding Microsoft Exchange mailboxes. This method of mailbox creation should be used for adding a high number of mailboxes.
 

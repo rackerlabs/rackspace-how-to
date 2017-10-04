@@ -5,14 +5,14 @@ title: Rackspace Webmail overview
 type: article
 created_date: '2012-05-27'
 created_by: Rackspace Support
-last_modified_date: '2017-06-13'
-last_modified_by: Cory Aldrich
+last_modified_date: '2017-08-16'
+last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
 Rackspace Email allows you to check and manage their email online
-through a Webmail interface. Webmail provides a fully functional calendar with the ability to manage contacts as well as syncing them to your mobile device. Webmail also allows you to reset passwords, create filters, add signatures and much much more.
+through a Webmail interface. Webmail is a direct connection to your email without the need of additional software. Messages that are sent and received using Webmail will be waiting for you the next time you log into the portal. The Webmail portal provides most of the same functionality a mail client would offer, from sending and receiving email to setting up email signatures and even setting up email forwarding to your personal email accounts.
 
 ### Log in to Webmail
 
@@ -64,7 +64,7 @@ Rackspace Email provides various options for users to manage their email account
 
 #### Composing Email: Composing
 
-- **Composing** provides various options to choose from, such as auto-completing email addresses when composing a new email, setting up custom signatures, and so on. 
+- **Composing** provides various options to choose from, such as auto-completing email addresses when composing a new email, setting up custom signatures, and so on.
 - **Replying & Forwarding Citations** selects whether you want the original composed message to be included in your reply and to set a user defined start text and end text of your choice.
 
 <img src="{% asset_path rackspace-email/rackspace-webmail/Webmail2.png %}" alt="" />

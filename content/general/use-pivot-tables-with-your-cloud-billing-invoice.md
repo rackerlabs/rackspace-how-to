@@ -5,59 +5,81 @@ title: Use pivot tables with your Cloud billing invoice
 type: article
 created_date: '2015-03-24'
 created_by: David Hendler
-last_modified_date: '2017-07-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-08-10'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-You can use the CSV-formatted invoice to filter and manipulate your Rackspace billing data. Three pivot tables are available to help you find the information that you need.
+You can use a CSV-formatted invoice to filter and manipulate your Rackspace
+billing data. Three pivot tables are available to help you find the information
+that you need.
 
-**Note:** UK Cloud accounts cannot export the CSV format to pivot tables. We plan to make the CSV export feature available to UK Cloud accounts in September 2016.
-
-### View billing data in pivot tables
-
-First you download the spreadsheet that best matches your application.
-Then you download your billing invoice in a CSV format and import
-its data into the spreadsheet. Then you can refresh the
-data in the pivot tables. Each pivot table lets you filter your data in
-the following ways:
+The pivot tables provide the following data filters:
 
 -   **Pivot Example 1**: Sort by Service, Product Type, Impact (charge discount), and Resource
 -   **Pivot Example 2**: Sort by Service, Product Type, and Resource
 -   **Pivot Example 3**: Sort by Resource, Flavor, Server Type, Product, and Event
 
+### View billing data in pivot tables
 
-1.  Select the spreadsheet that matches your spreadsheet application and
-    download it:
+1.  Select the pivot table spreadsheet from the following list that matches
+your spreadsheet application and download it:
     -   Old Excel: Microsoft Office versions earlier than 2007
-        ([link](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_old_excel_pivot_tables.xls))
+        ([download](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_old_excel_pivot_tables.xls))
     -   New Excel: Microsoft Office 2007 and later, Libre Office,
         and Google Sheets
-        ([link](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_new_excel_pivot_tables.xlsx))
-    -   Open Office
-        ([link](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_open_office_pivot_tables.ods))
+        ([download](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_new_excel_pivot_tables.xlsx))
+    -   OpenOffice
+        ([download](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_open_office_pivot_tables.ods))
 
-2.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-3.  In the top-right corner, click your user name and then select **Billing Overview**.
-4.  Under **Billing History**, click **Invoice Details**.
-5.  In the **Filter Invoice** drop-down field, select the invoice that you want to view.
-6.  On the **Invoice Details** page, export the CSV file.
-7.  Open the CSV file in your spreadsheet program. If prompted, separate values on **comma**.
-8.  Click the small blank square at the top left of the spreadsheet to
-    select all values.
+    Note: The following steps use the current version of Microsoft Excel on [Windows|Mac OSX].
+    If you are using a different spreadsheet application version or a different OS,
+    adjust your steps accordingly.
+2.  Log in to the portal.
+
+      a.  Dedicated account customers: Log in to the [MyRackspace customer portal](https://my.rackspace.com/).
+
+      b.  Cloud customers: Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+3.  Choose next menu option.
+
+      a.  Dedicated account customers: Click **Account** > **Transactions**.
+
+      b.  Cloud customers: Click **Billing History** > **Invoice Details**.
+4.  Click **Billing History** > **Invoice Details**.
+5.  In the **Filter Invoice** menu, select the invoice that you want to view.
+6.  On the **Invoice Details** page, click the CSV link and export the CSV invoice file.
+7.  Open Microsoft Excel, and create a new workbook. Do not open the CSV invoice file.
+8.  In the new workbook, click **Data** > **From Text/CSV**.
+
+    <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/step2.png %}" width="314" height="268" />
+
+9. In the import dialog box, select your CSV invoice file, and click **Get Data**.
+10. In the import wizard, select **Delimited** (using commas as the delimiter
+value), change the file origin to **Unicode (UTF-8)**, and click **Load**.
+
+    <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/step4.png %}" width="314" height="268" />
+
+    The resulting spreadsheet should look similar to the following example:
+
+    <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/result.png %}" width="690" height="153" />
+
+11. Click the small blank square at the top left of the spreadsheet to
+    select all of the values.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/2%20-%20billing_SelectAll_arrow.png %}" width="314" height="268" />
 
-9.  Copy the data to your clipboard.
-10.  Open the file that you downloaded in step 1.
-11. Paste the CSV data into the **Invoice CSV Data** worksheet.
+12. Copy the data to your clipboard.
+13. Open the spreadsheet file that you downloaded in step 1.
+14. Paste the CSV data into the **Invoice CSV Data** worksheet. Ensure that you
+select the A1 cell when you paste.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/3%20-%20billing_csvTab_arrow.png %}" width="538" height="130" />
 
-12. In each of the three pivot tables (worksheets), right-click in the
-    pivot table and select **Refresh**.
-13. Save the spreadsheet with a new name to your computer.
+15. In each of the three pivot tables (worksheets), right-click the pivot table,
+and select **Refresh**.
+16. Save the spreadsheet with a new name to your computer.
+
 
 ### Video demos
 
@@ -70,11 +92,10 @@ The following videos show how to view your data in a pivot table:
 
 ### About the CSV file
 
-**Billing Time Charges** under Cloud Servers is the charge for Saved
-Images. **Billing Time Charges** under Cloud Files is the charge for
-storage.
+The charge shown for Cloud Servers is the charge for saved images, and the
+charge shown for Cloud Files is the charge for storage.
 
-The column headers in the CSV file are as follows:
+The column headers in the CSV file are defined as follows:
 
 - ACCOUNT\_NO: Your account number in the billing system
 - BILL\_NO: The identification number of this invoice
@@ -92,7 +113,7 @@ invoice
   -   Cloud Database
   -   Cloud Files
   -   Cloud Load Balancers
-  -   Cloud Monitoring
+  -   Rackspace Monitoring
   -   Cloud Queues
   -   Cloud Servers
 
@@ -101,16 +122,16 @@ the charge, such as:
 
   -   BigData Uptime
   -   NG (previously next generation) Cloud Server Uptime
-  -   Files BWOUT (bandwidth out)
+  -   Files Bandwidth Out
 
 - EVENT\_START\_DATE: The start date of the specified event
 - EVENT\_END\_DATE: The end date of the specified event
 - IMPACT\_TYPE: Whether the event was a debit or credit (for example,
 Discount, Charge, Tax)
 - QUANTITY: The number or amount of things being counted for charges, such as 300 (GB)
-- UOM (Unit of Measure): How the QUANTITY is measured, such as GB
+- UOM (Unit of Measure): How the Quantity is measured, such as GB
 - RATE: The cost per chargeable unit
-- CURRENCY: The medium of exchange in which charges accrued are billed (for example, USD, AUD, GBP, EUR)
+- CURRENCY: The medium of exchange in which accrued charges are billed (for example, USD, AUD, GBP, EUR)
 - AMOUNT: The number of chargeable units
 - USAGE\_RECORD\_ID: The ID of the charge
 - DC\_ID: The data center in which the charges were accrued

@@ -5,7 +5,7 @@ title: Troubleshoot email delivery
 type: article
 created_date: '2017-05-25'
 created_by: William Loy
-last_modified_date: '2017-05-31'
+last_modified_date: '2017-07-12'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -16,11 +16,8 @@ If an incoming or outgoing message might not have been delivered, try the troubl
 ### Prerequisites
 
 - **Applies to:** User
-
 - **Difficulty:** Challenging
-
 - **Time needed:** Approximately 1 hour
-
 - **Tools required:** Online email access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).  
@@ -49,7 +46,7 @@ If an incoming message never arrived, try the following steps:
 
    a. Log in to [apps.rackspace.com](https://apps.rackspace.com/index.php).
    b. Right-click **Trash** (for Rackspace Email users) or **Deleted Items** (for Exchange users) and select **Recover Deleted Email** from the menu.
-   
+
       A pop-up box displays messages that have been deleted within the last 14 days.
 
 5. **Verify whether rules or filters might have been applied.**
@@ -62,7 +59,7 @@ If an incoming message never arrived, try the following steps:
 
    If so, see [Common email bounce messages](/how-to/common-email-bounces) for possible solutions.
 
-8. **Determine whether the message was sent to an Alias, Contact, Group List, or Distribution List.** 
+8. **Determine whether the message was sent to an Alias, Contact, Group List, or Distribution List.**
 
    These type of addresses do not deliver any message flagged as spam.
 
@@ -84,9 +81,9 @@ If an incoming message never arrived, try the following steps:
 
 1. **Log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) and try to send the message again.**
 
-   If you can successfully send a message from webmail but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify that your SMTP settings are correct by logging in to the [Email Help Tool](https://emailhelp.rackspace.com/). 
+   If you can successfully send a message from webmail but not from a [local mail client](/how-to/cloud-office-support-terminology/#cloud-office-terminology) you can verify that your SMTP settings are correct by logging in to the [Email Help Tool](https://emailhelp.rackspace.com/).
 
-2. **Determine whether you got a bounce message**
+2. **Determine whether you got a bounce message.**
 
    If so, see [Common email bounce messages](/how-to/common-email-bounces) for possible solutions.
 

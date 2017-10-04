@@ -5,8 +5,8 @@ title: Cloud Block Storage FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-09-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-08-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -227,9 +227,12 @@ TB in size.
 
 Cloud Block Storage provides persistent data storage for Cloud Servers. Persistent storage can exist independent of your server, even after the server has been deleted. The local storage bundled with Cloud Servers is ephemeral and exists only as long as the Cloud Server exists. When the server is deleted, so is its local storage.
 
-We recommend that you [unmount and detach Cloud Block
-Storage](/how-to/detach-and-delete-cloud-block-storage-volumes)
+We recommend that you [unmount and detach Cloud Block Storage](/how-to/detach-and-delete-cloud-block-storage-volumes)
 volumes before deleting the server.
+
+#### What types of volumes are available?
+
+Cloud Block Storage offers both a low cost per gigabyte option with standard performance for customers who only require more storage and a high performance option that provides increased storage with higher performance.
 
 ------------------------------------------------------------------------
 

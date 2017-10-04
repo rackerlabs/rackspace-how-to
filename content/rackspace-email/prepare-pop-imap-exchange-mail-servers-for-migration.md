@@ -5,7 +5,7 @@ title: Prepare POP, IMAP, and Exchange mail servers for migration
 type: article
 created_date: '2016-08-29'
 created_by: Nate Archer
-last_modified_date: '2016-09-01'
+last_modified_date: '2017-08-14'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
@@ -13,15 +13,15 @@ product_url: rackspace-email
 
 This article outlines important information to consider when you are migrating to Rackspace from one of the most common types of mail servers. Prior to migrating, we recommend that you review this information for your source (current) mail server.
 
-After you have reviewed this information, you can follow the steps in the article [Migrate your email by using the Self-Service Migration tool](how-to/migrate-your-email-by-using-the-self-service-migration-tool/) to complete your migration.
+After you have reviewed this information, you can follow the steps in the article [Migrate your email by using the Self-Service Migration tool](/how-to/migrate-your-email-by-using-the-self-service-migration-tool/) to complete your migration.
 
 ### POP server
 
 POP mail servers store email on the user's local computer and not the source server so you might not need to migrate your users' mail. Therefore, we recommend a local data migration, which you can perform by following the steps in these articles:
 
-- (Mac) [Migrating from a POP server to Rackspace email IMAP using Outlook 2011](how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/)
+- (Mac) [Migrating from a POP server to Rackspace email IMAP using Outlook 2011](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/)
 
-- (Windows) [Migrating from a POP server to Rackspace Email using Outlook 2010's drag and drop method](how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2010-drag-and-drop-method/)
+- (Windows) [Migrating from a POP server to Rackspace Email using Outlook 2010's drag and drop method](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2010-drag-and-drop-method/)
 
 ### IMAP server
 

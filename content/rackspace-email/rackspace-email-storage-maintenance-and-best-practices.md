@@ -30,7 +30,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    The **Usage** column is not a real time reading of the mailbox storage. **Usage** updates once every 24 hours. Always reference the storage in [apps.rackspace.com](https://apps.rackspace.com/index.php) for real time storage.
 
-**Warning:** If a mailbox is at max capacity, the mail sent during that time will be rejected and will *not* deliver after more mailbox space is created.
+**Warning:** Never allow a mailbox to reach max capacity as any message sent to that mailbox while it is at max capacity will be rejected. Rejected messages will *not* deliver after more mailbox space is created. Messages sent *after* space is created will deliver normally. 
 
 ### Enable storage notifications
 
