@@ -1,6 +1,6 @@
 ---
 permalink: oracle-business-intelligence-12c-release-new-features/
-audit_date: '2018-03-26'
+audit_date: '2017-10-04'
 title: Oracle Business Intelligence 12c new release features
 type: article
 created_date: '2017-09-26'
