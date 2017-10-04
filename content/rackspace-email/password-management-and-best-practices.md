@@ -35,19 +35,19 @@ than ever to ensure that your business is not compromised.
 
 **Malware** - Malicious software that collects information from you without your knowledge. Passwords are captured through keystroke logging
 
-    - Always make sure that you regularly update things like your operating systems, internet browser, and any other software you regularly use.
+- Always make sure that you regularly update things like your operating systems, internet browser, and any other software you regularly use.
 
-    - Be cautious of any email that includes a link or attachment, regardless of who it appears to be sent from.
+- Be cautious of any email that includes a link or attachment, regardless of who it appears to be sent from.
 
-    - Install an antivirus program.
+- Install an antivirus program.
 
 **Dictionary Attack** - Hackers will try a list of common passwords against a list of usernames in hopes that a user will match a common password.  
 
-    - Create a unique password. Is the password you are considering on a list of *Top 25 Most Common Passwords*?  If so, you are a prime target for this attack and should strengthen your password.
+- Create a unique password. Is the password you are considering on a list of *Top 25 Most Common Passwords*?  If so, you are a prime target for this attack and should strengthen your password.
 
 **Proof compromise** Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
 
-    - Always keep contact information current so that outdated information cannot be used to impersonate you.
+- Always keep contact information current so that outdated information cannot be used to impersonate you.
 
 ### Password best practices
 
