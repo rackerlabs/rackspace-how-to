@@ -41,6 +41,4 @@ If you need to export or import email address data from a different Outlook vers
 
 5. A box will appear with the message **Your data has been exported.**. Click **Finish**.
 
-    <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2016-for-mac/finish_export2016.png %}" />
-
-You have exported a copy of your email address data from Outlook 2016 for Mac! If you need to import email address data into Outlook 2016 for Mac, see [Import email address data into Outlook 2016 for Mac](/how-to/import-email-address-data-into-outlook-2016-for-mac).
+You have exported a copy of your email address data from Outlook 2016 for Mac. If you need to import email address data into Outlook 2016 for Mac, see [Import email address data into Outlook 2016 for Mac](/how-to/import-email-address-data-into-outlook-2016-for-mac).
