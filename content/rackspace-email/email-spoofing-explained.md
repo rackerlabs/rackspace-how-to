@@ -38,8 +38,6 @@ In many cases, the spoofed email is part of a **phishing** (scam) attack. In oth
 
 ### Identify a spoofed message
 
-It is vital that users understand that emails that appear to be sent from co-workers, can possibly be forged emails. This is the case w
-
 Scammers will alter different sections of an email to disguise who the *actual* sender of the message is. To identify the following examples you will need to open the **email headers** of a message you suspect has been spoofed. Examples of properties that are spoofed:
 
 **FROM** boss@companyexample.com(This will appear to come from a legitimate source on any spoofed message)
