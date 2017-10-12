@@ -29,7 +29,7 @@ If the mailbox is set up in a [local email client](/how-to/cloud-office-support-
 
 ### Rename a Rackspace Email Address
 
-For a video tutorial of the following steps, see [Rackspace Email - Adding/Editing/Renaming/Restoring](https://youtu.be/9eBoiox64UE?t=2m17s).
+For a video tutorial of the following steps, see [Rackspace Email - Adding/Editing/Renaming/Restoring](emailhelp.rackspace.com/l/add-edit-rename-rse-mailbox).
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 
@@ -47,16 +47,16 @@ For a video tutorial of the following steps, see [Rackspace Email - Adding/Editi
 
     If you receive a `This email address is already taken` message, it means the address is already in use as an alias, group list, distribution list, or as a Microsoft Exchange mailbox on this domain. Try a different email address.
 
-    A confirmation message will appear with the banner **Email Address Renamed!**, displaying the old email address and the new email address. 
+    A confirmation message will appear with the banner **Email Address Renamed!**, displaying the old email address and the new email address.
 
     <img src="{% asset_path rackspace-email/rename-a-rackspace-email-address/success-message.png %}" />
-    
+
 6. Click **OK**.
 
 ### Update devices to connect to the renamed email address
 
 After you rename the email address, you must update all devices such as desktop
 computers and mobile phones to connect to the renamed mailbox. For steps,
-see Renamed Rackspace Email address setup guide. [Renamed Rackspace Email address setup guide](/how-to/renamed-rackspace-email-address-setup-guide/) 
+see Renamed Rackspace Email address setup guide. [Renamed Rackspace Email address setup guide](/how-to/renamed-rackspace-email-address-setup-guide/)
 
 **Note:** We recommend logging in to [apps.rackspace.com](https://apps.rackspace.com/index.php) with the new mailbox address before you configure devices. If you are unable to log in, update the mailbox password before continuing. If you can't log in to the mailbox, see [Change a Rackspace Email mailbox password](/how-to/change-rackspace-email-mailbox-password/#change-a-password-through-cloud-office-control-panel).
