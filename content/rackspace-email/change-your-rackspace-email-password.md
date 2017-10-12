@@ -5,8 +5,8 @@ title: Change a Rackspace Email mailbox password
 type: article
 created_date: '2017-06-19'
 created_by: William Loy
-last_modified_date: '2017-07-11'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-09-12'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -23,6 +23,8 @@ This article describes how to change the password that is used to access a Racks
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
 ### Change your password through webmail
+
+If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Webmail <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/reset_user_password_thumb.png %}" />](https://www.youtube.com/watch?v=wdEXE9JQKfk).
 
 1. Log in to your mailbox at [apps.rackspace.com](https://apps.rackspace.com/index.php).
 
@@ -50,7 +52,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Change a password through Cloud Office Control Panel
 
-**Note:** Only administrators have access to the Cloud Office Control Panel.
+If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Admin Control Panel <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/cp_reset_password_thumb.png %}" />](https://www.youtube.com/watch?v=-daShi62uHA).
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 2. In the **Rackspace Email** section, click **Mailboxes**.
@@ -58,13 +60,10 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/RSEpasswordresetCPSC2.png %}" />
 
-4. Under **User Name**, enter the following information:
+4. Beneath the email address, click **RESET PASSWORD**.
 
-   - **Password:** Enter a new password.
-   - **Confirm:** Enter the new password again.
+    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/reset_password.png %}" />
 
-   **Note:** We recommend that you create a password that you have never used before and that remains unique from all your other passwords. Also, longer passwords provide better security for your account.
+5. 5. A box will appear prompting you to enter the **New Password** and enter the new password again in the **Confirm Password** field.
 
-5. Click **Submit**.
-
-   <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/RSEpasswordresetCPSC3.png %}" />
+    <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/new_password.png %}" />
