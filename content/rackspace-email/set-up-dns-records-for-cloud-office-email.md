@@ -60,9 +60,8 @@ You have successfully set up your DNS for your domain.
 **Warning:** If you change DNS settings for a domain that was hosting email elsewhere, user email clients and devices must be reconfigured to point to Rackspace. Send your users to <http://emailhelp.rackspace.com> to assist them with new settings.
 
 
-If you would prefer a video tutorial with more information about DNS, see [Rackspace Email - Domain Name System: Introduction & Setup](https://www.youtube.com/watch?v=rBAUpPOcatM).
+If you would prefer a video tutorial with more information about DNS, see [Rackspace Email - Domain Name System: Introduction & Setup](https://emailhelp.rackspace.com/l/dns-introduction-and-setup).
 
 ### Related article
 
 - [Set up DNS for Cloud Office Skype for Business](/how-to/set-up-dns-records-for-cloud-office-skype-for-business)
-
