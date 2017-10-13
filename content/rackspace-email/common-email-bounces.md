@@ -5,7 +5,7 @@ title: Common email bounce messages
 type: article
 created_date: '2017-05-18'
 created_by: William Loy
-last_modified_date: '2017-05-30'
+last_modified_date: '2017-10-12'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -20,6 +20,8 @@ This article explains the causes of common email bounce messages and how to reso
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 ### Bounce messages
+
+For a video tutorial of the following steps, see [Email Help - Bounce Messages](https://emailhelp.rackspace.com/l/spam-overview).
 
 Bounce messages provide a brief explanation of why an email was not delivered. Bounce messages vary among mail providers. If you do not see your particular bounce message here, refer to the mail provider for an interpretation of their message.
 
