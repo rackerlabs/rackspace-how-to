@@ -51,9 +51,13 @@ already exists.
 
     ```# set initiator name
     echo InitiatorName=iqn.2008-10.org.openstack: ae9f0492-d19d-45d3-9eac-6987b07f145a > /etc/iscsi/initiatorname.iscsi
+
     # discover targets for a given portal
+
     iscsiadm -m discovery --type sendtargets --portal 10.190.142.197:3260
+
     # connect to the target
+
     iscsiadm -m node --targetname=iqn.2010-11.com.rackspace: ae9f0492-d19d-45d3-9eac-6987b07f145a --portal 10.190.142.197:3260 –login
     ```
 
@@ -63,6 +67,7 @@ already exists.
    and port, which are your address. In the preceding example, these values are:
 
     ```Target = iqn.2010-11.com.rackspace: ae9f0492-d19d-45d3-9eac-6987b07f145a
+
     Address = 10.190.142.197:3260
     ```
 
