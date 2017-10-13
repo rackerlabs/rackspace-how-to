@@ -75,7 +75,7 @@ With the preceding information noted, perform the following steps.
 
 3. Set the service to start automatically, and then start the service.
 
-   <img src="{% asset_path cloud-servers/attach-cbs-to-win-onmetal-1.png %}" alt="" />
+   <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-1.png %}" alt="" />
 
 4. Next, open the Administrator control panel by selecting *Start* ->
    *Control Panel* -> *Administrator Tools*.
@@ -83,21 +83,21 @@ With the preceding information noted, perform the following steps.
 5. Open the iSCSI initiator.  Click on the second tab, *Discovery*, and then
    click *Discover Portal*.
 
-   <img src="{% asset_path cloud-servers/attach-cbs-to-win-onmetal-2.png %}" alt="" />
+   <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-2.png %}" alt="" />
 
    Result: A window pops up where you can enter the CBS storage node address.
 
 6. Enter the IP address (the `portal` IP address and port, which you noted
    earlier),and click *OK*.
 
-   <img src="{% asset_path cloud-servers/attach-cbs-to-win-onmetal-3.png %}" alt="" />
+   <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-3.png %}" alt="" />
 
    Result: the target server appears in the list on the Discovery page.
 
 7. Click the *Targets* page, and enter the target ICQ (the `targetname`, which
    you noted earlier).
 
-   <img src="{% asset_path cloud-servers/attach-cbs-to-win-onmetal-4.png %}" alt="" />
+   <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-4.png %}" alt="" />
 
 8. On the *target* line, and enter the target IQN (the `targetname`, which
    you noted earlier), starting with "iqn". Then click *Quick Connect*.
@@ -110,4 +110,4 @@ With the preceding information noted, perform the following steps.
     Result: Because the CBS volume is attached, a second disk, the target, is
     listed and can then be prepared and brought online.
 
-   <img src="{% asset_path cloud-servers/attach-cbs-to-win-onmetal-5.png %}" alt="" />
+   <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-5.png %}" alt="" />
