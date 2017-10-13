@@ -23,7 +23,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### Best practices
 
-For a video tutorial of the following steps, see [Rackspace Email - Spam Flags: Best Sending Practices](https://emailhelp.rackspace.com/l/spam-overview).
+For a video tutorial see [Rackspace Email - Spam Flags: Best Sending Practices](https://emailhelp.rackspace.com/l/spam-overview).
 
 Sending email to many recipients is a common practice of spammers. As a result, most email providers have strict rules regarding email content sent to many recipients. It is difficult to distinguish your email from typical mass marketing, newsletter, and other unsolicited mass email content.
 
