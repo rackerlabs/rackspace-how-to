@@ -21,7 +21,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### Bounce messages
 
-For a video tutorial of the following steps, see [Email Help - Bounce Messages](https://emailhelp.rackspace.com/l/spam-overview).
+For a video tutorial see [Email Help - Bounce Messages](https://emailhelp.rackspace.com/l/spam-overview).
 
 Bounce messages provide a brief explanation of why an email was not delivered. Bounce messages vary among mail providers. If you do not see your particular bounce message here, refer to the mail provider for an interpretation of their message.
 
