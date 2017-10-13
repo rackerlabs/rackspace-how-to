@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article provides best practices that can help you avoid having your legitimate person-to-person email messages flagged as spam. 
+This article provides best practices that can help you avoid having your legitimate person-to-person email messages flagged as spam.
 
 If you need recommendations for sending email to many recipients, see [Best practices for sending email to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients). If you receive a bounce message when sending an email, see our list of [common email bounce messages](/how-to/common-email-bounces) for more information.
 
@@ -22,6 +22,8 @@ If you need recommendations for sending email to many recipients, see [Best prac
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 ### Best practices
+
+For a video tutorial of the following steps, see [Rackspace Email - Spam Flags: Best Sending Practices](https://emailhelp.rackspace.com/l/spam-overview).
 
 Stricter and more sophisticated spam filters flag more email as spam than ever before. To ensure that the person-to-person emails that you send through the Rackspace mail system reach their destination, use the following best practices. Most reputable mail providers also provide their own recommendations, and we encourage you to read those as well.
 
@@ -66,7 +68,7 @@ Do not overtly reference topics that usually indicate spam. For example, highly 
 
 Attachments are a common way of distributing viruses, making filters increasingly strict about attachments. Blocking zip file attachments is a prolific example of this.
 
-Avoid attaching files to your messages. Cloud file services such as [Microsoft OneDrive with Rackspace](https://www.rackspace.com/office-365) provide shareable links to files that you can include in your email. 
+Avoid attaching files to your messages. Cloud file services such as [Microsoft OneDrive with Rackspace](https://www.rackspace.com/office-365) provide shareable links to files that you can include in your email.
 
 If you need to send attachments, use attachment names that are simple and specific, and spell them correctly. Oddly named or spelled attachments are a common way of transporting viruses.
 
