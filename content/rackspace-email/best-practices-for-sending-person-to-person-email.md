@@ -23,7 +23,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### Best practices
 
-For a video tutorial of the following steps, see [Rackspace Email - Spam Flags: Best Sending Practices](https://emailhelp.rackspace.com/l/spam-overview).
+For a video tutorial see [Rackspace Email - Spam Flags: Best Sending Practices](https://emailhelp.rackspace.com/l/spam-overview).
 
 Stricter and more sophisticated spam filters flag more email as spam than ever before. To ensure that the person-to-person emails that you send through the Rackspace mail system reach their destination, use the following best practices. Most reputable mail providers also provide their own recommendations, and we encourage you to read those as well.
 
