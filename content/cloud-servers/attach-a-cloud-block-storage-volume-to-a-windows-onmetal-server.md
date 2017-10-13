@@ -62,8 +62,9 @@ already exists.
    is the initiator and the target for your volume, and the `portal` IP address
    and port, which are your address. In the preceding example, these values are:
 
-    Target = iqn.2010-11.com.rackspace: ae9f0492-d19d-45d3-9eac-6987b07f145a
+    ```Target = iqn.2010-11.com.rackspace: ae9f0492-d19d-45d3-9eac-6987b07f145a
     Address = 10.190.142.197:3260
+    ```
 
 ### Connect the volume in Windows
 
