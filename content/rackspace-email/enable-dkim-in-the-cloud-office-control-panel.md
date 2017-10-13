@@ -24,6 +24,8 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 To create a truly robust email verification policy, you should [create an **SPF** record policy](/how-to/create-an-spf-policy), then create a **DKIM** record, and lastly [create a DMARC record policy](/how-to/create-a-dmarc-policy).
 
+For a video tutorial of the following steps, see [Rackspace Email - DMARC / DKIM: What It Is & How to Setup](https://emailhelp.rackspace.com/l/dmarc-dkim-records-setup).
+
 ### Enable DKIM for a domain
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
