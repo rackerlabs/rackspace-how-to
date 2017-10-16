@@ -141,7 +141,7 @@ Another option to enable Oracle Zoom is to do a small **Forms
 Personalization** to enable the Zoom option directly. Use the following steps
 for this option:
 
-1.  While in a forme, create a form personalization to call the Properties
+1.  While in a form, create a form personalization to call the Properties
     window with these settings:
 
         Seq: 10
