@@ -5,7 +5,7 @@ title: Oracle E-Business Suite tips
 type: article
 created_date: '2017-10-09'
 created_by: Catherine Richardson
-last_modified_date: '2017-10-09'
+last_modified_date: '2017-10-16'
 last_modified_by: Catherine Richardson
 product: Managed Operations
 product_url: managed-operations
@@ -14,9 +14,7 @@ product_url: managed-operations
 Oracle® E-Business Suite (EBS) is the most comprehensive suite of integrated,
 global business applications that enable organizations to make better
 decisions, reduce costs, and increase performance. This article is for those
-who know the basics of EBS and want to take their skills to the next level. It
-includes answers to frequently asked questions and provides best practices for
-EBS.
+who know the basics of EBS and want to take their skills to the next level.
 
 For more information about new ways to work in Oracle, check our
 [blog](https://info.tricoresolutions.com/blog)
@@ -35,7 +33,7 @@ This article includes tips to perform the following tasks:
   - [Use the document navigator](#use-the-document-navigator)
   - [Switch from data entry mode to query mode](#switch-from-data-entry-mode-to-query-mode)
 - [Tools tips](#tools-tips)
-  - [Use Oracle folder tools](#use-the-oracle-folder-tools)
+  - [Oracle folder tools](#oracle-folder-tools)
   - [Export data from Oracle Summary forms](#export-data-from-oracle-summary-forms)
   - [Use the inventory Patch Wizard](#use-the-inventory-patch-wizard)
   - [Leverage MOAC security](#leverage-moac-security)
@@ -43,7 +41,7 @@ This article includes tips to perform the following tasks:
 - [Payables tips](#payables-tips)
   - [Payment on receipt](#payment-on-receipt)
   - [Priority number](#priority-number)
-  - [Payments proces in Oracle release 12](#payments-process-in-oracle-release-12)
+  - [Payments process in Oracle release 12](#payments-process-in-oracle-release-12)
   - [Regulatory reporting](#regulatory-reporting)
 - [Purchasing tips](#purchasing-tips)
   - [Confirm receipts](#confirm-receipts)
@@ -81,7 +79,7 @@ Use the following steps to add a function to your Top Ten List:
 
 2.  Select the function of your choice.
 
-3.  Click the arrow pointing right in the center of the Navigator to move the
+3.  Click the right arrow in the center of the Navigator to move the
     function to your Top Ten List.
 
 #### Customize the order of the tabs
@@ -101,12 +99,12 @@ Use the following steps to change the order of tabs on Oracle forms:
     the dialog to customize the order of the tabs.
 
     This brings up the Personalization Form in the context of the form and
-    function that you were in. Here you build the Personalizations specific to
-    that form or function. You use the **Folder Tools** to move a field
+    function that you are in. Here you build the personalizations specific to
+    that form or function. (You use the **Folder Tools** to move a field.)
 
 #### Sort summary forms
 
-If you open a summary form and you would like to change the way that it is
+If you open a summary form and you want to change the way that it is
 sorted, you can usually change the sort order on the first three fields.
 
 Use the following steps to change the sort order:
@@ -130,20 +128,21 @@ level to **Yes**:
 
 #### Enable Oracle Zoom
 
-Oracle Zoom is a fast was to navigate Oracle forms. Using Oracle Zoom, you can
-be in one Oracle form and zoon to another form without navigating to the Main
-Menu, for example, you are reviewing **WIP Components** and want to check
-**Supply/Demand**. Oracle Zoom also allows you to build custom links through
-Forms Personalizations and use global varialbes to transfer data across forms.
+Oracle Zoom is a fast way to navigate Oracle forms. By using Oracle Zoom, you
+can be in one Oracle form and change to another form without navigating to the
+Main Menu. Oracle Zoom also allows you to build custom links through
+**Forms Personalization** and use global variables to transfer data across
+forms.
 
 To enable Oracle Zoom in EBS Release 12.2.6, navigate through **Help >
-Diagnostics > Properties > Item** and **Close** button.
+Diagnostics > Properties > Item** and then click **Close**.
 
-Another option to enable Oracle zoom is to do a small form personalization to
-enable the Zoom option directly. Use the following steps for this option:
+Another option to enable Oracle Zoom is to do a small **Forms
+Personalization** to enable the Zoom option directly. Use the following steps
+for this option:
 
-1.  Create a form personalizations to call the Properties window with these
-    settings:
+1.  While in a forme, create a form personalization to call the Properties
+    window with these settings:
 
         Seq: 10
         Desc: First step is to call the Properties window
@@ -160,7 +159,7 @@ enable the Zoom option directly. Use the following steps for this option:
         Property Name: VISIBLE
         VALUE: TRUE
 
-2.  Create another form personalizations to disable and close the Properties
+2.  Create another forms personalization to disable and close the Properties
     window with these settings:
 
         Seq: 20
@@ -178,45 +177,42 @@ enable the Zoom option directly. Use the following steps for this option:
 
 3.  Save these form personalizations.
 
-4.  Close and open the form to see the Zoom option is enabled directly without
-    navigating through properties.
+4.  Close and reopen the form to see that the Zoom option is enabled directly  
+    without navigating through properties.
 
 #### Fix Oracle forms closing too often
 
-You might experience the form that you are working on closing when you open
-another form in the same responsibility. This might be because you have the
-**Close Other Forms** option enabled.
+If the form that you are working on closes when you open another form in the
+same responsibility, you might have the **Close Other Forms** option enabled.
 
-To turn off the **Close Other Forms** option, use the following steps:
+To disable the **Close Other Forms** option, use the following steps:
 
 1.  While in the Navigator form, go to the **Tools** menu.
 
 2.  In the Tools dropdown menu, check to see if the **Close Other Forms**
     option is enabled (has a check mark in the box beside it).
 
-3.  If the options is enabled, click the box beside **Close Other Forms** to
-    disable it.
+3.  If the options is enabled, deselect the checkbox beside **Close Other
+    Forms** to disable it.
 
 #### Hide the Preferences link
 
 The easiest way to hide the **Preferences** link is by changing the **General
 Preferences Show Flag** profile option that can be set on **Site**,
 **Responsibility**, and **User Level**. The default values are **NULL**,
-which means show the link.
+which means to show the link.
 
 Use the following steps to hide the link:
 
-1. Use responsibility System Administrator.
+1. In System Administrator Responsibility, navigate to **Profile > System**
 
-2. Navigate to **Profile > System**
+2. Search for the **General Preferences Show Flag** profile option.
 
-3. Search for the **General Preferences Show Flag** profile option.
+3. Set the profile option value to **No**.
 
-4. Set the profile option value to **No**
+4. Save the changes.
 
-5. Save the changes.
-
-6. Log out and then log in to see the results.
+5. Log out and then log back in to see the results.
 
 #### Use the document navigator
 
@@ -234,48 +230,47 @@ Use the following steps to use the document navigator:
 
 3.  From the Main Menu, click **Documents** to see all of your documents.
 
-Additionally, you can rename, organize, and clean up your document names.    
+    Additionally, you can rename, organize, and clean up your document
+    names.    
 
 #### Switch from data entry mode to query mode
 
-By using your function keys, you can switch the form that you have open from
-data entry mode to query mode.
+By using your function keys, you can switch your open form from data entry
+mode to query mode.
 
-Use the following steps to use the function keys to swithc modes:
+Use the following steps to use the function keys to switch modes:
 
 1.  Open a form.
 
-2.  Use the **F11** key to switch modes. (The fields turn blue.)
+2.  Use the **F11** key to switch modes. In query mode, the fields turn blue.
 
 3.  Enter your search criteria.
 
-4.  Use the **Control** and **F11** keys at the same time to execute your
+4.  Use the **Control** + **F11** keys at the same time to execute your
     query.
 
-You can also enter query mode by using the menu.
-
-Use the following steps to use the menu to switch modes:
+You can also enter query mode by using the menu. Use the following steps to
+switch modes in the menu:
 
 1.  Open a form.
 
-2.  Under the **View** menu, locate **Query by Example**.
+2.  Under the **View** menu, in the **Query by Example** section, use the
+    **Enter** menu to switch from data entry mode to query mode.
 
-3.  Under **Query by Example**, use the **Enter** menu to switch from data
-    entry mode to query mode.
-
-4.  Under **Query by Example**, use the **Run** menu to execute the query.
+4.  In the **Query by Example** section, use the **Run** menu to execute the
+    query.
 
 ### Tools tips
 
-This section includes some tips about using some of the tools in EBS.
+This section includes tips about using some of the tools in EBS.
 
-#### Use Oracle Folder Tools
+#### Oracle Folder Tools
 
-Oracle Folder Tools to change the layout of an Orcale Summary form, for
-example, an Invoice Summary or a PO Summary.
+Use Oracle Folder Tools to change the layout of an Oracle Summary form, such
+as, an Invoice Summary or a PO Summary.
 
-Access Oracle Folder Tools by clicking on the Folders Tools icon in the
-menu. Oracle Folder Tools enable you to make the following changes:
+Access Oracle Folder Tools by clicking on the Folder Tools icon in the
+menu. You can make the following changes:
 
 - Move fields
 - Add fields
@@ -284,27 +279,24 @@ menu. Oracle Folder Tools enable you to make the following changes:
 - Save changes as your default view or a selectable view
 
 Oracle Folder Tools enables features for form layouts that are similar to
-Microsoft® Excel®.
-
-Oracle Folder Tools also enables you to save your frequently used queries for
+Microsoft® Excel®. You can also save your frequently used queries for
 future use.
 
 #### Export data from Oracle Summary forms
 
-Export data from Oracle Summary forms for quick Ad Hoc reports.
-
-Use these steps to export the data:
+You can export data from Oracle Summary forms for quick Ad Hoc reports. Use
+the following steps to export the data:
 
 1.  When your query has completed, navigate to **Tools > Export**.
 
 2.  If you export to a text file but would rather export directly to Microsoft
     Excel, go to **Windows > Control Panel > Default Programs**.
 
-3.  Change the default program for ``.tsv`` files to Excel.
+3.  Change the default program for ``.csv`` files to Excel.
 
-**Note**: Exporting data in this way does not work for On-Hand inventory. For
-On-Hand inventory, right-click and select **Copy All Rows**. Then paste the
-rows into Excel.  
+    **Note**: Exporting data in this way does not work for On-Hand inventory.
+    For On-Hand inventory, right-click and select **Copy All Rows**. Then
+    paste the rows into Excel.  
 
 #### Use the inventory Patch Wizard
 
@@ -313,14 +305,14 @@ inventory customers are often asked if they are patched to the most recent
 file version. To get the most out of their inventory investment, it's critical
 that they avoid known issues by being patched up to the most recent product
 patches available. The Patch Wizard is a key tool to use to keep patches
-up to date.
+up-to-date.
 
 The Patch Wizard is an interface that analyzes and compares patches currently
 applied in your instance to the patches included in the Recommended Patch List
 (RPL). It allows you to set your execution preferences, then performs impact
 analysis, and allows easy download of the patches that you decide to apply.
 You can easily access the Patch Wizard from the Oracle Applications Manager
-menu using the System Administrator Responsibility.
+menu by using the System Administrator Responsibility.
 
 
 #### Leverage Multiple Organization Access Control security
@@ -361,7 +353,7 @@ video to more structured application data. For example, you can:
 - Attach video to manufacturing operations
 - Attach Certificates of Insurance to Suppliers
 
-You invoke the Attachment form to view an attachment by pressing the
+Invoke the Attachment form to view an attachment by pressing the
 Attachment toolbar button or clicking on the paperclip icon. The toolbar
 Attachment icon indicates whether the Attachments feature is enabled in a form
 block:
@@ -371,15 +363,16 @@ block:
 - When the Attachment feature is enabled in a form block, the icon becomes a
   solid paper clip.
 
-The icon switches to a paper clip holding a paper when the Attachment feature
-is enabled in a form block, and the current record has at least one attachment.
+  The icon switches to a paper clip holding a paper when the Attachment feature
+  is enabled in a form block, and the current record has at least one
+  attachment.
 
 **Note**: The **Indicate Attachments** profile option allows you to turn off
 indication of attachments when querying records for performance reasons.
 
 ### Payables tips
 
-This section includes some tips about working with payables in EBS.
+This section includes tips about working with payables in EBS.
 
 #### Payment on receipt
 
@@ -417,7 +410,7 @@ Payments process creates 1000 lines.
 The **Check Template** creates a number of overflow checks based on the
 **Number of remittances per page** setup value.
 
-**Note**:Some clients don’t want to see so many VOID checks. They want to
+**Note**: Some clients don’t want to see so many VOID checks. They want to
 print one check with a summary line.
 
 #### Regulatory reporting
@@ -437,16 +430,16 @@ can be generated.
 - **Reporting Made by Bank**
 
 Oracle Payments also provides a SQL function to personalize the conditions and
-implement business criteria. Oracle Payments allows you to set up payment
+implement business criteria. Oracle Payments enables you to set up payment
 reason codes that provide the payment system or bank with additional details
 about the reason for the payment for regulatory reporting purposes.
 
-**Note**: You can define this in the **Create Payment Reason Code** page of
-**Payment Administrator**.
+**Note**: You can define payment reason codes in the **Create Payment Reason
+Code** page of **Payment Administrator**.
 
 ### Purchasing tips
 
-This section includes some tips about working with purchasing in EBS.
+This section includes tips about working with purchasing in EBS.
 
 #### Confirm receipts
 
@@ -457,12 +450,12 @@ workflow.
 The Confirm Receipts workflow sends notifications through the Web, e–mail, or
 Notification Details Web page (accessible through the **Notifications
 Summary** menu in Purchasing) to requesters or buyers who create requisitions
-in Purchasing or iProcurement. The Confirm Receipts workflow lets people know
-they should have received an item.
+in Purchasing or iProcurement. The Confirm Receipts workflow informs people
+that they should have received an item.
 
 The Confirm Receipts workflow sends notifications for the following items:
 
-- Destination or Deliver–To Type of Expense,
+- Destination or Deliver–To Type of Expense
 
 - Routing of Direct Delivery
 
@@ -474,7 +467,7 @@ Released in Procurement 12.0, the Professional Buyer's Work Center (PBWC) is a
 web-based interface that provides a central launch pad from which you can
 efficiently perform the following tasks:
 
-- You can manage your requisitions and create them to Purchase Orders (like
+- Manage your requisitions and create them to Purchase Orders (like
   manual autocreate).
 
 - Create new standard purchase orders, blanket purchase agreements, or
@@ -505,12 +498,12 @@ For more information, see the
 #### Purchase requisitions versus internal requisitions
 
 Use the **Requisitions** window to create requisitions. You must choose the
-requisition type (purchase or internal). You can also provide a description,
+requisition type: purchase or internal. You can also provide a description,
 unlimited notes, and defaults for requisition lines.
 
 **Purchase requisitions**
 
-For each requisition line, you choose the item that you want to order along
+For each requisition line, choose the item that you want to order along
 with the quantity and delivery location. You can get sourced pricing from
 catalog quotations or open blanket purchase agreements.
 
@@ -530,21 +523,20 @@ requisitions are not picked up when you use Auto-Create RFQs or purchase
 orders, nor can they be assigned to a buyer in the **Assign Requisitions**
 window.
 
-
 #### Requisition approver unavailable
 
-Oracle iProcurement has the ability to automatically forward documents when
-users do not respond to notifications. This tool is used to prevent documents
-from holding up business productivity. Oracle workflows manage this
-functionality, typically set up to send a first and second reminder after
-pre-determined time periods. If no response is received, the system forwards
-the notification to the next approver.
+Oracle iProcurement can automatically forward documents when users do not
+respond to notifications. This tool is used to prevent documents from holding
+up business productivity. Oracle workflows manage this functionality,
+typically set up to send a first and second reminder after pre-determined time
+periods. If no response is received, the system forwards the notification to
+the next approver.
 
 For more information, see the [Oracle iProcurement User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e48970/T434157T434163.htm).
 
 ### Receivables tips
 
-This section includes some tips about working with receivables in EBS.
+This section includes tips about working with receivables in EBS.
 
 #### Manage revenue contingencies
 
@@ -597,7 +589,7 @@ between **TAX** and **LINE** is critical.
 
 In release 11i, you can assign all **TAX** lines to one **LINE**,
 but in release 12, you need to assign a distinct **TAX** code to each **LINE**.
-If enough **LINE** lines are not available, create $0.00 DUMMY **LINE** lines
+If enough **LINE** lines are not available, create $0.00 dummy **LINE** lines
 and use them for the **TAX** line.
 
 #### Score customers for collections
@@ -628,12 +620,12 @@ For more information, see [Oracle Advanced Collections Implementation Guide](htt
 
 ### Project accounting tips
 
-This section includes some accounting tips for working in EBS.
+This section includes accounting tips for working in EBS.
 
 #### Derive expenditure item supplier invoice items
 
 Oracle Projects determines the default expenditure date for project-related
-supplier invoice items by using the **PA:Default Expenditure
+supplier invoice items by using the **PA: Default Expenditure
 Item Date Source for Supplier Costs** profile option. This profile option is
 used to determine the default expenditure item date for supplier invoice
 distribution lines and derives the item expenditure date during the invoice
@@ -662,33 +654,32 @@ Project Budgets can be defined in the following ways in Oracle Projects:
 
 Oracle Projects includes the following product budget features:
 
-- **Multiple budget versions**: Oracle Projects allows you to create multiple
-  budget versions that include all of the costs for your project, such as
-  engineering costs, item costs, manufacturing costs, and overheads. You can
-  revise your estimate to complete many times during a project. Each project
-  that you define can be compared to the current or baseline budget with
-  earlier versions for analysis and reporting.
+- **Multiple budget versions**: Create multiple budget versions that include
+  all of the costs for your project, such as engineering costs, item costs,
+  manufacturing costs, and overheads. You can revise your estimate to complete
+  many times during a project. Each project that you define can be compared to
+  the current or baseline budget with earlier versions for analysis and
+  reporting.
 
-- **Several budget types**: Oracle Projects Budgeting feature allows you to
-  create diverse budgets including cost budgets, revenue budgets, forecasted
-  revenue budget, and approved cost budget.
+- **Several budget types**: Create diverse budgets including cost budgets,  
+  revenue budgets, forecasted revenue budget, and approved cost budget.
 
-- **Time-phased budgeting**: You can create user-defined time periods or use  
-  existing calendars in Oracle General Ledger or Oracle Projects to establish
-  multiple budgeting periods.
+- **Time-phased budgeting**: Create user-defined time periods or use existing
+  calendars in Oracle General Ledger or Oracle Projects to establish multiple
+  budgeting periods.
 
-- **Budget extensions**: Oracle Projects provide you budget extensions that
-  you can use to customize to meet your company's budgeting requirements.
+- **Budget extensions**: Customize budget extensions to meet your company's
+  budgeting requirements.
 
-- **Budget baselining and approval**: Project Budgets can be baselined and  
-  used in a workflow supported approval process for approving your project
+- **Budget baselining and approval**: Project budgets can be baselined and  
+  used in a workflow-supported approval process for approving your project
   budgets.
 
 ### Miscellaneous tips
 
-This section includes some miscellaneous tips for working in EBS.
+This section includes miscellaneous tips for working in EBS.
 
-#### Improve cash management in payables-tips
+#### Improve cash management in payables
 
 To improve your organization’s current and future cash management in Accounts
 Payables, you can use the Payables Manager to run the Payables Cash
@@ -714,13 +705,12 @@ Oracle has alternatives to full blown implementations of advanced supply chain
 planning.
 
 Options such as Min Max Planning and Reorder Point Planning assist in getting
-your demand history and might serve as a quick wins until there is proper
-funding or an approved advanced supply chain
-planning implementation project.
+your demand history and might serve as a quick win until there is proper
+funding or an approved advanced supply chain planning implementation project.
 
 #### Leverage Data Transfer Consolidation
 
-If you have your financial data spread across multiple ledgers that do not
+If your financial data is spread across multiple ledgers that do not
 share the same chart of accounts and accounting calendar combination, or the
 ledgers are on separate instances, consider using the Global Consolidation
 System within Oracle General Ledger to consolidate results.
@@ -733,10 +723,11 @@ consolidation parent ledger.
 You can then report on and analyze consolidated financial information from
 this consolidated ledger. Use the Global Consolidation System in situations
 where you need to physically move the data to a consolidated location rather
-than simply report off multiple ledgers in a set. Global Consolidation System
-is the traditional consolidation methodology in Oracle Financials. The Global
-Consolidation System imports in the form of balances and journal level
-vouchers, and from appropriate accounts from the trial balances of subsidiary
-ledgers.
+than simply report off multiple ledgers in a set.
+
+Global Consolidation System is the traditional consolidation methodology in
+Oracle Financials. The Global Consolidation System imports in the form of
+balances and journal level vouchers, and from appropriate accounts from the
+trial balances of subsidiary ledgers.
 
 For more information, see [Oracle General Ledger User's Guide](https://docs.oracle.com/cd/E18727_01/doc.121/e13627/T312864T314184.htm).
