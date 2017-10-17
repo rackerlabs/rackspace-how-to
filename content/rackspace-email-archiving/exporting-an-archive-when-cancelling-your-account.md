@@ -26,9 +26,10 @@ For more information on prerequisite terminology, see [Cloud Office support term
 When considering cancellation of your Cloud Office account it is important to plan out how you will preserve your archived email data. The functionality of an archive is typically to export small numbers of items rather than the entirety of the archive. For this reason, moving an entire archive is an undertaking that should be carefully planned out with plenty of time for completion.
 
 ### Considerations for Planning an Archive Export Prior to Cancellation.
-    - Complete your export before setting a cancellation date.
-    - If switching to another provider, be sure to account for any requirements they may have.
-    - Archive exports can take an extended period of time to complete. Timelines to completion can be several weeks to a few months.
+
+- Complete your export before setting a cancellation date.
+- If switching to another provider, be sure to account for any requirements they may have.
+- Archive exports can take an extended period of time to complete. Timelines to completion can be several weeks to a few months.
 
   **Warning:** If you reach your cancellation date before completing the archive export, the export will be cancelled and you will be unable to complete the export.
 
