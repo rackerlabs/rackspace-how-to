@@ -11,54 +11,54 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article provides instructions for exporting a copy of your email address data from Outlook 2013.
+This article describes how to export a copy of your email address data from Outlook 2013.
 
 ### Prerequisites
 
 - **Applies to:** User
 - **Difficulty:** Easy
 - **Time needed:** Dependent on amount of data being exported
-- **Tools required:**  Access to the Outlook account you wish to export from
+- **Tools required:**  Access to the Outlook account from which you want to export
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 
-If you need to export or import email address data from a different Outlook version reference [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-using-outlook).
+If you need to export or import email address data from a different Outlook version, see [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-using-outlook) for a list of all version articles.
 
-#### Export from Outlook 2013
+### Export email address data
 
-1. Click the **File** tab.
-2. Click **Options** on the left side menu.
-
-    <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/options2013.png %}" />
-
-3. In the **Outlook Options** window, click **Advanced**.
+1. In Outlook 2016, click **File > Options**.
+2. In the Outlook Options window, click **Advanced**.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/advanced2013.png %}" />
 
-4. Click **Export**.
+3. In the Export section, click **Export**.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/export2013.png %}" />
+    
+    The Import and Export Wizard launches.
 
-5. In the **Import and Export Wizard**, click **Export to a file**, and then click **Next**.
+4. In the Import and Export Wizard, click **Export to a file**, and then click **Next**.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/export_to_file2013.png %}" />
 
-6. Click **Outlook Data File (.pst)**, and then click **Next**.
+5. Click **Outlook Data File (.pst)**, and then click **Next**.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/outlook_data_file2013.png %}" />
 
-7. Select the folder to export, and then click **Next**. In this case you will select the email address at the top of the folder list to export all data.
+6. Select the folder that you want to export, and then click **Next**. 
+
+   Select the email address at the top of the folder list and then select the checkbox for **Include subfolders** to export all data.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/export_folder_list2013.png %}" />
 
-8. Click **Browse**, and then select the location where you want the new **.pst** file export to be saved.
+8. Click **Browse**, and then select the location where you want to save the **.pst** file.
 
-    Note: It is helpful to save the file somewhere that you can easily locate for later use, such as the Desktop.
+    **Note:** Save the file somewhere that you can easily locate for later use, such as the Desktop.
 
-9. In the File Name box, type the name that you want to use for the new **.pst** file, and then click **OK**.
+9. In the File Name box, type the name that you want to use for the **.pst** file, and then click **OK**.
 
-    Note: You may be prompted to enter a password. This is optional and you can simply click **OK** to skip it.
+    **Note:** You might be prompted to enter a password. This is optional and you can click **OK** to skip it.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/browse_finish2013.png %}" />
 
