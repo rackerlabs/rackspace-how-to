@@ -31,7 +31,7 @@ When considering cancellation of your Cloud Office account it is important to pl
 - If switching to another provider, be sure to account for any requirements they may have.
 - Archive exports can take an extended period of time to complete. Timelines to completion can be several weeks to a few months.
 
-  **Warning:** If you reach your cancellation date before completing the archive export, the export will be cancelled and you will be unable to complete the export.
+**Warning:** If you reach your cancellation date before completing the archive export, the export will be cancelled and you will be unable to complete the export.
 
 ### Export Options
 
