@@ -64,6 +64,8 @@ Rackspace Archiving account:
 
 - Bulk exports require an extended amount of time to complete. They can take several weeks to a few months to finish.
 
+- You must contact support directly to request a bulk archive export be scheduled
+
 The pricing for a bulk export is a one-time fee and varies by amount of data as well as data format.
 
 |Export Format| Price per GB|
