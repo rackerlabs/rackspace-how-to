@@ -48,7 +48,7 @@ If you need to export or import email address data from a different Outlook vers
 
 6. Select the folder that you want to export, and then click **Next**. 
 
-   Select the email address at the top of the folder list and then select the checkbox for **Include subfolders** to export all data.
+   Select the email address at the top of the folder list, and then select the checkbox for **Include subfolders** to export all data.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/export_folder_list2013.png %}" />
 
