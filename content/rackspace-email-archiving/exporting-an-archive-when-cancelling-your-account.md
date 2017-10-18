@@ -65,7 +65,13 @@ Rackspace Archiving account:
 
 The pricing for a bulk export is a one-time fee and varies by amount of data as well as data format.
 
-|Export Format| Price per GB|
+|Export Format| Price per Gigabyte(GB)|
 |---|---|
 |EML| $6 per GB|
 |PST| $9 per GB|
+|EML| &#65505;4 per GB|
+|PST| &#65505;6 per GB|
+
+**Note:** Support is unable to provide a quote for the price of requested bulk exports. This is because the total size of the export cannot be determined until it is completed and fully exported.
+
+The number displaying total archive size in the archive portal is the size of your archive in compressed form. When it is exported and decompressed at a rate of about 1.8 on average, we find that the total size is bigger than what is seen in the Archive Portal. Additionally, the size in the Archive Portal doesn't include the size of attachments; so depending on how many attachments you have and how big they are, the total size would increase.
