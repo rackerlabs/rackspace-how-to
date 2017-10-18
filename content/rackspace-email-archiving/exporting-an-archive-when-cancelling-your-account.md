@@ -5,20 +5,17 @@ title: Export your archive before cancelling your Cloud Office account
 type: article
 created_date: '2017-10-17'
 created_by: William Loy
-last_modified_date: '2017-10-17'
+last_modified_date: '2017-10-18'
 last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-You can import data into and export data from your archive in Cloud
-Office.
-
 ### Prerequisites
 
 - **Applies to:** Administrator
 - **Difficulty:** Difficult
-- **Time needed:** Dependent of amount of data being exported
+- **Time needed:** Dependent on amount of data being exported
 - **Tools required:**  Cloud Office Control Panel access and Archive Manager access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
