@@ -1,6 +1,6 @@
 ---
 permalink: export-an-archive-when-cancelling-your-account/
-audit_date:
+audit_date: '2017-10-19'
 title: Export an archive before cancelling a Cloud Office account
 type: article
 created_date: '2017-10-17'
@@ -49,7 +49,7 @@ You can use the following methods to export your data from your Rackspace Archiv
 
 - To export an entire archive, divide your searches into monthly intervals for the duration of the archive's existence.
   
-  **Note:** Searches do not build instantly. Be sure to consider this when determining your cancellation date.
+    **Note:** Searches do not build instantly. Be sure to consider this when determining your cancellation date.
 
 #### Bulk exports
 
