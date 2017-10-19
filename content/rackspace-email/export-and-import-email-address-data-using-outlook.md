@@ -1,7 +1,7 @@
 ---
 permalink: export-and-import-email-address-data-using-outlook/
 audit_date: '2017-10-19'
-title: Export and import email address data using Outlook
+title: Export and import email address data by using Outlook
 type: article
 created_date: '2017-09-08'
 created_by: William Loy
