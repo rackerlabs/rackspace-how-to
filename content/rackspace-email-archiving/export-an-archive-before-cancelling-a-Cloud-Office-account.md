@@ -69,4 +69,4 @@ The pricing for a bulk export is a one-time fee and varies by amount of data as 
 |PST| $9 or &#65505;6 per GB|
 
 
-**Note:** Support cannot to provide a quote for the price of requested bulk exports. This is because the total size of the export cannot be determined until it is completed and fully exported. The archive size displayed in your archive portal is the size of your article in compressed form. After your archive is decompressed, it is larger than the size 
+**Note:** Support cannot to provide a quote for the price of requested bulk exports. This is because the total size of the export cannot be determined until it is completed and fully exported. The archive size displayed in your archive portal is the size of your article in compressed form. After your archive is decompressed, it is larger than the size displayed in the portal. The size displayed in the portal also doesn’t include the size of attachments, which could increase the total size after decompression.
