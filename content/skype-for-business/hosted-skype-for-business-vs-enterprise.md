@@ -1,18 +1,18 @@
 ---
 permalink: hosted-skype-for-business-vs-enterprise/
-audit_date:
+audit_date: '2017-10-19'
 title: Hosted Skype for Business vs Enterprise Skype for Business
 type: article
 created_date: '2017-09-22'
 created_by: William Loy
-last_modified_date: '2017-09-22'
-last_modified_by: William Loy
+last_modified_date: '2017-10-19'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Skype for Business
 product_url: skype-for-business
 ---
 
-This article compares our Hosted Microsoft Skype for Business solutions against our
-[Enterprise Office 365 Skype for Business](https://www.rackspace.com/office-365/pick-your-plan) solution.
+This article describes which features are available in Hosted Microsoft Skype for Business and in 
+[Enterprise Office 365 Skype for Business](https://www.rackspace.com/office-365/pick-your-plan).
 
 ### Prerequisites
 
@@ -23,7 +23,9 @@ This article compares our Hosted Microsoft Skype for Business solutions against 
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
+### Available features
 
+The following table describes which features are available in Hosted Skype for Business and in Enterprise Office 365 Skype for Business.
 
 |Feature |Hosted Skype for Business| Enterprise Office 365 Skype for Business|
 |---|---|---|
@@ -38,13 +40,12 @@ For more information about prerequisite terminology, see [Cloud Office support t
 |Desktop, application and whiteboard sharing| |&#10003;
 |Group audio and HD video calling (3 or more)| |&#10003;
 |Create and manage persistent chat room | |&#10003;
-|Conference Attendee Experience:<br/><br/>                                       - Join an ad hoc or scheduled meeting,<br/><br/>                                 - Send/receive audio/video,<br/><br/>                                            - View shared application,<br/><br/>                                             - View/write whiteboard<br/><br/>| | &#10003;
-|Conference Presenter Experience:<br/><br/>                                      - Upload and show PowerPoint slides,<br/><br/>                                   - Share Application, Manage roster,<br/><br/>                                    - Conduct polls,<br/><br/>                                                       - Manage Meeting lobby<br/><br/>| |&#10003;
+|Conference Attendee Experience:<br/><br/>                                       - Join an ad hoc or scheduled meeting<br/><br/>                                 - Send/receive audio/video<br/><br/>                                            - View shared application<br/><br/>                                             - View/write whiteboard<br/><br/>| | &#10003;
+|Conference Presenter Experience:<br/><br/>                                      - Upload and show PowerPoint slides<br/><br/>                                   - Share Application, Manage roster<br/><br/>                                    - Conduct polls<br/><br/>                                                       - Manage Meeting lobby<br/><br/>| |&#10003;
 |Initiate/schedule multi-party (3+) audio, video conference| | &#10003;
 |Schedule web conferences| | &#10003;
 |Maximum number of people who are allowed to attend a meeting organized by user with this type of license| 100 | 250 |
 
-If you are interested in upgrading your Hosted Microsoft Exchange and Skype for Business product to our Office 365 offering please reference [Rackspace Office 365](/how-to/office-365) for further questions and next steps.
+If you want to upgrade your Hosted Microsoft Exchange and Skype for Business to our Office 365 offering, see [Rackspace Office 365](/how-to/office-365) for more information and next steps.
 
-
-Note: Skype for Business Dial-in Conferencing is not supported for both licenses.
+**Note:** Skype for Business Dial-in Conferencing is not supported for both licenses.
