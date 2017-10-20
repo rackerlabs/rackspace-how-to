@@ -32,7 +32,7 @@ There are many situations in which you might want to import or export email addr
 -  Transferring local data to a new device
 -  Backing up critical data
 
-Regardless of your situation, it is important to back up your email data before making major changes to your email address. After you verify that you have properly exported your email address data, you can make needed changes and then import the data again. 
+Regardless of your situation, it is important to back up your email data before making major changes to your email address. After you verify that you have properly exported your email address data, you can make needed changes and then import the data again.
 
 Following are instructions for exporting and importing email address data by using Outlook. Select your version of Outlook for specific instructions.
 
@@ -50,5 +50,5 @@ Following are instructions for exporting and importing email address data by usi
 - [Import email address data into Outlook 2016 for Windows](/how-to/import-email-address-data-into-outlook-2016-for-windows)
 - [Import email address data into Outlook 2013 for Windows](/how-to/import-email-address-data-into-outlook-2013-for-windows)
 - [Import email address data into Outlook 2010 for Windows](/how-to/import-email-address-data-into-outlook-2010-for-windows)
-- [Import email address data into Outlook 2016 for Mac OS](/how-to/import-email-address-data-from-outlook-2016-for-mac)
-- [Import email address data into Outlook 2011 for Mac OS](/how-to/import-email-address-data-from-outlook-2011-for-mac)
+- [Import email address data into Outlook 2016 for Mac OS](/how-to/import-email-address-data-into-outlook-2016-for-mac)
+- [Import email address data into Outlook 2011 for Mac OS](/how-to/import-email-address-data-into-outlook-2011-for-mac)
