@@ -5,7 +5,7 @@ title: Enable DKIM in the Cloud Office Control Panel
 type: article
 created_date: '2017-04-28'
 created_by: Ben Smith
-last_modified_date: '2017-09-29'
+last_modified_date: '2017-10-19'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
