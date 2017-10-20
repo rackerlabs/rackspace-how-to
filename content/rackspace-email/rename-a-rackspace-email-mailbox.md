@@ -5,7 +5,7 @@ title: Rename a Rackspace Email address
 type: article
 created_date: '2016-05-10'
 created_by: Amber Melita
-last_modified_date: '2017-10-11'
+last_modified_date: '2017-10-20'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
