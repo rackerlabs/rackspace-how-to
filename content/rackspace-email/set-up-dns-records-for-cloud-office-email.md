@@ -5,7 +5,7 @@ title: Set up DNS records for Cloud Office email
 type: article
 created_date: '2014-08-15'
 created_by: William Loy
-last_modified_date: '2017-09-27'
+last_modified_date: '2017-10-20'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -53,7 +53,7 @@ Use the following steps to ensure your domain properly routes incoming and outgo
 
     **Note:** Your new settings take 24 to 48 hours to propagate to the world. For more information on **propagation**, see [DNS propagation](/how-to/dns-record-definitions#dns-propagation).
 
-3. Save your changes. 
+3. Save your changes.
 
 You have successfully set up your DNS for your domain.
 
