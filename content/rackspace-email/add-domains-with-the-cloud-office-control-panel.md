@@ -5,7 +5,7 @@ title: Add domains with the Cloud Office Control Panel
 type: article
 created_date: '2014-04-10'
 created_by: William Loy
-last_modified_date: '2017-09-22'
+last_modified_date: '2017-10-20'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
