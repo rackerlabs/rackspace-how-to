@@ -5,8 +5,8 @@ title: Export and import email address data by using Outlook
 type: article
 created_date: '2017-09-08'
 created_by: William Loy
-last_modified_date: '2017-10-19'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-10-20'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
