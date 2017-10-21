@@ -32,7 +32,7 @@ There are many situations in which you might want to import or export email addr
 -  Transferring local data to a new device
 -  Backing up critical data
 
-Regardless of your situation, it is important to back up your email data before making major changes to your email address. After you verify that you have properly exported your email address data, you can make needed changes and then import the data again.
+Regardless of your situation, it is important to back up your email data before making major changes to your email address. After you verify that you have properly exported your email address data, you can make needed changes and then import the data again. 
 
 Following are instructions for exporting and importing email address data by using Outlook. Select your version of Outlook for specific instructions.
 
