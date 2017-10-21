@@ -43,9 +43,9 @@ You have successfully viewed the message headers in Rackspace Email webmail.
 
 Example message header:
 
-```Delivered-To:	boss@yourdomainexample.com
-Return-Path:	<spoofer@yourdomainexample.com>
-Delivered-To:	boss@yourdomainexample.com
+```Delivered-To:	boss@yourdomainexample.com<br>
+Return-Path:	<spoofer@yourdomainexample.com><br>
+Delivered-To:	boss@yourdomainexample.com<br>
 Received:	from sapps.net ([000.00.00.0]) by sapps.net (Dovecot) with LMTP id asdkasdfiwlefj for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:41 -0400
 Received:	from proxy.net ([000.00.00.0]) by sapps.net; Tue, 26 Sep 2017 14:52:41 -0400
 Received:	from smtp (000.00.00.0)  by apps.net; Tue, 26 Sep 2017 14:52:41 -0400
