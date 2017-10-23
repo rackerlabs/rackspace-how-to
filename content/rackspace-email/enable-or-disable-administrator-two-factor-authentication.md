@@ -44,7 +44,7 @@ As the administrator of your company's email solution, your administrator access
 
 You have successfully enabled two-factor authentication for your admin ID.
 
-Note: When you change mobile devices, you will need to [Disable two factor authentication](#disable-two-factor-authentication-for-other-administrators) and enable it again on the new device.
+**Note:** When you change mobile devices, you will need to [Disable two factor authentication](#disable-two-factor-authentication-for-other-administrators) and enable it again on the new device.
 
 ### Log into the control panel with two-factor authentication
 
