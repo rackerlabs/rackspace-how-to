@@ -6,7 +6,7 @@ type: article
 created_date: '2017-06-26'
 created_by: Cory Aldrich
 last_modified_date: '2017-10-23'
-last_modified_by: Nate Archer
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
