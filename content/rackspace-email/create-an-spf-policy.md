@@ -48,6 +48,6 @@ An **SPF** policy by itself will not go far in terms of protecting the integrity
 
     | Type | Hostname | Destination | TTL |
     | :---: | :---: | :---: | :---: |
-    | TXT | @ | **v=spf1 include:emailsrvr.com include:othermailer.com ~all** | 3600 |
+    | TXT| @ | **v=spf1 include:emailsrvr.com include:othermailer.com ~all** | 3600 |
 
 3. Save your changes.
