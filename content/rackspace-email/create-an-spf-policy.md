@@ -1,7 +1,7 @@
 ---
 permalink: create-an-spf-policy/
 audit_date:
-title: Create an SPF(Sender Policy Framework) policy
+title: Create an SPF policy
 type: article
 created_date: '2017-09-25'
 created_by: William Loy
