@@ -5,7 +5,7 @@ title: Email spoofing explained
 type: article
 created_date: '2017-09-25'
 created_by: William Loy
-last_modified_date: '2017-09-29'
+last_modified_date: '2017-10-23'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -26,11 +26,11 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 The word **spoof** means **falsified**. A spoofed email is when the sender purposely alters parts of the email to make the message appear as though it was authored by someone else. Commonly, the sender’s name/address and the body of the message are formatted to appear from a legitimate source. Sometimes, the spoofer will make the email appear to come from a private citizen somewhere.
 
-If you would prefer a video tutorial see [Rackspace Email - Spoofing: How to identify & protect your organization <img src="{% asset_path rackspace-email/email-spoofing-explained/video_spoofing.png %}" /> ](https://www.youtube.com/watch?v=-iziPULoeDY).
+If you would prefer a video tutorial see [Rackspace Email - Spoofing: How to identify & protect your organization <img src="{% asset_path rackspace-email/email-spoofing-explained/video_spoofing.png %}" /> ](https://emailhelp.rackspace.com/l/how-to-prevent-email-spoofing).
 
 A spoofed message can appear to be sent from a coworker, a bank, a family member or any number of seemingly trustworthy sources. A good spoof will look like any other email that you would normally receive.
 
-Warning: If you suspect you have received a fraudulent message **DO NOT** click any link in the message or enter any information that is requested.
+**Warning:** If you suspect you have received a fraudulent message **DO NOT** click any link in the message or enter any information that is requested.
 
 ### Why do people spoof email?
 
