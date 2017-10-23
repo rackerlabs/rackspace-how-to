@@ -72,7 +72,7 @@ The most impactful change you can make as an administrator is to implement **SPF
 
    - **Sender Policy Framework (SPF)** records help recipient mail servers identify unauthorized use of your domain in the form of forgeries (spoofing). [Create an SPF record policy](/how-to/create-an-spf-policy) first.
 
-       Note: If you send email from other providers on behalf of your domain, be sure to include their sending servers in the same SPF record entry. Do not create multiple SPF records.
+       **Note:** If you send email from other providers on behalf of your domain, be sure to include their sending servers in the same SPF record entry. Do not create multiple SPF records.
 
    - **DomainKeys Identified Mail (DKIM)** records assign a digital signature to mail sent from your domain, marking it as authorized mail sent from your domain. If you require instruction to enable DKIM for your  Rackspace Cloud Office email, see Enable DKIM in the Cloud Office Control Panel. [Creating a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel) will be the second step in the process.
 
