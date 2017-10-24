@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-v30-compatibility/
-audit_date:
+audit_date: '2017-10-24'
 title: RackConnect v3.0 compatibility
 type: article
 created_date: '2014-09-08'
@@ -15,7 +15,7 @@ product_url: rackconnect
 
 This article outlines the compatibility of RackConnect v3.0 with other Rackspace products and offerings.
 
-###RackConnect v3.0 compatibility with Rackspace public cloud offerings
+### RackConnect v3.0 compatibility with Rackspace public cloud offerings
 
 The following table lists and describes the Rackspace public cloud products that are compatible with RackConnect v3.0. The **Requirements** column lists the requirements that your RackConnect v3.0 cloud servers must meet for them to work with the listed product. For example, "ServiceNet" means that your cloud servers must be provisioned with ServiceNet interfaces for them to work with the designated product.
 
@@ -57,5 +57,3 @@ Managed Colocation  | Network devices in a Managed Colocation environment are su
 Managed Storage | The Managed Storage offering is compatible only with dedicated servers in a RackConnect configured dedicated environment. The Managed Storage offering cannot be used directly with cloud servers. | [Managed Storage](https://www.rackspace.com/managed-hosting/data-storage)
 Managed Virtualization | Yes | [Managed Virtualization](https://www.rackspace.com/cloud/private/managed_virtualization/)
 Private Cloud | Yes | [Private Cloud](https://www.rackspace.com/cloud/private/)
-
-If you have questions, reach out to us. Contact information is available on the [Contact Us](/how-to/support) page.
