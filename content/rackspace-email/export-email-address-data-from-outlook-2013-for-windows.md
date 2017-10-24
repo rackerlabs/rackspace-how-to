@@ -5,7 +5,7 @@ title: Export email address data from Outlook 2013 for Windows
 type: article
 created_date: '2017-09-01'
 created_by: William Loy
-last_modified_date: '2017-09-11'
+last_modified_date: '2017-10-24'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -27,7 +27,7 @@ If you need to export or import email address data from a different Outlook vers
 
 ### Export email address data
 
-1. In Outlook 2016, click **File > Options**.
+1. In Outlook 2013, click **File > Options**.
 2. In the Outlook Options window, click **Advanced**.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/advanced2013.png %}" />
@@ -35,7 +35,7 @@ If you need to export or import email address data from a different Outlook vers
 3. In the Export section, click **Export**.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/export2013.png %}" />
-    
+
     The Import and Export Wizard launches.
 
 4. In the Import and Export Wizard, click **Export to a file**, and then click **Next**.
@@ -46,7 +46,7 @@ If you need to export or import email address data from a different Outlook vers
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/outlook_data_file2013.png %}" />
 
-6. Select the folder that you want to export, and then click **Next**. 
+6. Select the folder that you want to export, and then click **Next**.
 
    Select the email address at the top of the folder list, and then select the checkbox for **Include subfolders** to export all data.
 
