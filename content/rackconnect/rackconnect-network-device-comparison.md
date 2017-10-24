@@ -13,7 +13,7 @@ product_url: rackconnect
 
 **Applies to**: RackConnect v3.0 and RackConnect v2.0
 
-The following tables provide a detailed comparison of the network devices available for use with your RackConnect configuration. RackConnect is abbreviated to RC in some instances.
+The following tables provide a detailed comparison of the network devices available for use with your RackConnect (RC) configuration. 
 
 ### RackConnect network device comparison
 
@@ -61,4 +61,4 @@ F5 3600 | 100+ | Connected or Edge+Connected | Yes | Yes | In: 1 Gbps <br /> Out
 
 <sup>1</sup> Maximum cloud server guidelines are based on internal testing. Actual results might vary by production load and edge device type.
 
-<sup>2</sup> RackConnect throughput is limited by RackConnect switching infrastructure connectivity: maximum of 1 Gbps theoretical.
+<sup>2</sup> RackConnect throughput is limited by RackConnect switching infrastructure connectivity at a theoretical maximum of 1 Gbps.
