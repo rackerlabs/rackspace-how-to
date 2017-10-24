@@ -5,8 +5,8 @@ title: Install EPEL, IUS, and Remi repositories on CentOS and Red Hat
 type: article
 created_date: '2012-01-11'
 created_by: Rackspace Support
-last_modified_date: '2017-03-30'
-last_modified_by: b-harper
+last_modified_date: '2017-10-24'
+last_modified_by: Carl George
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -29,31 +29,21 @@ unsupported server configuration.
 You install the EPEL repository by downloading the appropriate RPM
 package for your system and installing it. The following instructions use the 64-bit packages that work with Rackspace Cloud Servers instances.
 
-#### CentOS Extras repository
+#### CentOS
 
 The CentOS Extras repository includes a package to install EPEL, and is
-enabled by default. To install the EPEL package, run the following
+enabled by default. To install the EPEL release package, run the following
 command:
 
     sudo yum install epel-release
 
-If that command doesn't work, perhaps because the CentOS Extras
-repository is disabled, use the following manual installation instructions based on your distribution version:
+#### Red Hat Enterprise Linux
 
--  CentOS and Red Hat Enterprise Linux 6.*x*
+To install the EPEL release package, run the following command:
 
-       wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-       sudo rpm -Uvh epel-release-6*.rpm
+    sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-$(rpm -E '%{rhel}').noarch.rpm
 
--  CentOS and Red Hat Enterprise Linux 7.*x*
-
-       wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-       sudo rpm -Uvh epel-release-latest-7*.rpm
-
-If you get a `File Not Found` error message when trying to download the
-package, the version number might have changed. You can access the
-latest version of the RPM installer from the [Fedora EPEL wiki page](https://fedoraproject.org/wiki/EPEL). The wiki page also includes additional instructions for Red Hat Network subscribers who are
-installing the EPEL repository.
+Some EPEL packages depend on packages from the "optional" and "extras" channels, so ensure those are enabled as well. 
 
 ### Install the IUS repository
 
