@@ -13,7 +13,8 @@ product_url: cloud-servers
 
 **Previous section:** [High-level steps for migrating from Amazon Web Services](/how-to/high-level-steps-for-migrating-from-amazon-web-services)
 
-This article describes how to provision your Rackspace Cloud services when migrating from Amazon Web Services (AWS).
+This article describes how to provision your Rackspace Cloud services when migrating from
+Amazon Web Services (AWS).
 
 ### Provision a new cloud server
 
