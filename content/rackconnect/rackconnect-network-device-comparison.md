@@ -1,6 +1,6 @@
 ---
 permalink: rackconnect-network-device-comparison/
-audit_date:
+audit_date: '2017-10-24'
 title: RackConnect network device comparison
 type: article
 created_date: '2012-11-07'
