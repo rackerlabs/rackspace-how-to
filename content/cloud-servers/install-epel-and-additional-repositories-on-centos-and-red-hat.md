@@ -89,13 +89,16 @@ The Remi repository provides newer versions of the software in the core
 CentOS and Red Hat Enterprise Linux repositories. The Remi repository
 depends on the EPEL repository.
 
-Package names in the Remi repository are the same as the package names
-used in the official repositories. This similarity can result in
-inadvertent package upgrades when you run an update with yum, so use the
-Remi repository with care.
+**Warning:** Packages in the Remi repository obsolete packages from other third
+party repositories, including IUS.  Because of this, you would typically use
+*either* IUS or Remi, not *both*.
 
-**Note:** Because Remi uses package names that are the same as the
-package names in the official repositories, we do not recommend Remi for
+**Warning:** Packages in the Remi repository use the same names as packages
+from the official repositories.  This similarity can result in inadvertent
+package upgrades when you run an update with yum, so use the Remi repository
+with care.
+
+**Note:** Because of the concerns listed above, we do not recommend Remi for
 Rackspace customers with a managed level of support. Managed servers
 automatically update nightly by default, which can cause unplanned
 upgrades if the Remi repository is enabled. If you require the Remi
