@@ -103,25 +103,9 @@ repository or another repository with package name conflicts, contact
 Rackspace Support before applying any upgrades to ensure continued
 support for your server.
 
-You install the Remi repository by downloading the appropriate RPM
-package for your system and installing it. The following instructions
-use the 64-bit packages that work with Cloud Servers instances.
+To install the Remi release package, run the following command:
 
--  CentOS and Red Hat Enterprise Linux 6.*x*
-
-       wget http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-       sudo rpm -Uvh remi-release-6*.rpm
-
--  CentOS and Red Hat Enterprise Linux 7.*x*
-
-       wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
-       sudo rpm -Uvh remi-release-7*.rpm
-
-If you get a `File Not Found` error message when trying to download the
-package, the version number might have changed. You can access the
-latest version of the RPM installer from the [Remi Repository Configuration](http://blog.remirepo.net/pages/Config-en) page. The
-configuration page also includes additional instructions for Red Hat
-Network subscribers who are installing the Remi repository.
+    sudo yum install http://rpms.famillecollet.com/enterprise/remi-release-$(rpm -E '%{rhel}').rpm
 
 ### Enable the Remi repository
 
@@ -132,23 +116,10 @@ To use the Remi repository only when you know you need it, use the
 
     sudo yum --enablerepo=remi install php-tcpdf
 
-If you want to permanently enable the Remi repository, you need to edit
-the yum configuration file for Remi.
+If you want to permanently enable the Remi repository, run the following
+command:
 
-Open the repository configuration file by using a text editor of your
-choice. This example uses nano.
-
-    sudo nano /etc/yum.repos.d/remi.repo
-
-Edit the [remi] portion of the file to set the enabled option to 1. This action enables the Remi repository by default.
-
-    name=Les RPM de remi pour Enterprise Linux $releasever - $basearch
-    #baseurl=http://rpms.famillecollet.com/enterprise/$releasever/remi/$basearch/
-    mirrorlist=http://rpms.famillecollet.com/enterprise/$releasever/remi/mirror
-    enabled=1
-    gpgcheck=1
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
-    failovermethod=priority
+    sudo yum-config-manager --enable remi
 
 ### Check for available repositories
 
