@@ -29,23 +29,25 @@ With the methods available to compromise an account growing in both number and s
 
 - Immediately change your password if you suspect you have fallen victim to a phishing attack.
 
-- Alert your company of the attack.
+- Notify company employees to remain vigilant and remind them of verification practices.
 
 **Malware** - Malicious software that collects information from you without your knowledge. Passwords are captured through keystroke logging
 
-- Always make sure that you regularly update things like your operating systems, internet browser, and any other software you regularly use.
+- Always make sure that you regularly install security updates for your operating systems, internet browsers, and any other software you regularly use.
 
 - Be cautious of any email that includes a link or attachment, regardless of who it appears to be sent from.
 
 - Install an antivirus program.
 
-**Dictionary Attack** - Hackers will try a list of common passwords against a list of usernames in hopes that a user will match a common password.  
+**Dictionary Attack** - Hackers will try a list of passwords against a username in hopes that the user has used an easy-to-guess password.
 
-- Create a unique password. Is the password you are considering on a list of *Top 25 Most Common Passwords*?  If so, you are a prime target for this attack and should strengthen your password.
+- Create a unique password. Using a common password makes you a prime target for this attack and you should strengthen your password. See [Password best practices](#password-best-practices) for guidance.
 
-**Proof compromise** Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
+**Password Reset Protocol Attack** Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
 
 - Always keep contact information current so that outdated information cannot be used to impersonate you.
+
+- When setting up security questions and answers, make sure you select a question that cannot be learned by an attacker researching your online social media accounts. For example, "What University did I graduate from?" is a bad security question. An attacker can likely find this information on your public Facebook or LinkedIn profile.
 
 ### Password best practices
 
