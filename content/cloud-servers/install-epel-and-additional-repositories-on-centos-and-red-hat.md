@@ -1,7 +1,7 @@
 ---
 permalink: install-epel-and-additional-repositories-on-centos-and-red-hat/
-audit_date: '2016-06-09'
-title: Install EPEL, IUS, and Remi repositories on CentOS and Red Hat
+audit_date: '2017-10-24'
+title: 'Install EPEL, IUS, and Remi repositories on CentOS and Red Hat'
 type: article
 created_date: '2012-01-11'
 created_by: Rackspace Support
@@ -16,8 +16,8 @@ Linux system to use the [Fedora Extra Packages for Enterprise Linux (EPEL) repos
 repository provides useful software packages that are not included in
 the official CentOS or Red Hat repositories.
 
-Instructions are also included for installing the [IUS Community Project](https://ius.io/) and the [Remi RPM Repository](http://rpms.famillecollet.com/). Whereas EPEL provides
-only software that is *not* in the official CentOS and Red Hat official repositories, IUS and Remi provide newer versions of software (like MySQL and PHP) that exists in the official repositories.
+Instructions are also included for installing the [IUS Community Project](https://ius.io/). Whereas EPEL provides
+only software that is *not* in the official CentOS and Red Hat official repositories, IUS provides newer versions of software (like MySQL and PHP) that exists in the official repositories.
 
 **Note:** Exercise caution when using any third-party repository. If you
 have a managed support agreement, contact your provider before following
@@ -43,7 +43,7 @@ To install the EPEL release package, run the following command:
 
     sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-$(rpm -E '%{rhel}').noarch.rpm
 
-Some EPEL packages depend on packages from the "optional" and "extras" channels, so ensure those are enabled as well. 
+Some EPEL packages depend on packages from the "optional" and "extras" channels, so ensure that those are enabled as well. 
 
 ### Install the IUS repository
 
@@ -52,11 +52,11 @@ official CentOS and Red Hat repositories. The IUS repository depends on
 the EPEL repository.
 
 The package names in the IUS repository are *different from* the package
-names used in the official repositories.  The difference helps to avoid
+names used in the official repositories. The difference helps to avoid
 unintentional conflicts or software version updates.
 
 **Note:** Because IUS uses package names that are different from the
-package names in the official repositories, we recommend IUS over Remi
+package names in the official repositories, we recommend IUS
 for Rackspace customers with managed support levels that include server
 software. Managed servers automatically update nightly by default, which
 can cause unplanned upgrades if package names are the same in more than
@@ -83,47 +83,6 @@ from the IUS repository, run the following command:
 
 For more information, see the [IUS Usage Guide](https://ius.io/Usage/).
 
-### Install the Remi repository
-
-The Remi repository provides newer versions of the software in the core
-CentOS and Red Hat Enterprise Linux repositories. The Remi repository
-depends on the EPEL repository.
-
-**Warning:** Packages in the Remi repository obsolete packages from other third
-party repositories, including IUS.  Because of this, you would typically use
-*either* IUS or Remi, not *both*.
-
-**Warning:** Packages in the Remi repository use the same names as packages
-from the official repositories.  This similarity can result in inadvertent
-package upgrades when you run an update with yum, so use the Remi repository
-with care.
-
-**Note:** Because of the concerns listed above, we do not recommend Remi for
-Rackspace customers with a managed level of support. Managed servers
-automatically update nightly by default, which can cause unplanned
-upgrades if the Remi repository is enabled. If you require the Remi
-repository or another repository with package name conflicts, contact
-Rackspace Support before applying any upgrades to ensure continued
-support for your server.
-
-To install the Remi release package, run the following command:
-
-    sudo yum install http://rpms.famillecollet.com/enterprise/remi-release-$(rpm -E '%{rhel}').rpm
-
-### Enable the Remi repository
-
-The Remi repository is disabled by default.
-
-To use the Remi repository only when you know you need it, use the
-`--enablerepo=remi` option when installing a package. For example:
-
-    sudo yum --enablerepo=remi install php-tcpdf
-
-If you want to permanently enable the Remi repository, run the following
-command:
-
-    sudo yum-config-manager --enable remi
-
 ### Check for available repositories
 
 You can see if the repositories that you need are installed and enabled
@@ -131,7 +90,7 @@ by running the following command:
 
     yum repolist
 
-Some repositories, like Remi, are disabled by default. To list disabled
+Some repositories are disabled by default. To list disabled
 repositories, run the following command:
 
     yum repolist disabled
