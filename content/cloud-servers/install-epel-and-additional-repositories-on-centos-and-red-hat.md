@@ -62,34 +62,9 @@ software. Managed servers automatically update nightly by default, which
 can cause unplanned upgrades if package names are the same in more than
 one enabled repository.
 
-You install the IUS repository by downloading the appropriate
-RPM package for your system and installing it. The following
-instructions use the 64-bit packages that work with Cloud Servers
-instances.
+To install the IUS release package, run the following command:
 
--  CentOS 6.*x*
-
-       wget https://centos6.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
--  CentOS 7.*x*
-
-       wget https://centos7.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
--  Red Hat 6.*x*
-
-       wget https://rhel6.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
--  Red Hat 7.*x*
-
-       wget https://rhel7.iuscommunity.org/ius-release.rpm
-       sudo rpm -Uvh ius-release*.rpm
-
-If you get a `File Not Found` error message when trying to download the
-package, the version number might have changed. You can access the latest
-version of the repository package from the [IUS Getting Started Page](https://ius.io/GettingStarted/).
+    sudo yum install https://$(rpm -E '%{?centos:centos}%{!?centos:rhel}%{rhel}').iuscommunity.org/ius-release.rpm
 
 ### Upgrade installed packages to IUS versions
 
