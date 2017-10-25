@@ -30,8 +30,9 @@ How to migrate to Sonian directly:
 
 Simply click [Transfer to Sonain](https://www.sonian.com/rackspacearchive), complete the short form on the page that follows, and Sonian will contact you to ensure a seamless transition of your existing archive to your new mail service.
 
+### Export an archive
 
-### Before you export an archive
+Considerations before deciding to export an archive.
 
 - Complete your archive export before setting a cancellation date for your Cloud Office account.
 - Archive exports can take an extended period of time to complete. Be prepared for a completion time of several weeks to a few months.
@@ -39,8 +40,6 @@ Simply click [Transfer to Sonain](https://www.sonian.com/rackspacearchive), comp
 - In most cases, more data means a longer and more expensive export if you request a bulk export from Support. If you want to export specific items, such as messages from a particular sender, or messages delivered within a specific time frame, exporting search results is a more efficient option. For information about how to export search results, see [Export archive search results in Cloud Office](/how-to/export-archive-search-results-in-cloud-office).
 
 **Warning:** If you reach your cancellation date before completing the archive export, the export will be cancelled and you will be unable to retrieve the rest of your archive data.
-
-### Export an archive
 
 You can use the following methods to export your data from your Rackspace Archiving account:
 
