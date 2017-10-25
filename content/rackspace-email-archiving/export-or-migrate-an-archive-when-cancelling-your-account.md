@@ -22,7 +22,7 @@ I am cancelling my cloud office mail services for a new vendor – What should I
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-### Take your archive with you
+### Take your archive with you(recommended)
 
 The archiving service you currently use with Cloud Office is provided by Rackspace’s trusted partner, Sonian Inc. Their cloud email archiving solution is compatible with all of the leading email service providers (Office 365, Gmail, Exchange, etc.) and that means you can move it to your new provider without worry or hassle, keeping the data where it is. Sonian is standing by to take over service and maintenance of your archive, and this option requires no work on your part. No exports are necessary, and you can maintain uninterrupted access to all data and attachments.
 
@@ -30,9 +30,7 @@ How to migrate to Sonian directly:
 
 - Simply click the button below, complete the short form on the page that follows, and Sonian will contact you to ensure a seamless transition of your existing archive to your new mail service.
 
-- [Migrate to Sonain](https://www.sonian.com/rackspacearchive)
-
-
+- [Transfer to Sonain](https://www.sonian.com/rackspacearchive)
 
 ### Before you export an archive
 
