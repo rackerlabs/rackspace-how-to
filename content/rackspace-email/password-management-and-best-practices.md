@@ -11,7 +11,8 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article examines common password attack types and password best practices to combat them.
+
+With the methods available to compromise an account growing in both number and sophistication, properly managing password security is more important than ever to ensure that your business is not compromised. This article examines common password attack types and password best practices to combat them.
 
 ### Prerequisites
 
@@ -19,7 +20,6 @@ This article examines common password attack types and password best practices t
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-With the methods available to compromise an account growing in both number and sophistication, properly managing password security is more important than ever to ensure that your business is not compromised.
 
 ### Common password attack types
 
