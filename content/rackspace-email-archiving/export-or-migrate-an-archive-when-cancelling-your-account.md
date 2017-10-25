@@ -28,9 +28,8 @@ The archiving service you currently use with Cloud Office is provided by Rackspa
 
 How to migrate to Sonian directly:
 
-- Simply click the button below, complete the short form on the page that follows, and Sonian will contact you to ensure a seamless transition of your existing archive to your new mail service.
+Simply click [Transfer to Sonain](https://www.sonian.com/rackspacearchive), complete the short form on the page that follows, and Sonian will contact you to ensure a seamless transition of your existing archive to your new mail service.
 
-- [Transfer to Sonain](https://www.sonian.com/rackspacearchive)
 
 ### Before you export an archive
 
