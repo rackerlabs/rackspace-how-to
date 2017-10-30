@@ -17,7 +17,7 @@ repository provides useful software packages that are not included in
 the official CentOS or Red Hat repositories.
 
 Instructions are also included for installing the [IUS Community Project](https://ius.io/). Whereas EPEL provides
-only software that is *not* in the official CentOS and Red Hat official repositories, IUS provides newer versions of software (like MySQL and PHP) that exist in the official repositories.
+only software that is *not* in the official CentOS and Red Hat repositories, IUS provides newer versions of software (like MySQL and PHP) that exist in the official repositories.
 
 **Note:** Exercise caution when using any third-party repository. If you
 have a managed support agreement, contact your provider before following
