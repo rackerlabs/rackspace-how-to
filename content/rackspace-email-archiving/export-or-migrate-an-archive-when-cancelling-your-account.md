@@ -20,7 +20,7 @@ I am cancelling my cloud office mail services for a new vendor – What should I
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-When cancelling services with Cloud Office you can choose to export the entire archive or you can transfer archiving services directly to Sonian.
+When cancelling services with Cloud Office the following options are available for preserving your archive after account cancellation.
 
 |Archive options |Time Required | Cost | Technical Difficulty|
 |---|---|---|---|
