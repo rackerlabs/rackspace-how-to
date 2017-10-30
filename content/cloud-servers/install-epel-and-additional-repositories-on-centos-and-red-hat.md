@@ -17,7 +17,7 @@ repository provides useful software packages that are not included in
 the official CentOS or Red Hat repositories.
 
 Instructions are also included for installing the [IUS Community Project](https://ius.io/). Whereas EPEL provides
-only software that is *not* in the official CentOS and Red Hat official repositories, IUS provides newer versions of software (like MySQL and PHP) that exists in the official repositories.
+only software that is *not* in the official CentOS and Red Hat official repositories, IUS provides newer versions of software (like MySQL and PHP) that exist in the official repositories.
 
 **Note:** Exercise caution when using any third-party repository. If you
 have a managed support agreement, contact your provider before following
@@ -43,7 +43,7 @@ To install the EPEL release package, run the following command:
 
     sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-$(rpm -E '%{rhel}').noarch.rpm
 
-Some EPEL packages depend on packages from the "optional" and "extras" channels, so ensure that those are enabled as well. 
+Some EPEL packages depend on packages from the "optional" and "extras" channels, so ensure that those are enabled as well.
 
 ### Install the IUS repository
 
