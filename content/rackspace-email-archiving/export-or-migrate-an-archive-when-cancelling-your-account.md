@@ -24,9 +24,9 @@ When cancelling services with Cloud Office you can choose to export the entire a
 
 |Archive options |Time Required | Cost | Technical Difficulty|
 |---|---|---|---|
-|Transfer to Sonian |No time required| Minimal | No technical work |
+|Transfer to Sonian |No time required| No transfer cost | No technical work |
 |Self-Export the Archive| Days or weeks | No cost| Difficult to complete|
-|Bulk Export Request | Weeks | Substantial | Moderate technical work after receiving the export|
+|Bulk Export Request | Weeks | Priced per GB exported | Moderate technical work after receiving the export|
 
 ### Take your archive directly to Sonian (recommended)
 
