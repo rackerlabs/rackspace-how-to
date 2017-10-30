@@ -28,7 +28,7 @@ When cancelling services with Cloud Office you can choose to export the entire a
 |Self-Export the Archive| Days or weeks | No cost| Difficult to complete|
 |Bulk Export Request | Weeks | Substantial | Moderate technical work after receiving the export|
 
-### Take your archive directly to Sonian(recommended)
+### Take your archive directly to Sonian (recommended)
 
 The archiving service you currently use with Cloud Office is provided by Rackspace’s trusted partner, Sonian Inc. Their cloud email archiving solution is compatible with all of the leading email service providers (Office 365, Gmail, Exchange, etc.) and that means you can move it to your new provider without worry or hassle, keeping the data where it is.
 
