@@ -22,7 +22,11 @@ DomainKeys identified mail (DKIM) adds a secure signature to your domain to auth
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-To create a truly robust email verification policy, you should [create an **SPF** record policy](/how-to/create-an-spf-policy), then create a **DKIM** record, and lastly [create a DMARC record policy](/how-to/create-a-dmarc-policy).
+Before enabling DKIM, we recommend you create a robust email verification policy by completing the steps in the following articles: 
+
+1. [Create an **SPF** record policy](/how-to/create-an-spf-policy). 
+2. Create a **DKIM** record. 
+3. [Create a DMARC record policy](/how-to/create-a-dmarc-policy).
 
 For a video tutorial of the following steps, see [Rackspace Email - DMARC / DKIM: What It Is & How to Setup](https://emailhelp.rackspace.com/l/dmarc-dkim-records-setup).
 
