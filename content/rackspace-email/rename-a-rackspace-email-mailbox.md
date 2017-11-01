@@ -23,13 +23,13 @@ This article explains how to rename a Rackspace Email address from the Cloud Off
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
+For a video tutorial of the following steps, see [Rackspace Email - Adding/Editing/Renaming/Restoring](emailhelp.rackspace.com/l/add-edit-rename-rse-mailbox).
+
 ### Before you begin
 
 If the mailbox is set up in a [local email client](/how-to/cloud-office-support-terminology) profile such as Outlook or Apple Mail, export the user's local profile. After the email address is renamed, the local profile must be recreated. Exporting the profile before renaming the mailbox prevents the loss of mail data.
 
 ### Rename a Rackspace Email Address
-
-For a video tutorial of the following steps, see [Rackspace Email - Adding/Editing/Renaming/Restoring](emailhelp.rackspace.com/l/add-edit-rename-rse-mailbox).
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 
