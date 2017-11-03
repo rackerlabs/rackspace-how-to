@@ -24,7 +24,11 @@ You also need access to update DNS entries for your domain. If you do not know w
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-An **SPF** policy by itself will not go far in terms of protecting the integrity of your domain's email. To create a truly robust email verification policy, you should create an **SPF** record policy, then [create a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel), and lastly [create a DMARC record policy](/how-to/create-a-dmarc-policy).
+An **SPF** policy on it's own does not go far in terms of protecting the integrity of your domain's email. In order to create a secure email verification policy, we recommend the following: 
+
+1. Create an **SPF** record policy. 
+2. [Create a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel).
+3. [Create a DMARC record policy](/how-to/create-a-dmarc-policy).
 
 ### Create an SPF record
 
@@ -36,13 +40,15 @@ An **SPF** policy by itself will not go far in terms of protecting the integrity
     | :---: | :---: | :---: | :---: |
     | TXT | @ | **v=spf1 include:emailsrvr.com ~all** | 3600 |
 
-3. Before saving changes, decide how you would like to enforce SPF failures.
+3. Decide how you would like to enforce SPF failures.
 
     - `~all` will result in a soft fail(Not authorized, but not explicitly unauthorized).
     - `-all` will result in a hard fail(Unauthorized).
     - `?all` is neutral(As if there is no policy at all).
+    
+   Enter your choice after **v=spf1 include:emailsrvr.com**, and then save your changes.
 
-4. Authorize additional mail servers that you utilize by adding their IP or server name just after **include:**.
+4. Authorize additional mail servers by adding their IP or server name after **include:**.
 
     - For example:
 
