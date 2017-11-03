@@ -47,7 +47,6 @@ the specified VPN user from all firewalls on the array.
 
 If there are no errors, the ticket is updated and closed.
 
-If there are errors, the ticket generates in the Network Security queue, where
-it is completed manually.
+If there are errors, the ticket generates in the Network Security queue, where it is completed manually.
 
 **Note:** This process can take longer to complete if the ticket is sent to Network Security.
