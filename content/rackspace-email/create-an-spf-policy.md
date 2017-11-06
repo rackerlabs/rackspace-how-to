@@ -56,4 +56,4 @@ An SPF policy alone is not enough to protext the integrity of your domain's emai
     | :---: | :---: | :---: | :---: |
     | TXT| @ | **v=spf1 include:emailsrvr.com include:othermailer.com ~all** | 3600 |
 
-3. Save your changes.
+5. Save your changes.
