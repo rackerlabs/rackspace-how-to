@@ -1,6 +1,6 @@
 ---
 permalink: create-an-spf-policy/
-audit_date:
+audit_date: '2017-10-06'
 title: Create an SPF policy
 type: article
 created_date: '2017-09-25'
@@ -24,9 +24,9 @@ You also need access to update DNS entries for your domain. If you do not know w
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-An **SPF** policy on it's own does not go far in terms of protecting the integrity of your domain's email. In order to create a secure email verification policy, we recommend the following: 
+An SPF policy alone is not enough to protext the integrity of your domain's email. In order to create a secure email verification policy, we recommend the following: 
 
-1. Create an **SPF** record policy. 
+1. Create an SPF record policy. 
 2. [Create a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel).
 3. [Create a DMARC record policy](/how-to/create-a-dmarc-policy).
 
@@ -40,11 +40,11 @@ An **SPF** policy on it's own does not go far in terms of protecting the integri
     | :---: | :---: | :---: | :---: |
     | TXT | @ | **v=spf1 include:emailsrvr.com ~all** | 3600 |
 
-3. Decide how you would like to enforce SPF failures.
+3. Decide how you want to enforce SPF failures.
 
-    - `~all` will result in a soft fail(Not authorized, but not explicitly unauthorized).
-    - `-all` will result in a hard fail(Unauthorized).
-    - `?all` is neutral(As if there is no policy at all).
+    - `~all` will result in a soft fail (Not authorized, but not explicitly unauthorized).
+    - `-all` will result in a hard fail (Unauthorized).
+    - `?all` is neutral (As if there is no policy at all).
     
    Enter your choice after **v=spf1 include:emailsrvr.com**, and then save your changes.
 
