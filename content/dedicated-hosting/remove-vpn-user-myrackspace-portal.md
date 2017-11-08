@@ -41,12 +41,17 @@ Removing a client VPN user is now an automated task within the MyRackspace porta
 
 ### Automation process
 
-After you create a ticket, the automation process begins and creates an array
-of all the firewalls on your account. It then sends the commands to remove
-the specified VPN user from all firewalls on the array.
+After you create a ticket, the automation process begins. Following is an overview of how
+the automation process works:
 
-If there are no errors, the ticket is updated and closed.
+1. The automation creates an array of all the firewalls on your account.
 
-If there are errors, the ticket generates in the Network Security queue, where it is completed manually.
+2. The automation then sends the commands to remove the VPN user specified from
+all firewalls within the array.
 
-**Note:** This process can take longer to complete if the ticket is sent to Network Security.
+3. The ticket is updated and closed if there are no errors.
+
+   If errors exist, the ticket generates in the Network Security queue, where a Network
+   Security Racker completes the task manually.
+
+   **Note:** This process can take longer to complete if the ticket is sent to Network Security.
