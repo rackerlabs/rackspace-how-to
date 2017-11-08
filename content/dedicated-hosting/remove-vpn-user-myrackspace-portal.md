@@ -41,8 +41,8 @@ Removing a client VPN user is now an automated task within the MyRackspace porta
 
 ### Automation process
 
-After you create a ticket, the automation process begins. Following is an overview of how
-the automation process works:
+After you create a ticket, the automation process begins. The following overview describes
+the automation process:
 
 1. The automation creates an array of all the firewalls on your account.
 
