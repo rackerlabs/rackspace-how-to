@@ -325,8 +325,8 @@ Volts is considered a "0". Voltage always changes on a curve that resembles a si
 
 <img src="{% asset_path cloud-networks/networking-fundamentals/digital-interpretation.png %}" width="570" height="620" />
 
-This should clearly show how changing voltage, even though the change is analog, can be
-interpreted as ones and zeros digitally.
+This should clearly show how changing voltage, even though the change is
+analog, can be interpreted as ones and zeros digitally.
 
 #### Repeaters
 
