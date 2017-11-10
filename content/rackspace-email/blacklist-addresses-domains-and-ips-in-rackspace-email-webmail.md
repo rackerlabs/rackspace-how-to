@@ -26,38 +26,38 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 When you blacklist an email address or IP, this creates a rule that rejects any mail sent from the email address or IP you have specified. This is useful when trying to [combat spoofing](/how-to/email-spoofing-explained) or spam. If you need to **Safelist** a sender see [Safelist addresses, domains and IPs in Rackspace Email webmail](/how-to/safelist-addresses-domains-and-ips-in-rackspace-email-webmail).
 
-**Warning:** Use caution when blacklisting entire domains or IP addresses as you may be unintentionally blocking legitimate mail.
+**Warning:** Use caution when blacklisting entire domains or IP addresses, because you may be unintentionally blocking legitimate mail.
 
 ### Add a Blacklisted email address or domain
 
 1. Log into your mailbox at [apps.rackspace.com](https://apps.rackspace.com).
 
-2. Click your email address in the upper right hand corner and select **Settings** from the dropdown menu.
+2. Click your email address in the upper right hand corner, and select **Settings** from the dropdown menu.
 
     <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/blacklist_settings.png %}"/>
 
-3. Click **Spam Settings** on the left hand side of the pop up box.
+3. Click **Spam Settings** on the left side of the pop-up box.
 
-4. Select the third tab labeled **Blacklist**.
+4. Select the third tab, which is labeled **Blacklist**.
 
     <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/spam_settings.png %}"/>
 
-5. Click **Add** under the box titled **Blacklisted Domains & Email Addresses**.
+5. Click **Add** in the box titled **Blacklisted Domains & Email Addresses**.
 
-6. You will be prompted with a box title **Add Blacklisted Domain or Email Address**. Enter the domain or email address you wish to blacklist in the field under **Enter a domain or email address** and click **Add**.
+6. When you are prompted with a box that is titled **Add Blacklisted Domain or Email Address**, enter the domain or email address that you wish to blacklist in the field under **Enter a domain or email address**, and then click **Add**.
 
     <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/add_blacklist.png %}"/>
 
-7. Confirm the address is now listed in the box under **Blacklisted Domains & Email Addresses**, then click **Save**.
+7. Confirm that the address is now listed in the box under **Blacklisted Domains & Email Addresses**, and finally click **Save**.
 
 ### Add a Blacklisted IP address
 
-If you need to blacklist and IP, follow steps 1-4 above and continue here.
+If you need to blacklist an IP address, follow steps 1-4 above, and continue here.
 
-1. Click **Add** under the box titled **Blacklisted IP Addresses**.
+1. Click **Add** in the box that is titled **Blacklisted IP Addresses**.
 
-2. You will be prompted with a box title **Add Blacklisted IP Address**. Enter the IP address you wish to blacklist in the field under **Enter an IP address(or range)** and click **Add**.
+2. When you are prompted with a box that is titled **Add Blacklisted IP Address**, enter the IP address you wish to blacklist in the field under **Enter an IP address(or range)**, and then click **Add**.
 
     <img src="{% asset_path rackspace-email/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/add_ip.png %}"/>
 
-3. Confirm the address is now listed in the box under **Blacklisted Domains & Email Addresses**, then click **Save**.
+3. Confirm that the address is now listed in the box under **Blacklisted Domains & Email Addresses**, and finally click **Save**.
