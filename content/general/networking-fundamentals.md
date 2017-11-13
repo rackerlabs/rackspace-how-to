@@ -323,7 +323,7 @@ interprets this change as either a 1 or a 0. Let's assume your NIC is capable of
 voltages between 1 and 5 volts and that above 3 Volts is considered a "1" and below 3
 Volts is considered a "0". Voltage always changes on a curve that resembles a sine wave.
 
-<img src="{% asset_path cloud-networks/networking-fundamentals/digital-interpretation.png %}" width="570" height="620" />
+<img src="{% asset_path general/networking-fundamentals/digital-interpretation.png %}" width="570" height="620" />
 
 This should clearly show how changing voltage, even though the change is
 analog, can be interpreted as ones and zeros digitally.
