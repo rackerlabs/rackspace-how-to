@@ -43,7 +43,7 @@ nodes to traverse before dying.
 
 #### Binary arithmetic
 
-In later portions of this document, we're going to discuss binary numbers a good deal, so
+In later portions of this document, we discuss binary numbers a good deal, so
 it's important to have a strong grasp on them before proceeding. As you probably already
 know, computers deal exclusively with 1s and 0s.  There is no number 2 in a computer, nor
 a number 3.  Every number, every letter, every pixel, every process is expressed as a
