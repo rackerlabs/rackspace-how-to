@@ -2,7 +2,7 @@
 permalink: email-fundamentals/
 audit_date: '2017-11-07'
 title: Email Fundamentals
-type: whitepaper
+type: article
 created_date: '2017-01-27'
 created_by: Alan Hicks
 last_modified_date: '2017-11-07'
