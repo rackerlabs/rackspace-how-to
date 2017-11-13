@@ -1,11 +1,11 @@
 ---
 permalink: encryption-fundamentals/
-audit_date:
+audit_date: '2017-11-13'
 title: Encryption Fundamentals
 type: whitepaper
 created_date: '2017-01-26'
 created_by: Alan Hicks
-last_modified_date: '2017-11-09'
+last_modified_date: '2017-11-13'
 last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
