@@ -1,6 +1,6 @@
 ---
 permalink: dns-fundamentals/
-audit_date:
+audit_date: '2017-11-13'
 title: DNS Fundamentals
 type: article
 created_date: '2017-01-26'
