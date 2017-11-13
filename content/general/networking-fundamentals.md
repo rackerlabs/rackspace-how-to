@@ -1,11 +1,11 @@
 ---
 permalink: networking-fundamentals/
-audit_date:
+audit_date: '2017-11-13
 title: Networking Fundamentals
 type: article
 created_date: '2017-01-13'
 created_by: Alan Hicks
-last_modified_date: '2017-11-09'
+last_modified_date: '2017-11-13'
 last_modified_by: Cat Lookabaugh
 product: Cloud Networks
 product_url: cloud-networks
