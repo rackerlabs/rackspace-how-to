@@ -104,9 +104,12 @@ Ubuntu 12.10 (Quantal Quetzal) | f3ae5ef7-dc43-473a-b9d6-65e3f2cb7867 | 2014-04-
 Ubuntu 12.10 (Quantal Quetzal) (PVHVM) | ab5354f6-b7a3-4802-a2ad-911f67961197 | 2014-04-17 | No longer supported by Canonical.
 Ubuntu 13.04 (PV) | 45975587-fb06-4d56-bc94-38d1038aef8d | 2014-01-06 | No longer supported by Canonical.
 Ubuntu 13.04 (PVHVM) | 62df001e-87ee-407c-b042-6f4e13f5d7e1 | 2014-01-06 | No longer supported by Canonical.
-Ubuntu 13.10 (Saucy Salamancer) | 7b8abc3f-5fd2-4d02-9e9a-16d43fc7128e | 2014-06-23 | No longer supported by Canonical.
+Ubuntu 13.10 (Saucy Salamander) | 7b8abc3f-5fd2-4d02-9e9a-16d43fc7128e | 2014-06-23 | No longer supported by Canonical.
 Ubuntu 13.10 (Saucy Salamander) (PVHVM) | aca656d3-dd70-4d7e-a9e5-f12182871cde | 2014-06-23 | No longer supported by Canonical.
 Ubuntu 14.10 (Utopic Unicorn) (PVHVM) | 668b0764-4936-4eec-a2f2-3b5bb2c40b26 | 2015-04-23 | Replaced by 15.04 (Vivid Vervet).
+Ubuntu 15.04 (Vivid Vervet) (PVHVM) | 658a7d3b-4c58-4e29-b339-2509cca0de10 | 2015-10-23 | No longer supported by Canonical.
+Ubuntu 15.10 (Willy Werewolf) (PVHVM) | 59a3fadd-93e7-4674-886a-64883e17115f | 2016-12-07 | No longer supported by Canonical.
+Ubuntu 16.10 (Yakety Yak) (PVHVM) | 321116e4-5c76-42ce-8ddf-5cb4dcbf7cfe | 2017-07-27 | No longer supported by Canonical.
 
 ### Windows Server images
 
