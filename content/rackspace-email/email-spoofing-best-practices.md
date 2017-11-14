@@ -22,7 +22,7 @@ This article explains email spoofing, and describes the steps that you can take 
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-If you would prefer a video tutorial see [Rackspace Email - Spoofing: How to identify & protect your organization <img src="{% asset_path rackspace-email/email-spoofing-explained/video_spoofing.png %}" /> ](https://emailhelp.rackspace.com/l/how-to-prevent-email-spoofing).
+If you would prefer a video tutorial see [Rackspace Email - Spoofing: How to identify & protect your organization](https://emailhelp.rackspace.com/l/how-to-prevent-email-spoofing).
 
 ### What is email spoofing?
 
