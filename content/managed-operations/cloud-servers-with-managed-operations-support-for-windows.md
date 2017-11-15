@@ -98,33 +98,10 @@ The Managed Operations service level supports the following SMTP tool:
 | --- | --- | --- | --- | --- | --- |
 | [IIS Outgoing Only](http://www.iis.net/) |**Yes** | **Yes** | **Yes** | **Yes** | No |
 
-### Active Directory (US only)
+### Active Directory
 
-The following table indicates which Active Directory (AD) actions are
-supported by the Managed Operations service level:
+Active Directory (AD) is not currently supported. Reach out to our support team to evaluate alternative solutions.
 
-| Supported | Windows 2008 R2| Windows 2012 R2|
-| --------- | -------------| ------------ |
-| Set up an AD Controller | **Yes** | **Yes** |
-|Add users to AD | **Yes** | **Yes** |
-| [Establish AD Trust to customer's on-premises AD (their Data center) using RackConnect](https://www.rackspace.com/cloud/hybrid/rackconnect) |**Yes** | **Yes** |
-| Establish AD trust between customer's dedicated and cloud environments, hosted at Rackspace | **Yes** |**Yes** |
-| Establish AD trust to Rackspace Intensive domain | No | No |
-| Replication | **Yes** | **Yes** |
-| Authentication for web | **Yes** | **Yes** |
-| Internal DNS for AD |**Yes** | **Yes** |
-| LDAP | **Yes** | **Yes** |
-|Application partitions when using other Rackspace application services (for example, SharePoint and Exchange) | **Yes** | **Yes** |
-|Development for federated services | No | No |
-| Development for application integration | No | No |
-| Snapshots or backups of domain controller | No | No |
-| Group policy objects | No | No |
-| Distributed file system (DFS) | No | No |
-| RackConnect to dedicated environment |**Yes** | **Yes** |
-| Multiple domain controllers | **Yes** | **Yes** |
-| Rights management | No | No |
-| Federated services | No | No |
-| CA services | No | No |
 
 ### Other packages
 
