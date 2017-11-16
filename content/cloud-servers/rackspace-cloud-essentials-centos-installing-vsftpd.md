@@ -14,12 +14,11 @@ product_url: cloud-servers
 **Previous section:** [Create a Cloud Server](/how-to/create-a-cloud-server)
 
 By following the previous articles in this series, you should now have an
-active cloud server that is secured and has scheduled backups
-configured. Next, you'll want to upload your web content to the server.
-When you think of transferring files, you probably think of the File
-Transfer Protocol (FTP) because it has been around for so long. Although
-simple to use, FTP has become obsolete because it lacks the ability for
-secure file transfers.
+active cloud server that is secured and has scheduled backups configured.
+Next, you'll want to upload your web content to the server. When you think of
+transferring files, you probably think of the File Transfer Protocol (FTP)
+because it has been around for so long. Although simple to use, FTP has become
+obsolete because it lacks the ability for secure file transfers.
 
 Instead, we recommend installing and using a secure file transfer
 mechanism. This article describes how to install vsftpd (very secure FTP
