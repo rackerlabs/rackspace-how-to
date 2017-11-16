@@ -86,24 +86,24 @@ jailing) users to their home directories for security and privacy.
 
 1. Change the value of `chroot_list_enable` to `No`, as follows:
 
-    # You may specify an explicit list of local users to chroot() to their home
-    # directory. If chroot_local_user is YES, then this list becomes a list of
-    # users to NOT chroot().
-    chroot_list_enable=NO
-    # (default follows)
-    chroot_list_file=/etc/vsftpd/chroot_list
+        # You may specify an explicit list of local users to chroot() to their home
+        # directory. If chroot_local_user is YES, then this list becomes a list of
+        # users to NOT chroot().
+        chroot_list_enable=NO
+        # (default follows)
+        chroot_list_file=/etc/vsftpd/chroot_list
 
 2. Ensure that users are jailed in their home directory by adding the following
 entry to the bottom of the file:
 
-    chroot_local_user=YES
+        chroot_local_user=YES
 
 3. Save the **/etc/vsftpd/vsftpd.conf** file.
 
 4. So that you do not get an error when restarting, create the `chroot_list`
 file, as follows:
 
-    sudo touch /etc/vsftpd/chroot_list
+        sudo touch /etc/vsftpd/chroot_list
 
 #### Configure the firewall
 
@@ -122,11 +122,11 @@ file, as follows:
 
      -  Centos 5 (ip_conntrack_ftp):
 
-            IPTABLES_MODULES="ip_conntrack_ftp"
+               IPTABLES_MODULES="ip_conntrack_ftp"
 
      -  Centos 6 (nf_conntrack_ftp):
 
-           IPTABLES_MODULES="nf_conntrack_ftp"
+               IPTABLES_MODULES="nf_conntrack_ftp"
 
 5.  Save the **iptables-config** file and restart iptables:
 
@@ -152,7 +152,8 @@ Use one of the many low-cost or free FTP applications, such as
 
 #### Using the command line
 
-Use the following syntax to open an FTP session from the command line:
+Use the following syntax to open an FTP session from the command line, where
+example.com is your FTP site:
 
     ftp example.com
 
