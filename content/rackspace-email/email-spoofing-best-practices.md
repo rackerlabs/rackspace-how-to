@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article explains email spoofing, and describes the steps that you can take to combat it.
+This article explains email spoofing and describes the steps that you can take to combat it.
 
 ### Prerequisites
 
@@ -26,11 +26,11 @@ If you would prefer a video tutorial see [Rackspace Email - Spoofing: How to ide
 
 ### What is email spoofing?
 
-The word **spoof** means **falsified**. A spoofed email is when the sender purposely alters parts of the email to make the message appear as though it was authored by someone else. Commonly, the sender’s name and email address and the body of the message are formatted to appear from a legitimate source. Sometimes, the spoofer makes the email appear to come from a private citizen somewhere.
+The word **spoof** means **falsified**. A spoofed email is one in which the sender purposely alters parts of the email to make the message appear as though it was authored by someone else. Commonly, the sender’s name and email address and the body of the message are formatted to appear from a legitimate source. Sometimes, the spoofer makes the email appear to come from a private citizen.
 
-A spoofed message can appear to come from a coworker, a bank, a family member or any number of seemingly trustworthy sources. A good spoof looks like any other email that you normally receive.
+A spoofed message can appear to come from a coworker, a bank, a family member, or any number of seemingly trustworthy sources. A good spoof looks like any other email that you normally receive.
 
-**Warning:** If you suspect you have received a fraudulent message, **DO NOT** click any link in the message or enter any information that is requested.
+**Warning:** If you suspect that you have received a fraudulent message, **DO NOT** click any link in the message or enter any information that is requested.
 
 ### Why do people spoof email?
 
@@ -40,35 +40,35 @@ In many cases, the spoofed email is part of a **phishing** (scam) attack. In oth
 
 Scammers alter different sections of an email to disguise who is the *actual* sender of the message. To view the following properties, you must open the **email headers** of a message that you suspect has been spoofed. Following are some examples of spoofed properties:
 
-- **FROM** boss@companyexample.com - This appears to come from a legitimate source on any spoofed message.
+- **FROM** boss@companyexample.com - This appears to come from a legitimate source on a spoofed message.
 
-- **REPLY-TO** - This can also be spoofed, but a lazy scammer will leave the actual **REPLY-TO** address. If you see a different sending address here, the email might have been spoofed.
-
-- **RETURN-PATH** - This can also be spoofed, but a lazy scammer will leave the actual **RETURN-PATH** address. If you see a different sending address here, the email might have been spoofed.
+- **REPLY-TO** - This can also be spoofed, but a lazy scammer might leave the actual **REPLY-TO** address. If you see a different sending address here, the email might have been spoofed.
+m
+- **RETURN-PATH** - This can also be spoofed, but a lazy scammer might leave the actual **RETURN-PATH** address. If you see a different sending address here, the email might have been spoofed.
 
 - **SOURCE IP** address or “X-ORIGIN” address - This is typically more difficult to alter but it is possible.
 
-These first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property above, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing.
+The first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing.
 
-In the following example, it appears that the recipient has received a message from their office assistant, requesting money.
+In the following example, it appears that the recipient has received a message from their office assistant requesting money.
 
 <img src="{% asset_path rackspace-email/email-spoofing-explained/from_assistant.png %}" />
 
-The **subject** line should alert you immediately. This user should contact their assistant through another form of communication to confirm that they did not send this message. Next, you will want to discover who actually sent the message by opening the message headers. It should look similar to the following:
+The **subject** line should alert you immediately. This user should contact their assistant through another form of communication to confirm that they did not send this message. Next, you want to discover who actually sent the message by opening the message headers. It should look similar to the following:
 
 <img src="{% asset_path rackspace-email/email-spoofing-explained/reply_to.png %}" />
 
-In this message header snippet, we see that the **From:** field shows the message being sent from **"Assistant"\<assistant@yourdomainexample.com\>**. However, we can also see that the **REPLY-TO:** field lists *spoofer@scam.com*. That is a clear cut example of a spoofed message. 
+In this message header snippet, we see that the **From:** field shows the message being sent from **"Assistant"\<assistant@yourdomainexample.com\>**. However, we can also see that the **REPLY-TO:** field lists *spoofer@scam.com*. That is a clear example of a spoofed message. 
 
-You should blacklist any address you find in the **REPLY-TO**, **RETURN-PATH**, and **SOURCE IP** field that is not an email address or IP address from which you normally receive mail.
+You should blacklist any address that you find in the **REPLY-TO**, **RETURN-PATH**, and **SOURCE IP** field that is not an email address or IP address from which you normally receive mail.
 
 For more information on viewing and understanding email headers, see [View and read Rackspace email headers](/how-to/view-and-read-rackspace-email-headers).
 
 ### Combat spoofing
 
-User education is the first line of defense against these types of attacks. If a user receives a spoofed message:
+User education is the first line of defense against these types of attacks. If a user receives a spoofed message, they should perform the following tasks:
 
- - Blacklist any email address or IP address listed in the **REPLY-TO**, **RETURN-PATH**, or **SOURCE IP** that you have determined to be fraudulent. See [Blacklist addresses, domains, and IP addresses in Rackspace Email](/how-to/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/) for instructions.
+ - Blacklist any email address or IP address listed in the **REPLY-TO**, **RETURN-PATH**, or **SOURCE IP** that you have determined to be fraudulent. For instructions, see [Blacklist addresses, domains, and IP addresses in Rackspace Email](/how-to/blacklist-addresses-domains-and-ips-in-rackspace-email-webmail/).
  - Immediately [change the password of your email account](/how-to/change-rackspace-email-mailbox-password) if you or your users provided that information at any point.
  - Alert the rest of your business to the situation.
 
@@ -82,9 +82,9 @@ The most impactful change you can make as an administrator is to implement **SPF
 
    - **DomainKeys Identified Mail (DKIM)** records assign a digital signature to mail sent from your domain, marking it as authorized mail sent from your domain. If you require instructions to enable DKIM for your Rackspace Cloud Office email, see [Enable DKIM in the Cloud Office Control Panel](/how-to/enable-dkim-in-the-cloud-office-control-panel). Creating a DKIM record is the second step in the process.
 
-   - **Domain Message Authentication Reporting and Compliance (DMARC)** records indicate to recipient mail servers that messages sent from that domain are employing DKIM and SPF sending policies. The recipient mail server then validates the message that you sent by using your DKIM and SPF policies. [Creating a DMARC record policy](/how-to/create-a-dmarc-policy) enables you to enforce DKIM and SPF records.
+   - **Domain Message Authentication Reporting and Compliance (DMARC)** records indicate to recipient mail servers that messages sent from that domain are employing DKIM and SPF sending policies. The recipient mail server then validates the message that you sent by using your DKIM and SPF policies. [Creating a DMARC record policy](/how-to/create-a-dmarc-policy) enables you to enforce DKIM and SPF records. This is the last step in the process.
 
-Using record policies protects the integrity of internal emails, as well as the external reputation of your domain. Implementing this protection is a multi-step process that must be carefully followed. For more information, see [Create a DMARC policy](/how-to/create-a-dmarc-policy).
+Using record policies protects the integrity of internal emails, as well as the external reputation of your domain. Implementing this protection is a multi-step process that you must carefully follow. For more information, see [Create a DMARC policy](/how-to/create-a-dmarc-policy).
 
 
 ### References
