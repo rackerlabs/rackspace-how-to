@@ -125,7 +125,7 @@ file, as follows:
 
      -  Centos 6 (nf_conntrack_ftp):
 
-               IPTABLES_MODULES="nf_conntrack_ftp"
+                IPTABLES_MODULES="nf_conntrack_ftp"
 
 5.  Save the **iptables-config** file and restart iptables:
 
