@@ -152,7 +152,7 @@ Use one of the many low-cost or free FTP applications, such as
 #### Using the command line
 
 Use the following syntax to open an FTP session from the command line, where
-example.com is your FTP site:
+`example.com` is your FTP site:
 
     ftp example.com
 
