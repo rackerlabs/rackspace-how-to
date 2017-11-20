@@ -321,12 +321,12 @@ for your business:
 1. **How much control does your business need over its Exchange settings and
 policies?**
 
-  A dedicated Exchange solution allows you to customize things like mailbox
-  size, message size limit, deleted item and deleted mailbox retention, email
-  filtering rules and backup. A dedicated server also gives you greater
-  control over upgrade and service-pack installation planning. If your
-  needs differ from a provider’s standard options in these and other
-  areas, dedicated Exchange is a good choice.
+   A dedicated Exchange solution allows you to customize things like mailbox
+   size, message size limit, deleted item and deleted mailbox retention, email
+   filtering rules and backup. A dedicated server also gives you greater
+   control over upgrade and service-pack installation planning. If your
+   needs differ from a provider’s standard options in these and other
+   areas, dedicated Exchange is a good choice.
 
 2. **Do you need complete control over security?**
 
