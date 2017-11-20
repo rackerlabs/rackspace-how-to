@@ -141,32 +141,6 @@ business costs. The solution – moving to a quality hosted email service
 – can help reduce your risk, improve productivity and free your IT staff
 to focus on more important tasks that add lasting business value.
 
-#### The TCO Case For Hosted Exchange
-
-Can an IT organization really save money by migrating an on-premise
-Microsoft Exchange deployment to a hosted solution? Consider the factors
-that go into a three-year total cost of ownership (TCO) calculation for
-a typical small business with 100 users.
-
-<img src="{% asset_path general/business-email-101/BusinessEmail101Guide-1.png %}" />
-
-These TCO calculations vary somewhat based on the number of users within
-an organization. While a
-[hosted Exchange solution](http://www.rackspace.com/email-hosting/hosted-exchange/)
-offers a 72% per-user cost savings for a company with 100 employees,
-that advantage increases to a 94% per-user savings for a company with 10
-employees and decreases to a 56% per-user savings for a company with
-1,000 employees.
-
-In every case, however, the hardware, IT infrastructure, labor and other
-costs associated with an on-premise Exchange deployment make it
-significantly more expensive than a quality hosted Exchange service.
-With the additional impact of indirect TCO benefits – automatic
-upgrades, rapid deployment and scaling, reducing the impact on a
-company’s internal network and other factors – the difference becomes
-even more clear. For the vast majority of companies that consider a
-hosted Exchange solution, the TCO savings are dramatic and undeniable.
-
 ### Step Two: Free or Professional Email Hosting?
 
 For many business owners, and especially cost-conscious small business owners,
