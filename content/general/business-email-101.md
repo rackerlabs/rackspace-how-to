@@ -459,8 +459,6 @@ email provider. To help you make a final decision, we have created a
 comparison worksheet that covers the most important points of
 comparison.
 
-<img src="{% asset_path general/business-email-101/BusinessEmail101Guide-2.png %}" />
-
 [Click here to download the Email Provider Comparison Worksheet](http://www.rackspace.com/apps/documents/Provider_Selection_Worksheet.pdf)
 
 ### Step Eight: Plan Your Migration Process
