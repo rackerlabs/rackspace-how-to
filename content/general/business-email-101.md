@@ -5,7 +5,7 @@ title: 'Business Email 101: An 8-Step Guide To Selecting Email For Your Business
 type: article
 created_date: '2013-05-03'
 created_by: Rackspace Support
-last_modified_date: '2017-11-13'
+last_modified_date: '2017-11-20'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
