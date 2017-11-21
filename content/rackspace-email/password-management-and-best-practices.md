@@ -29,7 +29,7 @@ The following methods are the most common used by attackers to attempt to compro
 
 Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and so on. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/email-spoofing-explained). A successful phishing attack is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
 
-Use the following guidelines to protext your passwords from phishing attempts:
+Use the following guidelines to protect your passwords from phishing attempts:
 
 - Never provide sensitive information without verifying that the request originates from a legitimate entity.
 
@@ -60,7 +60,7 @@ To prevent hackers from guessing your passwords create a unique password. Using 
 
 #### Password Reset Protocol Attack 
 
-Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
+Password reset protocols are typically based on alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for your current password.
 
 Use the following guideline to prevent hackers from guessing your passwords:
 
