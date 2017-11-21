@@ -23,7 +23,15 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Common password attack types
 
-**Phishing** - Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and the like. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/email-spoofing-explained). A successful phishing attack is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
+The following methods are the most common used by attackers to attempt to compromise your accounts:
+
+#### Phishing 
+
+Phishing is the act of impersonating a legitimate entity to obtain sensitive information from users such as usernames, passwords, credit card numbers, and so on. In email, phishing scams commonly utilize a method of email impersonation called [spoofing](/how-to/email-spoofing-explained). A successful phishing attack is particularly damaging because you have volunteered your current credentials to the scammer and they now have access.
+
+Use the following guidelines to protext your passwords from phishing attempts:
+
+- Never provide sensitive information without verifying that the request originates from a legitimate entity.
 
 - Never use the same password for different sites and accounts. Employing this policy helps contain the damage if you are phished.
 
@@ -31,7 +39,12 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 - Notify company employees to remain vigilant and remind them of verification practices.
 
-**Malware** - Malicious software that collects information from you without your knowledge. Passwords are captured through keystroke logging
+#### Malware
+
+Malicious software that collects information from you without your knowledge is called
+malware. Passwords are captured through keystroke logging.
+
+Use the following guidelines to avoid exposing your systems to malware:
 
 - Always make sure that you regularly install security updates for your operating systems, internet browsers, and any other software you regularly use.
 
@@ -39,46 +52,65 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 - Install an antivirus program.
 
-**Dictionary Attack** - Hackers will try a list of passwords against a username in hopes that the user has used an easy-to-guess password.
+#### Dictionary Attack 
+
+Hackers try a list of passwords against a username in hopes that the user has used an easy-to-guess password.
+
+Use the following guideline to prevent hackers from guessing your passwords:
 
 - Create a unique password. Using a common password makes you a prime target for this attack and you should strengthen your password. See [Password best practices](#password-best-practices) for guidance.
 
-**Password Reset Protocol Attack** Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
+#### Password Reset Protocol Attack 
+
+Password reset protocols are typically based off of alternate contact information like phone numbers or email address. If a hacker has the information to reset your password, they have no need for you current password.
+
+Use the following guideline to prevent hackers from guessing your passwords:
 
 - Always keep contact information current so that outdated information cannot be used to impersonate you.
 
-- When setting up security questions and answers, make sure you select a question that cannot be learned by an attacker researching your online social media accounts. For example, "What University did I graduate from?" is a bad security question. An attacker can likely find this information on your public Facebook or LinkedIn profile.
+- When you set up security questions and answers, select a question that cannot be learned by an attacker researching your online social media accounts. For example, "What University did I graduate from?" is a bad security question. An attacker can likely find this information on your public Facebook or LinkedIn profile.
 
 ### Password best practices
 
 Meeting password requirements does not create a password robust enough to stop someone determined to access your account. While password requirements help prevent the most egregious of weak passwords, they do not make a password unbreakable.
 
-1. **User education**. A compromise typically starts with one user, and quickly spreads through a whole company. Ensure that your users are taking precautions and know password best practices.
+Use the following guidelines to protect your accounts and create strong passwords:
 
-2. **Avoid patterns**. Patterns are the key to a hackers success. People are very predictable and as such, make predictable passwords.
+1. **User education**. 
 
-    - Do you repeat words or characters in your password to meet the character length requirement? **fourfour44!!**  or **PasswordPassword** may satisfy a password length requirement but it is easily predicted by a program trying to access your most valuable information.
+    A compromise typically starts with one user, and quickly spreads through a whole company. Ensure that your users are taking precautions and know password best practices.
 
-    - Are you reusing passwords for multiple sites, application or accounts? If your social media account is compromised, a hackers is going to try to access any other accounts you have elsewhere. Reusing passwords ensures that they will succeed.
+2. **Avoid patterns**. 
+    
+    Patterns are the key to a hackers success. People are very predictable and as such, make predictable passwords.
 
-    - Is your password construction similar every time you change it?
-        - Examine the password example **Predictable2017**.  The first letter is capitalized and the password ends in a number. Many people construct their passwords this way which is why a malicious hacking program will always check for it.
-        - You may think you can throw off the hacker with some character substitutions like **Pr3dictab132017**. This is also a predictable pattern that many people use in passwords.
+        - Do you repeat words or characters in your password to meet the character length requirement? **fourfour44!!**  or **PasswordPassword** may satisfy a password length requirement but it is easily predicted by a program trying to access your most valuable information.
 
-    - Changing aspects of your password is not really changing your password. It is only a good idea to implement a password change schedule if you truly create a new unique password each time.
+        - Are you reusing passwords for multiple sites, application or accounts? If your social media account is compromised, a hackers is going to try to access any other accounts you have elsewhere. Reusing passwords ensures that they will succeed.
 
-3. **Password strength**.  Character requirements and password length are only useful if you avoid patterns and be vigilant against attacks like **phishing**, **malware**, **proof attacks** and the like.
+        - Is your password construction similar every time you change it?
+        
+            - Examine the password example **Predictable2017**.  The first letter is capitalized and the password ends in a number. Many people construct their passwords this way which is why a malicious hacking program will always check for it.
+            - You may think you can throw off the hacker with some character substitutions like **Pr3dictab132017**. This is also a predictable pattern that many people use in passwords.
 
-    - Avoiding patterns is going to be your primary goal when creating a password. The more unique you make the password, the better.
+       - Changing aspects of your password is not really changing your password. It is only a good idea to implement a password change schedule if you truly create a new unique password each time.
 
-    - Do not include public or personal information about yourself or those close to you in the password.
+3. **Password strength**.  
 
-        - No birthdays.
-        - No pet names.
-        - No anniversaries.
-        - No company names, founding dates, addresses, etc.
+    Character requirements and password length are only useful if you avoid patterns and are vigilant against attacks like **phishing**, **malware**, **proof attacks** and so on.
+    
+    Use the following guidelines to create a strong password:
 
-    - Create a memorable password by creating a unique password. An unique password will provide password strength as well as preserve user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
+       - Avoiding patterns is your primary goal when you create a password. The more unique you can make the password, the better.
 
-    - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character,  leave it lower case. Instead of ending the password with a number, end with a word. This password has no trace of a company or a personal detail. 
+       - Do not include public or personal information about yourself or those close to you in the password, including:
+
+          - Birthdays.
+          - Pet names.
+          - Anniversaries.
+          - Company names, founding dates, addresses, and so on.
+
+       - Create a memorable password by creating a unique password. A unique password provides password strength as well as preserves the user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
+
+       - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**. In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character,  leave it lower case. Instead of ending the password with a number, end with a word. This password has no trace of a company or a personal detail. 
 
