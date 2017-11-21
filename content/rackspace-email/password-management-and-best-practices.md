@@ -1,6 +1,6 @@
 ---
 permalink: password-management-and-best-practices/
-audit_date:
+audit_date: '2017-11-22'
 title: Password management and best practices
 type: article
 created_date: '2017-10-03'
