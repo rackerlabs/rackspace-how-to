@@ -56,9 +56,7 @@ Use the following guidelines to avoid exposing your systems to malware:
 
 Hackers try a list of passwords against a username in hopes that the user has used an easy-to-guess password.
 
-Use the following guideline to prevent hackers from guessing your passwords:
-
-- Create a unique password. Using a common password makes you a prime target for this attack and you should strengthen your password. See [Password best practices](#password-best-practices) for guidance.
+To prevent hackers from guessing your passwords create a unique password. Using a common password makes you a prime target for this attack and you should strengthen your password. See [Password best practices](#password-best-practices) for guidance.
 
 #### Password Reset Protocol Attack 
 
@@ -110,7 +108,4 @@ Use the following guidelines to protect your accounts and create strong password
          - Anniversaries.
          - Company names, founding dates, addresses, and so on.
 
-      - Create a memorable password by creating a unique password. A unique password provides password strength as well as preserves the user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
-
-      - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**. In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character,  leave it lower case. Instead of ending the password with a number, end with a word. This password has no trace of a company or a personal detail. 
-
+      - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**. In this example, instead of substituting letters for similar looking numbers, substitute random numbers. Instead of capitalizing the first character, leave it lower case. Instead of ending the password with a number, end with a word. 
