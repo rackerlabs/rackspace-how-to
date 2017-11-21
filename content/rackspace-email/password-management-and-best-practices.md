@@ -84,16 +84,16 @@ Use the following guidelines to protect your accounts and create strong password
     
     Patterns are the key to a hackers success. People are very predictable and as such, make predictable passwords.
 
-        - Do you repeat words or characters in your password to meet the character length requirement? **fourfour44!!**  or **PasswordPassword** may satisfy a password length requirement but it is easily predicted by a program trying to access your most valuable information.
+      - Do you repeat words or characters in your password to meet the character length requirement? **fourfour44!!**  or **PasswordPassword** may satisfy a password length requirement but it is easily predicted by a program trying to access your most valuable information.
 
-        - Are you reusing passwords for multiple sites, application or accounts? If your social media account is compromised, a hackers is going to try to access any other accounts you have elsewhere. Reusing passwords ensures that they will succeed.
+      - Are you reusing passwords for multiple sites, application or accounts? If your social media account is compromised, a hackers is going to try to access any other accounts you have elsewhere. Reusing passwords ensures that they will succeed.
 
-        - Is your password construction similar every time you change it?
+      - Is your password construction similar every time you change it?
         
-            - Examine the password example **Predictable2017**.  The first letter is capitalized and the password ends in a number. Many people construct their passwords this way which is why a malicious hacking program will always check for it.
-            - You may think you can throw off the hacker with some character substitutions like **Pr3dictab132017**. This is also a predictable pattern that many people use in passwords.
+           - Examine the password example **Predictable2017**.  The first letter is capitalized and the password ends in a number. Many people construct their passwords this way which is why a malicious hacking program will always check for it.
+           - You may think you can throw off the hacker with some character substitutions like **Pr3dictab132017**. This is also a predictable pattern that many people use in passwords.
 
-       - Changing aspects of your password is not really changing your password. It is only a good idea to implement a password change schedule if you truly create a new unique password each time.
+      - Changing aspects of your password is not really changing your password. It is only a good idea to implement a password change schedule if you truly create a new unique password each time.
 
 3. **Password strength**.  
 
@@ -101,16 +101,16 @@ Use the following guidelines to protect your accounts and create strong password
     
     Use the following guidelines to create a strong password:
 
-       - Avoiding patterns is your primary goal when you create a password. The more unique you can make the password, the better.
+      - Avoiding patterns is your primary goal when you create a password. The more unique you can make the password, the better.
 
-       - Do not include public or personal information about yourself or those close to you in the password, including:
+      - Do not include public or personal information about yourself or those close to you in the password, including:
 
-          - Birthdays.
-          - Pet names.
-          - Anniversaries.
-          - Company names, founding dates, addresses, and so on.
+         - Birthdays.
+         - Pet names.
+         - Anniversaries.
+         - Company names, founding dates, addresses, and so on.
 
-       - Create a memorable password by creating a unique password. A unique password provides password strength as well as preserves the user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
+      - Create a memorable password by creating a unique password. A unique password provides password strength as well as preserves the user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
 
-       - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**. In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character,  leave it lower case. Instead of ending the password with a number, end with a word. This password has no trace of a company or a personal detail. 
+      - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**. In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character,  leave it lower case. Instead of ending the password with a number, end with a word. This password has no trace of a company or a personal detail. 
 
