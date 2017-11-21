@@ -5,8 +5,8 @@ title: Password management and best practices
 type: article
 created_date: '2017-10-03'
 created_by: William Loy
-last_modified_date: '2017-10-23'
-last_modified_by: William Loy
+last_modified_date: '2017-11-22'
+last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -78,11 +78,7 @@ Meeting password requirements does not create a password robust enough to stop s
         - No anniversaries.
         - No company names, founding dates, addresses, etc.
 
-    - Create a memorable password by creating a unique password. An overtly unique password will provide password strength as well as preserve user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
+    - Create a memorable password by creating a unique password. An unique password will provide password strength as well as preserve user experience. If a user finds a password too difficult to remember, they can fall into bad habits by creating a weaker password that is easier to remember.
 
-    - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character, I leave it lower case. Instead of ending the password with a number, I end with a word. This password as no trace of my company or personal life. I will remember it because I think a hover car would be fun!
+    - Try using a memorable phrase. For example: **oneDayWew!llAllH4vEhoV6r:Cars**   In this example, instead of substituting letters for similar looking numbers, I substitute random numbers. Instead of capitalizing the first character,  leave it lower case. Instead of ending the password with a number, end with a word. This password has no trace of a company or a personal detail. 
 
-
-
-
-It is no longer a question of if a password can be cracked, but how long it will take to crack it. Many password can be cracked in minutes or hours, but a proper password will take decades or a millennia for a program to crack.
