@@ -1,7 +1,7 @@
 ---
-permalink: locked-exchange-mailbox/
+permalink: troubleshoot-a-locked-exchange-mailbox/
 audit_date: '2017-06-28'
-title: Locked Exchange mailbox
+title: Troubleshoot a Locked Exchange mailbox
 type: article
 created_date: '2017-11-24'
 created_by: William Loy
@@ -36,7 +36,7 @@ Warning: You must gather all devices that may make connections to the locked mai
 Answering yes to any of the above questions could mean that your Exchange mailbox is locked. It could also be time to update your password if you are having trouble remembering it.
 
 
-### What to do if your mailbox is Locked
+### User instructions for mailbox lockouts
 
   1. Gather all of the devices you use to check email.
 
@@ -49,3 +49,20 @@ Answering yes to any of the above questions could mean that your Exchange mailbo
    Note: Your account Administrator can unlock the mailbox immediately.
 
   4. Once you have successfully logged in at apps.rackspace.com, begin connecting to email on each of your devices, imputing your password as you are prompted for it on each device.
+
+
+### Admin instructions for mailbox lockouts
+
+Administrator's must coordinate several steps with the locked out user through the duration of this process. If the process is not coordinated, you may experience reoccurring lockouts. 
+
+  1. Instruct the locked user to gather all devices they use to check their email.
+
+  2. Instruct the locked user to remove the mailbox password from all of the devices, including mobile devices. Do not re-enter the password yet.
+
+  3. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
+  4. In the **Microsoft Exchange** section, click **Mailboxes**.
+  5. Select the domain that contains the mailbox that is locked.
+  6. In the mailbox list, select the name of the mailbox that you want to unlock.
+  7. If the mailbox is locked, you will see an alert stating that the Mailbox is locked.
+
+    <img src="{% asset_path exchange/troubleshoot-a-locked-exchange-mailbox/CP_unlock.png %}" />
