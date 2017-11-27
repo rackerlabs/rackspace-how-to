@@ -53,7 +53,7 @@ Answering yes to any of the above questions could mean that your Exchange mailbo
 
 ### Admin instructions for mailbox lockouts
 
-Administrator's must coordinate several steps with the locked out user through the duration of this process. If the process is not coordinated, you may experience reoccurring lockouts. 
+Administrator's must coordinate several steps with the locked out user through the duration of this process. If the process is not coordinated, you may experience reoccurring lockouts.
 
   1. Instruct the locked user to gather all devices they use to check their email.
 
@@ -66,3 +66,6 @@ Administrator's must coordinate several steps with the locked out user through t
   7. If the mailbox is locked, you will see an alert stating that the Mailbox is locked.
 
     <img src="{% asset_path exchange/troubleshoot-a-locked-exchange-mailbox/CP_unlock.png %}" />
+
+  8. Unlock the mailbox and allow 5 minutes for the unlock to complete.
+  9. Instruct the user to open their email application on each device one at a time, imputing their email address and password when prompted.
