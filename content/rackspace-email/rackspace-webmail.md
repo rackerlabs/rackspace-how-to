@@ -5,18 +5,17 @@ title: Rackspace Webmail overview
 type: article
 created_date: '2012-05-27'
 created_by: Rackspace Support
-last_modified_date: '2017-08-16'
-last_modified_by: Nate Archer
+last_modified_date: '2017-11-26'
+last_modified_by: Paige Warmker
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Rackspace Email allows you to check and manage their email online
-through a Webmail interface. Webmail is a direct connection to your email without the need of additional software. Messages that are sent and received using Webmail will be waiting for you the next time you log into the portal. The Webmail portal provides most of the same functionality a mail client would offer, from sending and receiving email to setting up email signatures and even setting up email forwarding to your personal email accounts.
+Rackspace Email allows you to check and manage your email online through a Webmail interface. Webmail is a direct connection to your email without the need for additional software. Messages that are sent and received using Webmail will be waiting for you the next time you log into the portal. The Webmail portal provides most of the same functionality a mail client would offer, from sending and receiving email to setting up email signatures and even setting up email forwarding to your personal email accounts.
 
 ### Log in to Webmail
 
-To log in into Webmail, go to <https://apps.rackspace.com/>.
+To log in to Webmail, go to <https://apps.rackspace.com/>.
 
 When you log in, Rackspace allows several options:
 
@@ -25,30 +24,28 @@ When you log in, Rackspace allows several options:
 
 ### Contacts
 
-Rackspace Email allows you the ability to manage their contacts through our Webmail interface. Users have the ability add new contacts, import and export old contacts using a **.csv** file, export to various email clients, create groups, and sort through contacts alphabetically. Rackspace also allows you to sync your contacts with your mobile device as well with Rackspace Mobile Sync.
+Rackspace Email provides the ability to manage your contacts through our Webmail interface. You have the ability to add new contacts, import and export old contacts using a **.csv** file, export to various email clients, create groups, and sort through contacts alphabetically. Rackspace also allows you to sync your contacts with your mobile device as well with Rackspace Email Plus.
 
 ### Calendar
 
-Rackspace Email allows you the ability to manage their appointments and meetings through our Webmail interface. Users
-have the ability to share their calendar, create personal calendars, import events and add shared calendars within your domain. Rackspace also allows you to sync your calender events with your mobile device as well with Rackspace Mobile Sync.
+Rackspace Email provides the ability to manage your appointments and meetings through our Webmail interface. You have the ability to share your calendar, create personal calendars, import events and add shared calendars within your domain. Rackspace also allows you to sync your calendar events with your mobile device as well with Rackspace Email Plus.
 
 ### Tasks
 
-Rackspace Email allows users the ability to manage their tasks through our Webmail interface. Users have the ability to create
-new tasks, manage their tasks, and create a task list.
+Rackspace Email provides the ability to manage your tasks through our Webmail interface. You have the ability to create new tasks, manage your tasks, and create a task list.
 
 ### Notes
 
-Rackspace Email provides the ability to create notes. You can sync your Notes with your mobile device as well with Rackspace Mobile Sync.
+Rackspace Email provides the ability to create notes. You can sync your Notes with your mobile device as well with Rackspace Email Plus.
 
 ### Settings
 
-Rackspace Email provides various options for users to manage their email account. While in the Webmail interface, click the menu beside your email address in the top-right corner and select **Settings** to see a list of features and options available for users.
+Rackspace Email provides various options for you to manage your email account. While in the Webmail interface, click the menu beside your email address in the top-right corner and select **Settings** to see a list of features and options available.
 
 #### General Settings: Email options
 
-- **Display Preferences** provides several options for users to display HTML emails, enable shortcuts, changing your viewing pane and change the number of messages displayed in your reading pane.
-- **New Messages** provides the option to play an alert for new the arrival of new messages and the option to choose how often to check for new messages.
+- **Display Preferences** provides several options for you to display HTML emails, enable shortcuts, change your viewing pane and change the number of messages displayed in your reading pane.
+- **New Messages** provides the option to play an alert for the arrival of new messages and the option to choose how often to check for new messages.
 - **Trash Options** provides the option to move deleted email to the trash or immediately purge upon deletion.
 
 <img src="{% asset_path rackspace-email/rackspace-webmail/Webmail.png %}" alt="" />
