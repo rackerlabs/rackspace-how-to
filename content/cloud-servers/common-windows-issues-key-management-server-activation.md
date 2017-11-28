@@ -15,15 +15,15 @@ product_url: cloud-servers
 the operating system shows as unlicensed.
 
 **Cause**: Windows cannot locate the Key Management Server (KMS) after
-changing the time zone of the Cloud Server, so, as a result, your Cloud Server's
+changing the time zone of the cloud server, so, as a result, your server's
 system clock does not sync with the KMS.
 
-**Resolution**: You need to resynch your Cloud Server with the KMS
+**Resolution**: You must resynch your cloud cerver with the KMS
 server:
 
-1. Log in to your Cloud Server as Administrator (Start, All Programs,
-   Accessories, right-click **Command Prompt** and select **Run as
-   Administrator**).
+1. Log in to your cloud server as administrator by clicking 
+   **Start > All Programs > Accessories**. Then, right-click **Command Prompt**,
+   and select **Run as Administrator**.
 
 2. Choose the data center in the following table that corresponds to
    the location of your server, and run the applicable command from the
@@ -57,12 +57,12 @@ server:
     
        slmgr.vbs /ato
 
-5. If step 4 returns an error reading EXACTLY "0xC004F074 The Key 
-   Management Server (KMS) is unavailable", run the following:
+5. If step 4 returns the error ``0xC004F074 The Key 
+   Management Server (KMS) is unavailable``, run the following command:
    
         w32tm /resync
    
-6. If the time on the Cloud Server is drastically different than
+6. If the time on the cloud server is drastically different than
      what is on the KMS the resync will fail.  At this point, you should
      either set the time manually or configure the server to use an NTP
      instance over the internet.
