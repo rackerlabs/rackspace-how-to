@@ -1,32 +1,32 @@
 ---
 permalink: common-windows-issues-key-management-server-activation/
-audit_date:
+audit_date: `2017-12-03`
 title: 'Common Windows Issues: Key Management Server Activation'
 type: article
 created_date: '2011-08-15'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-12-03'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 **Problem**:  Periodic activation requests to the KMS are rejected and
-the operating system is seen as unlicensed.
+the operating system shows as unlicensed.
 
 **Cause**: Windows cannot locate the Key Management Server (KMS) after
-changing the time zone of the Cloud Server.  Now your Cloud Server's
+changing the time zone of the Cloud Server.  As a result, your Cloud Server's
 system clock does not sync with the KMS.
 
-**Resolution**: You will need to resynch your Cloud Server with the KMS
+**Resolution**: You need to resynch your Cloud Server with the KMS
 server:
 
 1. Log in to your Cloud Server as Administrator (Start, All Programs,
-   Accessories, right-click Command Prompt and select Run as
-   Administrator).
+   Accessories, right-click **Command Prompt** and select **Run as
+   Administrator**).
 
 2. Choose the data center in the following table that corresponds to
-   the location of your server and run the applicable command from the
+   the location of your server, and run the applicable command from the
    command prompt.
    
    | Data Center      | Command                                            |
@@ -62,7 +62,7 @@ server:
         w32tm /resync
    
 6. If the time on the Cloud Server is drastically different than
-     what is on the KMS the resync will fail.  At this point you will need to
+     what is on the KMS the resync will fail.  At this point, you should
      either set the time manually or configure the server to use an NTP
      instance over the internet.
      
