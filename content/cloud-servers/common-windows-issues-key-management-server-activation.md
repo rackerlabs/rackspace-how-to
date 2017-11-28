@@ -1,6 +1,6 @@
 ---
 permalink: common-windows-issues-key-management-server-activation/
-audit_date: `2017-12-03`
+audit_date: '2017-12-03'
 title: 'Common Windows Issues: Key Management Server Activation'
 type: article
 created_date: '2011-08-15'
