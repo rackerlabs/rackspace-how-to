@@ -15,7 +15,7 @@ product_url: cloud-servers
 the operating system shows as unlicensed.
 
 **Cause**: Windows cannot locate the Key Management Server (KMS) after
-changing the time zone of the Cloud Server, and, as a result, your Cloud Server's
+changing the time zone of the Cloud Server, so, as a result, your Cloud Server's
 system clock does not sync with the KMS.
 
 **Resolution**: You need to resynch your Cloud Server with the KMS
