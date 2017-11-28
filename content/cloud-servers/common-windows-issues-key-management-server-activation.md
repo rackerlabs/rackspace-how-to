@@ -39,7 +39,8 @@ server:
    | SYD (Sydney)     | `ping winactivate.syd2.servers.rackspacecloud.com` |
    
    **Note**: If there is a reply, move on to step 3.  No reply means that there
-   is an interface, hardware, or routing issue.
+   is an interface, hardware, or routing issue, and we recommend the following article 
+   for help resolving the issue: [Update ServiceNet routes on cloud servers created before June 3, 2013](https://support.rackspace.com/how-to/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013/)
 
 3. Set the KMS manually within the registry.
    
