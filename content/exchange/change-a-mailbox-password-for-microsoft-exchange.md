@@ -44,7 +44,7 @@ If you prefer a video tutorial, please see [Password Resets: Hosted Exchange <im
 
 **Note:** Only administrators have access to the Cloud Office Control Panel.
 
-If you prefer a video tutorial, please see [Password Resets: Hosted Exchange <img src="{% asset_path exchange/change-your-rackspace-email-password/reset_user_password_thumb.png %}" />](https://emailhelp.rackspace.com/l/password-reset-user).
+If you prefer a video tutorial, please see [Password Resets: Hosted Exchange <img src="{% asset_path exchange/change-a-mailbox-password-for-microsoft-exchange/reset_user_password_thumb.png %}" />](https://emailhelp.rackspace.com/l/password-reset-user).
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
 
