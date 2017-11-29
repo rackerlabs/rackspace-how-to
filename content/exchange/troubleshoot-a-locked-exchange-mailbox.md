@@ -1,11 +1,11 @@
 ---
 permalink: troubleshoot-a-locked-exchange-mailbox/
-audit_date: '2017-06-28'
+audit_date:
 title: Troubleshoot a Locked Exchange mailbox
 type: article
 created_date: '2017-11-24'
 created_by: William Loy
-last_modified_date: '2017-11-24'
+last_modified_date: '2017-11-29'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
@@ -23,7 +23,7 @@ This article describes the troubleshooting process for when an Exchange mailbox 
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-Warning: You must gather all devices that may make connections to the locked mailbox to successfully resolve the issue.
+**Warning:** You must gather all devices that may make connections to the locked mailbox to successfully resolve the issue.
 
 ### How to tell if your mailbox is locked
 
@@ -31,9 +31,9 @@ Warning: You must gather all devices that may make connections to the locked mai
 
 - Are you repeatedly being prompted for a password on any of your devices?
 
-- Have you attempted to log into apps.rackspace.com without success?
+- Have you attempted to log into [apps.rackspace.com](apps.rackspace.com) without success?
 
-Answering yes to any of the above questions could mean that your Exchange mailbox is locked. It could also be time to update your password if you are having trouble remembering it.
+Answering yes to any of the above questions could mean that your Exchange mailbox is locked. It could also be time to [update your password](/how-to/change-a-microsoft-exchange-mailbox-password) if you are having trouble remembering the current password.
 
 
 ### User instructions for mailbox lockouts
