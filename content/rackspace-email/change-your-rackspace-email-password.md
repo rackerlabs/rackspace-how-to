@@ -44,7 +44,7 @@ If you prefer a video tutorial, please see [Rackspace Email - Password Resets: W
     - **New Password:** Enter the new password for the mailbox.
     - **Confirm Password:** Enter the new password again.
 
-    **Note:** We recommend that you create a password that you have never used before and that remains unique from all your other passwords. Also, longer passwords provide better security for your account.
+    **Note:** Review [Password Management and Best Practices](/how-to/password-management-and-best-practices) for guidance on password creation.
 
 5. Click **Save**.
 
@@ -53,6 +53,8 @@ If you prefer a video tutorial, please see [Rackspace Email - Password Resets: W
 ### Change a password through Cloud Office Control Panel
 
 If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Admin Control Panel <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/cp_reset_password_thumb.png %}" />](https://emailhelp.rackspace.com/l/password-reset-admin-cp).
+
+Review [Password Management and Best Practices](/how-to/password-management-and-best-practices) before settings passwords for your users.
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 2. In the **Rackspace Email** section, click **Mailboxes**.
