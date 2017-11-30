@@ -100,7 +100,7 @@ The Managed Operations service level supports the following SMTP tool:
 
 ### Active Directory
 
-Active Directory (AD) is not currently supported. Reach out to our support team to evaluate alternative solutions.
+Active Directory (AD) is not currently supported. Reach out to [Rackspace support](https://www.rackspace.com/en-us/support) to evaluate alternative solutions.
 
 
 ### Other packages
