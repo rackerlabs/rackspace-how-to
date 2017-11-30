@@ -20,7 +20,7 @@ their infrastructure.
 
 ### Traditional colocation
 
-In a traditional colocation scenario, the vendor supplies:
+In a traditional colocation, the vendor supplies:
 
 -   Physical space (floor space-cabinets or cages)
 -   Power to the cabinet/cages (conditioned power, battery backup, and
