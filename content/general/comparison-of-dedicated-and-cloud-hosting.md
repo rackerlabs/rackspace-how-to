@@ -1,12 +1,12 @@
 ---
 permalink: comparison-of-dedicated-and-cloud-hosting/
-audit_date:
+audit_date: '2017-12-02'
 title: Comparison of dedicated and cloud hosting
 type: article
 created_date: '2012-02-21'
 created_by: Rackspace Support
-last_modified_date: '2016-06-16'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-12-02'
+last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
 ---
