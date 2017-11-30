@@ -5,8 +5,8 @@ title: Traditional Colocation vs. Rackspace Managed Colocation
 type: article
 created_date: '2011-03-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-18'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2017-11-30'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -18,8 +18,9 @@ colocation often do so to maintain the control of their operating
 systems but still have a need for the physical space in which to house
 their infrastructure.
 
-**Traditional Colocation: The Basics**   In a traditional colocation
-scenario, the vendor supplies:
+### Traditional colocation
+
+In a traditional colocation scenario, the vendor supplies:
 
 -   Physical space (floor space-cabinets or cages)
 -   Power to the cabinet/cages (conditioned power, battery backup, and
@@ -59,7 +60,7 @@ activities in a traditional colocation scenario:
 -   Large capital expenditures with growth of business
 -   Slow implementation times
 
-**Managed Colocation from Rackspace**
+### Managed Colocation: The Rackspace Difference
 
 Because many businesses prefer to maintain a substantial level of
 control regarding their mission-critical apps, but don't want to be
@@ -88,22 +89,35 @@ Managed Colocation from Rackspace supplies:
     proximity to the datacenter but can still access even international
     datacenters
 
-Optional services include management options for storage, Managed
-Backup, Managed Private Cloud, Dedicated Microsoft&reg; Sharepoint and
-Microsoft Exchange Server - Dedicated solutions. Rackspace also offers
-on-demand Managed and Professional Services for customers with unique
-requirements. In a Managed Colocation solution, customer
+Optional services include management options for [Managed Backup](https://www.rackspace.com/vmware),
+[Managed Private Clouds](http://www.rackspace.com/managed_hosting/private_cloud/index.php)
+and [Managed Storage](https://www.rackspace.com/managed-hosting/data-storage).
+
+### Dedicated Support Team
+
+In a Managed Colocation solution, customer
 responsibilities include:
 
 -   Management of the operating systems and applications
 -   Administration of the net devices (firewalls and load balancers)
 -   Monitoring of the applications, operating systems and devices
 
-Customers who choose [Managed
-Colocation](http://www.rackspace.com/managed_hosting/managed_colocation/index.php)
-typically do so because they want to maintain OS control but don't want
-to be bogged down with the day-to-day routine of server management.
-Managed Colocation from Rackspace offers a hosting solution that speaks
-to your desired level of control but creates a much more user-friendly
-experience compared to traditional colocation.
+With Rackspace Managed Colocation, you get a dedicated support team to assist you with your configuration 24x7x365.
 
+-   Your dedicated **Account Manager (AM)** is your main point of
+    contact at Rackspace. The AM knows your configuration and works
+    closely with the support team to address any issues that arise.
+-   Your **Deployment Team** is there for initial deployments as well as
+    configuration changes and space planning. The Deployment Team works
+    closely with the data centers to ensure that your configuration is
+    racked and cabled to your specifications.
+-   The **Network Engineering** team configures your network devices,
+    offers consultation for network changes, and assists with
+    troubleshooting tasks. They act as an extension of your in-house
+    networking team.
+-   Our **Support Specialists** are available to assist with support
+    issues and escalation. They are available 24x7x365 to address
+    technical issues.
+
+Although traditional colocation allows you to maintain a high level of
+control, it can also present a significant level of inconvenience and responsibility. [Rackspace Managed Colocation](https://www.rackspace.com/en-us/managed-hosting/colocation) provides the OS control that you need with the support and expertise that you want.

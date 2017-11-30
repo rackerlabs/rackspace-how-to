@@ -5,10 +5,8 @@ title: Rackspace Managed Colocation
 type: article
 created_date: '2011-03-25'
 created_by: Rackspace Support
-last_modified_date: '2016-06-27'
-last_modified_by: Kelly Holcomb
-product: undefined
-product_url: undefined
+last_modified_date: '2017-11-30'
+last_modified_by: Nate Archer
 ---
 
 [Managed Colocation](https://www.rackspace.com/dedicated-servers/colocation)
