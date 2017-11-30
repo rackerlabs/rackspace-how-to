@@ -5,7 +5,7 @@ title: CDN-enable Amazon S3 buckets and accelerate your website with Rackspace C
 type: article
 created_date: '2015-09-08'
 created_by: Catherine Richardson
-last_modified_date: '2016-06-01'
+last_modified_date: '2016-11-17'
 last_modified_by: Catherine Richardson
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -82,7 +82,9 @@ perform the following actions:
 
    For information about creating a new Rackspace CDN service, see [Create a Rackspace CDN service](/how-to/create-a-rackspace-cdn-service).
 
-2. When you specify the origin, enter the URL of your Amazon S3 bucket as your origin domain. For example, `yourBucket.s3-website-yourBucketRegion.amazonaws.com`. Make sure to chose `http` type instead of `https` type. S3 static sites do not support `https`. 
+2. When you specify the origin, enter the URL of your Amazon S3 bucket as your origin domain. For example, `yourBucket.s3-website-yourBucketRegion.amazonaws.com`. 
+
+   **Note:** Make sure to chose `http` type instead of `https` type. S3 static sites do not support `https`. 
 
 3. Set the **Host Header** type to **Origin**.
 
