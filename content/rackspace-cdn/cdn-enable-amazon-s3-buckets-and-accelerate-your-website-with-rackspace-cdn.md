@@ -75,11 +75,14 @@ across edge servers worldwide. Users receive the data from the edge node
 closest to them. To set up Rackspace CDN for your static website,
 perform the following actions:
 
+**Note:** `yourBucket.s3.amazonaws.com` does not support automatic redirects to index.html.
+
+
 1. After your site is serving from Amazon S3, configure a new Rackspace CDN service.
 
    For information about creating a new Rackspace CDN service, see [Create a Rackspace CDN service](/how-to/create-a-rackspace-cdn-service).
 
-2. When you specify the origin, enter the URL of your Amazon S3 bucket as your origin domain. For example, `yourBucket.s3-website-yourBucketRegion.amazonaws.com`. (Choose http type and not https type, since s3 static site does not support https, also the yourBucket.s3.amazonaws.com does not support automatic redirect to index.html)
+2. When you specify the origin, enter the URL of your Amazon S3 bucket as your origin domain. For example, `yourBucket.s3-website-yourBucketRegion.amazonaws.com`. Make sure to chose `http` type instead of `https` type. S3 static sites do not support `https`. 
 
 3. Set the **Host Header** type to **Origin**.
 
