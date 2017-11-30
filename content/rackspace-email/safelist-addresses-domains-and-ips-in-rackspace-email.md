@@ -28,6 +28,8 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 **Warning:** Safelisting does not prevent a sender from being flagged as spam or from being blocked.
 
+If you would prefer a video tutorial see [Email Help - Blacklisting / Safelisting With Rackspace Email](https://emailhelp.rackspace.com/l/safelist-webmail).
+
 ### Safelist an email address or domain
 
 1. Log into your mailbox at [apps.rackspace.com](https://apps.rackspace.com).
