@@ -1,7 +1,7 @@
 ---
 permalink: traditional-colocation-vs-rackspace-managed-colocation/
-audit_date:
-title: Traditional Colocation vs. Rackspace Managed Colocation
+audit_date: '2017-11-04'
+title: Traditional colocation vs. Rackspace Managed Colocation
 type: article
 created_date: '2011-03-24'
 created_by: Rackspace Support
@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 [Colocation](http://www.rackspace.com/managed_hosting/managed_colocation/index.php)
 typically describes the provisioning of space for IT infrastructure and
-equipment on a service provider's premises. Business who choose
+equipment on a service provider's premises. Businesses that choose
 colocation often do so to maintain the control of their operating
 systems but still have a need for the physical space in which to house
 their infrastructure.
@@ -31,21 +31,19 @@ In a traditional colocation, the vendor supplies:
 -   Fire suppression
 -   Network Connection (some only allow for a set list of providers)
 
-    It should be noted that top tier colocation vendors also have
-options for additional services. (i.e, inventory space, access to
-multiple network providers, remote hand options).   In traditional
-colocation, the customer also has a fair share of the responsibility.
-This includes:
+Top tier colocation vendors also have options for additional services, such as inventory space, access to
+multiple network providers, and remote hand options.   In traditional
+colocation, the customer also has a fair share of the responsibility, including:
 
 -   Procurement of the IT infrastructure, including receiving and
-    installation via hardware reseller or vendor (Cisco, HP, Dell, etc.)
+    installation via hardware reseller or vendor (Cisco, HP, Dell, and so on.)
 -   Procurement of the network connectivity and installation into the
     cabinet or cage
 -   Monitoring of all systems 24x7x365
 -   Supporting, maintenance and replacement of all devices 24x7x365
 -   Planning and scaling the configuration when appropriate
 -   Management of staff and multiple vendors (colocation center,
-    hardware provider, network provider)
+    hardware provider, and network provider)
 
 It is also important to consider the hidden costs and non-operational
 activities in a traditional colocation scenario:
@@ -60,16 +58,16 @@ activities in a traditional colocation scenario:
 -   Large capital expenditures with growth of business
 -   Slow implementation times
 
-### Managed Colocation: The Rackspace Difference
+### Rackspace Managed Colocation
 
 Because many businesses prefer to maintain a substantial level of
 control regarding their mission-critical apps, but don't want to be
 slowed by the complexity of managing a traditional colocation scenario,
 Rackspace offers [Managed
 Colocation](http://www.rackspace.com/managed_hosting/managed_colocation/index.php).
-Managed Colocation offers the best of both worlds: the desired level of
+Managed Colocation offers your the desired level of
 control with the added benefit of a support team to proactively manage
-your config. Rackspace Managed Colocation is a level above traditional
+your configuration. Rackspace Managed Colocation is a level above traditional
 colocation, meaning it offers more support than pure colocation.
 Managed Colocation from Rackspace supplies:
 
@@ -93,7 +91,7 @@ Optional services include management options for [Managed Backup](https://www.ra
 [Managed Private Clouds](http://www.rackspace.com/managed_hosting/private_cloud/index.php)
 and [Managed Storage](https://www.rackspace.com/managed-hosting/data-storage).
 
-### Dedicated Support Team
+#### Dedicated Support Team
 
 In a Managed Colocation solution, customer
 responsibilities include:
