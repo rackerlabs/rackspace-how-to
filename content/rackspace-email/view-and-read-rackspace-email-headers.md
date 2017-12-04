@@ -42,29 +42,27 @@ You have successfully viewed the message headers in Rackspace Email webmail.
 
 The following header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
 
-```
-Delivered-To:	boss@yourdomainexample.com<br>
-Return-Path:	<spoofer@yourdomainexample.com><br>
-Delivered-To:	boss@yourdomainexample.com<br>
-Received:	from sapps.net ([000.00.00.0]) by sapps.net (Dovecot) with LMTP id asdkasdfiwlefj for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:41 -0400
-Received:	from proxy.net ([000.00.00.0]) by sapps.net; Tue, 26 Sep 2017 14:52:41 -0400
-Received:	from smtp (000.00.00.0)  by apps.net; Tue, 26 Sep 2017 14:52:41 -0400
-Return-Path:	<spoofer@yourdomainexample.com>
-X-Originating-Ip:	[00.000.000.00]
-Received:	from [000.00.00.0] ([000.00.00.0] server.com) by apps.net; Tue, 26 Sep 2017 14:52:40 -0400
-Received:	from server.com (localhost [000.00.00.0]) by server.com for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
-Received:	from apps.net (sapps.net [000.00.00.0]) by server.com (SMTP Server)  for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
-X-Sender-Id:	spoofer@yourdomainexample.com
-Received:	from  (apps.net [000.00.00.0]) by 0.0.0.0:00; Tue, 26 Sep 2017 14:52:40 -0400
-Received:	from yourdomainexample.com (localhost.localdomain [000.00.00.0]) by apps.net (Postfix) with for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
-Received:	by apps.rackspace.com (Authenticated sender: spoofer@yourdomainexample.com, from: assistant@yourdomainexample.com) with HTTP; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
-Date:	Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
-Subject:	Send $$$
-From:	"Assistant" <assistant@yourdomainexample.com>
-To:	boss@yourdomainexample.com
-Reply-To:	spoofer@scam.com
-Message-ID:	<12345867.91012345@apps.rackspace.com>
-```
+    Delivered-To:	boss@yourdomainexample.com<br>
+    Return-Path:	<spoofer@yourdomainexample.com><br>
+    Delivered-To:	boss@yourdomainexample.com<br>
+    Received:	from sapps.net ([000.00.00.0]) by sapps.net (Dovecot) with LMTP id asdkasdfiwlefj for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:41 -0400
+    Received:	from proxy.net ([000.00.00.0]) by sapps.net; Tue, 26 Sep 2017 14:52:41 -0400
+    Received:	from smtp (000.00.00.0)  by apps.net; Tue, 26 Sep 2017 14:52:41 -0400
+    Return-Path:	<spoofer@yourdomainexample.com>
+    X-Originating-Ip:	[00.000.000.00]
+    Received:	from [000.00.00.0] ([000.00.00.0] server.com) by apps.net; Tue, 26 Sep 2017 14:52:40 -0400
+    Received:	from server.com (localhost [000.00.00.0]) by server.com for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+    Received:	from apps.net (sapps.net [000.00.00.0]) by server.com (SMTP Server)  for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+    X-Sender-Id:	spoofer@yourdomainexample.com
+    Received:	from  (apps.net [000.00.00.0]) by 0.0.0.0:00; Tue, 26 Sep 2017 14:52:40 -0400
+    Received:	from yourdomainexample.com (localhost.localdomain [000.00.00.0]) by apps.net (Postfix) with for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+    Received:	by apps.rackspace.com (Authenticated sender: spoofer@yourdomainexample.com, from: assistant@yourdomainexample.com) with HTTP; Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+    Date:	Tue, 26 Sep 2017 14:52:40 -0400 (EDT)
+    Subject:	Send $$$
+    From:	"Assistant" <assistant@yourdomainexample.com>
+    To:	boss@yourdomainexample.com
+    Reply-To:	spoofer@scam.com
+    Message-ID:	<12345867.91012345@apps.rackspace.com>
 
 - **From:** Displays the message sender. Spammers can easily fake sender addresses. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
 
