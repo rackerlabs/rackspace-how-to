@@ -40,7 +40,7 @@ You have successfully viewed the message headers in Rackspace Email webmail.
 
 ### Understanding email headers
 
-The following header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
+The following header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, see [Email spoofing explained](/how-to/email-spoofing-explained) for more information.
 
     Delivered-To:	boss@yourdomainexample.com<br>
     Return-Path:	<spoofer@yourdomainexample.com><br>
