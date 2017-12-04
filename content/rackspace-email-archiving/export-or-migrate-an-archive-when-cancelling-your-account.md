@@ -11,7 +11,10 @@ product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-I am cancelling my cloud office mail services for a new vendor – What should I do with my email archive?
+Before you cancel a Cloud Office account, you should plan how you will preserve your
+archived email data. Archives typically export small numbers of archived items rather
+than the entire archive. Therefore, you must plan before exporting an archive and set
+aside an appropriate amount of time for completion.
 
 ### Prerequisites
 
@@ -20,13 +23,15 @@ I am cancelling my cloud office mail services for a new vendor – What should I
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
+### Export options avaliable 
+
 When cancelling services with Cloud Office the following options are available for preserving your archive after account cancellation.
 
 |Archive options |Time Required | Cost | Technical Difficulty|
 |---|---|---|---|
-|Transfer to Sonian | No time required| No transfer cost | No technical work |
-|Self-Export the Archive| Days or weeks | No cost| Difficult to complete|
-|Bulk Archive Export Request | Weeks | Priced per GB exported | Moderate technical work after receiving the export|
+| Transfer to Sonian | No time required | No transfer cost | No technical work |
+| Self-Export the Archive | Days or weeks | No cost | Difficult to complete|
+| Bulk Archive Export Request | Weeks | Priced per GB exported | Moderate technical work after receiving the export |
 
 ### Take your archive directly to Sonian (recommended)
 
