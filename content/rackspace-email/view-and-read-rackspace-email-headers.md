@@ -1,6 +1,6 @@
 ---
 permalink: view-and-read-rackspace-email-headers/
-audit_date:
+audit_date: '2017-12-04'
 title: View and read Rackspace Email headers
 type: article
 created_date: '2017-09-26'
@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article explains how to view message headers in Rackspace Email webmail.
+This article describes how to view message headers in Rackspace Email webmail.
 
 ### Prerequisites
 
@@ -22,17 +22,17 @@ This article explains how to view message headers in Rackspace Email webmail.
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-### Viewing headers in Rackspace Email
+### View headers in Rackspace Email
 
-1. Log into your mailbox at [apps.rackspace.com](apps.rackspace.com).
+1. Log in to your mailbox at [apps.rackspace.com](apps.rackspace.com).
 
-2. Select the message that you would like to view the headers for.
+2. Select the message for which you want to view the headers.
 
-3. Select **More** dropdown from the tool bar about the message preview pane and select **View Full Header**.
+3. In the message preview pane tool bar, click **More**, and then select **View Full Header**.
 
     <img src="{% asset_path rackspace-email/view-and-read-rackspace-email-headers/view_full_header.png %}" />
 
-4. A box will appears titled **Full Header** containing the full contents of the message header.
+4. The **Full Header** box displays with the full contents of the message header.
 
     <img src="{% asset_path rackspace-email/view-and-read-rackspace-email-headers/full_header.png %}" />
 
@@ -40,10 +40,10 @@ You have successfully viewed the message headers in Rackspace Email webmail.
 
 ### Understanding email headers
 
+The following header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
 
-Example message header:
-
-```Delivered-To:	boss@yourdomainexample.com<br>
+```
+Delivered-To:	boss@yourdomainexample.com<br>
 Return-Path:	<spoofer@yourdomainexample.com><br>
 Delivered-To:	boss@yourdomainexample.com<br>
 Received:	from sapps.net ([000.00.00.0]) by sapps.net (Dovecot) with LMTP id asdkasdfiwlefj for <boss@yourdomainexample.com>; Tue, 26 Sep 2017 14:52:41 -0400
@@ -65,26 +65,24 @@ To:	boss@yourdomainexample.com
 Reply-To:	spoofer@scam.com
 Message-ID:	<12345867.91012345@apps.rackspace.com>
 ```
-This header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, please see [Email spoofing explained](/how-to/email-spoofing-explained) for further instruction.
 
-- **From:** This displays who the message was sent from. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+- **From:** Displays the message sender. Spammers can easily fake sender addresses. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
 
-- **Subject:** This is the topic of the message as indicated by the sender.
+- **Subject:** The topic of the message as indicated by the sender.
 
-- **Date:**  Indicates the date and time the email message was composed.
+- **Date:** The date and time when the email message was composed.
 
-- **To:** The "To:" headers of a message with indicate the addresses listed in the "To:" and "CC:" fields. Headers will not show any addresses that were included in the "BCC:" (Blind Carbon Copy) field, as these addresses were intended to remain private.
+- **To:** Displays the addresses listed in the **To:** and **CC:** fields. Headers do not show any addresses that were included in the **BCC:** field, as these addresses were intended to remain private.
 
-- **Received:** Received will appear many times in a message header. This displays a sequential list of computer and servers that received this message, the time they received this message, and the final   destination of the message. **Received** hops should be read from bottom to top, as the first hop is at the bottom of the header.
+- **Received:** Displays a sequential list of computer and servers that received this message, the time they received this message, and the final destination of the message. **Received** appear many times in a message header and should be read from bottom to top, as the first recipient is at the bottom of the header.
 
-- **Reply-To:** The email address listing in the "Reply-to:" header will determine which email address is auto-populated when you click the reply button to reply to an email in your email client. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+- **Reply-To:** Determines which email address is auto-populated when you click the reply button to reply to an email in your email client. Spammers can easily fake reply-to addresses. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
 
-- **Return-Path:** Like the **Reply-To:** address, this is where return mail will be sent. This is easily faked and is unreliable. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+- **Return-Path:** Like the **Reply-To:** address, this is where return mail is sent. Spammers can easily fake a return path. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
 
 - **Message-ID** A unique identifier assigned to a message. The **Message-ID** is useful for diagnosing a duplicate email issue. If you compare the **Message-ID** for multiple emails, and the IDs match, you know those messages are duplicates.
 
-- **X-Originating-Ip:** This is the IP address of the computer that sent the message. While this is slightly more difficult to fake, it is still possible. Typically it is the more reliable information about where the message actually came from. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
-
+- **X-Originating-Ip:** The IP address of the computer that sent the message. While this is slightly more difficult to fake, it is still possible. The originating IP address is typically the most reliable information about where the message actually came from. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
 
 ### References
 
