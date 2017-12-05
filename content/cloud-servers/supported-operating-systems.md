@@ -30,7 +30,5 @@ We support the most current versions of the following OSs:
 -   Scientific Linux
 -   Ubuntu
 -   Vyatta
--   Windows Server 2008
--   Windows 2012
-
-
+-   Windows Server 2008 R2
+-   Windows Server 2012 R2
