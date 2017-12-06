@@ -24,7 +24,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### Export options avaliable 
 
-When cancelling services with Cloud Office the following options are available for preserving your archive after account cancellation.
+When cancelling services with Cloud Office, the following options are available for preserving your archive after account cancellation.
 
 |Archive options |Time Required | Cost | Technical Difficulty |
 |---|---|---|---|
@@ -44,7 +44,7 @@ To move archiving support to Sonian directly, simply click [Transfer to Sonain](
 
 **Warning:** If you reach your cancellation date before completing the archive export, the export will be cancelled and you will be unable to retrieve the rest of your archive data.
 
-If you want to export your own archive considerations the following before deciding to export an archive.
+If you want to export your own archive considerations, the following before deciding to export an archive.
 
 - Complete your archive export before setting a cancellation date for your Cloud Office account.
 - Archive exports can take an extended period of time to complete. Be prepared for a completion time of several weeks to a few months.
