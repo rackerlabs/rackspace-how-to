@@ -24,7 +24,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Change your password through the User Control Panel
 
-If you prefer a video tutorial, please see [Password Resets: Hosted Exchange <img src="{% asset_path exchange/change-a-mailbox-password-for-microsoft-exchange/reset_user_password_thumb.png %}" />](https://emailhelp.rackspace.com/l/password-reset-user).
+If you prefer a video tutorial, see [Password Resets: Hosted Exchange](https://emailhelp.rackspace.com/l/password-reset-user).
 
 1. Log in to the [User Control Panel](https://cp.rackspace.com/usercp/Login) with your email address and current password.
 
