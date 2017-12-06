@@ -38,9 +38,9 @@ your business.
   </tr>
   <tr>
     <td><strong>Monitoring</strong></td>
-    <td>Rackspace Monitoring is included by default, with ping alarms automatically set to create tickets forRackspace admins.</td>
-    <td>Rackspace Monitoring is included by default. Checks are created, but alarms are optional.  Alarms can be set notify your account and to automatically create tickets for Rackspace admins. </td>
-    <td>Rackspace Monitoring included by default. Checks are created if the optional Rackspace Monitoring Agent is installed on your cloud server, but alarms are optional. Alarms can notify your account, but cannot automatically create tickets for Rackspace admins. </td>
+    <td>Rackspace Monitoring is included by default, with ping alarms automatically set to create tickets for Rackspace admins.</td>
+    <td>Rackspace Monitoring is included by default. Checks are created, but alarms are optional.  Alarms can be set to notify your account and to automatically create tickets for Rackspace admins. </td>
+    <td>Rackspace Monitoring is included by default. Checks are created if the optional Rackspace Monitoring Agent is installed on your cloud server, but alarms are optional. Alarms can notify your account but cannot automatically create tickets for Rackspace admins. </td>
   </tr>
   <tr>
     <td><strong>Backups</strong></td>
