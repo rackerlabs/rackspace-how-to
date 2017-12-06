@@ -34,7 +34,7 @@ When cancelling services with Cloud Office, the following options are available 
 
 ### Migrate your archive using Sonian (recommended)
 
-Archiving services are provided by Rackspace’s partner, Sonian Inc. Their cloud email archiving solution is compatible with all of leading email service providers such as Office 365, Gmail, and Exchange.
+Archiving services are provided by Rackspace’s partner, Sonian Inc. Sonian's cloud email archiving solution is compatible with all of leading email service providers such as Office 365, Gmail, and Exchange.
 
 This option requires no additional work. You maintain uninterrupted access to all archive data and attachments.
 
