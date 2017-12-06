@@ -1,7 +1,7 @@
 ---
-permalink: export-or-migrate-an-archive-when-cancelling-your-account/
+permalink: export-an-archive-when-cancelling-your-account/
 audit_date: '2017-10-19'
-title: Export or migrate an archive before cancelling a Cloud Office account
+title: Export an archive before cancelling a Cloud Office account
 type: article
 created_date: '2017-10-17'
 created_by: William Loy
