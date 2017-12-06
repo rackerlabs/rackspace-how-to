@@ -44,7 +44,7 @@ your business.
   <tr>
     <td><strong>Backups</strong></td>
     <td>Managed Backup is an optional service that captures file-level server images. There is a backup limitation of 1.5 TB per server unless you are using the optional High Capacity Backup service. <br><br>Database and Exchange Backup agents are available for an additional charge. Service extends to database flat file dumps and maintenance plans.</td>
-    <td>The file-level Cloud Backup service is available to Managed Operations customers for the price of storage on Cloud Files and any bandwidth used if backup data is sent between regions.<br><br>Snapshots are an alternative backup approach at the system level. Daily snapshot scheduling is not enabled by default but can be manually configured. Customers should perform database backups before creating an image.</td>
+    <td>The file-level Cloud Backup service is available to Managed Operations customers for the price of storage on Cloud Files and any bandwidth used if backup data is sent between regions.<br><br>Cloud Server snapshot images are an alternative approach at the system level. Customers should perform database backups before creating an image.<br><br>Daily snapshot scheduling is not enabled by default but can be manually configured. Customers should perform database backups before creating an image.</td>
     <td>Our file-level Cloud Backup service is available to Cloud Servers for the price of storage on Cloud Files and any bandwidth used if backup data is sent between regions.<br><br>Cloud Server snapshot images are an alternative approach at the system level. Customers should perform database backups before creating an image.<br><br>Daily snapshot scheduling is not enabled by default and can be manually configured when the server is created. Server snapshot images are stored on Cloud Files.</td>
   </tr>
   <tr>
@@ -54,9 +54,9 @@ your business.
     <td>Outgoing bandwidth is not included unless your solution includes RackConnect. If the server is set up with RackConnect, the cloud servers can consume any available bandwidth included in the dedicated configuration.<br><br>If the server is not set up with RackConnect, you are charged only for outgoing bandwidth.</td>
   </tr>
   <tr>
-    <td><strong>Operating system avilability</strong></td>
-    <td>Red Hat Enterprise Linux<br>CentOS<br>Windows Server</td>
-    <td> Please see <a href="/how-to/supported-operating-systems/">Supported Operating Systems</a> on cloud server</td>
+    <td><strong>Operating system availability</strong></td>
+    <td>Red Hat Enterprise Linux<br>CentOS<br>Ubuntu<br>Windows Server (from 2008 R2 to 2016)</td>
+    <td> Please see the following two links for details: <a href="/how-to/cloud-servers-with-managed-operations-support-for-linux">Cloud Servers with Managed Operations support for Linux</a> and <a href="/how-to/cloud-servers-with-managed-operations-support-for-windows">Cloud Servers with Managed Operations support for Windows</a></td>
     <td>Please see the following two links for details: <a href="/how-to/cloud-servers-with-managed-operations-support-for-linux">Cloud Servers with Managed Operations support for Linux</a> and <a href="/how-to/cloud-servers-with-managed-operations-support-for-windows">Cloud Servers with Managed Operations support for Windows</a></td>
   </tr>
   <tr>
