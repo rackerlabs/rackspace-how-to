@@ -54,7 +54,7 @@ If you prefer a video tutorial, please see [Rackspace Email - Password Resets: W
 
 If you prefer a video tutorial, please see [Rackspace Email - Password Resets: Admin Control Panel <img src="{% asset_path rackspace-email/change-your-rackspace-email-password/cp_reset_password_thumb.png %}" />](https://emailhelp.rackspace.com/l/password-reset-admin-cp).
 
-Review [Password Management and Best Practices](/how-to/password-management-and-best-practices) before settings passwords for your users.
+Review [Password Management and Best Practices](/how-to/password-management-and-best-practices) before setting passwords for your users.
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 2. In the **Rackspace Email** section, click **Mailboxes**.
