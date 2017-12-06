@@ -20,37 +20,38 @@ aside an appropriate amount of time for completion.
 
 - **Applies to:** Administrator
 
-
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 ### Export options avaliable 
 
 When cancelling services with Cloud Office the following options are available for preserving your archive after account cancellation.
 
-|Archive options |Time Required | Cost | Technical Difficulty|
+|Archive options |Time Required | Cost | Technical Difficulty |
 |---|---|---|---|
 | Transfer to Sonian | No time required | No transfer cost | No technical work |
-| Self-Export the Archive | Days or weeks | No cost | Difficult to complete|
-| Bulk Archive Export Request | Weeks | Priced per GB exported | Moderate technical work after receiving the export |
+| Self export the archive | Days or weeks | No cost | Difficult to complete |
+| Bulk archive export request | Weeks | Priced per GB exported | Moderate technical work after receiving the export |
 
-### Take your archive directly to Sonian (recommended)
+### Transfer your archive using Sonian (recommended)
 
-The archiving service you currently use with Cloud Office is provided by Rackspace’s trusted partner, Sonian Inc. Their cloud email archiving solution is compatible with all of the leading email service providers (Office 365, Gmail, Exchange, etc.) and that means you can move it to your new provider without worry or hassle, keeping the data where it is.
+Archiving services are provided by Rackspace’s partner, Sonian Inc. Their cloud email archiving solution is compatible with all of leading email service providers such as Office 365, Gmail, and Exchange.
 
-Sonian is standing by to take over service and maintenance of your archive, and this option requires no work on your part. No exports are necessary, and you can maintain uninterrupted access to all data and attachments.
+This option requires no additional work. You maintain uninterrupted access to all archive data and attachments.
 
 To move archiving support to Sonian directly, simply click [Transfer to Sonain](https://www.sonian.com/rackspacearchive), complete the short form on the page that follows, and Sonian will contact you to ensure a seamless transition of your existing archive to your new mail service.
 
-### Export an archive
+### Export you own archive
 
 **Warning:** If you reach your cancellation date before completing the archive export, the export will be cancelled and you will be unable to retrieve the rest of your archive data.
 
-Considerations before deciding to export an archive.
+If you want to export your own archive considerations the following before deciding to export an archive.
 
 - Complete your archive export before setting a cancellation date for your Cloud Office account.
 - Archive exports can take an extended period of time to complete. Be prepared for a completion time of several weeks to a few months.
 - Decide whether to export in a **PST** or an **EML** format. Although **PST** is a more well-known format, exporting in **EML** is easier to search, faster to produce, and cheaper.
 - In most cases, more data means a longer and more expensive export if you request a bulk export from Support. If you want to export specific items, such as messages from a particular sender, or messages delivered within a specific time frame, exporting search results is a more efficient option. For information about how to export search results, see [Export archive search results in Cloud Office](/how-to/export-archive-search-results-in-cloud-office).
+
+**Warning:** If you reach your cancellation date before completing the archive export, the export will be cancelled and you will be unable retrieve the rest of your archive data.
 
 You can use the following methods to export your data from your Rackspace Archiving account:
 
@@ -85,4 +86,4 @@ The pricing for a bulk export is a one-time fee and varies by amount of data as 
 |PST| $9 or &#65505;6 per GB|
 
 
-**Note:** Support cannot to provide a quote for the price of requested bulk exports. This is because the total size of the export cannot be determined until it is completed and fully exported. The archive size displayed in your archive portal is the size of your article in compressed form. After your archive is decompressed, it is larger than the size displayed in the portal. The size displayed in the portal also doesn’t include the size of attachments, which could increase the total size after decompression.
+**Note:** Support cannot provide a quote for the price of requested bulk exports. This is because the total size of the export cannot be determined until it is completed and fully exported. The archive size displayed in your archive portal is the size of your article in compressed form. After your archive is decompressed, it is larger than the size displayed in the portal. The size displayed in the portal also doesn’t include the size of attachments, which could increase the total size after decompression.
