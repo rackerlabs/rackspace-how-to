@@ -65,7 +65,7 @@ Administrator's must coordinate several steps with the locked out user through t
   6. In the mailbox list, select the name of the mailbox that you want to unlock.
   7. If the mailbox is locked, you will see an alert stating that the Mailbox is locked.
 
-  <img src="{% asset_path exchange/troubleshoot-a-locked-exchange-mailbox/CP_unlock.png %}" />
+      <img src="{% asset_path exchange/troubleshoot-a-locked-exchange-mailbox/CP_unlock.png %}" />
 
   8. Unlock the mailbox and allow 5 minutes for the unlock to complete.
   9. Instruct the user to open their email application on each device one at a time, imputing their email address and password when prompted.
