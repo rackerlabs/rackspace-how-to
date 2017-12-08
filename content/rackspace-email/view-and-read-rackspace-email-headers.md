@@ -40,7 +40,7 @@ You have successfully viewed the message headers in Rackspace Email webmail.
 
 ### Understanding email headers
 
-The following header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, see [Email spoofing explained](/how-to/email-spoofing-explained) for more information.
+The following header is an example of a **spoofed** message. If you suspect that you have received a spoofing email, see [Email spoofing explained](/how-to/email-spoofing-best-practices) for more information.
 
     Delivered-To:	boss@yourdomainexample.com<br>
     Return-Path:	<spoofer@yourdomainexample.com><br>
@@ -64,18 +64,18 @@ The following header is an example of a **spoofed** message. If you suspect that
     Reply-To:	spoofer@scam.com
     Message-ID:	<12345867.91012345@apps.rackspace.com>
 
-- **From:** Displays the message sender. Spammers can easily fake sender addresses. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+- **From:** Displays the message sender. Spammers can easily fake sender addresses. See [Email spoofing explained](/how-to/email-spoofing-best-practices) for guidance on detecting fraud email.
 - **Subject:** The topic of the message as indicated by the sender.
 - **Date:** The date and time when the email message was composed.
 - **To:** Displays the addresses listed in the **To:** and **CC:** fields. Headers do not show any addresses that were included in the **BCC:** field, as these addresses were intended to remain private.
 - **Received:** Displays a sequential list of computer and servers that received this message, the time they received this message, and the final destination of the message. **Received** appear many times in a message header and should be read from bottom to top, as the first recipient is at the bottom of the header.
-- **Reply-To:** Determines which email address is auto-populated when you click the reply button to reply to an email in your email client. Spammers can easily fake reply-to addresses. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
-- **Return-Path:** Like the **Reply-To:** address, this is where return mail is sent. Spammers can easily fake a return path. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+- **Reply-To:** Determines which email address is auto-populated when you click the reply button to reply to an email in your email client. Spammers can easily fake reply-to addresses. See [Email spoofing explained](/how-to/email-spoofing-best-practices) for guidance on detecting fraud email.
+- **Return-Path:** Like the **Reply-To:** address, this is where return mail is sent. Spammers can easily fake a return path. See [Email spoofing explained](/how-to/email-spoofing-best-practices) for guidance on detecting fraud email.
 - **Message-ID** A unique identifier assigned to a message. The **Message-ID** is useful for diagnosing a duplicate email issue. If you compare the **Message-ID** for multiple emails, and the IDs match, you know those messages are duplicates.
-- **X-Originating-Ip:** The IP address of the computer that sent the message. While this is slightly more difficult to fake, it is still possible. The originating IP address is typically the most reliable information about where the message actually came from. See [Email spoofing explained](/how-to/email-spoofing-explained) for guidance on detecting fraud email.
+- **X-Originating-Ip:** The IP address of the computer that sent the message. While this is slightly more difficult to fake, it is still possible. The originating IP address is typically the most reliable information about where the message actually came from. See [Email spoofing explained](/how-to/email-spoofing-best-practices) for guidance on detecting fraud email.
 
 ### References
 
-[Email spoofing explained](/how-to/email-spoofing-explained)
+[Email spoofing explained](/how-to/email-spoofing-best-practices)
 
 [Cloud Office support terminology](/how-to/cloud-office-support-terminology)
