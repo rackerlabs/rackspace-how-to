@@ -1,12 +1,12 @@
 ---
 permalink: configuring-interface-based-firewall-on-the-vyatta-network-appliance/
 audit_date:
-title: Configuring and interface-based firewall on the Vyatta network appliance
+title: Configuring an interface-based firewall on the Vyatta network appliance
 type: article
 created_date: '2013-03-26'
 created_by: Sameer Satyam
-last_modified_date: '2015-04-16'
-last_modified_by: Nate Archer
+last_modified_date: '2017-12-11'
+last_modified_by: Stephanie Fillmon
 product: Cloud Networks
 product_url: cloud-networks
 ---
