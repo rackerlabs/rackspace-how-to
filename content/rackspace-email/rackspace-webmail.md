@@ -13,7 +13,7 @@ product_url: rackspace-email
 
 With Rackspace Email, you can check and manage your email online through a webmail interface. Webmail provides direct access to your email without the need for additional software. Messages that are sent and received using webmail wait on the portal until the next time you log in. The webmail portal provides most of the same functionality that a mail client offers, including sending and receiving email, signatures, and email forwarding.
 
-This article provides and overview of the available features in the Rackspace Email webmail interface.
+This article provides an overview of the available features in the Rackspace Email webmail interface.
 
 ### Log in to webmail
 
@@ -21,7 +21,7 @@ To log in to webmail, go to <https://apps.rackspace.com/>.
 
 When you log in, Rackspace provides the following options:
 
-- **Remember this info** - Select teh checkbox to allow Rackspace to interact with your browser to remember your login information
+- **Remember this info** - Select the checkbox to allow Rackspace to interact with your browser to remember your login information.
 - **Use SSL** - SSL stands for Secure Socket Layer, which means when you log in, your data is encrypted. Select the checkbox to enable SSL.
 
 ### Contacts
@@ -30,11 +30,11 @@ Rackspace Email provides the ability to manage your contacts through our webmail
 
 ### Calendar
 
-Rackspace Email enables you to manage your appointments and meetings through our webmail interface. You can share your calendar, create personal calendars, import events and add shared calendars within your domain. You can also sync your calendar events with your mobile device as well with Rackspace Email Plus. For more information about Rackspace Email Plus, see [Rackspace Email Plus featuring Cloud Drive](https://www.rackspace.com/en-us/email- hosting/webmail/cloud-drive).
+Rackspace Email enables you to manage your appointments and meetings through our webmail interface. You can share your calendar, create personal calendars, import events, and add shared calendars within your domain. You can also sync your calendar events with your mobile device, as well with Rackspace Email Plus. For more information about Rackspace Email Plus, see [Rackspace Email Plus featuring Cloud Drive](https://www.rackspace.com/en-us/email- hosting/webmail/cloud-drive).
 
 ### Tasks
 
-Rackspace Email provides the ability to create and manage tasks and create task lists through our Webmail interface. 
+Rackspace Email provides the ability to create and manage tasks and to create task lists through our Webmail interface. 
 
 ### Notes
 
@@ -46,7 +46,7 @@ Rackspace Email provides various options for you to manage your email account. W
 
 #### General Settings: 
 
-In the General Settings section, you can manage settings for email options, your calendar, and your preferred language and date and time settings.
+In the General Settings section, you can manage settings for email options, your calendar, your preferred language, and date and time settings.
 
 <img src="{% asset_path rackspace-email/rackspace-webmail/Webmail.png %}" alt="" />
 
@@ -82,7 +82,7 @@ In the **Composing Email** section, you can manage settings for composing, ident
 
 ##### Signatures
 
-- **Add New Signature** adds a new signature and assign it to your outgoing email and also to specific identities. To learn more, see [Add a Rackspace Email signature](/how-to/adding-a-signature-to-rackspace-email).
+- **Add New Signature** adds a new signature and assigns it to your outgoing email and also to specific identities. To learn more, see [Add a Rackspace Email signature](/how-to/adding-a-signature-to-rackspace-email).
 
 #### Incoming Email
 
@@ -96,7 +96,7 @@ In the **Incoming Email** section, you can manage settings for auto-reply, forwa
 
 #### Spam Settings
 
-In the Spam Settings section, you can manage settings for spam preferences, and safelists and blacklists.
+In the Spam Settings section, you can manage settings for spam preferences, safelists, and blacklists.
 
 <img src="{% asset_path rackspace-email/rackspace-webmail/Webmail4.png %}" alt="" />
 
