@@ -5,7 +5,7 @@ title: Block mailbox access
 type: article
 created_date: '2017-09-13'
 created_by: William Loy
-last_modified_date: '2017-09-13'
+last_modified_date: '2017-12-13'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -36,11 +36,13 @@ Blocking access to a mailbox prevents users from logging into that mailbox. You 
 3. If you have multiple domains, select the domain for the mailbox you intend to block access.
 4. You will see a list of your mailboxes. In the far right column **Action**, click **Block Access** to block access to the corresponding mailbox in that row.
 
-    <img src="{% asset_path rackspace-email/block-mailbox-access/list_block_access.png %}" />
+   <img src="{% asset_path rackspace-email/block-mailbox-access/list_block_access.png %}" />
 
-    **Note:** A blocked mailbox will still receive mail and forwarding rules will still apply.
+5. A message will appear confirming that you wish to block access. Read the message and click **YES, BLOCK ACCESS**.
 
-5. The mailbox will be greyed out in the mailbox list. You have now blocked users from accessing that mailbox.
+   <img src="{% asset_path rackspace-email/block-mailbox-access/block_pop_up.png %}" />
+
+6. The mailbox will be greyed out in the mailbox list. You have now blocked users from accessing that mailbox.
 
 
 ### Restore mailbox access
@@ -55,6 +57,8 @@ Blocking access to a mailbox prevents users from logging into that mailbox. You 
 
     <img src="{% asset_path rackspace-email/block-mailbox-access/restore_access.png %}" />
 
-    **Note:** Restoring mailbox access will allow users to access this mailbox.
+5. A message will appear confirming that you wish to restore access. Read the message and click **YES, RESTORE ACCESS**.
+
+    <img src="{% asset_path rackspace-email/block-mailbox-access/restore_pop_up.png %}" />
 
 5. The mailbox will no longer be greyed out in the mailbox list. Users can now access that mailbox.
