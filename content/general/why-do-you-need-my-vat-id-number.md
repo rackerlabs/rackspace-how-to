@@ -1,12 +1,12 @@
 ---
 permalink: why-do-you-need-my-vat-id-number/
-audit_date:
+audit_date: '2017-12-20'
 title: Reclaim VAT
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-06-27'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2017-12-20'
+last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
 ---
