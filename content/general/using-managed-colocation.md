@@ -1,11 +1,11 @@
 ---
 permalink: using-managed-colocation/
-audit_date:'2017-12-11'
+audit_date:'2017-12-15'
 title: Using Managed Colocation
 type: article
 created_date: '2011-03-25'
 created_by: Rackspace Support
-last_modified_date: '2017-12-11'
+last_modified_date: '2017-12-15'
 last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
