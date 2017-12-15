@@ -57,5 +57,12 @@ To view a more detailed invoice that shows an itemized, per-service, per-device 
 
 If you are unable to find the information that you need in the Cloud Control Panel, or if you need more detailed billing and payment information than what is available on these pages, contact the Billing Support team for any billing questions. The team is available Monday through Friday from 8 a.m. to 5 p.m. CST, toll-free at 877 934 0410 or internationally at 1 210 581 0410. You can reach the Cloud Accounts Receivable team toll-free at 800 480 2716 or internationally at 1 210 312 4000.
 
+
+### Reclaim VAT
+
+If you're a VAT-registered business or organization, in most cases you can reclaim the value-added tax (VAT) that you pay when you buy goods and services for your business. To reclaim this money, you must have records to support your claim. By collecting your VAT ID number, Rackspace can correctly prepare an invoice for your records.
+
+If you're not a VAT-registered business or organization, you can't reclaim the VAT that you pay when you buy goods and services.
+
 ### Next step
 [Viewing and editing user information for your account ](/how-to/viewing-and-editing-user-information-for-your-account)
