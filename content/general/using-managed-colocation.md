@@ -1,6 +1,6 @@
 ---
 permalink: using-managed-colocation/
-audit_date:'2017-12-15'
+audit_date: '2017-12-15'
 title: Using Managed Colocation
 type: article
 created_date: '2011-03-25'
