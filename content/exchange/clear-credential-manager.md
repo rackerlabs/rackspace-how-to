@@ -50,11 +50,11 @@ For more information about prerequisite terminology, see [Cloud Office support t
 5. Click on the arrow next to the entry to display it
 
 
-  <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
+    <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
 
 6. On the detail page of the credential entry, hit remove to remove it from the manager
 
-  <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
+    <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
 
 7. Repeat for all credentials matching Outlook(15/16) and your email address (should not be more than one to three entries)
 
@@ -62,4 +62,4 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 9. If successful, you should be taken to your Inbox and mail should start syncing.
 
-Also, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php).
+**Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify you are using the correct password.
