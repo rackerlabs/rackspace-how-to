@@ -29,17 +29,14 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
   **Windows 10:**
 
-
     <img src="{% asset_path exchange/clear-credential-manager/win10_start_menu.png %}"/>
 
   **Windows 7 (or earlier):**
 
-
     <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
 
 
-
-3. Double-click on **Credential Manager**</li>
+3. Double-click on **Credential Manager**.
 
 4. Click on **Windows Credentials** once the window opens.
 
@@ -49,16 +46,15 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 5. Click on the arrow next to the entry to display it
 
-
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
 
 6. On the detail page of the credential entry, hit remove to remove it from the manager
 
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
 
-7. Repeat for all credentials matching Outlook(15/16) and your email address (should not be more than one to three entries)
+7. Repeat for all credentials matching Outlook(15/16) and your email address (should not be more than one to three entries).
 
-8. Once you're done. Close all windows and re-open Outlook. It will prompt you for your password, as it no longer has it stored
+8. Close all windows and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox and check the box **Remember My Credentials**
 
 9. If successful, you should be taken to your Inbox and mail should start syncing.
 
