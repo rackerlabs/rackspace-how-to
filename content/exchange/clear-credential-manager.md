@@ -11,7 +11,7 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes how to forward a Microsoft Exchange mailbox to forward to another email address.
+This remove.
 
 
 ### Prerequisites
@@ -45,16 +45,16 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
   - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address
 
-  - For example (it may not be exactly as shown, but use as a base guideline): **MicrosoftOutlook15:example@yourdomainexample.com**
+  - For example (it may not be exactly as shown, but use as a base guideline): ```MicrosoftOutlook15:example@yourdomainexample.com```
 
 5. Click on the arrow next to the entry to display it
 
 
-   <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
+  <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
 
 6. On the detail page of the credential entry, hit remove to remove it from the manager
 
-    <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
+  <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
 
 7. Repeat for all credentials matching Outlook(15/16) and your email address (should not be more than one to three entries)
 
