@@ -12,7 +12,7 @@ product_url: undefined
 ---
 
 Updating your existing SSL certificate is a quick process.
-Whether your SSL certificate is expiring or you are simply needing to
+Whether your SSL certificate is expiring or you simply need to
 change to a new SSL certificate, follow these instructions to
 get your SSL updated and installed quickly.
 
@@ -23,13 +23,13 @@ article posted in the Rackspace Support forum.
 ### Getting Started
 
 In order to update or renew your SSL certificate, you need your
-CSR. If you don't have your CSR saved, please contact support to have a
+CSR. If you don't have your CSR saved, contact support to have a
 new one generated. You can contact our **Fanatical Support** through a
 ticket, live chat, or a phone call, and we can help you.
 
 ### Renewing Your Certificate
 
-Next, you need to update/renew your SSL certificate. SSL
+Next, you need to update or renew your SSL certificate. SSL
 certificates are available from a number of third party sources. Some
 recommended sellers are:
 
@@ -63,7 +63,7 @@ the **Edit Certificate link**.
 
 On the next screen, there are three fields for **Certificate**, **Private
 Key**, and **Intermediate Certificate**. Replace the current
-information with your updated info, and hit save.
+information with your updated info, and then click **Save**.
 
 ### DNS Update
 
