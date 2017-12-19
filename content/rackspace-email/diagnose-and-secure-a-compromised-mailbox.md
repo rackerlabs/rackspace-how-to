@@ -65,4 +65,4 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
     - [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers) will help you identify the return-path and originating IP of the malicious email.
 
-5.
+5. Educate your users on risk factors and symptoms of a compromised mailbox.
