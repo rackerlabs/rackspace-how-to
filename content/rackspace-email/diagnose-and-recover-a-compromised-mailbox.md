@@ -23,15 +23,25 @@ This article describes steps to identify a compromised mailbox, stop the attack,
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
 
+#### Symptoms of a compromised mailbox
+
+- You have started receiving bounce messages for emails that you never sent.
+- You notice emails that are unfamiliar.
+- Your password has been changed.
+- Colleagues or friends report receiving messages from you that you never sent.   
+- Forwarding rules have been added that you did not create.
+- Your reply-to address has been changed.
+- You received an email from Rackspace informing you that your mailbox has been disabled.
+
+If you have noticed any of these symptoms with your mailbox you should take immediate steps to secure the mailbox.
+
 #### Risk factors
 
-1. You have started receiving bounce messages for emails that you never sent.
-  - If you are receiving bounces for messages you never sent, it is likely that someone is sending messages from your mailbox without your consent.
+- Weak or moderate strength password
+- Clicking links from unverified sources
+- Clicking links without verifying their authenticity. Even links from what appears to be a trusted source can easily be a trick to gain access to your account.
+-
 
-2. You clicked a link without verifying it as authentic.
-  - While this is vague it is important to always verify links before clicking them. If clicked a link without doing so, scan your computer for malware and change your mailbox password.
-
-3. You received an email from Rackspace informing you that your mailbox has been disabled.
 
 
 #### Recover a mailbox that has been compromised
@@ -39,3 +49,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 1. Change the password to the mailbox immediately.
 
   - Locking out those who have compromised the mailbox is the top priority.
+
+2. Scan all devices for viruses and malware.
+
+3.
