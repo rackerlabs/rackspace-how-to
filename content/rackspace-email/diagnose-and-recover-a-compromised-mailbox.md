@@ -38,6 +38,7 @@ If you have noticed any of these symptoms with your mailbox you should take imme
 #### Risk factors
 
 - Weak or moderate strength passwords
+- Delaying software updates
 - Clicking links from unverified sources
 - Clicking links without verifying their authenticity. Even links from what appears to be a trusted source can easily be a trick to gain access to    your account.
 - Accessing your account from a public computer such as those in libraries or hotels. If a computer is used by strangers all day, you should assume it is unsafe to access your mailbox from it.
@@ -46,14 +47,21 @@ If you have noticed any of these symptoms with your mailbox you should take imme
 Avoiding these factors is a small inconvenience compared to what could be damaged from a successful mailbox compromise. If you find that any of the above factors apply to you, you should take immediate steps to secure your mailbox.
 
 
-
-
-#### Recover a mailbox that has been compromised
+#### Secure a mailbox that has been compromised
 
 1. Change the password to the mailbox immediately.
 
-  - Locking out those who have compromised the mailbox is the top priority.
+  - Locking out those who have compromised the mailbox is the top priority. The longer a bad actor has access to your account, the more damage that can be done.
 
 2. Scan all devices for viruses and malware.
 
-3.
+  - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time. Otherwise you mailbox information could already be in the hands of a hacker.
+
+3. Alert your Colleagues and coworkers. If you are not the administrator for your company you should alert your administrator immediately.
+
+  - It is better to raise the alarm and protect everyone's information than risk the compromise growing beyond your mailbox.
+
+4. Blacklist the return-path and originating IP of the message that lead to the compromise if that was the source. This is usually a message that contained a suspicious link or asked you for account information.
+
+  - [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers) will help you identify the return-path and originating IP of the malicious email.
+  -
