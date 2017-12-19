@@ -57,6 +57,10 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
     - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time after you have removed the malicious software. Otherwise you mailbox information could already be in the hands of a hacker.
 
+    - If the mailbox was disabled by Rackspace, follow these instructions to [restore mailbox access](/how-to/block-mailbox-access/#restore-mailbox-access)
+
+    **Warning:** Do not restore access until **after** you have changed the mailbox password and scanned all devices for malicious software.
+
 3. Alert your Colleagues and coworkers. If you are not the administrator for your company you should alert your administrator immediately.
 
     - It is better to raise the alarm and protect everyone's information than risk the compromise growing beyond your mailbox.
