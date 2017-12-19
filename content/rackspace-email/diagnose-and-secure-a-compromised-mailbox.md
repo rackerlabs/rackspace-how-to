@@ -1,7 +1,7 @@
 ---
-permalink: diagnose-and-recover-a-compromised-mailbox/
+permalink: diagnose-and-secure-a-compromised-mailbox/
 audit_date: '2017-02-24'
-title: Diagnose and recover a compromised mailbox
+title: Diagnose and secure a compromised mailbox
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
@@ -51,11 +51,11 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
 1. Change the password to the mailbox immediately.
 
-    - Locking out those who have compromised the mailbox is the top priority. The longer a bad actor has access to your account, the more damage that can be done.
+    - Locking out those who have compromised the mailbox is the top priority. The longer a bad actor has access to your account, the more damage that can be done. Review [Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices) when crafting a new password.
 
 2. Scan all devices for viruses and malware.
 
-    - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time. Otherwise you mailbox information could already be in the hands of a hacker.
+    - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time after you have removed the malicious software. Otherwise you mailbox information could already be in the hands of a hacker.
 
 3. Alert your Colleagues and coworkers. If you are not the administrator for your company you should alert your administrator immediately.
 
