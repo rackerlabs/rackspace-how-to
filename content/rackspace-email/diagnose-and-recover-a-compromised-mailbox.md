@@ -37,10 +37,14 @@ If you have noticed any of these symptoms with your mailbox you should take imme
 
 #### Risk factors
 
-- Weak or moderate strength password
+- Weak or moderate strength passwords
 - Clicking links from unverified sources
-- Clicking links without verifying their authenticity. Even links from what appears to be a trusted source can easily be a trick to gain access to your account.
--
+- Clicking links without verifying their authenticity. Even links from what appears to be a trusted source can easily be a trick to gain access to    your account.
+- Accessing your account from a public computer such as those in libraries or hotels. If a computer is used by strangers all day, you should assume it is unsafe to access your mailbox from it.
+- Accessing your account over public WiFi.
+
+Avoiding these factors is a small inconvenience compared to what could be damaged from a successful mailbox compromise. If you find that any of the above factors apply to you, you should take immediate steps to secure your mailbox.
+
 
 
 
