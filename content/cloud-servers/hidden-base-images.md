@@ -1,6 +1,6 @@
 ---
 permalink: hidden-base-images/
-audit_date:
+audit_date: '2017-12-19'
 title: Hidden base images
 type: article
 created_date: '2013-11-04'
