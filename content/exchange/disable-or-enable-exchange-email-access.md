@@ -31,16 +31,16 @@ Blocking access to a mailbox prevents users from logging into that mailbox. You 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f "Cloud Office Control Panel") using your Rackspace Cloud Office admin ID and password.
 2. In the Microsoft Exchange section, click **Mailboxes**.
 
-   <img src="{% asset_path rackspace-email/disable-or-enable-exchange-email-access/hex_mailboxes.png %}" />
+   <img src="{% asset_path exchange/disable-or-enable-exchange-email-access/hex_mailboxes.png %}" />
 
 3. If you have multiple domains, select the domain for the mailbox you intend to block access.
 4. You will see a list of your mailboxes. In the far right column **Action**, click **Disable** to block access to the corresponding mailbox in that row.
 
-   <img src="{% asset_path rackspace-email/disable-or-enable-exchange-email-access/hex_disable.png %}" />
+   <img src="{% asset_path exchange/disable-or-enable-exchange-email-access/hex_disable.png %}" />
 
 5. A message will appear confirming that you have disabled access to the mailbox.
 
-   <img src="{% asset_path rackspace-email/disable-or-enable-exchange-email-access/disable_success.png %}" />
+   <img src="{% asset_path exchange/disable-or-enable-exchange-email-access/disable_success.png %}" />
 
 6. The mailbox will be greyed out in the mailbox list. You have now blocked users from accessing that mailbox.
 
@@ -50,11 +50,11 @@ Blocking access to a mailbox prevents users from logging into that mailbox. You 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f "Cloud Office Control Panel") using your Rackspace Cloud Office admin ID and password.
 2. In the Microsoft Exchange section, click **Mailboxes**.
 
-   <img src="{% asset_path rackspace-email/disable-or-enable-exchange-email-access/hex_mailboxes.png %}" />
+   <img src="{% asset_path exchange/disable-or-enable-exchange-email-access/hex_mailboxes.png %}" />
 
 3. If you have multiple domains, select the domain for the mailbox you intend to restore access.
 4. You will see a list of your mailboxes. In the far right column **Action**, click **Enable** to restore access to the corresponding mailbox in that row.
 
-    <img src="{% asset_path rackspace-email/disable-or-enable-exchange-email-access/hex_enable.png %}" />
+    <img src="{% asset_path exchange/disable-or-enable-exchange-email-access/hex_enable.png %}" />
 
 5. The mailbox will no longer be greyed out in the mailbox list. Users can now access that mailbox.
