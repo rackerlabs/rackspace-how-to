@@ -11,14 +11,13 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Rackspace Email mailbox reference [Secure a compromised Rackspace Email mailbox](link)
+This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Rackspace Email mailbox reference [Secure a compromised Rackspace Email mailbox](/how-to/secure-a-compromised-rackspace-email-mailbox)
 
 ### Prerequisites
 
 - **Applies to:** User or administrator
 - **Difficulty:** Moderate
 - **Time needed:** Approximately 1 hour
-- **Tools required:**  Users need their current password; administrators need Cloud Office Control Panel access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
