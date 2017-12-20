@@ -53,13 +53,13 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
     - Locking out those who have compromised the mailbox is the top priority. The longer a bad actor has access to your account, the more damage that can be done. Review [Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices) when crafting a new password.
 
-  **Warning:** Exchange mailboxes will lock themselves if you do not update all connected devices with the new password. If the mailbox is locking reference [Troubleshoot a locked Exchange mailbox](/how-to/troubleshoot-a-locked-exchange-mailbox)
+  **Warning:** Exchange mailboxes will lock themselves if you do not update all connected devices with the new password. If the mailbox is locking reference [Troubleshoot a locked Exchange mailbox.](/how-to/troubleshoot-a-locked-exchange-mailbox)
 
 2. Scan all devices for viruses and malware.
 
     - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time after you have removed the malicious software. Otherwise you mailbox information could already be in the hands of a hacker.
 
-    - If the mailbox was disabled by Rackspace, follow these instructions to [restore mailbox access](/how-to/block-mailbox-access/#restore-mailbox-access)
+    - If the mailbox was disabled by Rackspace, follow these instructions to [restore mailbox access](/how-to/disable-or-enable-exchange-email-access/#restore-mailbox-access)
 
     **Warning:** Do not restore access until **after** you have changed the mailbox password and scanned all devices for malicious software.
 
