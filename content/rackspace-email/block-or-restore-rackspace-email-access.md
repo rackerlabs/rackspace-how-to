@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article explains how to block access to a Rackspace email mailbox.
+This article explains how to block or restore access to a Rackspace email mailbox.
 
 ### Prerequisites
 
