@@ -1,11 +1,11 @@
 ---
-permalink: diagnose-and-secure-a-compromised-mailbox/
-audit_date: '2017-02-24'
-title: Diagnose and secure a compromised mailbox
+permalink: secure-a-compromised-rackspace-email-mailbox/
+audit_date:
+title: Secure a compromised Rackspace Email mailbox
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
-last_modified_date: '2017-12-18'
+last_modified_date: '2017-12-20'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -33,7 +33,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 - Your reply-to address has been changed.
 - You received an email from Rackspace informing you that your mailbox has been disabled.
 
-If you have noticed any of these symptoms with your mailbox you should take immediate steps to secure the mailbox.
+Take immediate steps to secure the mailbox if any of these symptoms apply to you .
 
 #### Risk factors
 
