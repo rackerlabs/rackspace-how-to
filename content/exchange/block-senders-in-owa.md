@@ -5,13 +5,13 @@ title: Block Senders in Outlook Web App
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
-last_modified_date: '2017-12-20'
+last_modified_date: '2017-12-21'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes steps to automatically mark senders as Junk through the Outlook Web App interface.
+This article describes steps to automatically mark senders as Junk through the Outlook Web App interface. See [Safelist senders in Outlook Web App](/how-to/safelist-senders-in-owa) if you would need to safelist a sender. 
 
 ### Prerequisites
 
