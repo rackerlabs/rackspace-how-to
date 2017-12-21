@@ -75,14 +75,16 @@ RackConnect v3.0 provides the following benefits:
 
 RackConnect v3.0 has the following limitations:
 
--   **Not compatible with the Cloud Load Balancers v1.0 product**: We
-    recommend a dedicated hardware load balancer (Brocade ADX or F5 LTM)
-    for RackConnect v3.0 until the Cloud Load Balancers 2.0 option is
-    available for Cloud Networks (anticipated in 2016).
+-   **Cloud Load Balancers blacklisted by default**: For security reasons, Cloud Load
+    Balancers are blacklisted by default, and cannot communicate with RackConnect v3 cloud servers.
+    We recommend a dedicated hardware load balancer (Brocade ADX or F5 LTM)
+    for RackConnect v3.0. However, we can whitelist Cloud Load Balancers if you require acccess to this product.
 
--   **Not compatible with OnMetal v1.0**: RackConnect v3.0 will support
-    the upcoming OnMetal 2.0 offering, anticipated to be available
-    in 2016.
+-   **Not compatible with OnMetal v1.0**: RackConnect v3.0 supports
+    OnMetal 2.0 only. If your RackConnect network was provisioned before 2016,
+    it may be necessary to provision a new RackConnect network, or migrate
+    your existing network (this is free). Contact Rackspace Support if you
+    have questions about this.
 
 -   **Limit of 250 cloud servers per RackConnect cloud network**: This
     is a limitation of the Rackspace Cloud Networks product that
