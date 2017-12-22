@@ -29,11 +29,11 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
   **Windows 10:**
 
-    <img src="{% asset_path exchange/clear-credential-manager/win10_start_menu.png %}"/>
+      <img src="{% asset_path exchange/clear-credential-manager/win10_start_menu.png %}"/>
 
   **Windows 7 (or earlier):**
 
-    <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
+      <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
 
 
 3. Double-click on **Credential Manager**.
