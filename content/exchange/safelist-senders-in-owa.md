@@ -31,15 +31,15 @@ Safelisting does not prevent a sender from being flagged as spam. Safelisting en
 
 2. Click the gear icon in the upper right-hand corner. Select **Options** from the drop down menu.
 
-  <img src="{% asset_path exchange/safelist-senders-in-owa/options_gear.png %}" />
+    <img src="{% asset_path exchange/safelist-senders-in-owa/options_gear.png %}" />
 
 3. Click **Block or Allow** from the menu on the left hand side of the screen.
 
-  <img src="{% asset_path exchange/safelist-senders-in-owa/block_or_allow.png %}" />
+    <img src="{% asset_path exchange/safelist-senders-in-owa/block_or_allow.png %}" />
 
 4. Enter the email address or domain of the sender which you would like to safelist.
 
-  <img src="{% asset_path exchange/safelist-senders-in-owa/safe_senders.png %}" />
+    <img src="{% asset_path exchange/safelist-senders-in-owa/safe_senders.png %}" />
 
 5. Click **Save**
 
