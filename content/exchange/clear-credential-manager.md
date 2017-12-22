@@ -1,6 +1,6 @@
 ---
 permalink: clear-credential-manager/
-audit_date: '2017-12-18'
+audit_date:
 title: Clear Credential Manager
 type: article
 created_date: '2017-12-18'
