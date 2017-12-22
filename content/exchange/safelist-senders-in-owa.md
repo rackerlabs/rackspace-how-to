@@ -25,7 +25,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 #### Safelist Senders
 
-Safelisting does not prevent a sender from being flagged as spam. Safelisting ensures that sender's message will be placed in your Inbox in the event they are flagged as spam. This feature is used to prevent a message from a trusted source from  being overlooked in the Junk folder. Administrators can reference [Blacklists in Microsoft Exchange](/how-to/spam-preferences-safe-lists-and-black-list-in-microsoft-exchange/#managing-safe-list) for instructions on rejecting senders.
+Safelisting does not prevent a sender from being flagged as spam. Safelisting ensures that sender's message will be placed in your Inbox in the event they are flagged as spam. This feature is used to prevent a message from a trusted source from  being overlooked in the Junk folder. Administrators can reference [Blacklists in Microsoft Exchange](/how-to/spam-preferences-safe-lists-and-black-list-in-microsoft-exchange/#managing-safe-list) for instructions on safelisting senders through the control panel.
 
 1. Log into your Exchange mailbox at [apps.rackspace.com](apps.rackspace.com)
 
