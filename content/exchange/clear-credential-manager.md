@@ -11,7 +11,7 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This remove.
+This article describes how to remove previously stored passwords from your Outlook application so that you can update Outlook with your new password.
 
 
 ### Prerequisites
