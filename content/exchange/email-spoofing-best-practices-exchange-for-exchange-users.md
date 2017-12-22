@@ -52,24 +52,24 @@ The first three properties can be easily altered by using settings in your Micro
 
 In the following example, it appears that the recipient has received a message from their office assistant requesting money.
 
-<img src="{% asset_path rackspace-email/email-spoofing-explained/from_assistant.png %}" />
+<img src="{% asset_path exchange/email-spoofing-best-practices-exchange-for-exchange-users/from_assistant.png %}" />
 
 The **subject** line should alert you immediately. This user should contact their assistant through another form of communication to confirm that they did not send this message. Next, you want to discover who actually sent the message by opening the message headers. It should look similar to the following:
 
-<img src="{% asset_path rackspace-email/email-spoofing-explained/reply_to.png %}" />
+<img src="{% asset_path exchange/email-spoofing-best-practices-exchange-for-exchange-users/reply_to.png %}" />
 
 In this message header snippet, we see that the **From:** field shows the message being sent from **"Assistant"\<assistant@yourdomainexample.com\>**. However, we can also see that the **REPLY-TO:** field lists *spoofer@scam.com*. That is a clear example of a spoofed message.
 
 You should blacklist any address that you find in the **REPLY-TO**, **RETURN-PATH**, and **SOURCE IP** field that is not an email address or IP address from which you normally receive mail.
 
-For more information on viewing and understanding email headers, see [View and read Rackspace email headers](/how-to/view-and-read-rackspace-email-headers).
+For more information on viewing and understanding email headers, see [View and read email headers in Outlook Web App](/how-to/view-and-read-email-headers-in-owa).
 
 ### Combat spoofing
 
 User education is the first line of defense against these types of attacks. If a user receives a spoofed message, they should perform the following tasks:
 
- - Blacklist any email address or IP address listed in the **REPLY-TO**, **RETURN-PATH**, or **SOURCE IP** that you have determined to be fraudulent. For instructions, see [Blacklist addresses, domains, and IP addresses in Rackspace Email](/how-to/blacklist-addresses-domains-and-ip-addresses-in-rackspace-email).
- - Immediately [change the password of your email account](/how-to/change-rackspace-email-mailbox-password) if you or your users provided that information at any point.
+ - Blacklist any email address or IP address listed in the **REPLY-TO**, **RETURN-PATH**, or **SOURCE IP** that you have determined to be fraudulent. For instructions, see [Block senders in Outlook Web App](/how-to/block-senders-in-owa).
+ - Immediately [change the password of your email account](/how-to/change-a-microsoft-exchange-mailbox-password) if you or your users provided that information at any point.
  - Alert the rest of your business to the situation.
 
 Spoofing is possibly the most frustrating abuse issue to deal with, simply because it cannot be stopped. Spoofing is similar to hand-writing many letters, and signing someone else's name to it. You can imagine how difficult that would be to trace.
@@ -89,7 +89,7 @@ Using record policies protects the integrity of internal emails, as well as the 
 
 ### References
 
-- [Change a Rackspace email mailbox password](/how-to/change-rackspace-email-mailbox-password)
+- [Change a Hosted Exchange mailbox password](/how-to/change-a-microsoft-exchange-mailbox-password)
 - [Cloud Office support terminology](/how-to/cloud-office-support-terminology)
 - [Create a DMARC policy](/how-to/create-a-dmarc-policy)
-- [View and read Rackspace email headers](/how-to/view-and-read-rackspace-email-headers)
+- [View and read email headers in Outlook Web App](/how-to/view-and-read-email-headers-in-owa)
