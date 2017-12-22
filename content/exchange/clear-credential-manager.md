@@ -27,13 +27,13 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 2. Click on the Start Menu (or press the Windows key) and then search for **Control Panel**
 
-    **Windows 10:**
+  - **Windows 10:**
 
-        <img src="{% asset_path exchange/clear-credential-manager/win10_start_menu.png %}"/>
+      <img src="{% asset_path exchange/clear-credential-manager/win10_start_menu.png %}"/>
 
-    **Windows 7 (or earlier):**
+  - **Windows 7 (or earlier):**
 
-        <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
+      <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
 
 
 3. Double-click on **Credential Manager**.
