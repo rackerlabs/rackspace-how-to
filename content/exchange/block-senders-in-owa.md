@@ -11,7 +11,7 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes steps to automatically mark senders as Junk through the Outlook Web App interface. See [Safelist senders in Outlook Web App](/how-to/safelist-senders-in-owa) if you would need to safelist a sender. 
+This article describes steps to automatically mark senders as Junk through the Outlook Web App interface. See [Safelist senders in Outlook Web App](/how-to/safelist-senders-in-owa) if you need to safelist a sender.
 
 ### Prerequisites
 
@@ -31,12 +31,14 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 2. Click the gear icon in the upper right-hand corner. Select **Options** from the drop down menu.
 
-  <img src="{% asset_path exchange/block-senders-in-owa/options_gear.png %}" />
+    <img src="{% asset_path exchange/block-senders-in-owa/options_gear.png %}" />
 
 3. Click **Block or Allow** from the menu on the left hand side of the screen.
 
-  <img src="{% asset_path exchange/block-senders-in-owa/block_or_allow.png %}" />
+    <img src="{% asset_path exchange/block-senders-in-owa/block_or_allow.png %}" />
 
 4. Enter the email address or domain of the sender which you would like to automatically send to Junk.
 
-  <img src="{% asset_path exchange/block-senders-in-owa/blocked_senders.png %}" />
+    <img src="{% asset_path exchange/block-senders-in-owa/blocked_senders.png %}" />
+
+5. Click **Save**.     
