@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Exchange mailbox reference [Secure a compromised Exchange mailbox](link)
+This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Exchange mailbox reference [Secure a compromised Exchange mailbox](/how-to/secure-a-compromised-exchange-mailbox)
 
 ### Prerequisites
 
