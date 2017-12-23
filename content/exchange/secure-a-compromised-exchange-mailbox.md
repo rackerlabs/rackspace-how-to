@@ -5,7 +5,7 @@ title: Secure a compromised Exchange mailbox
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
-last_modified_date: '2017-12-20'
+last_modified_date: '2017-12-22'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
@@ -18,6 +18,7 @@ This article describes steps to identify a compromised mailbox, stop the attack,
 - **Applies to:** User or administrator
 - **Difficulty:** Moderate
 - **Time needed:** Approximately 1 hour
+- **Tools required:** Users need their current password; administrators need Cloud Office Control Panel access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
@@ -68,7 +69,7 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
 4. Blacklist the return-path and originating IP of the message that lead to the compromise if that was the source. This is usually a message that contained a suspicious link or asked you for account information.
 
-    - [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers) will help you identify the return-path and originating IP of the malicious email.
+    - [View and read email headers in Outlook Web App](/how-to/view-and-read-email-headers-in-owa) will help you identify the return-path and originating IP of the malicious email.
 
 5. Educate your users on the risk factors and symptoms of a compromised mailbox. Email attacks are a constant threat which users and admins should be prepared for at all times.
 
@@ -76,5 +77,7 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
 ### References
 
-[Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices)
-[Email spoofing best practices](/how-to/email-spoofing-best-practices)
+- [Email spoofing best practices](/how-to/email-spoofing-best-practices-for-exachange-users)
+- [Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices)
+- [Troubleshoot a locked Exchange mailbox.](/how-to/troubleshoot-a-locked-exchange-mailbox)
+- [View and read email headers in Outlook Web App](/how-to/view-and-read-email-headers-in-owa)
