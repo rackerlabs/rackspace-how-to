@@ -75,7 +75,7 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
 ### References
 
-[Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices)
-[Email spoofing best practices](/how-to/email-spoofing-best-practices)
-[View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers)
-[Blacklist addresses, domains, and IP addresses in Rackspace email](/how-to/blacklist-addresses-domains-and-ip-addresses-in-rackspace-email)
+- [Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices)
+- [Email spoofing best practices](/how-to/email-spoofing-best-practices)
+- [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers)
+- [Blacklist addresses, domains, and IP addresses in Rackspace email](/how-to/blacklist-addresses-domains-and-ip-addresses-in-rackspace-email)
