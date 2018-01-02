@@ -5,8 +5,8 @@ title: RackConnect v3.0 upgrade information
 type: article
 created_date: '2015-12-21'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-01-02'
+last_modified_by: Brian King
 product: RackConnect
 product_url: rackconnect
 ---
@@ -82,8 +82,8 @@ RackConnect v3.0 has the following limitations:
 
 -   **Not compatible with OnMetal v1.0**: RackConnect v3.0 supports
     OnMetal 2.0 only. If your RackConnect network was provisioned before 2016,
-    it may be necessary to provision a new RackConnect network, or migrate
-    your existing network (this is free). Contact Rackspace Support if you
+    it might be necessary to provision a new RackConnect network, or to migrate
+    your existing network (this is free). Contact Rackspace Support, if you
     have questions about this.
 
 -   **Limit of 250 cloud servers per RackConnect cloud network**: This
