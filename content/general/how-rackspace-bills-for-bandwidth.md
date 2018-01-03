@@ -1,6 +1,6 @@
 ---
 permalink: how-rackspace-bills-for-bandwidth/
-audit_date:
+audit_date: '2018-01-03'
 title: How Rackspace bills for bandwidth
 type: article
 created_date: '2014-02-19'
@@ -35,8 +35,6 @@ you use. As shown in the following graph, in the 95th percentile method
 you would be charged for bandwidth use at a rate of 377 Kbps sustained
 across the entire month. With Rackspace, you would instead be charged
 for the equivalent of 196 Kbps, converted at per GB transferred.
-
-<img src="{% asset_path general/how-rackspace-bills-for-bandwidth/3911-1_0.png %}" width="512" height="212" />
 
 Finally, Rackspace charges only for outbound bandwidth, meaning that
 routine site maintenance, such as content publishing and uploads, is
