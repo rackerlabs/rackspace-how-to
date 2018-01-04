@@ -11,6 +11,16 @@ product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 5 minutes
+- **Tools required:**  cp.rackspace.com access
+
+For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
+
 You can log in to the Email Archive Manager directly from your
 domain-specific URL (for example, `http://yourdomaincom.archivesrvr.com`).
 
