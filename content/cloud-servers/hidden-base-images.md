@@ -21,33 +21,13 @@ Images that have been publicly released are never actually deleted, just hidden.
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-Arch 2013.9 | ba293687-4af0-4ccb-99e5-097d83f72dfe | 2014-03-05 | Replaced by Arch 2014.2.
 Arch 2014.2 | b21af3ef-1a1e-46b5-98ef-bb0c81b25292 | 2017-09-06 | Retired
-
-### CentOS images
-
-Image | ID | Date hidden | Notes
---- | --- | --- | ---
-CentOS 5 (PV) | a5fe0925-869f-4bc2-bd0a-328929c66839 | 2017-03-31 | No longer supported by the CentOS Project. This image was the last image of this version published.
-CentOS 5.9 | 59c037c1-70ec-41e4-aa17-73a9b0cb6b16 | 2014-03-05 | Replaced by CentOS 5.10.
-CentOS 6.4 | f70ed7c7-b42e-4d77-83d8-40fa29825b85 | 2014-02-20 | Replaced by CentOS 6.5.
-
-### Debian images
-
-Image | ID | Date hidden | Notes
---- | --- | --- | ---
-Debian 6 (Squeeze) (PV) | 874e0441-f7b7-456e-9c13-dd3f630d187c | 2015-04-25 | Replaced by Debian 8 (Jessie).
-Debian 7 (Wheezy) (PV) | 857d7d36-34f3-409f-8435-693e8797be8b | 2014-03-05 | Replaced by Debian 7 PVHVM, which uses different virtualization drivers and contains `cloud-init`.
 
 ### Fedora images
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-Fedora 17 | 7bf1ac03-48e2-48f1-a363-7a91fa51d782 | 2013-10-11 | No longer supported by the Fedora Project. This image was the last image of this version published.
-Fedora 18 | 896caae3-82f1-4b03-beaa-75fbdde27969 | 2014-03-05 | No longer supported; this is the last image published.
-Fedora 19 (PV) | 8500226f-b193-4471-9eff-9cba8440bfc8 | 2014-03-05 | Replaced by Fedora 19 PVHVM, which uses different virtualization drivers and contains `cloud-init`.
 Fedora 19 (Schrodinger's Cat) (PVHVM) | fda42efc-d20c-4fe7-929d-2aa7d0ef5307 | 2015-01-30 | No longer supported by the Fedora Project. This image was the last image of this version published.
-Fedora 20 (PV) | 5ef987c7-0dda-4ebe-ae71-7f5c4a425faa | 2014-03-05 | Replaced by Fedora 20 PVHVM, which uses different virtualization drivers and contains `cloud-init`.
 Fedora 20 (Heisenbug) (PVHVM) | a3307d30-39b9-4abc-be13-1d7134002c2d | 2015-05-26 | No longer supported by the Fedora Project. This image was the last image of this version published.
 Fedora 21 (PVHVM) | 79f41a1d-ed68-40bc-84d5-e7a36dabcb44 | 2016-03-24 | No longer supported by the Fedora Project. This image was the last image of this version published.
 Fedora 22 (PVHVM) | 779851de-9b1e-4500-839a-dc1d6e25cb25 | 2016-06-21 | No longer supported by the Fedora Project. This image was the last image of this version published.
@@ -59,7 +39,6 @@ Fedora 25 (PVHVM) | 8c9f3212-8515-484e-9109-00e585be8cf4 | 2017-12-12 | No longe
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-FreeBSD 9.2 | fb624ffd-81c2-4217-8cd5-da32d32e85c4 | 2014-03-05 | Replaced by FreeBSD 10.0.
 FreeBSD 10  | 1125dfad-61cf-40e4-890c-afdef535dad4 | 2017-09-06 | Retired
 FreeBSD 11  | c656f3c8-12ff-4b2e-9333-9a857c553292 | 2017-09-06 | Retired
 
@@ -67,30 +46,20 @@ FreeBSD 11  | c656f3c8-12ff-4b2e-9333-9a857c553292 | 2017-09-06 | Retired
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-Gentoo 13.3 | 73764eb8-3c1c-42a9-8fff-71f6beefc6a7 | 2014-03-05 | Replaced by Gentoo 14.1.
 Gentoo 15.3 | c6693b8d-1e99-4112-b2a0-ceefd18a55ca | 2017-09-06 | Retired
 
 ### OpenSUSE images
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-OpenSUSE 12.3 | 8955d327-9a69-468f-be5c-60f571267406 | 2014-03-05 | Replaced by OpenSUSE 13.1.
 OpenSUSE 13.1 (PVHVM) | 59addab2-1551-4949-b635-bc88f1b6dc7c | 2015-01-15 | No longer supported; this is the last image published.
 OpenSUSE 13.2 (PVHVM) | 79436148-753f-41b7-aee9-5acbde16582c | 2016-05-03 | No longer supported; this is the last image published.
 OpenSUSE Leap 42 | abe0d447-42ea-41ed-aadf-03828639570d | 2017-09-06 | Retired
-
-### Red Hat Enterprise Linux (RHEL) images
-
-Image | ID | Date hidden | Notes
---- | --- | --- | ---
-Red Hat Enterprise Linux 5.9 | 9d661e79-e473-4e2c-8a60-06b33b0add67 | 2014-03-05 | Replaced by Red Hat Enterprise Linux 5.10.
-Red Hat Enterprise Linux 6.4 | c6e2fed0-75bf-420d-a744-7cfc75a1889e | 2014-02-20 | Replaced by Red Hat Enterprise Linux 6.5.
 
 ### Scientific Linux images
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-Scientific Linux 6.4 (PV) | bced783b-31d2-4637-b820-fa02522c518b | 2014-03-05 | Replaced by Scientific Linux 6.4 PVHVM, which uses different virtualization drivers and contains `cloud-init`.
 Scientific Linux 6 (PVHVM) | 51706a83-20cb-42dd-92a8-d704f5a7a1bf | 2017-09-06 | Retired
 Scientific Linux 7 (PVHVM) | 6c0551dd-798d-4b56-b847-de58165dbffa | 2017-09-06 | Retired
 
@@ -98,14 +67,9 @@ Scientific Linux 7 (PVHVM) | 6c0551dd-798d-4b56-b847-de58165dbffa | 2017-09-06 |
 
 Image | ID | Date hidden | Notes
 --- | --- | --- | ---
-Ubuntu 10.04 (Lucid Lynx) | 1ee40a10-e249-475f-a799-40428a50c7de | 2015-03-30 | No longer supported by Canonical.
-Ubuntu 12.04 (PV) | c1ea187e-73b1-497d-8e38-beb949cc422d | 2017-04-28 | No longer supported by Canonical.
 Ubuntu 12.04 (PVHVM) | f2d30a56-bc2b-4906-8027-92f8a45bbb10 | 2017-04-28 | No longer supported by Canonical.
-Ubuntu 12.10 (Quantal Quetzal) | f3ae5ef7-dc43-473a-b9d6-65e3f2cb7867 | 2014-04-17 | No longer supported by Canonical.
 Ubuntu 12.10 (Quantal Quetzal) (PVHVM) | ab5354f6-b7a3-4802-a2ad-911f67961197 | 2014-04-17 | No longer supported by Canonical.
-Ubuntu 13.04 (PV) | 45975587-fb06-4d56-bc94-38d1038aef8d | 2014-01-06 | No longer supported by Canonical.
 Ubuntu 13.04 (PVHVM) | 62df001e-87ee-407c-b042-6f4e13f5d7e1 | 2014-01-06 | No longer supported by Canonical.
-Ubuntu 13.10 (Saucy Salamander) | 7b8abc3f-5fd2-4d02-9e9a-16d43fc7128e | 2014-06-23 | No longer supported by Canonical.
 Ubuntu 13.10 (Saucy Salamander) (PVHVM) | aca656d3-dd70-4d7e-a9e5-f12182871cde | 2014-06-23 | No longer supported by Canonical.
 Ubuntu 14.10 (Utopic Unicorn) (PVHVM) | 668b0764-4936-4eec-a2f2-3b5bb2c40b26 | 2015-04-23 | Replaced by 15.04 (Vivid Vervet).
 Ubuntu 15.04 (Vivid Vervet) (PVHVM) | 658a7d3b-4c58-4e29-b339-2509cca0de10 | 2015-10-23 | No longer supported by Canonical.
