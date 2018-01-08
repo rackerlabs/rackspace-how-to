@@ -5,7 +5,7 @@ title: Upgrade Rackspace Email and Microsoft Exchange to Office 365 FAQ
 type: article
 created_date: '2017-06-29'
 created_by: Casey Gurbanov
-last_modified_date: '2017-06-29'
+last_modified_date: '2018-01-08'
 last_modified_by: William Loy
 product: Office 365
 product_url: office-365
