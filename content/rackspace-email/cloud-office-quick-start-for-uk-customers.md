@@ -54,12 +54,12 @@ services.
 
 9.  Click **Save**.
 
-**Note:** If you want to move your existing email account to your
-Rackspace account, contact the Cloud Office support team about your
-migration before you change your MX records. Contact Cloud Office
-support at 0800 954 1007 or 020 8734 4029. You can also create a Cloud
-Office support ticket by selecting **Support &gt; Tickets &gt; Create
-New Ticket**.
+    **Note:** If you want to move your existing email account to your
+    Rackspace account, contact the Cloud Office support team about your
+    migration before you change your MX records. Contact Cloud Office
+    support at 0800 954 1007 or 020 8734 4029. You can also create a Cloud
+    Office support ticket by selecting **Support &gt; Tickets &gt; Create
+    New Ticket**.
 
 #### Change your MX records
 
