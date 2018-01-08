@@ -5,8 +5,8 @@ title: Cloud Office quick start for UK customers
 type: article
 created_date: '2015-06-22'
 created_by: Rose Contreras
-last_modified_date: '2016-01-18'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-01-08'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -14,13 +14,14 @@ product_url: rackspace-email
 The instructions in this article are for customers who signed up for
 their Rackspace Email account at <http://www.rackspace.co.uk>. The steps
 in this article guide you through setting up your Rackspace mail
-services. This information is also available at [Rackspace Demo
-Videos](http://www.rackspace.co.uk/cloud-office/email-demo-videos).
+services.
 
 ### Set up your mailboxes
 
 After you have registered your account, you can add mailboxes and change
 your MX records.
+
+#### Access your
 
 #### Add mailboxes
 
