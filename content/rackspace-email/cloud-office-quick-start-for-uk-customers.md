@@ -79,7 +79,7 @@ The MX record changes take about 24 hours to update. You will know when
 the update has occurred because mail will start being delivered to your
 *new mailboxes* instead of your old ones.
 
-### View your mail
+#### View your mail
 
 Choose one of the following options to view your new mailboxes:
 
@@ -98,7 +98,7 @@ or 020 8734 4029. You can also create a support ticket in the [Cloud
 Office Control
 Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=Default.aspx).
 
-### Add a new domain
+#### Add a new domain
 
 1.  Log in to the [MyRackspace Customer
     Portal](https://my.rackspace.com/).
@@ -121,7 +121,7 @@ Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=Default.aspx).
 
 8.  Click **Save**.
 
-### Add an alias
+#### Add an alias
 
 Follow these steps to set up a mailbox alias.
 
@@ -148,11 +148,7 @@ Follow these steps to set up a mailbox alias.
 MyRackspace Customer Portal. This option is not available in the
 Cloud Office Control Panel.
 
-### Set up autodiscover records
-
-For information about setting up your autodiscover records, see [Set up DNS records for Cloud Office email ](/how-to/set-up-dns-records-for-cloud-office-email)..
-
-### Migrate your existing mail account
+#### Migrate your existing mail account
 
 You can migrate your email data to your Rackspace mail account in the
 following ways:
@@ -174,7 +170,7 @@ following ways:
     the MyRackspace portal. They will provide you with all the
     necessary information.
 
-### Set up payments
+#### Set up payments
 
 The initial credit card payment that you made online was a one-time
 payment. Follow these steps to set up your preferred payment method:
@@ -184,7 +180,7 @@ payment. Follow these steps to set up your preferred payment method:
 
 2.  Select **Account &gt; Payments** from the drop-down menu.
 
-### View and download invoices
+#### View and download invoices
 
 To view and download your invoices follow these steps:
 
@@ -197,7 +193,7 @@ To view and download your invoices follow these steps:
 3.  To download your invoices, click the **Actions** button and select
     **Export All Transactions**.
 
-### Downgrade or cancel your services
+#### Downgrade or cancel your services
 
 If you want to downgrade your services, you must submit a support
 ticket.
@@ -208,7 +204,7 @@ intentions by either calling us or submitting a support ticket.
 **Note:** Email hosting services are a month-to-month service billed in
 arrears and will not be billed pro-rata.
 
-### Mail terms, conditions, and acceptable usage policy
+#### Mail terms, conditions, and acceptable usage policy
 
 [Rackspace Mail terms and
 conditions](http://www.rackspace.com/information/legal/mailterms)
