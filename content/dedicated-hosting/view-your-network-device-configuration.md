@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-The MyRackspace portal contains a self-service feature that enables you to download a copy of your firewall or load balancer's running configuration. You can use this feature for your documentation and auditing purposes.
+The MyRackspace portal contains a self-service feature that enables you to download a copy of your firewall's or load balancer's running configuration. You can use this feature for your documentation and auditing purposes.
 
 ### Viewing your network device's configuration
 
