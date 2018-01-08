@@ -21,7 +21,14 @@ services.
 After you have registered your account, you can add mailboxes and change
 your MX records.
 
-#### Access your
+#### Access your Cloud Office Control Panel
+
+1.  Log in to the [MyRackspace Customer
+    Portal](https://my.rackspace.com/).
+
+2.  From the **Products** menu, click **Cloud Office**.
+
+3.  In the Cloud Office window, click **Open Cloud Office Control Panel**.
 
 #### Add mailboxes
 
