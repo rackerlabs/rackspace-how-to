@@ -116,7 +116,7 @@ Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=Default.aspx).
 
 7.  Select the product options that you want to add to your domain:
     -   Rackspace Email
-    -   Microsoft Exchange with ActiveSync and BlackBerry options.
+    -   Microsoft Exchange with ActiveSync.
     -   Rackspace Archiving
 
 8.  Click **Save**.
