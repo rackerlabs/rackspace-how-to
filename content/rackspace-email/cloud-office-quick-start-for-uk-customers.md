@@ -16,10 +16,6 @@ their Rackspace Email account at <http://www.rackspace.co.uk>. The steps
 in this article guide you through setting up your Rackspace mail
 services.
 
-### Set up your mailboxes
-
-After you have registered your account, you can add mailboxes and change
-your MX records.
 
 #### Access your Cloud Office Control Panel
 
@@ -70,8 +66,7 @@ New Ticket**.
 MX records tell the Internet where to deliver your mail. You must have
 access to your DNS records in order to point your MX records to the
 Rackspace email servers. For instructions on setting up your DNS
-records, see [Set up DNS records for Cloud Office email and Skype for
-Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
+records, see [Set up DNS records for Cloud Office email ](/how-to/set-up-dns-records-for-cloud-office-email).
 
 If you do not have access to your DNS records, contact your domain
 registrar and have them update your MX records using the following
@@ -155,8 +150,7 @@ Cloud Office Control Panel.
 
 ### Set up autodiscover records
 
-For information about setting up your autodiscover records, see [Set up DNS records for Cloud Office email and Skype for
-Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
+For information about setting up your autodiscover records, see [Set up DNS records for Cloud Office email ](/how-to/set-up-dns-records-for-cloud-office-email)..
 
 ### Migrate your existing mail account
 
