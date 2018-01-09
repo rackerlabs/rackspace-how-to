@@ -1,7 +1,7 @@
 ---
 permalink: rackspace-email-plus-save-a-file-cloud-drive/
 audit_date:
-title: Rackspace Email Plus: Saving a file to Cloud Drive
+title: Rackspace Email Plus saving a file to Cloud Drive
 type: article
 created_date: '2018-01-09'
 created_by: William Loy
