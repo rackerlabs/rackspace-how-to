@@ -39,3 +39,7 @@ You can confirm the file has synced to the Cloud Drive by logging in to apps.rac
     <img src="{% asset_path rackspace-email/rackspace-email-plus-save-a-file-cloud-drive/webmail_drive.png %}" />
 
 3. You will see the file that you move to the Cloud Drive. You can now access the file from your other desktop devices that have cloud drive installed.
+
+
+
+**Warning:** You cannot add files to the **Public Files** folder using the desktop app. **Public Files** must be added through apps.rackspace.com.
