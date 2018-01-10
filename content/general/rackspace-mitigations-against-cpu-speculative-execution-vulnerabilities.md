@@ -6,16 +6,16 @@ type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
 last_modified_date: '2018-01-10'
-last_modified_by: Catherine Richardson
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
-This page lists various Rackspace platforms and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-57530](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
+This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-57530](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
 **Important**: Rackspace will provide additional guidance as more information becomes available.
 
-| Platform | Mitigation Status |
+| Service | Mitigation Status |
 | --- | --- |
 | **Cloud Office** | Rackspace is currently confirming the mitigation or remediation strategy for any configuration or vendor dependencies. Given the configuration of the Cloud Office environment, the risk to the platform is assessed to be minimal. |
 | **Dedicated Linux** | Rackspace is currently confirming the mitigation or remediation strategy for any configuration or vendor dependencies.<br/><br/>Currently, normal Rackspace patching processes will apply. Rackspace will add vendor patches to the patching schedule as they become available and are tested by Rackspace.<br/><br/>Customers who want to update devices in advance of typical patching windows should contact their support team. |
