@@ -38,7 +38,7 @@ Blocking access to a mailbox prevents users from logging into that mailbox. You 
 
    <img src="{% asset_path rackspace-email/block-or-restore-rackspace-email-access/list_block_access.png %}" />
 
-5. A message displays confirming that you want to block access. Read the message and then click **YES, BLOCK ACCESS**.
+5. A message displays confirming that you want to block access. Read the message, and then click **YES, BLOCK ACCESS**.
 
    <img src="{% asset_path rackspace-email/block-or-restore-rackspace-email-access/block_pop_up.png %}" />
 
@@ -52,7 +52,7 @@ The mailbox is then greyed out in the mailbox list. You have now blocked users f
    <img src="{% asset_path rackspace-email/block-or-restore-rackspace-email-access/add-mailbox-sc1.png %}" />
 
 3. If you have multiple domains, select the domain for the mailbox to which you intend to restore access.
-4. You will see a list of your mailboxes. In the far right column **Action**, click **Restore Access** to restore access to the corresponding mailbox in that row.
+4. Next, you see a list of your mailboxes. In the far right column **Action**, click **Restore Access** to restore access to the corresponding mailbox in that row.
 
     <img src="{% asset_path rackspace-email/block-or-restore-rackspace-email-access/restore_access.png %}" />
 
