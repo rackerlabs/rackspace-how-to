@@ -32,7 +32,6 @@ This page lists various Rackspace services and their current mitigation status f
 | **Storage and Managed Backup** | Rackspace is currently confirming the mitigation or remediation strategy for any configuration or vendor dependencies.<br/><br/>Risk to Managed Storage appliances and Managed Backup services are assessed to be minimal. |
 | **VMware** | Rackspace is currently confirming the mitigation or remediation strategy for any configuration or vendor dependencies. Customers who elect to patch hypervisors with the updates currently available should contact the VMware support team for further assistance.<br/><br/>For guest VMs, we recommend that customers also follow the guidance provided for Dedicated Windows or Linux as applicable. |
 
-
-### References 
+#### References 
 
 [Vulnerabilities Affecting Processors by Intel, AMD and ARM](https://blog.rackspace.com/rackspace-is-tracking-vulnerabilities-affecting-processors-by-intel-amd-and-arm).
