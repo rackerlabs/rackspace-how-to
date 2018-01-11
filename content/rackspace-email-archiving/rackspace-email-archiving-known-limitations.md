@@ -12,7 +12,7 @@ product_url: rackspace-email-archiving
 ---
 
 There are several known issues that you might encounter when using
-Rackspace Email Archiving. This article describes these issue.
+Rackspace Email Archiving. This article describes these issues.
 
 ### Email forwarding ###
 
@@ -29,7 +29,7 @@ your domain, that email is not archived. When you send as an alias,
 Rackspace only archives the sent message if you are sending from a
 domain with archiving enabled or one of its accepted domains or
 domain aliases. If a recipient is archived, the inbound message is
-always archived for that recipient..
+always archived for that recipient.
 
 #### Distribution lists ####
 
