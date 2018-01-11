@@ -5,13 +5,13 @@ title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
-last_modified_date: '2018-01-10'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-01-11'
+last_modified_by: Catherine Richardson
 product: undefined
 product_url: undefined
 ---
 
-This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-57530](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
+This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
 **Important**: Rackspace will provide additional guidance as more information becomes available.
 
@@ -32,6 +32,6 @@ This page lists various Rackspace services and their current mitigation status f
 | **Storage and Managed Backup** | Rackspace is currently confirming the mitigation or remediation strategy for any configuration or vendor dependencies.<br/><br/>Risk to Managed Storage appliances and Managed Backup services are assessed to be minimal. |
 | **VMware** | Rackspace is currently confirming the mitigation or remediation strategy for any configuration or vendor dependencies. Customers who elect to patch hypervisors with the updates currently available should contact the VMware support team for further assistance.<br/><br/>For guest VMs, we recommend that customers also follow the guidance provided for Dedicated Windows or Linux as applicable. |
 
-#### References 
+#### References
 
 [Vulnerabilities Affecting Processors by Intel, AMD and ARM](https://blog.rackspace.com/rackspace-is-tracking-vulnerabilities-affecting-processors-by-intel-amd-and-arm).
