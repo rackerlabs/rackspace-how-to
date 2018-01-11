@@ -5,8 +5,8 @@ title: Rackspace Email Archiving known limitations
 type: article
 created_date: '2015-05-19'
 created_by: Beau Bailey
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-01-11'
+last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -53,3 +53,8 @@ archived message might reveal the email addresses of all list members.
 If archiving is enabled for the domain but an address at that domain has
 a rule or filter to delete messages from specific senders, the deleted
 messages are *not* archived.
+
+
+#### Spam ####
+
+If a message is flagged as spam, this message will not be archived.
