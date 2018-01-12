@@ -5,7 +5,7 @@ title: Email spoofing best practices for Exchange users
 type: article
 created_date: '2017-12-22'
 created_by: William Loy
-last_modified_date: '2017-12-22'
+last_modified_date: '2018-01-12'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
