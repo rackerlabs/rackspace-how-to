@@ -5,7 +5,7 @@ title: Clear Credential Manager
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
-last_modified_date: '2017-12-22'
+last_modified_date: '2018-01-12'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
@@ -23,9 +23,9 @@ This article describes how to remove previously stored passwords from your Outlo
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-1. Make sure Outlook is closed down completely
+1. Make sure that Outlook is closed down completely.
 
-2. Click on the Start Menu (or press the Windows key) and then search for **Control Panel**
+2. Click the Start Menu (or press the Windows key), and then search for **Control Panel**.
 
   - **Windows 10:**
 
@@ -36,26 +36,26 @@ For more information about prerequisite terminology, see [Cloud Office support t
       <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
 
 
-3. Double-click on **Credential Manager**.
+3. Double-click **Credential Manager**.
 
-4. Click on **Windows Credentials** once the window opens.
+4. Click **Windows Credentials** after the window opens.
 
-  - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address
+  - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address.
 
-  - For example (it may not be exactly as shown, but use as a base guideline): ```MicrosoftOutlook15:example@yourdomainexample.com```
+  - For example (It may not be exactly as shown, but use this as a base guideline): ```MicrosoftOutlook15:example@yourdomainexample.com```
 
-5. Click on the arrow next to the entry to display it
+5. Click the arrow next to the entry to display it.
 
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
 
-6. On the detail page of the credential entry, hit remove to remove it from the manager
+6. On the detail page of the credential entry, click **remove** to remove the credential from the manager.
 
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
 
-7. Repeat for all credentials matching Outlook(15/16) and your email address (should not be more than one to three entries).
+7. Repeat this process for all credentials matching Outlook(15/16) and your email address. There should only be one to three entries like this.
 
-8. Close all windows and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox and check the box **Remember My Credentials**
+8. Close all windows, and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox, and check the box **Remember My Credentials**.
 
-9. If successful, you should be taken to your Inbox and mail should start syncing.
+9. If successful, your Inbox should display, and mail should start syncing.
 
-**Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify you are using the correct password.
+**Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that you are using the correct password.
