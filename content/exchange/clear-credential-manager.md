@@ -23,7 +23,9 @@ This article describes how to remove previously stored passwords from your Outlo
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-1. Make sure that Outlook is closed down completely.
+### Clear old credentials
+
+1. Make sure that Outlook is closed.
 
 2. Click the Start Menu (or press the Windows key), and then search for **Control Panel**.
 
@@ -42,7 +44,8 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
   - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address.
 
-  - For example (It may not be exactly as shown, but use this as a base guideline): ```MicrosoftOutlook15:example@yourdomainexample.com```
+  - For example: ```MicrosoftOutlook15:example@yourdomainexample.com```
+    It may not be exactly as shown, but use it as a base guideline.
 
 5. Click the arrow next to the entry to display it.
 
@@ -52,10 +55,10 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
 
-7. Repeat this process for all credentials matching Outlook(15/16) and your email address. There should only be one to three entries like this.
+7. Repeat this process for all credentials matching Outlook(15/16) and your email address. Only one to three entries should be available.
 
 8. Close all windows, and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox, and check the box **Remember My Credentials**.
 
-9. If successful, your Inbox should display, and mail should start syncing.
+9. If this process is successful, your Inbox should display, and mail should start syncing.
 
 **Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that you are using the correct password.
