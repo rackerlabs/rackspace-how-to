@@ -22,7 +22,7 @@ This article explains email spoofing and describes the steps that you can take t
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-If you would prefer a video tutorial see [Exchange- Spoofing: How to identify & protect your organization](https://emailhelp.rackspace.com/l/how-to-prevent-email-spoofing).
+If you would prefer a video tutorial, see [Exchange- Spoofing: How to identify & protect your organization](https://emailhelp.rackspace.com/l/how-to-prevent-email-spoofing).
 
 ### What is email spoofing?
 
@@ -38,17 +38,17 @@ In many cases, the spoofed email is part of a **phishing** (scam) attack. In oth
 
 ### Identify a spoofed message
 
-Scammers alter different sections of an email to disguise who is the *actual* sender of the message. To view the following properties, you must open the **email headers** of a message that you suspect has been spoofed. Following are some examples of spoofed properties:
+Scammers alter different sections of an email to disguise the *actual* sender of the message. To view the following properties, you must open the **email headers** of a message that you suspect has been spoofed. Following are some examples of spoofed properties:
 
 - **FROM** boss@companyexample.com - This appears to come from a legitimate source on a spoofed message.
 
 - **REPLY-TO** - This can also be spoofed, but a lazy scammer might leave the actual **REPLY-TO** address. If you see a different sending address here, the email might have been spoofed.
-m
+
 - **RETURN-PATH** - This can also be spoofed, but a lazy scammer might leave the actual **RETURN-PATH** address. If you see a different sending address here, the email might have been spoofed.
 
 - **SOURCE IP** address or “X-ORIGIN” address - This is typically more difficult to alter but it is possible.
 
-The first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property, IP address, can also be altered, but usually requires more sophisticated user knowledge to make a false IP address convincing.
+The first three properties can be easily altered by using settings in your Microsoft Outlook, Gmail, Hotmail, or other email software. The fourth property, IP address, can also be altered, but it usually requires more sophistication to make a false IP address convincing.
 
 In the following example, it appears that the recipient has received a message from their office assistant requesting money.
 
