@@ -28,7 +28,7 @@ Safelisting does not prevent a sender from being flagged as spam. Safelisting en
 
 For administrator instructions on safelisting senders through the control panel, see [Blacklists in Microsoft Exchange](/how-to/spam-preferences-safe-lists-and-black-list-in-microsoft-exchange/#managing-safe-list).
 
-1. Log in to your Exchange mailbox at [apps.rackspace.com](apps.rackspace.com)
+1. Log in to your Exchange mailbox at [apps.rackspace.com](apps.rackspace.com).
 
 2. Click the gear icon in the upper right-hand corner, and then select **Options** from the drop down menu.
 
