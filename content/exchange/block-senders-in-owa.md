@@ -32,7 +32,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
     <img src="{% asset_path exchange/block-senders-in-owa/options_gear.png %}" />
 
-3. In the left-hand menu, click **Block or Allow**.
+3. In the **Options** menu, click **Mail > Accounts > Block or Allow**.
 
     <img src="{% asset_path exchange/block-senders-in-owa/block_or_allow.png %}" />
 
