@@ -11,6 +11,13 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 5 minutes
+- **Tools required:**  Control Panel billing permissions
+
 To view past invoices for your Cloud Office account, [log in to the
 Cloud Office Control Panel](https://cp.rackspace.com/) and perform the following
 steps:
