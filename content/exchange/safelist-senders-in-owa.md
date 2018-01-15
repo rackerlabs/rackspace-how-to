@@ -11,7 +11,7 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes how to safelist senders through the Outlook Web App interface. If you need to block a sender, see [Block senders in Outlook Web App](/how-to/block-senders-in-owa).
+This article describes how to safelist senders through the Outlook Web App interface. If you want to block a sender, see [Block senders in Outlook Web App](/how-to/block-senders-in-owa).
 
 ### Prerequisites
 
