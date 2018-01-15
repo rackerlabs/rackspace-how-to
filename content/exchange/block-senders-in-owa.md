@@ -36,7 +36,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
     <img src="{% asset_path exchange/block-senders-in-owa/block_or_allow.png %}" />
 
-4. Enter the email address or domain of the sender which you want to automatically mark as junk.
+4. Enter the email address or domain of the sender that you want to automatically mark as junk.
 
     <img src="{% asset_path exchange/block-senders-in-owa/blocked_senders.png %}" />
 
