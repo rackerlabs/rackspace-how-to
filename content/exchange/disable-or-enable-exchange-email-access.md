@@ -22,7 +22,7 @@ This article explains how to disable or enable access to an Exchange mailbox.
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-Blocking access to a mailbox prevents users from logging in to that mailbox. You might need to block access to a mailbox if an employee has left your company, or if you suspect the account has been compromised.
+Blocking access to a mailbox prevents users from logging in to that mailbox. You might need to block access to a mailbox if an employee has left your company or if you suspect the account has been compromised.
 
 **Warning:** Disabling a mailbox does not remove it from your billing. The mailbox continues to receive and store mail when access to it has been blocked.
 
