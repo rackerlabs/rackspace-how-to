@@ -1,7 +1,7 @@
 ---
-permalink: email-issue-on-tmobile-android-phones/
+permalink: email-issue-on-android-phones/
 audit_date: '2018-01-14'
-title: Email issue on T-Mobile Android phones
+title: Email issue on Android phones
 type: article
 created_date: '2015-03-31'
 created_by: Rose Contreras
