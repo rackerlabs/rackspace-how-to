@@ -53,7 +53,7 @@ This article focuses on the last section, which looks as follows on the
     alias_database = hash:/etc/aliases
 
     myorigin = /etc/mailname
-    mydestination = mail.democloud.com, localhost.democloud.com, , localhost
+    mydestination = mail.democloud.com, localhost.democloud.com, localhost
 
     relayhost =
     mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
