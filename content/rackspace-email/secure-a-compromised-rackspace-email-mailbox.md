@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Exchange mailbox, see [Secure a compromised Exchange mailbox](/how-to/secure-a-compromised-exchange-mailbox)
+This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Exchange mailbox, see [Secure a compromised Exchange mailbox](/how-to/secure-a-compromised-exchange-mailbox).
 
 ### Prerequisites
 
@@ -25,6 +25,9 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 #### Symptoms of a compromised mailbox
 
+
+If any of these symptoms apply to you, take immediate steps to secure the mailbox:
+
 - You have started receiving bounce messages for emails that you never sent.
 - You notice emails that are unfamiliar.
 - Your password has been changed.
@@ -33,9 +36,9 @@ For more information about prerequisite terminology, see [Cloud Office support t
 - Your reply-to address has been changed.
 - You received an email from Rackspace informing you that your mailbox has been disabled.
 
-Take immediate steps to secure the mailbox, if any of these symptoms apply to you.
-
 #### Risk factors
+
+Avoiding the following factors is a small inconvenience compared to the potential damage caused by a successful mailbox compromise. If you find that any of these factors apply to you, you should take immediate steps to secure your mailbox.
 
 - Weak or moderate strength passwords
 - Delaying software updates
@@ -44,20 +47,19 @@ Take immediate steps to secure the mailbox, if any of these symptoms apply to yo
 - Accessing your account from a public computer, such as those in libraries or hotels. If a computer is used by strangers all day, you should assume that it is unsafe to access your mailbox from it.
 - Accessing your account over public WiFi.
 
-Avoiding these factors is a small inconvenience compared to the potential damage caused by a successful mailbox compromise. If you find that any of the above factors apply to you, you should take immediate steps to secure your mailbox.
-
-
 #### Secure a mailbox that has been compromised
 
-1. Change the password to the mailbox immediately.
+Take the following steps to secure a mailbox that has been compromised:
 
-    - Locking out those who have compromised the mailbox is the top priority. The longer a bad actor has access to your account, the more damage that can be done. Review [Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices) when crafting a new password.
+1. Immediately change the password to the mailbox.
+
+    - Locking out those who have compromised the mailbox is the top priority. The longer a bad actor has access to your account, the more damage that can be done.  When crafting a new password, review [Password management and best practices](/how-to/password-management-and-best-practices/#password-best-practices).
 
 2. Scan all devices for viruses and malware.
 
-    - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time after you have removed the malicious software. Otherwise you mailbox information could already be in the hands of a hacker.
+    - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time after you have removed the malicious software. Otherwise your mailbox information could already be in the hands of a hacker.
 
-    - If the mailbox was disabled by Rackspace, follow these instructions to [restore mailbox access](/how-to/block-mailbox-access/#restore-mailbox-access)
+    - If the mailbox was disabled by Rackspace, follow these instructions to [restore mailbox access](/how-to/block-mailbox-access/#restore-mailbox-access).
 
     **Warning:** Do not restore access until **after** you have changed the mailbox password and scanned all devices for malicious software.
 
@@ -65,11 +67,11 @@ Avoiding these factors is a small inconvenience compared to the potential damage
 
     - It is better to raise the alarm and protect everyone's information than to risk the compromise growing beyond your mailbox.
 
-4. Blacklist the return-path and originating IP of the message that lead to the compromise, if that was the source. This is usually a message that contained a suspicious link or asked you for account information.
+4.If the return-path and originating IP of the message that led to the compromise was the source, blacklist them. Usually, the message contained a suspicious link or asked you for account information.
 
     - The [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers) article shows how to identify the return-path and originating IP of the malicious email.
 
-5. Educate your users on the risk factors and symptoms of a compromised mailbox. Email attacks are a constant threat that users and admins should be prepared for at all times.
+5. Educate your users about the risk factors and symptoms of a compromised mailbox. Email attacks are a constant threat that users and admins should be prepared for at all times.
 
 
 
