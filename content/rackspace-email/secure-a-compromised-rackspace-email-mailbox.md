@@ -5,13 +5,13 @@ title: Secure a compromised Rackspace Email mailbox
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
-last_modified_date: '2017-12-22'
-last_modified_by: William Loy
+last_modified_date: '2018-01-16'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Exchange mailbox reference [Secure a compromised Exchange mailbox](/how-to/secure-a-compromised-exchange-mailbox)
+This article describes steps to identify a compromised mailbox, stop the attack, and prevent future attacks. If you need instructions on securing a compromised Exchange mailbox, see [Secure a compromised Exchange mailbox](/how-to/secure-a-compromised-exchange-mailbox)
 
 ### Prerequisites
 
@@ -33,18 +33,18 @@ For more information about prerequisite terminology, see [Cloud Office support t
 - Your reply-to address has been changed.
 - You received an email from Rackspace informing you that your mailbox has been disabled.
 
-Take immediate steps to secure the mailbox if any of these symptoms apply to you .
+Take immediate steps to secure the mailbox, if any of these symptoms apply to you.
 
 #### Risk factors
 
 - Weak or moderate strength passwords
 - Delaying software updates
 - Clicking links from unverified sources
-- Clicking links without verifying their authenticity. Even links from what appears to be a trusted source can easily be a trick to gain access to    your account.
-- Accessing your account from a public computer such as those in libraries or hotels. If a computer is used by strangers all day, you should assume it is unsafe to access your mailbox from it.
+- Clicking links without verifying their authenticity. Even links from what appears to be a trusted source can easily be a trick to gain access to your account.
+- Accessing your account from a public computer, such as those in libraries or hotels. If a computer is used by strangers all day, you should assume that it is unsafe to access your mailbox from it.
 - Accessing your account over public WiFi.
 
-Avoiding these factors is a small inconvenience compared to what could be damaged from a successful mailbox compromise. If you find that any of the above factors apply to you, you should take immediate steps to secure your mailbox.
+Avoiding these factors is a small inconvenience compared to the potential damage caused by a successful mailbox compromise. If you find that any of the above factors apply to you, you should take immediate steps to secure your mailbox.
 
 
 #### Secure a mailbox that has been compromised
@@ -61,15 +61,15 @@ Avoiding these factors is a small inconvenience compared to what could be damage
 
     **Warning:** Do not restore access until **after** you have changed the mailbox password and scanned all devices for malicious software.
 
-3. Alert your colleagues and coworkers. If you are not the administrator for your company you should alert your administrator immediately.
+3. Alert your colleagues and coworkers. If you are not the administrator for your company, you should alert your administrator immediately.
 
-    - It is better to raise the alarm and protect everyone's information than risk the compromise growing beyond your mailbox.
+    - It is better to raise the alarm and protect everyone's information than to risk the compromise growing beyond your mailbox.
 
-4. Blacklist the return-path and originating IP of the message that lead to the compromise if that was the source. This is usually a message that contained a suspicious link or asked you for account information.
+4. Blacklist the return-path and originating IP of the message that lead to the compromise, if that was the source. This is usually a message that contained a suspicious link or asked you for account information.
 
-    - [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers) will help you identify the return-path and originating IP of the malicious email.
+    - The [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers) article shows how to identify the return-path and originating IP of the malicious email.
 
-5. Educate your users on the risk factors and symptoms of a compromised mailbox. Email attacks are a constant threat which users and admins should be prepared for at all times.
+5. Educate your users on the risk factors and symptoms of a compromised mailbox. Email attacks are a constant threat that users and admins should be prepared for at all times.
 
 
 
