@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-reseller-program/
-audit_date:
+audit_date: '2018-01-16'
 title: Rackspace Reseller Program
 type: article
 created_date: '2013-09-23'
 created_by: Rackspace Support
-last_modified_date: '2016-06-22'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-01-16'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
