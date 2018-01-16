@@ -1,17 +1,17 @@
 ---
 permalink: email-issue-on-android-phones/
-audit_date: '2018-01-14'
+audit_date: '2018-01-16'
 title: Email issue on Android phones
 type: article
 created_date: '2015-03-31'
 created_by: Rose Contreras
-last_modified_date: '2018-01-14'
+last_modified_date: '2018-01-16'
 last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-If you are an Android mobile phone user, you might sometimes experience problems sending or receiving email.  Attempts to receive email might be faster than normal (i.e. when a connection is successful, but no new email is found).  Attempts to connect to the outgoing server might fail without error or result in the following error message:
+If you are an Android mobile phone user, you might sometimes experience problems sending or receiving email.  Attempts to receive email might be faster than normal (such as when a connection is successful, but no new email is found).  Attempts to connect to the outgoing server might fail without error or result in the following error message:
 
 `Unable to connect to email server to verify you account information. No response from server.`
 
@@ -23,7 +23,7 @@ The procedure in this article was created by the Rackspace Technical Community t
 
 The Access Point Name (APN) is a gateway between a GPRS, 3G, or 4G mobile network and another computer network that runs on many Android devices. The outgoing email problem on Android phones occurs because the APN, which for T-Mobile is `fast.t-mobile.com`, is set to use IPv6 only and does not allow the outbound email server to respond. This in turn keeps emails on Android phones in the outbox until it connects to a Wi-Fi network. The default APN doesn't roll back to IPv4, so the SMTP connection cannot be made. The way to fix this is to add a new APN that does roll back to IPv4.
 
-Note that you might experience no problems using the default APN for other uses, such as browsing websites or using network-connected apps. 
+**Note:** You might experience no problems when accessing the default APN for other uses, such as browsing websites or using network-connected apps. 
 
 ### Before you add a new APN
 
