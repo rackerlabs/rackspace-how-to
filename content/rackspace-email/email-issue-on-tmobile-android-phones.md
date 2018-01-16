@@ -15,7 +15,7 @@ If you are an Android mobile phone user, you might sometimes experience problems
 
 `Unable to connect to email server to verify you account information. No response from server.`
 
-The procedure in this article was created by the Rackspace Technical Community team as a temporary solution to this issue. Ideally, Rackspace servers will someday support IPv6 for a permanent solution without the need to alter your T-Mobile default settings.
+The procedure in this article was created by the Rackspace Technical Community team as a temporary solution to this issue. A more permamnent solution is being investigated.
 
 **Note:** The procedure might be different for each Android mobile phone. The instructions in this article were created using a Galaxy Note 3.
 
