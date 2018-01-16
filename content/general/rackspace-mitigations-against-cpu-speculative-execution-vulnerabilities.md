@@ -13,7 +13,7 @@ product_url: undefined
 
 This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
-**Important**: RRackspace is executing our mitigation and remediation strategy to address these vulnerabilities, taking into account any configuration or vendor dependencies. We will provide additional guidance as more information becomes available.
+**Important**: Rackspace is executing our mitigation and remediation strategy to address these vulnerabilities, taking into account any configuration or vendor dependencies. We will provide additional guidance as more information becomes available.
 
 | Service | Mitigation Status |
 | --- | --- |
