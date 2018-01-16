@@ -1,12 +1,12 @@
 ---
 permalink: basic-settings-in-the-postfix-maincf-file/
-audit_date:
+audit_date: '2018-01-16'
 title: Basic settings in the Postfix main.cf file
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-01-16'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
