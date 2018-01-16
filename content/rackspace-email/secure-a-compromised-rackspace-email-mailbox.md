@@ -1,6 +1,6 @@
 ---
 permalink: secure-a-compromised-rackspace-email-mailbox/
-audit_date:
+audit_date: '2018-01-16'
 title: Secure a compromised Rackspace Email mailbox
 type: article
 created_date: '2017-12-18'
@@ -23,7 +23,7 @@ This article describes steps to identify a compromised mailbox, stop the attack,
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
 
-#### Symptoms of a compromised mailbox
+### Symptoms of a compromised mailbox
 
 
 If any of these symptoms apply to you, take immediate steps to secure the mailbox:
@@ -36,7 +36,7 @@ If any of these symptoms apply to you, take immediate steps to secure the mailbo
 - Your reply-to address has been changed.
 - You received an email from Rackspace informing you that your mailbox has been disabled.
 
-#### Risk factors
+### Risk factors
 
 Avoiding the following factors is a small inconvenience compared to the potential damage caused by a successful mailbox compromise. If you find that any of these factors apply to you, you should take immediate steps to secure your mailbox.
 
@@ -47,7 +47,7 @@ Avoiding the following factors is a small inconvenience compared to the potentia
 - Accessing your account from a public computer, such as those in libraries or hotels. If a computer is used by strangers all day, you should assume that it is unsafe to access your mailbox from it.
 - Accessing your account over public WiFi.
 
-#### Secure a mailbox that has been compromised
+### Secure a mailbox that has been compromised
 
 Take the following steps to secure a mailbox that has been compromised:
 
