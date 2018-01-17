@@ -39,4 +39,4 @@ We have aligned with Microsoft guidance to patch your device and mitigate the vu
 
 **Important**: Opting out of UEFI firmware updates and BIOS updates will result in not being protected against Variant 2 2017-5715 of Spectre.   
 
-As always, please contact your support team if you have any questions or concerns. 
+As always, contact your support team if you have any questions or concerns. 
