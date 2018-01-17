@@ -19,9 +19,9 @@ A kernel update to mitigate the exploits on the supported Linux distributions at
 
 Servers must be rebooted to apply the new kernel. At this time, Rackspace does not intend to force reboots of customer servers. For those customers who want to apply the update, Rackspace can install the new kernel and reboot servers immediately. Alternatively, Rackspace can install the new kernel and customers can schedule the reboots to occur in the future via the following methods: 
 
-Dedicated Physical Server: MyRack Customer Portal [https://my.rackspace.com](https://my.rackspace.com) -> Services -> Reboot Scheduling 
+- Dedicated Physical Server: MyRack Customer Portal [https://my.rackspace.com](https://my.rackspace.com) -> Services -> Reboot Scheduling 
 
-VMware Virtual Server: Supply the date, time and time zone. Rackspace will schedule an automated reboot on behalf of the customer. 
+- VMware Virtual Server: Supply the date, time and time zone. Rackspace will schedule an automated reboot on behalf of the customer. 
 
 Operating systems listed as ‘End of Life’ (EOL) by the vendor may not receive patches. For those configurations that run an older EOL operating system including (but not limited to) Red Hat Enterprise Linux 5, CentOS 5, and Ubuntu 12 LTS, Rackspace recommends that customers upgrade to a supported version. 
 
