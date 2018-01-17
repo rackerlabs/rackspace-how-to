@@ -25,4 +25,4 @@ VMware Virtual Server: Supply the date, time and time zone. Rackspace will sched
 
 Operating systems listed as ‘End of Life’ (EOL) by the vendor may not receive patches. For those configurations that run an older EOL operating system including (but not limited to) Red Hat Enterprise Linux 5, CentOS 5, and Ubuntu 12 LTS, Rackspace recommends that customers upgrade to a supported version. 
 
-Further remediation might be necessary as evaluation of these vulnerabilities continues. As always, please contact your support team with any questions or concerns. 
+Further remediation might be necessary as evaluation of these vulnerabilities continues. As always, contact your support team with any questions or concerns. 
