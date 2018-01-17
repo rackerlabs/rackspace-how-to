@@ -1,7 +1,7 @@
 ---
 permalink: windows-os-mitigations-against-cpu-speculative-execution-vulnerabilities
 audit_date:'2016-01-16'
-title: 'Windows OS Mitigations Against CPU Speculative Execution Vulnerabilities'
+title: 'Windows OS mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-01-16'
 created_by: Marc Nourani
@@ -29,13 +29,13 @@ It is important to note that the current security patch has the capability to el
 
 - Delayed Week: January 29-February 4  
 
-We have aligned with Microsoft guidance to patch your device and mitigate the vulnerability, and we will align with them on availability of the patches. Microsoft has released patches for Windows Server versions 2008R2, 2012R2 and 2016. At this time, Microsoft HAS NOT YET released patches for Windows Server versions 2008 and 2012.  The links below provide access to currently available patches, as well as any necessary registry keys:  
+We have aligned with Microsoft guidance to patch your device and mitigate the vulnerability, and we will align with them on availability of the patches. Microsoft has released patches for Windows Server versions 2008R2, 2012R2, and 2016. At this time, Microsoft **has not yet** released patches for Windows Server versions 2008 and 2012.  The links below provide access to currently available patches, as well as any necessary registry keys:  
 
 - [https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution](https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution)
 
 - [https://support.microsoft.com/en-us/help/4072699/important-information-regarding-the-windows-security-updates-released](https://support.microsoft.com/en-us/help/4072699/important-information-regarding-the-windows-security-updates-released)
 
-**Note**: These patches apply only to Windows operating systems. Additional patches for hardware and firmware will come in the future. We are working with our vendors to secure UEFI firmware and BIOS updates. If and when updates will be pushed out will vary from vendor to vendor, adding another layer of complexity to full remediation. Firmware updates are the final part of the process to protect against Variant 2 2017-5715 of Spectre. As it’s likely these updates will require reboots, customers must either opt in or opt out of the maintenance prior to execution.  
+**Note**: These patches apply only to Windows operating systems. Additional patches for hardware and firmware will come in the future. We are working with our vendors to secure UEFI firmware and BIOS updates. If and when updates will be pushed out will vary from vendor to vendor, adding another layer of complexity to full remediation. Firmware updates are the final part of the process to protect against Variant 2 2017-5715 of Spectre. Because it’s likely these updates will require reboots, customers must either opt in or opt out of the maintenance prior to execution.  
 
 **Important**: Opting out of UEFI firmware updates and BIOS updates will result in not being protected against Variant 2 2017-5715 of Spectre.   
 
