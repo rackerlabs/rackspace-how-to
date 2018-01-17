@@ -35,7 +35,7 @@ We have aligned with Microsoft guidance to patch your device and mitigate the vu
 
 - [https://support.microsoft.com/en-us/help/4072699/important-information-regarding-the-windows-security-updates-released](https://support.microsoft.com/en-us/help/4072699/important-information-regarding-the-windows-security-updates-released)
 
-**Note**: These patches apply only to Windows operating systems. Additional patches for hardware and firmware will come in the future. We are working with our vendors to secure Unified Extensible Firmware Interface (UEFI) firmware and Basic Input/Output System (BIOS) updates. If and when updates will be pushed out will vary from vendor to vendor, adding another layer of complexity to full remediation. Firmware updates are the final part of the process to protect against Variant 2 2017-5715 of Spectre. Because it’s likely these updates will require reboots, customers must either opt in or opt out of the maintenance prior to execution.  
+**Note**: The patches apply only to Windows operating systems. Additional patches for hardware and firmware will come in the future. We are working with our vendors to secure Unified Extensible Firmware Interface (UEFI) firmware and Basic Input/Output System (BIOS) updates. If and when updates will be pushed out will vary from vendor to vendor, adding another layer of complexity to full remediation. Firmware updates are the final part of the process to protect against Variant 2 2017-5715 of Spectre. Because it’s likely these updates will require reboots, customers must either opt in or opt out of the maintenance prior to execution.  
 
 **Important**: Opting out of UEFI firmware updates and BIOS updates will result in not being protected against Variant 2 2017-5715 of Spectre.   
 
