@@ -5,8 +5,8 @@ title: Secure a compromised Rackspace Email mailbox
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
-last_modified_date: '2018-01-16'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-01-19'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
