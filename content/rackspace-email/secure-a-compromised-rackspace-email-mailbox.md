@@ -67,7 +67,7 @@ Take the following steps to secure a mailbox that has been compromised:
 
     - It is better to raise the alarm and protect everyone's information than to risk the compromise growing beyond your mailbox.
 
-4.If the return-path and originating IP of the message that led to the compromise was the source, blacklist them. Usually, the message contained a suspicious link or asked you for account information.
+4. If the return-path and originating IP of the message that led to the compromise was the source, blacklist them. Usually, the message contained a suspicious link or asked you for account information.
 
     - The [View and read Rackspace Email headers](/how-to/view-and-read-rackspace-email-headers) article shows how to identify the return-path and originating IP of the malicious email.
 
