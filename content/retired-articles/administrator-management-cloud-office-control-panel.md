@@ -7,8 +7,6 @@ created_date: '2014-04-02'
 created_by: Mawutor Amesawu
 last_modified_date: '2016-01-15'
 last_modified_by: Kyle Laffoon
-product:
-product_url:
 ---
 
 From the Administrators section of the control panel, you can manage your administrators' access and activity.
