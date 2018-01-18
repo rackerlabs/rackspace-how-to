@@ -3,8 +3,8 @@ title: Contribution class exercise
 type: practice
 created_date: '2016-05-25'
 created_by: Nate Archer
-last_modified_date: '2017-07-04'
-last_modified_by: Paige Warmker
+last_modified_date: '2018-01-18'
+last_modified_by: Becky Geinzer
 product: undefined
 product_url: undefined
 ---
@@ -20,6 +20,7 @@ Answer each of the following questions by typing one of the answer options provi
 Yes
 Yes
 Somewhat
+Yes
 Yes
 Yes
 Yes
@@ -41,6 +42,7 @@ Somewhat Often
 Often
 Often
 Somewhat Often
+Somewhat Often
 **Answer options**
 - Often
 - Somewhat often
@@ -51,6 +53,7 @@ Yes
 Yes
 Yes
 Yes, if they have a need to edit the How-To
+Yes
 Yes
 Yes
 Yes
@@ -68,6 +71,7 @@ Yes (potentially, it'd depend on how much I'd actually get out of it)
 Yes
 No
 Yes
+Yes
 **Answer options**
 - Yes
 - No
@@ -80,6 +84,7 @@ Consideration for how people will come across this training; a lot of people wil
 Finally can update all this out of date documentation
 no
 Thanks!
+It would be nice if we were provided printed copy instead of trying to keep up with the video.
 **Answer options**
 - Open ended
 
