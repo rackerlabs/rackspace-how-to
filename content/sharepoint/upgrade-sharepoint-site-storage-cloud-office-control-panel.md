@@ -6,7 +6,7 @@ type: article
 created_date: '2014-04-10'
 created_by: Mawutor Amesawu
 last_modified_date: '2016-05-17'
-last_modified_by: Stephanie Fillmon
+last_modified_by: Cat Lookabaugh
 product: Microsoft SharePoint
 product_url: sharepoint
 ---
