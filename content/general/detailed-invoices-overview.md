@@ -6,7 +6,7 @@ type: article
 created_date: '2015-09-17'
 created_by: Nate Archer
 last_modified_date: '2017-12-04'
-last_modified_by: Stephanie Fillmon
+last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
