@@ -117,7 +117,7 @@ invoice
   -   Cloud Queues
   -   Cloud Servers
 
-- EVENT\_TYPE: Within the product (SERVICE\_TYPE), the event that accrued
+- EVENT_TYPE: Within the product (SERVICE\_TYPE), the event that accrued
 the charge, such as:
 
   -   BigData Uptime
