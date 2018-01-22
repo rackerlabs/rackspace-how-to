@@ -6,7 +6,7 @@ type: article
 created_date: '2015-06-18'
 created_by: David Hendler
 last_modified_date: '2017-09-01'
-last_modified_by: Renée Rendon
+last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
 ---
