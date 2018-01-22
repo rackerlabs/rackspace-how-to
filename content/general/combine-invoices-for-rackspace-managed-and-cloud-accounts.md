@@ -6,7 +6,7 @@ type: article
 created_date: '2017-08-07'
 created_by: Stephanie Fillmon
 last_modified_date: '2017-08-31'
-last_modified_by: Stephanie Fillmon
+last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
 ---
