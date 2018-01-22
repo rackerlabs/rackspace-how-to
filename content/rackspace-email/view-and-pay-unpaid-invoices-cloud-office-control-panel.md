@@ -6,7 +6,7 @@ type: article
 created_date: '2014-03-31'
 created_by: Mawutor Amesawu
 last_modified_date: '2016-01-18'
-last_modified_by: Kyle Laffoon
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
