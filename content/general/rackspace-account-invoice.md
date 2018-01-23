@@ -6,7 +6,7 @@ type: article
 created_date: '2014-09-01'
 created_by: Kenny Johnston
 last_modified_date: '2017-11-29'
-last_modified_by: Stephanie Fillmon
+last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
