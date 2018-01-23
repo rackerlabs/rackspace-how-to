@@ -1,7 +1,7 @@
 ---
 permalink: supported-operating-systems/
 audit_date:
-title: Supported Operating Systems
+title: Supported Operating Systems in Rackspace Public Cloud
 type: article
 created_date: '2015-07-16'
 created_by: Nate Archer
@@ -11,24 +11,23 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Our service levels support a number of operating systems (OSs). Services
-are updated to support the latest version of an OS on the same date that
+Rackspace Public Cloud provides the following supported images. 
+Services are updated to support the latest version of an OS on the same date that
 the OS is updated. Earlier versions of an OS are supported only for a
 limited amount of time after the OS is updated.
 
 We support the most current versions of the following OSs:
 
--   Arch
 -   CentOS
--   CoreOS
+-   CoreOS*
 -   Debian
--   Fedora
--   FreeBSD
--   Gentoo
--   openSUSE
+-   Fedora*
 -   Red Hat Enterprise Linux
--   Scientific Linux
 -   Ubuntu
 -   Vyatta
 -   Windows Server 2008 R2
 -   Windows Server 2012 R2
+
+Any OS that is marked as EOL (end-of-life) by its distributor is not supported by Rackspace.
+
+*Not supported at the Managed Operations Service level
