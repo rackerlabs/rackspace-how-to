@@ -6,7 +6,7 @@ type: article
 created_date: '2013-04-12'
 created_by: Renee Rendon
 last_modified_date: '2016-06-17'
-last_modified_by: Kelly Holcomb
+last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
