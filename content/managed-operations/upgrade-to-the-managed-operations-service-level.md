@@ -17,6 +17,7 @@ Rackspace Public Cloud, you can upgrade to the Managed Operations service level.
 
 ### Upgrade to the Managed Operations service level
 
+
 1.  In the **Cloud Control Panel**, choose **Rackspace Cloud** from the drop-down list of products located at the top of the page on the utility navigation bar.
 
 2.  Click **Account** on the utility navigation bar to see your current level of service under **Service Level** from thedrop-down list.
