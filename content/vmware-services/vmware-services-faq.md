@@ -1,72 +1,83 @@
 ---
-permalink: managed-vmware-services-faq/
+permalink: server-virtualization-faq/
 audit_date:
-title: Managed VMware Services FAQ
+title: Server Virtualization FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2017-03-30'
-last_modified_by: Stephanie Fillmon
-product: Managed VMware Services
+last_modified_date: '2018-01-23'
+last_modified_by: Alexandra Settle
+product: Server Virtualization
 product_url: managed-vmware-services
 ---
 
 ### Architecture
 
-#### What type of replication solutions do you offer?
+#### What type of Disaster Recovery (DR) solutions does Rackspace offer?
 
-Rackspace offers two different solutions for replication. At a high
-level, the differences are automated versus manual failover and the
-selection should depend on your RPO/RTO.
+Rackspace offers three different solutions for DR:
 
--   SRM: Automated failover. Provides RTO/RPO dependent on your
-    configuration and based on testing.
--   VM Replication (vRanger): Manual failover. Provides no RTO/RPO.
+* Replication Manager:
 
-#### What are the benefits of virtualization?
+  Replication Manager is an add-on service for VMware® Server Virtualization
+  that utilizes VMware® vCenter™ Site Recover Manager™ (SRM) to automate portions
+  of the customer’s disaster recovery (DR) plan.
 
-Server portability, consolidation, cloning, and snapshots.
+* VM Recovery:
+  
+  Managed Backup Virtual Machine Recovery (VMR), is the Rackspace productized
+  version of VMware’s API for Data Protection (VADP) based backups to
+  protect VMware Server Virtualization VMs.Managed Backup (MBU) VMR is a
+  fully managed multi-tenant Backup and Recovery Service for VMware
+  Server Virtualization environments hosted in the RAX Datacenters.
 
-#### With Managed VMware, can I log in to the hypervisor?
+* VM Replication:
+  
+  VM Replication provides geographical redundancy and helps protect
+  business-critical VMs in the event of a data center outage or unplanned
+  downtime. Geographical redundancy is a key component to any sound
+  disaster recovery (DR) strategy. VM Replication helps protect and recover
+  VMware Server Virtualization VMs by easily and cost effectively
+  replicating VMs between our data centers.
 
-No. However, if you have Dedicated vCenter, you do have the ability to
-log in to your hypervisor(s).
+#### What are the benefits of Rackspace Server Virtualization?
 
-#### With Managed VMware, do I get API access to the virtual centers or hypervisors?
+Rackspace Server Virtualization is a fully-managed virtualization platform.
 
-No. Rackspace does not provide API access.
+#### With Server Virtualization, can I log in to the hypervisor?
+
+No. However, you are able to view the performance and other statistics
+through the MyRackspace Portal. See the Server Virtualization Customer
+Handbook for more details, or contact your support team.
+
+#### With Server Virtualization, do I get API access to the virtual centers or hypervisors?
+
+No. Rackspace does not provide API access. If you are interested in gaining
+access to the software, speak to your Rackspace account team about
+[Rackspace Private Cloud powered by VMware](https://www.rackspace.com/en-gb/vmware/private-cloud).
 
 ------------------------------------------------------------------------
 
 ### Features
 
-#### How do I reimage a VM?
+#### How do I re-image a VM?
 
-You can request this through an action in the customer portal.
+You can request this through an action in the MyRackspace portal.
 
-#### Are imaged-based backups part of the managed virtualization offering?
+#### Are imaged-based backups part of the Server Virtualization offering?
 
 Yes, for an additional service fee. This is accomplished via VM
 Recovery.
 
 #### Can I use fault tolerance with my Rackspace VMs?
 
-This feataure is not currently supported.
-
-#### How does vMotion work?
-
-vMotion is the process by which one hypervisor hands off a VM's memory
-and processes to another hypervisor in the cluster. This process is down
-while the VM is online and with no interuption of the VMs services. It
-is important to note that vMotion does not preserve VM uptime in the
-event of a fatal hypervisor failure. The source and destination
-hypervisors must be operational and healthy in order for the vMotion to
-be successful.
+Server Virtualization does not currently allow vMotion and therefore
+fault tolerance is not enabled.
 
 #### Does Rackspace offer utility billing for VMs?
 
-Yes. If you power down a VM through the customer portal, you do not 
-pay for it as long as it is powered down.
+Yes. You can power down VMs through the MyRackspace portal. Once the
+VM is off, billing ceases.
 
 #### How are my VMs backed up?
 
@@ -77,19 +88,22 @@ CommVault.
 
 Snapshot is a point-in-time delta file to track all changes to a virtual
 machine. Snapshots give you the ability to roll-back (Windows
-patching at the disk level). Snapshots ARE NOT a permanent backup, and
-generally should not be kept for more than 72 hours because they take up the
-required 15% overhead.
+patching at the disk level). Snapshots are not a permanent backup, and
+generally should not be kept for more than 72 hours.
 
 #### What can I use the portal for?
 
--  Order new VMs
+-  Ordering new or multiple VMs
 -  Change resources of a VM
 -  Resize VMs
+-  Request re-imaging of a VM
+-  Cloning and copying VMs
 -  Power on or off and reset VMs
--  Snapshots
--  Suspend VMs
--  Performance metrics (CPU/RAM utilization, network, disk utilization)
+-  Performance metrics for VMs, hypervisors, and clusters (CPU/RAM utilization, network, disk utilization)
+-  Requesting deletion of VMs
+
+For more information on how to perform these actions, see the Server Virtualization
+Customer Handbook.
 
 ------------------------------------------------------------------------
 
@@ -104,10 +118,10 @@ Assigning too many CPUs slows performance down. Begin with 2 CPUs, and go to
 recommendation for a physical environment, virtual CPUs do not map 1:1
 to physical CPUs. It's a completely different architecture.
 
-#### Why does Rackspace require 15% overhead storage?
+#### Why does Rackspace require overhead storage?
 
 This overhead is necessary to perform functions like
-cloning, snapshotting, or vMotion. 15% is non-negotiable.
+cloning, snapshotting, or vMotion.
 
 ------------------------------------------------------------------------
 
@@ -115,26 +129,8 @@ cloning, snapshotting, or vMotion. 15% is non-negotiable.
 
 #### How do I add RAM or CPU to a VM?
 
-In the
-[my.rackspace.com](https://my.rackspace.com/portal/auth/login?targetUri=%2Fhome)
-portal, go to **Products &gt; Managed Virtualization** and click on the
-gear icon next to the name of the VM. Select **Resize VM**. The current
-RAM and CPU are selected. Change the values as necessary and then click
-**Resize Virtual Machine**.
-
-**Warning:** Selecting **Resize VM** causes your VM to power off
-immediately. This process takes approximately 5 minutes plus the
-required boot time.
-
-#### Where is data stored if I create a snapshot, clone, or template?
-
--   Snapshots are stored with the VM and consume your allocated
-    storage infrastructure. Snapshots must be carefully managed to
-    ensure that they don't consume all the disk space.
--   Clones are stored on the Rackspace infrastructure, so they don't use
-    allocated disk resources. You can create one clone per VM.
--   Templates are stored on the Rackspace infrastructure. You can create
-    one template per VM.
+For information on how to perform this actions, see the User Manual section of
+the Server Virtualization Customer Handbook.
 
 #### What are the differences between snapshot, clones, and templates?
 
@@ -164,42 +160,44 @@ required boot time.
     of future VMs. A template is also stored on the Rackspace
     storage infrastructure. You can create one template per VM.
 
+#### Where is data stored if I create a snapshot, clone, or template?
+
+-   Snapshots are stored with the VM and consume your allocated
+    storage infrastructure. Snapshots must be carefully managed to
+    ensure that they don't consume all the disk space.
+-   Clones are stored on the Rackspace infrastructure, so they don't use
+    allocated disk resources. You can create one clone per VM.
+-   Templates are stored on the Rackspace infrastructure. You can create
+    one template per VM.
+
 #### How can I expand or shrink my virtual disk?
 
 You can expand but you can't shrink. To expand, submit a ticket and
 specify the virtual disk that you would like expanded.
 
-#### How do I view the performance of a VM or host?
+#### How do I view the performance or monitor my available resources of a VM or host?
 
-Performance monitors are built into the portal under the
-VM/host/cluster.
+Use the MyRackspace portal to see which resources
+(storage - local or otherwise) are reserved or available to provision
+VMs in your environment.
+
+For information on how to view performance, see the User Manual section of
+the Server Virtualization Customer Handbook.
 
 #### Can I have a clone or template created at a scheduled time interval?
 
 You can do this in an automated fashion with the VM Recovery service,
 or manually at your preferred times within the customer portal.
 
-#### How do I monitor my available sever virtualization resources?
-
-Use the [portal](https://my.rackspace.com/) to see which resources
-(storage - local or otherwise) are reserved or available to provision
-VMs in your environment.
-
-**Note**: This only applies for the Server Virtualization product, not
-Dedicated vCenter or Dedicated vCloud.
-
 #### How do I create and delete clones or templates?
 
-Use the portal to access the VM, and click **Create Clone/Template** in
-the **Clone/Templates** section. Use a similar process for deleting,
-by clicking **Delete Clone/Template**. You can also clone a VM by
-clicking the **Copy VM** action in the portal.
+For information on how to view performance, see the User Manual section of
+the Server Virtualization Customer Handbook.
 
 #### How do I create and delete snapshots?
 
-Use the portal to access the VM, and click **Create Snapshot** in the
-**Snapshots** section. Use a similar process to delete a VM, by clicking
-**Delete Snapshot** .
+For information on how to view performance, see the User Manual section of
+the Server Virtualization Customer Handbook.
 
 #### Can I have a copy of my Rackspace VM?
 
