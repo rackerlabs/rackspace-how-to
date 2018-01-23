@@ -44,7 +44,7 @@ The benefits of using the self-migration tool:
 -   Can be accessed from any Internet browser
 -   24x7 ***Fanatical Support***<sup>&reg;</sup> provided by a team of email experts
 
-**Note:** Current customers seeking to upgrade to Office 365 should review [Rackspace Email and Microsoft Exchange upgrade to Office 365 FAQ](/how-to/rackspace-email-and-microsoft-exchange-upgrade-to-office-365-faq/) for questions and instructions on the process.
+**Note:** Current customers seeking to upgrade to Office 365 should review [Rackspace Email and Microsoft Exchange upgrade to Office 365 FAQ](/how-to/upgrade-rackspace-email-and-microsoft-exchange-to-office-365-faq) for questions and instructions on the process.
 
 #### Assisted migration
 

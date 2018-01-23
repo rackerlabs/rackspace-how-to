@@ -7,8 +7,8 @@ created_date: '2011-03-16'
 created_by: Rackspace Support
 last_modified_date: '2016-07-13'
 last_modified_by: Nate Archer
-product: Rackspace Email
-product_url: rackspace-email
+product:
+product_url:
 ---
 
 PHP mail provides the most granular control of the data and content of the emails sent from your domain or site. However, PHP mail only works when relayed over SMTP. The following article shows you how to test and send different types of email using PHP.
@@ -53,7 +53,7 @@ appropriate values for your system:
 -  `$body`
 -  `$host`
 -  `$username`
--  `$password`  
+-  `$password`
 
 Following is a sample PHP script for sending email via standard SMTP:
 

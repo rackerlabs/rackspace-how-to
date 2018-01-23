@@ -3,7 +3,7 @@ title: Rackspace Email
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2017-09-06'
+last_modified_date: '2018-01-10'
 last_modified_by: William Loy
 permalink: /rackspace-email/
 product: Rackspace Email
@@ -38,7 +38,7 @@ Welcome to Rackspace Email! Use this brief step-by-step guide to help you get st
 - [Cloud Office Control Panel overview](/how-to/cloud-office-control-panel-overview)
 - [Account information in the Cloud Office Control Panel](/how-to/my-account-cloud-office-control-panel)
 - [General information in the Cloud Office Control Panel](/how-to/general-information-cloud-office-control-panel)
-- [Administrator management: Cloud Office Control Panel](/how-to/administrator-management-cloud-office-control-panel)
+- [Manage administrators with the Cloud Office Control Panel](/how-to/manage-email-administrators-with-the-cloud-office-control-panel)
 - [View administrator activity in the Cloud Office Control Panel](/how-to/view-administrator-activity-in-the-cloud-office-control-panel)
 - [Upgrades in the Cloud Office Control Panel](/how-to/upgrades-cloud-office-control-panel)
 - [Domains in the Cloud Office Control Panel](/how-to/domains-cloud-office-control-panel)
