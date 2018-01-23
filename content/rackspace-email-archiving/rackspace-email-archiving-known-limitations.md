@@ -57,4 +57,4 @@ messages are *not* archived.
 
 #### Spam
 
-If a message is flagged as spam, the message is not be archived.
+If a message is flagged as spam, the message is not archived.
