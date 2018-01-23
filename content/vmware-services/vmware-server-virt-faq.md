@@ -7,7 +7,7 @@ created_date: '2015-12-10'
 created_by: Rackspace Support
 last_modified_date: '2018-01-23'
 last_modified_by: Alexandra Settle
-product: Server Virtualization
+product: managed-vmware-services
 product_url: managed-vmware-services
 ---
 
@@ -17,13 +17,13 @@ product_url: managed-vmware-services
 
 Rackspace offers three different solutions for DR:
 
-* Replication Manager:
+- Replication Manager:
 
   Replication Manager is an add-on service for VMware® Server Virtualization
   that utilizes VMware® vCenter™ Site Recover Manager™ (SRM) to automate portions
   of the customer’s disaster recovery (DR) plan.
 
-* VM Recovery:
+- VM Recovery:
   
   Managed Backup Virtual Machine Recovery (VMR), is the Rackspace productized
   version of VMware’s API for Data Protection (VADP) based backups to
@@ -31,7 +31,7 @@ Rackspace offers three different solutions for DR:
   fully managed multi-tenant Backup and Recovery Service for VMware
   Server Virtualization environments hosted in the RAX Datacenters.
 
-* VM Replication:
+- VM Replication:
   
   VM Replication provides geographical redundancy and helps protect
   business-critical VMs in the event of a data center outage or unplanned
