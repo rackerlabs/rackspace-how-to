@@ -62,14 +62,14 @@ A Trace route illustrates the path created between your personal device and our 
 
 #### Identifying issues
 
-   A trace route will show the sequential server "hop" taken to reach our server in addition to the time it took to complete each hop. When reviewing a trace route we are typically looking for a delay or a failure in the trace progression.
+ A trace route will show the sequential server "hop" taken to reach our server in addition to the time it took to complete each hop. When reviewing a trace route we are typically looking for a delay or a failure in the trace progression.
 
-   For example, if the average hop is between 1 and 50 milliseconds and you see a hop the takes 1000 milliseconds we have just identified a delay in connection.
+ For example, if the average hop is between 1 and 50 milliseconds and you see a hop the takes 1000 milliseconds we have just identified a delay in connection.
 
-   If the trace does not complete, this is also indicative of a connection issues.
+ If the trace does not complete, this is also indicative of a connection issues.
 
 #### Correcting connection issues
 
-   Trace routes most often identify a specific network where the connection issue is occurring. Once you have identified the offending network, you should provide this information to your network administrator for that identified network.
+ Trace routes most often identify a specific network where the connection issue is occurring. Once you have identified the offending network, you should provide this information to your network administrator for that identified network.
 
-   This could be your Internet Service Provider, your business's local network administrator, or you email administrator.
+ This could be your Internet Service Provider, your business's local network administrator, or you email administrator. Notify them of the issue for further direction in resolving the issue.
