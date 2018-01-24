@@ -15,7 +15,7 @@ This page lists various Rackspace services and their current mitigation status f
 
 **Important**: Rackspace continues to execute its mitigation and remediation strategy to address the CPU speculative execution vulnerabilities. We have multiple teams working with the utmost urgency to remediate these vulnerabilities. This a complex and evolving situation, as the guidance provided by numerous vendors regarding remediation efforts and patching continues to change. Based on the level of threat, we firmly believe the best course forward is to continue working with our vendors as they develop stable and proven patches, and applying them in the least impactful manner possible. 
 
-            If Rackspace needs to take action that would impact customers, we will provide additional guidance directly to the customers involved. To view the current status of our remediation efforts, visit the Rackspace Support Network.
+      If Rackspace needs to take action that would impact customers, we will provide additional guidance directly to the customers involved. To view the current status of our remediation efforts, visit the Rackspace Support Network.
 
 | Service | Mitigation Status |
 | --- | --- |
