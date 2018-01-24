@@ -1,5 +1,5 @@
 ---
-permalink: supported-operating-systems/
+permalink: supported-operating-systems-in-rackspace-public-cloud/
 audit_date:
 title: Supported Operating Systems in Rackspace Public Cloud
 type: article
