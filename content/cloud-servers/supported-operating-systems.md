@@ -22,11 +22,12 @@ We support the most current versions of the following OSs:
 -   CoreOS*
 -   Debian
 -   Fedora*
--   Red Hat Enterprise Linux
+-   Red Hat Enterprise Linux (OnMetal Servers only)
 -   Ubuntu
 -   Vyatta
 -   Windows Server 2008 R2
 -   Windows Server 2012 R2
+-   Windows Server 2016 (OnMetal Servers only)
 
 Any OS that is marked as EOL (end-of-life) by its distributor is not supported by Rackspace.
 
