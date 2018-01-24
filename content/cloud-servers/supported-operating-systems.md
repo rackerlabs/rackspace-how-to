@@ -13,11 +13,11 @@ product_url: cloud-servers
 
 Rackspace Public Cloud provides the following supported images. 
 On the same date that a distributor updates an operating system (OS), Rackspace updates services to support 
-the OS update. For a limited amount of time after the OS update, we continue to support earlier versions of the OS.
+the OS update. We continue to support earlier versions of the OS for a limited amount of time after the OS update.
 
 We do not support OSs that are marked as EOL (end-of-life) by its distributor.
 
-We support the current versions of the following OSs:
+We support current versions of the following OSs:
 
 -   CentOS
 -   CoreOS *
