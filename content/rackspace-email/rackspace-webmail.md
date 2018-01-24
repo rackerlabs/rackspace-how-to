@@ -5,8 +5,8 @@ title: Rackspace Webmail overview
 type: article
 created_date: '2012-05-27'
 created_by: Rackspace Support
-last_modified_date: '2017-12-11'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-1-24'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
