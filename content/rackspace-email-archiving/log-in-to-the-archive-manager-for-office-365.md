@@ -21,6 +21,8 @@ product_url: rackspace-email-archiving
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 
+### Log in to the archive manager
+
 You can log in to the Email Archive Manager directly from your
 domain-specific URL (for example, `http://yourdomaincom.archivesrvr.com`).
 
@@ -36,7 +38,6 @@ performing the following steps:
 3.  Select the gear icon next to **Rackspace Office 365 Archiving**.
 
     <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager-for-office-365/gear_icon.png %}"  />
-
 
 4.  Select **View Archive**.
 
