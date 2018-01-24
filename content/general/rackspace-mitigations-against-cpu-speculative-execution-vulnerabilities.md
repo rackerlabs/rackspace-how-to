@@ -33,6 +33,7 @@ This page lists various Rackspace services and their current mitigation status f
 | **VMware®** | Customers who elect to patch hypervisors with the updates currently available should contact the VMware support team for further assistance.<br/><br/>For guest VMs, we recommend that customers also follow the guidance provided for Windows OS or Linux OS, as applicable. |
 | **Windows OS** | Currently, normal Rackspace patching processes will apply. Rackspace will add vendor patches to the patching schedule as they become available and are tested by Rackspace.<br/><br/>Customers who want to update devices in advance of typical patching windows should contact their support team.<br/><br/>For more information, see [Windows OS mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/windows-os-mitigations-against-cpu-speculative-execution-vulnerabilities/). |
 
+
 #### References
 
 [Vulnerabilities Affecting Processors by Intel, AMD and ARM](https://blog.rackspace.com/rackspace-is-tracking-vulnerabilities-affecting-processors-by-intel-amd-and-arm)
