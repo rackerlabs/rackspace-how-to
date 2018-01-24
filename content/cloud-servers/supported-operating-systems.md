@@ -30,4 +30,4 @@ We support the current versions of the following OSs:
 -   Windows Server 2012 R2
 -   Windows Server 2016 (OnMetal Servers only)
 
-* Not supported at the Managed Operations Service level
+*Not supported at the Managed Operations Service level
