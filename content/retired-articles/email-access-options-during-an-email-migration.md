@@ -7,8 +7,8 @@ created_date: '2013-12-04'
 created_by: Milton Prado
 last_modified_date: '2016-12-02'
 last_modified_by: Stephanie Fillmon
-product: Rackspace Email
-product_url: rackspace-email
+product:
+product_url:
 ---
 
 Customers who migrate from their current email host to Rackspace often set up email clients such as Outlook after the migration is completed. Rackspace mailboxes, however, can be accessed any time after they are created, even before the migration is completed. Accessing the mailboxes does not interrupt a migration in process.
