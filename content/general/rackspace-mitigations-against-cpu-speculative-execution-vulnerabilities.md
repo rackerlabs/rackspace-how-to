@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-mitigations-against-cpu-speculative-execution-vulnerabilities/
-audit_date: '2018-01-09'
+audit_date: '2018-01-24'
 title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
