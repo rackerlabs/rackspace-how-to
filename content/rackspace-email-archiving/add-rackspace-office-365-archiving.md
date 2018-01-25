@@ -30,17 +30,17 @@ For more information about prerequisite terminology, see [Cloud Office support t
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/) by using your Rackspace Cloud Office admin ID and password.
 2. In the Microsoft Office 365 section, click **Manage Office 365**.
 
-   <img src="{% asset_path office-365/add-rackspace-office-365-archiving/manage-365.png %}" />
+   <img src="{% asset_path rackspace-email-archiving/add-rackspace-office-365-archiving/manage-365.png %}" />
 
 3. Click the **Add Product** button.
 
-   <img src="{% asset_path office-365/add-rackspace-office-365-archiving/add-product.png %}" />
+   <img src="{% asset_path rackspace-email-archiving/add-rackspace-office-365-archiving/add-product.png %}" />
 
 4. Click the **Add-Ons** tab.
 
 5. Click the radio button next to **Rackspace Office 365 Archiving**.
 
-   <img src="{% asset_path office-365/add-rackspace-office-365-archiving/add-ons.png %}" />
+   <img src="{% asset_path rackspace-email-archiving/add-rackspace-office-365-archiving/add-ons.png %}" />
 
 6. A summary will appear describing  the number of licenses that the archiving will be applied to as well as the total cost per month to add the service. If this summary appears to be correct, click **Add Product**.
 
