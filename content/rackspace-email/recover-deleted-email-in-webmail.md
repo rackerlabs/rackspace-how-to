@@ -5,7 +5,7 @@ title: Recover deleted email in Webmail
 type: article
 created_date: '2013-11-05'
 created_by: William Loy
-last_modified_date: '2018-01-25'
+last_modified_date: '2018-01-26'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
