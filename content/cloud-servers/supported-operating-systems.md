@@ -1,6 +1,6 @@
 ---
 permalink: supported-operating-systems-in-rackspace-public-cloud/
-audit_date:
+audit_date: '2018-01-25'
 title: Supported Operating Systems in Rackspace Public Cloud
 type: article
 created_date: '2015-07-16'
