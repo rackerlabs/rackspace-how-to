@@ -11,7 +11,7 @@ product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-This article describes how to add an Office 365 product license in the Cloud Office Control Panel. This license allows a Cloud Office user to access an Office 365 subscription, depending on the number of licenses allotted in the Cloud Office control panel.
+This article describes how to add Rackspace Office 365 archiving to an existing Office 365 tenant.
 
 For more information about Office 365 subscriptions, see [Set Up Office 365](/how-to/set-up-office-365).
 
@@ -42,4 +42,6 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path office-365/add-rackspace-office-365-archiving/add-ons.png %}" />
 
-6. A summary will appear describing  the number of licenses that the archiving will be applied to as well as the total cost per month to add the service. If this summary appears to be correct, click **Add Product**
+6. A summary will appear describing  the number of licenses that the archiving will be applied to as well as the total cost per month to add the service. If this summary appears to be correct, click **Add Product**.
+
+**Note:** Your archive will be accessible after a duration of 24 hours from the time it was enabled on the account. See [Log in to the Archive Manager for Office 365](/how-to/log-in-to-the-archive-manager-for-office-365)
