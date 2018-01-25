@@ -31,7 +31,7 @@ Rackspace instead charges based on *aggregate transfer*. This method is
 ideal for our hosting customers because it results in lower bandwidth
 charges. Instead of penalizing for peak hour consumption (as in the 95th
 percentile method), this method charges you only for the bandwidth that
-you use. As shown in the following graph, in the 95th percentile method
+you use. In the 95th percentile method
 you would be charged for bandwidth use at a rate of 377 Kbps sustained
 across the entire month. With Rackspace, you would instead be charged
 for the equivalent of 196 Kbps, converted at per GB transferred.
