@@ -5,15 +5,15 @@ title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
-last_modified_date: '2018-01-24'
-last_modified_by: Nate Archer
+last_modified_date: '2018-01-26'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
 This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
-**Important**: Rackspace continues to execute its mitigation and remediation strategy to address the CPU speculative execution vulnerabilities. We have multiple teams working with the utmost urgency to remediate these vulnerabilities. This a complex and evolving situation, as the guidance provided by numerous vendors regarding remediation efforts and patching continues to change. Based on the level of threat, we firmly believe the best course forward is to continue working with our vendors as they develop stable and proven patches, and applying them in the least impactful manner possible. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved. 
+**Important**: Rackspace continues to execute its mitigation and remediation strategy to address the CPU speculative execution vulnerabilities. We have multiple teams working with the utmost urgency to remediate these vulnerabilities. This a complex and evolving situation, as the guidance provided by numerous vendors regarding remediation efforts and patching continues to change. Based on the level of threat, we firmly believe the best course forward is to continue working with our vendors as they develop stable and proven patches, and applying them in the least impactful manner possible. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
 | Service | Mitigation Status |
 | --- | --- |
@@ -26,7 +26,8 @@ This page lists various Rackspace services and their current mitigation status f
 | **Network Security** | Risk to Network Security appliances is assessed to be minimal. |
 | **ObjectRocket** | Our engineering teams continue to work with our vendors to review all internal and customer environments. If we need to take action that would impact production databases, we will provide additional guidance directly to the customers involved. |
 | **Rackspace Application Services** | Rackspace will provide additional guidance directly to potentially affected customers. |
-| **Rackspace Managed Security (RMS)** | Customers should review the platform-specific guidance provided in this document. Customers who have specific questions regarding RMS services or other security concerns should contact the RMS Customer Experience Team. |
+| **Rackspace Managed Security (RMS)** | Customers should review the platform-specific guidance provided on this page. Customers who have specific questions regarding RMS services or other security concerns should contact the RMS Customer Experience Team. |
+| **Rackspace Network Infrastructure** | Engineers have confirmed with all vendors that these vulnerabilities cannot be exploited on the Rackspace network infrastructure. |
 | **Rackspace Private Cloud** | **RedHat® OpenStack® Platform**: Rackspace has provided guidance to affected customers that patches are currently available.<br/><br/>**Rackspace Private Cloud Ubuntu®**: Rackspace will provide additional guidance to affected customers, including options to patch or upgrade OpenStack release based on Ubuntu kernel version.<br/><br/>**Guest Instances**: Rackspace recommends that customers follow guidance provided by the applicable OS vendor. |
 | **Rackspace Public Cloud** | Should Rackspace take action on our infrastructure that would impact customers, we will provide additional guidance directly to affected customers.<br/><br/>For guest instances, Rackspace recommends that customers follow guidance provided by the applicable OS vendor. |
 | **Storage and Managed Backup** | Risk to Managed Storage appliances and Managed Backup services are assessed to be minimal. |
