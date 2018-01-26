@@ -85,8 +85,6 @@ When a legitimate message is flagged as spam, follow these recommendations:
   most effective method for improving the reputation of the sender and is a
   long-term solution.
 
-- If a message has been delivered to your inbox that you consider to be spam, report it by moving the message to the spam folder.
-
 - Advise the sender that they are being flagged as spam and provide them with
   [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/).
 
@@ -94,6 +92,9 @@ When a legitimate message is flagged as spam, follow these recommendations:
   [Manage Safelists at Rackspace Cloud Office](/how-to/spam-preferences-safe-lists-and-black-list-in-rackspace-email/#manage-safelists).
 
    **Note:** Using a safelist ensures that the messages from the sender are delivered to your inbox, but it does not remove a spam flag from a message.
+
+If a message has been delivered to your inbox that you consider to be spam, report it by moving the message to the spam folder.
+
 
 **Warning:** Rackspace Cloud Office does not forward any message that is flagged as spam, regardless of whether it is safelisted. If the message is sent to an alias, contact, group list, or distribution list, it is considered to be forwarded and is not delivered if the message is flagged as spam.
 
