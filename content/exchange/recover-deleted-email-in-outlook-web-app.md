@@ -11,7 +11,8 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes steps to
+This article describes steps to recover messages that have been purged from the Deleted Items folder.
+
 ### Prerequisites
 
 - **Applies to:** User or administrator
@@ -22,23 +23,22 @@ This article describes steps to
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
 
-For up to 14 days, users can recover email messages even after the messages have been purged from the Trash folder. To do so, log in to [Webmail](https://apps.rackspace.com), and perform the following steps:
+For up to 14 days from the moment an item is purged from trash, users can recover email messages from the **Recover Deleted Items** tool. To do so, log in to [Outlook Web App](https://apps.rackspace.com), and perform the following steps:
 
-1. Right-click the **Trash** folder and select **Recover Deleted Email**.
+1. Right-click the **Deleted Items** folder and select **Recover Deleted Items**.
 
-    <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/RecoverDeleted_1.png %}" width="216" height="299" />
+    <img src="{% asset_path exchange/recover-deleted-email-in-outlook-web-app/recover_deleted_messages.png %}" alt="" />
 
-2. Select the messages that you want to recover.
+2. The **Recover Deleted Items** tool will open in a separate window.
 
-    <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/RecoverDeleted_2.png %}" width="638" height="405" />
+3. Select the items you would like to recover, and click **Recover**.
 
-3. Click **Recover to Folder** and select the folder you want to move the messages to.
+    <img src="{% asset_path exchange/recover-deleted-email-in-outlook-web-app/recover_messages.png %}" alt="" />
 
-    <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/RecoverDeleted_3.png %}" width="631" height="345" />
+4. A confirmation box will appear that describes where the messages will be placed. Click **OK**.
 
-When you see the confirmation `Message(s) Recovered`, you are done.
+    <img src="{% asset_path exchange/recover-deleted-email-in-outlook-web-app/ok.png %}" alt="" />
 
-**Note:** Admins can perform this task on behalf of their users by using the **Log In As**
-functionality available in the Cloud Office Control Panel.
+5. You can now exit the **Recover Deleted Items** tool and confirm the messages were placed back in their originating folder.
 
-<img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/recoverdeleted_4.png %}" width="704" height="172" />
+   <img src="{% asset_path exchange/recover-deleted-email-in-outlook-web-app/inbox.png %}" alt="" />
