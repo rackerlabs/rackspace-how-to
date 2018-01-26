@@ -27,7 +27,7 @@ For up to 14 days from the moment an item is purged from trash, users can recove
 
 1. Right-click the **Deleted Items** folder and select **Recover Deleted Items**.
 
-    <img src="{% asset_path exchange/recover-deleted-email-in-outlook-web-app/recover_deleted_messages.png %}" alt="" />
+    <img src="{% asset_path exchange/recover-deleted-email-in-outlook-web-app/recover_deleted_items.png %}" alt="" />
 
 2. The **Recover Deleted Items** tool will open in a separate window.
 
