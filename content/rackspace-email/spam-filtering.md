@@ -1,6 +1,6 @@
 ---
 permalink: spam-filtering/
-audit_date: `2017-11-29`
+audit_date: '2017-11-29'
 title: Spam filtering
 type: article
 created_date: '2017-05-24'
