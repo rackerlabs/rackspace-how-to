@@ -1,6 +1,6 @@
 ---
 permalink: spam-filtering/
-audit_date:
+audit_date: `2017-11-29`
 title: Spam filtering
 type: article
 created_date: '2017-05-24'
@@ -85,7 +85,7 @@ When a legitimate message is flagged as spam, follow these recommendations:
   most effective method for improving the reputation of the sender and is a
   long-term solution.
 
-- If a message has been delivered to your inbox that you consider to be spam, report it by moving the message to the spam folder. 
+- If a message has been delivered to your inbox that you consider to be spam, report it by moving the message to the spam folder.
 
 - Advise the sender that they are being flagged as spam and provide them with
   [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/).
