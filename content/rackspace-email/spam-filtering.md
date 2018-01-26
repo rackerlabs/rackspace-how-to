@@ -5,8 +5,8 @@ title: Spam filtering
 type: article
 created_date: '2017-05-24'
 created_by: William Loy
-last_modified_date: '2017-11-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-01-26'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -84,6 +84,8 @@ When a legitimate message is flagged as spam, follow these recommendations:
 - Always “unflag” or mark legitimate messages as “Not Spam.” This is the
   most effective method for improving the reputation of the sender and is a
   long-term solution.
+
+- If a message has been delivered to your inbox that you consider to be spam, report it by moving the message to the spam folder.
 
 - Advise the sender that they are being flagged as spam and provide them with
   [Best practices for sending person to person email](/how-to/best-practices-for-sending-person-to-person-email/).
