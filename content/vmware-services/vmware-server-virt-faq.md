@@ -1,11 +1,11 @@
 ---
 permalink: server-virtualization-faq/
-audit_date:
+audit_date: '2018-01-29'
 title: Server Virtualization FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2018-01-23'
+last_modified_date: '2018-01-29'
 last_modified_by: Alexandra Settle
 product: Managed VMware Services
 product_url: managed-vmware-services
@@ -13,42 +13,41 @@ product_url: managed-vmware-services
 
 ### Architecture
 
-#### What type of Disaster Recovery (DR) solutions does Rackspace offer?
+#### What type of disaster recovery (DR) solutions does Rackspace offer?
 
 Rackspace offers three different solutions for DR:
 
 - Replication Manager:
 
-  Replication Manager is an add-on service for VMware® Server Virtualization
-  that utilizes VMware® vCenter™ Site Recover Manager™ (SRM) to automate portions
+  Replication Manager is an add-on service for VMware&reg; Server Virtualization
+  that utilizes VMware vCenter&trade; Site Recover Manager&trade; (SRM) to automate portions
   of the customer’s disaster recovery (DR) plan.
 
-- VM Recovery:
+- Virtual Machine Recovery:
   
-  Managed Backup Virtual Machine Recovery (VMR), is the Rackspace productized
+  Managed Backup Virtual Machine Recovery (VMR) is the Rackspace-productized
   version of VMware’s API for Data Protection (VADP) based backups to
-  protect VMware Server Virtualization VMs.Managed Backup (MBU) VMR is a
-  fully managed multi-tenant Backup and Recovery Service for VMware
-  Server Virtualization environments hosted in the RAX Datacenters.
+  protect VMware Server Virtualization VMs. Managed Backup (MBU) VMR is a
+  fully managed multi-tenant Backup and Recovery service for VMware
+  Server Virtualization environments hosted in the Rackspace data centers.
 
 - VM Replication:
   
   VM Replication provides geographical redundancy and helps protect
   business-critical VMs in the event of a data center outage or unplanned
   downtime. Geographical redundancy is a key component to any sound
-  disaster recovery (DR) strategy. VM Replication helps protect and recover
-  VMware Server Virtualization VMs by easily and cost effectively
+  DR strategy. VM Replication helps protect and recover
+  VMware Server Virtualization VMs by easily and cost-effectively
   replicating VMs between our data centers.
 
 #### What are the benefits of Rackspace Server Virtualization?
 
-Rackspace Server Virtualization is a fully-managed virtualization platform.
+Rackspace Server Virtualization is a fully managed virtualization platform.
 
 #### With Server Virtualization, can I log in to the hypervisor?
 
 No. However, you are able to view the performance and other statistics
-through the MyRackspace Portal. See the Server Virtualization Customer
-Handbook for more details, or contact your support team.
+through the MyRackspace&reg; portal. Contact your support team for more details.
 
 #### With Server Virtualization, do I get API access to the virtual centers or hypervisors?
 
@@ -66,13 +65,13 @@ You can request this through an action in the MyRackspace portal.
 
 #### Are imaged-based backups part of the Server Virtualization offering?
 
-Yes, for an additional service fee. This is accomplished via VM
+Yes, they are available for an additional service fee. This is accomplished via VM
 Recovery.
 
 #### Can I use fault tolerance with my Rackspace VMs?
 
-Server Virtualization does not currently allow vMotion and therefore
-fault tolerance is not enabled.
+Server Virtualization does not currently allow VMware vSphere&reg; Storage vMotion&reg;
+and therefore fault tolerance is not enabled.
 
 #### Does Rackspace offer utility billing for VMs?
 
@@ -82,28 +81,25 @@ VM is off, billing ceases.
 #### How are my VMs backed up?
 
 Rackspace can back up VMs through our VM Recovery service or
-CommVault.
+CommVault&reg;.
 
 #### What is a snapshot and how does it work?
 
 Snapshot is a point-in-time delta file to track all changes to a virtual
-machine. Snapshots give you the ability to roll-back (Windows
-patching at the disk level). Snapshots are not a permanent backup, and
+machine. Snapshots give you the ability to roll back (Windows
+patching at the disk level). Snapshots are not a permanent backup and
 generally should not be kept for more than 72 hours.
 
-#### What can I use the portal for?
+#### What can I use the MyRackspace portal for?
 
 -  Ordering new or multiple VMs
--  Change resources of a VM
+-  Change the resources of a VM
 -  Resize VMs
 -  Request re-imaging of a VM
 -  Cloning and copying VMs
 -  Power on or off and reset VMs
 -  Performance metrics for VMs, hypervisors, and clusters (CPU/RAM utilization, network, disk utilization)
 -  Requesting deletion of VMs
-
-For more information on how to perform these actions, see the Server Virtualization
-Customer Handbook.
 
 ------------------------------------------------------------------------
 
@@ -113,9 +109,9 @@ Customer Handbook.
 
 Less is better. It is more important to size VMs closer to what they
 need as opposed to loading in extra capacity that might not be used.
-Assigning too many CPUs slows performance down. Begin with 2 CPUs, and go to
-4 if necessary. Very rarely start with 4 or more. Regardless of vendor
-recommendation for a physical environment, virtual CPUs do not map 1:1
+Assigning too many CPUs slows performance down. Begin with two CPUs, and go to
+four if necessary. Very rarely start with four or more. Regardless of vendor
+recommendation for a physical environment, virtual CPUs do not map 1 to 1
 to physical CPUs. It's a completely different architecture.
 
 #### Why does Rackspace require overhead storage?
@@ -146,9 +142,9 @@ the Server Virtualization Customer Handbook.
     Snapshots are best used in situations such as patching, where a
     snapshot is reverted or remerged (deleted) depending on
     patch success. Snapshots are stored with the VM and therefore use
-    your storage allocation. We therefore recommend that you keep
-    snapshots only for 2-3 days to prevent overuse of the disk.
--   **Clone** : A clone is a one-to-one image copy of an existing VM. It
+    your storage allocation. We recommend that you keep
+    snapshots only for two to three days to prevent overuse of the disk.
+-   **Clone**: A clone is a one-to-one image copy of an existing VM. It
     acts independently from a parent VM, but it is an exact copy of the
     parent VM when it is initially created. You can create new VMs from
     the clones. You can create one clone per VM on the
@@ -172,8 +168,8 @@ the Server Virtualization Customer Handbook.
 
 #### How can I expand or shrink my virtual disk?
 
-You can expand but you can't shrink. To expand, submit a ticket and
-specify the virtual disk that you would like expanded.
+You can expand your virtual disk but you can't shrink it. To expand, submit a ticket and
+specify the virtual disk that you want expanded.
 
 #### How do I view the performance or monitor my available resources of a VM or host?
 
@@ -186,7 +182,7 @@ the Server Virtualization Customer Handbook.
 
 #### Can I have a clone or template created at a scheduled time interval?
 
-You can do this in an automated fashion with the VM Recovery service,
+You can do this in an automated fashion with the VM Recovery service
 or manually at your preferred times within the customer portal.
 
 #### How do I create and delete clones or templates?
@@ -202,7 +198,7 @@ the Server Virtualization Customer Handbook.
 #### Can I have a copy of my Rackspace VM?
 
 Due to our licensing agreements with vendors, we cannot provide a
-licensed VM image until approved by our Legal team.
+licensed VM image until that is approved by our Legal team.
 
 #### Do powered-down VMs count toward my available resources?
 
@@ -210,15 +206,15 @@ Yes. The **Available RAM (or CPU)** field in the portal takes into
 account all VMs, whether powered down or not. However, powered-down VMs
 prevent the VM from consuming resources on the hypervisor.
 
-#### How many clones/templates/snapshots can I have active?
+#### How many clones, templates, and snapshots can I have active?
 
-1 clone, 1 template, unlimited snapshots. Snapshots can be "unlimited"
+You can have one clone, one template, and unlimited snapshots. Snapshots can be "unlimited"
 in that they take up to the original size of the original disk. The
-snapshots take up customer's storage and do count toward the required 15%
+snapshots take up customer storage and do count toward the required 15%
 overhead.
 
 #### How long will it take to provision a VM?
 
 It depends, but probably greater than a week. Deployment times can vary
-based on the request (rely on other teams), availability of resources/IP
-addresses, and storage/compute resources (CPU and RAM)/hypervisor.
+based on the request (rely on other teams), availability of resources or IP
+addresses, and storage or compute resources (CPU and RAM) and hypervisors.
