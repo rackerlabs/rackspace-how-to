@@ -27,7 +27,7 @@ company's primary domain. If you assign **mycompany.biz** and
 the aliases will be automatically redirected to a mailbox on the primary
 domain, **mycompany.com**.
 
-**Warning:** You must own the domain you plan to use as a domain alias or accepted domain. The [MX records](/how-to/dns-record-definitions/#mx-record) must also point to Rackspace for mail to be delivered to your mailboxes here.
+**Warning:** You must own the domain that you plan to use as a domain alias or accepted domain. The [MX records](/how-to/dns-record-definitions/#mx-record) must also point to Rackspace for mail to be delivered to your mailboxes.
 
 The type of email hosting service that you use determines the relevant
 terminology ("domain alias" versus "accepted domain") and functionality
