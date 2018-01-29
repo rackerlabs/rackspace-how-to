@@ -1,11 +1,11 @@
 ---
 permalink: view-invoice-history-cloud-office-control-panel/
-audit_date:
+audit_date: '2018-01-29'
 title: View invoice history in the Cloud Office Control Panel
 type: article
 created_date: '2014-03-31'
 created_by: Mawutor Amesawu
-last_modified_date: '2018-01-15'
+last_modified_date: '2018-01-29'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
