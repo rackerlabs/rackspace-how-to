@@ -11,6 +11,8 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
+This article describes how to view past invoices in the Cloud Office Control Panel.
+
 ### Prerequisites
 
 - **Applies to:** Administrator
