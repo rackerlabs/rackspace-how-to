@@ -1,17 +1,17 @@
 ---
 permalink: use-pivot-tables-with-your-cloud-billing-invoice/
-audit_date: '2016-05-24'
+audit_date: '2018-02-02'
 title: Use pivot tables with your Cloud billing invoice
 type: article
 created_date: '2015-03-24'
 created_by: David Hendler
-last_modified_date: '2017-08-10'
+last_modified_date: '2018-02-02'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-You can use a CSV-formatted invoice to filter and manipulate your Rackspace
+You can use a comma-seperated-vales (CSV) invoice to filter and manipulate your Rackspace
 billing data. Three pivot tables are available to help you find the information
 that you need.
 
@@ -33,29 +33,31 @@ your spreadsheet application and download it:
     -   OpenOffice
         ([download](http://cf86f577ce3eeb804b0b-b288f28026fa4fe9b175ca1cf838e8ff.r99.cf2.rackcdn.com/rackspace_billing_open_office_pivot_tables.ods))
 
-    Note: The following steps use the current version of Microsoft Excel on [Windows|Mac OSX].
+    **Note:** The following steps use the current version of Microsoft Excel on [Windows|Mac OSX].
     If you are using a different spreadsheet application version or a different OS,
     adjust your steps accordingly.
+    
 2.  Log in to the portal.
 
       a.  Dedicated account customers: Log in to the [MyRackspace customer portal](https://my.rackspace.com/).
 
       b.  Cloud customers: Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-3.  Choose next menu option.
+      
+3.  Choose the next menu option, based on your account type.
 
       a.  Dedicated account customers: Click **Account** > **Transactions**.
 
       b.  Cloud customers: Click **Billing History** > **Invoice Details**.
-4.  Click **Billing History** > **Invoice Details**.
-5.  In the **Filter Invoice** menu, select the invoice that you want to view.
-6.  On the **Invoice Details** page, click the CSV link and export the CSV invoice file.
-7.  Open Microsoft Excel, and create a new workbook. Do not open the CSV invoice file.
-8.  In the new workbook, click **Data** > **From Text/CSV**.
+      
+4.  In the **Filter Invoice** menu, select the invoice that you want to view.
+5.  On the **Invoice Details** page, click the CSV link, and export the CSV invoice file.
+6.  Open Microsoft Excel, and create a new workbook. Do not open the CSV invoice file.
+7.  In the new workbook, click **Data** > **From Text/CSV**.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/step2.png %}" width="314" height="268" />
 
-9. In the import dialog box, select your CSV invoice file, and click **Get Data**.
-10. In the import wizard, select **Delimited** (using commas as the delimiter
+8. In the import dialog box, select your CSV invoice file, and click **Get Data**.
+9. In the import wizard, select **Delimited** (using commas as the delimiter
 value), change the file origin to **Unicode (UTF-8)**, and click **Load**.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/step4.png %}" width="314" height="268" />
@@ -64,21 +66,21 @@ value), change the file origin to **Unicode (UTF-8)**, and click **Load**.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/result.png %}" width="690" height="153" />
 
-11. Click the small blank square at the top left of the spreadsheet to
+10. Click the small blank square at the top left of the spreadsheet to
     select all of the values.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/2%20-%20billing_SelectAll_arrow.png %}" width="314" height="268" />
 
-12. Copy the data to your clipboard.
-13. Open the spreadsheet file that you downloaded in step 1.
-14. Paste the CSV data into the **Invoice CSV Data** worksheet. Ensure that you
+11. Copy the data to your clipboard.
+12. Open the spreadsheet file that you downloaded in step 1.
+13. Paste the CSV data into the **Invoice CSV Data** worksheet. Ensure that you
 select the A1 cell when you paste.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/3%20-%20billing_csvTab_arrow.png %}" width="538" height="130" />
 
-15. In each of the three pivot tables (worksheets), right-click the pivot table,
+14. In each of the three pivot tables (worksheets), right-click the pivot table,
 and select **Refresh**.
-16. Save the spreadsheet with a new name to your computer.
+15. Save the spreadsheet with a new name to your computer.
 
 
 ### Video demos
