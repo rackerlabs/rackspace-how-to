@@ -17,16 +17,14 @@ The instructions in this article are for customers who signed up for their Racks
 ### Access your Cloud Office Control Panel
 
 1.  Log in to the [MyRackspace Customer Portal](https://my.rackspace.com/).
-
 2.  From the **Products** menu, click **Cloud Office**.
-
 3.  In the Cloud Office window, click **Open Cloud Office Control Panel**.
 
 ### Add mailboxes
 
 Follow these steps to add a mailbox.
 
-1.  After accessing your Cloud Office Control Panel, in the email hosting section click **Mailboxes**.
+1.  In the email hosting section, click **Mailboxes**.
 2.  Click the domain to which you want to add mailboxes.
 3.  Click **Add Mailbox**.
 4.  On the **General** tab, enter values in the **User Details** section.
@@ -48,7 +46,7 @@ If you do not have access to your DNS records, contact your domain registrar and
 -   `MX1.EMAILSRVR.COM (Priority 10)`
 -   `MX2.EMAILSRVR.COM (Priority 20)`
 
-The MX record changes take about 24 hours to update. During the update mail starts being delivered to your
+The MX record changes take about 24 hours to update. During the update, mail starts being delivered to your
 *new mailboxes* instead of your old ones.
 
 #### View your mail
@@ -88,7 +86,7 @@ Follow these steps to set up a mailbox alias.
 4.  Click **Add Alias**.
 5.  Enter the new alias in the **Create New Alias** field.
 6.  *(Optional)* Select members of your domain and move them to the **Members of this Alias** field, and click **Add**.
-7.  *(Optional)* Add email addresses for members outside of your domain into the **Email Address** field and click **Add**.
+7.  *(Optional)* Add email addresses for members outside of your domain into the **Email Address** field, and click **Add**.
 8.  Click **Save**.
 
 **Note:** To add a *domain alias*, create a support ticket in the
@@ -117,11 +115,11 @@ The initial credit card payment that you made online was a one-time payment. Fol
 To view and download your invoices follow these steps:
 
 1.  Log in to [MyRackspace Customer Portal](https://my.rackspace.com).
-2.  Click **Account** and select **Transactions**.
+2.  Click **Account**, and select **Transactions**.
 
     You can view an invoice by clicking on its number.
 
-3.  To download your invoices, click the **Actions** button and select **Export All Transactions**.
+3.  To download your invoices, click the **Actions** button, and select **Export All Transactions**.
 
 ### Downgrade or cancel your services
 
