@@ -17,9 +17,8 @@ The instructions in this article are for customers who signed up for their Racks
 
 - **Applies to:** Administrator or User (UK) 
 - **Difficulty:** Easy
-- **Time needed:** Approximately 5 minutes
  
- For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 
 ### Access your Cloud Office Control Panel
