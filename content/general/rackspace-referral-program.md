@@ -5,8 +5,8 @@ title: Rackspace Referral Program
 type: article
 created_date: '2013-09-23'
 created_by: Rackspace Support
-last_modified_date: '2016-06-22'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-01-30'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
@@ -21,10 +21,10 @@ customers and prospects.
 
 Following are the key features of the program:
 
-- Delivers immediate rewards and benefits to our customers and partners in return for their referrals
-- Provides a simple and intuitive program that makes it easy for you to do business with us
-- Enables our customers and partners to leverage the unique depth and breadth of the Rackspace Hybrid Cloud portfolio
-- Leverages our global brand to uncover new opportunities and easily refer out solutions to your customers and prospects
+- Delivers immediate rewards and benefits to our customers and partners in return for their referrals.
+- Provides a simple and intuitive program that makes it easy for you to do business with us.
+- Enables our customers and partners to leverage the unique depth and breadth of the Rackspace Hybrid Cloud portfolio.
+- Leverages our global brand to uncover new opportunities and easily refer out solutions to your customers and prospects.
 
 In addition to providing Rackspace and cobranded collateral, we also have a
 portal that you can use to register your leads, access sales and marketing
