@@ -1,6 +1,6 @@
 ---
 permalink: cloud-office-quick-start-for-uk-customers/
-audit_date:
+audit_date: '2018-01-30'
 title: Cloud Office quick start for UK customers
 type: article
 created_date: '2015-06-22'
@@ -123,15 +123,15 @@ To view and download your invoices follow these steps:
 
 3.  To download your invoices, click the **Actions** button and select **Export All Transactions**.
 
-#### Downgrade or cancel your services
+### Downgrade or cancel your services
 
 If you want to downgrade your services, you must submit a support ticket.
 
 Rackspace has a 30-day cancellation policy. Inform us of your intentions by either calling us or submitting a support ticket.
 
-**Note:** Email hosting services are a month-to-month service billed in appears and are not be billed pro-rata.
+**Note:** Email hosting services are a month-to-month service billed in appears and are not billed pro-rata.
 
-#### Mail terms, conditions, and acceptable usage policy
+### Mail terms, conditions, and acceptable usage policy
 
 [Rackspace Mail terms and conditions](http://www.rackspace.com/information/legal/mailterms)
 
