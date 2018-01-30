@@ -5,8 +5,8 @@ title: Cloud Office quick start for UK customers
 type: article
 created_date: '2015-06-22'
 created_by: Rose Contreras
-last_modified_date: '2018-01-08'
-last_modified_by: William Loy
+last_modified_date: '2018-01-30'
+last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -16,8 +16,7 @@ The instructions in this article are for customers who signed up for their Racks
 
 ### Access your Cloud Office Control Panel
 
-1.  Log in to the [MyRackspace Customer
-    Portal](https://my.rackspace.com/).
+1.  Log in to the [MyRackspace Customer Portal](https://my.rackspace.com/).
 
 2.  From the **Products** menu, click **Cloud Office**.
 
@@ -40,7 +39,7 @@ Follow these steps to add a mailbox.
 
     **Note:** If you want to move your existing email account to your Rackspace account, contact the Cloud Office support team about your migration before you change your MX records. Contact Cloud Office support at 0800 954 1007 or 020 8734 4029. You can also create a Cloud Office support ticket by selecting **Support &gt; Tickets &gt; Create New Ticket**.
 
-#### Change your MX records
+### Change your MX records
 
 MX records tell the Internet where to deliver your mail. You must have access to your Domain Name System (DNS) records in order to point your MX records to the Rackspace email servers. For instructions on setting up your DNS records, see [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email).
 
@@ -49,7 +48,7 @@ If you do not have access to your DNS records, contact your domain registrar and
 -   `MX1.EMAILSRVR.COM (Priority 10)`
 -   `MX2.EMAILSRVR.COM (Priority 20)`
 
-The MX record changes take about 24 hours to update. During the update mail will start being delivered to your
+The MX record changes take about 24 hours to update. During the update mail starts being delivered to your
 *new mailboxes* instead of your old ones.
 
 #### View your mail
@@ -79,34 +78,26 @@ Follow these steps to set up a mailbox alias.
 
 8.  Click **Save**.
 
-#### Add an alias
+### Add an alias
 
 Follow these steps to set up a mailbox alias.
 
 1.  Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
-
 2.  In the Rackspace Email section, click **Aliases**.
-
 3.  Select the domain for which you want to add an alias.
-
 4.  Click **Add Alias**.
-
 5.  Enter the new alias in the **Create New Alias** field.
-
 6.  *(Optional)* Select members of your domain and move them to the **Members of this Alias** field, and click **Add**.
-
 7.  *(Optional)* Add email addresses for members outside of your domain into the **Email Address** field and click **Add**.
-
 8.  Click **Save**.
 
 **Note:** To add a *domain alias*, create a support ticket in the
 [MyRackspace Customer Portal](https://my.rackspace.com/). This option is not available in the
 Cloud Office Control Panel.
 
-#### Migrate your existing mail account
+### Migrate your existing mail account
 
-You can migrate your email data to your Rackspace mail account in the
-following ways:
+You can migrate your email data to your Rackspace mail account in the following ways:
 
 -   **Do it yourself** - If you are currently using a POP mailbox, this is your only option. If you are not certain or have any questions, contact our Support team at 0800 954 1007 or 020 8734 4029. You can also create a support ticket in the [MyRackspace portal](https://my.rackspace.com/).
 
@@ -114,14 +105,14 @@ following ways:
 
 -   **Assisted migrations** - This option is for companies that need help with consulting, planning, and scheduling a migration project. Contact our Assisted Migrations team by creating a support ticket in the [MyRackspace portal](https://my.rackspace.com/). They will provide you with all the necessary information.
 
-#### Set up payments
+### Set up payments
 
 The initial credit card payment that you made online was a one-time payment. Follow these steps to set up your preferred payment method:
 
 1.  Log in to the [MyRackspace Customer Portal](https://my.rackspace.com/).
 2.  Select **Account &gt; Payments** from the drop-down menu.
 
-#### View and download invoices
+### View and download invoices
 
 To view and download your invoices follow these steps:
 
