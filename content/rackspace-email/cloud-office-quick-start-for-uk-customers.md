@@ -13,6 +13,14 @@ product_url: rackspace-email
 
 The instructions in this article are for customers who signed up for their Rackspace Email account at <http://www.rackspace.co.uk>. The steps in this article guide you through setting up your Rackspace mail services.
 
+### Prerequisites
+
+- **Applies to:** Administrator or User (UK) 
+- **Difficulty:** Easy
+- **Time needed:** Approximately 5 minutes
+ 
+ For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
 
 ### Access your Cloud Office Control Panel
 
