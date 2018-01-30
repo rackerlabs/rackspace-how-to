@@ -41,4 +41,4 @@ steps:
 3. Click an invoice number to view a detailed invoice.
 
    - To print the invoice, click **Print Invoice** in the upper-right corner of the invoice window.
-   - To export the invoice as a CSV, click **Export CSV**, and then save the file to your computer.
+   - To export the invoice as a CSV file, click **Export CSV**, and then save the file to your computer.
