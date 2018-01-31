@@ -1,11 +1,11 @@
 ---
 permalink: upload-a-file-to-rackspace-email-plus-cloud-drive/
-audit_date: '2018-01-29'
+audit_date: '2018-01-31'
 title: Upload a file to Rackspace Email Plus Cloud Drive
 type: article
 created_date: '2018-01-09'
 created_by: William Loy
-last_modified_date: '2018-01-29'
+last_modified_date: '2018-01-31'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -21,6 +21,7 @@ This article describes how to upload a file to your Rackspace Email Plus Cloud D
 - **Tools required:**  apps.rackspace.com access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
 ### Saving documents to Cloud Drive
 
 Ensure that Cloud Drive is installed on your device before continuing. If you need to install Cloud Drive, see [Installing Cloud Drive](/how-to/rackspace-email-plus-getting-started/#cloud-drive-for-desktop).
