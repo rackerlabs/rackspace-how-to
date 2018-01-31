@@ -1,12 +1,12 @@
 ---
 permalink: upgrade-sharepoint-site-storage-cloud-office-control-panel/
-audit_date:
+audit_date: '2018-01-30'
 title: Upgrade SharePoint site storage in the Cloud Office Control Panel
 type: article
 created_date: '2014-04-10'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-05-17'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-01-30'
+last_modified_by: Cat Lookabaugh
 product: Microsoft SharePoint
 product_url: sharepoint
 ---
@@ -21,14 +21,13 @@ To upgrade SharePoint storage, [log in to the Cloud Office Control Panel](https:
 
     <img src="{% asset_path sharepoint/upgrade-sharepoint-site-storage-cloud-office-control-panel/SharePoint1.3.png %}" width="488" height="113" />
 
-2. In the **Quantity** field, enter the amount of additional storage that you want in whole numbers. Your current monthly rate, along
-    with your new monthly rate, and prorated charges are displayed in the **Summary** section.
+2. In the **Quantity** field, enter the integer amount of additional storage that you want. Your current monthly rate, your new monthly rate, and the prorated charges display in the **Summary** section.
 
     <img src="{% asset_path sharepoint/upgrade-sharepoint-site-storage-cloud-office-control-panel/SharePoint2.3.png %}" width="692" height="317" />
 
 3. Click **Review Order**.
 
-4. Review the upgrade details and billing information. To update billing information click **Edit**.
+4. Review the upgrade details and billing information. To update billing information, click **Edit**.
 
 5. Click **Complete Order**.
 

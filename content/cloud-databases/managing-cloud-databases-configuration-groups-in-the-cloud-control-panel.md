@@ -5,8 +5,8 @@ title: Manage Cloud Databases configuration groups in the Cloud Control Panel
 type: article
 created_date: '2014-11-13'
 created_by: Rose Contreras
-last_modified_date: '2016-06-09'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-01-11'
+last_modified_by: DaPriest Watson
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -22,8 +22,6 @@ zone for an instance by defining the `default_time_zone` parameter in a
 configuration group.
 
 This article describes how to manage configurations using the Cloud Control Panel.
-
-**Note:** Applying configurations to Cloud Databases HA groups is not yet supported in the Cloud Control Panel. You can create the configuration group, but it must be applied via the API. The Cloud Databases Developer Guide has details on how to [attach configuration groups to HA groups via the API](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#attach-configuration-group-to-ha-instance).
 
 For details about configuration parameters, see the MySQL documentation 
 [5.1.4 Server System Variables](http://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html).

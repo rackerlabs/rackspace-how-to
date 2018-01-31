@@ -85,7 +85,10 @@ Windows Server 2008 R2 SP1 + SQL Server 2012 SP1 Standard | b41c2705-f820-4b6f-8
 Windows Server 2008 R2 SP1 + SQL Server 2012 SP1 Web | c6301f02-1388-4a4a-ba7c-b52e1bff7813 | 2015-06-17 | No longer maintained; however, SQL Server 2012 SP1 is still available on Windows 2012
 Windows Server 2008 R2 SP1 + SharePoint 2010 Foundation with SQL Server 2008 R2 Express | b28d7079-c4e8-41cf-94ce-9c4b57cf6f23 | 2015-06-17 | No longer maintained.
 Windows Server 2008 R2 SP1 + SharePoint 2010 Foundation with SQL Server 2008 R2 SP1 Standard | 959aee20-e0b8-42a7-9201-10057c2b7e05 | 2015-06-17 | No longer maintained.
-Windows Server 2012<br/>(base install without updates) | c81a65a3-8217-4520-96de-1d9313ae3094 | 2015-06-17 | No longer maintained; however, the fully patched version of Windows 2012 is still available.
+Windows Server 2012<br/>(base install without updates) | c81a65a3-8217-4520-96de-1d9313ae3094 | 2015-06-17 | No longer maintained.
+Windows Server 2012 (with updates) | cfe2dcff-38ca-4bc2-b033-58ee2be041cf | 2018-01-08 | No longer maintained.
+Windows Server 2012 + SQL Server 2012 SP1 Standard | 6532ebf1-80b0-44d4-b1bb-965e8198be2a | 2018-01-08 | No longer maintained.
+Windows Server 2012 + SQL Server 2012 SP1 Web | d6a32649-f166-4767-88bd-b377c2fab719 | 2018-01-08 | No longer maintained.
 Windows Server 2012 + SharePoint 2013 with SQL Server 2012 SP1 Standard | d69d55ef-cb4c-4787-9f1b-2de41ecac9a1 | 2015-06-17 | No longer maintained.
 Windows Server 2012 R2<br/>(base install without updates) | fe486888-6890-47ac-a02d-b740868f143b | 2015-06-17 | No longer maintained; however, the fully patched version of Windows 2012 R2 is still available.
 Windows Server 2008 R2 SP1 | b349843c-22e6-48c9-8932-d282bd69fc90 | 2013-10-29 | Base images for Windows Server 2008 now use Datacenter Edition. This is one of the last Windows 2008 Enterprise images released before the switch.

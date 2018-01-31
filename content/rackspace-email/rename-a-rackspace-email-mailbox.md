@@ -57,6 +57,6 @@ If the mailbox is set up in a [local email client](/how-to/cloud-office-support-
 
 After you rename the email address, you must update all devices such as desktop
 computers and mobile phones to connect to the renamed mailbox. For steps,
-see Renamed Rackspace Email address setup guide. [Renamed Rackspace Email address setup guide](/how-to/renamed-rackspace-email-address-setup-guide/)
+see Renamed Rackspace Email address setup guide. [Renamed Rackspace Email address setup guide](/how-to/renaming-a-rackspace-email-address-overview)
 
 **Note:** We recommend logging in to [apps.rackspace.com](https://apps.rackspace.com/index.php) with the new mailbox address before you configure devices. If you are unable to log in, update the mailbox password before continuing. If you can't log in to the mailbox, see [Change a Rackspace Email mailbox password](/how-to/change-rackspace-email-mailbox-password/#change-a-password-through-cloud-office-control-panel).
