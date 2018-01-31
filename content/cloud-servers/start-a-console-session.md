@@ -29,7 +29,6 @@ The top row of the console displays functions that you can use during a Console 
 
 - Click the Options button to open the XVP Viewer Options dialog box, in which you can modify certain display and interface options.
 
-- Click the Clipboard button to open the XVP Viewer Clipboard dialog box, which provides a convenient location to copy and paste lines of text.
 
 - Select the Ctrl or Alt check boxes while choosing an F key from the Fx list to emulate the corresponding keyboard functions in the Console.
 
