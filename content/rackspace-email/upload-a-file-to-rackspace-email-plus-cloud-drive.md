@@ -36,7 +36,7 @@ After you have installed Cloud Drive, follow these instructions to upload a file
 
     <img src="{% asset_path rackspace-email/rackspace-email-plus-save-a-file-cloud-drive/drag_doc.png %}" />
 
-3. Verify that the file is in it's intended folder.
+3. Verify that the file is in its intended folder.
 
     <img src="{% asset_path rackspace-email/rackspace-email-plus-save-a-file-cloud-drive/file_example.png %}" />
 
