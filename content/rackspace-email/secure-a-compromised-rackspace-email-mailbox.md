@@ -59,7 +59,7 @@ Take the following steps to secure a mailbox that has been compromised:
 
     - Malware and viruses can gather information that you enter through your infected device. If you scan your devices and find an infection, you need to change your password for a second time after you have removed the malicious software. Otherwise your mailbox information could already be in the hands of a hacker.
 
-    - If the mailbox was disabled by Rackspace, follow these instructions to [restore mailbox access](/how-to/block-or-restore-mailbox-access/#restore-mailbox-access).
+    - If the mailbox was disabled by Rackspace, follow these instructions to [restore mailbox access](/how-to/block-or-restore-rackspace-email-access/#restore-mailbox-access).
 
     **Warning:** Do not restore access until **after** you have changed the mailbox password and scanned all devices for malicious software.
 
