@@ -179,25 +179,6 @@ populated with a row containing information about this sharing event.
 You can see which users have accepted or rejected your sharing request,
 and for which users the request is pending acceptance.
 
-#### What about Chicago (ORD)?
-
-If you are an image producer who wants to share an image in the ORD
-region of the Rackspace cloud, please be aware that the provisioning of
-cloud services in the ORD region may not be available to some
-customers. If you share an image with such a customer, the sharing will
-occur without error from your perspective. If the customer you are
-sharing an image with doesn't have cloud services in ORD, they will
-not see the image and won't be able to boot a server from the image. The customer can
-resolve this issue by opening a support ticket to request ORD region access.
-
-A customer can tell if they don't have access to the ORD region by
-looking in the Control Panel - it won't show up as an option in the
-Region dropdown on either the Server List or Create Server pages. API
-users can look directly in their service catalog.
-
-To learn more about regions in the Rackspace cloud, please see the
-How-To article [Rackspace data centers and regions](/how-to/rackspace-data-centers-and-regions).
-
 #### Image sharing courtesy
 
 To keep the Rackspace cloud a friendly place, observe the following
