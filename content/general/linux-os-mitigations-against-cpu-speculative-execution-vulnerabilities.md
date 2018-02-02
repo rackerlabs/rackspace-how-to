@@ -29,4 +29,5 @@ Customers on managed cololocation (colo) or Managed Infrastructure Rackspace Pub
 
 Further remediation might be necessary as evaluation of these vulnerabilities continues.
 
+
 As always, please contact your support team if you have any questions. 
