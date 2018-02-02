@@ -1,6 +1,6 @@
 ---
 permalink: windows-os-mitigations-against-cpu-speculative-execution-vulnerabilities/
-audit_date: '2016-01-16'
+audit_date: '2018-02-01'
 title: 'Windows OS mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-01-16'
@@ -48,6 +48,7 @@ We have aligned with Microsoft guidance to patch your device and mitigate the vu
 
 We have added new steps for both understanding and for those who want to fully remediate vulnerabilities.
 
+
 #### Step 1: Update the registry and apply the update
 
 1. Update the registry. A registry key must be configured to download the required January security update.
@@ -61,15 +62,18 @@ We have added new steps for both understanding and for those who want to fully r
    
    **Note:** As of this update, there are no current security updates for server 2008 or server 2012 (NON R2 Versions). 
    
+   
 #### Step 2: Enable update protection
 
 There are three additional registry keys that must be configured to fully enable the protection capability of the update noted in Step 1. Instructions for enabling the mitigations are included in the "Enable mitigation" section. 
+
 
 #### Step 3: Apply OEM Firmware
 
 In addition to updating the registry, applying the update, and enabling update protection, an OEM firmware (processor microcode) update is required to enable the ' Branch target injection' protection in the update.  
 
 **Note:** We are awaiting the release of the firmware from the hardware vendors. 
+
 
 **Install Hotfix**
 
@@ -85,6 +89,7 @@ In addition to updating the registry, applying the update, and enabling update p
 3. Check for and install outstanding patches for the server.
 
 4. After the any outstanding patches have been install, reboot the server and ensure the January 2018 Security rollups have been applied. 
+
 
 **Enable mitigation**
 
