@@ -1,12 +1,12 @@
 ---
 permalink: linux-os-mitigations-against-cpu-speculative-execution-vulnerabilities/
-audit_date: '2018-01-16'
+audit_date: '2018-02-01'
 title: 'Linux OS mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-01-16'
 created_by: Marc Nourani
-last_modified_date: '2018-01-17'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-02-01'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
