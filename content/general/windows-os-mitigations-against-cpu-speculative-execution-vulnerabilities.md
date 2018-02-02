@@ -13,9 +13,9 @@ product_url: undefined
 
 Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain CPU, commonly known as Meltdown and Spectre: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754).   
 
-From a Windows® Server® OS perspective, Rackspace is primarily focused on implementing the main registry key, which is required for devices to receive both the current and future Microsoft Security patches. For the registry key, Microsoft® guidance is to use anti-virus (AV) solutions to push the main key out to devices. However, given the variety of AV solutions utilized by Rackspace customers, Rackspace took the approach to push the registry key out to devices to ensure customers could receive the January 2018 Security Rollup Patch.  
+From a Windows® Server® OS perspective, Rackspace is primarily focused on implementing the main registry key, which is required for devices to receive both the January 2018 and future Microsoft Security patches. For the registry key, Microsoft® guidance is to use anti-virus (AV) solutions to push the main key out to devices. However, given the variety of AV solutions utilized by Rackspace customers, Rackspace took the approach to push the registry key out to devices to ensure customers could receive the January 2018 Security Rollup Patch.  
 
-In many cases, customers and Rackspace have now applied this key. As of January 29, 2018, there are no known impacts to server performance associated with the installation of the main registry key. If Rackspace manages your patching, the most current security patch (which addresses a key issue for the current vulnerability) is being pushed through our Windows Server Update System (WSUS).   
+In many cases, customers and Rackspace have now applied this key. As of this time, there are no known impacts to server performance associated with the installation of the main registry key. If Rackspace manages your patching, the most current security patch (which addresses a key issue for the current vulnerability) is being pushed through our Windows Server Update System (WSUS).   
 
 Customers on managed colocation (colo) and Managed Infrastructure environments should reference the vendors for their recommended solutions to mitigate the vulnerability via patches of the operating system.  
 
@@ -79,9 +79,8 @@ In addition to updating the registry, applying the update, and enabling update p
 
 1. Validate if you have the QualityCompat reistry key so the server will continue to receive updates. Run the following command locally on the server:
 
-   ```
-   reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat" /v cadca5fe-87d3-4b96-b7fb-a231484277cc 
-   ```
+       reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat" /v cadca5fe-87d3-4b96-b7fb-a231484277cc 
+
 2. Set the QualityCompat registry key if it is not present by running:
 
        reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat" /v cadca5fe-87d3-4b96-b7fb-a231484277cc /t REG_DWORD /d 0 /f 
