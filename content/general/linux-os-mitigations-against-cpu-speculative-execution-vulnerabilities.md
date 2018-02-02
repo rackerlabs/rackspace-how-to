@@ -1,12 +1,12 @@
 ---
 permalink: linux-os-mitigations-against-cpu-speculative-execution-vulnerabilities/
-audit_date: '2018-01-16'
+audit_date: '2018-02-01'
 title: 'Linux OS mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-01-16'
 created_by: Marc Nourani
-last_modified_date: '2018-01-17'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-02-01'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
@@ -21,10 +21,13 @@ Servers must be rebooted to apply the new kernel. At this time, Rackspace does n
 
 - Dedicated Physical Server: MyRack Customer Portal [https://my.rackspace.com](https://my.rackspace.com) -> Services -> Reboot Scheduling
 
-- VMware&reg;  Virtual Server: Supply the date, time, and time zone. Rackspace will schedule an automated reboot on behalf of the customer. 
+- VMware&reg;  Virtual Server and Managed Operations Rackspace Public Cloud Servers: Supply the date, time, and time zone. Rackspace will schedule an automated reboot on behalf of the customer. 
 
 Operating systems listed as End of Life (EOL) by the vendor might not receive patches. For those configurations that run an older EOL operating system including (but not limited to) Red Hat Enterprise Linux 5, CentOS 5, and Ubuntu 12 LTS, Rackspace recommends that customers upgrade to a supported version.
 
+Customers on managed cololocation (colo) or Managed Infrastructure Rackspace Public Cloud environments should reference the vendors for their recommended solutions to mitigate the vulnerability via patches of the operating system.
+
 Further remediation might be necessary as evaluation of these vulnerabilities continues.
 
-Contact your support team with any questions or concerns.
+
+As always, please contact your support team if you have any questions. 
