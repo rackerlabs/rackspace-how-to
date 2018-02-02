@@ -47,7 +47,7 @@ We have aligned with Microsoft guidance to patch your device and mitigate the vu
 
 We have added new steps for both understanding and for those who want to fully remediate vulnerabilities.
 
-<img src="{% asset_path general/windows-os-mitigations-against-cpu-speculative-execution-vulnerabilities/windows-os-remediate.png %}" />
+<img src="{% asset_path general/windows-os-mitigations-against-cpu-speculative-execution-vulnerabilities/windows-os-remediation.png %}" />
 
 
 #### Step 1: Update the registry and apply the update
