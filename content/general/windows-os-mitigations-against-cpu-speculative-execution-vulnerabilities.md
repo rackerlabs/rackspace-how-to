@@ -111,4 +111,5 @@ In addition to updating the registry, applying the update, and enabling update p
 
     **Note:** At this time, firmware updates are not available from the hardware vendors.
 
+
 As always, please contact your support team if you have any questions. 
