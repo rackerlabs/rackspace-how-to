@@ -80,9 +80,7 @@ In addition to updating the registry, applying the update, and enabling update p
    ```
 2. Set the QualityCompat registry key if it is not present by running:
 
-   ```
-   reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat" /v cadca5fe-87d3-4b96-b7fb-a231484277cc /t REG_DWORD /d 0 /f 
-   ```
+       reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat" /v cadca5fe-87d3-4b96-b7fb-a231484277cc /t REG_DWORD /d 0 /f 
    
 3. Check for and install outstanding patches for the server.
 
@@ -92,23 +90,21 @@ In addition to updating the registry, applying the update, and enabling update p
 
 1. Set the registry keys to enable the mitigation by running the following commands locally on the server:
 
-   ```
-   reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 0 /f 
+       reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverride /t REG_DWORD /d 0 /f 
    
-   reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f 
+       reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v FeatureSettingsOverrideMask /t REG_DWORD /d 3 /f 
    
-   reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization" /v MinVmVersionForCpuBasedMitigations /t REG_SZ /d "1.0" /f 
-   ```
-   
+       reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization" /v MinVmVersionForCpuBasedMitigations /t REG_SZ /d "1.0" /f 
+     
 2. Reboot the server to enable mitigation.
 
 3. Verify the mitigations have been enabled by installing and running the following Validation Powershell script: https://gallery.technet.microsoft.com/scriptcenter/Speculation-Control-e36f0050. 
 
-  **Note:** Branch Target Injection Mitigation will not be enabled until firmware updates have been applied. 
+    **Note:** Branch Target Injection Mitigation will not be enabled until firmware updates have been applied. 
   
 4. Install the firmware updates.
 
-  **Note:** At this time, firmware updates are not available from the hardware vendors.
+    **Note:** At this time, firmware updates are not available from the hardware vendors.
   
 
 
