@@ -12,7 +12,6 @@ product_url: undefined
 ---
 
 Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain CPU, commonly known as Meltdown and Spectre: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754).   
-
 From a Windows® Server® OS perspective, Rackspace is primarily focused on implementing the main registry key, which is required for devices to receive both the January 2018 Security Rollup Patch and future Microsoft Security patches. For the registry key, Microsoft® guidance is to use anti-virus (AV) solutions to push the main key out to devices. However, given the variety of AV solutions utilized by Rackspace customers, Rackspace took the approach to push the registry key out to devices to ensure customers could receive the January 2018 Security Rollup Patch.  
 
 In many cases, customers and Rackspace have now applied this key. As of this time, there are no known impacts to server performance associated with the installation of the main registry key. If Rackspace manages your patching, the most current security patch (which addresses a key issue for the current vulnerability) is being pushed through our Windows Server Update System (WSUS).   
