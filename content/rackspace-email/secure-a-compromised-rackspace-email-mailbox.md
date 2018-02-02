@@ -25,7 +25,6 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Symptoms of a compromised mailbox
 
-
 If any of these symptoms apply to you, take immediate steps to secure the mailbox:
 
 - You have started receiving bounce messages for emails that you never sent.
