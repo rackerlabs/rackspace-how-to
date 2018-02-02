@@ -25,6 +25,8 @@ Servers must be rebooted to apply the new kernel. At this time, Rackspace does n
 
 Operating systems listed as End of Life (EOL) by the vendor might not receive patches. For those configurations that run an older EOL operating system including (but not limited to) Red Hat Enterprise Linux 5, CentOS 5, and Ubuntu 12 LTS, Rackspace recommends that customers upgrade to a supported version.
 
+Customers on managed cololocation (colo) or Managed Infrastructure Rackspace Public Cloud environments should reference the vendors for their recommended solutions to mitigate the vulnerability via patches of the operating system.
+
 Further remediation might be necessary as evaluation of these vulnerabilities continues.
 
 Contact your support team with any questions or concerns.
