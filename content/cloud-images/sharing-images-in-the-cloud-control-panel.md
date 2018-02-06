@@ -1,12 +1,12 @@
 ---
 permalink: sharing-images-in-the-cloud-control-panel/
-audit_date:
+audit_date: '2018-02-06'
 title: Sharing images in the Cloud Control Panel
 type: article
 created_date: '2015-01-29'
 created_by: Cloud Images
 last_modified_date: '2018-02-06'
-last_modified_by: Charlie Stocker
+last_modified_by: Cat Lookabaugh
 product: Cloud Images
 product_url: cloud-images
 ---
