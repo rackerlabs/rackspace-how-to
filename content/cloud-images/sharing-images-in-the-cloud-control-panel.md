@@ -4,7 +4,7 @@ audit_date: '2018-02-06'
 title: Sharing images in the Cloud Control Panel
 type: article
 created_date: '2015-01-29'
-created_by: Cloud Images
+created_by: Rackspace Support
 last_modified_date: '2018-02-06'
 last_modified_by: Cat Lookabaugh
 product: Cloud Images
