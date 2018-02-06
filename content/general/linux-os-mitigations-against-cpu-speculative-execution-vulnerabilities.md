@@ -13,7 +13,7 @@ product_url: undefined
 
 Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain CPU processors, commonly known as Meltdown and Spectre: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754).
 
-A kernel update to mitigate the exploits on the supported Linux® distributions at Rackspace (Red Hat® and CentOS® 6.7+ & 7.3+; Ubuntu® 14.04 & 16.04 LTS) has been released. For additional information on these patches, see [https://access.redhat.com/security/vulnerabilities/speculativeexecution](https://access.redhat.com/security/vulnerabilities/speculativeexecution) and [https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown](https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown).  
+Kernel updates to mitigate specific variants of the exploits on the supported Linux® distributions at Rackspace (Red Hat® and CentOS® 6.7+ & 7.3+; Ubuntu® 14.04 & 16.04 LTS) has been released. For additional information on these patches, see [https://access.redhat.com/security/vulnerabilities/speculativeexecution](https://access.redhat.com/security/vulnerabilities/speculativeexecution) and [https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown](https://wiki.ubuntu.com/SecurityTeam/KnowledgeBase/SpectreAndMeltdown).  
 
 **Note**: This update might impact performance to an extent dependent upon specific workloads. Red Hat has provided information regarding potential performance impacts at [Speculative Execution Exploit Performance Impacts](https://access.redhat.com/articles/3307751).
 
