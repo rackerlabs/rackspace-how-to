@@ -264,7 +264,7 @@ following information before booting a server from a shared image:
     /**etc/passwd** and that there aren't any strange SSH keys
     preinstalled on the server.
 -   **Build critical infrastructure components only from images created
-    by people that you completely trust.** If you suspect that an image
+    by people that you trust.** If you suspect that an image
     shared with you contains malware or is behaving strangely, you can
     report such suspicious activities to Rackspace Support and
     to <cloudimageshelp@rackspace.com>.
