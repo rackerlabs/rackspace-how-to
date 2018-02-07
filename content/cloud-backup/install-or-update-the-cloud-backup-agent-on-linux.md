@@ -67,7 +67,7 @@ If you get a message that the command can't be found, you must install the agent
 
     The updater installs the agent and sets the agent to start at boot. Any errors are fixed it in the next step.
 
-8. Check the installation.
+7. Check the installation.
 
    The updater might take a few minutes to download and install the agent. To check the status of the agent installation, run the following command:
 
@@ -77,7 +77,7 @@ If you get a message that the command can't be found, you must install the agent
 
    If you get a `command not found` error, run `sudo apt-get install -f` again.
 
-9. Run the agent with the `--configure` option to configure it, and supply other options as needed. You are asked for your Rackspace Cloud account username and password.
+8. Run the agent with the `--configure` option to configure it, and supply other options as needed. You are asked for your Rackspace Cloud account username and password.
 
        sudo /usr/local/bin/driveclient --configure --username <username> --apikey <apiKey> --flavor <flavor> --datacenter <dataCenter> --apihost <apiDrivesrvr>
 
@@ -91,9 +91,9 @@ If you get a message that the command can't be found, you must install the agent
 
     **Note**: If you use any flavor other than `raxcloudserver`, the agent is shown as not installed in the Backups section at the bottom of the Cloud Servers details page in the Cloud Control Panel. However, items do appear as they should on the Backups tab in the Cloud Control Panel.
 
-10. When prompted to confirm that you want to overwrite your configuration file, answer `yes`.
+9. When prompted to confirm that you want to overwrite your configuration file, answer `yes`.
 
-11. Start the agent.
+10. Start the agent.
 
        sudo service driveclient start
 
