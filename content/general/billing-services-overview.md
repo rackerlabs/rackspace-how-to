@@ -21,48 +21,98 @@ Your 30-day billing cycle begins on the day that you activate your account, and 
 
 Each product page on the [main Rackspace website](https://www.rackspace.com/) contains the most current pricing for that product, and a cost calculator to help you estimate your monthly charges. For example, see the [pricing information for Cloud Servers](https://www.rackspace.com/cloud/servers/pricing).
 
-### Access your account information
+### Accessing your account information
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
-2. In the upper-right corner of the control panel, click your user name.
+2. In the upper-right corner of the control panel, click the **Billing**
+   button.
 
-    The menu gives you access to billing and payments, and a usage overview.
+    You are redirected to the **Billing Overview** dashboard, which provides information on billing, payments, and usage.
 
-### View current usage
+### Viewing current usage
 
-From the user name menu, select **Usage Overview**.
+The center panel of the **Billing Dashboard** displays your **Charges to date**. For a more detailed breakdown of the charges, click **View** in the section header.
 
-The balance-to-date is displayed for the Rackspace products that you are using. The message **No usage data** is displayed for the products that you are not using.
+The balance-to-date for the Rackspace products that you are using is displayed.
 
 <img src="{% asset_path general/billing-services-overview/Screen%20Shot%202015-01-12%20at%209.43.59%20PM_0.png %}" alt="" />
 
-Click the arrow to the right of the dollar amount to see the details of your usage in type, unit price, quantity, and estimated total.
+Click the arrow to the right of the dollar amount to see the details of your usage in type, unit price, and quantity, as well as an estimated total.
 
-<img src="{% asset_path general/billing-services-overview/currentusage.png %}" alt="" />
+<img src="{% asset_path general/billing-services-overview/chargestodate.png %}" alt="" />
 
-### View billing and payment information
+**Note**: This page only displays the Rackspace Cloud usage that you accrued
+after your last invoice was generated. Usage accrues throughout the month, and
+totals update on a daily basis. Some products and services may take up to 24 hours to appear on this page. Additionally, some charge totals only appear after applicable discounts are applied.
 
-From the user name menu, select **Billing and Payments**.
+### Setting a billing threshold
 
-The Billing & Payments page shows your recent billing activity, current balance, billing history, and payment information. You can also change your billing and payment information from this page.
+The billing threshold option enables you to receive a notification if usage
+meets or exceeds the amount you specify. When this occurs, Rackspace emails
+the primary contact and the billing contact.
 
-<img src="{% asset_path general/billing-services-overview/billingpmts2.png %}" alt="" />
+To enable this functionality, click the **Set Billing Threshold** link.
 
-### View invoice details
+### Viewing invoice details
 
-In the **Billing History** section of the Billing & Payments page, click an invoice ID number to view the date of the invoice, the amount charged, and summarized charges for services. You can also download your invoice in PDF or CSV format for easy printing.
+To access detailed information for your most recent invoice, go to **Billing
+History > Invoice Details**.
 
-To view a more detailed invoice that shows an itemized, per-service, per-device overview of your billing charges, click the **Detailed View of Charges** link. For more information, see [Detailed invoices overview](/how-to/detailed-invoices-overview/).
+Your most recent invoice opens in a detailed view.
 
-If you are unable to find the information that you need in the Cloud Control Panel, or if you need more detailed billing and payment information than what is available on these pages, contact the Billing Support team for any billing questions. The team is available Monday through Friday from 8 a.m. to 5 p.m. CST, toll-free at 877 934 0410 or internationally at 1 210 581 0410. You can reach the Cloud Accounts Receivable team toll-free at 800 480 2716 or internationally at 1 210 312 4000.
+Line items appear under the **Total Charges** section. To expand a line item,
+click the down arrow to the left of the item description.
 
+If there are per-device charges associated with a line item, a **Devices**
+area appears within it. To expand this area further and display the cost
+associated with each device, click the down arrow to the left of **Devices**.
 
-### Reclaim VAT
+You can download an invoice in PDF or CSV format. Click the **PDF** link or the
+**CSV** link at the top-right corner of the screen.
+
+To view past invoices, select a different date from the **Bill Date** menu
+that appears in the navigation pane on the left.
+
+### Managing payment methods
+
+You can add or delete a payment method by navigating to **Payment Methods >
+Manage Payment Methods**.
+
+Your current payment methods are displayed.
+
+To add a new payment method, click the **Add Payment Method** button and
+follow the prompts.
+
+To delete an existing payment method, click the gear icon that appears to the
+left of the payment method, then select **Delete Payment Method**.
+
+To change the default payment method, click the gear icon next to the method
+you want to make the default, then select **Set as Default**.
+
+If you're unable to find the information that you need in the Cloud Control
+Panel, or if you need more detailed billing and payment information than what
+is available on these pages, contact the Billing Support team for any billing
+questions. The team is available Monday through Friday from 8 a.m. to 5 p.m.
+CST, toll-free at 877 934 0410 or internationally at 1 210 581 0410. You can
+reach the Cloud Accounts Receivable team toll-free at 800 480 2716 or
+internationally at 1 210 312 4000.
+
+### Updating billing information
+
+To modify basic billing information from the **Billing Overview** dashboard,
+such as your billing address or contact:
+
+1. In the header of **Billing Settings** section, click the **View** link.
+2. Click the pencil icon next to the section you want to edit.
+3. Make your changes, then click Save or Update to save them, or Cancel to
+   discard them.
+
+### Reclaiming VAT
 
 If you're a VAT-registered business or organization, in most cases you can reclaim the value-added tax (VAT) that you pay when you buy goods and services for your business. To reclaim this money, you must have records to support your claim. By collecting your VAT ID number, Rackspace can correctly prepare an invoice for your records.
 
 If you're not a VAT-registered business or organization, you can't reclaim the VAT that you pay when you buy goods and services.
 
-### Next step
+### Next steps
 [Viewing and editing user information for your account ](/how-to/viewing-and-editing-user-information-for-your-account)
