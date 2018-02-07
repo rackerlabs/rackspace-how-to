@@ -15,7 +15,7 @@ Microsoft Skype for Business is an instant messaging and video capable client fo
 ###  Skype for Business setup articles
 
 - [Hosted Microsoft Skype for Business deployment guide](/how-to/hosted-microsoft-lync-at-rackspace-deployment-guide)
-- [Set up DNS records for email and Hosted Microsoft Skype for Business](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business)
+- [Set up DNS records for Hosted Microsoft Skype for Business](/how-to/set-up-dns-records-for-cloud-office-skype-for-business)
 
 ###  Work with Hosted Skype for Business
 
