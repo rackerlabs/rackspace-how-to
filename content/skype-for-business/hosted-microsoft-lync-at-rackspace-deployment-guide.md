@@ -5,8 +5,8 @@ title: Hosted Microsoft Lync at Rackspace Deployment Guide
 type: article
 created_date: '2014-10-20'
 created_by: Aaron Medrano
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-01-18'
+last_modified_by: William Loy
 product: Microsoft Skype for Business
 product_url: skype-for-business
 ---
@@ -30,7 +30,7 @@ on your internal DNS.
 
 We highly recommend that you perform this step because all of the Hosted
 Lync features will work only if DNS is correctly configured. For
-instructions, see [Set up DNS records](/how-to/set-up-dns-records-for-cloud-office-email-and-skype-for-business).
+instructions, see [Set up Cloud Office Skype for Business DNS records](/how-to/set-up-dns-records-for-cloud-office-skype-for-business/).
 
 **Note:** If you are a Rackspace Hosted Exchange customer, these
 settings are in addition to what you might currently have for Hosted
