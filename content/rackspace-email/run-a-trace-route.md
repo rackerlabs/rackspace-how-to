@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 --- 
 
-Trace routes help identify connectivity issues when you aretrying to connect to your Rackspace Email mailbox.
+Trace routes help identify connectivity issues when you are trying to connect to your Rackspace Email mailbox.
 
 
 ### Prerequisites
@@ -55,12 +55,12 @@ A trace route illustrates the path created between your personal device and our 
 
     <img src="{% asset_path rackspace-email/how-to-run-a-trace-route/secure_emailsrvr.png %}"/>
 
-   A list of time and server names displays.
+   A list of times and server names displays.
 
 
 #### Identifying issues
 
-A trace route shows the sequential server hop taken to reach a server, in addition to the time it took to complete each hop. When reviewing a trace route, you are typically looking for a delay or a failure in the trace progression.
+A trace route shows the sequential server hops taken to reach a server, in addition to the time it took to complete each hop. When reviewing a trace route, you are typically looking for a delay or a failure in the trace progression.
 
 For example, if the average hop is between 1 and 50 milliseconds and you see a hop the takes 1000 milliseconds, you have identified a delay in connection.
 
