@@ -5,8 +5,8 @@ title: Rackspace Webmail overview
 type: article
 created_date: '2012-05-27'
 created_by: Rackspace Support
-last_modified_date: '2017-12-11'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-01-24'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -30,11 +30,11 @@ Rackspace Email provides the ability to manage your contacts through our webmail
 
 ### Calendar
 
-Rackspace Email enables you to manage your appointments and meetings through our webmail interface. You can share your calendar, create personal calendars, import events, and add shared calendars within your domain. You can also sync your calendar events with your mobile device, as well with Rackspace Email Plus. For more information about Rackspace Email Plus, see [Rackspace Email Plus featuring Cloud Drive](https://www.rackspace.com/en-us/email- hosting/webmail/cloud-drive).
+Rackspace Email enables you to manage your appointments and meetings through our webmail interface. You can share your calendar, create personal calendars, import events, and add shared calendars within your domain. You can also sync your calendar events with your mobile device, as well with Rackspace Email Plus. For more information about Rackspace Email Plus, see [Rackspace Email Plus featuring Cloud Drive](https://www.rackspace.com/en-us/email-hosting/webmail/cloud-drive).
 
 ### Tasks
 
-Rackspace Email provides the ability to create and manage tasks and to create task lists through our Webmail interface. 
+Rackspace Email provides the ability to create and manage tasks and to create task lists through our Webmail interface.
 
 ### Notes
 
@@ -44,11 +44,11 @@ Rackspace Email provides the ability to create notes, and sync them with your mo
 
 Rackspace Email provides various options for you to manage your email account. While in the webmail interface, click the menu beside your email address in the top-right corner and select **Settings** to see a list of features and options available.
 
-#### General Settings: 
+#### General Settings:
 
 In the General Settings section, you can manage settings for email options, your calendar, your preferred language, and date and time settings.
 
-<img src="{% asset_path rackspace-email/rackspace-webmail/Webmail.png %}" alt="" />
+<img src="{% asset_path rackspace-email/rackspace-webmail/general_settings.png %}" alt="" />
 
 ##### Email options
 
@@ -69,7 +69,7 @@ In the General Settings section, you can manage settings for email options, your
 
 In the **Composing Email** section, you can manage settings for composing, identities, and signatures.
 
-<img src="{% asset_path rackspace-email/rackspace-webmail/Webmail2.png %}" alt="" />
+<img src="{% asset_path rackspace-email/rackspace-webmail/composing_email.png %}" alt="" />
 
 ###### Composing
 
@@ -88,7 +88,7 @@ In the **Composing Email** section, you can manage settings for composing, ident
 
 In the **Incoming Email** section, you can manage settings for auto-reply, forwarding, and filtering.
 
-<img src="{% asset_path rackspace-email/rackspace-webmail/Webmail3.png %}" alt="" />
+<img src="{% asset_path rackspace-email/rackspace-webmail/incoming_email.png %}" alt="" />
 
 - **Auto-Reply** activates the auto-reply feature for times when you are out of the office.
 - **Forwarding** forwards any mail to any email address with the option to save a copy in your inbox.
@@ -98,7 +98,7 @@ In the **Incoming Email** section, you can manage settings for auto-reply, forwa
 
 In the Spam Settings section, you can manage settings for spam preferences, safelists, and blacklists.
 
-<img src="{% asset_path rackspace-email/rackspace-webmail/Webmail4.png %}" alt="" />
+<img src="{% asset_path rackspace-email/rackspace-webmail/spam_settings.png %}" alt="" />
 
 ##### Preferences
 
