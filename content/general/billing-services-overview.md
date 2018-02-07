@@ -1,11 +1,11 @@
 ---
 permalink: billing-services-overview/
-audit_date:
+audit_date: '2018-02-07'
 title: Billing services overview
 type: article
 created_date: '2011-08-24'
 created_by: Rackspace Support
-last_modified_date: '2017-12-15'
+last_modified_date: '2018-02-07'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
