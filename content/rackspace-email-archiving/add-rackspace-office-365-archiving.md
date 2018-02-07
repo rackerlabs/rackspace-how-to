@@ -5,8 +5,8 @@ title: Add Rackspace Office 365 archiving
 type: article
 created_date: '2018-01-24'
 created_by: William Loy
-last_modified_date: '2018-01-24'
-last_modified_by: William Loy
+last_modified_date: '2018-02-07'
+last_modified_by: Nate Archer
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -37,11 +37,10 @@ For more information about prerequisite terminology, see [Cloud Office support t
    <img src="{% asset_path rackspace-email-archiving/add-rackspace-office-365-archiving/add-product.png %}" />
 
 4. Click the **Add-Ons** tab.
-
 5. Click the radio button next to **Rackspace Office 365 Archiving**.
 
    <img src="{% asset_path rackspace-email-archiving/add-rackspace-office-365-archiving/add-ons.png %}" />
 
-6. A summary will appear describing  the number of licenses that the archiving will be applied to as well as the total cost per month to add the service. If this summary appears to be correct, click **Add Product**.
+6. A summary appears describing the number of licenses which archiving has been applied to, as well as the total cost per month to add the service. If this summary is correct, click **Add Product**.
 
 **Note:** Your archive will be accessible after a duration of 24 hours from the time it was enabled on the account. See [Log in to the Archive Manager for Office 365](/how-to/log-in-to-the-archive-manager-for-office-365)
