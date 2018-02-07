@@ -44,47 +44,42 @@ If you get a message that the command can't be found, you must install the agent
 
 1. Use SSH to log in to your server, and run the commands as a user with sudo or superuser privileges.
 
-2. Download the [Cloud Backup Keyring package](http://agentrepo.drivesrvr.com/debian/pool/main/c/cloudbackup-keyring/cloudbackup-keyring_2016.12.02-1_all.deb).
+2. Download the Keyring package.
+
+       curl -O http://agentrepo.drivesrvr.com/debian/pool/main/c/cloudbackup-keyring/cloudbackup-keyring_2016.12.02-1_all.deb
 
 3. Install the Keyring package manually.
 
-        sudo dpkg -i cloudbackup-keyring_2016.12.02-1_all.deb
+       sudo dpkg -i cloudbackup-keyring_2016.12.02-1_all.deb
 
-4. Update the apt repository information.
+4. Update the apt repository information. Install with the -f option. This option fixes any outstanding package dependency issues on the system.
 
-        sudo apt-get update
+       sudo apt-get -y update
+       sudo apt-get -y install -f
 
-5. Install the `python-apt` package.
+5. Add `driveclient` to the apt sources list.
 
-        sudo apt-get install python-apt
+       echo "deb [arch=amd64] http://agentrepo.drivesrvr.com/debian serveragent main" | tee /etc/apt/sources.list.d/driveclient.list
 
-6. Get the updater.
+6. Install the updater and all dependencies.
 
-        wget 'http://agentrepo.drivesrvr.com/debian/cloudbackup-updater-latest.deb'
-
-7. Install the updater.
-
-        sudo dpkg -i cloudbackup-updater-latest.deb
+       apt-get install -q --y cloudbackup-updater
 
     The updater installs the agent and sets the agent to start at boot. Any errors are fixed it in the next step.
 
-8. To ensure that the package configuration process finishes, run `apt-get` with the `-f` option. This option fixes any outstanding package dependency issues on the system.
-
-        sudo apt-get install -f
-
-9. Check the installation.
+8. Check the installation.
 
    The updater might take a few minutes to download and install the agent. To check the status of the agent installation, run the following command:
 
-        sudo cloudbackup-updater -v
+       sudo cloudbackup-updater -v
 
    The command won't respond until the installation is complete. When it returns you to the shell prompt, proceed to the next step.
 
    If you get a `command not found` error, run `sudo apt-get install -f` again.
 
-10. Run the agent with the `--configure` option to configure it, and supply other options as needed. You are asked for your Rackspace Cloud account username and password.
+9. Run the agent with the `--configure` option to configure it, and supply other options as needed. You are asked for your Rackspace Cloud account username and password.
 
-        sudo /usr/local/bin/driveclient --configure --username <username> --apikey <apiKey> --flavor <flavor> --datacenter <dataCenter> --apihost <apiDrivesrvr>
+       sudo /usr/local/bin/driveclient --configure --username <username> --apikey <apiKey> --flavor <flavor> --datacenter <dataCenter> --apihost <apiDrivesrvr>
 
       - Use your Rackspace Cloud account username and API key for `<username>` and `<apiKey>`. For information about how to find your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).
 
@@ -96,11 +91,11 @@ If you get a message that the command can't be found, you must install the agent
 
     **Note**: If you use any flavor other than `raxcloudserver`, the agent is shown as not installed in the Backups section at the bottom of the Cloud Servers details page in the Cloud Control Panel. However, items do appear as they should on the Backups tab in the Cloud Control Panel.
 
-11. When prompted to confirm that you want to overwrite your configuration file, answer `yes`.
+10. When prompted to confirm that you want to overwrite your configuration file, answer `yes`.
 
-12. Start the agent.
+11. Start the agent.
 
-        sudo service driveclient start
+       sudo service driveclient start
 
 ### Install the agent on RPM-based systems, such as CentOS, Fedora, and Red Hat
 
