@@ -36,8 +36,6 @@ The center panel of the **Billing Dashboard** displays your **Charges to date**.
 
 The balance-to-date for the Rackspace products that you are using is displayed.
 
-<img src="{% asset_path general/billing-services-overview/Screen%20Shot%202015-01-12%20at%209.43.59%20PM_0.png %}" alt="" />
-
 Click the arrow to the right of the dollar amount to see the details of your usage in type, unit price, and quantity, as well as an estimated total.
 
 <img src="{% asset_path general/billing-services-overview/chargestodate.png %}" alt="" />
