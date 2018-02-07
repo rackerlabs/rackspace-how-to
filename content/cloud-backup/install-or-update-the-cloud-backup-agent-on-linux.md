@@ -52,18 +52,18 @@ If you get a message that the command can't be found, you must install the agent
 
        sudo dpkg -i cloudbackup-keyring_2016.12.02-1_all.deb
 
-4. Update the apt repository information. Install with the -f option. This option fixes any outstanding package dependency issues on the system.
+4. Add `driveclient` to the apt sources list.
+
+       echo "deb [arch=amd64] http://agentrepo.drivesrvr.com/debian serveragent main" | tee /etc/apt/sources.list.d/driveclient.list
+
+5. Update the apt repository information. Install with the -f option. This option fixes any outstanding package dependency issues on the system.
 
        sudo apt-get -y update
        sudo apt-get -y install -f
 
-5. Add `driveclient` to the apt sources list.
-
-       echo "deb [arch=amd64] http://agentrepo.drivesrvr.com/debian serveragent main" | tee /etc/apt/sources.list.d/driveclient.list
-
 6. Install the updater and all dependencies.
 
-       apt-get install -q --y cloudbackup-updater
+       apt-get install -q -y cloudbackup-updater
 
     The updater installs the agent and sets the agent to start at boot. Any errors are fixed it in the next step.
 
