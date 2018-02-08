@@ -35,7 +35,7 @@ to offload the maintenance and monitoring of the guest operating system (OS), VM
 stack, and underlying hardware to Rackspace. For more information, see the following resources:
 
 - [Server Virtualization product page](https://www.rackspace.com/managed-hosting/vmware/server-virtualization)
-- Customer Handbook: This handbook is coming soon.
+- [Customer Handbook] (https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook)
 
 ### RPC-VMware versus Server Virtualization
 
