@@ -17,21 +17,13 @@ product_url: managed-vmware-services
 
 Rackspace offers three different solutions for DR:
 
-- Replication Manager:
+- [Replication Manager](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/getting-started/replication-manager/):
 
-  Replication Manager is an add-on service for VMware&reg; Server Virtualization
+  Replication Manager (SRM) is an add-on service for VMware&reg; Server Virtualization
   that utilizes VMware vCenter&trade; Site Recover Manager&trade; (SRM) to automate portions
   of the customer’s disaster recovery (DR) plan.
 
-- Virtual Machine Recovery:
-  
-  Managed Backup Virtual Machine Recovery (VMR) is the Rackspace-productized
-  version of VMware’s API for Data Protection (VADP) based backups to
-  protect VMware Server Virtualization VMs. Managed Backup (MBU) VMR is a
-  fully managed multi-tenant Backup and Recovery service for VMware
-  Server Virtualization environments hosted in the Rackspace data centers.
-
-- VM Replication:
+- [VM Replication](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/getting-started/vm-replication/):
   
   VM Replication provides geographical redundancy and helps protect
   business-critical VMs in the event of a data center outage or unplanned
@@ -40,16 +32,25 @@ Rackspace offers three different solutions for DR:
   VMware Server Virtualization VMs by easily and cost-effectively
   replicating VMs between our data centers.
 
-#### What are the benefits of Rackspace Server Virtualization?
+- [Virtual Machine Recovery](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/getting-started/vm-recovery/):
+  
+  Managed Backup Virtual Machine Recovery (VMR) is the Rackspace-productized
+  version of VMware’s API for Data Protection (VADP) based backups to
+  protect VMware Server Virtualization VMs. Managed Backup (MBU) VMR is a
+  fully managed multi-tenant Backup and Recovery service for VMware
+  Server Virtualization environments hosted in the Rackspace data centers.
 
-Rackspace Server Virtualization is a fully managed virtualization platform.
+#### What are the benefits of Rackspace VMware Server Virtualization?
 
-#### With Server Virtualization, can I log in to the hypervisor?
+VMware Server Virtualization is a fully managed virtualization platform.
+
+#### With VMware Server Virtualization, can I log in to the hypervisor?
 
 No. However, you are able to view the performance and other statistics
-through the MyRackspace&reg; portal. Contact your support team for more details.
+through the MyRackspace&reg; portal. Contact your Rackspace VMware support team
+for more details.
 
-#### With Server Virtualization, do I get API access to the virtual centers or hypervisors?
+#### With VMware Server Virtualization, do I get API access to the virtual centers or hypervisors?
 
 No. Rackspace does not provide API access. If you are interested in gaining
 access to the software, speak to your Rackspace account team about
@@ -63,25 +64,29 @@ access to the software, speak to your Rackspace account team about
 
 You can request this through an action in the MyRackspace portal.
 
-#### Are imaged-based backups part of the Server Virtualization offering?
+#### Are imaged-based backups part of the VMware Server Virtualization offering?
 
 Yes, they are available for an additional service fee. This is accomplished via VM
 Recovery.
 
 #### Can I use fault tolerance with my Rackspace VMs?
 
-Server Virtualization does not currently allow VMware vSphere&reg; Storage vMotion&reg;
+VMware Server Virtualization does not currently allow VMware vSphere&reg; Storage vMotion&reg;
 and therefore fault tolerance is not enabled.
 
 #### Does Rackspace offer utility billing for VMs?
 
-Yes. You can power down VMs through the MyRackspace portal. Once the
-VM is off, billing ceases.
+You have the ability to suspend the utility billing of virtual machines when
+they are not in use by powering down VMs through the MyRackspace portal.
+By powering off a VM from within the OS you will not only generate an
+alert ticket for support to investigate, but the VM will continue billing
+at the daily utility rate. To
+power down VMs through the portal, see [Powering a virtual machine on and off](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#svh-power-vm).
 
 #### How are my VMs backed up?
 
 Rackspace can back up VMs through our VM Recovery service or
-CommVault&reg;.
+Rackspace Managed Backup.
 
 #### What is a snapshot and how does it work?
 
@@ -125,8 +130,8 @@ cloning, snapshotting, or vMotion.
 
 #### How do I add RAM or CPU to a VM?
 
-For information on how to perform this actions, see the User Manual section of
-the Server Virtualization Customer Handbook.
+To add RAM or CPU to your VM, request a ticket with your Rackspace VMware
+support team through the MyRackspace portal.
 
 #### What are the differences between snapshot, clones, and templates?
 
@@ -158,8 +163,8 @@ the Server Virtualization Customer Handbook.
 
 #### Where is data stored if I create a snapshot, clone, or template?
 
--   Snapshots are stored with the VM and consume your allocated
-    storage infrastructure. Snapshots must be carefully managed to
+-   Snapshots are stored with the parent disk of VM and consume your
+    allocated storage infrastructure. Snapshots must be carefully managed to
     ensure that they don't consume all the disk space.
 -   Clones are stored on the Rackspace infrastructure, so they don't use
     allocated disk resources. You can create one clone per VM.
@@ -177,7 +182,8 @@ Use the MyRackspace portal to see which resources
 (storage - local or otherwise) are reserved or available to provision
 VMs in your environment.
 
-For information on how to view performance, see the User Manual section of
+For information on how to view performance, see the
+[Viewing hypervisor and virtual machine performance section](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-hyps-clusters/) of
 the Server Virtualization Customer Handbook.
 
 #### Can I have a clone or template created at a scheduled time interval?
@@ -187,12 +193,13 @@ or manually at your preferred times within the customer portal.
 
 #### How do I create and delete clones or templates?
 
-For information on how to view performance, see the User Manual section of
-the Server Virtualization Customer Handbook.
+For information on how to create and delete clones or templates, see the [Copy and cloning virtual machines
+section](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/copy-clone-vms/)
+of the Server Virtualization Customer Handbook.
 
 #### How do I create and delete snapshots?
 
-For information on how to view performance, see the User Manual section of
+For information on how to create and delete snapshots, see the [Snapshotting a virtual machine section](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#snapshotting-a-virtual-machine) of
 the Server Virtualization Customer Handbook.
 
 #### Can I have a copy of my Rackspace VM?
