@@ -1,5 +1,5 @@
 ---
-permalink: server-virtualization-faq/
+permalink: managed-vmware-services-faq/
 audit_date: '2018-01-29'
 title: Server Virtualization FAQ
 type: article
