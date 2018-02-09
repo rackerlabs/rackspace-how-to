@@ -4,9 +4,9 @@ audit_date:
 title: Rackspace Private Cloud powered by VMware FAQ
 type: article
 created_date: '2015-01-29'
-created_by: Alexandra Settle
+created_by: Karin Levenstein
 last_modified_date: '2018-02-09'
-last_modified_by: Rose Coste
+last_modified_by: Alexandra Settle
 product: Managed VMware Services
 product_url: managed-vmware-services
 ---
