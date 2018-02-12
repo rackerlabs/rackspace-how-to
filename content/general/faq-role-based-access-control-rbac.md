@@ -1,6 +1,6 @@
 ---
 permalink: faq-role-based-access-control-rbac/
-audit_date: `2018-02-12`
+audit_date: '2018-02-12'
 title: 'Role-Based Access Control (RBAC) FAQ'
 type: article
 created_date: '2013-04-12'
