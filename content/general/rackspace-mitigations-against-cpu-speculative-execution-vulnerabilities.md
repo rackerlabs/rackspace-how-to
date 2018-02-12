@@ -5,8 +5,8 @@ title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
-last_modified_date: '2018-01-26'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-02-12'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
