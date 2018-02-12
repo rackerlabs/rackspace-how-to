@@ -5,8 +5,8 @@ title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
-last_modified_date: '2018-01-26'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-02-12'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
@@ -23,6 +23,7 @@ This page lists various Rackspace services and their current mitigation status f
 | **Google Cloud Platform™ (GCP)** | Per [Google](https://support.google.com/faqs/answer/7622138), Google took proactive steps to secure the GCP infrastructure against these vulnerabilities.<br/><br/>Despite Google actions, malicious software running within guest VMs might be able to exploit these vulnerabilities. Rackspace has provided additional guidance directly to potentially affected customers that OS and/or Google Kubernetes® Engine can be patched at any time. |
 |**Hyper-V®** |Customers who elect to patch hypervisors with the updates currently available should contact the Microsoft Cloud support team for further assistance.<br/><br/>For guest VMs, Rackspace recommends that customers also follow the guidance provided for Windows® OS or Linux® OS, as applicable. |
 | **Linux OS** | Currently, normal Rackspace patching processes will apply. Rackspace will add vendor patches to the patching schedule as they become available and are tested by Rackspace.<br/><br/>Customers who want to update devices in advance of typical patching windows should contact their support team.<br/><br/>For more information, see [Linux OS mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/linux-os-mitigations-against-cpu-speculative-execution-vulnerabilities/). |
+| **Managed Colocation & Managed Infrastructure** | Given the configuration of Managed Colocation and Managed Infrastructure environments, Rackspace does not have root access to customer devices.<br/><br/> Customers should reference the vendors for their recommended solutions to mitigate the vulnerability via patches of the operating system and microcode updates. |
 | **Network Security** | Risk to Network Security appliances is assessed to be minimal. |
 | **ObjectRocket** | Our engineering teams continue to work with our vendors to review all internal and customer environments. If we need to take action that would impact production databases, we will provide additional guidance directly to the customers involved. |
 | **Rackspace Application Services** | Rackspace will provide additional guidance directly to potentially affected customers. |
