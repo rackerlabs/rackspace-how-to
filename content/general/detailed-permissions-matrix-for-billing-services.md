@@ -40,7 +40,6 @@ List account VAT | **Observer, Admin** | Returns the Value Added Tax (VAT) code 
 Create account VAT | **Admin** | Creates a Value Added Tax (VAT) code for the current account.
 Delete account VAT | **Admin** | Deletes the Value Added Tax (VAT) code for a current account.
 
-
 ### Payment services
 
 Capability | Role | Description
