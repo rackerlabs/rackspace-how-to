@@ -1,11 +1,11 @@
 ---
 permalink: detailed-permissions-matrix-for-billing-services/
-audit_date: '2017-02-28'
+audit_date: '2018-02-12'
 title: Detailed permissions matrix for billing and payment services
 type: article
 created_date: '2013-09-19'
 created_by: Renee Rendon
-last_modified_date: '2017-05-16'
+last_modified_date: '2018-02-12'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
@@ -31,7 +31,7 @@ List account payment by ID | **Observer, Admin** | Lists a specific payment.
 List payment invoices | **Observer, Admin** | Returns a list of invoices related to a payment.
 List refund by ID | **Observer, Admin** | Lists a specific refund.
 List billing periods | **Observer, Admin** | Returns a list of billing periods.
-List estimated charges | **Observer, Admin** | Returns list of summarized estimated charges for a specific billing period.
+List estimated charges | **Observer, Admin** | Returns a list of summarized estimated charges for a specific billing period.
 List subscriptions | **Observer, Admin** | Returns a list of subscriptions for the account.
 List contract entity | **Observer, Admin** | Retrieves a Rackspace Contract Entity for a billing account.
 Create payment | **Admin** | Submits a payment for the balance owed by an account.
