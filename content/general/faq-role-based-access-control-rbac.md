@@ -28,8 +28,8 @@ Yes, RBAC is available to all Rackspace customers.
 
 #### Can I configure custom role assignments when I add a user login to an existing contact?
 
-Yes, you can. See [Use Role-Based Access Control (RBAC)](/how-to/managing-role-based-access-control-rbac) for
-instructions.
+Yes, you can. For instructions, see [Use Role-Based Access Control
+(RBAC)](/how-to/managing-role-based-access-control-rbac).
 
 #### How do I query the capability of a given user?
 
