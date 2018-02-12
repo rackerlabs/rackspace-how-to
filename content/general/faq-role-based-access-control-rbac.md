@@ -95,7 +95,7 @@ Following is the initial pop-up window that appears when you enable RBAC.
 [<img src="{% asset_path general/faq-role-based-access-control-rbac/RBAC%20Initial%20PDF_0.png %}" width="526" height="378" />](https://8026b2e3760e2433679c-fffceaebb8c6ee053c935e8915a3fbe7.ssl.cf2.rackcdn.com/field/image/RBAC%20Initial%20PDF_0.png)
 
 For information about additional products that will be RBAC-enabled in
-the future, see [Learning about Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac).
+the future, see [Learn about Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac).
 
 For information about changing your admin credentials, see [Use Role-Based Access Control (RBAC)](/how-to/managing-role-based-access-control-rbac).
 
