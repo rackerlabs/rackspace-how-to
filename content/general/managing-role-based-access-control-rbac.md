@@ -135,4 +135,4 @@ each account. The following graphic illustrates this scenario.
 
 ### Next section
 
-[Learn about Role-Based Access Control (RBAC)](/how-to/uoverview-role-based-access-control-rbac)
+[Learn about Role-Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac)
