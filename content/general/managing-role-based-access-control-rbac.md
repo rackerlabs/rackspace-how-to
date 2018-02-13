@@ -5,7 +5,7 @@ title: Use Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-06-28'
 created_by: Renee Rendon
-last_modified_date: '2018-02-12'
+last_modified_date: '2018-02-13'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
@@ -132,7 +132,3 @@ owner must configure that user with a different username for
 each account. The following graphic illustrates this scenario.
 
 <img src="{% asset_path general/managing-role-based-access-control-rbac/MutiAccountsRBAC.png %}" width="534" height="250" />
-
-### Next section
-
-[Learn about Role-Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac)
