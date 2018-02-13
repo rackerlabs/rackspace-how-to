@@ -94,11 +94,11 @@ optimal product interaction.
 <td align="left"><strong>Cloud Load Balancers</strong></td>
 <td align="left"><p>A user has been assigned any Cloud Load Balancers role.</p></td>
 <td align="left"><p> </p></td>
-<td align="left"><p>In Cloud Servers, give the user the <b>Observer</b> role (minimum action).</p></td>
+<td align="left"><p>In Cloud Servers, give the user the <strong>Observer</strong> role (minimum action).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Cloud Load Balancers </strong></td>
-<td align="left">A user wants to add a node by using the **Nodes > Add Cloud Servers** option in the Cloud Control Panel.</td>
+<td align="left">A user wants to add a node by using the <strong>Nodes > Add Cloud Servers</<strong> option in the Cloud Control Panel.</td>
 <td align="left">The user has been assigned any Cloud Load Balancers role.</td>
 <td align="left">In Cloud Servers, give the user any role. </td>
 </tr>
@@ -106,7 +106,7 @@ optimal product interaction.
 <td align="left"><p><strong>Cloud Databases</strong></p></td>
 <td align="left"><p>A user wants to create a backup in Cloud Databases.</p></td>
 <td align="left"><p> </p></td>
-<td align="left"><p>In Cloud Files, give the user the **Admin** role.</p></td>
+<td align="left"><p>In Cloud Files, give the user the <strong>Admin</strong> role.</p></td>
 </tr>
 </tbody>
 </table>
