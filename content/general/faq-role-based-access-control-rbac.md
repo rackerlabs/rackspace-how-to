@@ -5,7 +5,7 @@ title: 'Role-Based Access Control (RBAC) FAQ'
 type: article
 created_date: '2013-04-12'
 created_by: Renee Rendon
-last_modified_date: '2018-02-12'
+last_modified_date: '2018-02-13'
 last_modified_by: Kate Dougherty  
 product: undefined
 product_url: undefined
