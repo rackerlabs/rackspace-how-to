@@ -31,7 +31,7 @@ You can use our [Cloud Pricing Page](http://www.rackspace.com/cloud/public-prici
 #### Can I pay in advance?
 
 If you meet the minimum requirements for our Commitment Pricing Program, you can 
-prepay a commitment pricing contract for your account. Any usage beyond the minimum 
+prepay based on a commitment pricing contract for your account. Any usage beyond the minimum 
 commitment amount is invoiced at the utility rate on the monthly date of your
 account's anniversary. For example, if your account was created on the 25th of the month, 
 you will be billed monthly on the 25th. You can find more information about the Commitment Pricing
@@ -95,10 +95,10 @@ show what you are paying for when you partner with us.
     Rate* varies based on the service level that you choose for your
     cloud account.
 
-The Service Level Rate *minimums* are based on the service level that
+The Service Level Rate *minimums* are based on the service level that you
 choose for your cloud account. The minimums represent the minimum
 monthly charge for the service. If the cost of the resources that you use in
-a month exceed the minimum, the Service Level Rate minimum does
+a month exceeds the minimum, the Service Level Rate minimum does
 not apply. If your costs for a month are less than the minimum, the
 difference between your usage costs and the Service Level Rate minimum
 are added to your bill.
@@ -116,8 +116,8 @@ You can delete cloud servers and services by using the [Cloud Control Panel](htt
 
 #### How do I delete or cancel my services?
 
-Cloud accounts can be closed by the Account Owner at any time, but Rackspace cannot 
-perform this action. Instead, the customer must initiate through the MyCloud portal, 
+Cloud accounts can be closed by the account owner at any time, but Rackspace cannot 
+perform this action. Instead, the account owner must initiate the closure through the MyCloud portal, 
 using the following steps: 
 
 1. Ensure that all products (such as Cloud Servers, Images, Cloud Files, Cloud 
@@ -135,12 +135,12 @@ the Rackspace environment.
 
 Cancellations cannot be initiated over the phone or with a support ticket. The cancellation
 submission is your authorized approval for Rackspace to delete your account and
-cancel your services in their entirety. Rackspace is not liable for data loss, if you do not 
-have a copy of your data outside of our Cloud infrastructure.
+cancel your services in their entirety.  If you do not 
+have a copy of your data outside of our Cloud infrastructure, Rackspace is not liable for data loss.
 
 **Note** Your Rackspace cloud account is billed one month in arrears on your anniversary date. 
-Depending on the date on which your cancellation is finalized, you may still receive an 
-additional, final invoice on your next invoice date. Please refer to your billing overview 
+Depending on the date on which your cancellation is finalized, you might still receive an 
+additional, final invoice on your next invoice date. Refer to your billing overview 
 for your monthly invoice date.
 
 If you prefer to keep your account open without receiving future charges,
@@ -150,4 +150,4 @@ the need to register a new account.
 
 #### I don't agree with my bill. How can I dispute a charge?
 
-You can create a ticket via the [Cloud Control Panel](https://mycloud.rackspace.com/) with the details of your dispute. One of our Account Managers will review the ticket. A credit is granted only if there is an error related to our billing system or there is a service error according to your service level agreement (SLA).
+You can create a ticket via the [Cloud Control Panel](https://mycloud.rackspace.com/) with the details of your dispute. One of our account managers will review the ticket. A credit is granted only if there is an error related to our billing system or there is a service error according to your service level agreement (SLA).
