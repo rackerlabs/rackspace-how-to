@@ -118,8 +118,7 @@ optimal product interaction.
 3. Complete the **Username**, **Password**, **Security Question**, and
 **Security Answer** fields.
 
-4. Click **Save User Information** after choosing the custom
-role.
+4. After choosing the custom role, click **Save User Information**.
 
 5. Click the gear icon next to that user's name and configure
 the custom role.
