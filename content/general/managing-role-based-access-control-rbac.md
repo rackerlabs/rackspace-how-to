@@ -98,7 +98,7 @@ optimal product interaction.
 </tr>
 <tr class="even">
 <td align="left"><strong>Cloud Load Balancers </strong></td>
-<td align="left">A user wants to add a node by using the <strong>Nodes > Add Cloud Servers</<strong> option in the Cloud Control Panel.</td>
+<td align="left">A user wants to add a node by using the <strong>Nodes > Add Cloud Servers</strong> option in the Cloud Control Panel.</td>
 <td align="left">The user has been assigned any Cloud Load Balancers role.</td>
 <td align="left">In Cloud Servers, give the user any role. </td>
 </tr>
