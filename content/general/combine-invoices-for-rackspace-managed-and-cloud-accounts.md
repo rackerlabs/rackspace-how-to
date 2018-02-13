@@ -1,11 +1,11 @@
 ---
 permalink: combine-invoices-for-rackspace-managed-and-cloud-accounts/
-audit_date: '2018-02-02'
+audit_date: '2018-02-13'
 title: Combine invoices for Rackspace Managed and Cloud accounts
 type: article
 created_date: '2017-08-07'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-02-02'
+last_modified_date: '2018-02-13'
 last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
@@ -18,7 +18,7 @@ Instead of paying separate bills for multiple Rackspace accounts, you can combin
 ### Combine invoices
 
 1. For Cloud accounts, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/). For Managed accounts, log in to the [MyRackspace portal](https://my.rackspace.com/).
-2. In the upper-right corner of the page, click your account name, and then click **Billing Overview** for Cloud accounts and **Transactions** for Managed accounts.
+2. In the upper-right corner of the page, click **Billing**.
 
    The Rackspace Billing portal displays.
 
@@ -38,7 +38,7 @@ Instead of paying separate bills for multiple Rackspace accounts, you can combin
 
 6. Select the check box to agree to the terms of service, and then click **Add Account**.
 
-   A pop-up dialog box displays and shows the account information that you want to add to the invoice. Click **Add Account** to confirm.
+7. A pop-up dialog box displays the account information that you want to add to the invoice. Click **Add Account** to confirm.
 
    <img src="{% asset_path general/combine-invoices-for-rackspace-managed-and-cloud-accounts/confirm-add-account.png %}" />
 
