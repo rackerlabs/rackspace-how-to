@@ -94,7 +94,7 @@ optimal product interaction.
 <td align="left"><strong>Cloud Load Balancers</strong></td>
 <td align="left"><p>A user has been assigned any Cloud Load Balancers role.</p></td>
 <td align="left"><p> </p></td>
-<td align="left"><p>In Cloud Servers, give the user the **Observer** role (minimum action).</p></td>
+<td align="left"><p>In Cloud Servers, give the user the <b>Observer</b> role (minimum action).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Cloud Load Balancers </strong></td>
