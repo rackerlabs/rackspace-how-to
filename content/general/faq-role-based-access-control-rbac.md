@@ -26,14 +26,14 @@ Customers can opt out by simply removing the account users.
 
 Yes, RBAC is available to all Rackspace customers.
 
-#### Can I configure custom role assignments when I add a user login to an existing contact?
+#### When I add a user login to an existing contact, can I configure custom role assignments?
 
 Yes, you can. For instructions, see [Use Role-Based Access Control
 (RBAC)](/how-to/managing-role-based-access-control-rbac).
 
 #### How do I query the capability of a given user?
 
-You can query the roles for a given user by using the [List global roles assigned to a user](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/role-operations/#list-global-roles-assigned-to-a-user) API operation described in the Rackspace Cloud Identity API Guide. Additionally, you can view the roles that a user has through the [Cloud Control Panel](http://mycloud.rackspace.com).
+You can query the roles for a given user by using the [List global roles assigned to a user](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/role-operations/#list-global-roles-assigned-to-a-user) API operation described in the _Rackspace Cloud Identity API Guide_. Additionally, you can view the roles that a user has through the [Cloud Control Panel](http://mycloud.rackspace.com).
 
 #### Can I view multiple accounts in the Cloud Control Panel?
 
@@ -41,7 +41,7 @@ You can view only one account at a time in the Cloud Control Panel.
 
 #### Can Rackspace display usage per billing or per user?
 
-No. Per-billing and per-user usage are not offered at this time.
+Per-billing and per-user usage are not offered at this time.
 
 #### Which users can create support tickets?
 
@@ -55,7 +55,7 @@ functionality.
 
 #### Does RBAC provide fine-grained access control for specific servers, directories, or files?
 
-RBAC is limited to granting a user access to a given product. It is
+RBAC is limited to granting a user access to a given product. RBAC is
 not granular enough to restrict access to individual servers, files, or
 directories.
 
@@ -70,14 +70,14 @@ Yes.
 
 #### How does RBAC work with MyRackspace?
 
-With the implementation of RBAC, account owners can leave permissions as
-they are in MyRackspace, or set up restricted access to specific products
+With RBAC, account owners can leave permissions as
+they are in MyRackspace or set up restricted access to specific products
 for users through the Cloud Control Panel. For more detailed information,
 see [Learn about Role-Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac/).
 
 #### Can I link dedicated, hybrid, and cloud permissions?
 
-These permissions cannot be linked at this time. Having a common
+You cannot link these permissions at this time. Having a common
 permission scheme among dedicated, hybrid, and cloud customers will be
 addressed in the future.
 
@@ -85,8 +85,8 @@ addressed in the future.
 
 All resources for an account are shared across users that have the
 correct roles. In other words, account users do not have their own set
-of resources, but share a pool of resources that other users of the
-account may have access to.
+of resources but share a pool of resources that other users of the
+account might have access to.
 
 #### Where can I view the pop-up window that appeared when I initially enabled RBAC?
 
