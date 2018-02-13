@@ -5,13 +5,13 @@ title: Use Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-06-28'
 created_by: Renee Rendon
-last_modified_date: '2016-09-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-02-12'
+last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
 
-**Previous section:** [Learning about Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac)
+**Previous section:** [Learn about Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac)
 
 The account owner implements Role-Based Access Control (RBAC) by adding users to the account and assigning roles. This article is intended for account owners and guides you through this process using the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -135,4 +135,4 @@ each account. The following graphic illustrates this scenario.
 
 ### Next section
 
-[Using RBAC with MyRackspace](/how-to/using-rbac-with-myrackspace)
+[Learn about Role-Based Access Control (RBAC)](/how-to/uoverview-role-based-access-control-rbac)
