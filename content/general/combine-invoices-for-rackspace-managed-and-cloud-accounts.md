@@ -13,7 +13,12 @@ product_url: undefined
 
 Instead of paying separate bills for multiple Rackspace accounts, you can combine your bills into a single invoice and pay only once. This article describes how to combine invoices, how your billing due date is affected, and how to separate a combined invoice.
 
-**Note:** Currently, you can combine bills from only Rackspace Managed and Rackspace Cloud accounts. You cannot combine accounts that are billed in different currencies, that are already combined with another invoice, that are contracted with different contracting entities, or if there is an outstanding balance on the child account.
+**Note:** Currently, you can combine bills from only Rackspace Managed and Rackspace Cloud accounts. You cannot combine accounts that:
+
+- are billed in different currencies,
+- are already combined with another invoice, 
+- are contracted with different contracting entities, or 
+- have an outstanding balance on a child account.
 
 ### Combine invoices
 
@@ -32,13 +37,13 @@ Instead of paying separate bills for multiple Rackspace accounts, you can combin
 
    <img src="{% asset_path general/combine-invoices-for-rackspace-managed-and-cloud-accounts/add-account.png %}" />
 
-   Then enter the username and password for that account.
+6. Enter the username and password for that account.
 
    <img src="{% asset_path general/combine-invoices-for-rackspace-managed-and-cloud-accounts/add-account-details.png %}" />
 
-6. Select the check box to agree to the terms of service, and then click **Add Account**.
+7. Select the check box to agree to the terms of service, and then click **Add Account**.
 
-7. A pop-up dialog box displays the account information that you want to add to the invoice. Click **Add Account** to confirm.
+8. A pop-up dialog box displays the account information that you want to add to the invoice. Click **Add Account** to confirm.
 
    <img src="{% asset_path general/combine-invoices-for-rackspace-managed-and-cloud-accounts/confirm-add-account.png %}" />
 
@@ -46,9 +51,9 @@ After the accounts are consolidated, the **Invoiced Accounts** section of the **
 
 ### Billing cycle
 
-If your combined invoice includes only Rackspace Cloud accounts, then you will receive your next invoice on your normal bill date for your master account.
+If your combined invoice includes only Rackspace Cloud accounts, you will receive your next invoice on your normal billing date for your master account.
 
-If your combined invoice includes a Rackspace Managed account, then your next invoice will be billed on the first day of the month.
+If your combined invoice includes a Rackspace Managed account, your next invoice will be billed on the first day of the month.
 
 The following example describes how your billing is affected when you combine Cloud and Managed account invoices:
 
