@@ -13,12 +13,7 @@ product_url: undefined
 
 Instead of paying separate bills for multiple Rackspace accounts, you can combine your bills into a single invoice and pay only once. This article describes how to combine invoices, how your billing due date is affected, and how to separate a combined invoice.
 
-**Note:** Currently, you can combine bills from only Rackspace Managed and Rackspace Cloud accounts. You cannot combine accounts that:
-
-- are billed in different currencies,
-- are already combined with another invoice, 
-- are contracted with different contracting entities, or 
-- have an outstanding balance on a child account.
+**Note:** Currently, you can combine bills from only Rackspace Managed and Rackspace Cloud accounts. You cannot combine accounts that are billed in different currencies, are already combined with another invoice, are contracted with different contracting entities, or have an outstanding balance on a child account.
 
 ### Combine invoices
 
