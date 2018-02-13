@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-billing-faq/
-audit_date: '2018-02-02'
+audit_date: '2018-02-13'
 title: Rackspace billing FAQ
 type: article
 created_date: '2014-01-17'
 created_by: Rackspace Support
-last_modified_date: '2018-02-02'
+last_modified_date: '2018-02-13'
 last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
@@ -75,7 +75,8 @@ Follow these steps to update your credit card information:
 Follow these steps to change your billing address:
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-2.  In the upper-right corner of the page, click your user name, and then select **Billing and Payments**.
+2.  In the upper-right corner of the page, click **Billing**.
+3.  Click the **Billing Settings** tab.
 3.  Click the pencil icon next to **Billing Address** to edit the address.
 
 ### Charges
@@ -115,20 +116,34 @@ You can delete cloud servers and services by using the [Cloud Control Panel](htt
 
 #### How do I delete or cancel my services?
 
-Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and
+Cloud accounts can be closed by the Account Owner at any time, but Rackspace cannot 
+perform this action. Instead, the customer must initiate through the MyCloud portal, 
+using the following steps: 
+
+1. Ensure that all products (such as Cloud Servers, Images, Cloud Files, Cloud 
+Block Storage, and so on) are deleted. 
+2. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/), and
 review all services to ensure that all your data is backed up outside of
-the Rackspace environment. You can then submit a cancellation request by
-following these steps:
+the Rackspace environment. 
+3.  In the upper-right corner of the Cloud Control Panel, click **Account**.
+4.  Click **Account Settings** from the menu.
+5.  At the bottom of the Account Settings page, click **Cancel My Account**.
+6.  Choose a reason from the provided list.
+7.  Check the check box at the bottom of the page.
+8.  Type the word "CANCEL" into the text box.
+9.  Click **Cancel Account**.
 
-1.  In the upper-right corner of the Cloud Control Panel, click your user name, and then select **Account Settings**.
-2.  At the bottom of the Account Settings page, click **Cancel My Account**.
+Cancellations cannot be initiated over the phone or with a support ticket. The cancellation
+submission is your authorized approval for Rackspace to delete your account and
+cancel your services in their entirety. Rackspace is not liable for data loss, if you do not 
+have a copy of your data outside of our Cloud infrastructure.
 
-Cancellations cannot be initiated over the phone. The cancellation
-submission is your authorized approval for Rackspace to delete and
-cancel your services in their entirety. If you do not have a copy of your data outside of our Cloud
-infrastructure, Rackspace is not liable for data loss.
+**Note** Your Rackspace cloud account is billed one month in arrears on your anniversary date. 
+Depending on the date on which your cancellation is finalized, you may still receive an 
+additional, final invoice on your next invoice date. Please refer to your billing overview 
+for your monthly invoice date.
 
-If you want to keep your account open without receiving future charges,
+If you prefer to keep your account open without receiving future charges,
 you can manually delete all services from your account profile. This
 method enables you to use the Rackspace services in the future without
 the need to register a new account.
