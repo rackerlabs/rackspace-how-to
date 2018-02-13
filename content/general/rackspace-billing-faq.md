@@ -138,7 +138,7 @@ submission is your authorized approval for Rackspace to delete your account and
 cancel your services in their entirety.  If you do not 
 have a copy of your data outside of our Cloud infrastructure, Rackspace is not liable for data loss.
 
-**Note** Your Rackspace cloud account is billed one month in arrears on your anniversary date. 
+**Note:** Your Rackspace cloud account is billed one month in arrears on your anniversary date. 
 Depending on the date on which your cancellation is finalized, you might still receive an 
 additional, final invoice on your next invoice date. Refer to your billing overview 
 for your monthly invoice date.
