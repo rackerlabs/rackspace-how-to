@@ -24,10 +24,7 @@ Reinstalling the agent on a server disconnects any previously registered agents 
 
 ### Download the installer
 
-Determine whether your Windows server architecture is 64-bit or 32-bit, and download the latest MSI installation file for that architecture from [http://agentrepo.drivesrvr.com/](http://agentrepo.drivesrvr.com/).
-
-- [32-bit Windows .msi](http://97a6455ef60243cc8c74-57c93634a2c6eae60c16d098c741cf9b.r43.cf1.rackcdn.com/win32/driveclient-latest.msi)
-- [64-bit Windows .msi](http://97a6455ef60243cc8c74-57c93634a2c6eae60c16d098c741cf9b.r43.cf1.rackcdn.com/win64/driveclient-latest.msi) (This file will almost always be the correct one for your server.)
+For a 64-bit Windows server architecture download the latest MSI installation file for that architecture from [64-bit Windows.msi](http://agentrepo.drivesrvr.com/win64/driveclient-latest.msi) (This file will almost always be the correct one for your server).
 
 ### Perform a silent installation
 

@@ -114,4 +114,4 @@ If the buttons to add one or more mailboxes are unavailable, you must add the ne
 - [Cloud Office support terminology](/how-to/cloud-office-support-terminology)
 - [Cloud Office Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f "Cloud Office Control Panel")
 - [Cloud Office Email Portal](https://apps.rackspace.com/index.php)
-- [Add Microsoft Exchange mailboxes](https://support.rackspace.com/how-to/adding-microsoft-exchange-mailboxes/).
+- [Add Microsoft Exchange mailboxes](https://support.rackspace.com/how-to/adding-microsoft-exchange-mailboxes/)

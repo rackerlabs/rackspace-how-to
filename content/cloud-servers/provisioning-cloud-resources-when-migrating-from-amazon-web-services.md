@@ -1,19 +1,20 @@
 ---
 permalink: provisioning-cloud-resources-when-migrating-from-amazon-web-services/
-audit_date:
+audit_date: '2017-10-24'
 title: Provision cloud resources when migrating from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2016-01-19'
-last_modified_by: Rose Contreras
+last_modified_date: '2017-10-24'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 **Previous section:** [High-level steps for migrating from Amazon Web Services](/how-to/high-level-steps-for-migrating-from-amazon-web-services)
 
-This article describes how to provision your Rackspace Cloud services when migrating from Amazon Web Services (AWS).
+This article describes how to provision your Rackspace Cloud services when migrating from
+Amazon Web Services (AWS).
 
 ### Provision a new cloud server
 
@@ -25,13 +26,11 @@ This article describes how to provision your Rackspace Cloud services when migra
 
 4. Select an OS that matches your OS from AWS.
 
-    **Note:** If your Amazon Elastic Compute Cloud (EC2) instance is Amazon Linux, select CentOS 5.0 or later. Amazon Linux is based on Red Hat Enterprise Linux 5.
-
 5. Select the size (flavor) that matches your EC2 instance (RAM and disk space), and click **Create Server**.
 
    For information about instance size mapping, see [Mapping of Amazon Web Services resources to Rackspace resources](/how-to/mapping-of-amazon-web-services-resources-to-rackspace-resources).
 
-   **Note**: You can add more storage to your cloud server after it is created by adding a Cloud Block Storage volume. For instructions, see the "Add a Cloud Block Storage volume" section later in this article.
+   **Note**: You can add more storage to your cloud server after it is created by adding a Cloud Block Storage volume. For instructions, see the **Add a Cloud Block Storage volume** section later in this article.
 
 6. When your root admin password is displayed, copy the password to a secure location, and then click **Dismiss Password**.
 
@@ -39,7 +38,7 @@ This article describes how to provision your Rackspace Cloud services when migra
 
 ### Create a custom password (optional)
 
-You can create a custom password for you server.
+You can create a custom password for your server.
 
 1. On the Cloud Servers page in the Cloud Control Panel, click the gear icon next to the server in the server list and select **Change Password**.
 
@@ -97,7 +96,7 @@ If you will not be setting up your own database server, create a Cloud Databases
 
 1. On the Cloud Servers page in the control panel, click the name of your server.
 
-2. Under **Networks**, note the <strong>PublicNet (Internet) IPv4</strong> address.
+2. Under **Networks**, note the **PublicNet (Internet) IPv4** address.
 
 3. Using SSH, connect to your cloud server by using the following command and the PublicNet address:
 

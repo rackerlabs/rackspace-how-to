@@ -5,14 +5,16 @@ title: Integrate Rackspace Email Archiving with Outlook
 type: article
 created_date: '2015-05-19'
 created_by: Beau Bailey
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2017-11-27'
+last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
 You can create a folder in Microsoft Outlook that connects to your
 archived mail.
+
+**Warning:** This feature can no longer be configured in Outlook 2016.
 
 1.  Copy the URL of your archive login, for example
     ` https://domainnamecom.archivesrvr.com/login/new`.

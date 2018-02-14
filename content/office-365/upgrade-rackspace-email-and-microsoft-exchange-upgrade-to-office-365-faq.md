@@ -5,7 +5,7 @@ title: Upgrade Rackspace Email and Microsoft Exchange to Office 365 FAQ
 type: article
 created_date: '2017-06-29'
 created_by: Casey Gurbanov
-last_modified_date: '2017-06-29'
+last_modified_date: '2018-01-08'
 last_modified_by: William Loy
 product: Office 365
 product_url: office-365
@@ -26,10 +26,10 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 Administrators add the Office 365 licenses to their account and create their new Office 365 environment. See the following instructional articles in the order listed to prepare for migration:
 
- - [Create your Office 365 Tenant](/how-to/set-up-office-365#create-a-tenant-id)
- - [Add your domain in Office 365](/how-to/add-a-domain-in-office-365)
- - [Add an Office 365 license](/how-to/add-an-office-365-license)
- - [Assign an Office 365 license to a user](/how-to/add-an-office-365-license#assign-an-office-365-license-to-a-user)
+ 1.  [Create your Office 365 Tenant](/how-to/set-up-office-365#create-a-tenant-id)
+ 2.  [Add your domain in Office 365](/how-to/add-a-domain-in-office-365)
+ 3.  [Add an Office 365 license](/how-to/add-an-office-365-license)
+ 4.  [Assign an Office 365 license to a user](/how-to/add-an-office-365-license#assign-an-office-365-license-to-a-user)
 
 **Note:** You must complete these steps before self-migrating or requesting an assisted migration.
 

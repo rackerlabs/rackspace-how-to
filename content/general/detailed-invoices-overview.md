@@ -1,12 +1,12 @@
 ---
 permalink: detailed-invoices-overview/
-audit_date:
+audit_date: '2017-12-04'
 title: Detailed invoices overview
 type: article
 created_date: '2015-09-17'
 created_by: Nate Archer
-last_modified_date: '2016-05-10'
-last_modified_by: Nate Archer
+last_modified_date: '2017-12-04'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -15,16 +15,17 @@ Detailed invoices give you access to an itemized, per-service, per-device overvi
 
 ### Open a detailed invoice
 
-1.  Log in to the Cloud Control Panel.
+1. Log in to the Cloud Control Panel.
 
-2.  In the upper-right corner of the page, click your user name and then select **Billing and Payments**.
+2. In the upper-right corner of the page, click your user name and then select **Billing Overview**.
 
-3.  Under **Billing History**, click the ID number of the invoice that you
-    want to view.
+   You are redirected to the Rackspace Billing portal.
 
-4.  Under **Invoice Summary**, click **Detailed View of Charges**.
+3. In the top navigation bar, click **Billing History**, and then click **Invoice Details**.
 
-    A separate window opens and displays your detailed invoice.
+You can change the billing period by selecting the bill date from the drop down menu in the left navigation bar. If you have multiple invoices, you can choose which invoice details to view by selecting the invoice ID in the left navigation bar.
+
+You can also download a **PDF** or **.csv** of your detailed invoice.
 
 ### Detailed invoice features
 
@@ -40,14 +41,6 @@ When the list of devices is expanded, each device contains at least two
 lines. The first line indicates the total charges for the device. Any
 line under the first indicates an itemized price based on how the device
 was used.
-
-If you want details about how a device's use charge was calculated,
-place your cursor over the charge. A pop-up box appears next to the
-cursor with the equation used to calculate the charge.
-
-At the top of the invoice is a collapsible list called
-**Account**. Account-level charges are the charges that are not specific
-to an individual device.
 
 **Note:** Although their format is similar, detailed invoices are
 displayed differently than the CSV format of invoices. The CSV format

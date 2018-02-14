@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-referral-program/
-audit_date:
+audit_date: '2018-01-30'
 title: Rackspace Referral Program
 type: article
 created_date: '2013-09-23'
 created_by: Rackspace Support
-last_modified_date: '2016-06-22'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-01-30'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
@@ -21,10 +21,10 @@ customers and prospects.
 
 Following are the key features of the program:
 
-- Delivers immediate rewards and benefits to our customers and partners in return for their referrals
-- Provides a simple and intuitive program that makes it easy for you to do business with us
-- Enables our customers and partners to leverage the unique depth and breadth of the Rackspace Hybrid Cloud portfolio
-- Leverages our global brand to uncover new opportunities and easily refer out solutions to your customers and prospects
+- Delivers immediate rewards and benefits to our customers and partners in return for their referrals.
+- Provides a simple and intuitive program that makes it easy for you to do business with us.
+- Enables our customers and partners to leverage the unique depth and breadth of the Rackspace Hybrid Cloud portfolio.
+- Leverages our global brand to uncover new opportunities and easily refer our solutions to your customers and prospects.
 
 In addition to providing Rackspace and cobranded collateral, we also have a
 portal that you can use to register your leads, access sales and marketing
@@ -38,7 +38,7 @@ businesses for a rewarding relationship.
 Your relationship with Rackspace isn't a one-way street&mdash;we'll succeed
 together. That's why we've made the referral program as easy and
 transparent as possible. In the referral portal, you can see the status
-of all of your leads and compensation, and contact us for help. Unlike
+of all of your leads and compensation, and can contact us for help. Unlike
 most programs that have lengthy and complicated contracts, this program has no
 fees or commitments. It's just companies working
 together to build a strong offering in the marketplace. At Rackspace,
@@ -48,14 +48,14 @@ it's simple&mdash;you are rewarded for referring leads.
 
 With the Rackspace Referral Program, you are paid in one simple
 single payment that reflects the average monthly recurring revenue of the
-lead you passed us. It's hassle free and totally transparent.
+lead that you passed us. It's hassle free and totally transparent.
 
 For more information about the payout, see the [Rackspace Referral Program](https://partners.rackspace.com/English/referrals.aspx) page.
 
 ### Fanatical Support&reg; for you and your customers
 
 Our dedication to our customers is legendary. As part of the referral
-program, we will extend the [Fanatical Support Promise&trade;](http://www.rackspace.com/whyrackspace/support/) to you and
+program, we extend the [Fanatical Support Promise&trade;](http://www.rackspace.com/whyrackspace/support/) to you and
 your customers. It's what differentiates us from other companies in our
 field, and we encourage you to use it as a selling point in your
 conversations. Fanatical Support means that whether you need assistance

@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-reseller-program/
-audit_date:
+audit_date: '2018-01-16'
 title: Rackspace Reseller Program
 type: article
 created_date: '2013-09-23'
 created_by: Rackspace Support
-last_modified_date: '2016-06-22'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-01-16'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
@@ -26,7 +26,7 @@ by:
 ### Program benefits
 
 In addition to receiving compensation benefits, resellers can also take
-advantage of sales, marketing and training resources. Some of these
+advantage of sales, marketing, and training resources. Some of these
 benefits include:
 
 Benefit | Associate | Preferred | Premier
@@ -36,7 +36,6 @@ Cobranded collateral automation | X | X | X
 Partner newsletter | X | X | X
 Partner webinars and events | X | X | X
 Rackspace Reseller Partner logo (tier-level specific) | X | X | X
-Searchable database on partner portal | X | X | X
 Partner training | X | X | X
 Priority listing on internal sales/support CRM |  | X | X
 Access to the Rackspace Customer Experience Center <sup>1</sup> |  | X | X
@@ -47,7 +46,7 @@ Joint marketing funds <sup>1</sup> |  |  | X
 
 ### How the program works
 
-Joining offers you access to the benefits you need to begin building and
+Joining offers you access to the benefits that you need to begin building and
 selling Rackspace solutions to your prospects and customers. Our program
 offers market competitive reseller discounts that lead to higher margins
 and greater competitive advantages. You can see the reseller discounts on the [Rackspace Reseller Program](https://partners.rackspace.com/English/resellers.aspx) page.

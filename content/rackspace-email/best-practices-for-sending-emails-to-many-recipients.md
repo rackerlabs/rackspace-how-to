@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article provides best practices for sending legitimate email to many recipients through the Rackspace mail system. 
+This article provides best practices for sending legitimate email to many recipients through the Rackspace mail system.
 
 If you have received a bounce message when sending an email, see our list of [common email bounce messages](/how-to/common-email-bounces/) for more information.
 
@@ -22,6 +22,8 @@ If you have received a bounce message when sending an email, see our list of [co
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 ### Best practices
+
+For a video tutorial see [Rackspace Email - Spam Flags: Best Sending Practices](https://emailhelp.rackspace.com/l/spam-overview).
 
 Sending email to many recipients is a common practice of spammers. As a result, most email providers have strict rules regarding email content sent to many recipients. It is difficult to distinguish your email from typical mass marketing, newsletter, and other unsolicited mass email content.
 

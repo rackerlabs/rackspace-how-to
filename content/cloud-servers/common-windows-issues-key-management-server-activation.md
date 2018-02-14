@@ -1,32 +1,32 @@
 ---
 permalink: common-windows-issues-key-management-server-activation/
-audit_date:
+audit_date: '2017-12-03'
 title: 'Common Windows Issues: Key Management Server Activation'
 type: article
 created_date: '2011-08-15'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-12-03'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 **Problem**:  Periodic activation requests to the KMS are rejected and
-the operating system is seen as unlicensed.
+the operating system shows as unlicensed.
 
 **Cause**: Windows cannot locate the Key Management Server (KMS) after
-changing the time zone of the Cloud Server.  Now your Cloud Server's
+changing the time zone of the cloud server, so, as a result, your server's
 system clock does not sync with the KMS.
 
-**Resolution**: You will need to resynch your Cloud Server with the KMS
+**Resolution**: You must resynch your cloud cerver with the KMS
 server:
 
-1. Log in to your Cloud Server as Administrator (Start, All Programs,
-   Accessories, right-click Command Prompt and select Run as
-   Administrator).
+1. Log in to your cloud server as administrator by clicking 
+   **Start > All Programs > Accessories**. Then, right-click **Command Prompt**,
+   and select **Run as Administrator**.
 
 2. Choose the data center in the following table that corresponds to
-   the location of your server and run the applicable command from the
+   the location of your server, and run the applicable command from the
    command prompt.
    
    | Data Center      | Command                                            |
@@ -39,7 +39,8 @@ server:
    | SYD (Sydney)     | `ping winactivate.syd2.servers.rackspacecloud.com` |
    
    **Note**: If there is a reply, move on to step 3.  No reply means that there
-   is an interface, hardware, or routing issue.
+   is an interface, hardware, or routing issue, and we recommend the following article 
+   for help resolving the issue: [Update ServiceNet routes on cloud servers created before June 3, 2013](https://support.rackspace.com/how-to/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013/)
 
 3. Set the KMS manually within the registry.
    
@@ -56,13 +57,13 @@ server:
     
        slmgr.vbs /ato
 
-5. If step 4 returns an error reading EXACTLY "0xC004F074 The Key 
-   Management Server (KMS) is unavailable", run the following:
+5. If step 4 returns the error ``0xC004F074 The Key 
+   Management Server (KMS) is unavailable``, run the following command:
    
         w32tm /resync
    
-6. If the time on the Cloud Server is drastically different than
-     what is on the KMS the resync will fail.  At this point you will need to
+6. If the time on the cloud server is drastically different than
+     what is on the KMS the resync will fail.  At this point, you should
      either set the time manually or configure the server to use an NTP
      instance over the internet.
      

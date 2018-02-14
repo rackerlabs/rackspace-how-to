@@ -5,8 +5,8 @@ title: Billing services overview
 type: article
 created_date: '2011-08-24'
 created_by: Rackspace Support
-last_modified_date: '2017-04-17'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-12-15'
+last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
 ---
@@ -56,6 +56,13 @@ In the **Billing History** section of the Billing & Payments page, click an invo
 To view a more detailed invoice that shows an itemized, per-service, per-device overview of your billing charges, click the **Detailed View of Charges** link. For more information, see [Detailed invoices overview](/how-to/detailed-invoices-overview/).
 
 If you are unable to find the information that you need in the Cloud Control Panel, or if you need more detailed billing and payment information than what is available on these pages, contact the Billing Support team for any billing questions. The team is available Monday through Friday from 8 a.m. to 5 p.m. CST, toll-free at 877 934 0410 or internationally at 1 210 581 0410. You can reach the Cloud Accounts Receivable team toll-free at 800 480 2716 or internationally at 1 210 312 4000.
+
+
+### Reclaim VAT
+
+If you're a VAT-registered business or organization, in most cases you can reclaim the value-added tax (VAT) that you pay when you buy goods and services for your business. To reclaim this money, you must have records to support your claim. By collecting your VAT ID number, Rackspace can correctly prepare an invoice for your records.
+
+If you're not a VAT-registered business or organization, you can't reclaim the VAT that you pay when you buy goods and services.
 
 ### Next step
 [Viewing and editing user information for your account ](/how-to/viewing-and-editing-user-information-for-your-account)

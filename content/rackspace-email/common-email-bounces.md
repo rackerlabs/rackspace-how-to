@@ -1,11 +1,11 @@
 ---
 permalink: common-email-bounces/
-audit_date: '2017-05-30'
+audit_date: '2018-02-07'
 title: Common email bounce messages
 type: article
 created_date: '2017-05-18'
 created_by: William Loy
-last_modified_date: '2017-05-30'
+last_modified_date: '2018-02-07'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -18,6 +18,8 @@ This article explains the causes of common email bounce messages and how to reso
 - **Applies to:** Administrators and Users
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
+For a video tutorial see [Email Help - Bounce Messages](https://emailhelp.rackspace.com/l/common-bounce-message-solutions).
 
 ### Bounce messages
 
@@ -41,7 +43,7 @@ Bounce messages provide a brief explanation of why an email was not delivered. B
 | **550** Your message has been rejected because you have been detected sending spam. | The content of this message has been deemed spam by the internet community | Spam definitions change rapidly. However, there are measures you can take to prevent having your message rejected as spam. See [Best practices for sending person-to-person email](/how-to/best-practices-for-sending-person-to-person-email) or [Best practices for sending emails to many recipients](/how-to/best-practices-for-sending-emails-to-many-recipients). |
 | **550 5.1.0** \<user@domain.com\>: Sender address rejected: User unknown in relay recipient table | Your domain exists in Rackspace, but the full email address you sent from does not. | Create the address in the form of a mailbox, list, or alias to send mail from Rackspace Cloud Office. |
 | **550 5.1.1** \<user@domain.com\>: Recipient address rejected: User unknown in relay recipient table | The recipient's email address does not exist in the Rackspace hosted domain. | Add the email address to Rackspace hosted domain. |
-| **550 5.3.4** Message too large (G17) | The message size exceeds the maximum message size allowed by our servers (75 MB). | Ensure that the message size is under the allowed threshold and resend the message. |
+| **550 5.3.4** Message too large (G17) | The message size exceeds the maximum message size allowed by our servers (50 MB). | Ensure that the message size is under the allowed threshold and resend the message. |
 | **550 5.7.0** [blocked file] - Your message has been rejected because it contains a banned file attachment (G1A)|	The message contains an attachment file type on the [blocked list](/how-to/cloud-office-blocked-attachment-files). | Remove the blocked file type and re send. |
 | **550 5.7.0** [blocked file] - Your message has been rejected because it contains a banned file attachment (G1B)|	The message contains an attachment file type on [Outlook's blocked list](https://support.office.com/en-ie/article/Blocked-attachments-in-Outlook-3811cddc-17c3-4279-a30c-060ba0207372). | Remove the blocked file type and resend. |
 | **550 5.7.0** [blocked file] - File attachment is not allowed because they can be used to exploit Winzip (G1C) | The message contains an attachment that can be used to exploit WinZip associated files: **.b64**, **.bhx**, **.hqx**, **.mim**, **.uue?**, or **.xxe** | Remove the banned file type and resend. |

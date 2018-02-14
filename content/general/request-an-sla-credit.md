@@ -1,12 +1,12 @@
 ---
 permalink: request-an-sla-credit/
-audit_date:
+audit_date: '2017-12-19'
 title: Request an SLA credit
 type: article
 created_date: '2015-07-21'
 created_by: Rose Contreras
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-12-19'
+last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
 ---
@@ -31,7 +31,7 @@ If you meet this criteria, then you can request an account credit.
 
 ### Request an SLA credit
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+1. Log in to your product portal [here](https://www.rackspace.com/login).
 
 2. Create a support ticket and enter **Credit Request** in the **Subject** field.
 
@@ -61,5 +61,5 @@ failed you.
 Rackspace will not issue a credit for cases in which the Rackspace Terms
 of Service or Acceptable Use Policy are violated.
 
-If you have any problems not addressed in this article, contact the Rackspace Cloud support team at 1 800 961 4454 (US toll
+If you have any problems not addressed in this article, contact the Rackspace support team at 1 800 961 4454 (US toll
 free).
