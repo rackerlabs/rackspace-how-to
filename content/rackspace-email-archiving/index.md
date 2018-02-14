@@ -4,8 +4,8 @@ title: Rackspace Email Archiving
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2017-09-21'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-02-14'
+last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -18,6 +18,8 @@ These articles will help you get started using Rackspace Email Archiving through
 
 - [Enable Email Archiving](/how-to/enable-email-archiving-cloud-office-control-panel)
 - [Log in to the Archive Manager](/how-to/log-in-to-the-archive-manager)
+- [Add Rackspace Office 365 Archiving](/how-to/add-rackspace-office-365-archiving)
+- [Log in to the Archive Manager for Office 365](log-in-to-the-archive-manager-for-office-365)
 
 ###  Set up Email Archiving
 
