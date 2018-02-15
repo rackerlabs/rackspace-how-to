@@ -71,7 +71,7 @@ To access detailed information for your most recent invoice:
    the cost associated with each device, click the down arrow to the left of
    **Devices**.
 
-      <img src="{% asset_path general/billing-services-overview/invoice-devices.png %}" alt="Devices area" />
+   <img src="{% asset_path general/billing-services-overview/invoice-devices.png %}" alt="Devices area" />
 
 3. To download an invoice, click the **PDF** link or the **CSV** link at the
    top-right corner of the screen.
