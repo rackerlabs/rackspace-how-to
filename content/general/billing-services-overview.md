@@ -17,7 +17,7 @@ When you use Rackspace Cloud products, you pay only for the services that you us
 
 Your 30-day billing cycle begins on the day that you activate your account, and your bill reflects services used in the previous month. If your usage begins in the middle of a billing cycle, your first bill reflects a partial month but is presented on your scheduled bill date.
 
-### Pricing pages and cost calculator
+### Calculate costs
 
 Each product page on the [main Rackspace website](https://www.rackspace.com/) contains the most current pricing for that product, and a cost calculator to help you estimate your monthly charges. For an example, see the [pricing information for Cloud Servers](https://www.rackspace.com/cloud/servers/pricing).
 
