@@ -1,6 +1,6 @@
 ---
 permalink: billing-services-overview/
-audit_date: '2018-02-15'
+audit_date: '2018-02-13'
 title: Billing services overview
 type: article
 created_date: '2011-08-24'
@@ -15,7 +15,7 @@ This article provides an overview of the billing resources available to you thro
 
 When you use Rackspace Cloud products, you pay only for the services that you use, with one exception: your cloud servers and load balancers are billed for uptime as long as they remain in the active status, even if they are not being used. This time is billed because these resources have been allocated for your exclusive use and cannot be reserved by other customers.
 
-Your 30-day billing cycle begins on the day that you activate your account, and your bill reflects services used in the previous month. If your usage begins in the middle of a billing cycle, your first bill reflects a partial month but is presented on your scheduled bill date.
+Your 30-day billing cycle begins on the day you activate your account, and your bill reflects services used in the previous month. If your usage begins in the middle of a billing cycle, your first bill reflects a partial month but is presented on your scheduled bill date.
 
 ### Calculate costs
 
