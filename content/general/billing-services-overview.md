@@ -51,7 +51,19 @@ The billing threshold option enables you to receive a notification if usage
 meets or exceeds the amount you specify. When this occurs, Rackspace emails
 the primary contact and the billing contact.
 
-To enable this functionality, click **Set Billing Threshold**.
+To enable this functionality, use the following steps:
+
+1. In the top menu bar, click **Billing Settings**.
+
+   You are redirected to the **Billing Settings** page.
+
+2. Towards the bottom of the page, click on the pencil icon next to
+   **Threshold Notification**.
+
+3. Enter a monetary amount in US dollars.
+
+4. Check the boxes next to the contacts who should receive the notifications,
+   then click **Save**.   
 
 ### View invoice details
 
@@ -76,7 +88,7 @@ To access detailed information for your most recent invoice:
 3. To download an invoice, click the **PDF** link or the **CSV** link at the
    top-right corner of the screen.
 
-To view past invoices, go to the the navigation pane on the left and select a different date from the **Bill Date** drop-down menu.
+To view past invoices, go to the navigation pane on the left and select a different date from the **Bill Date** drop-down menu.
 
 ### Manage payment methods
 
@@ -101,25 +113,22 @@ you want to make the default, then select **Set as Default**.
 
 ### Update billing information
 
-To modify basic billing information from the **Billing Overview** dashboard,
-use the following steps:
+To modify basic billing information for your account, use the following steps:
 
-1. In the header of **Billing Settings** section, click the **View** link.
+1. In the top menu bar, click **Billing Settings**.
+
+   You are redirected to the **Billing Settings** page.
+
 2. Click the pencil icon next to the section you want to edit.
 3. Make your changes, then click **Save** or **Update** to save them or
    **Cancel** to discard them.
-
-   <img src="{% asset_path general/billing-services-overview/billing-settings.png %}" alt="Billing settings" />
 
 ### Get help
 
 If you're unable to find the information that you need in the Cloud Control
 Panel, or if you need more detailed billing and payment information than what
-is available on these pages, contact the Billing Support team for any billing
-questions. The team is available Monday through Friday from 8 a.m. to 5 p.m.
-CST, toll-free at 877 934 0410 or internationally at 1 210 581 0410. You can
-reach the Cloud Accounts Receivable team toll-free at 800 480 2716 or
-internationally at 1 210 312 4000.
+is available on these pages, contact the Billing Support team. The team is available Monday through Friday from 8 a.m. to 5 p.m. CST, toll-free at 877 934 0410 or internationally at 1 210 581 0410. You can reach the Cloud Accounts Receivable team toll-free at 800 480 2716 or internationally at
+1 210 312 4000.
 
 ### Reclaim VAT
 
