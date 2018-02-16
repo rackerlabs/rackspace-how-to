@@ -13,26 +13,26 @@ product_url: cloud-backup
 
 The Rackspace Cloud Backup agent facilitates the backup process on your servers.
 You must install the agent on every server that you want to back up. This
-article provide instructions for installing the agent on a Linux server by using
-the Cloud Backup Updater.
+article provides instructions for installing the agent on a Linux &reg; server
+by using the Cloud Backup Updater.
 
-If you are using a Windows server, see
+If you are using a Windows &reg; Server &reg;, see
 [Install the Cloud Backup agent on Windows](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
 for Windows instructions.
 
 ### Considerations
 
-You can use Cloud Backup on any Linux server in the Rackspace cloud except FreeBSD
-9 and Debian 5. For both of these distributions, use an alternative method to
-back up your data.
+You can use Cloud Backup on any Linux server in the Rackspace Cloud except FreeBSD
+&reg; 9 and Debian &reg; 5. For both of these distributions, use an alternative
+method to back up your data.
 
 Also, 32-bit servers and agents on Linux are not supported.
 
 The agent should already be installed on servers that have the Managed Operations
-service level. See the following section to determine whether the agent is already
+service level. See the following section to determine if the agent is already
 installed on a server.
 
-If the Cloud Backup updater fails, use the instructions in
+If the Cloud Backup Updater fails, use the instructions in
 [Manually update the Rackspace Cloud Backup agent](/how-to/update-the-rackspace-cloud-backup-agent).
 
 ### Verify whether the agent is already installed
@@ -48,7 +48,7 @@ a message that the command can't be found, you must install the agent.
 The following instructions detail installation procedures for APT-based, RPM-based,
 or other Linux distributions.
 
-### Install the agent on APT-based systems, such as Ubuntu and Debian
+### Install the agent on APT-based systems, such as Ubuntu &reg; and Debian
 
 1. Use SSH to log in to your server, and run any commands as a user with sudo
 or superuser privileges.
@@ -65,7 +65,7 @@ or superuser privileges.
 
        echo "deb [arch=amd64] http://agentrepo.drivesrvr.com/debian serveragent main" | tee /etc/apt/sources.list.d/driveclient.list
 
-5. Update the **apt** repository information. Install with the `-f` option. This
+5. Update the `apt` repository information. Install with the `-f` option. This
 option fixes any outstanding package dependency issues on the system.
 
        sudo apt-get -y update
@@ -101,7 +101,7 @@ add other options as needed.
 
       - The value for `<flavor>` is `privatecloud`, `raxcloudserver`, or `dedicated`.
 
-      - For `apihost <apiDrivesrvr>` element, use the following values: For API
+      - For the `apihost <apiDrivesrvr>` element, use the following values: For API
       servers in the US, use `api.drivesrvr.com`. For API servers in the UK,
       use `api.drivesrvr.co.uk`.
 
@@ -121,7 +121,7 @@ answer `yes`.
 
        sudo service driveclient start
 
-### Install the agent on RPM-based systems, such as CentOS, Fedora, and Red Hat
+### Install the agent on RPM-based systems, such as CentOS &reg;, Fedora &reg;, and Red Hat &reg;
 
 1.  Use SSH to log in to your server, and run any commands as a user with sudo
 or superuser privileges.
@@ -132,17 +132,17 @@ or superuser privileges.
 
     The updater installs the agent and sets it to start at boot.
 
-2.  Check the installation.
+3.  Check the installation.
 
     The updater might take a few minutes to download and install the agent. To
-    check the status of the agent install, run the following command:
+    check the status of the agent installation, run the following command:
 
         sudo cloudbackup-updater -v
 
     The command won't respond until the installation is complete. When the shell
     prompt displays, the installation is complete.
 
-3.  Use the following command to run and configure the agent. Be prepared to
+4.  Use the following command to run and configure the agent. Be prepared to
 provide your Rackspace Cloud account username and apiKey in this command and
 add other options as needed.
 
@@ -154,7 +154,7 @@ add other options as needed.
 
     - The value for `<flavor>` is `privatecloud`, `raxcloudserver`, or `dedicated`.
 
-    - For `apihost <apiDrivesrvr>` element, use the following values: For API
+    - For the `apihost <apiDrivesrvr>` element, use the following values: For API
     servers in the US, use `api.drivesrvr.com`. For API servers in the UK, use
     `api.drivesrvr.co.uk`.
 
@@ -167,11 +167,11 @@ add other options as needed.
     Servers **Details** page in the Cloud Control Panel. However, items do appear
     as they should on the **Backups** tab in the Cloud Control Panel.
 
-4.  Start the agent.
+5.  Start the agent.
 
         sudo service driveclient start
 
-### Install the agent on Arch, Gentoo, and SUSE systems
+### Install the agent on Arch, Gentoo &reg;, and SUSE &reg; systems
 
 For Arch, Gentoo, and SUSE Linux systems, you must first download the tarball.
 This tarball has the most up-to-date instructions, so, if the following
@@ -213,7 +213,7 @@ add other options as needed.
 
     - The value for `<flavor>` is `raxcloudserver`, `privatecloud`, or `dedicated`.
 
-    - For `apihost <apiDrivesrvr>` element, use the following values: For API
+    - For the `apihost <apiDrivesrvr>` element, use the following values: For API
     servers in the US, use `api.drivesrvr.com`. For API servers in the UK, use
     `api.drivesrvr.co.uk`.
 
@@ -262,19 +262,19 @@ but it needs to be investigated.
 You can troubleshoot these status codes as follows:
 
 -   **Skipped:** This error likely occurs because the frequency of the backup
-job is set too high. Consider reducing the frequency of the job, or reducing
+job is set too high. Consider reducing the frequency of the job or reducing
 the amount of data. If this is the initial job, then the subsequent jobs might
 finish faster.
 
 -   **Missed:** Verify that the agent is running on the server. If the agent is
 not already running, then start it. Next, check the logs to determine why the
-backup job failed. An agent should never go offline by itself, possibly a software
-exception occurred or the agent was manually terminated.
+backup job failed. An agent should never go offline by itself. Possibly a software
+exception occurred, or the agent was manually terminated.
 
 -   **Errored:** Examine the logs on the server. The agent stores all the logs
-in one location (see the following section). Review the logs line by line. If
-you cannot determine the cause of the error, raise a ticket with the SME group,
-and they can help you identify the problem.
+in one location (see the following section for the location). Review the logs
+line by line. If you cannot determine the cause of the error, raise a ticket
+with the SME group, and they can help you identify the problem.
 
 -   **Failed:** As with the Errored status, check the logs on the server. A
 failed status is severe.
