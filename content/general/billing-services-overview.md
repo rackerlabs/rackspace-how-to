@@ -13,13 +13,13 @@ product_url: undefined
 
 This article provides an overview of the billing resources available to you through the Rackspace website and the Cloud Control Panel. The resources described in this article can help you manage and track the billing for your account.
 
-When you use Rackspace Cloud products, you pay only for the services that you use, with one exception: your cloud servers and load balancers are billed for uptime as long as they remain in the active status, even if they are not being used. This time is billed because these resources have been allocated for your exclusive use and cannot be reserved by other customers.
+When you use Rackspace Cloud products, you pay only for the services that you use, with the following exception. Your cloud servers and load balancers are billed for uptime as long as they remain in the active status, even if they are not being used. This time is billed because these resources have been allocated for your exclusive use and cannot be reserved by other customers.
 
 Your 30-day billing cycle begins on the day that you activate your account, and your bill reflects services used in the previous month. If your usage begins in the middle of a billing cycle, your first bill reflects a partial month but is presented on your scheduled bill date.
 
 ### Estimate costs
 
-Each product page on the [main Rackspace website](https://www.rackspace.com/) includes the most current pricing for that product, and a cost calculator to help you estimate your monthly charges. For an example, see the [pricing information for Cloud Servers](https://www.rackspace.com/cloud/servers/pricing).
+Each product page accessed from the [main Rackspace website](https://www.rackspace.com/) includes the most current pricing for that product and a cost calculator to help you estimate your monthly charges. For an example, see the [pricing information for Cloud Servers](https://www.rackspace.com/cloud/servers/pricing).
 
 ### Access your account information
 
@@ -36,24 +36,22 @@ To access your account information, use the following steps:
 
 The center panel of the **Billing Dashboard** displays your **Charges to Date**. For a more detailed breakdown of the charges, click **View** in the section header.
 
-The balance-to-date for the Rackspace products that you are using is displayed.
+The balance to date for the Rackspace products that you are using is displayed.
 
 To see usage details such as type, unit price, quantity, and estimated total, click the arrow to the right of the dollar amount.
 
 <img src="{% asset_path general/billing-services-overview/chargestodate.png %}" alt="" />
 
 **Note**: This page only displays the Rackspace Cloud usage that you accrued after your last invoice was generated. Usage accrues throughout the month, and
-totals update on a daily basis. Some products and services may take up to 24 hours to appear on this page. Additionally, some charge totals only appear after any discounts have been applied.
+totals update on a daily basis. Some products and services might take up to 24 hours to appear on this page. Additionally, some charge totals only appear after any discounts have been applied.
 
 ### Set a billing threshold
 
-The billing threshold option enables you to receive a notification when usage
-meets or exceeds an amount you specify. When this occurs, Rackspace emails
-the primary contact and the billing contact.
+The **Set Billing Threshold** option enables you to receive a notification when usage meets or exceeds an amount that you specify. When this occurs, Rackspace emails the primary contact and the billing contact.
 
 To enable this functionality, use the following steps:
 
-1. In the top menu bar, click **Billing Settings**.
+1. Under **Charges to Date**, click **Set Billing Threshold**.
 
    You are redirected to the **Billing Settings** page.
 
@@ -63,7 +61,7 @@ To enable this functionality, use the following steps:
 3. Enter a monetary amount.
 
 4. Check the boxes next to the contacts who should receive the notifications,
-   then click **Save**.   
+   and then click **Save**.   
 
 ### View invoice details
 
@@ -131,7 +129,7 @@ is available on these pages, contact the Billing Support team. The team is avail
 
 ### Reclaim VAT
 
-If you're a VAT-registered business or organization, in most cases you can reclaim the value-added tax (VAT) that you pay when you buy goods and services for your business. To reclaim this money, you must have records to support your claim. By collecting your VAT ID number, Rackspace can correctly prepare an invoice for your records.
+If you're a VAT-registered business or organization, in most cases you can reclaim the value-added tax (VAT) that you pay when you buy goods and services for your business. To reclaim this money, you must have records to support your claim. If you provide Rackspace with your VAT ID number, Rackspace can correctly prepare an invoice for your records.
 
 If you're not a VAT-registered business or organization, you can't reclaim the VAT that you pay when you buy goods and services.
 
