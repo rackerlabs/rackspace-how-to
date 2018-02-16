@@ -47,8 +47,8 @@ totals update on a daily basis. Some products and services may take up to 24 hou
 
 ### Set a billing threshold
 
-The billing threshold option enables you to receive a notification if usage
-meets or exceeds the amount you specify. When this occurs, Rackspace emails
+The billing threshold option enables you to receive a notification when usage
+meets or exceeds an amount you specify. When this occurs, Rackspace emails
 the primary contact and the billing contact.
 
 To enable this functionality, use the following steps:
