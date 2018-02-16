@@ -13,7 +13,7 @@ product_url: cloud-images
 
 This article describes how to transfer Rackspace Cloud Servers instance images between regions of the Rackspace Cloud by using [Pitchfork](https://pitchfork.cloudapi.co/). Pitchfork is an interactive Rackspace Cloud API application that simplifies working with the Rackspace Cloud APIs. Using a browser, you can execute any Rackspace API command for any Cloud product without the need to get on a command line or use another CLI tool.
 
-**Note:** You can't transfer images larger than 50 GB, so check the size of the image before you start.
+**Note:** The size of the exported VHD (virtual hard disk file) must not be allowed to expand past 40 GB, as that is the largest allowable disk size for imports. Thus, you will not be able to import any server image sourced from a server larger than 2 GB General Purpose (or 1 GB Standard).
 
 ### Getting started
 
@@ -37,7 +37,7 @@ Before you can transfer the images, perform the following steps:
 
    To find the image's UUID, go to the Saved Images section of the Cloud Control Panel, click the name of the image, and copy the ID value (for example, a6da1504-e1c04f40-8461-1ed9a9990e90).
    
-You should have five items copied to yoru text file: your Rackspace Cloud username, the API key for that username, the export container name, the import container name, and the UUID of the image that you want to transfer. 
+You should have five items copied to your text file: your Rackspace Cloud username, the API key for that username, the export container name, the import container name, and the UUID of the image that you want to transfer. 
 
 Additionally, we recommend using a third-party application called Cyberduck to download and upload the image. You can, however, use a different open-source (free) application or use the API directly.
 
