@@ -84,7 +84,7 @@ Recovery.
 VMware Server Virtualization does not currently allow VMware vSphere&reg; Storage vMotion&reg;
 and therefore fault tolerance is not enabled.
 
-#### Can I turn off utiliting billing for VMs?
+#### Can I turn off utility billing for VMs?
 
 You have the ability to suspend the utility billing of virtual machines when
 they are not in use by powering down VMs through the MyRackspace portal.
