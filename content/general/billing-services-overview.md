@@ -59,7 +59,7 @@ To access detailed information for your most recent invoice:
 
 1. Go to **Billing History > Invoice Details**.
 
-   Your most recent invoice opens in a detailed view.  
+   Your most recent invoice opens in a detailed view.
 
    <img src="{% asset_path general/billing-services-overview/invoice-detailed.png %}" alt="Invoice details" />
 
@@ -71,7 +71,7 @@ To access detailed information for your most recent invoice:
    the cost associated with each device, click the down arrow to the left of
    **Devices**.
 
-   <img src="{% asset_path general/billing-services-overview/invoice-devices.png %}" alt="Devices area" />
+   <img src="{% asset_path general/billing-services-overview/devices.png %}" alt="Devices area" />
 
 3. To download an invoice, click the **PDF** link or the **CSV** link at the
    top-right corner of the screen.
@@ -128,4 +128,5 @@ If you're a VAT-registered business or organization, in most cases you can recla
 If you're not a VAT-registered business or organization, you can't reclaim the VAT that you pay when you buy goods and services.
 
 ### Next steps
+
 [Viewing and editing user information for your account ](/how-to/viewing-and-editing-user-information-for-your-account)
