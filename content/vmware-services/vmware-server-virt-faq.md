@@ -15,7 +15,7 @@ product_url: managed-vmware-services
 
 #### What type of disaster recovery (DR) solutions does Rackspace offer?
 
-Rackspace offers three different solutions for DR:
+Rackspace offers two different solutions for DR:
 
 - [Replication Manager](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/getting-started/replication-manager/):
 
@@ -32,6 +32,8 @@ Rackspace offers three different solutions for DR:
   VMware Server Virtualization VMs by easily and cost-effectively
   replicating VMs between our data centers.
 
+### Are imaged-based backups part of the VMware Server Virtualization offering?
+
 - [Virtual Machine Recovery](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/getting-started/vm-recovery/):
   
   Managed Backup Virtual Machine Recovery (VMR) is the Rackspace-productized
@@ -42,7 +44,15 @@ Rackspace offers three different solutions for DR:
 
 #### What are the benefits of Rackspace VMware Server Virtualization?
 
-VMware Server Virtualization is a fully managed virtualization platform.
+With VMware Server Virtualization, you can use the MyRackspace Web Portal
+to easily administer your hosted environment and resources. Offload the
+maintenance and monitoring of the infrastructure, VMware stack, and Guest
+OS layer to your virtual IT team consisting of VMware Certified Professionals
+and experts in storage, networking and infrastructure, so you can focus more
+on your core business. With industry leading SLAs which include 100% Network
+Uptime Guarantees and 1-Hour Hardware Replacement Guarantees, we can help
+make sure your mission critical applications stay up and running.
+
 
 #### With VMware Server Virtualization, can I log in to the hypervisor?
 
@@ -74,7 +84,7 @@ Recovery.
 VMware Server Virtualization does not currently allow VMware vSphere&reg; Storage vMotion&reg;
 and therefore fault tolerance is not enabled.
 
-#### Does Rackspace offer utility billing for VMs?
+#### Can I turn off utiliting billing for VMs?
 
 You have the ability to suspend the utility billing of virtual machines when
 they are not in use by powering down VMs through the MyRackspace portal.
@@ -85,8 +95,9 @@ power down VMs through the portal, see [Powering a virtual machine on and off](h
 
 #### How are my VMs backed up?
 
-Rackspace can back up VMs through our VM Recovery service or
-Rackspace Managed Backup.
+Rackspace can back up VMs through Rackspace Managed Backup service.
+Guest OS agent-based backups are available along with image-level
+backup through the VM Recovery add-on Service.
 
 #### What is a snapshot and how does it work?
 
@@ -161,7 +172,7 @@ support team through the MyRackspace portal.
     of future VMs. A template is also stored on the Rackspace
     storage infrastructure. You can create one template per VM.
 
-#### Where is data stored if I create a snapshot, clone, or template?
+#### Where is data stored if I create a snapshot, copy as clone, or template?
 
 -   Snapshots are stored with the parent disk of VM and consume your
     allocated storage infrastructure. Snapshots must be carefully managed to
@@ -178,18 +189,10 @@ specify the virtual disk that you want expanded.
 
 #### How do I view the performance or monitor my available resources of a VM or host?
 
-Use the MyRackspace portal to see which resources
-(storage - local or otherwise) are reserved or available to provision
-VMs in your environment.
-
-For information on how to view performance, see the
+You can use the MyRackspace portal to view hypervisor and virtual machine
+performance. For instructions on how to view performance, see the
 [Viewing hypervisor and virtual machine performance section](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-hyps-clusters/) of
 the Server Virtualization Customer Handbook.
-
-#### Can I have a clone or template created at a scheduled time interval?
-
-You can do this in an automated fashion with the VM Recovery service
-or manually at your preferred times within the customer portal.
 
 #### How do I create and delete clones or templates?
 
@@ -205,7 +208,9 @@ the Server Virtualization Customer Handbook.
 #### Can I have a copy of my Rackspace VM?
 
 Due to our licensing agreements with vendors, we cannot provide a
-licensed VM image until that is approved by our Legal team.
+licensed VM image. If you want to have a copy of a Rackspace VM,
+we can export the VM and remove the licensing. Speak to your
+VMware support team for more information.
 
 #### Do powered-down VMs count toward my available resources?
 
@@ -220,8 +225,12 @@ in that they take up to the original size of the original disk. The
 snapshots take up customer storage and do count toward the required 15%
 overhead.
 
+**IMPORTANT** We do not recommend having more snapshots than is necessary. Snapshots
+can consume your resources and cause performance issues. Speak to your
+VMware support team for more information.
+
 #### How long will it take to provision a VM?
 
-It depends, but probably greater than a week. Deployment times can vary
-based on the request (rely on other teams), availability of resources or IP
-addresses, and storage or compute resources (CPU and RAM) and hypervisors.
+Deployment times can vary based on the request, availability of resources
+or IP addresses, and storage or compute resources (CPU and RAM) and
+hypervisors.

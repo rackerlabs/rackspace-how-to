@@ -18,14 +18,14 @@ hosted VMware&reg; environment.
 
 ### Rackspace Private Cloud Powered by VMware
 
-**Rackspace Private Cloud Powered by VMware**(RPC-V) provides a single-tenant
+**Rackspace Private Cloud Powered by VMware**(RPC-VMware) provides a single-tenant
 hosted private cloud, designed with server, storage, and networking
 hardware from trusted vendors such as Dell&reg;, EMC&reg;, and
 Cisco&reg;, that's proactively managed 24x7x365 by our VMware
 Certified Professionals. For more information, see the following resources:
 
 - [Rackspace Private Cloud Powered by VMware product page](https://www.rackspace.com/en-gb/vmware/private-cloud)
-- [Customer Handbook](https://developer.rackspace.com/docs/rpc-vmware/rpc-vmware-customer-handbook/)
+- [Rackspace Private Cloud powered by VMware Customer Handbook](https://developer.rackspace.com/docs/rpc-vmware/rpc-vmware-customer-handbook/)
 
 ### VMware Server Virtualization
 
@@ -34,10 +34,10 @@ environment that's perfect for small and medium-sized businesses that want
 to offload the maintenance and monitoring of the guest operating system (OS), VMware software
 stack, and underlying hardware to Rackspace. For more information, see the following resources:
 
-- [Server Virtualization product page](https://www.rackspace.com/managed-hosting/vmware/server-virtualization)
-- [Customer Handbook](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook)
+- [VMware Server Virtualization product page](https://www.rackspace.com/managed-hosting/vmware/server-virtualization)
+- [VMware Server Virtualization Customer Handbook](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook)
 
-### RPC-VMware versus Server Virtualization
+### VMware Server Virtualization versus Rackspace Private Cloud Powered by VMware
 
 | Feature | VMware Server Virtualization | Rackspace Private Cloud Powered by VMware |
 | --- | --- | --- |
@@ -66,7 +66,7 @@ For legacy products, see the resources listed in this section.
 
 #### Dedicated VMware vCenter Server
 
-- [Dedicated VMware vCenter Server Customer Handbook](https://developer.rackspace.com/docs/managed-vmware-services/vcenter/)
+- [Dedicated vCenter Server Customer Handbook](https://developer.rackspace.com/docs/managed-vmware-services/vcenter/)
 
 ### More information
 
