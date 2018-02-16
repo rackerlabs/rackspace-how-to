@@ -32,7 +32,7 @@ Rackspace offers two different solutions for DR:
   VMware Server Virtualization VMs by easily and cost-effectively
   replicating VMs between our data centers.
 
-### Are imaged-based backups part of the VMware Server Virtualization offering?
+#### Are imaged-based backups part of the VMware Server Virtualization offering?
 
 - [Virtual Machine Recovery](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/getting-started/vm-recovery/):
   
