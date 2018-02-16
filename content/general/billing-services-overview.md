@@ -17,7 +17,7 @@ When you use Rackspace Cloud products, you pay only for the services that you us
 
 Your 30-day billing cycle begins on the day that you activate your account, and your bill reflects services used in the previous month. If your usage begins in the middle of a billing cycle, your first bill reflects a partial month but is presented on your scheduled bill date.
 
-### Calculate costs
+### Estimate costs
 
 Each product page on the [main Rackspace website](https://www.rackspace.com/) contains the most current pricing for that product, and a cost calculator to help you estimate your monthly charges. For an example, see the [pricing information for Cloud Servers](https://www.rackspace.com/cloud/servers/pricing).
 
@@ -34,7 +34,7 @@ To access your account information, use the following steps:
 
 ### View current usage
 
-The center panel of the **Billing Dashboard** displays your **Charges to date**. For a more detailed breakdown of the charges, click **View** in the section header.
+The center panel of the **Billing Dashboard** displays your **Charges to Date**. For a more detailed breakdown of the charges, click **View** in the section header.
 
 The balance-to-date for the Rackspace products that you are using is displayed.
 
@@ -43,7 +43,7 @@ To see usage details such as type, unit price, quantity, and estimated total, cl
 <img src="{% asset_path general/billing-services-overview/chargestodate.png %}" alt="" />
 
 **Note**: This page only displays the Rackspace Cloud usage that you accrued after your last invoice was generated. Usage accrues throughout the month, and
-totals update on a daily basis. Some products and services may take up to 24 hours to appear on this page. Additionally, some charge totals only appear after any discounts are applied.
+totals update on a daily basis. Some products and services may take up to 24 hours to appear on this page. Additionally, some charge totals only appear after any discounts have been applied.
 
 ### Set a billing threshold
 
@@ -60,7 +60,7 @@ To enable this functionality, use the following steps:
 2. Towards the bottom of the page, click on the pencil icon next to
    **Threshold Notification**.
 
-3. Enter a monetary amount in US dollars.
+3. Enter a monetary amount.
 
 4. Check the boxes next to the contacts who should receive the notifications,
    then click **Save**.   
