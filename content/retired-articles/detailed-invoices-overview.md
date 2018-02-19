@@ -1,14 +1,12 @@
 ---
 permalink: detailed-invoices-overview/
-audit_date: '2017-12-04'
+audit_date: '2018-02-16'
 title: Detailed invoices overview
 type: article
 created_date: '2015-09-17'
 created_by: Nate Archer
-last_modified_date: '2017-12-04'
-last_modified_by: Stephanie Fillmon
-product: undefined
-product_url: undefined
+last_modified_date: '2018-02-19'
+last_modified_by: Kate Dougherty
 ---
 
 Detailed invoices give you access to an itemized, per-service, per-device overview of your billing charges.
