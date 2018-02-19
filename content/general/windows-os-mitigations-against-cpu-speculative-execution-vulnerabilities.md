@@ -18,6 +18,8 @@ In many cases, customers and Rackspace have now applied this key. As of this tim
 
 Customers on managed colocation (colo) and Managed Infrastructure environments should reference the vendors for their recommended solutions to mitigate the vulnerability via patches of the operating system.  
 
+We recommend that those Microsoft Private Cloud customers running virtual machines on Hyper-V hypervisors follow Microsoft’s remediation guidance for customers who request host level patching.  More info is available here: Protecting guest virtual machines from CVE-2017-5715 (branch target injection - https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/CVE-2017-5715-and-hyper-v-vms. We recommend that guest OS remediation align with the process noted in this document.
+
 It is important to note that the January 2018 Security Rollup Patch security patch has the capability to eliminate multiple possible vectors. However, for the patch to be fully functional, three additional registry keys must be implemented on each device, and the server must be rebooted for implementation. Rackspace is not pushing these keys because we have identified that devices might experience a performance impact or possible "blue screens" after these additional keys are implemented. Given this, we recommend that customers carefully consider the implications of applying the three additional registry keys and apply them as they deem appropriate. As a reminder, the main registry is required, and the patch must be installed for the additional keys to take effect.  
 
 ### Patch rollup install schedule for January 2018
