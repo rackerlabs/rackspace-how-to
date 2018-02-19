@@ -51,7 +51,7 @@ Currently, patching ESXi and the Guest OS will only cover two of the three categ
 1. Hypervisor-Specific
 2. Operating System-Specific Mitigations.
 
-Patches to microcode and firmware for Hypervisor-Assisted Guest Mitigations may require further downtime for Hypervisor and Virtual Machines.
+**Note:** Patches to microcode and firmware for Hypervisor-Assisted Guest Mitigations may require further downtime for Hypervisor and Virtual Machines.
 
 ### Public facing articles
 
