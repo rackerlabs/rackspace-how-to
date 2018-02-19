@@ -1,5 +1,5 @@
 ---
-permalink: /vmware-services/
+permalink: /managed-vmware-services/
 title: VMware Services
 audit_date: '2018-01-29'
 type: product
