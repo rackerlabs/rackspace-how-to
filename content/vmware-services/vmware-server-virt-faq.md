@@ -7,8 +7,8 @@ created_date: '2015-12-10'
 created_by: Rackspace Support
 last_modified_date: '2018-01-29'
 last_modified_by: Alexandra Settle
-product:  VMware Services
-product_url: vmware-services
+product:  Managed VMware Services
+product_url: managed-vmware-services
 ---
 
 ### Architecture
