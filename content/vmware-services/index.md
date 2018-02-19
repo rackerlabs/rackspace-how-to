@@ -1,14 +1,14 @@
 ---
-permalink: /managed-vmware-services/
-title: Managed VMware Services
+permalink: /vmware-services/
+title: VMware Services
 audit_date: '2018-01-29'
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
 last_modified_date: '2018-01-29'
 last_modified_by: Alexandra Settle
-product: Managed VMware Services
-product_url: managed-vmware-services
+product: VMware Services
+product_url: vmware-services
 ---
 
 Rackspace Managed Virtualization services offer a customizable infrastructure that
