@@ -57,6 +57,6 @@ Patches to microcode and firmware for Hypervisor-Assisted Guest Mitigations may 
 
 VMware has released the following public-facing articles:
 
-- VMSA-2018-0002 - VMware ESXi, Workstation and Fusion updates address side-channel analysis due to speculative execution: https://www.vmware.com/us/security/advisories/VMSA-2018-0002.html
-- VMware Response to Speculative Execution security issues, CVE-2017-5753, CVE-2017-5715, CVE-2017-5754 (aka Spectre and Meltdown) (52245): https://kb.vmware.com/s/article/52245
-- VMware Virtual Appliances and CVE-2017-5753 (Spectre v1), CVE-2017-5715 (Spectre v2), CVE-2017-5754 (Meltdown v3) (52264): https://kb.vmware.com/s/article/52264
+- [VMSA-2018-0002 - VMware ESXi, Workstation and Fusion updates address side-channel analysis due to speculative execution](https://www.vmware.com/us/security/advisories/VMSA-2018-0002.html)
+- [VMware Response to Speculative Execution security issues, CVE-2017-5753, CVE-2017-5715, CVE-2017-5754 (aka Spectre and Meltdown)(52245)](https://kb.vmware.com/s/article/52245)
+- [VMware Virtual Appliances and CVE-2017-5753 (Spectre v1), CVE-2017-5715 (Spectre v2), CVE-2017-5754 (Meltdown v3) (52264)](https://kb.vmware.com/s/article/52264)
