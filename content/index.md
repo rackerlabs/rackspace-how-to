@@ -30,6 +30,9 @@ permalink: /
 					<div class="five columns icon private">
 						<h4><a href="/how-to/rpc-openstack/"><span>Rackspace Private Cloud</span> Powered by OpenStack</a></h4>
 					</div>
+					<div class="five columns icon private">
+						<h4><a href="/how-to/rpc-vmware/"><span>Rackspace Private Cloud</span> Powered by VMware</a></h4>
+					</div>
 				</div>
 			</div>
 			<hr/>

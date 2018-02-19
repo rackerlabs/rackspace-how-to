@@ -1,14 +1,14 @@
 ---
-permalink: dedicated-vmware-vcloud-faq/
+permalink: rpc-vmware-faq/
 audit_date:
-title: Rackspace Private Cloud Powered by VMware vCloud FAQ
+title: Rackspace Private Cloud Powered by VMware FAQ
 type: article
 created_date: '2015-01-29'
 created_by: Karin Levenstein
 last_modified_date: '2016-01-21'
 last_modified_by: Rose Coste
-product: Managed VMware Services
-product_url: managed-vmware-services
+product: Rackspace Private Cloud Powered by VMware
+product_url: rpc-vmware
 ---
 
 Rackspace Private Cloud Powered by VMware vCloud&reg; (hereafter refered to as Dedicated vCloud) is a private cloud offering based on VMware services hosted on a dedicated management cluster. This list of frequently asked questions provides details about Dedicated vCloud features and management options for vApps and virtual machines (VMs).
