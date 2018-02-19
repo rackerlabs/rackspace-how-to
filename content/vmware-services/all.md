@@ -1,5 +1,5 @@
 ---
-title: VMware Services – All Articles
+title: Managed VMware Services – All Articles
 category: Cloud Hosting
 permalink: managed-vmware-services-all-articles/
 product: Managed VMware Services

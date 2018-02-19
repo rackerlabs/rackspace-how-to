@@ -1,6 +1,6 @@
 ---
 permalink: /managed-vmware-services/
-title: VMware Services
+title: Managed VMware Services
 audit_date: '2018-01-29'
 type: product
 created_date: '2016-01-17'
