@@ -1,6 +1,6 @@
 ---
 permalink: windows-os-mitigations-against-cpu-speculative-execution-vulnerabilities/
-audit_date: '2018-02-01'
+audit_date: '2018-02-18'
 title: 'Windows OS mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-01-16'
