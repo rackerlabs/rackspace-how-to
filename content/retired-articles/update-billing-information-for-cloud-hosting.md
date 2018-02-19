@@ -5,10 +5,8 @@ title: Update billing information for Cloud Hosting
 type: article
 created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2017-04-17'
-last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2018-02-07'
+last_modified_by: Kate Dougherty
 ---
 
 You can change your credit card and billing information in the [Cloud Control Panel](https://mycloud.rackspace.com) with the following steps:
