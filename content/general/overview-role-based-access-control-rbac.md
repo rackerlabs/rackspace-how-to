@@ -15,7 +15,7 @@ product_url: undefined
 
 This article answers basic questions about the Role-Based Access Control (RBAC) service.
 
-**Note:** The RBAC service is not currently available for RackConnect.
+**Note:** The RBAC service is currently unavailable for RackConnect.
 
 ### What is RBAC?
 
@@ -25,18 +25,37 @@ Each role has specific permissions that Rackspace has defined.
 RBAC enables users to perform actions based on the scope of their
 assigned roles.
 
-The account owner can create up to 100 users, each with
+Account owners can create up to 100 users, each with
 their own password, secret question and answer, and API key.
 
 ### Why implement RBAC?
 
 RBAC gives customers a greater degree of control over cloud resource use, with an additional layer of system security.
 
+### What types of users does RBAC have?
+
+RBAC has the following types of users:
+
+-   **Account owner** - The account owner is the primary contact for the
+    account and has full permissions to execute all capabilities for
+    every product available. Each account has a single account owner.
+
+-   **Account user** - The account user is a user who has been added by
+    the account owner and has been assigned to specific product or
+    account roles.
+
+### What actions are restricted to the account owner role?
+
+    The account owner role is the only role that can perform the following actions:
+
+    -   Create new users, modify existing users, and delete users.
+    -   Make changes to contacts, including the billing contact.   
+
 ### What is a role?
 
 The term *role* describes the level of access associated with a user's account. RBAC limits risk by ensuring that users do not have access to features that extend beyond their areas of expertise or responsibility.
 
-A role can grant access to all of the resources relating to a single product, or to multiple products. RBAC does not restrict access to specific files,
+A role can grant access to all of the resources relating to a single product or multiple products. RBAC does not restrict access to specific files,
 directories, or servers.
 
 ### What roles are available through RBAC?
@@ -45,17 +64,18 @@ RBAC has the following roles.
 
 #### Multiple-product roles
 
-Multiple-product roles grant access to the resources relating to multiple products.
+Multiple-product roles grant access to resources associated with multiple products.
 
 RBAC has the following multiple-product roles:
 
 -   **Full access** - The full access role has permissions to
     create, read, update, and delete resources within multiple
-    designated products. These permissions apply
-    to products that are RBAC-enabled.
+    designated products.
 
 -   **Read-only access** - The read-only access role has permissions to
-    view given resources within multiple designated products. These permissions apply to products that are RBAC-enabled.
+    view resources within multiple designated products.
+
+These permissions apply to products that are RBAC-enabled.
 
 **Note**: Users with full access and read-only access roles have
 automatic access to all new products that become RBAC-enabled, with the
@@ -99,25 +119,6 @@ To give a new user account permissions without product permissions, use the foll
 
 **Note:** A user may be assigned both a product role and an account role.
 
-### What types of users does RBAC have?
-
-RBAC has the following types of users:
-
--   **Account owner** - The account owner is the primary contact for the
-    account and has full permissions to execute all capabilities for
-    every product available. Each account has a single account owner.
-
--   **Account user** - The account user is a user who has been added by
-    the account owner and has been assigned to specific product or
-    account roles.
-
-### What actions are restricted to the account owner role?
-
-The account owner role is the only role that can perform the following actions:
-
--   Create new users, modify existing users, and delete users
--   Make changes to contacts, including the billing contact
-
 ### What are the contact types in the Cloud Control Panel?
 
 Contact types are similar to tags. Using contact types can help account owners manage users. The Cloud Control Panel offers the following contact types:
@@ -126,9 +127,9 @@ Contact types are similar to tags. Using contact types can help account owners m
     owner of the account. Each account has a single Primary contact.
 
 -   **Billing** - This contact type is automatically assigned to
-    the account. It holds the information that Rackspace uses as
-    the billing address. There is one Billing contact per account.
-    It is not necessary to assign a username to the Billing contact.
+    the account and populated with the billing address for the account.
+    There is one Billing contact per account. It is not necessary to assign
+    a username to the Billing contact.
 
 -   **Administrative** - This contact type can be assigned to users who
     primarily handle administrative duties such as billing
