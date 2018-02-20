@@ -4,7 +4,7 @@ audit_date: '2018-01-29'
 title: View invoice history in the Cloud Office Control Panel
 type: article
 created_date: '2014-03-31'
-created_by: Mawutor Amesawu
+created_by: William Loy
 last_modified_date: '2018-02-20'
 last_modified_by: William Loy
 product: Rackspace Email
