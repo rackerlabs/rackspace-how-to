@@ -1,119 +1,113 @@
 ---
 permalink: Cloud-Load-Balancer-Troubleshooting/
-audit_date:
+audit_date: '2018-01-18'
 title: Cloud Load Balancer (CLB) Troubleshooting
 type: article
 created_date: '2018-01-18'
 created_by: Becky Geinzer
-last_modified_date: '2016-04-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-02-20'
+last_modified_by: Cat Lookabaugh
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
-**Background**
+### Use Cloud Load Balancers health monitoring
 
- >In order to assist in the trouble shooting process,  the health monitoring MUST be enabled 
- for the CLB.  This provides a means to review historical actions concerning the CLB.  Without this being enabled, there is very little troubleshooting that can be done for the
- CLB or to determine why the CLB did not appear to be online
+ To help with the trouble shooting process,  you should enable the health monitoring for Cloud Load Balancers. 
+ This provides the ability to review historical Cloud Load Balancer actions.  If health monitoring is not enabled, few troubleshooting options exist.
 
- To enable health monitoring:
+#### Enable Cloud Load Balancers health monitoring
 
- >Open up the customer portal for the identified load balancer and scroll down to the optional features and click
- the pencil to the right of the health monitoring line.  This will bring up another panel with the requirements for
- setting up health monitoring.
- 
-Another valuable service to have installed is the CLoud Monitoring Service that is provided (free) to monitor the health of the nodes (virtual instances) that are attached to the CLB.
+1. Open the customer portal for the identified load balancer.
+2. Choose **optional features**, and click the pencil icon to the right of the health monitoring line.  This opens the **Health Monitoring Settings** panel.
+3. Fill in the appropriate settings, and click **Save Monitoring Settings**.
 
-For the most part, CLBs communicate to the nodes attached to it via the service net IP.  Normally this is identified as starting with a 10.X.X.X IP address.  This means that the CLB and any associated nodes must be located in the same data center (this includes testing with a known operational server.)
+### Use Cloud Monitoring
 
-RackConnet v2 and v3 are compatible with CLBs but require special setup considerations.
+You might also want to install the Cloud Monitoring Service, which is provided for free to monitor the health of the nodes (or virtual instances) that are attached to the Cloud Load Balancer. For more information, see [Install and configure the Rackspace Monitoring Agent](https://support.rackspace.com/how-to/install-and-configure-the-rackspace-monitoring-agent/) and [Rackspace Monitoring checks and alarms](https://support.rackspace.com/how-to/rackspace-monitoring-checks-and-alarms/).
 
-This is the link to the RackConnect v2 knowledge article:
+### Keep CLB resources in the same Datacenter
 
-<https://support.rackspace.com/how-to/using-cloud-load-balancers-with-rackconnect>
+For the most part, Cloud Load Balancers communicate to attached nodes by using the service net IP address.  Normally, this is identified as starting with a 10.X.X.X IP address.  This means that the Cloud Load Balancer and any associated nodes must be located in the same data center (this includes testing with a known operational server.)
 
-This is the link to the RackConnect v3 knowledge articke:
+### Use CLB with RackConnect
 
-<https://support.rackspace.com/how-to/rackconnect-v30-compatibility>
+RackConnect v2 and v3 are compatible with Cloud Load Balancers but require special setup considerations. For more information, see [Use Cloud Load Balancers with RackConnect](https://support.rackspace.com/how-to/using-cloud-load-balancers-with-rackconnect).
 
-**Changes**
 
-If a CLB suddenly stops working, it might be due to changes on the node(s) attached to the CLB.  Please review to determine if any changes(changes to the web service, firewall rules,etc) were done prior to the CLB not working.  If so, please roll back these changes.  If another node is added to the CLB and the CLB is automatically disabling these nodes, this is a clear indication there are differences in how these nodes were setup.
+### Have you made recent changes to Cloud Load Balancers configuration?
+
+If a Cloud Load Balancer suddenly stops working, it might be due to changes on the node(s) attached to the Cloud Load Balancer.  Review recent changes to the web service, firewall rules, and so on.  If changes were made, roll them back to see if the Cloud Load Balancer begins working again.  If a new node was added to the Cloud Load Balancer and the Cloud Load Balancer is automatically disabling this node, compare how the nodes were setup to identify any differences.
      
      
- **Pitchfork**
+### Use Pitchfork to view statistics
  
- Pitchfork is a valuable tool which can be used to view different statistics concerning the CLB9s) in an account.
+ Pitchfork is a valuable tool which can be used to view different statistics concerning the Cloud Load Balancers in an account.
  
- The knowledge article for this tool is:
+ To learn more, see [Pitchfork - Rackspace Cloud API Web Application](https://community.rackspace.com/products/f/public-cloud-forum/6432/pitchfork---rackspace-cloud-api-web-application).
  
- <https://community.rackspace.com/products/f/25/t/6432>
+### Cloud Load Balancer Issues
  
- **Cloud Load Balancer Status**
- 
-**Error status**
+#### Error status displaying
 
-Error status is when an update action from a customer using the command line interface (cli) call or the customer portal cannot create,read,update or delete a CLB.  The CLB is still operational but no configuratio changes can be made.
+An error status occurs when an update action from a customer (one that uses a command line interface call or the customer portal) cannot create, read, update, or delete a Cloud Load Balancer.  The Cloud Load Balancer is still operational, but no configuration changes can be made.
      
-To resolve this status, the Cloud Support Operations team will need to contacted in order to place the CLB in an active status.  If the error was caused by a change (for example: SSL certificate installe), the issue with that action will nee to be resolved or the CLB will enter the error state again.
+To resolve this condition, contact the Cloud Support Operations team and ask them to place the Cloud Load Balancer in an ``active`` status.  If the error was caused by a change (for example, SSL certificate installed), resolve the root cause to prevent the Cloud Load Balancer from entering the error state again.
 
-**CLB is active but nodes are automatically disabled**
+#### Cloud Load Balancer is active but nodes are automatically disabled
 
-This is normally caused by the CLB not able to connect to the node(s) attached to it.
+This normally results when the Cloud Load Balancer is unable to connect to the attached nodes.
 
-Actions:
+To resolve this condition, perform the following steps for each affected node:
 
-Check the status of the node(s) behind the CLB
+1. Check the status of the node behind the Cloud Load Balancer.
 
-  Log into the customer portal and open the emergency console for that node(s).
+2. Log into the customer portal, and open the emergency console for the node.
      
-  >If there are messages scrolling on the screen (killing processes or it looks like a crash dump), the node should be rebooted.  Once the node has become operational, check the status to see if enabled or not.
+   If there are messages scrolling on the screen (for example, killing processes or a crash dump), the node should be rebooted.  Once the node is operational, check the status to make sure it is enabled.
   
-  On a server that is located in the same data center as the CLB, ping the service net IP of the affected node.
+3. Ping the service net IP of the affected node from a server that is located in the same data center as the Cloud Load Balancer.
   
-  If pings are being returned, there are additional items to review.
+   If pings are being returned, there are additional items to review.
   
-  ssh or remotely log into the affected node(s).  
+4. ``ssh`` or remotely log into the affected node.  
   
-  >If unable to ssh (ssh hangs and there is no prompt for password), there is probably an issue incolving the overall load of the node itself.  If ssh call finally returns but the command response is sluggish, review the load of the server or possible network saturation.  Log into the node via the emergency console and research possible cause for this.
+   If you are unable to ``ssh``` (for example, if ``ssh`` hangs or there is no prompt for password), the issue might involve the overall load of the node itself.  If the ``ssh`` call finally returns but the command response is sluggish, review the load of the server for possible network saturation.  Log into the node by using the emergency console to research possible causes for the saturation.
     
-  >If able to ssh or remotely log into the node, ping another service net IP of a node in the same data center that is known to be operational.  Once logged on, check the services on the node(s) and review any pertinent logs in /var/log directory.
+   If you can ``ssh`` or remotely log into the node, ping another service net IP of a node in the same data center that is known to be operational.  Once logged on, check the services on the node and review any pertinent logs in the ``/var/log`` directory.
   
-  **Curl Commands**
-  
-  All of these commands are executed in a terminal and will need to have curl installed.
-  
-       Test the load balancer:  `curl - <oad balancer public IP>`
-       
-       Test the node(s):  `curl -I <node service net IP.`
-       
-       Test the port:  `telnet <node(s) service net ip> 80`
-       
-       Test the load balancer with the node:  `curl -sik http://<CLB public ip> -H "host:<domain.com>"`
-  
-  Further actions will depend based on the results of the commands.
-  
-  **Curl command results**
-  
-  curl returns a 500 Internal error.
-  
-  >Health checks are not enabled on the CLB.  All nodes behind the CLB are failed or unable to communicate with the CLB.  As a result of no health checks, the CLB will identify failed nodes as OFFLINE and provide a generic 500 Internal Server Error on behalf of the failed nodes.
-    
-  curl returns intermittent 503 Service Temporarily Unavailable.
-  
-  >Health Checks are not enabled on the CLB.  A node behind the CLB is failing or unable to communicate to the CLB.  As a result of no health checks, the CLB will continue to send request to the failing node.  When the node does not respond in the default 30 second timeout, the 503 Service Temporarily Unavailable response will be provide by the CLB on behalf of the failing node.
-  
- Using another node to check the node that is failing.  
- 
- >Log onto the node and perform curl commands to the node that is having issues from another node that is located in the same data.
- 
- **CLB is in an error state**
- 
- >There are times when a CLB is in an error state and it appears to be functioning normally (curl comamnds return 200's).  This is caused by the CLB being "stuck" in an error status.  Thie can be resolved by doing either one of the following:
- 
-  * Remove and re-add a node that is behind the CLB.
-  
-  * Disable/enable health monitoring on the CLB.  if the settings are important, ensure you make a copy of the settings prior to disabling/enable the health monitor.
-  
-  
+### Using cURL Commands
 
+One troubleshooting method for a failing node is to log onto a good node in the same Cloud Load Balancer and perform curl commands to the node that is having issues.
+
+#### cURL commands
+  
+To use the following helpful commands, install cURL and execute the comands from a terminal window.
+  
+       Test the load balancer:  `curl - <load balancer public IP address>`
+       
+       Test the node(s):  `curl -I <node service net IP address>`
+       
+       Test the port:  `telnet <node(s) service net IP address> 80`
+       
+       Test the load balancer with the node:  `curl -sik http://<Cloud Load Balancer public IP address> -H "host:<domain.com>"`
+  
+Further actions depend based on the results of the commands.
+  
+#### cURL command results
+  
+#####  cURL returns a 500 Internal error.
+  
+Health checks are not enabled on the Cloud Load Balancer.  All nodes behind the Cloud Load Balancer are failed or cannot communicate with the Cloud Load Balancer.  As a result of the missing health checks, the Cloud Load Balancer identifies failed nodes as ``OFFLINE`` and provides a generic ``500 Internal Server Error`` on behalf of the failed nodes.
+    
+##### cURL returns intermittent 503 Service Temporarily Unavailable.
+  
+Health checks are not enabled on the Cloud Load Balancer.  A node behind the Cloud Load Balancer is failing or cannot communicate to the Cloud Load Balancer.  As a result of the missing health checks, the Cloud Load Balancer continues to send requests to the failing node.  When the node does not respond in the default 30-second timeout, the Cloud Load Balancer sends the``503 Service Temporarily Unavailable`` response on behalf of the failing node.
+  
+##### cURL returns 200 Success, but Cloud Load Balancer is in an error state.
+ 
+When a Cloud Load Balancer is in an error state but appears to be functioning normally (for example, cURL comamnds return ``200`` responses), the Cloud Load Balancer is likely stuck in an error status.  Resolve this by using either of the following options:
+ 
+- Remove and re-add a node that is behind the Cloud Load Balancer.
+  
+- Disable or enable health monitoring on the Cloud Load Balancer. Make sure to copy the settings prior to disabling or enabling the health monitor so that you can easily reconfigure them.
+  
