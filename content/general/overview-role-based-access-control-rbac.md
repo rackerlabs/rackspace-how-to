@@ -46,10 +46,10 @@ RBAC has the following types of users:
 
 ### What actions are restricted to the account owner role?
 
-    The account owner role is the only role that can perform the following actions:
+The account owner role is the only role that can perform the following actions:
 
-    -   Create new users, modify existing users, and delete users.
-    -   Make changes to contacts, including the billing contact.   
+-   Create new users, modify existing users, and delete users.
+-   Make changes to contacts, including the billing contact.   
 
 ### What is a role?
 
