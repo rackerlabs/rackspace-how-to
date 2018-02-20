@@ -172,20 +172,18 @@ API documentation](https://developer.rackspace.com/docs/).
 -   [Cloud Databases](/how-to/cloud-databases)
 -   [Cloud Load Balancers](/how-to/cloud-load-balancers)
 -   [Cloud Queues](/how-to/cloud-queues)
--   [Rackspace Monitoring](/how-to/cloud-monitoring)
+-   [Rackspace Monitoring](/how-to/rackspace-monitoring)
 -   [Rackspace Metrics](/how-to/rackspace-metrics)
 -   [Cloud Backup](/how-to/cloud-backup)
 -   [Cloud Networks](/how-to/cloud-networks)
 -   [Cloud Block Storage](/how-to/cloud-block-storage)
 -   [Auto Scale](/how-to/rackspace-auto-scale)
 -   [Cloud Images](/how-to/cloud-images)
--   [Cloud Big Data v1](/how-to/cloud-big-data)
--   [Cloud Big Data v2](/how-to/cloud-big-data)
 -   [Cloud Orchestration](/how-to/cloud-orchestration)
 -   [Cloud DNS](/how-to/cloud-dns)
 -   [Cloud Feeds](/how-to/cloud-feeds-overview)
 -   [Rackspace CDN](/how-to/rackspace-cdn)
--   [Billing and Payment Services](/how-to/rackspace-billing-faq)
+-   [Rackspace billing FAQ](/how-to/rackspace-billing-faq)
 
 ### Which products will be RBAC-enabled in the future?
 
