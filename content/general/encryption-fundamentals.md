@@ -2,7 +2,7 @@
 permalink: encryption-fundamentals/
 audit_date: '2017-11-13'
 title: Encryption Fundamentals
-type: whitepaper
+type: article
 created_date: '2017-01-26'
 created_by: Alan Hicks
 last_modified_date: '2017-11-13'
@@ -1601,4 +1601,3 @@ while consuming fewer CPU cycles.
 7. [https://en.wikipedia.org/wiki/Transport_Layer_Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) <a name="7"></a>
 8. [http://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html](http://tim.dierks.org/2014/05/security-standards-and-name-changes-in.html) <a name="8"></a>
 9. [https://en.wikipedia.org/wiki/Man-in-the-middle_attack](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) <a name="9"></a>
-
