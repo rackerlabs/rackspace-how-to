@@ -27,10 +27,6 @@ the new volume must be of equal size or larger than the original volume
 from which you made the snapshot. The new volume must be in the same
 region. It can, however, be a different type.
 
-Read [Allowing snapshots without detaching the volumes](/white-paper/allowing-snapshots-without-detaching-the-volumes) for
-additional information on allowing snapshots without detaching the
-volumes.
-
 ### Create a snapshot
 
 It is a good idea to detach your volume from your server before you take
