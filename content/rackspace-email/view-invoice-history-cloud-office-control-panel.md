@@ -30,13 +30,13 @@ steps:
 
 1. In the top right-hand corner of the page, click your admin ID name or account number and select **Billing & Payments** from the drop-down menu.
 
-    <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/admindropmenu.png %}" />
+    <img src="{% asset_path rackspace-email/view-invoice-history-cloud-office-control-panel/admindropmenu.png %}" />
 
 2. On the **Billing & Payments** tab, click **Invoices**.
 
    A list of invoices displays with the amount of each invoice and a brief description.
 
-   <img src="{% asset_path rackspace-email/add-domains-with-the-cloud-office-control-panel/invoices.png %}" />
+   <img src="{% asset_path rackspace-email/view-invoice-history-cloud-office-control-panel/invoices.png %}" />
 
 3. Click an invoice number to view a detailed invoice.
 
