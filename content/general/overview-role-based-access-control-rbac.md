@@ -55,7 +55,7 @@ The account owner is the only user who can perform the following actions:
 
 The term *role* describes the level of access associated with a user's account. RBAC limits risk by ensuring that users do not have access to features that extend beyond their areas of expertise or responsibility.
 
-A role can grant access to all of the resources relating to a single product or multiple products. RBAC does not restrict access to specific files,
+A role can grant access to all of the resources relating to a single product or to multiple products. RBAC does not restrict access to specific files,
 directories, or servers.
 
 ### What roles are available through RBAC?
