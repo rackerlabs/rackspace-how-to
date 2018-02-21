@@ -70,4 +70,4 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 Once the DNS change is propagated, the site will show as secured in the **Webmail Sites** listing. It will have a green "locked" icon to the right of the name.
 
-    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/secure_completed.png %}"/>
+   <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/secure_completed.png %}"/>
