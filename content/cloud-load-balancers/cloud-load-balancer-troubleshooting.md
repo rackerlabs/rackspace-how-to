@@ -1,5 +1,5 @@
 ---
-permalink: Cloud-Load-Balancer-Troubleshooting/
+permalink: cloud-load-balancer-troubleshooting/
 audit_date: '2018-02-20'
 title: Cloud Load Balancers troubleshooting
 type: article
