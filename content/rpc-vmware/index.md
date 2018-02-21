@@ -20,7 +20,7 @@ Certified Professionals. For more information, see the following resources:
 - [Rackspace Private Cloud Powered by VMware product page](https://www.rackspace.com/en-gb/vmware/private-cloud)
 - [Rackspace Private Cloud powered by VMware Customer Handbook](https://developer.rackspace.com/docs/rpc-vmware/rpc-vmware-customer-handbook/)
 
-### Rackspace Private Cloud Powered by VMware VMware versus Server Virtualization  
+### Rackspace Private Cloud Powered by VMware versus Server Virtualization  
 
 | Feature | VMware Server Virtualization | Rackspace Private Cloud Powered by VMware |
 | --- | --- | --- |
