@@ -15,10 +15,12 @@ This article provides troubleshooting instructions for Cloud Load Balancers.
 
 ### Use Cloud Load Balancers health monitoring
 
-To help with the trouble shooting process,  you should enable the health monitoring for Cloud Load Balancers. 
+To help with the troubleshooting process, you should enable the health monitoring for Cloud Load Balancers. 
 This feature provides the ability to review historical load balancer actions.  If health monitoring is not enabled, few troubleshooting options exist.
 
 #### Enable Cloud Load Balancers health monitoring
+
+To enable health monitoring for your load balancer, use the following steps:
 
 1. Open the customer portal for the identified load balancer.
 2. Choose **optional features**, and click the pencil icon to the right of the health monitoring line.  This opens the **Health Monitoring Settings** panel.
@@ -26,7 +28,7 @@ This feature provides the ability to review historical load balancer actions.  I
 
 ### Use Cloud Monitoring
 
-You might also want to install the Cloud Monitoring service, which is provided at no cost to monitor the health of the nodes (or virtual instances) that are attached to Cloud Load Balancers. For more information, see [Install and configure the Rackspace Monitoring Agent](https://support.rackspace.com/how-to/install-and-configure-the-rackspace-monitoring-agent/) and [Rackspace Monitoring checks and alarms](https://support.rackspace.com/how-to/rackspace-monitoring-checks-and-alarms/).
+You might also want to install the Cloud Monitoring service, which is provided at no cost to monitor the health of the nodes (or virtual instances) that are attached to Cloud Load Balancers. For more information, see [Install and configure the Rackspace Monitoring Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent/) and [Rackspace Monitoring checks and alarms](/how-to/rackspace-monitoring-checks-and-alarms/).
 
 ### Keep Cloud Load Balancers resources in the same Datacenter
 
@@ -34,7 +36,7 @@ For the most part, Cloud Load Balancers communicate to attached nodes by using t
 
 ### Use Cloud Load Balancers with RackConnect
 
-RackConnect v2 and v3 are compatible with Cloud Load Balancers but require special setup considerations. For more information, see [Use Cloud Load Balancers with RackConnect](https://support.rackspace.com/how-to/using-cloud-load-balancers-with-rackconnect).
+RackConnect v2 and v3 are compatible with Cloud Load Balancers but require special setup considerations. For more information, see [Use Cloud Load Balancers with RackConnect](/how-to/using-cloud-load-balancers-with-rackconnect).
 
 
 ### Have you made recent changes to the Cloud Load Balancers configuration?
@@ -49,6 +51,8 @@ If a load balancer suddenly stops working, it might be due to changes on the nod
  To learn more, see [Pitchfork - Rackspace Cloud API Web Application](https://community.rackspace.com/products/f/public-cloud-forum/6432/pitchfork---rackspace-cloud-api-web-application).
  
 ### Cloud Load Balancers issues
+
+The following sections describe some possible load balancer issues and troubleshoooting procedures:
  
 #### Error status displaying
 
@@ -66,7 +70,7 @@ To resolve this condition, perform the following steps for each affected node:
 
 2. Log into the customer portal, and open the emergency console for the node.
      
-   If there are messages scrolling on the screen (for example, killing processes or a crash dump), you should rebooted the node.  Once the node is operational, check the status to make sure it is enabled.
+   If there are messages scrolling on the screen (for example, killing processes or a crash dump), you should reboot the node.  Once the node is operational, check the status to make sure it is enabled.
   
 3. Ping the service net IP address of the affected node from a server that is located in the same data center as the load balancer.
   
@@ -86,13 +90,13 @@ One troubleshooting method for a failing node is to log on to a good node in the
   
 To use the following helpful commands, install cURL, and execute the commands from a terminal window.
   
-       Test the load balancer:  ``curl - <load balancer public IP address>``
+       - Test the load balancer:  ``curl - <load balancer public IP address>``
        
-       Test the nodes:  ``curl -I <node service net IP address>``
+       - Test the nodes:  ``curl -I <node service net IP address>``
        
-       Test the port:  ``telnet <node(s) service net IP address> 80``
+       - Test the port:  ``telnet <node(s) service net IP address> 80``
        
-       Test the load balancer with the node:  ``curl -sik http://<Cloud Load Balancer public IP address> -H "host:<domain.com>"``
+       - Test the load balancer with the node:  ``curl -sik http://<Cloud Load Balancer public IP address> -H "host:<domain.com>"``
   
 Further actions depend based on the results of the commands.
   
