@@ -46,22 +46,19 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
       - The DNS for most existing sites will be an A record that points to a specific IP address. You need to change the A record type to CNAME, and change the IP address to the hostname provided. For example, if your webmail site is going to be **mail.yourdomainexample.com**, you would change the hostname to **mail** or **mail.yourdomainexample.com**. The tables below illustrate this change.
 
-      Before DNS change:
-
+      **Before DNS change:**
       |Record Type | Host | Point-to/Address |
       |---|---|---|
       |A| @ | 000.00.000.00 |
 
-      After DNS change:
-
+      **After DNS change:**
       |Record Type | Host | Point-to/Address |
       |---|---|---|
       |CNAME| mail| pl-10.webmail.emailsrvr.com |
 
       - If your existing DNS record is already a CNAME, then just update the existing hostname to the new one provided.
 
-      Example DNS entry:
-
+      **Example DNS entry:**
       |Record Type | Host | Point-to/Address |
       |---|---|---|
       |CNAME| mail| pl-10.webmail.emailsrvr.com |
