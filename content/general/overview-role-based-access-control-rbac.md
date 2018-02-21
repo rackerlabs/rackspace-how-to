@@ -88,14 +88,14 @@ Custom roles enable account owners to assign users different permissions for dif
 
 RBAC has the following custom roles:
 
--   **Product:admin** - The *product* admin role has permissions to
+-   **Product:admin** - The product admin role has permissions to
     create, read, update, and delete resources for the designated
     product.
 
--   **Product:creator** - The *product* creator role has permissions to
+-   **Product:creator** - The product creator role has permissions to
     create, read, and update resources for the designated product. The creator role cannot delete a resource. (Any destructive actions are prohibited.)
 
--   **Product:observer** - The *product* observer role has permissions to
+-   **Product:observer** - The product observer role has permissions to
     read given resources for the designated product. This role is read-only.
 
 #### Account roles
@@ -103,11 +103,11 @@ RBAC has the following custom roles:
 Assign the following account roles to the users who manage your Rackspace
 customer account.
 
--   **Billing:admin** - The **billing** admin role has
+-   **Billing:admin** - The billing admin role has
     permissions to create, read, update, and delete billing and
     payment resources for the designated product.
 
--   **Billing:observer** - The **billing** observer role has
+-   **Billing:observer** - The billing observer role has
     permissions to read billing and payment resources for the
     designated product. This role is read-only.
 
@@ -167,6 +167,8 @@ API documentation](https://developer.rackspace.com/docs/).
 
 ### Which products are currently RBAC-enabled?
 
+The following Rackspace products are RBAC-enabled:
+
 -   [Cloud Servers](/how-to/cloud-servers)
 -   [Cloud Files](/how-to/cloud-files)
 -   [Cloud Databases](/how-to/cloud-databases)
@@ -190,6 +192,8 @@ API documentation](https://developer.rackspace.com/docs/).
 New products are RBAC-enabled as they are launched.
 
 ### Which products will not have RBAC?
+
+The following Rackspace products will not have RBAC:
 
 -   RackConnect
 
