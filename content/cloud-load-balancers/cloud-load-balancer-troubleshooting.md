@@ -74,7 +74,7 @@ To resolve this condition, perform the following steps for each affected node:
   
 4. ``SSH`` or remotely log in to the affected node.  
   
-   If you are unable to use ``ssh``` (for example, if ``ssh`` hangs or there is no prompt for the password), the issue might involve the overall load of the node itself.  If the ``ssh`` call finally returns but the command response is sluggish, review the load of the server for possible network saturation.  Log in to the node by using the emergency console, and research possible causes for the saturation.
+   If you are unable to use ``ssh`` (for example, if ``ssh`` hangs or there is no prompt for the password), the issue might involve the overall load of the node itself.  If the ``ssh`` call finally returns but the command response is sluggish, review the load of the server for possible network saturation.  Log in to the node by using the emergency console, and research possible causes for the saturation.
     
    If you can ``ssh`` or remotely log in to the node, ping another service net IP of a node in the same data center that is known to be operational.  After you are logged on, check the services on the node, and review any pertinent logs in the ``/var/log`` directory.
   
