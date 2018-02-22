@@ -58,7 +58,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
         |---|---|---|
         |CNAME| mail| pl-10.webmail.emailsrvr.com |
 
-        - If your existing DNS record is already a CNAME, then just update the existing hostname to the new one provided.
+      - If your existing DNS record is already a CNAME, then just update the existing hostname to the new one provided.
 
         **Example DNS entry:**
 
@@ -66,7 +66,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
         |---|---|---|
         |CNAME| mail| pl-10.webmail.emailsrvr.com |
 
-    Note: For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
+    **Note:** For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
 Once the DNS change is propagated, the site will show as secured in the **Webmail Sites** listing. It will have a green "locked" icon to the right of the name.
 
