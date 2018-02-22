@@ -34,7 +34,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 4. Click the 'Secure Site' action from the **Actions** drop-down.
 
-   <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/action_secure_site.png %}"/>
+   <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/action_secure_sites.png %}"/>
 
 5. On the **Secure Webmail Site*** page, enter or verify the company information for your site. This information is used to register the security certificate that will secure your site. This information is visible by your end users, if they choose to view the certificate from their browser. Click 'Secure Site'.
 
