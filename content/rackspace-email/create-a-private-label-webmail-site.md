@@ -38,9 +38,11 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/customer_selection.png %}"/>
 
-5. On the **Webmail Site Settings** enter the webmail website address you would like to create in the **Webmail Address** field. On this step you can choose to allow your customers to customize their site themselves as well as copy the look of an existing webmail site.
+5. On the **Webmail Site Settings** enter a the webmail website address you would like to create in the **Webmail Address** field. On this step you can choose to allow your customers to customize their site themselves as well as copy the look of an existing webmail site.
 
     <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/site_settings.png %}"/>
+
+    **Warning:** You cannot create a private webmail site using a site name that already exists, uses the root domain of mymailsrvr.com, or is listed on Google Safe Browsing.
 
 6. You will be presented with instructions to update the DNS entry for your site with new information. Copy these instructions by clicking **Copy Instructions** before clicking **Ok, Got It**.
 
