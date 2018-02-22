@@ -1,6 +1,6 @@
 ---
 permalink: when-am-i-billed-for-my-account/
-audit_date: '2018-02-22'
+audit_date: '2018-02-21'
 title: Timing of account billing
 type: article
 created_date: '2011-03-16'
