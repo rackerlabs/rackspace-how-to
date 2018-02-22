@@ -47,7 +47,7 @@ permalink: /
 						<h4><a href="/how-to/cloud-images/"><span>Cloud</span> Images</a></h4>
 					</div>
 					<div class="three columns icon vmware">
-						<h4><a href="/how-to/managed-vmware-services/"><span>Managed</span> VMware Services</a>
+						<h4><a href="/how-to/managed-vmware-services/"><span>VMware</span> Server Virtualization</a>
 						</h4>
 					</div>
 				</div>

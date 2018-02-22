@@ -1,9 +1,9 @@
 ---
-title: Managed VMware Services – All Articles
+title: VMware Server Virtualization – All Articles
 category: Cloud Hosting
-permalink: managed-vmware-services-all-articles/
-product: Managed VMware Services
-product_url: managed-vmware-services
+permalink: vmware-server-virtualization-all-articles/
+product: VMware Server Virtualization
+product_url: vmware-server-virtualization
 ---
 
 {% include all-articles-list.html %}

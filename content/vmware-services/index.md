@@ -1,31 +1,20 @@
 ---
-permalink: /managed-vmware-services/
-title: Managed VMware Services
+permalink: /vmware-server-virtualization/
+title: VMware Server Virtualization
 audit_date: '2018-01-29'
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
 last_modified_date: '2018-01-29'
 last_modified_by: Alexandra Settle
-product: Managed VMware Services
-product_url: managed-vmware-services
+product: VMware Server Virtualization
+product_url: vmware-server-virtualization
 ---
 
 Rackspace Managed Virtualization services offer a customizable infrastructure that
 can be architected to support even the most demanding workloads. Our experienced
 engineers are available 24x7x365 to help architect, deploy, and troubleshoot your
 hosted VMware&reg; environment.
-
-### Rackspace Private Cloud Powered by VMware
-
-**Rackspace Private Cloud Powered by VMware**(RPC-VMware) provides a single-tenant
-hosted private cloud, designed with server, storage, and networking
-hardware from trusted vendors such as Dell&reg;, EMC&reg;, and
-Cisco&reg;, that's proactively managed 24x7x365 by our VMware
-Certified Professionals. For more information, see the following resources:
-
-- [Rackspace Private Cloud Powered by VMware product page](https://www.rackspace.com/en-gb/vmware/private-cloud)
-- [Rackspace Private Cloud powered by VMware Customer Handbook](https://developer.rackspace.com/docs/rpc-vmware/rpc-vmware-customer-handbook/)
 
 ### VMware Server Virtualization
 
