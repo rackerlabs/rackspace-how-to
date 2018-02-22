@@ -12,7 +12,7 @@ product_url: undefined
 ---
 
 When you sign up for products under the Managed Infrastructure or Managed
-Operations SysOps service level, your credit card is charged a US $1.00 authorization charge to confirm that it is an active card. The amount of the authorization charge is refunded to your card within 24-72 hours.
+Operations SysOps service level, your credit card is charged a US $1.00 authorization charge to confirm that it is an active card. The amount of the authorization charge is refunded to your card within 24 to 72 hours.
 
 Thirty days after you sign up, your first invoice is processed. Your
 charges consist of service usage accrued within the first 30 days.
