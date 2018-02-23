@@ -26,29 +26,28 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
 
-2. In the **Reseller Tools** section of the home page, click the **Webmail Sites** link.
+2. In the **Reseller Tools** section of the home page, click the **Custom Control Panel** link.
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/webmail_sites.png %}"/>
 
-3. On the **Webmail Sites** page, click **Add Site**.
+3. On the **Custom Control Panel Site** page, click **Let's Get Started**.
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/add_webmail_site1.png %}"/>
 
-4. On the **Customer Selection** page, select the customer company that you are creating a private label webmail site for.
-
+4. On the **Control Panel Settings** step, enter the  website address you would like to create in the **Control Panel Address** field.
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/customer_selection.png %}"/>
 
-5. On the **Webmail Site Settings** enter a the webmail website address you would like to create in the **Webmail Address** field. On this step you can choose to allow your customers to customize their site themselves as well as copy the look of an existing webmail site.
+
 
     <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/site_settings.png %}"/>
 
-  **Warning:** You cannot create a private webmail site using a site name that already exists, uses the root domain of mymailsrvr.com, or is listed on Google Safe Browsing.
+  **Warning:** You cannot create a control panel site using a site name that already exists, uses the root domains of mymailsrvr.com, mycpsrvr.com or a domain which is listed on Google Safe Browsing.
 
 6. You will be presented with instructions to update the DNS entry for your site with new information. Copy these instructions by clicking **Copy Instructions** before clicking **Ok, Got It**.
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/site_being_created.png %}"/>
 
-    - The DNS for most existing sites will be an A record that points to a specific IP address. You need to change the A record type to CNAME, and change the IP address to the hostname provided. For example, if your webmail site is going to be **mail.yourdomainexample.com**, you would change the hostname to **mail** or **mail.yourdomainexample.com**. The tables below illustrate this change.
+    - The DNS for most existing sites will be an A record that points to a specific IP address. You need to change the A record type to CNAME, and change the IP address to the hostname provided. For example, if your control panel site is going to be **cp.yourdomainexample.com**, you would change the hostname to **cp** or **cp.yourdomainexample.com**. The tables below illustrate this change.
 
         **Before DNS change:**
 
@@ -60,7 +59,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
         |Record Type | Host | Point-to/Address |
         |---|---|---|
-        |CNAME| mail| pl-10.admin.emailsrvr.com |
+        |CNAME| cp | pl-10.admin.emailsrvr.com |
 
     - If your existing DNS record is already a CNAME, then just update the existing hostname to the new one provided.
 
@@ -72,6 +71,6 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
     **Note:** For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-The site will now appear in the **Webmail Sites** listing. Once the DNS change is propagated it will have a green "locked" icon to the right of the name to show that the site is secure.
+The site will now appear in the **Custom Control Panel** listing. Once the DNS change is propagated it will have a green "locked" icon to the right of the name to show that the site is secure.
 
 <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/secure_completed.png %}"/>
