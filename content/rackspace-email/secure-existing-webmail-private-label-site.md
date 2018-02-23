@@ -38,7 +38,7 @@ To secure your site, perform the following steps:
 
    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/action_secure_sites.png %}"/>
 
-5. On the **Secure Webmail Site*** page, enter or verify the company information for your site. This information is used to register the security certificate that will secure your site. End users can see this information, if they choose to view the certificate from their browser. Click **Secure Site**.
+5. On the **Secure Webmail Site** page, enter or verify the company information for your site. This information is used to register the security certificate that will secure your site. End users can see this information, if they choose to view the certificate from their browser. Click **Secure Site**.
 
    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/secure_webmail_site.png %}"/>
 
