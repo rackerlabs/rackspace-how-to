@@ -1,17 +1,17 @@
 ---
 permalink: secure-existing-webmail-private-label-site/
-audit_date: '2018-02-16'
+audit_date: '2018-02-23'
 title: Secure Existing Webmail Private Label Site
 type: article
-created_date: '2018-02-21'
+created_date: '2018-02-23'
 created_by: Ben Smith
-last_modified_date: '2018-02-21'
-last_modified_by: William Loy
+last_modified_date: '2018-02-23'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Webmail private label sites created before September 2017 were deployed to an environment that did not enforce the use of secure web protocols over https, such as SSL or TLS. In order to add this additional level of protection to your existing Webmail private label site, we recommend you secure it.
+Webmail private label sites created before September 2017 were deployed to an environment that did not enforce the use of secure web protocols over https, such as SSL or TLS. To add this additional level of protection to your existing Webmail private label site, we recommend you secure it.
 
 ### Prerequisites
 
@@ -24,7 +24,9 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### Secure Webmail Private Label Site
 
-1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
+To secure your site, perform the following steps:
+
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com). 
 
 2. In the **Reseller Tools** section of the home page, click the **Webmail Sites** link.
 
@@ -32,19 +34,19 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 3. On the **Webmail Sites** page, locate the site that you want to secure. It should have a red "unlocked" icon to the right of the name.
 
-4. Click the 'Secure Site' action from the **Actions** drop-down.
+4. Click **Secure Site** from the **Actions** menu.
 
    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/action_secure_sites.png %}"/>
 
-5. On the **Secure Webmail Site*** page, enter or verify the company information for your site. This information is used to register the security certificate that will secure your site. This information is visible by your end users, if they choose to view the certificate from their browser. Click 'Secure Site'.
+5. On the **Secure Webmail Site*** page, enter or verify the company information for your site. This information is used to register the security certificate that will secure your site. End users can see this information, if they choose to view the certificate from their browser. Click **Secure Site**.
 
    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/secure_webmail_site.png %}"/>
 
-6. You will be presented with instructions to update the DNS entry for your site with new information. Copy these instructions by clicking **Copy Instructions** before clicking **Ok, Got It**.
+6. Copy the displayed instructions to update the DNS entry for your site with new information by clicking **Copy Instructions**.  Then click **Ok, Got It**.
 
    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/site_being_created.png %}"/>
 
-    - The DNS for most existing sites will be an A record that points to a specific IP address. You need to change the A record type to CNAME, and change the IP address to the hostname provided. For example, if your webmail site is going to be **mail.yourdomainexample.com**, you would change the hostname to **mail** or **mail.yourdomainexample.com**. The tables below illustrate this change.
+    - The DNS for most existing sites will be an ``A`` record that points to a specific IP address. Change the ``A`` record type to ``CNAME``, and change the IP address to the hostname provided. For example, if your webmail site is going to be **mail.yourdomainexample.com**, you would change the hostname to **mail** or **mail.yourdomainexample.com**. The tables below illustrate this change.
 
         **Before DNS change:**
 
@@ -68,6 +70,6 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
     **Note:** For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-Once the DNS change is propagated, the site will show as secured in the **Webmail Sites** listing. It will have a green "locked" icon to the right of the name.
+After the DNS change is propagated, the site displays as secured in the **Webmail Sites** listing with a green "locked" icon to the right of the name.
 
 <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/secure_completed.png %}"/>
