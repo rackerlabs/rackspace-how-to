@@ -6,7 +6,7 @@ type: article
 created_date: '2018-02-23'
 created_by: Ben Smith
 last_modified_date: '2018-02-23'
-last_modified_by: Cat Lookabaugh
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -26,13 +26,15 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 To secure a Webmail private label site site, perform the following steps:
 
-1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com). 
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
 
 2. In the **Reseller Tools** section of the home page, click the **Webmail Sites** link.
 
    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/webmail_sites.png %}"/>
 
 3. On the **Webmail Sites** page, locate the site that you want to secure. It should have a red "unlocked" icon to the right of the name.
+
+    **Warning:** You cannot secure a control panel site using a site name that uses the root domains of mymailsrvr.com, mycpsrvr.com or a domain which is listed on Google Safe Browsing.
 
 4. Click **Secure Site** from the **Actions** drop-down list.
 
