@@ -1,6 +1,6 @@
 ---
 permalink: change-account-information/
-audit_date:
+audit_date: '2018-02-25'
 title: Change account information
 type: article
 created_date: '2015-06-18'
@@ -32,8 +32,9 @@ the [Cloud Control Panel](https://mycloud.rackspace.com/) by using the following
 
 4. Fill out the downloaded form and save the edited file on your local machine.
 5. In the Cloud Control Panel, select **Tickets** > **Create Ticket**.
-6. In the category section, set "Type" to **Account** and **Account Update**.
-7. Fill out the details for your ticket, and attach your saved account change form to your ticket.
+6. In the category section, set **Type** to **Account** and **Account Update**.
+7. Fill out the details for your ticket and attach your saved account change form to your ticket.
+
 
 ### Company name change
 
@@ -51,9 +52,10 @@ evidence of the name change. These forms are available from the Secretary of Sta
 Attach the form to a support ticket with **Company Name Change
 Request** in the subject line.
 
+
 ### New primary contact
 
-If you are the current primary contact for your account, you can update the primary contact by selecting **Account** > **Account Setting**, and editing the **Primary Contact Information** section in the [Cloud Control Panel](http://mycloud.rackspace.com).
+If you are the current primary contact for your account, you can update the primary contact by selecting **Account** > **Account Setting** and editing the **Primary Contact Information** section in the [Cloud Control Panel](http://mycloud.rackspace.com).
 
 If you are not the primary contact, you must fill out the **Primary
 Contact Change** form and submit it via a support ticket. You can download this form directly from the Cloud Control Panel by using the following steps:
@@ -63,7 +65,7 @@ Contact Change** form and submit it via a support ticket. You can download this 
 3. In the **Change Primary Contact**, download the **Primary Contact Change Form**.
 4. Fill out the downloaded form and save the edited file on your local machine.
 5. In the Cloud Control Panel, select **Tickets** > **Create Ticket**.
-6. In the category section, set "Type" to **Account** and **Account Update**.
+6. In the category section, set **Type** to **Account** and **Account Update**.
 7. Fill out the details for your ticket, and attach your saved account change form to your ticket.
 
 **Note:** The primary contact email address is used for all
@@ -71,10 +73,6 @@ account notifications and for regaining the credentials for access to an
 account when the **I forgot my password** link is
 used.
 
-### Update billing information
-
-To update the billing information, including the billing address and the
-credit card on file, select **Billing** in the Cloud Control Panel. To update your Billing Address, select **Billing Settings**. To update the credit card on file, select **Payment Methods** > **Manage Payment Methods**.
 
 ### Best practices for legal change forms
 
@@ -93,14 +91,15 @@ form:
     in MMR or added devices or domains that are made to the form after
     the initial submission.
 -   No blank fields are allowed on any form, except where indicated. You
-    may not type **Same** in any field
+    cannot type **Same** in any field.
 
 ### Service Transfer form requirements
 
-The Billing team has strict requirements when processing the
+The Billing team has strict requirements for processing the
 **Service Transfer** form for a Rackspace account. Use the
 following information to have the submission processed quickly and
 efficiently.
+
 
 #### Page 1 - Account details
 
@@ -120,7 +119,7 @@ efficiently.
 <img src="{% asset_path general/change-account-information/change-account-2.jpg %}" alt="Signature section details, including Transferring customer (Assignor) and Accepting customer (assignee) information" width="567" height="448" />
 
 Do not fill out the **RACKSPACE US, INC.** section. A Rackspace
-representative will complete this section.
+representative completes this section.
 
 #### Page 3 - Consolidated and/or Linked Cloud Accounts (Exhibit A)
 
@@ -132,5 +131,5 @@ In the **Cloud Account Number** and the **New Cloud Account Name** columns, prov
 
 ### Update billing information
 
-To update you billing information, including billing address and the
-credit card on file, select **Billing** in the Cloud Control Panel. To update your Billing Address, select **Billing Settings**. To update the credit card on file, select **Payment Methods** > **Manage Payment Methods**.
+To update your billing information, including billing address and the
+credit card on file, select **Billing** in the Cloud Control Panel. To update your billing address, select **Billing Settings**. To update the credit card on file, select **Payment Methods** > **Manage Payment Methods**.
