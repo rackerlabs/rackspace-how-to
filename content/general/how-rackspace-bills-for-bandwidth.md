@@ -11,8 +11,6 @@ product: undefined
 product_url: undefined
 ---
 
-### How Rackspace bills for bandwidth usage
-
 Rackspace introduced the concept of charging customers for only the
 bandwidth that they actually use in a given period. Other providers use
 what is commonly called *the 95th percentile method*. This method
