@@ -22,9 +22,7 @@ both the assignor (original account owner) and the assignee (new account owner).
 You can download the **Service Transfer** form directly from
 the [Cloud Control Panel](https://mycloud.rackspace.com/) by using the following steps.
 
-**Note:** If you are a Dedicated Hosting customer, you can request this form
-directly from your Account Manager.
-
+**Note:** If you are a Dedicated Hosting customer, you can request all of the forms described in this article from your account manager.
 1.  In the upper-right corner of the Cloud Control Panel, click **Account** > **Docs and Forms**.
 2.  Select the **Rackspace Account Change Forms** section.
 3.  In the **Transfer Ownership to a new Account owner** section, select one of the following options:
