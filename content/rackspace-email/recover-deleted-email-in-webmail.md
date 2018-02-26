@@ -1,12 +1,12 @@
 ---
 permalink: recover-deleted-email-in-webmail/
-audit_date:
+audit_date: '2018-02-26'
 title: Recover deleted email in Webmail
 type: article
 created_date: '2013-11-05'
 created_by: William Loy
-last_modified_date: '2018-01-26'
-last_modified_by: William Loy
+last_modified_date: '2018-02-26'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -20,13 +20,13 @@ product_url: rackspace-email
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-For up to 14 days from the moment an item is purged from trash, users can recover email messages from the **Recover Deleted Email** tool. To do so, log in to [Webmail](https://apps.rackspace.com), and perform the following steps:
+Users can recover email messages from the **Recover Deleted Email** tool up to 14 days after an item is purged from trash. To recover deleted messages, log in to [Webmail](https://apps.rackspace.com), and perform the following steps:
 
 1. Verify the missing items are not in **Trash** or another folder.
 
     <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/no_trash.png %}" alt="" />
 
-1. Right-click the **Trash** folder and select **Recover Deleted Email**.
+1. Right-click the **Trash** folder, and select **Recover Deleted Email**.
 
     <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/recover_deleted_email.png %}" alt="" />
 
@@ -34,11 +34,11 @@ For up to 14 days from the moment an item is purged from trash, users can recove
 
     <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/select_to_recover.png %}" alt="" />
 
-3. Click **Recover to Folder** and select the folder you want to move the messages to.
+3. Click **Recover to Folder**, and select the destination folder for the recovered emails.
 
     <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/recover_to_folder.png %}" alt="" />
 
-4. When you see the confirmation `Message(s) Recovered`, exit the tool and verify the messages are now in the folder you selected they be recovered to.
+4. When you see the confirmation ``Message(s) Recovered``, close the recovery tool, and verify that the messages are now in the destination folder that you chose.
 
    <img src="{% asset_path rackspace-email/recover-deleted-email-in-webmail/inbox_recovered.png %}" alt="" />
 
