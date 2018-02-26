@@ -1,12 +1,12 @@
 ---
 permalink: change-account-information/
-audit_date: '2017-09-01'
+audit_date: '2018-02-02'
 title: Change account information
 type: article
 created_date: '2015-06-18'
 created_by: David Hendler
-last_modified_date: '2017-09-01'
-last_modified_by: Renée Rendon
+last_modified_date: '2018-02-02'
+last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
 ---
@@ -27,8 +27,8 @@ directly from your Account Manager.
 
 1.  In the upper-right corner of the Cloud Control Panel, click your username, and then click **Documents and Forms**.
 2.  In the **Rackspace Account Change Forms** section, click the **Service Transfer** form link.
-3.  Download the **Service Transfer** form and complete it.
-4.  Attach the completed form to a support ticket and submit the ticket.
+3.  Download the **Service Transfer** form, and complete it.
+4.  Attach the completed form to a support ticket, and submit the ticket.
 
 ### Company name change
 
@@ -52,12 +52,12 @@ If you have access to the account, you can update the primary contact
 details in the **My Profile & Settings** section in the [Cloud Control Panel](http://mycloud.rackspace.com).
 
 If you are not the primary contact, you must fill out the **Primary
-Contact Change** form and submit it via a support ticket. You can download this form directly from the Cloud Control Panel by using the following steps:
+Contact Change** form, and submit it via a support ticket. You can download this form directly from the Cloud Control Panel by using the following steps:
 
 1.  In the upper-right corner of the Cloud Control Panel, click username, and then click **Documents and Forms**.
 2.  In the **Rackspace Account Change Forms** section, click the **Primary Contact Change Form** link.
-3.  Download the **Primary Contact Change** form and complete it.
-4.  Attach the completed form to a support ticket and submit the ticket.
+3.  Download the **Primary Contact Change** form, and complete it.
+4.  Attach the completed form to a support ticket, and submit the ticket.
 
 **Note:** The primary contact email address is used for all
 account notifications and for regaining the credentials for access to an
@@ -65,13 +65,13 @@ account when the **I forgot my password** link is
 used.
 
 To update the billing information, including the billing address and the
-credit card on file, go to the **Billing & Payments** section of the control panel by clicking your username in the upper-right corner, and then selecting **Billing and Payments**.
+credit card on file, go to the **Billing & Payments** section of the control panel by clicking your username in the upper-right corner, and then select **Billing and Payments**.
 
 ### Best practices for legal change forms
 
 The forms described in this article have many required fields that must be
 completed before the Billing team can process the forms. After you have
-completed a form, scan the document and attach it to the support ticket
+completed a form, scan the document, and attach it to the support ticket
 in the [Cloud Control Panel](http://mycloud.rackspace.com). Allow
 two business days for the Billing team to review.
 
@@ -107,7 +107,7 @@ efficiently.
 -   **Transferring Customer / Assignor** - Provide the signature of the
     current primary contact on the account.
 -   **Accepting Customer / Assignee** - Provide the signature of the new
-    contact or the existing contact if that is not changing.
+    contact or, if the contact is not changing,  the existing contact.
 
 
 <img src="{% asset_path general/change-account-information/change-account-2.jpg %}" alt="Signature section details, including Transferring customer (Assignor) and Accepting customer (assignee) information" width="567" height="448" />
@@ -119,5 +119,5 @@ representative will complete this section.
 
 In the **Cloud Account Number** and the **New Cloud Account Name** columns, provide the following information:
   -   **Cloud Account Number** - Enter the account number.
-  -   **New Cloud Account Name** - Enter the new name of the account. Leave
-        this blank if there is no change.
+  -   **New Cloud Account Name** - Enter the new name of the account. If there is no change, leave
+        this blank.
