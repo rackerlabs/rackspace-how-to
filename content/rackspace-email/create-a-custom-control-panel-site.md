@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-A custom control panel allows you to customize the portal which your customers use to access their administrator portal.
+A custom control panel allows you to customize the portal that your customers use to access their administrator portal.
 
 ### Prerequisites
 
