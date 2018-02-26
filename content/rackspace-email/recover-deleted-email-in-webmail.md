@@ -11,6 +11,8 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
+This article describes how to recover email messages that have been purged from the Trash folder in Rackspace Webmail.
+
 ### Prerequisites
 
 - **Applies to:** User
@@ -19,6 +21,8 @@ product_url: rackspace-email
 - **Tools required:**  Webmail access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
+### Recover deleted email
 
 Users can recover email messages from the **Recover Deleted Email** tool up to 14 days after an item is purged from Trash. To recover deleted messages, log in to [Webmail](https://apps.rackspace.com), and perform the following steps:
 
