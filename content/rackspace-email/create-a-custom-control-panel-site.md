@@ -5,7 +5,7 @@ title: Create a Custom Control Panel Site
 type: article
 created_date: '2018-02-23'
 created_by: William Loy
-last_modified_date: '2018-02-23'
+last_modified_date: '2018-02-26'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -24,7 +24,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### Create a Custom Control Panel Site
 
-1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com) and perform the following steps:
 
 2. In the **Reseller Tools** section of the home page, click the **Custom Control Panel** link.
 
