@@ -20,8 +20,7 @@ In security terms, it means that our business adheres to the PCI DSS requirement
 In operational terms, it means that we take prescribed steps to make sure our customers' payment card data is being kept safe throughout every transaction, and our customers can have confidence that they're protected against the pain and cost of data breeches.
 
 As a Rackspace Cloud customer, we can help you become PCI compliant,
-however it will take some work on your end. To read more about the
-requirements for PCI compliance and how Rackspace can help, see [PCI Compliance in Rackspace Hybrid Cloud](/white-paper/pci-compliance-in-rackspace-hybrid-cloud).
+however it will take some work on your end.
 
 Rackspace data centers are Payment Card Industry (PCI) Data Security
 Standard (DSS) compliant and Safe Harbor compliant in addition to having

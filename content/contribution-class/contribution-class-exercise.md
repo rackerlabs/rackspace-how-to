@@ -25,6 +25,7 @@ Yes
 Yes
 Yes
 Yes
+Yes
 **Answer options**
 - Yes 
 - Somewhat
@@ -41,6 +42,7 @@ Somewhat Often
 Often
 Often
 Somewhat Often
+Often
 **Answer options**
 - Often
 - Somewhat often
@@ -51,6 +53,7 @@ Yes
 Yes
 Yes
 Yes, if they have a need to edit the How-To
+Yes
 Yes
 Yes
 Yes
@@ -68,6 +71,7 @@ Yes (potentially, it'd depend on how much I'd actually get out of it)
 Yes
 No
 Yes
+Yes
 **Answer options**
 - Yes
 - No
@@ -80,6 +84,7 @@ Consideration for how people will come across this training; a lot of people wil
 Finally can update all this out of date documentation
 no
 Thanks!
+Video should be a bit slower or provide download slides
 **Answer options**
 - Open ended
 

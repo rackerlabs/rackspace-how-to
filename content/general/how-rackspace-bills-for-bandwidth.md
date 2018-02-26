@@ -33,6 +33,7 @@ charges. Instead of penalizing for peak hour consumption (as in the 95th
 percentile method), this method charges you only for the bandwidth that
 you use. 
 
+
 Finally, Rackspace charges only for outbound bandwidth, meaning that
 routine site maintenance, such as content publishing and uploads, is
 not counted against your bandwidth allocation.

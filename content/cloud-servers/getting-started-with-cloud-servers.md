@@ -59,7 +59,6 @@ The following concepts will help you in getting started quickly:
 
 ### Advanced Cloud Server Operations
 
--   [High Availability on the Cloud](/white-paper/architecting-high-availability-linux-environments-within-the-cloud/)
 -   [Cloud Servers Developer Guide](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/)
 -   [Cloud Servers API Reference](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#document-api-reference)
 
