@@ -19,7 +19,7 @@ control panel, as described in this article.
 - **Applies to:** Administrator
 - **Difficulty:** Easy
 - **Time needed:** Approximately 15 minutes to update WHOIS and confirm changes
-- **Tools required:**  Access to Control Panel and WHOIS email contact
+- **Tools required:**  Access to Control Panel and WHOIS contact email address
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
 
