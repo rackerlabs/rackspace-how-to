@@ -5,8 +5,8 @@ title: Create your first website on Cloud Servers quickly
 type: article
 created_date: '2013-11-11'
 created_by: David Hendler
-last_modified_date: '2016-07-07'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-02-27'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -30,25 +30,15 @@ you can build on by reading future articles and guides.
 
 ### Prerequisites
 
-The information in this guide is practical. You should follow along step
-by step. To do so, you might need to install the following software:
+The information in this guide is practical, so you should plan to follow along
+step by step. To do so, you might need to download and install the following
+software:
 
-**Mac OS X**
+-   an SSH client application
+-   an SFTP client application
 
--   Mac OS X already has Terminal.app, but you can download
-    [iTerm](http://iterm.sourceforge.net/) if you prefer
--   [Cyberduck](http://cyberduck.ch/) SFTP has built-in support for
-    Rackspace [Cloud Files](http://www.rackspace.com/cloud/files/)
-
-**Windows**
-
--   If you don't already have an SSH client, download
-    [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html/)
--   If you don't already have an SFTP client that supports SFTP,
-    download [FileZilla](https://filezilla-project.org/)
-
-You also will need a website to upload to your cloud server. To save
-time you can use an HTML file created for this exercise. Download it
+If you don't have a website to upload, you can use an HTML file created for
+this exercise. Download it
 [here](http://90df0b8db988dcfbf5da-c1875553a16f2a6d80002cac1a22fc37.r75.cf1.rackcdn.com/index.html)
 (right-click to save the file).
 
@@ -59,9 +49,14 @@ Apache web server package to turn the server into a web server.
 
 #### Create a cloud server
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com), using the user name and password that you entered when you created your account.
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com), using
+the user name and password that you entered when you created your account.
 
-   The control panel supports many Rackspace products and services. Each component of this interface, and all of our products and services, are explained in other articles and videos (for example, [Introducing the Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel)). This guide focuses on deploying your first cloud server.
+   The control panel supports many Rackspace products and services. Each
+   component of this interface, and all of our products and services, are
+   explained in other articles and videos (for example,
+   [Introducing the Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel)).
+   This guide focuses on deploying your first cloud server.
 
 2.  On the Cloud Servers page, which is displayed whenever you log in,
     click **Create Server**.
@@ -70,7 +65,7 @@ Apache web server package to turn the server into a web server.
     few clicks.
 
     You have a large amount of control when creating a new cloud server,
-    but to keep things simple this guide focuses on the three required
+    but, to keep things simple, this guide focuses on the three required
     parts: name, image, and size.
 
 3.  Name your Cloud Server.
@@ -121,8 +116,8 @@ information to and from your server in a secure fashion.
     -   **Connect from Mac OS X**
 
         You can connect to your cloud server from a Mac OS X computer by
-        running the SSH command in Terminal.app or iTerm (if you
-        downloaded that at the beginning of the guide). You can find the
+        running the ``ssh`` command in Terminal.app or the SSH client you
+        downloaded that at the beginning of the guide. You can find the
         command to use SSH in the right-side bar of the server detail
         page of the Cloud Control Panel.
 
@@ -131,8 +126,9 @@ information to and from your server in a secure fashion.
 
     -   **Connect from Windows**
 
-        You can use the PuTTY SSH client to connect to your server from
-        a Windows computer. For instructions, see [Connecting to Linux from Windows by using PuTTY](/how-to/connecting-to-linux-from-windows-by-using-putty).
+        You can use an SSH client to connect to your server from
+        a Windows computer. For instructions that use the PuTTY SSH client,
+        see [Connecting to Linux from Windows by using PuTTY](/how-to/connecting-to-linux-from-windows-by-using-putty).
 
         The first time that you connect to a cloud server, your computer
         verifies that this is something you want to do.
@@ -164,6 +160,9 @@ and turned on. Put the (PublicNet) IPv4 address of your cloud server
 into a web browser. If you see the message "It works!", you now have a web
 server installed on your cloud server.
 
+This "It works!" site file is stored as ``index.html`` in your
+**DocumentRoot** directory.
+
 ### Upload your code
 
 The next step is to upload your site. You might be familiar with File
@@ -173,46 +172,28 @@ Protocol (SFTP) for added security, so you need an FTP client that will
 support an SFTP connection. Fortunately, many of the popular and free
 FTP clients do this.
 
-#### Establish an SFTP connection with your server by using Cyberduck
+#### Common steps to establish an SFTP connection with your server
 
-1.  In the Cyberduck interface, click **Open Connection**.
-2.  Select **SFTP (SSH File Transfer Protocol)**.
-3.  For **Server**, type the IP address of the cloud server.
-4.  For Username, enter **root**.
-5.  For **Password**, enter the root user's password.
-6.  Click **Connect**.
+1.  When you create a new connection, be sure to choose the SFTP (SSH File
+    Transfer Protocol) option.
+3.  For the server, type the IP address of the cloud server.
+4.  For the username, enter ``root``.
+5.  For the password, enter the root user's password.
+6.  Click the option to establish the new connection to your server.
 
 ### Upload your site
 
 If you haven't already downloaded the sample HTML file, download it
 from [here](http://90df0b8db988dcfbf5da-c1875553a16f2a6d80002cac1a22fc37.r75.cf1.rackcdn.com/index.html).
 
-You cannot upload your HTML file just anywhere on the Cloud Server.
+You should not upload the HTML file just anywhere on the Cloud Server.
 Apache is configured to look in a specific directory for content to
 serve on the web. This special directory is referred to as the
 **DocumentRoot**.
 
-On an Ubuntu server, the DocumentRoot is located at **/var/www**, so that's
-where you need to upload your file. Navigate to that directory in
-Cyberduck by using the following steps:
-
-You're now in the DocumentRoot directory.
-
-You should see an **index.html** file already in the directory. This is
-the "It works!" file that you saw when you tested Apache in your browser
-earlier.
-
-1.  Select the **I** directory by using the drop-down menu at the top of
-    the window.
-
-2.  Double-click the **var** directory.
-
-3.  Double-click the **www** directory.
-
-4.  Replace the **index.html** file with your own file by dragging the
-    new **index.html** file into Cyberduck.
-5.  When Cyberduck asks if you want to overwrite the existing file,
-    click **Continue**.
+On an Ubuntu server, the DocumentRoot is located at ``/var/www``, so upload your
+site file to that directory. Navigate to that directory in your SFTP client, then
+replace the existing **index.html** file with your file.
 
 ### Test your site
 
@@ -223,7 +204,7 @@ should see your site when you refresh your browser.
 
 Congratulations! In a short period of time, you deployed a cloud server,
 connected to it via SSH, installed the Apache web server, uploaded a new
-HTML file to the server's DocumentRoot directory, and tested the site in
+HTML file to the server's **DocumentRoot** directory, and tested the site in
 a web browser.
 
 ### Next steps

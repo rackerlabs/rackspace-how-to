@@ -5,8 +5,8 @@ title: Migrating to Rackspace from another hosting provider
 type: article
 created_date: '2016-01-21'
 created_by: Nate Archer
-last_modified_date: '2016-08-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-02-27'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -79,10 +79,8 @@ Besides rsync, you can transfer data from an existing server to a Rackspace serv
 
 -   **Install a GUI tool on your local computer**
 
-    In certain cases, such as if your existing server is Windows based, you need
-    to install a GUI tool (such as
-    [Cyberduck](https://cyberduck.io/?l=en)) to upload data to Cloud
-    Files.
+    In certain cases, such as if your existing server is Windows based, you might
+    install a GUI FTP client application to upload data to Cloud Files.
 
 -   **Use the Cloud Control Panel to upload files**
 

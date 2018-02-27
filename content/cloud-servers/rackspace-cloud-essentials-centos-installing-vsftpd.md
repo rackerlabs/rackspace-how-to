@@ -5,7 +5,7 @@ title: Rackspace Cloud Essentials - Install vsftpd for CentOS
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
-last_modified_date: '2017-11-16'
+last_modified_date: '2018-02-27'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -145,9 +145,8 @@ following screenshot, and supply the login credentials when prompted.
 
 #### Using an FTP client
 
-Use one of the many low-cost or free FTP applications, such as
-[CyberDuck](https://cyberduck.io/?l=en) and
-[Fireuploader](http://www.fireuploader.com/), which are available for download.
+Use one of the many low-cost or free FTP applications, which are available for
+download.
 
 #### Using the command line
 

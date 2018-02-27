@@ -5,8 +5,8 @@ title: High-level steps for migrating from Amazon Web Services
 type: article
 created_date: '2013-07-01'
 created_by: Rackspace Support
-last_modified_date: '2016-01-08'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-02-27'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -61,8 +61,7 @@ You can do this a number of ways:
 -   **Install a GUI tool on your local computer**
 
     In certain cases (for example, if your cloud server is Windows
-    based), you need to install a GUI tool (such as
-    [Cyberduck](/how-to/configuring-rackspace-cloud-files-with-cyberduck))
+    based), you need to install a GUI tool (such as an FTP client application)
     to upload the data on Cloud Files. Several open source and free
     tools exist, and they are described in detail within each migration
     scenario in this document.
