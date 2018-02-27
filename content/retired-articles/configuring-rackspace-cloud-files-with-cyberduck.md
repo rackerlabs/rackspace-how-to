@@ -5,10 +5,8 @@ title: Configure Rackspace Cloud Files with Cyberduck
 type: article
 created_date: '2012-11-15'
 created_by: Rae D. Cabello
-last_modified_date: '2017-06-06'
-last_modified_by: Stephanie Fillmon
-product: Cloud Files
-product_url: cloud-files
+last_modified_date: '2018-02-27'
+last_modified_by: Cat Lookabaugh
 ---
 
 You can use Cyberduck to manage your Rackspace Cloud Files storage account and the configuration of the Akamai content delivery network (CDN). This article provides instructions for configuring the Cyberduck FTP client to manage Cloud Files.
