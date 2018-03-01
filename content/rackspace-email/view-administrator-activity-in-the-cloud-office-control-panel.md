@@ -12,7 +12,7 @@ product_url: rackspace-email
 ---
 
 All administrator activity is logged, including control panel logins, administrator changes, and
-mailbox adjustments and logins. Administrator logs are available in the control panel for the past 6
+mailbox adjustments and logins. Administrator logs are available in the control panel for the past six
 months.
 
 ### Prerequisites
@@ -25,7 +25,7 @@ months.
 To review the administrator activity logs, log in to the [Cloud Office Control
 Panel](https://cp.rackspace.com) and perform the following steps:
 
-1.  At the top right corner of the page, click your account number and select **Audit Logs**.
+1.  At the top right-hand corner of the page, click your account number and select **Audit Logs**.
 
     <img src="{% asset_path rackspace-email/view-administrator-activity-in-the-cloud-office-control-panel/admindropmenu.png %}" />
 
