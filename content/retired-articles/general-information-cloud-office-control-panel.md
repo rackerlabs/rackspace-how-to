@@ -1,14 +1,12 @@
 ---
 permalink: general-information-cloud-office-control-panel/
-audit_date:
+audit_date: '2018-03-01'
 title: General information in the Cloud Office Control Panel
 type: article
 created_date: '2014-03-31'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-01-18'
+last_modified_date: '2018-03-01'
 last_modified_by: Kate Dougherty
-product: Rackspace Email
-product_url: rackspace-email
 ---
 
 On the **Company Info** page, you can change your company phone number, address, and billing information.
