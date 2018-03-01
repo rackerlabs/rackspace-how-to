@@ -25,7 +25,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Clear old credentials
 
-1. Look for the **Spotlight** Magnifying glass on the top right hand side of your screen **OR** click the command + space key on your keyboard
+1. Look for the **Spotlight** Magnifying glass on the top right hand side of your screen **OR** click the **command + space** keys on your keyboard.
 
    <img src="{% asset_path exchange/clear-keychain-access/mag_glass.png %}"/>
 
@@ -38,7 +38,6 @@ For more information about prerequisite terminology, see [Cloud Office support t
    <img src="{% asset_path exchange/clear-keychain-access/keychain_access_result.png %}"/>
 
 4. Enter your email address in the search bar located in the upper right hand corner of **Keychain Access**.
-
 5. Click on the entry that you wish to remove and press the **Delete** button on your keyboard.
 
    <img src="{% asset_path exchange/clear-keychain-access/search_email.png %}"/>
