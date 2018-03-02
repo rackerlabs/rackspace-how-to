@@ -5,8 +5,8 @@ title: Managed Operations FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2017-06-06'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-03-02'
+last_modified_by: Renee Rendon
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -85,7 +85,7 @@ best for you.
 
 For additional information, see the following How-To articles:
 
--   Cloud Server images - Create and restore images via our[Cloud
+-   Cloud Server images - Create and restore images via our [Cloud
     Control
     Panel](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
     or
@@ -155,7 +155,7 @@ Servers.
     Guide](/how-to/cloud-backup)
 -   [Rackspace Cloud Backup (File-Level) vs. Cloud Server
     Images](/how-to/rackspace-cloud-backup-vs-cloud-server-image-backups)
-    -   Cloud Server images - Create and restore images via our[Cloud
+    -   Cloud Server images - Create and restore images via our [Cloud
         Control
         Panel](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
         or
