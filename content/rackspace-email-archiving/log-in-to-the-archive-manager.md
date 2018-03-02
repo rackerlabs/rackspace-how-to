@@ -5,33 +5,35 @@ title: Log in to the Archive Manager
 type: article
 created_date: '2015-05-19'
 created_by: Beau Bailey
-last_modified_date: '2016-01-26'
+last_modified_date: '2018-03-02'
 last_modified_by: Catherine Richardson
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-You can log in to the Email Archive Manager directly from your
-domain-specific URL (for example, `http://yourdomaincom.archivesrvr.com`).
+This article describes how to set a log into your Rackspace Hosted Email Archive. Office 365 customer will follow the instructions in [Log into the archive manager for Office 365](/how-to/)
 
-Alternatively, you can log in through the Cloud Office Control Panel by
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 5 minutes
+- **Tools required:** Cloud Office Control Panel access
+
+For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
+You can log in through the Cloud Office Control Panel by
 performing the following steps:
 
-1.  Log in to the [Cloud Office Control
-    Panel](https://cp.rackspace.com).
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/) by using your Rackspace Cloud Office admin ID and password.
+2. Scroll down to the **Domains** section. In the far right column of this sections click the link titled **Email Archiving**
 
-2.  Open the **Go to section** menu and select **Domains**.
+   <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/domains_archive.png %}" />
 
-    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/Logging%20in%20to%20Archiving%20Manager%201a.png %}" width="319" height="233" />
+3. Locate and click the domain you want to enable a retention policy for.
+4. Click the **Manage My Archive** button. You will be taken to the dashboard for the domain's archive.
 
-3.  In the **Manage** section, click **Email Archiving**.
+   <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/manage_archive.png %}" />
 
-    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/Logging%20in%20to%20Archiving%20Manager%202a.png %}" width="346" height="250" />
 
-    **Note:**  If you have multiple domains, select the appropriate
-    domain name. To change domains at any time, click the **Change
-    domain** option at the top of the page.
-
-4.  Click **Manage My Archive**.
-
-    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/Screen%20Shot%202015-08-25%20at%2012.30.34%20PM.png %}" width="306" height="179" />
+Once logged into your Rackspace Hosted Email Archive you can perform many additional functions such as [creating searches](/how-to/create-and-archive-search), [exporting searches](/how-to/export-archive-search-results-in-cloud-office), [adding archive users](/how-to/add-and-edit-archive-users-in-cloud-office) and more.
