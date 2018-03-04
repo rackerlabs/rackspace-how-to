@@ -16,28 +16,19 @@ Cloud Office Control Panel and perform the following steps:
 
 1.  In the top-right corner of the window, click the down arrow next to
     your account number.
-2.  From the menu, select **Upgrades & Services**.
+2.  From the menu, select **Services**.
 
-    <img src="{% asset_path sharepoint/cancel-cloud-office-services/Cancel%20Services%201_1a.png %}" width="605" height="149" />
+    <img src="{% asset_path exchange/cancel-cloud-office-services/services.png %}" />
 
-    If you do not see the **Upgrades &** **Services** option in the
-    menu, confirm that you have the proper permissions to access
-    this feature. If you do not, you likely have an enterprise account
-    and need to submit a ticket with your cancellation request.
 
-3.  In the options listed at the top of the tab, click **Service
-    Summary**.
+3.  In the options listed in the ribbon toward the top of the screen, click **Cancel Account**.
 
-    <img src="{% asset_path sharepoint/cancel-cloud-office-services/Cancel%20Services%202_0a.png %}" width="753" height="477" />
+    <img src="{% asset_path exchange/cancel-cloud-office-services/cancel_tab.png %}" />
 
-4.  In the **Action** column of the service that you want to cancel,
-    click **Cancel Service**.
+4.  You will be presented with a warning describing what will transpire after you submit to cancel the account.
 
-    <img src="{% asset_path sharepoint/cancel-cloud-office-services/Cancel%20Services%203a.png %}" width="764" height="468" />
+    <img src="{% asset_path exchange/cancel-cloud-office-services/cancel_warning.png %}" />
 
-5.  For **Cancellation Date**, enter the date that you want the services
-    to end.
-    **Note**: Date selected must be the following day's date or later.
+5.  Once you have fully read the details of the cancellation request and agree to the conditions, confirm the cancellation by typing **CANCEL** into the empty box and clicking the **CANCEL ACCOUNT ON MM/DD/YYYY** button.  
 
-6.  Click **Submit Request**. A **Pending Cancellation** status is displayed next to the services
-    to be canceled.
+    <img src="{% asset_path exchange/cancel-cloud-office-services/confirm_cancel.png %}" />
