@@ -4,11 +4,11 @@ audit_date:
 title: Cancel Cloud Office services
 type: article
 created_date: '2015-07-16'
-created_by: Beau Bailey
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
-product: Microsoft SharePoint
-product_url: sharepoint
+created_by: Mitchell Goren
+last_modified_date: '2018-03-04'
+last_modified_by: William Loy
+product: Microsoft Exchange
+product_url: exchange
 ---
 
 To cancel a Cloud Office email or SharePoint account, log in to the
