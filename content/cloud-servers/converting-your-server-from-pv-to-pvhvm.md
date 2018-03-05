@@ -14,8 +14,8 @@ product_url: cloud-servers
 XenServer, which is the virtualization platform used by the Rackspace public cloud, supports multiple 
 virtualization modes. For better performance and security, convert your Rackspace cloud server from 
 the older paravirtualization (PV) mode to the newer paravirtualization with full hardware 
-virtualization (PVHVM) mode. Newer distributions, such as CentOS 7 and Ubuntu 16, are only offered 
-as PVHVM, so conversion is unnecessary.
+virtualization (PVHVM) mode. Newer distributions, such as CentOS 7 and Ubuntu 16, are offered as only 
+PVHVM, so conversion is unnecessary.
 
 In general, PVHVM offers better performance than PV, especially for disk and network I/O operations.
 
@@ -32,7 +32,7 @@ To learn more about the conversion process, see [this Rackspace Community articl
 
 Some advantages and disadavantages of PVHVM are described in the following sections.
 
-### Performance ### 
+### Performance 
 
 PVHVM performance considerations include the following: 
 
@@ -45,21 +45,21 @@ displayed:
 
 `Image cannot be built with provided flavor.`
 
-### File system ### 
+### File system
 
 File system considerations include the following: 
 
 -  The lower-performance ext3 filesystem is used for all PV Linux images. 
 -  The higher-performance ext4 filesystem is used on PVHVM Linux images.
 
-### Boot loader ### 
+### Boot loader
 
 Boot loader considerations include the following: 
 
 -  PV images boot by using pygrub. 
 -  PVHVM images boot by using the boot loader in the master boot record of the operating system.
 
-### Disk configuration ### 
+### Disk configuration
 
 Automatic disk configuration can be used with PV images but not with PVHVM images. 
 
