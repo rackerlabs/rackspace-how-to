@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Private label webmail sites allow you to customize and secure the portal used by your users or customers to access their email.
+Private label webmail sites allow you to customize and to secure the portal used by your users or customers to access their email.
 
 ### Prerequisites
 
