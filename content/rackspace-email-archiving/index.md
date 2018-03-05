@@ -1,18 +1,19 @@
 ---
 permalink: rackspace-email-archiving/
+audit_date: 
 title: Rackspace Email Archiving
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2018-02-15'
-last_modified_by: William Loy
+last_modified_date: '2018-03-05'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-The archiving feature of Rackspace Cloud Office collects and stores external, internal, incoming, and outgoing email, including attachments. This data can be accessed for search and review by the administrator of the account and by administrator-designated users.
+The archiving feature of Rackspace Cloud Office collects and stores external, internal, incoming, and outgoing email, including attachments. The administrator of the account and administrator-designated users can access this to data to search or review it.
 
-These articles will help you get started using Rackspace Email Archiving through Cloud Office.
+The following articles will help you get started using Rackspace Email Archiving through Cloud Office.
 
 ###  Enable and access Email Archiving
 
