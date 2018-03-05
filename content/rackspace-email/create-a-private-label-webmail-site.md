@@ -40,13 +40,13 @@ To customize and secure your private label Webmail site, perform the following s
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/customer_selection.png %}"/>
 
-5. In the **Webmail Site Settings** window, enter the Webmail website address that you want to create in the **Webmail Address** field. You can choose to allow your customers to customize their site themselves or to copy the look and feel of an existing Webmail site.
+5. In the **Webmail Site Settings** window, enter the Webmail website address that you want to create in the **Webmail            Address** field. You can choose to allow your customers to customize their site themselves or to copy the look and feel of    an existing Webmail site.
 
     <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/site_settings.png %}"/>
 
-  **Warning:** You cannot create a private label Webmail site that uses a site name that already exists, that uses the root domain of mymailsrvr.com, or that is listed on *Google Safe Browsing*.
+   **Warning:** You cannot create a private label Webmail site that uses a site name that already exists, that uses the root      domain of mymailsrvr.com, or that is listed on *Google Safe Browsing*.
 
-6. When you are presented with instructions to update the DNS entry for your site with new information, copy these instructions by clicking **Copy Instructions** and then clicking **Ok, Got It**.
+6. When you are presented with instructions to update the DNS entry for your site with new information, copy these                instructions by clicking **Copy Instructions** and then clicking **Ok, Got It**.
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/site_being_created.png %}"/>
 
