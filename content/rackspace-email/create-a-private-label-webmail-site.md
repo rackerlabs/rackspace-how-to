@@ -74,6 +74,6 @@ To customize and secure your private label webmail site, perform the following s
 
     **Note:** For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-The site now appears in the **Webmail Sites** listing. After the DNS change is propagated, it has a green "locked" icon to the right of the name, indicating that the site is secure.
+The site appears in the **Webmail Sites** listing. After the DNS change is propagated, it has a green "locked" icon to the right of the name, indicating that the site is secure.
 
 <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/secure_completed.png %}"/>
