@@ -1,17 +1,17 @@
 ---
 permalink: create-a-private-label-webmail-site/
-audit_date: '2018-02-16'
-title: Create a Private Label Webmail Site
+audit_date: '2018-03-05'
+title: Create a private label webmail site
 type: article
 created_date: '2018-02-21'
 created_by: William Loy
-last_modified_date: '2018-02-21'
-last_modified_by: William Loy
+last_modified_date: '2018-03-05'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Webmail private label sites allow you to customize the portal which your users or customers use to access their email.
+Private label webmail sites allow you to customize the portal used by your users or customers to access their email.
 
 ### Prerequisites
 
@@ -22,11 +22,13 @@ Webmail private label sites allow you to customize the portal which your users o
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-### Secure Webmail Private Label Site
+### Customize and secure a private label webmail site
 
-1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
+To customize and secure your private label webmail site, perform the following steps:
 
-2. In the **Reseller Tools** section of the home page, click the **Webmail Sites** link.
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
+
+2. In the **Reseller Tools** section of the home page, click **Webmail Sites**.
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/webmail_sites.png %}"/>
 
@@ -34,21 +36,21 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/add_webmail_site1.png %}"/>
 
-4. On the **Customer Selection** page, select the customer company that you are creating a private label webmail site for.
+4. On the **Customer Selection** page, select the customer company for which you are creating a private label webmail site.
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/customer_selection.png %}"/>
 
-5. On the **Webmail Site Settings** enter a the webmail website address you would like to create in the **Webmail Address** field. On this step you can choose to allow your customers to customize their site themselves as well as copy the look of an existing webmail site.
+5. In the **Webmail Site Settings** window, enter the webmail website address that you would like to create in the **Webmail Address** field. You can choose to allow your customers to customize their site themselves or to copy the look of an existing webmail site.
 
     <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/site_settings.png %}"/>
 
-  **Warning:** You cannot create a private webmail site using a site name that already exists, uses the root domain of mymailsrvr.com, or is listed on Google Safe Browsing.
+  **Warning:** You cannot create a private label webmail site using a site name that already exists, that uses the root domain of mymailsrvr.com, or that is listed on *Google Safe Browsing*.
 
-6. You will be presented with instructions to update the DNS entry for your site with new information. Copy these instructions by clicking **Copy Instructions** before clicking **Ok, Got It**.
+6. When you are presented with instructions to update the DNS entry for your site with new information, copy these instructions by clicking **Copy Instructions** and then clicking **Ok, Got It**.
 
    <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/site_being_created.png %}"/>
 
-    - The DNS for most existing sites will be an A record that points to a specific IP address. You need to change the A record type to CNAME, and change the IP address to the hostname provided. For example, if your webmail site is going to be **mail.yourdomainexample.com**, you would change the hostname to **mail** or **mail.yourdomainexample.com**. The tables below illustrate this change.
+    - The DNS for most existing sites will be an ``A`` record that points to a specific IP address. You need to change the ``A`` record type to ``CNAME``, and change the IP address to the hostname provided. For example, if your webmail site is going to be **mail.yourdomainexample.com**, you would change the hostname to **mail** or **mail.yourdomainexample.com**. The following tables illustrate this change.
 
         **Before DNS change:**
 
@@ -62,7 +64,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
         |---|---|---|
         |CNAME| mail| pl-10.webmail.emailsrvr.com |
 
-    - If your existing DNS record is already a CNAME, then just update the existing hostname to the new one provided.
+    - If your existing DNS record is already a ``CNAME``, then just update the existing hostname to the new one provided.
 
         **Example DNS entry:**
 
@@ -72,6 +74,6 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
     **Note:** For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-The site will now appear in the **Webmail Sites** listing. Once the DNS change is propagated it will have a green "locked" icon to the right of the name to show that the site is secure.
+The site now appears in the **Webmail Sites** listing. After the DNS change is propagated, it has a green "locked" icon to the right of the name, indicating that the site is secure.
 
 <img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/secure_completed.png %}"/>
