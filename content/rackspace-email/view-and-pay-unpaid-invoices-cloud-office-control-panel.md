@@ -1,6 +1,6 @@
 ---
 permalink: view-and-pay-unpaid-invoices-cloud-office-control-panel/
-audit_date: '2018-01-30'
+audit_date: '2018-03-06'
 title: View and pay unpaid invoices in the Cloud Office Control Panel
 type: article
 created_date: '2014-03-31'
@@ -11,9 +11,9 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-To view unpaid invoices for your Cloud Office account, [log in to the
-control panel](https://cp.rackspace.com/) and perform the following
-steps:
+This article describes how to view and pay unpaid invoices in the Cloud Office Control Panel.
+
+**Note:** These steps are for customers who are billed automatically. If you are emailed an invoice, follow the instructions in the email.
 
 ### Prerequisites
 
@@ -24,10 +24,13 @@ steps:
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-**Note:** These steps are for customers who are billed automatically.
-If you are emailed an invoice, follow the instructions in the email.
+### View unpaid invoices
 
-1. At the top of the page, click your account number and select **Billing & Payments**.
+To view unpaid invoices for your Cloud Office account, [log in to the
+control panel](https://cp.rackspace.com/) and perform the following
+steps:
+
+1. In the top navigation bar, click your account number and select **Billing & Payments**.
 
     <img src="{% asset_path rackspace-email/view-and-pay-unpaid-invoices-cloud-office-control-panel/admindropmenu.png %}" />
 
@@ -37,11 +40,10 @@ If you are emailed an invoice, follow the instructions in the email.
 
     <img src="{% asset_path rackspace-email/view-and-pay-unpaid-invoices-cloud-office-control-panel/invoices.png %}" />
 
-
 3. To view a detailed invoice, click the invoice number.
 4. To pay the invoice, click **Pay** in the **Action** column.
 
     <img src="{% asset_path rackspace-email/view-and-pay-unpaid-invoices-cloud-office-control-panel/pay_invoice.png %}" />
 
 5. If necessary, update the credit card information to process the payment.
-6. Make any necessary changes, and click **Pay Invoice** to pay your invoice.
+6. Make any necessary changes, and then click **Pay Invoice** to pay your invoice.
