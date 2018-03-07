@@ -5,8 +5,8 @@ title: Rackspace CDN secure delivery options
 type: article
 created_date: '2015-04-20'
 created_by: Megan Meza
-last_modified_date: '2016-09-21'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-03-07'
+last_modified_by: Justin Farar
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
@@ -44,6 +44,7 @@ Following is a list of approved CAs:
 -   Cybertrust Global Root
 -   DigiCert Assured ID Root CA
 -   DigiCert Global Root CA
+-   DigiCert Global Root G2
 -   DigiCert High Assurance EV Root CA
 -   DST Root CA X3
 -   Entrust.net Certification Authority (2048)
