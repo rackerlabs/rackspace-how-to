@@ -1,24 +1,23 @@
 ---
 permalink: updating-your-whois-information/
-audit_date:
+audit_date: '2018-03-07'
 title: Update your WHOIS information
 type: article
 created_date: '2011-10-31'
 created_by: William Loy
-last_modified_date: '2018-02-27'
-last_modified_by: William Loy
+last_modified_date: '2018-03-07'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-A domain's WHOIS record can include various types of information about each domain that you own. When a WHOIS search is performed, you can discover when and by whom a specific domain was registered, the domain contact information, and more. If Rackspace is your domain's registrar, you can manage your domain's WHOIS information through the
-control panel, as described in this article.
+A domain's WHOIS record includes various types of information about each domain that you own. When you perfoem a WHOIS search, you can discover when and by whom a specific domain was registered, the domain contact information, and more. If Rackspace is your domain's registrar, you can manage your domain's WHOIS information through the control panel, as described in this article.
 
 ### Prerequisites
 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
-- **Time needed:** Approximately 15 minutes to update WHOIS and confirm changes
+- **Time needed:** Approximately 15 minutes to update WHOIS and to confirm any changes
 - **Tools required:**  Access to Control Panel and WHOIS contact email address
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/).
@@ -31,7 +30,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email/updating-your-whois-information/edit_who_is.png %}" />  
 
-3. Find the domain for which you want to manage WHOIS information, and click the **Edit WHOIS** link.
+3. Find the domain for which you want to manage WHOIS information, and click **Edit WHOIS**.
 
    <img src="{% asset_path rackspace-email/updating-your-whois-information/domain_list.png %}" />  
 
@@ -39,10 +38,10 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email/updating-your-whois-information/contact_info.png %}" />  
 
-5. Log into the mailbox listed as the WHOIS contact email address. Within a few minutes there should be an email asking you to verify the changes you just made.  
+5. Log into the mailbox listed as the WHOIS contact email address to receive the email asking you to verify the changes you just made.  
 
-6. Copy the provide URL and paste it into your browser's search bar or click the provide link.
+6. To verify your changes, click the link provided in the email or copy the provided URL and paste it into your browser's search bar.
 
    **Warning:** If you do not complete the verification process within 15 days of making changes, your domain will be suspended. This will cause disruption to any services tied to your domain.
 
-7. When the WHOIS change verification is completed successfully you will be taken to a confirmation screen stating that  you have successfully verified your registration contact information.
+7. When the WHOIS change verification is completed successfully, a confirmation screen displays showing that  you have successfully verified your registration contact information.
