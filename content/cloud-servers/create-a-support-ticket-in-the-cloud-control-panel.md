@@ -12,7 +12,7 @@ product_url: cloud-servers
 ---
 
 Creating a support ticket in your [Cloud Control Panel](https://mycloud.rackspace.com/) is the best way to communicate
-with Rackspace Support Technicians.
+with Rackspace Support Technicians.  The advantage of using a ticket is that it allows you to copy & paste or attach cumbersome information such as traceroutes and error log entries directly into the ticket.
 
 ### Create a new support ticket
 
@@ -22,24 +22,17 @@ You can create a support ticket by:
 
 2. Click **TICKETS** > **Create Ticket**.
 
-When you create a new ticket, you can select a broad product category,
+When you create a new ticket, select a broad product category,
 such as Cloud Servers or Cloud Databases, and then a more
 specific category that narrows down the type of problem you are
-experiencing, such as General Support, or API. In
+experiencing, such as General Support or API. In
 the **Details** section, enter a subject and message describing your
 issue. You can also attach a file up to 20 MB to the ticket. After you
 have entered information into all the fields, click **Submit Ticket**.
 
-The best way to communicate with our Support Technicians and provide
-specific details about a problem that you are experiencing is by opening
-a ticket.  The advantage of using a ticket is that it allows you to copy
-& paste or attach cumbersome information such as traceroutes and error
-log entries directly into the ticket.
-
 ### View support tickets
 
-When you click on the **Support Tickets** or **Create or View a
-Ticket** link, you will see a list displaying your currently open
-tickets, and a tab with the option to view your closed tickets. Each
+To see previously opened or closed support tickets, click **TICKETS** > **Ticket Lists**. A list displays your currently open
+tickets and a tab with the option to view your closed tickets. Each
 ticket entry displays the name, the date it was last updated, the ticket
-status, and ticket ID number. To create a new ticket, click **Create Ticket**.
+status, and ticket ID number. To create a new ticket from the list view, click **Create Ticket**.
