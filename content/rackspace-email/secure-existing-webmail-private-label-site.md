@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Webmail private label sites created before September, 2017 were deployed to an environment that did not enforce the use of secure web protocols over HTTPS, such as SSL or TLS. To add this additional level of protection to your existing Webmail private label site, we recommend you secure it.
+Webmail private label sites created before September 2017 were deployed to an environment that did not enforce the use of secure web protocols over HTTPS, such as SSL or TLS. To add this additional level of protection to your existing Webmail private label site, we recommend you secure it.
 
 ### Prerequisites
 
