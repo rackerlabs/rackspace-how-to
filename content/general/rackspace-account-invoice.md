@@ -5,7 +5,7 @@ title: Rackspace account invoice
 type: article
 created_date: '2014-09-01'
 created_by: Kenny Johnston
-last_modified_date: 2018-03-06'
+last_modified_date: 2018-03-07'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
@@ -20,7 +20,7 @@ description of the pages in your PDF or CSV invoice.
 
 ### Account and billing information
 
-The first page of your invoice provides a detailed overview of your
+The first page of your PDF invoice provides a detailed overview of your
 account and billing information.
 
 ### Account summary
@@ -90,8 +90,7 @@ The fifth page of your invoice contains a **Tax Summary** section that explains 
 
 ### Goods and services tax
 
-The following pages apply only if you are assessed a Goods and Services
-Tax (GST). The pages show the aggregate product charges broken down into
+If you are assessed a Goods and Services Tax (GST), there will also be one or more pages showing the aggregate product charges broken down into
 taxable (T) and non-taxable charges for the given billing period.
 
 ### Invoice Details Document (CSV)
