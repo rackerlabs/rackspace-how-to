@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-A domain's WHOIS record includes various types of information about each domain that you own. When you perform a WHOIS search, you can discover when and by whom a specific domain was registered, the domain contact information, and more. If Rackspace is your domain's registrar, you can manage your domain's WHOIS information through the control panel, as described in this article.
+A domain's WHOIS record includes various types of information about each domain that you own. When you perform a WHOIS search, you can discover the following information: when and by whom a specific domain was registered, the domain contact information, and more. If Rackspace is your domain's registrar, you can manage your domain's WHOIS information through the control panel, as described in this article.
 
 ### Prerequisites
 
