@@ -1,23 +1,23 @@
 ---
 permalink: secure-existing-webmail-private-label-site/
-audit_date: '2018-02-23'
+audit_date: '2018-03-07'
 title: Secure existing Webmail private label site
 type: article
 created_date: '2018-02-23'
 created_by: Ben Smith
-last_modified_date: '2018-02-23'
-last_modified_by: William Loy
+last_modified_date: '2018-03-07'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Webmail private label sites created before September 2017 were deployed to an environment that did not enforce the use of secure web protocols over HTTPS, such as SSL or TLS. To add this additional level of protection to your existing Webmail private label site, we recommend you secure it.
+Webmail private label sites created before September, 2017 were deployed to an environment that did not enforce the use of secure web protocols over HTTPS, such as SSL or TLS. To add this additional level of protection to your existing Webmail private label site, we recommend you secure it.
 
 ### Prerequisites
 
 - **Applies to:** Administrators of reseller accounts
 - **Difficulty:** Easy
-- **Time needed:** Approximately 5 minutes to secure the site, 24 to 48 hours for the DNS changes to propagate
+- **Time needed:** Approximately 5 minutes to secure the site, and 24 to 48 hours for the DNS changes to propagate
 - **Tools required:**  DNS host administrator access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
@@ -32,9 +32,9 @@ To secure a Webmail private label site site, perform the following steps:
 
    <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/webmail_sites.png %}"/>
 
-3. On the **Webmail Sites** page, locate the site that you want to secure. It should have a red "unlocked" icon to the right of the name.
+3. On the **Webmail Sites** page, locate the site that you want to secure. It should have a red unlocked icon to the right of the name.
 
-    **Warning:** You cannot secure a control panel site using a site name that uses the root domains of mymailsrvr.com, mycpsrvr.com or a domain which is listed on Google Safe Browsing.
+    **Warning:** You cannot secure a Control Panel site with a site name that uses the following root domains:  mymailsrvr.com, mycpsrvr.com, or any domain which is listed on *Google Safe Browsing*.
 
 4. Click **Secure Site** from the **Actions** drop-down list.
 
@@ -72,6 +72,6 @@ To secure a Webmail private label site site, perform the following steps:
 
     **Note:** For specific instructions on editing your DNS records, contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-After the DNS change is propagated, the site displays as secured in the **Webmail Sites** listing and has a green "locked" icon to the right of the name.
+After the DNS change is propagated, the site displays as secured in the **Webmail Sites** listing and has a green locked icon to the right of the name.
 
 <img src="{% asset_path rackspace-email/secure-existing-webmail-private-label-site/secure_completed.png %}"/>
