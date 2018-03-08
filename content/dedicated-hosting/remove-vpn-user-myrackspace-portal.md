@@ -42,7 +42,7 @@ To remove the VPN user, use the following steps:
 
     c. Fill in the name of the VPN user you want to delete.
 
-       **Note:** You can obtain a list of currently configured client VPN users by [downloading your firewall's configuration] (https://community.rackspace.com/products/f/43/t/5892).
+   **Note:** You can obtain a list of currently configured client VPN users by [downloading your firewall's configuration] (https://community.rackspace.com/products/f/43/t/5892).
 
 5. Click **Create Ticket**.
 
