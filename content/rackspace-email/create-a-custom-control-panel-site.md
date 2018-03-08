@@ -28,7 +28,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 2. In the **Reseller Tools** section of the home page, click the **Custom Control Panel** link.
 
-   <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/customer_control_panel.png %}"/>
+   <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/custom_control_panel.png %}"/>
 
 3. On the **Custom Control Panel Site** page, click **Let's Get Started**.
 
