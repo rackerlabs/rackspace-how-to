@@ -13,12 +13,12 @@ product_url: dedicated-hosting
 
 Removing a client VPN user is now an automated task within the MyRackspace portal. You can use the **Delete contact** ticket template to do the following activities:
 
-- remove a user from the MyRackspace Portal account contacts list and phone support 
-- automatically delete the client VPN user from all of your Rackspace dedicated firewalls 
+- Remove a user from the MyRackspace Portal account contacts list and phone support.
+- Automatically delete the client VPN user from all of your Rackspace dedicated firewalls.
 
 This article describes how to remove a VPN user by using a ticket template.
 
-**Warning**: A VPN user who is removed by following these instructions is also deleted from all Windows, Linux, and Security devices as well as Network devices.
+**Warning**: A VPN user who is removed by following these instructions is also deleted from all Windows&reg;, Linux&reg;, and security devices as well as network devices.
 
 ### Remove VPN user
 
