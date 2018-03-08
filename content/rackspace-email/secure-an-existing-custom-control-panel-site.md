@@ -28,7 +28,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 2. In the **Reseller Tools** section of the home page, click the **Custom Control Panel** link.
 
-   <img src="{% asset_path rackspace-email/secure-an-existing-custom-control-panel-site/customer_control_panel.png %}"/>
+   <img src="{% asset_path rackspace-email/secure-an-existing-custom-control-panel-site/custom_control_panel.png %}"/>
 
 3. On the Custom Control panel page, locate the site that you want to secure. It should have a red “unlocked” icon to the right of the name.
 
