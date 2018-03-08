@@ -43,4 +43,4 @@ VPN user automation currently does not allow for the following modifications:
 - Group-lock
 - Framed IP addresses
 
-If you require any of the above modifications, open a ticket, and Rackspace Support will process your request manually.
+If you need changes included in the list of limitations, open a ticket so that Rackspace Support can process your request manually.
