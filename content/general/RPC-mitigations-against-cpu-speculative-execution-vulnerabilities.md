@@ -57,9 +57,8 @@ After receiving a  customer request, Rackspace will apply the errata to the Red
 Hat OSP-based Rackspace Private Cloud – Red Hat environments.
 
 **Note**: The ability to fully remediate these vulnerabilities is pending the
-availability of updated vendor firmware and microcode updates. Once the
-firmware and microcode updates are available, a second maintenance will be needed,
-which will result in hypervisor downtime.
+availability of updated vendor firmware and microcode updates. After the firmware and microcode 
+updates are available, a second maintenance that _will_ result in hypervisor downtime will be needed.
 
 Further remediation might be needed, because evaluation of these vulnerabilities
 continues. When additional information becomes available, we will provide updates.
