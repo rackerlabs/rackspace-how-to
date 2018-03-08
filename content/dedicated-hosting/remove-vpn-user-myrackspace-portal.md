@@ -5,7 +5,7 @@ title: Remove a VPN user in the MyRackspace Portal
 type: article
 created_date: '2017-10-16'
 created_by: Trevor Becker
-last_modified_date: '2018-03-06'
+last_modified_date: '2018-03-08'
 last_modified_by: Cat Lookabaugh
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -17,6 +17,8 @@ Removing a client VPN user is now an automated task within the MyRackspace porta
 - automatically delete the client VPN user from all of your Rackspace dedicated firewalls 
 
 This article describes how to remove a VPN user by using a ticket template.
+
+**Warning**: A VPN user who is removed by following these instructions is also deleted from all Windows, Linux, and Security devices as well as Network devices.
 
 ### Remove VPN user
 
