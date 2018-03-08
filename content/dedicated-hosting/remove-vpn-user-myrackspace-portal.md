@@ -63,4 +63,4 @@ the automation process:
    If errors occur, a ticket generates in the Network Security queue, which alert a Network
    Security Racker to complete the task manually.
 
-   **Note:** This process can take longer to complete if the ticket is sent to Network Security.
+   **Note:** If the ticket is sent to Network Security, this process might take longer to complete.
