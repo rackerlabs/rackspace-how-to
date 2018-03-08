@@ -75,4 +75,4 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 The site will now appear in the **Custom Control Panel** listing. Once the DNS change is propagated it will have a green "locked" icon to the right of the name to show that the site is secure.
 
-<img src="{% asset_path rackspace-email/create-a-private-label-webmail-site/secured.png %}"/>
+<img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/secured.png %}"/>
