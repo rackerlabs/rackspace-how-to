@@ -27,8 +27,8 @@ vulnerabilities:
 
 Additional Ubuntu security notices have been opened for QEMU/libvirt:
 
-- [USN-3561-1: libvirt update](https://usn.ubuntu.com/usn/usn-3561-1/)
 - [USN-3560-1: QEMU update](https://usn.ubuntu.com/usn/usn-3560-1/)
+- [USN-3561-1: libvirt update](https://usn.ubuntu.com/usn/usn-3561-1/)
 
 #### Mitigation
 
@@ -57,7 +57,7 @@ After receiving a  customer request, Rackspace will apply the errata to the Red
 Hat OSP-based Rackspace Private Cloud – Red Hat environments.
 
 **Note**: The ability to fully remediate these vulnerabilities is pending the
-availability of updated vendor firmware and microcode updates. After the firmware and microcode 
+availability of updated vendor firmware and microcode updates. After the firmware and microcode
 updates are available, a second maintenance that _will_ result in hypervisor downtime will be needed.
 
 Further remediation might be needed, because evaluation of these vulnerabilities
