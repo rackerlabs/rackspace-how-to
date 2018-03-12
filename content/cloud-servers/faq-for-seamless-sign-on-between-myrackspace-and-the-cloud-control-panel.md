@@ -11,32 +11,33 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This page provides quick answers to common questions about Seamless sign-on
-(SSO) between the MyRackspace Customer Portal and the Rackspace Cloud Control
-Panel.
+This article provides quick answers to common questions about seamless single
+sign-on (SSO) between the MyRackspace Customer Portal and the Rackspace Cloud
+Control Panel.
 
-#### What is seamless sign-on (SSO)?
+#### What is seamless SSO?
 
-SSO enables dedicated customers to manage their public cloud
+Seamless SSO enables dedicated customers to manage their public cloud
 environments through a single sign-on. After you log in
 to the MyRackspace Customer Portal, you can seamlessly move between your
 dedicated account and the cloud accounts that are linked to it.
 
-#### How do I use SSO?
+#### How do I use seamless SSO?
 
-SSO is integrated into Rackspace products to the greatest extent possible. When you navigate Cloud accounts in the MyRackspace portal, hyperlinks for
-products such as Cloud Servers, Cloud Networks, and Cloud DNSs take you
+Seamless SSO is integrated into Rackspace products to the greatest extent possible. When you navigate Cloud accounts in the MyRackspace portal, hyperlinks for
+products such as Cloud Servers, Cloud Networks, and Cloud DNS take you
 to the Cloud Control Panel, where you are logged in automatically.
 
 <img src="{% asset_path cloud-servers/faq-for-seamless-sign-on-between-myrackspace-and-the-cloud-control-panel/sso_howto_use.png %}" alt="MyRackspace screenshot - Access SSO from the cog next to the user name" />
 
-#### How do I disable SSO?
+#### How do I disable seamless SSO?
 
-If you do not want a user to have SSO access to a linked Cloud account, you may remove user permissions for that account. To manage user permissions
-in the MyRackspace portal, navigate to **Account > Permissions >
+If you do not want a user to have seamless SSO access to a linked Cloud
+account, you can remove user permissions for that account. To manage user
+permissions in the MyRackspace portal, navigate to **Account > Permissions >
 Assign by Product**.
 
-#### What permissions do I have when using SSO?
+#### What permissions do I have when using seamless SSO?
 
 Your permissions are based on your access level for the Cloud account that you are trying to access.
 
@@ -93,18 +94,18 @@ Your permissions are based on your access level for the Cloud account that you a
 </tbody>
 </table>
 
-#### How are user permissions set or changed for SSO?
+#### How are user permissions set or changed for seamless SSO?
 
-User permissions for SSO map directly to the user's Cloud
+User permissions for seamless SSO map directly to the user's Cloud
 account permission settings. The MyRackspace Customer Portal enables you to view permissions by user or by product.
 
-**View permissions by user:**
+**View permissions by user**
 
 The following image shows how to view permissions by user in MyRackspace:
 
 <img src="{% asset_path cloud-servers/faq-for-seamless-sign-on-between-myrackspace-and-the-cloud-control-panel/sso_permissions_by_user.png %}" alt="MyRackspace screenshot - Assign SSO permissions by user" />
 
-**View permissions by product:**
+**View permissions by product**
 
 The following image shows how to view permissions by product in MyRackspace:
 
@@ -126,13 +127,13 @@ separately in the respective interfaces.
 #### How do I add or modify metadata?
 
 With the introduction of this new functionality, one of the features
-that will no longer be available is the ability to edit Cloud Server
+that is no longer available is the ability to edit Cloud Server
 metadata through a user interface (such as MyRackspace). In lieu of this
-functionality, there are three options:
+functionality, the following options are available:
 
 1.  Use the Nova Client to issue these commands. The Nova Client allows you to
     provision and delete servers, work with metadata, and more. See the
-    [Python Nova Client command reference](/how-to/useful-python-novaclient-commands)
+    [python nova client command reference](/how-to/useful-python-novaclient-commands)
     for more information.
 2.  Use the Cloud Servers API to specify your server's metadata. The
     [Cloud Servers Developer Guide](http://bit.ly/2tKspm2) provides
@@ -140,16 +141,16 @@ functionality, there are three options:
 3.  Contact the Rackspace Support team by phone or ticket and ask them to make
     these changes on your behalf.
 
-#### What are the limitations of SSO?
+#### What are the limitations of seamless SSO?
 
-SSO has the following limitations:
+Seamless SSO has the following limitations:
 
 -   Tickets are not consolidated in one location. Cloud and dedicated
     support tickets are still handled in their respective interfaces.
 -   User management is not consolidated in one location. Cloud and
     MyRackspace users are still managed separately.
 -   The following items are not available when you log in to the
-    Cloud Control Panel from MyRackspace through SSO:
+    Cloud Control Panel from MyRackspace through seamless SSO:
     -   Billing
     -   Usage Overview
     -   Account Settings
