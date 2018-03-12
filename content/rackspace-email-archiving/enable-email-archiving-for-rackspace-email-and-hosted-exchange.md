@@ -16,20 +16,23 @@ outgoing email, including attachments. This data can be accessed for
 search and review by the administrator of the account and by
 administrator-designated users.
 
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 24 hours for the archive to provision after it was added
+- **Tools required:** Cloud Office Control Panel access
+
+For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
 To enable archiving, [log in to the Cloud Office Control
 Panel](https://cp.rackspace.com), and perform the following steps:
 
-1.  Click your account name in the upper-right corner, and select **Upgrades & Services**.
-2.  On the **Upgrades & Services** tab, click the name of your domain.
-4.  In the **Add-ons** section, click the **Email Archiving** menu and select
-    **On**.
-5.  Click **Continue**.
+1.  Scroll down to the **Domains** and select **Email Archiving** from the far right column.
+2.  Select the domain you would like to enable **Email Archiving** for.  
+4.  You will be presented with information on what **Email Archiving** is and what it provides as well as a per mailbox price to enable it. Once you have read this and would like to proceed with adding **Email Archiving** click the black button **Add Archiving to this domain**.
+
+5.  Once complete, a green banner will appear stating **Successfully enabled archiving for yourdomainexample.com** and the Status will state **Enabled** in green.
 6.  Click **Complete Order**.
 
-You will receive a welcome email from **mail@archivesrvr.com**. After
-you receive the welcome email, all new email will start being copied
-into the archive.
-
-Messages will be indexed nightly for search purposes. To manually index
-for immediate search access, click **Collect Now** in the **Collectors**
-section of the Archive Manager.
+You will receive a welcome email from **mail@archivesrvr.com**.
