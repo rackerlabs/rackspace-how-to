@@ -1,14 +1,14 @@
 ---
-permalink: enable-email-archiving-cloud-office-control-panel/
+permalink: enable-email-archiving-for-rackspace-email-and-hosted-exchange/
 audit_date:
-title: 'Enable email archiving: Cloud Office Control Panel'
+title: 'Enable email archiving for Rackspace Email and Hosted Exchange'
 type: article
-created_date: '2014-04-10'
-created_by: Mawutor Amesawu
-last_modified_date: '2016-01-18'
-last_modified_by: Kyle Laffoon
-product: Rackspace Email
-product_url: rackspace-email
+created_date: '2018-03-12'
+created_by: William Loy
+last_modified_date: '2018-03-12'
+last_modified_by: William Loy
+product: Rackspace Email Archiving
+product_url: rackspace-email-archiving
 ---
 
 Archiving collects and stores both external and internal incoming and
