@@ -5,7 +5,7 @@ title: FAQ for Seamless sign-on between MyRackspace and the Cloud Control Panel
 type: article
 created_date: '2014-10-15'
 created_by: David Hendler
-last_modified_date: '2018-03-08'
+last_modified_date: '2018-03-09'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -95,7 +95,7 @@ Your permissions are based on your access level for the Cloud account that you a
 
 #### How are user permissions set or changed for SSO?
 
-User permissions for SSO are directly mapped based on the user's Cloud
+User permissions for SSO map directly to the user's Cloud
 account permission settings. The MyRackspace Customer Portal enables you to view permissions by user or by product.
 
 **View permissions by user:**
