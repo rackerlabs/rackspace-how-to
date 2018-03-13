@@ -21,12 +21,12 @@ the [Cloud Control Panel](https://mycloud.rackspace.com/) by using the following
 
 **Note:** Before completing the service transfer form, read the "Best practices for legal change forms" section of [Change account information](/how-to/change-account-information).
 
-1.  In the upper-right corner of the Cloud Control Panel, click **Account** > **Docs and Forms**.
-2.  Select the **Rackspace Account Change Forms** section.
-3.  In the **Transfer Ownership to a new Account owner** section, select one of the following options:
+1. In the upper-right corner of the Cloud Control Panel, click **Account** > **Docs and Forms**.
+2. Select the **Rackspace Account Change Forms** section.
+3. In the **Transfer Ownership to a new Account owner** section, select one of the following options:
 
-  - If you are a Fanatical Support for AWS customer, download the **Fanatical Support for AWS Service Transfer Form**.
-  - All other customers, download the **Service Transfer Form**.
+   - If you are a Fanatical Support for AWS customer, download the **Fanatical Support for AWS Service Transfer Form**.
+   - All other customers, download the **Service Transfer Form**.
 
 4. Fill out the downloaded form and save the edited file on your local machine.
 5. In the Cloud Control Panel, select **Tickets** > **Create Ticket**.
