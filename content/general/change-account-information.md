@@ -19,12 +19,12 @@ This article describes the various administrative account changes that you can r
 
 The Billing team has strict requirements for processing the Service Transfer form for a Rackspace account. Use the following information to have the submission processed quickly and efficiently.
 
-#### Page 1 - Account details
+**Page 1 - Account details**
 
 -   **Transferring Customer / Assignor** - Provide the current account information.
 -   **Accepting Customer / Assignee** - Provide the new account information.
 
-#### Page 2 - Signatures
+**Page 2 - Signatures**
 
 -   Signatures *must* be from the owner or an officer of the company. No
     exceptions are allowed.
@@ -39,7 +39,7 @@ The Billing team has strict requirements for processing the Service Transfer for
 Do not fill out the **RACKSPACE US, INC.** section. A Rackspace
 representative completes this section.
 
-#### Page 3 - Consolidated and/or Linked Cloud Accounts (Exhibit A)
+**Page 3 - Consolidated and/or Linked Cloud Accounts (Exhibit A)**
 
 In the **Cloud Account Number** and the **New Cloud Account Name** columns, provide the following information:
   -   **Cloud Account Number** - Enter the account number.
