@@ -1,12 +1,12 @@
 ---
-permalink: add-and-edit-archive-users-in-cloud-office/
+permalink: add-and-edit-archive-users/
 audit_date:
-title: Add and edit archive users in Cloud Office
+title: Add and edit archive users
 type: article
 created_date: '2015-05-18'
 created_by: Beau Bailey
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-03-13'
+last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -80,7 +80,7 @@ Use the following steps to add individual users to the Archive Manager.
 
 6. Under **Permissions,** select the user type for the new user.
 
-   <img src="{% asset_path rackspace-email-archiving/add-and-edit-archive-users-in-cloud-office/4683.1.png %}" width="644" height="192" />
+   <img src="{% asset_path rackspace-email-archiving/add-and-edit-archive-users/4683.1.png %}" width="644" height="192" />
 
 7. Enter additional contact information.
 
