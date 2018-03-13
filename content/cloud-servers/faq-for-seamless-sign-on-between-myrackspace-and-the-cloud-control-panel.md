@@ -1,6 +1,6 @@
 ---
 permalink: faq-for-seamless-sign-on-between-myrackspace-and-the-cloud-control-panel/
-audit_date:
+audit_date: '2018-03-10'
 title: FAQ for Seamless sign-on between MyRackspace and the Cloud Control Panel
 type: article
 created_date: '2014-10-15'
