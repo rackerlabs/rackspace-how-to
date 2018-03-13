@@ -1,11 +1,11 @@
 ---
 permalink: installing-mysql-server-on-centos/
-audit_date: '2016-06-27'
+audit_date: '2018-03-13'
 title: Install a MySQL server on CentOS
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2016-06-29'
+last_modified_date: '2018-03-13'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -38,15 +38,14 @@ Follow the steps in this section to install the core database server.
 
 #### Install MySQL
 
-1. Install the MySQL database through the CentOS package manager (yum) by
-   running the following commands at a command prompt:
+1. Install the MySQL database through the CentOS package manager (yum) by running the following commands at a command prompt:
 
-        sudo yum install mysql-server
-        sudo /sbin/service mysqld start
+       sudo yum install mysql-server
+       sudo /sbin/service mysqld start
 
 2. Run the following command:
 
-        sudo /usr/bin/mysql_secure_installation
+       sudo /usr/bin/mysql_secure_installation
 
 3. Press **Enter** to give no password for root when prompted for it.
 
@@ -131,7 +130,7 @@ shell and enter it as the root user:
 
 2. When you're prompted for a password, enter the one that you set at
 installation or, if you haven't set one, press **Enter** to submit no
-password. 
+password.
 
   The following `mysql` shell prompt should appear:
 
@@ -302,7 +301,7 @@ the following command:
         SHOW GRANTS FOR 'demouser'@'localhost';
 
    MySQL returns the commands needed to reproduce that user's privileges
-   if you were to rebuild the server. The `USAGE on \*.\*` part 
+   if you were to rebuild the server. The `USAGE on \*.\*` part
    means that the user gets no privileges on anything by default. That
    command is overridden by the second command, which is the grant you ran
    for the new database.
