@@ -11,8 +11,15 @@ product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-**Note:** The information contained in this article is for Cloud Office
-account administrators only.
+
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 10 minutes
+- **Tools required:** Cloud Office Control Panel access
+
+For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 When you have completed the steps in [Logging in to the Archive
 Manager](/how-to/log-in-to-the-archive-manager),
