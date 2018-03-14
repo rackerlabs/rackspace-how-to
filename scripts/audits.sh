@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Purpose: Identify all *md files in H2 repo where the audit date is after date begin date passed in with script call 
+# Purpose: Identify all *md files in H2 repo where the audit date is after date begin date passed in with script call
 # and before end date passed in with script call
-# 
-# 
+#
+#
 #
 # Example call: audits.sh 2016-01-29 2016-04-05
 #
@@ -16,7 +16,7 @@
 # 3) Use for loop to go through all *md files in each content sub dir
 #    and list all file names and directories where:
 #    a) create_date is between begin and end dates (from the script arguments)
-#    
+#
 
 # assign date arguments to variables
 begdate=$1
@@ -36,17 +36,17 @@ do
 
 # find audit_date in file meta data
    adate=`grep audit_date $f`
-   
+
 # separate actual dates from rest of the grepped line
    aadate=`echo $adate | awk -F\' '{print $2}'`
 
 # if create date is between the begin and end dates passed in - proceed
-      if [[ "$aadate" > "$begdate" ]] && [[ "$aadate" < "$enddate" ]] ; 
+      if [[ "$aadate" > "$begdate" ]] && [[ "$aadate" < "$enddate" ]] ;
       then
-      
+
 # print out all files with audit dates between specified date range
          echo "Audit date: " $aadate " " $f;
          count=$((count+1));
       fi
 done
-echo $count " new files added between " $begdate " and " $enddate
+echo $count " files with audit dates between " $begdate " and " $enddate
