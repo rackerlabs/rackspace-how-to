@@ -1,15 +1,25 @@
 ---
-permalink: set-access-rules-for-archive-end-users/
+permalink: set-access-rules-for-archive-users/
 audit_date:
-title: Set access rules for archive end users
+title: Set access rules for archive users
 type: article
 created_date: '2015-07-27'
 created_by: Beau Bailey
-last_modified_date: '2015-11-19'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-03-13'
+last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
+
+
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 10 minutes
+- **Tools required:** Cloud Office Control Panel access
+
+For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 Use this procedure to limit who can access the email archive by
 verifying registered addresses.
@@ -27,7 +37,7 @@ verifying registered addresses.
 
 3.  Select the tab, **End User Access Rules.**
 
-    <img src="{% asset_path rackspace-email-archiving/set-access-rules-for-archive-end-users/Screen%20Shot%202015-08-27%20at%2011.34.43%20AM.png %}" width="551" height="207" />
+    <img src="{% asset_path rackspace-email-archiving/set-access-rules-for-archive-users/Screen%20Shot%202015-08-27%20at%2011.34.43%20AM.png %}" width="551" height="207" />
 
 4.  Specify which domains are allowed to access the archive and which
     domains are denied access:
@@ -52,4 +62,4 @@ verifying registered addresses.
         these domains, for example, type **\*@hotmail.com**, and add
         **\*@yahoo.com** to the next row.
 
-5\.  Click **Update**.
+5.  Click **Update**.
