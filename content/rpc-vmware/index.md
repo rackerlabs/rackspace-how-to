@@ -38,19 +38,6 @@ Certified Professionals. For more information, see the following resources:
 | Capacity planning | Rackspace assistance provided | VMware vROps Included |
 | Automation tools | No | - vApp Deployment Automation (optional vCloud Director)<br/>- vRealize Automation (optional)<br/>- Chef&reg; / Ansible&reg; / Puppet plug-in Ecosystem |
 
-###  Legacy products
-
-For legacy products, see the resources listed in this section.
-
-#### Dedicated vCloud
-
-- [vCloud Customer Handbook v1.5](https://developer.rackspace.com/docs/managed-vmware-services/vcloud/v1.5/)
-- [vCloud Customer Handbook v1.0](https://developer.rackspace.com/docs/managed-vmware-services/vcloud/v1/)
-
-#### Dedicated VMware vCenter Server
-
-- [Dedicated vCenter Server Customer Handbook](https://developer.rackspace.com/docs/managed-vmware-services/vcenter/)
-
 ### More information
 
 For more information, see the following forum:
