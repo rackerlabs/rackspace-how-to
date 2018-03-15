@@ -5,7 +5,7 @@
 #
 #
 #
-# Example call: audits.sh 2016-01-29 2016-04-05
+# Example call: audits.sh 2016-01-01 2017-04-05
 #
 # NOTE: Script assumes you are executing from within the scripts directory of
 #       your local H2 git repo.
@@ -33,20 +33,25 @@ FILES=`find .  -type f -name '*md' -print`
 
 for f in $FILES
 do
+   # filter out index.md and all.md files
+   if [[ "$f" == */all.md ]] || [[ "$f" == *index.md ]] || [[ "$f" == */retired-articles/* ]] ;
+   then
+      # skip file
+      continue
+   else
+      # find audit_date in file meta data
+      adate=`grep audit_date $f`
 
-# find audit_date in file meta data
-   adate=`grep audit_date $f`
+      # separate actual dates from rest of the grepped line
+      aadate=`echo $adate | awk -F\' '{print $2}'`
 
-# separate actual dates from rest of the grepped line
-   aadate=`echo $adate | awk -F\' '{print $2}'`
-
-# if create date is between the begin and end dates passed in - proceed
+      # if create date is between the begin and end dates passed in - proceed
       if [[ "$aadate" > "$begdate" ]] && [[ "$aadate" < "$enddate" ]] ;
       then
-
-# print out all files with audit dates between specified date range
+         # print out all files with audit dates between specified date range
          echo "Audit date: " $aadate " " $f;
          count=$((count+1));
       fi
+   fi
 done
 echo $count " files with audit dates between " $begdate " and " $enddate
