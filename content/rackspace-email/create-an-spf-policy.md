@@ -5,7 +5,7 @@ title: Create an SPF policy
 type: article
 created_date: '2017-09-25'
 created_by: William Loy
-last_modified_date: '2017-10-23'
+last_modified_date: '2018-03-15'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -24,9 +24,9 @@ You also need access to update DNS entries for your domain. If you do not know w
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-An SPF policy alone is not enough to protext the integrity of your domain's email. In order to create a secure email verification policy, we recommend the following: 
+An SPF policy alone is not enough to protect the integrity of your domain's email. In order to create a secure email verification policy, we recommend the following:
 
-1. Create an SPF record policy. 
+1. Create an SPF record policy.
 2. [Create a DKIM record](/how-to/enable-dkim-in-the-cloud-office-control-panel).
 3. [Create a DMARC record policy](/how-to/create-a-dmarc-policy).
 
@@ -45,7 +45,7 @@ An SPF policy alone is not enough to protext the integrity of your domain's emai
     - `~all` will result in a soft fail (Not authorized, but not explicitly unauthorized).
     - `-all` will result in a hard fail (Unauthorized).
     - `?all` is neutral (As if there is no policy at all).
-    
+
    Enter your choice after **v=spf1 include:emailsrvr.com**, and then save your changes.
 
 4. Authorize additional mail servers by adding their IP or server name after **include:**.
