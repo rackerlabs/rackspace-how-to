@@ -5,10 +5,8 @@ title: Access Contents of a First Generation Cloud Server Image
 type: article
 created_date: '2016-11-24'
 created_by: Luke Repko
-last_modified_date: '2018-02-27'
+last_modified_date: '2018-03-15'
 last_modified_by: Cat Lookabaugh
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 Because first generation images cannot be used for next generation servers, this article guides you through the process of downloading the **tar.gz** parts of an image, and then concatenating and extracting those parts. This process is useful when you need to access the data in an image and file-level backups don't exist. This process doesn't guarantee the successful recovery of data, but it can help you to access the data contained within an image.
