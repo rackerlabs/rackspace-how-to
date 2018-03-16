@@ -48,17 +48,17 @@ command-line client for Cloud Orchestration, we recommend that you
 use the open source Heat Python client developed by the OpenStack
 community. The Python Heat Client is compatible with Rackspace's Cloud
 Orchestration Service. You can find instructions for obtaining and installing
-the command-line client can be found in the Cloud Orchestration [Getting Started Guide](https://developer.rackspace.com/docs/cloud-orchestration/v1/developer-guide/#document-getting-started).
+the command-line client can be found in the Cloud Orchestration [Getting Started Guide](https://developer.rackspace.com/docs/cloud-orchestration/v1/#document-getting-started).
 
 The Heat Python client provides command-line access to Cloud Orchestration
 API operations. We recommend that you use this client to run simple
-commands that make API calls. You can specify a ``--debug`` parameter on any
+commands that make API calls. You can specify a `--debug` parameter on any
 command to show the underlying API request for the command. Using this parameter is a good way to become familiar with the API requests.
 
 #### Can I access the Cloud Orchestration service through the Cloud Control Panel?
 
 Yes. Log in to the [Cloud Control Panel](http://mycloud.rackspace.com)
-and click on the **Orchestration** tab.
+and click the **Orchestration** tab.
 
 #### Is Cloud Orchestration a Platform as a Service (PaaS)?
 
@@ -295,8 +295,7 @@ Yes. There are two main differences:
 
     Rackspace-specific resources are clearly marked in our documentation
     and begin with the word **Rackspace**. For a full list of supported
-    resource types, please see [list resources
-    types](https://developer.rackspace.com/docs/cloud-orchestration/v1/api-reference/stack-resources/#list-resources).
+    resource types, please see [List resources](https://developer.rackspace.com/docs/cloud-orchestration/v1/api-reference/stack-resources/#list-resources).
 
     **Note**: The **OS:Heat:ChefSolo** resource in this list is a
     Rackspace-contributed resource that is incorrectly labeled as Heat.
@@ -372,8 +371,7 @@ resources, including references to any installation scripts or software
 configuration management artifacts needed to install appropriate
 applications. Templates are written using the HOT (Heat Orchestration
 Template) syntax (currently written in YAML). Documentation on how to
-write templates can be found under the Orchestration topic at
-<https://developer.rackspace.com/docs/>.
+write templates can be found under the Orchestration topic at the [Developer Docs](https://developer.rackspace.com/docs/ landing page.
 
 #### How are Cloud Orchestration templates different from Chef or Puppet?
 
@@ -398,7 +396,7 @@ organization on GitHub.
 The Cloud Orchestration service enables you to deploy your own custom
 templates or leverage pre-built and pre-tested templates.
 
-To use your own template, log in to the Cloud Control Panel and click on
+To use your own template, log in to the Cloud Control Panel and click
 **Orchestration > Custom Template**.
 
 To save time and effort and take advantage of industry best practices, go to
