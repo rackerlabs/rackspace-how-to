@@ -1,12 +1,12 @@
 ---
 permalink: firewall-manager-v2-port-groups/
-audit_date:
+audit_date: '2018-03-16'
 title: Firewall Manager v2 port-groups
 type: article
 created_date: '2017-03-22'
 created_by: Trevor Becker
-last_modified_date: '2017-03-24'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-03-16'
+last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -21,13 +21,13 @@ A port-group is a form of an object-group. Object-groups are used to group like 
 
 A port-group is a single configuration item that logically groups ports together. The benefit to using a port-group is that you can reference a port-group in access-list entries that have object-groups as well. This is better than the alternative of having to create individual access-list entries for each component of the port-group.
 
-A powerful example of an efficient use of port-groups is a single access-list entry that references an object-group of 100 source IPs, an object-group of 10 destination IPs, and a port-group of 5 TCP ports. Using the object-group and port-group strategy, your firewall's running configuration requires only one access-list entry. If you did not use object-groups and port-groups, you would need **5,000 access-list entries** in the running configuration, individually specifying each unique source IP, destination IP, and TCP port combinations.
+A powerful example of an efficient use of port-groups is a single access-list entry that references an object-group of 100 source IPs, an object-group of 10 destination IPs, and a port-group of five TCP ports. Using the object-group and port-group strategy, your firewall's running configuration requires only one access-list entry. If you did not use object-groups and port-groups, you would need **5,000 access-list entries** in the running configuration, individually specifying each unique source IP, destination IP, and TCP port combinations.
 
 **Note:** The Firewall Manager v2 allows you to create port-groups using only TCP or UDP ports.
 
 ### Why should I use a port-group?
 
-Port-groups improve the organization and readability of a firewall's running configuration. A running configuration that is easy to read and modify reduces the chances for a misconfiguration and increases the ability to troubleshoot issues quickly.
+Port-groups improve the organization and readability of a firewall's running configuration. A running configuration that is easy to read and modify reduces the chances of a misconfiguration and increases the ability to troubleshoot issues quickly.
 
 ### Port-groups in the Firewall Manager v2
 
@@ -51,6 +51,8 @@ In Firewall Manager v2, you can now view, modify, and delete any port-group on y
 
 ### Create a port-group
 
+To create a port-group, use the following steps:
+
 1. Navigate to the **Port Groups** tab.
 
 2. Under the **Port Groups** label, click **Add Group**. The **Add Group** page is displayed.
@@ -67,9 +69,9 @@ In Firewall Manager v2, you can now view, modify, and delete any port-group on y
 
 5. Click **Add Port(s)** to add the ports to the port-group.
 
-    In the text field, type a single port number, or enter a list of port numbers, with each unique item on their own line.
+    In the text field, type a single port number, or enter a list of port numbers with each unique item on its own line.
 
-    **Warning:** You also have the ability to add a port range by separating two values with a dash (-). This feature  adds *all port numbers between* the two values that you specified around the dash. Misconfiguration here can result in a compromise due to inappropriate ports being opened.
+    **Warning:** You also have the ability to add a port range by separating two values with a dash (-). This feature adds *all port numbers between* the two values that you specified around the dash. Misconfiguration here can result in a compromise due to inappropriate ports being opened.
 
 6. Click **Add Port**.  
 
@@ -89,7 +91,7 @@ It is highly important that you understand the impact of modifying an existing p
 
 3. Click **Edit Group**.
 
-4. To add a port entry, click **Add Port(s)** and add TCP or UDP ports to the port-group. For instructions, see the "Create a port-group" section.
+4. To add a port entry, click **Add Port(s)** and add TCP or UDP ports to the port-group. For instructions, see the "Create a port-group" section of this page.
 
 5. To remove a port entry, click on the minus symbol (-) to the right of the port-group entry.
 
