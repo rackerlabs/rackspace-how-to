@@ -13,6 +13,9 @@ product_url: cloud-orchestration
 
 ### Introduction
 
+Cloud Orchestration users can implement Swift signal resources that will help
+determine the status of user data scripts. For example, implementing the following Swift signal resources will add functionality that indicates whether a user data script completed, and if so, whether it has succeeded or failed.
+
 The `OS::Heat::SwiftSignal` resource can be used to coordinate resource creation with signals coming from sources that are external or internal to the stack. This resource is often used in conjunction with the
 `OS::Heat::SwiftSignalHandle` resource.
 
