@@ -76,7 +76,8 @@ options, your invocation will be similar to the following example:
         --output=${LOCALFILENAME}
       ${CONTAINER}/${IMAGEFILENAME}
 
-The following code block shows the verbose response for the preceding call. (This image is a little over 2 GB.)
+The following code block shows the verbose response for the preceding call.
+(This image is a little over 2 GB.)
 
     VERBOSE 0.00 1 Attempting auth v2 RAX-KSKEY:apiKeyCredentials with https://identity.api.rackspacecloud.com/v2.0
     VERBOSE 0.00 1 Establishing HTTPS connection to identity.api.rackspacecloud.com
@@ -114,7 +115,8 @@ Cloud Files:
       head
       ${CONTAINER}/${IMAGEFILENAME}
 
-Your response will look something like the following one. The file size is the value in the **Content-Length** header.
+Your response will look something like the following one. The file size is the
+value in the **Content-Length** header.
 
     Content-Length:    2584576512
     Content-Type:      application/octet-stream
@@ -269,7 +271,10 @@ In this example, the following segments were downloaded:
     -rw-rw-r-- 1 joeuser joeuser  362443328 Feb 28 21:35 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00002
     -rw-rw-r-- 1 joeuser joeuser  487424512 Feb 28 21:36 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00003
 
-Do you see a problem? Recall from [How Exported Images are Stored as Dynamic Large Objects](/how-to/cloud-images-faq) that each segment should be the same size except for the final segment, which can be smaller. Therefore, segment-00002 should be the same size as segment-00001, and it is not. This information indicates that segment-00002 is corrupted.
+Do you see a problem? Recall from [How Exported Images are Stored as Dynamic Large Objects](/how-to/cloud-images-faq) that each segment should be the same
+size except for the final segment, which can be smaller. Therefore,
+segment-00002 should be the same size as segment-00001, and it is not. This
+information indicates that segment-00002 is corrupted.
 
 How do you know that the final segment is the correct size? Recall that
 earlier you invoked Swiftly with the **--full** option to get the full
@@ -339,7 +344,7 @@ segments.
 
 ### Reconstitute the VHD file
 
-After all the segments have been downloaded correctly, you can create a
+After all of the segments have been downloaded correctly, you can create a
 single VHD file, as follows:
 
     # still in the "my-images" directory
@@ -354,7 +359,7 @@ single VHD file, as follows:
     -rw-rw-r-- 1 joeuser joeuser  487424512 Feb 28 21:36 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00003
 
 Earlier in the article,
-you used swiftly to perform a HEAD request on the Dynamic Large Object
+you used Swiftly to perform a HEAD request on the Dynamic Large Object
 in Cloud Files. There you determined that the **Content-Length** for a
 request of the Dynamic Large Object would be 2584576512 bytes. That is
 the size of the reconstituted VHD file.
@@ -364,9 +369,9 @@ have nothing to compare it to. Because a Dynamic Large Object isn't a
 "real" object in Cloud Files (but is a series of segment objects whose
 content is streamed out in a particular order), Cloud Files doesn't
 store an MD5 checksum for the object. Further, you don't need the
-checksum because the VHD file is made up of three segments, each one of
-has the correct content, and they've been put together in the correct
-order. So the VHD file must be identical to the file that was exported
+checksum because the VHD file is made up of three segments, each segment has
+the correct content, and the segments have been put together in the correct
+order. Therefore, the VHD file must be identical to the file that was exported
 from Cloud Images into Cloud Files.
 
 #### Clean up
@@ -382,17 +387,17 @@ Look at your local file system again:
 
 Unlike in Cloud Files, where the segments contain data and the DLO is
 just a manifest telling Cloud Files what the content of the DLO is,
-these are all *real files*. You can see this by asking the operating
-system to tell you how much space these files are taking up:
+these are all *real files*. You can see that this is the case by asking the
+operating system to tell you how much space these files are taking up:
 
     $ du -chs my-images
     4.9G    my-images
     4.9G    total
 
 You can see that twice as much space as the size of the VHD file is
-being used. So locally, now that you've used the segments to
+being used. Therefore locally, now that you've used the segments to
 reconstitute the VHD file, you no longer need the segments. You can
-delete them without affecting your VHD, as follows:
+delete them without affecting your VHD in the following way:
 
     $ rm my-images/9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-0000*
 
@@ -406,14 +411,14 @@ delete them without affecting your VHD, as follows:
 
 The 2.5 GB VHD file remains.
 
-**Note**: Remember that in Cloud Files, Dynamic Large Objects have a
-different relationship with their segments . If you delete segments in
+**Warning**: Remember that in Cloud Files, Dynamic Large Objects have a
+different relationship with their segments. If you delete segments in
 Cloud Files, you'll corrupt your Dynamic Large Object (and hence, your
 VHD file).
 
 ### Conclusion
 
-This article discussed two ways for you to use Swiftly to download from
-Cloud Files an image that you've exported from Cloud Images. If you'd
+This article discussed two ways that you can use Swiftly to download from
+Cloud Files an image that you've exported from Cloud Images. If you would
 like to use Swiftly to upload a VHD to Cloud Files so that you can
 import it into the Rackspace open cloud, see [Using Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image).
