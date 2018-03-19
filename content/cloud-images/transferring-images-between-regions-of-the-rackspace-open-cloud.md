@@ -157,11 +157,11 @@ At this point, you need to download the image from your Cloud Files
 account in the source region to a neutral location, and then upload the image from the neutral location to your Cloud Files account in the target region. (For the neutral location, you could use your laptop or you could use a cloud server.) How you accomplish this is up to you. Here are some suggestions:
 
 -   Use the
-    [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient).
--   Use [turbolift](https://github.com/cloudnull/turbolift).
--   Use [swiftly](https://github.com/gholt/swiftly):
-    -   [Using Swiftly to download an exported image](/how-to/use-swiftly-to-download-an-exported-image)
-    -   [Using Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image)
+    [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient)
+-   Use [turbolift](https://github.com/cloudnull/turbolift)
+-   Use [Swiftly](https://github.com/gholt/swiftly):
+    -   [Use Swiftly to download an exported image](/how-to/use-swiftly-to-download-an-exported-image)
+    -   [Use Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image)
 
 We don't recommend using the Cloud Control Panel for this operation.
 The large size of most images means that you would likely have a poor user
@@ -259,5 +259,5 @@ can import it for use with Cloud Servers.
 
 The following pages present related information:
 
--   [Rackspace Cloud Images Developer Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/)
+-   [Rackspace Cloud Images Developer Guide](https://developer.rackspace.com/docs/cloud-images/v2/)
 -   [Cloud Images FAQ](/how-to/cloud-images-faq)
