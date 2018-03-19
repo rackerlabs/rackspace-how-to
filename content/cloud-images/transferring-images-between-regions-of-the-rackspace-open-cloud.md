@@ -177,7 +177,7 @@ After you upload the image copy to Cloud Files in the target region, you
 can import it for use with Cloud Servers.
 
 1.  Create an `import` task in the target region by using the Cloud Images
-    AAA. Use the following code as an example:
+    API. Use the following code as an example:
 
         OS_AUTH_TOKEN="<your auth token>"
         OS_IMAGE_URL="<cloud images baseurl in target region>"
