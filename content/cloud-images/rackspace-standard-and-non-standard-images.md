@@ -29,7 +29,7 @@ Any images that are not standard for your account's service level and RackConnec
 
 ### Support for non-standard images
 
-Any non-standard images are subject to Rackspace's Managed Infrastructure policies. Please see [Explanation of Rackspace service levels](http://www.rackspace.com/cloud/service-levels/) for an explanation of Rackspace service levels.
+Any non-standard images are subject to Rackspace's Managed Infrastructure policies. Please see the [explanation of Rackspace service levels](http://www.rackspace.com/cloud/service-levels/) for details about Rackspace service levels.
 
 ### Pricing
 
@@ -37,4 +37,4 @@ Although there is no separate fee for using Cloud Images, you will incur indirec
 
 ### How can I determine whether an image is standard or non-standard?
 
-For information that will help you determine whether an image is standard or non-standard, please see [Identifying Rackspace Standard Images](/how-to/identifying-rackspace-standard-images).
+For information that will help you determine whether an image is standard or non-standard, please see [Identifying Rackspace standard images](/how-to/identifying-rackspace-standard-images).
