@@ -42,4 +42,4 @@ have their `visibility` value set to `public`.
 ### Support implications
 
 For information on the support implications of the differences between
-standard and non-standard images, see [Rackspace Standard and Non-Standard Images](/how-to/rackspace-standard-and-non-standard-images).
+standard and non-standard images, see [Rackspace standard and non-standard images](/how-to/rackspace-standard-and-non-standard-images).
