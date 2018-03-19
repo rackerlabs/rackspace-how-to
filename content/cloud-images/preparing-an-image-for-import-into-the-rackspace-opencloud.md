@@ -18,6 +18,8 @@ and instructions.
 
 ### General requirements
 
+The general requirements are as follows:
+
 -   The image must be a single file in the VHD file format.
 
     **Note**: A Cloud Files object, whether a Dynamic Large Object or a
@@ -49,8 +51,8 @@ installation of XenServer.
 Instructions for preparing an image on Linux are available in the following
 articles:
 
--   [Creating a CentOS 6.5 Image for the Rackspace open cloud](/how-to/creating-a-centos-65-image-for-the-rackspace-open-cloud)
--   [Creating an Ubuntu 13.10 Image for the Rackspace open cloud](/how-to/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud)
+-   [Create a CentOS 6.5 Image for the Rackspace open cloud](/how-to/creating-a-centos-65-image-for-the-rackspace-open-cloud)
+-   [Create an Ubuntu 13.10 Image for the Rackspace open cloud](/how-to/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud)
 
 ### Prepare an image online in another cloud
 
