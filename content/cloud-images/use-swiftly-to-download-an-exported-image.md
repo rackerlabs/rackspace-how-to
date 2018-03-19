@@ -421,4 +421,4 @@ VHD file).
 This article discussed two ways that you can use Swiftly to download from
 Cloud Files an image that you've exported from Cloud Images. If you would
 like to use Swiftly to upload a VHD to Cloud Files so that you can
-import it into the Rackspace open cloud, see [Using Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image).
+import it into the Rackspace open cloud, see [Use Swiftly to upload an image](/how-to/use-swiftly-to-upload-an-image).
