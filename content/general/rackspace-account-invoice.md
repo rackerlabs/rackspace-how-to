@@ -5,7 +5,7 @@ title: Rackspace account invoice
 type: article
 created_date: '2014-09-01'
 created_by: Kenny Johnston
-last_modified_date: 2018-03-20'
+last_modified_date: '2018-03-20'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
