@@ -1,11 +1,11 @@
 ---
 permalink: firewall-manager-v2-access-list-theory-and-best-practices/
-audit_date: '2018-03-16'
+audit_date: '2018-03-20'
 title: Firewall Manager v2 access-list theory and best practices
 type: article
 created_date: '2017-03-23'
 created_by: Trevor Becker
-last_modified_date: '2018-03-16'
+last_modified_date: '2018-03-20'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -39,7 +39,7 @@ The security of your Rackspace environment begins at your Cisco firewall. Miscon
 
    - Do not allow all traffic to a destination or group of destinations. (Do not use **permit ip any [host]**, or **permit ip any [object-group]**).
 
-   - Globally open only those ports that are included in generally accepted best practices. (Ensure that you define the source of *any* over a port.) Examples of ports that **should not be opened globally** are **22 - SSH**, **1433 - Microsoft SQL**, **3306 - MySQL**, and **3389 - RDP**.
+   - Only globally open ports (defining source of any) that are considered a generally accepted best practice. Examples of these ports that **should not be opened globally** are **22 - SSH**, **1433 - Microsoft SQL**, **3306 - MySQL**, and **3389 - RDP**.
 
 ### Rule order and execution
 
