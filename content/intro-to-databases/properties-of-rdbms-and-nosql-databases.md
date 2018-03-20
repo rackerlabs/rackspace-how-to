@@ -1,43 +1,46 @@
 ---
 permalink: article-title/
-audit_date:
-title: '"	Properties of RDBMS and NoSQL databases'
+audit_date: '2018-03-20'
+title: 'Properties of RDBMS and NoSQL databases'
 type: article
 created_date: '2018-02-27'
 created_by: Kate Dougherty
-last_modified_date: '2018-02-27'
+last_modified_date: '2018-03-20'
 last_modified_by: Kate Dougherty
 product: Database Services
 product_url: https://www.rackspace.com/dba-services
 ---
 
-Provide a descriptive title for the article in the metadata above. Conceptual articles have a wide range of appropriate titles. If the article's purpose is to impart general information, a title such as "About regions" is appropriate. If the topic of the article could potentially result in action from the customer, a title such as "Using the Rackspace network effectively" is better.
+This page presents the characteristics of RDBMS and NoSQL databases.
 
-Begin the article by describing the concept that you want your audience to better understand. The primary audience for How-To content is Rackspace customers and Support staff, who might have varying levels of technical expertise.
+### Properties of relational databases
 
-Write your article in Markdown. For more information about writing in Markdown, see the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+Relational databases are efficient, which makes them a common choice for storing financial records, logistical information, personnel data, and other information in new databases. Relational databases frequently replace legacy hierarchical databases and network databases because they are easier to understand and use than NoSQL databases.
 
-### Concept (repeat as necessary)
+Relational databases have the following properties:
 
-Provide a heading for this section that best describes the part of the overall concept that you are explaining. For example, in an article about server regions, the first section could be **What is a region?**, followed by **Region availability**, and then **Benefits of using regions**.
+- Values are atomic
+- All of the values in a column have the same data type
+- Each row is unique
+- The sequence of columns is insignificant
+- The sequence of rows is insignificant
+- Each column has a unique name
+- Integrity constraints maintain consistent data across multiple tables
 
-The first section should be considered key to understanding the concept presented in the article. Use additional concept sections to explain different aspects of the main concept.
+#### Properties of NoSQL databases
 
-For guidance on when to use diagrams and screenshots, see the [Screenshot and diagram guidelines](http://rackerlabs.github.io/docs-rackspace/style-guide/screenshot-diagram-guidelines.html).
+NoSQL is a schema-less alternative to SQL and RDBMS designed to store, process, and analyze extremely large amounts of unstructured data.
 
-#### Conceptual subtopic (repeat as necessary)
+In NoSQL databases, the basic principle of ACID (atomicity, consistency, isolation, and durability) is reduced. In addition, the process of normalization is not mandatory in NoSQL. Due to size and speed of modern data, NoSQL databases prefer de-normalized databases.
 
-Any subtopics related to a concept should use the next level heading. Follow the preceding guidelines for subtopics.
+- NoSQL databases have the following properties:
+- Higher scalability
+- Distributed computing
+- Lower cost
+- Flexible schema
+- Able to process unstructured and semi-structured data
+- No complex relationships, such as the ones between tables in RDMSs
 
-For example, in the conceptual article [Understanding logrotate utility](/how-to/understanding-logrotate-utility), the section on Configuration commands has several conceptual subtopics that give more detail about the varying commands used in logrotate configuration files.
+### Next step
 
-### Next steps (optional)
-
-Include any links to articles that your audience should read next.
-
-### Related articles (optional)
-
-Include any links to related content. Use a bulleted list if you have more than one link. For example:
-
-- [Create an image from a server and restore a server from a saved image](/how-to/create-an-image-from-a-server-and-restore-a-server-from-a-saved-image)
-- [About Cloud Server images](/how-to/about-cloud-server-images)
+[Reasons to use a SQL database](/how-to/reasons-to-use-a-sql-database)
