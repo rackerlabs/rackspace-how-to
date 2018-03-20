@@ -5,39 +5,43 @@ title: 'Types of databases'
 type: article
 created_date: '2018-02-27'
 created_by: Kate Dougherty
-last_modified_date: '2018-02-27'
+last_modified_date: '2018-03-20'
 last_modified_by: Kate Dougherty
 product: Database Services
 product_url: https://www.rackspace.com/dba-services
 ---
 
-Provide a descriptive title for the article in the metadata above. Conceptual articles have a wide range of appropriate titles. If the article's purpose is to impart general information, a title such as "About regions" is appropriate. If the topic of the article could potentially result in action from the customer, a title such as "Using the Rackspace network effectively" is better.
+There are two main types of databases: SQL and NoSQL. They are traditionally known as relational and non-relational databases, respectively. They differ in how they are built, the types of information they store, and how they store that information.
 
-Begin the article by describing the concept that you want your audience to better understand. The primary audience for How-To content is Rackspace customers and Support staff, who might have varying levels of technical expertise.
+### Relational databases
 
-Write your article in Markdown. For more information about writing in Markdown, see the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+A database, as a collection of information, can be organized so that a Database Management System can access and pull specific information. A Relational Database Management System (RDBMS) is a Database Management System (DBMS) based on the Relational model invented by Edgar F. Codd, of IBM's San Jose Research Laboratory fame.
 
-### Concept (repeat as necessary)
+A relational database is a database that enables related data to be stored across multiple tables and linked by establishing a relationship between the tables. All RDBMSs must satisfy the ACID properties. This requirement provides an efficient way to store data because you can enter data once, then reference it from elsewhere in the database.
 
-Provide a heading for this section that best describes the part of the overall concept that you are explaining. For example, in an article about server regions, the first section could be **What is a region?**, followed by **Region availability**, and then **Benefits of using regions**.
+Relational databases have the following characteristics:
 
-The first section should be considered key to understanding the concept presented in the article. Use additional concept sections to explain different aspects of the main concept.
+- Values are atomic.
+- Column values are of the same kind.
+- No redundancy in data, each Row is Unique.
+- The sequence of columns is insignificant.
+- The sequence of rows is insignificant.
+- Each column has a Unique Name.
+- Consistency of data across multiple tables by using integrity constraints
+- The relationship between data sets are classified as follows:
+  - One-to-One: One table record relates to one record in another table.
+  - One-to-Many: One table record relates to many records in another table.
+  - Many-to-One: More than one table record relates to one table record in another table.
+  - Many-to-Many: More than one table record relates to more than one record in another table.
 
-For guidance on when to use diagrams and screenshots, see the [Screenshot and diagram guidelines](http://rackerlabs.github.io/docs-rackspace/style-guide/screenshot-diagram-guidelines.html).
+#### NoSQL databases
 
-#### Conceptual subtopic (repeat as necessary)
+The term NoSQL refers to databases that do not follow traditional RDBMS principles. NoSQL is an open source database technology designed to handle big data. It was developed by Amazon, Google, LinkedIn, Twitter, and similar companies as they looked for ways to handle unprecedented data volumes and operation volumes under tight latency constraints.
 
-Any subtopics related to a concept should use the next level heading. Follow the preceding guidelines for subtopics.
+NoSQL databases are designed to overcome the limitations of transactional databases. NoSQL databases handle both structured data and unstructured data. Unstructured data can include sensor data, information on social sharing, personal settings, photos, location-based information, online activity, usage metrics, and more.
 
-For example, in the conceptual article [Understanding logrotate utility](/how-to/understanding-logrotate-utility), the section on Configuration commands has several conceptual subtopics that give more detail about the varying commands used in logrotate configuration files.
+NoSQL can process unstructured big data very quickly. Analyzing high-volume, real-time data such as website clickstreams can provide significant business advantages.
 
-### Next steps (optional)
+### Next step
 
-Include any links to articles that your audience should read next.
-
-### Related articles (optional)
-
-Include any links to related content. Use a bulleted list if you have more than one link. For example:
-
-- [Create an image from a server and restore a server from a saved image](/how-to/create-an-image-from-a-server-and-restore-a-server-from-a-saved-image)
-- [About Cloud Server images](/how-to/about-cloud-server-images)
+[Properties of RDBMS & NoSQL databases](how-to/properties-of-rdbms-&-nosql-databases)
