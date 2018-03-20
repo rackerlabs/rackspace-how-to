@@ -66,7 +66,7 @@ warrant additional description:
   classes, such as OnMetal.
 - **Cloud Bandwidth**: This field includes both Public and CDN Bandwidth.
 
-### Other Services
+### Other services
 
 The third page of your invoice includes other charges accrued during the
 billing period.
@@ -104,12 +104,9 @@ explains the taxes that are applied to your bill in detail.
 If you are assessed a Goods and Services Tax (GST), you will also see the
 aggregate product charges. These charges are broken down into taxable (T) and non-taxable charges for the billing period.
 
-### Invoice Details Document (CSV)
+### Invoice details document (CSV)
 
-Invoices in CSV format provide detailed information on daily usage that
-occurred during the billing cycle. Each row contains a daily usage item and an
-associated charge. Each row also enables you to view summaries of charges
-across the entire billing cycle in the following three views:
+Invoice detail documents in CSV format provide detailed information on daily usage that occurred during the billing cycle. Each row contains a daily usage item and an associated charge. Each row also enables you to view summaries of charges across the entire billing cycle in the following three views:
 
 - **Resource**: To view a summary for a specific resource, create a PivotTable
   on the **RES_ID** column.
@@ -134,7 +131,7 @@ Invoices in CSV format have the following columns:
 - **EVENT_TYPE**: The sub-type for each service or product.
 - **EVENT_START_DATE**: The start date and time of the usage or activity.
 - **EVENT_END_DATE**: The end date and time of the usage or activity.
-- **IMPACT_TYPE**: Signifies whether the event is a **CHARGE**, **DISCOUNT**,
+- **IMPACT_TYPE**: Indicates if the event is a **CHARGE**, **DISCOUNT**,
   **Local Sales Tax**, or **State Tax**.
 - **QUANTITY**: The total quantity of the event measurement.
 - **UOM**: The unit of measure for the quantity and event measurement.
@@ -149,6 +146,6 @@ Invoices in CSV format have the following columns:
 - **RES_ID**: A unique resource ID.
 - **RES_NAME**: The customer-provided resource name.
 - **ATTRIBUTE 1**: An attribute of the resource. For Cloud Servers, this
-  value is the Flavor Name.
+  value is the **Flavor Name**.
 - **ATTRIBUTE 2**: An attribute of the resource. For Cloud Servers, this
-  values is the Option Name.
+  value is the **Option Name**.
