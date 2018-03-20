@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-account-invoice/
-audit_date: '2018-03-20'
+audit_date: '2018-03-19'
 title: Rackspace account invoice
 type: article
 created_date: '2014-09-01'
