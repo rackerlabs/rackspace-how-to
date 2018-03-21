@@ -16,9 +16,9 @@ product_url: undefined
 Use the following steps to update your billing information, including billing address and the credit card on file:
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-2. Select **Billing** in the Cloud Control Panel.
-   - To update your billing address, select **Billing Settings**.
-   - To update the credit card on file, select **Payment Methods** > **Manage Payment Methods**.
+2. Click **Billing** in the Cloud Control Panel.
+   - To update your billing address, click **Billing Settings** and make your changes in the fields where they are needed.
+   - To update the credit card on file, click **Payment Methods** > **Manage Payment Methods** and make your changes in the field where they are needed.
 
 To learn more about changing your cloud account's information, see
-[Change Account Information](/how-to/change-account-information).
+[Change account information](/how-to/change-account-information).
