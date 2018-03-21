@@ -38,10 +38,10 @@ Relational databases have the following characteristics:
 
 The term NoSQL refers to databases that do not follow traditional RDBMS principles. NoSQL is an open source database technology designed to handle big data. It was developed by Amazon, Google, LinkedIn, Twitter, and similar companies as they looked for ways to handle unprecedented data volumes and operation volumes under tight latency constraints.
 
-NoSQL databases are designed to overcome the limitations of transactional databases. NoSQL databases handle both structured data and unstructured data. Unstructured data can include sensor data, information on social sharing, personal settings, photos, location-based information, online activity, usage metrics, and more.
+NoSQL databases are designed to overcome the limitations of transactional databases. NoSQL databases handle structured data, semi-structured data, and unstructured data. Unstructured data can include sensor data, information on social sharing, personal settings, photos, location-based information, online activity, usage metrics, and more. NoSQL databases store semi-structured and unstructured data as documents in JSON or XML format. For this reason, NoSQL databases are also referred to as _document-oriented databases_.
 
 NoSQL can process unstructured big data very quickly. Analyzing high-volume, real-time data such as website clickstreams can provide significant business advantages.
 
 ### Next step
 
-[Properties of RDBMS & NoSQL databases](how-to/properties-of-rdbms-&-nosql-databases)
+[Properties of RDBMS & NoSQL databases](how-to/properties-of-rdbms-&-nosql-databases/)

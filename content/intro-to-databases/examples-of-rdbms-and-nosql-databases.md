@@ -1,43 +1,46 @@
 ---
-permalink: article-title/
-audit_date:
-title: 'Article title'
+permalink: examples-of-rdbms-and-nosql-databases/
+audit_date: '2018-03-21'
+title: 'Examples of RDBMS and NoSQL databases'
 type: article
-created_date: 'yyyy-mm-dd'
-created_by: First Last
-last_modified_date: 'yyyy-mm-dd'
-last_modified_by: First Last
-product: Cloud Product
-product_url: cloud-product
+created_date: '2018-03-21'
+created_by: Kate Dougherty
+last_modified_date: '2018-03-21'
+last_modified_by: Kate Dougherty
+product: Database Services
+product_url: https://www.rackspace.com/dba-services
 ---
 
-Provide a descriptive title for the article in the metadata above. Conceptual articles have a wide range of appropriate titles. If the article's purpose is to impart general information, a title such as "About regions" is appropriate. If the topic of the article could potentially result in action from the customer, a title such as "Using the Rackspace network effectively" is better.
+This page presents several common relational databases and NoSQL databases.
 
-Begin the article by describing the concept that you want your audience to better understand. The primary audience for How-To content is Rackspace customers and Support staff, who might have varying levels of technical expertise.
+### Popular relational databases and RDBMSs
 
-Write your article in Markdown. For more information about writing in Markdown, see the [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+The following list describes popular SQL databases and RDBMSs:
 
-### Concept (repeat as necessary)
+- **Oracle**: An object-relational DBMS written in the C++ language.
+- **IBM DB2**: A family of database server products from IBM.
+- **Sybase**: A relational database server product for businesses that is
+  primarily used on the Unix operating system (OS).
+- **MS SQL Server**: An RDBMS for enterprise-level databases that supports both
+  SQL and NoSQL architectures. MS SQL Server was developed by Microsoft.
+- **Maria DB**: An enhanced, drop-in version of MySQL.
+- **PostgreSQL**: An enterprise-level, object-relational DBMS that uses
+  procedural languages such as Perl and Python in addition to SQL-level code.
 
-Provide a heading for this section that best describes the part of the overall concept that you are explaining. For example, in an article about server regions, the first section could be **What is a region?**, followed by **Region availability**, and then **Benefits of using regions**.
+#### Popular NoSQL databases
 
-The first section should be considered key to understanding the concept presented in the article. Use additional concept sections to explain different aspects of the main concept.
+The following list describes popular NoSQL databases:
 
-For guidance on when to use diagrams and screenshots, see the [Screenshot and diagram guidelines](http://rackerlabs.github.io/docs-rackspace/style-guide/screenshot-diagram-guidelines.html).
+- **MongoDB**: The most popular open-source NoSQL system. MongoDB is a
+document-oriented database that stores JSON-like documents in dynamic schemas. Craigslist, eBay, and Foursquare use MongoDB.
+- **CouchDB**: An open source, web-oriented database developed by Apache. CouchDB uses the JSON data exchange format to store its documents; JavaScript for indexing, combining, and transforming documents; and HTTP for its API.
+- **HBase**: An open source Apache project that was developed as a part of Hadoop. HBase is a column store database written in Java. It has capabilities similar to those that BigTable provides.
+- **Oracle NoSQL Database**: Oracle’s NoSQL database.
+- **Cassandra DB**: A distributed database that excels at handling extremely large amounts of structured data. Cassandra DB is also highly scalable. Cassandra DB was created at Facebook. It is used by Instagram, Comcast, Apple and Spotify.
+- **Riak**: An open source, key-value store database written in Erlang. Riak offers excellent performance, due to built-in fault-tolerance replication and automatic data distribution.
+**InfoGrid**: An open source web graph database with additional software components that make it easy to develop RESTful web applications on a graph foundation. It is being developed in Java as a set of projects.
+**Infinite Graph**: A highly specialized graph database that focuses on graph data structures. InfiniteGraph is useful for finding hidden relationships in big data. It is implemented in Java.
 
-#### Conceptual subtopic (repeat as necessary)
+### Next step
 
-Any subtopics related to a concept should use the next level heading. Follow the preceding guidelines for subtopics.
-
-For example, in the conceptual article [Understanding logrotate utility](/how-to/understanding-logrotate-utility), the section on Configuration commands has several conceptual subtopics that give more detail about the varying commands used in logrotate configuration files.
-
-### Next steps (optional)
-
-Include any links to articles that your audience should read next.
-
-### Related articles (optional)
-
-Include any links to related content. Use a bulleted list if you have more than one link. For example:
-
-- [Create an image from a server and restore a server from a saved image](/how-to/create-an-image-from-a-server-and-restore-a-server-from-a-saved-image)
-- [About Cloud Server images](/how-to/about-cloud-server-images)
+[Introduction to MongoDB](/how-to/introduction-to-mongodb)

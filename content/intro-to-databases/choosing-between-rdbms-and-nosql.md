@@ -1,11 +1,11 @@
 ---
-permalink: introduction/
-audit_date:
+permalink: choosing-between-rdbms-and-nosql/
+audit_date: '2018-03-21'
 title: 'Introduction'
 type: article
 created_date: '2018-02-27'
 created_by: Kate Dougherty
-last_modified_date: '2018-02-27'
+last_modified_date: '2018-03-21'
 last_modified_by: Kate Dougherty
 product: Database Services
 product_url: https://www.rackspace.com/dba-services
@@ -26,4 +26,4 @@ Rackspace Application Services supports mosts currently available databases. Lea
 Include any links to related content. Use a bulleted list if you have more than one link. For example:
 
 - [Create an image from a server and restore a server from a saved image](/how-to/create-an-image-from-a-server-and-restore-a-server-from-a-saved-image)
-- [About Cloud Server images](/how-to/about-cloud-server-images)
+- [About Cloud Server images](/how-to/about-cloud-server-images/)

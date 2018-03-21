@@ -19,4 +19,4 @@ Rackspace Application Services supports most currently available databases. Lear
 
 ### Next step (optional)
 
-[Types of databases](/how-to/types-of-databases)
+[Types of databases](/how-to/types-of-databases/)

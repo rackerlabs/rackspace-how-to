@@ -1,5 +1,5 @@
 ---
-permalink: article-title/
+permalink: properties-of-rdbms-and-nosql-databases/
 audit_date: '2018-03-20'
 title: 'Properties of RDBMS and NoSQL databases'
 type: article
@@ -31,9 +31,10 @@ Relational databases have the following properties:
 
 NoSQL is a schema-less alternative to SQL and RDBMS designed to store, process, and analyze extremely large amounts of unstructured data.
 
-In NoSQL databases, the basic principle of ACID (atomicity, consistency, isolation, and durability) is reduced. In addition, the process of normalization is not mandatory in NoSQL. Due to size and speed of modern data, NoSQL databases prefer de-normalized databases.
+In NoSQL databases, the basic principle of ACID (atomicity, consistency, isolation, and durability) is reduced. In addition, the process of normalization is not mandatory in NoSQL. Due to size and speed of modern data, it is preferable for NoSQL databases to be de-normalized.
 
-- NoSQL databases have the following properties:
+NoSQL databases have the following properties:
+
 - Higher scalability
 - Distributed computing
 - Lower cost
@@ -41,6 +42,15 @@ In NoSQL databases, the basic principle of ACID (atomicity, consistency, isolati
 - Able to process unstructured and semi-structured data
 - No complex relationships, such as the ones between tables in RDMSs
 
+The following table shows the types of non-relational databases and the features associated with them.
+
+| Type                 | Performance | Scalability      | Flexibility | Complexity |
+| -------------------- | ----------- | ---------------- | ----------- | ---------- |
+| Key value store      | High        | High             |   High      |  High       |
+| Column-based store   | High        | High             | Moderate    | Low        |
+| Document-based store | High        | Variable to high | High        |     Low        |
+| Graph-based          | Variable    | Variable         | High        |    High       |
+
 ### Next step
 
-[Reasons to use a SQL database](/how-to/reasons-to-use-a-sql-database)
+[Reasons to use a SQL database](/how-to/reasons-to-use-a-sql-database/)
