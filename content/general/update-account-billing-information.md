@@ -5,7 +5,7 @@ title: Update an account's billing information
 type: article
 created_date: '2018-03-13'
 created_by: Rackspace Support
-last_modified_date: '2018-03-20'
+last_modified_date: '2018-03-21'
 last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
