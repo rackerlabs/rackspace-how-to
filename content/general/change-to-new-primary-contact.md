@@ -23,12 +23,12 @@ You can download this form directly from the Cloud Control Panel by using the fo
 **Note:** Before completing the form to change a primary contact, read the "Best practices for legal change forms" section of [Change account information](/how-to/change-account-information).
 
 1. In the upper-right corner of the Cloud Control Panel, click **Account** > **Docs and Forms**.
-2. Select the **Rackspace Account Change Forms** section.
-3. In the **Change Primary Contact**, download the **Primary Contact Change Form**.
+2. Click the **Rackspace Account Change Forms** section.
+3. From the **Change Primary Contact** section, download the **Primary Contact Change Form**.
 4. Fill out the downloaded form and save the edited file on your local machine.
 5. In the Cloud Control Panel, select **Tickets** > **Create Ticket**.
-6. In the category section, set **Type** to **Account** and **Account Update**.
-7. Fill out the details for your ticket, and attach your saved account change form to your ticket.
+6. In the **Category** section, set **Type** to **Account** and **Account Update**.
+7. Fill out the details for your ticket and attach your saved account change form to your ticket.
 
 To learn more about changing your cloud account's information, see
-[Change Account Information](/how-to/change-account-information).
+[Change account information](/how-to/change-account-information).
