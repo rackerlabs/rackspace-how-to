@@ -90,7 +90,7 @@ One troubleshooting method for a failing node is to log on to a good node in the
   
 To use the following helpful commands, install cURL, and execute the commands from a terminal window.
   
-       - Test the load balancer:  ``curl - <load balancer public IP address>``
+       - Test the load balancer:  ``curl -I <load balancer public IP address>``
        
        - Test the nodes:  ``curl -I <node service net IP address>``
        
