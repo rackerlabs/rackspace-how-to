@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 With the release of CentOS 7, MariaDB replaced MySQL as the default  database system. MariaDB was created by the original developers of MySQL, and is an enhanced, drop-in replacement for MySQL with library binary equivalency and exact matching with MySQL APIs and commands.
 
-This article describes a basic installation of a MariaDB database server on CentOS Linux. You might need to install other packages to let applications use MariaDB, like extensions for PHP. Check your application documentation for details.
+This article describes a basic installation of a MariaDB database server on CentOS Linux. You might need to install other packages to let applications use MariaDB, such as extensions for PHP. Check your application documentation for details.
 
 ### Install the database server
 
@@ -34,7 +34,7 @@ Run the following command to allow remote access:
 ### Set the root password
 
 Because you have just installed the MariaDB database server, the root
-account has no password set yet. Use the following command to set the root password and other important settings:
+account has no password set. Use the following command to set the root password and other important settings:
 
     /usr/bin/mysql_secure_installation
 
@@ -53,7 +53,7 @@ Use the following command to stop MariaDB:
 ### Launch at reboot
 
 To ensure that the database server launches after a reboot, you must
-enable the `chkconfig` utility. Use the following commands to do this:
+enable the `chkconfig` utility. Use the following command to do this:
 
     sudo systemctl enable mariadb.service
 
@@ -67,7 +67,7 @@ focuses on the most basic and compatible approach: the `mariadb` shell.
         /usr/bin/mysql -u root -p
 
 2. When you're prompted for a password, enter the one that you set at
-installation or, if you haven't set one, press **Enter** to submit no
+installation, or if you haven't set one, press **Enter** to submit no
 password.
 
    The following shell prompt should appear:
@@ -76,7 +76,7 @@ password.
 
 ### View users
 
-MariaDB and MySQL store user information in their own databases. The name of the database is **mysql**. Inside that database, the user information is in a table, a dataset, named **user**. If you want to see what users are set up in the MySQL user table, run the following command:
+MariaDB and MySQL store user information in their own databases. The name of the database is **mysql**. Inside that database, the user information is in a table, a dataset that is named **user**. If you want to see what users are set up in the MySQL user table, run the following command:
 
     SELECT User, Host, Password FROM mysql.user;
 
@@ -89,30 +89,30 @@ The following list describes the parts of that command:
 
 #### User hosts
 
-Following is example output for the preceding query:
+The following example is the output for the preceding query:
 
     SELECT User, Host, Password FROM mysql.user;
-    +------------------+-----------+------------------------------------------+
-    | User             | Host      | Password                                 |
-    +------------------+-----------+------------------------------------------+
+    +------------------+-----------+-------------------------------------------+
+    | User             | Host      | Password                                  |
+    +------------------+-----------+-------------------------------------------+
     | root             | localhost | *756FEC25AC0E1823C9838EE1A9A6730A20ACDA21 |
-    | root             | 127.0.0.1  | *756FEC25AC0E1823C9838EE1A9A6730A20ACDA21 |
-    | root             | ::1 | *756FEC25AC0E1823C9838EE1A9A6730A20ACDA21 |
-    +------------------+-----------+------------------------------------------+
+    | root             | 127.0.0.1 | *756FEC25AC0E1823C9838EE1A9A6730A20ACDA21 |
+    | root             | ::1       | *756FEC25AC0E1823C9838EE1A9A6730A20ACDA21 |
+    +------------------+-----------+-------------------------------------------+
 
 Users are associated with a host, specifically the host to which they
 connect. The root user in this example is defined for **localhost**, for the IP address of **localhost**, and the hostname of the server. You usually need to set a user for only the host from which you typically connect.
 
-If you're running your application on the same computer as the MySQL server, the host that it connects to by default is **localhost**. Any new users that you create must have **localhost** in their **host** field.
+If you're running your application on the same computer as the MariaDB server, the host that it connects to by default is **localhost**. Any new users that you create must have **localhost** in their **host** field.
 
-If your application connects remotely, the **host** entry that MySQL looks for is the IP address or DNS hostname of the remote computer (the one from which the client is coming).
+If your application connects remotely, the **host** entry that MariaDB looks for is the IP address or DNS hostname of the remote computer (the one from which the client is coming).
 
 ### Create a database
 
 There is a difference between a *database server* and a *database*,
 even though those terms are often used interchangeably. MariaDB is a
 database server, meaning that it tracks databases and controls
-access to them. The database stores the data, and it is the database that applications are trying to access when they interact with MySQL.
+access to them. The database stores the data, and it is the database that applications are trying to access when they interact with MariaDB.
 
 Some applications create a database as part of their setup process, but others require you to create a database and tell the application about it.
 
@@ -135,7 +135,7 @@ The database is created. You can verify its creation by running a query to list 
 
 ### Manage users and privileges
 
-Use the instructions in this section to add users for the database and grant and revoke privileges.
+Use the instructions in this section to add users for the database and to grant and revoke privileges.
 
 #### Add users and privileges
 
@@ -177,7 +177,7 @@ the following command:
 
        SHOW GRANTS FOR 'demouser'@'localhost';
 
-   MariaDB returns the commands needed to reproduce that user's privileges if you were to rebuild the server. The `USAGE on \*.\*` part means that the user gets no privileges on anything by default. That command is overridden by the second command, which is the grant you ran for the new database.
+   MariaDB returns the commands needed to reproduce that user's privileges if you were to rebuild the server. `USAGE on \*.\*` means that the user gets no privileges on anything by default. That command is overridden by the second command, which is the grant that you ran for the new database.
 
         +-----------------------------------------------------------------------------------------------------------------+
         | Grants for demouser@localhost                                                                                   |
@@ -189,7 +189,7 @@ the following command:
 
 #### Revoke privileges
 
-Sometimes you might need to revoke (remove) privileges from a user. For example: suppose that you were granting `ALL` privileges to 'demouser'@'localhost', but you accidentally granted privileges to all other databases, too:
+Sometimes you might need to revoke (remove) privileges from a user. For example, suppose that you were granting `ALL` privileges to 'demouser'@'localhost', but you accidentally granted privileges to all other databases, too, as shown in the following commands:
 
     +-----------------------------------------------------------------------------------------------------------------+
     | Grants for demouser@localhost                                                                                   |
@@ -213,14 +213,10 @@ To correct the mistake, you can use a `REVOKE` statement, followed by `GRANT` st
     +-----------------------------------------------------------------------------------------------------------------+
     2 rows in set (0.00 sec)
 
-Now your user has the correct privileges, and therefore your database server is slightly more secure (granting privileges like `ALL on *.*` is deemed as a very bad practice). You should also read official MariaDB documentation regarding possible privilege choices, to grant only those privileges truly needed, rather than using `ALL`.
+Now your user has the correct privileges, and your database server is slightly more secure (granting privileges like `ALL on *.*` is deemed as a very bad practice). You should also read official MariaDB documentation regarding possible privilege choices, to grant only those privileges truly needed, rather than using `ALL`.
 
 ### Summary
 
 If you're just creating a database and a user, you are done. The
-concepts covered here should give you a solid grounding from which to
+concepts covered in this article should give you a solid start from which to
 learn more.
-
-### Next section
-
-[Configure MySQL server on CentOS](/how-to/configuring-mysql-server-on-centos)
