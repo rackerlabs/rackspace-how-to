@@ -48,7 +48,7 @@ The following table provides a few examples of how CQL and SQL statements differ
 
 | Cassandra (CQL)                                                                                 | Oracle Database (SQL)                                                 |
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| `INSERT INTO users (first_name, last_name, display_name)<br />VALUES (‘Lebron’,‘James’,‘KingJames’);` | `INSERT INTO users (user_id, age, status)<br />VALUES ('bcd001', 45, 'A');` |
+| `INSERT INTO users (first_name, last_name, display_name) <br />VALUES (‘Lebron’,‘James’,‘KingJames’);` | `INSERT INTO users (user_id, age, status) <br />VALUES ('bcd001', 45, 'A');` |
 
 ### Next steps (optional)
 
