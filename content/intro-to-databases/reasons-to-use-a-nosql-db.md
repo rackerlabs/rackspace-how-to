@@ -4,7 +4,7 @@ audit_date: '2018-03-20'
 title: 'Reasons to use a NoSQL database'
 type: article
 created_date: '2018-03-20'
-created_by: First Last
+created_by: Satyakam Mishra
 last_modified_date: '2018-03-20'
 last_modified_by: Kate Dougherty
 product: Database Services

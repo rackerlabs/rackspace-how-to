@@ -4,7 +4,7 @@ audit_date:
 title: 'Article title'
 type: article
 created_date: 'yyyy-mm-dd'
-created_by: First Last
+created_by: Satyakam Mishra
 last_modified_date: 'yyyy-mm-dd'
 last_modified_by: First Last
 product: Cloud Product

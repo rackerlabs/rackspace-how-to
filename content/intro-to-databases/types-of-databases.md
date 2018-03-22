@@ -1,10 +1,10 @@
 ---
 permalink: types-of-databases/
-audit_date:
+audit_date: '2018-03-20'
 title: 'Types of databases'
 type: article
 created_date: '2018-02-27'
-created_by: Kate Dougherty
+created_by: Satyakam Mishra
 last_modified_date: '2018-03-20'
 last_modified_by: Kate Dougherty
 product: Database Services

@@ -4,7 +4,7 @@ audit_date: '2018-03-21'
 title: 'Examples of RDBMS and NoSQL databases'
 type: article
 created_date: '2018-03-21'
-created_by: Kate Dougherty
+created_by: Satyakam Mishra
 last_modified_date: '2018-03-21'
 last_modified_by: Kate Dougherty
 product: Database Services
