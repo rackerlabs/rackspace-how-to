@@ -6,7 +6,7 @@ type: article
 created_date: '2014-11-14'
 created_by: Joanna Salazar
 last_modified_date: '2015-01-23'
-last_modified_by: Kyle Laffoon
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -16,12 +16,25 @@ to up-to-date contact information for all users in the directory. Users
 can access the company directory information through Webmail, via the
 Contacts tab.
 
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 5 minutes to create a mailbox and approximately 15 additional minutes for the mailbox to become accessible
+- **Tools required:** Cloud Office Control Panel access
+
+For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
+
 To view a company directory list, log in to the [Cloud Office Control Panel](https://cp.rackspace.com) and perform
 the following steps:
 
-1.  From the **Go to section** menu, select **Rackspace Email**.
+1.  Click **Rackspace Email**.
 
-2.  In the **Collaboration** section, click **Company Directory**.
+    <img src="{% asset_path rackspace-email/managing-company-directories/rackspace_email.png %}" />
+
+2.  Click the **Webmail** tab in the ribbon at the top of the screen.
+
+    <img src="{% asset_path rackspace-email/managing-company-directories/webmail.png %}" />
 
 From here, you can add, edit, or delete an alias. See the following instructions below specific to the action you would like to take.
 
@@ -30,6 +43,8 @@ From here, you can add, edit, or delete an alias. See the following instructions
 1.  While viewing the **Company Directory** list, click on the name of
     the directory you want to edit. If you are creating a new directory, click
     **Add Directory**.
+
+   <img src="{% asset_path rackspace-email/managing-company-directories/add_directory.png %}" />
 
 2.  Enter or change the following information as needed.
 
@@ -55,7 +70,11 @@ From here, you can add, edit, or delete an alias. See the following instructions
         click on **Edit Contact Info**. Enter additional information as
         needed in the new window, and then click **Ok**.
 
+  <img src="{% asset_path rackspace-email/managing-company-directories/add_domain.png %}" />
+
 3.  Click **Save**.
+
+  <img src="{% asset_path rackspace-email/managing-company-directories/directory_added.png %}" />
 
 ### Delete a company directory
 
