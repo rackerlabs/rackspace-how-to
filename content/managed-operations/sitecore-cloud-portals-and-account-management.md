@@ -23,13 +23,13 @@ While Rackspace manages your Sitecore environment, access to three portals gives
 
 ### Get your login credentials
 
-The MyRackspace portal provides the login credentials for both the Azure and Sitecore portals. While these credentials are sent through a link to the MyRackspace portal in the Welcome email received after you signed up, you can also find the credentials inside a support ticket in the MyRackspace portal. To find this ticket:
+The MyRackspace portal provides the login credentials for both the Azure and Sitecore portals. While these credentials are sent through a link to the MyRackspace portal in the Welcome email received at deployment, you can also find the credentials inside a support ticket in the MyRackspace portal. To find this ticket:
 
 1. Log in to the [MyRackspace portal](https://my.rackspace.com/portal/).
 
 2. In the top navigation bar, click **Tickets**.
 
-    A list displaying your currently open tickets and a tab with the option to view your closed tickets appear. Each ticket entry displays the name, the date it was last updated, the ticket status, and the ticket ID number. Azure and Sitecore portal credentials are located in the first ticket opened on the account.
+    A list displays your currently open tickets, and you can change the filter to view your closed tickets. Each ticket entry displays the name, the date it was last updated, the ticket status, and the ticket ID number. Azure and Sitecore portal credentials are located in the first ticket opened on the account.
 
 ### Azure portal
 
