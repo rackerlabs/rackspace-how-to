@@ -5,7 +5,7 @@ title: Manage company directories
 type: article
 created_date: '2014-11-14'
 created_by: Joanna Salazar
-last_modified_date: '2015-01-23'
+last_modified_date: '2018-03-21'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -20,7 +20,7 @@ Contacts tab.
 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
-- **Time needed:** Approximately 5 minutes to create a mailbox and approximately 15 additional minutes for the mailbox to become accessible
+- **Time needed:** Approximately 5 minutes
 - **Tools required:** Cloud Office Control Panel access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
