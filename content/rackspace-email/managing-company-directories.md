@@ -44,7 +44,8 @@ From here, you can add, edit, or delete an alias. See the following instructions
     the directory you want to edit. If you are creating a new directory, click
     **Add Directory**.
 
-     <img src="{% asset_path rackspace-email/managing-company-directories/add_directory.png %}" />
+        <img src="{% asset_path rackspace-email/managing-company-directories/add_directory.png %}" />
+
 
 2.  Enter or change the following information as needed.
 
@@ -70,7 +71,7 @@ From here, you can add, edit, or delete an alias. See the following instructions
         click on **Edit Contact Info**. Enter additional information as
         needed in the new window, and then click **Ok**.
 
-  <img src="{% asset_path rackspace-email/managing-company-directories/add_domain.png %}" />
+        <img src="{% asset_path rackspace-email/managing-company-directories/add_domain.png %}" />
 
 3.  Click **Save**.
 
