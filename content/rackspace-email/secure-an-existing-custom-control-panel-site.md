@@ -5,13 +5,13 @@ title: Secure an Existing Custom Control Panel Site
 type: article
 created_date: '2018-02-23'
 created_by: William Loy
-last_modified_date: '2018-03-07'
-last_modified_by: William Loy
+last_modified_date: '2018-03-24'
+last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Custom control panel sites created before September 2017 were deployed to an environment that did not enforce the use of secure web protocols over HTTPS, such as SSL or TLS. To add this additional level of protection to your existing customer control panel site, we recommend you secure it.
+Custom control panel sites created before September 2017 were deployed to an environment that did not enforce the use of secure web protocols over HTTPS, such as SSL or TLS. To add this additional level of protection to your existing customer control panel site, we recommend that you secure your own control panel site.
 
 ### Prerequisites
 
@@ -43,7 +43,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
    <img src="{% asset_path rackspace-email/secure-an-existing-custom-control-panel-site/company_info.png %}"/>
 
-6. You will be presented with instructions to update the DNS entry for your site with new information. Copy these instructions by clicking **Copy Instructions** before clicking **Ok, Got It**.
+6. Instructions to update the DNS entry for your site with new information appears. Copy these instructions by clicking **Copy Instructions** before clicking **Ok, Got It**.
 
    <img src="{% asset_path rackspace-email/secure-an-existing-custom-control-panel-site/dns_info.png %}"/>
 
@@ -71,6 +71,6 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
     **Note:** For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-The site will now appear as secured **Custom Control Panel** listing. Once the DNS change is propagated it will have a green "locked" icon to the right of the name to show that the site is secure.
+The site should now appear as a secured **Custom Control Panel** listing. After the DNS change is propagated it will have a green "locked" icon to the right of the name to show that the site is secure.
 
 <img src="{% asset_path rackspace-email/secure-an-existing-custom-control-panel-site/secured.png %}"/>
