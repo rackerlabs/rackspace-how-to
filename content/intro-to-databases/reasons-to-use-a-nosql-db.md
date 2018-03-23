@@ -27,14 +27,13 @@ You might choose a NoSQL database for the following reasons: 
   solution to be scalable, the data must be easy to share across multiple
   servers.
 
-- To speed development. If you're developing in frequent iterations, or if you
-  need to make frequent updates to the data structure without significant
-  downtime between versions, a relational database will slow you down.
+- To speed development. When developing in rapid iterations or making
+  frequent updates to the data structure, a relational database slows you down.
   However, because NoSQL data doesn’t need to be prepped ahead of time, you
   can make frequent updates to the data structure with minimal downtime.
 
 - To boost horizontal scalability. The CAP theorem states that in any
-  distributed system, only two of the three properties (consistency,
+  distributed system, only two of the three CAP properties (consistency,
   availability, and partition tolerance) can be used simultaneously. Adjusting
   these properties in favor of strong partition tolerance enables NoSQL users
   to boost horizontal scalability.

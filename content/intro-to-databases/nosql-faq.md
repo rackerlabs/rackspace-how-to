@@ -1,14 +1,14 @@
 ---
-permalink: article-title/
-audit_date:
-title: 'Article title'
+permalink: NoSQL FAQ/
+audit_date: '2018-03-20'
+title: 'nosql-faq'
 type: article
-created_date: 'yyyy-mm-dd'
+created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: 'yyyy-mm-dd'
-last_modified_by: First Last
-product: Cloud Product
-product_url: cloud-product
+last_modified_date: '2018-03-23'
+last_modified_by: Kate Dougherty
+product: Database Services
+product_url: https://www.rackspace.com/dba-services
 ---
 
 Provide a descriptive title for the article in the metadata above. Conceptual articles have a wide range of appropriate titles. If the article's purpose is to impart general information, a title such as "About regions" is appropriate. If the topic of the article could potentially result in action from the customer, a title such as "Using the Rackspace network effectively" is better.

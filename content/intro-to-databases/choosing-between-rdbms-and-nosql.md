@@ -5,7 +5,7 @@ title: 'Choosing between a relational database and a NoSQL database'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-03-21'
+last_modified_date: '2018-03-23'
 last_modified_by: Kate Dougherty
 product: Database Services
 product_url: https://www.rackspace.com/dba-services
