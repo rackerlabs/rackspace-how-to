@@ -1,5 +1,5 @@
 ---
-permalink: /rpc-vmware/
+permalink: rpc-vmware/
 title: Rackspace Private Cloud Powered by VMware
 audit_date: '2018-02-19'
 type: product
