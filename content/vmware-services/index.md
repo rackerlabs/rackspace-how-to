@@ -6,7 +6,7 @@ type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
 last_modified_date: '2018-01-29'
-last_modified_by: Maricela
+last_modified_by: Alexandra Settle
 product: VMware Server Virtualization
 product_url: vmware-server-virtualization
 ---
@@ -14,7 +14,7 @@ product_url: vmware-server-virtualization
 Rackspace Managed Virtualization services offer a customizable infrastructure that
 can be architected to support even the most demanding workloads. Our experienced
 engineers are available 24x7x365 to help architect, deploy, and troubleshoot your
-hosted VMware&reg; environment. a;kljdfa;slkdjfa;slkdf
+hosted VMware&reg; environment.
 
 ### VMware Server Virtualization
 
