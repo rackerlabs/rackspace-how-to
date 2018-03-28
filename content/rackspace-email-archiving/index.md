@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-email-archiving/
-audit_date: '2018-03-05'
+audit_date: '2018-03-28'
 title: Rackspace Email Archiving
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2018-03-08'
+last_modified_date: '2018-03-28'
 last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
