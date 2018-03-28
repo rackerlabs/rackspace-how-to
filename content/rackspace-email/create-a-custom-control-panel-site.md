@@ -1,7 +1,7 @@
 ---
 permalink: create-a-custom-control-panel-site/
 audit_date:
-title: Create a Custom Control Panel Site
+title: Create a custom control panel site
 type: article
 created_date: '2018-02-23'
 created_by: William Loy
@@ -15,9 +15,9 @@ A custom control panel allows you to customize the portal that your customers us
 
 ### Prerequisites
 
-- **Applies to:** Administrators of Reseller Accounts
+- **Applies to:** Administrators of reseller accounts
 - **Difficulty:** Easy
-- **Time needed:** Approximately 5 minutes create the site, 24-48 hours for the DNS changes to propagate
+- **Time needed:** Approximately 5 minutes to create the site and 24 to 48 hours for the DNS changes to propagate
 - **Tools required:**  DNS host administrator access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
@@ -30,36 +30,35 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
    <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/custom_control_panel.png %}"/>
 
-3. On the **Custom Control Panel Site** page, click **Let's Get Started**.
+3. On the **Custom Control Panel Site** page, click **LET's GET STARTED**.
 
    <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/get_started.png %}"/>
 
-4. On the **Control Panel Settings** step, enter the control panel website address you would like to create in the **Control Panel Address** field.
+4. In the **Control Panel Settings** step, enter the control panel website address you want to create in the Control Panel Address field, and click **NEXT STEP**.
 
    <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/cp_address.png %}"/>
 
+  **Warning:** You cannot create a control panel site that uses a site name that already exists or that uses the root domains of mymailsrvr.com, mycpsrvr.com, or a domain that is listed on Google Safe Browsing.
 
-  **Warning:** You cannot create a control panel site using a site name that already exists, uses the root domains of mymailsrvr.com, mycpsrvr.com or a domain which is listed on Google Safe Browsing.
-
-5. On the **Secure Certificate Information** step, enter or verify the company information for your site. This information is used to register the security certificate that secures your site. If your end users choose to view the certificate from their browser, this information is visible to them. Click **Add Control Panel Site**.
+5. On the **Secure Certificate Information** step, enter or verify the company information for your site. This information is used to register the security certificate that secures your site. If your end users choose to view the certificate from their browser, this information is visible to them. Click **ADD CONTROL PANEL SITE**.
 
    <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/company_info.png %}"/>
 
-6. You will be presented with instructions to update the DNS entry for your site with new information. Copy these instructions by clicking **Copy Instructions** before clicking **Ok, Got It**.
+6. You are then presented with instructions to update the DNS entry for your site with new information. Copy these instructions by clicking **COPY INSTRUCTIONS** before clicking **OK, GOT IT**.
 
    <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/dns_info.png %}"/>
 
-    - The DNS for most existing sites will be an A record that points to a specific IP address. You need to change the A record type to CNAME, and change the IP address to the hostname provided. For example, if your control panel site is going to be **cp.yourdomainexample.com**, you would change the hostname to **cp** or **cp.yourdomainexample.com**. The tables below illustrate this change.
+    - The DNS for most existing sites is an A record that points to a specific IP address. You need to change the A record type to a CNAME and change the IP address to the hostname provided. For example, if your control panel site is going to be **cp.yourdomainexample.com**, you would change the hostname to **cp** or **cp.yourdomainexample.com**. The following tables illustrate this change.
 
         **Before DNS change:**
 
-        |Record Type | Host | Point-to/Address |
+        |Record type | Host | Point-to or address |
         |---|---|---|
         |A| @ | 000.00.000.00 |
 
         **After DNS change:**
 
-        |Record Type | Host | Point-to/Address |
+        |Record type | Host | Point-to or address |
         |---|---|---|
         |CNAME| cp | pl-10.admin.emailsrvr.com |
 
@@ -67,12 +66,12 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
         **Example DNS entry:**
 
-        |Record Type | Host | Point-to/Address |
+        |Record type | Host | Point-to or address |
         |---|---|---|
         |CNAME| cp | pl-10.admin.emailsrvr.com |
 
-    **Note:** For specific instructions on editing your DNS records, please contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
+    **Note:** For specific instructions on editing your DNS records, contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-The site will now appear in the **Custom Control Panel** listing. Once the DNS change is propagated it will have a green "locked" icon to the right of the name to show that the site is secure.
+The site now appears in the **Custom Control Panel** listing. After the DNS change is propagated, it has a green "locked" icon to the right of the name to show that the site is secure.
 
 <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/secured.png %}"/>
