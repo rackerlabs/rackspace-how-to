@@ -1,11 +1,11 @@
 ---
 permalink: cloud-load-balancer-troubleshooting/
-audit_date: '2018-02-20'
+audit_date: '2018-03-21'
 title: Cloud Load Balancers troubleshooting
 type: article
 created_date: '2018-01-18'
 created_by: Becky Geinzer
-last_modified_date: '2018-02-20'
+last_modified_date: '2018-03-21'
 last_modified_by: Cat Lookabaugh
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
@@ -90,7 +90,7 @@ One troubleshooting method for a failing node is to log on to a good node in the
   
 To use the following helpful commands, install cURL, and execute the commands from a terminal window.
   
-       - Test the load balancer:  ``curl - <load balancer public IP address>``
+       - Test the load balancer:  ``curl -I <load balancer public IP address>``
        
        - Test the nodes:  ``curl -I <node service net IP address>``
        

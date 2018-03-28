@@ -1,18 +1,39 @@
 ---
 permalink: rackspace-email-archiving/
+audit_date: '2018-03-28'
 title: Rackspace Email Archiving
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2017-03-07'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-03-28'
+last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-The archiving feature of Rackspace Cloud Office collects and stores external, internal, incoming, and outgoing email, including attachments. This data can be accessed for search and review by the administrator of the account and by administrator-designated users.
+Email archiving collects and stores external, internal, incoming, and outgoing email, including attachments. The administrator of the account and administrator-designated users can access this data to search or review it.
 
-These articles will help you get started using Rackspace Email Archiving through Cloud Office.
+The following articles will help you get started using Email Archiving.
+
+###  Enable and access Email Archiving
+
+- [Enable Email Archiving for Rackspace Email and Hosted Exchange](/how-to/enable-email-archiving-cloud-office-control-panel)
+- [Enable Email Archiving for Office 365](/how-to/add-rackspace-office-365-archiving)
+- [Log in to the Archive Manager for Rackspace Email and Hosted Exchange](/how-to/log-in-to-the-archive-manager)
+- [Log in to the Archive Manager for Office 365](log-in-to-the-archive-manager-for-office-365)
+
+###  Setup your archive
+- [Create an archive audit report](/how-to/create-an-archive-audit-report)
+- [Create an archive search](/how-to/create-an-archive-search)
+- [Export archive search results](/how-to/export-archive-search-results-in-cloud-office)
+- [Integrate Rackspace Email Archiving with Outlook.](/how-to/integrate-rackspace-email-archiving-with-outlook)
+- [Create a retention policy](/how-to/set-an-archiving-retention-policy)
+
+###  Configure your archive portal
+- [Add and edit archive users](/how-to/add-and-edit-archive-users-in-cloud-office)
+- [Create an archive audit report](/how-to/create-an-archive-audit-report)
+- [Create an archive search](/how-to/create-an-archive-search)
+- [Export archive search results](/how-to/export-archive-search-results-in-cloud-office)
 
 ###  Control Panel basics
 
@@ -27,21 +48,3 @@ These articles will help you get started using Rackspace Email Archiving through
 - [View invoice history in the Cloud Office Control Panel](/how-to/view-invoice-history-cloud-office-control-panel)
 - [View and pay unpaid invoices in the Cloud Office Control Panel](/how-to/view-and-pay-unpaid-invoices-cloud-office-control-panel)
 - [Set up an API key in the Cloud Office Control Panel](/how-to/set-up-an-api-key-cloud-office-control-panel)
-
-###  Enable and access Email Archiving
-
-- [Enable Email Archiving](/how-to/enable-email-archiving-cloud-office-control-panel)
-- [Log in to the Archive Manager](/how-to/log-in-to-the-archive-manager)
-
-###  Set up Email Archiving
-
-- [Add and edit archive users in Cloud Office](/how-to/add-and-edit-archive-users-in-cloud-office)
-- [Set access rules for archive end users](/how-to/set-access-rules-for-archive-end-users)
-- [Create an archive login message](/how-to/create-an-archive-login-message)
-- [Integrate Rackspace Email Archiving with Outlook.](/how-to/integrate-rackspace-email-archiving-with-outlook)
-
-###  Search and report
-
-- [Create an archive audit report](/how-to/create-an-archive-audit-report)
-- [Create an archive search](/how-to/create-an-archive-search)
-- [Export archive search results in Cloud Office](/how-to/export-archive-search-results-in-cloud-office)

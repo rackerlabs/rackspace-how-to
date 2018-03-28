@@ -1,26 +1,27 @@
 ---
 permalink: rackspace-account-invoice/
-audit_date: '2017-11-29'
+audit_date: '2018-03-16'
 title: Rackspace account invoice
 type: article
 created_date: '2014-09-01'
 created_by: Kenny Johnston
-last_modified_date: '2017-11-29'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-03-20'
+last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
 
 Your monthly Rackspace account invoice includes account and billing
 information, payment information, tax information, and summaries of your
-service, promotions, and discounts. This article provides a detailed
-description of each page and field in your PDF or CSV invoice.
+services, promotions, and discounts. This article provides a detailed
+description of the pages in your PDF or CSV invoice.
 
-**Note:** For information about a detailed invoice that shows an itemized, per-service, per-device overview of your billing charges, see [Detailed invoices overview](/how-to/detailed-invoices-overview/).
+**Note:** For an explanation of a detailed invoice that shows an itemized,
+per-service, per-device overview of your billing charges, see [Billing services overview](/how-to/billing-services-overview/).
 
 ### Account and billing information
 
-The first page of your invoice contains a detailed overview of your
+The first page of your PDF invoice provides a detailed overview of your
 account and billing information.
 
 ### Account summary
@@ -28,118 +29,123 @@ account and billing information.
 The bottom portion of the first page of your invoice includes the
 following information:
 
-- **Previous Balance** - The amount billed before current invoice
-- **Payments** - The total of payments received during your last billing cycle
-- **Adjustments** - The total of any debits or credits from your last
-  billing cycle
-- **Balance Forward** - The unpaid charges from your last billing cycle
-- **Current Invoice Charges** - The sum of all charges incurred since
-  the prior bill
-- **Current Invoice Taxes** - Taxes applied based on net charges
-  (Current Invoice Charges) based on the type of service and customer
-  location
-- **Total Amount Due** - The total of your Current Invoice Charges
-  plus any Balance Forward amount
-- **Payment Terms** - Indicates when your payment is due
-- **Remit Section** (if applicable) - Section to detach and send with your
-  payment
+- **Invoice Number**: The transaction number associated with the invoice.
+- **Invoice Date**: The date the invoice was generated.
+- **Currency**: The monetary currency in which your account is invoiced.
+- **Invoice Amount Due**: The total amount due for your current invoice
+  charges. This amount does not include any past due balance.
+- **Payment Terms**: The time range within which payment should
+  be received, in days.
+- **Due Date**: The date that the payment is due.
+- **Remit Section** (if applicable): The section to detach and send with your
+  payment.
 
 ### Service summary
 
-The second page of your invoice is a summary of all support, product,
-and other charges, and is organized as follows:
+The second page of your invoice provides a summary of all support charges,
+product charges, and other charges. This page is organized in the following
+way:
 
-- **Billing period** - The date range for this invoice, located
-  directly below the page number
-- **Service** - Support, product, or other charges applied on your
-  current bill, including a descriptive name of the product or charge
-- **Gross Charge** - The total charge accumulated by product or other
-  charge categories before promotions and discounts
-- **Promotion & Discount** - The promotions and discounts associated
-  with a product charge
-- **Net Charge** - The difference between Gross Charge and Promotion &
-  Discount for a product charge; the pretax amount for a product
-  charge; the pretax amount for a product charge
-- **Taxes** - The taxes calculated based on the net charge
-- **Total Charges** - The sum of the net product charge and the taxes
-  for a product
+- **Service**: The support, product, or other charges applied to your
+  current bill.
+- **Gross Charge**: The total charge before promotions and discounts.
+- **Promotion & Discount**: The promotions and discounts associated
+  with a product charge.
+- **Net Charge**: The pretax amount for a product charge. This amount is the
+  difference between the **Gross Charge** and the **Promotion & Discount** for
+  a product charge.
+- **Taxes**: The tax amount applied. Taxes are calculated based
+  on the **Net Charge**.
+- **Total Charges**: The sum of the **Net Charge** and the **Taxes** for a
+  product.
 
-Most of the service summary items are self-explanatory, but two services warrant additional description:
+While most of the service summary items are self-explanatory, two services
+warrant additional description:
 
-- **Cloud Servers** - Includes all Cloud Servers flavor classes, such as OnMetal
-- **Cloud Bandwidth** - Includes both Public and CDN Bandwidth
+- **Cloud Servers**: This field includes all of the Cloud Servers flavor
+  classes, such as OnMetal.
+- **Cloud Bandwidth**: This field includes both Public and CDN Bandwidth.
 
-### Adjustment summary
+### Other services
 
-The second page of your invoice also includes any adjustments that
-occurred during the billing period.
+The third page of your invoice includes other charges accrued during the
+billing period.
 
-- **Type** - The reason for the adjustment (debit or credit) on your bill
-- **Reference ID** - The Rackspace generated unique ID for the adjustment
-- **Adjustment Date** - The date that the adjustment was processed by Rackspace
-- **Description** - Any details about the adjustment
-- **Net Amount** - The pretax amount of the adjustment
-- **Taxes** - The calculated tax amount based on the net amount of the
-  adjustment
-- **Total Amount** - The sum of Net Amount and Taxes for an individual
-  adjustment
+- **Service**: The support, product, or other charges applied to your
+  current bill, including a descriptive name for the product or charge.
+- **Gross Charge**: The total charge before promotions and discounts.
+- **Promotion & Discount**: The promotions and discounts associated
+  with a product charge.
+- **Net Charge**: The pretax amount for a product charge. This amount is the
+  difference between the **Gross Charge** and the **Promotion & Discount** for
+  a product charge.
+- **Taxes**: The tax amount applied. Taxes are calculated based
+  on the **Net Charge**.
+- **Total Charges**: The sum of the **Net Charge** and the **Taxes** for a
+  product.
+- **Total Current Invoice Charges**: The total for all of the accumulative
+  charges applied to the invoice.  
 
 ### Promotion and discount summary
 
-The third page of your invoice provides a summary of the promotions and
+The fourth page of your invoice provides a summary of the promotions and
 discounts for the billing period.
 
-- **Category and Description** - The name and description of the
-  promotions and discounts being applied to your bill
-- **Net Discount** - The total of all the promotions and discounts
-  applied to your bill
+- **Category and Description**: The names and descriptions of the
+  promotions and discounts that are applied to your bill.
+- **Net Discount**: The total amount that is deducted from your bill due
+  to promotions and discounts.
 
 ### Tax summary
 
-The **Tax Summary** section explains, in detail, the taxes being applied to
-your bill.
+The fifth page of your invoice contains a **Tax Summary** section that
+explains the taxes that are applied to your bill in detail.
 
-### Goods and services tax
+If you are assessed a Goods and Services Tax (GST), you will also see the
+aggregate product charges. These charges are broken down into taxable (T) and non-taxable charges for the billing period.
 
-The following pages apply only if you are assessed a Goods and Services
-Tax (GST). They show the aggregate product charges broken down into
-taxable (T) and non-taxable charges for the given billing period.
+### Invoice details document (CSV)
 
-### Invoice Details Document (CSV)
+Invoice detail documents in CSV format provide detailed information on daily usage that occurred during the billing cycle. Each row contains a daily usage item and an associated charge. Each row also enables you to view summaries of charges across the entire billing cycle in the following three views:
 
-The CSV document shows a detailed view of your daily usage activity that
-occurred during the course of your billing cycle. Each row contains a
-daily usage item and an associated charge. It also shows details of
-your charges in three different views. For example:
+- **Resource**: To view a summary for a specific resource, create a PivotTable
+  on the **RES_ID** column.
+- **Service**: To view a summary for a specific service, create a PivotTable
+  on the **SERVICE_TYPE** column.
+- **Data center**: To view a summary for a specific data center, create a
+  PivotTable on the **DC_ID** column.
 
-- To see charges summarized across the entire billing cycle related to
-  a given resource, you can create a PivotTable on the RES_ID column.
-- To see charges summarized across the billing cycle related to a
-  given service, you can create a PivotTable on the SERVICE_TYPE column.
-- To see charges summarized across the billing cycle related to a
-  given data center, you can create a PivotTable on the DC_ID column.
+### CSV file field descriptions
 
-### CSV column description
+Invoices in CSV format have the following columns:
 
-- **ACCOUNT_NO** - Customer account number
-- **BILL_NO** - Invoice number
-- **BILL_START_DATE** - Start date of the billing cycle
-- **BILL_END_DATE** - End date of the billing cycle
-- **SERVICE_TYPE** - Service or product name (for Tax it will display ACCOUNT)
-- **EVENT_TYPE** - Sub-type for each service or product
-- **EVENT_START_DATE** - Start date and time of the usage or activity
-- **EVENT_END_DATE** - End date and time for the usage or activity
-- **IMPACT_TYPE** - Signifies whether the event is a CHARGE or a DISCOUNT
-- **QUANTITY** - Total quantity of the event measurement
-- **UOM** - Unit of measure for the quantity and event measurement
-- **RATE** - Rate applied for this event
-- **AMOUNT** - Charge applied based on RATE and QUANTITY
-- **USAGE_RECORD_ID** - Unique system generated ID for the event and charge
-- **DC_ID** - Data center
-- **REGION_ID** - Geographical region
-- **RES_ID** - Unique resource ID
-- **RES_NAME** - Customer-provided resource name
-- **ATTRIBUTE 1** - Resource attribute; for Cloud Servers, this
-  value is the Flavor Name
-- **ATTRIBUTE 2** - Resource attribute; for Cloud Servers, this
-  values is the Option Name
+- **ACCOUNT_NO**: The customer account number.
+- **PARENT_ACCOUNT_NO**: The paying account, when the account is in a
+  hierarchy.
+- **PURCHASE_ORDER**: The purchase order that is associated with the invoice.
+- **BILL_NO**: The invoice number.
+- **BILL_START_DATE**: The start date for the billing cycle.
+- **BILL_END_DATE**: The end date for the billing cycle.
+- **SERVICE_TYPE**: The service or product name. (Rows dealing with taxes
+  display the value **ACCOUNT** in this field.)
+- **EVENT_TYPE**: The sub-type for each service or product.
+- **EVENT_START_DATE**: The start date and time of the usage or activity.
+- **EVENT_END_DATE**: The end date and time of the usage or activity.
+- **IMPACT_TYPE**: Indicates if the event is a **CHARGE**, **DISCOUNT**,
+  **Local Sales Tax**, or **State Tax**.
+- **QUANTITY**: The total quantity of the event measurement.
+- **UOM**: The unit of measure for the quantity and event measurement.
+- **RATE**: The rate that is applied to this event.
+- **CURRENCY**: The monetary currency in which charges are billed.
+- **AMOUNT**: The charge that is applied, based on the **RATE** and the
+  **QUANTITY**.
+- **USAGE_RECORD_ID**: A unique, system-generated ID for the event and charge.
+- **DC_ID**: The data center that is associated with the usage or activity.
+- **REGION_ID**: The geographical region that is associated with the usage or
+  activity.
+- **RES_ID**: A unique resource ID.
+- **RES_NAME**: The customer-provided resource name.
+- **ATTRIBUTE 1**: An attribute of the resource. For Cloud Servers, this
+  value is the **Flavor Name**.
+- **ATTRIBUTE 2**: An attribute of the resource. For Cloud Servers, this
+  value is the **Option Name**.
