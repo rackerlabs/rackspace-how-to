@@ -1,12 +1,12 @@
 ---
 permalink: create-a-custom-control-panel-site/
-audit_date:
+audit_date:'2018-03-28'
 title: Create a custom control panel site
 type: article
 created_date: '2018-02-23'
 created_by: William Loy
-last_modified_date: '2018-02-26'
-last_modified_by: William Loy
+last_modified_date: '2018-03-28'
+last_modified_by: Nate Archer
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -24,7 +24,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### Create a Custom Control Panel Site
 
-1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com) and perform the following steps:
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
 
 2. In the **Reseller Tools** section of the home page, click the **Custom Control Panel** link.
 
@@ -62,7 +62,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
         |---|---|---|
         |CNAME| cp | pl-10.admin.emailsrvr.com |
 
-    - If your existing DNS record is already a CNAME, then just update the existing hostname to the new one provided.
+    - If your existing DNS record is already a CNAME, update the existing hostname to the new one provided.
 
         **Example DNS entry:**
 
@@ -72,6 +72,6 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
     **Note:** For specific instructions on editing your DNS records, contact your DNS host. [Find your DNS host here.](/how-to/find-dns-host)
 
-The site now appears in the **Custom Control Panel** listing. After the DNS change is propagated, it has a green "locked" icon to the right of the name to show that the site is secure.
+The site now appears in the **Custom Control Panel** listing. After the DNS change is propagated, a green "locked" icon appears to the right of the name to show that the site is secure.
 
 <img src="{% asset_path rackspace-email/create-a-custom-control-panel-site/secured.png %}"/>
