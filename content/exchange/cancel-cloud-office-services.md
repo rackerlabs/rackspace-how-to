@@ -11,7 +11,7 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-To cancel a Cloud Office email or SharePoint account, log in to the Cloud Office Control Panel and perform the following steps:
+To cancel your Cloud Office services, log in to the Cloud Office Control Panel and perform the following steps:
 
 1.  In the top-right corner of the window, click the down arrow next to your account number.
 2.  From the menu, select **Services**.
