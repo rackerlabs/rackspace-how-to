@@ -51,7 +51,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
     <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/enable_retention.png %}" />
 
-7. Clicl **OK** to confirm that you want to implement the retention policy.
+7. Click **OK** to confirm that you want to implement the retention policy.
 
     <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/warning.png %}" />
 
