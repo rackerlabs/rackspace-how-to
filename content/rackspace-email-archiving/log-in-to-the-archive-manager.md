@@ -1,6 +1,6 @@
 ---
 permalink: log-in-to-the-archive-manager/
-audit_date:
+audit_date: '2018-03-28'
 title: Log in to the Archive Manager
 type: article
 created_date: '2015-05-19'
@@ -11,7 +11,7 @@ product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-This article describes how to set a log into your Rackspace Hosted Email Archive. Office 365 customer will follow the instructions in [Log into the archive manager for Office 365](/how-to/)
+This article describes how to log in to your Rackspace Hosted Email Archive.
 
 ### Prerequisites
 
@@ -22,18 +22,17 @@ This article describes how to set a log into your Rackspace Hosted Email Archive
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-You can log in through the Cloud Office Control Panel by
-performing the following steps:
+### Log in to the Archive Manager
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/) by using your Rackspace Cloud Office admin ID and password.
-2. Scroll down to the **Domains** section. In the far right column of this sections click the link titled **Email Archiving**
+2. Scroll down to the **Domains** section. In the far right column of this section, click **Email Archiving**.
 
    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/domains_archive.png %}" />
 
-3. Locate and click the domain you want to log into the archive for.
-4. Click the **Manage My Archive** button. You will be taken to the dashboard for the domain's archive.
+3. Select the domain for the archive that you want to log into, and then click **Manage My Archive**. 
+
+   The dashboard for the domain's archive displays.
 
    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/manage_archive.png %}" />
 
-
-Once logged into your Rackspace Hosted Email Archive you can perform many additional functions such as [creating searches](/how-to/create-and-archive-search), [exporting searches](/how-to/export-archive-search-results-in-cloud-office), [adding archive users](/how-to/add-and-edit-archive-users-in-cloud-office) and more.
+After you are logged into your Rackspace Hosted Email Archive, you can perform many additional functions such as [creating searches](/how-to/create-and-archive-search), [exporting searches](/how-to/export-archive-search-results-in-cloud-office), [adding archive users](/how-to/add-and-edit-archive-users-in-cloud-office), and more.
