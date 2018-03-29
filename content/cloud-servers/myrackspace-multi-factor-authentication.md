@@ -25,27 +25,27 @@ authentication for your MyRackspace account.
 
 An administrative user of the account can use the **Require Multi-factor**
 option to decide whether to make multi-factor authentication a requirement for
-all users or to allow users to choose whether or not they want to use
-multi-factor authentication.
+all users or to allow users to choose if they want to use multi-factor
+authentication.
 
 1.  Log in to the [MyRackspace portal](https://my.rackspace.com/).
 
 2.  In the top menu bar, click **Account** and then select **User
-    List**.
+    Management**.
 
-3.  At the top of the User List page, click **My Multi-Factor Devices**.
+3.  Click **My Multi-Factor Devices**.
 
 4.  Next to the **Require Multi-Factor** label, click the pencil icon and
 select one of the following options:
 
     -  **Required for all users on this account** - Makes multi-factor
     authentication a requirement for all users on your account. Setup
-    must take place on each user's next login.
+    must take place at each user's next login.
 
     -  **Optional per user** - Makes multi-factor authentication optional for
     all users on your account. Users who want to use multi-factor
     authentication are prompted to register a paired mobile passcode or
-    SMS-capable device on their next login.
+    SMS-capable device at their next login.
 
 7.  Click **Save Setting**.
 
@@ -62,23 +62,23 @@ these steps:
 3.  Click **My Multi-Factor Devices**. Now, decide whether you want to use the
     **Mobile Passcode** or **SMS** authentication method.
 
-4.  If you choose the *Mobile Passcode* authentication method:
+4.  If you choose the *Mobile Passcode* authentication method, follow these steps:
     a. Click **Add** next to the **Mobile Passcode** option.
     b. Enter a device nickname and click **Add Device**.
     c. Scan the displayed QR code by using the authentication application on
        your device.
-    d. To complete verification of your device, enter the code that the
-       authentication app provides after scanning the QR code.
+    d. To complete the verification of your device, enter the code that the
+       authentication application provides after scanning the QR code.
 
-5.  If you choose the **SMS** authentication method:
+5.  If you choose the SMS authentication method, follow these steps:
     a. Click **Add** next to the **SMS** option.
     b. Enter the phone number of your SMS-capable device and click **Add SMS Device**.
 
        After you click **Add SMS Device**, the Identity service sends an SMS
        text message with a four-digit PIN to the specified phone.
 
-    c. To complete verification of your device, enter the 4-digit PIN code from
-       the text message that you receive and click **Verify SMS Device**.
+    c. To complete the verification of your device, enter the 4-digit PIN code
+       from the text message that you receive and click **Verify SMS Device**.
 
 6.  After your device is verified by either PIN code or QR code, you are granted
     access to MyRackspace.
@@ -95,9 +95,9 @@ code sent via SMS text message after you logged in to the
 
 ### Manage your multi-factor devices
 
-You can manage the devices that you use for multi-factor authentication.
 Users are allowed multiple mobile passcode devices and one SMS device for
-multi-factor authentication.
+multi-factor authentication. To manage the devices that you use with
+multi-factor authentication, use the following steps:
 
 1.  Log in to the [MyRackspace portal](https://myrackspace.com).
 
@@ -116,33 +116,33 @@ multi-factor authentication.
     -   Click **Verify** next to the  **Mobile Passcode** option to continue
         setting up a mobile passcode device.
     -   Click **Add** next to the **SMS** option to add a new SMS device.
-    -   Click **Delete** next to the **SMS** option to delete your SMS device.
+    -   Click **Delete** next to the **SMS** option to delete an SMS device.
     -   Click **Generate Bypass Codes** to generate from one to ten
         bypass codes to use in place of your device.
 
 
 ### Troubleshoot multi-factor authentication problems
 
-Following are a few common problems that you might encounter when
-setting up multi-factor authentication and some basic troubleshooting
+This section describes a few common problems that you might encounter when
+you set up multi-factor authentication and some basic troubleshooting
 steps that can help you overcome them.
 
 #### Invalid phone number
 
 When trying to register a mobile device, you might receive an error
-indicating an invalid phone number. Confirm that a valid 10-digit phone
-number has been entered correctly with no extra characters or spaces.
+indicating an invalid phone number. Confirm that you have entered a valid
+10-digit phone number correctly with no extra characters or spaces.
 
 #### Verify device - Invalid PIN
 
 When attempting to verify your mobile device, you might receive an error
-that the PIN entered is incorrect. Confirm that the correct 4-digit PIN
-received via SMS text message has been entered correctly.
+that the PIN entered is incorrect. Confirm that you have entered the correct
+4-digit PIN received via SMS text message.
 
 #### MyRackspace account locked
 
-After six failed attempts to the [MyRackspace portal](https://myrackspace.com)
-the account is locked. Failures could result from an invalid username or password
+After six failed attempts to the [MyRackspace portal](https://myrackspace.com),
+the account is locked. Failures can result from an invalid username or password
 or from an invalid multi-factor authentication code.
 
 A user with administrator privileges is required to unlock the account. See
@@ -171,7 +171,7 @@ Follow these steps to generate a temporary passcode for a user.
 **Note:** An account must be unlocked for this item to be displayed in
 the **Actions** menu.
 
-1.  Log in to the MyRackspace portal as an administrator.
+1.  Log in to the [MyRackspace portal](https://myrackspace.com) as an administrator.
 
 2.  Select **Account > User List**.
 
@@ -187,5 +187,5 @@ the **Actions** menu.
 
 If you do not see the multi-factor authentication links in the menu bar of
 the MyRackspace portal, the account might not be enabled for multi-factor
-authentication, or the multi-factor system might be unavailable because of
-maintenance or service interruption.
+authentication, or the multi-factor authentication system might be unavailable
+because of maintenance or service interruption.
