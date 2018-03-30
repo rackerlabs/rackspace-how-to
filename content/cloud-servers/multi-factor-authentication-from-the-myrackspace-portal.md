@@ -54,7 +54,7 @@ are prompted to complete the setup process.
 -   You can't configure multi-factor authentication for the Cloud
     Control Panel inside of the MyRackspace portal. You must log in to
     the [Cloud Office control panel](https://cp.rackspace.com) and use these
-    [instructions](how-to/multi-factor-authentication-from-the-cloud-control-panel/)
+    [instructions](/how-to/multi-factor-authentication-from-the-cloud-control-panel/)
     to setup your users for the Cloud Control Panel.
 
 -   Administrators cannot set up devices for their users. Users must
