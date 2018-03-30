@@ -1,11 +1,11 @@
 ---
 permalink: multi-factor-authentication-from-the-myrackspace-portal/
-audit_date: '2018-03-29'
+audit_date: '2018-03-30'
 title: Multi-factor authentication from the MyRackspace portal
 type: article
 created_date: '2014-07-17'
 created_by: Margaret Eker
-last_modified_date: '2018-03-29'
+last_modified_date: '2018-03-30'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
