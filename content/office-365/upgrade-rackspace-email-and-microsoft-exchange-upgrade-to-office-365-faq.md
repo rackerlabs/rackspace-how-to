@@ -46,8 +46,7 @@ located within the [Cloud Office Control Panel](https://cp.rackspace.com).
 Admins are responsible for re-creating their entire environment within Office
 365 and the Migrations team migrates the email data by using MigrationWiz.
 
-#### Do my users have to create new profiles for their desktop mail clients and
-mobile devices?
+#### Do my users have to create new profiles for their desktop mail clients and mobile devices?
 
 Yes, all users must create new profiles. We’ve created an online mail client
 setup tool that walks users through configuring their email for use on all of
