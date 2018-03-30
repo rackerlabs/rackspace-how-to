@@ -63,6 +63,7 @@ these steps:
     **Mobile Passcode** or **SMS** authentication method.
 
 4.  If you choose the *Mobile Passcode* authentication method, follow these steps:
+
     a. Click **Add** next to the **Mobile Passcode** option.
     b. Enter a device nickname and click **Add Device**.
     c. Scan the displayed QR code by using the authentication application on
@@ -71,6 +72,7 @@ these steps:
        authentication application provides after scanning the QR code.
 
 5.  If you choose the SMS authentication method, follow these steps:
+
     a. Click **Add** next to the **SMS** option.
     b. Enter the phone number of your SMS-capable device and click **Add SMS Device**.
 
@@ -109,11 +111,11 @@ multi-factor authentication, use the following steps:
 
     -   Click **Remove all devices** at the top of the page to remove any
         existing devices.
-    -   Click **Manage** next to the  **Mobile Passcode** option to manage
+    -   Click **Manage** next to the **Mobile Passcode** option to manage
         existing mobile passcode devices.
-    -   Click **Delete** next to the  **Mobile Passcode** option to delete a
+    -   Click **Delete** next to the **Mobile Passcode** option to delete a
         mobile passcode device.
-    -   Click **Verify** next to the  **Mobile Passcode** option to continue
+    -   Click **Verify** next to the **Mobile Passcode** option to continue
         setting up a mobile passcode device.
     -   Click **Add** next to the **SMS** option to add a new SMS device.
     -   Click **Delete** next to the **SMS** option to delete an SMS device.

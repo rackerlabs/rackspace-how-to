@@ -55,7 +55,7 @@ are prompted to complete the setup process.
 -   You can't configure multi-factor authentication for the Cloud
     Control Panel inside of the MyRackspace portal. You must log in to
     the [Cloud Control Panel](mycloud.rackspace.com) and use these
-    [instructions](https://support.rackspace.com/how-to/multi-factor-authentication-from-the-cloud-control-panel/)
+    [instructions](how-to/multi-factor-authentication-from-the-cloud-control-panel/)
     to setup your users for the Cloud Control Panel.
 
 -   Administrators cannot set up devices for their users. Users must
@@ -92,20 +92,20 @@ To register and verify an SMS device, use the following steps:
 
 ### Configure your account to authenticate by using a mobile passcode device
 
-To configure your account to use an mobile passcode device for multi-factor
+To configure your account to use a mobile passcode device for multi-factor
 authentication, you must have one of the following client applications
 installed on your device: [Authy](https://www.authy.com/),
 [Duo](https://www.duosecurity.com/),
 [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en),
 or [SecureAuth OTP](https://www.secureauth.com/Support/Downloads/Client-Applications.aspx).
 
-To register and verify an mobile passcode device, use the following steps:
+To register and verify a mobile passcode device, use the following steps:
 
 1.  Log in to the [MyRackspace portal](https://my.rackspace.com/).
 
 2.  Click **Account** and then click **My Multi-Factor Devices**.
 
-3.  Click **Add** next to **Mobile Passcode** option.
+3.  Click **Add** next to the **Mobile Passcode** option.
 
 4.  Enter a nickname for your device and click **Add Device.**
 
@@ -121,7 +121,7 @@ To register and verify an mobile passcode device, use the following steps:
 6.  To verify the new device in the MyRackspace portal, enter the passcode in
     the portal's **Verification** pop-up dialog box.
 
-    **Note:** When you add a mobile password device, mobile passeord is the
+    **Note:** When you add a mobile password device, mobile password is the
     default method for an authentication. If you do not want this to be the
     default method or if you do not want to be logged out of your account when
     you verify the passcode, clear the **Make this my default authentication
