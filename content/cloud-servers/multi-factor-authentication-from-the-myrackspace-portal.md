@@ -16,8 +16,7 @@ multi-factor authentication capabilities provided by the Rackspace Cloud
 Identity service. Multi-factor authentication adds an extra layer of
 identity verification to the log in process by requiring a user to
 submit a time-sensitive passcode that the Identity service sends to an
-SMS or mobile passcode device associated with the user's
-account:
+SMS or mobile passcode device associated with the user's account:
 
 -   An SMS device is a mobile phone, notebook, or other digital device
     with an associated phone number that is capable of receiving SMS
