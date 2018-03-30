@@ -5,7 +5,7 @@ title: Enable or disable two-factor authentication for adminstrators
 type: article
 created_date: '2017-10-02'
 created_by: William Loy
-last_modified_date: '2017-11-13'
+last_modified_date: '2018-30-30'
 last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
@@ -18,7 +18,7 @@ This article describes how to enable two-factor authentication for Cloud Office 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
 - **Time Needed:** Approximately 10 minutes
-- **Tools Needed:** Administrators need access to their Cloud Office Control Panel, 
+- **Tools Needed:** Administrators need access to their Cloud Office Control Panel,
   their mobile device, and a two-factor authentication application that supports *time-based one-time password* technology
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
@@ -28,7 +28,7 @@ As an administrator of your company's email solution, you have a great deal of c
 
 ### Enable two factor authentication for your own admin ID
 
-1. Log into your [Cloud Office control panel](cp.rackspace.com).
+1. Log into your [Cloud Office control panel](https://cp.rackspace.com).
 
 2. Click your username and account number, for example **adminusername (acct#)**, in the upper-right corner to expand the menu.
 
@@ -48,7 +48,7 @@ You have successfully enabled two-factor authentication for your admin ID.
 
 ### Log into the control panel with two-factor authentication
 
-1. Navigate to [cp.rackspace.com](cp.rackspace.com).
+1. Navigate to [cp.rackspace.com](https://cp.rackspace.com).
 
 2. Enter your **Admin ID** and **Password** as you normally would.
 
@@ -60,7 +60,7 @@ You have successfully logged in using two-factor authentication.
 
 You might need to perform these steps if an administrator gets a new device without first disabling two-factor authentication.
 
-1. Log into the [Cloud Office control panel](cp.rackspace.com).
+1. Log into the [Cloud Office control panel](https://cp.rackspace.com).
 2. Click your username and account number, for example **adminusername(acct#)**, in the upper right hand corner to expand the menu.
 3. From the menu, select **Admins & Contacts**.
 4. Click the blue username of the admin for whom you need to disable two-factor authentication.
