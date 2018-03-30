@@ -1,5 +1,5 @@
 ---
-permalink: multi-factor-authentication-from-the-myracksapce-portal/
+permalink: multi-factor-authentication-from-the-myrackspace-portal/
 audit_date: '2018-03-29'
 title: Multi-factor authentication from the MyRackspace portal
 type: article
