@@ -5,7 +5,7 @@ title: Transfer images between regions of the Rackspace open cloud
 type: article
 created_date: '2014-02-27'
 created_by: Cloud Images
-last_modified_date: '2018-03-19'
+last_modified_date: '2018-04-02'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
@@ -37,7 +37,7 @@ Before we get into the details, consider the following information:
     API](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/)
     or the Cloud Control Panel to create the image. For information about
     creating an image of a server by using the Cloud Control Panel, see [Create an image backup
-    (cloning)](/how-to/creating-an-image-backup-cloning/).
+        (cloning)](/how-to/creating-an-image-backup-cloning/).
 
 2.  Optionally, use the metadata function of the API to assign an
     identifying property to the image. If you want to transfer several
