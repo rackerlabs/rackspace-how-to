@@ -18,7 +18,7 @@ archived mail.
 
 1. Copy the URL of your archive login. It should look similar to the following URL:
 
-       https://domainnamecom.archivesrvr.com/login/new
+   `https://domainnamecom.archivesrvr.com/login/new`
 
     **Note:** You must log out of the **Archive Manager** first, and then
     copy the URL from your web browser.
