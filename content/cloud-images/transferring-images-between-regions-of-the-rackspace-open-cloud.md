@@ -33,8 +33,11 @@ Before we get into the details, consider the following information:
 1.  Create an image of the source server.
 
     This example uses a server named Slave Database 3 in the
-    source region. You can use either the Cloud Servers API or the
-    Cloud Control Panel to create the image.
+    source region. You can use either the [Cloud Servers
+    API](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/)
+    or the Cloud Control Panel to create the image. For information about
+    creating an image of a server by using the Cloud Control Panel, see [Create an image backup
+    (cloning)](/how-to/creating-an-image-backup-cloning/).
 
 2.  Optionally, use the metadata function of the API to assign an
     identifying property to the image. If you want to transfer several
