@@ -5,7 +5,7 @@ title: Use Swiftly to download an exported image
 type: article
 created_date: '2015-11-30'
 created_by: Cloud Images
-last_modified_date: '2018-03-19'
+last_modified_date: '2018-04-02'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
@@ -20,7 +20,7 @@ Large Objects, and that you have installed the Swiftly client for Cloud
 Files. If you need help on any of these topics, see the following
 sources:
 
--   Cloud Images API Documentation: [Task to Export Image](https://developer.rackspace.com/docs/cloud-images/v2/api-reference/image-task-operations/#task-to-export-image)
+-   Cloud Images API documentation: [Task to Export Image](https://developer.rackspace.com/docs/cloud-images/v2/api-reference/image-task-operations/#task-to-export-image)
 -   [Install the Swiftly client for Cloud Files](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/)
 
 ### Download your entire image at once
@@ -189,9 +189,9 @@ streams them out to you in alphabetical order.
 
 #### Get the detailed list of segments
 
-**Note**: Before reading this section, you might want to review [How Exported Images are Stored as Dynamic Large Objects](/how-to/cloud-images-faq) for
-a reminder of the naming conventions that the Cloud Images export
-task uses.
+**Note**: Before reading this section, you might want to review [Where is my
+exported image?](/how-to/cloud-images-faq) for a reminder of the naming
+conventions that the Cloud Images export task uses.
 
 Now that you know the container and pattern that will be used to locate
 the segments for the Dynamic Large Object you want to download, you can
