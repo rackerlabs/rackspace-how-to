@@ -138,7 +138,7 @@ interface of the Vyatta system. This rule set performs the following actions:
 
         # edit firewall name protect-vyatta
 
-6. Drop everything by default
+6. Set `default-action` to drop everything by default.
 
         # set default-action 'drop'
 
