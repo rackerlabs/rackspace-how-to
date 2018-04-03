@@ -142,28 +142,7 @@ interface of the Vyatta system. This rule set performs the following actions:
 
         # set default-action 'drop'
 
-7. Allow IKE and ESP traffic for IPsec:
-
-        # set rule 100 action 'accept'
-        # set rule 100 destination port '500'
-        # set rule 100 protocol 'udp'
-        # set rule 200 action 'accept'
-        # set rule 200 protocol 'esp'
-
-8. Allow L2TP over IPsec:
-
-        # set rule 210 action 'accept'
-        # set rule 210 destination port '1701'
-        # set rule 210 ipsec 'match-ipsec'
-        # set rule 210 protocol 'udp'
-
-9. Allow NAT traversal of IPsec:
-
-        # set rule 250 action 'accept'
-        # set rule 250 destination port '4500'
-        # set rule 250 protocol 'udp'
-
-10. Deter SSH brute-force attacks by allowing only three new connections within 30 seconds:
+7. Deter SSH brute-force attacks by allowing only three new connections within 30 seconds:
 
         # set rule 300 action 'drop'
         # set rule 300 destination port '22'
@@ -172,30 +151,55 @@ interface of the Vyatta system. This rule set performs the following actions:
         # set rule 300 recent time '30'
         # set rule 300 state new 'enable'
 
-11. Allow all other SSH:
+8. Allow all other SSH:
 
         # set rule 310 action 'accept'
         # set rule 310 destination port '22'
         # set rule 310 protocol 'tcp'
 
-12. Allow icmp
+9. Allow icmp
 
         # set rule 900 action 'accept'
         # set rule 900 description 'allow icmp'
         # set rule 900 protocol 'icmp'
         # exit
 
-13. Apply locally on the public interface (eth0):
+10. Apply locally on the public interface (eth0):
 
         # set interfaces ethernet eth0 firewall local name 'protect-vyatta'
 
-14. Create and apply the firewall ruleset 'in' (for traffic destined for cloud servers) on Public interface (eth0):
+11. Create and apply the firewall ruleset 'in' (for traffic destined for cloud servers) on Public interface (eth0):
 
         # set firewall name untrusted default-action 'drop'
         # set firewall name untrusted description 'deny traffic from internet'
         # set interfaces ethernet eth0 firewall in name 'untrusted'
 
-15. Commit and save the changes:
+12. Commit and save the changes:
 
         # commit
         # save
+        
+### Configure custom rules
+
+After you have set up your firewall to protect your Vyatta VM against attacks, you can configure custom rules from the default configuration. The following example shows a series of custom rules which allow you to enable VPN connections to your Vyatta VM.
+
+- Allow IKE and ESP traffic for IPsec:
+
+        # set rule 100 action 'accept'
+        # set rule 100 destination port '500'
+        # set rule 100 protocol 'udp'
+        # set rule 200 action 'accept'
+        # set rule 200 protocol 'esp'
+
+- Allow L2TP over IPsec:
+
+        # set rule 210 action 'accept'
+        # set rule 210 destination port '1701'
+        # set rule 210 ipsec 'match-ipsec'
+        # set rule 210 protocol 'udp'
+
+- Allow NAT traversal of IPsec:
+
+        # set rule 250 action 'accept'
+        # set rule 250 destination port '4500'
+        # set rule 250 protocol 'udp'
