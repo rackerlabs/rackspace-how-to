@@ -142,7 +142,7 @@ The following command is a helpful troubleshooting command. It gives information
 
 Now, remove a brick from the volume. The following example removes brick 2:
 
-    root@web01:~# gluster volume remove-brick www replica 2 192.168.0.2:/srv/.bricks/www
+    root@web01:~# gluster volume remove-brick www replica 2 192.168.0.2:/srv/.bricks/www start
     Removing brick(s) can result in data loss. Do you want to Continue? (y/n) y
     volume remove-brick commit force: success
 
@@ -150,7 +150,7 @@ This command tells GlusterFS that the `www` volume will now keep only 2 copies o
 
 If you were on a distributed volume, you would want to run the command as follows:
 
-    root@web01:~# gluster volume remove-brick www replica 2 192.168.0.2:/srv/.bricks/www start
+    root@web01:~# gluster volume remove-brick www 192.168.0.2:/srv/.bricks/www start
 
 Then, `watch` it until it finishes:
 
