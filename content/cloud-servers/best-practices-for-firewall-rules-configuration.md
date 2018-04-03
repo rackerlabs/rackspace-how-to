@@ -39,7 +39,7 @@ It's acceptable to allow all source addresses to access your HTTP server. It's g
 
 ### Specify the destination IP address
 
-The destination IP address is the IP address of the server that runs the service to which you want to allow access. Always specify which server (or group of servers) can be accessed. Configuring a destination value of `any` is discouraged, because doing so could create future issues, such as a security breach or server compromise for a protocol that you might not intend to use on a server that might be accessible by default. However, destination IPs with a destination value of `any` can be used if there is only one IP assigned to the Firewall, or if you want both public and servicenet access to your configuration. 
+The destination IP address is the IP address of the server that runs the service to which you want to allow access. Always specify which server (or group of servers) can be accessed. Configuring a destination value of `any` is discouraged, because doing so could create future issues, such as a security breach or server compromise for a protocol that you might not intend to use on a server that might be accessible by default. However, destination IPs with a destination value of `any` can be used if there is only one IP assigned to the firewall, or if you want both public and servicenet access to your configuration. 
 
 ### Specify the destination port
 
