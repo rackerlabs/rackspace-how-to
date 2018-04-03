@@ -218,4 +218,4 @@ your infrastructure.  For more information, be sure to consult the
 [Development Guide for Rackspace
 Monitoring](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#developer-guide)
 as well as the [Rackspace Monitoring
-FAQ](/how-to/cloud-monitoring-faq).
+FAQ](/how-to/rackspace-monitoring-faq).
