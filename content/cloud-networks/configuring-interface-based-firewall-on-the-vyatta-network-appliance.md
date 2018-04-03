@@ -157,7 +157,7 @@ interface of the Vyatta system. This rule set performs the following actions:
         # set rule 310 destination port '22'
         # set rule 310 protocol 'tcp'
 
-9. Allow icmp
+9. Allow icmp:
 
         # set rule 900 action 'accept'
         # set rule 900 description 'allow icmp'
