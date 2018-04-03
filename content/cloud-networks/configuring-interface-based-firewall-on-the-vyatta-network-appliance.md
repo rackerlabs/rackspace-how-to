@@ -163,7 +163,7 @@ interface of the Vyatta system. This rule set performs the following actions:
         # set rule 250 destination port '4500'
         # set rule 250 protocol 'udp'
 
-10. Deter SSS brute-force attacks by allowing only three new connections within 30 seconds:
+10. Deter SSH brute-force attacks by allowing only three new connections within 30 seconds:
 
         # set rule 300 action 'drop'
         # set rule 300 destination port '22'
