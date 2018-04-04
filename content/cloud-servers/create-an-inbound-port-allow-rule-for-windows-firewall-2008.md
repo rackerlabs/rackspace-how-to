@@ -19,9 +19,7 @@ The following article describes how to make an Inbound port allow rule for Windo
 
 ### Creating an Inbound Port Allow Rule
 
-** 
-
-1. Launch Windows Firewall with Advanced Security by clicking on **Start > Administrative Tools > Windows Firewall with Advanced Security**.
+1. Launch Windows Firewall with Advanced Security by clicking **Start > Administrative Tools > Windows Firewall with Advanced Security**.
 
    <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/firewalllaunch.png %}" alt="firewalllaunch.png" />
 
@@ -36,26 +34,26 @@ The following article describes how to make an Inbound port allow rule for Windo
 4. This step of the Wizard specifies which ports the rule is applied to and whether that rule applies to connections established using the TCP and UDP protocol. 
 
    - If *no* specific ports are applicable, apply the rule to all local ports by selecting **All local ports**.
-   - If specifc ports are applicable, select **Specific local ports**, then fill in the port(s), seperating each port with a comma.
+   - If specifc ports are applicable, select **Specific local ports**, and then fill in the port(s), seperating each port with a comma.
 
     <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundport2.png %}" alt="inboundport2.png" />
 
-5. Because this is an allow rule, select whether to allow this traffic over all connections (secure and insecure) or only if the connection is secure. If you require the connection to be secure you can also specify if it also requires Encryption or if it overrides block rules. Click **Next** to continue.
+5. Because this is an allow rule, select whether to allow this traffic over all connections (secure and insecure) or only if the connection is secure. If you require a secure connection, you can specify whether it also requires encryption, or if it overrides block rules. Click **Next** to continue.
 
     <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundport3.png %}" alt="inboundport3.png" />
 
-6. Select which profiles the rule applies to. 
+6. Select the profiles to which this rule applies. 
 
-   - The "Domain" profile applies when the inbound connection is coming from an interface with the "Domain" profile selected. 
-   - The "Private" profile applies when the inbound connection is coming from a source network that has selected Private for its profile. 
-   - The "Public" profile applies to all connections coming from a source whose profile is set to Public. 
+   - The *Domain* profile applies when the inbound connection is coming from an interface with the "Domain" profile selected. 
+   - The *Private* profile applies when the inbound connection is coming from a source network that has selected Private for its profile. 
+   - The *Public* profile applies to all connections coming from a source whose profile is set to Public. 
    
    Click **Next** to continue.
 
     <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundrulewiz6.png %}" alt="inboundrulewiz6.png" />
 
-7. Give the rule a name and any description you would like. Click **Finish** to create the rule and go back to the main screen.
+7. Give the rule a name and any description that you want. Click **Finish** to create the rule and go back to the main screen.
 
-### Next steps
+### Next step
 
 [Create an image of a server and restore a server form a saved image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
