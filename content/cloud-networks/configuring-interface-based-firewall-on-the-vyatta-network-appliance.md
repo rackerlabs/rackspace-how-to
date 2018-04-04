@@ -177,7 +177,7 @@ After you have set up your firewall to protect your Vyatta VM against attacks, y
 
 **Note:** The following is only an example of custom rules that you can set for your Vyatta firewall. They do not represent the recommended default configuration. 
 
-1. Open the firewall configuration interface your previously created:
+1. Open the firewall configuration interface you previously created:
 
         # edit firewall name protect-vyatta
 
