@@ -11,9 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The following article describes how to make an Inbound port allow rule for Windows Firewall 2008. 
-
-### Prerequisite
+This article describes how to create an Inbound port allow rule for Windows Firewall 2008. 
 
 [Create a Cloud Server](/how-to/create-a-cloud-server)
 
@@ -38,13 +36,13 @@ The following article describes how to make an Inbound port allow rule for Windo
 
     <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundport2.png %}" alt="inboundport2.png" />
 
-5. Because this is an allow rule, select whether to allow this traffic over all connections (secure and insecure) or only if the connection is secure. If you require a secure connection, you can specify whether it also requires encryption, or if it overrides block rules. Click **Next** to continue.
+5. Because this is an allow rule, select whether to allow traffic over all connections (secure and insecure) or only secure connections. If you require a secure connection, you can specify whether it also requires encryption, or if it overrides block rules. Click **Next** to continue.
 
     <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundport3.png %}" alt="inboundport3.png" />
 
 6. Select the profiles to which this rule applies. 
 
-   - The *Domain* profile applies when the inbound connection is coming from an interface with the "Domain" profile selected. 
+   - The *Domain* profile applies when the inbound connection is coming from an interface with the Domain profile selected. 
    - The *Private* profile applies when the inbound connection is coming from a source network that has selected Private for its profile. 
    - The *Public* profile applies to all connections coming from a source whose profile is set to Public. 
    
@@ -54,6 +52,8 @@ The following article describes how to make an Inbound port allow rule for Windo
 
 7. Give the rule a name and any description that you want. Click **Finish** to create the rule and go back to the main screen.
 
-### Next step
+### Related information
 
-[Create an image of a server and restore a server form a saved image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+
+- [Create a Cloud Server](/how-to/create-a-cloud-server)
+- [Create an image of a server and restore a server from a saved image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
