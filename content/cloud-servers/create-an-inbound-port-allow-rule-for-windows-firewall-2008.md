@@ -13,10 +13,6 @@ product_url: cloud-servers
 
 This article describes how to create an Inbound port allow rule for Windows Firewall 2008. 
 
-[Create a Cloud Server](/how-to/create-a-cloud-server)
-
-### Creating an Inbound Port Allow Rule
-
 1. Launch Windows Firewall with Advanced Security by clicking **Start > Administrative Tools > Windows Firewall with Advanced Security**.
 
    <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/firewalllaunch.png %}" alt="firewalllaunch.png" />
@@ -25,13 +21,13 @@ This article describes how to create an Inbound port allow rule for Windows Fire
 
    <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundrule.png %}" alt="inboundrule.png" />
 
-3. The New Inbound Rule Wizard will launch. Select **Port** and click **Next**.
+3. The **New Inbound Rule Wizard** will launch. Select **Port** and click **Next**.
 
    <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundport1.png %}" alt="inboundport1.png" />
 
 4. This step of the Wizard specifies which ports the rule is applied to and whether that rule applies to connections established using the TCP and UDP protocol. 
 
-   - If *no* specific ports are applicable, apply the rule to all local ports by selecting **All local ports**.
+   - If *no* specific ports are applicable, select **All local ports** to apply the rule to all local ports.
    - If specifc ports are applicable, select **Specific local ports**, and then fill in the port(s), seperating each port with a comma.
 
     <img src="{% asset_path cloud-servers/create-an-inbound-port-allow-rule-for-windows-firewall-2008/inboundport2.png %}" alt="inboundport2.png" />
@@ -42,9 +38,9 @@ This article describes how to create an Inbound port allow rule for Windows Fire
 
 6. Select the profiles to which this rule applies. 
 
-   - The *Domain* profile applies when the inbound connection is coming from an interface with the Domain profile selected. 
-   - The *Private* profile applies when the inbound connection is coming from a source network that has selected Private for its profile. 
-   - The *Public* profile applies to all connections coming from a source whose profile is set to Public. 
+   - The *Domain* profile applies when the inbound connection is coming from another interface with the *Domain* profile selected. 
+   - The *Private* profile applies when the inbound connection is coming from a source network with the *Private* profile selected. 
+   - The *Public* profile applies to all connections coming from a source with the *Public* profile selected. 
    
    Click **Next** to continue.
 
