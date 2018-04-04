@@ -90,8 +90,6 @@ interface of the Vyatta system. This rule set performs the following actions:
 
 - Sets recommended global rules to be applied to all firewall interfaces (in this case, the public interface.) Any other interfaces with a firewall configuration will also inherit this configuration.
 
--   Allows site-to-site VPN tunnel traffic.
-
 -   Allows SSH and ICMP traffic.
 
 ### To apply an interface-based firewall
@@ -175,7 +173,7 @@ interface of the Vyatta system. This rule set performs the following actions:
         
 ### Configure custom rules
 
-After you have set up your firewall to protect your Vyatta VM against attacks, you can configure custom rules from the default configuration. The following example shows a series of custom rules that allow you to enable VPN connections to your Vyatta VM. 
+After you have set up your firewall to protect your Vyatta VM against attacks, you can configure custom rules from the default configuration. The following example shows a series of custom rules that allow you to enable site-to-site VPN traffic to your Vyatta VM. 
 
 **Note:** The following is only an example of custom rules that you can set for your Vyatta firewall. They do not represent the recommended default configuration. 
 
@@ -207,3 +205,9 @@ After you have set up your firewall to protect your Vyatta VM against attacks, y
         # set rule 250 action 'accept'
         # set rule 250 destination port '4500'
         # set rule 250 protocol 'udp'
+        
+6. Commit and save changes:
+
+       # exit
+       # commit
+       # save
