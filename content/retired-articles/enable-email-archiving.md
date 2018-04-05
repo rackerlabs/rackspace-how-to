@@ -7,8 +7,6 @@ created_date: '2014-04-10'
 created_by: Mawutor Amesawu
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
-product: Rackspace Email Archiving
-product_url: rackspace-email-archiving
 ---
 
 Archiving collects and stores both external and internal incoming and
