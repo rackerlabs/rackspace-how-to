@@ -1,12 +1,12 @@
 ---
 permalink: monitoring-cloud-databases-in-the-cloud-control-panel/
-audit_date:
+audit_date: '2018-04-05'
 title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2016-06-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-04-05'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -20,23 +20,21 @@ API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
 *Monitoring checks* describe the metrics being monitored, and monitoring
 alarms are actions that can be triggered when a check meets specified
 criteria. For example, a check for memory utilization records memory use
-on an instance. An alarm could be configured to trigger and send an
-email when the memory check shows free memory has dropped below a
+on an instance. An alarm can also be configured to trigger and send an
+email when the memory check shows that free memory has dropped below a
 specified level.
 
 The checks and alarms that are set up by default on a Cloud Databases
 instance are described in the following sections.
 
-
 ### Checks
 
-Monitoring checks are listed on the details page of a Cloud Databases
-instance in the Cloud Control Panel.
+The monitoring checks for a Cloud Databases instance appear on the details page for that instance in the Cloud Control Panel.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmonitoringchecks.png %}" width="370" height="274" />
 
 Click the name of a check to view a graph of the check's results over
-time and any alarms configured for that check.
+time and any alarms that are configured for that check.
 
 The following monitoring checks are preconfigured for Cloud Databases
 instances.
@@ -44,8 +42,8 @@ instances.
 
 #### CPU check
 
-The graph for the CPU check displays how much of its available
-processing power the instance uses. It also displays minimum, maximum,
+The graph for the CPU check displays how much of the CPU's available
+processing power the instance uses. It also displays the minimum, maximum,
 and average CPU usage for that period.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpugraph.png %}" width="571" height="231" />
@@ -53,8 +51,8 @@ and average CPU usage for that period.
 #### File system check
 
 The graph for the File system check displays disk usage for the Cloud
-Databases instance. The **Total** value represents the total disk space
-available to the instance, and this value can change if the instance is
+Databases instance. The **Total** represents the total disk space that is
+available to the instance. This value can change if the instance is
 resized.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbfilesystemgraph.png %}" width="561" height="229" />
@@ -70,8 +68,8 @@ reflects overall CPU usage.
 
 #### Memory check
 
-The graph for the memory check displays your instance's memory use
-(RAM). The **Total** value represents the total memory available to the
+The graph for the memory check displays your instance's memory use, or RAM.
+The **Total** value represents the total memory that is available to the
 instance, and the **Actual Used** value represents the amount of memory
 in use.
 
@@ -86,10 +84,8 @@ traffic in kilobytes per second.
 
 #### MySQL check
 
-Graphs that report metrics for the MySQL datastore running on your instance
-are available in the Cloud Control Panel under **Monitoring Alerts**. This area
-links to our [Rackspace Intelligence site](https://intelligence.rackspace.com/),
-currently in beta.
+Graphs that report metrics for the MySQL datastore that is running on your instance are available in the Cloud Control Panel under **Monitoring Alerts**. This area links to our [Rackspace Intelligence
+site](https://intelligence.rackspace.com/), which is currently in beta.
 
 ### Alarms
 
@@ -103,7 +99,7 @@ to your contacts list to prevent email alerts from being marked as spam.
 
 #### Creating alarms
 
-You can view and create alarms from a check's details page.
+You can view and create alarms from the details page for a check.
 
 1.  On the details page for the Cloud Databases instance, click the name
     of the check for which you want to create an alarm.
@@ -119,15 +115,15 @@ You can view and create alarms from a check's details page.
     To view example criteria, click **Example Alarm**.
 
     The metrics available for use as criteria are listed in the
-    Available Metrics section of the alarm editing screen. A description
-    of each metric is provided in the Agent Check Types section of the
+    **Available Metrics** section of the alarm editing screen. A description
+    of each metric is provided in the ["Agent check types"](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/#agent-check-type-ref) section of the
     Cloud Monitoring API documentation.
 
     The language used to define criteria for alarms is documented in the
-    [Alert Triggering and
-    Alarms](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/alert-triggers-and-alarms)
-    section of the Cloud Monitoring API documentation. Clicking Example
-    Alarm under the criteria field will let you view example criteria
+    ["Alert Triggering and
+    Alarms"](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/alert-triggers-and-alarms)
+    section of the Cloud Monitoring API documentation. Clicking **Example
+    Alarm** under the criteria field will enable you to view example criteria
     for the check.
 
     <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpualarm.png %}" width="407" height="546" />
@@ -153,7 +149,6 @@ For all of the alarms, the available metrics are displayed in the alarm
 creation dialog box and are explained in the [Cloud Monitoring API
 documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#agent-check-types).
 
-
 ### CPU alarms
 
 The following criteria returns a Warning status when CPU usage is above
@@ -174,8 +169,8 @@ The following criteria returns a Warning status when CPU usage is above
 
 A monitoring alarm is included by default for this check. The criteria
 for the Low Disk Space alarm will return a warning status when disk
-usage exceeds 90% of total space available and a critical status when
-disk usage exceeds 95% of total space available.
+usage exceeds 90% of the total space available and a critical status when
+disk usage exceeds 95% of the total space available.
 
     if (percentage(metric['used'], metric['total']) > 90) {
            return new AlarmStatus(CRITICAL, "Disk usage is above your critical threshold of
@@ -191,7 +186,7 @@ disk usage exceeds 95% of total space available.
 
 ### Load average alarms
 
-The time period used to calculate load average for the load average
+The time period that is used to calculate load average for the Load Average
 alarm can be set to 1 minute, 5 minutes, or 15 minutes.
 
     if (metric['5m'] > 1.5) {
@@ -239,7 +234,7 @@ alarm can be set to 1 minute, 5 minutes, or 15 minutes.
 ### MySQL alarms
 
 The following criteria returns a Warning status when the number of open
-connections is above 400 and returns a Critical status when the number
+connections is above 400, and returns a Critical status when the number
 of open connections is above 500.
 
     if (metric['threads.connected'] > 500) {
@@ -255,5 +250,5 @@ of open connections is above 500.
         return new AlarmStatus(OK, 'Total number of threads connected are #
         {threads.connected}, below your warning threshold of 400');
 
-Explanations of the available metrics are located in the MySQL
+Explanations for the available metrics are located in the MySQL
 documentation for the relevant server status variables.
