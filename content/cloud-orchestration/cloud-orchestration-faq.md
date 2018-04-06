@@ -275,7 +275,8 @@ feedback and request new features, which will help us prioritize our roadmap.
 
 Yes. Because Rackspace Cloud Orchestration is based on OpenStack Heat, you can
 easily deploy your existing Heat template on Rackspace Cloud. However, the
-template must use resources that are in the [Orchestration Resource
+template must use resources that are in the [Rackspace Cloud Orchestration
+Resource
 Reference](https://developer.rackspace.com/docs/cloud-orchestration/v1/resources-reference/).
 
 You can obtain a current list of resources through a CLI.
