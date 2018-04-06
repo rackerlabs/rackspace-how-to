@@ -1,6 +1,6 @@
 ---
 permalink: cloud-orchestration-faq/
-audit_date: '2018-04-06'
+audit_date: '2018-04-05'
 title: Cloud Orchestration FAQ
 type: article
 created_date: '2015-12-09'
