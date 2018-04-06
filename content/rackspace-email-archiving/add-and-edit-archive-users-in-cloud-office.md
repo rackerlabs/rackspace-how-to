@@ -1,16 +1,17 @@
 ---
-permalink: add-and-edit-archive-users/
-audit_date:
+permalink: add-and-edit-archive-users-in-cloud-office/
+audit_date: '2018-04-06'
 title: Add and edit archive users
 type: article
 created_date: '2015-05-18'
 created_by: Beau Bailey
-last_modified_date: '2018-03-13'
+last_modified_date: '2018-04-06'
 last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
+This article describes how to add and edit archive users.
 
 ### Prerequisites
 
@@ -21,7 +22,7 @@ product_url: rackspace-email-archiving
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-When you have completed the steps in [Logging in to the Archive
+After you have completed the steps in [Log in to the Archive
 Manager](/how-to/log-in-to-the-archive-manager),
 you can add additional users to the Archive Manager and assign the
 following user types:
@@ -57,10 +58,9 @@ settings or information:
 -   Password recovery
 -   Outlook integration
 
+### Add an archive user
 
-### Add an archive user ###
-
-Use the following steps to add individual users to the Archive Manager.
+Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/) and then use the following steps to add individual users to the Archive Manager:
 
 1.  In the upper-right corner of the screen, click **Admin**.
 
@@ -70,9 +70,10 @@ Use the following steps to add individual users to the Archive Manager.
 
 2.  In the Admin dashboard, click the **Users** tab.
 
-3.  Click the **Add User** button.
+3.  Click **Add User**.
 
 4.  Enter the following information for the user:
+
     - User name
     - First and last name
     - Email address
@@ -83,7 +84,7 @@ Use the following steps to add individual users to the Archive Manager.
 5. Under **Additional email addresses (any email address from which you
    receive mail, or to which you send mail)**, add email aliases or
    other addresses that the user monitors to the list. Type the email
-   address in the blank and click **Add Email Address**.
+   address in the blank and then click **Add Email Address**.
 
 6. Under **Permissions,** select the user type for the new user.
 
@@ -92,6 +93,7 @@ Use the following steps to add individual users to the Archive Manager.
 7. Enter additional contact information.
 
 8. Under **Account Options**, specify the following user settings:
+
     - **Expire Date**: Accounts for users can be set up with permanent
       or temporary access. You can specify an expiration date for
       those users whose access should be limited.
@@ -110,15 +112,16 @@ Use the following steps to add individual users to the Archive Manager.
 
 10. Click **Add user and send welcome message**.
 
-### Add multiple archive users ###
+### Add multiple archive users
 
-Use the following steps to add multiple users to the Archive Manager.
+Use the following steps to add multiple users to the Archive Manager:
 
 1.  Under the **Users** tab in the admin dashboard, click **Bulk Create
     End Users**.
 
 2.  Click **Download CSV file template** and save the compressed
     folder.
+    
     The zipped folder contains an Excel XLS file with detailed
     instructions on column rules and the required fields.
 
@@ -142,9 +145,7 @@ Use the following steps to add multiple users to the Archive Manager.
 
 8.  Click **Process list and send welcome message**.
 
-
-### Edit archive user settings ###
-
+### Edit archive user settings
 
 To edit the settings for an archive user, select the user name from
 the **Users** list and click **Edit**. Edit specific user information as
