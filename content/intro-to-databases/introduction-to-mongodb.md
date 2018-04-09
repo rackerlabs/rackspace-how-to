@@ -8,7 +8,7 @@ created_by: Satyakam Mishra
 last_modified_date: '2018-03-23'
 last_modified_by: Kate Dougherty
 product: Database Services
-product_url: https://www.rackspace.com/dba-services
+product_url: dba-services
 ---
 
 MongoDB is an open source NoSQL database. MongoDB stores data in JSON-like documents that can vary in structure. Because MongoDB uses dynamic schemas, users can create records without defining the data structure first.

@@ -8,7 +8,7 @@ created_by: Satyakam Mishra
 last_modified_date: '2018-03-23'
 last_modified_by: Kate Dougherty
 product: Database Services
-product_url: https://www.rackspace.com/dba-services
+product_url: dba-services
 ---
 
 This page presents several common relational databases and NoSQL databases.
@@ -38,7 +38,7 @@ document-oriented database that stores JSON-like documents in dynamic schemas. C
 - **Oracle NoSQL Database**: Oracle’s NoSQL database.
 - **Cassandra DB**: A distributed database that excels at handling extremely large amounts of structured data. Cassandra DB is also highly scalable. Cassandra DB was created at Facebook. It is used by Instagram, Comcast, Apple, and Spotify.
 - **Riak**: An open source, key-value store database written in Erlang. Riak has built-in fault-tolerance replication and automatic data distribution that enable it to offer excellent performance.
-- **InfoGrid**: An open source web graph database for creating RESTful Web applications that use graphed data. 
+- **InfoGrid**: An open source web graph database for creating RESTful Web applications that use graphed data.
 - **Infinite Graph**: A highly specialized graph database that focuses on graph data structures. InfiniteGraph is useful for finding hidden relationships in big data. It is implemented in Java.
 
 ### Next step

@@ -8,7 +8,7 @@ created_by: Satyakam Mishra
 last_modified_date: '2018-03-23'
 last_modified_by: Kate Dougherty
 product: Database Services
-product_url: https://www.rackspace.com/dba-services
+product_url: dba-services
 ---
 
 This series of articles provides an introduction to NoSQL databases, and explains the differences between NoSQL databases and relational databases. Databases of both types can be organized so that a database management system can access and pull specific information from them. The articles touch on commonly used relational database management systems (RDBMS) such as Oracle Database and popular NoSQL databases such as MongoDB and Cassandra.

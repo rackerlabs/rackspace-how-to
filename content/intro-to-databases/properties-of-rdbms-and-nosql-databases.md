@@ -8,7 +8,7 @@ created_by: Satyakam Mishra
 last_modified_date: '2018-03-23'
 last_modified_by: Kate Dougherty
 product: Database Services
-product_url: https://www.rackspace.com/dba-services
+product_url: dba-services
 ---
 
 This page presents the characteristics of RDBMS and NoSQL databases.

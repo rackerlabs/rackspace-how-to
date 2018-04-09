@@ -8,7 +8,7 @@ created_by: Satyakam Mishra
 last_modified_date: '2018-04-09'
 last_modified_by: Kate Dougherty
 product: Database Services
-product_url: https://www.rackspace.com/dba-services
+product_url: dba-services
 ---
 
 ### NoSQL databases
