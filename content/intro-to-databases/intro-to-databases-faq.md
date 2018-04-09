@@ -33,42 +33,58 @@ and big data. However, relational databases are still preferable for
 applications that require ACID (Atomicity, Consistency, Isolation, Durability)
 transactions, such as banking applications.
 
-#### What kind of data security, backup, and recovery work is required with NoSQL databases, including database tuning and monitoring?
+#### What data security, backup, and recovery work is required with NoSQL databases, including database tuning and monitoring?
 
 Because NoSQL databases are decentralized, most have their own automatic
 backup and recovery processes. By fine-tuning certain database elements such
 as index use, query structure, data models, system configuration (such as
-hardware and operating system settings), and application design, you can significantly impact the overall performance of your application.
+hardware and operating system settings), and application design, you can
+significantly impact the overall performance of your application.
 
 #### How do I create databases and objects and read and write data without SQL?
 
 NoSQL databases are designed to enable the insertion of data without a
-predefined schema. Every NoSQL database has a unique way of creating databases
-and objects. While few NoSQL databases use query languages to build the
-database and read and write the data, some enable users to perform these tasks
-by using Java or Python scripting.
+predefined schema. Every NoSQL platform has a unique method of creating
+databases and objects. While few NoSQL platforms use query languages to build
+databases and read and write data, some enable users to perform these
+actions by using Java or Python scripting.
 
 ### Rackspace Managed Database Services
-
-#### Does Rackspace tune my database?
-
-Yes, based on the service level agreement (SLA), Rackspace tunes your database.
-
-#### What is the cost for Managed Database Services?
-
-For full pricing information for Managed Database Services, see the <Managed Servers Pricing Page>.
 
 #### What is included with Managed Database Services?
 
 Managed Database Services offers varying levels of support. The level of
-support that is included depends on your SLA.
+support that is included depends on your service level agreement (SLA).
 
-The Managed Databases team maintains the availability and security of your
-database in accordance with your SLA. Based on the SLA, we regularly back up
-your database and also perform required patches at regular intervals. The
-Managed Operations team proactively monitors and responds to alerts.
+Under both SLAs, the Managed Databases team maintains the availability and
+security of your database in accordance with your SLA. We also regularly back
+up your database, perform required patches at regular intervals, and
+proactively monitor and respond to alerts.
+
+For information on what is included with each Managed Database Services
+SLA, visit the [DBA Services](https://www.rackspace.com/dba-services) product
+page, scroll down to the product category you want to use (**Relational SQL**
+or **NoSQL**), and click the **Troubleshooting** tab.
+
+#### Does Rackspace tune my database?
+
+The level of support that is included in Managed Database Services depends on
+your SLA. The DBArchitect SLA for Managed Database Services includes
+performance tuning and diagnostics. If you're unsure whether
+your SLA includes database tuning, contact the Managed Operations team for
+assistance.
+
+#### What is the cost for Managed Database Services?
+
+For full pricing information for Managed Database Services, visit
+the [DBA Services](https://www.rackspace.com/dba-services) product
+page, scroll down to the product category you want to use (**Relational SQL**
+or **NoSQL**), and click the **Pricing** tab.
+
+**Note**: This pricing is for new databases only.
 
 #### How do I contact the Managed Operations team?
 
 You can contact the Managed Operations team by submitting a ticket or chat
-request through the [Cloud Control Panel](https://mycloud.rackspace.com/), or by calling 1 800 961 4454.
+request through the [Cloud Control Panel](https://mycloud.rackspace.com/), or
+by calling 1 800 961 4454.
