@@ -21,16 +21,18 @@ The following list presents introductory concepts to be aware of:
     or the Cloud Control Panel), export the image out of the source
     region, import it into the target region, and then boot a new server in
     the target region from the imported image.
-    -   The *source region* is the region where the server you want to
+    -   The *source region* is the region where the server that you want to
         copy is located.
     -   The *target region* is the region where you want to build a new
         server that is identical to the one that you have in the source region.
 -   Because not all images can be exported, not all images can
     be transferred. For details, see [How can I tell if an image can be
     exported?](/how-to/cloud-images-faq) in the Cloud Images FAQ.
--   Cloud Images uses JSON only. It does not use XML.
+-   Cloud Images uses JSON only and does not use XML.
 
 ### Working in the source region
+
+To work in the source region, use the following steps:
 
 1.  Create an image of the source server.
 
@@ -47,13 +49,13 @@ The following list presents introductory concepts to be aware of:
     images, we recommend that you perform this step to help organize
     your images and track them across regions.
 
-    Use either the Cloud Images API or the Cloud Servers API to put a
-    _coordinating metadatum_ on the new image. (You cannot
-    use the Cloud Control Panel for this step). This example uses an image ID
+    Use either the Cloud Images API or the Cloud Servers API to put
+    _coordinating metadata_ on the new image. (You cannot
+    use the Cloud Control Panel for this step.) This example uses an image ID
     of `a6da1504-e1c0-4f40-8461-1ed9a9990e90`. For example, you can create an
     image property named `com.mycompany.image-of` and give it the value
-    `db-slave-3`. You can add the metadatum by using the Images API,
-    as in the following example:
+    `db-slave-3`. You can add the metadata by using the Images API,
+    as shown in the following example:
 
         OS_AUTH_TOKEN="<your auth token>"
         OS_IMAGE_URL="<cloud images baseurl in source region>"
@@ -65,17 +67,18 @@ The following list presents introductory concepts to be aware of:
           "$OS_IMAGE_URL/v2/images/$MY_IMG"
 
     **Note**: Images are stored differently inside the cloud. They are not in
-    the same VHD format that is used for image interchange. Therefore, the
-    checksum on your image in the source region cannot be used to determine
-    which of your images in the target region corresponds to it, because there
-    won't be an image with that checksum. The source image's UUID also cannot
+    the same Virtual Hard Disk (VHD) format that is used for image
+    interchange. Therefore, the checksum on your image in the source region
+    cannot be used to determine which of your images in the target region
+    corresponds to it, because there won't be an image with that checksum. The
+    source image's universally unique identifier (UUID) also cannot
     be used because the image in the target region has a different UUID.
-    Putting the same coordinating metadatum on each image addresses this
+    Putting the same coordinating metadata on each image addresses this
     issue.      
 
 3.  You need a container in your Cloud Files account to put the exported
     image in. If you don't already have one, you can create a container
-    by using the Cloud Control Panel, as follows:
+    by using the Cloud Control Panel by using the following steps:
 
     1. In the top navigation bar, click **Storage > Files**.
     2. Click **Create Container**.
@@ -152,7 +155,7 @@ The following list presents introductory concepts to be aware of:
             "updated_at": "2014-02-26T02:16:50Z"
         }
 
-    Note the `result` element in this response. It contains the location
+    The `result` element in this response contains the location
     of the exported image in your Cloud Files account. The image is in
     the container that you specified and its file name follows the
     convention `{original_image_UUID}.vhd.` If you forget which image
@@ -164,17 +167,17 @@ The following list presents introductory concepts to be aware of:
 At this point, you need to download the image from your Cloud Files
 account in the source region to a neutral location, and then upload the image
 from the neutral location to your Cloud Files account in the target region.
-(For the neutral location, you could use your laptop or you could use a cloud
+(For the neutral location, you could use your laptop or a cloud
 server.) How you accomplish this is up to you. Here are some suggestions:
 
 -   Use the
-    [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient)
--   Use [turbolift](https://github.com/cloudnull/turbolift)
+    [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient).
+-   Use [turbolift](https://github.com/cloudnull/turbolift).
 -   Use [Swiftly](https://github.com/gholt/swiftly):
     -   [Use Swiftly to download an exported
-        image](/how-to/use-swiftly-to-download-an-exported-image)
+        image](/how-to/use-swiftly-to-download-an-exported-image).
     -   [Use Swiftly to upload an
-        image](/how-to/use-swiftly-to-upload-an-image)
+        image](/how-to/use-swiftly-to-upload-an-image).
 
 We don't recommend that you use the Cloud Control Panel for this operation.
 The large size of most images would likely result in a poor user experience.  
@@ -235,18 +238,17 @@ can import it for use with Cloud Servers.
             "updated_at": "2014-02-26T03:28:18Z"
         }
 
-    Note the `result` element, which contains the `image_id` of the
-    imported image.
+    The `result` element contains the `image_id` of the imported image.
 
-3.  If you put a coordinating metadatum on the original image in the
-    source region, now put the same coordinating metadatum on the image that
+3.  If you put coordinating metadata on the original image in the
+    source region, now put the same coordinating metadata on the image that
     you just imported. For this example, add it to the image with `image_id`  
     `1d944ab7-6748-4f3c-b7e2-3553bf006677`. You can use the same Cloud Images
     API call that you used in the source region. However, ensure that you set
     `MY_IMG` to the new image ID and that you set `OS_AUTH_TOKEN` and
     `OS_IMAGE_URL` properly for the target region.
 
-    Putting the same coordinating metadatum on each image enables you to use
+    Putting the same coordinating metadata on each image enables you to use
     the advanced list filtering features of the Cloud Images API to locate
     the image in each region. The following code shows how to use filtering to
     locate the images:
