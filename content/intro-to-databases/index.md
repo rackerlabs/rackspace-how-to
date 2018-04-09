@@ -5,7 +5,7 @@ created_date: '2016-01-17'
 created_by: Satyakam Mishra
 last_modified_date: '2018-04-09'
 last_modified_by: Kate Dougherty
-permalink: /intro-to-databases/
+permalink: intro-to-databases/
 product: Database Services
 product_url: dba-services
 ---

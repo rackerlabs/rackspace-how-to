@@ -1,5 +1,5 @@
 ---
-permalink: introduction/
+permalink: intro-to-databases/
 audit_date: '2018-03-20'
 title: 'Introduction'
 type: article
