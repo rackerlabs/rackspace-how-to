@@ -1,11 +1,11 @@
 ---
 permalink: cloud-images-faq/
-audit_date: '2018-03-26'
+audit_date: '2018-04-09'
 title: Cloud Images FAQ
 type: article
 created_date: '2014-01-14'
 created_by: Cloud Images
-last_modified_date: '2018-03-26'
+last_modified_date: '2018-04-09'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
@@ -17,10 +17,10 @@ product_url: cloud-images
 
 The following types of documentation are available:
 
--   The [Rackspace Cloud Images Getting Started Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#document-getting-started)
+-   The [Cloud Images 2.0 Getting started guide](https://developer.rackspace.com/docs/cloud-images/v2/getting-started/)
     walks you through the basics of using the Images API for all of your
     image-related needs.
--   The [Rackspace Cloud Images Developer Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/)
+-   The [Rackspace Cloud Images Developer guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/)
     provides detailed information about the Cloud Images v2 API.
 -   At the appropriate places in this article, there are links to Rackspace
     How-To articles that provide step-by-step instructions for using Cloud Images operations.
@@ -34,7 +34,7 @@ service endpoints in the Rackspace open cloud.
 #### What does Cloud Images expose?
 
 Cloud Images exposes the Rackspace open cloud deployment of the
-OpenStack Images v2 API powered by OpenStack Glance.
+OpenStack Images v2 API that is powered by OpenStack Glance.
 
 #### Why are the Glance operations being exposed?
 
@@ -74,51 +74,62 @@ Yes, image sharing is available in the Cloud Control Panel. For detailed instruc
 
 #### Where can I read a quick summary about image sharing?
 
-For a brief overview of this functionality, see the _[Image Sharing](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)_ section of the Cloud Images API documentation.
+For a brief overview of this functionality, see the _[Image sharing](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)_ section of the Cloud Images API documentation.
 
 #### Does it cost anything to share images?
 
 There is no charge for sharing images. Sharing an image merely
 makes the image visible to the person with whom it is shared.
 For example, the other party can see the image in an API response, a
-client `image-list` call, or in the Cloud Control Panel. Because the original image isn't copied, the cost of storage is handled by the image producer, who is charged at normal Cloud Files rates.
+client `image-list` call, or in the Cloud Control Panel. Because the original
+image isn't copied, the cost of storage is handled by the image producer, who
+is charged at the normal rates for Cloud Files.
 
-#### Is there a limit on the kinds of images, or how many, I can share or have shared with me?
+#### Is there a limit on the number or kinds of images that I can share, or have shared with me?
 
-There is no limit on the number of images that can be shared. Image producers can share as many images as they like with other users, and image consumers can consume any number of shared images.
+There is no limit on the number of images that can be shared. Image producers
+can share as many images as they like with other users, and image consumers
+can consume any number of shared images.
 
-If you're acting as an image producer, it's your responsibility to
+If you're acting as an image producer, it is your responsibility to
 ensure that any images that you share contain properly licensed software for
 which the vendor allows sharing. As a consumer, you should only use
-images containing properly licensed software. You are expected to follow
-the Rackspace [Acceptable Use Policy](http://www.rackspace.com/information/legal/aup) with regard to
+images that contain properly licensed software. You are expected to follow
+the Rackspace [Acceptable Use
+Policy](http://www.rackspace.com/information/legal/aup) with regard to
 the type of software that is included on images.
 
 #### Am I charged extra for images that are shared with me?
 
 No. Image charges are the responsibility of the person sharing the
-image. However, if you create an image of a server built from an image
+image. However, if you create an image of a server that was built from an image
 that was shared to you, that image is stored in your account and
 charged at normal Cloud Files rates.
 
 #### What information is required to share an image from one account to another?
 
-To share an image to a different account, you need to know the account number of the customer with whom you want to share the image. When the customer is logged in to the Cloud Control Panel, their account number is displayed under the **Account** menu in the upper-right corner.
+To share an image to a different account, you need to know the account number
+of the customer with whom you want to share the image. When the customer is
+logged in to the Cloud Control Panel, their account number is displayed under
+the **Account** menu in the upper-right corner.
 
 #### Someone shared an image with me. Why don't I see it in my image list?
 
 The process of image sharing requires you to accept the share request
 before you can see the image. To do this, you need to
-know the UUID of the image that was shared with you. For instructions about how to accept an image, please consult the [Cloud Images v2 API documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
+know the UUID of the image that was shared with you. For instructions for
+accepting an image, please consult the [Cloud Images v2 API
+documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
 
-#### Can I share or accept an image in the Chicago (ORD) region?
+#### Can I share or accept an image in the Chicago region?
 
-If you are an image producer and want to share an image in the ORD
-region of the Rackspace cloud, please be aware that the provisioning of
+If you are an image producer and want to share an image in the Chicago (ORD)
+region of the Rackspace cloud, be aware that the provisioning of
 cloud services in the ORD region is not available to recent
 customers. If you share an image with one of these customers, the sharing
-occurs without error from your perspective. If the consumer you are
-sharing with doesn't have cloud services in ORD, they cannot see the image and cannot boot from it.
+occurs without error from your perspective. However, if the consumer you are
+sharing with doesn't have cloud services in ORD, they cannot see the image and
+cannot boot from it.
 
 Customers can determine if they have access to the ORD region in one of the following ways:
 
@@ -126,19 +137,23 @@ Customers can determine if they have access to the ORD region in one of the foll
 
 2) API users can look directly in their API service catalogs.
 
-To learn more about regions in the Rackspace cloud, see [Rackspace data centers and regions](/how-to/rackspace-data-centers-and-regions).
+To learn more about regions in the Rackspace cloud, see [Rackspace data
+centers and regions](/how-to/rackspace-data-centers-and-regions).
 
 #### What if someone shares an image to me that I don't want, or if I don't know the person?
 
 The process of image sharing requires you to accept the share request
-before you can see the image in your image list. This requirement prevents other customers from spamming you with images you're not interested in. If you
+before you can see the image in your image list. This requirement prevents
+other customers from spamming you with images you're not interested in. If you
 don't know or trust the person who is sharing the image, we advise against
 using the image. Only create servers from images that you trust.
 
 #### What if I accepted an image but have decided that I don't want it?
 
-You can reject the image so that it no longer displays in your
-image list. For instructions on how to reject an image, see [Cloud Images v2 API documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
+You can reject the image so that it no longer appears in your
+image list. For instructions on how to reject an image, see the [Cloud Images
+v2 API
+documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
 
 #### What happens if someone accidentally (or intentionally) shares an image with malware, root kits, backdoors, or other vulnerabilities? Who is liable?
 
@@ -148,18 +163,20 @@ If you encounter fraudulent activities, please contact Rackspace Support.
 
 #### What happens if an image with malware is shared to me? How can I report it?
 
-You can report suspicious activities to Rackspace Support and to the [Cloud Images team](mailto:cloudimageshelp@rackspace.com).
+You can report suspicious activities to Rackspace Support and to the [Cloud
+Images team](mailto:cloudimageshelp@rackspace.com).
 
 #### What happens if I build a server from a shared image and then have to rebuild the server?
 
 Information that is necessary for a server rebuild is stored in the server
 record in our infrastructure. You should be able to rebuild a server
 even if the image has been un-shared with you or if the image owner has
-deleted the image. You can also create your own image from a server that was built by using a shared image.
+deleted the image. You can also create your own image from a server that was
+built by using a shared image.
 
-#### What happens if an image is un-shared with me or if the image owner deletes the image?
+#### What happens if an image is un-shared to me or if the image owner deletes the image?
 
-If an image is un-shared with you or the owner deletes the image,
+If an image is un-shared to you or the owner deletes the image,
 you no longer have access to the image. If access to a particular
 image is important to you, create your own image of a server you've
 built from that image. You are the owner of the image you create
@@ -170,18 +187,20 @@ and can create new servers from that image.
 Images that were manually shared by Support previous to this API release
 have been put in a pending state. The nova client's `image-list` command
 originally displayed those images. However, in order to match the
-API's behavior, planned changes to the client cause it to display only images in an accepted state.
+API's behavior, planned changes to the client cause it to display only images
+in an accepted state.
 
 To add those images back to your displayed images list, accept the
-images by using [the API](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
+images by using [the
+API](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
 
 #### Can I share an image across regions?
 
 Image sharing can only occur within a single region of the Rackspace
 open cloud. For example, you cannot share an image in the ORD region in
-a way that enables it to be used in the SYD region. If your image is in
-IAD and you share it with someone else, they are only able to build
-servers from the image in the IAD region.
+a way that enables it to be used in the Sydney region (SYD). If your image is
+in North Virginia (IAD) and you share it with someone else, they are only able
+to build servers from the image in the IAD region.
 
 ------------------------------------------------------------------------
 
@@ -193,7 +212,10 @@ Image tags are a set of strings that you can associate with an image.
 
 #### What are the restrictions on image tag strings?
 
-Tag strings can include up to 255 unicode characters. Because you might need to create, delete, or filter tags in a URL, it is best to use ASCII-range alphanumeric characters with an underscore ("\_") replacing any spaces. This approach ensures that tags are properly formatted for inclusion in URLs.
+Tag strings may include up to 255 unicode characters. Because you might need
+to create, delete, or filter tags in a URL, it is best to use ASCII-range
+alphanumeric characters with an underscore ("\_") replacing any spaces. This
+approach ensures that tags are properly formatted for inclusion in URLs.
 
 #### What are the benefits of using image tags?
 
@@ -218,8 +240,8 @@ The following product-specific roles are also available:
 
 #### What are the capabilities of these roles?
 
-For details on Cloud Image roles, see
-[Detailed Permission Matrix for Cloud Images](/how-to/detailed-permissions-matrix-for-cloud-images).
+For details on Cloud Image roles, see the [Detailed Permission Matrix for Cloud
+Images](/how-to/detailed-permissions-matrix-for-cloud-images).
 
 ------------------------------------------------------------------------
 
@@ -228,12 +250,14 @@ For details on Cloud Image roles, see
 #### What are image tasks?
 
 The OpenStack Images v2 API introduces tasks as a way for users to
-request image operations. This functionality provides a common task interface across all Glance installations. At the same time, because the infrastructures of OpenStack clouds can vary greatly, tasks can be customized for each
+request image operations. This functionality provides a common task interface
+across all Glance installations. At the same time, because the infrastructures
+of OpenStack clouds can vary greatly, tasks can be customized for each
 particular cloud.
 
 #### What can I do with tasks?
 
-Tasks enable you to import and export images. For more information, see the _Image import and export_ section of this FAQ.
+Tasks enable you to import and export images. For more information, see the "Image import and export" section of this FAQ.
 
 #### What RBAC roles can create tasks?
 
@@ -241,7 +265,8 @@ You must have an **Admin** role to create tasks.
 
 #### Where can I find out more about tasks?
 
-For more information about tasks, see the [Rackspace Cloud Images Developer Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/).
+For more information about tasks, see the [Rackspace Cloud Images Developer
+Guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/).
 
 ------------------------------------------------------------------------
 
@@ -249,11 +274,14 @@ For more information about tasks, see the [Rackspace Cloud Images Developer Guid
 
 #### What are the import and export functionalities?
 
-Import functionality enables you to upload images to your Cloud Servers account. Export functionality enables you to download images from your Cloud Servers account. The images can be saved server images or custom server images created by you or third parties.
+Import functionality enables you to upload images to your Cloud Servers
+account. Export functionality enables you to download images from your Cloud
+Servers account. The images can be saved server images or custom server images
+created by you or third parties.
 
 #### Are the import and export functionalities proprietary to Rackspace?
 
-No, the functionality to import and export is provided by the Glance
+No. The functionality to import and export is provided by the Glance
 OpenStack project API (Icehouse release). We're simply making it
 available to our customers.
 
@@ -271,10 +299,13 @@ conventions as standard bandwidth and storage:
 
 #### What formats are supported for image imports?
 
-In order to be imported into the Rackspace open cloud, images must be in the [VHD (Virtual Hard Disk) format](http://en.wikipedia.org/wiki/VHD_(file_format)). The image
+In order to be imported into the Rackspace open cloud, images must be in the
+[Virtual Hard Disk (VHD)
+format](https://en.wikipedia.org/wiki/VHD_(file_format)). The image
 must also follow Rackspace open cloud bootstrapping practices. For
-details about these practices, see
-[Preparing an Image for Import into the Rackspace Open Cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
+details about these practices, see [Preparing an image for import into the
+Rackspace open
+cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
 
 #### Are there any limitations on the operating system that is installed on an image?
 
@@ -282,7 +313,8 @@ Microsoft product use rights do not allow the use of License Mobility
 for Windows licenses. Given the limitations related to this software
 platform, image import is not available for Windows images. You may
 import other operating systems as long as you do not violate any
-licensing restrictions. For more information, contact the vendor of the operating system you want to import.
+licensing restrictions. For more information, contact the vendor of the
+operating system that you want to import.
 
 #### Are there any limitations on the software that I can import on an image?
 
@@ -299,7 +331,9 @@ No. As stipulated in the [Rackspace Cloud Terms of Service](https://www.rackspac
 #### Are all images available for export?
 
 Certain images may not be available for export if they are using
-licenses or licensing schemes for which Rackspace is responsible, or for which Rackspace has an agreement with the provider. The export task goes into an error state with a message indicating that the image cannot be exported.
+licenses or licensing schemes for which Rackspace is responsible, or for which
+Rackspace has an agreement with the provider. The export task goes into an
+error state with a message indicating that the image cannot be exported.
 
 **Note**: When you export an image using Cloud Images,
 your image does not leave the Rackspace open cloud. It is deposited in
@@ -309,10 +343,11 @@ image without in any way distributing the image or any software
 contained within it outside of the Rackspace open cloud. This is an
 important distinction for some licensing agreements.
 
-As described in the [Rackspace Cloud Terms of Service](https://www.rackspace.com/information/legal/cloud/tos), you are
-responsible for understanding the licensing terms for all software
-contained in the images that you export. Do not distribute your image outside
-of the Rackspace open cloud unless you're certain that all relevant
+As described in the [Rackspace Cloud Terms of
+Service](https://www.rackspace.com/information/legal/cloud/tos), you are
+responsible for understanding the licensing terms for all of the software that
+is contained in the images that you export. Do not distribute your image
+outside of the Rackspace open cloud unless you're certain that all relevant
 licenses allow you to do so. Depending on the software licenses involved, you
 might need to obtain and apply your own licenses in order to use an image
 outside of the Rackspace open cloud. If you have questions about licensing
@@ -328,11 +363,16 @@ shared with you.
 
 Some images are not available for export due to licensing or
 billing issues. These images currently include all Windows and Red Hat images.
-To determine whether you may export an image, check the value in the `com.rackspace__1__options` property. If the value is zero, you may export the image.
+To determine whether you may export an image, check the value in the
+`com.rackspace__1__options` property. If the value is zero, then you may
+export the image.
 
 #### Can you give me step-by-step instructions for exporting an image?
 
-Detailed instructions for exporting an image are available in the example at [Transferring images between regions of the Rackspace Open Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
+Detailed instructions for exporting an image are available in the example at
+[Transferring images between regions of the Rackspace open
+cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
+.
 
 #### Where is my exported image?
 
@@ -354,9 +394,10 @@ The corruption occurs because part of the image is missing.
 #### Can you recommend a way for me to download my exported image from Cloud Files?
 
 We recommend using the **Swiftly** Cloud Files client to download your
-exported image. For more information, see [Use Swiftly to Download an Exported Image](/how-to/use-swiftly-to-download-an-exported-image).
+exported image. For more information, see [Use Swiftly to Download an Exported
+Image](/how-to/use-swiftly-to-download-an-exported-image).
 
-#### If I have cloud servers in multiple regions, is the image I import available in all regions?
+#### If I have cloud servers in multiple regions, is the image that I import available in all regions?
 
 An imported image is only available in the region into which it has been
 imported. To make the image available in multiple regions, you must
@@ -371,59 +412,74 @@ each region.
 
 #### How do I transfer an image to another region?
 
-For instructions on transferring an image to another region, see [Transferring Images Between Regions of the Rackspace Open Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
+For instructions on transferring an image to another region, see [Transferring
+Images Between Regions of the Rackspace Open
+Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
+.
 
 #### Can I use image export and import to move between Infrastructure and Managed accounts?
 
 Yes. It is possible to move images between Infrastructure and
-Managed accounts by following the steps in the article [Transferring Images Between Regions of the Rackspace Open Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
-to export the required image, then import it into the account the
+Managed accounts by following the steps in the article [Transferring Images
+Between Regions of the Rackspace Open
+Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
+to export the required image, then import it into the account that the
 customer requires. Any images that are shared, imported, or exported are
 deemed to be non-standard. Therefore the *Infrastructure* service level
-is applied regardless of the type of account the image is being
+is applied regardless of the type of account that the image is being
 shared with or imported into. Because backup configurations and monitoring
 checks are applied uniquely to each Cloud instance, they must be recreated
 upon successful import or share.
 
 #### How do I prepare an image for import?
 
-To learn how to prepare an image for import, see [Preparing an Image for Import into the Rackspace Open Cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
+To learn how to prepare an image for import, see [Preparing an image for
+import into the Rackspace open
+cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).
 
 #### Can you recommend a way to upload my image to Cloud Files so that I can import it?
 
 We recommend using the **Swiftly** Cloud Files client to upload your image to
-Cloud Files. For more information on using Swiftly, see [Use Swiftly to upload an image to be imported](/how-to/use-swiftly-to-upload-an-image).
+Cloud Files. For more information on using Swiftly, see [Use Swiftly to upload
+an image](/how-to/use-swiftly-to-upload-an-image).
 
 #### Can you give me step-by-step instructions for importing an image?
 
-Detailed instructions for importing an image are available in the example at [Transferring images between regions of the Rackspace Open Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
+Detailed instructions for importing an image are available in the example at
+[Transferring images between regions of the Rackspace open
+cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
+.
 
-#### Why is the checksum on my imported or exported image different from the one the API shows?
+#### Why is the checksum on my imported or exported image different from the one that the API shows?
 
 An image that you import or export has a different checksum when you view it
-in the Images API or the Compute API. This difference occurs because images
+in the Images API versus the Compute API. This difference occurs because images
 are stored internally in the public cloud in a different format than the
 format they are in when they are transferred.
 
-When you import an image in VHD format, it is compressed using gzip and
-packaged as an Open Virtualization Appliance (OVA) file so that it's in the
-format that the hypervisor expects to see. Therefore, the checksum is
-different.
+When you import an image in VHD format, it is compressed using the Gzip data
+compression program and packaged as an Open Virtualization Appliance (OVA)
+file so that it's in the format that the hypervisor expects to see. Therefore,
+the checksum is different.
 
 When you export an image, the hypervisor stores a server snapshot as an OVA
-file containing multiple VHD files in order to keep server image creation
-fast. These files are then merged into a single VHD. For this reason, the
-checksums for the image in the cloud and the exported image are different.
+file containing multiple VHD files in order to speed the creation of server
+images. These files are then merged into a single VHD file. For this reason,
+the checksums for the image in the cloud and the exported image are different.
 
 In addition, during the coalesce operation that happens on export,
 some information is updated in the headers and footers of the VHD file. This
 process means that the checksum is different even if you import an image
-and then immediately export it, although the content portion of the VHD (the
-non-header and non-footer sections) is identical.
+and then immediately export it, even though the content portion of the VHD is
+identical.
 
-#### I want to boot a server from my imported image, but I can't find the image in the Cloud Control Panel. Where is it?
+#### Where can I find my imported image in the Cloud Control Panel?
 
-The **Create Server** page of the Cloud Control Panel sorts images by the servers for which they provide snapshots. However, because an imported image isn't a snapshot of any existing server in the Cloud, the Cloud Control Panel considers it a snapshot of a deleted server. For this reason, imported images are listed under the **Deleted Servers** category.
+The **Create Server** page of the Cloud Control Panel sorts images by the
+servers for which they provide snapshots. However, because an imported image
+isn't a snapshot of any existing server in the Cloud, the Cloud Control Panel
+considers it a snapshot of a deleted server. For this reason, imported images
+are listed under the **Deleted Servers** category.
 
 ------------------------------------------------------------------------
 
@@ -436,9 +492,12 @@ uses the term _image properties_. These terms refer to the same concept.
 
 #### Why are some image properties protected?
 
-Rackspace places some properties on images in order to determine licensing, billing, and virtual machine (VM) configuration. These properties are inherited by snapshots of the servers that are booted from these images and may not be modified by customers.
+Rackspace places some properties on images in order to determine licensing,
+billing, and virtual machine (VM) configuration. These properties are
+inherited by snapshots of the servers that are booted from these images and
+may not be modified by customers.
 
-#### Does protection affect image metadata calls in the Compute v2 API?
+#### Does image property protection affect the image metadata calls in the Compute v2 API?
 
 Because the Compute (nova) API acts as a proxy for Glance, property
 protections apply to all of the image metadata operations that are performed through the Compute v2 API.
@@ -451,13 +510,19 @@ a property that you don't have permission to modify.
 
 #### How do I know which properties are protected?
 
-Most of the properties that appear on an image by default are protected. One exception is the `name` property, which you may change at any time. However, because we use the `com.rackspace` prefix to indicate Rackspace properties, users are unable to create any new properties with that prefix. The simplest way to determine if you can modify a property is to attempt to change it. If you cannot modify it, a 403 (Forbidden) response is sent.
+Most of the properties that appear on an image by default are protected. One
+exception is the `name` property, which you may change at any time. However,
+because we use the `com.rackspace` prefix to indicate Rackspace properties,
+users are unable to create any new properties with that prefix. The simplest
+way to determine if you can modify a property is to attempt to change it. If
+you cannot modify it, a `403 (Forbidden)` response is sent.
 
-#### I'm creating sub-users on my account and assigning them RBAC roles. Which roles can modify image properties?
+#### Which RBAC roles can modify image properties?
 
-Users with customer-admin roles are able to modify image properties. These roles include **identity:user-admin**, **admin**, and **cloudImages:admin**.
+Users with customer-admin roles are able to modify image properties. These
+roles include **identity:user-admin**, **admin**, and **cloudImages:admin**.
 
-#### Which roles can create image properties?
+#### Which RBAC roles can create image properties?
 
 A user must have a customer-admin role in order to create image properties. We
 restrict image property creation to users with customer-admin roles because,
@@ -472,9 +537,11 @@ properties can also modify and delete image properties.
 
 The following Rackspace Cloud Terms of Service are available:
 
--   [Rackspace Cloud Terms of Service for the United Kingdom cloud](http://www.rackspace.co.uk/legal/cloud-terms-of-service)
+-   [Rackspace Cloud Terms of Service for the United Kingdom
+    cloud](http://www.rackspace.co.uk/legal/cloud-terms-of-service)
 
--   [Rackspace Cloud Terms of Service for the United States cloud](http://www.rackspace.com/information/legal/cloud/tos)
+-   [Rackspace Cloud Terms of Service for the United States
+    cloud](http://www.rackspace.com/information/legal/cloud/tos)
 
 The Terms of Service incorporate the Rackspace Acceptable Use Policy (AUP).
 You can find a link to the appropriate AUP document for your region from
@@ -482,21 +549,26 @@ the pages linked above.
 
 #### What support can I expect for imported and shared images?
 
-Imported and shared images are considered non-standard images. (Learn more
-  about [Standard and Non-Standard Images](/how-to/rackspace-standard-and-non-standard-images)).
+Imported and shared images are considered non-standard images. Learn more
+about [Standard and Non-Standard
+Images](/how-to/rackspace-standard-and-non-standard-images).
 
-For servers booted from non-standard images, we ensure that the host servers are functioning properly and that API availability meets the Service Level
-Agreement. We also provide advice on sharing, importing, and exporting images.
+For servers booted from non-standard images, we ensure that the host servers
+are functioning properly and that API availability meets the Service Level
+Agreement. We also provide advice about sharing, importing, and exporting
+images.
 
-#### I'm a managed cloud customer. Do I only get infrastructure-level support for servers that are built from non-standard images?
+#### I'm a Managed Cloud customer. Do I only get infrastructure-level support for servers that are built from non-standard images?
 
-Our managed cloud support team wants to create amazing customer
+Our Managed Cloud support team wants to create amazing customer
 outcomes. When you build a server from a non-standard image, your
 support representative does what he or she can to troubleshoot and
-provide guidance. However, because the technologies contained in a non-standard
-image are not always popular or well-documented, technical support for
-those technologies is not guaranteed and may vary by support
-representative. Any assistance that is provided in response to a support request for a server that is built from a non-standard image is not an agreement of continuing support, and future requests are handled on a
+provide guidance. However, because the technologies that are contained in a
+non-standard image are not always popular or well-documented, technical
+support for those technologies is not guaranteed and may vary by support
+representative. Any assistance that is provided in response to a support
+request for a server that is built from a non-standard image is not an
+agreement of continuing support, and future requests are handled on a
 case-by-case basis. When you consider deploying a server built from a
 non-standard image as part of your infrastructure, keep in mind
 that if you incur downtime or a degraded state due to problems with the
