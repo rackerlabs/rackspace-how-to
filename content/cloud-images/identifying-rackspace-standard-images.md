@@ -1,7 +1,7 @@
 ---
 permalink: identifying-rackspace-standard-images/
 audit_date: '2018-04-09'
-title: Identifying Rackspace Standard Images
+title: Identifying Rackspace standard images
 type: article
 created_date: '2014-01-14'
 created_by: Cloud Images
@@ -18,8 +18,8 @@ article [Rackspace standard and non-standard images](/how-to/rackspace-standard-
 
 The set of standard images is not the same for all Rackspace Cloud
 accounts. The standard images for an account differ based on the
-account's support level (Managed Infrastructure or Managed Cloud Service
-Level) and whether or not the account uses RackConnect.
+account's support level (Managed Infrastructure or Managed Cloud service
+level) and whether or not the account uses RackConnect.
 
 ### View standard images
 
