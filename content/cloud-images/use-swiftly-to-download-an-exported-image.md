@@ -20,8 +20,10 @@ Large Objects, and that you have installed the Swiftly client for Cloud
 Files. If you need help on any of these topics, see the following
 sources:
 
--   Cloud Images API documentation: [Task to export image](https://developer.rackspace.com/docs/cloud-images/v2/api-reference/image-task-operations/#task-to-export-image)
--   [Install the Swiftly client for Cloud Files](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/)
+-   Cloud Images API documentation: [Task to export
+image](https://developer.rackspace.com/docs/cloud-images/v2/api-reference/image-task-operations/#task-to-export-image)
+-   [Install the Swiftly client for Cloud
+Files](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/)
 
 ### Download your entire image at once
 
@@ -38,7 +40,8 @@ In a bash shell, set the following environment variables:
     CONTAINER=        # the container in Cloud Files that contains your exported image
     IMAGEFILENAME=    # the name of your exported image in Cloud Files
 
-For information about viewing your Rackspace API key, see [View and reset your API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key/).
+For information about viewing your Rackspace API key, see [View and reset your
+API key](https://support.rackspace.com/how-to/view-and-reset-your-api-key/).
 
 #### Invoke Swiftly
 
@@ -47,7 +50,8 @@ line to perform the download, as follows.
 
 **Note:** Consider using a screen session to perform this task. If
 you're not familiar with the GNU Screen program, you can find an
-introduction in [Install the Swiftly client for Cloud Files](/how-to/install-the-swiftly-client-for-cloud-files).
+introduction in [Install the Swiftly client for Cloud
+Files](/how-to/install-the-swiftly-client-for-cloud-files).
 
     swiftly
       --auth-url=https://identity.api.rackspacecloud.com/v2.0
@@ -62,7 +66,8 @@ If you're downloading to a cloud server that's already in the Rackspace
 open cloud, add the **--snet** option to the command so that the file
 is transferred over the internal cloud network. Additionally, if
 you want Swiftly to notify you about what is occurring while your image file
-is downloading, you can add the **--verbose** option. The following example shows how to include these options:
+is downloading, you can add the **--verbose** option. The following example
+shows how to include these options:
 
     swiftly
       --auth-url=https://identity.api.rackspacecloud.com/v2.0
