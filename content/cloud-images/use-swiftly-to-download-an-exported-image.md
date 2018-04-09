@@ -17,11 +17,11 @@ Images. It presumes that you have already used a Cloud Images export
 task to export one of your images from the Rackspace open cloud, that
 you understand how exported images are stored in Cloud Files as Dynamic
 Large Objects, and that you have installed the Swiftly client for Cloud
-Files. If you need help on any of these topics, see the following
-sources:
+Files. If you need help with any of these topics, see the following sources:
 
 -   Cloud Images API documentation: [Task to export
 image](https://developer.rackspace.com/docs/cloud-images/v2/api-reference/image-task-operations/#task-to-export-image)
+-   [Where is my exported image?](/how-to/cloud-images-faq)
 -   [Install the Swiftly client for Cloud
 Files](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/)
 
@@ -276,11 +276,11 @@ In this example, the following segments were downloaded:
     -rw-rw-r-- 1 joeuser joeuser  362443328 Feb 28 21:35 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00002
     -rw-rw-r-- 1 joeuser joeuser  487424512 Feb 28 21:36 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00003
 
-Recall from [How Exported Images are Stored as Dynamic
-Large Objects](/how-to/cloud-images-faq) in the Cloud Images FAQ that each
-segment should be the same size except for the final segment, which can be
-smaller. Therefore, segment-00002 should be the same size as segment-00001,
-and it is not. This information indicates that segment-00002 is corrupted.
+Recall from [Where is my exported image?](/how-to/cloud-images-faq) in the
+Cloud Images FAQ that each segment should be the same size except for the
+final segment, which can be smaller. Therefore, segment-00002 should be the
+same size as segment-00001, and it is not. This information indicates that
+segment-00002 is corrupted.
 
 The next step is to determine if the final segment is the correct size. Recall
 that earlier you invoked Swiftly with the **--full** option to get the full
