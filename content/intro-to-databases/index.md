@@ -7,7 +7,7 @@ last_modified_date: '2018-04-09'
 last_modified_by: Kate Dougherty
 permalink: /intro-to-databases/
 product: Database Services
-product_url: https://www.rackspace.com/dba-services
+product_url: dba-services
 ---
 
 This series of articles provides an introduction to NoSQL databases, and explains the differences between NoSQL databases and relational databases.
