@@ -21,7 +21,7 @@ For more information, see the [RPC-V product page](https://www.rackspace.com/vmw
 
 You can access RPC-V only through a VPN connection to Rackspace.
 
-#### What Rackspace data centers provide Dedicated vCloud? {#general-datacenters}
+#### What Rackspace data centers provide RPC-V? {#general-datacenters}
 
 RPC-V is available in the IAD, DFW, LON, ORD, SDY and HKG data centers.
 
@@ -85,7 +85,7 @@ Yes.
 
 ### Monitoring
 
-#### How are Dedicated vCloud components monitored? {#monitoring-how}
+#### How are RPC-V components monitored? {#monitoring-how}
 
 The management infrastructure is monitored by using the following combination of tools:
 
