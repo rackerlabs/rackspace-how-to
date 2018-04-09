@@ -1,11 +1,11 @@
 ---
 permalink: transferring-images-between-regions-of-the-rackspace-open-cloud/
-audit_date: '2018-03-19'
+audit_date: '2018-04-09'
 title: Transfer images between regions of the Rackspace open cloud
 type: article
 created_date: '2014-02-27'
 created_by: Cloud Images
-last_modified_date: '2018-04-01'
+last_modified_date: '2018-04-09'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
