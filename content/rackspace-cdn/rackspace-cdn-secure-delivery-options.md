@@ -26,10 +26,22 @@ product.
 To serve encrypted traffic from the Akamai edge network to an origin
 over HTTPS, the origin (that is, the web server or load balancer) must
 have a secure certificate that was provisioned by an approved
-Certificate Authority (CA).
+Certificate Authority (CA). 
+
+Site operators must also ensure that the configured origin certificate(s) 
+have a valid trust chain leading to a trusted root certificate. This 
+includes configuring the proper intermediate(s) to be served by the server 
+(where required).
 
 **Note:** Server Name Indication (SNI) configurations on origin servers
-are not currently supported.
+are supported.
+
+#### Let's Encrypt Certificate Compatibility
+Certificates issued by Let's Encrypt are approved for use with 
+Rackspace CDN. IdenTrust has cross signed Let's Encrypt 
+intermediates with their **DST Root CA X3**. This includes
+**Let's Encrypt Authority X3** which is the primary intermediate 
+used to issue Let's Encrypt certificates.
 
 The following CAs are approved:
 
@@ -63,6 +75,8 @@ The following CAs are approved:
 -   QuoVadis Root CA 3
 -   QuoVadis Root CA 2
 -   SecureTrust CA
+-   StartCom Certification Authority
+-   StartCom Class 3 OV Server CA
 -   SwissSign Gold CA - G2
 -   SwissSign Silver CA - G2
 -   TC TrustCenter Class 2 CA II
