@@ -173,8 +173,8 @@ server.) How you accomplish this is up to you. Here are some suggestions:
 -   Use [Swiftly](https://github.com/gholt/swiftly):
     -   [Use Swiftly to download an exported
         image](/how-to/use-swiftly-to-download-an-exported-image)
-    -   [Use Swiftly to upload an image to be
-        imported](/how-to/use-swiftly-to-upload-an-image)
+    -   [Use Swiftly to upload an
+        image](/how-to/use-swiftly-to-upload-an-image)
 
 We don't recommend that you use the Cloud Control Panel for this operation.
 The large size of most images would likely result in a poor user experience.  
