@@ -31,7 +31,7 @@ your account.
 Panel](https://mycloud.rackspace.com), select the **Rackspace** tab when
 choosing the base image to list only standard images.
 
-- **Cloud Servers API**: To identify standard images when using the [Cloud Servers API v2](https://developer.rackspace.com/docs/cloud-servers/v2/),
+- **Cloud Servers API**: To identify standard images when using the [Cloud Servers API v2.0](https://developer.rackspace.com/docs/cloud-servers/v2/),
 make a [retrieve list of images request](https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-images-operations/#retrieve-list-of-images) and
 filter it to list images that have their `type` value set to `BASE`.
 
