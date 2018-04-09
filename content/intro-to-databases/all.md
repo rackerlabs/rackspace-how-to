@@ -1,6 +1,6 @@
 ---
-title: Introduction to Databases: All articles
-category: Managed Databases
+title: Introduction to databases: All articles
+category: Cloud Hosting
 permalink: intro-to-databases-all-articles/
 product: Database Services
 product_url: dba-services
