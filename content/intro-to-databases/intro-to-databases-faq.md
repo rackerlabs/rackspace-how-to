@@ -5,19 +5,21 @@ title: Introduction to databases FAQ
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-06'
+last_modified_date: '2018-04-09'
 last_modified_by: Kate Dougherty
 product: Database Services
 product_url: https://www.rackspace.com/dba-services
 ---
 
-### Getting started
+### NoSQL databases
 
 #### Are NoSQL databases secure, reliable, and scalable?
 
 NoSQL databases offer greater scalability and higher performance than
 relational databases. In addition, the data model that NoSQL databases use
-address several issues that the relational model is not designed to address.
+addresses several issues that the relational model is not designed to address.
+For example, NoSQL databases are able to store semi-unstructured and
+unstructured data.
 
 However, in order to support reliability and security, developers must
 implement their own code, which makes NoSQL systems more complex. This
@@ -36,21 +38,21 @@ transactions, such as banking applications.
 Because NoSQL databases are decentralized, most have their own automatic
 backup and recovery processes. By fine-tuning certain database elements such
 as index use, query structure, data models, system configuration (such as
-hardware and OS settings), and application design, you can significantly
-impact the overall performance of application.
+hardware and operating system settings), and application design, you can significantly impact the overall performance of your application.
 
 #### How do I create databases and objects and read and write data without SQL?
 
-NoSQL databases are designed to enable the insertion of data without a predefined schema. Every NoSQL database has a unique way of creating databases and objects. While few NoSQL databases use query languages to build the database and read and write the data, some enable users to build databases and read and write data by using Java or Python scripting.
+NoSQL databases are designed to enable the insertion of data without a
+predefined schema. Every NoSQL database has a unique way of creating databases
+and objects. While few NoSQL databases use query languages to build the
+database and read and write the data, some enable users to perform these tasks
+by using Java or Python scripting.
 
-#### How do I contact the Managed Operations team?
-
-You can contact the Managed Operations team by submitting a ticket or chat
-request through the Cloud Control Panel, or by calling 1 800 961 4454.
+### Rackspace Managed Database Services
 
 #### Does Rackspace tune my database?
 
-Yes, based on the service agreement, Rackspace tunes your database.
+Yes, based on the service level agreement (SLA), Rackspace tunes your database.
 
 #### What is the cost for Managed Database Services?
 
@@ -58,6 +60,15 @@ For full pricing information for Managed Database Services, see the <Managed Ser
 
 #### What is included with Managed Database Services?
 
-Managed Database Services offers varying levels of support. The level of support that is included will depend on your SLA.
+Managed Database Services offers varying levels of support. The level of
+support that is included depends on your SLA.
 
-The Support team can be reach out via phone, chat, and online support ticket. The team will maintain the availability and security of the database as per the SLA. Based on the SLA, we regularly back up your database and also perform required patches at regular intervals. The Managed Operations team proactively monitors and responds to alerts.
+The Managed Databases team maintains the availability and security of your
+database in accordance with your SLA. Based on the SLA, we regularly back up
+your database and also perform required patches at regular intervals. The
+Managed Operations team proactively monitors and responds to alerts.
+
+#### How do I contact the Managed Operations team?
+
+You can contact the Managed Operations team by submitting a ticket or chat
+request through the [Cloud Control Panel](https://mycloud.rackspace.com/), or by calling 1 800 961 4454.
