@@ -1,6 +1,6 @@
 ---
 permalink: preparing-an-image-for-import-into-the-rackspace-opencloud/
-audit_date: '2018-04-09'
+audit_date: '2018-04-10'
 title: Prepare an image for import into the Rackspace Open Cloud
 type: article
 created_date: '2014-02-16'
