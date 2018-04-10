@@ -18,7 +18,7 @@ and instructions.
 
 ### General requirements
 
-The general requirements are as follows:
+Images must follow these general requirements:
 
 -   The image must be a single file in the Virtual Hard Disk (VHD) file format.
 
