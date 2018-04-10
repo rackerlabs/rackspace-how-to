@@ -5,7 +5,7 @@ title: Use Swiftly to download an exported image
 type: article
 created_date: '2015-11-30'
 created_by: Cloud Images
-last_modified_date: '2018-04-10'
+last_modified_date: '2018-04-09'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
