@@ -5,7 +5,7 @@ title: Cloud Images FAQ
 type: article
 created_date: '2014-01-14'
 created_by: Cloud Images
-last_modified_date: '2018-04-09'
+last_modified_date: '2018-04-10'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
@@ -74,7 +74,7 @@ Yes, image sharing is available in the Cloud Control Panel. For detailed instruc
 
 #### Where can I read a quick summary about image sharing?
 
-For a brief overview of this functionality, see the _[Image sharing](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)_ section of the Cloud Images API documentation.
+For a brief overview of this functionality, see _Image sharing](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)_ in the Cloud Images API documentation.
 
 #### Does it cost anything to share images?
 
@@ -103,7 +103,7 @@ the type of software that is included on images.
 
 No. Image charges are the responsibility of the person sharing the
 image. However, if you create an image of a server that was built from an image
-that was shared to you, that image is stored in your account and
+that was shared with you, that image is stored in your account and
 charged at normal Cloud Files rates.
 
 #### What information is required to share an image from one account to another?
@@ -118,7 +118,7 @@ the **Account** menu in the upper-right corner.
 The process of image sharing requires you to accept the share request
 before you can see the image. To do this, you need to
 know the UUID of the image that was shared with you. For instructions for
-accepting an image, please consult the [Cloud Images v2 API
+accepting an image, consult the [Cloud Images v2 API
 documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
 
 #### Can I share or accept an image in the Chicago region?
@@ -127,9 +127,9 @@ If you are an image producer and want to share an image in the Chicago (ORD)
 region of the Rackspace cloud, be aware that the provisioning of
 cloud services in the ORD region is not available to recent
 customers. If you share an image with one of these customers, the sharing
-occurs without error from your perspective. However, if the consumer you are
-sharing with doesn't have cloud services in ORD, they cannot see the image and
-cannot boot from it.
+occurs without error from your perspective. However, if the consumer that you
+are sharing with doesn't have cloud services in ORD, they cannot see the image
+and cannot boot from it.
 
 Customers can determine if they have access to the ORD region in one of the following ways:
 
@@ -140,7 +140,7 @@ Customers can determine if they have access to the ORD region in one of the foll
 To learn more about regions in the Rackspace cloud, see [Rackspace data
 centers and regions](/how-to/rackspace-data-centers-and-regions).
 
-#### What if someone shares an image to me that I don't want, or if I don't know the person?
+#### What if someone shares an image with me that I don't want, or if I don't know the person?
 
 The process of image sharing requires you to accept the share request
 before you can see the image in your image list. This requirement prevents
@@ -159,7 +159,7 @@ documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-gu
 
 Customers are liable for any activities resulting from the use of Cloud
 Images. For your protection, only use images shared by people you know.
-If you encounter fraudulent activities, please contact Rackspace Support.
+If you encounter fraudulent activities, contact Rackspace Support.
 
 #### What happens if an image with malware is shared to me? How can I report it?
 
@@ -174,12 +174,12 @@ even if the image has been un-shared with you or if the image owner has
 deleted the image. You can also create your own image from a server that was
 built by using a shared image.
 
-#### What happens if an image is un-shared to me or if the image owner deletes the image?
+#### What happens if an image is un-shared with me or if the image owner deletes the image?
 
-If an image is un-shared to you or the owner deletes the image,
+If an image is un-shared with you or the owner deletes the image,
 you no longer have access to the image. If access to a particular
 image is important to you, create your own image of a server you've
-built from that image. You are the owner of the image you create
+built from that image. You are the owner of the image that you create
 and can create new servers from that image.
 
 #### Some images have disappeared from my Compute v2 API (nova) image list. Where did they go?
@@ -197,10 +197,10 @@ API](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image
 #### Can I share an image across regions?
 
 Image sharing can only occur within a single region of the Rackspace
-open cloud. For example, you cannot share an image in the ORD region in
-a way that enables it to be used in the Sydney region (SYD). If your image is
-in North Virginia (IAD) and you share it with someone else, they are only able
-to build servers from the image in the IAD region.
+open cloud. For example, you cannot share an image in the Chicago region (ORD)
+in a way that enables it to be used in the Sydney region (SYD). If your image
+is in North Virginia (IAD) and you share it with someone else, they are only
+able to build servers from the image in the IAD region.
 
 ------------------------------------------------------------------------
 
@@ -337,7 +337,7 @@ error state with a message indicating that the image cannot be exported.
 
 **Note**: When you export an image using Cloud Images,
 your image does not leave the Rackspace open cloud. It is deposited in
-your Cloud Files account so that you may have a personal copy of the
+your Cloud Files account so that you have a personal copy of the
 image. This process enables you to have a copy of your
 image without in any way distributing the image or any software
 contained within it outside of the Rackspace open cloud. This is an
@@ -394,8 +394,8 @@ The corruption occurs because part of the image is missing.
 #### Can you recommend a way for me to download my exported image from Cloud Files?
 
 We recommend using the **Swiftly** Cloud Files client to download your
-exported image. For more information, see [Use Swiftly to Download an Exported
-Image](/how-to/use-swiftly-to-download-an-exported-image).
+exported image. For more information, see [Use Swiftly to download an exported
+image](/how-to/use-swiftly-to-download-an-exported-image).
 
 #### If I have cloud servers in multiple regions, is the image that I import available in all regions?
 
@@ -405,23 +405,17 @@ transfer it from your Cloud Files account in region A to your Cloud
 Files account in region B, and then use the Cloud Images API endpoint for
 region B to import the image into region B.
 
-Rackspace is building image cloning functionality that will
-enable you to move images directly from region to region without having
-to perform the intermediate Cloud Files transfer and image import in
-each region.
-
 #### How do I transfer an image to another region?
 
 For instructions on transferring an image to another region, see [Transferring
-Images Between Regions of the Rackspace Open
-Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
-.
+images between regions of the Rackspace Open
+Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### Can I use image export and import to move between Infrastructure and Managed accounts?
 
 Yes. It is possible to move images between Infrastructure and
-Managed accounts by following the steps in the article [Transferring Images
-Between Regions of the Rackspace Open
+Managed accounts by following the steps in the article [Transferring images
+between regions of the Rackspace Open
 Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
 to export the required image, then import it into the account that the
 customer requires. Any images that are shared, imported, or exported are
@@ -446,9 +440,8 @@ an image](/how-to/use-swiftly-to-upload-an-image).
 #### Can you give me step-by-step instructions for importing an image?
 
 Detailed instructions for importing an image are available in the example at
-[Transferring images between regions of the Rackspace open
-cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
-.
+[Transferring images between regions of the Rackspace Open
+Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### Why is the checksum on my imported or exported image different from the one that the API shows?
 
@@ -477,7 +470,7 @@ identical.
 
 The **Create Server** page of the Cloud Control Panel sorts images by the
 servers for which they provide snapshots. However, because an imported image
-isn't a snapshot of any existing server in the Cloud, the Cloud Control Panel
+isn't a snapshot of any existing server in the cloud, the Cloud Control Panel
 considers it a snapshot of a deleted server. For this reason, imported images
 are listed under the **Deleted Servers** category.
 
@@ -513,7 +506,7 @@ a property that you don't have permission to modify.
 Most of the properties that appear on an image by default are protected. One
 exception is the `name` property, which you may change at any time. However,
 because we use the `com.rackspace` prefix to indicate Rackspace properties,
-users are unable to create any new properties with that prefix. The simplest
+you are unable to create any new properties with that prefix. The simplest
 way to determine if you can modify a property is to attempt to change it. If
 you cannot modify it, a `403 (Forbidden)` response is sent.
 
@@ -550,12 +543,12 @@ the pages linked above.
 #### What support can I expect for imported and shared images?
 
 Imported and shared images are considered non-standard images. Learn more
-about [Standard and Non-Standard
-Images](/how-to/rackspace-standard-and-non-standard-images).
+about [Standard and non-standard
+images](/how-to/rackspace-standard-and-non-standard-images).
 
 For servers booted from non-standard images, we ensure that the host servers
 are functioning properly and that API availability meets the Service Level
-Agreement. We also provide advice about sharing, importing, and exporting
+Agreement (SLA). We also provide advice about sharing, importing, and exporting
 images.
 
 #### I'm a Managed Cloud customer. Do I only get infrastructure-level support for servers that are built from non-standard images?
@@ -565,7 +558,7 @@ outcomes. When you build a server from a non-standard image, your
 support representative does what he or she can to troubleshoot and
 provide guidance. However, because the technologies that are contained in a
 non-standard image are not always popular or well-documented, technical
-support for those technologies is not guaranteed and may vary by support
+support for those technologies is not guaranteed and might vary by support
 representative. Any assistance that is provided in response to a support
 request for a server that is built from a non-standard image is not an
 agreement of continuing support, and future requests are handled on a
