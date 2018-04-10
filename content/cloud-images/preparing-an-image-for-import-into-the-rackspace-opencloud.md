@@ -28,11 +28,11 @@ Images must follow these general requirements:
 
 -   Images must not expand to a system disk larger than 40 GB.
 
+    **Note**: Images with system disks larger than 40 GB can be exported but
+    cannot be imported into the Rackspace Open Cloud.
+
 -   If you have exported an image from the Rackspace Open Cloud it will
     already be in the VHD format that is required for import.
-
-    **Note**: Images with system disks larger than 40 GB can be
-    exported, but cannot be imported into the Rackspace Open Cloud.
 
 ### Microsoft Windows
 
@@ -45,7 +45,7 @@ platform, import is not available for Windows images.
 ### Prepare an image offline using XenServer
 
 If you are preparing an image specifically for use in the Rackspace Open
-Cloud, we recommend that you prepare it offline using a local
+Cloud, we recommend that you prepare it offline by using a local
 installation of XenServer.
 
 For instructions for preparing an image on Linux, see [Create a server image
@@ -79,7 +79,7 @@ We suggest that you take the following steps:
     Rackspace Open Cloud.
 9.  In the Rackspace Open Cloud, boot a server from the imported image.
 
-For a tutorial on this process, see [Bootstrap Your QCOW Images for the
+For a tutorial on this process, see [Bootstrap your QCOW images for the
 Rackspace Public
 Cloud](https://developer.rackspace.com/blog/bootstrap-your-qcow-images-for-the-rackspace-public-cloud/). This tutorial walks through the process of preparing
 a QEMU Copy on Write (QCOW) image and converting it to the VHD format so that
@@ -92,5 +92,5 @@ Cloud, consider using **boot.rackspace.com**. This method enables you to
 prepare an image from directly inside the Rackspace Open Cloud.
 For details, see the following posts from the Rackspace DevOps Blog:
 
--   [Introducing boot.rackspace.com](http://developer.rackspace.com/blog/introducing-boot-dot-rcckspace-dot-com.html)
+-   [Introducing boot.rackspace.com](http://developer.rackspace.com/blog/introducing-boot-dot-rackspace-dot-com.html)
 -   [Custom images via boot.rackspace.com - Training wheels included](http://developer.rackspace.com/blog/custom-images-via-boot-dot-rackspace-dot-com-training-wheels-included.html)
