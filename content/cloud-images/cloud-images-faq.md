@@ -74,7 +74,7 @@ Yes, image sharing is available in the Cloud Control Panel. For detailed instruc
 
 #### Where can I read a quick summary about image sharing?
 
-For a brief overview of this functionality, see _Image sharing](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)_ in the Cloud Images API documentation.
+For a brief overview of this functionality, see _[Image sharing](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing)_ in the Cloud Images API documentation.
 
 #### Does it cost anything to share images?
 
@@ -117,8 +117,9 @@ the **Account** menu in the upper-right corner.
 
 The process of image sharing requires you to accept the share request
 before you can see the image. To do this, you need to
-know the UUID of the image that was shared with you. For instructions for
-accepting an image, consult the [Cloud Images v2 API
+know the universally unique identifier (UUID) of the image that was shared
+with you. For instructions for accepting an image, consult the [Cloud Images
+v2 API
 documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
 
 #### Can I share or accept an image in the Chicago region?
@@ -133,7 +134,8 @@ and cannot boot from it.
 
 Customers can determine if they have access to the ORD region in one of the following ways:
 
-1) Cloud Control Panel users can navigate to **Servers > Cloud Servers** and look for **Chicago (ORD)** as an option in the dropdown on the left.
+1) Cloud Control Panel users can navigate to **Servers > Cloud Servers** and
+look for **Chicago (ORD)** as an option in the dropdown on the left.
 
 2) API users can look directly in their API service catalogs.
 
@@ -158,10 +160,10 @@ documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-gu
 #### What happens if someone accidentally (or intentionally) shares an image with malware, root kits, backdoors, or other vulnerabilities? Who is liable?
 
 Customers are liable for any activities resulting from the use of Cloud
-Images. For your protection, only use images shared by people you know.
+Images. For your protection, only use images shared by people that you know.
 If you encounter fraudulent activities, contact Rackspace Support.
 
-#### What happens if an image with malware is shared to me? How can I report it?
+#### What happens if an image with malware is shared with me? How can I report it?
 
 You can report suspicious activities to Rackspace Support and to the [Cloud
 Images team](mailto:cloudimageshelp@rackspace.com).
@@ -240,7 +242,7 @@ The following product-specific roles are also available:
 
 #### What are the capabilities of these roles?
 
-For details on Cloud Image roles, see the [Detailed Permission Matrix for Cloud
+For details on Cloud Image roles, see the [Permission matrix for Cloud
 Images](/how-to/detailed-permissions-matrix-for-cloud-images).
 
 ------------------------------------------------------------------------
@@ -318,7 +320,7 @@ operating system that you want to import.
 
 #### Are there any limitations on the software that I can import on an image?
 
-It is your responsibility to ensure that any software you place on an
+It is your responsibility to ensure that any software that you place on an
 image to be imported is properly licensed for use in the cloud. Be aware
 that Microsoft licensing in particular is extremely restrictive. If
 you are in doubt, do not import any software until you have checked with
@@ -370,14 +372,18 @@ export the image.
 #### Can you give me step-by-step instructions for exporting an image?
 
 Detailed instructions for exporting an image are available in the example at
-[Transferring images between regions of the Rackspace open
-cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
-.
+[Transfer images between regions of the Rackspace open
+cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### Where is my exported image?
 
 Your image is exported into a container that you specify in your Cloud Files
-account. It is stored as a _Dynamic Large Object_ in Cloud Files. A dynamic large object is a series of _segments_, along with a _manifest object_. In order to download the image, you download the manifest object. (The filename for this object follows the format `{image_uuid}.vhd`.) Cloud Files streams all of the segments in the correct order. The following image shows what displays in the Cloud Control Panel when you download an image:
+account. It is stored as a _Dynamic Large Object_ (DLO) in Cloud Files. A DLO
+is a series of _segments_, along with a _manifest object_. In order to
+download the image, you download the manifest object. (The filename for this
+object follows the format `{image_uuid}.vhd`.) Cloud Files streams all of the
+segments in the correct order. The following image shows what displays in the
+Cloud Control Panel when you download an image:
 
 <img src="{% asset_path cloud-images/cloud-images-faq/file-listing_0.png %}" alt="" />
 
@@ -407,14 +413,14 @@ region B to import the image into region B.
 
 #### How do I transfer an image to another region?
 
-For instructions on transferring an image to another region, see [Transferring
+For instructions on transferring an image to another region, see [Transfer
 images between regions of the Rackspace Open
 Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### Can I use image export and import to move between Infrastructure and Managed accounts?
 
 Yes. It is possible to move images between Infrastructure and
-Managed accounts by following the steps in the article [Transferring images
+Managed accounts by following the steps in the article [Transfer images
 between regions of the Rackspace Open
 Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
 to export the required image, then import it into the account that the
@@ -422,7 +428,7 @@ customer requires. Any images that are shared, imported, or exported are
 deemed to be non-standard. Therefore the *Infrastructure* service level
 is applied regardless of the type of account that the image is being
 shared with or imported into. Because backup configurations and monitoring
-checks are applied uniquely to each Cloud instance, they must be recreated
+checks are applied uniquely to each cloud instance, they must be recreated
 upon successful import or share.
 
 #### How do I prepare an image for import?
@@ -440,7 +446,7 @@ an image](/how-to/use-swiftly-to-upload-an-image).
 #### Can you give me step-by-step instructions for importing an image?
 
 Detailed instructions for importing an image are available in the example at
-[Transferring images between regions of the Rackspace Open
+[Transfer images between regions of the Rackspace Open
 Cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 #### Why is the checksum on my imported or exported image different from the one that the API shows?
@@ -543,7 +549,7 @@ the pages linked above.
 #### What support can I expect for imported and shared images?
 
 Imported and shared images are considered non-standard images. Learn more
-about [Standard and non-standard
+about [Rackspace standard and non-standard
 images](/how-to/rackspace-standard-and-non-standard-images).
 
 For servers booted from non-standard images, we ensure that the host servers
