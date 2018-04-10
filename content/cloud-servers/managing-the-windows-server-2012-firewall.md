@@ -5,8 +5,8 @@ title: Manage the Windows Server 2012 Firewall
 type: article
 created_date: '2013-04-23'
 created_by: Evan Nabors
-last_modified_date: '2016-07-07'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-04-14'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -18,8 +18,7 @@ rules.
 
 ### Manage firewall settings
 
-The Windows Firewall with Advanced Security is a host-based firewall that runs on
-Windows Server 2012 and is turned on by default. Firewall settings
+The Windows Firewall with Advanced Security is a host-based firewall that runs on Windows Server 2012 and is turned on by default. Firewall settings
 within Windows Server 2012 are managed from within the Windows Firewall
 MMC (Microsoft Management Console). To review and set Firewall settings
 perform the following:
@@ -47,9 +46,9 @@ Security**.
 2. Select either **Inbound Rules** or **Outbound Rules** under **Windows Firewall with Advanced
 Security** on the left side of the management console.
 
-   **Note**: This will provide a listing on each of the currently configured firewall rules. Rules that are currently enabled are denoted by green checkbox icon, while disabled rules display a grey checkbox icon. Right-clicking a rule will allow you toggle enable/disable.
+   **Note**: This will provide a listing on each of the currently configured firewall rules. Rules that are currently enabled are denoted by green checkbox icon, while disabled rules display a grey checkbox icon. Right-clicking a rule will pull up a menu that will allow you toggle it to enabled/disabled.
 
-3. From the right side of either the **Inbound Rules** or **Outbound Rules** tab click **New Rule**.
+3. From the **Actions** pane next to either **Inbound Rules** or **Outbound Rules** section click **New Rule**.
 
    The new rule wizard launches.
 
@@ -63,7 +62,7 @@ Security** on the left side of the management console.
 
    <img src="{% asset_path cloud-servers/managing-the-windows-server-2012-firewall/rule_protocol.png %}" width="733" height="590" />
 
-7. Select an **IP address association** for both local and remote addresses and click **Next**.
+7. In the **Scope** section of the wizard under “Which local IP addresses does this rule apply to?” specify which local IP addresses will utilize the radio buttons and/or the buttons next to the list pane you wish to apply this rule to. Under “Which remote IP addresses does this rule apply to?”, specify which remote (not on this server) IP addresses utilizing the radio buttons and/or the buttons next to the list pane you wish to apply this rule to.
 
 8. For traffic matching the IP address(es) you specified in the previous step, select whether to **Allow the connection**, **Allow the connection if it is secure**, or **Block the connection** and click **Next**.
 
