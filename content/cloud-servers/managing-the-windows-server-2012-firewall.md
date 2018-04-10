@@ -62,7 +62,7 @@ Security** on the left side of the management console.
 
    <img src="{% asset_path cloud-servers/managing-the-windows-server-2012-firewall/rule_protocol.png %}" width="733" height="590" />
 
-7. In the **Scope** section of the wizard under “Which local IP addresses does this rule apply to?” specify which local IP addresses will utilize the radio buttons and/or the buttons next to the list pane you wish to apply this rule to. Under “Which remote IP addresses does this rule apply to?”, specify which remote (not on this server) IP addresses utilizing the radio buttons and/or the buttons next to the list pane you wish to apply this rule to.
+7. In the **Scope** section of the wizard under “Which local IP addresses does this rule apply to?” specify which local IP addresses will utilize the radio buttons and/or the buttons next to the list pane for which you want to apply this rule. Under “Which remote IP addresses does this rule apply to?”, specify which remote IP addresses utilizing the radio buttons and/or the buttons next to the list pane for which you want to apply this rule.
 
 8. For traffic matching the IP address(es) you specified in the previous step, select whether to **Allow the connection**, **Allow the connection if it is secure**, or **Block the connection** and click **Next**.
 
