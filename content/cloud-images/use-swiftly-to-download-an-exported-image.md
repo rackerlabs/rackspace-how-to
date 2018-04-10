@@ -5,7 +5,7 @@ title: Use Swiftly to download an exported image
 type: article
 created_date: '2015-11-30'
 created_by: Cloud Images
-last_modified_date: '2018-04-09'
+last_modified_date: '2018-04-10'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
@@ -16,12 +16,12 @@ download from Cloud Files an image that you have exported from Cloud
 Images. It presumes that you have already used a Cloud Images export
 task to export one of your images from the Rackspace open cloud, that
 you understand how exported images are stored in Cloud Files as Dynamic
-Large Objects, and that you have installed the Swiftly client for Cloud
+Large Objects (DLOs), and that you have installed the Swiftly client for Cloud
 Files. If you need help with any of these topics, see the following sources:
 
 -   Cloud Images API documentation: [Task to export
 image](https://developer.rackspace.com/docs/cloud-images/v2/api-reference/image-task-operations/#task-to-export-image)
--   [Where is my exported image?](/how-to/cloud-images-faq)
+-   Cloud Images FAQ: [Where is my exported image?](/how-to/cloud-images-faq)
 -   [Install the Swiftly client for Cloud
 Files](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/)
 
@@ -63,10 +63,10 @@ Files](/how-to/install-the-swiftly-client-for-cloud-files).
       ${CONTAINER}/${IMAGEFILENAME}
 
 If you're downloading to a cloud server that's already in the Rackspace
-open cloud, add the **--snet** option to the command so that the file
+open cloud, add the `--snet` option to the command so that the file
 is transferred over the internal cloud network. Additionally, if
 you want Swiftly to notify you about what is occurring while your image file
-is downloading, you can add the **--verbose** option. The following example
+is downloading, you can add the `--verbose` option. The following example
 shows how to include these options:
 
     swiftly
@@ -97,9 +97,9 @@ The following code block shows the verbose response for the preceding call.
 The time that it takes for Swiftly to complete the download depends on
 the speed of your network connection and general network congestion. In
 some cases, the download might complete prematurely. To verify that this
-hasn't occurred, compare the size in bytes of the file you receive with the
-size of the file that exists in Cloud Files. If they're not the same size, a
-problem has occurred.
+hasn't occurred, compare the size in bytes of the file that you receive with
+the size of the file that exists in Cloud Files. If they're not the same size,
+a problem has occurred.
 
 To determine the size of the file that you received, check your local file
 system:
@@ -108,8 +108,7 @@ system:
     total 2524008
     -rw-rw-r-- 1 joeuser joeuser 2584576512 Apr 28 19:52 downloaded-image.vhd
 
-You can use Swiftly to determine the size of the file as it exists in
-Cloud Files:
+You can use Swiftly to determine the size of the file in Cloud Files:
 
     swiftly
       --auth-url=https://identity.api.rackspacecloud.com/v2.0
@@ -120,7 +119,7 @@ Cloud Files:
       ${CONTAINER}/${IMAGEFILENAME}
 
 The response should be similar to the following one. The file size is the
-value in the **Content-Length** header.
+value in the `Content-Length` header.
 
     Content-Length:    2584576512
     Content-Type:      application/octet-stream
@@ -131,14 +130,14 @@ value in the **Content-Length** header.
     X-Trans-Id:        txe67683c4407d4e8aa01b8-00535eac8aiad3
 
 In the preceding examples, the size of the local file in bytes matches
-the **Content-Length** of the Dynamic Large Object (DLO) in Cloud Files.
+the `Content-Length` of the Dynamic Large Object (DLO) in Cloud Files.
 Therefore, the download did not end prematurely. However, this information
 only indicates that the correct number of bytes was received. It does not tell
 you that the value of every byte is correct.
 
 If you suspect that your download was corrupted, or if you're trying to
-download an image from one side of the world to the other, you might want
-to try the alternative method that is described in the next section.
+download an image from data centers one side of the world to the other, you
+might want to try the alternative method that is described in the next section.
 
 ### Alternative download method
 
@@ -148,15 +147,15 @@ This section describes an alternative method that involves downloading the
 individual segments that comprise the object. This method has the following
 advantages:
 
-- It involves working with smaller, more manageable pieces.
+- This method works with smaller, more manageable pieces.
 - You can verify the checksum for each of the pieces to ensure that no
   part is corrupted.
-- If a segment is faulty, you only need to re-download the faulty segment.
+- If a segment is faulty, you need to re-download only the faulty segment.
 - After you have all of the pieces, you can stream them locally into a
-  single VHD file.
+  single Virtual Hard Disk (VHD) file.
 
-This section assumes that you have set all of the environment variables
-described in the preceding section.
+**Note**: This section assumes that you have set all of the environment
+variables described in the preceding section.
 
 #### Get the DLO manifest
 
@@ -170,7 +169,7 @@ Use the following command to get the DLO manifest:
       head
       ${CONTAINER}/${IMAGEFILENAME}
 
-The response will look something like the following one:
+The response will be similar to the following one:
 
     Content-Length:    2584576512
     Content-Type:      application/octet-stream
@@ -180,22 +179,22 @@ The response will look something like the following one:
     X-Timestamp:       1393623455.54221
     X-Trans-Id:        tx020fee01f492491abc2ac-00535d40f7iad3
 
-The **X-Object-Manifest** header indicates that this is a DLO. The value of
-this header specifies the container in which the segments are contained (in
-this example, **exports**) and the pattern that is used to find the segments
+The `X-Object-Manifest` header indicates that this is a DLO. The value of
+this header specifies the container where the segments are located (in
+this example, `exports`) and the pattern that is used to find the segments
 in that container (in this example,
-**9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-**). When you request a
+`9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-`). When you request a
 download of this manifest object, Cloud Files accesses the container in
-your account that is named **exports**, finds all of the objects in it that
+your account that is named `exports`, finds all of the objects in it that
 have names that match the pattern
-**9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-**, and streams them out in
+`9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-`, and streams them out in
 alphabetical order.
 
 #### Get the detailed list of segments
 
 **Note**: Before reading this section, you might want to review [Where is my
 exported image?](/how-to/cloud-images-faq) in the Cloud Images FAQ for a
-reminder of the naming conventions that the Cloud Images export task uses.
+reminder of the naming conventions used by Cloud Images export task.
 
 Now that you know the container and pattern that will be used to locate
 the segments for the DLO that you want to download, you can use Swiftly to get
@@ -245,8 +244,8 @@ before attempting the download.
         --output=${LOCAL_DIR}/
       ${CONTAINER}
 
-The following code shows sample output when the Swiftly verbose option is
-enabled:
+The following code shows sample output when the Swiftly `--verbose` option is
+used:
 
     VERBOSE 0.00 1 Attempting auth v2 RAX-KSKEY:apiKeyCredentials with https://identity.api.rackspacecloud.com/v2.0
     VERBOSE 0.00 1 Establishing HTTPS connection to identity.api.rackspacecloud.com
@@ -282,11 +281,11 @@ final segment, which can be smaller. Therefore, segment-00002 should be the
 same size as segment-00001, and it is not. This information indicates that
 segment-00002 is corrupted.
 
-The next step is to determine if the final segment is the correct size. Recall
-that earlier you invoked Swiftly with the **--full** option to get the full
-details on all of the segments in the **exports** container that match the
-pattern **9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-**. From that sample
-output, you can see that the final segment should be 487424512 bytes, and
+The next step determines if the final segment is the correct size. Earlier,
+you invoked Swiftly with the `--full` option to get the full
+details on all of the segments in the `exports` container that match the
+pattern `9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-`. From that sample
+output, you see that the final segment should be 487424512 bytes, and
 segment-00003 matches that value.
 
 #### Download a segment (if necessary)
@@ -333,7 +332,7 @@ that the content of each segment is correct. To verify that the content is
 correct, get the MD5 checksum of each segment and compare it to the MD5
 checksum of the corresponding segment in Cloud Files. (The list of MD5
 checksums of the segments in Cloud Files were displayed when you invoked
-Swiftly with the **--full** option above to get the detailed list
+Swiftly with the `--full` option above to get the detailed list
 of segments.)
 
     $ cd my-images
@@ -352,7 +351,7 @@ successfully.
 ### Reconstitute the VHD file
 
 After all of the segments have been downloaded correctly, you can create a
-single VHD file, as follows:
+single VHD file:
 
     # still in the "my-images" directory
     $ cat 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-0000* > 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd
@@ -365,8 +364,8 @@ single VHD file, as follows:
     -rw-rw-r-- 1 joeuser joeuser 1048576000 Apr 29 02:59 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00002
     -rw-rw-r-- 1 joeuser joeuser  487424512 Feb 28 21:36 9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-00003
 
-Earlier in this article, we used Swiftly to perform a HEAD request on the DLO
-in Cloud Files and determined that the **Content-Length** for a request of the
+Earlier in this article, we used Swiftly to perform a `HEAD` request on the DLO
+in Cloud Files and determined that the `Content-Length` for a request of the
 DLO is 2584576512 bytes. That is the size of the reconstituted VHD file.
 
 While you could compute an MD5 checksum of the VHD file, there is nothing to
@@ -381,7 +380,7 @@ that was exported from Cloud Images into Cloud Files.
 #### Clean up your file system
 
 After you download your image, you might want to clean up your file system.
-Your directory may be similar to the one in the following example:
+Your directory might be similar to the one in the following example:
 
     ls -lh my-images
     total 4.9G
@@ -399,10 +398,10 @@ operating system to display the amount of space that these files take up:
     4.9G    my-images
     4.9G    total
 
-Note that twice as much space as the size of the VHD file is
-being used. Because you've used the segments to reconstitute the VHD file, you
+Note that twice as much space as the size of the VHD file is used. Because
+you've used the segments to reconstitute the VHD file, you
 no longer need the segments locally. You can delete them without affecting
-your VHD in the following way:
+the VHD file in the following way:
 
     $ rm my-images/9af8acc8-8189-48b9-b3d6-8152c60074d8.vhd-0000*
 
