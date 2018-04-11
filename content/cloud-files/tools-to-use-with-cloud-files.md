@@ -29,16 +29,16 @@ Django-powered website to your Cloudfiles account effortlessly.
 
 Django-Cloudfiles has the following characteristics:
 
-    1. It only uploads files that have been modified (but can force upload-all).
-    2. It can create a new container for you.
-    3. It preserves your file hierarchy by naming your remote files such that they emulate nested directories: no need to flatten your existing structure!
-    4. You can store credentials in your site's configuration file (for easy use) or specify them on the command line (for greater security).
-    5. It ignores files you probably don't want to upload like .DS_Store, .git, and Thumbs.db.
-    6. Plug-ins for the Django management system do exist (for example, django-extensions), but none integrate with Cloudfiles.
-    7. It is a simple drop-in with no coding necessary.
-    8. It requires no external dependancies.
-    9. Django is all about reusability, so Django developers always look for an existing solution first (like this one)!
-    10. Django is gaining steam - it's supported by Google App Engine, and it is gaining traction.
+   1. It only uploads files that have been modified (but can force upload-all).
+   2. It can create a new container for you.
+   3. It preserves your file hierarchy by naming your remote files such that they emulate nested directories: no need to flatten your existing structure!
+   4. You can store credentials in your site's configuration file (for easy use) or specify them on the command line (for greater security).
+   5. It ignores files you probably don't want to upload like .DS_Store, .git, and Thumbs.db.
+   6. Plug-ins for the Django management system do exist (for example, django-extensions), but none integrate with Cloudfiles.
+   7. It is a simple drop-in with no coding necessary.
+   8. It requires no external dependancies.
+   9. Django is all about reusability, so Django developers always look for an existing solution first (like this one)!
+   10. Django is gaining steam - it's supported by Google App Engine, and it is gaining traction.
 
 ### Media manager
 
