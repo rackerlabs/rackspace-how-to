@@ -11,7 +11,7 @@ product: Cloud Networks
 product_url: cloud-networks
 ---
 
-This article describes common networking tools that can help you to identify network connectivity issues for your server or website. Some of these tools are installed on your system by default, and some require installation.
+This article describes common networking tools that can help you identify network connectivity issues for your server or website. Some of these tools are installed on your system by default and some require installation.
 
 ### Common tools installed by default for Windows, Mac, and Linux
 
@@ -19,15 +19,15 @@ The following tools are installed on all Windows, Mac, and Linux operating syste
 
 #### Ping
 
-Ping is a computer network administration utility that you can use to test how reachable a host is on an IP network. It also measures the amount of time that messages (or `packets`) take to travel from the origin host to a destination computer and back.
+Ping is a computer network administration utility that you can use to test how reachable a host is on an Internet Protocol (IP) network. Ping also measures the amount of time that messages (or `packets`) take to travel from the origin host to a destination computer and back.
 
-Ping commands require no flags to test. Enter the `ping` command followed by the URL or IP addresses of the website or server you are testing. You can find the IP address in the **Servers** section of the [Cloud Control Panel](https://mycloud.rackspace.com/).
+Ping commands require no flags to test. Enter the `ping` command followed by the Universal Resource Locator (URL) or IP addresses of the website or server that you are testing. You can find the IP address in the **Servers** section of the [Cloud Control Panel](https://mycloud.rackspace.com/). The following example uses the URL:
 
     ping google.com
 
 **Successful ping response**
 
-If the `ping` command indicates that an equal number of `packets` were transmitted and received, and shows a response time of under 100 ms in the US and under 200 ms outside of the US, no networking issues exist. The following example shows a successful response:
+If the `ping` command indicates that an equal number of packets were transmitted and received and shows a response time of under 100 ms in the US and under 200 ms outside of the US, no networking issues exist. The following example shows a successful response:
 
     $ ping google.com
     PING google.com (216.58.218.238) 56(84) bytes of data.
@@ -43,7 +43,7 @@ If the `ping` command indicates that an equal number of `packets` were transmitt
 
 **Unsuccessful ping response**
 
-If no packets are received, as shown in the following example, the network might be down. To verify, consider performing additional troubleshooting with the traceroute or MTR tool
+If no packets are received, as shown in the following example, the network might be down. To verify this, consider performing additional troubleshooting with the traceroute or My traceroute (MTR) tools that are described in this article.
 
     $ ping engadget.com
     PING engadget.com (149.174.110.102) 56(84) bytes of data.
@@ -54,9 +54,9 @@ If no packets are received, as shown in the following example, the network might
 
 #### Traceroute
 
-Traceroute is a computer network diagnostic tool that displays the route (path) of a network hop and measures transit delays of packets across an IP network. Traceroute is particularly useful for identifying network latency issues.
+Traceroute is a computer network diagnostic tool that displays the route (or path) of a network hop and measures transit delays of packets across an IP network. Traceroute is particularly useful for identifying network latency issues.
 
-Use the `traceroute` command followed by URL of the website or the IP address of the server that you want to test:
+Use the `traceroute` command followed by URL of the website or the IP address of the server that you want to test as shown in the following example:
 
     $ traceroute google.com
     traceroute to google.com (216.58.217.174), 30 hops max, 60 byte packets
@@ -72,9 +72,9 @@ Use the `traceroute` command followed by URL of the website or the IP address of
 
 The preceding output identifies the location of each hop along a networks route, as shown by `aggr403b-9-core8.iad3.rackspace.net`.
 
-If a hop is located within a Rackspace network and other networking issues exist, contact [Rackspace Support](https://www.rackspace.com/en-us/support) with the steps that you have taken to troubleshoot your network. If a hop is *not* located within a Rackspace network and other networking issues exist, please contact your Internet service provider.
+If a hop is located within a Rackspace network and other networking issues exist, contact [Rackspace Support](https://www.rackspace.com/en-us/support) with the steps that you have taken to troubleshoot your network. If a hop is *not* located within a Rackspace network and other networking issues exist, contact your Internet service provider.
 
-To learn more about how to troubleshoot latency issues with traceroute see the MaxCDN tutorial [Reading a Traceroute](https://www.maxcdn.com/one/tutorial/how-to-read-a-traceroute/).
+To learn more about how to troubleshoot latency issues with traceroute, see this MaxCDN tutorial: [Reading a Traceroute](https://www.maxcdn.com/one/tutorial/how-to-read-a-traceroute/).
 
 ### Additional tools installed by default for Mac and Linux
 
@@ -82,9 +82,9 @@ The following tools are installed on all Mac and Linux operating systems and ser
 
 #### Telnet
 
-Telnet is a TCP/IP protocol that is used for accessing hardware on a network remotely.
+Telnet is a Transmission Control Protocol (TCP)/IP protocol that is used for accessing hardware on a network remotely.
 
-Use telnet to test whether a networking port is open by using the command `telnet` followed by the server's IP address and the port number that you want to test.
+Use the `telnet` command to test if a networking port is open. Follow the `telnet` command with the server's IP address and the port number that you want to test.
 
     telnet 104.130.5.20 22
 
@@ -92,9 +92,9 @@ Use telnet to test whether a networking port is open by using the command `telne
 
 The following flags are commonly used with the `telnet` command:
 
-- `-4`: Forces telnet to use IPv4 addresses only
+- `-4` forces telnet to use IPv4 addresses only.
 
-- `-6`: Forces telnet to use IPv6 addresses only
+- `-6` forces telnet to use IPv6 addresses only.
 
 **Successful telnet response**
 
@@ -110,36 +110,36 @@ If telnet connects to the server's IP address through an open port (as shown in 
 
 **Unsuccessful Telnet response**
 
-If the port that you tried to use is not open (as shown in the following example), either the connection is refused or the command will become stuck in a `trying` state.
+If the port that you tried to use is not open (as shown in the following example), either the connection is refused or the command becomes stuck in a `trying` state.
 
     telnet 104.130.5.20 443
     Trying 104.130.5.20...
     telnet: connect to address 104.130.5.20: Connection refused
 
-**Note:** Use **CTRL c** to break out of a `trying` state.
+**Note:** Use **CTRL c** to get out of a `trying` state.
 
 #### Netcat
 
-Netcat (nc) is a networking tool for interfacing with network connections by using TCP or UDP. Test whether a host's connection succeeds or fails by using the `nc` command, followed by the URL and the port for which you want to test t connectivity.
+Netcat (nc) is a networking tool for interfacing with network connections by using TCP or User Datagram Protocol (UDP). Test if a host's connection succeeds or fails by using the `nc` command, followed by the URL and the port for which you want to test connectivity.
 
     $ nc -vz google.com 80
 
 **Common flags**
 
-The following flags are commonly used with `netcat` command:
+The following flags are commonly used with `nc` command:
 
-- `-v` or `--verbose`: Sets the amount of information you want to see in each response
+- `-v` or `--verbose` sets the amount of information you want to see in each response.
 
-- `-4`: Use IPv4 only
+- `-4` is used by IPv4 only.
 
-- `-6`: Use IPv6 only
+- `-6` is used by IPv6 only.
 
-- `-z`: Sets netcat to scan for connected servers without sending any actual data to the servers.
+- `-z` sets netcat to scan for connected servers without sending any actual data to the servers.
 
 
 **Successful netcat response**
 
-If netcat connects to the website through the port indicated (as shown in the following example), no network connectivity issues exist.
+If netcat connects to the website through the port indicated in the command (as shown in the following example), no network connectivity issues exist.
 
     $ nc -vz google.com 80
     found 0 associations
@@ -155,7 +155,7 @@ If netcat connects to the website through the port indicated (as shown in the fo
 
 **Unsuccessful netcat response**
 
-If netcat fails to connect to the website through the port indicated (as shown in the following example), try using the tools described in the next section, "Other networking tools."
+If netcat fails to connect to the website through the port indicated in the command (as shown in the following example), try using the tools described in the next section, "Other networking tools."
 
     $ nc -vz google.com 8080
     nc: connectx to google.com port 8080 (tcp) failed: Operation timed out
@@ -164,41 +164,40 @@ If netcat fails to connect to the website through the port indicated (as shown i
 
 ### Other networking tools
 
-The following tools can be installed on your local system or a Rackspace cloud server.
+You can install the following tools on your local system or a Rackspace cloud server.
 
-#### MTR
+#### My traceroute
 
 My traceroute (MTR) combines the functions of the traceroute and ping programs. MTR tracks routers on the route path by limiting the number of hops individual packets can traverse. It tracks the response times of hops along the route path.
 
 **Installation**
 
-MTR is installed by default on Linux and can be installed as follows on Mac and
-Windows:
+MTR is installed by default on Linux, and you can install it on Mac and Windows by using the following instructions:
 
-- Mac: Enter the command `brew install mtr`
+- Mac: Enter the following command: `brew install mtr`
 
-- Windows: Download from http://winmtr.net/download-winmtr/
+- Windows: Download from http://winmtr.net/download-winmtr/.
 
 **Common flags**
 
 The following are flags commonly used with the `mtr` command:
 
-- `-4`:  Use IPv4 only.
+- `-4` is used with IPv4 only.
 
-- `-6`:  Use IPv6 only.  (IPv4 can be used for DNS lookups)
+- `-6` is used with IPv6 only.  (IPv4 can be used for DNS lookups.)
 
-- `-w`:  Puts MTR into wide report mode. In this mode, MRT will include hostnames on the route path in the report.
+- `-w` puts MTR into wide report mode. In this mode, MRT will include hostnames on the route path in the report.
 
-- `-c`:  Set the number of pings sent to determine both the machines on the  network and the reliability of those machines.  Each cycle lasts one second.
+- `-c` sets the number of pings sent to determine both the machines on the  network and the reliability of those machines.  Each cycle lasts one second.
 
-- `-b`:  Tells MTR to display both the host names and the numeric IP addresses. In split mode, an extra field is added to the output. In report mode, the IP addresses are usually truncated. To see the IP addresses in report mode, use the wide report (`-w`) mode.
+- `-b` tells MTR to display both the host names and the numeric IP addresses. In split mode, an extra field is added to the output. In report mode, the IP addresses are usually truncated. To see the IP addresses in report mode, use the wide report (`-w`) mode.
 
-- `web4c`: Sets the number of packets that MTR counts along the route path.
+- `web4c` sets the number of packets that MTR counts along the route path.
 
 
 **MTR example**
 
-The `mtr` command requires flags to get the desired response with IP addresses and formatting. Most MTR commands begin with the flag `-web4c`, followed the number of packets you want MTR to count. You then provide the IP address or URL to which you want send the packets.
+The `mtr` command requires flags to get the desired response with IP addresses and formatting. Most MTR commands begin with the flag `-web4c`, followed the number of packets that you want MTR to count. You then provide the IP address or URL to which you want send the packets.
 
 A successful response shows a packet loss of 0% and a response time below 10 ms, as shown in the columns `Last`, `Avg`, `Best`, and `Wrst` in the following example:
 
@@ -215,29 +214,29 @@ A successful response shows a packet loss of 0% and a response time below 10 ms,
       8.|-- 72.14.233.97                                        0.0%    10    1.3   1.7   1.2   5.4   1.2
       9.|-- iad23s26-in-f14.1e100.net (172.217.1.206)           0.0%    10    0.9   0.9   0.9   1.0   0.0
 
-#### Nmap
+#### Network Mapper
 
 Network Mapper (Nmap) is a security scanner that discovers hosts and services on a computer network, thus creating a "map" of the network. To accomplish its goal, Nmap sends specially crafted packets to the target host and then analyzes the responses.
 
 **Installation**
 
-Use the following commands or URLs to install `nmap` on each operating system:
+Use the following commands or URLs to install Nmap on each operating system:
 
 - Linux: Enter the following command: `yum install nmap`
 
 - Mac: Enter the following command: `brew install nmap`
 
-- Windows: Download from https://nmap.org/download.html
+- Windows: Download from https://nmap.org/download.html.
 
 **Common flags**
 
 Nmap is most useful when used in conjunction with the following common flags:
 
-- `-Pn`: (No ping) Skips the Nmap discovery stage. Normally, Nmap uses the discovery stage to determine active machines for heavier scanning.
+- `-Pn` (No ping) skips the Nmap discovery stage. Normally, Nmap uses the discovery stage to determine active machines for heavier scanning.
 
-- `-sV`:  Enables version detection. Alternatively, you can use `-A`, which enables version detection, OS detection, script scanning, and traceroute.
+- `-sV` enables version detection. Alternatively, you can use `-A`, which enables version detection, OS detection, script scanning, and traceroute.
 
- - `-v`:  Increases the verbosity level, causing Nmap to print more information about the scan in progress. Open ports are shown as they are found and completion time estimates are provided when Nmap determines that a scan will take more than a few minutes.
+ - `-v` increases the verbosity level, causing Nmap to print more information about the scan in progress. Open ports are shown as they are found, and completion time estimates are provided when Nmap determines that a scan will take more than a few minutes.
 
  **Nmap example**
 
@@ -259,4 +258,4 @@ Nmap is most useful when used in conjunction with the following common flags:
 
 For help troubleshooting an offline website, see [Troubleshooting an offline website](https://support.rackspace.com/how-to/troubleshooting-an-offline-website/).
 
-If you have received any of the preceding *unseccessful* responses, contact [Rackspace Support](https://www.rackspace.com/en-us/support) with the steps that you have taken to troubleshoot your network.
+If you have received any of the preceding *unsuccessful* responses, contact [Rackspace Support](https://www.rackspace.com/en-us/support) with the steps that you have taken to troubleshoot your network.
