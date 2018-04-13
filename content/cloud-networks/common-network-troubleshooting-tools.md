@@ -1,19 +1,19 @@
 ---
 permalink: common-network-troubleshooting-tools/
-audit_date: '2016-10-11'
+audit_date: '2018-04-13'
 title: Common network troubleshooting tools
 type: article
 created_date: '2016-10-03'
 created_by: Nate Archer
-last_modified_date: '2016-10-11'
-last_modified_by: Nate Archer
+last_modified_date: '2018-04-13'
+last_modified_by: Cat Lookabaugh
 product: Cloud Networks
 product_url: cloud-networks
 ---
 
 This article describes common networking tools that can help you to identify network connectivity issues for your server or website. Some of these tools are installed on your system by default, and some require installation.
 
-### Tools installed by default
+### Common tools installed by default for Windows, Mac, and Linux
 
 The following tools are installed on all Windows, Mac, and Linux operating systems and servers by default.
 
@@ -76,6 +76,9 @@ If a hop is located within a Rackspace network and other networking issues exist
 
 To learn more about how to troubleshoot latency issues with traceroute see the MaxCDN tutorial [Reading a Traceroute](https://www.maxcdn.com/one/tutorial/how-to-read-a-traceroute/).
 
+### Additional tools installed by default for Mac and Linux
+
+The following tools are installed on all Windows, Mac, and Linux operating systems and servers by default.
 
 #### Telnet
 
