@@ -78,7 +78,7 @@ To learn more about how to troubleshoot latency issues with traceroute see the M
 
 ### Additional tools installed by default for Mac and Linux
 
-The following tools are installed on all Windows, Mac, and Linux operating systems and servers by default.
+The following tools are installed on all Mac and Linux operating systems and servers by default.
 
 #### Telnet
 
