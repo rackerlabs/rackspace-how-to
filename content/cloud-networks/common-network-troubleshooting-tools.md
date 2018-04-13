@@ -6,7 +6,7 @@ type: article
 created_date: '2016-10-03'
 created_by: Nate Archer
 last_modified_date: '2018-04-13'
-last_modified_by: Cat  Lookabaugh
+last_modified_by: Cat Lookabaugh
 product: Cloud Networks
 product_url: cloud-networks
 ---
