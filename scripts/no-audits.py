@@ -51,7 +51,12 @@ def filter_files(dir):
     except:
         print("A problem occurred.")
     # print a success message
-    print("\n Success! There are {} How-To articles without audit dates. \n \n YOUR RESULTS HAVE BEEN SAVED TO ..FILES/H2-NO-AUDITS.XLSX. \n \nTo make this information editable for all Info Devs, copy and paste the content into a new Excel file in O365 online and share it, then ** delete the local file at ../files/h2-no-audits.xlsx **.\n \n".format(count))
+    print("\nSuccess! There are {} How-To articles without audit dates. \n \n"
+    "YOUR RESULTS HAVE BEEN SAVED TO ..FILES/H2-NO-AUDITS.XLSX. \n \n"
+    "To make this information editable for all Info Devs, copy and paste the "
+    "content into a new Excel file in O365 online and share it, then \n"
+    "** delete the local file at ../files/h2-no-audits.xlsx **.\n"
+    "\n".format(count))
 
 # Call the main function
 filter_files("../content/")
