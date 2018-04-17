@@ -32,7 +32,7 @@ We support current versions of the following OSs:
 -   Windows Server 2012 R2
 -   Windows Server 2016 (OnMetal Servers only)
 
-*Not supported at the Managed Operations Service level
+**Note:** Those operating systems with an asterisk (\*) to the right of the name are not supported at the Managed Operations service level.
 
 ### Supported browsers
 
