@@ -1,6 +1,6 @@
 ---
 permalink: sitecore-cloud-portals-and-account-management/
-audit_date: '2017-04-45'
+audit_date: '2017-04-25'
 title: Sitecore Cloud portals and account management
 type: article
 created_date: '2017-04-04'

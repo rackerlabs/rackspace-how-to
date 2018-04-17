@@ -1,6 +1,6 @@
 ---
 permalink: configure-a-renamed-email-address-on-windows-phones/
-audit_date: '2017-09-1'
+audit_date: '2017-09-01'
 title: Configure a renamed email address on Windows phones
 type: article
 created_date: '2017-08-24'
