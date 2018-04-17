@@ -56,6 +56,8 @@ If no packets are received, as shown in the following example, the network might
 
 Traceroute is a computer network diagnostic tool that displays the route (or path) of a network hop and measures transit delays of packets across an IP network. Traceroute is particularly useful for identifying network latency issues.
 
+**Note:** On Windows operating systems the `traceroute` command is named `tracert`. When performing a traceroute from your computer you should substitute the command name for the appropriate one for your system.
+
 Use the `traceroute` command followed by URL of the website or the IP address of the server that you want to test as shown in the following example:
 
     $ traceroute google.com
