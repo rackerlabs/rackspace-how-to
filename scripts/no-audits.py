@@ -8,6 +8,7 @@ worksheet = workbook.add_worksheet()
 audit_null = "audit_date:\n"
 info = ([])
 
+
 def filter_files(dir):
     r = []
     count = 0
@@ -17,7 +18,7 @@ def filter_files(dir):
             if "all.md" in path or "index.md" in path or "retired-" in path:
                 continue
             else:
-                text = open(path,'r')
+                text = open(path, 'r')
                 lines = text.readlines()
                 if audit_null in lines:
 
@@ -42,21 +43,19 @@ def filter_files(dir):
     row = 0
     col = 0
     # write file and link
-    try:
-        # Loop through the items inside the "info" *list of lists*
-        for grouping in (info):
-            worksheet.write(row, col, info[row][0])
-            worksheet.write(row, col + 1, info[row][1])
-            row += 1
-    except:
-        print("A problem occurred.")
-    # print a success message
+
+    # Loop through the items inside the "info" *list of lists*
+    for grouping in (info):
+        worksheet.write(row, col, info[row][0])
+        worksheet.write(row, col + 1, info[row][1])
+        row += 1
     print("\nSuccess! There are {} How-To articles without audit dates. \n \n"
-    "YOUR RESULTS HAVE BEEN SAVED TO ..FILES/H2-NO-AUDITS.XLSX. \n \n"
-    "To make this information editable for all Info Devs, copy and paste the "
-    "content into a new Excel file in O365 online and share it, then \n"
-    "** delete the local file at ../files/h2-no-audits.xlsx **.\n"
-    "\n".format(count))
+          "YOUR RESULTS HAVE BEEN SAVED TO ..FILES/H2-NO-AUDITS.XLSX. \n \n"
+          "To make this information editable for all Info Devs, copy and "
+          "paste the content into a new Excel file in O365 online and "
+          "share it, then \n ** delete the local file at "
+          "../files/h2-no-audits.xlsx **.\n \n".format(count))
+
 
 # Call the main function
 filter_files("../content/")
