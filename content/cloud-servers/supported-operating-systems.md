@@ -1,7 +1,7 @@
 ---
 permalink: supported-operating-systems-and-browsers-in-rackspace-public-cloud/
 audit_date: '2018-03-22'
-title: Supported Operating Systems in Rackspace Public Cloud
+title: Supported Operating Systems and Browsers in Rackspace Public Cloud
 type: article
 created_date: '2015-07-16'
 created_by: Nate Archer
