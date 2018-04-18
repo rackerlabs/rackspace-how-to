@@ -5,7 +5,7 @@ title: Manage configuration groups for Cloud Databases with the trove command-li
 type: article
 created_date: '2014-03-17'
 created_by: Neha Verma
-last_modified_date: '2018-04-11'
+last_modified_date: '2018-04-18'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -18,7 +18,7 @@ or the
 [python-troveclient](https://pypi.python.org/pypi/python-troveclient)
 command-line interface for the API.
 
-This article describes the commands that you run with python-troveclient
+This article describes the commands that you run with `python-troveclient`
 to manage configuration groups.
 
 ### Configuration groups and configuration parameters
@@ -28,7 +28,7 @@ and applied to one or more instances in Cloud Databases.
 
 A configuration group consists of one or more _configuration
 parameters_, which represent the options that can be applied to a datastore.
-(A datastore is a database running in an instance.) For example, a
+(A _datastore_ is a database running in an instance.) For example, a
 configuration group might have a configuration parameter of `max_connections`
 set to `80`, or [set the default time zone for the
 instance](/how-to/setting-the-time-zone-for-a-cloud-databases-instance)
@@ -39,15 +39,16 @@ with the `default_time_zone` parameter.
 The `python-troveclient` package installs the `trove` command by using
 the Python package manager tool [pip](https://pypi.python.org/pypi/pip).
 
-For full installation instructions for the trove tool, see the [Cloud
+For full installation instructions for the trove client, see the [Cloud
 Databases Getting Started
 Guide](https://developer.rackspace.com/docs/cloud-databases/v1/getting-started/).
 
-Further documentation for the trove tool is available at the
+Further documentation for the trove client is available at the
 [`python-troveclient` project
 site](https://pypi.python.org/pypi/python-troveclient).
 
-To see a full list of available commands after you have installed the python-troveclient, run the following command:
+After you have installed `python-troveclient`, run the following command to
+see a full list of available commands:
 
     trove help
 
@@ -70,13 +71,13 @@ For example, a single name and value pair looks like this:
     '{"collation_server":"latin1_swedish_ci"}'
 
 To list two or more pairs in the same option, separate them with a
-comma:
+comma as shown in the following example:
 
     '{"collation_server":"latin1_swedish_ci","max_connections":5000}'
 
 You might need to use the `configuration-parameter-show` command to get
-the value type of a parameter to ensure that you set it correctly. If
-you need to set the `key_buffer_size` parameter, for example, the value
+the value type of a parameter to ensure that you set it correctly. For
+example, if you need to set the `key_buffer_size` parameter, the value
 type is an integer representing bytes. To set it to 100 MB, you would need to
 set its value to an integer representing that many bytes (104857600).
 
@@ -91,7 +92,7 @@ that you use the ID of the datastore type as it is listed in the output of the
 
 #### Datastore version option
 
-The `datastore_version` option refers to a valid version of a datastore
+The datastore version option refers to a valid version of a datastore
 that can be run on an instance. While you can use the name for the datastore
 version, we recommend that you use the ID of the datastore version as it is
 listed in the output of the `datastore-version-list` command.
@@ -111,7 +112,7 @@ their IDs by using the `configuration-list` command.
 
 #### Instance ID option
 
-The `instance ID` option refers to the ID for an existing instance. You
+The instance ID option refers to the ID for an existing instance. You
 can see a list of instances and their IDs by using the `list` command.
 
     trove list
@@ -128,6 +129,8 @@ using the `flavor-list` command.
 
 ### Create and delete configuration groups
 
+This section includes instructions to create and delete configuration groups.
+
 #### Create a new configuration group
 
 To create a new configuration group, use the `configuration-create` command
@@ -135,7 +138,7 @@ with the following options.
 
     trove configuration-create <name> <value_pairs> [--datastore <datastore_type>] [--datastore_version <datastore_version>] [--description <description>]
 
-For example, you might create a configuration group named Stagingconfig with
+For example, you might create a configuration group named `Stagingconfig` with
 the following key-value pairs:
 
 | Key                | Value               |
@@ -144,7 +147,7 @@ the following key-value pairs:
 | `max_connections`  | 80                  |
 
 To create the configuration group, run the following command, replacing the
-example key/value pairs with your own:
+example key-value pairs with your own:
 
     trove configuration-create Stagingconfig '{"collation_server":"latin1_swedish_ci","max_connections":80}' --description "Config for Staging datastore" --datastore MySQL --datastore_version 5.1
 
@@ -173,7 +176,7 @@ To delete a configuration group, use the `configuration-delete` command.
 
 ### Apply configuration groups to instances
 
-A configuration group can be assigned when an instance is created or it
+A configuration group can be assigned when an instance is created, or it
 can be assigned to an existing instance. If a configuration group is
 applied to a running instance, the configuration parameters can affect
 the datastore's behavior immediately, although some configuration
@@ -254,10 +257,10 @@ configuration.
 ### Modify configuration groups
 
 When changing a configuration group's parameters, you can either change
-specific parameters without affecting the others in the set, or replace
+specific parameters without affecting the others in the set or replace
 the entire configuration set with new values.
 
-**Note:** The configuration parameter local in-file is supported in
+**Note:** The configuration parameter `local in-file` is supported in
 Cloud Databases. You can access it in the [Cloud Control
 Panel](https://mycloud.rackspace.com/) by clicking on **Databases &gt;
 MySQL Configurations** and then modifying an existing configuration or
@@ -270,14 +273,14 @@ parameters for a configuration group.
 
     trove configuration-patch <config_id> <value_pairs>
 
-For example, to update the configuration parameter `max_connections` to 60
-for the configuration group Stagingconfig, you would run the command for
+For example, to update the configuration parameter `max_connections` to 80
+for the configuration group `Stagingconfig`, you would run the command for
 the configuration group's ID:
 
     trove configuration-patch b52de6cc-5c4f-4deb-afbc-f7190ee7573b '{"max_connections":80}'
 
 To verify that the configuration group was updated, use the
-configuration\_show command:
+`configuration\_show` command:
 
     trove configuration-show <config_id>
 
@@ -306,7 +309,7 @@ from the group.
     trove configuration-update <config_id> <value_pairs> [--name <name>] [--description <description>]
 
 For example, you might start with an existing group with two values set,
-`character_set_server` and `max_connections`, as shown in the following
+`character_set_server` and `max_connections`, set as shown in the following
 table:
 
 | Key                    | Value  |
@@ -333,6 +336,8 @@ is for `character_set_server`.
         +----------------------+--------------------------------------+
 
 ### List configuration groups
+
+This section describes different ways to list configuration groups.
 
 #### View all defined and available configuration groups
 
@@ -369,6 +374,8 @@ The output is similar to the following example:
         +--------------------------------------+----------------+
 
 ### View configuration details
+
+This section describes different ways to view configuration details.
 
 #### View the details for a configuration group
 
