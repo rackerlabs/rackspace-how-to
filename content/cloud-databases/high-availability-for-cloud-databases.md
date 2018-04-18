@@ -5,7 +5,7 @@ title: High Availability for Cloud Databases
 type: article
 created_date: '2015-06-10'
 created_by: Neha Verma
-last_modified_date: '2018-04-10'
+last_modified_date: '2018-04-18'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -19,7 +19,7 @@ minimizing downtime and ensuring that the application is never down for more
 than a few seconds in the event of a failure.
 
 A Cloud Databases HA instance group includes a source database instance with
-one or two replicas. For a true HA setup, we recommend two replicas. If the
+one or two replicas. For a robust HA setup, we recommend two replicas. If the
 source database instance becomes unavailable, an automatic failover is
 initiated to one of the replicas. The automatic failover and promotion of the
 new replica is completed in approximately 10 to 30 seconds.
@@ -36,7 +36,7 @@ HA for Cloud Databases has the following use cases:
     highly-available and only experience a small amount of downtime
     in the event of failover.
 
--   To reduce the load on the master instance and improve performance for
+-   To reduce the load on the source instance and improve performance for
     read-heavy workloads, Cloud Databases users can redirect writes and reads
     to source and replica instances within the HA setup, respectively.
 
@@ -66,10 +66,10 @@ HA setup.
 **Figure 1. Cloud Databases HA setup**
 <img src="{% asset_path cloud-databases/high-availability-for-cloud-databases/HighAvailabilityforCloudDatabases1b.png %}" width="818" height="605" />
 
-The MHA manager lives within the master HAProxy node and monitors the
+The MHA manager lives within the source HAProxy node and monitors the
 source database instance. If the source database instance becomes
-unavailable, MHA initiates failover to the most up-to-date replica node.
-All of the other replica nodes automatically reattach themselves to the new
+unavailable, MHA initiates failover to the most up-to-date replica.
+All of the other replicas automatically reattach themselves to the new
 source. If some of the replicas do not receive the latest relay log
 events, MHA automatically identifies differential relay log events from
 the latest replica and applies them to the other replicas. MHA also
@@ -106,8 +106,8 @@ Cloud Databases:
     example) must be applied to the universally unique identifier (UUID) for
     the HA group rather than the individual database instances within the
     cluster. The only operations that are allowed on instances that are part
-    of the HA group are create users and create databases (on the source, or
-    master, instance). All other operations are blocked on the instances.
+    of the HA group are create users and create databases (on the source
+    instance). All other operations are blocked on the instances.
 -   If a failure occurs, an automatic failover to the replica that is closest
     to the failed database instance takes place. Cloud Databases
     removes the failed database instance. A new replica that has the same
@@ -117,8 +117,8 @@ Cloud Databases:
     the HA is in the `ADDING_REPLICA` state. It switches to the `ACTIVE` state
     after the node has been successfully added.
 
-**Warning:** Automatically adding a new replica node restarts the MHA manager
-service (which monitors the source and replica instances to trigger failover)
+**Warning:** Automatically adding a new replica restarts the MHA manager
+service (which monitors the source and the replicas to trigger failover)
 and the HAproxy service on the load balancer nodes. Any API actions that are
 issued to the cluster during the replica add part of the process might not
 succeed.
@@ -145,12 +145,19 @@ HA for Cloud Databases has the following limitations:
 -   The source and replicas must have the same size and flavor.
 -   The source and replicas are created in the same region.
 -   Backup, resize, and custom configuration commands and changes must be
-    applied to the overall HA group using the group UUID. Applying updates
-    across groups ensures that all instances in the group have the same
+    applied to the overall HA group by using the group UUID. Applying updates
+    across groups ensures that all of the instances in the group have the same
     configuration. Backup commands select the most up-to-date replica and
     create a backup from it. Backup, resize, and custom configuration commands
-    and changes against the individual instances in the HA group are not
+    and changes against the individual instances in an HA group are not
     allowed.
+
+    **Note**: When adding a replica for a MariaDB HA Group, an existing
+    replica cannot be used to generate a snapshot for the new replica. For
+    more information, see [Xtrabackup doesn't log master co-ordinates while
+    backup up MariaDB
+    10](https://bugs.launchpad.net/percona-xtrabackup/+bug/1404484).
+
 -   There is a small delay between the source and the replicas. Ensure that
     all reads that require strong data consistency are made to the source
     instance (port 3306).
@@ -159,7 +166,7 @@ HA for Cloud Databases has the following limitations:
     the number of replicas. Because it requires creation of multiple
     nodes, allow some time for the `status` property of the HA instance to
     display as ACTIVE when performing a `GET` call through the API.
--   The instance listing in the Cloud Control Panel currently shows the master
-    instance for HA groups. To take action on the cluster or view
+-   The instance listing in the Cloud Control Panel shows the status
+    of the HA group. To take action on the cluster or view
     cluster-level information, click the instance name to go to the cluster
     details page.
