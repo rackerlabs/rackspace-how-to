@@ -29,7 +29,8 @@ You can also set the `MYSQL\_HOST` environment variable to the
 remote host's address so that you don't have to enter it on the command line.
 
 If you want to import this data to another database, see
-[Importing Data.](/how-to/importing-data-into-cloud-databases)
+[Import data into Cloud
+Databases](/how-to/importing-data-into-cloud-databases).
 
 ### External links
 
