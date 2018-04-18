@@ -315,6 +315,7 @@ table:
 | Key                    | Value  |
 |------------------------|--------|
 | `character_set_server` | `utf8` |
+| `max_connections`      | 50     |
 
 If you run the `configuration-update` command to set a new value for
 `character_set_server` only (changing the value to latin1), the
