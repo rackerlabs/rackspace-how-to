@@ -46,11 +46,9 @@ Security** on the left side of the MMC.
 
 5. From the **Program** section, select the Program association for the custom firewall rule as either **All programs** or specify the path to a program and click **Next**.
 
-6. 6.	In the **Protocol and Ports** section, select the Protocol type and click Next.
+6. In the **Protocol and Ports** section, select the Protocol type and click Next.
 
    **Note**: This walkthrough uses TCP on port 80 (HTTP) for example purposes.
-
-   <img src="{% asset_path cloud-servers/managing-the-windows-server-2012-firewall/rule_protocol.png %}" width="733" height="590" />
 
 7. In the **Scope** section under “Which local IP addresses does this rule apply to?,” specify the local IP addresses that utilize the radio buttons or the buttons next to the list pane for which you want to apply this rule. Under “Which remote IP addresses does this rule apply to?,” specify the remote IP addresses that utilize the radio buttons or the buttons next to the list pane for which you want to apply this rule.
 
