@@ -19,19 +19,19 @@ relational database, a NoSQL database, or a hybrid solution.
 The following table provides a high-level comparison of the characteristics of
 relational and NoSQL databases:
 
- | Relational databases                             | NoSQL databases                                        |
- |--------------------------------------------------|--------------------------------------------------------|
- | Moderate incoming data velocity                  | High incoming data velocity (from sensors and devices) |
- | Data originates from one or a few locations      | Data originates from many locations                    |
- | Primarily structured data                        | Both structured and semi-unstructured data             |
- | Nested or complex transactions                   | Simple transactions                                    |
- | Protect uptime through failover and log shipping | Protect uptime through architecture                    |
- | High availability                                | Continuous availability                                |
- | Deploy an app to one server    | Deploy an app to many servers                             |
- | Primarily write data to one location             | Write data to any location                             |
- | Primary concern is to scale reads                   | Scale writes and reads                                 |
- | Scale up for more users and data                     | Scale out for more users and data                          |
- | Maintain data volumes with purges                 | High data volumes; retain forever                      |
+| Relational databases | NoSQL databases |
+|------------------------------------------------|------------------------------------------------------|
+| Moderate incoming data velocity | High incoming data velocity |
+| Data comes from 1 or a few locations | Data comes from many locations |
+| Primarily structured data | structured and semi-unstructured data |
+| Nested or complex transactions | Simple transactions |
+| Protect uptime through failover & log shipping | Protect uptime through architecture |
+| High availability | Continuous availability |
+| Deploy an app to one server | Deploy an app to many servers |
+| Primarily write data to one location | Write data to any location |
+| Primary concern is scaling reads | Scale writes and reads |
+| Scale up for more users and data | Scale out for more users and data |
+| Maintain data volumes with purges | High data volumes; retain forever |
 
 The following image visualizes the structures of various types of databases,
 as well as the data complexity they are designed to accommodate:
@@ -41,19 +41,19 @@ as well as the data complexity they are designed to accommodate:
 The following table compares the characteristics of relational databases and
 NoSQL graph databases:
 
-| Relational database                                                    | Graph (NoSQL)                                                                                                           |
-|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| Simple to moderate data complexity                                     | Heavy data complexity                                                                                                   |
-| Hundreds of potential relationships                                    | Billions of potential relationships                                                                                     |
-| Moderate JOIN operations with good performance                         | Heavy to extreme JOIN operations required                                                                               |
-| Static to semi-static data changes                                     | Dynamic, constantly changing data                                                                                       |
-| Primarily structured data                                              | Both structured and unstructured data                                                                                   |
-| Nested or complex transactions                                         | Simple transactions                                                                                                     |
-| Always strongly consistent                                             | Tunable consistency (eventual to strong)                                                                                |
-| Moderate incoming data velocity                                        | High incoming data velocity (from sensors and devices)                                                                  |
-| High availability (handled with failover)                              | Continuous availability (no downtime)                                                                                   |
-| Centralized application that is location-dependent (a single location) | Distributed application that is location-independent (multiple locations involving multiple data centers and/or clouds) |
-| Scale up for increased performance                                     | Scale out for increased performance                                                                                     |
+| Relational database | Graph database (NoSQL) |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Simple to moderate data complexity | Heavy data complexity |
+| Hundreds of potential relationships | Billions of potential relationships |
+| Moderate JOIN operations with good performance | Heavy to extreme JOIN operations required |
+| Static to semi-static data changes | Dynamic, constantly changing data |
+| Primarily structured data | Structured and unstructured data |
+| Nested or complex transactions | Simple transactions |
+| Always strongly consistent | Tunable consistency (eventual to strong) |
+| Moderate incoming data velocity | High incoming data velocity |
+| High availability | Continuous availability |
+| Centralized application that's dependent  on a single location | Distributed application that's location-independent  (multiple locations involving multiple data centers and/or clouds) |
+| Scale up for increased performance | Scale out for increased performance |
 
 ### Questions to ask before choosing a NoSQL database
 
