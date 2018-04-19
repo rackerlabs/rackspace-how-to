@@ -5,7 +5,7 @@ title: 'Choosing between a relational database and a NoSQL database'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-19'
+last_modified_date: '2018-04-23'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
