@@ -20,12 +20,12 @@ The following table provides a high-level comparison of the characteristics of
 relational and NoSQL databases:
 
 | Relational databases | NoSQL databases |
-|------------------------------------------------|------------------------------------------------------|
+|------------------------------------------|---------------------------------|
 | Moderate incoming data velocity | High incoming data velocity |
 | Data comes from 1 or a few locations | Data comes from many locations |
 | Primarily structured data | structured and semi-unstructured data |
 | Nested or complex transactions | Simple transactions |
-| Protect uptime through failover & log shipping | Protect uptime through architecture |
+| Protect uptime via failover/log shipping | Protect uptime via architecture |
 | High availability | Continuous availability |
 | Deploy an app to one server | Deploy an app to many servers |
 | Primarily write data to one location | Write data to any location |
@@ -42,17 +42,17 @@ The following table compares the characteristics of relational databases and
 NoSQL graph databases:
 
 | Relational database | Graph database (NoSQL) |
-|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+|---------------------------------------------|-----------------------------|
 | Simple to moderate data complexity | Heavy data complexity |
 | Hundreds of potential relationships | Billions of potential relationships |
-| Moderate JOIN operations with good performance | Heavy to extreme JOIN operations required |
+| Moderate JOIN operations/good performance | Heavy/extreme JOIN operations |
 | Static to semi-static data changes | Dynamic, constantly changing data |
 | Primarily structured data | Structured and unstructured data |
 | Nested or complex transactions | Simple transactions |
 | Always strongly consistent | Tunable consistency (eventual to strong) |
 | Moderate incoming data velocity | High incoming data velocity |
 | High availability | Continuous availability |
-| Centralized application that's dependent  on a single location | Distributed application that's location-independent  (multiple locations involving multiple data centers and/or clouds) |
+| Centralized application | Distributed, location-independent application |
 | Scale up for increased performance | Scale out for increased performance |
 
 ### Questions to ask before choosing a NoSQL database
@@ -64,7 +64,7 @@ and deployment considerations.
 #### Technical considerations
 
 Before deciding to use a NoSQL database, ask the following technical
-questions:  
+questions:
 
 - Can the database serve as the primary data source for the online application?
 - Does the database have features that prevent the loss of critical data? Are
@@ -149,7 +149,7 @@ or a NoSQL database is best for your application.
 - Do you need a flexible data model that includes a combination of structured,
   semi-structured, and unstructured data?
 - Are complex JOIN operations overwhelming your RDBMS and slowing response
-  times?  
+  times?
 - Do you care more about the value derived from the relationships between
   tables than the tables themselves?
 - Do you need continuous availability with redundancy in both data and
@@ -171,8 +171,7 @@ or a NoSQL database is best for your application.
 ### Support
 
 If you have further questions about the topics presented in this series of
-articles, please contact
-[Satyakam.mishra@Rackspace.com](mailto:Satyakam.mishra@Rackspace.com).    
+articles, please contact support.
 
 Learn more about [Rackspace database
 services](https://www.rackspace.com/dba-services).
