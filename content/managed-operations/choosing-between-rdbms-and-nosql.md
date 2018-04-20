@@ -22,19 +22,19 @@ relational and NoSQL databases:
 | Relational databases | NoSQL databases |
 |------------------------------------------|---------------------------------|
 | Moderate incoming data velocity | High incoming data velocity |
-| Data comes from 1 or a few locations | Data comes from many locations |
-| Primarily structured data | structured and semi-unstructured data |
+| Data comes from one or a few locations | Data comes from many locations |
+| Primarily structured data | Structured and semi-unstructured data |
 | Nested or complex transactions | Simple transactions |
-| Protect uptime via failover/log shipping | Protect uptime via architecture |
+| Protect uptime via failover or log shipping | Protect uptime via architecture |
 | High availability | Continuous availability |
 | Deploy an app to one server | Deploy an app to many servers |
 | Primarily write data to one location | Write data to any location |
 | Primary concern is scaling reads | Scale writes and reads |
 | Scale up for more users and data | Scale out for more users and data |
-| Maintain data volumes with purges | High data volumes; retain forever |
+| Maintain data volumes with purges | High data volumes that are retained forever |
 
 The following image visualizes the structures of various types of databases,
-as well as the data complexity they are designed to accommodate:
+as well as the data complexity that they are designed to accommodate:
 
 <img src="{% asset_path managed-operations/choosing-between-rdbms-and-nosql/data-complexity-value-in-relationships.png %}" alt=" " />
 
@@ -43,9 +43,9 @@ NoSQL graph databases:
 
 | Relational database | Graph database (NoSQL) |
 |---------------------------------------------|-----------------------------|
-| Simple to moderate data complexity | Heavy data complexity |
+| Simple-to-moderate data complexity | Heavy data complexity |
 | Hundreds of potential relationships | Billions of potential relationships |
-| Moderate JOIN operations/good performance | Heavy/extreme JOIN operations |
+| Moderate JOIN operations and good performance | Heavy or extreme JOIN operations |
 | Static to semi-static data changes | Dynamic, constantly changing data |
 | Primarily structured data | Structured and unstructured data |
 | Nested or complex transactions | Simple transactions |
@@ -91,7 +91,7 @@ questions:
   savings?
 - Is it easy to run analytic operations on the database?
 - Can the database easily interface with and support modern data warehouses or
-  lakes that use Hadoop?
+  data lakes that use Hadoop?
 - Is it easy to carry out search operations and functions directly on the
   NoSQL database?
 - Can the database isolate the online, analytic, and search workloads within a
@@ -155,7 +155,7 @@ or a NoSQL database is best for your application.
 - Do you need continuous availability with redundancy in both data and
   function across one or more locations, rather than simple failover for the
   database?
-- Do you need a database that runs over multiple data centers and cloud
+- Do you need a database that runs in multiple data centers and cloud
   availability zones?
 - Do you need to handle high-velocity data originating from sensors, mobile
   devices, and similar sources? If so, do you need to handle this data with
@@ -168,10 +168,10 @@ or a NoSQL database is best for your application.
   or machines?
 - Do you need to manage a widely distributed system with minimal staff?
 
-### Support
+### Get support
 
 If you have further questions about the topics presented in this series of
-articles, please contact support.
+articles, contact support.
 
 Learn more about [Rackspace database
 services](https://www.rackspace.com/dba-services).
