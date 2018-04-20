@@ -79,7 +79,7 @@ statements differ:
 | `UPDATE users SET state = 'TX'<br />  Where user_uuid=88b8fd18-b1ed-4e96-bf79-4280797cba80;` | `UPDATE users SET status = 'C'<br />   WHERE age > 25;` |
 
 Source: [Datastax. DSE 5.1 Administrator
-Guide](http://docs.datastax.com/en/dse/5.1/dse-admin/)
+Guide.](http://docs.datastax.com/en/dse/5.1/dse-admin/)
 
 ### Are Cassandra and Oracle Database used together?
 
@@ -128,4 +128,4 @@ additional search clauses, additional conditions, or sorting on non-key fields.
 [Introduction to MongoDB](/how-to/choosing-between-an-rdbms-and-nosql)
 
 ### Next step
-[Choosing between an RDBMS and NoSQL](/how-to/introduction-to-mongodb) |
+[Choosing between an RDBMS and NoSQL](/how-to/introduction-to-mongodb)
