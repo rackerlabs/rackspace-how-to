@@ -36,9 +36,9 @@ Security**.
 2. Select either **Inbound Rules** or **Outbound Rules** under **Windows Firewall with Advanced
 Security** on the left side of the MMC.
 
-   **Note**: This step provides a listing of each of the currently configured firewall rules. Rules that are currently enabled are denoted by green checkbox icon, while disabled rules display a grey checkbox icon. Right-clicking a rule pulls up a menu that allows you toggle it to enabled or disabled.
+   **Note**: This step provides a listing of each of the currently configured firewall rules. Rules that are currently enabled are denoted by green checkbox icon, while disabled rules display a grey checkbox icon. Right-clicking a rule pulls up a menu that allows you toggle the rule to enabled or disabled.
 
-3. From the **Actions** pane next to either **Inbound Rules** or **Outbound Rules** section click **New Rule**.
+3. From the **Actions** pane next to either the **Inbound Rules** or **Outbound Rules** section click **New Rule**.
 
    The new rule wizard launches.
 
