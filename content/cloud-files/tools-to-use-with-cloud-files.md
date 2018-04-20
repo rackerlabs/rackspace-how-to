@@ -5,8 +5,8 @@ title: Tools to use with Cloud Files
 type: article
 created_date: '2016-01-15'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-02-27'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-04-20'
+last_modified_by: Nate Archer
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -31,15 +31,15 @@ Django-Cloudfiles has the following characteristics:
 
    1. It only uploads files that have been modified (but can force upload-all).
    2. It can create a new container for you.
-   3. It preserves your file hierarchy by naming your remote files such that they emulate nested directories: no need to flatten your existing structure!
+   3. It preserves your file hierarchy by naming your remote files such that they emulate nested directories: no need to flatten your existing structure.
    4. You can store credentials in your site's configuration file (for easy use) or specify them on the command line (for greater security).
    5. It ignores files you probably don't want to upload like .DS_Store, .git, and Thumbs.db.
    6. Plug-ins for the Django management system do exist (for example, django-extensions), but none integrate with Cloudfiles.
    7. It is a simple drop-in with no coding necessary.
    8. It requires no external dependancies.
-   9. Django is all about reusability, so Django developers always look for an existing solution first (like this one)!
-   10. Django is gaining steam - it's supported by Google App Engine, and it is gaining traction.
-
+   9. Django is reusabe, so Django developers always look for an existing solution before building a new one.
+   10. Django is supported by Google App Engine.
+   
 ### Media manager
 
 **Media manager** plug-in mirrors your media library to your Cloud Files CDN.
