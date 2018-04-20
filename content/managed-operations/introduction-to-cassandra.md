@@ -74,9 +74,9 @@ statements differ:
 
 | Cassandra (CQL) | Oracle Database (SQL) |
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| INSERT INTO users (first_name, last_name, display_name)    VALUES (‘Lebron’,‘James’,‘KingJames’); | INSERT INTO users (first_name, last_name, display_name)     VALUES ('Lebron', 'James', 'KingJames'); |
+| INSERT INTO users (first_name, last_name, display_name)<br> VALUES (‘Lebron’,‘James’,‘KingJames’); | INSERT INTO users (first_name, last_name, display_name)<br> VALUES ('Lebron', 'James', 'KingJames'); |
 | SELECT * FROM users; | SELECT * FROM users; |
-| UPDATE users SET state = 'TX'     Where user_uuid=88b8fd18-b1ed-4e96-bf79-4280797cba80; | UPDATE users SET status = 'C'     WHERE age > 25; |
+| UPDATE users SET state = 'TX'<br> Where user_uuid=88b8fd18-b1ed-4e96-bf79-4280797cba80; | UPDATE users SET status = 'C'<br> WHERE age > 25; |
 Source: [Datastax. DSE 5.1 Administrator Guide](http://docs.datastax.com/en/dse/5.1/dse-admin/)
 
 ### Are Cassandra and Oracle Database used together?
@@ -121,6 +121,9 @@ de-normalized before it is stored in the database.
 Finally, search is based on keys and indexes only. Cassandra does not support
 additional search clauses, additional conditions, or sorting on non-key fields.
 
-| ###Previous step | ### Next step |
-| ------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| [Introduction to MongoDB](/how-to/choosing-between-an-rdbms-and-nosql)   | [Choosing between an RDBMS and NoSQL](/how-to/introduction-to-mongodb) |
+### Previous step
+
+[Introduction to MongoDB](/how-to/choosing-between-an-rdbms-and-nosql)
+
+### Next step
+[Choosing between an RDBMS and NoSQL](/how-to/introduction-to-mongodb) |
