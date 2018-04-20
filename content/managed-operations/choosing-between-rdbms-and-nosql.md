@@ -5,7 +5,7 @@ title: 'Choosing between a relational database and a NoSQL database'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-23'
+last_modified_date: '2018-04-20'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
@@ -36,7 +36,7 @@ relational and NoSQL databases:
 The following image visualizes the structures of various types of databases,
 as well as the data complexity they are designed to accommodate:
 
-<img src="{% asset_path managed operations/choosing-between-rdbms-and-nosql/data-complexity-value-in-relationships.png %}" />
+<img src="{% asset_path managed-operations/choosing-between-rdbms-and-nosql/data-complexity-value-in-relationships.png %}" />
 
 The following table compares the characteristics of relational databases and
 NoSQL graph databases:
