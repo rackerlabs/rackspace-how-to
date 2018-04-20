@@ -175,3 +175,6 @@ articles, contact support.
 
 Learn more about [Rackspace database
 services](https://www.rackspace.com/dba-services).
+
+### Previous step
+[Introduction to Cassandra ](/how-to/introduction-to-cassandra)
