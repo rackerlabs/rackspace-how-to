@@ -7,8 +7,8 @@ created_date: '2018-02-27'
 created_by: Satyakam Mishra
 last_modified_date: '2018-04-19'
 last_modified_by: Kate Dougherty
-product: Database Services
-product_url: dba-services
+product: Managed Operations
+product_url: managed-operations
 ---
 
 Apache Cassandra is an open source, key-value NoSQL database. Cassandra is
