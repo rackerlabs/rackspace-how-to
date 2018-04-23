@@ -11,27 +11,27 @@ product: Managed Operations
 product_url: managed-operations
 ---
 
-This page presents the characteristics of RDBMSs and NoSQL databases.
+This page presents the characteristics of relational database management systems (RDBMSs) and NoSQL databases.
 
 ### Properties of relational databases
 
 Relational databases are efficient systems. Because they are efficient,
 they're a common choice for storing financial records, logistical information,
-personnel data, and other information in new databases. Relational databases
-also frequently replace legacy hierarchical databases and network databases
-because they're easier to understand and use than NoSQL databases.
+personnel data, and other information in new databases. Because they're easier
+to understand and use than NoSQL databases, relational databases also
+frequently replace legacy hierarchical databases and network databases.
 
 Relational databases have the following properties:
 
-- Values are atomic
-- All of the values in a column have the same data type
-- Each row is unique
-- The sequence of columns is insignificant
-- The sequence of rows is insignificant
-- Each column has a unique name
-- Integrity constraints maintain consistent data across multiple tables
+- Values are atomic.
+- All of the values in a column have the same data type.
+- Each row is unique.
+- The sequence of columns is insignificant.
+- The sequence of rows is insignificant.
+- Each column has a unique name.
+- Integrity constraints maintain data consistency across multiple tables.
 
-#### Properties of NoSQL databases
+### Properties of NoSQL databases
 
 NoSQL is a schema-less alternative to SQL and RDBMSs designed to store,
 process, and analyze extremely large amounts of unstructured data.
@@ -43,12 +43,13 @@ for NoSQL databases to be de-normalized.
 
 NoSQL databases have the following properties:
 
-- Higher scalability
-- Distributed computing
-- Lower cost
-- Flexible schema
-- Able to process unstructured and semi-structured data
-- No complex relationships, such as the ones between tables in RDMS
+- They have higher scalability.
+- They use distributed computing.
+- They cost less to use.
+- They support flexible schema.
+- They're able to process both unstructured and semi-structured data.
+- There are no complex relationships, such as the ones between tables in an
+  RDBMS.
 
 The following table shows the types of non-relational databases and the
 features associated with them:
