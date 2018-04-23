@@ -60,6 +60,10 @@ features associated with them:
 | Document store | High | Variable to high | High | Low |
 | Graph-based | Variable | Variable | High | High |
 
+### Previous step
+
+[Types of databases](/how-to/types-of-database/)
+
 ### Next step
 
 [Reasons to use an SQL database](/how-to/reasons-to-use-an-sql-database/)
