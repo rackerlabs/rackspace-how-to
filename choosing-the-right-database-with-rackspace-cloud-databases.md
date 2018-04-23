@@ -5,7 +5,7 @@ title: Choosing the right database with Rackspace Cloud Databases
 type: article
 created_date: '2014-07-16'
 created_by: Ross Diaz
-last_modified_date: '2018-04-23'
+last_modified_date: '2018-04-24'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -20,10 +20,10 @@ deciding which MySQL-based datastore best fits your application.
 MySQL is an open-source database developed by Oracle, and the recommended
 choice of the MySQL database administrator community. MySQL is a good fit
 for customers who are concerned about maintaining compatibility with upstream,
-and who prefer a quick release schedule for upstream updates. For more information, see
-the [MySQL documentation](http://dev.mysql.com).
+and who prefer a quick release schedule for upstream updates. For more
+information, see the [MySQL documentation](http://dev.mysql.com).
 
-### Benefit of using MySQL
+### Benefits of using MySQL
 
 MySQL offers the following benefits:
 
