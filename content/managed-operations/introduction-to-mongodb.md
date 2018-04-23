@@ -65,9 +65,9 @@ is generally used for checkout systems because these systems require complex
 transactions.
 
 Oracle Database is better suited to handle such transactions because it uses
-ACID as its integrity model. This model gives Oracle Database integrity
-features that MongoDB doesn't offer, such as isolation, referential integrity,
-and revision control.
+ACID (Atomicity, Consistency, Isolation, Durability) as its integrity model.
+This model gives Oracle Database integrity features that MongoDB doesn't
+offer, such as isolation, referential integrity, and revision control.
 
 In other cases, new business requirements push organizations to adopt MongoDB
 so that they can incorporate next-generation components into their
