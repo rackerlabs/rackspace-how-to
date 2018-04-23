@@ -25,7 +25,7 @@ management system (DBMS) that is based on this relational model.
 
 All RDBMSs must satisfy ACID properties (atomicity, consistency, isolation, and
 durability). This requirement provides an efficient way to store data because
-it enables you to enter data once, then reference it from elsewhere in the
+it enables you to enter data once, and then reference it from elsewhere in the
 database.
 
 The relationships between data sets are classified as follows:
@@ -37,7 +37,7 @@ The relationships between data sets are classified as follows:
 - Many-to-many: More than one table record relates to more than one record in
   another table.
 
-#### NoSQL databases
+### Non-relational databases
 
 The term NoSQL refers to databases that do not follow traditional RDBMS
 principles. NoSQL is an open source database technology designed to handle big
