@@ -5,110 +5,121 @@ title: Choosing the right database with Rackspace Cloud Databases
 type: article
 created_date: '2014-07-16'
 created_by: Ross Diaz
-last_modified_date: '2016-12-20'
-last_modified_by: Steve Croce
+last_modified_date: '2018-04-23'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
-Cloud Databases supports MySQL 5.1 and 5.6, Percona 5.6, and MariaDB 10 and 10.1.
-Innovation is happening in each of these communities, and this article
-highlights some of the key aspects to consider when choosing a MySQL
-based datastore that best fits your application.
+Cloud Databases supports MySQL 5.1 and 5.6, Percona 5.6, and MariaDB 10 and
+10.1. This article highlights some key aspects to consider when
+deciding which MySQL-based datastore best fits your application.
 
-### MySQL
+### MySQL overview
 
-MySQL, an open-source database developed by Oracle, is the recommended
-choice of the MySQL database administrator community, and is a good fit
-for customers concerned about maintaining compatibility with upstream,
+MySQL is an open-source database developed by Oracle, and the recommended
+choice of the MySQL database administrator community. MySQL is a good fit
+for customers who are concerned about maintaining compatibility with upstream,
 and who prefer a quick release schedule for upstream updates. For more information, see
 the [MySQL documentation](http://dev.mysql.com).
 
-### Benefit
+### Benefit of using MySQL
 
-Upstream is controlled by Oracle.
+MySQL offers the following benefits:
 
-### Limitation
+-   Upstream is controlled by Oracle.
 
-Bug fixes are delayed behind forks that might have already been resolved
-by community patches.
+### MySQL limitations
 
-### Percona server
+MySQL has the following limitations:
+
+-   Bug fixes are delayed behind forks that might have already been resolved
+    by community patches.
+
+### Percona Server overview
 
 Percona Server is a good solution for customers who want improved
 performance right out of the box and want to maintain close (but not
 exact) compatibility with the upstream source. It has many optimizer
 improvements when compared to the upstream MySQL. Percona Server
 includes XtraDB, a drop-in replacement for InnoDB with many
-optimizations that improve performance on multicore systems. For more
+optimizations that improve performance on multi-core systems. For more
 information, see the [Percona Server
 documentation](http://www.percona.com/software/percona-server).
 
-### Benefits
+### Benefits of using Percona Server
 
--   Drop-in replacement for MySQL
+Percona Server offers the following benefits:
 
--   Remerges with upstream source code after each new MySQL release, to
-    maintain compatibility
+-   Drop-in replacement for MySQL.
 
--   Includes community patching
+-   Remerges with the upstream source code after each new MySQL release to
+    maintain compatibility.
 
--   Improved performance on multiprocessor systems
+-   Includes community patching.
 
--   Improved query optimizer
+-   Improved performance on multi-processor systems.
+
+-   Improved query optimizer.
 
 -   Increased log verbosity options, status and performance counters,
-    and increased `INFORMATION_SCHEMA` content
+    and increased `INFORMATION_SCHEMA` content.
 
--   Thread pool option without the need for Enterprise MySQL
+-   Thread pool option without the need for Enterprise MySQL.
 
-### Limitation
+### Percona Server limitations
 
-After using features specific to Percona, you might not be able to
-directly roll back the database.
+Percona Server has the following limitations:
 
-### MariaDB
+-   After using features that are specific to Percona, you might not be able to
+    directly roll back the database.
 
-MariaDB was developed by many of the original developers of MySQL, and
-has a long-term goal of maintaining compatibility with MySQL. It is a
-good database choice for customers who are less concerned with
-maintaining direct compatibility with upstream, and it offers the best
-performance and features out of the box. It does not merge with code
-provided by upstream, but attempts to re-implement features as they are
-released, if they were not already provided. MariaDB contains the best
-optimizer performance of all three solutions and has the largest
-selection of storage engines by default. For more information, see the
+### MariaDB overview
+
+MariaDB was developed by many of the original developers of MySQL and aims to
+maintain compatibility with MySQL. It offers the best performance and features
+out of the box. MariaDB is a good database choice for customers who are less
+concerned with maintaining direct compatibility with upstream. For example, it
+does not merge with code provided by upstream, but attempts to re-implement
+features as they are released, if they were not already provided. MariaDB
+offers the best optimizer performance of all three solutions and has the
+largest selection of storage engines by default. For more information, see the
 [MariaDB documentation](https://mariadb.org/en/about/).
 
-### Benefits
+### Benefits of using MariaDB
 
--   Drop-in replacement for MySQL
+MariaDB offers the following benefits:
 
--   Re-implements features as they are released by Oracle
+-   Drop-in replacement for MySQL.
+
+-   Re-implements features as they are released by Oracle.
 
 -   Fork of MySQL with many new features and a long-term goal to
-    maintain binary compatibility
+    maintain binary compatibility.
 
--   Includes community patching
+-   Includes community patching.
 
--   Improved performance on multiprocessor systems
+-   Improved performance on multiprocessor systems.
 
--   Improved query optimizer
+-   Improved query optimizer.
 
 -   Increased log verbosity options, status and performance counters,
-    and increased `INFORMATION_SCHEMA` content
+    and increased `INFORMATION_SCHEMA` content.
 
--   Thread pool option without the need of Enterprise MySQL
+-   Thread pool option without the need for Enterprise MySQL.
 
--   Increased Quantity of Storage Engines by default
+-   Increased quantity of storage engines by default.
 
-### Limitations
+### MariaDB limitations
 
--   After using features specific to MariaDB, you might not be able to
-    directly roll back the database
+MariaDB has the following limitations:
 
--   Started from MySQL upstream, but much of the MySQL source code has
-    been directly modified
+-   After using features that are specific to MariaDB, you might not be able to
+    directly roll back the database.
 
--   Inmany cases, upstream bugs are already resolved, but not in all
-    cases and you might need to await re-implementation of the patch
+-   While MariaDB started from MySQL upstream, much of the MySQL source code
+    has been [directly
+    modified](https://mariadb.com/kb/en/library/incompatibilities-and-feature-differences-between-mariadb-102-and-mysql-57/).
+
+-   Upstream bugs aren't already resolved in all cases. You might need to wait
+    for re-implementation of the patch.
