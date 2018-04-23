@@ -56,10 +56,11 @@ actions by using Java or Python scripting.
 Managed Database Services offers varying levels of support. The level of
 support that is included depends on your service level agreement (SLA).
 
-Under both SLAs, the Managed Databases team maintains the availability and
-security of your database in accordance with your SLA. We also regularly back
-up your database, perform required patches at regular intervals, and
-proactively monitor and respond to alerts.
+Under both of the available SLAs, DBAdministrator and DBArchitect, the Managed
+Databases team maintains the availability and security of your database in
+accordance with your SLA. We also regularly back up your database, perform
+required patches at regular intervals, and proactively monitor and respond to
+alerts.
 
 For information on what is included with each Managed Database Services
 SLA, visit the [DBA Services](https://www.rackspace.com/dba-services) product
