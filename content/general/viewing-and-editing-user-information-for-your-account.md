@@ -19,13 +19,13 @@ Control Panel.
 
 Access this page by clicking the user name menu in the top-right corner of the navigation bar. You can also access this page by clicking the user name in the **User Management** page.
 
-Use the My Profile & Settings page to view your primary contact information, view or edit your security settings, and view your account and product permissions.
+Use the **My Profile & Settings** page to view your primary contact information, view or edit your security settings, and view your account and product permissions.
 
 Use the **Security Settings** section to change your password, enable or disable multi-factor authentication, configure a secret question, and view your API key.
 
 ### Account Settings page
 
-Access this page by clicking the **Account** menu in the top navigation bar. Use the Account Settings page to view your account settings, account details, product preferences, and to view or edit your primary contact information.
+Access this page by clicking the **Account** menu in the top navigation bar. Use the **Account Settings** page to view your account settings, account details, product preferences, and to view or edit your primary contact information.
 
 In the **Rackspace Account Settings** section, you must have multi-factor authentication enabled before you can edit the settings. To enable multi-factor authentication, click on your username in the upper-right corner and click **My Profile & Settings**. Enable multi-factor authentication in the **Security Settings** section.
 
