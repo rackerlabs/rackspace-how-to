@@ -5,7 +5,7 @@ title: Choosing the right database with Rackspace Cloud Databases
 type: article
 created_date: '2014-07-16'
 created_by: Ross Diaz
-last_modified_date: '2018-04-23'
+last_modified_date: '2018-04-24'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
