@@ -5,7 +5,7 @@ title: 'Introduction to Cassandra'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-19'
+last_modified_date: '2018-04-23'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
@@ -94,12 +94,13 @@ also has auto-replication functions that automatically distribute and maintain
 data across a cluster. Replication in Cassandra is very straightforward and
 simple to configure and maintain.
 
-While Oracle Database uses the ACID integrity model, Cassandra offers the AID
-portion of ACID, in which the data written is atomic, isolated, and durable.
-The AID model enables Cassandra users to decide exactly how strong data
-consistency should be for a transaction or set of transactions that are
-batched together. Strength of data consistency refers to whether all nodes
-must respond, or if a single node responds while the others are being updated.
+While Oracle Database uses the ACID (Atomicity, Consistency, Isolation,
+Durability) integrity model, Cassandra offers the AID portion of ACID, in
+which the data written is atomic, isolated, and durable. The AID model enables
+Cassandra users to decide exactly how strong data consistency should be for a
+transaction or set of transactions that are batched together. Strength of data
+consistency refers to whether all nodes must respond, or if a single node
+responds while the others are being updated.
 
 Cassandra users can tune data consistency within a single data center or
 across multiple data centers. However, Oracle Database offers integrity
