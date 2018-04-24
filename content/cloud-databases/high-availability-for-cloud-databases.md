@@ -53,7 +53,7 @@ semi-synchronous](https://dev.mysql.com/doc/refman/5.6/en/replication-semisync.h
 and involves one source and one or two replicas. MySQL and Percona
 implementations are set up by using using global transaction identifiers
 (GTIDs). To improve the robustness of the system, the source and the replicas
-are provisioned on separate hosts.
+are each provisioned on separate hosts.
 
 An [HAProxy load balancer](http://www.haproxy.org/) controls a
 single access point (IP/hostname) for the HA group and uses different
