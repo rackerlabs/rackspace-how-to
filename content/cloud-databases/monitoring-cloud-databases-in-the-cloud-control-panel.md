@@ -1,11 +1,11 @@
 ---
 permalink: monitoring-cloud-databases-in-the-cloud-control-panel/
-audit_date: '2018-04-05'
+audit_date: '2018-04-19'
 title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2018-04-05'
+last_modified_date: '2018-04-24'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -29,7 +29,8 @@ instance are described in the following sections.
 
 ### Checks
 
-The monitoring checks for a Cloud Databases instance appear on the details page for that instance in the Cloud Control Panel.
+The monitoring checks for a Cloud Databases instance appear on the details
+page for that instance in the Cloud Control Panel.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmonitoringchecks.png %}" width="370" height="274" />
 
@@ -38,7 +39,6 @@ time and any alarms that are configured for that check.
 
 The following monitoring checks are preconfigured for Cloud Databases
 instances.
-
 
 #### CPU check
 
@@ -50,7 +50,7 @@ and average CPU usage for that period.
 
 #### File system check
 
-The graph for the File system check displays disk usage for the Cloud
+The graph for the file system check displays disk usage for the Cloud
 Databases instance. The **Total** represents the total disk space that is
 available to the instance. This value can change if the instance is
 resized.
@@ -59,7 +59,7 @@ resized.
 
 #### Load average check
 
-The graph for the load average check displays your instance's load
+The graph for the load average check displays the instance's load
 average on a per-minute basis. Whereas the CPU usage graph displays
 moment-to-moment fluctuations in CPU use, the load average graph
 reflects overall CPU usage.
@@ -68,10 +68,9 @@ reflects overall CPU usage.
 
 #### Memory check
 
-The graph for the memory check displays your instance's memory use, or RAM.
+The graph for the memory check displays the instance's memory use, or RAM.
 The **Total** value represents the total memory that is available to the
-instance, and the **Actual Used** value represents the amount of memory
-in use.
+instance, and the **Actual Used** value represents the amount of memory that is in use.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmemorygraph.png %}" width="561" height="226" />
 
@@ -84,8 +83,8 @@ traffic in kilobytes per second.
 
 #### MySQL check
 
-Graphs that report metrics for the MySQL datastore that is running on your instance are available in the Cloud Control Panel under **Monitoring Alerts**. This area links to our [Rackspace Intelligence
-site](https://intelligence.rackspace.com/), which is currently in beta.
+Graphs that report metrics for the MySQL datastore that is running on your
+instance are available in the Cloud Control Panel under **Monitoring Alerts**.
 
 ### Alarms
 
@@ -97,7 +96,7 @@ disk space is low.
 **Note:** You might need to add **alerts@cloudmonitoring.rackspace.com**
 to your contacts list to prevent email alerts from being marked as spam.
 
-#### Creating alarms
+#### Create alarms
 
 You can view and create alarms from the details page for a check.
 
@@ -119,16 +118,15 @@ You can view and create alarms from the details page for a check.
     of each metric is provided in the ["Agent check types"](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/#agent-check-type-ref) section of the
     Cloud Monitoring API documentation.
 
-    The language used to define criteria for alarms is documented in the
-    ["Alert Triggering and
+    The language that is used to define criteria for alarms is documented in
+    the ["Alert Triggering and
     Alarms"](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/alert-triggers-and-alarms)
-    section of the Cloud Monitoring API documentation. Clicking **Example
-    Alarm** under the criteria field will enable you to view example criteria
-    for the check.
+    section of the Cloud Monitoring API documentation. To view example criteria
+    for the check, click **Example Alarm** under the criteria field.
 
     <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpualarm.png %}" width="407" height="546" />
 
-#### Editing alarms
+#### Edit alarms
 
 To change the alarm name, alert recipient, or alarm criteria, click the
 gear icon next to an existing alarm and select **Edit Criteria**.
@@ -138,8 +136,8 @@ gear icon next to an existing alarm and select **Edit Criteria**.
 The following sections provide example criteria for each of the Cloud
 Databases checks.
 
-These examples define criteria for *Warning*, *Critical*, and OK
-statuses. By default, Warning and Critical statuses cause the text of
+These examples define criteria for `Warning`, `Critical`, and `OK`
+statuses. By default, `Warning` and `Critical` statuses cause the text of
 the returned status to be emailed to the technical contact for your
 account. You can define more complex notification plans by using the
 [Cloud Monitoring
@@ -151,8 +149,8 @@ documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/develope
 
 ### CPU alarms
 
-The following criteria returns a Warning status when CPU usage is above
-90% and a Critical status when CPU usage is above 95%.
+The following criteria returns a `Warning` status when CPU usage exceeds
+90% and a `Critical` status when CPU usage exceeds 95%.
 
     if (metric['usage_average'] > 95)
            return new AlarmStatus(CRITICAL, 'CPU usage is #usage_average%, above your
@@ -168,8 +166,8 @@ The following criteria returns a Warning status when CPU usage is above
 ### File system alarms
 
 A monitoring alarm is included by default for this check. The criteria
-for the Low Disk Space alarm will return a warning status when disk
-usage exceeds 90% of the total space available and a critical status when
+for the Low Disk Space alarm will return a `Warning` status when disk
+usage exceeds 90% of the total space available and a `Critical` status when
 disk usage exceeds 95% of the total space available.
 
     if (percentage(metric['used'], metric['total']) > 90) {
@@ -204,6 +202,10 @@ alarm can be set to 1 minute, 5 minutes, or 15 minutes.
 
 ### Memory alarms
 
+The following criteria returns a `Warning` status when the memory usage of the
+instance exceeds 80% and returns a `Critical` status when memory usage
+exceeds 90%.
+
     if (percentage(metric['actual_used'], metric['total']) > 90) {
            return new AlarmStatus(CRITICAL, "Memory usage is above your critical threshold
          of 90%");
@@ -217,6 +219,8 @@ alarm can be set to 1 minute, 5 minutes, or 15 minutes.
         return new AlarmStatus(OK, "Memory usage is below your warning threshold of 80%");
 
 ### Network alarms
+
+The following criteria returns a `Warning` status when the network receive rate on `eth0` exceeds 18350080B per second and a `Critical` status when the network receive rate on eth0 exceeds 24903680B per second.
 
     if (rate(metric['rx_bytes']) > 24903680) {
            return new AlarmStatus(CRITICAL, "Network receive rate on eth0 is above your
@@ -233,9 +237,9 @@ alarm can be set to 1 minute, 5 minutes, or 15 minutes.
 
 ### MySQL alarms
 
-The following criteria returns a Warning status when the number of open
-connections is above 400, and returns a Critical status when the number
-of open connections is above 500.
+The following criteria returns a `Warning` status when the number of open
+connections exceeds 400, and a `Critical` status when the number
+of open connections exceeds 500.
 
     if (metric['threads.connected'] > 500) {
            return new AlarmStatus(CRITICAL, 'Total number of threads connected are #
