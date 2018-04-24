@@ -68,8 +68,8 @@ HA setup.
 
 The MHA manager lives within the source HAProxy node and monitors the
 source database instance. If the source database instance becomes
-unavailable, MHA initiates failover to the most up-to-date replica.
-All of the other replicas automatically reattach themselves to the new
+unavailable, MHA initiates failover to the most up-to-date replica instance.
+All of the other replica instances automatically reattach themselves to the new
 source. If some of the replicas do not receive the latest relay log
 events, MHA automatically identifies differential relay log events from
 the latest replica and applies them to the other replicas. MHA also
