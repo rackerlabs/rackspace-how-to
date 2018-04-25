@@ -7,8 +7,6 @@ created_date: '2013-06-04'
 created_by: Rose Contreras
 last_modified_date: '2016-01-26'
 last_modified_by: Catherine Richardson
-product: Microsoft SharePoint
-product_url: sharepoint
 ---
 
 **Previous section:** [Cloud Storage App for Microsoft SharePoint:

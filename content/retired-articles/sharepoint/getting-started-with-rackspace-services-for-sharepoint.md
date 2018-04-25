@@ -7,8 +7,6 @@ created_date: '2012-09-24'
 created_by: Rae D. Cabello
 last_modified_date: '2016-01-26'
 last_modified_by: Catherine Richardson
-product: Microsoft SharePoint
-product_url: sharepoint
 ---
 
 ### Overview ###

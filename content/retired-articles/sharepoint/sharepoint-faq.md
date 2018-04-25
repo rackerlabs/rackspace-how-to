@@ -7,8 +7,6 @@ created_date: '2015-12-03'
 created_by: Rackspace Support
 last_modified_date: '2016-01-26'
 last_modified_by: Catherine Richardson
-product: Microsoft SharePoint
-product_url: sharepoint
 ---
 
 ### Account Services

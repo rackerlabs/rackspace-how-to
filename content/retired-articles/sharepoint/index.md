@@ -6,8 +6,6 @@ created_by: Rackspace Support
 last_modified_date: '2016-11-08'
 last_modified_by: Stephanie Fillmon
 permalink: /sharepoint/
-product: Microsoft SharePoint
-product_url: sharepoint
 ---
 
 Our hosted SharePoint service offers all of the benefits of an online SharePoint site plus access to Rackspace's renowned ***Fanatical Support***&reg;.

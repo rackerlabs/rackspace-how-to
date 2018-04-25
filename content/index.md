@@ -156,9 +156,6 @@ permalink: /
 					<div class="three columns icon exchange">
 						<h4><a href="/how-to/exchange/"><span>Microsoft</span> Exchange</a></h4>
 					</div>
-					<div class="three columns icon sharepoint">
-						<h4><a href="/how-to/sharepoint/"><span>Microsoft</span> Sharepoint</a></h4>
-					</div>
 					<div class="primary three columns icon email-archiving">
 						<h4><a href="/how-to/rackspace-email-archiving/"><span>Rackspace</span> Email Archiving</a>
 						</h4>
