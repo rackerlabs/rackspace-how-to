@@ -5,8 +5,8 @@ title: Get started with Rackspace services for SharePoint
 type: article
 created_date: '2012-09-24'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-04-26'
+last_modified_by: Nate Archer
 ---
 
 ### Overview ###
