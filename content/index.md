@@ -156,6 +156,8 @@ permalink: /
 						<h4><a href="/how-to/rackspace-email-archiving/"><span>Rackspace</span> Email Archiving</a>
 						</h4>
 					</div>
+				</div>
+				<div class="twelve columns">
 					<div class="three columns primary icon office-365">
 						<h4><a href="/how-to/office-365/"><span>Microsoft</span> Office 365</a></h4>
 					</div>
