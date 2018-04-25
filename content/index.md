@@ -161,7 +161,6 @@ permalink: /
 					<div class="three columns primary icon office-365">
 						<h4><a href="/how-to/office-365/"><span>Microsoft</span> Office 365</a></h4>
 					</div>
-					</div>
 					<div class="three columns icon skype">
 						<h4><a href="/how-to/skype-for-business/"><span>Microsoft</span> Skype for Business</a>
 						</h4>
