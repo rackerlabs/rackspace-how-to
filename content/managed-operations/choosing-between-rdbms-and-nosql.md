@@ -5,7 +5,7 @@ title: 'Choosing between a relational database and a NoSQL database'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-20'
+last_modified_date: '2018-04-26'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
@@ -13,6 +13,10 @@ product_url: managed-operations
 
 This page presents information that is helpful for deciding whether to use a
 relational database, a NoSQL database, or a hybrid solution.
+
+### Prerequisite
+
+For an introduction to relational databases and NoSQL databases, see [Types of databases](/how-to/types-of-databases).
 
 ### Features of relational databases and NoSQL databases
 
@@ -170,11 +174,9 @@ or a NoSQL database is best for your application.
 
 ### Get support
 
-If you have further questions about the topics presented in this series of
-articles, contact support.
+For more information about relational databases and NoSQL databases, see the
+[Managed Operations FAQ](/how-to/managed-operations-faq/). If you have further
+questions, contact support.
 
 Learn more about [Rackspace database
 services](https://www.rackspace.com/dba-services).
-
-### Previous step
-[Introduction to Cassandra ](/how-to/introduction-to-cassandra)
