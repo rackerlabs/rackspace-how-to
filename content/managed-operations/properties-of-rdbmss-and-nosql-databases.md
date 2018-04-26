@@ -5,13 +5,17 @@ title: 'Properties of RDBMSs and NoSQL databases'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-24'
+last_modified_date: '2018-04-26'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
 ---
 
 This page presents the characteristics of relational database management systems (RDBMSs) and NoSQL databases.
+
+### Prerequisite
+
+For an introduction to RDBMSs and NoSQL databases, see [Types of databases](/how-to/types-of-databases).
 
 ### Properties of relational databases
 
