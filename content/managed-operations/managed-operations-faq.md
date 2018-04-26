@@ -5,8 +5,8 @@ title: Managed Operations FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2018-03-02'
-last_modified_by: Renee Rendon
+last_modified_date: '2018-04-26'
+last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
 ---
