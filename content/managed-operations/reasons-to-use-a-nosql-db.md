@@ -13,6 +13,11 @@ product_url: managed-operations
 
 NoSQL databases have capabilities that traditional relational databases do not. They are especially useful for handling big data.
 
+### Prerequisite
+
+For an introduction to RDBMSs and NoSQL databases, see [Types of
+databases](/how-to/types-of-databases).
+
 ### Understanding when a NoSQL database might be preferable
 
 You might choose a NoSQL database for the following reasons: 
@@ -38,10 +43,6 @@ You might choose a NoSQL database for the following reasons: 
   these properties in favor of strong partition tolerance enables NoSQL users
   to boost horizontal scalability.
 
-### Previous step
-
-[Reasons to use a SQL database](/how-to/reasons-to-use-a-sql-database)
-
 ### Next step
 
-[FAQ](/how-to/intro-to-databases-faq)
+[Introduction to Databases FAQ](/how-to/intro-to-databases-faq)
