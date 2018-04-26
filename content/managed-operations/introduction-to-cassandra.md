@@ -5,15 +5,26 @@ title: 'Introduction to Cassandra'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-23'
+last_modified_date: '2018-04-26'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
 ---
 
-Apache Cassandra is an open source, key-value NoSQL database. Cassandra is
-high-performing and horizontally scalable. It also offers operational
-simplicity.
+This page presents an overview of Apache Cassandra, an open source, key-value
+NoSQL database.
+
+### Prerequisites
+
+For an introduction to NoSQL databases, see the following articles:
+
+- [Types of databases](/how-to/types-of-databases)
+- [Examples of RDBMS and NoSQL databases](/how-to/examples-of-rdbms-and-nosql-databases)
+
+### Benefits of using Cassandra
+
+Cassandra is high-performing and horizontally scalable. It also offers
+operational simplicity.
 
 Cassandra is fully distributed, with no single point of failure. Full
 distribution enables Cassandra to provide continuous availability. Cassandra
@@ -124,9 +135,6 @@ de-normalized before it is stored in the database.
 Finally, search is based on keys and indexes only. Cassandra does not support
 additional search clauses, additional conditions, or sorting on non-key fields.
 
-### Previous step
-
-[Introduction to MongoDB](/how-to/choosing-between-an-rdbms-and-nosql)
-
 ### Next step
+
 [Choosing between an RDBMS and NoSQL](/how-to/introduction-to-mongodb)
