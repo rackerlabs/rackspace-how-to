@@ -49,6 +49,8 @@ databases and objects. While few NoSQL platforms use query languages to build
 databases and read and write data, some enable users to perform these
 actions by using Java or Python scripting.
 
+------------------------------------------------------------------------
+
 ### Rackspace Managed Database Services
 
 #### What is included with Managed Database Services?
