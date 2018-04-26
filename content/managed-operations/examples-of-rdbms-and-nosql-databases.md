@@ -5,7 +5,7 @@ title: 'Examples of RDBMS and NoSQL databases'
 type: article
 created_date: '2018-03-21'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-23'
+last_modified_date: '2018-04-26'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
@@ -13,6 +13,13 @@ product_url: managed-operations
 
 This page presents several common relational database management systems
 (RDBMSs) and NoSQL databases.
+
+### Prerequisite
+
+For an introduction to RDBMSs and NoSQL databases, see the following articles:
+
+- [Types of databases](/how-to/types-of-databases)
+- [Properties of RDBMSs and NoSQL databases](/how-to/properties-of-rdbmss-and-nosql-databases/)
 
 ### Popular relational databases and RDBMSs
 
@@ -56,10 +63,6 @@ The following list describes popular NoSQL databases:
 - **InfiniteGraph**: A highly specialized graph database that focuses on
   graph data structures. InfiniteGraph is useful for finding hidden
   relationships in big data. It is implemented in Java.
-
-### Previous step
-
-[FAQ](/how-to/intro-to-databases-faq)
 
 ### Next step
 
