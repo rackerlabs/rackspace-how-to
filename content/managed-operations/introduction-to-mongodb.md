@@ -19,6 +19,13 @@ MongoDB stores related information together, which enables queries to process
 more quickly. To retrieve information, users leverage the MongoDB query
 language.
 
+### Prerequisites
+
+For an introduction to NoSQL databases, see the following articles:
+
+- [Types of databases](/how-to/types-of-databases)
+- [Examples of RDBMS and NoSQL databases](/how-to/examples-of-rdbms-and-nosql-databases)
+
 ### Terminology and concepts
 
 Many concepts in MongoDB have close analogs to concepts in relational
@@ -75,11 +82,6 @@ applications. For example, both MongoDB and Oracle Database use conditional
 entry updates, composite keys, Unicode characters, and full-text search.
 However, MongoDB also has a built-in map-reduce function for aggregating large
 amounts of data.
-
-### Previous step
-
-[Examples of RDBMS and NoSQL
-databases](/how-to/examples-of-rdbms-and-nosql-databases)
 
 ### Next step
 
