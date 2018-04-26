@@ -3,9 +3,9 @@ permalink: intro-to-databases-faq/
 audit_date: '2018-04-06'
 title: Introduction to databases FAQ
 type: article
-created_date: '2018-02-27'
+created_date: '2018-02-28'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-26'
+last_modified_date: '2018-04-25'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
