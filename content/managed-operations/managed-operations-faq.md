@@ -105,6 +105,8 @@ You can contact the Managed Operations team by logging in to the [Cloud
 Control Panel](https://mycloud.rackspace.com/) and submitting a ticket or chat
 request, or by calling 1 800 961 4454.
 
+------------------------------------------------------------------------
+
 ### General
 
 #### Do you have Servers with a Managed Operations Service Level in the UK?
