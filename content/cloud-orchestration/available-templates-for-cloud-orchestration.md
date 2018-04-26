@@ -5,7 +5,7 @@ title: Available templates for Cloud Orchestration
 type: article
 created_date: '2014-09-04'
 created_by: Nicole Schwartz
-last_modified_date: '2018-04-26'
+last_modified_date: '2018-04-25'
 last_modified_by: Kate Dougherty
 product: Cloud Orchestration
 product_url: cloud-orchestration
