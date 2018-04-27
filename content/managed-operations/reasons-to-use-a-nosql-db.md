@@ -51,4 +51,4 @@ You might choose a NoSQL database for the following reasons: 
 
 ### Next step
 
-[Introduction to databases FAQ](/how-to/intro-to-databases-faq)
+[Examples of RDBMS and NoSQL databases](/how-to/examples-of-rdbms-and-nosql-databases/)
