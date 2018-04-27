@@ -137,4 +137,4 @@ additional search clauses, additional conditions, or sorting on non-key fields.
 
 ### Next step
 
-[Choosing between an RDBMS and NoSQL](/how-to/introduction-to-mongodb)
+[Choosing between an RDBMS and NoSQL](/how-to/choosing-between-rdbms-and-nosql)
