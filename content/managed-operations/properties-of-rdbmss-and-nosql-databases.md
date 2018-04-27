@@ -15,7 +15,7 @@ This page presents the characteristics of relational database management systems
 
 ### Prerequisite
 
-For an introduction to RDBMSs and NoSQL databases, see [Types of databases](/how-to/types-of-databases).
+For an introduction to relational databases and NoSQL databases, see [Types of databases](/how-to/types-of-databases).
 
 ### Properties of relational databases
 
@@ -64,10 +64,6 @@ features associated with them:
 | Column store | High | High | Moderate | Low |
 | Document store | High | Variable to high | High | Low |
 | Graph-based | Variable | Variable | High | High |
-
-### Previous step
-
-[Types of databases](/how-to/types-of-database/)
 
 ### Next step
 
