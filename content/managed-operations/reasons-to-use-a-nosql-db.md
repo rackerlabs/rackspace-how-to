@@ -1,5 +1,5 @@
 ---
-permalink: reasons-to-use-a-nosql-database/
+permalink: reasons-to-use-a-nosql-db/
 audit_date: '2018-03-20'
 title: 'Reasons to use a NoSQL database'
 type: article
