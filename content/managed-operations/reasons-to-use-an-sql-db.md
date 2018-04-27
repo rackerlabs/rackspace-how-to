@@ -36,4 +36,4 @@ You might choose an SQL database for the following reasons: 
 
 ### Next step
 
-[Reasons to use a NoSQL database](/how-to/reasons-to-use-a-nosql-database/)
+[Reasons to use a NoSQL database](/how-to/reasons-to-use-a-nosql-db/)
