@@ -1,7 +1,7 @@
 ---
 permalink: intro-to-databases-intro/
 audit_date: '2018-03-20'
-title: 'Introduction'
+title: 'Introduction to databases'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
