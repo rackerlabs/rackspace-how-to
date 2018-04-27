@@ -61,4 +61,4 @@ advantages.
 
 ### Next step
 
-[Properties of RDBMSs and NoSQL databases](how-to/properties-of-rdbmss-and-nosql-databases/)
+[Properties of RDBMSs and NoSQL databases](/how-to/properties-of-rdbmss-and-nosql-databases/)
