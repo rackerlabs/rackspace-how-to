@@ -5,7 +5,7 @@ title: 'Deprecated resource Rackspace::Cloud::Server for Cloud Orchestration'
 type: article
 created_date: '2015-07-24'
 created_by: Mike Asthalter
-last_modified_date: '2018-03-16'
+last_modified_date: '2018-05-01'
 last_modified_by: Kate Dougherty
 product: Cloud Orchestration
 product_url: cloud-orchestration
@@ -17,18 +17,17 @@ Rackspace will automatically map references to Rackspace Cloud Server to refer
 to OS Nova Server instead. This means that using Rackspace Cloud Server will
 be the same as using OS Nova Server.
 
-In due time, however, the Rackspace Cloud Server resource will be
-completely removed. For this reason, we recommend that you switch
-to using OS Nova Server resource in your templates instead of
-Rackspace Cloud Server resource as soon as possible.
+However, the Rackspace Cloud Server resource will be completely removed in the
+future. For this reason, we recommend that you switch to using OS Nova Server
+resource in your templates instead of Rackspace Cloud Server resource as soon
+as possible.
 
-You will not be impacted if you have created stacks using our pre-built
-Rackspace templates without modifying the templates. This is because we
-have already made the required changes to our pre-built templates.
+You are not impacted if you have created stacks by using our pre-built
+Rackspace templates without modifying the templates. We have already made the
+required changes to our pre-built templates.
 
 You may be impacted if you are using custom-built Heat templates, or if
-you have modified any of our pre-built Rackspace templates to suit your
-needs.
+you have modified any of our pre-built Rackspace templates.
 
 ### Why is Rackspace taking this action?
 
