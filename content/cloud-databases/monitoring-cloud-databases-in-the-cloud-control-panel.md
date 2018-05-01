@@ -5,14 +5,14 @@ title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2018-04-24'
+last_modified_date: '2018-05-01'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
 Monitoring is included with Cloud Databases to help you manage the
-health of your instances. Monitoring checks and alarms can be configured
+health of your instances. Monitoring checks and alarms can be configured by
 using the [Cloud Control Panel](https://mycloud.rackspace.com/) or the
 [Cloud Monitoring
 API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
@@ -20,7 +20,7 @@ API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
 *Monitoring checks* describe the metrics being monitored, and monitoring
 alarms are actions that can be triggered when a check meets specified
 criteria. For example, a check for memory utilization records memory use
-on an instance. An alarm can also be configured to trigger and send an
+on an instance. You can also configure an alarm to trigger and send an
 email when the memory check shows that free memory has dropped below a
 specified level.
 
@@ -29,8 +29,7 @@ instance are described in the following sections.
 
 ### Checks
 
-The monitoring checks for a Cloud Databases instance appear on the details
-page for that instance in the Cloud Control Panel.
+The monitoring checks for a Cloud Databases instance appear in the **Monitoring Checks** section of the details page for that instance in the Cloud Control Panel.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmonitoringchecks.png %}" width="370" height="274" />
 
@@ -74,17 +73,17 @@ instance, and the **Actual Used** value represents the amount of memory that is 
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmemorygraph.png %}" width="561" height="226" />
 
+#### MySQL check
+
+Graphs that report metrics for the MySQL datastore that is running on your
+instance are available in the Cloud Control Panel under **Monitoring Alerts**.
+
 #### Network check
 
 The graph for the Network check displays inbound and outbound network
 traffic in kilobytes per second.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbnetworkgraph.png %}" width="473" height="185" />
-
-#### MySQL check
-
-Graphs that report metrics for the MySQL datastore that is running on your
-instance are available in the Cloud Control Panel under **Monitoring Alerts**.
 
 ### Alarms
 
