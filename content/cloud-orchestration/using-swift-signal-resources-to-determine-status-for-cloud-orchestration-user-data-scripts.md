@@ -1,7 +1,7 @@
 ---
 permalink: using-swift-signal-resources-to-determine-status-for-cloud-orchestration-user-data-scripts/
-audit_date: '2018-03-16'
-title: Use Swift Signal resources with Cloud Orchestration user data scripts
+audit_date: '2018-04-27'
+title: Use Swift signal resources with Cloud Orchestration user data scripts
 type: article
 created_date: '2015-07-24'
 created_by: Mike Asthalter
@@ -18,12 +18,12 @@ determine the status of user data scripts. For example, implementing the
 following Swift signal resources adds functionality that indicates whether a
 user data script completed, and if so, whether it has succeeded or failed.
 
-The `OS::Heat::SwiftSignal` resource can be used to coordinate resource
+Use the `OS::Heat::SwiftSignal` resource to coordinate resource
 creation with signals coming from sources that are external or internal to the
 stack. This resource is often used in conjunction with the
 `OS::Heat::SwiftSignalHandle` resource.
 
-The `SwiftSignalHandle` resource is used to create a temporary URL that
+Use the `SwiftSignalHandle` resource to create a temporary URL that
 applications and scripts use to send signals. The `SwiftSignal` resource
 waits for this URL to receive a specified number of `SUCCESS` signals within a
 specified amount of time. The temporary URL is created by using Rackspace Cloud
@@ -74,8 +74,8 @@ The following example shows how to add a `SwiftSignal` resource that waits for
 The stack is marked as a failure if the specified number of signals is
 not received within the amount of time specified in the `timeout` property, or
 if a signal other than `SUCCESS` is received. A data string and a reason
-string may be attached to the success or failure notification. The data string
-is an attribute that can be displayed as template output.
+string might be attached to the success or failure notification. The data
+string is an attribute that can be displayed as template output.
 
 #### Add a server resource
 
