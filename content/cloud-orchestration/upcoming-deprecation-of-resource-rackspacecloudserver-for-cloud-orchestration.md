@@ -126,8 +126,7 @@ functionalities, the workarounds are described below.
 
             type: OS::Nova::Server
 
-This approach can be used to set and retrieve the admin
-password.
+This approach can be used to set and retrieve the admin password.
 
 ### Request support
 
