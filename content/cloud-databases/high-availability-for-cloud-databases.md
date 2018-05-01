@@ -33,7 +33,7 @@ HA for Cloud Databases has the following use cases:
 -   For critical application workloads, a couple of minutes of
     application downtime can result in significant revenue losses. Users can
     implement Cloud Databases HA instances to ensure that their databases are
-    highly-available and only experience a small amount of downtime
+    highly available and only experience a small amount of downtime
     in the event of failover.
 
 -   To reduce the load on the source instance and improve performance for
@@ -88,13 +88,13 @@ guide](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#
 
 **Notes:**
 
-The following lists presents information to keep in mind when using HA for
+The following list presents information to keep in mind when using HA for
 Cloud Databases:
 
 -   By default, access to an HA instance through the VIP is blocked. To access
-    an HA instance, you must explicitly add an ACL that specifies the IP
-    addresses for which to grant access. ACLs can be set through the API or
-    the Cloud Control Panel.
+    an HA instance, you must explicitly add an access control list (ACL) that
+    specifies the IP addresses for which to grant access. You can set ACLs
+    through the API or the Cloud Control Panel.
 -   The `networks` property that is associated with an HA instance provides
     the addresses and ports for accessing the HA instance. (You can obtain
     this property by listing the details of an HA instance.) The single access
@@ -138,8 +138,7 @@ We recommend that you take the following steps:
 
 HA for Cloud Databases has the following limitations:
 
--   The maximum number of replicas allowed per source
-    database instance is currently two.
+-   The maximum number of replicas allowed per source database instance is two.
 -   HA instances are available only for instance flavors that are 1 GB
     or greater in size.
 -   The source and replicas must have the same size and flavor.
@@ -152,8 +151,8 @@ HA for Cloud Databases has the following limitations:
     and changes against the individual instances in an HA group are not
     allowed.
 
-    **Note**: When adding a replica for a MariaDB HA Group, an existing
-    replica cannot be used to generate a snapshot for the new replica. For
+    **Note**: When you add a replica for a MariaDB HA Group, you cannot use an
+    existing replica to generate a snapshot for the new replica. For
     more information, see [Xtrabackup doesn't log master co-ordinates while
     backup up MariaDB
     10](https://bugs.launchpad.net/percona-xtrabackup/+bug/1404484).
@@ -163,10 +162,11 @@ HA for Cloud Databases has the following limitations:
     instance (port 3306).
 -   Initial setup of the HA group might take anywhere between 5 and 10
     minutes, depending on
-    the number of replicas. Because it requires creation of multiple
-    nodes, allow some time for the `status` property of the HA instance to
-    display as ACTIVE when performing a `GET` call through the API.
+    the number of replicas. Because the initial setup requires creation of
+    multiple nodes, allow some time for the `status` property of the HA
+    instance to display as `ACTIVE` when you perform a `GET` call through the
+    API.
 -   The instance listing in the Cloud Control Panel shows the status
     of the HA group. To take action on the cluster or view
-    cluster-level information, click the instance name to go to the cluster
-    details page.
+    cluster-level information, click the instance name to go to the HA Group
+    Details page.
