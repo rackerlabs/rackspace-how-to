@@ -1,11 +1,11 @@
 ---
 permalink: scheduled-backups-for-cloud-databases/
-audit_date: '2016-04-04'
+audit_date: '2018-05-01'
 title: Scheduled backups for Cloud Databases
 type: article
 created_date: '2015-11-02'
 created_by: Rackspace Support
-last_modified_date: '2018-04-18'
+last_modified_date: '2018-05-01'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -43,7 +43,7 @@ Scheduled backups provide the following features:
   reference, and the backup process uses the most up-to-date slave node as a
   source.
 - You define the number of full automated backups to retain.
-- You can run the backup process immediately through the client or API by
+- You can run the backup process immediately through the client or the API by
   setting the `run now` option.
 
 ### Pricing
@@ -53,8 +53,8 @@ based on amount of storage used at the standard Cloud Files rates. For
 information on these rates, see the [Cloud Pricing
 page](https://www.rackspace.com/en-us/cloud/public-pricing#cloud-files).
 Charges are incurred as long as the backups exist. Even if you delete the
-instance, you may still be charged for the backups if they are not
-individually deleted.
+instance, you might still be charged for the backups if you don't delete them
+individually.
 
 ### Scheduling backups by using the Control Panel
 
@@ -97,7 +97,7 @@ creation is only available on HA groups.
 5. Click **Specify Scheduled Backup Settings…** to specify the exact time for
    the daily backups, the day of the week for the weekly full backup, and the
    number of weekly full backups to retain. If any of those values are not
-   specified, they will be selected randomly.
+   specified, they will be selected randomly. Then, click **Create Schedule**.
 
 7. After you've selected all of the other settings for the HA group, click
    **Create HA Group**.
@@ -133,7 +133,7 @@ creation is only available on HA groups.
 
 You can enable, modify, and delete scheduled backups through the API by using
 the API operations described in the [Cloud Databases API
-Reference](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#scheduled-backups).
+Reference](https://developer.rackspace.com/docs/cloud-databases/v1/api-reference/automated-backups/).
 
 The following table provides a brief overview of the scheduled backup API
 operations:
@@ -148,6 +148,8 @@ Delete scheduled backup |`DELETE`|`/{version}/{accountId}/schedules/{scheduleId}
 
 The following table lists the required and optional attributes for these
 operations:
+
+~~THIS TABLE IS OUT OF DATE!!! UPDATE IF WE'RE NOT DELETING IT~~~~~
 
 Attribute name | Description | Required?
 ----|----|----
@@ -194,7 +196,7 @@ When the third full automated backup is performed, the oldest full automated
 backup and its child incremental backups are deleted. You can define your own
 retention policy when you create a new schedule or update an existing
 schedule by setting the allowed minimum retention value to `2`. There is no
-maximum value for the number of full backups to keep.
+limit on the number of full backups that you may retain.
 
 If the instance that is associated with a backup is deleted, the backups
 remain until you manually delete them. Note that backups continue to be
