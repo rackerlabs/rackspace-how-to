@@ -49,7 +49,7 @@ If you need to export or import email address data from a different Outlook vers
 
    <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2016-for-windows/outlook_data_file2016.png %}" />
 
-6. Select the folder that you want to export, and then click **Next**. 
+6. Select the folder that you want to export, and then click **Next**.
 
    In this case, select the email address at the top of the folder list and select the checkbox for **Include subfolders** to export all data.  
 
@@ -68,4 +68,4 @@ If you need to export or import email address data from a different Outlook vers
 9. Click **Finish**.
 
 
-If you are ready to import the data into another Outlook 2016 profile, see [Import email address data into Outlook 2016 for Windows](how-to/import-email-address-data-into-outlook-2016-for-windows).
+If you are ready to import the data into another Outlook 2016 profile, see [Import email address data into Outlook 2016 for Windows](/how-to/import-email-address-data-into-outlook-2016-for-windows).
