@@ -5,7 +5,7 @@ title: 'Examples of RDBMS and NoSQL databases'
 type: article
 created_date: '2018-03-21'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-26'
+last_modified_date: '2018-05-07'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
@@ -20,7 +20,7 @@ For an introduction to RDBMSs and NoSQL databases, see [Properties of RDBMSs and
 
 ### Popular relational databases and RDBMSs
 
-The following list describes popular SQL databases and RDBMSs:
+The following list describes popular SQL and RDBMS databases:
 
 - **Oracle**: An object-relational database management system (DBMS) that is
   written in the C++ language.
