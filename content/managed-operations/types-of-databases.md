@@ -5,7 +5,7 @@ title: 'Types of databases'
 type: article
 created_date: '2018-02-27'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-23'
+last_modified_date: '2018-05-07'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
@@ -18,8 +18,8 @@ that information.
 
 ### Relational databases
 
-A relational database is a database that enables related data to be stored
-across multiple tables and linked by establishing a relationship between the
+A relational database enables related data to be stored
+across multiple tables and is linked by establishing a relationship between the
 tables. A relational database management system (RDBMS) is a database
 management system (DBMS) that is based on this relational model.
 
@@ -46,7 +46,7 @@ companies as they looked for ways to handle unprecedented data volumes and
 operation volumes under tight latency constraints.
 
 NoSQL databases are designed to overcome the limitations of transactional
-databases. NoSQL databases handle structured data, semi-structured data, and
+databases. They can handle structured data, semi-structured data, and
 unstructured data. Unstructured data can include sensor data, information on
 social sharing, personal settings, photos, location-based information, online
 activity, usage metrics, and other data. NoSQL databases can store
@@ -55,7 +55,7 @@ These types of NoSQL databases are referred to as _document-oriented
 databases_. However, there are also NoSQL _graph databases_ that store
 information about networks, such as professional or social connections.   
 
-NoSQL can process unstructured big data very quickly. Analyzing high-volume,
+NoSQL can process unstructured big data at great speed. Analyzing high-volume,
 real-time data such as website clickstreams can yield significant business
 advantages.
 
