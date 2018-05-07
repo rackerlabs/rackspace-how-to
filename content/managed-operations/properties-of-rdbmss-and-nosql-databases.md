@@ -19,9 +19,9 @@ For an introduction to relational databases and NoSQL databases, see [Types of d
 
 ### Properties of relational databases
 
-Relational databases are efficient systems. Because they are efficient,
-they're a common choice for storing financial records, logistical information,
-personnel data, and other information in new databases. Because they're easier
+Relational databases are efficient systems, which makes them a common choice
+for storing financial records, logistical information, personnel data, and
+other information in new databases. Because they're easier
 to understand and use than NoSQL databases, relational databases also
 frequently replace legacy hierarchical databases and network databases.
 
@@ -49,7 +49,7 @@ NoSQL databases have the following properties:
 
 - They have higher scalability.
 - They use distributed computing.
-- They cost less to use.
+- They are cost effective.
 - They support flexible schema.
 - They're able to process both unstructured and semi-structured data.
 - There are no complex relationships, such as the ones between tables in an
