@@ -5,7 +5,7 @@ title: 'Reasons to use a NoSQL database'
 type: article
 created_date: '2018-03-20'
 created_by: Satyakam Mishra
-last_modified_date: '2018-05-07'
+last_modified_date: '2018-05-08'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
