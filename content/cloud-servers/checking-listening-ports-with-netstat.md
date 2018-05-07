@@ -1,12 +1,12 @@
 ---
 permalink: checking-listening-ports-with-netstat/
-audit_date: '2016-07-15'
+audit_date: '2018-05-08'
 title: Check listening ports with netstat
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2016-07-15'
-last_modified_by: Nate Archer
+last_modified_date: '2018-05-08'
+last_modified_by:Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
