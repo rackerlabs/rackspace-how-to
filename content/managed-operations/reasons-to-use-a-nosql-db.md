@@ -5,7 +5,7 @@ title: 'Reasons to use a NoSQL database'
 type: article
 created_date: '2018-03-20'
 created_by: Satyakam Mishra
-last_modified_date: '2018-04-27'
+last_modified_date: '2018-05-07'
 last_modified_by: Kate Dougherty
 product: Managed Operations
 product_url: managed-operations
@@ -44,8 +44,8 @@ You might choose a NoSQL database for the following reasons: 
 
 - To boost horizontal scalability.
 
-  The CAP theorem states that in any distributed system, only two of the three
-  CAP properties (consistency, availability, and partition tolerance) can be
+  The CAP (consistency, availability, and partition tolerance) theorem states
+  that in any distributed system, only two of the three CAP properties can be
   used simultaneously. Adjusting these properties in favor of strong partition
   tolerance enables NoSQL users to boost horizontal scalability.
 
