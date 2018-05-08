@@ -59,18 +59,18 @@ To install the certificate, follow these steps:
 1. Copy your renewed certificate, intermediate certificate bundle and key file into the directory 
    that you use to hold your certificates.
 
-2. Open the httpd.conf file and add or update the following directives:
+2. Open your webiste configuration file (for example, `httpd.conf` for Apache), and add or update the 
+   following directives:
 
-   - SSLCertificateFile /path to certificate file/your issued certificate
-   - SSLCertificateKeyFile /path to key file/your key file
-   - SSLCertificateChainFile /path to intermediate certificate/null
+   - SSLCertificateFile: /path to your issued certificate
+   - SSLCertificateKeyFile: /path to your key file
+   - SSLCertificateChainFile: /path to your intermediate certificate
    
 3. Restart your webserver.
 
 ### DNS Update
 
 Because you are updating an existing SSL certificate, you don't need
-to wait for propagation as you would when installing a new SSL
-certificate.
+to wait for propagation as you would when installing a new SSL certificate.
 
 **NOTE**: Removing the SSL certificate from your site will change its IP address, which might require a DNS change.
