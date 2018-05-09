@@ -1,19 +1,21 @@
 ---
 permalink: add-and-remove-glusterfs-servers/
-audit_date:
+audit_date: '2018-05-09'
 title: Add and remove GlusterFS servers
 type: article
 created_date: '2014-06-03'
 created_by: Matt Sherborne
-last_modified_date: '2016-06-10'
+last_modified_date: '2018-05-09'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Previous section:** [Set up a two-server GlusterFS array](/how-to/set-up-a-two-server-glusterfs-array)
+This article describes how to add and remove GlusterFS servers from your server array.
 
-This article describes how to add a new node, balance it into the array, and then remove it.
+### Prerequisite
+
+- [Set up a two-server GlusterFS array](/how-to/set-up-a-two-server-glusterfs-array)
 
 ### Create a new server
 
@@ -39,9 +41,11 @@ In the previous article, you added a Rackspace custom network.
 
 You can also use the Rackspace Cloud Control panel to associate a server with your existing network.
 
-When you are done, the new server should have the IP address 192.168.0.3 on interface `/dev/eth3`. That is the address that GlusterFS will use to communicate with the other server.
+When you are done, the new server should have the IP address 192.168.0.3 on interface `/dev/eth3`. That is the address that GlusterFS uses to communicate with the other server.
 
 ### Format the partition and install GlusterFS
+
+Use the following steps to format the server partition and install GlusterFS:
 
 1.  Use SSH to log in to the server.
 
@@ -84,7 +88,7 @@ The parts of the command are as follows:
 GlusterFS offers different types of volume storage strategies:
 
  - **Distributed** - One file on one brick, the next file on the next. This strategy gives you more space because your volume is the sum of all the bricks.
- - **Replicated** - Every file is copied to every server. **This is the strategy that we recommend.**
+ - **Replicated** (*Recommended*) - Every file is copied to every server.
  - **Striped** - Files are cut into chunks, and one chunk is written to the first brick, one chunk is written to the second brick, and so on.
 
 You can also combine strategies, for example replicated-distributed, as illustrated in the following example:
@@ -101,7 +105,7 @@ Striped-replicated volumes are recommended only when you have files that are big
 
 ### View the state of the servers
 
-Following are some commands that you can use to find out more about what's happening in your cluster. You will use these commands in the later articles.
+Following are some commands that you can use to find out more about what's happening in your cluster. You will use these commands in later GlusterFS articles.
 
 #### peer status
 
@@ -162,8 +166,6 @@ You can view the status of the `remove-brick` operation by using the following c
 
     root@web01:~# watch gluster volume remove-brick www replica 2 192.168.0.2:/srv/.bricks/www status
 
-Running the command that way gives GlusterFS time to re-distribute the files around the bricks.
-
 ### Re-add a brick
 
 Re-adding a brick is not as straight forward as it could be, so this section explains how to do it.
@@ -173,7 +175,7 @@ Try adding web02 back into the volume, as follows:
     root@web01:~# gluster volume add-brick www replica 3 192.168.0.2:/srv/.bricks/www
     volume add-brick: failed:
 
-It failed. Why?  Look at the logs on web02:
+It failed. Look at the logs on web02 to see why the command failed:
 
     root@web02:/srv/.bricks# tail /var/log/glusterfs/*log -f | grep E
     [2014-05-25 00:19:04.954410] I [input.c:36:cli_batch] 0-: Exiting with: 0
@@ -194,4 +196,6 @@ Now that you have a clean location in which to store the brick, adding the brick
     root@web01:/srv# gluster volume add-brick www replica 3 192.168.0.2:/srv/.bricks/www
     volume add-brick: success
 
-**Next section** - [How to recover from a failed server in a GlusterFS array](/how-to/recover-from-a-failed-server-in-a-glusterfs-array)
+### Next steps
+
+- [How to recover from a failed server in a GlusterFS array](/how-to/recover-from-a-failed-server-in-a-glusterfs-array)
