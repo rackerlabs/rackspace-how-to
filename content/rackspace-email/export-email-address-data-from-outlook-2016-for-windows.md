@@ -5,8 +5,8 @@ title: Export email address data from Outlook 2016 for Windows
 type: article
 created_date: '2017-09-04'
 created_by: William Loy
-last_modified_date: '2017-10-19'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-05-10'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
