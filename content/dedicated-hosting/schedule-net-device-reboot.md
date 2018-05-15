@@ -11,10 +11,10 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-You can now schedule a reboot for network (or net) devices in the MyRackspace
-portal. The *Schedule Reboot* tool enables you to schedule a net device reboot
-for a predefined date and time, and activates the reboot button process for your
-net device.
+You can schedule a reboot for network (or net) devices in the MyRackspace
+portal. The Schedule Reboot tool enables you to schedule a net device reboot
+for a predefined date and time, and it activates the reboot button process for
+your net device.
 
 For more information about the reboot button process, see the [Network device reboot FAQ](https://support.rackspace.com/how-to/network-device-reboot-faq/).
 
@@ -31,7 +31,7 @@ For more information about the reboot button process, see the [Network device re
 
 4. On the **Schedule Reboot** page, enter the following information:
 
-   - **Reason**: Why you want to reboot your net device
+   - **Reason**: The reason that you want to reboot your net device
    - **Date/Time**: The date and time when you want your net device to reboot
    - **Devices**: The net device or devices that you want to reboot
 
