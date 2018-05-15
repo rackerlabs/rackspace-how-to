@@ -14,14 +14,14 @@ product_url: cloud-dns
 **Previous section:** [Rackspace Cloud DNS - Overview](/how-to/rackspace-cloud-dns-overview)
 
 Rackspace Cloud DNS automates and simplifies your domain name system
-management and offers many of the features you need, including:
+management and offers many of the features you need, including the following capabilities:
 
 -   **REST-based API:** The Cloud DNS RESTful API lets you customize solutions to
     automate DNS management.
 
--   **Multiple record types:** A full list of supported record types.
+-   **Multiple record types:** A full list of record types is supported.
 
--   **Comprehensive management capability:** You can list, add, modify and
+-   **Comprehensive management capability:** You can list, add, modify, and
     remove both domains and DNS records. You can also import and export domains.
 
 -   **Domain delegation:** You can delegate a domain or a sub-domain 
@@ -33,14 +33,14 @@ management and offers many of the features you need, including:
 -   **Globally distributed Anycast DNS network:** Our internal network
     leverages Anycast to make DNS more reliable and resilient.
 
--   **Simplified migration:** You can import and export features allow you to
-    import or export a text list or BIND 9 formatted file of managed
+-   **Simplified migration:** Import and export features allow you to
+    import or export a text list or BIND9-formatted file of managed
     domains and their configuration details into and out of your
     account.
 
 The available management operations enable you to easily manage domains,
-sub-domains, and records by using the REST-based API. Additionally, advanced
-operations are available that allow you to easily manage mail servers,
-zone delegation, and create SPF records.
+sub-domains, and records by using the RESTful API. Additionally, advanced
+operations are available that allow you to easily manage mail servers and
+zone delegation, as well as create SPF records.
 
-**Next steps:** [Rackspace Cloud DNS - Technical details](/how-to/rackspace-cloud-dns-technical-details)
+**Next steps:** [Rackspace Cloud DNS technical details](/how-to/rackspace-cloud-dns-technical-details)
