@@ -36,7 +36,7 @@ Django-Cloudfiles has the following characteristics:
    5. It ignores files you probably don't want to upload like **.DS_Store**, **.git**, and **Thumbs.db**.
    6. Plug-ins for the Django management system do exist (for example, django-extensions), but none integrate with Cloud Files.
    7. It is a simple drop-in with no coding necessary.
-   8. It requires no external dependancies.
+   8. It requires no external dependencies.
    9. Django is reusable, so Django developers always look for an existing solution before building a new one.
    10. Django is supported by Google App Engine.
    
