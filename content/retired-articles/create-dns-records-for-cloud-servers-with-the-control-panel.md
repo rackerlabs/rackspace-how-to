@@ -1,14 +1,12 @@
 ---
 permalink: create-dns-records-for-cloud-servers-with-the-control-panel/
-audit_date:
+audit_date: '2018-05-16'
 title: Create DNS Records for cloud servers with the Control Panel
 type: article
 created_date: '2012-07-13'
 created_by: Rackspace Support
-last_modified_date: '2017-05-12'
+last_modified_date: '2018-05-16'
 last_modified_by: Cat Lookabaugh
-product: Cloud DNS
-product_url: cloud-dns
 ---
 
 **Previous section:** [Getting Started with Cloud Servers](/how-to/create-a-cloud-server)
