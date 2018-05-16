@@ -11,7 +11,7 @@ product: Cloud DNS
 product_url: cloud-dns
 ---
 
-It is easy to create DNS records for your domain by using the
+You can easily create DNS records for your domain by using the
 [Cloud Control Panel](https://mycloud.rackspace.com). In this article, we
 look at creating a DNS zone for your domain and adding basic A, MX, and
 CNAME records by using the Cloud Control Panel. We also demonstrate deleting records
@@ -19,24 +19,28 @@ and domains.
 
 ### Add a domain
 
-1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
+Use the following steps to add a domain:
+
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com)
     and select **Networking** -> **Cloud DNS**.
 
 2.  Click **Create Domain**.
 
-3.  In the pop-up window, and enter the domain name, email address, Time To Live
+3.  In the pop-up window, and enter the domain name, email address, time to live
     (TTL), as shown in the following example.
 
     <img src="{% asset_path cloud-dns/creating-dns-records-with-cloud-dns/2.png %}" alt="" />
 
-    **Note**: Time To Live indicates how log a DNS record is cached before it's updated.
+    **Note**: Time to live indicates how long a DNS record is cached before it's updated.
 
 3.  After you have entered everything, click **Create Domain**. Your domain is
     listed in the domain section, along with options to create other DNS records.
 
-### Add an A record for your domain.
+### Add an A record for your domain
 
-1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
+Use the following steps to add an A record for your domain:
+
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com)
     and select **Networking** -> **Cloud DNS**.
 2.  Select your domain in the list, and then select **Add Record**.
     Select **A/AAAA Record** for the type, and fill out the following fields.
@@ -45,9 +49,11 @@ and domains.
 
 3.  After you have entered everything, click **Add Record**.
 
-### Add a CName record for your domain.
+### Add a CNAME record for your domain
 
-1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
+Use the following steps to add a CNAME record for your domain:
+
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com)
     and select **Networking** -> **Cloud DNS**.
 2.  Select your domain in the list, and then select **Add Record**. Select
     **CNAME Record** for the type, and fill out the following fields.
@@ -58,7 +64,9 @@ and domains.
 
 ### Add an MX record for your domain.
 
-1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
+Use the following steps to add an MX record for your domain:
+
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com)
     and select **Networking** -> **Cloud DNS**.
 2.  Select your domain in the list, and then select **Add Record**. Select
     **MX Record** for the type, and fill out the following fields.
@@ -67,9 +75,11 @@ and domains.
 
 3.  After you have entered everything, click **Add Record**.
 
-### Delete a record from your domain.
+### Delete a record from your domain
 
-1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
+Use the following steps to delete a record from your domain:
+
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com)
     and select **Networking** -> **Cloud DNS**.
 2.  Click the gear icon next to the desired domain, and then click **Delete Record**.
 
@@ -77,13 +87,15 @@ and domains.
 
 ### Delete a domain
 
-1.  Log into the [Cloud Control Panel](https://mycloud.rackspace.com)
+Use the following steps to delete a record a domain:
+
+1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com)
     and select **Networking** -> **Cloud DNS**.
 2.  Click the gear icon next to the desired domain, and then click **Delete Domain**.
 
     <img src="{% asset_path cloud-dns/creating-dns-records-with-cloud-dns/7.png %}" alt="" />
 
-### What are the canonical DNS servers for Cloud Servers?
+### Canonical DNS servers for Cloud Servers
 
 If you're setting the canonical name servers (or the NS records) for your domain
 with your domain registrar, use the following addresses:
