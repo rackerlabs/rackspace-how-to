@@ -50,13 +50,13 @@ Currently available domain and record operations include those shown in the foll
     </td>
   </tr>
   <tr class="even">
-    <td align="left"><strong>List Domain Details</strong>
+    <td align="left"><strong>List domain details</strong>
       <ul>
         <li>Lists the details of the specified domain and displays all details, including records. 
         It cannot return details for a domain that has been deleted.</li>
       </ul>
     </td>
-    <td align="left"><strong>List Record Details</strong>
+    <td align="left"><strong>List record details</strong>
       <ul>
         <li>Lists the details of the specified record. </li>
       </ul>
