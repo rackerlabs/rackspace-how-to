@@ -27,80 +27,96 @@ Currently available domain and record operations include those shown in the foll
 
 <table>
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+  <col width="50%" />
+  <col width="50%" />
 </colgroup>
 <thead>
-<tr class="header">
-<th align="left">Domains</th>
-<th align="left">Records</th>
-</tr>
+  <tr class="header">
+    <th align="left">Domains</th>
+    <th align="left">Records</th>
+  </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><strong>List domains</strong>
-<ul>
-<li>Lists all domains and subdomains manageable by the specified account and displays the IDs and names.</li>
-</ul></td>
-<td align="left"><strong>List records</strong>
-<ul>
-<li>Lists all records that are configured for the domain or lists the details for a specific record.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><strong>List Domain Details</strong>
-<ul>
-<li>Lists the details of the specified domain and displays all details, including records. 
-It cannot return details for a domain that has been deleted.</li>
-</ul></td>
-<td align="left"><strong>List Record Details</strong><ul>
-<li>Lists the details of the specified record. </li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Create domain</strong>
-<ul>
-<li>Based on the configuration defined in the request object, provisions one or more new DNS domains under the account specified. Failures in the validation process are non-recoverable and require the caller to correct the cause of the failure and POST the request again.</li>
-</ul></td>
-<td align="left"><strong>Add record</strong>
-<ul>
-<li>Adds new records to the domain.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><strong>Modify domain</strong>
-<ul>
-<li>Modifies DNS domain attributes. Records cannot be added, modified, or removed. Only the Time To Live (TTL) and email address attributes of a domain can be modified.</li>
-</ul></td>
-<td align="left"><strong>Modify record</strong>
-<ul>
-<li>Modifies the configuration of a record in a domain.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Delete domain</strong>
-<ul>
-<li>Removes the specified domains from the account. When a domain is deleted, its immediate resource records are also deleted from the account. By default, if a deleted domain had subdomains, each subdomain becomes a root domain and is not deleted.</li>
-<li>When a domain is deleted, purges any and all configuration data immediately. The domain cannot be recovered by using the API. In a request to remove multiple domains, a failure on a single part of the request causes the entire request to fail.</li>
-</ul></td>
-<td align="left"><strong>Remove record</strong>
-<ul>
-<li>Removes a record from a domain.</li>
-</ul></td>
-<tr class="odd">
-<td align="left"><strong>Import domain</strong>
-<ul>
-<li>Provisions a new DNS domain under the account specified by the BIND9-formatted file configuration contents defined in the request object. Failures in the validation process are non-recoverable and require the caller to correct the cause of the failure and POST the request again.</li>
-</ul></td>
-<td align="left"> </td>
-</tr>
-<tr class="even">
-<td align="left"><strong>Export domain</strong>
-<ul>
-<li>Provides the BIND9-formatted contents of the requested domain. This operation is intended for a single domain only, so no subdomain information is provided. </li>
-</ul></td>
-<td align="left"> </td>
-</tr>
+  <tr class="odd">
+    <td align="left"><strong>List domains</strong>
+      <ul>
+        <li>Lists all domains and subdomains manageable by the specified account and displays the IDs and names.</li>
+      </ul>
+    </td>
+    <td align="left"><strong>List records</strong>
+      <ul>
+        <li>Lists all records that are configured for the domain or lists the details for a specific record.</li>
+        </ul>
+    </td>
+  </tr>
+  <tr class="even">
+    <td align="left"><strong>List Domain Details</strong>
+      <ul>
+        <li>Lists the details of the specified domain and displays all details, including records. 
+        It cannot return details for a domain that has been deleted.</li>
+      </ul>
+    </td>
+    <td align="left"><strong>List Record Details</strong>
+      <ul>
+        <li>Lists the details of the specified record. </li>
+      </ul>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td align="left"><strong>Create domain</strong>
+      <ul>
+        <li>Based on the configuration defined in the request object, provisions one or more new DNS domains under the account         specified. Failures in the validation process are non-recoverable and require the caller to correct the cause of the           failure and POST the request again.</li>
+      </ul>
+    </td>
+    <td align="left"><strong>Add record</strong>
+      <ul>
+        <li>Adds new records to the domain.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr class="even">
+    <td align="left"><strong>Modify domain</strong>
+      <ul>
+        <li>Modifies DNS domain attributes. Records cannot be added, modified, or removed. Only the Time To Live (TTL) and             email address attributes of a domain can be modified.</li>
+      </ul>
+    </td>
+    <td align="left"><strong>Modify record</strong>
+      <ul>
+        <li>Modifies the configuration of a record in a domain.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td align="left"><strong>Delete domain</strong>
+      <ul>
+        <li>Removes the specified domains from the account. When a domain is deleted, its immediate resource records are also         deleted from the account. By default, if a deleted domain had subdomains, each subdomain becomes a root domain and is         not deleted.</li>
+        <li>When a domain is deleted, purges any and all configuration data immediately. The domain cannot be recovered by             using the API. In a request to remove multiple domains, a failure on a single part of the request causes the entire           request to fail.</li>
+      </ul>
+    </td>
+    <td align="left"><strong>Remove record</strong>
+      <ul>
+        <li>Removes a record from a domain.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr class="odd">
+    <td align="left"><strong>Import domain</strong>
+      <ul>
+        <li>Provisions a new DNS domain under the account specified by the BIND9-formatted file configuration contents defined         in the request object. Failures in the validation process are non-recoverable and require the caller to correct the           cause of the failure and POST the request again.</li>
+      </ul>
+    </td>
+    <td align="left"> 
+    </td>
+  </tr>
+  <tr class="odd">
+    <td align="left"><strong>Export domain</strong>
+      <ul>
+        <li>Provides the BIND9-formatted contents of the requested domain. This operation is intended for a single domain             only, so no subdomain information is provided. </li>
+      </ul>
+    </td>
+    <td align="left"> 
+    </td>
+  </tr>
 </tbody>
 </table>
 
