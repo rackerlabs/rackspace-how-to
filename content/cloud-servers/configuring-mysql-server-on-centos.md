@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the [previous article](/how-to/installing-mysql-server-on-centos)
+In the [previous article](/how-to/installing-mariadb-server-on-centos)
 we covered a basic MariaDB server setup on CentOS Linux. We set the root
 password, created a database, and created a user for the database. Now
 let's look at MariaDB in a little more detail so we can tweak its
