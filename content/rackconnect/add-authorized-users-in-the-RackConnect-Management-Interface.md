@@ -1,5 +1,5 @@
 ---
-permalink: add-authorized-users-in-the-rackconnect-management-interface
+permalink: add-authorized-users-in-the-rackconnect-management-interface/
 audit_date:
 title: Add authorized users in the RackConnect Management Interface
 type: article
@@ -17,7 +17,7 @@ RackConnect users, click **Account > User List**.
 
 On the RackConnect **User List** page, you can view active or invited users
 and create or deactivate users.
-   **Note:** You wil also see Inactive users and Invited Users listed. 
+   **Note:** You wil also see Inactive users and Invited Users listed.
    - Inactive user has not been invited.
    - Invited user has been sent activation information and is in a pending type of status.
 
@@ -28,7 +28,7 @@ Complete the following steps to create and authorize new user.
 1. Click **Create New User**.
 2. In the **Users/New** screen, enter information for the new user in the
    **First Name**, **Last Name**, **Email Address** and **Phone Number** fields and click **Create New User** when finished.
-   **Note:** This generates an email to the new user to register. 
+   **Note:** This generates an email to the new user to register.
 3. After the new user is registered, open the  **Account > Permissions** page
    to assign authorization for the user.
    **Note:** If you already have a user whose authorization profile would be suitable for the user currently being assigned authorities, you can use the **Clone** option from the *User List** page.
