@@ -1,25 +1,25 @@
 ---
-permalink: configuring-mysql-server-on-centos/
-audit_date:
-title: Configure MySQL server on CentOS
+permalink: configuring-mariadb-server-on-centos/
+audit_date: '2018-05-22'
+title: Configure MariaDB server on CentOS
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2016-01-11'
+last_modified_date: '2018-05-22'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 In the [previous article](/how-to/installing-mysql-server-on-centos)
-we covered a basic MySQL server setup on CentOS Linux. We set the root
+we covered a basic MariaDB server setup on CentOS Linux. We set the root
 password, created a database, and created a user for the database. Now
-let's look at MySQL in a little more detail so we can tweak its
+let's look at MariaDB in a little more detail so we can tweak its
 configuration and be ready in case something goes wrong.
 
 ### Finding the config files
 
-By default you'll find MySQL's configuration file at:
+By default you'll find MariaDB's configuration file at:
 
     /etc/my.cnf
 
@@ -33,21 +33,21 @@ you can send to the server when you launch it. The second part is all
 the configuration stuff that was set when the server was compiled.
 
 What we're looking for shows up near the start of the output. Find a
-couple lines that look like:
+couple lines that look similar to the following:
 
     Default options are read from the following files in the given order:
-    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
+    /etc/mysql/my.cnf /etc/my.cnf ~/.my.cnf
 
 And there we are. The server works down that list until it finds a
 configuration file.
 
 ### my.cnf
 
-With the location in hand, open the my.cnf file and have a look inside.
+With the location in hand, open the **my.cnf** file and have a look inside.
 
     /etc/my.cnf
 
-Any lines starting with "#" are comments, and they mostly document what
+Any lines starting with `#` are comments, and they mostly document what
 the different settings are for. They're good to read through. You'll
 find details like the location of log files and where the database files
 are kept.
@@ -55,7 +55,7 @@ are kept.
 #### Config groups
 
 There are lines in the config file that just contain a word in square
-brackets, like "[client]" or "[mysqld]". Those are "config groups"
+brackets, like **[client]** or **[mysqld]**. Those are *config groups*
 and they tell the programs that read the configuration file which parts
 they should pay attention to.
 
@@ -64,35 +64,36 @@ technically a collection of tools. That includes the server (mysqld),
 the client (mysql), and some other tools we'll talk about in a bit.
 Those programs look in my.cnf to see how they should behave.
 
-There's a bit more to it, but basically: The "client" config section
-controls the mysql client, and the "mysqld" section controls the server
+There's a bit more to it, but basically: The **client** config section
+controls the mysql client, and the **mysqld** section controls the server
 config.
 
 ### Log files
 
 If something does go wrong the best place to start troubleshooting any
-program is its logs. By default MySQL stores its log files in the
+program is its logs. By default MariaDB stores its log files in the
 directory:
 
-    /var/log
+    /var/log/mariadb
 
-You may need to use sudo to get a listing of the files in that
+**Note**: You might need to use `sudo` to get a listing of the files in that
 directory.
 
-If you don't find the MySQL logs in the default directory you'll need to
-check MySQL's config. Look in the my.cnf file and look for a
-"log_error" line, as in:
+If you don't find the logs in the default directory you'll need to
+check MariaDB's config. Look in the **my.cnf** file and look for a
+`log_error` line, as in:
 
-    log_error = /var/log/mysql/error.log
+    log_error = /var/log/mariadb/mariadb.log
 
-If you don't see a line like that, create one in the "mysqld" section so
-MySQL will use its own error log. We recommend using the location in the
-example, creating the "/var/log/mysql" directory if it doesn't already
-exist. Then restart MySQL to make the change.
+If you don't see a line like that, create one in the **mysqld** section so that
+MariaDB will use its own error log. We recommend using the location in the
+example, creating the **/var/log/mariadb** directory if it doesn't already
+exist. Apply the change by restarting MariaDB with the following command:
 
-Make sure the log directory you choose can be written to by the user
-controlling the MySQL process (usually "mysql"). The user running the
-process will be defined in the "user" config value for mysqld in my.cnf.
+    systemctl restart mariadb
+
+Make sure that the log directory you choose can be written to by the user
+controlling the MariaDB process.
 
 #### Network settings
 
@@ -119,7 +120,7 @@ usually gets set to the address for localhost, 127.0.0.1. By binding to
 localhost the server makes sure no one can connect to it from outside
 the local machine.
 
-If you're running your MySQL server on a different machine from your
+If you're running your MariaDB server on a different machine from your
 application you'll want to bind to a remotely-accessible address instead
 of localhost. Change the bind-address setting to match your public IP
 address (or, better, a backend IP address on a network that fewer
@@ -137,7 +138,7 @@ iptables.
 
 ### mysqld and mysqld_safe
 
-Behind the scenes there are actually two versions of the MySQL server,
+Behind the scenes there are actually two versions of the MariaDB server,
 "mysqld" and "mysqld_safe". Both read the same config sections. The
 main difference is that mysqld_safe launches with a few more safety
 features enabled to make it easier to recover from a crash or other
@@ -168,7 +169,7 @@ are copying the database files and using mysqldump.
 
 #### File copy
 
-By default MySQL creates a directory for each database in its data
+By default MariaDB creates a directory for each database in its data
 directory:
 
     /var/lib/mysql
@@ -180,7 +181,7 @@ through your copy some files will change and lead to a corrupt backup.
 Not a good thing if you're trying to plan for disaster recovery.
 
 To make sure the database files are copied cleanly you can shut the
-MySQL server down entirely before the copy. That's safe but isn't always
+MariaDB server down entirely before the copy. That's safe but isn't always
 ideal.
 
 Another approach you can take is to lock the database as read-only for
@@ -252,7 +253,7 @@ backup files it writes that will drop tables before recreating them.
 
 ### Database engine
 
-The last concept we'll talk about here is that of the "database engine".
+The last concept we'll talk about here is that of the *database engine*.
 The engine is the process that's churning away behind the scenes,
 writing to and reading data from files. You won't usually need to know
 anything other than that it's there, but sometimes you'll want to run an
@@ -263,31 +264,25 @@ created by the application that's going to use them, which is why we
 aren't going to get into that syntax here.
 
 To see the engine used by your database's tables you can run the
-following command in the MySQL shell:
+following command in the MariaDB shell, changing "<demodb>" to the name
+of your database:
 
     SHOW TABLE STATUS FROM demodb;
-
-Change "demodb" to the name of your database.
 
 #### Choosing an engine
 
 Ideally you won't need to choose an engine. If you're not very familiar
-with MySQL that's certainly the safest way to go - let the application
+with MariaDB that's certainly the safest way to go - let the application
 do its thing, and if you're writing the application, use the default
 engine until you're more comfortable with your options.
 
-If you have a database administrator, do whatever he or she says.
-They're smart people, they know what they're talking about.
-
-The two database engines used most often with MySQL are "MyISAM" and
-"InnoDB". The default database engine for MySQL version 5.1 and earlier
-is MyISAM, while InnoDB is the default database engine starting with
-MySQL version 5.5.
+The two database engines used most often with MariaDB are "MyISAM" and
+"InnoDB".
 
 #### MyISAM
 
 Because MyISAM has been the default in MySQL for a while it's the most
-compatible choice of the two main engines. Certain types of searches
+compatible with MariaDB. Certain types of searches
 perform better on MyISAM than InnoDB. Just because it's the older of the
 two doesn't mean it can't be the best for a given application type.
 
@@ -303,25 +298,7 @@ DBA that's no problem, but if you're a developer who just wants a
 database up and running for a test server you probably won't want to
 deal with tuning InnoDB.
 
-It's possible you may be running an application that requires InnoDB,
-and if you're using MySQL 5.1 or earlier there might not be any settings
-already in the my.cnf config file. That can be a problem if you're
-running on a server that doesn't have an abundance of memory.
-
-Some settings to get you started with InnoDB on a shared server with 256
-megs of RAM are:
-
-    innodb_buffer_pool_size = 32M
-    innodb_log_file_size = 8M
-    innodb_thread_concurrency = 8
-    innodb_file_per_table
-
-Add those to the [mysqld] section of the config file. Again, those are
-only rough guides - enough to get you running, but definitely not
-optimized. For that you'll probably want a DBA, or at least to
-experiment with incremental changes over time.
-
 ### Summary
 
-Now you should have MySQL configured for your environment, and might
-even have accounted for the database engine being used by your tables.
+Now you should have a greater understanding of MariaDB. More information is
+available at the [MariaDB documentation site](https://mariadb.com/kb/en/library/documentation/).
