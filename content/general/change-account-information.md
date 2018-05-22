@@ -5,7 +5,7 @@ title: Change account information
 type: article
 created_date: '2015-06-18'
 created_by: David Hendler
-last_modified_date: '2018-03-13'
+last_modified_date: '2018-05-22'
 last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
@@ -13,9 +13,17 @@ product_url: undefined
 
 This article describes the various administrative account changes that you can request and the appropriate steps needed to complete them.
 
-**Note:** If you are a Dedicated Hosting customer, you can request all of the forms described in this article from your account manager.
+### Dedicated customers
 
-### Service transform form requirements
+Dedicated customers can download the **Primary Contact Change** form in the [MyRackspace Control Panel](https://my.rackspace.com). For instructions on how to find the form, see the **Dedicated customers** section of [Change to a new primary contact](/how-to/change-to-a-new-primary-contact).
+
+The **Service Transfer** form can be requested from your account manager.
+
+### All other customers
+
+All other customers can find links to the forms described in this article log in to the [Cloud Control Panel](http://mycloud.rackspace.com) and select **Account** > **Docs and Forms**.
+
+### Service transfer form requirements
 
 The Billing team has strict requirements for processing the Service Transfer form for a Rackspace account. Use the following information to have the submission processed quickly and efficiently.
 
@@ -51,7 +59,7 @@ In the **Cloud Account Number** and the **New Cloud Account Name** columns, prov
 The both the service transfer and primary contact transfer forms have many required fields that must be
 completed before the Billing team can process the forms. After you have
 completed a form, scan the document and attach it to the support ticket
-in the [Cloud Control Panel](http://mycloud.rackspace.com). Allow
+in the [Cloud Control Panel](http://mycloud.rackspace.com) or the [MyRackspace Control Panel](https://my.rackspace.com). Allow
 two business days for the Billing team to review.
 
 To avoid form rejection, use the following tips when completing the
