@@ -1,6 +1,6 @@
 ---
 permalink: dfw1-data-center-migration-customer-faq/
-audit_date:'2018-05-23'
+audit_date: '2018-05-23'
 title: DFW1 Data-center migration customer FAQ
 type: article
 created_date: '2017-05-22'
