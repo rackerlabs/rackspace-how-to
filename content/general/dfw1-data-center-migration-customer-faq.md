@@ -1,11 +1,11 @@
 ---
 permalink: dfw1-data-center-migration-customer-faq/
-audit_date:
+audit_date:'2018-05-23'
 title: DFW1 Data-center migration customer FAQ
 type: article
 created_date: '2017-05-22'
 created_by: Ciaran Maher
-last_modified_date: '2017-10-02'
+last_modified_date: '2018-05-23'
 last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
@@ -39,6 +39,19 @@ Because DFW1 has been operational for 12 years and is Rackspace’s oldest
 running data center, Rackspace is closing DFW1. Rackspace has made the decision
 to consolidate all DFW1 and DFW3 customers into its newest data center in the
 Dallas area, DFW3.
+
+#### Where is DFW3 located?
+
+This facility is located in the Richardson area of Dallas, approximately 30
+miles from DFW1.
+
+#### What are the advantages of moving to DFW3?
+
+DFW3 is one of Rackspace’s newest data center facilities. It benefits from the latest infrastructure and networking, enabling efficiencies through higher power densities. 
+
+From a power perspective, the busway combined with taller cabinets gives us much more capability to run cabinets at higher power levels than in DFW1. Lower cost is one positive side effect of this improvement, and another advantage is the reduced likelihood of having to migrate a customer solution because of power concerns. Power redundancy is also doubled (full 2N) from the cabinet to the floor power distribution units (PDU).
+ 
+From a networking perspective, DFW3 has our latest shared aggregation platform (Nexus 7k) providing 20G redundant connections from the Top-of-Rack (ToR) switches to the aggregation (aggr) switch layer and standard 1G in cabinets. We also have aggregated exnet throughout, again lessening the likelihood of requiring in-DC migrations because of localized network constraints. This is a big departure from DFW1, which has areas with no aggregated exnet, no 1G connections between ToR and aggr switches, and has 100Mb in cabinets in many areas.
 
 #### Will service be interrupted?
 
@@ -112,7 +125,7 @@ The migration will happen in the following stages:
 
 #### When are my servers scheduled to be migrated?
 
-The migration period starts in September 2017 and runs through September 2018.
+The migration period starts in September 2017 and runs through October 2018.
 One hundred days before your migration date, you will receive notification via
 a ticket in the Rackspace customer portal that includes the specific date and
 time that your solution will be moved. All migrations have been scheduled to
@@ -160,10 +173,6 @@ It depends on the replication method that you have set up. We recommend that
 you tell us about any replication or log shipping so that we can work with you
 to ensure that it is re-established following the maintenance.
 
-If you are using BackupNet/ServiceNet, you will need to make arrangements to
-move this to ExNet before your move night. In DFW3, BackupNet/ServiceNet will
-be available for use only for Rackspace Managed Backup and for ObjectRocket.
-
 #### I have colocation devices that Rackspace does not have access to. How will these be migrated?
 
 Because we do not have access to your colocation devices, you will be
@@ -193,15 +202,10 @@ to do if we encounter issues that we cannot resolve.
 
 #### How do I prepare for the migration?
 
-Rackspace will use all of its experience with data-center migration projects to
-help support you during the migration to DFW3. We have assembled a dedicated
-migration team, made up of existing Rackers from across the business. This team
-will run audits on your servers before the migration to identify and resolve,
-any potential migration issues in advance. They will work with you and your
-account team to determine and agree to any special requirements that you might
-have for pre-migration and post-migration instructions as we turn off and turn
-on your solution. The migration team will then be focused on successfully
-executing your instructions on the night of the migration.
+Rackspace will use all of its experience with data-center migration projects to help support you during the migration to DFW3. We have assembled a dedicated migration team, made up of some of the best Rackers from across the business. This team will run audits on your servers before the migration to identify and resolve any potential migration issues in advance. Ensure that you work with the migration team and your account team to resolve any issues in a timely manner. If you fail to resolve issues that we are auditing, we might have to perform a manual shutdown in advance of the official 23:00 maintenance start time.  
+
+The team will work with you and your account team to determine and agree to any special requirements that you might
+have for pre-migration and post-migration instructions as we turn off and turn on your solution. The migration team will then be focused on successfully executing your instructions on the night of the migration.
 
 We strongly encourage customers to back up their data, either by using the
 Rackspace Managed Backup service or making their own offsite backups. If your
@@ -238,7 +242,7 @@ running a differential (or incremental) backup before the migration.
 #### How will you keep me informed about the migration?
 
 You will receive notification via a ticket 100 days from your move date, and
-then receive notification 60, 30, 14, and 7 days before the date, with the
+then receive notification 45 and 14 before the date, with the
 final notification created a day before your move date. The final
 notification ticket will be used to update you throughout the move night. We
 will issue updates to confirm that the migration has begun, to confirm that
@@ -270,15 +274,15 @@ the date of your move without further impacting your solution and introducing
 more risk. As such, we recommend that you make all the necessary preparations
 required to stay with the original move date.
 
-If it is absolutely necessary for you to change your move date, then you will
-likely be required to change the public IP addresses of your solution's edge
-device. These changes will include DNS changes and potential configuration work
-on your side.
+If it is absolutely necessary for you to change your move date, then you might
+be required to change the public IP addresses of your solution's edge device. 
+These changes will include DNS changes and potential configuration work on your side.
 
 #### I have more than one solution in DFW1. Will they all be migrated at the same time?
 
-The migration date depends on the VLANs in which your solutions are located. If
-the solutions are in the same VLAN, they will be moved at the same time.
+The migration date depends on the VLANs in which your solutions are located.  If the 
+solutions are in the same VLAN, they will be moved at the same time.  If they are in 
+different VLANs, they might be scheduled to move on different dates. 
 
 **Note**: Solution means everything behind the edge device, which is usually a
 firewall but might be a load balancer or a server.
@@ -298,9 +302,10 @@ selected appropriate partners.
 The vehicles will be loaded within the data-center compound and so will be
 subject to our stringent physical security controls. They will be unloaded
 within the same conditions in DFW3. The tailgates of the vehicles will be
-locked with special bolts by two Rackspace personnel. The vehicles will have
-GPS tracking, will not display the Rackspace logo, and will be followed by
-Rackspace personnel.
+locked with special bolts by two Rackspace personnel, and photographs of the 
+secured bolts will be taken at both locations to prove that they have not been 
+tampered with.  The vehicles will have GPS tracking, will not display the Rackspace 
+logo, and will be followed by Rackspace personnel.
 
 Data in our shared SAN environment will be replicated over to DFW3 before each
 migration date and will be kept synchronized with DFW1 until the devices are
@@ -312,11 +317,6 @@ Rackspace has invested heavily in the design of the DFW3 data center and has no
 current plans to move away from it. The lease is set to run for at least 15
 years.
 
-#### Where is DFW3 located?
-
-This facility is located in the Richardson area of Dallas, approximately 30
-miles from DFW1.
-
 #### Who should I contact if I have more questions about the migration?
 
 Contact us in any of the following ways:
@@ -326,26 +326,5 @@ Contact us in any of the following ways:
 -   Ask a member of your account team for more information.
 -   Respond to one of the ticket notifications that you will receive before
     your move night.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
