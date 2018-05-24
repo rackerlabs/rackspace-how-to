@@ -5,15 +5,15 @@ title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
-last_modified_date: '2018-05-04'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-05-24'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
 This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
-**Note**: Rackspace is aware of another set of vulnerabilities reported as "Spectre-NG." We are investigating in collaboration with our vendors and partners. We will provide additional updates as information becomes available.
+**Note**: On May 21, 2018, new variants for Spectre and Meltdown (side-channel processing unit hardware vulnerabilities) were disclosed; known as 3A and 4.<br/><br/>We are continuing to work in collaboration with our vendors and partners. Additional details will be provided as they are made available. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.<br/><br/>Details related to the vulnerabilities can be found in [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639), [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640), [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A).
 
 **Important**: Rackspace continues to execute its mitigation and remediation strategy to address the CPU speculative execution vulnerabilities. We have multiple teams working with the utmost urgency to remediate these vulnerabilities. This a complex and evolving situation, as the guidance provided by numerous vendors regarding remediation efforts and patching continues to change. Based on the level of threat, we firmly believe the best course forward is to continue working with our vendors as they develop stable and proven patches, and applying them in the least impactful manner possible. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
