@@ -5,7 +5,7 @@ title: Change account information
 type: article
 created_date: '2015-06-18'
 created_by: David Hendler
-last_modified_date: '2018-05-22'
+last_modified_date: '2018-05-24'
 last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
@@ -17,15 +17,15 @@ This article describes the various administrative account changes that you can r
 
 Dedicated customers can download the **Primary Contact Change** form in the [MyRackspace Control Panel](https://my.rackspace.com). For instructions on how to find the form, see the **Dedicated customers** section of [Change to a new primary contact](/how-to/change-to-a-new-primary-contact).
 
-If you are the current primary contact for your account, you can update the primary contact information by selecting and editing the **Primary Contact Informtion** in your **Account Settings**.
+If you are the current primary contact for your account, you can update the primary contact information by selecting and editing the **Primary Contact Information** in your **Account Settings**.
 
-The **Service Transfer** form can be requested from your account manager.
+You request the **Service Transfer** form from your account manager.
 
 ### All other customers
 
-All other customers can find links to the forms described in this article log in to the [Cloud Control Panel](http://mycloud.rackspace.com) and select **Account** > **Docs and Forms**.
+All other customers can find links to the forms described in this article log in to the [Cloud Control Panel](http://mycloud.rackspace.com) and selecting **Account** > **Docs and Forms**.
 
-### Service transfer form requirements
+### Service Transfer form requirements
 
 The Billing team has strict requirements for processing the Service Transfer form for a Rackspace account. Use the following information to have the submission processed quickly and efficiently.
 
@@ -49,7 +49,7 @@ The Billing team has strict requirements for processing the Service Transfer for
 Do not fill out the **RACKSPACE US, INC.** section. A Rackspace
 representative completes this section.
 
-**Page 3 - Consolidated and/or Linked Cloud Accounts (Exhibit A)**
+**Page 3 - Consolidated and / or Linked Cloud Accounts (Exhibit A)**
 
 In the **Cloud Account Number** and the **New Cloud Account Name** columns, provide the following information:
   -   **Cloud Account Number** - Enter the account number.
@@ -58,11 +58,7 @@ In the **Cloud Account Number** and the **New Cloud Account Name** columns, prov
 
 ### Best practices for legal change forms
 
-Both the service transfer and primary contact transfer forms have many required fields that must be
-completed before the Billing team can process the forms. After you have
-completed a form, scan the document and attach it to the support ticket
-in the [Cloud Control Panel](http://mycloud.rackspace.com) or the [MyRackspace Control Panel](https://my.rackspace.com). Allow
-two business days for the Billing team to review.
+The Service Transfer and Primary Contact Change forms have many required fields that must be complete before the Billing team can process the forms. After you have completed the form, scan the document and attach it to the support ticket in the [Cloud Control Panel](http://mycloud.rackspace.com) or the [MyRackspace Control Panel](https://my.rackspace.com). 
 
 To avoid form rejection, use the following tips when completing the
 form:
