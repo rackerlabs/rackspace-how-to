@@ -7,8 +7,6 @@ created_date: '2015-02-27'
 created_by: Kyle Laffoon
 last_modified_date: '2016-06-22'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 You can determine whether your server is a First Generation Cloud Server

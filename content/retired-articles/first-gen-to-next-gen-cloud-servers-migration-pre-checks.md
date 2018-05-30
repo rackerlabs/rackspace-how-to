@@ -7,8 +7,6 @@ created_date: '2015-05-15'
 created_by: David Hendler
 last_modified_date: '2016-06-23'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 Before the migration window is opened for each of your cloud servers,

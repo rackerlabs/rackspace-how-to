@@ -7,8 +7,6 @@ created_date: '2015-01-08'
 created_by: Trey Hoehne
 last_modified_date: '2016-03-07'
 last_modified_by: Nate Archer
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 This article provides answers to frequently asked questions about
@@ -142,7 +140,7 @@ before your migration: [Preparing for a Cloud Server Migration](/how-to/prepare-
 
 #### What should I do after I have migrated my Windows severs?
 
-We recommend installing XenServer Tools 6.2 onto your server. A mismatch between the Xenserver Tools on your server's operating system and the version of XenServer on the hypervisor host can result in server instability. 
+We recommend installing XenServer Tools 6.2 onto your server. A mismatch between the Xenserver Tools on your server's operating system and the version of XenServer on the hypervisor host can result in server instability.
 
 You can find instructions in the article, [Upgrade Citrix Tools for windows cloud servers](/how-to//upgrade-citrix-xen-server-tools-for-windows-cloud-servers).
 
