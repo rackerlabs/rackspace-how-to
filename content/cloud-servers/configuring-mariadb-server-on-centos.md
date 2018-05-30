@@ -1,11 +1,11 @@
 ---
 permalink: configuring-mariadb-server-on-centos/
-audit_date: '2018-05-22'
+audit_date: '2018-05-30'
 title: Configure MariaDB server on CentOS
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2018-05-22'
+last_modified_date: '2018-05-30'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -134,127 +134,121 @@ main difference is that **mysqld_safe** launches with a few safety
 features enabled to make it easier to recover from a crash or other
 problem.
 
-Both mysqld and mysqld_safe will read config entries in the "mysqld"
-section. If you include a "mysqld_safe" section, then only mysqld_safe
-will read those values in.
+Both **mysqld** and **mysqld_safe** will read config entries in the **mysqld**
+section. If you include a **mysqld_safe** section, then only **mysqld_safe**
+reads those values.
 
-By default the mysql service launches "mysqld_safe". That's a good
-thing, and you should only look to change that if you really know what
-you're doing.
+By default the **mysql** service launches **mysqld_safe**. You should only change this if you are really sure about what you're doing.
 
 ### mysqladmin
 
-The mysqladmin tool lets you perform some administrative functions from
-the command line. We won't talk much about it here because we're just
-trying to get you up and running with enough basics to get by. It's
-worth looking at the tool in more depth later to see what it can do,
+The **mysqladmin** tool enables you to perform some administrative functions from the command line. This tool is not covered in this article because this article covers the basics to get you up and running.
+You can look at this tool in more depth later to see what it can do,
 particularly if you need to build scripts that perform functions like
 checking the status of the server or creating and dropping databases.
 
 ### Backups
 
-You have a few options when it comes to making backups of your databases
-apart from the usual "back up the whole machine" approach. The main two
-are copying the database files and using mysqldump.
+When it comes to making backups of your databases
+(apart from the approach to back up the entire machine), you have a few
+options. The main options
+are copying the database files and using **mysqldump**.
 
 #### File copy
 
-By default MariaDB creates a directory for each database in its data
-directory:
+By default, MariaDB creates a directory for each database in its data
+directory that looks similar to the following example:
 
     /var/lib/mysql
 
-Once you've found the data directory, hold off a moment before making a
-copy of it. When the database server is active it could be writing new
-values to tables at any time. That means if it writes to a table halfway
-through your copy some files will change and lead to a corrupt backup.
-Not a good thing if you're trying to plan for disaster recovery.
+After you've found the data directory, don't make a copy of it immediately. When the database server is active, it might be writing new
+values to tables at any time. If it writes to a table halfway
+through your copy, some files will change and lead to a corrupt backup.
+If you're trying to plan for disaster recovery, this is not a good thing.
 
-To make sure the database files are copied cleanly you can shut the
+To make sure the database files are copied cleanly, shut the
 MariaDB server down entirely before the copy. That's safe but isn't always
 ideal.
 
 Another approach you can take is to lock the database as read-only for
-the duration of the copy. Then when you're done, release the lock. That
+the duration of the copy. Then when you're done, release the lock. This
 way your applications can still read data while you're backing up files.
 
-Lock the databases to read-only by running, from the command line:
+Lock the databases to read-only by running the following command from the command line:
 
     mysql -u root -p -e "FLUSH TABLES WITH READ LOCK;"
 
-To unlock the database when you're done, run:
+To unlock the database when you're done, run this command:
 
     mysql -u root -p -e "UNLOCK TABLES;"
 
-We're using a new option with the mysql client, "-e". That tells the
-client to run the query in quotes as if we'd entered it in the mysql
-shell proper.
+The options **-e** with the **mysql** client tells the client to run
+the query in quotes as if it were entered in with the **mysql** shell.
 
-Note that if you're setting these commands up in a script you can put
-the password in quotes right after "-p" with no space between the two,
-as in:
+If you're setting these commands up in a script, you can put
+the password in quotes right after **-p** with no space between the two,
+as in the following example:
 
     mysql -u root -p"password" -e "FLUSH TABLES WITH READ LOCK;"
     mysql -u root -p"password" -e "UNLOCK TABLES;"
 
-Just make sure you set the permissions on that file to restrict read
-access. We don't want just anyone to be able to see that password.
+**Note:** Make sure that you set the permissions on that file to restrict read
+access to protect the password.
 
 #### mysqldump
 
-Another approach to backing up your database is to use the "mysqldump"
-tool. Rather than copying the database files directly, mysqldump
-generates a text file that represents the database. By default the text
-file contains a list of SQL statements you would use to recreate the
+Another approach to backing up your database is to use the **mysqldump**
+tool. Rather than copying the database files directly, **mysqldump**
+generates a text file that represents the database. By default, the text
+file contains a list of SQL statements that you would use to recreate the
 database, but you can also export the database in another format like
-CSV or XML. You can read the man page for mysqldump to see all its
+CSV or XML. You can read the [**mysqldump** man page](https://dev.mysql.com/doc/refman/5.5/en/mysqldump.html) to see all its
 options.
 
-The statements generated by mysqldump go straight to standard output.
-You'll want to specify a file to redirect the output to when you run it.
+The statements generated by **mysqldump** go to standard output.
+You want to specify a file to redirect the output to when you run it.
 For example:
 
     mysqldump -u root -p demodb > dbbackup.sql
 
-That command will tell mysqldump to recreate the "demodb" database in
-SQL statements and to write them to the file "dbbackup.sql". Note that
-the username and password options function the same as the mysql client,
-so you can include the password directly after "-p" in a script.
+That command tells **mysqldump** to recreate the **demodb** database in
+SQL statements and to write them to the file **dbbackup.sql**. Note that
+the username and password options function the same as the **mysql** client,
+so you can include the password directly after **-p** in a script.
 
 #### Restore from mysqldump
 
-Restoring a mysqldumped database looks similar to what was used to
-create it, but we use plain old "mysql" instead of "mysqldump":
+Restoring a database copied with **mysqldump** looks similar to what was used to create it, but you use **mysql** instead of **mysqldump**, as shown
+in the following command:
 
     mysql -u root -p demodb < dbbackup.sql
 
-We also change from a greater-than to a less-than sign. That switches
+You also change from using a greater-than to a less-than sign, which switches
 the command from redirecting its output to telling it to read its input
-from the existing file. That input is sent to the "mysql" command,
-causing the mysqldumped instructions to recreate the database.
+from the existing file. The input is sent to the **mysql** command
+and causes the instructions in the copy made with **mysqldump** to recreate the database.
 
-Note that by default the SQL statements generated would just add to
-existing database tables, not overwrite them. If you're restoring a
-backup over an existing database you should drop the database's tables
+By default, the SQL statements that are generated add to
+existing database tables without overwriting them. If you're restoring a
+backup over an existing database, you should drop the database's tables
 first, or drop and recreate the database itself. You can change that
-behavior by using the "--add-drop-table" option with the command that
-creates the mysqldump. That causes mysqldump to add a command to the
-backup files it writes that will drop tables before recreating them.
+behavior by using the **--add-drop-table** option with the command that
+creates the **mysqldump**. Doing so causes **mysqldump** to add a command to the
+backup files that it writes that drops tables before recreating them.
 
 ### Database engine
 
-The last concept we'll talk about here is that of the *database engine*.
+The last concept to cover in this article is the *database engine*.
 The engine is the process that's churning away behind the scenes,
-writing to and reading data from files. You won't usually need to know
-anything other than that it's there, but sometimes you'll want to run an
+writing to and reading from files. You won't usually need to know
+anything other than that it's there, but sometimes you want to run an
 application that's been optimized for a particular database engine.
 
 The engine type is set when a table is created. Tables are usually
-created by the application that's going to use them, which is why we
-aren't going to get into that syntax here.
+created by the application that's going to use them.
 
-To see the engine used by your database's tables you can run the
-following command in the MariaDB shell, changing "<demodb>" to the name
+To see the engine used by your database's tables, you can run the
+following command in the MariaDB shell, changing **demodb** to the name
 of your database:
 
     SHOW TABLE STATUS FROM demodb;
@@ -262,19 +256,19 @@ of your database:
 #### Choosing an engine
 
 Ideally you won't need to choose an engine. If you're not very familiar
-with MariaDB that's certainly the safest way to go - let the application
-do its thing, and if you're writing the application, use the default
+with MariaDB, that's the safest way to go. Let the application
+handle this, and if you're writing the application, use the default
 engine until you're more comfortable with your options.
 
-The two database engines used most often with MariaDB are "MyISAM" and
-"InnoDB".
+The database engines used most often with MariaDB are **MyISAM** and
+**InnoDB**.
 
 #### MyISAM
 
-Because MyISAM has been the default in MySQL for a while it's the most
+Because MyISAM has been the default in MySQL for a while, it's the most
 compatible with MariaDB. Certain types of searches
 perform better on MyISAM than InnoDB. Just because it's the older of the
-two doesn't mean it can't be the best for a given application type.
+two doesn't mean that it can't be the best for a given application type.
 
 #### InnoDB
 
@@ -282,13 +276,11 @@ InnoDB is more fault-tolerant than MyISAM and handles crashes and
 recovery with a much smaller chance of database corruption. This is a
 good thing.
 
-The main trouble with InnoDB is that for best performance it requires a
-lot of tweaking for your environment and access patterns. If you have a
-DBA that's no problem, but if you're a developer who just wants a
-database up and running for a test server you probably won't want to
+However, for best performance, InnoDB requires a lot of tweaking for your environment and access patterns. If you have a
+DBA, this work might not be a problem. But if you're a developer who wants a
+database up and running for a test server, you probably won't want to
 deal with tuning InnoDB.
 
 ### Summary
 
-Now you should have a greater understanding of MariaDB. More information is
-available at the [MariaDB documentation site](https://mariadb.com/kb/en/library/documentation/).
+At this point, you should have a good understanding of MariaDB. For more information, see the [MariaDB documentation site](https://mariadb.com/kb/en/library/documentation/).
