@@ -7,8 +7,6 @@ created_date: '2012-07-24'
 created_by: Jerry Schwartz
 last_modified_date: '2016-09-12'
 last_modified_by: Kyle Laffoon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 ### Nova Cloud Servers:  How-To Articles & Other Resources
