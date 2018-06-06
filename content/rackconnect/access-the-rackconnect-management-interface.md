@@ -1,11 +1,11 @@
 ---
 permalink: access-the-rackconnect-management-interface/
-audit_date: '2018-05-22'
+audit_date: '2018-06-06'
 title: Access the RackConnect Management Interface
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2018-05-22'
+last_modified_date: '2018-06-06'
 last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
