@@ -28,7 +28,7 @@ Control Panel interface.
 
     For more information about regions and how to use them effectively, see [About regions](/how-to/about-regions).
 
-5.  In the **Image** section, select which operating system that you want to
+5.  In the **Image** section, select the operating system that you want to
     use.
 
     For a complete list of available images, see the [Images section](https://www.rackspace.com/cloud/servers/features#images) of the Cloud Servers product page.
@@ -47,7 +47,7 @@ Control Panel interface.
     2. Provide a Key Name for your new public key.
     3. Paste your public key into the **Public Key** field.
 
-       **Note:** If you do not have a public key, click [How to get a public key](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os) and follow the instructions in that article. For more information on how to generate a public and private key pairs, see [Manage SSH Keypairs for Cloud Servers with-python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
+       **Note:** If you do not have a public key, click [How to get a public key](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os) and follow the instructions in that article. For more information on how to generate a public and private key pairs, see [Manage SSH Keypairs for Cloud Servers with python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
       
     4. After you have your entered your Key Name and the Public Key, click **Add Public Key**.
 
