@@ -48,7 +48,6 @@ Control Panel interface.
     3.   Paste your public key into the **Public Key** field.
 
       **Note:** If you do not have a public key, click [How to get a public key](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os) and follow the instructions in that article. For more information on how to generate a public and private key pairs, see [Manage SSH Keypairs for Cloud Servers with-python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
-
     4.   After you have your entered your Key Name and the Public Key, click **Add Public Key**.
 
     <img src="{% asset_path cloud-servers/create-a-cloud-server/create-server-add-public-key.png %}" />
