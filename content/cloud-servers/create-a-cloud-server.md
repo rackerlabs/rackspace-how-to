@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Use the following steps to set up a cloud cerver through the Cloud
+Use the following steps to set up a cloud server through the Cloud
 Control Panel interface.
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com) and click **Servers > Cloud Servers** in the top navigation bar.
