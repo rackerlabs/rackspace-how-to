@@ -63,9 +63,7 @@ Control Panel interface.
 
 10. Click **Create Server**.
 
-Your server is built. After it is done being provisioned, your server
-displays the status **Running** and is now available for remote
-connection. Specific remote connection instructions for your server are
+Your server is built. After it is done being provisioned, your server displays the status **Running** and is now available for remote connection. Specific remote connection instructions for your server are
 displayed in the side bar on the right of the Cloud Control Panel.
 
 ### Related articles
