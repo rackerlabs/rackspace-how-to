@@ -7,8 +7,6 @@ created_date: '2016-08-09'
 created_by: Kyle Laffoon
 last_modified_date: '2018-05-22'
 last_modified_by: Stephanie Fillmon
-product: RackConnect
-product_url: rackconnect
 ---
 
 This article describes how to add authorized users in the RackConnect Management Interface. To access the management interface, log in to the [MyRackspace portal](https://my.rackspace.com/)
