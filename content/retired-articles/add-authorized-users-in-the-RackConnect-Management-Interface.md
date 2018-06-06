@@ -7,8 +7,6 @@ created_date: '2016-08-09'
 created_by: Kyle Laffoon
 last_modified_date: '2016-08-09'
 last_modified_by: Kyle Laffoon
-product: RackConnect
-product_url: rackconnect
 ---
 
 Access the RackConnect Management Interface from the
