@@ -53,8 +53,8 @@ Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
 
 3. Enter information in the **User Information** section.
 
-  **Note:** The username must be unique. You can't recover the username of a
-  deleted user.
+   **Note:** The username must be unique. You can't recover the username of a
+   deleted user.
 
 4. In the **Rackspace Account Permissions** section, select the account
    Permissions to assign to the user.
@@ -62,8 +62,8 @@ Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
 5. In the **Product Permissions** section, select the product permissions to
    assign to the user for the products to which you subscribe.
 
-  For optimal product interaction, see the "Suggested role configurations"
-  section of this article.
+   For optimal product interaction, see the "Suggested role configurations"
+   section of this article.
 
 8. Click **Create User**.
 
