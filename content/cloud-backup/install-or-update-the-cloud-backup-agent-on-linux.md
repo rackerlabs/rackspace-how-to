@@ -59,7 +59,7 @@ or superuser privileges.
 
 3. Install the **Keyring** package manually.
 
-       sudo dpkg -i cloudbackup-keyring_2016.12.02-1_all.deb
+       sudo dpkg -i cloudbackup-keyring_2018.05.21-1_all.deb
 
 4. Add `driveclient` to the apt sources list.
 
