@@ -55,7 +55,7 @@ or superuser privileges.
 
 2. Download the **Keyring** package.
 
-       curl -O http://agentrepo.drivesrvr.com/debian/pool/main/c/cloudbackup-keyring/cloudbackup-keyring_2016.12.02-1_all.deb
+       curl -O http://agentrepo.drivesrvr.com/debian/pool/main/c/cloudbackup-keyring/cloudbackup-keyring_2018.05.21-1_all.deb
 
 3. Install the **Keyring** package manually.
 
