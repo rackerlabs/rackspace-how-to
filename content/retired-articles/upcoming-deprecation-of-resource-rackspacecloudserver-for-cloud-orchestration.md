@@ -5,10 +5,9 @@ title: 'Deprecated resource Rackspace::Cloud::Server for Cloud Orchestration'
 type: article
 created_date: '2015-07-24'
 created_by: Mike Asthalter
-last_modified_date: '2018-05-01'
+last_modified_date: '2018-06-14'
 last_modified_by: Kate Dougherty
-product: Cloud Orchestration
-product_url: cloud-orchestration
+
 ---
 
 Rackspace is announcing the full deprecation of the Rackspace Cloud Server
