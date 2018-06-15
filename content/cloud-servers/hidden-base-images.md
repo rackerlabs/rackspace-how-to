@@ -23,6 +23,12 @@ Image | ID | Date hidden | Notes
 --- | --- | --- | ---
 Arch 2014.2 | b21af3ef-1a1e-46b5-98ef-bb0c81b25292 | 2017-09-06 | Retired
 
+### Debian images
+
+Image | ID | Date hidden | Notes
+--- | --- | --- | ---
+Debian 7 (Wheezy) | 8dbe1146-3cc4-4c46-8888-64662a3ec809 | 2018-06-15 | Debian LTS support has ended
+
 ### Fedora images
 
 Image | ID | Date hidden | Notes
