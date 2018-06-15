@@ -85,16 +85,10 @@ supported by Rackspace and can be supported only if the other end
 of the virtual circuit is capable of
 supporting these speeds.
 
-#### Is a dedicated aggregation (customer edge) device needed to use this service?
+#### Is a dedicated aggregation switch (customer edge device) and top of rack (TOR) switch needed to use this service?
 
-No, customers can utilize a dedicated or shared 10G aggregation (customer edge) device.
-
-#### Are dedicated TORs needed to use this service?
-
-Yes, dedicated TORs are needed. We cannot connect shared TORs to dedicated
-aggregation devices because that would create a problem with zone management,
-billing, automation, and monitoring, and complicate troubleshooting. Cisco
-2960 devices can be used as TORs.
+No, at Rackspace we offer customers the choice of utilizing dedicated 
+10G switches or shared 10G switches (which is a more affordable option).
 
 #### Is the traffic secure?
 
