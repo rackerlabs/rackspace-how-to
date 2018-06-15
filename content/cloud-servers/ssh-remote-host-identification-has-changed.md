@@ -50,7 +50,7 @@ Use one of the following methods to change to the new RSA host key:
 
   or
 
-- Run the following Linux command, replacing the IP and pathname as appropriate.
+- Run the following Linux command, replacing the IP and path name as appropriate.
 
       sed -i '/1.2.3.4/d' /home/scott/.ssh/known_hosts
 
