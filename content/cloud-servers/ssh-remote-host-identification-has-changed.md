@@ -1,6 +1,6 @@
 ---
 permalink: ssh-remote-host-identification-has-changed/
-audit_date:
+audit_date: '2018-06-15'
 title: 'SSH - "REMOTE HOST IDENTIFICATION HAS CHANGED"'
 type: article
 created_date: '2011-03-16'
