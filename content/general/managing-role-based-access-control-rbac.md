@@ -5,7 +5,7 @@ title: Use Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-06-28'
 created_by: Renee Rendon
-last_modified_date: '2018-06-15'
+last_modified_date: '2018-06-18'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
@@ -56,8 +56,11 @@ To create a new user, use the following steps:
 4. Select a **Contact Type** to assign to the user. RBAC has the following
    contact types:
 
-   -  **Technical**:
-   -  **Administrative**:
+   -  **Technical**
+   -  **Administrative**
+
+   These contact types are for reference only. They do not affect the user's
+   permissions.
 
 5. In the **Secret Question and Answer** section, enter a **Question** and an
    **Answer**.
@@ -90,7 +93,12 @@ To create a new user, use the following steps:
 
 8. When you are finished, scroll to the bottom and click **Create User**.
 
-  **Note:** After a user has been assigned a custom role, this role cannot be changed to a multi-product role through the Cloud Control Panel. For more information about changing a custom role to a full access or read-only access role, see [Known issues and suggested workarounds for RBAC](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
+  **Note:** After a user has been assigned a custom role, that custom role
+  cannot be modified. However, if an existing user is assigned the Account
+  Administrator role at the account level, that action will overwrite all
+  product-level custom roles. For more information, see [Known issues and
+  suggested workarounds for
+  RBAC](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
 
 ### Suggested role configurations
 
