@@ -144,8 +144,6 @@ RBAC has the following multiple-product roles:
 -   **Read-only access** - The read-only access role has permissions to
     view resources within multiple designated products.
 
-    ### THE ABOVE SHOULD PROBABLY BE TECHNICAL ??? NOT SURE
-
 These permissions apply to products that are RBAC-enabled.
 
 **Note**: Users with admin and read-only access roles have
