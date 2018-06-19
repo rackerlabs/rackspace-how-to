@@ -17,7 +17,7 @@ When specifying Time To Live (TTL) you should be aware of the following importan
 
      A higher TTL reduces the perceived latency of a site and decreases the dependency on the authoritative name servers.
 
-- The lower the TTL, the more frequently updates are propagated to other name servers.
+- The lower the TTL, the sooner the cached record expires.  This allows the queries for the records to occur more frequently.
 
 If you’re going to make DNS changes, we suggest lowering the TTL to make the changes. If you're using DNS for failover, then lowering the TTL is a good idea as it takes less time to fail-over to another server.
 
