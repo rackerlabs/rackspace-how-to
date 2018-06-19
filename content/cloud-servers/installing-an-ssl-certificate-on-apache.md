@@ -5,25 +5,24 @@ title: Install an SSL certificate on Apache
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-10-19'
-last_modified_by: zeta0134
+last_modified_date: '2018-10-19'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 This article is a continuation of [Generate a CSR](/how-to/generate-a-csr-with-openssl/) and
 will take you from creating and receiving your SSL cert from your
-authority of choice to installing it in apache. I've chosen to Apache
-since it is the most common web server on Linux and the Internet. Again,
-I'm pulling the majority of this documentation from RapidSSL.com which
-is a great place to buy a certificate if you haven't already chosen:
+authority of choice to installing it in apache. Apache
+is the most common web server on Linux and the Internet. 
 
 <http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm>
 
 ### Prerequisites
 
-Keep in mind besides having apache and mod_ssl installed, you will need
-to have an IP address for this SSL cert and a unique IP address for each
+- Apache and mod_ssl installed on your server. 
+
+- An IP address for this SSL cert and a unique IP address for each
 SSL that you want to host. Certificate authorities and browsers require
 that all SSL certs be on their own IP address.
 
@@ -56,25 +55,24 @@ Virtual Host:
     CustomLog logs/ssl.domain.com.access_log combined
     </VirtualHost>
 
-**Note**: Keep in mind that the paths to the certificate files will need to be changed to where ever you choose to place your certificate.
+**Note**: Any paths to the certificate files need to be changed to where ever you choose to place your certificate.
 
 Save the changes and exit the editor.
 
 ### iptables
 
-You may need to open a port in your firewall to allow SSL connections to
+You might need to open a port in your firewall to allow SSL connections to
 port 443.  To check, get a list of your firewall rules:
 
     sudo /sbin/iptables -L
 
 If you have iptables active but it doesn't have any exceptions for port
-443, we'll have to add some:
+443, add the exceptions by running:
 
     sudo /sbin/iptables -I INPUT -p tcp --dport 443 -m state --state NEW,ESTABLISHED -j ACCEPT
     sudo /sbin/iptables -I OUTPUT -p tcp --sport 443 -m state --state ESTABLISHED -j ACCEPT
 
-Remember to add the rules to your iptables config file or, on Red
-Hat-based distributions, run:
+Remember to add the rules to your iptables config file. If you're on a RHEL distributions, run:
 
     sudo /sbin/service iptables save
 
