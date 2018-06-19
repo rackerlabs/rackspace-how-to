@@ -1,21 +1,22 @@
 ---
 permalink: managing-role-based-access-control-rbac/
-audit_date:
-title: Use Role-Based Access Control (RBAC)
+audit_date: '2018-06-19'
+title: Use Role Based Access Control (RBAC)
 type: article
 created_date: '2013-06-28'
 created_by: Renee Rendon
-last_modified_date: '2018-02-12'
+last_modified_date: '2018-06-19'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
 
-**Previous section:** [Learn about Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac)
+**Previous section:** [Learn about Role Based Access Control
+(RBAC)](/how-to/overview-role-based-access-control-rbac)
 
-The account owner implements Role-Based Access Control (RBAC) by adding users
+The account owner implements Role Based Access Control (RBAC) by adding users
 to the account and assigning roles. This article is intended to guide account
-owners through this process using the [Cloud Control
+owners through this process by using the [Cloud Control
 Panel](https://mycloud.rackspace.com/).
 
 For information about setting up RBAC through the API, see the [Rackspace
@@ -38,13 +39,13 @@ Also, new users must be informed that they have been added to the
 account. Rackspace does not notify them automatically. You
 can use the following text to notify your users:
 
-**Your access to this account has changed. You have been added as a new user,
-and you must update your credentials (password and secret question) as soon as
-possible. See *name* for your temporary access information.**
+   **Your access to this account has changed. You have been added as a new
+   user, and you must update your credentials (password and secret question)
+   as soon as possible. See *name* for your temporary access information.**
 
 ### Create new users
 
-To create new users, use the following steps:
+To create a new user, use the following steps:
 
 1. In the upper-right corner of the [Cloud Control
 Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
@@ -56,34 +57,98 @@ Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
    **Note:** The username must be unique. You can't recover the username of a
    deleted user.
 
-4. In the **Rackspace Account Permissions** section, select the account
-   Permissions to assign to the user.
+4. Select a **Contact Type** to assign to the user. RBAC has the following
+   contact types:
 
-5. In the **Product Permissions** section, select the product permissions to
-   assign to the user for the products to which you subscribe.
+   -  **Technical**
+   -  **Administrative**
 
-   For optimal product interaction, see the "Suggested role configurations"
-   section of this article.
+   These contact types are for reference only. They do not affect the user's
+   permissions.
 
-8. Click **Create User**.
+5. In the **Secret Question and Answer** section, enter a **Question** and an
+   **Answer**.
 
-### Add a user login and custom role to an existing contact
+6. In the **Rackspace Account Permissions** section, you can either assign the
+   user the **Account Administrator** role, or assign roles for the **Billing
+   and Payments** area and the **Support Tickets** area on separately.
 
-To add a user login and custom role to an existing contact, use the following
-steps:
+   To assign a user the account administrator role, click the toggle button
+   next to **Account Administrator**.
 
-1. On the **User Management** page of the Control Panel, click on the
-   contact's name.
+   Alternatively, to assign different permissions for different areas, scroll
+   to the **Area** section and select the permission you want to assign from
+   the drop-down menu to the right of each area.
 
-2. Select **Add Login**.
+7. Optionally, in the **Product Permissions** section, assign product
+   permissions to the user. Click the tab for a product, then
+   select from the permission options.
 
-3. Complete the **Username**, **Password**, **Security Question**, and
-   **Security Answer** fields.
+   The **Rackspace Cloud** tab enables you to assign either global permissions
+   for all Rackspace Cloud products, or per-product custom roles.
 
-4. After choosing the custom role, click **Save User Information**.
+   **Note**: For optimal product interaction, see the "Suggested role
+   configurations" section of this article.
 
-5. Click the gear icon next to that user's name and configure
-   the custom role.
+   To assign per-product custom roles, choose **Custom (Per Product Access)**
+   under **Product Access**. A list of Rackspace Cloud products appears.
+   The default role for each product is **No Access**. To change the default
+   value, select either **Admin (View, Create, Edit, Delete)** or **Observer
+   (View Only)** from the drop-down menu for the product.
+
+   **Note:** Depending on the roles assigned, the Control Panel view is
+   different for each user.
+
+8. When you are finished, scroll to the bottom and click **Create User**.
+
+   **Note:** After a user is assigned a custom role, that custom role
+   cannot be modified. However, if the user is later assigned the
+   account administrator role at the account level, that action overwrites all
+   product-level custom roles. For more information, see [Known issues and
+   suggested workarounds for
+   RBAC](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
+
+### Suggested role configurations
+
+Rackspace recommends the following custom role configurations for
+optimal product interaction.
+
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Product</th>
+<th align="left">If</th>
+<th align="left">And</th>
+<th align="left">Then</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong>Cloud Load Balancers</strong></td>
+<td align="left"><p>A user has been assigned any Cloud Load Balancers role.</p></td>
+<td align="left"><p>n/a</p></td>
+<td align="left"><p>In Cloud Servers, give the user the <strong>Observer</strong> role (minimum action).</p></td>
+</tr>
+<tr class="even">
+<td align="left"><strong>Cloud Load Balancers </strong></td>
+<td align="left">A user wants to add a node by using the <strong>Nodes > Add Cloud Servers</strong> option in the Cloud Control Panel.</td>
+<td align="left">The user has been assigned any Cloud Load Balancers role.</td>
+<td align="left">In Cloud Servers, give the user any role. </td>
+</tr>
+<tr class="odd">
+<td align="left"><p><strong>Cloud Databases</strong></p></td>
+<td align="left"><p>A user wants to create a backup in Cloud Databases.</p></td>
+<td align="left"><p>n/a</p></td>
+<td align="left"><p>In Cloud Files, give the user the <strong>Admin</strong> role.</p></td>
+</tr>
+</tbody>
+</table>
 
 ### Rackspace customers with multiple accounts
 
