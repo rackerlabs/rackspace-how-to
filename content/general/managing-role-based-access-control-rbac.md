@@ -71,17 +71,17 @@ Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
 
 6. In the **Rackspace Account Permissions** section, you can either assign the
    user the **Account Administrator** role, or assign roles for the **Billing
-   and Payments** area and the **Support Tickets** area on separately.
+   and Payments** area and the **Support Tickets** area separately.
 
    To assign a user the account administrator role, click the toggle button
    next to **Account Administrator**.
 
    Alternatively, to assign different permissions for different areas, scroll
-   to the **Area** section and select the permission you want to assign from
-   the drop-down menu to the right of each area.
+   to the **Area** section and select the permission that you want to assign
+   from the drop-down menu to the right of each area.
 
 7. Optionally, in the **Product Permissions** section, assign product
-   permissions to the user. Click the tab for a product, then
+   permissions to the user. Click the tab for a product, and then
    select from the permission options.
 
    The **Rackspace Cloud** tab enables you to assign either global permissions
