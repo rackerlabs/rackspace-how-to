@@ -7,8 +7,6 @@ created_date: '2015-11-24'
 created_by: Ari Liberman
 last_modified_date: '2015-12-11'
 last_modified_by: Kyle Laffoon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 Live migration is the process of moving a virtual server from one host hypervisor to another by using virtual memory streaming. A duplicate of the original virtual server is created on another host, in real-time, from the disk contents, right down to the last byte of RAM in use. When the process is ready, the original virtual server is switched to the new one.

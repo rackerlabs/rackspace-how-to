@@ -1,25 +1,28 @@
 ---
 permalink: managing-role-based-access-control-rbac/
-audit_date:
-title: Use Role-Based Access Control (RBAC)
+audit_date: '2018-06-19'
+title: Use Role Based Access Control (RBAC)
 type: article
 created_date: '2013-06-28'
 created_by: Renee Rendon
-last_modified_date: '2018-06-18'
+last_modified_date: '2018-06-20'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
 
-**Previous section:** [Learn about Role Based Access Control (RBAC)](/how-to/overview-role-based-access-control-rbac)
+**Previous section:** [Learn about Role Based Access Control
+(RBAC)](/how-to/overview-role-based-access-control-rbac)
 
-The account owner and account administrator implement Role-Based Access
+The account owner and account administrator implement Role Based Access
 Control (RBAC) by adding users to the account and assigning roles. This
 article is intended for account owners and account administrators, and guides
-you through this process by using the [Cloud Control
+you through this process by using the [Cloud Control 
 Panel](https://mycloud.rackspace.com/).
 
-For information about setting up RBAC through the API, see the [Rackspace Cloud Identity API Guide](https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/).
+For information about setting up RBAC through the API, see the [Rackspace
+Cloud Identity API
+Guide](https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/).
 
 **Note:** It is possible to assign a mix of multiple-product roles and
 per-product roles to one user through the API. The most permissive role
@@ -37,7 +40,9 @@ Also, new users must be informed that they have been added to the
 account. Rackspace does not notify them automatically. You
 can use the following text to notify your users:
 
-**Your access to this account has changed. You have been added as a new user, and you must update your credentials (password and secret question) as soon as possible. See *name* for your temporary access information.**
+   **Your access to this account has changed. You have been added as a new
+   user, and you must update your credentials (password and secret question)
+   as soon as possible. See *name* for your temporary access information.**
 
 ### Create a new user
 
@@ -86,19 +91,24 @@ To create a new user, use the following steps:
    **Note**: For optimal product interaction, see the "Suggested role
    configurations" section of this article.
 
-   To assign per-product custom roles, choose **Custom (Per Product Access)** under **Product Access**. A list of Rackspace Cloud products will appear. The default role for each product is **No Access**. To change the default value, select either **Admin (View, Create, Edit, Delete)** or **Observer (View Only)** from the drop-down menu for the product.
+   To assign per-product custom roles, choose **Custom (Per Product Access)**
+   under **Product Access**. A list of Rackspace Cloud products appears.
+   The default role for each product is **No Access**. To change the default
+   value, select either **Admin (View, Create, Edit, Delete)** or **Observer
+   (View Only)** from the drop-down menu for the product.
 
    **Note:** Depending on the roles assigned, the Control Panel view is
    different for each user.
 
 8. When you are finished, scroll to the bottom and click **Create User**.
 
-  **Note:** After a user has been assigned a custom role, that custom role
-  cannot be modified. However, if an existing user is assigned the Account
-  Administrator role at the account level, that action will overwrite all
-  product-level custom roles. For more information, see [Known issues and
-  suggested workarounds for
-  RBAC](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
+   **Note:** After a user is assigned a custom role, that custom role
+   cannot be modified. However, if the user is later assigned the
+   account administrator role at the account level, that action overwrites all
+   product-level custom roles. For more information, see [Known issues and
+   suggested workarounds for
+   RBAC](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
+
 
 ### Suggested role configurations
 
