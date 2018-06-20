@@ -1,20 +1,20 @@
 ---
 permalink: overview-role-based-access-control-rbac/
 audit_date: '2018-02-16'
-title: Learn about Role-Based Access Control (RBAC)
+title: Learn about Role Based Access Control (RBAC)
 type: article
 created_date: '2013-04-14'
 created_by: Renee Rendon
-last_modified_date: '2018-06-18'
+last_modified_date: '2018-06-20'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
 
-**Previous section:** [Getting started with Role-Based Access Control
+**Previous section:** [Getting started with Role Based Access Control
 (RBAC)](/how-to/getting-started-with-role-based-access-control-rbac)  
 
-This article answers basic questions about the Role-Based Access Control
+This article answers basic questions about the Role Based Access Control
 (RBAC) service.
 
 **Note:** The RBAC service is currently unavailable for RackConnect.
@@ -258,5 +258,5 @@ The following Rackspace products will not have RBAC:
 
 ### Next section
 
-[Use Role-Based Access Control
+[Use Role Based Access Control
 (RBAC)](/how-to/managing-role-based-access-control-rbac)
