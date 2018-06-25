@@ -93,6 +93,9 @@ Follow these steps to create a new article within a product folder of the **rack
 
 **Note:** If your article includes images, send an email to <how-to@rackspace.com> with the image files. Note where the images belong in the article by using comments: `<!--this is a comment-->`.
 
+10. Request reviews of your PR from the Information Development team in the
+    ``#how-to`` channel in Slack.
+
 Your PR will be reviewed. Depending on the review feedback, you might be asked to make additional changes. The How-To editorial team will merge your pull request once your contribution is reviewed.
 
 ##### Using article templates
@@ -147,6 +150,9 @@ Follow these steps to edit an existing article within a product folder of the **
 
 8. Click **Create pull request**.
 
+9. Request reviews of your PR from the Information Development team in the
+    ``#how-to`` channel in Slack.
+
 Your PR will be reviewed. Depending on the review feedback, you might be asked to make additional changes. The How-To editorial team will merge your pull request once your contribution is reviewed.
 
 #### Make a change to a PR
@@ -166,6 +172,9 @@ You might be asked by a member of the editorial team to update your PR. Follow t
 6. Provide a brief description of the change.
 
 7. Click the **Commit directly to the `your-branch-name` branch** option, and then click **Commit changes**.
+
+8. Request reviews of your PR from the Information Development team in the
+    ``#how-to`` channel in Slack.
 
 The How-To team will comment on the PR if any more changes need to be made.
 
