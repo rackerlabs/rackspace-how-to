@@ -11,7 +11,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the article, [Checking for a security compromise: Back doors and intruders](/how-to/checking-for-a-security-compromise-backdoors-and-intruders),
+In the community post, [Checking for a security compromise: Back doors and intruders](https://community.rackspace.com/products/f/public-cloud-forum/7316/checking-for-a-security-compromise-backdoors-and-intruders), 
+and in the article,[Check for a security compromise: Rescue mode investigation](https://support.rackspace.com/how-to/check-for-a-security-compromise-rescue-mode-investigation/),
 you learned some basic techniques for collecting the information needed to intruders who have compromised your server. This article describes how to use the [Cloud Control Panel's](https://mycloud.rackspace.com/) *Rescue Mode* to take a closer look at your system. You can use rescue mode to better understand how your server was compromised and to identify non-compromised files before backing up the data.
 
 ### Activate rescue mode
