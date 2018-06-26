@@ -5,8 +5,8 @@ title: Differences between Rackspace CDN and Rackspace Cloud Files
 type: article
 created_date: '2015-05-08'
 created_by: Rackspace Support
-last_modified_date: '2015-10-05'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-06-26'
+last_modified_by: Becky Geizner
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
@@ -19,8 +19,8 @@ Rackspace CDN and Cloud Files:
 -   Users of Rackspace CDN specify the origins that host the content,
     and the CDN pulls the content from these origins. Origins can be
     dedicated servers, cloud servers, cloud load balancers, 
-    Cloud Files container or even servers hosted outside of Rackspace. 
-    Users of Cloud Files can CDN-enable a container, thereby 
+    a Cloud Files container or servers hosted outside of Rackspace. 
+    Users of Cloud Files can enable CDN on a container, 
     distributing the contents of that container to the CDN's edge nodes. 
 -   Rackspace CDN has no limit on purges. Cloud Files limits the number
     of purges per account, per day to 25.
