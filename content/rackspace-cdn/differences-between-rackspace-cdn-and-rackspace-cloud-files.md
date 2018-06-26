@@ -18,11 +18,10 @@ Rackspace CDN and Cloud Files:
 
 -   Users of Rackspace CDN specify the origins that host the content,
     and the CDN pulls the content from these origins. Origins can be
-    dedicated servers, cloud servers, cloud load balancers, or even
-    servers hosted outside of Rackspace. Users of Cloud Files can
-    CDN-enable a container, thereby distributing the contents of that
-    container to the CDN's edge nodes. In Rackspace CDN, it is not yet
-    possible to specify a Cloud Files container as an origin.
+    dedicated servers, cloud servers, cloud load balancers, 
+    Cloud Files container or even servers hosted outside of Rackspace. 
+    Users of Cloud Files can CDN-enable a container, thereby 
+    distributing the contents of that container to the CDN's edge nodes. 
 -   Rackspace CDN has no limit on purges. Cloud Files limits the number
     of purges per account, per day to 25.
 -   Rackspace CDN does not yet support streaming video from Cloud Files
