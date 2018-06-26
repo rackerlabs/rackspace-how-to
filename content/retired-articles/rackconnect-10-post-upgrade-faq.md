@@ -7,8 +7,6 @@ created_date: '2012-08-23'
 created_by: Juan Perez
 last_modified_date: '2016-09-13'
 last_modified_by: Kyle Laffoon
-product: RackConnect
-product_url: rackconnect
 ---
 
 **IMPORTANT:** This article applies only to RackConnect customers who
