@@ -143,7 +143,7 @@ You can also look at log files in the **/var/log** directory. For example, **aut
 
 ### Summary
 
-In [Checking for a security compromise: Backdoors and Intruders](/how-to/checking-for-a-security-compromise-backdoors-and-intruders), you learned some techniques to use to discover back doors and track intruders on your cloud server. This will help you to avoid the situation or
+In [Checking for a security compromise: Backdoors and Intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders), you learned some techniques to use to discover back doors and track intruders on your cloud server. This will help you to avoid the situation or
 mistake that led to the compromise, minimizing the chance of future compromises. In this article, you learned how to investigate your cloud server in rescue mode.
 
 Whether it is caused by viruses, file corruption, machine failure, or
