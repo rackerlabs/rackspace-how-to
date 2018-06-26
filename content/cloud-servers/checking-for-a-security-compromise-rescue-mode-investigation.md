@@ -150,4 +150,4 @@ Whether it is caused by viruses, file corruption, machine failure, or
 other unforeseen mishaps, the possibility of data loss is real. To avoid the disruption such a loss can cause, back up your files regularly. Following are some options to help you secure your files:
 
 -   [Rackspace Cloud Backup](http://www.rackspace.com/cloud/backup/) is a good choice for Cloud Servers customers. It is fully integrated with Cloud Servers, and is a file-based backup alternative to whole image server backup.
--   For those who prefer to do it themselves, see [Back up your files with rsync](/how-to/backing-up-your-files-with-rsync).
+-   For those who prefer to do it themselves, see [Back up your files with rsync](/how-to/backing-up-your-files-with-rsync/).
