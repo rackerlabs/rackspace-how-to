@@ -26,9 +26,10 @@ Rackspace CDN and Cloud Files:
 -   Rackspace CDN has no limit on purges. Cloud Files limits the number
     of purges per account, per day to 25.
 -   Rackspace CDN does not yet support streaming video from Cloud Files
-    CDN-enabled containers or serving CDN-enabled content over SSL/TLS.
-    Cloud Files supports streaming video from CDN-enabled containers as
-    well as serving CDN-enabled content over SSL/TLS.
+    CDN-enabled containers however serving CDN-enabled content over 
+    SSL/TLS is possible.  Cloud Files supports streaming video from 
+    CDN-enabled containers as well as serving CDN-enabled content 
+    over SSL/TLS.
 
 These, and other differences, are summarized in the following table:
 
