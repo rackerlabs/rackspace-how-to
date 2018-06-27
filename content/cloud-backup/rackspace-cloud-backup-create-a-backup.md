@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-cloud-backup-create-a-backup/
-audit_date:
+audit_date: '2017-07-03'
 title: Create a backup
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date: '2016-04-11'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-07-03'
+last_modified_by: Cat Lookabaugh
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -14,7 +14,7 @@ product_url: cloud-backup
 The following steps show how to use the Cloud Backup service to create a
 backup of the data on your cloud server.
 
-**Warning:** Cloud Backup does *not* follow symlinks. If you want to back up files or folders, do not use a symlink.
+**Warning:** Cloud Backup does not follow symlinks. If you want to back up files or folders, do not use a symlink.
 
 **Previous sections**:
 
@@ -22,7 +22,7 @@ backup of the data on your cloud server.
 -   [Install the Cloud Backup agent on Windows](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
 
 **Note:** You can use the Cloud Backup tool to back up your data files
-but not to back up a full operating system. To restore your data, you
+but cannot use it to back up a full operating system. To restore your data, you
 need to restore only your files; you do not need to restore all of the
 operating system files. To back up the operating system, create an image
 of your server. For more information about restoring a server from an
