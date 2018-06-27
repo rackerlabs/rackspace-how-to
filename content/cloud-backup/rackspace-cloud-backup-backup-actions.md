@@ -1,12 +1,12 @@
 ---
 permalink: rackspace-cloud-backup-backup-actions/
-audit_date:
+audit_date:  '2017-07-03'
 title: Cloud Backup backup actions
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date: '2016-04-08'
-last_modified_by: Margaret Eker
+last_modified_date:  '2017-07-03'
+last_modified_by: Cat Lookabaugh
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -18,8 +18,7 @@ This article describes the actions you can perform during a single back up.
 
 You can access the **Backup Actions** menu in the following ways:
 
--   Click on the gear icon next to the backup name on the Configured
-    Backups page.
+-   Select **Cloud Control Panel -> Backups -> Backups**, and then click on the gear icon next to the backup name on the **Configured Backups** page.
 
     <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-15%20at%204.20.11%20PM.png %}" width="479" height="292" />
 
@@ -28,7 +27,7 @@ You can access the **Backup Actions** menu in the following ways:
 
     <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-15%20at%204.18.36%20PM.png %}" width="552" height="219" />
 
-From the **Backup Actions** menu, you can perform the following actions:
+From the **Actions** menu, you can perform the following actions:
 
 -   Perform a backup
 -   Restore a backup
@@ -39,7 +38,7 @@ From the **Backup Actions** menu, you can perform the following actions:
 
 ### Perform a backup
 
-When you select **Perform Backup** from the **Backup Actions** menu, you trigger a manual backup on your
+When you select **Perform Backup** from the **Actions** menu, you trigger a manual backup on your
 system, based on the configurations that are currently set for that configured backup.
 If you are looking at the **Configuration Details** page, the backup
 progress bar is displayed until the backup is completed.
@@ -48,7 +47,7 @@ progress bar is displayed until the backup is completed.
 
 ### Restore a backup
 
-1.  From the **Backup Actions** menu, select **Restore Backup**.
+1.  From the **Actions** menu, select **Restore Backup**.
 
 2.  On the first page of the Restore a Backup wizard, select the
     backup date to restore from, and then click **Next Step**.
@@ -82,18 +81,18 @@ progress bar is displayed until the backup is completed.
 
 You can change the name, recurrence, and notifications for your backup job.
 
-From the **Backup Actions** menu, select **Configure Backup**.
+From the **Actions** menu, select **Configure Backup**.
 
 <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-16%20at%201.23.19%20PM.png %}" width="528" height="593" />
 
 1.  Enter a new name for your backup job, and under **Schedule**, select
     how often you want to run the backup. All times are Central Time.
 
-    You can schedule your backups for as often as you expect your files to change. Cloud Backup uses block-level de-duplication, which means only those parts of a file that have changed are saved. In this way, a unique piece of data is saved only once, which maximizes the effectiveness of the backup, while minimizing your storage overhead. Another benefit is that by using this method, you can retrieve previous versions of files, up to the limits specified by the customer-defined retention settings.
+    You can schedule your backups to occur as often as you expect your files to change. Cloud Backup uses block-level deduplication, which means only those parts of a file that have changed are saved. In this way, a unique piece of data is saved only once, which maximizes the effectiveness of the backup, while minimizing your storage overhead. Another benefit of using this method is that you can retrieve previous versions of files, up to the limits specified by the customer-defined retention settings.
 
-    To save additional overhead, Cloud Backup might compress the files if it reduces the size of the block. You can expect compression rates equivalent to those of gzip. You should not try to manually compress or encrypt your data before running backups; if you do, deduplication will not work, and  you will create larger backups than you need. If you want to encrypt your backups, see the section on Encrypting your System in this article.
+    To save additional overhead, Cloud Backup might compress the files if it reduces the size of the block. You can expect compression rates equivalent to those of gzip. You should not try to manually compress or encrypt your data before running backups; if you do, deduplication will not work, and  you will create larger backups than you need. If you want to encrypt your backups, see the Encrypting your System section in this article.
 
-    For advanced Linux users, if you create **tarballs** with `gzip` that will get backed up, be sure to use the ` --rsyncable` option, which enables Cloud Backup to deduplication those files as well.
+    For advanced Linux users, if you create **tarballs** with `gzip` that will get backed up, use the ` --rsyncable` option, which enables Cloud Backup to use deduplication on those files as well.
 
 2.  Select how long you want to keep your backups: 30 days, 60 days, or
     indefinitely.
@@ -104,10 +103,10 @@ From the **Backup Actions** menu, select **Configure Backup**.
 
 4.  When you are satisfied with your settings, click **Next Step**.
 
-5.  On the next page, select the folders and files for the backup, along
+5.  Now, select the folders and files for the backup, along
     with any files you want to exclude. Then click **Next Step**.
 
-6.  On the next page, review your backup configuration settings. If the
+6.  Review your backup configuration settings. If the
     settings are correct, click **Save**. Otherwise, click **Back** to
     make changes.
 
@@ -115,7 +114,7 @@ From the **Backup Actions** menu, select **Configure Backup**.
 
 You can change the files and folders that are saved in your backup.
 
-1. From the **Backup Actions** menu, select **Configure Files**.
+1. From the **Actions** menu, select **Configure Files**.
 
 2.  On the **Browse Files & Folders** tab, select the the folders and
     files by clicking the folder name to view which files are inside.
@@ -134,23 +133,23 @@ You can change the files and folders that are saved in your backup.
 ### Disable a backup
 
 You can prevent a backup from running by selecting **Disable Backup**
-from the **Backup Actions** menu.
+from the **Actions** menu.
 
 <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-16%20at%202.36.44%20PM.png %}" width="564" height="348" />
 
 When you disable a backup, the following actions occur:
 
--   The backup status changes to **Disabled**.
--   The **Perform Backup** button becomes unavailable.
+-   The backup status changes to ``Disabled``.
+-   The **Perform Backup** button is not available.
 
-To re-enable your backup, from the **Backup Actions** menu, select
-**Enable Backup**. Your backup returns to **Active** status with all its
+To re-enable your backup, from the **Actions** menu, select
+**Enable Backup**. Your backup returns to ``Active`` status with all its
 previous settings.
 
 ### Delete a backup
 
 You can delete your backup by selecting **Delete Backup** from the
-**Backup Actions** menu.
+**Actions** menu.
 
 Confirm that you want to delete the backup.
 
