@@ -17,7 +17,7 @@ product_url: cloud-backup
 
 This article describes the actions available in the **Rackspace Cloud Control Panel -> Backups -> Systems** selection.
 
-You can access the **Actions** menu from the gear widget next to the system name in the system list or from the **Actions** button on the system **Details** Screen. This menu is not the one that appears on the **Single Backup** screen.
+You can access the **Actions** menu from the gear widget next to the server name in the system list or from the **Actions** button on the system **Details** Screen. This menu is not the one that appears on the **Single Backup** screen.
 
 The **Actions** menu offers the following actions:
 
@@ -30,13 +30,13 @@ The **Actions** menu offers the following actions:
 
 ### Create Backup
 
-Clicking **Create Backup** from the **Actions** menu is the same as clicking **Create Backup** on the system screen. For complete instructions, see [Create a Backup](/how-to/rackspace-cloud-backup-create-a-backup).
+Clicking **Create Backup** from the **Actions** menu is the same as clicking **Create Backup** from the gear icon on the **Cloud Backups Systems** screen. For complete instructions, see [Create a Backup](/how-to/rackspace-cloud-backup-create-a-backup).
 
 **Note:** You cannot back up or restore a system that is offline. If the system status displays ``offline`` and your server is active, contact support.
 
 ### Restore Backup
 
-Clicking **Restore Backup** from the **Actions** menu is the same as clicking **Restore Backup** from the **Single Backup Action** menu. For complete instructions, see the Restore Backup section in the [Cloud Backup actions](/how-to/rackspace-cloud-backup-backup-actions) article.
+Clicking **Restore Backup** from the **Actions** menu is the same as clicking **Restore Backup** from the gear icon on the **Cloud Backups Systems** screen. For complete instructions, see the Restore Backup section in the [Cloud Backup actions](/how-to/rackspace-cloud-backup-backup-actions) article.
 
 **Note:** You cannot back up or restore a system with an offline status. If the system status displays ``offline`` and your server is active, please contact support.
 
@@ -67,7 +67,7 @@ To encrypt your backups, perform the following steps:
 You can confirm that you have enabled encryption by clicking
 **Encrypt** from the **Actions** menu.
 
-On the **Backup Encryption** screen, your system name will have the encrypted flag next to it. Also, your encrypted backups will display "This is an encrypted backup," on the **Single Backup Details** screen.
+On the **Backup Encryption** screen, your server name will have the encrypted flag next to it. Also, your encrypted backups will display "This is an encrypted backup," on the **Backup Details** screen.
 
 You can change your passphrase for encryption by performing the following steps:
 
