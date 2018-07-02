@@ -19,7 +19,7 @@ You can use the gear menu or the Actions menu to perform management operations o
 
 #### Gear menu
 
-When you open the Cloud Control Panel or click **Servers** at the top of the page, you see a list of your servers. To the left of each server name is a gear icon. Click the icon to view a menu of the operations that you can perform on your server.
+When you click **Servers** > **Cloud Servers** at the top of the page, you see a list of your servers. To the left of each server name is a gear icon. Click the icon to view a menu of the operations that you can perform on your server.
 
 #### Actions menu
 
