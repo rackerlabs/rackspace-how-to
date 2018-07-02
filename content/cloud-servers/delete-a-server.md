@@ -1,11 +1,11 @@
 ---
-permalink: deleting-your-server/
+permalink: deleting-a-server/
 audit_date:
-title: Delete your server
+title: Delete a server
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2016-06-21'
+last_modified_date: '2017-07-02'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers

@@ -1,12 +1,12 @@
 ---
-permalink: reset-your-server-password/
+permalink: reset-a-server-password/
 audit_date:
-title: Reset Your Server Password
+title: Reset a server's password
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2016-09-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-07-01'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---

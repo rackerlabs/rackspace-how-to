@@ -1,11 +1,11 @@
 ---
-permalink: reboot-your-server/
+permalink: reboot-a-server/
 audit_date:
-title: Reboot Your Server
+title: Reboot a Server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
-last_modified_date: '2017-01-04'
+last_modified_date: '2018-07-02'
 last_modified_by: Laura Santamaria
 product: Cloud Servers
 product_url: cloud-servers

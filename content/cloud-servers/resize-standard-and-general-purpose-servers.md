@@ -1,12 +1,12 @@
 ---
-permalink: managing-your-server-resizing-standard-and-general-purpose-servers/
+permalink: resize-standard-and-general-purpose-servers/
 audit_date:
-title: Manage your server - resizing standard and general purpose servers
+title: Resize standard and general purpose servers
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2016-07-07'
-last_modified_by: Stephanie
+last_modified_date: '2018-07-01'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
