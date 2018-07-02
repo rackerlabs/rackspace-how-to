@@ -34,3 +34,4 @@ To fully remediate against the Spectre/Meltdown variants referenced in [CVE-2017
 Firmware/Microcode mitigations against CPU speculative execution vulnerabilities.
 
 As always, please contact your support team if you have any questions. 
+
