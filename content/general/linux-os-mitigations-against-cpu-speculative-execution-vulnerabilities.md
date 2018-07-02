@@ -31,7 +31,7 @@ Further remediation might be necessary as evaluation of these vulnerabilities co
 
 To fully remediate against the Spectre/Meltdown variants referenced in [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754), dedicated devices will also need a BIOS firmware update. Instructions for applying firmware updates are outlined in [Firmware/Microcode mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/firmware-microcode-mitigations-against-cpu-speculative-execution-vulnerabilities/).
 
-Firmware/Microcode mitigations against CPU speculative execution vulnerabilities.
+Further remediation might be necessary as evaluation of these vulnerabilities continues.
 
 As always, please contact your support team if you have any questions. 
 
