@@ -1,11 +1,11 @@
 ---
-permalink: managing-my-server/
-audit_date:
+permalink: managing-a-cloud-server/
+audit_date: '2018-07-02'
 title: Manage a Cloud Server
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2017-02-22'
+last_modified_date: '2018-07-01'
 last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
@@ -57,8 +57,6 @@ You can perform the following essential management tasks without logging directl
 - Click **Change Password** to change the root password on Linux servers or the Administrator password on Windows.
 
     **Note:** This command requires an automatic reboot of your server. Remember to save your data before issuing this command.
-
-- Click **Create Check**.
 
 - Click **Delete Server** to delete a server when you no longer need it. You will lose any saved data and the IP address assigned to the server.
 
