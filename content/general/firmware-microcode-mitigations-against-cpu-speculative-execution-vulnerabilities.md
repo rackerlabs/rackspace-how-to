@@ -82,8 +82,8 @@ Repeating the ``racadm jobqueue view`` command shows the subsequent jobs that ar
 
 If you check the jobqueue and receive a message that indicates that the catalog file could not be downloaded, it is possible your server has a DRAC firmware version that does not support RESTful API calls. If this is the case, contact Support to update the DRAC firmware on Rackspace Managed devices. This update occurs outside of the operating system and does not cause any downtime for your device.
 
-Flashing Firmware on HP Servers
+#### Flashing firmware on HP servers
 
-This process is still being developed. We will update this site with instructions once they are available.
+This process is still being developed. We will update this article with instructions as soon as they are available.
 
 As always, please contact your support team if you have any questions.
