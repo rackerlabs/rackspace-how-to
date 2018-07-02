@@ -1,5 +1,5 @@
 ---
-permalink: deleting-a-server/
+permalink: delete-a-server/
 audit_date:
 title: Delete a server
 type: article
