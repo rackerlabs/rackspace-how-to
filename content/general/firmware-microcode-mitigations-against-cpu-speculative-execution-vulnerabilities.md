@@ -47,7 +47,7 @@ For additional information, see [Windows OS mitigations against CPU speculative 
 
 ### Managed colocation
 
-Customers on Managed Colocation environments can work with their Rackspace account team to schedule maintenance to install the firmware/microcode updates or they can download the updates and apply them on their own. Customers can also flash the firmware on their own as described in the following section. 
+Customers on managed colocation environments can work with their Rackspace account team to schedule maintenance to install the firmware/microcode updates or they can download the updates and apply them on their own. Customers can also flash the firmware on their own as described in the following section. 
 
 ### Flashing firmware
 
@@ -63,7 +63,7 @@ Use the following steps to update the firmware and reboot your server:
     -	Confirm tools are installed by running the following command in a command prompt window (Windows) or terminal session         (Linux): ``racadm version``
 
 2.	Run the following commands in a command prompt window (Windows) or terminal session (Linux) to update the firmware:
-    -	For devices managed by Rackspace, execute: ``racadm update -f Catalog.xml -e 10.5.87.152/dell_firmware -t HTTP -a TRUE 
+    -	For devices managed by Rackspace, execute: ``racadm update -f Catalog.xml -e 10.5.87.152/dell_firmware -t HTTP -a TRUE`` 
     -	For devices not managed by Rackspace (Colo devices), execute: ``racadm update -f Catalog.xml -e 74.205.112.120/dell_firmware -t HTTP -a TRUE``
 
 The device reboots after the firmware update. Monitor the progress of the updates using the ``racadm jobqueue view`` command. A successful return looks like this:
@@ -80,7 +80,7 @@ The device reboots after the firmware update. Monitor the progress of the update
 
 Repeating the ``racadm jobqueue view`` command shows the subsequent jobs that are spawned from reading the catalog file and compares the versions in the file to those in the local hardware inventory. All files found to be older than the catalog version will be scheduled for upgrade automatically.
 
-If you check the jobqueue and receive a message that indicates that the catalog file could not be downloaded, it is possible your server has a DRAC firmware version that does not support RESTful API calls. If this is the case, contact Support to update the DRAC firmware on Rackspace Managed devices. This update occurs outside of the operating system and does not cause any downtime for your device.
+If you check the job queue and receive a message that indicates that the catalog file could not be downloaded, it is possible your server has a DRAC firmware version that does not support RESTful API calls. If this is the case, contact Support to update the DRAC firmware on Rackspace Managed devices. This update occurs outside of the operating system and does not cause any downtime for your device.
 
 #### Flashing firmware on HP servers
 
