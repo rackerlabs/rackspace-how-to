@@ -68,15 +68,15 @@ Use the following steps to update the firmware and reboot your server:
 
 The device reboots after the firmware update. Monitor the progress of the updates using the ``racadm jobqueue view`` command. A successful return looks like this:
 
-```----------------------------------------------------------
-[Job ID=JID_278794219428]
-Job Name=Repository Update
-Status=Completed
-Start Time=[Not Applicable]
-Expiration Time=[Not Applicable]
-Message=[RED001: Job completed successfully.]
-Percent Complete=[NA]
-----------------------------------------------------------```
+       ----------------------------------------------------------
+       [Job ID=JID_278794219428]
+       Job Name=Repository Update
+       Status=Completed
+       Start Time=[Not Applicable]
+       Expiration Time=[Not Applicable]
+       Message=[RED001: Job completed successfully.]
+       Percent Complete=[NA]
+       ----------------------------------------------------------
 
 Repeating the ``racadm jobqueue view`` command shows the subsequent jobs that are spawned from reading the catalog file and compares the versions in the file to those in the local hardware inventory. All files found to be older than the catalog version will be scheduled for upgrade automatically.
 
