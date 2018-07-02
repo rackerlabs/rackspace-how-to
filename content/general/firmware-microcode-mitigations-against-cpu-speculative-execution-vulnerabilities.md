@@ -81,5 +81,3 @@ Percent Complete=[NA]
 Repeating the ``racadm jobqueue view`` command shows the subsequent jobs that are spawned from reading the catalog file and compares the versions in the file to those in the local hardware inventory. All files found to be older than the catalog version will be scheduled for upgrade automatically.
 
 If you check the jobqueue and receive a message that indicates that the catalog file could not be downloaded, it is possible your server has a DRAC firmware version that does not support RESTful API calls. If this is the case, contact Support to update the DRAC firmware on Rackspace Managed devices. This update occurs outside of the operating system and does not cause any downtime for your device.
-
-
