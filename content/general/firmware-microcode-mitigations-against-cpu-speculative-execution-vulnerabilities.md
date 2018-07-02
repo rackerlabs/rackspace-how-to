@@ -1,6 +1,6 @@
 ---
 permalink: firmware-microcode-mitigations-against-cpu-speculative-execution-vulnerabilities/
-audit_date: '2018-04-10'
+audit_date: '2018-07-02'
 title: 'Firmware/Microcode mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-04-10'
