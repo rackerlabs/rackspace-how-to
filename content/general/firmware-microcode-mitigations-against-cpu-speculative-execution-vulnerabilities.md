@@ -15,7 +15,7 @@ Rackspace continues to evaluate and address a set of speculative execution vulne
 
 Vendors have begun to release firmware/microcode updates for specific platforms. Rackspace will perform testing based on standard practices and make updates available upon successful completion of this process. We are aware that these updates might impact performance to an extent dependent upon specific workloads, application usage, or I/O. Our testing will not account for customer-specific performance impact. If you have concerns related to performance impact, review vendor-provided guidance. Red Hat has provided information regarding potential performance impacts at [Speculative Execution Exploit Performance Impacts](https://access.redhat.com/articles/3307751).
 
-As firmware/microcode updates become available, Rackspace will send a ticket to inform customers that one or more of their devices has available firmware/microcode updates. Customers **must** opt in to a maintenance window to install the firmware/microcode updates. Customers who would prefer to apply the updates on their own can follow the steps provided later in this article. Along with the updates, devices might require additional steps for guest OS and virtualization platforms to be fully remediated.
+As firmware/microcode updates become available, Rackspace will send a ticket to inform customers that one or more of their devices has available firmware/microcode updates. Customers **must** opt in to a maintenance window to install the firmware/microcode updates if they would like Rackspace to install the firmware/microcode updates. Customers who would prefer to apply the updates on their own can follow the steps provided later in this article. Along with the updates, devices might require additional steps for guest OS and virtualization platforms to be fully remediated.
 
 ### Guest OS and virtualization specifics
 
@@ -51,7 +51,7 @@ Customers on Managed Colocation environments can work with their Rackspace accou
 
 ### Flashing firmware
 
-Those customers who would like to apply the firmware updates to their devices can use teh following procedures: 
+Those customers who would like to apply the firmware updates to their devices can use the following procedures: 
 
 #### Flashing firmware on Dell servers by using Rackspace mirror servers
 
@@ -82,3 +82,8 @@ Repeating the ``racadm jobqueue view`` command shows the subsequent jobs that ar
 
 If you check the jobqueue and receive a message that indicates that the catalog file could not be downloaded, it is possible your server has a DRAC firmware version that does not support RESTful API calls. If this is the case, contact Support to update the DRAC firmware on Rackspace Managed devices. This update occurs outside of the operating system and does not cause any downtime for your device.
 
+Flashing Firmware on HP Servers
+
+This process is still being developed. We will update this site with instructions once they are available.
+
+As always, please contact your support team if you have any questions.
