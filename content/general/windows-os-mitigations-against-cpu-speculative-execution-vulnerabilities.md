@@ -13,7 +13,7 @@ product_url: undefined
 
 Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain central processing units (CPUs), commonly known as Meltdown and Spectre: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). 
 
-It is important to note that the January 2018 Security Rollup Patch security patch, and other recent patches, have the capability to eliminate multiple possible vectors. However, for the patches to be fully functional, three additional registry keys must be implemented on each device, and the server must be rebooted for implementation. Rackspace is not pushing these keys because we have identified that devices might experience a performance impact or possible "blue screens" after these additional keys are implemented. Given this, we recommend that customers carefully consider the implications of applying the three additional registry keys and apply them as they deem appropriate. As a reminder, the main registry is required, and the patch must be installed for the additional keys to take effect.  
+It is important to note that the January 2018 Security Rollup Patch security patch, and other recent patches, have the capability to eliminate multiple possible vectors. However, for the patches to be fully functional, three additional registry keys must be implemented on each device, and the server must be rebooted for implementation. Rackspace is not pushing these keys because we have identified that devices might experience a performance impact or possible "blue screens" after these additional keys are implemented. Given this, we will not automatically install these keys unless customers opt-in to the remediation. We recommend that customers carefully consider the implications of applying the three additional registry keys and apply them as they deem appropriate. As a reminder, the main registry is required, and the patch must be installed for the additional keys to take effect.  
 
 Customers on managed colocation (colo) and Managed Infrastructure environments should reference the vendors for their recommended solutions to mitigate the vulnerability via patches of the operating system.  
 
@@ -25,7 +25,7 @@ We have aligned with Microsoft guidance to patch your device and mitigate the vu
 
 **Important:** Opting out of UEFI firmware updates and BIOS updates will result in not being protected against Variant 2 2017-5715 of Spectre. 
 
-### Technical remediation
+### Technical Remediation
 
 We have added new steps both for understanding and for those who want to fully remediate vulnerabilities.
 
@@ -53,7 +53,7 @@ In addition to updating the registry, applying the update, and enabling update p
 
 1. Check for and install outstanding patches for the server.
 
-2. After the any outstanding patches have been install, reboot the server and ensure the January 2018 Security rollups have been applied.
+2. After the any outstanding patches have been install, reboot the server and ensure the latest Security rollups have been applied.
 
 
 **Enable mitigation**
