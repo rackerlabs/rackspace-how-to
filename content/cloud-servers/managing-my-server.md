@@ -11,11 +11,11 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-You can use the Cloud Control Panel to perform administrative tasks in as few clicks as possible. This article describes the different methods for performing server management tasks in the control panel.
+This article describes the different methods for performing server management tasks in the Cloud Control Panel. You can use the Cloud Control Panel to perform administrative tasks in as few clicks as possible.
 
 ### Accessing server management tasks
 
-You can use the gear menu or the Actions menu to perform management operations on your server.
+You can use the gear menu or the **Actions** menu to perform management operations on your server.
 
 #### Gear menu
 
@@ -23,11 +23,11 @@ When you click **Servers** > **Cloud Servers** at the top of the page, you see a
 
 #### Actions menu
 
-If you click on a server name, the Server Details page appears. The Actions menu is in the upper-right corner of the page. This menu contains the same operations that are available in the gear menu.
+If you click on a server name, the **Server Details** page appears. The **Actions** menu is in the upper-right corner of the page. This menu contains the same operations that are available in the gear menu.
 
 ### Perform server management tasks
 
-You can use the gear menu or the Actions menu to perform the following server management tasks.
+You can use the gear icon or the **Actions** menu to perform the following server management tasks.
 
 #### Identify your server
 
@@ -50,11 +50,11 @@ You can create an image of a server or rebuild a server from a previously saved 
 
 You can perform the following essential management tasks without logging directly into your server:
 
-- Click **Emergency Console** to open Linux shell window or Windows command prompt window
+- Click **Emergency Console** to open Linux shell window or Windows® command prompt window
   so that you can issue commands directly on your server.
 - Click **Reboot** to restart the server.
 - Click **Resize** to vertically scale your computing power (not available for all servers).
-- Click **Change Password** to change the root password on Linux servers or the Administrator password on Windows.
+- Click **Change Password** to change the root password on Linux servers or the password for the administrator on Windows®.
 
     **Note:** This command requires an automatic reboot of your server. Remember to save your data before issuing this command.
 
