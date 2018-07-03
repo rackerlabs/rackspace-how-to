@@ -5,8 +5,8 @@ title: Rackspace Name Servers
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2017-05-15'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-07-02'
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -23,14 +23,14 @@ Server, you'll need to update your domain with the names of the
 Rackspace name servers so that the DNS system knows where to locate the
 new IP address for your domain.
 
-### The Rackspace name servers
+### Rackspace name servers
 
 The Rackspace name servers are:
 
 -   **ns.rackspace.com**
 -   **ns2.rackspace.com**
 
-### Using the Rackspace Name Servers
+### Using Rackspace Name Servers
 
 If you have an existing domain that is already registered with another
 service provider and you want to host it from your Rackspace Cloud
