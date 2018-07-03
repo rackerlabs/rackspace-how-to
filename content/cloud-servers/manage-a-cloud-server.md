@@ -50,7 +50,7 @@ You can create an image of a server or rebuild a server from a previously saved 
 
 You can perform the following essential management tasks without logging directly into your server:
 
-- Click **Emergency Console** to open Linux shell window or Windows® command prompt window
+- Click **Emergency Console** to open the Linux shell window or Windows® command prompt window
   so that you can issue commands directly on your server.
 - Click **Reboot** to restart the server.
 - Click **Resize** to vertically scale your computing power (not available for all servers).
