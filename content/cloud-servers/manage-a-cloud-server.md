@@ -1,5 +1,5 @@
 ---
-permalink: managing-a-cloud-server/
+permalink: manage-a-cloud-server/
 audit_date: '2018-07-02'
 title: Manage a Cloud Server
 type: article
