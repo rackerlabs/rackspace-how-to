@@ -70,6 +70,8 @@ To install the certificate, follow these steps:
    
 3. Restart your webserver.
 
+New change here.
+
 ### DNS Update
 
 Because you are updating an existing SSL certificate, you don't need
