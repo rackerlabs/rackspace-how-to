@@ -45,7 +45,7 @@ The graph for the CPU check displays how much of the CPU's available
 processing power the instance uses. It also displays the minimum, maximum,
 and average CPU usage for that period.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpugraph.png %}" width="600" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpugraph.png %}" />
 
 #### Filesystem check
 
@@ -55,7 +55,7 @@ that the instance uses, and the **Total** value represents the total disk
 space that is available to the instance. This value can change if the instance
 is resized.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbfilesystemgraph.png %}" width="600" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbfilesystemgraph.png %}" />
 
 #### Load Average check
 
@@ -64,7 +64,7 @@ average on a per-minute basis. Whereas the CPU usage graph displays
 moment-to-moment fluctuations in CPU use, the Load Average graph
 reflects overall CPU usage.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbloadgraph.png %}" width="600" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbloadgraph.png %}" />
 
 #### Local Disk check
 
@@ -74,7 +74,7 @@ if the instance participates in replication. The **Total** value represents the
 total disk space that is available to the instance. This value changes if the
 instance is resized.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/localdiskgraph.png %}" width="600" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/localdiskgraph.png %}" />
 
 #### Memory check
 
@@ -83,7 +83,7 @@ The **Total** value represents the total memory that is available to the
 instance, and the **Used** value represents the amount of memory that is in
 use.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmemorygraph.png %}" width="600" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmemorygraph.png %}" />
 
 #### MySQL check
 
@@ -95,7 +95,7 @@ instance are available in the Cloud Control Panel under **Monitoring Alerts**.
 The graph for the Network check displays inbound and outbound network
 traffic in kilobytes per second.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbnetworkgraph.png %}" width="600" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbnetworkgraph.png %}" />
 
 ### Alarms
 
@@ -134,7 +134,7 @@ You can view and create alarms from the details page for a check.
     Alarms"](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/alert-triggers-and-alarms)
     section of the Cloud Monitoring API documentation.
 
-    <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpualarm.png %}" width="600" />
+    <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpualarm.png %}" />
 
 #### Edit alarms
 
@@ -232,7 +232,7 @@ instance exceeds 80% and a `Critical` status when memory usage exceeds 90%.
 
 The following criteria return a `Warning` status when the network receive
 rate on `eth0` exceeds 18350080B per second and a `Critical` status when the
-network receive rate on eth0 exceeds 24903680B per second.
+network receive rate on `eth0` exceeds 24903680B per second.
 
     if (rate(metric['rx_bytes']) > 24903680) {
            return new AlarmStatus(CRITICAL, "Network receive rate on eth0 is above your
