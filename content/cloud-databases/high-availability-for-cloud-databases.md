@@ -52,7 +52,7 @@ source monitoring, automatic failover, and replica promotion. The
 [replication setup is
 semi-synchronous](https://dev.mysql.com/doc/refman/5.6/en/replication-semisync.html)
 and involves one source and one or two replicas. MySQL and Percona
-implementations are set up by using using global transaction identifiers
+implementations are set up by using global transaction identifiers
 (GTIDs). To improve the robustness of the system, the source and the replicas
 are each provisioned on separate hosts.
 
