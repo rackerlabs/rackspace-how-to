@@ -1,30 +1,31 @@
 ---
 permalink: high-availability-for-cloud-databases/
-audit_date: '2018-04-05'
+audit_date: '2018-07-05'
 title: High Availability for Cloud Databases
 type: article
 created_date: '2015-06-10'
 created_by: Neha Verma
-last_modified_date: '2018-04-18'
+last_modified_date: '2018-07-05'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
 High Availability (HA) for Cloud Databases means that Cloud Databases users
-can run their critical production workloads without worrying about the
+can run their critical production workloads without worrying about a
 database becoming unavailable due to the failure of a database component. It
 improves the reliability of running a database in the cloud environment by
 minimizing downtime and ensuring that the application is never down for more
 than a few seconds in the event of a failure.
 
-A Cloud Databases HA instance group includes a source database instance with
+A Cloud Databases HA instance group includes a source database instance and
 one or two replicas. For a robust HA setup, we recommend two replicas. If the
 source database instance becomes unavailable, an automatic failover is
 initiated to one of the replicas. The automatic failover and promotion of the
 new replica is completed in approximately 10 to 30 seconds.
 
-We currently support HA for MySQL 5.6, Percona 5.6, MariaDB 10, and later versions.
+We currently support HA for MySQL 5.6, Percona 5.6, MariaDB 10, and later
+versions.
 
 ### Use cases
 
@@ -33,7 +34,7 @@ HA for Cloud Databases has the following use cases:
 -   For critical application workloads, a couple of minutes of
     application downtime can result in significant revenue losses. Users can
     implement Cloud Databases HA instances to ensure that their databases are
-    highly available and only experience a small amount of downtime
+    highly available, and only experience a small amount of downtime
     in the event of failover.
 
 -   To reduce the load on the source instance and improve performance for
@@ -45,7 +46,7 @@ writes to a specific port.
 
 ### Technical and architecture details
 
-HA for Cloud Databases relies on [MHA for
+HA for Cloud Databases relies on [Master High Availability (MHA) for
 MySQL](https://code.google.com/p/mysql-master-ha/) functionality for
 source monitoring, automatic failover, and replica promotion. The
 [replication setup is
@@ -64,7 +65,7 @@ by using a virtual IP (VIP). Figure 1 provides an overview of a Cloud Databases
 HA setup.
 
 **Figure 1. Cloud Databases HA setup**
-<img src="{% asset_path cloud-databases/high-availability-for-cloud-databases/HighAvailabilityforCloudDatabases1b.png %}" width="818" height="605" />
+<img src="{% asset_path cloud-databases/high-availability-for-cloud-databases/HighAvailabilityforCloudDatabases1b.png %}" width="600" />
 
 The MHA manager lives within the source HAProxy node and monitors the
 source database instance. If the source database instance becomes
@@ -77,7 +78,7 @@ triggers a script that switches the new source out of the read-only pool
 and updates the write pool. The total process takes approximately 10 to 30
 seconds.
 
-### Getting started with HA for Cloud Databases
+### Get started with HA for Cloud Databases
 
 You can create new HA instance groups and convert from a replica set to an HA
 group by using the [Cloud Control
@@ -100,7 +101,7 @@ Cloud Databases:
     this property by listing the details of an HA instance.) The single access
     point, or VIP, of the HA instance is specified as the `address`. All of
     the reads and writes that are directed to the VIP and port 3306 are sent
-    to the source instance. You can also direct reads to replicas using port
+    to the source instance. You can also direct reads to replicas by using port
     3307.
 -   On HA groups, most service actions (such as resize and configuration, for
     example) must be applied to the universally unique identifier (UUID) for
@@ -118,17 +119,16 @@ Cloud Databases:
     after the node has been successfully added.
 
 **Warning:** Automatically adding a new replica restarts the MHA manager
-service (which monitors the source and the replicas to trigger failover)
-and the HAproxy service on the load balancer nodes. Any API actions that are
-issued to the cluster during the replica add part of the process might not
-succeed.
+service and the HAproxy service on the load balancer nodes. Any API actions
+that are issued to the cluster during the replica add part of the process
+might not succeed.
 
 **Recommendations:**
 
 We recommend that you take the following steps:
 
 -   Create an HA setup with two replicas. This architecture guarantees a highly
-    available setup even post-failover.
+    available setup, even post-failover.
 -   Monitor and set up alarms for the replicas to ensure that they are
     in a healthy state. For more information about monitoring replicas, see
     [Database replication with Cloud
@@ -151,7 +151,7 @@ HA for Cloud Databases has the following limitations:
     and changes against the individual instances in an HA group are not
     allowed.
 
-    **Note**: When you add a replica for a MariaDB HA Group, you cannot use an
+    **Note**: When you add a replica for a MariaDB HA group, you cannot use an
     existing replica to generate a snapshot for the new replica. For
     more information, see [Xtrabackup doesn't log master co-ordinates while
     backup up MariaDB
@@ -168,5 +168,5 @@ HA for Cloud Databases has the following limitations:
     API.
 -   The instance listing in the Cloud Control Panel shows the status
     of the HA group. To take action on the cluster or view
-    cluster-level information, click the instance name to go to the HA Group
-    Details page.
+    cluster-level information, click the instance name to go to the **HA Group
+    Details** page.
