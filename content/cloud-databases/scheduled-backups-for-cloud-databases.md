@@ -17,20 +17,20 @@ availability (HA) instance groups.
 
 You can schedule a backup of either the source or the replica of a replica
 set, but they act more like standalone instances. When you schedule a backup
-on an HA instance group, the HA chooses the most up-to-date replica to run the
+on an HA instance group, HA chooses the most up-to-date replica to run the
 backup.
 
 When you schedule a backup, you can define the day of the week on which to
 perform a full backup on the selected instance type, and optionally specify
 the hour and minute when full and incremental backups are performed. By
-default a random day of the week is generated.
+default, a random day of the week is generated.
 
 The schedule runs every day at the assigned time, creating daily
 incremental backups, except for the specified day of the week when the
 full backup task is performed. All backups are stored in Cloud Files
 and are charged the standard Cloud Files storage fees.
 
-This feature is supported for database versions MySQL 5.6, Percona 5.6,
+This feature is supported for MySQL 5.6, Percona 5.6,
 and MariaDB 10 or later.
 
 ### Features
@@ -117,10 +117,10 @@ Use the following steps to view and modify a scheduled backup:
 3. Click the name of the instance for which you want to view or modify a
    backup schedule.
 
-   **Note:** On the instance details page, the schedule appears next to
+   **Note:** On the instance **Details** page, the schedule appears next to
    **Scheduled Backups**.
 
-4. To edit the schedule, click the **Edit** link.
+4. To edit the schedule, click **Edit**.
 
 #### Delete a scheduled backup
 
@@ -133,9 +133,10 @@ Use the following steps to delete a scheduled backup:
 3. Click the name of the instance for which you want to delete a backup
    schedule.
 
-   On the instance details page, the schedule is displayed next to **Scheduled Backups**.
+   On the instance **Details** page, the schedule is displayed next to
+   **Scheduled Backups**.
 
-4. To delete the schedule, click the **Delete** link.
+4. To delete the schedule, click **Delete**.
 
 ### Scheduling backups by using the API
 
@@ -165,7 +166,7 @@ Attribute name | Description | Required?
 `minute` | The minute of the hour. | Yes  
 `instance_id` | The ID of the database instance to back up. | Yes  
 `source_id` | The ID of the database instance or HA group to back up. | No  
-`source_type` | The type of backup for the given `source_id`. (`instance` or `ha` defaults to `instance`.) | No  
+`source_type` | The type of backup for the given `source_id`. (`instance` or `ha`. Defaults to `instance`.) | No  
 `full_backup_retention` | The number of full automated backups to keep. | No
 
 **Note:** The `instance_id` field is deprecated. You can still use this field
