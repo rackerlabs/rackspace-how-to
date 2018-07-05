@@ -12,7 +12,7 @@ product_url: cloud-databases
 ---
 
 Monitoring is included with Cloud Databases to help you manage the
-health of your instances. Monitoring checks and alarms can be configured by
+health of your instances. You can configure monitoring checks and alarms by
 using the [Cloud Control Panel](https://mycloud.rackspace.com/) or the
 [Cloud Monitoring
 API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
@@ -29,7 +29,9 @@ instance are described in the following sections.
 
 ### Checks
 
-The monitoring checks for a Cloud Databases instance appear in the **Monitoring Checks** section of the details page for that instance in the Cloud Control Panel.
+The monitoring checks for a Cloud Databases instance appear in the
+**Monitoring Checks** section of the **Details** page for that instance in the
+Cloud Control Panel.
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmonitoringchecks.png %}" />
 
@@ -100,7 +102,7 @@ traffic in kilobytes per second.
 ### Alarms
 
 You can set up custom alarms that trigger notifications when
-defined criteria for monitored metrics are met. By default Cloud
+defined criteria for monitored metrics are met. By default, Cloud
 Databases instances have an alarm configured to send an email alert when
 disk space is low.
 
@@ -109,16 +111,16 @@ to your contacts list to prevent email alerts from being marked as spam.
 
 #### Create alarms
 
-You can view and create alarms from the details page for a check.
+You can view and create alarms from the **Details** page for a check.
 
-1.  On the details page for the Cloud Databases instance, click the name
+1.  On the **Details** page for the Cloud Databases instance, click the name
     of the check for which you want to create an alarm.
 2.  In the **Alarms** section at the bottom of the page, click the
     **Create Alarm** button.
 3.  In the **Alarm Name** field, enter a name for the alarm.
 4.  Select the contact to receive notifications from the alarm.
 
-    By default this value is set to the technical contact on
+    By default, this value is set to the technical contact on
     your account.
 
 5.  In the **Alarm Criteria** field, enter the criteria for the alarm.
@@ -131,7 +133,7 @@ You can view and create alarms from the details page for a check.
 
     The language that is used to define criteria for alarms is documented in
     the ["Alert Triggering and
-    Alarms"](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/alert-triggers-and-alarms)
+    Alarms"](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/alert-triggers-and-alarms/)
     section of the Cloud Monitoring API documentation.
 
     <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpualarm.png %}" />
@@ -151,11 +153,11 @@ statuses. By default, `Warning` and `Critical` statuses cause the text of
 the returned status to be emailed to the technical contact for your
 account. You can define more complex notification plans by using the
 [Cloud Monitoring
-API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
+API](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/create-first-monitor/#gsg-make-notification-plan).
 
 The available metrics for all of the alarms are displayed in the alarm
 creation dialog box and are explained in the [Cloud Monitoring API
-documentation](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#agent-check-types).
+documentation](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/metrics-operations/).
 
 ### CPU alarms
 
