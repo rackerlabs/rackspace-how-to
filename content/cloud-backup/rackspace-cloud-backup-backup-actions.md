@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-cloud-backup-backup-actions/
-audit_date:  '2017-07-03'
+audit_date:  '2017-07-05'
 title: Cloud Backup backup actions
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date:  '2017-07-03'
+last_modified_date:  '2017-07-05'
 last_modified_by: Cat Lookabaugh
 product: Cloud Backup
 product_url: cloud-backup
@@ -22,7 +22,7 @@ You can access the **Backup Actions** menu in the following ways:
 
     <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-15%20at%204.20.11%20PM.png %}" width="479" height="292" />
 
--   Click on the **Actions** menu at the top of the details page for a
+-   Click on the **Actions** menu at the top of the **Configuration Details** page for a
     configured backup.
 
     <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-15%20at%204.18.36%20PM.png %}" width="552" height="219" />
@@ -49,7 +49,7 @@ progress bar is displayed until the backup is completed.
 
 1.  From the **Actions** menu, select **Restore Backup**.
 
-2.  On the first page of the Restore a Backup wizard, select the
+2.  On the first page of the **Restore a Backup** wizard, select the
     backup date to restore from, and then click **Next Step**.
 
 3.  On the next page, select the destination system, and then click
@@ -90,7 +90,7 @@ From the **Actions** menu, select **Configure Backup**.
 
     You can schedule your backups to occur as often as you expect your files to change. Cloud Backup uses block-level deduplication, which means only those parts of a file that have changed are saved. In this way, a unique piece of data is saved only once, which maximizes the effectiveness of the backup, while minimizing your storage overhead. Another benefit of using this method is that you can retrieve previous versions of files, up to the limits specified by the customer-defined retention settings.
 
-    To save additional overhead, Cloud Backup might compress the files if it reduces the size of the block. You can expect compression rates equivalent to those of gzip. You should not try to manually compress or encrypt your data before running backups; if you do, deduplication will not work, and  you will create larger backups than you need. If you want to encrypt your backups, see the Encrypting your System section in this article.
+    To save additional overhead, Cloud Backup might compress the files if it reduces the size of the block. You can expect compression rates equivalent to those of gzip. You should not try to manually compress or encrypt your data before running backups; if you do, deduplication will not work, and  you will create larger backups than you need. If you want to encrypt your backups, see the "Encrypting your System" section in this article.
 
     For advanced Linux users, if you create **tarballs** with `gzip` that will get backed up, use the ` --rsyncable` option, which enables Cloud Backup to use deduplication on those files as well.
 
@@ -103,7 +103,7 @@ From the **Actions** menu, select **Configure Backup**.
 
 4.  When you are satisfied with your settings, click **Next Step**.
 
-5.  Now, select the folders and files for the backup, along
+5.  Select the folders and files for the backup, along
     with any files you want to exclude. Then click **Next Step**.
 
 6.  Review your backup configuration settings. If the
@@ -116,7 +116,7 @@ You can change the files and folders that are saved in your backup.
 
 1. From the **Actions** menu, select **Configure Files**.
 
-2.  On the **Browse Files & Folders** tab, select the the folders and
+2.  On the **Browse Files & Folders** tab, select the folders and
     files by clicking the folder name to view which files are inside.
     Select the check boxes of the files and folders that you want to
     back up.
@@ -155,4 +155,4 @@ Confirm that you want to delete the backup.
 
 After a backup is deleted, it cannot be recovered.
 
-**Next step**: [Cloud Backup System actions](/how-to/rackspace-cloud-backup-system-actions)
+**Next step**: [Cloud Backup system actions](/how-to/rackspace-cloud-backup-system-actions)
