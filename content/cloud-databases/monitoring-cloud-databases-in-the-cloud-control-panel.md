@@ -31,7 +31,7 @@ instance are described in the following sections.
 
 The monitoring checks for a Cloud Databases instance appear in the **Monitoring Checks** section of the details page for that instance in the Cloud Control Panel.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmonitoringchecks.png %}" width="370" height="274" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmonitoringchecks.png %}" />
 
 Click the name of a check to view a graph of the check's results over
 time and any alarms that are configured for that check.
@@ -45,7 +45,7 @@ The graph for the CPU check displays how much of the CPU's available
 processing power the instance uses. It also displays the minimum, maximum,
 and average CPU usage for that period.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpugraph.png %}" width="571" height="231" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpugraph.png %}" width="600" />
 
 #### Filesystem check
 
@@ -55,7 +55,7 @@ that the instance uses, and the **Total** value represents the total disk
 space that is available to the instance. This value can change if the instance
 is resized.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbfilesystemgraph.png %}" width="561" height="229" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbfilesystemgraph.png %}" width="600" />
 
 #### Load Average check
 
@@ -64,7 +64,7 @@ average on a per-minute basis. Whereas the CPU usage graph displays
 moment-to-moment fluctuations in CPU use, the Load Average graph
 reflects overall CPU usage.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbloadgraph.png %}" width="567" height="221" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbloadgraph.png %}" width="600" />
 
 #### Local Disk check
 
@@ -74,7 +74,7 @@ if the instance participates in replication. The **Total** value represents the
 total disk space that is available to the instance. This value changes if the
 instance is resized.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/localdiskgraph.png %}" width="567" height="221" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/localdiskgraph.png %}" width="600" />
 
 #### Memory check
 
@@ -83,7 +83,7 @@ The **Total** value represents the total memory that is available to the
 instance, and the **Used** value represents the amount of memory that is in
 use.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmemorygraph.png %}" width="561" height="226" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbmemorygraph.png %}" width="600" />
 
 #### MySQL check
 
@@ -95,7 +95,7 @@ instance are available in the Cloud Control Panel under **Monitoring Alerts**.
 The graph for the Network check displays inbound and outbound network
 traffic in kilobytes per second.
 
-<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbnetworkgraph.png %}" width="473" height="185" />
+<img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbnetworkgraph.png %}" width="600" />
 
 ### Alarms
 
@@ -134,7 +134,7 @@ You can view and create alarms from the details page for a check.
     Alarms"](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref-info/alert-triggers-and-alarms)
     section of the Cloud Monitoring API documentation.
 
-    <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpualarm.png %}" width="407" height="546" />
+    <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpualarm.png %}" width="600" />
 
 #### Edit alarms
 
