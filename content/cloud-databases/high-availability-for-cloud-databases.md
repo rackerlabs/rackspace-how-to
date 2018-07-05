@@ -161,11 +161,10 @@ HA for Cloud Databases has the following limitations:
     all reads that require strong data consistency are made to the source
     instance (port 3306).
 -   Initial setup of the HA group might take anywhere between 5 and 10
-    minutes, depending on
-    the number of replicas. Because the initial setup requires creation of
-    multiple nodes, allow some time for the `status` property of the HA
-    instance to display as `ACTIVE` when you perform a `GET` call through the
-    API.
+    minutes, depending on the number of replicas. Because the initial setup
+    requires creation of multiple nodes, allow some time for the `status`
+    property of the HA instance to display as `ACTIVE` when you perform a
+    `GET` call through the API.
 -   The instance listing in the Cloud Control Panel shows the status
     of the HA group. To take action on the cluster or view
     cluster-level information, click the instance name to go to the **HA Group
