@@ -5,7 +5,7 @@ title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2018-07-04'
+last_modified_date: '2018-07-05'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
