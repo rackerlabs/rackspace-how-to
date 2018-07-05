@@ -1,11 +1,11 @@
 ---
 permalink: scheduled-backups-for-cloud-databases/
-audit_date: '2018-05-01'
+audit_date: '2018-07-05'
 title: Scheduled backups for Cloud Databases
 type: article
 created_date: '2015-11-02'
 created_by: Rackspace Support
-last_modified_date: '2018-05-01'
+last_modified_date: '2018-07-05'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -42,18 +42,18 @@ Scheduled backups provide the following features:
 - Automated backups for HA instance groups use the HA instance ID as a
   reference, and the backup process uses the most up-to-date slave node as a
   source.
-- You define the number of full automated backups to retain.
+- You define the number of full, automated backups to retain.
 - You can run the backup process immediately through the client or the API by
   setting the `run now` option.
 
 ### Pricing
 
 Scheduled backups are priced the same as on-demand backups. They are charged
-based on amount of storage used at the standard Cloud Files rates. For
-information on these rates, see the [Cloud Pricing
-page](https://www.rackspace.com/en-us/cloud/public-pricing#cloud-files).
+based on the amount of storage used at the standard Cloud Files rates. For
+information on these rates, see [Cloud
+Pricing](https://www.rackspace.com/en-us/cloud/public-pricing#cloud-files).
 Charges are incurred as long as the backups exist. Even if you delete the
-instance, you might still be charged for the backups if you don't delete them
+instance, you might be charged for the backups if you don't delete them
 individually.
 
 ### Scheduling backups by using the Control Panel
@@ -62,6 +62,8 @@ You can enable, modify, and delete scheduled backups by using the Cloud
 Control Panel.
 
 #### Create a backup schedule on an existing instance
+
+Use the following steps to create a backup schedule on an existing instance:
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -82,6 +84,8 @@ Control Panel.
 
 #### Create a backup schedule on a new instance
 
+Use the following steps to create a backup schedule on a new instance:
+
 **Note:** At this time, the ability to create a schedule during instance
 creation is only available on HA groups.
 
@@ -91,18 +95,20 @@ creation is only available on HA groups.
 
 3. Above the list of instances, select **Create High Availability Group**.
 
-4. Under **Settings**, ensure that the box next to "Protect your data with
-   Daily Scheduled Backups" is selected.
+4. Under **Settings**, ensure that the box next to **Protect your data with
+   Daily Scheduled Backups** is selected.
 
 5. Click **Specify Scheduled Backup Settings…** to specify the exact time for
    the daily backups, the day of the week for the weekly full backup, and the
    number of weekly full backups to retain. If any of those values are not
-   specified, they will be selected randomly. Then, click **Create Schedule**.
+   specified, they are selected randomly. Then, click **Create Schedule**.
 
 7. After you've selected all of the other settings for the HA group, click
    **Create HA Group**.
 
 #### View and modify a scheduled backup
+
+Use the following steps to view and modify a scheduled backup:
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -111,12 +117,14 @@ creation is only available on HA groups.
 3. Click the name of the instance for which you want to view or modify a
    backup schedule.
 
-   **Note:** On the instance details page, the schedule is displayed next to
+   **Note:** On the instance details page, the schedule appears next to
    **Scheduled Backups**.
 
 4. To edit the schedule, click the **Edit** link.
 
 #### Delete a scheduled backup
+
+Use the following steps to delete a scheduled backup:
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
@@ -132,7 +140,7 @@ creation is only available on HA groups.
 ### Scheduling backups by using the API
 
 You can enable, modify, and delete scheduled backups through the API by using
-the API operations described in the [Cloud Databases API
+the API operations that are described in the [Cloud Databases API
 Reference](https://developer.rackspace.com/docs/cloud-databases/v1/api-reference/automated-backups/).
 
 The following table provides a brief overview of the scheduled backup API
@@ -148,8 +156,6 @@ Delete scheduled backup |`DELETE`|`/{version}/{accountId}/schedules/{scheduleId}
 
 The following table lists the required and optional attributes for these
 operations:
-
-~~THIS TABLE IS OUT OF DATE!!! UPDATE IF WE'RE NOT DELETING IT~~~~~
 
 Attribute name | Description | Required?
 ----|----|----
@@ -172,11 +178,11 @@ incremental backups until the next full backup. If the `day_of_week`
 attribute is not provided, a random day of the week is
 assigned to the schedule.
 
-The hour and minute attributes specify the time when the backup job runs.
-If either of these values isn't specified, a random time is assigned to the
-schedule.
+The ``hour`` and ``minute`` attributes specify the time when the backup job
+runs. If either of these values isn't specified, a random time is assigned to
+the schedule.
 
-The time zone used by the schedule backup service is UTC.
+The time zone that the schedule backup service uses is UTC.
 
 Currently only one schedule can be active per instance. If an instance already
 has a schedule enabled, a subsequent API call to create a schedule for that
@@ -216,7 +222,8 @@ schedules for the master and slave nodes themselves are then deleted.
 Backups for Cloud Databases have the following limitations:
 
 - Backup schedules cannot be directly assigned to instances that are part of
-  an HA group. They must be applied to the HA group UUID instead.
+  an HA group. They must be applied to the universally unique identifier
+  (UUID) for the HA group instead.
 - Only one backup schedule is allowed per instance, replica set, or HA group.
 
 ### Related articles
