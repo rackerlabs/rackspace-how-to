@@ -67,7 +67,7 @@ HA setup.
 **Figure 1. Cloud Databases HA setup**
 <img src="{% asset_path cloud-databases/high-availability-for-cloud-databases/HighAvailabilityforCloudDatabases1b.png %}" width="600" />
 
-The MHA manager lives within the source HAProxy node and monitors the
+The MHA Manager lives within the source HAProxy node and monitors the
 source database instance. If the source database instance becomes
 unavailable, MHA initiates failover to the most up-to-date replica instance.
 All of the other replica instances automatically reattach themselves to the new
@@ -82,10 +82,10 @@ seconds.
 
 You can create new HA instance groups and convert from a replica set to an HA
 group by using the [Cloud Control
-Panel](/how-to/managing-cloud-databases-ha-groups-in-the-cloud-control-panel)
+Panel](/how-to/manage-cloud-databases-ha-groups-in-the-cloud-control-panel)
 and the API. For more information about HA-related API calls, see the [Cloud
-Databases developer
-guide](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#high-availability-instance-group).
+Databases Developer
+Guide](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#high-availability-instance-group).
 
 **Notes:**
 
@@ -94,7 +94,7 @@ Cloud Databases:
 
 -   By default, access to an HA instance through the VIP is blocked. To access
     an HA instance, you must explicitly add an access control list (ACL) that
-    specifies the IP addresses for which to grant access. You can set ACLs
+    specifies the IP addresses to which to grant access. You can set ACLs
     through the API or the Cloud Control Panel.
 -   The `networks` property that is associated with an HA instance provides
     the addresses and ports for accessing the HA instance. (You can obtain
@@ -118,7 +118,7 @@ Cloud Databases:
     the HA is in the `ADDING_REPLICA` state. It switches to the `ACTIVE` state
     after the node has been successfully added.
 
-**Warning:** Automatically adding a new replica restarts the MHA manager
+**Warning:** Automatically adding a new replica restarts the MHA Manager
 service and the HAproxy service on the load balancer nodes. Any API actions
 that are issued to the cluster during the replica add part of the process
 might not succeed.
