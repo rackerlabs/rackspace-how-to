@@ -1,6 +1,6 @@
 ---
 permalink: scheduled-backups-for-cloud-databases/
-audit_date: '2018-07-04'
+audit_date: '2018-07-05'
 title: Scheduled backups for Cloud Databases
 type: article
 created_date: '2015-11-02'
