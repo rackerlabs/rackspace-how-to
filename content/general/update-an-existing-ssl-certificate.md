@@ -5,8 +5,8 @@ title: Update an existing SSL certificate
 type: article
 created_date: '2011-08-16'
 created_by: Chris Farmer
-last_modified_date: '2018-05-09'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-07-05'
+last_modified_by: Nate Archer
 product: undefined
 product_url: undefined
 ---
@@ -14,7 +14,9 @@ product_url: undefined
 Updating your existing SSL certificate for a linux server is a quick process.
 Whether your SSL certificate is expiring or you simply need to
 change to a new SSL certificate, follow these instructions to
-get your SSL updated and installed quickly.
+get your SSL updated and installed quickly.  
+
+**This is a test of the PR system.**
 
 **Attention MyRack users:** To update the SSL certificates for your
 environment, follow the instructions in the [Reissuing your Rackspace SSL Certificates](https://community.rackspace.com/products/f/43/t/4478)
