@@ -5,7 +5,7 @@ title: Clear Credential Manager
 type: article
 created_date: '2017-12-18'
 created_by: William Loy
-last_modified_date: '2018-01-12'
+last_modified_date: '2018-07-06'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
@@ -27,7 +27,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 1. Make sure that Outlook is closed.
 
-2. Click the Start Menu (or press the Windows key), and then search for **Control Panel**.
+2. Click the Start Menu (or press the Windows key), and then search for **Credential Manager**.
 
   - **Windows 10:**
 
@@ -38,27 +38,25 @@ For more information about prerequisite terminology, see [Cloud Office support t
       <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
 
 
-3. Double-click **Credential Manager**.
-
-4. Click **Windows Credentials** after the window opens.
+3. Click on Credential Manager to open it. Then, click **Windows Credentials**.
 
   - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address.
 
   - For example: ```MicrosoftOutlook15:example@yourdomainexample.com```
     It may not be exactly as shown, but use it as a base guideline.
 
-5. Click the arrow next to the entry to display it.
+4. Click the arrow next to the entry to display it.
 
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
 
-6. On the detail page of the credential entry, click **remove** to remove the credential from the manager.
+5. On the detail page of the credential entry, click **remove** to remove the credential from the manager.
 
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
 
-7. Repeat this process for all credentials matching Outlook(15/16) and your email address. Only one to three entries should be available.
+6. Repeat this process for all credentials matching Outlook(15/16) and your email address. There may be anywhere from one to three entries listed.
 
-8. Close all windows, and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox, and check the box **Remember My Credentials**.
+7. Close all windows, and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox, and check the box **Remember My Credentials**.
 
-9. If this process is successful, your Inbox should display, and mail should start syncing.
+8. If this process is successful; your Inbox should display, and mail should start syncing.
 
 **Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that you are using the correct password.
