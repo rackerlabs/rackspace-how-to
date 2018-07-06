@@ -37,26 +37,37 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
       <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
 
+<ol start=3>
+  <li>Click on <b>Credential Manager</b> to open it, and then click <b>Windows Credentials</b>.</li>
+</ol>
 
-3. Click on Credential Manager to open it. Then, click **Windows Credentials**.
 
   - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address.
 
   - For example: ```MicrosoftOutlook15:example@yourdomainexample.com```
     It may not be exactly as shown, but use it as a base guideline.
 
-4. Click the arrow next to the entry to display it.
-
+<ol start=4>
+  <li>Click the arrow next to the entry to display it.</li>
+</ol>
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManager.png %}"/>
 
-5. On the detail page of the credential entry, click **remove** to remove the credential from the manager.
+<ol start=5>
+  <li>On the detail page of the credential entry, click **remove** to remove the credential from the manager.</li>
+</ol>
 
     <img src="{% asset_path exchange/clear-credential-manager/CredentialManagerDetail.png %}"/>
 
-6. Repeat this process for all credentials matching Outlook(15/16) and your email address. There may be anywhere from one to three entries listed.
+<ol start=6>
+  <li>Repeat this process for all credentials matching Outlook(15/16) and your email address. There may be anywhere from one to three entries listed.</li>
+</ol>
 
-7. Close all windows, and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox, and check the box **Remember My Credentials**.
+<ol start=7>
+  <li>Close all windows, and re-open Outlook. When Outlook prompts for your credentials, enter the full email address and password for the mailbox, and check the box **Remember My Credentials**.</li>
+</ol>
 
-8. If this process is successful; your Inbox should display, and mail should start syncing.
+<ol start=8>
+  <li>If this process is successful, your Inbox should display, and mail should start syncing.</li>
+</ol>
 
 **Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that you are using the correct password.
