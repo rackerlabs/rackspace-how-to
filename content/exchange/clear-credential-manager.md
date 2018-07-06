@@ -59,3 +59,4 @@ For more information about prerequisite terminology, see [Cloud Office support t
 8.  If this process is successful, your Inbox should display, and mail should start syncing.
 
 **Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that you are using the correct password.
+
