@@ -71,4 +71,3 @@ For more information about prerequisite terminology, see [Cloud Office support t
 </ol>
 
 **Note:** If this process fails, make sure you can log in to [apps.rackspace.com](https://apps.rackspace.com/index.php) to verify that you are using the correct password.
-
