@@ -29,23 +29,23 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 2. Click the Start Menu (or press the Windows key), and then search for **Credential Manager**.
 
-  - **Windows 10:**
+   - **Windows 10:**
 
-      <img src="{% asset_path exchange/clear-credential-manager/win10_start_menu.png %}"/>
+       <img src="{% asset_path exchange/clear-credential-manager/win10_start_menu.png %}"/>
 
-  - **Windows 7 (or earlier):**
+   - **Windows 7 (or earlier):**
 
-      <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
+       <img src="{% asset_path exchange/clear-credential-manager/win7_start_menu.png %}"/>
 
 <ol start=3>
   <li>Click on <b>Credential Manager</b> to open it, and then click <b>Windows Credentials</b>.</li>
 </ol>
 
 
-  - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address.
+   - Under the **Generic Credentials** heading, find the credentials that have Outlook(15/16) and your email address.
 
-  - For example: ```MicrosoftOutlook15:example@yourdomainexample.com```
-    It may not be exactly as shown, but use it as a base guideline.
+   - For example: ```MicrosoftOutlook15:example@yourdomainexample.com```
+     It may not be exactly as shown, but use it as a base guideline.
 
 <ol start=4>
   <li>Click the arrow next to the entry to display it.</li>
