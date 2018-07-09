@@ -11,46 +11,19 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Rackspace has implemented two new blocks of IPv4 addresses in our ServiceNet network. With this expansion, we can add over 1,000,000 new IP addresses to support customers' hosting. The total network range list is now 10.176.0.0/12; 10.208.0.0/12.
+Rackspace implemented two new blocks of IPv4 addresses in our ServiceNet network. With this expansion, we can add over 1,000,000 new IP addresses to support customers' hosting. The total network range list is now 10.176.0.0/12; 10.208.0.0/12 on June 3rd 2013.
 
-Any cloud servers built on or after June 3, 2013 automatically have the new IP address space and routes added, and they can communicate with other cloud servers built within the new network segments.
-
-If you use the ServiceNet IP address space for communications between your cloud servers, and you have servers (or saved images) that were created *before* June 3, 2013, you must add a new IP address route to your servers to ensure that they can communicate with cloud servers that reside in the new address range.
+If you use the ServiceNet IP address space for communications between your cloud servers, and you have servers (or saved images) that were created *before* June 3, 2013, you must add a new IP address route to your servers to ensure that they can communicate with cloud servers that reside in the new address range.  
 
 Additionally, if you have created cloud networks or used custom internal IP addressing that overlaps with the new subnets, you might need to modify your network configuration to ensure ongoing communication.
 
-**Note:** If you are a Managed Operations service level or RackConnect customer with automation enabled, you should have received a ticket and update about the changes. In many cases, your servers were updated automatically as part of your support agreement. If your servers were not updated automatically, you might need to update them by following the instructions or using the scripts in this article.
+At times, servers will be created or somehow modified so that the servicenet does not have the proper routes installed.  Information listed below will assist you in adding the required routes.
 
 ### Update your cloud servers to add new routes
 
 You can update your Linux or Windows servers by using a script or by using a manual process.
 
-**Note:** *(RackConnect Customers)* Although the scripts check the routing table on a server for possible conflicts before adding any new routes, they cannot detect conflicts that might exist on upstream RackConnect network devices. A separate scan was made of these network devices and notifications were sent to customers with potential conflicts. *If you received a ticket notifying you of a possible conflict on your RackConnect configuration, do not use these scripts until that conflict is resolved.* If you did not receive a ticket, no conflicts were detected on your RackConnect configuration.
-
 #### Add new routes on Linux by using the script
-
-The script has been tested on the following base images:
-
--   Arch Linux 2013.2
--   CentOS 5.6
--   CentOS 5.8
--   CentOS 5.9
--   CentOS 6.0
--   CentOS 6.2
--   CentOS 6.3
--   Debian 6.06 (Squeeze)
--   Fedora 17 (Beefy Miracle)
--   Fedora 18 (Spherical Cow)
--   Gentoo 13.1
--   openSUSE 12
--   Red Hat Enterprise Linux 5.5
--   Red Hat Enterprise Linux 5.8
--   Red Hat Enterprise Linux 6.1
--   Red Hat Enterprise Linux 6.3
--   Ubuntu 10.04 LTS (Lucid Lynx)
--   Ubuntu 12.04 LTS (Precise Pangolin)
--   Ubuntu 12.10 (Quantal Quetzal)
--   Ubuntu 13.04 (Raring Ringtail)
 
 1. Download the [Linux script](http://7c1f6a0506404b3af970-42fdda7fdbf4103081a78c20ac1c54cb.r51.cf1.rackcdn.com/add_2013_cloud_routes_v1.0.4.sh) onto the target server:
 
