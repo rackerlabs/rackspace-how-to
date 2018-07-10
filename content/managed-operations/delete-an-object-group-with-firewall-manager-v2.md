@@ -26,7 +26,7 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 - [View an object-group](/how-to/view-an-object-group-with-firewall-manager-v2)
 - [Create an object-group](/how-to/create-an-object-group-with-firewall-manager-v2)
 - [Modify an object-group](/how-to/modify-an-object-group-with-firewall-manager-v2)
-- [Delete an object-group](/how-to/delete-an-object-group-with-firewall-manager-v2)
+
 
 ### Delete an object-group
 
