@@ -70,7 +70,7 @@ KMS.
 
      <table>
      <tr>
-       <th>Data Center</th>
+       <th>Data center</th>
        <th>Command</th>
      </tr>
      <tr>
