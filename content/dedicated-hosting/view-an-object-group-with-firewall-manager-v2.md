@@ -25,7 +25,7 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 - [Modify an object-group](/how-to/modify-an-object-group-with-firewall-manager-v2)
 - [Delete an object-group](/how-to/delete-an-object-group-with-firewall-manager-v2)
 
-### View an object-groups
+### View object-groups
 
 1. Log in to the [MyRackspace customer portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
 
