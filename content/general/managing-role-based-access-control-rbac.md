@@ -5,7 +5,7 @@ title: Use Role Based Access Control (RBAC)
 type: article
 created_date: '2013-06-28'
 created_by: Renee Rendon
-last_modified_date: '2018-06-19'
+last_modified_date: '2018-06-20'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
@@ -14,9 +14,10 @@ product_url: undefined
 **Previous section:** [Learn about Role Based Access Control
 (RBAC)](/how-to/overview-role-based-access-control-rbac)
 
-The account owner implements Role Based Access Control (RBAC) by adding users
-to the account and assigning roles. This article is intended to guide account
-owners through this process by using the [Cloud Control
+The account owner and account administrator implement Role Based Access
+Control (RBAC) by adding users to the account and assigning roles. This
+article is intended for account owners and account administrators, and guides
+you through this process by using the [Cloud Control 
 Panel](https://mycloud.rackspace.com/).
 
 For information about setting up RBAC through the API, see the [Rackspace
@@ -43,12 +44,12 @@ can use the following text to notify your users:
    user, and you must update your credentials (password and secret question)
    as soon as possible. See *name* for your temporary access information.**
 
-### Create new users
+### Create a new user
 
 To create a new user, use the following steps:
 
 1. In the upper-right corner of the [Cloud Control
-Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
+   Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
 
 2. On the **User Management** page, click **Create User**.
 
@@ -70,19 +71,19 @@ Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
    **Answer**.
 
 6. In the **Rackspace Account Permissions** section, you can either assign the
-   user the **Account Administrator** role, or assign roles for the **Billing
-   and Payments** area and the **Support Tickets** area separately.
+   user an Account Administrator role, or assign roles for Billing and
+   Payments and Support Tickets on an individual basis.
 
-   To assign a user the account administrator role, click the toggle button
-   next to **Account Administrator**.
+   To assign a user an Account Administrator role, click the toggle button next
+   to **Account Administrator** to activate it.
 
    Alternatively, to assign different permissions for different areas, scroll
-   to the **Area** section and select the permission that you want to assign
-   from the drop-down menu to the right of each area.
+   to the **Area** section and select the permission you want to assign from
+   the drop-down menu to the right of each area.
 
 7. Optionally, in the **Product Permissions** section, assign product
-   permissions to the user. Click the tab for a product, and then
-   select from the permission options.
+   permissions to the user. Click the tab for the tab for a product, then
+   select from the permission choices.
 
    The **Rackspace Cloud** tab enables you to assign either global permissions
    for all Rackspace Cloud products, or per-product custom roles.
@@ -107,6 +108,7 @@ Panel](https://mycloud.rackspace.com/), click **Account > User Management.**
    product-level custom roles. For more information, see [Known issues and
    suggested workarounds for
    RBAC](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac).
+
 
 ### Suggested role configurations
 
