@@ -1,27 +1,27 @@
 ---
-permalink: updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013/
-audit_date: '2017-06-28'
-title: 'Update ServiceNet routes on cloud servers created before June 3, 2013'
+permalink: updating-servicenet-routes-on-cloud-servers/
+audit_date: '2018-07-11'
+title: 'Update ServiceNet routes on cloud servers'
 type: article
 created_date: '2013-05-28'
 created_by: Richard Goodwin
-last_modified_date: '2017-06-28'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-07-11'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Rackspace implemented two new blocks of IPv4 addresses in our ServiceNet network. With this expansion, we can add over 1,000,000 new IP addresses to support customers' hosting. The total network range list is now 10.176.0.0/12; 10.208.0.0/12 on June 3rd 2013.
+On June 3, 2013, Rackspace implemented two new blocks of IPv4 addresses in our ServiceNet network. With this expansion, we can add over 1,000,000 new IP addresses to support customers' hosting. The total network range list is ``10.176.0.0/12`` to ``10.208.0.0/12``.
 
-If you use the ServiceNet IP address space for communications between your cloud servers, and you have servers (or saved images) that were created *before* June 3, 2013, you must add a new IP address route to your servers to ensure that they can communicate with cloud servers that reside in the new address range.  
+If you use the ServiceNet IP address space for communications between your cloud servers, and you have servers (or saved images) that were created *before* June 3, 2013, you must add a new IP address route to your servers to ensure that they can communicate with cloud servers that reside in the preceding address range.  
 
 Additionally, if you have created cloud networks or used custom internal IP addressing that overlaps with the new subnets, you might need to modify your network configuration to ensure ongoing communication.
 
-At times, servers will be created or somehow modified so that the servicenet does not have the proper routes installed.  Information listed below will assist you in adding the required routes.
+At times, servers might be created or somehow modified so that the servicenet does not have the proper routes installed.  The following information can help you to add the required routes.
 
 ### Update your cloud servers to add new routes
 
-You can update your Linux or Windows servers by using a script or by using a manual process.
+Update your Linux or Windows servers by using a script or by using a manual process.
 
 #### Add new routes on Linux by using the script
 
