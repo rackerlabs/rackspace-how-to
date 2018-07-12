@@ -1,7 +1,7 @@
 ---
 permalink: view-an-object-group-with-firewall-manager-v2/
 audit_date:
-title: Firewall Manager v2 object-groups
+title: View an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
 created_by: Nate Archer
