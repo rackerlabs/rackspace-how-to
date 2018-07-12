@@ -1,7 +1,7 @@
 ---
 permalink: create-an-object-group-with-firewall-manager-v2/
 audit_date:
-title: Create an object-group with firewall-manager-v2
+title: Create an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
 created_by: Nate Archer
