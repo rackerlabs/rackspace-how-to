@@ -19,7 +19,7 @@ Firewall Manager v2 is a tool within the MyRackspace portal. To learn more about
 
 To learn more about the access-list process, see [Firewall Manager v2 access-list rules](/how-to/firewall-manager-v2-access-list-rules).
 
-### What is an access-lists?
+### What is an access-list?
 
 Access control lists (ACLs), or *access-lists*, enable Cisco firewalls to filter traffic. They provide environments with network access control (NAC) by filtering network traffic and controlling whether packets are forwarded or blocked at the firewall's interfaces. As an aspect of the deep-packet-inspection process, Cisco firewalls perform this access control lookup for each packet that attempts to traverse one of its interfaces.
 
