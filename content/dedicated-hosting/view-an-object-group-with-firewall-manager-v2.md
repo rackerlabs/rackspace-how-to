@@ -1,11 +1,11 @@
 ---
 permalink: view-an-object-group-with-firewall-manager-v2/
-audit_date:
+audit_date: '2018-07-12'
 title: View an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
 created_by: Nate Archer
-last_modified_date:
+last_modified_date: '2018-07-12'
 last_modified_by: Nate Archer
 product: Dedicated Hosting
 product_url: dedicated-hosting
