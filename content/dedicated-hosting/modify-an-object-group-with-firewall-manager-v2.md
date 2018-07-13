@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a tool within the MyRackspace portal. This article describes to modify object-groups, an easy to use feature that groups and sorts like items such as IP addresses, ports, or protocols.
+Firewall Manager v2 is a tool within the MyRackspace portal. This article describes how to modify object-groups, an easy to use feature that groups and sorts like items such as IP addresses, ports, or protocols.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
