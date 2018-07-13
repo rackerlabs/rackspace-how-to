@@ -1,9 +1,9 @@
 ---
 permalink: firewall-manager-v2-object-groups/
-audit_date: '2017-03-23'
+audit_date: '2018-07-12'
 title: Firewall Manager v2 object-groups
 type: article
-created_date: '2018-07-10'
+created_date: '2017-03-23'
 created_by: Trevor Becker
 last_modified_date: '2018-07-11'
 last_modified_by: Nate Archer
@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a tool within the MyRackspace portal. This article describes the object-group feature within this tool, an easy to use feature that groups and sorts like items such as IP addresses, ports, or protocols.
+Firewall Manager v2 is a tool within the MyRackspace portal. This article describes a feature within this tool-the object-group feature, an easy to use feature that groups and sorts like items such as Internet protocol (IP) addresses, ports, or protocols.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
@@ -26,9 +26,9 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 - [Modify an object-group](/how-to/modify-an-object-group-with-firewall-manager-v2)
 - [Delete an object-group](/how-to/delete-an-object-group-with-firewall-manager-v2)
 
-### Object-groups and access-lists
+### Object-groups and access-lists rules
 
-Object-groups are commonly used to make the configuration of a firewall's access list more easily readable and controlled, which assists in support and troubleshooting. Instead of creating individual access-list entries for each component of an object-group you can reference an object-group in an access-list entry. For example, if an object-group contains 100 IP hosts, you can create one access-list entry that performs a required action on all the hosts in the object-group, rather than creating 100 access-list entries in the running configuration that individually specifying each host.
+Object-groups are commonly used to make the configuration of a firewall's access list more easily readable and controlled, which assists in support and troubleshooting. Instead of creating individual access-list rules for each component of an object-group, you can reference an object-group in an access-list rule. For example, if an object-group contains 100 IP hosts, you can create one access-list rule that performs a required action on all the hosts in the object-group, rather than creating 100 access-list rule in the running configuration that individually specifies each host.
 
 ### Related articles
 
