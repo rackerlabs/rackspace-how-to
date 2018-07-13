@@ -21,7 +21,7 @@ Object-groups improve the organization and readability of a firewall's running c
 
 In Firewall Manager v2, object-groups are referred to as *IP groups*. You can view, create, modify, and delete any object-group on your firewall. For more information, see the following articles:
 
-- [Create an object-group](/how-to/create-an-object-group-with-firewall-manager-v2)
+- [Add an object-group](/how-to/add-an-object-group-with-firewall-manager-v2)
 - [Modify an object-group](/how-to/modify-an-object-group-with-firewall-manager-v2)
 - [Delete an object-group](/how-to/delete-an-object-group-with-firewall-manager-v2)
 
