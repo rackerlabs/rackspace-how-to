@@ -5,129 +5,55 @@ title: Firewall Manager v2 access-list rules
 type: article
 created_date: '2017-03-24'
 created_by: Trevor Becker
-last_modified_date: '2017-03-24'
-last_modified_by: Trevor Becker
+last_modified_date: '2018-07-12'
+last_modified_by: Nate Archer
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a new tool within the MyRackspace portal. This article describes the access-list rule feature within this tool.
+Firewall Manager v2 is a tool within the MyRackspace portal that allows you to manage your Cisco firewall. The security of your Rackspace environment begins at your Cisco firewall. Misconfigurations in network access policies on your firewall can lead to unwanted network exposure and potential compromise. 
+
+This article describes the access-list rule feature of Firewall Manager v2.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
-### Prerequisite
+### Why use access-lists?
 
-Before you use the access-list rules feature, read the [Firewall Manager v2 access-list theory and best practices](/how-to/firewall-manager-v2-access-list-theory-and-best-practices) article.
+Access control lists (ACLs), or *access-lists*, enable Cisco firewalls to filter traffic. The security of your Rackspace environment begins at your Cisco firewall. Misconfigurations in network access policies on your firewall can lead to unwanted network exposure and potential compromise.
 
-### View access-list rules
+The access-lists control the traffic that attempts to enter the internal networks from an external, unsecured network. If access-lists are not used, the Cisco firewall's default security policy of _security-levels_ is active, which does not provide the highest level of network security.
 
-1. Access Firewall Manager v2 by following the steps in the [Firewall Manager v2](/how-to/firewall-manager-v2) article.
+An access control entry (ACE) is an individual entry in an ACL. ACEs are referred to as _rules_ in Firewall Manager v2. The Cisco firewall allows you to configure only one access-list per interface per direction. This access-list can contain as many ACEs, or rules, as necessary.
 
-2. In the navigation pane on the left side of the panel, click the firewall for which you want to see access-list rules.
+For more information about how to view, modify, add, and delete access-lists, see the following articles:
 
-3. Under **Rules**, click **All Rules**.
+- [View an access-list](/how-to/view-an-access-list-with-firewall-manager-v2)
+- [Add and modify an access-list](/how-to/add-and-modify-an-access-list-with-firewall-manager-v2)
+- [Delete an access-list](/how-to/delete-an-access-list-with-firewall-manager-v2)
 
-    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-rules.png %}" />
+### Access-list best practices
 
-   The Rules page shows the rules for the access-list on the selected tab. To view the rules for a different access-list, click the its tab.
+To remain secure and follow compliance requirements, use the following best practices and recommendations:
 
-### Rackspace internal lines
+- Be as specific as possible when seeting up ACLs. Minimize the size of the source and destination traffic in your access-list rules when possible.
 
-For Rackspace to manage and monitor your environment properly, we must have some configurations in place on your Cisco firewall. These configurations contain sensitive Rackspace internal data, and the access-list rule that contains them has been hidden from your view in Firewall Manager v2. Because the hidden Rackspace line must remain at the top of your access-list to prevent issues. Firewall Manager v2 does not allow you to place custom rules above this line.
+- Do not define the destination as **any** (your entire Rackspace environment) when only one destination server needs to be accessed.
 
-Following is an example of how the hidden line is indicated in the access-list:
+- Do not allow traffic from any source to any destination of the IP, TCP, or UDP protocols. Allowing traffic to these destinations effectively turns your security platform into a router because it will not block any packets from reaching any destination in your environment over those protocols.
 
-<img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-redacted-line.png %}" />
+- Do not allow all traffic to a destination or group of destinations. (Do not use **permit ip any [host]** or **permit ip any [object-group]**).
 
-### Access-list rule features
+-  Do **not** open the following ports globally: **22 - SSH**, **1433 - Microsoft SQL**, **3306 - MySQL**, and **3389 - RDP**.
 
-The Firewall Manager v2 access-list rules feature has an export function. To use this function, click the **Export to .csv** button. You can download the .csv file or open it directly from the next screen prompt.
+### Related articles
 
-The Rules page also has a search function that filters the rules which modifies your display based on the values you enter.
+- [Firewall Manager v2 object-groups](/how-to/firewall-manager-v2-object-groups)
 
-### Modify rule execution order
+   - [View an object-group](/how-to/view-an-object-group-with-firewall-manager-v2)
+   - [Create an object-group](/how-to/create-an-object-group-with-firewall-manager-v2)
+   - [Modify an object-group](/how-to/modify-an-object-group-with-firewall-manager-v2)
+   - [Delete an object-group](/how-to/delete-an-object-group-with-firewall-manager-v2)
 
-Cisco firewalls execute access-list rules in order from first to last. If a customer request matches a rule, Cisco firewalls stop processing the request and performs the action.
-
-Firewall Manager v2 always adds new access-list rules to the end of the access-list, so sometimes you need to change the execution order of the rules. Use the following steps to change the order.
-
-**Warning:** Because of a Cisco limitation, when you change the execution order of a rule, the rule is temporarily removed and then re-added. Do not change the execution order of a rule unless a momentary change in access for that rule is acceptable.
-
-1. Navigate to the **All Rules** tab.
-
-2. Click the gear icon next to the line number of the rule that you want to move, and select **Change Order**.
-
-3. Section the **Change order** option.
-
-    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-line-number.png %}" />
-
-4. Specify the line number to move this entry to.
-
-   **Note:** Firewall Manager v2 does not allow you to place rules above the highest hidden Rackspace internal line.
-
-
-### Adding an access-list rule
-
-Before you add an access-list rule, be sure to read and understand all of the best practices documented in the  [Firewall Manager v2 theory and best practices](/how-to/firewall-manager-v2-access-list-theory-and-best-practices) article.
-
-1. Access Firewall Manager v2 by following the steps in the [Firewall Manager v2](/how-to/firewall-manager-v2) article.
-
-2. In the navigation pane on the left side of the panel, click the firewall for which you want to add an access-list rules.
-
-3. Under **Rules**, click **All Rules**.
-
-4. Click **Add Rule**.
-
-   A series of pages appear in which you define the rule.
-
-5. On the **Details** page, provide the following information and click **Next**:
-
-   - Rule List: Select the access-list to which you want to add the rule
-
-   - Name: Provide a descriptive name for the rule. This field is required. The name is stored in Firewall Manager v2 only and is used for your documentation and auditing purposes.
-
-   - Rule Type: Specify whether the rule allows (permits) traffic or blocks (denies) traffic.
-
-    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-details.png %}" />
-
-6. On the **Traffic coming from** page, select one of the following options for incoming traffic, provide the necessary information, and then click **Next**:
-
-      - A single IP: Enter a host IP address or search for a device number.
-
-      - A CIDR IP: Define a subnet range.
-
-      - A group of IPs: This is the recommended option. Select an existing object-group. If you need to create a new object-group first, see [Firewall Manager v2 object-groups](/how-to/firewall-manager-v2-object-groups).
-
-      - Any IP: This option defines the source as **any**. Before choosing this option, refer to the best practices section in the [Firewall Manager v2 access-list theory and best practices](/how-to/firewall-manager-v2-access-list-theory-and-best-practices) article.
-
-      <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-traffic-coming-from.png %}" />
-
-7. On the **Traffic going to**, select one of the options for outgoing traffic, provide the necessary information, and then click **Next**. The options are the same as those shown for incoming traffic.
-
-8. On the **Using protocol** page, select the protocol and the port option, and then click **Next**:
-
-   - For the protocol, select TCP, UDP, or IP. IP is the entire IP suite, which includes all TCP and UDP ports plus many more. Use caution when specifying the protocol.
-
-   -  The same options provided on preceding pages for IP addresses are provided here for ports. Use extreme caution if you select **any** for the port, which is typically not a good security decision.     
-
-    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-using-protocol.png %}" />
-
-9. Click **Add to Firewall**.
-
-    Firewall Manager v2 interacts with your firewall and adds the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
-
-    The new access-list rule is added to the end of the access-list. If you need to change the execution order of the rule, follow the steps in "Modify rule execution order."
-
-### Delete an access-list rule
-
-1. Access Firewall Manager v2 by following the steps in the [Firewall Manager v2](/how-to/firewall-manager-v2) article.
-
-2. In the navigation pane on the left side of the panel, click the firewall for which you want to delete an access-list rules.
-
-3. Navigate to the **All Rules** tab.
-
-4. Click the gear icon next to the line number of the rule that you want delete, and select **Delete**.
-
-    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-delete.png %}" />
-
-    Firewall Manager v2 interacts with your firewall and deletes the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.
+- [Firewall Manager v2 port-objects](/how-to/firewall-manager-v2-port-groups)
+- [Firewall Manager v2 change log](/how-to/firewall-manager-v2-change-log)
+- [Firewall Manager v2 access-list theory and best practices](/how-to/firewall-manager-v2-access-list-theory-and-best-practices)
