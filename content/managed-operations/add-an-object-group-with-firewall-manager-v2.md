@@ -43,15 +43,15 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 
 6. In the **Group Name** field, type the name of the object-group.
 
-    We recommend using a name that directly relates to the access that this object-group will grant. We also recommend using all uppercase letters with dashes separating word groups. For example, if an object-group will be used to give John Doe SSH access to the web servers over TCP port 22, you might name the object-group `JOHNDOE-WEBSRVS-22`.
+    We recommend using a name that directly relates to the access that this object-group will grant. We also recommend using all uppercase letters with dashes separating word groups. For example, if an object-group will be used to give John Doe SSH access to the web servers over Transmissiong Control Protocol (TCP) port 22, you might name the object-group `JOHNDOE-WEBSRVS-22`.
 
 7. To add IP hosts or subnet ranges to the group, click **Add IP(s)**.
 
 8. In the text field, type a single IP address or subnet, or enter a list of IP addresses or subnets, with each unique item on its own line.
 
-    If you need help creating a custom subnet range, click the CIDR link under the text field. The drop-down changes to an input range field. Define the IP range required and click **Convert IPs**. Firewall Manager v2 converts the IP range into the exact CIDR values required.
+    If you need help creating a custom subnet range, click the Classless Inter-Domain Routing (CIDR) link under the text field. The drop-down changes to an input range field. Define the IP range required and click **Convert IPs**. Firewall Manager v2 converts the IP range into the exact CIDR values required.
 
-    **Note:** Firewall Manager v2 permits only `/24` to `/32` subnet sizes. If you require a subnet size larger than `/24`, contact Support to manually add this value for you.
+    **Note:** Firewall Manager v2 permits only `/24` to `/32` subnet sizes. If you require a subnet size larger than `/24`, contact Rackspace Support to manually add this value for you.
 
 9. Click **Add IP**.
 
