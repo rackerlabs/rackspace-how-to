@@ -11,9 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a tool within the MyRackspace portal. This article describes to delete object-groups within this tool.
-
-Object-groups are an easy to use feature that groups and sorts like items such as IP addresses, ports, or protocols.
+Firewall Manager v2 is a tool within the MyRackspace portal. This article describes to delete object-groups, an easy to use feature that groups and sorts like items such as IP addresses, ports, or protocols.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
@@ -49,4 +47,4 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/delete-object-group.png %}" />
 
 A ticket is submitted on your behalf to manually remove the object-group and
-delete any configuration items that reference the group, such as access lists, VPN encryption domains, or even other object-groups. The ticket is automatically forwarded to the appropriate Network Security team, and a team member will perform quality checks and confirm with you directly if anything appears to be incorrect.
+delete any configuration items that reference the group, such as access lists, VPN encryption domains, or even other object-groups. The ticket is automatically forwarded to the appropriate Rackspace Network Security team, and a team member will perform quality checks and confirm with you directly if anything appears to be incorrect.
