@@ -87,7 +87,7 @@ technical guidance.
 
 #### What can I do with a cloud server?
 
-The Rackspace Cloud Servers soution is a fully unrestricted,
+The Rackspace Cloud Servers solution is a fully unrestricted,
 root/Administrator level access, Linux or Windows environment. Any
 application or service that you can run from a traditional, physical,
 dedicated-unmanaged operations server can be run from your cloud server.
@@ -239,7 +239,7 @@ images are stored in your Cloud Files account, which enables you to
 keep these images even after the server they were created on is
 deleted. It also gives you the flexibility to create an unlimited number of
 on-demand images of your server. All cloud server images can be used to create
-new cloud servers or to resore an existing cloud server.
+new cloud servers or to restore an existing cloud server.
 For details, see [Create an image of a server and restore a server from a saved image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 
 #### Do you offer on-demand images (snapshots) and scheduled images and what are the prices?
@@ -326,7 +326,7 @@ any associated DNS records to reflect the new IP address.
 
 #### How do I power on my server after shutting it down?
 
-Intructions are located in [Reboot your server](/how-to/reboot-your-server)
+Instructions are located in [Reboot your server](/how-to/reboot-your-server)
 
 #### Which distributions do you offer?
 
@@ -477,7 +477,7 @@ Rackspace support to enable this feature.
 
 Prior to this feature being available, customers had to manage traffic
 to and from their instances individually via, for example, iptables rules on
-every instance (or perhaps use third-party tools), incurring signifcant management
+every instance (or perhaps use third-party tools), incurring significant management
 overhead. Security groups make it possible to use a self-service API to define a
 common set of rules and apply them to the neutron ports (Public/ServiceNet) on cloud
 servers without needing to configure iptables rules on each server, thereby simplifying
@@ -547,7 +547,7 @@ deleted. It is not possible to recover a server that has been deleted.
 #### Where are your APIs?
 
 The documentation for the API for Cloud Servers and our other products is
-loacated on the [Rackspace Developer Docs site](https://developer.rackspace.com/docs/).
+located on the [Rackspace Developer Docs site](https://developer.rackspace.com/docs/).
 
 Before you can start using our APIs, you will need your API Key. You can
 obtain your API key by following the instructions in
