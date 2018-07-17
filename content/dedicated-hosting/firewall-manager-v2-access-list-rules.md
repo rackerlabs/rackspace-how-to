@@ -1,6 +1,6 @@
 ---
 permalink: firewall-manager-v2-access-list-rules/
-audit_date: '2017-03-28'
+audit_date: '2018-07-17'
 title: Firewall Manager v2 access-list rules
 type: article
 created_date: '2017-03-24'
@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a tool within the MyRackspace portal that allows you to manage your Cisco firewall. The security of your Rackspace environment begins at your Cisco firewall. Misconfigurations in network access policies on your firewall can lead to unwanted network exposure and potential compromise. 
+Firewall Manager v2 is a tool within the MyRackspace portal that allows you to manage your Cisco firewall. 
 
 This article describes the access-list rule feature of Firewall Manager v2.
 
@@ -35,15 +35,15 @@ For more information about how to view, modify, add, and delete access-lists, se
 
 To remain secure and follow compliance requirements, use the following best practices and recommendations:
 
-- Be as specific as possible when seeting up ACLs. Minimize the size of the source and destination traffic in your access-list rules when possible.
+- Be as specific as possible when setting up ACLs. Minimize the size of the source and destination traffic in your access-list rules when possible.
 
 - Do not define the destination as **any** (your entire Rackspace environment) when only one destination server needs to be accessed.
 
 - Do not allow traffic from any source to any destination of the IP, TCP, or UDP protocols. Allowing traffic to these destinations effectively turns your security platform into a router because it will not block any packets from reaching any destination in your environment over those protocols.
 
-- Do not allow all traffic to a destination or group of destinations. (Do not use **permit ip any [host]** or **permit ip any [object-group]**).
+- Do *not* allow all traffic to a destination or group of destinations. (Do not use **permit ip any [host]** or **permit ip any [object-group]**).
 
--  Do **not** open the following ports globally: **22 - SSH**, **1433 - Microsoft SQL**, **3306 - MySQL**, and **3389 - RDP**.
+-  Do *not* open the following ports globally: **22 - SSH**, **1433 - Microsoft SQL**, **3306 - MySQL**, and **3389 - RDP**.
 
 ### Related articles
 
