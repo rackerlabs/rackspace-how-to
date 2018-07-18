@@ -1,11 +1,11 @@
 ---
 permalink: delete-an-access-list-rule-with-firewall-manager-v2/
-audit_date: '2018-07-17'
+audit_date: '2018-07-18'
 title: Delete an access-list with Firewall Manager v2
 type: article
 created_date: '2017-03-24'
 created_by: Trevor Becker
-last_modified_date: '2018-07-17'
+last_modified_date: '2018-07-18'
 last_modified_by: Nate Archer
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -13,7 +13,7 @@ product_url: dedicated-hosting
 
 Firewall Manager v2 is a tool within the MyRackspace portal that allows you to manage your Cisco firewall.
 
-This article describes how to delete an access-list rule using Firewall Manager v2.
+This article describes how to delete an access-list rule by using Firewall Manager v2.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
@@ -25,7 +25,7 @@ The access-lists control the traffic that attempts to enter the internal network
 
 An access control entry (ACE) is an individual entry in an ACL. ACEs are referred to as _rules_ in Firewall Manager v2. The Cisco firewall allows you to configure only one access-list per interface per direction. This access-list can contain as many ACEs, or rules, as necessary.
 
-For more information about how to view, modify, or delete access-lists, see the following articles:
+For more information about how to view, add, or modify access-lists, see the following articles:
 
 - [View an access-list rule](/how-to/view-an-access-list-rules-with-firewall-manager-v2)
 - [Add an access-list rule](/how-to/add-an-access-list-rule-with-firewall-manager-v2)
@@ -42,7 +42,7 @@ For more information about how to view, modify, or delete access-lists, see the 
 
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-rules.png %}" />
 
-4. In the navigation pane on the left side of the panel, click the firewall for which you want to delete an access-list rules.
+4. In the navigation pane on the left side of the panel, click the firewall for which you want to delete an access-list rule.
 
 5. Navigate to the **All Rules** tab.
 
