@@ -27,10 +27,10 @@ An access control entry (ACE) is an individual entry in an ACL. ACEs are referre
 
 For more information about how to view, modify, add, and delete access-lists, see the following articles:
 
-- [View an access-list rule](/how-to/view-an-access-list-rules-with-firewall-manager-v2)
-- [Add an access-list-rule](/how-to/add-an-access-list-rule-with-firewall-manager-v2)
+- [View an access-list rules](/how-to/view-an-access-list-rules-with-firewall-manager-v2)
+- [Add an access-list rule](/how-to/add-an-access-list-rule-with-firewall-manager-v2)
 - [Modify an access-list's execution order](/how-to/modify-an-access-lists-execution-order-with-firewall-manager-v2)
-- [Delete an access-list](/how-to/delete-an-access-list-with-firewall-manager-v2)
+- [Delete an access-list rule](/how-to/delete-an-access-list-rule-with-firewall-manager-v2)
 
 ### Access-list best practices
 
