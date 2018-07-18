@@ -1,11 +1,11 @@
 ---
 permalink: view-an-access-list-rules-with-firewall-manager-v2/
-audit_date: '2017-03-28'
+audit_date: '2018-07-18'
 title: View access list rules with Firewall Manager v2
 type: article
 created_date: '2017-03-24'
 created_by: Nate Archer
-last_modified_date: '2018-07-12'
+last_modified_date: '2018-07-18'
 last_modified_by: Nate Archer
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -13,7 +13,7 @@ product_url: dedicated-hosting
 
 Firewall Manager v2 is a tool within the MyRackspace portal that allows you to manage your Cisco firewall.
 
-This article describes how to view access-list rules using Firewall Manager v2
+This article describes how to view access-list rules by using Firewall Manager v2.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
