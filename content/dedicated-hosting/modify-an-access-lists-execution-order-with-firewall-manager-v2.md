@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Cisco firewalls execute access-list rules in order from first to last. If a customer request matches a rule, Cisco firewalls stop processing the request and performs the action.
+Cisco firewalls execute access-list rules in order from first to last. If a customer request matches a rule, Cisco firewalls stop processing the request and perform the action.
 
 Firewall Manager v2 always adds new access-list rules to the end of the access-list, so sometimes you need to change the execution order of the rules. This article describes more details about the execution of an access-list's rule order and how to modify that order.
 
@@ -23,11 +23,11 @@ The access-lists control the traffic that attempts to enter the internal network
 
 An access control entry (ACE) is an individual entry in an ACL. ACEs are referred to as _rules_ in Firewall Manager v2. The Cisco firewall allows you to configure only one access-list per interface per direction. This access-list can contain as many ACEs, or rules, as necessary.
 
-For more information about how to view, modify, add, and delete access-lists, see the following articles:
+For more information about how to view, add, and delete access-lists, see the following articles:
 
 - [View an access-list rule](/how-to/view-an-access-list-rules-with-firewall-manager-v2)
-- [Add an access-list rule](/how-to/add-an-access-list-with-firewall-manager-v2)
-- [Delete an access-list rule](/how-to/delete-an-access-list-with-firewall-manager-v2)
+- [Add an access-list rule](/how-to/add-an-access-list-rule-with-firewall-manager-v2)
+- [Delete an access-list rule](/how-to/delete-an-access-list-rule-with-firewall-manager-v2)
 
 ### Rule order and execution
 
@@ -49,15 +49,15 @@ Cisco firewalls also use a fail-close approach that means that there is an impli
 
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-rules.png %}" />
 
-4. In the navigation pane on the left side of the panel, click the firewall for which you want to modify an access-list's rules execution order.
+4. In the navigation pane on the left side of the panel, click the firewall for which you want to modify the execution order of the access-list's rules.
 
 5. Click the gear icon next to the line number of the rule that you want to move, and select **Change Order**.
 
-6. Section the **Change order** option.
+6. Select the **Change order** option.
 
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-access-list-rules/image-line-number.png %}" />
 
-7. Specify the line number to move this entry to.
+7. Specify the line number to which to move this entry to.
 
    **Note:** Firewall Manager v2 does not allow you to place rules above the highest hidden Rackspace internal line.
 
