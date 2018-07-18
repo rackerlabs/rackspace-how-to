@@ -13,7 +13,7 @@ product_url: dedicated-hosting
 
 Cisco firewalls execute access-list rules in order from first to last. If a customer request matches a rule, Cisco firewalls stop processing the request and perform the action.
 
-Firewall Manager v2 always adds new access-list rules to the end of the access-list, so sometimes you need to change the execution order of the rules. This article describes more details about the execution of an access-list's rule order and how to modify that order.
+Firewall Manager v2 always adds new access-list rules to the end of the access-list, so sometimes you need to change the execution order of the rules. This article provides more details about the execution of an access-list's rule order and how to modify that order.
 
 ### Why use access-lists?
 
