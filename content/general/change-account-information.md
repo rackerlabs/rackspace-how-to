@@ -15,7 +15,7 @@ This article describes the various administrative account changes that you can r
 
 ### Dedicated customers
 
-Dedicated customers can download the **Primary Contact Change** form in the [MyRackspace Control Panel](https://my.rackspace.com). For instructions on how to find the form, see the **Dedicated customers** section of [Change to a new primary contact](/how-to/change-to-a-new-primary-contact).
+Dedicated customers can download the **Primary Contact Change** form in the [MyRackspace Control Panel](https://my.rackspace.com). For instructions on how to find the form, see the **Dedicated customers** section of [Change to a new primary contact](/how-to/change-to-new-primary-contact).
 
 If you are the current primary contact for your account, you can update the primary contact information by selecting and editing the **Primary Contact Information** in your **Account Settings**.
 
