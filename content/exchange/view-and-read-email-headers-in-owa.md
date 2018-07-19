@@ -3,9 +3,9 @@ permalink: view-and-read-email-headers-in-owa/
 audit_date:
 title: View and read email headers in Outlook Web App
 type: article
-created_date: '2017-12-21'
+created_date: '2018-07-19'
 created_by: William Loy
-last_modified_date: '2017-12-21'
+last_modified_date: '2018-07-19'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
