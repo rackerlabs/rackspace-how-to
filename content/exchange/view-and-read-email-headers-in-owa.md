@@ -36,7 +36,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 4. The **Full Header** box displays with the full contents of the message header.
 
-    <img src="{% asset_path rackspace-email/view-and-read-email-headers-in-owa/header_window.png %}" />
+    <img src="{% asset_path exchange/view-and-read-email-headers-in-owa/header_window.png %}" />
 
     **Note:** If the message details box is blank, click **Close** and repeat steps 2-4. The messages details should populate.
 
