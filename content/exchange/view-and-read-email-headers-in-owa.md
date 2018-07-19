@@ -24,7 +24,7 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 ### View headers in the Outlook Web App
 
-1. Log in to your mailbox at [apps.rackspace.com](apps.rackspace.com).
+1. Log in to your mailbox at [apps.rackspace.com](https://apps.rackspace.com).
 
 2. Select the message for which you want to view the headers.
 
