@@ -7,8 +7,6 @@ created_date: '2015-10-14'
 created_by: Constanze Kratel
 last_modified_date: '2016-06-06'
 last_modified_by: Stephanie Fillmon
-product: Rackspace Intelligence
-product_url: rackspace-intelligence
 ---
 
 Rackspace Intelligence offers a variety of reporting options. Use the

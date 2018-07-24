@@ -50,12 +50,6 @@ As a customer with a dedicated account:
 -   [Log
     in](/how-to/log-in-to-rackspace-intelligence-for-dedicated-accounts)
 
-**To view and create graphs of activity in Rackspace Intelligence**
-
--   [Work with activity graphs in Rackspace Intelligence for
-    dedicated
-    accounts](/how-to/viewing-and-creating-graphs-of-activity-in-rackspace-intelligence-for-dedicated-accounts)
-
 **To learn more about your alarms, checks, notifications, and
 notificaton plans**
 
