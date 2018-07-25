@@ -11,9 +11,9 @@ product: undefined
 product_url: undefined
 ---
 
-Updating your existing SSL certificate for a Linux server is a quick process.
-Whether your SSL certificate is expiring or you simply need to
-change to a new SSL certificate, follow these instructions to
+Updating your existing Secure Sockets Layer(SSL) certificate for a Linux&reg;
+server is a quick process. Whether your SSL certificate is expiring or you
+simply need to change to a new SSL certificate, follow these instructions to
 get your SSL updated and installed quickly.
 
 **Attention MyRack users:** To update the SSL certificates for your
@@ -45,7 +45,7 @@ need the following details:
 -   **SSL type**: For example, OpenSSL (some vendors label this modSSL).
 -   **CSR**
 
-Once you have completed your certificate renewal, you're ready to install the
+After you have completed your certificate renewal, you're ready to install the
 new certificate.
 
 ### Install the certificate
@@ -54,25 +54,25 @@ In order to install your new SSL certificate, you need the following information
 
 -  Certificate
 -  Private key
--  Intermediate certificate (Typically supplied in a separate file from the vendor)
+-  Intermediate certificate (typically supplied in a separate file from the vendor)
 
 To install the certificate, follow these steps:
 
-1. Copy your renewed certificate, intermediate certificate bundle and key file
+1. Copy your renewed certificate, intermediate certificate bundle, and key file
    into the directory that you use to hold your certificates.
 
-2. Open your webiste configuration file, such as `httpd.conf` for Apache, and
-   add or update the following directives:
+2. Open your website configuration file, such as **httpd.conf** for Apache&reg;,
+   and add or update the following directives:
 
-   - SSLCertificateFile: /path to your issued certificate
-   - SSLCertificateKeyFile: /path to your key file
-   - SSLCertificateChainFile: /path to your intermediate certificate
+   - ``SSLCertificateFile``: /path to your issued certificate
+   - ``SSLCertificateKeyFile``: /path to your key file
+   - ``SSLCertificateChainFile``: /path to your intermediate certificate
 
 3. Reload or restart your webserver application, such as Apache.
 
-### DNS Update
+### DNS update
 
-Because you are just updating an existing SSL certificate, you don't need
+Because you are updating an existing SSL certificate, you don't need
 to wait for propagation as you would when installing a new SSL certificate.
 
 **NOTE**: Removing the SSL certificate from your site changes its IP address,

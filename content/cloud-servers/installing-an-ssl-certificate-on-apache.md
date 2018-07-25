@@ -12,28 +12,29 @@ product_url: cloud-servers
 ---
 
 This article is a continuation of [Generate a CSR](/how-to/generate-a-csr-with-openssl/) and
-takes you from creating and receiving your SSL certificate (cert) from your
-authority of choice to installing it in Apache. We use Apache for this article
-because it is the most common web server on Linux and the Internet. The majority
-of this documentation was pulled from
-[RapidSSL.com](<http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm>),
-which is a great place to buy a certificate.
+takes you from creating and receiving your Secure Socket Layer(SSL) certificate
+(cert) from your authority of choice to installing it in Apache&reg;. We use
+Apache for this article because it is the most common web server on Linux&reg;
+and the Internet. The majority of this information was pulled from
+[RapidSSL.com](<http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm>).
 
 ### Prerequisites
 
 Before installing your certificate, make sure you have the following items:
 
-- Apache and mod_ssl should be installed.
-- You also need to have an IP address for your SSL cert and a unique IP
-address for each SSL that you want to host. Certificate authorities and browsers
-require that all SSL certs be on their own IP address.
+- Apache and ``mod_ssl`` should be installed.
+- You also need to have an Internat Protocol (IP) address for your SSL cert and
+a unique IP address for each SSL that you want to host. Certificate authorities
+and browsers require that all SSL certs be on their own IP address.
 
 ### Installing your SSL certificate
 
-#### Copy the files in into the default locale
+Use the following steps in this section to install your SSL certificate.
+
+#### Copy the files into the default locale
 
 When you receive your SSL certificate from your authority, upload it to
-your server.
+your server by using the following steps.
 
 1. Copy all the contents of the certificate, including the `BEGIN CERTIFICATE`
 and `END CERTIFICATE` lines. Save the copied text as `domain.com.crt`.
@@ -44,8 +45,8 @@ which you plan to store your certs (by default:
 
 #### Edit the httpd.conf file
 
-Open the Apache httpd.conf file in a text editor, and add the following lines
-for the VirtualHost:
+Open the Apache **httpd.conf** file in a text editor, and add the following
+lines for the ``VirtualHost``:
 
     <VirtualHost 123.45.67.89:443>
     ServerName www.domain.com
@@ -66,7 +67,7 @@ Save the changes and exit the editor.
 
 ### iptables
 
-You may need to open a port in your firewall to allow SSL connections to
+You might need to open a port in your firewall to allow SSL connections to
 port ``443``.  To verify, get a list of your firewall rules:
 
     sudo /sbin/iptables -L
@@ -85,7 +86,7 @@ on Red Hat-based distributions:
 ### Verify configuration syntax
 
 Run the following command to verify the configuration file syntax, ensuring that
-you have no spelling errors and haven't added the wrong filenames.
+you have no spelling errors and haven't added the wrong filenames:
 
     # httpd -t
 
@@ -97,7 +98,7 @@ the command returns the incorrect lines.
 When you are making changes to Apache, you have two different options for your
 changes to work: to restart the service or to reload the service. A restart
 should be necessary only if you are adding or removing modules (such as
-the SSL_Module). Because restarting a service takes some time to come back up,
+the ``sslL_module``). Because restarting a service takes some time to come back up,
 we generally recommend that you use the reload option.
 
 #### Reload Apache
@@ -127,9 +128,9 @@ To restart your Apache web server, run the following command:
 ### Test the certificate
 
 Test your certificate by using a browser to connect to your server. Use
-the https protocol directive (e.g. https://yourserver/) to indicate you
-wish to use secure HTTP.
+the Hypertext Transfer Protocol Secure (HTTPS) protocol directive (e.g.
+https://yourserver/) to indicate that you want to use secure HTTP.
 
-**Note**: The padlock icon on your browser will be displayed in the locked
+**Note**: The padlock icon on your browser is displayed in the locked
 position if your certificates are installed correctly and the server is
 properly configured for SSL.
