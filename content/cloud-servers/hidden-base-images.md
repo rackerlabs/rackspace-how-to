@@ -1,12 +1,12 @@
 ---
 permalink: hidden-base-images/
-audit_date: '2017-12-19'
+audit_date: '2018-07-25'
 title: Hidden base images
 type: article
 created_date: '2013-11-04'
 created_by: Amanda Clark
-last_modified_date: '2017-05-18'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-07-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
