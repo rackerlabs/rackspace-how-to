@@ -82,12 +82,23 @@ on Red Hat-based distributions:
 
     sudo /sbin/service iptables save
 
+### Verify configuration syntax
+
+Run the following command to verify the configuration file syntax, ensuring that
+you have no spelling errors and haven't added the wrong filenames.
+
+    # httpd -t
+
+If the file is good, the command returns ``Syntax OK``. If there are errors,
+the command returns the incorrect lines.
+
 ### Reload or restart Apache
 
-To activate the the cert, you'll need to either reload or restart Apache.
-Because reloading Apache when disrupt any active sites, reloading is the
-preferred choice, especially if you have several active sites. Restarting takes
-all the sites down, while a reload just updates the configuration content.
+When you are making changes to Apache, you have two different options for your
+changes to work: to restart the service or to reload the service. A restart
+should be necessary only if you are adding or removing modules (such as
+the SSL_Module). Because restarting a service takes some time to come back up,
+we generally recommend that you use the reload option.
 
 #### Reload Apache
 
