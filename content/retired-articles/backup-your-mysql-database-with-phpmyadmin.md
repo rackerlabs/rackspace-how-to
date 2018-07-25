@@ -7,8 +7,6 @@ created_date: '2011-03-16'
 created_by: Rackspace Support
 last_modified_date: '2016-06-14'
 last_modified_by: Kyle Laffoon
-product: Cloud Databases
-product_url: cloud-databases
 ---
 
 ### Backing Up Your MySQL Database
