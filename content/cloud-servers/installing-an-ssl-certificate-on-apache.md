@@ -1,64 +1,65 @@
 ---
 permalink: installing-an-ssl-certificate-on-apache/
-audit_date:
+audit_date: '2018-07-18'
 title: Install an SSL certificate on Apache
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-10-19'
-last_modified_by: zeta0134
+last_modified_date: '2018-07-18'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article is a continuation of [Generate a CSR](/how-to/generate-a-csr-with-openssl/) and
-will take you from creating and receiving your SSL cert from your
-authority of choice to installing it in apache. I've chosen to Apache
-since it is the most common web server on Linux and the Internet. Again,
-I'm pulling the majority of this documentation from RapidSSL.com which
-is a great place to buy a certificate if you haven't already chosen:
-
-<http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm>
+This article describes how to install an SSL certificate on your Apache server. There are many SSL vendors that you can choose from. Where you buy your SSL certificate is up to you.
 
 ### Prerequisites
 
-Keep in mind besides having apache and mod_ssl installed, you will need
+Before you can install an SSL certificate, you must create a certificate signing request (CSR) on the server. See [Generate a CSR](/how-to/generate-a-csr-with-openssl/) for instructions.
+
+You must also have apache and mod_ssl installed, and you will need
 to have an IP address for this SSL cert and a unique IP address for each
 SSL that you want to host. Certificate authorities and browsers require
 that all SSL certs be on their own IP address.
 
 ### Installing your SSL Certificate
 
-#### Copy the files in into the default locale
+To install your SSL certificate, you must copy the certificate files to your server and edit the Apache configuration file to add the locations of the SSL files.
 
-When you receive your SSL certificate from your authority, upload it to
-your server.
+#### Copy the files to your server
 
-1. Copy all the contents of the certificate, including the `BEGIN CERTIFICATE` and `END CERTIFICATE` lines. Save the copied text as `domain.com.crt`.
+A vendor-provided SSL certificate contains three components: the SSL certificate, the certificate authority (CA) file, and the SSL key. We recommend that you name the files as **year-domain**, such as **2018-example.com**, and store them in the following locations on your server:
 
-2. Copy the certificate and private key into the Apache server directory in which you plan to store your certificates (by default:
-`/usr/local/apache/conf/ssl.crt/` or `/etc/httpd/conf/ssl.crt/`).
+| Path on server | Item | Description |
+| --- | --- | --- |
+| **/etc/ssl/certs/2018-example.com.crt** | SSL certificate | SSL certificates are small data files that digitally bind a cryptographic key to an organization's details. When installed on a web server, it activates the padlock and the **https** protocol and allows secure connections from a web server to a browser. |
+| **etc/ssl/certs/2018-example.com-CABundle.crt** | CA file | A certificate authority (CA) is a trusted entity that issues electronic documents that verify a digital entity's identity on the Internet. |
+| **/etc/ssl/private/2018-example.com.key** | SSL key | The private SSL key is a text file used initially to generate a CSR and later to secure and verify connections using the certificate created per that request. The private key is used to create a digital signature. Be sure to keep this key private and secure. |
 
-#### Edit the httpd.conf
+**Note:** Be sure to differentiate between the SSL certificate and the CA file when choosing a name as they are both **.crt** files.
 
-Open the Apache httpd.conf file in a text editor, and create the following
-Virtual Host:
+#### Edit the Apache configuration file
+
+Apache's main configuration file is typically named **httpd.conf** or **apache2.conf**. You can usually find this file in either **/etc/httpd** or **/etc/apache2/**.
+
+Open the Apache configuration file in a text editor, and create the following Virtual Host:
 
     <VirtualHost 123.45.67.89:443>
-    ServerName www.domain.com
-    DocumentRoot /path/to/your/document/root/htdocs
+    ServerName example.com
+    DocumentRoot /var/www/vhosts/example.com/httpdocs
 
     SSLEngine ON
-    SSLCertificateFile /etc/httpd/conf/ssl.crt/domain.com.crt
-    SSLCertificateKeyFile /etc/httpd/conf/ssl.key/domain.com.key
+    SSLCertificateFile /etc/ssl/certs/2018-example.com.crt
+    SSLCACertificateFile /etc/ssl/certs/example.com-CABundle.crt
+    SSLCertificateKeyFile /etc/ssl/private/2018-example.com.key
 
-    ErrorLog logs/ssl.domain.com.error_log
-    CustomLog logs/ssl.domain.com.access_log combined
+    ErrorLog logs/example.com-error_log
+    CustomLog logs/example.com-access_log common
     </VirtualHost>
 
-**Note**: Keep in mind that the paths to the certificate files will need to be changed to where ever you choose to place your certificate.
+**Note:** Be sure to use the name of your certificate files in place of the example name.
 
-Save the changes and exit the editor.
+Save and close the file when you are finished.
 
 ### iptables
 
