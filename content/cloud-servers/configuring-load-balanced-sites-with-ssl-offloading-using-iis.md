@@ -1,46 +1,49 @@
 ---
 permalink: configuring-load-balanced-sites-with-ssl-offloading-using-iis/
-audit_date:
-title: Configure Load Balanced Sites with SSL offloading using IIS
+audit_date: '2018-07-30'
+title: Configure load balanced sites with SSL offloading using IIS
 type: article
 created_date: '2012-12-03'
 created_by: Rae D. Cabello
-last_modified_date: '2016-06-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-07-30'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The following article will demonstrate how to Configure Load Balanced
-Sites with SSL offloading using IIS.
+This article demonstrates how to configure load balanced
+sites with SSL offloading by using Internet Information Services (IIS).
 
 ### Create a web server to use a template
 
-Create a web server and set up your Site in IIS. Test the Site to
+Create a web server, set up your site in IIS, and test the site to
 make sure it is functioning correctly.
 
-### Create a Load Balancer
+### Create a load balancer
 
-1. Make sure to use protocol / port HTTP:80
+1. In the Rackspace Cloud Portal, click the **Servers** tab, and then click 
+**Create Resources** -> **Load Balancers**.
 
-2. Click the edit button next to Secure Traffic (SSL). Make sure you are
-allowing secure and insecure traffic and using the default HTTPS port 443. Then fill in the
-certificate information:
+2. Enter a **Name** and a **Region**, and make sure to use **Protocol/Port** ``HTTP:80``
 
-### Create a Conditional Redirect
+3. After it builds, click **Actions** -> **Edit Protocol/Port** to set Secure Sockets Layer (SSL) traffic. Make sure to allow 
+both secure and insecure traffic and to use the default Hyper Text Transfer Protocol 
+Secure (HTTPS) port ``443``. Click **Save Protocol/Port**.
 
-1. IIS 7 does not support conditional redirects out of the box. You will
-need to install an extension to handle this. URL Rewrite is a good tool
-provided by Microsoft for accomplishing this. You can download this
-[here](http://www.iis.net/downloads/microsoft/url-rewrite).
+4. In the **Optional Features** section, click the Edit pencil to the right of the ``Secure Traffic (SSL)`` option. In the pop-up dialog box, enter and save your SSL configuration.
 
-2. Rackspace Cloud Load Balancers pass a header value to determine the
-original protocol used by the request (HTTP / HTTPS). This header is
-labeled X_FORWARDED_PROTO. Its value will either be **http** or **https**.
+### Create a conditional redirect
 
-3. You can set up Conditional Redirect by Site, or for the IIS instance.
-For this example, we are going to use rewrite on the Site level. Insert
-the following XML into your **web.config** file in the system.webServer
+1. IIS version 7 does not support conditional redirects by default. To handle this, 
+install an extension, such as Microsoft&reg; [URL Rewrite](http://www.iis.net/downloads/microsoft/url-rewrite).
+
+2. The Rackspace Cloud Load Balancers service passes a header value to determine the
+original protocol used by the request (HTTP or HTTPS). This header is
+labeled ``X_FORWARDED_PROTO``. Its value will either be **http** or **https**.
+
+3. You can set up conditional redirect either by site or for the IIS instance.
+In the following example, we use rewrite on the site level. Insert
+the following XML into your **web.config** file in the ``system.webServer``
 section:
 
         <rewrite>
@@ -56,30 +59,30 @@ section:
             </globalRules>
         </rewrite>
 
-4. In addition to adding this rule, you will need to add a binding to
-the site for port 8080. This will allow for monitoring services to test
-this server directly without binding a certificate to the Site.
+4. In addition to adding this rule, you need to add a binding to
+the site for port ``8080``. This allows monitoring services to test
+this server directly without binding a certificate to the site.
 
 5. Open a Firewall port for direct testing. Depending on your security
-concerns, you can open port 8080 to all IP addresses, or just to a range
-used by your pollers. Opening this port will allow the Site to be loaded
-without encryption from a remote IP address.
+concerns, you can open port ``8080`` to all Internet Protocol (IP) addresses, 
+or to a range of IPs used by your pollers. Opening this port allows the site to 
+load without encryption from a remote IP address.
 
 ### Create a Monitoring Check
 
-1. On the Rackspace Cloud Portal, open the server you want to create the
-monitor for.
+1. In the Rackspace Cloud Portal **Servers** tab, click the server for which you want to create the
+monitor.
 
-2. In the section "Monitoring Checks" click **Create Check**.
+2. In the "Monitoring Checks"section, click **Create Check**.
 
-3. Change the Check Type to **HTTP Check (Website)**.
+3. Change the ``Check Type`` to **HTTP Check (Website)**.
 
-4. Give the Check a meaningful name.
+4. In ``Check Name``, enter a meaningful name.
 
-5. Use the IP address of the server as the URL, designating port 8080.
-You will find the IP address in the "Networks" section above. If you are
-hosting multiple sites on the server, you will need to give the server
-its own DNS name (i.e. **web1.customerdomain.com**). Use this domain name
-instead of the IP address and make sure to designate port 8080.
+5. Enter the IP address of the server in ``URL``, designating port ``8080``.
+The IP address is listed in the **Networks** section. If you are
+hosting multiple sites on the server, you need to give the server
+its own DNS name (for examplre, **web1.customerdomain.com**). Use this domain name
+instead of the IP address and make sure to designate port ``8080``.
 
 6. Click **Create Check** to confirm your entries.
