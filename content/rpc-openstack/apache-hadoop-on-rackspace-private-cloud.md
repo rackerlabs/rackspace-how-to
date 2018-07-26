@@ -172,47 +172,26 @@ Cloud ready, you can provision Hadoop in the cluster.
 
 There several ways to install Hadoop, but most of them are geared
 to installing in a dedicated environment. You can try using 
-of the existing options like Apache Whirr and Ambari or manually install
-the RPMs. We chose to write our own Chef Cookbooks and a Knife plugin
+of the existing options like Ambari or manually install
+the RPMs. We chose to write our own Saltstack deployment
 for OpenStack to make Hadoop installation easier for public or private
 clouds powered by OpenStack and even bare metal. To use the cookbooks and plugin, 
 see the following installation and user documentation. 
 
--   [hdp-cookbooks](https://github.com/rackerlabs/hdp-cookbooks)
--   [knife-alamo](https://github.com/rackerlabs/knife-alamo)
+-   [hdp-heat-template](https://github.com/rcbops/RPC-Heat-HDP)
+-   [HDP setup](https://github.com/rcbops/hadoop-formula)
 
 
-### Using the knife plugin to manage nodes and clusters
+### Using Heat to manage nodes and clusters
 
-After you install the Chef cookbooks on a chef-server, users can run the 
-knife-alamo plugin from a workstation to interact with the
-private cloud and to create both master and data Hadoop nodes. 
+OpenStack Heat is an orchestration engine that will launch instances, connect
+them to networks, and kick off Saltstack for software install and config. You can
+launch a config with the following command:
 
-#### Create master and data Hadoop nodes
-
-From the work station, complete the following set up procedure:
-
-
-1\. To create a Hadoop NameNode, run the following command:
-
-       $ knife alamo server create --name hadoopmaster --image fc63cb81-aca2-47dd-896b-a7a2bf4a041a --flavor 1 --chefenv hdp
-
-2\. To create a Hadoop DataNode, run the following command:
-
-       $ knife alamo server create --name hadoopworker8 --image 51f0b7ff-0326-4092-8568-30699e34da87 --flavor 2 --chefenv hdp --runlist 'recipe[chef-client],role[hadoop-worker]'
-
-The create datanode command, performs the following operations:
-
-- Spins up an instance of flavor size 2 
-- Installs the chef-client.
-- Adds the role of Hadoop-worker to the chef-client.
-
-
-#### Run the chef-client
-
-To run the chef-client on demand for the instance, run the following command:
-
-       $ knife alamo server chefclient 51f0b7ff-0326-4092-8568-30699e34da87
+```heat stack-create hadoop-stack -f hadoop-stack.yaml \
+  -e env.yaml -P flavor=m1.large;floating-network-id=<NET_ID>; \
+  datanodes-count=<COUNT>;keyname=<KEYNAME>;image=<IMAGE_ID>
+  ```
 
 #### Run a map-reduce job
 
@@ -223,16 +202,6 @@ Login to your master node and launch a job:
 
 Job progress can be tracked by using the JobTracker's web UI at
 http://master\_node:50030/
-
-#### Delete a node
-
-After you finish using a cluster, run the delete command to remove each 
-of the instance on the cluster. 
-
-    $ knife alamo server delete 51f0b7ff-0326-4092-8568-30699e34da87
-
-After resources are released, they can be instantly provisioned for other
-purposes.
 
 ### Conclusion
 
