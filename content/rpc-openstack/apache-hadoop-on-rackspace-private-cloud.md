@@ -56,9 +56,9 @@ cloud deployment in the world.
 
 Born out of the large Internet properties such as Yahoo, Hadoop is an
 open-source project that provides a platform to store and process
-massive amounts of data, including both structured and complex data and unstructured
+massive amounts of data, including both structured, complex data and unstructured
 data. A set of Apache projects such as Hive, Pig, HBase,
-HCatalog and Ambari have grown up around Hadoop to provide tools to
+HCatalog, and Ambari have grown up around Hadoop to provide tools to
 manipulate data and to manage and monitor this complex, clustered
 environment. As it has grown and added key enterprise features, its
 popularity has exploded because of its open source nature and the
@@ -120,8 +120,8 @@ additional benefits:
 -   Multi-purpose cloud infrastructure that you can use for
     Hadoop and for other services like hosting your web application or
     databases within the same environment.
--   Shrink and expand cluster on demand, by adding or removing nodes from a
-    cluster or by resizing Virtual Machines(VM).
+-   Shrink and expand clusters on demand, by adding or removing nodes from a
+    cluster or by resizing Virtual Machines (VM).
 -   Ability to clone a VM and boot new VMs off of snapshots.
 -   OpenStack provides persistent local disks for Hadoop to use as
     its permanent storage.
@@ -169,8 +169,8 @@ see the following installation and user documentation.
 ### Using Heat to manage nodes and clusters
 
 OpenStack Heat is an orchestration engine that launches instances, connects
-them to networks, and kicks off Saltstack for software install and config. You can
-launch a configuration with the following command:
+them to networks, and kicks off Saltstack for software installation and 
+configuration. You can launch a configuration with the following command:
 
 ```heat stack-create hadoop-stack -f hadoop-stack.yaml \
   -e env.yaml -P flavor=m1.large;floating-network-id=<NET_ID>; \
@@ -184,7 +184,7 @@ Log in to your master node and launch a job by using the following instructions:
     $ cd /usr/lib/hadoop
     $ hadoop jar hadoop-*-examples.jar pi 10 1000000
 
-Track job progress by using the JobTracker's web UI at http://master\_node:50030/
+Track job progress by using the JobTracker's web UI at http://master\_node:50030/.
 
 ### Conclusion
 
