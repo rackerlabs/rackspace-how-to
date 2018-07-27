@@ -1,6 +1,6 @@
 ---
 permalink: apache-hadoop-on-rackspace-private-cloud/
-audit_date: `2018-07-27'
+audit_date: '2018-07-27'
 title: Using Apache Hadoop on Rackspace Private Cloud
 type: article
 created_date: '2013-01-24'
