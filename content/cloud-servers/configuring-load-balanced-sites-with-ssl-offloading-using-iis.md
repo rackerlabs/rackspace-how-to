@@ -24,7 +24,11 @@ make sure it is functioning correctly.
 1. In the Rackspace Cloud Portal, click the **Servers** tab, and then click 
 **Create Resources** -> **Load Balancers**.
 
-2. Enter a **Name** and a **Region**, and make sure to use **Protocol/Port** ``HTTP:80``
+2. In the **Identification** section, enter a **Name** and a **Region**. 
+
+3. In the **Configuration** section, make sure to use **Protocol/Port** ``HTTP:80``
+
+4. Optionally, in the **Add node** section, click **Add Cloud Servers** and choose which servers to load balance or, if you prefer, click **Add External Node** and fill in the details.  You can also add nodes after the load balancers is built.
 
 3. After it builds, click **Actions** -> **Edit Protocol/Port** to set Secure Sockets Layer (SSL) traffic. Make sure to allow 
 both secure and insecure traffic and to use the default Hyper Text Transfer Protocol 
