@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article describes how to install an SSL certificate on your Apache server. There are many SSL vendors that you can choose from. Where you buy your SSL certificate is up to you.
+This article describes how to install an Secure Socket Layer (SSL) certificate on your Apache server. There are many SSL vendors that you can choose from. Where you buy your SSL certificate is up to you.
 
 ### Prerequisites
 
