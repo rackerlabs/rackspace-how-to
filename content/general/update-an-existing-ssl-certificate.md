@@ -1,11 +1,11 @@
 ---
 permalink: update-an-existing-ssl-certificate/
-audit_date: '2018-07-27'
+audit_date: '2018-07-31'
 title: Update an existing SSL certificate
 type: article
 created_date: '2011-08-16'
 created_by: Chris Farmer
-last_modified_date: '2018-07-27'
+last_modified_date: '2018-07-31'
 last_modified_by: Cat Lookabaugh
 product: undefined
 product_url: undefined
@@ -31,12 +31,7 @@ through a ticket, live chat, or a phone call, and we can help you.
 ### Renew your certificate
 
 Next, you need to update or renew your SSL certificate. SSL
-certificates are available from a number of third party sources. Some
-recommended sellers include the following:
-
--  [RapidSSL](http://www.rapidssl.com)
--  [Geotrust](http://www.geotrust.com)
--  [Verisign](http://www.verisign.com)
+certificates are available from a number of third party sources. 
 
 Follow your vendor's SSL certificate renewal process. You might
 need the following details:
