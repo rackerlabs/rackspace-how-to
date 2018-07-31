@@ -1,39 +1,35 @@
 ---
 permalink: installing-an-ssl-certificate-on-apache/
-audit_date: '2018-07-27'
+audit_date: '2018-07-31'
 title: Install an SSL certificate on Apache
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-07-27'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-07-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article is a continuation of [Generate a CSR](/how-to/generate-a-csr-with-openssl/) and
-takes you from creating and receiving your Secure Socket Layer(SSL) certificate
-(cert) from your authority of choice to installing it in Apache&reg;. We use
-Apache for this article because it is the most common web server on Linux&reg;
-and the Internet. The majority of this information was pulled from
-[RapidSSL.com](<http://www.rapidssl.com/ssl-certificate-support/install-ssl-certificate/apache_2x.htm>).
+This article describes how to install an SSL certificate on your Apache server. There are many SSL vendors that you can choose from. Where you buy your SSL certificate is up to you.
 
 ### Prerequisites
 
 Before installing your certificate, make sure you have the following items:
 
+- A certificate signing request (CSR) should be installed on the server. See [Generate a CSR](/how-to/generate-a-csr-with-openssl/) for instructions.
 - Apache and ``mod_ssl`` should be installed.
-- You also need to have an Internat Protocol (IP) address for your SSL cert and
+- You also need to have an Internet Protocol (IP) address for your SSL cert and
 a unique IP address for each SSL that you want to host. Certificate authorities
 and browsers require that all SSL certs be on their own IP address.
 
-### Installing your SSL certificate
+### Installing your SSL Certificate
 
-Use the following steps in this section to install your SSL certificate.
+To install your SSL certificate, you must copy the certificate files to your server and edit the Apache configuration file to add the locations of the SSL files.
 
 #### Copy the files into the default locale
 
-When you receive your SSL certificate from your authority, upload it to
+A vendor-provided SSL certificate contains three components: the SSL certificate, the certificate authority (CA) file, and the SSL key. When you receive your SSL certificate from your authority, upload it to
 your server by using the following steps.
 
 1. Copy all the contents of the certificate, including the `BEGIN CERTIFICATE`
