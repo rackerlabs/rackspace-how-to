@@ -31,18 +31,18 @@ A group list is a great way to manage users in a select team or group on your do
 
 3. On the Group Lists page, click **Add Group List**.
 
-    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/group_lists_CP1.png %}" />
+    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/add_group_list.png %}" />
 
 4. Enter in an email address for your group list, enter a subject tag, and select a list type. You can choose to send replies to the sender only or send replies to the entire group list.
 
-    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/group_lists_CP1.png %}" />
+    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/example_list.png %}" />
 
 5. Select the recipients to include in the group list. You can add recipients outside your domain.
 
-    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/group_lists_CP1.png %}" />
+    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/recipients.png %}" />
 
 6. Select who will be authorized to send email to this group list.
 
-    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/group_list_details.png %}" />
+    <img src="{% asset_path rackspace-email/adding-a-rackspace-email-group-list/authsenders.png %}" />
 
 7. Click **Save**.
