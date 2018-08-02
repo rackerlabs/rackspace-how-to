@@ -22,7 +22,7 @@ with Managed Operations support.
 ### Operating systems
 
 The Managed Operations spheres of support include the following
-operating systems for Windows cloud servers:
+operating system for Windows cloud servers:
 
 - [Windows Server 2008 with Service Pack
  R2](http://technet.microsoft.com/library/dd349801)
