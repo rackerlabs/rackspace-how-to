@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article provides a script to make web servers more secure. Run the following script for Ubuntu cloud servers to provide more security than the default configuration. While this script helps protect your server, it can't prevent an attack. Ensure that you are writing secure application code.
+This articles provides a script to make web servers more secure. Run the following script for Ubuntu cloud servers to provide more security than the default configuration. While this script helps protect your server, it can't prevent an attack. Ensure that you are writing secure application code.
 
 **Note:** To run the following script, log in as root using a key pair. Otherwise, you might be locked out of your virtual machine (VM). For information on how to generate public and private key pairs, see [Manage SSH Keypairs for Cloud Servers with-python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
