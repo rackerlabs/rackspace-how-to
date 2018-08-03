@@ -64,14 +64,14 @@ The following types of web servers are supported in the indicated areas:
 
 ### Remote Desktop Services
 
-| Feature / Operation             | Installation | Configuration | Troubleshooting |
+| Feature/Operation             | Installation | Configuration | Troubleshooting |
 |---------------------------------|--------------|---------------|-----------------|
 | Remote Desktop Licensing Server | Yes          | Yes           | Yes             |
 | Remote Desktop Session Host     | Yes          | Yes           | Yes             |
 
 
 
-### Miscellaneous Roles and Features
+### Miscellaneous roles and features
 
 | Feature/Operation             | Installation | Configuration | Troubleshooting |
 |---------------------------------|--------------|---------------|-----------------|
@@ -84,7 +84,7 @@ The following types of web servers are supported in the indicated areas:
 
 
 
-### Additional Products and Services
+### Additional products and services
 
 | Feature/Operation                             | Installation | Configuration | Troubleshooting |
 |-------------------------------------------------|--------------|---------------|-----------------|
@@ -106,9 +106,9 @@ The following types of web servers are supported in the indicated areas:
 
 The following types of database servers are supported in the indicated areas:
 
-## Rackspace Supported OS and MSSQL Combinations
+## Rackspace supported OS and MSSQL combinations
 
-| SQL Version   | Windows 2008 32 bit | Windows 2008 64 bit | Windows 2012 64 bit | Windows 2012 R2 64 bit | Windows 2016 |
+| MSSQL version | Windows 2008 32 bit | Windows 2008 64 bit | Windows 2012 64 bit | Windows 2012 R2 64 bit | Windows 2016 |
 |---------------|---------------------|---------------------|---------------------|------------------------|--------------|
 | MSSQL 2008    | Yes                 | Yes                 |                     |                        |              |
 | MSSQL 2008 R2 | Yes                 | Yes                 |                     |                        |              |
@@ -117,13 +117,13 @@ The following types of database servers are supported in the indicated areas:
 | MSSQL 2016    |                     |                     |                     | Yes                    | Yes          |
 
 
-## Supported Platforms for Microsoft SQL Editions
+## Supported Platforms for Microsoft SQL editions
 
-| SQL Edition | Licensing | Installation | Troubleshooting | Managed backup |
-|-------------|-----------|--------------|-----------------|----------------|
-| Web         | Yes       | Yes          | Yes             | Yes            |
-| Standard    | Yes       | Yes          | Yes             | Yes            |
-| Enterprise  | Yes       | Yes          | Yes             | Yes            |
+| MSSQL edition | Licensing | Installation | Troubleshooting | Managed backup |
+|---------------|-----------|--------------|-----------------|----------------|
+| Web           | Yes       | Yes          | Yes             | Yes            |
+| Standard      | Yes       | Yes          | Yes             | Yes            |
+| Enterprise    | Yes       | Yes          | Yes             | Yes            |
 
 **Note**: Customers using an MSDN license for Microsoft SQL are free to install and run this edition of SQL. But Rackspace cannot provide a MSDN license, install MSDN software, monitor MSDN applications, or back up the MSDN applications up using Rackspace Managed Backup for MSSQL offering. Also note, the use production data in an instance licensed via MSDN is strictly prohibited.				
 
