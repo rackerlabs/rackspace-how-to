@@ -26,6 +26,7 @@ Yes
 Yes
 Yes
 Yes
+Yes
 **Answer options**
 - Yes 
 - Somewhat
@@ -43,6 +44,7 @@ Often
 Often
 Somewhat Often
 Often
+Often
 **Answer options**
 - Often
 - Somewhat often
@@ -53,6 +55,7 @@ Yes
 Yes
 Yes
 Yes, if they have a need to edit the How-To
+Yes
 Yes
 Yes
 Yes
@@ -70,6 +73,7 @@ No
 Yes (potentially, it'd depend on how much I'd actually get out of it)
 Yes
 No
+Yes
 Yes
 Yes
 **Answer options**
