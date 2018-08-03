@@ -11,11 +11,11 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-This article outlines Rackspace **Fanatical Support®** for software and server configurations for virtual and physical machines that run a supported Microsoft Windows® operating system. The article presents a high-level overview of Rackspace offerings. Contact the Rackspace sales department or your account representative for more information regarding the components of specific Windows roles and features that are supported in Rackspace offerings.
+This article outlines Rackspace **Fanatical Support®** for software and server configurations for virtual and physical machines that run a supported Microsoft Windows® operating system. The article presents a high-level overview of Rackspace offerings. Contact Rackspace Sales or your account representative for more information regarding the components of specific Windows roles and features that are supported in Rackspace offerings.
 
 
 
-### Operating System
+### Operating system
 
 The following operating systems are supported for both Dedicated and Managed Clouds:
 
@@ -31,9 +31,9 @@ The following operating systems are supported for both Dedicated and Managed Clo
 
 
 
-### Web servers (IIS)
+### Web servers
 
-The following types of web servers are supported in the indicated areas:
+The following types of web servers (IIS) are supported in the indicated areas:
 
 |                | Installation | Configuration | Troubleshooting |
 |----------------|--------------|---------------|-----------------|
@@ -106,7 +106,7 @@ The following types of web servers are supported in the indicated areas:
 
 The following types of database servers are supported in the indicated areas:
 
-## Rackspace supported OS and MSSQL combinations
+## Supported OS and MSSQL combinations
 
 | MSSQL version | Windows 2008 32 bit | Windows 2008 64 bit | Windows 2012 64 bit | Windows 2012 R2 64 bit | Windows 2016 |
 |---------------|---------------------|---------------------|---------------------|------------------------|--------------|
@@ -132,8 +132,8 @@ The following types of database servers are supported in the indicated areas:
 
 | Licensing                    | Managed Colo | Managed | Intensive | Managed Operations (Cloud) | Navigator (AWS) | Aviator (AWS) | Navigator (Azure) | Navigator (Azure) |
 |------------------------------|--------------|---------|-----------|----------------------------|-----------------|---------------|-------------------|-------------------|
-| Rackspace owned licenses     | Yes*         | Yes     | Yes       | Yes                        |                 |               |                   |                   |
-| Customer provided licenses   | Yes          | Yes     | Yes       |                            | Yes             | Yes           | Yes               | Yes               |
+| Rackspace-owned licenses     | Yes*         | Yes     | Yes       | Yes                        |                 |               |                   |                   |
+| Customer-provided licenses   | Yes          | Yes     | Yes       |                            | Yes             | Yes           | Yes               | Yes               |
 | AWS image library licenses   |              |         |           |                            | Yes             | Yes           |                   |                   |
 | AWS RDS                      |              |         |           |                            | Yes             | Yes           |                   |                   |
 | Azure image library licenses |              |         |           |                            |                 |               | Yes               | Yes               |
@@ -146,17 +146,15 @@ The following types of database servers are supported in the indicated areas:
 
 | Support                      | Managed Colo | Managed | Intensive | Managed Operations (Cloud) | Navigator (FAWS) | Aviator (FAWS) | Navigator (Azure) | Navigator (Azure) |
 |------------------------------|--------------|---------|-----------|----------------------------|------------------|----------------|-------------------|-------------------|
-| Rackspace owned licenses     | *            | Yes**   | Yes**     | Yes                        |                  |                |                   |                   |
-| Customer provided licenses   | *            | Yes**   | Yes**     |                            |                  | Yes            |                   | Yes               |
+| Rackspace-owned licenses     | *            | Yes**   | Yes**     | Yes                        |                  |                |                   |                   |
+| Customer-provided licenses   | *            | Yes**   | Yes**     |                            |                  | Yes            |                   | Yes               |
 | AWS image library licenses   |              |         |           |                            | Yes*             | Yes            |                   |                   |
 | AWS RDS                      |              |         |           |                            | Yes*             | Yes            |                   |                   |
 | Azure image library licenses |              |         |           |                            |                  |                | Yes*              | Yes               |
 | Azure SQL Database           |              |         |           |                            |                  |                | Yes*              | Yes               |
 
-**Note**: * Support is available with DBAssist Hourly Services only.
-**Note**: ** Not supported on Unmanaged VMs except for DBAssist Hourly Services.
-
-
+* Support is available with DBAssist Hourly Services only.
+** Not supported on Unmanaged VMs except for DBAssist Hourly Services.
 
 ### Other services and technologies
 
@@ -173,8 +171,8 @@ Although we don't support all technologies, we do offer *reasonable endeavor* su
 
 You should not rely solely on this document to decide whether to purchase the service. Rackspace detailed services descriptions and legal commitments are stated in its services agreements. Rackspace services’ features and benefits depend on system configuration and may require enabled hardware, software, or additional services activation.
 
-Except as set forth in Rackspace general terms and conditions, cloud terms of services and/or other agreements you sign with Rackspace, Rackspace assumes no liability whatsoever, and disclaims any express or implied warranty, relating to its services including, but not limited to, the implied warranty of merchantability, fitness for a particular purpose, and no infringement.
+Except as set forth in Rackspace general terms and conditions, cloud terms of services, and/or other agreements you sign with Rackspace, Rackspace assumes no liability whatsoever, and disclaims any express or implied warranty, relating to its services including, but not limited to, the implied warranty of merchantability, fitness for a particular purpose, and no infringement.
 
 Although part of the document explains how Rackspace services may work with third-party products, the information contained in the document is not designed to work with all scenarios. Any use or changes to third-party products and/or configurations should be made at the discretion of your administrators and are subject to the applicable terms and conditions of such third party. Rackspace does not provide technical support for third-party products, other than specified in your hosting services or other agreement you have with Rackspace, and Rackspace accepts no responsibility for third-party products.
 
-Rackspace cannot guarantee the accuracy of any information presented after the date of publication. Copyright &copy; 2016 Rackspace &#124; Rackspace&reg;, **Fanatical Support**&reg; and other Rackspace marks are either registered service marks or service marks of Rackspace US, Inc. in the United States and other countries. All other trademarks, service marks, images, products, and brands remain the sole property of their respective holders and do not imply endorsement or sponsorship.
+Rackspace cannot guarantee the accuracy of any information presented after the date of publication. Copyright &copy; 2016 Rackspace &#124; Rackspace&reg;, **Fanatical Support**&reg;, and other Rackspace marks are either registered service marks or service marks of Rackspace US, Inc. in the United States and other countries. All other trademarks, service marks, images, products, and brands remain the sole property of their respective holders and do not imply endorsement or sponsorship.
