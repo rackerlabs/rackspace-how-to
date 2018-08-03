@@ -11,11 +11,11 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-This article outlines our **Fanatical Support** of software and server configurations for machines (virtual and physical) running a supported Windows operating system and represents a high level overview for offerings found in Rackspace. Please contact Rackspace sales or your account representative for more information regarding the components of specific Windows Roles and Features supported in Rackspace offerings.
+This article outlines our **Fanatical Support®** of software and server configurations for machines (virtual and physical) running a supported Microsoft Windows® operating system and represents a high level overview for offerings found in Rackspace. Contact Rackspace sales or your account representative for more information regarding the components of specific Windows roles and features supported in Rackspace offerings.
 
 
 
-### Operating Systems
+### Operating System
 
 The following operating systems are supported for both Dedicated and Managed Clouds:
 
@@ -25,9 +25,9 @@ The following operating systems are supported for both Dedicated and Managed Clo
 | Windows Server 2008 R2 | Yes       |                         |                        | Yes                |                   |                      |
 | Windows Server 2012    | Yes       |                         |                        |                    |                   |                      |
 | Windows Server 2012 R2 | Yes       | Yes                     | Yes                    | Yes                | Yes               | Yes                  |
-| Windows Server 2016    | Yes       | Yes                     | Yes                    | Yes                | Yes               | Yes                  |
+| Windows Server 2016    | Yes       | Yes                     |                        | Yes                | Yes               | Yes                  |
 
-*Note**: Rackspace makes every effort to align our support dates for operating systems with the manufacturer's support dates. If a manufacturer decides to shorten the support life of an operating system, Rackspace might be forced to end support sooner than originally anticipated. For full details on support life, see the [Rackspace EOL Terms](https://www.rackspace.com/information/legal/eolterms).
+**Note**: Rackspace makes every effort to align our support dates for operating systems with the manufacturer's support dates. If a manufacturer decides to shorten the support life of an operating system, Rackspace might be forced to end support sooner than originally anticipated. For full details on support life, see the [Rackspace EOL Terms](https://www.rackspace.com/information/legal/eolterms).
 
 
 
@@ -55,7 +55,7 @@ The following types of web servers are supported in the indicated areas:
 
 ### Active Directory
 
-| Feature / Operation | Installation | Configuration | Troubleshooting |
+| Feature/Operation | Installation | Configuration | Troubleshooting |
 |---------------------|--------------|---------------|-----------------|
 | Domain Services     | Yes          | Yes           | Yes             |
 | DNS                 | Yes          | Yes           | Yes             |
@@ -73,7 +73,7 @@ The following types of web servers are supported in the indicated areas:
 
 ### Miscellaneous Roles and Features
 
-| Feature / Operation             | Installation | Configuration | Troubleshooting |
+| Feature/Operation             | Installation | Configuration | Troubleshooting |
 |---------------------------------|--------------|---------------|-----------------|
 | ODBC                            | Yes          | Yes           | Yes             |
 | Failover Clustering             | Yes          | Yes           | Yes             |
@@ -86,7 +86,7 @@ The following types of web servers are supported in the indicated areas:
 
 ### Additional Products and Services
 
-| Feature / Operation                             | Installation | Configuration | Troubleshooting |
+| Feature/Operation                             | Installation | Configuration | Troubleshooting |
 |-------------------------------------------------|--------------|---------------|-----------------|
 | Microsoft Exchange                              | Yes          | Yes           | Yes             |
 | Microsoft Sharepoint                            | Yes          |               |                 |
@@ -119,16 +119,16 @@ The following types of database servers are supported in the indicated areas:
 
 ## Supported Platforms for Microsoft SQL Editions
 
-| SQL Edition | Licensing | Installation | Troubleshooting | Managed Backup |
+| SQL Edition | Licensing | Installation | Troubleshooting | Managed backup |
 |-------------|-----------|--------------|-----------------|----------------|
 | Web         | Yes       | Yes          | Yes             | Yes            |
 | Standard    | Yes       | Yes          | Yes             | Yes            |
 | Enterprise  | Yes       | Yes          | Yes             | Yes            |
 
-**Note**: Customers using an MSDN license for Microsoft SQL are free to install and run this edition of SQL, but Rackspace cannot provide the license, install the software, monitor it, or back it up using Rackspace managed Backup SQL agent. Also note, the use production data in an instance licensed via MSDN is strictly prohibited.				
+**Note**: Customers using an MSDN license for Microsoft SQL are free to install and run this edition of SQL. But Rackspace cannot provide a MSDN license, install MSDN software, monitor MSDN applications, or back up the MSDN applications up using Rackspace Managed Backup for MSSQL offering. Also note, the use production data in an instance licensed via MSDN is strictly prohibited.				
 
 
-## Supported Platforms for Microsoft SQL Licenses
+## Supported Platforms for Microsoft SQL licenses
 
 | Licensing                    | Managed Colo | Managed | Intensive | Managed Operations (Cloud) | Navigator (AWS) | Aviator (AWS) | Navigator (Azure) | Navigator (Azure) |
 |------------------------------|--------------|---------|-----------|----------------------------|-----------------|---------------|-------------------|-------------------|
@@ -139,10 +139,10 @@ The following types of database servers are supported in the indicated areas:
 | Azure image library licenses |              |         |           |                            |                 |               | Yes               | Yes               |
 | Azure SQL Database           |              |         |           |                            |                 |               | Yes               | Yes               |
 
-**Note**: Licensing limited to bare metal servers and Enterprise edition on hypervisors only.
+**Note**: Licensing is limited to bare metal servers and Enterprise edition on hypervisors only.
 
 
-## Supported Platforms for Microsoft SQL Installation
+## Supported Platforms for Microsoft SQL installation
 
 | Support                      | Managed Colo | Managed | Intensive | Managed Operations (Cloud) | Navigator (FAWS) | Aviator (FAWS) | Navigator (Azure) | Navigator (Azure) |
 |------------------------------|--------------|---------|-----------|----------------------------|------------------|----------------|-------------------|-------------------|
