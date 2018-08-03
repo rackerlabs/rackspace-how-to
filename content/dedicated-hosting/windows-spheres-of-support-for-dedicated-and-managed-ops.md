@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-This article outlines our **Fanatical Support®** of software and server configurations for machines (virtual and physical) running a supported Microsoft Windows® operating system. It presents a high-level overview of Rackspace offerings. Contact the Rackspace sales department or your account representative for more information regarding the components of specific Windows roles and features that are supported in Rackspace offerings.
+This article outlines Rackspace **Fanatical Support®** for software and server configurations for virtual and physical machines that run a supported Microsoft Windows® operating system. The article presents a high-level overview of Rackspace offerings. Contact the Rackspace sales department or your account representative for more information regarding the components of specific Windows roles and features that are supported in Rackspace offerings.
 
 
 
