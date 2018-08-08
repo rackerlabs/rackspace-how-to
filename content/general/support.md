@@ -1,11 +1,11 @@
 ---
 permalink: support/
-audit_date:
+audit_date: '2018-08-08'
 title: How to contact Rackspace Support
 type: page
 created_date: '2013-06-17'
 created_by: Rackspace Support
-last_modified_date: '2017-06-06'
+last_modified_date: '2018-08-08'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
@@ -15,22 +15,63 @@ Rackspace Support is available 24x7x365 for all products. You can reach the Supp
 and live chat. You can also create a Support ticket and administer your
 Rackspace product through the [Cloud Control Panel](https://mycloud.rackspace.com/).
 
-### Contact Support by phone
+### System status
 
-Call Rackspace Support at 1 800 961 4454.
+Check the status of your Rackspace products at the [System Status page](https://status.apps.rackspace.com/).
 
-### Cloud Control Panel Support features
+### Dedicated Hosting Support
 
-The following Support features are available through the [Cloud Control Panel](https://mycloud.rackspace.com/):
+Call Dedicated Hosting Support at the following numbers:
 
--   Account administration
--   Live chat support
--   Create a support ticket
+- US: 1-800-961-4600
+- International: +1-210-312-4600
 
-### Product status page links
+You can also log in to the [MyRackspace portal](https://my.rackspace.com/) to access chat support, the knowledge base, and how to videos.
 
-Check the status and history of your Rackspace products, including
-RackConnect and Rackspace CDN, at the following links:
+### Email Support
 
--   [Cloud Office](https://cp.rackspace.com)
--   [Dedicated Hosting](https://my.rackspace.com)
+You can find support documentation at the [How-To Rackspace Email page](/how-to/rackspace-email).
+
+Use the [Email Setup Wizard](https://emailhelp.rackspace.com/) to get help setting up your email and other email-related tasks.
+
+You can also log in to your [Cloud Office Control Panel](https://cp.rackspace.com/) or [Webmail](https://apps.rackspace.com/) account to access phone support, chat support, and the knowledge base.
+
+### Fanatical Support for AWS
+
+Call Rackspace AWS Support at 1-800-961-4454.
+
+You can find support documentation at the [Fanatical Support for AWS Product Guide](https://manage.rackspace.com/aws/docs/product-guide/).
+
+You can also log in to the [Fanatical Support for AWS Control Panel](https://manage.rackspace.com/) to access chat support.
+
+### OpenStack Cloud Support
+
+Call Cloud support at 1-800-961-4454.
+
+Find API documentation at the [Rackspace Developer Docs site](https://developer.rackspace.com/docs/) and support documentation at the [How-To site](https://support.rackspace/how-to/).
+
+You can also log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) to access chat support.
+
+### Legacy Datapipe Support
+
+You can call the following numbers for legacy Datapipe Support:
+
+**United States**
+- Toll Free: +1 888-749-5821
+- International: +1 201-792-4847
+
+**Europe**
+- Toll Free: +44 800 634 3414
+- International: +44 207 515 2555
+- Local: 0207 515 2555
+
+**Asia**
+- Hong Kong: +852 3521 1466
+- China: +86 21 5058 2100
+- Singapore: +65 6493 7235
+
+### Additional Support resources
+
+- [How-To articles](https://support.rackspace.com/how-to/)
+- [Rackspace Community Forum](https://community.rackspace.com/)
+- [Developer and API documentation](https://developer.rackspace.com/docs/)
