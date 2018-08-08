@@ -19,16 +19,16 @@ Rackspace product through the [Cloud Control Panel](https://mycloud.rackspace.co
 
 Check the status of your Rackspace products at the [System Status page](https://status.apps.rackspace.com/).
 
-### Dedicated Hosting Support
+### Dedicated Hosting support
 
-Call Dedicated Hosting Support at the following numbers:
+Call Dedicated Hosting support at the following numbers:
 
 - US: 1-800-961-4600
 - International: +1-210-312-4600
 
-You can also log in to the [MyRackspace portal](https://my.rackspace.com/) to access chat support, the knowledge base, and how to videos.
+You can also log in to the [MyRackspace portal](https://my.rackspace.com/) to access chat support, the knowledge base, and How-To videos.
 
-### Email Support
+### Email support
 
 You can find support documentation at the [How-To Rackspace Email page](/how-to/rackspace-email).
 
@@ -38,23 +38,23 @@ You can also log in to your [Cloud Office Control Panel](https://cp.rackspace.co
 
 ### Fanatical Support for AWS
 
-Call Rackspace AWS Support at 1-800-961-4454.
+Call Rackspace AWS support at 1-800-961-4454.
 
-You can find support documentation at the [Fanatical Support for AWS Product Guide](https://manage.rackspace.com/aws/docs/product-guide/).
+You can find support documentation in the [Fanatical Support for AWS Product Guide](https://manage.rackspace.com/aws/docs/product-guide/).
 
 You can also log in to the [Fanatical Support for AWS Control Panel](https://manage.rackspace.com/) to access chat support.
 
-### OpenStack Cloud Support
+### OpenStack Cloud support
 
 Call Cloud support at 1-800-961-4454.
 
-Find API documentation at the [Rackspace Developer Docs site](https://developer.rackspace.com/docs/) and support documentation at the [How-To site](https://support.rackspace/how-to/).
+Find API documentation at the [Rackspace Developer Docs site](https://developer.rackspace.com/docs/) and support documentation at the [How-To site](/how-to/).
 
 You can also log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) to access chat support.
 
-### Legacy Datapipe Support
+### Legacy Datapipe support
 
-You can call the following numbers for legacy Datapipe Support:
+You can call the following numbers for legacy Datapipe support:
 
 **United States**
 - Toll Free: +1 888-749-5821
@@ -70,8 +70,8 @@ You can call the following numbers for legacy Datapipe Support:
 - China: +86 21 5058 2100
 - Singapore: +65 6493 7235
 
-### Additional Support resources
+### Additional support resources
 
-- [How-To articles](https://support.rackspace.com/how-to/)
+- [How-To articles](/how-to/)
 - [Rackspace Community Forum](https://community.rackspace.com/)
 - [Developer and API documentation](https://developer.rackspace.com/docs/)
