@@ -1,11 +1,11 @@
 ---
 permalink: cloud-server-configuration-options/
-audit_date:
+audit_date: '2018-08-09'
 title: Cloud Server configuration options
 type: article
 created_date: '2014-12-01'
 created_by: Rose Contreras
-last_modified_date: '2017-06-06'
+last_modified_date: '2018-08-09'
 last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
@@ -125,30 +125,28 @@ conflict with configuration management software. Such builds have a
 Rackspace account and nothing more. If you want additional components,
 you must pass them with the `build_config` metadata key.
 
-The following example shows the build option for a Chef server
-management.
+The following example shows the build option for a Managed Infrastructure server:
 
     nova boot --flavor 2 --image [image] --meta build_config=core www.example.com
 
-The following example shows the build option for building a file server
-with a Rackspace user name and password only and backup ability.
+The following example shows the build option for building Managed Operations server with a Rackspace user name and password only and backup ability:
 
-    nova boot --flavor 2 --image [image] --meta build_config=core,driveclient fileserver.example.com
+    nova boot --flavor 2 --image [image] --meta build_config= rack_user_only,driveclient fileserver.example.com
 
 This following example shows a good option for a customer who wants a
-database server that has monitoring and backups available, but no
-updates or additional packages.
+Managed Infrastructure server that has monitoring and backups available, but
+no updates or additional packages:
 
     nova boot --flavor 2 --image [image] --meta build_config=core,driveclient,monitoring db.example.com
 
 If you use configuration management software, wait for the post-build
-configuration to complete before performing your configuration
-management. For standard and workload-optimized cloud servers only, you
-can obtain the Managed Operations post-build automation status via the
-Cloud Servers API. Look for the metadata key value
-`informationrax_service_level_automation`. Depending on the current
-status of the Managed Cloud post-build automation process, the metadata
-key will have one of the following values:
+configuration to complete before performing your configuration management. For
+standard and workload-optimized cloud servers only, you can obtain the Managed
+Operations or Managed Infrastructure post-build automation status via the
+Cloud Servers API. Look for the metadata key value  
+`informationrax_service_level_automation`. Depending on the current status of
+the Managed Cloud post-build automation process, the metadata key will have
+one of the following values:
 
 -   Pending
 -   In Progress
