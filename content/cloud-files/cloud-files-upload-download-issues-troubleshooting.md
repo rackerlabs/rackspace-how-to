@@ -21,12 +21,14 @@ to expedite our response.
 ### Check Rackspace status
 
 If you are experiencing issues with Cloud Files, first visit the 
-[Rackspace System Status](https://rackspace.service-now.com/system_status/) page and check for open issues that might be 
-impacting the service. 
+[Rackspace System Status](https://rackspace.service-now.com/system_status/) page and check for open issues that might 
+be impacting the service. 
 
 ### Check support tickets
 
-Also check open support tickets for any incidents that might be affecting the service. 
+Also check your open support tickets for information about any incidents that might be affecting the service. To check
+your open support tickets, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and click 
+**Tickets > Ticket List** in the top navigation bar.
 
 ### Troubleshoot problems with Cloud Files uploads and downloads
 
