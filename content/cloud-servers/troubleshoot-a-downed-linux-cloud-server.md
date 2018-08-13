@@ -1,21 +1,24 @@
 ---
-permalink: linux-cloud-server-down-troubleshooting/
+permalink: troubleshoot-a-downed-linux-cloud-server/
 audit_date:
-title: Linux Cloud Server Down Troubleshooting
+title: Troubleshoot a downed Linux cloud server
 type: article
 created_date: '2018-08-03'
 created_by: Shaun Crumpler
 last_modified_date: 
-last_modified_by: 
+last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article is meant to assist with issues in which customers are not able to connect to servers due to the server being down, the site on the server not loading, not being able to login to the server, and receiving many alerts for the server. As Managed Infrastructure customers administer the servers on their end, this article intends to assist in diagnosing if the server is experiencing an issue that should be remedied from the customer side, or if the issue is something that should be escalated to a member of Rackspace support, additionally pointing out helpful pieces of information that can be included when creating a ticket to receive an expedited response.
+This article is meant to assist with issues in which customers are not able to connect to servers due to the server being down, the site on the server not loading, not being able to login to the server, and receiving many alerts for the server. 
 
-**Before starting the process below, check status.rackspace.com for open issues that could be impacting your server instance. Also, check current support tickets to assure that there is not an incident that is causing the lack of accessibility of the server. In many cases, a customer's server is inaccessible due to issues on the host machine, so if there is an open support ticket, it means that Rackspace Support is working on the issue and that ticket will be updated as progress is made. If there is no open support ticket about the server in question, proceed with the troubleshooting steps below.
 
-1. To start off, check the console of the server in question. ** For the steps to connect to the cloud server, see https://support.rackspace.com/how-to/connect-to-a-cloud-server.  If able to successfully connect via a terminal, then skip to step 4. If unable to connect to a terminal, then the Emergency Console can be used. To get to the Emergency Console option, first click the “Rackspace Cloud” option at the top of the Cloud Control panel (located after logging in to mycloud.rackspace.com
+As Managed Infrastructure customers administer the servers on their end, this article intends to assist in diagnosing if the server is experiencing an issue that should be remedied from the customer side, or if the issue is something that should be escalated to a member of Rackspace support, additionally pointing out helpful pieces of information that can be included when creating a ticket to receive an expedited response.
+
+**Before starting the process below, check status.rackspace.com for open issues that could be impacting your server instance. Also, check current support tickets to assure that there is not an incident that is causing the lack of accessibility of the server. In many cases, a customer's server is inaccessible due to issues on the host machine, so if there is an open support ticket, it means that Rackspace Support is working on the issue and that ticket will be updated as progress is made. If there is no open support ticket about the server in question, proceed with the troubleshooting steps below.**
+
+1. Check the console of the server in question. For the steps on how to connect to the cloud server, see https://support.rackspace.com/how-to/connect-to-a-cloud-server.  If able to successfully connect via a terminal, then skip to step 4. If unable to connect to a terminal, then the Emergency Console can be used. To get to the Emergency Console option, first click the “Rackspace Cloud” option at the top of the Cloud Control panel (located after logging in to mycloud.rackspace.com
 <image 1>
 2. Click on the “Servers” option in the dashboard, and then click “Cloud Servers” from the drop-down box:
 <image 2>
