@@ -37,8 +37,7 @@ the issue by using the following steps:
    through the Cloud Control Panel, try another method such as 
    [Cyberduck](https://developer.rackspace.com/docs/cloud-files/v1/getting-
    started/tools-and-applications-for-Cloud-Files/#cyberduck), 
-   a third-party tool that can be configured to use direct calls with the Cloud Files API. For more information, see 
-   [Cloud Files With Cyberduck](https://community.rackspace.com/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files). If you receive an error message, document it and skip to step 6.
+   a third-party tool that can be configured to use direct calls with the Cloud Files API. For more information, see [How to configure Cyberduck for Rackspace Cloud Files](https://community.rackspace.com/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files). If you receive an error message, document it and skip to step 6.
 2. If the failure occurs through Cyberduck, attempt the upload or download from the Cloud Control Panel. In the top 
    navigation bar, click **Rackspace Cloud > Storage > Files**.
 3. If you're trying to upload a file, click on the name of the container in which you want to store it. If you're trying to 
