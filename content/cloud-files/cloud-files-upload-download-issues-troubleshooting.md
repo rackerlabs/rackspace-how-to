@@ -1,6 +1,6 @@
 ---
 permalink: cloud-files-upload-download-issues-troubleshooting/
-audit_date: '2018-08-13'
+audit_date: '2018-08-10'
 title: Troubleshoot Cloud Files upload and download issues
 type: article
 created_date: '2018-08-10'
