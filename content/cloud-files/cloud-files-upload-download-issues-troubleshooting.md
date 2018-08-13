@@ -51,8 +51,9 @@ troubleshoot the issue by using the following steps:
    
    **Note**: Ensure that your test file doesn't contain sensitive information.
 5. To download a file, click the gear icon next to the filename, then select **Download File...**.
-6. If the second method that you choose replicates the problem that you initially encountered, document any errors and  
-   create a support ticket in the Cloud Control Panel by clicking **Tickets > Create Ticket** in the top navigation bar. 
+6. If the second method that you choose replicates the problem that you initially encountered, document 
+   any errors and create a support ticket in the Cloud Control Panel by clicking **Tickets > Create Ticket** in the top 
+   navigation bar. 
    
    The **Create Ticket** page appears.
 7. In the **Category** section, select **Cloud Files** for the **Type**. 
