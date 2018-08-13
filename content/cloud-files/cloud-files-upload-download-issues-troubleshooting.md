@@ -20,13 +20,13 @@ to expedite our response.
 
 ### Check Rackspace status
 
-If you are experiencing issues with Cloud Files, first visit the 
+If you are experiencing issues with Cloud Files, visit the 
 [Rackspace System Status](https://rackspace.service-now.com/system_status/) page and check for open issues that might 
 be impacting the service. 
 
 ### Check support tickets
 
-Also check your open support tickets for information about any incidents that might be affecting the service. To check
+Check your open support tickets for information about any incidents that might be affecting the service. To check
 your open support tickets, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and click 
 **Tickets > Ticket List** in the top navigation bar.
 
@@ -39,7 +39,9 @@ troubleshoot the issue by using the following steps:
    through the Cloud Control Panel, try another method such as 
    [Cyberduck](https://developer.rackspace.com/docs/cloud-files/v1/getting-
    started/tools-and-applications-for-Cloud-Files/#cyberduck), 
-   a third-party tool that can be configured to use direct calls with the Cloud Files API. For more information, see [How to configure Cyberduck for Rackspace Cloud Files](https://community.rackspace.com/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files). If you receive an error message, document it and skip to step 6.
+   a third-party tool that can be configured to use direct calls with the Cloud Files API. For more information, see [How to configure Cyberduck for Rackspace Cloud Files](https://community.rackspace.com/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files). 
+   
+   If you receive an error message, document it so that you can include it in your support request and then skip to step 6.
 2. If the failure occurs in Cyberduck, attempt the upload or download from the Cloud Control Panel. In the top 
    navigation bar, click **Rackspace Cloud > Storage > Files**.
 3. If you're trying to upload a file, click on the name of the container in which you want to store it. If you're trying to 
@@ -57,5 +59,4 @@ troubleshoot the issue by using the following steps:
    
    The **Create Ticket** page appears.
 7. In the **Category** section, select **Cloud Files** for the **Type**. 
-8. Update the support ticket with the error message that you received and any other issues that you have encountered with 
-   the upload or download, including the methods attempted. This information expedites your request.
+8. Update the support ticket with the error message that you received and any other issues that you encountered with the upload or download, including the methods attempted. This information expedites your request.
