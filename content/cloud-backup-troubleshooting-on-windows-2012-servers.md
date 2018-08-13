@@ -43,9 +43,9 @@ If there are no open support tickets about the server in question, attempt to [e
 
    The backup status is **connected** or **disconnected**.
 
-3. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
+4. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
 
-3. After 10 seconds, perform one of the following:
+5. After 10 seconds, perform one of the following:
 
  - If the status is **connected**, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel](xxxxx.xxxx).
 
@@ -61,14 +61,20 @@ If there are no open support tickets about the server in question, attempt to [e
 
 4. Locate the Driveclient Service, right-click it, and select the **Restart**. A pop-up windows shows the status of the restart.
 
-6. After the restart completes, find the DriveClient Service again in the Services (Local) list, and ensure that its status is **Running**.
+5. After the restart completes, find the DriveClient Service again in the Services (Local) list, and ensure that its status is **Running**.
 
-7. A common reason for the driveclient not showing as started is that it is not set to start after a reboot. For good measure, ensure that the driveclient is set to start at boot. Right-click of the “DriveClient Service” and choose “Properties”.
+6. Ensure that the driveclient is configure to start at boot up:
 
-8. Click the drop-down next to “Startup type” and select (if not already selected) “Automatic”.
+   a. Right-click the DriveClient Service and click **Properties**.
+   
+   b. Click the drop-down list next to **Startup type** and select **Automatic** (if not already selected).
+   
+   c. Click the **OK** button at the bottom of the page.
+   
+   d. After the service restarts, check the Control Panel to ensure the service is running.
+   
+7. Perform one of the following:
 
-9. Click the “OK” button at the bottom of the page.
+- If the agent is connected, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel](xxxxx.xxxx).
 
-10. After the service restarts, check the Control Panel to ensure the service is running.
-
-11. If the agent is connected, move on to the "Download Backup Log From Control Panel" troubleshooting step. If the agent still shows as “disconnected” then then download the backup log from within Windows on the server. It is located at C:\ProgramData\Driveclient\log\driveclient.log. Attach this log to a ticket for Rackspace support. This will assist in expediting the issue response.
+- If the agent is not connected, download the backup log from within Windows on the server. The backup log is located at C:\ProgramData\Driveclient\log\driveclient.log. Attach the log file to a ticket for Rackspace support who will use the log file to expedite a response to the issue.
