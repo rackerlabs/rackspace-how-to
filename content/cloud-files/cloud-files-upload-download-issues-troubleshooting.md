@@ -1,7 +1,7 @@
 ---
 permalink: cloud-files-upload-download-issues-troubleshooting/
-audit_date:
-title: Cloud Files Upload/Download Issues Troubleshooting
+audit_date: '2018-08-13'
+title: Troubleshoot Cloud Files upload and download issues
 type: article
 created_date: '2018-08-10'
 created_by: Shaun Crumpler
@@ -11,25 +11,43 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-This article is meant to assist customers who are experiencing issues uploading or downloading to the Rackspace Cloud Files product.
+This article is intended to help Managed Infrastructure customers who are experiencing issues uploading to or downloading 
+from Rackspace Cloud Files.
 
-As Managed Infrastructure customers administer services on their end, this article will assist in diagnosing if the Cloud Files issue should be remedied from the customer side, or if the issue is something that should be escalated to a member of Rackspace support, additionally pointing out helpful pieces of information that can be included when creating a ticket to receive an expedited response.
+Specifically, this information helps you diagnose if the Cloud Files issue is remedied from the customer side, or if you 
+should escalate it to Rackspace support. It also specifies helpful information to include when you create a ticket in order 
+to expedite the response.
 
-**Before starting the process below, check status.rackspace.com for open issues that could be impacting your Cloud Files. Also, check current support tickets to assure that there is not an incident that is causing issues. If there is no open support ticket about Cloud Files, proceed with the troubleshooting steps below.
+### Check Rackspace status
 
-1. If an issue is experienced with uploading or downloading a Cloud File, the first and easiest way to check if the issue is in the method in which the upload or download is being processed. If the failure is coming within the Control Panel, try another method such as Cyberduck. Cyberduck is a great third-party tool that contains an option specifically for Cloud Files that uses direct calls with the Cloud Files API. Cloud Files With Cyberduck <https://community.rackspace.com/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files> is an excellent article to get started. If an error is received, document it and skip to step 7.
-2. On the flip side, if the problems are being experienced with Cyberduck, attempt an upload or download within the Cloud Control Panel. Click “Rackspace Cloud" in the top title bar, then "Storage" and then "Files":
-<Image 1>
-3. Choose the container where the file is trying to upload to or download from to pull up the Container's details:
-<Image 2>
-4. To upload a file, drag and drop a small file (assuring to not use anything that contains sensitive information). This can be a small picture or text file:
-<Image 3>
-5. To download a file, click the gear icon next to the File Name and then choose "Download File...":
-<Image 4>
-6. If the issue is replicated in the second upload/download method document any error issues, create a support ticket by clicking “Support” in the top bar in the Cloud Control Panel, then click “Support Tickets”:
-<Image 5>
-7. Click “Create Ticket”:
-<Image 6>
-8. In Category, choose the “Type” of “Cloud Files”:
-<Image 7>
-9. Update the support ticket with the error message received and any others issues that have been experienced with the upload/download, including methods attempted. This will assist Rackspace support in expediting your issue.
+If you are experiencing issues with Cloud Files, first visit the 
+[Rackspace System Status](https://rackspace.service-now.com/system_status/) page and check for open issues that could be 
+impacting the service. 
+
+### Check support tickets
+
+Also check current support tickets to ensure that there isn't an incident that is affecting the service. 
+
+### Troubleshoot problems with Cloud Files uploads and downloads
+
+If system status is normal and there are no open support tickets pertaining to Cloud Files, proceed with the following 
+troubleshooting steps.
+
+1. Check if the issue is in the way the upload or download is being processed. If the failure is occurring through the Cloud 
+   Control Panel, try another method such as [Cyberduck](https://developer.rackspace.com/docs/cloud-files/v1/getting-
+   started/tools-and-applications-for-Cloud-Files/#cyberduck), a third-party tool that can be configured to work with Cloud 
+   Files and use direct calls with the Cloud Files API. For more information, see 
+   [Cloud Files With Cyberduck](https://community.rackspace.com/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files). If you receive an error, document it and skip to step 7.
+2. If the failure occurs through Cyberduck, attempt the upload or download from the Cloud Control Panel. In the top 
+   navigation bar, click **Rackspace Cloud > Storage > Files**.
+3. If you're trying to upload a file, click on the name of the container that you want to store it. If you're trying to 
+   download a file, click on the name of the container that stores the file. The container details appear.
+4. To test your ability to upload, drag and drop a small file. For example, you can use a small picture or text file. 
+   **Note**: Ensure that your test file doesn't contain sensitive information.
+5. To download a file, click the gear icon next to the filename, then choose **Download File...**.
+6. If the second method that you choose replicates the problem, document any error issues, then create a support ticket in 
+   the Cloud Control Panel by clicking **Tickets > Create Ticket** in the top navigation bar. The **Create Ticket** page 
+   appears.
+7. In the **Category** section, select **Cloud Files** for the **Type**. 
+8. Update the support ticket with the error message that you received and any other issues that have been experienced with 
+   the upload or download, including the methods attempted. This information expedites your request.
