@@ -57,10 +57,12 @@ If there are no open support tickets about the server in question, attempt to [e
 4. Locate the DriveClient service, right-click it, and select the **Restart**. A pop-up windows shows the status of the restart.
 5. After the restart completes, find the DriveClient service again in the **Services (Local)** list, and ensure that its status is **Running**.
 6. Ensure that the DriveClient is configure to start at boot up:
+
    a. Right-click the DriveClient service and click **Properties**.
    b. Click the drop-down list next to **Startup type** and select **Automatic** (if not already selected).
    c. Click the **OK** button at the bottom of the page.
    d. After the service restarts, check the Control Panel to ensure the service is running.
+   
 7. Perform one of the following:
    - If the agent is connected, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel]     (https://support.rackspace.com/how-to/cloud-files-upload-download-issues-troubleshooting/).
    - If the agent is not connected, download the backup log from the server within Windows. The backup log is located at C:\ProgramData\Driveclient\log\driveclient.log. Attach the log file to a ticket for Rackspace Support who will use the log file to expedite a response to the issue.
