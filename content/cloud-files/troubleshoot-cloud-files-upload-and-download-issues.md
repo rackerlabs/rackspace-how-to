@@ -1,12 +1,12 @@
 ---
-permalink: cloud-files-upload-download-issues-troubleshooting/
+permalink: troubleshoot-cloud-files-upload-and-download-issues/
 audit_date: '2018-08-10'
 title: Troubleshoot Cloud Files upload and download issues
 type: article
 created_date: '2018-08-10'
 created_by: Shaun Crumpler
-last_modified_date: 
-last_modified_by: 
+last_modified_date: Kate Dougherty
+last_modified_by: '2018-08-13'
 product: Cloud Files
 product_url: cloud-files
 ---
