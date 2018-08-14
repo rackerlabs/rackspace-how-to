@@ -59,8 +59,11 @@ If there are no open support tickets about the server in question, attempt to [e
 6. Ensure that the DriveClient is configure to start at boot up:
 
    a. Right-click the DriveClient service and click **Properties**.
+   
    b. Click the drop-down list next to **Startup type** and select **Automatic** (if not already selected).
+  
    c. Click the **OK** button at the bottom of the page.
+   
    d. After the service restarts, check the Control Panel to ensure the service is running.
    
 7. Perform one of the following:
