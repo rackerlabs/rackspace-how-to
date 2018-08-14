@@ -11,12 +11,13 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article helps you to address low disk space warnings for Microsoft&reg;
-Windows&reg; servers by providing remediation steps.
+This article is intended to help customers who have received a low disk space
+warning for a Microsoft&reg; Windows&reg; server by providing remediation steps.
 
-**Note:** Before taking the following steps, check
+### Check Rackspace status
+Before using the following steps, check
 [http://status.rackspace.com](http://status.rackspace.com) for open issues
-that could be impacting your server instance.
+that might be impacting your server instance.
 
 ### Process overview
 
@@ -32,12 +33,12 @@ The following troubleshooting steps are describe in detail in this article:
 Log in to you server by open a remote desktop connection.  For instructions,
 see [Log in to your server via RDP](/how-to/log-in-to-your-server-via-rdp-windows/).
 
-#### Check for open tickets
+#### Check support tickets
 
-In the Control Panel, click the **Tickets** icon and select **Ticket List**.
-Review any open tickets to see if the low disk condition is already being
-addressed.  If there is no ticket for this issue, proceed with the following
-steps.
+Check your open support tickets for information about any incidents that might
+be affecting the service. To check your open support tickets, log in to the
+[Cloud Control Panel](https://mycloud.rackspace.com/) and click **Tickets >
+Ticket List** in the top navigation bar.
 
 #### Determine the amount of disk space
 
@@ -77,5 +78,7 @@ To determine disk space, run the following steps:
 ### Conclusion
 
 If these troubleshooting steps have been followed but disk space is still low,
-contact the Rackspace Support team by creating a ticket. To expedite the issue,
-include all of the troubleshooting steps that you have already taken.
+contact the Rackspace Support team by creating a support ticket in the Cloud
+Control Panel by clicking **Tickets > Create Ticket** in the top navigation bar.
+To expedite the issue, include all of the troubleshooting steps that you have
+already taken.
