@@ -46,8 +46,8 @@ If there are no open support tickets about the server in question, attempt to [e
    The backup status is **connected** or **disconnected**.
 4. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
 5. After 10 seconds, perform one of the following actions:
- - If the status is **connected**, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel](xxxxx.xxxx).
- - If the status is **disconnected**, [restart the driveclient service](#Restartdriveclientservice).
+ - If the status is **connected**, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel](https://support.rackspace.com/how-to/cloud-files-upload-download-issues-troubleshooting/).
+ - If the status is **disconnected**, in the next section, restart the DriveClient service.
 
 ## Restart the DriveClient service
 
@@ -62,5 +62,5 @@ If there are no open support tickets about the server in question, attempt to [e
    c. Click the **OK** button at the bottom of the page.
    d. After the service restarts, check the Control Panel to ensure the service is running.
 7. Perform one of the following:
-   - If the agent is connected, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel]     (xxxxx.xxxx).
+   - If the agent is connected, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel]     (https://support.rackspace.com/how-to/cloud-files-upload-download-issues-troubleshooting/).
    - If the agent is not connected, download the backup log from the server within Windows. The backup log is located at C:\ProgramData\Driveclient\log\driveclient.log. Attach the log file to a ticket for Rackspace Support who will use the log file to expedite a response to the issue.
