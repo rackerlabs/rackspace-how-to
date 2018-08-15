@@ -11,11 +11,30 @@ product: undefined
 product_url: undefined
 ---
 
-This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
+This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities. In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
-**Note**: On August 14, 2018, details about a series of speculative executive side-channel vulnerabilities, L1 Terminal Fault (L1TF), or Foreshadow, were released.<br/><br/>We are continuing to work in collaboration with our vendors and partners. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.<br/><br/>Details related to the vulnerabilities can be found in [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615), [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620), and [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646).
+**Spectre and Meltdown**
 
-**Note**: On May 21, 2018, new variants for Spectre and Meltdown (side-channel processing unit hardware vulnerabilities) were disclosed; known as 3A and 4.<br/><br/>We are continuing to work in collaboration with our vendors and partners. Additional details will be provided as they are made available. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.<br/><br/>Details related to the vulnerabilities can be found in [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639), [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640), and [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A).
+Details related to the vulnerabilities can be found in:
+  - [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753)
+  - [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715)
+  - [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754)
+
+**Spectre and Meltdown variants 3A and 4** (May 21, 2018)
+
+Details related to the vulnerabilities can be found in:
+  - [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639)
+  - [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640)
+  - [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A).
+
+**L1 Terminal Fault (L1TF) or Foreshadow** (August 14, 2018)
+
+Details related to the vulnerabilities can be found in:
+  - [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615)
+  - [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620)
+  - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646).
+
+We are continuing to work in collaboration with our vendors and partners. Additional details will be provided as they are made available. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
 **Important**: Rackspace continues to execute its mitigation and remediation strategy to address the CPU speculative execution vulnerabilities. We have multiple teams working with the utmost urgency to remediate these vulnerabilities. This a complex and evolving situation, as the guidance provided by numerous vendors regarding remediation efforts and patching continues to change. Based on the level of threat, we firmly believe the best course forward is to continue working with our vendors as they develop stable and proven patches, and applying them in the least impactful manner possible. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
