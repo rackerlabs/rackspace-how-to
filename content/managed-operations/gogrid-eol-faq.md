@@ -1,6 +1,6 @@
 ---
 permalink: gogrid-eol-faq/
-audit_date:
+audit_date: '2018-08-15'
 title: GoGrid end of life FAQ
 type: article
 created_date: '2018-08-15'
@@ -25,11 +25,11 @@ Data will not be accessible after the EOL date. You will be responsible for migr
 
 #### Who is responsible for deleting my infrastructure once I have migrated to another platform?
 
-You are responsible for managing your infrastructure up to the EOL date. Any remaining infrastructure and related services will continue to be billed per our Terms of Service up until the EOL date
+You are responsible for managing your infrastructure up to the EOL date. Any remaining infrastructure and related services will continue to be billed per our Terms of Service up until the EOL date.
 
 #### Is it possible to extend the EOL date if I can't migrate off the platform in time?
 
-Unfortunately, it is not possible to extend the End of Life date. Please contact us to review your migration options
+Unfortunately, it is not possible to extend the End of Life date. Please contact us to review your migration options.
 
 #### Will you continue to support GoGrid until the EOL?
 
