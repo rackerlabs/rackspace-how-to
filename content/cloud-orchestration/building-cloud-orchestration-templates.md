@@ -572,7 +572,7 @@ Use the following template to create a domain in Cloud DNS and create records. N
         properties:
           emailAddress: "admin@domain.com"
           name: domain.com
-          records: [ {"name": "domain.com", "data": 123.456.78.90 , "type": "A" }, {"name": "www.domain.com", "data": domain.com , "type": "CNAME" } ]
+          records: [ {"name": "domain.com", "data": 1.2.3.4 , "type": "A" }, {"name": "www.domain.com", "data": domain.com , "type": "CNAME" } ]
 
 
 ####  Create a cloud queue
