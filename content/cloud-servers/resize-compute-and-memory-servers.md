@@ -1,7 +1,7 @@
 ---
 permalink: resize-compute-and-memory-servers/
 audit_date: '2018-08-15'
-title: Resize standard and general purpose servers
+title: Resize compute and memory servers
 type: article
 created_date: '2018-08-15'
 created_by: Rackspace Support
