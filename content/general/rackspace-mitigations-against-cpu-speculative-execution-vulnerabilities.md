@@ -26,14 +26,14 @@ Details related to the vulnerabilities can be found in:
 Details related to the vulnerabilities can be found in:
   - [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639)
   - [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640)
-  - [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A).
+  - [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A)
 
 **L1 Terminal Fault (L1TF) or Foreshadow** (August 14, 2018)
 
 Details related to the vulnerabilities can be found in:
   - [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615)
   - [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620)
-  - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646).
+  - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646)
 
 We are continuing to work in collaboration with our vendors and partners. Additional details will be provided as they are made available. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
