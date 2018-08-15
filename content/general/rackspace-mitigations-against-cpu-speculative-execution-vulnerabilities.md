@@ -5,13 +5,15 @@ title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
-last_modified_date: '2018-05-24'
+last_modified_date: '2018-08-15'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
 This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). In some cases, customers might need to take additional action to mitigate these vulnerabilities.
+
+**Note**: On August 14, 2018, details about a series of speculative executive side-channel vulnerabilities, L1 Terminal Fault (L1TF), or Foreshadow, were released.<br/><br/>Details related to the vulnerabilities can be found in [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615), [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620), and [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646).<br/><br/>Rackspace recommends that customers update to current Operating System and firmware/microcode versions to mitigate Foreshadow and Foreshadow-NG.<br/><br/>We are continuing to work in collaboration with our vendors and partners. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
 **Note**: On May 21, 2018, new variants for Spectre and Meltdown (side-channel processing unit hardware vulnerabilities) were disclosed; known as 3A and 4.<br/><br/>We are continuing to work in collaboration with our vendors and partners. Additional details will be provided as they are made available. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.<br/><br/>Details related to the vulnerabilities can be found in [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639), [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640), and [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A).
 
