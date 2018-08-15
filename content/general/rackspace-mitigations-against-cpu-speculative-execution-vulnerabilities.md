@@ -38,7 +38,8 @@ Details related to the vulnerabilities can be found in:
   - [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620)
   - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646)
 
-We are continuing to work in collaboration with our vendors and partners. Additional details will be provided as they are made available. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
+We are continuing to work in collaboration with our vendors and partners. Additional details will be provided as they are made
+available. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
 **Important**: Rackspace continues to execute its mitigation and remediation strategy to address the CPU speculative execution vulnerabilities. We have multiple teams working with the utmost urgency to remediate these vulnerabilities. This a complex and evolving situation, as the guidance provided by numerous vendors regarding remediation efforts and patching continues to change. Based on the level of threat, we firmly believe the best course forward is to continue working with our vendors as they develop stable and proven patches, and applying them in the least impactful manner possible. If we need to take action that would impact customers, we will provide additional guidance directly to the customers involved.
 
