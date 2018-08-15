@@ -16,7 +16,7 @@ product_url: cloud-servers
 This article shows how to resize your server in the Cloud Control Panel.
 Resizing a server changes the RAM and disk space allocation.
 
-**Note:** Standard servers that are running Microsoft Windows cannot be
+**Note:** Standard servers that are running Microsoft&reg; Windows cannot be
 resized down. All other standard servers can be resized either up or down.
 However, be aware of the potential for data loss if you size down. General
 Purpose servers can only be resized to larger servers. All other flavors,
