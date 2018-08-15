@@ -46,7 +46,7 @@ If there are no open support tickets about the server in question, attempt to [e
    The backup status is **connected** or **disconnected**.
 4. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
 5. After 10 seconds, perform one of the following actions:
- - If the status is **connected**, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel](https://support.rackspace.com/how-to/cloud-files-upload-download-issues-troubleshooting/).
+ - If the status is **connected**, contact Rackspace Technical Support.
  - If the status is **disconnected**, in the next section, restart the DriveClient service.
 
 ## Restart the DriveClient service
@@ -56,7 +56,7 @@ If there are no open support tickets about the server in question, attempt to [e
 3. Enter **services.msc** in the search field, and then click **services** that populates under the search bar.
 4. Locate the DriveClient service, right-click it, and select the **Restart**. A pop-up windows shows the status of the restart.
 5. After the restart completes, find the DriveClient service again in the **Services (Local)** list, and ensure that its status is **Running**.
-6. Ensure that the DriveClient is configure to start at boot up:
+6. Ensure that the DriveClient is configured to start at boot up:
 
    a. Right-click the DriveClient service and click **Properties**.
    
@@ -67,5 +67,5 @@ If there are no open support tickets about the server in question, attempt to [e
    d. After the service restarts, check the Control Panel to ensure the service is running.
    
 7. Perform one of the following:
-   - If the agent is connected, complete the troubleshooting steps outlined in [Download Backup Log From Control Panel]     (https://support.rackspace.com/how-to/cloud-files-upload-download-issues-troubleshooting/).
-   - If the agent is not connected, download the backup log from the server within Windows. The backup log is located at C:\ProgramData\Driveclient\log\driveclient.log. Attach the log file to a ticket for Rackspace Support who will use the log file to expedite a response to the issue.
+   - If the agent is connected, contact Rackspace Technical Support.
+   - If the agent is not connected, attach the backup log to a technical support ticket. The backup log is located at C:\ProgramData\Driveclient\log\driveclient.log. Rackspace Support who will use the log file to expedite a response to the issue.
