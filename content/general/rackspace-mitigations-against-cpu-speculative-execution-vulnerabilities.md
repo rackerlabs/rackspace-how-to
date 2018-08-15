@@ -11,7 +11,8 @@ product: undefined
 product_url: undefined
 ---
 
-This page lists various Rackspace services and their current mitigation status for the CPU speculative execution vulnerabilities. In some cases, customers might need to take additional action to mitigate these vulnerabilities.
+This page lists various Rackspace services and their current mitigation status for the CPU speculative execution
+vulnerabilities. In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
 **Spectre and Meltdown**
 
