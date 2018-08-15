@@ -5,7 +5,7 @@ title: Cloud Backup - Basic troubleshooting on Windows Server 2012
 type: article
 created_date: '2018-08-10'
 created_by: Shaun Crumpler
-last_modified_date: '2018-08-14'
+last_modified_date: '2018-08-15'
 last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
@@ -25,7 +25,7 @@ Before you restart the DriveClient service, check [status.rackspace.com](https:/
 your open support tickets, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and click 
 **Tickets > Ticket List** in the top navigation bar.
 
-If there are no open support tickets about the server in question, attempt to [establish a connection](#Establishconnection).
+If there are no open support tickets about the server in question, in the next section, attempt to establish a connection.
 
 ## Establish connection 
 
