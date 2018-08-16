@@ -5,8 +5,8 @@ title: Troubleshoot Cloud Files upload and download issues
 type: article
 created_date: '2018-08-10'
 created_by: Shaun Crumpler
-last_modified_date: Kate Dougherty
-last_modified_by: '2018-08-13'
+last_modified_date: '2018-08-13'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
