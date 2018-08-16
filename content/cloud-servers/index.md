@@ -54,6 +54,6 @@ This introduction covers everything you'll need to know as a new Rackspace custo
 - [Rescue mode](/how-to/rescue-mode)
 - [Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server)
 - [Resize standard servers](/how-to/managing-your-server-resizing-standard-and-general-purpose-servers)
-- [Resize compute and memory servers](/how-to/resize-compute-and-memory-servers/)
+- [Resize up compute and memory servers](/how-to/resize-up-compute-and-memory-servers/)
 - [Reset your server password](/how-to/reset-your-server-password)
 - [Deleting your server](/how-to/deleting-your-server)

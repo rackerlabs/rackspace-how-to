@@ -1,11 +1,11 @@
 ---
-permalink: resize-compute-and-memory-servers/
-audit_date: '2018-08-15'
-title: Resize compute and memory servers
+permalink: resize-up-compute-and-memory-servers/
+audit_date: '2018-08-16'
+title: Resize up compute and memory servers
 type: article
 created_date: '2018-08-15'
 created_by: Rackspace Support
-last_modified_date: '2018-08-15'
+last_modified_date: '2018-08-16'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -13,10 +13,12 @@ product_url: cloud-servers
 
 **Previous section:** [Resize standard and general purpose servers](/how-to/resize-standard-and-general-purpose-servers/)
 
-This article shows you how to resize a computer or memory server by using the
-Cloud Control Panel. Resizing a server changes the RAM and disk space allocation.
+This article shows you how to resize up a computer or memory server by using
+the Cloud Control Panel. Resizing a server changes the RAM and disk space
+allocation.
 
-**Note:** Be mindful of the potential for data loss if you size down.
+**Note:** Compute and memory servers can only be resized up. They can’t be
+resized down.
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
@@ -32,7 +34,7 @@ Cloud Control Panel. Resizing a server changes the RAM and disk space allocation
 
    **Note:** Each server size has a different hourly cost for uptime, and the
    new cost goes into effect when the server resize process is completed. This
-   could mean that you pay different rates for the same server within a given
+   could mean that you pay different rates for the same server within a single
    billing cycle.
 
    A notification displays prompting you to verify the changes you made to
@@ -45,9 +47,9 @@ Cloud Control Panel. Resizing a server changes the RAM and disk space allocation
    you will have to revert to the original size and cancel any changes to your
    server.
 
-   For a Linux server, you can SSH to either the public or private IP address
-   and run the commands `df -h` (Hard Disk usage) and `free -m` (available RAM
-     memory) to verify the changes.
+   For a Linux server, you can Secure Shell (SSH) to either the public or
+   private IP address and run the commands `df -h` (Hard Disk usage) and
+   `free -m` (available RAM memory) to verify the changes.
 
    For a Windows server, additional steps are required to use additional space
    after resizing up. For more information, see [Adding Disk Space After
