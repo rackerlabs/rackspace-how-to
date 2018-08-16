@@ -44,13 +44,16 @@ Ticket List** in the top navigation bar.
 
 To determine disk space, run the following steps:
 
-1. Open the Windows File Explorer.
+1. Open the Windows File Explorer and click **This PC**.
 2. Under **Devices and drives**, make note of the amount of free space.
 
 #### Clean up the C:\ drive
 
 If the low disk warning was for the C:\ drive, perform the following steps
 to delete old or unnecessary system files and folders:
+
+**Note:** To delete a file from the command line, change directory to the
+file's location and type `del <file name>`.
 
 1. Open a command prompt.
 2. Change directory to `C:\temp`. If the directory exists, delete all files and
