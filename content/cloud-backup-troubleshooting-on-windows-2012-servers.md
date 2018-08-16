@@ -47,7 +47,7 @@ If there are no open support tickets about the server in question, attempt to es
 4. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
 5. After 10 seconds, perform one of the following actions:
  - If the status is **connected**, contact Rackspace Technical Support.
- - If the status is **disconnected**, in the next section, restart the DriveClient service.
+ - If the status is **disconnected**, restart the DriveClient service as shown in the next section.
 
 ## Restart the DriveClient service
 
