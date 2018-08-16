@@ -5,8 +5,8 @@ title: Resize standard and general purpose servers
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2018-08-15'
-last_modified_by: Nate Archer
+last_modified_date: '2018-08-16'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -19,9 +19,7 @@ Resizing a server changes the RAM and disk space allocation.
 **Note:** Standard servers that are running Microsoft&reg; Windows cannot be
 resized down. All other standard servers can be resized either up or down.
 However, be aware of the potential for data loss if you size down. General
-Purpose servers can only be resized to larger servers. All other flavors,
-OnMetal servers, and any server that boots from a Cloud Block Storage volume
-cannot be resized.
+Purpose servers can only be resized to larger servers.
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
