@@ -68,4 +68,4 @@ If there are no open support tickets about the server in question, attempt to es
    
 7. Perform one of the following:
    - If the agent is connected, contact Rackspace Technical Support.
-   - If the agent is not connected, attach the backup log to a technical support ticket. The backup log is located at **C:\ProgramData\Driveclient\log\driveclient.log**. Rackspace Support who will use the log file to expedite a response to the issue.
+   - If the agent is not connected, attach the backup log to a technical support ticket. The backup log is located at **C:\ProgramData\Driveclient\log\driveclient.log**. Rackspace Support uses the log file to expedite a response to the issue.
