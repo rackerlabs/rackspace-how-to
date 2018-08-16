@@ -1,7 +1,7 @@
 ---
-permalink: windows-cloud-server-low-disk-troubleshooting/
+permalink: troubleshooting-low-disk-space-for-a-windows-cloud-server/
 audit_date: '2018-08-16'
-title: Windows Cloud Server low disk troubleshooting
+title: Troubleshooting low disk space for a Windows cloud server
 type: article
 created_date: '2018-08-16'
 created_by: Cat lookabaugh
@@ -12,25 +12,28 @@ product_url: cloud-servers
 ---
 
 This article is intended to help customers who have received a low disk space
-warning for a Microsoft&reg; Windows&reg; server by providing remediation steps.
+warning for a Microsoft&reg; Windows&reg; cloud server by providing remediation
+steps.
 
 ### Check Rackspace status
+
 Before using the following steps, check
 [http://status.rackspace.com](http://status.rackspace.com) for open issues
 that might be impacting your server instance.
 
 ### Process overview
 
-The following troubleshooting steps are describe in detail in this article:
+The following troubleshooting steps are described in detail in this article:
 
--  Log in to device.
+-  Log in to the device.
 -  Check for open tickets.
--  Clean up the C:\ drive
--  Verify disk space after remediation.
+-  Determine the amount of disk space available.
+-  Clean up the C:\ drive.
+-  Verify disk space after the cleanup.
 
 #### Log in to the device
 
-Log in to you server by open a remote desktop connection.  For instructions,
+Log in to your server by opening a remote desktop connection.  For instructions,
 see [Log in to your server via RDP](/how-to/log-in-to-your-server-via-rdp-windows/).
 
 #### Check support tickets
@@ -71,7 +74,7 @@ the directory exists, delete all files and folders.
 8. Empty the Recycle Bin by right clicking on the desktop icon and clicking on
  **Empty**.
 
-#### Verify disk space after the clean up
+#### Verify disk space after the cleanup
 
 To determine disk space, run the following steps:
 
@@ -80,7 +83,7 @@ To determine disk space, run the following steps:
 
 ### Conclusion
 
-If these troubleshooting steps have been followed but disk space is still low,
+If you've followed these troubleshooting steps  but disk space is still low,
 contact the Rackspace Support team by creating a support ticket in the Cloud
 Control Panel by clicking **Tickets > Create Ticket** in the top navigation bar.
 To expedite the issue, include all of the troubleshooting steps that you have
