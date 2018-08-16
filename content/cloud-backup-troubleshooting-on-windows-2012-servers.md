@@ -53,7 +53,7 @@ If there are no open support tickets about the server in question, attempt to es
 
 1. Log into the server via RDP and click the **Windows** symbol in the bottom-left corner.
 2. Click the **Search** icon in the top-right corner.
-3. Enter **services.msc** in the search field, and then click **services** that populates under the search bar.
+3. Enter **services.msc** in the search field.
 4. Locate the DriveClient service, right-click it, and select the **Restart**. A pop-up windows shows the status of the restart.
 5. After the restart completes, find the DriveClient service again in the **Services (Local)** list, and ensure that its status is **Running**.
 6. Ensure that the DriveClient is configured to start at boot up:
