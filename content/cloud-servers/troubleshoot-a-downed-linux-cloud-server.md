@@ -1,11 +1,11 @@
 ---
 permalink: troubleshoot-a-downed-linux-cloud-server/
-audit_date:
+audit_date: '2018-08-16'
 title: Troubleshoot a downed Linux cloud server
 type: article
 created_date: '2018-08-03'
 created_by: Shaun Crumpler
-last_modified_date:
+last_modified_date: '2018-08-16'
 last_modified_by: Nate Archer
 product: Cloud Servers
 product_url: cloud-servers
@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 If the site on your server is not loading, you can’t log in to your server, or you receive connection-related alerts for your server, your server is down. 
 
-If you are a Managed Infrastructure customer, you can use these troubleshooting steps to diagnose whether you can solve the issue, or if you should escalate the issue the Rackspace support. This article also specifies helpful information to include when you create a support ticket in order to expediate Rackspace’s response.
+If you are a Managed Infrastructure customer, you can use these troubleshooting steps to diagnose whether you can solve the issue, or escalate the issue the Rackspace support. This article also specifies helpful information to include when you create a support ticket in order to expedite Rackspace’s response.
 
 
 ### Check Rackspace system status
@@ -29,7 +29,7 @@ your open support tickets, log in to the [Cloud Control Panel](https://mycloud.r
 
 ### Check the console of the downed cloud server
 
-Use the following steps the check the down server's console:
+Use the following steps the check the downed server's console:
 
 1. Connect to your cloud server and check the console. For steps on how to connect to the cloud server, see [Connect to a cloud server](/how-to/connect-to-a-cloud-server).  
 
@@ -47,14 +47,14 @@ Use the following steps the check the down server's console:
 
   - If you see a response, the server is responsive. Skip to the **Ping/Nmap IP Address** section.
 
-  - If the console is not responding or is displays errors such as being out of system resources, go the the **Attempt Reboot** section.
+  - If the console is not responding or displays errors such as being out of system resources, go the the **Attempt Reboot** section.
 
 
 ### Attempt Reboot
 
 If your server is not responding through the command line, a hard reboot might make the server responsive again.
 
-1. Return to the server list in the Cloud Control panel and click the gear icon next to the downed server’s name. From the drop-down, select **Reboot Server** option.
+1. Return to the server list in the Cloud Control panel and click the gear icon next to the downed server’s name. From the drop-down, select **Reboot Server**.
 2. Review the message on the screen. After you're reviewed the message, click **Reboot Server**.
 3. Repeat the steps in the **Check the console** section.  
 
@@ -64,7 +64,7 @@ If your server is not responding through the command line, a hard reboot might m
 
 ### Ping/Nmap IP Address
 
-1. From your cloud server's details page, go to the Networks and Security Groups section and then copy the Public IPv4 address.
+1. From your cloud server's **Details** page, go to the **Networks and Security Groups** section and then copy the Public IPv4 address.
 
 2. In your command line application or console, enter `ping <ipv4-address>`.  Take note if a response is received or not.
 
@@ -74,4 +74,4 @@ If your server is not responding through the command line, a hard reboot might m
 
 If these commands return a response, then the server is healthy and the issues are at the operating system level. Rackspace support will not be able to diagnose the problem further on Managed Infrastructure accounts. If the account is on the Managed Operations service level, create a support ticket and provide the troubleshooting that has been completed.
 
-If your server is not returning responses for any of the commands in the previous troubleshooting steps, open a Support and include all of the steps that you have attempted to expedite the issue.
+If your server is not returning responses for any of the commands in the previous troubleshooting steps, open a support ticket and include all of the steps that you have attempted to expedite the issue.
