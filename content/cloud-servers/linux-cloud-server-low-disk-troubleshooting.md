@@ -26,9 +26,9 @@ This article describes the following troubleshooting steps in detail:
 
 - Log in to the device.
 - Check for open tickets.
-- Determine disk space.
+- Determine the amount of disk space.
 - Clean up the server.
-- Verify disk space after remediation.
+- Verify the new disk space after the clean up.
 
 ### Log in to the device
 
@@ -44,10 +44,8 @@ Ticket List** in the top navigation bar.
 
 ### Determine the amount of disk space
 
-To determine disk space, run the following steps:
-
-Enter the following one-liner program on the command line to retrieve
-information on the server's current status.
+To determine disk space, enter the following one-liner program on the command
+line to retrieve information on the server's current status:
 
       FS='./';resize;clear;echo "== Server Time: ==";date;echo -e "\n== Filesystem Information: ==";df -PTh ${FS} | column -t;echo -e "\n== Inode Information: ==";df -PTi ${FS} | column -t;echo -e "\n== Largest Directories: ==";du -hcx --max-depth=2 ${FS} 2>/dev/null | grep -P '^([0-9]\.*)*G(?!.*(\btotal\b|\./$))' | sort -rnk1,1 | head -10 | column -t;echo -e "\n== Largest Files: ==";find ${FS} -mount -ignore_readdir_race -type f -exec du {} + 2>&1 | sort -rnk1,1 | head -20 | awk 'BEGIN{ CONVFMT="%.2f";}{ $1=( $1 / 1024 )"M"; print;}' | column -t;echo -e "\n== Largest Files Older Than 30 Days: ==";find ${FS} -mount -ignore_readdir_race -type f -mtime +30 -exec du {} + 2>&1 | sort -rnk1,1 | head -20 | awk 'BEGIN{ CONVFMT="%.2f";}{ $1=( $1 / 1024 )"M"; print; }' | column -t;
 
@@ -176,7 +174,7 @@ The method of resolving an inode-related alert is different from resolving a
 disk space-related alert. Rather than looking for large, unnecessary files,
 look for many small ones and delete them.
 
-#### Verify disk space after the clean up
+### Verify the new disk space after the clean up
 
 To determine disk space, run the same one-liner program that you ran earlier.
 Make a note of the amount of free space.
