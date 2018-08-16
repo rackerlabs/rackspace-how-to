@@ -5,17 +5,17 @@ title: Resize standard and general purpose servers
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2018-07-01'
-last_modified_by: Nate Archer
+last_modified_date: '2018-08-15'
+last_modified_by: Brian King
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 **Previous section:** [Create a Cloud Server](/how-to/create-a-cloud-server)
 
-This article shows how to resize your server&mdash;change the RAM and disk space allocation&mdash;in the Cloud Control Panel.
+This article shows how to resize your server (change the vCPU, RAM and sometimes disk size) in the Cloud Control Panel.
 
-**Note:** Standard servers can be resized to both smaller and larger servers, but be mindful of the potential for data loss if you size down. General Purpose servers can only be resized to larger servers. All other flavors, OnMetal servers, and any server that boots from a Cloud Block Storage volume cannot be resized.
+**Note:** Standard flavor Linux servers using the deprecated "PV" virtualization mode can resize down, but be mindful of the potential for data loss if you size down.  OnMetal servers cannot be resized at all. All other flavors can resize up only. (note: I/O flavors cannot resize through the portal yet. Contact Rackspace Support if you would like to resize up an I/O flavor server).
 
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
@@ -35,11 +35,11 @@ This article shows how to resize your server&mdash;change the RAM and disk space
 
    **Note:** Verification is an important step because it is the last chance you will have to revert to the original size and cancel any changes to your server. Do not rely on the availability of your website as an indicator of whether the resize was successful, as certain server processes may be suspended while the resize is waiting to be verified.
 
-   For a Linux server, you can SSH to either the public or private IP address and run the commands `df -h` (Hard Disk usage) and `free -m` (available RAM memory) to verify the changes.
+   For a Linux server, you can SSH to either the public or private IP address and run the commands `nproc` (number of processors), `df -h` (Hard Disk usage), `free -m` (available RAM memory) to verify the changes. Note that servers booted from a Cloud Block Storage volume will not gain disk space after a resize.
 
    For a Windows server, there are additional steps required to use the additional space after a resize.  Please follow the instructions from this article: [Adding Disk Space After Resizing a Windows Server 2012 Cloud Server](/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server)
 
-6. Now that you've verified the system resources and checked your filesystems, you can choose to **Confirm** the resize or **Revert** to the original size.  
+6. Now that you've verified the system resources and checked your filesystems, you can choose to **Confirm** the resize or **Revert** to the original size.  After 24 hours, the resize is automatically confirmed and you will no longer be able to revert.
 
    Choosing to Confirm the resize will change the server status. The process will be complete when the **Status** reads **Active**, the **Current Action** is **None**, and the server has come back up from a reboot. Any web services that you had running may require you to log in and manually restart them.
 
