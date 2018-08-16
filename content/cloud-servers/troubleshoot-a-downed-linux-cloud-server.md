@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 If the site on your server is not loading, you can’t log in to your server, or you receive connection-related alerts for your server, your server is down. 
 
-If you are a Managed Infrastructure customer, you can use these troubleshooting steps to diagnose whether you can solve the issue, or escalate the issue the Rackspace support. This article also specifies helpful information to include when you create a support ticket in order to expedite Rackspace’s response.
+If you are a Managed Infrastructure customer, you can use these troubleshooting steps to diagnose whether you can solve the issue, or escalate the issue to Rackspace support. This article also specifies helpful information to include when you create a support ticket in order to expedite Rackspace’s response.
 
 
 ### Check Rackspace system status
