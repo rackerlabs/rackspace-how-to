@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article provides basic troubleshooting steps for Cloud Backup onWindows Server 2012 if you are experiencing the following issues:
+This article provides basic troubleshooting steps for Cloud Backup on Windows Server® 2012 if you are experiencing the following issues:
 
 - Backups are not running.
 - Backups take too long to complete.
@@ -25,7 +25,7 @@ Before you restart the DriveClient service, check [status.rackspace.com](https:/
 your open support tickets, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and click 
 **Tickets > Ticket List** in the top navigation bar.
 
-If there are no open support tickets about the server in question, in the next section, attempt to establish a connection.
+If there are no open support tickets about the server in question, attempt to establish a connection as shown in the next section.
 
 ## Establish connection 
 
@@ -33,14 +33,14 @@ If there are no open support tickets about the server in question, in the next s
 2. From the list of Cloud Backup Systems, click the backup server name. 
    This action displays the following details about the backup system:
    
-   - the IP address of the server
-   - the system type
-   - the backup vault size
-   - if encryption is enabled
-   - the server region
-   - the backup region
-   - if service net is enabled
-   - the agent version
+   - The Internet Protocol (IP) address of the server
+   - The system type
+   - The backup vault size
+   - If encryption is enabled
+   - The server region
+   - The backup region
+   - If service net is enabled
+   - The agent version
 
 3. To the right of the system name, review the status of the backup agent.
    The backup status is **connected** or **disconnected**.
@@ -68,4 +68,4 @@ If there are no open support tickets about the server in question, in the next s
    
 7. Perform one of the following:
    - If the agent is connected, contact Rackspace Technical Support.
-   - If the agent is not connected, attach the backup log to a technical support ticket. The backup log is located at C:\ProgramData\Driveclient\log\driveclient.log. Rackspace Support who will use the log file to expedite a response to the issue.
+   - If the agent is not connected, attach the backup log to a technical support ticket. The backup log is located at **C:\ProgramData\Driveclient\log\driveclient.log**. Rackspace Support who will use the log file to expedite a response to the issue.
