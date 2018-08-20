@@ -5,13 +5,37 @@ title: 'Firmware/Microcode mitigations against CPU speculative execution vulnera
 type: article
 created_date: '2018-04-10'
 created_by: Marc Nourani
-last_modified_date: '2018-07-02'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-08-20'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
-Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain CPUs, commonly known as Meltdown and Spectre: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754).
+Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain CPUs. You can find more information about the vulnerabilities in the following locations:
+
+**Spectre and Meltdown**
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753)
+  - [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715)
+  - [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754)
+
+**Spectre and Meltdown variants 3A and 4** (May 21, 2018)
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639)
+  - [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640)
+  - [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A)
+
+**L1 Terminal Fault (L1TF) or Foreshadow** (August 14, 2018)
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615)
+  - [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620)
+  - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646)
 
 Vendors have begun to release firmware/microcode updates for specific platforms. Rackspace will perform testing based on standard practices and make updates available upon successful completion of this process. We are aware that these updates might impact performance to an extent dependent upon specific workloads, application usage, or I/O. Our testing will not account for customer-specific performance impact. If you have concerns related to performance impact, review vendor-provided guidance. Red Hat has provided information regarding potential performance impacts at [Speculative Execution Exploit Performance Impacts](https://access.redhat.com/articles/3307751).
 
@@ -47,15 +71,15 @@ For additional information, see [Windows OS mitigations against CPU speculative 
 
 ### Managed colocation
 
-Customers on managed colocation environments can work with their Rackspace account team to schedule maintenance to install the firmware/microcode updates or they can download the updates and apply them on their own. Customers can also flash the firmware on their own as described in the following section. 
+Customers on managed colocation environments can work with their Rackspace account team to schedule maintenance to install the firmware/microcode updates or they can download the updates and apply them on their own. Customers can also flash the firmware on their own as described in the following section.
 
 ### Flashing firmware
 
-Those customers who would like to apply the firmware updates to their devices can use the following procedures: 
+Those customers who would like to apply the firmware updates to their devices can use the following procedures:
 
 #### Flashing firmware on Dell servers by using Rackspace mirror servers
 
-Rackspace has created a repository on our RHN mirror servers to provide internally and externally-facing access to the latest approved firmware updates for our Dell servers. 
+Rackspace has created a repository on our RHN mirror servers to provide internally and externally-facing access to the latest approved firmware updates for our Dell servers.
 
 Use the following steps to update the firmware and reboot your server:
 
@@ -63,7 +87,7 @@ Use the following steps to update the firmware and reboot your server:
     -	Confirm tools are installed by running the following command in a command prompt window (Windows) or terminal session         (Linux): ``racadm version``
 
 2.	Run the following commands in a command prompt window (Windows) or terminal session (Linux) to update the firmware:
-    -	For devices managed by Rackspace, execute: ``racadm update -f Catalog.xml -e 10.5.87.152/dell_firmware -t HTTP -a TRUE`` 
+    -	For devices managed by Rackspace, execute: ``racadm update -f Catalog.xml -e 10.5.87.152/dell_firmware -t HTTP -a TRUE``
     -	For devices not managed by Rackspace (Colo devices), execute: ``racadm update -f Catalog.xml -e 74.205.112.120/dell_firmware -t HTTP -a TRUE``
 
 The device reboots after the firmware update. Monitor the progress of the updates using the ``racadm jobqueue view`` command. A successful return looks like this:

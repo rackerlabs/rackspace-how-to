@@ -5,17 +5,38 @@ title: 'RPC mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-03-07'
 created_by: Marc Nourani
-last_modified_date: '2018-03-08'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-08-20'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
 Rackspace continues to evaluate and address a set of speculative execution
-vulnerabilities affecting certain CPU, commonly known as Meltdown and Spectre:
-[CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753),
-[CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715),
-and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754).
+vulnerabilities affecting certain CPUs. You can find more information about the vulnerabilities in the following locations:
+
+**Spectre and Meltdown**
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753)
+  - [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715)
+  - [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754)
+
+**Spectre and Meltdown variants 3A and 4** (May 21, 2018)
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639)
+  - [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640)
+  - [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A)
+
+**L1 Terminal Fault (L1TF) or Foreshadow** (August 14, 2018)
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615)
+  - [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620)
+  - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646)
 
 ### Rackspace Private Cloud - OpenStack
 

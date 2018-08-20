@@ -5,13 +5,37 @@ title: 'Windows OS mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-16'
 created_by: Marc Nourani
-last_modified_date: '2018-07-02'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-08-10'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
 
-Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain central processing units (CPUs), commonly known as Meltdown and Spectre: [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753), [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715), and [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754). 
+Rackspace continues to evaluate and address a set of speculative execution vulnerabilities affecting certain central processing units (CPUs). You can find more information about the vulnerabilities in the following locations:
+
+**Spectre and Meltdown**
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753)
+  - [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715)
+  - [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754)
+
+**Spectre and Meltdown variants 3A and 4** (May 21, 2018)
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639)
+  - [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640)
+  - [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A)
+
+**L1 Terminal Fault (L1TF) or Foreshadow** (August 14, 2018)
+
+Details related to the vulnerabilities can be found in:
+
+  - [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615)
+  - [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620)
+  - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646)
 
 It is important to note that the January 2018 Security Rollup Patch security patch, and other recent patches, have the capability to eliminate multiple possible vectors. However, for the patches to be fully functional, three additional registry keys must be implemented on each device, and the server must be rebooted for implementation. Rackspace is not pushing these keys because we have identified that devices might experience a performance impact or possible "blue screens" after these additional keys are implemented. Given this, we will not automatically install these keys unless customers opt-in to the remediation. We recommend that customers carefully consider the implications of applying the three additional registry keys and apply them as they deem appropriate. As a reminder, the main registry is required, and the patch must be installed for the additional keys to take effect.  
 
@@ -23,7 +47,7 @@ We have aligned with Microsoft guidance to patch your device and mitigate the vu
 
 **Note:** The patches apply to only Windows operating systems. Additional patches for hardware and firmware for all platforms will be required and are continuing to roll out. We are working with our vendors to secure Unified Extensible Firmware Interface (UEFI) firmware and Basic Input/Output System (BIOS) updates. Timing of availability for updates will vary from vendor to vendor, adding another layer of complexity to full remediation. Firmware updates are the final part of the process to protect against Variant 2 2017-5715 of Spectre. Because it’s likely these updates will require reboots, customers must opt in to the maintenance prior to execution.
 
-**Important:** Opting out of UEFI firmware updates and BIOS updates will result in not being protected against Variant 2 2017-5715 of Spectre. 
+**Important:** Opting out of UEFI firmware updates and BIOS updates will result in not being protected against Variant 2 2017-5715 of Spectre.
 
 ### Technical remediation
 
@@ -37,7 +61,7 @@ We have added new steps both for understanding and for those who want to fully r
 - The download and installation of the update will be dependent upon the device **Windows Updates** settings.
 - Check for updates to ensure the patch is available by going to the Windows Update control panel and checking for updates.
 
-**Note:** Server 2008 requires the following registry key to be set: 
+**Note:** Server 2008 requires the following registry key to be set:
 ``“HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\QualityCompat” /v cadca5fe-87d3-4b96-b7fb-a231484277cc``
 
 #### Step 2: Enable update protection
@@ -73,4 +97,4 @@ In addition to updating the registry, applying the update, and enabling update p
 Instructions for applying firmware updates are outlined in [Firmware/Microcode mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/firmware-microcode-mitigations-against-cpu-speculative-execution-vulnerabilities/).
 
 
-As always, please contact your support team if you have any questions. 
+As always, please contact your support team if you have any questions.
