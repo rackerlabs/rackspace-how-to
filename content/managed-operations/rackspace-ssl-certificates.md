@@ -12,8 +12,9 @@ product_url: managed-operations
 ---
 
 To purchase a Secure Sockets Layer (SSL) certificate from Rackspace, a customer
-must have one or more active servers in CORE. Rackspace SSL certificates are
-not available to customers who use only cloud servers.
+must have at least one active Linux&reg; or Windows&reg; dedicated server.
+Rackspace SSL certificates are not available to customers who use only cloud
+servers.
 
 ### To purchase a certificate
 
