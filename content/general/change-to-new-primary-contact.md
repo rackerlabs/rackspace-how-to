@@ -54,6 +54,5 @@ Use the following steps to submit a ticket to change the primary contact for you
 7. Fill out the details for your ticket and attach your saved Primary Contact Change Form to your ticket.
 8. Click **Create Ticket**.
 
-
 To learn more about changing your cloud account's information, see
 [Change account information](/how-to/change-account-information).
