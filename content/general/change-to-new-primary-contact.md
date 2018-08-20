@@ -22,6 +22,8 @@ You can download this form directly from the Cloud Control Panel or MyRackspace 
 
 #### MyRackspace Control Panel (Dedicated customers)
 
+Use the following steps to submit a ticket to change the primary contact for your account:
+
 1. In the upper-right corner of the MyRackspace Control Panel, click **Account** > **Docs and Forms**.
 2. In the **Account Forms** section, click **Primary Contact Change Form** in the **Account Forms** section.
 3. Fill out the downloaded form and save the edited file on your local machine.
@@ -33,11 +35,15 @@ You can download this form directly from the Cloud Control Panel or MyRackspace 
 
 #### MyRackspace Control Panel self-service option
 
+Use the following steps to change the primary contact for your account:
+
 1. In the top navigation bar, click **Account > User List**.
 2. In the **Account** sub-navigaton bar, click **Account Settings**.
 3. Click the pencil icon in the Primary Contact Information section to change the primary contact for your account.
 
 #### Cloud Control Panel
+
+Use the following steps to submit a ticket to change the primary contact for your account:
 
 1. In the upper-right corner of the Cloud Control Panel, click **Account** > **Docs and Forms**.
 2. Click the **Rackspace Account Change Forms** section.
