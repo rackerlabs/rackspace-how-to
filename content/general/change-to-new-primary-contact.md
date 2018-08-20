@@ -5,8 +5,8 @@ title: Change an account's primary contact
 type: article
 created_date: '2018-03-13'
 created_by: Rackspace Support
-last_modified_date: '2018-05-23'
-last_modified_by: Nate Archer
+last_modified_date: '2018-08-20'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -30,6 +30,12 @@ You can download this form directly from the Cloud Control Panel or MyRackspace 
 6. The **Ticket Details** section appears. Enter a short description of why you would like to change the primary contact for the account.
 7. Attach your saved Primary Contact Change Form to the ticket.
 8. Click **Create Ticket**.
+
+#### MyRackspace Control Panel self-service option
+
+1. In the top navigation bar, click **Account > User List**.
+2. In the **Account** sub-navigaton bar, click **Account Settings**.
+3. Click the pencil icon in the Primary Contact Information section to change the primary contact for your account.
 
 #### Cloud Control Panel
 
