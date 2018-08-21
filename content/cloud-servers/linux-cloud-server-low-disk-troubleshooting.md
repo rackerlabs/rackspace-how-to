@@ -28,7 +28,7 @@ This article describes the following troubleshooting steps in detail:
 - Check for open tickets.
 - Determine the amount of disk space.
 - Clean up the server.
-- Verify the new disk space after the clean up.
+- Verify the new disk space after the cleanup.
 
 ### Log in to the device
 
@@ -45,19 +45,19 @@ Ticket List** in the top navigation bar.
 
 ### Determine the amount of disk space
 
-To determine disk space, enter the following one-liner program on the command
+To determine disk space, enter the following one-line program on the command
 line to retrieve information on the server's current status:
 
       FS='./';resize;clear;echo "== Server Time: ==";date;echo -e "\n== Filesystem Information: ==";df -PTh ${FS} | column -t;echo -e "\n== Inode Information: ==";df -PTi ${FS} | column -t;echo -e "\n== Largest Directories: ==";du -hcx --max-depth=2 ${FS} 2>/dev/null | grep -P '^([0-9]\.*)*G(?!.*(\btotal\b|\./$))' | sort -rnk1,1 | head -10 | column -t;echo -e "\n== Largest Files: ==";find ${FS} -mount -ignore_readdir_race -type f -exec du {} + 2>&1 | sort -rnk1,1 | head -20 | awk 'BEGIN{ CONVFMT="%.2f";}{ $1=( $1 / 1024 )"M"; print;}' | column -t;echo -e "\n== Largest Files Older Than 30 Days: ==";find ${FS} -mount -ignore_readdir_race -type f -mtime +30 -exec du {} + 2>&1 | sort -rnk1,1 | head -20 | awk 'BEGIN{ CONVFMT="%.2f";}{ $1=( $1 / 1024 )"M"; print; }' | column -t;
 
 **Note**: You must `cd` to the alerting file system or change the variable
-`FS` at the beginning of the one-liner. For example, the alerting file system
-in the ticket might be `/` or `/var/log`. You can also view file system usage
-by entering the disk file system command `df -h` on the server.
+`FS` at the beginning of the one-line program. For example, the alerting file
+system in the ticket might be `/` or `/var/log`. You can also view file system
+usage by entering the disk file system command `df -h` on the server.
 
 **Example output**
 
-The following code block shows example output of this command:
+The following code block shows example output for this command:
 
       == Filesystem Information: ==
       Filesystem                 Type  Size   Used  Avail  Use%  Mounted on
@@ -128,14 +128,14 @@ low disk alerts have IRs that refer to inodes rather than disk space.
 Inodes are the number of directory and files permitted in a file system
 (directory entries). If you run out of inodes, the file system behaves in the
 same way as a full disk and generates a similar alert. Inode usage of 90% or
-more is considered CRITICAL.
+more is considered _critical_.
 
 ### Clean up the server
 
 Perform the following steps to delete old or unnecessary system files and
-folders:
+folders.
 
-Evaluate the status of the server by comparing the output from the one-liner
+Evaluate the status of the server by comparing the output from the one-line
 program to information from any previous related tickets, alerts, and automated
 diagnostics.
 
@@ -160,7 +160,7 @@ The following directories and files can be safely removed:
 - `/root/.rackspace/mngd_storage/`
 - `/root/.rackspace/nimbus-installer/`
 
-If the server is **not** running on a virtual machine (VM), you can also
+If the server is _not_ running on a virtual machine (VM), you can also
 delete the following file:
 
 - `/root/.rackspace/nimbusinstallers-*.tar.gz`
@@ -177,7 +177,7 @@ look for many small ones and delete them.
 
 ### Verify the new disk space after the clean up
 
-To determine disk space, run the same one-liner program that you ran earlier.
+To determine disk space, run the same one-line program that you ran earlier.
 Make a note of the amount of free space.
 
 ### Conclusion
