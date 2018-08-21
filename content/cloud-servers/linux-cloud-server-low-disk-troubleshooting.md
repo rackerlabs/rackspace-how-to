@@ -1,11 +1,11 @@
 ---
 permalink: linux-cloud-server-low-disk-troubleshooting/
-audit_date: '2018-08-16'
+audit_date: '2018-08-21'
 title: Linux Cloud Server low disk troubleshooting
 type: article
-created_date: '2018-08-16'
+created_date: '2018-08-21'
 created_by: Kate Dougherty
-last_modified_date: '2018-08-16'
+last_modified_date: '2018-08-21'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -33,7 +33,8 @@ This article describes the following troubleshooting steps in detail:
 ### Log in to the device
 
 Log in to your server by opening a remote desktop connection. For instructions,
-see ...
+see [Connect to a server by using SSH on Linux or Mac OS
+X](https://support.rackspace.com/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os/).
 
 ### Check support tickets
 
