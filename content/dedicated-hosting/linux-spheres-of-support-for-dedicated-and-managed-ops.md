@@ -78,7 +78,7 @@ The following mail servers are supported in the indicated areas:
 | Postfix | Yes | Yes | Yes | Yes |
 | Dovecot | Yes | Yes | Yes | Yes |
 
-**Note**: By their nature, cloud servers have ephemeral IP addresses which most email providers blacklist. Emails sent from a cloud server must go through a third-party application such as [Mailgun](https://www.mailgun.com/). Rackspace does not support mail hosting services on cloud servers and recomends [Rackspace Email Hosting](https://www.rackspace.com/en-us/email-hosting) for cloud environments.
+**Note**: By their nature, cloud servers have ephemeral IP addresses which most email providers blacklist. Emails sent from a cloud server must go through a third-party application such as [Mailgun](https://www.mailgun.com/). Rackspace recommends [Rackspace Email Hosting](https://www.rackspace.com/en-us/email-hosting) for cloud environments.
 
 ### Application servers
 
