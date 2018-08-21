@@ -5,8 +5,8 @@ title: Linux Spheres of Support for Dedicated and Managed Operations
 type: article
 created_date: '2017-03-03'
 created_by: Alex Juarez
-last_modified_date: '2017-06-02'
-last_modified_by: Alex Juarez
+last_modified_date: '2018-08-21'
+last_modified_by: Chris Moyer
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
