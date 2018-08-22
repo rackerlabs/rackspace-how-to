@@ -128,7 +128,7 @@ The following example shows the build option for a Managed Infrastructure server
 
     nova boot --flavor 2 --image [image] --meta build_config=core www.example.com
 
-The following example shows the build option for building Managed Operations server with a Rackspace user name and password only and backup ability:
+The following example shows the build option for building a Managed Operations server with a Rackspace user name and password only and backup ability:
 
     nova boot --flavor 2 --image [image] --meta build_config= rack_user_only,driveclient fileserver.example.com
 
@@ -144,7 +144,7 @@ standard and workload-optimized cloud servers only, you can obtain the Managed
 Operations or Managed Infrastructure post-build automation status via the
 Cloud Servers API. Look for the metadata key value  
 `informationrax_service_level_automation`. Depending on the current status of
-the Managed Cloud post-build automation process, the metadata key will have
+the Managed Cloud post-build automation process, the metadata key has
 one of the following values:
 
 - `Pending`
