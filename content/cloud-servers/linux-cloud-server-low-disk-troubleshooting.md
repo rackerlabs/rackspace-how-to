@@ -1,11 +1,11 @@
 ---
-permalink: linux-cloud-server-low-disk-troubleshooting/
+permalink: troubleshooting-low-disk-space-for-a-linux-cloud-server/
 audit_date: '2018-08-21'
-title: Linux Cloud Server low disk troubleshooting
+title: Troubleshooting low disk space for a Linux cloud server
 type: article
 created_date: '2018-08-21'
 created_by: Kate Dougherty
-last_modified_date: '2018-08-21'
+last_modified_date: '2018-08-23'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
