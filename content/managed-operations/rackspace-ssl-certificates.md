@@ -20,6 +20,21 @@ servers.
 
 To purchase an SSL certificate from Rackspace, take the following actions:
 
+1. Open the Customer Portal and click on **Network**.
+2. Select **SSL Certificate**.
+3. Click on **Actions** in the upper-right corner.
+4. Select **Purchase Certificate**.
+5. Choose the certificate you want from the list.
+
+After you have purchased a certificate, a ticket is generated, which provides
+the process for certificate installation.
+
+To learn more about the type of certificates, click on something to see a
+comparison chart that shows the following information:
+
+- Pricing by SSL type and duration
+- Details for the SSL, which you can see by clicking on the SSL column heading
+- Feature comparison by SSL type
 
 ### After you have a certificate
 
