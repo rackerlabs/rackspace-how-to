@@ -32,10 +32,10 @@ label. To identify warnings, look for the `Warning` label.
 
 If your website isn't loading correctly and the Apache error logs don't reveal
 a direct cause, you might be experiencing a MySQL issue. The Apache error logs
-might even allude to a MySQL issue if Apache is having difficulties connecting
+might allude to a MySQL issue if Apache is having difficulties connecting
 to MySQL. To get more information, navigate to the **/var/log** directory and
-review the MySQL error logs. On most server operating systems they are located
-at **/var/log/mysqld.log**.
+review the MySQL error logs. You can find these logs at
+**/var/log/mysqld.log** on most server operating systems.
 
 ### Server access logs
 
@@ -44,12 +44,12 @@ with failed logins, review the server access log that is located at
 **/var/log/auth.log**. This file shows you the IP addresses and users that are
 trying to access your server. This log is useful if you think that someone
 might be trying to force their way into your server. If this is a concern, you
-can locate the IP address that the user is coming from and then block that IP.
+can locate the IP address that the user is coming from and then block it.
 
 ### Networking logs
 
 Viewing networking logs is more complex because servers do not place this
-information in a log format unless you specifically create the scenario and
+information in a log format unless you specifically implement the
 rules for this task.
 
 As an alternative, you can use the [Rackspace
