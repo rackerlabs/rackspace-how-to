@@ -55,5 +55,6 @@ This introduction covers everything you'll need to know as a new Rackspace custo
 - [Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server)
 - [Resize standard servers](/how-to/managing-your-server-resizing-standard-and-general-purpose-servers)
 - [Troubleshooting low disk space for a Linux cloud server](/how-to/troubleshooting-low-disk-space-for-a-linux-cloud-server)
+- [Using server logs](/how-to/using-server-logs) 
 - [Reset your server password](/how-to/reset-your-server-password)
 - [Deleting your server](/how-to/deleting-your-server)
