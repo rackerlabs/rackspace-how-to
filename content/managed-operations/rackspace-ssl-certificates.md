@@ -29,8 +29,9 @@ To purchase an SSL certificate from Rackspace, take the following actions:
 After you have purchased a certificate, a ticket is generated, which provides
 the process for certificate installation.
 
-To learn more about the type of certificates, click on something to see a
-comparison chart that shows the following information:
+To learn more about the type of certificates, click on **Compare SSL
+Certificate** in the **Certificate Type** section to see a comparison chart that
+shows the following information:
 
 - Pricing by SSL type and duration
 - Details for the SSL, which you can see by clicking on the SSL column heading
