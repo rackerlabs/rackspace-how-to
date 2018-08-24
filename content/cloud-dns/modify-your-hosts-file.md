@@ -13,7 +13,7 @@ product_url: cloud-dns
 
 Modifying your **hosts** file enables you to override the domain name system  
 (DNS) for a domain on a particular machine. This process is useful when you
-want to test your site without the test link prior to going live with SSL,  
+want to test your site without the test link prior to going live with SSL,
 verify that an alias site works prior to DNS changes, and for other
 DNS-related reasons. Modifying your **hosts** file causes your local machine
 to look directly at the IP address that you specify.
