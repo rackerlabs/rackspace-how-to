@@ -11,7 +11,7 @@ product: Cloud DNS
 product_url: cloud-dns
 ---
 
-Modifying your **hosts** file enables you to override the domain name system  
+Modifying your **hosts** file enables you to override the domain name system
 (DNS) for a domain on a specific machine. This process is useful when you
 want to test your site without the test link prior to going live with SSL,
 verify that an alias site works prior to DNS changes, and for other
@@ -71,8 +71,9 @@ Use the following instructions if you're running Windows 7 or Windows Vista:
 
      Notepad opens.
 4.  In Notepad, select **File > Open**.
-5.  In the **File name** field, enter  
-    **C:\Windows\System32\Drivers\etc\hosts**.
+5.  In the **File name** field, enter the following path:
+
+    **C:\Windows\System32\Drivers\etc\hosts**
 6.  Select **Open**.
 7.  Make the necessary changes to the file.
 8.  Select **File > Save** to save your changes.
