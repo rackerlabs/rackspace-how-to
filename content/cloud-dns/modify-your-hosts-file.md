@@ -5,7 +5,7 @@ title: Modify your hosts file
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-08-24'
+last_modified_date: '2018-08-27'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
