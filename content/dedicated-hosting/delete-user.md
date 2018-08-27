@@ -20,4 +20,4 @@ Before you begin, ensure that you have permission to manage users in the Custome
 3. Click the user that you want to delete.
 4. In the top right-hand corner, click the **Actions > Delete User**.
 5. Complete the template to remove user access to the Customer Portal and systems.
-6. Click **Submit Request**. The system generates a ticket that tracks the progress of the removal
+6. Click **Submit Request**. The system generates a ticket that tracks the progress of the removal.
