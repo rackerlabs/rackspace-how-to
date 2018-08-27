@@ -23,6 +23,7 @@ For Cloud DNS, we have made available a public ReST API to interact with our DNS
 - [Rackspace Cloud DNS - Additional resources](/how-to/rackspace-cloud-dns-additional-resources)
 - [Cloud DNS FAQ](/how-to/cloud-dns-faq)
 - [Choosing DNS record types](/how-to/choosing-dns-record-types)
+- [Modify your hosts file](/how-to/modify-your-hosts-file)
 
 ### Create DNS records
 

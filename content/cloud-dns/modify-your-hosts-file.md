@@ -19,8 +19,8 @@ want to perform the following tasks:
 - Verify that an alias site works prior to DNS changes.
 - Work on other DNS-related tasks.
 
-Modifying your **hosts** file causes your local machine
-to look directly at the Internet Protocol (IP) address that you specify.
+Modifying your **hosts** file causes your local machine to look directly at
+the Internet Protocol (IP) address that you specify.
 
 Modifying the hosts file involves adding two entries to it. Each entry
 contains the IP address to which you want the site to resolve and a version of
