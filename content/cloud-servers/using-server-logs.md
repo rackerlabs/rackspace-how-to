@@ -30,8 +30,8 @@ error logs at the following locations:
 - Ubuntu: **/var/log/apache2**
 
 Apache server logs show you any errors that your site is experiencing.
-To identify errors within the logs, look for the `Error`
-label. To identify warnings, look for the `Warning` label.
+To identify errors within the logs, look for the `Error` label. To identify
+warnings, look for the `Warning` label.
 
 ### MySQL error logs
 
