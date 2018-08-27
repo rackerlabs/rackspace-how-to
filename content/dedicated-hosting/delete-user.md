@@ -1,7 +1,7 @@
 ---
 permalink: delete-users/
 audit_date: '2018-08-27'
-title: Delete a User from the Rackspace Customer Portal
+title: Delete a user from the Rackspace Customer Portal
 type: article
 created_date: '2018-08-27'
 created_by: Rackspace Support
@@ -13,7 +13,7 @@ product_url: dedicated-hosting
 
 Delete a user from the Rackspace Customer Portal when the user no longer needs access to the environment.
 
-Before you begin, ensure that your user has Manage Users permissions in the Customer Portal.
+Before you begin, ensure that you have permission to manage users in the Customer Portal. Then use the following steps to delete a user:
 
 1. Log in to the [Rackspace Customer Portal](https://my.rackspace.com).
 2. At the top of the page, click **Account > User Management**.
