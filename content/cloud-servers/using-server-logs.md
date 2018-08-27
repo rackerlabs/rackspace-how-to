@@ -1,11 +1,11 @@
 ---
 permalink: using-server-logs/
-audit_date: '2018-08-23'
+audit_date: '2018-08-27'
 title: Using server logs
 type: article
-created_date: '2018-08-23'
+created_date: '2018-08-27'
 created_by: Kate Dougherty
-last_modified_date: '2018-08-23'
+last_modified_date: '2018-08-27'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -23,9 +23,14 @@ that are located there.
 ### Apache error logs
 
 If you're running Apache as your web server and your website isn't loading
-correctly, you might want to review the Apache error logs. You can find these
-logs at **/var/log/httpd/**. Apache server logs show you any errors that your
-site is experiencing. To identify errors within the logs, look for the `Error`
+correctly, you might want to review the Apache error logs. You can find Apache
+error logs at the following locations:
+
+- CentOS: **/var/log/httpd/**
+- Ubuntu: **/var/log/apache2**
+
+Apache server logs show you any errors that your site is experiencing.
+To identify errors within the logs, look for the `Error`
 label. To identify warnings, look for the `Warning` label.
 
 ### MySQL error logs
@@ -40,11 +45,18 @@ review the MySQL error logs. You can find these logs at
 ### Server access logs
 
 To see who is accessing your server or the IP addresses that are associated
-with failed logins, review the server access log that is located at
-**/var/log/auth.log**. This file shows you the IP addresses and users that are
-trying to access your server. This log is useful if you think that someone
-might be trying to force their way into your server. If this is a concern, you
-can locate the IP address that the user is coming from and then block it.
+with failed logins, review the server access log. This log shows you the IP
+addresses and users that are trying to access your server.
+
+You can find this log at one of the following locations:
+
+- **/var/log/auth.log**
+- **/var/log/apache2/access.log**
+- **/var/log/httpd/access.log**
+
+This step is useful if you think that someone might be trying to force their
+way into your server. If this is a concern, you can locate the IP address that
+the user is coming from and then block it.
 
 ### Networking logs
 
