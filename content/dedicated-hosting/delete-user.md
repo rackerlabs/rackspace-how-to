@@ -5,7 +5,7 @@ title: Delete a user from the Rackspace Customer Portal
 type: article
 created_date: '2018-08-27'
 created_by: Rackspace Support
-last_modified_date: '2018-08-27'
+last_modified_date: '2018-08-28'
 last_modified_by: Chris Moyer
 product: dedicated-hosting
 product_url: dedicated-hosting
