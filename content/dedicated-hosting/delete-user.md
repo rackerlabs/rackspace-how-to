@@ -1,5 +1,5 @@
 ---
-permalink: delete-users/
+permalink: delete-users-from-customer-portal/
 audit_date: '2018-08-27'
 title: Delete a user from the Rackspace Customer Portal
 type: article
