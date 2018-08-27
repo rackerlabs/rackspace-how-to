@@ -13,31 +13,36 @@ product_url: cloud-dns
 
 Modifying your **hosts** file enables you to override the domain name system
 (DNS) for a domain on a specific machine. This process is useful when you
-want to test your site without the test link prior to going live with SSL,
-verify that an alias site works prior to DNS changes, and for other
-DNS-related reasons. Modifying your **hosts** file causes your local machine
-to look directly at the IP address that you specify.
+want to perform the following tasks:
+
+- Test your site without the test link prior to going live with SSL.
+- Verify that an alias site works prior to DNS changes.
+- Work on other DNS-related tasks.
+
+Modifying your **hosts** file causes your local machine
+to look directly at the Internet Protocol (IP) address that you specify.
 
 Modifying the hosts file involves adding two entries to it. Each entry
 contains the IP address to which you want the site to resolve and a version of
-the Internet address. For example, adding the following two entries points
-**www.domain.com** and **domain.com** to Rackspace's current Refreshed PHP5
+the Internet address. For example, add the following two entries points,
+**www.domain.com** and **domain.com**, to Rackspace's current refreshed PHP5
 (PHP5-ITK) cluster:
 
     64.49.219.194 www.domain.com
     64.49.219.194 domain.com
 
-This article provides instructions for locating and editing the `hosts` file on
-the following operating systems:
+This article provides instructions for locating and editing the **hosts** file
+on the following operating systems:
 
--   Microsoft&reg; Windows&reg; 10, Windows 8, Windows 7, and Windows Vista&tm;
--   Microsoft&reg; Windows NT&tm;, Windows 2000, and Windows XP
+-   Microsoft&reg; Windows&reg; 10, Windows 8, Windows 7, and
+    Windows Vista&trade;
+-   Microsoft Windows NT&trade;, Windows 2000, and Windows XP
 -   Linux&reg;
 -   MacOS&reg; X versions 10.0 through 10.1.5
--   MacOS&reg; X versions 10.6 through 10.12
+-   MacOS X versions 10.6 through 10.12
 
 After you add the domain information and save the file, your system begins to
-resolve to the IP address you specified. When testing is complete, remove
+resolve to the IP address that you specified. When testing is complete, remove
 these entries.
 
 ### Windows
