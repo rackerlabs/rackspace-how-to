@@ -13,11 +13,11 @@ product_url: dedicated-hosting
 
 Delete a user from the Rackspace Customer Portal when the user no longer needs access to the environment.
 
-1. Log in to the [Rackspace Customer Portal](https://my.rackspace.com) as an Administrator.
-2. At the top of the page, click **Account**.
-3. Click **User List**.
-4. Click the user that you want to delete.
-5. In the top right-hand corner, click the **Actions** button.
-6. Click **Delete User**.
-7. Complete the template to remove user access to the Customer Portal and systems.
-8. Click **Save**. The system generates a ticket that tracks the progress of the removal.
+Before you begin, ensure that your user has Manage Users permissions in the Customer Portal.
+
+1. Log in to the [Rackspace Customer Portal](https://my.rackspace.com).
+2. At the top of the page, click **Account > User Management**.
+3. Click the user that you want to delete.
+4. In the top right-hand corner, click the **Actions > Delete User**.
+5. Complete the template to remove user access to the Customer Portal and systems.
+6. Click **Submit Request**. The system generates a ticket that tracks the progress of the removal.
