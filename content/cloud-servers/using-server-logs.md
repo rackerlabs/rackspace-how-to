@@ -22,12 +22,12 @@ that are located there.
 
 ### Apache error logs
 
-If you're running Apache as your web server and your website isn't loading
+If you're running Apache&reg; as your web server and your website isn't loading
 correctly, you might want to review the Apache error logs. You can find Apache
 error logs at the following locations:
 
 - CentOS: **/var/log/httpd/**
-- Ubuntu: **/var/log/apache2/**
+- Ubuntu&reg;: **/var/log/apache2/**
 
 Apache server logs show you any errors that your site is experiencing.
 To identify errors within the logs, look for the `Error` label. To identify
@@ -44,9 +44,9 @@ review the MySQL error logs. You can find these logs at
 
 ### Server access logs
 
-To see who is accessing your server or the IP addresses that are associated
-with failed logins, review the server access log. This log shows you the IP
-addresses and users that are trying to access your server.
+To see who is accessing your server or the Internet Protocol (IP) addresses
+that are associated with failed logins, review the server access log. This log
+shows you the IP addresses and users that are trying to access your server.
 
 You can find this log at one of the following locations:
 
