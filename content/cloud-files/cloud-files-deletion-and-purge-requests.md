@@ -1,9 +1,9 @@
 ---
 permalink: cloud-files-deletion-and-purge-requests
-audit_date:
+audit_date: '2018-08-28'
 title: Cloud Files Deletion and Purge Requests
 type: article
-created_date: '2018-08-16'
+created_date: '2018-08-28'
 created_by: Shaun Crumpler
 last_modified_date: 
 last_modified_by: 
@@ -11,11 +11,17 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
+This article discusses Cloud Files purge requests, delete requests, and the information that you should include with these requests. Rackspace defines purge and delete requests in the following way:
+
+- **Purge**: A purge request is a request to clear the cache at the edge nodes from the Rackspace CDN provider.  By clearing the cache, new versions of the files in the container are able to appear on the CDN. A purge is sometimes needed if a high Time To Live is placed on a container.
+
+- **Delete**: A delete request is when the desire is for a container and the files within to be permanently deleted.  This 
+  is needed when a container and the files within are no longer needed and upon the successful deletion, billing for the 
+  files will be stopped.
+
 The daily allowable for Cloud Files purges is 25 items.  This can cause issues for containers with a hefty number of files though, so container purges are needed at times.  First, it is important to understand what exactly is needing to be done with Cloud Files, either a purge or a delete.  They are two very different things.
 
-**Purge**: A purge request is to clear the cache at the edge nodes from the Backspace CDN provider.  By clearing the cache, new versions of files in the container are able to appear on the CDN, and is needed at times if a high Time To Live is placed on a container.
 
-**Delete**: A delete request is when the desire is for a container and the files within to be permanently deleted.  This is needed when a container and the files within are no longer needed and upon the successful deletion, billing for the files will be stopped.
 
 Understanding what is needed, a ticket can now be opened.
 
