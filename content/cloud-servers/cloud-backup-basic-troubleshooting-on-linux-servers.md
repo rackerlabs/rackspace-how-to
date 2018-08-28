@@ -45,6 +45,7 @@ Use the following steps to establish a connection:
 2. From the list of Cloud Backup systems, click on the backup server name.
 
    This action displays the following details about the backup system:
+   
    - The Internet Protocol (IP) address of the server
    - The system type
    - The server region
