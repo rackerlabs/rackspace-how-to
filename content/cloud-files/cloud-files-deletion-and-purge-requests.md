@@ -5,8 +5,8 @@ title: Cloud Files Deletion and Purge Requests
 type: article
 created_date: '2018-08-28'
 created_by: Shaun Crumpler
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2018-08-28'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
