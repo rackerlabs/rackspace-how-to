@@ -1,11 +1,11 @@
 ---
 permalink: using-server-logs/
-audit_date: '2018-08-27'
+audit_date: '2018-08-28'
 title: Using server logs
 type: article
-created_date: '2018-08-27'
+created_date: '2018-08-28'
 created_by: Kate Dougherty
-last_modified_date: '2018-08-27'
+last_modified_date: '2018-08-28'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
