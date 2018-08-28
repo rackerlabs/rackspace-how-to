@@ -11,7 +11,7 @@ product_url: cloud-servers
 ---
 
 This article assists with issues that customers are experiencing when Cloud Backup issues
-are caused by the backup agent being disconnected on the Linux instance, including
+are caused by the backup agent being disconnected on the Linux&reg; instance, including
 the following problems:
 
 * Backups have not been running.
