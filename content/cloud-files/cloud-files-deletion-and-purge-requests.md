@@ -36,8 +36,7 @@ For a purge request, add the following information to the ticket:
 - The name of the container.
 - The region in which the container is located.
 - A note indicating that you are requesting a purge of the specificied data, and that you understand that the purge is 
-  needed to refresh the cache on the CDN. You should also note that you understand that files in the container, as well as   
-  the container itself, will not be deleted.
+  needed to refresh the cache on the CDN. You should also note that you understand that files in the container, as well as   the container itself, will not be deleted.
 
 For a delete request, add the following information to the ticket:
 
