@@ -20,16 +20,16 @@ the following problems:
 
 As a Managed Infrastructure customer who administers your own servers, this article helps
 you diagnose if the server is experiencing an issue that you can remedy, or if you should
-escalate the issue to a member of Rackspace Support. This article provide instructions with
+escalate the issue to a member of Rackspace Support. This article provides instructions with
 helpful information that you can use to troubleshoot the issue or include in a ticket when
-you create onet.
+you create one.
 
 ## Check for open issues
 
 Before you restart the DriveClient service, check [status.rackspace.com](https://status.rackspace.com)
 to ensure that there are no open issues for Cloud Backup that could be impacting your server instance.
 In addition, check the current support tickets to ensure that there has not been an incident
-that is causing the lack of accessibility of the server. 
+that is causing the lack of server accessibility. 
 
 To check for open support tickets, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/)
 and click **Tickets > Ticket List** in the top navigation bar. If there is no open support ticket
