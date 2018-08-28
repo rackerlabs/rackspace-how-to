@@ -27,7 +27,7 @@ correctly, you might want to review the Apache error logs. You can find Apache
 error logs at the following locations:
 
 - CentOS: **/var/log/httpd/**
-- Ubuntu: **/var/log/apache2**
+- Ubuntu: **/var/log/apache2/**
 
 Apache server logs show you any errors that your site is experiencing.
 To identify errors within the logs, look for the `Error` label. To identify
