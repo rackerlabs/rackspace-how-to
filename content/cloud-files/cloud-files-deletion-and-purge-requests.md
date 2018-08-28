@@ -11,28 +11,41 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-This article discusses Cloud Files purge requests, delete requests, and the information that you should include with these requests. Rackspace defines purge and delete requests in the following way:
+This article discusses Cloud Files purge requests, delete requests, and the information that you should include with these 
+requests. 
 
-- **Purge**: A purge request is a request to clear the cache at the edge nodes from the Rackspace CDN provider.  By clearing the cache, new versions of the files in the container are able to appear on the CDN. A purge is sometimes needed if a high Time To Live is placed on a container.
+Rackspace defines purge and delete requests in the following way:
 
-- **Delete**: A delete request is when the desire is for a container and the files within to be permanently deleted.  This 
-  is needed when a container and the files within are no longer needed and upon the successful deletion, billing for the 
-  files will be stopped.
+- **Purge**: A purge request is a request to clear the cache at the edge nodes from the Rackspace Content Delivery Network 
+  (CDN) provider. Clearing the cache enables new versions of the files in the container to appear on the CDN. A purge is 
+  sometimes needed if a high time to live is placed on a container.
 
-The daily allowable for Cloud Files purges is 25 items.  This can cause issues for containers with a hefty number of files though, so container purges are needed at times.  First, it is important to understand what exactly is needing to be done with Cloud Files, either a purge or a delete.  They are two very different things.
+- **Delete**: A delete request is a request to permanently delete a container and the files within it. A delete request 
+  is required when a container and the files within it are no longer needed. After the delete request is completed 
+  successfully, billing for the files stops.
+  
+It is important to understand whether you need to request a purge or a delete operation.
 
+Cloud Files customers may purge up to 25 items per day. However, this limit can cause issues for containers that are 
+associated with many files. As a result, a container purge might be necessary. 
 
+After you understand which operation needs to be performed, you can open a ticket.
 
-Understanding what is needed, a ticket can now be opened.
+For a purge request, add the following information to the ticket:
 
-For a purge, please add the following to the ticket:
-a. The container name
-b. The region that the container is in
-c. That you are requesting a purge of the data above and understand that the purge is needed to refresh the cache on the CDN and understand that files in the container, as well as the container itself, will not be deleted.
+- The name of the container.
+- The region in which the container is located.
+- A note indicating that you are requesting a purge of the specificied data, and that you understand that the purge is 
+  needed to refresh the cache on the CDN. You should also note that you understand that files in the container, as well as   
+  the container itself, will not be deleted.
 
-For a deletion, please add the following to the ticket:
-a. The container name
-b. The region that the container is in
-c. That you understand that the files in the container that is to be deleted will irrevocably be deleted and that there will be no way to get back this data once the deletion is completed.
+For a delete request, add the following information to the ticket:
 
-By providing the above information, Rackspace support can expedite the ticket.  In the case of the deletion request, understanding the differences between a purge and a delete request and stating such in the ticket will reduce the amount of responses for deletion verification before ticket resolution.
+- The name of the container.
+- The region in which the container is located.
+- A note indicating that you understand that the files in the container to be deleted will be deleted irrevocably, 
+  and that there will be no way to retrieve this data after the deletion is complete.
+
+This information enables Rackspace Support to expedite your ticket. In addition, stating that you understand the differences 
+between a purge and a delete request in a delete request ticket reduces the number of communications that are required to 
+verify your deletion request.
