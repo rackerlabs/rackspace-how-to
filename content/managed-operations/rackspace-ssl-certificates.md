@@ -26,8 +26,8 @@ To purchase an SSL certificate from Rackspace, take the following actions:
 4. Select **Purchase Certificate**.
 5. Choose the certificate you want from the list.
 
-After you have purchased a certificate, a ticket is generated, which provides
-the process for certificate installation.
+After you purchase a certificate, a ticket is generated that provides
+instructions for certificate installation.
 
 To learn more about the certificate types, click on **Compare SSL
 Certificate** in the **Certificate Type** section to see a comparison chart that
@@ -40,5 +40,5 @@ shows the following information:
 ### After you have a certificate
 
 For help installing your new SSL certificate, see [Install an SSL certificate
-on Apache](/how-to/installing-an-ssl-certificate-on-apache/)
+on Apache](/how-to/installing-an-ssl-certificate-on-apache/).
 
