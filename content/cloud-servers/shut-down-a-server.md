@@ -14,8 +14,8 @@ product_url: cloud-servers
 A common use case for shutting down a server is to determine whether the
 server is still actively in use. Sometimes shutting down a server is
 the quickest and easiest way to make this determination. Shutting
-down the server will *not* end the charges for the server. As long as
-the server is utilizing resources, it will accrue charges.
+down the server does *not* end the charges for the server. As long as
+the server is utilizing resources, it continues to accrue charges.
 
 Use the following commands to shut down a server:
 
