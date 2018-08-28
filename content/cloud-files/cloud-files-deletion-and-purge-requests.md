@@ -1,7 +1,7 @@
 ---
 permalink: cloud-files-deletion-and-purge-requests
 audit_date: '2018-08-28'
-title: Cloud Files Deletion and Purge Requests
+title: Cloud Files delete and purge requests
 type: article
 created_date: '2018-08-28'
 created_by: Shaun Crumpler
