@@ -65,5 +65,5 @@ information in a log format unless you specifically implement the
 rules for this task.
 
 As an alternative, you can use the [Rackspace
-Intelligence](https://support.rackspace.com/how-to/rackspace-intelligence-faq/#top) monitoring tool. This tool enables you to set up a monitoring alert for
+Intelligence](/how-to/rackspace-intelligence-faq/#top) monitoring tool. This tool enables you to set up a monitoring alert for
 networking and view monitoring data in a graphical format.
