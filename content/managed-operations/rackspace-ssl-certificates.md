@@ -5,8 +5,8 @@ title: 'Rackspace SSL certificates'
 type: article
 created_date: '2018-08-20'
 created_by: Cat Lookabaugh
-last_modified_date:
-last_modified_by:
+last_modified_date:'2018-08-20'
+last_modified_by:Cat Lookabaugh
 product: Managed Operations
 product_url: managed-operations
 ---
