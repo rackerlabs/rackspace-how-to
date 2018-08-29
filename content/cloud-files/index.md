@@ -19,6 +19,7 @@ Store it on Cloud Files, serve it fast on Akamai's CDN. Cloud Files, powered by 
 - [Why Should I Use Cloud Files?](/how-to/why-choose-cloud-files)
 - [Best practices for using Cloud Files](/how-to/best-practices-for-using-cloud-files)
 - [Using CNAMEs with Cloud Files containers](/how-to/using-cnames-with-cloud-files-containers)
+- [Cloud Files delete and purge requests](/how-to/cloud-files-deletion-and-purge-requests)
 
 ###  Cloud Files API and SDKs
 
