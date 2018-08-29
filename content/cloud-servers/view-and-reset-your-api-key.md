@@ -1,12 +1,12 @@
 ---
 permalink: view-and-reset-your-api-key/
-audit_date:
+audit_date: '08-30-2018'
 title: View and reset your API key
 type: article
 created_date: '2013-02-05'
 created_by: Kyle Laffoon
-last_modified_date: '2017-03-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-08-29'
+last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
 ---
