@@ -5,8 +5,8 @@ title: Cloud Servers with Managed Operations support for Windows
 type: article
 created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2017-06-06'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-08-29'
+last_modified_by: Chris Moyer
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -29,6 +29,8 @@ operating system for Windows cloud servers:
 
 - [Windows Server 2012 with Service Pack
  R2](http://technet.microsoft.com/en-US/windowsserver/hh534429)
+
+- [Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/windows-server)
 
 **Note:** Detailed information about Linux support is located in [Linux Spheres of Support for Dedicated and Managed Operations](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops).
 
