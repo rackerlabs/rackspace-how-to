@@ -35,16 +35,16 @@ For a purge request, add the following information to the ticket:
 
 - The name of the container.
 - The region in which the container is located.
-- A note indicating that you are requesting a purge of the specificied data, and that you understand that the purge is 
+- A note indicating that you are requesting a purge of the specified data, and that you understand that the purge is 
   needed to refresh the cache on the CDN. You should also note that you understand that files in the container, as well as   the container itself, will not be deleted.
 
 For a delete request, add the following information to the ticket:
 
 - The name of the container.
 - The region in which the container is located.
-- A note indicating that you understand that the files in the container to be deleted will be deleted irrevocably, 
-  and that there will be no way to retrieve this data after the deletion is complete.
+- A note indicating that you understand that the files in the container to be deleted will be irrevocably deleted, 
+  and that there is no way to retrieve this data after the deletion is complete.
 
 This information enables Rackspace Support to expedite your ticket. In addition, stating that you understand the differences 
-between a purge and a delete request in a delete request ticket reduces the number of communications that are required to 
-verify your deletion request.
+between a purge and a delete request in the ticket reduces the number of communications that are required to 
+verify your request.
