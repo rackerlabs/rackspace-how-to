@@ -1,6 +1,6 @@
 ---
 permalink: check-for-a-security-compromise-rescue-mode-investigation/
-audit_date:
+audit_date: '2018-08-31'
 title: 'Check for a security compromise: Rescue mode investigation'
 type: article
 created_date: '2013-04-26'
