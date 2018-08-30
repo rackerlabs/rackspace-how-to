@@ -1,6 +1,6 @@
 ---
 permalink: view-and-reset-your-api-key/
-audit_date: '08-30-2018'
+audit_date: '2018-08-30'
 title: View and reset your API key
 type: article
 created_date: '2013-02-05'
