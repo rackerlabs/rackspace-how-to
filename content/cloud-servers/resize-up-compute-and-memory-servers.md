@@ -20,6 +20,8 @@ allocation.
 **Note:** Compute and memory servers can only be resized up. They can’t be
 resized down.
 
+Use the following steps to resize up your servers:
+
 1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
 
 2. In the top navigation bar, click **Servers > Cloud Servers** to view a list
@@ -28,31 +30,31 @@ resized down.
 3. Click the gear icon next to the server that you want to resize, and then
    click **Resize**.
 
-   A pop-up window that lists your server size options is displayed.
+   A pop-up window that lists your server size options displays.
 
-4. Select a new server size and then click **Resize Server**.
+4. Select a new server size, and then click **Resize Server**.
 
    **Note:** Each server size has a different hourly cost for uptime, and the
-   new cost goes into effect when the server resize process is completed. This
+   new cost goes into effect when the server resize process completes. This
    could mean that you pay different rates for the same server within a single
    billing cycle.
 
-   A notification displays prompting you to verify the changes you made to
+   A notification displays prompting you to verify the changes that you made to
    your system resources and that there was no adverse impact to your server.
 
 5. Verify that your server was resized correctly by remotely logging in to
    your server and verifying your system resources and filesystem integrity.
 
    **Note:** Verification is an important step because it is the last chance
-   you will have to revert to the original size and cancel any changes to your
+   you have to revert to the original size and cancel any changes to your
    server.
 
    For a Linux server, you can Secure Shell (SSH) to either the public or
-   private IP address and run the commands `df -h` (Hard Disk usage) and
-   `free -m` (available RAM memory) to verify the changes.
+   private Internet Protocol (IP) address and run the commands `df -h` (hard
+   disk usage) and `free -m` (available RAM memory) to verify the changes.
 
-   For a Windows server, additional steps are required to use additional space
-   after resizing up. For more information, see [Adding Disk Space After
+   For a Windows&reg; server, additional steps are required to use additional
+   space after resizing up. For more information, see [Adding Disk Space After
    Resizing a Windows Server 2012 Cloud
    Server](/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
 
@@ -63,7 +65,7 @@ resized down.
    Confirming the resize changes the server status. The process is complete
    when the **Status** reads as **Active**, the **Current Action** is
    **None**, and the server has come back up from a reboot. Any web services
-   that you had running may require you to log in and manually restart them.
+   that you had running might require you to log in and manually restart them.
 
    **Note**: Resizes are automatically confirmed after 24 hours. Therefore,
    you cannot revert a server after you have manually confirmed the resize or
