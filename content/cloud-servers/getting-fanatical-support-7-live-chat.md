@@ -11,7 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Rackspace has Support Technicians available 24 hours a day to answer any questions you have. You can find a link to Live Chat at the bottom of the [Rackspace homepage](https://www.rackspace.com). Under the Live Chat link, you will be directed into a Live Chat session with specialists trained to support our products. Choose the appropriate Live Chat link for the product with which you need assistance.
+Rackspace Support Technicians are available 24 hours a day to answer any questions that you have.
+
+After you click the **Live Chat** link at the bottom of the [Rackspace homepage](https://www.rackspace.com), you will interact with a specialist trained to support our products.
 
 ### Additional resources
 
