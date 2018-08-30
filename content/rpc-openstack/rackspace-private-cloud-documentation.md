@@ -13,7 +13,7 @@ product_url: rpc-openstack
 
 [Rackspace Private Cloud Powered by
 OpenStack&reg;](http://www.rackspace.com/cloud/private/openstack)
-enables you to install an OpenStack private cloud with the configuration that  
+enables you to install an OpenStack private cloud with the configuration that
 Rackspace OpenStack specialists recommend.
 
 Rackspace Private Cloud Powered by OpenStack uses Ansible&trade; to create an
@@ -28,7 +28,7 @@ For documentation for Rackspace Private Cloud, see the following resources:
   documentation](https://developer.rackspace.com/docs/#docs-private-cloud)
 - [Support documentation](/how-to/rpc-openstack)
 
-For developer documentation for the community, see the following resources:
+For developer communities, see the following resources:
 
 - [The openstack-ansible project](https://launchpad.net/openstack-ansible)
 - [OpenStack-Ansible
