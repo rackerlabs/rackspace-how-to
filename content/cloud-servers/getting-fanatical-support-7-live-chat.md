@@ -1,18 +1,17 @@
 ---
 permalink: getting-fanatical-support-7-live-chat/
-audit_date:
+audit_date: 2018-08-30'
 title: Get support by using Live Chat
 type: article
 created_date: '2012-03-20'
 created_by: Rackspace Support
-last_modified_date: '2016-06-23'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-08-30'
+last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Rackspace has Support Technicians standing by 24 hours a day to answer any questions you have. You can find a link to Live Chat on the [Rackspace homepage](https://www.rackspace.com) as a expanding tab on the right-hand side of the page. Under the Live Chat link, you will be directed into a Live Chat session with specialists
-trained to support our various products. Choose the appropriate Live Chat link for the product you need assistance with.
+Rackspace has Support Technicians available 24 hours a day to answer any questions you have. You can find a link to Live Chat at the bottom of the [Rackspace homepage](https://www.rackspace.com). Under the Live Chat link, you will be directed into a Live Chat session with specialists trained to support our products. Choose the appropriate Live Chat link for the product with which you need assistance.
 
 ### Additional resources
 
