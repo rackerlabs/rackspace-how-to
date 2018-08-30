@@ -5,7 +5,7 @@ title: View and reset your API key
 type: article
 created_date: '2013-02-05'
 created_by: Kyle Laffoon
-last_modified_date: '2018-08-29'
+last_modified_date: '2018-08-30'
 last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
@@ -17,7 +17,9 @@ Before you can start using Rackspace APIs, you need to have your API key. Your A
 
 ### To view or reset your API key
 
-**Note:** When you reset your API key, any third-party applications are disconnected until you set the new API key in your application. If you are using your API key as a part of a server code with a site or application, the site or application will also break and could potentially affect your day-to-day operations. We recommend updating your API key for any application to which you connected with the previous API key.
+**Note:** When you reset your API key, any third-party applications are disconnected until you set the new API key in your application. If you are using your API key as a part of a server code with a site or application, the site or application also breaks and potentially affects your day-to-day operations. We recommend updating your API key for any application to which you connected with the previous API key.
+
+To view or reset your API key, use the following steps:
 
 1.	In the upper-right corner of the Cloud Control Panel, click the ***userName*** menu and select **My Profile & Settings**.
 
