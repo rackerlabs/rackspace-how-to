@@ -13,8 +13,8 @@ product_url: cloud-servers
 
 **Previous section:** [Resize standard and general purpose servers](/how-to/resize-standard-and-general-purpose-servers/)
 
-This article shows you how to resize up a computer or memory server by using
-the Cloud Control Panel. Resizing a server changes the RAM and disk space
+This article shows you how to use the Cloud Control Panel to resize up a
+compute or memory server. Resizing a server changes the RAM and disk space
 allocation.
 
 **Note:** Compute and memory servers can only be resized up. They can’t be
