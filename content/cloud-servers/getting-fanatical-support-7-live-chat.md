@@ -1,6 +1,6 @@
 ---
 permalink: getting-fanatical-support-7-live-chat/
-audit_date: 2018-08-30'
+audit_date: '2018-08-30'
 title: Get support by using Live Chat
 type: article
 created_date: '2012-03-20'
