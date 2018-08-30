@@ -5,8 +5,8 @@ title: 'Check for a security compromise: Rescue mode investigation'
 type: article
 created_date: '2013-04-26'
 created_by: Rose Contreras
-last_modified_date: '2018-06-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-08-31'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
