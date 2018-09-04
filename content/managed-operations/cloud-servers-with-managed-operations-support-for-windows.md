@@ -5,7 +5,7 @@ title: Cloud Servers with Managed Operations support for Windows
 type: article
 created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2018-08-29'
+last_modified_date: '2018-09-04'
 last_modified_by: Chris Moyer
 product: Managed Operations
 product_url: managed-operations
