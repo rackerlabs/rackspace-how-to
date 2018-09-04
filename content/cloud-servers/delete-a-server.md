@@ -1,11 +1,11 @@
 ---
 permalink: delete-a-server/
-audit_date:
+audit_date: '2018-09-04'
 title: Delete a server
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2017-07-02'
+last_modified_date: '2018-09-04'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
