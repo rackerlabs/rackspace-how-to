@@ -32,4 +32,4 @@ For developer communities, see the following resources:
 
 - [The openstack-ansible project](https://launchpad.net/openstack-ansible)
 - [OpenStack-Ansible
-  Documentation](http://docs.openstack.org/developer/openstack-ansible/developer-docs/index.html)
+  documentation](http://docs.openstack.org/developer/openstack-ansible/developer-docs/index.html)
