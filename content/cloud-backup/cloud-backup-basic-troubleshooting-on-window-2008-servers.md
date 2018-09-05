@@ -19,9 +19,9 @@ the following items:
 * Cloud Backup uses all of the server’s resources.
 
 As a Managed Infrastructure customer who administers your own servers, this article
-helps you diagnose if the server is experiencing an issue that you can remedy,
+helps you to diagnose if the server is experiencing an issue that you can remedy,
 or if the issue should be escalated to a member of 
-Rackspace Support. This article points provides helpful information that you
+Rackspace Support. This article provides helpful information that you
 can include when you create a ticket that might expedite the response.
 
 ## Check for open issues
@@ -29,7 +29,7 @@ can include when you create a ticket that might expedite the response.
 Before you restart the DriveClient service, check [status.rackspace.com](https://status.rackspace.com)
 to ensure that there are no Cloud Backup open issues that could be impacting your server instance.
 In addition, check the current support tickets to ensure that there has not been an incident that is
-causing the lack of accessibility of the server.  To check your open support ticket, log in to the
+causing the lack of accessibility of the server. To check your open support ticket, log in to the
 [Cloud Control Panel](https://mycloud.rackspace.com/) and click **Tickets > Ticket List** in the top
 navigation bar. 
 
@@ -41,7 +41,7 @@ as shown in the next section.
 1. In the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com), click on
    **Backups > Systems>**.
    
-2. From the list of Cloud Backup Systems, click the backup server name.
+2. From the list of Cloud Backup systems, click the backup server name.
    This action displays the following details about the backup system:
    
    - The Internet Protocol (IP) address of the server
@@ -63,7 +63,7 @@ as shown in the next section.
 
 ## Restart DriveClient service
 
-1. To restart the driveclient service, log in to the server via RDP and click the
+1. To restart the DriveClient service, log in to the server via RDP and click the
    **Start** button in the bottom-left corner of the Windows&reg; desktop.
    
 2. In the **Search** field, search for **services.msc**.
@@ -80,7 +80,7 @@ as shown in the next section.
    list, and ensure that its status is **Started**.
    
 8. A common reason for the driveclient not showing as started is that it is not set to start after
-  a reboot. To resolve this problem, right-click on the **DriveClient Service** and choose **Properties**.
+   a reboot. To resolve this problem, right-click on the **DriveClient Service** and choose **Properties**.
   
 9. Click the drop-down menu next to **Startup type** and select (if not already selected) **Automatic**.
 
