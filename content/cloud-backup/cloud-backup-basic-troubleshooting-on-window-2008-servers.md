@@ -39,7 +39,7 @@ as shown in the next section.
 ## Establish connection
 
 1. In the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com), click on
-   **Backups > Systems>**.
+   **Backups > Systems**.
    
 2. From the list of Cloud Backup systems, click the backup server name.
    This action displays the following details about the backup system:
