@@ -177,7 +177,7 @@ a 10.12:
     El archivo contiene comentarios (líneas que comienzan con el símbolo #) y
     algunos mapeos de nombre de host por defecto (por ejemplo, 127.0.0.1 –
     local host). Añada nuevos mapeos después de los mapeos por defecto.
-5. Para guardar el archivo hosts, presione Ctrl+X.
+5. Para guardar el archivo hosts, presione **Ctrl+X**.
 6. Cuando se le pregunte si quiere guardar los cambios, presione **y**.
 7. Para hacer que sus cambios surtan efecto, limpie el caché DNS con el
    siguiente comando:
