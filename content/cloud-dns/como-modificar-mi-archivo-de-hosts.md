@@ -1,126 +1,185 @@
 ---
 permalink: como-modificar-mi-archivo-de-hosts/
-audit_date:
+audit_date: '2018-09-05'
 title: Como modificar mi archivo de hosts?
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-02-09'
-last_modified_by: Joe Ashcraft
+last_modified_date: '2018-09-05'
+last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-La modificación de su archivo de hosts le permitirá anular el DNS para un dominio, en esa máquina en particular. Esto se puede utilizar para evaluar su sitio sin el enlace de prueba, antes de salir en vivo con SSL, verificar que el alias de un sitio funcione antes de los cambios de DNS, o para otras razones relacionadas con el DNS. Esto hace que su máquina local solo busque directamente en el IP especificado.
+Modificar su archivo **hosts** le permite invalidar el sistema de nombres de
+dominio (DNS) para un dominio en una máquina específica. Este proceso es útil
+cuando desea realizar las siguientes tareas:
 
-Su archivo de hosts necesitará dos entradas agregadas que contendrán la dirección de IP que quiere que el sitio resuelva y la dirección. Agregar las siguientes dos líneas, por ejemplo, dirigirá www.dominio.com y dominio.com a nuestro clúster PHP5-ITK (PHP5 "actualizado") actual:
+- Probar su sitio sin el enlace de pruebas antes de publicarlo con SSL.
+- Verificar que un sitio alias funcione antes de los cambios al DNS.
+- Trabajar en otras tareas relacionadas con el DNS.
+
+Modificar su archivo hosts provocará que su máquina local vea directamente
+hacia la dirección protocolo de internet (IP) que especifique.
+
+Modificar el archivo hosts exige añadirle dos entradas. Cada entrada contiene
+la dirección IP a la que quiere que resuelva el sitio y una versión de la
+dirección de internet. Por ejemplo, añada los siguientes dos puntos de
+entrada, **www.domain.com** y **domain.com**, al clúster PHP5 (PHP5-ITK)
+renovado de Rackspace:
 
     64.49.219.194 www.domain.com
     64.49.219.194 domain.com
 
-A continuación se detalla cómo ubicar y editar el archivo de hosts en plataformas de varios sistemas operativos. Una vez que se agregue la información de dominio adecuada, guardará el archivo y su sistema comenzará a resolver el IP especificado. Luego de que finalicen las evaluaciones, estas entradas deberían eliminarse.
+Este artículo brinda instrucciones para localizar y editar el archivo
+**hosts** en los siguientes sistemas operativos:
 
--  Windows 8, Windows 7, y Windows Vista
--  Windows NT, Windows 2000, y Windows XP
--  Linux
--  Mac OS X 10.0 - 10.1.5
--  Mac OS X 10.6 - 10.10  
+- Microsoft&reg; Windows&reg; 10, Windows 8, Windows 7 y Windows Vista&trade;
+- Microsoft Windows NT&trade;, Windows 2000, y Windows XP
+- Linux&reg;
+- MacOS&reg; X versiones 10.0 a 10.1.5
+- MacOS X versiones 10.6 a 10.12
 
-### Windows 8, Windows 7 y Windows Vista
+Después de añadir la información de dominio y salvar el archivo, su sistema
+comienza a resolver a la dirección IP que especificó. Cuando termine con las
+pruebas, remueva estas entradas.
 
-Windows 8, Windows 7 y Windows Vista usan el Control de cuentas de usuario (UAC, por sus siglas en inglés), así que el Bloc de notas debe ejecutarse como Administrador.
+### Windows
 
-**Para Windows 8**
+Windows 10, Windows 8, Windows 7 y Windows Vista utilizan User Account Control
+(UAC). Como resultado, debe ejecutar Microsoft Notepad (Bloc de notas) como
+administrador.
 
-1.  Presione la tecla Windows.
-2.  Escriba **Bloc de notas** en el campo de búsqueda.
-3.  En el campo de búsqueda, presione con el botón derecho del ratón el **Bloc de notas** y seleccione **Ejecutar como administrador**.
-4.  En el Bloc de notas, abra el siguiente archivo: **c:\Windows\System32\Drivers\etc\hosts**
-5.  Realice los cambios necesarios para el archivo de hosts.
-6.  Presione **Archivo > Guardar** para guardar los cambios.
 
-**Para Windows 7 y Windows Vista**
+#### Windows 10 y Windows 8
 
-1.  Presione **Iniciar > Todos los programas > Accesorios**.
-2.  Presione con el botón derecho del ratón el Bloc de notas y seleccione **Ejecutar como administrador**.
-3.  Presione **Continuar** en la ventana de UAC "Windows necesita su permiso".
-4.  Cuando el Bloc de notas se abra, presione **Archivo > Abrir**.
-5.  En el campo de nombre de archivo, escriba: **C:\Windows\System32\Drivers\etc\hosts**
-6.  Presione **Abrir**.
-7.  Realice los cambios necesarios para el archivo de hosts.
-8.  Presione **Archivo > Guardar** para guardar los cambios.
+Siga las instrucciones que se muestran a continuación si utiliza Windows 10 o
+Windows 8:
 
-**Windows NT, Windows 2000, y Windows XP**
+1. Presione la tecla **Windows**.
+2. Teclee **Notepad** (Bloc de notas) en el campo de búsqueda.
+3. En los resultados de búsqueda, dé clic derecho en **Notepad** (Bloc de
+   notas) y elija **Ejecutar como administrador** (Run as administrator).
+4. En Notepad (Bloc de notas), abra el siguiente archivo:
 
-1.  Presione **Iniciar > Todos los programas > Accesorios > Bloc de notas**.
-2.  Presione **Archivo > Abrir**.
-3.  En el campo de nombre de archivo, escriba: **C:\Windows\System32\Drivers\etc\hosts**
-4.  Presione **Abrir**.
-5.  Realice los cambios necesarios para el archivo de hosts.
-6.  Presione **Archivo > Guardar** para guardar los cambios.
+    **c:\Windows\System32\Drivers\etc\hosts**
+5. Haga los cambios necesarios al archivo.
+6. Elija **Archivo > Guardar** (File > Save) para guardar sus cambios.
+
+#### Windows 7 y Windows Vista
+
+Siga las instrucciones que se muestran a continuación si utiliza Windows 7 o
+Windows Vista:
+
+1. Elija **Inicio > Todos los programas > Accesorios**
+   (Start > All Programs > Accessories).
+2. Dé clic derecho en **Notepad** (Bloc de notas) y elija **Ejecutar como
+   administrador** (Run as administrator).
+
+     La ventana UAC Windows necesita su autorización (Windows needs your
+     permission) aparece.
+3. Dé clic en **Continuar** (Continue) para otorgar autorización.
+
+    Bloc de notas (Notepad) inicia.
+4. En Bloc de notas (Notepad), elija **Archivo > Abrir** (File > Open).
+5. En el campo **Nombre de archivo** (File name), escriba la siguiente ruta:
+
+    **C:\Windows\System32\Drivers\etc\hosts**
+6. Elija **Abrir** (Open).
+7. Haga los cambios necesarios al archivo.
+8. Elija **Archivo > Guardar** (File > Save) para guardar sus cambios.
+
+#### Windows NT, Windows 2000 y Windows XP
+
+Siga las instrucciones que se muestran a continuación si utiliza Windows NT,
+Windows 2000 o Windows XP:
+
+1. Elija **Inicio > Todos los programas > Accesorios > Bloc de notas**
+   (Start > All Programs > Accessories > Notepad).
+2. Elija **Archivo > Abrir** (File > Open).
+3. En el campo **Nombre de archivo** (File name), escriba
+   **C:\Windows\System32\Drivers\etc\hosts**.
+4. Elija **Abrir** (Open).
+5. Haga los cambios necesarios al archivo.
+6. Elija **Archivo > Guardar** (File > Save) para guardar sus cambios.
 
 ### Linux
 
-1. Abra una ventana de terminal.
+Siga las instrucciones que se muestran a continuación si utiliza Linux:
 
-2. Abra el archivo de hosts en un editor de texto (puede utilizar cualquier editor de texto):
+1. Abra una ventana de Terminal.
+2. Escriba el siguiente comando para abrir el archivo hosts en un editor de
+   texto:
 
-       sudo nano /etc/hosts
+        sudo nano /etc/hosts
 
-3. Ingrese su contraseña
+3. Escriba su contraseña de usuario de dominio.
+4. Haga los cambios necesarios al archivo.
+5. Presione **Ctrl+X**.
+6. Cuando se le pregunte si quiere guardar los cambios, presione **y**.
 
-4. Realice los cambios necesarios para el archivo de hosts.
+### MacOS X versiones 10.0 a 10.12
 
-5. Presione **control X** (mantenga control y presione X), luego conteste **y** cuando le pregunten si quiere guardar los cambios.
+Esta sección muestra instrucciones para modificar su archivo hosts si utiliza
+MacOS X 10.0 a 10.12.
 
-### Mac OS X 10.0 - 10.8
+### MacOS X 10.0 a 10.1.5
 
-**Mac OS X 10.0 - 10.1.5**
+Siga las instrucciones que se muestran a continuación si utiliza MacOS X 10.0
+a 10.1.5:
 
-1. Abra **Aplicaciones > Utilidades > Gestor NetInfo**.
+1. Abra **/Applications/Utilities/NetInfo Manager**.
+2. Para habilitar la edición de la base de datos Network Information
+   (NetInfo), dé clic en el icono de candado en la esquina inferior izquierda
+   de la ventana.
+3. Escriba su contraseña de usuario de dominio y elija **OK**.
+4. En la segunda columna de la vista de navegador, elija el nodo llamado
+   **machines**.
+5. En la tercera columna, elija el nombre de entrada localhost.
+6. Del menú **Edit**, elija **Duplicate**.
 
-2. Para permitir la edición de la base de datos de NetInfo, presione el candado en la esquina inferior izquierda de la ventana.
+    Una alerta de confirmación aparece.
+7. Dé clic en **Duplicate**.
 
-3. Ingrese su contraseña y presione **OK**.
+    Una nueva entrada llamada localhost copy aparece y sus propiedades
+    aparecen debajo de la vista de navegador.
+8. Dé doble clic en el valor de la propiedad de ip_address y escriba la
+   dirección IP de la otra computadora.
+9. Dé doble clic en el valor de propiedad name e ingrese el nombre de host que
+   quiera utilizar para la otra computadora.
+10.	Dé clic en la propiedad serves y elija **Borrar** (Delete) del menú
+    **Editar** (Edit).
+11.	Del menú **File** (Archivo), elija **Save** (Guardar).
 
-4. En la segunda columna de la ventana del navegador, seleccione el nodo llamado `machines`. Verá entradas para `-DHCP-`, `broadcasthost`, y `localhost` en la tercera columna.
+     Una alerta de confirmación aparecerá.
+12.	Dé clic en **Update this copy** (Actualizar esta copia).
+13.	Repita los pasos 6 al 12 para cada entrada de host adicional que quiera
+    añadir.
+14.	En el menú **NetInfo Manager** elija **Quit**.
 
-5. Seleccione el elemento `localhost` en la tercera columna.
+No necesita reiniciar su computadora.
 
-6. Elija **Duplicar** en el menú **Editar** (la manera más rápida de crear una nueva entrada es duplicar una existente). Aparecerá una alerta de confirmación.
+### MacOS X 10.6 a 10.12
 
-7. Presione **Duplicar**. Una nueva entrada llamada `localhost` copy y sus propiedades se muestran debajo de la ventana del navegador.
+Siga las instrucciones que se muestran a continuación si utiliza MacOS X 10.6
+a 10.12:
 
-8. Presione dos veces el valor de la propiedad `ip_address` e ingrese la dirección de IP de la otra computadora.
-
-9. Presione dos veces el valor de la propiedad `name` e ingrese el nombre de host que desea para la otra computadora.
-
-10. Presione la propiedad `serves` y elija **Eliminar** desde el menú **Edición**.
-
-11. Elija **Guardar** en el menú **Archivo**. Aparecerá una alerta de confirmación.
-
-12. Presione **Actualizar esta copia**.
-
-13. Repita los pasos 6 al 12 para cada entrada host adicional que desee agregar.
-
-14. Seleccione **Salir** del menú de Gestor NetInfo. No es necesario que reinicie la computadora.
-
-**Mac OS X 10.6 - 10.10**
-
-1. Abra **Aplicaciones > Utilidades > Terminal**.
-
-2. Abra el archivo de hosts ingresando lo siguiente en la ventana Terminal:
+1. En su computadora, elija **Applications > Utilities > Terminal**
+   (Aplicaciones > Utilidades > Terminal) para abrir una ventana de Terminal.
+2. Teclee el siguiente comando en la ventana Terminal para abrir el archivo
+   **hosts**:
 
         sudo nano /private/etc/hosts
 
-  Escriba su contraseña de usuario cuando sea solicitada.
+3. Cuando se le solicite, teclee su contraseña de usuario de dominio.
+4. Edite el archivo **hosts**.
 
-3. Edite el archivo de hosts. El archivo de hosts contiene algunos comentarios (las líneas que comienzan con el símbolo # ), y algunos mapeos de nombres de hosts predeterminados (por ejemplo, 127.0.0.1 - local host). Anexe sus mapeos nuevos debajo de los mapeos predeterminados.
+    El archivo contiene comentarios (líneas que comienzan con el símbolo #) y
+    algunos mapeos de nombre de host por defecto (por ejemplo, 127.0.0.1 –
+    local host). Añada nuevos mapeos después de los mapeos por defecto.
+5. Para guardar el archivo hosts, presione Ctrl+X.
+6. Cuando se le pregunte si quiere guardar los cambios, presione **y**.
+7. Para hacer que sus cambios surtan efecto, limpie el caché DNS con el
+   siguiente comando:
 
-4. Guarde el archivo de hosts al presionar *Control+x* y contestar *y*.
-
-5. Para que se apliquen sus cambios, vacíe la caché del DNS con el siguiente comando:
-
-       dscacheutil -flushcache
-
-6. Ahora se aplicarán los nuevos mapeos.
+        dscacheutil -flushcache
