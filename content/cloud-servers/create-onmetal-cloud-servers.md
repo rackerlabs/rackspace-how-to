@@ -28,8 +28,8 @@ up an OnMetal server through the Control Panel.
     name for the server and select the region in which the server
     will reside.
 
-    **Note:** OnMetal servers are currently available only in the
-    Northern Virginia (IAD) region. This list will be expanded as other
+    **Note:** OnMetal servers are available only in the
+    Northern Virginia (IAD), Dallas (DFW) and UK (LON) regions. This list will be expanded as other
     regions become available.
 
 4.  Click the **OnMetal Server** tab.
@@ -76,7 +76,7 @@ up an OnMetal server through the Control Panel.
 1.  On the details page for your server, click the link under **Log Into
     Your Server Now** in the right-hand column. For more information,
     see [Connecting to a server using SSH on Linux or Mac OS for further information](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
-2.  Use the following command to boot your OnMetal server.
+2.  Use the following command to boot your OnMetal server. (Use the appropriate region for the command).
 
         supernova iad boot --flavor flavorId --image imageId --key-name keyName serverName
 
@@ -169,7 +169,7 @@ log in to the server.
 If needed, you can also delete or cancel the server.
 
 1.  Run the following command, replacing the example ID with your
-    server's ID:
+    server's ID: (Use the appropriate region).
 
         supernova iad delete a8ea2366-9e50-4604-b6ce-e3edb8750451
 
