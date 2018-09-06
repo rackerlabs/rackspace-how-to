@@ -91,5 +91,5 @@ as shown in the next section.
     - If the status is **connected**, try to run the backup again, and if it fails, contact
       Rackspace Support.
     - If the status is **disconnected**, download the backup log from within Windows on the server.
-      The log is located at C:\ProgramData\Driveclient\log\driveclient.log. To expediate the issue
+      The log is located at C:\ProgramData\Driveclient\log\driveclient.log. To expedite the issue
       response, attach this log to a ticket for Rackspace Support.
