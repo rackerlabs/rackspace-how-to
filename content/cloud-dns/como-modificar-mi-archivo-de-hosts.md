@@ -149,10 +149,10 @@ a 10.1.5:
    quiera utilizar para la otra computadora.
 10.	Dé clic en la propiedad serves y elija **Borrar** (Delete) del menú
     **Editar** (Edit).
-11.	Del menú **File** (Archivo), elija **Save** (Guardar).
+11.	Del menú **Archivo** (File), elija **Guardar** (Save).
 
      Una alerta de confirmación aparecerá.
-12.	Dé clic en **Update this copy** (Actualizar esta copia).
+12.	Dé clic en **Actualizar esta copia** (Update this copy).
 13.	Repita los pasos 6 al 12 para cada entrada de host adicional que quiera
     añadir.
 14.	En el menú **NetInfo Manager** elija **Quit**.
@@ -164,8 +164,8 @@ No necesita reiniciar su computadora.
 Siga las instrucciones que se muestran a continuación si utiliza MacOS X 10.6
 a 10.12:
 
-1. En su computadora, elija **Applications > Utilities > Terminal**
-   (Aplicaciones > Utilidades > Terminal) para abrir una ventana de Terminal.
+1. En su computadora, elija **Aplicaciones > Utilidades > Terminal**
+   (Applications > Utilities > Terminal) para abrir una ventana de Terminal.
 2. Teclee el siguiente comando en la ventana Terminal para abrir el archivo
    **hosts**:
 
