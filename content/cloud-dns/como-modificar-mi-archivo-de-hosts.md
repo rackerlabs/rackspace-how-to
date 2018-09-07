@@ -5,7 +5,7 @@ title: Como modificar mi archivo de hosts?
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-09-05'
+last_modified_date: '2018-09-07'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
@@ -47,7 +47,7 @@ pruebas, remueva estas entradas.
 ### Windows
 
 Windows 10, Windows 8, Windows 7 y Windows Vista utilizan User Account Control
-(UAC). Como resultado, debe ejecutar Microsoft Notepad (Bloc de notas) como
+(UAC). Como resultado, debe ejecutar Bloc de Notas (Microsoft Notepad) como
 administrador.
 
 
@@ -57,10 +57,11 @@ Siga las instrucciones que se muestran a continuación si utiliza Windows 10 o
 Windows 8:
 
 1. Presione la tecla **Windows**.
-2. Teclee **Notepad** (Bloc de notas) en el campo de búsqueda.
-3. En los resultados de búsqueda, dé clic derecho en **Notepad** (Bloc de
-   notas) y elija **Ejecutar como administrador** (Run as administrator).
-4. En Notepad (Bloc de notas), abra el siguiente archivo:
+2. Teclee **Bloc de Notas** (Notepad) en el campo de búsqueda.
+3. En los resultados de búsqueda, dé clic derecho en **Bloc de
+   notas** (Notepad) y elija **Ejecutar como administrador** (Run as
+   administrator).
+4. En Bloc de Notas (Notepad), abra el siguiente archivo:
 
     **c:\Windows\System32\Drivers\etc\hosts**
 5. Haga los cambios necesarios al archivo.
@@ -73,15 +74,15 @@ Windows Vista:
 
 1. Elija **Inicio > Todos los programas > Accesorios**
    (Start > All Programs > Accessories).
-2. Dé clic derecho en **Notepad** (Bloc de notas) y elija **Ejecutar como
+2. Dé clic derecho en **Bloc de Notas** (Notepad) y elija **Ejecutar como
    administrador** (Run as administrator).
 
      La ventana UAC Windows necesita su autorización (Windows needs your
      permission) aparece.
 3. Dé clic en **Continuar** (Continue) para otorgar autorización.
 
-    Bloc de notas (Notepad) inicia.
-4. En Bloc de notas (Notepad), elija **Archivo > Abrir** (File > Open).
+    Bloc de Notas (Notepad) inicia.
+4. En Bloc de Notas (Notepad), elija **Archivo > Abrir** (File > Open).
 5. En el campo **Nombre de archivo** (File name), escriba la siguiente ruta:
 
     **C:\Windows\System32\Drivers\etc\hosts**
@@ -94,7 +95,7 @@ Windows Vista:
 Siga las instrucciones que se muestran a continuación si utiliza Windows NT,
 Windows 2000 o Windows XP:
 
-1. Elija **Inicio > Todos los programas > Accesorios > Bloc de notas**
+1. Elija **Inicio > Todos los programas > Accesorios > Bloc de Notas**
    (Start > All Programs > Accessories > Notepad).
 2. Elija **Archivo > Abrir** (File > Open).
 3. En el campo **Nombre de archivo** (File name), escriba
@@ -108,7 +109,7 @@ Windows 2000 o Windows XP:
 Siga las instrucciones que se muestran a continuación si utiliza Linux:
 
 1. Abra una ventana de Terminal.
-2. Escriba el siguiente comando para abrir el archivo hosts en un editor de
+2. Escriba el siguiente comando para abrir el archivo **hosts** en un editor de
    texto:
 
         sudo nano /etc/hosts
@@ -136,10 +137,10 @@ a 10.1.5:
 4. En la segunda columna de la vista de navegador, elija el nodo llamado
    **machines**.
 5. En la tercera columna, elija el nombre de entrada localhost.
-6. Del menú **Edit**, elija **Duplicate**.
+6. Del menú **Editar** (Edit), elija **Duplicar** (Duplicate).
 
     Una alerta de confirmación aparece.
-7. Dé clic en **Duplicate**.
+7. Dé clic en **Duplicar** (Duplicate).
 
     Una nueva entrada llamada localhost copy aparece y sus propiedades
     aparecen debajo de la vista de navegador.
