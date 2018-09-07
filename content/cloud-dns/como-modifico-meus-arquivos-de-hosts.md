@@ -1,6 +1,6 @@
 ---
 permalink: como-modifico-meus-arquivos-de-hosts/
-audit_date: '2018-09-07'
+audit_date: '2018-09-06'
 title: Como modifico meus arquivos de hosts?
 type: article
 created_date: '2011-03-16'
