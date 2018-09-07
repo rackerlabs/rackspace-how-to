@@ -51,7 +51,7 @@ Notepad) deve ser executado como administrador.
 
 #### Para Windows 10 e Windows 8
 
-<NEED INTRO HERE>
+NEED INTRO HERE
 
 1. Pressione a tecla **Windows**.
 2. Escreva **Bloco e Notas** (Notepad) no campo de pesquisa.
@@ -66,7 +66,7 @@ Notepad) deve ser executado como administrador.
 
 #### Para Windows 7 e Windows Vista
 
-<NEED INTRO HERE>
+NEED INTRO HERE
 
 1. Clique **Iniciar > Todos os Programas > Acessórios**
    (Start > All Programs > Accessories).
@@ -85,7 +85,7 @@ Notepad) deve ser executado como administrador.
 
 #### Para Windows NT, Windows 2000, e Windows XP
 
-<NEED INTRO HERE>
+NEED INTRO HERE
 
 1. Clique **Iniciar > Todos os Programas > Acessórios > Bloco de Notas**
    (Start > All Programs > Accessories > Notepad).
@@ -97,7 +97,7 @@ Notepad) deve ser executado como administrador.
 
 ### Linux
 
-<NEED INTRO HERE>
+NEED INTRO HERE
 
 1. Abra uma janela de Terminal.
 2. Abra o arquivo hosts em um editor de texto (você pode usar qualquer editor
@@ -111,11 +111,11 @@ Notepad) deve ser executado como administrador.
 
 ### Mac OS X 10.0 - 10.10
 
-<NEED INTRO HERE>
+NEED INTRO HERE
 
 #### Mac OS X 10.0 - 10.1.5
 
-<NEED INTRO HERE>
+NEED INTRO HERE
 
 1. Abra **Applications/Utilities/NetInfo Manager**.
 2. Para permitir a edição do banco de dados do NetInfo, clique no cadeado no
@@ -151,7 +151,7 @@ Notepad) deve ser executado como administrador.
 
 #### Mac OS X 10.6 - 10.10
 
-<NEED INTRO HERE>
+NEED INTRO HERE
 
 1. Pressione **Abra Aplicativos > Utilitários > Terminal**
    (Applications > Utilities > Terminal).
