@@ -24,7 +24,11 @@ your Rackspace Cloud portfolio.
 Managed Operations accounts include access to a dedicated support team
 that is available 24x7x365 by phone, chat, email, and
 online support ticket. The team supports your Cloud Servers from the
-operating system level up through the application stack of Microsoft&reg; SQL Server&trade;, .NET, and Internet Information Services (IIS), as well as the LAMP stack on Linux&reg;. Rackspace regularly patches and updates your Cloud Server. We also manage your [Cloud
+operating system level up through the application stack of Microsoft&reg; SQL
+Server&trade;, .NET, and Internet Information Services (IIS), as well as the
+Linux, Apache&reg;, MySQL&trade;, and PHP (LAMP) stack on Linux&reg;.
+Rackspace regularly patches and updates your Cloud Server. We also manage your
+[Cloud
 Databases](http://www.rackspace.com/cloud/public/databases/) and provide
 basic database administrator assistance such as user and table
 management and data backups. The Managed Operations team provides monitoring
@@ -34,7 +38,8 @@ combination of ping, port, and URL.
 
 ### What operating systems and applications for Cloud Servers does Managed Operations support?
 
-For a list of supported operating system versions and applications for Linux, see [Linux
+For a list of supported operating system versions and applications for Linux,
+see [Linux
 Spheres of Support for Dedicated and Managed
 Operations](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops).
 
@@ -45,9 +50,8 @@ Windows](/how-to/cloud-servers-with-managed-operations-support-for-windows).
 ### Does my server's IP address or host name change when I upgrade?
 
 No, upgrading to a Managed Operations account doesn't change server IP
-addresses or host names. Upgrading also doesn't change the IDs for your server
-instances, your Rackspace Cloud account number, or your username and
-password combination.
+addresses or host names. It also doesn't change server IDs, your Rackspace
+Cloud account number, or your username and password combination.
 
 ### What if my current Cloud Server operating system isn't supported?
 
@@ -66,10 +70,8 @@ you.
 To upgrade to a Rackspace Managed Operations account, your account must
 meet the following conditions:
 
--   The account must be in active status and up to date on all
-    billing invoices.
--   No Cloud Servers on the account run on unsupported
-    operating systems.
+-   The account is active and up to date on all billing invoices.
+-   No Cloud Servers on the account run on unsupported operating systems.
 -   No Cloud Server images on the account are built on unsupported
     operating systems.
 
@@ -155,10 +157,10 @@ problems, you should make an image of each server prior to an upgrade.
 Rackspace does not perform this step for you. You should also ensure that all
 of your services (such as MySQL) restart upon reboot before you upgrade.
 
-In addition, you need to open port 445 for Microsoft&reg; Windows&reg; or port
-22 for Linux&reg; in order for the automation to run successfully. Rackspace
-can only open ports manually after a server is associated with a Managed
-Operations account.
+ In addition, you need to open port 445 for Microsoft&reg; Windows&reg; or port
+ 22 for Linux&reg; in order for the automation to run successfully. Rackspace
+ can only open ports manually after a server is associated with a Managed
+ Operations account.
 
 We recommend that you work with your account manager (AM) throughout the
 upgrade process in order to ensure that you have the best possible
@@ -198,4 +200,4 @@ Panel](http://mycloud.rackspace.com).
 
 At this time, you can only upgrade to Rackspace Managed Operations.
 If you want to remove the managed service, you need to create a new account
-and build new Cloud Servers and Cloud Databases.
+and build new Cloud Servers and Cloud Databases
