@@ -5,14 +5,14 @@ title: Como modifico meus arquivos de hosts?
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-09-07'
+last_modified_date: '2018-09-11'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
 Modificar o seu arquivo de hosts permite substituir o sistema de nome de
-domínio (DNS) para um domínio num máquina especifica. Este processo e útil
+domínio (DNS) para um domínio num máquina especifica. Este processo é útil
 quando quiseres executar uma das seguintes tarefas:
 
 - Avaliar o seu site sem o link de teste antes de ir ao vivo com o SSL.
@@ -51,7 +51,7 @@ Notepad) deve ser executado como administrador.
 
 #### Para Windows 10 e Windows 8
 
-NEED INTRO HERE
+Use as seguintes instruções se estiver a correr Windows 10 ou Windows 8:
 
 1. Pressione a tecla **Windows**.
 2. Escreva **Bloco e Notas** (Notepad) no campo de pesquisa.
@@ -66,7 +66,7 @@ NEED INTRO HERE
 
 #### Para Windows 7 e Windows Vista
 
-NEED INTRO HERE
+Use as seguintes instruções se estiver a correr Windows 7 ou Windows Vista:
 
 1. Clique **Iniciar > Todos os Programas > Acessórios**
    (Start > All Programs > Accessories).
@@ -85,7 +85,8 @@ NEED INTRO HERE
 
 #### Para Windows NT, Windows 2000, e Windows XP
 
-NEED INTRO HERE
+Use as seguintes instruções se estiver a correr Windows NT, Windows 2000 ou
+Windows XP:
 
 1. Clique **Iniciar > Todos os Programas > Acessórios > Bloco de Notas**
    (Start > All Programs > Accessories > Notepad).
@@ -97,7 +98,7 @@ NEED INTRO HERE
 
 ### Linux
 
-NEED INTRO HERE
+Use as seguintes instruções se estiver a correr Linux:
 
 1. Abra uma janela de Terminal.
 2. Abra o arquivo hosts em um editor de texto (você pode usar qualquer editor
@@ -109,13 +110,14 @@ NEED INTRO HERE
 5. Pressione **Ctrl+X** (Clique **Ctrl** e pressione **X**) e, em seguida,
    clique quando perguntado se você deseja salvar as alterações.
 
-### Mac OS X 10.0 - 10.10
+### Mac OS X 10.0 até 10.12
 
-NEED INTRO HERE
+Esta secção providencia instruções para modificar o arquivo de hosts se
+estiver a correr MacOS 10.0 até MacOS 10.12.
 
-#### Mac OS X 10.0 - 10.1.5
+#### Mac OS X 10.0 até 10.1.5
 
-NEED INTRO HERE
+Use as seguintes instruções se estiver a corer MacOS 10.0 até MacOS 10.1.5:
 
 1. Abra **Applications/Utilities/NetInfo Manager**.
 2. Para permitir a edição do banco de dados do NetInfo, clique no cadeado no
@@ -149,9 +151,9 @@ NEED INTRO HERE
 
      Não há necessidade de reiniciar o computador.
 
-#### Mac OS X 10.6 - 10.10
+#### Mac OS X 10.6 até 10.12
 
-NEED INTRO HERE
+Use as seguintes instruções se estiver a corer MacOS 10.6 até MacOS 10.12:
 
 1. Pressione **Abra Aplicativos > Utilitários > Terminal**
    (Applications > Utilities > Terminal).
