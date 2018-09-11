@@ -22,10 +22,10 @@ your Rackspace Cloud portfolio.
 ### What is included with a Rackspace Managed Operations account?
 
 Managed Operations accounts include access to a dedicated support team
-that is available 24x7x365 by phone, chat, email, and
-online support ticket. The team supports your Cloud Servers from the
-operating system level up through the application stack of Microsoft&reg; SQL
-Server&trade;, .NET, and Internet Information Services (IIS), as well as the
+that is available 24x7x365 by phone, chat, email, and online support ticket.
+The team supports your Cloud Servers from the operating system level up
+through the application stack of Microsoft&reg; SQL Server&trade;, .NET, 
+and Internet Information Services (IIS), as well as the
 Linux&reg;, Apache&reg;, MySQL&reg;, and PHP (LAMP) stack on Linux.
 Rackspace regularly patches and updates your Cloud Server. We also manage your
 [Cloud
