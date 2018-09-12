@@ -27,7 +27,7 @@ The `sosreport` package is installed from the [OS Ops team
 personal package archive
 (PPA)](https://launchpad.net/~osops-packaging/+archive/ppa).
 
-### sosreport command list
+### Generate a list of sosreport commands
 
 You can display the complete list of sosreport options by using the command
 `sosreport --help`, as shown in the following example:
