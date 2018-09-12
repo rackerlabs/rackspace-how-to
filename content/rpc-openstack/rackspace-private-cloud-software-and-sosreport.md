@@ -12,14 +12,14 @@ product_url: rpc-openstack
 ---
 
 This document is intended for Rackspace Private Cloud customers who want
-to use the `sosreport` tool to help troubleshoot their Rackspace Private Cloud
-environment. It is assumed that you have successfully installed a cloud
+to use the sosreport tool to help troubleshoot their Rackspace Private
+Cloud environment. It is assumed that you have successfully installed a cloud
 with Rackspace Private Cloud Software and are familiar with OpenStack
 (OS).
 
 ### The SOS tool
 
-Rackspace Private Cloud Software installs the [`sosreport` tool for
+Rackspace Private Cloud Software installs the [sosreport tool for
 Ubuntu&reg;](https://github.com/sosreport/sosreport), which you can use to
 collect, analyze, and report information that helps you or Rackspace
 Support troubleshoot issues in your Rackspace Private Cloud environment.
@@ -29,7 +29,7 @@ personal package archive
 
 ### sosreport command list
 
-You can display the complete list of `sosreport` options by using the command
+You can display the complete list of sosreport options by using the command
 `sosreport --help`, as shown in the following example:
 
 ```
@@ -73,7 +73,7 @@ Options:
 
 ### Use sosreport
 
-Before you begin to use `sosreport`, log in to the node with the OS
+Before you begin to use sosreport, log in to the node with the OS
 username and password that you created during the installation process.
 After you are successfully logged in, switch to root access by using the
 `sudo -i` command.
@@ -111,7 +111,7 @@ The checksum is: acfcceaa72242483edece9e3b97687f1
 
 You can now send the `.tar.xz {.filename}` file to Rackspace Support.
 
-If required, you can run `sosreport` with additional reporting options.
+If required, you can run sosreport with additional reporting options.
 For example, the `--diagnose` flag includes diagnostic options, and the
 `--report` flag generates an HTML-formatted list of the files that were copied
 in the report. Include additional options if requested by Rackspace Support.
