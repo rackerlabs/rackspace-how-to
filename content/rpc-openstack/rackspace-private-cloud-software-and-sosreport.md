@@ -20,8 +20,8 @@ with Rackspace Private Cloud Software and are familiar with OpenStack
 ### The SOS tool
 
 Rackspace Private Cloud Software installs the [sosreport tool for
-Ubuntu&reg;](https://github.com/sosreport/sosreport), which you can use to
-collect, analyze, and report information that helps you or Rackspace
+Ubuntu&reg;](https://github.com/sosreport/sosreport), which you can use
+to collect, analyze, and report information that helps you or Rackspace
 Support troubleshoot issues in your Rackspace Private Cloud environment.
 The `sosreport` package is installed from the [OS Ops team
 personal package archive
