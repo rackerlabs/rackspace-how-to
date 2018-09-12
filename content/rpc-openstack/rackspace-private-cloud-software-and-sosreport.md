@@ -32,44 +32,42 @@ personal package archive
 You can display the complete list of sosreport options by using the command
 `sosreport --help`, as shown in the following example:
 
-```
-{.screen}
-$ sosreport --help
-Usage: sosreport [options]
+    {.screen}
+    $ sosreport --help
+    Usage: sosreport [options]
 
-Options:
-  -h, --help            show this help message and exit
-  -l, --list-plugins    list plugins and available plugin options
-  -n NOPLUGINS, --skip-plugins=NOPLUGINS
-                        skip these plugins
-  -e ENABLEPLUGINS, --enable-plugins=ENABLEPLUGINS
-                        enable these plugins
-  -o ONLYPLUGINS, --only-plugins=ONLYPLUGINS
-                        enable these plugins only
-  -k PLUGOPTS           plugin options in plugname.option=value format (see
-                        -l)
-  -a, --alloptions      enable all options for loaded plugins
-  -u UPLOAD, --upload=UPLOAD
-                        upload the report to an ftp server
-  --batch               do not ask any question (batch mode)
-  --no-colors           do not use terminal colors for text
-  -v, --verbose         increase verbosity
-  --silent              Only display FATAL errors on stdout
-  --debug               enabling debugging through python debugger
-  --ticket-number=TICKETNUMBER
-                        set ticket number
-  --name=CUSTOMERNAME   define customer name
-  --config-file=CONFIG_FILE
-                        specify alternate configuration file
-  --tmp-dir=TMP_DIR     specify alternate temporary directory
-  --diagnose            enable diagnostics
-  --analyze             enable analyzations
-  --report              Enable html/xml reporting
-  --profile             turn on profiling
-  -z COMPRESSION_TYPE, --compression-type=COMPRESSION_TYPE
-                        compression technology to use [auto, zip, gzip, bzip2,
-                        xz] (default=auto)
-```
+    Options:
+      -h, --help            show this help message and exit
+      -l, --list-plugins    list plugins and available plugin options
+      -n NOPLUGINS, --skip-plugins=NOPLUGINS
+                            skip these plugins
+      -e ENABLEPLUGINS, --enable-plugins=ENABLEPLUGINS
+                            enable these plugins
+      -o ONLYPLUGINS, --only-plugins=ONLYPLUGINS
+                            enable these plugins only
+      -k PLUGOPTS           plugin options in plugname.option=value format (see
+                            -l)
+      -a, --alloptions      enable all options for loaded plugins
+      -u UPLOAD, --upload=UPLOAD
+                            upload the report to an ftp server
+      --batch               do not ask any question (batch mode)
+      --no-colors           do not use terminal colors for text
+      -v, --verbose         increase verbosity
+      --silent              Only display FATAL errors on stdout
+      --debug               enabling debugging through python debugger
+      --ticket-number=TICKETNUMBER
+                            set ticket number
+      --name=CUSTOMERNAME   define customer name
+      --config-file=CONFIG_FILE
+                            specify alternate configuration file
+      --tmp-dir=TMP_DIR     specify alternate temporary directory
+      --diagnose            enable diagnostics
+      --analyze             enable analyzations
+      --report              Enable html/xml reporting
+      --profile             turn on profiling
+      -z COMPRESSION_TYPE, --compression-type=COMPRESSION_TYPE
+                            compression technology to use [auto, zip, gzip, bzip2,
+                            xz] (default=auto)
 
 ### Use sosreport
 
