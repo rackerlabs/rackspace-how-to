@@ -87,16 +87,27 @@ If using the `netstat` did not resolve your port issues, continue to test connec
   <tr>
     <td>
       <a href="https://www.google.com/">
-        <img src="{% asset_path shared/helix-yes-button.png %}">
+        <img src="{% asset_path shared/helix-yes-button-sm.png %}">
       </a>
     </td>
     <td>
       <a href="https://www.yahoo.com/">
-        <img src="{% asset_path shared/helix-no-button.png %}">
+        <img src="{% asset_path shared/helix-no-button-sm.png %}">
       </a>
     </td>
   </tr>
 </table>
+
+try 2:
+
+<p float="left">
+  <a href="https://www.google.com/">
+      <img src="{% asset_path shared/helix-yes-button-sm.png %}">
+  </a>
+  <a href="https://www.yahoo.com/">
+      <img src="{% asset_path shared/helix-no-button-sm.png %}">
+  </a>
+</p>
 
 Markdown:
 [Yes](http://www.google.com){: .btn}
