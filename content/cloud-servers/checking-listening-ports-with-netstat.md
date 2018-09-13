@@ -118,4 +118,21 @@ Clickable Images:
   </tr>
 </table>
 
-
+<table>
+  <tr>If you liked this blog, share it by using the following icons:</tr>
+  <tr>
+    <td>
+      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
+        <img src="{% asset_path shared/yes-buttons.png %}">
+      </a>
+    </td>
+    <td>
+       <img src="{% asset_path shared/spacer.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
+        <img src="{% asset_path shared/no-button.png %}">
+      </a>
+    </td>
+  </tr>
+</table>
