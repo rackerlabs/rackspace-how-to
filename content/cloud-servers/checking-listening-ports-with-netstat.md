@@ -86,12 +86,36 @@ If using the `netstat` did not resolve your port issues, continue to test connec
 
 Helix:
 <button class="hxBtn">Button</button>
-<a href="#" class="hxBtn">http://www.google.com</a>
+<a href="http://www.google.com" class="hxBtn">NO</a>
 
 HTML:
 <button name="YES" onclick="http://www.google.com">Yes</button>
 
 Markdown:
 [No](http://www.google.com){: .btn}
+
+Clickable Images:
+
+<table>
+  <tr>Was this helpful?</tr>
+  <tr>
+   <td>
+       <img src="{% asset_path shared/spacer.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://www.google.com/">
+        <img src="{% asset_path shared/yes-button.png %}">
+      </a>
+    </td>
+    <td>
+       <img src="{% asset_path shared/spacer.png %}" width=50 >
+    </td>
+    <td>
+      <a href="https://www.google.com/">
+        <img src="{% asset_path shared/no-button.png %}">
+      </a>
+    </td>
+  </tr>
+</table>
 
 
