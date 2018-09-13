@@ -83,21 +83,7 @@ If using the `netstat` did not resolve your port issues, continue to test connec
 - **YES** = Awesome! Thanks you for your feedback
 - **NO** = We're sorry. How can we improve this content?
 
-
-Helix:
-<button class="hxBtn">Button</button>
-<a href="http://www.google.com" class="hxBtn">NO</a>
-
-HTML:
-<button name="YES" onclick="http://www.google.com">Yes</button>
-
-Markdown:
-[No](http://www.google.com){: .btn}
-
-Clickable Images:
-
 <table>
-  <tr>Was this helpful?</tr>
   <tr>
     <td>
       <a href="https://www.google.com/">
@@ -105,10 +91,13 @@ Clickable Images:
       </a>
     </td>
     <td>
-      <a href="https://www.google.com/">
-        <img src="{% asset_path shared/yes-button.png %}">
+      <a href="https://www.yahoo.com/">
+        <img src="{% asset_path shared/no-button.png %}">
       </a>
     </td>
   </tr>
 </table>
 
+Markdown:
+[Yes](http://www.google.com){: .btn}
+[No](http://www.yahoo.com){: .btn}
