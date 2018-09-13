@@ -119,19 +119,16 @@ Clickable Images:
 </table>
 
 <table>
-  <tr>If you liked this blog, share it by using the following icons:</tr>
+  <tr>Was this helpful? Did ya love it?</tr>
   <tr>
     <td>
-      <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
+      <a href="https://www.google.com/">
         <img src="{% asset_path shared/yes-button.png %}">
       </a>
     </td>
     <td>
-       <img src="{% asset_path shared/spacer.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="{% asset_path shared/no-button.png %}">
+      <a href="https://www.google.com/">
+        <img src="{% asset_path shared/yes-button.png %}">
       </a>
     </td>
   </tr>
