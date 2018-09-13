@@ -97,38 +97,16 @@ Markdown:
 Clickable Images:
 
 <table>
-  <tr>Was this helpful?</tr>
-  <tr>
-   <td>
-       <img src="{% asset_path shared/spacer.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.google.com/">
-        <img src="{% asset_path shared/yes-button.png %}">
-      </a>
-    </td>
-    <td>
-       <img src="{% asset_path shared/spacer.png %}" width=50 >
-    </td>
-    <td>
-      <a href="https://www.google.com/">
-        <img src="{% asset_path shared/no-button.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-<table>
   <tr>Was this helpful? Did ya love it?</tr>
   <tr>
     <td>
       <a href="https://www.google.com/">
-        <img src="{% asset_path shared/yes-button.png %}">
+        <img src="{% asset_path shared/yes-button.png %}" width=300>
       </a>
     </td>
     <td>
       <a href="https://www.google.com/">
-        <img src="{% asset_path shared/yes-button.png %}">
+        <img src="{% asset_path shared/no-button.png %}" width=300>
       </a>
     </td>
   </tr>
