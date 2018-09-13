@@ -87,12 +87,12 @@ If using the `netstat` did not resolve your port issues, continue to test connec
   <tr>
     <td>
       <a href="https://www.google.com/">
-        <img src="{% asset_path shared/yes-button.png %}" width=100 height=100>
+        <img src="{% asset_path shared/helix-yes-button.png %}">
       </a>
     </td>
     <td>
       <a href="https://www.yahoo.com/">
-        <img src="{% asset_path shared/no-button.png %}" width=100 height=100>
+        <img src="{% asset_path shared/helix-no-button.png %}">
       </a>
     </td>
   </tr>
