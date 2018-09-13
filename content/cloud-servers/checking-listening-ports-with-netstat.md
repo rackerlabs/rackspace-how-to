@@ -123,7 +123,7 @@ Clickable Images:
   <tr>
     <td>
       <a href="https://twitter.com/home?status=https%3A//developer.rackspace.com/blog/applications-monitoring-creating-a-smoother-financial-close/">
-        <img src="{% asset_path shared/yes-buttons.png %}">
+        <img src="{% asset_path shared/yes-button.png %}">
       </a>
     </td>
     <td>
