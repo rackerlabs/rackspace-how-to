@@ -88,7 +88,7 @@ You are prompted to confirm that you want to generate the report.
 Press **Enter** to continue.
 
 At the prompt, enter your first initial and last name. If you have been
-assigned a case number by your Rackspace support representative, enter
+assigned a case number by your Rackspace Support representative, enter
 it at the prompt, as shown in the following example:
 
     {.screen}
@@ -99,13 +99,13 @@ When the report is complete, the utility displays a message showing
 you where the report `tar.xz {.filename}` file is saved and the
 checksum for the report, as shown in the following example:
 
-```
-{.screen}
-Your sosreport has been generated and saved in:
-  /tmp/sosreport-jdoe.1234-20120907125725.tar.xz
 
-The checksum is: acfcceaa72242483edece9e3b97687f1
-```
+    {.screen}
+    Your sosreport has been generated and saved in:
+      /tmp/sosreport-jdoe.1234-20120907125725.tar.xz
+
+    The checksum is: acfcceaa72242483edece9e3b97687f1
+
 
 You can now send the `.tar.xz {.filename}` file to Rackspace Support.
 
@@ -123,12 +123,10 @@ generate the report. To view a full list of available plugins, use the command
 
 The output is similar to the following example:
 
-```
-{.screen}
-root@ctrl:~# sosreport -l
+    {.screen}
+    root@ctrl:~# sosreport -l
 
-sosreport (version 2.3)
-```
+    sosreport (version 2.3)
 
 The following plugins are currently enabled:
 
