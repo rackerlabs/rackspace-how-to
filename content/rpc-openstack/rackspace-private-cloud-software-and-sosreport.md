@@ -12,10 +12,10 @@ product_url: rpc-openstack
 ---
 
 This document is intended for Rackspace Private Cloud customers who want
-to use the sosreport tool to help troubleshoot their Rackspace Private
-Cloud environment. It is assumed that you have successfully installed a cloud
-with Rackspace Private Cloud Software and are familiar with OpenStack
-(OS).
+to use the sosreport (SOS) tool to help troubleshoot their Rackspace Private
+Cloud environment. In order to use the tool, you must have successfully
+installed a cloud with Rackspace Private Cloud Software and be familiar with
+OpenStack&reg;.
 
 ### The SOS tool
 
@@ -71,7 +71,7 @@ You can display the complete list of sosreport options by using the command
 
 ### Use sosreport
 
-Before you begin to use sosreport, log in to the node with the OS
+Before you begin to use sosreport, log in to the node with the
 username and password that you created during the installation process.
 After you are successfully logged in, switch to root access by using the
 `sudo -i` command.
@@ -114,11 +114,11 @@ For example, the `--diagnose` flag includes diagnostic options, and the
 `--report` flag generates an HTML-formatted list of the files that were copied
 in the report. Include additional options if requested by Rackspace Support.
 
-#### sosreport plugins
+#### sosreport plug-ins
 
 Depending on the issue you're experiencing and the instructions that Rackspace
-Support provides, you might need to disable or enable certain plugins when you
-generate the report. To view a full list of available plugins, use the command
+Support provides, you might need to disable or enable certain plug-ins when you
+generate the report. To view a full list of available plug-ins, use the command
 `sosreport -l`.
 
 The output is similar to the following example:
@@ -128,7 +128,7 @@ The output is similar to the following example:
 
     sosreport (version 2.3)
 
-The following plugins are currently enabled:
+The following plug-ins are currently enabled:
 
 --- | --- |
 apache | Apache-related information for Debian&trade; distributions
@@ -152,7 +152,7 @@ printing | Printing-related information (cups)
 ssh | SSH-related information
 x11 | X-related information
 
-The following plugins are currently disabled:
+The following plug-ins are currently disabled:
 
 --- | --- | ---
 as7 | inactive | JBoss-related information
@@ -169,7 +169,7 @@ sar | inactive | Generates the SAR file from the files at `/var/log/sa/saXX`
 sssd | inactive | SSSD-related diagnostic information about Debian-based distributions
 xinetdv | inactive | xinetd information
 
-The following plugin options are available:
+The following plug-in options are available:
 
 --- | --- | ---
 apache.log | off | Gathers all Apache logs
@@ -182,14 +182,14 @@ libraries.ldconfigv | off | The name of each directory as it's scanned and any l
 printing.cups | 50 | The max size (MiB) to collect per cups `log` file
 
 The following section provides examples that show how you can use `sosreport`
-plugins to customize the report.
+plug-ins to customize the report.
 
--   To enable only the openstack plugin, use the following command:
+-   To enable only the openstack plug-in, use the following command:
 
         {.screen}
         $ sosreport -o openstack
 
--   To disable the apache and xll plugins, use the following command:
+-   To disable the apache and xll plug-ins, use the following command:
 
         {.screen}
         $ sosreport -n apache,xll
