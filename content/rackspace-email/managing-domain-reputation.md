@@ -62,7 +62,7 @@ Since many companies have multiple domains, and use many services that require e
 
     - Configure SPF, DKIM, and DMARC for each subdomain
 
-    - Keeps your sending sources segregated and manageable for both SPF and DKIM records
+    - Keeps your sending sources segregated and manageable for both SPF and DKIM records.
 
 
 
