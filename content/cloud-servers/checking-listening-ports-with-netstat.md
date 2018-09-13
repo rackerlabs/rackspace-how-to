@@ -106,7 +106,7 @@ Clickable Images:
     </td>
     <td>
       <a href="https://www.google.com/">
-        <img src="{% asset_path shared/no-button.png %}" width=300>
+        <img src="{% asset_path shared/yes-button.png %}" width=300>
       </a>
     </td>
   </tr>
