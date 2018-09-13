@@ -97,16 +97,16 @@ Markdown:
 Clickable Images:
 
 <table>
-  <tr>Was this helpful? Did ya love it?</tr>
+  <tr>Was this helpful?</tr>
   <tr>
     <td>
       <a href="https://www.google.com/">
-        <img src="{% asset_path shared/yes-button.png %}" width=300>
+        <img src="{% asset_path shared/yes-button.png %}">
       </a>
     </td>
     <td>
       <a href="https://www.google.com/">
-        <img src="{% asset_path shared/yes-button.png %}" width=300>
+        <img src="{% asset_path shared/yes-button.png %}">
       </a>
     </td>
   </tr>
