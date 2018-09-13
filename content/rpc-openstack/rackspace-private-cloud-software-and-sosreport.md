@@ -5,7 +5,7 @@ title: Rackspace Private Cloud Software and sosreport
 type: article
 created_date: '2012-11-09'
 created_by: Karin Levenstein
-last_modified_date: '2018-09-12'
+last_modified_date: '2018-09-13'
 last_modified_by: Kate Dougherty
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
