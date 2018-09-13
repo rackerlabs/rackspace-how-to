@@ -1,7 +1,7 @@
 ---
 permalink: managing-domain-reputation/
 audit_date:
-title: Managing Domain Reputation
+title: Managing domain reputation
 type: article
 created_date: '2018-09-13'
 created_by: Rackspace Support
@@ -26,19 +26,19 @@ Domain reputation, in terms of email, is a measure of how trustworthy your domai
 
 There are three pillars that are the foundation of any domain reputation strategy today: SPF, DKIM, and DMARC. These features are designed to provide two basic things:
 
-    1. A method of verifying the email comes from a legitimate source specified by the domain owner.
+1. A method of verifying the email comes from a legitimate source specified by the domain owner.
 
-    2. A way for you, as the domain owner, to tell email providers what to do with messages that do not meet those legitimacy requirements.
+2. A way for you, as the domain owner, to tell email providers what to do with messages that do not meet those legitimacy requirements.
 
 
 
 Individually, these three features are limited in how much they can do, but together they form a fairly clear process for identifying legitimate email from your domain. Providing these clear indicators is fundamental to establishing a good domain reputation. Rackspace recommends a 1, 2, 3 approach to establishing domain reputation, which is outlined below:
 
-    [Create an SPF record](/how-to/create-an-spf-policy). SPF, or Sender Policy Framework, is a DNS record that tells the world where your email is authorized to come from. Typically, this record contains entries for your email hosting provider, and any email services you use, such as ticketing systems, CRMs, and bulk sending services.
+    - [Create an SPF record](/how-to/create-an-spf-policy). SPF, or Sender Policy Framework, is a DNS record that tells the world where your email is authorized to come from. Typically, this record contains entries for your email hosting provider, and any email services you use, such as ticketing systems, CRMs, and bulk sending services.
 
-    [Enable DKIM](/how-to/enable-dkim-in-the-cloud-office-control-panel). DKIM, or Domain Keys Identified Mail, applies an encrypted signature that is specific to your domain, on every message sent from your domain. Most email service providers offer DKIM as a feature of their service. Typically each sending service listed in your SPF record would have it's own DKIM signature that it adds to your email.
+    - [Enable DKIM](/how-to/enable-dkim-in-the-cloud-office-control-panel). DKIM, or Domain Keys Identified Mail, applies an encrypted signature that is specific to your domain, on every message sent from your domain. Most email service providers offer DKIM as a feature of their service. Typically each sending service listed in your SPF record would have it's own DKIM signature that it adds to your email.
 
-    [Create a DMARC policy](/how-to/create-a-dmarc-policy). DMARC, or Domain Message Authentication Reporting and Conformance, is built on SPF and DKIM. It combines the validation results from both SPF and DKIM, and adds a 'sender alignment check' to protect against many forms of spoofing. The policy part of DMARC is what allows you, as the domain owner, to specify what to do with email that fails these checks. It also includes a reporting aspect that is critical to long-term management of your domain's reputation. This reporting gives you visibility into the email being sent as your domain: where it's coming from (SPF), whether or not it's properly signed (DKIM), and whether or not it is passing your DMARC policy.
+    - [Create a DMARC policy](/how-to/create-a-dmarc-policy). DMARC, or Domain Message Authentication Reporting and Conformance, is built on SPF and DKIM. It combines the validation results from both SPF and DKIM, and adds a 'sender alignment check' to protect against many forms of spoofing. The policy part of DMARC is what allows you, as the domain owner, to specify what to do with email that fails these checks. It also includes a reporting aspect that is critical to long-term management of your domain's reputation. This reporting gives you visibility into the email being sent as your domain: where it's coming from (SPF), whether or not it's properly signed (DKIM), and whether or not it is passing your DMARC policy.
 
 
 
