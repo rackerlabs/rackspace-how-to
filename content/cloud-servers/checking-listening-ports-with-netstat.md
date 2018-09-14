@@ -80,7 +80,5 @@ If using the `netstat` did not resolve your port issues, continue to test connec
 
 **Was this helpful?**
 
-[**Yes**](https://rackspaceinc.co1.qualtrics.com/jfe/form/SV_9ppN6Ts7BYDZLKd)
-
+[**Yes**](https://rackspaceinc.co1.qualtrics.com/jfe/form/SV_9ppN6Ts7BYDZLKd)<br/>
 [**No**](https://rackspaceinc.co1.qualtrics.com/jfe/preview/SV_5uP0tJVpGUw1iLj?)
-
