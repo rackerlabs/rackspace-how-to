@@ -83,23 +83,6 @@ If using the `netstat` did not resolve your port issues, continue to test connec
 - **YES** = Awesome! Thanks you for your feedback
 - **NO** = We're sorry. How can we improve this content?
 
-<table>
-  <tr>
-    <td>
-      <a href="https://www.google.com/">
-        <img src="{% asset_path shared/helix-yes-button-sm.png %}">
-      </a>
-    </td>
-    <td>
-      <a href="https://www.yahoo.com/">
-        <img src="{% asset_path shared/helix-no-button-sm.png %}">
-      </a>
-    </td>
-  </tr>
-</table>
-
-try 2:
-
 <p float="left">
   <a href="https://www.google.com/">
       <img src="{% asset_path shared/helix-yes-button-sm.png %}">
