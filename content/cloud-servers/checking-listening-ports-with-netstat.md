@@ -80,14 +80,7 @@ If using the `netstat` did not resolve your port issues, continue to test connec
 
 **Was this helpful?**
 
-- **YES** = Awesome! Thanks you for your feedback
-- **NO** = We're sorry. How can we improve this content?
+- [**Yes**](https://rackspaceinc.co1.qualtrics.com/jfe/form/SV_9ppN6Ts7BYDZLKd)
+- [**No**](https://rackspaceinc.co1.qualtrics.com/jfe/preview/SV_5uP0tJVpGUw1iLj?)
 
-<p float="left">
-  <a href="https://rackspaceinc.co1.qualtrics.com/jfe/form/SV_9ppN6Ts7BYDZLKd">
-      <img src="{% asset_path shared/helix-yes-button-sm.png %}">
-  </a>
-  <a href="https://rackspaceinc.co1.qualtrics.com/jfe/preview/SV_5uP0tJVpGUw1iLj?">
-      <img src="{% asset_path shared/helix-no-button-sm.png %}">
-  </a>
-</p>
+**Was this helpful?** &nbsp;&nbsp; [**Yes**](https://rackspaceinc.co1.qualtrics.com/jfe/form/SV_9ppN6Ts7BYDZLKd) &nbsp;&nbsp; or &nbsp;&nbsp; [**No**](https://rackspaceinc.co1.qualtrics.com/jfe/preview/SV_5uP0tJVpGUw1iLj?)
