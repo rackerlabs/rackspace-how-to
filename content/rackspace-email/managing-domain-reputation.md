@@ -4,7 +4,7 @@ audit_date:
 title: Managing domain reputation
 type: article
 created_date: '2018-09-13'
-created_by: Rackspace Support
+created_by: Ben Smith
 last_modified_date: '2018-09-23'
 last_modified_by: Ben Smith
 product: Rackspace Email
