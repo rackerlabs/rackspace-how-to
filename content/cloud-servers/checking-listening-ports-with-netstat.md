@@ -84,10 +84,11 @@ If using the `netstat` did not resolve your port issues, continue to test connec
 - **NO** = We're sorry. How can we improve this content?
 
 <p float="left">
-  <a href="https://www.google.com/">
+  <a href="https://rackspaceinc.co1.qualtrics.com/jfe/form/SV_9ppN6Ts7BYDZLKd">
       <img src="{% asset_path shared/helix-yes-button-sm.png %}">
   </a>
-  <a href="https://www.yahoo.com/">
+  <a href="https://rackspaceinc.co1.qualtrics.com/jfe/preview/SV_5uP0tJVpGUw1iLj?">
       <img src="{% asset_path shared/helix-no-button-sm.png %}">
   </a>
 </p>
+
