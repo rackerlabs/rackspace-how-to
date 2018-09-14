@@ -48,13 +48,14 @@ Since many companies have multiple domains, and use many services that require e
 
 ### Separate Your Email Needs
 
-- Separate mail by purpose and class (marketing/sales, transactional, person-to-person, etc.) using specific subdomains wherever possible.
+You should always separate mail by purpose and class (marketing/sales, transactional, person-to-person, etc.) using specific subdomains wherever possible. Below is a table of different email purposes and their suggested domain naming conventions.
 
-- support.mydomain.com is your ticket emails
+| Ticket System Emails |Marketing Emails | Newsletter Emails|
+| --- | --- | --- |
+|support.mydomain.com | marketing.mydomain.com | news.mydomain.com |
 
-- marketing.mydomain.com is your ad campaign emails
 
-- news.mydomain.com is your newsletter emails
+In addition to separating email by purpose, there are a few other recommendations to properly manage your domain's reputation.  
 
 - Never share DKIM keys between services. Each source should have its own DKIM key. Most services offer this as a feature. If a subdomain has multiple sending sources, then it will have multiple SPF includes and DKIM keys. This is perfectly normal.
 
