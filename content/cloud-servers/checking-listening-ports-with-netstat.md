@@ -109,7 +109,3 @@ try 2:
   </a>
 </p>
 
-Markdown:
-[Yes](http://www.google.com){: .btn}
-[No](http://www.yahoo.com){: .btn}
-
