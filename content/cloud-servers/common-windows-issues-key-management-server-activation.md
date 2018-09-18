@@ -56,9 +56,11 @@ KMS.
     The following images show sample outputs:
 
     **KMS Activation Output**:
+
      <img src="{% asset_path cloud-servers/common-windows-issues-key-management-server-activation/kms.jpg %}" />
 
     **MAK Activation Output**:
+
      <img src="{% asset_path cloud-servers/common-windows-issues-key-management-server-activation/mak.png %}" />
 
 6. If your device is set to **MAK activation** then you should set the device back to **KMS activation**.
