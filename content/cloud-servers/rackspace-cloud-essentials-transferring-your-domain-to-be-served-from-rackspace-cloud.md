@@ -34,7 +34,7 @@ enablement.
 
 Rackspace is a provider of world-class, on-demand Cloud Hosting services
 that are backed by our commitment to **Fanatical Support**&reg;. We are
-not a Domain Registrar such as [Namecheap](http://www.namecheap.com/),
+not a domain registrar such as [Namecheap](http://www.namecheap.com/),
 [Dreamhost](http://dreamhost.com/domains/), or
 [GoDaddy](http://www.godaddy.com/).
 
