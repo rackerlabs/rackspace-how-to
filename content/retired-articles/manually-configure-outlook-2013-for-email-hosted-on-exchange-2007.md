@@ -7,8 +7,6 @@ created_date: '2013-09-18'
 created_by: Marco Salazar
 last_modified_date: '2016-01-28'
 last_modified_by: Rose Coste
-product: Microsoft Exchange
-product_url: exchange
 ---
 
 This article describes how to set up your
