@@ -24,7 +24,7 @@ KMS.
    **Start > All Programs > Accessories**. Then, right-click **Command
    Prompt** and select **Run as Administrator**.
 
-2. Confirm that you can ping the Rackspace KMS server
+2. Confirm that you can ping the Rackspace KMS server by running the following command:
 
         ping kms.rackspace.com
 
@@ -43,26 +43,28 @@ KMS.
         slmgr.vbs /ato
 
     If you recieve the error  ``0xC004F074 The Key
-    Management Server (KMS) is unavailable`` skip to step 9
+    Management Server (KMS) is unavailable``, skip to step 9
 
 5. If the device does not activate then the server may be set to MAK activation instead of KMS activation.
-    To confirm which activation method is set on the device run the following command:
+    To confirm which activation method is set on the device, run the following command:
 
         SLMGR -dlv
 
-    Look for the 'Product Key Channel' setting. 'Volume:GVLK' means the device is set to KMS activation,
-    'Volume:MAK' means the device is set to MAK activation.
-
+    Look for the **Product Key Channel** setting. **Volume:GVLK** means the device is set to **KMS activation**,
+    **Volume:MAK** means the device is set to **MAK** activation.
+    
+    The following images show sample outputs:
+    
     **KMS Activation Output**:
     <!--insert KMS image here-->
 
     **MAK Activation Output**:
     <!--insert MAK image here-->
 
-6. If your device is set to MAK activation then you will need to set the device back to KMS activation.
+6. If your device is set to **MAK activation** then you should set the device back to **KMS activation**.
     First find and take note of the appropriate KMS client setup key from Microsoft: [KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx)
 
-    To find wich Server edition you are running, run the following command and look for the section labelled 'OS name':
+    To find wich Server edition you are running, run the following command and look for the section labelled **OS name**:
 
         systeminfo | findstr OS
 
@@ -71,13 +73,13 @@ KMS.
         PS C:\Users\Administrator> systeminfo | findstr OS
         OS Name:                   Microsoft Windows Server 2012 R2 Datacenter
 
-7. Set the device to KMS acivation using the key found in the above article with the following command:
+7. Set the device to **KMS acivation** using the key found in the  previously referenced article and entering the following command:
 
         slmgr /ipk %key%
 
     Make sure to replace **%key%** with the key from the Microsoft document.
 
-8. To activate the device run the below command:
+8. To activate the device, run the below command:
 
         slmgr.vbs /ato
 
@@ -87,7 +89,7 @@ KMS.
         w32tm /resync
 
 10. If the time on the cloud server is drastically different than
-     what is on the KMS the re-sync will fail.  At this point, you should
+     what is on the KMS, the re-sync will fail.  At this point, you should
      either set the time manually or configure the server to use an NTP
      instance over the Internet.
 
