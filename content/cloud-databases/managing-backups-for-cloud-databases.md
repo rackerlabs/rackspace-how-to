@@ -13,7 +13,7 @@ product_url: cloud-databases
 
 Cloud Databases offers multiple ways to back up and restore your
 database. Backup files are stored in Cloud Files and are subject to
-standard Cloud Files charges. The files will remain in your
+standard Cloud Files charges. The files remain in your
 Cloud Files account until you delete them, except for scheduled backup
 files, which are automatically deleted based on a set retention period.
 
@@ -31,12 +31,12 @@ To create a backup of a database instance, use the following steps:
 3. Click the gear icon next to the name of the instance that you want
    to back up, and select **Create Backup**.
 
-   A dialog box displays.
+   A dialogue box displays.
 
 4. Enter a name for the backup and a description, and then click
    **Create Backup**
 
-   **Note:** The backup name is required cannot exceed 64 characters.
+   **Note:** The backup name is required and cannot exceed 64 characters.
 
 **WARNING**: The behavior of your instance during a backup depends on
 the storage engine that you are using for tables. If you use only
@@ -65,7 +65,7 @@ In the top navigation bar click **Backups > MySQL Backups** to view all
 backups for databases in your account. The following details are displayed:
 
 - The backup name assigned by the user
-- The instance that was backed up.
+- The instance that was backed up
 - The region where the instance was created
 - The type of database that was backed up
 - The date the backup was created
@@ -110,7 +110,7 @@ To restore a backup to a new instance, use the following steps:
 1. Click the gear icon next to the name of the backup that you want to restore
    and select **Restore**.
 
-   A diaglogue box displays.
+   A dialogue box displays.
 
 2. Enter a name for the new instance, select the amount of RAM and disk that
    you want.
