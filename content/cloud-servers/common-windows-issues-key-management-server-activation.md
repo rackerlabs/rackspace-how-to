@@ -135,3 +135,4 @@ KMS.
 12. You must open UDP port 123 to allow the sync.
 
 13. Make sure your firewall allows outbound connections to TCP port 1688.
+
