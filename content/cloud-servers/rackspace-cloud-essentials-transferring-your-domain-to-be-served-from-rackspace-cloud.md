@@ -32,30 +32,28 @@ enablement.
 
 #### Rackspace is not a domain registrar
 
-Rackspace is a provider of world-class Cloud Hosting services on demand
-backed by our commitment to **Fanatical Support**&reg;. What we are not is a
-Domain Registrar such as [Namecheap](http://www.namecheap.com/),
+Rackspace is a provider of world-class, on-demand Cloud Hosting services
+that are backed by our commitment to **Fanatical Support**&reg;. We are
+not a Domain Registrar such as [Namecheap](http://www.namecheap.com/),
 [Dreamhost](http://dreamhost.com/domains/), or
 [GoDaddy](http://www.godaddy.com/).
 
-In order to host a domain from your Cloud Server, you need to
-have already registered it at a domain registrar, and then enable it
-at Rackspace.
+In order to host a domain from your Cloud Server, you first need to
+register it at a domain registrar and then enable it at Rackspace.
 
 #### What is a name server?
 
-In the DNS, the name server helps to translate a human-readable domain (such
+In the DNS, the name server helps translate a human-readable domain (such
 as **rackspace.com**) into its corresponding Internet Protocol (IP) address.
 This information is reported up a hierarchical chain of name servers that
-store the mappings in a directory.
+store the domain name-IP mappings in a directory.
 
-A user initiates a request to load a website by entering a domain
-name in the address bar of a browser. When this occurs, the high-level
-directory is queried and requests flow down to the chain of name servers. The
-final chain of name servers has the authoritative answer to the request
-in the form of the IP address that matches the domain name.
+When a user enters a domain name in their browser's address bar, the high-level
+directory in the DNS is queried and the request cascades down through a chain
+of name servers. The final chain of name servers has the authoritative answer
+to the request in the form of the IP address that matches the domain name.
 
-When you are ready to host your site on a Rackspace Cloud Server, you must
+When you're ready to host your site on a Rackspace Cloud Server, you need to
 update the name servers so that the DNS knows the new IP address that is
 serving the content of your site.
 
@@ -69,13 +67,13 @@ For Rackspace Cloud services, you need to use the following name servers:
 
 When you first register a domain, you're usually assigned the
 name servers that belong to the domain registrar unless you specify
-otherwise. First, you need to log in to your account at your
-domain registrar. Then, locate the section of the domain registrar's portal
-that stores the name servers and change the name servers to
-**ns.rackspace.com** and **ns2.rackspace.com**.
+otherwise. In order to switch to Rackspace name servers, you need to log
+in to your account at your domain registrar, locate the section of the
+domain registrar's portal that stores the name servers, and change the name
+servers to **ns.rackspace.com** and **ns2.rackspace.com**.
 
-Next, you need to create the corresponding DNS records for your domain in the
-Rackspace Cloud Control Panel. For instructions, see [create DNS records
+Finally, you need to create the corresponding DNS records for your domain in
+the Rackspace Cloud Control Panel. For instructions, see [create DNS records
 through the Control
 Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 
@@ -87,26 +85,26 @@ domain) to be communicated through the hierarchical DNS system. In general, DNS
 propagation of new name server information should take no longer than
 24 to 48 hours.
 
-#### How do I know that my domain is set up correctly?
+#### How do I know if my domain is set up correctly?
 
-There are a number of methods that you can use to test DNS. For example, you
-can use the `dig` command from a Linux&reg; machine to view the DNS records
+There are a number of methods that you can use to test the DNS. For example,
+you can use the `dig` command from a Linux&reg; machine to view the DNS records
 that are associated with your domain. This method also confirms that DNS
 propagation is complete. In addition, there are several websites that have
 browser interfaces that can run the `dig` command against the domain.
 
-After you confirm that DNS propagation is complete and the A records pointing
-to your Cloud Server are available through the `dig` command, you can test the
-functionality of your website through a standard web browser. If you still
-can't view your website, the firewall settings or web application might be
-misconfigured. Ensure that the necessary ports (such as port 80 or 443) are
+After you confirm that DNS propagation is complete and that the A records
+pointing to your Cloud Server are available through the `dig` command, you can
+test the functionality of your website through a standard web browser. If you
+still can't view your website, the firewall settings or web application might
+be misconfigured. Ensure that the necessary ports (such as port 80 or 443) are
 open on the Cloud Server to enable normal HTTP or HTTPS traffic.
 
 The level of support that we provide for Managed Infrastructure Cloud Servers
-encompasses the server hardware, data center environment, and the
+encompasses the server hardware, data center environment, and
 Internet connectivity to your server. We do not support the
 configuration of applications on your server, including operating system-level
-configurations. If you've verified that DNS and the firewall are
+configurations. If you've verified that the DNS and the firewall are
 correctly configured and your site is still inaccessible, you need
 to take a closer look at the configuration of your web applications.
 
