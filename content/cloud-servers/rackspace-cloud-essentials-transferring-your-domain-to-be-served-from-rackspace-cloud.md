@@ -5,7 +5,7 @@ title: Rackspace Cloud Essentials - Enable your domain to be served from Rackspa
 type: article
 created_date: '2012-03-07'
 created_by: Rackspace Support
-last_modified_date: '2018-09-18'
+last_modified_date: '2018-09-20'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
