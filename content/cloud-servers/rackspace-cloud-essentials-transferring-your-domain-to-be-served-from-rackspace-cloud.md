@@ -30,13 +30,11 @@ questions about enabling your domain at Rackspace.
 The following FAQs provide answers to frequent questions about domain
 enablement.
 
-#### Rackspace is not a domain registrar
+#### Is Rackspace a domain registrar?
 
-Rackspace is a provider of world-class, on-demand Cloud Hosting services
-that are backed by our commitment to **Fanatical Support**&reg;. We are
-not a domain registrar such as [Namecheap](http://www.namecheap.com/),
-[Dreamhost](http://dreamhost.com/domains/), or
-[GoDaddy](http://www.godaddy.com/).
+No, Rackspace is not a domain registrar. Rackspace is a provider of
+world-class, on-demand Cloud Hosting services that are backed by our
+commitment to **Fanatical Support**&reg;.
 
 In order to host a domain from your Cloud Server, you first need to
 register it at a domain registrar and then enable it at Rackspace.
@@ -63,7 +61,7 @@ For Rackspace Cloud services, you need to use the following name servers:
 
 - **ns.rackspace.com** and **ns2.rackspace.com**
 
-#### How do I start to enable the domain at Rackspace?
+#### How do I enable the domain at Rackspace?
 
 When you first register a domain, you're usually assigned the
 name servers that belong to the domain registrar unless you specify
