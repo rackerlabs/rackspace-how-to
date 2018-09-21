@@ -70,3 +70,39 @@ If php is installed, the output is similar to the following:
     php-5.4.16-45.el7.x86_64
 
 #### Ubuntu and Debian
+
+Use the following command to check if php is installed:
+
+    dpkg -l | grep php
+
+If php is installed, the output is similar to the following:
+
+    ii  php7.0                           7.0.30-0ubuntu0.16.04.1                    all          server-side, HTML-embedded scripting language (metapackage)
+
+### Install a web engine, php, and phpMyAdmin
+
+If you don't have a web engine or php installed already, use the steps in the following sections to install them.
+
+#### CentOS and RedHat
+
+Use the following command to install a httpd web engine:
+
+    yum install httpd
+
+Use the following command to install php and phpMyAdmin:
+
+    yum install php.x86_64 phpmyadmin -y
+
+#### Ubuntu and Debian
+
+Use the following command to install an apache2 web engine:
+
+    apt-get install apache2
+
+Use the following command to install php and phpMyAdmin:
+
+    apt-get install php phpmyadmin -y
+
+### Start, check status, and enable a web engine
+
+After you have installed a web engine, you must start and enable it. You can also check the status of a web engine.
