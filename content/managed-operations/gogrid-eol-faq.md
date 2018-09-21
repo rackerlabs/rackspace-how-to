@@ -16,12 +16,12 @@ Rackspace will discontinue support of GoGrid service effective May 31st, 2019.
 If you are a GoGrid Cloud customer, we recommend migrating to one of
 Rackspace’s managed solutions. Rackspace has an extensive portfolio of cloud
 and single tenant solutions, including our Managed Public Clouds across
-[AWS](https://www.rackspace.com/managed-aws), [Microsoft Azure](https://www.rackspace.com/microsoft/managed-azure-cloud), [Google Cloud Platform](https://www.rackspace.com/managed-google-cloud), and
-[OpenStack](https://www.rackspace.com/openstack/public), as well as extensive
+[Amazon Web Services (AWS)&trade;](https://www.rackspace.com/managed-aws), [Microsoft Azure&trade;](https://www.rackspace.com/microsoft/managed-azure-cloud), [Google Cloud Platform&trade;](https://www.rackspace.com/managed-google-cloud), and
+[OpenStack&trade;](https://www.rackspace.com/openstack/public), as well as extensive
 support services encompassing migration, architecture design, and ongoing cloud
 management and optimization.
 
-This FAQ provides answers to those customers who are interested in migrating
+This FAQ provides answers to customers who are interested in migrating
 their GoGrid Infrastructure.
 
 ### GoGrid EOL and migration
@@ -38,34 +38,34 @@ migrating your data and infrastructure before the EOL.
 
 #### Who is responsible for deleting my infrastructure once I have migrated to another platform?
 
-You are responsible for managing your infrastructure, including, but not
-limited to, spinning down virtual machines and/or deleting any data contained
-on your infrastructure. Up until the EOL date, you will be billed for services
-you use in accordance with your Terms of Service.
+You are responsible for managing your infrastructure, including but not
+limited to spinning down virtual machines and/or deleting any data contained
+on your infrastructure. Up until the EOL date, you will be billed for the
+services you use in accordance with your Terms of Service.
 
 #### Is it possible to extend the EOL date if I can't migrate off the platform in time?
 
-It is not possible to extend the End of Life date. Please contact us to review
+It is not possible to extend the EOL date. Please contact us to review
 your migration options.
 
 #### Will you continue to support GoGrid until the EOL?
 
 Yes, we will continue to support GoGrid and will be available to assist you
-with any issues you may have.
+with any issues that you might have.
 
-#### How can Rackspace help me decide on the best cloud infrastructure for my business?
+#### How can Rackspace help me choose the best cloud infrastructure for my business?
 
 As a leader in Managed Services for public cloud infrastructure, Rackspace
 delivers unbiased guidance on best-fit cloud solutions to organizations around
 the globe. We go beyond simple migration assistance and infrastructure
-management with multi-cloud managed services, professional services and managed
+management with multi-cloud managed services, professional services, and managed
 application services to enable true digital transformation.
 
 #### What replacement solutions does Rackspace offer that I can migrate to?
 
 Rackspace has an extensive portfolio of cloud and single tenant solutions,
-including our Managed Public Clouds across AWS, Microsoft Azure, Google Cloud
-Platform, and OpenStack that provide similar on-demand cloud resources and
+including our Managed Public Clouds across AWS&trade;, Microsoft Azure&trade;, Google Cloud
+Platform&trade;, and OpenStack&trade; that provide similar on-demand cloud resources and
 utility billing, but with significantly more stability and richer feature sets
 as compared to GoGrid.
 
