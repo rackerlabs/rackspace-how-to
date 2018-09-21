@@ -64,8 +64,8 @@ application services to enable true digital transformation.
 #### What replacement solutions does Rackspace offer that I can migrate to?
 
 Rackspace has an extensive portfolio of cloud and single tenant solutions,
-including our Managed Public Clouds across AWS&trade;, Microsoft Azure&trade;, Google Cloud
-Platform&trade;, and OpenStack&trade; that provide similar on-demand cloud resources and
+including our Managed Public Clouds across AWS, Microsoft Azure, Google Cloud
+Platform, and OpenStack that provide similar on-demand cloud resources and
 utility billing, but with significantly more stability and richer feature sets
 as compared to GoGrid.
 
