@@ -24,7 +24,7 @@ Suspicious email is a gray area between legitimate email and spam. Webmail emplo
 
 
 
-First, messages that are deemed suspicious by the Hosted Email service will show a yellow warning banner in Webmail's message preview. The intent of this banner is to encourage you to confirm the legitimacy of the sender and the contents of the message before clicking on any links, downloading any attachments, or replying to the message. Even if the suspicious banner is not present, Webmail displays important information about the message that you can use to inspect its validity. The information is displayed for every message, and is easy to scan, once you know what to look for.
+First, messages that are deemed suspicious will show a yellow warning banner in Webmail's message preview. The intent of this banner is to encourage you to confirm the legitimacy of the sender and the contents of the message before clicking on any links, downloading any attachments, or replying to the message. Even if the suspicious banner is not present, Webmail displays important information about the message that you can use to inspect its validity. The information is displayed for every message, and is easy to scan, once you know what to look for.
 
 
 <img src="{% asset_path rackspace-email/identifying-suspicious-email/this-is-suspicious.png %}" />
