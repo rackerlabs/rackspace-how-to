@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes best practices to manage your domain reputation to ensure that your email is considered to be trustworthy.
+This article describes best practices for managing your domain reputation to ensure that your email is considered to be trustworthy.
 
 ### Prerequisites
 
@@ -21,17 +21,17 @@ This article describes best practices to manage your domain reputation to ensure
 
 ### Manage domain reputation
 
-Domain reputation, in terms of email, is a measure of how trustworthy your domain's email is considered by the rest of the world. Every receiver of email maintains their own specific measure of reputation, but there are many industry-accepted recommendations that domain owners can follow to build a solid reputation. As more and more email providers are strengthening their rules for what is considered untrustworthy, failure to follow these recommendations might lead to your mail being considered spam, rate limited, or rejected.
+Domain reputation, in terms of email, is a measure of how trustworthy others believe your domain's email to be. Every email recipient maintains their own specific measure of reputation, but there are many industry-accepted recommendations that domain owners can follow to build a solid reputation. As more and more email providers are strengthening their rules for what is considered untrustworthy, failure to follow these recommendations might lead to your mail being considered spam, rate limited, or rejected.
 
-The three pillars that are the foundation of any domain reputation strategy today are Sender Policy Framework (SPF), Domain Keys Identified Mail (DKIM), and Domain-based Message Authentication, Reporting, and Conformance (DMARC). These features are designed to provide two basic things:
+The three pillars of any domain reputation strategy are Sender Policy Framework (SPF), Domain Keys Identified Mail (DKIM), and Domain-based Message Authentication, Reporting, and Conformance (DMARC). These features are designed to provide two basic things:
 
 1. A method of verifying that the email comes from a legitimate source specified by the domain owner.
 
 2. A way for you, as the domain owner, to tell email providers what to do with messages that do not meet those legitimacy requirements.
 
-Individually, these three pillars are limited in how much they can do, but together they form a fairly clear process for identifying legitimate email from your domain. Providing these clear indicators is fundamental to establishing a good domain reputation. Rackspace recommends a 1, 2, 3 approach to establishing domain reputation, which is outlined below:
+Individually, these three pillars are limited in how much they can do, but together they form a fairly clear process for identifying legitimate email from your domain. Providing these clear indicators is fundamental to establishing a good domain reputation. Rackspace recommends the following 1, 2, 3 approach to establish domain reputation:
 
-1. [Create an SPF record](/how-to/create-an-spf-policy). SPF is a DNS record that tells the world where your email is authorized to come from. Typically, this record contains entries for your email hosting provider, and any email services you use, such as ticketing systems, Customer Relationship Management systems (CRMs), and bulk sending services.
+1. [Create an SPF record](/how-to/create-an-spf-policy). SPF is a DNS record that tells the world where your email is authorized to come from. This record typically contains entries for your email hosting provider and any email services you use, such as ticketing systems, Customer Relationship Management systems (CRMs), and bulk sending services.
 
 2. [Enable DKIM](/how-to/enable-dkim-in-the-cloud-office-control-panel). DKIM applies an encrypted signature that is specific to your domain on every message sent from your domain. Most email service providers offer DKIM as a feature of their service. Typically, each sending service listed in your SPF record has its own DKIM signature that it adds to your email.
 
@@ -51,7 +51,7 @@ In addition to separating email by purpose, the following recommendations help t
 
 - Never share DKIM keys between services. Each source should have its own DKIM key. Most services offer this as a feature. If a subdomain has multiple sending sources, then it has multiple SPF includes and DKIM keys. This is perfectly normal.
 
-- The segregation allows you to lock down each mail stream, as well as isolate each mail stream from any issues the others might have. This is important when it comes to managing the sending reputation of your different email sources. When it comes to managing your domain’s (and subdomain's) reputation, different classes of email have different considerations.
+- Segregating emails enables you to lock down each mail stream, as well as isolate each mail stream from any issues the others might have. This is important when it comes to managing the sending reputation of your different email sources. When it comes to managing your domain’s (and subdomain's) reputation, different classes of email have different considerations.
 
 - Configure SPF, DKIM, and DMARC for each subdomain.
 
@@ -59,11 +59,13 @@ In addition to separating email by purpose, the following recommendations help t
 
 ### Person-to-person corporate mail is special
 
+For person-to-person corporate mail, consider the following best practices:
+
 - Reserve your primary domain for only person-to-person email (your employees).
 
 - Don’t use vanity addresses on your primary domain for automated systems, such as support@mydomain.com for your ticketing system.
 
 - Configure an umbrella DMARC policy on the root domain, and create subdomain-specific DMARC policies based on the specific requirements and class of mail it represents.
    
-   - For example, you might use p=quarantine on your primary domain (person-to-person email), but p=reject on your outbound-only transactional email (support tickets).
-   - This also ensures that the root domain catches all DMARC reporting that might be missed or misconfigured at the subdomain level, as well as catching any unauthorized subdomains attempting to spoof your brand.
+   - For example, you might use `p=quarantine` on your primary domain (person-to-person email), but `p=reject` on your outbound-only transactional email (support tickets).
+   - Taking this step also ensures that the root domain catches all DMARC reporting that might be missed or misconfigured at the subdomain level, as well as catching any unauthorized subdomains attempting to spoof your brand.
