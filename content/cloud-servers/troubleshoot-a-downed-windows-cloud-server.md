@@ -1,11 +1,11 @@
 ---
 permalink: troubleshoot-a-downed-windows-cloud-server/
-audit_date: 
+audit_date: '2018-09-24'
 title: Troubleshoot a downed Windows cloud server
 type: article
 created_date: '2018-09-13'
 created_by: Shaun Crumpler
-last_modified_date: 
+last_modified_date: '2018-09-24'
 last_modified_by: 
 product: Cloud Servers
 product_url: cloud-servers
