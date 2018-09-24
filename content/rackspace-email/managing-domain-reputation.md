@@ -37,17 +37,17 @@ Individually, these three pillars are limited in how much they can do, but toget
 
 3. [Create a DMARC policy](/how-to/create-a-dmarc-policy). DMARC is built on SPF and DKIM. It combines the validation results from both SPF and DKIM, and adds a 'sender alignment check' to protect against many forms of spoofing. The policy part of DMARC is what allows you, as the domain owner, to specify what to do with email that fails these checks. It also includes a reporting aspect that is critical to long-term management of your domain's reputation. This reporting gives you visibility into the email being sent as your domain: where it's coming from (SPF), whether or not it's properly signed (DKIM), and whether or not it is passing your DMARC policy.
 
-Because many companies have multiple domains and use many services that require email, managing reputation across several domains can become complicated. Here are some general recommendations for managing your business email needs across many domains. These recommendations are intended to help you scale the domain reputation strategy described above across your entire organization:
+Because many companies have multiple domains and use many services that require email, managing reputation across several domains can become complicated. Here are some general recommendations for managing your business email needs across many domains. The following sections offer some general recommendations for managing your business email needs accross many domains.
 
 ### Separate your email needs
 
-You should always separate mail by purpose and class (marketing, sales, transactional, person-to-person, and so on) by using specific subdomains wherever possible. The following table shows different email purposes and their suggested domain naming conventions.
+You should always separate mail by purpose and class (marketing, sales, transactional, person-to-person, and so on) by using specific subdomains wherever possible. The following table shows different email purposes and their suggested domain naming conventions:
 
 | Ticket system emails | Marketing emails | Newsletter emails |
 | --- | --- | --- |
 | support.mydomain.com | marketing.mydomain.com | news.mydomain.com |
 
-In addition to separating email by purpose, the following recommendations help to properly manage your domain's reputation. 
+In addition to separating email by purpose, the following recommendations help to properly manage your domain's reputation: 
 
 - Never share DKIM keys between services. Each source should have its own DKIM key. Most services offer this as a feature. If a subdomain has multiple sending sources, then it has multiple SPF includes and DKIM keys. This is perfectly normal.
 
