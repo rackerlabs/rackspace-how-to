@@ -1,6 +1,6 @@
 ---
 permalink: managing-domain-reputation/
-audit_date:
+audit_date: '2018-09-24'
 title: Managing domain reputation
 type: article
 created_date: '2018-09-13'
@@ -11,6 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
+This article describes best practices to manage your domain reputation to ensure that your email is considered to be trustworthy.
 
 ### Prerequisites
 
@@ -18,19 +19,15 @@ product_url: rackspace-email
 - **Difficulty:** Easy
 - **Tools required:** DNS host admin access
 
-### How-To: Manage Domain Reputation
+### Manage Domain Reputation
 
 Domain reputation, in terms of email, is a measure of how trustworthy your domain's email is considered by the rest of the world. Every receiver of email maintains their own specific measure of reputation, but there are many industry accepted recommendations domain owners can follow to build a solid reputation. As more and more email providers are strengthening their rules for what is considered untrustworthy, failure to follow these recommendations may lead to your mail being considered spam, rate limited, or outright rejected.
-
-
 
 There are three pillars that are the foundation of any domain reputation strategy today: SPF, DKIM, and DMARC. These features are designed to provide two basic things:
 
 1. A method of verifying the email comes from a legitimate source specified by the domain owner.
 
 2. A way for you, as the domain owner, to tell email providers what to do with messages that do not meet those legitimacy requirements.
-
-
 
 Individually, these three features are limited in how much they can do, but together they form a fairly clear process for identifying legitimate email from your domain. Providing these clear indicators is fundamental to establishing a good domain reputation. Rackspace recommends a 1, 2, 3 approach to establishing domain reputation, which is outlined below:
 
@@ -40,13 +37,9 @@ Individually, these three features are limited in how much they can do, but toge
 
 - [Create a DMARC policy](/how-to/create-a-dmarc-policy). DMARC, or Domain Message Authentication Reporting and Conformance, is built on SPF and DKIM. It combines the validation results from both SPF and DKIM, and adds a 'sender alignment check' to protect against many forms of spoofing. The policy part of DMARC is what allows you, as the domain owner, to specify what to do with email that fails these checks. It also includes a reporting aspect that is critical to long-term management of your domain's reputation. This reporting gives you visibility into the email being sent as your domain: where it's coming from (SPF), whether or not it's properly signed (DKIM), and whether or not it is passing your DMARC policy.
 
-
-
 Since many companies have multiple domains, and use many services that require email, managing reputation across several domains can become complicated. Here are some general recommendations for managing your business email needs across many domains. These recommendations are intended to help you scale the above domain reputation strategy across your entire organization:
 
-
-
-### Separate Your Email Needs
+### Separate your email needs
 
 You should always separate mail by purpose and class (marketing/sales, transactional, person-to-person, etc.) using specific subdomains wherever possible. Below is a table of different email purposes and their suggested domain naming conventions.
 
@@ -54,8 +47,7 @@ You should always separate mail by purpose and class (marketing/sales, transacti
 | --- | --- | --- |
 |support.mydomain.com | marketing.mydomain.com | news.mydomain.com |
 
-
-In addition to separating email by purpose, there are a few other recommendations to properly manage your domain's reputation.  
+In addition to separating email by purpose, there are a few other recommendations to properly manage your domain's reputation. 
 
 - Never share DKIM keys between services. Each source should have its own DKIM key. Most services offer this as a feature. If a subdomain has multiple sending sources, then it will have multiple SPF includes and DKIM keys. This is perfectly normal.
 
@@ -65,9 +57,7 @@ In addition to separating email by purpose, there are a few other recommendation
 
 - Keeps your sending sources segregated and manageable for both SPF and DKIM records.
 
-
-
-### Person-to-Person Corporate Mail is Special
+### Person-to-Person corporate mail is special
 
 - Reserve your primary domain for only person-to-person email (your employees).
 
