@@ -11,9 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If the site on your server is not loading, you can’t log in to your server, or you receive connection-related alerts for your server, your server is down. 
+If the website on your server is not loading, you can’t log in to your server, or you receive connection-related alerts for your server, your server is down. 
 
-If you are a Managed Infrastructure customer, you can use these troubleshooting steps to diagnose whether you can solve the issue, or escalate the issue to Rackspace support. This article also specifies helpful information to include when you create a support ticket in order to expedite Rackspace’s response.
+If you are a Managed Infrastructure customer, you can use the following troubleshooting steps to diagnose whether you can solve the issue or should escalate the issue to Rackspace support. This article also specifies helpful information to include when you create a support ticket in order to expedite Rackspace’s response.
 
 
 ### Check Rackspace system status
@@ -35,7 +35,7 @@ Use the following steps the check the downed server's console:
 
    - If you are able to successfully connect using the **Remote Desktop** application, such as terminal or powershell, then skip to step 4.
 
-   - If you can not connect using a command line application, use the Emergency console in [Cloud Control Panel](https://mycloud.rackspace.com/). Directions for finding the emergency console are found in steps 2 - 4.
+   - If you cannot connect using a command line application, use the Emergency console in the [Cloud Control Panel](https://mycloud.rackspace.com/). Directions for finding the emergency console are found in steps 2 - 4.
 
 2. In the Cloud Control Panel, click **Servers** > **Cloud Servers**.
 
@@ -72,6 +72,6 @@ If your server is not responding through the command line, a hard reboot might m
 
    **Note:** The nmap state can be misleading. `closed` means that the port is open but the service is not running. `filtered` means that the port is closed in the firewall. `open` means that the port is open and the service is running on the instance.
 
-If these commands return a response, then the server is healthy and the issues are at the operating system level. Rackspace support will not be able to diagnose the problem further on Managed Infrastructure accounts. If the account is on the Managed Operations service level, create a support ticket and provide the troubleshooting that has been completed.
+If these commands return a response, then the server is healthy and the issues are at the operating system level. If the account is a Managed Infrastructure account, Rackspace support will not be able to diagnose the problem further. If the account is on the Managed Operations service level, create a support ticket and provide the troubleshooting that has been completed.
 
 If your server is not returning responses for any of the commands in the previous troubleshooting steps, open a support ticket and include all of the steps that you have attempted to expedite the issue.
