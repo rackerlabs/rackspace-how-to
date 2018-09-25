@@ -44,7 +44,8 @@ The following example illustrates how Rackspace has created new user names:
 ### MyRackspace login process
 
 After your username has been updated either by yourself or Rackspace, you can
-continue to log in to the MyRackspace portal at https://my.rackspace.com.
+continue to log in to the MyRackspace portal at
+[https://my.rackspace.com](https://my.rackspace.com).
 
 ### Frequently asked questions
 
