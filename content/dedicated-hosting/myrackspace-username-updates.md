@@ -23,10 +23,9 @@ meets the Rackspace uniqueness requirements.
 
 Over the past several months, many of our customers were notified that
 they would need to update their usernames by September 24, 2018 in order to
-meet the uniqueness requirements. If you haven't logged into your account
-recently or you forgot to update your username (if you were prompted),
-Rackspace has automatically updated your username to meet the new
-requirements.
+meet the uniqueness requirements. If your username required updating and you
+did not update it by September 24, 2018, Rackspace has automatically updated
+your username to meet the new requirements.
 
 ### Changes to your MyRackspace account as of September 24, 2018
 
