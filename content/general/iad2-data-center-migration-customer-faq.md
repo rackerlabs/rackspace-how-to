@@ -83,7 +83,7 @@ Backup and for ObjectRocket.
 
 The migration will happen in the following stages:
 
-1.	You are allocated to a move group that depends on the Virtual Local Arean
+1.	You are allocated to a move group that depends on the Virtual Local Area
    Network (VLAN) in which your devices are located. All devices within the same
    VLAN are moved in the same move group.
 
@@ -264,7 +264,7 @@ downtime.
 
 #### Is the move date flexible?  Can I choose the date of the migration?
 
-The VLAN that your solutions is in determines your move group. We will
+The VLAN that your solution is in determines your move group. We will
 move an entire VLAN in one move night so that you can retain your IP addresses,
 thus minimizing disruption for you. You will be notified 100 days before the
 date of your migration so that you can plan accordingly with your customers and
