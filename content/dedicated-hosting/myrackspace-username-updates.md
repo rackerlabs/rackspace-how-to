@@ -27,10 +27,9 @@ meet the uniqueness requirements. If your username required updating and you
 did not update it by September 24, 2018, Rackspace has automatically updated
 your username to meet the new requirements.
 
-### Changes to your MyRackspace account as of September 24, 2018
+### Changes to your MyRackspace username as of September 24, 2018
 
-If you were unable to update your username before September 24, Rackspace
-has updated it for you. Your updated username is in the following format:
+Your updated username is in the following format:
 
 _**Current username + last 4 digits of your account number**_
 
