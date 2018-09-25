@@ -28,9 +28,9 @@ recently or you forgot to update your username (if you were prompted),
 Rackspace has automatically updated your user name to meet the new
 requirements.
 
-### Changes to your MyRackspace account as of September 24th, 2018
+### Changes to your MyRackspace account as of September 24, 2018
 
-If you were unable to update your user name before September 24th, Rackspace
+If you were unable to update your user name before September 24, Rackspace
 has updated it for you. Your updated user name is in the following format:
 
 _**Current user name + last 4 digits of your account number**_
