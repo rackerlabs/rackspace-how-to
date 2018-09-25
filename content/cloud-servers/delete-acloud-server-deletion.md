@@ -1,7 +1,7 @@
 ---
 permalink: delete-a-cloud-server
 audit_date: '2018-09-25'
-title: Cloud Server Deletion
+title: Cloud Server deletion
 created_date: ‘2018-09-05'
 created_by: Shaun Crumpler
 last_modified_date: '2018-09-25'
