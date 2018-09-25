@@ -33,3 +33,4 @@ Both Cloud Server images and Cloud Backups are stored in Cloud Files with associ
 **Note:** Deleting a server also deletes all of the data on the server, a process that cannot be reversed. So it is important to take the time complete the previously described back up options first.
 
 After you have backed up the data, go to the Control Panel, click **Actions** next to the server name, and click **Delete Server** to delete the server itself and stop the billing for the instance.
+
