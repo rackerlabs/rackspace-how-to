@@ -1,7 +1,7 @@
 ---
-permalink: updates-to-your-myrackspace-login-experience/
+permalink: myrackspace-user-name-updates/
 audit_date: '2018-09-24'
-title: Updates to your MyRackspace Login Experience
+title: MyRackspace user name updates
 type: article
 created_date: '2018-09-25'
 created_by: Richard Goodwin
@@ -22,7 +22,7 @@ solution. The first step in this journey is to ensure that your user name
 meets the Rackspace uniqueness requirements.
 
 Over the past several months, many of our customers were notified that
-they would need to update their user names by September 24th, 2018 in order to
+they would need to update their user names by September 24, 2018 in order to
 meet the uniqueness requirements. If you haven't logged into your account
 recently or you forgot to update your username (if you were prompted),
 Rackspace has automatically updated your user name to meet the new
