@@ -1,6 +1,6 @@
 ---
 permalink: myrackspace-username-updates/
-audit_date: '2018-09-24'
+audit_date: '2018-09-25'
 title: MyRackspace username updates
 type: article
 created_date: '2018-09-25'
