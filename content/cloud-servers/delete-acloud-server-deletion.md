@@ -1,5 +1,5 @@
 ---
-permalink: delete-a-cloud-server\
+permalink: delete-a-cloud-server/
 audit_date: '2018-09-25'
 title: Delete a Cloud Server
 created_date: ‘2018-09-05'
