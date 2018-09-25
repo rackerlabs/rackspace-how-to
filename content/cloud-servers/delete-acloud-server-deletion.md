@@ -10,7 +10,10 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Cloud Server pricing is based on the hours that the server uses resources on the host machine. Because of this, shutting down a server is not enough to stop billing. You must delete the server to stop charges. Therefore, you should understand whether the server is in active service before deleting it. Shutting down the server is a good way to determine if it is in active use.
+Cloud Server pricing is based on the hours that the server uses resources on the host machine. Because of this, shutting
+down a server is not enough to stop billing. You must delete the server to stop charges. Therefore, you should understand
+whether the server is in active service before deleting it. Shutting down the server is a good way to determine if it is in
+active use.
 
 To shut down a Linux&reg; server, run the following command at the command prompt: 
 
