@@ -12,14 +12,14 @@ product_url: undefined
 noindex: true
 ---
 
-IAD2, located in Ashburn VA, is Rackspace’s oldest data center in the northern
-Virginia region and has been in operation since 2009.  It is a 2.275 megawatt
-(MW) facility made up of a single computer room covering approximately 11,300
-sq. ft, and it currently consumes around 465 kilowatts (kW) of power.  The
+IAD2, located in Ashburn, Virginia, is the oldest Rackspace data center in the
+northern Virginia region and has been in operation since 2009.  The 2.275-megawatt
+(MW) facility includes a single computer room covering approximately 11,300
+square feet and consumes around 465 kilowatts (kW) of power.  The
 10-year lease on IAD2 is due to expire in June 2019.
 
 Rackspace has made the decision to move all customers from the IAD2 facility
-into it’s newer facility, IAD3.
+into its newer facility in Virginia, IAD3.
 
 Rackspace has had widespread success in data-center migrations over the past
 decade. During this time, our dedicated migration teams have performed the
@@ -37,9 +37,9 @@ smooth migration for all customers.
 #### Why is Rackspace closing IAD2?
 
 IAD3 is located in Ashburn VA, on the same corporate campus as IAD2 and is one
-of Rackspace’s newer facilities.  It opened its doors to dedicated customers in
+of Rackspace’s newer facilities.  IAD3 opened its doors to dedicated customers in
 2013 with 4.334 MW of power and with an additional capacity expansion of 4.334
-MW available in 2015.  It uses the latest networking and electrical
+MW available in 2015.  The facility uses the latest networking and electrical
 infrastructure, consuming 5.525 MW of power with capacity for an additional
 3.143 MW.
 
@@ -53,18 +53,18 @@ Yes. Rackspace will schedule an eight-hour maintenance window starting at
 23:00 on a Friday or Saturday and closing at 07:00 the following morning. The
 goal is to return customers to service as quickly as possible within that
 window. Rackspace has designed the migration plan to occur in small, manageable
-blocks in order to minimize the amount of downtime for customers. Our project
+blocks to minimize the amount of downtime for customers. Our project
 plan also aims to reduce the amount of unplanned downtime by including
 additional resources and multiple contingency plans.
 
-#### Will there be any IP or DNS changes?
+#### Will there be any IP address or DNS changes?
 
-For most customers, who stay in their allocated move group, the
-public IP addresses of the devices are retained and are moved with the devices
-to the new location. In this case, you do not need to make any changes to your
-DNS.
+For most customers who stay in their allocated move group, the
+public Internet Protocol (IP) addresses of the devices are retained and moved
+with the devices to the new location. In this case, you do not need to make any
+changes to your Domain Name System (DNS).
 
-##### Exception - Rackspace Managed Backup service
+##### Exception for Rackspace Managed Backup service
 
 The IP addresses used for the network that runs the Rackspace Managed Backup
 service (BackupNet/ServiceNet) will change for all customers. Because Rackspace
@@ -74,7 +74,7 @@ themselves. Rackspace will take responsibility for updating the Managed Backup
 service IP addresses for all other customers who use this service.
 
 If you are using BackupNet/ServiceNet for any purpose other than Rackspace
-Managed Backup or for ObjectRocket, you will need to make the necessary
+Managed Backup or ObjectRocket, you will need to make the necessary
 arrangements to move to ExNet before your move night. In IAD3,
 BackupNet/ServiceNet, will be available for use only for Rackspace Managed
 Backup and for ObjectRocket.
@@ -83,8 +83,9 @@ Backup and for ObjectRocket.
 
 The migration will happen in the following stages:
 
-1.	You are allocated to a move group depending on the VLAN that your devices
-   are in. All devices within the same VLAN are moved in the same move group.
+1.	You are allocated to a move group that depends on the Virtual Local Arean
+   Network (VLAN) in which your devices are located. All devices within the same
+   VLAN are moved in the same move group.
 
 2.	Leading up to your migration date, Rackspace works with you and your account
    team to establish any specific requirements for the move. For example, do
@@ -92,14 +93,14 @@ The migration will happen in the following stages:
 
 3. A couple of hours before the maintenance window opens, automated scripts
    are run to place all devices under alert suppression and to make the
-   necessary DRAC IP address changes.
+   necessary Dell Remote Access Controller (DRAC) IP address changes.
 
 4.	At the start of your migration window, all affected devices are powered off
-   using another automated script and servicenet IPs are changed. Any servers
-   that need to be turned off in a specific order need to be powered down before
+   using another automated script and ServiceNet IPs are changed. Any servers
+   that need to be turned off in a specific order need to be shutdown before
    the automated shut down script runs at 23:00. If your devices must be turned
-   off in a specific order, your account team provides you a revised maintenance
-   start time at least seven days before the maintenance date.
+   off in a specific order, your account team provides you with a revised
+   maintenance start time at least seven days before the maintenance date.
 
 5.	The affected devices are removed from the cabinets and securely transported
    to the new data-center facility.
@@ -123,12 +124,12 @@ through to 07:00 the following morning.
 
 Yes, we can work with you to understand what needs to be done to ensure a
 smooth migration, and we can help in various ways, including turning off and
-turning on your devices in a certain order.
+turning on your devices in a specific order.
 
 #### I want to shut down the environment myself. Is that possible?
 
-Yes, you may turn off your devices. However, because the changes to ServiceNet
-and DRAC IP addresses are made in the hours before the migration, you must tell
+Yes, you may turn off your devices. However, because we make changes to ServiceNet
+and DRAC IP addresses in the hours before the migration, you must tell
 us in advance and ensure that all devices are turned off before 23:00 on your
 allocated move night. If they are still turned on when we start to remove
 devices from the cabinets, we will power them down by removing the power
@@ -136,15 +137,15 @@ cables.
 
 You also need to tell us if you want to be responsible for turning on your
 devices after the migration. In this case, we will rack your devices in the
-new cabinets and await instruction from you to turn them on. If you do not give
-us instruction to keep the devices turned off, we will turn them on by default.
+new cabinets and await instructions from you to turn them on. If you do not give
+us instructions to keep the devices turned off, we will turn them on by default.
 
-#### I am a Managed Colocation customer and you do not have access to my servers. How will the migration work for me?
+#### I am a Managed Colocation customer, and you do not have access to my servers. How will the migration work for me?
 
 Because Rackspace cannot access devices under the Managed Colocation terms, you
 must turn off your devices before the start of the maintenance window. If
-devices are not turned off by the time we need to remove them from the
-cabinets, their power cables will be removed. If you do not want Rackspace to
+devices are not turned off by the time that we need to remove them from the
+cabinets, we will remove their power cables. If you do not want Rackspace to
 turn on your devices when they arrive in IAD3, you must inform us at least
 seven days before your move night.
 
@@ -152,33 +153,34 @@ If you are using the Rackspace Managed Backup service, you will need to change
 the IP addresses for the network used to run this service.  At least a week
 before your migration, we will create a ticket that contains the new IP
 addresses and provides instructions for updating them. We recommend that you
-make this change prior to the migration.
+make this change before to the migration.
 
 #### My data is replicated to another location. How will the migration affect this replication?
 
-It depends on the replication method that you have set up. We recommend that
-you tell us about any replication or log shipping so that we can work with you
-to ensure that it is re-established following the maintenance.
+The effects of the migration depend on the replication method that you have
+set up. We recommend that you tell us about any replication or log shipping so
+that we can work with you to ensure that it is re-established following the
+maintenance.
 
 #### I have colocation devices that Rackspace does not have access to. How will these be migrated?
 
 Because we do not have access to your colocation devices, you will be
 responsible for shutting these devices down. If you contact us, Rackspace might
-be able to assist you, but this will be managed on a case-by-case basis. Our
+be able to assist you, but we will manage this on a case-by-case basis. Our
 standard approach will be to remove the power cables from the devices in IAD2
 and reconnect them in IAD3.
 
 #### I have a leased line that terminates in IAD2. What will happen to this?
 
-You must work with your leased-line provider to provision a line in to IAD3.
+You must work with your leased-line provider to provision a line into IAD3.
 Options are provisioning a new line and decommissioning the old line, or
 performing a B-end shift, in which the connection is transferred from IAD2 to
 IAD3 at an agreed-upon time. Review the options with your leased-line
 provider. Lead times for leased-line provisioning can traditionally be fairly
-significant so we recommend that you start talking to your provider as soon as
+significant, so we recommend that you start talking to your provider as soon as
 possible to determine the options and timeframes.
 
-Please ask your account team for further information on leased lines in IAD3.
+Ask your account team for further information on leased lines in IAD3.
 
 #### Who will test my environment following the maintenance?
 
@@ -201,7 +203,7 @@ manual shutdown in advance of the official 23:00 maintenance start time.
 The team will work with you and your account team to determine and agree to any
 special requirements that you might have for pre-migration and post-migration
 instructions as we turn off and turn on your solution. The migration team will
-then be focused on successfully executing your instructions on the night of the
+focus on successfully executing your instructions on the night of the
 migration.
 
 We strongly encourage customers to back up their data, either by using the
@@ -212,12 +214,12 @@ about putting a backup solution in place before the migration date.
 In addition to the backups, consider taking the following steps before the move
 night:
 
--   Correct any known disk issues before migration night, and ensure that there
+-   Correct any known disk issues before migration night. Ensure that there
     are no disk corruption issues by running a check disk (`chkdsk`). Doing so
     prevents any forced `chkdsk` operations when your server is turned on.
 
--   Fully install any pending Windows updates before the scheduled migration.
-    If updates stop us from being able to gracefully turn off your servers,
+-   Fully install any pending Windows&reg; updates before the scheduled migration.
+    If updates stop us from being able to turn off your servers gracefully,
     the downtime for the entire move group could be extended, and we might need
     to remove the power before the update process concludes.
 
@@ -227,18 +229,18 @@ night:
 
 #### I would like to run a full backup before my migration. Can this be arranged?
 
-Because it may not complete in time, we do not recommend that you initiate a
+Because it might not complete in time, we do not recommend that you initiate a
 full backup just before the migration. Approximately two hours before the
 migration is scheduled to start, our automated steps will kill any backup
 still in progress so that we can ensure a clean shut down. If your backups
 have been completing successfully in the weeks before the migration, you should
-not need to run an additional backup. However, if you are concerned, you may
-raise a ticket with the Managed Backup team to review the possibility of
+not need to run an additional backup. However, if you are concerned, you can
+open a ticket with the Managed Backup team to review the possibility of
 running a differential (or incremental) backup before the migration.
 
 #### How will you keep me informed about the migration?
 
-You will receive notification via a ticket 100 days from your move date, and
+You will receive a ticket notification 100 days from your move date, and
 then receive notification 45 and 14 days before the date, with the
 final notification created a day before your move date. The final
 notification ticket will be used to update you throughout the move night. We
@@ -250,9 +252,9 @@ devices are in transit, and to confirm that the devices are back online.
 We will impose a change freeze on your environment two weeks before the move
 date. The change freeze will apply to networking, physical hardware, disk
 expansions, and so on. It will not apply to data or application changes. If
-you are unsure whether a change that you need to make is impacted by the change
-freeze, contact your account team for validation or update one of the
-notification tickets with details about the change.
+you are unsure whether the change freeze impacts a change that you need to make,
+contact your account team for validation or update one of the notification
+tickets with details about the change.
 
 If there is an emergency during the change freeze and you cannot wait until
 after the migration to make a change, ensure that the project team is aware of
@@ -262,13 +264,13 @@ downtime.
 
 #### Is the move date flexible?  Can I choose the date of the migration?
 
-Your move group is determined by the VLAN that your solutions is in. We will
+The VLAN that your solutions is in determines your move group. We will
 move an entire VLAN in one move night so that you can retain your IP addresses,
 thus minimizing disruption for you. You will be notified 100 days before the
 date of your migration so that you can plan accordingly with your customers and
 end users. To provide a set schedule for all of our customers, we cannot change
 the date of your move without further impacting your solution and introducing
-more risk. As such, we recommend that you make all the necessary preparations
+more risk. We recommend that you make all the necessary preparations
 required to stay with the original move date.
 
 #### I have more than one solution in IAD2. Will they all be migrated at the same time?
@@ -292,7 +294,7 @@ hardware. To mitigate risks and ensure the safe transportation of your
 solution, Rackspace has carefully and extensively planned this migration and
 selected appropriate partners.
 
-The vehicles will be loaded within the data-center compound and so will be
+The vehicles will be loaded within the data-center compound and will be
 subject to our stringent physical security controls. They will be unloaded
 within the same conditions in IAD3. The tailgates of the vehicles will be
 locked with special bolts by two Rackspace personnel, and photographs of the
@@ -300,7 +302,7 @@ secured bolts will be taken at both locations to prove that they have not been
 tampered with.  The vehicles will have GPS tracking, will not display the Rackspace
 logo, and will be followed by Rackspace personnel.
 
-Data in our shared SAN environment will be replicated over to IAD3 before each
+Data in our shared SAN environment will be replicated to IAD3 before each
 migration date and will be kept synchronized with IAD2 until the devices are
 turned off at the start of the maintenance windows.
 
