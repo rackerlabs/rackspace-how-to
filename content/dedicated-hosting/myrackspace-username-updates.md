@@ -52,8 +52,9 @@ changes.
 
 #### I'm having problems logging in with my new username. Can you help me?
 
-If you experience any login issues after these changes, you can call our
-always-available Rackspace **Fanatical Support**&reg; team or your Account
+If you experience any login issues after these changes, you can contact our
+always-available [Rackspace **Fanatical Support**&reg;
+team](https://www.rackspace.com/support) or your Account
 Manager. Have your account information ready so that we can help you resolve
 the issue as quickly as possible.
 
