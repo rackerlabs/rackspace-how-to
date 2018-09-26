@@ -5,13 +5,14 @@ title: Create a cloud server
 type: article
 created_date: '2012-07-17'
 created_by: Rackspace Support
-last_modified_date: '2018-06-06'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-09-26'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Use the following steps to set up a cloud server through the Cloud
+Use the following steps to set up a [cloud
+server](https://www.rackspace.com/cloud/servers) through the Cloud
 Control Panel interface.
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com) and click **Servers > Cloud Servers** in the top navigation bar.
@@ -48,7 +49,7 @@ Control Panel interface.
     3. Paste your public key into the **Public Key** field.
 
        **Note:** If you do not have a public key, click [How to get a public key](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os) and follow the instructions in that article. For more information on how to generate a public and private key pairs, see [Manage SSH Keypairs for Cloud Servers with python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
-      
+
     4. After you have your entered your Key Name and the Public Key, click **Add Public Key**.
 
     <img src="{% asset_path cloud-servers/create-a-cloud-server/create-server-add-public-key.png %}" />
