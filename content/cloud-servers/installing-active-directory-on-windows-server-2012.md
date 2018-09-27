@@ -13,8 +13,8 @@ product_url: cloud-servers
 
 This article walks you through the process of setting up the Active
 Directory&trade; role on a Microsoft&reg; Windows Server&trade; 2012 server.
-This article is intended for users who don't have an existing Active Directory
-forest. It does not cover how to configure a server to act as a domain
+This article is intended for users who don't have existing Active Directory
+forests. It does not cover how to configure a server to act as a domain
 controller for an existing Active Directory forest.
 
 **Note**: For information about setting up the Active Directory Domain
@@ -28,7 +28,7 @@ Use the following steps to install Active Directory on the server:
 
 1. Open the **Server Manager** from the task bar.
 
-2. From the **Server Manager** Dashboard, select **Add roles and features**.
+2. From the **Server Manager** dashboard, select **Add roles and features**.
 
     The Roles and Features Wizard launches. This wizard enables you to
     make modifications to the Windows Server 2012 instance.
@@ -41,7 +41,7 @@ Use the following steps to install Active Directory on the server:
 
 4. By default, the current server is selected. Click **Next**.
 
-5. On the **Server Roles** page, select the check box next to **Active
+5. On the **Server Roles** screen, select the check box next to **Active
    Directory Domain Services.**
 
     A notice displays that explains that you must also install additional
@@ -51,7 +51,7 @@ Use the following steps to install Active Directory on the server:
 
     To select additional capabilities, click **Add Features**.
 
-6. Under **Select optional features**, select the check boxes next to the
+6. On the **Select features** screen, select the check boxes next to the
    features that you want to install during the AD DS installation process and
    click **Next**.
 
@@ -89,9 +89,12 @@ for your domain by using the following steps:
 
 1. From the task bar, click **Open the Server Manager**.
 
-2. Select the Notifications icon at the top of the Server Manager window.
+2. Select the yellow notifications icon in the top navigation bar of the
+   Server Manager window.
 
-    The Notifications Pane opens. From the notification about configuring AD DS, click **Promote this server to a domain controller**.
+    The Notifications Pane opens and displays a **Post-deployment
+    Configuration** notification. Click the **Promote this server to a domain
+    controller** link that appears in the notification.
 
     <img src="{% asset_path cloud-servers/installing-active-directory-on-windows-server-2012/promote.png %}" width="705" height="502" />
 
@@ -110,18 +113,17 @@ for your domain by using the following steps:
     **Note**: The DSRM password is used when booting the Domain Controller
     into recovery mode.
 
-5. Review the warning on the DNS Options tab and select **Next**.
+5. Review the warning on the **DNS Options** tab and select **Next**.
 
-6. Confirm or enter a NetBIOS name and click **Next**.
+6. Confirm or enter a **NetBIOS name** and click **Next**.
 
 7. Specify the locations of the **Database**, **Log files**, and **SYSVOL
-   folders** and then click **Next**.
+   folders**, then click **Next**.
 
 8. Review the configuration options and click **Next**.
 
 9. The system checks if all of the necessary prerequisites are installed on
-   the system before you can proceed. If the system passes these checks, click
-   **Install**.
+   the system. If the system passes these checks, click **Install**.
 
     **Note**: The server automatically reboots after the installation is
     complete.
