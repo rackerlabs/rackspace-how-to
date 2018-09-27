@@ -5,7 +5,7 @@ title: GoGrid end of life FAQ
 type: article
 created_date: '2018-08-15'
 created_by: Mike McBain
-last_modified_date: '2018-09-26'
+last_modified_date: '2018-09-27'
 last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
@@ -71,8 +71,6 @@ as compared to GoGrid.
 
 #### Will Rackspace migrate my GoGrid environment to a new platform for me?
 
-No, Rackspace will not migrate your environment for you. Rackspace has
-partnered with our trusted vendor of 10 years, WSM International, to provide
-discounted services when you migrate to a Rackspace platform. After more than
-15 years of experience, WSM International has migrated 100,000+ servers and
-worked with 10,000+ businesses.
+No, Rackspace will not migrate your environment for you. However, we
+have multiple migration options that we are ready to discuss with
+you. Contact your GoGrid support team to set up a discussion.
