@@ -1,6 +1,6 @@
 ---
 permalink: installing-active-directory-on-windows-server-2012/
-audit_date: '2018-09-27'
+audit_date: '2018-09-26'
 title: Install Active Directory on Windows Server 2012
 type: article
 created_date: '2013-04-03'
