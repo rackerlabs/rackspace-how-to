@@ -1,7 +1,7 @@
 ---
 permalink: manually-enable-auto-updates-on-windows-2012-and-windows-2008-public-cloud-servers/
 audit_date: '2018-09-27'
-title: Manually enable automatic updates on Windows 2012 and Windows 2008 public Cloud Servers
+title: Manually enable automatic updates on Windows 2012 and Windows 2008 Public Cloud Servers
 type: article
 created_date: '2018-09-27'
 created_by: Rackspace Support
