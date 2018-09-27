@@ -11,12 +11,12 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Keeping your servers up-to-date with security fixes can help you avoid server
+Keeping your servers up to date with security fixes can help you avoid server
 compromises. While package updates can't prevent all security breaches,
-keeping your servers up-to-date should be a key component of your security
+keeping your servers up to date should be a key component of your security
 procedures.
 
-This article describes how to enable automatic updates on your Windows 2012
+This article describes how to enable automatic updates on your Windows&reg; 2012
 and Windows 2008 Rackspace Public Cloud Servers to ensure that crucial updates
 are installed and current.
 
@@ -37,7 +37,7 @@ Rackspace Public Cloud Server:
    drop-down menu.
 6. If you also want to automatically install recommended updates, select the
    check box under **Recommended Updates** (optional).
-7. If you want to install updates for other Microsoft products at the same
+7. If you want to install updates for other Microsoft&reg; products at the same
    time that the Windows updates are installed, select the check box under
    **Microsoft Update** (optional).
 8. When you're finished making selections, click **OK** in the lower portion
@@ -59,6 +59,5 @@ Rackspace Public Cloud Server:
    check box under **Recommended Updates** (optional).
 7. If you want to enable all users the option to install updates on the server,
    select the check box under **Who can install updates** (optional).
-
-When you're finished making selections, click **OK** in the lower portion of
-the window.
+8. When you're finished making selections, click **OK** in the lower portion
+   of the window.
