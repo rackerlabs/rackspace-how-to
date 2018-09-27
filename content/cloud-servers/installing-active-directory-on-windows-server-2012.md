@@ -12,7 +12,7 @@ product_url: cloud-servers
 ---
 
 This article walks you through the process of setting up the Active
-Directory&trade; role on a Microsoft&reg; Windows Server&trade; 2012 server.
+Directory&reg; role on a Microsoft&reg; Windows Server&reg; 2012 server.
 This article is intended for users who don't have existing Active Directory
 forests. It does not cover how to configure a server to act as a domain
 controller for an existing Active Directory forest.
@@ -38,7 +38,8 @@ Use the following steps to install Active Directory on the server:
    features-based** and click **Next**.
 
     **Note**: Roles represent the major feature sets of the server, such as
-    IIS. Features provide additional functionality for a given role.
+    Internet Information Services (IIS). Features provide additional
+    functionality for a given role.
 
 4. By default, the current server is selected. Click **Next**.
 
@@ -63,7 +64,7 @@ Use the following steps to install Active Directory on the server:
 8. Review the information on the **Confirm installation selections** screen,
    then click **Install**.
 
-    **Note**: Information on the the progress of the installation displays.
+    **Note**: Information on the progress of the installation displays.
     After the installation is complete, the AD DS role displays on the Server
     Manager landing page.
 
@@ -77,7 +78,7 @@ remote registry service by using the following steps:
 2. Under **Services**, right-click **Remote Registry** and open the
    **Properties** menu.
 
-3. From the *Startup type:** drop-down menu, select **Automatic**.
+3. From the **Startup type:** drop-down menu, select **Automatic**.
 
 4. Under **Service Status**, select **Start**.
 
@@ -85,7 +86,7 @@ remote registry service by using the following steps:
 
 ### Configure Active Directory
 
-After you have installed the AD DS role you must configure the server
+After you have installed the AD DS role, you must configure the server
 for your domain by using the following steps:
 
 1. From the task bar, click **Open the Server Manager**.
