@@ -18,7 +18,8 @@ forests. It does not cover how to configure a server to act as a domain
 controller for an existing Active Directory forest.
 
 **Note**: For information about setting up the Active Directory Domain
-Services (AD DS) role on Microsoft Windows Server 2008 R2 Enterprise 64-bit (W2K8), see [Install Active Directory Domain Services on Windows Server 2008
+Services (AD DS) role on Microsoft Windows Server 2008 R2 Enterprise 64-bit
+(W2K8), see [Install Active Directory Domain Services on Windows Server 2008
 R2 Enterprise
 64-bit](/how-to/installing-active-directory-domain-services-on-windows-server-2008-r2-enterprise-64-bit).
 
@@ -108,7 +109,8 @@ for your domain by using the following steps:
     eligibility. For further information on domains and forest functional
     levels, see the official Microsoft documentation.
 
-    Enter a password for Directory Services Restore Mode (DSRM) in the **Password** field.
+    Enter a password for Directory Services Restore Mode (DSRM) in the
+    **Password** field.
 
     **Note**: The DSRM password is used when booting the Domain Controller
     into recovery mode.
