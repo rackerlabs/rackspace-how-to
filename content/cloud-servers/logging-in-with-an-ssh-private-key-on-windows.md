@@ -25,7 +25,7 @@ For information about using SSH private keys on Linux&reg; and OS X&reg;
 operating systems, see [Log in with an SSH Private Key on Linux and
 Mac](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
 
-### Step 1: Save your private SSH key to a text file
+### Save your private SSH key to a text file
 
 As a part of your deployment, Rackspace might have provided you with an SSH
 private key for you to use to authenticate against your newly deployed Windows
@@ -40,7 +40,7 @@ Your SSH private key should look similar to the key in the following image:
 
 You need to include all of the text that appears in the image in your key file.
 
-### Step 2: Load your SSH private key in PuTTY Key Generator
+### Load your SSH private key in PuTTY Key Generator
 
 Use the following steps to load your SSH private key in PuTTY Key Generator:
 
