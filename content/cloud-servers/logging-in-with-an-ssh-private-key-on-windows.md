@@ -28,9 +28,9 @@ Mac](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
 ### Save your private SSH key to a text file
 
 As a part of your deployment, Rackspace might have provided you with an SSH
-private key for you to use to authenticate against your newly deployed Windows
-servers. You must save this private key to a text file. This type of file is
-called a _key file_.
+private key for you to use to authenticate against your newly deployed
+Windows servers. You must save this private key to a text file. This type of
+file is called a _key file_.
 
 Open a text editor, paste your SSH private key, and save the file.
 
