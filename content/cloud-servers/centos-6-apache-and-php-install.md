@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 This article demonstrates how to install Apache&reg; and PHP on CentOS 6.
 CentOS 6 comes with Apache 2.2.3 and PHP 5.1.6. You can install them by using
-the default CentOS package manager yum. The advantages of using yum to perform
+the default CentOS package manager, yum. The advantages of using yum to perform
 the installation (instead of using source code) is that yum also automatically
 installs future security updates and handles dependencies.
 
@@ -73,8 +73,8 @@ open the port:
 Navigate to your Cloud Server IP address (for example, `http://123.45.67.89`).
 
 If the default CentOS Apache welcome screen displays, the installation was
-successful. Contact [Rackspace Support](https://www.rackspace.com/support)
-if you have any problems.
+successful. If you have any problems, contact
+[Rackspace Support](https://www.rackspace.com/support).
 
 ### Configure Apache to run automatically
 
@@ -90,7 +90,9 @@ start automatically when the server is rebooted:
         sudo /sbin/chkconfig --list httpd
         httpd           0:off        1:off  2:on    3:on    4:on    5:on    6:off
 
-### Install PHP
+### Install PHP and reload Apache
+
+Use the following steps to install PHP and reload Apache:
 
 1. Run the following command:
 
