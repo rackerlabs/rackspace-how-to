@@ -11,10 +11,11 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-You can recover the password for your Rackspace Email account by having
-our system send your phone a text message that verifies your identity. This
-feature must be enabled by your site administrator, and you must
-enter a mobile phone number for your account before it will work.
+You can recover the password for your 
+[Rackspace Email](https://www.rackspace.com/email-hosting/webmail) account by having
+our system send your phone a text message that verifies your identity. For this to work,
+the text feature must be enabled by your site administrator, and you must
+enter a mobile phone number on your account.
 
 ### Prerequisites
 
