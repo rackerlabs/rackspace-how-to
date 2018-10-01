@@ -46,7 +46,7 @@ Perform the following steps to grant access to a user from a remote host:
 
 2. Use a `GRANT` command in the following format to enable access for the
    remote user. Ensure that you change `1.2.3.4` to the IP address that you
-   obtained above, and `my_password` to the password that you
+   obtained previously, and `my_password` to the password that you
    want `fooUser` to use:
 
         mysql> GRANT ALL ON fooDatabase.* TO fooUser@'1.2.3.4' IDENTIFIED BY 'my_password';
