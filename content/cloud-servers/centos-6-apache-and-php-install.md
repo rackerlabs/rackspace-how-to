@@ -5,7 +5,7 @@ title: Install Apache and PHP on CentOS 6
 type: article
 created_date: '2011-03-09'
 created_by: Rackspace Support
-last_modified_date: '2018-09-28'
+last_modified_date: '2018-10-01'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -38,9 +38,8 @@ Use the following steps to install Apache:
 
         sudo nano /etc/httpd/conf/httpd.conf
 
-4. Toward the end of the file, locate the section that starts with
-   `ServerName` and provides an example name, which is shown in the following
-   code:
+4. Toward the end of the file, locate the code comment that starts with
+   `ServerName` and provides an example name, as shown in the following code:
 
         #ServerName www.example.com:80
 
@@ -48,6 +47,9 @@ Use the following steps to install Apache:
    following example, the host name is `demo`:
 
         ServerName demo
+
+     **Note**: Ensure that you don't include the hashtag (#) that appears
+     at the beginning of the comment in step 4.
 
 6. Reload Apache by using the following command:
 
