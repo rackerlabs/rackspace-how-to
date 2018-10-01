@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes how to recover email messages that have been purged from the Trash folder in Rackspace Webmail.
+This article describes how to recover email messages that have been purged from the Trash folder in [Rackspace Webmail](https://www.rackspace.com/email-hosting/webmail).
 
 ### Prerequisites
 
