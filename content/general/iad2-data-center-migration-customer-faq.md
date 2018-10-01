@@ -64,7 +64,7 @@ public Internet Protocol (IP) addresses of the devices are retained and moved
 with the devices to the new location. In this case, you do not need to make any
 changes to your Domain Name System (DNS).
 
-##### Exception for Rackspace Managed Backup service
+#### Exception for Rackspace Managed Backup service
 
 The IP addresses used for the network that runs the Rackspace Managed Backup
 service (BackupNet/ServiceNet) will change for all customers. Because Rackspace
