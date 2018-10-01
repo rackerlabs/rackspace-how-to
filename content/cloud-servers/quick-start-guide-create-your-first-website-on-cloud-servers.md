@@ -30,7 +30,7 @@ you can build on by reading future articles and guides.
 
 ### Prerequisites
 
-The information in this guide is practical, so if plan to follow along
+The information in this guide is practical, so if you plan to follow along
 step by step, you might need to download and install the following
 software:
 
