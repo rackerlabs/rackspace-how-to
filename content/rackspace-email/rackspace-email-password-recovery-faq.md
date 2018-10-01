@@ -5,8 +5,8 @@ title: Rackspace Email password recovery FAQ
 type: article
 created_date: '2014-10-24'
 created_by: Beau Bailey
-last_modified_date: '2017-06-08'
-last_modified_by: Nate Archer
+last_modified_date: '2017-10-01'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
