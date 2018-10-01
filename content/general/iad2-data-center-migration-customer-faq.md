@@ -49,13 +49,9 @@ Both IAD2 and IAD3 are located in Ashburn, Virginia.
 
 #### Will service be interrupted?
 
-Yes. Rackspace will schedule an eight-hour maintenance window starting at
-23:00 on a Friday or Saturday and closing at 07:00 the following morning. The
-goal is to return customers to service as quickly as possible within that
-window. Rackspace has designed the migration plan to occur in small, manageable
-blocks to minimize the amount of downtime for customers. Our project
-plan also aims to reduce the amount of unplanned downtime by including
-additional resources and multiple contingency plans.
+Yes. Rackspace will schedule an eight-hour maintenance window starting at 23:00
+Eastern Standard Time (EST) on a Friday or Saturday and closing at 07:00 EST on
+the following morning.
 
 #### Will there be any IP address or DNS changes?
 
@@ -98,7 +94,7 @@ The migration will happen in the following stages:
 4.	At the start of your migration window, all affected devices are powered off
    using another automated script and ServiceNet IPs are changed. Any servers
    that need to be turned off in a specific order need to be shutdown before
-   the automated shut down script runs at 23:00. If your devices must be turned
+   the automated shut down script runs at 23:00 EST. If your devices must be turned
    off in a specific order, your account team provides you with a revised
    maintenance start time at least seven days before the maintenance date.
 
@@ -117,8 +113,8 @@ The migration period starts in January 2019 and runs through March 2019.
 One hundred days before your migration date, you will receive notification via
 a ticket in the Rackspace customer portal that includes the specific date and
 time that your solution will be moved. All migrations have been scheduled to
-occur on either a Friday or Saturday night, starting at 23:00 and running
-through to 07:00 the following morning.
+occur on either a Friday or Saturday night, starting at 23:00 EST and running
+through to 07:00 EST on the following morning.
 
 #### My solution is sensitive to the way it is handled during a shut down. Can you help?
 
@@ -130,7 +126,7 @@ turning on your devices in a specific order.
 
 Yes, you may turn off your devices. However, because we make changes to ServiceNet
 and DRAC IP addresses in the hours before the migration, you must tell
-us in advance and ensure that all devices are turned off before 23:00 on your
+us in advance and ensure that all devices are turned off before 23:00 EST on your
 allocated move night. If they are still turned on when we start to remove
 devices from the cabinets, we will power them down by removing the power
 cables.
@@ -198,7 +194,7 @@ This team will run audits on your servers before the migration to identify and
 resolve any potential migration issues in advance. Ensure that you work with the
 migration team and your account team to resolve any issues in a timely manner.
 If you fail to resolve issues that we are auditing, we might have to perform a
-manual shutdown in advance of the official 23:00 maintenance start time.
+manual shutdown in advance of the official 23:00 EST maintenance start time.
 
 The team will work with you and your account team to determine and agree to any
 special requirements that you might have for pre-migration and post-migration
