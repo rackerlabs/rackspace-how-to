@@ -13,7 +13,7 @@ product_url: rackspace-email
 Use this brief step-by-step guide to help you get started with [Rackspace
 Email](https://www.rackspace.com/email-hosting) and [Rackspace Email
 Webmail](https://www.rackspace.com/email-hosting/webmail). See [Rackspace
-Office 365](/how-to/office-365) or [Microsoft exchange](/how-to/exchange) for
+Office 365](/how-to/office-365) or [Microsoft Exchange](/how-to/exchange) for
 help with those products.
 
 
