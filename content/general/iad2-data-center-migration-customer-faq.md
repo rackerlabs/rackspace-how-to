@@ -275,12 +275,9 @@ required to stay with the original move date.
 
 #### I have more than one solution in IAD2. Will they all be migrated at the same time?
 
-The migration date depends on the VLANs in which your solutions are located.  If the
-solutions are in the same VLAN, they will be moved at the same time.  If they are in
-different VLANs, they might be scheduled to move on different dates.
-
-**Note**: Solution means everything behind the edge device, which is usually a
-firewall but might be a load balancer or a server.
+Yes, we have worked with the networking team to ensure your entire environment
+can move at once, regardless of the aggregation zone from which your VLANs are
+provided.
 
 #### Will any of the services that Rackspace currently offers me change?
 
