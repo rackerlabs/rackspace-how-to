@@ -3,14 +3,18 @@ title: Rackspace Email
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2018-01-10'
-last_modified_by: William Loy
+last_modified_date: '2018-10-01'
+last_modified_by: Kate Dougherty
 permalink: /rackspace-email/
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Welcome to Rackspace Email! Use this brief step-by-step guide to help you get started. See [Rackspace Office 365](/how-to/office-365) or [Microsoft exchange](/how-to/exchange) for help with those products.
+Use this brief step-by-step guide to help you get started with [Rackspace
+Email](https://www.rackspace.com/email-hosting) and [Rackspace Email
+Webmail](https://www.rackspace.com/email-hosting/webmail). See [Rackspace
+Office 365](/how-to/office-365) or [Microsoft exchange](/how-to/exchange) for
+help with those products.
 
 
 ###  Start receiving email
