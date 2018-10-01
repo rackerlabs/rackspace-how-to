@@ -5,7 +5,7 @@ title: Create your first website on Cloud Servers quickly
 type: article
 created_date: '2013-11-11'
 created_by: David Hendler
-last_modified_date: '2018-02-27'
+last_modified_date: '2018-10-01'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -24,14 +24,14 @@ complicated than what this guide covers. However, the process that this
 guide uses applies to the successful deployment of any web site or
 application.
 
-This guide is not a comprehensive tour of Cloud Servers. However, by
-following these instructions, you are establishing the fundamentals that
+This guide is not a comprehensive tour of [Cloud Servers](https://www.rackspace.com/cloud/servers). 
+However, by following these instructions, you are establishing the fundamentals that
 you can build on by reading future articles and guides.
 
 ### Prerequisites
 
-The information in this guide is practical, so you should plan to follow along
-step by step. To do so, you might need to download and install the following
+The information in this guide is practical, so if plan to follow along
+step by step, you might need to download and install the following
 software:
 
 -   an SSH client application
