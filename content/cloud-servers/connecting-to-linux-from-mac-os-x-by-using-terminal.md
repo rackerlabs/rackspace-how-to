@@ -11,8 +11,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If you use Mac OS&reg; X, you don't need to install a third-party client like
-PuTTY to connect to your cloud server by using Secure Shell (SSH). Terminal
+If you use Mac OS&reg; X, you don't need to install a third-party Secure Shell
+(SSH) client like PuTTY to connect to your cloud server. Terminal
 is a terminal emulation program included with Mac OS X that you can use
 to run SSH.
 
