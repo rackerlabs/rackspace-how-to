@@ -11,9 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If you use Mac OS&reg; X, you don't need to install a third-party Secure Shell
-(SSH) client like PuTTY to connect to your cloud server. Terminal
-is a terminal emulation program included with Mac OS X that you can use
+If you use Mac OS&reg; X, you don't need to install a third-party client like
+PuTTY to connect to your cloud server by using Secure Shell (SSH). Terminal is
+a terminal emulation program included with Mac OS X that you can use
 to run SSH.
 
 **Note**: For the corresponding steps for an OnMetal server, see [Create OnMetal Cloud Servers](/how-to/create-onmetal-cloud-servers).
