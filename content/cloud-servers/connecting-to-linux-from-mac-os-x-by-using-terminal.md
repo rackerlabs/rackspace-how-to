@@ -35,7 +35,7 @@ replace *root* in the instructions with your username.
 
         ssh root@IPaddress
 
-     The following code block provides example values:
+     The following code block uses an example value:
 
          MKD1JTF1G3->$ ssh root@166.76.69.51
 
