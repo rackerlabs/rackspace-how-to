@@ -17,7 +17,7 @@ This article describes how to install a Secure Socket Layer (SSL) certificate on
 
 Before installing your certificate, make sure you have the following items:
 
-- A certificate signing request (CSR) should be installed on the server. See [Generate a CSR](/how-to/generate-a-csr-with-openssl/) for instructions.
+- A certificate signing request (CSR) can be created on the server. See [Generate a CSR](/how-to/generate-a-csr-with-openssl/) for instructions. An easier method to create a CSR can be completed by navigating to the [CSR Generator](https://csrgenerator.com/) and entering the necessary information for the CSR request.
 - Apache and ``mod_ssl`` should be installed.
 - You also need to have an Internet Protocol (IP) address for your SSL cert and
 a unique IP address for each SSL that you want to host. Certificate authorities
