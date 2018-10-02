@@ -16,8 +16,7 @@ PuTTY to connect to your cloud server by using Secure Shell (SSH). Terminal
 is a terminal emulation program included with Mac OS X that you can use
 to run SSH.
 
-**Note**: For an OnMetal server, see [Create OnMetal Cloud Servers](/how-to/create-onmetal-cloud-servers) for
-applicable OnMetal steps.
+**Note**: For the corresponding steps for an OnMetal server, see [Create OnMetal Cloud Servers](/how-to/create-onmetal-cloud-servers).
 
 ### Connect to the server
 
@@ -36,7 +35,7 @@ replace *root* in the instructions with your username.
 
         ssh root@IPaddress
 
-     Example:
+     The following code block provides example values:
 
          MKD1JTF1G3->$ ssh root@166.76.69.51
 
