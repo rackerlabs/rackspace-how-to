@@ -41,8 +41,8 @@ replace *root* in the instructions with your username.
 
      The first time that you connect to your server, a message asks you if you
      want to continue connecting. This message appears because your
-     server has an RSA key that's not stored in your system registry. As a
-     result, the identity of the key can't be verified.
+     server has an RSA key that's not stored in your system registry.
+     As a result, the identity of the key can't be verified.
 
          The authenticity of host '198.61.208.131 (198.61.208.131)' can't be established.
          RSA key fingerprint is 47:ff:76:b4:211:0f:11:15:21:bd:92:2f:44:0a:d9:0a.
