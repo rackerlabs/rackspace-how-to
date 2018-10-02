@@ -5,13 +5,13 @@ title: Rackspace Email FAQ
 type: article
 created_date: '2015-12-02'
 created_by: Rackspace Support
-last_modified_date: '2015-06-09'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-02'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Get quick answers to common questions about Rackspace Email.
+Get quick answers to common questions about [Rackspace Email](https://www.rackspace.com/email-hosting/webmail).
 
 #### What is the maximum mailbox storage?
 
@@ -39,7 +39,7 @@ You can view and manage your email at [https://apps.rackspace.com](https://apps.
 
 #### How do I change my password?
 
-A Rackspace Email user can do this through Webmail. You can go to [https://apps.rackspace.com](https://apps.rackspace.com/) and log in with your email address and current password. In the upper-right corner, click the menu button to the right of your email address. Then, select **Settings**. In the Settings dialog box, click **Change Password**.
+A Rackspace Email user can do this through [Webmail](https://apps.rackspace.com/). For more information, see [Change a Rackspace Email mailbox password](/how-to/change-rackspace-email-mailbox-password/).
 
 #### What's the difference between IMAP and POP?
 
