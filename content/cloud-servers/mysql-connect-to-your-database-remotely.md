@@ -1,11 +1,11 @@
 ---
 permalink: mysql-connect-to-your-database-remotely/
-audit_date: '2016-06-23'
+audit_date: '2018-10-03'
 title: Connect to a MySQL database remotely
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-01'
+last_modified_date: '2018-10-03'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -18,7 +18,7 @@ remotely.
 **Note**: The article shows you how to connect to a MySQL instance local to a
 server. For the corresponding steps for Cloud Databases, see [Connect to a
 Cloud Database
-Instance](https://support.rackspace.com/how-to/connect-to-a-cloud-databases-instance/).
+instance](https://support.rackspace.com/how-to/connect-to-a-cloud-databases-instance/).
 
 In order to perform these steps, you must have local server access to log in as
 the `root` MySQL user.
