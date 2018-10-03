@@ -5,8 +5,8 @@ title: Connect to a MySQL database remotely
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-01'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-03'
+last_modified_by: Shaun Crumpler
 product: Cloud Servers
 product_url: cloud-servers
 ---
