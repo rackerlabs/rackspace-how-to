@@ -12,10 +12,13 @@ product_url: cloud-servers
 ---
 
 This article explains how to set up a user on your MySQL&reg; server in order
-to connect to a [MySQL
-database](https://www.rackspace.com/cloud/databases) remotely.
+to connect to a [MySQL database](https://www.rackspace.com/cloud/databases)
+remotely.
 
-**Note**: This article explains how to connect to a MySQL instance local to a server.  For Cloud Databases, navigate to [Connecting to a Cloud Database Instance](https://support.rackspace.com/how-to/connect-to-a-cloud-databases-instance/).
+**Note**: The article shows you how to connect to a MySQL instance local to a
+server. For the corresponding steps for Cloud Databases, see [Connect to a
+Cloud Database
+Instance](https://support.rackspace.com/how-to/connect-to-a-cloud-databases-instance/).
 
 In order to perform these steps, you must have local server access to log in as
 the `root` MySQL user.
@@ -23,7 +26,7 @@ the `root` MySQL user.
 ### Retrieve your IP address
 
 You need to know the Internet Protocol (IP) address of the computer from which
-you are connecting. You can retrieve this information by visiting one of the
+you're connecting. You can retrieve this information by visiting one of the
 following sites:
 
 -   <https://icanhazip.com>
