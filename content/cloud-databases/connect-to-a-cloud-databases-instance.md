@@ -1,12 +1,12 @@
 ---
 permalink: connect-to-a-cloud-databases-instance/
 audit_date:
-title: Connect to a Cloud Databases instance
+title: Connect to a Cloud Database instance
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Mike Asthalter
+last_modified_date: '2018-10-03'
+last_modified_by: Shaun Crumpler
 product: Cloud Databases
 product_url: cloud-databases
 ---
