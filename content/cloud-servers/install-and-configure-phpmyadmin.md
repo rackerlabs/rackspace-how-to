@@ -1,11 +1,11 @@
 ---
 permalink: install-and-configure-phpmyadmin/
-audit_date: '2018-09-12'
+audit_date: '2018-10-02'
 title: Install and configure phpMyAdmin
 type: article
 created_date: '2018-09-12'
 created_by: Rackspace Support
-last_modified_date: '2018-09-12'
+last_modified_date: '2018-10-02'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
