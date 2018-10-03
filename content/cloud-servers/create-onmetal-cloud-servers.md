@@ -5,8 +5,8 @@ title: Create OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Russell Haering
-last_modified_date: '2016-01-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-03'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -19,7 +19,7 @@ up an OnMetal server through the Control Panel.
 
 ### Create an OnMetal server in the Cloud Control Panel
 
-1.  Log in to the [Cloud Control Panel.](http://mycloud.rackspace.com)
+1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
 
     The Cloud Servers list opens by default.
 
@@ -29,7 +29,7 @@ up an OnMetal server through the Control Panel.
     will reside.
 
     **Note:** OnMetal servers are available only in the
-    Northern Virginia (IAD), Dallas (DFW) and UK (LON) regions. This list will be expanded as other
+    Northern Virginia (IAD), Dallas (DFW), and UK (LON) regions. This list will expand as other
     regions become available.
 
 4.  Click the **OnMetal Server** tab.
@@ -47,7 +47,7 @@ up an OnMetal server through the Control Panel.
         (the Internet).
 
 7.  Assign a public key to the server by either selecting an existing
-    key or adding a new one:
+    key, or adding a new one:
     -   To assign an existing public key, select the key name in the
         **SSH Keys** list, and skip to step 13.
     -   To add a new public key, continue with the next step.
@@ -76,7 +76,7 @@ up an OnMetal server through the Control Panel.
 1.  On the details page for your server, click the link under **Log Into
     Your Server Now** in the right-hand column. For more information,
     see [Connecting to a server using SSH on Linux or Mac OS for further information](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
-2.  Use the following command to boot your OnMetal server. (Use the appropriate region for the command).
+2.  Use the following command to boot your OnMetal server. (Use the appropriate region for the command.)
 
         supernova iad boot --flavor flavorId --image imageId --key-name keyName serverName
 
@@ -169,11 +169,11 @@ log in to the server.
 If needed, you can also delete or cancel the server.
 
 1.  Run the following command, replacing the example ID with your
-    server's ID: (Use the appropriate region).
+    server's ID and `iad` with the appropriate region, if necessary:
 
         supernova iad delete a8ea2366-9e50-4604-b6ce-e3edb8750451
 
-2.  Use the following command to see the progress:
+2.  Use the following command to view the progress:
 
         supernova iad list
 
@@ -185,12 +185,12 @@ If needed, you can also delete or cancel the server.
         | d1d58868-2b14-4fa5-b01f-e51d658556a8 | highcpu | ACTIVE | deleting | Running | public=23.253.157.105; private=10.184.0.105 |
         +--------------------------------------+---------+--------+------------+-------------+---------------------------------------------+
 
-    **Note:** Your server goes into the task state deleting. OnMetal
-    server deletions take longer than virtual server deletions, usually
-    a few minutes.
+    **Note:** Your server enters the task state `deleting`. OnMetal
+    server deletions take longer than virtual server deletions.
+    This process typically takes a few minutes.
 
 ### Using OnMetal
 
-The flash cards included with the OnMetal I/O flavor are unformatted.
+The flash cards that are included with the OnMetal I/O flavor are unformatted.
 You can RAID and format them however you like. For more information, see
 [Configure flash drives in High I/O instances as Data drives](/how-to/configure-flash-drives-in-high-io-instances-as-data-drives).
