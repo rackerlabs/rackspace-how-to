@@ -15,6 +15,8 @@ This article explains how to set up a user on your MySQL&reg; server in order
 to connect to a [MySQL
 database](https://www.rackspace.com/cloud/databases) remotely.
 
+**Note**: This article explains how to connect to a MySQL instance local to a server.  For Cloud Databases, navigate to [Connecting to a Cloud Database Instance](https://support.rackspace.com/how-to/connect-to-a-cloud-databases-instance/).
+
 In order to perform these steps, you must have local server access to log in as
 the `root` MySQL user.
 
