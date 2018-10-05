@@ -25,13 +25,13 @@ crucial updates are installed and current.
 Use the following steps to enable automatic updates on your Debian and
 Ubuntu 14.04 and 16.04 Rackspace Public Cloud Server:
 
-1. Connect to your Debian/Ubuntu server.
+1. Connect to your Debian or Ubuntu server.
 
 2. Run the following command:
 
        sudo apt install unattended-upgrades
 
-    The following image shows the command and the output:
+    The following image shows the output that the command generates:
 
     <img src="{% asset_path cloud-servers/manually-enable-auto-updates-on-debian-ubuntu-14.04-and-16.04-public-cloud-servers/picture1.png %}" />
 
@@ -51,12 +51,12 @@ Ubuntu 14.04 and 16.04 Rackspace Public Cloud Server:
    that has the text `"${distro_id}:${distro_codename}-updates";`.
 
     Press the **i** key on your keyboard (for Insert), and then press the down
-    arrow to move the cursor to the forward slashes to the left of the line
-    that says `"${distro_id}:${distro_codename}-updates";`. Press the **del**
-    key on your keyboard twice.
+    arrow to move the cursor to the forward slashes that appear to the left of
+    `"${distro_id}:${distro_codename}-updates";`. Press the **del**
+    key twice.
 
-    The color of that line changes to indicate that it is now active code,
-    rather than a comment:
+    The following image shows that the color of that line of code changes to
+    indicate that it is now active code, rather than a comment:
 
     <img src="{% asset_path cloud-servers/manually-enable-auto-updates-on-debian-ubuntu-14.04-and-16.04-public-cloud-servers/picture3.png %}" />
 
@@ -78,34 +78,35 @@ Ubuntu 14.04 and 16.04 Rackspace Public Cloud Server:
 
 Use the following steps to configure the automatic updates:
 
-1. Set the recurring time for each of the updates by entering the following
-   command:
+1. To set the recurring time for each of the updates, entering the following
+   command to open the configuration file:
 
        vim /etc/apt/apt.conf.d/10periodic
 
 2. Press the **i** key to enter Insert mode again.
 
-3. Use the arrow keys to move to the number between the quotes that you want
-   to change, then press the **del** key on your keyboard to remove it.
+3. Use the arrow keys to move to the line for the update that you want to
+   change, then move to the number between the quotes. This number indicates
+   the interval between updates, in days. Press the **del** key to delete it.
 
-4. Enter the new number that you want to use recurrence. Because the numbers
-   are in `days`, the following image shows that three of the updates will be
-   done each day, and the `AutocleanInterval` to clean the local download
-   archive will be cleaned every fourteen days:
+4. Enter the new number that you want to use for the update interval. The
+   following example shows that three of the updates are performed daily,
+   while the `AutocleanInterval` is every 14 days:
 
     <img src="{% asset_path cloud-servers/manually-enable-auto-updates-on-debian-ubuntu-14.04-and-16.04-public-cloud-servers/picture5.png %}" />
 
     When you're finished making changes, press the **esc** key, then type
     **:wq** and press **enter** or **return** to save the configuration. A
-    message stating that the file was properly written displays:
+    message stating that the file was properly written displays, as shown in
+    the following image:
 
     <img src="{% asset_path cloud-servers/manually-enable-auto-updates-on-debian-ubuntu-14.04-and-16.04-public-cloud-servers/picture6.png %}" />
 
 #### Configure notifications for automatic package updates (optional)
 
 You can also choose to set up notifications for automatic package updates,
-such as time of installation, packages installed, and errors during
-installation.
+such as time of installation, packages installed, and errors that were
+generated during the installation process.
 
 Use the following steps to set up notifications:
 
@@ -117,18 +118,18 @@ Use the following steps to set up notifications:
 
        vim /etc/apt/apt.conf.d/50unattended-upgrades
 
-3. Scroll down to the the line of code that says
-   `//Unattended-Upgrade::Mail “root”;`, then press the **i** key on your
-   keyboard and click **del** twice to remove the forward slashes at the
-   beginning of the line.
+3. Scroll to the the line of code that has the text
+   `//Unattended-Upgrade::Mail “root”;` and use the arrow keys to move to the
+   forward slashes. Then press the **i** key and click **del** twice to remove
+   the forward slashes.
 
     The color of the line changes to indicate that it is now active code,
     rather than a comment.
 
 4. Move to the right and press **del** to delete the word `root` inside of the
-   quotation marks.
+   quotes.
 
-5. Between the same set of quotation marks, enter the email
+5. Between the same set of quotes, enter the email
    address that you want to use, as shown in the following image:
 
     <img src="{% asset_path cloud-servers/manually-enable-auto-updates-on-debian-ubuntu-14.04-and-16.04-public-cloud-servers/picture8.png %}" />
@@ -147,7 +148,7 @@ Use the following steps to set up notifications:
 
 8. Scroll to the line of code that begins with `EMAIL`. Press the **i** key,
    then move to the right and press the **del** key to delete the word `root`
-   between the quotation marks.
+   between the quotes.
 
 9. Between the same set of quotation marks, enter the email address to which
    you want to send the notifications, as shown in the following image:
