@@ -21,10 +21,12 @@ To access `nslookup` open up a command prompt window. Go to **Start > All Progra
 ### Check for a record
 
 To check for a specific record you need to specify the `nslookup` command,
-the record type &mdash; for example, A, MX, or TXT &mdash; and the host name you want to check. The following
-example shows how to check for any A records for **rackspace.co.uk**:
+an optional record type &mdash; for example, A, MX, or TXT &mdash; and the host name you want to check.
+(If you omit the record type, it defaults to 'A'.)
 
-    C:\Users\Administrator>nslookup -type=A rackspace.co.uk
+The following example shows how to check for any A records for **rackspace.co.uk**:
+
+    C:\Users\Administrator>nslookup rackspace.co.uk
     Server:  cachens1.lon.rackspace.com>
     Address:  83.138.151.80
 
@@ -73,7 +75,7 @@ If you add the address of the authoritative name server
 (**ns.rackspace.com**) to the first command, the record is now checked
 against that name server.
 
-    C:\Users\Administrator>nslookup -type=A rackspace.co.uk ns.rackspace.com
+    C:\Users\Administrator>nslookup rackspace.co.uk ns.rackspace.com
     Server:  ns.rackspace.com
     Address:  69.20.95.4
 
@@ -92,7 +94,7 @@ specified in seconds.
 To see how long a record is cached, include the `debug` option, as shown in
 the following example:
 
-    C:\Users\Administrator>nslookup -type=A -debug rackspace.co.uk
+    C:\Users\Administrator>nslookup -debug rackspace.co.uk
 
     ------------
 
