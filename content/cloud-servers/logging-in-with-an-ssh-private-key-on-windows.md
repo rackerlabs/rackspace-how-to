@@ -1,18 +1,20 @@
 ---
 permalink: logging-in-with-an-ssh-private-key-on-windows/
-audit_date:
+audit_date: '2018-09-26'
 title: Log in with an SSH private key on Windows
 type: article
 created_date: '2013-09-25'
 created_by: Brint Ohearn
-last_modified_date: '2018-09-28'
+last_modified_date: '2018-10-05'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article demonstrates how to load an SSH private key into PuTTY. You need
-the following software to complete this task:
+This article demonstrates how to load an SSH private key into PuTTY in order
+to connect to a [Microsoft Windows
+server](https://www.rackspace.com/microsoft/windows). You need the following
+software to complete this task:
 
 1.  **PuTTY**: A client for managing SSH sessions
 2.  **PuTTYgen**: A tool for managing and creating SSH key pairs
