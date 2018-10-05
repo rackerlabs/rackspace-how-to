@@ -12,7 +12,7 @@ product_url: cloud-servers
 ---
 
 This article demonstrates how to load an SSH private key into PuTTY in order
-to connect to a [Microsoft Windows
+to connect to a [Microsoft&reg; Windows&reg;
 server](https://www.rackspace.com/microsoft/windows). You need the following
 software to complete this task:
 
@@ -22,7 +22,7 @@ software to complete this task:
 To download both tools, see [Download PuTTY: latest
 release](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
-**Note**: These instructions apply to the Windows&reg; operating system.
+**Note**: These instructions apply to the Windows operating system.
 For information about using SSH private keys on Linux&reg; and OS X&reg;
 operating systems, see [Log in with an SSH Private Key on Linux and
 Mac](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
