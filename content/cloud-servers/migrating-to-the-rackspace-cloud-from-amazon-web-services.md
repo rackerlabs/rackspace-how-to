@@ -14,7 +14,7 @@ product_url: cloud-servers
 This guide is intended for developers who are migrating applications
 from Amazon Web Services (AWS) to Rackspace Cloud. It maps AWS
 infrastructure products to Rackspace infrastructure products,
-specifically Amazon Elastic Computer Cloud (EC2) to Rackspace Cloud
+specifically Amazon Elastic Compute Cloud (EC2) to Rackspace Cloud
 Servers. It also provides scenarios for specific stack migrations from
 EC2 to Cloud Servers. The goal of this guide is to make your migration
 as seamless as possible.
