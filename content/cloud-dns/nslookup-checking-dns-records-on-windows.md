@@ -5,7 +5,7 @@ title: Check DNS records on Windows with nslookup
 type: article
 created_date: '2012-06-27'
 created_by: Rackspace Support
-last_modified_date: '2016-10-05'
+last_modified_date: '2018-10-08'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
@@ -15,7 +15,10 @@ There are many reasons why you might need to check the status of your Domain
 Name System (DNS) records. For example, you might need to verify that updates
 are correct or troubleshoot issues with accessing a service.
 
-If you're a Cloud DNS user, you can view your DNS records through the Cloud Control Panel. In addition, Microsoft&reg; Windows&reg; offers `nslookup`, a built-in tool for checking your DNS records from the command line.
+If you're a [Cloud DNS](https://www.rackspace.com/cloud/dns) user, you can
+view your DNS records through the Cloud Control Panel. In addition,
+Microsoft&reg; Windows&reg; offers `nslookup`, a built-in tool for checking
+your DNS records from the command line.
 
 To access `nslookup`, open a command prompt window by selecting **Start >
 All Programs > Accessories > Command Prompt**.
