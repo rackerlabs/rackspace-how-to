@@ -47,10 +47,10 @@ Use the following steps to set up a load balancer:
 
     - **On the Rackspace Service Network**: This is the best option for load
       balancing two cloud servers because it enables the load-balancing
-      traffic to run on the Rackspace Cloud internal network, or ServiceNet.
+      traffic to run on the Rackspace Cloud internal network or ServiceNet.
       This option has two advantages: the rate limit on ServiceNet is double
       the rate limit on the public interface, and traffic between cloud
-      servers isn't charged for bandwidth.
+      servers has no charge for bandwidth.
 
 6. Choose the protocol and port that you want to use. The port adjusts to the
    protocol that you select, but you can also manually edit the port.
@@ -61,11 +61,11 @@ Use the following steps to set up a load balancer:
 
 7. Choose the appropriate algorithm for your load balancer.
 
-    **Note**: This is a very important attribute to set, especially as your
+    **Note**: This is an important attribute to set, especially as your
     load balancer implementation becomes more complex. In most cases, the
     Random, Round Robin, or Least Connections algorithm is sufficient when
-    load balancing two identical servers for increased web traffic. If your
-    servers are unequal in size or resources, consider using weighted
+    you are load balancing two identical servers for increased web traffic. If
+    your servers are unequal in size or resources, consider using weighted
     algorithms to favor the servers that have more resources.
 
 8.	In the **Add Nodes** section, click **Add Cloud Servers** to set your load
@@ -77,7 +77,7 @@ Use the following steps to set up a load balancer:
     load-balancing service on your external node directly through the Control
     Panel.
 
-     **Note**: The only domain names that can be used are host names that are
+     **Note**: The only domain names that you can use are host names that are
      associated with Cloud Database host names.
 
 10.	Click **Create Load Balancer**.
@@ -98,11 +98,11 @@ balancer:
   can't access the services that the load balancer exposes.
 
 - **Session Persistence**: If you're load balancing HTTP traffic, this feature
-  uses an HTTP cookie to ensure that subsequent requests are directed to the
-  same node in your load balancer pool.
+  uses an HTTP cookie that directs subsequent requests to the same node in
+  your load balancer pool.
 
-- **Logging**: In order to simplify log management, the logging feature
-  supports both Apache-style access logs (for HTTP-based protocol traffic) and
+- **Logging**: For log management simplification, the logging feature supports
+  both Apache-style access logs (for HTTP-based protocol traffic) and
   connection and transfer logging (for all other traffic) to your Cloud Files
   account. Logs are sorted, aggregated, and delivered to Cloud Files so that
   you have raw data in a single place that you can use for performance tuning
@@ -110,8 +110,8 @@ balancer:
 
 - **Connection Throttling**: Connection throttling limits the number of
   simultaneous connections that are allowed from each IP address. This feature
-  helps prevent malicious or abusive traffic from reaching your server and the
-  applications that are installed on it.
+  helps prevent malicious or abusive traffic from reaching your server and its
+  installed applications.
 
 - **Content Caching**: Content caching improves website performance by
   temporarily storing data that was recently accessed. While the data is
@@ -124,7 +124,7 @@ balancer:
   servers with an SSL certificate and private key.
 
 - **HTTPS Redirect**: This feature enables you to configure a load balancer
-  to redirect non-SSL HTTP traffic to SSL-secured HTTPS traffic. In order to
+  to redirect non-SSL HTTP traffic to SSL-secured HTTPS traffic. To
   use this feature and enable HTTPS redirects, you must configure your load
   balancers with SSL over port 443 and **Only Allow Secure Traffic**.
 
@@ -138,7 +138,7 @@ balancer:
 
 ### Pricing
 
-The cost for each load balancer (instance) is based on an hourly rate, plus
+The cost for each load balancer is based on an hourly rate, plus
 the number of concurrent connections, plus bandwidth.  You can view pricing
 details on the following product pages for Cloud Load Balancers:
 
