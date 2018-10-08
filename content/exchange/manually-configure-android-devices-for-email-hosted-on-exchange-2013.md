@@ -5,15 +5,15 @@ title: Manually configure Android devices for email hosted on Exchange 2013
 type: article
 created_date: '2014-01-31'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-09-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-08'
+last_modified_by: Kate Dougherty
 product: Microsoft Exchange
 product_url: exchange
 ---
 
 This article helps [email
-hosting](https://www.rackspace.com/email-hosting/webmail) users manually
-configure Microsoft&reg; Exchange&reg; 2013 on most Android devices.
+hosting](https://www.rackspace.com/email-hosting/webmail) users to manually
+configure Microsoft&reg; Exchange&reg; 2013 on most Android&trade; devices.
 
 **Note:** For personalized user and server information and device-specific
 instructions, use the [Email Help Tool](https://emailhelp.rackspace.com/).
@@ -53,15 +53,15 @@ address.
 6. On the next page, enter information in the following fields, then tap
    **Next**:
 
-   - **Email address**: Your email address (for example, **test@emailcompany.org**)
+   - **Email address**: Your email address (for example, **test@emailcompany.org**).
    - **Server address**: **mex06.emailsrvr.com** or **mex08.emailsrvr.com**.
 
-     **Note:** Use the [Email Help Tool](https://emailhelp.rackspace.com/) to get the correct server address for you device.
+     **Note:** Use the [Email Help Tool](https://emailhelp.rackspace.com/) to get the correct server address for your device.
 
    - **Domain**: Leave this field blank.
    - **Username**: Enter your email address again.
 
-      **Note**: Some devices might combine the domain and username the
+      **Note**: Some devices might combine the domain and username
       settings as domain\username. On those devices, precede your email
       address with a backslash (for example, **\test@emailcompany.org**).
 
@@ -71,9 +71,9 @@ address.
 7. If you're prompted to enable remote security administration, tap **OK** or
    **Allow**.
 
-    This setting enables you to remotely perform a factory reset (delete all
-    data) on the device from the Outlook Web App (OWA) if the device is lost
-    or stolen.
+    If the device is lost or stolen, this setting enables you to remotely
+    perform a factory reset (delete all data) on the device from the Outlook
+    Web App (OWA).
 
     <img src="{% asset_path exchange/manually-configure-android-devices-for-email-hosted-on-exchange-2013/4_40.png %}" width="217" height="386" />
 
