@@ -1,11 +1,11 @@
 ---
 title: Rackspace PDR Overview
-type: product
-created_date: '2018-10-04'
+type: article
+created_date: '2018-10-08'
 created_by: Nick Shobe
 last_modified_date: '2018-10-04'
 last_modified_by: Nick Shobe
-permalink: rackspace-pdr/overview
+permalink: rackspace-pdr-overview/
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
@@ -17,7 +17,7 @@ product_url: rackspace-pdr
 - **Meet security goals while lowering TCO**: The advanced security protection of Rackspace PDR can significantly lower Total Cost of Ownership (TCO) over internally developed security operations centers and comparable managed security service offerings.
 
 # PDR Platforms
-- [Rackspace PDR on Rackspace Dedicated Servers](rackspace-pdr/dedicated-servers)
-- [Rackspace PDR on Managed AWS](rackspace-pdr/aws)
-- [Rackspace PDR on Managed Azure Cloud](rackspace-pdr/azure)
-- [Rackspace PDR on Managed Google Cloud Platform](rackspace-pdr/mgcp)
+- [Rackspace PDR on Rackspace Dedicated Servers](/how-to/rackspace-pdr-dedicated-servers/)
+- [Rackspace PDR on Managed AWS](/how-to/rackspace-pdr-aws/)
+- [Rackspace PDR on Managed Azure Cloud](/how-to/rackspace-pdr-azure/)
+- [Rackspace PDR on Managed Google Cloud Platform](/how-to/rackspace-pdr-mgcp/)

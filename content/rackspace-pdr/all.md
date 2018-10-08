@@ -1,9 +1,9 @@
 ---
-title: Rackspace Managed Security – All Articles
+title: Rackspace PDR All Articles
 category: Managed Security
-permalink: rackspace-managed-security-all-articles/
-product: Rackspace Managed Security
-product_url: rackspace-managed-security
+permalink: rackspace-pdr-all-articles/
+product: Rackspace Proactive Detection & Response
+product_url: rackspace-pdr
 ---
 
 {% include all-articles-list.html %}

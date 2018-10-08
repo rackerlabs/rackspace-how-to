@@ -3,7 +3,7 @@ title: Rackspace PDR
 type: product
 created_date: '2018-10-04'
 created_by: Nick Shobe
-last_modified_date: '2018-10-04'
+last_modified_date: '2018-10-08'
 last_modified_by: Nick Shobe
 permalink: rackspace-pdr/
 product: Rackspace Proactive Detection & Response
@@ -14,10 +14,11 @@ Rackspace Proactive Detection & Response(PDR) protects your IT environment again
 
 # Introduction to Rackspace Managed Security Proactive Detection & Response(PDR)
 
-- [Rackspace PDR Overview](/how-to/rackspace-pdr-overview)
+- [Rackspace PDR Overview](/how-to/rackspace-pdr-overview/)
 
-# Rackspace PDR Platform Guids
-- [Rackspace PDR on Rackspace Dedicated Servers](rackspace-pdr/dedicated-servers)
-- [Rackspace PDR on Managed AWS](rackspace-pdr/aws)
-- [Rackspace PDR on Managed Azure Cloud](rackspace-pdr/azure)
-- [Rackspace PDR on Managed Google Cloud Platform](rackspace-pdr/mgcp)
+### Rackspace PDR Platform Guids
+
+- [Rackspace PDR on Rackspace Dedicated Servers](/how-to/rackspace-pdr-dedicated-servers/)
+- [Rackspace PDR on Managed AWS](/how-to/rackspace-pdr-aws/)
+- [Rackspace PDR on Managed Azure Cloud](/how-to/rackspace-pdr-azure/)
+- [Rackspace PDR on Managed Google Cloud Platform](/how-to/rackspace-pdr-mgcp/)
