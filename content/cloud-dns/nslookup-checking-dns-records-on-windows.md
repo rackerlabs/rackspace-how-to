@@ -31,7 +31,7 @@ that you want to check.
 
 **Note**: If you omit the record type, it defaults to `A`.
 
-The following example shows how to check A records for **rackspace.co.uk**:
+The following example shows how to check `A` records for **rackspace.co.uk**:
 
     C:\Users\Administrator>nslookup rackspace.co.uk
     Server:  cachens1.lon.rackspace.com>
@@ -46,18 +46,18 @@ The first two lines of output specify the server to which the request
 was directed. This server is the default server that your system uses for DNS
 name resolution.
 
-The second section gives the name of the record and the corresponding IP
-address. However, the answer in this section is non-authoritative because
-it originates from a server (**cachens1.lon.rackspace.com**) that isn't the
-root source for those records.
+The second section gives the name of the record and the corresponding Internet
+Protocol (IP) address. However, the answer in this section is
+non-authoritative because it originates from a server
+(**cachens1.lon.rackspace.com**) that isn't the root source for those records.
 
 ### Get an authoritative answer
 
-To get an authoritative answer you need to specify the authoritative name
-server at the end of the request.
+To get an authoritative answer you need to specify the authoritative (primary)
+name server at the end of the request.
 
 Use the `-type=soa` option to tell `nslookup` to display the
-authoritative (primary) name server, as shown in the following example:
+authoritative name server, as shown in the following example:
 
     C:\Users\Administrator>nslookup -type=soa rackspace.co.uk
     Server:  cachens1.lon.rackspace.com>
@@ -173,22 +173,24 @@ the following example:
     Name:    rackspace.co.uk
     Address:  212.64.133.165
 
+The response includes the following information:
+
 -   The first `Got answer` section of this example is used to get the
-    host name of the server from which you are requesting the A record.
+    host name of the server from which you are requesting the `A` record.
     In this example, the host name is **cachens1.lon.rackspace.com**.
 -   The second `Got answer` section relates to your actual request.
 -   The `HEADER` section contains details about the type of request and
     its success.
--   The `QUESTIONS` section shows that the request was for A records
+-   The `QUESTIONS` section shows that the request was for `A` records
     for rackspace.co.uk.
 -   The `ANSWERS` section displays one record with an IP address of
     212.64.133.165 and a TTL of 279 seconds (4 minutes 39 seconds).
 -   The `AUTHORITY RECORDS` section specifies the name servers that
     correspond to the domain.
--   The `ADDITIONAL RECORDS` section lists A records for the name servers
+-   The `ADDITIONAL RECORDS` section lists `A` records for the name servers
     that are listed in the authority records section.
 
 This response shows that the name server that the client computer uses will
-reuse the same A record for **rackspace.co.uk** for the next 4 minutes and 39
+reuse the same `A` record for **rackspace.co.uk** for the next 4 minutes and 39
 seconds. If you run the same command on the authoritative name server, you
 see the current maximum TTL for the record.
