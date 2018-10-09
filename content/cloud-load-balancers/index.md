@@ -5,7 +5,7 @@ created_date: '2016-01-17'
 created_by: Rackspace Support
 last_modified_date: '2016-09-06'
 last_modified_by: Nate Archer
-permalink: /cloud-load-balancers/
+permalink: cloud-load-balancers/
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
