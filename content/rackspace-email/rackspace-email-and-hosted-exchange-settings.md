@@ -14,8 +14,9 @@ product_url: rackspace-email
 This article helps you set up [Rackspace
 Email](https://www.rackspace.com/email-hosting) or [Hosted
 Exchange](https://www.rackspace.com/email-hosting/hosted-exchange) email on a
-desktop client (such as Microsoft Outlook or Mac Mail), and on your mobile
-device. You can either use our Email Help Tool, or enter the settings manually.
+desktop client (such as Microsoft&reg; Outlook&reg; or Mac Mail), and on your
+mobile device. You can either use our Email Help Tool or enter the settings
+manually.
 
 ### Email Help Tool
 
