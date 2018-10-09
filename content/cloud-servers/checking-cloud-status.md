@@ -13,8 +13,8 @@ product_url: cloud-servers
 
 If you have problems accessing the Cloud Control Panel or any
 other [Rackspace Cloud](https://www.rackspace.com/cloud) services, check the
-[Cloud Status page](https://status.rackspace.com/).  This page
-list all maintenance operations and service-impacting events, including
+[Cloud Status page](https://status.rackspace.com/). This page
+lists all maintenance operations and service-impacting events, including
 emergency outages.
 
 The first part of the page lists all Cloud services and their current
@@ -24,7 +24,7 @@ per data center.
 <img src="{% asset_path cloud-servers/checking-cloud-status/Google%20ChromeScreenSnapz043.png %}" alt="Current Status" width="600" />
 
 The next section displays a recent history for each service. If a
-service had an alert you can click that day's icon to view any related
+service had an alert, you can click that day's icon to view any related
 messages.
 
 <img src="{% asset_path cloud-servers/checking-cloud-status/Google%20ChromeScreenSnapz042.png %}" alt="Recent History" width="600" />
