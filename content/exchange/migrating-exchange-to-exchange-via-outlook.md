@@ -5,24 +5,26 @@ title: 'Migrate Exchange to Exchange via Outlook'
 type: article
 created_date: '2012-05-27'
 created_by: Rae D. Cabello
-last_modified_date: '2016-01-28'
-last_modified_by: Rose Coste
+last_modified_date: '2018-10-09'
+last_modified_by: Kate Dougherty
 product: Microsoft Exchange
 product_url: exchange
 ---
 
 This article describes how to transfer your current
-Microsoft Exchange data (Email, Calendar Data, Contacts, Tasks, and
-Notes) into your new Rackspace Microsoft Exchange account.
+Microsoft&reg; Exchange
+data (Email, Calendar Data, Contacts, Tasks, and
+Notes) to your new [Rackspace Microsoft
+Exchange](https://www.rackspace.com/email-hosting/hosted-exchange) account.
 
-**Note:** If your office/network has bandwidth limitations, you may want to
+**Note:** If your office network has bandwidth limitations, you might want to
 turn off cached Exchange mode before your users begin migrating their
 .pst files.
 
-### Export data into a .PST file
+### Export data to a .PST file
 
-1. Open Outlook and log into your
-   previous Microsoft Exchange mailbox. Select **File / Import and
+1. Open Outlook and log in to your
+   previous Microsoft Exchange mailbox. Select **File > Import and
    Export**.
 
    <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/1.png %}" alt="" />
@@ -49,14 +51,14 @@ turn off cached Exchange mode before your users begin migrating their
      the individual folder, then select the **Include subfolders**
      check box.
 
-4. You will now save this .PST file. The default save location
+4. Save this .PST file. The default save location
    is **C:\\Documents and Settings\\(user name)\\Local
    Settings\\Application Data\\Microsoft\\Outlook\\backup.pst.**
    Select the **Browse** button to select a different location.
 
    <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/3.png %}" alt="" />
 
-   **Note:** It may be easier to locate the file later if you save it to your
+   **Note:** It might be easier to locate the file later if you save it to your
    desktop. You will need to know the location of the file to import it
    into your new account.
 
@@ -69,11 +71,11 @@ turn off cached Exchange mode before your users begin migrating their
 
    <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/5.png %}" alt="" />
 
-**Note:** Since this file is only being used for temporary export/import, we
+**Note:** Because this file is only being used for temporary export/import, we
 recommend you use **No Encryption**
 for speed and compatibility purposes by leaving the password blank.
 
-### Importing Your .PST File
+### Import your .PST file
 
 After you have exported your .PST file you'll need to add your new
 Rackspace Microsoft Exchange email account to your email client. After
@@ -107,5 +109,5 @@ you have your account set up, perform the following steps:
 
    <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/10.png %}" alt="" />
 
-**Note:** Your import may take some time to finish depending on the size of
+**Note:** Your import might take some time to finish, depending on the size of
 the .PST file.
