@@ -5,15 +5,22 @@ title: Rackspace Webmail overview
 type: article
 created_date: '2012-05-27'
 created_by: Rackspace Support
-last_modified_date: '2018-01-24'
-last_modified_by: William Loy
+last_modified_date: '2018-10-09'
+last_modified_by: Kate Dougherty
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-With Rackspace Email, you can check and manage your email online through a webmail interface. Webmail provides direct access to your email without the need for additional software. Messages that are sent and received using webmail wait on the portal until the next time you log in. The webmail portal provides most of the same functionality that a mail client offers, including sending and receiving email, signatures, and email forwarding.
+With Rackspace Email, you can check and manage your email online through a
+[webmail](https://www.rackspace.com/email-hosting/webmail) interface. Webmail
+provides direct access to your email without the need for additional software.
+Messages that are sent and received using webmail wait on the portal until the
+next time you log in. The webmail portal provides most of the same
+functionality that a mail client offers, including sending and receiving
+email, signatures, and email forwarding.
 
-This article provides an overview of the available features in the Rackspace Email webmail interface.
+This article provides an overview of the available features in the Rackspace
+Email webmail interface.
 
 ### Log in to webmail
 
