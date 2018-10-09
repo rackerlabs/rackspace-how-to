@@ -12,8 +12,10 @@ product_url: rackspace-email
 ---
 
 Select and run one of the following scripts to add a login portal on your site
-for webmail through both Rackspace Email and Exchange mailboxes. Download both
-the script and the corresponding image to use.
+for [webmail](https://www.rackspace.com/email-hosting/webmail) through both
+Rackspace Email and [Microsoft&reg;
+Exchange](https://www.rackspace.com/email-hosting/hosted-exchange) mailboxes.
+Download both the script and the corresponding image to use.
 
 **Standard tall (350px x 210px) image**
 
