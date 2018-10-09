@@ -5,8 +5,8 @@ title: Add an email login portal for Rackspace Email webmail and Outlook Web Acc
 type: article
 created_date: '2016-08-24'
 created_by: Tom Mitchell
-last_modified_date: '2016-09-15'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-09'
+last_modified_by: Kate Dougherty
 product: Rackspace Email
 product_url: rackspace-email
 ---
