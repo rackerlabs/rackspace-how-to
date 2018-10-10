@@ -108,7 +108,7 @@ If the buttons to add one or more mailboxes are unavailable, you must add the ne
     
 3. Click **Continue**.
 4. If the order summary looks correct, click **Complete Order**.
-a
+
 ### References
 
 - [Cloud Office support terminology](/how-to/cloud-office-support-terminology)
