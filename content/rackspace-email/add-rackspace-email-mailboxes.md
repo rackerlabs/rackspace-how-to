@@ -10,7 +10,7 @@ last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
-
+zz
 You can add a single mailbox to your Rackspace Email account or you can add multiple mailboxes by using a CSV or Microsoft Excel file.
 
 If you need to add a Microsoft Exchange mailbox see [Add Microsoft Exchange mailboxes](https://support.rackspace.com/how-to/adding-microsoft-exchange-mailboxes/).
