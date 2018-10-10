@@ -14,6 +14,7 @@ product_url: rackspace-pdr
 
 | Source | Destination | Protocol | Port | Description |
 | ------ | ----------- | -------- | ---- | ----------- |
+| Agent | Threat Manager Appliances | TCP | 443 | Alert Logic agent updates |
 | Agent | vaporator.alertlogic.com | TCP | 443 | Alert Logic agent updates |
 | Your AL Appliances | Agent host | ALL | ALL | Active Scanning from the IDS appliances |
 | **Agent | Threat Manager Appliances | TCP | 7777 | **cloud platforms only**  Alert Logic agent data transport (between agent and appliance on local network) |

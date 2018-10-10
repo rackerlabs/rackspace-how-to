@@ -25,7 +25,7 @@ Our PDR teams deploy, manage and monitor your IDS Threat Manager appliances. Bel
 
 - Be a Rackspace AWS customer
 - A minimum of two(for H/A) threat manager appliances per VPC contianing monitored instances.
-- At least one threat manager per AZ containing monitored instances.
+- At least one threat manager per AZ containing monitored instances
 - Egress and Ingress firewall rules as defined in the sections below
 
 ##### For Rackspace manged AWS accounts
@@ -43,6 +43,8 @@ In a default environment our AWS team will use our deployment tools to create an
 For more details you may refer to the [Alert Logic upstream vendor documentation](https://docs.alertlogic.com/install/cloud/amazon-web-services-threat-manager-direct-windows.htm)
 
 ### Deployment of vendor agents
+
+Individual PDR agents are deployed and maintained by the Rackspace PDR team. However, we do have base requirements that must be met to ensure our automated deployment system and PDR Rackers can access your instances to deploy or troublshoot agents and systems.
 
 **Please follow the steps outlined below, to ensure successful agent deployments**
 - Deploy using Rackspace PDR compatable operating systems and kernels
