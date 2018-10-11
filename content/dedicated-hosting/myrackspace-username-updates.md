@@ -1,7 +1,7 @@
 ---
-permalink: myrackspace-username-updates/
+permalink: myrackspace-login-and-username-updates/
 audit_date: '2018-09-24'
-title: MyRackspace Login and Username Updates
+title: MyRackspace login and username updates
 type: article
 created_date: '2018-09-25'
 created_by: Richard Goodwin
@@ -40,7 +40,7 @@ The following example illustrates how Rackspace has created new usernames:
 
 ### MyRackspace login process
 
-Beginning on October 18, 2018, Managed Hosting users can access their accounts at our unified login portal https://login.rackspace.com or at the existing portal https://My.Rackspace.com.  No matter which portal you select, Managed Hosting users will no longer need to enter their account number as part of the login process. Users will simply need to enter their username and password and you will be logged in to your Managed Hosting portal.
+Beginning on October 18, 2018, Managed Hosting users can access their accounts at our unified login portal [https://login.rackspace.com](https://login.rackspace.com) or at the existing portal [https://My.Rackspace.com](https://My.Rackspace.com). No matter which portal you select, Managed Hosting users will no longer need to enter their account number as part of the login process. To login into your Managed Hosting portal, users should just enter their username and password.
 
 ### Frequently asked questions
 
