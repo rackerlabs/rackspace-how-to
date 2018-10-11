@@ -17,7 +17,7 @@ product_url: office-365
 
 You access your account from two different locations:
 
--   You manage your Microsoft &reg; Office 365&reg; services at
+-   You manage your Microsoft&reg; Office 365&reg; services at
     [portal.office.com](http://portal.office.com). From here you can
     create new users and work with Microsoft Exchange, Skype&reg; for Business,
     SharePoint&reg;, Yammer&reg;, and the rest of the Office 365 suite.
@@ -45,7 +45,7 @@ center](https://support.office.com/en-us/outlook).
 
 #### Does Office 365 support IMAP, POP, and SMTP connections?
 
-You can use IMAP and SMTP connections instead of the default MAPI-based
+Yes. You can use IMAP and SMTP connections instead of the default MAPI-based
 connection that comes with Office 365.
 
 **Note**: Using an IMAP or SMTP connection reduces functionality outside of
@@ -57,15 +57,18 @@ Office 365 uses the following ports:
 
 **IMAP**
 
-- Incoming server - outlook.office365.com : Port - 993
+- Incoming server: outlook.office365.com
+- Port: 993
 
 **POP**
 
-- Incoming server - outlook.office365.com : Port - 995
+- Incoming server: outlook.office365.com
+- Port: 995
 
 **SMTP**
 
-- Outgoing server - smtp.office365.com: Port - 587
+- Outgoing server: smtp.office365.com
+- Port: 587
 
 #### What information do I need to provide to get started?
 
@@ -87,7 +90,7 @@ You need to provide the following information when you sign up for Office
 
      Unless you're the only person in your company, you will want to add
      other people to Office 365 so that they can use the service. If you're
-     working with our [onboarding/migrations
+     working with our [onboarding and migrations
      team](https://www.rackspace.com/en-us/migration), this process is
      covered during the migration process.
 
@@ -105,7 +108,7 @@ The following administration centers are available for Office 365:
     center](https://support.office.com/en-za/article/About-the-Office-365-admin-center-58537702-d421-4d02-8141-e128e3703547?ui=en-US&rs=en-ZA&ad=ZA&fromAR=1)
     acts as the administrative hub for your Office 365 account. To
     access the admin center, sign in to your Office 365 account, go to
-    the App Launcher, and select the **Admin** tile.
+    the **App Launcher**, and select the **Admin** tile.
 -   [The Exchange admin
     center](https://docs.microsoft.com/en-us/exchange/exchange-admin-center)
     is the central location for making changes to Exchange and mail.
@@ -120,8 +123,8 @@ The following administration centers are available for Office 365:
 
 #### How do I contact support?
 
-You can contact our support team 24x7x365 through phone, chat, or
-support tickets:
+You can contact our support team 24x7x365 by phone, chat, or
+support ticket:
 
 -   To reach the Office 365 team directly by phone, call 1 877 417 3715.
 -   To reach the Office 365 team by chat, log in to either
