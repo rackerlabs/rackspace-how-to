@@ -16,10 +16,11 @@ Balancers to your account:
 
 **Cloud Servers**
 
--   [Create a Cloud Server](/how-to/create-a-cloud-server)
--   [Rackspace Cloud Essentials - Choosing the right size cloud server](/how-to/rackspace-cloud-essentials-choosing-the-right-size-cloud-server)
--   [Manage a Cloud Server](/how-to/managing-your-server)
+- [Create a Cloud Server](/how-to/create-a-cloud-server)
+- [Rackspace Cloud Essentials - Choosing the right size cloud
+  server](/how-to/rackspace-cloud-essentials-choosing-the-right-size-cloud-server)
+- [Manage a Cloud Server](/how-to/manage-a-cloud-server/)
 
 **Cloud Load Balancers**
 
--   [Configure a load balancer](/how-to/configure-a-load-balancer)
+- [Configure a load balancer](/how-to/configure-a-load-balancer)
