@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-essentials-guide-building-your-cloud-inventory/
-audit_date: '2018-10-11'
+audit_date: '2018-10-03'
 title: Rackspace Cloud Essentials Guide - Building Your Cloud Inventory
 type: article
 created_date: '2012-07-24'
