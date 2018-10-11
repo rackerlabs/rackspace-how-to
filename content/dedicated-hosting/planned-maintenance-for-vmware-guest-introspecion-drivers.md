@@ -1,10 +1,10 @@
 ---
 permalink: planned-maintenance-for-vmware-guest-introspecion-drivers/
 audit_date: '2018-10-11'
-title: Planned maintenance for VMWare Guest Introspecion drivers
+title: Planned maintenance for VMware Guest Introspection drivers
 type: article
 created_date: '2018-10-11'
-created_by: Scott Stine
+created_by: Scot Stine
 last_modified_date: '2018-10-11'
 last_modified_by: Cat lookabaugh
 product: Dedicated Hosting
@@ -12,8 +12,8 @@ product_url: dedicated-hosting
 ---
 
 Rackspace has identified a potential issue with the VMware$&reg; Guest
-Introspection drivers for Microsoft&reg; Windows devices. Windows VMware
-virtual machines (VMs) with NSX Network Introspection drivers (**vnetflt.sys**
+Introspection drivers for Microsoft&reg; Windows&reg; devices. Windows VMware
+virtual machines (VMs) with NSX&reg; Network Introspection drivers (**vnetflt.sys**
 and **vsepflt.sys**) might temporarily lose Transmission Control Protocol (TCP)
 network connectivity for new connections. To mitigate potential future issues,
 Rackspace is performing a maintenance to disable these drivers on Windows VMware
@@ -23,7 +23,7 @@ VMs.
 
 Q: Will my devices be rebooted as part of this remediation?
 
-A: No, Rackspace will **not** reboot your devices as part of our remediation
+A: No, Rackspace will *not* reboot your devices as part of our remediation
 plan. However, a reboot is required for the changes to take effect.
 
 **Note**: Your servers will likely reboot during your normal, scheduled patching
@@ -96,6 +96,6 @@ succeeded.
 
 Q: Where can I get more information?
 
-A: If you would like more information on this issue, please see the
+A: If you would like more information on this issue, see the
 [documentation provided by VMware](https://kb.vmware.com/s/article/2148218).
 
