@@ -5,8 +5,8 @@ title: Add Rackspace Email mailboxes
 type: article
 created_date: '2011-12-18'
 created_by: William Loy
-last_modified_date: '2017-06-06'
-last_modified_by: William Loy
+last_modified_date: '2018-10-11'
+last_modified_by: Chris Moyer
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -28,6 +28,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f "Cloud Office Control Panel") using your Rackspace Cloud Office admin ID and password.
 2. In the Rackspace Email section, click Mailboxes. 
+ZZ
 
    <img src="{% asset_path rackspace-email/add-rackspace-email-mailboxes/add-mailbox-sc1.png %}" />
    
