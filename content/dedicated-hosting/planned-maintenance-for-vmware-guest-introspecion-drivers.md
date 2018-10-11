@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Rackspace has identified a potential issue with the VMware$&reg; Guest
+Rackspace has identified a potential issue with the VMware&reg; Guest
 Introspection drivers for Microsoft&reg; Windows&reg; devices. Windows VMware
 virtual machines (VMs) with NSX&reg; Network Introspection drivers (**vnetflt.sys**
 and **vsepflt.sys**) might temporarily lose Transmission Control Protocol (TCP)
