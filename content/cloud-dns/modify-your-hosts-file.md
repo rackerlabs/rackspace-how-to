@@ -47,8 +47,8 @@ these entries.
 ### Windows
 
 If you are using a [Microsoft operating system](https://www.rackspace.com/microsoft) 
-like Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UAC). 
-As a result, you must run Microsoft Notepad as an administrator.
+like Windows 10, Windows 8, Windows 7, and Windows Vista you must run Microsoft Notepad
+as an administrator.
 
 #### Windows 10 and Windows 8
 
