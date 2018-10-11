@@ -1,5 +1,5 @@
 ---
-permalink: planned-maintenance-for-vmware-guest-introspecion-drivers/
+permalink: planned-maintenance-for-vmware-guest-introspection-drivers/
 audit_date: '2018-10-11'
 title: Planned maintenance for VMware Guest Introspection drivers
 type: article
