@@ -12,16 +12,16 @@ product_url: rackspace-pdr
 
 ### Getting Started on AWS with Rackspace PDR
 
-PDR on AWS has two main componants that will need to be implemented in your AWS environment; the setup of the IDS appliance infrastructure and deployment of select vendor agents.
+PDR on AWS has two main componants that will need to be implemented in your AWS environment; the setup of the Network-based Intrusion Detection(NIDS) appliance infrastructure and deployment of select vendor agents.
 
-### Deployment of an IDS appliance infrastructure
+### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your AWS network we deploy IDS appliances to each VPC where you have EC2 instances being monitored by our Rackspace PDR teams.
+To enable visibility of your AWS network we deploy NIDS appliances to each VPC where you have EC2 instances being monitored by our Rackspace PDR teams.
 
-#### IDS appliance platform requirements
-Rackspace PDR uses either Cloud Formation or Terraform to deploy IDS appliances in AWS. Our current IDS appliances are provided by Alert Logics Threat Manager offering.
+#### NIDS appliance platform requirements
+Rackspace PDR uses either Cloud Formation or Terraform to deploy NIDS appliances in AWS. Our current NIDS appliances are provided by Alert Logics Threat Manager offering.
 
-Our PDR teams deploy, manage and monitor your IDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
+Our PDR teams deploy, manage and monitor your NIDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
 
 - Be a Rackspace AWS customer
 - A minimum of two(for H/A) threat manager appliances per VPC contianing monitored instances.
@@ -34,12 +34,15 @@ Work with your AWS support team to implement the standards outlined below. Be su
 ##### For self-managed AWS accounts
 The Cloud Formation or Terraform templates you will be provided will create and managed IAM roles and Security Groups etc. that will aid you in the setup and configuration of the network configuration outloned below. However you may need to implement some additional network rules where it makes sense for your environment.
 
-##### IDS appliance network configuration
+##### NIDS appliance network configuration
 In a default environment our AWS team will use our deployment tools to create and manage the security groups needed to deploy your platform. However for customers implementing custom routing or application firewalls etc. Use the data below to ensure your AWS platform conforms to our specficiations.
 
-[Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-ids-networking/)
+[Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
 
-#### Additional info on IDS setup
+##### NIDS appliance end-to-end decryption
+Many appliactions terminate SSL/TLS at the network edge with load-balancer or web application firewall. However, if your application uses end-to-end encryption follow the [Rackspace PDR SSL Decryption Guide](/how-to/rackspace-pdr-ssl-decryption/).
+
+#### Additional info on NIDS setup
 For more details you may refer to the [Alert Logic upstream vendor documentation](https://docs.alertlogic.com/install/cloud/amazon-web-services-threat-manager-direct-windows.htm)
 
 ### Deployment of vendor agents

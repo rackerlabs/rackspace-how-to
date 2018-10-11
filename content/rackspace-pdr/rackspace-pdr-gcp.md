@@ -12,28 +12,31 @@ product_url: rackspace-pdr
 
 ### Getting Started on GCP with Rackspace PDR
 
-PDR on GCP has two main componants that will need to be implemented in your GCP environment; the setup of the IDS appliance infrastructure and deployment of select vendor agents.
+PDR on GCP has two main componants that will need to be implemented in your GCP environment; the setup of the Network-based Intrusion Detection(NIDS) appliance infrastructure and deployment of select vendor agents.
 
-### Deployment of an IDS appliance infrastructure
+### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your GCP network we deploy IDS appliances to each VPC where you have EC2 instances being monitored by our Rackspace PDR teams.
+To enable visibility of your GCP network we deploy NIDS to each VPC where you have EC2 instances being monitored by our Rackspace PDR teams.
 
-#### IDS appliance platform requirements
-Rackspace PDR uses either Cloud Formation or Terraform to deploy IDS appliances in GCP. Our current IDS appliances are provided by Alert Logics Threat Manager offering.
+#### NIDS appliance platform requirements
+Rackspace PDR uses either Cloud Formation or Terraform to deploy NIDS appliances in GCP. Our current NIDS appliances are provided by Alert Logics Threat Manager offering.
 
-Our PDR teams deploy, manage and monitor your IDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
+Our PDR teams deploy, manage and monitor your NIDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
 
 - Be a Rackspace GCP customer
 - Egress and Ingress firewall rules as defined in the sections below
 
 Work with your GCP support team to implement the standards outlined below. Be sure that ingress and egress requirements pass through any security WAFs or gateway devices that sit in front of 0.0.0.0/0.
 
-##### IDS appliance network configuration
+##### NIDS appliance network configuration
 In a default environment our GCP team will use our deployment tools to create and manage the network ACLs needed to configure your platform for Rackspace PDR. However for customers implementing custom routing or application firewalls etc. Use the data below to ensure your GCP deployment conforms to our specficiations.
 
-[Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-ids-networking/)
+[Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
 
-#### Additional info on IDS setup
+##### NIDS appliance end-to-end decryption
+Many appliactions terminate SSL/TLS at the network edge with load-balancer or web application firewall. However, if your application uses end-to-end encryption follow the [Rackspace PDR SSL Decryption Guide](/how-to/rackspace-pdr-ssl-decryption/).
+
+#### Additional info on NIDS setup
 For more details you may refer to the [Alert Logic upstream vendor documentation](https://docs.alertlogic.com/install/cloud/amazon-web-services-threat-manager-direct-windows.htm)
 
 ### Deployment of vendor agents

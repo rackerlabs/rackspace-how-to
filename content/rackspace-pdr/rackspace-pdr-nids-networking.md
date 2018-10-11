@@ -1,11 +1,11 @@
 ---
-title: Rackspace PDR IDS Networking Requirements
+title: Rackspace PDR NIDS Networking Requirements
 type: article
 created_date: '2018-10-09'
 created_by: Nick Shobe
 last_modified_date: '2018-10-09'
 last_modified_by: Nick Shobe
-permalink: rackspace-pdr-ids-networking/
+permalink: rackspace-pdr-nids-networking/
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---

@@ -26,7 +26,7 @@ Rackspace Proactive Detection & Response(PDR) protects your IT environment again
 ### Rackspace PDR Networking Guides
 
 - [Rackspace PDR Agent Networkin](/how-to/rackspace-pdr-agent-networking/)
-- [Rackspace PDR IDS Networking](/how-to/rackspace-pdr-ids-networking/)
+- [Rackspace PDR NIDS Networking](/how-to/rackspace-pdr-nids-networking/)
 
 ### Rackspace PDR Agent Guides
 

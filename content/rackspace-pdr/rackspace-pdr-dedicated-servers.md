@@ -12,23 +12,26 @@ product_url: rackspace-pdr
 
 ### Getting started on Rackspace dedicated servers with Rackspace PDR
 
-PDR on Rackspace dedicated servers is primarily managed and deployed by Rackspace Support teams, however, there are a few things that will ensure your deployments will go smoothly. The deployment process consists of deployment of IDS appliances and vendor agents that provide telemetry.
+PDR on Rackspace dedicated servers is primarily managed and deployed by Rackspace Support teams, however, there are a few things that will ensure your deployments will go smoothly. The deployment process consists of deployment of Network-based Intrusion Detection(NIDS) appliances and vendor agents that provide telemetry.
 
-### Deployment of an IDS appliance infrastructure
+### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your network we deploy IDS appliances to each routable network where you have servers being monitored by our Rackspace PDR teams.
+To enable visibility of your network we deploy NIDS to each routable network where you have servers being monitored by our Rackspace PDR teams.
 
-#### IDS appliance requirements
+#### NIDS appliance requirements
 
-Our PDR and support teams deploy, manage and monitor your IDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
+Our PDR and support teams deploy, manage and monitor your NIDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
 
 - Be a Rackspace Dedicated customer
 - Egress and Ingress firewall rules as defined in the sections below
 
-##### IDS appliance network configuration
-If you have self managed networks or firewalls etc. use the [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-ids-networking/) to implement appropriate firewall ACLs and routing to ensure proper opperation of our IDS appliances.
+##### NIDS appliance network configuration
+If you have self managed networks or firewalls etc. use the [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/) to implement appropriate firewall ACLs and routing to ensure proper opperation of our NIDS appliances.
 
-#### Additional info on IDS setup
+##### NIDS appliance end-to-end decryption
+Many appliactions terminate SSL/TLS at the network edge with load-balancer or web application firewall. However, if your application uses end-to-end encryption follow the [Rackspace PDR SSL Decryption Guide](/how-to/rackspace-pdr-ssl-decryption/).
+
+#### Additional info on NIDS setup
 For more details you may refer to the [Alert Logic upstream vendor documentation](https://docs.alertlogic.com/install/cloud/amazon-web-services-threat-manager-direct-windows.htm)
 
 ### Deployment of vendor agents

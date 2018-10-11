@@ -12,18 +12,22 @@ product_url: rackspace-pdr
 
 ### Getting Started on Azure with Rackspace PDR
 
-PDR on Azure has two main componants that will need to be implemented in your Azure environment; the setup of the IDS appliance infrastructure and deployment of select vendor agents.
+PDR on Azure has two main componants that will need to be implemented in your Azure environment; the setup of the Network-based Intrusion Detection(NIDS) appliance infrastructure and deployment of select vendor agents.
 
-### Deployment of an IDS appliance infrastructure
+### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your Azure network we deploy an IDS appliance into each distinct network environment.
+To enable visibility of your Azure network we deploy NIDS appliances into each distinct network environment.
 
-#### IDS appliance platform requirements
-At this time the Rackspace Azure and PDR support teams deploy, manage and monitor your IDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR on Azure.
+#### NIDS appliance platform requirements
+
+At this time the Rackspace Azure and PDR support teams deploy, manage and monitor your NIDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR on Azure.
 
 - Be a Rackspace Azure customer
-- An IDS appliance for each routable network segment(appliance needs to be reachable by agents and visa versa)
-- Egress and Ingress firewall rules(NSGs) as defined by [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-ids-networking/)
+- An NIDS appliance for each routable network segment(appliance needs to be reachable by agents and visa versa)
+- Egress and Ingress firewall rules(NSGs) as defined by [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
+
+##### SSL appliance end-to-end decryption
+Many appliactions terminate SSL/TLS at the network edge with load-balancer or web application firewall. However, if your application uses end-to-end encryption follow the [Rackspace PDR SSL Decryption Guide](/how-to/rackspace-pdr-ssl-decryption/).
 
 ### Deployment of vendor agents
 
