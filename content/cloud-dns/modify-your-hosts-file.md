@@ -12,13 +12,14 @@ product_url: cloud-dns
 ---
 
 Modifying your hosts file enables you to override the domain name system
-(DNS) for a domain on a specific machine. [DNS management](https://www.rackspace.com/cloud/dns) is useful when you
-want to perform test your site without the test link prior to going live with SSL, 
+(DNS) for a domain on a specific machine. [DNS management](https://www.rackspace.com/cloud/dns) 
+is useful when you want to test your site without the test link prior to going live with SSL, 
 verify that an alias site works prior to DNS changes, and for other DNS-related reasons.
 
 Modifying your hosts file causes your local machine to look directly at
 the Internet Protocol (IP) address that you specify. Rackspace offers 
-[managed hosting solutions](https://www.rackspace.com/managed-hosting) to assist the handling of these resources.
+[managed hosting solutions](https://www.rackspace.com/managed-hosting) to assist with 
+the handling of these resources.
 
 Modifying the hosts file involves adding two entries to it. Each entry
 contains the IP address to which you want the site to resolve and a version of
@@ -45,9 +46,9 @@ these entries.
 
 ### Windows
 
-If you are using a [Microsoft operating system](https://www.rackspace.com/microsoft) like Windows 10, Windows 8, 
-Windows 7, and Windows Vista use User Account Control (UAC). As a result, 
-you must run Microsoft Notepad as an administrator.
+If you are using a [Microsoft operating system](https://www.rackspace.com/microsoft) 
+like Windows 10, Windows 8, Windows 7, and Windows Vista use User Account Control (UAC). 
+As a result, you must run Microsoft Notepad as an administrator.
 
 #### Windows 10 and Windows 8
 
