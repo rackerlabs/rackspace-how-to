@@ -5,7 +5,7 @@ created_date: '2018-10-11'
 created_by: Nick Shobe
 last_modified_date: '2018-10-11'
 last_modified_by: Nick Shobe
-permalink: rackspace-pdr-gcp/
+permalink: rackspace-pdr-dedicated-servers/
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
@@ -38,7 +38,8 @@ For more details you may refer to the [Alert Logic upstream vendor documentation
 
 Individual PDR agents are deployed and maintained by the Rackspace PDR team. However, we do have base requirements that must be met to ensure our automated deployment system and PDR Rackers can access your instances to deploy or troublshoot agents and systems.
 
-**Please follow the steps outlined below, to ensure successful agent deployments**
+**Follow these steps to ensure successful agent deployments**
+
 - Deploy using Rackspace PDR compatable operating systems and kernels
 - Ensure you've implemented the appropriate network ACLs and firewall configurations
 
