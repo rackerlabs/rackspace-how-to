@@ -17,7 +17,7 @@ Control Panel interface.
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com) and click **Servers > Cloud Servers** in the top navigation bar.
 
-Make this change.
+Make this change and add a little more.
 
     **Note:** On the Dashboard in the Cloud Control Panel, you can click **Server** in the **Quick Build** section to go directly to the **Create Server** page.
 
