@@ -41,11 +41,12 @@ To create a Grafana dashboard, complete the following steps:
     your stack.
 5.  Return to the Cloud Control Panel.
 6.  On the **Create Custom Template** page, perform the following steps:
-    a. Enter a name for the template.
-    b. Paste the template content that you just copied.
-    c. Click **Validate Syntax** at the bottom of the page. After the template
-       is successfully validated, an `It works!` message displays beside the
-       button.
+
+     a. Enter a name for the template.
+     b. Paste the template content that you just copied.
+     c. Click **Validate Syntax** at the bottom of the page. After the template
+        is successfully validated, an `It works!` message displays beside the
+        button.
 
 7.  Click **Create Template**.
 
@@ -106,9 +107,9 @@ and a `check ID` to guarantee the uniqueness of the metrics. You can use the
 `entity ID` and `check ID` to identify the format of the metric that you
 want to see.
 
-You can locate the entity ID and check ID on the [Rackspace
-Intelligence](http://intelligence.rackspace.com/) **Monitoring
-Details** and **Check Details** pages.
+You can locate the entity ID and check ID in the [Cloud Control
+Panel](http://mycloud.rackspace.com/) on the Rackspace Intelligence
+**Monitoring Details** and **Check Details** pages.
 
 For more information, see the following articles:
 
@@ -136,7 +137,7 @@ the `checks` parameter. Check IDs always start with the letters *ch*.
 #### Upload a Grafana dashboard for database instances
 
 Rackspace has created a Grafana dashboard to help you set up your Cloud
-Databases MySQL instances.
+Databases MySQL&reg; instances.
 
 To upload a Grafana dashboard that shows your MySQL instances,
 complete the following steps:
@@ -164,7 +165,7 @@ more information, see [Use annotation metrics](/how-to/use-annotation-metrics).
 
 ### Grafana FAQ
 
-The following FAQ provide more information about using Grafana.
+The following FAQ provides more information about using Grafana.
 
 #### How much does Grafana cost?
 
@@ -172,7 +173,7 @@ You pay only for the cost of the server that you create.
 
 Grafana is an open-source metrics dashboard and graph editor. There is
 no cost for the software itself. You can choose to deploy it anywhere, and
-are responsible only for maintaining and paying for the server that it
+you are responsible only for maintaining and paying for the server that it
 runs on.
 
 We want you to have access to your metrics so that you can make informed
@@ -181,11 +182,10 @@ storage are available at no cost.
 
 #### Should I use Rackspace Intelligence or Grafana?
 
-[Rackspace Intelligence](http://intelligence.rackspace.com/) is
-a no-cost option that we provide to help you make your infrastructure choices.
-It is designed to answer basic questions about your servers. Rackspace
-Intelligence covers many use cases and offers limited customization options.
-For full customization, you might want to use Grafana.
+Rackspace Intelligence is a no-cost option that we provide to help you make
+your infrastructure choices. It is designed to answer basic questions about
+your servers. Rackspace Intelligence covers many use cases and offers limited
+customization options. For full customization, you might want to use Grafana.
 
 Also consider that Rackspace Intelligence does more than display graphs. It is
 a control panel that enables you to manage your Rackspace Monitoring configuration. Although Grafana might give you total control
