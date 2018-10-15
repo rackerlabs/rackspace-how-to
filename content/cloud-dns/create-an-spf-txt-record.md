@@ -80,7 +80,8 @@ following basic markers:
    scrutinized further.
 
 - `+all`: Allows any server to send email from your domain.
-  **Note**: This option should never be used.
+
+   **Note**: This option should never be used.
 
 ### Add an SPF TXT record
 
@@ -110,6 +111,6 @@ steps:
 
 For more information, see the following resources:
 
-- [Create a DKIM TXT Record](/how-to/create-a-dkim-txt-record)
+- [Create a DKIM TXT record](/how-to/create-a-dkim-txt-record)
 
 - [SPF Record Testing Tools](https://www.kitterman.com/spf/validate.html)
