@@ -129,7 +129,7 @@ You can also locate the monitoring and check IDs by looking at the
 Rackspace Intelligence URL for a particular check. The following link provides
 an example of this URL:
 
-`https://intelligence.rackspace.com/cloud/entities/enrmO7n1hX/checks/ch6fvLIaMC`
+[https://intelligence.rackspace.com/cloud/entities/enrmO7n1hX/checks/ch6fvLIaMC](https://intelligence.rackspace.com/cloud/entities/enrmO7n1hX/checks/ch6fvLIaMC)
 
 The entity ID directly follows the `entities` parameter. Entity IDs always
 start with the letters *en*. The check ID directly follows
