@@ -12,11 +12,12 @@ product_url: cloud-dns
 ---
 
 Email spammers commonly forge the sender address in an email. They send
-email from their own mail servers, but with your domain as the sending email.
-The Sender Policy Framework (SPF) attempts to control forged email by
-giving domain owners a way to specify which email sources are legitimate
-for their domains and which ones aren't. For detailed information about
-SPF, see [Sender Policy Framework Project Overview](http://www.openspf.org/).
+email from their own mail servers, but with your domain as the
+sending email. The Sender Policy Framework (SPF) attempts to control forged
+email by giving domain owners a way to specify which email sources are
+legitimate for their domains and which ones aren't. For detailed information
+about SPF, see [Sender Policy Framework Project
+Overview](http://www.openspf.org/).
 
 You can add an SPF record to your DNS zone as a text (TXT) record. The SPF
 record is associated with your domain and specifies which mail server or
