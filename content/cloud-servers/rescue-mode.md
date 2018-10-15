@@ -15,37 +15,37 @@ If your Linux system has become non-bootable or is suffering from
 critical system errors, you can use rescue mode to recover your
 system data. These problems might be be caused by file system corruption,
 boot file corruption, or other configuration errors. If your
-system encounters a problem during the boot process, you would typically boot
+system encounters a problem during the boot process, you typically boot
 in to a maintenance mode environment called single user mode that enables you
 to log in with your root password and check for any errors.
 
-However, using single user mode has the following drawbacks:
+However, single user mode has the following drawbacks:
 
--   **Your system is read-only and you cannot make corrective changes.**
+-   Your system is read-only and you cannot make corrective changes.
 -   Most services (such as networking) are disabled. This situation prevents
     you from copying your data to another server.
 -   You have to access your server by using the Console, which is
     slower than using a traditional Secure Shell (SSH) login.
 
-To avoid having to use single user mode, you can bring your server up
-in Rescue Mode through the Rackspace Cloud Control Panel.
+You can avoid working with single user mode by bringing your server up
+in rescue mode through the Rackspace Cloud Control Panel.
 
 ### What is rescue mode?
 
 Rescue mode grants the root user full access to your non-bootable
-server's file system. You can use it to modify problems in configuration
-files or to copy data from your Cloud Server to a remote location.
-Using rescue mode through the Cloud Control Panel is similar to
+server's file system. You can use rescue mode to modify problems in
+configuration files or to copy data from your Cloud Server to a remote
+location. Using rescue mode through the Cloud Control Panel is similar to
 booting into single user mode with networking enabled.
 
-**Place your server into rescue mode**
+**Put your server in rescue mode**
 
-Use the following steps to place your server into rescue mode:
+Use the following steps to put your server in rescue mode:
 
 1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/),
-    and click **Servers > Cloud Servers** in the top navigation bar.
+    then click **Servers > Cloud Servers** in the top navigation bar.
 
-2.  From your list of servers, click the gear icon next to the server
+2.  From the list of your servers, click the gear icon next to the server
     that you want to bring up in rescue mode and select **Enter Rescue
     Mode** from the drop-down menu.
 
@@ -57,7 +57,7 @@ Use the following steps to place your server into rescue mode:
 
 5.  After you copy the temporary password, click **Dismiss Password**.
 
-The server begins to enter Rescue Mode and displays an orange **Status**
+The server begins to enter rescue mode and displays an orange **Status**
 field next to the server name. The initial status is **Preparing
 Rescue**.
 
@@ -75,7 +75,7 @@ IP address and the temporary root password to log in to rescue mode.
 
 ### Troubleshoot your server in rescue mode
 
-Before you can access the files on your server you need to mount the
+Before you can access the files on your server, you need to mount the
 server's file system. To accomplish this task, you need to look at your
 partitions to determine your file system's device.
 
@@ -90,28 +90,30 @@ Your output should look similar to the following output:
 
 <img src="{% asset_path cloud-servers/rescue-mode/fdisk.png %}" alt="" />
 
-Review the different disk names that appear. A disk entry looks
+Several disks appear in the output. A disk entry looks
 like similar to the following example:
 
     Disk /dev/sdb1: 2147 MB
 
-This example shows the device and the size of the disk. The screenshot has
-the following blocks:
+The portion after `Disk` that looks like a file path is the device.
+
+In the disk entry example above, the device is `/dev/sda1`.
+
+The device can be different depending on the distribution image that was used
+to build your server.
+
+The example output in the screenshot shows the device and the size of the
+disk. It contains the following blocks:
 
 1.  **First block (about 2GB)**: The rescue mode file system.
 2.  **Second block (10.2GB)**: The server's file system. The size of this
     block depends on the size of your server.
 3.  **Third block**: The swap space.
 
-After you identify the block for your server's file system, review
-the portion after *Disk* that looks like a file path. In the example
-above, the device is:
+Identify the block for your server's file system and find the device name.
 
-    /dev/sda1
-
-The device can be different depending on the distribution image that was used
-to build your server. Now that you know your file system's device you can
-assign it a directory and mount it for access.
+After you know your file system's device, you can assign it a directory and
+mount it for access.
 
 Run the following command, replacing **/dev/diskdevice** with your file system
 device:
@@ -122,10 +124,10 @@ For example, if your file system device is **/dev/sda1**, the command would be:
 
     mount /dev/sda1 /mnt
 
-After you complete this step, you can access your files through the **/mnt**
+After you complete this step, you can access your files through the `/mnt`
 directory.
 
-**Note**: You need to precede file paths with `/mnt`. For example, if you need
+**Note**: You must precede file paths with `/mnt`. For example, if you need
 to correct the `/etc/fstab` file, you access that file by using the
 following path:
 
