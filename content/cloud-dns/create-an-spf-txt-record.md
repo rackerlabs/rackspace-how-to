@@ -16,12 +16,12 @@ email from their own mail servers, but with your domain as the
 sending email. The Sender Policy Framework (SPF) attempts to control forged
 email by giving domain owners a way to specify which email sources are
 legitimate for their domains and which ones aren't. For detailed information
-about SPF, see [Sender Policy Framework Project
+about SPF, see the [Sender Policy Framework Project
 Overview](http://www.openspf.org/).
 
-You can add an SPF record to your DNS zone as a text (TXT) record. The SPF
-record is associated with your domain and specifies which mail server or
-servers the domain uses to send email.
+You can add an SPF record to your Domain Name System (DNS) zone as a text
+(TXT) record. The SPF record is associated with your domain and specifies
+which mail server or servers the domain uses to send email.
 
 ### Considerations for setting the SPF
 
@@ -104,7 +104,7 @@ steps:
     `v=spf1 mx -all` to indicate that all email is sent from this server
     and no other mail servers are authorized.
 
-6.  Specify the Time To Live (TTL).
+6.  Specify the Time to Live (TTL).
 
 7.  Click **Add Record**.
 
