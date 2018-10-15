@@ -33,7 +33,7 @@ To create a Grafana dashboard, complete the following steps:
 
 1.  Log in to the [Cloud Control
     Panel](https://mycloud.rackspace.com/) with
-    your user name and password.
+    your username and password.
 2.  In the **Servers** section, click **Create Stack**.
 3.  Click **Create Custom Template**.
 4.  Go to <https://bitly.com/heat-grafana> and copy the content on
@@ -91,7 +91,7 @@ To access the Grafana dashboard, perform the following steps:
     the stack and click **Log In**.
 
 4.  Create your Grafana dashboard from Rackspace Monitoring data by pasting
-    the JSON code found in the [Rackspace orchestration template for
+    the JSON code found in the [Rackspace Cloud Orchestration template for
     Grafana](https://github.com/rackspace-orchestration-templates/grafana/blob/master/dashboards/default_dashboard.json).
 
      <img src="{% asset_path rackspace-metrics/create-a-grafana-dashboard-for-rackspace-metrics/grafana-home-page_0.png %}" width="432" height="284" />
@@ -101,9 +101,9 @@ format:
 
 `rackspace.monitoring.entities.<entityid>.checks.<checktype>.<checkid>.<metricname>`
 
-As shown in the preceding example, Rackspace Monitoring generates `entity IDs`
-and `check IDs` to guarantee the uniqueness of the metrics. You can use the
-`entity IDs` and `check IDs` to identify the format of the metric that you
+This example URL shows that Rackspace Monitoring generates an `entity ID`
+and a `check ID` to guarantee the uniqueness of the metrics. You can use the
+`entity ID` and `check ID` to identify the format of the metric that you
 want to see.
 
 You can locate the entity ID and check ID on the [Rackspace
@@ -114,7 +114,7 @@ For more information, see the following articles:
 
 - [Getting Started with Rackspace Intelligence for the cloud](/how-to/getting-started-with-rackspace-intelligence-for-the-cloud)
 
-- [Monitoring entities with Rackspace Intelligence](/how-to/monitoring-entities-with-rackspace-intelligence)
+- [Monitor entities with Rackspace Intelligence](/how-to/monitoring-entities-with-rackspace-intelligence)
 
 - [Working with checks](/how-to/working-with-checks)
 
