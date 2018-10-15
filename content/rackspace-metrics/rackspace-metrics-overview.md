@@ -11,25 +11,25 @@ product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
 
-Rackspace Metrics is a multi-tenant software-as-a-service (SaaS) product
+Rackspace Metrics is a multitenant software-as-a-service (SaaS) product
 that offers a flexible and affordable platform for storing and serving
 time-series metrics. It provides a REST API for metrics ingestion and
 retrieval. In addition, it also provides out-of-box integration with
 popular open-source tools. The software that powers this service is an
-open source project named [Blueflood](http://blueflood.io), which is built on
+open-source project named [Blueflood](http://blueflood.io), which is built on
 top of [Apache&reg; Cassandra&reg;](http://cassandra.apache.org/). Rackspace
 Metrics is designed to meet the functional and performance requirements of
 enterprise-scale metrics.
 
 ### The growth of metrics
 
-The number of applications that are built for the cloud and deployed in
+The number of applications that are built for and deployed in
 the cloud is growing. Instead of a monolithic design, these
 applications have distributed architectures and are deployed as
 clusters of platform components. These components constantly communicate
 with each other to form the business functions of the application.
 
-In this distributed architecture, each platform component instance is an
+In distributed architectures, each platform component instance is an
 independent process that can be monitored individually. As a result, the
 size of the data collected by infrastructure-monitoring tools such as
 Rackspace Monitoring and Nagios&reg; has grown exponentially.
@@ -49,10 +49,10 @@ Rackspace Metrics consists of the following components:
 -   **Metrics ingestion**: Rackspace Metrics enables you to ingest
     metrics through the Ingestion API. Rackspace Metrics is
     integrated with popular open-source metrics collection systems such
-    as StatsD, collectD, and Logstash.
+    as StatsD, collectd, and Logstash.
 
      You can start using Rackspace Metrics by changing only a few lines of
-     configuration in your existing metrics collection system. You can also
+     the configuration in your existing metrics collection system. You can also
      choose to leave your existing metrics storage engine running for a while
      to compare the results against Rackspace Metrics.
 
@@ -63,7 +63,7 @@ Rackspace Metrics consists of the following components:
     metrics data via a public API. Through its Query API, Rackspace
     Metrics supports metrics visualization in the Rackspace Cloud
     Control Panel and Rackspace Intelligence for data collected through
-    Cloud Monitoring. In addition, Rackspace Metrics can also integrate
+    Rackspace Monitoring. In addition, Rackspace Metrics can also integrate
     with Graphite and Grafana&reg;. For more information, see [Create a Grafana
     dashboard for Rackspace
     Metrics](/how-to/create-a-grafana-dashboard-for-rackspace-metrics/).
@@ -74,7 +74,7 @@ Rackspace Metrics consists of the following components:
 ### Grant users access to Rackspace Metrics
 
 You don't need to register to access data in Rackspace Metrics that has
-been collected through Cloud Monitoring. The data is already available
+been collected through Rackspace Monitoring. The data is already available
 to users through the Query API. However, you must have the appropriate role to
 access data through the Query API.
 
@@ -84,11 +84,11 @@ program](https://developer.rackspace.com/docs/metrics/v2/early-access-program/).
 
 ### Add appropriate roles
 
-The Rackspace Metrics is not available in the [Rackspace Cloud Control
+Rackspace Metrics is not available in the [Rackspace Cloud Control
 Panel](https://mycloud.rackspace.com/). When you sign up for
 the Early Access program, Rackspace Metrics-related roles are added to your
-users automatically. If you see permission-related issues in testing, please
-let us know.
+users automatically. If you see permission-related issues in testing,
+[contact us at metrics-ea@rackspace.com](mailto:metrics-ea@rackspace.com).
 
 **Note:** For information on the roles that may access the Rackspace Metrics
 API, see [Role-based access control
