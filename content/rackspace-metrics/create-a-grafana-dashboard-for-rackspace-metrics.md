@@ -44,9 +44,10 @@ To create a Grafana dashboard, complete the following steps:
 
      - Enter a name for the template.
      - Paste the template content that you just copied.
-     - Click **Validate Syntax** at the bottom of the page. After the template
-       is successfully validated, an `It works!` message displays beside the
-       button.
+     - Click **Validate Syntax** at the bottom of the page.
+
+        After the template is successfully validated, an `It works!` message
+        displays beside the button.
 
 7.  Click **Create Template**.
 
