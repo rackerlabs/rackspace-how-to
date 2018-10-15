@@ -138,8 +138,8 @@ for the rescue mode file system, rather your normal file system.
 
 ### Exiting rescue mode
 
-To exit rescue mode, go to the **Server Details** page in the Cloud Control
-Panel and click **Exit Rescue Mode**.
+To exit rescue mode, go to the **Server Details** page in the
+Cloud Control Panel and click **Exit Rescue Mode**.
 
 ### Next steps
 
