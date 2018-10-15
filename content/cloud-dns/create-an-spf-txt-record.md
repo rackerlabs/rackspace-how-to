@@ -82,7 +82,7 @@ following basic markers:
 
 - `+all`: Allows any server to send email from your domain.
 
-   **Note**: This option should never be used.
+   **Note**: This last option should never be used.
 
 ### Add an SPF TXT record
 
