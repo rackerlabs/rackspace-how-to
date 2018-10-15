@@ -42,11 +42,11 @@ To create a Grafana dashboard, complete the following steps:
 5.  Return to the Cloud Control Panel.
 6.  On the **Create Custom Template** page, perform the following steps:
 
-     a. Enter a name for the template.
-     b. Paste the template content that you just copied.
-     c. Click **Validate Syntax** at the bottom of the page. After the template
-        is successfully validated, an `It works!` message displays beside the
-        button.
+     - Enter a name for the template.
+     - Paste the template content that you just copied.
+     - Click **Validate Syntax** at the bottom of the page. After the template
+       is successfully validated, an `It works!` message displays beside the
+       button.
 
 7.  Click **Create Template**.
 
