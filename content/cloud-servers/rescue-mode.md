@@ -97,7 +97,8 @@ like similar to the following example:
 
 The portion after `Disk` that looks like a file path is the device.
 
-In the disk entry example above, the device is `/dev/sda1`.
+In the example output in the screenshot, the device for the server's file
+system is `/dev/sda1`.
 
 The device can be different depending on the distribution image that was used
 to build your server.
