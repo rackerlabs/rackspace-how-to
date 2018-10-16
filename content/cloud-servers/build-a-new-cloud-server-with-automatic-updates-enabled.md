@@ -25,7 +25,8 @@ enabled:
 1. Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
 2. In the top navigation bar, select **Servers > Cloud Servers**.
 3. Click **Create Server**.
-4. Enter a name for the server in the **Server Name** field and select the **Region** where you want to host the server.
+4. Enter a name for the server in the **Server Name** field and select the
+   **Region** where you want to host the server.
 5. In the **Image** section, select an **Image Type**, **Operating System**,
    **Version**.
 6. In the **Flavor** section, select a **Flavor**.
@@ -34,4 +35,6 @@ enabled:
    Key** to add a new one.
 7. When you're finished making selections, click **Create Server**.
 
-    The message "Successfully created server" appears, indicating that the server creation process has started. Security updates are automatically applied to the new server.
+    The message **Successfully created server** appears, indicating that the
+    server creation process has started. Security updates are automatically
+    applied to the new server.
