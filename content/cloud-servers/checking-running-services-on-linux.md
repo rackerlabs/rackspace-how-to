@@ -25,12 +25,7 @@ directory by using the `ls` command followed by the directory. Some names vary
 depending on your distribution. For example, Apache&reg; is `httpd` on CentOS
 and `apache2` on Ubuntu.
 
-**Note**: Many newer Linux&reg; distributions use systemd instead of netstat
-to check services. If you're using systemd, replace all `service
-<service-name> <status>` commands with `systemct1 <status> <service-name>`.
-For more information about `systemct1` commands, see the Fedora [SysVinit to
-Systemmd
-Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
+**Note**: Many newer Linux&reg; distributions use systemd instead of netstat to check services. If you're using systemd, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora [SysVinit to Systemmd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Check the service status
 
