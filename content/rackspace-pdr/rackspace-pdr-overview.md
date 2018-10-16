@@ -18,6 +18,7 @@ product_url: rackspace-pdr
 
 ### PDR Platforms
 
+
 - [Rackspace PDR on Rackspace Dedicated Servers](/how-to/rackspace-pdr-dedicated-servers/)
 - [Rackspace PDR on Managed AWS](/how-to/rackspace-pdr-aws/)
 - [Rackspace PDR on Managed Azure Cloud](/how-to/rackspace-pdr-azure/)
