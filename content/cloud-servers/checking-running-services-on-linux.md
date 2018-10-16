@@ -25,7 +25,7 @@ directory by using the `ls` command followed by the directory. Some names vary
 depending on your distribution. For example, Apache&reg; is `httpd` on CentOS
 and `apache2` on Ubuntu&reg;.
 
-**Note**: Many newer Linux&reg; distributions use systemd instead of netstat to check services. If you're using systemd, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora [SysVinit to Systemmd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
+**Note**: Many newer Linux&reg; distributions use systemd instead of netstat to check services. If you're using systemd, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora [SysVinit to Systemd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Check the service status
 
@@ -45,7 +45,7 @@ by using the `service` command:
 ### Start the service
 
 If a service isn't running, you can use the `service` command to start it. The
-following example starts the httpd service:
+following example starts the `httpd` service:
 
     $ sudo service httpd start
     Starting httpd:                                            [  OK  ]
@@ -62,7 +62,7 @@ failure and usually displays a message that indicates the cause of the problem.
 
 ### Use netstat to find port conflicts
 
-In the  preceding example, `httpd` cannot start because something is
+In the preceding example, `httpd` can't be started because something is
 already listening on the port. To find out what's listening, you can run the
 `netstat` command.
 
@@ -101,6 +101,6 @@ logs](https://community.rackspace.com/products/f/25/t/531) to see if they
 contain information about the issue.
 
 ### Next steps
-After you're sure that the application is running, check [the server
+After you're sure that the application is running, check the [server
 resources](/how-to/checking-system-load-on-linux) that your application is
 consuming.
