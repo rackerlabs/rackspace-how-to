@@ -28,10 +28,10 @@ enabled:
 4. Enter a name for the server in the **Server Name** field and select the
    **Region** where you want to host the server.
 5. In the **Image** section, select an **Image Type**, **Operating System**,
-   **Version**.
+   and **Version**.
 6. In the **Flavor** section, select a **Flavor**.
 7. If you want to add a Secure Shell (SSH) key, click **Advanced Options**,
-   then select an existing key from the drop-down menu, or click **Manage SSH
+   then select an existing key from the drop-down menu or click **Manage SSH
    Key** to add a new one.
 7. When you're finished making selections, click **Create Server**.
 
