@@ -101,6 +101,6 @@ logs](https://community.rackspace.com/products/f/25/t/531) to see if they
 contain information about the issue.
 
 ### Next steps
-After you're sure that the application is running, check the [server
-resources](/how-to/checking-system-load-on-linux) that your application is
-consuming.
+After you're sure that the application is running, check the
+[server resources](/how-to/checking-system-load-on-linux) that
+your application is consuming.
