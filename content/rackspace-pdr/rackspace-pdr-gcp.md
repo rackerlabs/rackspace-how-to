@@ -16,20 +16,25 @@ PDR on GCP has two main componants that will need to be implemented in your GCP 
 
 ### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your GCP network we deploy NIDS to each VPC where you have EC2 instances being monitored by our Rackspace PDR teams.
+To enable visibility of your GCP network we deploy NIDS to a special PDR project that has
 
 #### NIDS appliance platform requirements
-Rackspace PDR uses either Cloud Formation or Terraform to deploy NIDS appliances in GCP. Our current NIDS appliances are provided by Alert Logics Threat Manager offering.
+The Rackspace PDR and Rackspace GCP teams deploy and manage your GCP NIDS appliance infrastructure.
 
-Our PDR teams deploy, manage and monitor your NIDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
+Our PDR teams deploy, manage and monitor your NIDS appliances. Below are the platform requirements required by Rackspace PDR.
 
 - Be a Rackspace GCP customer
 - Egress and Ingress firewall rules as defined in the sections below
 
-Work with your GCP support team to implement the standards outlined below. Be sure that ingress and egress requirements pass through any security WAFs or gateway devices that sit in front of 0.0.0.0/0.
+If you have custom changes to your network envirnments, be sure to work with your GCP support team to implement them to comply with Rackspace PDR. Be sure that ingress and egress requirements pass through any security WAFs or gateway devices that sit in front of 0.0.0.0/0.
 
 ##### NIDS appliance network configuration
-In a default environment our GCP team will use our deployment tools to create and manage the network ACLs needed to configure your platform for Rackspace PDR. However for customers implementing custom routing or application firewalls etc. Use the data below to ensure your GCP deployment conforms to our specficiations.
+
+Rackspace PDR deployments require a separate project for the Rackspace PDR infrastructure. This project has its own Networks, isolated from the other projects and networks. Both of these networks use VPC Peering to provide connectivity with other projects.
+
+The Rackspace PDR infrastructure project consists of, at a minimum, of two NIDS appliances per GCP Region in use for high availability(HA).
+
+Due to GDPR, EU regions will require a separate HA pair of the NIDS's. Firewall rules ensure connectivity between EU and US is blocked for Compliance with GDPR.
 
 [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
 
@@ -53,7 +58,7 @@ Individual PDR agents are deployed and maintained by the Rackspace PDR team. How
 Due to the various vendors we have selected to provide the nessessary telemetry to our systems. It is important that you select operating systems and kernel versions that are compatable with the vendors agents by follow this guide [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatablity/).
 
 #### Deployment boot script
-Rackspace PDR on GCP uses a boot installation script to deploy and configure our vendor agents. We currently do not provide an alternative method for manually deploying agents on GCP, so proper configuration at boot is required to provision instances for GCP.
+Rackspace PDR on GCP uses a boot installation script to deploy and configure our vendor agents. We currently do not provide an alternative method for manually deploying agents on GCP, so proper configuration at boot is required to provision instances for Rackspace PDR.
 
 #### Instance network requirements
 The agents used to provide telementry to our Security Operations Center do have specific networking requirements that must be implemented. Use the [Rackspace PDR Agent Network Requirements](/how-to/rackspace-pdr-agent-networking/) guide to correctly implement network ACLs and firewall rules for your platform.

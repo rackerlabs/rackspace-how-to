@@ -10,6 +10,8 @@ product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
+Although there are implementation differences accross platforms, the network requirements are generally consistant. Differences are indicated in italics with where and why the network ACL might differ.
+
 ### Ingress Requirements to the Threat Manager Appliances
 
 ***Cloud platforms only***
@@ -32,7 +34,7 @@ product_url: rackspace-pdr
 | Appliance | Agent(CIDRs) | ALL | ALL | Active Scanning |
 | Appliance | 8.8.4.4 | TCP/UDP | 53 | DNS |
 | Appliance | 8.8.8.8 | TCP/UDP | 53 | DNS |
-| Appliance | 0.0.0.0/0 TCP | 80 | Appliance updates |
+| Appliance | 0.0.0.0/0 | TCP | 80 | Appliance updates |
 | Appliance | 204.110.218.96/27 | TCP | 443 | Updates |
 | Appliance | 204.110.219.96/27 | TCP | 443 | Updates |
 | Appliance | 208.71.209.32/27 | TCP | 443 | Updates |
