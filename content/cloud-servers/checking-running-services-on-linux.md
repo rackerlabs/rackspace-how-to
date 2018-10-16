@@ -21,11 +21,12 @@ command references a service by using its init script, which is stored in the
 `etc/rc.d/init.d` directory for Red Hat&reg;-based distributions.
 
 If you don't know the name that the system uses for a service, check either
-directory by using the `ls` command followed by the directory. Some names vary
-depending on your distribution. For example, Apache&reg; is `httpd` on CentOS
-and `apache2` on Ubuntu&reg;.
+of the preceding directories by using the `ls` command followed by the
+directory name. Some names vary depending on your distribution. For example,
+Apache&reg; is `httpd` on CentOS&reg; and `apache2` on Ubuntu&reg;.
 
-**Note**: Many newer Linux&reg; distributions use systemd instead of netstat to check services. If you're using systemd, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora [SysVinit to Systemd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
+**Note**: Many newer Linux&reg; distributions use `systemd` instead of
+`netstat` to check services. If you're using `systemd`, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora&trade; [SysVinit to Systemd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Check the service status
 
@@ -36,7 +37,7 @@ A service can have any of the following statuses:
 - `restart`: The service is rebooting and will start after the process is
   complete.
 
-The following example shows how to check the status of `httpd` on CentOS&reg;
+The following example shows how to check the status of `httpd` on CentOS
 by using the `service` command:
 
     $ sudo service httpd status
@@ -77,7 +78,7 @@ ports that they're using:
     tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      1115/master
     tcp        0      0 :::22                       :::*                        LISTEN      1051/sshd
 
-The output shows that the nc program (which appears in the `Program name`
+The output shows that the `nc` program (which appears in the `Program name`
 column) is listening on port 80 (which appears in the `Local Address`
 column). Stopping this program should enable `httpd` to be started.
 
@@ -86,7 +87,7 @@ column). Stopping this program should enable `httpd` to be started.
 ### Check xinetd status
 
 If the service isn't running, it might be because a superserver such as
-an Extended Internet Service Daemon (xinetd) is being used to launch the
+an Extended Internet Service Daemon (`xinetd`) is being used to launch the
 program when a connection is received. If this is the case, starting the
 service might have resolved the issue. Run the following command to verify
 that the issue is resolved:
