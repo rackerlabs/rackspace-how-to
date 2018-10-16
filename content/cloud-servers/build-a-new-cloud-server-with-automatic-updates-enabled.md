@@ -19,8 +19,8 @@ procedures.
 This article describes how to build a Cloud Server with automatic updates
 enabled to ensure that crucial updates are installed and current.
 
-Use the following steps to to build a Cloud Server with automatic updates
-enabled:
+Use the following steps to to build a Cloud Server with
+automatic updates enabled:
 
 1. Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
 2. In the top navigation bar, select **Servers > Cloud Servers**.
