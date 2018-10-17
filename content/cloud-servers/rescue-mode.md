@@ -5,26 +5,26 @@ title: Rescue mode
 type: article
 created_date: '2012-03-27'
 created_by: Rackspace Support
-last_modified_date: '2018-10-15'
+last_modified_date: '2018-10-17'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If your Linux system has become non-bootable or is suffering from
+If your Linux&reg; system has become non-bootable or is suffering from
 critical system errors, you can use rescue mode to recover your
-system data. These problems might be be caused by file system corruption,
+system data. These problems might be caused by file system corruption,
 boot file corruption, or other configuration errors. If your
 system encounters a problem during the boot process, you typically boot
-in to a maintenance mode environment called single user mode that enables you
+into a maintenance mode environment called single user mode that enables you
 to log in with your root password and check for any errors.
 
 However, single user mode has the following drawbacks:
 
--   Your system is read-only and you cannot make corrective changes.
+-   Your system is read-only, and you cannot make corrective changes.
 -   Most services (such as networking) are disabled. This situation prevents
     you from copying your data to another server.
--   You have to access your server by using the Console, which is
+-   You have to access your server by using the console, which is
     slower than using a traditional Secure Shell (SSH) login.
 
 You can avoid working with single user mode by bringing your server up
@@ -71,7 +71,7 @@ original state.
 ### Connect to your server in rescue mode
 
 You can use an SSH client to connect to your server by using the public
-IP address and the temporary root password to log in to rescue mode.
+Internet Protocol (IP) address and the temporary root password to log in to rescue mode.
 
 ### Troubleshoot your server in rescue mode
 
@@ -106,22 +106,22 @@ to build your server.
 The example output in the screenshot shows the device and the size of the
 disk. It contains the following blocks:
 
-1.  **First block (about 2GB)**: The rescue mode file system.
-2.  **Second block (10.2GB)**: The server's file system. The size of this
+1.  **First block (about 2 GB)**: The rescue mode file system.
+2.  **Second block (10.2 GB)**: The server's file system. The size of this
     block depends on the size of your server.
 3.  **Third block**: The swap space.
 
 Identify the block for your server's file system and find the device name.
 
-After you know your file system's device, you can assign it a directory and
+After you know your file system's device, you can assign it to a directory and
 mount it for access.
 
-Run the following command, replacing **/dev/diskdevice** with your file system
+Run the following command, replacing `/dev/diskdevice` with your file system
 device:
 
     mount /dev/diskdevice /mnt
 
-For example, if your file system device is **/dev/sda1**, the command would be:
+For example, if your file system device is `/dev/sda1`, the command is:
 
     mount /dev/sda1 /mnt
 
@@ -144,7 +144,7 @@ Cloud Control Panel and click **Exit Rescue Mode**.
 
 ### Next steps
 
-- [Host Key Fingerprints](/how-to/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console)
+- [Host key fingerprints](/how-to/rackspace-cloud-essentials-checking-a-server-s-ssh-host-fingerprint-with-the-web-console)
 
 ### Related articles
 
