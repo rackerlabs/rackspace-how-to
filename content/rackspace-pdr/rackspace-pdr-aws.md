@@ -25,7 +25,8 @@ Our PDR teams deploy, manage and monitor your NIDS Threat Manager appliances. Be
 
 - Be a Rackspace AWS customer
 - A minimum of two(for H/A) threat manager appliances per VPC contianing monitored instances.
-- At least one threat manager per AZ containing monitored instances
+- At least one NIDS per AZ containing monitored instances
+- PDR covered VPCs must be configured with a private subnet and NAT gateway routing to 0.0.0.0/0 even for subnets configured with public IP assignment as the NIDS appliances are never assigned public IPs and should be able to reach instances on their private addresses.
 - Egress and Ingress firewall rules as defined in the sections below
 
 ##### For Rackspace manged AWS accounts
