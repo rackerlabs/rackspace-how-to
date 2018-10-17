@@ -11,7 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article shows how to install a Secure Socket Layer (SSL) certificate on
+After you [generate a certificate signing request (CSR)](/how-to/generate-a-csr)
+and [purchase or renew a Secure Socket Layer (SSL certificate](https://support.rackspace.com/how-to/purchase-or-renew-an-ssl-certificate/),
+you'll need to install it. This article shows how to install an SSL certificate on
 various servers and operating systems. The following sections provide
 instructions for the installation process:
 
@@ -35,7 +37,9 @@ service.
 Before installing your certificate, make sure you have the following items:
 
 - A certificate from your preferred SSL vendor stored on your server. If you
-don't already have a certificate, see ->insert link to csr and get cert articles<-
+don't already have a certificate, see
+[Generate a CSR](https://support.rackspace.com/how-to/generate-a-csr/) and
+[Purchase or renew an SSL certificate](https://support.rackspace.com/how-to/purchase-or-renew-an-ssl-certificate/)
 for instructions.
 - The **.key** file that was generated when you created the Certificate Signing
 Request (CSR).
