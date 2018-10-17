@@ -214,4 +214,4 @@ If you are a Managed or Dedicated customer, you can request a CSR through the My
 
 ### Reference
 
-- https://www.digicert.com/csr-ssl-installation/iis-8-and-8.5.htm
+- <https://www.digicert.com/csr-ssl-installation/iis-8-and-8.5.htm>
