@@ -1,11 +1,11 @@
 ---
 permalink: install-and-configure-phpmyadmin/
-audit_date: '2018-10-02'
+audit_date: '2018-10-17'
 title: Install and configure phpMyAdmin
 type: article
-created_date: '2018-09-12'
+created_date: '2018-10-17'
 created_by: Rackspace Support
-last_modified_date: '2018-10-02'
+last_modified_date: '2018-10-17'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -17,7 +17,7 @@ to install and configure phpMyAdmin.
 
 ### Check if a web engine and php are installed
 
-Use the commands in the following sections to determine whether a web engine
+Before you can configure phpMyAdmin, you must first ensure that a web engine and php are installed. Use the commands in the following sections to determine whether a web engine
 and php are installed. If you do have a web engine and php
 installed, the output is similar to the examples shown.
 
@@ -106,3 +106,40 @@ Use the following command to install php and phpMyAdmin:
 ### Start, check status, and enable a web engine
 
 After you have installed a web engine, you must start and enable it. You can also check the status of a web engine.
+
+#### CentOS 7 and Ubuntu 16/18
+
+Use the following command to start the web engine:
+
+    systemctl start httpd
+
+Use the following command to enable the web engine:
+
+    systemctl enable httpd
+
+You can check the status of a web engine by using the following command:
+
+    systemctl status httpd
+
+#### CentOS 6 and Ubuntu 14
+
+Use the following command to start the web server:
+
+*Ubuntu 14*
+
+   service apache2 start
+
+*CentOS 6*
+
+   service httpd start
+
+Use the following command to enable the web engine:
+
+    systemctl enable httpd
+
+### Configure phpMyAdmin
+
+There are two configuration files that you must edit in phpMyAdmin:
+
+- **/etc/httpd/conf.d/phpMyAdmin.conf**: A virtual host pointing toward the phpMyAdmin application **/usr/share/phpMyAdmin**.
+- **/etc/phpMyAdmin/config.inc.php**: A phpMyAdmin configuration file that points toward the host and the database port.
