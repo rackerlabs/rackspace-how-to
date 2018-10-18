@@ -14,7 +14,7 @@ product_url: cloud-servers
 If you have installed the [Postfix](http://www.postfix.org) mail server to
 operate as the Simple Mail Transfer Protocol (SMTP) service on an
 email server, you might still need a way to retrieve the incoming mail
-from the servsudo nano /etc/dovecot/conf.d/10-auth.confer.
+from the server.
 
 This article shows you how to install and configure Dovecot, an
 open-source Internet Message Access Protocol (IMAP) and Post Office Protocol
@@ -212,4 +212,4 @@ to port 587 by opening the port for your server in iptables.
 3. Use the following commands to save the iptables rules and restart iptables:
 
        sudo /etc/init.d/iptables save
-       sudo /etc/init.d/iptables restart
+      sudo /etc/init.d/iptables restart
