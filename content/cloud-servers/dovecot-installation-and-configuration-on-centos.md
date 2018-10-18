@@ -63,8 +63,8 @@ the `nano` text editor, you can use any text editor that you want.
 
 ### Configure the authentication process file
 
-Next you need to configure the authentication process file, which is
-located at `/etc/dovecot/conf.d/10-auth.conf`.
+Next you need to configure the authentication process file,
+which is located at `/etc/dovecot/conf.d/10-auth.conf`.
 
 1. Use the following command to open the file in `nano`:
 
