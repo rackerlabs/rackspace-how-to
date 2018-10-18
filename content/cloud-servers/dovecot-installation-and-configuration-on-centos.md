@@ -19,7 +19,7 @@ from the server.
 This article shows you how to install and configure Dovecot, an
 open-source Internet Message Access Protocol (IMAP) and Post Office Protocol
 version 3 (POP3) server application designed specifically for Linux&reg; and
-Unix&reg; operating systems. Dovecot retrieves emails from Postfix and
+UNIX&reg; operating systems. Dovecot retrieves emails from Postfix and
 delivers them to the relevant mailbox on the server.
 
 You can get your mail through Dovecot by using either the POP3 or the IMAP
@@ -41,8 +41,8 @@ Download and install the Dovecot package by running the following command:
 ### Configure Dovecot
 
 After you install Dovecot, you need to configure the services in the
-configuration file at `/etc/dovecot/dovecot.conf`. While this example uses
-the `nano` text editor, you can use any text editor that you want.
+configuration file at `/etc/dovecot/dovecot.conf`. This example uses
+the `nano` text editor, but you can use any text editor that you want.
 
 1. Use the following command to open the file in `nano`:
 
@@ -93,7 +93,7 @@ You can set the location for your mail by editing the configuration file at
 
 ### Configure Postfix SMTP authentication
 
-Next you need to configure the Unix&reg; socket for Postfix SMTP
+Next you need to configure the UNIX socket for Postfix SMTP
 authentication (SMTP AUTH). The file that you need to change is located at
 `/etc/dovecot/conf.d/10-master.conf`.
 
@@ -120,7 +120,7 @@ authentication (SMTP AUTH). The file that you need to change is located at
 
 ### Configure POP3
 
-Finally, configure the `/etc/dovecot/conf.d/20-pop3.conf` file. This enables
+Finally, configure the `/etc/dovecot/conf.d/20-pop3.conf` file, which enables
 older and less popular email clients to connect and transmit messages
 correctly.
 
@@ -138,8 +138,7 @@ correctly.
 The example in this section adds a mailbox that a hypothetical user named Joe
 Bloggs (joe.bloggs) can use to send and receive emails.
 
-You might need to create a user for this example, or you can use an
-existing user.
+You can create a user for this example, or you can use an existing user.
 
 1. If necessary, use the following command to make a new user:
 
@@ -149,8 +148,8 @@ existing user.
 
        sudo mkdir /home/joe.bloggs/Maildir
 
-3. Give joe.bloggs ownership of the mailbox that you just created by changing
-   its permissions:
+3. Give ownership of the mailbox that you just created to joe.bloggs by
+   changing its permissions:
 
        sudo chown joe.bloggs:joe.bloggs /home/joe.bloggs/Maildir
        sudo chmod -R 700 /home/joe.bloggs/Maildir
@@ -195,14 +194,14 @@ your new SMTP server.
 
 ### Add ports to iptables
 
-Now that you have enabled secure SMTP SSL, you should allow connections
-to port 587 by opening the port for your server in iptables.
+Now that you have enabled secure SMTP Secure Sockets Layer (SSL), you should
+allow connections to port 587 by opening the port for your server in iptables.
 
 1. Add the rule for this port by entering the following command:
 
        sudo iptables -I INPUT 2 -p tcp --dport 587 -j ACCEPT
 
-2. Add the POP and IMAP ports, as well as their secure counterparts.
+2. Add the POP and IMAP ports, as well as their secure counterparts:
 
        sudo iptables -I INPUT 3 -p tcp --dport 110 -j ACCEPT
        sudo iptables -I INPUT 4 -p tcp --dport 143 -j ACCEPT
