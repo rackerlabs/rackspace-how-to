@@ -15,6 +15,7 @@ This article discusses diagnosing issues caused by Microsoft account conflicts w
 
 
 #### Prerequisites
+
 - **Applies to:** Both User and Admin
 - **Difficulty:** Easy
 - **Time needed:** 15 Minutes
@@ -37,18 +38,23 @@ To verify if this could be affecting your email account, navigate to https://log
 
 #### Removing the association
 
-1. Sign in to [https://login.live.com/](https://login.live.com/) with your Microsoft account.
+1.  Sign in to [https://login.live.com/](https://login.live.com/) with your Microsoft account.
 
   - If the user is uncertain of their Microsoft Account password there is a forgot password option listed on the sign in page.
 
   **Warning:** If you opt for the forgot password option, **DO NOT** select the option in the password reset email that says **“click here to remove your email address from that account”**.
 
-2. Select **Your info** from the ribbon near the upper left-hand corner of the page.
-3. Select **Manage your sign-in email or phone number**.
+2.  Select **Your info** from the ribbon near the upper left-hand corner of the page.
+
+3.  Select **Manage your sign-in email or phone number**.
+
 4. You may be asked to verify your identity by email or text. Select the preferred method and proceed with verification.
-5. Locate the affected email address under the **Account alias** section.
-6. If the affected email address is the only one listed, select **Add email** and proceed with adding a personal email address so that you can still sign in to your Microsoft account later if needed.
-7. Once you have added a personal email address to the account, select **Make Primary** to set it as your primary alias.
+
+5.  Locate the affected email address under the **Account alias** section.
+
+6.  If the affected email address is the only one listed, select **Add email** and proceed with adding a personal email address so that you can still sign in to your Microsoft account later if needed.
+
+7.  Once you have added a personal email address to the account, select **Make Primary** to set it as your primary alias.
 
   - You will be asked to verify ownership of the new alias. Proceed with sending the address an ownership verification email.
 
@@ -57,5 +63,6 @@ To verify if this could be affecting your email account, navigate to https://log
 Once your email address is no longer associated with your Microsoft account, restart your device and open Outlook.
 
 #### Additional Information
+
 If you would like to read more information on how Outlook 2016 implements Autodiscover, you can refer to the following Microsoft Article: [https://support.microsoft.com/en-us/help/3211279/outlook-2016-implementation-of-autodiscover](https://support.microsoft.com/en-us/help/3211279/outlook-2016-implementation-of-autodiscover)
 Using this article as a reference, the Microsoft account association is causing Autodiscover to resolve to Step 4. In order to connect to the Hosted Exchange server, Autodiscover must resolve to Step 9, where it will be redirected by the Autodiscover CNAME Record in your DNS.
