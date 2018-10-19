@@ -268,4 +268,3 @@ improving the security configuration of your certificate, contact Rackspace.
 Secure (HTTPS) protocol directive, the padlock icon on your browser is displayed
 in the locked position if your certificates are installed correctly and the server
 is properly configured for SSL.
-
