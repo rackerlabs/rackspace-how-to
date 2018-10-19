@@ -11,12 +11,12 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article discusses diagnosing issues caused by Microsoft account conflicts when trying to connect to your email through Outlook.
+This article discusses diagnosing issues caused by Microsoft&reg; account conflicts when you try to connect to your email through Outlook&reg;.
 
 
 ### Prerequisites
 
-- **Applies to:** Both User and Admin
+- **Applies to:** Both User and Administrator
 - **Difficulty:** Easy
 - **Time needed:** 15 Minutes
 - **Tools required:** Web browser
@@ -25,32 +25,32 @@ This article discusses diagnosing issues caused by Microsoft account conflicts w
 
 The following issues are indications of Microsoft account conflicts:
 
-- Password prompts when opening Outlook
-- "Cannot start Microsoft Office Outlook. Cannot open the Outlook Window"
-- "Your mailbox has been temporarily moved to Microsoft Exchange server"
-- Bounce Messages received and showing sent out as outlook_******@outlook.com
-- Users who have Full Access to other mailboxes getting password prompts.
-- Autodiscover resolves to \<https://Outlook.office365.com/autodiscover/autodiscover.xml\> first
+- Password prompts when you open Outlook
+- Receive **"Cannot start Microsoft Office Outlook. Cannot open the Outlook Window."** message
+- Receive **"Your mailbox has been temporarily moved to Microsoft Exchange server."** message
+- Bounce messages received and showing sent out as **outlook_******@outlook.com**
+- Users who have full access to other mailboxes getting password prompts
+- Autodiscover resolves to **https://Outlook.office365.com/autodiscover/autodiscover.xml** first
 
-In these cases, Outlook is attempting to redirect to Microsoft's own Office 365 servers due to the user's email address being associated to a Microsoft account. To correct this, you must remove the association between the Rackspace email or Hosted Exchange address and the Microsoft account.
+In these cases, Outlook is attempting to redirect to Microsoft's own Office 365&reg; servers due to the user's email address being associated to a Microsoft account. To correct this situation, you must remove the association between the Rackspace email or Hosted Exchange address and the Microsoft account.
 
-### Verify the email address is associated with a Microsoft Account
+### Verify the email address is associated with a Microsoft account
 
-To verify if this could be affecting your email account, navigate to <https://login.live.com/>, type in the affected email address and click **Next**. If you receive the warning stating, "That Microsoft account doesn't exist. Enter a different account or get a new one", then the email address is not associated to a Microsoft account. If you are prompted to enter your password, this means that your email address is set as the primary alias for your Microsoft account and you need to follow these instructions to remedy the issue.
+To verify that the email address is associated with a Microsoft account, navigate to <https://login.live.com/>, type in the affected email address, and click **Next**. If you receive the warning stating "That Microsoft account doesn't exist. Enter a different account or get a new one.", then the email address is not associated to a Microsoft account. If you are prompted to enter your password, your email address is set as the primary alias for your Microsoft account, and you need to follow the instructions in the next section to remedy the issue.
 
 ### Remove the association
 
 1. Sign in to <https://login.live.com/> with your Microsoft account.
 
-   If the user is uncertain of their Microsoft Account password there is a forgot password option listed on the sign in page.
+   If you are uncertain of your Microsoft account password, you should use the forgot password option listed on the sign-in page.
 
-   **Warning:** If you opt for the forgot password option, do *not* select **click here to remove your email address from that account** in the password reset email.
+   **Warning:** If you opt for the forgot password option, do *not* select **"Click here to remove your email address from that account"** in the password reset email.
 
 2. Select **Your info** from the ribbon near the upper left-hand corner of the page.
 
 3. Select **Manage your sign-in email or phone number**.
 
-4. You may be asked to verify your identity by email or text. Select the preferred method and proceed with verification.
+4. You might be asked to verify your identity by email or text. Select the preferred method and proceed with verification.
 
 5. Locate the affected email address under the **Account alias** section.
 
@@ -62,12 +62,12 @@ To verify if this could be affecting your email account, navigate to <https://lo
 
 8. After you have successfully changed the primary alias, select **Remove** next to the affected email address to remove it from your Microsoft account.
 
-Once your email address is no longer associated with your Microsoft account, restart your device and open Outlook.
+After your email address is no longer associated with your Microsoft account, restart your device and open Outlook.
 
-### Additional Information
+### Additional information
 
-Microsoft also provides detailed instructions on completing the task of changing the primary alias for a Microsoft account in this article [https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account).
+Microsoft also provides detailed instructions on completing the task of changing the primary alias for a Microsoft account in [Rename your personal account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account).
 
-If you would like to read more information on how Outlook 2016 implements Autodiscover, you can refer to the following Microsoft Article: [https://support.microsoft.com/en-us/help/3211279/outlook-2016-implementation-of-autodiscover](https://support.microsoft.com/en-us/help/3211279/outlook-2016-implementation-of-autodiscover).
+For more information about how Outlook 2016 implements Autodiscover, you can refer to [Outlook 2016 Implementation of Autodiscover](https://support.microsoft.com/en-us/help/3211279/outlook-2016-implementation-of-autodiscover).
 
-Using this article as a reference, the Microsoft account association is causing Autodiscover to resolve to Step 4. In order to connect to the Hosted Exchange server, Autodiscover must resolve to Step 9, where it will be redirected by the Autodiscover CNAME Record in your DNS.
+By using the steps in this article as a reference, the Microsoft account association causes Autodiscover to resolve to Step 4, **Check for O365 as Priority**. In order to connect to the Hosted Exchange server, Autodiscover must resolve to Step 9, **Check for Http redirects**, where it is redirected by the Autodiscover CNAME record in your Domain Name System (DNS).
