@@ -27,7 +27,7 @@ The following issues are indications of Microsoft account conflicts:
 
 - A password prompt appears when you open Outlook
 - You receive the message **"Cannot start Microsoft Office Outlook. Cannot open the Outlook Window."**
-- You receive **"Your mailbox has been temporarily moved to Microsoft Exchange server."**
+- You receive the message **"Your mailbox has been temporarily moved to Microsoft Exchange server."**
 - You receive bounce messages that were sent out as **outlook_******@outlook.com**
 - Users who have full access to other mailboxes are prompted for a password
 - Autodiscover resolves to **https://Outlook.office365.com/autodiscover/autodiscover.xml** first
