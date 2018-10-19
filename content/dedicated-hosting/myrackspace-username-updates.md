@@ -1,12 +1,12 @@
 ---
 permalink: myrackspace-login-and-username-updates/
-audit_date: '2018-09-24'
+audit_date: '2018-10-19'
 title: MyRackspace login and username updates
 type: article
 created_date: '2018-09-25'
 created_by: Richard Goodwin
-last_modified_date: '2018-09-25'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-19'
+last_modified_by: Cat Lookabaugh
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
