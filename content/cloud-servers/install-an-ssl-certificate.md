@@ -23,6 +23,8 @@ instructions for the installation process:
 
 - [Install certificate on Linux&reg; server with Apache&reg;](#install-certificate-on-linux-server-with-apache)
 
+- [Install certificate on Linux server with Nginx&reg;](#install-certificate-on-linux-server-with-nginx)
+
 - [Install certificate on Managed Hosting solutions](#install-certificate-on-managed-hosting-solutions)
 
 - [Reload or restart the webserver service](#reload-or-restart-the-webserver)
@@ -41,12 +43,12 @@ don't already have a certificate, see
 [Generate a CSR](https://support.rackspace.com/how-to/generate-a-csr/) and
 [Purchase or renew an SSL certificate](https://support.rackspace.com/how-to/purchase-or-renew-an-ssl-certificate/)
 for instructions.
+- The CA bundle with the root and intermediate certificates, provided by the SSL
+vendor.
 - The **.key** file that was generated when you created the Certificate Signing
 Request (CSR).
 - A webserver such as Apache and ``mod_ssl`` should be installed.
-- You also need to have an Internet Protocol (IP) address for your SSL cert and
-a unique IP address for each SSL that you want to host. Certificate authorities
-and browsers require that all SSL certificates be on their own IP address.
+- You also need to have an Internet Protocol (IP) address for your SSL certificate.
 
 #### Copy the files into the default location on your server
 
@@ -98,24 +100,27 @@ HTTPS.
 
 1. In the IIS Manager, double-click **Server Certificates**.
 2. Under **Actions**, click **Import**.
-3. Select the location of your certificate file, enter the password (if you set one), and choose your certificate store (*Windows Server 2012 only*). Then, click **OK**.
+3. Select the location of your certificate file, enter the password (if you set
+one), and choose your certificate store (*Windows Server 2012 only*). Then,
+click **OK**.
 
 ### Install certificate on Linux server with Apache
 
 The following subsections show how to save your certificate on a Linux server
 and configure Apache to use the certificate, modify the IP tables, and verify
-the settings.
+the settings.  After you have installed the certificate,
+[reload or restart the webserver](#reload-or-restart-the-webserver).
 
 #### Save the certificate and key file
 
-Save the certificate provided by the SSL vendor and the .key file that you
+Save the certificate provided by the SSL vendor and the **.key** file that you
 generated when your created the CSR in the appropriate directories.  We
 recommend the following directories:
 
 - **Certificates**: `/etc/httpd/conf/ssl.crt`
 - **Keys**: `/etc/httpd/conf/ssl.key`
 
-### Configure htppd.conf
+#### Configure httpd.conf
 
 Open the Apache **httpd.conf** file in a text editor, and add the following
 lines for the ``VirtualHost``, changing the IP address and the paths to the
@@ -164,6 +169,46 @@ you have no spelling errors and haven't added the wrong filenames:
 If the file is good, the command returns ``Syntax OK``. If there are errors,
 the command returns the incorrect lines.
 
+#### Install certificate on Linux server with Nginx
+
+The following subsections show how to save your certificate on a Linux server
+with Nginx and configure the virtual hosts file.  After you have installed the
+certificate, [reload or restart the webserver](#reload-or-restart-the-webserver).
+
+#### Save the certificates and key file
+
+Save to your server the primary and intermediate certificates, which should be
+in the **domain_name.pem** file that you received from the SSL vendor, and the
+**.key** file that you generated when your created the CSR.
+
+If you don't already have a certificate bundle file, combine the primary
+certificate (for example, my_domain.crt) and the intermediate certificate
+(for example, intermediate.crt) into a single file by running the following
+command:
+
+    cat my_domain.crt intermediate.crt >> bundle.crt
+
+#### Configure the Nginx virtual hosts file
+
+Use the following instructions to edit the Nginx virtual hosts file:
+
+1. Edit the Nginx virtual host file on your server.
+
+2. Copy the existing, non-secure server module (from `server {` through the
+closing `}`) and paste the code immediately below the server module.
+
+3. In the pasted section add the following lines between `server {` and the
+`server name` line:
+
+    listen   443;
+
+    ssl    on;
+    ssl_certificate    /etc/ssl/your_domain_name.pem; (or bundle.crt)
+    ssl_certificate_key    /etc/ssl/your_domain_name.key;
+
+4. Make sure that the **ssl_certificate** file matches your bundle file and
+that the **ssl_certificate_key** file matches your key file.
+
 ### Install certificate on Managed Hosting solutions
 
 If you have requested an SSL certificate for your Rackspace Managed Hosting
@@ -175,7 +220,7 @@ installed and your private key file.
 ### Reload or restart the webserver
 
 After you have installed the SSL certificate, you should reload the webserver
-service.  This section describes the steps to restart Apache.
+service.  This section describes the steps to restart Apache and Nginx.
 
 When you are making changes to Apache, you have two different options for your
 changes to work: to restart the service or to reload the service. A restart
@@ -187,11 +232,11 @@ up, we recommend that you use the reload option.
 
 To reload Apache, run the following command:
 
-**CentOS 7.0 and higher**
+**CentOS 7.x and later**
 
     # systemctl reload httpd
 
-**CentOS 6.9 and lower**
+**CentOS 6.x and earlier**
 
     # service httpd reload
 
@@ -207,13 +252,20 @@ To restart your Apache web server, run the following command:
     or
     # /etc/init.d/apache2 restart
 
+#### Restart Nginx
+
+To restart Nginx, run the following command:
+
+        sudo /etc/init.d/nginx restart
+
 ### Test the certificate
 
-Test your certificate by using a browser to connect to your server. Use
-the Hypertext Transfer Protocol Secure (HTTPS) protocol directive (for example,
-https://yourserver/) to indicate that you want to use secure HTTP.
+The best way to test a certificate is to use a 3rd-party tool like the
+[SSLLabs scanner](https://www.ssllabs.com/ssltest/). If you need assistance in
+improving the security configuration of your certificate, contact Rackspace.
 
-**Note**: The padlock icon on your browser is displayed in the locked
-position if your certificates are installed correctly and the server is
-properly configured for SSL.
+**Note**: If you browse to your website by using the Hypertext Transfer Protocol
+Secure (HTTPS) protocol directive, the padlock icon on your browser is displayed
+in the locked position if your certificates are installed correctly and the server
+is properly configured for SSL.
 
