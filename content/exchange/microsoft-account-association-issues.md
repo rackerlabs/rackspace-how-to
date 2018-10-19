@@ -64,5 +64,7 @@ Once your email address is no longer associated with your Microsoft account, res
 
 #### Additional Information
 
+Microsoft also provides detailed instructions on completing the task of changing the primary alias for a Microsoft account in this article [https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account](https://support.microsoft.com/en-us/help/11545/microsoft-account-rename-your-personal-account).
+
 If you would like to read more information on how Outlook 2016 implements Autodiscover, you can refer to the following Microsoft Article: [https://support.microsoft.com/en-us/help/3211279/outlook-2016-implementation-of-autodiscover](https://support.microsoft.com/en-us/help/3211279/outlook-2016-implementation-of-autodiscover)
 Using this article as a reference, the Microsoft account association is causing Autodiscover to resolve to Step 4. In order to connect to the Hosted Exchange server, Autodiscover must resolve to Step 9, where it will be redirected by the Autodiscover CNAME Record in your DNS.
