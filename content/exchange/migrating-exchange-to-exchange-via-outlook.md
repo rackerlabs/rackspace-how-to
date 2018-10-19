@@ -5,7 +5,7 @@ title: 'Migrate Exchange to Exchange via Outlook'
 type: article
 created_date: '2012-05-27'
 created_by: Rae D. Cabello
-last_modified_date: '2018-10-18'
+last_modified_date: '2018-10-19'
 last_modified_by: Kate Dougherty
 product: Microsoft Exchange
 product_url: exchange
