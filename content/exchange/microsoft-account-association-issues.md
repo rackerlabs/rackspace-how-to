@@ -40,9 +40,9 @@ To verify if this could be affecting your email account, navigate to https://log
 
 1.  Sign in to [https://login.live.com/](https://login.live.com/) with your Microsoft account.
 
-    - If the user is uncertain of their Microsoft Account password there is a forgot password option listed on the sign in page.
+        - If the user is uncertain of their Microsoft Account password there is a forgot password option listed on the sign in page.
 
-      **Warning:** If you opt for the forgot password option, **DO NOT** select the option in the password reset email that says **“click here to remove your email address from that account”**.
+        **Warning:** If you opt for the forgot password option, **DO NOT** select the option in the password reset email that says **“click here to remove your email address from that account”**.
 
 2.  Select **Your info** from the ribbon near the upper left-hand corner of the page.
 
@@ -56,7 +56,7 @@ To verify if this could be affecting your email account, navigate to https://log
 
 7.  Once you have added a personal email address to the account, select **Make Primary** to set it as your primary alias.
 
-    - You will be asked to verify ownership of the new alias. Proceed with sending the address an ownership verification email.
+        - You will be asked to verify ownership of the new alias. Proceed with sending the address an ownership verification email.
 
 8.  Once you have successfully changed the primary alias, select **Remove** next to the affected email address to remove it from your Microsoft account.
 
