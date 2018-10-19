@@ -20,7 +20,7 @@ including your email, calendar data, contacts, tasks, and notes.
 turn off cached Exchange mode before your users begin to migrate their
 personal storage (PST) files.
 
-### Export data to a PST file
+### Export your data to a PST file
 
 1. Open Microsoft Outlook&reg; and log in to your
    previous Microsoft Exchange mailbox. Select **File > Import and
@@ -51,10 +51,10 @@ personal storage (PST) files.
      the individual folder, then select the **Include subfolders**
      check box.
 
-4. Save the export as a `.pst` file, as shown in the following image. The
-   default save location is `C:\\Documents and Settings\\(user name)\\Local
-   Settings\\Application Data\\Microsoft\\Outlook\\backup.pst.`
-   Click **Browse** to select a different location.
+4. Save the export as a `.pst` file, as shown in the following image. You are
+   prompted for a save location. The default save location is `C:\\Documents
+   and Settings\\(user name)\\Local Settings\\Application
+   Data\\Microsoft\\Outlook\\backup.pst.`
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/3.png %}" alt="" />
 
@@ -62,8 +62,8 @@ personal storage (PST) files.
     your desktop. You need to know the location of the file to import it
     into your new account.
 
-5. Select the root folder of your mailbox.
-   Select the check box to **Include subfolders** and click **Next**. Ensure
+5. Select the root folder of your mailbox, then select the check box to
+   **Include subfolders** and click **Next**. On the next screen, ensure
    that you leave the option **Replace duplicates with items exported** selected, then click **Finish** to begin your export, as shown in the
    following images:
 
@@ -86,14 +86,16 @@ your account is set up, perform the following steps:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/1.png %}" alt="" />
 
+    The Import and Export Wizard opens.
+
 2. Select **Import from another program or file**
    and click **Next**, as shown in the following image:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/6.png %}" alt="" />
 
-3. Select **Personal Folder File (.pst)**, select **Next**, and then
-   click **Browse** to locate the **.PST File** that you exported, as shown
-   in the following image:
+3. Select **Personal Folder File (.pst)** and click **Next**. On the next
+   screen, click **Browse** to locate the **.PST File** that you exported, as
+   shown in the following image:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/7.png %}" alt="" />
 
@@ -101,13 +103,14 @@ your account is set up, perform the following steps:
    with items imported** selected and click **Next**, as shown in the
    following image:
 
-    <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/8.png %}" alt="" />
+    <img src="{% asset_path   exchange/migrating-exchange-to-exchange-via-outlook/8.png %}" alt="" />
 
 5. Select **Personal Folders**, then select the **Include
    subfolders** check box and click **Import items into the same
-   folder in:**. In the drop-down box, select the Exchange mailbox
+   folder in:**. From the drop-down box, select the Exchange mailbox
    (Mailbox - Your Name) into which you want to import your data.
-   Click **Finish** to begin the import process.
+   Click **Finish** to begin the import process, as shown in the following
+   image:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/10.png %}" alt="" />
 
