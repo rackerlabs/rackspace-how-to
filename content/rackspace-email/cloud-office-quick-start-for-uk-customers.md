@@ -5,8 +5,8 @@ title: Cloud Office quick start for UK customers
 type: article
 created_date: '2015-06-22'
 created_by: Rose Contreras
-last_modified_date: '2018-01-30'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-19'
+last_modified_by: Faisal Misle
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -55,9 +55,9 @@ Choose one of the following options to view your new mailboxes.
 
 -   Go to the Rackspace Webmail site at [https://apps.rackspace.com](https://apps.rackspace.com/).
 
--   Use Outlook, Exchange, Thunderbird, or another email client of your preference. Use the [Rackspace Cloud Office interactive guide](https://emailhelp.rackspace.com/) to help you set up your email client.
+-   Use Outlook, Exchange, Thunderbird, or another email client of your preference. Use our [interactive guide](https://emailhelp.rackspace.com/) to help you set up your email client.
 
-If you have questions or need assistance to view your email, contact Rackspace Cloud Office support by [live chat](https://cp.rackspace.com/Default.aspx), or by phone at 0800 954 1007 or 020 8734 4029. You can also create a support ticket in the [Cloud Office Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=Default.aspx).
+If you have questions or need assistance to view your email, contact Rackspace Cloud Office support by live chat, or by phone at 0800 954 1007 or 020 8734 4029. You can also create a support ticket in the [MyRackspace Customer Portal](https://my.rackspace.com).
 
 #### Add a new domain
 
@@ -80,18 +80,19 @@ Follow these steps to set up a mailbox alias.
 
 Follow these steps to set up a mailbox alias.
 
-1.  Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
-2.  In the Rackspace Email section, click **Aliases**.
-3.  Select the domain for which you want to add an alias.
-4.  Click **Add Alias**.
-5.  Enter the new alias in the **Create New Alias** field.
-6.  *(Optional)* Select members of your domain and move them to the **Members of this Alias** field, and click **Add**.
-7.  *(Optional)* Add email addresses for members outside of your domain into the **Email Address** field, and click **Add**.
-8.  Click **Save**.
+1.  Log in to the [MyRackspace Customer Portal](https://my.rackspace.com/).
+2.  From the **Products** menu, click **Email & Apps**.
+3.  In the Email & Apps window, click **Open Mail Control Panel**.
+4.  In the Rackspace Email section, click **Aliases**.
+5.  Select the domain for which you want to add an alias.
+6.  Click **Add Alias**.
+7.  Enter the new alias in the **Create New Alias** field.
+8.  Select members of your domain and move them to the **Members of this Alias** field, and click **Add**.
+9.  *(Optional)* Add email addresses for members outside of your domain into the **Email Address** field, and click **Add**.
+10.  Click **Save**.
 
 **Note:** To add a *domain alias*, create a support ticket in the
-[MyRackspace Customer Portal](https://my.rackspace.com/). This option is not available in the
-Cloud Office Control Panel.
+[MyRackspace Customer Portal](https://my.rackspace.com/), call, or chat in. This option is not available in the Control Panel and must be added by your support team.
 
 ### Migrate your existing mail account
 
@@ -99,7 +100,7 @@ You can migrate your email data to your Rackspace mail account in the following 
 
 -   **Do it yourself** - If you are currently using a POP mailbox, this is your only option. If you are not certain or have any questions, contact our Support team at 0800 954 1007 or 020 8734 4029. You can also create a support ticket in the [MyRackspace portal](https://my.rackspace.com/).
 
--   **Self-service tool** - Run your migration at any time of the day or night with our easy-to-use version of MigrationWiz. To start this process, create a support ticket in the [MyRackspace portal](https://my.rackspace.com/). For more information, see Migrate your email by using the Self-Service tool.
+-   **Self-service tool** - Run your migration at any time of the day or night with our easy-to-use version of MigrationWiz. For more information, see [Migrate your email by using the Self-Service tool](/how-to/migrate-your-email-by-using-the-self-service-migration-tool/).
 
 -   **Assisted migrations** - This option is for companies that need help with consulting, planning, and scheduling a migration project. Contact our Assisted Migrations team by creating a support ticket in the [MyRackspace portal](https://my.rackspace.com/). They will provide you with all the necessary information.
 
@@ -108,7 +109,9 @@ You can migrate your email data to your Rackspace mail account in the following 
 The initial credit card payment that you made online was a one-time payment. Follow these steps to set up your preferred payment method:
 
 1.  Log in to the [MyRackspace Customer Portal](https://my.rackspace.com/).
-2.  Select **Account &gt; Payments** from the drop-down menu.
+2.  Click **Account**, and select **Transactions**.
+3.  Select **Payment Methods** to make a payment or review payment methods. 
+    You can also select **Billing Settings** to review your billing settings.
 
 ### View and download invoices
 
@@ -116,10 +119,7 @@ To view and download your invoices follow these steps:
 
 1.  Log in to [MyRackspace Customer Portal](https://my.rackspace.com).
 2.  Click **Account**, and select **Transactions**.
-
-    You can view an invoice by clicking on its number.
-
-3.  To download your invoices, click the **Actions** button, and select **Export All Transactions**.
+3.  To view and download your invoice, click on it and either select **View** or select a file type to download. 
 
 ### Downgrade or cancel your services
 
@@ -127,7 +127,7 @@ If you want to downgrade your services, you must submit a support ticket.
 
 Rackspace has a 30-day cancellation policy. Inform us of your intentions by either calling us or submitting a support ticket.
 
-**Note:** Email hosting services are a month-to-month service billed in appears and are not billed pro-rata.
+**Note:** Email hosting services are a month-to-month service billed in arrears and are not billed pro-rata.
 
 ### Mail terms, conditions, and acceptable usage policy
 
