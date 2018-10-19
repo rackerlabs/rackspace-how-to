@@ -21,6 +21,7 @@ This article discusses diagnosing issues caused by Microsoft account conflicts w
 - **Tools required:** Web browser
 
 #### Symptoms of Microsoft account conflicts
+
 - Password prompts when opening Outlook
 - "Cannot start Microsoft Office Outlook. Cannot open the Outlook Window"
 - "Your mailbox has been temporarily moved to Microsoft Exchange server"
@@ -36,22 +37,22 @@ To verify if this could be affecting your email account, navigate to https://log
 
 #### Removing the association
 
-    1. Sign in to [https://login.live.com/](https://login.live.com/) with your Microsoft account.
+1. Sign in to [https://login.live.com/](https://login.live.com/) with your Microsoft account.
 
-      - If the user is uncertain of their Microsoft Account password there is a forgot password option listed on the sign in page.
+  - If the user is uncertain of their Microsoft Account password there is a forgot password option listed on the sign in page.
 
-      **Warning:** If you opt for the forgot password option, **DO NOT** select the option in the password reset email that says **“click here to remove your email address from that account”**.
+  **Warning:** If you opt for the forgot password option, **DO NOT** select the option in the password reset email that says **“click here to remove your email address from that account”**.
 
-    2. Select **Your info** from the ribbon near the upper left-hand corner of the page.
-    3. Select **Manage your sign-in email or phone number**.
-    4. You may be asked to verify your identity by email or text. Select the preferred method and proceed with verification.
-    5. Locate the affected email address under the **Account alias** section.
-    6. If the affected email address is the only one listed, select **Add email** and proceed with adding a personal email address so that you can still sign in to your Microsoft account later if needed.
-    7. Once you have added a personal email address to the account, select **Make Primary** to set it as your primary alias.
+2. Select **Your info** from the ribbon near the upper left-hand corner of the page.
+3. Select **Manage your sign-in email or phone number**.
+4. You may be asked to verify your identity by email or text. Select the preferred method and proceed with verification.
+5. Locate the affected email address under the **Account alias** section.
+6. If the affected email address is the only one listed, select **Add email** and proceed with adding a personal email address so that you can still sign in to your Microsoft account later if needed.
+7. Once you have added a personal email address to the account, select **Make Primary** to set it as your primary alias.
 
-      - You will be asked to verify ownership of the new alias. Proceed with sending the address an ownership verification email.
+  - You will be asked to verify ownership of the new alias. Proceed with sending the address an ownership verification email.
 
-    8.  Once you have successfully changed the primary alias, select **Remove** next to the affected email address to remove it from your Microsoft account.
+8.  Once you have successfully changed the primary alias, select **Remove** next to the affected email address to remove it from your Microsoft account.
 
 Once your email address is no longer associated with your Microsoft account, restart your device and open Outlook.
 
