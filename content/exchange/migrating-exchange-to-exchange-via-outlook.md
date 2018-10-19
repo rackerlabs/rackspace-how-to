@@ -24,11 +24,13 @@ personal storage (PST) files.
 
 1. Open Microsoft Outlook&reg; and log in to your
    previous Microsoft Exchange mailbox. Select **File > Import and
-   Export**.
+   Export**, as shown in the following image:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/1.png %}" alt="" />
 
-2. Select the **Export to a file** option and click **Next**.
+    The Import and Export Wizard opens.
+
+2. Select **Export to a file** and click **Next**.
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/2.png %}" alt="" />
 
@@ -49,8 +51,8 @@ personal storage (PST) files.
      the individual folder, then select the **Include subfolders**
      check box.
 
-4. Save this `.pst` file. The default save location
-   is `C:\\Documents and Settings\\(user name)\\Local
+4. Save the export as a `.pst` file, as shown in the following image. The
+   default save location is `C:\\Documents and Settings\\(user name)\\Local
    Settings\\Application Data\\Microsoft\\Outlook\\backup.pst.`
    Click **Browse** to select a different location.
 
@@ -60,10 +62,9 @@ personal storage (PST) files.
     your desktop. You need to know the location of the file to import it
     into your new account.
 
-5. Select the root folder of your mailbox. Check
-   the option to **Include subfolders** and click **Next**. Ensure that you
-   leave the option **Replace duplicates with items exported** selected,
-   then click **Finish** to begin your export, as shown in the
+5. Select the root folder of your mailbox.
+   Select the check box to **Include subfolders** and click **Next**. Ensure
+   that you leave the option **Replace duplicates with items exported** selected, then click **Finish** to begin your export, as shown in the
    following images:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/ExportPersonalFolders.png %}" alt="Export personal folders" width="451" height="336" />
@@ -73,7 +74,7 @@ personal storage (PST) files.
 **Note**: Because this file is only used temporarily for export and import, we
 recommend that you use **No Encryption** for speed and compatibility purposes by leaving the password blank.
 
-### Import your PST file
+### Import your PST file to your email client
 
 After you have exported your PST file you need to add your new
 Rackspace Microsoft Exchange email account to your email client. After
@@ -85,24 +86,26 @@ your account is set up, perform the following steps:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/1.png %}" alt="" />
 
-2. Select the **Import from another program or file** option
+2. Select **Import from another program or file**
    and click **Next**, as shown in the following image:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/6.png %}" alt="" />
 
 3. Select **Personal Folder File (.pst)**, select **Next**, and then
-   click **Browse** to locate the **.PST File** that you exported.
+   click **Browse** to locate the **.PST File** that you exported, as shown
+   in the following image:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/7.png %}" alt="" />
 
 4. Click **Open**. Then, leave the option **Replace duplicates
-   with items imported** selected and click **Next**.
+   with items imported** selected and click **Next**, as shown in the
+   following image:
 
     <img src="{% asset_path exchange/migrating-exchange-to-exchange-via-outlook/8.png %}" alt="" />
 
 5. Select **Personal Folders**, then select the **Include
    subfolders** check box and click **Import items into the same
-   folder**. In the drop-down box, select the Exchange mailbox
+   folder in:**. In the drop-down box, select the Exchange mailbox
    (Mailbox - Your Name) into which you want to import your data.
    Click **Finish** to begin the import process.
 
