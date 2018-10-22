@@ -15,9 +15,9 @@ product_url: cloud-servers
 Web
 Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
-This article shows you how to migrate an Apache&reg; Tomcat&reg; application
-and a Java-based Spring web application from Amazon&reg; Web Services&reg;
-(AWS) to Rackspace Cloud. The examples take about 30 minutes to complete.
+This article shows you how to migrate an Apache&reg; Tomcat&reg; and
+Java&trade-based Spring web application from Amazon&reg; Web Services&reg;
+(AWS) to Rackspace Cloud. This example take about 30 minutes to complete.
 
 The example uses the [Spring Framework
 Petclinic](https://github.com/SpringSource/spring-petclinic/) sample web
@@ -32,7 +32,7 @@ The following figure shows the application's topology:
 The following prerequisites are required to follow the example in this article:
 
 - An Amazon Elastic Compute Cloud (EC2) instance on AWS with root access
-  that is running the Spring web application on Apache Tomcat.
+  that's running the Spring web application on Apache Tomcat.
 - A valid and enabled account on Rackspace Cloud.
 
 ### Preparation
@@ -40,12 +40,12 @@ The following prerequisites are required to follow the example in this article:
 Take the following steps before you attempt to follow the steps in the
 exercise:
 
-- Identify the resources you want to migrate, including application and
+- Identify the resources that you want to migrate, including application and
   database resources.
 - Create a list of all of the necessary software packages that are
-  installed on your EC2 instance, other than your Spring application
+  installed on your EC2 instance, other than your Spring application.
 - Create a list of all additional Amazon servers that the application
-  is using (for example, Simple Email Server (SES) for email
+  uses (for example, Simple Email Server (SES) for email
   or Relational Database Service (RDS) for databases).
 - If you haven't already, [create a Cloud Server
   instance](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services) and any supporting Rackspace Cloud services.
@@ -90,8 +90,8 @@ Complete the following steps to install OpenJDK on the cloud:
 2. Copy the URL of the `tar.gz` file (for example,
    **http://www.us.apache.org/dist/tomcat/tomcat-7/v7.0.39/bin/apache-tomcat-7.0.39.tar.gz**).
 
-3. Enter the following commands to change directory to `/usr/share` (or your
-   directory of choice) and use the download the binary file:
+3. Enter the following commands to change directory to `/usr/share` (or the
+   directory that you want to use) and download the binary file:
 
         cd /usr/share
         sudo wget http://www.us.apache.org/dist/tomcat/tomcat-7/v7.0.39/bin/apache-tomcat-7.0.39.tar.gz
@@ -104,8 +104,8 @@ Complete the following steps to install OpenJDK on the cloud:
 
         sudo tar zxvf apache-tomcat-7.0.39.tar.gz
 
-6. After Tomcat is extracted, use the following command to remove the
-   `tar.gz` files and free up space:
+6. After you extract Tomcat, use the following command to remove the
+   `tar.gz` file and free up space:
 
         sudo rm apache-tomcat-7.0.39.tar.gz
 
@@ -185,10 +185,10 @@ Complete the following steps to install OpenJDK on the cloud:
          tomcat 0:off 1:off 2:on 3:on 4:on 5:off 6:off
 
 14. Because Tomcat is running on port 8080, you need to ensure that iptables
-    will not interfere with connectivity.
+    doesn't interfere with connectivity.
 
-15. To test Tomcat, look up the Internet Protocol (IP) address for the cloud
-    server in the Rackspace Cloud Control Panel and open the URL in a browser
+15. To test Tomcat, look up the Internet Protocol (IP) address for the Cloud
+    Server in the Rackspace Cloud Control Panel and open the URL in a browser
     (for example, `http://<ipAddress>:8080/`). The Apache Tomcat landing page
     should appear.
 
@@ -215,7 +215,7 @@ section to install and configure OpenStack Swift.
         export ST_AUTH=https://identity.api.rackspacecloud.com/v1.0/
 
     You might want to define these variables in your `.bashrc` or
-    `.bash\_profile` file. If you take this step, you must reload the file
+    `.bash\_profile` file. If you perform this step, you must reload the file
     with the following `source` command, substituting `.bash\_profile` for
     `.bashrc` if necessary:
 
@@ -230,9 +230,9 @@ Retrieve your data from EC2. You can use one of the following methods to
 transfer the data:
 
 - Transfer the data directly by using rsync or SSH File Transfer Protocol
-  (SFTP)
+  (SFTP).
 - Use the OpenStack Swift client to transfer your data to Cloud Files, and
-  then transfer the data from Cloud Files to the Cloud Server
+  then transfer the data from Cloud Files to the Cloud Server.
 
 Complete the following preparatory steps to use Cloud Files:
 
@@ -251,9 +251,8 @@ Complete the following preparatory steps to use Cloud Files:
         sudo tar cvzf ~/tomcat.tar.gz /usr/share/tomcat7/webapps/*
 
 4.  If you're using Cloud Files to transfer your files, use one of the
-    following methods to perform the transfer. If you will transfer directly
-    by using rsync or SFTP, skip to the final section of this article after
-    the transfer.
+    following methods to perform the transfer. If you're transferring files
+    directly by using rsync or SFTP, skip to the final section of this article.
 
     -   Enter the following commands to upload your archives to the Cloud
         Files container (`Tomcat` in this example) by using the
@@ -265,8 +264,8 @@ Complete the following preparatory steps to use Cloud Files:
     -   Use the following steps to upload your data to Cloud Files through the
         [Cloud Control Panel](https://mycloud.rackspace.com/):
 
-        1.  Open your container (**Cloud Control Panel > Storage > Files >
-            *containerName***).
+        1.  Select **Cloud Control Panel > Storage > Files >
+            *containerName*** to open your container.
 
         2.  Click **Upload Files**.
 
@@ -289,13 +288,13 @@ it to your Cloud Server:
     container that you created in the results.
 4.  Use the following commands to download the database dump from the backup
     that you took in the "Back up data from AWS to Rackspace Cloud Files"
-    section of this article and restore it locally.
+    section of this article and restore it locally:
 
         swift download Tomcat petclinic.sql.gz
         gunzip < petclinic.sql.gz | mysql -u <cloudDatabaseUsername> -p -h <cloudDatabaseHostname>
 
-5.  Use the following commands to stop Tomcat, download the application files,
-    and extract them:
+5.  Use the following commands to stop Tomcat and download and extract the
+    application files:
 
         sudo /sbin/service tomcat stop
         swift download Tomcat tomcat.tar.gz
@@ -317,7 +316,8 @@ it to your Cloud Server:
 
 ### Test your application
 
-Access the web application at `http://<cloudServerIPAddress>:8080/petclinic`.
+Access the web application in your browser at
+`http://<cloudServerIPAddress>:8080/petclinic`.
 
 ### Next step
 
