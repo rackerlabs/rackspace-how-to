@@ -86,8 +86,8 @@ issue might be present in all versions of these drivers. The drivers are not in 
 in your environment because only certain VMware vSphere add-on products use this 
 feature of VMware Tools. Proper resolution of the issue is removal of the offending
 drivers. Because our goal is to prevent disruption to your environment to the extent
-possible, we’ll disable the driver during the automation maintenance and utilize the
-normal patching process to reboot the device to effectively remediate this issue.
+possible, we’ll disable the driver during the automation maintenance and utilize your
+normal scheduled patching process to reboot the device to effectively remediate this issue.
 
 Q: How will I know if automation has been successfully run on my device?
 
