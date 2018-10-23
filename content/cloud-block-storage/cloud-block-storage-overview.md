@@ -5,15 +5,15 @@ title: Overview of Cloud Block Storage
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-12-29'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
 
 Rackspace Cloud Block Storage is a block-level storage solution that
 allows you to expand the storage capacity of your Rackspace Next
-Generation Cloud Servers. This means you can
+Generation Cloud Servers. This means that you can
 increase your storage without increasing the size or capacity of your
 server or by provisioning new ones. Once you mount and format your
 drive, you can use it just like a regular hard drive attached to your
@@ -25,7 +25,7 @@ Block Storage offers you power and ease with the kind of storage that
 works for you. For information on Cloud Block Storage and Cloud Backup
 options on General Purpose servers, see [Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
-There are two types of volumes you can attach to your server:
+There are two types of volumes that you can attach to your server:
 
 -   A standard speed option for customers who just need additional
     storage on their Cloud server
@@ -37,6 +37,8 @@ input/output operations per second (IOPS), which can be difficult to
 predict or control.
 
 ### Uses of Cloud Block Storage
+
+Cloud Block Storage has the following use cases:
 
 -   Mount a drive to a server to scale storage without paying for more
     compute capability
@@ -52,9 +54,11 @@ predict or control.
 ### Access Cloud Block Storage
 
 Access Cloud Block Storage the way you like: you can use it through the
-GUI interface of the [Cloud Control Panel](https://mycloud.rackspace.com/) or through the API. This product introduction walks you through Control Panel access. If you prefer to interact with Cloud Block Storage programmatically, view the [Developer Guide](https://developer.rackspace.com/docs/cloud-block-storage/v1/developer-guide/).
+GUI interface of the [Cloud Control Panel](https://login.rackspace.com/) or through the API. This product introduction walks you through Cloud Control Panel access. If you prefer to interact with Cloud Block Storage programmatically, view the [Developer Guide](https://developer.rackspace.com/docs/cloud-block-storage/v1/developer-guide/).
 
 ### Limits of Cloud Block Storage
+
+Cloud Block Storage has the following limits:
 
 -   50 GB to 1 TB for SSD volumes
 -   75 GB to 1 TB for SATA volumes
@@ -68,8 +72,8 @@ GUI interface of the [Cloud Control Panel](https://mycloud.rackspace.com/) or th
 ### Cloud Block Storage terminology
 
 You may run across some unfamiliar terms in this Getting Started Guide.
-Here are some common terms and definitions we use in Cloud Block
-Storage.
+The following list gives definitions for common terms that Cloud Block
+Storage uses:
 
 -   **Instance**: An instance is a virtual machine that runs inside
     the cloud.
@@ -91,7 +95,7 @@ Storage.
 
 ### Cloud Block Storage product overview contents
 
-In this product overview, you will learn how to do the following tasks:
+In this product overview, you learn how to perform the following tasks:
 
 -   [Create and attach a volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
 -   [Prepare your volume for use with a server (Linux or Windows)](/how-to/create-and-attach-a-cloud-block-storage-volume).
