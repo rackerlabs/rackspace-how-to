@@ -25,18 +25,18 @@ You'll need your CSR and the fully qualified domain name to which the certificat
 
 The type of certificate that you purchase and the validity period vary by vendor, and you can choose whichever certificate suits your needs.
 
-After you submit the CSR, the CA emails the person who is listed as the admin contact for the domain with a validation request to ensure that you actually own the domain for which you want to purchase the certificate.
+After you submit the CSR, the CA emails a validation request to the person who is listed as the administrative contact for the domain to ensure that you actually own the domain for which you want to purchase the certificate.
 
 **Note:** Thawte accepts only the following email addresses when sending the authorizing email for the SSL123 product:<br/><br/><ul><li>admin@</li><li>administrator@</li><li>hostmaster@</li><li>webmaster@</li><li>postmaster@</li><Administrative contact listed in WHOIS, if found</li></ul>
 
-After you have purchased and validated your certificate, you're ready to install it.
+After you have purchased and validated your certificate, you're ready to [install it](/how-to/install-an-ssl-certificate).
 
 ### Renew a certificate
 
 Follow your vendor's SSL certificate renewal process. You might
 need the following details:
 
--   **Server type**: For example, Apache 2.4.
+-   **Server type**: For example, Apache&reg; 2.4.
 -   **SSL type**: For example, OpenSSL (some vendors label this modSSL).
 -   **CSR**
 
@@ -44,9 +44,9 @@ After you have completed your renewal, you're ready to install the new certifica
 
 ### MyRackspace users
 
-If you are a Managed or Dedicated customer and use the MyRackspace portal, you can purchase an SSL certificate from Rackspace. Contact your support team or submit a ticket to start the certificate purchase process.
+If you are a Managed or Dedicated customer and use the [MyRackspace portal](https://my.rackspace.com/), you can purchase an SSL certificate from Rackspace. Contact your Support team or submit a ticket to start the certificate purchase process.
 
-When it is time to renew your certificate, Rackspace will contact you prior to the end of the validity period.
+When it is time to renew your certificate, Rackspace will contact you before the end of the validity period.
 
 ### Next steps
 
