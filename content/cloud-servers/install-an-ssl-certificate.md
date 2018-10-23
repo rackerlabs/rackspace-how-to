@@ -1,11 +1,11 @@
 ---
 permalink: install-an-ssl-certificate/
-audit_date: '2018-10-18'
+audit_date: '2018-10-23'
 title: Install an SSL certificate
 type: article
-created_date: '2018-10-18'
+created_date: '2018-10-23'
 created_by: Cat Lookabaugh
-last_modified_date: '2018-10-18'
+last_modified_date: '2018-10-23'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
