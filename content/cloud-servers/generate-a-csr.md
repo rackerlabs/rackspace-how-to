@@ -78,7 +78,7 @@ When prompted, enter the necessary information for creating a CSR by using the c
 
 | Field | Explanation | Example |
 | --- | --- | --- |
-| **Common Name** | The fully qualified domain name to which the certificate applies. The domain names **example.com** and **www.example.com** are distinct from each other, so be sure to submit your request for the right domain. If you want to secure both domains, you can use the **Alt Names** field. If you are purchasing a wildcard certificate, use **\*.example.com**. | example.com |
+| **Common Name** | The fully qualified domain name to which the certificate applies. The domain names **example.com** and **www.example.com** are distinct from each other, so be sure to submit your request for the right domain. If you are purchasing a wildcard certificate, use **\*.example.com**. | example.com |
 | **Organization Name** | The exact legal name of your organization. The Certificate Authority (CA) might seek to confirm that your organization is real and legally registered, so don't abbreviate words that aren't abbreviated in the organization's legal name. | Example Inc. |
 | **Organizational Unit** | The branch of your organization that is making the request. | Marketing |
 | **City/locality** | The city where your organization is legally located. Do not abbreviate the city name. | San Antonio |
