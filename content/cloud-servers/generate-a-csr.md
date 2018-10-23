@@ -129,13 +129,13 @@ After you have generated the CSR, you can submit it to a CA to purchase an SSL c
 
 Rackspace provides the CSR Generator for generating a CSR. The CSR Generator shows you the CSRs that you currently have and lets you create new CSRs with a simple form. After you have entered your details, the generator combines them with your private key so that you can submit the combined encoded information to a CA.
 
-When you are done with the generator, you can return to the Cloud Control Panel by clicking any of the terms in the top navigation or by going to [mycloud.rackspace.com](https://mycloud.rackspace.com).
+When you are done with the generator, you can return to the Cloud Control Panel by clicking any of the terms in the top navigation or by going to [login.rackspace.com](https://login.rackspace.com) and selecting **Rackspace Cloud** from the drop-down product menu in the top navigation bar.
 
 #### Access the CSR Generator
 
 Access the CSR Generator [directly](https://csrgenerator.rackspace.com) or through the control panel by using the following steps:
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com) and select **Rackspace Cloud** from the drop-down product menu in the top nagivation bar.
 2. In the top navigation bar, click **Servers > Cloud Servers**.
 3. Click the name of the server for which you want to generate a CSR.
 4. In the left-hand **Managing Your Server** section under **Help me with**, click **Generate a CSR**.
@@ -187,7 +187,7 @@ Copy the private key to the server that will host the certificate.  See your app
 
 If you are a Managed or Dedicated customer, you can request a CSR through the MyRackspace portal by using the following steps:
 
-1. Log in to the [MyRackspace portal](https://my.rackspace.com).
+1. Log in to the [MyRackspace portal](https://login.rackspace.com) and select **Dedicated Hosting** from the drop-down product menu in the top navigation bar.
 2. In the top navigation bar, click **Tickets > Create Ticket**.
 3. On the **Tickets / Create New Ticket** page, select **Generate Certificate Signing Request (CSR)** from the **Subject** drop-down list.
 4. Enter the following information in the **Ticket Details** section:
