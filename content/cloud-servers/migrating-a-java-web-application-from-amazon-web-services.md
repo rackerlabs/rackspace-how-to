@@ -19,9 +19,8 @@ This article shows you how to migrate an Apache&reg; Tomcat&reg; and
 Java&trade-based Spring web application from Amazon&reg; Web Services&reg;
 (AWS) to Rackspace Cloud. This example take about 30 minutes to complete.
 
-The example uses the [Spring Framework
-PetClinic](https://github.com/SpringSource/spring-petclinic/) sample web
-application.
+The example uses the [Spring PetClinic Sample
+Application](https://github.com/SpringSource/spring-petclinic/).
 
 The following figure shows the application's topology:
 
