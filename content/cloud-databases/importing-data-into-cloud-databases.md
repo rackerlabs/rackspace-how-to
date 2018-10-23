@@ -5,8 +5,8 @@ title: Import data into Cloud Databases
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2017-02-13'
-last_modified_by: Laura Santamaria
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -32,7 +32,7 @@ sections of this article.
 
 ### Create a Cloud Databases instance to receive the data
 
-1.  Use the [Cloud Control Panel](http://mycloud.rackspace.com),
+1.  Use the [Cloud Control Panel](http://login.rackspace.com/),
     [API](https://developer.rackspace.com/docs/cloud-databases/v1/api-reference/database-instances/#create-database-instance),
     or [command-line client](https://developer.rackspace.com/docs/cloud-databases/v1/getting-started/create-use-database/#creating-a-database-instance-database-and-a-user)
     to create a Cloud Databases instance with an empty database and a username
@@ -58,7 +58,7 @@ sections of this article.
 
 1.  After you create the database instance, view its details in the Cloud
     Control Panel and copy the hostname. The hostname is a long string of
-    numbers and letters with `rackspaceclouddb.com` at the end. You will need
+    numbers and letters with `rackspaceclouddb.com` at the end. You need
     the hostname in a later step.
 
 2.  On the machine where your existing database is located, run the
@@ -110,8 +110,8 @@ sections of this article.
 
 1.  After you create the database instance, view its details in the Cloud
     Control Panel and copy the hostname. The public hostname for an HA instance
-    is a long string of numbers and letters with `publb.rackspaceclouddb.com` at
-    the end. You will need the hostname in a later step.
+    is a long string of numbers and letters with `publb.rackspaceclouddb.com`
+    at the end. You need the hostname in a later step.
 
 2.  On the machine where your existing database is located, run the following
     MySQL command to export the database:
@@ -171,13 +171,14 @@ For an example of how to upgrade between versions of MySQL, see
     your database instance and require support intervention to recover.
 
 -   Imports of views, triggers, procedures, or functions that have a definer
-    other than the database user who is importing data will fail because of a
+    other than the database user who is importing data fail because of a
     requirement for `SUPER` privilege.
 
 ### External links
 
-[MYSQL documentation](http://dev.mysql.com/doc/)
+- [MYSQL documentation](http://dev.mysql.com/doc/)
 
-[MariaDB documentation](https://mariadb.com/kb/en/mariadb/documentation/)
+- [MariaDB documentation](https://mariadb.com/kb/en/mariadb/documentation/)
 
-[Percona Server documentation](https://www.percona.com/software/mysql-database/percona-server)
+- [Percona Server
+  documentation](https://www.percona.com/software/mysql-database/percona-server)

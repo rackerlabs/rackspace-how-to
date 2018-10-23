@@ -5,8 +5,8 @@ title: Database replication with Cloud Databases
 type: article
 created_date: '2015-04-08'
 created_by: Rose Contreras
-last_modified_date: '2016-02-25'
-last_modified_by: Steve Croce
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -36,22 +36,24 @@ Following are some common scenarios for which adding a read replica for your dat
 
 Follow these steps for creating a read replica for your database instance using the Cloud Control Panel.
 
-1. Log in to the [cloud control panel](https://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2. In the top navigation bar, click the **Databases** menu and then select **MySQL**.
+2. Click the **Select a Product** drop-down menu in the top navigation bar,
+   then select **Rackspace Cloud**.
 
-3. On the instance list page, click the plus sign (+) in the **Replicas** column for the database instance that you want to replicate.
+3. In the top navigation bar, click the **Databases** menu and then select **MySQL**.
+
+4. On the instance list page, click the plus sign (+) in the **Replicas** column for the database instance that you want to replicate, as shown in the following image:
 
 	<img src="{% asset_path cloud-databases/database-replication-with-cloud-databases/create_replica-4_0.png %}" width="400" height="148" border="1" alt=""  />
 
     **Tip:** You can also click the gear icon next to the instance and select **Create Replica**, or click the instance and then click **Add Replica** in the replication section of the instance page.
 
-4. Enter a name and set the configurations for the read replica, and then click **Create Replica**.
+4. Enter a name and set the configurations for the read replica, then click **Create Replica**.
 
-   
 ### View the replicas attached to a database instance
 
-After you have created a replica, it is listed with the database instances.
+After you have created a replica, it appears with the database instances, as shown in the following image:
 
 <img src="{% asset_path cloud-databases/database-replication-with-cloud-databases/view_replica-1.png %}" width="450" height="194" border="1" alt=""  />
 
@@ -61,7 +63,7 @@ You can also view the replica in the Replications section of the instance detail
 
 ### Detach a replica
 
-You can detach a replica from a database instance.
+Use the following steps to detach a replica from a database instance:
 
 1. On the details page for the replication instance, click the **Actions** menu and select **Detach from master**.
 
@@ -75,16 +77,18 @@ There could be situations where you would like detach the replica. Here are some
 
 ### Delete a replica
 
-1. To delete a replica, click the gear icon next to it and select **Delete Instance**.
+Use the following steps to delete a replica:
+
+1.  Click the gear icon next to it and select **Delete Instance**.
     You can also click the replica in the instance list, and on the instance page, click the gear icon in the top right corner.
 
 2. In the popup dialog box, click **Delete Instance**.
 
-Once you delete the replica instance, your data will no longer be replicated. You can delete the replica without detaching it from the primary database instance, but you cannot delete the primary database instance if it has replicas attached.
+After you delete the replica instance, your data will no longer be replicated. You can delete the replica without detaching it from the primary database instance, but you cannot delete the primary database instance if it has replicas attached.
 
 ### Create and manage replicas with the Cloud Databases API
 
-All of the functions above are also available in the Cloud Databases API. You can find more information about how to manage replicas with the API in the [Cloud Databases Developer Docs](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#document-api-operations/replication)
+All of the preceding functions are also available in the Cloud Databases API. You can find more information about how to manage replicas with the API in the [Cloud Databases Developer Docs](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#document-api-operations/replication)
 
 ### Monitoring read replicas
 
