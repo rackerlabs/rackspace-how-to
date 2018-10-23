@@ -27,7 +27,13 @@ The type of certificate that you purchase and the validity period vary by vendor
 
 After you submit the CSR, the CA emails a validation request to the person who is listed as the administrative contact for the domain to ensure that you actually own the domain for which you want to purchase the certificate.
 
-Thawte accepts only the following email addresses when sending the authorizing email for the SSL123 product:<br/><br/><ul><li>admin@</li><li>administrator@</li><li>hostmaster@</li><li>webmaster@</li><li>postmaster@</li><li>Administrative contact listed in WHOIS, if found</li></ul>
+Thawte accepts only the following email addresses when sending the authorizing email for the SSL123 product:
+  - admin@
+  - administrator@
+  - hostmaster@
+  - webmaster@
+  - postmaster@
+  - Administrative contact listed in WHOIS, if found
 
 After you have purchased and validated your certificate, you're ready to [install it](/how-to/install-an-ssl-certificate).
 
