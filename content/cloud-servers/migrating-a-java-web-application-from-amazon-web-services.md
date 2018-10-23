@@ -83,50 +83,51 @@ Complete the following steps to install OpenJDK on the cloud:
 
 #### Install Tomcat on the Cloud Server
 
-1. Select the version of Tomcat that you want to use from the list at
-   <http://tomcat.apache.org/download-70.cgi> to download it.
+Use the following steps to Install Tomcat on the Cloud Server:
 
-2. Copy the URL of the `tar.gz` file (for example,
+1. Right-click the version of Tomcat that you want to use from the [Tomcat 7
+   Software Downloads page](http://tomcat.apache.org/download-70.cgi) and copy
+   the URL of the `tar.gz` file (for example,
    **http://www.us.apache.org/dist/tomcat/tomcat-7/v7.0.39/bin/apache-tomcat-7.0.39.tar.gz**).
 
-3. Enter the following commands to change directory to `/usr/share` (or the
+2. Enter the following commands to change directory to `/usr/share` (or the
    directory that you want to use) and download the binary file:
 
         cd /usr/share
         sudo wget http://www.us.apache.org/dist/tomcat/tomcat-7/v7.0.39/bin/apache-tomcat-7.0.39.tar.gz
 
-4. Change permissions by entering the following command:
+3. Change permissions by entering the following command:
 
         sudo chmod 775 apache-tomcat-7.0.39.tar.gz
 
-5. Extract the file contents by entering the following command:
+4. Extract the file contents by entering the following command:
 
         sudo tar zxvf apache-tomcat-7.0.39.tar.gz
 
-6. After you extract Tomcat, use the following command to remove the
+5. After you extract Tomcat, use the following command to remove the
    `tar.gz` file and free up space:
 
         sudo rm apache-tomcat-7.0.39.tar.gz
 
-7. Set the environment variables in the `catalina.sh` file by entering the
+6. Set the environment variables in the `catalina.sh` file by entering the
    following commands:
 
         cd /usr/share/apache-tomcat-7.0.39/bin
         sudo vi catalina.sh
 
-8. Add the following line to the `catalina.sh` file immediately after
+7. Add the following line to the `catalina.sh` file immediately after
    `\#!/bin/sh`:
 
         JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
 
-9. Save your changes and exit the file.
+8. Save your changes and exit the file.
 
-10. Automate Tomcat startup by entering the following commands:
+9. Automate Tomcat startup by entering the following commands:
 
         cd /etc/init.d
         sudo vi tomcat
 
-11. Add the following information to the file. Ensure that `JAVA_HOME`,
+10. Add the following information to the file. Ensure that `JAVA_HOME`,
     `TOMCAT_HOME`, `START_TOMCAT`, and `STOP_TOMCAT` refer to the correct
     directories:
 
@@ -169,9 +170,9 @@ Complete the following steps to install OpenJDK on the cloud:
         esac
         exit 0
 
-12. Save your changes and exit the file.
+11. Save your changes and exit the file.
 
-13. Set file permissions, set up Tomcat as a system service, and test the
+12. Set file permissions, set up Tomcat as a system service, and test the
     setup by entering the following commands:
 
         sudo chmod 755 tomcat
@@ -183,10 +184,10 @@ Complete the following steps to install OpenJDK on the cloud:
 
          tomcat 0:off 1:off 2:on 3:on 4:on 5:off 6:off
 
-14. Because Tomcat is running on port 8080, you need to ensure that iptables
+13. Because Tomcat is running on port 8080, you need to ensure that iptables
     doesn't interfere with connectivity.
 
-15. To test Tomcat, look up the Internet Protocol (IP) address for the Cloud
+14. To test Tomcat, look up the Internet Protocol (IP) address for the Cloud
     Server in the Rackspace Cloud Control Panel and open the URL in a browser
     (for example, `http://<ipAddress>:8080/`). The Apache Tomcat landing page
     should appear.
