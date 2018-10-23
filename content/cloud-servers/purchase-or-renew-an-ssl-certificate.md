@@ -1,11 +1,11 @@
 ---
 permalink: purchase-or-renew-an-ssl-certificate/
-audit_date: '2018-10-17'
+audit_date: '2018-10-23'
 title: Purchase or renew an SSL certificate
 type: article
-created_date: '2018-10-17'
+created_date: '2018-10-23'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-10-17'
+last_modified_date: '2018-10-23'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -26,6 +26,8 @@ You'll need your CSR and the fully qualified domain name to which the certificat
 The type of certificate that you purchase and the validity period vary by vendor, and you can choose whichever certificate suits your needs.
 
 After you submit the CSR, the CA emails the person who is listed as the admin contact for the domain with a validation request to ensure that you actually own the domain for which you want to purchase the certificate.
+
+**Note:** Thawte accepts only the following email addresses when sending the authorizing email for the SSL123 product:<br/><br/><ul><li>admin@</li><li>administrator@</li><li>hostmaster@</li><li>webmaster@</li><li>postmaster@</li><Administrative contact listed in WHOIS, if found</li></ul>
 
 After you have purchased and validated your certificate, you're ready to install it.
 
