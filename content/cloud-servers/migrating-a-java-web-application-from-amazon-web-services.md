@@ -188,7 +188,7 @@ Use the following steps to Install Tomcat on the Cloud Server:
     doesn't interfere with connectivity.
 
 14. To test Tomcat, look up the Internet Protocol (IP) address for the Cloud
-    Server in the Rackspace Login Portal and open the URL in a browser
+    Server in the Cloud Control Panel and open the URL in a browser
     (for example, `http://<ipAddress>:8080/`). The Apache Tomcat landing page
     should appear.
 
@@ -262,7 +262,7 @@ Complete the following preparatory steps to use Cloud Files:
             swift upload Tomcat tomcat.tar.gz
 
     -   Use the following steps to upload your data to Cloud Files through the
-        [Rackspace Login Portal](https://login.rackspace.com):
+        [Cloud Control Panel](https://login.rackspace.com):
 
         1.  From the **Select a Product** drop-down menu, select **Rackspace
             Cloud > Storage > Files > containerName** to open your container.
