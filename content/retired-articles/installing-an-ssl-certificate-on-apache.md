@@ -7,8 +7,6 @@ created_date: '2011-03-16'
 created_by: Rackspace Support
 last_modified_date: '2018-10-02'
 last_modified_by: Shaun Crumpler
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 This article describes how to install a Secure Socket Layer (SSL) certificate on your Apache server. There are many SSL vendors that you can choose from. Where you buy your SSL certificate is up to you.
