@@ -200,9 +200,8 @@ Use the following steps to Install Tomcat on the Cloud Server:
 #### Install OpenStack Swift (optional)
 
 If you plan to use Cloud Files to transfer your data, you need to use
-OpenStack Swift to enable access from your server.
-Follow the steps in this section to install and configure
-OpenStack Swift.
+OpenStack Swift to enable access from your server. Follow the steps
+in this section to install and configure OpenStack Swift.
 
 1. Use the following command to install the OpenStack Swift client:
 
