@@ -210,7 +210,7 @@ If you are a Managed or Dedicated customer, you can request a CSR through the My
 
 ### Next steps
 
-- [Create or renew an SSL certificate](/how-to/create-or-renew-an-ssl-certificate)
+- [Purchase or renew an SSL certificate](/how-to/purchase-or-renew-an-ssl-certificate)
 - [Install an SSL certificate](/how-to/install-an-ssl-certificate)
 
 ### Reference
