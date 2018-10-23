@@ -5,7 +5,7 @@ title: Migrate a Java web application from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2018-10-22'
+last_modified_date: '2018-10-23'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -20,7 +20,7 @@ Java&trade-based Spring web application from Amazon&reg; Web Services&reg;
 (AWS) to Rackspace Cloud. This example take about 30 minutes to complete.
 
 The example uses the [Spring Framework
-Petclinic](https://github.com/SpringSource/spring-petclinic/) sample web
+PetClinic](https://github.com/SpringSource/spring-petclinic/) sample web
 application.
 
 The following figure shows the application's topology:
