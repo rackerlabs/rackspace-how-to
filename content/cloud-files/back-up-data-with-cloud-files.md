@@ -36,19 +36,22 @@ steps to prepare your data:
 
 ### Back up your data
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  At the top of the window, click **Storage > Files**.
+2. Click the **Select a Product** drop-down menu in the top navigation bar,
+   then select **Rackspace Cloud**.
 
-3.  On the Cloud Files page, click **Create Container**.
+3.  At the top of the window, click **Storage > Files**.
 
-4.  In the popup dialog box, name the new container, select the region
+4.  On the Cloud Files page, click **Create Container**.
+
+5.  In the popup dialog box, name the new container, select the region
     and type, and then click **Create Container**.
 
     For more information about selecting a region for your backup files,
     see [Multi-region support in Cloud Files](/how-to/multi-region-support-in-cloud-files).
 
-5.  *(Optional)* If you want to create a folder to group your uploaded
+6.  *(Optional)* If you want to create a folder to group your uploaded
     files, perform the following steps:
 
     1.  On the Containers page, click **Create Folder**.
@@ -59,7 +62,7 @@ steps to prepare your data:
     3.  To add files in the folder, click the folder name to open the
         folder before completing the following step.
 
-6.  Individually upload the backup data files that you created in step 2
+7.  Individually upload the backup data files that you created in step 2
     of the Prepare to back up section to the container, as follows:
 
     1.  On the Containers page, click **Upload Files**.

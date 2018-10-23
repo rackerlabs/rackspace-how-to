@@ -5,8 +5,8 @@ title: Using CNAMEs with Cloud Files containers
 type: article
 created_date: '2011-04-27'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -20,15 +20,15 @@ example, `http://images.mycompany.com`).
 ### Find your CDN URL
 
 Before you can create the CNAME record, you need to know the CDN URL of
-the container. You can find this in the Cloud Files section of the
-[Cloud Control Panel](https://mycloud.rackspace.com) by clicking the
+the container. You can find this information in the Cloud Files section of the
+[Cloud Control Panel](https://login.rackspace.com/) by clicking the
 gear icon next to the container name and selecting **View All Links**. A
-popup dialog box with the CDN links to the container is displayed:
+popup dialog box with the CDN links to the container displays, as shown in the following image:
 
 <img src="{% asset_path cloud-files/using-cnames-with-cloud-files-containers/1080-2_2.png %}" width="492" height="246" />
 
-Alternatively, you can request your container information via the Cloud
-Files API.
+Alternatively, you can request your container information by using the [Cloud
+Files API](https://developer.rackspace.com/docs/cloud-files/v1/).
 
 ### Set up CNAME records
 
@@ -36,9 +36,9 @@ You set up your CNAME record by managing your DNS. Within your DNS
 settings, request a new record. Ensure that your CNAME record points to
 your container's CDN URL and not your object's CDN URL.
 
-If you are using Rackspace Cloud DNS, creating a CNAME record that uses
-the example values introduced at the beginning of this article would
-look as follows:
+If you're using [Rackspace Cloud DNS](https://www.rackspace.com/cloud/dns),
+creating a CNAME record that uses the example values introduced at the
+beginning of this article look like the following image:
 
 <img src="{% asset_path cloud-files/using-cnames-with-cloud-files-containers/cnameadd.png %}" width="516" height="282" />
 
@@ -49,5 +49,3 @@ managing your DNS in your existing tool.
 
 -   You are not charged extra for using CNAMEs.
 -   At this time, CNAMEs do not work with SSL (or HTTPS) delivery.
-
-

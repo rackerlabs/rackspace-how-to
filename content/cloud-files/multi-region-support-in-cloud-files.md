@@ -5,8 +5,8 @@ title: Multi-region support in Cloud Files
 type: article
 created_date: '2012-09-12'
 created_by: David Hendler
-last_modified_date: '2016-04-18'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -39,10 +39,10 @@ Cloud Files operations will only affect that region's content. So, if
 you have content in two locations and you want to make edits, you will
 have to make those edits in both locations.
 
-MyRackspace and [Cloud Control Panel](http://mycloud.rackspace.com)
+MyRackspace and [Cloud Control Panel](http://login.rackspace.com/)
 users can also take advantage of the multi region feature. When you
-create a container, choose the data center where you would like it. Your
-control panel will reflect the location of your container.
+create a container, choose the data center where you would like it. The
+Cloud Control Panel reflects the location of your container.
 
 The following screenshots illustrate this new capability:
 
