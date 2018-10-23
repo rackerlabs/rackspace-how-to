@@ -5,8 +5,8 @@ title: Planned maintenance for VMware Guest Introspection drivers
 type: article
 created_date: '2018-10-11'
 created_by: Scot Stine
-last_modified_date: '2018-10-11'
-last_modified_by: Cat lookabaugh
+last_modified_date: '2018-10-22'
+last_modified_by: Catherine Richardson
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -81,13 +81,14 @@ update the ticket or contact your account team – we’re always happy to help.
 
 Q: Can we upgrade VMWare Tools to a later version?
 
-A: Yes. However, that upgrade will not be completed during this remediation.
-Upgrading VMWare Tools to a later version is an option for remediation, but
-Rackspace is not taking this course of action as updates and upgrades to the
-software can trigger reboots. Because our goal is to prevent disruption to your
-environment to the extent possible, we’ll disable the driver during the
-automation maintenance and use the normal patching process to reboot the device
-to effectively remediate this issue.
+A: Updating or upgrading is not a valid path to resolution. VMware has indicated
+the issue might be present in all versions of these drivers. The drivers are not
+in use in your environment because only certain VMware vSphere add-on products use
+this feature of VMware Tools. Proper resolution of the issue is removal of the
+offending drivers. Because our goal is to prevent disruption to your environment to
+the extent possible, we’ll disable the driver during the automation maintenance and
+utilize your normal scheduled patching process to reboot the device to effectively
+remediate this issue.
 
 Q: How will I know if automation has been successfully run on my device?
 
@@ -98,3 +99,4 @@ Q: Where can I get more information?
 
 A: If you would like more information on this issue, see the
 [documentation provided by VMware](https://kb.vmware.com/s/article/2148218).
+
