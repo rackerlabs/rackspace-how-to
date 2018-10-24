@@ -52,7 +52,7 @@ for your email on a specific domain:
 In this situation, you would create the following rule and add it to a TXT
 record:
 
-    `v=spf1 mx include:_spf.google.com -all`
+    v=spf1 mx include:_spf.google.com -all
 
 The following list shows how each part of the record is defined:
 
