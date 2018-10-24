@@ -5,8 +5,8 @@ title: About Cloud Server images
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-06-10'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-24'
+last_modified_by: Brian King
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -19,7 +19,7 @@ servers with an identical configuration. Using the [Cloud Control Panel](http://
 **Note:** Because images are not automatically verified they should not
 be used as a back-up solution.
 
-### Limitations for all server types
+### Considerations for all server types
 
 Please take note of the following limitations when creating server
 images:
@@ -31,8 +31,9 @@ images:
     Standard backup tools such as `mysqldump` or the SQL Server Management Studio are more suitable for backing up databases. Be sure to always back up your database before you create an image of your
     Cloud Server.
 
--   **Cloud Server images cannot be transferred between accounts**.
-    You can, however, share images between accounts **in the same region**. This allows you to build a server from the shared image, and then create a copy of the newly created server.
+-   **Cloud Server images can be shared between accounts, but not between
+    regions **.
+    You can share images between accounts **in the same region**. This allows you to build a server from the shared image, and then create a copy of the newly created server. To move images between regions, see [Transfer images between regions of the Rackspace open cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
 
 -   Image creation can take several hours if the disk is extremely large, so be sure to allot an appropriate amount of time to create an image of your server.
 
@@ -40,32 +41,30 @@ images:
     of image requests at one time for a group of servers. The number of
     concurrent images are limited in order to keep the disk activity of
     multiple images from affecting performance on a host. If the image
-    takes longer than 24 hours to complete contact Rackspace
+    takes longer than 24 hours to complete, contact Rackspace
     Support.
-
--   If the image process fails more than once and you're sure you haven't
-    exceeded the image limits, contact Rackspace Support.
-
--   **If you are using a boot from volume server, you cannot create an image of it**. You can, however, create snapshots and clones of a boot from volume server.
-
-### Limitations for Linux servers
 
 -   When an image creation is initiated, the system runs a process that
     attempts to reclaim space that has been freed by deleting files
     and images. That process continues even if the image creation
     process is aborted because of disk limits at the time the
-    process begins. That means that in some cases, trying to create an image again about a half hour after it fails could result in a successful image process thanks to that cleanup operation.
+    process begins. That means that in some cases, trying to create an image again after it fails could result in a successful image process thanks to that cleanup operation.
 
-### Limitations for Windows servers
+-   **If you are using a boot from volume server, you cannot create an image of it**. You can, however, create snapshots and clones of a boot from volume server.
 
--   On a Windows Cloud Server, current or previous disk usage
-    cannot exceed **160GB**. Due to limitations with the Windows
-    filesystem, the underlying virtual hard disk cannot shrink once it
-    has expanded. Therefore, if you have resized your server larger than
-    160GB, our imaging system will not be able to take an image of
-    the server. We recommend taking an image of your
-    configuration before you reach 160GB of data on a Windows machine
-    for this reason.
+### Considerations for Virtual Appliances
+-   Turnkey virtual appliances typically do not support decloning.
+    Thus, while an image will technically preserve the exact state of the appliance, any servers built from the image will not be able to set the following:
+
+     * Hostname
+     * IP configuration
+     * Admin password
+     * License key
+
+    Instead of using Cloud Server Images, consult your appliance's vendor
+ documentation for the recommended backup and restore procedures.
+
+### Considerations for Windows servers
 
 -   If you take a snapshot of a Windows Cloud Server that is configured
     to be a Domain Controller (DC), you will be unable to restore from
