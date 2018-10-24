@@ -5,8 +5,8 @@ title: Cloud Backup backup actions
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date:  '2017-07-05'
-last_modified_by: Cat Lookabaugh
+last_modified_date:  '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -18,12 +18,16 @@ This article describes the actions you can perform during a single back up.
 
 You can access the **Backup Actions** menu in the following ways:
 
--   Select **Cloud Control Panel -> Backups -> Backups**, and then click on the gear icon next to the backup name on the **Configured Backups** page.
+-   Log in to the [Cloud Control Panel](http://login.rackspace.com), click the
+    **Select a Product** drop-down menu in the top navigation bar,
+    then select **Rackspace Cloud**. Next, select **Backups** and then click
+    on the gear icon next to the backup name on the **Configured Backups**
+    page.
 
     <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-15%20at%204.20.11%20PM.png %}" width="479" height="292" />
 
--   Click on the **Actions** menu at the top of the **Configuration Details** page for a
-    configured backup.
+-   Click on the **Actions** menu at the top of the **Configuration Details**
+    page for a configured backup.
 
     <img src="{% asset_path cloud-backup/rackspace-cloud-backup-backup-actions/Screen%20Shot%202015-10-15%20at%204.18.36%20PM.png %}" width="552" height="219" />
 

@@ -5,8 +5,8 @@ title: Prepare your Cloud Block Storage volume
 type: article
 created_date: '2012-10-21'
 created_by: David Hendler
-last_modified_date: '2016-09-16'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -22,14 +22,14 @@ usable like a drive on your server.
 
 ### Prepare your volume for use with a Linux server
 
-#### Use SSH to connect to your server.
+#### Use SSH to connect to your server
 
 When you created your server, you were given a password. You will need
 that password for this step. If you do not have the password, go to the
-Cloud Servers page of the Cloud Control Panel, click the gear icon next
-to the server name, and select **Change Password**.
+Cloud Servers page of the [Cloud Control Panel](http://login.rackspace.com/),
+click the gear icon next to the server name, and select **Change Password**.
 
-1.  On the Server Details page of the Control Panel, find the IP address
+1.  On the Server Details page of the Cloud Control Panel, find the IP address
     for your server.
 
 2.  Using SSH, log in to the server as root by using its IP address and
@@ -74,7 +74,7 @@ to the server name, and select **Change Password**.
 
         Disk /dev/xvdb doesn't contain a valid partition table
 
-#### Partition the disk.
+#### Partition the disk
 
 Partitioning the disk tells the server how much space on the drive you
 want to use. To use all of it, we tell the server to start at the first
@@ -151,7 +151,7 @@ cylinder of the disk and go to the last.
             Device Boot      Start         End      Blocks   Id  System
         /dev/xvdb1               1       13054   104856223+  83  Linux
 
-#### Format the volume.
+#### Format the volume
 
 Formatting the volume enables the server to store information on it. In
 the following example, ext3 is used. However, you can use other file
@@ -183,7 +183,7 @@ systems supported by your kernel, such as ext4, in place of ext3.
     This filesystem will be automatically checked every 31 mounts or
     180 days, whichever comes first.  Use tune2fs -c or -i to override.
 
-#### Mount the volume.
+#### Mount the volume
 
 After partitioning and formatting the volume, you must mount it on the
 server. After the volume is mounted, it is available for use.
@@ -217,7 +217,7 @@ remains persistent after a server reboot.
 
 **Note:** If you ever decide to move the volume to a different server, begin by un-mounting the volume. Use the **unmount** command to unmount the volume, and then repeat this **Mount the volume** process for the new endpoint.
 
-#### Make the volume permanent.
+#### Make the volume permanent
 
 This step is optional, but it keeps your volume attached to your server
 after restarts.
@@ -243,7 +243,7 @@ the volume to the static file system:
 
     /dev/xvdb1 /mnt/cbsvolume1 ext3 defaults,noatime,_netdev,nofail 0 2
 
-Now the volume persists on the server after server restarts.
+Now the volume persists on the server after the server restarts.
 
 
 
@@ -252,7 +252,7 @@ Now the volume persists on the server after server restarts.
 **Note**: In the examples in the procedure, a 100 GB volume is added to
 a Windows Server 2012 server. The steps are similar for all Windows cloud servers.
 
-#### Remotely connect to your Server.
+#### Remotely connect to your server
 
 When you created your server, you were given a password. You need that
 password for this step. If you do not have the password, go to the Cloud
@@ -279,7 +279,7 @@ server name, and select **Change Password**.
     GB volume is attached to the server. It is listed as Offline, it has
     100 GB of unallocated space, and its partition size is Unknown.
 
-#### Partition and format the drive.
+#### Partition and format the drive
 
 For Windows servers, you partition and format the volume by using the
 New Volume Wizard. The mounting process, called "bringing it online" in
