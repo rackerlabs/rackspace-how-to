@@ -15,7 +15,7 @@ product_url: cloud-backup
 
 **Warning**: The system actions are for users who are familiar with Rackspace Cloud Backup. Users with Managed Cloud Service Level accounts might want to contact their account manager before performing any of the following actions.
 
-This article describes the actions that are available in the Backups section of the Rackspace [Cloud Control Panel](http://login.rackspace.com/).
+This article describes the actions that are available in the Backups section of the [Cloud Control Panel](http://login.rackspace.com/).
 
 Use the following steps to navigate to this area:
 

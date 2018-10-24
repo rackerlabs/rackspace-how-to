@@ -4,8 +4,8 @@ audit_date:
 title: Cloud Backup - Basic troubleshooting on Windows 2008 servers
 created_date: '2018-08-30'
 created_by: Shaun Crumpler
-last_modified_date:
-last_modified_by:
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -43,7 +43,7 @@ establish a connection, as shown in the next section.
 
 ## Establish connection
 
-1. Log in to the [Rackspace Cloud Control Panel](http://login.rackspace.com).
+1. Log in to the [Cloud Control Panel](http://login.rackspace.com).
 2. Click the **Select a Product** drop-down menu in the top navigation bar,
    then select **Rackspace Cloud**.
 3. Select **Backups > Systems**.

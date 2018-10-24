@@ -35,7 +35,9 @@ establish a connection, as shown in the next section.
 
 ## Establish connection
 
-1. Log in to the [Rackspace Cloud Control Panel](https://login.rackspace.com).
+Use the following steps to establish a connection:
+
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2. Click the **Select a Product** drop-down menu in the top navigation bar,
    then select **Rackspace Cloud**.
 3. Select **Backups > Systems**.
@@ -55,7 +57,7 @@ establish a connection, as shown in the next section.
    The backup status is **connected** or **disconnected**.
 6. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
 7. After 10 seconds, perform one of the following actions:
- - If the status is **connected**, contact Rackspace Technical Support.
+ - If the status is **connected**, contact Rackspace Support.
  - If the status is **disconnected**, restart the DriveClient service as shown in the next section.
 
 ## Restart the DriveClient service
