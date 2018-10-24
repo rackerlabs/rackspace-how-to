@@ -26,7 +26,7 @@ usable like a drive on your server.
 
 When you created your server, you were given a password. You will need
 that password for this step. If you do not have the password, go to the
-Cloud Servers page of the [Cloud Control Panel](http://login.rackspace.com/),
+Cloud Servers page of the [Cloud Control Panel](https://login.rackspace.com/),
 click the gear icon next to the server name, and select **Change Password**.
 
 1.  On the Server Details page of the Cloud Control Panel, find the IP address
