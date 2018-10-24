@@ -23,7 +23,7 @@ visible on the public internet. However, if you have other assets (Cloud
 Servers, Cloud Load Balancers, and Cloud Databases) located in the same
 region, you can use the internal IP address to connect the infrastructure
 together. For example, you can create a Cloud Load Balancer for two or more
-Cloud Servers in the same region using the Rackspace Network internal IP
+Cloud Servers in the same region by using the Rackspace Network internal IP
 addresses.
 
 **Note**: Any traffic or communication between cloud infrastructure in
@@ -42,8 +42,8 @@ further protect your data.
 
 ### Finding the Rackspace IP address
 
-You can find all of the IP addresses for a new server, load balancer or
-database in the [Cloud Control Panel](https://login.rackspace.com) by clicking on it and viewing its Details.
+You can find all of the IP addresses for a new server, load balancer, or
+database in the [Cloud Control Panel](https://login.rackspace.com) by clicking on it and viewing its details.
 
 The following image shows an example Server Details page:
 

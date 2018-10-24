@@ -35,8 +35,8 @@ that the node is functional.
 
     All existing load balancers for your account display.
 
-4.  Click the gear icon next load balancer name that you want to monitor, then
-    select **Edit Health Monitoring**.
+4.  Click the gear icon next to the load balancer name that you want to
+    monitor, then select **Edit Health Monitoring**.
 
 5.  In the popup dialog box, select a **Monitor Type**:
 

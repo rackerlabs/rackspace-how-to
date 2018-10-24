@@ -22,7 +22,7 @@ balance are called *nodes*.
 ### Adding nodes
 
 When you create a load balancer by using the [Cloud Control
-Panel](https://login.rackspace.com) you see that Add Nodes is part of the
+Panel](https://login.rackspace.com), you see that Add Nodes is part of the
 configuration process, as shown in the following image:
 
 <img src="{% asset_path cloud-load-balancers/products-i-can-load-balance/load-balancer-add-nodes.png %}" alt="add nodes to load balancer in control panel" />
@@ -35,5 +35,4 @@ region of the load balancer can impact performance of the load balancer.
 We recommend creating the load balancer in the region that is closest to
 your external nodes.
 
-For more information, see [Load Balancing Public Vs. Private
-IPs](/how-to/load-balancing-internal-ips-in-the-same-region).
+For more information, see [Load Balancing Internal IPs in the same region](/how-to/load-balancing-internal-ips-in-the-same-region).

@@ -1,7 +1,7 @@
 ---
 permalink: pointing-domains-to-load-balancers/
 audit_date:
-title: Point Domains to load balancers
+title: Point domains to load balancers
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
@@ -11,15 +11,15 @@ product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
 
-You can load balance incoming traffic to your domain using a Cloud Load
-Balancer. Suppose you initially have one Cloud Server with a domain
-pointing to the public Internet Protocol (IP) Address of the server. Then
+You can load balance incoming traffic to your domain by using Cloud Load
+Balancers. Suppose you initially have one Cloud Server with a domain
+pointing to the public Internet Protocol (IP) address of the server. Then
 traffic to your domain starts picking up and suddenly overloads your server.
 To improve traffic flow, you can create a clone of the server and then put both
 servers behind a new load balancer. Instead of pointing your domain
 directly to the old server, you can now point it to the new load
 balancer, which distributes the traffic evenly and prevents server
-overload. Additionally, you could create several new domains that
+overload. Additionally, you can create several new domains that
 point to the load balancer.
 
 This article describes how to point an existing domain to a Cloud Load

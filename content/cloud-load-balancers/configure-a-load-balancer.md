@@ -26,7 +26,7 @@ balancer in the Rackspace Cloud.
 
 Use the following steps to set up a load balancer:
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
