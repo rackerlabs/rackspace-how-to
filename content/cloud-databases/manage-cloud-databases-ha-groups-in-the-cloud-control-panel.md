@@ -5,8 +5,8 @@ title: Manage Cloud Databases HA instance groups in the Cloud Control Panel
 type: article
 created_date: '2016-03-18'
 created_by: Steve Croce
-last_modified_date: '2016-09-16'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -19,24 +19,42 @@ This article describes how to create and manage HA instance groups by using the 
 
 ### Create a new HA instance group
 
+Use the following steps to create a new HA instance group:
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2.  From the the **Databases** menu, select **MySQL Instance** under **CREATE RESOURCES**.
+2.  Click the **Select a Product** drop-down menu in the top navigation bar,
+    then select **Rackspace Cloud**.
 
-3.  In the **Identity** section, provide a name for the instance and specify the region in which you want to launch the HA instances that you create.
+3.  From the the **Databases** menu, select **MySQL Instance** under **CREATE
+    RESOURCES**.
 
-   **Note:** The name that you specify and an index (-01, -02, and so on) will be used to create all the instance names, starting with the master instance. You can see the instance names in the **Build** section after you select the **High-Availability Group** option.
+4.  In the **Identity** section, provide a name for the instance and specify
+    the region in which you want to launch the HA instances that you create.
 
-4.  In the **Engine** section, select a datastore and version that support HA instances: MySQL 5.6 or later, MariaDB 10 or later, or Percona 5.6 or later.
+     **Note:** The name that you specify and an index (-01, -02, and so on) is
+     used to create all the instance names, starting with the master instance.
+     You can see the instance names in the **Build** section after you select
+     the **High-Availability Group** option.
 
-5.  In the **Build** section, select the amount of RAM and disk space that you want *each instance* of your HA group to have. The master instance and each replica instance will be created with this same amount of RAM and disk space.
+5.  In the **Engine** section, select a datastore and version that support HA
+    instances: MySQL 5.6 or later, MariaDB 10 or later, or Percona 5.6 or
+    later.
 
-6.  Also, in the **Build** section, select the **High-Availability Group** for **Instance Type**. New options are displayed.
+6.  In the **Build** section, select the amount of RAM and disk space that you
+    want *each instance* of your HA group to have. The master instance and
+    each replica instance are created with this same amount of RAM and
+    disk space.
 
-7. In the **HA Instances** list, which shows the master and replica instances, remove replicas by clicking the circle next to the last replica, or add a replica by selecting **+ Add another replica** beneath the list. Currently, HA groups support only one or two replicas.
+7.  Also, in the **Build** section, select the **High-Availability Group** for
+    **Instance Type**. New options display.
 
-8. For **Networks**, select the networks to which HA group can connect to.
+8. In the **HA Instances** list, which shows the master and replica instances,
+   remove replicas by clicking the circle next to the last replica, or add a
+   replica by selecting **+ Add another replica** beneath the list. Currently,
+   HA groups support only one or two replicas.
+
+9. For **Networks**, select the networks to which the HA group can connect.
 
    - If you select **ServiceNet**, the group is accessible only on ServiceNet, like standard Cloud Databases instances.
 
@@ -44,7 +62,8 @@ This article describes how to create and manage HA instance groups by using the 
 
    **Note:** You can specify networks only when you are creating the HA group. You can't enable public network access after the HA group is created.
 
-9.  In the **Advanced Options** section, specify settings for [scheduled backups](/how-to/scheduled-backups-for-cloud-databases/).
+9.  In the **Advanced Options** section, specify settings for [scheduled
+    backups](/how-to/scheduled-backups-for-cloud-databases/).
 
     We recommend that you schedule regular backups by selecting the **Protect your data with Daily Scheduled Backups** check box and then clicking **Specify Scheduled Backup Settings** to specify the schedule. You can enter a day of the week for a full backup and the time of day when that backup and daily incremental backups will occur. Alternatively, you can select **Random** for one or both options, and a random time or day will be selected during creation that will then be used for all subsequent backups.
 
@@ -58,11 +77,11 @@ This article describes how to create and manage HA instance groups by using the 
 
    When all selections are complete, the total cost of the HA group is displayed to the right of the **Create HA Group** button at the bottom of the page.
 
-11. Click **Create HA Group.**
+11. Click **Create HA Group**.
 
 ### View the build status and connections to the new HA group
 
-After you click the **Create HA Group** button, the browser is redirected to the HA Group Details page, which lists important information about the HA instance group.
+After you click the **Create HA Group** button, the browser redirects to the HA Group Details page, which lists the following important information about the HA instance group:
 
 Field | Information
 --- | ---
@@ -88,7 +107,7 @@ When the group has completed building, the **HA Group Status** value changes to 
 
 The hostnames stay the same regardless of failovers and which instance is the master.
 
-The following image shows an example of a completed build.
+The following image shows an example of a completed build:
 
 <img src="{% asset_path cloud-databases/manage-cloud-databases-ha-groups-in-the-control-panel/details-page-with-schedule.png %}" alt="completed instances display running status" />
 
@@ -96,13 +115,20 @@ Farther down the details page, more information about the HA group master instan
 
 ### Modify an HA instance group
 
-1.  While logged in to the [Cloud Control Panel](https://mycloud.rackspace.com), select **MySQL** from the **Databases** menu.
+Use the following steps to modify an HA instance group:
 
-2.  From the list of databases, select one of the HA database instances by clicking its name.
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+
+2. Click the **Select a Product** drop-down menu in the top navigation bar,
+   then select **Rackspace Cloud**.
+
+3. Select **Databases > MySQL**.
+
+4.  From the list of databases, select one of the HA database instances by clicking its name.
 
    **Note:** The gear icon on the list page does not yet provide options for performing backups, resizing, or restarting HA instance groups. This functionality will be added in an upcoming release.
 
-3.  To resize RAM, resize volume, create on-demand backups, or create or modify backup schedules, click the link in the detail list that matches that function.
+5.  To resize RAM, resize volume, create on-demand backups, or create or modify backup schedules, click the link in the detail list that matches that function.
 
    All actions that you perform on the HA group apply to all instances in the group. Resizes occur on all instances. Backups are performed against a replica of the HA group.
 

@@ -5,8 +5,8 @@ title: Create a backup
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date: '2018-07-12'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -30,20 +30,24 @@ image, see [Create an image of a server and restore a server from a saved image]
 
 ### Create a server backup
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Backups > Systems**.
+2.  Click the **Select a Product** drop-down menu in the top navigation
+    bar, then select **Rackspace Cloud**.
 
-3.  On the **Cloud Backup Systems** page, click the name of the server for
+3.  In the top navigation bar, select **Backups > Systems**.
+
+4.  On the **Cloud Backup Systems** page, click the name of the server for
     which you want to create a backup.
 
     **Note:** If you do not see your server listed on this page, you
     must install the backup agent on the server. If you have an account
     with the Managed Operations service level, check with your account
     manager to install the agent. If your account has a different
-    service level, follow the instructions in [How to Install the Agent](/how-to/rackspace-cloud-backup-install-the-agent-on-linux).
+    service level, follow the instructions in [How to Install the
+    Agent](/how-to/rackspace-cloud-backup-install-the-agent-on-linux).
 
-4.  On the **Configure Backup** page, perform the following steps:
+5.  On the **Configure Backup** page, perform the following steps:
 
     -   Enter a name for the backup.
 
@@ -56,10 +60,10 @@ image, see [Create an image of a server and restore a server from a saved image]
 
     -   Click **Next Step**.
 
-5.  On the **Select Items to Backup** page, select the files and folder to
+6.  On the **Select Items to Backup** page, select the files and folder to
     back up, and then click **Next Step**.
 
-6.  Confirm that the backup agent is set up correctly, and then click
+7.  Confirm that the backup agent is set up correctly, and then click
     **Save**.
 
 

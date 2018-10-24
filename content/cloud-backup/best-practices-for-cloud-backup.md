@@ -208,7 +208,7 @@ You can change the most commonly changed log file settings by using the **AgentC
 
 -  Set the maximum number of rollover logs by changing the value in the **Max Rollover Logs** field.
 
--  You can temporarily change the log level by selecting the value in the **Local Log Level** field. The log level is changed every time that the Cloud Backup API sends a configuration change or update to the agent. To keep logging at the appropriate level, also set the log level in the Cloud Control Panel. The advantage of setting the log level locally is that doing so changes the level prior to receiving a configuration change or update, which is useful for things like debugging agent startup.
+-  You can temporarily change the log level by selecting the value in the **Local Log Level** field. The log level is changed every time that the Cloud Backup API sends a configuration change or update to the agent. To keep logging at the appropriate level, also set the log level in the [Cloud Control Panel](http://login.rackspace.com). The advantage of setting the log level locally is that doing so changes the level prior to receiving a configuration change or update, which is useful for things like debugging agent startup.
 
 After you change any of these values, click **Save**.
 

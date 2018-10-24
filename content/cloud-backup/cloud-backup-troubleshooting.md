@@ -5,8 +5,8 @@ title: Cloud Backup troubleshooting
 type: article
 created_date: '2015-06-29'
 created_by: Rackspace Support
-last_modified_date: '2016-07-19'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -113,7 +113,7 @@ This message indicates that the locale is not properly set on the target system,
 
 This message is also common when you use SSH to connect from a Mac OS desktop to a Linux server, and run the `sudo service DriveClient status command`. The Mac OS client does not properly provide the locale information in the SSH session.
 
-If you don't have a Linux computer available for use, you can access the web console for your server via the Cloud Control Panel. When you're in the web console for your server, perform the following actions:
+If you don't have a Linux computer available for use, you can access the web console for your server through the [Cloud Control Panel](http://login.rackspace.com/). When you're in the web console for your server, perform the following actions:
 
 1. Open the **/etc/ssh/sshd_config** file for editing.
 
@@ -145,7 +145,7 @@ When the agent shuts itself down, you see a line, similar to the following line,
 
 `INFO |root|rax::AgentPolicy::TearDown(38)] Tearing down logging...`
 
-You will also see this as a `Disconnected` agent through the **Backups** area of the Cloud Control Panel.
+You also see this as a `Disconnected` agent through the **Backups** area of the Cloud Control Panel.
 
 If the agent cannot communicate with one or more of the following required API endpoints, you can test the communication as indicated:
 
@@ -237,7 +237,7 @@ Following are other errors and problems that you might encounter.
 
 A registered sub-user is authorized for Cloud Backup but not for Cloud Files access. When this user attempts a backup, all requests to Cloud Files return a 403 error. The user attempts to authenticate again, but the new authentication token is the same as the old one.
 
-Account administrators can manage permission levels in the User Management section of the Cloud Control Panel. Submit a request to your account administrator for Full access to your account or Administrative access to Cloud Files for your sub-user account. Cloud Backup does not support Dedicated Users with Cloud access or Federated users.
+Account administrators can manage permission levels in the User Management section of the [Cloud Control Panel](http://login.rackspace.com). Submit a request to your account administrator for **Full** access to your account or **Administrative** access to Cloud Files for your sub-user account. Cloud Backup does not support Dedicated Users with Cloud access or Federated users.
 
 #### Unable to browse a previous backup or browse a backup to select files to restore
 

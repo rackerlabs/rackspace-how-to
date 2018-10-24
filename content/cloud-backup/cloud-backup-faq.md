@@ -153,15 +153,18 @@ See the section on [Retaining your Backup](/how-to/rackspace-cloud-backup-backup
 
 #### How do I configure my Rackspace Cloud Backups?
 
-You set up your backups in the Rackspace Cloud Backup Control Panel.
+You set up your backups in the Rackspace [Cloud Control Panel](http://login.rackspace.com).
 
-If you need to create a new Backup, click the System you want to back up,
-and then the **Create Backup** button. If you already have a Backup and
-want to re-configure it, click the gear icon next to the Backup name and
-select **Configure Backup**. See our page on [Configuring a Backup through Backup Actions](/how-to/rackspace-cloud-backup-backup-actions)
+Select **Rackspace Cloud** from the **Select a Product** drop-down menu, then
+select **Backups**.
+
+If you need to create a new backup, click the System that you want to back up,
+and then click **Create Backup**. If you already have a backup and
+want to re-configure it, click the gear icon next to the backup name and
+select **Configure Backup**. See [Configuring a Backup through Backup Actions](/how-to/rackspace-cloud-backup-backup-actions)
 for more information.
 
-Backups can be set to run hourly, daily, weekly, or on demand
+You can set backups to run hourly, daily, weekly, or on demand
 (manually).
 
 Read more about [Scheduling your Backup](/how-to/rackspace-cloud-backup-backup-actions)
@@ -183,9 +186,9 @@ again, but the new auth token is the same as the old one.
 **Solution**
 
 Account administrators can manage permission levels in the User
-Management section of the Cloud Control Panel. Submit a request to your
-account administrator for **Full** access to your account or
-**Administrative** access to Cloud Files for your sub-user account.
+**Management** section of the [Cloud Control Panel](http://login.rackspace.com).
+Submit a request to your account administrator for **Full** access to your
+account or **Administrative** access to Cloud Files for your sub-user account.
 
 #### What does Rackspace Cloud Backup cost?
 
