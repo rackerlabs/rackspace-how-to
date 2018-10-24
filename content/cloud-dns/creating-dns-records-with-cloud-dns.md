@@ -23,7 +23,7 @@ Use the following steps to add a domain:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  Select **Networking > Cloud DNS**.
 
@@ -46,7 +46,7 @@ Use the following steps to add an A record for your domain:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  Select **Networking > Cloud DNS**.
 
@@ -64,7 +64,7 @@ Use the following steps to add a CNAME record for your domain:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  Select **Networking > Cloud DNS**.
 
@@ -82,7 +82,7 @@ Use the following steps to add an MX record for your domain:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  Select **Networking > Cloud DNS**.
 
@@ -100,7 +100,7 @@ Use the following steps to delete a record from your domain:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  Select **Networking > Cloud DNS**.
 
@@ -115,7 +115,7 @@ Use the following steps to delete a record for a domain:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  Select **Networking > Cloud DNS**.
 
