@@ -31,7 +31,7 @@ Use the following steps to configure connection throttling for your load
 balancer:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3.  Select **Networking > Load Balancers**.
 4.  Click on the gear icon next to the load balancer that you want to
     configure, then select **Edit Connection Throttling** from the menu.
