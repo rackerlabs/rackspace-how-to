@@ -81,12 +81,12 @@ To work in the source region, use the following steps:
     by using the Cloud Control Panel by using the following steps:
 
     1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
-    1. In the top navigation bar, click **Select a Product > Rackspace
+    2. In the top navigation bar, click **Select a Product > Rackspace
        Cloud**.
-    2. Select **Storage > Files**.
-    3. Click **Create Container**.
-    4. Specify a name, the source region, and the container type.
-    5. Click **Create Container**.
+    3. Select **Storage > Files**.
+    4. Click **Create Container**.
+    5. Specify a name, the source region, and the container type.
+    6. Click **Create Container**.
 
 4.  Create a Cloud Images `export` task in the source region. When this
     task is executed, it copies the image in Cloud Images and puts the
