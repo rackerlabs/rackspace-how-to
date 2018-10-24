@@ -5,7 +5,7 @@ title: Reasons to choose Cloud Files
 type: article
 created_date: '2011-03-28'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
@@ -62,6 +62,6 @@ Cloud Files uses a number of different measures to ensure that your data is kept
 
 The API Access Key is only available from within the Rackspace Cloud's control panel. Users must enter their valid Rackspace Cloud account username and password to gain access to view the API Access Key or to generate a new key. For information about how to find your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).
 
-It is important to note that Cloud Files does not apply any transformations to data before storing it. This means that Cloud Files *will not* store data in encrypted form unless the client encrypts it prior to transmission. This enables users to select the type and level of encryption best suited for their application.
+It is important to note that Cloud Files does not apply any transformations to data before storing it. This means that Cloud Files *will not* store data in encrypted form unless the client encrypts it prior to transmission. This enables you to select the type and level of encryption best suited for their application.
 
 When deleting storage Objects from the Cloud Files system, all copies of data are permanently removed within a matter of minutes. Furthermore, the physical blocks making up the customer's data is zeroed over before that space is re-used for other customer data. In other words, after a delete request, the data will be unrecoverable.

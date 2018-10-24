@@ -26,9 +26,8 @@ be affecting the service.
 
 Use the following steps to check your open support tickets:
 
-1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-3. Select **Tickets > Ticket List**.
+1. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+2. Select **Tickets > Ticket List**.
 
 ### Check the Time to Live
 
@@ -40,11 +39,9 @@ update on the CDN.
 
 Use these steps to check the TTL of a container in the Cloud Control Panel:
 
-1. Click **Rackspace Cloud** in the top title bar.
-
-2. In the top navigation bar, select **Storage > Files**.
-
-3. Find the container that you want to check, click the gear icon to the left
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Select **Storage > Files**.
+4. Find the container that you want to check, click the gear icon to the left
    of its name, and then click **Modify Time to Live (TTL)**.
 
     The TTL presents how much time must pass before the CDN checks for new

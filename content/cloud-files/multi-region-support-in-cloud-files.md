@@ -11,16 +11,16 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-Rackspace allows you to choose the data center where you would like to
+Rackspace allows you to choose the data center where you want to
 store your content. You may select our Dallas (DFW), Chicago (ORD),
 North Virginia (IAD), Hong Kong (HKG), or Sydney, Australia (SYD)
-locations through our multi region support. This means you can have your
+locations through our multi-region support. This means that you can have your
 Cloud Servers or Dedicated Servers in one location and your data in
-another. Or, you can keep them in the same data center to reduce latency
-and take advantage of free bandwidth using our internal data center
+another. Alternatively, you can keep them in the same data center to reduce
+latency and take advantage of free bandwidth by using our internal data center
 network, ServiceNet.
 
-Customers who only serve certain geographic regions may also find it
+Customers who only serve certain geographic regions might also find it
 helpful to locate the Cloud Files objects as close to that region as
 possible.
 
@@ -31,16 +31,16 @@ can contact Support and ask them to change your account's default
 region. That may get the tool to use your preferred region for file
 transfers.
 
-You don't need to do anything to set up multi region capabilities for
+You don't need to do anything to set up multi-region capabilities for
 your account. All U.S. accounts have access to multiple regions. If you
 use the Auth 1.1 or 2.0 API, you may choose which endpoint to interact
-with; once you've authenticated against the regional endpoint, your
-Cloud Files operations will only affect that region's content. So, if
-you have content in two locations and you want to make edits, you will
+with. After you authenticate against the regional endpoint, your
+Cloud Files operations only affect that region's content. If
+you have content in two locations and you want to make edits, you
 have to make those edits in both locations.
 
 MyRackspace and [Cloud Control Panel](https://login.rackspace.com/)
-users can also take advantage of the multi region feature. When you
+users can also take advantage of the multi-region feature. When you
 create a container, choose the data center where you would like it. The
 Cloud Control Panel reflects the location of your container.
 
