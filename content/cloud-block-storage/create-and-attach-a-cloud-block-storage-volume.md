@@ -5,8 +5,8 @@ title: Create and attach a Cloud Block Storage volume
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2016-01-22'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -18,7 +18,7 @@ volumes may only be attached to one server at a time, and they retain
 your data, even without being attached to a server.
 
 There are two types of volumes: Standard Performance SATA drive storage
-and High Performance solid state drive (or SSD) storage. Each type is
+and High Performance solid state drive (SSD) storage. Each type is
 charged by the GB of storage you provision, so create volumes of the
 size you need. Volumes can be anywhere from 50 GB (SSD) or 75 GB (SATA)
 to 1 TB, and you can always create larger volumes later.
@@ -26,7 +26,7 @@ to 1 TB, and you can always create larger volumes later.
 ###  Create the volume
 
 Make sure you are logged in to the [Cloud Control
-Panel](https://mycloud.rackspace.com/).
+Panel](https://login.rackspace.com/).
 
 Confirm the name and region of the server you will attach the volume to.
 Volumes can be attached to only servers in the same region.

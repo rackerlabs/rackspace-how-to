@@ -5,7 +5,7 @@ title: Move a Cloud Block Storage volume between servers
 type: article
 created_date: '2014-02-14'
 created_by: Trenton Guthrie
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
@@ -55,7 +55,7 @@ example:
        mdadm: stopped /dev/md0
 
 3. In the [Cloud Control Panel](https://login.rackspace.com), navigate to the
-details page for the server from which you want to detach the Cloud
+Details page for the server from which you want to detach the Cloud
 Block Storage volumes that composed the RAID.
 
 4. In the **Storage Volumes** section of the server details page, click the
