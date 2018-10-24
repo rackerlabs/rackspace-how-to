@@ -17,7 +17,7 @@ are correct or troubleshoot issues with accessing a service.
 
 If you're a [Cloud DNS](https://www.rackspace.com/cloud/dns) user, you can
 view your DNS records through the [Cloud Control
-Panel](http://login.rackspace.com/). In addition, Microsoft&reg; Windows&reg;
+Panel](https://login.rackspace.com/). In addition, Microsoft&reg; Windows&reg;
 offers `nslookup`, a built-in tool for checking your DNS records from the
 command line.
 

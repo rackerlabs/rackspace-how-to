@@ -47,20 +47,19 @@ domain name (for example, 1.2.3.4. to example.com) in the Cloud Control Panel.
 
 Perform the following steps the create a reverse DNS record in the Cloud Control Panel:
 
-1.  Log in to the [Cloud Control Panel](http://login.rackspace.com/).
-2.  Click the **Select a Product** drop-down menu in the top navigation bar,
-    then select **Rackspace Cloud**.
-2.  Select **Servers**, then click the link for your Cloud Server from your
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+3.  Select **Servers**, then click the link for your Cloud Server from your
     Servers List.
-3.  On the **Server Details** screen, click **Add Record** next to the
+4.  On the **Server Details** screen, click **Add Record** next to the
     Reverse DNS.
 
-4.  In the Add Record pop-up window:
+5.  In the Add Record pop-up window:
     -   Enter your domain name (for example **mail.example.com**) in the
         **Hostname** field.
     -   Set the Time to Live (TTL) for the record.
     -   Click **Save Record**.
 
-5.  Back at the Server Details screen, one record now displays
+6.  Back at the Server Details screen, one record now displays
     next to Reverse DNS. Click this link to display the details for the
     reverse DNS that you just added.

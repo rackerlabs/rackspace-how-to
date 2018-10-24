@@ -14,7 +14,7 @@ product_url: cloud-dns
 DNS uses different record types for different purposes. This
 article helps you determine which record type you should use when
 creating a DNS record in the [Cloud Control
-Panel](http://login.rackspace.com/).
+Panel](https://login.rackspace.com/).
 
 #### A/AAAA
 

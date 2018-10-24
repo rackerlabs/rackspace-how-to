@@ -91,10 +91,9 @@ steps:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  Click the **Select a Product** drop-down menu in the top navigation bar,
-    then select **Rackspace Cloud**.
+2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
 
-3.  In the top navigation bar, select **Networking > Cloud DNS**.
+3.  Select **Networking > Cloud DNS**.
 
 4.  Click the action gear next to the name of the domain that you want
     to modify, and select **Add DNS Record**.

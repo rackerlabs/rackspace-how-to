@@ -15,7 +15,7 @@ This article shows you how to add [Google Apps](http://www.google.com/enterprise
 
 **Important:** Be sure to verify your domain with Google Apps through their administrative interface.
 
-After your domain has been verified, the next step is to add Google's MX records to the domain's information in the Domain Name Service (**DNS**)
+After your domain has been verified, the next step is to add Google's MX records to the domain's information in the Domain Name Service (DNS)
 section of the [Cloud Control Panel](https://login.rackspace.com/).
 
 Google Apps provides five MX records to be added to the domain DNS
@@ -27,10 +27,9 @@ Use the following steps to add MX records to a domain:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
 
-3. In the top navigation bar, select **Networking > Cloud DNS**.
+3. Select **Networking > Cloud DNS**.
 
 4. Click the gear icon next to your domain and select **Add DNS Record**.
 
