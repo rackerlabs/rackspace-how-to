@@ -38,10 +38,9 @@ Follow these steps for creating a read replica for your database instance using 
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
 
-3. In the top navigation bar, click the **Databases** menu and then select **MySQL**.
+3. Click the **Databases** menu and then select **MySQL**.
 
 4. On the instance list page, click the plus sign (+) in the **Replicas** column for the database instance that you want to replicate, as shown in the following image:
 

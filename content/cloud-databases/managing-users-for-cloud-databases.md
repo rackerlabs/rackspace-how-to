@@ -17,7 +17,7 @@ Databases that you can perform.
 ### Create users with host parameters
 
 You can create a user in the Cloud Databases section of the [Cloud
-Control Panel](http://login.rackspace.com/) by clicking on an existing
+Control Panel](https://login.rackspace.com/) by clicking on an existing
 instance name, and then clicking **Create User**in the **Users** section of
 the Instance Details page.
 
