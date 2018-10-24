@@ -40,7 +40,7 @@ Panel.
 
 1.  Log in to the Rackspace [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  In the upper-right corner of the panel, click on your username and select
     **Usage Overview**.

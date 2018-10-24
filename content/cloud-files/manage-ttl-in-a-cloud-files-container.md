@@ -31,7 +31,7 @@ Use the following steps to modify a container's TTL within the Cloud
 Control Panel:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3.  Select **Storage > Files**.
 4.  If the container isn't already public, click the gear icon next to
     the container and select **Make Public (Enable CDN)**. In the popup

@@ -50,7 +50,7 @@ For example, a user could upload a photo to a container called **images**. When 
 Use the following steps to create a container and make it public:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3.  Select **Storage > Files**.
 4.  Click **Create Container**.
 5.  Specify a name for the container, and then click **Create Container**.

@@ -25,7 +25,7 @@ For these tutorials, you need to have a CDN-enabled container in
 your Cloud Files account:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Storage > Files**.
 4. Click the action gear next to the container that you want to CDN-enable.
 5. Select **Make Public (Enable CDN)** from the menu.
