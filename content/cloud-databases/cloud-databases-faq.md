@@ -415,7 +415,7 @@ and [Export Data from MySQL](/how-to/exporting-data-from-mysql).
 
 Yes. Configuration settings for Cloud Databases instances can be stored
 and applied by using the [Cloud Control
-Panel](https://mycloud.rackspace.com/) and the [Cloud Databases
+Panel](https://login.rackspace.com/) and the [Cloud Databases
 API](https://developer.rackspace.com/docs/cloud-databases/v1/).
 You can save your settings in configuration groups, and then apply each
 configuration group to multiple instances. You can maintain multiple
