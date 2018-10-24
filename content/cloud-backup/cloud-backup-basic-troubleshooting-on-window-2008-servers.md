@@ -33,9 +33,8 @@ causing the lack of accessibility of the server.
 
 Use the following steps to check your open support ticket:
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com)
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com)
+2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
 3. Select **Tickets > Ticket List**.
 
 If there is no open support ticket about the server in question, attempt to
@@ -43,9 +42,8 @@ establish a connection, as shown in the next section.
 
 ## Establish connection
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
 3. Select **Backups > Systems**.
 4. From the list of Cloud Backup systems, click the backup server name.
    This action displays the following details about the backup system:
@@ -92,7 +90,7 @@ establish a connection, as shown in the next section.
 
 10. Click **OK** at the bottom of the page.
 
-11. After the service restarts, go to the [Cloud Control Panel](http://login.rackspace.com) again to check the backup status.
+11. After the service restarts, go to the [Cloud Control Panel](https://login.rackspace.com) again to check the backup status.
 
     - If the status is **connected**, try to run the backup again, and if it fails, contact
       Rackspace Support.
