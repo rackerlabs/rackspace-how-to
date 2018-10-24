@@ -209,12 +209,14 @@ Databases instance. Do not add other nodes to the load balancer.
 Use the following steps to copy the instance hostname:
 
 1.  Log in to the [Cloud Control Panel](http://login.rackspace.com/).
-2.  In the top navigation bar, select **Databases > MySQL**.
-3.  Click the name of the instance that you want to connect to the load
+2.  Click the **Select a Product** drop-down menu in the top navigation bar,
+    then select **Rackspace Cloud**.
+3.  In the top navigation bar, select **Databases > MySQL**.
+4.  Click the name of the instance that you want to connect to the load
     balancer and view the details for the instance.
-4.  Note the region that this database is in. You must create the load
+5.  Note the region that this database is in. You must create the load
     balancer in the same region.
-5.  Copy the hostname string.
+6.  Copy the hostname string.
 
 #### Create a load balancer for the instance
 
