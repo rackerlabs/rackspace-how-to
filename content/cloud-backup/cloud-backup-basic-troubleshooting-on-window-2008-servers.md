@@ -14,7 +14,7 @@ This article is to assist you if you are experiencing Cloud Backup issues that
 are caused by the backup agent being disconnected on the Linux&reg; instance including
 the following items:
 
-* Backups are not running.
+* Backups aren't running.
 * Backups take too long to complete.
 * Cloud Backup uses all of the server’s resources.
 
@@ -33,7 +33,7 @@ causing the lack of accessibility of the server.
 
 Use the following steps to check your open support ticket:
 
-1. Log in to the [Cloud Control Panel](https://login.rackspace.com)
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Tickets > Ticket List**.
 
