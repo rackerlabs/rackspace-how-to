@@ -5,7 +5,7 @@ title: Connect to a Cloud Databases instance
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -71,7 +71,7 @@ Copy the following PHP script and paste it into a text editor:
         //
         // Get "e"
         //
-        $arg_expr = trim($_POST["e"]);
+        $arg_expr = trim($\_POST["e"]);
         if($arg_expr == "") {
             $arg_expr = "PI()";
         }

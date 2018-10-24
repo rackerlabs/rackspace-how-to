@@ -5,7 +5,7 @@ title: Prepare your Cloud Block Storage volume
 type: article
 created_date: '2012-10-21'
 created_by: David Hendler
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
@@ -243,7 +243,7 @@ the volume to the static file system:
 
     /dev/xvdb1 /mnt/cbsvolume1 ext3 defaults,noatime,_netdev,nofail 0 2
 
-Now the volume persists on the server after the erver restarts.
+Now the volume persists on the server after the server restarts.
 
 
 

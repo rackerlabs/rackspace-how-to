@@ -5,7 +5,7 @@ title: Attaching versus mounting in Cloud Block Storage
 type: article
 created_date: '2012-10-22'
 created_by: David Hendler
-last_modified_date: '2016-10-23'
+last_modified_date: '2016-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
@@ -28,5 +28,5 @@ process in which a user instructs the operating system how to logically
 map the directory structure to a physical storage device. You can only
 mount a volume through the computer's operating system.
 
-For more information on how to mount your volume, see [Prepare your
+For more information about how to mount your volume, see [Prepare your
 volume](/how-to/prepare-your-cloud-block-storage-volume).
