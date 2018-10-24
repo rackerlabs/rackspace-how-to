@@ -7,8 +7,6 @@ created_date: '2011-03-16'
 created_by: Rackspace Support
 last_modified_date: '2016-06-24'
 last_modified_by: Cat Lookabaugh
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 This article shows how to create a certificate signing request (CSR) for an SSL
