@@ -5,8 +5,8 @@ title: Back up data with Cloud Files
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-04-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -14,8 +14,8 @@ product_url: cloud-files
 Follow the steps in this article to set up your own data backup to your Cloud
 Files service.
 
-**Note:** If you would like for us to provide Cloud Backup as a service,
-see <http://www.rackspace.com/cloud/backup> for information.
+**Note:** For information about Cloud Backup as a service,
+see <http://www.rackspace.com/cloud/backup>.
 
 ### Prepare to back up
 
@@ -36,10 +36,11 @@ steps to prepare your data:
 
 ### Back up your data
 
+Use the following steps to back up your data:
+
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
 
 3.  At the top of the window, click **Storage > Files**.
 

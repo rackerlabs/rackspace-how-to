@@ -20,7 +20,7 @@ Because Rackspace uses HTTP delivery for streaming content, you can use
 the Akamai CDN network to deliver your content. This means that the
 performance should be identical to CDN speeds customers are used to.
 Before you begin, you must CDN-enable the container that holds your
-streaming content. In the [Cloud Control Panel](http://login.rackspace.com/),
+streaming content. In the [Cloud Control Panel](https://login.rackspace.com/),
 click the gear icon of the container, and select **Make Public (Enable CDN)**.
 
 After your container is CDN-enabled, you need its streaming URLs. In

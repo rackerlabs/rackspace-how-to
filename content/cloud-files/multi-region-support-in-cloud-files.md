@@ -39,7 +39,7 @@ Cloud Files operations will only affect that region's content. So, if
 you have content in two locations and you want to make edits, you will
 have to make those edits in both locations.
 
-MyRackspace and [Cloud Control Panel](http://login.rackspace.com/)
+MyRackspace and [Cloud Control Panel](https://login.rackspace.com/)
 users can also take advantage of the multi region feature. When you
 create a container, choose the data center where you would like it. The
 Cloud Control Panel reflects the location of your container.

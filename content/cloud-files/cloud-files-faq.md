@@ -5,7 +5,7 @@ title: Cloud Files - FAQs
 type: article
 created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
@@ -52,7 +52,7 @@ illegal characters and name length limits) include:
 
 First you must make sure you have generated a valid API Access Key. Then
 you can use either the Cloud Files user interface in the Rackspace [Cloud
-Control Panel](http://login.rackspace.com/) or one of our programming
+Control Panel](https://login.rackspace.com/) or one of our programming
 interfaces.
 
 See [Cloud Files and CDN](https://support.rackspace.com/how-to/getting-started-with-cloud-files-and-cdn/) for more details.

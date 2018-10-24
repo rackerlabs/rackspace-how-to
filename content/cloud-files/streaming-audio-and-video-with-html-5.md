@@ -5,7 +5,7 @@ title: Stream Audio and Video with HTML 5
 type: article
 created_date: '2013-02-01'
 created_by: David Hendler
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
@@ -25,9 +25,8 @@ For these tutorials, you need to have a CDN-enabled container in
 your Cloud Files account:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
-3. In the top navigation bar, select **Storage > Files**.
+2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+3. Select **Storage > Files**.
 4. Click the action gear next to the container that you want to CDN-enable.
 5. Select **Make Public (Enable CDN)** from the menu.
 6. On the confirmation window, click **Publish to CDN**.

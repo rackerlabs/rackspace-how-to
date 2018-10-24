@@ -51,7 +51,7 @@ F4F/F4M  | H.264 <br /> VP6  | AAC <br /> MP3 |  None
 1. Go to the [Akamai FlowPlayer](http://mediapm.edgesuite.net/flow/ "http://flowplayer.org") and download the free version of FlowPlayer.
 2. Save the zip file to your desktop.
 3. Extract the zip file to your desktop.
-4. Upload the following files to Cloud Files by using the [Cloud Control Panel](http://login.rackspace.com/):
+4. Upload the following files to Cloud Files by using the [Cloud Control Panel](https://login.rackspace.com/):
   -   **flowplayer-*version*.swf**
   -   **flowplayer-*version*.min.js**
   -   **flowplayer.controls-*version*.swf**
@@ -82,4 +82,4 @@ Create a simple XHTML file that calls Flowplayer and embeds it onto the page. Us
 
 Save this XHTML file and run it from your local machine.
 
-If it is working correctly, the Flash video loads quickly and streams. If not, check your code. If you are still having problems after that, call our Support team or submit a ticket through the [Cloud Control Panel](http://login.rackspace.com/).
+If it is working correctly, the Flash video loads quickly and streams. If not, check your code. If you are still having problems after that, call our Support team or submit a ticket through the [Cloud Control Panel](https://login.rackspace.com/).

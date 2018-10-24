@@ -5,7 +5,7 @@ title: Protect Your Cloud Files CDN Bill from Unexpected Usage
 type: article
 created_date: '2012-09-14'
 created_by: David Hendler
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
@@ -38,10 +38,9 @@ source code
 One way to monitor your current CDN usage is through the Cloud Control
 Panel.
 
-1.  Log in to the Rackspace [Cloud Control Panel](http://login.rackspace.com/).
+1.  Log in to the Rackspace [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
 
 3.  In the upper-right corner of the panel, click on your username and select
     **Usage Overview**.
@@ -61,7 +60,7 @@ logs. Every CDN customer can turn on CDN logs for their containers that
 are CDN enabled. If you find that your content has been hot linked, you
 can use your CDN logs to find which URLs are compromised and take action
 immediately. You can also enable these logs via the Cloud Files API or
-from they [Cloud Control Panel](http://login.rackspace.com/) by
+from the [Cloud Control Panel](https://login.rackspace.com/) by
 performing the following steps:
 
 1. In the top navigation bar, click **Storage > Files**.

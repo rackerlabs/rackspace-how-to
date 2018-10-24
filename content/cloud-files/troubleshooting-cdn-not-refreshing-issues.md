@@ -4,7 +4,7 @@ audit_date: '2018-09-25'
 title: Troubleshooting the Cloud Files CDN when files are not refreshing
 created_date: '2018-09-11'
 created_by: Shaun Crumpler
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
@@ -27,9 +27,8 @@ be affecting the service.
 Use the following steps to check your open support tickets:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
-3. In the top navigation bar, select **Tickets > Ticket List**.
+2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+3. Select **Tickets > Ticket List**.
 
 ### Check the Time to Live
 

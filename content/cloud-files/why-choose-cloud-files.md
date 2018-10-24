@@ -26,7 +26,7 @@ Files.
 
 ### Simplicity
 
-Cloud Files is simple to use for developers and non-developers alike. You can get started in as little as five minutes. You don't have to know how to code to use Cloud Files or a CDN. Within minutes, you can sign up for Cloud Files, create a container, upload a file, and publish that container's content through the CDN. The Cloud Files GUI is easy to navigate and use. The Rackspace browser-based [Cloud Control Panel](http://login.rackspace.com/) enables you to easily upload files and distribute them on a CDN without writing any code.
+Cloud Files is simple to use for developers and non-developers alike. You can get started in as little as five minutes. You don't have to know how to code to use Cloud Files or a CDN. Within minutes, you can sign up for Cloud Files, create a container, upload a file, and publish that container's content through the CDN. The Cloud Files GUI is easy to navigate and use. The Rackspace browser-based [Cloud Control Panel](https://login.rackspace.com/) enables you to easily upload files and distribute them on a CDN without writing any code.
 
 All of the content can be backed by a CDN without complex negotiations and details of updating content for optimizing delivery. Given the complexity of the CDN, you might have to make a series of choices, such as the number of servers to use before obtaining the service. After making the choices, you must ensure that the usage bills are accurate. All these issues are handled by Cloud Files. CDNs have, in the past, been the prerogative of companies with more money, but Cloud Files has changed that. For more information, see [How do I use Cloud Files and CDN?](/how-to/getting-started-with-cloud-files-and-cdn).
 

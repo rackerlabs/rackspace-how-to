@@ -65,7 +65,7 @@ You need to have a WordPress website and database.
 
 5. Create a new Cloud Files container by entering a unique name that you will remember.
 
-   This name is primarily used to help you quickly identify the container in the Rackspace [Cloud Control Panel](http://login.rackspace.com/).
+   This name is primarily used to help you quickly identify the container in the Rackspace [Cloud Control Panel](https://login.rackspace.com/).
 
 6. Click **Apply** to save and apply your settings.
 
