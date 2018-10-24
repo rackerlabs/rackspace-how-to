@@ -80,6 +80,7 @@ To work in the source region, use the following steps:
     image in. If you don't already have one, you can create a container
     by using the Cloud Control Panel by using the following steps:
 
+    1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
     1. In the top navigation bar, click **Select a Product > Rackspace
        Cloud**.
     2. Select **Storage > Files**.
