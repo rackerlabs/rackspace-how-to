@@ -155,7 +155,7 @@ See the section on [Retaining your Backup](/how-to/rackspace-cloud-backup-backup
 
 You set up your backups in the Rackspace [Cloud Control Panel](https://login.rackspace.com).
 
-In the top navigation bar, select **Select a Product > Rackspace Cloud**, then
+In the top navigation bar, click **Select a Product > Rackspace Cloud**, then
 select **Backups**.
 
 If you need to create a new backup, click the System that you want to back up,

@@ -47,7 +47,7 @@ you should *never* compress or encrypt the database files you are backing up.
 1.  Remove the live database folder and files from your backup job.
 
     1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
-    2.  In the top navigation bar, select **Select a Product > Rackspace
+    2.  In the top navigation bar, click **Select a Product > Rackspace
         Cloud**.
     3.  Select **Backups > Systems**.
     4.  Select your system from the List.

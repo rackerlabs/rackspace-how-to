@@ -20,7 +20,7 @@ This article describes the actions that are available in the Backups section of 
 Use the following steps to navigate to this area:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Backups > Systems**.
 
 You can access the **Actions** menu from the gear widget next to the server name in the system list or from the **Actions** button on the **System details** page. This menu is not the one that appears on the **Single Backup** page.

@@ -20,7 +20,7 @@ This article describes how to confirm your backup settings, ensure that a cleanu
 Use the following steps to view information for a single backup:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Backups > Backups**.
 
 A list of all of the backup processes that you currently have on your account

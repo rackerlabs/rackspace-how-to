@@ -294,7 +294,7 @@ from Window's agent version 1.18 or lower. You can check your agent
 version by using the following steps:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Backups**.
 4. Select your backup system.
 
