@@ -5,7 +5,7 @@ title: Create a reverse DNS record
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
@@ -13,7 +13,7 @@ product_url: cloud-dns
 
 Reverse Domain Name Service (DNS) records are essential for those running a
 mail server because many recipient servers reject, or mark as spam, all email
-that originates from an "unauthenticated" server.
+that originates from an unauthenticated server.
 
 This means that after the sending IP address is checked, if the reverse
 DNS does not match the sending domain, then it is classed as
@@ -35,8 +35,8 @@ When you enter a domain name into your browser, the DNS system finds
 the IP address of the server the domain is associated with.
 
 A reverse DNS lookup does the opposite. It establishes what domain is
-associated with the IP address. This is a useful setting to configure, and
-essential for customers who run an outgoing mail server on their
+associated with the IP address. This is a useful setting to configure and
+is essential for customers who run an outgoing mail server on their
 Cloud Server.
 
 This article shows you how to add a reverse DNS record (also known

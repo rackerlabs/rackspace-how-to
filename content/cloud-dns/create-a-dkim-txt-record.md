@@ -57,7 +57,7 @@ selector and generate a public-private key pair.
 
 6.  In the Hostname box, enter the selector text string followed by the
     literal string `._domainkey`. For example, if you use default as the text
-    string, you would enter `default._domainkey` in the **Hostname** text box.
+    string, you enter `default._domainkey` in the **Hostname** text box.
 
 7.  Expand the **Text** box by dragging the corner, and then enter the
     following information, pasting your public key after **`p=`**:
@@ -73,7 +73,7 @@ selector and generate a public-private key pair.
 
 The DKIM TXT record is added to your domain.
 
-For instructions on attaching the token to your outgoing email, see the
+For instructions about attaching the token to your outgoing email, see the
 "Specification" section at [DKIMcore.org](http://dkimcore.org/).
 
 ### Related articles

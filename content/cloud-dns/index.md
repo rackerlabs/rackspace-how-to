@@ -3,16 +3,21 @@ title: Cloud DNS
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 permalink: /cloud-dns/
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-The Domain Name System (DNS) is essentially the phonebook for the Internet. It manages the relationships between IP addresses (the phone numbers), and domains (individuals and corporations). All domains and their components, such as mail servers, use DNS to resolve to the appropriate locations.
+The Domain Name System (DNS) is essentially the phonebook for the Internet. It
+manages the relationships between IP addresses (the phone numbers) and domains
+(individuals and corporations). All domains and their components, such as mail
+servers, use DNS to resolve to the appropriate locations.
 
-For Cloud DNS, we have made available a public ReST API to interact with our DNS infrastructure programmatically. This significantly helps you automate and simplify your domain management.
+For Cloud DNS, we have made available a public ReST API to interact with our
+DNS infrastructure programmatically. This significantly helps you automate and
+simplify your domain management.
 
 ### Introduction to Cloud DNS
 
