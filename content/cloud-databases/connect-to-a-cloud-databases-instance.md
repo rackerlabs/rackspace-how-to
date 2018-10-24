@@ -18,7 +18,7 @@ Use the following steps to connect through a cloud server by using Secure
 Shell (SSH) and the hostname:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3.  Select **Databases > MySQL**.
 4.  Click the name of the instance to which you want to connect.
 5.  Copy the hostname string.
@@ -124,7 +124,7 @@ Copy the following PHP script and paste it into a text editor:
 Use the following steps to copy the instance hostname:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 2.  Select **Databases > MySQL**.
 3.  Click the name for the instance to which you want to connect and
     view the details for the instance.
@@ -207,7 +207,7 @@ Databases instance. Do not add other nodes to the load balancer.
 Use the following steps to copy the instance hostname:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2.  In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3.  Select **Databases > MySQL**.
 4.  Click the name of the instance that you want to connect to the load
     balancer and view the details for the instance.

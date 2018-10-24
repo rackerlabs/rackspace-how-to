@@ -67,7 +67,7 @@ Use the following steps to create a backup schedule on an existing instance:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3. Select **Databases > MySQL**.
 
@@ -93,7 +93,7 @@ creation is only available on HA groups.
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3. Select **Databases > MySQL**.
 
@@ -116,7 +116,7 @@ Use the following steps to view and modify a scheduled backup:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3. Select **Databases > MySQL**.
 
@@ -134,7 +134,7 @@ Use the following steps to delete a scheduled backup:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. In the top navigation bar, select **Select a Product > Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3. Select **Databases > MySQL**.
 
