@@ -7,8 +7,6 @@ created_date: '2014-02-13'
 created_by: Justin Bryant
 last_modified_date: '2016-03-11'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 This article shows how to install SSL certificates on Windows 2008 R2 and 2012 servers.
