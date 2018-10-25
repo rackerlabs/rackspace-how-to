@@ -5,8 +5,8 @@ title: 'Role-Based Access Control (RBAC) FAQ'
 type: article
 created_date: '2013-04-12'
 created_by: Renee Rendon
-last_modified_date: '2018-02-13'
-last_modified_by: Kate Dougherty  
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon  
 product: undefined
 product_url: undefined
 ---
@@ -33,7 +33,7 @@ Yes, you can. For instructions, see [Use Role-Based Access Control
 
 #### How do I query the capability of a given user?
 
-You can query the roles for a given user by using the [List global roles assigned to a user](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/role-operations/#list-global-roles-assigned-to-a-user) API operation described in the _Rackspace Cloud Identity API Guide_. Additionally, you can view the roles that a user has through the [Cloud Control Panel](http://mycloud.rackspace.com).
+You can query the roles for a given user by using the [List global roles assigned to a user](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/role-operations/#list-global-roles-assigned-to-a-user) API operation described in the *Rackspace Cloud Identity API Guide*. Additionally, you can view the roles that a user has through the [Cloud Control Panel](http://login.rackspace.com).
 
 #### Can I view multiple accounts in the Cloud Control Panel?
 
@@ -99,7 +99,7 @@ the future, see [Learn about Role Based Access Control (RBAC)](/how-to/overview-
 
 For information about changing your admin credentials, see [Use Role-Based Access Control (RBAC)](/how-to/managing-role-based-access-control-rbac).
 
-For access to the Cloud Control Panel, log in at [https://mycloud.rackspace.com/](https://mycloud.rackspace.com/).
+For access to the Cloud Control Panel, log in at [https://login.rackspace.com/](https://login.rackspace.com/).
 
 #### Additional resources
 
