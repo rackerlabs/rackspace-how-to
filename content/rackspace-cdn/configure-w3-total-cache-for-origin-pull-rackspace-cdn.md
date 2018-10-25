@@ -49,7 +49,7 @@ A WordPress website and database
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-3. In the top navigation bar, click **Networking > CDN**.
+3. Click **Networking > CDN**.
 4. On the Content Delivery Network (CDN) page, click **Create Service** and complete the following information:
 
    - **Service Name**: Specify a name that helps you identify this site.
