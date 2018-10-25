@@ -5,7 +5,7 @@ title: Attach a Cloud Block Storage volume to a Windows OnMetal server
 type: article
 created_date: '2017-07-25'
 created_by: Aaron Davis
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

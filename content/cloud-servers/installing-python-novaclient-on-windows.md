@@ -5,7 +5,7 @@ title: Install python-novaclient on Windows
 type: article
 created_date: '2012-07-23'
 created_by: Jered Heeschen
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -66,11 +66,11 @@ of python-novaclient and the Rackspace extensions:
     pip install rackspace-novaclient python-novaclient==3.3.0
 
 The "rackspace-novaclient" is a metapackage that causes pip to install the client and all
-Rackspace extensions for the client.  If you have any problems with the metapackage,
+Rackspace extensions for the client. If you have any problems with the metapackage,
 use pip to install the "python-novaclient" and "rackspace-auth-openstack" packages
 individually.
 
-When the installs finish, close the command window.
+When the installations finish, close the command window.
 
 ### Install with other python distributions
 
@@ -80,7 +80,7 @@ can install the [python setuptools package from pypi](http://pypi.python.org/pyp
 
     easy_install pip
 
-Then, follow the install instructions in the preceding section.
+Then, follow the installation instructions in the preceding section.
 
 ### Environment variables
 
@@ -108,7 +108,7 @@ need to be able to use the nova client).
 Now set your environment variables. In the **User variables for Administrator** section,
 click an environment variable and then click **New**.
 
-Each variable set will require the following names and values.
+Each variable set requires the following names and values.
 
 <table cellpadding="4" cellspacing="0" summary="" id="reference_1bw_3xy_cg__properties_1bm_kxy_cg" border="1" class="simpletable properties"><tr class="sthead prophead">
 <th valign="bottom" align="left" id="d26e245" class="stentry proptypehd">Variable name</th>
@@ -154,9 +154,9 @@ Each variable set will require the following names and values.
 </tr>
 </table>
 
-After you've set all seven environment variables, "OK" your way out of those windows.  Note
-that any command windows you already have open won't reflect the changes to your environment
-variables.
+After you've set all seven environment variables, "OK" your way back out of those
+windows.  Note that any command windows you already have open won't reflect the
+changes to your environment variables.
 
 ### Test the client
 
@@ -169,7 +169,8 @@ To see if you can talk to the API server, run the following command at the comma
 
     nova image-list
 
-If all is well, the system provides a list of the images available to you for creating a server.
+If the command is successful, the system provides a list of the images available
+to you for creating a server.
 
 ### View the command list
 

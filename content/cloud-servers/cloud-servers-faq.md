@@ -5,7 +5,7 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2018-07-16'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

@@ -5,7 +5,7 @@ title: Introducing the Rackspace Cloud Control Panel
 type: article
 created_date: '2012-03-27'
 created_by: Rackspace Support
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

@@ -5,7 +5,7 @@ title: Scheduled Images FAQ
 type: article
 created_date: '2013-05-22'
 created_by: Brian Rosmaita
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

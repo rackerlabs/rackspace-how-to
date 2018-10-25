@@ -5,7 +5,7 @@ title: Transfer your DNS hosting to Rackspace
 type: article
 created_date: '2011-11-16'
 created_by: Rae D. Cabello
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

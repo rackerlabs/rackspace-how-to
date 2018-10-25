@@ -5,7 +5,7 @@ title: Reboot a Server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

@@ -5,7 +5,7 @@ title: Install python-novaclient on Linux and Mac OS
 type: article
 created_date: '2012-07-23'
 created_by: Jered Heeschen
-last_modified_date: '2016-01-04'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

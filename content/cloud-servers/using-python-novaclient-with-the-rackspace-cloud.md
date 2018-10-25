@@ -1,11 +1,11 @@
 ---
 permalink: using-python-novaclient-with-the-rackspace-cloud/
-audit_date: '2018-10-24'
+audit_date: '2018-10-25'
 title: Using the python-novaclient with Rackspace Cloud Servers
 type: article
 created_date: '2012-07-23'
 created_by: Jered Heeschen
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers

@@ -5,7 +5,7 @@ title: Migrate a First Gen server to a Next Gen server with minimal downtime
 type: article
 created_date: '2015-08-10'
 created_by: Rackspace Support
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -22,7 +22,7 @@ Servers (DNS) with Rackspace. However, if you host DNS elsewhere, you need to
 perform the steps in the [Repoint your DNS to the load balancer](#repoint-your-dns-to-the-load-balancer)
 section of this article by using the DNS portal where the DNS is hosted.
 
-### Create a Cloud Load Balancer
+### Create a load balancer
 
 The load balancer makes a seamless migration from First Gen server to a Next Gen
 server possible. Use it to update your DNS entries by having your stale DNS
@@ -83,8 +83,9 @@ Next Gen server from the image, you can choose any flavor that allows you to
 boot the server from a volume, as described in the
 [Boot a server from a Cloud Block Storage volume](/how-to/boot-a-server-from-a-cloud-block-storage-volume) article.
 
-1. On the **Cloud Servers** page of the Cloud Control Panel, click the gear
-icon next to the First Gen server that you are imaging and select **Create Image**.
+1. On the **Cloud Servers** page of the [Cloud Control Panel](https://login.rackspace.com),
+click the gear icon next to the First Gen server that you are imaging and select
+**Create Image**.
 
 2. In the pop-up dialog box, enter a name for the image in the **Saved Image Name** field.
 
@@ -96,7 +97,7 @@ icon next to the First Gen server that you are imaging and select **Create Image
 
 Use the following steps to create a Next Gen server from the First Gen server image.
 
-1. In the top navigation bar of the [Cloud Control Panel](https://mycloud.rackspace.com),
+1. In the top navigation bar of the [Cloud Control Panel](https://login.rackspace.com),
 select **Servers > Saved Images**.
 
 2. Click the gear icon next to the image you created in the previous section

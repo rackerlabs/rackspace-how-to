@@ -5,8 +5,8 @@ title: Multi-factor authentication from the Cloud Control Panel
 type: article
 created_date: '2014-07-17'
 created_by: Margaret Eker
-last_modified_date: '2017-04-17'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
