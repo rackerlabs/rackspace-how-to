@@ -166,7 +166,7 @@ Use the following steps to install Tomcat on the Cloud Server:
         sleep 10
         start
         ;;
-        \*)
+        *)
         echo "Usage: $0 {start|stop|restart}"
         esac
         exit 0
