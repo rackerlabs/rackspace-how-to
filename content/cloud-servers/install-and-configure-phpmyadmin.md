@@ -143,3 +143,11 @@ There are two configuration files that you must edit in phpMyAdmin:
 
 - **/etc/httpd/conf.d/phpMyAdmin.conf**: A virtual host pointing toward the phpMyAdmin application **/usr/share/phpMyAdmin**.
 - **/etc/phpMyAdmin/config.inc.php**: A phpMyAdmin configuration file that points toward the host and the database port.
+
+For the **httpd** configuration file, you primarily need to look at the top art of the file, which contains the instructions for what needs to be edited.
+
+Run the following command to output the top few lines of the configuration file:
+
+    head -7 /etc/httpd/conf.d/phpMyAdmin.conf
+
+The following output provides an example of what the command returns:
