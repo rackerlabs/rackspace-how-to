@@ -60,8 +60,8 @@ Panel](https://login.rackspace.com/) as follows:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-3. In the top navigation bar, click **Servers > Cloud Servers**.
-4. Click on a server from the list.
+3. Click **Servers > Cloud Servers**.
+4. Click the name of the server for which you want to view the details.
 
    On the **Server Details** page, the **Networks and Security Groups** section
    lists the public addresses.
