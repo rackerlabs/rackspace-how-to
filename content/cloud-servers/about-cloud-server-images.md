@@ -5,8 +5,8 @@ title: About Cloud Server images
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-06-10'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -14,7 +14,8 @@ product_url: cloud-servers
 Creating an image enables you to have saved images for later use as a
 template or master image. You can then use the saved images to easily
 restore a server to a known configuration or rapidly deploy additional
-servers with an identical configuration. Using the [Cloud Control Panel](http://mycloud.rackspace.com), you can create images on-demand.
+servers with an identical configuration. Using the
+[Cloud Control Panel](https://login.rackspace.com), you can create images on-demand.
 
 **Note:** Because images are not automatically verified they should not
 be used as a back-up solution.
@@ -28,13 +29,17 @@ images:
     data but **are not a reliable way to back up a
     dynamic database.**
 
-    Standard backup tools such as `mysqldump` or the SQL Server Management Studio are more suitable for backing up databases. Be sure to always back up your database before you create an image of your
-    Cloud Server.
+    Standard backup tools such as `mysqldump` or the SQL Server Management
+    Studio are more suitable for backing up databases. Be sure to always back up
+    your database before you create an image of your Cloud Server.
 
 -   **Cloud Server images cannot be transferred between accounts**.
-    You can, however, share images between accounts **in the same region**. This allows you to build a server from the shared image, and then create a copy of the newly created server.
+    You can, however, share images between accounts **in the same region**. This
+    allows you to build a server from the shared image, and then create a copy
+    of the newly created server.
 
--   Image creation can take several hours if the disk is extremely large, so be sure to allot an appropriate amount of time to create an image of your server.
+-   Image creation can take several hours if the disk is extremely large, so be
+    sure to allot an appropriate amount of time to create an image of your server.
 
 -   Image creation can have a delayed start if there are a large number
     of image requests at one time for a group of servers. The number of
@@ -46,7 +51,9 @@ images:
 -   If the image process fails more than once and you're sure you haven't
     exceeded the image limits, contact Rackspace Support.
 
--   **If you are using a boot from volume server, you cannot create an image of it**. You can, however, create snapshots and clones of a boot from volume server.
+-   **If you are using a boot from volume server, you cannot create an image of
+    it**. You can, however, create snapshots and clones of a boot from volume
+    server.
 
 ### Limitations for Linux servers
 
@@ -54,7 +61,9 @@ images:
     attempts to reclaim space that has been freed by deleting files
     and images. That process continues even if the image creation
     process is aborted because of disk limits at the time the
-    process begins. That means that in some cases, trying to create an image again about a half hour after it fails could result in a successful image process thanks to that cleanup operation.
+    process begins. That means that in some cases, trying to create an image
+    again about a half hour after it fails could result in a successful image
+    process thanks to that cleanup operation.
 
 ### Limitations for Windows servers
 
@@ -80,4 +89,6 @@ images:
 
 -   ISOs cannot be uploaded to Cloud Files and used to build a new Cloud Server.
 
--   Importing images to Rackspace must follow the steps [Preparing an image for import into the Rackspace OpenCloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud), and must follow the General Requirements to be successful.
+-   To be successful, images imported to Rackspace must conform to the general
+    requirements described in
+    [Preparing an image for import into the Rackspace OpenCloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud).

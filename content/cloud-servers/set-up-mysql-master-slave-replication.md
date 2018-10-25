@@ -5,8 +5,8 @@ title: Set up MySQL master-slave replication
 type: article
 created_date: '2011-06-02'
 created_by: Rackspace Support
-last_modified_date: '2015-08-27'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -19,14 +19,14 @@ replication](/how-to/mysql-master-master-replication),
 in which data can be updated by any authorized contributor of the group.
 
 This article provides steps for setting up MySQL master-slave database
-replication between two cloud servers. The operating system used for the
+replication between two Cloud Servers. The operating system used for the
 examples in the article is CentOS 6, built from a Rackspace Cloud
 Servers base image.
 
 ### Before you begin
 
-The steps in this article use two cloud servers named db01 and db02.
-Cloud servers have two IP addresses (one public, one private). The
+The steps in this article use two Cloud Servers, `db01` and `db02`.
+Cloud Servers have two IP addresses (one public, one private). The
 examples demonstrate configuring replication over the private IP
 interface so that no bandwidth charges are incurred. For the duration of
 the article, db01 is considered the *master* MySQL server (running in
@@ -46,15 +46,18 @@ section.
 Create two Linux cloud servers, using the Centos 6 base image. Use the
 following steps to create each server separately.
 
-1.  Log in to your [Rackspace Cloud Control
-    Panel](https://mycloud.rackspace.com/).
-2.  On the Cloud Servers page, click **Create Server**.
-3.  Name the servers so that you can easily identify them during
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
+
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+3.  Select **Servers > Cloud Servers**.
+4.  Click **Create Server**.
+5.  Name the servers so that you can easily identify them during
     the setup.
-4.  Select the Centos 6 base image.
-5.  Select the RAM configuration (flavor) appropriate for your
+6.  Select the Centos 6 base image.
+7.  Select the RAM configuration (flavor) appropriate for your
     database requirements.
-6.  Click **Create Server**.
+8.  Click **Create Server**.
 
 The commands outlined in the following sections need to be executed by a
 privileged (root, sudo group) user. Any strings or values specified in

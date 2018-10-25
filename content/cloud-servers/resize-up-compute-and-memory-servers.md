@@ -5,8 +5,8 @@ title: Resize up compute and memory servers
 type: article
 created_date: '2018-08-30'
 created_by: Rackspace Support
-last_modified_date: '2018-08-30'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -22,17 +22,18 @@ resized down.
 
 Use the following steps to resize up your servers:
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2. In the top navigation bar, click **Servers > Cloud Servers** to view a list
-   of your existing servers.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. Click the gear icon next to the server that you want to resize, and then
+3. Select **Servers > Cloud Servers** to view a list of your existing servers.
+
+4. Click the gear icon next to the server that you want to resize, and then
    click **Resize**.
 
    A pop-up window that lists your server size options displays.
 
-4. Select a new server size, and then click **Resize Server**.
+5. Select a new server size, and then click **Resize Server**.
 
    **Note:** Each server size has a different hourly cost for uptime, and the
    new cost goes into effect when the server resize process completes. This
@@ -42,7 +43,7 @@ Use the following steps to resize up your servers:
    A notification displays prompting you to verify the changes that you made to
    your system resources and that there was no adverse impact to your server.
 
-5. Verify that your server was resized correctly by remotely logging in to
+6. Verify that your server was resized correctly by remotely logging in to
    your server and verifying your system resources and filesystem integrity.
 
    **Note:** Verification is an important step because it is the last chance
@@ -58,7 +59,7 @@ Use the following steps to resize up your servers:
    Resizing a Windows Server 2012 Cloud
    Server](/how-to/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server).
 
-6. After you have verified the system resources and checked your file systems,
+7. After you have verified the system resources and checked your file systems,
    select **Confirm** to confirm the resize or **Revert** to revert to the
    original size.
 

@@ -5,36 +5,45 @@ title: Migrate From Parse To Rackspace
 type: article
 created_date: '2016-03-25'
 created_by: Amanda Clark
-last_modified_date: '2017-01-26'
-last_modified_by: Chris Hultin
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article provides instructions for migrating your Parse database to Rackspace. It assumes that you have already migrated your database from Parse to ObjectRocket. If you have not, you can find more information [on the ObjectRocket website.](https://objectrocket.com/parse)
+This article provides instructions for migrating your Parse database to
+Rackspace. It assumes that you have already migrated your database from Parse
+to ObjectRocket. If you have not, you can find more information [
+on the ObjectRocket website.](https://objectrocket.com/parse)
 
 ### Deploy the Parse stack
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2. In the top navigation bar, click **Orchestration** > **Stack Templates**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. In the All Stacks list, scroll to **Parse** and click **Create Stack**.
+3. Select **Orchestration** > **Stack Templates**.
 
-4. In the pop-up box, choose the flavor and then click **Create Stack**.
+4. In the All Stacks list, scroll to **Parse** and click **Create Stack**.
 
-5. On the Create Stack page, enter a name and region for the stack, and enter your Parse site domain and email address.
+5. In the pop-up box, choose the flavor and then click **Create Stack**.
 
-6. (Optional) To automatically pull in and install your custom code on the new server, enter GitHub repository information.
+6. On the Create Stack page, enter a name and region for the stack, and enter your Parse site domain and email address.
 
-7. Click **Create Stack**.
+7. (Optional) To automatically pull in and install your custom code on the new server, enter GitHub repository information.
+
+8. Click **Create Stack**.
 
    On the stack details page, a green **Up** status in the Status field indicates when the stack is active.
 
 
 ### Configure the new server
 
-After the stack has been successfully created, configure your database authentication information. Repeat this procedure on all Parse servers created in the stack. These servers are linked from the stack details page, which is displayed after you create the stack. The parse password should be the same for all servers.
+After the stack has been successfully created, configure your database
+authentication information. Repeat this procedure on all Parse servers created
+in the stack. These servers are linked from the stack details page, which is
+displayed after you create the stack. The parse password should be the same for
+all servers.
 
 1. Log in to the new primary server via SSH either as `root` by using the SSH key provided or as `parse` by using the password provided.
 
@@ -48,7 +57,7 @@ After the stack has been successfully created, configure your database authentic
 
    You can find the MongoDB Connection String value in the ObjectRocket Control Panel, listed as **Connect** under the instance that you plan to use. The Application ID and Master Key values are in your Parse.com account under **App Settings** > **Security and Keys**. Any other application-specific keys are optional. Leave them blank if you aren’t going to use them.
 
-   Following is an example **parse.json** config file:  
+   Following is an example **parse.json** config file:
 
 	      {
 		        "apps" : [{
@@ -80,14 +89,19 @@ After the stack has been successfully created, configure your database authentic
 	    pm2 start parse.json
 
 
-You will likely need to modify custom code for it to run successfully. You can find more information about this process on the [Parse website](https://parse.com/migration). The Parse stack already has all of the Cloud Code replacements installed.
+You might need to modify custom code for it to run successfully. You can
+find more information about this process on the [Parse website](https://parse.com/migration).
+The Parse stack already has all of the Cloud Code replacements installed.
 
 For debugging purposes, you can view the Parse logs at `/home/parse/.pm2/logs/`.
 
 
 ### Install and configure your certificate
 
-After Parse is running, you can configure a valid certificate within NGINX. If you do not have a valid certificate, you can purchase one through Rackspace if you are hosting a physical server with us. If you have questions, contact your Account Manager or Rackspace Support.
+After Parse is running, you can configure a valid certificate within NGINX. If
+you do not have a valid certificate, you can purchase one through Rackspace if
+you are hosting a physical server with us. If you have questions, contact your
+Account Manager or Rackspace Support.
 
 1. Modify `/etc/nginx/conf.d/<your_url>.conf`, where `<your_url>` is the URL that you provided when you deployed your Parse stack.
 
@@ -100,7 +114,9 @@ After Parse is running, you can configure a valid certificate within NGINX. If y
 
 ### Configure the Parse dashboard
 
-The Parse stack also comes with a Parse dashboard, which enables you to visualize all the Parse applications running on your server. The dashboard is configured separatelyfrom the server.
+The Parse stack also comes with a Parse dashboard, which enables you to visualize
+all the Parse applications running on your server. The dashboard is configured
+separately from the server.
 
 1. Edit the `/home/parse/parse-dashboard-config.json` configuration file and add the Application ID and Master Key values.
 

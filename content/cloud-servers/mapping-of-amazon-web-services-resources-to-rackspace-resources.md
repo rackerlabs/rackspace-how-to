@@ -5,8 +5,8 @@ title: Mapping of Amazon Web Services resources to Rackspace resources
 type: article
 created_date: '2013-07-01'
 created_by: David Hendler
-last_modified_date: '2017-06-06'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -14,8 +14,7 @@ product_url: cloud-servers
 **Previous section:** [Migrating to the Rackspace Cloud from Amazon Web Services](/how-to/migrating-to-the-rackspace-cloud-from-amazon-web-services)
 
 This article is intended to help you map Amazon Web Services (AWS)
-infrastructure as a service (IaaS) products to Rackspace
-products.
+infrastructure as a service (IaaS) products to Rackspace products.
 
 | AWS product | Corresponding Rackspace product |
 | --- | --- |
@@ -35,7 +34,7 @@ products.
 | Amazon DynamoDB | Object Rocket (MongoDB - open) |
 | Amazon SES, SNS | Partner solutions - [Mailgun](https://www.mailgun.com/) |
 | Elastic Transcoder | Partner solutions - [Enterprise Media Processing](https://www.encoding.com/) |
-| IAM & Mgmt Console | [Cloud Control Panel](http://mycloud.rackspace.com) |
+| IAM & Mgmt Console | [Cloud Control Panel](https://login.rackspace.com) |
 | AWS CloudWatch | [Cloud Monitoring product and pricing](http://www.rackspace.com/cloud/monitoring)<br />[Cloud Monitoring API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/)  |
 | AWS CloudFormation | Deployments |
 | CloudSearch & Redshift | Non Core - Partner |

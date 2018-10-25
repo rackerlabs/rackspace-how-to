@@ -1,11 +1,11 @@
 ---
 permalink: cloud-backup-basic-troubleshooting-on-linux-servers
-audit_date: '2018-08-28'
+audit_date: '2018-10-25'
 title: Basic troubleshooting for Cloud Backup on Linux servers
 created_date: '2018-08-23'
 created_by: Shaun Crumpler
-last_modified_date: '2018-08-28'
-last_modified_by: Shaun Crumpler
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -29,9 +29,9 @@ you create one.
 Before you restart the DriveClient service, check [status.rackspace.com](https://status.rackspace.com)
 to ensure that there are no open issues for Cloud Backup that could be impacting your server instance.
 In addition, check the current support tickets to ensure that there has not been an incident
-that is causing the lack of server accessibility. 
+that is causing the lack of server accessibility.
 
-To check for open support tickets, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/)
+To check for open support tickets, log in to the [Cloud Control Panel](https://login.rackspace.com/)
 and click **Tickets > Ticket List** in the top navigation bar. If there is no open support ticket
 about the server in question, proceed with the troubleshooting steps in the next sections.
 
@@ -39,34 +39,37 @@ about the server in question, proceed with the troubleshooting steps in the next
 
 Use the following steps to establish a connection:
 
-1. In the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com), click on
-   **Backups > Systems**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2. From the list of Cloud Backup systems, click on the backup server name.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+3. Select **Backups > Systems**.
+
+4. From the list of Cloud Backup systems, click on the backup server name.
 
    This action displays the following details about the backup system:
-   
+
    - The Internet Protocol (IP) address of the server
    - The system type
    - The server region
    - If encryption is enabled
-   - The backup region 
+   - The backup region
    - The agent version
-   
-3. To the right of the system name, review the status of the backup agent.
+
+5. To the right of the system name, review the status of the backup agent.
 
    The backup agent status is either **connected** or **disconnected**.
-   
-4. Wait 10 seconds to ensure that the status is accurate because it can change after
+
+6. Wait 10 seconds to ensure that the status is accurate because it can change after
    a few seconds.
-   
-5. After 10 seconds, perform one of the following actions:
+
+7. After 10 seconds, perform one of the following actions:
 
    - If the status is **connected**, try to run the backup again, and if it fails,
      contact Rackspace Support.
    - If the status is **disconnected**, restart the DriveClient service as shown in
      the next section.
-     
+
 ## Restart the DriveClient service
 
 Use the following steps to restart the DriveClient service:
@@ -75,9 +78,9 @@ Use the following steps to restart the DriveClient service:
 
 2. Ensure that the driveclient is set to start at boot by running the command **chkconfig driveclient on**.
 
-3. Return to the **Cloud Backup System Details Status** in the Control Panel to check
-   if the agent status is now **connected**.
-   
+3. Return to the **Cloud Backup System Details Status** in the Cloud Control
+   Panel to check that the agent status is now **connected**.
+
 4. Follow these steps based on the status:
 
    - If the status is **connected**, try to run the backup again, and if it fails,
@@ -85,6 +88,6 @@ Use the following steps to restart the DriveClient service:
    - If the status is **disconnected**, download the log from the server that is
      located at **/var/log/driveclient.log**. (For assistance with downloading a file
      locally, check out [this helpful article](https://community.rackspace.com/products/f/25/t/7094)).
-     
+
 5. After saving the file, attach it to a support ticket to send to Rackspace Support.
    This assists in expediting the issue response.
