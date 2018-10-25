@@ -11,7 +11,7 @@ product: undefined
 product_url: undefined
 ---
 
-If you are the current primary contact for your account, you can update the primary contact by selecting and editing the **Primary Contact Information** section in the [Cloud Control Panel](http://login.rackspace.com), or if you're a dedicated customer, the [MyRackspace Control Panel](https://login.rackspace.com).
+If you are the current primary contact for your account, you can update the primary contact by selecting and editing the **Primary Contact Information** section in the [Cloud Control Panel](https://login.rackspace.com), or if you're a dedicated customer, the [MyRackspace Control Panel](https://login.rackspace.com).
 
 If you are not the primary contact, you must fill out the **Primary
 Contact Change** form and submit it by using a support ticket.
