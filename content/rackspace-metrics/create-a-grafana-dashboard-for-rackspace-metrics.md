@@ -109,7 +109,7 @@ and a `check ID` to guarantee the uniqueness of the metrics. You can use the
 want to see.
 
 You can locate the entity ID and check ID in the [Cloud Control
-Panel](http://login.rackspace.com/) on the Rackspace Intelligence
+Panel](https://login.rackspace.com/) on the Rackspace Intelligence
 **Monitoring Details** and **Check Details** pages.
 
 For more information, see the following articles:
