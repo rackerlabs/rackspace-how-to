@@ -5,8 +5,8 @@ title: 'Rackspace Directory Sync: Install and configure'
 type: article
 created_date: '2013-04-25'
 created_by: Kevin Richey
-last_modified_date: '2017-05-11'
-last_modified_by: Cory Aldrich
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -68,14 +68,15 @@ and encryption.
 
 You can find the installation files while logged in to
 either the [Cloud Office control panel](https://cp.rackspace.com) or into the
-[MyRackspace Portal](https://my.rackspace.com), depending on how you normally log
+[MyRackspace Portal](https://login.rackspace.com), depending on how you normally log
 in.
 
 Administrators who log in to the MyRackspace Portal as
 the primary contact can follow these steps:
 
-1. Click the **Products** tab and select **Cloud Office** from the menu.
-2. Click on your domain. The Directory Sync installers are located in the right column.
+1. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
+2. Click **Products > Cloud Office**.
+3. Click on your domain. The Directory Sync installers are located in the right column.
 
 Administrators who log in to the Cloud Office control panel with Super Admin permission can follow these steps:
 
@@ -83,7 +84,7 @@ Administrators who log in to the Cloud Office control panel with Super Admin per
 2. On the Domains Home page, click on **Tools**, and then click the **Directory Sync** tab.
 
   The Directory Sync installers are listed at the bottom of the page.
-  
+
 Choose the appropriate installer, based on either 32- or 64-bit platforms.
 
 - **Directory Sync Service x64.msi**
@@ -106,7 +107,7 @@ Password Handler service automatically synchronizes user password changes.
 **Note:** The Directory Sync service runs as the Local System account on
 the DC.
 
-1. Copy the appropriate platform-specific Directory Sync service **.msi** file to the domain controller. 
+1. Copy the appropriate platform-specific Directory Sync service **.msi** file to the domain controller.
 
 2. Open the file and follow the prompts for installing the Directory Sync service.
 
@@ -140,10 +141,10 @@ Directory Sync by performing the following steps:
 2. On the Sync Registration Page, enter the admin ID and password
     associated with your Rackspace Cloud Office account, and then click
     **Register**.
-    - Customers who logged in to [https://my.rackspace.com](https://my.rackspace.com)
+    - Customers who logged in to the [MyRackspace portal](https://login.rackspace.com)
         will automatically create an admin ID through the MyRackspace
-        Customer Portal before download
-    - Customers who logged in to [https://cp.rackspace.com](https://cp.rackspace.com)
+        Portal before download
+    - Customers who logged in to the [Cloud Office Control Panel](https://cp.rackspace.com)
         should create a new admin ID dedicated to the
         sync service.
 
@@ -155,7 +156,7 @@ Directory Sync by performing the following steps:
         synchronized with Microsoft Exchange mailboxes.
     - **Hosted Email**: Select the appropriate security group to be
         synchronized with Rackspace Email mailboxes.
- 
+
     **Note:** The daily admin summary emails are no longer a feature of the Directory Sync service. You can now find this information on the sync history and alerts tab in the Directory Sync UI.
 
 4.  Click **Save & Start Sync** to begin a full synchronization.
