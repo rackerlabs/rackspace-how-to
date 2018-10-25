@@ -77,7 +77,7 @@ To setup a new origin, perform the following steps:
 
    **Note**: Verify that the origin can accept traffic from the domain listed in your CDN service. For example, if your CDN service has a domain of **cdn.customer1.com**, you might need to alter your origin server's **.htaccess** file to allow traffic for that domain.
 
-6. Tell the service when to fetch content from the new origin by specifying a content path. For example, i fyou want all of the images requested from the new origin, set the path to **/images/\***. With this rule, any time your your domain gets a request that contains **/images/** in the path, the CDN fetches that content from the new origin if it can't be found on the edge.
+6. Tell the service when to fetch content from the new origin by specifying a content path. For example, if you want all of the images requested from the new origin, set the path to **/images/\***. With this rule, any time your your domain gets a request that contains **/images/** in the path, the CDN fetches that content from the new origin if it can't be found on the edge.
 
    The path must include a wildcard character. For example, **/images/** is not a valid path, but **/images/*** is a valid path.
 
