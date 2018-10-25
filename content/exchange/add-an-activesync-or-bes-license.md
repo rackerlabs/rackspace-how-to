@@ -27,8 +27,7 @@ this article to add an ActiveSync or BES license.
    - US Cloud Office customers, use <https://cp.rackspace.com/>.
 
    - International and MyRackspace Cloud Office customers, log in to
-     <https://login.rackspace.com/>. In the top navigation bar click **Select a Product > Dedicated Hosting**. Then, in the top navigation bar, click **Products >
-     Cloud Office > Open Mail Control Panel**.
+     <https://login.rackspace.com/>. In the top navigation bar, click **Select a Product > Dedicated Hosting**, and then click **Products > Cloud Office > Open Mail Control Panel**.
 
    - Or, all customers can
      access <http://cp.rackspace.com/usercp> directly.
