@@ -97,8 +97,7 @@ existing template or submit a custom template to create your own custom stack.
 
 1. In the top navigation bar of the Cloud Control Panel, click **Orchestration > Stacks**.
 
-2. To submit a custom template, click **Create Custom Template**. Skip to step
-4.
+2. To submit a custom template, click **Create Custom Template**. Skip to step 4.
 
 3. To modify an existing template, click the gear icon next to the application
 name, select **Copy and Edit Template**, select a flavor (configuration), and
