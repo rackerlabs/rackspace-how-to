@@ -95,8 +95,7 @@ Use the following steps to delete a stack:
 If you have experience in creating or modifying template code, you modify an
 existing template or submit a custom template to create your own custom stack.
 
-1. In the top navigation bar of the Cloud Control Panel, click **Orchestration
-> Stacks**.
+1. In the top navigation bar of the Cloud Control Panel, click **Orchestration > Stacks**.
 
 2. To submit a custom template, click **Create Custom Template**. Skip to step
 4.
