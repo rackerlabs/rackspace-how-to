@@ -35,8 +35,7 @@ To create a Grafana dashboard, complete the following steps:
     Panel](https://login.rackspace.com/) with
     your username and password.
 2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-2.  In the top navigation bar, click **Orchestration > Stack Templates**.
-3.  Click **Create Custom Template**.
+3.  Click **Orchestration > Stack Templates**, and then click **Create Custom Template**.
 4.  Go to <https://bitly.com/heat-grafana> and copy the content on
     the page. This is the template that you use to create
     your stack.
