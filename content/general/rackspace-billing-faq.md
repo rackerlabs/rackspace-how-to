@@ -114,7 +114,7 @@ or are disabled. After you delete the server or service from your
 account, its resources are available for someone else to use, and you are no
 longer billed for them.
 
-You can delete cloud servers and services by using the [Cloud Control Panel](http://login.rackspace.com). To cancel Rackspace support for Azure, create a ticket for our billing team.
+You can delete cloud servers and services by using the [Cloud Control Panel](https://login.rackspace.com). To cancel Rackspace support for Azure, create a ticket for our billing team.
 
 #### How do I delete or cancel my services?
 
@@ -124,7 +124,7 @@ using the following steps:
 
 1. Ensure that all products (such as Cloud Servers, Images, Cloud Files, Cloud
 Block Storage, and so on) are deleted.
-2. Log in to the [Cloud Control Panel](https://login.rackspace.com/), and
+2. Log in to the [Cloud Control Panel](https://login.rackspace.com/) and
 review all services to ensure that all your data is backed up outside of
 the Rackspace environment.
 3.  In the upper-right corner of the page, click **Account > Account Settings**.
