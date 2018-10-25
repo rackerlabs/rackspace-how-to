@@ -5,8 +5,8 @@ title: Rackspace Metrics overview
 type: article
 created_date: '2015-03-03'
 created_by: Shane Duan
-last_modified_date: '2018-10-15'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
@@ -85,7 +85,7 @@ program](https://developer.rackspace.com/docs/metrics/v2/early-access-program/).
 ### Add appropriate roles
 
 Rackspace Metrics is not available in the [Rackspace Cloud Control
-Panel](https://mycloud.rackspace.com/). When you sign up for
+Panel](https://login.rackspace.com/). When you sign up for
 the Early Access program, Rackspace Metrics-related roles are added to your
 users automatically. If you see permission-related issues in testing,
 [contact us at metrics-ea@rackspace.com](mailto:metrics-ea@rackspace.com).

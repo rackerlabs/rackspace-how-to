@@ -5,8 +5,8 @@ title: Rackspace Monitoring FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2017-01-24'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -43,7 +43,7 @@ There are six monitoring zones:
 
 Using multiple monitoring zones eliminates the need for maintenance and upgrade
 downtime, and ensures that your monitoring services remain uninterrupted even if a
-data center failure occurs. 
+data center failure occurs.
 
 #### What are the various terms I need to know when using Rackspace Monitoring?
 
@@ -83,7 +83,7 @@ application. Rackspace Monitoring prevents these types of problems from occurrin
 #### Can I use a UK account as well as a US account?
 
 Yes, you can use both US and UK accounts. This is a global system that
-works with both identities. Use the identity server where your tenant 
+works with both identities. Use the identity server where your tenant
 lives and pass that token and tenant ID to the Rackspace Monitoring
 system.
 
@@ -110,7 +110,7 @@ Not at this time.
 
 Rackspace Monitoring bills by hourly usage based on how many checks were running in
 that hour, and from how many monitoring zones were involved. Adjusting your usage is
-quick and easy, and this flexibility can help reduce unnecessary costs. 
+quick and easy, and this flexibility can help reduce unnecessary costs.
 
 ### Notification plans
 
@@ -129,7 +129,7 @@ check triggers the critical state, the notification plan associated with the che
 If you do not set up a custom notification plan, then email is sent to all of the technical
 contacts on your account. If your account lists no technical contacts, then the primary
 contact is emailed. You can view the list of contacts for your account on the User
-Management page in the [Cloud Control Panel](https://mycloud.rackspace.com).
+Management page in the [Cloud Control Panel](https://login.rackspace.com).
 
 #### What does the Rackspace Managed Notifications plan do?
 
@@ -192,7 +192,7 @@ case of a system failure.
 The Rackspace Monitoring system is extremely secure. Before releasing
 the product, an independent firm assessed the level of security of the
 Rackspace Monitoring systems and API, and all reported issues have been
-addressed. 
+addressed.
 
 #### What is a check?
 
