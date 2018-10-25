@@ -11,7 +11,8 @@ product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-After you create your CDN service, you must activate it by pointing the DNS records for your domain to the CDN network. This article describes the steps to do this.
+After you create your CDN service, you must activate it by pointing the DNS records
+for your domain to the CDN network. This article describes the steps to do this.
 
 ### Get your CDN URL
 
