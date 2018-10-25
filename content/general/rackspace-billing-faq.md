@@ -79,7 +79,7 @@ Follow these steps to change your billing address:
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2.  In the upper-right corner of the page, click **Billing**.
 3.  Click the **Billing Settings** tab.
-3.  Click the pencil icon next to **Billing Address** to edit the address.
+4.  Click the pencil icon next to **Billing Address** to edit the address.
 
 ### Charges
 
