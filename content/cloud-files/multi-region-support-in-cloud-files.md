@@ -32,7 +32,7 @@ to use your preferred region for file transfers.
 
 You don't need to do anything to set up multi-region capabilities for
 your account. All US accounts have access to multiple regions. If you
-use the Auth 1.1 or 2.0 API, you may choose the endpoint with which you want
+use the Rackspace Identity API, you may choose the endpoint with which you want
 to interact. After you authenticate against the regional endpoint, your
 Cloud Files operations only affect that region's content.
 
@@ -44,7 +44,7 @@ locations, as well as related bandwidth charges.
 ### Changes to the API Service Catalog
 
 The Service Catalog that the API returns now shows multiple endpoints
-under `object store`, as shown in the following image:
+under `object-store`, as shown in the following image:
 
 <img src="{% asset_path cloud-files/multi-region-support-in-cloud-files/cf%20-%20api%20access%20points.png %}" width="599" height="406" />
 
@@ -62,8 +62,7 @@ As part of this change, if you were an existing customer as of September 1,
 2012, Rackspace set your current region as your default region.
 
 Your default region appears first in the list of endpoints that's returned
-when you authenticate against Cloud Files by using our Auth 1.1 or
-2.0 API. The Auth 1.0 API still returns only a single endpoint.
+when you authenticate against Cloud Files by using our Identity API.
 
 ### Akamai CDN
 
