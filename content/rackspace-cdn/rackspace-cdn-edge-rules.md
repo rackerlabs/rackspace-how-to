@@ -67,7 +67,7 @@ To setup a new origin, perform the following steps:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-3. At the top of the panel, select **Storage > CDN**, and then click the name of your service.
+3. Click **Storage > CDN**, and then click the name of your service.
 4. On the details page for the service, under **Service Details**, click **Add Origin**.
 5. Enter a domain name or an IP address for the origin.
 
