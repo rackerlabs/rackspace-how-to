@@ -5,14 +5,14 @@ title: Preparing to use Rackspace Intelligence
 type: article
 created_date: '2015-07-15'
 created_by: Rose Coste
-last_modified_date: '2016-01-04'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
 
 Everyone who has a Rackspace cloud account can use the
-[Cloud Control Panel](https://mycloud.rackspace.com/)
+[Cloud Control Panel](https://login.rackspace.com/)
 to create and manage devices and the
 [https://intelligence.rackspace.com](https://intelligence.rackspace.com/)
 to observe infrastructure status.

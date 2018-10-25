@@ -5,8 +5,8 @@ title: Create a Grafana dashboard for Rackspace Metrics
 type: article
 created_date: '2015-10-19'
 created_by: Constanze Kratel
-last_modified_date: '2018-10-15'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Metrics
 product_url: rackspace-metrics
 ---
@@ -32,10 +32,10 @@ datasource](https://github.com/rackerlabs/blueflood/wiki/Grafana-3.0-with-Bluefl
 To create a Grafana dashboard, complete the following steps:
 
 1.  Log in to the [Cloud Control
-    Panel](https://mycloud.rackspace.com/) with
+    Panel](https://login.rackspace.com/) with
     your username and password.
-2.  In the **Servers** section, click **Create Stack**.
-3.  Click **Create Custom Template**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3.  Click **Orchestration > Stack Templates**, and then click **Create Custom Template**.
 4.  Go to <https://bitly.com/heat-grafana> and copy the content on
     the page. This is the template that you use to create
     your stack.
@@ -109,7 +109,7 @@ and a `check ID` to guarantee the uniqueness of the metrics. You can use the
 want to see.
 
 You can locate the entity ID and check ID in the [Cloud Control
-Panel](http://mycloud.rackspace.com/) on the Rackspace Intelligence
+Panel](https://login.rackspace.com/) on the Rackspace Intelligence
 **Monitoring Details** and **Check Details** pages.
 
 For more information, see the following articles:

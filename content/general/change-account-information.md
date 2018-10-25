@@ -5,8 +5,8 @@ title: Change account information
 type: article
 created_date: '2015-06-18'
 created_by: David Hendler
-last_modified_date: '2018-05-24'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -23,7 +23,7 @@ Request the **Service Transfer** form from your account manager.
 
 ### All other customers
 
-All other customers can find links to the forms described in this article by logging in to the [Cloud Control Panel](http://mycloud.rackspace.com) and selecting **Account** > **Docs and Forms**.
+All other customers can find links to the forms described in this article by logging in to the [Cloud Control Panel](https://login.rackspace.com) and selecting **Account > Docs and Forms**.
 
 ### Service Transfer form requirements
 
@@ -58,7 +58,7 @@ In the **Cloud Account Number** and the **New Cloud Account Name** columns, prov
 
 ### Best practices for legal change forms
 
-The Service Transfer and Primary Contact Change forms have many required fields that must be complete before the Billing team can process the forms. After you have completed the form, scan the document and attach it to the support ticket in the [Cloud Control Panel](http://mycloud.rackspace.com) or the [MyRackspace Control Panel](https://my.rackspace.com).
+The Service Transfer and Primary Contact Change forms have many required fields that must be complete before the Billing team can process the forms. After you have completed the form, scan the document and attach it to the support ticket in the [Cloud Control Panel](https://login.rackspace.com) or the [MyRackspace Control Panel](https://login.rackspace.com).
 
 To avoid form rejection, use the following tips when completing the
 form:

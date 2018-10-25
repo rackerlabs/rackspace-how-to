@@ -5,7 +5,7 @@ title: How to contact Rackspace Support
 type: page
 created_date: '2013-06-17'
 created_by: Rackspace Support
-last_modified_date: '2018-08-08'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
@@ -13,7 +13,7 @@ product_url: undefined
 
 Rackspace Support is available 24x7x365 for all products. You can reach the Support team by phone
 and live chat. You can also create a Support ticket and administer your
-Rackspace product through the [Cloud Control Panel](https://mycloud.rackspace.com/).
+Rackspace product through the [Cloud Control Panel](https://login.rackspace.com/).
 
 ### System status
 
@@ -26,7 +26,8 @@ Call Dedicated Hosting support at the following numbers:
 - US: 1-800-961-4600
 - International: +1-210-312-4600
 
-You can also log in to the [MyRackspace portal](https://my.rackspace.com/) to access chat support, the knowledge base, and How-To videos.
+You can also log in to the [MyRackspace portal](https://login.rackspace.com/) to access chat
+support, the knowledge base, and How-To videos.
 
 ### Email support
 
@@ -50,7 +51,7 @@ Call Cloud support at 1-800-961-4454.
 
 Find API documentation at the [Rackspace Developer Docs site](https://developer.rackspace.com/docs/) and support documentation at the [How-To site](/how-to/).
 
-You can also log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) to access chat support.
+You can also log in to the [Cloud Control Panel](https://login.rackspace.com/) to access chat support.
 
 ### Legacy Datapipe support
 

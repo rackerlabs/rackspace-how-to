@@ -5,8 +5,8 @@ title: Add a managed operations service level to your cloud account
 type: article
 created_date: '2011-10-11'
 created_by: Rackspace Support
-last_modified_date: '2018-09-11'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -24,7 +24,7 @@ your Rackspace Cloud portfolio.
 Managed Operations accounts include access to a dedicated support team
 that is available 24x7x365 by phone, chat, email, and online support ticket.
 The team supports your Cloud Servers from the operating system level up
-through the application stack of Microsoft&reg; SQL Server&trade;, .NET, 
+through the application stack of Microsoft&reg; SQL Server&trade;, .NET,
 and Internet Information Services (IIS), as well as the
 Linux&reg;, Apache&reg;, MySQL&reg;, and PHP (LAMP) stack on Linux.
 Rackspace regularly patches and updates your Cloud Server. We also manage your
@@ -194,7 +194,7 @@ Hosting accounts and your cloud accounts.
 You can contact the Rackspace Managed Operations account team by chat,
 phone, or by submitting a ticket online. You can find the phone number and
 links to other communication methods in the [Cloud Control
-Panel](http://mycloud.rackspace.com).
+Panel](https://login.rackspace.com).
 
 ### What if I want to downgrade from my Rackspace Managed Operations account?
 

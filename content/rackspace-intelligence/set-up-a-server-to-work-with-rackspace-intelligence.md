@@ -14,23 +14,27 @@ product_url: rackspace-intelligence
 You can use Rackspace Intelligence to help you observe the status of
 your server if you set up the server to be visible to Rackspace
 Intelligence. You can do this through the [Cloud Control
-Panel](https://mycloud.rackspace.com/) by following these steps:
+Panel](https://login.rackspace.com/) by following these steps:
 
-1.  Log in to the Cloud Control Panel. If you are in the Rackspace
-    Intelligence interface, you can open the control panel by clicking
-    the **Rackspace Intelligence** menu at the top of the interface and
-    selecting **Rackspace Cloud**.
-2.  Create a server as you normally would, or select an existing server.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+
+   If you are in the Rackspace Intelligence interface, you can open the
+   control panel by clicking the **Rackspace Intelligence** menu at the top
+   of the interface and selecting **Rackspace Cloud**.
+
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+3.  Create a server as you normally would, or select an existing server.
     For instructions on creating a server, see
     [Create a Cloud Server](/how-to/create-a-cloud-server).
-3.  List the server's details by selecting **Servers &gt; Cloud
+4.  List the server's details by selecting **Servers > Cloud
     Servers** and then clicking the server's name.
-4.  On the server details page, scroll down to the **Monitoring
+5.  On the server details page, scroll down to the **Monitoring
     Data** section and click the **View Server's Metrics in Rackspace
     Intelligence** link.
-5.  Install the monitoring agent on the server by clicking **Get
+6.  Install the monitoring agent on the server by clicking **Get
     Started**.
-6.  On the **Monitoring Agent Installation** page, choose the platform
+7.  On the **Monitoring Agent Installation** page, choose the platform
     installed on your server and choose the type of installation
     instructions that you prefer.
 
@@ -72,15 +76,15 @@ Panel](https://mycloud.rackspace.com/) by following these steps:
     Installation** page you can see that the agent connection status
     is **Connected**.
 
-7.  Click **Setup Checks** to configure at least one check. In the
+8.  Click **Setup Checks** to configure at least one check. In the
     following example, two CPU-related checks are configured, monitoring
     CPU usage and average CPU load.
 
     <img src="{% asset_path rackspace-intelligence/set-up-a-server-to-work-with-rackspace-intelligence/intelligence-check-selection.png %}" width="637" height="555" />
 
-8.  Click **Apply Checks** to activate the checks that you defined. When
+9.  Click **Apply Checks** to activate the checks that you defined. When
     the checks are activated, their status is reported on the entities
     details page for the server, in the **Monitoring Checks** section.
-9.  To make the checks useful, define alarms that identify boundaries
+10.  To make the checks useful, define alarms that identify boundaries
     between OK, Warning, and Critical statuses. For instructions,
     see [Working with alarms](/how-to/working-with-alarms).
