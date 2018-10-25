@@ -38,7 +38,7 @@ only the system disk. The data disk is not monitored.
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-3.  In the top navigation bar, click **Servers > Cloud Servers**.
+3.  Click **Servers > Cloud Servers**.
 4.  In the list of servers, click the name of the server for which you
     want to create a check.
 5.  On the server details page, scroll to the Monitoring Checks section
