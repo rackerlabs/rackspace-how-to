@@ -50,8 +50,7 @@ under `object-store`, as shown in the following image:
 
 ### Changes to Rackspace web interfaces
 
-You can also use the multi-region feature through the [MyRackspace
-portal](https://login.rackspace.com/) and the [Cloud Control
+You can also use the multi-region feature through the [Cloud Control
 Panel](https://login.rackspace.com/). When you create a container, choose the
 data center in which you want it to be located. The Cloud Control Panel
 reflects the location of your container.
