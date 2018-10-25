@@ -5,8 +5,8 @@ title: Getting started with Rackspace Intelligence for the cloud
 type: article
 created_date: '2015-10-20'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-26'
-last_modified_by: Rose Coste
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -76,10 +76,9 @@ Rackspace Intelligence.
 
 Before you can use [Rackspace
 Intelligence](https://intelligence.rackspace.com/), you must be logged
-in to your [Cloud Control Panel](https://mycloud.rackspace.com/)
-account. [Log in to Rackspace
-Intelligence](/how-to/logging-in-to-the-rackspace-intelligence-dashboard)
-explains how that works.
+in to your [Cloud Control Panel](https://login.rackspace.com/)
+account. For instructions, see [Log in to Rackspace
+Intelligence](/how-to/logging-in-to-the-rackspace-intelligence-dashboard).
 
 ### When you begin working with a new entity
 
