@@ -51,9 +51,10 @@ MyRackspace portal as follows:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
-3. In the top navigation bar, click **Products > Devices**.
-2. Click on a server from the list.
-3. In the **Details** tab, the **IP Details** section lists the public IPv4 address.
+3. Click **Products > Devices**.
+4. Click the name of the server for which you want to view the details.
+   
+   In the **Details** tab, the **IP Details** section lists the public IPv4 address.
 
 RackConnect v2.0 and v3.0 customers can look up the cloud server's details in the [Cloud Control
 Panel](https://login.rackspace.com/) as follows:
