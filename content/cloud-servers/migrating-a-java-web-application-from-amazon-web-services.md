@@ -28,7 +28,8 @@ The following figure shows the application's topology:
 
 ### Prerequisites
 
-The following prerequisites are required to follow the example in this article:
+The following prerequisites are required to follow the example
+in this article:
 
 - An Amazon Elastic Compute Cloud (EC2) instance on AWS with root access
   that's running the Spring web application on Apache Tomcat.
