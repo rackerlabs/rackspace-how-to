@@ -5,7 +5,7 @@ title: Migrate a Java web application from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -16,8 +16,8 @@ Web
 Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 This article shows you how to migrate an Apache&reg; Tomcat&reg; and
-Java&trade-based Spring web application from Amazon&reg; Web Services&reg;
-(AWS) to Rackspace Cloud. This example take about 30 minutes to complete.
+Java&trade;-based Spring web application from Amazon&reg; Web Services&reg;
+(AWS) to Rackspace Cloud. This example takes about 30 minutes to complete.
 
 The example uses the [Spring PetClinic Sample
 Application](https://github.com/SpringSource/spring-petclinic/).
@@ -53,9 +53,9 @@ exercise:
 
 Install the following software packages:
 
-- Oracle&reg; Open Java Development Kit (OpenJDK)
+- Oracle&reg; Open Java Development Kit (OpenJDK&trade;)
 - Apache Tomcat
-- OpenStack Swift (optional)
+- OpenStack&reg; Swift (optional)
 
 #### Install OpenJDK on the cloud
 
@@ -83,7 +83,7 @@ Complete the following steps to install OpenJDK on the cloud:
 
 #### Install Tomcat on the Cloud Server
 
-Use the following steps to Install Tomcat on the Cloud Server:
+Use the following steps to install Tomcat on the Cloud Server:
 
 1. Right-click the version of Tomcat that you want to use from the [Tomcat 7
    Software Downloads page](http://tomcat.apache.org/download-70.cgi) and copy
@@ -226,7 +226,7 @@ steps in this section to install and configure OpenStack Swift.
 
 ### Back up data from AWS to Rackspace Cloud Files
 
-Retrieve your data from EC2. You can use one of the following methods to
+Retrieve your data from AWS EC2. You can use one of the following methods to
 transfer the data:
 
 - Transfer the data directly by using rsync or SSH File Transfer Protocol
@@ -326,8 +326,6 @@ Services](/how-to/post-migration-considerations-when-migrating-from-amazon-web-s
 
 For other migration scenarios, see the following articles:
 
-- [Migrate an application built on a LAMP stack from Amazon Web
-  Services](/how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 - [Migrate a .NET application from Amazon Web
   Services](/how-to/migrating-a-net-application-from-amazon-web-services)
 - [Migrate an application based on Backbone.js, Node.js, and MongoDB from
