@@ -44,7 +44,7 @@ Use the following steps to view billing data in pivot tables:
 
       b.  **Cloud customers**: Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-3.  In the upper-right corner of the page, click **Billing**.
+3.  In the top navigation bar, click **Billing**.
 4.  Click **Billing History > Invoice Details**.
 5.  On the **Invoice Details** page, click the CSV link, and export the CSV invoice file.
 6.  Open Microsoft Excel, and create a new workbook. Do not open the CSV invoice file.
