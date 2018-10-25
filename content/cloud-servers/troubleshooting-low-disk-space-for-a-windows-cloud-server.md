@@ -88,4 +88,3 @@ contact the Rackspace Support team by creating a support ticket in the
 [Cloud Control Panel](https://login.rackspace.com/) by clicking **Tickets > Create Ticket**
 in the top navigation bar. To expedite the issue, include all of the
 troubleshooting steps that you have already taken.
-
