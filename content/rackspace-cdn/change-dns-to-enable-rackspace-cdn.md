@@ -19,7 +19,7 @@ Use the following steps to get the URL for your CDN:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-3. In the top navigation bar, click **Storage** and then select **CDN**.
+3. Click **Storage** and then select **CDN**.
 4. In the list of services, click the service for which you want to activate the CDN.
 5. On the **CDN Service** page, in the **Domains** section, click on **Domain Not Configured** under **Status**.
 6. Use the URL and the instructions in the box that opens, which is similar to the following figure, to configure your service.
