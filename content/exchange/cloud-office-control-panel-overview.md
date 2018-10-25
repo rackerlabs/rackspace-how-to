@@ -160,4 +160,4 @@ The following options available in the **Support** menu:
 -  **Email Setup Wizard** - View useful mailbox information while using step-by-step instructions on how to set up your Cloud Office services.
 -  **View Tickets** - Create a new ticket and view any past tickets on the Support Tickets landing page.
 
-If you need assistance help a specific feature, read about how to use the [Help tool for hosted email and Skype for business](/how-to/help-tool-for-hosted-email-and-skype-for-business).
+If you need help with a specific feature, read about how to use the [Help tool for hosted email and Skype for business](/how-to/help-tool-for-hosted-email-and-skype-for-business).
