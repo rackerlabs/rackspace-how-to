@@ -27,9 +27,7 @@ To access your account information, use the following steps:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-
-3. In the upper-right corner of the Cloud Control Panel, click the **Billing**
+2. In the upper-right corner of the control panel, click the **Billing**
    button.
 
    You are redirected to the **Billing Overview** dashboard, which provides information on billing, payments, and usage.
