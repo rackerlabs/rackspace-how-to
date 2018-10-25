@@ -73,7 +73,8 @@ Complete the following steps to install OpenJDK on the cloud:
 
         sudo yum install java-1.7.0-openjdk-devel
 
-4.  Determine the location of `JAVA_HOME` by entering the following command:
+4.  Determine the location of `JAVA_HOME` by
+    entering the following command:
 
         ll /etc/alternatives/java
 
