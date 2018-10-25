@@ -156,11 +156,10 @@ support that you need to get the most out of the cloud.
     Rackspace How-To? Open Chat and talk with our **Fanatical Support**&reg;
     staff anytime, 24x7x365.
 -   Do you have a specialized Service Request or are you experiencing a
-    problem with our service? Open a ticket. In the Rackspace [Cloud Control Panel](http://login.rackspace.com),
-    click the **Select a Product** drop-down menu in the top navigation bar,
-    select **Rackspace Cloud**. Then select **Tickets > **Create Ticket** to
-    open a ticket directly with our support teams to report a problem or make a
-    service request.
+    problem with our service? Open a ticket. In the Rackspace
+    [Cloud Control Panel](https://login.rackspace.com), select
+    **Tickets > **Create Ticket** to open a ticket directly with our support
+    teams to report a problem or make a service request.
 -   Call us 24x7x365 at 800 961 4454 (toll-free) or +1 210 312 4000 (international).
 
 ------------------------------------------------------------------------
@@ -188,7 +187,7 @@ you must add an A record for **MyWebServer1.MyExampleDomain.com**
 to your DNS zone ([MyExampleDomain.com](http://myexampledomain.com/))
 that points to the public IP address of the server. The information that
 you enter in the **Server Name** field helps you identify this server in
-the API and [Cloud Control Panel](http://login.rackspace.com).
+the API and [Cloud Control Panel](https://login.rackspace.com).
 
 #### How do I set up reverse DNS setup for my server?
 

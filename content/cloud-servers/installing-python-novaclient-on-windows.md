@@ -204,7 +204,7 @@ substitute it with the `--os-region-name` option as follows:
 
 ### Next steps
 
-By following the instructions inn this article, you should have the nova client
+By following the instructions in this article, you should have the nova client
 set up so that you can access it and it can talk to your Rackspace Cloud account.
 To look at some common operations you can perform with the client, like creating
 servers and taking snapshots, see

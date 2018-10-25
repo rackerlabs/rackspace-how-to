@@ -21,17 +21,13 @@ such as traceroutes and error log entries, directly into the ticket.
 You can create a support ticket by:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
-3. Select **TICKETS > Create Ticket**.
-4. Select a broad product category, such as Cloud Servers or Cloud Databases.
-5. Select a more specific category that narrows down the type of problem that
+2. Select **TICKETS > Create Ticket**.
+3. Select a broad product category, such as Cloud Servers or Cloud Databases.
+4. Select a more specific category that narrows down the type of problem that
 you are experiencing, such as General Support or API.
-6. In the **Details** section, enter a subject and message that describes your issue.
-
-   You can also attach a file of up to 20 MB in size to the ticket.
-
-7. After you have entered information into all of the fields, click **Submit Ticket**.
-
+5. In the **Details** section, enter a subject and message that describes your
+issue. You can also attach a file of up to 20 MB in size to the ticket.
+6. After you have entered information into all of the fields, click **Submit Ticket**.
 
 ### View support tickets
 

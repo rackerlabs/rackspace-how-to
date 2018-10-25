@@ -97,22 +97,20 @@ device. The device must be enabled to receive SMS text messages.
 
 1.  Log in to the [Rackspace Cloud Control Panel](https://login.rackspace.com).
 
-2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+2.  In the upper-right corner of the Cloud Control Panel, click the
+    ***Account*** menu and select **Account Settings**.
 
-3.  In the upper-right corner of the Cloud Control Panel, click the
-    ***userName*** menu and select **My Profile & Settings**.
-
-4.  In the **Security Settings** section, select **Enable** for
+3.  In the **Rackspace Account Settings** section, select **Enable** for
     **Multi-factor authentication**.
 
-5.  On the Register SMS Device form, select the country code for the
+4.  On the Register SMS Device form, select the country code for the
     device, and then type the device phone number. Click **Add
     SMS Device.**
 
     After you click **Add SMS Device**, the Identity service sends an SMS
     text message with a four-digit PIN to the specified phone.
 
-6.  On the Verify Code form in the control panel, type the PIN code sent
+5.  On the Verify Code form in the control panel, type the PIN code sent
     to your mobile device in the verification code field. Then, click
     **Verify SMS Device**.
 
@@ -131,17 +129,15 @@ or [SecureAuth OTP](https://www.secureauth.com/Support/Downloads/Client-Applicat
 
 **To register and verify an OTP device**
 
-1.  Log in to the [Rackspace Cloud Control Panel]((https://login.rackspace.com).
+1.  Log in to the [Rackspace Cloud Control Panel](https://login.rackspace.com).
 
-2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+2.  In the upper-right corner of the Cloud Control Panel, click the
+    ***Account*** menu and select **Account Settings**.
 
-3.  In the upper-right corner of the Cloud Control Panel, click the
-    ***userName*** menu and select **My Profile & Settings**.
-
-4.  In the **Security Settings** section, select **Enable** for
+3.  In the **Rackspace Account Settings** section, select **Enable** for
     **Multi-factor authentication**.
 
-5.  On the Name of your Device form, type a **Device nickname** for
+4.  On the Name of your Device form, type a **Device nickname** for
     the OTP device. Then, click **Add Device.**
 
     After you click **Add Device**, the Identity service generates a
@@ -156,7 +152,7 @@ or [SecureAuth OTP](https://www.secureauth.com/Support/Downloads/Client-Applicat
     the OTP device using the device name you specified. It also
     generates a passcode.
 
-7.  To verify the new device, enter the passcode on the Verify
+6.  To verify the new device, enter the passcode on the Verify
     Code form. Then, click **Verify Mobile Passcode**.
 
     After you submit the verification code, you are automatically logged out.
@@ -170,7 +166,7 @@ or [SecureAuth OTP](https://www.secureauth.com/Support/Downloads/Client-Applicat
     You can update the default authentication method on the Account
     settings page.
 
-8.  In the Cloud Control Panel, enter your username and password. Then,
+7.  In the Cloud Control Panel, enter your username and password. Then,
     enter the verification code from the OTP device that you paired with
     your account
 
