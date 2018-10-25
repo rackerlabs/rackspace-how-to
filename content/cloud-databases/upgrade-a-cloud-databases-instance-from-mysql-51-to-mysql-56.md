@@ -5,8 +5,8 @@ title: Upgrade a Cloud Databases instance from MySQL 5.1 to MySQL 5.6
 type: article
 created_date: '2014-07-03'
 created_by: Rose Contreras
-last_modified_date: '2015-01-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -29,23 +29,23 @@ Before you upgrade the instance, we recommend that you review the following chan
 
 #### Back up the original Cloud Databases instance
 
-Using the Rackspace Cloud Control Panel, create a copy of the original instance. If you discover any structure discrepancies after you begin using the new MySQL 5.6 instance, you can rebuild your database from this backup copy to its previous MySQL 5.1 state.
+Using the Rackspace [Cloud Control Panel](http://login.rackspace.com/), create a copy of the original instance. If you discover any structure discrepancies after you begin using the new MySQL 5.6 instance, you can rebuild your database from this backup copy to its previous MySQL 5.1 state.
 
 #### Create the destination MySQL 5.6 instance
 
-Using the Rackspace Cloud Control Panel, create a new Cloud Databases instance and choose MySQL 5.6 for the instance type.
+Using the Rackspace [Cloud Control Panel](http://login.rackspace.com/), create a new Cloud Databases instance and choose MySQL 5.6 for the instance type.
 
 **Note:** If your current database uses any custom **my.cnf configuration** options, review the configuration of the new instance to ensure that those options are updated before importing your database. This is especially important when your configuration options involve character set and collation specifications. Custom **my.cnf** options can cause the imported content to not populate the new database instance as expected, leading to discrepancies with table character data encoding.
 
 ### Rebuild databases and users for a new MySQL instance
 
-The following steps explain how to generate lists of databases and users from the MySQL 5.1 instance and re-create them on the MySQL 5.6 instance.
+This section explains how to generate lists of databases and users from the MySQL 5.1 instance and re-create them on the MySQL 5.6 instance.
 
 #### Rebuild databases on the MySQL 5.6 instance
 
 1. In the Cloud Control Panel, click on the MySQL 5.1 instance. The list of databases is displayed on the Instance Details page.
 
-2. pen the Instance Details page for the new MySQL 5.6 instance, click **Create Database**, and enter the name of a database from the 5.1 instance. Repeat this step until you have re-created all the databases.
+2. Open the Instance Details page for the new MySQL 5.6 instance, click **Create Database**, and enter the name of a database from the 5.1 instance. Repeat this step until you have re-created all the databases.
 
 #### Rebuild users on the MySQL 5.6 instance
 

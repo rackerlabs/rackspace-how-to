@@ -5,8 +5,8 @@ title: Install or update the Cloud Backup agent on Linux
 type: article
 created_date: '2014-05-05'
 created_by: Kyle Laffoon
-last_modified_date: '2018-08-21'
-last_modified_by: Brett Johnson
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -107,7 +107,7 @@ add other options as needed.
 
     **Note**: If you use any flavor other than `raxcloudserver`, the agent shows
     as "not installed" in the **Backups** section at the bottom of the Cloud
-    Servers **Details** page in the Cloud Control Panel. However, items do appear
+    Servers **Details** page in the [Cloud Control Panel](http://login.rackspace.com). However, items do appear
     as they should on the **Backups** tab in the Cloud Control Panel.
 
 8. When prompted to confirm that you want to overwrite your configuration file,

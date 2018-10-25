@@ -15,7 +15,14 @@ product_url: cloud-backup
 
 **Warning**: The system actions are for users who are familiar with Rackspace Cloud Backup. Users with Managed Cloud Service Level accounts might want to contact their account manager before performing any of the following actions.
 
-This article describes the actions available in the **Rackspace Cloud Control Panel -> Backups -> Systems** selection.
+This article describes the actions that are available in the Backups section of the [Cloud Control Panel](http://login.rackspace.com/).
+
+Use the following steps to navigate to this area:
+
+1. Log in to the [Cloud Control Panel](http://login.rackspace.com/).
+2. Click the **Select a Product** drop-down menu in the top navigation bar,
+   then select **Rackspace Cloud**.
+3. Select **Backups > Systems**.
 
 You can access the **Actions** menu from the gear widget next to the server name in the system list or from the **Actions** button on the **System details** page. This menu is not the one that appears on the **Single Backup** page.
 
@@ -47,7 +54,7 @@ passphrase you that create is known only to you. If you lose or forget
 your passphrase, you *cannot recover your backups*.
 
 Also, after you turn on encryption, *you cannot turn it off*. You can
-only change your passphrase. This is a security measure. If anyone 
+only change your passphrase. This is a security measure. If anyone
 gains access to your account, they will not be able to access your
 backups without your passphrase.
 

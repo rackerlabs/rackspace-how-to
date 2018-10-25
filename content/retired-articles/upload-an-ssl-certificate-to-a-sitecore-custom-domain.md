@@ -7,8 +7,6 @@ created_date: '2017-05-08'
 created_by: Juan Garza
 last_modified_date: '2017-05-08'
 last_modified_by: Nate Archer
-product: Managed Operations
-product_url: managed-operations
 ---
 
 To secure an application that has a custom domain name, you need to use HTTPS. By default, Azure secures the **.azurewebsites.net** wildcard domain with a single SSL certificate, so you can already access your application using the  **https://\<appname>.azurewebsites.net** URL.

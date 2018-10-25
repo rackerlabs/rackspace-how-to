@@ -284,17 +284,24 @@ The following changes should occur:
         C:\>sc query driveclient
         [SC] EnumQueryServicesStatus:OpenService FAILED 1060:
 
-        The specified service does not exist as an installed service.              
+        The specified service does not exist as an installed service.
 
 
 ### Uninstall the agent from older versions of Windows
 
 **Note**: Complete the following steps **ONLY** if uninstalling the agent
 from Window's agent version 1.18 or lower. You can check your agent
-version by logging into your Cloud Control Panel, clicking on the
-"Backup" tab, and selecting your backup system. The version number is
-listed under *System Details.* If your version is higher than 1.18, see
-the previous section for instructions on how to uninstall.
+version by using the following steps:
+
+1. Log in to the [Cloud Control Panel](http://login.rackspace.com/).
+2. Click the **Select a Product** drop-down menu in the top navigation
+   bar, then select **Rackspace Cloud**.
+3. In the top navigation bar, select **Backups**.
+4. Select your backup system.
+
+   The version number appears under *System Details*. If your version is
+   higher than 1.18, see the previous section for instructions about how to
+   uninstall.
 
 To proceed for versions 1.18 or lower, run
 `%programfiles%\driveclient\uninst.exe`.

@@ -5,7 +5,7 @@ title: Cloud Databases FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2018-04-24'
+last_modified_date: '2018-10-23'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -102,8 +102,12 @@ product resources.
 
 #### Is Cloud Databases available in the Cloud Control Panel?
 
-Yes. To access Cloud Databases, log in to the [Cloud Control
-Panel](http://mycloud.rackspace.com/) and click **Databases**.
+Yes. Use the following steps to access Cloud Databases:
+
+1. Log in to the [Cloud Control Panel](http://login.rackspace.com/)
+2. Click the **Select a Product** drop-down menu in the top navigation bar,
+   then select **Rackspace Cloud**.
+3. In the top navigation bar, select **Databases**.
 
 Connecting to a Cloud Database instance remotely requires a [high availability
 instance group](/how-to/connect-to-a-cloud-databases-instance) with a public
@@ -250,7 +254,7 @@ cloud](https://support.rackspace.com/how-to/getting-started-with-rackspace-intel
 #### Can I create a Cloud Databases support ticket?
 
 Yes. A Cloud Databases support ticket category is available in the
-[Cloud Control Panel](https://mycloud.rackspace.com/).
+[Cloud Control Panel](https://login.rackspace.com/).
 
 ------------------------------------------------------------------------
 
@@ -300,13 +304,13 @@ access to `my.cnf` file settings per database size:
 
 You can provision instances with up to 64 GB of memory and up to 500 GB
 of disk storage. You can increase storage up to the maximum by using the
-[Cloud Control Panel](https://mycloud.rackspace.com/). To increase storage
+[Cloud Control Panel](https://login.rackspace.com/). To increase storage
 beyond 500 GB, submit a support ticket. Note that disk storage cannot be
 decreased on a running instance.
 
 #### Can I set up a read-only MySQL user in Cloud Databases?
 
-Yes. However, all users created through the Control Panel, API,
+Yes. However, all users created through the Cloud Control Panel, API,
 and CLI have full permissions by default.
 
 To create read-only users, you first must enable the root user and then use
@@ -386,9 +390,9 @@ database. You can connect to your database by using the following methods:
   instance](/how-to/connect-to-a-cloud-databases-instance)
 
 You can also use the Cloud Control Panel, the API, or the CLI to manage your
-database instance. While some features are not available in the Control Panel,
-you can access these features through the API or the CLI. More information
-about the API and the CLI is available in the [Cloud Databases API
+database instance. While some features are not available in the Cloud Control
+Panel, you can access these features through the API or the CLI. More
+information about the API and the CLI is available in the [Cloud Databases API
 documentation](https://developer.rackspace.com/docs/cloud-databases/v1/).
 
 #### How do I set the default time zone for MySQL?
@@ -556,9 +560,9 @@ support in newer versions of MySQL. We highly recommend all users to
 #### Do you support replication?
 
 Yes we do support master-slave replication. You can add and manage
-replicas using [Cloud Control Panel](https://mycloud.rackspace.com/) and
+replicas using [Cloud Control Panel](https://login.rackspace.com/) and
 Cloud Databases API. For more information about managing replication
-with API, see the [API documentation for
+by using the API, see the [API documentation for
 replication](https://developer.rackspace.com/docs/cloud-databases/v1/api-reference/replication/).
 
 ------------------------------------------------------------------------

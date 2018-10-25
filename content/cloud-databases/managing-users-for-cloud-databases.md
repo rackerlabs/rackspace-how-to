@@ -5,26 +5,26 @@ title: Managing Users for Cloud Databases
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Mike Asthalter
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
-You can perform the following user management operations for Cloud
-Databases.
+This article describes the user management operations for Cloud
+Databases that you can perform.
 
-### Create Users with Host Parameters
+### Create users with host parameters
 
- You can create a user in the Cloud Databases section of the Cloud
-Control Panel by clicking on an existing instance name and then clicking
-Create User in the Users section of the Instance Details page.
+You can create a user in the Cloud Databases section of the [Cloud
+Control Panel](http://login.rackspace.com/) by clicking on an existing
+instance name, and then clicking **Create User**in the **Users** section of
+the Instance Details page.
 
-
-#### Creating Users
+#### Create users
 
 When you create a new user, consider the following requirements and
-limitations.
+limitations:
 
 -   All users have full privileges on the databases to which they
     are assigned.
@@ -34,7 +34,7 @@ limitations.
 -   You can assign one or more databases to the user.
 -   A database can be assigned to a user when created.
 
-#### Valid Characters for User Names and Passwords
+#### Valid characters for user names and passwords
 
 The following characters are valid for user names and passwords:
 
@@ -45,7 +45,7 @@ The following characters are valid for user names and passwords:
 -   The underscore symbol (\_) is allowed anywhere in the database name,
     user name, or password
 
-#### Limitations on User Names and Passwords
+#### Limitations on user names and passwords
 
 The following characters are not allowed when you create user names or
 passwords:
@@ -59,9 +59,9 @@ passwords:
 -   Forward slashes
 -   Spaces at the beginning or end of the user name or password
 
-#### Valid Characters for Host Names
+#### Valid characters for host names
 
- The host parameter should be a numeric IPv4 address that describes the
+The host parameter should be a numeric IPv4 address that describes the
 host from which the user must connect (such as 192.168.1.12) or the
 symbol %. The symbol % serves as a wildcard to MySQL, and means "from
 anywhere". Users created without a host parameter are given the default
@@ -70,7 +70,7 @@ value of %, which allows them to connect to the database from any host.
 -   Valid host name - 111.111.111.11
 -   Invalid host name - server1.test.com
 
-### Modify User Accounts
+### Modify user accounts
 
 You can perform the following operations to modify a user by clicking
 the cog icon next to the user name:
@@ -81,27 +81,25 @@ the cog icon next to the user name:
 -   Manage database access (grant or revoke access to
     specific databases)
 
-### Manage Database Access for Users
+### Manage database access for users
 
-Clicking the Manage Database Access command in the actions menu will let
-you control user access to each database. To revoke a user's access to a
-database, click the "-" button next to the database name in the list.
-
+Clicking the **Manage Database Access** command in the **Actions** menu
+enables you to control user access to each database. To revoke a user's access
+to a database, click the "-" button next to the database name in the list.
 
 To grant a user access to a database, click the Add Access button. In
 the list of databases for which the user does not already have access,
 select the check boxes next to the appropriate database names and then
 submit the changes to put them into effect.
 
-
-**Note:** Through the Control Panel, users can only be granted or
+**Note:** Through the Cloud Control Panel, users can only be granted or
 revoked full permissions on a database. To add more specific
 permissions, you must enable the root user as described in the following
 section.
 
-### Set Access-Level Permissions for Individual Users
+### Set access-level permissions for individual users
 
-Currently the Control Panel allows you to grant or revoke user access
+Currently the Cloud Control Panel enables you to grant or revoke user access
 for a given database, but all users are granted universal privileges on
 the database by default. Because of security concerns or other
 application needs, you may need to set specific privileges for a user
@@ -120,7 +118,7 @@ follow. Another way to enable the root user is through the
 Support for access-level control on Cloud Databases through our
 Control Panel will be provided in the future.
 
-#### Using the Trove Command Line Tool
+#### Use the Trove command-line tool
 
 In order to use the CLI, first you must [install the trove
 client](https://developer.rackspace.com/docs/cloud-databases/v1/developer-guide/#id5).
@@ -163,7 +161,7 @@ GRANT statement:
 **Note:**  You can reset the root user password by making subsequent
 calls to enable the root user.
 
-#### Using the API
+#### Use the API
 
 If you want to enable the root user via the API, you can follow the
 examples located in our [API

@@ -5,7 +5,7 @@ title: Monitoring Cloud Databases in the Cloud Control Panel
 type: article
 created_date: '2014-04-14'
 created_by: Neha Verma
-last_modified_date: '2018-07-05'
+last_modified_date: '2018-10-23'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -13,7 +13,7 @@ product_url: cloud-databases
 
 Monitoring is included with Cloud Databases to help you manage the
 health of your instances. You can configure monitoring checks and alarms by
-using the [Cloud Control Panel](https://mycloud.rackspace.com/) or the
+using the [Cloud Control Panel](https://login.rackspace.com/) or the
 [Cloud Monitoring
 API](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/).
 
@@ -45,7 +45,7 @@ instances.
 
 The graph for the CPU check displays how much of the CPU's available
 processing power the instance uses. It also displays the minimum, maximum,
-and average CPU usage for that period.
+and average CPU usage for that period, as shown in the following image:
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbcpugraph.png %}" />
 
@@ -64,7 +64,7 @@ is resized.
 The graph for the Load Average check displays the instance's load
 average on a per-minute basis. Whereas the CPU usage graph displays
 moment-to-moment fluctuations in CPU use, the Load Average graph
-reflects overall CPU usage.
+reflects overall CPU usage, as shown in the following image:
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbloadgraph.png %}" />
 
@@ -95,7 +95,7 @@ instance are available in the Cloud Control Panel under **Monitoring Alerts**.
 #### Network check
 
 The graph for the Network check displays inbound and outbound network
-traffic in kilobytes per second.
+traffic in kilobytes per second, as shown in the following image:
 
 <img src="{% asset_path cloud-databases/monitoring-cloud-databases-in-the-cloud-control-panel/dbnetworkgraph.png %}" />
 
@@ -111,7 +111,8 @@ to your contacts list to prevent email alerts from being marked as spam.
 
 #### Create alarms
 
-You can view and create alarms from the **Details** page for a check.
+Use the following steps to view and create alarms from the **Details** page
+for a check:
 
 1.  On the **Details** page for the Cloud Databases instance, click the name
     of the check for which you want to create an alarm.

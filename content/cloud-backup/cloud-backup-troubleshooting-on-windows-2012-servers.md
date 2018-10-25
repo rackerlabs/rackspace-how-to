@@ -21,18 +21,29 @@ As a Managed Infrastructure customer who administers your own servers, this arti
 
 ## Check for open issues
 
-Before you restart the DriveClient service, check [status.rackspace.com](https://status.rackspace.com) to ensure there are no Cloud Backup open issues that could be impacting your server instance. In addition, check the current support tickets to ensure that there has not been an incident that is causing the lack of accessibility of the server. To check
-your open support tickets, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/) and click 
-**Tickets > Ticket List** in the top navigation bar.
+Before you restart the DriveClient service, check [status.rackspace.com](https://status.rackspace.com) to ensure there are no Cloud Backup open issues that could be impacting your server instance. In addition, check the current support tickets to ensure that there has not been an incident that is causing the lack of accessibility of the server.
 
-If there are no open support tickets about the server in question, attempt to establish a connection as shown in the next section.
+Use the following steps to check your open support tickets:
 
-## Establish connection 
+1. Log in to the [Cloud Control Panel](http://login.rackspace.com).
+2. Click the **Select a Product** drop-down menu in the top navigation bar,
+   then select **Rackspace Cloud**.
+3. Select **Tickets > Ticket List**.
 
-1. In the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com), click on **Backups > Systems**.
-2. From the list of Cloud Backup Systems, click the backup server name. 
+If there are no open support tickets about the server in question, attempt to
+establish a connection, as shown in the next section.
+
+## Establish connection
+
+Use the following steps to establish a connection:
+
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. Click the **Select a Product** drop-down menu in the top navigation bar,
+   then select **Rackspace Cloud**.
+3. Select **Backups > Systems**.
+4. From the list of Cloud Backup Systems, click the backup server name.
    This action displays the following details about the backup system:
-   
+
    - The Internet Protocol (IP) address of the server
    - The system type
    - The backup vault size
@@ -42,11 +53,11 @@ If there are no open support tickets about the server in question, attempt to es
    - If service net is enabled
    - The agent version
 
-3. To the right of the system name, review the status of the backup agent.
+5. To the right of the system name, review the status of the backup agent.
    The backup status is **connected** or **disconnected**.
-4. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
-5. After 10 seconds, perform one of the following actions:
- - If the status is **connected**, contact Rackspace Technical Support.
+6. Wait ten seconds to ensure that the status is accurate because it can change after a few seconds.
+7. After 10 seconds, perform one of the following actions:
+ - If the status is **connected**, contact Rackspace Support.
  - If the status is **disconnected**, restart the DriveClient service as shown in the next section.
 
 ## Restart the DriveClient service
@@ -59,13 +70,13 @@ If there are no open support tickets about the server in question, attempt to es
 6. Ensure that the DriveClient is configured to start at boot up:
 
    a. Right-click the DriveClient service and click **Properties**.
-   
+
    b. Click the drop-down list next to **Startup type** and select **Automatic** (if not already selected).
-  
+
    c. Click the **OK** button at the bottom of the page.
-   
-   d. After the service restarts, check the Control Panel to ensure the service is running.
-   
+
+   d. After the service restarts, check the Cloud Control Panel to ensure the service is running.
+
 7. Perform one of the following:
    - If the agent is connected, contact Rackspace Technical Support.
    - If the agent is not connected, attach the backup log to a technical support ticket. The backup log is located at **C:\ProgramData\Driveclient\log\driveclient.log**. Rackspace Support uses the log file to expedite a response to the issue.
