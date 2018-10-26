@@ -1,11 +1,11 @@
 ---
 permalink: install-and-configure-phpmyadmin/
-audit_date: '2018-10-17'
+audit_date: '2018-10-26'
 title: Install and configure phpMyAdmin
 type: article
-created_date: '2018-10-17'
+created_date: '2018-10-26'
 created_by: Rackspace Support
-last_modified_date: '2018-10-17'
+last_modified_date: '2018-10-26'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -144,10 +144,22 @@ There are two configuration files that you must edit in phpMyAdmin:
 - **/etc/httpd/conf.d/phpMyAdmin.conf**: A virtual host pointing toward the phpMyAdmin application **/usr/share/phpMyAdmin**.
 - **/etc/phpMyAdmin/config.inc.php**: A phpMyAdmin configuration file that points toward the host and the database port.
 
-For the **httpd** configuration file, you primarily need to look at the top art of the file, which contains the instructions for what needs to be edited.
+For the **httpd** configuration file, you primarily need to look at the top part of the file, which contains the instructions for what needs to be edited.
 
 Run the following command to output the top few lines of the configuration file:
 
     head -7 /etc/httpd/conf.d/phpMyAdmin.conf
 
 The following output provides an example of what the command returns:
+
+    # phpMyAdmin - Web based MySQL browser written in php
+
+    #
+
+    # Allows only localhost by default
+
+    #
+
+    # But allowing phpMyAdmin to anyone other than localhost should be considered
+
+    # dangerous unless properly secured by SSL
