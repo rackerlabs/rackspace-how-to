@@ -5,13 +5,15 @@ title: Start an Emergency Console session
 type: article
 created_date: '2012-03-27'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-As the administrator for your cloud servers, you might need to occasionally log in to one of your servers by using the Emergency Console feature in the Cloud Control Panel.
+As the administrator for your Cloud Servers, you might need to occasionally log
+in to one of your servers by using the Emergency Console feature in the
+[Cloud Control Panel](https://login.rackspace.com).
 
 ### Access the console
 
