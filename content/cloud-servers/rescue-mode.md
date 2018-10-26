@@ -44,8 +44,9 @@ Panel](https://login.rackspace.com).
 Rescue mode grants the root user full access to your non-bootable
 server's file system. You can use rescue mode to modify problems in
 configuration files or to copy data from your Cloud Server to a remote
-location. Using rescue mode through the Cloud Control Panel is similar to
-booting into single user mode or safe mode with networking enabled.
+location. Using rescue mode through the Cloud Control Panel
+is similar to booting into single user mode or safe mode with
+networking enabled.
 
 The following sections provide instructions for using rescue mode:
 
