@@ -17,7 +17,7 @@ system data. These problems might be caused by file system corruption,
 boot file corruption, or configuration errors. If your
 system encounters a problem during the boot process, you typically boot
 into a maintenance mode environment called single user mode (on Linux&reg;
-or mac OS&reg;) or safe mode (on Windows&reg;) that enables you
+or macOS&reg;) or safe mode (on Windows&reg;) that enables you
 to log in with your root password and check for any errors.
 
 However, single user mode has the following drawbacks:
