@@ -5,10 +5,8 @@ title: Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers
 type: article
 created_date: '2013-02-11'
 created_by: Renee Rendon
-last_modified_date: '2016-07-08'
-last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2018-10-26'
+last_modified_by: Kate Dougherty
 ---
 
 If your Linux system has become non-bootable or is suffering from critical system errors, you can use rescue mode to recover your system data. These problems may be caused by file system corruption, boot file corruption, or other configuration errors. Normally, if your system encounters any problem during the boot process, you would boot in to a maintenance mode environment known as Single User Mode that would allow you to login with your root password and check for any errors. Using Single User Mode can cause the following issues:
