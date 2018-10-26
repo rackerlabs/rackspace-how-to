@@ -30,7 +30,7 @@ scheduling the creation of server images.
 
 3.  Select **Servers > Cloud Servers**.
 
-3.  Locate the server you want to create an image of.
+3.  Locate the server for which you want to create an image.
 
 4.  Click the **Actions** gear icon to the left of the server name and
     select **Create Image**.
