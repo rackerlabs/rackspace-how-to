@@ -17,7 +17,7 @@ system data. These problems might be caused by file system corruption,
 boot file corruption, or configuration errors. If your
 system encounters a problem during the boot process, you typically boot
 into a maintenance mode environment called single user mode (on Linux&reg;
-or Mac OS&reg;) or safe mode (on Windows&reg;) that enables you
+or mac OS&reg;) or safe mode (on Windows&reg;) that enables you
 to log in with your root password and check for any errors.
 
 However, single user mode has the following drawbacks:
@@ -25,7 +25,7 @@ However, single user mode has the following drawbacks:
 -   Your system is read-only, and you cannot make corrective changes.
 -   Most services (such as networking) are disabled. This situation prevents
     you from copying your data to another server.
--   You have to access your server by using the Console, which is
+-   You have to access your server by using the console, which is
     slower than using a traditional Secure Shell (SSH) login.
 
 Safe mode also has its share of problems:
@@ -105,7 +105,7 @@ You can connect to your server in rescue mode in the following ways:
   log in to rescue mode.
 
 - **Windows**: Use an RDP client to connect to your Windows server by
-  using the public IP address and the temporary Administrator password.
+  using the public IP address and the temporary administrator password.
 
 ### Troubleshoot a Linux server in rescue mode
 
@@ -204,12 +204,12 @@ the file system.
 
 #### Revert a Windows server from rescue mode
 
-There is a known issue that might occur when a Windows cloud server is put
+A known issue exists that might occur when a Windows cloud server is put
 into rescue mode. After the old system drive is brought online, you are no
 longer able to boot into Windows when reverting back from the rescue
 environment.
 
-This issue is caused by a Disk ID conflict. The original Boot DISK ID is
+This issue is caused by a disk ID conflict. The original boot disk ID is
 rewritten and no longer matches what the server expects for the boot volume.
 Because the cloud server's rescue mode uses the image that was initially used
 to create the server, the disk ID of the server and the temporary image for
@@ -226,10 +226,10 @@ Use the following steps to resolve the ID conflict on your Windows server.
 
 **Note**: This process has been tested only on Cloud Servers.
 
-1. With the server in rescue mode and the original system drive set to online,
-   open a command-line interface (CLI).
+1. With the server in rescue mode and the original system drive set to
+   **Online**, open a command-line interface (CLI).
 
-    **Note**: Do not use Powershell for this process because the commands will
+    **Note**: Do not use PowerShell for this process because the commands will
     not work.
 
 2. Run the following command:
@@ -239,7 +239,7 @@ Use the following steps to resolve the ID conflict on your Windows server.
 3. Review the output and ensure that drive **C** is the target for objects in
    the output.
 
-    The BCD output should look like the following example:
+    The Boot Configuration Data (BCD) output should look like the following example:
 
     <img src="{% asset_path cloud-servers/rescue-mode/goodBCD.png %}" alt="" />
 
@@ -255,7 +255,7 @@ Use the following steps to resolve the ID conflict on your Windows server.
 
         bcdedit /store d:\boot\bcd /set {ntldr} device partition=c:
 
-5. Run the following command again to verify the the output:
+5. Run the following command again to verify the output:
 
         bcdedit /store d:\boot\bcd
 
@@ -274,7 +274,7 @@ Use the following steps to resolve the ID conflict on your Windows server.
 
 10. To find the disk ID of drive **C**, run the following command:
 
-        SELECT DISK ( the disk number that was found in diskpart and Disk Manager)
+        SELECT DISK (the disk number that was found in diskpart and Disk Manager)
 
 11. To get the drive ID, enter the following command:
 
@@ -310,7 +310,7 @@ Use the following steps to change the drive ID:
 
 3. Change drive D by running the following commands:
 
-        SELECT DISK ( the disk number that our found in DISKPART and disk manager
+        SELECT DISK (the disk number that our found in DISKPART and disk manager)
 
         UNIQUEID DISK id=(disk ID from C drive that was recorded, in the example this was 42D9DECD)
 
