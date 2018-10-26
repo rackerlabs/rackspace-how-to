@@ -5,10 +5,9 @@ title: Rescue mode on Windows cloud servers
 type: article
 created_date: '2015-09-15'
 created_by: Richard Hinojosa
-last_modified_date: '2018-10-25'
-last_modified_by: Cat Lookabaugh
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2018-10-26'
+last_modified_by: Kate Dougherty
+
 ---
 
 If your Microsoft&reg; Windows&reg; system has become non-bootable or is
@@ -63,11 +62,9 @@ Control Panel is similar to booting into safe mode with networking enabled.
 
 ### Connect to the server in rescue mode
 
-To connect to the server in rescue mode, use a RDP client, as shown in the
-following screenshot. Use the public IP address and the temporary Administrator
+To connect to the server in rescue mode, use an RDP client. Use the public IP address and the temporary Administrator
 password to connect.
 
-<img src="{% asset_path cloud-servers/rescue-mode-on-windows-servers/rdpclient.png %}" alt="" />
 
 ### Troubleshoot the server in rescue mode
 
@@ -82,12 +79,10 @@ to determine your file system's device.
 
 2. Double-click **diskmgmt** to start the program.
 
-   When the program is running, the output should resemble the following
-   screenshot, which shows the device and the size of the disk:
+   When the program is running, the output shows the device and the size of
+   the disk.
 
-   <img src="{% asset_path cloud-servers/rescue-mode-on-windows-servers/diskmgmtoutput.png %}" alt="" />
-
-   Following is a description of the different disks in the screenshot:
+   Following is a description of the different disks that appear:
 
       - Disk 0 is the rescue file system. It is currently being used as drive **C**.
       - Disk 1 is your system disk. You must set it to online in order to work with your data.
@@ -95,8 +90,6 @@ to determine your file system's device.
 3.  Right-click Disk 1 and select **Online**.
 
    Your system disk is set as drive **D**, and you can now access your data.
-
-   <img src="{% asset_path cloud-servers/rescue-mode-on-windows-servers/ddrive.png %}" alt="" />
 
 ### Revert the server from rescue mode
 
@@ -111,8 +104,6 @@ This causes a name collision when the server disk is brought online. Due to this
 issue, the OS rewrites the ID of the disk. After this takes place, the boot
 loader can no longer find the boot disk. This is what causes the server crash.
 
-<img src="{% asset_path cloud-servers/rescue-mode-on-windows-servers/boot-fail-message.png %}" alt="" />
-
 #### Resolve the ID conflict
 
 **Note**: This process has been tested on Cloud Servers only.
@@ -126,9 +117,6 @@ loader can no longer find the boot disk. This is what causes the server crash.
         bcdedit /store d:\boot\bcd
 
 3. Review the output and ensure that drive **C** is the target for objects in the output.
-  Following is an example of correct BCD output:
-
-  <img src="{% asset_path cloud-servers/rescue-mode-on-windows-servers/goodBCD.png %}" alt="" />
 
 4. If the objects do not point to drive **C**, run the following commands:
 
