@@ -5,10 +5,8 @@ title: Rackspace Cloud Essentials - Rescue Mode on Windows Cloud Servers behavio
 type: article
 created_date: '2012-03-01'
 created_by: Rackspace Support
-last_modified_date: '2016-07-08'
-last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2018-10-26'
+last_modified_by: Kate Dougherty
 ---
 
 Rescue Mode is a maintenance state that can allow you access to an unresponsive server. You would use this in order to fix configuration problems, or to copy your data and move it to another server.  
