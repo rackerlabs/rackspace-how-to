@@ -1,11 +1,11 @@
 ---
 permalink: private-and-public-access-to-your-cloud-server/
-audit_date: '2018-10-25'
+audit_date: '2018-10-26'
 title: Private and Public Access to Your Cloud Server
 type: article
 created_date: '2012-08-22'
 created_by: Susan Million
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -28,8 +28,8 @@ To locate the IP addresses for your Cloud Server, execute the following steps:
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3.  Select **Servers > Cloud Servers**.
-2.  Click the name of server in the server list.
-3.  Scroll down to the **Networks** section.
+4.  Click the name of server in the server list.
+5.  Scroll down to the **Networks** section.
 
 Following is a sample Networks table:
 

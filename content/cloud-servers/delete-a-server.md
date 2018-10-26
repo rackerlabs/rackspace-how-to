@@ -1,11 +1,11 @@
 ---
 permalink: delete-a-server/
-audit_date: '2018-10-25'
+audit_date: '2018-10-26'
 title: Delete a server
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -30,7 +30,7 @@ Use the following steps to delete a server:
 
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. Select click **Servers > Cloud Servers**.
+3. Select **Servers > Cloud Servers**.
 
 4. Click the gear icon next to the server that you want to delete and select **Delete Server**.
 

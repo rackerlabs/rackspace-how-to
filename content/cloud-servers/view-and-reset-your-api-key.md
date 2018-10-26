@@ -1,17 +1,17 @@
 ---
 permalink: view-and-reset-your-api-key/
-audit_date: '2018-10-25'
+audit_date: '2018-10-26'
 title: View and reset your API key
 type: article
 created_date: '2013-02-05'
 created_by: Kyle Laffoon
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The [Cloud Control Panel](http://login.rackspace.com/) gives you GUI access to
+The [Cloud Control Panel](https://login.rackspace.com/) gives you GUI access to
 all of your Rackspace services, but sometimes you might want to manage your
 assets through a scripting interface like the API. (See our
 [catalog of APIs](https://developer.rackspace.com/docs/) for reference.)

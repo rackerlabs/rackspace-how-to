@@ -1,11 +1,11 @@
 ---
 permalink: faq-for-seamless-sign-on-between-myrackspace-and-the-cloud-control-panel/
-audit_date: '2018-10-25'
+audit_date: '2018-10-26'
 title: FAQ for Seamless sign-on between MyRackspace and the Cloud Control Panel
 type: article
 created_date: '2014-10-15'
 created_by: David Hendler
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -162,5 +162,5 @@ Seamless SSO has the following limitations:
     -   Service level upgrades
 
 To access these features, log out, and then log in to the
-[Cloud Control Panel](http://login.rackspace.com) directly with your cloud
+[Cloud Control Panel](https://login.rackspace.com) directly with your cloud
 credentials.

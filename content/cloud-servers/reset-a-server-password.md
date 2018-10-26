@@ -1,11 +1,11 @@
 ---
 permalink: reset-a-server-password/
-audit_date: '2108-10-25'
+audit_date: '2108-10-26'
 title: Reset a server's password
 type: article
 created_date: '2012-07-19'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 An extremely important aspect of managing your server is controlling the
 (Linux) **root** or (Windows) **Administrator** account password. You
-can always reset it through the [Cloud Control Panel](http://login.rackspace.com).
+can always reset it through the [Cloud Control Panel](https://login.rackspace.com).
 
 ### Reset your server password
 

@@ -1,27 +1,27 @@
 ---
 permalink: check-for-a-security-compromise-rescue-mode-investigation/
-audit_date: '2018-10-25'
+audit_date: '2018-10-26'
 title: 'Check for a security compromise: Rescue mode investigation'
 type: article
 created_date: '2013-04-26'
 created_by: Rose Contreras
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the article, [Checking for a security compromise: Back doors and intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
+In the article [Checking for a security compromise: Back doors and intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
 you learned some basic techniques for collecting the information needed to
-intruders who have compromised your server. This article describes how to use
-the [Cloud Control Panel's](https://login.rackspace.com/) *Rescue Mode* to take
-a closer look at your system. You can use rescue mode to better understand how
-your server was compromised and to identify non-compromised files before backing
-up the data.
+identify intruders who have compromised your server. This article describes how
+to use the [Cloud Control Panel's](https://login.rackspace.com/) *Rescue Mode*
+to take a closer look at your system. You can use rescue mode to better understand
+how your server was compromised and to identify non-compromised files before
+backing up the data.
 
 ### Activate rescue mode
 
-Because your cloud server's operating system might also be compromised, you
+Because your Cloud Server's operating system might also be compromised, you
 cannot rely on it. The intruder could have compromised binaries such as 'ls,'
 'find,' and 'netstat,' so their output could mislead you. Consequently, you must
 use a different operating system environment to safely investigate the compromise.
@@ -48,7 +48,7 @@ compiling from source.
 
         apt-get install chkrootkit
 
-2. Run `chkrootkit` against the mounted file system of the cloud server:
+2. Run `chkrootkit` against the mounted file system of the Cloud Server:
 
         chkrootkit -r /mnt/demo
 
@@ -93,14 +93,14 @@ options and information on using `rkhunter`, see <http://rkhunter.cvs.sourceforg
 
 ### Check last commands
 
-To get an idea of how the cloud server security was breached, check which users
-ran commands before the cloud server was compromised.
+To get an idea of how the Cloud Server security was breached, check which users
+ran commands before the Cloud Server was compromised.
 
 The **.bashhistory** file contains the last commands used with the Bash shell.
 You need to check the **.bashhistory** files in each user's home directory. The
 most important **.bashhistory** file is the one belonging to root: **/root/.bashhistory**.
 
-A compromised cloud server might have entries like the following ones:
+A compromised Cloud Server might have entries like the following ones:
 
     wget http://malware.tar.gz
     gunzip malware.tar.gz
@@ -151,13 +151,13 @@ measure time in minutes:
 
 #### Example
 
-Find all of the files in your cloud server owned by the `demo` user
+Find all of the files in your Cloud Server owned by the `demo` user
 that have been accessed within the last five minutes:
 
     find /mnt/demo -user demo -amin -5
 
 The following list of `find` command options might be useful while investigating
-the compromised cloud server investigation:
+the compromised Cloud Server investigation:
 
     -nouser: shows output not associated with an existing userid
     -nogroup: shows output not associated with an existing groupid
@@ -178,9 +178,9 @@ You can also look at log files in the **/var/log** directory. For example,
 
 In [Checking for a security compromise: Backdoors and Intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
 you learned some techniques to use to discover back doors and track intruders
-on your cloud server. This will help you to avoid the situation or mistake that
+on your Cloud Server. This will help you to avoid the situation or mistake that
 led to the compromise, minimizing the chance of future compromises. In this
-article, you learned how to investigate your cloud server in rescue mode.
+article, you learned how to investigate your Cloud Server in rescue mode.
 
 Whether it is caused by viruses, file corruption, machine failure, or
 other unforeseen mishaps, the possibility of data loss is real. To avoid the

@@ -1,11 +1,11 @@
 ---
 permalink: create-a-cloud-server/
-audit_date: '2018-10-25'
+audit_date: '2018-10-26'
 title: Create a cloud server
 type: article
 created_date: '2012-07-17'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -56,7 +56,7 @@ Control Panel interface.
 
        **Note:** If you do not have a public key, click [How to get a public key](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os)
        and follow the instructions in that article. For more information on how
-       to generate a public and private key pairs, see
+       to generate public and private key pairs, see
        [Manage SSH Keypairs for Cloud Servers with python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
     d. After you have your entered your Key Name and the Public Key, click **Add Public Key**.
@@ -75,10 +75,10 @@ Control Panel interface.
 
 12. Click **Create Server**.
 
-Your server is built. After it is done being provisioned, your server displays
-the status **Running** and is now available for remote connection. Specific
-remote connection instructions for your server are displayed in the side bar on
-the right of the Cloud Control Panel.
+After provisioning is complete, your server displays the status **Running** and
+is now available for remote connection. Specific remote connection instructions
+for your server are displayed in the side bar on the right of the Cloud Control
+Panel.
 
 ### Related articles
 

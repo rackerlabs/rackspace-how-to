@@ -5,7 +5,7 @@ title: Get Started with Apache Hadoop on Rackspace Cloud
 type: article
 created_date: '2013-03-18'
 created_by: Alyssa Hurtgen
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -26,7 +26,7 @@ Hadoop Distributed File System.
 #### Hadoop Use Cases
 
 In a very short time, Hadoop has revolutionized almost every business
-sector. Actual use cases involving Hadoop include the following cases:
+sector. Actual use cases involving Hadoop include the following scenarios:
 
 -   Analyzing medical data.
 -   Analyzing transaction data to detect anomalies and suggest
@@ -72,7 +72,7 @@ particular, the following two projects are useful:
 Using these tools, the article demonstrates how to create a Hadoop installation
 for the following scenarios:
 
--   1 Cloud Server as workstation
+-   1 Cloud Server as workstation.
 -   1 Cloud Server as Hadoop Master node.
 -   1 Cloud Server as Hadoop Worker node.
 -   Gradually add up to 63 more Hadoop Worker nodes.
@@ -102,7 +102,7 @@ to create other servers. To begin, SSH into it and run the following commands:
 Note: for information about how to find your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).
 
 This installs the Chef server, installs knife-rackspace plugin, uploads the
-chef hdp-cookbooks, and configures then to talk to Rackspace Cloud using
+chef hdp-cookbooks, and configures them to talk to Rackspace Cloud using
 your account. You can now use the knife client to interact with Rackspace
 Cloud and configure your Hadoop cluster.
 
@@ -201,9 +201,8 @@ sampling.
 
     curl -L "https://raw.github.com/sacharya/random-scripts/master/knife-rackspace-hadoop/wordcount.sh" | bash
 
-This script downloads all of Shakespeare's books from project,
-Gutenberg, upload them to HDFS and run a Map Reduce operation run a word
-count against the text.
+This script downloads all of Shakespeare's books from Project Gutenberg, uploads
+them to HDFS, and runs a Map Reduce operation run a word count against the text.
 
 #### Adding More Nodes
 

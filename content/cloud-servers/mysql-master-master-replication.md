@@ -5,7 +5,7 @@ title: Configure MySQL Master-Master Replication
 type: article
 created_date: '2011-06-07'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -24,17 +24,17 @@ This article shows you how to set up
 [MySQL Master-Master database replication](http://dev.mysql.com/doc/refman/5.6/en/mysql-cluster-replication-multi-master.html)
 between two Cloud Servers. Master-Master data replication enables replicated
 data, stored on multiple computers, to be updated by any authorized contributing
-member of the group. This enables for more open collaboration than
+member of the group. This enables more open collaboration than
 [Master-Slave replication](/how-to/set-up-mysql-master-slave-replication) where
 any needed changes identified by a group member must to be submitted to the
 designated "master" of the node.
 
-This tutorial uses the Debian 5 (Lenny)operating sytem, built from the Rackspace
+This tutorial uses the Debian 5 (Lenny) operating sytem, built from the Rackspace
 Cloud base image.
 
 ### Setup Outline
 
-There are two Cloud Servers, named debian501 and debian502, in this exercise.
+There are two Cloud Servers, `debian501` and `debian502`, in this exercise.
 Both servers have two IP addresses (one public, one private). The exercise
 configures the replication to be done over the private IP interface so that you
 don't incur any bandwidth charges.
@@ -168,4 +168,4 @@ because, by default, all the binary logs are kept for 10 days. If you have a hig
 transaction count on your database application, it can cause significant hard
 disk space usage in logs. So, consider changing those values to match your server
 backup policies. For example, if you have daily backups setup of your MySQL node,
-it makes no sense to keep 10 days worth of binary logs.
+you don't need to keep 10 days worth of binary logs.

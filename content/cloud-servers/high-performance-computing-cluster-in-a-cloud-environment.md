@@ -5,7 +5,7 @@ title: High Performance Computing Cluster in a Cloud Environment
 type: article
 created_date: '2013-03-18'
 created_by: Alyssa Hurtgen
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -20,7 +20,7 @@ between different nodes.
 
 Currently, most projects requiring HPC are still running on legacy Unix
 systems. Migrating these projects to a Cloud-based installation is very
-simple and does not require much additional setup. This tutorial, builds
+simple and does not require much additional setup. This tutorial builds
 an HPC cluster with Open MPI on the Rackspace Cloud and runs an Open MPI
 application on top of the cluster. By the end of this tutorial, you should
 know how to leverage the Cloud to rapidly build and scale an HPC cluster
@@ -85,7 +85,7 @@ Cloud Server from the web interface with the following attributes.
 Click **Create Server** and the Cloud Server build process begins. While it builds,
 a popup displays your Cloud Server password. Record this information for future
 reference. Dismiss the popup window and wait for the server build to complete.
-Write down IP address for the server after it becomes available.
+Write down the IP address for the server after it becomes available.
 
 ### Install Open MPI
 
@@ -184,7 +184,7 @@ You should see the following output:
 
     Connectivity test on 1 processes PASSED.
 
-This confirms that the first node is online and operational,so the next section
+This confirms that the first node is online and operational. The next section
 shows you how to finish building the cluster.
 
 ### Create and deploy a Cloud Server image
@@ -250,7 +250,7 @@ cluster. To do this, SSH into the master node and run the following command:
 
 The Tachyon Parallel / Multiprocessor Ray Tracing System comes with
 multiple sample data files in the scenes folder, which you can use
-to run your tests. First, run it on one node, by using the following command:
+to run your tests. First, run it on one node by using the following command:
 
     cd ~/tachyon/compile/linux-mpi
     ./tachyon ../../scenes/teapot.dat
@@ -267,7 +267,7 @@ You should see the following output:
       Ray Tracing Time:     2.1399 seconds
         Image I/O Time:     0.0174 seconds
 
-TRun the following command and notice the ray tracing time so that you can
+Run the following command and notice the ray tracing time so that you can
 compare it to your parallel run:
 
     mpirun -np 4 --hostfile ~/mpi_hosts ./tachyon ../../scenes/teapot.dat -format BMP
@@ -284,7 +284,7 @@ You should see the following output:
       Ray Tracing Time:     0.6048 seconds
         Image I/O Time:     0.0182 seconds
 
-Your cluster consisted of four nodes and one CPU each, therefore, the
+Your cluster consisted of four nodes and one CPU each. Therefore, the
 performance improvement was almost four times greater. You should have
 significant improvements even if you don't have multiple nodes and instead
 run your application on only one node, with OpenMPI using both CPUs.
