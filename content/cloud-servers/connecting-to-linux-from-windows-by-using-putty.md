@@ -105,3 +105,4 @@ We recommend that you change the root password to something personal.
 3.  Reenter the new password and press **Enter**.
 
 When you connect to your server, use this password with the root user.
+
