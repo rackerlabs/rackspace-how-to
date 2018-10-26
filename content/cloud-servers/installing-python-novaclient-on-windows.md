@@ -5,7 +5,7 @@ title: Install python-novaclient on Windows
 type: article
 created_date: '2012-07-23'
 created_by: Jered Heeschen
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -122,7 +122,7 @@ Each variable set requires the following names and values.
 <tr class="strow property">
 <td valign="top" headers="d26e245" class="stentry proptype">OS_TENANT_NAME</td>
 <td valign="top" headers="d26e248" class="stentry propvalue">account number</td>
-<td valign="top" headers="d26e251" class="stentry propdesc">Set this value to your Rackspace Cloud account number, visible in the upper right when logged in to the <a href="https://mycloud.rackspace.com">Cloud Control Panel</a>.</td>
+<td valign="top" headers="d26e251" class="stentry propdesc">Set this value to your Rackspace Cloud account number, visible in the upper right when logged in to the <a href="https://login.rackspace.com">Cloud Control Panel</a>.</td>
 </tr>
 <tr class="strow property">
 <td valign="top" headers="d26e245" class="stentry proptype">OS_AUTH_SYSTEM</td>
@@ -145,10 +145,10 @@ Each variable set requires the following names and values.
 </tr>
 <tr class="strow property">
 <td valign="top" headers="d26e245" class="stentry proptype">OS_REGION_NAME</td>
-<td valign="top" headers="d26e248" class="stentry propvalue">datacenter region</td>
-<td valign="top" headers="d26e251" class="stentry propdesc">The code for the datacenter region containing the servers you want to manipulate.
-          You can check your server's datacenter by checking its details screen in the Cloud Control
-          Panel. The datacenter code is just the first three letters of the datacenter's identifier;
+<td valign="top" headers="d26e248" class="stentry propvalue">data center region</td>
+<td valign="top" headers="d26e251" class="stentry propdesc">The code for the data center region containing the servers you want to manipulate.
+          You can check your server's data center by checking its details screen in the Cloud Control
+          Panel. The data center code is just the first three letters of the data center's identifier;
           e.g. <code>DFW</code> or <code>ORD</code>. You can override the region setting
           with the <code>--os-region-name</code> command-line option.</td>
 </tr>

@@ -5,7 +5,7 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -25,26 +25,26 @@ It depends on your service level. For Managed Infrastructure Cloud
 accounts, you are responsible for installing and maintaining all
 software on your server. If your account has a Managed Operations service
 level, Rackspace provides support for specific software and server configurations
-on cloud servers. For more information about supported systems and third party
+on Cloud Servers. For more information about supported systems and third party
 packages, see [Linux Spheres of Support for Dedicated and Managed Operations](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops).
 
 #### What programming languages or applications are supported?
 
-All of our cloud servers can be configured as development stacks,
+All of our Cloud Servers can be configured as development stacks,
 database servers, and web servers. Apache, Lighttpd, Mongrel, and Visual
 Studio are all options.
 
 You can use the programming language of your choice to interact with
-cloud servers. For help getting started, use any of the
+Cloud Servers. For help getting started, use any of the
 Software Development Kits (SDKs) documented at
 <https://developer.rackspace.com/docs/>.
 
 #### Do you host DNS?
 
 Yes. The Cloud Control Panel has a DNS menu for maintaining domain records for
-your cloud servers. For more information, see [Create DNS records for Cloud Servers with the Control Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
+your Cloud Servers. For more information, see [Create DNS records for Cloud Servers with the Control Panel](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel).
 
-#### What are the DNS servers for my cloud server?
+#### What are the DNS servers for my Cloud Server?
 
 **ns.rackspace.com** and **ns2.rackspace.com**
 
@@ -58,7 +58,7 @@ The answer depends largely on your experience as a Systems Administrator
 for Linux or Windows Server. Our Linux servers are full Linux
 distributions with root-level access. Our Windows servers give you
 Administrator access, and are built with nothing but the default
-applications on installation. Cloud servers are designed for customers who
+applications on installation. Cloud Servers are designed for customers who
 want to start from scratch and tune a system for their own purposes.
 
 If you are uncomfortable in the System Administrator role, we also offer a
@@ -70,7 +70,7 @@ We have two service levels: **Managed Infrastructure** and **Managed
 Operations**.
 
 At the Managed Infrastructure level, we support the
-server hardware, datacenter environment, and Internet connectivity, but
+server hardware, data center environment, and Internet connectivity, but
 we do not support the software installed on your server, including the
 operating system and its configuration. When you provision a cloud
 server, you are given a server with unrestricted access. The Managed
@@ -81,16 +81,16 @@ installation of common applications. We also have community forums where
 you can share tips and tricks with other customers.
 
 The [Managed Operations service](/how-to/linux-spheres-of-support-for-dedicated-and-managed-ops)
-level provides additional support on cloud servers, which includes monitoring,
+level provides additional support on Cloud Servers, which includes monitoring,
 operating system and application infrastructure layer support, and
 technical guidance.
 
-#### What can I do with a cloud server?
+#### What can I do with a Cloud Server?
 
 The Rackspace Cloud Servers solution is a fully unrestricted,
 root/Administrator level access, Linux or Windows environment. Any
 application or service that you can run from a traditional, physical,
-dedicated-unmanaged operations server can be run from your cloud server.
+dedicated-unmanaged operations server can be run from your Cloud Server.
 
 #### Can I reinstall a different distribution or start over?
 
@@ -99,7 +99,7 @@ a new distribution. However, be sure to backup of your data first because this
 process destroys any data that is on the server. The rebuild process does allow
 you to save your IP address.
 
-#### What if I mess up my cloud server?
+#### What if I mess up my Cloud Server?
 
 You can [reboot your server](/how-to/reboot-your-server).
 You can [restore from a backup](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
@@ -129,7 +129,7 @@ requirements with regards to HIPAA, Rackspace offers a [Business Associate Agree
 of our dedicated hosting services segments, and it is included by
 default in our agreements with customers for those services.
 
-#### How does Cloud Servers handle my data from potentially becoming visible when I delete a server?
+#### How do Cloud Servers prevent my data from potentially becoming visible when I delete a server?
 
 For your security, the Virtual Hard Drive (VHD) on the hypervisor is
 deleted when you delete a server. After it is deleted, data cannot be
@@ -234,17 +234,17 @@ Yes. For more information, see [Requesting Additional IPv4 Addresses for Cloud S
 #### I want to set up multiple servers from the same image. Can I do this?
 
 As a Cloud Servers customer, you can create both on-demand
-images and scheduled images of your cloud server. All server
+images and scheduled images of your Cloud Server. All server
 images are stored in your Cloud Files account, which enables you to
 keep these images even after the server they were created on is
 deleted. It also gives you the flexibility to create an unlimited number of
-on-demand images of your server. All cloud server images can be used to create
-new cloud servers or to restore an existing cloud server.
+on-demand images of your server. All Cloud Server images can be used to create
+new Cloud Servers or to restore an existing Cloud Server.
 For details, see [Create an image of a server and restore a server from a saved image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
 
 #### Do you offer on-demand images (snapshots) and scheduled images and what are the prices?
 
-You can create an image of any General Purpose cloud server, and you can
+You can create an image of any General Purpose Cloud Server, and you can
 use this image to restore a server or clone a new one. You can create an
 unlimited number of images on-demand, or you can schedule an automatic
 daily or weekly image.
@@ -253,11 +253,11 @@ Images are compressed and stored on Rackspace Cloud Files at the
 [current storage rates](http://www.rackspace.com/cloud/cloud_hosting_products/files/pricing/).
 Please also read this list of [snapshot limitations](/how-to/rackspace-cloud-essentials-cloud-server-image-limitations).
 
-If you are using a virtual cloud server, see [Create an image of a server and restore a server from a saved image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+If you are using a virtual Cloud Server, see [Create an image of a server and restore a server from a saved image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
 for more information about the image options associated with virtual cloud
 servers.
 
-#### Can I use the GUI interface for my Linux cloud server?
+#### Can I use the GUI interface for my Linux Cloud Server?
 
 Yes. For instructions on how to install VNC and X-Windows, see
 [Install VNC on a Cloud Server](/how-to/vnc-install "VNC Install").
@@ -266,12 +266,12 @@ Note that using a GUI requires a large amount of bandwidth on your server.
 #### Do you have a Control Panel?
 
 Yes, the Rackspace [Cloud Control Panel](https://login.rackspace.com)
-is a web-based management interface for restarting your cloud server,
+is a web-based management interface for restarting your Cloud Server,
 starting support discussions, viewing stats, and scheduling snapshots.
 To learn more about the Cloud Control Panel, see
 [Introducing the Rackspace Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel).
 However, we do not offer a control panel like **Plesk** or **cPanel**. You're free to
-install such packages for your own cloud server. If you are installing cPanel, be
+install such packages for your own Cloud Server. If you are installing cPanel, be
 sure to install on a clean (empty) server. For more information,
 see [CentOS/RHEL - Installing cPanel & WHM 11.24](https://community.rackspace.com/products/f/25/t/6798).
 The use of Plesk or cPanel is not supported and strongly discouraged for customers under
@@ -344,8 +344,7 @@ data storage space in one of the following ways:
 
 -   Increase available storage with Cloud Block Storage. For more
     information on Cloud Block Storage, see [Create and Attach a Cloud
-    Block Storage
-    Volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
+    Block Storage Volume](/how-to/create-and-attach-a-cloud-block-storage-volume).
 -   Migrate to a larger size server with more RAM, disk space,
     and vCPUs. For more information about resizing, see
     [Upgrade resources for General Purpose or I/O optimized Cloud Servers](/how-to/upgrading-resources-for-general-purpose-or-io-optimized-cloud-servers).
@@ -357,7 +356,7 @@ size of the customers' servers and the type of operating system.
 
 #### Can I buy extra storage?
 
-The native storage allocation for a cloud server is based on the
+The native storage allocation for a Cloud Server is based on the
 Cloud Server flavor that you select, but you can add extra storage at
 any time with our [Cloud Block Storage](http://www.rackspace.com/cloud/blockstorage/) service.
 
@@ -387,7 +386,7 @@ generally of low impact compared to a full reboot of a host and virtual server.
 
 #### What is the difference between Standard, General Purpose, and work-optimized servers?
 
-There are several noteworthy differences between Standard, General Purpose, and work-optimized cloud servers:
+There are several noteworthy differences between Standard, General Purpose, and work-optimized Cloud Servers:
 
 -   General Purpose servers use faster solid state drives (SSD)
     compared to the standard spinning disk allocation for Standard servers.
@@ -407,7 +406,7 @@ For more information about General Purpose servers, see [New features in General
 
 ### Billing and account
 
-#### Do you offer discounts for cloud servers?
+#### Do you offer discounts for Cloud Servers?
 
 Yes. We offer different types of discounts based on usage. For details, see
 the [Cloud Servers discounts page](http://www.rackspace.com/cloud/servers/discounts/) for details.
@@ -416,7 +415,7 @@ the [Cloud Servers discounts page](http://www.rackspace.com/cloud/servers/discou
 
 ### Security
 
-#### Are cloud servers PCI-DSS compliant?
+#### Are Cloud Servers PCI-DSS compliant?
 
 For information about PCI-DSS, see [Cloud Security Solutions](/how-to/are-cloud-servers-pci-dss-compliant).
 For information about PCI-DSS for Rackspace Dedicated Hosting
@@ -426,7 +425,7 @@ services, see [PCI-Compliant Hosting for E-commerce Websites](http://www.rackspa
 
 Yes, and we encourage it! Each Linux server is capable of running
 the Linux-standard firewall called iptables; some even have it
-pre-configured. Other firewall systems have been tested on cloud servers
+pre-configured. Other firewall systems have been tested on Cloud Servers
 as well.
 
 #### What are security groups?
@@ -434,10 +433,10 @@ as well.
 Security groups are a named collection of network access rules
 that enable Rackspace Public Cloud users the ability to specify the
 types of traffic that are allowed to pass through, to, and from ports
-(PublicNet and ServiceNet) on a cloud server instance. A security group is a
+(PublicNet and ServiceNet) on a Cloud Server instance. A security group is a
 container for security group rules. After you launch an instance, you
 can assign one or more security groups to ports on that instance.
-Security groups act as a stateful firewall for your cloud server
+Security groups act as a stateful firewall for your Cloud Server
 instances.
 
 #### What happens when a security group rule is added to a security group?
@@ -455,8 +454,7 @@ apply it to the ports on an instance.
 
 #### Are security groups supported for OnMetal users?
 
-No. Security Groups are currently supported only for virtual cloud
-servers.
+No. Security Groups are currently supported only for virtual cloud servers.
 
 #### Will the security group feature be integrated and available to use via the Cloud Control Panel?
 
@@ -512,7 +510,7 @@ Support if you need this limit raised.
 #### Are security groups applied to instances?
 
 Security groups are applied to neutron ports (PublicNet and ServiceNet)
-on cloud server instances.
+on Cloud Server instances.
 
 #### Can I have a security group with no rules?
 
@@ -542,13 +540,13 @@ The maximum limits are as follows:
 | maxPersonalitySize      | The maximum size, in bytes, for each personality file.                                                                                 | 1000   |
 | maxServerMeta           | The maximum number of metadata key value pairs associated with a particular server.                                                    | 40     |
 | maxTotalCores           | This limit is disabled, so no limits exist on the total number of cores.                                                               | -1     |
-| maxTotalInstances       | The maximum number of cloud servers that can exist in your account at any one time.                                                    | 100    |
+| maxTotalInstances       | The maximum number of Cloud Servers that can exist in your account at any one time.                                                    | 100    |
 | maxTotalPrivateNetworks | The maximum number of isolated networks that you can create. Set to 0 when Cloud Networks is disabled, 10 when Cloud Networks enabled. | 10     |
-| maxTotalRAMSize         | The maximum total amount of RAM (MB) of all cloud servers in your account at any one time.                                             | 131072 |
+| maxTotalRAMSize         | The maximum total amount of RAM (MB) of all Cloud Servers in your account at any one time.                                             | 131072 |
 
-#### When a cloud server is deleted how is the data removed from the host server?
+#### When a Cloud Server is deleted how is the data removed from the host server?
 
-Cloud servers use VHD storage. When a server is deleted, the VHD file is securely and immediately
+Cloud Servers use VHD storage. When a server is deleted, the VHD file is securely and immediately
 deleted. It is not possible to recover a server that has been deleted.
 
 ------------------------------------------------------------------------

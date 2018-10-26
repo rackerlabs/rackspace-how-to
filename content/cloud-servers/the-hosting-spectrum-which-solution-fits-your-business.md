@@ -5,8 +5,8 @@ title: 'The Hosting Spectrum: Which Solution Fits your Business?'
 type: article
 created_date: '2011-03-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-15'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-26'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -48,7 +48,7 @@ applications must be handled by the staff.
 
 ### Managed Colocation
 
-In Managed Colocation, the provider offers the datacenter space,
+In Managed Colocation, the provider offers the data center space,
 network, servers and other devices. The customer retains full control
 and administrative responsibility over the hosting environment
 (operating system and applications). This scenario creates shared

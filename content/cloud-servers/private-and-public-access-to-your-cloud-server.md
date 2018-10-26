@@ -20,7 +20,7 @@ All Cloud Servers automatically receive the following static Internet Protocol
     server from the Internet.
 -   A ServiceNet IP address that you lets you access the server from
     other Cloud Servers or Cloud Load Balancers in the same region over
-    the Rackspace datacenter network. Read more about
+    the Rackspace data center network. Read more about
     [Regions](/how-to/about-regions).
 
 To locate the IP addresses for your Cloud Server, execute the following steps:
@@ -31,7 +31,7 @@ To locate the IP addresses for your Cloud Server, execute the following steps:
 4.  Click the name of server in the server list.
 5.  Scroll down to the **Networks** section.
 
-Following is a sample Networks table:
+Following is a sample **Networks** table:
 
 <img src="{% asset_path cloud-servers/private-and-public-access-to-your-cloud-server/Networks%20Table.png %}" alt="Networks Table" width="662" height="164" />
 
