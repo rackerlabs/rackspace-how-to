@@ -5,10 +5,8 @@ title: Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers
 type: article
 created_date: '2013-02-11'
 created_by: Renee Rendon
-last_modified_date: '2018-10-25'
-last_modified_by: Cat Lookabaugh
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2018-10-26'
+last_modified_by: Kate Dougherty
 ---
 
 If your Linux system has become non-bootable or is suffering from critical system
