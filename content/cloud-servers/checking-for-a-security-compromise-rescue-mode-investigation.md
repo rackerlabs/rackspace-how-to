@@ -6,12 +6,12 @@ type: article
 created_date: '2013-04-26'
 created_by: Rose Contreras
 last_modified_date: '2018-10-26'
-last_modified_by: Cat Lookabaugh
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the article [Checking for a security compromise: Back doors and intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
+In the article [Check for a security compromise: Back doors and intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
 you learned some basic techniques for collecting the information needed to
 identify intruders who have compromised your server. This article describes how
 to use the [Cloud Control Panel's](https://login.rackspace.com/) *Rescue Mode*
@@ -23,11 +23,13 @@ backing up the data.
 
 Because your Cloud Server's operating system might also be compromised, you
 cannot rely on it. The intruder could have compromised binaries such as 'ls,'
-'find,' and 'netstat,' so their output could mislead you. Consequently, you must
-use a different operating system environment to safely investigate the compromise.
+'find,' and 'netstat,' so their output could mislead you. Consequently, you
+must use a different operating system environment to safely investigate the
+compromise.
+
 You can do this by using the rescue mode feature provided in the
 [Cloud Control Panel](https://login.rackspace.com/). For instructions and more
-information, see [Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers](/how-to/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers).
+information, see [Rescue Mode](/how-to/rescue-mode/).
 
 While your server is in rescue mode, you can perform the following actions to
 locate the source of the compromise.
