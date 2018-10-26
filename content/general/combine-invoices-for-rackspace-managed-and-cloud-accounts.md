@@ -5,8 +5,8 @@ title: Combine invoices for Rackspace Managed and Cloud accounts
 type: article
 created_date: '2017-08-07'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-05-07'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -23,7 +23,7 @@ contracting entities, or have an outstanding balance on a child account.
 
 ### Combine invoices
 
-1. For Cloud accounts, log in to the [Cloud Control Panel](https://mycloud.rackspace.com/). For Managed accounts, log in to the [MyRackspace portal](https://my.rackspace.com/).
+1. For Cloud accounts, log in to the [Cloud Control Panel](https://login.rackspace.com/). For Managed accounts, log in to the [MyRackspace portal](https://login.rackspace.com/).
 2. In the upper-right corner of the page, click **Billing**.
 
    The Rackspace Billing portal displays.

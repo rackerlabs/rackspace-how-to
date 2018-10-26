@@ -5,8 +5,8 @@ title: Cloud Files overview
 type: article
 created_date: '2012-07-23'
 created_by: Rackspace Support
-last_modified_date: '2016-04-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -69,10 +69,10 @@ You can access Cloud Files by using the following interfaces:
 
 #### Cloud Control Panel interface
 
-The [Cloud Control Panel](https://mycloud.rackspace.com) provides a browser-based, intuitive, easy-to-use
-graphical user interface (GUI). The control panel enables you to manage
+The [Cloud Control Panel](https://login.rackspace.com/) provides a browser-based, intuitive, easy-to-use
+graphical user interface (GUI). The Cloud Control Panel enables you to manage
 your Cloud Files containers and objects without any programming
-knowledge. From the control panel, you can CDN-enable a container by
+knowledge. From the Cloud Control Panel, you can CDN-enable a container by
 marking it **public**. Any objects stored in a public, CDN-enabled
 container are directly accessible over the CDN.
 

@@ -5,7 +5,7 @@ title: RackConnect v2.0 compatibility with Cloud Servers images
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2016-01-06'
+last_modified_date: '2018-10-25'
 last_modified_by: Catherine Richardson
 product: RackConnect
 product_url: rackconnect
@@ -17,8 +17,8 @@ For the Rackspace Public Cloud offering, the image list for RackConnect
 customers with the Managed Infrastructure service level has been
 simplified. If your RackConnect implementation is complete, you can
 select any of the base images displayed in your image list (via the API,
-the [MyRackspace portal](https://my.rackspace.com/), or the [Cloud Control
-Panel](https://mycloud.rackspace.com/)), and we can configure
+the [MyRackspace portal](https://login.rackspace.com/), or the [Cloud Control
+Panel](https://login.rackspace.com/)), and we can configure
 RackConnect on your cloud servers. This is now true for Windows and
 Linux images, as well as for Managed Operations service level and
 Managed Infrastructure service level customers.

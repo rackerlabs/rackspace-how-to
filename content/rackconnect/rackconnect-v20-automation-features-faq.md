@@ -5,8 +5,8 @@ title: RackConnect v2.0 Automation features FAQ
 type: article
 created_date: '2012-11-29'
 created_by: Juan Perez
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -129,16 +129,18 @@ The new cloud server, upon creation, will inherit the automation features settin
 
 #### How do I verify the current automation features settings for my cloud accounts?
 
-1. Log in to your account in the [MyRackspace portal](https://my.rackspace.com/).
-2. At the top of the page, select **Network &gt; RackConnect** to open the RackConnect Management Interface.
+1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
+2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
+2. Click **Network > RackConnect** to open the RackConnect Management Interface.
 3. In the left pane, select your RackConnect configuration, and then select your cloud account. The cloud account's overview page lists your current automation features settings.
 
     <img src="{% asset_path rackconnect/rackconnect-v20-automation-features-faq/New.MyRack.Automation.Features.status.png %}" class="image-full_width" width="700" height="487" />
 
 #### How do I verify the current automation features settings for my cloud servers?
 
-1. Log in to your account in the [MyRackspace portal](https://my.rackspace.com/).
-2. At the top of the page, select **Network &gt; RackConnect** to open the RackConnect Management Interface.
+1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
+2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
+2. Click **Network > RackConnect** to open the RackConnect Management Interface.
 3. In the left pane, select your RackConnect configuration, select your cloud account, and then select one of your cloud servers. The cloud server's overview page lists your current automation features settings.
 
     <img src="{% asset_path rackconnect/rackconnect-v20-automation-features-faq/New.MyRack.CS_.Automation.Features.status.png %}" class="image-full_width" width="700" height="566" />

@@ -5,8 +5,8 @@ title: Sitecore Cloud portals and account management
 type: article
 created_date: '2017-04-04'
 created_by: Juan Garza
-last_modified_date: '2017-04-25'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -25,7 +25,7 @@ While Rackspace manages your Sitecore environment, access to three portals gives
 
 The MyRackspace portal provides the login credentials for both the Azure and Sitecore portals. While these credentials are sent through a link to the MyRackspace portal in the Welcome email received at deployment, you can also find the credentials inside a support ticket in the MyRackspace portal. To find this ticket:
 
-1. Log in to the [MyRackspace portal](https://my.rackspace.com/portal/).
+1. Log in to the [MyRackspace portal](https://login.rackspace.com/portal/).
 
 2. In the top navigation bar, click **Tickets**.
 
@@ -40,7 +40,7 @@ Sitecore runs on Windows .NET services, hosted on Azure Web Apps. Therefore, all
 - Restart your website or application
 - Access logs
 
-Log in to the [Azure portal](https://portal.azure.com/) using the credentials sent to you by Rackspace in a support ticket. This ticket is accessible through the [MyRackspace portal](https://my.rackspace.com/portal/).
+Log in to the [Azure portal](https://portal.azure.com/) using the credentials sent to you by Rackspace in a support ticket. This ticket is accessible through the [MyRackspace portal](https://login.rackspace.com/portal/).
 
 **Note:** You cannot delete your application or website through the Azure portal. To delete your application, contact [Rackspace Support](https://www.rackspace.com/en-us/information/contactus).
 

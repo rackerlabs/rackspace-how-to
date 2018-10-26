@@ -5,8 +5,8 @@ title: Accessing RackConnect cloud servers
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2018-03-28'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -41,7 +41,7 @@ might be allowed via network policies with RackConnect v2.0. With
 RackConnect v3.0, access might be allowed via firewall access list
 entries created by the Network Security Team or via the Firewall Manager
 feature available within the [MyRackspace
-portal](https://my.rackspace.com/).
+portal](https://login.rackspace.com/).
 
 You can view the IP addresses assigned to your cloud servers by querying
 the Cloud Servers API or by using one of the following methods.
@@ -49,17 +49,23 @@ the Cloud Servers API or by using one of the following methods.
 RackConnect v2.0 customers can look up the cloud server's details in the
 MyRackspace portal as follows:
 
-1. Select **Products**->**Devices** from the MyRack portal menu.
-2. Click on a server from the list.
-3. In the **Details** tab, the **IP Details** section lists the public IPv4 address.
+1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
+2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
+3. Click **Products > Devices**.
+4. Click the name of the server for which you want to view the details.
+   
+   In the **Details** tab, the **IP Details** section lists the public IPv4 address.
 
 RackConnect v2.0 and v3.0 customers can look up the cloud server's details in the [Cloud Control
-Panel](https://mycloud.rackspace.com/) as follows:
+Panel](https://login.rackspace.com/) as follows:
 
-1. Select **Servers**->**Cloud Servers** from the [Cloud Control
-Panel](https://mycloud.rackspace.com/) menu.
-2. Click on a server from the list.
-3.The **Networks and Security Groups** section lists the public addresses.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Click **Servers > Cloud Servers**.
+4. Click the name of the server for which you want to view the details.
+
+   On the **Server Details** page, the **Networks and Security Groups** section
+   lists the public addresses.
 
 **Note**: Disregard the initial public IP address assigned to your cloud
 servers when they are built. With RackConnect v2.0, the automation
@@ -81,9 +87,9 @@ alternative methods for connecting to these cloud servers:
     that you have an appropriate access list entry that allows
     this access.
 
--   Both RackConnect v2.0 and v3.0 customers connect directly to the console of the cloud server 
+-   Both RackConnect v2.0 and v3.0 customers connect directly to the console of the cloud server
     by using the console option available within the [Cloud Control
-    Panel](https://mycloud.rackspace.com/).
+    Panel](https://login.rackspace.com/).
 
 -   If you are using a Cisco ASA as your RackConnect edge network
     device, it might be feasible to use a site-to-site VPN or client VPN

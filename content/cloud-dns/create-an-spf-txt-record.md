@@ -5,7 +5,7 @@ title: Create an SPF TXT record
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2018-10-15'
+last_modified_date: '2018-10-23'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
@@ -15,7 +15,7 @@ Email spammers commonly forge the sender address in an email. They send
 email from their own mail servers, but with your domain as the
 sending email. The Sender Policy Framework (SPF)
 attempts to control forged email by giving domain owners a way to specify
-which email sources are legitimate for their domains and which ones aren't. 
+which email sources are legitimate for their domains and which ones aren't.
 For detailed information about SPF, see the
 [Sender Policy Framework Project Overview](http://www.openspf.org/).
 
@@ -52,7 +52,7 @@ for your email on a specific domain:
 In this situation, you would create the following rule and add it to a TXT
 record:
 
-    v=spf1 mx include:_spf.google.com -all
+    v=spf1 mx include:\_spf.google.com -all
 
 The following list shows how each part of the record is defined:
 
@@ -89,24 +89,26 @@ following basic markers:
 To add an SPF TXT record by using the Cloud Control Panel, use the following
 steps:
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  In the top navigation bar, select **Networking > Cloud DNS**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3.  Click the action gear next to the name of the domain that you want
+3.  Select **Networking > Cloud DNS**.
+
+4.  Click the action gear next to the name of the domain that you want
     to modify, and select **Add DNS Record**.
 
      <img src="{% asset_path cloud-dns/create-an-spf-txt-record/SPF%20Record%20DNS.png %}" alt="DNS SPF Record" />
 
-4.  Select **TXT Record** for the record type.
+5.  Select **TXT Record** for the record type.
 
-5.  Enter the rule in the **Text** area. For example, enter
+6.  Enter the rule in the **Text** area. For example, enter
     `v=spf1 mx -all` to indicate that all email is sent from this server
     and no other mail servers are authorized.
 
-6.  Specify the Time to Live (TTL).
+7.  Specify the Time to Live (TTL).
 
-7.  Click **Add Record**.
+8.  Click **Add Record**.
 
 #### Related resources
 

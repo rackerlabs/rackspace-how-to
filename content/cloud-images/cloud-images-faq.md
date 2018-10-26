@@ -34,13 +34,14 @@ service endpoints in the Rackspace open cloud.
 #### What does Cloud Images expose?
 
 Cloud Images exposes the Rackspace open cloud deployment of the
-OpenStack Images v2 API that is powered by OpenStack Glance.
+OpenStack Images v2 API that's powered by OpenStack Glance.
 
 #### Why are the Glance operations being exposed?
 
-Glance features that aren't available in the Compute API or the Cloud
-Control Panel can be accessed directly through the Cloud Images API. You
-already use Glance behind the scenes whenever you boot a cloud server,
+Glance features that aren't available in the Compute API or the [Cloud
+Control Panel](https://login.rackspace.com/) can be accessed directly through
+the [Cloud Images API](https://developer.rackspace.com/docs/cloud-images/v2/).
+You already use Glance behind the scenes whenever you boot a cloud server,
 make an image from a server, view a list of images, or view
 detailed information for a particular image. The Cloud Images API
 enables direct access to these operations.

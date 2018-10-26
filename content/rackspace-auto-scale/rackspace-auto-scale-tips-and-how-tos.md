@@ -5,8 +5,8 @@ title: "Rackspace Auto Scale tips and how-to's"
 type: article
 created_date: '2014-01-14'
 created_by: Maria Abrahms
-last_modified_date: '2016-09-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Autoscale
 product_url: rackspace-auto-scale
 ---
@@ -197,7 +197,7 @@ the **minEntities** value or the amount specified.
 
 **Note**: You can change the **minEntities** and **maxEntities** values
 for a scaling group by using the [Cloud Control
-Panel](https://mycloud.rackspace.com/). To do this, select **Auto
+Panel](https://login.rackspace.com/). To do this, select **Auto
 Scale** from the **Servers** menu, select the scaling group, and
 then, from the **Actions** menu, select **Edit Min / Max Servers**.
 

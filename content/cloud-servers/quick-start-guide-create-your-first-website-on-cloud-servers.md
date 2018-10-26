@@ -5,7 +5,7 @@ title: Create your first website on Cloud Servers quickly
 type: article
 created_date: '2013-11-11'
 created_by: David Hendler
-last_modified_date: '2018-10-01'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -24,7 +24,7 @@ complicated than what this guide covers. However, the process that this
 guide uses applies to the successful deployment of any web site or
 application.
 
-This guide is not a comprehensive tour of [Cloud Servers](https://www.rackspace.com/cloud/servers). 
+This guide is not a comprehensive tour of [Cloud Servers](https://www.rackspace.com/cloud/servers).
 However, by following these instructions, you are establishing the fundamentals that
 you can build on by reading future articles and guides.
 
@@ -49,17 +49,18 @@ Apache web server package to turn the server into a web server.
 
 #### Create a cloud server
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com), using
-the user name and password that you entered when you created your account.
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com), using
+    the user name and password that you entered when you created your account.
 
-   The control panel supports many Rackspace products and services. Each
-   component of this interface, and all of our products and services, are
-   explained in other articles and videos (for example,
-   [Introducing the Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel)).
-   This guide focuses on deploying your first cloud server.
+    The control panel supports many Rackspace products and services. Each
+    component of this interface, and all of our products and services, are
+    explained in other articles and videos (for example,
+    [Introducing the Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel)).
+    This guide focuses on deploying your first cloud server.
 
-2.  On the Cloud Servers page, which is displayed whenever you log in,
-    click **Create Server**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+3.  Select **Servers > Cloud Servers** and click **Create Server**.
 
     In most cases, you can deploy the right infrastructure with just a
     few clicks.

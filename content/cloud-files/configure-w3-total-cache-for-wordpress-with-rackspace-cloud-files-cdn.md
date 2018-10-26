@@ -5,8 +5,8 @@ title: Configure W3 Total Cache for WordPress with Rackspace Cloud Files
 type: article
 created_date: '2013-10-10'
 created_by: Eric Cavalcanti
-last_modified_date: '2017-02-23'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -17,11 +17,11 @@ This tutorial shows the basic steps for setting up the W3 Total Cache plug-in to
 
 ### Prerequisite
 
-A WordPress website and database
+You need to have a WordPress website and database.
 
 ### Install and configure W3 Total Cache
 
-1. Log in as admin to your WordPress blog.
+1. Log in to your WordPress blog as an administrator.
 
 2. In the navigation sidebar, click **Plugins > Add New**.
 
@@ -31,7 +31,7 @@ A WordPress website and database
 
    <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/install-w3-total-cache.png %}" alt="click the install now button in the search results for w3 total cache" />
 
-   After the plug-in is installed, the **Install Now** button changes to **Activate**.
+   After the plug-in installs, the **Install Now** button changes to **Activate**.
 
 5. Click **Activate** to enable the plug-in.
 
@@ -65,10 +65,10 @@ A WordPress website and database
 
 5. Create a new Cloud Files container by entering a unique name that you will remember.
 
-   This name is primarily used to help you quickly identify the container in the Rackspace Cloud Control Panel.
+   This name is primarily used to help you quickly identify the container in the Rackspace [Cloud Control Panel](https://login.rackspace.com/).
 
 6. Click **Apply** to save and apply your settings.
 
 7. In the **General** section, select the check box next to each type of content that you want to host on the CDN, and then click **Save all settings**.
 
-   <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/select-file-types-to-upload.png %}" alt="click the check box by each file type that you want to host on the cdn" />    
+   <img src="{% asset_path cloud-files/configure-w3-total-cache-for-wordpress-with-rackspace-cloud-files-cdn/select-file-types-to-upload.png %}" alt="click the check box by each file type that you want to host on the cdn" />

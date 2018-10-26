@@ -5,8 +5,8 @@ title: RackConnect v2.0
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2016-01-20'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -42,13 +42,13 @@ implementation.
         process starts.
 
 2.  When you begin the RackConnect implementation process, you receive a
-    ticket in the [MyRackspace portal](https://my.rackspace.com/) that
+    ticket in the [MyRackspace portal](https://login.rackspace.com/) that
     outlines the steps that will get your environment ready
     for RackConnect.
 
     -   When you receive the ticket, you will have access to the
         RackConnect Management Interface in the MyRackspace portal. From
-        the main menu in the portal, navigate to **Network &gt;
+        the main menu in the portal, navigate to **Network >
         RackConnect** to review your configuration details, track the
         status of your implementation, and start setting up your Cloud
         account and network policies.
@@ -75,22 +75,25 @@ section for at least one Cloud account.
 
 For videos that demonstrate the steps in this process, including an
 overview of the RackConnect portal interface, creating network policies,
-and adding a Cloud account to RackConnect, visit the **Community &gt;
+and adding a Cloud account to RackConnect, visit the **Community >
 Video Knowledge Base** section of the MyRackspace portal.
 
 You can also find more documentation about RackConnect in the
-**Community &gt; Discussions &gt;** [**RackConnect** section of the
-MyRackspace portal](http://my.rackspace.com/csx/community/rackconnect).
+**Community > Knowledge Center** section of the MyRackspace portal.
 
 For a collection of recommendations for using RackConnect, see
 [RackConnect best practices](/how-to/rackconnect-v20-best-practices).
 
 ### Associating your Cloud account with your RackConnect configuration
 
+Use the following steps to associate your Cloud account with your
+RackConnect configuration:
+
 1.  Ensure that your cloud account is linked to your dedicated account.
-    Verify this from the
-    [MyRackspace portal](https://my.rackspace.com/portal/cloudAccount/list)
-    by navigating to **Products &gt; Rackspace Cloud &gt; Cloud
+
+    Log in to the [MyRackspace portal](https://login.rackspace.com/), and
+    in the top navigation bar, click **Select a Product > Dedicated Hosting**.
+    Then click **Products > Rackspace Cloud > Cloud
     Accounts**. From that screen, you can either link an existing
     account or sign up for a new account.
 
@@ -109,15 +112,15 @@ For a collection of recommendations for using RackConnect, see
     of your dedicated environment. If there are any discrepancies, a
     RackConnect engineer works with you to resolve them. You can track
     the status of these steps by selecting the newly associated Cloud
-    account in the RackConnect Management Interface (**Network &gt;
-    RackConnect &gt; *yourCloudAccount***) and selecting the
+    account in the RackConnect Management Interface (**Network >
+    RackConnect > *yourCloudAccount***) and selecting the
     **Tasks** tab.
 
 4.  Set up your network policies to define the access that you want to
     allow between your cloud servers, your dedicated environment, and
     the Internet. You can do this by selecting the Cloud account under
     the RackConnect Management Interface and selecting the **Network
-    Polices** tab (**Network &gt; RackConnect &gt; *yourCloudAccount* &gt;
+    Polices** tab (**Network > RackConnect > *yourCloudAccount* >
     Network Policies** tab). You can also use one of the available
     network policy templates to get started.
 

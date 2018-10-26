@@ -5,7 +5,7 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2018-07-16'
+last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -156,10 +156,10 @@ support that you need to get the most out of the cloud.
     Rackspace How-To? Open Chat and talk with our **Fanatical Support**&reg;
     staff anytime, 24x7x365.
 -   Do you have a specialized Service Request or are you experiencing a
-    problem with our service? Open a ticket. In the Rackspace [Cloud Control Panel](http://mycloud.rackspace.com/),
-    select **Support Tickets** from the **Support** menu. Click **Create Ticket** to open a
-    ticket directly with our support teams to report a problem or make a
-    service request.
+    problem with our service? Open a ticket. In the Rackspace
+    [Cloud Control Panel](https://login.rackspace.com), select
+    **Tickets > **Create Ticket** to open a ticket directly with our support
+    teams to report a problem or make a service request.
 -   Call us 24x7x365 at 800 961 4454 (toll-free) or +1 210 312 4000 (international).
 
 ------------------------------------------------------------------------
@@ -187,11 +187,11 @@ you must add an A record for **MyWebServer1.MyExampleDomain.com**
 to your DNS zone ([MyExampleDomain.com](http://myexampledomain.com/))
 that points to the public IP address of the server. The information that
 you enter in the **Server Name** field helps you identify this server in
-the API and [Cloud Control Panel](https://mycloud.rackspace.com/).
+the API and [Cloud Control Panel](https://login.rackspace.com).
 
 #### How do I set up reverse DNS setup for my server?
 
-You can set up reverse DNS from the control panel. For instructions,
+You can set up reverse DNS from the Cloud Control Panel. For instructions,
 see [Create a reverse DNS record.](/how-to/create-a-reverse-dns-record)
 
 #### What are PVHVM images?
@@ -263,12 +263,14 @@ Yes. For instructions on how to install VNC and X-Windows, see
 [Install VNC on a Cloud Server](/how-to/vnc-install "VNC Install").
 Note that using a GUI requires a large amount of bandwidth on your server.
 
-#### Do you have a control panel?
+#### Do you have a Control Panel?
 
-Yes, the Rackspace [Cloud Control Panel](https://mycloud.rackspace.com/)
+Yes, the Rackspace [Cloud Control Panel](https://login.rackspace.com)
 is a web-based management interface for restarting your cloud server,
 starting support discussions, viewing stats, and scheduling snapshots.
-However, we do not offer a control panel like Plesk or cPanel. You're free to
+To learn more about the Cloud Control Panel, see
+[Introducing the Rackspace Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel).
+However, we do not offer a control panel like **Plesk** or **cPanel**. You're free to
 install such packages for your own cloud server. If you are installing cPanel, be
 sure to install on a clean (empty) server. For more information,
 see [CentOS/RHEL - Installing cPanel & WHM 11.24](https://community.rackspace.com/products/f/25/t/6798).
@@ -292,8 +294,8 @@ if your server is unresponsive or you have locked yourself out.
 
 #### Can I reboot my server?
 
-Yes. On the details page for the server in the cloud control panel, select **Actions > Reboot**.
-This method is useful if the server is unresponsive.
+Yes. On the server details page for the server in the Cloud Control Panel,
+select **Actions > Reboot**. Use this method if the server is unresponsive.
 
 #### Am I billed if my server is powered off?
 
@@ -326,13 +328,14 @@ any associated DNS records to reflect the new IP address.
 
 #### How do I power on my server after shutting it down?
 
-Instructions are located in [Reboot your server](/how-to/reboot-your-server)
+Instructions are located in [Reboot a server](/how-to/reboot-a-server)
 
 #### Which distributions do you offer?
 
 To see the Linux distributions and Windows operating systems that we have
-available, go to the Cloud Control Panel, **Servers > CloudServers**, and
-then click **Create Server**.
+available, go to the Cloud Control Panel, click
+**Select a Product > Rackspace Cloud**, **Servers > CloudServers**, and
+then **Create Server**.
 
 #### Can I upgrade my server later?
 
@@ -366,9 +369,17 @@ evaluation purposes.
 
 #### What is live migration?
 
-Live migration is the process of moving a virtual server from one host hypervisor to another by using virtual memory streaming. A duplicate of the original virtual server is created on another host, in real-time, from the disk contents, right down to the last byte of RAM in use. When the process is ready, the original virtual server is switched to the new one.
+Live migration is the process of moving a virtual server from one host hypervisor
+to another by using virtual memory streaming. A duplicate of the original virtual
+server is created on another host, in real-time, from the disk contents, right
+down to the last byte of RAM in use. When the process is ready, the original
+virtual server is switched to the new one.
 
-Using live migration means that, where possible, customer workloads can be moved off of a host that needs to be patched and rebooted to a host that is already updated. During live migration, most customers experience no downtime; a small percentage may notice a brief pause in their workloads, but the result is generally of low impact compared to a full reboot of a host and virtual server.
+Using live migration means that, where possible, customer workloads can be moved
+off of a host that needs to be patched and rebooted to a host that is already
+updated. During live migration, most customers experience no downtime; a small
+percentage may notice a brief pause in their workloads, but the result is
+generally of low impact compared to a full reboot of a host and virtual server.
 
 ------------------------------------------------------------------------
 

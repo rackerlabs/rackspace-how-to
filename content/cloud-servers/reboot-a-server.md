@@ -5,8 +5,8 @@ title: Reboot a Server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
-last_modified_date: '2018-07-02'
-last_modified_by: Laura Santamaria
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -60,12 +60,14 @@ server.
 **Warning:** A hard reboot does not shut down applications gracefully
 and can result in data loss.
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-2.  In the top navigation bar, click **Servers > Cloud Servers**, and then click the gear icon next to the server that you want to reboot.
-3.  Select **Reboot**.
-4.  In the pop-up dialog box, click **Reboot Server**.
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3.  Select **Servers > Cloud Servers**, and then click
+the gear icon next to the server that you want to reboot.
+4.  Select **Reboot**.
+5.  In the pop-up dialog box, click **Reboot Server**.
 
-The server status on the Servers page updates while the server is
+The server status on the **Servers** page updates while the server is
 rebooting. When the reboot is complete, check your server to confirm
 that everything is functioning as expected.
 

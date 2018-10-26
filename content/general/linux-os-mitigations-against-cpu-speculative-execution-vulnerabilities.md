@@ -5,7 +5,7 @@ title: 'Linux OS mitigations against CPU speculative execution vulnerabilities'
 type: article
 created_date: '2018-01-16'
 created_by: Marc Nourani
-last_modified_date: '2018-08-20'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
@@ -43,7 +43,7 @@ Kernel updates to mitigate specific variants of the exploits on the supported Li
 
 Servers must be rebooted to apply the new kernel. At this time, Rackspace does not intend to force reboots of customer servers. For those customers who want to apply the update, Rackspace can install the new kernel and reboot servers immediately. Alternatively, Rackspace can install the new kernel and customers can schedule the reboots to occur in the future via the following methods:
 
-- Dedicated Physical Server: MyRack Customer Portal [https://my.rackspace.com](https://my.rackspace.com) -> Services -> Reboot Scheduling
+- Dedicated Physical Server: [MyRackspace Customer Portal](https://login.rackspace.com) -> Services -> Reboot Scheduling
 
 - VMware&reg;  Virtual Server and Managed Operations Rackspace Public Cloud Servers: Supply the date, time, and time zone. Rackspace will schedule an automated reboot on behalf of the customer.
 
