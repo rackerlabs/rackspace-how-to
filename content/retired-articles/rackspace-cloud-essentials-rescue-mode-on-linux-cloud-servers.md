@@ -67,11 +67,7 @@ system. To do that, look at your partitions to determine your file system's devi
 
         fdisk -l
 
-    You should get the following output:
-
-    <img src="{% asset_path cloud-servers/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers/fdisknew.png %}" alt="" />
-
-    Note the different disk names. The disk entry displays the device and size
+    The output shows different disk names. The disk entry displays the device and size
     of the disk. For example: `Disk /dev/xvdb1: 20 GiB`
 
     The first block, **/dev/xvdb1**, with size 20 GiB, is the rescue mode file system.
