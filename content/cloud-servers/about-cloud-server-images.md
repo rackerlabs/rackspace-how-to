@@ -31,9 +31,8 @@ images:
     Standard backup tools such as `mysqldump` or the SQL Server Management Studio are more suitable for backing up databases. Be sure to always back up your database before you create an image of your
     Cloud Server.
 
--   **Cloud Server images can be shared between accounts, but not between
-    regions **.
-    You can share images between accounts **in the same region**. This allows you to build a server from the shared image, and then create a copy of the newly created server. To move images between regions, see [Transfer images between regions of the Rackspace open cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud)
+-   **Cloud Server images can be shared between accounts, but not between regions**.
+    You can share images between accounts **in the same region**. This allows you to build a server from the shared image, and then create a copy of the newly created server. To move images between regions, see [Transfer images between regions of the Rackspace open cloud](/how-to/transferring-images-between-regions-of-the-rackspace-open-cloud).
 
 -   Image creation can take several hours if the disk is extremely large, so be sure to allot an appropriate amount of time to create an image of your server.
 
