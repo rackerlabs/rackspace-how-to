@@ -5,7 +5,7 @@ title: MyRackspace two-factor authentication
 type: article
 created_date: '2014-07-14'
 created_by: Rackspace Support
-last_modified_date: '2018-03-30'
+last_modified_date: '2018-10-26'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -16,7 +16,7 @@ provide an additional layer of security when you access your account.
 Multi-factor authentication is a significant security improvement over
 using a password alone. This article explains how to manage multi-factor
 authentication for your MyRackspace account from the
-[MyRackspace](https://my.rackspace.com/portal/auth/login?targetUri=%2Fhome) portal.
+[MyRackspace](https://login.rackspace.com) portal.
 
 **Note:** You must be an administrative user to manage multi-factor
 authentication for your MyRackspace account.
@@ -28,10 +28,9 @@ option to decide whether to make multi-factor authentication a requirement for
 all users or to allow users to choose if they want to use multi-factor
 authentication.
 
-1.  Log in to the [MyRackspace portal](https://my.rackspace.com/).
+1.  Log in to the [MyRackspace Customer Portal](https://login.rackspace.com).
 
-2.  In the top menu bar, click **Account** and then select **User
-    Management**.
+2.  Select **Account > **User Management**.
 
 3.  Click **My Multi-Factor Devices**.
 
@@ -47,7 +46,7 @@ select one of the following options:
     authentication are prompted to register a paired mobile passcode or
     SMS-capable device at their next login.
 
-7.  Click **Save Setting**.
+5.  Click **Save Setting**.
 
 ### Register a device after multi-factor authentication is enabled for your account
 
@@ -55,9 +54,9 @@ If multi-factor authentication is enabled for your user account, you must
 register a new device to pair with your account by using
 these steps:
 
-1.  Log in to the [MyRackspace portal](https://myrackspace.com).
+1.  Log in to the [MyRackspace Customer Portal](https://login.rackspace.com).
 
-2.  In the top menu bar, click **Account** and then choose **User Management**.
+2.  Select **Account > **User Management**.
 
 3.  Click **My Multi-Factor Devices**. Now, decide whether you want to use the
     **Mobile Passcode** or **SMS** authentication method.
@@ -101,9 +100,9 @@ Users are allowed multiple mobile passcode devices and one SMS device for
 multi-factor authentication. To manage the devices that you use with
 multi-factor authentication, use the following steps:
 
-1.  Log in to the [MyRackspace portal](https://myrackspace.com).
+1.  Log in to the [MyRackspace Customer Portal](https://login.rackspace.com).
 
-2.  In the top menu bar, click **Account** and then choose **User Management**.
+2.  Select **Account > **User Management**.
 
 3.  Click **My Multi-Factor Devices**.
 
@@ -154,8 +153,7 @@ the following section for instructions.
 
 Follow these steps to unlock a user account:
 
-1.  Log in to the [MyRackspace portal](https://myrackspace.com) as an
-    administrator.
+1.  Log in to the [MyRackspace Customer Portal](https://login.rackspace.com).
 
 2.  Select **Account > User List**.
 
@@ -173,7 +171,7 @@ Follow these steps to generate a temporary passcode for a user.
 **Note:** An account must be unlocked for this item to be displayed in
 the **Actions** menu.
 
-1.  Log in to the [MyRackspace portal](https://myrackspace.com) as an administrator.
+1.  Log in to the [MyRackspace Customer Portal](https://login.rackspace.com).
 
 2.  Select **Account > User List**.
 

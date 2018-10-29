@@ -1,12 +1,12 @@
 ---
 permalink: faq-for-seamless-sign-on-between-myrackspace-and-the-cloud-control-panel/
-audit_date: '2018-03-10'
+audit_date: '2018-10-26'
 title: FAQ for Seamless sign-on between MyRackspace and the Cloud Control Panel
 type: article
 created_date: '2014-10-15'
 created_by: David Hendler
-last_modified_date: '2018-03-13'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-26'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -24,7 +24,8 @@ dedicated account and the cloud accounts that are linked to it.
 
 #### How do I use seamless SSO?
 
-Seamless SSO is integrated into Rackspace products to the greatest extent possible. When you navigate Cloud accounts in the MyRackspace portal, hyperlinks for
+Seamless SSO is integrated into Rackspace products to the greatest extent possible.
+When you navigate Cloud accounts in the MyRackspace portal, hyperlinks for
 products such as Cloud Servers, Cloud Networks, and Cloud DNS take you
 to the Cloud Control Panel, where you are logged in automatically.
 
@@ -39,7 +40,8 @@ Assign by Product**.
 
 #### What permissions do I have when using seamless SSO?
 
-Your permissions are based on your access level for the Cloud account that you are trying to access.
+Your permissions are based on your access level for the Cloud account that you
+are trying to access.
 
 <img src="{% asset_path cloud-servers/faq-for-seamless-sign-on-between-myrackspace-and-the-cloud-control-panel/sso_permissions_layout.png %}" alt="MyRackspace screenshot - layout of permissions screen" />
 
@@ -97,7 +99,8 @@ Your permissions are based on your access level for the Cloud account that you a
 #### How are user permissions set or changed for seamless SSO?
 
 User permissions for seamless SSO map directly to the user's Cloud
-account permission settings. The MyRackspace Customer Portal enables you to view permissions by user or by product.
+account permission settings. The MyRackspace Customer Portal enables you to view
+permissions by user or by product.
 
 **View permissions by user**
 
@@ -113,7 +116,8 @@ The following image shows how to view permissions by product in MyRackspace:
 
 #### Can I link back to MyRackspace from the Cloud Control Panel?
 
-Yes. To link back to MyRackspace, click the **Back to MyRackspace** link in the upper-left corner of the Cloud Control Panel.
+Yes. To link back to MyRackspace, click the **Back to MyRackspace** link in the
+upper-left corner of the Cloud Control Panel.
 
 #### Can I log in to the Cloud Control Panel and seamlessly link to and be logged in to MyRackspace?
 
@@ -157,5 +161,6 @@ Seamless SSO has the following limitations:
     -   User Management
     -   Service level upgrades
 
-To access these features, log out, and then log in to the [Cloud Control Panel](http://mycloud.rackspace.com) directly with your cloud
+To access these features, log out, and then log in to the
+[Cloud Control Panel](https://login.rackspace.com) directly with your cloud
 credentials.

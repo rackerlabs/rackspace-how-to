@@ -293,10 +293,9 @@ The following changes should occur:
 from Window's agent version 1.18 or lower. You can check your agent
 version by using the following steps:
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com/).
-2. Click the **Select a Product** drop-down menu in the top navigation
-   bar, then select **Rackspace Cloud**.
-3. In the top navigation bar, select **Backups**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Select **Backups**.
 4. Select your backup system.
 
    The version number appears under *System Details*. If your version is

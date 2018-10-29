@@ -5,8 +5,8 @@ title: Billing services overview
 type: article
 created_date: '2011-08-24'
 created_by: Rackspace Support
-last_modified_date: '2018-02-16'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -25,9 +25,9 @@ Each product page accessed from the [main Rackspace website](https://www.rackspa
 
 To access your account information, use the following steps:
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. In the upper-right corner of the Cloud Control Panel, click the **Billing**
+2. In the upper-right corner of the control panel, click the **Billing**
    button.
 
    You are redirected to the **Billing Overview** dashboard, which provides information on billing, payments, and usage.

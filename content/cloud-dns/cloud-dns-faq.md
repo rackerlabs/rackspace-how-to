@@ -5,8 +5,8 @@ title: Cloud DNS FAQ
 type: article
 created_date: '2011-10-25'
 created_by: Rackspace Support
-last_modified_date: '2018-03-13'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -54,7 +54,8 @@ Rackspace Cloud resources.
 
 #### How does this work for Hybrid customers?
 
-A Hybrid customer can continue to use MyRackspace.com to manage
+A Hybrid customer can continue to use the [MyRackspace
+Portal](https://login.rackspace.com) to manage
 domains for their dedicated resources and can use Cloud DNS to
 manage domains for their Cloud resources.
 

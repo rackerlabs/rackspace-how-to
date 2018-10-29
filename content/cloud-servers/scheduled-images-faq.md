@@ -5,8 +5,8 @@ title: Scheduled Images FAQ
 type: article
 created_date: '2013-05-22'
 created_by: Brian Rosmaita
-last_modified_date: '2018-04-27'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -47,23 +47,24 @@ Consider the following issues:
 
 #### How do I use Scheduled Images?
 
-Initiating Scheduled Images is easy, and available to both Control Panel
+Initiating Scheduled Images is easy, and available to both Cloud Control Panel
 and API users:
 
--   Control Panel: Click the "cog" (gear wheel) next to your server
-    name, and select **Schedule Image**. From the popup, select whether
+-   **Cloud Control Panel**: Click the "cog" (gear wheel) next to your server
+    name, and select **Schedule Image**. From the drop-down menu, select whether
     you want to create an image every **Day** or **Week**.  If you
     select **Week**, you can also specify on which **Day of Week** you'd
     like the image created.  Finally, specify the number of images you
-    want to retain and then click **Create Schedule**.
--   API users: See the Cloud Servers [API documentation for the
+    want to retain and then click **Create Schedule**.  To learn more about
+    the Cloud Control Panel, see
+    [Introducing the Rackspace Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel).
+-   **API users**: See the Cloud Servers [API documentation for the
     Scheduled Images
     extension](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#enable-scheduled-images).
 
-Images are stored in Cloud Images.  You're charged for them, however, as
-if they were stored in your Cloud Files account.  Thus, you'll be
-charged your normal Cloud Files rate (including any applicable tiering
-or volume discounts).
+Images are stored in **Cloud Images**.  You're charged for them as if they were
+stored in your Cloud Files account.  Thus, you'll be charged your normal Cloud
+Files rate (including any applicable tiering or volume discounts).
 
 ### - Scheduling -
 
@@ -184,9 +185,9 @@ So, if you remove the metadatum 'org.openstack\_\_1\_\_created\_by' from
 the scheduled image you wish to save, the snapshot will not be subject
 to retention culling.
 
-At the current time, you cannot modify image metadata via the cloud
-control panel. If you don't want to make API calls directly, a
-command-line tool called novaclient is available. For more information
+At the current time, you cannot modify image metadata by using the Cloud
+Control Panel. If you don't want to make API calls directly, a
+command-line tool called `novaclient` is available. For more information
 about using the novaclient tool to manage your scheduled images, see
 [Using python-novaclient to manage scheduled
 images](/how-to/using-python-novaclient-to-manage-scheduled-images).
@@ -212,7 +213,7 @@ calculates whether any images need to be deleted from your account.
 
 A scheduled image is just a normal snapshot. You can do what you like
 with it just as you can with your other snapshots. You can delete a
-scheduled image at any time using your normal workflow (control panel,
+scheduled image at any time using your normal workflow (Cloud Control Panel,
 novaclient, direct API calls).
 
 ### Miscellaneous

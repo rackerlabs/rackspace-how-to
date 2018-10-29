@@ -25,9 +25,8 @@ Before you restart the DriveClient service, check [status.rackspace.com](https:/
 
 Use the following steps to check your open support tickets:
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Tickets > Ticket List**.
 
 If there are no open support tickets about the server in question, attempt to
@@ -38,8 +37,7 @@ establish a connection, as shown in the next section.
 Use the following steps to establish a connection:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Backups > Systems**.
 4. From the list of Cloud Backup Systems, click the backup server name.
    This action displays the following details about the backup system:

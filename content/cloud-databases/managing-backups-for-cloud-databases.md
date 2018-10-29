@@ -5,7 +5,7 @@ title: Manage Backups for Cloud Databases
 type: article
 created_date: '2014-01-15'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -27,15 +27,14 @@ automatic backups of your databases. For more information, see
 To create a backup of a database instance, use the following steps:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
-2. In the top navigation bar, select **Databases > MySQL**.
-3. Click the gear icon next to the name of the instance that you want
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Select **Databases > MySQL**.
+4. Click the gear icon next to the name of the instance that you want
    to back up, and select **Create Backup**.
 
    A dialogue box displays.
 
-4. Enter a name for the backup and a description, and then click
+5. Enter a name for the backup and a description, and then click
    **Create Backup**.
 
    **Note:** The backup name is required and cannot exceed 64 characters.

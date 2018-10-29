@@ -5,8 +5,8 @@ title: Microsoft Office 365 FAQ
 type: article
 created_date: '2016-01-20'
 created_by: Nate Archer
-last_modified_date: '2018-10-11'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Office 365
 product_url: office-365
 ---
@@ -18,12 +18,12 @@ product_url: office-365
 You access your account from two different locations:
 
 -   You manage your Microsoft&reg; Office 365&reg; services at
-    [portal.office.com](http://portal.office.com). From here you can
+    [portal.office.com](https://portal.office.com). From here you can
     create new users and work with Microsoft Exchange, Skype&reg; for Business,
     SharePoint&reg;, Yammer&reg;, and the rest of the Office 365 suite.
 -   You manage your Office 365 Rackspace account at either
-    [my.rackspace.com](http://my.rackspace.com) or
-    [cp.rackspace.com](http://cp.rackspace.com). Use these portals to
+    [login.rackspace.com](https://login.rackspace.com) or
+    [cp.rackspace.com](https://cp.rackspace.com). Use these portals to
     handle account administration, open chat support, create support
     tickets, and pay your bill.
 
@@ -128,13 +128,13 @@ support ticket:
 
 -   To reach the Office 365 team directly by phone, call 1 877 417 3715.
 -   To reach the Office 365 team by chat, log in to either
-    [cp.rackspace.com](http://cp.rackspace.com) or
-    [my.rackspace.com](http://my.rackspace.com) and click the **Live
+    [cp.rackspace.com](https://cp.rackspace.com) or
+    [login.rackspace.com](https://login.rackspace.com) and click the **Live
     Chat** link at top of the home page.
 -   To reach the Office 365 team through support tickets, log in to
-    either [cp.rackspace.com](http://cp.rackspace.com) or
-    [my.rackspace.com](http://my.rackspace.com) and select
-    **Support &gt; View Tickets**. On the ticket page, click **New
+    either [cp.rackspace.com](https://cp.rackspace.com) or
+    [login.rackspace.com](https://login.rackspace.com) and select
+    **Support > View Tickets**. On the ticket page, click **New
     Ticket**.
 
 #### What subscription plans can I purchase from Rackspace for Office 365?

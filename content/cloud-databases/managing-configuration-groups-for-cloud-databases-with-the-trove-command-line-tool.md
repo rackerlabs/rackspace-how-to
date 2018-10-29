@@ -262,7 +262,7 @@ the entire configuration set with new values.
 
 **Note:** The configuration parameter `local in-file` is supported in
 Cloud Databases. You can access it in the [Cloud Control
-Panel](https://mycloud.rackspace.com/) by clicking on **Databases &gt;
+Panel](https://login.rackspace.com/) by clicking on **Databases &gt;
 MySQL Configurations** and then modifying an existing configuration or
 creating a new one.
 

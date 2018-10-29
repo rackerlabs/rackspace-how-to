@@ -5,8 +5,8 @@ title: Detach and delete Cloud Block Storage volumes
 type: article
 created_date: '2012-10-22'
 created_by: David Hendler
-last_modified_date: '2017-01-27'
-last_modified_by: Laura Santamaria
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -78,12 +78,13 @@ The Cloud Block Storage volume no longer displays as a drive under **Computer**.
 
 ### Detach a volume
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com/).
+Use the following steps to detach a volume:
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. In the top navigation bar, click **Storage > Block Storage Volumes**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+2. Select **Storage > Block Storage Volumes**.
 
 3. On the Block Storage Volumes page, click the gear icon next to the volume
     name and select **Detach Volume**.

@@ -17,10 +17,9 @@ This article describes methods for connecting to your Cloud Databases instance.
 Use the following steps to connect through a cloud server by using Secure
 Shell (SSH) and the hostname:
 
-1.  Log in to the [Cloud Control Panel](http://login.rackspace.com/).
-2.  Click the **Select a Product** drop-down menu in the top navigation bar,
-    then select **Rackspace Cloud**.
-3.  In the top navigation bar, select **Databases > MySQL**.
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3.  Select **Databases > MySQL**.
 4.  Click the name of the instance to which you want to connect.
 5.  Copy the hostname string.
 6.  From a Terminal window, use SSH to log in to a cloud server
@@ -111,7 +110,7 @@ Copy the following PHP script and paste it into a text editor:
         Because this sample uses string concatenation to compose SQL statements, only use this in your development environment in your password-protected site.
         <BR>
         EXAMPLES:
-            PI()*3*3
+            PI()\*3*3
             curdate()
             3=3 AND 4>4
             MID('Rackspace',1,4)
@@ -124,10 +123,9 @@ Copy the following PHP script and paste it into a text editor:
 
 Use the following steps to copy the instance hostname:
 
-1.  Log in to the [Cloud Control Panel](http://login.rackspace.com/).
-2.  Click the **Select a Product** drop-down menu in the top navigation bar,
-    then select **Rackspace Cloud**.
-2.  In the top navigation bar, select **Databases > MySQL**.
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+2.  Select **Databases > MySQL**.
 3.  Click the name for the instance to which you want to connect and
     view the details for the instance.
 4.  Copy the hostname string.
@@ -208,10 +206,9 @@ Databases instance. Do not add other nodes to the load balancer.
 
 Use the following steps to copy the instance hostname:
 
-1.  Log in to the [Cloud Control Panel](http://login.rackspace.com/).
-2.  Click the **Select a Product** drop-down menu in the top navigation bar,
-    then select **Rackspace Cloud**.
-3.  In the top navigation bar, select **Databases > MySQL**.
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3.  Select **Databases > MySQL**.
 4.  Click the name of the instance that you want to connect to the load
     balancer and view the details for the instance.
 5.  Note the region that this database is in. You must create the load

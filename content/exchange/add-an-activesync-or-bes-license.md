@@ -5,8 +5,8 @@ title: 'Add an ActiveSync or BES license'
 type: article
 created_date: '2012-03-11'
 created_by: Rae D. Cabello
-last_modified_date: '2018-05-07'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -26,9 +26,8 @@ this article to add an ActiveSync or BES license.
 
    - US Cloud Office customers, use <https://cp.rackspace.com/>.
 
-   - International and MyRackspace Cloud Office customers, use
-     <https://my.rackspace.com/> and navigate to **Products** &gt;
-     **Cloud Office** &gt; **Open Mail Control Panel**.
+   - International and MyRackspace Cloud Office customers, log in to
+     <https://login.rackspace.com/>. In the top navigation bar, click **Select a Product > Dedicated Hosting**, and then click **Products > Cloud Office > Open Mail Control Panel**.
 
    - Or, all customers can
      access <http://cp.rackspace.com/usercp> directly.

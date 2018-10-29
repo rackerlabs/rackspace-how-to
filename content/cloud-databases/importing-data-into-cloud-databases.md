@@ -32,7 +32,7 @@ sections of this article.
 
 ### Create a Cloud Databases instance to receive the data
 
-1.  Use the [Cloud Control Panel](http://login.rackspace.com/),
+1.  Use the [Cloud Control Panel](https://login.rackspace.com/),
     [API](https://developer.rackspace.com/docs/cloud-databases/v1/api-reference/database-instances/#create-database-instance),
     or [command-line client](https://developer.rackspace.com/docs/cloud-databases/v1/getting-started/create-use-database/#creating-a-database-instance-database-and-a-user)
     to create a Cloud Databases instance with an empty database and a username

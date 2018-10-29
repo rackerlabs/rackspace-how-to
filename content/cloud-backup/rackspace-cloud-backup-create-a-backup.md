@@ -32,10 +32,9 @@ image, see [Create an image of a server and restore a server from a saved image]
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2.  Click the **Select a Product** drop-down menu in the top navigation
-    bar, then select **Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3.  In the top navigation bar, select **Backups > Systems**.
+3.  Select **Backups > Systems**.
 
 4.  On the **Cloud Backup Systems** page, click the name of the server for
     which you want to create a backup.

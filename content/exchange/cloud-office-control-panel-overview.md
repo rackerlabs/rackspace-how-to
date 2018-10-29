@@ -5,8 +5,8 @@ title: Cloud Office Control Panel overview
 type: article
 created_date: '2012-05-23'
 created_by: Rae D. Cabello
-last_modified_date: '2017-05-08'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -19,7 +19,7 @@ provides a brief overview of the features that you can access to in the control 
 Use one of the following links to log in to the Cloud Control Panel:
 
 - [Login for new Cloud Office customers](https://cp.rackspace.com/)
-- [Login for UK and MyRackspace customers](https://my.rackspace.com/)
+- [Login for UK and MyRackspace customers](https://login.rackspace.com/)
 
 After you log in, you see sections that represent the services for which you signed up. Each section has several options and tools to choose from. As you sign up for additional services, they appear here to enable you to manage them directly from the landing page.
 
@@ -160,4 +160,4 @@ The following options available in the **Support** menu:
 -  **Email Setup Wizard** - View useful mailbox information while using step-by-step instructions on how to set up your Cloud Office services.
 -  **View Tickets** - Create a new ticket and view any past tickets on the Support Tickets landing page.
 
-If you need assistance help a specific feature, read about how to use the [Help tool for hosted email and Skype for business](https://support.rackspace.com/how-to/help-tool-for-hosted-email-and-skype-for-business/).
+If you need help with a specific feature, read about how to use the [Help tool for hosted email and Skype for business](/how-to/help-tool-for-hosted-email-and-skype-for-business).

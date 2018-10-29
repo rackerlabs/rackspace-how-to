@@ -5,8 +5,8 @@ title: Cloud Backup system actions
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date: '2018-07-05'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -15,13 +15,12 @@ product_url: cloud-backup
 
 **Warning**: The system actions are for users who are familiar with Rackspace Cloud Backup. Users with Managed Cloud Service Level accounts might want to contact their account manager before performing any of the following actions.
 
-This article describes the actions that are available in the Backups section of the [Cloud Control Panel](http://login.rackspace.com/).
+This article describes the actions that are available in the Backups section of the [Cloud Control Panel](https://login.rackspace.com/).
 
 Use the following steps to navigate to this area:
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com/).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 3. Select **Backups > Systems**.
 
 You can access the **Actions** menu from the gear widget next to the server name in the system list or from the **Actions** button on the **System details** page. This menu is not the one that appears on the **Single Backup** page.

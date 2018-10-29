@@ -5,8 +5,8 @@ title: Troubleshooting low disk space for a Windows cloud server
 type: article
 created_date: '2018-08-16'
 created_by: Cat lookabaugh
-last_modified_date: '2018-08-16'
-last_modified_by: Cat lookabaugh
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -40,7 +40,7 @@ see [Log in to your server via RDP](/how-to/log-in-to-your-server-via-rdp-window
 
 Check your open support tickets for information about any incidents that might
 be affecting the service. To check your open support tickets, log in to the
-[Cloud Control Panel](https://mycloud.rackspace.com/) and click **Tickets >
+[Cloud Control Panel](https://login.rackspace.com/) and click **Tickets >
 Ticket List** in the top navigation bar.
 
 #### Determine the amount of disk space
@@ -84,8 +84,7 @@ To determine disk space, run the following steps:
 ### Conclusion
 
 If you've followed these troubleshooting steps  but disk space is still low,
-contact the Rackspace Support team by creating a support ticket in the Cloud
-Control Panel by clicking **Tickets > Create Ticket** in the top navigation bar.
-To expedite the issue, include all of the troubleshooting steps that you have
-already taken.
-
+contact the Rackspace Support team by creating a support ticket in the
+[Cloud Control Panel](https://login.rackspace.com/) by clicking **Tickets > Create Ticket**
+in the top navigation bar. To expedite the issue, include all of the
+troubleshooting steps that you have already taken.

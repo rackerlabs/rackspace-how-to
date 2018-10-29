@@ -5,8 +5,8 @@ title: Learn about Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-04-14'
 created_by: Renee Rendon
-last_modified_date: '2018-02-21'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -160,7 +160,7 @@ RBAC is available to all Rackspace customers.
 ### How can I get RBAC?
 
 RBAC is automatically activated when the account owner adds users to an account. Account owners can add users
-through the [Cloud Control Panel](https://mycloud.rackspace.com/) or the API.
+through the [Cloud Control Panel](https://login.rackspace.com/) or the API.
 
 For more information about specific RBAC-related APIs, see the [Rackspace
 API documentation](https://developer.rackspace.com/docs/).

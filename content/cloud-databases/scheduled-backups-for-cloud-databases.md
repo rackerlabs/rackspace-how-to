@@ -67,10 +67,9 @@ Use the following steps to create a backup schedule on an existing instance:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. In the top navigation bar, select **Databases > MySQL**.
+3. Select **Databases > MySQL**.
 
 4. In the list of instances, click the gear icon next to the instance for
    which you want to create a schedule and select **Schedule Backup**.
@@ -94,10 +93,9 @@ creation is only available on HA groups.
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. In the top navigation bar, select **Databases > MySQL**.
+3. Select **Databases > MySQL**.
 
 4. Above the list of instances, select **Create High Availability Group**.
 
@@ -118,10 +116,9 @@ Use the following steps to view and modify a scheduled backup:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. In the top navigation bar, select **Databases > MySQL**.
+3. Select **Databases > MySQL**.
 
 4. Click the name of the instance for which you want to view or modify a
    backup schedule.
@@ -137,10 +134,9 @@ Use the following steps to delete a scheduled backup:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. In the top navigation bar, select **Databases > MySQL**.
+3. Select **Databases > MySQL**.
 
 4. Click the name of the instance for which you want to delete a backup
    schedule.

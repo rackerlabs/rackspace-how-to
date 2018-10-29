@@ -42,10 +42,9 @@ Use the following steps to create a new configuration group:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. From the top navigation bar, select **Databases**.
+3. Select **Databases**.
 
 4. In the **Databases** menu, select **MySQL Configurations** under **MANAGE EXTRAS**.
 

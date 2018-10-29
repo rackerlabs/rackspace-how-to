@@ -104,10 +104,9 @@ product resources.
 
 Yes. Use the following steps to access Cloud Databases:
 
-1. Log in to the [Cloud Control Panel](http://login.rackspace.com/)
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
-3. In the top navigation bar, select **Databases**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/)
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Select **Databases**.
 
 Connecting to a Cloud Database instance remotely requires a [high availability
 instance group](/how-to/connect-to-a-cloud-databases-instance) with a public
@@ -416,7 +415,7 @@ and [Export Data from MySQL](/how-to/exporting-data-from-mysql).
 
 Yes. Configuration settings for Cloud Databases instances can be stored
 and applied by using the [Cloud Control
-Panel](https://mycloud.rackspace.com/) and the [Cloud Databases
+Panel](https://login.rackspace.com/) and the [Cloud Databases
 API](https://developer.rackspace.com/docs/cloud-databases/v1/).
 You can save your settings in configuration groups, and then apply each
 configuration group to multiple instances. You can maintain multiple

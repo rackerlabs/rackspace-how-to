@@ -5,25 +5,22 @@ title: Access Rackspace CDN
 type: article
 created_date: '2015-05-08'
 created_by: Catherine Richardson
-last_modified_date: '2016-06-01'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-You can access Rackspace CDN in the following ways:
+You can access Rackspace CDN in the Cloud Control Panel by using the
+following steps:
 
--   You can access and use Rackspace CDN through the GUI interface of
-    the [Cloud Control Panel](https://mycloud.rackspace.com/) by clicking
-    **Storage** in the top navigation bar and selecting **CDN**.
--   You can also access Rackspace CDN under **Networking** in the top
-    navigation bar.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Click **Storage > CDN** or **Networking > CDN**.
 
--   You can interact with Rackspace CDN programmatically through the
-    Rackspace CDN API. For instructions, see the [API Developer
-    Guide](https://developer.rackspace.com/docs/cdn/v1/developer-guide/).
-    Also, the SDKs developed for Rackspace CDN are at [Rackspace CDN
-    SDKs](https://developer.rackspace.com/docs/cdn/getting-started/).
+You can interact with Rackspace CDN programmatically through the
+Rackspace CDN API. For instructions, see the [API Developer Guide](https://developer.rackspace.com/docs/cdn/v1/developer-guide/).
+
 
 ### Additional resources
 

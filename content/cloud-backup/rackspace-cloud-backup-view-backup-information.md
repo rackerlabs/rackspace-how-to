@@ -5,7 +5,7 @@ title: View backup information with Cloud Backup
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date: '2018-10-23'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
@@ -20,9 +20,8 @@ This article describes how to confirm your backup settings, ensure that a cleanu
 Use the following steps to view information for a single backup:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
-3. In the top navigation bar, select **Backups > Backups**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Select **Backups > Backups**.
 
 A list of all of the backup processes that you currently have on your account
 displays, as shown in the following image:

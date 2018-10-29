@@ -5,7 +5,7 @@ title: Cloud Backup backup actions
 type: article
 created_date: '2012-08-22'
 created_by: David Hendler
-last_modified_date:  '2018-10-23'
+last_modified_date:  '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
@@ -14,11 +14,11 @@ product_url: cloud-backup
 
 **Previous section**: [View backup information with Cloud Backup](/how-to/rackspace-cloud-backup-view-backup-information)
 
-This article describes the actions you can perform during a single back up.
+This article describes the actions that you can perform during a single backup.
 
 You can access the **Backup Actions** menu in the following ways:
 
--   Log in to the [Cloud Control Panel](http://login.rackspace.com), click the
+-   Log in to the [Cloud Control Panel](https://login.rackspace.com), click the
     **Select a Product** drop-down menu in the top navigation bar,
     then select **Rackspace Cloud**. Next, select **Backups** and then click
     on the gear icon next to the backup name on the **Configured Backups**

@@ -24,10 +24,9 @@ Use the following steps to copy individual backups from one region to another. T
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. in the top navigation bar, select **Backups > MySQL Backups**.
+3. Select **Backups > MySQL Backups**.
 
 4. In the list of backups, click the gear icon next to the backup you want to
    copy and select **Copy Backup**.

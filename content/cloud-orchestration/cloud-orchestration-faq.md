@@ -5,7 +5,7 @@ title: Cloud Orchestration FAQ
 type: article
 created_date: '2015-12-09'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-04-06'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Orchestration
 product_url: cloud-orchestration
@@ -23,10 +23,11 @@ Our service runs upstream OpenStack Heat code with only a few slight
 modifications to ensure a positive customer experience on our cloud.
 
 You can create, edit, update, and delete full stack configurations by using
-the [Cloud Control Panel](http://mycloud.rackspace.com), the [Cloud
+the [Cloud Control Panel](https://login.rackspace.com), the [Cloud
 Orchestration
 API](https://developer.rackspace.com/docs/cloud-orchestration/v1/?&_ga=2.260382863.302649394.1521129640-20219293.1519936242#document-getting-started), or a
-command-line interface (CLI). The Cloud Control Panel includes a **Rackspace
+command-line interface (CLI). The [Cloud Control
+Panel](https://login.rackspace.com) has a **Rackspace
 Templates** area that provides access to pre-built templates. These templates
 incorporate industry best practices and enable you to quickly deploy specific
 application and platform stacks including WordPress, LAMP, and PHP.
@@ -60,8 +61,11 @@ command to show the underlying API request for the command. Using this parameter
 
 #### Can I access the Cloud Orchestration service through the Cloud Control Panel?
 
-Yes. Log in to the [Cloud Control Panel](http://mycloud.rackspace.com)
-and click the **Orchestration** tab.
+Yes. Use the following steps:
+
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Click **Orchestration**.
 
 #### Is Cloud Orchestration a Platform as a Service (PaaS)?
 
@@ -178,7 +182,7 @@ no longer see any associated resources in the lists of servers,
 databases, and other resources.
 
 Alternatively, you can choose to delete these resources individually through
-the Cloud Control Panel.
+the [Cloud Control Panel](https://login.rackspace.com).
 
 **Warning**: Deleting one or more of the resources within a stack will likely
 make the stack unstable and possibly inoperable.
@@ -268,8 +272,8 @@ provider's cloud.
 Rackspace supports the CFN template format and is slowly adding support for
 individual resources. We currently support server and load balancer resources.
 However, if the existing CFN template contains syntax that invokes other
-resources, it will need to be tweaked before use. We encourage you to provide
-feedback and request new features, which will help us prioritize our roadmap.
+resources, it needs to be tweaked before use. We encourage you to provide
+feedback and request new features, which helps us prioritize our roadmap.
 
 #### Can I deploy my Heat template from another OpenStack service provider at Rackspace?
 
@@ -288,7 +292,7 @@ Yes. There are two main differences:
 1.  We provide additional support for custom-defined Rackspace resources.
     While Cloud Orchestration is based on the OpenStack Heat project, each
     service provider running Heat can choose the cloud resource
-    plug-ins they want to support. To provide customers with broad  
+    plug-ins they want to support. To provide customers with broad
     orchestration support for our public cloud, we run custom
     resource plug-ins that other service providers may choose not to run,
     or that may not be compatible with other service provider clouds.
@@ -400,28 +404,31 @@ organization on GitHub.
 The Cloud Orchestration service enables you to deploy your own custom
 templates or leverage pre-built and pre-tested templates.
 
-To use your own template, log in to the Cloud Control Panel and click
-**Orchestration > Custom Template**.
+Use the following steps to use your own template:
 
-To save time and effort and take advantage of industry best practices, go to
-**Orchestration > Stack Templates**. The pre-built and pre-tested templates in
-this area enable you to quickly spin up fully-configured stacks. The templates
-orchestrate the requisite cloud resources and perform initial software
-configuration.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Click **Orchestration > Custom Template**.
+4. To save time and effort and take advantage of industry best practices, go to
+   **Orchestration > Stack Templates**.
+
+The pre-built and pre-tested templates in this area enable you to quickly spin
+up fully-configured stacks. The templates orchestrate the requisite cloud
+resources and perform initial software configuration.
 
 #### Which Rackspace template should I choose?
 
 The Orchestration service enables you to select the template that is
 appropriate for your needs. Each template has a simple description or
 flavor, as well as a detailed description that you can access when you select a
-template in the Cloud Control Panel. The following guidelines will help you
-select the right type of stack:
+template in the [Cloud Control Panel](https://login.rackspace.com). The
+following guidelines help you select the right type of stack:
 
 -   **Single-server template**: This template offers all-in-one orchestration
     in which the database, application, and all other resources are on the same
     compute instance. Single-server orchestration is useful for testing
     and other low-traffic situations where there is no intention of
-    increasing capacity. If you think you will need greater capacity,
+    increasing capacity. If you think you need greater capacity,
     then deploy a load-balanced, multi-server template with a dedicated
     back-end database instead. Some applications are not available with the
     single-server template.

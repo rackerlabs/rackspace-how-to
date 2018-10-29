@@ -153,9 +153,9 @@ See the section on [Retaining your Backup](/how-to/rackspace-cloud-backup-backup
 
 #### How do I configure my Rackspace Cloud Backups?
 
-You set up your backups in the Rackspace [Cloud Control Panel](http://login.rackspace.com).
+You set up your backups in the Rackspace [Cloud Control Panel](https://login.rackspace.com).
 
-Select **Rackspace Cloud** from the **Select a Product** drop-down menu, then
+In the top navigation bar, click **Select a Product > Rackspace Cloud**, then
 select **Backups**.
 
 If you need to create a new backup, click the System that you want to back up,
@@ -186,7 +186,7 @@ again, but the new auth token is the same as the old one.
 **Solution**
 
 Account administrators can manage permission levels in the User
-**Management** section of the [Cloud Control Panel](http://login.rackspace.com).
+**Management** section of the [Cloud Control Panel](https://login.rackspace.com).
 Submit a request to your account administrator for **Full** access to your
 account or **Administrative** access to Cloud Files for your sub-user account.
 

@@ -95,7 +95,7 @@ Cloud Databases:
 -   By default, access to an HA instance through the VIP is blocked. To access
     an HA instance, you must explicitly add an access control list (ACL) that
     specifies the IP addresses to which to grant access. You can set ACLs
-    through the API or the [Cloud Control Panel](http://login.rackspace.com/).
+    through the API or the [Cloud Control Panel](https://login.rackspace.com/).
 -   The `networks` property that is associated with an HA instance provides
     the addresses and ports for accessing the HA instance. (You can obtain
     this property by listing the details of an HA instance.) The single access

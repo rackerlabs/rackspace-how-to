@@ -20,7 +20,7 @@ hypervisor hosting your cloud server. This is done over a network link
 via the iSCSI protocol. The new Volume gets exposed as a virtual device
 to the host. To your Cloud Server, the Volume appears as a new raw
 storage device. You can attach a Cloud Block Storage Volume through
-either the API or the [Cloud Control Panel](http://login.rackspace.com/).
+either the API or the [Cloud Control Panel](https://login.rackspace.com/).
 
 **Mount**: Mounting is generally done once a volume has been attached
 and formatted for use by a computer's operating system. Mounting is the

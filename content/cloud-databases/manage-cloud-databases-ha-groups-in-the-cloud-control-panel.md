@@ -23,8 +23,7 @@ Use the following steps to create a new HA instance group:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2.  Click the **Select a Product** drop-down menu in the top navigation bar,
-    then select **Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
 3.  From the the **Databases** menu, select **MySQL Instance** under **CREATE
     RESOURCES**.
@@ -119,10 +118,9 @@ Use the following steps to modify an HA instance group:
 
 1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-2. Click the **Select a Product** drop-down menu in the top navigation bar,
-   then select **Rackspace Cloud**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3. Select **Databases > MySQL**.
+3.  Select **Databases > MySQL**.
 
 4.  From the list of databases, select one of the HA database instances by clicking its name.
 

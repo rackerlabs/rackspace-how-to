@@ -5,7 +5,7 @@ title: Configure a load balancer
 type: article
 created_date: '2012-07-17'
 created_by: Rackspace Support
-last_modified_date: '2018-10-08'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
@@ -26,18 +26,20 @@ balancer in the Rackspace Cloud.
 
 Use the following steps to set up a load balancer:
 
-1. Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2. In the top navigation bar, click **Networking > Load Balancers**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+3. Select **Networking > Load Balancers**.
 
     The Cloud Load Balancers page appears.
 
-3. Click **Create Load Balancer**.
+4. Click **Create Load Balancer**.
 
-4. In the **Identification** section, enter a name for the new load balancer
+5. In the **Identification** section, enter a name for the new load balancer
    and select the region.
 
-5. In the **Configuration** section, select one of the following choices for
+6. In the **Configuration** section, select one of the following choices for
    **Virtual IP**:
 
     - **Accessible on the Public Internet**: Setting your virtual IP type to
@@ -52,14 +54,14 @@ Use the following steps to set up a load balancer:
       the rate limit on the public interface, and traffic between cloud
       servers has no charge for bandwidth.
 
-6. Choose the protocol and port that you want to use. The port adjusts to the
+7. Choose the protocol and port that you want to use. The port adjusts to the
    protocol that you select, but you can also manually edit the port.
 
     **Note**: For more information about the protocols that you can choose
     when configuring a load balancer, see [Choosing the Right
     Protocol](/how-to/available-protocols-when-configuring-a-cloud-load-balancer).
 
-7. Choose the appropriate algorithm for your load balancer.
+8. Choose the appropriate algorithm for your load balancer.
 
     **Note**: This is an important attribute to set, especially as your
     load balancer implementation becomes more complex. In most cases, the
@@ -68,10 +70,10 @@ Use the following steps to set up a load balancer:
     your servers are unequal in size or resources, consider using weighted
     algorithms to favor the servers that have more resources.
 
-8.	In the **Add Nodes** section, click **Add Cloud Servers** to set your load
+9.	In the **Add Nodes** section, click **Add Cloud Servers** to set your load
     balancer to operate on one or more of your cloud servers.
 
-9.	To add one or more external nodes, click **Add External Node**, then enter
+10.	To add one or more external nodes, click **Add External Node**, then enter
     the IP address and port (usually port 80 for HTTP traffic) of the service
     that you want to load balance. You can then enable or disable the
     load-balancing service on your external node directly through the Control
@@ -80,9 +82,9 @@ Use the following steps to set up a load balancer:
      **Note**: The only domain names that you can use are host names that are
      associated with Cloud Database host names.
 
-10.	Click **Create Load Balancer**.
+11.	Click **Create Load Balancer**.
 
-     After your load balancer is built, you can view a summary of it.
+     After your load balancer builds, you can view a summary of it.
 
 ### Additional configuration options
 
