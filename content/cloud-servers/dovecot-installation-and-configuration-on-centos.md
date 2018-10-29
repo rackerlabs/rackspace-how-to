@@ -5,7 +5,7 @@ title: Install and configure Dovecot on CentOS
 type: article
 created_date: '2012-08-15'
 created_by: Lee Jelley
-last_modified_date: '2018-10-18'
+last_modified_date: '2018-10-29'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -29,7 +29,7 @@ protocol.
 
 You need the following operating system and software to use Dovecot:
 
-- A CentOS&reg; 6.0 or above Linux distribution
+- A CentOS&reg; 6.0 or later Linux distribution
 - Postfix
 
 ### Install Dovecot
