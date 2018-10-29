@@ -1,6 +1,6 @@
 ---
 permalink: cloud-backup-basic-troubleshooting-on-window-2008-servers
-audit_date:
+audit_date: '2018-08-30'
 title: Cloud Backup - Basic troubleshooting on Windows 2008 servers
 created_date: '2018-08-30'
 created_by: Shaun Crumpler
