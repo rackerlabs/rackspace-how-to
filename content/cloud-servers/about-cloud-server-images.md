@@ -52,8 +52,9 @@ images:
     attempts to reclaim space that has been freed by deleting files
     and images. That process continues even if the image creation
     process is aborted because of disk limits at the time the
-
-    process begins. That means that in some cases, trying to create an image again after it fails could result in a successful image process thanks to that cleanup operation.
+    process begins. That means that in some cases, trying to create an image 
+    again after it fails could result in a successful image process thanks to 
+    that cleanup operation.
 
 -   **If you are using a boot from volume server, you cannot create an image of it**. You can, however, create snapshots and clones of a boot from volume server.
 
