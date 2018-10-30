@@ -1,12 +1,12 @@
 ---
 permalink: getting-started-with-rackspace-intelligence-for-the-cloud/
-audit_date:
+audit_date: '2018-10-24'
 title: Getting started with Rackspace Intelligence for the cloud
 type: article
 created_date: '2015-10-20'
 created_by: Constanze Kratel
-last_modified_date: '2018-10-25'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-30'
+last_modified_by: Kate Dougherty
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
