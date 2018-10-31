@@ -30,11 +30,11 @@ As a customer with a dedicated account, you can perform the following tasks:
 - Use the following types of [remote
   checks](https://support.rackspace.com/how-to/working-with-alarms/):
 
-    - [Ping](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-ping)
+    - Ping
 
-    - [Transmission Control Protocol (TCP)](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-tcp)
+    - Transmission Control Protocol (TCP)
 
-    - [HTTP](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#remote-http)
+    - HTTP
 
 For more information, see [Working with
 alarms](https://support.rackspace.com/how-to/working-with-alarms/).
@@ -56,8 +56,6 @@ following resources:
 Use the following steps to access Rackspace Intelligence:
 
 1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
-
-   **Note**: A Rackspace account number is not required.
 
 2. In the top navigation bar, click **Select a Product > Rackspace
     Intelligence**.
