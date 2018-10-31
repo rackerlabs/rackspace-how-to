@@ -142,8 +142,7 @@ by a
 To customize how Rackspace Intelligence responds when it detects a
 status change, perform the following actions:
 
-- Define
-  [notifications](/how-to/working-with-notifications-in-rackspace-intelligence)
+- Define [notifications](/how-to/working-with-notifications-in-rackspace-intelligence)
   . Ensure that you also provide contact details as part of this process.
 - Define [notification
   plans](/how-to/working-with-rackspace-intelligence-notification-plans).
