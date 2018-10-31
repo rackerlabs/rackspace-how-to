@@ -5,10 +5,9 @@ title: Log in to Rackspace Intelligence for dedicated accounts
 type: article
 created_date: '2015-10-07'
 created_by: Constanze Kratel
-last_modified_date: '2018-10-25'
-last_modified_by: Stephanie Fillmon
-product: Rackspace Intelligence
-product_url: rackspace-intelligence
+last_modified_date: '2018-11-01'
+last_modified_by: Kate Dougherty
+
 ---
 
 To use Rackspace Intelligence, you must have a dedicated Rackspace
@@ -25,8 +24,6 @@ To access Rackspace Intelligence:
     This takes you to the **Entities** page, which lists all of your
     available entities. From this page, you can explore all the details
     for the entities that have been configured for you.
-
-    <img src="{% asset_path rackspace-intelligence/log-in-to-rackspace-intelligence-for-dedicated-accounts/Entity%20List1.png %}" width="600" />
 
 After you have launched the **Entities** page, you can explore different
 features that pertain to your entities. For more information, see
