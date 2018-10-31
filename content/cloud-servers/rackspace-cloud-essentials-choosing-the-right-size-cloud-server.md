@@ -5,7 +5,7 @@ title: Rackspace Cloud Essentials - Choose the right-size cloud server
 type: article
 created_date: '2012-05-02'
 created_by: Rackspace Support
-last_modified_date: '2018-10-30'
+last_modified_date: '2018-10-31'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -47,11 +47,11 @@ Because you can create or delete them as quickly as virtual machines (VMs),
 they offer the agility of multi-tenant environments with the performance of
 single-tenant hardware.
 
-Also consider that cloud servers come in the following flavors, or server
+Also consider that cloud servers come in the following flavors or server
 types:
 
 - General Purpose Compute optimized
-- Memory-optimized
+- Memory optimized
 - I/O optimized servers
 
 The Memory, Compute, and I/O flavors offer faster disk access and network
@@ -63,12 +63,12 @@ The following table shows flavor classes for different workloads:
 
 | (Prototype) | (Scale) | (Optimize) |
 | --- | --- | --- |
-| General purpose virtual servers | General purpose or Workload-optimized virtual servers | General Purpose or Workload-optimized OnMetal servers |
+| General purpose virtual servers | General purpose or Workload-optimized virtual servers | General purpose or Workload-optimized OnMetal servers |
 |   | **Description** |   |
 | VMs running on multi-tenant hosts. Smaller sizes, balanced resources, and CPU and network burst capability provide the lowest price points and best value. | VMs running on multi-tenant hosts. Smaller sizes and workload-specific designs allow for price-performance optimization for your particular application. | API-driven, instantly provisioned, single-tenant, bare metal servers. Full host and workload-specific designs provide large-scale cost efficiencies, as well as maximum and consistent performance. |
 | **General purpose** | **Workload optimized** | **Workload optimized** |
 | Class name: **General Purpose v1** | Class name: **Compute v1** | Class name: **OnMetal General Purpose** |
-| Use cases:<br /><br /> - Testing and development<br /> - Low-to medium-traffic web servers<br /> - Batch processing<br /> - Network appliances<br /> - Small to medium databases | Use cases:<br /><br /> - Medium-to large-traffic web servers, application servers, batch processing, and network appliances | Use cases:<br /><br /> - Large-traffic web servers, application servers, batch processing, and network appliances|
+| Use cases:<br /><br /> - Testing and development<br /> - Low to medium-traffic web servers<br /> - Batch processing<br /> - Network appliances<br /> - Small to medium databases | Use cases:<br /><br /> - Medium to large-traffic web servers, application servers, batch processing, and network appliances | Use cases:<br /><br /> - Large-traffic web servers, application servers, batch processing, and network appliances|
 |   | **I/O optimized** | **I/O optimized** |
 |   | Class name: **I/O v1** | Class name: **OnMetal I/O** |
 |   | Use cases:<br /><br />- Medium to large relational databases and NoSQL data stores | Use cases:<br /><br />- Large-scale online transaction processing (OLTP), relational databases, and NoSQL data stores |
@@ -97,12 +97,12 @@ You can use the following utilities to monitor server performance:
 -  `iotop`: You can use the `iotop` command to monitor disk I/O on a
    per-process basis.
 
--  `dstat`: The `dstat` command also shows you the I/O statistics and other
+-  `dstat`: The `dstat` command shows you the I/O statistics and other
    information with more versatility than other commands.
 
 **Note**: You might need to install extra packages on your server to use the
 `iotop` and `dstat` commands.
 
-If you use these tools while running your web application and see an excessive
+If you use these tools while you run your web application and see an excessive
 load average or excessive memory usage, you either need to tune your
 application or choose a more powerful server flavor on which to run it.
