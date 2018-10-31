@@ -5,10 +5,9 @@ title: Log in to the Rackspace Intelligence dashboard
 type: article
 created_date: '2015-07-16'
 created_by: Rose Coste
-last_modified_date: '2018-10-25'
-last_modified_by: Stephanie Fillmon
-product: Rackspace Intelligence
-product_url: rackspace-intelligence
+last_modified_date: '2018-10-31'
+last_modified_by: Kate Dougherty
+
 ---
 
 To use Rackspace Intelligence, you must have a [Rackspace Cloud
