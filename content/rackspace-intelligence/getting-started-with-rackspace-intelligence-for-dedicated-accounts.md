@@ -1,6 +1,6 @@
 ---
 permalink: getting-started-with-rackspace-intelligence-for-dedicated-accounts/
-audit_date:
+audit_date: '2018-10-24'
 title: Getting started with Rackspace Intelligence for dedicated accounts
 type: article
 created_date: '2015-10-20'
@@ -11,7 +11,7 @@ product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
 
-**Note:** This guide is for Rackspace Intelligence on a dedicated
+**Note**: This guide is for Rackspace Intelligence on a dedicated
 account. If you have a standard cloud account, see
 [Getting started with Rackspace Intelligence for the
 cloud](/how-to/getting-started-with-rackspace-intelligence-for-the-cloud).
@@ -24,8 +24,7 @@ Rackspace Intelligence provides a *dashboard* that shows you actionable insights
 
 As a customer with a dedicated account, you can perform the following tasks:
 
-- Use the Rackspace Intelligence dashboard to view the availability of
-  your applications.
+- View the availability of your applications.
 - Create customized visualizations and graphs.
 - Use the following types of [remote
   checks](https://support.rackspace.com/how-to/working-with-alarms/):
@@ -44,7 +43,7 @@ alarms](https://support.rackspace.com/how-to/working-with-alarms/).
 Before you begin to use Rackspace Intelligence, you might want to review the
 following resources:
 
-- [Learn Rackspace Intelligence
+- [Learn the Rackspace Intelligence
   vocabulary](/how-to/learning-the-rackspace-intelligence-vocabulary)
 - [Understanding the Rackspace Intelligence User Interface for dedicated
   accounts](/how-to/understanding-the-rackspace-intelligence-user-interface-for-dedicated-accounts)
