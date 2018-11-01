@@ -22,7 +22,9 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | | | | |
 |-|-|-|-|
 | 4.14.26-46.32.amzn1.x86_64 | 4.14.33-51.34.amzn1.x86_64 | 4.14.33-51.37.amzn1.x86_64 | 4.14.42-52.37.amzn1.x86_64 |
-| 4.14.47-56.37.amzn1.x86_64 | | | |
+| 4.14.47-56.37.amzn1.x86_64 | 4.14.51-60.38.amzn1.x86_64 | 4.14.55-62.37.amzn1.x86_64 | 4.14.59-64.43.amzn1.x86_64 |
+| 4.14.62-65.117.amzn1.x86_64 | 4.14.70-67.55.amzn1.x86_64 | 4.14.67-66.56.amzn1.x86_64 | 4.14.70-67.55.amzn1.x86_64 |
+| 4.14.72-68.55.amzn1.x86_64 | 4.14.72-68.55.amzn1.x86_64 |  |  |
 
 **Amazon Linux 2017.03 Supported Versions**
 
@@ -39,7 +41,13 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 |-|-|-|-|
 | 4.9.58-18.51.amzn1.x86_64 | 4.9.58-18.55.amzn1.x86_64 | 4.9.62-21.56.amzn1.x86_64 | 4.9.77-31.58.amzn1.x86_64 |
 | 4.9.81-35.56.amzn1.x86_64 | 4.9.76-3.78.amzn1.x86_64 | 4.9.85-37.55.amzn1.x86_64 | 4.9.85-38.58.amzn1.x86_64 |
-| 4.9.93-41.60.amzn1.x86_64 | | | |
+| 4.9.93-41.60.amzn1.x86_64 | 4.9.70-22.55.amzn1.x86_64 | 4.9.116-43.59.amzn1.x86_64 | 4.9.119-44.140.amzn1.x86_64 |
+
+**Amazon Linux 2 Supported Versions **
+| | | | |
+|-|-|-|-|
+| 4.14.47-64.38.amzn2.x86_64 | 4.14.51-66.38.amzn2.x86_64 | 4.14.55-68.37.amzn2.x86_64 | 4.14.59-68.43.amzn2.x86_64 |
+| 4.14.62-70.117.amzn2.x86_64 | 4.14.67-71.56.amzn2.x86_64 | 4.14.70-72.55.amzn2.x86_64 | 4.14.72-73.55.amzn2.x86_64 |
 
 **RHEL 6 / CentOS 6 Supported Versions**
 
@@ -69,7 +77,9 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | 2.6.32-696.10.2.el6.x86_64 | 2.6.32-696.10.3.el6.x86_64 | 2.6.32-696.18.7.el6.x86_64 | 2.6.32-696.13.2.el6.x86_64 |
 | 2.6.32-696.16.1.el6.x86_64 | 2.6.32-696.20.1.el6.x86_64 | 2.6.32-573.41.1.el6.x86_64 | 2.6.32-573.42.1.el6.x86_64 |
 | 2.6.32-573.53.1.el6.x86_64 | 2.6.32-696.23.1.el6.x86_64 | 2.6.32-696.28.1.el6.x86_64 | 2.6.32-696.30.1.el6.x86_64 |
-| 2.6.32-573.55.2.el6.x86_64 | 2.6.32-573.55.4.el6.x86_64 | 2.6.32-573.59.1.el6.x86_64 | |
+| 2.6.32-573.55.2.el6.x86_64 | 2.6.32-573.55.4.el6.x86_64 | 2.6.32-573.59.1.el6.x86_64 | 2.6.32-573.60.1.el6.x86_64 |
+| 2.6.32-754.el6.x86_64 | 2.6.32-754.2.1.el6.x86_64 | 2.6.32-573.60.4.el6.x86_64 | 2.6.32-754.3.5.el6.x86_64 |
+| 2.6.32-573.62.1.el6.x86_64 | 2.6.32-754.6.3.el6.x86_64 |  |  |
 
 **RHEL 7 / CentOS 7 Supported Versions**
 
@@ -97,7 +107,9 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | 3.10.0-693.21.1.el7.x86_64 | 3.10.0-514.48.1.el7.x86_64 | 3.10.0-693.25.2.el7.x86_64 | 3.10.0-862.el7.x86_64 |
 | 3.10.0-514.48.3.el7.x86_64 | 3.10.0-514.48.5.el7.x86_64 | 3.10.0-514.51.1.el7.x86_64 | 3.10.0-693.25.4.el7.x86_64 |
 | 3.10.0-693.25.7.el7.x86_64 | 3.10.0-693.33.1.el7.x86_64 | 3.10.0-862.2.3.el7.x86_64 | 3.10.0-862.3.2.el7.x86_64 |
-| 3.10.0-862.3.3.el7.x86_64 | | | |
+| 3.10.0-862.3.3.el7.x86_64 | 3.10.0-862.6.3.el7.x86_64 | 3.10.0-514.53.1.el7.x86_64 | 3.10.0-693.35.1.el7.x86_64 |
+| 3.10.0-862.9.1.el7.x86_64 | 3.10.0-514.55.4.el7.x86_64 | 3.10.0-693.37.4.el7.x86_64 | 3.10.0-862.11.6.el7.x86_64 |
+| 3.10.0-862.14.4.el7.x86_64 | 3.10.0-693.39.1.el7.x86_64 | 3.10.0-514.58.1.el7.x86_64 |  |
 
 **Ubuntu 14.04LTS Supported Versions**
 
@@ -136,12 +148,10 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | 4.4.0-109-generic | 4.4.0-111-generic | 4.4.0-112-generic | 3.13.0-143-generic |
 | 4.4.0-116-generic | 3.13.0-145-generic | 4.4.0-121-generic | 3.13.0-147-generic |
 | 3.13.0-149-generic | 4.4.0-124-generic | 4.4.0-127-generic | 3.13.0-151-generic |
-
-**Ubuntu 14.05.5LTS Supported Versions**
-
-| |
-|-|
-| 4.4.0-128-generic |
+| 4.4.0-128-generic | 3.13.0-153-generic | 4.4.0-130-generic | 4.4.0-131-generic |
+| 3.13.0-155-generic | 4.4.0-133-generic | 3.13.0-156-generic | 3.13.0-157-generic |
+| 3.13.0-158-generic | 4.4.0-134-generic | 4.4.0-135-generic | 3.13.0-160-generic |
+| 4.4.0-137-generic |  |  |  |
 
 **Ubuntu 16.04LTS Supported Versions**
 
@@ -168,7 +178,13 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | 4.4.0-1039-aws | 4.4.0-1041-aws | 4.4.0-1043-aws | 4.4.0-1044-aws |
 | 4.4.0-1047-aws | 4.4.0-1048-aws | 4.4.0-1049-aws | 4.4.0-1050-aws |
 | 4.4.0-1052-aws | 4.4.0-1054-aws | 4.4.0-1055-aws | 4.4.0-1057-aws |
-| 4.4.0-1060-aws | 4.4.0-1061-aws | | |
+| 4.4.0-1060-aws | 4.4.0-1061-aws | 4.4.0-130-generic | 4.4.0-131-generic |
+| 4.4.0-1062-aws | 4.4.0-1063-aws | 4.4.0-133-generic | 4.4.0-1065-aws |
+| 4.4.0-134-generic | 4.4.0-135-generic | 4.4.0-1066-aws | 4.4.0-1067-aws |
+| 4.4.0-137-generic | 4.4.0-1069-aws | 4.15.0-13-generic | 4.15.0-15-generic |
+| 4.15.0-20-generic | 4.15.0-22-generic | 4.15.0-23-generic | 4.15.0-24-generic |
+| 4.15.0-29-generic | 4.15.0-30-generic | 4.15.0-32-generic | 4.15.0-33-generic |
+| 4.15.0-34-generic | 4.15.0-36-generic |  |  |
 
 #### Windows Agent Compatibility
 
