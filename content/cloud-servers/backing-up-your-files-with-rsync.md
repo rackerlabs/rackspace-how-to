@@ -43,11 +43,12 @@ The following explanation covers each part of the command:
     Ensures that `rsync` uses the SSH protocol and sets the port.
 
 -  `-avl` 
+   
    A shortcut that contains the following options:
 
     -  `-a` 
       
-       Archive. Saves the permission settings for the files.
+       **Archive**. Saves the permission settings for the files.
        
     -  `-v` 
     
