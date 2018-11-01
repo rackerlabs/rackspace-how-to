@@ -3,42 +3,42 @@ title: Cloud Servers
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2016-01-17'
-last_modified_by: Rackspace Support
+last_modified_date: '2018-11-01'
+last_modified_by: Cat Lookabaugh
 permalink: /cloud-servers/
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This introduction covers everything you'll need to know as a new Rackspace customer, including how to manage your account, create servers, set up security, and schedule server imaging.
+This introduction covers everything you need to know as a new Rackspace customer, including how to manage your account, create servers, set up security, and schedule server imaging.
 
 ### Saving server images
 
 - [Create a Cloud Server](/how-to/create-a-cloud-server)
-- [Saving a Cloud Server Image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
-- [Restoring a Server From a Snapshot](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
-- [Snapshot Limitations](/how-to/rackspace-cloud-essentials-cloud-server-image-limitations)
+- [Save a Cloud Server image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+- [Restore a server from a snapshot](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+- [Snapshot limitations](/how-to/rackspace-cloud-essentials-cloud-server-image-limitations)
 
 ### Remote access
 
-- [Remote Connection from Windows to a Linux Server](/how-to/connecting-to-linux-from-windows-by-using-putty)
-- [Remote Connection from Mac to a Linux Server](/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal)
-- [Remote Connection to a Windows Cloud Server Using RDP](/how-to/log-in-to-your-server-via-rdp-windows)
+- [Remote connection from Windows to a Linux server](/how-to/connecting-to-linux-from-windows-by-using-putty)
+- [Remote connection from MacOS to a Linux server](/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal)
+- [Remote connection to a Windows Cloud Server using RDP](/how-to/log-in-to-your-server-via-rdp-windows)
 
 ### Cloud Server security
 
 - [Basic Linux Cloud Server security](/how-to/basic-cloud-server-security)
-- [Windows Firewall Rules](/how-to/create-an-inbound-port-allow-rule-for-windows-firewall-2008)
+- [Windows firewall rules](/how-to/create-an-inbound-port-allow-rule-for-windows-firewall-2008)
 
 ### Uploading your content
 
-- [CentOS - Installing vsftpd](/how-to/rackspace-cloud-essentials-centos-installing-vsftpd)
-- [CentOS - Configuring a user in vsftpd](/how-to/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd)
+- [CentOS - installing vsftpd](/how-to/rackspace-cloud-essentials-centos-installing-vsftpd)
+- [CentOS - configuring a user in vsftpd](/how-to/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd)
 
 ### DNS & domain management
 
-- [What Are Your Nameservers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
-- [Transferring Your Domain to the Rackspace Cloud](/how-to/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud)
+- [What are your name servers?](/how-to/rackspace-cloud-essentials-what-are-your-name-servers)
+- [Transferring your domain to the Rackspace Cloud](/how-to/rackspace-cloud-essentials-transferring-your-domain-to-be-served-from-rackspace-cloud)
 - [Managing DNS](/how-to/create-dns-records-for-cloud-servers-with-the-control-panel)
 
 ### Managing your account
@@ -49,7 +49,7 @@ This introduction covers everything you'll need to know as a new Rackspace custo
 
 ### [Managing your server](/how-to/managing-your-server)
 
-- [Start a Console session](/how-to/start-a-console-session)
+- [Start a console session](/how-to/start-a-console-session)
 - [Reboot your server](/how-to/reboot-your-server)
 - [Rescue mode](/how-to/rescue-mode)
 - [Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server)
