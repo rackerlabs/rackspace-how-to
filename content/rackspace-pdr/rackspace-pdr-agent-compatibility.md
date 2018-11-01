@@ -43,7 +43,8 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | 4.9.81-35.56.amzn1.x86_64 | 4.9.76-3.78.amzn1.x86_64 | 4.9.85-37.55.amzn1.x86_64 | 4.9.85-38.58.amzn1.x86_64 |
 | 4.9.93-41.60.amzn1.x86_64 | 4.9.70-22.55.amzn1.x86_64 | 4.9.116-43.59.amzn1.x86_64 | 4.9.119-44.140.amzn1.x86_64 |
 
-**Amazon Linux 2 Supported Versions **
+**Amazon Linux 2 Supported Versions**
+
 | | | | |
 |-|-|-|-|
 | 4.14.47-64.38.amzn2.x86_64 | 4.14.51-66.38.amzn2.x86_64 | 4.14.55-68.37.amzn2.x86_64 | 4.14.59-68.43.amzn2.x86_64 |
@@ -79,7 +80,7 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | 2.6.32-573.53.1.el6.x86_64 | 2.6.32-696.23.1.el6.x86_64 | 2.6.32-696.28.1.el6.x86_64 | 2.6.32-696.30.1.el6.x86_64 |
 | 2.6.32-573.55.2.el6.x86_64 | 2.6.32-573.55.4.el6.x86_64 | 2.6.32-573.59.1.el6.x86_64 | 2.6.32-573.60.1.el6.x86_64 |
 | 2.6.32-754.el6.x86_64 | 2.6.32-754.2.1.el6.x86_64 | 2.6.32-573.60.4.el6.x86_64 | 2.6.32-754.3.5.el6.x86_64 |
-| 2.6.32-573.62.1.el6.x86_64 | 2.6.32-754.6.3.el6.x86_64 |  |  |
+| 2.6.32-573.62.1.el6.x86_64 | 2.6.32-754.6.3.el6.x86_64 | | |
 
 **RHEL 7 / CentOS 7 Supported Versions**
 
@@ -205,6 +206,7 @@ Linux kernel strings on this page must match your kernel version exactly to be c
 | |
 |-|
 | 6.3.9600 |
+
 
 **Windows Server 2016 Supported Versions**
 
