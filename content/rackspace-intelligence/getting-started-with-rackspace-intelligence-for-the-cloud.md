@@ -5,7 +5,7 @@ title: Getting started with Rackspace Intelligence for the cloud
 type: article
 created_date: '2015-10-20'
 created_by: Constanze Kratel
-last_modified_date: '2018-10-31'
+last_modified_date: '2018-11-01'
 last_modified_by: Kate Dougherty
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
@@ -25,12 +25,12 @@ kinds of entities:
 
 -   Rackspace cloud servers
 -   Rackspace cloud databases
--   Other entities that may be hosted by Rackspace or an another service
+-   Other entities that might be hosted by Rackspace or an another service
 
-Rackspace Intelligence can only gather and act on the information that is
+Rackspace Intelligence can gather and act on only the information that is
 available to it. For example, if you define a website that is hosted outside of
 Rackspace as an entity, then you might be able to place a check on its ping
-time, but you probably won't to be able to check the space available
+time, but you probably won't be able to check the space available
 in its file system.
 
 ### Access Rackspace Intelligence
@@ -58,7 +58,7 @@ vocabulary](/how-to/learning-the-rackspace-intelligence-vocabulary).
 
 Actions that you can perform in the user interface are grouped into four
 sections: **Monitor**, **Alert**, **Suppress**, and **Visualize**. Within
-each section, you can drill down to view details. For more information, see
+each section, you can view details about the action. For more information, see
 [Understanding the Rackspace Intelligence user
 interface](/how-to/understanding-the-rackspace-intelligence-dashboard-user-interface).
 
