@@ -5,8 +5,8 @@ title: Troubleshooting DNS issues
 type: article
 created_date: '2012-06-27'
 created_by: Rackspace Support
-last_modified_date: '2016-04-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-11-01'
+last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
 ---

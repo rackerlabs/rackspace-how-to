@@ -59,16 +59,22 @@ If the name servers are correctly set as Rackspace's `stabletransit` instances,
 note that it can take up to 48 hours for the name servers to propagate fully.
 You might need to wait for propagation to occur.
 
+**Note**: For more information about DNS lookups, see [Using dig to query name
+servers](/how-to/using-dig-to-query-nameservers) (for Linux&reg; and
+MacOS&reg;) and [Check DNS records on Windows with
+nslookup](/how-to/nslookup-checking-dns-records-on-windows) (for Windows).
+
 ### Check the Time to Live
 
 After you confirm that the registrar is correctly pointing the domain to
 Rackspace, check the Time To Live (TTL) of the domain in Cloud DNS.
 
-The TTL is the amount of time between pushes of the data before it is updated.
-For example, if you have a domain set in Cloud DNS and it has a TTL of three
-days (the default TTL), then even if you update the data in Cloud DNS, it does
-not update globally until three days have passed and the data has expired. As
-a result, it's important to check the TTL of a domain in the Cloud DNS.
+The TTL is the amount of time that must pass before the data expires and new
+data is pushed. For example, if you have a domain set in Cloud DNS and it has
+a TTL of three days (the default TTL), then even if you update the data in
+Cloud DNS, it does not update globally until three days have passed and the
+data has expired. As a result, it's important to check the TTL of a domain in
+the Cloud DNS.
 
 Use the following steps to change the TTL for a domain:
 
