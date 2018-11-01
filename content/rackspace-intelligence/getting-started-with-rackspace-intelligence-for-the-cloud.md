@@ -117,8 +117,8 @@ Rackspace Intelligence to trigger alarms.
 Depending on the [notification
 plans](/how-to/working-with-rackspace-intelligence-notification-plans) that
 you have defined, appropriate communications and actions might have
-already occurred in response to these alerts. Examining the list
-directly enables you to investigate infrastructure status in context whether
+already occurred in response to these alerts. Examine the list directly to
+investigate infrastructure status in context whether
 or not you were automatically
 [notified](/how-to/working-with-notifications-in-rackspace-intelligence)
 about status changes.
