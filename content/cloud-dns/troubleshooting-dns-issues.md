@@ -48,7 +48,7 @@ To check the name servers, open Terminal and run the following command:
 The output displays the name servers that are being used at the far right of
 the window under `ANSWER SECTION`, as shown in the following image:
 
-    <img src="{% asset_path cloud-dns/troubleshoot-dns-not-updating/picture1.png %}" />
+    <img src="{% asset_path cloud-dns/troubleshooting-dns-issues/picture1.png %}" />
 
 The two name servers that should appear for Rackspace Cloud are
 `dns1.stabletransit.com` and `dns2.stabletransit.com`.
