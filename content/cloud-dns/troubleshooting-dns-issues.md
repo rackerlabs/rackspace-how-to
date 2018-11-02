@@ -37,9 +37,9 @@ and check the domain again.
 
 ### Check the authoritative name servers
 
-If the issue persists on multiple browsers, check the authoritative name
-servers to ensure that the DNS records are updated to reflect Rackspace's
-data.
+If the issue persists on multiple browsers, check the authoritative
+name servers to ensure that the DNS records are updated to reflect
+Rackspace's data.
 
 To check the name servers, open Terminal and run the following command:
 
