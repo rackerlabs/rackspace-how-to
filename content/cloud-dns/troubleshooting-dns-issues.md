@@ -5,7 +5,7 @@ title: Troubleshoot DNS issues
 type: article
 created_date: '2012-06-27'
 created_by: Rackspace Support
-last_modified_date: '2018-11-02'
+last_modified_date: '2018-11-05'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
@@ -62,18 +62,18 @@ You might need to wait for propagation to occur.
 
 **Note**: For more information about DNS lookups, see [Using dig to query name
 servers](/how-to/using-dig-to-query-nameservers) (for Linux&reg; and
-MacOS&reg;) and [Check DNS records on Windows with
-nslookup](/how-to/nslookup-checking-dns-records-on-windows) (for Windows).
+macOS&reg;) and [Check DNS records on Windows with
+nslookup](/how-to/nslookup-checking-dns-records-on-windows) (for Windows&reg;).
 
 ### Check the Time to Live
 
 After you confirm that the registrar is correctly pointing the domain to
-Rackspace, check the Time To Live (TTL) of the domain in Cloud DNS.
+Rackspace, check the Time to Live (TTL) of the domain in Cloud DNS.
 
 The TTL is the amount of time that must pass before the data expires and new
 data is pushed. For example, if you have a domain set in Cloud DNS and it has
 a TTL of three days (the default TTL), then even if you update the data in
-Cloud DNS, it does not update globally until three days have passed and the
+Cloud DNS, it does not update globally until three days have passed, and the
 data has expired. Therefore, it's important to check the TTL of a domain in
 the Cloud DNS.
 
@@ -86,21 +86,21 @@ Use the following steps to change the TTL for a domain:
 3. Select **Networking > Cloud DNS**.
 
 4. Locate the proper DNS record and click the gear icon to the left of
-   it, then click **Edit Time to Live (TTL)**.
+   it. Then click **Edit Time to Live (TTL)**.
 
 5. If the TTL is very high and a flush of the DNS is urgently needed, create a
    ticket with Rackspace Support by clicking **Ticket > Create Ticket** at the
    top right of the Rackspace Cloud Control Panel.
 
-6. Click **Create Ticket**, then select **Cloud DNS** as the **Category** and
+6. Click **Create Ticket**, select **Cloud DNS** as the **Category**, and
    provide an explanation of the steps that you have already taken.
 
 ### Check the hosts file
 
 If the DNS issue is specific to a single computer, check the `hosts` file
 that's stored on that machine. The `hosts` file contains a list of host names
-and Internet Protocol (IP) addresses that your computer typically checks
-before it performs a DNS lookup.
+and IP addresses that your computer typically checks before it performs a DNS
+lookup.
 
 The `nslookup` and `dig` commands don't check this list of host names. If the
 IP address that your application (for example, `ping`) is using doesn't match
@@ -110,9 +110,9 @@ causing the DNS issue.
 The `hosts` file is stored in one of the following locations:
 
 - **Linux**: `/etc/hosts`
-- **Microsoft&reg; Windows&reg;**: `C:\\Windows\\System32\\drivers\\etc\\hosts`
+- **Microsoft&reg; Windows**: `C:\\Windows\\System32\\drivers\\etc\\hosts`
 
-Each line in the `hosts` represents one record. A hash sign (`#`) at
+Each line in the `hosts` file represents one record. A hash sign (`#`) at
 the beginning of a line indicates that the line is a comment and is
 ignored.
 
