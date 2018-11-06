@@ -78,14 +78,16 @@ Use the following steps to install OpenJDK&trade;:
 
         ll /etc/alternatives/java
 
-    In the following example output, `JAVA_HOME` is located at `/usr/lib/jvm/jre-1.7.0-openjdk-amd64`:
+    In the following example output, `JAVA_HOME` is located at
+    `/usr/lib/jvm/jre-1.7.0-openjdk-amd64`:
 
         /etc/alternatives/java -> /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java*
 
 #### Install Tomcat 7 on the cloud server
 
-1. To install Apache&reg; Tomcat&reg; 7, use `apt-get`, as shown in the
-   following example:
+Use the following steps to install Apache&reg; Tomcat&reg;:
+
+1. Enter the following command to install Tomcat&reg; 7:
 
         sudo apt-get -y install tomcat7
 
