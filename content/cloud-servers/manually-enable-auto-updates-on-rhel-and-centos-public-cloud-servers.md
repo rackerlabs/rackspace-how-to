@@ -37,7 +37,7 @@ RHEL 6 and CentOS 6 Rackspace public cloud servers:
    You can also open the file in any text editor.
 
    By default, the configuration is set to download and install the
-   updates.
+   updates, as shown in the following example:
 
        # Pass any given parameter to yum, as run in all the scripts invoked
        # by this package.  Be aware that this is global, and yum is invoked in
@@ -56,9 +56,9 @@ RHEL 6 and CentOS 6 Rackspace public cloud servers:
        DOWNLOAD_ONLY=no
 
 3. *(Optional)* To set up notifications for automatic package updates, such
-   as time of installation, packages installed, and errors during
-   installation, edit the line beginning with `MAILTO=` to add an email
-   address to receive notifications.
+   as time of installation, packages installed, and installation errors,
+   edit the line beginning with `MAILTO=` to add an email
+   address to receive notifications, as shown in the following example:
 
        # if MAILTO is set and the mail command is available, the mail command
        # is used to deliver yum output
@@ -72,8 +72,8 @@ RHEL 6 and CentOS 6 Rackspace public cloud servers:
    If you are using `vim` to edit the configuration file, press **esc** and
    then enter **:wq** to save any changes.
 
-   After you have saved the file, a message displays stating that the file was
-   properly written.
+   After you have saved the file, the following displays stating that the file
+   was properly written:
 
        APT::Periodic::Update-Package_Lists "1";
        APT::Periodic::Download-Upgradable-Packages "1";
@@ -105,6 +105,9 @@ RHEL 7 and CentOS 7 Rackspace public cloud servers:
 
    You can also open the file in any text editor.
 
+   By default, updates are automatically downloaded, but not installed, as
+   shown in the following example:
+
        # Whether a message should be emitted when updates are available,
        # were downloaded, or applied.
        update_messages = yes
@@ -129,11 +132,11 @@ RHEL 7 and CentOS 7 Rackspace public cloud servers:
 
 4. *(Optional)* You can set up notifications in the configuration file so that
    the output of the `yum` updates is emailed to you to inform you of what was
-   completed and what failed if there are issues. Edit the following
+   completed and, if there are issues, what failed. Edit the following
    sections:
 
    1. In the `[emitters]` section of the configuration file, ensure that
-      `emit_via` is set to `stdio`.
+      `emit_via` is set to `stdio`, as shown in the following example:
 
           [emitters]
           # Name to use for this system in messages that are emitted.  If
@@ -149,7 +152,7 @@ RHEL 7 and CentOS 7 Rackspace public cloud servers:
 
     2. In the `[email]` section of the configuration file, edit the
        `email_to` field to add the email address to which you want the
-       output to be sent.
+       output to be sent, as shown in the following example:
 
            [email]
            # The address to send email messages from.
@@ -167,8 +170,8 @@ RHEL 7 and CentOS 7 Rackspace public cloud servers:
    If you are using `vim` to edit the configuration file, press **esc** and
    then enter **:wq** to save any changes.
 
-   After you have saved the file, a message displays stating that the file was
-   properly written.
+   After you have saved the file, the following message displays stating that
+   the file was properly written:
 
        "/etc/yum/yum-cron.conf" 81L, 2620C written
 
