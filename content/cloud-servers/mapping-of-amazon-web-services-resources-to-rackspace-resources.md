@@ -14,7 +14,8 @@ product_url: cloud-servers
 **Previous section:** [Migrating to the Rackspace Cloud from Amazon Web Services](/how-to/migrating-to-the-rackspace-cloud-from-amazon-web-services)
 
 The following table maps Amazon&reg; Web Services&reg; (AWS)
-infrastructure as a service (IaaS) products to Rackspace products:
+infrastructure as a service (IaaS) products to
+Rackspace products:
 
 | AWS product | Corresponding Rackspace product |
 | --- | --- |
