@@ -1,6 +1,6 @@
 ---
 permalink: migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services/
-audit_date:
+audit_date: '2018-10-04'
 title: 'Migrate an application based on Backbone.js, Node.js, and MongoDB from Amazon Web Services'
 type: article
 created_date: '2013-07-02'
@@ -14,7 +14,7 @@ product_url: cloud-servers
 **Previous section:** [Provision cloud resources when migrating from Amazon Web Services](/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services)
 
 This scenario shows you how to migrate a Backbone.js, Node.js, and
-MongoDB&reg; application from Amazon&reg; Web Services&reg; (AWS) to the
+MongoDB&reg; application from Amazon Web Services (AWS) to the
 Rackspace Cloud. It takes about 30 minutes to complete.
 
 The following diagram shows the topology of the application:
@@ -87,7 +87,7 @@ Use the following steps to install OpenJDK&trade;:
 
 Use the following steps to install Apache&reg; Tomcat&reg;:
 
-1. Enter the following command to install Tomcat&reg; 7:
+1. Enter the following command to install Tomcat 7:
 
         sudo apt-get -y install tomcat7
 
@@ -348,8 +348,8 @@ To use Cloud Files, follow these preparatory steps:
 
 ### Restore data from Cloud Files to Cloud Servers
 
-If you uploaded your data to Cloud Files, transfer it to your Cloud
-Server by using the following steps:
+If you uploaded your data to Cloud Files, transfer it to Cloud
+Servers by using the following steps:
 
 1.  Using SSH, connect to the Cloud Servers instance by using the
     PublicNet URL and the root password.
