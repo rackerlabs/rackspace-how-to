@@ -384,7 +384,7 @@ Server by using the following steps:
 
 ### Test your application
 
-Navigate to **http://<cloudServeIpAddress>/<yourApp>** in a browser window to
+Navigate to **http://\<cloudServeIpAddress>/\<yourApp>** in a browser window to
 access and test your application.
 
 ### Next step
