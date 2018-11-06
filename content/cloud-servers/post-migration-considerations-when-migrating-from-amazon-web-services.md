@@ -5,8 +5,8 @@ title: Post-migration considerations when migrating from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2016-01-07'
-last_modified_by: Rose Contreras
+last_modified_date: '2018-11-06'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -62,7 +62,7 @@ and using a nonstandard (other than port 22) port for SSH.
 To create a robust and scalable monitoring system, consider using
 Rackspace Cloud Monitoring. For information about installing, configuring, and
 running an agent and enabling monitoring checks by using the Cloud Control
-Panel, read [Install and Configure the Rackspace Monitoring
+Panel, read [Install and configure the Rackspace Monitoring
 Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent).
 
 After you have installed the agent, based on your requirements, you can
