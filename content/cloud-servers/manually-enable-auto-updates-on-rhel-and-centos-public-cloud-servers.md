@@ -1,7 +1,7 @@
 ---
 permalink: manually-enable-auto-updates-on-rhel-and-centos-public-cloud-servers/
 audit_date: '2018-11-06'
-title: Manually enable automatic updates on RHEL and CentOS Public Cloud Servers
+title: Manually enable automatic updates on Red Hat Enterprise Linux and CentOS public cloud servers
 type: article
 created_date: '2018-11-06'
 created_by: Rackspace Support
@@ -17,13 +17,13 @@ keeping your servers up to date should be a key component of your security
 procedures.
 
 This article describes how to enable automatic updates on your Red Hat&reg;
-Enterprise Linux&reg; (RHEL) and CentOS&reg; Rackspace Public Cloud Servers to ensure that
-crucial updates are installed and current.
+Enterprise Linux&reg; (RHEL) and CentOS&reg; Rackspace public cloud servers to
+ensure that crucial updates are installed and current.
 
 ### RHEL 6 and CentOS 6
 
 Use the following steps to enable automatic updates on your
-RHEL 6 and CentOS 6 Rackspace Public Cloud Servers:
+RHEL 6 and CentOS 6 Rackspace public cloud servers:
 
 1. After connecting to your server, install `yum-cron` by running the following
    command:
@@ -34,9 +34,9 @@ RHEL 6 and CentOS 6 Rackspace Public Cloud Servers:
 
        $ vi /etc/sysconfig/yum-cron
 
-   You can also open the file in a text editor.
+   You can also open the file in any text editor.
 
-   By default, the configuration should be set to download and install the
+   By default, the configuration is set to download and install the
    updates.
 
        # Pass any given parameter to yum, as run in all the scripts invoked
@@ -69,8 +69,8 @@ RHEL 6 and CentOS 6 Rackspace Public Cloud Servers:
 
 4. Save the file.
 
-   If you are using vim to edit the configuration file, press **esc** and then
-   **:wq** to save.
+   If you are using `vim` to edit the configuration file, press **esc** and
+   then enter **:wq** to save any changes.
 
    After you have saved the file, a message displays stating that the file was
    properly written.
@@ -92,9 +92,9 @@ RHEL 6 and CentOS 6 Rackspace Public Cloud Servers:
 ### RHEL 7 and CentOS 7
 
 Use the following steps to enable automatic updates on your
-RHEL 7 and CentOS 7 Rackspace Public Cloud Servers:
+RHEL 7 and CentOS 7 Rackspace public cloud servers:
 
-1. After connecting to your RHEL 7 or CentOS 7 server, install yum-cron by
+1. After connecting to your RHEL 7 or CentOS 7 server, install `yum-cron` by
    running the following command:
 
        $ yum -y install yum-cron
@@ -103,7 +103,7 @@ RHEL 7 and CentOS 7 Rackspace Public Cloud Servers:
 
        $ vi /etc/sysconfig/yum-cron
 
-   You can also open the file in a text editor.
+   You can also open the file in any text editor.
 
        # Whether a message should be emitted when updates are available,
        # were downloaded, or applied.
@@ -125,15 +125,15 @@ RHEL 7 and CentOS 7 Rackspace Public Cloud Servers:
        random_sleep = 360
 
 3. For automatic updates to be downloaded and installed, ensure that
-   **download_updates** and **apply_updates** are set to **yes**.
+   `download_updates` and `apply_updates` are set to `yes`.
 
 4. *(Optional)* You can set up notifications in the configuration file so that
-   the output of the `yum` updates is emailed to inform you of what was
+   the output of the `yum` updates is emailed to you to inform you of what was
    completed and what failed if there are issues. Edit the following
    sections:
 
-   1. In the **[emitters]** section of the configuration file, ensure that
-      **emit_via** is set to **stdio**.
+   1. In the `[emitters]` section of the configuration file, ensure that
+      `emit_via` is set to `stdio`.
 
           [emitters]
           # Name to use for this system in messages that are emitted.  If
@@ -147,8 +147,8 @@ RHEL 7 and CentOS 7 Rackspace Public Cloud Servers:
           # If emit_via is None or left blank, no message will be sent.
           emit_via = stdio
 
-    2. In the **[email]** section of the configuration file, edit the
-       **email_to** field to add the email address to which you want the
+    2. In the `[email]` section of the configuration file, edit the
+       `email_to` field to add the email address to which you want the
        output to be sent.
 
            [email]
@@ -164,8 +164,8 @@ RHEL 7 and CentOS 7 Rackspace Public Cloud Servers:
 
 5. Save the file.
 
-   If you are using vim to edit the configuration file, press **esc** and then
-   **:wq** to save.
+   If you are using `vim` to edit the configuration file, press **esc** and
+   then enter **:wq** to save any changes.
 
    After you have saved the file, a message displays stating that the file was
    properly written.
@@ -188,7 +188,7 @@ RHEL 7 and CentOS 7 Rackspace Public Cloud Servers:
 
        $ systemctl list-unit-files –type=service
 
-   Find the **yum-cron.service** process in the list. If it is enabled, the
+   Find the `yum-cron.service` process in the list. If it is enabled, the
    service starts when the server is booted. If it is disabled, use the
    following command to enable it:
 
