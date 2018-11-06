@@ -72,8 +72,8 @@ RHEL 6 and CentOS 6 Rackspace public cloud servers:
    If you are using `vim` to edit the configuration file, press **esc** and
    then enter **:wq** to save any changes.
 
-   After you have saved the file, the following displays stating that the file
-   was properly written:
+   After you have saved the file, the following message displays stating that
+   the file was properly written:
 
        APT::Periodic::Update-Package_Lists "1";
        APT::Periodic::Download-Upgradable-Packages "1";
