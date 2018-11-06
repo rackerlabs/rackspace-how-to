@@ -5,7 +5,7 @@ title: Rescue mode
 type: article
 created_date: '2012-03-27'
 created_by: Rackspace Support
-last_modified_date: '2018-10-26'
+last_modified_date: '2018-11-06'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -227,7 +227,7 @@ Use the following steps to resolve the ID conflict on your Windows server.
 **Note**: This process has been tested only on Cloud Servers.
 
 1. With the server in rescue mode and the original system drive set to
-   **Online**, open a command-line interface (CLI).
+   **Online**, open Command Prompt.
 
     **Note**: Do not use PowerShell for this process because the commands will
     not work.
