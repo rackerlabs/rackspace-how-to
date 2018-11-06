@@ -1,7 +1,7 @@
 ---
 permalink: using-ssl-with-your-cloud-database-instance/
 audit_date: '2018-11-06'
-title: Use SSL with your Cloud Database instance
+title: Use SSL with your Cloud Databases instance
 type: article
 created_date: '2014-10-02'
 created_by: Neha Verma
@@ -43,20 +43,20 @@ following URL:
 
     `http://ssl.rackspaceclouddb.com/rackspace-ca-2016.pem`
 
-Your applications should use the downloaded certificate as the Cettificate Autority (CA)
+Your applications should use the downloaded certificate as the Certificate Authority (CA)
 certificate for SSL connections to your database.
 
-#### Use the certificate with the mysql client
+### Use the certificate with the mysql client
 
 To make SSL connections by using the `mysql` command line client, execute the following command to specify
 the location of the certificate when you start the client:
 
     mysql --ssl-ca=/path/to/ca-cert.pem
 
-More information about using SSL with MySQL can be found in the [MySQL
-5.6 documentation](http://dev.mysql.com/doc/refman/5.6/en/using-ssl-connections.html).
+You can find more information about using SSL with MySQL&reg; in the [MySQL
+8.0 documentation](https://dev.mysql.com/doc/refman/8.0/en/group-replication-secure-socket-layer-support-ssl.html).
 
-#### Require SSL connections
+### Require SSL connections
 
 You can restrict a user to require SSL when
 communicating with the database. MySQL supports the `GRANT` statement
