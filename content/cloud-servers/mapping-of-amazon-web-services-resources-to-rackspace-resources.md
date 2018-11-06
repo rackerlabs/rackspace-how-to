@@ -20,10 +20,9 @@ infrastructure as a service (IaaS) products to Rackspace products:
 | --- | --- |
 | Amazon Elastic Compute Cloud&reg; (EC2) | [Cloud Servers product and pricing](http://www.rackspace.com/cloud/servers)<br />[Cloud Servers API](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/) |
 | Amazon Elastic Load Balancing | [Cloud Load Balancers product and pricing](http://www.rackspace.com/cloud/load-balancing)<br />[Cloud Load Balancers API](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/)|
-| Amazon Elastic MapReduce (EMR) | [Rackspace Cloud Big Data Platform product and pricing](https://www.rackspace.com/cloud/big-data)<br />[Cloud Big Data API](https://developer.rackspace.com/docs/cloud-big-data/v2/developer-guide/) |
 | Amazon Virtual Private Cloud&reg; (VPC) | [Cloud Networks product and pricing](https://www.rackspace.com/cloud/networks) |
 | Amazon Route 53&reg; | [Cloud DNS product and pricing](https://www.rackspace.com/cloud/dns) |
-| AWS Direct Connect&reg; | [RackConnect](https://www.rackspace.com/cloud/hybrid/rackconnect) |
+| AWS Direct Connect&reg; | [RackConnect&reg;](https://www.rackspace.com/cloud/hybrid/rackconnect) |
 | Amazon Simple Storage Service&reg; (S3&reg;) | [Cloud Files product and pricing](http://www.rackspace.com/cloud/files)<br />[Cloud Files API](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/) |
 | Amazon Glacier&reg; | [Cloud Backup (with compression)](https://www.rackspace.com/cloud/backup) |
 | Amazon Elastic Block Store (EBS) | [Cloud Block Storage product and pricing](http://www.rackspace.com/cloud/block-storage)<br />[Cloud Block Storage API](https://developer.rackspace.com/docs/cloud-block-storage/v1/developer-guide/) |
