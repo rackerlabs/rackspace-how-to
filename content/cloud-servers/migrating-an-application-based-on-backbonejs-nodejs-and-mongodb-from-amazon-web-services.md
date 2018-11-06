@@ -78,7 +78,7 @@ Use the following steps to install OpenJDK&trade;:
 
         ll /etc/alternatives/java
 
-    In the following example output, `JAVA_HOME` is located at `/usr/lib/jvm/jre-1.7.0-openjdk-amd64`.
+    In the following example output, `JAVA_HOME` is located at `/usr/lib/jvm/jre-1.7.0-openjdk-amd64`:
 
         /etc/alternatives/java -> /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java*
 
@@ -127,7 +127,7 @@ Use the following steps to install OpenJDK&trade;:
 
 9. Save your changes and exit the file.
 
-10. Automate Tomcat startup.
+10. Automate Tomcat startup by using the following commands:
 
         cd /etc/init.d
         sudo vi tomcat
@@ -197,7 +197,7 @@ Use the following steps to install OpenJDK&trade;:
 
 15. Test Tomcat by looking up the Internet Protocol (IP) address for the cloud
     server from the Rackspace Cloud Control Panel and opening the URL in a
-    browser (for example, `http://<ip_address>:8080/`).
+    browser (for example, **http://<ip_address>:8080/**).
 
      The Apache Tomcat landing page appears.
 
@@ -335,13 +335,12 @@ To use Cloud Files, follow these preparatory steps:
         2. In the top navigation bar, click **Select a Product > Rackspace
            Cloud**.
 
-        3. Select **Storage > Files > *containerName** to open your container.
+        3. Select **Storage > Files > containerName** to open your container.
 
         4. Click **Upload Files**.
 
         5. Click **Browse** and select the files that you want to upload.
-           Then, click **Open** or **Select** (depending on the browser and
-           system).
+           Then click **Open** or **Select** (depending on your browser and system).
 
         6.  Click **Upload File**.
 
@@ -385,7 +384,7 @@ Server by using the following steps:
 
 ### Test your application
 
-Navigate to `http://<cloudServeIpAddress>/<yourApp>` in a browser window to
+Navigate to **http://<cloudServeIpAddress>/<yourApp>** in a browser window to
 access and test your application.
 
 ### Next step
@@ -394,6 +393,5 @@ access and test your application.
 
 For other migration scenarios, see the following articles:
 
--   [Migrate an application built on a LAMP stack from Amazon Web Services](/how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 -   [Migrate a .NET application from Amazon Web Services](/how-to/migrating-a-net-application-from-amazon-web-services)
 -   [Migrate a Java web application from Amazon Web Services](/how-to/migrating-a-java-web-application-from-amazon-web-services)
