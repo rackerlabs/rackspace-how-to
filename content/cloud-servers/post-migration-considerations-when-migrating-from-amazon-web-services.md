@@ -15,7 +15,6 @@ product_url: cloud-servers
 
 Migrate an application from Amazon Web Services to Rackspace:
 
--   [Migrate an application built on a LAMP stack from Amazon Web Services](/how-to/migrating-an-application-built-on-a-lamp-stack-from-amazon-web-services)
 -   [Migrate a .NET application from Amazon Web Services](/how-to/migrating-a-net-application-from-amazon-web-services)
 -   [Migrate a Java web application from Amazon Web Services](/how-to/migrating-a-java-web-application-from-amazon-web-services)
 -   [Migrate an application based on Backbone.js, Node.js, and MongoDB from Amazon Web Services](/how-to/migrating-an-application-based-on-backbonejs-nodejs-and-mongodb-from-amazon-web-services)
@@ -31,10 +30,9 @@ authentication on your newly provisioned cloud server. For instructions, see
 the following reference that corresponds to your server's operating system
 (OS) distribution:
 
--   Ubuntu&reg;: <https://help.ubuntu.com/community/SSH/OpenSSH/Keys>
--   CentOS&reg;: <http://wiki.centos.org/HowTos/Network/SecuringSSH>
--   openSUSE:
-    <http://en.opensuse.org/SDB:OpenSSH_public_key_authentication>
+-   [Ubuntu&reg;](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
+-   [CentOS&reg;](http://wiki.centos.org/HowTos/Network/SecuringSSH)
+-   [openSUSE](http://en.opensuse.org/SDB:OpenSSH_public_key_authentication)
 
 Consider disabling password authentication altogether, or at least
 disabling root logon. Also consider limiting simultaneous user logons
@@ -62,11 +60,10 @@ and using a nonstandard (other than port 22) port for SSH.
 ### Monitoring
 
 To create a robust and scalable monitoring system, consider using
-Rackspace Cloud Monitoring. Read [Install and Configure the Rackspace
-Monitoring
-Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent) for
-information about installing, configuring, and running an agent and
-enabling monitoring checks by using the Cloud Control Panel.
+Rackspace Cloud Monitoring. For information about installing, configuring, and
+running an agent and enabling monitoring checks by using the Cloud Control
+Panel, read [Install and Configure the Rackspace Monitoring
+Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent).
 
 After you have installed the agent, based on your requirements, you can
 configure one or more of the following checks and alerts:
@@ -89,9 +86,8 @@ essential component of a disaster recovery (DR) strategy. Rackspace
 provides a file-based backup system to help you meet your backup and
 restore needs. You can install the [Rackspace Cloud Backup
 agent](http://www.rackspace.com/cloud/backup/) by following the steps in the
-article [Install the agent on
-Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux) or [Install
-the agent on
+article [Install or update the Cloud Backup agent on
+Linux](https://support.rackspace.com/how-to/install-or-update-the-cloud-backup-agent-on-linux/) or [Install the Cloud Backup agent on
 Windows](/how-to/rackspace-cloud-backup-install-the-agent-on-windows).
 
 Cloud Backup has the following key features:
