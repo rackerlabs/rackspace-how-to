@@ -41,14 +41,10 @@ This article highlights examples of my documentation work.
 
 ### Customer Feedback
 
-***Hello,
+*Hello,
 
 I have just completed email migration for our company to Rackspace. Even though I had booked an assisted migration, your documentation and videos were so good that we did it ourselves - unassisted.
 Keep up the great work with your documentation! Excellent!
 
 
-Regards***
-
-
-
-I also contributed to our Reseller program's customer facing toolkit as well as emailhelp.rackspace.com. These site both require authentication and can be demonstrated at request.
+Regards*
