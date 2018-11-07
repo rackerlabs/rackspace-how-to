@@ -11,6 +11,8 @@ product: undefined
 product_url: undefined
 ---
 
+The primary contact for an account must be an active user. You can designate a primary contact by using one of the following methods:
+
 If you are the current primary contact for your account, you can update the primary contact by selecting and editing the **Primary Contact Information** section in the [Cloud Control Panel](https://login.rackspace.com), or if you're a dedicated customer, the [MyRackspace Control Panel](https://login.rackspace.com).
 
 If you are not the primary contact, you must fill out the **Primary
