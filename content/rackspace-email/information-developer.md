@@ -5,7 +5,7 @@ title: Information developer
 type: article
 created_date: '2018-11-07'
 created_by: William Loy
-last_modified_date: '2018-11-07'
+last_modified_date: '2018-11-06'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -44,7 +44,7 @@ This article highlights examples of my documentation work.
 *Hello,
 
 I have just completed email migration for our company to Rackspace. Even though I had booked an assisted migration, your documentation and videos were so good that we did it ourselves - unassisted.
-Keep up the great work with your documentation! Excellent!
 
+Keep up the great work with your documentation! Excellent!
 
 Regards*
