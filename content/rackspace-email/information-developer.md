@@ -20,7 +20,6 @@ This article highlights examples of my documentation work.
 - **Top Strength:** Learner
 - **Resume:** [William Loy Resume](https://04e796cae8a45c92c48d-9f59337b2b53a7c00179574c8144b1ab.ssl.cf5.rackcdn.com/test/WilliamLoyResume.pdf)
 
-For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 ### Sample Contributions to the How-to
 
