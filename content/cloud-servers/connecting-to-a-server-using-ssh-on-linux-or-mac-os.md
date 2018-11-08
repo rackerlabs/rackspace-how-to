@@ -64,7 +64,7 @@ lines that start with your cloud server's IP address.
     nano ~/.ssh/known_hosts
 
 If you are not using Linux or MacOS X on your local computer, the
-location of the `known_hosts` file might differ. Refer to your OS for
+location of the **known_hosts** file might differ. Refer to your OS for
 information about the file location. PuTTY on Windows gives you the
 option to replace the saved host key.
 
@@ -102,13 +102,13 @@ Use the following steps to generate an SSH key pair:
         Your public key has been saved in /LocalFileLocation/id_rsa.pub.
         The key fingerprint is: 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com
 
-3.  Optionally, add your new key to the local `ssh-agent` file to enable
+3.  Optionally, add your new key to the local **ssh-agent** file to enable
     SSH to find your key without the need to specify its location every
     time that you connect:
 
         ssh-add ~/.ssh/id_rsa
 
-    You can use an SSH configuration shortcut instead of the `ssh-agent` file
+    You can use an SSH configuration shortcut instead of the **ssh-agent** file
     by following the instructions in the *Shortcut configuration* section
     later in this article.
 
@@ -125,7 +125,7 @@ upload the public key to your cloud account by following these steps:
 6.  Select the region for which you want to store the public key. To
     store your key in multiple regions, repeat these steps for
     each region. The key must reside in the same region as the server.
-7.  Paste the contents of the `id_rsa.pub` file that you created into
+7.  Paste the contents of the **id_rsa.pub** file that you created into
     the **Public Key** field. You can get the file contents by either
     opening the file in a text editor or by running the following
     command:
@@ -146,25 +146,25 @@ server.
 3. If you don't see a stored key in the list, you can perform one of the following actions:
 
    - Switch the region for the new server to the region where you have stored the SSH key.
-   - Repeat the steps in the preceding section, "Add the public key to your cloud account," to add the key to the region in which you want to create the new server.
+   - Repeat the steps in the preceding section, *Add the public key to your cloud account*, to add the key to the region in which you want to create the new server.
 
 ### Add the key to an existing server
 
 You can't use the Cloud Control Panel to add a public key to an
 existing server. Follow these steps to add the key manually:
 
-1.  On your cloud server, create a directory named `.ssh` in the home
+1.  On your cloud server, create a directory named **.ssh** in the home
     folder of the user that you connect to by using SSH.
 
         mkdir -p ~/.ssh
 
-2.  Create or edit the `authorized_keys` file and add your public key to
+2.  Create or edit the **authorized_keys** file and add your public key to
     the list of authorized keys by using the following command:
 
         nano ~/.ssh/authorized_keys
 
     A key is all on one line, so ensure that the key isn't broken by
-    line breaks. You can have multiple keys in the `authorized_keys`
+    line breaks. You can have multiple keys in the **authorized_keys**
     file, with one key per line.
 
 3.  Set the correct permissions on the key by using the following commands:
@@ -172,16 +172,16 @@ existing server. Follow these steps to add the key manually:
         chmod 700 ~/.ssh
         chmod 600 ~/.ssh/authorized_keys
 
-After you have added the public key to the `authorized_keys`, you can make an SSH
+After you have added the public key to the **authorized_keys**, you can make an SSH
 connection by using your key pair instead of the account password.
 
 ### Shortcut configuration
 
 Use the following instructions to set up a connection shortcut by creating a 
-`~/.ssh/config` file on your local computer and adding your server and key 
+**~/.ssh/config** file on your local computer and adding your server and key 
 details to it.
 
-1.  Using a text editor, add the following text to the `~/.ssh/config` file, changing the
+1.  Using a text editor, add the following text to the **~/.ssh/config** file, changing the
     values to match your server information:
 
         Host shortcutName
@@ -198,7 +198,7 @@ details to it.
         server.
     -   **IdentityFile:** The location of the private key file (id\_rsa).
 
-2.  After you set up the `config` file, connect to the server by using
+2.  After you set up the **config** file, connect to the server by using
     the following command with your shortcut name:
 
         ssh shortcutName
