@@ -34,7 +34,7 @@ following platform requirements:
 - PDR covered VPCs must be configured with a private subnet and NAT gateway routing to 0.0.0.0/0, even for
   subnets configured with public IP assignment. NIDS appliances are never assigned public IPs and should be able to reach
   instances on their private addresses.
-- Egress and Ingress firewall rules as defined in the sections below
+- Egress and Ingress firewall rules as defined in [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
 
 ##### For Rackspace manged AWS accounts
 
