@@ -52,6 +52,10 @@ Due to the various vendors we have selected to provide the nessessary telemetry 
 important that you select operating systems and kernel versions that are compatable with the
 vendor agents. For more information, see the [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatablity/).
 
+#### Golden or Base images
+
+It is important that images taken from hosts that have Rackspace PDR agents deployed be prepared for deployment before using them as base images. Follow the [Rackspace PDR Imaging Hosts](/how-to/rackspace-pdr-imaging/) guide to ensure Golden images are properly prepared.
+
 #### Instance network requirements
 
 The agents used to provide telementry to our Security Operations Center (SOC) do have specific networking

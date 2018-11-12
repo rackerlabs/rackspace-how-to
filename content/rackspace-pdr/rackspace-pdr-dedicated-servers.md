@@ -54,11 +54,15 @@ Following these steps will help ensure successful agent deployments:
 - Deploy using operating systems and kernals compatible with Rackspace PDR
 - Ensure that you've implemented the appropriate network ACLs and firewall configurations
 
-#### Building compatable instances
+#### Building compatable hosts
 
 Due to the various vendors we have selected to provide the nessessary telemetry to our systems, it is important
 that you select operating systems and kernel versions that are compatable with the vendor agents. For more
 information, see the [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatablity/).
+
+#### Golden or Base images
+
+It is important that images taken from hosts that have Rackspace PDR agents deployed be prepared for deployment before using them as base images. Follow the [Rackspace PDR Imaging Hosts](/how-to/rackspace-pdr-imaging/) guide to ensure Golden images are properly prepared.
 
 #### Remote management
 

@@ -46,3 +46,7 @@ Follow the platform guide for your deployment and reach out to a Rackspace PDR m
 #### I found a host or set of hosts that do not have agents on them. What should I do?
 
 Definately reach out to our Rackspace PDR team as soon as possible and we will help you identify the issue. There are many potential reasons why agents were not installed on a particular host. These could range from network to host incompatibilites. You can also follow the agent deployment steps for your platform. [Rackspace PDR Home](/how-to/rackspace-pdr/)
+
+#### I need to creat a base or Golden image from a host that has Rackspace PDR agents... what should I do to prepare it?
+
+It is important that images taken from hosts that have Rackspace PDR agents deployed be prepared for deployment before using them as base images. Follow the [Rackspace PDR Imaging Hosts](/how-to/rackspace-pdr-imaging/) guide to ensure Golden images are properly prepared.

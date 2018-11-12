@@ -36,3 +36,4 @@ centers and comparable managed security service offerings.
 ### Rackspace PDR Agent Guides
 
 - [Rackspace PDR Agent Compatibility](/how-to/rackspace-pdr-agent-compatablity/)
+- [Rackspace PDR Imaging Hosts](/how-to/rackspace-pdr-imaging/)
