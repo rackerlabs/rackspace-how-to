@@ -1,11 +1,11 @@
 ---
 permalink: connecting-to-a-server-using-ssh-on-linux-or-mac-os/
-audit_date:
+audit_date: '2018-11-13'
 title: Connect to a server by using SSH on Linux or Mac OS X
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-26'
+last_modified_date: '2018-11-13'
 last_modified_by: Cat lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -228,11 +228,11 @@ server, use the following steps to help you resolve the issue:
     which typically includes the reason for a failure.  If no reason is given,
     it could be a firewall issue.  For RPM servers, run the following command to watch the log:
     
-       tail -f /var/log/secure
+          tail -f /var/log/secure
        
     For Debian servers, run the following command to watch the log:
     
-       tail -f /var/log/auth.log
+          tail -f /var/log/auth.log
        
 -   If you get a `connection timeout` error, check the IP address that
     you used to ensure that it's correct. You might also check the
