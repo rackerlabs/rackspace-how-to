@@ -1,6 +1,7 @@
 ---
 title: Rackspace PDR
 type: product
+audit_date: '2018-11-12'
 created_date: '2018-10-04'
 created_by: Nick Shobe
 last_modified_date: '2018-10-08'
