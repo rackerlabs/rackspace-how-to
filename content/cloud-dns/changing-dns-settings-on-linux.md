@@ -25,7 +25,9 @@ the Internet Protocol (IP) addresses of the name servers when you enter them int
 the configuration file because the system won't know what to do with domain names 
 until after it knows how to get to the DNS servers.
 
-Use the following steps to add DNS servers to the configuration file:
+In some cases, **/etc/resolv.conf** could be a directly managed file, populated by the 
+network service (`network` by using initscripts or `NetworkManager`). To directly edit 
+the configuration file, use the following steps to add the DNS servers:
 
 1. Open the **resolv.conf** file with an editor, such as `nano`, to make the
    necessary changes (if it doesn't exist already, this command creates the
