@@ -1,19 +1,18 @@
 ---
 permalink: changing-dns-settings-on-linux/
-audit_date: '2016-06-29'
+audit_date: '2018-11-15'
 title: Change DNS settings on Linux
 type: article
 created_date: '2011-07-20'
 created_by: Jered Heeschen
-last_modified_date: '2016-08-17'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-11-15'
+last_modified_by: Cat Lookabaugh
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-You might need to change your server's DNS settings, either
-because you find that they are misconfigured or because you want to use your
-own. This article describes how to change your server's DNS settings.
+If you find that your server's Domain Name Server (DNS) settings are misconfigured 
+or you prefer to use your own, this article describes how to change your server's DNS settings.
 
 ### Add name servers to the configuration file
 
@@ -21,9 +20,11 @@ On Linux, the DNS servers that the system uses for name resolution are defined
 in the **/etc/resolv.conf** file. That file should contain at least one
 `nameserver` line. Each `nameserver` line defines a DNS server. The name
 servers are prioritized in the order the system finds them
-in the file. Use the IP addresses of the name servers when entering
-them, because the system won't know what to do with domain names until
+in the file. Use the Internet Protocol (IP) addresses of the name servers when 
+entering them, because the system won't know what to do with domain names until
 after it knows how to get to the DNS servers.
+
+Use the following steps to add DNS servers to the configuration file:
 
 1. Open the **resolv.conf** file with an editor, such as `nano`, to make the
    necessary changes (if it doesn't exist already, this command creates the
@@ -47,7 +48,8 @@ after it knows how to get to the DNS servers.
 
 3. Save the file.
 
-4. To ensure that your new settings are working, `ping` the domain name:
+4. To ensure that your new settings are working, `ping` the domain name by 
+   using the following command:
 
     ping -c 3 rackspace.com
 
@@ -71,7 +73,7 @@ If you're using IPv6 on your server, you might need to add the IPv6
 addresses of your name servers to the **resolv.conf** file. You can see if a DNS
 server has an IPv6 address by performing the following steps:
 
-1. Use `host` to get the name of the server:
+1. Use the following `host` command to get the domain name of the server (substitute your DNS server IP address):
 
        $ host 72.3.128.240
        240.128.3.72.in-addr.arpa domain name pointer cachens1.dfw1.rackspace.com.
