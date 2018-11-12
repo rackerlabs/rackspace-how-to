@@ -26,7 +26,7 @@ NIDS appliances. Our current NIDS appliances are provide by the Alert Logic&reg;
 
 - Be a Rackspace Azure customer
 - An NIDS appliance for each routable network segment (appliance needs to be reachable by agents and visa versa)
-- Egress and Ingress firewall rules (NSGs) as defined by [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
+- Egress and Ingress firewall rules (NSGs) as defined in [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
 
 #### Secure Socket Layer (SSL) appliance end-to-end decryption
 
