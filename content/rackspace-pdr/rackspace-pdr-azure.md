@@ -11,7 +11,7 @@ product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-Rackspace Proactive Detection & Response (PDR) on Microsoft&reg; Azure&reg; has two main componants that
+Rackspace Proactive Detection & Response (PDR) on Microsoft&reg; Azure&reg; has two main components that
 must be implemented in your Azure environment: the Network-based Intrusion Detection (NIDS) appliance
 infrastructure must be set up, and select vendor agents must be deployed.
 
