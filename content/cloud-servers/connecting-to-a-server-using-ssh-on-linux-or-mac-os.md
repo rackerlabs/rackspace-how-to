@@ -59,7 +59,12 @@ If you're confident that you aren't being spoofed, you can skip that
 step and delete the record of the old SSH host key as follows:
 
 On your *local* computer, edit the SSH `known_hosts` file and remove any
-lines that start with your cloud server's IP address.
+lines that start with your cloud server's IP address. 
+
+**Note:** Use the editor of your choice, such as `nano` on Debian or Ubuntu servers
+or `vi` on RPM or CENTOS servers.  For simplicity, this article just uses `nano`. If you prefer to use `vi`,
+substitute `vi` for `nano` in the edit commands.
+For more on using `vi`, see [https://community.rackspace.com/general/f/general-discussion-forum/6676/basics-of-the-vi-text-editor](https://community.rackspace.com/general/f/general-discussion-forum/6676/basics-of-the-vi-text-editor). For more on using `nano`, see [https://support.rackspace.com/how-to/modify-your-hosts-file/](https://support.rackspace.com/how-to/modify-your-hosts-file/).
 
     nano ~/.ssh/known_hosts
 
@@ -76,7 +81,7 @@ the server and a matching private key is placed on your local computer. If you
 [configure SSH on your server to accept only connections using keys](/how-to/basic-cloud-server-security),
 then no one can log in by using just a password. Connecting clients
 are required to use a private key that has a public key registered on
-the server.
+the server. For more on security, review [Linux server security best practices](https://support.rackspace.com/how-to/linux-server-security-best-practices/).
 
 Use the following steps to generate an SSH key pair:
 
@@ -134,6 +139,12 @@ upload the public key to your cloud account by following these steps:
 
 8.  Click **Add Public Key**.
 
+If you want to add the key manually, instead of by using the Control Panel, review 
+[Linux server security best practices](https://support.rackspace.com/how-to/linux-server-security-best-practices/)
+and use the following command:
+
+     ssh-copy-id -i ~/.ssh/id_rsa.pub {username}@{remotePublicIPAddress}
+
 ### Create a new server by using a stored key
 
 When you create a new cloud server, you can add a stored key to the new
@@ -171,6 +182,10 @@ existing server. Follow these steps to add the key manually:
 
         chmod 700 ~/.ssh
         chmod 600 ~/.ssh/authorized_keys
+        
+4.  If you have any issues and need to fix permissions issues, run the following comand:
+     
+        restorecon -R -v /root/.ssh 
 
 After you have added the public key to the **authorized_keys**, you can make an SSH
 connection by using your key pair instead of the account password.
@@ -208,6 +223,17 @@ details to it.
 If you have trouble making a new connection after you restart the
 server, use the following steps to help you resolve the issue:
 
+-   The best way to troubleshoot SSH or SFTP login issues is to attempt to
+    login through SSH while logged into the Emergency Console and to watch the log, 
+    which typically includes the reason for a failure.  If no reason is given,
+    it could be a firewall issue.  For RPM servers, run the following command to watch the log:
+    
+       tail -f /var/log/secure
+       
+    For Debian servers, run the following command to watch the log:
+    
+       tail -f /var/log/auth.log
+       
 -   If you get a `connection timeout` error, check the IP address that
     you used to ensure that it's correct. You might also check the
     server's iptables to ensure that it isn't blocking the port used by SSH.
