@@ -134,8 +134,11 @@ permalink: /
 			<div class="row">
 				<h3>Managed Operations</h3>
 				<div class="twelve columns">
-					<div class="primary twelve columns icon managed-operations">
+					<div class="primary three columns icon managed-operations">
 						<h4><a href="/how-to/managed-operations"><span>Managed</span> Operations</a></h4>
+					</div>
+					<div class="six columns icon queues">
+						<h4><a href="/how-to/rackspace-pdr/"><span>Rackspace</span> Proactive Detection & Response</a></h4>
 					</div>
 				</div>
 			</div>
