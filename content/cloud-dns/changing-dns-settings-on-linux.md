@@ -21,8 +21,8 @@ in the **/etc/resolv.conf** file. That file should contain at least one
 `nameserver` line. Each `nameserver` line defines a DNS server. The name
 servers are prioritized in the order the system finds them
 in the file. Use the Internet Protocol (IP) addresses of the name servers when 
-entering them, because the system won't know what to do with domain names until
-after it knows how to get to the DNS servers.
+you enter them into the configuration file because the system won't know what to 
+do with domain names until after it knows how to get to the DNS servers.
 
 Use the following steps to add DNS servers to the configuration file:
 
@@ -67,7 +67,7 @@ You should see a result similar to the following one:
 If you receive an `unknown host` message, double-check the IP addresses that
 you set as your DNS servers.
 
-#### Add same servers with IPv6 addresses
+#### Add the same name servers with IPv6 addresses
 
 If you're using IPv6 on your server, you might need to add the IPv6
 addresses of your name servers to the **resolv.conf** file. You can see if a DNS
