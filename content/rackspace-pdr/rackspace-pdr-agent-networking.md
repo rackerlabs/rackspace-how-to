@@ -11,7 +11,7 @@ product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-This article includes the networking requirements for the Rackspace PDR Agent.
+This article includes the networking requirements for the Rackspace Proactive Detection & Response (PDR) Agent.
 
 ### Alert Logic Egress Requirements
 
