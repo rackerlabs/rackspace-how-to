@@ -19,7 +19,7 @@ are unsure if an OS release or kernel version is supported, contact the Rackspac
 
 Linux kernel strings on this page must match your kernel version exactly to be
 considered in support. If the kernel is unsupported, agents go into *reduced functionality* mode
-and no longer provide adaquate telemetry to our SOC.
+and no longer provide adaquate telemetry to our Security Operations Center (SOC).
 
 **Amazon Linux 2018.03 Supported Versions**
 
