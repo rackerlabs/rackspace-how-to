@@ -12,7 +12,8 @@ product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-Rackspace PDR on Google Cloud Platform&trade; (GCP) has two main componants that need to be implemented in
+Rackspace Proactive Detection & Response (PDR) on Google Cloud Platform&trade; (GCP) has two main
+components that need to be implemented in
 your GCP environment: the Network-based Intrusion Detection (NIDS) appliance infrastructure
 must be set up, and select vendor agents must be deployed.
 
