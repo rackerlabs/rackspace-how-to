@@ -13,8 +13,6 @@ product_url: rackspace-pdr
 
 ### General
 
-#### How is the Rackspace Customer Security Operations Center different from a normal SOC?
-
 #### What platforms does Rackspace PDR currently support?
 
 Rackspace PDR currently supports:
@@ -25,4 +23,26 @@ Rackspace PDR currently supports:
 
 #### What if I currently use some of the agents or tooling Rackspace PDR uses?
 
-If you currently have products we use to help provide visibility and telemetry back to our Security Operations Center, we will work with you to migrate or redeploy existing tooling.
+If you currently use any of the same vendor solutions that we use to provide telemetry to our Security Operations Center, we will work with you to migrate or redeploy those agents into our environment.
+
+#### Will you help me correclty deploy a Rackspace PDR compatible infrastructure?
+
+Rackspace PDR's Linux and windws engineering team will help guide you and your Rackspace support teams through the build and migration processes. We want to maximize you success early on to avoid common coverage and security issues later down the road, so if you have questions, open a ticket and we will address them ASAP. Also if your sales or support team is not sure if something is compatible with Rackspace PDR, we can perform and engineering review to help identify any possible incompatibilites.
+
+### Agents & Telemetry
+
+#### Do you ever see issues where agents impact host performance?
+
+Occasionaly we do see instances where agents negatively impact host level performance. In those instences we work with you and your support team to taylor agent rules and address the issues that might be negatively impacting a host. Of the issues we see, most issues are on hosts with large amounts of logging, many(> 100k+) descrete files or high network load.
+
+#### What if I think there's an issue being caused by an agent used for PDR?
+
+If you believe that an agent managed by Rackspace PDR is causing an issue on your host. You should contact your support team. You may optionally stop the service for a few minutes and see if the issues clear. However keep in mind that while the agents are not running, your system is not adaquately protected. It is important then to continue to work with the your support teams and Rackspace PDR engineers to find a solution to the problem that keeps your systems protected!
+
+#### Rackspace PDR keeps sending me requests stating that agents are not auto deploying properly, what should I do to resolve this?
+
+Follow the platform guide for your deployment and reach out to a Rackspace PDR member and we will be happy to help you figure out why agents are failing to deploy in your environment. [Rackspace PDR Home](/how-to/rackspace-pdr/)
+
+#### I found a host or set of hosts that do not have agents on them. What should I do?
+
+Definately reach out to our Rackspace PDR team as soon as possible and we will help you identify the issue. There are many potential reasons why agents were not installed on a particular host. These could range from network to host incompatibilites. You can also follow the agent deployment steps for your platform. [Rackspace PDR Home](/how-to/rackspace-pdr/)
