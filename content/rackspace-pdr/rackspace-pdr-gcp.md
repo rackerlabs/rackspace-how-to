@@ -16,7 +16,7 @@ PDR on GCP has two main componants that will need to be implemented in your GCP 
 
 ### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your GCP network we deploy NIDS to a special PDR project that has
+To enable visibility of your GCP network we deploy and maintain NIDS infrastructure in to a Rackspace PDR "project" that is peered to your other projects.
 
 #### NIDS appliance platform requirements
 The Rackspace PDR and Rackspace GCP teams deploy and manage your GCP NIDS appliance infrastructure.
