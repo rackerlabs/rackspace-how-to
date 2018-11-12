@@ -1,18 +1,21 @@
 ---
+permalink: rackspace-pdr-nids-networking/
 title: Rackspace PDR NIDS Networking Requirements
 type: article
+audit_date: '2018-11-12'
 created_date: '2018-10-09'
 created_by: Nick Shobe
-last_modified_date: '2018-10-09'
+last_modified_date: '2018-11-12'
 last_modified_by: Nick Shobe
-permalink: rackspace-pdr-nids-networking/
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-Although there are implementation differences accross platforms, the network requirements are generally consistant. Differences are indicated in italics with where and why the network ACL might differ.
+Although there are implementation differences accross platforms, the network requirements are
+generally consistant. Differences are indicated in italics with where and why the network
+access control list (ACL) might differ.
 
-### Ingress Requirements to the Threat Manager Appliances
+### Ingress Requirements to the Threat Manager&trade; Appliances
 
 ***Cloud platforms only***
 
@@ -20,10 +23,10 @@ Although there are implementation differences accross platforms, the network req
 | ------ | ----------- | -------- | ---- | ----------- |
 | *Agent(s) CIDR* | Appliance | TCP | 443 | Agent updates |
 | *Agent(s) CIDR* | Appliance | TCP | 7777 | Agent data transport (between agent and appliance on local network) |
-| 208.71.209.32/27 | Appliance | TCP | 22 | ***Optional and temporary*** required for troubleshooting during provisioning only |
-| 204.110.218.96/27 | Appliance | TCP | 22 | ***Optional and temporary***  required for troubleshooting during provisioning only* |
-| 204.110.219.96/27 | Appliance | TCP | 22 | ***Optional and temporary*** required for troubleshooting during provisioning only |
-| *185.54.124.0/24* | Appliance | TCP | 22 | ***Optional*** *EU Alert Logic Datacenter as derected by your PDR team and temporary- required for troubleshooting during provisioning only* |
+| 208.71.209.32/27 | Appliance | TCP | 22 | *Optional and temporary* Required for troubleshooting during provisioning only |
+| 204.110.218.96/27 | Appliance | TCP | 22 | *Optional and temporary* Required for troubleshooting during provisioning only |
+| 204.110.219.96/27 | Appliance | TCP | 22 | *Optional and temporary* Required for troubleshooting during provisioning only |
+| *185.54.124.0/24* | Appliance | TCP | 22 | *Optional EU Alert Logic&reg; Datacenter as directed by your PDR team and temporary* Required for troubleshooting during provisioning only |
 
 ### Egress Requirements from the Threat Manager Appliances
 
