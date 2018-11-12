@@ -22,7 +22,7 @@ resolution are defined in the **/etc/resolv.conf** file. That file should contai
 at least one `nameserver` line. Each `nameserver` line defines a DNS server. The 
 name servers are prioritized in the order the system finds them in the file. Use 
 the Internet Protocol (IP) addresses of the name servers when you enter them into 
-the configuration file because the system won't know what to do with domain names 
+the configuration file because the system doesn't know what to do with domain names 
 until after it knows how to get to the DNS servers.
 
 In some cases, **/etc/resolv.conf** could be a directly managed file, populated by the 
@@ -30,8 +30,7 @@ network service (`network` by using initscripts or `NetworkManager`). To directl
 the configuration file, use the following steps to add the DNS servers:
 
 1. Open the **resolv.conf** file with an editor, such as `nano`, to make the
-   necessary changes (if it doesn't exist already, this command creates the
-   file):
+   necessary changes. If the file doesn't already exist, this command creates it:
 
     sudo nano /etc/resolv.conf
 
