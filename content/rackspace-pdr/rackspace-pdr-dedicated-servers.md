@@ -1,53 +1,77 @@
 ---
+permalink: rackspace-pdr-dedicated-servers/
 title: Rackspace PDR on Rackspace Dedicated Servers
 type: article
+audit_date: '2018-11-12'
 created_date: '2018-10-11'
 created_by: Nick Shobe
-last_modified_date: '2018-10-11'
+last_modified_date: '2018-11-12'
 last_modified_by: Nick Shobe
-permalink: rackspace-pdr-dedicated-servers/
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-### Getting started on Rackspace dedicated servers with Rackspace PDR
-
-PDR on Rackspace dedicated servers is primarily managed and deployed by Rackspace Support teams, however, there are a few things that will ensure your deployments will go smoothly. The deployment process consists of deployment of Network-based Intrusion Detection(NIDS) appliances and vendor agents that provide telemetry.
+Rackspace PDR on Rackspace dedicated servers is primarily managed and deployed by Rackspace
+Support teams, however, there are a few things that will ensure that your deployments will go
+smoothly: the Network-based Intrusion Detection (NIDS) appliance infrastructure must be
+set up, and select vendor agents must be deployed.
 
 ### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your network we deploy NIDS to each routable network where you have servers being monitored by our Rackspace PDR teams.
+To enable visibility of your network we deploy NIDS appliances to each routable network
+where you have servers being monitored by our Rackspace PDR teams.
 
 #### NIDS appliance requirements
 
-Our PDR and support teams deploy, manage and monitor your NIDS Threat Manager appliances. Below are the platform requirements required by Rackspace PDR.
+Our PDR and support teams deploy, manage and monitor your NIDS appliances. Our current NIDS appliances are
+provided by the Alert Logic&reg; Threat Manger&trade; offering. Rackspace PDR requires the following
+platform requirements:
 
 - Be a Rackspace Dedicated customer
 - Egress and Ingress firewall rules as defined in the sections below
 
-##### NIDS appliance network configuration
-If you have self managed networks or firewalls etc. use the [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/) to implement appropriate firewall ACLs and routing to ensure proper opperation of our NIDS appliances.
+#### NIDS appliance network configuration
 
-##### NIDS appliance end-to-end decryption
-Many appliactions terminate SSL/TLS at the network edge with load-balancer or web application firewall. However, if your application uses end-to-end encryption follow the [Rackspace PDR SSL Decryption Guide](/how-to/rackspace-pdr-ssl-decryption/).
+If you have self-managed networks or firewalls, use the
+[Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/) to
+implement appropriate firewall access control lists (ACLs) and routing to ensure proper opperation of
+our NIDS appliances.
 
-#### Additional info on NIDS setup
-For more details you may refer to the [Alert Logic upstream vendor documentation](https://docs.alertlogic.com/install/cloud/amazon-web-services-threat-manager-direct-windows.htm)
+#### NIDS appliance end-to-end decryption
+
+Many appliactions terminate Secure Socket Layer (SSL) and Transport Layer Security (TLS) at the network
+edge with a load-balancer or web application firewall. If your application uses end-to-end encryption
+see the [Rackspace PDR SSL Decryption Guide](/how-to/rackspace-pdr-ssl-decryption/).
 
 ### Deployment of vendor agents
 
-Individual PDR agents are deployed and maintained by the Rackspace PDR team. However, we do have base requirements that must be met to ensure our automated deployment system and PDR Rackers can access your instances to deploy or troublshoot agents and systems.
+Individual PDR agents are deployed and maintained by the Rackspace PDR team. However, we do have
+base requirements that must be met to ensure that our automated deployment system and PDR support team
+can access your instances to deploy or troublshoot agents and systems.
 
-**Follow these steps to ensure successful agent deployments**
+Following these steps will help ensure successful agent deployments:
 
-- Deploy using Rackspace PDR compatable operating systems and kernels
-- Ensure you've implemented the appropriate network ACLs and firewall configurations
+- Deploy using operating systems and kernals compatible with Rackspace PDR
+- Ensure that you've implemented the appropriate network ACLs and firewall configurations
 
 #### Building compatable instances
-Due to the various vendors we have selected to provide the nessessary telemetry to our systems. It is important that you select operating systems and kernel versions that are compatable with the vendors agents by follow this guide [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatablity/).
+
+Due to the various vendors we have selected to provide the nessessary telemetry to our systems, it is important
+that you select operating systems and kernel versions that are compatable with the vendor agents. For more
+information, see the [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatablity/).
 
 #### Remote management
-Remote access is typically enabled and managed by your Rackspace support teams, but the general idea is we use SSH for Linux and Winrm for Windows systems.
+
+Remote access is typically enabled and managed by your Rackspace support teams. We use Secure Shell (SSH) for
+Linux systems and Windows Remote Management (WinRM) for Windows systems.
 
 #### Instance network requirements
-The agents used to provide telementry to our Security Operations Center do have specific networking requirements that must be implemented. Use the [Rackspace PDR Agent Network Requirements](/how-to/rackspace-pdr-agent-networking/) guide to correctly implement network ACLs and firewall rules for your platform.
+
+The agents used to provide telementry to our Security Operations Center (SOC) have specific networking
+requirements that must be implemented. Use the
+[Rackspace PDR Agent Network Requirements](/how-to/rackspace-pdr-agent-networking/) guide to
+correctly implement network ACLs and firewall rules for your platform.
+
+### Additional infomation
+
+For more information on Threat Manager, see the [Alert Logic upstream vendor documentation](https://docs.alertlogic.com/install/cloud/amazon-web-services-threat-manager-direct-windows.htm).
