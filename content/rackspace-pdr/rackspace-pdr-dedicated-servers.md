@@ -28,7 +28,7 @@ provided by the Alert Logic&reg; Threat Manger&trade; offering. Rackspace PDR re
 platform requirements:
 
 - Be a Rackspace Dedicated customer
-- Egress and Ingress firewall rules as defined in the sections below
+- Egress and Ingress firewall rules as defined in [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
 
 #### NIDS appliance network configuration
 
