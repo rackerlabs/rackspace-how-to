@@ -1,12 +1,12 @@
 ---
+permalink: rackspace-pdr/
 title: Rackspace PDR
 type: product
 audit_date: '2018-11-12'
 created_date: '2018-10-04'
 created_by: Nick Shobe
-last_modified_date: '2018-10-08'
+last_modified_date: '2018-11-12'
 last_modified_by: Nick Shobe
-permalink: rackspace-pdr/
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
