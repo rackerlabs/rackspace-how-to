@@ -12,17 +12,18 @@ product_url: cloud-dns
 ---
 
 If you find that your server's Domain Name Server (DNS) settings are misconfigured 
-or you prefer to use your own, this article describes how to change your server's DNS settings.
+or you prefer to use your own, this article describes how to change your Linux&reg; 
+server's DNS settings.
 
 ### Add name servers to the configuration file
 
-On Linux, the DNS servers that the system uses for name resolution are defined
-in the **/etc/resolv.conf** file. That file should contain at least one
-`nameserver` line. Each `nameserver` line defines a DNS server. The name
-servers are prioritized in the order the system finds them
-in the file. Use the Internet Protocol (IP) addresses of the name servers when 
-you enter them into the configuration file because the system won't know what to 
-do with domain names until after it knows how to get to the DNS servers.
+On most Linux operating systems, the DNS servers that the system uses for name 
+resolution are defined in the **/etc/resolv.conf** file. That file should contain 
+at least one `nameserver` line. Each `nameserver` line defines a DNS server. The 
+name servers are prioritized in the order the system finds them in the file. Use 
+the Internet Protocol (IP) addresses of the name servers when you enter them into 
+the configuration file because the system won't know what to do with domain names 
+until after it knows how to get to the DNS servers.
 
 Use the following steps to add DNS servers to the configuration file:
 
@@ -45,6 +46,7 @@ Use the following steps to add DNS servers to the configuration file:
    | Chicago (ORD) | nameserver 173.203.4.8 <br /> nameserver 173.203.4.9 |
    | Dallas/Fort Worth (DFW) | nameserver 72.3.128.240 <br /> nameserver 72.3.128.241. |
    | Sydney (SYD) | nameserver 119.9.60.62 <br /> nameserver 119.9.60.63. |
+   | Frankfurt (FRA) | nameserver 159.135.130.45 <br /> nameserver 159.135.130.46 |
 
 3. Save the file.
 
