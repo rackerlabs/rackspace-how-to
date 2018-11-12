@@ -11,7 +11,7 @@ product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-Rackspace PDR on Rackspace dedicated servers is primarily managed and deployed by Rackspace
+Rackspace Proactive Detection & Response (PDR) on Rackspace Dedicated Servers is primarily managed and deployed by Rackspace
 Support teams, however, there are a few things that will ensure that your deployments will go
 smoothly: the Network-based Intrusion Detection (NIDS) appliance infrastructure must be
 set up, and select vendor agents must be deployed.
