@@ -139,6 +139,9 @@ permalink: /
 					</div>
 				</div>
 			</div>
+			
+			<hr/>
+			
 			<div class="row">
 				<h3>Rackspace Managed Security</h3>
 				<div class="twelve columns">
