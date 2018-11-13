@@ -43,7 +43,7 @@ connecting.
 
 ### Remote host identification
 
-If you rebuilt your cloud cerver, you might get the following message:
+If you rebuilt your cloud server, you might get the following message:
 
     WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
 
