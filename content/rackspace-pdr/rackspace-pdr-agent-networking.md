@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-pdr-agent-networking/
-title: Rackspace PDR Agent Networking Requirements
+title: Rackspace PDR Agent networking requirements
 type: article
 audit_date: '2018-11-12'
 created_date: '2018-10-09'
