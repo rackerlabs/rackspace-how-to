@@ -12,8 +12,8 @@ product_url: dedicated-hosting
 ---
 
 You can use Rackspace Identity Federation to configure your corporate
-security and identity systems to enable your employees to use their regular
-company credentials to authenticate to Rackspace accounts.
+security and identity systems to enable your employees to use their
+regular company credentials to authenticate to Rackspace accounts.
 
 Authentication is based on the Security Assertion Markup Language (SAML) 2.0
 protocol. The SAML messages that are exchanged between an Identity Provider
@@ -23,8 +23,8 @@ to Rackspace required roles and permissions.
 
 An Attribute Mapping Policy is composed of one or more rules. These rules
 assign local values that are attached to a user after they log in to
-Rackspace, based on explicit or remote values in the SAML exchange from your
-third-party provider.
+Rackspace, based on explicit or remote values in the SAML exchange from
+your third-party provider.
 
 **Note**: You must create a separate Attribute Mapping Policy for each
 Identity Provider that you want to use to log in to Rackspace.
