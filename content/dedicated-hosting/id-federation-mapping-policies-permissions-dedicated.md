@@ -221,8 +221,8 @@ language features such as substitutions or XPath.
 The following example syntax uses inline substitutions in the local rule to
 concisely retrieve values and simplify the policy. There are additional ways
 to accomplish the same scenario. For more examples and a complete guide to the
-Attribute Mapping Policy language, see the [Attribute
-Mapping Policy reference
+Attribute Mapping Policy language, see the
+[Attribute Mapping Policy reference
 guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-reference/#attribmap-reference).
 
 <table width="100%">
