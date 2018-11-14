@@ -18,7 +18,7 @@ Detection (NIDS) appliances. In cases where end-to-end encryption is in use and 
 working, our Security Operations Center (SOC) will not be able to detect network threats
 embeded in the SSL and TLS traffic. To enable decrytion the following information is required:
 
-1. Provids our Rackspace PDR teams the SSL and TLS private keys and public certifications (used by the NIDS appliances for decrypting traffic).
+1. Provide our Rackspace PDR teams the SSL and TLS private keys and public certifications (used by the NIDS appliances for decrypting traffic).
 2. Disable Diffie-Hellman (DH) key exchange on all applications with end-to-end encryption.
 3. Configure the SSL and TLS cypher suits with those compatable with the NIDS decryption (see the "Supported cyphers" section).
 4. Provide our Rackspace PDR teams a list of domains and fully qualified domain names (FQDNs) for endpoints with end-to-end encryption.
