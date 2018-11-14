@@ -1,5 +1,5 @@
 ---
-title: Rackspace PDR Agent Compatibility
+title: Rackspace PDR Agent compatibility
 type: article
 audit_date: '2018-11-12'
 created_date: '2018-10-09'
