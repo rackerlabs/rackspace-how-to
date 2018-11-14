@@ -174,7 +174,7 @@ Your Attribute Mapping Policy must contain the following information:
 - A minimum of one local rule.
 - Static or dynamically-populated values for the fields in the following table:
 
-<table width="100%">
+<table>
   <tr>
     <th><b>Field</b></th>
     <th><b>Description</b></th>
@@ -203,13 +203,13 @@ Your Attribute Mapping Policy must contain the following information:
     <td><b>roles</b></td>
     <td>The product (role-based access control) RBAC roles that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td><b>Example</b>:<br />`roles:`<br /> - `"nova:admin"`<br />- `"lbaas:observer"`</td>
+    <td><b>Example</b>:<br /><code>roles</code>:<br /> - <code>"nova:admin"</code><br />- <code>"lbaas:observer"</code></td>
   </tr>
   <tr>
     <td><b>expires</b></td>
     <td>The timeout before users must re-authenticate with your identity system.</td>
     <td>ISO format time values</td>
-    <td><b>Example:</b> `"PT12H"` (12 hours)<br /><br />_or_<br /><br />SAML Attributes<br /><br /><b>SessionNotOnOrAfter</b><br /> <b>NotOnOrAfter</b></td>
+    <td><b>Example:</b> <code>"PT12H"</code> (12 hours)<br /><br />_or_<br /><br />SAML Attributes<br /><br /><b>SessionNotOnOrAfter</b><br /> <b>NotOnOrAfter</b></td>
   </tr>
 </table>
 
@@ -225,7 +225,7 @@ Attribute Mapping Policy language, see the
 [Attribute Mapping Policy reference
 guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-reference/#attribmap-reference).
 
-<table width="100%">
+<table>
   <tr>
     <th><b>Method</b></th>
     <th><b>Description</b></th>
@@ -233,23 +233,23 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
   </tr>
   <tr>
     <td><b>Default</b></td>
-    <td>Retrieves the value by looking for common locations or labels for the field. Only an attribute with the same name as the field is matched. For example, name: `"{D}"` matches the attribute with the name `name`.</td>
-    <td>`name: "{D}"`</td>
+    <td>Retrieves the value by looking for common locations or labels for the field. Only an attribute with the same name as the field is matched. For example, name: <code>"{D}"</code> matches the attribute with the name <code>name</code>.</td>
+    <td><code>name: "{D}"</code></td>
   </tr>
   <tr>
     <td><b>Explicit</b></td>
     <td>Directly input the values into the Attribute Mapping Policy fields. This is most useful for values that don't change for any federated user logging in, because they are applied to <b>all</b> federated users for this Identity Provider.</td>
-    <td>`expire: "PT12H"`</td>
+    <td><code>expire: "PT12H"</code></td>
   </tr>
   <tr>
     <td><b>Attribute matching</b></td>
     <td>Uses XPath to match a SAML attribute in your SAML assertion by name, returning one or more values.</td>
-    <td>Single value return (`At`): `email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"`<br />Multi value return (`Ats`): <br />`groups:`<br /> `multiValue: true`<br />`value: "{Ats(http://schemas.xmlsoap.org/claims/Group)}"`</td>
+    <td>Single value return (<code>At</code>): <code>email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"</code><br />Multi value return (<code>Ats</code>): <br /><code>groups:</code><br /> <code>multiValue: true</code><br /><code>value: "{Ats(http://schemas.xmlsoap.org/claims/Group)}"</code></td>
   </tr>
   <tr>
     <td><b>Path matching</b></td>
     <td>Uses XPath to match the path to a value in your SAML assertion by using the XML hierarchy or schema.</td>
-    <td>`"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"`<br><br>Retrieves the value of `NotOnOrAfter`.</td>
+    <td><code>"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"</code><br><br>Retrieves the value of <code>NotOnOrAfter</code>.</td>
   </tr>
 </table>
 
