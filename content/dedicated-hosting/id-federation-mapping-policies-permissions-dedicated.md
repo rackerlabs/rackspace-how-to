@@ -176,40 +176,40 @@ Your Attribute Mapping Policy must contain the following information:
 
 <table>
   <tr>
-    <th><b>Field</b></th>
-    <th><b>Description</b></th>
-    <th><b>Format</b></th>
-    <th><b>Common values</b></th>
+    <th>Field</th>
+    <th>Description</th>
+    <th>Format</th>
+    <th>Common values</th>
   </tr>
   <tr>
-    <td><b>domain</b></td>
+    <td>domain</td>
     <td>The Identity or Account Domain that the Identity Provider is authorized to log users into.</td>
     <td>Alphanumeric string</td>
     <td>Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
   </tr>
   <tr>
-    <td><b>name</b></td>
+    <td>name</td>
     <td>The username of your user as provided by your identity system.</td>
     <td>Alphanumeric string</td>
-    <td>SAML attributes:< br /> <b>NameID</b> (persistent type preferred)<br /><b>urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name</b></td>
+    <td>SAML attributes:<br />NameID (persistent type preferred)<br />urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name</td>
   </tr>
   <tr>
-    <td><b>email</b></td>
+    <td>email</td>
     <td>The email address of your user as provided by your identity system.</td>
     <td>RFC-valid email address</td>
-    <td>SAML Attributes:<br /> <b>email</b><br /> http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br /><b>urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3</b></td>
+    <td>SAML Attributes:<br /> email<br /> http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br />urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3</td>
   </tr>
   <tr>
-    <td><b>roles</b></td>
+    <td>roles</td>
     <td>The product (role-based access control) RBAC roles that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td><b>Example</b>:<br /><code>roles</code>:<br /> - <code>"nova:admin"</code><br />- <code>"lbaas:observer"</code></td>
+    <td>Example:<br /><code>roles:</code><br /> - <code>"nova:admin"</code><br />- <code>"lbaas:observer"</code></td>
   </tr>
   <tr>
-    <td><b>expires</b></td>
+    <td>expires</td>
     <td>The timeout before users must re-authenticate with your identity system.</td>
     <td>ISO format time values</td>
-    <td><b>Example:</b> <code>"PT12H"</code> (12 hours)<br /><br />_or_<br /><br />SAML Attributes<br /><br /><b>SessionNotOnOrAfter</b><br /> <b>NotOnOrAfter</b></td>
+    <td>Example: <code>"PT12H"</code> (12 hours)<br /><br /><i>or</i><br /><br />SAML Attributes<br /><br />SessionNotOnOrAfter<br /> NotOnOrAfter</td>
   </tr>
 </table>
 
@@ -227,27 +227,27 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
 
 <table>
   <tr>
-    <th><b>Method</b></th>
-    <th><b>Description</b></th>
-    <th><b>Example</b></th>
+    <th>Method</th>
+    <th>Description</th>
+    <th>Example</th>
   </tr>
   <tr>
-    <td><b>Default</b></td>
+    <td>Default</td>
     <td>Retrieves the value by looking for common locations or labels for the field. Only an attribute with the same name as the field is matched. For example, name: <code>"{D}"</code> matches the attribute with the name <code>name</code>.</td>
     <td><code>name: "{D}"</code></td>
   </tr>
   <tr>
-    <td><b>Explicit</b></td>
-    <td>Directly input the values into the Attribute Mapping Policy fields. This is most useful for values that don't change for any federated user logging in, because they are applied to <b>all</b> federated users for this Identity Provider.</td>
+    <td>Explicit</td>
+    <td>Directly input the values into the Attribute Mapping Policy fields. This is most useful for values that don't change for any federated user logging in, because they are applied to all federated users for this Identity Provider.</td>
     <td><code>expire: "PT12H"</code></td>
   </tr>
   <tr>
-    <td><b>Attribute matching</b></td>
+    <td>Attribute matching</td>
     <td>Uses XPath to match a SAML attribute in your SAML assertion by name, returning one or more values.</td>
     <td>Single value return (<code>At</code>): <code>email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"</code><br />Multi value return (<code>Ats</code>): <br /><code>groups:</code><br /> <code>multiValue: true</code><br /><code>value: "{Ats(http://schemas.xmlsoap.org/claims/Group)}"</code></td>
   </tr>
   <tr>
-    <td><b>Path matching</b></td>
+    <td>Path matching</td>
     <td>Uses XPath to match the path to a value in your SAML assertion by using the XML hierarchy or schema.</td>
     <td><code>"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"</code><br><br>Retrieves the value of <code>NotOnOrAfter</code>.</td>
   </tr>
