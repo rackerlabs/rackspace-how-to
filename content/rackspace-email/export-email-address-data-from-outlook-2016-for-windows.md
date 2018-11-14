@@ -57,7 +57,7 @@ If you need to export or import email address data from a different Outlook vers
 
 7. Click **Browse**, and then select the location where you want to save the **.pst** file.
 
-   **Note:** Ssave the file somewhere that you can easily locate for later use, such as the Desktop.
+   **Note:** Save the file somewhere that you can easily locate for later use, such as the Desktop.
 
 8. In the File Name box, type the name that you want to use for the new **.pst** file, and then click **OK**.
 
