@@ -1,11 +1,11 @@
 ---
-permalink: id-federation-mapping-policies-permissions-dedicated/
+permalink: id-federation-map-policies-permissions-dedicated/
 audit_date: '2018-11-12'
-title: Rackspace Identity federation for Dedicated hosting: Mapping policies and permissions
+title: 'Identity federation for Dedicated Hosting: Map policies and permissions'
 type: article
-created_date: '2018-11-13'
+created_date: '2018-11-14'
 created_by: Kate Dougherty
-last_modified_date: '2018-11-13'
+last_modified_date: '2018-11-14'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
