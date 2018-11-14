@@ -11,7 +11,7 @@ product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-Our agents support the operating systems (OS) listed on this page. When building or upgrading servers be sure
+Our agents support the operating systems (OS) listed on this page. When building or upgrading servers, be sure
 to check this list first so that your systems will remain in support by Rackspace PDR. If you
 are unsure if an OS release or kernel version is supported, contact the Rackspace PDR support team.
 
