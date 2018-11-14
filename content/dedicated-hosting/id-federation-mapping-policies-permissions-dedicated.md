@@ -174,42 +174,42 @@ Your Attribute Mapping Policy must contain the following information:
 - A minimum of one local rule.
 - Static or dynamically-populated values for the fields in the following table:
 
-<table>
+<table width="100%">
   <tr>
-    <th>**Field**</th>
-    <th>**Description**</th>
-    <th>**Format**</th>
-    <th>**Common values**</th>
+    <th><b>Field</b></th>
+    <th><b>Description</b></th>
+    <th><b>Format</b></th>
+    <th><b>Common values</b></th>
   </tr>
   <tr>
-    <td>**domain**</td>
+    <td><b>domain</b></td>
     <td>The Identity or Account Domain that the Identity Provider is authorized to log users into.</td>
     <td>Alphanumeric string</td>
     <td>Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
   </tr>
   <tr>
-    <td>**name**</td>
+    <td><b>name</b></td>
     <td>The username of your user as provided by your identity system.</td>
     <td>Alphanumeric string</td>
-    <td>SAML attributes:< br /> **NameID** (persistent type preferred)<br />**urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name**</td>
+    <td>SAML attributes:< br /> <b>NameID</b> (persistent type preferred)<br /><b>urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name</b></td>
   </tr>
   <tr>
-    <td>**email**</td>
+    <td><b>email</b></td>
     <td>The email address of your user as provided by your identity system.</td>
     <td>RFC-valid email address</td>
-    <td>SAML Attributes:<br /> **email**<br /> http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br />**urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3**</td>
+    <td>SAML Attributes:<br /> <b>email</b><br /> http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br /><b>urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3</b></td>
   </tr>
   <tr>
-    <td>**roles**</td>
+    <td><b>roles</b></td>
     <td>The product (role-based access control) RBAC roles that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td>**Example:**<br />`roles:`<br /> - `"nova:admin"`<br />- `"lbaas:observer"`</td>
+    <td><b>Example</b>:<br />`roles:`<br /> - `"nova:admin"`<br />- `"lbaas:observer"`</td>
   </tr>
   <tr>
-    <td>**expires**</td>
+    <td><b>expires</b></td>
     <td>The timeout before users must re-authenticate with your identity system.</td>
     <td>ISO format time values</td>
-    <td>**Example:** `"PT12H"` (12 hours)<br /><br />_or_<br /><br />SAML Attributes<br /><br />**SessionNotOnOrAfter**<br /> **NotOnOrAfter**</td>
+    <td><b>Example:</b> `"PT12H"` (12 hours)<br /><br />_or_<br /><br />SAML Attributes<br /><br /><b>SessionNotOnOrAfter</b><br /> <b>NotOnOrAfter</b></td>
   </tr>
 </table>
 
@@ -225,29 +225,29 @@ Attribute Mapping Policy language, see the [Attribute
 Mapping Policy reference
 guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-reference/#attribmap-reference).
 
-<table>
+<table width="100%">
   <tr>
-    <th>**Method**</th>
-    <th>**Description**</th>
-    <th>**Example**</th>
+    <th><b>Method</b></th>
+    <th><b>Description</b></th>
+    <th><b>Example</b></th>
   </tr>
   <tr>
-    <td>**Default**</td>
+    <td><b>Default</b></td>
     <td>Retrieves the value by looking for common locations or labels for the field. Only an attribute with the same name as the field is matched. For example, name: `"{D}"` matches the attribute with the name `name`.</td>
     <td>`name: "{D}"`</td>
   </tr>
   <tr>
-    <td>**Explicit**</td>
-    <td>Directly input the values into the Attribute Mapping Policy fields. This is most useful for values that don't change for any federated user logging in, because they are applied to **all** federated users for this Identity Provider.</td>
+    <td><b>Explicit</b></td>
+    <td>Directly input the values into the Attribute Mapping Policy fields. This is most useful for values that don't change for any federated user logging in, because they are applied to <b>all</b> federated users for this Identity Provider.</td>
     <td>`expire: "PT12H"`</td>
   </tr>
   <tr>
-    <td>**Attribute matching**</td>
+    <td><b>Attribute matching</b></td>
     <td>Uses XPath to match a SAML attribute in your SAML assertion by name, returning one or more values.</td>
     <td>Single value return (`At`): `email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"`<br />Multi value return (`Ats`): <br />`groups:`<br /> `multiValue: true`<br />`value: "{Ats(http://schemas.xmlsoap.org/claims/Group)}"`</td>
   </tr>
   <tr>
-    <td>**Path matching**</td>
+    <td><b>Path matching</b></td>
     <td>Uses XPath to match the path to a value in your SAML assertion by using the XML hierarchy or schema.</td>
     <td>`"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"`<br><br>Retrieves the value of `NotOnOrAfter`.</td>
   </tr>
