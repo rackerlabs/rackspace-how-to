@@ -175,12 +175,12 @@ Your Attribute Mapping Policy must contain the following information:
 - Static or dynamically-populated values for the fields in the following table:
 
   | **Field** 	| **Description** 	| **Format** 	| **Common values** 	|
-  |-------------	|--------------------------------------------------------------------------------------------	|------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-  | **domain** 	| The Identity or Account Domain that the Identity Provider is authorized to log users into. 	| Alphanumeric string 	| Must be set to your Identity Domain. The domain is listed on the Identity Provider details page for your Identity Provider. 	|
-  | **name** 	| The username of your user as provided by your identity system. 	| Alphanumeric string 	| SAML attributes:<br /> **NameID** (persistent type preferred)**urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name** 	|
-  | **email** 	| The email address of your user as provided by your identity system. 	| RFC-valid email address 	| SAML Attributes:<br /> **email**<br /> http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress<br /> **urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3"** 	|
-  | **roles** 	| The product (role-based access control) RBAC roles that you want to assign to the user. 	| YAML array of alphanumeric strings 	| **Example:** <br /> `roles:`<br /> - `"nova:admin"` <br /> - `"lbaas:observer"` 	|
-  | **expires** 	| The timeout before users must re-authenticate with your identity system. 	| ISO format time values 	| **Example:** `"PT12H"` (12 hours)<br /> <br /> or<br /> <br /> SAML Attributes<br /> <br /> **SessionNotOnOrAfter**<br /> **NotOnOrAfter** 	|
+  |-------------	|--------------------------------------------------------------------------------------------	|------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+  | **domain** 	| The Identity or Account Domain that the Identity Provider is authorized to log users into. 	| Alphanumeric string 	| Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider. 	|
+  | **name** 	| The username of your user as provided by your identity system. 	| Alphanumeric string 	| SAML attributes:<br/> **NameID** (persistent type preferred)<br />**urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name** 	|
+  | **email** 	| The email address of your user as provided by your identity system. 	| RFC-valid email address 	| SAML Attributes:<br /> **email**<br /> http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br />**urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3** 	|
+  | **roles** 	| The product (role-based access control) RBAC roles that you want to assign to the user. 	| YAML array of alphanumeric strings 	| **Example:**<br />`roles:`<br /> - `"nova:admin"`<br />- `"lbaas:observer"` 	|
+  | **expires** 	| The timeout before users must re-authenticate with your identity system. 	| ISO format time values 	| **Example:** `"PT12H"` (12 hours)<br /><br />_or_<br /><br />SAML Attributes<br /><br />**SessionNotOnOrAfter**<br /> **NotOnOrAfter** 	|
 
 #### Setting values with Attribute Mapping
 
@@ -195,11 +195,11 @@ Mapping Policy reference
 guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-reference/#attribmap-reference).
 
   | **Method** 	| **Description** 	| **Example** 	|
-  |--------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-  | Default 	| Retrieves the value by looking for common locations or labels for the field. Note that at this time, only an attribute with the same name as the field is matched. For example, name: `"{D}"` matches the attribute with the name `name`. 	| `name: "{D}"` 	|
-  | Explicit 	| Directly input the values into the Attribute Mapping Policy fields. This is most useful for values that do not change for any federated user logging in because they're applied to **all** federated users for this Identity Provider. 	| `expire: "PT12H"` 	|
-  | Attribute matching 	| Uses XPath to match a SAML attribute in your SAML assertion by name, returning one or more values. 	| `Single value return (`At`): `email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"`Multi value return (`Ats`): `groups:multiValue: truevalue: "{Ats(http://schemas.xmlsoap.org/claims/Group)}" 	|
-  | Path matching 	| Uses XPath to match the path to a value in your SAML assertion by using the XML hierarchy or schema. 	| `"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"`  Retrieves the value of `NotOnOrAfter`. 	|
+  |------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+  | **Default** 	| Retrieves the value by looking for common locations or labels for the field. Only an attribute with the same name as the field is matched. For example, name: `"{D}"` matches the attribute with the name `name`. 	| `name: "{D}"` 	|
+  | **Explicit** 	| Directly input the values into the Attribute Mapping Policy fields. This is most useful for values that don't change for any federated user logging in, because they are applied to **all** federated users for this Identity Provider. 	| `expire: "PT12H"` 	|
+  | **Attribute matching** 	| Uses XPath to match a SAML attribute in your SAML assertion by name, returning one or more values. 	| Single value return (`At`): `email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"`<br />`Multi value return (`Ats`): <br />`groups:`<br /> `multiValue: true`<br />`value: "{Ats(http://schemas.xmlsoap.org/claims/Group)}"` 	|
+  | **Path matching** 	| Uses XPath to match the path to a value in your SAML assertion by using the XML hierarchy or schema. 	| `"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"  Retrieves the value of `NotOnOrAfter`. 	|
 
 #### Example policy with the required attributes
 
