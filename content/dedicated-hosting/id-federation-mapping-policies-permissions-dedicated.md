@@ -185,31 +185,31 @@ Your Attribute Mapping Policy must contain the following information:
     <td>**domain**</td>
     <td>The Identity or Account Domain that the Identity Provider is authorized to log users into.</td>
     <td>Alphanumeric string</td>
-    <td>Must be set to your Identity Domain. &lt;br /&gt;The domain is listed on the Identity Provider details page for your Identity Provider.</td>
+    <td>Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
   </tr>
   <tr>
     <td>**name**</td>
     <td>The username of your user as provided by your identity system.</td>
     <td>Alphanumeric string</td>
-    <td>SAML attributes:&lt;br/&gt; **NameID** (persistent type preferred)&lt;br /&gt;**urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name**</td>
+    <td>SAML attributes:< br /> **NameID** (persistent type preferred)<br />**urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name**</td>
   </tr>
   <tr>
     <td>**email**</td>
     <td>The email address of your user as provided by your identity system.</td>
     <td>RFC-valid email address</td>
-    <td>SAML Attributes:&lt;br /&gt; **email**&lt;br /&gt; http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress &lt;br /&gt;**urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3**</td>
+    <td>SAML Attributes:<br /> **email**<br /> http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br />**urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3**</td>
   </tr>
   <tr>
     <td>**roles**</td>
     <td>The product (role-based access control) RBAC roles that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td>**Example:**&lt;br /&gt;`roles:`&lt;br /&gt; - `"nova:admin"`&lt;br /&gt;- `"lbaas:observer"`</td>
+    <td>**Example:**<br />`roles:`<br /> - `"nova:admin"`<br />- `"lbaas:observer"`</td>
   </tr>
   <tr>
     <td>**expires**</td>
     <td>The timeout before users must re-authenticate with your identity system.</td>
     <td>ISO format time values</td>
-    <td>**Example:** `"PT12H"` (12 hours)&lt;br /&gt;&lt;br /&gt;_or_&lt;br /&gt;&lt;br /&gt;SAML Attributes&lt;br /&gt;&lt;br /&gt;**SessionNotOnOrAfter**&lt;br /&gt; **NotOnOrAfter**</td>
+    <td>**Example:** `"PT12H"` (12 hours)<br /><br />_or_<br /><br />SAML Attributes<br /><br />**SessionNotOnOrAfter**<br /> **NotOnOrAfter**</td>
   </tr>
 </table>
 
@@ -244,12 +244,12 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
   <tr>
     <td>**Attribute matching**</td>
     <td>Uses XPath to match a SAML attribute in your SAML assertion by name, returning one or more values.</td>
-    <td>Single value return (`At`): `email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"&lt;br /&gt;`Multi value return (`Ats`): &lt;br /&gt;`groups:`&lt;br /&gt; `multiValue: true`&lt;br /&gt;`value: "{Ats(http://schemas.xmlsoap.org/claims/Group)}"`</td>
+    <td>Single value return (`At`): `email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"`<br />Multi value return (`Ats`): <br />`groups:`<br /> `multiValue: true`<br />`value: "{Ats(http://schemas.xmlsoap.org/claims/Group)}"`</td>
   </tr>
   <tr>
     <td>**Path matching**</td>
     <td>Uses XPath to match the path to a value in your SAML assertion by using the XML hierarchy or schema.</td>
-    <td>``"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"<br><br>Retrieves the value of `NotOnOrAfter`.</td>
+    <td>`"{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"`<br><br>Retrieves the value of `NotOnOrAfter`.</td>
   </tr>
 </table>
 
