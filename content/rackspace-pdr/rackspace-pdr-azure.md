@@ -17,21 +17,21 @@ infrastructure must be set up, and select vendor agents must be deployed.
 
 ### Deployment of an NIDS appliance infrastructure
 
-To enable visibility of your Azure network we deploy NIDS appliances into each distinct network environment.
+To enable visibility of your Azure network, we deploy NIDS appliances into each distinct network environment.
 
 #### NIDS appliance platform requirements
 
-At this time the Rackspace Azure and PDR support teams deploy, manage and monitor your
-NIDS appliances. Our current NIDS appliances are provide by the Alert Logic&reg; Threat Manger&trade; offering. Rackspace PDR requires the following platform requirements:
+At this time, the Rackspace Azure and PDR support teams deploy, manage, and monitor your
+NIDS appliances. Our current NIDS appliances are provide by the Alert Logic&reg; Threat Manger&trade; offering. Rackspace PDR has the following platform requirements:
 
-- Be a Rackspace Azure customer
-- An NIDS appliance for each routable network segment (appliance needs to be reachable by agents and visa versa)
-- Egress and Ingress firewall rules (NSGs) as defined in [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/)
+- Be a Rackspace Azure customer.
+- Have an NIDS appliance for each routable network segment (appliance needs to be reachable by agents and visa versa).
+- Set up egress and ingress firewall rules (NSGs) as defined in [Rackspace PDR Threat Manager Network Requirements](/how-to/rackspace-pdr-nids-networking/).
 
 #### Secure Socket Layer (SSL) appliance end-to-end decryption
 
 Many appliactions terminate SSL and Transport Layer Security (TLS) at the network edge with a load-balancer
-or web application firewall. If your application uses end-to-end encryption see the
+or web application firewall. If your application uses end-to-end encryption, see the
 [Rackspace PDR SSL Decryption Guide](/how-to/rackspace-pdr-ssl-decryption/).
 
 ### Deployment of vendor agents
@@ -46,19 +46,19 @@ documentation for more information on installing the VM Agent:
 - [Azure VM Agent for Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/agent-windows)
 - [Azure VM Agent for Linux](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/agent-linux)
 
-#### Building compatable instances
+#### Building compatible instances
 
-Due to the various vendors we have selected to provide the nessessary telemetry to our systems it is
+Due to the various vendors that we have selected to provide the nessessary telemetry to our systems, it is
 important that you select operating systems and kernel versions that are compatable with the
-vendor agents. For more information, see the [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatablity/).
+vendor agents. For more information, see the [Rackspace PDR system requirements](/how-to/rackspace-pdr-agent-compatablity/).
 
 #### Golden or Base images
 
-It is important that images taken from hosts that have Rackspace PDR agents deployed be prepared for deployment before using them as base images. Follow the [Rackspace PDR Imaging Hosts](/how-to/rackspace-pdr-imaging/) guide to ensure Golden images are properly prepared.
+It is important that images taken from hosts that have Rackspace PDR agents deployed be prepared for deployment before using them as base images. Follow the [Rackspace PDR imaging hosts](/how-to/rackspace-pdr-imaging/) guide to ensure that Golden images are properly prepared.
 
 #### Instance network requirements
 
 The agents used to provide telementry to our Security Operations Center (SOC) do have specific networking
 requirements that must be implemented. Use the
-[Rackspace PDR Agent Network Requirements](/how-to/rackspace-pdr-agent-networking/) guide to correctly
+[Rackspace PDR Agent network requirements](/how-to/rackspace-pdr-agent-networking/) guide to correctly
 implement network ACLs and firewall rules for your platform.
