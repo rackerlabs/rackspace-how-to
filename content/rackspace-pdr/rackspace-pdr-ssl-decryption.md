@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-pdr-ssl-decryption/
-title: Rackspace PDR SSL Decryption
+title: Rackspace PDR SSL decryption
 type: article
 audit_date: '2018-11-12'
 created_date: '2018-10-09'
