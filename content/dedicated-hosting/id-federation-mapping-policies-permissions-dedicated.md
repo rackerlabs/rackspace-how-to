@@ -386,6 +386,6 @@ steps:
    browse to the file that you downloaded and customized, and then click
    **Submit**.
 
-If you're using the API, you can also update the policy by using the
-[Update IDP mapping
+If you're using the API, you can also update the policy
+by using the [Update IDP mapping
 policy](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/identity-provider-operations/#update-idp-mapping-policy) endpoint.
