@@ -19,6 +19,8 @@ drive.
 
 ### Extend your drive
 
+Use the following steps to extend your drive:
+
 1. From the desktop of your Windows Server 2012 Cloud Server, open
 the **Server Manager** and select **Tools > Computer Management**.
 
