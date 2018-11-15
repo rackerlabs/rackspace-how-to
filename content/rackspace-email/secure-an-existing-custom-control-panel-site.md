@@ -1,6 +1,6 @@
 ---
 permalink: secure-an-existing-custom-control-panel-site/
-audit_date: '2018-03-28'
+audit_date: '2018-11-13'
 title: Secure an existing custom control panel site
 type: article
 created_date: '2018-02-23'
