@@ -191,7 +191,7 @@ Your Attribute Mapping Policy must contain the following information:
     <td>name</td>
     <td>The username of your user as provided by your identity system.</td>
     <td>Alphanumeric string</td>
-    <td>SAML attributes:<br />NameID (persistent type preferred)<br />urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name</td>
+    <td>SAML attributes:<br />NameID (persistent type preferred)<br /><code>urn:oid:1.3.6.1.4.1.5923.1.1.1.6http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name</code></td>
   </tr>
   <tr>
     <td>email</td>
