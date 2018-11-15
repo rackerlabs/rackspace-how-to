@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-After you successfully resize a Windows&reg; Cloud Server, you need to perform
+After you resize a Windows&reg; Cloud Server, you need to perform
 some additional steps to use the new disk space that is
 available for your server. In Windows Server 2012 you can merge the
 newly available disk space into one drive by expanding your original
