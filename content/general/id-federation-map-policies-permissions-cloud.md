@@ -137,7 +137,7 @@ logging in to Rackspace, as shown in the following example:
                     expire: {D}
         version: "RAX-1"
 
-However, you must customize the default Attribute Mapping Policy to use '
+However, you must customize the default Attribute Mapping Policy to use
 specific values before your users log in or are able to use Rackspace products
 and services.
 
