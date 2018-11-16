@@ -213,7 +213,7 @@ Your Attribute Mapping Policy must contain the following information:
   </tr>
 </table>
 
-#### Setting values with Attribute Mapping
+#### Set values with Attribute Mapping
 
 You can set values either explicitly, or by using Attribute Mapping Policy
 language features such as substitutions or XPath.
@@ -307,7 +307,7 @@ The following code block shows a basic example of an Attribute Mapping Policy:
             - "ticketing:admin"
 
 In this example, the `admin` and `ticketing:admin` roles are explicitly
-assigned to any users logging in by using this Identity Provider and Attribute
+assigned to any users who log in by using this Identity Provider and Attribute
 Mapping Policy.
 
 For basic Identity Federation setups, this example might be sufficient.
