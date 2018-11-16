@@ -29,7 +29,7 @@ Use the following steps to create a user group:
 
 4. Click **Create New User Group**.
 
-5. Enter a simpla identifier for the **Group Name** and a longer description
+5. Enter a simple identifier for the **Group Name** and a longer description
    for **Group Description**.
 
 6. Click **Create Group**.
@@ -39,6 +39,12 @@ Use the following steps to create a user group:
 Users that have a check mark are included in the group.  A user can be removed
 from the group by removing the check mark. To add a new member or edit a
 member, click **Add/Edit Members**.
+
+**Note:** If they have been granted a higher permission in a group, the
+lesser permissions are disabled when editing individual users directly. Thus,
+if a user gets `billing:admin` from a user group, the option to select
+`billing:observer` is disabled when you directly edit permissions for
+that user.
 
 ### Example user group
 
