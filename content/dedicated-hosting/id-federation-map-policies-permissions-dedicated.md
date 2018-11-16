@@ -68,7 +68,7 @@ SAML provider.
 For instructions, see the following reference that corresponds to your SAML
 provider:
 
-- [Configure AD FS](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-adfs/)
+- [Configure AD FS](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-adfs/adfs-setup/)
 - [Configure Okta](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-okta/)
 - [SAML configuration items](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/generic-3p-saml/#saml-configuration-items)
 
