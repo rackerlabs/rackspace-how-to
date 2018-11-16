@@ -31,7 +31,7 @@ All available server configurations are displayed. The list contains the followi
 - ID - The server configuration ID
 - Name - The configuration name, labeled by RAM size and performance type
 - Memory\_MB - The amount of RAM that the configuration has
-- Disk - The size of the disk in GB (for General Purpose Cloud Servers, the size of the system disk)
+- Disk - The size of the disk in GB (for general purpose Cloud Servers, the size of the system disk)
 - Ephemeral - The size of the data disk
 - Swap - The size of the swap space
 - VCPUs - The number of virtual CPUs associated with the configuration

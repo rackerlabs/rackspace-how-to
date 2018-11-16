@@ -1,7 +1,7 @@
 ---
 permalink: creating-a-general-purpose-cloud-server/
 audit_date: '2018-10-26'
-title: Create a General Purpose cloud server
+title: Create a general purpose Cloud Server
 type: article
 created_date: '2013-10-16'
 created_by: Kyle Laffoon
@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article explains how to set up a General Purpose Cloud Server
+This article explains how to set up a general purpose Cloud Server
 through the Cloud Control Panel. For more information about General Purpose
 servers, see [New Features in General Purpose and Work-Optimized Cloud Servers](/how-to/new-features-in-general-purpose-and-work-optimized-cloud-servers).
 

@@ -11,9 +11,9 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-This article describes how to install the Rackspace Cloud Backup agent on your Windows server. If you are using a Linux server, see [Install the Cloud Backup Agent (Linux)](/how-to/rackspace-cloud-backup-install-the-agent-on-linux) for the parallel instructions.
+This article describes how to install the Rackspace Cloud Backup agent on your Windows server. If you are using a Linux server, see [Install the Cloud Backup agent (Linux)](/how-to/rackspace-cloud-backup-install-the-agent-on-linux) for the parallel instructions.
 
-To update the agent, see the instructions in [Update the Rackspace Cloud Backup Agent.](/how-to/update-the-rackspace-cloud-backup-agent)
+To update the agent, see the instructions in [Update the Rackspace Cloud Backup agent.](/how-to/update-the-rackspace-cloud-backup-agent)
 
 ### Requirements
 
@@ -92,7 +92,7 @@ administrator account of the server.
 
 #### Update Cloud Backup agent on Windows
 
-For instructions to update the agent on Windows, see [Update the Rackspace Cloud Backup Agent.](/how-to/update-the-rackspace-cloud-backup-agent)
+For instructions to update the agent on Windows, see [Update the Rackspace Cloud Backup agent.](/how-to/update-the-rackspace-cloud-backup-agent)
 
 
 ### Test the Windows installation or update

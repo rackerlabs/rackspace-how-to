@@ -45,7 +45,7 @@ before beginning this tutorial.
 
 Use the Cloud Backup product to back up all user data. This
 [Cloud Backup instruction](https://support.rackspace.com/how-to/rackspace-cloud-backup-create-a-backup/)
-covers the installation of the Cloud Backup Agent and the configuration of the
+covers the installation of the Cloud Backup agent and the configuration of the
 backup.
 
 #### Create an image of the production server

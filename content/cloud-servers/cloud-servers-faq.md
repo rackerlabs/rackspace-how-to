@@ -244,7 +244,7 @@ For details, see [Create an image of a server and restore a server from a saved 
 
 #### Do you offer on-demand images (snapshots) and scheduled images and what are the prices?
 
-You can create an image of any General Purpose Cloud Server, and you can
+You can create an image of any general purpose Cloud Server, and you can
 use this image to restore a server or clone a new one. You can create an
 unlimited number of images on-demand, or you can schedule an automatic
 daily or weekly image.
