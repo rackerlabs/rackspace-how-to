@@ -5,7 +5,7 @@ title: 'Identity federation for Dedicated Hosting: Map policies and permissions'
 type: article
 created_date: '2018-11-14'
 created_by: Kate Dougherty
-last_modified_date: '2018-11-14'
+last_modified_date: '2018-11-16'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -47,13 +47,13 @@ Provider, you should have an understanding of the following languages:
 
 - **YAML 1.1**: YAML is a simple data serialization language that's designed
   to be human friendly. YAML is very similar to Javascript Object Notation
-  (JSON), but supports useful features such as comments and the ability to
-  easily input multi-line data. Attribute mapping policies are written in YAML.
+  (JSON) but supports useful features such as comments and the ability to
+  easily input multi-line data. Attribute Mapping Policies are written in YAML.
 
-### Configure your SAML Provider to work with Rackspace Identity Federation
+### Configure your SAML provider to work with Rackspace Identity Federation
 
-Before you can create an attribute mapping policy, you first need to configure
-SAML attributes and assertions in your SAML Provider, such as Microsoft&reg;
+Before you can create an Attribute Mapping Policy, you first need to configure
+SAML attributes and assertions in your SAML provider, such as Microsoft&reg;
 Active Directory&reg; Federation Services (AD FS) or Okta&trade;.
 
 The SAML attributes and assertions that you configure in your SAML provider
@@ -68,7 +68,7 @@ SAML provider.
 For instructions, see the following reference that corresponds to your SAML
 provider:
 
-- [Configure AD FS](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-AD FS/AD FS-setup/)
+- [Configure AD FS](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-adfs/)
 - [Configure Okta](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-okta/)
 - [SAML configuration items](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/generic-3p-saml/#saml-configuration-items)
 
@@ -85,19 +85,19 @@ For specific instructions for exporting a SAML metadata file from Okta, see
 [Configure
 Okta](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-okta/okta-setup/).
 
-### Add your identity Provider to your Rackspace account
+### Add your Identity Provider to your Rackspace account
 
  You can configure your Identity Provider with Rackspace in the MyRackspace
  portal.
 
-**Note**: You can also create a new identity provider by using the Rackspace
+**Note**: You can also create a new Identity Provider by using the Rackspace
 Identity Federation API. However, we recommend that you perform this task in
 the MyRackspace portal.
 
 Use the following steps to configure your Identity Provider with Rackspace:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the sub-navigation bar, select **Account > User List**.
+2. In the subnavigation bar, select **Account > User List**.
 3. Click the **Federation** tab.
 4. Click **Add Identity Provider**.
 4. In the **Description** field, enter a description for your Identity
@@ -137,9 +137,9 @@ logging in to Rackspace, as shown in the following example:
                     expire: {D}
         version: "RAX-1"
 
-However, you must customize the default Attribute Mapping Policy to specific
-values before your users log in or are able to use Rackspace products and
-services.
+However, you must customize the default Attribute Mapping Policy to use
+specific values before your users log in or are able to use Rackspace products
+and services.
 
 ### Customize the default Attribute Mapping Policy
 
@@ -152,7 +152,7 @@ You can retrieve your default Attribute Mapping Policy from the MyRackspace
 portal by using the following steps:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the sub-navigation bar, select **Account > User List**.
+2. In the subnavigation bar, select **Account > User List**.
 3. Click the **Federation** tab.
 4. Select the Identity Provider whose mapping policy you want to update.
 5. In the **Attribute Mapping Policy** section, click **Download**.
@@ -183,7 +183,7 @@ Your Attribute Mapping Policy must contain the following information:
   </tr>
   <tr>
     <td>domain</td>
-    <td>The Identity or Account Domain that the Identity Provider is authorized to log users into.</td>
+    <td>The Identity or Account Domain that the Identity Provider is authorized to log users in to.</td>
     <td>Alphanumeric string</td>
     <td>Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
   </tr>
@@ -201,14 +201,14 @@ Your Attribute Mapping Policy must contain the following information:
   </tr>
   <tr>
     <td>roles</td>
-    <td>The product (role-based access control) RBAC roles that you want to assign to the user.</td>
+    <td>The product RBAC (role-based access control) roles that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
     <td>Example:<br /><code>roles:</code><br /> - <code>"nova:admin"</code><br />- <code>"lbaas:observer"</code></td>
   </tr>
   <tr>
     <td>expires</td>
     <td>The timeout before users must re-authenticate with your identity system.</td>
-    <td>ISO format time values</td>
+    <td>International Standards Organization (ISO) format time values</td>
     <td>Example: <code>"PT12H"</code> (12 hours)<br /><br /><i>or</i><br /><br />SAML Attributes<br /><br />SessionNotOnOrAfter<br /> NotOnOrAfter</td>
   </tr>
 </table>
@@ -278,7 +278,7 @@ more customization might be required in some cases.
            expire: "{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"
            #  Retrieves the NotOnOrAfter value by using the SAML path and XPath
 
-**Note**: For considerations for specific-third party SAML providers, see
+**Note**: For considerations for specific third-party SAML providers, see
 [Configure Third-Party SAML
 providers](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/#index-configuring-3p-saml-ug).
 
@@ -317,7 +317,7 @@ use the following steps to access the MyRackspace Customer Portal Permissions
 Guide:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the sub-navigation bar, select **Account > Permissions**.
+2. In the subnavigation bar, select **Account > Permissions**.
 3. On the Permissions page, click **Permissions Guide** in the top-right
    corner.
 
@@ -353,8 +353,8 @@ Policy:
 This example uses the substitution and piping features of the Attribute
 Mapping Policy in conjunction with XPath to observe the SAML `groups` value,
 and also to assign values to the local `role` value based on any matching
-scenarios. (The `{0}` indicator under `roles` causes the resultant value(s) of
-the first `remote` rule to be substituted in its place.)
+scenarios. (The `{0}` indicator under `roles` causes the resultant value or
+values of the first `remote` rule to be substituted in its place.)
 
 For more examples and a complete guide to the Attribute Mapping Policy
 language, see the [Attribute Mapping Policy reference
@@ -365,7 +365,7 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
 To view example Attribute Mapping Policies for specific third-party providers,
 see the following reference that corresponds to your SAML provider:
 
-- [Attribute Mapping for AD FS](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-AD FS/AD FS-attribmapping/)
+- [Attribute Mapping for AD FS](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-adfs/adfs-attribmapping/)
 
 - [Attribute Mapping for Okta](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/config-okta/okta-attribmapping/)
 
@@ -379,7 +379,7 @@ You can update the policy in the MyRackspace portal by using the following
 steps:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the sub-navigation bar, select **Account > User List**.
+2. In the subnavigation bar, select **Account > User List**.
 3. Click the **Federation** tab.
 4. Select the Identity Provider whose mapping policy you want to update.
 5. In the **Attribute Mapping Policy** section, click **Update Policy**,
