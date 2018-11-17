@@ -45,7 +45,7 @@ Run the following command:
 
     use mysql;
 
-    update user set password=PASSWORD("mynewpassword") where User='root';
+    update user set authentication_string=PASSWORD("mynewpassword") where User='root';
 
     flush privileges;
 
