@@ -203,7 +203,7 @@ and no longer provide adaquate telemetry to our Security Operations Center (SOC)
 | 4.15.0-1017-aws | 4.15.0-1019-aws | 4.15.0-1020-aws | 4.15.0-1021-aws |
 | 4.15.0-1023-aws | 4.15.0-1025-aws |  |  |
 
-#### Windows Agent Compatibility
+### Windows Agent Compatibility
 
 **Windows Server 2008 R2 SP1 Supported Versions**
 
