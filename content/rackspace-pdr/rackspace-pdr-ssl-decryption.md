@@ -41,4 +41,3 @@ The following cyphers are supported with NIDS decryption:
 - AES128-SHA
 
 For more information, see [Alert Logic Supported Cyphers](https://support.alertlogic.com/hc/en-us/articles/115003425427-What-ciphers-does-Alert-Logic-accept-).
-
