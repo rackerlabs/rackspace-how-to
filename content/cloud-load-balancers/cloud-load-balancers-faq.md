@@ -5,13 +5,23 @@ title: Cloud Load Balancers FAQ
 type: article
 created_date: '2015-12-08'
 created_by: Rackspace Support
-last_modified_date: '2016-04-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
 
 ### Load Balancing
+
+#### What is a Cloud Load Balancer?
+
+Your business's website, applications, and web-based workloads depend on
+high availability. Rackspace [Cloud Load Balancers](http://www.rackspace.com/cloud/load-balancing/) enable you to
+quickly balance the workload of multiple Cloud Servers for optimal
+traffic management and maximum failover protection. Load balancers
+distribute workloads across two or more servers, network links, and
+other resources to maximize throughput, minimize response time, and
+avoid network overload.
 
 #### How do I see the original IP address of a connection to a load balancer?
 
@@ -20,8 +30,8 @@ originating IP address by default. For more information, see [the API documentat
 
 #### Do Cloud Load Balancers support SSL Termination?
 
-SSL Termination on Cloud Load Balancers is supported [via the API](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#document-api-operations/ssl-termination)
-and through the Cloud Control Panel.
+SSL Termination on Cloud Load Balancers is supported [through the API](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#document-api-operations/ssl-termination)
+and the [Cloud Control Panel](https://login.rackspace.com/).
 
 SSL Termination allows users to have their secure traffic terminate at
 the load balancer with centralized certificate management. Features of
@@ -37,7 +47,7 @@ types of [Personally Identifiable Information (PII)](/how-to/definition-of-perso
 #### How do I configure SSL Termination using the Cloud Control Panel?
 
 You can quickly configure SSL termination for an existing Cloud Load
-Balancer by using the Cloud Control Panel.
+Balancer by using the [Cloud Control Panel](https://login.rackspace.com/).
 
 1.  Click on an existing load balancer to open its Details Page.
 2.  Scroll to the Optional Features section.
@@ -47,7 +57,7 @@ Balancer by using the Cloud Control Panel.
 
 #### How can I raise my API rate limits for Cloud Load Balancers?
 
-To modify imposed API rate limits, contact Support.
+To modify imposed API rate limits, contact Rackspace Support.
 
 #### What is the maximum throughput of each load balancer?
 
@@ -59,7 +69,7 @@ time.
 
 #### How long does it take to provision a load balancer?
 
-In most cases, it should take less than one minute to provision a load
+In most cases, it takes less than one minute to provision a load
 balancer after the
 [API](http://www.rackspace.com/cloud/cloud_hosting_products/loadbalancers/api/)
 request is submitted. During periods of extreme system load, it should
@@ -114,7 +124,7 @@ BIG-IP Local Traffic Manager solution.
 
 Yes, implementation and management of the Cloud Load Balancer solution
 is currently available through the Rackspace Cloud Control Panel and the
-API. To use the Cloud Load Balancer API, you should have a general
+API. To use the Cloud Load Balancers API, you should have a general
 understanding of the load balancing service and be familiar with the
 following technologies:
 
@@ -125,9 +135,9 @@ following technologies:
 
 #### How does Rackspace charge for bandwidth (public and private traffic)?
 
--   **Public** - Standard bandwidth rates apply for outbound transfers.
+-   **Public**: Standard bandwidth rates apply for outbound transfers.
     There is no charge for inbound transfers.
--   **Private** - No charges apply for inbound or outbound bandwidth
+-   **Private**: No charges apply for inbound or outbound bandwidth
     transfers over the Rackspace internal network.
 
 #### How much does a Rackspace Cloud Load Balancer cost?
@@ -136,16 +146,6 @@ See the [pricing page](http://www.rackspace.com/cloud/load-balancing/pricing/) f
 details. If you enable log delivery to your Cloud Files account,
 standard charges for Cloud Files apply. Additionally, standard charges
 apply for additional (unique) virtual IP addresses per load balancer.
-
-#### What is a Cloud Load Balancer?
-
-Your business's website, applications, and web-based workloads depend on
-high availability. Rackspace [Cloud Load Balancers](http://www.rackspace.com/cloud/load-balancing/) enable you to
-quickly balance the workload of multiple Cloud Servers for optimal
-traffic management and maximum failover protection. Load balancers
-distribute workloads across two or more servers, network links, and
-other resources to maximize throughput, minimize response time, and
-avoid network overload.
 
 #### What are the requirements for using SSL Termination?
 

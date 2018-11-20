@@ -1,12 +1,12 @@
 ---
 permalink: shut-down-a-server/
-audit_date: '2018-08-28'
+audit_date: '2018-10-25'
 title: Shut down a server
 type: article
 created_date: '2018-08-28'
 created_by: Rackspace Support
-last_modified_date: '2018-08-28'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -36,8 +36,9 @@ If the server is actively used, you should bring it back online. You can
 do this by rebooting the server from the Cloud Control Panel by using
 the following steps:
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-2. In the top navigation bar click **Servers > Cloud Servers**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Select **Servers > Cloud Servers**.
 3. Click the action cog next to the server that you want to reboot and select **Reboot**.
 
 This brings your server back online.

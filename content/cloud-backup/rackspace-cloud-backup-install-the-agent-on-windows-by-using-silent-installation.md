@@ -11,7 +11,7 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-This article describes how to perform a fresh installation or update of the Rackspace Cloud Backup agent on your Windows server by using the silent installation method. If you are using a Linux server, see [Install the Cloud Backup Agent on Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux) for the parallel instructions.
+This article describes how to perform a fresh installation or update of the Rackspace Cloud Backup agent on your Windows server by using the silent installation method. If you are using a Linux server, see [Install the Cloud Backup agent on Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux) for the parallel instructions.
 
 **WARNING:** The silent installation procedure described in this article is for advanced users and should be run from only an administrator account. All others should install the Rackspace Cloud Backup agent by using the interactive installation described in [Install the Cloud Backup agent on Windows](/how-to/rackspace-cloud-backup-install-the-agent-on-windows).
 

@@ -5,40 +5,44 @@ title: Create OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Russell Haering
-last_modified_date: '2018-10-03'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 OnMetal Cloud Servers enables you to boot bare metal servers via the
 Rackspace Cloud Control Panel interface. Use the following steps to set
-up an OnMetal server through the Control Panel.
+up an OnMetal server through the Cloud Control Panel.
 
 **Note:** For the parallel steps in the API, see [Using OnMetal Cloud Servers through the API](/how-to/using-onmetal-cloud-servers-through-api).
 
 ### Create an OnMetal server in the Cloud Control Panel
 
-1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-    The Cloud Servers list opens by default.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-2.  Click the **Create Server** button.
-3.  In the **Server Details** section of the Create Server page, enter a
+3. Select **Servers > Cloud Servers**.
+
+4.  Click the **Create Server** button.
+
+5.  In the **Server Details** section of the **Create Server** page, enter a
     name for the server and select the region in which the server
     will reside.
 
     **Note:** OnMetal servers are available only in the
-    Northern Virginia (IAD), Dallas (DFW), and UK (LON) regions. This list will expand as other
-    regions become available.
+    Northern Virginia (IAD), Dallas (DFW), and UK (LON) regions. This list will
+    expand as other regions become available.
 
-4.  Click the **OnMetal Server** tab.
-5.  Select an image for the server.
+6.  Click the **OnMetal Server** tab.
+
+7.  Select an image for the server.
 
     **Note:** To avoid performance degradation, run the CentOS 6.5 image
     only on a Linux Kernel release of 3.10 or later.
 
-6.  In the **Flavor** section, choose the appropriate configuration for
+8.  In the **Flavor** section, choose the appropriate configuration for
     your workload. Click each flavor class for a description.
     -   All flavors have a 32 GB system disk.
     -   All flavors include dual 10 GigE NICs in a high-availability
@@ -46,7 +50,7 @@ up an OnMetal server through the Control Panel.
         (for traffic within a Rackspace region) and PublicNet
         (the Internet).
 
-7.  Assign a public key to the server by either selecting an existing
+9.  Assign a public key to the server by either selecting an existing
     key, or adding a new one:
     -   To assign an existing public key, select the key name in the
         **SSH Keys** list, and skip to step 13.
@@ -56,20 +60,25 @@ up an OnMetal server through the Control Panel.
         key pair, see [Manage SSH Key Pairs for Cloud Servers with
         python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-8.  To add a new public key, click **Add Public Key**.
+10.  To add a new public key, click **Add Public Key**.
     **Note:** If you have previously added your public key, this option
     is labeled **Manage SSH Keys**.
-9.  Specify a name for the public key.
-10. In the **Region** field, confirm the region in which your key will
+
+11.  Specify a name for the public key.
+
+12. In the **Region** field, confirm the region in which your key will
     be used.
-11. Paste your entire public key in the **Public Key** field, and then
+
+13. Paste your entire public key in the **Public Key** field, and then
     click **Add Public Key**.
-12. Confirm that your key is listed in the **SSH Keys** list for your
+
+14. Confirm that your key is listed in the **SSH Keys** list for your
     new server and select it.
-13. As needed, create a new network and select the PublicNet and
+
+15. As needed, create a new network and select the PublicNet and
     ServiceNet options.
-14. Click **Create Server**.
-    Your server is built.
+
+16. Click **Create Server** to build your server.
 
 ### Boot the server
 

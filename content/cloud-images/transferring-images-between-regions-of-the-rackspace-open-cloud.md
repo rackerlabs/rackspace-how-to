@@ -5,7 +5,7 @@ title: Transfer images between regions of the Rackspace open cloud
 type: article
 created_date: '2014-02-27'
 created_by: Cloud Images
-last_modified_date: '2018-04-09'
+last_modified_date: '2018-10-24'
 last_modified_by: Kate Dougherty
 product: Cloud Images
 product_url: cloud-images
@@ -14,7 +14,7 @@ product_url: cloud-images
 This article explains how to use Cloud Images to transfer images between
 regions of the Rackspace cloud.
 
-The following list presents introductory concepts to be aware of:
+The following list presents introductory concepts that you should be aware of:
 
 -   It isn't possible to copy a server. Instead, you create an image of
     the server that you want to copy (by using either the Cloud Servers API
@@ -39,7 +39,7 @@ To work in the source region, use the following steps:
     This example uses a server named Slave Database 3 in the
     source region. You can use either the [Cloud Servers
     API](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/)
-    or the [Cloud Control Panel](https://mycloud.rackspace.com) to create the
+    or the [Cloud Control Panel](https://login.rackspace.com) to create the
     image. For information about creating an image of a server by using the
     Cloud Control Panel, see [Create an image backup
     (cloning)](/how-to/creating-an-image-backup-cloning/).
@@ -74,21 +74,25 @@ To work in the source region, use the following steps:
     source image's universally unique identifier (UUID) also cannot
     be used because the image in the target region has a different UUID.
     Putting the same coordinating metadata on each image addresses this
-    issue.      
+    issue.
 
 3.  You need a container in your Cloud Files account to put the exported
     image in. If you don't already have one, you can create a container
     by using the Cloud Control Panel by using the following steps:
 
-    1. In the top navigation bar, click **Storage > Files**.
-    2. Click **Create Container**.
-    3. Specify a name, the source region, and the container type.
+    1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+    2. In the top navigation bar, click **Select a Product > Rackspace
+       Cloud**.
+    3. Select **Storage > Files**.
     4. Click **Create Container**.
+    5. Specify a name, the source region, and the container type.
+    6. Click **Create Container**.
 
 4.  Create a Cloud Images `export` task in the source region. When this
     task is executed, it copies the image in Cloud Images and puts the
     copy into the container named `exported-images` in your Cloud Files
-    account (also in the source region). Use the following API call as an example:
+    account (also in the source region). Use the following API call as an
+    example:
 
         curl -X POST <br>
               -H "X-Auth-Token: $OS_AUTH_TOKEN" <br>

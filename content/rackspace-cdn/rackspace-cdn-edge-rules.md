@@ -5,7 +5,7 @@ title: Rackspace CDN edge rules
 type: article
 created_date: '2015-02-11'
 created_by: Megan Meza
-last_modified_date: '2016-06-03'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -65,13 +65,11 @@ The default caching rules listed in the preceding section apply to all origins.
 
 To setup a new origin, perform the following steps:
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-
-2. At the top of the panel, select **Storage > CDN**, and then click the name of your service.
-
-3. On the details page for the service, under **Service Details**, click **Add Origin**.
-
-4. Enter a domain name or an IP address for the origin.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Click **Storage > CDN**, and then click the name of your service.
+4. On the details page for the service, under **Service Details**, click **Add Origin**.
+5. Enter a domain name or an IP address for the origin.
 
    Rackspace recommends that you specify a domain name because an IP address can change over time. When entering the domain name or IP address, do *not* enter **http://**.
 
@@ -79,11 +77,11 @@ To setup a new origin, perform the following steps:
 
    **Note**: Verify that the origin can accept traffic from the domain listed in your CDN service. For example, if your CDN service has a domain of **cdn.customer1.com**, you might need to alter your origin server's **.htaccess** file to allow traffic for that domain.
 
-5. Tell the service when to fetch content from the new origin by specifying a content path. For example, i fyou want all of the images requested from the new origin, set the path to **/images/\***. With this rule, any time your your domain gets a request that contains **/images/** in the path, the CDN fetches that content from the new origin if it can't be found on the edge.
+6. Tell the service when to fetch content from the new origin by specifying a content path. For example, if you want all of the images requested from the new origin, set the path to **/images/\***. With this rule, any time your your domain gets a request that contains **/images/** in the path, the CDN fetches that content from the new origin if it can't be found on the edge.
 
    The path must include a wildcard character. For example, **/images/** is not a valid path, but **/images/*** is a valid path.
 
-6. Click **Save Origin**.
+7. Click **Save Origin**.
 
 **Note:** Requests are passed to the origin by using the original hostname in the header. If your CDN domain is **cdn.mysite.com** and the origin is **mysite.com**, you might expect that the CDN would change the hostname to **mysite.com** when fetching from the origin. However, that is not the case.
 

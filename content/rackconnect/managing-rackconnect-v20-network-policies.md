@@ -5,7 +5,7 @@ title: Managing RackConnect v2.0 network policies
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2015-12-31'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
@@ -23,7 +23,7 @@ policies*.
 
 Network policies are configurable under each individual Cloud account in
 the RackConnect Management Interface (available in the [MyRackspace
-portal](https://my.rackspace.com/)), and you can add them to control access
+portal](https://login.rackspace.com/)), and you can add them to control access
 between cloud servers, a dedicated environment, and the Internet.
 
 ### Access scenarios

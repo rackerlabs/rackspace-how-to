@@ -16,7 +16,7 @@ Rackspace will discontinue support of GoGrid service effective May 31st, 2019.
 If you are a GoGrid Cloud customer, we recommend migrating to one of
 Rackspace’s managed solutions. Rackspace has an extensive portfolio of cloud
 and single tenant solutions, including our Managed Public Clouds across
-[Amazon Web Services (AWS)&reg;](https://www.rackspace.com/managed-aws), [Microsoft Azure&reg;](https://www.rackspace.com/microsoft/managed-azure-cloud), [Google Cloud Platform&reg;](https://www.rackspace.com/managed-google-cloud), and
+[Amazon Web Services (AWS)](https://www.rackspace.com/managed-aws), [Microsoft&reg; Azure&reg;](https://www.rackspace.com/microsoft/managed-azure-cloud), [Google Cloud Platform™](https://www.rackspace.com/managed-google-cloud), and
 [OpenStack&reg;](https://www.rackspace.com/openstack/public), as well as extensive
 support services encompassing migration, architecture design, and ongoing cloud
 management and optimization.
@@ -74,3 +74,7 @@ as compared to GoGrid.
 No, Rackspace will not migrate your environment for you. However, we
 have multiple migration options that we are ready to discuss with
 you. Contact your GoGrid support team to set up a discussion.
+
+#### Are there any self-service options for migration?
+
+GoGrid Linux&reg; cloud servers might be able to [migrate to Rackspace Openstack Public Cloud using InstanceSync](https://community.rackspace.com/products/f/dedicated-hybrid-hosting-forum/8987/gogrid-cloud-to-rackspace-public-cloud-how-to-migrate-using-instancesync). This method is offered as an unsupported courtesy and is not guaranteed to work for your GoGrid Linux servers.

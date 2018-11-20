@@ -1,18 +1,20 @@
 ---
 permalink: logging-in-with-an-ssh-private-key-on-windows/
-audit_date:
+audit_date: '2018-09-26'
 title: Log in with an SSH private key on Windows
 type: article
 created_date: '2013-09-25'
 created_by: Brint Ohearn
-last_modified_date: '2018-09-28'
+last_modified_date: '2018-10-05'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article demonstrates how to load an SSH private key into PuTTY. You need
-the following software to complete this task:
+This article demonstrates how to load an SSH private key into PuTTY in order
+to connect to a [Microsoft&reg; Windows&reg;
+server](https://www.rackspace.com/microsoft/windows). You need the following
+software to complete this task:
 
 1.  **PuTTY**: A client for managing SSH sessions
 2.  **PuTTYgen**: A tool for managing and creating SSH key pairs
@@ -20,7 +22,7 @@ the following software to complete this task:
 To download both tools, see [Download PuTTY: latest
 release](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
-**Note**: These instructions apply to the Windows&reg; operating system.
+**Note**: These instructions apply to the Windows operating system.
 For information about using SSH private keys on Linux&reg; and OS X&reg;
 operating systems, see [Log in with an SSH Private Key on Linux and
 Mac](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
@@ -29,8 +31,8 @@ Mac](/how-to/logging-in-with-an-ssh-private-key-on-linuxmac).
 
 As a part of your deployment, Rackspace might have provided you with an SSH
 private key for you to use to authenticate against your newly deployed
-Windows servers. You must save this private key to a text file. This type of
-file is called a _key file_.
+Windows servers. You must save this private key to a text file. This type
+of file is called a _key file_.
 
 Open a text editor, paste your SSH private key, and save the file.
 

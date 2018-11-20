@@ -5,8 +5,8 @@ title: Using dedicated load balancers with RackConnect v3.0
 type: article
 created_date: '2014-11-11'
 created_by: Juan Perez
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -43,7 +43,7 @@ servers with one or more load balancer pools:
 ### Use the Cloud Control Panel
 
 After you initially create your cloud server by using the [Cloud Control
-Panel](https://mycloud.rackspace.com/), the details page for the
+Panel](https://login.rackspace.com/), the details page for the
 newly created cloud server is displayed. On this page, you can see
 details regarding your server.
 

@@ -1,53 +1,58 @@
 ---
 permalink: checking-running-services-on-linux/
-audit_date: '2016-10-11'
+audit_date: '2018-10-16'
 title: Check running services on Linux
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2016-10-11'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-16'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-When you need to troubleshoot a network service, the first step is to ensure that the
-service is running.
+When you need to troubleshoot a network service, the first step is to ensure
+that the service is running.
 
-If the service has an init script installed, you can use the `service` command to start, stop,
-and check the status of the service. The service command references a service by using
-its init script, which is stored in the **/etc/init.d** directory for debain based distributions and the
-**etc/rc.d/init.d** directory for Red Hat based distributions. 
+If the service has an initialization (init) script installed, you can use the
+`service` command to start, stop, and check the status of the service. This
+command references a service by using its init script, which is stored in the
+`/etc/init.d` directory for Debian&reg;-based distributions and the
+`etc/rc.d/init.d` directory for Red Hat&reg;-based distributions.
 
-If you aren't sure what name the system uses for a service, check either directory by
-using the `ls` command followed by the directory. Some names vary depending on your
-distribution. For example, Apache is `httpd` on CentOS and `apache2` on Ubuntu.
+If you don't know the name that the system uses for a service, check either
+of the preceding directories by using the `ls` command followed by the
+directory name. Some names vary depending on your distribution. For example,
+Apache&reg; is `httpd` on CentOS&reg; and `apache2` on Ubuntu&reg;.
 
-**Note:** Many newer Linux distributions use systemd instead of netstat for checking services. If you are using systemd, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora [SysVinit to Systemmd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
+**Note**: Many newer Linux&reg; distributions use `systemd` instead of
+`netstat` to check services. If you're using `systemd`, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora&trade; [SysVinit to Systemd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Check the service status
 
 A service can have any of the following statuses:
 
 - `start`: The service has started.
-- `stop`: The service has stopped running
-- `restart`: The service is rebooting and will start after the process is complete
+- `stop`: The service has stopped running.
+- `restart`: The service is rebooting and will start after the process is
+  complete.
 
 The following example shows how to check the status of `httpd` on CentOS
-using the `service` command.
+by using the `service` command:
 
     $ sudo service httpd status
     httpd is stopped
 
 ### Start the service
 
-If a service isn't running, you can use the `service` command to start it.
+If a service isn't running, you can use the `service` command to start it. The
+following example starts the `httpd` service:
 
     $ sudo service httpd start
     Starting httpd:                                            [  OK  ]
 
 If the application can't be started, the system reports the
-failure and usually shows a message explaining the reason.
+failure and usually displays a message that indicates the cause of the problem.
 
     $ sudo service httpd start
     Starting httpd: (98)Address already in use: make_sock: could not bind to address [::]:80
@@ -58,12 +63,12 @@ failure and usually shows a message explaining the reason.
 
 ### Use netstat to find port conflicts
 
-In the  preceding example, `httpd` can't be started because something is
-already listening on the port. To find out what it is, you can run
-`netstat` commnand.
+In the preceding example, `httpd` can't be started because something is
+already listening on the port. To find out what's listening, you can run the
+`netstat` command.
 
-Run the following command to display a list of listening programs and the ports that
-they are using.
+Run the following command to display a list of listening programs and the
+ports that they're using:
 
     # netstat -plnt
     Active Internet connections (only servers)
@@ -73,23 +78,30 @@ they are using.
     tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      1115/master
     tcp        0      0 :::22                       :::*                        LISTEN      1051/sshd
 
-The output shows that the nc program (listed in the `Program name` column) is listening on
-port 80 (in the `Local Address` column). Stopping it should allow `httpd` to be started.
+The output shows that the `nc` program (which appears in the `Program name`
+column) is listening on port 80 (which appears in the `Local Address`
+column). Stopping this program should enable `httpd` to be started.
 
-**Note:** For more information about `netstat` command, see [Check listening ports with netstat](/how-to/checking-listening-ports-with-netstat)
+**Note**: For more information about the `netstat` command, see [Check listening ports with netstat](/how-to/checking-listening-ports-with-netstat).
 
 ### Check xinetd status
 
-If the service isn't running, it might be because a super-server, such as xinetd, is being
-used to launch the program when a connection is received. Starting the service might
-have resolved the issue. Run the following command to verify: 
+If the service isn't running, it might be because a superserver such as
+an Extended Internet Service Daemon (`xinetd`) is being used to launch the
+program when a connection is received. If this is the case, starting the
+service might have resolved the issue. Run the following command to verify
+that the issue is resolved:
 
     $ sudo service xinetd status
     xinetd (pid  8795) is running...
 
 ### Check logs
 
-If you can’t start your service, [look at your logs](https://community.rackspace.com/products/f/25/t/531) to see if they contain information about the issue. 
+If you can’t start your service, [review your
+logs](https://community.rackspace.com/products/f/25/t/531) to see if they
+contain information about the issue.
 
 ### Next steps
-Once you're sure the application is running, check [the server resources](/how-to/checking-system-load-on-linux) that your application is consuming. 
+After you're sure that the application is running, check the
+[server resources](/how-to/checking-system-load-on-linux) that
+your application is consuming.

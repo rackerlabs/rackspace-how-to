@@ -11,7 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the architecture of General Purpose Cloud Servers and I/O-optimized
+In the architecture of general purpose Cloud Servers and I/O-optimized
 servers, you may change the size of your local system storage space in
 one of two ways:
 

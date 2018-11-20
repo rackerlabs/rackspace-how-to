@@ -19,7 +19,7 @@ determining their mount points, and adding them to the system's `fstab` file.
 
 The following is a guide to preparing data disks efficiently for standalone use. To configure 
 two data disks in a software RAID, see 
-[Configuring a software RAID on a Linux General Purpose Cloud Server](/how-to/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
+[Configuring a software RAID on a Linux general purpose Cloud Server](/how-to/configuring-a-software-raid-on-a-linux-general-purpose-cloud-server).
 
 1. List the volumes attached to your server by running the `fdisk` command.
 

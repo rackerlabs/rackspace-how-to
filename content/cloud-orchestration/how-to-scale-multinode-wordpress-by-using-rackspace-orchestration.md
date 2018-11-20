@@ -5,8 +5,8 @@ title: Scale a multinode WordPress stack by using Rackspace Orchestration
 type: article
 created_date: '2013-11-12'
 created_by: Rackspace Support
-last_modified_date: '2017-01-19'
-last_modified_by: Laura Santamaria
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
@@ -17,37 +17,43 @@ This article provides instructions for adding a new server, or node, to scale a 
 
 ### Create the server
 
-1. Log in to [the Cloud Control Panel](https://mycloud.rackspace.com).
+Use the following steps to create the server:
 
-2. In the top navigation bar, click **Orchestration > Stacks**.
+1. Log in to [the Cloud Control Panel](https://login.rackspace.com).
 
-3. On the Stacks page, click the name of the stack to scale.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-4. In the Infrastructure section of the stack details page, click the name of the first web server (`web01`) to load the cloud server details page.
+3. Click **Orchestration > Stacks**.
 
-5. In the server details page, go to the **Actions** menu, and select **Create Image**.
+4. On the Stacks page, click the name of the stack to scale.
 
-6. When prompted, enter a name for the image, and click **Create Image**.
+5. In the Infrastructure section of the stack details page, click the name of the first web server (`web01`) to load the cloud server details page.
 
-7. To monitor the image creation progress, click **View Images** in the Images section of the server details page.
+6. In the server details page, go to the **Actions** menu, and select **Create Image**.
+
+7. When prompted, enter a name for the image, and click **Create Image**.
+
+8. To monitor the image creation progress, click **View Images** in the Images section of the server details page.
 
    After the image is created, the image name and its creation time stamp are displayed.
 
-8. Click the gear icon next to the name of the new image, and select **Create Server with Image** from the menu.
+9. Click the gear icon next to the name of the new image, and select **Create Server with Image** from the menu.
 
     <img src="{% asset_path cloud-orchestration/how-to-scale-multinode-wordpress-by-using-rackspace-orchestration/cpviewimage.png %}" width="600" alt="" border="1"  />
 
-9. On the server creation page, enter a name for the new server, and select the region where it will be created.
+10. On the server creation page, enter a name for the new server, and select the region where it will be created.
 
     We recommend following the stack naming convention (for example, **web02.example.com**) and creating the new server in the same region as the other nodes in the stack.
 
-10. In the Image section of the page, select the newly created image.
+11. In the Image section of the page, select the newly created image.
 
-11. Select a size for the new server, then click **Create Server** at the bottom of the page.
+12. Select a size for the new server, then click **Create Server** at the bottom of the page.
 
 ### Prepare the new server
 
 After the server is created and active, you need to make a few adjustments before it is ready to be used by WordPress.
+
+Use the following steps to prepare the new server:
 
 1. From the server details page, note the ServiceNet IP address of the new server. You will need this information in a later step.
 
@@ -111,7 +117,7 @@ After the server is created and active, you need to make a few adjustments befor
           rsyncOps = {"-rlpgoDvz", "-e", "/usr/bin/ssh -i /var/www/vhosts/iloveblog.rackspace.com/.ssh/id_rsa.lsyncd -o StrictHostKeyChecking = no"}
         }
 
-8. When you are finished, press `Ctrl-o` and `Enter` to write the changes, and then press `Ctrl+x` to exit `nano`.
+8. When you're finished, press `Ctrl-o` and `Enter` to write the changes, and then press `Ctrl+x` to exit `nano`.
 
 9. Now that the configuration is updated, restart `lsyncd`.
 
@@ -153,9 +159,9 @@ After the server is created and active, you need to make a few adjustments befor
 
 ### Add the new server to the load balancer
 
-After you have confirmed that the new server is receiving content, you can add it to the stack load balancer.
+After you have confirmed that the new server is receiving content, you can add it to the stack load balancer by using the following steps:
 
-1. Go back to the Orchestrations page in the [Cloud Control Panel](https://mycloud.rackspace.com), and select your stack again.
+1. Go back to the Orchestrations page in the [Cloud Control Panel](https://login.rackspace.com) and select your stack again.
 
 2. In the Infrastructure list, click the link for your stack's load balancer.
 

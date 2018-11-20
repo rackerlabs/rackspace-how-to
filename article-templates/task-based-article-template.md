@@ -37,13 +37,14 @@ Provide a descriptive heading for this section that begins with an imperative ve
 
 List steps in numbered order and limit each step to a single action. You can add additional information related to a step in an indented paragraph. For example:
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
-2. At the top of the panel, select **Databases > MySQL Instance**.
-3. In the **Identity** section, provide a name for the instance and specify the region in which you want to launch the HA instances that you create.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. At the top of the panel, select **Databases > MySQL Instance**.
+4. In the **Identity** section, provide a name for the instance and specify the region in which you want to launch the HA instances that you create.
 
    The name that you specify and an index (such as -01, -02) are used to create all the instances names, starting with the master index.
 
-3. Create more steps as needed.
+5. Create more steps as needed.
 
        To display code in a block, indent code samples by four spaces in regular text and increase the indent as necessary in lists (as shown here).
 

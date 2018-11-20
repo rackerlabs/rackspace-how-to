@@ -5,7 +5,7 @@ title: Export email address data from Outlook 2016 for Windows
 type: article
 created_date: '2017-09-04'
 created_by: William Loy
-last_modified_date: '2018-05-10'
+last_modified_date: '2018-11-15'
 last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
@@ -39,9 +39,9 @@ If you need to export or import email address data from a different Outlook vers
 
    <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2016-for-windows/export2016.png %}" />
 
-   The Import and Export Wizard launches.
+   The Import and Export wizard launches.
 
-4. In the Import and Export Wizard, click **Export to a file**, and then click **Next**.
+4. In the Import and Export wizard, click **Export to a file**, and then click **Next**.
 
    <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2016-for-windows/export_to_file2016.png %}" />
 
@@ -55,11 +55,11 @@ If you need to export or import email address data from a different Outlook vers
 
    <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2016-for-windows/export_folder_list2016.png %}" />
 
-7. Click **Browse**, and then select the location where you want to save the **.pst** file.
+7. Click **Browse** and then select the location where you want to save the **.pst** file.
 
-   **Note:** Ssave the file somewhere that you can easily locate for later use, such as the Desktop.
+   **Note:** Save the file somewhere that you can easily locate for later use, such as the Desktop.
 
-8. In the File Name box, type the name that you want to use for the new **.pst** file, and then click **OK**.
+8. In the **File Name** box, type the name that you want to use for the new **.pst** file and click **OK**.
 
    **Note:** You might be prompted to enter a password. This is optional and you can click **OK** to skip it.
 

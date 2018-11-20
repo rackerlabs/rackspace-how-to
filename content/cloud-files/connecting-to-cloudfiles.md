@@ -5,13 +5,13 @@ title: Connecting to Cloud Files
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-04-18'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
 
-Rackspace Cloud Servers can connect to Cloud Files without
+Rackspace Cloud Servers can connect to Cloud Files without accruing
 bandwidth charges when the server and the Cloud Files account are in the
 same data center. This connection is made by using the internal IP
 address that your server comes with on the internal Rackspace network,
@@ -31,9 +31,9 @@ storage.
 You can locate your Cloud Server data center in the following
 ways:
 
--   [Cloud Control Panel](https://mycloud.rackspace.com/) - On the
-    main Cloud Files page in the Control Panel, locate your Cloud Files
+-   **[Cloud Control Panel](https://login.rackspace.com/)**: On the
+    main Cloud Files page in the Cloud Control Panel, locate your Cloud Files
     data center in the **Region** column.
--   Through the API - Your Cloud Files data center is located in
+-   **Through the API**: Your Cloud Files data center is located in
     the storage URL that is returned when you authenticate to
     Cloud Files. For more information, see [Retrieving the Authentication Token](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-getting-started/authenticate).

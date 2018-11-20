@@ -1,38 +1,36 @@
 ---
 permalink: dovecot-installation-and-configuration-on-centos/
-audit_date:
-title: Dovecot installation and configuration on CentOS
+audit_date: '2018-10-17'
+title: Install and configure Dovecot on CentOS
 type: article
 created_date: '2012-08-15'
 created_by: Lee Jelley
-last_modified_date: '2016-06-22'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-29'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If you've installed Postfix to operate as the SMTP service on a would-be
-email server you might still need a way to retrieve the incoming mail
-from your server.
+If you have installed the [Postfix](http://www.postfix.org) mail server to
+operate as the Simple Mail Transfer Protocol (SMTP) service on an
+email server, you might still need a way to retrieve the incoming mail
+from the server.
 
-This article shows how to install and configure Dovecot.
+This article shows you how to install and configure Dovecot, an
+open-source Internet Message Access Protocol (IMAP) and Post Office Protocol
+version 3 (POP3) server application designed specifically for Linux&reg; and
+UNIX&reg; operating systems. Dovecot retrieves emails from Postfix and
+delivers them to the relevant mailbox on the server.
 
-Dovecot is an open-source IMAP and POP3 server application which was
-designed specifically for Linux/Unix Operating Systems. Dovecot
-retrieves emails from Postfix and delivers them to the relevant mailbox
-on the server.
-
-You can get your mail through Dovecot using either of the POP3 or IMAP
-protocols.
+You can get your mail through Dovecot by using either the POP3 or the IMAP
+protocol.
 
 ### Prerequisites
 
--   Operating System and version: Linux - CentOS 6.0 and above.
--   Postfix installed.
--   Intended purpose for document: Basic installation and configuration
-    of Dovecot.
--   Target Audience: System Administrators, Mail
-    Administrators, Postmasters.
+You need the following operating system and software to use Dovecot:
+
+- A CentOS&reg; 6.0 or later Linux distribution
+- Postfix
 
 ### Install Dovecot
 
@@ -42,169 +40,175 @@ Download and install the Dovecot package by running the following command:
 
 ### Configure Dovecot
 
-After installing Dovecot, you need to configure the services in the configuration file at
-**/etc/dovecot/dovecot.conf**. This example uses `nano`, but you can use any text editor you want.
+After you install Dovecot, you need to configure the services in the
+configuration file at `/etc/dovecot/dovecot.conf`. This example uses
+the `nano` text editor, but you can use any text editor that you want.
 
-    $ sudo nano /etc/dovecot/dovecot.conf
+1. Use the following command to open the file in `nano`:
 
-The following lines will need to be uncommented in the **/etc/dovecot/dovecot.conf** file and, if necessary, changed
-to reflect your plans for the environment:
+       $ sudo nano /etc/dovecot/dovecot.conf
 
-    protocols = imap pop3
-    mail_location =  maildir:~/Maildir
+2. Uncomment the following lines in the file and, if necessary, change them to
+   reflect your plans for the environment:
 
--   `protocols` - Specifies the protocols that are available for
-    users to access their email.
--   `mail_location` - Specifies the format and the location of each
-    user's mailbox.
+       protocols = imap pop3
+       mail_location =  maildir:~/Maildir
 
-### Authentication process file
+    These lines contain the following parameters:
 
-Next you need to configure the authentication process file. This configuration file
-can be located at **/etc/dovecot/conf.d/10-auth.conf**. This example uses `nano`, but you can use any text editor you want.
+    - `protocols`: The protocols through which users can access their
+      email
+    - `mail_location`: The format and the location of each user's
+      mailbox
 
-    $ sudo nano /etc/dovecot/conf.d/10-auth.conf
+### Configure the authentication process file
 
-The following line will need to be uncommented in the **/etc/dovecot/conf.d/10-auth.conf** file and, if necessary, changed to reflect your plans for your environment:
+Next you need to configure the authentication process file,
+which is located at `/etc/dovecot/conf.d/10-auth.conf`.
 
-    auth_mechanisms = plain login
+1. Use the following command to open the file in `nano`:
 
-`auth_mechanisms` specifies the way in which the email client authenticates with Dovecot.
+       $ sudo nano /etc/dovecot/conf.d/10-auth.conf
 
-### Mail location
+2. Uncomment the following line in the file and, if necessary, change them to
+   reflect your plans for your environment:
 
-To set the location for your mail use the configuration file at
-**/etc/dovecot/conf.d/10-mail.conf**.
+       auth_mechanisms = plain login
 
-    sudo nano /etc/dovecot/conf.d/10-mail.conf
+    The `auth_mechanisms` parameter specifies the method that the email client
+    uses to authenticate with Dovecot.
 
-Either add or uncomment the line below in the configuration file.
+### Configure the mail location
 
-    mail_location = maildir:~/Maildir
+You can set the location for your mail by editing the configuration file at
+`/etc/dovecot/conf.d/10-mail.conf`.
 
-### Postfix smtp-auth
+1. Use the following command to open the file in `nano`:
 
-Next change the configuration file to configure the unix socket for
-postfix smtp-auth. This can be found at
-**/etc/dovecot/conf.d/10-master.conf**
+       sudo nano /etc/dovecot/conf.d/10-mail.conf
 
-    sudo nano /etc/dovecot/conf.d/10-master.conf
+2. Either add or uncomment the following line in the configuration file:
 
-Comment out the following lines first.
+       mail_location = maildir:~/Maildir
 
-    #unix_listener auth-userdb {
-        #mode = 0600
-        #user =
-        #group =
-      #}
+### Configure Postfix SMTP authentication
 
-Now edit these lines in the same file.
+Next you need to configure the UNIX socket for Postfix SMTP
+authentication (SMTP AUTH). The file that you need to change is located at
+`/etc/dovecot/conf.d/10-master.conf`.
 
-    # Postfix smtp-auth
-      unix_listener /var/spool/postfix/private/auth {
-        mode = 0666
-        user = postfix
-        group = postfix
-      }
+1. Use the following command to open the file in `nano`:
 
-### POP3 configuration
+       sudo nano /etc/dovecot/conf.d/10-master.conf
 
-Finally we need to configure the **pop3.conf** file. This will allow some
-older or lesser-used email clients to connect and transmit correctly. This file can be found at **/etc/dovecot/conf.d/20-pop3.conf**.
+2. Comment out the following lines:
 
-    sudo nano /etc/dovecot/conf.d/20-pop3.conf
+        #unix_listener auth-userdb {
+            #mode = 0600
+            #user =
+            #group =
+          #}
 
-We will now need to uncomment or add the following lines.
+3. In the same file, edit the following lines:
 
-    pop3_uidl_format = %08Xu%08Xv
-    pop3_client_workarounds = outlook-no-nuls oe-ns-eoh
+        # Postfix smtp-auth
+          unix_listener /var/spool/postfix/private/auth {
+            mode = 0666
+            user = postfix
+            group = postfix
+          }
 
-### Creating a Mailbox
+### Configure POP3
 
-Now we'll add an example mailbox for a user Joe Bloggs (joe.bloggs) to
-send and receive emails.
+Finally, configure the `/etc/dovecot/conf.d/20-pop3.conf` file, which enables
+older and less popular email clients to connect and transmit messages
+correctly.
 
-You may need to create a user for this example, or you can use an
-existing user. To make a new one:
+1. Use the following command to open this file in `nano`:
 
-    sudo useradd joe.bloggs
+       sudo nano /etc/dovecot/conf.d/20-pop3.conf
 
-You'll need to create the mail directory for your user.
+2. Uncomment or add the following lines:
 
-    sudo mkdir /home/joe.bloggs/Maildir
+       pop3_uidl_format = %08Xu%08Xv
+       pop3_client_workarounds = outlook-no-nuls oe-ns-eoh
 
-Next we need to give joe.bloggs ownership of the mailbox we have just
-created by changing its permissions.
+### Create a mailbox
 
-    sudo chown joe.bloggs:joe.bloggs /home/joe.bloggs/Maildir
-    sudo chmod -R 700 /home/joe.bloggs/Maildir
+The example in this section adds a mailbox that a hypothetical user named Joe
+Bloggs (joe.bloggs) can use to send and receive emails.
 
-### Starting Dovecot
+You can create a user for this example, or you can use an existing user.
 
-Once we have finished the mailbox creation we will need to make sure the
-Dovecot application will be run with the server upon restart. We'll use
-the `chkconfig` command for that purpose.
+1. If necessary, use the following command to make a new user:
 
-    sudo chkconfig --level 345 dovecot on
+       sudo useradd joe.bloggs
 
-The final step for Dovecot to be completed is to start the service.
+2. Use the following command to create the mail directory for your user:
 
-    sudo service dovecot start
+       sudo mkdir /home/joe.bloggs/Maildir
 
-Dovecot should now be up and running.
+3. Give ownership of the mailbox that you just created to joe.bloggs by
+   changing its permissions:
 
-### Postfix Configuration
+       sudo chown joe.bloggs:joe.bloggs /home/joe.bloggs/Maildir
+       sudo chmod -R 700 /home/joe.bloggs/Maildir
 
-We now need to go over to the Postfix directories and make the following
-changes in our **main.cf** file. The reason for this final piece is so
-that we can allow our email client to connect to our newly built SMTP
-server.
+### Start Dovecot
 
-Please take a moment to navigate over to **/etc/postfix/main.cf** and open
-it with your chosen text editor.
+Use the following steps to start the Dovecot service:
 
-    sudo nano /etc/postfix/main.cf
+1. Use the following `chkconfig` command to verify that the Dovecot
+   application will run when the server is restarted:
 
-Now we should add the following lines.
+       sudo chkconfig --level 345 dovecot on
 
-    smtpd_sasl_auth_enable = yes
-    smtpd_sasl_security_options = noanonymous
-    smtpd_sasl_local_domain = $myhostname
-    smtpd_recipient_restrictions = permit_sasl_authenticated,permit_mynetworks, reject_unauth_destination
-    broken_sasl_auth_clients = yes
-    smtpd_sasl_type = dovecot
-    smtpd_sasl_path = private/auth
+2. Use the following command to start the Dovecot service:
 
-Once you have added the above lines you can exit the **main.cf** file and
-restart the Postfix service.
+       sudo service dovecot start
 
-    sudo service postfix restart
+### Configure Postfix
 
-### Iptables port additions
+Next, you need to configure Postfix to enable your email client to connect to
+your new SMTP server.
 
-Now that we have enabled secure SMTP 'SSL' we should allow connections
-to port 587 by opening the port in iptables for our server.  Add the
-rule for this port by entering the following command:
+1. Use the following command to open the file at `/etc/postfix/main.cf` in
+   `nano`:
 
-    sudo iptables -I INPUT 2 -p tcp --dport 587 -j ACCEPT
+       sudo nano /etc/postfix/main.cf
 
-After adding the SSL SMTP port we should also add the POP and IMAP ports
-along with their secure counterparts.
+2. Add the following lines to the file:
 
-    sudo iptables -I INPUT 3 -p tcp --dport 110 -j ACCEPT
-    sudo iptables -I INPUT 4 -p tcp --dport 143 -j ACCEPT
-    sudo iptables -I INPUT 5 -p tcp --dport 993 -j ACCEPT
-    sudo iptables -I INPUT 6 -p tcp --dport 995 -j ACCEPT
+        smtpd_sasl_auth_enable = yes
+        smtpd_sasl_security_options = noanonymous
+        smtpd_sasl_local_domain = $myhostname
+        smtpd_recipient_restrictions = permit_sasl_authenticated,permit_mynetworks, reject_unauth_destination
+        broken_sasl_auth_clients = yes
+        smtpd_sasl_type = dovecot
+        smtpd_sasl_path = private/auth
 
-Once these lines have been added we should save the iptables rules and
-restart iptables.
+3. After you have added the preceding lines, exit the **main.cf** file and
+   restart the Postfix service by using the following command:
 
-    sudo /etc/init.d/iptables save
-    sudo /etc/init.d/iptables restart
+       sudo service postfix restart
 
-### Summary
+### Add ports to iptables
 
-In this guide you've learned to configure and install a basic Dovecot
-setup. The steps you have covered today should have given you a solid
-foundation of a basic Dovecot install and configuration. From here you
-can explore the Dovecot package in more depth.
+Now that you have enabled secure SMTP Secure Sockets Layer (SSL), you should
+allow connections to port 587 by opening the port for your server in iptables.
+
+1. Add the rule for this port by entering the following command:
+
+       sudo iptables -I INPUT 2 -p tcp --dport 587 -j ACCEPT
+
+2. Add the POP and IMAP ports, as well as their secure counterparts:
+
+       sudo iptables -I INPUT 3 -p tcp --dport 110 -j ACCEPT
+       sudo iptables -I INPUT 4 -p tcp --dport 143 -j ACCEPT
+       sudo iptables -I INPUT 5 -p tcp --dport 993 -j ACCEPT
+       sudo iptables -I INPUT 6 -p tcp --dport 995 -j ACCEPT
+
+3. Use the following commands to save the iptables rules and restart iptables:
+
+       sudo /etc/init.d/iptables save
+      sudo /etc/init.d/iptables restart

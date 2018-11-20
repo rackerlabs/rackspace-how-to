@@ -5,37 +5,42 @@ title: Deploy WordPress by using Rackspace Cloud Orchestration
 type: article
 created_date: '2013-11-12'
 created_by: Rackspace Support
-last_modified_date: '2017-11-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
 
 Rackspace Cloud Orchestration simplifies the process of creating a
 WordPress environment, either as a stand-alone server or
-in a multiple-server cluster. This article shows how to deploy WordPress
+in a multiple-server cluster. This article shows you how to deploy WordPress
 by using Cloud Orchestration.
 
 ### Deploy the servers
 
-1. Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
+Use the following steps to deploy the servers:
 
-2. In the top navigation bar, click **Orchestration**, and under Create Resources, click **Stack**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-3. At the bottom of the **All Stacks** list, hover over the description for the WordPress template and click **Create Stack**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-4. Select the flavor (Production or Deployment), and then click **Create Stack** again.
+3. Click **Orchestration**.
 
-6. On the Create Stack page, specify a name and region for your stack.
+4. Under the Create Resources section of the drop-down menu, click **Stack**.
 
-7. Specify server and WordPress settings.
+5. At the bottom of the **All Stacks** list, hover over the description for the WordPress template and click **Create Stack**.
 
-8. Under Advanced Options, if required, enter database and server details.
+6. Select the flavor (Production or Deployment), and then click **Create Stack** again.
 
-9. Click **Create Stack**.
+7. On the Create Stack page, specify a name and region for your stack.
 
-On the stack details page, a green **Up** status in the Status field indicates when the stack is active.
-The stack build process might take several minutes to finish.
+8. Specify server and WordPress settings.
+
+9. Under Advanced Options, if required, enter database and server details.
+
+10. Click **Create Stack**.
+
+On the stack details page, a green **Up** status in the Status field indicates when the stack is active. The stack build process might take several minutes to finish.
 
 ### Access the servers
 

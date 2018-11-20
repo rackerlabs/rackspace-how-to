@@ -5,20 +5,20 @@ title: Content Caching for Cloud Load Balancers
 type: article
 created_date: '2012-05-21'
 created_by: Rackspace Support
-last_modified_date: '2016-04-20'
-last_modified_by: Mike Asthalter
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
 
 The Cloud Load Balancers product has a Content Caching feature that
-stores recently-accessed files on the load balancer for easy retrieval
-by web clients.
+stores recently-accessed files on the load balancer so that web clients can
+easily retrieve them.
 
 ### Enable content caching
 
-Content caching can be enabled through our [Cloud Load Balancers API](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/) or
-the [Cloud Control Panel](https://mycloud.rackspace.com).
+You can enable content caching through the [Cloud Load Balancers
+API](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/) or the [Cloud Control Panel](https://login.rackspace.com).
 
 Content caching can be enabled or disabled for a load balancer in the
 Cloud Control Panel by going to its details screen, scrolling down to

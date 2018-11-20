@@ -1,27 +1,28 @@
 ---
 permalink: connecting-to-linux-from-mac-os-x-by-using-terminal/
-audit_date: '2018-10-02'
+audit_date: '2018-10-26'
 title: Connect to Linux from Mac OS X by using Terminal
 type: article
 created_date: '2011-10-06'
 created_by: Rose Contreras
-last_modified_date: '2018-10-02'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-26'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If you use Mac OS&reg; X, you don't need to install a third-party client like
+If you use MacOS&reg; X, you don't need to install a third-party client like
 PuTTY to connect to your cloud server by using Secure Shell (SSH). Terminal is
-a terminal emulation program included with Mac OS X that you can use
+a terminal emulation program included with MacOS X that you can use
 to run SSH.
 
-**Note**: For the corresponding steps for an OnMetal server, see [Create OnMetal Cloud Servers](/how-to/create-onmetal-cloud-servers).
+**Note**: For the corresponding steps for an OnMetal server, see
+[Create OnMetal Cloud Servers](/how-to/create-onmetal-cloud-servers).
 
 ### Connect to the server
 
-These instructions are for users who are connecting to a new cloud
-server for the first time. If you're connecting as a non-root user,
+These instructions are for users who are connecting to a new Cloud
+Server for the first time. If you're connecting as a non-root user,
 replace *root* in the instructions with your username.
 
 1.  Go to **Applications > Utilities**, and then open **Terminal**.
@@ -86,5 +87,5 @@ Use the new password with the root user when you connect to your server.
 ### Next steps
 
 The next article shows you how to use [Rescue Mode](/how-to/rescue-mode)
-to connect to your cloud server. Rescue Mode is useful when you're
+to connect to your Cloud Server. Rescue Mode is useful when you're
 troubleshooting and when your server becomes unresponsive.

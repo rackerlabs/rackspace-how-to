@@ -5,8 +5,8 @@ title: Back up data with Cloud Files
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-04-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -14,8 +14,8 @@ product_url: cloud-files
 Follow the steps in this article to set up your own data backup to your Cloud
 Files service.
 
-**Note:** If you would like for us to provide Cloud Backup as a service,
-see <http://www.rackspace.com/cloud/backup> for information.
+**Note:** For information about Cloud Backup as a service,
+see <http://www.rackspace.com/cloud/backup>.
 
 ### Prepare to back up
 
@@ -36,19 +36,23 @@ steps to prepare your data:
 
 ### Back up your data
 
-1.  Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+Use the following steps to back up your data:
 
-2.  At the top of the window, click **Storage > Files**.
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-3.  On the Cloud Files page, click **Create Container**.
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-4.  In the popup dialog box, name the new container, select the region
+3.  At the top of the window, click **Storage > Files**.
+
+4.  On the Cloud Files page, click **Create Container**.
+
+5.  In the popup dialog box, name the new container, select the region
     and type, and then click **Create Container**.
 
     For more information about selecting a region for your backup files,
     see [Multi-region support in Cloud Files](/how-to/multi-region-support-in-cloud-files).
 
-5.  *(Optional)* If you want to create a folder to group your uploaded
+6.  *(Optional)* If you want to create a folder to group your uploaded
     files, perform the following steps:
 
     1.  On the Containers page, click **Create Folder**.
@@ -59,7 +63,7 @@ steps to prepare your data:
     3.  To add files in the folder, click the folder name to open the
         folder before completing the following step.
 
-6.  Individually upload the backup data files that you created in step 2
+7.  Individually upload the backup data files that you created in step 2
     of the Prepare to back up section to the container, as follows:
 
     1.  On the Containers page, click **Upload Files**.

@@ -5,7 +5,7 @@ title: Configure W3 Total Cache for WordPress with Rackspace CDN
 type: article
 created_date: '2017-01-31'
 created_by: Brian Huan
-last_modified_date: '2017-02-23'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -47,18 +47,17 @@ A WordPress website and database
 
 ### Set up a Rackspace CDN service
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-
-2. In the top navigation bar, click **Networking > CDN**.
-
-3. On the Content Delivery Network (CDN) page, click **Create Service** and complete the following information:
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Click **Networking > CDN**.
+4. On the Content Delivery Network (CDN) page, click **Create Service** and complete the following information:
 
    - **Service Name**: Specify a name that helps you identify this site.
    - **Choose Traffic Type**: Select **HTTP**.
    - **Domain Name**: Enter the subdomain where W3 Total Cache will send your static assets.
    - **Origin**: Specify a subdomain from which Rackspace CDN will fetch a copy of the original data before caching it. This can also be the IP address of your server or load balancer.
 
-4. Click **Create Service**.
+5. Click **Create Service**.
 
    <img src="{% asset_path rackspace-cdn/configure-w3-total-cache-for-origin-pull-rackspace-cdn/configure-w3-mycloud-Setup-Origin-CDN.png %}" alt="fill in the information to create a new service" />
 

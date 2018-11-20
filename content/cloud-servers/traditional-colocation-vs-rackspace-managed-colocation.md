@@ -5,8 +5,8 @@ title: Traditional colocation vs. Rackspace Managed Colocation
 type: article
 created_date: '2011-03-24'
 created_by: Rackspace Support
-last_modified_date: '2017-11-30'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-26'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -84,8 +84,8 @@ Managed Colocation from Rackspace supplies:
 -   Complete infrastructure and supply chain management
 -   Implementation and deployment capabilities
 -   Full customer remote management - customers don't need physical
-    proximity to the datacenter but can still access even international
-    datacenters
+    proximity to the data center but can still access even international
+    data centers
 
 Optional services include management options for [Managed Backup](https://www.rackspace.com/vmware),
 [Managed Private Clouds](http://www.rackspace.com/managed_hosting/private_cloud/index.php)

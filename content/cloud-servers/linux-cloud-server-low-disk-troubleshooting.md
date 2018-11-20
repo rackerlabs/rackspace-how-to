@@ -5,8 +5,8 @@ title: Troubleshooting low disk space for a Linux cloud server
 type: article
 created_date: '2018-08-21'
 created_by: Kate Dougherty
-last_modified_date: '2018-08-23'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-26'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -40,7 +40,7 @@ X](https://support.rackspace.com/how-to/connecting-to-a-server-using-ssh-on-linu
 
 Check your open support tickets for information about any incidents that might
 be affecting the service. To check your open support tickets, log in to the
-[Cloud Control Panel](https://mycloud.rackspace.com/) and click **Tickets >
+[Cloud Control Panel](https://login.rackspace.com/) and click **Tickets >
 Ticket List** in the top navigation bar.
 
 ### Determine the amount of disk space
@@ -184,7 +184,7 @@ Make a note of the amount of free space.
 
 If you follow these troubleshooting steps and disk space is still low,
 contact the Rackspace Support team by creating a support ticket. Log in to the
-[Cloud Control Panel](https://mycloud.rackspace.com/) and click **Tickets >
+[Cloud Control Panel](https://login.rackspace.com/) and click **Tickets >
 Create Ticket** in the top navigation bar.
 
 To expedite the issue, include all of the troubleshooting steps that you have

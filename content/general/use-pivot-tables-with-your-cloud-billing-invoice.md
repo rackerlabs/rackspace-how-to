@@ -5,10 +5,10 @@ title: Use pivot tables with your Cloud billing invoice
 type: article
 created_date: '2015-03-24'
 created_by: David Hendler
-last_modified_date: '2018-02-13'
-last_modified_by: Cat Lookabaugh
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
+product: undefined
+product_url: undefined
 ---
 
 You can use a comma-separated-values (CSV) invoice to filter and manipulate your Rackspace
@@ -37,18 +37,18 @@ Use the following steps to view billing data in pivot tables:
     **Note:** The following steps use the current version of Microsoft Excel on Windows &reg; or Mac &reg; OSX &reg;.
     If you are using a different spreadsheet application version or a different OS,
     adjust your steps accordingly.
-    
+
 2.  Log in to the portal.
 
-      a.  **Dedicated account customers**: Log in to the [MyRackspace customer portal](https://my.rackspace.com/).
+      a.  **Dedicated account customers**: Log in to the [MyRackspace customer portal](https://login.rackspace.com/).
 
-      b.  **Cloud customers**: Log in to the [Cloud Control Panel](https://mycloud.rackspace.com).
-      
-3.  Click **Billing** in top right corner of portal.
-4.  Click **Billing History** > **Invoice Details**.
+      b.  **Cloud customers**: Log in to the [Cloud Control Panel](https://login.rackspace.com).
+
+3.  In the top navigation bar, click **Billing**.
+4.  Click **Billing History > Invoice Details**.
 5.  On the **Invoice Details** page, click the CSV link, and export the CSV invoice file.
 6.  Open Microsoft Excel, and create a new workbook. Do not open the CSV invoice file.
-7.  In the new workbook, click **Data** > **From Text/CSV**.
+7.  In the new workbook, click **Data > From Text/CSV**.
 
     <img src="{% asset_path general/use-pivot-tables-with-your-cloud-billing-invoice/step2.png %}" width="314" height="268" />
 
@@ -69,7 +69,7 @@ value), change the file origin to **Unicode (UTF-8)**, and click **Load**.
 
 11. Copy the data to your clipboard.
 12. Open the spreadsheet file that you downloaded in step 1.
-13. Paste the CSV data into the **Invoice CSV Data** worksheet. 
+13. Paste the CSV data into the **Invoice CSV Data** worksheet.
 
     **Note:** Ensure that you select the A1 cell when you paste.
 

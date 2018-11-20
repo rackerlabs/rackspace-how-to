@@ -1,12 +1,12 @@
 ---
-permalink: myrackspace-username-updates/
-audit_date: '2018-09-24'
-title: MyRackspace username updates
+permalink: myrackspace-login-and-username-updates/
+audit_date: '2018-10-19'
+title: MyRackspace login and username updates
 type: article
 created_date: '2018-09-25'
 created_by: Richard Goodwin
-last_modified_date: '2018-09-25'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-19'
+last_modified_by: Cat Lookabaugh
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -18,8 +18,7 @@ possible, and you've told us that the best way to do this is to unify the
 way that you access and manage your accounts. We're working to make account
 management seamless by unifying our login experience. This process will
 involve multiple updates over the coming months as we build towards a single
-solution. The first step in this journey is to ensure that your username
-meets the Rackspace uniqueness requirements.
+solution. The first step in this journey was to ensure that your username meets the Rackspace uniqueness requirements by September 24, 2018.  The next step on this journey is unifying our login portals which simplifies the login process for My.Rackspace.com users starting on October 18, 2018.  
 
 Over the past several months, many of our customers were notified that
 they would need to update their usernames by September 24, 2018 in order to
@@ -41,9 +40,7 @@ The following example illustrates how Rackspace has created new usernames:
 
 ### MyRackspace login process
 
-After your username has been updated either by you or Rackspace, you can
-continue to log in to the MyRackspace portal at
-[https://my.rackspace.com](https://my.rackspace.com).
+Beginning on October 18, 2018, Managed Hosting users can access their accounts at our unified login portal [https://login.rackspace.com](https://login.rackspace.com) or at the existing portal [https://My.Rackspace.com](https://My.Rackspace.com). No matter which portal you select, Managed Hosting users will no longer need to enter their account number as part of the login process. To login into your Managed Hosting portal, users should just enter their username and password.
 
 ### Frequently asked questions
 

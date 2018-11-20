@@ -5,8 +5,8 @@ title: Managed Operations FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2018-04-26'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -102,7 +102,7 @@ or **NoSQL**), and click the **Pricing** tab.
 #### How do I contact the Managed Operations team?
 
 You can contact the Managed Operations team by logging in to the [Cloud
-Control Panel](https://mycloud.rackspace.com/) and submitting a ticket or chat
+Control Panel](https://login.rackspace.com/) and submitting a ticket or chat
 request, or by calling 1 800 961 4454.
 
 ------------------------------------------------------------------------

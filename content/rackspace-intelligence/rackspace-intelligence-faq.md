@@ -5,7 +5,7 @@ title: Rackspace Intelligence FAQ
 type: article
 created_date: '2015-05-15'
 created_by: Constanze Kratel
-last_modified_date: '2016-01-20'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
@@ -56,7 +56,7 @@ and log in by providing the username and password for your Rackspace
 Cloud account.
 
 Alternatively, if you already logged in to the [Cloud Control
-Panel](https://mycloud.rackspace.com), you can click the **Servers**
+Panel](https://login.rackspace.com), you can click the **Servers**
 menu and then click **Rackspace Intelligence**. A new browser tab
 displays the Rackspace Intelligence portal.
 

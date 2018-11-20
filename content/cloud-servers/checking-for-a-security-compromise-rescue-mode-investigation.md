@@ -1,40 +1,56 @@
 ---
 permalink: check-for-a-security-compromise-rescue-mode-investigation/
-audit_date: '2018-08-31'
+audit_date: '2018-10-26'
 title: 'Check for a security compromise: Rescue mode investigation'
 type: article
 created_date: '2013-04-26'
 created_by: Rose Contreras
-last_modified_date: '2018-08-31'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-10-26'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the article, [Checking for a security compromise: Back doors and intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
-you learned some basic techniques for collecting the information needed to intruders who have compromised your server. This article describes how to use the [Cloud Control Panel's](https://mycloud.rackspace.com/) *Rescue Mode* to take a closer look at your system. You can use rescue mode to better understand how your server was compromised and to identify non-compromised files before backing up the data.
+In the article [Check for a security compromise: Back doors and intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
+you learned some basic techniques for collecting the information needed to
+identify intruders who have compromised your server. This article describes how
+to use the [Cloud Control Panel's](https://login.rackspace.com/) *Rescue Mode*
+to take a closer look at your system. You can use rescue mode to better understand
+how your server was compromised and to identify non-compromised files before
+backing up the data.
 
 ### Activate rescue mode
 
-Because your cloud server's operating system might also be compromised, you cannot rely on it. The intruder could have compromised binaries such as 'ls,' 'find,' and 'netstat,' so their output could mislead you.
-Consequently, you must use a different operating system environment to
-safely investigate the compromise. You can do this by using the rescue mode feature provided in the [Cloud Control Panel](https://mycloud.rackspace.com/). For instructions and more information, see [Rackspace Cloud Essentials - Rescue Mode on Linux Cloud Servers](/how-to/rackspace-cloud-essentials-rescue-mode-on-linux-cloud-servers).
+Because your Cloud Server's operating system might also be compromised, you
+cannot rely on it. The intruder could have compromised binaries such as 'ls,'
+'find,' and 'netstat,' so their output could mislead you. Consequently, you
+must use a different operating system environment to safely investigate the
+compromise.
 
-While your server is in rescue mode, you can perform the following actions to locate the source of the compromise.
+You can do this by using the rescue mode feature provided in the
+[Cloud Control Panel](https://login.rackspace.com/). For instructions and more
+information, see [Rescue Mode](/how-to/rescue-mode/).
+
+While your server is in rescue mode, you can perform the following actions to
+locate the source of the compromise.
 
 ### Scan for rootkits
 
-We recommend that you install and use the following tools to scan your system for rootkits.
+We recommend that you install and use the following tools to scan your system
+for rootkits.
 
 #### Scan for rootkits with chkrootkit
 
-`chkrootkit` looks for known signatures in compromised binary systems. For example, some compromised versions of `ps` have "`/dev/ptyp`" inside them. We recommend installing `chkrootkit` by using your package manager rather than compiling from source.
+`chkrootkit` looks for known signatures in compromised binary systems. For
+example, some compromised versions of `ps` have "`/dev/ptyp`" inside them. We
+recommend installing `chkrootkit` by using your package manager rather than
+compiling from source.
 
 1. Run the following command:
 
         apt-get install chkrootkit
 
-2. Run `chkrootkit` against the mounted file system of the cloud server:
+2. Run `chkrootkit` against the mounted file system of the Cloud Server:
 
         chkrootkit -r /mnt/demo
 
@@ -56,7 +72,9 @@ For more options and information on using `chkrootkit`, see <http://www.chkrootk
 
 #### Scan for rootkits with rkhunter
 
-Rootkit Hunter (`rkhunter`) checks systems against a database of known rootkits. It can also check other system files to make sure they are in line with expected properties and values.
+Rootkit Hunter (`rkhunter`) checks systems against a database of known rootkits.
+It can also check other system files to make sure they are in line with expected
+properties and values.
 
 1. Log in to your terminal application and change to your `sources` directory:
 
@@ -70,16 +88,21 @@ Rootkit Hunter (`rkhunter`) checks systems against a database of known rootkits.
 
         rkhunter -c -r /mnt/demo
 
-`rkhunter` produces warnings during the tests that indicate where a file has deviated from expected defaults. Following the test, you can check the log to see more detailed information about which files produced the warning.
-For more options and information on using `rkhunter`, see <http://rkhunter.cvs.sourceforge.net/viewvc/rkhunter/rkhunter/files/README>.
+`rkhunter` produces warnings during the tests that indicate where a file has
+deviated from expected defaults. Following the test, you can check the log to
+see more detailed information about which files produced the warning. For more
+options and information on using `rkhunter`, see <http://rkhunter.cvs.sourceforge.net/viewvc/rkhunter/rkhunter/files/README>.
 
 ### Check last commands
 
-To get an idea of how the cloud server security was breached, check which users ran commands before the cloud server was compromised.
+To get an idea of how the Cloud Server security was breached, check which users
+ran commands before the Cloud Server was compromised.
 
-The **.bashhistory** file contains the last commands used with the Bash shell. You need to check the **.bashhistory** files in each user's home directory. The most important **.bashhistory** file is the one belonging to root: **/root/.bashhistory**.
+The **.bashhistory** file contains the last commands used with the Bash shell.
+You need to check the **.bashhistory** files in each user's home directory. The
+most important **.bashhistory** file is the one belonging to root: **/root/.bashhistory**.
 
-A compromised cloud server might have entries like the following ones:
+A compromised Cloud Server might have entries like the following ones:
 
     wget http://malware.tar.gz
     gunzip malware.tar.gz
@@ -87,7 +110,9 @@ A compromised cloud server might have entries like the following ones:
 
 ### Check installed packages
 
-All changes to the packaging system are stored in **/var/log/dpkg.log** on Debian-based distributions. Check this file for any suspicious activity like installed or removed packages, or a modified bus.
+All changes to the packaging system are stored in **/var/log/dpkg.log** on
+Debian-based distributions. Check this file for any suspicious activity like
+installed or removed packages, or a modified bus.
 
 Run the following command to show the last 50 lines of the **dpkg.log** file:
 
@@ -95,7 +120,9 @@ Run the following command to show the last 50 lines of the **dpkg.log** file:
 
 ### Use the find command
 
-The `find` command is usually used to find filenames with specific patterns. However, you can also use it to find the files that were modified or accessed within a specific time period.
+The `find` command is usually used to find filenames with specific patterns.
+However, you can also use it to find the files that were modified or accessed
+within a specific time period.
 
 For example, you can find all files in **/etc** owned by root that have been
 modified within the last two days, as follows:
@@ -108,7 +135,12 @@ Available options are as follows:
     -ctime: when the file's permissions were last changed
     -mtime: when the file's data was last modified
 
-Note the  minus sign in front of '2' in the preceding example. The 'time' options for the `find` command are expressed in 24-hour increments, and the symbol used in front of the number can indicate *less than* or *greater than*. Thus '-2' means that you want to find files that were modified within the last two days. If you want to find files that were modified more than 2 days ago, use `+2`:
+Note the  minus sign in front of '2' in the preceding example. The 'time'
+options for the `find` command are expressed in 24-hour increments, and the
+symbol used in front of the number can indicate *less than* or *greater than*.
+Thus '-2' means that you want to find files that were modified within the last
+two days. If you want to find files that were modified more than 2 days ago,
+use `+2`:
 
     find /mnt/demo/etc -user root -mtime +2
 
@@ -121,13 +153,13 @@ measure time in minutes:
 
 #### Example
 
-Find all of the files in your cloud server owned by the `demo` user
+Find all of the files in your Cloud Server owned by the `demo` user
 that have been accessed within the last five minutes:
 
     find /mnt/demo -user demo -amin -5
 
-The following list of `find` command options might be useful while investigating the
-compromised cloud server investigation:
+The following list of `find` command options might be useful while investigating
+the compromised Cloud Server investigation:
 
     -nouser: shows output not associated with an existing userid
     -nogroup: shows output not associated with an existing groupid
@@ -137,17 +169,27 @@ compromised cloud server investigation:
 
 ### Check logs and suspicious files
 
-You can find an intruder by checking for suspicious files in **/tmp**, **/var/tmp**, **/dev/shm**, **/var/spool/samba**, **/var/spool/squid**, and **/var/spool/cron**.
+You can find an intruder by checking for suspicious files in **/tmp**,
+**/var/tmp**, **/dev/shm**, **/var/spool/samba**, **/var/spool/squid**, and
+**/var/spool/cron**.
 
-You can also look at log files in the **/var/log** directory. For example, **auth.log** records user login information, including IP addresses.
+You can also look at log files in the **/var/log** directory. For example,
+**auth.log** records user login information, including IP addresses.
 
 ### Summary
 
-In [Checking for a security compromise: Backdoors and Intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders), you learned some techniques to use to discover back doors and track intruders on your cloud server. This will help you to avoid the situation or
-mistake that led to the compromise, minimizing the chance of future compromises. In this article, you learned how to investigate your cloud server in rescue mode.
+In [Checking for a security compromise: Backdoors and Intruders](/how-to/check-for-a-security-compromise-back-doors-and-intruders),
+you learned some techniques to use to discover back doors and track intruders
+on your Cloud Server. This will help you to avoid the situation or mistake that
+led to the compromise, minimizing the chance of future compromises. In this
+article, you learned how to investigate your Cloud Server in rescue mode.
 
 Whether it is caused by viruses, file corruption, machine failure, or
-other unforeseen mishaps, the possibility of data loss is real. To avoid the disruption such a loss can cause, back up your files regularly. Following are some options to help you secure your files:
+other unforeseen mishaps, the possibility of data loss is real. To avoid the
+disruption such a loss can cause, back up your files regularly. Following are
+some options to help you secure your files:
 
--   [Rackspace Cloud Backup](http://www.rackspace.com/cloud/backup/) is a good choice for Cloud Servers customers. It is fully integrated with Cloud Servers, and is a file-based backup alternative to whole image server backup.
+-   [Rackspace Cloud Backup](http://www.rackspace.com/cloud/backup/) is a good
+choice for Cloud Servers customers. It is fully integrated with Cloud Servers,
+and is a file-based backup alternative to whole image server backup.
 -   For those who prefer to do it themselves, see [Back up your files with rsync](/how-to/backing-up-your-files-with-rsync/).

@@ -5,8 +5,8 @@ title: Getting started with Cloud Files streaming
 type: article
 created_date: '2016-02-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2016-02-10'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -17,14 +17,14 @@ first. They can begin viewing your content immediately and can jump
 around the video stream without needing to buffer.
 
 Because Rackspace uses HTTP delivery for streaming content, you can use
-the Akamai CDN network to deliver your content. This means the
+the Akamai CDN network to deliver your content. This means that the
 performance should be identical to CDN speeds customers are used to.
 Before you begin, you must CDN-enable the container that holds your
-streaming content. In the Cloud Control Panel, click the gear icon of
-the container and select "Make Public (Enable CDN)".
+streaming content. In the [Cloud Control Panel](https://login.rackspace.com/),
+click the gear icon of the container, and select **Make Public (Enable CDN)**.
 
-After your container is CDN-enabled, you will need its streaming URLs. In
-the [Cloud Control Panel](https://mycloud.rackspace.com), click on **Storage > Files**, and then click the gear icon for the container and select **View All Links**. Following is an example of the CDN links that
+After your container is CDN-enabled, you need its streaming URLs. In
+the [Cloud Control Panel](https://login.rackspace.com/), click on **Storage > Files**, and then click the gear icon for the container and select **View All Links**. Following is an example of the CDN links that
 display:
 
     HTTP: http://cdc4c16471588d4846bf-cc339a649709710bbecd3db1e126ec2b.r3.cf1.rackcdn.com

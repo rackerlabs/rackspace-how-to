@@ -5,8 +5,8 @@ title: Getting started with Cloud Files and CDN
 type: article
 created_date: '2016-01-14'
 created_by: Stephanie Fillmon
-last_modified_date: '2017-05-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-23'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -17,7 +17,7 @@ content delivery network (CDN) service.
 
 ### What is Cloud Files?
 
-Cloud Files is a cloud storage system, not a traditional file system. You use it to store data in the Rackspace infrastructure. You can perform most data management tasks from the [Cloud Control Panel](https://mycloud.rackspace.com/), but the [Cloud Files API Developer Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/)
+Cloud Files is a cloud storage system rather than a traditional file system. You use it to store data in the Rackspace infrastructure. You can perform most data management tasks from the [Cloud Control Panel](https://login.rackspace.com/), but the [Cloud Files API Developer Guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/)
 and some third-party tools are also available.
 
 Cloud Files has the following characteristics:
@@ -47,16 +47,22 @@ For example, a user could upload a photo to a container called **images**. When 
 
 ### Create a container and make it public
 
-1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com).
-2.  In the top navigation bar, select **Storage > Files**.
-3.  Click **Create Container**.
-4.  Specify a name for the container, and then click **Create Container**.
-5.  Click the gear icon next to the container and select **Make Public (Enable CDN)**.
-6.  Click **Publish to CDN**.
+Use the following steps to create a container and make it public:
+
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3.  Select **Storage > Files**.
+4.  Click **Create Container**.
+5.  Specify a name for the container, and then click **Create Container**.
+6.  Click the gear icon next to the container and select
+    **Make Public (Enable CDN)**.
+7.  Click **Publish to CDN**.
 
 You can now share the files within the container.
 
 ### Upload files to a container
+
+Use the following steps to upload files to a container:
 
 1.  Click the name of the container to which you want to upload files.
 2.  Click **Upload Files** and select the files to upload.

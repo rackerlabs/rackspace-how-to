@@ -1,16 +1,19 @@
 ---
-title: Rackspace PDR Agent Networking Requirements
+permalink: rackspace-pdr-agent-networking/
+title: Rackspace PDR Agent networking requirements
 type: article
+audit_date: '2018-11-12'
 created_date: '2018-10-09'
 created_by: Nick Shobe
-last_modified_date: '2018-10-09'
+last_modified_date: '2018-11-12'
 last_modified_by: Nick Shobe
-permalink: rackspace-pdr-agent-networking/
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
 
-#### Alert Logic Egress Requirements
+This article includes the networking requirements for the Rackspace Proactive Detection & Response (PDR) Agent.
+
+### Alert Logic Egress Requirements
 
 | Source | Destination | Protocol | Port | Description |
 | ------ | ----------- | -------- | ---- | ----------- |
@@ -19,7 +22,7 @@ product_url: rackspace-pdr
 | Your AL Appliances | Agent host | ALL | ALL | Active Scanning from the NIDS appliances |
 | **Agent | Threat Manager Appliances | TCP | 7777 | **cloud platforms only**  Alert Logic agent data transport (between agent and appliance on local network) |
 
-#### Crowd Strike Egress Requirements
+### Crowd Strike Egress Requirements
 
 | Source | Destination | Protocol | Port | Description |
 | ------ | ----------- | -------- | ---- | ----------- |
@@ -50,7 +53,7 @@ product_url: rackspace-pdr
 | 54.183.148.116 | 54.67.4.108 | |
 | 54.183.39.68 | 54.183.215.154 | |
 
-#### Rapid7 Agent Endpoints
+### Rapid7 Agent Endpoints
 
 | Source | Destination | Protocol | Port | Description |
 | ------ | ----------- | -------- | ---- | ----------- |

@@ -11,7 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-When you can't connect to a Microsoft SQL Server instance remotely through ODBC, Visual Studio, or a SQL Server Management Studio connection, usually the Windows firewall is blocking the access. Use the resolutions in this article to troubleshoot the issue.
+When you can't connect to a [Microsoft&reg; SQL
+Server&reg;](https://www.rackspace.com/managed-hosting/database-services/microsoft-sql) instance remotely through ODBC, Visual Studio, or a SQL Server
+Management Studio connection, usually the Windows firewall is blocking the access. Use the resolutions in this article to troubleshoot the issue.
 
 ### Open TCP ports
 
