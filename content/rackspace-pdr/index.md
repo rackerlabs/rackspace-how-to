@@ -32,6 +32,7 @@ centers and comparable managed security service offerings.
 
 - [Rackspace PDR Agent networking](/how-to/rackspace-pdr-agent-networking/)
 - [Rackspace PDR NIDS networking](/how-to/rackspace-pdr-nids-networking/)
+- [Rackspace PDR SSL decryption guide](/how-to/rackspace-pdr-ssl-decryption/)
 
 ### Rackspace PDR Agent guides
 
