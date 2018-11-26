@@ -67,17 +67,17 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
      key pairs, see [Manage SSH Key Pairs for Cloud Servers with
      python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-    -   To assign an existing public key, select the key name for an existing
-        public key in the **SSH Key** list. You can also add a new public key
-        by using the following steps:
-        - Click **Manage SSH Keys > Add Public Key**.
-        - Enter a **Key Name**.
-        - In the **Region** field, confirm the region in which you want to use
-          the key.
-        - Paste the entire public key in the **Public Key** field.
-        - Finally, click **Add Public Key**.
-        - Confirm that the key appears in the **SSH Keys** list for your
-          new server, then select it.
+     To assign an existing public key, select the key name for an existing
+     public key in the **SSH Key** list. You can also add a new public key
+     by using the following steps:
+      - Click **Manage SSH Keys > Add Public Key**.
+      - Enter a **Key Name**.
+      - In the **Region** field, confirm the region in which you want to use
+        the key.
+      - Paste the entire public key in the **Public Key** field.
+      - Finally, click **Add Public Key**.
+      - Confirm that the key appears in the **SSH Keys** list for your
+        new server, then select it.
 
 12. If necessary, create a new network and select the **PublicNet** and
     **ServiceNet** options.
@@ -88,8 +88,8 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
 
 This section shows you how to boot the following types of OmMetal servers:
 
-- [Linux&reg; and MacOS&reg;](#linux-and-macos)
-- [Microsoft&reg; Windows&reg;](#microsoft-windows)
+- [Linux and MacOS&reg;](#boot-a-linux-or-macos-onmetal-server)
+- [Microsoft&reg; Windows&reg;](#boot-a-windows-onmetal-server)
 
 **Note**: To boot an OnMetal server you must first install the [nova
 client](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/send-request-ovw/#id2).
@@ -192,10 +192,6 @@ Use the following steps to boot an OnMetal v2 server that is running Windows:
 1. To get the universally unique identifier (UUID) of the OnMetal Windows
    image that you want to use, enter the command `nova image-list` on the
    command line.
-
-    The output should look like the following example:
-
-    | 6b6f855f-5967-48c2-81a3-3615e69f6f8e | OnMetal - Windows Server 2016                                | ACTIVE |     
 
 2.  Use the following command format to boot your OnMetal server, substituting
     the appropriate region:
