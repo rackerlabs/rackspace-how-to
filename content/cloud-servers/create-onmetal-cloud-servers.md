@@ -28,64 +28,63 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
 
 3. Select **Servers > Cloud Servers**.
 
-4. Click the **Create Server** button.
+4. Click **Create Server**.
 
-5. On the **Create Server** page, ensure that you've selected a region in
+5. On the **Create Server** page, ensure that you select a region in
    which OnMetal servers are available.
 
     **Note**: OnMetal servers are available only in the Northern Virginia
-    (IAD), Dallas (DFW), and UK (LON) regions. This list will expand as other
-    regions become available.
+    (IAD), Dallas (DFW), and UK (LON) regions.
 
 6. Click the **OnMetal Server** tab.
 
 7. In the **Server Details** section of the **Create Server** page, enter a
-   name for the server and select the region in which the server
-   will reside.
+   name for the server and select the region in which you want the server
+   to reside.
 
 8. Click the **OnMetal Server** tab.
 
 9. In the **Image** section, select an image for the server.
 
     **Note**: To avoid performance degradation, run the CentOS&reg; 6.5 image
-    only on a Linux&reg; Kernel release of 3.10 or later.
+    only on a Linux&reg; Kernel release of 3.10 or higher.
 
 10. In the **Flavor** section, choose the appropriate configuration for
-    your workload. Click each flavor class for a description.
+    your workload.
 
      **Note**: All OnMetal flavors include dual-bonded 10Gbe Network Interface
      Card (NIC) interfaces that enable the image operating system (OS) to
      share Public and Service network access redundantly in case one of the
-     connections goes down. For details about all available flavors, see
+     connections goes down. For details about all of the available flavors, see
      [OnMetal Cloud Server
      flavors](https://developer.rackspace.com/docs/cloud-servers/v2/general-api-info/flavors/#onmetal-cloud-server-flavors).
 
 11. Assign a public Secure Shell (SSH) key to the server by either selecting
     an existing key, or adding a new one.
 
-     **IMPORTANT**: OnMetal servers *must* be created by using an SSH
-     key pair. For information about generating a public and private
-     key pair, see [Manage SSH Key Pairs for Cloud Servers with
+     **Note**: OnMetal servers *must* be created by using an SSH
+     key pair. For information about generating public and private
+     key pairs, see [Manage SSH Key Pairs for Cloud Servers with
      python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
     -   To assign an existing public key, select the key name for an existing
-        public key in the **SSH Key** list, or add a new public key by using
-        the following steps:
+        public key in the **SSH Key** list. You can also add a new public key
+        by using the following steps:
         - Click **Manage SSH Keys > Add Public Key**.
         - Enter a **Key Name**.
-        - In the **Region** field, confirm the region in which your key will
-          be used.
-        - Paste your entire public key in the **Public Key** field.
+        - In the **Region** field, confirm the region in which you want to use
+          the key.
+        - Paste the entire public key in the **Public Key** field.
         - Finally, click **Add Public Key**.
-        - Confirm that your key is listed in the **SSH Keys** list for your
-          new server and select it.
+        - Confirm that the key appears in the **SSH Keys** list for your
+          new server, then select it.
 
 12. If necessary, create a new network and select the **PublicNet** and
     **ServiceNet** options.
 
-13. Click **Create Server** to build your server.
+13. Click **Create Server**.
 
-### Boot the server
+### Boot the OnMetal server
 
 This section shows you how to boot the following types of OmMetal servers:
 
@@ -95,7 +94,7 @@ This section shows you how to boot the following types of OmMetal servers:
 **Note**: To boot an OnMetal server you must first install the [nova
 client](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/send-request-ovw/#id2).
 
-#### Linux and MacOS
+#### Boot a Linux or MacOS OnMetal server
 
 Use the following steps to boot an OnMetal v1 server that is running Linux or
 MacOS:
@@ -145,7 +144,7 @@ MacOS:
     password is not actually used. You can safely ignore it.
 
     The server takes about five minutes to build. You can check
-    the status by running the following command:
+    the status of the build by running the following command:
 
         supernova iad show instanceId
 
@@ -179,14 +178,14 @@ MacOS:
         +------------------------+--------------------------------------------------------------------+
 
     Within a few minutes, the server is assigned public and private Internet
-    Protocol (IP) addresses, which display in the output from the `show`
-    command.
+    Protocol (IP) addresses. These IP addresses display in the output from the
+    `show` command.
 
     After the status becomes `ACTIVE`, the server boots for the
     first time. However, the server is not reachable until the network
     configuration is complete, which might take another few minutes.
 
-#### Windows
+#### Boot a Windows OnMetal server
 
 Use the following steps to boot an OnMetal v2 server that is running Windows:
 
@@ -198,24 +197,40 @@ Use the following steps to boot an OnMetal v2 server that is running Windows:
 
     | 6b6f855f-5967-48c2-81a3-3615e69f6f8e | OnMetal - Windows Server 2016                                | ACTIVE |     
 
-2. Boot the instance in the same way that you would [boot a Linux OnMetal
-   instance](#linux-and-macos), but omit the key-name.
+2.  Use the following command format to boot your OnMetal server, substituting
+    the appropriate region:
+
+        supernova iad boot --image imageId --flavor flavorId serverName
+
+     The following code includes example values:
+
+        supernova iad boot --image 6b6f855f-5967-48c2-81a3-3615e69f6f8e --flavor onmetal-io2 MyNewWindowsServer
 
    The API response provides an administrative password that you can use to log
-   in to your Windows instance after it has booted successfully.
+   in to your Windows instance.
 
-### Log in to the server
+### Log in to the OnMetal server
+
+This section explains how to log in to a new OnMetal server.
+
+#### Log in to a Linux or MacOS OnMetal server
 
 After the server has booted, use the SSH key pair that you specified to
-log in to the server.
-
-**Note:** CoreOS requires you to sign in as "core."
+log in to it, as shown in the following example:
 
     ssh root@publicIpAddress
 
-### Delete the server
+**Note**: CoreOS requires you to sign in as `core`.
 
-If necessary, you can also delete or cancel the server by using the following
+#### Log in to a Windows OnMetal server
+
+After the server has booted, use Windows Remote Desktop Connection (RDC) or
+Remote Desktop to connect to the new server by using the administrative
+password that the API returned.
+
+### Delete an OnMetal server
+
+If necessary, you can also delete an OnMetal server by using the following
 steps:
 
 1.  Run the following command, replacing the example ID with your
@@ -223,7 +238,7 @@ steps:
 
         supernova iad delete a8ea2366-9e50-4604-b6ce-e3edb8750451
 
-2.  Use the following command to view the progress:
+2.  Use the following command to view the status of the task:
 
         supernova iad list
 
@@ -235,13 +250,14 @@ steps:
         | d1d58868-2b14-4fa5-b01f-e51d658556a8 | highcpu | ACTIVE | deleting | Running | public=23.253.157.105; private=10.184.0.105 |
         +--------------------------------------+---------+--------+------------+-------------+---------------------------------------------+
 
-    **Note**: Your server enters the task state `deleting`. OnMetal
+    **Note**: The server enters the task state `deleting`. OnMetal
     server deletions take longer than virtual server deletions.
     This process typically takes a few minutes.
 
 ### Using OnMetal
 
 The flash cards that are included with the OnMetal I/O flavor are unformatted.
-You can RAID and format them however you like. For more information, see
+You can combine them in a redundant array of independent disks (RAID) and
+format them in any way that you want. For more information, see
 [Configure flash drives in High I/O instances as Data
 drives](/how-to/configure-flash-drives-in-high-io-instances-as-data-drives).
