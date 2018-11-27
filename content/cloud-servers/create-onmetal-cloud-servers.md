@@ -12,8 +12,8 @@ product_url: cloud-servers
 ---
 
 OnMetal Cloud Servers enable you to boot bare metal servers through the
-Rackspace Cloud Control Panel interface. This article shows you how to set
-up an OnMetal server through the Cloud Control Panel.
+Rackspace Cloud Control Panel interface. This article shows you how to
+set up an OnMetal server through the Cloud Control Panel.
 
 **Note**: For the parallel steps in the API, see [Manage OnMetal Cloud Servers
 through the API](/how-to/using-onmetal-cloud-servers-through-api).
