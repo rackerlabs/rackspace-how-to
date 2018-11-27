@@ -59,8 +59,8 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
      [OnMetal Cloud Server
      flavors](https://developer.rackspace.com/docs/cloud-servers/v2/general-api-info/flavors/#onmetal-cloud-server-flavors).
 
-11. Assign a public Secure Shell (SSH) key to the server by either selecting
-    an existing key or adding a new one.
+11. Assign a public Secure Shell (SSH) key to the server by either
+    selecting an existing key or adding a new one.
 
      **Note**: You *must* create OnMetal servers by using an SSH
      key pair. For information about generating public and private
