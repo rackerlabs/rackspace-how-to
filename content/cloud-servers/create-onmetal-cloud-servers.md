@@ -70,13 +70,13 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
      To assign an existing public key, select the key name for an existing
      public key in the **SSH Key** list. You can also add a new public key
      by using the following steps:
-      a. Click **Manage SSH Keys > Add Public Key**.
-      b. Enter a **Key Name**.
-      c. In the **Region** field, confirm the region in which you want to use
+      1. Click **Manage SSH Keys > Add Public Key**.
+      2. Enter a **Key Name**.
+      3. In the **Region** field, confirm the region in which you want to use
          the key.
-      d. Paste the entire public key in the **Public Key** field.
-      e. Finally, click **Add Public Key**.
-      f. Confirm that the key appears in the **SSH Keys** list for your
+      4. Paste the entire public key in the **Public Key** field.
+      5. Finally, click **Add Public Key**.
+      6. Confirm that the key appears in the **SSH Keys** list for your
          new server, then select it.
 
 12. If necessary, create a new network and select the **PublicNet** and
