@@ -5,13 +5,13 @@ title: Create OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Russell Haering
-last_modified_date: '2018-11-26'
+last_modified_date: '2018-11-27'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-OnMetal Cloud Servers enables you to boot bare metal servers through the
+OnMetal Cloud Servers enable you to boot bare metal servers through the
 Rackspace Cloud Control Panel interface. This article shows you how to set
 up an OnMetal server through the Cloud Control Panel.
 
@@ -47,22 +47,22 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
 9. In the **Image** section, select an image for the server.
 
     **Note**: To avoid performance degradation, run the CentOS&reg; 6.5 image
-    only on a Linux&reg; Kernel release of 3.10 or higher.
+    only on a Linux&reg; kernel release of 3.10 or later.
 
 10. In the **Flavor** section, choose the appropriate configuration for
     your workload.
 
-     **Note**: All OnMetal flavors include dual-bonded 10Gbe Network Interface
+     **Note**: All OnMetal flavors include dual-bonded 10GbE Network Interface
      Card (NIC) interfaces that enable the image operating system (OS) to
-     share Public and Service network access redundantly in case one of the
+     share public and service network access redundantly in case one of the
      connections goes down. For details about all of the available flavors, see
      [OnMetal Cloud Server
      flavors](https://developer.rackspace.com/docs/cloud-servers/v2/general-api-info/flavors/#onmetal-cloud-server-flavors).
 
 11. Assign a public Secure Shell (SSH) key to the server by either selecting
-    an existing key, or adding a new one.
+    an existing key or adding a new one.
 
-     **Note**: OnMetal servers *must* be created by using an SSH
+     **Note**: You *must* create OnMetal servers by using an SSH
      key pair. For information about generating public and private
      key pairs, see [Manage SSH Key Pairs for Cloud Servers with
      python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
@@ -70,14 +70,14 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
      To assign an existing public key, select the key name for an existing
      public key in the **SSH Key** list. You can also add a new public key
      by using the following steps:
-      - Click **Manage SSH Keys > Add Public Key**.
-      - Enter a **Key Name**.
-      - In the **Region** field, confirm the region in which you want to use
-        the key.
-      - Paste the entire public key in the **Public Key** field.
-      - Finally, click **Add Public Key**.
-      - Confirm that the key appears in the **SSH Keys** list for your
-        new server, then select it.
+      a. Click **Manage SSH Keys > Add Public Key**.
+      b. Enter a **Key Name**.
+      c. In the **Region** field, confirm the region in which you want to use
+         the key.
+      d. Paste the entire public key in the **Public Key** field.
+      e. Finally, click **Add Public Key**.
+      f. Confirm that the key appears in the **SSH Keys** list for your
+         new server, then select it.
 
 12. If necessary, create a new network and select the **PublicNet** and
     **ServiceNet** options.
@@ -86,12 +86,12 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
 
 ### Boot the OnMetal server
 
-This section shows you how to boot the following types of OmMetal servers:
+This section shows you how to boot the following types of OnMetal servers:
 
 - [Linux and MacOS&reg;](#boot-a-linux-or-macos-onmetal-server)
 - [Microsoft&reg; Windows&reg;](#boot-a-windows-onmetal-server)
 
-**Note**: To boot an OnMetal server you must first install the [nova
+**Note**: To boot an OnMetal server, you must first install the [nova
 client](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/send-request-ovw/#id2).
 
 #### Boot a Linux or MacOS OnMetal server
@@ -99,7 +99,7 @@ client](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/se
 Use the following steps to boot an OnMetal v1 server that is running Linux or
 MacOS:
 
-1.  On the details page for your server, click the link under **Log Into
+1.  On the **Details** page for your server, click the link under **Log Into
     Your Server Now** in the right-hand column. For more information,
     see [Connect to a server using SSH on Linux or Mac OS for further
     information](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
@@ -250,9 +250,9 @@ steps:
     server deletions take longer than virtual server deletions.
     This process typically takes a few minutes.
 
-### Using OnMetal
+### Configure OnMetal flash drives
 
-The flash cards that are included with the OnMetal I/O flavor are unformatted.
+The flash drives that are included with the OnMetal I/O flavor are unformatted.
 You can combine them in a redundant array of independent disks (RAID) and
 format them in any way that you want. For more information, see
 [Configure flash drives in High I/O instances as Data
