@@ -5,8 +5,8 @@ title: RACKSPACE HOW-TO LICENSE
 type: page
 created_date: '2012-08-24'
 created_by: Rackspace Support
-last_modified_date: '2016-06-17'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-11-27'
+last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
 ---
@@ -17,7 +17,7 @@ Attribution-NonCommercial-NoDerivs 3.0 Unported license](http://creativecommons.
 
 -   **Attribution:**  Rackspace How-To documents are intended
     for use by Rackspace customers. Credit Rackspace for the
-    documentation, and don't distrubute old versions that might not
+    documentation, and don't distribute old versions that might not
     reflect the latest changes.
 -   **Non-Commercial Use:** Rackspace defines "commercial use" of the
     Rackspace How-To documentation as republication
@@ -74,10 +74,10 @@ Except as expressly provided in any written license agreement from
 Rackspace, the furnishing of this document does not give you any license
 to patents, trademarks, copyrights, or other intellectual property.
 
-Rackspace&reg;, Rackspace logo, **Fanatical Support**&reg;, RackConnect&trade;, Racker&trade;
-are service marks or registered service marks of Rackspace US, Inc. in
-the United States and/or other countries. OpenStack&trade; and OpenStack logo
-are trademarks of OpenStack, LLC.
+Rackspace&reg;, Rackspace logo, **Fanatical Support**&reg;, and
+RackConnect&trade; are service marks or registered service marks of Rackspace
+US, Inc. in the United States and/or other countries. OpenStack&trade; and
+OpenStack logo are trademarks of OpenStack, LLC.
 
 All other product names and trademarks used in the Rackspace How-To
 documentation are for identification purposes only to refer to
