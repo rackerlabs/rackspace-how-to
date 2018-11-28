@@ -5,7 +5,7 @@ title: Dedicated Hosting FAQ
 type: product
 created_date: '2016-11-01'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-11-27'
+last_modified_date: '2018-11-28'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -13,7 +13,7 @@ product_url: dedicated-hosting
 
 ### General
 
-#### Where can I learn more about the service levels for dedicated managed hosting?
+#### Where can I learn more about the service levels for Dedicated Managed Hosting?
 
 You can find a comparison of the service levels on the [Managed Hosting
 product page](https://www.rackspace.com/managed-hosting/service-levels).
@@ -38,7 +38,7 @@ Lifecycle Support page](https://www.rackspace.com/information/legal/eolterms).
 
 Permissions enable you to determine the amount of access that your users have
 in the [MyRackspace
-portal](https://login.rackspace.com). Our Support Teams review these
+portal](https://login.rackspace.com). Our Support teams review these
 permissions to help determine user access when responding to support requests.
 
 #### How do I manage permissions?
