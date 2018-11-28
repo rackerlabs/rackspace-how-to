@@ -1,6 +1,6 @@
 ---
 permalink: manage-user-permissions-for-dedicated-hosting/
-audit_date: '2018-11-27'
+audit_date: '2018-11-28'
 title: 'Manage user permissions for Dedicated Hosting'
 type: article
 created_date: '2018-11-28'
@@ -11,8 +11,8 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-This article explains user permissions for Dedicated Hosting and shows you how
-to manage these permissions.
+This article explains user permissions for Dedicated Hosting and shows you
+how to manage these permissions.
 
 You manage permissions in the [MyRackspace
 portal](https://login.rackspace.com) under **Account > Permissions**.
