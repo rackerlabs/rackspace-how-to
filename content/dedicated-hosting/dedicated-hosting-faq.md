@@ -39,13 +39,13 @@ Lifecycle Support page](https://www.rackspace.com/information/legal/eolterms).
 Permissions enable you to determine the amount of access that your users have
 in the [MyRackspace
 portal](https://login.rackspace.com). Our Support Teams review these
-permissions to help determine user access when answering tickets and support
-telephone calls.
+permissions to help determine user access when responding to support requests.
 
 #### How do I manage permissions?
 
 You manage permissions in the [MyRackspace
-portal](https://login.rackspace.com) under **Account > Permissions**.
+portal](https://login.rackspace.com) under **Account > Permissions** in the
+subnavigation bar.
 
 **Note**: To access the **Permissions** section and modify another user’s
 permission, you must have one of the following permissions:
