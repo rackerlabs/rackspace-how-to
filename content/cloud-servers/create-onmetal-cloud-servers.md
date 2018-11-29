@@ -42,8 +42,6 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
    name for the server and select the region in which you want the server
    to reside.
 
-8. Click the **OnMetal Server** tab.
-
 9. In the **Image** section, select an image for the server.
 
     **Note**: To avoid performance degradation, run the CentOS&reg; 6.5 image
