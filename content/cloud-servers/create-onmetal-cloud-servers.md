@@ -1,11 +1,11 @@
 ---
 permalink: create-onmetal-cloud-servers/
-audit_date: '2018-11-09'
+audit_date: '2018-11-29'
 title: Create OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Russell Haering
-last_modified_date: '2018-11-27'
+last_modified_date: '2018-11-29'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
