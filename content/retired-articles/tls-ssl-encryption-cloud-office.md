@@ -7,8 +7,6 @@ created_date: '2013-09-19'
 created_by: Mawutor Amesawu
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
-product: Rackspace Email
-product_url: rackspace-email
 ---
 
 Transport Layer Security (TLS) and its predecessor, Secure Socket Layer

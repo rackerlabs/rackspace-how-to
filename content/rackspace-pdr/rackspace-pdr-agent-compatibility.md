@@ -84,7 +84,7 @@ and no longer provide adaquate telemetry to our Security Operations Center (SOC)
 | 2.6.32-573.53.1.el6.x86_64 | 2.6.32-696.23.1.el6.x86_64 | 2.6.32-696.28.1.el6.x86_64 | 2.6.32-696.30.1.el6.x86_64 |
 | 2.6.32-573.55.2.el6.x86_64 | 2.6.32-573.55.4.el6.x86_64 | 2.6.32-573.59.1.el6.x86_64 | 2.6.32-573.60.1.el6.x86_64 |
 | 2.6.32-754.el6.x86_64 | 2.6.32-754.2.1.el6.x86_64 | 2.6.32-573.60.4.el6.x86_64 | 2.6.32-754.3.5.el6.x86_64 |
-| 2.6.32-573.62.1.el6.x86_64 | 2.6.32-754.6.3.el6.x86_64 | | |
+| 2.6.32-573.62.1.el6.x86_64 | 2.6.32-754.6.3.el6.x86_64 | 2.6.32-573.65.2.el6.x86_64 | |
 
 **RHEL 7 / CentOS 7 Supported Versions**
 
@@ -156,7 +156,7 @@ and no longer provide adaquate telemetry to our Security Operations Center (SOC)
 | 4.4.0-128-generic | 3.13.0-153-generic | 4.4.0-130-generic | 4.4.0-131-generic |
 | 3.13.0-155-generic | 4.4.0-133-generic | 3.13.0-156-generic | 3.13.0-157-generic |
 | 3.13.0-158-generic | 4.4.0-134-generic | 4.4.0-135-generic | 3.13.0-160-generic |
-| 4.4.0-137-generic |  |  |  |
+| 4.4.0-137-generic | 3.13.0-161-generic | 4.4.0-138-generic |  |
 
 **Ubuntu 16.04LTS Supported Versions**
 
@@ -189,7 +189,19 @@ and no longer provide adaquate telemetry to our Security Operations Center (SOC)
 | 4.4.0-137-generic | 4.4.0-1069-aws | 4.15.0-13-generic | 4.15.0-15-generic |
 | 4.15.0-20-generic | 4.15.0-22-generic | 4.15.0-23-generic | 4.15.0-24-generic |
 | 4.15.0-29-generic | 4.15.0-30-generic | 4.15.0-32-generic | 4.15.0-33-generic |
-| 4.15.0-34-generic | 4.15.0-36-generic |  |  |
+| 4.15.0-34-generic | 4.15.0-36-generic | 4.4.0-138-generic | 4.4.0-1070-aws |
+| 4.15.0-38-generic |  |  |  |
+
+**Ubuntu 18.04LTS Supported Versions**
+
+| | | | |
+|-|-|-|-|
+| 4.15.0-20-generic | 4.15.0-22-generic | 4.15.0-23-generic | 4.15.0-24-generic |
+| 4.15.0-29-generic | 4.15.0-30-generic | 4.15.0-32-generic | 4.15.0-33-generic |
+| 4.15.0-34-generic | 4.15.0-36-generic | 4.15.0-38-generic | 4.15.0-1007-aws |
+| 4.15.0-1009-aws | 4.15.0-1010-aws | 4.15.0-1011-aws | 4.15.0-1016-aws |
+| 4.15.0-1017-aws | 4.15.0-1019-aws | 4.15.0-1020-aws | 4.15.0-1021-aws |
+| 4.15.0-1023-aws | 4.15.0-1025-aws |  |  |
 
 ### Windows Agent Compatibility
 
