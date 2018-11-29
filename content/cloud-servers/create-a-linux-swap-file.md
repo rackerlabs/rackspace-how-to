@@ -35,7 +35,8 @@ The following steps show how to add 1GB of swap to your server:
 
         sudo fallocate -l 1G /mnt/1GB.swap
 
-    If fallocate fails or isn't installed, run the following command:
+    If the `fallocate` command fails or isn't installed, run the following
+    command:
 
         sudo dd if=/dev/zero of=/mnt/1GB.swap bs=1024 count=1048576
 
