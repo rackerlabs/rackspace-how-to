@@ -61,7 +61,8 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
 
 11. If you're working with a Linux server, assign a public Secure Shell (SSH)
     key to the Linux server by either selecting an existing key or adding a
-    new one.
+    new one. (If you're working with a Microsoft&reg; Windows&reg; server,
+    skip to the next step.)
 
      **Note**: You *must* create OnMetal Linux servers by using an SSH
      key pair. For information about generating public and private
@@ -91,7 +92,7 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
 This section shows you how to boot the following types of OnMetal servers:
 
 - [Linux](#boot-a-linux-onmetal-server)
-- [Microsoft&reg; Windows&reg;](#boot-a-windows-onmetal-server)
+- [Microsoft Windows](#boot-a-windows-onmetal-server)
 
 **Note**: To boot an OnMetal server, you must first install the [nova
 client](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/send-request-ovw/#id2).
