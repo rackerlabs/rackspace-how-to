@@ -103,7 +103,7 @@ Use the following steps to boot an OnMetal v1 server that is running Linux:
 
 1.  On the **Details** page for your server, click the link under **Log Into
     Your Server Now** in the right-hand column. For more information,
-    see [Connect to a server using SSH on Linux or Mac OS for further
+    see [Connect to a server by using SSH on Linux for further
     information](/how-to/connecting-to-a-server-using-ssh-on-linux-or-mac-os).
 2.  Use the following command format to boot your OnMetal server, substituting
     the appropriate region:
