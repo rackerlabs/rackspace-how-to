@@ -253,8 +253,8 @@ steps:
 
 ### Configure OnMetal IO flash storage
 
-The flash drives that are included with the OnMetal IO flavor are unformatted.
-You can combine them in a redundant array of independent disks (RAID) and
-format them in any way that you want. For more information, see
+The flash drives that are included with the OnMetal IO flavor are
+unformatted. You can combine them in a redundant array of independent disks
+(RAID) and format them in any way that you want. For more information, see
 [Configure flash drives in High IO instances as Data
 drives](/how-to/configure-flash-drives-in-high-io-instances-as-data-drives).
