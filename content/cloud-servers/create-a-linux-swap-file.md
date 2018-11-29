@@ -1,6 +1,6 @@
 ---
 permalink: create-a-linux-swap-file/
-audit_date: '2018-11-28'
+audit_date: '2018-11-27'
 title: Create a Linux Swap File
 type: article
 created_date: '2013-10-29'
