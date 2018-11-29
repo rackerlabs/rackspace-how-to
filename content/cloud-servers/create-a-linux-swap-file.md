@@ -1,7 +1,7 @@
 ---
 permalink: create-a-linux-swap-file/
 audit_date: '2018-11-27'
-title: Create a Linux Swap File
+title: Create a Linux swap file
 type: article
 created_date: '2013-10-29'
 created_by: Trey Hoehne
@@ -13,10 +13,10 @@ product_url: cloud-servers
 
 Swap is space on a disk that is reserved for use as virtual memory.
 When a Linux&reg; server runs out of memory, the kernel can move inactive
-processes into swap to make room for active processes in the working
+processes into swap space to make room for active processes in the working
 memory.
 
-By default a swap partition is not present on Cloud Servers, but you can add
+By default, a swap partition is not present on Cloud Servers, but you can add
 swap to a server by allocating a swap file. The performance of a
 swap file is similar to that of a swap partition. However, using a swap file
 makes it easier to control the swap size without repartitioning a volume. You
@@ -26,7 +26,7 @@ system's _swappiness value_.
 The steps below show how to create a swap file on Linux and modify a system's
 swappiness value.
 
-### How do I add swap?
+### How do I add a swap file?
 
 The following steps show how to add 1GB of swap to your server:
 
@@ -40,7 +40,7 @@ The following steps show how to add 1GB of swap to your server:
 
         sudo dd if=/dev/zero of=/mnt/1GB.swap bs=1024 count=1048576
 
-2.  Format the file for swap by entering the following command:
+2.  Format the swap file by entering the following command:
 
         sudo mkswap /mnt/1GB.swap
 
@@ -59,16 +59,16 @@ The following steps show how to add 1GB of swap to your server:
 
         vm.swappiness=10
 
-    Start with a value of `10` and increase if it necessary. A typical default
-    value for swappiness is `60`. The higher the number (up to `100`), the
+    Start with a value of 10 and increase if it necessary. A typical default
+    value for swappiness is 60. The higher the number (up to 100), the
     more often the system uses swap.
 
     The degree to which swappiness affects performance depends on how your
     memory is currently used. We recommend that you experiment to find an
-    optimal value. At `0`, the system only uses the swap file when it runs out
-    of memory entirely. Higher values enable the system to swap idle processes
-    out in order to free memory for disk caching, potentially improving
-    overall system performance.
+    optimal value. At 0, the system only uses the swap file when it runs
+    entirely out of memory. Higher values enable the system to swap idle
+    processes out in order to free memory for disk caching, potentially
+    improving overall system performance.
 
 6.  Check that the swap file was created by entering the following command:
 
