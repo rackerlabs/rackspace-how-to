@@ -59,17 +59,18 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
      [OnMetal Cloud Server
      flavors](https://developer.rackspace.com/docs/cloud-servers/v2/general-api-info/flavors/#onmetal-cloud-server-flavors).
 
-11. Assign a public Secure Shell (SSH) key to the server by either
-    selecting an existing key or adding a new one.
+11. If you're working with a Linux server, assign a public Secure Shell (SSH)
+    key to the Linux server by either selecting an existing key or adding a
+    new one.
 
-     **Note**: You *must* create OnMetal servers by using an SSH
+     **Note**: You *must* create OnMetal Linux servers by using an SSH
      key pair. For information about generating public and private
      key pairs, see [Manage SSH Key Pairs for Cloud Servers with
      python-novaclient](/how-to/manage-ssh-key-pairs-for-cloud-servers-with-python-novaclient).
 
-     To assign an existing public key, select the key name for an existing
-     public key in the **SSH Key** list. You can also add a new public key
-     by using the following steps:
+     To assign an existing public key to a Linux server, select the key name
+     for an existing public key in the **SSH Key** list. You can also add a
+     new public key by using the following steps:
 
       1. Click **Manage SSH Keys > Add Public Key**.
       2. Enter a **Key Name**.
@@ -85,20 +86,19 @@ Use the following steps to create an OnMetal server in the Cloud Control Panel:
 
 13. Click **Create Server**.
 
-### Boot the OnMetal server
+### Create an OnMetal server by using the command line
 
 This section shows you how to boot the following types of OnMetal servers:
 
-- [Linux and MacOS&reg;](#boot-a-linux-or-macos-onmetal-server)
+- [Linux](#boot-a-linux-onmetal-server)
 - [Microsoft&reg; Windows&reg;](#boot-a-windows-onmetal-server)
 
 **Note**: To boot an OnMetal server, you must first install the [nova
 client](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/send-request-ovw/#id2).
 
-#### Boot a Linux or MacOS OnMetal server
+#### Boot a Linux OnMetal server
 
-Use the following steps to boot an OnMetal v1 server that is running Linux or
-MacOS:
+Use the following steps to boot an OnMetal v1 server that is running Linux:
 
 1.  On the **Details** page for your server, click the link under **Log Into
     Your Server Now** in the right-hand column. For more information,
@@ -210,14 +210,14 @@ Use the following steps to boot an OnMetal v2 server that is running Windows:
 
 This section explains how to log in to a new OnMetal server.
 
-#### Log in to a Linux or MacOS OnMetal server
+#### Log in to a Linux OnMetal server
 
 After the server has booted, use the SSH key pair that you specified to
 log in to it, as shown in the following example:
 
     ssh root@publicIpAddress
 
-**Note**: CoreOS requires you to sign in as `core`.
+**Note**: CoreOS is only available for OnMetal v1 flavors. If you use CoreOS, you must sign in by using the username `core`.
 
 #### Log in to a Windows OnMetal server
 
@@ -251,10 +251,10 @@ steps:
     server deletions take longer than virtual server deletions.
     This process typically takes a few minutes.
 
-### Configure OnMetal flash drives
+### Configure OnMetal IO flash storage
 
-The flash drives that are included with the OnMetal I/O flavor are unformatted.
+The flash drives that are included with the OnMetal IO flavor are unformatted.
 You can combine them in a redundant array of independent disks (RAID) and
 format them in any way that you want. For more information, see
-[Configure flash drives in High I/O instances as Data
+[Configure flash drives in High IO instances as Data
 drives](/how-to/configure-flash-drives-in-high-io-instances-as-data-drives).
