@@ -177,15 +177,15 @@ Your Attribute Mapping Policy must contain the following information:
 <table>
   <tr>
     <th>Field</th>
-    <th>Description of all of the fields that you need to use</th>
+    <th>Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
     <th>Format</th>
     <th>Common values</th>
   </tr>
   <tr>
     <td>domain</td>
-    <td width="40%">The Identity or Account Domain that the Identity Provider is authorized to log users in to.</td>
+    <td>The Identity or Account Domain that the Identity Provider is authorized to log users in to.</td>
     <td>Alphanumeric string</td>
-    <td>Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
+    <td width="40%">Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
   </tr>
   <tr>
     <td>name</td>
