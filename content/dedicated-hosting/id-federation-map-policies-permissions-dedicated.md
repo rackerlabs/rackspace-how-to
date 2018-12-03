@@ -174,7 +174,7 @@ Your Attribute Mapping Policy must contain the following information:
 - A minimum of one local rule.
 - Static or dynamically-populated values for the fields in the following table:
 
-<table width="100%">
+<table>
   <tr>
     <th>Field</th>
     <th>Description</th>
