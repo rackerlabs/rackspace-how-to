@@ -198,7 +198,7 @@ Your Attribute Mapping Policy must contain the following information:
     <td>email</td>
     <td>The email address of your user as provided by your identity system.</td>
     <td>RFC-valid email address</td>
-    <td>SAML Attributes:<br /> email<br /> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress</ <br />urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3</code></td>
+    <td>SAML Attributes:<br /> email<br /> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br />urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3</code></td>
   </tr>
   <tr>
     <td>roles</td>
@@ -229,7 +229,7 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
 <table>
   <tr>
     <th>Method</th>
-    <th width="40%">Description</th>
+    <th>Description</th>
     <th>Example</th>
   </tr>
   <tr>
