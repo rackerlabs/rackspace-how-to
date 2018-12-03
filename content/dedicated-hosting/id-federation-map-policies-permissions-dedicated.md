@@ -177,7 +177,7 @@ Your Attribute Mapping Policy must contain the following information:
 <table>
   <tr>
     <th>Field</th>
-    <th>Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
     <th>Format</th>
     <th>Common values</th>
   </tr>
