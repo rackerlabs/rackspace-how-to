@@ -5,7 +5,7 @@ title: 'Identity federation for Dedicated Hosting: Map policies and permissions'
 type: article
 created_date: '2018-11-14'
 created_by: Kate Dougherty
-last_modified_date: '2018-11-16'
+last_modified_date: '2018-12-03'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -177,7 +177,7 @@ Your Attribute Mapping Policy must contain the following information:
 <table>
   <tr>
     <th>Field</th>
-    <th>Description</th>
+    <th width="20%">Description</th>
     <th>Format</th>
     <th>Common values</th>
   </tr>
@@ -228,7 +228,7 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
 <table>
   <tr>
     <th>Method</th>
-    <th>Description</th>
+    <th width="20%">Description</th>
     <th>Example</th>
   </tr>
   <tr>
