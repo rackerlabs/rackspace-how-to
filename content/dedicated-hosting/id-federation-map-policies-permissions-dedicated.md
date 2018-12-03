@@ -148,8 +148,8 @@ Attribute Mapping Policy to Rackspace.
 
 #### Retrieve your default Attribute Mapping Policy
 
-You can retrieve your default Attribute Mapping Policy from the MyRackspace
-portal by using the following steps:
+You can retrieve your default Attribute Mapping Policy from the
+MyRackspace portal by using the following steps:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > User List**.
