@@ -233,7 +233,7 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
   </tr>
   <tr>
     <td>Default</td>
-    <td>Retrieves the value by looking for common locations or labels for the field. Only an attribute with the same name as the field is matched. For example, name: <code>"{D}"</code> matches the attribute with the name <code>name</code>.</td>
+    <td width="40%">Retrieves the value by looking for common locations or labels for the field. Only an attribute with the same name as the field is matched. For example, name: <code>"{D}"</code> matches the attribute with the name <code>name</code>.</td>
     <td><code>name: "{D}"</code></td>
   </tr>
   <tr>
