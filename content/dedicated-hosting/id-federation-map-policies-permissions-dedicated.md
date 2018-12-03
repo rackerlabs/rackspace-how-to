@@ -182,8 +182,8 @@ Your Attribute Mapping Policy must contain the following information:
     <th>Common values</th>
   </tr>
   <tr>
-    <td width="30%">domain</td>
-    <td width="35%">The Identity or Account Domain that the Identity Provider is authorized to log users in to.</td>
+    <td width="35%">domain</td>
+    <td width="50%">The Identity or Account Domain that the Identity Provider is authorized to log users in to.</td>
     <td>Alphanumeric string</td>
     <td width="35%">Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
   </tr>
