@@ -174,7 +174,7 @@ Your Attribute Mapping Policy must contain the following information:
 - A minimum of one local rule.
 - Static or dynamically-populated values for the fields in the following table:
 
-<table>
+<table width="100%">
   <tr>
     <th>Field</th>
     <th >Description</th>
@@ -182,10 +182,10 @@ Your Attribute Mapping Policy must contain the following information:
     <th>Common values</th>
   </tr>
   <tr>
-    <td>domain</td>
+    <td width="15%">domain</td>
     <td width="35%">The Identity or Account Domain that the Identity Provider is authorized to log users in to.</td>
-    <td>Alphanumeric string</td>
-    <td>Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
+    <td width="15%">Alphanumeric string</td>
+    <td width="35%">Must be set to your Identity Domain. <br />The domain is listed on the Identity Provider details page for your Identity Provider.</td>
   </tr>
   <tr>
     <td>name</td>
