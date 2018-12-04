@@ -95,7 +95,7 @@ This section shows you how to boot the following types of OnMetal servers:
 **Note**: To boot an OnMetal server, you must first install the [nova
 client](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/send-request-ovw/#id2).
 
-#### Boot a Linux OnMetal server
+#### Boot an OnMetal Linux server
 
 Use the following steps to boot an OnMetal v1 server that is running Linux:
 
@@ -186,7 +186,7 @@ Use the following steps to boot an OnMetal v1 server that is running Linux:
     first time. However, the server is not reachable until the network
     configuration is complete, which might take another few minutes.
 
-#### Boot a Windows OnMetal server
+#### Boot an OnMetal Windows server
 
 Use the following steps to boot an OnMetal v2 server that is running Windows:
 
