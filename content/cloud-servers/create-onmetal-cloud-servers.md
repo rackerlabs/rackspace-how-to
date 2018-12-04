@@ -5,7 +5,7 @@ title: Create OnMetal Cloud Servers
 type: article
 created_date: '2014-06-19'
 created_by: Russell Haering
-last_modified_date: '2018-11-29'
+last_modified_date: '2018-12-04'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
