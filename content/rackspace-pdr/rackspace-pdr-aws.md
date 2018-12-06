@@ -5,8 +5,8 @@ type: article
 audit_date: '2018-11-12'
 created_date: '2018-10-08'
 created_by: Nick Shobe
-last_modified_date: '2018-11-12'
-last_modified_by: Nick Shobe
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
@@ -75,7 +75,7 @@ Following these steps helps to ensure successful agent deployments:
 
 Due to the various vendors that we have selected to provide the nessessary telemetry to our systems, it is
 important that you select operating systems and kernel versions that are compatable with the vendor
-agents. For more information, see the [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatablity/).
+agents. For more information, see the [Rackspace PDR System Requirements](/how-to/rackspace-pdr-agent-compatibility/).
 
 #### Golden or Base images
 

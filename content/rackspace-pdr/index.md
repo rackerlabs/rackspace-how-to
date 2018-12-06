@@ -5,8 +5,8 @@ type: product
 audit_date: '2018-11-12'
 created_date: '2018-10-04'
 created_by: Nick Shobe
-last_modified_date: '2018-11-12'
-last_modified_by: Nick Shobe
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Proactive Detection & Response
 product_url: rackspace-pdr
 ---
@@ -35,5 +35,5 @@ centers and comparable managed security service offerings.
 
 ### Rackspace PDR Agent guides
 
-- [Rackspace PDR Agent compatibility](/how-to/rackspace-pdr-agent-compatablity/)
+- [Rackspace PDR Agent compatibility](/how-to/rackspace-pdr-agent-compatibility/)
 - [Rackspace PDR imaging hosts](/how-to/rackspace-pdr-imaging/)

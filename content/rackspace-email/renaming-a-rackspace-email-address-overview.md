@@ -5,8 +5,8 @@ title: Renaming a Rackspace Email address overview
 type: article
 created_date: '2017-09-11'
 created_by: William Loy
-last_modified_date: '2017-09-12'
-last_modified_by: Nate Archer
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -45,7 +45,7 @@ After you have backed up the mail data locally, you are ready to connect to the 
 #### Mobile clients
 
 - [Iphone iOS](/how-to/configure-a-renamed-email-address-on-iphone-iOS)
-- [Android](/how-to/configure-a-renamed-email-address-configuration-for-android-mobile-phone)
+- [Android](/how-to/configure-a-renamed-email-address-on-android-devices)
 - [Windows](/how-to/configure-a-renamed-email-address-configuration-for-windows-mobile-phone)
 
 ### Troubleshooting
