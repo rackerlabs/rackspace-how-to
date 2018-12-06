@@ -5,7 +5,7 @@ title: Role-Based Access Control (RBAC) permissions matrix for Cloud Hosting
 type: article
 created_date: '2013-06-17'
 created_by: Renee Rendon
-last_modified_date: '2017-06-06'
+last_modified_date: '2018-12-06'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -32,7 +32,7 @@ Product | Admin | Creator | Observer
 [Cloud Load Balancers](/how-to/permissions-matrix-for-cloud-load-balancers) | Yes | Yes | Yes
 [Cloud Queues](/how-to/permissions-matrix-for-cloud-queues) | Yes | Yes | Yes
 [Cloud Networks](/how-to/permissions-matrix-for-cloud-networks) | Yes | Yes | Yes
-[Cloud Monitoring](/how-to/detailed-permissions-matrix-for-rackspace-monitoring) | Yes | Yes | Yes
+[Cloud Monitoring](/how-to/permissions-matrix-for-rackspace-monitoring) | Yes | Yes | Yes
 [Cloud Block Storage](/how-to/permissions-matrix-for-cloud-block-storage) | Yes | Yes | Yes
 [Rackspace Auto Scale](/how-to/permissions-matrix-for-auto-scale) | Yes | No | Yes
 [Cloud Images](/how-to/detailed-permissions-matrix-for-cloud-images) | Yes | Yes | Yes
