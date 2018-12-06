@@ -5,7 +5,7 @@ title: 'Check for a security compromise: back doors and intruders'
 type: article
 created_date: '2013-04-25'
 created_by: Rose Contreras
-last_modified_date: '2018-11-06'
+last_modified_date: '2018-12-06'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -68,4 +68,4 @@ server, run the following command:
 
 ### Summary
 
-In this article, you've learned some techniques to use to discover back doors and track intruders on your server. These techniques will help you avoid a repeat of whatever situation or mistake led to the compromise, so you are less likely to get hacked again in the same way. In the next article, [Checking for a security compromise: Rescue mode investigation](/how-to/checking-for-a-security-compromise-rescue-mode-investigation), you will learn how to investigate your cloud server in rescue mode.
+In this article, you've learned some techniques to use to discover back doors and track intruders on your server. These techniques will help you avoid a repeat of whatever situation or mistake led to the compromise, so you are less likely to get hacked again in the same way. In the next article, [Checking for a security compromise: Rescue mode investigation](/how-to/check-for-a-security-compromise-rescue-mode-investigation), you will learn how to investigate your cloud server in rescue mode.

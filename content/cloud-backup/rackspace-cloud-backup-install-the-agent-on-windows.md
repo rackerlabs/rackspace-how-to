@@ -5,8 +5,8 @@ title: Install the Cloud Backup agent on Windows
 type: article
 created_date: '2014-05-01'
 created_by: Megan Meza
-last_modified_date: '2017-06-23'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -341,4 +341,4 @@ The following changes should occur:
 
         The specified service does not exist as an installed service.
 
-**Next steps:** [Create a backup](/how-to/rackspace-cloud-backup-create-a-backup-0)
+**Next steps:** [Create a backup](/how-to/rackspace-cloud-backup-create-a-backup)

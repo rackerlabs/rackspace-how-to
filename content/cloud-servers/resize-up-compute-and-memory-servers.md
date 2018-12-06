@@ -5,8 +5,8 @@ title: Resize up compute and memory servers
 type: article
 created_date: '2018-08-30'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -82,4 +82,4 @@ For more information, see the following resources:
 - [Basic Cloud Server security](/how-to/basic-cloud-server-security)
 - [Reboot your server](/how-to/reboot-your-server)
 - [Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server)
-- [Delete your server](/how-to/deleting-your-server)
+- [Delete a server](/how-to/delete-a-server)

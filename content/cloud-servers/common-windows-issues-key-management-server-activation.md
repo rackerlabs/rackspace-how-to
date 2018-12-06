@@ -5,8 +5,8 @@ title: 'Common Windows Issues: Key Management Server Activation'
 type: article
 created_date: '2011-08-15'
 created_by: Rackspace Support
-last_modified_date: '2018-09-17'
-last_modified_by: Thomas Williams
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -31,8 +31,7 @@ KMS.
    **Note**: If there is a reply, move on to step 3. No reply means that there
    is an interface, hardware, or routing issue. We recommend the following
    article for help resolving the issue: [Update ServiceNet routes on cloud
-   servers created before June 3,
-   2013](https://support.rackspace.com/how-to/updating-servicenet-routes-on-cloud-servers-created-before-june-3-2013/)
+   servers](/how-to/updating-servicenet-routes-on-cloud-servers/)
 
 3. Set the KMS manually within the registry:
 
@@ -135,4 +134,3 @@ KMS.
 12. You must open UDP port 123 to allow the sync.
 
 13. Make sure your firewall allows outbound connections to TCP port 1688.
-

@@ -5,8 +5,8 @@ title: Log in to the Archive Manager
 type: article
 created_date: '2015-05-19'
 created_by: Beau Bailey
-last_modified_date: '2018-03-28'
-last_modified_by: William Loy
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -29,10 +29,10 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/domains_archive.png %}" />
 
-3. Select the domain for the archive that you want to log into, and then click **Manage My Archive**. 
+3. Select the domain for the archive that you want to log into, and then click **Manage My Archive**.
 
    The dashboard for the domain's archive displays.
 
    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/manage_archive.png %}" />
 
-After you are logged into your Rackspace Hosted Email Archive, you can perform many additional functions such as [creating searches](/how-to/create-and-archive-search), [exporting searches](/how-to/export-archive-search-results-in-cloud-office), [adding archive users](/how-to/add-and-edit-archive-users-in-cloud-office), and more.
+After you are logged into your Rackspace Hosted Email Archive, you can perform many additional functions such as [creating searches](/how-to/create-an-archive-search), [exporting searches](/how-to/export-archive-search-results-in-cloud-office), [adding archive users](/how-to/add-and-edit-archive-users-in-cloud-office), and more.

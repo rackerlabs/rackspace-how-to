@@ -5,8 +5,8 @@ title: Learn more about Cloud Servers
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-06'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -21,7 +21,7 @@ Looking for information about Cloud Servers? The following sections contain link
 
 [Connect to a cloud server](/how-to/connect-to-a-cloud-server): Explains how to remotely log in to your server.
 
-[Managing My Server](/how-to/managing-my-server): Describes tasks that you can perform on servers by using the Cloud Control Panel.
+[Manage a cloud server](/how-to/manage-a-cloud-server): Describes tasks that you can perform on servers by using the Cloud Control Panel.
 
 ### Best practices
 

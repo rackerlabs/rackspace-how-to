@@ -5,8 +5,8 @@ title: Cloud Servers FAQ
 type: article
 created_date: '2015-12-01'
 created_by: Rackspace Support
-last_modified_date: '2018-10-26'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -103,7 +103,7 @@ you to save your IP address.
 
 You can [reboot your server](/how-to/reboot-your-server).
 You can [restore from a backup](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image).
-You can [delete your server](/how-to/deleting-your-server)
+You can [delete your server](/how-to/delete-a-server)
 and start over. You can [boot into an emergency rescue mode](/how-to/rescue-mode)
 and attempt fix the problem. There are many options for recovering from
 mistakes, but the easiest is to keep regular backups and to [make a fresh backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup)

@@ -5,7 +5,7 @@ title: Configure a renamed email address in Apple Mail
 type: article
 created_date: '2017-08-23'
 created_by: William Loy
-last_modified_date: '2017-09-12'
+last_modified_date: '2018-12-06'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
@@ -66,4 +66,4 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    **Note:** You can use the default settings.
 
-**Warning:** You must configure your Mac to synchronize various IMAP folders and prevent duplicate folder creation. This is called **Folder Mapping**. For instructions, see [Sync IMAP folders for new accounts in Apple Mail](/how-to/sync-imap-folders-for-new-accounts-in-apple-mail/) for instructions.
+**Warning:** You must configure your Mac to synchronize various IMAP folders and prevent duplicate folder creation. This is called **Folder Mapping**. For instructions, see [Sync IMAP folders for new accounts in Apple Mail](/how-to/synchronize-imap-folders-for-new-accounts-in-apple-mail/) for instructions.

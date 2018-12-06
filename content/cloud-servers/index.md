@@ -3,8 +3,8 @@ title: Cloud Servers
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support
-last_modified_date: '2018-11-01'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 permalink: /cloud-servers/
 product: Cloud Servers
 product_url: cloud-servers
@@ -47,7 +47,7 @@ This introduction covers everything you need to know as a new Rackspace customer
 - [Navigating the Cloud Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel)
 - [Generating your API key](/how-to/view-and-reset-your-api-key)
 
-### [Managing your server](/how-to/managing-your-server)
+### [Manage a cloud server](/how-to/manage-a-cloud-server)
 
 - [Start a console session](/how-to/start-a-console-session)
 - [Reboot your server](/how-to/reboot-your-server)
@@ -58,4 +58,4 @@ This introduction covers everything you need to know as a new Rackspace customer
 - [Troubleshooting low disk space for a Linux cloud server](/how-to/troubleshooting-low-disk-space-for-a-linux-cloud-server)
 - [Using server logs](/how-to/using-server-logs)
 - [Reset your server password](/how-to/reset-your-server-password)
-- [Deleting your server](/how-to/deleting-your-server)
+- [Deleting your server](/how-to/delete-a-server)

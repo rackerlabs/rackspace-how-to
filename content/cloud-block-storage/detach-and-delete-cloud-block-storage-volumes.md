@@ -5,8 +5,8 @@ title: Detach and delete Cloud Block Storage volumes
 type: article
 created_date: '2012-10-22'
 created_by: David Hendler
-last_modified_date: '2018-10-24'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -119,7 +119,7 @@ volume when you delete the cloud server.
     Support. For more detailed information, see the `delete-on-termination`
     flag in the examples in [this section of the API documentation](https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#create-bootable-volume-and-server).
 
-2. [Delete the server](/how-to/deleting-your-server).
+2. [Delete the server](/how-to/delete-a-server).
 
 After the server is deleted, the volume is in a detached state and is ready to
 be attached to another cloud server as an additional volume or to be used with a
