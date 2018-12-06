@@ -5,8 +5,8 @@ title: Delete a Rackspace Email mailbox
 type: article
 created_date: '2017-06-09'
 created_by: William Loy
-last_modified_date: '2017-09-14'
-last_modified_by: William Loy
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -27,7 +27,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 It is important to know the difference between blocking access to a mailbox and deleting a mailbox.
 
-- Blocking access to a mailbox prevents users from accessing the mailbox. When mailbox access is blocked, it remains on your account and you continue to be billed for that mailbox. The mailbox retains its previous data and receives new mail sent to it. If you need to block access to a mailbox rather than deleting it, please see [Block mailbox access](/how-to/block-mailbox-access) for instructions.
+- Blocking access to a mailbox prevents users from accessing the mailbox. When mailbox access is blocked, it remains on your account and you continue to be billed for that mailbox. The mailbox retains its previous data and receives new mail sent to it.
 
 - Deleting a mailbox removes that mailbox and all of its data from Rackspace's servers.
 
