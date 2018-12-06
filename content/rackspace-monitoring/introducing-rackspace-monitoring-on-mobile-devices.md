@@ -5,8 +5,8 @@ title: Use Rackspace Monitoring on Mobile Devices
 type: article
 created_date: '2014-02-18'
 created_by: Maria Abrahms
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -40,9 +40,6 @@ following link for your device:
 [<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/Download_on_the_App_Store_Badge_US-UK.png %}" width="203" height="60" />](https://itunes.apple.com/us/app/rackspace-cloud-control/id672443103?mt=8)
 
 [<img src="{% asset_path rackspace-monitoring/introducing-rackspace-monitoring-on-mobile-devices/en_app_rgb_wo_60.png %}" width="172" height="60" />](https://play.google.com/store/apps/details?id=com.rackspace.cloudmobile)
-
-For instructions on how to log in and add accounts to your device, see
-[Getting Started with the Rackspace Mobile Application and Managing Accounts](/how-to/getting-started-with-the-rackspace-mobile-application-and-managing-accounts).
 
 ### Open the monitoring screen
 

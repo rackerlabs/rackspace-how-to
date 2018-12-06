@@ -5,8 +5,8 @@ title: Get support by using Live Chat
 type: article
 created_date: '2012-03-20'
 created_by: Rackspace Support
-last_modified_date: '2018-08-30'
-last_modified_by: Chris Moyer
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -19,5 +19,3 @@ you interact with a specialist trained to support our products.
 ### Additional resources
 
 - [Create a support ticket in the Cloud Control Panel](/how-to/create-a-support-ticket-in-the-cloud-control-panel)
-
-- [Getting started with the Rackspace Mobile Application and Managing Accounts](/how-to/getting-started-with-the-rackspace-mobile-application-and-managing-accounts)
