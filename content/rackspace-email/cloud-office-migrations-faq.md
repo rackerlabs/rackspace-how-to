@@ -5,8 +5,8 @@ title: Cloud Office migrations FAQ
 type: article
 created_date: '2013-11-13'
 created_by: Milton Prado
-last_modified_date: '2017-07-04'
-last_modified_by: William Loy
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -50,7 +50,8 @@ See [Items migrated during a Cloud Office migration](/how-to/items-migrated-duri
 
 #### Can I upgrade from Rackspace Email or Microsoft Exchange to Office 365 with Rackspace?
 
-Yes you can! Reference [Rackspace Email and Microsoft Exchange upgrade to Office 365 FAQ](/how-to/rackspace-email-and-microsoft-exchange-upgrade-to-office-365-faq/) for options and instructions.
+Yes, you can upgrade to Office 365 with Rackspace from both Rackspace Email
+and Microsoft Exchange.
 
 #### Can I change from Rackspace Email to Exchange or from Exchange to Rackspace Email?
 
