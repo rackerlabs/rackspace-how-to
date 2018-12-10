@@ -77,4 +77,4 @@ the other. As a result, most of the tips in the [article about speeding up rsync
 You've compared the origin and destination servers to each other and
 prepared your file systems for the copy.
 
-For information on running rsync manually, see either [Speed up rsync when migrating a Linux server](/how-to/speed-up-rsync-when-migrating-a-linux-server-from-the-command-line) or (Back up your files with rsync)[https://support.rackspace.com/how-to/backing-up-your-files-with-rsync/].
+For information on running rsync manually, see either [Speed up rsync when migrating a Linux server](/how-to/speed-up-rsync-when-migrating-a-linux-server-from-the-command-line) or [Back up your files with rsync](https://support.rackspace.com/how-to/backing-up-your-files-with-rsync/).
