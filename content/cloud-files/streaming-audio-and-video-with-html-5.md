@@ -52,7 +52,7 @@ When you use your own audio files, you might find
 
 Use the following steps to download and test audio streaming functionality:
 
-1. Download the [zip archive]((http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_audio.zip)) and
+1. Download the [zip archive](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_audio.zip) and
    unzip it on your computer.
 2. Upload the files into your CDN-enabled container.
 3. Open the **audiotest.html** file on your computer and locate the **.mp3**
