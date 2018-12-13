@@ -236,8 +236,8 @@ to verify that certain configurations such as character sets and time zone
 data are updated to match your previous 5.1 database instance.
 
 **Note**: We recommend that you use a staging or test server for your
-applications to verify functionality before you transition the applications to
-the new MySQL 5.6 instance.
+applications to verify functionality before you transition the applications
+to the new MySQL 5.6 instance.
 
 #### Transition applications to the MySQL 5.6 instance
 
