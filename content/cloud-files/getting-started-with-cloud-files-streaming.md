@@ -5,7 +5,7 @@ title: Getting started with Cloud Files streaming
 type: article
 created_date: '2016-02-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-12-12'
+last_modified_date: '2018-12-13'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
@@ -34,7 +34,7 @@ streaming content. Use the following steps to perform this task:
 
 ### Get the container's streaming URLs
 
-After your container is CDN-enabled, use the following steps to get the container's streaming URLs.
+After your container is CDN-enabled, use the following steps to get the container's streaming URLs:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 2. In the top navigation bar, select **Product > Rackspace Cloud**.
