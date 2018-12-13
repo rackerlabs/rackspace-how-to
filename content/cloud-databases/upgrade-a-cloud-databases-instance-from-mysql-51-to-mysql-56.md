@@ -109,6 +109,8 @@ for a specific password, you should have the list of passwords before you
 create the users so that you don't have to update the application
 configuration later.
 
+Use the following steps to rebuild users on the MySQL 5.6 instance:
+
 1. In the Cloud Control Panel, click on the MySQL 5.1 instance.
 
     The list of users displays on the Instance Details page.
@@ -124,7 +126,7 @@ until the transfer is complete. This steps prevents any new data from being
 added to the MySQL 5.1 instance while you're finishing the upgrade and
 transitioning to the new MySQL 5.6 instance.
 
-**Warning**: The following sections describe how to export your current
+**Note**: The following sections describe how to export your current
 databases and import them to the new instance. During this process, the MySQL
 5.1 database is in a read-only state, and any updates to the database could
 potentially be lost to the new destination instance during the export and
@@ -160,20 +162,20 @@ to the database instance:
       database user
     - <code>xxxxx.rackspaceclouddb.com</code>: The host name of the source
       instance
-    - <code>database 01 database 02 database 03</code> A list of the databases
+    - <code>database 01 database 02 database 03</code>: A list of the databases
       that you're exporting and importing
 
 3. Run the **<code>mysql</code>** command, replacing the following items in
    each section of the command:
 
     - <code>destination_db_user</code>: The database that the user created on
-      the destination for the purpose of importing
+      the destination for the import
     - <code>destination_password</code>: The password specified for the
       destination database user
     - <code>yyyyy.rackspaceclouddb.com</code>: The host name of the
       destination instance
 
-    The following code block provides an example:
+    The following code provides an example:
 
         mysqldump --user=source_db_user --host=xxxxx.rackspaceclouddb.com --password=source_password --no-create-db --databases database_01 database_02 database_03 | mysql
 	    --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password</pre>
@@ -202,7 +204,7 @@ Use the following steps to perform this task:
     - <code>database 01 database 02 database 03</code>: A list of the databases
       that you're exporting and importing
 
-  The following code block provides an example:
+  The following code provides an example:
 
         mysqldump --user=source_db_user --host=xxxxx.rackspaceclouddb.com --password=source_password --no-create-db --databases database_01 database_02 database_03 |
         gzip
@@ -218,7 +220,7 @@ Use the following steps to perform this task:
     - <code>yyyyy.rackspaceclouddb.com</code>: The host name of the
       destination instance
 
-    The following code block provides an example:
+    The following code provides an example:
 
         zcat sourceDB.sql.gz | mysql --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password</code>
 
