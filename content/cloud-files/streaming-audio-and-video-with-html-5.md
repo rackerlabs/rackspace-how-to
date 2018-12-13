@@ -13,13 +13,13 @@ product_url: cloud-files
 
 In addition to media players, you can stream your media by using HTML5. Most
 modern web browsers and even mobile phone browsers can stream
-audio and video with HTML5. Other players that are based on Flash can't deliver
-to such a wide audience. However, not every browser can play the same
-file. As a result, content providers have to offer different formats of the
-same file to reach the most people. For audio, you can use files in **.mp3**
-and **.ogg** formats. For  video, you can use the **.mp4**, **.ogv**, and
-**.webm** file formats. For details about the formats that browsers support,
-see [HTML 5 and browser
+audio and video with HTML5. Other players that are based on Adobe&reg;
+Flash&reg; can't deliver to such a wide audience. However, not every browser
+can play the same file. As a result, content providers offer different
+formats of the same file to reach the most people. For audio, you can use
+files in **.mp3** and **.ogg** file formats. For  video, you can use the
+**.mp4**, **.ogv**, and **.webm** file formats. For details about the formats
+that browsers support, see [HTML 5 and browser
 support](http://en.wikipedia.org/wiki/HTML5_video#Browser_support).
 
 ### CDN-enable a container
@@ -41,14 +41,14 @@ and video with HTML5.
 ### Stream audio
 
 This section describes how to use [sample audio and web page
-files](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_audio.zip) to
-download and test audio streaming functionality.
+files](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_audio.zip)
+to download and test audio streaming functionality.
 
-HTML5 requires using **mp3** and **ogg** file formats to cover the most
-platforms. Both formats are included in the **zip** archive of sample files.
-When you use your own audio files, you might find
-[media.io](http://media.io/) convenient for converting **mp3** files into
-**ogg** files.
+HTML5 requires you to use both the **mp3** and **ogg** file format to maximize
+the number of platforms on which your media can be played. Both formats are
+included in the **zip** archive of sample files. When you use your own audio
+files, you might find [media.io](http://media.io/) convenient for converting
+**mp3** files into **ogg** files.
 
 Use the following steps to download and test audio streaming functionality:
 
@@ -85,8 +85,8 @@ This section describes how to use [sample video and web page
 files](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_video.zip) zip
 archive of video files) to download and test video streaming functionality.
 
-HTML5 video requires the following three file formats to ensure that you cover
-the most platforms:
+HTML5 video requires you to use the following three file formats to maximize
+the number of platforms on which your media can be played:
 
 - **.mp4**
 - **.ogv**
