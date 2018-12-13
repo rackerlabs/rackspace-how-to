@@ -26,8 +26,8 @@ low-traffic period.
 
 Before you upgrade the instance, we recommend that you review the change
 documentation from MySQL that appears in this section. The documentation
-describes the changes that you can expect from a migration from version 5.1 to
-version 5.6, and helps you ensure that your application is prepared for the
+describes the changes that you can expect from a migration from version 5.1
+to version 5.6, and helps you ensure that your application is prepared for the
 changes in functionality between the two versions.
 
 **Note**: This article shows you how to upgrade directly from MySQL 5.1 to 5.6
