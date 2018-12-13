@@ -11,8 +11,8 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-In addition to media players, you can stream your media by using HTML5. Most
-modern web browsers and even mobile phone browsers can stream
+In addition to media players, you can stream your media by using HTML5.
+Most modern web browsers and even mobile phone browsers can stream
 audio and video with HTML5. Other players that are based on Adobe&reg;
 Flash&reg; can't deliver to such a wide audience. However, not every browser
 can play the same file. As a result, content providers offer different
