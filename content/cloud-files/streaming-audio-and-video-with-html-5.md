@@ -25,8 +25,8 @@ support](http://en.wikipedia.org/wiki/HTML5_video#Browser_support).
 ### CDN-enable a container
 
 To complete the tutorials in this article, you need to have a CDN-enabled
-container in your Cloud Files account. Use the following steps to CDN-enable a
-Cloud Files container:
+container in your Cloud Files account. Use the following steps to CDN-enable
+a Cloud Files container:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
