@@ -1,28 +1,32 @@
 ---
 permalink: streaming-audio-and-video-with-html-5/
-audit_date:
-title: Stream Audio and Video with HTML 5
+audit_date: '2018-12-13'
+title: Stream audio and video with HTML 5
 type: article
 created_date: '2013-02-01'
 created_by: David Hendler
-last_modified_date: '2018-10-24'
+last_modified_date: '2018-12-13'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
 
-In addition to the various players, you can stream your media using HTML5. Most modern web browsers and even mobile phone browsers can stream
-audio and video with HTML5. Other players based on Flash cannot deliver
+In addition to media players, you can stream your media by using HTML5. Most
+modern web browsers and even mobile phone browsers can stream
+audio and video with HTML5. Other players that are based on Flash can't deliver
 to such a wide audience. However, not every browser can play the same
-file, so we have to offer different formats of the same file in order to
-reach the most people. For audio, we can use **.mp3** and **.ogg**, and for
-video we can use **.mp4**, **.ogv**, and **.webm**. See the Wikipedia page
-about [HTML 5 and browser
-support](http://en.wikipedia.org/wiki/HTML5_video#Browser_support) for
-details on which browsers can use which format.
+file. As a result, content providers have to offer different formats of the
+same file to reach the most people. For audio, you can use files in **.mp3**
+and **.ogg** formats. For  video, you can use the **.mp4**, **.ogv**, and
+**.webm** file formats. For details about the formats that browsers support,
+see [HTML 5 and browser
+support](http://en.wikipedia.org/wiki/HTML5_video#Browser_support).
 
-For these tutorials, you need to have a CDN-enabled container in
-your Cloud Files account:
+### CDN-enable a container
+
+To complete the tutorials in this article, you need to have a CDN-enabled
+container in your Cloud Files account. Use the following steps to CDN-enable a
+Cloud Files container:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
@@ -37,20 +41,24 @@ and video with HTML5.
 ### Stream audio
 
 This section describes how to use [sample audio and web page
-files](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_audio.zip) to download and test audio streaming
-functionality.
+files](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_audio.zip) to
+download and test audio streaming functionality.
 
 HTML5 requires using **mp3** and **ogg** file formats to cover the most
 platforms. Both formats are included in the **zip** archive of sample files.
-When you use your own audio files, you may find
-[media.io](http://media.io/) convenient for converting **mp3s**
-into **ogg** files.
+When you use your own audio files, you might find
+[media.io](http://media.io/) convenient for converting **mp3** files into
+**ogg** files.
 
-1. Download the zip archive and unzip it on your computer.
+Use the following steps to download and test audio streaming functionality:
+
+1. Download the [zip archive]((http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_audio.zip)) and
+   unzip it on your computer.
 2. Upload the files into your CDN-enabled container.
-3. Open the **audiotest.html** file on your computer and locate the **.mp3** and **.ogg** file links.
+3. Open the **audiotest.html** file on your computer and locate the **.mp3**
+   and **.ogg** file links.
 
-  The HTML should look similar to the following example:
+    The HTML should look similar to the following example:
 
        ...
        <audio controls>
@@ -60,28 +68,40 @@ into **ogg** files.
        </audio>
        ...
 
-4. In Cloud Files, click the action gear for the **.mp3** file and select **View All Links**.
-5. Copy the HTTP link and paste it as the **.mp3** file link in **audiotest.html**.
-6. In Cloud Files, click the action gear for the **.ogg** file and select **View All Links**.
-7. Copy the HTTP link and paste it as the **.ogg** file link in **audiotest.html**.
+4. In Cloud Files, click the action gear for the **.mp3** file and select
+   **View All Links**.
+5. Open **audiotest.html** in a text editor. Copy the HTTP link and paste it
+   as the **.mp3** file link in **audiotest.html**.
+6. In Cloud Files, click the action gear for the **.ogg** file and select
+   **View All Links**.
+7. Copy the HTTP link and paste it as the **.ogg** file link in
+   **audiotest.html**.
 8. Save **audiotest.html** and upload it to the CDN-enabled container.
 9. Click the **audiotest.html** link to view the audio files.
 
 ### Stream video
 
 This section describes how to use [sample video and web page
-files](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_video.zip "zip archive of video files) to download and test video streaming functionality.
+files](http://81310752d5730fb4ef3c-221b4998ec12974102282b6d4a8fafbe.r2.cf1.rackcdn.com/streaming_video.zip) zip
+archive of video files) to download and test video streaming functionality.
 
-HTML5 video requires three formats, **.mp4**, **.ogv**, and **.webm**, to
-ensure that you cover the most platforms. The **.png**
-image is a placeholder before your visitor starts the video.
-When you use your own videos, you might find the Miro Video Converter
-useful to convert your videos into the alternate formats. You may
-download this free utility directly from [the Miro site](http://www.mirovideoconverter.com/) or from [the Apple iTunes store](https://itunes.apple.com/us/app/miro-video-converter-mvc/id412699210?mt=12).
+HTML5 video requires the following three file formats to ensure that you cover
+the most platforms:
+
+- **.mp4**
+- **.ogv**
+- **.webm**
+
+The image in **.png** format acts as a placeholder that appears before a user starts the video. When you use your own videos, you might find the Miro Video Converter useful for converting your videos into alternate formats. You may
+download this free utility directly from [the Miro site](http://www.mirovideoconverter.com/) or from the [Apple&reg; iTunes&reg;
+store](https://itunes.apple.com/us/app/miro-video-converter-mvc/id412699210?mt=12).
+
+Use the following steps to test video streaming functionality:
 
 1. Download the zip archive and unzip it on your computer.
 2. Upload the files into your CDN-enabled container.
-3. Open the **videotest.html** file on your computer and locate the **.png**, **.mp4**, **.ogv**, and **.webm** file links.
+3. Open the **videotest.html** file in a text editor on your computer and
+   locate the links for the **.png**, **.mp4**, **.ogv**, and **.webm** files.
 
    The HTML should look similar to the following example:
 
@@ -92,8 +112,11 @@ download this free utility directly from [the Miro site](http://www.mirovideocon
        <em>Sorry, your browser doesn't support HTML5 video.</em>
        </video>
 
-4. In Cloud Files, click the action gear for the **.png** file and select **View All Links**.
-5. Copy the HTTP link and paste it as the .**png** file link in **videotest.html**.
-6. Copy and paste the HTTP links for the **.mp4**, **.ogv**, and **.webm** file types into **videotest.html**.
+4. In Cloud Files, click the action gear for the **.png** file and select
+   **View All Links**.
+5. Copy the HTTP link and paste it as the .**png** file link in
+   **videotest.html**.
+6. Copy and paste the HTTP links for the **.mp4**, **.ogv**, and **.webm**
+   file types into **videotest.html**.
 7. Save the **videotest.html** file and upload it to the CDN-enabled container.
 8. Click the **videotest.html** link to view it.
