@@ -69,7 +69,7 @@ Use the following steps to create a copy of the original instance:
 Use the following steps to create a new Cloud Databases instance:
 
 1. In the Cloud Control Panel, click **Databases > MySQL Instance**.
-4. In the **Identity** section of the Create Instance page, enter an
+4. In the **Identity** section of the **Create Instance** page, enter an
    **Instance Name** and select a **Region** from the drop-down list.
 5. In the **Engine** section, choose **MySQL 5.6** for the instance type.
 6. In the **Build** section, select the amount of memory that you want the
@@ -95,9 +95,9 @@ Use the following steps to rebuild databases on the MySQL 5.6 instance:
 
 1. In the Cloud Control Panel, click on the MySQL 5.1 instance.
 
-    The list of databases displays on the Instance Details page.
+    The list of databases displays on the **Instance Details** page.
 
-2. Open the Instance Details page for the new MySQL 5.6 instance,
+2. Open the **Instance Details** page for the new MySQL 5.6 instance,
    click **Create Database**, and enter the name of a database from the 5.1
    instance. Repeat this step until you have recreated all of the databases.
 
@@ -113,16 +113,16 @@ Use the following steps to rebuild users on the MySQL 5.6 instance:
 
 1. In the Cloud Control Panel, click on the MySQL 5.1 instance.
 
-    The list of users displays on the Instance Details page.
+    The list of users displays on the **Instance Details** page.
 
-2. Open the Instance Details page for the new MySQL 5.6 instance, click
+2. Open the **Instance Details** page for the new MySQL 5.6 instance, click
    **Create User**, and enter the name of a user from the 5.1 instance.
    Repeat this step until you have recreated all of the users.
 
 ### Configure the application for read-only or maintenance mode
 
 Configure your application or website to a maintenance mode or read-only state
-until the transfer is complete. This steps prevents any new data from being
+until the transfer is complete. This step prevents any new data from being
 added to the MySQL 5.1 instance while you're finishing the upgrade and
 transitioning to the new MySQL 5.6 instance.
 
@@ -153,7 +153,7 @@ to the database instance:
 1. Log in to a cloud server that's available within the same data center as
    your source and destination database instances.
 
-2. Run the **<code>mysqldump</code>** command, replacing the following items
+2. Run the <code>mysqldump</code> command, replacing the following items
    in each section of the command:
 
     - <code>source\_db_user</code>: The database that the user created on the
@@ -165,7 +165,7 @@ to the database instance:
     - <code>database 01 database 02 database 03</code>: A list of the databases
       that you're exporting and importing
 
-3. Run the **<code>mysql</code>** command, replacing the following items in
+3. Run the <code>mysqldump</code> command, replacing the following items in
    each section of the command:
 
     - <code>destination_db_user</code>: The database that the user created on
@@ -192,7 +192,7 @@ Use the following steps to perform this task:
 1. Log in to a cloud server that's available within the same data center as
    your source and destination database instances.
 
-2. Run the **<code>mysqldump</code>** command, replacing the following items
+2. Run the <code>mysqldump</code> command, replacing the following items
    in each section of the command:
 
     - <code>source\_db_user</code>: The database that the user created on the
@@ -210,7 +210,7 @@ Use the following steps to perform this task:
         gzip
         -1 &gt; sourceDB.sql.gz
 
-3. Run the **<code>mysql</code>** command, replacing the following items in
+3. Run the <code>mysql</code> command, replacing the following items in
    each section of the command:
 
     - <code>destination_db_user</code>: The database that the user created on
