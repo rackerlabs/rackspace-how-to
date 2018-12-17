@@ -263,12 +263,13 @@ package, you can still use your distribution's package manager to install it.
 ### Install from source
 
 In some situations, you might have to manually compile and install a
-package. This might occur when you need special customizations that weren't
-enabled by default, or when the software that you want to install
-doesn't have a pre-compiled version.
+package. This might occur when you need special customizations that
+weren't enabled by default, or when the software that you
+want to install doesn't have a pre-compiled version.
 
-If you need to manually compile and install a package, we recommend that you
-go directly to the software documentation for instructions. You almost certainly need a C/C++ compiler and make utility to perform this
+If you need to manually compile and install a package, we recommend that
+you go directly to the software documentation for instructions. You almost
+certainly need a C/C++ compiler and make utility to perform this
 task. You can install these tools by running the following commands:
 
 -  On Debian:
