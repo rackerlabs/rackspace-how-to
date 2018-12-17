@@ -5,8 +5,8 @@ title: Check listening ports with netstat
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2018-09-19'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-17'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -77,7 +77,3 @@ If you make changes at this point, be sure to test your setup to verify that you
 have resolved your issue.
 
 If using the `netstat` did not resolve your port issues, continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)
-
-**Was this helpful?** <br/>
-[**Yes**](https://rackspaceinc.co1.qualtrics.com/jfe/form/SV_9ppN6Ts7BYDZLKd) &nbsp; | &nbsp; [**No**](https://rackspaceinc.co1.qualtrics.com/jfe/preview/SV_5uP0tJVpGUw1iLj?)
-
