@@ -12,8 +12,8 @@ product_url: cloud-servers
 ---
 
 If you have problems accessing the Cloud Control Panel or any
-other [Rackspace Cloud](https://www.rackspace.com/cloud) services, check the
-[Cloud Status page](https://status.rackspace.com/). This page
+other [Rackspace Cloud](https://www.rackspace.com/cloud) services,
+check the [Cloud Status page](https://status.rackspace.com/). This page
 lists all maintenance operations and service-impacting events, including
 emergency outages.
 
