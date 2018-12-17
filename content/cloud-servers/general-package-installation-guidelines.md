@@ -11,9 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article helps you make the adaptations needed to apply a given set of
-instructions to your Linux&reg; Cloud Server. The procedure for installing
-packages is similar across Linux distributions.
+This article shows you how to use package managers to make adaptations to your
+Linux&reg; Cloud Server. The procedure for installing packages is similar
+across Linux distributions.
 
 ### Package managers and repositories
 
@@ -94,7 +94,7 @@ resources:
 
 #### apt-get (Debian and Ubuntu)
 
-apt-get is a popular alternative to APT that you can use to manage packages on
+Apt-get is a popular alternative to APT that you can use to manage packages on
 Debian and Ubuntu.
 
 Use the following commands to manage packages by using apt-get:
@@ -121,15 +121,15 @@ Use the following commands to manage packages by using apt-get:
 
 -   Search for a specific package:
 
-        apt-cache search <keyword>
+        apt-cache search KEYWORD
 
-#### Yum and RPM Package Manager (RPM) (CentOS, Fedora&trade;, and Red Hat&reg;)
+#### Yum and RPM Package Manager (RPM) (CentOS, Fedora, and Red Hat)
 
 Yum handles automatic updates and package installation and removal for RPM
 Package Manager (RPM) systems.
 
-On CentOS, Fedora, and Red Hat, use the following commands with the Yum
-package manager:
+On CentOS&reg;, Fedora&trade;, and Red Hat&reg;, use the following commands
+with the Yum package manager:
 
 -   Install a package:
 
@@ -273,11 +273,11 @@ task. You can install these tools by running the following commands:
 
 -  On Debian:
 
-    apt-get install build-essential
+      apt-get install build-essential
 
 -  On CentOS:
 
-    yum groupinstall "Development Tools"
+      yum groupinstall "Development Tools"
 
 These commands install the utilities that you need to install most common
 packages directly from the source. After you install them, you are able to
