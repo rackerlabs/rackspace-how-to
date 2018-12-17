@@ -353,7 +353,7 @@ information, see
 security standard nor will it fit every environment. Use this sample only to
 help you with syntax and ideas on how to use `iptables`.
 
-Following are the the default locations where `iptables` rulesets are saved on a given Linux
+Following are the default locations where `iptables` rulesets are saved on a given Linux
 distribution. Some distributions allow you to save elsewhere by using the
 `iptables-save` command.
 

@@ -171,7 +171,7 @@ particular log. The possible commands include:
 If a rotation interval is not specified the log will be rotated whenever
 logrotate runs (unless another condition like `size` has been set).
 
-If you want to use a time interval other than the the defined ones, you need
+If you want to use a time interval other than the defined ones, you need
 to use cron to create a separate configuration file. For example, if you want
 to rotate a particular log file hourly, you could create a file in
 `/etc/cron.hourly` (you might need to create that directory too) that would
@@ -246,7 +246,7 @@ log.
     endscript
 
 `>/dev/null` tells logrotate to pipe the command's output to nowhere. In this
-case, you don't need to view the the output if the application restarted
+case, you don't need to view the output if the application restarted
 correctly.
 
 The `postrotate` command tells logrotate that the script to run, starts on the

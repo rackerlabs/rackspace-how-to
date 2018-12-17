@@ -110,7 +110,7 @@ In order to operate the scheduled images service with minimal impact on
 on-demand snapshots and other network-intensive data transfers, the time
 a snapshot occurs may be changed at any time to optimize load.  We
 reserve the right to modify the time your image is made so that we can
-balance the the number of image creations in flight throughout the cloud
+balance the number of image creations in flight throughout the cloud
 and throughout the day.
 
 #### Will the image created\_at reflect the completion or start time?

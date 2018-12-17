@@ -111,7 +111,7 @@ updates are completed, select the check box under **Microsoft Update**.
 
 4. (Optional) Notifications can be set up so that the output of the yum updates is emailed to inform the user what updates completed and what updates failed. Use the arrow keys on the keyboard to move down to the section titled "emitters".  The `emit\_via` value should should be set to `stdio`. 
 
-5. Move your cursor to the the "email" section.
+5. Move your cursor to the "email" section.
 
 6. Update the configuration to change the `email\_to` field to the email you want the output you to be sent.
 
