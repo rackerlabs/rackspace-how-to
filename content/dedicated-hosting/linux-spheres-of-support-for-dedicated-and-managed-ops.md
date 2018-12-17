@@ -5,8 +5,8 @@ title: Linux Spheres of Support for Dedicated and Managed Operations
 type: article
 created_date: '2017-03-03'
 created_by: Alex Juarez
-last_modified_date: '2018-11-06'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-17'
+last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -28,7 +28,6 @@ The following operating systems are supported only for Managed Operations:
 
 - Debian&reg; 9 (Stretch)
 - Debian 8 (Jessie)
-- Debian 7 (Wheezy)
 - Ubuntu 18.04 LTS (Bionic Beaver)
 
 **Note**: Rackspace makes every effort to align our support dates for operating systems with the manufacturer's support dates. If a manufacturer decides to shorten the support life of an operating system, Rackspace might be forced to end support sooner than originally anticipated. For full details on support life, see the [Rackspace EOL Terms](https://www.rackspace.com/information/legal/eolterms).
@@ -55,8 +54,7 @@ The following types of database servers are supported in the indicated areas:
 
 **Note**: Linux OS administrators handle basic database support topics. Advanced topics might require DBA support assistance. PostgreSQL, MongoDB, and Oracle are not supported by Linux OS administrators. The Rackspace DBA team supports Oracle and MySQL. PostgreSQL requests can be considered on a case-by-case basis. The Rackspace DBA team is available for support consultation on database issues; fees might apply. For more information visit our [DBA Services page](https://www.rackspace.com/en-us/dba-services).
 
-**Note**: Rackspace will install and support the official Oracle MySQL, MariaDB and Percona MySQL
-software from the vendor's repositories.
+**Note**: Rackspace will install and support the official Oracle MySQL, MariaDB and Percona MySQL software from the vendor's repositories.
 
 ### File servers
 
@@ -113,6 +111,16 @@ The following services are supported on Red Hat Cluster Suite&reg; (RHCS) in the
 | Redis | Yes | Yes | Yes | Yes |
 
 **Note**: RHCS is supported only on physical hardware platforms (not including OnMetal offerings). Oracle on RHCS is supported in tandem by the DBA team and Linux OS administrators.
+
+### Containerization technologies
+
+ The following containerization technologies are supported:
+
+ |   | Installation | Configuration | Troubleshooting | Patching |
+ | --- | --- | --- | --- | --- |
+ | Docker| Yes | Yes | Yes | Yes |
+
+ **Note**: Rackspace Support does not extend into the individual containers.
 
 ### Control panels
 
