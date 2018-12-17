@@ -1,12 +1,12 @@
 ---
 permalink: support/
-audit_date: '2018-08-08'
+audit_date: '2018-12-13'
 title: How to contact Rackspace Support
 type: page
 created_date: '2013-06-17'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-13'
+last_modified_by: William Loy
 product: undefined
 product_url: undefined
 ---
@@ -23,7 +23,7 @@ Check the status of your Rackspace products at the [System Status page](https://
 
 Call Dedicated Hosting support at the following numbers:
 
-- US: 1-800-961-4600
+- US: 1-800-961-4454
 - International: +1-210-312-4600
 
 You can also log in to the [MyRackspace portal](https://login.rackspace.com/) to access chat
