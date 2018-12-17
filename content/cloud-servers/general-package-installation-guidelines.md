@@ -11,17 +11,17 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article shows you how to use package managers to make adaptations to your
-Linux&reg; Cloud Server. The procedure for installing packages is similar
-across Linux distributions.
+This article shows you how to use package managers to make adaptations
+to your Linux&reg; Cloud Server. The procedure for installing packages is
+similar across Linux distributions.
 
 ### Package managers and repositories
 
 Unlike Windows&reg;-based operating systems in which software
 packages come with their own installers, most Linux distributions
 include a centralized **package manager**. A centralized package manager
-enables you to install nearly every package on the system by using the same
-tool.
+enables you to install nearly every package on the system by using
+the same tool.
 
 #### Repositories
 
