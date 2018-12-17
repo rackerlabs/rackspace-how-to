@@ -1,12 +1,12 @@
 ---
 permalink: best-practices-for-cloud-backup/
-audit_date:
+audit_date: '2018-12-17'
 title: Best practices for Cloud Backup
 type: article
 created_date: '2013-04-22'
 created_by: David Hendler
-last_modified_date: '2016-07-20'
-last_modified_by: Catherine Richardson
+last_modified_date: '2018-12-17'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -53,7 +53,7 @@ Knowing the language of backups can help you make informed decisions about your 
 
 **Warning:** Cloud Backup does *not* follow symlinks. For example, if a symlink points to a file, the symlink itself is backed up, but the file it points to is not backed up. Likewise, if a symlink points to a folder, the symlink itself is backed up, but the folder and anything under the folder is not be backed up. If you want to back up files or folders, *do not use a symlink*.
 
-As a best practice for web servers and database servers, we recommend
+As a best practice for Linux web servers and database servers, we recommend
 using Cloud Backup on the following directories:
 
 -   Web applications under `/var/www`
@@ -63,14 +63,17 @@ using Cloud Backup on the following directories:
 
 **Note:** Do not compress your data before it is backed up. Doing so defeats the backup deduplication, which is typically more efficient than simple file compression. Deduplication works across all files in all snapshots and stores only the new data. This almost always saves you more storage space and money during the backup process than simple compression does.
 
-We recommend *not* backing up the following items:
+We *do not support* backing up the following items:
 
 - Running databases. To back up a database, see the article on [backing up databases](/how-to/rackspace-cloud-backup-backing-up-databases).
 - Caches and session files.
 - Frequently changing files, such as logs.
 - Root. To save all data and the server, [make an image of the server](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image) instead.
 
-These file types either change too rapidly (databases, logs, caches) or don't exist long enough (session files) to be backed up. You should not back up session files or caches at all, but if you need to back up databases or log files, we suggest the following workarounds:
+These file types either change too rapidly (databases, logs, caches) or
+don't exist long enough (session files) to be backed up. You should
+not back up session files or caches at all, but if you need to back up
+databases or log files, you must implement following workarounds:
 
 -  Take a snapshot of a database (for example, a database dump), and back up the snapshot.
 -  Take snapshots of log files, and back up the snapshots. To avoid running out of disk space, rotate your log files periodically.
@@ -115,7 +118,7 @@ Larger size | Smaller size
 
 #### Effective restores
 
-Test your restores to ensure that your data is saved as you expect. As with any disaster recovery plan, you should schedule semi-regular restore operations of your backed-up data sets. Doing so provides you with a reference for how long this process can take and ensures that your backups are complete and viable.
+**Important**: Test your restores to ensure that your data is saved as you expect. As with any disaster recovery plan, you should schedule semi-regular restore operations of your backed-up data sets. Doing so provides you with a reference for how long this process can take and ensures that your backups are complete and viable.
 
 Another point to consider is the restore destination. Restoring to the original location and overwriting saves on storage space, but risks accidentally overwriting important existing files. Proceed with caution when restoring.
 
@@ -123,7 +126,8 @@ Another point to consider is the restore destination. Restoring to the original 
 
 Encryption is important for keeping your data confidential, but encryption has its costs. It takes significantly longer to back up and restore encrypted data. Consider whether the data that you are storing must be encrypted. If not, then don't use encryption.
 
-**Warning**: If you encrypt a backup server, you may not remove it.
+**Warning**: Once you encrypt a backup for a server, you cannot remove
+encryption from that backup.
 
 ### Conserve resources with Cloud Backup
 
@@ -146,9 +150,15 @@ However, the best way to reduce the size of the backup files on your system driv
 
 #### Move backup files
 
-To move the biggest types of Cloud Backup files from a system drive, create a symlink (Windows) or a mount point (Linux) to the path of the log or database files. For information about the location of these paths, see the "Locations of Cloud Backup agent files" section in [Cloud Backup agent logging][https://support.rackspace.com/how-to/cloud-backup-agent-logging-basics/].
+The files created and used by Cloud Backup are stored by default on the
+system drive. In rare cases, they might become very large and crowd the
+system drive.
 
-If you use the **AgentConfig.exe** tool located in the  `C:\Program Files\Driveclient` folder, use the following procedure to move these files from the system drive of a Windows system:
+On Linux cloud servers, the solution is to use an external drive for these
+files and create a mount point to the path of the log or database files.
+For information about the location of these paths, see the "Locations of Cloud Backup agent files" section in [Cloud Backup agent logging](/how-to/cloud-backup-agent-logging-basics).
+
+On Windows cloud servers, you can use the **AgentConfig.exe** tool located in the `C:\Program Files\Driveclient` folder to move these files from the system drive:
 
 1.	Shut down the Cloud Backup agent service.
 
