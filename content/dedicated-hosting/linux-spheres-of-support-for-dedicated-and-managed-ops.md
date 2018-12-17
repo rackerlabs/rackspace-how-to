@@ -114,6 +114,16 @@ The following services are supported on Red Hat Cluster Suite&reg; (RHCS) in the
 
 **Note**: RHCS is supported only on physical hardware platforms (not including OnMetal offerings). Oracle on RHCS is supported in tandem by the DBA team and Linux OS administrators.
 
+### Containerzation Technologoes
+
+The following containerzation technologies are supported:
+
+|   | Installation | Configuration | Troubleshooting | Patching |
+| --- | --- | --- | --- | --- |
+| Docker| Yes | Yes | Yes | Yes |
+
+**Note**: Rackspace Support does not extend into the individual containers.
+
 ### Control panels
 
 The following control panel is supported in the indicated area:
@@ -131,7 +141,7 @@ The following antivirus software is supported in the indicated areas:
 
 |   | Installation | Configuration | Troubleshooting | Patching |
 | --- | --- | --- | --- | --- |
-| Rackspace Managed Anti-Virus | Yes | Yes | Yes | Yes |
+| Sophos Intensive Anti-Virus | Yes | Yes | Yes | Yes |
 
 **Note**: Rackspace requires the use of antivirus software on any configurations that use domain controllers and to assist in maintaining PCI compliance.
 
