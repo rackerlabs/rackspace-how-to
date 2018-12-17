@@ -272,13 +272,13 @@ you go directly to the software documentation for instructions. You almost
 certainly need a C/C++ compiler and make utility to perform this
 task. You can install these tools by running the following commands:
 
--  On Debian:
+-   On Debian:
 
-      apt-get install build-essential
+        apt-get install build-essential
 
--  On CentOS:
+-   On CentOS:
 
-      yum groupinstall "Development Tools"
+        yum groupinstall "Development Tools"
 
 These commands install the utilities that you need to install most common
 packages directly from the source. After you install them, you are able to
