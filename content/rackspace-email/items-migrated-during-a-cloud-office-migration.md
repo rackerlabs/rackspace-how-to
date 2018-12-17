@@ -44,6 +44,7 @@ Because of system limitations, the following items are not automatically migrate
 -   RSS feeds
 -   Mailbox settings, permission settings, sharing settings, client settings (for example, default font)
 -   Mailbox rules
+-   On-Premise Archive Servers or Enterprise Vaults
 -   (From Exchange 2003), BCC recipients (also resource attendees for appointments)
 -   Acceptance status for meeting participants (for example, accepted, declined, tentative)
 

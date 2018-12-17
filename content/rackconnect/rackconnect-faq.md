@@ -5,8 +5,8 @@ title: RackConnect FAQ
 type: article
 created_date: '2014-09-26'
 created_by: Juan Perez
-last_modified_date: '2016-09-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -43,7 +43,15 @@ network devices that are compatible with RackConnect v3.0, see
 
 #### Does RackConnect v3.0 support IPv6?
 
-Not yet, but support for IPv6 is anticipated for early 2016.
+Yes, with few limitations.
+
+- RackConnect v3 allows only one cloud network to be attached to the cloud server.
+- RackConnect v3 allows you to attach IPv6 networks.
+- Cloud Networks is not a dual stack, so you cannot create a cloud network that assigns IPv4 and IPv6 addresses on the same interface.
+
+If you are starting fresh, configure the firewall to use an IPv6 address, assign an IPv6 IP block for the inside segment, and use that information to deploy a new RackConnect v3 vlan.
+
+Using the preceding information, you can deploy a new RCV3 vlan with an IPv6 address to use on your cloud server.
 
 #### Does RackConnect v3.0 support Managed Colocation environments?
 
@@ -158,8 +166,8 @@ ServiceNet.
 If you need help with RackConnect, contact us via any of our [usual Support channels](/how-to/support), and our team will help you with your issue or direct you on to the relevant support group. We are available via phone, chat, or tickets 24x7x365.
 
 If you believe your issue is cloud-server specific, send the
-appropriate query to the Cloud team via the Cloud Control Panel;
-otherwise, send other requests via the my.rackspace.com portal.
+appropriate query to the Cloud team through the Cloud Control Panel;
+otherwise, send other requests through the MyRackspace portal.
 
 #### I already have a cloud account. Can I connect to my existing servers?
 
@@ -348,7 +356,7 @@ You can view the public IP address of your RackConnect cloud server in
 the following places:
 
 -   In the RackConnect Management Interface of the
-    [MyRackspace portal](https://my.rackspace.com/), view the IP address
+    [MyRackspace portal](https://login.rackspace.com/), view the IP address
     on the **Overview** tab for the server.
 
 -   You can retrieve the public IP address through the Cloud Servers API

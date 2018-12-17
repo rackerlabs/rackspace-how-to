@@ -26,15 +26,14 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 ### Create a backup by exporting the mailbox
 
-1. In Apple Mail, select the mailbox that you want to export.
-
-   <img src="{% asset_path rackspace-email/prepare-mac-users-for-rackspace-email-to-microsoft-exchange-migration/selectMailbox.png %}" />
-
+1. In Apple Mail, select the email address that you want to export.
 2. In the top navigation bar, click **Mailbox > Export Mailbox**.
 
    <img src="{% asset_path rackspace-email/prepare-mac-users-for-rackspace-email-to-microsoft-exchange-migration/selectExportMailbox.png %}" />
 
 3. Choose an existing folder or create a new folder in which to save the exported file, and then click **Choose**.
+
+    <img src="{% asset_path rackspace-email/prepare-mac-users-for-rackspace-email-to-microsoft-exchange-migration/selectMailbox.png %}" />
 
    After you select the file destination, the mailbox is exported.
 

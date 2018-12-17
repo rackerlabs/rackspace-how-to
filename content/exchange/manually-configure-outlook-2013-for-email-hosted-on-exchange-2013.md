@@ -5,8 +5,8 @@ title: Manually configure Outlook 2013 for email hosted on Exchange 2013
 type: article
 created_date: '2014-01-10'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-01-28'
-last_modified_by: Rose Coste
+last_modified_date: '2018-09-18'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---

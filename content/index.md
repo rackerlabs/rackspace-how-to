@@ -24,11 +24,14 @@ permalink: /
 		      <div class="row">
 			      <h3>Rackspace Private Cloud</h3>
 			      <div class="twelve columns">
-				      <div class="four columns primary icon private">
+				      <div class="three columns primary icon private">
 					      <h4><a href="/how-to/rpc-microsoft/"><span>Rackspace Private Cloud</span> Powered by Microsoft Cloud Platform</a></h4>
 					</div>
-					<div class="five columns icon private">
+					<div class="three columns icon private">
 						<h4><a href="/how-to/rpc-openstack/"><span>Rackspace Private Cloud</span> Powered by OpenStack</a></h4>
+					</div>
+					<div class="three columns icon private">
+						<h4><a href="/how-to/rpc-vmware/"><span>Rackspace Private Cloud</span> Powered by VMware</a></h4>
 					</div>
 				</div>
 			</div>
@@ -44,7 +47,7 @@ permalink: /
 						<h4><a href="/how-to/cloud-images/"><span>Cloud</span> Images</a></h4>
 					</div>
 					<div class="three columns icon vmware">
-						<h4><a href="/how-to/managed-vmware-services/"><span>Managed</span> VMware Services</a>
+						<h4><a href="/how-to/managed-vmware-services/"><span>VMware</span> Server Virtualization</a>
 						</h4>
 					</div>
 				</div>
@@ -136,6 +139,17 @@ permalink: /
 					</div>
 				</div>
 			</div>
+			
+			<hr/>
+			
+			<div class="row">
+				<h3>Rackspace Managed Security</h3>
+				<div class="twelve columns">
+					<div class="primary twelve columns icon private">
+						<h4><a href="/how-to/rackspace-pdr/"><span>Rackspace</span> Proactive Detection & Response</a></h4>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -146,22 +160,21 @@ permalink: /
 					<div class="primary three columns icon email">
 						<h4><a href="/how-to/rackspace-email/"><span>Rackspace</span> Email</a></h4>
 					</div>
-					<div class="three columns icon skype">
-						<h4><a href="/how-to/skype-for-business/"><span>Microsoft</span> Skype for Business</a>
-						</h4>
-					</div>
 					<div class="three columns icon exchange">
 						<h4><a href="/how-to/exchange/"><span>Microsoft</span> Exchange</a></h4>
 					</div>
-					<div class="three columns icon sharepoint">
-						<h4><a href="/how-to/sharepoint/"><span>Microsoft</span> Sharepoint</a></h4>
-					</div>
-					<div class="primary three columns icon email-archiving">
+					<div class="three columns icon email-archiving">
 						<h4><a href="/how-to/rackspace-email-archiving/"><span>Rackspace</span> Email Archiving</a>
 						</h4>
 					</div>
-					<div class="nine columns icon office-365">
+				</div>
+				<div class="twelve columns">
+					<div class="three columns primary icon office-365">
 						<h4><a href="/how-to/office-365/"><span>Microsoft</span> Office 365</a></h4>
+					</div>
+					<div class="three columns icon skype">
+						<h4><a href="/how-to/skype-for-business/"><span>Microsoft</span> Skype for Business</a>
+						</h4>
 					</div>
 				</div>
 			</div>

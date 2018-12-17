@@ -5,8 +5,8 @@ title: Get started with the RackConnect v3.0 API
 type: article
 created_date: '2014-09-10'
 created_by: Juan Perez
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -156,7 +156,7 @@ Note the following important points about this request:
 
 -   You can obtain the UUID (universally unique identifier) of your
     cloud server from within its server details page in the [Cloud
-    Control Panel](https://mycloud.rackspace.com) or via the [Cloud
+    Control Panel](https://login.rackspace.com) or via the [Cloud
     Servers API get server details](https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#show-server-details)
     operation. The UUID is a 32-character entry with four hyphens in the
     **ID** or **id** section of the server details page.

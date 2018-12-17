@@ -5,13 +5,13 @@ title: Rackspace Email FAQ
 type: article
 created_date: '2015-12-02'
 created_by: Rackspace Support
-last_modified_date: '2015-06-09'
-last_modified_by: Nate Archer
+last_modified_date: '2018-11-20'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
-Get quick answers to common questions about Rackspace Email.
+Get quick answers to common questions about [Rackspace Email](https://www.rackspace.com/email-hosting/webmail).
 
 #### What is the maximum mailbox storage?
 
@@ -39,7 +39,7 @@ You can view and manage your email at [https://apps.rackspace.com](https://apps.
 
 #### How do I change my password?
 
-A Rackspace Email user can do this through Webmail. You can go to [https://apps.rackspace.com](https://apps.rackspace.com/) and log in with your email address and current password. In the upper-right corner, click the menu button to the right of your email address. Then, select **Settings**. In the Settings dialog box, click **Change Password**.
+A Rackspace Email user can change their password through [Webmail](https://apps.rackspace.com/). For more information, see [Change a Rackspace Email mailbox password](/how-to/change-rackspace-email-mailbox-password/).
 
 #### What's the difference between IMAP and POP?
 
@@ -70,3 +70,28 @@ Log in to your control panel and click the **Support** menu at the top of the sc
 #### How can I determine the Cloud Office system status?
 
 To view the Cloud Office system status, go to <http://status.apps.rackspace.com/>.
+
+#### How do TLS and SSL work in Cloud Office?
+
+Transport Layer Security (TLS) and its predecessor, Secure Socket Layer
+(SSL), are cryptographic protocols that provide security for
+communications over networks. TLS and SSL encrypt the segments of
+network connections at the application layer to ensure secure end-to-end
+transit at the transport layer. For our purposes, they create an
+encrypted tunnel through which we send plain text emails.
+
+Cloud Office servers by default attempt a TLS connection for both
+in and outbound email. For outgoing mail (any of our servers sending to
+external MX servers), we perform TLS if it is advertised by the
+remote server. When performing outgoing TLS, our servers are permissive
+with the certificate (in other words, if the site is using an untrusted
+or self-signed certificate, as long as it is a working certificate, we
+should still accept it).
+
+**Our outgoing SMTP servers use TLS in an opportunistic fashion.**
+This means that our servers attempt to open an SMTP transaction
+with the recipient server by using TLS. If TLS cannot be successfully
+connected, the communication defaults back to an unencrypted
+transmission of the data, also referred to as PLAINTEXT.
+
+Our servers respond to TLS and SSL requests to send mail to us encrypted.

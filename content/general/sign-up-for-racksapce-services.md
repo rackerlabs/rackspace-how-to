@@ -11,7 +11,7 @@ product: undefined
 product_url: undefined
 ---
 
-When you have decide that Rackspace Fanatical Support&reg; is for you, it's time to sign up for a Rackspace account. Although the signup process is straightforward, it’s important to understand some details about the verification process and account ownership before you start.
+When you have decide that Rackspace **Fanatical Support**&reg; is for you, it's time to sign up for a Rackspace account. Although the signup process is straightforward, it’s important to understand some details about the verification process and account ownership before you start.
 
 ### Before you sign up
 

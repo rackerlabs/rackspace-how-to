@@ -1,32 +1,38 @@
 ---
 permalink: using-cloud-servers-tags/
-audit_date:
+audit_date: '2018-10-25'
 title: Use Cloud Servers tags
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-07-08'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-In the [Cloud Control Panel](http://mycloud.rackspace.com), you can
+In the [Cloud Control Panel](https://login.rackspace.com), you can
 attach descriptive tags to your cloud servers and other resources. Tags
 help you organize your infrastructure as it grows. You can use them to
 quickly find specific resources by using several different filtering
 mechanisms.
 
-
 ### How to create a tag
 
-1.  In the Cloud Servers list, click the gear icon next to the server
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com).
+
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+3.  Select **Servers > Cloud Servers**.
+
+4.  In the Cloud Servers list, click the gear icon next to the server
     name and select **Add Tag**.
 
-2.  In the **Add or remove tags** popup box, type a tag label and then
+5.  In the **Add or remove tags** popup box, type a tag label and then
     press **Enter**. You can enter as many tags as you want, pressing
     **Enter** after each one.
-3.  When you are done adding tags, click **Save Tags** to commit
+
+6.  When you are done adding tags, click **Save Tags** to commit
     your changes.
 
 To find tagged instances, select the check boxes next to the tags in the
@@ -58,9 +64,9 @@ quickly filter them by function, like *web server*, *proxy*, or
 #### Role
 
 In a more complex environment, you might have *primary* and *backup*
-systems, *master* and *slave* databases, or DNS servers. Tagging servers
-according to their role in the environment can help when you plan
-maintenance.
+systems, *master* and *slave* databases, or Domain name (DNS) servers.
+Tagging servers according to their role in the environment can help when
+you plan maintenance.
 
 #### Operating system
 
@@ -79,5 +85,4 @@ your servers from one another.
 
 ### Related information
 
-[Learn more about Cloud
-Servers](/how-to/learn-more-about-cloud-servers)
+[Learn more about Cloud Servers](/how-to/learn-more-about-cloud-servers)

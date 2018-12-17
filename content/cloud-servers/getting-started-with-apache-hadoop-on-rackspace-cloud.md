@@ -5,14 +5,14 @@ title: Get Started with Apache Hadoop on Rackspace Cloud
 type: article
 created_date: '2013-03-18'
 created_by: Alyssa Hurtgen
-last_modified_date: '2016-01-12'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-26'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-**Disclaimer**: This document details a process intended for
-educational purposes only. This will not deploy a production
+**Disclaimer**: This article details a process intended for
+educational purposes only. This does not deploy a production
 environment.
 
 ### What is Apache Hadoop?
@@ -26,7 +26,7 @@ Hadoop Distributed File System.
 #### Hadoop Use Cases
 
 In a very short time, Hadoop has revolutionized almost every business
-sector. Actual use cases involving Hadoop include:
+sector. Actual use cases involving Hadoop include the following scenarios:
 
 -   Analyzing medical data.
 -   Analyzing transaction data to detect anomalies and suggest
@@ -38,13 +38,13 @@ sector. Actual use cases involving Hadoop include:
 
 ### Objective
 
-This document is for educational purposes only and will provide you with
-an example of how to get started with Apache Hadoop in the Cloud. You
-will learn how to launch a Hadoop cluster starting with 2 nodes and
-growing it up to 64 nodes. During this process you will learn how to:
+This article is used for educational purposes only and provides you with
+an example of how to get started with Apache Hadoop in the cloud. It shows you
+how to launch a Hadoop cluster starting with two nodes and to grow it up to
+64 nodes. The process includes the following steps:
 
-1.  Create cloud servers through Cloud Control Panel.
-2.  Create cloud servers using scripts.
+1.  Create Cloud Servers through the Cloud Control Panel.
+2.  Create Cloud Servers by using scripts.
 3.  Install and configure Hadoop.
 4.  Run Map Reduce applications.
 
@@ -60,40 +60,38 @@ The following prerequisites are expected for successful completion:
 
 ### Hadoop Installation Process
 
-Manually installing and configuring Hadoop can be somewhat complicated
-so we will use a few tools to make the installation easier. In
-particular, we are going to use the following two projects:
+It can be complicated to manually install and configure Hadoop,
+so here are a few tools to make the installation easier. In
+particular, the following two projects are useful:
 
 -   Chef recipes for Hadoop
     (<https://github.rackspace.com/CloudBigData/cookbook-hadoop-conf>)
--   Knife plugin for Rackspace API
+-   Knife plugin for the Rackspace API
     (<https://github.com/opscode/knife-rackspace>)
 
-Using the tools, we will create a Hadoop installation using the
-following:
+Using these tools, the article demonstrates how to create a Hadoop installation
+for the following scenarios:
 
--   1 cloud server as workstation
--   1 cloud server as Hadoop Master node.
--   1 cloud server as Hadoop Worker node.
+-   1 Cloud Server as workstation.
+-   1 Cloud Server as Hadoop Master node.
+-   1 Cloud Server as Hadoop Worker node.
 -   Gradually add up to 63 more Hadoop Worker nodes.
 
-To do this, we will break up each part of the build into separate
-sections and tasks that follow.
+The following sections break up each part of the build into separate tasks.
 
 ### Set Up the Server as Workstation
 
-In this section, we will build the workstation to be our launching
-ground to build the remainder of our Hadoop environment.
+This section builds the workstation that is the launching
+point to build the remainder of the Hadoop environment.
 
 #### Create a Cloud Server
 
-Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/)
-and create a cloud server using a Linux image. Record the IP address
+Log in to the [Cloud Control Panel](https://login.rackspace.com/)
+and create a Cloud Server using a Linux&reg; image. Record the IP address
 and password for the server.
 
-Wait for your server to be in an Available state. We will be using this
-server going forward to create other servers. To begin, SSH into it and
-run the following commands:
+Wait for your server to be in an `Available` state. This server will be used
+to create other servers. To begin, SSH into it and run the following commands:
 
     export RACKSPACE_API_USERNAME=<Your Rackspace Cloud account username>
     export RACKSPACE_API_KEY=<Your API Key>
@@ -103,10 +101,10 @@ run the following commands:
 
 Note: for information about how to find your API key, see [View and reset your API key](/how-to/view-and-reset-your-api-key).
 
-This will install the Chef server, knife-rackspace plugin and upload the
-chef hdp-cookbooks, and configure it to talk to Rackspace Cloud using
-your account. We can now use the knife client to interact with Rackspace
-Cloud and configure our Hadoop cluster.
+This installs the Chef server, installs knife-rackspace plugin, uploads the
+chef hdp-cookbooks, and configures them to talk to Rackspace Cloud using
+your account. You can now use the knife client to interact with Rackspace
+Cloud and configure your Hadoop cluster.
 
 #### Choosing the Image
 
@@ -118,7 +116,7 @@ Hadoop.
 
 #### Choosing the Flavor
 
-We will use a flavor with 4096 MB of RAM for the server.
+Use a flavor with 4096 MB of RAM for the server.
 
     FLAVOR_ID=`knife rackspace flavor list | grep '4096' | awk '{print $1}'`
     echo $FLAVOR_ID
@@ -126,9 +124,9 @@ We will use a flavor with 4096 MB of RAM for the server.
 #### Creating your Environment
 
 In order not to conflict with other Hadoop clusters within the same
-account, we will create a Chef environment called `YourName` to create our
-Hadoop cluster on. We will save this name in an environment variable so
-we can reference it later.
+account, create a Chef environment called `YourName` to create your
+Hadoop cluster on. Save this name in an environment variable so
+you can reference it later.
 
     ENV_NAME=<YourName>
     echo $ENV_NAME
@@ -141,17 +139,17 @@ Now run the following commands to setup the environment within Chef.
 
 #### Creating a Hadoop Master
 
-This command will create a cloud server with the name,
+This command creates a cloud server with the name,
 YourName-hadoopmaster with CentOS 6.2 and 4 GB RAM.
 
-It will create it in the example environment and give it a role of
-hadoop-master. Chef will then install and configure all the components
+It creates it in the example environment and gives it a role of
+hadoop-master. Chef then installs and configures all the components
 required to make it a Hadoop Master node.
 
     knife rackspace server create --server-name $ENV_NAME-hadoopmaster --image $IMAGE_ID --flavor $FLAVOR_ID --environment $ENV_NAME --run-list 'role[hadoop-master]'
 
-Now, copy the hadoopmaster's public IP and password from the output. We
-will save the IP address in an environment variable to use later.
+Now, copy the hadoopmaster's public IP and password from the output.
+Save the IP address in an environment variable to use later.
 
     HADOOP_M_IP=<Hadoop Master IP>
     echo $HADOOP_M_IP
@@ -176,7 +174,7 @@ Hadoop worker node:
     knife rackspace server create --server-name $ENV_NAME-hadoopworker1 --image $IMAGE_ID --flavor $FLAVOR_ID --environment $ENV_NAME --run-list 'role[hadoop-worker]'
 
 Similarly, copy the hadoopworker1's public IP and password at the end.
-We will save the hadoop worker IP address in an environment variable to
+Save the hadoop worker IP address in an environment variable to
 use later.
 
     HADOOP_W1_IP=<Hadoop Worker 1 IP Address>
@@ -192,7 +190,7 @@ Verify that the worker is running by going to the jobtracker at:
 
 #### Running a Map Reduce Application
 
-Now, SSH to the HadoopMaster node you created above and run the
+Now, SSH to the HadoopMaster node that you created previously and run the
 following examples:
 
     ssh root@$HADOOP_M_IP
@@ -203,14 +201,13 @@ sampling.
 
     curl -L "https://raw.github.com/sacharya/random-scripts/master/knife-rackspace-hadoop/wordcount.sh" | bash
 
-This script will download all of Shakespeare's books from project,
-Gutenberg, upload them to HDFS and run a Map Reduce operation run a word
-count against the text.
+This script downloads all of Shakespeare's books from Project Gutenberg, uploads
+them to HDFS, and runs a Map Reduce operation run a word count against the text.
 
 #### Adding More Nodes
 
 So far, you have created only **hadoopworker1**. Keep adding more
-HadoopWorker nodes following the same process. Make sure to increment
+HadoopWorker nodes by following the same process. Make sure to increment
 the hadoopworker number each time. Run and benchmark your application
 and see how it performs when the size of the cluster grows.
 
@@ -219,8 +216,8 @@ and see what works best for your application.
 
 #### Deleting the Cluster
 
-If you are done with your computation, you may want to delete the
-cluster and free up the resources. To do this, you need the server id of
+If you are done with your computation, you might want to delete the
+cluster to free up the resources. To do this, you need the server id of
 the server you want to delete.
 
     knife rackspace server list
@@ -232,6 +229,6 @@ Repeat the process for all the servers in the cluster by replacing
 
 ### Summary
 
-In this document, we showed you how to interact with the cloud using
-tools and scripts. We also demonstrated how to get started with Apache
+In this article, you learned how to interact with the cloud using
+tools and scripts. You also saw how to get started with Apache
 Hadoop on a couple of cloud servers and scale it up with your needs.

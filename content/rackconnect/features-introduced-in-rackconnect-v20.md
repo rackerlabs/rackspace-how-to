@@ -20,7 +20,7 @@ The 2.0 version of RackConnect added the following automation and
 security features:
 
 -   **Support for Rackspace Cloud Servers**, powered by    
-    OpenStack<sup>&reg;</sup>
+    OpenStack&reg;
 
 -   **RackConnect API**, which gives you a way to programmatically
     access certain read-only information about your cloud servers and
@@ -30,7 +30,7 @@ security features:
     events**, which means that RackConnect picks up changes in your
     Cloud environment much faster
 
--   **A RackConnect Management Interface in the MyRackspace<sup>&reg;</sup> portal**,
+-   **A RackConnect Management Interface in the MyRackspace&reg; portal**,
     where you can perform the following tasks:
     -   Set RackConnect network policies.
     -   Manage cloud servers.

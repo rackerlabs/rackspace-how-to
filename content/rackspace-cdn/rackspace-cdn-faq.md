@@ -140,9 +140,9 @@ dtd, exe, flv, gcf, gff, gif, grv, hdml, hqx, ico, ini, jpeg, jpg, js,
 mov, mp3, nc, pct, pdf, png, ppc, pws, swa, swf, txt, vbs, w32, wav,
 wbmp, wml, wmlc, wmls, wmlsc, xsd, zip, webp, jxr, hdp, wdp
 
-#### Does Rackspace CDN support Service Name Indication (SNI)?
+#### Does Rackspace CDN support Server Name Indication (SNI)?
 
-SNI is not currently supported.
+SNI is supported for requests to the configured origin.
 
 #### Does Rackspace CDN have a free secure delivery option?
 
@@ -156,6 +156,6 @@ domain details and Rackspace Support will reach out to them.
 
 #### What should customers expect after they provision a certificate?
 
-The administrator for the domain will be contacted by GeoTrust to verify
+The administrator for the domain will be contacted by Symantec and/or Digicert to verify
 the domain. It is critical that customers respond to this verification
 request. Certificates will not be provisioned until it is complete.

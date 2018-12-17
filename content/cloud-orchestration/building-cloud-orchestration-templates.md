@@ -1,12 +1,12 @@
 ---
 permalink: building-cloud-orchestration-templates/
 audit_date: '2016-08-30'
-title: Building Cloud Orchestration templates
+title: Build Cloud Orchestration templates
 type: article
 created_date: '2016-10-09'
 created_by: Aaron Mehar
-last_modified_date: '2016-08-30'
-last_modified_by: Nate Archer
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Orchestration
 product_url: cloud-orchestration
 ---
@@ -114,7 +114,7 @@ The `parameter_groups` section specifies how the input parameters are grouped. E
 
 #### Parameters
 
-The `parameters` section specifies the input parameters used to customize each deployment, such as choosing an image, flavor, and password. In the following example, the `srv_image` parameter is given a label, which is displayed in the Cloud Control Panel, and a description, which can be read by hovering over a small question mark on the control panel. You can also specify the type of parameter, such as a string parameter. You set a default value, and then you set the allowed values.
+The `parameters` section specifies the input parameters used to customize each deployment, such as choosing an image, flavor, and password. In the following example, the `srv_image` parameter is given a label, which is displayed in the [Cloud Control Panel](https://login.rackspace.com), and a description, which can be read by hovering over a small question mark on the Could Control Panel. You can also specify the type of parameter, such as a string parameter. You set a default value, and then you set the allowed values.
 
     parameters:
       srv_image:
@@ -572,7 +572,7 @@ Use the following template to create a domain in Cloud DNS and create records. N
         properties:
           emailAddress: "admin@domain.com"
           name: domain.com
-          records: [ {"name": "domain.com", "data": 123.456.78.90 , "type": "A" }, {"name": "www.domain.com", "data": domain.com , "type": "CNAME" } ]
+          records: [ {"name": "domain.com", "data": 1.2.3.4 , "type": "A" }, {"name": "www.domain.com", "data": domain.com , "type": "CNAME" } ]
 
 
 ####  Create a cloud queue

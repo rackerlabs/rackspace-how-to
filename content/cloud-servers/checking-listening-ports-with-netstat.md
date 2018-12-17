@@ -1,17 +1,17 @@
 ---
 permalink: checking-listening-ports-with-netstat/
-audit_date: '2016-07-15'
+audit_date: '2018-09-19'
 title: Check listening ports with netstat
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2016-07-15'
-last_modified_by: Nate Archer
+last_modified_date: '2018-12-17'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If you're troubleshooting a service that you know [is running normally](/how-to/checking-system-load-on-linux)
+If you're troubleshooting a service that you know [is running normally](/how-to/checking-system-load-on-linux),
 the next step is to ensure it's listening on the correct network port.
 
 The `netstat` command shows the services listening to ports on a Linux
@@ -24,7 +24,7 @@ name.
 You need to run `netstat` on the server that is running the service.
 `Netstat` is not affected by your firewall configuration.
 
-**Note:** You can also use the `isof` and `ss` commands to check ports. Many of the command flags contained in this article are the same when you run the `isof` and `ss` commands. However, the output returned when you use these commands might not resemble the output of the `netstat` tool. For more information about both commands, see the [`isof`](http://linux.die.net/man/8/lsof) and [`ss`](http://linux.die.net/man/8/ss) command manuals.
+**Note:** You can also use the `lsof` and `ss` commands to check ports. Many of the command flags contained in this article are the same when you run the `lsof` and `ss` commands. However, the output returned when you use these commands might not resemble the output of the `netstat` tool. For more information about both commands, see the [`lsof`](http://linux.die.net/man/8/lsof) and [`ss`](http://linux.die.net/man/8/ss) command manuals.
 
 ### Check ports
 
@@ -46,15 +46,15 @@ that are listening on three different sockets.
 
 ### Filter the list
 
-If the list of listening daemons is long you can use `grep` to filter it.
-For example, to filter out everything except the default web server port, 80, run the following command:
+If the list of listening daemons is long, you can use `grep` to filter it.
+For example, to filter out everything except the default web server port `80`, run the following command:
 
     $ sudo netstat -plnt | grep ':80'
     tcp        0      0 :::80                       :::*                        LISTEN      8448/httpd
 
 ### Analyze the results
 
-Common outcomes are as follows:
+Common outcomes include the following results:
 
 -   Nothing is listening on the port. Check the service configuration
     files, and then restart the service.
@@ -73,7 +73,7 @@ longer listens on the port. When `netstat` shows the port is free, enable the co
 
 If you make any changes because the incorrect service is listening, run the `netstat` command again. If `netstat` doesn't show the program listening on the correct port, you need to address its configuration before you go any further.
 
-If you make changes at this point, be sure to test your setup; you might
+If you make changes at this point, be sure to test your setup to verify that you
 have resolved your issue.
 
 If using the `netstat` did not resolve your port issues, continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)

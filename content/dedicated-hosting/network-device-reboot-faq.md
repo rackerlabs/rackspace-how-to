@@ -5,7 +5,7 @@ title: Network device reboot FAQ
 type: article
 created_date: '2017-01-16'
 created_by: Aaron Hackney and Trevor Becker
-last_modified_date: '2017-01-16'
+last_modified_date: '2017-12-20'
 last_modified_by: Trevor Becker
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -31,7 +31,7 @@ You can reboot your network devices whenever you like. Rackspace highly recommen
 
 #### Can I schedule the reboot?
 
-You can't schedule a reboot at this time. However, we are working with our teams to roll out this functionality in the future.
+Yes, you can schedule a reboot to occur. We have a "Schedule Reboot" feature built into our MyRackspace portal. For more information about scheduling a reboot, see the [Scheduling a network device reboot](https://support.rackspace.com/how-to/schedule-network-device-reboot/) article.
 
 #### I was notified that my network device is vulnerable to a bug or a security related exploit. How do I proceed?
 

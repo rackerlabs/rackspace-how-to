@@ -5,8 +5,8 @@ title: Detach and delete Cloud Block Storage volumes
 type: article
 created_date: '2012-10-22'
 created_by: David Hendler
-last_modified_date: '2017-01-27'
-last_modified_by: Laura Santamaria
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -35,7 +35,7 @@ Before you detach a volume from a server, unmount it to prevent errors.
 information, see the "Detach an operating system disk that uses the
 boot-from-volume functionality" section at the end of this article.
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
 2. In the Cloud Control Panel, confirm how the volume is presented to the cloud
     server.
@@ -60,7 +60,7 @@ boot-from-volume functionality" section at the end of this article.
 information, see the "Detach an operating system disk that uses the
 boot-from-volume functionality" section at the end of this article.
 
-1. Log in to the [Cloud Control Panel](https://mycloud.rackspace.com/).
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
 2. In the Cloud Control Panel, confirm how the volume is presented to the cloud
     server.
@@ -78,25 +78,28 @@ The Cloud Block Storage volume no longer displays as a drive under **Computer**.
 
 ### Detach a volume
 
-1. Log in to the Cloud Control Panel.
+Use the following steps to detach a volume:
 
-2. In the top navigation bar, click **Storage > Block Storage Volumes**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+
+2. Select **Storage > Block Storage Volumes**.
 
 3. On the Block Storage Volumes page, click the gear icon next to the volume
     name and select **Detach Volume**.
 
 4. In the pop-up dialog box, click **Detach Volume**.
 
-**Note:** It might take several minutes for the volume to detach.
+**Note**: It might take several minutes for the volume to detach.
 
 ### Delete a volume
 
-Before you can delete an attached volume, you must detach it from the server. If
-a snapshot of the volume exists, you must delete the snapshot before you can
+Before you can delete an attached volume, you must detach it from the server.
+If a snapshot of the volume exists, you must delete the snapshot before you can
 delete the volume.
 
-1. In the top navigation bar of the Cloud Control Panel, click **Storage > Block
-    Storage Volumes**.
+1. In the top navigation bar of the Cloud Control Panel, click **Storage > Block Storage Volumes**.
 
 2. On the Block Storage Volumes page, click the gear icon next to the volume
     name and select **Delete Volume**.
@@ -111,12 +114,12 @@ detaching a volume that is used as additional storage.
 1. Ensure that the `delete-on-termination` flag is set to `False` to preserve the
 volume when you delete the cloud server.
 
-    **Note:** The Cloud Control Panel generally sets this flag to `False` by
+    **Note**: The Cloud Control Panel sets this flag to `False` by
     default. If you are unsure whether your volume is properly flagged, contact
     Support. For more detailed information, see the `delete-on-termination`
     flag in the examples in [this section of the API documentation](https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#create-bootable-volume-and-server).
 
-2. [Delete the server](/how-to/deleting-your-server).
+2. [Delete the server](/how-to/delete-a-server).
 
 After the server is deleted, the volume is in a detached state and is ready to
 be attached to another cloud server as an additional volume or to be used with a

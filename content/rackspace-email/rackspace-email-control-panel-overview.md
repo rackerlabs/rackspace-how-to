@@ -5,7 +5,7 @@ title: Rackspace Email control panel overview
 type: article
 created_date: '2012-05-23'
 created_by: Nicholas Fleisig
-last_modified_date: '2016-10-11'
+last_modified_date: '2018-10-25'
 last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
@@ -16,7 +16,7 @@ services, the first thing you'll want to do is log in to your Cloud
 Office Control Panel. This article provides a brief overview of the
 control panel, which you can access at <https://cp.rackspace.com> (new
 Cloud Office customers) or
-[https://my.rackspace.com/](https://my.rackspace.com) (UK and
+[https://login.rackspace.com/](https://login.rackspace.com) (UK and
 MyRackspace customers).
 
 ### Control panel main page

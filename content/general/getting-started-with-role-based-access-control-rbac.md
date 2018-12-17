@@ -5,8 +5,8 @@ title: Getting started with Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-07-15'
 created_by: Renee Rendon
-last_modified_date: '2016-09-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
 ---
@@ -33,7 +33,7 @@ service.
 -   [Permissions Matrix for Cloud Big Data v1](/how-to/detailed-permissions-matrix-for-cloud-big-data)
 -   [Permissions Matrix for Cloud Big Data v2](/how-to/detailed-permissions-matrix-for-cloud-big-data-v2)
 -   [Permissions Matrix for Cloud Load Balancers](/how-to/permissions-matrix-for-cloud-load-balancers)
--   [Permissions Matrix for Rackspace Monitoring](/how-to/detailed-permissions-matrix-for-rackspace-monitoring)
+-   [Permissions Matrix for Rackspace Monitoring](/how-to/permissions-matrix-for-rackspace-monitoring)
 -   [Permissions Matrix for Cloud Block Storage](/how-to/permissions-matrix-for-cloud-block-storage)
 -   [Permissions Matrix for Auto Scale](/how-to/permissions-matrix-for-auto-scale)
 -   [Permissions Matrix for Cloud Networks](/how-to/permissions-matrix-for-cloud-networks)

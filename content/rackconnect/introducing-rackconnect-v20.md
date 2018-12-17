@@ -30,7 +30,7 @@ performance characteristics of traditional hosting&mdash;the best of both
 worlds. In essence, RackConnect enables customers to realize the power
 of hybrid hosting.
 
--   Choose an F5<sup>&reg;</sup> BIG-IP<sup>&reg;</sup> Local Traffic Manager or a Cisco<sup>&reg;</sup> ASA firewall
+-   Choose an F5&reg; BIG-IP&reg; Local Traffic Manager or a Cisco&reg; ASA firewall
     to connect your traditional hosted infrastructure to the
     Rackspace Cloud.
 

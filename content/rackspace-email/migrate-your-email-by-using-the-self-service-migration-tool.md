@@ -5,8 +5,8 @@ title: Migrate your email by using the Self-Service Migration Tool
 type: article
 created_date: '2013-03-18'
 created_by: William Loy
-last_modified_date: '2017-07-18'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-03-30'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -63,7 +63,7 @@ For more information about the migration preparation required for POP, IMAP, and
 
 ### Migrate your email
 
-1. Log in to the [Cloud Office Control Panel](cp.rackspace.com).
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
 2. In the **Domains** section at the bottom of the screen, click **Email Migrations**.
 3. Click **Start Migration Now**.
 
@@ -90,7 +90,7 @@ For more information about the migration preparation required for POP, IMAP, and
 
     1. Select the source server system type and enter the server address. For IMAP, you must also enter a port number. IMAP ports are **993** (SSL) and **143** (non-SSL).
     2. For the destination server, select the service that you are migrating to, **Rackspace Email**, **Rackspace Exchange 2016**, or **Microsoft Office 365**.
-    3. Click **Next**.    
+    3. Click **Next**.
 
     **Note:** If you are migrating to a hybrid solution (both Rackspace Email and Rackspace Exchange), you must create more than one migration project. Step 12 explains how to start a new project when the current one is completed.
 

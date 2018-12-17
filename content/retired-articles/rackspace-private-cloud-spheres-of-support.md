@@ -13,7 +13,7 @@ last_modified_by: Laura Santamaria
 
 Rackspace Private Cloud powered by OpenStack is the Rackspace architecture for
 and support of a production-ready, scalable, OpenStack-based private cloud. To
-ensure ***Fanatical Support***<sup>&reg;</sup>, Rackspace provides support for
+ensure **Fanatical Support**&reg;, Rackspace provides support for
 specific server configurations and OpenStack projects in Rackspace Private Cloud
 powered by OpenStack v9 and v10.
 

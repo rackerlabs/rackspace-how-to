@@ -5,8 +5,8 @@ title: Cloud Files - FAQs
 type: article
 created_date: '2015-12-03'
 created_by: Rackspace Support
-last_modified_date: '2016-04-14'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -51,8 +51,9 @@ illegal characters and name length limits) include:
 #### How do I access Cloud Files?
 
 First you must make sure you have generated a valid API Access Key. Then
-you can use either the Cloud Files user interface in the Rackspace Cloud
-Control Panel or one of our programming interfaces.
+you can use either the Cloud Files user interface in the Rackspace [Cloud
+Control Panel](https://login.rackspace.com/) or one of our programming
+interfaces.
 
 See [Cloud Files and CDN](https://support.rackspace.com/how-to/getting-started-with-cloud-files-and-cdn/) for more details.
 
@@ -88,12 +89,12 @@ Please click here to view [The Rackspace Cloud Terms of Service](http://www.rack
 
 ### Security
 
-#### Why does uploading a file in the Control Panel set the Allow-Origin header on my container?
+#### Why does uploading a file in the Cloud Control Panel set the Allow-Origin header on my container?
 
 When you upload a file in the Cloud Control Panel, an `Allow-Origin`
 header is set on the container to support cross-origin resource sharing
 (CORS). Browsers prevent AJAX requests between different domains by
-default. Because the Cloud Files API and the Control Panel reside on
+default. Because the Cloud Files API and the Cloud Control Panel reside on
 different domains, CORS must be enabled to support uploads directly to a
 container. When the upload succeeds, the CORS headers are removed.
 
@@ -200,7 +201,7 @@ they are transitioned to Akamai, but they will be distributed over the
 Akamai network. At this time, we do not have any plans to discontinue
 the legacy URLs.
 
-If a customer requests their URL (either in the Control Panel or via
+If a customer requests their URL (either in the Cloud Control Panel or through
 API) for an object, they will be presented with a new Akamai URL. This
 does not mean that old URLs are invalid. However, as Rackspace releases
 new features like CNAME and SSL, customers will need to reference their
@@ -210,7 +211,7 @@ new Akamai URL instead of their legacy URL.
 
 No.
 
-#### Will customers have to do anything different in the control panel?
+#### Will customers have to do anything different in the Cloud Control Panel?
 
 No, as we add new features, we will educate our customers.
 

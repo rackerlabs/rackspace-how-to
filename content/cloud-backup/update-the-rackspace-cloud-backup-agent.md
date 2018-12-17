@@ -5,8 +5,8 @@ title: Manually update the Rackspace Cloud Backup agent
 type: article
 created_date: '2013-01-08'
 created_by: Rackspace Support
-last_modified_date: '2016-12-16'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-08-21'
+last_modified_by: Brett Johnson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -52,7 +52,7 @@ up-to-date on the system.
 
         apt-get install --reinstall --assume-yes driveclient
 
-### Update the agent for yum-based systems, including CentOS, Fedora, and Red Hat.
+### Update the agent for yum-based systems, including CentOS and Red Hat.
 
 You might want to review
 [Install or update the Cloud Backup agent on Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
@@ -68,7 +68,7 @@ Cloud Backup updater service, which keeps the agent up-to-date on the system.
 
         yum upgrade -y driveclient
 
-**Note:** Fedora 22 and later use a new package manager called DNF
+**Note:** Fedora 22 and later use a new package manager called DNF. This is not supported.
 (Dandified Yum).
 
 ### Update the agent for Arch, Gentoo, and SUSE systems
@@ -134,11 +134,7 @@ to use if you need to manually update.
 The recommended way to perform a manual update is to download the latest agent
 from the deployment server and simply run it.
 
-1. Download the updated agent.
-
-   - 32-bit systems: http://agentrepo.drivesrvr.com/win32/driveclient-setup-latest.exe
-
-   - 64-bit systems: http://agentrepo.drivesrvr.com/win64/driveclient-setup-latest.exe
+1. Download the updated agent from http://agentrepo.drivesrvr.com/win64/driveclient-setup-latest.exe
 
 2. Run the updated agent.
 

@@ -66,7 +66,7 @@ customers who do value support and are willing to pay for it.
 
 #### What do I get with Fanatical Support?
 
-There are five foundational components to ***Fanatical Support***&reg;:
+There are five foundational components to **Fanatical Support**&reg;:
 
 -   **Architecture advisors**: Move beyond one-size-fits-all reference
     architectures. Let our experts tailor your workload architecture to your

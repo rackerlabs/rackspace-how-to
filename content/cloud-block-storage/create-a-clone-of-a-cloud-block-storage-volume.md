@@ -38,10 +38,7 @@ without the need to use a Cloud Files snapshot as an intermediate step.
 
 Volume cloning shares many similarities with volume snapshots. Namely,
 they both utilize LVM as the primary copy and locking mechanism, and
-therefore, detaching prior to cloning is recommended. Click
-[here](/white-paper/allowing-snapshots-without-detaching-the-volumes)
-for additional information on allowing snapshots (now clones) without
-detaching the volumes.
+therefore, detaching prior to cloning is recommended.
 
 ### Create a volume clone
 

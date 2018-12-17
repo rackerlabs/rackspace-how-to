@@ -5,15 +5,17 @@ title: Add an email login portal for Rackspace Email webmail and Outlook Web Acc
 type: article
 created_date: '2016-08-24'
 created_by: Tom Mitchell
-last_modified_date: '2016-09-15'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-10-09'
+last_modified_by: Kate Dougherty
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
 Select and run one of the following scripts to add a login portal on your site
-for webmail through both Rackspace Email and Exchange mailboxes. Download both
-the script and the corresponding image to use.
+for [webmail](https://www.rackspace.com/email-hosting/webmail) through both
+Rackspace Email and [Microsoft&reg;
+Exchange](https://www.rackspace.com/email-hosting/hosted-exchange) mailboxes.
+Download both the script and the corresponding image to use.
 
 **Standard tall (350px x 210px) image**
 

@@ -5,8 +5,8 @@ title: Migrating a Linux server from the command line
 type: article
 created_date: '2011-03-16'
 created_by: Jered Heeschen
-last_modified_date: '2016-08-09'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-10'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -14,18 +14,9 @@ product_url: cloud-servers
 Migrating your data from one Linux server to another is simple only if you've been running a simple server. If you have many interdependent services or a highly customized setup, then re-creating the environment from scratch is an involved process. The process is less complex if you can copy over just the files that you need without worrying
 about overwriting system files specific to the new server.
 
-This article describes how to prepare for a migration and the tools that will make the job go easier.
+This article describes how to prepare for a full migration and the tools that will make the job go easier.
 
-### Full migration versus package migration
-
-The first choice you need to make is whether you need to migrate the
-whole server, configuration and all, or if you can just copy over the data for a couple services.
-
-This article describes the process for a full migration. If you know
-you need to copy more than just a few data files this is the most
-straightforward approach.
-
-If you prefer a per-package approach, see [Migrate a Linux server per-package from the command line](/how-to/migrating-a-linux-server-from-the-command-line-2).
+If you know you need to copy more than just a few data files this is the most straightforward approach.
 
 ### Preparing the new server
 
@@ -86,4 +77,4 @@ the other. As a result, most of the tips in the [article about speeding up rsync
 You've compared the origin and destination servers to each other and
 prepared your file systems for the copy.
 
-For information on running rsync manually, go to the [article on migrating with rsync](/how-to/migrating-a-linux-server-from-the-command-line-2) to start the process.
+For information on running rsync manually, see either [Speed up rsync when migrating a Linux server](/how-to/speed-up-rsync-when-migrating-a-linux-server-from-the-command-line) or [Back up your files with rsync](https://support.rackspace.com/how-to/backing-up-your-files-with-rsync/).

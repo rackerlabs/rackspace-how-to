@@ -1,17 +1,17 @@
 ---
 permalink: sharing-images-in-the-cloud-control-panel/
-audit_date:
+audit_date: '2018-02-06'
 title: Sharing images in the Cloud Control Panel
 type: article
 created_date: '2015-01-29'
-created_by: Cloud Images
-last_modified_date: '2016-09-09'
-last_modified_by: Kyle Laffoon
+created_by: Rackspace Support
+last_modified_date: '2018-02-06'
+last_modified_by: Cat Lookabaugh
 product: Cloud Images
 product_url: cloud-images
 ---
 
-This article provides some general information about sharing server
+This article provides general information about sharing server
 images and provides details about how image sharing works in the Cloud
 Control Panel.
 
@@ -23,8 +23,8 @@ Following are example scenarios in which image sharing would be helpful:
 
 -   You are a hobbyist who has used **boot.rackspace.com** to create an
     image of an exotic operating system that Rackspace doesn't offer as
-    a base image choice, and you'd like other members of your Exotic OS
-    Users' Group to be able to boot servers from your image.
+    a base image choice, and you'd like other members of your exotic OS
+    users' group to be able to boot servers from your image.
 -   You work in a company where each department has its own Rackspace
     cloud account, and department A has configured a server to run
     optimally. Instead of department B performing the same
@@ -44,24 +44,24 @@ Following are example scenarios in which image sharing would be helpful:
 
 Here's a quick overview of some aspects of image sharing. To keep
 things clear, we'll refer to the person who's created an image to share
-as the "producer", and the person who wants to use that image as the
-"consumer". (Putting it another way, the "producer" is the share-er,
+as the *producer*, and the person who wants to use that image as the
+*consumer*. (Putting it another way, the *producer* is the share-er,
 and the "consumer" is the share-ee.)
 
 -   **Support for shared images:** Shared images are considered
     *nonstandard images* (for more information, see [Standard and Non-Standard Images](/how-to/rackspace-standard-and-non-standard-images)).
 
-    **Note:** Regardless of the service level you are subscribed to, we cannot
-    guarantee supportability of these images. Your SLA on cloud
-    servers that use shared images will extend only to the physical
+    **Note:** Regardless of the service level that you are subscribed to, we cannot
+    guarantee supportability of these images. Your service level agreement (SLA)
+    on cloud servers that use shared images extends only to the physical
     infrastructure on which the shared image resides.
 
 -   **Visibility of shared images (anti-spam):** If someone shares an
     image with you, you can see it within your list of bootable images
     only if you want to. Only images that you have specifically
-    *accepted* appear in your image list. You always have the option to
-    *reject* an image that's been shared with you if you don't want it
-    to clutter up your image list.
+    *accepted* appear in your image list. If you don't want an image 
+    shared with you to clutter up your image list, you always have the option 
+    to *reject* it.
 
 -   **Image sharing is account-to-account:** If you have an account in
     which you've created additional users, users who have been assigned
@@ -69,11 +69,11 @@ and the "consumer" is the share-ee.)
 
     -   Producer: The user can share *any* image in your account, not
         just those images that the user has specifically created
-    -   Consumer: if that user accepts an image, that image appears
-        among the bootable images for *all* users in the account.
+    -   Consumer: If the user accepts an image, that image displays with
+        the bootable images for *all* users in the account.
 
 -   **Image sharing is regional**: In the Rackspace Cloud, each image
-    exists in a particular region. So if a producer has an image in the
+    exists in a particular region. If a producer has an image in the
     IAD region and shares it with a consumer, the consumer can use that
     image in the IAD region.
 
@@ -91,15 +91,14 @@ and the "consumer" is the share-ee.)
 -   **Image sharing is also available in the Cloud Images API:** If you
     share an image with someone who doesn't use the Cloud Control Panel,
     you might want to notify them that the image is available.  Because
-    of the anti-spam feature, the image won't appear in their
-    image list.
+    of the anti-spam feature, the image won't display in their image list.
 
 For more information, see the image sharing section of the [Cloud Images FAQ](/how-to/cloud-images-faq).
 
 #### Permissions
 
-The abilities to share and accept images are controlled by Role Based
-Access Control for Cloud Images. Briefly:
+The abilities to share and accept images are controlled by RBAC for Cloud Images. 
+The roles are briefly described as follows:
 
 -   In order to share an image (that is, in order to act as an image
     producer), a user must have the **cloudImages:creator** (or greater,
@@ -108,8 +107,8 @@ Access Control for Cloud Images. Briefly:
     consumer), a user must have the **cloudImages:admin** (or greater,
     or equivalent role).
 
-For more information about Cloud Images RBAC, please see the Knowledge
-Center article [Detailed Permission Matrix for Cloud Images](/how-to/detailed-permissions-matrix-for-cloud-images).
+For more information about Cloud Images RBAC, see the How To article 
+[Detailed Permission Matrix for Cloud Images](/how-to/detailed-permissions-matrix-for-cloud-images).
 
 ### Sharing an image in the Cloud Control Panel
 
@@ -142,14 +141,14 @@ Before you share an image, consider the following questions:
 1.  When your image is ready to share, use one of the following methods
     in the Control Panel to share it:
 
-    In the Saved Images list (**Servers > Saved Images**), click the
-    gear icon to the left of the image name and then select **Share
+    In the **Saved Images** list (**Servers > Saved Images**), click the
+    gear icon to the left of the image name, and then select **Share
     Image**.
 
-    -   On the image detail page, click the gear icon and then
+    -   A. On the **Image Detail** page, click the gear icon, and then
         select **Share Image**.
-    -   Scroll to the bottom of the image detail page to the Image
-        Sharing section, and click **Share Image**.
+    -   B. Scroll to the bottom of the **Image Detail** page to the **Image
+        Sharing** section, and click **Share Image**.
 
     When the sharing dialog box opens, the image sharing interface in
     the Cloud Control Panel is optimized for the following common
@@ -161,50 +160,32 @@ Before you share an image, consider the following questions:
         In other words, you have legitimate access
         to the username and password of a user on that account whose
         RBAC role is at least as powerful as **cloudImages:admin**. For
-        example, you are the IT department of a company, and you have
-        set up accounts for some other departments. You have prepared
+        example, you are in the IT department of a company, and you 
+        set up accounts for some other departments. You prepared
         some images for these departments, and now you want to make the
         images available for people in these departments to use.
+   
     -   **Sharing an image with another customer:**
 
-        An example would be the hobbyist use case described earlier. The members of your
-        Exotic OS Users' Group have told you their account numbers, but
+        For example, you are the hobbyist described earlier. The members of your
+        exotic OS users' group gave you their account numbers, but
         they aren't going to give you their usernames and passwords.
 
-2.  Enter the information appropriate for your scenario, and
+2.  Enter the appropriate information for your scenario, and
     click **Share Image**.
 
-The Image Sharing table at the bottom of the Image Detail page is
+The Image Sharing table at the bottom of the **Image Detail** page is
 populated with a row containing information about this sharing event.
 You can see which users have accepted or rejected your sharing request,
 and for which users the request is pending acceptance.
 
-#### What about Chicago (ORD)?
-
-If you are an image producer who wants to share an image in the ORD
-region of the Rackspace cloud, please be aware that the provisioning of
-cloud services in the ORD region may not be available to some
-customers. If you share an image with such a customer, the sharing will
-occur without error from your perspective. If the customer you are
-sharing an image with doesn't have cloud services in ORD, they will
-not see the image and won't be able to boot a server from the image. The customer can
-resolve this issue by opening a support ticket to request ORD region access.
-
-A customer can tell if they don't have access to the ORD region by
-looking in the Control Panel - it won't show up as an option in the
-Region dropdown on either the Server List or Create Server pages. API
-users can look directly in their service catalog.
-
-To learn more about regions in the Rackspace cloud, please see the
-How-To article [Rackspace data centers and regions](/how-to/rackspace-data-centers-and-regions).
-
 #### Image sharing courtesy
 
-To keep the Rackspace cloud a friendly place, observe the following
+To keep the Rackspace Cloud a friendly place, observe the following
 suggestions:
 
 -   Don't share images with random customers. Share only with customers
-    with whom you have some kind of connection.
+    with whom you have a connection.
 -   If a sharing request is in the Pending Acceptance status for a
     while, verify that you entered the correct account number before
     sending a reminder.
@@ -217,9 +198,8 @@ suggestions:
 ### Accept or reject a shared image
 
 As explained earlier, to prevent spam in your image list, you must
-accept an image before it appears in your image list.  There are two
-places in the Cloud Control Panel where you can find out whether someone
-has shared an image with you:
+accept an image before it displays in your image list.  You can find out whether someone
+has shared an image with you in the following places in the Cloud Control Panel:
 
 -   **Your list of Saved Images:** When someone has shared an image with
     you, a notification appears at the top of your list of saved
@@ -232,59 +212,59 @@ has shared an image with you:
     appears at the top of the image selector.
 
 If you accept an image, the notification disappears and the image
-appears among your Saved Images.  On the Saved Images page, the
-text **Shared Image** appears in the **Source** column.  In the image
-selector on the Create Server page, select **Saved Images** and
+displays in your list of saved images.  On the **Saved Images** page, the
+text **Shared Image** displays in the **Source** column.  In the image
+selector on the **Create Server** page, select **Saved Images** and
 then **Shared Images**.
 
-If you reject the image, it does not appear your image list and the
+If you reject the image, it does not display in your image list, and the
 notification disappears.
 
 If you don't want to boot from the image now and want to postpone the
-decision to accept or reject the image, simply close the dialog box and
-the notification will remain.
+decision to accept or reject the image, close the dialog box and
+the notification remains.
 
 #### Reject an image after accepting it
 
 If you accept an image and then decide later that you don't want it, you
-can reject it.
+can reject it by using the following steps:
 
-1.  Find the image in your list of Saved Images.
+1.  Find the image in your list of saved images.
 2.  Click the gear icon to the left of the image name, and
     select **Remove Image**.
 
 #### Accept an image after rejecting it
 
-If you reject an image and decide later that you want it after all, you
+If you reject an image and decide later that you want it, you
 must notify the image producer and ask that the image be re-shared with
 you.
 
 ### Use a shared image
 
-After you accept a shared image, you can use it to boot a server using
+After you accept a shared image, you can use it to boot a server by using
 your normal workflow. However, we encourage you to consider the
 following information before booting a server from a shared image:
 
--   **Shared images are nonstandard images** (for more information, see
-    [Standard and Non-Standard Images](/how-to/rackspace-standard-and-non-standard-images)).
-    For servers booted from nonstandard images, you may expect that we
-    will ensure host servers are functioning properly and that the API
+-   **Shared images are nonstandard images.** For more information, see
+    [Standard and Non-Standard Images](/how-to/rackspace-standard-and-non-standard-images).
+    For servers booted from nonstandard images, you can expect that we
+    ensure that host servers are functioning properly and that the API
     availability meets the SLA.
 
     However, we *cannot* promise to support
-    servers booted from shared images in the same way we support servers
+    servers booted from shared images in the same way that we support servers
     booted from Rackspace base images. We create the base images
     ourselves and know exactly what's on them, whereas the point of
-    shared images is to empower our customers to use images we haven't
-    even dreamed of. So although you can expect support, you can't
-    expect our support staff to know the intricacies of Exotic OS, for
-    example, in the same way they know CentOS.
+    shared images is to empower our customers to use images that we haven't
+    implemented. Although you can expect support, you can't
+    expect our support staff to know the intricacies of exotic OS, for
+    example, in the same way that they know CentOS.
 
 -   Verify that there are no strange users with login privileges in
     /**etc/passwd** and that there aren't any strange SSH keys
     preinstalled on the server.
 -   **Build critical infrastructure components only from images created
-    by people you completely trust.** If you suspect that an image
+    by people that you trust.** If you suspect that an image
     shared with you contains malware or is behaving strangely, you can
     report such suspicious activities to Rackspace Support and
     to <cloudimageshelp@rackspace.com>.

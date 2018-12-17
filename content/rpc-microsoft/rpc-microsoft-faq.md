@@ -40,7 +40,7 @@ Private Cloud powered by Microsoft Cloud Platform can work for you.
 
 #### Why should I use Microsoft Cloud Platform?
 
--   **Backed by *Fanatical Support*&reg;**: Microsoft Cloud Platform
+-   **Backed by Fanatical Support&reg;**: Microsoft Cloud Platform
     includes full infrastructure support backed 24x7x365. Guest Virtual
     Machine (VM) support is available on your terms, and guest VMs are also
     supported.

@@ -1,12 +1,12 @@
 ---
 permalink: working-with-alarms/
-audit_date:
-title: Understand and work with alarms
+audit_date: '2017-08-30'
+title: Working with alarms
 type: article
 created_date: '2015-07-31'
 created_by: Constanze Kratel
-last_modified_date: '2016-06-06'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2017-08-26'
+last_modified_by: Nate Archer
 product: Rackspace Intelligence
 product_url: rackspace-intelligence
 ---
@@ -14,10 +14,10 @@ product_url: rackspace-intelligence
 Rackspace Intelligence provides a wizard that guides you through the
 process of creating an alarm for a check on an entity.
 
-For each alarm type listed below, Rackspace Intelligence supports the
-alarm names listed with it.
+Before you can create an alarm, you must have [created a check](/how-to/working-with-checks).
+The following table lists the alarms that are associated with each type of check in Rackspace Intelligence.
 
-| Alarm type | Alarm name |
+| Check type | Alarm name |
 | --- | --- |
 | **agent.cpu** | CPU usage |
 | **agent.filesystem** | Filesystem usage |
@@ -35,20 +35,14 @@ Before you can create an alarm, you must have [created a check](/how-to/working-
 
 ### Create an alarm
 
-To create a new alarm, complete the following steps:
+Use the following steps to create a new alarm:
 
 1.  Log in to the [Rackspace Intelligence
     interface](http://intelligence.rackspace.com).
 
-2.  In the **Monitoring** section, click the entity for which you want
-    to define an alarm.
+2.  On the Monitoring page, click the entity for which you want to define an alarm.
 
-    On the entity overview page, in the **Monitoring Checks** section,
-    select the check for which you want to create the alarm and click
-    on it.
-
-3.  In the **Monitoring Checks** section of the entity details page,
-    click the check for which you want to create the alarm.
+3.  In the **Monitoring Checks** section of the entity details page, click the check for which you want to create the alarm.
 
 4.  On the check details page, scroll down to the **Monitoring
     Alarms** section, and click **Create Alarm**.
@@ -58,53 +52,36 @@ To create a new alarm, complete the following steps:
     automatically guides you through the steps for creating a CPU
     alarm.
 
-       **Note:** If you want to create an alarm for an
-       [agent check type](https://developer.rackspace.com/docs/cloud-monitoring/v1/developer-guide/#agent-check-types),
-       you must install the Rackspace monitoring agent on the server.
-       Rackspace Intelligence creates an alarm without the agent installed,
-       but you cannot view any metrics for this alarm. See [Creating an
-       alarm for an agent check type without an
-       agent installed.](#createagenttypealarmwithoutagent).
+       **Note:** If you want to create an alarm for an [agent check type](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/check-type-reference/#agent-check-types), you must install the Rackspace monitoring agent on the server. Rackspace Intelligence creates an alarm without the agent installed, but you cannot view any metrics for this alarm. See [Creating an alarm for an agent check type without an agent installed.](#createagenttypealarmwithoutagent).
 
-5.  In the **Choose Alarm Type** section, select the type of alarm, and
-    then click **Next Step**.
-    The wizard continues to guide you through the steps of setting up
-    the alarm. If you selected **Write your own alarm
-    criteria (Advanced)** instead, you are presented with an interface
-    that lets you define a custom alarm script.
+5.   In the **Choose Alarm Type** section, select the type of alarm or Write your own alarm criteria (Advanced), and then click **Next Step**.
 
 6.  In the **Alarm Details** section of the next page, type a name for
     the alarm, and then select a notification plan from the
     **Notification Plan** list.
 
-7.  In the **Alarm Settings** section, define the criteria for
-    your alarm. You must define a threshold for when a Warning is issued
-    and a threshold for when the situation becomes Critical. For a CPU
-    alarm, for example, the following settings are recommended:
+7. If you selected a predefined alarm, set the criteria for it in the **Alarm Settings** section. 
+
+   You must define a threshold for when a Warning is issued and a threshold for when the situation becomes critical. For a CPU alarm, for example, the following settings are recommended:
 
     - Warning Threshold = 60
     - Critical Threshold = 80
     - Consecutive Count = 1
+    
+8. If you selected to write your own alarm criteria, create a custom alarm script in the **Write Alarm Criteria** section. To view example criteria, expand the **Help Guide and Example Criteria** section.
 
-8.  Click **Test Alarm**.
-    If you set the **Warning Threshold** and **Critical Threshold**
-    values to a value that is greater than the **Current value** that is
-    listed on the left side of the Alarm Settings section, the test
-    alarm returns an **OK** result.
-    If you set the **Warning Threshold** and **Critical Threshold**
-    values to a value that is less than the **Current value**, clicking
-    **Test Alarm** returns either a **Warning** or **Critical**
-    result.
+9.  Click **Test Alarm**.
 
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms/intelligence-alarms-test-critical.png %}" width="757" height="533" />
+    - If you set the **Warning Threshold** and **Critical Threshold** values to a value that is greater than the **Current value** that is listed on the left side of the Alarm Settings section, the test alarm returns an **OK** result.
+    - If you set the **Warning Threshold** and **Critical Threshold** values to a value that is less than the **Current value**, clicking **Test Alarm** returns either a **Warning** or **Critical** result.
+    
 9.  After you have tested your alarm, click **Create Alarm**.
 
-After the alarm is successfully created, a new alarm details page
-displays the alarm and shows that the alarm has been created.
+The new alarm is displayed on the alarms details page.
 
 ### Edit an alarm
 
-To edit an alarm, click the **Actions** menu on the alarm details page.
+To edit an alarm, navigate to the details page for the alarm and click the **Actions** menu.
 
 You can perform the following editing actions for alarms:
 
@@ -117,7 +94,7 @@ You can perform the following editing actions for alarms:
 
 #### Edit a notification plan
 
-1.  From the **Actions** menu on the alarm details page, select **Edit
+1.  From the **Actions** menu on the alarm details page, select **Edit Alarm
     Notification Plan**.
 2.  in the Edit Notification Plan dialog box, select a different
     notification plan from the **Notification Plan** list, and click
@@ -149,7 +126,7 @@ longer view the alarm criteria in basic mode.
 
 1.  From the **Actions** menu on the alarm details page,
     select **Delete**.
-2.  In the **Delete Alarm** dialog box, click **Delete**.
+2.  In the dialog box, click **Delete Alarm**.
 
 The alarm is deleted.
 
@@ -219,8 +196,7 @@ system check.
     left side of the section.
 7.  After you have successfully tested your alarm, click **Create
     Alarm**.
-
-    <img src="{% asset_path rackspace-intelligence/working-with-alarms/intelligence-alarms-filesystem-alarm-settings.png %}" width="850" height="581" />
+    
     The new alarm is displayed on the alarm details page.
 
 #### Create an alarm for an agent check type without an agent installed
@@ -260,5 +236,5 @@ check.
     
 8.  Click **Create Alarm Anyway**.
 
-The newly created alarm is displayed in the alarm details page. Because
+The new alarm is displayed in the alarm details page. Because
 no monitoring agent is installed, no monitoring metrics are displayed.

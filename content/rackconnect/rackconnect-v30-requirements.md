@@ -5,8 +5,8 @@ title: RackConnect v3.0 requirements
 type: article
 created_date: '2014-08-28'
 created_by: Juan Perez
-last_modified_date: '2016-01-14'
-last_modified_by: Rose Coste
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -19,10 +19,10 @@ These requirements must be met to implement RackConnect v3.0.
 
 -   The cloud account that you want to use with RackConnect must
     be *linked* to your dedicated account. You can accomplish this in
-    the [MyRackspace portal](https://my.rackspace.com/).
+    the [MyRackspace portal](https://login.rackspace.com/).
 -   This cloud account must also be *associated* with your RackConnect
     v3.0 configuration. You can accomplish this in the [MyRackspace
-    portal](https://my.rackspace.com/).
+    portal](https://login.rackspace.com/).
 -   You can associate a single cloud account with multiple RackConnect
     v3.0 configurations, if each configuration is located in a
     different region.

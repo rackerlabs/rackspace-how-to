@@ -5,8 +5,8 @@ title: Migrate a .NET application from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2016-01-19'
-last_modified_by: Rose Contreras
+last_modified_date: '2018-02-27'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -44,7 +44,7 @@ following figure:
 
         <img src="{% asset_path cloud-servers/migrating-a-net-application-from-amazon-web-services/4-2-6.png %}" width="434" height="496" />
 
-    2.  After you are connected, install a client that you will use to back up data to Rackspace Cloud Files (for example, [Cyberduck](/how-to/configuring-rackspace-cloud-files-with-cyberduck), available at <http://cyberduck.ch/>). You can use any browser to download the client.
+    2.  After you are connected, install an FTP client application that you will use to back up data to Rackspace Cloud Files. You can use any browser to download the client.
 
     3.  Create a connection to Rackspace Cloud Files by using your Rackspace account user name and API key. You will use this connection to back up data during the migration steps.
 
@@ -54,9 +54,7 @@ following figure:
 
 ### Back up data from AWS to Rackspace Cloud Files
 
-Using the client that you installed in the preceding section (for
-example, [Cyberduck](/how-to/configuring-rackspace-cloud-files-with-cyberduck)),
-upload the .NET project folder to the Rackspace Cloud Files container
+Using the FTP client that you installed in the preceding section, upload the .NET project folder to the Rackspace Cloud Files container
 that you created in the article [Provision cloud resources when migrating from Amazon Web Services](https://support.rackspace.com/how-to/provisioning-cloud-resources-when-migrating-from-amazon-web-services/).
 
 ### Restore data from Cloud Files to Cloud Servers

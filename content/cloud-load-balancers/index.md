@@ -5,7 +5,7 @@ created_date: '2016-01-17'
 created_by: Rackspace Support
 last_modified_date: '2016-09-06'
 last_modified_by: Nate Archer
-permalink: /cloud-load-balancers/
+permalink: cloud-load-balancers/
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
 ---
@@ -34,3 +34,4 @@ What is load balancing? Mission critical web-based applications and workloads of
 - [API Getting Started Guide](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#getting-started)
 - [API Developer's Guide](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#developer-guide)
 - [Role-Based Access Permissions via the API](/how-to/permissions-matrix-for-cloud-load-balancers)
+

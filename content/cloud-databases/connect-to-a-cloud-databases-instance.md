@@ -5,23 +5,26 @@ title: Connect to a Cloud Databases instance
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-21'
-last_modified_by: Mike Asthalter
+last_modified_date: '2018-10-24'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
-This article describes three methods for connecting to your Cloud Databases instance. 
+This article describes methods for connecting to your Cloud Databases instance.
 
 ### Connect through a cloud server by using SSH and the hostname
 
-1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
-2.  In the top navigation bar, select **Databases &gt; Database
-    Instances**.
-3.  Click the name of the instance to which you want to connect.
-4.  Copy the hostname string.
-5.  From a terminal window, use SSH to log in to a cloud server that's
-    been created in the same region as your cloud database instance.
-    Following is an example SSH command:
+Use the following steps to connect through a cloud server by using Secure
+Shell (SSH) and the hostname:
+
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3.  Select **Databases > MySQL**.
+4.  Click the name of the instance to which you want to connect.
+5.  Copy the hostname string.
+6.  From a Terminal window, use SSH to log in to a cloud server
+    that's been created in the same region as your cloud database instance.
+    The following line of code shows an example SSH command:
 
         ssh user@IPaddress
 
@@ -67,7 +70,7 @@ Copy the following PHP script and paste it into a text editor:
         //
         // Get "e"
         //
-        $arg_expr = trim($_POST["e"]);
+        $arg_expr = trim($\_POST["e"]);
         if($arg_expr == "") {
             $arg_expr = "PI()";
         }
@@ -107,7 +110,7 @@ Copy the following PHP script and paste it into a text editor:
         Because this sample uses string concatenation to compose SQL statements, only use this in your development environment in your password-protected site.
         <BR>
         EXAMPLES:
-            PI()*3*3
+            PI()\*3*3
             curdate()
             3=3 AND 4>4
             MID('Rackspace',1,4)
@@ -118,14 +121,18 @@ Copy the following PHP script and paste it into a text editor:
 
 #### Copy the instance hostname
 
-1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
-2.  In the top navigation bar, select **Databases &gt; Database
-    Instances**.
+Use the following steps to copy the instance hostname:
+
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+2.  Select **Databases > MySQL**.
 3.  Click the name for the instance to which you want to connect and
     view the details for the instance.
 4.  Copy the hostname string.
 
 #### Paste the instance hostname into the text editor
+
+Use the following steps to paste the instance hostname into the text editor:
 
 1.  Locate the following line of the script in the text editor:
 
@@ -140,13 +147,15 @@ Copy the following PHP script and paste it into a text editor:
 
 #### Modify the information in the script to specify your database user, password, and database instance name
 
+Use the following steps to modify the script:
+
 1.  Locate the following line of the script in the text editor:
 
         $THE_USER = "fmdb_readonly";
 
 2.  Replace the `fmdb_readonly` value with the name of your database
     user (you can find this information in the Users section of the
-    database instance details page in the control panel).
+    database instance details page in the Cloud Control Panel).
 3.  Locate the following line of the script in the text editor:
 
         $THE_PWD = "fmdb_readonly";
@@ -172,6 +181,9 @@ Copy the following PHP script and paste it into a text editor:
 
 #### Copy the modified script and execute it on your server
 
+Use the following steps to copy the modified script and execute it on your
+server:
+
 1.  Copy the modified script to your server (for example, to the
     website's **cgi-bin** folder).
 2.  Execute the script to test connectivity to your database.
@@ -185,21 +197,27 @@ Copy the following PHP script and paste it into a text editor:
 
 ### Connect by using a cloud load balancer
 
+This section describes how to connect by using a cloud load balancer.
+
 **Note:** This load balancer should be used only to access your Cloud
 Databases instance. Do not add other nodes to the load balancer.
 
 #### Copy the instance hostname
 
-1.  Log in to the [Cloud Control Panel](http://mycloud.rackspace.com/).
-2.  In the top navigation bar, select **Databases &gt; Database
-    Instances**.
-3.  Click the name of the instance that you want to connect to the load
+Use the following steps to copy the instance hostname:
+
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3.  Select **Databases > MySQL**.
+4.  Click the name of the instance that you want to connect to the load
     balancer and view the details for the instance.
-4.  Note the region that this database is in. You must create the load
+5.  Note the region that this database is in. You must create the load
     balancer in the same region.
-5.  Copy the hostname string.
+6.  Copy the hostname string.
 
 #### Create a load balancer for the instance
+
+Use the following steps to create a load balancer for the instance:
 
 1.  In the top navigation bar of the Cloud Control Panel, click
     **Networking**.

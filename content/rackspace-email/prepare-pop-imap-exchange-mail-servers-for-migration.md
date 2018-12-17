@@ -5,8 +5,8 @@ title: Prepare POP, IMAP, and Exchange mail servers for migration
 type: article
 created_date: '2016-08-29'
 created_by: Nate Archer
-last_modified_date: '2017-08-14'
-last_modified_by: Nate Archer
+last_modified_date: '2018-12-06'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -21,7 +21,7 @@ POP mail servers store email on the user's local computer and not the source ser
 
 - (Mac) [Migrating from a POP server to Rackspace email IMAP using Outlook 2011](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2011-mac/)
 
-- (Windows) [Migrating from a POP server to Rackspace Email using Outlook 2010's drag and drop method](/how-to/migrating-from-a-pop-server-to-rackspace-email-imap-using-outlook-2010-drag-and-drop-method/)
+- (Windows) [Migrating from a POP server to Rackspace Email using Outlook 2010](/how-to/migrating-from-a-pop-server-to-rackspace-email-pop-using-outlook-2010/)
 
 ### IMAP server
 

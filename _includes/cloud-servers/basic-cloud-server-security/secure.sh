@@ -3,7 +3,7 @@
 set -o errexit
 
 # Disclaimer: This is not the most secure configuration possible. This script
-# is only intended to be more secure than the default configuration. No
+# is intended only to be more secure than the default configuration. No
 # promises are made about this script preventing your server from getting
 # owned or your bike getting stolen. The bad guys are still out to get you.
 # And running this script does not excuse you from writing secure application
@@ -53,5 +53,7 @@ adduser $NON_ROOT_USER sudo
 mkdir /home/$NON_ROOT_USER/.ssh
 cp .ssh/authorized_keys /home/$NON_ROOT_USER/.ssh/
 chown -R $NON_ROOT_USER:$NON_ROOT_USER /home/$NON_ROOT_USER/.ssh
+chmod 0700 /home/$NON_ROOT_USER/.ssh
+chmod 0600 /home/$NON_ROOT_USER/.ssh/authorized_keys
 
 echo "Bye bye. Please logout and login again as the non-root user."

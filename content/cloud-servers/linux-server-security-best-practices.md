@@ -181,7 +181,7 @@ pair, you can move on to the next part of securing your Linux system. You will
 work with the SSH daemon (server) configuration to improve security.
 
 **Note:** **Managed Operations and RackConnect customers only** To ensure that our automated systems have access to your server when needed, we request that you do not change the SSH configuration, and that you skip to the next section. When connecting to your server, Rackspace Support logs in as the user rack using password authentication on port 22. In addition, rebuilding existing servers or building a new server from a snapshot requires that root logins are enabled via the PermitRootLogin option set to yes. If you need to change these values, speak with an administrator at Rackspace to do so in a way that does not impact our ability to provide you with
-***Fanatical Support***&reg;.
+**Fanatical Support**&reg;.
 
 The example commands assume that you're no longer logged in as root and are logged in
 as your new user, using sudo to perform privileged operations.
@@ -353,7 +353,7 @@ information, see
 security standard nor will it fit every environment. Use this sample only to
 help you with syntax and ideas on how to use `iptables`.
 
-Following are the the default locations where `iptables` rulesets are saved on a given Linux
+Following are the default locations where `iptables` rulesets are saved on a given Linux
 distribution. Some distributions allow you to save elsewhere by using the
 `iptables-save` command.
 

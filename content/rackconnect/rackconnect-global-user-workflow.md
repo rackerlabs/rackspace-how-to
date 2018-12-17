@@ -73,7 +73,7 @@ RackConnect Global connectivity with Rackspace via Equinix Cloud
 Exchange, please see the relevant sections in this article.
 
 1.  You order RackConnect Global service to connect to Microsoft Azure via your sales account team or appropriate Rackspace representative.
-    If you are a fanatical Azure customer, contact your appropriate Rackspace support representative.
+    If you are a **Fanatical**&trade; Azure customer, contact your appropriate Rackspace support representative.
 
 2.  You configure Azure's dedicated virtual circuit and and provide the Azure Service Key to Rackspace for provisioning the Virtual Connection.
 

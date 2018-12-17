@@ -5,15 +5,15 @@ title: Rackspace Cloud Essentials - Checking a server's SSH host fingerprint wit
 type: article
 created_date: '2011-05-31'
 created_by: Jered Heeschen
-last_modified_date: '2016-07-08'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-10-25'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-One of the fundamentals of [SSH](/how-to/connecting-to-linux-from-windows-by-using-putty)
+One of the fundamentals of [Secure Shell (SSH)](/how-to/connecting-to-linux-from-windows-by-using-putty)
 is that it uses a "fingerprint" generated using a server's unique "host
-key" to identify the server to a client. You may have seen a warning
+key" to identify the server to a client. You might have seen a warning
 sometime related to the host fingerprint, either that it can't be
 verified or that it has changed.
 
@@ -25,7 +25,7 @@ it's difficult to rule that motivation out entirely).
 No, the host key is actually central to the security provided by SSH
 when you make a connection to your server. If someone malicious tries
 to set up a program to intercept your connection and steal your login
-credentials - a "man in the middle" attack - then the only warning
+credentials - a *man in the middle* attack - then the only warning
 you'll get is your SSH client complaining that the host key has changed.
 
 ###  Why the host key might change
@@ -39,17 +39,18 @@ entirely different entries.
 
 Thus, sometimes that message is expected. But even an expected warning
 doesn't mean that there couldn't be a man-in-the-middle attack in
-progress. It sounds a little paranoid, but that's good security for you - anything can happen, at any time, and the more you do to rule out any
+progress. It sounds a little paranoid, but that's good security for you -
+anything can happen, at any time, and the more you do to rule out any
 variables the better.
 
-So let's look at when and how to check the host fingerprint without
-using an SSH connection. We'll do it by going in through the server's
-web console.
+So let's look at when and how to check the host fingerprint by using the
+server's web console (without using an SSH connection).
 
 ###  A dire warning
 
-First we'll look at the error message that probably brought you to this
-article, a warning that the host's identification has changed:
+First, consider  the error message that probably brought you to this
+article, a warning, similar to the following one,  that the host's
+identification has changed:
 
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
@@ -67,7 +68,7 @@ article, a warning that the host's identification has changed:
 
 The warning can be summed up as: The fingerprint that identifies the SSH
 server is different from what it was the last time you connected to it.
-Expected or not, you'll want to check on that.
+Expected or not, you should to check on that.
 
 ###  Check your server's SSH fingerprint
 
@@ -77,8 +78,8 @@ right machine. Most of us don't write that down, but it's a pretty good
 idea to do so if you connect from multiple machines or from unfamiliar
 computers (like from a consulting client's desktop or server).
 
-If you don't have the host fingerprint handy you can use the control
-panel's web console to find it.
+If you don't have the host fingerprint handy you can use the
+[Cloud Control Panel](https://login.rackspace.com)'s web console to find it.
 
 The web console lets you connect to your server as if you were, well,
 sitting at the console. If anything weird is going on with SSH it won't
@@ -261,7 +262,7 @@ handy if you need to check the fingerprint again. It's a little
 inconvenience at the outset in return for a pretty comforting security
 check you can run through easily when you connect from a new machine.
 
-Next we are going to look at the the [basics of security in a Linux system](/how-to/basic-cloud-server-security),
+Next we are going to look at the [basics of security in a Linux system](/how-to/basic-cloud-server-security),
 adding to what we learned about SSH connections and host keys.
 
 **Next section:** [Basics of security in a Linux system](/how-to/basic-cloud-server-security)

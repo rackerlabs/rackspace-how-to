@@ -58,7 +58,7 @@ To view information about viewing your Rackspace API key, see [View and reset yo
 
 Ensure that the container into which you want to uploads your object
 already exists in the appropriate region in Cloud Files. (You can create
-it in the Cloud Control Panel, if necessary.)
+it in the [Cloud Control Panel](https://login.rackspace.com/), if necessary.)
 
 As mentioned earlier, Swiftly automatically segments your image file and
 upload the segments in parallel. The two SWFLY environment variables
@@ -153,7 +153,7 @@ was created in Cloud Files.
      --region=$CF_REGION
      get
      --query=multipart-manifest=get
-     --output=my-manifest.json 
+     --output=my-manifest.json
      ${CONTAINER}/${IMAGEFILENAME}
 
     # look at the manifest

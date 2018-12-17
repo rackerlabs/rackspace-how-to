@@ -5,8 +5,8 @@ title: Manage domain aliases with the Cloud Office Control Panel
 type: article
 created_date: '2014-04-10'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-01-18'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-01-04'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -27,6 +27,8 @@ company's primary domain. If you assign **mycompany.biz** and
 the aliases will be automatically redirected to a mailbox on the primary
 domain, **mycompany.com**.
 
+**Warning:** You must own the domain that you plan to use as a domain alias or accepted domain. The [MX records](/how-to/dns-record-definitions/#mx-record) must also point to Rackspace for mail to be delivered to your mailboxes.
+
 The type of email hosting service that you use determines the relevant
 terminology ("domain alias" versus "accepted domain") and functionality
 (such as how email is redirected):
@@ -42,7 +44,7 @@ terminology ("domain alias" versus "accepted domain") and functionality
     an accepted domain. Email sent to the accepted domain can be
     automatically directed to any mailbox that you specify.
 
-### Add a domain alias or accepted domain
+### Add a domain alias or accepted domain (Resellers Only)
 
 1.  Log in to the [Cloud Office Control
     Panel](https://cp.rackspace.com/).

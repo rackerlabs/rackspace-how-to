@@ -5,8 +5,8 @@ title: Cloud Servers images for use with RackConnect v2.0
 type: article
 created_date: '2012-08-21'
 created_by: David Hendler
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2018-10-25'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -14,8 +14,8 @@ product_url: rackconnect
 **Applies to:** RackConnect v2.0
 
 To create new servers, you can use Cloud Servers images that are
-available in the [MyRackspace portal](https://my.rackspace.com/), the
-[Cloud Control Panel](https://mycloud.rackspace.com/), or the Cloud
+available in the [MyRackspace portal](https://login.rackspace.com/), the
+[Cloud Control Panel](https://login.rackspace.com/), or the Cloud
 Servers API. To ensure that you are using a Cloud Servers image that is
 compatible with RackConnect, we recommend that you use the MyRackspace
 portal when creating your servers. This article provides details about
@@ -106,3 +106,5 @@ Operations service level.
 ### Related article
 [RackConnect v2.0 compatibility with Cloud Servers
 images](/how-to/rackconnect-v20-compatibility-with-cloud-servers-images)
+
+

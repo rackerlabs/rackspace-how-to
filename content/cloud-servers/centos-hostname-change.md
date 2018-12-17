@@ -1,6 +1,6 @@
 ---
 permalink: centos-hostname-change/
-audit_date: 2016-06-07
+audit_date: '2016-06-07'
 title: Change a server's hostname in CentOS
 type: article
 created_date: '2011-03-09'

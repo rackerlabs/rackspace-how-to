@@ -5,8 +5,8 @@ title: Configure a Site-to-site VPN using the Vyatta Network Appliance
 type: article
 created_date: '2013-01-18'
 created_by: Sameer Satyam
-last_modified_date: '2015-09-29'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2018-08-07'
+last_modified_by: Catherine Richardson
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -19,7 +19,7 @@ This site-to-site VPN connection enables you to extend your IT infrastructure to
 
 Vyatta supports both policy-based and route-based VPNs. In this article we show you how to configure a policy-based VPN on the Vyatta.
 
-Click the link for a [comprehensive guide to VPN configuration on the Vyatta](https://54712289bdd910def82d-5cc7866f7aae0a382278b5bce7412a4a.ssl.cf1.rackcdn.com/Vyatta-VPN_6.5R1_v01.pdf).
+Click the link for a [comprehensive guide to VPN configuration on the Vyatta](https://ecl.ntt.com/files/firewall/5.2/vyatta-network-os-5.2r1-vpn-support.pdf).
 
 For guidance on configuring the relevant firewall rules to allow VPN traffic on the Vyatta please refer to the following article:
 

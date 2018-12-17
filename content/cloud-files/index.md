@@ -10,7 +10,7 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-Store it on Cloud Files, serve it fast on Akamai's CDN. Cloud Files, powered by [OpenStack&reg;](http://www.rackspace.com/cloudbuilders/openstack/), provides an easy to use online storage for files and media which can be delivered globally at blazing speeds over Akamai's content delivery network (CDN). Whether your storage needs are modest - or monumental - you enjoy built-in redundancy, an easy-to-use control panel, and [Fanatical Support&reg;](http://www.rackspace.com/whyrackspace/support/) from day one.
+Store it on Cloud Files, serve it fast on Akamai's CDN. Cloud Files, powered by [OpenStack&reg;](http://www.rackspace.com/cloudbuilders/openstack/), provides an easy to use online storage for files and media which can be delivered globally at blazing speeds over Akamai's content delivery network (CDN). Whether your storage needs are modest - or monumental - you enjoy built-in redundancy, an easy-to-use control panel, and [**Fanatical Support**&reg;](http://www.rackspace.com/whyrackspace/support/) from day one.
 
 ###  Cloud Files Basics
 
@@ -19,6 +19,7 @@ Store it on Cloud Files, serve it fast on Akamai's CDN. Cloud Files, powered by 
 - [Why Should I Use Cloud Files?](/how-to/why-choose-cloud-files)
 - [Best practices for using Cloud Files](/how-to/best-practices-for-using-cloud-files)
 - [Using CNAMEs with Cloud Files containers](/how-to/using-cnames-with-cloud-files-containers)
+- [Cloud Files delete and purge requests](/how-to/cloud-files-deletion-and-purge-requests)
 
 ###  Cloud Files API and SDKs
 
