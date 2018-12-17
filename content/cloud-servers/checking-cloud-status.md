@@ -21,8 +21,8 @@ The page lists all Cloud services, their current status, and a recent history.
 
 <img src="{% asset_path cloud-servers/checking-cloud-status/picture1.png %}" alt="Status by service" />
 
-If a service has an alert, you can click the icon for that day to view any
-related messages.
+If a service has an alert, you can click the icon for that day
+to view any related messages.
 
 You can also click on a service to view its status by data center.
 
