@@ -5,7 +5,7 @@ title: Known issues and suggested workarounds for RBAC
 type: article
 created_date: '2013-08-16'
 created_by: Renee Rendon
-last_modified_date: '2018-12-10'
+last_modified_date: '2018-12-17'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
@@ -14,7 +14,7 @@ product_url: undefined
 **Previous section**: [Role-Based Access Control (RBAC)
 FAQ](/how-to/faq-role-based-access-control-rbac)
 
-This article describes known issues with Role-based Access Control
+This article describes known issues with Role-Based Access Control
 (RBAC). We are diligently working to resolve these issues. If you're
 experiencing an issue that doesn't appear in this article, contact Rackspace
 Support at 1 800 961 4454.
@@ -29,11 +29,11 @@ Control Panel.
 #### Workaround
 
 The account owner can simulate the Full Access role by
-assigning the to user the Admin role for all available products. To simulate
-the Read-Only Access role, the account owner can assign to the user the
-Observer role for all available products.
+assigning the user the Admin role for all available products. To simulate
+the Read-Only Access role, the account owner can assign the
+Observer role to the user for all available products.
 
-**Note**: If you use this workaround, the custom role doesn't automatically
+**Note**: If you use this workaround, the Custom role doesn't automatically
 update when new Rackspace products become RBAC-enabled. The account owner must
 update Custom roles to include the new products.
 
