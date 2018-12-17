@@ -114,9 +114,9 @@ The following services are supported on Red Hat Cluster Suite&reg; (RHCS) in the
 
 **Note**: RHCS is supported only on physical hardware platforms (not including OnMetal offerings). Oracle on RHCS is supported in tandem by the DBA team and Linux OS administrators.
 
-### Containerization Technologies
+### Containerization technologies
 
-The following containerzation technologies are supported:
+The following containerization technologies are supported:
 
 |   | Installation | Configuration | Troubleshooting | Patching |
 | --- | --- | --- | --- | --- |
