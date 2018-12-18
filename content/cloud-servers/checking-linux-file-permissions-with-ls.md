@@ -5,7 +5,7 @@ title: Check Linux file permissions with ls
 type: article
 created_date: '2011-11-23'
 created_by: Jered Heeschen
-last_modified_date: '2016-06-22'
+last_modified_date: '2018-12-18'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
