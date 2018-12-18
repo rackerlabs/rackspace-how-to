@@ -1,11 +1,11 @@
 ---
 permalink: best-practices-for-cloud-backup/
-audit_date: '2018-12-17'
+audit_date: '2018-12-18'
 title: Best practices for Cloud Backup
 type: article
 created_date: '2013-04-22'
 created_by: David Hendler
-last_modified_date: '2018-12-17'
+last_modified_date: '2018-12-18'
 last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
@@ -20,18 +20,18 @@ This article shows you how to get the most out of Rackspace Cloud Backup and add
 Following are the key features of Cloud Backup:
 
 -   Select the files and folders from your cloud server that you want to
-    back up
--   Run your backups manually or on a schedule that works for you
--   See the activity from all your backups, both current and previous
+    back up.
+-   Run your backups manually or on a schedule that works for you.
+-   See the activity from all your backups, both current and previous.
 -   Use AES-256 encryption with a private encryption key known only to
-    you
--   Restore individual files and folders from a particular date
+    you.
+-   Restore individual files and folders from a particular date.
 -   Save space with incremental backups that save only the changed
-    portions of files
--   Create unlimited backups
+    portions of files.
+-   Create unlimited backups.
 
 **Note:** Cloud Backup does not take snapshots of your server. To read more about
-how Cloud Backup differs from snapshots, see [Rackspace Cloud Backup vs. Cloud Server Image Backups](/how-to/rackspace-cloud-backup-vs-cloud-server-image-backups). For backup consideration on your General Purpose server, see [Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+how Cloud Backup differs from snapshots, see [Rackspace Cloud Backup vs. Cloud Server Image Backups](/how-to/rackspace-cloud-backup-vs-cloud-server-image-backups). For backup consideration for your General Purpose server, see [Best practices for backing up your data: Cloud Block Storage versus Cloud Backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 
 ### Key concepts
@@ -51,9 +51,9 @@ Knowing the language of backups can help you make informed decisions about your 
 
 ### Choosing what to back up
 
-**Warning:** Cloud Backup does *not* follow symlinks. For example, if a symlink points to a file, the symlink itself is backed up, but the file it points to is not backed up. Likewise, if a symlink points to a folder, the symlink itself is backed up, but the folder and anything under the folder is not be backed up. If you want to back up files or folders, *do not use a symlink*.
+**Warning:** Cloud Backup does *not* follow symlinks. For example, if a symlink points to a file, the symlink itself is backed up, but the file it points to is not backed up. Likewise, if a symlink points to a folder, the symlink itself is backed up, but the folder and anything under the folder is not be backed up. If you want to back up a file or a folder, *do not use a symlink*.
 
-As a best practice for Linux web servers and database servers, we recommend
+As a best practice for Linux&reg; web servers and database servers, we recommend
 using Cloud Backup on the following directories:
 
 -   Web applications under `/var/www`
@@ -73,7 +73,7 @@ We *do not support* backing up the following items:
 These file types either change too rapidly (databases, logs, caches) or
 don't exist long enough (session files) to be backed up. You should
 not back up session files or caches at all, but if you need to back up
-databases or log files, you must implement following workarounds:
+databases or log files, you must implement the following workarounds:
 
 -  Take a snapshot of a database (for example, a database dump), and back up the snapshot.
 -  Take snapshots of log files, and back up the snapshots. To avoid running out of disk space, rotate your log files periodically.
@@ -82,13 +82,13 @@ The Cloud Backup agent skips the following types of files automatically:
 
 - Memory-only file systems (Linux: /proc, etc.)
 - Cloud Backup agent data directories
-- Recovery information (Windows)
+- Recovery information (Windows&reg;)
 - Recycle Bin (Windows)
 - **desktop.ini** and **thumbs.db** (Windows)
 
 ### Backup and restore best practices
 
-You can configure backups and restores in many ways. To make Cloud Backup work for you, it helps to understand some of the tradeoffs you make when you configure the many options available to you.
+You can configure backups and restores in many ways. To make Cloud Backup work for you, it helps to understand some of the trade-offs you make when you configure the many options available to you.
 
 **Note:** With Performance Cloud Servers, Cloud Monitoring only monitors the system disk. The data disk is not monitored. For data disk backup, use [Cloud Block Storage](/how-to/cloud-block-storage-overview).
 
@@ -126,7 +126,7 @@ Another point to consider is the restore destination. Restoring to the original 
 
 Encryption is important for keeping your data confidential, but encryption has its costs. It takes significantly longer to back up and restore encrypted data. Consider whether the data that you are storing must be encrypted. If not, then don't use encryption.
 
-**Warning**: Once you encrypt a backup for a server, you cannot remove
+**Warning**: After you encrypt a backup for a server, you cannot remove
 encryption from that backup.
 
 ### Conserve resources with Cloud Backup
@@ -158,7 +158,7 @@ On Linux cloud servers, the solution is to use an external drive for these
 files and create a mount point to the path of the log or database files.
 For information about the location of these paths, see the "Locations of Cloud Backup agent files" section in [Cloud Backup agent logging](/how-to/cloud-backup-agent-logging-basics).
 
-On Windows cloud servers, you can use the **AgentConfig.exe** tool located in the `C:\Program Files\Driveclient` folder to move these files from the system drive:
+On Windows cloud servers, you can use the **AgentConfig.exe** tool located in the `C:\Program Files\Driveclient` folder to move these files from the system drive by using the following steps:
 
 1.	Shut down the Cloud Backup agent service.
 
@@ -188,7 +188,7 @@ When you click the blue **Save** icon at the top of the **Agent Configuration** 
 
 ##### **Disable VSS backups**
 
-By default, VSS is used to make backups more reliable, but there might be times when you want to disable it. For example, VSS might take up disk space on a volume that is already running low.
+By default, the Volume Snapshot Service (VSS) is used to make backups more reliable, but there might be times when you want to disable it. For example, VSS might take up disk space on a volume that is already running low.
 
 To turn off VSS shadowing for backups, select **VSS Disable** and then click **Save**.
 
@@ -247,6 +247,6 @@ To minimize your chances of experiencing the following issues, keep your backup 
   Ensure that you're running the latest agent release. Then, attempt to determine the cause of the error. If the error is intermittent, try the backup again.
 
 
-- **My backup/restore is slow. What can I do?**
+- **My backup or restore is slow. What can I do?**
 
   If your backup or restore is encrypted, it will be especially slow. Also, review the “Choosing what to back up” section for what you should *not* be backing up. The less there is to back up or restore, the faster the process will be.
