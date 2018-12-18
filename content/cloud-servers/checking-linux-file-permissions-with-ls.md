@@ -176,8 +176,8 @@ After the number of links, two names are listed. In the preceding example, the
 names are `root` and `mail`.
 
 The first name indicates the owner of the file. The `user` permissions apply to
-owner of the file, so in this case, the user 'root' has read,
-write, and execute permissions for this directory. to
+the owner of the file, so in this case, the user 'root' has read,
+write, and execute permissions for this directory.
 
 The second name is the file's group. The `group` permissions apply to
 any user in the same group as the file, so in this case, those permissions
