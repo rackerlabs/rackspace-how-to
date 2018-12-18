@@ -11,13 +11,13 @@ product: Cloud DNS
 product_url: cloud-dns
 ---
 
-A Start of Authority (SOA) resource record indicates which domain name
-server (DNS) is the best source of information for the specified domain.
+A Start of Authority (SOA) resource record indicates which Domain Name
+Server (DNS) is the best source of information for the specified domain.
 Every domain must have an SOA record.
 
-When you add a domain to the Domain Name System (DNS), the email address that
-you enter is added to the SOA record for the domain. This publicly associates
-the email with the domain.
+When you add a domain to the DNS, the email address that you enter is
+added to the SOA record for the domain. This publicly associates the email
+with the domain.
 
 For example, the email address associated with the **rackspace.com**
 domain is **hostmaster@rackspace.com**. You can see the SOA record for
