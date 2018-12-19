@@ -231,7 +231,7 @@ Use the following steps to turn off logging:
 4. On the **Systems** page, click the backup agent for which you want to turn
    off logging.
 
-  The **Details** page for the agent appears.
+    The **Details** page for the agent appears.
 
 5. In the **Logging Mode** field, select **Warn** from the drop-down list.
    There is no option for **Off*.
