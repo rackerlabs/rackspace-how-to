@@ -19,7 +19,8 @@ and directories you want to back up, and at what frequency.
 The agent also gathers information about how Cloud Backup is
 interacting with your server or storage volume, and it can produce
 detailed logging information to help with troubleshooting. This article
-provides information about the logging functions of the Cloud Backup agent.
+provides information about the logging functions of the
+Cloud Backup agent.
 
 ### Log configuration file
 
@@ -237,4 +238,4 @@ Use the following steps to turn off logging:
 
 **Warning**: While you can also disable logging by removing the `appender-ref`
 tag from the **log4cxx.xml** file, be aware that the API eventually overrides
-any local settings that you make. 
+any local settings that you make.
