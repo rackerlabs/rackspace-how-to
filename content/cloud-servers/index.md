@@ -16,8 +16,8 @@ This introduction covers everything you need to know as a new Rackspace customer
 
 - [Create a Cloud Server](/how-to/create-a-cloud-server)
 - [Save a Cloud Server image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
-- [Restore a server from a snapshot](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
-- [Snapshot limitations](/how-to/rackspace-cloud-essentials-cloud-server-image-limitations)
+- [Restore a server from an image](/how-to/create-an-image-of-a-server-and-restore-a-server-from-a-saved-image)
+- [Image limitations](/how-to/rackspace-cloud-essentials-cloud-server-image-limitations)
 
 ### Remote access
 

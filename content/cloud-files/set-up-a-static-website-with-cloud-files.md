@@ -53,7 +53,7 @@ Now your static website content is uploaded to your Cloud Files
 containers. However, to access your static website, you need the CDN
 URL.
 
-1.  In the Cloud Control Panel, go the the Cloud Files/Containers list.
+1.  In the Cloud Control Panel, go to the Cloud Files/Containers list.
 
 2.  Click the gear icon next to the name of your container and select
     **View All Links**.

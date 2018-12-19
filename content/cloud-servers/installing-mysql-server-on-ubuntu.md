@@ -65,7 +65,7 @@ command:
 There is more than one way to work with a MySQL server, but this article
 focuses on the most basic and compatible approach, the `mysql` shell.
 
-1. At the command prompt, run the following command to launch the the `mysql`
+1. At the command prompt, run the following command to launch the `mysql`
    shell and enter it as the root user:
 
        /usr/bin/mysql -u root -p

@@ -5,8 +5,8 @@ title: Connect to a MySQL database remotely
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-04'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-12-17'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -92,3 +92,52 @@ When you set up a remote user, consider the following information:
  - If you're using iptables, you need to add an entry to your firewall rule
    for Transmission Control Protocol (TCP) port 3306. You can use the name
    `mysql` for the port number.
+
+
+<script type="application/ld+json">
+  {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   	"name":"Connect to a MySQL database remotely",
+   	"steps": {
+   		"@type": "HowToSection",
+   		"name": "Connect to a MySQL database remotely",
+   		"itemListElement": [
+   			{
+   			"@type": "HowToStep",
+   			"itemListOrder": "http://schema.org/ItemListOrderAscending",
+   			"position": "1",
+   			"name":"Retrieve your IP address"
+   			},{
+   			"@type": "HowToStep",
+   			"itemListOrder": "http://schema.org/ItemListOrderAscending",
+   			"position": "2",
+   			"name":"Grant access",
+               "itemListElement": [
+               	{
+               	"@type": "HowToDirection",
+                   "position": "1",
+                   "name": "Log in to your MySQL server locally as the root user"
+   				},
+                   {
+               	"@type": "HowToDirection",
+                   "position": "2",
+                   "name": "Use a GRANT command in the following format to enable access for the remote user."
+   				},
+                   {
+                   "@type": "HowToTip",
+                   "position": "3",
+                   "name": "mysql> GRANT ALL ON fooDatabase.* TO fooUser@'1.2.3.4' IDENTIFIED BY 'my_password';"
+               	},
+              		{
+                   "@type": "HowToTip",
+                   "position": "4",
+                   "name": "Ensure that you change 1.2.3.4 to the IP address that you obtained previously, and my_password to the password that you want fooUser to use"
+               	}
+               ]},{
+   			"@type": "HowToStep",
+   			"itemListOrder": "http://schema.org/ItemListOrderAscending",
+   			"position": "3",
+   			"name":"Test the connection remotely"
+   			}]}}
+</script>
