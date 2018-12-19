@@ -196,8 +196,8 @@ most of these files are under **~/.driveclient**.
 
 #### Agent file locations (Windows)
 
-Finding the `driveclient` files under various flavors of Windows is a
-little complicated. In general, you can find these files under the
+Finding the `driveclient` files under various flavors of Windows is
+a little complicated. In general, you can find these files under the
 folder to which **CSIDL_COMMON_APPDATA** points.
 
 -   For more information about this location on Windows versions
