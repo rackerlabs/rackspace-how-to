@@ -191,8 +191,8 @@ on Linux systems:
 -   PID file for running the agent: **/var/run/driveclient.pid**
 -   Database: Search for a **\*.db** file under **/var/cache/driveclient**
 
-**Note**: If `driveclient` is installed as an individual user, most of
-these files are under **~/.driveclient**.
+**Note**: If `driveclient` is installed as an individual user,
+most of these files are under **~/.driveclient**.
 
 #### Agent file locations (Windows)
 
