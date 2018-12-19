@@ -57,3 +57,56 @@ key. This example uses the file **deployment_key.txt**.
 9. When the prompt to confirm the connection request is displayed, type **yes** and then press **Enter**. 
 
 10. If your SSH key requires a password, enter it when prompted to complete the connection.
+
+<script type="application/ld+json">
+  {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   	"name":"Log in with an SSH private key on Linux and Mac",
+   	"steps": {
+   		"@type": "HowToSection",
+   		"name": "Log in with an SSH private key on Linux and Mac",
+   		"itemListElement": [
+   			{
+   			"@type": "HowToStep",
+   			"itemListOrder": "http://schema.org/ItemListOrderAscending",
+   			"position": "1",
+   			"name":"Retrieve your IP address"
+   			},{
+   			"@type": "HowToStep",
+   			"itemListOrder": "http://schema.org/ItemListOrderAscending",
+   			"position": "2",
+   			"name":"Grant access",
+               "itemListElement": [
+               	{
+               	"@type": "HowToDirection",
+                   "position": "1",
+                   "name": "Using a text editor, create a new file and store your private key in it."
+   				},
+                   {
+               	"@type": "HowToDirection",
+                   "position": "2",
+                   "name": "Run the chmod 600 deployment_key.txt command to change the file permissions to 600 to secure the key."
+   				},
+                   {
+                   "@type": "HowToTip",
+                   "position": "3",
+                   "name": "Use the key to log in to the SSH client."
+               	},
+              		{
+                   "@type": "HowToTip",
+                   "position": "4",
+                   "name": "When the prompt to confirm the connection request is displayed, type yes and then press Enter."
+               	},
+                {
+                   "@type": "HowToTip",
+                   "position": "5",
+                   "name": "If your SSH key requires a password, enter it when prompted to complete the connection."
+               	}
+               ]},{
+   			"@type": "HowToStep",
+   			"itemListOrder": "http://schema.org/ItemListOrderAscending",
+   			"position": "3",
+   			"name":"Test the connection remotely"
+   			}]}}
+</script>
