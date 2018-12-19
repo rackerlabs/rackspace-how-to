@@ -234,7 +234,7 @@ Use the following steps to turn off logging:
     The **Details** page for the agent appears.
 
 5. In the **Logging Mode** field, select **Warn** from the drop-down list.
-   There is no option for **Off*.
+   There is no option for **Off**.
 
 **Warning**: While you can also disable logging by removing the `appender-ref`
 tag from the **log4cxx.xml** file, be aware that the API eventually overrides
