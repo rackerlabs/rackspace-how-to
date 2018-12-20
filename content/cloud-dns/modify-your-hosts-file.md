@@ -208,6 +208,6 @@ Use the following instructions if you're running MacOS X 10.6 through 10.12:
    	"@type": "HowToSection",
    	"name": "Test the connection remotely",
        "position": "3",
-   	"itemListElement": "From Notepad, open the following file: c:\Windows\System32\Drivers\etc\hosts"
+   	"itemListElement": "From Notepad, open the following file:"
    }]}
 </script>
