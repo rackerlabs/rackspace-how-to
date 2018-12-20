@@ -5,7 +5,7 @@ title: Check Linux file permissions with ls
 type: article
 created_date: '2011-11-23'
 created_by: Jered Heeschen
-last_modified_date: '2016-06-22'
+last_modified_date: '2018-12-18'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -176,7 +176,7 @@ After the number of links, two names are listed. In the preceding example, the
 names are `root` and `mail`.
 
 The first name indicates the owner of the file. The `user` permissions apply to
-owner of the file, so in this case, the user 'root' has read,
+the owner of the file, so in this case, the user 'root' has read,
 write, and execute permissions for this directory.
 
 The second name is the file's group. The `group` permissions apply to
