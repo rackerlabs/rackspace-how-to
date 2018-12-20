@@ -1,11 +1,11 @@
 ---
 permalink: cloud-backup-agent-logging-basics/
-audit_date: '2016-12-18'
+audit_date: '2018-12-18'
 title: Cloud Backup agent logging basics
 type: article
 created_date: '2014-05-29'
 created_by: Ross Diaz
-last_modified_date: '2016-12-18'
+last_modified_date: '2018-12-20'
 last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
@@ -58,7 +58,7 @@ this article.
 The Cloud Backup agent stores troubleshooting information in a *primary log
 file* and a series of up to 12 *rollover log files*. When logging capacity is
 reached, the primary log file is rolled over to a rollover log file, and a new
-primary log file is started. As more more logs are rolled over to the point
+primary log file is started. As more logs are rolled over to the point
 that the maximum number of rollover logs is reached, the oldest rollover log
 file is deleted.
 
@@ -70,26 +70,25 @@ the cache volume (often the system volume) of the server.
 
 To ensure that the logs are recording the correct information, you might need
 to modify the configuration file for your agent and set the appropriate *level
-value*. The available logging modes that you can specify for the level value
-are as follows:
+value*. You can specify one of the following logging modes for the level value:
 
--   **OFF**: Turn logging off.
--   **FATAL**: Log very severe errors that will cause the application to stop
+-   **OFF**: Turns logging off.
+-   **FATAL**: Logs very severe errors that cause the application to stop
     running.
--   **ERROR**: Log all error events, even those that might still allow the
+-   **ERROR**: Logs all error events, even those that might still allow the
     application to continue running.
--   **WARN**: Log warnings of potentially harmful situations.
--   **INFO**: Log informational messages that highlight the progress of the
+-   **WARN**: Logs warnings of potentially harmful situations.
+-   **INFO**: Logs informational messages that highlight the progress of the
     application.
     This is the default logging mode for the Cloud Backup agent.
--   **DEBUG**: Log fine-grained informational events to assist in
+-   **DEBUG**: Logs fine-grained informational events to assist in
     troubleshooting.
--   **TRACE**: Turn on all logging. This mode generates a very large number of
-    log lines, especially for larger backups. If `MaxFileSize` (the max size
-    for each rollover log file) is set too low, trace information early in a
-    backup or restore operation may roll off before you're able to look at
-    it. Some experimentation might be necessary to know how large to set
-    this size.
+-   **TRACE**: Turns on all logging. This mode generates a very large number of
+    log lines, especially for larger backups. If `MaxFileSize` (the maximum
+    size for each rollover log file) is set too low, trace information early
+    in a backup or restore operation might roll off before you're able to
+    look at it. Some experimentation might be necessary to know how large to
+    set this size.
 -   **ALL**: Same as TRACE.
 
 ### Trace-level debugging
@@ -184,11 +183,11 @@ on Linux systems:
 
 -   Configuration files: **/etc/driveclient**
 -   Logs: **/var/log** (This value might be different on your server,
-    depending on your settings in the **log4cxx.xml** file under Configuration
-    files.)
+    depending on your settings in the **log4cxx.xml** file.)
 -   Startup script: **/etc/init.d**
 -   Application: **/usr/local/bin**
--   PID file for running the agent: **/var/run/driveclient.pid**
+-   Process Identification (PID) file for running the agent:
+    **/var/run/driveclient.pid**
 -   Database: Search for a **\*.db** file under **/var/cache/driveclient**
 
 **Note**: If `driveclient` is installed as an individual user,
@@ -219,7 +218,7 @@ In a typical installation, the files are located in the following folders:
 ### Disable logging
 
 To disable logging, remove the `appender-ref` tag from the **log4cxx.xml**
-file. be aware that the API will eventually override any local settings you
+file. Be aware that the API eventually overrides any local settings you
 make. The most reliable place to turn down logging is on the Details page for
 the agent in the Cloud Control Panel.
 
