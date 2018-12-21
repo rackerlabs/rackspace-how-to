@@ -1,7 +1,7 @@
 ---
 permalink: cloud-database-instance-parameters/
 audit_date: '2018-12-21'
-title: Cloud Database instance parameters
+title: Cloud Databases instance parameters
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
@@ -10,6 +10,8 @@ last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
+
+This article describes Cloud Databases instance parameters and provides information about the accessibility of your databases.
 
 ### Quick facts
 
@@ -25,7 +27,7 @@ Here are some important facts to consider when you create a new instance:
 ### Accessibility
 
 For enhanced security, database instances are directly accessible on the
-internal Rackspace Network and by using a Cloud resource within the same
+internal Rackspace network and by using a cloud resource within the same
 regional data center. For example, a database instance in Dallas-Fort Worth (DFW) can only be accessed by a cloud server in DFW. For more information, see [Public and private access for Cloud
 Databases](/how-to/public-and-private-access-for-cloud-databases)
 and [Connect to a Cloud Databases
