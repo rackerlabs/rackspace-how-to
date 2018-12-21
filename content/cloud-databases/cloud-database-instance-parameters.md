@@ -20,7 +20,6 @@ Here are some important facts to consider when you create a new instance:
 -   You can create a database instance with one or more databases.
     You can configure databases and users when you create the instance,
     or at a later time.
--   You can associate an unlimited number of users with each database.
 -   The default binding for the MySQL instance is port 3306.
 
 ### Accessibility
