@@ -1,36 +1,33 @@
 ---
 permalink: cloud-database-instance-parameters/
-audit_date:
-title: Cloud Database Instance Parameters
+audit_date: '2018-12-21'
+title: Cloud Database instance parameters
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-01-06'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-21'
+last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
-### Quick Facts
+### Quick facts
 
-Here are some important facts to consider when creating a new instance:
+Here are some important facts to consider when you create a new instance:
 
--   The length of the instance name is limited to 255 characters and any
-    characters are permitted.
+-   The length of the instance name is limited to 255 characters, and you can
+    use any characters that you want.
 -   You can create a database instance with one or more databases.
-    Databases and users can be configured when you create the instance
+    You can configure databases and users when you create the instance,
     or at a later time.
--   Each database can have an unlimited number of users associated
-    with it.
+-   You can associate an unlimited number of users with each database.
 -   The default binding for the MySQL instance is port 3306.
 
 ### Accessibility
 
 For enhanced security, database instances are directly accessible on the
 internal Rackspace Network and by using a Cloud resource within the same
-regional data center. For example, a database instance in DFW can only
-be accessed by a Cloud Server in DFW. For more information, see [Public
-Vs. Private
-Access](/how-to/public-and-private-access-for-cloud-databases)
-and [Connecting to Your
-Database](/how-to/connect-to-a-cloud-databases-instance).
+regional data center. For example, a database instance in Dallas-Fort Worth (DFW) can only be accessed by a cloud server in DFW. For more information, see [Public and private access for Cloud
+Databases](/how-to/public-and-private-access-for-cloud-databases)
+and [Connect to a Cloud Databases
+instance](/how-to/connect-to-a-cloud-databases-instance).
