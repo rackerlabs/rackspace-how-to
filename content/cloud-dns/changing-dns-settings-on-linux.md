@@ -5,28 +5,28 @@ title: Change DNS settings on Linux
 type: article
 created_date: '2011-07-20'
 created_by: Jered Heeschen
-last_modified_date: '2018-11-15'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-21'
+last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-If you find that your server's Domain Name Server (DNS) settings are misconfigured 
-or you prefer to use your own, this article describes how to change your Linux&reg; 
-server's DNS settings.
+If you find that your server's Domain Name Server (DNS) settings are
+misconfigured or you prefer to use your own, this article describes how to
+change your Linux&reg; server's DNS settings.
 
 ### Add name servers to the configuration file
 
-On most Linux operating systems, the DNS servers that the system uses for name 
-resolution are defined in the **/etc/resolv.conf** file. That file should contain 
-at least one `nameserver` line. Each `nameserver` line defines a DNS server. The 
-name servers are prioritized in the order the system finds them in the file. Use 
-the Internet Protocol (IP) addresses of the name servers when you enter them into 
-the configuration file because the system doesn't know what to do with domain names 
+On most Linux operating systems, the DNS servers that the system uses for name
+resolution are defined in the **/etc/resolv.conf** file. That file should contain
+at least one `nameserver` line. Each `nameserver` line defines a DNS server. The
+name servers are prioritized in the order the system finds them in the file. Use
+the Internet Protocol (IP) addresses of the name servers when you enter them into
+the configuration file because the system doesn't know what to do with domain names
 until after it knows how to get to the DNS servers.
 
-In some cases, **/etc/resolv.conf** could be a directly managed file, populated by the 
-network service (`network` by using initscripts or `NetworkManager`). To directly edit 
+In some cases, **/etc/resolv.conf** could be a directly managed file, populated by the
+network service (`network` by using initscripts or `NetworkManager`). To directly edit
 the configuration file, use the following steps to add the DNS servers:
 
 1. Open the **resolv.conf** file with an editor, such as `nano`, to make the
@@ -51,7 +51,7 @@ the configuration file, use the following steps to add the DNS servers:
 
 3. Save the file.
 
-4. To ensure that your new settings are working, `ping` the domain name by 
+4. To ensure that your new settings are working, `ping` the domain name by
    using the following command:
 
     ping -c 3 rackspace.com
@@ -94,3 +94,33 @@ line in the **resolv.conf** file, as follows:
 
 Then test as previously shown, by using the `ping6` command instead of the
 regular `ping` command to force the system to use IPv6.
+
+<script type="application/ld+json">
+    "name":"Connect to a MySQL database remotely",
+	   "description": "This article explains how to set up a user on your MySQL® server in order to connect to a MySQL database remotely. In order to perform these steps, you must have local server access to log in as the root MySQL user.",
+	   "step": [
+	   	{
+	   	"@type": "HowToSection",
+	   	"name": "Retrieve your IP address",
+	       "position": "1",
+	   	"itemListElement": "You need to know the Internet Protocol (IP) address of the computer from which you’re connecting."
+	   	},{
+	   	"@type": "HowToSection",
+	   	"name": "Grant access",
+	       "position": "2",
+	   	"itemListElement": [
+	   		{
+	           "@type": "HowToStep",
+	           "position": "1",
+	   		"text": "Log in to your MySQL server locally as the root user"
+	   		},{
+	           "@type": "HowToStep",
+	           "position": "2",
+	           "text": "Use a GRANT command to enable access for the remote user."
+	   		}]
+	   	},{
+	   	"@type": "HowToSection",
+	   	"name": "Test the connection remotely",
+	       "position": "3",
+	   	"itemListElement": "To test the connection remotely, access the MySQL server from another Linux® server."
+	   }]}
