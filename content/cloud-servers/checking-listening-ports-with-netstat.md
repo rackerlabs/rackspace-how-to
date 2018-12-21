@@ -101,6 +101,6 @@ If using the `netstat` did not resolve your port issues, continue to test connec
    	   	 "name": "Analyze the results",
    	        "position": "2",
      	   	  "itemListElement": "Your next steps depend on the results. There are several common outcomes."
-         },
+         }
     ]}
 </script>
