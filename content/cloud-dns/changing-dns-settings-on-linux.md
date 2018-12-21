@@ -126,16 +126,7 @@ regular `ping` command to force the system to use IPv6.
                   "@type": "HowToStep",
                   "position": "4",
                   "text": "To ensure that your new settings are working, ping the domain name."
-             }],
-  	   	"@type": "HowToSection",
-  	   	"name": "Add the same name servers with IPv6 addresses",
-  	       "position": "2",
-    	   	 "itemListElement": [
-    	   		 {
-    	            "@type": "HowToStep",
-    	            "position": "1",
-    	   		      "text": "Use the host command to get the domain name of the server (substitute your DNS server IP address)."
-    	   		 }]
+             }]
   	   	}
     ]}
 </script>
