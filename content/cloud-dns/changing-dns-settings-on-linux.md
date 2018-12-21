@@ -103,9 +103,7 @@ regular `ping` command to force the system to use IPv6.
   "@context": "http://schema.org/",
   "@type": "HowTo",
       "name":"Change DNS settings on Linux",
-  	  "description": "This article describes how to change your Linux&reg;
-                     server's Domain Name Server (DNS) settings if they are
-                     misconfigured or you prefer to use your own.",
+  	  "description": "This article describes how to change your Linux&reg; server's Domain Name Server (DNS) settings if they are misconfigured or you prefer to use your own.",
   	  "step": [
   	   	{
   	   	"@type": "HowToSection",
@@ -127,8 +125,7 @@ regular `ping` command to force the system to use IPv6.
              },{
                   "@type": "HowToStep",
                   "position": "4",
-                  "text": "To ensure that your new settings are working, ping
-                          the domain name."
+                  "text": "To ensure that your new settings are working, ping the domain name."
              }],
   	   	"@type": "HowToSection",
   	   	"name": "Add the same name servers with IPv6 addresses",
@@ -137,8 +134,7 @@ regular `ping` command to force the system to use IPv6.
     	   		 {
     	            "@type": "HowToStep",
     	            "position": "1",
-    	   		      "text": "Use the host command to get the domain name of the
-                         server (substitute your DNS server IP address)."
+    	   		      "text": "Use the host command to get the domain name of the server (substitute your DNS server IP address)."
     	   		 }]
   	   	}
     ]}
