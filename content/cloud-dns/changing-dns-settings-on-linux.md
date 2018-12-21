@@ -18,16 +18,18 @@ change your Linux&reg; server's DNS settings.
 ### Add name servers to the configuration file
 
 On most Linux operating systems, the DNS servers that the system uses for name
-resolution are defined in the **/etc/resolv.conf** file. That file should contain
-at least one `nameserver` line. Each `nameserver` line defines a DNS server. The
-name servers are prioritized in the order the system finds them in the file. Use
-the Internet Protocol (IP) addresses of the name servers when you enter them into
-the configuration file because the system doesn't know what to do with domain names
-until after it knows how to get to the DNS servers.
+resolution are defined in the **/etc/resolv.conf** file. That file should
+contain at least one `nameserver` line. Each `nameserver` line defines a DNS
+server. The name servers are prioritized in the order the system finds them in
+the file. Use the Internet Protocol (IP) addresses of the name servers when
+you enter them into the configuration file because the system doesn't know
+what to do with domain names until after it knows how to get to the DNS
+servers.
 
-In some cases, **/etc/resolv.conf** could be a directly managed file, populated by the
-network service (`network` by using initscripts or `NetworkManager`). To directly edit
-the configuration file, use the following steps to add the DNS servers:
+In some cases, **/etc/resolv.conf** could be a directly managed file,
+populated by the network service (`network` by using initscripts or
+`NetworkManager`). To directly edit the configuration file, use the
+following steps to add the DNS servers:
 
 1. Open the **resolv.conf** file with an editor, such as `nano`, to make the
    necessary changes. If the file doesn't already exist, this command creates it:
@@ -73,10 +75,11 @@ you set as your DNS servers.
 #### Add the same name servers with IPv6 addresses
 
 If you're using IPv6 on your server, you might need to add the IPv6
-addresses of your name servers to the **resolv.conf** file. You can see if a DNS
-server has an IPv6 address by performing the following steps:
+addresses of your name servers to the **resolv.conf** file. You can see if a
+DNS server has an IPv6 address by performing the following steps:
 
-1. Use the following `host` command to get the domain name of the server (substitute your DNS server IP address):
+1. Use the following `host` command to get the domain name of the server
+   (substitute your DNS server IP address):
 
        $ host 72.3.128.240
        240.128.3.72.in-addr.arpa domain name pointer cachens1.dfw1.rackspace.com.
@@ -96,31 +99,47 @@ Then test as previously shown, by using the `ping6` command instead of the
 regular `ping` command to force the system to use IPv6.
 
 <script type="application/ld+json">
-    "name":"Connect to a MySQL database remotely",
-	   "description": "This article explains how to set up a user on your MySQL® server in order to connect to a MySQL database remotely. In order to perform these steps, you must have local server access to log in as the root MySQL user.",
-	   "step": [
-	   	{
-	   	"@type": "HowToSection",
-	   	"name": "Retrieve your IP address",
-	       "position": "1",
-	   	"itemListElement": "You need to know the Internet Protocol (IP) address of the computer from which you’re connecting."
-	   	},{
-	   	"@type": "HowToSection",
-	   	"name": "Grant access",
-	       "position": "2",
-	   	"itemListElement": [
-	   		{
-	           "@type": "HowToStep",
-	           "position": "1",
-	   		"text": "Log in to your MySQL server locally as the root user"
-	   		},{
-	           "@type": "HowToStep",
-	           "position": "2",
-	           "text": "Use a GRANT command to enable access for the remote user."
-	   		}]
-	   	},{
-	   	"@type": "HowToSection",
-	   	"name": "Test the connection remotely",
-	       "position": "3",
-	   	"itemListElement": "To test the connection remotely, access the MySQL server from another Linux® server."
-	   }]}
+  {
+  "@context": "http://schema.org/",
+  "@type": "HowTo",
+      "name":"Change DNS settings on Linux",
+  	  "description": "This article describes how to change your Linux&reg;
+                     server's Domain Name Server (DNS) settings if they are
+                     misconfigured or you prefer to use your own.",
+  	  "step": [
+  	   	{
+  	   	"@type": "HowToSection",
+  	   	"name": "Add name servers to the configuration file",
+  	       "position": "1",
+           "itemListElement": [
+             {
+                  "@type": "HowToStep",
+                  "position": "1",
+                  "text": "Open the resolv.conf file with an editor such as nano to make the necessary changes."
+             },{
+                  "@type": "HowToStep",
+                  "position": "2",
+                  "text": "Add lines for the name servers that you want to use."
+             },{
+                  "@type": "HowToStep",
+                  "position": "3",
+                  "text": "Save the file."
+             },{
+                  "@type": "HowToStep",
+                  "position": "4",
+                  "text": "To ensure that your new settings are working, ping
+                          the domain name."
+             }],
+  	   	"@type": "HowToSection",
+  	   	"name": "Add the same name servers with IPv6 addresses",
+  	       "position": "2",
+    	   	 "itemListElement": [
+    	   		 {
+    	            "@type": "HowToStep",
+    	            "position": "1",
+    	   		      "text": "Use the host command to get the domain name of the
+                         server (substitute your DNS server IP address)."
+    	   		 }]
+  	   	}
+    ]}
+</script>
