@@ -5,8 +5,8 @@ title: Modify your hosts file
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-11'
-last_modified_by: Renee Rendon
+last_modified_date: '2018-12-20'
+last_modified_by: Cat Lookabaugh
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -176,3 +176,38 @@ Use the following instructions if you're running MacOS X 10.6 through 10.12:
    following command:
 
         dscacheutil -flushcache
+
+
+<script type="application/ld+json">
+   {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   "name":"Modify your hosts file",
+   "description": "This article provides the steps (for several operating systems) to modify your hosts file, which enables you to override the domain name system (DNS) for a domain on a specific machine.",
+   "step": [
+   	{
+   	"@type": "HowToSection",
+   	"name": "On a Windows machine, access the search function.",
+       "position": "1",
+   	"itemListElement": "To access the search function, press the Windows key."
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Find the Notepad application.",
+       "position": "2",
+   	"itemListElement": [
+   		{
+           "@type": "HowToStep",
+           "position": "1",
+   		"text": "Type 'Notepad' in the search field."
+   		},{
+           "@type": "HowToStep",
+           "position": "2",
+           "text": "In the search results, right-click **Notepad** and select **Run as administrator**."
+   		}]
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Test the connection remotely",
+       "position": "3",
+   	"itemListElement": "From Notepad, open the following file:"
+   }]}
+</script>

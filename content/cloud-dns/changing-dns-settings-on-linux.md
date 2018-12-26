@@ -5,29 +5,31 @@ title: Change DNS settings on Linux
 type: article
 created_date: '2011-07-20'
 created_by: Jered Heeschen
-last_modified_date: '2018-11-15'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2018-12-21'
+last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
 ---
 
-If you find that your server's Domain Name Server (DNS) settings are misconfigured 
-or you prefer to use your own, this article describes how to change your Linux&reg; 
-server's DNS settings.
+If you find that your server's Domain Name Server (DNS) settings are
+misconfigured or you prefer to use your own, this article describes how to
+change your Linux&reg; server's DNS settings.
 
 ### Add name servers to the configuration file
 
-On most Linux operating systems, the DNS servers that the system uses for name 
-resolution are defined in the **/etc/resolv.conf** file. That file should contain 
-at least one `nameserver` line. Each `nameserver` line defines a DNS server. The 
-name servers are prioritized in the order the system finds them in the file. Use 
-the Internet Protocol (IP) addresses of the name servers when you enter them into 
-the configuration file because the system doesn't know what to do with domain names 
-until after it knows how to get to the DNS servers.
+On most Linux operating systems, the DNS servers that the system uses for name
+resolution are defined in the **/etc/resolv.conf** file. That file should
+contain at least one `nameserver` line. Each `nameserver` line defines a DNS
+server. The name servers are prioritized in the order the system finds them in
+the file. Use the Internet Protocol (IP) addresses of the name servers when
+you enter them into the configuration file because the system doesn't know
+what to do with domain names until after it knows how to get to the DNS
+servers.
 
-In some cases, **/etc/resolv.conf** could be a directly managed file, populated by the 
-network service (`network` by using initscripts or `NetworkManager`). To directly edit 
-the configuration file, use the following steps to add the DNS servers:
+In some cases, **/etc/resolv.conf** could be a directly managed file,
+populated by the network service (`network` by using initscripts or
+`NetworkManager`). To directly edit the configuration file, use the
+following steps to add the DNS servers:
 
 1. Open the **resolv.conf** file with an editor, such as `nano`, to make the
    necessary changes. If the file doesn't already exist, this command creates it:
@@ -51,7 +53,7 @@ the configuration file, use the following steps to add the DNS servers:
 
 3. Save the file.
 
-4. To ensure that your new settings are working, `ping` the domain name by 
+4. To ensure that your new settings are working, `ping` the domain name by
    using the following command:
 
     ping -c 3 rackspace.com
@@ -73,10 +75,11 @@ you set as your DNS servers.
 #### Add the same name servers with IPv6 addresses
 
 If you're using IPv6 on your server, you might need to add the IPv6
-addresses of your name servers to the **resolv.conf** file. You can see if a DNS
-server has an IPv6 address by performing the following steps:
+addresses of your name servers to the **resolv.conf** file. You can see if a
+DNS server has an IPv6 address by performing the following steps:
 
-1. Use the following `host` command to get the domain name of the server (substitute your DNS server IP address):
+1. Use the following `host` command to get the domain name of the server
+   (substitute your DNS server IP address):
 
        $ host 72.3.128.240
        240.128.3.72.in-addr.arpa domain name pointer cachens1.dfw1.rackspace.com.
@@ -94,3 +97,36 @@ line in the **resolv.conf** file, as follows:
 
 Then test as previously shown, by using the `ping6` command instead of the
 regular `ping` command to force the system to use IPv6.
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org/",
+  "@type": "HowTo",
+      "name":"Change DNS settings on Linux",
+  	  "description": "This article describes how to change your Linux&reg; server's Domain Name Server (DNS) settings if they are misconfigured or you prefer to use your own.",
+  	  "step": [
+  	   	{
+  	   	"@type": "HowToSection",
+  	   	"name": "Add name servers to the configuration file",
+  	       "position": "1",
+           "itemListElement": [
+             {
+                  "@type": "HowToStep",
+                  "position": "1",
+                  "text": "Open the resolv.conf file with an editor such as nano to make the necessary changes."
+             },{
+                  "@type": "HowToStep",
+                  "position": "2",
+                  "text": "Add lines for the name servers that you want to use."
+             },{
+                  "@type": "HowToStep",
+                  "position": "3",
+                  "text": "Save the file."
+             },{
+                  "@type": "HowToStep",
+                  "position": "4",
+                  "text": "To ensure that your new settings are working, ping the domain name."
+             }]
+  	   	}
+    ]}
+</script>

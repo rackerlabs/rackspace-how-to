@@ -20,7 +20,7 @@ You can learn more about Rackspace Private Cloud and OpenStack [on the main prod
 
 ###  General resources
 
-- [FAQ](how-to/rpc-openstack-faq/)
+- [FAQ](https://support.rackspace.com/how-to/rpc-openstack-faq/)
 - [Rackspace Private Cloud Support](https://www.rackspace.com/support)
 - [Rackspace Private Cloud Software and Reference Architecture](https://www.rackspace.com/openstack/private/openstack)
 - [Rackspace Private Cloud Resources](https://www.rackspace.com/openstack/private/resources)

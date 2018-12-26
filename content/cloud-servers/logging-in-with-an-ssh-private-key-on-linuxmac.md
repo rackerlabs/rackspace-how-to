@@ -57,3 +57,39 @@ key. This example uses the file **deployment_key.txt**.
 9. When the prompt to confirm the connection request is displayed, type **yes** and then press **Enter**. 
 
 10. If your SSH key requires a password, enter it when prompted to complete the connection.
+
+
+<script type="application/ld+json">
+  {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   "name":"Log in with an SSH private key on Linux and Mac",
+   "description": "This example demonstrates how to use a private key to log in to a Linux server by using a private key by using a Terminal session on OS X. However, you can follow the same process to use a private key when using any terminal software on Linux.",
+   "step": [
+   	{
+   	"@type": "HowToSection",
+   	"name": "Create a file with your private key",
+       "position": "1",
+   	"itemListElement": "Using a text editor, create a new file and store your private key in it."
+   	},{
+    "@type": "HowToSection",
+   	"name": "Change the file permissions",
+       "position": "2",
+   	"itemListElement": "Run the chmod 600 deployment_key.txt command to change the file permissions to 600 to secure the key."
+    },{
+   	"@type": "HowToSection",
+   	"name": "Log in to the SSH client",
+       "position": "3",
+   	"itemListElement": "Use the key to log in to the SSH client."
+    },{
+   	"@type": "HowToSection",
+   	"name": "Confirm connection",
+       "position": "4",
+   	"itemListElement": "When the prompt to confirm the connection request is displayed, type yes and then press Enter."
+    },{
+   	"@type": "HowToSection",
+   	"name": "Complete connection",
+       "position": "5",
+   	"itemListElement": "If your SSH key requires a password, enter it when prompted to complete the connection."
+   }]}
+</script>
