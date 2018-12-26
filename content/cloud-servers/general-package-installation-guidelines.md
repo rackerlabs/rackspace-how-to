@@ -1,11 +1,11 @@
 ---
 permalink: general-package-installation-guidelines/
-audit_date: '2018-12-17'
+audit_date: '2018-12-26'
 title: General package installation guidelines
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-12-21'
+last_modified_date: '2018-12-26'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -101,19 +101,19 @@ Use the following commands to manage packages by using apt-get:
 
 -   Install a package:
 
-        aptitude install PACKAGENAME
+        apt-get install PACKAGENAME
 
 -   Reinstall a package:
 
-        aptitude reinstall PACKAGENAME
+        apt-get reinstall PACKAGENAME
 
 -   Remove a package (while keeping its configuration files):
 
-        aptitude remove PACKAGENAME
+        apt-get remove PACKAGENAME
 
 -   Remove a package and purge its configuration files:
 
-        aptitude remove --purge PACKAGENAME
+        apt-get remove --purge PACKAGENAME
 
 -   Update the package list:
 
