@@ -12,8 +12,8 @@ product_url: cloud-servers
 ---
 
 This article shows you how to use package managers to make adaptations
-to your Linux&reg; Cloud Server. The procedure for installing packages is
-similar across Linux distributions.
+to your Linux&reg; cloud server. The procedure for installing packages 
+is similar across Linux distributions.
 
 ### Package managers and repositories
 
