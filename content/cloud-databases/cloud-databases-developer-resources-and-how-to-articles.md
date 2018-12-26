@@ -13,7 +13,7 @@ product_url: cloud-databases
 
 The Rackspace [Support
 network](/how-to/) provides how-to articles, code samples, security best
-practices, and hundreds of tips for getting the most out of your Rackspace
+practices, and hundreds of tips for getting the most out of your
 Cloud Databases.
 
 ### Documentation and bindings
