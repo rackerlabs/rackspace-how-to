@@ -72,6 +72,8 @@ needed. The service currently focuses on providing resource isolation at
 high performance while automating complex administrative tasks including
 deployment, configuration, patching, backups, restores, and monitoring.
 
+To learn more about Trove, see the following resources:
+
 -   [Trove wiki](https://wiki.openstack.org/wiki/Trove)
 -   [Project pages](https://launchpad.net/trove)
 -   [Drivers](https://launchpad.net/~trove-drivers)
