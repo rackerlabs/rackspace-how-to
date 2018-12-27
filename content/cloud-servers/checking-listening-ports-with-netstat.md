@@ -76,3 +76,31 @@ If you make any changes because the incorrect service is listening, run the `net
 If you make changes at this point, be sure to test your setup to verify that you have resolved your issue.
 
 If using the `netstat` did not resolve your port issues, continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org/",
+  "@type": "HowTo",
+      "name":"Check listening ports with netstat",
+  	  "description": "This article describes how to ensure that a server that you are troubleshooting is listening on the correct network port by using netstat.",
+  	  "step": [
+  	   	{
+  	   	"@type": "HowToSection",
+  	   	"name": "Check ports",
+  	       "position": "1",
+           "itemListElement": "To list the TCP ports that are being listened on and the name of each listener’s daemon and its PID, run the netstat command."
+        },
+        {
+  	   	"@type": "HowToSection",
+  	   	"name": "Filter the list",
+  	       "position": "2",
+    	   	 "itemListElement": "If the list of listening daemons is long, you can use grep to filter it."
+         },
+         {
+   	   	 "@type": "HowToSection",
+   	   	 "name": "Analyze the results",
+   	        "position": "2",
+     	   	  "itemListElement": "Your next steps depend on the results. There are several common outcomes."
+         }
+    ]}
+</script>
