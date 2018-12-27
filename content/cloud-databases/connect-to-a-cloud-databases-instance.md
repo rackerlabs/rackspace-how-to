@@ -147,8 +147,9 @@ Use the following steps to modify the script:
         $THE_USER = "fmdb_readonly";
 
 2.  Replace the `fmdb_readonly` value with the name of your database
-    user. (You can find this information in the **Users** section of the
-    database instance Details page in the [Cloud Control Panel](https://login.rackspace.com)).
+    user. You can find this information in the **Users** section of the
+    database instance Details page in the [Cloud Control
+    Panel](https://login.rackspace.com).
 3.  Locate the following line of the script in the text editor:
 
         $THE_PWD = "fmdb_readonly";
@@ -191,7 +192,7 @@ server:
 
 This section describes how to connect by using a cloud load balancer.
 
-**Note**: You should only use this load balancer to access your Cloud
+**Note**: You should use this load balancer only to access your Cloud
 Databases instance. Do not add other nodes to the load balancer.
 
 #### Copy the instance hostname
@@ -238,4 +239,5 @@ Calculator](http://www.rackspace.com/cloud/cloud_hosting_products/loadbalancers/
 
 For information about connecting to a High Availability Cloud Databases
 instance by using a public Internet Protocol (IP) address, see [High
-Availability for Cloud Databases](https://support.rackspace.com/how-to/high-availability-for-cloud-databases/).
+Availability for Cloud
+Databases](/how-to/high-availability-for-cloud-databases).
