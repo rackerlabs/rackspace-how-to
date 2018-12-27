@@ -12,7 +12,7 @@ product_url: cloud-servers
 ---
 
 This article shows you how to use package managers to make adaptations
-to your Linux&reg; cloud server. The procedure for installing packages 
+to your Linux&reg; cloud server. The procedure for installing packages
 is similar across Linux distributions.
 
 ### Package managers and repositories
@@ -35,21 +35,21 @@ repositories and installs it on the system.
 We recommend that you read the relevant documentation to learn more
 about each of these package managers.
 
-#### Additional information
+### Linux package managers
 
 Every distribution that Cloud Servers offers comes with its own package
-manager. This article describes common package managers and provides example
-commands for different distributions.
+manager. The following sections describe common package managers and provide
+example commands for different distributions.
 
 **Warning**: Avoid performing an in-place upgrade of any of the following
 package management systems or of all installed packages between versions on
 Rackspace Cloud Servers. This operation can break the configurations that
 enable Rackspace Cloud Servers to communicate with the hypervisors.
 
-#### APT (Debian and Ubuntu)
+#### APT (Debian&trade; and Ubuntu&reg;)
 
-Debian&trade; uses the dpkg packaging system. APT (Advanced Package Tool) is a
-command-line tool for interacting with dpkg. Use the following commands to
+Advanced Package Tool (APT) is a command-line tool for interacting with dpkg,
+the packaging system used by Debian. Use the following commands to
 manage packages by using APT:
 
 -   Install a package:
@@ -139,6 +139,9 @@ with the Yum package manager:
 
         yum remove PACKAGENAME
 
+    **Note**: This command might not remove all configuration files and
+    dependencies.
+
 -   Update a package:
 
         yum update PACKAGENAME
@@ -189,11 +192,11 @@ Use the following commands with Pacman:
 
         pacman -S PACKAGENAME
 
--   Removea package:
+-   Remove a package (while keeping its configuration files):
 
         pacman -R PACKAGENAME
 
--   Remove a package, along with its configuration files and unneeded
+-   Remove a package and purge its configuration files and unneeded
     dependencies:
 
         pacman -Rsn PACKAGENAME
