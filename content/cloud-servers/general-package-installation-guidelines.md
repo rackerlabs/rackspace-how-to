@@ -46,10 +46,10 @@ package management systems or of all installed packages between versions on
 Rackspace Cloud Servers. This operation can break the configurations that
 enable Rackspace Cloud Servers to communicate with the hypervisors.
 
-#### APT (Debian&trade; and Ubuntu&reg;)
+#### APT (Debian and Ubuntu)
 
 Advanced Package Tool (APT) is a command-line tool for interacting with dpkg,
-the packaging system used by Debian. Use the following commands to
+the packaging system used by Debian&trade;. Use the following commands to
 manage packages by using APT:
 
 -   Install a package:
@@ -83,7 +83,7 @@ manage packages by using APT:
 For more information about APT-based package management, see the following
 resources:
 
-- [Ubuntu documentation:
+- [Ubuntu&reg; documentation:
   dpkg](https://help.ubuntu.com/lts/serverguide/dpkg.html.en)
 
 - [Debian GNU/Linux
