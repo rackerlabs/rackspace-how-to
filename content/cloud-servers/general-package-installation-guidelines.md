@@ -5,7 +5,7 @@ title: General package installation guidelines
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-12-26'
+last_modified_date: '2018-12-28'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -87,7 +87,8 @@ resources:
   dpkg](https://help.ubuntu.com/lts/serverguide/dpkg.html.en)
 
 - [Debian GNU/Linux
-  FAQ: Chapter 8, The Debian package management tools](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html)
+  FAQ: Chapter 8, The Debian package management
+  tools](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html)
 
 - [APT
   HOWTO](http://www.debian.org/doc/manuals/apt-howto/)
@@ -230,10 +231,6 @@ Emerge on Gentoo:
 
         emerge PACKAGENAME
 
--   Remove a package:
-
-        emerge --unmerge PACKAGENAME
-
 -   Update the package list:
 
         emerge --sync
@@ -250,14 +247,39 @@ Emerge on Gentoo:
 
         emerge --searchdesc SEARCHSTRING
 
+-   Remove a package:
+
+        emerge --depclean --ask --verbose <packagename>
+
+    This command checks if the package that you want to remove is a dependency
+    of another package before it performs the removal. If the package is not a
+    dependency, it asks you to confirm that you want remove the package. There
+    is typically a five-second delay during which you can back out of removing
+    the package. The delay is 10 seconds for packages that are important to
+    the system. If the package that you want to remove is used by another
+    package, then the command does not remove the package.
+
+    Alternatively, you can use the shorter version of this command:
+
+        emerge -cav <packagename>
+
+    After the package is removed, run the following command, but omit the
+    package name:
+
+        emerge --depclean --ask --verbose (or emerge -cav)
+
+    This command searches for deprecated dependencies that are no longer used
+    by any package. It therefore removes the dependencies from the package
+    that you just removed.
+
 For more information about Emerge and Portage, see the [Gentoo X86
 Handbook](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1).
 
 ### What if the software I'm looking for isn't in my package manager's repositories?
 
-If you can't find the software you're looking for in your package manager's main repositories, the software might not be well-known
-enough to be included. If this occurs, you can try to locate the package
-by searching the Internet.
+If you can't find the software you're looking for in your package manager's
+main repositories, the software might not be well-known enough to be included.
+If this occurs, you can try to locate the package by searching the Internet.
 
 [Rpmfind](http://rpmfind.net "http://rpmfind.net") is another
 good source for RPM packages. After you have located and downloaded the
