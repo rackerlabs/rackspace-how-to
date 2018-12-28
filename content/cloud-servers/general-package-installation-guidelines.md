@@ -289,8 +289,8 @@ package, you can still use your distribution's package manager to install it.
 
 In some situations, you might have to manually compile and install a
 package. This might occur when you need special customizations that
-weren't enabled by default, or when the software that you
-want to install doesn't have a pre-compiled version.
+weren't enabled by default, or when the software that you want to
+install doesn't have a pre-compiled version.
 
 If you need to manually compile and install a package, we recommend that
 you go directly to the software documentation for instructions. You almost
