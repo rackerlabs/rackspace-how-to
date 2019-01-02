@@ -5,13 +5,13 @@ title: Reset a MySQL root password
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-02'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-21'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The MySQL root password allows the root user to have full access to the [MySQL database](https://www.rackspace.com/cloud/databases). You must have (Linux) root or (Windows) Administrator access to the [Cloud Server](https://www.rackspace.com/cloud) to reset the MySQL root password. 
+The MySQL root password allows the root user to have full access to the [MySQL database](https://www.rackspace.com/cloud/databases). You must have (Linux) root or (Windows) Administrator access to the [Cloud Server](https://www.rackspace.com/cloud) to reset the MySQL root password.
 
 **Note:** The Cloud Server (Linux) root or (Windows) Administrator account password is not the same as the MySQL password.  The Cloud Server password allows access to the server. The MySQL root password allows access only to the MySQL database.
 
@@ -71,4 +71,39 @@ Test the new password by logging in to the database.
 
     mysql -u root -p
 
-You are prompted for your new password.
+Enter your new password when prompted.
+
+
+<script type="application/ld+json">
+   {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   "name":"Reset a MySQL root password",
+   "description": "The MySQL root password allows the root user to have full access to the MySQL databases. This article shows you do to reset a MySQL root password by using the command line interface.",
+   "step": [
+   	{
+   	"@type": "HowToSection",
+   	"name": "Stop the MySQL service",
+       "position": "1",
+   	"itemListElement": "To stop MySQL for Ubuntu and Debian, run the following command: sudo /etc/init.d/mysql stop"
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Start MySQL and connect",
+       "position": "2",
+   	"itemListElement": [
+   		{
+           "@type": "HowToStep",
+           "position": "1",
+   		"text": "To start MySQL without a password, run the following command: sudo mysqld_safe --skip-grant-tables &"
+   		},{
+           "@type": "HowToStep",
+           "position": "2",
+           "text": "To connect to MySQL, run the following command: mysql -uroot"
+   		}]
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Reset the MySQL password",
+       "position": "3",
+   	"itemListElement": "To set a new MySQL root password, run the following command:"
+   }]}
+</script>

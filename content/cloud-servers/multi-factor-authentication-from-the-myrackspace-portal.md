@@ -212,7 +212,7 @@ following steps:
     your username and password.
 
     If your account is configured to use multi-factor authentication with
-    an SMS device, the Rackspace Cloud Identity service sends an SMS
+    an SMS device, the Rackspace Identity service sends an SMS
     text message with a 7-digit passcode to the device registered to
     your account.
 

@@ -163,7 +163,7 @@ script.
     API_ENDPOINT=
     # your API username, e.g., "fredco"
     API_USER=
-    # your API auth token, obtained from the Rackspace cloud identity service
+    # your API auth token, obtained from the Rackspace Identity service
     API_AUTH_TOKEN=
     # the UUID of the server you want to monitor
     API_SERVER=

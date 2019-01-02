@@ -5,8 +5,8 @@ title: Manually configure Android devices for email hosted on Exchange 2013
 type: article
 created_date: '2014-01-31'
 created_by: Mawutor Amesawu
-last_modified_date: '2018-10-08'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-12-27'
+last_modified_by: Stephanie Fillmon
 product: Microsoft Exchange
 product_url: exchange
 ---
@@ -25,6 +25,8 @@ license](/how-to/add-an-activesync-or-bes-license) and assign it to your email
 address.
 
 ### Configure your device
+
+Use the following steps to configure your Android device:
 
 1. On your device, tap the system **Settings** icon, as shown in the following
    image:
@@ -87,3 +89,37 @@ address.
    then tap **Finish setup**.
 
     <img src="{% asset_path exchange/manually-configure-android-devices-for-email-hosted-on-exchange-2013/8.%20Finalize_1.png %}" width="217" height="386" />
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "HowTo",
+    "name":"Manually configure Android devices for email hosted on Exchange 2013",
+    "description": "This article helps email hosting users to manually configure Microsoft&reg; Exchange&reg; 2013 on most Android&trade; devices.",
+    "step": [
+      {
+      "@type": "HowToSection",
+      "name": "Before you begin",
+        "position": "1",
+      "itemListElement": "Your administrator must add an ActiveSync license and assign it to your email address."
+      },{
+      "@type": "HowToSection",
+      "name": "Configure your device",
+        "position": "2",
+        "itemListElement": [
+     		{
+          "@type": "HowToStep",
+          "position": "1",
+     		  "text": "On your device, tap the system Settings icon."
+     		},{
+          "@type": "HowToStep",
+          "position": "2",
+          "text": "Tap Accounts & sync."
+     		},{
+          "@type": "HowToStep",
+          "position": "3",
+          "text": "Tap Add."
+          }]
+    }]}
+</script>

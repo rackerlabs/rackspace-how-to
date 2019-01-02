@@ -55,7 +55,7 @@ complete the setup process.
 **Notes**
 
 -   MyRackspace also implements multi-factor authentication, but it is
-    not implemented through the Rackspace Cloud Identity 2.0 API. For
+    not implemented through the Rackspace Identity 2.0 API. For
     information about using multi-factor authentication with
     MyRackspace, see [MyRackspace Two-Factor Authentication](/how-to/myrackspace-two-factor-authentication).
 
@@ -253,7 +253,7 @@ To log in to the Rackspace Cloud with multi-factor authentication
     with your user name and password.
 
     If you account is configured to use multi-factor authentication with
-    an SMS device, the Rackspace Cloud Identity service sends an SMS
+    an SMS device, the Rackspace Identity service sends an SMS
     text message with a 7-digit passcode to the device registered to
     your account.
 

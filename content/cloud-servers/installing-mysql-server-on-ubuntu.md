@@ -5,8 +5,8 @@ title: Install MySQL Server on Ubuntu
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2018-03-13'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-21'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -257,3 +257,38 @@ covered here should give you a solid start from which to learn more.
 ### Next section
 
 [Configuring MySQL server on Ubuntu](/how-to/configuring-mysql-server-on-ubuntu)
+
+
+<script type="application/ld+json">
+   {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   "name":"Install MySQL Server on Ubuntu",
+   "description": "This article describes a basic installation of a MySQL database server on Ubuntu Linux.",
+   "step": [
+   	{
+   	"@type": "HowToSection",
+   	"name": "Install MySQL",
+       "position": "1",
+   	"itemListElement": "To install the MySQL server by using the Ubuntu package manager, run the following command: sudo apt-get install mysql-server"
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Allow remote access and start the service",
+       "position": "2",
+   	"itemListElement": [
+   		{
+           "@type": "HowToStep",
+           "position": "1",
+   		"text": "Run the following command to allow remote access to the mysql server: sudo ufw allow mysql"
+   		},{
+           "@type": "HowToStep",
+           "position": "2",
+           "text": "To start the MySQL service, run the following command:  systemctl start mysql"
+   		}]
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Configure MySQL to launch on reboot",
+       "position": "3",
+   	"itemListElement": "To set a MySQL to launch at reboot, run the following command: systemctl enable mysql"
+   }]}
+</script>
