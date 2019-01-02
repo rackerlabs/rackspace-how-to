@@ -33,7 +33,7 @@ Yes, you can. For instructions, see [Use Role-Based Access Control
 
 #### How do I query the capability of a given user?
 
-You can query the roles for a given user by using the [List global roles assigned to a user](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/role-operations/#list-global-roles-assigned-to-a-user) API operation described in the *Rackspace Cloud Identity API Guide*. Additionally, you can view the roles that a user has through the [Cloud Control Panel](http://login.rackspace.com).
+You can query the roles for a given user by using the [List global roles assigned to a user](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/role-operations/#list-global-roles-assigned-to-a-user) API operation described in the *Rackspace Identity API Guide*. Additionally, you can view the roles that a user has through the [Cloud Control Panel](http://login.rackspace.com).
 
 #### Can I view multiple accounts in the Cloud Control Panel?
 

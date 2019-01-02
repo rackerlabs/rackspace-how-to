@@ -20,7 +20,7 @@ owners through this process by using the [Cloud Control
 Panel](https://login.rackspace.com/).
 
 For information about setting up RBAC through the API, see the [Rackspace
-Cloud Identity API
+Identity API
 Guide](https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/).
 
 **Note:** It is possible to assign a mix of multiple-product roles and
