@@ -5,7 +5,7 @@ title: Export email address data from Outlook 2013 for Windows
 type: article
 created_date: '2019-01-02'
 created_by: William Loy
-last_modified_date: '2019-01-02'
+last_modified_date: '2019-01-03'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -18,12 +18,12 @@ This article describes how to export a copy of your email address data from Outl
 - **Applies to:** User
 - **Difficulty:** Easy
 - **Time needed:** Dependent on amount of data being exported
-- **Tools required:**  Access to the Outlook account from which you want to export
+- **Tools required:**  Outlook 2013 for Windows
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 
-If you need to export or import email address data from a different Outlook version, see [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-using-outlook) for a list of all version articles.
+If you need to export or import email address data using a different Outlook version, see [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-using-outlook) for a list alternative Outlook versions.
 
 ### Export email address data
 
@@ -48,7 +48,7 @@ If you need to export or import email address data from a different Outlook vers
 
 6. Select the folder that you want to export, and then click **Next**.
 
-   Select the email address at the top of the folder list, and then select the checkbox for **Include subfolders** to export all data.
+   Click the email address at the top of the folder list, and then click the checkbox for **Include subfolders** to export all data.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/export_folder_list2013.png %}" />
 
