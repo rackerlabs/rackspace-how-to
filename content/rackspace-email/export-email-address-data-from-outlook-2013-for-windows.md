@@ -1,6 +1,6 @@
 ---
 permalink: export-email-address-data-from-outlook-2013-for-windows/
-audit_date:
+audit_date: '2019-01-03'
 title: Export email address data from Outlook 2013 for Windows
 type: article
 created_date: '2019-01-02'
