@@ -12,11 +12,11 @@ product_url: cloud-backup
 ---
 
 Rackspace Cloud Backup encrypts your passphrase locally on your
-browser by using a JavaScript RSA library. Encryption happens before
-the passphrase is submitted over the web.
+browser by using a JavaScript RSA (Rivest–Shamir–Adleman encryption) library. 
+Encryption happens before the passphrase is submitted over the web.
 
 Rackspace never knows your unencrypted (or clear text) passphrase.
-Your passphrase is encrypted using public and private key pairs, which is the
+Your passphrase is encrypted by using public and private key pairs, which is the
 Secure Socket Layer (SSL) web security standard for transmitting data over secure 
 connections. Only your encrypted passphrase is sent to Rackspace. All communication
 between your computer and Rackspace servers for Cloud Backup is done
