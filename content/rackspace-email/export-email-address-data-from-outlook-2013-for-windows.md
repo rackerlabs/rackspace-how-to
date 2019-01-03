@@ -18,12 +18,12 @@ This article describes how to export a copy of your email address data from Outl
 - **Applies to:** User
 - **Difficulty:** Easy
 - **Time needed:** Dependent on amount of data being exported
-- **Tools required:**  Outlook 2013 for Windows
+- **Tools required:**  Outlook 2013 for Windows&reg;
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
 
-If you need to export or import email address data using a different Outlook version, see [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-using-outlook) for a list alternative Outlook versions.
+If you need to export or import email address data by using a different Outlook version, see [Export and Import email address data using Outlook](/how-to/export-and-import-email-address-data-using-outlook) for a list alternative Outlook versions.
 
 ### Export email address data
 
@@ -32,7 +32,7 @@ If you need to export or import email address data using a different Outlook ver
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/advanced2013.png %}" />
 
-3. In the Export section, click **Export**.
+3. In the **Export** section, click **Export**.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/export2013.png %}" />
 
@@ -56,9 +56,9 @@ If you need to export or import email address data using a different Outlook ver
 
     **Note:** Save the file somewhere that you can easily locate for later use, such as the Desktop.
 
-9. In the File Name box, type the name that you want to use for the **.pst** file, and then click **OK**.
+9. In the **File Name** box, type the name that you want to use for the **.pst** file, and then click **OK**.
 
-    **Note:** You might be prompted to enter a password. This is optional and you can click **OK** to skip it.
+    **Note:** You might be prompted to enter a password. This step is optional, and you can click **OK** to skip it.
 
     <img src="{% asset_path rackspace-email/export-email-address-data-from-outlook-2013-for-windows/browse_finish2013.png %}" />
 
