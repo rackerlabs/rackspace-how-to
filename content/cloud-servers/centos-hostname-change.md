@@ -25,8 +25,8 @@ server hostname in CentOS&reg;.
 
          # sudo nano /etc/sysconfig/network
 
-2.  Modify the `HOSTNAME=` value to match your FQDN hostname, as shown in the
-    following example:
+2.  Modify the `HOSTNAME=` value to match your FQDN hostname,
+    as shown in the following example:
 
          HOSTNAME=myserver.domain.com
 
