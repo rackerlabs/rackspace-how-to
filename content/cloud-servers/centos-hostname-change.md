@@ -30,8 +30,9 @@ server hostname in CentOS&reg;.
 
          HOSTNAME=myserver.domain.com
 
-3.  For internal networking, change the host that is associated with the
-    main Internet Protocol (IP) address for your server. (You can find this information at **/etc/hosts**).
+3.  Open the file at /etc/hosts. To update the information for internal
+    networking, change the host that is associated with the main IP address
+    for your server, as shown in the following example:
 
          127.0.0.1      localhost localhost.localdomain
 
