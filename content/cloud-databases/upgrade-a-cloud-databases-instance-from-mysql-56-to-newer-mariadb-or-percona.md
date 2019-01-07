@@ -1,11 +1,11 @@
 ---
 permalink: upgrade-a-cloud-databases-instance-from-mysql-56-to-newer-mariadb-or-percona/
-audit_date: '2019-01-03'
+audit_date: '2019-01-07'
 title: Upgrade a Cloud Databases instance from MySQL 5.6 to a newer version of MariaDB or Percona Database
 type: article
-created_date: '2019-01-03'
+created_date: '2019-01-07'
 created_by: Kate Dougherty
-last_modified_date: '2019-01-03'
+last_modified_date: '2019-01-07'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
@@ -178,7 +178,7 @@ the content from this file to the destination instance.
 
 Use the following steps to perform this task:
 
-1. Log in to a cloud server that's available within the same data center as
+1. Log in to a cloud server that is available within the same data center as
    your source and destination database instances.
 
 2. Run the <code>mysqldump</code> command, replacing the following items

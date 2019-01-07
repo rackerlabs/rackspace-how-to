@@ -1,11 +1,11 @@
 ---
 permalink: upgrade-a-cloud-databases-instance-from-mysql-56-to-mysql-57/
-audit_date: '2019-01-03'
+audit_date: '2019-01-07'
 title: Upgrade a Cloud Databases instance from MySQL 5.6 to MySQL 5.7
 type: article
-created_date: '2019-01-03'
+created_date: '2019-01-07'
 created_by: Kate Dougherty
-last_modified_date: '2019-01-03'
+last_modified_date: '2019-01-07'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
