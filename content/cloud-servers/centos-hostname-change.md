@@ -65,3 +65,31 @@ server hostname in CentOS&reg;.
     that changes persist on restart:
 
          # /etc/init.d/network restart
+
+<script type="application/ld+json">
+ {
+ "@context": "http://schema.org/",
+ "@type": "HowTo",
+     "name":"Change a server's hostname in CentOS",
+ 	  "description": "This article describes how to change a server hostname in CentOS.",
+ 	  "step": [
+ 	   	{
+ 	   	"@type": "HowToSection",
+ 	   	"name": "Change a server's hostname",
+ 	       "position": "1",
+          "itemListElement": [
+   	     		{
+   	          "@type": "HowToStep",
+   	          "position": "1",
+   	     		  "text": "Using a text editor, open the server’s /etc/sysconfig/network file."
+   	     		},{
+   	          "@type": "HowToStep",
+   	          "position": "2",
+   	          "text": "Modify the HOSTNAME= value to match your FQDN hostname."
+   	     		},{
+   	          "@type": "HowToStep",
+   	          "position": "3",
+   	          "text": "Open the file at /etc/hosts. To update the information for internal networking, change the host that is associated with the main IP address for your server."
+   	          }]
+	    }]}
+	</script>
