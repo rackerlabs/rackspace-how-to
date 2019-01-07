@@ -181,8 +181,8 @@ to the database instance:
 
 This method follows the same concept as the preceding method, but instead of
 redirecting the <code>mysqldump</code> export directly to the new instance,
-you first create a copy of the data and compress it on a disk. Then you import
-the content from this file to the destination instance.
+you first create a copy of the data and compress it on a disk. 
+Then you import the content from this file to the destination instance.
 
 Use the following steps to perform this task:
 
