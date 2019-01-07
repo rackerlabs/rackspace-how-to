@@ -5,8 +5,8 @@ title: Cloud Backup FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2016-04-05'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2019-01-07'
+last_modified_by: Kate Dougherty
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -24,7 +24,7 @@ You also cannot migrate an encrypted vault.
 See [Migrate Vault API call](https://developer.rackspace.com/docs/cloud-backup/v1/developer-guide/#migrate-vault)
 for a description.
 
-#### Why does my backup fail with the error: `container does not exist Invalid snapshot id and engine, and check config_backup.json id.`?
+#### Why does my backup fail with the error "container does not exist Invalid snapshot id and engine, and check config_backup.json id?"
 
 The Cloud Files container named **z_DO_NOT_DELETE_CloudBackup** is
 required for Rackspace Cloud Backup to work properly. If this container
@@ -48,13 +48,13 @@ To resolve this error, *do not delete* the **z_DO_NOT_DELETE_CloudBackup** conta
 
 #### What is Rackspace Cloud Backup?
 
-Rackspace Cloud Backup is a service that allows you to select and back up
+Rackspace Cloud Backup is a service that enables you to select and back up
 specific files and folders from your Cloud Server. You can schedule any
 number of Backup jobs, and restore to the same system or a different
 one, giving you the flexibility and power to work with your schedule and
 your data.
 
-Some key features are
+Rackspace Cloud Backup has the following key features:
 
 -   Select the files and folders from your Cloud Server you want to back
     up
@@ -71,7 +71,7 @@ For information on getting started with Cloud Backup, see our [introduction for 
 
 #### Can Cloud Backup change my system config file, even after I have modified it?
 
-Yes - Some Ubuntu users have older agents installed on their machines.
+Yes. Some Ubuntu users have older agents installed on their machines.
 In order to communicate properly with your system, the **config** file may
 need to be overwritten with a current version.
 
@@ -86,16 +86,16 @@ this ever occur.
 
 #### What happens if I lose my encryption key?
 
-Rackspace does not store customer encryption keys. Only you will know
-and be able to access your encryption passphrase. If you forget your
-passphrase, you will not be able to restore data from your backups.
+Rackspace does not store customer encryption keys. Only you know
+and are able to access your encryption passphrase. If you forget your
+passphrase, you are not be able to restore data from your backups.
 
 For more information, see the section on [Setting up encryption on your Cloud Backup system](/how-to/rackspace-cloud-backup-system-actions)
 in the list of Cloud Backup actions.
 
 #### How do I generate a Rackspace Cloud Backup Encryption key?
 
-If you wish to create your own encrypted key and bypass the default
+If you want to create your own encrypted key and bypass the default
 client-side encryption, please refer to [this article on using OpenSSL to generate a key](/how-to/generate-your-encrypted-key-in-cloud-backup).
 
 #### Where are my Cloud Backups stored?
@@ -126,8 +126,7 @@ data. An added benefit is that this capability enables you to retrieve
 previous versions of your files (up to the limits specified in your data
 retention settings).
 
-See the section on [Scheduling and Deduplication](/how-to/rackspace-cloud-backup-backup-actions)
-in the list of Cloud Backup actions.
+See the section on [Scheduling and Deduplication](/how-to/rackspace-cloud-backup-backup-actions) in the list of Cloud Backup actions.
 
 #### Can I use Rackspace Cloud Backup on my server?
 
@@ -167,8 +166,7 @@ for more information.
 You can set backups to run hourly, daily, weekly, or on demand
 (manually).
 
-Read more about [Scheduling your Backup](/how-to/rackspace-cloud-backup-backup-actions)
-in the list of Cloud Backup actions.
+Read more about [Scheduling your Backup](/how-to/rackspace-cloud-backup-backup-actions) in the list of Cloud Backup actions.
 
 #### Are 32-bit servers and agents on Linux supported?
 
@@ -210,10 +208,10 @@ If files are modified during backup, they may be:
 
 1.  Overwritten or Deleted: These files are not guaranteed to have
     usable content or to even be included in the backup at all.
-2.  Appended: We will make a best effort to back these up, but we expect
+2.  Appended: We make a best effort to back these up, but we expect
     to be able to restore a reasonable and usable form of these files.
 3.  Randomly Updated: We do not in any way guarantee that these files
-    will be restorable, and even if they are restored, we do not
+    are restorable, and even if they are restored, we do not
     guarantee that what is restored is not corrupt.
 
 These file types either change too rapidly (databases, logs, caches) or
@@ -224,14 +222,14 @@ their data is meant to be discarded.
 
 If you do need to back up these files, our suggested workarounds are:
 
--   For databases - Take a snapshot of the database (e.g., a
+-   **For databases**: Take a snapshot of the database (a
     database dump) and back up the dump. See [Rackspace Cloud Backup - Backing up Databases](/how-to/rackspace-cloud-backup-backing-up-databases)
     for full instructions.
--   For log files - Take snapshots of your log files and back them up.
+-   **For log files**: Take snapshots of your log files and back them up.
     -   To avoid running out of disk space, rotate your log
         files periodically.
 
 #### Does the backup agent accept incoming connections?
 
-No. The agent only makes outgoing SSL connections to our API server on
-port 443.
+No. The agent only makes outgoing Secure Sockets Layer (SSL) connections to
+our API server on port 443.
