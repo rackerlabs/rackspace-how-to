@@ -24,15 +24,15 @@ You also cannot migrate an encrypted vault.
 See [Migrate Vault API call](https://developer.rackspace.com/docs/cloud-backup/v1/developer-guide/#migrate-vault)
 for a description.
 
-#### Why does my backup fail with the error "container does not exist Invalid snapshot id and engine, and check config_backup.json id?"
+#### Why does my backup fail with the error "container does not exist. Invalid snapshot id and engine, and check config_backup.json id?"
 
 The Cloud Files container named **z_DO_NOT_DELETE_CloudBackup** is
 required for Rackspace Cloud Backup to work properly. If this container
-is deleted, you will receive the error, `Container does not exist.
+is deleted, you receive the error `Container does not exist.
 Invalid snapshot id and engine, and check config_backup.json id` when
 you attempt to do a backup.
 
-There are two causes for this error:
+This error can have the following causes:
 
 1.  The user has deleted the Cloud Files container where their backups
     are stored.
