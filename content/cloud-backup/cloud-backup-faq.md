@@ -34,13 +34,13 @@ you attempt to do a backup.
 
 This error can have the following causes:
 
-1.  The user has deleted the Cloud Files container where their backups
-    are stored.
-2.  Clicking the View Configuration link does not display the
-    JSON configuration. The common cause of this is that the customer
-    has backup configurations that are in a corrupted state.
+1.  The Cloud Files container where your backups are stored have been deleted.
+2.  Clicking **View Configuration** does not display the JSON configuration.
+    This issue commonly occurs when you have corrupted backup configurations.
 
-To resolve this error, *do not delete* the **z_DO_NOT_DELETE_CloudBackup** container in your Cloud Files account; it is used for backup. If you have accidentally deleted this container, contact Rackspace Support.
+To resolve this error, *do not delete* the **z_DO_NOT_DELETE_CloudBackup**
+container in your Cloud Files account because it is used for backup. If you
+accidentally delete this container, contact Rackspace Support.
 
 ------------------------------------------------------------------------
 
