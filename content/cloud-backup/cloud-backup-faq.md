@@ -24,7 +24,7 @@ You also cannot migrate an encrypted vault.
 See [Migrate Vault API call](https://developer.rackspace.com/docs/cloud-backup/v1/developer-guide/#migrate-vault)
 for a description.
 
-#### Why does my backup fail with the error "container does not exist. Invalid snapshot id and engine, and check config_backup.json id?"
+#### Why does my backup fail with the error "Container does not exist. Invalid snapshot id and engine, and check config_backup.json id?"
 
 The Cloud Files container named **z_DO_NOT_DELETE_CloudBackup** is
 required for Rackspace Cloud Backup to work properly. If this container
@@ -78,11 +78,10 @@ need to be overwritten with a current version.
 #### How does Rackspace Cloud Backup handle corrupt files?
 
 Cloud Backup double-checks to make sure files get written properly when
-backed up and restored. However, if an uploaded file is corrupt, it will
-get backed up and restored as corrupted. The backup and restore
-processes themselves should never corrupt files. File corruption
-occurring in Cloud Files itself may render the backup unusable, should
-this ever occur.
+backed up and restored. However, if an uploaded file is corrupt, it is
+backed up and restored as corrupted. The backup and restore
+processes themselves should never corrupt files. If file corruption
+occurrs in Cloud Files itself, it might render the backup unusable.
 
 #### What happens if I lose my encryption key?
 
