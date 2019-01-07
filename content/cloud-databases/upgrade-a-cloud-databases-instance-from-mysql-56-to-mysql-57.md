@@ -1,21 +1,21 @@
 ---
-permalink: upgrade-a-cloud-databases-instance-from-mysql-51-to-mysql-56/
-audit_date: '2018-12-13'
-title: Upgrade a Cloud Databases instance from MySQL 5.1 to MySQL 5.6
+permalink: upgrade-a-cloud-databases-instance-from-mysql-56-to-mysql-57/
+audit_date: '2019-01-03'
+title: Upgrade a Cloud Databases instance from MySQL 5.6 to MySQL 5.7
 type: article
-created_date: '2014-07-03'
-created_by: Rose Contreras
-last_modified_date: '2018-12-13'
+created_date: '2019-01-03'
+created_by: Kate Dougherty
+last_modified_date: '2019-01-03'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
-This article shows you how to upgrade from a Cloud Databases MySQL&reg; 5.1
-instance to a new MySQL 5.6 instance. The steps assume that you haven't
-enabled the root database user on the source or destination instance and that
-you're using the Rackspace [Cloud Control Panel](http://login.rackspace.com)
-to manage your Cloud Databases.
+This article shows you how to upgrade from a Cloud Databases MySQL&reg;
+5.6 instance to a new MySQL 5.7 instance. The steps assume that you
+haven't enabled the root database user on the source or destination
+instance and that you're using the Rackspace [Cloud Control
+Panel](http://login.rackspace.com) to manage your Cloud Databases.
 
 Because database replication isn't available, this article includes some
 additional steps to ensure that no content is lost during the migration
@@ -26,26 +26,23 @@ low-traffic period.
 
 Before you upgrade the instance, we recommend that you review the change
 documentation from MySQL that appears in this section. The documentation
-describes the changes that you can expect from a migration from version 5.1
-to version 5.6, and helps you ensure that your application is prepared for the
+describes the changes that you can expect from a migration from version 5.6
+to version 5.7, and helps you ensure that your application is prepared for the
 changes in functionality between the two versions.
 
-**Note**: This article shows you how to upgrade directly from MySQL 5.1 to 5.6
+**Note**: This article shows you how to upgrade your MySQL instance directly
 by using the <code>mysqldump</code> command, so you can disregard any mention
 in the MySQL documentation of having to update table files or file structures
 directly.
 
-Review the following change documentation that corresponds to your upgrade:
-
-- **[Changes in MySQL 5.5](http://dev.mysql.com/doc/refman/5.5/en/upgrading-from-previous-series.html)**: For upgrades from MySQL 5.1 to MySQL 5.5.
-
-- **[Changes in MySQL 5.6](http://dev.mysql.com/doc/refman/5.6/en/upgrading-from-previous-series.html)**: For upgrades from MySQL 5.5 to MySQL 5.6.
+Review [Changes in MySQL 5.7](https://dev.mysql.com/doc/refman/5.7/en/upgrading-from-previous-series.html) to learn about changes between MySQL 5.6
+and MySQL 5.7.
 
 #### Back up the original Cloud Databases instance
 
 It's important to back up the original instance first. If you discover any
-structure discrepancies after you begin using the new MySQL 5.6 instance, you
-can use the backup copy to rebuild your database in its previous MySQL 5.1
+structure discrepancies after you begin using the new MySQL 5.7 instance, you
+can use the backup copy to rebuild your database in its previous MySQL 5.6
 state.
 
 Use the following steps to create a copy of the original instance:
@@ -64,17 +61,17 @@ Use the following steps to create a copy of the original instance:
 5. Enter a **Name** and **Description** for the backup, then click **Create
    Backup**.
 
-#### Create the destination MySQL 5.6 instance
+#### Create the destination MySQL 5.7 instance
 
 Use the following steps to create a new Cloud Databases instance:
 
 1. In the Cloud Control Panel, click **Databases > MySQL Instance**.
-4. In the **Identity** section of the **Create Instance** page, enter an
+2. In the **Identity** section of the **Create Instance** page, enter an
    **Instance Name** and select a **Region** from the drop-down list.
-5. In the **Engine** section, choose **MySQL 5.6** for the instance type.
-6. In the **Build** section, select the amount of memory that you want the
+3. In the **Engine** section, choose **MySQL 5.7** for the instance type.
+4. In the **Build** section, select the amount of memory that you want the
    server to use from the **RAM** drop-down list and choose a **Disk** size.
-7. Click **Create Single Instance**.
+5. Click **Create Single Instance**.
 
 **Note**: If your current database uses any custom **my.cnf configuration**
 options, review the configuration of the new instance to ensure that those
@@ -87,52 +84,52 @@ discrepancies with table character data encoding.
 ### Rebuild databases and users for a new MySQL instance
 
 This section explains how to generate lists of databases and users from the
-MySQL 5.1 instance and recreate them on the MySQL 5.6 instance.
+MySQL 5.6 instance and recreate them on the MySQL 5.7 instance.
 
-#### Rebuild databases on the MySQL 5.6 instance
+#### Rebuild databases on the MySQL 5.7 instance
 
-Use the following steps to rebuild databases on the MySQL 5.6 instance:
+Use the following steps to rebuild databases on the MySQL 5.7 instance:
 
-1. In the Cloud Control Panel, click on the MySQL 5.1 instance.
+1. In the Cloud Control Panel, click on the MySQL 5.6 instance.
 
     The list of databases displays on the **Instance Details** page.
 
-2. Open the **Instance Details** page for the new MySQL 5.6 instance,
-   click **Create Database**, and enter the name of a database from the 5.1
+2. Open the **Instance Details** page for the new MySQL 5.7 instance,
+   click **Create Database**, and enter the name of a database from the 5.6
    instance. Repeat this step until you have recreated all of the databases.
 
-#### Rebuild users on the MySQL 5.6 instance
+#### Rebuild users on the MySQL 5.7 instance
 
-To rebuild users on the MySQL 5.6 instance, you first have to reconfigure the
+To rebuild users on the MySQL 5.7 instance, you first have to reconfigure the
 passwords for the database users. If your application is already configured
 for a specific password, you should have the list of passwords before you
 create the users so that you don't have to update the application
 configuration later.
 
-Use the following steps to rebuild users on the MySQL 5.6 instance:
+Use the following steps to rebuild users on the MySQL 5.7 instance:
 
-1. In the Cloud Control Panel, click on the MySQL 5.1 instance.
+1. In the Cloud Control Panel, click on the MySQL 5.6 instance.
 
     The list of users displays on the **Instance Details** page.
 
-2. Open the **Instance Details** page for the new MySQL 5.6 instance, click
-   **Create User**, and enter the name of a user from the 5.1 instance.
+2. Open the **Instance Details** page for the new MySQL 5.7 instance, click
+   **Create User**, and enter the name of a user from the 5.6 instance.
    Repeat this step until you have recreated all of the users.
 
 ### Configure the application for read-only or maintenance mode
 
 Configure your application or website to a maintenance mode or read-only state
 until the transfer is complete. This step prevents any new data from being
-added to the MySQL 5.1 instance while you're finishing the upgrade and
-transitioning to the new MySQL 5.6 instance.
+added to the MySQL 5.6 instance while you're finishing the upgrade and
+transitioning to the new MySQL 5.7 instance.
 
 **Note**: The following sections describe how to export your current
 databases and import them to the new instance. During this process, the MySQL
-5.1 database is in a read-only state, and any updates to the database could
+5.6 database is in a read-only state, and any updates to the database could
 potentially be lost to the new destination instance during the export and
 import process.
 
-### Export databases from MySQL 5.1 and import them into MySQL 5.6
+### Export databases from MySQL 5.6 and import them into MySQL 5.7
 
 This section describes two methods for exporting and importing the databases
 by using the <code>mysqldump</code> command. This command locks the source
@@ -224,22 +221,22 @@ Use the following steps to perform this task:
 
         zcat sourceDB.sql.gz | mysql --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password</code>
 
-### Verify the dataset on the MySQL 5.6 instance
+### Verify the dataset on the MySQL 5.7 instance
 
-Before you transition to the new MySQL 5.6 instance, check the database
+Before you transition to the new MySQL 5.7 instance, check the database
 content to verify that your data was imported and formatted in the way that
 you expected. The <code>mysqldump</code> export creates a logical copy of your
-database content. The destination MySQL 5.6 database instance uses this
+database content. The destination MySQL 5.7 database instance uses this
 logical copy of your data to rebuild the database table files, using the
-updated file format that MySQL 5.6 implements. For this reason, it's important
+updated file format that MySQL 5.7 implements. For this reason, it's important
 to verify that certain configurations such as character sets and time zone
-data are updated to match your previous 5.1 database instance.
+data are updated to match your previous 5.6 database instance.
 
 **Note**: We recommend that you use a staging or test server for your
 applications to verify functionality before you transition the applications
-to the new MySQL 5.6 instance.
+to the new MySQL 5.7 instance.
 
-#### Transition applications to the MySQL 5.6 instance
+#### Transition applications to the MySQL 5.7 instance
 
 When you have imported and verified your data, you can transition your
 applications to the new database instance by using the new host name.
