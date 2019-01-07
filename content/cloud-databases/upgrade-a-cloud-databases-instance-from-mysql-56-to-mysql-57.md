@@ -186,7 +186,7 @@ the content from this file to the destination instance.
 
 Use the following steps to perform this task:
 
-1. Log in to a cloud server that's available within the same data center as
+1. Log in to a cloud server that is available within the same data center as
    your source and destination database instances.
 
 2. Run the <code>mysqldump</code> command, replacing the following items
