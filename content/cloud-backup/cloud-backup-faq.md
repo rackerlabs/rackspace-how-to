@@ -38,9 +38,10 @@ This error can have the following causes:
 2.  Clicking **View Configuration** does not display the JSON configuration.
     This issue commonly occurs when you have corrupted backup configurations.
 
-To resolve this error, *do not delete* the **z_DO_NOT_DELETE_CloudBackup**
-container in your Cloud Files account because it is used for backup. If you
-accidentally delete this container, contact Rackspace Support.
+To resolve this error, ensure that you do not delete the
+**z_DO_NOT_DELETE_CloudBackup** container in your Cloud Files account because
+it is used for backup. If you accidentally delete this container, [contact
+Rackspace Support](https://www.rackspace.com/support).
 
 ------------------------------------------------------------------------
 
