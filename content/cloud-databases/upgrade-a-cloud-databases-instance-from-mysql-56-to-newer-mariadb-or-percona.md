@@ -168,7 +168,7 @@ to the database instance:
     The following code provides an example:
 
         mysqldump --user=source_db_user --host=xxxxx.rackspaceclouddb.com --password=source_password --no-create-db --databases database_01 database_02 database_03 | mysql
-	    --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password</pre>
+	    --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password
 
 #### Export the list of databases to a file on the server before importing
 
@@ -212,7 +212,7 @@ Use the following steps to perform this task:
 
     The following code provides an example:
 
-        zcat sourceDB.sql.gz | mysql --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password</code>
+        zcat sourceDB.sql.gz | mysql --user=destination_db_user --host=yyyyy.rackspaceclouddb.com --password=destination_password
 
 ### Verify the dataset on the new instance
 
