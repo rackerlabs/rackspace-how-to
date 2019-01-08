@@ -215,6 +215,4 @@ Several resources are available to help you progress:
 -   [Rackspace How-To](/how-to/) - Information about all Rackspace products
 -   [Cloud Launch Guides](https://launch.rackspace.com/) - Step-by-step
     guides on how to build and deploy cloud services
--   [The Rackspace Community](https://community.rackspace.com/) -
-    Discuss ideas with Rackers and other customers
 -   [**Fanatical Support**&reg;](http://www.rackspace.com/support)

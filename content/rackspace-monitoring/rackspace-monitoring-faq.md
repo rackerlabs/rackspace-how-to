@@ -96,11 +96,7 @@ continues to monitor your resources and send you notifications.
 
 #### How can I tell Rackspace about features I would like added or issues I discover while using Rackspace Monitoring?
 
-Please let us know of any features you would like added or any issues
-you find via the [Rackspace Community
-](https://community.rackspace.com/) forums. For more immediate
-assistance with a time-sensitive issue, please file a ticket or contact
-your account team.
+Please file a ticket or contact your account team.
 
 #### Does the service support SNMP traps?
 

@@ -77,10 +77,3 @@ and the [Cloud Feeds Developer Guide](http://docs.rackspace.com/cloud-feeds/api/
 ### Getting help and providing feedback
 
 If you have questions about Cloud Feeds, see the [Cloud Feeds FAQ](/how-to/cloud-feeds-faq).
-
-You may also post questions and other discussions in the Rackspace
-Community [API/SDK Developer Forum](https://community.rackspace.com/developers/f/7.aspx).
-
-Your feedback is a key ingredient of Rackspace's success. If you have
-suggestions for enhancements to Cloud Feeds, post your idea on the
-[Rackspace Product Feedback](https://feedback.rackspace.com/) site.
