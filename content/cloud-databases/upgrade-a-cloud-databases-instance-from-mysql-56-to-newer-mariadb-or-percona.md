@@ -197,7 +197,7 @@ Use the following steps to perform this task:
 
        mysqldump --user=source_db_user --host=xxxxx.rackspaceclouddb.com --password=source_password --no-create-db --databases database_01 database_02 database_03 |
        gzip
-       -1 &gt; sourceDB.sql.gz
+       -1 > sourceDB.sql.gz
 
 3. Run the <code>mysql</code> command, replacing the following items in
    each section of the command:
