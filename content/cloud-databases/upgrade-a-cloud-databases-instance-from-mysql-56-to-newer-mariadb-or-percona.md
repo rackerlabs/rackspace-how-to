@@ -15,13 +15,12 @@ This article shows you how to upgrade from a Cloud Databases MySQL&reg;
 5.6 instance to a newer MariaDB&reg; or Percona&reg; Database instance.
 The steps assume that you haven't enabled the root database user on the
 source or destination instance and that you're using the Rackspace [Cloud
-Control Panel](http://login.rackspace.com) to manage your
-Cloud Databases.
+Control Panel](http://login.rackspace.com) to manage your Cloud Databases.
 
 Because database replication isn't available, this article includes some
 additional steps to ensure that no content is lost during the migration
-process. As a result, we recommend that you perform this upgrade during a
-low-traffic period.
+process. As a result, we recommend that you perform this upgrade
+during a low-traffic period.
 
 **Note**: Before you upgrade from a Cloud Databases MySQL&reg;
 5.6 instance to a newer MariaDB&reg; or Percona&reg; Database instance,

@@ -240,3 +240,7 @@ to the new MySQL 5.7 instance.
 
 When you have imported and verified your data, you can transition your
 applications to the new database instance by using the new host name.
+
+**Note**: You can also choose to [upgrade a Cloud Databases instance from
+MySQL 5.6 to a newer version of MariaDB or Percona
+Database](/how-to/upgrade-a-cloud-databases-instance-from-mysql-56-to-newer-mariadb-or-percona/).
