@@ -1,11 +1,11 @@
 ---
 permalink: nslookup-checking-dns-records-on-windows/
-audit_date: '2016-10-05'
+audit_date: '2018-10-08'
 title: Check DNS records on Windows with nslookup
 type: article
 created_date: '2012-06-27'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2019-01-08'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
