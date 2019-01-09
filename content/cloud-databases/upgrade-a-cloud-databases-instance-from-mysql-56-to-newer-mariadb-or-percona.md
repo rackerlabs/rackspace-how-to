@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-a-cloud-databases-instance-from-mysql-56-to-newer-mariadb-or-percona/
 audit_date: '2019-01-07'
-title: Upgrade a Cloud Databases instance from MySQL 5.6 to a newer version of MariaDB or Percona Database
+title: Upgrade a Cloud Databases instance from MySQL 5.6 to a newer version of MariaDB or Percona database
 type: article
 created_date: '2019-01-07'
 created_by: Kate Dougherty
@@ -12,7 +12,7 @@ product_url: cloud-databases
 ---
 
 This article shows you how to upgrade from a Cloud Databases MySQL&reg;
-5.6 instance to a newer MariaDB&reg; or Percona&reg; Database instance.
+5.6 instance to a newer MariaDB&reg; or Percona database instance.
 The steps assume that you haven't enabled the root database user on the
 source or destination instance and that you're using the Rackspace [Cloud
 Control Panel](http://login.rackspace.com) to manage your Cloud Databases.
@@ -22,8 +22,8 @@ additional steps to ensure that no content is lost during the migration
 process. As a result, we recommend that you perform this upgrade
 during a low-traffic period.
 
-**Note**: Before you upgrade from a Cloud Databases MySQL&reg;
-5.6 instance to a newer MariaDB&reg; or Percona&reg; Database instance,
+**Note**: Before you upgrade from a Cloud Databases MySQL
+5.6 instance to a newer MariaDB or Percona database instance,
 identify any unique features of the prior datastore that you might be using
 and verify that the destination datastore also has them. You can add those
 unique features by creating links to the upstream content.
