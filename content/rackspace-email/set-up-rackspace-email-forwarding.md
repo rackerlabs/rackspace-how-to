@@ -69,7 +69,7 @@ Use these steps to forward email from your Rackspace Email address to another ad
 
 7. Click **Submit**.
 
-Allow at least 15 minutes after setup for the forward to be fully enabled.
+**Note:** Allow at least 15 minutes after setup for the forward to be fully enabled.
 
 ### References
 
