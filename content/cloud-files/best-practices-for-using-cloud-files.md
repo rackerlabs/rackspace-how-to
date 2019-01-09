@@ -13,9 +13,9 @@ product_url: cloud-files
 
 ### What is Cloud Files used for?
 
-There are many ways that you can use Cloud Files. It is strongest when
+You can use Cloud Files in many ways. It is strongest when
 it is functioning as **unlimited object storage** on the cloud, or when
-you use it as a **website accelerator** with the Content Delivery Network
+you use it as a **website accelerator** with a Content Delivery Network
 (CDN). This article presents these use-case scenarios and provides some
 recommendations for getting the most out of Cloud Files.
 
@@ -35,9 +35,9 @@ is there each and every time you call for it.
 
 When you use Cloud Files for web acceleration, a basic organizational
 structure separates your content into different containers based on
-object type, such as images, CSS, JavaScript, videos, uploaded
-content, and so on. This structure enables you to quickly locate objects
-when you need them.
+object type, such as images, Cascading Style Sheets (CSS), JavaScript,
+videos, uploaded content, and so on. This structure enables you to quickly
+locate objects when you need them.
 
 ### Container management
 
@@ -56,12 +56,12 @@ overall performance.
 
 #### How to label your containers
 
-When you organize your containers for an object storage solution, we
-recommend that you label the container based on the type of storage (perhaps
-based on the segment of the application accessing it). We also recommend
-that you attach an incremental number to the label name to plan ahead in
-case the number of objects becomes too high. For example, a container name
-might look something like **personnel-00000**.
+When you organize your containers for Cloud Files, we recommend that you label
+the container based on the type of storage (perhaps based on the segment of
+the application accessing it). We also recommend that you attach an
+incremental number to the label name to plan ahead in case the number of
+objects becomes too high. For example, a container name might look something
+like **personnel-00000**.
 
 A basic setup for web acceleration organizes content in separate containers
 such as images, CSS, JavaScript, videos, uploaded content, and so on. This
@@ -75,7 +75,7 @@ have to wait on the container to list all of the objects, 10,000 at a time.
 
 You can do this in a local database, which significantly reduces the chance
 of a naming conflict. With this approach, if there is an update to an object,
-it is known in which container the object is located. This enables a simple
+you know in which container the object is located. This enables a simple
 update to the object without having to list all of the containers, which
 significantly reduces the time required to complete updates.
 
@@ -85,7 +85,7 @@ programmatically, and also grow organically over time. This tip also applies
 to any site that allows for additional content, such as an uploads section,
 that might quickly grow beyond the webmaster's expectations.
 
-Considering future growth in object count and usage. Any system that has
+Consider future growth in object count and usage. Any system that has
 many millions of objects and very high object churn (such as creation and
 deletion) should have a fragmentation or sharing system to minimize any
 performance impacts.
@@ -97,13 +97,13 @@ container and checking the **Object Count**.
 ### Pathing
 
 Containers in Cloud Files do not nest, and all objects in a
-single container are subject to the same limitations. There are
-applications that fake a folder structure by adding the path to
+single container are subject to the same limitations. Some
+applications fake a folder structure by adding the path to
 the beginning of the object name, which works for pathing in the CDN
 URLs as well. This structure enables virtual pathing if needed.
 For object storage, this enables better subdivision of slow-growth,
 closely-grouped data. As a result, you're unlikely to need to divide it
-out again later. For website acceleration, this enables pathing that
+again later. For website acceleration, this enables pathing that
 displays in the browser, as shown in the following example:
 
     http://c123456.r02.cf3.rackcdn.com/ducks/funny/duckling.jpg
@@ -117,20 +117,20 @@ container itself. Multiple containers allow for better threading of the
 deletion scripts. Because content grows regardless of the use case, it's
 best to plan ahead for this situation.
 
-### Set the Time To Live
+### Set the Time to Live
 
 In addition to the performance benefit of quicker listings, you're also able
-to set the Time To Live (TTL) value for containers that contain objects on the
+to set the Time to Live (TTL) value for containers that contain objects on the
 CDN. You set the TTL on the Cloud Files container, and all of the objects
 inherit the container-level setting. A particular object in a container cannot
 have a TTL that is different than the other objects in the same container.
 As a result, you might want to set longer TTL values on content that is
 unlikely to change often.
 
-For website acceleration, you might use a longer TTL (at the container-level)
+For website acceleration, you might use a longer TTL (at the container level)
 for files that are updated infrequently, such as your CSS, JavaScript, and
 videos. At the same time, you can set a shorter TTL for rapidly changing
 objects such as user uploads. Using an appropriate TTL for the object type in
 your container improves performance. The longer the TTL, the more
 consistent the performance because it renews the CDN cache from your Cloud
-Files store less frequently.
+Files less frequently.
