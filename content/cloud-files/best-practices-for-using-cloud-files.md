@@ -13,11 +13,11 @@ product_url: cloud-files
 
 ### What is Cloud Files used for?
 
-There are many ways that you can use Cloud Files. It is strongest when it is
-functioning as **unlimited object storage** on the cloud, or when you use it
-as a **website accelerator** with the Content Delivery Network (CDN). This
-article presents these use-case scenarios and provides some recommendations
-for getting the most out of Cloud Files.
+There are many ways that you can use Cloud Files. It is strongest when
+it is functioning as **unlimited object storage** on the cloud, or when
+you use it as a **website accelerator** with the Content Delivery Network
+(CDN). This article presents these use-case scenarios and provides some
+recommendations for getting the most out of Cloud Files.
 
 ### Object storage
 
