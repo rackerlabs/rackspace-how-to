@@ -13,7 +13,7 @@ product_url: rackspace-email
 
 This article describes how to forward a Rackspace Email mailbox to another email address.
 
-If you need to configure forwarding for a Microsoft Exchange mailbox, see [Set up Microsoft Exchange email forwarding](/how-to/set-up-microsoft-exchange-email-forwarding/).
+If you need to configure forwarding for a Microsoft&reg; Exchange mailbox, see [Set up Microsoft Exchange email forwarding](/how-to/set-up-microsoft-exchange-email-forwarding/).
 
 ### Prerequisites
 
@@ -24,14 +24,14 @@ If you need to configure forwarding for a Microsoft Exchange mailbox, see [Set u
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-### Set up forwarding using webmail
+### Set up forwarding by using webmail
 
-Use these steps to forward email from your Rackspace Email address to another address using webmail.
+Use the following steps to forward email from your Rackspace Email address to another address using webmail:
 
-1. Log in to the mailbox to be forwarded at [apps.rackspace.com](https://apps.rackspace.com/index.php)
-2. Click your username in the upper right-hand corner then select **Settings**.
+1. Log in to the mailbox to be forwarded at [apps.rackspace.com](https://apps.rackspace.com/index.php).
+2. Click your username in the upper right-hand corner, then select **Settings**.
 
-   - A settings pop-up box displays.
+   A settings pop-up box displays.
 
 3. Click the **Incoming Email** tab on the left-hand side of this box.
 4. To the right, click the **Forwarding** tab.
@@ -48,9 +48,9 @@ Use these steps to forward email from your Rackspace Email address to another ad
 
 **Note:** Allow at least 15 minutes after setup for the forward to be fully enabled. If you are unable to set up a forward using this method, contact your account administrator.
 
-### Set up forwarding using the Cloud Office Control Panel
+### Set up forwarding by using the Cloud Office Control Panel
 
-1.	Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f "Cloud Office Control Panel") using your Rackspace Cloud Office admin ID and password.
+1.	Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f "Cloud Office Control Panel") by using your Rackspace Cloud Office admin ID and password.
 2. In the **Rackspace Email** section, click **Mailboxes**.
 3. Select the domain that contains the mailbox that you want to forward.
 4. From the mailbox list, click the blue highlighted mailbox name that you want to forward.
@@ -61,7 +61,7 @@ Use these steps to forward email from your Rackspace Email address to another ad
 6. Check the box for **Forward email to**.
 
    A. In the field under **Forward email to**, type in the email address to which you want to forward email.
-   B. Check the box for **Save copies of forwarded email**
+   B. Check the box for **Save copies of forwarded email**.
 
    <img src="{% asset_path rackspace-email/set-up-rackspace-email-forwarding/ForwardRSEcontrolpanelSC3.png %}" />
 
