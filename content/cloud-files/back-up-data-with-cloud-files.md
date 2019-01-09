@@ -14,8 +14,8 @@ product_url: cloud-files
 This article shows you how to store your own data backup in Cloud Files.
 
 **Note**: For information about Cloud Backup as a service,
-see [Protect and restore Cloud Servers files with Cloud
-Backup](http://www.rackspace.com/cloud/backup).
+see [Safeguard Your Business, with Automatic Cloud
+Backups](http://www.rackspace.com/cloud/backup).
 
 ### Prepare to back up your data
 
@@ -56,7 +56,7 @@ Use the following steps to back up your data:
 6.  *(Optional)* If you want to create a folder to group your uploaded
     files, perform the following steps:
 
-    1.  On the Containers page, click **Create Folder**.
+    1.  On the **Containers** page, click **Create Folder**.
 
     2.  In the popup dialog box, name the folder and then click **Create
         Folder**.
@@ -67,7 +67,7 @@ Use the following steps to back up your data:
 7.  Individually upload the backup data files that you created in the previous
     section to the container by using the following steps:
 
-    1.  On the Containers page, click **Upload Files**.
+    1.  On the **Containers** page, click **Upload Files**.
 
     2.  Select the files and click **Open**.
 
