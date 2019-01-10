@@ -15,9 +15,9 @@ The Rackspace Cloud can save you both time and money. This guide shows
 you how you can accomplish this by turning your idea into a working site.
 This process includes the following basic steps:
 
-1.  Build the infrastructure
-2.  Upload your code
-3.  Test
+1.  Build the infrastructure.
+2.  Upload your code.
+3.  Test your site.
 
 The project that you're bringing to the cloud is probably much more
 complicated than what this guide covers. However, the process that this
@@ -47,12 +47,15 @@ Apache&reg; web server package to turn the server into a web server.
 
 #### Create a cloud server
 
-1.  Log in to the [Cloud Control Panel](https://login.rackspace.com) using
+Use the following steps to create a cloud server:
+
+1.  Log in to the [Cloud Control Panel](https://login.rackspace.com) by using
     the user name and password that you entered when you created your account.
 
     The Cloud Control Panel supports many Rackspace products and services. For
-    more information about the Cloud Control Panel, see [Introducing the Cloud
-    Control Panel](/how-to/introducing-the-rackspace-cloud-control-panel).
+    more information about the Cloud Control Panel, see [Introducing the
+    Rackspace Cloud Control
+    Panel](/how-to/introducing-the-rackspace-cloud-control-panel).
 
 2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
@@ -122,7 +125,7 @@ information to and from your server in a secure fashion.
         that you downloaded at the beginning of this guide.
 
     -   [Connect to Linux from Windows by using
-        PuTTY](/how-to/connecting-to-linux-from-windows-by-using-putty).
+        PuTTY](/how-to/connecting-to-linux-from-windows-by-using-putty)
 
         The first time that you connect to a cloud server, your computer
         verifies that this is something you want to do.
@@ -203,7 +206,5 @@ image:
 Several resources are available to help you progress:
 
 - [Rackspace How-To](/how-to/): Information about all Rackspace products
-- [Cloud Launch Guides](https://launch.rackspace.com/): Step-by-step
-  guides about how to build and deploy cloud services
 - [**Fanatical Support**&reg;](http://www.rackspace.com/support): Contact
   Rackspace Support

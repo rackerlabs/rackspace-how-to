@@ -15,7 +15,7 @@ To work with your cloud server you must establish a connection to it
 from your local computer. How you make the connection depends on the
 server's operating system and your desktop operating system.
 
-### Linux server
+### Connect to a Linux server
 
 Use Secure Shell (SSH) to log in to your Linux&reg; server. For connection
 instructions, see the appropriate article for your desktop operating
@@ -26,7 +26,7 @@ system:
 -   [Connect to Linux from Windows by using
     PuTTY](/how-to/connecting-to-linux-from-windows-by-using-putty)
 
-### Windows server
+### Connect to a Windows server
 
 Use Remote Desktop Protocol (RDP) to log in to your Windows&reg; server. For
 connection instructions, see the appropriate article for your desktop
