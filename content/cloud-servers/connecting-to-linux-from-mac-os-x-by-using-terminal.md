@@ -40,6 +40,10 @@ replace *root* in the instructions with your username.
 
          MKD1JTF1G3->$ ssh root@166.76.69.51
 
+     **Note**: You can find the command that you use to connect to your server
+     via SSH in the right sidebar of the **Server Details** page of the [Cloud
+     Control Panel](https://login.rackspace.com).
+
      The first time that you connect to your server, a message asks you if you
      want to continue connecting. This message appears because your
      server has an RSA key that's not stored in your system registry.

@@ -21,7 +21,7 @@ Use Secure Shell (SSH) to log in to your Linux&reg; server. For connection
 instructions, see the appropriate article for your desktop operating
 system:
 
--   [Connect to Linux from macOS X by using
+-   [Connect to Linux from MacOS X by using
     Terminal](/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal)
 -   [Connect to Linux from Windows by using
     PuTTY](/how-to/connecting-to-linux-from-windows-by-using-putty)
