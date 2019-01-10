@@ -67,9 +67,6 @@ If you want Rackspace to migrate your server for you, you can simply
 take no action. On your specified Assisted Migration date, you will be
 migrated automatically.
 
-For more information about Self-Service and Assisted Migrations, see the
-[Migration thread in our community forums](https://community.rackspace.com/products/f/25/t/4787).
-
 ### The migration process
 
 The First Generation to Next Generation migration process will be
@@ -126,8 +123,6 @@ migration window.
 
 ### Finding more information
 
-For more information, contact your support team or refer to the
-following resources:
+For more information, contact your support team or refer to
+[First Generation to Next Generation Migration FAQ](/how-to/first-generation-to-next-generation-cloud-server-migration-faq)
 
--   [First Generation to Next Generation Migration FAQ](/how-to/first-generation-to-next-generation-cloud-server-migration-faq)
--   [Community Migration Thread](https://community.rackspace.com/products/f/25/t/4787)

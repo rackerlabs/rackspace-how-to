@@ -11,8 +11,7 @@ last_modified_by: Nate Archer
 
 This article provides answers to frequently asked questions about
 the migration from First Generation Cloud Servers to Next Generation
-Cloud Servers. If you have additional questions about the migration, see
-the [migration thread in our community forum](https://community.rackspace.com/products/f/25/t/4787).
+Cloud Servers.
 
 #### Why is there a migration?
 
@@ -186,8 +185,6 @@ be updated.
 
 #### Where are the external customer resources?
 
--   Official External Thread on the Rackspace Community:
-    [https://community.rackspace.com/products/f/25/t/4787 ](https://community.rackspace.com/products/f/25/t/4787)
 -   Google Hangout customer Q&A sessions
     -   Date/Time: Wednesday 2014-01-14 at 10am CST.
         Link: <https://plus.google.com/events/cdnijo5alfbic3r06phjm0qltro>
