@@ -12,11 +12,11 @@ product_url: dedicated-hosting
 ---
 
 **Note**: This feature is currently an [Early
-Access](/how-to/rackspace-product-release-phases/) feature and is therefore
-subject to additional [test
-terms](https://www.rackspace.com/information/legal/testterms). If the feature
-is not available for your account and you want to participate, contact
-your Account Manager.
+Access](/how-to/rackspace-product-release-phases/) feature and
+is therefore subject to additional [test
+terms](https://www.rackspace.com/information/legal/testterms).
+If the feature is not available for your account and you
+want to participate, contact your Account Manager.
 
 You can use Rackspace Identity Federation to configure your corporate
 security and identity systems to enable your employees to use their
