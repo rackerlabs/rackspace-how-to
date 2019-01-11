@@ -5,11 +5,18 @@ title: 'Identity federation for Dedicated Hosting: Map policies and permissions'
 type: article
 created_date: '2018-11-14'
 created_by: Kate Dougherty
-last_modified_date: '2018-01-10'
+last_modified_date: '2018-01-11'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
+
+**Note**: This feature is currently an [Early
+Access](/how-to/rackspace-product-release-phases/) feature and is therefore
+subject to additional [test
+terms](https://www.rackspace.com/information/legal/testterms). If the feature
+is not available for your account and you want to participate, contact
+your Account Manager.
 
 You can use Rackspace Identity Federation to configure your corporate
 security and identity systems to enable your employees to use their
