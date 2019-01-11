@@ -140,13 +140,15 @@ logging in to Rackspace, as shown in the following example:
                     domain: {D}
                     name: {D}
                     email: {D}
-                    groups: {D}
+                    roles: {D}
                     expire: {D}
         version: "RAX-1"
 
 However, you must customize the default Attribute Mapping Policy to use
 specific values before your users log in or are able to use Rackspace products
 and services.
+
+**Note**: You must replace `roles` with `groups`.
 
 ### Customize the default Attribute Mapping Policy
 
