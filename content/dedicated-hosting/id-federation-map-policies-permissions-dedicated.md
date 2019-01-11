@@ -97,9 +97,9 @@ Okta](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/c
  You can configure your Identity Provider with Rackspace in the MyRackspace
  portal.
 
-**Note**: You can also create a new Identity Provider by using the Rackspace
-Identity Federation API. However, we recommend that you perform this task in
-the MyRackspace portal.
+**Note**: While you can also create a new Identity Provider by using the
+Rackspace Identity Federation API, we recommend that you perform this task
+in the MyRackspace portal.
 
 Use the following steps to configure your Identity Provider with Rackspace:
 
@@ -140,7 +140,7 @@ logging in to Rackspace, as shown in the following example:
                     domain: {D}
                     name: {D}
                     email: {D}
-                    roles: {D}
+                    groups: {D}
                     expire: {D}
         version: "RAX-1"
 
@@ -211,7 +211,7 @@ Your Attribute Mapping Policy must contain the following information:
     <td>groups</td>
     <td>The Rackspace Identity user groups that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td>Identity user groups are self-defined. They are defined in the MyRackspace portal as having specific Dedicated permissions. For information about how to set up user groups, see [Manage user permissions for Dedicated Hosting](/how-to/manage-user-permissions-for-dedicated-hosting/)</td>
+    <td>Identity user groups are self-defined in the MyRackspace portal as having specific Dedicated permissions. For information about how to set up user groups, see <a href="manage-user-permissions-for-dedicated-hosting/">Manage user permissions for Dedicated Hosting</a></td>
   </tr>
   <tr>
     <td>expires</td>
@@ -294,8 +294,8 @@ providers](https://developer.rackspace.com/docs/rackspace-federation/config-3p-s
 
 Rackspace Identity Federation for Dedicated Hosting manages access based on
 the groups that are defined in your corporate identity system. The following
-code block shows you how to map Identity Provider groups to Rackspace Identity
-group roles:
+code shows you how to map Identity Provider groups to Rackspace Identity group
+roles:
 
     mapping:
     version: RAX-1
