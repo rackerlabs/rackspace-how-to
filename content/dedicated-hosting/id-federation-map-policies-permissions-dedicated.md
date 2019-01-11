@@ -208,10 +208,10 @@ Your Attribute Mapping Policy must contain the following information:
     <td>SAML Attributes:<br /> email<br /> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br />urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3</code></td>
   </tr>
   <tr>
-    <td>roles</td>
-    <td>The product RBAC (role-based access control) roles that you want to assign to the user.</td>
+    <td>groups</td>
+    <td>The Rackspace Identity user groups that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td>Example:<br /><code>roles:</code><br /> - <code>"nova:admin"</code><br />- <code>"lbaas:observer"</code></td>
+    <td>Identity user groups are self-defined. They are defined in the MyRackspace portal as having specific Dedicated permissions. For information about how to set up user groups, see [Manage user permissions for Dedicated Hosting](/how-to/manage-user-permissions-for-dedicated-hosting/)</td>
   </tr>
   <tr>
     <td>expires</td>
@@ -279,10 +279,10 @@ more customization might be required in some cases.
            #  Username will be set from element named "name" value in your SAML
            email: "{At(http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)}"
            #  Locates the attribute with the above URL as the claim type/name
-           roles:
-           - "nova:observer"
-           - "lbaas:admin"
-           #  Assigns the roles explicitly listed above
+           groups:
+           - "billing"
+           - "dbas"
+           #  Assigns the groups explicitly listed above
            expire: "{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"
            #  Retrieves the NotOnOrAfter value by using the SAML path and XPath
 
@@ -292,82 +292,10 @@ providers](https://developer.rackspace.com/docs/rackspace-federation/config-3p-s
 
 #### Assign Rackspace permissions
 
-This section provides examples of assigning Rackspace permissions.
-
-##### Basic example
-
-All Rackspace permissions for federated users are granted through roles
-that are assigned in the Attribute Mapping Policy.
-
-The following code block shows a basic example of an Attribute Mapping Policy:
-
-    mapping:
-     version: RAX-1
-     rules:
-     - local:
-        user:
-           domain: '999994919999'
-           email: "{At(http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)}"
-           expire: "PT12H"
-           name: "{D}"
-           roles:
-            - "admin"
-            - "ticketing:admin"
-
-In this example, the `admin` and `ticketing:admin` roles are explicitly
-assigned to any users who log in by using this Identity Provider and Attribute
-Mapping Policy.
-
-For basic Identity Federation setups, this example might be sufficient.
-
-For detailed information about Rackspace RBAC roles for dedicated accounts,
-use the following steps to access the MyRackspace Customer Portal Permissions
-Guide:
-
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the subnavigation bar, select **Account > Permissions**.
-3. On the Permissions page, click **Permissions Guide** in the top-right
-   corner.
-
-##### Permissions by Identity Provider groups example
-
-For more complex scenarios, especially where access to Rackspace products is
-governed by roles or groups defined in your corporate identity system, the
-Attribute Mapping Policy language offers more flexible control.
-
-The following code block shows a complex example of an Attribute Mapping
-Policy:
-
-    mapping:
-     version: RAX-1
-     rules:
-     - local:
-         user:
-            domain: '9999953939'
-            email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"
-            expire: "{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"
-            name: "{D}"
-            roles:
-            - "{0}"
-       remote:
-       - path : |
-           (
-               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.admin') then ('billing:admin', 'ticketing:admin','admin') else (),
-               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.billing') then 'billing:admin' else (),
-               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.ticketing') then 'ticketing:admin' else ()
-           )
-         multiValue: true
-
-This example uses the substitution and piping features of the Attribute
-Mapping Policy in conjunction with XPath to observe the SAML `groups` value,
-and also to assign values to the local `role` value based on any matching
-scenarios. (The `{0}` indicator under `roles` causes the resultant value or
-values of the first `remote` rule to be substituted in its place.)
-
-##### Map Identity Provider groups to Rackspace Identity groups example
-
-The following code block shows you how to map Identity Provider groups to
-Rackspace Identity group roles:
+Rackspace Identity Federation for Dedicated Hosting manages access based on
+the groups that are defined in your corporate identity system. The following
+code block shows you how to map Identity Provider groups to Rackspace Identity
+group roles:
 
     mapping:
     version: RAX-1
@@ -388,6 +316,9 @@ Rackspace Identity group roles:
                if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.ticketing') then 'ticketing_admin_group' else ()
            )
          multiValue: true
+
+This example uses the substitution and piping features of the Attribute
+Mapping Policy in conjunction with XPath to observe the SAML `groups` value.
 
 For more examples and a complete guide to the Attribute Mapping Policy
 language, see the [Attribute Mapping Policy reference
@@ -422,3 +353,5 @@ steps:
 If you're using the API, you can also update the policy
 by using the [Update IDP mapping
 policy](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/identity-provider-operations/#update-idp-mapping-policy) endpoint.
+
+**Note**: If you need access to the API, contact your Account Manager.
