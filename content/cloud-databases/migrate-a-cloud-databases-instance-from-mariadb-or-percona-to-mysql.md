@@ -5,14 +5,14 @@ title: Migrate a Cloud Databases instance from MariaDB or Percona to MySQL
 type: article
 created_date: '2019-01-10'
 created_by: Kate Dougherty
-last_modified_date: '2019-01-10'
+last_modified_date: '2019-01-14'
 last_modified_by: Kate Dougherty
 product: Cloud Databases
 product_url: cloud-databases
 ---
 
 This article shows you how to migrate a Cloud Databases instance from
-Percona or MariaDB&reg; back to a MySQL&reg; solution. The steps assume
+Percona&reg; or MariaDB&reg; back to a MySQL&reg; solution. The steps assume
 that you haven't enabled the root database user on the source or
 destination instance and that you're using the Rackspace [Cloud Control
 Panel](http://login.rackspace.com) to manage your Cloud Databases.
@@ -100,7 +100,7 @@ configuration later.
 
 Use the following steps to rebuild users on the MySQL 5.7 instance:
 
-1. In the Cloud Control Panel, click on the ariaDB or Percona instance.
+1. In the Cloud Control Panel, click on the MariaDB or Percona instance.
 
    The list of users displays on the **Instance Details** page.
 
