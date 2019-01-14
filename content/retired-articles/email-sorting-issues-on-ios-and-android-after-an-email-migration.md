@@ -7,8 +7,8 @@ created_date: '2013-11-19'
 created_by: Milton Prado
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
-product: Rackspace Email
-product_url: rackspace-email
+product:
+product_url:
 ---
 
 After completing an email migration to Rackspace, some iOS and Android

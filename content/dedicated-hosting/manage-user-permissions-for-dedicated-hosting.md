@@ -5,7 +5,7 @@ title: 'Manage user permissions for Dedicated Hosting'
 type: article
 created_date: '2018-11-28'
 created_by: Kate Dougherty
-last_modified_date: '2018-11-28'
+last_modified_date: '2019-01-11'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -78,7 +78,7 @@ Use the following steps to create a user group:
 
 #### Create a product group
 
-Use the following steps to create a user group:
+Use the following steps to create a product group:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.

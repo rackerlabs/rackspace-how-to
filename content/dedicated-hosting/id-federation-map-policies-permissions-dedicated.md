@@ -5,11 +5,18 @@ title: 'Identity federation for Dedicated Hosting: Map policies and permissions'
 type: article
 created_date: '2018-11-14'
 created_by: Kate Dougherty
-last_modified_date: '2018-12-03'
+last_modified_date: '2018-01-11'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
+
+**Note**: This feature is currently an [Early
+Access](/how-to/rackspace-product-release-phases/) feature and
+is therefore subject to additional [test
+terms](https://www.rackspace.com/information/legal/testterms).
+If the feature is not available for your account and you
+want to participate, contact your Account Manager.
 
 You can use Rackspace Identity Federation to configure your corporate
 security and identity systems to enable your employees to use their
@@ -90,19 +97,19 @@ Okta](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/c
  You can configure your Identity Provider with Rackspace in the MyRackspace
  portal.
 
-**Note**: You can also create a new Identity Provider by using the Rackspace
-Identity Federation API. However, we recommend that you perform this task in
-the MyRackspace portal.
+**Note**: While you can also create a new Identity Provider by using the
+Rackspace Identity Federation API, we recommend that you perform this task
+in the MyRackspace portal.
 
 Use the following steps to configure your Identity Provider with Rackspace:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the subnavigation bar, select **Account > User List**.
-3. Click the **Federation** tab.
+2. In the top navigation bar, select **Account > User Management**.
+3. In the third tier of the top navigation, click **Federation**.
 4. Click **Add Identity Provider**.
-4. In the **Description** field, enter a description for your Identity
+5. In the **Description** field, enter a description for your Identity
    Provider. The description should be unique for this Identity Provider.
-5. In the **Email Domains** section, click **Add Domain**, then enter the
+6. In the **Email Domains** section, click **Add Domain**, then enter the
    email domain that users logging in from your organization will use, such as
    **mycompany.com**. The email domain should be unique for this Identity
    Provider.
@@ -113,11 +120,11 @@ Use the following steps to configure your Identity Provider with Rackspace:
    If your users will log in from multiple email domains using this Identity
    Provider, repeat this step and enter the additional email domains.
 
-6. In the **SAML Metadata** section, click **Choose File**, then browse to the
+7. In the **SAML Metadata** section, click **Choose File**, then browse to the
    XML file that you downloaded from your Identity Provider in the previous
    section.
 
-7. After the XML file is attached, click **Create Identity Provider**.
+8. After the XML file is attached, click **Create Identity Provider**.
 
 ### Default Attribute Mapping Policy
 
@@ -137,9 +144,11 @@ logging in to Rackspace, as shown in the following example:
                     expire: {D}
         version: "RAX-1"
 
-However, you must customize the default Attribute Mapping Policy to use
-specific values before your users log in or are able to use Rackspace products
-and services.
+However, you must customize the default Attribute Mapping Policy
+to use specific values before your users log in or are able
+to use Rackspace products and services.
+
+**Note**: You must replace `roles` with `groups`.
 
 ### Customize the default Attribute Mapping Policy
 
@@ -152,8 +161,8 @@ You can retrieve your default Attribute Mapping Policy from the
 MyRackspace portal by using the following steps:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the subnavigation bar, select **Account > User List**.
-3. Click the **Federation** tab.
+2. In the top navigation bar, select **Account > User Management**.
+3. In the third tier of the top navigation, click **Federation**.
 4. Select the Identity Provider whose mapping policy you want to update.
 5. In the **Attribute Mapping Policy** section, click **Download**.
 
@@ -201,10 +210,10 @@ Your Attribute Mapping Policy must contain the following information:
     <td>SAML Attributes:<br /> email<br /> <code>http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress <br />urn:oid:1.2.840.113549.1.9.1.10.9.2342.19200300100.1.3</code></td>
   </tr>
   <tr>
-    <td>roles</td>
-    <td>The product RBAC (role-based access control) roles that you want to assign to the user.</td>
+    <td>groups</td>
+    <td>The Rackspace Identity user groups that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td>Example:<br /><code>roles:</code><br /> - <code>"nova:admin"</code><br />- <code>"lbaas:observer"</code></td>
+    <td>Identity user groups are self-defined in the MyRackspace portal as having specific Dedicated permissions. For information about how to set up user groups, see <a href="manage-user-permissions-for-dedicated-hosting/">Manage user permissions for Dedicated Hosting</a></td>
   </tr>
   <tr>
     <td>expires</td>
@@ -272,10 +281,10 @@ more customization might be required in some cases.
            #  Username will be set from element named "name" value in your SAML
            email: "{At(http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)}"
            #  Locates the attribute with the above URL as the claim type/name
-           roles:
-           - "nova:observer"
-           - "lbaas:admin"
-           #  Assigns the roles explicitly listed above
+           groups:
+           - "billing"
+           - "dbas"
+           #  Assigns the groups explicitly listed above
            expire: "{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"
            #  Retrieves the NotOnOrAfter value by using the SAML path and XPath
 
@@ -285,77 +294,33 @@ providers](https://developer.rackspace.com/docs/rackspace-federation/config-3p-s
 
 #### Assign Rackspace permissions
 
-This section provides examples of assigning Rackspace permissions.
-
-##### Basic example
-
-All Rackspace permissions for federated users are granted through roles
-that are assigned in the Attribute Mapping Policy.
-
-The following code block shows a basic example of an Attribute Mapping Policy:
+Rackspace Identity Federation for Dedicated Hosting manages access based on
+the groups that are defined in your corporate identity system. The following
+code shows you how to map Identity Provider groups to Rackspace Identity group
+roles:
 
     mapping:
-     version: RAX-1
-     rules:
-     - local:
-        user:
-           domain: '999994919999'
-           email: "{At(http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress)}"
-           expire: "PT12H"
-           name: "{D}"
-           roles:
-            - "admin"
-            - "ticketing:admin"
-
-In this example, the `admin` and `ticketing:admin` roles are explicitly
-assigned to any users who log in by using this Identity Provider and Attribute
-Mapping Policy.
-
-For basic Identity Federation setups, this example might be sufficient.
-
-For detailed information about Rackspace RBAC roles for dedicated accounts,
-use the following steps to access the MyRackspace Customer Portal Permissions
-Guide:
-
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the subnavigation bar, select **Account > Permissions**.
-3. On the Permissions page, click **Permissions Guide** in the top-right
-   corner.
-
-##### Permissions by groups example
-
-For more complex scenarios, especially where access to Rackspace products is
-governed by roles or groups defined in your corporate identity system, the
-Attribute Mapping Policy language offers more flexible control.
-
-The following code block shows a complex example of an Attribute Mapping
-Policy:
-
-    mapping:
-     version: RAX-1
-     rules:
-     - local:
+    version: RAX-1
+    rules:
+    - local:
          user:
             domain: '9999953939'
             email: "{At(urn:oid:1.2.840.113549.1.9.1.1)}"
             expire: "{Pt(/saml2p:Response/saml2:Assertion/saml2:Conditions/@NotOnOrAfter[1])}"
             name: "{D}"
-            roles:
+            groups:
             - "{0}"
        remote:
        - path : |
            (
-               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.admin') then ('billing:admin', 'ticketing:admin','admin') else (),
-               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.billing') then 'billing:admin' else (),
-               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.ticketing') then 'ticketing:admin' else ()
+               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.admin') then ('admin_group') else (),
+               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.billing') then 'billing_admin_group' else (),
+               if (mapping:get-attributes('http://schemas.xmlsoap.org/claims/Group')='mycompany.rackspace.ticketing') then 'ticketing_admin_group' else ()
            )
          multiValue: true
 
 This example uses the substitution and piping features of the Attribute
-Mapping Policy in conjunction with XPath to observe the SAML `groups` value,
-and also to assign values to the local `role` value based on any matching
-scenarios. (The `{0}` indicator under `roles` causes the resultant value or
-values of the first `remote` rule to be substituted in its place.)
+Mapping Policy in conjunction with XPath to observe the SAML `groups` value.
 
 For more examples and a complete guide to the Attribute Mapping Policy
 language, see the [Attribute Mapping Policy reference
@@ -380,8 +345,8 @@ You can update the policy in the MyRackspace portal by using the following
 steps:
 
 1. Log in to the [MyRackspace portal](https://login.rackspace.com).
-2. In the subnavigation bar, select **Account > User List**.
-3. Click the **Federation** tab.
+2. In the top navigation bar, select **Account > User Management**.
+3. In the third tier of the top navigation, click **Federation**.
 4. Select the Identity Provider whose mapping policy you want to update.
 5. In the **Attribute Mapping Policy** section, click **Update Policy**,
    browse to the file that you downloaded and customized, and then click
@@ -390,3 +355,5 @@ steps:
 If you're using the API, you can also update the policy
 by using the [Update IDP mapping
 policy](https://developer.rackspace.com/docs/cloud-identity/v2/api-reference/identity-provider-operations/#update-idp-mapping-policy) endpoint.
+
+**Note**: If you need access to the API, contact your Account Manager.
