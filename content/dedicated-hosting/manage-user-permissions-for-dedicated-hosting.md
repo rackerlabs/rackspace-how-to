@@ -18,14 +18,11 @@ You manage permissions in the [MyRackspace
 portal](https://login.rackspace.com) under **Account > Permissions**.
 
 **Note**: To access the **Permissions** area in the MyRackspace portal and
-modify another user’s permissions, you must have one of the following
-permissions:
-
-  - **Account Administrator**: This permission grants a user unlimited access
-    to all sections of the MyRackspace portal.
-
-  - **Admin**: This permission (on a device or service) grants a user the
-    ability to access and manage the device or service.
+modify another user’s permissions, you must have either the **Account
+Administrator** permission or the **Admin** permission. The **Account
+Administrator** permission grants the user unlimited access to all sections of
+the MyRackspace portal. The **Admin** permission (on a device or service)
+grants the user the ability to access and manage the device or service.
 
 ### Categories of permissions
 
