@@ -1,11 +1,11 @@
 ---
 permalink: nslookup-checking-dns-records-on-windows/
-audit_date: '2016-10-05'
+audit_date: '2018-10-08'
 title: Check DNS records on Windows with nslookup
 type: article
 created_date: '2012-06-27'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
+last_modified_date: '2019-01-08'
 last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
@@ -195,3 +195,32 @@ This response shows that the name server that the client computer uses will
 reuse the same `A` record for **rackspace.co.uk** for the next 4 minutes and 39
 seconds. If you run the same command on the authoritative name server, you
 see the current maximum TTL for the record.
+
+<script type="application/ld+json">
+	  {
+	  "@context": "http://schema.org/",
+	  "@type": "HowTo",
+	      "name":"Check DNS records on Windows with nslookup",
+	  	  "description": "This article describes how to check the status of your Domain Name System (DNS) records from the command line on Windows by using nslookup.",
+	  	  "step": [
+	  	   	{
+	  	   	"@type": "HowToSection",
+	  	   	"name": "Check a DNS record",
+	  	       "position": "1",
+	           "itemListElement": [
+	             {
+	                  "@type": "HowToStep",
+	                  "position": "1",
+	                  "text": "Open a command prompt window by selecting Start > All Programs > Accessories > Command Prompt."
+	             },{
+	                  "@type": "HowToStep",
+	                  "position": "2",
+	                  "text": "To check a specific DNS record, you need to specify the nslookup command, an optional record type (for example, A, MX, or TXT), and the host name that you want to check."
+										}]
+		 	   	},{
+		 	   	"@type": "HowToSection",
+		 	   	"name": "Get an authoritative answer",
+		 	       "position": "2",
+		 	   		 "itemListElement": "Use the -type=soa option to tell nslookup to display the authoritative name server."
+		 	   }]}
+</script>

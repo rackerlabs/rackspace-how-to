@@ -262,7 +262,7 @@ handy if you need to check the fingerprint again. It's a little
 inconvenience at the outset in return for a pretty comforting security
 check you can run through easily when you connect from a new machine.
 
-Next we are going to look at the the [basics of security in a Linux system](/how-to/basic-cloud-server-security),
+Next we are going to look at the [basics of security in a Linux system](/how-to/basic-cloud-server-security),
 adding to what we learned about SSH connections and host keys.
 
 **Next section:** [Basics of security in a Linux system](/how-to/basic-cloud-server-security)

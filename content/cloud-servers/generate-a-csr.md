@@ -5,8 +5,8 @@ title: Generate a certificate signing request
 type: article
 created_date: '2018-10-23'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-10-23'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-21'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -216,3 +216,38 @@ If you are a Managed or Dedicated customer, you can request a CSR through the My
 ### Reference
 
 - <https://www.digicert.com/csr-ssl-installation/iis-8-and-8.5.htm>
+
+
+<script type="application/ld+json">
+   {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   "name":"Generate a certificate signing request",
+   "description": "This article explains how to generate a certificate signing request for a variety of operating systems.",
+   "step": [
+   	{
+   	"@type": "HowToSection",
+   	"name": "Use OpenSSL to generate a CSR for a single host name",
+       "position": "1",
+   	"itemListElement": "You can use OpenSSL to generate a CSR"
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Check whether OpenSSL is installed and, if it isn't, install it",
+       "position": "2",
+   	"itemListElement": [
+   		{
+           "@type": "HowToStep",
+           "position": "1",
+   		"text": "Check whether OpenSSL is installed on CentOS by using the following command: rpm -qa | grep -i openssl"
+   		},{
+           "@type": "HowToStep",
+           "position": "2",
+           "text": "If the expected packages are not returned, install OpenSSL by running the following command: yum install openssl openssl-devel"
+   		}]
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Generate an RSA key",
+       "position": "3",
+   	"itemListElement": "Run the following commands to create a directory in which to store your RSA key, substituting a directory name of your choice: "
+   }]}
+</script>

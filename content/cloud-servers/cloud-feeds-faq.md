@@ -45,7 +45,7 @@ events, that you can receive for various Rackspace Cloud services.
 | Cloud Databases                | /dbaas/events      | Database Memory and Disk Usage                      |
 | Cloud DNS                      | /dns/events        | Domain Create and Delete Events                     |
 | Cloud Files                    | /files/events      | Bandwidth Usage, Storage Usage                      |
-| Cloud Identity                 | /identity/events   | User Status Events                                  |
+| Rackspace Identity             | /identity/events   | User Status Events                                  |
 | Cloud Load Balancers           | /lbaas/events      | Load Balancer, Usage System, Status Events          |
 | Cloud Monitoring               | /monitoring/events | Monitoring Usage                                    |
 | Cloud Queues                   | /queues/events     | Bandwidth Usage, System Usage                       |

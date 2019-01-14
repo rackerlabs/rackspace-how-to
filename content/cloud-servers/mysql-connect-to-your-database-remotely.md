@@ -5,8 +5,8 @@ title: Connect to a MySQL database remotely
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-04'
-last_modified_by: Kate Dougherty
+last_modified_date: '2018-12-19'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -92,3 +92,38 @@ When you set up a remote user, consider the following information:
  - If you're using iptables, you need to add an entry to your firewall rule
    for Transmission Control Protocol (TCP) port 3306. You can use the name
    `mysql` for the port number.
+
+
+<script type="application/ld+json">
+   {
+   "@context": "http://schema.org/",
+   "@type": "HowTo",
+   "name":"Connect to a MySQL database remotely",
+   "description": "This article explains how to set up a user on your MySQL® server in order to connect to a MySQL database remotely. In order to perform these steps, you must have local server access to log in as the root MySQL user.",
+   "step": [
+   	{
+   	"@type": "HowToSection",
+   	"name": "Retrieve your IP address",
+       "position": "1",
+   	"itemListElement": "You need to know the Internet Protocol (IP) address of the computer from which you’re connecting."
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Grant access",
+       "position": "2",
+   	"itemListElement": [
+   		{
+           "@type": "HowToStep",
+           "position": "1",
+   		"text": "Log in to your MySQL server locally as the root user"
+   		},{
+           "@type": "HowToStep",
+           "position": "2",
+           "text": "Use a GRANT command to enable access for the remote user."
+   		}]
+   	},{
+   	"@type": "HowToSection",
+   	"name": "Test the connection remotely",
+       "position": "3",
+   	"itemListElement": "To test the connection remotely, access the MySQL server from another Linux® server."
+   }]}
+</script>

@@ -5,8 +5,8 @@ title: Check listening ports with netstat
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2018-12-17'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-21'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -73,7 +73,34 @@ longer listens on the port. When `netstat` shows the port is free, enable the co
 
 If you make any changes because the incorrect service is listening, run the `netstat` command again. If `netstat` doesn't show the program listening on the correct port, you need to address its configuration before you go any further.
 
-If you make changes at this point, be sure to test your setup to verify that you
-have resolved your issue.
+If you make changes at this point, be sure to test your setup to verify that you have resolved your issue.
 
 If using the `netstat` did not resolve your port issues, continue to test connections to the service by using [the netcat command.](/how-to/testing-network-services-with-netcat)
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org/",
+  "@type": "HowTo",
+      "name":"Check listening ports with netstat",
+  	  "description": "This article describes how to ensure that a server that you are troubleshooting is listening on the correct network port by using netstat.",
+  	  "step": [
+  	   	{
+  	   	"@type": "HowToSection",
+  	   	"name": "Check ports",
+  	       "position": "1",
+           "itemListElement": "To list the TCP ports that are being listened on and the name of each listener’s daemon and its PID, run the netstat command."
+        },
+        {
+  	   	"@type": "HowToSection",
+  	   	"name": "Filter the list",
+  	       "position": "2",
+    	   	 "itemListElement": "If the list of listening daemons is long, you can use grep to filter it."
+         },
+         {
+   	   	 "@type": "HowToSection",
+   	   	 "name": "Analyze the results",
+   	        "position": "2",
+     	   	  "itemListElement": "Your next steps depend on the results. There are several common outcomes."
+         }
+    ]}
+</script>

@@ -7,8 +7,6 @@ created_date: '2013-07-03'
 created_by: Mawutor Amesawu
 last_modified_date: '2016-01-28'
 last_modified_by: Rose Coste
-product: Microsoft Exchange
-product_url: exchange
 ---
 
 ActiveSync devices are unique, based on device and provider. You will

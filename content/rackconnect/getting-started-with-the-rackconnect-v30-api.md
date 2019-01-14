@@ -40,7 +40,7 @@ addresses from them at any time.
 cURL is installed by default on many Linux distributions. If it is not
 already installed on your computer, you can download and install it; versions are available for most operating systems.
 
-### Obtain an authentication token through Cloud Identity
+### Obtain an authentication token through Rackspace Identity
 
 The first step is to obtain a valid authentication token ID for
 your RackConnect v3.0-enabled cloud account from the Rackspace Cloud
@@ -51,7 +51,7 @@ against your RackConnect v3.0 environment.
 
 Your authentication token ID is sent within an `X-Auth-Token` header in
 your API calls. Details about obtaining your authentication token ID are
-located in the [Quickstart Guide](https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/#document-quickstart-guide) section of the Cloud Identity API 2.0 documentation.
+located in the [Quickstart Guide](https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/#document-quickstart-guide) section of the Rackspace Identity API 2.0 documentation.
 
 You can use either one of the following combinations of credentials to
 obtain your authentication token ID:
@@ -66,7 +66,7 @@ is ExampleCloudAccountUserName, replace the ``<yourUsername>``
 placeholder in the requests with ``"ExampleCloudAccountUserName"`` (be sure
 to retain the quotation marks).
 
-#### Cloud Identity service request for an auth token ID using your cloud account's API key
+#### Rackspace Identity service request for an auth token ID using your cloud account's API key
 
     $ curl \
     --request POST \
@@ -75,7 +75,7 @@ to retain the quotation marks).
     https://identity.api.rackspacecloud.com/v2.0/tokens \
     | python -m json.tool
 
-#### Cloud Identity service request for an authentication token ID using your cloud account's password
+#### Rackspace Identity service request for an authentication token ID using your cloud account's password
 
     $ curl \
     --request POST \
@@ -95,7 +95,7 @@ Note the following important points about the preceding API requests:
     requires that Python be installed on the system from which you are
     making the API calls. If you do not have Python installed, you can
     safely remove the final line.
--   The examples use the Cloud Identity API US endpoint of
+-   The examples use the Rackspace Identity API US endpoint of
     ``https://identity.api.rackspacecloud.com/v2.0/``, but if your
     RackConnect v3.0 environment and cloud account are located in the
     LON region, you should use the UK endpoint
@@ -109,7 +109,7 @@ of 32 alphanumeric characters, and the tenant ID consists of a series
 of numeric values. You need these values when you make RackConnect v3.0
 API calls.
 
-#### Example JSON response to a Cloud Identity service request
+#### Example JSON response to a Rackspace Identity service request
 
     { "access":
     ...

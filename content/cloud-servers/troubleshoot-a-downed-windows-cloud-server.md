@@ -63,7 +63,7 @@ Use the following steps the check the downed server's console:
   - If you see a response, the server is responsive. Skip to the **Ping/Nmap IP Address** section.
 
   - If the console is not responding or displays errors such as being out of
-    system resources, go the the **Attempt Reboot** section.
+    system resources, go to the **Attempt Reboot** section.
 
 
 ### Attempt Reboot

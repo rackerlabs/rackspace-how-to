@@ -130,7 +130,7 @@ loader can no longer find the boot disk. This is what causes the server crash.
 
         bcdedit /store d:\boot\bcd /set {ntldr} device partition=c:
 
-5. Run the following command again to verify the the output:
+5. Run the following command again to verify the output:
 
         bcdedit /store d:\boot\bcd
 

@@ -25,7 +25,7 @@ Use the following steps to create a new HA instance group:
 
 2.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-3.  From the the **Databases** menu, select **MySQL Instance** under **CREATE
+3.  From the **Databases** menu, select **MySQL Instance** under **CREATE
     RESOURCES**.
 
 4.  In the **Identity** section, provide a name for the instance and specify

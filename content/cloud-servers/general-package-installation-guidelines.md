@@ -1,77 +1,78 @@
 ---
 permalink: general-package-installation-guidelines/
-audit_date:
-title: General Package Installation Guidelines
+audit_date: '2018-12-26'
+title: General package installation guidelines
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-06-23'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2018-12-28'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Throughout Rackspace How-To, we present many articles detailing how
-to install and configure various Linux software packages and utilities.
-By taking a closer look at the articles across multiple Linux
-distributions, you might notice something interesting -- the procedure
-for installing a package is very similar even between different distros.
-For this reason, we will not always provide separate instructions for
-each distribution. The purpose of this article is to aid you in making
-the adaptations needed to apply a given set of instructions to your
-Cloud Server.
+This article shows you how to use package managers to make adaptations
+to your Linux&reg; cloud server. The procedure for installing packages
+is similar across Linux distributions.
 
 ### Package managers and repositories
 
-Package management is an important concept for a novice Linux user to
-understand. Unlike Windows-based operating systems, in which software
+Unlike Windows&reg;-based operating systems in which software
 packages come with their own installers, most Linux distributions
-include a centralized **package manager**. This means that nearly every
-package on the system can be installed using the same tools!
+include a centralized **package manager**. A centralized package manager
+enables you to install nearly every package on the system by using
+the same tool.
 
-In addition to a centralized method of installing packages on a given
-system, Linux package management also features centralized software
-sources known as **repositories**. Typically, when a command such as
-`yum install iptables` is run, the package manager (in this case, `Yum`)
-will download the relevant packages (in this case, `iptables`) from its
-repositories and install them on the system.
+#### Repositories
 
-Every distribution offered by Cloud Servers comes with its own package
-manager. We've included basic summaries of each of these; however, Linux
-novices would do well to become familiar with the details by reading the
-relevant documentation.
+In addition to centralized package installation, Linux also
+offers centralized sources of software called **repositories**.
 
-#### APT/Dpkg (Debian, Ubuntu)
+When you run a command such as `yum install iptables`, the package manager
+(in this case, `Yum`) downloads the relevant package (`iptables`) from its own
+repositories and installs it on the system.
 
--   Install package:
+We recommend that you read the relevant documentation to learn more
+about each of these package managers.
+
+### Linux package managers
+
+Every distribution that Cloud Servers offers comes with its own package
+manager. The following sections describe common package managers and provide
+example commands for different distributions.
+
+**Warning**: Avoid performing an in-place upgrade of any of the following
+package management systems or of all installed packages between versions on
+Rackspace Cloud Servers. This operation can break the configurations that
+enable Rackspace Cloud Servers to communicate with the hypervisors.
+
+#### APT (Debian and Ubuntu)
+
+Advanced Package Tool (APT) is a command-line tool for interacting with dpkg,
+the packaging system used by Debian&trade;. Use the following commands to
+manage packages by using APT:
+
+-   Install a package:
 
         aptitude install PACKAGENAME
 
--   Reinstall package:
+-   Reinstall a package:
 
         aptitude reinstall PACKAGENAME
 
--   Remove package (keep config files):
+-   Remove a package (while keeping its configuration files):
 
         aptitude remove PACKAGENAME
 
--   Remove package and purge config files:
+-   Remove a package and purge its configuration files:
 
         aptitude remove --purge PACKAGENAME
 
--   Update package list:
+-   Update the package list:
 
         aptitude update
 
--   Upgrade system (security/bug fixes):
-
-        aptitude upgrade
-
--   Upgrade system to newest release (**dangerous!**):
-
-        aptitude dist-upgrade
-
--   Show info on an installed package:
+-   Show information about an installed package:
 
         aptitude show PACKAGENAME
 
@@ -79,21 +80,70 @@ relevant documentation.
 
         aptitude search SEARCHSTRING
 
-For more information on APT-based package management, please see the
-[Debian GNU/Linux FAQ](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html "http://www.debian.org/doc/FAQ/ch-pkgtools.en.html")
-and the [APT HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.debian.org/doc/manuals/apt-howto/").
+For more information about APT-based package management, see the following
+resources:
 
-#### Yum/RPM (CentOS, Fedora, Red Hat)
+- [Ubuntu&reg; documentation:
+  dpkg](https://help.ubuntu.com/lts/serverguide/dpkg.html.en)
 
--   Install package:
+- [Debian GNU/Linux
+  FAQ: Chapter 8, The Debian package management
+  tools](http://www.debian.org/doc/FAQ/ch-pkgtools.en.html)
+
+- [APT
+  HOWTO](http://www.debian.org/doc/manuals/apt-howto/)
+
+#### apt-get (Debian and Ubuntu)
+
+Apt-get is a popular alternative to APT that you can use to manage packages on
+Debian and Ubuntu.
+
+Use the following commands to manage packages by using apt-get:
+
+-   Install a package:
+
+        apt-get install PACKAGENAME
+
+-   Reinstall a package:
+
+        apt-get reinstall PACKAGENAME
+
+-   Remove a package (while keeping its configuration files):
+
+        apt-get remove PACKAGENAME
+
+-   Remove a package and purge its configuration files:
+
+        apt-get remove --purge PACKAGENAME
+
+-   Update the package list:
+
+        sudo apt-get update
+
+-   Search for a specific package:
+
+        apt-cache search KEYWORD
+
+#### Yum and RPM Package Manager (RPM) (CentOS, Fedora, and Red Hat)
+
+Yum handles automatic updates and package installation and removal for RPM
+Package Manager (RPM) systems.
+
+On CentOS&reg;, Fedora&trade;, and Red Hat&reg;, use the following commands
+with the Yum package manager:
+
+-   Install a package:
 
         yum install PACKAGENAME
 
--   Remove package:
+-   Remove a package:
 
         yum remove PACKAGENAME
 
--   Update package:
+    **Note**: This command might not remove all configuration files and
+    dependencies.
+
+-   Update a package:
 
         yum update PACKAGENAME
 
@@ -101,15 +151,7 @@ and the [APT HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.deb
 
         yum list updates
 
--   Update system:
-
-        yum update
-
--   Upgrade system to newest release (**dangerous!**):
-
-        yum upgrade
-
--   Show package:
+-   Show a package:
 
         yum list PACKAGENAME
 
@@ -121,49 +163,54 @@ and the [APT HOWTO](http://www.debian.org/doc/manuals/apt-howto/ "http://www.deb
 
         yum grouplist
 
--   Install package group:
+-   Install a package group:
 
         yum groupinstall 'GROUP NAME'
 
--   Update package group:
-
-        yum groupupdate 'GROUP NAME'
-
--   Remove package group:
+-   Remove a package group:
 
         yum groupremove 'GROUP NAME'
 
-For more information on RPM-based package management, please see the
-[Linux Home Server HOWTO](http://www.brennan.id.au/07-Package_Management.html "http://www.brennan.id.au/07-Package_Management.html")
-and [Maximum RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/").
+For more information about Yum and RPM-based package management, see the following resources:
+
+- [Red Hat Enterprise Linux 7 System Administrator's Guide:
+  Yum](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-yum)
+
+- [Maximum RPM](http://www.rpm.org/max-rpm/)
+
+- [Fedora Draft Documentation: RPM
+  Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/index.html)
+
+- [Yum Command Cheat
+  Sheet](https://access.redhat.com/sites/default/files/attachments/rh_yum_cheatsheet_1214_jcs_print-1.pdf)
 
 #### Pacman (Arch)
 
--   Install package:
+Pacman is the package management tool for the Arch Linux&trade; distribution.
+Use the following commands with Pacman:
+
+-   Install a package:
 
         pacman -S PACKAGENAME
 
--   Remove package:
+-   Remove a package (while keeping its configuration files):
 
         pacman -R PACKAGENAME
 
--   Remove package, config files, and unneeded dependencies:
+-   Remove a package and purge its configuration files and unneeded
+    dependencies:
 
         pacman -Rsn PACKAGENAME
 
--   Update package list:
+-   Update the package list:
 
         pacman -Sy
 
--   Update system (**dangerous!**):
-
-        pacman -Syu
-
--   Show info on an installed package:
+-   Show information about an installed package:
 
         pacman -Qi PACKAGENAME
 
--   Show info on a repository package:
+-   Show information about a repository package:
 
         pacman -Si PACKAGENAME
 
@@ -171,20 +218,20 @@ and [Maximum RPM](http://www.rpm.org/max-rpm/ "http://www.rpm.org/max-rpm/").
 
         pacman -Ss SEARCHSTRING
 
-For more information on Pacman, please see the
-[ArchWiki](http://wiki.archlinux.org/index.php/Pacman "http://wiki.archlinux.org/index.php/Pacman").
+For more information about Pacman, see the
+[ArchWiki](http://wiki.archlinux.org/index.php/Pacman).
 
-#### Emerge/Portage (Gentoo)
+#### Emerge and Portage (Gentoo)
 
--   Install package:
+Portage is the package manager for the Gentoo&trade; system. Emerge is the
+command structure that you use to run Portage. Use the following commands with
+Emerge on Gentoo:
+
+-   Install a package:
 
         emerge PACKAGENAME
 
--   Remove package:
-
-        emerge --unmerge PACKAGENAME
-
--   Update package list:
+-   Update the package list:
 
         emerge --sync
 
@@ -192,51 +239,73 @@ For more information on Pacman, please see the
 
         emerge --update world
 
--   Update all packages (**dangerous!**):
-
-        emerge --update --deep world
-
--   Search package repositories (names):
+-   Search package repositories (package names only):
 
         emerge --search SEARCHSTRING
 
--   Search package repositories (names and descriptions):
+-   Search package repositories (package names and descriptions):
 
         emerge --searchdesc SEARCHSTRING
 
-For more information on Portage and ebuilds, please see the [Gentoo Linux Documentation](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1).
+-   Remove a package:
 
-### But what if the software I'm looking for isn't in the repositories?
+        emerge --depclean --ask --verbose <packagename>
 
-There may come occasions when the software you're looking for simply
-isn't in your package manager's main repositories. There may be many
-reasons for this; usually, the software isn't considered well-known
-enough to be included. The best way to locate a single package like this
-is to search the Internet! The package's website is a good place to
-start. [Rpmfind](http://rpmfind.net "http://rpmfind.net") is another
-good source for RPM packages. Once you've located and downloaded the
-package, you can still use your distro's package manager to install it.
+    This command checks if the package that you want to remove is a dependency
+    of another package before it performs the removal. If the package is not a
+    dependency, it asks you to confirm that you want remove the package. There
+    is typically a five-second delay during which you can back out of removing
+    the package. The delay is 10 seconds for packages that are important to
+    the system. If the package that you want to remove is used by another
+    package, then the command does not remove the package.
 
-### Installing from source
+    Alternatively, you can use the shorter version of this command:
 
-In some situations, you may have no choice but to compile and install a
-package manually. Maybe you need special customizations that weren't
-enabled by default, or maybe the software you want to install simply
-doesn't have a pre-compiled version. Either way, it is impossible to
-provide step-by-step instructions for all of these scenarios -- your
-best bet in this case is to go directly to the software documentation.
-However, you will almost certainly need a C/C++ compiler and make
-utility. These can be installed by running the following commands:
+        emerge -cav <packagename>
 
--  On Debian:
+    After the package is removed, run the following command, but omit the
+    package name:
 
-    apt-get install build-essential
+        emerge --depclean --ask --verbose (or emerge -cav)
 
--  On CentOS:
+    This command searches for deprecated dependencies that are no longer used
+    by any package. It therefore removes the dependencies from the package
+    that you just removed.
 
-    yum groupinstall "Development Tools"
+For more information about Emerge and Portage, see the [Gentoo X86
+Handbook](http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&chap=1).
 
-This will install the utilities you would need to install most common
-packages directly from source. Once this is done, you will be able to
-follow the package's instructions and tailor the compilation to your
-needs. Good luck!
+### What if the software I'm looking for isn't in my package manager's repositories?
+
+If you can't find the software you're looking for in your package manager's
+main repositories, the software might not be well-known enough to be included.
+If this occurs, you can try to locate the package by searching the Internet.
+
+[Rpmfind](http://rpmfind.net "http://rpmfind.net") is another
+good source for RPM packages. After you have located and downloaded the
+package, you can still use your distribution's package manager to install it.
+
+### Install from source
+
+In some situations, you might have to manually compile and install a
+package. This might occur when you need special customizations that
+weren't enabled by default, or when the software that you want to
+install doesn't have a pre-compiled version.
+
+If you need to manually compile and install a package, we recommend that
+you go directly to the software documentation for instructions. You almost
+certainly need a C/C++ compiler and make utility to perform this
+task. You can install these tools by running the following commands:
+
+-   On Debian:
+
+        apt-get install build-essential
+
+-   On CentOS:
+
+        yum groupinstall "Development Tools"
+
+These commands install the utilities that you need to install most common
+packages directly from the source. After you install them, you are able to
+follow the package's instructions and tailor the compilation to align with
+your needs.

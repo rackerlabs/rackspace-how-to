@@ -274,7 +274,7 @@ domain.com and domain.net point to the same content.
     ServerName domain.com
     ServerAlias www.domain.com
 
-**Note**: This is not a rewrite rule, but the the domains defined here
+**Note**: This is not a rewrite rule, but the domains defined here
 will serve the same content (assuming you have set the DNS to point to
 your Cloud Server IP).
 

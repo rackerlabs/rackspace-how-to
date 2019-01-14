@@ -37,7 +37,7 @@ To configure your hosted implementation of Microsoft Skype for Business formerly
 -   \_sip.\_tls.*example.com*
 -   \_sipfederationtls.\_tcp.*example.com*
 
-Because of the nature of our hosted environment, the domain listed for the the CNAME records will contain specific Skype for Business DNS records. Use our help tool for the specific DNS records for your domain. 
+Because of the nature of our hosted environment, the domain listed for the CNAME records will contain specific Skype for Business DNS records. Use our help tool for the specific DNS records for your domain. 
 
 After you log in with a mailbox that is enabled for Skype for Business, you can find the DNS settings through the [Help Tool](https://emailhelp.rackspace.com/) as shown in the following image.
 

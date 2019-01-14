@@ -74,5 +74,4 @@ You can call the following numbers for legacy Datapipe support:
 ### Additional support resources
 
 - [How-To articles](/how-to/)
-- [Rackspace Community Forum](https://community.rackspace.com/)
 - [Developer and API documentation](https://developer.rackspace.com/docs/)
