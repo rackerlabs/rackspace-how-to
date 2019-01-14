@@ -5,7 +5,7 @@ title: Manually configure Outlook 2010 for email hosted on Exchange 2007
 type: article
 created_date: '2011-03-18'
 created_by: Rackspace Support
-last_modified_date: '2016-01-28'
+last_modified_date: '2019-01-14'
 last_modified_by: Rose Coste
 ---
 
