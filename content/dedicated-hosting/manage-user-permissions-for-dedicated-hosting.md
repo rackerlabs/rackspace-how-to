@@ -20,6 +20,7 @@ portal](https://login.rackspace.com) under **Account > Permissions**.
 **Note**: To access the **Permissions** area in the MyRackspace portal and
 modify another user’s permissions, you must have one of the following
 permissions:
+
   - **Account Administrator**: This permission grants a user unlimited access
     to all sections of the MyRackspace portal.
 
