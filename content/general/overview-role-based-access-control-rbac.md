@@ -5,7 +5,7 @@ title: Learn about Role-Based Access Control (RBAC)
 type: article
 created_date: '2013-04-14'
 created_by: Renee Rendon
-last_modified_date: '2018-12-17'
+last_modified_date: '2019-01-14'
 last_modified_by: Kate Dougherty
 product: undefined
 product_url: undefined
@@ -102,7 +102,7 @@ RBAC has the following custom roles:
     product.
 
 -   **Product:creator** - The Product Creator role has permissions to
-    create, read, and update resources for the designated product. The creator
+    create, read, and update resources for the designated product. This
     role cannot delete a resource. All destructive actions are prohibited.
 
 -   **Product:observer** - The Product Observer role has permissions to
@@ -151,7 +151,7 @@ manage users. The Cloud Control Panel offers the following contact types:
     There is one Billing contact per account. You don't need to assign
     a username to the Billing contact.
 
--   **Administrative** - This contact type can be assigned to users who
+-   **Administrative** - This contact type is assigned to users who
     primarily handle administrative duties such as billing
     and payments. Administrative contacts do not receive technical
     alerts from our automated systems. No specific account implications
@@ -159,7 +159,7 @@ manage users. The Cloud Control Panel offers the following contact types:
     their address, the change does not affect the billing address for the
     account.
 
--   **Technical** - This contact type can be assigned to users who
+-   **Technical** - This contact type is assigned to users who
     primarily perform technical tasks. These users receive monitoring
     alerts by default.
 
