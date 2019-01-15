@@ -13,12 +13,12 @@ product_url: cloud-load-balancers
 
 ### Load balancing
 
-#### What is a Cloud Load Balancer?
+#### What is a Rackspace Cloud Load Balancer?
 
 Your business's website, applications, and web-based workloads depend
 on high availability. Rackspace [Cloud Load
 Balancers](http://www.rackspace.com/cloud/load-balancing/) enable you
-to quickly balance the workload of multiple Cloud Servers for optimal
+to quickly balance the workload of multiple Rackspace Cloud Servers for optimal
 traffic management and maximum failover protection. Load balancers
 distribute workloads across two or more servers, network links, or
 other resources to maximize throughput, minimize response time, and
@@ -31,9 +31,9 @@ originating Internet Protocol (IP) address by default. For more information,
 see [the API documentation for creating a Cloud Load
 Balancer](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#creating-a-load-balancer).
 
-#### Do Cloud Load Balancers support SSL Termination?
+#### Do Cloud Load Balancers support SSL termination?
 
-Secure Sockets Layer (SSL) Termination enables you to terminate your secure
+Secure Sockets Layer (SSL) termination enables you to terminate your secure
 traffic at the load balancer with centralized certificate management. This
 service has the following features:
 
@@ -44,14 +44,14 @@ service has the following features:
 
 Both [the
 API](https://developer.rackspace.com/docs/cloud-load-balancers/v1/developer-guide/#document-api-operations/ssl-termination) and the [Cloud Control
-Panel](https://login.rackspace.com/) support SSL Termination on Cloud Load
+Panel](https://login.rackspace.com/) support SSL termination on Cloud Load
 Balancers.
 
-**Note**: SSL Termination should not be used when transferring certain
+**Note**: You should not use SSL termination when you are transferring certain
 types of [Personally Identifiable Information
 (PII)](/how-to/definition-of-personally-identifiable-information-pii).
 
-#### How do I configure SSL Termination by using the Cloud Control Panel?
+#### How do I configure SSL termination by using the Cloud Control Panel?
 
 You can quickly configure SSL termination for an existing Cloud Load
 Balancer by using the following steps:
@@ -82,7 +82,7 @@ To modify imposed API rate limits, contact Rackspace Support.
 
 A single Cloud Load Balancer is connected through a 10 GB per second network
 to both the public network and Rackspace's internal network, which has
-been tested to achieve about 9GB per second of actual throughput. Some
+been tested to achieve about 9 GB per second of actual throughput. Some
 limiting factors might influence the actual throughput at any given
 time.
 
@@ -104,7 +104,7 @@ Portability and Accountability Act of 1996 (HIPAA) and
 Gramm-Leach-Bliley acts, credit card information, or any personal data
 that might result in identity theft if it is disclosed.
 
-#### How do you manage and distribute IPs?
+#### How do you manage and distribute IP addresses?
 
 Each load balancer comes with one public IPv4 address and one public IPv6
 address.
@@ -120,7 +120,7 @@ other customer load balancers are processing.
 
 #### Do Cloud Load Balancers work with dedicated servers?
 
-Yes, but we recommend using RackConnect to include [dedicated
+Yes, but we recommend using RackConnect&reg; to include [dedicated
 servers](http://www.rackspace.com/managed-hosting/dedicated-servers/)
 except in low-traffic scenarios, due to the potential for
 significant bandwidth charges. If you don't use RackConnect, you are billed
@@ -131,10 +131,10 @@ outbound messages from the load balancer to the user.
 #### Can I use Cloud Load Balancers in conjunction with RackConnect?
 
 You can use the
-[RackConnect&reg;](http://www.rackspace.com/cloud/hybrid/rackconnect/)
+[RackConnect](http://www.rackspace.com/cloud/hybrid/rackconnect/)
 Cisco&reg; Adaptive Security Appliance (ASA) solution to connect dedicated
-servers and cloud servers while leveraging Cloud Load Balancers
-to balance the workload between the cloud servers. Charges apply for
+servers and Cloud Servers while leveraging Cloud Load Balancers
+to balance the workload between the Cloud Servers. Charges apply for
 outgoing bandwidth through the dedicated environment, as well as
 inbound and outbound traffic associated with the load balancers.
 
@@ -172,24 +172,24 @@ to your Cloud Files account, standard charges for Cloud Files apply.
 In addition, standard charges apply for additional (unique) virtual IP
 addresses per load balancer.
 
-#### What are the requirements for using SSL Termination?
+#### What are the requirements for using SSL termination?
 
-When you are using SSL Termination on your load balancers, you should
+When you are using SSL termination on your load balancers, you should
 understand the following requirements:
 
--   Additional fees apply when SSL Termination is enabled.
--   SSL Termination is available to Rackspace Cloud Load Balancer
+-   Additional fees apply when SSL termination is enabled.
+-   SSL termination is available to Rackspace Cloud Load Balancer
     customers in the US and UK with a valid SSL certificate or intermediate
     certificate and an associated private key.
--   You cannot enable SSL Termination when a Cloud Load Balancer is
+-   You cannot enable SSL termination when a Cloud Load Balancer is
     provisioned. You must configure it on existing load balancers by
     issuing a command through the API.
 
     To learn how to complete this process by using the API,
-    see [SSL Termination](https://developer.rackspace.com/docs/cloud-load-balancers/v1/api-reference/ssl-termination/).
+    see [SSL termination](https://developer.rackspace.com/docs/cloud-load-balancers/v1/api-reference/ssl-termination/).
 
     To learn how to complete this process by using the Cloud Control Panel,
-    see "How do I configure SSL Termination by using the Cloud Control Panel?"
+    see "How do I configure SSL termination by using the Cloud Control Panel?"
     in this FAQ.
 
 #### What is ServiceNet?
@@ -201,7 +201,7 @@ from the public Internet and are local to each data center.
 **Note**: You can configure your account resources, such as Cloud
 Servers and Cloud Load Balancers, to use a ServiceNet IP address
 instead of the public IP address. Any traffic that occurs between your
-cloud resources on the Rackspace Network does not incur bandwidth
+cloud resources on the Rackspace network does not incur bandwidth
 charges.
 
 If you filter traffic to your servers by using a firewall, the best
@@ -216,15 +216,15 @@ After SSL termination decrypts the data at the Cloud Load Balancer, it
 passes the unencrypted data to any nodes that are configured for that
 device. If you have nodes that are not in the same data center as the
 SSL-enabled load balancer, that unencrypted data is sent over the public
-Internet to those nodes. Therefore we recommend that you use an
+Internet to those nodes. Therefore, we recommend that you use an
 SSL-enabled load balancer *only with nodes that reside in the same data
 center as the load balancer.* The proximity allows the load balancer to
 use the nodes' private IP addresses (the ServiceNet) to limit
 unencrypted traffic to within the data center's network.
 
-#### What are the benefits of using SSL Termination on the Cloud Load Balancer?
+#### What are the benefits of using SSL termination on the Cloud Load Balancer?
 
-With SSL Termination, traffic is decrypted at the Cloud Load
+With SSL termination, traffic is decrypted at the Cloud Load
 Balancer, and unencrypted traffic can be distributed to one or more
 Cloud Servers to be processed.
 
