@@ -13,7 +13,7 @@ product_url: cloud-servers
 You can check the uptime of your Windows&reg; Server&reg; from the command line by running either the `net statistics server` 
 or the `systeminfo` command.
 
-### Use the `net statistics server` command
+### Use the net statistics server command
 
 In addition to uptime, the `net statistics server` command also displays statistics for the system, such as the number of 
 files that are being accessed, systems errors, permission violations, password violations, and the total uptime since the last 
@@ -26,7 +26,7 @@ time the server was restarted. Use the following steps to check server uptime by
    
 3. Look for the line that starts with `Statistics since …`, which indicates the date and time when the uptime started.
 
-### Use the `systeminfo` command
+### Use the systeminfo command
 
 The `systeminfo` command reports the following additional information about the operating system (OS) 
 that is installed on the server:
