@@ -7,8 +7,6 @@ created_date: '2011-12-01'
 created_by: Rackspace Support
 last_modified_date: '2016-05-17'
 last_modified_by: Stephanie Fillmon
-product: Microsoft Exchange
-product_url: exchange
 ---
 
 These instructions describe how to set up Entourage 2008

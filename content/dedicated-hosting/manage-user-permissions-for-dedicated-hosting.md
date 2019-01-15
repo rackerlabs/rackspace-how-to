@@ -5,7 +5,7 @@ title: 'Manage user permissions for Dedicated Hosting'
 type: article
 created_date: '2018-11-28'
 created_by: Kate Dougherty
-last_modified_date: '2019-01-11'
+last_modified_date: '2019-01-14'
 last_modified_by: Kate Dougherty
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -18,14 +18,11 @@ You manage permissions in the [MyRackspace
 portal](https://login.rackspace.com) under **Account > Permissions**.
 
 **Note**: To access the **Permissions** area in the MyRackspace portal and
-modify another user’s permissions, you must have one of the following
-permissions:
-
-  - **Account Administrator**: This permission grants a user unlimited access
-    to all sections of the MyRackspace portal.
-
-  - **Admin**: This permission (on a device or service) grants a user the
-    ability to access and manage the device or service.
+modify another user’s permissions, you must have either the **Account
+Administrator** permission or the **Admin** permission. The **Account
+Administrator** permission grants the user unlimited access to all sections of
+the MyRackspace portal. The **Admin** permission (on a device or service)
+grants the user the ability to access and manage the device or service.
 
 ### Categories of permissions
 
@@ -151,11 +148,11 @@ actions or views:
   </tr>
   <tr>
     <td>Flexible Ticket Viewing (default setting)</td>
-    <td>To enable users to be able to see tickets that include a device that they have permission to view. For example, if a user has access to device A, they see all of the tickets that include device A, even if another device is on the ticket. If device C is later added to the ticket and the user does not have access to device C, the user can still see the ticket.</td>
+    <td>Enables users to see tickets that include a device that they have permission to view. For example, if a user has access to device A, they see all of the tickets that include device A, even if another device is on the ticket. If device C is later added to the ticket and the user does not have access to device C, the user can still see the ticket.</td>
   </tr>
   <tr>
     <td>Strict Ticket Viewing</td>
-    <td>To require users to have access to all of the devices on a ticket in order to see that ticket. For example, if a ticket includes device A and device B, then the user must have permissions to both devices to see the ticket. If device C is later added to the ticket and the user does not have access to device C, the user is no longer be able to see the ticket.</td>
+    <td>Requires users to have access to all of the devices on a ticket in order to see that ticket. For example, if a ticket includes device A and device B, then the user must have permissions to both devices to see the ticket. If device C is later added to the ticket and the user does not have access to device C, the user is no longer be able to see the ticket.</td>
   </tr>
 </table>
 

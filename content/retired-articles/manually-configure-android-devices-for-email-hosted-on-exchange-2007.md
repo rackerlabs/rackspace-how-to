@@ -7,8 +7,6 @@ created_date: '2012-05-25'
 created_by: Rae D. Cabello
 last_modified_date: '2016-05-17'
 last_modified_by: Stephanie Fillmon
-product: Microsoft Exchange
-product_url: exchange
 ---
 
 The following steps are required to configure Microsoft Exchange 2007 on
