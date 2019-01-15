@@ -7,8 +7,6 @@ created_date: '2014-12-12'
 created_by: Theresa Kinney
 last_modified_date: '2016-01-29'
 last_modified_by: Rose Coste
-product: Microsoft Exchange
-product_url: exchange
 ---
 
 ### Manage public folders
