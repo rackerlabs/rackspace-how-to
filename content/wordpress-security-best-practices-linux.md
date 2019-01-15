@@ -48,12 +48,11 @@ Use the following base permissions for your WordPress installation:
 
 These permissions grant the wp-user the ability to modify anything, and the web server read-only access. 
 
-The following examples show how to assign these permissions:
+The following example show hows to assign these permissions:
 
-<code>
-    find /var/www/example.com/ -type d -exec sudo chmod  755 {} \;
-    find /var/www/example.com/ -type f -exec sudo chmod 644 {} \;
-</code>
+```find /var/www/example.com/ -type d -exec sudo chmod  755 {} \;
+   find /var/www/example.com/ -type f -exec sudo chmod 644 {} \;
+```
 
 These permissions grant the wp-user the ability to modify anything, and the web server read-only access. While this is common 
 practice for static sites, there are some files that WordPress must be able to access and execute to function correctly. The 
@@ -81,10 +80,9 @@ FTP is inherently insecure, especially when you are using password-based authent
 
 1. Ensure that the necessary packages are installed on your system. On Ubuntu&reg; or Debian&reg;, run the following commands:
 
-<code>
-       sudo apt-get update
-       sudo apt-get install php5-dev libssh2-php libssh2-1-dev
-</code>
+   ```sudo apt-get update
+      sudo apt-get install php5-dev libssh2-php libssh2-1-dev
+   ```
 
 2. Set up your SSH access, performing the following  steps as 'wp-user'. Because you disallowed login as `wp-user`, you must
    open a shell by using the following sudo command:
