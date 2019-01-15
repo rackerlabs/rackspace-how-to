@@ -79,8 +79,8 @@ FTP is inherently insecure, especially when you are using password-based authent
 
 1. Ensure that the necessary packages are installed on your system. On Ubuntu&reg; or Debian&reg;, run the following commands:
 
-    sudo apt-get update
-    sudo apt-get install php5-dev libssh2-php libssh2-1-dev
+       sudo apt-get update
+       sudo apt-get install php5-dev libssh2-php libssh2-1-dev
 
 2. Set up your SSH access, performing the following  steps as 'wp-user'. Because you disallowed login as `wp-user`, you must
    open a shell by using the following sudo command:
