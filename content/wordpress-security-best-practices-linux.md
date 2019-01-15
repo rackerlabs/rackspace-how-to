@@ -10,7 +10,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-WordPress is a great content management system (CMS), especially if you're new to blogging or coding. However, due to the high number of WordPress installations, Wordpress has become a target for attackers. The good news is that there are many steps that you can take to make your WordPress installation more secure.
+WordPress is a great content management system (CMS), especially if you're new to blogging or coding. However, due to the high 
+number of WordPress installations, Wordpress has become a target for attackers. The good news is that there are many steps 
+that you can take to make your WordPress installation more secure.
 
 ### Linux users and permissions
 
@@ -28,7 +30,10 @@ Use the following command to create this user:
 
 ### Set permissions
 
-The best practice for permissions is for a user other than the web service's system user to own the document root of your site, and to deny write permissions to the web service. The web service needs only read permission to serve content, and assigning write or execute permission to it leaves an attack vector for outsiders. Unfortunately, because WordPress needs the ability to upload files and update its own code, you need to bend these rules slightly. 
+The best practice for permissions is for a user other than the web service's system user to own the document root of your 
+site, and to deny write permissions to the web service. The web service needs only read permission to serve content, and 
+assigning write or execute permission to it leaves an attack vector for outsiders. Unfortunately, because WordPress needs 
+the ability to upload files and update its own code, you need to bend these rules slightly. 
 
 For example, ownership for the entire directory should be `wp-user:www-data`.
 
