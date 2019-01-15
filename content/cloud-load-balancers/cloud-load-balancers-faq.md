@@ -69,10 +69,10 @@ Balancer by using the following steps:
 8. Paste your private key (**.key**) in the **Private Key** field.
 9. Click **Save SSL Configuration**.
 
-**Note**: If you see "service unavailable" when you test your web site in your
-browser, or health monitoring on the load balancer is removing your web server
-node, ensure that your firewall allows port 80 connections. Also verify that
-your virtual host is configured to listen on port 80.
+**Note**: If you see the message `service unavailable` when you test your web
+site in your browser, or health monitoring on the load balancer is removing
+your web server node, ensure that your firewall allows port 80 connections.
+Also verify that your virtual host is configured to listen on port 80.
 
 #### How can I raise my API rate limits for Cloud Load Balancers?
 
