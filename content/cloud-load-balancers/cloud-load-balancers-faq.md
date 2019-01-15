@@ -63,7 +63,16 @@ Balancer by using the following steps:
 5. Scroll to the **Optional Features** section.
 6. Click the pencil icon to the right of the **Secure Traffic (SSL)**
    field.
-7. In the pop-up dialog box, enter and save your SSL configuration.
+7. In the pop-up dialog box, paste your certificate (**.crt**) file from your
+   SSL vendor (or your own self-signed certificate) in the **Certificate**
+   field.
+8. Paste your private key (**.key**) in the **Private Key** field.
+9. Click **Save SSL Configuration**.
+
+**Note**: If you see "service unavailable" when you test your web site in your
+browser, or health monitoring on the load balancer is removing your web server
+node, ensure that your firewall allows port 80 connections. Also verify that
+your virtual host is configured to listen on port 80.
 
 #### How can I raise my API rate limits for Cloud Load Balancers?
 
@@ -181,8 +190,7 @@ understand the following requirements:
 
     To learn how to complete this process by using the Cloud Control Panel,
     see "How do I configure SSL Termination by using the Cloud Control Panel?"
-    in the [Cloud Load Balancers
-    FAQ](https://support.rackspace.com/how-to/cloud-load-balancers-faq/).
+    in this FAQ.
 
 #### What is ServiceNet?
 
