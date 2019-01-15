@@ -10,9 +10,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-WordPress&reg; is a great content management system (CMS), especially if you're new to blogging or coding. However, due to the 
-high number of WordPress installations, Wordpress has become a target for attackers. The good news is that there are many 
-steps that you can take to make your WordPress installation more secure.
+WordPress&reg; is a great content management system (CMS), especially if you're new to blogging or coding. However, 
+due to the  high number of WordPress installations, Wordpress has become a target for attackers. The good news is 
+that there are many steps that you can take to make your WordPress installation more secure.
 
 ### Linux users and permissions
 
