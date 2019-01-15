@@ -1,6 +1,6 @@
 ---
 permalink: wordpress-security-best-practices-linux/
-audit_date: '2019-01-15'
+audit_date: '2019-01-14'
 title: Wordpress security best practices on Linux
 created_date: '2019-01-15'
 created_by: Shaun Crumpler
