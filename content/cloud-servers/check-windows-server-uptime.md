@@ -28,8 +28,8 @@ time the server was restarted. Use the following steps to check server uptime by
 
 ### Use the `systeminfo` command
 
-The `systeminfo` command reports the following additional information about the operating system (OS) that is installed 
-on the server:
+The `systeminfo` command reports the following additional information about the operating system (OS) 
+that is installed on the server:
 
 - `Host Name`
 - `OS Name`
