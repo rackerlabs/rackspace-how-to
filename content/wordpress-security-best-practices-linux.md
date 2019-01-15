@@ -36,63 +36,74 @@ This setting means that `wp-user` has user ownership, and `www-data` (the system
 
 sudo chown -R wp-user:www-data /var/www/example.com/
 
-The base permissions for your WordPress installation should be similar to the following examples:
+Use the following base permissions for your WordPress installation:
 
 755 (drwxr-xr-x) for folders
 644 (-rw-r--r--) for files
 
-This means that the wp-user is able to modify anything, but the web server has read-only access. To accomplsh this you can run this, with the assumption that the document root for your site is /var/www/example.com/:
+These permissions grant the wp-user the ability to modify anything, and the web server read-only access. 
+
+The following example shows how to assign these permissions, using the example value of `/var/www/example.com/` as the 
+document root of the site:
 
 find /var/www/example.com/ -type d -exec sudo chmod  755 {} \;
 find /var/www/example.com/ -type f -exec sudo chmod 644 {} \;
 
-This means that the wp-user will be able to modify anything, but the web server has read-only access. This is common practice for static sites, but as we discussed, there are some files wordpress will need to be able to access and execute in order to function correctly. These are the exceptions, assuming the same document root:
+These permissions grant the wp-user the ability to modify anything, and the web server read-only access. While this is common practice for static sites, there are some files that WordPress must be able to access and execute to function correctly. The following list shows the exceptions and the permissions that you need to set, assuming the same document root:
 
-find /var/www/example.com/wp-content/uploads -type d -exec sudo chmod 775 {} \;
-find /var/www/example.com/wp-content/upgrade -type d -exec sudo chmod 775 {} \;
-find /var/www/example.com/wp-content/themes -type d -exec sudo chmod 775 {} \;
-find /var/www/example.com/wp-content/plugins -type d -exec sudo chmod 775 {} \;
+- `find /var/www/example.com/wp-content/uploads -type d -exec sudo chmod 775 {} \;`
+- `find /var/www/example.com/wp-content/upgrade -type d -exec sudo chmod 775 {} \;`
+- `find /var/www/example.com/wp-content/themes -type d -exec sudo chmod 775 {} \;`
+- `find /var/www/example.com/wp-content/plugins -type d -exec sudo chmod 775 {} \;`
+- `find /var/www/example.com/wp-content/uploads -type f -exec sudo chmod 664 {} \;`
+- `find /var/www/example.com/wp-content/upgrade -type f -exec sudo chmod 664 {} \;`
+- `find /var/www/example.com/wp-content/themes -type f -exec sudo chmod 664 {} \;`
+- `find /var/www/example.com/wp-content/plugins -type f -exec sudo chmod 664 {} \;`
+- `sudo chmod 775 /var/www/example.com/wp-config.php`
 
-find /var/www/example.com/wp-content/uploads -type f -exec sudo chmod 664 {} \;
-find /var/www/example.com/wp-content/upgrade -type f -exec sudo chmod 664 {} \;
-find /var/www/example.com/wp-content/themes -type f -exec sudo chmod 664 {} \;
-find /var/www/example.com/wp-content/plugins -type f -exec sudo chmod 664 {} \;
+WordPress uses these directories are used for system updates, theme and plugin updates, and blog attachment uploads (most commonly images).
 
-sudo chmod 775 /var/www/example.com/wp-config.php
+### WordPress admin user
 
-These directories are used for WordPress updates, theme and plugin updates, and blog attachment uploads (most commonly images).
+Similar to the Linux&reg; root user, your WordPress installation comes with an **admin** user. Because this is an administrative user that exists in almost every WordPress installation, hackers target it in brute-force attacks. The easiest way to close this attack vector is to remove the admin user. We recommend that you create a user with a different name, give that user administrator privileges, and then delete the admin user.
 
-### Wordpress Admin user
+### Secure updates
 
-Similar to how your Linux&reg; installation comes with a root user, your WordPress installation comes with an **admin** user. The admin user is plagued by the same issue, when attackers attempt a brute-force attack, this is an administrative user that exists in most every install. The easiest way to close this attack vector is to remove the admin user. We recommend that you create a user with a different name, give them administrator privileges, and then delete the admin user.
+FTP is inherently insecure, especially when you are using password-based authentication. However, it is much more secure to set up SSH key updates instead of using passwords. Use the following steps to set up SSH key updates:
 
-### Secure Updates
+1. Ensure that the necessary packages are installed on your system. On Ubuntu&reg; or Debian, run the following command:
 
-FTP is inherently insecure, especially when using password authentication. It is much more secure to set-up password-less ssh-key updates.First we will need to make sure that we have the proper packages installed. On Ubuntu or Debian, this can be done by issuing the following:
-sudo apt-get update; sudo apt-get install php5-dev libssh2-php libssh2-1-dev
-After this we will set up our SSH access. We will need to do these steps as 'wp-user'; since we disallowed login as wp-user, we will need to open a shell with the sudo command:
-sudo -u wp-user /bin/bash
+       sudo apt-get update; sudo apt-get install php5-dev libssh2-php libssh2-1-dev
 
-After this, you can move to the wp-user home directory and set up SSH keys:
-cd ~
-ssh-keygen -t rsa -b 4096
-mkdir ~/.ssh; cd ~/.ssh
-echo 'from="127.0.0.1"' `cat ~/.ssh/id_rsa.pub` > authorized_keys
-exit
-After this make sure permissions are set correctly:
-sudo chmod 700 /home/wp-user/.ssh
-sudo chmod 040 /home/wp-user/.ssh/*
-sudo chmod 644 /home/wp-user/.ssh/authorized_keys
-After this, just add the following to your /var/www/example.com/wp-config.php
-define('FTP_PUBKEY','/home/wp-user/id_rsa.pub');
-define('FTP_PRIVKEY','/home/wp-user/id_rsa');
-define('FTP_USER','wp-user');
-define('FTP_PASS','');
-define('FTP_HOST','127.0.0.1:22');
-And you should be able to update wordpress, plugins, and themes without being prompted for login information.
-Plugins
+2. Set up your SSH access, performing the following  steps as 'wp-user'. Because you disallowed login as `wp-user`, you must
+   open a shell by using the following sudo command:
 
-Best Practice is to use as few plugins as possible to achieve your desired result. There a few that I recommend to promote security:
-* Login Security Solution <https://wordpress.org/plugins/login-security-solution/> - This is an all in one plugin that provides the ability to set strict password requirements, set password expiration periods, and get email notifications for repeated failed logins
-* Disable XML-RPC <https://wordpress.org/plugins/disable-xml-rpc/> - While it is possible to lock down XML-RPC via an .htaccess file, unless you have a compelling reason to need remote control of your wordpress install, it is better to simply disable it to prevent pingback attacks.
-* Disqus <https://wordpress.org/plugins/disqus-comment-system/> - The built in user and comment system for wordpress is decent, but it is very prone to spam. As such, I usually disable open registration ("Settings > "General" > uncheck "Anyone can register"), and use Disqus to moderate comments, and allow users to authenticate against their facebook or google accounts.
+       sudo -u wp-user /bin/bash
+
+3. Use the following steps to move to the `wp-user` home directory and set up SSH keys:
+
+        cd ~
+        ssh-keygen -t rsa -b 4096
+        mkdir ~/.ssh; cd ~/.ssh
+        echo 'from="127.0.0.1"' `cat ~/.ssh/id_rsa.pub` > authorized_keys
+        exit
+        After this make sure permissions are set correctly:
+        sudo chmod 700 /home/wp-user/.ssh
+        sudo chmod 040 /home/wp-user/.ssh/*
+        sudo chmod 644 /home/wp-user/.ssh/authorized_keys
+        After this, just add the following to your /var/www/example.com/wp-config.php
+        define('FTP_PUBKEY','/home/wp-user/id_rsa.pub');
+        define('FTP_PRIVKEY','/home/wp-user/id_rsa');
+        define('FTP_USER','wp-user');
+        define('FTP_PASS','');
+        define('FTP_HOST','127.0.0.1:22');
+
+You should be able to update WordPress, plugins, and themes without being prompted for login information.
+
+### Plug-ins
+
+We recommend that you use as few plug-ins as possible to achieve the results that you want. We recommend that you use the following to promote security:
+
+* **[Login Security Solution](https://wordpress.org/plugins/login-security-solution)**: This is an all-in-one plug-in that enables you to set strict password requirements, set password expiration periods, and receive email notifications for repeated failed logins.
+* **[Disable XML-RPC](https://wordpress.org/plugins/disable-xml-rpc)**: It is possible to lock down XML-RPC by using an **.htaccess** file. However, unless you have a compelling reason to need remote control of your WordPress installation, it's better to simply disable it to prevent pingback attacks.
+* **[Disqus](https://wordpress.org/plugins/disqus-comment-system)**: Because the built-in user comment system for WordPress is very prone to spam, we recommend that you disable open registration (by navigating to **Settings > General**, then unchecking **Anyone can register**), then using Disqus to moderate comments instead and have users authenticate against their Facebook&reg; or Google&reg; accounts.
