@@ -5,7 +5,7 @@ title: Cloud Load Balancers FAQ
 type: article
 created_date: '2015-12-08'
 created_by: Rackspace Support
-last_modified_date: '2019-01-14'
+last_modified_date: '2019-01-15'
 last_modified_by: Kate Dougherty
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
@@ -15,8 +15,8 @@ product_url: cloud-load-balancers
 
 #### What is a Cloud Load Balancer?
 
-Your business's website, applications, and web-based workloads depend on
-high availability. Rackspace [Cloud Load
+Your business's website, applications, and web-based workloads depend
+on high availability. Rackspace [Cloud Load
 Balancers](http://www.rackspace.com/cloud/load-balancing/) enable you
 to quickly balance the workload of multiple Cloud Servers for optimal
 traffic management and maximum failover protection. Load balancers
