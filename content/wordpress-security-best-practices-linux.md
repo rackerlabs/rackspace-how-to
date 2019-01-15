@@ -37,7 +37,7 @@ able to upload files and update its own code, you need to bend these rules sligh
 
 For example, you should set the ownership of the entire directory as `wp-user:www-data`.
 
-This setting means that `wp-user` has user ownership, and `www-data` (the system user for the Apache&reg; web server) has group ownership. Depending on your operating system, this user might also be named `httpd` or `apache`. If you are using nginx, the user is `nginx`. To set permissions, run the following command:
+This setting means that `wp-user` has user ownership, and `www-data` (the system user for the Apache&reg; web server) has group ownership. Depending on your operating system, this user might also be named `httpd` or `apache`. If you are using nginx, the user is `nginx`. To set permissions, run the following command, replacing the example value `/var/www/example.com/` with the document root of your site:
 
     sudo chown -R wp-user:www-data /var/www/example.com/
 
@@ -48,12 +48,12 @@ Use the following base permissions for your WordPress installation:
 
 These permissions grant the wp-user the ability to modify anything, and the web server read-only access. 
 
-The following examples show how to assign these permissions, using the example value of `/var/www/example.com/` as the 
-document root of the site:
-<pre>
+The following examples show how to assign these permissions:
+
+<code>
     find /var/www/example.com/ -type d -exec sudo chmod  755 {} \;
     find /var/www/example.com/ -type f -exec sudo chmod 644 {} \;
-</pre>
+</code>
 
 These permissions grant the wp-user the ability to modify anything, and the web server read-only access. While this is common 
 practice for static sites, there are some files that WordPress must be able to access and execute to function correctly. The 
@@ -80,10 +80,11 @@ Similar to the Linux&reg; root user, your WordPress installation comes with an *
 FTP is inherently insecure, especially when you are using password-based authentication. However, it is much more secure to set up SSH key updates instead of using passwords. Use the following steps to set up SSH key updates:
 
 1. Ensure that the necessary packages are installed on your system. On Ubuntu&reg; or Debian&reg;, run the following commands:
-<pre>
+
+<code>
        sudo apt-get update
        sudo apt-get install php5-dev libssh2-php libssh2-1-dev
-</pre>
+</code>
 
 2. Set up your SSH access, performing the following  steps as 'wp-user'. Because you disallowed login as `wp-user`, you must
    open a shell by using the following sudo command:
