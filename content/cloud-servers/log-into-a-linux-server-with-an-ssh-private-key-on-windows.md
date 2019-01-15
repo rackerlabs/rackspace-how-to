@@ -5,7 +5,7 @@ title: Log into a Linux server with an SSH private key on a Windows client
 type: article
 created_date: '2013-09-25'
 created_by: Brint Ohearn
-last_modified_date: '2019-01-09'
+last_modified_date: '2019-01-15'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
