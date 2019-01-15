@@ -1,11 +1,11 @@
 ---
 permalink: rackspace-cloud-bandwidth-charges/
-audit_date:
+audit_date: '2019-01-15'
 title: Rackspace Cloud Bandwidth Charges
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2017-04-17'
+last_modified_date: '2019-01-15'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
