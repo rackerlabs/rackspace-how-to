@@ -1,7 +1,7 @@
 ---
 permalink: wordpress-security-best-practices-linux/
 audit_date: '2019-01-15'
-title: Wordpress Security Best Practices (Linux)
+title: Wordpress security best practices on Linux
 created_date: '2019-01-15'
 created_by: Shaun Crumpler
 last_modified_date: '2019-01-15'
@@ -80,30 +80,34 @@ FTP is inherently insecure, especially when you are using password-based authent
 
        sudo -u wp-user /bin/bash
 
-3. Use the following steps to move to the `wp-user` home directory and set up SSH keys:
+3. Use the following commands to move to the `wp-user` home directory and set up SSH keys:
 
-        cd ~
-        ssh-keygen -t rsa -b 4096
-        mkdir ~/.ssh; cd ~/.ssh
-        echo 'from="127.0.0.1"' `cat ~/.ssh/id_rsa.pub` > authorized_keys
-        exit
-        After this make sure permissions are set correctly:
-        sudo chmod 700 /home/wp-user/.ssh
-        sudo chmod 040 /home/wp-user/.ssh/*
-        sudo chmod 644 /home/wp-user/.ssh/authorized_keys
-        After this, just add the following to your /var/www/example.com/wp-config.php
-        define('FTP_PUBKEY','/home/wp-user/id_rsa.pub');
-        define('FTP_PRIVKEY','/home/wp-user/id_rsa');
-        define('FTP_USER','wp-user');
-        define('FTP_PASS','');
-        define('FTP_HOST','127.0.0.1:22');
+       cd ~
+       ssh-keygen -t rsa -b 4096
+       mkdir ~/.ssh; cd ~/.ssh
+       echo 'from="127.0.0.1"' cat ~/.ssh/id_rsa.pub > authorized_keys
+       exit
+        
+4. Next, ensure that you set permissions correctly by using the following commands:
 
-You should be able to update WordPress, plugins, and themes without being prompted for login information.
+       sudo chmod 700 /home/wp-user/.ssh
+       sudo chmod 040 /home/wp-user/.ssh/*
+       sudo chmod 644 /home/wp-user/.ssh/authorized_keys
+
+5. Add the following lines to your /var/www/example.com/wp-config.php file:
+
+       define('FTP_PUBKEY','/home/wp-user/id_rsa.pub');
+       define('FTP_PRIVKEY','/home/wp-user/id_rsa');
+       define('FTP_USER','wp-user');
+       define('FTP_PASS','');
+       define('FTP_HOST','127.0.0.1:22');
+
+You should be able to update WordPress, plug-ins, and themes without being prompted for login information.
 
 ### Plug-ins
 
 We recommend that you use as few plug-ins as possible to achieve the results that you want. We recommend that you use the following to promote security:
 
-* **[Login Security Solution](https://wordpress.org/plugins/login-security-solution)**: This is an all-in-one plug-in that enables you to set strict password requirements, set password expiration periods, and receive email notifications for repeated failed logins.
-* **[Disable XML-RPC](https://wordpress.org/plugins/disable-xml-rpc)**: It is possible to lock down XML-RPC by using an **.htaccess** file. However, unless you have a compelling reason to need remote control of your WordPress installation, it's better to simply disable it to prevent pingback attacks.
-* **[Disqus](https://wordpress.org/plugins/disqus-comment-system)**: Because the built-in user comment system for WordPress is very prone to spam, we recommend that you disable open registration (by navigating to **Settings > General**, then unchecking **Anyone can register**), then using Disqus to moderate comments instead and have users authenticate against their Facebook&reg; or Google&reg; accounts.
+- **[Login Security Solution](https://wordpress.org/plugins/login-security-solution)**: This is an all-in-one plug-in that enables you to set strict password requirements, set password expiration periods, and receive email notifications for repeated failed logins.
+- **[Disable XML-RPC](https://wordpress.org/plugins/disable-xml-rpc)**: It is possible to lock down XML-RPC by using an **.htaccess** file. However, unless you have a compelling reason to need remote control of your WordPress installation, it's better to simply disable it to prevent pingback attacks.
+- **[Disqus](https://wordpress.org/plugins/disqus-comment-system)**: Because the built-in user comment system for WordPress is very prone to spam, we recommend that you disable open registration (by navigating to **Settings > General**, then unchecking **Anyone can register**), then using Disqus to moderate comments instead and have users authenticate against their Facebook&reg; or Google&reg; accounts.
