@@ -7,8 +7,6 @@ created_date: '2011-10-20'
 created_by: Rae D. Cabello
 last_modified_date: '2016-05-17'
 last_modified_by: Stephanie Fillmon
-product: Microsoft Exchange
-product_url: exchange
 ---
 
 This article describes how to set up your Microsoft Exchange email
