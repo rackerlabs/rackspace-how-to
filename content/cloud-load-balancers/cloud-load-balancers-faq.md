@@ -180,8 +180,9 @@ understand the following requirements:
     see [SSL Termination](https://developer.rackspace.com/docs/cloud-load-balancers/v1/api-reference/ssl-termination/).
 
     To learn how to complete this process by using the Cloud Control Panel,
-    see [SSL Termination - How to set it
-    up](https://community.rackspace.com/products/f/25/t/3302).
+    see "How do I configure SSL Termination by using the Cloud Control Panel?"
+    in the [Cloud Load Balancers
+    FAQ](https://support.rackspace.com/how-to/cloud-load-balancers-faq/).
 
 #### What is ServiceNet?
 
