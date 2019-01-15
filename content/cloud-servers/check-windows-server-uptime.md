@@ -24,7 +24,7 @@ time the server was restarted. Use the following steps to check server uptime by
 
    **Note**: You can also shorten this command to `net stats srv`.
    
-3. Look for the line that starts with `Statistics since …`, which indicates the date and time when the uptime started.
+3. Look for the line that starts with `Statistics since`, which indicates the date and time when the uptime started.
 
 ### Use the systeminfo command
 
@@ -48,4 +48,4 @@ Use the following steps to check server uptime by using the `systeminfo` command
 
 1. [Connect to your cloud server](/how-to/connect-to-a-cloud-server/) on the command line. 
 2. Type `systeminfo` and press **Enter**.
-3. Look for the line that starts with `Statistics since …`, which indicates the date and time when the uptime started.
+3. Look for the line that starts with `Statistics since`, which indicates the date and time when the uptime started.
