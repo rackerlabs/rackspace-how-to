@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Beginning with Red Hat&reg; Enterprise Linux&reg; (RHEL) 7 and CentOS 7, firewalld is available for managing iptables. 
+Beginning with Red Hat&reg; Enterprise Linux&reg; (RHEL) 7 and CentOS&reg; 7, firewalld is available for managing iptables. 
 As a result, you either need to use `firewall-cmd` commands, or disable firewalld and enable iptables. 
 This article shows you how to use the classic iptables setup.
 
