@@ -10,7 +10,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article describes the tools that are available for performing an analysis of a compromised server. (Cleaning the compromised server is outside of its scope.) The goal of this guide is to show you what information is available to help you determine the following information:
+This article lists the tools that are available for performing an analysis of a compromised server. (Cleaning the 
+compromised server is outside of its scope.) Using these tools help you determine the following information:
 
 - The point of entry
 - The origin of the attack
@@ -18,91 +19,94 @@ This article describes the tools that are available for performing an analysis o
 - The level of access that the attacker obtained
 - The audit trail of the attacker's footprints
 
-Many different types of compromises can exploit a UNIX&reg; server. These servers are often exploited by using brute force attacks, guessing a weak password, or attempting to use known software vulnerabilities in the hope that the server 
-is not on a regular patch schedule. It is important to understand how the machine was compromised so that you can 
-determine the extent of the damage to your server and other hosts that tare accessible to this machine.
+Many different types of compromises can exploit a UNIX&reg; server. Attackers might launch a brute force attack, guess a 
+weak password, or attempt to use known software vulnerabilities in the hope that the server 
+isn't on a regular patch schedule. It's important to understand how the machine was compromised so that you can 
+determine the extent of the damage to your server and other hosts that are accessible to the compromised machine.
 
-For most root-level compromises, the most straightforward approach to recovery is to perform a clean installation of the server and restore any critical data from backups. However, until you know the entry point of the compromise, this step might not be enough because you need to understand the compromise so that you can properly close the security hole.
+For most root-level compromises, the most straightforward recovery approach is to perform a clean installation of the server and restore any critical data from backups. However, until you know the entry point of the compromise, this step might not be sufficient because you need to understand the compromise so that you can properly close the security hole.
 
-### Documentation
+### Document the attack
 
-When you are notified that a system under your control may be compromised, ensure that you obtain as much information as possible from the reporter, including:
+When you're notified that a system under your control might be compromised, ensure that you obtain as much information as possible from the reporter, including:
 
 - How the initial problem was found
-- An estimate of the time that the compromise occurred
+- The estimated time that the compromise occurred
 - Whether the server has been modified since the compromise was detected
 - Anything else that the reporter says that is important
 
-**Important**: If you plan to involve law enforcement, it is imperative that no additional actions are taken on the server. The server must remain in its current state for forensic and evidence collection purposes.
+**Important**: If you plan to involve law enforcement, it is imperative that no additional actions are taken on the server. The server must remain in its current state for evidence collection purposes.
 
 If you choose to proceed with the investigation, document anything that you find on the server. This step can be as simple as copying and pasting a command and its results.
 
-### Tools used for investigation
+### Investigation tools
 
-In the attacker's ideal scenario, all important log files are wiped so that they can hide their tracks. However, this often doesn't occur. As a result, the log files leave valuable clues regarding what the attacker did to the server. The log files might also help determine if the attack was a basic web hack or a root-level compromise. Use the commands in this section to try to find a thread that will help you unravel the rest of the compromise.
+In some compromises, the attacker manages to delete all important log files to hide their tracks. However, this doesn't always occur. As a result, the log files leave valuable clues regarding what the attacker did to the server. The log files might also help you determine if the attack was a basic web hack or a root-level compromise. Use the commands in this section to try to find clues that will help you unravel the extent of the compromise.
 
 #### Last
 
-The `last` command lists the sessions of users who recently logged in to the system. It includes the timestamps and hostnames, and indicates whether the user is still logged in. If an odd Internet Protocol (IP) address appears in the output, you can cross-reference it against a brute-force Secure Shell (SSH) attack in `/var/log/messages` or `/var/log/secure`. This step may indicate how the attacker gained entry, what username they used to gain access, and if they were able to escalate their privilege to `root`.
+The `last` command lists the sessions of users who recently logged in to the system. It includes the timestamps and hostnames, and indicates whether the user is still logged in. If an odd Internet Protocol (IP) address appears in the output, you can cross-reference it against a brute-force Secure Shell (SSH) attack in the `/var/log/messages` or `/var/log/secure` directory. This step might indicate how the attacker gained entry, what username they used to gain access, and if they were able to escalate their privileges to `root`.
 
 #### ls -lart
 
-The `ls -lart` command outputs a time-ordered list of files and directories that you can correlate against the time that the compromise occurred. This output can help you determine what has been added or removed from the system.
+The `ls -lart` command outputs a time-ordered list of files and directories that you can correlate against the time that the compromise occurred. This output can help you determine what the attack added or removed from the system.
 
 #### netstat -na
 
-The `netstat -na` command lists the current listening sockets on the machine. Running this may reveal any back doors that are listening, or any errant services that are running.
+The `netstat -na` command displays the current listening sockets on the machine. Running this command might reveal any back doors that are listening or errant services that are running.
 
 #### ps -wauxef    
 
-This command is helpful in tracking down any errant processes that are listening, as well as help show other odd processes such as the user www running a bash process for example. lsof |grep <pid> can also be used to further find what open files this process is using. Concurrently, cat /proc/<pid>/cmdline may also let you know where the file that controls this process exists.
+This command helps you track down any errant processes that are listening and shows other odd processes (for example, the user `www` running a bash process). You can also run the command `lsof |grep <pid>` to find more information about open files that this process is using. Concurrently, running `cat /proc/<pid>/cmdline` might also tell you where the file that controls this process exists.
 
 #### bash_history
 
-The history file often becomes the Rosetta stone of tracking down what took place during a compromise. Using the `bash_history` commadn to look through the user's .bash_history file will often show exactly what commands were executed, what malicious programs were downloaded, and possibly what directories they were focusing on.
+The history file is often the "Rosetta stone" of tracking down what took place during a compromise. Using the `bash_history` command to look through the user's `.bash_history` file often shows exactly what commands they executed, what malicious programs they downloaded, and the directories on which they focused.
 
 ### top
 
-Oftentimes, a malicious process is causing CPU contention issues within the environment, and will usually show up near the top of the list. Use the `top` command to view this output. Any processes that are causing the CPU contention issues should be considered suspicious when tracking down a compromise.
+Malicious processes often cause central processing unit (CPU) contention issues within the environment, and therefore appear near the top of the list of processes. Use the `top` command to display this list. When you're tracking down a compromise, consider any processes that cause CPU contention issues suspicious.
 
 #### strace
 
-When running strace -p pid on a suspicious process, the `strace` command might yield important insight into what the process is performing.
+When you run the `strace -p pid` command on a suspicious process, the `strace` command might yield important insight into what the process is doing.
 
+### Other tools
 
+These commands might not provide many clues regarding what occurred during the attack. If this is the case, you can use more specialized tools.
 
-In some cases, the commands above may not provide many clues to what happened during the attack. This is where more fine grained tools must be used.
-
-Before moving forward, it should be confirmed that the binaries you are using to investigate are not trojanned versions. These trojanned versions can perform whatever tasks the attacker wishes, which include not showing information that could trace what the compromise was trying to accomplish.
+**Important**: Before you use the tools in this section, you should confirm that the binaries that you are using to investigate are not trojanned versions. These trojanned versions can perform tasks on behalf of the attacker, such as 
+omitting information that might reveal what the compromise was trying to accomplish.
 
 Run the following command to verify that you have a good working set of tools:
 
     rpm -Va
 
-Verifying a package compares information about the installed files in the package with information about the files taken from the package meta data stored in the rpm database. Among other things, verifying compares the size, MD5 sum, permissions, type, owner and group of each file. Any discrepancies are displayed.
+Verifying a package compares information about the installed files in the package with the metadata for the package that the RPM Package Manager (RPM) database stores. Verification compares information about the size, MD5 sum, permissions, type, owner, and group that is associated with each file. The output displays any discrepancies.
 
-When running this command, it is important to note any packages that are flagged in the following directories may mean you are using a trojanned version of the binary, and therefore you cannot trust its output:
+**Important**: Flagged packages in the following directories might indicate that you are using a trojanned version of the binary, and therefore you cannot trust its output:
 
-/bin
+- `/bin`
+- `/sbin`
+- `/usr/bin`
+- `/usr/sbin`
 
-/sbin
+The following example shows a trojanned file:
 
-/usr/bin
+    S.5….T /bin/login
 
-/usr/sbin
-An example of what a trojanned file:
-S.5….T /bin/login
 rpm -qa
+
 This can be used to show what rpm's have been recently installed in chronological order. However, in the case of a root compromise, the rpm database could be altered and therefore not trusted.
+
 lsattr
+
 In cases where the attacker was able to get root access and trojan certain binaries, sometimes they will set that binary to be immutable so you cannot reinstall a clean version of that binary. Common directories to look in are:
-/bin
 
-/sbin
-
-/usr/bin
-
-/usr/sbin
+- `/bin`
+- `/sbin`
+- `/usr/bin`
+- `/usr/sbin`
 
 An example of a file that had its attributes set to immutable:
 
