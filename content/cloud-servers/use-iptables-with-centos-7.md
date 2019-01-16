@@ -16,7 +16,7 @@ shows you how to continue using the classic iptables setup.
 
 ### Stop and mask the firewalld service
 
-Run the following commands to stop and mask the firewalld service that you do not want to use:
+Run the following commands to stop and mask the firewalld service that you don't want to use:
 
     $ systemctl stop firewalld
     $ systemctl mask firewalld
