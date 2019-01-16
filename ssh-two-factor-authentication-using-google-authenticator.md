@@ -3,7 +3,7 @@ permalink: ssh-two-factor-authentication-using-google-authenticator
 audit_date:
 title: SSH - Two-Factor Authentication Using Google Authenticator
 created_date: '2019-01-14'
-created_by: Shaun Crumpler
+created_by: Rackspace Community
 last_modified_date: 
 last_modified_by: 
 product: Cloud Servers
