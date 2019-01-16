@@ -24,6 +24,8 @@ For more information on prerequisite terminology, see [Cloud Office support term
 
 A group list is a great way to manage users in a select team or group on your domain. There is no limit to the number of internal address recipients (addresses within your domain) and a limit of 250 additional recipients outside of the internal domain. For example, suppose that you have a billing team you want to group together - bob@domain.com, amy@domain.com, and scott@domain.com. You can create a group list for the team so that they can communicate new upcoming billing updates within the team, at billingupdates@domain.com.
 
+**Note:** Grouplists are restricted to a maximum message size of 5 MB. 
+
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
 2. In the Rackspace Email section, click **Group Lists**.
 
