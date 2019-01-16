@@ -3,7 +3,7 @@ permalink: how-does-cloud-billing-work
 audit_date:
 title: How Does Cloud Billing Work?
 created_date: '2019-01-14'
-created_by: Shaun Crumpler
+created_by: Rackspace Community
 last_modified_date: 
 last_modified_by: 
 product: Cloud Servers
