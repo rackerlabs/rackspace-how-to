@@ -3,7 +3,7 @@ permalink: upgrading-apache-2.2-to-2.4-in-rhel-centos
 audit_date:
 title: Upgrading Apache 2.2 to 2.4 in RHEL 6/7 & CentOS 6/7
 created_date: '2019-01-15'
-created_by: Shaun Crumpler
+created_by: Rackspace Community
 last_modified_date: 
 last_modified_by: 
 product: Cloud Servers
