@@ -7,8 +7,6 @@ created_date: '2011-03-09'
 created_by: Rackspace Support
 last_modified_date: '2016-01-15'
 last_modified_by: Stephanie Fillmon
-product: Rackspace Email
-product_url: rackspace-email
 ---
 
 To learn more about the differences between Post Office Protocol (POP) and Internet Message Access Protocol (IMAP), see [IMAP and POP mail protocol comparison](/how-to/imap-and-pop-mail-protocol-comparison).
