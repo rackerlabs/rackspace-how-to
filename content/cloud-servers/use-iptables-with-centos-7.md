@@ -11,8 +11,8 @@ product_url: cloud-servers
 ---
 
 Beginning with Red Hat&reg; Enterprise Linux&reg; (RHEL) 7 and CentOS 7, firewalld is available for managing iptables. 
-As a result, you either need to use `firewall-cmd` commands or disable firewalld and enable iptables. This article 
-shows you how to continue using the classic iptables setup.
+As a result, you either need to use `firewall-cmd` commands, or disable firewalld and enable iptables. This article 
+shows you how to use the classic iptables setup.
 
 ### Stop and mask the firewalld service
 
@@ -23,11 +23,13 @@ Run the following commands to stop and mask the firewalld service that you don't
 
 ### Install and configure iptables
 
+Use the following steps to install and configure iptables:
+
 1. Install the `iptables-services` package (if it is not already installed) by running the following command:
 
        $ yum install iptables-services
 
-2. Enable the service to start at boot-time by running the following commands:
+2. Enable the service to start at boot time by running the following commands:
 
        $ systemctl enable iptables
        $ systemctl enable ip6tables
@@ -35,8 +37,8 @@ Run the following commands to stop and mask the firewalld service that you don't
 3. Next, add iptables rules. You can do this in either of the following ways:
 
    - From the command-line interface (CLI), by running commands similar to `iptables -I INPUT ...`
-   - Create or edit your `/etc/sysconfig/iptables` file to look similar to the following basic example, which leaves ports 22 
-     and 80 open:
+   - By creating or editing your `/etc/sysconfig/iptables` file to look similar to the following basic example, 
+     which leaves ports 22 and 80 open:
 
          $ cat /etc/sysconfig/iptables
          *filter
@@ -69,7 +71,7 @@ Run the following commands to stop and mask the firewalld service that you don't
        $ systemctl restart iptables
        $ systemctl restart ip6tables
 
-5. Next, check that the iptables service is **active** by running the following commands:
+5. Next, check that the iptables service is active by running the following commands:
 
        $ systemctl status iptables
        $ systemctl status ip6tables
@@ -84,7 +86,7 @@ Run the following commands to stop and mask the firewalld service that you don't
 
        $ netstat -plant
 
-8. Query the `systemd` journal for a **log** of the changes that you made to the iptables service by running the following 
+8. Query the `systemd` journal for a log of the changes that you made to the iptables service by running the following 
    commands:
 
        $ journalctl -f -u iptables.service
