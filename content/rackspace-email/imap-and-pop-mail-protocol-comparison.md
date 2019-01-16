@@ -1,33 +1,25 @@
 ---
 permalink: imap-and-pop-mail-protocol-comparison/
-audit_date:
+audit_date:'2019-01-15'
 title: IMAP and POP mail protocol comparison
 type: article
 created_date: '2012-06-04'
 created_by: Rackspace Support
-last_modified_date: '2015-12-31'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2019-01-15'
+last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
 ---
 
 If you are using Rackspace Email and are setting up your email software
-(for example, Microsoft Outlook or Mac Mail), you must indicate whether
-you want to receive email by using an IMAP or POP connection. IMAP is
-generally the preferred method because it gives you complete access to
+(for example, Microsoft&reg; Outlook or Mac Mail), you must indicate whether
+you want to receive email by using an IMAP or POP connection. IMAP is the recommended method because it gives you complete access to
 all email and all email folders, from multiple computers or mobile
 devices. This article describes the differences between the IMAP and POP
 mail protocols.
 
 For Rackspace Email settings for both IMAP and POP, see [Rackspace Email
-and Hosted Exchange
-settings](/how-to/rackspace-email-and-hosted-exchange-settings).
-
-**Notes:**
-
--   We strongly recommend using an IMAP connection with Rackspace Email.
--   Microsoft Exchange users normally access their mailbox data via the
-    Exchange server rather than using a POP or IMAP connection.
+and Hosted Exchange settings](/how-to/rackspace-email-and-hosted-exchange-settings).
 
 ### IMAP
 
@@ -83,14 +75,14 @@ server. Following are some features of POP:
     download your email, but you can view your downloaded email offline
     (that is, without an Internet connection).
 
+**Warning:** Because a POP connection deletes email from the email server, there is no backup of email on the email server.
+
 ### Mobile Sync
 
 When you check your email using Mobile Sync, you are accessing and
-managing your email directly from the email server using Microsoft
-ActiveSync technology. Following are some features of Mobile Sync.
+managing your email directly from the email server. Following are some features of Mobile Sync:
 
-**Note**: This service is an additional fee and enabled by your email
-administrator. For more information, see <http://www.rackspace.com/blog/mobile-sync-for-rackspace-webmail-take-your-webmail-with-you-anywhere>.
+**Note**: This service is only available to Rackspace Email Plus users. See [Getting started with Rackspace Email Plus](/how-to/rackspace-email-plus-getting-started) for details.
 
 -   **Access**: Because emails are stored on the email server, you can
     access and manage your email and email folders from multiple
@@ -107,5 +99,5 @@ administrator. For more information, see <http://www.rackspace.com/blog/mobile-s
     accidentally delete an email, your email administrator can retrieve
     it, even up to 14 days later.
 
--   **Internet** **Connection**: You must have an Internet connection to
+-   **Internet connection**: You must have an Internet connection to
     access your email.
