@@ -1,54 +1,88 @@
 ---
-permalink: investigating-compromised-servers
+permalink: investigate-compromised-servers/
 audit_date:
-title: Investigating Compromised Servers
-created_date: '2019-01-15'
-created_by: Shaun Crumpler
-last_modified_date: 
-last_modified_by: 
+title: Investigate compromised servers
+created_date: '2019-01-16'
+created_by: Rackspace Community
+last_modified_date: '2019-01-16'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This guide is not a step by step tutorial on how to clean a compromised server, rather it is a reference to illustrate what tools are available for performing an analysis of the compromise. The goal of this guide is to show you what information is available to help you determine:
-* Point of entry
-* The origin of the attack
-* What files were compromised
-* What level access did the attacker obtain
-* Audit trail of the attackers footprints
-There are many different types of compromises available to exploit a UNIX server. Under many circumstances, a server is exploited using common techniques such as using a brute force attack, to guess a weak password, or attempting to use known vulnerabilities in software in hopes the server is not on a regular patch schedule. Whatever the method, it is important to understand how the machine got compromised so you can determine the extent of damage to your server and other hosts accessible to this machine.
-During many root level compromises, the most straight forward approach to recovery is to perform a clean install of the server and restore any critical data from known good backups. However until the entry point of the compromise is known, this may not be enough as the compromise needs to be understood so that security hole can be properly closed.
-Documentation
-When you are notified that a system under your control may be compromised. You want to obtain as much information as possible from the complainant. This includes:
-* How was the initial problem found?
-* Can the time of the compromise be estimated?
-* Has the server been modified since the compromise was detected?
-* Anything else the complainant says that is important.
-IMPORTANT NOTE: If you are planning on getting law enforcement involved, it is imperative that no additional actions are taken on the server. The server must remain in its current state for forensic and evidence collection purposes.
-If you choose to proceed with the investigation, document anything you find on the server. It can be as simple as a copy/paste of the command and its results.
-### Tools Used For Investigation
-In the attacker's ideal scenario, all important log files would have been wiped so their tracks are clean.  Oftentimes however, this doesn't happen. This leaves some valuable clues in finding what was done. It may also help determine if this was a basic web hack, or a root level compromise. Below are some of the basic commands that I'll look through when trying to find that one thread so I can unravel the rest of the compromise.
-last
-This will list the sessions of users that recently logged into the system and include the timestamps, hostnames and whether or not the user is still logged in. An odd IP address may be cross referenced against a brute force ssh attack in /var/log/messages or /var/log/secure which may indicate how the attacker gained entry, what user they got in as, and if they were able to escalate their privilege to root.
-ls -lart /
-This will provide a time ordered list of files and directories that can be correlated against the time of the compromise. This listing will help determine what has been added or removed from the system.
-netstat -na
-This will list the current listening sockets on the machine. Running this may reveal any back doors that are listening, or any errant services that are running.
-ps -wauxef
-This will be helpful in tracking down any errant processes that are listening, as well as help show other odd processes such as the user www running a bash process for example. lsof |grep <pid> can also be used to further find what open files this process is using. Concurrently, cat /proc/<pid>/cmdline may also let you know where the file that controls this process exists.
-bash_history
-The history file often becomes the Rosetta stone of tracking down what took place during a compromise. Looking through the users .bash_history file will often show exactly what commands were executed, what malicious programs were downloaded, and possibly what directories they were focusing on.
-top
-Oftentimes, a malicious process will be causing CPU contention issues within the environment, and will usually show up near the top of the list. Any processes that are causing the CPU contention issues should be considered suspicious when tracking down a compromise.
-strace
-When running strace -p pid on a suspicious process, this may yield important insight into what the process is performing.
+This article describes the tools that are available for performing an analysis of a compromised server. (Cleaning the compromised server is outside of its scope.) The goal of this guide is to show you what information is available to help you determine the following information:
+
+- The point of entry
+- The origin of the attack
+- Which files were compromised
+- The level of access that the attacker obtained
+- The audit trail of the attacker's footprints
+
+Many different types of compromises can exploit a UNIX&reg; server. These servers are often exploited by using brute force attacks, guessing a weak password, or attempting to use known software vulnerabilities in the hope that the server 
+is not on a regular patch schedule. It is important to understand how the machine was compromised so that you can 
+determine the extent of the damage to your server and other hosts that tare accessible to this machine.
+
+For most root-level compromises, the most straightforward approach to recovery is to perform a clean installation of the server and restore any critical data from backups. However, until you know the entry point of the compromise, this step might not be enough because you need to understand the compromise so that you can properly close the security hole.
+
+### Documentation
+
+When you are notified that a system under your control may be compromised, ensure that you obtain as much information as possible from the reporter, including:
+
+- How the initial problem was found
+- An estimate of the time that the compromise occurred
+- Whether the server has been modified since the compromise was detected
+- Anything else that the reporter says that is important
+
+**Important**: If you plan to involve law enforcement, it is imperative that no additional actions are taken on the server. The server must remain in its current state for forensic and evidence collection purposes.
+
+If you choose to proceed with the investigation, document anything that you find on the server. This step can be as simple as copying and pasting a command and its results.
+
+### Tools used for investigation
+
+In the attacker's ideal scenario, all important log files are wiped so that they can hide their tracks. However, this often doesn't occur. As a result, the log files leave valuable clues regarding what the attacker did to the server. The log files might also help determine if the attack was a basic web hack or a root-level compromise. Use the commands in this section to try to find a thread that will help you unravel the rest of the compromise.
+
+#### Last
+
+The `last` command lists the sessions of users who recently logged in to the system. It includes the timestamps and hostnames, and indicates whether the user is still logged in. If an odd Internet Protocol (IP) address appears in the output, you can cross-reference it against a brute-force Secure Shell (SSH) attack in `/var/log/messages` or `/var/log/secure`. This step may indicate how the attacker gained entry, what username they used to gain access, and if they were able to escalate their privilege to `root`.
+
+#### ls -lart
+
+The `ls -lart` command outputs a time-ordered list of files and directories that you can correlate against the time that the compromise occurred. This output can help you determine what has been added or removed from the system.
+
+#### netstat -na
+
+The `netstat -na` command lists the current listening sockets on the machine. Running this may reveal any back doors that are listening, or any errant services that are running.
+
+#### ps -wauxef    
+
+This command is helpful in tracking down any errant processes that are listening, as well as help show other odd processes such as the user www running a bash process for example. lsof |grep <pid> can also be used to further find what open files this process is using. Concurrently, cat /proc/<pid>/cmdline may also let you know where the file that controls this process exists.
+
+#### bash_history
+
+The history file often becomes the Rosetta stone of tracking down what took place during a compromise. Using the `bash_history` commadn to look through the user's .bash_history file will often show exactly what commands were executed, what malicious programs were downloaded, and possibly what directories they were focusing on.
+
+### top
+
+Oftentimes, a malicious process is causing CPU contention issues within the environment, and will usually show up near the top of the list. Use the `top` command to view this output. Any processes that are causing the CPU contention issues should be considered suspicious when tracking down a compromise.
+
+#### strace
+
+When running strace -p pid on a suspicious process, the `strace` command might yield important insight into what the process is performing.
+
+
 
 In some cases, the commands above may not provide many clues to what happened during the attack. This is where more fine grained tools must be used.
+
 Before moving forward, it should be confirmed that the binaries you are using to investigate are not trojanned versions. These trojanned versions can perform whatever tasks the attacker wishes, which include not showing information that could trace what the compromise was trying to accomplish.
-So to verify we have a good working set of tools:
-rpm -Va
+
+Run the following command to verify that you have a good working set of tools:
+
+    rpm -Va
+
 Verifying a package compares information about the installed files in the package with information about the files taken from the package meta data stored in the rpm database. Among other things, verifying compares the size, MD5 sum, permissions, type, owner and group of each file. Any discrepancies are displayed.
+
 When running this command, it is important to note any packages that are flagged in the following directories may mean you are using a trojanned version of the binary, and therefore you cannot trust its output:
+
 /bin
 
 /sbin
@@ -69,6 +103,7 @@ In cases where the attacker was able to get root access and trojan certain binar
 /usr/bin
 
 /usr/sbin
+
 An example of a file that had its attributes set to immutable:
 
 -------i----- /bin/ps
