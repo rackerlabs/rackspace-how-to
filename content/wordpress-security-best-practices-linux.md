@@ -3,7 +3,7 @@ permalink: wordpress-security-best-practices-linux/
 audit_date: '2019-01-14'
 title: Wordpress security best practices on Linux
 created_date: '2019-01-15'
-created_by: Shaun Crumpler
+created_by: Rackspace Community
 last_modified_date: '2019-01-15'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
