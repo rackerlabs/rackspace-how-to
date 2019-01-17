@@ -19,15 +19,15 @@ like the following example:
 
 Depending on the code base, Apache&reg; HTTP Server might have already
 mitigated these security issues. The scan checks the version of Apache that is
-installed on the server to determine if the security issue was resolved.
+installed on the server to determine if the security issue is resolved.
 However, some compliance security scans only use the version of Apache to
 determine if the server is vulnerable to Common Vulnerabilities and Exposures
 (CVE), rather than detecting vulnerabilities directly.
 
-This almost always generates a false positive. If automatic updates are
-enabled, the version might remain the same, even if the vulnerability was
+Such scans almost always generate a false positive. If automatic updates are
+enabled, the version might remain the same, even if the vulnerability is
 patched in another release. As a result, the scan might mark the vulnerability
-as positive. This might also be the case if your provider's scans suddenly
+as positive. This result might also be the case if your provider's scans suddenly
 show that your server is no longer vulnerable to vulnerabilities that the
 scans have previously identified.
 
@@ -44,7 +44,7 @@ Protocol daemon (HTTPd):
        ServerTokens Prod
 
    **Note**: Your server shouldn't provide a version signature, and your
-   pentesting company should recommend that you disable versions.
+   penetration testing company should recommend that you disable versions.
 
 ### Perform the update from Apache 2.2 to Apache 2.4
 
@@ -105,7 +105,7 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
    result, you need to change the `Order`, `Deny`,
    and `Allow` statements in your `/etc/httpd/conf.d/server-status.conf` file
    to use `Require` statements. Because you might have these in the
-   **.htaccess** files for other websites, ensure that you check your document
+   `.htaccess` files for other websites, ensure that you check your document
    roots carefully to avoid breaking your websites due to missing `Require`
    directives.
 
@@ -173,12 +173,12 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
 
 ### *(Optional)* Download a compatible version of the Adobe Experience Manager (AEM) Dispatcher module
 
-If the HTTPd installation uses the Adobe Experience Manager (AEM) Dispatcher
+If the HTTPd installation uses the Adobe&reg; Experience Manager (AEM) Dispatcher
 module, you must use the following steps to [download the file that's
 compatible with Apache HTTP Server 2.4](https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html):
 
-1. Run the following commands to extract the **dispatcher-apache2.4-
-   4.1.11.so** file from the Tape ARchive (TAR) file into
+1. Run the following commands to extract the 
+   `dispatcher-apache2.4-4.1.11.so` file from the Tape ARchive (TAR) file into
    `/etc/httpd/modules/`. Only this file is used.
 
         cd /etc/httpd/modules
@@ -202,9 +202,9 @@ verify that it is enabled and running by using the following steps:
         service httpd start
 
 2. Ensure that the service is enabled and running, and re-enable any
-   monitoring that were enabled before:
+   monitoring that was enabled before:
 
-    - On CentOS 7 or Red Hat&reg; Enterprise Linux (RHEL) 7, run the following
+    - On CentOS&reg; 7 or Red Hat&reg; Enterprise Linux (RHEL) 7, run the following
       commands:
 
           systemctl enable httpd
