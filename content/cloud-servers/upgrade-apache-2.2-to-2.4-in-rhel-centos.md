@@ -105,77 +105,72 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
            Require host 127.0.0.1
        </Location>
 
-   **Note**: This syntax change also applies to virtual hosts in your `conf.d` and `httpd.conf` vhost configurations.
+   **Note**: This syntax change also applies to the virtual hosts in your `conf.d` and `httpd.conf` vhost configurations.
 
+7. Change the `Order`, `Deny`, and `Allow` statements in your `conf.d` file to `Require` statements in the following way:
 
-Change from:
-
-Options -Indexes FollowSymLinks
-
-Change to:
-
-Options -Indexes +FollowSymLinks
-
-Do the same by editing the file /etc/httpd/conf/httpd.conf 
-
-#    Order deny,allow
-#    Deny from all
-    Require all denied
+       #    Order deny,allow
+       #    Deny from all
+       Require all denied
  
-#    Order deny,allow
-#    Allow from all
-    Require all granted
+       #    Order deny,allow
+       #    Allow from all
+       Require all granted
 
-8. Edit /etc/httpd/conf/httpd.conf file and comment out LoadModule directives for modules no longer used, This is similar to step 7.
+8. In the same file, also change `Options -Indexes FollowSymLinks` to `Options -Indexes +FollowSymLinks`.
 
-#2.4 upgrade LoadModule authn_alias_module modules/mod_authn_alias.so
-#2.4 upgrade LoadModule authn_default_module modules/mod_authn_default.so
-#2.4 upgrade LoadModule authz_default_module modules/mod_authz_default.so
-#2.4 upgrade LoadModule disk_cache_module modules/mod_disk_cache.so
+9. In your `/etc/httpd/conf/httpd.conf` file, change the `Order`, `Deny`, and `Allow` statements to `Require` statements, as shown in step 7.
 
-9. Edit the `/etc/httpd/conf/httpd.conf` file:
+10. In the `/etc/httpd/conf/httpd.conf` file, also comment out the `LoadModule` directives for modules that are no longer used.
 
-#Add this one up by the other authz modules
-LoadModule authz_core_module modules/mod_authz_core.so
+        #2.4 upgrade LoadModule authn_alias_module modules/mod_authn_alias.so
+        #2.4 upgrade LoadModule authn_default_module modules/mod_authn_default.so
+        #2.4 upgrade LoadModule authz_default_module modules/mod_authz_default.so
+        #2.4 upgrade LoadModule disk_cache_module modules/mod_disk_cache.so
+
+11. Edit the `/etc/httpd/conf/httpd.conf` file to add the following line with the other authz modules:
+
+        LoadModule authz_core_module modules/mod_authz_core.so
  
-#Add these to the bottom of the block of LoadModules
-LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
-LoadModule unixd_module modules/mod_unixd.so
-LoadModule slotmem_shm_module modules/mod_slotmem_shm.so
-LoadModule ssl_module modules/mod_ssl.so
-LoadModule socache_shmcb_module modules/mod_socache_shmcb.so
-###OPTIONAL
+12. Add the following lines of code to the bottom of the block of `LoadModule` statements:
 
-10. If this httpd installation uses the dispatcher module (AEM), you'll need to download the 2.4 compatible file from here:
+        LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
+        LoadModule unixd_module modules/mod_unixd.so
+        LoadModule slotmem_shm_module modules/mod_slotmem_shm.so
+        LoadModule ssl_module modules/mod_ssl.so
+        LoadModule socache_shmcb_module modules/mod_socache_shmcb.so
 
-Go to this link to download it https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html
+### Optional
 
-10b. extract the dispatcher-apache2.4-4.1.11.so file from the tar file into /etc/httpd/modules/. Only this file is used.
+12. If the HTTPd installation uses the Adobe Experience Manager (AEM) Dispatcher module, you need to [download the file that's compatible with Apache HTTP Server 2.4](https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html).
 
-cd /etc/httpd/modules
-rm mod_dispatcher.so
-ln -s /etc/httpd/modules/dispatcher-apache2.4-4.1.11.so mod_dispatcher.so
 
-11. Edit the /etc/httpd/conf.d/ssl.conf
+13. Run the following commands to extract the **dispatcher-apache2.4-4.1.11.so** file from the Tape ARchive (TAR) file into 
+    `/etc/httpd/modules/`. Only this file is used.
 
-Change SSLMutex default to mutex default (SSL Mutex is deprecated as well, like Allow directives)
-For more details, see: https://httpd.apache.org/docs/2.4/mod/core.html#mutex
+        cd /etc/httpd/modules
+        rm mod_dispatcher.so
+        ln -s /etc/httpd/modules/dispatcher-apache2.4-4.1.11.so mod_dispatcher.so
+
+14. Because SSL Mutex is deprecated, you need to edit the `/etc/httpd/conf.d/ssl.conf` file to change `SSLMutex default` to `Mutex default`. 
+
+For more details, see the [Apache documentation on the Mutex Directive](https://httpd.apache.org/docs/2.4/mod/core.html#mutex).
 
 ### Critical
 
-12. Run the following command to start the HTTPd back up again:
+12. Run the following command to restart the HTTPd:
 
         service httpd start
 
-13. Ensure that the service is enabled and running, and re-enable any monitoring that you had enabled before:
+13. Ensure that the service is enabled and running, and re-enable any monitoring that were enabled before:
 
-# CentOS 7 / RHEL 7
+    - On CentOS 7 or Red Hat&reg; Enterprise Linux (RHEL) 7, run the following commands: 
 
-systemctl enable httpd
-#
-systemctl status httpd
+          systemctl enable httpd
 
-# CentOS 6 / RHEL 6
+          systemctl status httpd
 
-chkconfig --add httpd && chkconfig httpd on
-service httpd status
+    - On CentOS 6 or RHEL 6, run the following commands:
+
+          chkconfig --add httpd && chkconfig httpd on
+          service httpd status
