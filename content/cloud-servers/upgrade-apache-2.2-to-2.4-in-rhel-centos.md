@@ -16,11 +16,13 @@ If you recently performed a compliance security scan, the results might look lik
     Apache HTTP Server mod_rewrite Terminal Escape Sequence Vulnerability, CVE-2013-1862
     Apache HTTP Server XSS Vulnerabilities via Hostnames, CVE-2012-3499 CVE-2012-4558
 
-Depending on the code base, Apache&reg; might have already mitigated these security issues. The scan checks the version of Apache that is installed on the server to determine if the security issue was resolved. However, some compliance security scans only use the version of Apache to determine if the server is vulnerable to Common Vulnerabilities and Exposures (CVE), rather than directly detecting the vulnerability. 
+Depending on the code base, Apache&reg; might have already mitigated these security issues. The scan checks the version of Apache that is installed on the server to determine if the security issue was resolved. However, some compliance security scans only use the version of Apache to determine if the server is vulnerable to Common Vulnerabilities and Exposures (CVE), rather than detecting vulnerabilities directly. 
 
-This almost always generates a false positive, in the case of unattended-upgrades being enabled already or similar, there will be the downloading package updates from the maintainer, since the version may remain the same, even if the vulnerability may have been patched in a released update, it can be marked as positive. 
+This almost always generates a false positive. If automatic updates are enabled, the version might remain the same, even if the vulnerability was patched in another release. As a result, the scan might mark the vulnerability as positive.
 
-So if you find your security audit to be doing this unfortunate practice, just do this in your httpd config and force them to check properly (or reveal that they aren't checking properly at all!):
+This article shows you how to correct this issue if your security audit is generating false positives due to this issue.
+
+So if you find  to be doing this unfortunate practice, just do this in your httpd config and force them to check properly (or reveal that they aren't checking properly at all!):
 
 If they ever so suddenly say you are no longer vulnerable, then they may have been only checking version, which is prone to get false positives:
 
