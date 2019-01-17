@@ -10,8 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-I am writing this forum post under the Dedicated Hosting forum because we generally do not recommend hosting e-mail accounts on cloud servers.
-We all know that spam is a significant problem on mail servers. System administrators work daily, tweaking their configurations to help stop the flow of new variants of spam. Below are some simple configuration changes that can be implemented on a Postfix install to help stop some of the flow of spam to your mailboxes.
+Spam is a significant problem on mail servers. System administrators work daily, tweaking their configurations to help stop the flow of new variants of spam. Below are some simple configuration changes that can be implemented on a Postfix install to help stop some of the flow of spam to your mailboxes.
 
 Enabling RBL's:
 
