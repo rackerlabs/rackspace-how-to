@@ -37,6 +37,8 @@ Install the module on Red Hat 6 by running the following commands:
 
 ##### Debian-based systems
 
+Use the following steps to install the module on Debian-based systems:
+
 1. Install the module on Debian by running the following command:
 
        aptitude install libpam-google-authenticator
