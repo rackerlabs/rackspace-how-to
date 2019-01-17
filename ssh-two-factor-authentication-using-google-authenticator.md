@@ -52,16 +52,21 @@ Install the module on Red Hat 6 by running the following commands:
 
 ### Set up keys for the user
 
-Run the following command to set up keys for the user:
+Use the following steps to set up keys for the user:
 
-         google-authenticator
+1. Run the following command:
 
-You are prompted to update your ~/.google_authenticator file, answer yes to this question, and whatever you would like to use for the next three. Once complete, the following will be presented to you:
+       google-authenticator
 
-* New Secret Key
-* Verification Code 
-* Emergency Scratch Codes
+2. Answer `yes` when you are prompted to update your `~/.google_authenticator file`, then provide answers to the next three 
+   prompts.
 
-You will use the new secret key for adding the account to your phone's google authenticator app. The emergency scratch codes should be copied down and stored somewhere secure. They can be used if you ever lose your iphone, or otherwise need to get into your account without your phone's google authenticator app.
+After you complete these steps, you see the following information:
 
-Now when you log into your server using your user account, it prompts you for your google auth token, followed by your normal password for the server. Any accounts that don't have the this setup will not be allowed to log in.
+- New secret key
+- Verification code 
+- Emergency scratch codes
+
+You use the new secret key to add the account to your phone's Google Authenticator app. Note the emergency scratch codes and store them somewhere secure. You can use them if you lose your iPhone&reg; or otherwise need to log in to your account without using your phone's Google Authenticator app.
+
+Now when you log in to your server under your user account, you are prompted for your Google authentication token and your standard password for the server. Any accounts that don't have this setup are not allowed to log in.
