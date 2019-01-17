@@ -149,15 +149,16 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
    `Allow` statements to `Require` statements, as shown in step 7.
 
 10. In the `/etc/httpd/conf/httpd.conf` file, also comment out the
-    `LoadModule` directives for modules that are no longer used.
+    `LoadModule` directives for modules that are no longer used, as shown
+    in the following example:
 
         #2.4 upgrade LoadModule authn_alias_module modules/mod_authn_alias.so
         #2.4 upgrade LoadModule authn_default_module modules/mod_authn_default.so
         #2.4 upgrade LoadModule authz_default_module modules/mod_authz_default.so
         #2.4 upgrade LoadModule disk_cache_module modules/mod_disk_cache.so
 
-  1. Edit the `/etc/httpd/conf/httpd.conf` file to add the following line with
-     the other authz modules:
+11. Edit the `/etc/httpd/conf/httpd.conf` file to add the following line with
+    the other authz modules:
 
         LoadModule authz_core_module modules/mod_authz_core.so
 
@@ -170,7 +171,7 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
         LoadModule ssl_module modules/mod_ssl.so
         LoadModule socache_shmcb_module modules/mod_socache_shmcb.so
 
-### (*Optional*) Download a compatible version of the Adobe Experience Manager (AEM) Dispatcher module
+### *(Optional)* Download a compatible version of the Adobe Experience Manager (AEM) Dispatcher module
 
 If the HTTPd installation uses the Adobe Experience Manager (AEM) Dispatcher
 module, you must use the following steps to [download the file that's
@@ -188,7 +189,7 @@ compatible with Apache HTTP Server 2.4](https://www.adobeaemcloud.com/content/co
    `/etc/httpd/conf.d/ssl.conf` file to change `SSLMutex default` to
    `Mutex default`.
 
-For more details, see the [Apache documentation on the Mutex
+For more details, see the [Apache documentation about the Mutex
 Directive](https://httpd.apache.org/docs/2.4/mod/core.html#mutex).
 
 ### Critical: Restart the HTTPd
