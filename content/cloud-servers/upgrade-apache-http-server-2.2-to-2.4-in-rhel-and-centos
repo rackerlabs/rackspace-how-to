@@ -185,3 +185,4 @@ After you complete the steps in this guide, you must restart the HTTPd and verif
 
           chkconfig --add httpd && chkconfig httpd on
           service httpd status
+
