@@ -12,13 +12,21 @@ product_url: cloud-servers
 
 This guide provides an overview of how to set up two-factor authentication (2FA) by using Google Authenticator&trade;.
 
-Many people are using Google Authenticator to secure their Google apps, such as Gmail&trade;. However, you can also use two-factor authentication for your Secure Shell (SSH) logins. Using SSH can protect you against accidently using weak passwords that can lead to a successful brute-force attack. This guide shows you how to implement Google Authenticator on the CentOS&reg; 6 and Ubuntu&reg; 12.04 Linux&reg; distributions.
+Many people are using Google Authenticator to secure their Google apps, such as Gmail&trade;. 
+However, you can also use two-factor authentication for your Secure Shell (SSH) logins. 
+Using SSH can protect you against accidently using weak passwords that can lead to a successful brute-force attack. 
+This guide shows you how to implement Google Authenticator on the CentOS&reg; 6 and 
+Ubuntu&reg; 12.04 Linux&reg; distributions.
 
-**Important**: After you complete the steps in this guide, all of your users (including root) will be required to use Google Authenticator to connect via SSH unless you already have SSH keys in place. Check with your administration teams before setting up Google Authenticator to ensure that you don't accidentally disable their access or lock yourself out from using SSH.
+**Important**: After you complete the steps in this guide, all of your users (including root) will be 
+required to use Google Authenticator to connect via SSH unless you already have SSH keys in place. Check with 
+your administration teams before setting up Google Authenticator to ensure that you don't accidentally 
+disable their access or lock yourself out from using SSH.
 
 ### Install the module
 
-First, you need to install the Google Authenticator module. Open a command-line interface (CLI), then follow the instructions that correspond to your distribution.
+First, you need to install the Google Authenticator module. Open a command-line interface (CLI), 
+then follow the instructions that correspond to your distribution.
 
 ##### Red Hat 6-based systems
 
