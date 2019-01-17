@@ -1,21 +1,24 @@
 ---
-permalink: upgrading-apache-2.2-to-2.4-in-rhel-centos
+permalink: upgrade-apache-2.2-to-2.4-in-rhel-centos
 audit_date:
-title: Upgrading Apache 2.2 to 2.4 in RHEL 6/7 & CentOS 6/7
-created_date: '2019-01-15'
+title: Upgrading Apache 2.2 to 2.4 in RHEL 6 or 7 and CentOS 6 or 7
+created_date: '2019-01-17'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-17'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-There might have been a recently performed compliance security scan and had a report back which reads something like:
-Apache HTTP Server Zero-Length Directory Name in LD_LIBRARY_PATH Vulnerability, CVE-2012-0883
-Apache HTTP Server mod_rewrite Terminal Escape Sequence Vulnerability, CVE-2013-1862
-Apache HTTP Server XSS Vulnerabilities via Hostnames, CVE-2012-3499 CVE-2012-4558
-Depending on the code-base, this may already be mitigated against it, since some of these scans use only the version of apache2 to check if it's vulnerable, as opposed to direct detection of the vulnerability, etc.
-In some cases, if the pentesting vendor isn't checking properly, they might be using version numbers to determine whether your vulnerable to one of the CVE vulnerabilities. This is almost always a false positive, in the case of unattended-upgrades being enabled already or similar, there will be the downloading package updates from the maintainer, since the version may remain the same, even if the vulnerability may have been patched in a released update, it can be marked as positive. 
+If you recently performed a compliance security scan, the results might look like the following example:
+
+    Apache HTTP Server Zero-Length Directory Name in LD_LIBRARY_PATH Vulnerability, CVE-2012-0883
+    Apache HTTP Server mod_rewrite Terminal Escape Sequence Vulnerability, CVE-2013-1862
+    Apache HTTP Server XSS Vulnerabilities via Hostnames, CVE-2012-3499 CVE-2012-4558
+
+Depending on the code base, Apache&reg; might have already mitigated these security issues. The scan checks the version of Apache that is installed on the server to determine if the security issue was resolved. However, some compliance security scans only use the version of Apache to determine if the server is vulnerable to Common Vulnerabilities and Exposures (CVE), rather than directly detecting the vulnerability. 
+
+This almost always generates a false positive, in the case of unattended-upgrades being enabled already or similar, there will be the downloading package updates from the maintainer, since the version may remain the same, even if the vulnerability may have been patched in a released update, it can be marked as positive. 
 
 
 So if you find your security audit to be doing this unfortunate practice, just do this in your httpd config and force them to check properly (or reveal that they aren't checking properly at all!):
