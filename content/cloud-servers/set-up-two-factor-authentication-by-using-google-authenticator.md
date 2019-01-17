@@ -36,14 +36,14 @@ distribution.
 
 ##### Red Hat 6-based systems
 
-Install the module on Red Hat 6 by running the following commands:
+Install the module on Red Hat&reg; 6 by running the following commands:
 
     rpm -ivh http://linux.mirrors.es.net/fedora-epel/6/x86_64/epel-release-6-7.noarch.rpm
     yum install google-authenticator
 
 ##### Debian-based systems
 
-Use the following steps to install the module on Debian-based systems:
+Use the following steps to install the module on Debian&reg;-based systems:
 
 1. Install the module on Debian by running the following command:
 
