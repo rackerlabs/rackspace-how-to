@@ -31,19 +31,21 @@ Use the following steps to begin an investigation of a server in Rescue Mode:
    When you navigate to the `/mnt` directory, you should see your filesystem.
 
    In some cases you might need to install a new kernel, remove a bad package, or use `xvdb1` as the `/` directory.
+   
+### Use xvdb1 as the / directory
+   
+Use the following steps to set `xvdb1` as the `/` directory:
 
+1. Mount the necessary filesystem directories by running the following commands:
 
+       mount -t proc none /mnt/proc
+       mount --rbind /sys /mnt/sys
+       mount --rbind /dev /mnt/dev
 
-First mount the necessary filesystem directories by running the following commands:
+2. Set up networking for your chrooted session by running the following commands:
 
-mount -t proc none /mnt/proc
-mount --rbind /sys /mnt/sys
-mount --rbind /dev /mnt/dev
+       ln -s /etc/resolv.conf /mnt/etc/resolv.conf
 
-Set up Networking for your chrooted session:
+       chroot /mnt /bin/bash
 
-ln -s /etc/resolv.conf /mnt/etc/resolv.conf
-
-chroot /mnt /bin/bash
-
-The filesystem is now mounted as **/**.
+   The filesystem is now mounted as **/**.
