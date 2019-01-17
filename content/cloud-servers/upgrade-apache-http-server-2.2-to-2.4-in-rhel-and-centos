@@ -1,7 +1,7 @@
 ---
-permalink: upgrade-apache-2.2-to-2.4-in-rhel-centos
+permalink: upgrade-apache-http-server-2.2-to-2.4-in-rhel-and-centos/
 audit_date:
-title: Upgrading Apache 2.2 to 2.4 in RHEL 6 or 7 and CentOS 6 or 7
+title: Upgrade Apache HTTP Server 2.2 to 2.4 in RHEL 6 or 7 and CentOS 6 or 7
 created_date: '2019-01-17'
 created_by: Rackspace Community
 last_modified_date: '2019-01-17'
@@ -16,11 +16,11 @@ If you recently performed a compliance security scan, the results might look lik
     Apache HTTP Server mod_rewrite Terminal Escape Sequence Vulnerability, CVE-2013-1862
     Apache HTTP Server XSS Vulnerabilities via Hostnames, CVE-2012-3499 CVE-2012-4558
 
-Depending on the code base, Apache&reg; might have already mitigated these security issues. The scan checks the version of Apache that is installed on the server to determine if the security issue was resolved. However, some compliance security scans only use the version of Apache to determine if the server is vulnerable to Common Vulnerabilities and Exposures (CVE), rather than detecting vulnerabilities directly. 
+Depending on the code base, Apache&reg; HTTP Server might have already mitigated these security issues. The scan checks the version of Apache that is installed on the server to determine if the security issue was resolved. However, some compliance security scans only use the version of Apache to determine if the server is vulnerable to Common Vulnerabilities and Exposures (CVE), rather than detecting vulnerabilities directly. 
 
 This almost always generates a false positive. If automatic updates are enabled, the version might remain the same, even if the vulnerability was patched in another release. As a result, the scan might mark the vulnerability as positive. This might also be the case if your provider's scans suddenly show that your server is no longer vulnerable to vulnerabilities that the scans have previously identified.
 
-If your security audit reveals that your compliance security scans only use the version of Apache to identify vulnerabilities on your Apache2 server, use the following steps to edit the configuration file for your Hypertext Transfer Protocol daemon (HTTPd).
+If your security audit reveals that your compliance security scans only use the version of Apache to identify vulnerabilities on your Apache2 server, use the following steps to edit the configuration file for your Hypertext Transfer Protocol daemon (HTTPd):
 
 1. Open your `/etc/apache2/conf.d/httpd.conf` file in an editor. 
 
@@ -78,7 +78,7 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
 
        yum replace httpd --replace-with=httpd24u
 
-5. You must also install Lightweight Directory Access Protocol(LDAP) by running the following command:
+5. You must also install Lightweight Directory Access Protocol (LDAP) by running the following command:
 
        yum install mod_ldap
 
@@ -119,9 +119,11 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
 
 8. In the same file, also change `Options -Indexes FollowSymLinks` to `Options -Indexes +FollowSymLinks`.
 
-9. In your `/etc/httpd/conf/httpd.conf` file, change the `Order`, `Deny`, and `Allow` statements to `Require` statements, as shown in step 7.
+9. In your `/etc/httpd/conf/httpd.conf` file, change the `Order`, `Deny`, and `Allow` statements to `Require` statements, as 
+   shown in step 7.
 
-10. In the `/etc/httpd/conf/httpd.conf` file, also comment out the `LoadModule` directives for modules that are no longer used.
+10. In the `/etc/httpd/conf/httpd.conf` file, also comment out the `LoadModule` directives for modules that are no longer 
+    used.
 
         #2.4 upgrade LoadModule authn_alias_module modules/mod_authn_alias.so
         #2.4 upgrade LoadModule authn_default_module modules/mod_authn_default.so
@@ -140,29 +142,30 @@ Use the following steps to update Apache 2.2 to Apache 2.4:
         LoadModule ssl_module modules/mod_ssl.so
         LoadModule socache_shmcb_module modules/mod_socache_shmcb.so
 
-### Optional
+### (*Optional*) Download a compatible version of the Adobe Experience Manager (AEM) Dispatcher module
 
-12. If the HTTPd installation uses the Adobe Experience Manager (AEM) Dispatcher module, you need to [download the file that's compatible with Apache HTTP Server 2.4](https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html).
+If the HTTPd installation uses the Adobe Experience Manager (AEM) Dispatcher module, you must use the following steps to [download the file that's compatible with Apache HTTP Server 2.4](https://www.adobeaemcloud.com/content/companies/public/adobe/dispatcher/dispatcher.html):
 
-
-13. Run the following commands to extract the **dispatcher-apache2.4-4.1.11.so** file from the Tape ARchive (TAR) file into 
+1. Run the following commands to extract the **dispatcher-apache2.4-4.1.11.so** file from the Tape ARchive (TAR) file into 
     `/etc/httpd/modules/`. Only this file is used.
 
         cd /etc/httpd/modules
         rm mod_dispatcher.so
         ln -s /etc/httpd/modules/dispatcher-apache2.4-4.1.11.so mod_dispatcher.so
 
-14. Because SSL Mutex is deprecated, you need to edit the `/etc/httpd/conf.d/ssl.conf` file to change `SSLMutex default` to `Mutex default`. 
+2. Because SSL Mutex is deprecated, you need to edit the `/etc/httpd/conf.d/ssl.conf` file to change `SSLMutex default` to `Mutex default`. 
 
 For more details, see the [Apache documentation on the Mutex Directive](https://httpd.apache.org/docs/2.4/mod/core.html#mutex).
 
-### Critical
+### Critical: Restart the HTTPd
 
-12. Run the following command to restart the HTTPd:
+After you complete the steps in this guide, you must restart the HTTPd and verify that it is enabled and running by using the following steps:
+
+1. Run the following command to restart the HTTPd:
 
         service httpd start
 
-13. Ensure that the service is enabled and running, and re-enable any monitoring that were enabled before:
+2. Ensure that the service is enabled and running, and re-enable any monitoring that were enabled before:
 
     - On CentOS 7 or Red Hat&reg; Enterprise Linux (RHEL) 7, run the following commands: 
 
