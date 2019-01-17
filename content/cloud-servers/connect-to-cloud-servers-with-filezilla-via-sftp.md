@@ -39,4 +39,4 @@ Click QuickConnect.
 
 If any issues are experienced, check the server logs to see if connections are hitting the server. 
   For CentOS/RHEL based distros, check /var/log/secure
-  For Ubuntu/Debian based distros check in /var/log/auth.log
+  For Ubuntu/Debian based distros, check in /var/log/auth.log
