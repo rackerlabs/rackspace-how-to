@@ -67,6 +67,11 @@ After you complete these steps, you see the following information:
 - Verification code 
 - Emergency scratch codes
 
-You use the new secret key to add the account to your phone's Google Authenticator app. Note the emergency scratch codes and store them somewhere secure. You can use them if you lose your iPhone&reg; or otherwise need to log in to your account without using your phone's Google Authenticator app.
+You use the new secret key to add the account to your phone's Google Authenticator app. 
+Note the emergency scratch codes and store them somewhere secure. You can use them if you 
+lose your iPhone&reg; or otherwise need to log in to your account without using 
+your phone's Google Authenticator app.
 
-Now when you log in to your server under your user account, you are prompted for your Google authentication token and your standard password for the server. Any accounts that don't have this setup are not allowed to log in.
+Now when you log in to your server under your user account, you are prompted for your 
+Google authentication token and your standard password for the server. Any accounts that 
+don't have this setup are not allowed to log in.
