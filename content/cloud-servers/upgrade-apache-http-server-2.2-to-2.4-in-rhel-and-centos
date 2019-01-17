@@ -16,11 +16,19 @@ If you recently performed a compliance security scan, the results might look lik
     Apache HTTP Server mod_rewrite Terminal Escape Sequence Vulnerability, CVE-2013-1862
     Apache HTTP Server XSS Vulnerabilities via Hostnames, CVE-2012-3499 CVE-2012-4558
 
-Depending on the code base, Apache&reg; HTTP Server might have already mitigated these security issues. The scan checks the version of Apache that is installed on the server to determine if the security issue was resolved. However, some compliance security scans only use the version of Apache to determine if the server is vulnerable to Common Vulnerabilities and Exposures (CVE), rather than detecting vulnerabilities directly. 
+Depending on the code base, Apache&reg; HTTP Server might have already mitigated these security issues. The scan 
+checks the version of Apache that is installed on the server to determine if the security issue was resolved. 
+However, some compliance security scans only use the version of Apache to determine if the server is 
+vulnerable to Common Vulnerabilities and Exposures (CVE), rather than detecting vulnerabilities directly. 
 
-This almost always generates a false positive. If automatic updates are enabled, the version might remain the same, even if the vulnerability was patched in another release. As a result, the scan might mark the vulnerability as positive. This might also be the case if your provider's scans suddenly show that your server is no longer vulnerable to vulnerabilities that the scans have previously identified.
+This almost always generates a false positive. If automatic updates are enabled, the version might remain the same, 
+even if the vulnerability was patched in another release. As a result, the scan might mark the vulnerability 
+as positive. This might also be the case if your provider's scans suddenly show that your server is 
+no longer vulnerable to vulnerabilities that the scans have previously identified.
 
-If your security audit reveals that your compliance security scans only use the version of Apache to identify vulnerabilities on your Apache2 server, use the following steps to edit the configuration file for your Hypertext Transfer Protocol daemon (HTTPd):
+If your security audit reveals that your compliance security scans only use the version of Apache to identify 
+vulnerabilities on your Apache2 server, use the following steps to edit the configuration file for your 
+Hypertext Transfer Protocol daemon (HTTPd):
 
 1. Open your `/etc/apache2/conf.d/httpd.conf` file in an editor. 
 
@@ -29,8 +37,8 @@ If your security audit reveals that your compliance security scans only use the 
        ServerSignature Off
        ServerTokens Prod
 
-   **Note**: Your server shouldn't provide a version signature, and your pentesting company should recommend that you disable 
-   versions.
+   **Note**: Your server shouldn't provide a version signature, and your pentesting company should recommend that 
+   you disable versions.
 
 ### Perform the update from Apache 2.2 to Apache 2.4
 
