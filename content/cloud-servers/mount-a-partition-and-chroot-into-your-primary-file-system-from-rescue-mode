@@ -10,7 +10,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article shows you how to mount a partition and chroot into your primary file system from Rescue Mode.
+This article shows you how to mount a partition and chroot into your 
+primary file system from Rescue Mode.
 
 ### Begin an investigation of a server in Rescue Mode
 
@@ -21,8 +22,9 @@ Use the following steps to begin an investigation of a server in Rescue Mode:
        fdisk -l
        
    **Note**: Depending on the version of the base image that you have built from, the partition 
-   is either sdb1 (Xen Classic) or xvdb1 (Xen Server). (With `fdisk -l` choose the largest partition). 
-   This article assumes that you are using Xen Server.
+   is either sdb1 (Xen Classic) or xvdb1 (Xen Server). 
+   (With `fdisk -l` choose the largest partition). This article assumes that you 
+   are using Xen Server.
 
 2. Mount the partition by running the following command, replacing `xvdb1` if necessary:
 
@@ -30,7 +32,8 @@ Use the following steps to begin an investigation of a server in Rescue Mode:
 
    When you navigate to the `/mnt` directory, you should see your file system.
 
-   In some cases you might need to install a new kernel, remove a bad package, or use `xvdb1` as the `/` directory.
+   In some cases you might need to install a new kernel, remove a bad package, 
+   or use `xvdb1` as the `/` directory.
    
 ### Use xvdb1 as the / directory
    
