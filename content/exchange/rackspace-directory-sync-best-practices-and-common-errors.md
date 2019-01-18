@@ -20,7 +20,7 @@ This guide discusses best practices while using Rackspace Directory Sync with Ra
 
 2. Create a new administrator on the **Domain Controller** to manage the **Directory Sync Service**.
 
-  **Note:**  This admin should be created with at least domain admin level permissions.
+    **Note:**  This admin should be created with at least domain admin level permissions.
 
 3. Create a new **Security Group** to synchronize with the Cloud Office mailboxes.
 
