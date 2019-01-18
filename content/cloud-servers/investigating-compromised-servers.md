@@ -11,11 +11,11 @@ product_url: cloud-servers
 ---
 
 This article lists the tools that are available for performing an analysis of a compromised server. (Cleaning the 
-compromised server is outside of its scope.) Using these tools help you determine the following information:
+compromised server is outside of its scope.) Using these tools helps you determine the following information:
 
 - The point of entry
 - The origin of the attack
-- Which files were compromised
+- Which files are compromised
 - The level of access that the attacker obtained
 - The audit trail of the attacker's footprints
 
@@ -28,7 +28,7 @@ For most root-level compromises, the most straightforward recovery approach is t
 
 ### Document the attack
 
-When you're notified that a system under your control might be compromised, ensure that you obtain as much information as possible from the reporter, including:
+When you're notified that a system under your control might be compromised, ensure that you obtain as much information as possible from the reporter, including the following items:
 
 - How the initial problem was found
 - The estimated time that the compromise occurred
@@ -41,41 +41,41 @@ If you choose to proceed with the investigation, document anything that you find
 
 ### Investigation tools
 
-In some compromises, the attacker manages to delete all important log files to hide their tracks. However, this doesn't always occur. As a result, the log files leave valuable clues regarding what the attacker did to the server. The log files might also help you determine if the attack was a basic web hack or a root-level compromise. Use the commands in this section to try to find clues that will help you unravel the extent of the compromise.
+In some compromises, the attacker manages to delete all important log files to hide their tracks. However, this doesn't always occur. As a result, the log files leave valuable clues regarding what the attacker did to the server. The log files might also help you determine if the attack was a basic web hack or a root-level compromise. Use the commands in this section to try to find clues to help you unravel the extent of the compromise.
 
-#### Last
+#### last command
 
-The `last` command lists the sessions of users who recently logged in to the system. It includes the timestamps and hostnames, and indicates whether the user is still logged in. If an odd Internet Protocol (IP) address appears in the output, you can cross-reference it against a brute-force Secure Shell (SSH) attack in the `/var/log/messages` or `/var/log/secure` directory. This step might indicate how the attacker gained entry, what username they used to gain access, and if they were able to escalate their privileges to `root`.
+The `last` command lists the sessions of users who recently logged in to the system. Its output includes the timestamps and hostnames, and indicates whether the user is still logged in. If an odd Internet Protocol (IP) address appears in the output, you can cross-reference it against a brute force Secure Shell (SSH) attack in the `/var/log/messages` or `/var/log/secure` directory. This step might indicate how the attacker gained entry, what username they used to gain access, and if they were able to escalate their privileges to `root`.
 
-#### ls -lart
+#### ls -lart command
 
 The `ls -lart` command outputs a time-ordered list of files and directories that you can correlate against the time that the compromise occurred. This output can help you determine what the attack added or removed from the system.
 
-#### netstat -na
+#### netstat -na command
 
 The `netstat -na` command displays the current listening sockets on the machine. Running this command might reveal any back doors that are listening or errant services that are running.
 
-#### ps -wauxef    
+#### ps -wauxef command    
 
-This command helps you track down any errant processes that are listening and shows other odd processes (for example, the user `www` running a bash process). You can also run the command `lsof |grep <pid>` to find more information about open files that this process is using. Concurrently, running `cat /proc/<pid>/cmdline` might also tell you where the file that controls this process exists.
+This command helps you track down any errant processes that are listening and shows other odd processes (for example, the user `www` running a bash process). You can also run the command `lsof |grep <pid>` to find more information about open files that a process is using. Concurrently, running `cat /proc/<pid>/cmdline` might also tell you where the file that controls a process exists.
 
-#### bash_history
+#### bash_history command
 
-The history file is often the "Rosetta stone" of tracking down what took place during a compromise. Using the `bash_history` command to look through the user's `.bash_history` file often shows exactly what commands they executed, what malicious programs they downloaded, and the directories on which they focused.
+The history file is often the Rosetta stone of tracking down what took place during a compromise. Using the `bash_history` command to look through the user's `.bash_history` file often shows exactly what commands they executed, what malicious programs they downloaded, and the directories on which they focused.
 
-### top
+### top command
 
 Malicious processes often cause central processing unit (CPU) contention issues within the environment, and therefore appear near the top of the list of processes. Use the `top` command to display this list. When you're tracking down a compromise, consider any processes that cause CPU contention issues suspicious.
 
-#### strace
+#### strace command
 
 When you run the `strace -p pid` command on a suspicious process, the `strace` command might yield important insight into what the process is doing.
 
 ### Other tools
 
-These commands might not provide many clues regarding what occurred during the attack. If this is the case, you can use more specialized tools.
+The preceding commands might not provide many clues regarding what occurred during the attack. If this is the case, you can use more specialized tools.
 
-**Important**: Before you use the tools in this section, you should confirm that the binaries that you are using to investigate are not trojanned versions. These trojanned versions can perform tasks on behalf of the attacker, such as 
+**Important**: Before you use the tools in this section, you should confirm that the binaries that you are using to investigate are not trojanned versions. Trojanned versions can perform tasks on behalf of the attacker, such as 
 omitting information that might reveal what the compromise was trying to accomplish.
 
 Run the following command to verify that you have a good working set of tools:
@@ -95,11 +95,11 @@ The following example shows a trojanned file:
 
     S.5….T /bin/login
 
-#### rpm -qa
+#### rpm -qa command
 
-You can use the command `rpm -qa` to show recently-installed packages in chronological order. However, in the case of a root compromise, the rpm database might also be compromised.
+You can use the command `rpm -qa` to show recently installed packages in chronological order. However, in the case of a root compromise, the rpm database might also be compromised.
 
-#### lsattr
+#### lsattr command
 
 If the attacker is able to gain root access and trojan certain binaries, they might make those binaries immutable so that you cannot reinstall clean versions of them. Check the following directories:
 
@@ -115,7 +115,7 @@ The following example shows a file that an attacker has made immutable:
 
     ------------- /bin/ps
 
-#### find
+#### find command
 
 `find` is a UNIX tool that can be critical in finding recently modified files. For example, you can find files that were modified within the past five days by running the following command:
 
@@ -123,7 +123,7 @@ The following example shows a file that an attacker has made immutable:
 
 ### Common directories for web exploits
 
-Check the following world-writable directories to which Apache&rg; commonly writes temporary files:
+Check the following world-writable directories to which Apache&reg; commonly writes temporary files:
 
 - `ls -al /tmp`
 - `ls -al /var/tmp`
@@ -136,7 +136,7 @@ If you have set permissions for directories on your website to 777, check those 
 ### Find the point of entry
 
 If you find helpful information by using the tools in the previous sections, you might also have a timestamp for the time 
-that the malicious file(s) were installed on the server.
+that the malicious file or files were installed on the server.
 
 You can use that timestamp to review your website's access logs for suspicious entries that were added during that time period. If you find something suspicious, you can cross-reference it with the location of the malicious files to narrow down the point of entry.
 
@@ -166,7 +166,7 @@ Output:
 
     s---ia------- /sbin/shs
 
-When you `strings` that file, you see that it's a backdoor shell.
+When you use the `strings` command on that file, you see that it's a backdoor shell.
 
 ### Step 2: Check if the attacker cleaned their tracks 
 
@@ -195,7 +195,7 @@ If steps 1 and 2 don't reveal anything, the attack is probably a simple web hack
 formatting the server.
 
 However, in this example, we know that the attacker gained root privileges. They also might have exploited phpMyAdmin. 
-After the backdoor phpshell loaded, the attacker was able to perform a local root exploit to escalate their privileges.
+After the backdoor PHP Shell loaded, the attacker was able to perform a local root exploit to escalate their privileges.
 
 Run the following commands to find hidden files and directories in the world-readable directories to which Apache 
 typically writes `tmp` files:
@@ -212,9 +212,9 @@ In this example, the commands return the following output:
 
 If items are found here, you must attempt to track down the entry point so that you can take down the site, upgrade site code, or otherwise fix the exploitable code. Step 5 presents a quick way to accomplish this task. However, if the output of the `ps -waux` command shows that IRC bots are running, then you can try to catch where the process is running from by using the `lsof` command or `ps -wauxxef |grep <pid>`.
 
-### Step 4: Look for PIDs that are listening for incoming connections
+### Step 4: Look for process identifiers that are listening for incoming connections
 
-Run the following commands to look for PIDs that are listening for incoming connections:
+Run the following commands to look for process identifiers (PIDs) that are listening for incoming connections:
 
 - `netstat -natp`: Looks for any suspicious connections that are running on odd ports
 - `ps -wauxxef`: Looks for suspicious files, such as `bash` running under a `www` context
@@ -226,7 +226,7 @@ The output appears similar to the following example:
 
     tcp 0 1 172.16.23.13:60968 22.22.22.22:7000 SYN_SENT 6860/sshd
 
-In this example scenario, there are also several other SSH-established connections running from high-level ports, as shown in 
+In this example, several other SSH-established connections are also running from high-level ports, as shown in 
 the following example:
 
     [root@www tmp]# netstat -natp |grep sshd |awk '{print $4,$5,$6,$7}'
@@ -258,7 +258,7 @@ because they probably modified the binaries to hide themselves.
 
 Use the following steps to determine the point of entry for the original compromise:
 
-1. Check `/var/log/[messages|secure]` for brute-force SSH attempts.
+1. Check `/var/log/[messages|secure]` for brute force SSH attempts.
 
 2. Check the Apache access logs and error logs. This step might help determine which site is exploitable.
 
@@ -278,4 +278,4 @@ Use the following steps to determine the point of entry for the original comprom
 
 ### Outcome
 
-In this example scenario, our investigation revealed that the phpMyAdmin installation in the `/var/www/html` directory was exploited, most likely because the version of phpMyAdmin installed on the server was severely outdated. Patching phpMyAdmin on a regular schedule prevents this situation from occurring.
+In this example, our investigation revealed that the phpMyAdmin installation in the `/var/www/html` directory was exploited, most likely because the version of phpMyAdmin installed on the server was severely outdated. Patching phpMyAdmin on a regular schedule prevents this situation from occurring.
