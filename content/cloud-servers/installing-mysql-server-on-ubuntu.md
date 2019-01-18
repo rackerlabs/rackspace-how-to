@@ -86,7 +86,7 @@ password that you set, you can create or change the password.
 1. Enter the following command in the `mysql` shell, replace `password` with
    your new password:
 
-       UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root';
+       UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root';
 
 2. To make the change take effect, reload the stored user information with the following command:
 
