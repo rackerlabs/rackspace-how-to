@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article demonstrates some simple configuration changes that you can implement on a [Postfix](http://www.postfix.org) installation on your mail server to help stop some of the flow of spam to your mailboxes.
+This article demonstrates some simple configuration changes that you can implement on a [Postfix](http://www.postfix.org) installation on your mail server to reduce spam.
 
 ### Enable Realtime Blackhole Lists
 
@@ -20,9 +20,9 @@ You can configure Postfix to check the IP addresses of incoming messages against
 
 You configure RBLs under the `smtpd_recipient_restrictions` parameter in the main Postfix configuration file, which is usually located at **/etc/postfix/main.cf**. The following Postfix configuration file example uses six different RBLs:
 
-smtpd_recipient_restrictions =
+       smtpd_recipient_restrictions =
             reject_rbl_client zen.spamhaus.org,
-            reject_rbl_client bl.spamcop.net,
+            reject_rbl_client bl.spamcop.net,stop
             reject_rbl_client dnsbl.sorbs.net,
             reject_rbl_client cbl.abuseat.org,
             reject_rbl_client b.barracudacentral.org,
