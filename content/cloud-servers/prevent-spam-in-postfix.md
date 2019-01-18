@@ -2,10 +2,10 @@
 permalink: prevent-spam-in-postfix/
 audit_date:
 title: Prevent spam in Postfix
-created_date: '2019-01-16'
+created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-18'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
