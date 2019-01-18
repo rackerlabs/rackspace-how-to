@@ -1,72 +1,87 @@
 ---
-permalink: setting-up-sftp-users-in-rhel-centos-ubuntu-debian
+permalink: set-up-sftp-users-in-rhel-centos-ubuntu-and-debian/
 audit_date:
-title: Setting Up SFTP Users in RHEL 6, CentOS 6, Ubuntu & Debian
-created_date: '2019-01-16'
+title: Set up SFTP users in RHEL 6, CentOS 6, Ubuntu, and Debian
+created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-18'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article is for creating secured sftp users jailed to their home directory; some people may just need a user account with no locked down permissions. This article explains how to lock it down and make secure.
+This article shows you how to create secured SSH File Transfer Protocol (SFTP) users that are jailed to their home directories.
 
-**WARNING: Do not try to jail the root user, only additional users (other than root!) or you can prevent root from performing operations correctly.**
+**WARNING**: Do not try to jail the root user. Only jail additional users so that you don't prevent the root user from performing operations correctly.
 
-1. It's important to remember that making permissions changes to your folders that you test your website after doing this work.
+Before you begin, you should be familiar with the following best practices:
 
-2. The home directory of the sFTP user needs to be owned by root:root. Other directories below can (and should) be owned (and writable) by the user.
+- The home directory of the SFTP user must be owned by `root:root`. Other directories below can (and should) be owned (and writable) by the user.
 
-3. It's important to ensure the chroot user has write access to the specified DocumentRoot. This can be tested by
+- It's important to ensure the chroot user has write access to the specified DocumentRoot. This can be tested by
 
-4. It's important to login and test the SFTP user is working correctly
+- It's important to login and test the SFTP user is working correctly
 
-5. It's important to ensure that the SFTP user added is added to the SFTP group
+- It's important to ensure that the SFTP user added is added to the SFTP group
 
-6. These instructions are for adding a single domain (SFTP user), but could potentially be used to manage multiple domains (a second tutorial is under-way explaining this)
-**THIS WILL NOT WORK WITH RHEL7/CENTOS 7**
-As with any proper chroot, this configuration does not provide write access to the chroot directory. Only subdirectories of the chroot jail will be writable. It's important for you to understand why this is, and it is to do with the way that root permissions are interpreted at the higher level directories that the SFTP user is contained. Now for the setup;
-**ADD SFTP GROUP**
-# Add the sftp group which will be used for SFTP access
-groupadd sftponly
+- These instructions are for adding a single domain (SFTP user), but could potentially be used to manage multiple domains.
 
-**ADD SFTP USER**
-# Add SFTP User, replacing 'myuser' with your username of choice.
+**Important**: The steps in this article do not work with RHEL 7 or CentOS 7. As with any proper `chroot` operation, this configuration does not provide write access to the chroot directory. Only subdirectories of the `chroot` jail are writable. This is due to the way that root permissions are interpreted at the higher level directories that the SFTP user is contained. 
 
-useradd -d /var/www/vhosts/domain.com -s /bin/false -G sftponly myuser
+Use the following steps to create secured SSH File Transfer Protocol (SFTP) users that are jailed to their home directories:
 
-**Create a password for your username, (without one you cannot authenticate)**
-# Create password for user (replace myuser with your username of choice)
-passwd myuser
+1. Add the SFTP group that you want to use for SFTP access by running the following command:
 
-**Ensure the following line is commented out in your sshd configuration file ( File Location: /etc/ssh/sshd_config)**
-# Edit the sshd_config file which holds the SSH/SFTP configuration
-nano /etc/ssh/sshd_config
+       groupadd sftponly
 
-# Ensure this below Line has a hash symbol, # in front of it
-#Subsystem sftp /usr/lib/openssh/sftp-server
+2. Add the SFTP user by running the following command, replacing `myuser` with the username:
 
-# Ensure that this below line is added directly below the line you just commented out with a hash symbol #
+       useradd -d /var/www/vhosts/domain.com -s /bin/false -G sftponly myuser
 
-Subsystem sftp internal-sftp 
+3. Create a password for the user by running the following command, replacing `myuser` with the username:
+
+       passwd myuser
+
+4. Ensure that the following line is commented out in the solid-state hybrid drive (SSHD) configuration file at `/etc/ssh/sshd_config`:
+
+
+
+5. Open the `sshd_config` file that holds the SSH and SFTP configuration by running the following command:
+
+       nano /etc/ssh/sshd_config
+
+6. Ensure that the following line begins with a hash symbol (#):
+
+       #Subsystem sftp /usr/lib/openssh/sftp-server
+
+7. Add the following line directly below the line that you just commented out:
+
+       Subsystem sftp internal-sftp 
  
-**Add the following to the bottom of the same file (it must be at the very bottom)**
-Match Group sftponly
-     ChrootDirectory %h
-     X11Forwarding no
-     AllowTCPForwarding no
-     ForceCommand internal-sftp
-**Test the changes with sshd before restarting the service, please note it's important you do this correctly, or may break your sshd configuration**
-sshd -t
-service sshd restart
+8. Add the following code to the bottom of the file:
 
+       Match Group sftponly
+            ChrootDirectory %h
+            X11Forwarding no
+            AllowTCPForwarding no
+            ForceCommand internal-sftp
 
-Now, we've added the important necessities for the SFTP SSHD Server, which handles the request, but for this to be properly configured, we need to ensure that the file permissions on the filesystem are correct, otherwise the 'SFTP Jail' will not work correctly.
+9. Run the `sshd` command to test the changes, then restart the service. 
 
-**Ensure that the SFTPROOT (the home directory we set when adding the SSH User) has the right user:root group:root permissions.**
-chown root:root /var/www/vhosts/mywebsite.com/
-**Test SFTP login is working**
+   **Important**: If this step is performed incorrectly, it might break your SSHD configuration.
+
+       sshd -t
+       service sshd restart
+
+### Ensure that the file permissions on the file system are correct
+
+Next, you need to verify that the file permissions on the file system are correct so that the "SFTP jail" works correctly.
+
+1. Verify that the `SFTPROOT` directory (the home directory that you set when you added the SSH user) has the right `user:root group:root` permissions by running the following command:
+
+       chown root:root /var/www/vhosts/mywebsite.com/
+
+2. Verify that the SFTP login is working.
 # Connect to SFTP using the myuser, replace myuser with the user you've chosen
 
 sftp myuser@localhost
@@ -106,3 +121,5 @@ C. Click **Open Connections**
 D. Select 'SFTP (SSH File Transfer Protocol) from the top drop down menu. 
 E. Insert the server IP address in the 'server' box, and the username and passowrd your using for connecting to SFTP. 
 F. Click **connect**.
+
+It's important to remember that making permissions changes to your folders that you test your website after doing this work.
