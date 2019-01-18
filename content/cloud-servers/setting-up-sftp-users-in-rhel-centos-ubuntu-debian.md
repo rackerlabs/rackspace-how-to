@@ -83,7 +83,7 @@ Next, you need to verify that the file permissions on the file system are correc
 
        chown root:root /var/www/vhosts/mywebsite.com/
 
-2. To verify that the SFTP login works, connect to SFTP by using the myuser account, replacing `myuser` with the user that you have chosen, as shown in the following example:
+2. To verify that the SFTP login works, connect to SFTP by running the following command, replacing `myuser` with the user that you have chosen, as shown in the following example:
 
        sftp myuser@localhost
        myuser@localhost's password:
@@ -100,31 +100,40 @@ Next, you need to verify that the file permissions on the file system are correc
        drwxr-xr-x    2 5001     33           4096 Sep 28 08:52 html
        -rw-r--r--    1 0        0               0 Sep 28 08:09 test.php
 
-### EXTRA INFORMATION / DETAIL
-Use the `cd` command to go to the HTML directory (which is located at `/var/www/vhosts/mywebsite.com/html` because the website 'documentroot' is one level below the SSH SFTP user's `root` directory. You should use this setup because your `www-data` users (the webservers users) have root `user:group` permissions on its files.
+   **Note**: Use the `cd` command to go to the HTML directory (which is located at `/var/www/vhosts/mywebsite.com/html` 
+   because the website 'documentroot' is one level below the SSH SFTP user's `root` directory. You should use this setup 
+   because your `www-data` users (the webservers users) have root `user:group` permissions on its files.
 
-# Test putting files (uploading)
+4. Test the ability to upload files by running the following commands:
 
-sftp> cd html
-sftp> put test.php
-Uploading test.php to /html/test.php
-test.php                                                                                                                                                                                                                                    100%    12K     20.0KB/s   00:00
+       sftp> cd html
+       sftp> put test.php
+       Uploading test.php to /html/test.php
+       test.php                                                                                                                                                                                                                                        
+       100%    12K     20.0KB/s   00:00
 
-# Test getting files (downloading files)
+5. Test the ability to download files by running the following command:
 
-sftp> get test.php
-Fetching /test.php to test.php
+       sftp> get test.php
+       Fetching /test.php to test.php
 
-# Show the 'present working directory' , for illustration purposes, as you can see SFTP only sees the stuff inside /var/www/vhosts/mywebsite.com/ and considers this directory as the 'highest' level or '/' root.
-sftp> pwd
-Remote working directory: /html
-**Connecting to SFTP (SFTP Client Setup)**
+6. Display the present working directory by running the following command:
 
-A. Install Cyberduck from https://cyberduck.io/?l=en
-B. Open
-C. Click **Open Connections**
-D. Select 'SFTP (SSH File Transfer Protocol) from the top drop down menu. 
-E. Insert the server IP address in the 'server' box, and the username and passowrd your using for connecting to SFTP. 
-F. Click **connect**.
+       sftp> pwd
 
-It's important to remember that making permissions changes to your folders that you test your website after doing this work.
+       Remote working directory: /html
+
+   SFTP only sees the files in the `/var/www/vhosts/mywebsite.com/` directory, and considers 
+   this directory the highest-level, root ('/') directory.
+
+7. Use the following steps to connect to SFTP and set up your SFTP client:
+
+   a. Install [Cyberduck&reg;](https://cyberduck.io/download/).
+   b. Open the Cyberduck application.
+   c. At the top of the window, click the icon for **Open Connection**.
+   d. In the drop-down menu, select **SFTP (SSH File Transfer Protocol)**. 
+   e. In the **Server** field, enter the Internet Protocol (IP) address for the server.
+   f. Enter the username and password that you use to connect to SFTP. 
+   g. Click **Connect**.
+
+**Important**: Always test your website after your change file permissions.
