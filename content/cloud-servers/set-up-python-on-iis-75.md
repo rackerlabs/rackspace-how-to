@@ -16,7 +16,7 @@ Use the following steps to install and set up Python on Internet Information Ser
 2. Launch IIS Manager by selecting **Control Panel > Administrative Tools > Internet Information Services (IIS) Manager**.
 3. Click on your website and double-click on **Handler Mappings** in the center panel. 
 4. Click **Add Script Map** in the **Actions** box to the right.
-5. In the **Add Script Map** window, enter ***.py** as the **Request Path**, and **python.exe** as the **Executable**. 
+5. In the **Add Script Map** window, enter `*.py` as the **Request Path**, and **python.exe** as the **Executable**. 
 6. Add the following two parameters at the end of the path:
 
    **-u %s**
