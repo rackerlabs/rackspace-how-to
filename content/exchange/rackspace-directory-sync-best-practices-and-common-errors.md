@@ -92,7 +92,7 @@ This section describes common errors and their solutions.
     **Cause:** This error occurs because the domain used in the proxyAddress attribute does not exist in our environment as an accepted domain or exists in another attribute such as the mail attribute.
     The proxyAddresses attribute is used to create alternate email addresses for our Exchange environment. Those alternate email addresses are aliases specific to that user's mailbox. Any address that begins with SMTP: tries to create an alternate email address associated to the user's mailbox.
 
-    **Solution:** 
+    **Solution:**  
 
     - Check the proxyAddress within the **Attribute Editor** tab of the user object in the Active Directory Users and Computers (ADUC). You will need to have **Advanced Features** enabled in view settings to see this tab.
 
