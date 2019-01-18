@@ -36,7 +36,7 @@ Use the following steps to begin an investigation of a server in rescue mode:
    In some cases you might need to install a new kernel, remove a bad package,
    or use `xvdb1` as the root (`/`) directory.
 
-### Use xvdb1 as the / directory
+### Use xvdb1 as the root directory
 
 Use the following steps to set `xvdb1` as the `/` directory:
 
@@ -54,4 +54,4 @@ Use the following steps to set `xvdb1` as the `/` directory:
 
        chroot /mnt /bin/bash
 
-   The file system is now mounted as **/**.
+   The file system is now mounted as the root directory.
