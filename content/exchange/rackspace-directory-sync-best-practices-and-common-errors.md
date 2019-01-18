@@ -54,6 +54,7 @@ This section describes common errors and their solutions.
     **Cause:** Directory Sync cannot create a new mailbox because all the purchased mailboxes are in use.
 
     **Solution:**
+    Use one of the following solutions:
 
     - Add additional mailbox licenses through the Cloud Office Control Panel.
 
@@ -83,6 +84,8 @@ This section describes common errors and their solutions.
 
     **Solution:**
 
+    Use one of the following solutions:
+
     - Remove the mailbox within the control that matches the email address attribute of the Security Group in your Active Directory.
 
     - Create a new email address for the distribution list within the Active Directory that is currently not in use.
@@ -93,6 +96,8 @@ This section describes common errors and their solutions.
     The proxyAddresses attribute is used to create alternate email addresses for our Exchange environment. Those alternate email addresses are aliases specific to that user's mailbox. Any address that begins with SMTP: tries to create an alternate email address associated to the user's mailbox.
 
     **Solution:**  
+
+    Use one of the following solutions:
 
     - Check the proxyAddress within the **Attribute Editor** tab of the user object in the Active Directory Users and Computers (ADUC). You will need to have **Advanced Features** enabled in view settings to see this tab.
 
