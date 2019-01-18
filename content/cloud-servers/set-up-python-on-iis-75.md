@@ -13,7 +13,8 @@ product_url: cloud-servers
 Use the following steps to install and set up Python on Internet Information Services (IIS) 7.5:
 
 1. Ensure that IIS Common Gateway Interface (CGI) is installed through role services.
-2. Launch IIS Manager by selecting **Control Panel > Administrative Tools > Internet Information Services (IIS) Manager**.
+2. Launch IIS Manager by selecting **Control Panel > Administrative Tools > 
+   Internet Information Services (IIS) Manager**.
 3. Click on your website and double-click on **Handler Mappings** in the center panel. 
 4. Click **Add Script Map** in the **Actions** box to the right.
 5. In the **Add Script Map** window, enter `*.py` as the **Request Path**, and **python.exe** as the **Executable**. 
