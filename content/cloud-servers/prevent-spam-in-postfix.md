@@ -10,7 +10,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article demonstrates some simple configuration changes that you can implement on a [Postfix](http://www.postfix.org) installation on your mail server to reduce spam.
+This article demonstrates some simple configuration changes that you can implement on 
+a [Postfix](http://www.postfix.org) installation on your mail server to reduce spam.
 
 ### Enable Realtime Blackhole Lists
 
