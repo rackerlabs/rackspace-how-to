@@ -12,7 +12,7 @@ product_url: exchange
 ---
 
 
-This guide discusses best practices while using Directory Sync with Rackspace's Hosted Email services as well as outlines common errors and solutions.
+This guide discusses best practices while using Directory Sync with Rackspace's Hosted Email services as well as outlines common errors and solutions. 
 
 ### Directory Sync installation and setup best practices
 
