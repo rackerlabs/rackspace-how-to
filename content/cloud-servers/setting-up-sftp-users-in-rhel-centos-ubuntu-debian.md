@@ -16,15 +16,17 @@ This article shows you how to create secured SSH File Transfer Protocol (SFTP) u
 
 Before you begin, you should be familiar with the following best practices:
 
-- The home directory of the SFTP user must be owned by `root:root`. Other directories below can (and should) be owned (and writable) by the user.
+- The home directory of the SFTP user must be owned by `root:root`. Other directories 
+  can (and should) be owned (and writable) by the user.
 
-- It's important to ensure the chroot user has write access to the specified DocumentRoot. This can be tested by
+- It's important to ensure the chroot user has write access to the specified DocumentRoot.
 
 - It's important to login and test the SFTP user is working correctly
 
 - It's important to ensure that the SFTP user added is added to the SFTP group
 
-- These instructions are for adding a single domain (SFTP user), but could potentially be used to manage multiple domains.
+- These instructions are for adding a single domain (SFTP user), but could potentially 
+  be used to manage multiple domains.
 
 **Important**: The steps in this article do not work with RHEL 7 or CentOS 7. As with any proper `chroot` operation, this configuration does not provide write access to the chroot directory. Only subdirectories of the `chroot` jail are writable. This is due to the way that root permissions are interpreted at the higher level directories that the SFTP user is contained. 
 
@@ -81,22 +83,25 @@ Next, you need to verify that the file permissions on the file system are correc
 
        chown root:root /var/www/vhosts/mywebsite.com/
 
-2. Verify that the SFTP login is working.
-# Connect to SFTP using the myuser, replace myuser with the user you've chosen
+2. To verify that the SFTP login works, connect to SFTP by using the myuser account, replacing `myuser` with the user that you have chosen, as shown in the following example:
 
-sftp myuser@localhost
-myuser@localhost's password:
-Connected to localhost.
+       sftp myuser@localhost
+       myuser@localhost's password:
+       Connected to localhost.
 
-# Test Directory Listing
-sftp> ls -al
-drwxr-xr-x    3 0        0            4096 Sep 28 08:09 .
-drwxr-xr-x    3 0        0            4096 Sep 28 08:09 ..
-drwxr-xr-x    2 5001     33           4096 Sep 28 08:52 html
--rw-r--r--    1 0        0               0 Sep 28 08:09 test.php
+3. Test the directory listing by running the following command:
 
-# EXTRA INFORMATION / DETAIL
-# cd into the html directory (/var/www/vhosts/mywebsite.com/html, as you can see the website 'documentroot', is one level underneath the SSH SFTP users 'root'. It should be this way to prevent your www-data users (the webservers user) having root user:group permissions on it's files. So essentially the folder up from your webroot, should be chowned root:root , but html underneath it should have permissions more like myuser:www-data
+       sftp> ls -al
+
+   The output should be similar to the following example:
+
+       drwxr-xr-x    3 0        0            4096 Sep 28 08:09 .
+       drwxr-xr-x    3 0        0            4096 Sep 28 08:09 ..
+       drwxr-xr-x    2 5001     33           4096 Sep 28 08:52 html
+       -rw-r--r--    1 0        0               0 Sep 28 08:09 test.php
+
+### EXTRA INFORMATION / DETAIL
+Use the `cd` command to go to the HTML directory (which is located at `/var/www/vhosts/mywebsite.com/html` because the website 'documentroot' is one level below the SSH SFTP user's `root` directory. You should use this setup because your `www-data` users (the webservers users) have root `user:group` permissions on its files.
 
 # Test putting files (uploading)
 
