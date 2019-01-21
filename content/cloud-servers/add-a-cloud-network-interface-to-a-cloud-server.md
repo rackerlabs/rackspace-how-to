@@ -46,8 +46,8 @@ Use the following steps to install nova:
 
         source .profile
 
-5. Now you can use your credentials to display information about your Cloud
-   Networks and Cloud Servers and add the interface by running the following
+5. Now you can use your credentials to display information about your cloud
+   network and cloud server and add the interface by running the following
    commands:
 
        nova credentials
