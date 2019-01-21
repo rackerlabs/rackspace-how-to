@@ -99,7 +99,7 @@ For more information on Rackspace Cloud server flavors, see
 The following image shows a flavor-to-flavor comparison between GoGrid and
 Rackspace:
 
-{insert image here}
+<img src="{% asset_path managed-operations/create-a-cloud-server/Gogrid-rackspace-flavor-map.png %}" />
 
 #### Cloud Storage
 
