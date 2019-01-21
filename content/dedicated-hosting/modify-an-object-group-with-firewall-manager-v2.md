@@ -4,9 +4,9 @@ audit_date: '2018-07-11'
 title: Modify an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
-created_by: Nate Archer
-last_modified_date: '2018-12-06'
-last_modified_by: Stephanie Fillmon
+created_by: Trevor Becker
+last_modified_date: '2019-01-21'
+last_modified_by: Renee Rendon
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
