@@ -20,7 +20,7 @@ We recommend that you use backups to keep your data up to date. Rackspace
 differential backup on a set frequency. You can set a cloud backup to run
 on any number of directories.
 
-**Important**: On Performance Cloud Servers that have a data disc, the data
+**Important**: On performance cloud servers that have a data disc, the data
 partition is not included in any image snapshots that you take. Ensure that
 these data partitions are included in your backup scheme.
 
@@ -59,11 +59,11 @@ backup needs.
 When you install a service, it is not automatically configured to restart
 after the server is rebooted. You must configure services to restart after the
 server reboots. To learn how to perform this task, select the following
-resource that corresponds to your server's OS:
+resource that corresponds to your server's operating system (OS):
 
 - Windows: [Prepare to migrate a Windows server](https://support.rackspace.com/how-to/prepare-to-migrate-a-windows-server/#ensureAutoStart)
-- Ubuntu: [UPDATE-RC.D(8)](https://manpages.debian.org/wheezy/sysv-rc/update-rc.d.8.en.html)
-- RHEL and CentOS: [Using the chkconfig utility](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s2-services-chkconfig)
+- Ubuntu&reg;: [UPDATE-RC.D(8)](https://manpages.debian.org/wheezy/sysv-rc/update-rc.d.8.en.html)
+- RHEL&reg; and CentOS&reg;: [Using the chkconfig utility](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s2-services-chkconfig)
 
 ### Ensure that iptables or Windows Firewall rules are saved and configured to restart on reboot
 
@@ -94,8 +94,8 @@ mounted after the server reboots.
 ### FSCK (File system consistency check)
 
 A file system consistency check (`fsck` operation) generally runs
-automatically at boot time.  There are two common triggers for automatically
-executing a `fsck`. Either the OS detects that a file system is in an
+automatically at boot time.  Two common triggers automatically
+execute an `fsck`. Either the OS detects that a file system is in an
 inconsistent state (due to a non-graceful shutdown such as a crash or loss of
 power), or after the number of times that the system is mounted passes a
 threshold.
@@ -109,9 +109,8 @@ it resumes the file system check and extends the delay.
 
 ### Test
 
-We strongly recommend that you take a few minutes to test the entire process
-of getting your environment back up and running so that you know how your
-servers and other cloud products react during and after a reboot.
+So that you know how your servers and other cloud products react during and after a reboot, we strongly recommend that you take a few minutes to test the entire process
+of getting your environment back up and running.
 
 We recommend that you perform testing during the development phase or on
 separate servers to limit any customer impact.
@@ -122,7 +121,7 @@ Use the tips in this section to reduce the impact of server reboots.
 
 ***Horizontal scaling***
 
-One of the best ways to prevent prolonged impacts of a reboot is to distribute
+One of the best ways to prevent the prolonged impacts of a reboot is to distribute
 your application over multiple redundant, tiered servers. This approach, which
 is called _Horizontal scaling_, is a great way to minimize the risk of
 downtime due to a single server going down.
