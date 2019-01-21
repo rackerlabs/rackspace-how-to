@@ -10,15 +10,15 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article shares tips that help you ensure that server reboots are fast and
-minimally disruptive.
+This article shares tips that help you ensure that server reboots are fast
+and minimally disruptive.
 
 ### Ensure that server backups are configured and running
 
 We recommend that you use backups to keep your data up to date. Rackspace
 [Cloud Backups](https://www.rackspace.com/en-us/cloud/backup) run a
-differential backup on a set frequency. You can set a cloud backup to run on
-any number of directories.
+differential backup on a set frequency. You can set a cloud backup to run
+on any number of directories.
 
 **Important**: On Performance Cloud Servers that have a data disc, the data
 partition is not included in any image snapshots that you take. Ensure that
