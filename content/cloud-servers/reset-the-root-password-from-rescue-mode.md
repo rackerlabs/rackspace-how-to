@@ -34,14 +34,16 @@ this task by using rescue mode:
 
    Add the correct host key in your `~/home/<user name>/.ssh/known_hosts` file
    to prevent this message from displaying.
+   
+   The wrong key displays as the following line of code in the output:
 
    Offending key in **/root/.ssh/known_hosts**:<line number>
 
-   You need to edit the **.ssh/know_host** file to remove the line for the
+   You need to edit the **.ssh/known_hosts** file to remove the line for the
    server's IP address.
 
    If you are connecting from a Mac OS X or Linux system you need to edit the
-   file at `~/home/<user name>/.ssh/known_hosts`:
+   file at `~/home/<user name>/.ssh/known_hosts`.
 
 3. We recommend that you periodically run the file system check (`fsck`)
    command. Performing this step prevents the check from automatically
