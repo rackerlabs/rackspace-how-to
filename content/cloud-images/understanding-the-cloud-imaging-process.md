@@ -39,19 +39,19 @@ longer see the picture on your computer.
 ### How VHDs work
 
 The VHD format works in much the same way as your computer hard drive. A cloud
-server hard drive is made up of two or more VHD files, known as a *VDI chain*.
-With a VDI chain, you start with a base VHD called the *Parent VHD*. This is
-the base information for your instance. When you build a new server from a base
-image, such as Red Hat Enterprise&reg; Linux 6.4, your initial parent VHD is a
-read-only base Red Hat image. A *Child VHD* also exists on which your instance
-actively performs read and write operations. Changes that you make to your
-server are written directly to the child VHD. When you look at data in your
-instance, the system must determine whether the child VHD has a version of this
-file. If the file has changed, the data for the file comes from the child VHD.
-If the file has not changed, the child references the data from its parent, and
-the data is read from the base VHD. This is important because when you add,
-remove, or modify a file in your instance, these actions add data to the child
-instance, which increases the size of the VDI chain.
+server hard drive is made up of two or more VHD files, known as a *Virtual Disk
+Image (VDI) chain*. With a VDI chain, you start with a base VHD called the
+*Parent VHD*. This is the base information for your instance. When you build a
+new server from a base image, such as Red Hat Enterprise&reg; Linux 6.4, your
+initial parent VHD is a read-only base Red Hat image. A *Child VHD* also exists
+on which your instance actively performs read and write operations. Changes that
+you make to your server are written directly to the child VHD. When you look at
+data in your instance, the system must determine whether the child VHD has a
+version of this file. If the file has changed, the data for the file comes from
+the child VHD. If the file has not changed, the child references the data from
+its parent, and the data is read from the base VHD. This is important because
+when you add, remove, or modify a file in your instance, these actions add data
+to the child instance, which increases the size of the VDI chain.
 
 ### Illustrating the VDI chain
 

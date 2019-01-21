@@ -5,8 +5,8 @@ title: Cloud image creation format and process
 type: article
 created_date: '2016-10-20'
 created_by: Reese McJunkin
-last_modified_date: '2017-05-04'
-last_modified_by: Brian King
+last_modified_date: '2019-01-21'
+last_modified_by: Cat Lookabaugh
 product: Cloud Images
 product_url: cloud-images
 ---
@@ -33,13 +33,13 @@ point. For example:
 | Cloud server, which used to have 100 GB | 5 GB | 115 GB |
 
 For more information about the VHD format and the imaging process, see
-[Understanding the Cloud Imaging Process](https://community.rackspace.com/products/f/25/t/3778).
+[Understanding the Cloud Imaging Process](/how-to/understanding-the-cloud-imaging-process/).
 
 ### Image creation process
 
 The following steps outline high level process of creating a cloud server image.
 For a more in-depth guide, see
-[Understanding the Cloud Imaging Process](https://community.rackspace.com/products/f/25/t/3778).
+[Understanding the Cloud Imaging Process](/how-to/understanding-the-cloud-imaging-process/).
 
 1. The image is queued for creation or is preparing to start.  During this
 time, the coalesce is preformed to eliminate duplicate data between the
