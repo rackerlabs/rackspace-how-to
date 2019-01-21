@@ -31,11 +31,11 @@ following directories:
 
 - **/home**
 - **/root**
-- **/etc**: This directory contains most of your configuration files.
-- **/var/www**: This directory often contains your websites and files.
-- **/var/lib/mysqlbackup**: Servers built by using Rackspace Managed
-  Operations have an automated process that automatically runs a mysql dump
-  to this folder.
+- **/etc** (This directory contains most of your configuration files.)
+- **/var/www** (This directory often contains your websites and files.)
+- **/var/lib/mysqlbackup** (Servers built by using Rackspace Managed
+  Operations have an automated process that automatically runs a `mysql dump`
+  to this folder.)
 
 #### Back up Windows
 
@@ -44,7 +44,7 @@ locations where your data might be stored, such as the following locations:
 
 - **C:\inetpub**
 - **C:\Users**
-- Any additional drives, such **D** and **E**
+- Any additional drives such **D:** and **E:**
 
 ### Back up live databases
 
@@ -59,13 +59,13 @@ backup needs.
 When you install a service, it is not automatically configured to restart
 after the server is rebooted. You must configure services to restart after the
 server reboots. To learn how to perform this task, select the following
-resource that corresponds to your server's operating system (OS):
+resource that corresponds to your server's OS:
 
-- **Windows**: [Prepare to migrate a Windows server](https://support.rackspace.com/how-to/prepare-to-migrate-a-windows-server/#ensureAutoStart)
-- **Ubuntu**: [UPDATE-RC.D(8)](https://manpages.debian.org/wheezy/sysv-rc/update-rc.d.8.en.html)
-- **RHEL and CentOS**: [Using the chkconfig utility](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s2-services-chkconfig)
+- Windows: [Prepare to migrate a Windows server](https://support.rackspace.com/how-to/prepare-to-migrate-a-windows-server/#ensureAutoStart)
+- Ubuntu: [UPDATE-RC.D(8)](https://manpages.debian.org/wheezy/sysv-rc/update-rc.d.8.en.html)
+- RHEL and CentOS: [Using the chkconfig utility](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s2-services-chkconfig)
 
-### Ensure that iptables or Windows Firewall rules are saved and configured to restart when the server reboots
+### Ensure that iptables or Windows Firewall rules are saved and configured to restart on reboot
 
 It is important to ensure that the firewall rules that you configure stay
 active upon reboot. This section shows you how perform this task.
