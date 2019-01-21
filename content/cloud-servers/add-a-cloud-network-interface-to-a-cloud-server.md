@@ -12,12 +12,10 @@ product_url: cloud-servers
 
 You can add a cloud network to a cloud server at any time. This article shows
 you how to add a cloud network to a cloud server by using the API and the
-rackspace-novaclient (nova).
-
-It walks you through installing nova and the Cloud Networks extension
-in Mac&reg; OS X, then using nova to add a virtual interface to a running
-cloud server that connects to your cloud network. Nova is also available for
-Linux&reg; and Windows&reg;.
+rackspace-novaclient (nova). It walks you through installing nova and the
+Cloud Networks extension in Mac&reg; OS X, then using nova to add a virtual
+interface to a running cloud server that connects to your cloud network. Nova
+is also available for Linux&reg; and Windows&reg;.
 
 Use the following steps to install nova:
 
@@ -25,7 +23,7 @@ Use the following steps to install nova:
 
        sudo easy_install pip
 
-2. Install the rackspace-novaclient and the Cloud Networks virtual interface
+2. Install nova and the Cloud Networks virtual interface
    extension by running the following commands:
 
        sudo pip install rackspace-novaclient
@@ -44,8 +42,7 @@ Use the following steps to install nova:
        export OS_PROJECT_ID=<account_#>
        export OS_NO_CACHE=1
 
- 4. To interact with the API by using nova, you need to load the variables by
-    running the following command:
+ 4. Next, load the environment variables by running the following command:
 
         source .profile
 
@@ -66,10 +63,9 @@ Use the following steps to install nova:
 
 It takes a couple of minutes to add the interface. You should now be able to
 log in to the cloud server and check interfaces by running the command `ip a`.
+You should see the interface that you added in the output from this command.
 
 **Note**: You can also run `nova virtual-interface-list cloudserverID`.
-
-You should see the interface that you added in the output.
 
 If you need to add Cloud Networks to your account, submit a ticket from the
 Cloud Control Panel.
