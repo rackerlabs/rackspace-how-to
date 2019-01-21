@@ -65,7 +65,7 @@ Rackspace Public Cloud, see [service levels](https://www.rackspace.com/openstack
 
 #### Rackspace regions
 
-Rackspace Public Cloud the following regions:
+The Rackspace Public Cloud is available in the following regions:
 
 -  Dallas-Fort Worth (DFW)
 -  Chicago (ORD)
