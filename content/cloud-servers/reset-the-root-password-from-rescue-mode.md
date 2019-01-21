@@ -74,8 +74,8 @@ this task by using rescue mode:
            chroot /mnt/rescue
 
    This example uses the `chroot` operation. This command enables you to set
-   the root of the system in a temporary environment. Performing this step is
-   helpful with recovery.
+   the root of the system in a temporary environment. Performing this step
+   helps with recovery.
 
 5. Run the `passwd` command to update your root password on the original cloud
    server's hard drive, as shown in the following example:
