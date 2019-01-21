@@ -1,89 +1,111 @@
 ---
-permalink: resetting-the-root-password-from-rescue-mode
+permalink: reset-the-root-password-from-rescue-mode/
 audit_date:
-title: Resetting the Root User Password from Rescue Mode
-created_date: '2019-01-16'
+title: Reset the root user password from rescue mode
+created_date: '2019-01-21'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-21'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If you are not able to reset the password for your Linux cloud server using the control panel you will need to place the server into rescue mode and chroot the file system of the server and run passwd to update the root password.
+If you're unable to reset the password for your Linux&reg; cloud server by
+using the Cloud Control Panel, you can use the following steps to perform
+this task by using rescue mode:
 
-1. Place server into rescue mode
+1. Place the server into rescue mode.
 
-2. Connect to the rescue mode server using ssh root@<ip address of the server>
+2. Connect to the server that is in rescue mode by running the following
+   command, replacing `ip address of the server` with the Internet Protocol
+   (IP) address for your server:
 
-If you get this message when you try to connect from a Mac OS X or a Linux system:
+       ssh root@<ip address of the server>
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+   If the following message displays when you try to connect from a Mac&reg;
+   OS X or Linux system, someone could be eavesdropping on you in a man-in-the-
+   middle attack, or the RSA host key might have just been changed:
 
-IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+       @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+       @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-Someone could be eavesdropping on you right now (man-in-the-middle attack)!
-It is also possible that the RSA host key has just been changed.
+   The fingerprint for the RSA key that the remote host sent is <RSA Key>.
 
-The fingerprint for the RSA key sent by the remote host is
+   Please contact your system administrator.
 
-<RSA Key>.
+   Add the correct host key in your `~/home/<user name>/.ssh/known_hosts` file
+   to prevent this message from displaying.
 
-Please contact your system administrator.
+   Offending key in **/root/.ssh/known_hosts**:<line number>
 
-Add correct host key in ~/home/<user name>/.ssh/known_hosts to get rid of this message.
+   You need to edit the **.ssh/know_host** file to remove the line for the
+   server's IP address.
 
-Offending key in /root/.ssh/known_hosts:<line number>
+   If you are connecting from a Mac OS X or Linux system you need to edit the
+   file at **~/home/<user name>/.ssh/known_hosts**:
 
-You will need to edit the .ssh/know_host file to remove the line for the servers IP address.
+3. We recommend that you periodically run the file system check (`fsck`)
+   command. Performing this step prevents the check from automatically
+   running during a reboot, causing boot time to take longer than you expect.
 
-If you are connecting from a Mac OS X or a Linux system you will need to edit the ~/home/<user name>/.ssh/known_hosts :
+   You run this check on `/dev/xvdb1` if your server is using the Xen Server
+   hypervisor, and `/dev/sdb1`if it is using Xen Classic.
 
-3. It is always suggested to run 'fsck' (File System check) everytime you get.  It will save you hassles of it automatically running during a reboot, causing boot time to take longer than expected.
+   The following example reset command uses `/dev/xvdb1`:
 
-This could be either /dev/xvdb1 or /dev/sdb1 depending on if you are running a Legacy Cloud Server or not.  (Legacy in this context is a Cloud Server running on XenClassic for the hypervisor.  The original release that the current FirstGen servers were setup with XenClassic as the Hypervisor.  Since that release, all Cloud Servers, First and Next Generations, have a XenServer Hypervisor.)
+       fsck -fyv /dev/xvdb1
 
-**Note** /dev/xvdb1 will be used in the reset of the example:
+   This command forces a file system check (`f` flag), automatically responds
+   `yes` to any questions that the system prompts for (`y` flag), and displays
+   a verbose output at the end (`v` flag).
 
-    fsck -fyv /dev/xvdb1
+4. Mount the file system by using the following steps:
 
-This will force a file system check (f flag), automatically respond 'yes' to any questions prompted(y flag), and display a verbose output at the very end(v flag).
+   a. Make a temporary directory by running the following command:
 
-Mounting the file system:
+           mkdir /mnt/rescue
 
-a. Make a temporary directory:
+   b. Mount the file system to that temporary directory by running the
+      following command:
 
-    mkdir /mnt/rescue
+           mount /dev/xvdb1 /mnt/rescue
 
-b. Mount to that temp directory
+           chroot /mnt/rescue
 
-    mount /dev/xvdb1 /mnt/rescue
+   This example uses the `chroot` operation. This command enables you to set
+   the root of the system in a temporary environment. Performing this step is
+   helpful with recovery.
 
-    chroot /mnt/rescue
+5. Run the `passwd` command to update your root password on the original cloud
+   server's hard drive, as shown in the following example:
 
-4. We are going to use 'chroot'.  chroot allows you to set the root of the system in a temporary environment.  This is good for recovery, or if you are brave enough to build your own Linux based system from scratch.
+       passwd
 
-5. Now that we are chroot-ed into your original drive, all you have to do is run 'passwd' to update your root password on the original Cloud Server's hard drive.
+   This command prompts you for your new password twice, and then
+   updates the appropriate files.
 
-    passwd
+6. Exit out of `chroot` mode by entering the following command:
 
-(This will prompt you for your new password twice, and then update the appropriate files.)
+       exit
 
-6. Exit out of chroot mode.
+7. Unmount your original drive by entering the following command:
 
-    exit
+       umount /mnt/rescue
 
-7. Unmount your original drive
+8. Exit out of Secure Shell (SSH), then exit rescue mode.
+9. Edit the **.ssh/know_host** file to remove the line
+   for the server's IP address.
 
-    umount /mnt/rescue
+10. If you are connecting from a Mac OS X or Linux system, you need to edit the
+    file at **~/home/<user name>/.ssh/known_hosts**.
 
-8. Exit out of SSH and Exit Rescue Mode.
-9. You will need to edit the .ssh/know_host file to remove the line for the servers IP address.
+When your cloud server boots back up outside of rescue mode, you can use the
+password that you set in step 5 to log in.
 
-If you are connecting from a Mac OS X or a Linux system you will need to edit the ~/home/<user name>/.ssh/known_hosts :
-
-With this, you will be able to use the password set in step 5 when your Cloud Server boots back up outside of Rescue Mode.
-
-This is only needed if nova-agent isn't properly running/not responding inside the Guest Operating system.  nova-agent is the service (/etc/init.d/nova-agent) that connects the Guest Operating system to Rackspace's Cloud Control Panel for things like Reset Password and creating a new Cloud Server from an Image.  If nova-agent is the case, give us a call, setup a ticket, or jump into Online Chat.  We verify everything and give you the appropriate instructions on how to get it updated/fixed.
+You only need to perform this step if nova-agent isn't running properly or
+isn't responding inside of the guest operating system (OS).  nova-agent is the
+service (`/etc/init.d/nova-agent`) that connects the guest OS to Rackspace's
+Cloud Control Panel so that you can perform tasks such as resetting the
+password and creating a new Cloud Server from an image. If you're experiencing
+an issue with nova-agent, contact your account manager or Rackspace Support.
