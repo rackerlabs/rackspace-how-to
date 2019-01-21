@@ -115,4 +115,3 @@ servers. Prices might vary according to region, image used, and SLA.  See
 [pricing](https://www.rackspace.com/openstack/public/pricing) for other Rackspace
 Cloud products, such as Cloud Load Balancers, Cloud Block Storage, and so on.
 
-
