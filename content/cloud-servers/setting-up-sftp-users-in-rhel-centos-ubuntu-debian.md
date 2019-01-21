@@ -14,7 +14,7 @@ This article shows you how to create secured SSH File Transfer Protocol (SFTP) u
 
 **WARNING**: Do not try to jail the root user. Only jail additional users so that you don't prevent the root user from performing operations correctly.
 
-Before you begin, you should be familiar with the following best practices:
+Before you begin, review the following best practices:
 
 - The home directory of the SFTP user must be owned by `root:root`. Other directories 
   can (and should) be owned (and writable) by the user.
