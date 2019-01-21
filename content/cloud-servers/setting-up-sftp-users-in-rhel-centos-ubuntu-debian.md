@@ -44,15 +44,11 @@ Use the following steps to create secured SSH File Transfer Protocol (SFTP) user
 
        passwd myuser
 
-4. Ensure that the following line is commented out in the solid-state hybrid drive (SSHD) configuration file at `/etc/ssh/sshd_config`:
-
-
-
-5. Open the `sshd_config` file that holds the SSH and SFTP configuration by running the following command:
+4. Open the `sshd_config` file that holds the SSH and SFTP configuration by running the following command:
 
        nano /etc/ssh/sshd_config
 
-6. Ensure that the following line begins with a hash symbol (#):
+5. Comment out the following line by adding a hash symbol (#) at the beginning, as shown in the following example:
 
        #Subsystem sftp /usr/lib/openssh/sftp-server
 
