@@ -43,7 +43,7 @@ this task by using rescue mode:
    server's IP address.
 
    If you are connecting from a Mac OS X or Linux system you need to edit the
-   file at **~/home/<user name>/.ssh/known_hosts**:
+   file at `~/home/<user name>/.ssh/known_hosts`:
 
 3. We recommend that you periodically run the file system check (`fsck`)
    command. Performing this step prevents the check from automatically
@@ -98,7 +98,7 @@ this task by using rescue mode:
    for the server's IP address.
 
 10. If you are connecting from a Mac OS X or Linux system, you need to edit the
-    file at **~/home/<user name>/.ssh/known_hosts**.
+    file at `~/home/<user name>/.ssh/known_hosts`.
 
 When your cloud server boots back up outside of rescue mode, you can use the
 password that you set in step 5 to log in.
