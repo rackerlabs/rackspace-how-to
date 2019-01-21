@@ -37,7 +37,7 @@ this task by using rescue mode:
    
    The wrong key displays as the following line of code in the output:
 
-   Offending key in **/root/.ssh/known_hosts**:<line number>
+       Offending key in **/root/.ssh/known_hosts**:<line number>
 
    You need to edit the **.ssh/known_hosts** file to remove the line for the
    server's IP address.
