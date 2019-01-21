@@ -34,7 +34,7 @@ following directories:
 - **/etc**: This directory contains most of your configuration files.
 - **/var/www**: This directory often contains your websites and files.
 - **/var/lib/mysqlbackup**: Servers built by using Rackspace Managed
-  Operations have an automated process that automatically runs a `mysql dump`
+  Operations have an automated process that automatically runs a mysql dump
   to this folder.
 
 #### Back up Windows
