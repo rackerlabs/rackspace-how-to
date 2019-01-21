@@ -30,8 +30,6 @@ this task by using rescue mode:
        @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-   The fingerprint for the RSA key that the remote host sent is <RSA Key>.
-
    Please contact your system administrator.
 
    Add the correct host key in your `~/home/<user name>/.ssh/known_hosts` file
