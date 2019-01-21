@@ -39,6 +39,14 @@ You can access Pitchfork at the following address: [https://pitchfork.rax.io](ht
 
 Look at the code in [GitHub](https://github.com/oldarmyc/pitchfork).
 
+### Login requirements
+
+You do not have to log in to the application to mock or browse any of the API
+calls. You need to log in only if you want to execute those calls against your
+account.
+
+To log in, click **Login** and enter your authentication credentials.
+
 ### Authentication
 
 Pitchfork uses the same credentials that you use in an authentication API
@@ -47,21 +55,16 @@ makes the authentication request for you over HTTPS. If the request succeeds,
 the application stores the token and service catalog that is returned and
 expires the session along with the token when it is time.
 
-### Login requirements
-
-You do not have to login to the application to mock or browse any of the API
-calls. You need to login only if you want to execute those calls against your
-account.
-
 ### Use Pitchfork to send an API call
 
-Use the following steps to send an API call by using Pitchfork:
+Use the following steps to send an API call by using Pitchfork, after you have
+logged in:
 
-1. Browse to any of the products, and select the call you would like to view or
-   execute.
+1. Browse to any of the products, and find the call you would like to execute.
 2. Choose the region that you want to interact with.
-3. If there are any variables for the call, enter them.
-4. Click the send button.
+3. Click **Details**.
+4. If there are any variables for the call, enter them.
+5. Click **Send API Call**.
 
 The application shows you the following information:
 
@@ -84,7 +87,7 @@ to show.
 ### Mocks
 
 The 'Mock' option lets you create a call without intending to execute it so that
-you can see how the call is composed. Just click **Mock API Call** when you want
+you can see how the call is structured. Just click **Mock API Call** when you want
 to see all of the request details for a call. The request data object,if there
 is one, is shown with all of the options available for the call, and you can see
 how the object would be structured for reference.
@@ -134,8 +137,3 @@ call. This adds it to your favorites, and you can access these calls from the
 front page or from **Favorites** in the menu. You can only add or view your
 favorites when you are logged into the application.
 
-### Call failures
-
-If a call does not work, or there is a missing or incorrect option, leave
-feedback on the specific call or product along with all of the details. This
-sends a message to the developer who will take action as soon as possible.
