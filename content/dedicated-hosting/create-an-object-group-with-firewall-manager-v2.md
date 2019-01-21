@@ -4,9 +4,9 @@ audit_date: '2018-07-12'
 title: Create an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
-created_by: Nate Archer
-last_modified_date: '2018-07-12'
-last_modified_by: Nate Archer
+created_by: Trevor Becker
+last_modified_date: '2019-01-21'
+last_modified_by: Renee Rendon
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
