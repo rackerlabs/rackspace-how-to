@@ -16,7 +16,7 @@ this task by using rescue mode:
 
 1. Place the server into rescue mode.
 
-2. Connect to the server that is in rescue mode by running the following
+2. Connect to the server that is in rescue mode by  the following
    command, replacing `ip address of the server` with the Internet Protocol
    (IP) address for your server:
 
@@ -30,14 +30,14 @@ this task by using rescue mode:
        @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-   Please contact your system administrator.
+   Contact your system administrator.
 
    Add the correct host key in your `~/home/<user name>/.ssh/known_hosts` file
    to prevent this message from displaying.
    
    The wrong key displays as the following line of code in the output:
 
-       Offending key in **/root/.ssh/known_hosts**:<line number>
+       Offending key in **/root/.ssh/known_hosts**:running<line number>
 
    You need to edit the **.ssh/known_hosts** file to remove the line for the
    server's IP address.
@@ -49,8 +49,8 @@ this task by using rescue mode:
    command. Performing this step prevents the check from automatically
    running during a reboot, causing boot time to take longer than you expect.
 
-   You run this check on `/dev/xvdb1` if your server is using the Xen Server
-   hypervisor, and `/dev/sdb1`if it is using Xen Classic.
+   You run this check on `/dev/xvdb1` if your server is using the XenServer&reg;
+   hypervisor, and `/dev/sdb1` if it is using Xen&reg; Classic.
 
    The following example reset command uses `/dev/xvdb1`:
 
@@ -105,7 +105,7 @@ password that you set in step 5 to log in.
 
 You only need to perform this step if nova-agent isn't running properly or
 isn't responding inside of the guest operating system (OS).  nova-agent is the
-service (`/etc/init.d/nova-agent`) that connects the guest OS to Rackspace's
+service that connects the guest OS to Rackspace's
 Cloud Control Panel so that you can perform tasks such as resetting the
 password and creating a new Cloud Server from an image. If you're experiencing
 an issue with nova-agent, contact your account manager or Rackspace Support.
