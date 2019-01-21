@@ -29,7 +29,7 @@ Cloud:
 
 2. Create a new destination server in the Rackspace Public Cloud and record
    the public IPv4 address and root password of your new Rackspace server. See
-   [Create a general purpose Cloud Server](how-to/creating-a-general-purpose-cloud-server/)
+   [Create a general purpose Cloud Server](/how-to/creating-a-general-purpose-cloud-server/)
    for assistance. If your current servers are running an end-of-life (EOL)
    operating system (OS), such as Ubuntu&reg; 12, contact Rackspace Support to
    help you build the destination server.
