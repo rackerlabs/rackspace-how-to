@@ -9,7 +9,7 @@ last_modified_by: Kate Dougherty
 product: Cloud DNS
 product_url: cloud-dns
 ---
-When you add Sender Policy Framework (SPF) information to your Domain Name Service (DNS) records, you are able to specify the email servers that you use to send email from your domain. Completing this step validates your sending email address, which can improve your email deliverability rate. In other words, SPF helps keep your domain’s email out of your recipients’ spam folders.
+When you add Sender Policy Framework (SPF) information to your Domain Name Service (DNS) records, you are able to specify the email servers that you use to send email from your domain. Completing this step validates your sending email address, which can improve your email deliverability rate.
 
 To get started, you must first contact your DNS hosting company and ask them to add the following SPF information to your DNS records. You can also make this change yourself in the [Cloud Control Panel](https://login.rackspace.com).
 
