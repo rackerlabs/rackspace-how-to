@@ -21,9 +21,9 @@ Before you begin, you should be familiar with the following best practices:
 
 - It's important to ensure the chroot user has write access to the specified DocumentRoot.
 
-- It's important to login and test the SFTP user is working correctly
+- It's important to login and test the SFTP user is working correctly.
 
-- It's important to ensure that the SFTP user added is added to the SFTP group
+- It's important to ensure that the SFTP user added is added to the SFTP group.
 
 - These instructions are for adding a single domain (SFTP user), but could potentially 
   be used to manage multiple domains.
@@ -124,12 +124,12 @@ Next, you need to verify that the file permissions on the file system are correc
 
 7. Use the following steps to connect to SFTP and set up your SFTP client:
 
-   a. Install [Cyberduck&reg;](https://cyberduck.io/download/).
-   b. Open the Cyberduck application.
-   c. At the top of the window, click the icon for **Open Connection**.
-   d. In the drop-down menu, select **SFTP (SSH File Transfer Protocol)**. 
-   e. In the **Server** field, enter the Internet Protocol (IP) address for the server.
-   f. Enter the username and password that you use to connect to SFTP. 
-   g. Click **Connect**.
+  a. Install [Cyberduck&reg;](https://cyberduck.io/download/).
+  b. Open the Cyberduck application.
+  c. At the top of the window, click the icon for **Open Connection**.
+  d. In the drop-down menu, select **SFTP (SSH File Transfer Protocol)**. 
+  e. In the **Server** field, enter the Internet Protocol (IP) address for the server.
+  f. Enter the username and password that you use to connect to SFTP. 
+  g. Click **Connect**.
 
-**Important**: Always test your website after your change file permissions.
+**Important**: Always test your website after you change file permissions.
