@@ -11,8 +11,7 @@ product_url: cloud-dns
 ---
 When you add Sender Policy Framework (SPF) information to your Domain Name Service (DNS) records, you are able to specify the email servers that you use to send email from your domain. Completing this step validates your sending email address, which can improve your email deliverability rate.
 
-To get started, you must first contact your DNS hosting company and ask them to add the following SPF information to your DNS records. You can also make this change yourself in the [Cloud Control Panel](https://login.rackspace.com).
-
+To get started, you must first contact your DNS hosting company and ask them to add the following SPF information to your DNS records. You can also make this change yourself in the Cloud Control Panel by using the following steps:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
@@ -22,8 +21,6 @@ To get started, you must first contact your DNS hosting company and ask them to 
 6. In the **Record Type** field, select **TXT Record**.
 7. *(Optional)* Enter a **Hostname** (<@domain>).
 8. In the **Text** field, enter your information in the following format:
-
-   Address:
    
        v=spf1 [any combination of the below] ~all
 
@@ -31,7 +28,7 @@ To get started, you must first contact your DNS hosting company and ask them to 
 
          include:emailsrvr.com
 
-   - If you send email from your own server, plug in your Internet Protocol (IP) address as shown in the following example, replacing "1.2.3.4" with your mail server IP:    
+   - If you send email from your own server, plug in your Internet Protocol (IP) address as shown in the following example, replacing `1.2.3.4` with your the IP for your mail server:    
 
          ip4:1.2.3.4
 
