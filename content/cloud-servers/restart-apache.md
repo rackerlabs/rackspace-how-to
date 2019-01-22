@@ -13,10 +13,9 @@ product_url: cloud-servers
 You might need to restart Apache&reg; when you want changes that you make
 take effect, or when you need to bring Apache's resource use back to a normal
 range. However, sometimes Apache fails to restart. This article shows you how
-to check your configuration settings and restart Apache when it fails to
-restart.
+to check your configuration settings and restart Apache when it fails.
 
-**Note**: Before you follow the steps in the instructions and make any changes
+**Note**: Before you use the following instructions and make any changes
 to your configuration files, we recommend that you back up the existing files.
 
 ### Check the syntax
@@ -37,7 +36,7 @@ If you receive an error message similar to the one in the following example outp
 
 ### Check the Apache error logs
 
-If you resolve those errors and Apache still doesn't restart, check the Apache error logs. It might be helpful to use two windows. In one window, tail the error log by running the following command:
+If you resolve those errors and Apache still doesn't restart, check the Apache error logs. Using two windows might be helpful. In one window, use the tail command against the error log by running the following command:
 
     tail –f /var/log/httpd/error _log
 
@@ -46,7 +45,7 @@ command:
 
     /etc/init.d/httpd restart
 
-Watch the first window while restarting Apache. This enables you to see any errors that are being generated to the logs.
+Watch the first window while restarting Apache to see any errors that are being generated to the logs.
 
 Apache also might not restart if there is another service that is binding to the port that Apache is trying to use, as shown in the following output:
 
@@ -75,14 +74,14 @@ The output should look similar to the following example:
     tcp       0     0 :::80                                       :::*        LISTEN     5272/sshd
     tcp       0     0 ::1:25                                      :::*        LISTEN     1581/master
 
-In this example, the output shows that Secure Shell (SSH) is listening on port 80, which should not be the case. You can rectify this by modifying the configuration file for SSH to listen on a different port, then restart Apache.
+In this example, the output shows that Secure Shell (SSH) is listening on port 80, which should not be the case. You can rectify this situation by modifying the configuration file for SSH to listen on a different port, then restart Apache.
 
 You might also see the following error:
 
     httpd dead but subsys locked, but pid exists
 
-This error means that Apache was running, but crashed. When you start Apache
-it creates a lock file to indicate that it is running. This helps prevent
+This error means that Apache was running, but crashed. When you start Apache,
+it creates a lock file to indicate that it is running. The lock file helps prevent
 multiple instances from running. When you stop Apache, this lock file is
 removed. When it crashes, however, the lock file still exists but the process
 does not. If you see this error, you need to remove the lock file by running
