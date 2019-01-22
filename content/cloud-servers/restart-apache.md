@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-You might need to restart Apache&reg; when you want changes that you have made
+You might need to restart Apache&reg; when you want changes that you make
 take effect, or when you need to bring Apache's resource use back to a normal
 range. However, sometimes Apache fails to restart. This article shows you how
 to check your configuration settings and restart Apache when it fails to
