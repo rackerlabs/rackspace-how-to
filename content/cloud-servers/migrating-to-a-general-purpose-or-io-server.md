@@ -123,9 +123,9 @@ applications, but after it is set up, you can easily add or remove servers to
 account for fluctuating load requirements.
 
 The [open cloud reference architectures](/how-to/rackspace-open-cloud-reference-architecture)
-article provides Some example environments.
+article provides some example environments.
 
-**Note:** If you are currently using Performance servers, please note that the
+**Note:** If you are currently using Performance servers, note that the
 data disks are not captured when you create an image. To back up data disks, you
 must rely on Rackspace Cloud Backup or a similar file-based backup approach.
 If you want your additional storage to be more portable or need to be able to
@@ -159,7 +159,7 @@ When your attached disks are ready, you can migrate your data.
 
 You have several options for a manual migration on Linux, including Rackspace Cloud
 Backup, Rackspace Cloud Block Storage, or rsync. On Windows, you can use Web
-Deploy or the Web Farm Framework.
+Deploy or the Microsoft Web Farm Framework (WFF).
 
 #### Cloud Backup
 
@@ -189,15 +189,15 @@ If you want to migrate a Linux server to a new General Purpose server, you can
 use rsync to migrate your server from the command line. See
 [Migrating a Linux server from the command line](/how-to/migrating-a-linux-server-from-the-command-line-1).
 
-#### Web Farm Framework on Windows 2008
+#### WFF on Windows 2008
 
-To migrate Internet Information Services (IIS) and SQL Server data on Windows
-2008, you can use the Microsoft Web Farm Framework&reg;.
+To migrate IIS and SQL Server&reg; data on Windows 2008, you can use the Microsoft
+WFF.
 
 #### Web Deploy on Windows 2012
 
 To migrate IIS and SQL Server data on Windows 2012, you can use the Microsoft
-Web Deploy&reg; tool. See [Launch a Windows Web Farm with Web Deploy](/how-to/launch-a-windows-web-farm-with-web-deploy).
+Web Deploy tool. See [Launch a Windows Web Farm with Web Deploy](/how-to/launch-a-windows-web-farm-with-web-deploy).
 
 #### Application-specific options
 
