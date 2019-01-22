@@ -19,29 +19,30 @@ restart.
 **Note**: Before you follow the steps in the instructions and make any changes
 to your configuration files, we recommend that you back up the existing files.
 
+### Check the syntax
 
+The cause of the error might simply be a misspelled word or a dot (.) that's out of place.
+Run the following command to check the syntax:
 
-First start by checking the syntax:
+    httpd –S
 
-# httpd –S
+You should see the following output:
 
-The output you want to see is:
+    Syntax OK
 
-Syntax OK
-
-If you receive an error message, you need to address the error before you attempt to restart Apache. The cause of the error might simply be a misspelled word or a dot (.) that's out of place, as shown in the following example output:
+If you receive an error message similar to the one in the following example output, you need to address the error before you attempt to restart Apache:
 
     Syntax error on line 51 of /etc/httpd/conf/httpd.conf:
     Invalid command 'erverRoot', perhaps misspelled or defined by a module not included in the server configuration
 
 If you resolve those errors and Apache still doesn't restart, check the Apache error logs. It might be helpful to use two windows. In one window, tail the error log by running the following command:
 
-    # tail –f /var/log/httpd/error _log
+    tail –f /var/log/httpd/error _log
 
 In the other window, attempt to restart Apache by running the following
 command:
 
-    # /etc/init.d/httpd restart
+    /etc/init.d/httpd restart
 
 Watch the first window while restarting Apache. This enables you to see any errors that are being generated to the logs.
 
@@ -60,7 +61,7 @@ This output shows that Apache is not able to start because another service is al
 
 You can either change the port to which Apache is assigned or check if the other service that is assigned to this port is supposed to be on port 80. Run the `netstat` command to identify the other service that is using that port, as shown in the following example:
 
-    # netstat –plnt
+    netstat –plnt
 
 The output should look similar to the following example:
 
@@ -85,9 +86,9 @@ removed. When it crashes, however, the lock file still exists but the process
 does not. If you see this error, you need to remove the lock file by running
 the following commands:
 
-    # rm /var/lock/subsys/httpd
+    rm /var/lock/subsys/httpd
 
-    # /etc/init.d/httpd restart
+    /etc/init.d/httpd restart
 
 Running these commands removes the unused lock file so that Apache can create
 a new one when it restarts.
