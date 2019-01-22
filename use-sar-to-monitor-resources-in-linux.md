@@ -1,5 +1,5 @@
 ---
-permalink: using-sar-to-monitor-resources-in-linux
+permalink: use-sar-to-monitor-resources-in-linux/
 audit_date:
 title: Using sar to Monitor Resources in Linux
 created_date: '2019-01-18'
