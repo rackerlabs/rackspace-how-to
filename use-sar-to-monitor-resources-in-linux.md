@@ -22,7 +22,7 @@ This command outputs the cumulative, real-time resource use of all CPUs.
 
 You can add more parameters to this command. For example, adding `1 3` at
 the end of the command as shown in the following example reports for every
-`1` seconds a total of `3` times:
+1 seconds a total of 3 times:
 
     sar -u 1 3
 
@@ -334,7 +334,7 @@ You can also add a keyword to the command, as shown in the following example:
 
     sar -n KEYWORD
 
-KEYWORD can be one of the following options:
+`KEYWORD` can be one of the following options:
 
 - `DEV`: Displays vital statistics for network devices
 - `EDEV`: Display failure statistics for network devices
