@@ -1,11 +1,11 @@
 ---
 permalink: cloud-load-balancer-troubleshooting/
-audit_date: '2018-03-21'
+audit_date: '2019-01-22'
 title: Cloud Load Balancers troubleshooting
 type: article
 created_date: '2018-01-18'
 created_by: Becky Geinzer
-last_modified_date: '2018-03-21'
+last_modified_date: '2019-01-22'
 last_modified_by: Cat Lookabaugh
 product: Cloud Load Balancers
 product_url: cloud-load-balancers
@@ -30,7 +30,7 @@ To enable health monitoring for your load balancer, use the following steps:
 
 You might also want to install the Cloud Monitoring service, which is provided at no cost to monitor the health of the nodes (or virtual instances) that are attached to Cloud Load Balancers. For more information, see [Install and configure the Rackspace Monitoring Agent](/how-to/install-and-configure-the-rackspace-monitoring-agent/) and [Rackspace Monitoring checks and alarms](/how-to/rackspace-monitoring-checks-and-alarms/).
 
-### Keep Cloud Load Balancers resources in the same Datacenter
+### Keep Cloud Load Balancers resources in the same data center
 
 For the most part, Cloud Load Balancers communicate to attached nodes by using the service net internet protocol (IP) address.  Normally, this address is identified as starting with 10.X.X.X.  This means that the Cloud Load Balancers and any associated nodes must be located in the same data center. (This includes testing with a known operational server.)
 
@@ -41,12 +41,12 @@ RackConnect v2 and v3 are compatible with Cloud Load Balancers but require speci
 
 ### Have you made recent changes to the Cloud Load Balancers configuration?
 
-If a load balancer suddenly stops working, it might be due to changes on the node(s) attached to the load balancer.  Review recent changes to the web service, firewall rules, and so on.  If changes were made, roll them back to see if the load balancer begins working again.  If a new node was added to the load balancer and the load balancer is automatically disabling this node, compare how the nodes were setup to identify any differences.
+If a load balancer suddenly stops working, it might be due to changes on the nodes attached to the load balancer.  Review recent changes to the web service, firewall rules, and so on.  If changes were made, roll them back to see if the load balancer begins working again.  If a new node was added to the load balancer and the load balancer is automatically disabling this node, compare how the nodes were setup to identify any differences.
 
 
 ### Use Pitchfork to view statistics
 
- Pitchfork is a valuable tool that can be used to view different statistics concerning the Cloud Load Balancers in an account.
+ Pitchfork is a valuable tool that you can use to view different statistics concerning the Cloud Load Balancers in an account.
 
  To learn more, see [Pitchfork - the Rackspace Cloud API web application](/how-to/pitchfork-the-rackspace-cloud-api-web-application).
 
@@ -68,9 +68,9 @@ To resolve this condition, perform the following steps for each affected node:
 
 1. Check the status of the node behind the load balancer.
 
-2. Log into the customer portal, and open the emergency console for the node.
+2. Log in to the customer portal, and open the emergency console for the node.
 
-   If there are messages scrolling on the screen (for example, killing processes or a crash dump), you should reboot the node.  Once the node is operational, check the status to make sure it is enabled.
+   If messages are scrolling on the screen (for example, killing processes or a crash dump), you should reboot the node.  After the node is operational, check the status to make sure it is enabled.
 
 3. Ping the service net IP address of the affected node from a server that is located in the same data center as the load balancer.
 
@@ -98,19 +98,19 @@ To use the following helpful commands, install cURL, and execute the commands fr
 
        - Test the load balancer with the node:  ``curl -sik http://<Cloud Load Balancer public IP address> -H "host:<domain.com>"``
 
-Further actions depend based on the results of the commands.
+Further actions depend on the results of the commands.
 
 #### cURL command results
 
 Following are the results that you might see from your cURL commands:
 
-#####  cURL returns a 500 Internal error.
+#####  cURL returns a 500 Internal Server Error.
 
-Health checks are not enabled on the load balancer.  All nodes behind the load balancer are failed or cannot communicate with the load balancer.  As a result of the missing health checks, the load balancer identifies failed nodes as ``OFFLINE`` and provides a generic ``500 Internal Server Error`` on behalf of the failed nodes.
+Health checks are not enabled on the load balancer.  All nodes behind the load balancer are failing or cannot communicate with the load balancer.  As a result of the missing health checks, the load balancer identifies failed nodes as ``OFFLINE`` and provides a generic ``500 Internal Server Error`` on behalf of the failed nodes.
 
 ##### cURL returns intermittent 503 Service Temporarily Unavailable.
 
-Health checks are not enabled on the load balancer.  A node behind the load balancer is failing or cannot communicate to the load balancer.  As a result of the missing health checks, the load balancer continues to send requests to the failing node.  When the node does not respond in the default 30-second timeout, the load balancer sends the``503 Service Temporarily Unavailable`` response on behalf of the failing node.
+Health checks are not enabled on the load balancer.  A node behind the load balancer is failing or cannot communicate to the load balancer.  As a result of the missing health checks, the load balancer continues to send requests to the failing node.  When the node does not respond in the default 30-second timeout, the load balancer sends the ``503 Service Temporarily Unavailable`` response on behalf of the failing node.
 
 ##### cURL returns 200 Success, but the load balancer is in an error state.
 
