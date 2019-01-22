@@ -68,21 +68,21 @@ logged in:
 
 The application shows you the following information:
 
-**Request URL:** Fully constructed URL that you sent the call to.
+- **Request URL:** Fully constructed URL that you sent the call to.
 
-**Request Headers:** The headers portion of the request that was sent to the API.
+- **Request Headers:** The headers portion of the request that was sent to the API.
 
-**Request Data Object:** If there is a data object that was created for the call,
-it is displayed including the values that you specified.
+- **Request Data Object:** If there is a data object that was created for the call,
+  it is displayed including the values that you specified.
 
-**Response Headers:** The headers received in the response from the API.
+- **Response Headers:** The headers received in the response from the API.
 
-**Response Body:** The response data from the API server. This could include a
-status code, an object being returned, or an error message.
+- **Response Body:** The response data from the API server. This could include a
+  status code, an object being returned, or an error message.
 
-**Note:** Response headers and the response body are shown only for executed
-calls and not for call mocks. Because mocks are not executed,there is no response
-to show.
+- **Note:** Response headers and the response body are shown only for executed
+  calls and not for call mocks. Because mocks are not executed,there is no response
+  to show.
 
 ### Mocks
 
