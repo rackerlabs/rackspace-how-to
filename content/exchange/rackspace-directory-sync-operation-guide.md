@@ -170,11 +170,11 @@ Use the following steps to rename a Hosted Service security group:
 
 Use the following steps to add an alternate email address:
 
-1.  Enable synchronization. This is value is turned off by default.
+1.  Enable synchronization. This value is turned off by default.
 
       1.  In the **\\Directory Sync Service\\web** directory, open the
         **appSettings.config** file.
-      2.  Find the following config value:
+      2.  Find the following configuration value:
 
             `<add key="SyncProxyAddresses" value="False" />`
 
