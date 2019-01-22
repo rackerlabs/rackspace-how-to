@@ -5,18 +5,18 @@ title: 'Rackspace Directory Sync Operation Guide'
 type: article
 created_date: '2014-04-29'
 created_by: Aaron Medrano
-last_modified_date: '2019-01-18'
+last_modified_date: '2019-01-22'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article instructs you on using your Active Directory to synchronize email objects by using Rackspace Directory Sync and Rackspace Hosted Email. It provides instructions for creating new email addresses, distribution lists, and contacts for Microsoft&reg; Exchange.
+This article explains how to use your Active Directory to synchronize email objects by using Rackspace Directory Sync and Rackspace Hosted Email. It also provides instructions for creating new email addresses, distribution lists, and contacts for Microsoft&reg; Exchange.
 
 ### Add a new mailbox
 
 If the email address does not exist in the control panel, a new mailbox
-will be created during the next synchronization.
+is created during the next synchronization.
 
 **Note:** User objects must be direct members of the specified email
 security group. Nested groups cause Directory Sync to create a
@@ -28,13 +28,13 @@ group.
 
 2. Add the new user to the email security group.
 
-Directory Sync creates a mailbox for the user and synchronize the user's
+Directory Sync creates a mailbox for the user and synchronizes the user's
 password. If this is a first-time setup, the password must be changed to
 ensure that the password is synchronized.
 
 ### Create a mailbox for an existing user
 
-If the email address exists in the control panel, the Active Directory
+If the email address exists in the Control Panel, the Active Directory
 user synchronizes to the existing mailbox.
 
 **Note:** User objects must be direct members of the specified email
@@ -53,9 +53,11 @@ changed to ensure that the password is synchronized.
 
 ### Remove a user mailbox
 
+Use the following steps to remove a user mailbox:
+
 1. Remove the user from the email security group.
 
-    **Note**: Directory Sync will disable the user's mailbox.
+    **Note**: Directory Sync disables the user's mailbox.
 
 2. Navigate to the Cloud Office Control Panel.
 
@@ -67,6 +69,8 @@ changed to ensure that the password is synchronized.
 does not automatically delete mailboxes.
 
 ### Create a distribution list
+
+Use the following steps to create a distribution list:
 
 1. Create a group within the Active Directory (or use an already
     existing group). This Active Directory group can be either a
@@ -88,7 +92,7 @@ does not automatically delete mailboxes.
     email address in step 2 before you subscribe the distribution group
     to the Hosted Exchange security group.
 
-**Note:** To synchronize members of the distribution list created in step 1 to members of the distribution list in the control panel,
+**Note:** To synchronize members of the distribution list created in step 1 to members of the distribution list in the Control Panel,
 the members must also be subscribed to either the Hosted Exchange group
 or the Rackspace Email group specified in the Directory Sync settings.
 
@@ -103,10 +107,12 @@ deleted from the Cloud Office Control Panel.
 
 ### Create a contact (Exchange)
 
+Use the following steps to create a contact:
+
 1. Create a Contact object within the Active Directory.
 
     **Note:** When you are creating the contact, the Display Name within
-    the object will create the Display Name within the Cloud Office
+    the object creates the Display Name within the Cloud Office
     Control Panel for the contact.
 
 2. After the Contact object is created, set the email address. The
@@ -117,7 +123,7 @@ deleted from the Cloud Office Control Panel.
 
 **Note:** The **objectGUID** attribute of the contact is used as the
 username for the contact within the Cloud Office Control Panel. Active
-Directory automatically creates this and is how Directory Sync
+Directory automatically creates this attribute and it is how Directory Sync
 references the contact through our API.
 
 Customers with multiple email domains must edit the **otherMailBox**
@@ -129,10 +135,12 @@ You only need to have the domain set within this attribute.
 To delete a contact from Exchange, remove the contact from the Hosted
 Exchange security group specified in the Directory Sync settings.
 
-**Note:** After the next synchronization, the contact will be deleted
+**Note:** After the next synchronization, the contact is deleted
 from the Cloud Office Control Panel.
 
 ### Change the external email address of a contact (Exchange)
+
+Use the following steps to change an external mail address for a contact:
 
 1. Remove the contact from the Hosted Exchange security group set in
    the Directory Sync settings.
@@ -147,9 +155,11 @@ from the Cloud Office Control Panel.
 
 ### Rename a Hosted Service security group
 
+Use the following steps to rename a Hosted Service security group:
+
 1. On the Directory Sync Settings page, select **Do Not Sync** from the email service list and then click **Save & Start Sync**.
 
-2. In Active Directory, rename the security group and the pre-Windows
+2. In Active Directory, rename the security group and the pre-Windows&reg;
     2000 group name. The group name and pre-Windows 2000 group name must
     be identical.
 
@@ -158,13 +168,15 @@ from the Cloud Office Control Panel.
 
 ### Add an alternate email address (optional synchronization)
 
+Use the following steps to add an alternate email address:
+
 1.  Enable synchronization. This is value is turned off by default.
 
       1.  In the **\\Directory Sync Service\\web** directory, open the
         **appSettings.config** file.
       2.  Find the following config value:
 
-            <add key="SyncProxyAddresses" value="False" />
+            `<add key="SyncProxyAddresses" value="False" />`
 
       3.  Change the **value** attribute to **True** to enable synchronization
             of the proxy addresses. This setting will be persistent.
@@ -182,6 +194,6 @@ from the Cloud Office Control Panel.
 **Note:** The alternate email addresses are formatted as
 **SMTP:userA@example.com**. For all alternate email addresses beginning
 with **SMTP:**, the full email address must be listed. Domain Aliases
-cannot be placed in this attribute. Only the Primary Domain and
-Accepted Domains can be listed in this attribute, because domain aliases
-are automatically created from the primary domain.
+cannot be placed in this attribute. because domain aliases
+are automatically created from the primary domain, only the Primary Domain and
+Accepted Domains can be listed in this attribute.
