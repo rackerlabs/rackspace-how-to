@@ -38,7 +38,8 @@ If you receive an error message similar to the one in the following example outp
 
 If you resolve those errors and Apache still doesn't restart, check the Apache error logs. Using two windows might be helpful. In one window, use the tail command against the error log by running the following command:
 
-    tail –f /var/log/httpd/error _log
+    tail –f /var/log/httpd/error_log
+    
 
 In the other window, attempt to restart Apache by running the following
 command:
