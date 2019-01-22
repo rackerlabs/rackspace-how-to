@@ -5,26 +5,25 @@ title: 'Rackspace Directory Sync Administration Guide'
 type: article
 created_date: '2013-04-25'
 created_by: Kevin Richey
-last_modified_date: '2016-01-29'
+last_modified_date: '2019-01-22'
 last_modified_by: Rose Coste
 product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article provides information for domain administrators working with
+This article provides information for administrators using
 Rackspace Directory Sync. It includes information on how Directory Sync
-works with Active Directory and local domains to sync to Rackspace
+works with Active Directory and local domains to synchronize to Rackspace
 Hosted Email.
 
-The benefits of using Directory Sync for your organization include:
+Using Directory Sync for your organization includes these benefits :
 
--   **Same sign-on**: Users have to remember only one password for their
+-   **Same sign-on**: Users have one password for their
     local network access and their email accounts for a same
     sign-on experience.
--   **Ease of management**: Administrators benefit by adding and
-    managing mail-enabled objects directly in Active Directory from a
-    familiar Microsoft Active Directory interface. You choose which user
-    objects to synchronize. You can synchronize as few as one user in
+-   **Ease of management**: Administrators can manage mail-enabled objects directly from a
+    familiar Microsoft&reg; Active Directory interface. Choose which user
+    objects to synchronize. Synchronize as few as one user in
     your Active Directory, or synchronize all of them at the same time.
 -   **Save time**: For many larger organizations, the Directory Sync
     service can save considerable effort and time when onboarding new
