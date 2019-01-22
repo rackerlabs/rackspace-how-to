@@ -1,16 +1,16 @@
 ---
 permalink: set-up-sftp-users-in-rhel-centos-ubuntu-and-debian/
-audit_date:
+audit_date: '2019-01-18'
 title: Set up SFTP users in RHEL 6, CentOS 6, Ubuntu, and Debian
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: '2019-01-18'
+last_modified_date: '2019-01-22'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article shows you how to create secured SSH File Transfer Protocol (SFTP) users that are jailed to their home directories.
+This article shows you how to create secured SSH File Transfer Protocol (SFTP) users that are restricted or jailed to their home directories.
 
 **WARNING**: Do not try to jail the root user. Only jail additional users so that you don't prevent the root user from performing operations correctly.
 
@@ -21,16 +21,16 @@ Before you begin, review the following best practices:
 
 - It's important to ensure the chroot user has write access to the specified DocumentRoot.
 
-- It's important to login and test the SFTP user is working correctly.
+- It's important to log in and test that the SFTP user is working correctly.
 
 - It's important to ensure that the SFTP user added is added to the SFTP group.
 
-- These instructions are for adding a single domain (SFTP user), but could potentially 
-  be used to manage multiple domains.
+- These instructions are for adding a single domain (SFTP user), but you could potentially 
+  use them to manage multiple domains.
 
-**Important**: The steps in this article do not work with RHEL 7 or CentOS 7. As with any proper `chroot` operation, this configuration does not provide write access to the chroot directory. Only subdirectories of the `chroot` jail are writable. This is due to the way that root permissions are interpreted at the higher level directories that the SFTP user is contained. 
+**Important**: The steps in this article do not work with RHEL&reg; 7 or CentOS&reg; 7. As with any proper chroot operation, this configuration does not provide write access to the chroot directory. Only subdirectories of the chroot jail are writable. This is due to the way that root permissions are interpreted at the higher-level directories in which the SFTP user is contained. 
 
-Use the following steps to create secured SSH File Transfer Protocol (SFTP) users that are jailed to their home directories:
+Use the following steps to create secured SFTP users that are jailed to their home directories:
 
 1. Add the SFTP group that you want to use for SFTP access by running the following command:
 
@@ -73,7 +73,7 @@ Use the following steps to create secured SSH File Transfer Protocol (SFTP) user
 
 ### Ensure that the file permissions on the file system are correct
 
-Next, you need to verify that the file permissions on the file system are correct so that the "SFTP jail" works correctly.
+Next, you need to verify that the file permissions on the file system are correct so that the SFTP jail works correctly.
 
 1. Verify that the `SFTPROOT` directory (the home directory that you set when you added the SSH user) has the right `user:root group:root` permissions by running the following command:
 
@@ -98,7 +98,7 @@ Next, you need to verify that the file permissions on the file system are correc
 
    **Note**: Use the `cd` command to go to the HTML directory (which is located at `/var/www/vhosts/mywebsite.com/html` 
    because the website 'documentroot' is one level below the SSH SFTP user's `root` directory. You should use this setup 
-   because your `www-data` users (the webservers users) have root `user:group` permissions on its files.
+   because your `www-data` users (the web server's users) have root `user:group` permissions on its files.
 
 4. Test the ability to upload files by running the following commands:
 
