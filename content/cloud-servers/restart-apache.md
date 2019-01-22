@@ -2,7 +2,7 @@
 permalink: restart-apache/
 audit_date:
 title: Restart Apache
-created_date: '2019-01-22'
+created_date: '2019-01-21'
 created_by: Rackspace Community
 last_modified_date: '2019-01-22'
 last_modified_by: Kate Dougherty
