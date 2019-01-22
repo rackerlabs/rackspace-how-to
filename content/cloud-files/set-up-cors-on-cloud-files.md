@@ -13,7 +13,7 @@ product_url: cloud-servers
 If content in your Cloud Files account isn't loading on your website, it might
 be due to Cross-Origin Resource Sharing (CORS), a security feature designed to
 prevent malicious content from loading in a web page by default. If your files
-load AJAX or embed fonts, CORS might prevent them from loading.
+load Asynchronous JavaScript and XML (AJAX) or embed fonts, CORS might prevent them from loading.
 
 You can correct this issue by using the following steps to change the headers
 in your Cloud Files with cURL (replacing `XXXXX` with your endpoint and
