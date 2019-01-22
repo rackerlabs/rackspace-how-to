@@ -20,7 +20,7 @@ in your Cloud Files with cURL (replacing `XXXXX` with your endpoint and
 `YYYYY` with your token):
 
 1. Set the `X-Container-Meta-Access-Control-Allow-Origin` header on a
-   container called `mycontainer` by running the following command:
+   container named `mycontainer` by running the following command:
 
       $ curl -i -X POST https://storage101.lon3.clouddrive.com/v1/MossoCloudFS_XXXXX/mycontainer/ -H "X-Auth-Token: YYYYY" -H "X-Container-Meta-Access-Control-Allow-Origin: *"
 
