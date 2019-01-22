@@ -32,7 +32,7 @@ You might also want to install the Cloud Monitoring service, which is provided a
 
 ### Keep Cloud Load Balancers resources in the same Datacenter
 
-For the most part, Cloud Load Balancers communicate to attached nodes by using the service net internat protocaol (IP) address.  Normally, this address is identified as starting with 10.X.X.X.  This means that the Cloud Load Balancers and any associated nodes must be located in the same data center. (This includes testing with a known operational server.)
+For the most part, Cloud Load Balancers communicate to attached nodes by using the service net internet protocol (IP) address.  Normally, this address is identified as starting with 10.X.X.X.  This means that the Cloud Load Balancers and any associated nodes must be located in the same data center. (This includes testing with a known operational server.)
 
 ### Use Cloud Load Balancers with RackConnect
 
