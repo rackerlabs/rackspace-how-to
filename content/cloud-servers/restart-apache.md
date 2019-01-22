@@ -35,6 +35,8 @@ If you receive an error message similar to the one in the following example outp
     Syntax error on line 51 of /etc/httpd/conf/httpd.conf:
     Invalid command 'erverRoot', perhaps misspelled or defined by a module not included in the server configuration
 
+### Check the Apache error logs
+
 If you resolve those errors and Apache still doesn't restart, check the Apache error logs. It might be helpful to use two windows. In one window, tail the error log by running the following command:
 
     tail –f /var/log/httpd/error _log
