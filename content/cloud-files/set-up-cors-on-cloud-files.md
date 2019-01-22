@@ -1,20 +1,20 @@
 ---
-permalink: setup-cors-on-cloud-files
-audit_date:
-title: Setup CORS on Cloud Files
-created_date: '2019-01-18'
+permalink: set-up-cors-on-cloud-files/
+audit_date: '2019-01-18'
+title: Set up CORS on Cloud Files
+created_date: '2019-01-22'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-22'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-A question that comes up frequently is why Cloud Files not loading up inside a web page.  Usually this is using AJAX or embedding some fonts. The problem goes back to Cross-origin resource sharing (CORS). It's a security feature to prevent malignant content to be loaded up onto a web page by default.
+If content in your Cloud Files account isn't loading on your website, it might be due to Cross-Origin Resource Sharing (CORS), a security feature designed to prevent malicious content from loading in a web page by default. If your files load AJAX or embed fonts, CORS might prevent them from loading.
 
-This is how to change headers in Cloud Files with curl (replace XXXXX with your endpoint and YYYYY with your token):
+You can correct this issue by using the following steps to change the headers in your Cloud Files with cURL (replacing `XXXXX` with your endpoint and `YYYYY` with your token):
 
-1. Set the 'X-Container-Meta-Access-Control-Allow-Origin' header on a container called mycontainer:
+1. Set the `X-Container-Meta-Access-Control-Allow-Origin` header on a container called `mycontainer`:
 
   $ curl -i -X POST https://storage101.lon3.clouddrive.com/v1/MossoCloudFS_XXXXX/mycontainer/ -H "X-Auth-Token: YYYYY" -H "X-Container-Meta-Access-Control-Allow-Origin: *"
 
