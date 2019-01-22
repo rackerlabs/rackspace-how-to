@@ -23,8 +23,8 @@ or [Prepare to migrate a Windows server](https://support.rackspace.com/how-to/pr
 You can reduce the amount of data to be migrated by deleting old installers,
 rotating logs, and removing old cache and session files.
 
-You can also find a list of items to consider before migrating in the
-[Before you move to General Purpose or I/O server checklist](/how-to/before-you-move-to-general-purpose-or-io-cloud-server-checklist).
+You can also find a list of items to consider before migrating in this
+[article](how-to/considerations-for-migrating-to-a-general-purpose-or-io-cloud-server/).
 
 If you plan to remove files from your server to speed up your migration, we
 recommend that you create a backup first to ensure that no essential data is lost.

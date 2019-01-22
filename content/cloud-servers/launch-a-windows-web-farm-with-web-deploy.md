@@ -96,7 +96,7 @@ up on only the master server. The task should have the following characteristics
 
 - Use the SyncMan credentials that we specified earlier.
 - Run even when the user is not logged on.
-- Be a daily task that runs every 1 minute for a duration of 1 day to ensures
+- Be a daily task that runs every 1 minute for a duration of 1 day to ensure
   that it will run indefinitely at a 1-minute intervals.
 
 Use the following steps to schedule the task:
