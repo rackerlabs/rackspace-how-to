@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 This article presents 10 ways that you can use the
-System Activity Report (SAR) command.
+System Activity Report (SAR) command to monitor resources in Linux&reg;.
 
 ### 1. Display the collective usage of all CPUs
 
