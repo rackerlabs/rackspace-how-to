@@ -25,26 +25,24 @@ Using Directory Sync for your organization includes these benefits :
     familiar Microsoft&reg; Active Directory interface. Choose which user
     objects to synchronize. Synchronize as few as one user in
     your Active Directory, or synchronize all of them at the same time.
--   **Save time**: For many larger organizations, the Directory Sync
-    service can save considerable effort and time when onboarding new
-    employees and managing password policies.
+-   **Save time**: Directory Sync can save considerable effort and time when on-boarding new
+    employees and managing password policies in large numbers.
 -   **Business automation**: Rackspace Directory Sync is built to use
-    the Rackspace Email cloud's public REST APIs, which simplifies
-    automating and preserving business.
--   **Secure**: All data exchanged is SSL encrypted and synchronization
+    the Rackspace Email cloud's public REST APIs to facilitate automation.
+-   **Secure**: All data exchanged is encrypted using SSL(Secure Sockets Layer) and synchronization
     is one-way only.
 -   **Cost effective**: Rackspace Directory Sync is available at no
     additional cost.
 
-### Supported objects and platforms
+#### Supported objects and platforms
 
 Rackspace Directory Sync supports the synchronization of the following
 Active Directory objects:
 
 -   Active Directory user mailboxes
 -   Active Directory user passwords for same sign-on
--   Active Directory contacts (for Hosted Exchange)
--   Distribution groups (for Hosted Exchange)
+-   Active Directory contacts (Hosted Exchange)
+-   Distribution groups (Hosted Exchange)
 
 Directory Sync supports the following Rackspace Email platforms:
 
@@ -59,14 +57,14 @@ Directory Sync supports the following Active Directory platforms:
 -   Windows Server 2008 and 2008 R2
 -   Windows 2012 and 2012 R2
 
-### Directory Sync limitations
+#### Directory Sync limitations
 
 -   Does not synchronize with Hosted Exchange 2007
 -   Existing mail data does not migrate with Directory Sync to our
     hosted environment.
     We offer several methods you can use to migrate your own data,
-    as described at [Email migration
-    services](/how-to/email-migration-services) article.
+    as described in the article [Email migration
+    services](/how-to/email-migration-services).
 -   Synchronizes user passwords at the moment a password is changed.
     Passwords cannot be synchronized retroactively because they are
     unreadable from Active Directory. Users must change their passwords
@@ -75,7 +73,7 @@ Directory Sync supports the following Active Directory platforms:
 -   Windows Server 2003 and the Active Directory functional level of
     2003 are not supported.
 
-### Installation and configuration
+#### Installation and configuration
 
 See [Rackspace Directory Sync: Install and
 configure](/how-to/rackspace-directory-sync-install-and-configure)
@@ -84,13 +82,13 @@ to get started.
 **Note:** You *must* restart the domain controller during installation
 in order for the password synchronization to work.
 
-### How Directory Sync works
+#### How Directory Sync works
 
-Directory Sync runs automatically. It synchronizes changes from your
+Directory Sync automatically synchronizes changes from your
 local directory to your email accounts every five minutes. You can also
 click **Sync Now** to synchronize immediately.
 
-Directory Sync is one-way only. It does not synchronize information from
+Directory Sync is synchronizes one-way only. It does not synchronize information from
 Hosted Exchange or Rackspace Email back to your Active Directory. If you
 change any information, such as passwords, using Outlook Web App or
 Control Panel, your mailboxes will not be synchronized with Active
@@ -112,19 +110,19 @@ Exchange, create a new security group for the users that will be
 synchronized with Exchange mailboxes. If you use Rackspace Email, create
 a new security group for the users that will be synchronized with
 Rackspace Email mailboxes. If you use both Hosted Exchange and Rackspace
-Email, you will have two security groups. Directory Sync creates and
+Email, you will create two security groups. Directory Sync creates and
 manages mailboxes for all user objects that you add to the security
 groups.
 
 #### User Mailboxes
 
 Directory Sync associates Active Directory user objects with email
-accounts by their mail attribute. The mail attribute is the email
+accounts using their mail attribute. The mail attribute is the email
 address property associated with the user.
 
 #### Password synchronization
 
-Password synchronization occurs *after* the user object has synchronized
+Password synchronization occurs after the user object has synchronized
 to the mailbox. Password changes occur on their own synchronization
 interval and with a higher priority than other synchronization sessions.
 
@@ -136,7 +134,7 @@ mailbox. Be sure to assign user objects to email security groups before
 you change passwords. Otherwise, Directory Sync will not set the new
 passwords.
 
-When you create new mailboxes, those users must change passwords before
+When you create new mailboxes, those users must change their passwords before
 they can access their email.
 
 If you manage your Active Directory with multiple domain controllers,
@@ -148,7 +146,7 @@ synchronize those changes to Rackspace Hosted Mail.
 #### Distribution list membership synchronization
 
 Synchronize users within distribution lists or security groups from
-Active Directory to distribution list membership within the Email
+Active Directory to distribution list membership within the
 Control Panel. Directory Sync uses the group's email address property to
 synchronize with the Hosted Exchange distribution list.
 
@@ -181,18 +179,17 @@ environment as an alias to that email address.
     the domain). For example, `SMTP:userA@example.org` creates the
     alternate address `userA@example.org`.
 
-**How to Enable:**
+#### How to enable synchronization of proxy addresses:
 
--   The setting is located in the `appSettings.config` file in the
+1.  The setting is located in the `appSettings.config` file in the
     `\Directory Sync Service\web` directory.
--   Go to config value:
+2.   Go to the configuration value:
 
-        <add key="SyncProxyAddresses" value="False" />
+        `<add key="SyncProxyAddresses" value="False" />`
 
--   The setting is set to `False` by default for new installs and
-    upgrades and needs to be changed to `True` to enable syncing of the
-    proxy addresses. This setting will be persistent so future upgrade
-    installs will not revert.
+3.  This setting is set to `False` by default for new installations and
+    upgrades. You will change the setting to `True` to enable syncing of the
+    proxy addresses. Future upgrade installations will not revert this setting.
 
 #### Additional notes
 
@@ -200,16 +197,13 @@ environment as an alias to that email address.
     Computer (ADUC) console with the Advanced Features enabled in the
     View tab.
 -   Domain aliases and accepted domains must be configured with the help
-    of Cloud Office Support before configuring alternate addresses. If
-    not, they will not sync correctly.
--   During the initial set up, it is best to ensure the `proxyAddresses`
-    attribute does not contain any domain aliases. If not, this will
-    create errors during set up.
--   Alternate Addresses work for Exchange Mailboxes only. They do not
-    work with Distribution Lists or Contacts. Those must be done
-    manually in the Cloud Office Control Panel.
+    of Cloud Office Support before configuring alternate addresses to ensure that they are synchronized correctly.
+-   During the initial set up, ensure the `proxyAddresses`
+    attribute does not contain any domain aliases to avoid errors.
+-   Alternate Addresses are available to  Exchange Mailboxes only. They do not
+    work with Distribution Lists or Contacts.
 
-#### Security
+### Security
 
 #### User password requirements
 
@@ -237,23 +231,23 @@ Enable the following ports on the Directory Sync server:
     [Rackspace API](http://api.emailsrvr.com)
 -   **8732** - Open for connections from other domain controllers to the
     Directory Sync server. Not used for any connections outside
-    your network. This port is used by domain controller password
+    your network. This port is used by the domain controller password
     hooks.
--   **8080** - Only used locally on Directory Sync service machine for
+-   **8080** - This port is only used locally on the Directory Sync service machine for
     web browser. You may block this port for any external connections.
 
 #### Network encryption
 
-Communications between Directory Sync and Rackspace is secured through
+Communications between Directory Sync and Rackspace are secured through
 HTTPS. Communications between the Active Directory password hook and
-Directory Sync is secured with Microsoft WCF Transport Security which
+Directory Sync are secured with Microsoft WCF Transport Security which
 uses Windows Authentication and encryption.
 
 ### Synchronized user attributes
 
 Directory Sync will synchronize the following user attributes with
-Exchange and Rackspace Email mailboxes. Some attributes differ between
-Rackspace and Exchange mailboxes.
+Hosted Exchange and Rackspace Email mailboxes. Some attributes differ between
+Rackspace Email and Exchange mailboxes.
 
 List Format: Email Attribute: ADSI property (limitations)
 
