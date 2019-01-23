@@ -14,10 +14,10 @@ This article shows you how to create and edit users in MySQL&reg;.
 
 ### Log in
 
-Log in to your cloud server by using the terminal or PuTTY
-Log in to MySQL by running the following command:
+1. [Log in to your cloud server](/how-to/connect-to-a-cloud-server/).
+2. Log in to MySQL by running the following command:
 
-    mysql -u root -p
+       mysql -u root -p
 
 You are prompted for your MySQL root password (note this is not the same as
 the Cloud Server root password).
@@ -65,7 +65,7 @@ access any other database.
 
 Flush the privileges by running the following command:
 
-FLUSH PRIVILEGES;
+    FLUSH PRIVILEGES;
 
 ### Log in as the new user
 
