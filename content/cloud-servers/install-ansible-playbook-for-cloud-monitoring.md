@@ -45,39 +45,39 @@ Monitoring on your cloud server by using the following steps:
 
 6. Next, you need to use the following commands to configure the plug-ins:
 
-  - The following command configures the `holland_mysqldump` plug-in on the
-    local host:
+   - The following command configures the `holland_mysqldump` plug-in on the
+     local host:
 
-        ansible-playbook -i hosts holland_mysqldump.yml
+         ansible-playbook -i hosts holland_mysqldump.yml
 
-  - The following command configures the `mysql_slave` plug-in on the local
-    host:
+   - The following command configures the `mysql_slave` plug-in on the local
+     host:
 
-        ansible-playbook -i hosts mysql_slave.yml
+         ansible-playbook -i hosts mysql_slave.yml
 
-  - The following command fails with an error message informing you that you
-    need to set a port:
+   - The following command fails with an error message informing you that you
+     need to set a port:
 
-        ansible-playbook -i hosts port_check.yml
+         ansible-playbook -i hosts port_check.yml
 
-  - The following command configures the `port_check` plug-in on the localhost
-    checking if port 8080 is open:
+   - The following command configures the `port_check` plug-in on the localhost
+     checking if port 8080 is open:
 
-        ansible-playbook -i hosts port_check.yml -e port=8080
+         ansible-playbook -i hosts port_check.yml -e port=8080
 
-  - The following command configures the `port_check` plug-in to check
-    rackspace.com:80:
+   - The following command configures the `port_check` plug-in to check
+     rackspace.com:80:
 
-        ansible-playbook -i hosts port_check.yml -e '{"host":"rackspace.com","port":"80"}'
+         ansible-playbook -i hosts port_check.yml -e '{"host":"rackspace.com","port":"80"}'
 
-  - The following command configures the `port_check plugin` to check MySQL's
-    port 3306 on the ServiceNet address:
+   - The following command configures the `port_check plugin` to check MySQL's
+     port 3306 on the ServiceNet address:
 
-        ansible-playbook -i hosts port_check.yml -e '{"host":"10.X.X.X","port":"3306"}'
+         ansible-playbook -i hosts port_check.yml -e '{"host":"10.X.X.X","port":"3306"}'
 
-  - The following command configures the `lsyncd_check` plug-in:
+   - The following command configures the `lsyncd_check` plug-in:
 
-        ansible-playbook -i hosts lsyncd_check.yml
+         ansible-playbook -i hosts lsyncd_check.yml
 
 The Ansible playbook should start running and monitoring your cloud server
 automatically.
