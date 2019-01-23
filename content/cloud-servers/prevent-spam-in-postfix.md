@@ -1,10 +1,10 @@
 ---
 permalink: prevent-spam-in-postfix/
-audit_date:
+audit_date: '2019-01-18'
 title: Prevent spam in Postfix
-created_date: '2019-01-18'
+created_date: '2019-01-23'
 created_by: Rackspace Community
-last_modified_date: '2019-01-18'
+last_modified_date: '2019-01-23'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -13,7 +13,7 @@ product_url: cloud-servers
 This article demonstrates some simple configuration changes that you can implement on 
 a [Postfix](http://www.postfix.org) installation on your mail server to reduce spam.
 
-### Enable Realtime Blackhole Lists
+### Enable Real-time Blackhole Lists
 
 Real-time Blackhole Lists (RBLs) are lists of Internet Protocol (IP) addresses that are associated with known spammers. These lists are generally free. 
 
