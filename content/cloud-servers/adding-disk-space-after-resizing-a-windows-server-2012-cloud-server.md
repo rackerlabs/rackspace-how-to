@@ -5,8 +5,8 @@ title: Add disk space after resizing a Windows Server 2012 Cloud Server
 type: article
 created_date: '2013-04-10'
 created_by: Rackspace Support
-last_modified_date: '2018-11-15'
-last_modified_by: Kate Dougherty
+last_modified_date: '201-01-23'
+last_modified_by: Jonathan Lunberg
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -28,22 +28,22 @@ Use the following steps to extend your drive:
    Management**.
 
     The left pane of **Disk Management** displays the current formatted hard
-    drive for your server, generally **C:&#92;&#92;**, and the right pane
+    drive for your server, generally **C:&#92;**, and the right pane
     displays the amount of unallocated space.
 
-3. Select the **C:&#92;&#92;** drive and right-click on it. Choose **Extend
+3. Select the **C:&#92;** drive and right-click on it. Choose **Extend
    Volume** from the drop-down menu.
 
     The Extend Volume Wizard opens. Click **Next** to begin the Extend Volume
     process.
 
-4. To add all available space to your **C:&#92;&#92;** drive (**Disk 0**), you
+4. To add all available space to your **C:&#92;** drive (**Disk 0**), you
    can keep the default selections and press **Next**, as shown in the
    following image:
 
     <img src="{% asset_path cloud-servers/adding-disk-space-after-resizing-a-windows-server-2012-cloud-server/extend_2.png %}" alt="" />
 
-    The **C:&#92;&#92;** drive expands to the maximum available space.
+    The **C:&#92;** drive expands to the maximum available space.
 
 5. To finalize the modifications, click **Finish**.
 
@@ -54,4 +54,4 @@ available to use.
 
 You can verify that the Extend Volume process worked correctly by loading the
 **Computer Manager** from the **Server Manager** and checking the disk size for
-the **C:&#92;&#92;** drive in **Disk Management**.
+the **C:&#92;** drive in **Disk Management**.
