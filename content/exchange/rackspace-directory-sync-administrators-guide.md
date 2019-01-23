@@ -5,7 +5,7 @@ title: 'Rackspace Directory Sync Administration Guide'
 type: article
 created_date: '2013-04-25'
 created_by: Kevin Richey
-last_modified_date: '2019-01-22'
+last_modified_date: '2019-01-23'
 last_modified_by: Rose Coste
 product: Microsoft Exchange
 product_url: exchange
