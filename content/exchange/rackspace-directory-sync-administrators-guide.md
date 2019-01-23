@@ -23,13 +23,13 @@ Using Directory Sync for your organization includes these benefits :
     sign-on experience.
 -   **Ease of management**: Administrators can manage mail-enabled objects directly from a
     familiar Microsoft&reg; Active Directory interface. Choose which user
-    objects to synchronize. Synchronize as few as one user in
+    objects to synchronize. Synchronize a single user in
     your Active Directory, or synchronize all of them at the same time.
--   **Save time**: Directory Sync can save considerable effort and time when on-boarding new
+-   **Save time**: Directory Sync can save considerable effort and time when on boarding new
     employees and managing password policies in large numbers.
 -   **Business automation**: Rackspace Directory Sync is built to use
     the Rackspace Email cloud's public REST APIs to facilitate automation.
--   **Secure**: All data exchanged is encrypted using SSL(Secure Sockets Layer) and synchronization
+-   **Secure**: All data exchanged is encrypted using SSL (Secure Sockets Layer) and synchronization
     is one-way only.
 -   **Cost effective**: Rackspace Directory Sync is available at no
     additional cost.
@@ -88,7 +88,7 @@ Directory Sync automatically synchronizes changes from your
 local directory to your email accounts every five minutes. You can also
 click **Sync Now** to synchronize immediately.
 
-Directory Sync is synchronizes one-way only. It does not synchronize information from
+Directory Sync synchronizes one-way only. It does not synchronize information from
 Hosted Exchange or Rackspace Email back to your Active Directory. If you
 change any information, such as passwords, using Outlook Web App or
 Control Panel, your mailboxes will not be synchronized with Active
@@ -110,14 +110,14 @@ Exchange, create a new security group for the users that will be
 synchronized with Exchange mailboxes. If you use Rackspace Email, create
 a new security group for the users that will be synchronized with
 Rackspace Email mailboxes. If you use both Hosted Exchange and Rackspace
-Email, you will create two security groups. Directory Sync creates and
+Email, you create two security groups. Directory Sync creates and
 manages mailboxes for all user objects that you add to the security
 groups.
 
 #### User Mailboxes
 
 Directory Sync associates Active Directory user objects with email
-accounts using their mail attribute. The mail attribute is the email
+accounts by using their mail attribute. The mail attribute is the email
 address property associated with the user.
 
 #### Password synchronization
@@ -183,13 +183,12 @@ environment as an alias to that email address.
 
 1.  The setting is located in the `appSettings.config` file in the
     `\Directory Sync Service\web` directory.
-2.   Go to the configuration value:
+2.   Go to the following configuration value:
 
         `<add key="SyncProxyAddresses" value="False" />`
 
-3.  This setting is set to `False` by default for new installations and
-    upgrades. You will change the setting to `True` to enable syncing of the
-    proxy addresses. Future upgrade installations will not revert this setting.
+3.  Change the setting to `True` to enable syncing of the
+    proxy addresses. Future upgrade installations do not revert this setting.
 
 #### Additional notes
 
