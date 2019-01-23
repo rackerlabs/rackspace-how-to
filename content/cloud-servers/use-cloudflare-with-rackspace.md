@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article explains why you might want to use CloudFlare with Rackspace.
+This article explains why you might want to use CloudFlare&reg; with Rackspace.
 
 ### Content delivery network
 
