@@ -28,7 +28,7 @@ Use the following steps to extend your drive:
    Management**.
 
     The left pane of **Disk Management** displays the current formatted hard
-    drive for your server, generally **C:&#92**;, and the right pane
+    drive for your server, generally **C:&#92;**, and the right pane
     displays the amount of unallocated space.
 
 3. Select the **C:&#92;** drive and right-click on it. Choose **Extend
