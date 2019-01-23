@@ -6,8 +6,8 @@ created_date: '2019-01-23'
 created_by: Rackspace Community
 last_modified_date: 
 last_modified_by: 
-product: Cloud Servers
-product_url: cloud-servers
+product: Cloud Images
+product_url: cloud-images
 --- 
 
 If you're not the most tech savvy person, exporting and downloading a Saved Image from the Rackspace Cloud can seem a little intimidating. There are multiple articles for each part of the process, CLIs, and tools you've probably never heard of. But, there is an easy way to get this process taken care of as well. The steps and guide below will take you through exporting your Saved Image using our easy Pitchfork tool that interfaces with our API, and then the easy to use and free-to-download Cyberduck software.
