@@ -19,7 +19,7 @@ This article shows you how to create and edit users in MySQL&reg;.
 
        mysql -u root -p
 
-You are prompted for your MySQL root password (note this is not the same as
+You are prompted for your MySQL root password (note that this is not the same as
 the Cloud Server root password).
 
 ### Create a new user
@@ -42,7 +42,7 @@ The following example shows the command that you use to flush privileges:
 ### Set permissions for the new user
 
 At this stage, your new user (`test`) has no permissions set and can't do
-anything. You might want to start setting permissions by assigning `select`
+anything. You might want to start setting permissions by assigning `SELECT`
 (read-only) permissions on all of the available databases. You can grant
 select permissions by running the following command:
 
@@ -69,7 +69,7 @@ Flush the privileges by running the following command:
 
 ### Log in as the new user
 
-To verify that the permssions that you set work properly, log in to MySQL as
+To verify that the permissions that you set work properly, log in to MySQL as
 the new user by running the following command:
 
     mysql -u test -p
@@ -85,8 +85,8 @@ The following error message displays:
 
     ERROR 1044 (42000): Access denied for user 'test'@'localhost' to database 'mytestdb2'
 
-This error should occur because the `test` user only has `all` privileges for
-the 'mytestdb' database, and `select` privileges for everything else.
+This error occurs because the `test` user only has `ALL PRIVILEGES` for
+the 'mytestdb' database, and `SELECT` privileges for everything else.
 
 ### Drop a user
 
