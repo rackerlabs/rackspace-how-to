@@ -1,7 +1,7 @@
 ---
 permalink: use-sar-to-monitor-resources-in-linux/
 audit_date: '2019-01-18'
-title: Use sar to Monitor Resources in Linux
+title: Use sar to monitor resources in Linux
 created_date: '2019-01-22'
 created_by: Rackspace Community
 last_modified_date: '2019-01-18'
@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 This article presents 10 ways that you can use the
-System Activity Report (SAR) command to monitor resources in Linux&reg;.
+System Activity Report (sar) command to monitor resources in Linux&reg;.
 
 ### 1. Display the collective usage of all CPUs
 
@@ -22,7 +22,7 @@ This command outputs the cumulative, real-time resource use of all CPUs.
 
 You can add more parameters to this command. For example, adding `1 3` at
 the end of the command as shown in the following example reports for every
-1 seconds a total of 3 times:
+1 second a total of 3 times:
 
     sar -u 1 3
 
@@ -84,14 +84,14 @@ The output looks like the following example:
 
 You might also find the following variations helpful:
 
-- `sar -P ALL`: Displays CPU usage for each core for the current day
+- `sar -P ALL`: Displays CPU usage for each core for the current day.
 - `sar -P ALL 1 3`: Displays real-time CPU usage of each core
-  every 1 second for 3 times
-- `sar -P 1`: Displays CPU usage for core number 1 for the current day
+  every 1 second for 3 times.
+- `sar -P 1`: Displays CPU usage for core number 1 for the current day.
 - `sar -P 1 1 3`: Displays real-time CPU usage for core number 1,
-  every 1 second for 3 times
+  every 1 second for 3 times.
 - `sar -P ALL -f /var/log/sa/sa10`: Displays CPU usage for each
-  core for the tenth day of the month from the `sa10` file
+  core for the tenth day of the month from the `sa10` file.
 
 ### 3. Display free and used memory
 
@@ -100,7 +100,7 @@ Run the following command to display free and used memory:
     sar -r
 
 If you add `1 3` to the command as shown in the following example,
-the output reports for every 1 seconds a total of 3 times:
+the output reports for every 1 second a total of 3 times:
 
     sar -r 1 3
 
@@ -128,7 +128,7 @@ Run the following command to display the amount of swap space that is in use:
     sar -S
 
 If you add `1 3` to the end of the command as shown in the following example,
-the output reports for every 1 seconds a total of 3 times:
+the output reports for every 1 second a total of 3 times:
 
     sar -S 1 3
 
@@ -170,8 +170,8 @@ Run the following command to display overall input and output (I/O) activities:
 
     sar -b
 
-The output from this command displays I/O statistics. If yo add `1 3` to the
-end of the command as shown in the following example, the output reports for every 1 seconds a total of 3 times:
+The output from this command displays I/O statistics. If you add `1 3` to the
+end of the command as shown in the following example, the output reports for every 1 second a total of 3 times:
 
     sar -b 1 3
 
@@ -234,7 +234,7 @@ devices. For example, `dev53-1` means a block device with 53 as major number,
 and 1 as minor number.
 
 You can use the pretty print (`-p`) flag as shown in the following example to
-make this column display the actual device name (such as sda, sda1, or sdb1):
+make the column display the actual device name (such as sda, sda1, or sdb1):
 
     sar -p -d 1 1
 
@@ -267,7 +267,7 @@ Run the following command to display the context switch per second:
 
 This command reports the total number of processes created per second and the
 total number of context switches per second. If you add `1 3` to the end of
-the command as shown in the following example, it reports for every 1 seconds
+the command as shown in the following example, it reports for every 1 second
 a total of 3 times:
 
     sar -w 1 3
@@ -295,7 +295,7 @@ Run the following command to display the run queue and load average:
 
 This command reports the run queue size and load average for the past minute,
 past 5 minutes, and past 15 minutes. If you add `1 3` to the end of the
-command as shown in the following example, it reports for every 1 seconds a
+command as shown in the following example, it reports for every 1 second a
 total of 3 times:
 
     sar -q 1 3
@@ -328,7 +328,7 @@ Run the following command to display network statistics:
 This command reports various network statistics, such as the number of packets
 received (transmitted) through the network card or the number of packet
 failures that occurred. If you add `1 3` to the end of the command, it reports
-for every 1 seconds a total of 3 times.
+for every 1 second a total of 3 times.
 
 You can also add a keyword to the command, as shown in the following example:
 
@@ -365,21 +365,21 @@ The output looks like the following example:
     01:11:14 PM      eth0    342.57    342.57  93923.76 141773.27      0.00      0.00      0.00
     01:11:14 PM      eth1      0.00      0.00      0.00      0.00      0.00      0.00      0.00
 
-### 10. Report SAR data by start time
+### 10. Report sar data by start time
 
-Run the following command to report SAR data by start time:
+Run the following command to report sar data by start time:
 
     sar -s
 
-When you view historical SAR data from the `/var/log/sa/saXX` file by using
-the `sar -f` option, the output displays all of the SAR data for that specific
+When you view historical sar data from the `/var/log/sa/saXX` file by using
+the `sar -f` option, the output displays all of the sar data for that specific
 day beginning at 12:00 a.m.
 
 You can use the `-s hh:mi:ss` option to specify the start time. For example,
-if you specify `sar -s 10:00:00`, the output from the command displays the SAR
+if you specify `sar -s 10:00:00`, the output from the command displays the sar
 data beginning at 10 a.m. (instead of the default of midnight).
 
-You can combine the `-s` flag with other SAR flags. For example, to report the
+You can combine the `-s` flag with other sar flags. For example, to report the
 load average on the 26th of the current month starting from 10 a.m., combine
 the `-q` and `-s` flags as shown in the following example:
 
