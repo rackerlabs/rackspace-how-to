@@ -7,8 +7,6 @@ created_date: '2012-03-01'
 created_by: Rackspace Support
 last_modified_date: '2016-05-19'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 **Note**:  Rackspace no longer offers Cloud Servers with Windows 2003, but these instructions are here for legacy support purposes.
