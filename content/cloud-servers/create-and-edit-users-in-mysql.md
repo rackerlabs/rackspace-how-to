@@ -65,7 +65,7 @@ access any other database.
 
 Flush the privileges by running the following command:
 
-FLUSH PRIVILEGES;
+    FLUSH PRIVILEGES;
 
 ### Log in as the new user
 
