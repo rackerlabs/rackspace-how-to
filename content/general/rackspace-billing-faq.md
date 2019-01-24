@@ -149,8 +149,8 @@ suspension."
 
 #### Am I still charged if my server goes down?
 
-The Rackspace Cloud Service Level
-Agreement](https://www.rackspace.com/information/legal/cloud/tos) explains
+The Rackspace [Cloud Terms of 
+Service](https://www.rackspace.com/information/legal/cloud/tos) explains
 when customers are entitled to credits.
 
 #### How do I delete or cancel my services?
