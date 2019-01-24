@@ -88,7 +88,7 @@ Use the following steps to restart the DriveClient service:
      contact Rackspace Support.
    - If the status is **disconnected**, download the log from the server that is
      located at **/var/log/driveclient.log**. (For assistance with downloading a file
-     locally, check out [this helpful article](https://community.rackspace.com/products/f/25/t/7094)).
+     locally, check out [this helpful article](/how-to/transfer-files-to-or-from-a-linux-server-without-ftp)).
 
 5. After saving the file, attach it to a support ticket to send to Rackspace Support.
    This assists in expediting the issue response.
