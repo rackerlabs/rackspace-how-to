@@ -27,15 +27,15 @@ Use the following steps to extend your drive:
 2. Under the **Storage** folder in the left pane, select **Disk
    Management**.
 
-    - The left pane of **Disk Management** displays the current formatted hard
-      drive for your server, generally **C:&#92;**, and the right pane
-      displays the amount of unallocated space.
+    The left pane of **Disk Management** displays the current formatted hard
+    drive for your server, generally **C:&#92;**, and the right pane
+    displays the amount of unallocated space.
 
 3. Select the **C:&#92;** drive and right-click on it. Choose **Extend
    Volume** from the drop-down menu.
 
-    - The Extend Volume Wizard opens. Click **Next** to begin the Extend Volume
-      process.
+    The Extend Volume Wizard opens. Click **Next** to begin the Extend Volume
+    process.
 
 4. To add all available space to your **C:&#92;** drive (**Disk 0**), you
    can keep the default selections and press **Next**, as shown in the
