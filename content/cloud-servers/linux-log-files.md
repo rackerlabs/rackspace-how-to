@@ -11,10 +11,10 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article identifies what is in each of the Linux&reg;logs, where they are
+This article identifies what is in each of the Linux&reg; logs, where they are
 stored, and which distributions (distro) use the logs.
 
-For the most of the following logs, you can use `vi`, `less`, `tail`, or `cat`
+For most of the following logs, you can use `vi`, `less`, `tail`, or `cat`
 to view the log details. Exceptions to this rule are noted in the descriptions.
 
 - **/var/log/alternatives.log** (Ubuntu&reg;/Debian&reg; (DEB))
@@ -25,7 +25,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 
   Stores requests, such as HTTP `GET` and `POST` requests, that are processed
   by Apache&reg;. Parse these logs by using log parsers such as `awstats` or
-  `webalizer`. Configure this by using the `CustomLog` directive.
+  `webalizer`. Configure this log by using the `CustomLog` directive.
 
 - **/var/log/apache2/error.log** (Ubuntu/DEB)
 
@@ -36,17 +36,17 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 - **/var/log/audit/audit.log**
 
   Stores information from the Linux audit daemon (`auditd`). This log contains
-  information on which files users perform reads or writes. For example, you can
-  use this log to determine who changed a specific file.
+  information about the files on which users perform reads or writes. For example,
+  you can use this log to determine who changed a specific file.
 
 - **/var/log/auth.log**
 
   Contains system authorization information, including user logins and
-  which authentication mechanism that was used.
+  which authentication mechanism was used.
 
 - **/var/log/boot**
 
-  Contains information about the boot process after the kernel has loaded.
+  Contains information about the boot process after the kernel is loaded.
   Information includes things such as system file checks, mounting a
   filesystem, starting a firewall, starting network devices, and starting services.
 
@@ -57,7 +57,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 
 - **/var/log/cron**
 
-   `crondaemon` and `anacron` store information about the cron job is here, after
+   `crondaemon` and `anacron` store information about the cron job, after
    they start a cron job.
 
 - **/var/log/dmesg**
@@ -75,7 +75,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 
   Contains failed user login attempts. Use `faillog` to access the information.
 
-- **/var/log/kern.log** (Ubuntu/DEB, and can be configured for Centos&reg; and Redhat&reg;)
+- **/var/log/kern.log** (Ubuntu/DEB, and can be configured for Centos&reg; and Red Hat&reg;)
 
   Contains log details from the kernel's initialization at system bootup, as well
   as any kernel errors or informational messages that are sent from the kernel.
@@ -84,22 +84,22 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 
   Displays recent login information. Run this command to view the log entries.
 
-- **/var/log/maillog.log** (Centos/Redhat)
+- **/var/log/maillog.log** (Centos/Red Hat)
 
   Stores information from the mail server that is running on your system, such
-  as Sendmail logging information.
+  as Sendmail&reg; logging information.
 
-- **/var/log/mail.log (Ubuntu/DEB)**
+- **/var/log/mail.log** (Ubuntu/DEB)
 
   Stores information from the mail server that is running on your system, similar
-  to Maillog.log for the Centos and Redhat flavors.
+  to maillog.log for the Centos and Red Hat flavors.
 
 - **/var/log/mail**
 
   Contains additional logs provided by your mail server. For example: Sendmail
   stores collected mail statistics in **/var/log/mail/statistics**.
 
-- **/var/log/messages (Centos/Redhat)**
+- **/var/log/messages** (Centos/Red Hat)
 
   Contains global system messages, including the messages logged during boot.
   Log entries include information from `mail`, `cron`, `daemon`, `kern`, `auth`,
@@ -112,13 +112,13 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 - **/var/log/samba/**
 
   Contains log information stored by the `samba` daemon, which is used to
-  connect to Microsoft Windows&reg; and Linux filesystems.
+  connect to Microsoft&reg; Windows&reg; and Linux filesystems.
 
 - **/var/log/setroubleshoot/**
 
   Used by SELinux to capture security issues in files and log that information.
 
-- **/var/log/secure** (Centos/Redhat)
+- **/var/log/secure** (Centos/Red Hat)
 
   Stores information related to authentication and authorization privileges.
   For example, `sshd` logs all information here, including unsuccessful attempts.
@@ -128,6 +128,6 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
   Contains login records and shows who is logged into the system. The `who`
   command uses this file to display the information.
 
-- **/var/log/yum.log** (Centos/Redhat)
+- **/var/log/yum.log** (Centos/Red Hat)
 
   Stores information that is logged when a package is installed or removed.

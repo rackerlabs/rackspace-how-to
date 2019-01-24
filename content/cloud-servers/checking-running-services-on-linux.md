@@ -89,7 +89,7 @@ column). Stopping this program should enable `httpd` to be started.
 
 ### Check xinetd status
 
-If the service isn't running, it might be because a superserver such as
+If the service isn't running, it might be because a super-server such as
 an Extended Internet Service Daemon (`xinetd`) is being used to launch the
 program when a connection is received. If this is the case, starting the
 service might have resolved the issue. Run the following command to verify
@@ -100,7 +100,7 @@ that the issue is resolved:
 
 ### Check logs
 
-If you can’t start your service, [review yourlogs](/how-to/linux-log-files) to
+If you can’t start your service, [review your logs](/how-to/linux-log-files) to
 see if they contain information about the issue.
 
 ### Next steps
