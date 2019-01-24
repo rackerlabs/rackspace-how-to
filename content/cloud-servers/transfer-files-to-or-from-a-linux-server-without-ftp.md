@@ -4,7 +4,7 @@ audit_date: '2019-01-24'
 title: Transfer files to or from a Linux server without FTP
 type: article
 created_date: '2019-01-24'
-created_by: Rackspace Commmunity
+created_by: Rackspace Community
 last_modified_date: '2019-01-24'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
@@ -13,26 +13,26 @@ product_url: cloud-servers
 
 ### Introduction
 
-This article helps you connect to a Linux&reg; Server when you need to transfer
+This article helps you connect to a Linux&reg; server when you need to transfer
 a file to or from that server. Most of the time, the File Transfer Protocol (FTP)
-service is not needed because file transfers can be done over the same port as
+service is not needed because you can do file transfers over the same port as
 the Secure Shell (SSH),  port 22, which is used to log in to a  server from the
 command line.
 
 If you are using a file transfer graphical user interface (GUI) tools, such as
 FileZilla&reg;, Cyberduck&reg;, or WinSCP&reg;, this protocol might be listed as
 SFTP (Secure FTP), which does *not* require an extra FTP service. You can use
-any of the following GUI tools to perform a filetransfer over SFTP:
+any of the following GUI tools to perform a file transfer over SFTP:
 
 - [FileZilla](/how-to/connect-to-cloud-servers-with-filezilla-via-sftp)
 
 - [Cyberduck](https://cyberduck.io/?l=en)
 
-- [WINSCP](https://winscp.net/eng/download.php)
+- [WinSCP](https://winscp.net/eng/download.php)
 
 If you cannot connect after you have logged in by using SSH, you should verify
 that FTP has been used in the past. If you need assistance getting logged in
-with SSH, then please review the following article for your platform:
+with SSH, review the following article for your platform:
 
 - [Windows](https://support.rackspace.com/how-to/connecting-to-linux-from-windows-by-using-putty/)
 
@@ -87,12 +87,12 @@ If FTP is not running, the following output displays:
 
 ### User Configuration
 
-If FTP is installed and running, check the users users. By default, FTP users
-also can log in over SSH. If more advanced FTP configuration has been done,
+If FTP is installed and running, check the users. By default, FTP users
+also can log in over SSH. If you have a more advanced FTP configuration,
 this might not be true.
 
-To check the list of users where the user home directory is /home (Linux default),
-run the following command:
+To check the list of users where the user home directory is **/home** (Linux
+default), run the following command:
 
     # cat /etc/passwd | grep "/home" |cut -d: -f1
     tom
@@ -117,8 +117,9 @@ this explicit permission by using the following command:
 
     # iptables -nL INPUT | grep :21
 
-If there is an `ACCEPT` line in the output, then FTP is allowed from that IP or
-range of IPs (otherwise it is not allowed).
+If there is an `ACCEPT` line in the output, then FTP is allowed from that
+Internet Protocol (IP) address or range of IP addresses (otherwise it is not
+allowed).
 
 If you need to add a firewall rule for FTP, you can run the following commands:
 
