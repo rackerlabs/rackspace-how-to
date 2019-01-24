@@ -57,8 +57,8 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 
 - **/var/log/cron**
 
-   `crondaemon` and `anacron` store information about the cron job, after
-   they start a cron job.
+   Stores information from `crondaemon` and `anacron` after they start a cron
+   job.
 
 - **/var/log/dmesg**
 
