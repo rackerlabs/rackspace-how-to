@@ -28,10 +28,10 @@ A packet might contain all of the following information:
 * **Source IP address**: The Internet Protocol (IP) address of the sender.
 * **Destination IP address**: The Internet Protocol (IP) address of the
   recipient.
-* **Source port number**: The port that the sending service used. This number
+* **Source port number**: The port of the sending service. This number
   ranges from 1 to 65535.
-* **Destination port number**: The port of the receiving service, which also
-  ranges from 1 to 65535.
+* **Destination port number**: The port of the receiving service.
+  This number ranges from 1 to 65535.
 * **Protocol**: The protocol or model that the packet follows.
 * **Sequence number**: The sequence number for the packet. The receiver uses
   these numbers to reassemble packets in the correct order.
@@ -90,7 +90,7 @@ following common port numbers:
 | 6660 to 6669 | TCP |
 | IRC | Internet Relay Chat (IRC) |
 | 8080 | TCP |
-| Apache Tomcat | Apache&reg; Tomcat |
+| Apache&reg; Tomcat&reg; | Apache Tomcat |
 
 
 Port numbers enable you to poke holes in your firewall for the services that
@@ -116,7 +116,7 @@ specific IP address, your list might look like the following example:
 
 The line that says `DENY: ALL` is perhaps the most important line in your
 firewall rules because it blocks everything that you do not specifically
-allow. You must usually place this line at the bottom.
+allow. You should usually place this line at the bottom.
 
 ### Additional resources
 
