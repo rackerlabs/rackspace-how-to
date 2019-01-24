@@ -4,7 +4,7 @@ audit_date: '2019-01-24'
 title: Linux log files
 type: article
 created_date: '2018-08-21'
-created_by: Kate Dougherty
+created_by: Rackspace Community
 last_modified_date: '2019-01-24'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
