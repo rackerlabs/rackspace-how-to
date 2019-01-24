@@ -55,42 +55,25 @@ First, you need to identify which communications are coming from and
 going to those services. You can find this information by looking at the
 following common port numbers:
 
-| **Service** | **Protocol** |
-|---------------|-------------------------------------------------------------|
-| 21 | Transfer Control Protocol (TCP) |
-| FTP | File Transfer Protocol (FTP) |
-| 22 | TCP and User Datagram Protocol (TCP/UDP) |
-| SSH/SFTP | Secure Shell (SSH) and Secure File Transfer Protocol (SFTP) |
-| 25 and 587 | TCP |
-| SMTP | Simple Mail Transfer Protocol (SMTP) |
-| 53 | (TCP/UDP) |
-| DNS | Domain Name System (DNS) |
-| 80 | TCP/UDP |
-| HTTP | Hypertext Transfer Protocol (HTTP) |
-| 110 | TCP |
-| POP3 | Post Office Protocol (POP3) |
-| 143 | TCP/UDP |
-| IMAP |  Internet Message Access Protocol (IMAP) |
-| 389 | TCP/UDP |
-| LDAP | Lightweight Directory Access Protocol (LDAP) |
-| 443 | TCP/UDP |
-| HTTPS | Secure HTTP (HTTPS) |
-| 465 | TCP |
-| SMTPS | Simple Mail Transfer Protocol Secure (SMTPS) |
-| 636 | TCP/UDP |
-| LDAPS | Secure LDAP |
-| 694 | UDP |
-| Heartbeat | Heartbeat |
-| 873 | TCP |
-| rsync |  |
-| 3306 | TCP/UDP |
-| MySQL | MySQL |
-| 5900 | TCP/UDP |
-| VNC | Virtual Network Computing (VNC) |
-| 6660 to 6669 | TCP |
-| IRC | Internet Relay Chat (IRC) |
-| 8080 | TCP |
-| Apache&reg; Tomcat&reg; | Apache Tomcat |
+| **Port (IP protocols)** | **Service/Protocol** |
+|-----------------------------------------------|-----------------------------------------------------------|
+| 21 (Transfer Control Protocol (TCP)) | File Transfer Protocol (FTP) |
+| 22 (TCP and User Datagram Protocol (TCP/UDP)) | Secure Shell and Secure File Transfer Protocol (SSH/SFTP) |
+| 25 and 587 | Simple Mail Transfer Protocol (SMTP) |
+| 53 (TCP/UDP) | Domain Name System (DNS) |
+| 80 (TCP/UDP) | Hypertext Transfer Protocol (HTTP) |
+| 110 (TCP) | Post Office Protocol (POP3) |
+| 143 (TCP/UDP) | Internet Message Access Protocol (IMAP) |
+| 389 (TCP/UDP) | Lightweight Directory Access Protocol (LDAP) |
+| 443 (TCP/UDP) | Secure HTTP (HTTPS) |
+| 465 (TCP) | Simple Mail Transfer Protocol Secure (SMTPS) |
+| 636 (TCP/UDP) |  Secure LDAP (LDAPS) |
+| 694 (UDP) | Heartbeat |
+| 873 (TCP) | rsync |
+| 3306 (TCP/UDP) | MySQL |
+| 5900 (TCP/UDP) | Virtual Network Computing (VNC) |
+| 6660-6669 (TCP) | Internet Relay Chat (IRC) |
+| 8080 (TCP) | Apache&reg; Tomcat&reg; |
 
 
 Port numbers enable you to poke holes in your firewall for the services that
