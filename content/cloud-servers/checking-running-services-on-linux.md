@@ -1,12 +1,12 @@
 ---
 permalink: checking-running-services-on-linux/
-audit_date: '2018-10-16'
+audit_date: '2019-01-24'
 title: Check running services on Linux
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2018-10-16'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-01-24'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -26,7 +26,10 @@ directory name. Some names vary depending on your distribution. For example,
 Apache&reg; is `httpd` on CentOS&reg; and `apache2` on Ubuntu&reg;.
 
 **Note**: Many newer Linux&reg; distributions use `systemd` instead of
-`netstat` to check services. If you're using `systemd`, replace all `service <service-name> <status>` commands with `systemct1 <status> <service-name>`. For more information about `systemct1` commands, see the Fedora&trade; [SysVinit to Systemd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
+`netstat` to check services. If you're using `systemd`, replace all
+`service <service-name> <status>` commands with `systemct1 <status> <service-name>`.
+For more information about `systemct1` commands, see the Fedora&trade;
+[SysVinit to Systemd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet).
 
 ### Check the service status
 
@@ -97,11 +100,11 @@ that the issue is resolved:
 
 ### Check logs
 
-If you can’t start your service, [review your
-logs](https://community.rackspace.com/products/f/25/t/531) to see if they
-contain information about the issue.
+If you can’t start your service, [review yourlogs](/how-to/linux-log-files) to
+see if they contain information about the issue.
 
 ### Next steps
+
 After you're sure that the application is running, check the
-[server resources](/how-to/checking-system-load-on-linux) that
+[server resources](/how-to/checking-system-load-on-linux) to verify how much
 your application is consuming.
