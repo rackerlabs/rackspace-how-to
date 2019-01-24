@@ -10,7 +10,7 @@ product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
 
-This article shows you how to install Ansible&reg; playbook for Cloud
+This article shows you how to install the Ansible&reg; playbook for Cloud
 Monitoring on your cloud server by using the following steps:
 
 1. [Connect to the cloud server](/how-to/connect-to-a-cloud-server/) on which
@@ -61,7 +61,7 @@ Monitoring on your cloud server by using the following steps:
          ansible-playbook -i hosts port_check.yml
 
    - The following command configures the `port_check` plug-in on the localhost
-     checking if port 8080 is open:
+     to check if port 8080 is open:
 
          ansible-playbook -i hosts port_check.yml -e port=8080
 
@@ -70,7 +70,7 @@ Monitoring on your cloud server by using the following steps:
 
          ansible-playbook -i hosts port_check.yml -e '{"host":"rackspace.com","port":"80"}'
 
-   - The following command configures the `port_check plugin` to check MySQL's
+   - The following command configures the `port_check plugin` to check the MySQL&reg;
      port 3306 on the ServiceNet address:
 
          ansible-playbook -i hosts port_check.yml -e '{"host":"10.X.X.X","port":"3306"}'
@@ -79,5 +79,5 @@ Monitoring on your cloud server by using the following steps:
 
          ansible-playbook -i hosts lsyncd_check.yml
 
-The Ansible playbook should start running and monitoring your cloud server
+After you follow the preceding steps, the Ansible playbook should start running and monitoring your cloud server
 automatically.
