@@ -2,7 +2,7 @@
 permalink: change-the-kernel-version-on-a-linux-cloud-server-by-using-rescue-mode/
 audit_date: '2019-01-22'
 title: Change the kernel version on a Linux cloud server by using rescue mode
-created_date: '2019-01-24'
+created_date: '2019-01-25'
 created_by: Rackspace Community
 last_modified_date: '2019-01-25'
 last_modified_by: Kate Dougherty
