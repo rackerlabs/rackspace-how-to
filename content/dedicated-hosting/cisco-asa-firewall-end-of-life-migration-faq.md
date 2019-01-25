@@ -78,4 +78,4 @@ While there is no fee to opt-in to a planned maintenance window for Cisco ASA mi
 
 #### Is the Cisco ASA-X 5508 compatible with RackConnect v2?
 
-Yes, the Cisco ASA 5508-X is compatible with RackConnect v2.
+Yes, the Cisco ASA 5508-X is compatible with RackConnect v2. 
