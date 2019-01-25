@@ -1,124 +1,158 @@
 ---
 permalink: sni-with-apache
-audit_date:
-title: SNI with Apache
+audit_date: '2019-01-25'
+title: Using SNI to host multiple SSL certificates in Apache
+type: article
 created_date: '2019-01-16'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-25'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Using Multiple SSL Certificates With  apache With One IP Address.
+Server Name Identification (SNI) is an extension of the Secure Socket Layer (SSL) and Transport
+Layer Security (TLS) protocol that enables you to host multiple SSL certificates on a single
+unique Internet Protocol (IP) address. This article describes how to use SNI to host multiple
+SSL certificates in Apache&reg;.
 
-SNI works for either Apache. But in this article we are focusing on Apache. 
-SNI is supported in Apache v2.2.12 , and  OpenSSL v0.9.8j or later. SNI supports a transport layer security (TLS) .
-Lets Say You are limited to one SSL Certificate per Socket or IP address. This is terribly inconvenient if your isp, or web host will only allow a limited amount of ip's or only allow a single ip. 
-SNI will secure multiple vhosts/sites for either Apache or IIS with a single or even multiple SSL certificates.  This can be for either multiple domainsor multiple sub-domain names.  
- SNI most often is used to apply multiple domains to a single ip address. 
-(This is limited to Modern browsers see bellow for details.)
-Apache with SNI Extension Requirements 
+### Prerequisites
 
-Required
+Your server must meeting the following requirements to use SNI:
 
-openssl v 0.9.8j or later
- apache v2.2.12 or later
-mod_ssl
-OS's that support SNI from scratch
-Redhat enterprise Linux 6.x and later SNI ready
-Fedora 10 and later SNI ready
-Centos 6.x SNI ready
-Debian 6.x and later SNI ready  
-Ubuntu 10.04 and later SNI ready
+- Apache v2.2.12 or later
+- OpenSSL v 0.9.8j or later
+- mod_ssl must be installed
+
+The following operating systems support SNI without additional modifications:
+
+- Red Hat&reg; Enterprise Linux&reg; (RHEL) 6 and later
+- Fedora&reg; 10 and later
+- CentOS&reg; 6
+- Debian&reg; 6 and later
+- Ubuntu&reg; 10.04 and later
   
-OS's that need Apache, openssl, mod_ssl to be compiled with proper versions:
- Redhat enterprise Linux5.x
- Centos 5.x 
+The following operating systems require Apache, OpenSSL, and mod_ssl to be compiled
+with proper versions:
 
-### Setup 
-### Check mod_ssl is installed:
-(rehl, centos, fedora) yum list installed| grep mod_ssl
+- Red Hat Enterprise Linux 5
+- Centos 5
 
-(debain, ubuntu) dpkg -s apache2.2-common or dpkg -s apache2-common
+#### Check that mod_ssl is installed
 
-If it is not:
-(rehl, centos, fedora) yum install mod_ssl
- (debain, ubuntu) apt-get install  apache2.2-common or apt-get install  apache2-common. Then enable the module:
- a2enmod ssl; /etc/init.d/apache2 reload
-### Using unsupported browsers.
+Before you can use SNI, check that mod_ssl is installed by running the following command:
 
-Test on a browser that is unsupported and it will load the SSL Cert of the first vhost that apache parses (loads). 
-This can be disabled by adding the following line to the apache conf file (apache2.conf, or httpd.conf):
-SSLStrictSNIVHostCheck on
-This will cause a 403 error for unsupported browsers.  
+**RHEL, CentOS, and Fedora**
+
+    yum list installed | grep mod_ssl
+
+**Debian and Ubuntu**
+
+    dpkg -s apache2.2-common
+
+If mod_ssl is not installed, use the following command to install it:
+
+**RHEL, CentOS, and Fedora**
+
+    yum install mod_ssl
+    
+**Debian and Ubuntu**
+
+ For Debian and Ubuntu, install mod_ssl by using the following command:
  
-### Setting up vhosts
-This article assumes you know your where your OS keeps it's vhost file or where you put your vhost configuration. 
-In your root apache conf file (apache2.conf or httpd.conf) add the following:
-# Ensure that Apache listens on port 443
-Listen 443
-NameVirtualHost *:443
- # Go ahead and accept connections for these vhosts 
+     apt-get install apache2.2-common
+ 
+ Then enable the module by running `a2enmod ssl; /etc/init.d/apache2 reload`.  
+ 
+### Set up vhosts
 
-# from non-SNI clients SSLStrictSNIVHostCheck off
-In your vhost conf file for each site you will need to add your virutalhost config 
-to the  vhost file:
-(remember this is just an example)
-First Vhost:
+Add the following lines in your root Apache configuration file (apache2.conf or httpd.conf):
 
-<VirtualHost *:443>
+    # Ensure that Apache listens on port 443
+    Listen 443
+    
+    # Listen for virtual host requests on all IP addresses
+    NameVirtualHost *:443
 
- ServerName www.yoursite.com
+    # Accept connections for these vhosts from non-SNI clients
+    SSLStrictSNIVHostCheck off
 
- DocumentRoot /var/www/site
+In the vhost configuration file for each site, you must add your virtual host configuration. It
+should look similar to the following examples:
 
- SSLEngine on
+First vhost:
 
- SSLCertificateFile /path/to/www_yoursite_com.crt
+    <VirtualHost *:443>
 
- SSLCertificateKeyFile /path/to/www_yoursite_com.key
+     ServerName www.yoursite.com
 
- SSLCertificateChainFile /path/to/DigiCertCA.crt
+     DocumentRoot /var/www/site
 
-</Virtual Host>
+     SSLEngine on
 
-Second Vhost:
+     SSLCertificateFile /path/to/www_yoursite_com.crt
 
-<VirtualHost *:443>
+     SSLCertificateKeyFile /path/to/www_yoursite_com.key
 
- ServerName www.yoursite2.com
+     SSLCertificateChainFile /path/to/DigiCertCA.crt
 
- DocumentRoot /var/www/site2
+    </Virtual Host>
 
- SSLEngine on
+Second vhost:
 
- SSLCertificateFile /path/to/www_yoursite2_com.crt
+    <VirtualHost *:443>
 
- SSLCertificateKeyFile /path/to/www_yoursite2_com.key
+     ServerName www.yoursite2.com
 
- SSLCertificateChainFile /path/to/DigiCertCA.crt
+     DocumentRoot /var/www/site2
 
-</Virtual Host>
-You can test this with a self-signed certificate if you want.   
-openssl req -new -nodes -keyout mykey.key -out mycert.cer -days 3650 -x509
-Specify the domain name in the **Common Name** section.
-restart apache
-BROWERS
-SNI is a newer Technology and most Browsers support it. However it does not work in either IE6. Or any Windows XP browser except for chrome 6 and later. 
+     SSLEngine on
 
-Desktop Browsers
-* Internet Explorer 7 and later
-* Firefox 2 and later
-* Opera 8 with TLS 1.1 enabled
-* Google Chrome:
+     SSLCertificateFile /path/to/www_yoursite2_com.crt
+
+     SSLCertificateKeyFile /path/to/www_yoursite2_com.key
+
+     SSLCertificateChainFile /path/to/DigiCertCA.crt
+
+    </Virtual Host>
+    
+You can test the configuration with a self-signed certificate by using the following
+command:
+
+    openssl req -new -nodes -keyout mykey.key -out mycert.cer -days 3650 -x509
+
+Specify the domain name in the **Common Name** section, and then restart Apache.
+
+
+### Supported browsers
+
+SNI is supported by most browsers, however older browsers such as Internet Explorer 6
+and any Windows&reg; XP browser do not support SNI.
+
+**Desktop browsers**
+
+- Internet Explorer 7 and later
+- Firefox 2 and later
+- Opera 8 with TLS 1.1 enabled
+- Google Chrome:
     Supported on Windows XP on Chrome 6 and later
     Supported on Vista and later by default
     OS X 10.5.7 in Chrome Version 5.0.342.0 and later
-* Chromium 11.0.696.28 and later
-* Safari 2.1 and later (requires OS X 10.5.6 and later or Windows Vista and later).
-* Note: No versions of Internet Explorer on Windows XP support SNI
-Mobile Browsers
-* Mobile Safari for iOS 4.0
-* Android 3.0 (Honeycomb) and later
-* Windows Phone 7
+- Chromium 11.0.696.28 and later
+- Safari 2.1 and later (requires OS X 10.5.6 and later or Windows Vista and later).
+
+**Note:** No versions of Internet Explorer on Windows XP support SNI.
+
+**Mobile browsers**
+
+- Mobile Safari for iOS 4.0 and later
+- Android 3.0 (Honeycomb) and later
+- Windows Phone 7 and later
+
+#### Unsupported browsers
+
+Unsupported browsers load the SSL certificate of the first vhost that Apache loads. You can
+display a 403 error instead by adding the following line to the Apache configuration file
+(apache2.conf, or httpd.conf):
+
+    SSLStrictSNIVHostCheck on
