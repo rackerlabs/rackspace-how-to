@@ -1,5 +1,5 @@
 ---
-permalink: rackspace-cisco-asa-firewall-migration-faq/
+permalink: cisco-asa-firewall-end-of-life-migration-faq/
 audit_date: '2019-01-25'
 title: Cisco ASA firewall end-of-life migration FAQ
 type: article
