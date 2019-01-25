@@ -28,7 +28,7 @@ You need the following tools to complete the steps in this article.
 Cyberduck is a tool for managing storage solutions like Rackspace Cloud Files
 through a simple graphical user interface (GUI).
 
-Download Cyberduck at https://cyberduck.io/.
+Download [Cyberduck](https://cyberduck.io/).
 
 **Note**: Cyberduck is not affiliated with Rackspace, and we are unable to
 provide support for using this application.
@@ -38,7 +38,7 @@ provide support for using this application.
 Pitchfork is a Rackspace-developed tool for interfacing with various products
 APIs.
 
-Download Pitchfork at https://pitchfork.rax.io.
+Download [Pitchfork](https://pitchfork.rax.io).
 
 #### Other prerequisites
 
