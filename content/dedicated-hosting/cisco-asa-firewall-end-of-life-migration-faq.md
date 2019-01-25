@@ -22,11 +22,11 @@ This means that beginning on the end-of-life date, hardware Service Level Agreem
 
 To ensure you continue to receive Rackspace hosting services and technical support, you will need to migrate to a supported firewall. Rackspace would like to assist you in making this transition immediately to help you avoid the following security and compliance risks:
 
-  - end of life networking hardware
+- end of life networking hardware
 
-  - unpatched security vulnerabilities
+- unpatched security vulnerabilities
 
-  - unsupported code versions
+- unsupported code versions
 
 End-of-life products or services pose a higher security risk for you and for Rackspace. If a security vulnerability is discovered, Rackspace reserves the right to mitigate this risk accordingly, which may include suspension of your affected products or services, pending upgrade to supported products or services.
 
@@ -38,23 +38,23 @@ We recommend customers with the Cisco ASA 5505, 5510 and 5520 migrate to the Cis
 
 By migrating from a Cisco ASA 5505, 5510, 5520 to the Cisco ASA 5508-X customers will gain up to six times stateful inspection throughput, Solid State drives (SSD) for faster processing, and access to enable Cisco Firepower Services for next-generation firewall features:
 
-  - Application visibility and control (AVC). More than 4,000 application-layer and risk-based controls to set intrusion prevention system (IPS) threat-detection policies on how to handle the traffic entering, exiting, and traversing your network by security zone, geographical location, port, application, requested URL, Identity Services Engine&reg;(ISE) attribute, and user.
+- Application visibility and control (AVC). More than 4,000 application-layer and risk-based controls to set intrusion prevention system (IPS) threat-detection policies on how to handle the traffic entering, exiting, and traversing your network by security zone, geographical location, port, application, requested URL, Identity Services Engine&reg;(ISE) attribute, and user.
 
-  - Reputation and category-based URL filtering (URL). Comprehensive alerting and control over suspect web traffic, and policy enforcement on hundreds of millions of URLs.
+- Reputation and category-based URL filtering (URL). Comprehensive alerting and control over suspect web traffic, and policy enforcement on hundreds of millions of URLs.
 
-  - Threat Defense Intrusion Prevention System (IPS) features threat prevention capabilities and contextual awareness of users, infrastructure, applications, as well as content to help you detect multi-vector threats and automate the defense response.
+- Threat Defense Intrusion Prevention System (IPS) features threat prevention capabilities and contextual awareness of users, infrastructure, applications, as well as content to help you detect multi-vector threats and automate the defense response.
 
 #### What are the benefits of migrating to the Cisco Firepower&reg; 2110 firewall?
 
 By migrating from a Cisco ASA 5540, 5550 to a Cisco Firepower 2110 firewall customers gain up to four times stateful inspection throughput, Solid State Drives (SSD) for faster processing, and access to enable Cisco Firepower services to the following next-generation firewall features:
 
-  - Application visibility and control (AVC). More than 4,000 application-layer and risk-based controls to set IPS threat-detection policies on how to handle the traffic entering, exiting, and traversing your network by security zone, geographical location, port, application, requested URL, ISE attribute and user.
+- Application visibility and control (AVC). More than 4,000 application-layer and risk-based controls to set IPS threat-detection policies on how to handle the traffic entering, exiting, and traversing your network by security zone, geographical location, port, application, requested URL, ISE attribute and user.
 
-  - Reputation and category-based URL filtering (URL). Comprehensive alerting and control over suspect web traffic, and policy enforcement on hundreds of millions of URLs.
+- Reputation and category-based URL filtering (URL). Comprehensive alerting and control over suspect web traffic, and policy enforcement on hundreds of millions of URLs.
 
-  - Threat Defense Intrusion Prevention System (IPS) features threat prevention capabilities and contextual awareness of users, infrastructure, applications, as well as content to help you detect multi-vector threats and automate the defense response.
+- Threat Defense Intrusion Prevention System (IPS) features threat prevention capabilities and contextual awareness of users, infrastructure, applications, as well as content to help you detect multi-vector threats and automate the defense response.
 
-  - Advanced Malware Protection (AMP). Discover, track, contain, and block the progression of network-based advanced malware, zero-day attacks, and persistent threats.
+- Advanced Malware Protection (AMP). Discover, track, contain, and block the progression of network-based advanced malware, zero-day attacks, and persistent threats.
 
 #### What does the migration process entail?
 
