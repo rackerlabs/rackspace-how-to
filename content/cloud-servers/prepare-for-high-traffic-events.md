@@ -18,8 +18,8 @@ high traffic.
 
 Rackspace offers an [additional service-level
 guarantee](/how-to/managed-cloud-service-levels-faq/#guarantees) for Managed
-Operations service level customers who notify us in advance of their high-
-traffic event. This guarantee is only available for our Managed Operations
+Operations service level customers who notify us in advance of their 
+high-traffic event. This guarantee is only available for our Managed Operations
 service level customers and does have a few restrictions, including advanced
 notice and code freezes. If you are interested in this advanced service level
 agreement (SLA), contact your Account Manager.
@@ -33,7 +33,7 @@ The following issues might occur during high-traffic periods:
 - [Forced reboot checks that cause longer
   downtimes](/how-to/ensure-servers-reboot-successfully/)
 
-### Create awareness of event and document important facts in advance
+### Create awareness of the event and document important facts in advance
 
 Document the following information:
 
@@ -54,7 +54,7 @@ a single server to multiple servers. This section shares tips for scaling up.
 Use the following steps to scale at the web and app tier:
 
 - Learn about the _[seed configuration](https://blog.rackspace.com/fundamentals-of-cloud-architecture-the-seed-config-video?cm_mmc=community-_-activation-_-gsg-_-links)_, our architecture recommendation for a scale-ready cloud application.
-- After you have the Seed Config in place, start scaling horizontally by using
+- After you have the seed configuration in place, start scaling horizontally by using
   additional app and web servers.
 
 #### Scale at the data tier
@@ -80,7 +80,7 @@ Use the following steps to scale at the data tier:
 We always recommend testing, but testing becomes more important as you scale
 up for a high-traffic event. This section explains our recommendations for
 load testing and optimizing before an event. For additional recommendations
-for preparing for a high traffic event, contact your Account Manager or
+for preparing for a high-traffic event, contact your Account Manager or
 Rackspace Support.
 
 #### Application testing
@@ -100,14 +100,14 @@ tasks:
 Test your application’s performance at scale by performing the following
 tasks:
 
-- Run a baseline test load test by using Load Impact, Loader.io, Apica&reg;
+- Run a baseline load test by using Load Impact, Loader.io, Apica&reg;
   LoadTest&reg;, or another load testing service. This step helps you estimate
   how additional traffic might impact the application.
 - Examine the test results and make appropriate changes to your configuration
   (such as adjusting Apache&reg; MaxClients).
 - Run an additional load test after you tune your configuration to
   estimate how much traffic your site or application can handle.
-- Conduct GET vs POST testing. If your application is transactional,
+- Conduct GET versus POST testing. If your application is transactional,
   ensure that you load test the transactions in addition to page loads.
 
 ### Optimization
@@ -142,7 +142,7 @@ This section describes steps that you should take after a high-traffic event.
 
 ### Scale back your architecture
 
-If you followed our guides for scaling up, you can follow them in reverse to
+If you followed our preceding guides for scaling up, you can follow them in reverse to
 scale back down. We recommend staggering the scale-down so that you don’t
 scale your app too low to handle your traffic.
 
