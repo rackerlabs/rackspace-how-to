@@ -1,5 +1,5 @@
 ---
-permalink: use-powershell-to-disable-weak-encryption
+permalink: use-powershell-to-disable-weak-encryption/
 audit_date: '2019-01-23'
 title: Use Powershell to disable weak encryption
 created_date: '2019-01-23'
