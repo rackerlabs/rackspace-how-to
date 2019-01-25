@@ -11,7 +11,7 @@ product_url: cloud-servers
 ---
 
 This article helps you disable certain protocols to pass payment card industry
-(PCI) compliance scans by using Windows&reg; Powershell&reg;.
+(PCI) compliance scans by using Windows&reg; PowerShell&reg;.
 
 The following script block includes elements that disable weak
 encryption mechanisms by using registry edits. After you run any element of the
