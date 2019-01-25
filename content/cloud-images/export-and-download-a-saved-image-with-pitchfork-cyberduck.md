@@ -23,7 +23,7 @@ you cannot export Windows&reg; and Red Hat images.
 
 You need the following tools to complete the steps in this article.
 
-#### 1. Cyberduck
+#### Cyberduck
 
 Cyberduck is a tool for managing storage solutions like Rackspace Cloud Files
 through a simple graphical user interface (GUI).
@@ -33,7 +33,7 @@ Download [Cyberduck](https://cyberduck.io/).
 **Note**: Cyberduck is not affiliated with Rackspace, and we are unable to
 provide support for using this application.
 
-#### 2. Pitchfork
+#### Pitchfork
 
 Pitchfork is a Rackspace-developed tool for interfacing with various products
 APIs.
@@ -45,7 +45,7 @@ Download [Pitchfork](https://pitchfork.rax.io).
 You need to have the following information ready to perform the export and
 download:
 
-- The user name that you use to log in to the [Cloud Control
+- The username that you use to log in to the [Cloud Control
   Panel](https://login.rackspace.com)
 
 - Your [API key](/how-to/view-and-reset-your-api-key/)
@@ -62,7 +62,7 @@ Use the following steps to export and download your image:
 
 1. After you have all of the preceding information and the tools ready, go to
    the [Pitchfork home page](https://pitchfork.rax.io) and click **Log In** at
-   the top right. Enter your user name and API key to log in.
+   the top right. Enter your username and API key to log in.
 
 2. Click the icon for Cloud Images, then select your region from the drop-down
    list on the left side of the page.
@@ -91,13 +91,13 @@ Use the following steps to export and download your image:
 
    After the export is complete, there might be many of these files, depending
    on the size of your image. There should also be a single file without the
-   **-0001** numbering at the end of the .vhd file name.
+   **-0001** numbering at the end of the **.vhd** file name.
 
 7. After the export is complete, open Cyberduck and click **Open Connection**
    at the top left. From the drop-down list at the top of the window, select
    **Rackspace Cloud Files (US)**.
 
-8. Enter your user name and API key, leave the default values in the other
+8. Enter your username and API key, leave the default values in the other
    fields, and click **Connect**.
 
    You are connected to Rackspace and see your list of Cloud Files containers.
