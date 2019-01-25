@@ -16,7 +16,7 @@ high traffic.
 
 ### Additional guarantees for high-traffic events
 
-We offer an [additional service-level
+Rackspace offers an [additional service-level
 guarantee](/how-to/managed-cloud-service-levels-faq/#guarantees) for Managed
 Operations service level customers who notify us in advance of their high-
 traffic event. This guarantee is only available for our Managed Operations
@@ -53,7 +53,7 @@ a single server to multiple servers. This section shares tips for scaling up.
 
 Use the following steps to scale at the web and app tier:
 
-- Learn about the _[Seed Config](https://blog.rackspace.com/fundamentals-of-cloud-architecture-the-seed-config-video?cm_mmc=community-_-activation-_-gsg-_-links)_, our architecture recommendation for a scale-ready cloud application.
+- Learn about the _[seed configuration](https://blog.rackspace.com/fundamentals-of-cloud-architecture-the-seed-config-video?cm_mmc=community-_-activation-_-gsg-_-links)_, our architecture recommendation for a scale-ready cloud application.
 - After you have the Seed Config in place, start scaling horizontally by using
   additional app and web servers.
 
@@ -136,7 +136,7 @@ Include the following information:
 If you experience any issues, call Rackspace Support at 1 800 961 4454
 immediately.
 
-### After the events
+### After the event
 
 This section describes steps that you should take after a high-traffic event.
 
