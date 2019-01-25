@@ -4,15 +4,15 @@ audit_date:
 title: Use Powershell to Disable Weak Encryption
 created_date: '2019-01-23'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-24'
+last_modified_by: Shaun Crumpler
 product: Cloud Servers
 product_url: cloud-servers
 --- 
 
-This posting is primarily aimed at customers who are running PCI compliance scans and are of disabling certain protocols to pass the PCI compliance scan.
+This posting is aimed at individuals who are running PCI compliance scans and are of disabling certain protocols to pass the PCI compliance scan.
 
-The following script block includes elements to disable certain weak encryption mechanisms using registry edits.  After running any element of the script it will be necessary to reboot your Windows server in order to fully apply these changes.
+The following script block includes elements to disable certain weak encryption mechanisms using registry edits.  After running any element of the script it will be necessary to reboot the Windows server in order to fully apply these changes.
 
 #make TSL 1.2 protocol reg keys
 md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2"
@@ -42,7 +42,7 @@ new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders
 md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server"
 new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL 3.0\Server" -name Enabled -value 1 -PropertyType "DWord"
 
-#Disable Weak Cyphers
+# Disable Weak Cyphers
 
 md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null"
 new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\Null" -name "Enabled" -value 0 -PropertyType "Dword"
@@ -75,7 +75,7 @@ md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC
 md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128"
 new-itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 64/128" -name "Enabled" -value 0 -PropertyType "Dword"
 
-#Enable Strong Cyphers
+# Enable Strong Cyphers
 
 md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128"
 md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Ciphers\RC4 128/128"
