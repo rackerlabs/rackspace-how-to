@@ -7,7 +7,7 @@ created_date: '2018-08-27'
 created_by: Rackspace Support
 last_modified_date: '2018-08-29'
 last_modified_by: Chris Moyer
-product: dedicated-hosting
+product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
