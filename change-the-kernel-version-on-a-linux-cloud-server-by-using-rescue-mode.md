@@ -64,7 +64,7 @@ file system on the rescue instance:
 
 Use the following steps to change the Linux kernel:
 
-1. Change into the directory in which you mounted it by running the following
+1. Change into the directory in which you mounted the file system by running the following
    command:
 
        cd /mnt/boot/grub
@@ -85,24 +85,24 @@ Use the following steps to change the Linux kernel:
    The file contains a number of lines of information regarding the kernel,
    the boot process configuration, and other details.
 
-4.  Change the line that says `default=0` to say `default=1`.
+4.  Change the line that says `default=0` to `default=1`.
 
     **Note**: If you are using the vi text editor, press **i** on your
-    keyboard to enter Insert Mode, then use the arrow keys to move down to the
+    keyboard to enter insert mode, then use the arrow keys to move down to the
     `0` after `default=`. Change this to `1`, then press **ESC** on your
-    keyboard to exit Insert Mode.
+    keyboard to exit insert mode.
 
-5. Run the following command to save the change that you made to **menu.lst**:
+5. Use the following command to save the change that you made to **menu.lst**:
 
        :wq!
 
-   **Note**: You do need to include the colon in this command.
+   **Note**: Because the colon is already present, you do need to enter it in this command.
 
 ### Exit rescue mode
 
 Use the following steps to exit rescue mode:
 
-1. Finally, exit Rescue Mode to enable the VM to boot up by using the
+1. Finally, exit rescue mode to enable the VM to boot up by using the
    **menu.lst** file that you edited.
 
 2. In the Cloud Control Panel, click **Exit Rescue Mode** at the top of the
