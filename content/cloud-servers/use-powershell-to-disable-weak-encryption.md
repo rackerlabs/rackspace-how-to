@@ -1,7 +1,7 @@
 ---
 permalink: use-powershell-to-disable-weak-encryption/
 audit_date: '2019-01-23'
-title: Use Powershell to disable weak encryption
+title: Use PowerShell to disable weak encryption
 created_date: '2019-01-23'
 created_by: Rackspace Community
 last_modified_date: '2019-01-25'
@@ -11,11 +11,11 @@ product_url: cloud-servers
 ---
 
 This article helps you disable certain protocols to pass payment card industry
-(PCI) compliance scans.
+(PCI) compliance scans by using Windows&reg; Powershell&reg;.
 
 The following script block includes elements that disable certain weak
 encryption mechanisms by using registry edits. After you run any element of the
-script you need to reboot the Windows&reg; server to fully apply the changes.
+script you need to reboot the Windows server to fully apply the changes.
 
     # Make Transport Layer Security (TLS) 1.2 protocol registry keys
     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2"
