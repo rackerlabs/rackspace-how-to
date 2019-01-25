@@ -2,7 +2,7 @@
 permalink: use-powershell-to-disable-weak-encryption/
 audit_date: '2019-01-23'
 title: Use PowerShell to disable weak encryption
-created_date: '2019-01-23'
+created_date: '2019-01-25'
 created_by: Rackspace Community
 last_modified_date: '2019-01-25'
 last_modified_by: Shaun Crumpler
