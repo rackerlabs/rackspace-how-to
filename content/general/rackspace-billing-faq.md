@@ -129,7 +129,7 @@ Billing begins the moment that you provision a service or server on your
 account. You are charged for servers, load balancers, and services as long as
 those resources remain allocated to your account, even if they are not in use
 or are disabled. This is because we have allocated resources for your
-exclusive use which cannot be reserved by other customers.
+exclusive use that cannot be reserved by other customers.
 
 After you delete the server, load balancer, or service from your
 account, its resources are available for someone else to use, and you are no
@@ -137,7 +137,7 @@ longer billed for them.
 
 You can delete cloud servers and services by using the [Cloud Control
 Panel](https://login.rackspace.com). To cancel Rackspace support for Azure,
-create a ticket for our billing team.
+create a ticket for our Billing team.
 
 #### Am I still charged if my servers are suspended?
 
@@ -166,10 +166,10 @@ closure through the MyCloud portal by using the following steps:
    the Rackspace environment.
 3.  In the upper-right corner of the page, click **Account > Account
     Settings**.
-4.  At the bottom of the Account Settings page, click **Cancel My Account**.
+4.  At the bottom of the **Account Settings** page, click **Cancel My Account**.
 5.  Choose a reason from the provided list.
 6.  Check the check box at the bottom of the page.
-7.  Type the word "CANCEL" into the text box.
+7.  Type the word _CANCEL_ into the text box.
 8.  Click **Cancel Account**.
 
 Cancellations cannot be initiated over the phone or with a support ticket. The
