@@ -10,23 +10,21 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If a manual or automatic update to your cloud server is preventing your
+If a manual or automatic update to your Linux&reg; cloud server is preventing your
 virtual machine (VM) from booting up properly, you can try to resolve the
-issue by rolling back the kernel with which your VM is booting. This article
+issue by rolling back the Linux kernel with which your VM is booting. This article
 walks you through this process.
 
 ### Enter rescue mode
 
-Use the following steps to put your server into rescue mode:
+Place your server into [rescue mode](/how-to/rescue-mode/).
 
-1. Place your server into [rescue mode](/how-to/rescue-mode/).
+**Important**: Ensure that you copy the temporary root
+password that displays so that you can access your rescued server.
 
-2. After you initiate rescue mode, ensure that you copy the temporary root
-   password that displays so that you can access your rescued server.
-
-3. The server continues to display 'Rescuing' until it finally appears with a
-   red status bar reading 'Rescue'. At this point, you can attempt to log into
-   it via SSH or emergency console if you prefer.
+The server initially displays the status **Rescuing**. When a
+red status bar that says **Rescue** displays, you can log in to
+the server by using the steps in the following section.
 
 ### Log in to your server
 
