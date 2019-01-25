@@ -14,7 +14,7 @@ This article helps you disable certain protocols to pass payment card industry
 (PCI) compliance scans.
 
 The following script block includes elements that disable certain weak
-encryption mechanisms using registry edits. After you run any element of the
+encryption mechanisms by using registry edits. After you run any element of the
 script you need to reboot the Windows&reg; server to fully apply the changes.
 
     # Make Transport Layer Security (TLS) 1.2 protocol registry keys
