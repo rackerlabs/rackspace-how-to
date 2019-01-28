@@ -1,11 +1,11 @@
 ---
 permalink: install-and-configure-phpmyadmin/
-audit_date: '2019-01-11'
+audit_date: '2019-01-28'
 title: Install and configure phpMyAdmin
 type: article
-created_date: '2019-01-11'
+created_date: '2019-01-28'
 created_by: 'Stephanie Fillmon & Paul Dolbear'
-last_modified_date: '2019-01-11'
+last_modified_date: '2019-01-28'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -372,9 +372,256 @@ command:
 
 If the database server that you want to manage with phpMyAdmin is remote, you
 must configure phpMyAdmin differently. The configuration files are located in
-the **/etc/phpmyadmin** directory.
+the **/etc/phpmyadmin** directory. The main configuration file is
+**/etc/phpmyadmin/config.inc.php**, which contains the configuration
+options that apply globally to phpMyAdmin.
+
+To use phpMyAdmin to administer a MySQL database hosted on another server,
+open **/etc/phpmyadmin/config.inc.php** in a text editor and then edit
+the following line:
+
+| Old line | New line |
+| --- | --- |
+| `$cfg['Servers'][$i]['host'] = '$dbserver';` | `$cfg['Servers'][$i]['host'] = '192.168.71.21';` |
+
+**Note:** Replace **$dbserver** with the actual remote database server name or
+IP address. Also, be sure that the phpMyAdmin host has permissions to access
+the remote database.
+
+The other configuration file that you must edit is
+**/etc/phpmyadmin/apache.conf**. This file is symlinked to
+**/etc/apache2/conf-available/phpmyadmin.conf**, and once enabled, is used
+to configure Apache2 to serve the phpMyAdmin site. The file contains
+directives for loading PHP, directory permissions, and so on.
+
+Run the following command to enable the configuration file, and then reload
+the service:
+
+    sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf sudo a2enconf phpmyadmin.conf sudo systemctl reload apache2.service
+
+Now that phpMyAdmin is installed on the client computer, connect to the
+remote server where the MySQL or MariaDB database is installed. Open the
+file **/etc/mysql/mysql.conf.d/mysql.cnf** and edit the following line:
+
+    bind-address           =              0.0.0.0
+
+Replace **0.0.0.0** with the IP address of the remote server, and then save
+and exit the file.
+
+Run the following command to allow the root user to access the server from
+the client computer:
+
+    sudo mysql -u root -p GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.71.20' IDENTIFIED BY 'root_password_here' WITH GRANT OPTION;
+
+Replace the IP address with the address of the remote server, and
+**root_password_here** with the root user password.
+
+After you edit the configuration settings, open a browser and navigate to
+**http://clientPC/phpmyadmin**, using the client computer IP address or
+hostname. You should be able to log on remotely to the server from the
+client phpMyAdmin web portal
+
+##### Reload the webserver
+
+To make the changes to the configuration files live, you must first check the
+syntax of the file and then gracefully restart or reload the webserver.
+
+Use the following command to check the syntax of the configuration files:
+
+    apache2ctl configtest
+
+Then reload the Apache webserver by running the following command:
+
+    systemctl reload apache2
+
+Check the status of the service to ensure that it is functioning as
+expected by running the following command:
+
+    system status apache2
+
+You should now be able to view phpMyAdmin through a web browser.
+
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
 
 #### Nginx webserver
 
+After installing phpMyAdmin, the package configuration screen displays.
+Use the space bar to select **apache2**, press Tab to select
+**<Ok>**, and then press Enter.
 
-### Secure the webserver (Optional)
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.php %}" />
+
+The installation process continues until another configuration screen displays
+that confirms if you want to configure your database for phpMyAdmin by using
+`dbconfig-common`.
+
+Select **<Yes>**, and then press Enter.
+
+You are prompted for your database administrator password. Input your password,
+press Tab to select **<Ok>**, and then press Enter.
+
+Next, enter a password for the phpMyAdmin application itself, press Tab to
+select **<Ok>**, and then press Enter.
+
+Confirm the password by selecting **<Ok>**, and then press Enter.
+
+After the installation process is complete, you must create the phpMyAdmin
+configuration file here: **/etc/nginx/sites-enabled/phpmyadmin.conf**.
+
+Enter the following information in the file and then save it:
+
+    server {
+       listen 80;
+       server_name 95.138.162.233;
+       root /var/www;
+
+       location /phpmyadmin {
+                 root /usr/share/;
+                 index index.php;
+                 try_files $uri $uri/ =404;
+
+                 # auth_basic "phpMyAdmin Login";   # uncomment if using .htaccess & .htpasswd security
+
+                 # auth_basic_user_file /etc/nginx/.pma_pass;  # uncomment if using .htaccess & .htpasswd security
+
+
+        location ~ ^/phpmyadmin/(doc|sql|setup)/ {
+               deny all;
+        }
+
+        location ~ /phpmyadmin/(.+\.php)$ {
+             fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+             include fastcgi_params; include snippets/fastcgi-php.conf;
+       }
+      }
+    }
+
+Your phpMyAdmin files are located in the **/usr/share/phpmyadmin/** directory.
+The configuration above tells Nginx that if visitors enter
+**http://ip_address/phpmyadmin** in the browser address bar to find the
+**index.php** file in the **/usr/share/phpmyadmin/** directory and
+display it.
+
+##### Reload the webserver
+
+To make the changes to the configuration files live, you must first check the
+syntax of the file and then gracefully restart or reload the webserver.
+
+Use the following command to check the syntax of the configuration files:
+
+    anginx -t
+
+Then reload the Apache webserver by running the following command:
+
+**RHEL and CentOS 6**
+
+    service nginx graceful
+
+**RHEl and CentOS 7**
+
+    systemctl reload nginx
+
+Check the status of the service to ensure that it is functioning as
+expected by running the following command:
+
+**RHEL and CentOS 6**
+
+    service nginx status
+
+**RHEL and CentOS 7**
+
+    systemctl status nginx
+
+You should now be able to view phpMyAdmin through a web browser.
+
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
+
+### Configure additional security (Optional)
+
+`htpasswd` is used to create and update the flat-files used to store
+usernames and passwords for the basic authentication of HTTP users. If
+`htpasswd` cannot access a file, such as not being able to write to the
+output file or not being able to read the file in order to update it,
+it returns an error status and makes no changes.
+
+Use the steps in the following sections to set up basic authentication on
+a webserver running phpMyAdmin.
+
+#### Apache webserver
+
+By default, Apache does not allow the use of `.htaccess`. You must configure
+Apache to allow `.htaccess` based authentication.
+
+Open the Apache configuration file in a text editor and find the section that
+begins with `<Directory "/var/www/html">`.
+
+For RHEL and CentOS, the configuration file is **/etc/httpd/conf/httpd.conf**.
+
+For Ubuntu, the configuration file is **/etc/apache2/conf/httpd.conf**.
+
+Change the line from `AllowOverride none` to `AllowOverride AuthConfig`.
+
+**Note**: If this line reads `AllowOverride All` then no change is required.
+
+Save and close the file.
+
+The `htpasswd` command is used to create and update the files that store
+usernames and passwords for the basic authentication of Apache users. Use
+the following command to create a hidden file to store the username and
+encrypted password for each user:
+
+    htpasswd -c /etc/phpMyAdmin/.phpmyadmin-htpasswd username
+
+After you create a user, run the following command to see the username and
+password in the **/etc/phpMyAdmin/.phpmyadmin-htpasswd** file.
+
+    cat /etc/phpMyAdmin/.phpmyadmin-htpasswd
+
+The output should be similar to the following example:
+
+    user1:$apr1$0r/2zNGG$jopiWY3DEJd2FvZxTnugJ/
+    user2:$apr1$07FYIyjx$7Zy1qcBd.B8cKqu0wN/MH1
+
+Now you need to allow the `apache` user to read the `.htpasswd` file by
+running the following commands:
+
+    chown apache:apache /etc/phpMyAdmin/.phpmyadmin-htpasswd
+    chmod 0660 /etc/phpMyAdmin/.phpmyadmin-htpasswd
+
+Finally, you must uncomment the following lines from the phpMyAdmin
+configuration files:
+
+    # auth_basic "phpMyAdmin Login";   # uncomment if using .htaccess & .htpasswd security
+    # auth_basic_user_file /etc/phpMyAdmin/.phpmyadmin-htpasswd;   # uncomment if using .htaccess & .htpasswd security
+
+#### Nginx webserver
+
+The `htpasswd` command is used to create and update the files that store
+usernames and passwords for the basic authentication of Apache users. Use
+the following command to create a hidden file to store the username and
+encrypted password for each user:
+
+    htpasswd -c /etc/nginx/.pma_pass username
+
+After you create a user, run the following command to see the username and
+password in the **/etc/nginx/.pma_pass** file.
+
+    cat /etc/nginx/.pma_pass
+
+The output should be similar to the following example:
+
+    user1:$apr1$0r/2zNGG$jopiWY3DEJd2FvZxTnugJ/
+    user2:$apr1$07FYIyjx$7Zy1qcBd.B8cKqu0wN/MH1
+
+Now you need to allow the `apache` user to read the `.htpasswd` file by
+running the following commands:
+
+    chown nginx:nginx /etc/nginx/.pma_pass
+    chmod 0660 /etc/nginx/.pma_pass
+
+Finally, you must uncomment the following lines from the phpMyAdmin
+configuration files:
+
+    # auth_basic "phpMyAdmin Login";   # uncomment if using .htaccess & .htpasswd security
+    # auth_basic_user_file /etc/phpMyAdmin/.phpmyadmin-htpasswd;   # uncomment if using .htaccess & .htpasswd security
