@@ -1,11 +1,11 @@
 ---
 permalink: using-sni-to-host-multiple-ssl-certificates-in-apache/
-audit_date: '2019-01-25'
+audit_date: '2019-01-28'
 title: Using SNI to host multiple SSL certificates in Apache
 type: article
 created_date: '2019-01-16'
 created_by: Rackspace Community
-last_modified_date: '2019-01-25'
+last_modified_date: '2019-01-28'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -18,10 +18,10 @@ SSL certificates in Apache&reg;.
 
 ### Prerequisites
 
-Your server must meeting the following requirements to use SNI:
+Your server must meet the following requirements to use SNI:
 
 - Apache v2.2.12 or later
-- OpenSSL v 0.9.8j or later
+- OpenSSL&reg; v 0.9.8j or later
 - mod_ssl must be installed
 
 The following operating systems support SNI without additional modifications:
@@ -40,7 +40,7 @@ with proper versions:
 
 #### Check that mod_ssl is installed
 
-Before you can use SNI, check that mod_ssl is installed by running the following command:
+Before you use SNI, check that mod_ssl is installed by running the following command:
 
 **RHEL, CentOS, and Fedora**
 
@@ -66,7 +66,7 @@ If mod_ssl is not installed, use the following command to install it:
  
 ### Set up vhosts
 
-Add the following lines in your root Apache configuration file (apache2.conf or httpd.conf):
+Add the following lines in your root Apache configuration file (**apache2.conf** or **httpd.conf**):
 
     # Ensure that Apache listens on port 443
     Listen 443
@@ -126,19 +126,21 @@ Specify the domain name in the **Common Name** section, and then restart Apache.
 
 ### Supported browsers
 
-SNI is supported by most browsers, however older browsers such as Internet Explorer 6
-and any Windows&reg; XP browser do not support SNI.
+SNI is supported by most browsers, however older browsers such as Internet Explorer&reg; 6
+and any Windows&reg; XP&reg; browser do not support SNI.
 
 **Desktop browsers**
 
 - Internet Explorer 7 and later
-- Firefox 2 and later
+- Firefox&reg; 2 and later
 - Opera 8 with TLS 1.1 enabled
-- Google Chrome:
-    Supported on Windows XP on Chrome 6 and later
-    Supported on Vista and later by default
-    OS X 10.5.7 in Chrome Version 5.0.342.0 and later
-- Chromium 11.0.696.28 and later
+- Google Chrome&reg;:
+
+  - Supported on Windows XP on Chrome 6 and later
+  - Supported on Vista and later by default
+  - Supported on OS X 10.5.7 in Chrome Version 5.0.342.0 and later
+  
+- Chromium&reg; 11.0.696.28 and later
 - Safari 2.1 and later (requires OS X 10.5.6 and later or Windows Vista and later).
 
 **Note:** No versions of Internet Explorer on Windows XP support SNI.
@@ -153,6 +155,6 @@ and any Windows&reg; XP browser do not support SNI.
 
 Unsupported browsers load the SSL certificate of the first vhost that Apache loads. You can
 display a 403 error instead by adding the following line to the Apache configuration file
-(apache2.conf, or httpd.conf):
+(**apache2.conf**, or **httpd.conf**):
 
     SSLStrictSNIVHostCheck on
