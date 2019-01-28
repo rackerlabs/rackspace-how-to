@@ -11,13 +11,13 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-phpMyAdmin is a free and open source administration tool for MySQL&reg; and
-MariaDB&reg;. As a portable web application written primarily in PHP,
+phpMyAdmin&reg; is a free and open source administration tool for MySQL&reg;
+and MariaDB&reg;. As a portable web application written primarily in PHP,
 phpMyAdmin has become one of the most popular MySQL administration tools,
 especially for web hosting services.
 
 This article describes how to install and configure phpMyAdmin on your
-webserver for CentOS&reg; 7, Red Hat&reg; Enterprise Linux&reg; 7, and
+web server for CentOS&reg; 7, Red Hat&reg; Enterprise Linux&reg; 7, and
 Ubuntu&reg; 16.04 LTS.
 
 ### Prerequisites
@@ -25,20 +25,41 @@ Ubuntu&reg; 16.04 LTS.
 Before you can install phpMyAdmin, you must have the following installed
 on your server:
 
-- A webserver, such as Apache&reg; or NGINX&reg;
+- A web server, such as Apache&reg; or NGINX&reg;
 - PHP
 
-#### Check whether a webserver is installed
+#### Check whether a web server is installed
 
-Use the commands in the following table to check whether a webserver is
+Use the commands in the following table to check whether a web server is
 installed:
 
-| Operating System | Webserver | Command |
-| --- | --- | --- |
-| CentOS and RHEL | Apache | `rpm -qa | grep httpd` |
-| CentOS and RHEL | NGINX | `rpm -qa | grep nginx` |
-| Ubuntu | Apache | `dpkg -l | grep apache` |
-| Ubuntu | NGINX | `dpkg -l | grep nginx` |
+<table>
+  <tr>
+    <th>Operating system</th>
+    <th>Web server</th>
+    <th>Command</th>
+  </tr>
+  <tr>
+    <td>CentOS and RHEL</td
+    <td>Apache</td>
+    <td><code>rpm -qa | grep httpd</code></td>
+  </tr>
+  <tr>
+    <td>CentOS and RHEL</td>
+    <td>NGINX</td>
+    <td><code>rpm -qa | grep nginx</code></td>
+  </tr>
+  <tr>
+    <td>Ubuntu</td>
+    <td>Apache</td>
+    <td><code>dpkg -l | grep apache</code></td>
+  </tr>
+  <tr>
+    <td>Ubuntu</td>
+    <td> NGINX</td>
+    <td><code>dpkg -l | grep nginx</code></td>
+  </tr>
+</table>
 
 #### Check whether PHP is installed
 
@@ -103,24 +124,24 @@ The output should be similar to the following example:
     After this operation, 61.5 MB of additional disk space will be used.
     Do you want to continue? [Y/n]
 
-Press **Y** and then press the enter key to continue to the configuration
+Press **Y** and then press **Enter** to continue to the configuration
 process. See the **Configure phpMyAdmin on Ubuntu** section for further
 instructions.
 
 ### Configure phpMyAdmin on CentOS and RHEL
 
-After you have installed phpMyAdmin on your webserver, there are some settings
-that you must configure. Use the instructions in the following sections to
-configure phpMyAdmin.
+After you have installed phpMyAdmin on your web server, use the instructions
+in the following sections to configure phpMyAdmin.
 
-#### Apache webserver
+#### Apache web server
 
-You first need to add the IP address that you want to use to access phpMyAdmin
-to the **/etc/phpMyAdmin/config.inc.php** configuration file.
+You first need to add the Internet Protocol (IP) address that you want to use
+to access phpMyAdmin to the **/etc/phpMyAdmin/config.inc.php** configuration
+file.
 
 1. Open the **/etc/phpMyAdmin/config.inc.php** file in a text editor.
-2. In the section beginning with the line **<IfModule !mod_authz_core.c>**, add
-   the IP address as in the following example:
+2. In the section beginning with the line ``<IfModule !mod_authz_core.c>``, add
+   the IP address as shown in the following example:
 
        <IfModule !mod_authz_core.c>
        # Apache 2.2
@@ -143,11 +164,11 @@ added to the configuration file in the previous section. If you want to
 change the URL, you can set an alias.
 
 1. Open the **/etc/httpd/conf.d/phpMyAdmin.conf** file in a text editor.
-2. Find the lines beginning with **Alias** and change **/phpMyAdmin** to the
+2. Find the lines beginning with `Alias` and change `/phpMyAdmin` to the
    alias of your choice, as shown in the following example:
 
        Alias /NewName /usr/share/phpMyAdmin
-       Alas /newname /usr/share/phpMyAdmin
+       Alias /newname /usr/share/phpMyAdmin
 
 3. Save and exit the file.
 
@@ -155,7 +176,7 @@ change the URL, you can set an alias.
 
 If the MySQL or MariaDB database server that you want to use with phpMyAdmin
 is not located on the same server
-as your webserver, you must edit the database configuration file to
+as your web server, you must edit the database configuration file to
 define the database server location.
 
 There are two configuration options:
@@ -189,10 +210,10 @@ Check the syntax by using the following command:
 
     apachectl configtest
 
-If the are no errors in the configuration file, you should see `Syntax OK` in
+If there are no errors in the configuration file, you should see `Syntax OK` in
 the output.
 
-Reload the Apache webserver by using the following command:
+Reload the Apache web server by using the following command:
 
 **CentOS and RHEL 6**
 
@@ -217,9 +238,9 @@ You should now be able to view phpMyAdmin through a web browser.
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
 
-#### Nginx webserver
+#### NGINX web server
 
-On Nginx, the phpMyAdmin package doesn't come with a configuration file, so
+On NGINX, the phpMyAdmin package doesn't come with a configuration file, so
 you have to create a server block to point at the phpMyAdmin
 configuration file.
 
@@ -264,10 +285,10 @@ Use the following command to check the syntax:
 
     nginx -t
 
-If the are no errors in the configuration file, you should see `Syntax OK` in
+If there are no errors in the configuration file, you should see `Syntax OK` in
 the output.
 
-Reload the Nginx webserver by using the following command:
+Reload the NGINX web server by using the following command:
 
 **CentOS and RHEL 6**
 
@@ -277,7 +298,7 @@ Reload the Nginx webserver by using the following command:
 
     systemctl reload nginx
 
-Check the status of the nginx service to ensure that it is functioning as
+Check the status of the NGINX service to ensure that it is functioning as
 expected by using the following command:
 
 **CentOS and RHEL 6**
@@ -296,18 +317,18 @@ You should now be able to view phpMyAdmin through a web browser.
 
 Use the steps in the following sections to configure phpMyAdmin on Ubuntu.
 
-#### Apache webserver
+#### Apache web server
 
 The installation process adds the phpMyAdmin Apache configuration file to the
 **/etc/apache2/conf-enabled/** directory, where it is read automatically. The
-only thing you need to do is to enable the **mbstring** PHP extension, which
+only thing you need to do is to enable the `mbstring` PHP extension, which
 you can do by running the following command:
 
     sudo phpenmod mbstring
 
 After installing phpMyAdmin, the package configuration screen displays.
-Use the space bar to select **apache2**, press Tab to select
-**<Ok>**, and then press Enter.
+Use the space bar to select **apache2**, press **Tab** to select
+**Ok**, and then press **Enter**.
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.php %}" />
 
@@ -315,22 +336,22 @@ The installation process continues until another configuration screen displays
 that confirms if you want to configure your database for phpMyAdmin by using
 `dbconfig-common`.
 
-Select **<Yes>**, and then press Enter.
+Select **Yes**, and then press **Enter**.
 
 You are prompted for your database administrator password. Input your password,
-press Tab to select **<Ok>**, and then press Enter.
+press **Tab** to select **Ok**, and then press **Enter**.
 
-Next, enter a password for the phpMyAdmin application itself, press Tab to
-select **<Ok>**, and then press Enter.
+Next, enter a password for the phpMyAdmin application itself, press **Tab** to
+select **Ok**, and then press **Enter**.
 
-Confirm the password by selecting **<Ok>**, and then press Enter.
+Confirm the password by selecting **Ok**, and then press **Enter**.
 
 After the installation process is complete, the phpMyAdmin configuration file
-is added here: **/etc/apache2/conf-enabled/phpmyadmin.conf**.
+is added to **/etc/apache2/conf-enabled/phpmyadmin.conf**.
 
 If this file doesn't exist after the installation is complete, you can copy it
 from **/etc/phpmyadmin/apache.conf** to **/etc/apache2/conf-enabled**. If
-that file doesn't exist, you must create a virtualhost for phpMyAdmin with the
+that file doesn't exist, you must create a virtual host for phpMyAdmin with the
 following settings:
 
     server {
@@ -384,13 +405,13 @@ the following line:
 | --- | --- |
 | `$cfg['Servers'][$i]['host'] = '$dbserver';` | `$cfg['Servers'][$i]['host'] = '192.168.71.21';` |
 
-**Note:** Replace **$dbserver** with the actual remote database server name or
+**Note:** Replace `$dbserver` with the actual remote database server name or
 IP address. Also, be sure that the phpMyAdmin host has permissions to access
 the remote database.
 
 The other configuration file that you must edit is
-**/etc/phpmyadmin/apache.conf**. This file is symlinked to
-**/etc/apache2/conf-available/phpmyadmin.conf**, and once enabled, is used
+**/etc/phpmyadmin/apache.conf**. This file is linked symbolically to
+**/etc/apache2/conf-available/phpmyadmin.conf**, and after enabled, is used
 to configure Apache2 to serve the phpMyAdmin site. The file contains
 directives for loading PHP, directory permissions, and so on.
 
@@ -405,7 +426,7 @@ file **/etc/mysql/mysql.conf.d/mysql.cnf** and edit the following line:
 
     bind-address           =              0.0.0.0
 
-Replace **0.0.0.0** with the IP address of the remote server, and then save
+Replace `0.0.0.0` with the IP address of the remote server, and then save
 and exit the file.
 
 Run the following command to allow the root user to access the server from
@@ -414,23 +435,23 @@ the client computer:
     sudo mysql -u root -p GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.71.20' IDENTIFIED BY 'root_password_here' WITH GRANT OPTION;
 
 Replace the IP address with the address of the remote server, and
-**root_password_here** with the root user password.
+`root_password_here` with the root user password.
 
 After you edit the configuration settings, open a browser and navigate to
 **http://clientPC/phpmyadmin**, using the client computer IP address or
-hostname. You should be able to log on remotely to the server from the
-client phpMyAdmin web portal
+host name. You should be able to log on remotely to the server from the
+client phpMyAdmin web portal.
 
-##### Reload the webserver
+##### Reload the web server
 
 To make the changes to the configuration files live, you must first check the
-syntax of the file and then gracefully restart or reload the webserver.
+syntax of the file and then gracefully restart or reload the web server.
 
 Use the following command to check the syntax of the configuration files:
 
     apache2ctl configtest
 
-Then reload the Apache webserver by running the following command:
+Then reload the Apache web server by running the following command:
 
     systemctl reload apache2
 
@@ -443,11 +464,11 @@ You should now be able to view phpMyAdmin through a web browser.
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
 
-#### Nginx webserver
+#### NGINX web server
 
 After installing phpMyAdmin, the package configuration screen displays.
-Use the space bar to select **apache2**, press Tab to select
-**<Ok>**, and then press Enter.
+Use the space bar to select **apache2**, press **Tab** to select
+**Ok**, and then press **Enter**.
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.php %}" />
 
@@ -455,15 +476,15 @@ The installation process continues until another configuration screen displays
 that confirms if you want to configure your database for phpMyAdmin by using
 `dbconfig-common`.
 
-Select **<Yes>**, and then press Enter.
+Select **Yes**, and then press **Enter**.
 
 You are prompted for your database administrator password. Input your password,
-press Tab to select **<Ok>**, and then press Enter.
+press **Tab** to select **Ok**, and then press **Enter**.
 
-Next, enter a password for the phpMyAdmin application itself, press Tab to
-select **<Ok>**, and then press Enter.
+Next, enter a password for the phpMyAdmin application itself, press **Tab** to
+select **Ok**, and then press **Enter**.
 
-Confirm the password by selecting **<Ok>**, and then press Enter.
+Confirm the password by selecting **Ok**, and then press **Enter**.
 
 After the installation process is complete, you must create the phpMyAdmin
 configuration file here: **/etc/nginx/sites-enabled/phpmyadmin.conf**.
@@ -498,21 +519,21 @@ Enter the following information in the file and then save it:
     }
 
 Your phpMyAdmin files are located in the **/usr/share/phpmyadmin/** directory.
-The configuration above tells Nginx that if visitors enter
+The configuration above tells NGINX that if visitors enter
 **http://ip_address/phpmyadmin** in the browser address bar to find the
 **index.php** file in the **/usr/share/phpmyadmin/** directory and
 display it.
 
-##### Reload the webserver
+##### Reload the web server
 
 To make the changes to the configuration files live, you must first check the
-syntax of the file and then gracefully restart or reload the webserver.
+syntax of the file and then gracefully restart or reload the web server.
 
 Use the following command to check the syntax of the configuration files:
 
     anginx -t
 
-Then reload the Apache webserver by running the following command:
+Then reload the Apache web server by running the following command:
 
 **RHEL and CentOS 6**
 
@@ -537,18 +558,18 @@ You should now be able to view phpMyAdmin through a web browser.
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
 
-### Configure additional security (Optional)
+### Configure additional security (optional)
 
-`htpasswd` is used to create and update the flat-files used to store
+`htpasswd` is used to create and update the flat files used to store
 usernames and passwords for the basic authentication of HTTP users. If
 `htpasswd` cannot access a file, such as not being able to write to the
 output file or not being able to read the file in order to update it,
 it returns an error status and makes no changes.
 
 Use the steps in the following sections to set up basic authentication on
-a webserver running phpMyAdmin.
+a web server running phpMyAdmin.
 
-#### Apache webserver
+#### Apache web server
 
 By default, Apache does not allow the use of `.htaccess`. You must configure
 Apache to allow `.htaccess` based authentication.
@@ -562,7 +583,7 @@ For Ubuntu, the configuration file is **/etc/apache2/conf/httpd.conf**.
 
 Change the line from `AllowOverride none` to `AllowOverride AuthConfig`.
 
-**Note**: If this line reads `AllowOverride All` then no change is required.
+**Note**: If this line reads `AllowOverride All`, then no change is required.
 
 Save and close the file.
 
@@ -574,7 +595,7 @@ encrypted password for each user:
     htpasswd -c /etc/phpMyAdmin/.phpmyadmin-htpasswd username
 
 After you create a user, run the following command to see the username and
-password in the **/etc/phpMyAdmin/.phpmyadmin-htpasswd** file.
+password in the **/etc/phpMyAdmin/.phpmyadmin-htpasswd** file:
 
     cat /etc/phpMyAdmin/.phpmyadmin-htpasswd
 
@@ -595,7 +616,7 @@ configuration files:
     # auth_basic "phpMyAdmin Login";   # uncomment if using .htaccess & .htpasswd security
     # auth_basic_user_file /etc/phpMyAdmin/.phpmyadmin-htpasswd;   # uncomment if using .htaccess & .htpasswd security
 
-#### Nginx webserver
+#### NGINX web server
 
 The `htpasswd` command is used to create and update the files that store
 usernames and passwords for the basic authentication of Apache users. Use
@@ -605,7 +626,7 @@ encrypted password for each user:
     htpasswd -c /etc/nginx/.pma_pass username
 
 After you create a user, run the following command to see the username and
-password in the **/etc/nginx/.pma_pass** file.
+password in the **/etc/nginx/.pma_pass** file:
 
     cat /etc/nginx/.pma_pass
 
