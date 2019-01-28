@@ -1,5 +1,5 @@
 ---
-permalink: connect-to-cloud-servers-with-filezilla-by-using-sftp
+permalink: connect-to-cloud-servers-with-filezilla-by-using-sftp/
 audit_date: '2019-01-28'
 title: Connect to a cloud server with Filezilla by using SFTP
 type: article
@@ -30,21 +30,21 @@ system user for security purposes. For more information, see
 
 ### Configure Filezilla
 
-Download Filezilla from https://filezilla-project.org/ and then install it. You need the
+Download [Filezilla](https://filezilla-project.org/) and then install it. You need the
 following information during the configuration process:
 
-- Hostname: The public Internet Protocol (IP) address of your cloud server.
-- User: We recommend using a new system user rather than using root. However, the root user works and we are using root for this article.
-- Password: The password for the user you are logging in with.
+- **Hostname**: The public Internet Protocol (IP) address of your cloud server.
+- **User**: We recommend using a new system user rather than using root. However, the root user works and we are using root for this article.
+- **Password**: The password for the user you are logging in with.
 
 Use the following steps to configure Filezilla to use SFTP:
 
 1. Launch Filezilla and input the following information:
    
-   - Host: Your servers public IP address
-   - Username: root (or another username if you created one on the server)
-   - Password: The password for the root user or any other user being used
-   - Port: Port 22 by default (unless you changed the port for SSH, and then use that port) 
+   - **Host**: Your servers public IP address
+   - **Username**: root (or another username if you created one on the server)
+   - **Password**: The password for the root user or any other user being used
+   - **Port**: Port 22 by default (unless you changed the port for SSH, and then use that port) 
   
 2. Click **QuickConnect**.
 
