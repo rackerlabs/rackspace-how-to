@@ -92,7 +92,7 @@ Use the steps below for distributions that use GRUB2:
 
 2. Run the following command: 
 
-  `vi /etc/grub.d/40_custom`
+   `vi /etc/grub.d/40_custom`
 
 3. Enter the following lines into this file:
 
