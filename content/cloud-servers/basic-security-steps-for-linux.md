@@ -112,3 +112,5 @@ You should be able to boot the system without any issue or human intervention, b
 3. Locate the line that begins with ```timeout=```.
 
 4. Create a new line after that which sets ```password --md5 (paste copied password here)```
+
+
