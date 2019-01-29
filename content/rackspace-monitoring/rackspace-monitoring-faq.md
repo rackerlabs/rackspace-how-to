@@ -57,9 +57,9 @@ section in the Rackspace Monitoring Getting Started Guide.
 #### How do I configure my monitoring system?
 
 Cloud Monitoring is used by configuring one or more checks that monitor the
-internal performance of your Cloud Server (Agent Checks) as well as the
-availability of your website from different points on the Internet (Remote
-Service Checks). Use these checks to ensure consistent improvement and
+internal performance of your cloud server (agent checks) as well as the
+availability of your website from different points on the Internet (remote
+service checks). Use these checks to ensure consistent improvement and
 optimization of your application’s code and infrastructure as well as the
 ability to maintain high availability for your customers.
 
@@ -74,19 +74,24 @@ by using the following methods:
 
 #### How will I receive an alert when my website is down?
 
-The service currently supports email, SMS, PagerDuty, VictorOps, and webhook
-notifications. For more information, see the [Notification types](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/notification-type-operations/)section in the Rackspace Monitoring API Reference.
+The service currently supports email, SHort Message Service(SMS), PagerDuty,
+VictorOps&reg;, and webhook notifications. For more information, see the
+[Notification types](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/notification-type-operations/)
+section in the Rackspace Monitoring API Reference.
 
 #### What does Rackspace Monitoring actually monitor?
 
-The service monitors anything with a URL or an IP address that is not blocked by a firewall.
-For more informatio,n see [Checks](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/check-operations/) section in the Rackspace Monitoring API reference.
+The service monitors anything with a Universal Resource Locator (URL) or an
+Internet Protocol (IP) address that is not blocked by a firewall.
+For more information, see the
+[Checks](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/check-operations/)
+section in the Rackspace Monitoring API reference.
 
 #### Why do I need Rackspace Monitoring?
 
 As the complexity of your business increases with the number of products, customers,
 and websites, the possibility that one or more of your resources will fail also increases.
-Learning of a problem from your customers means that you've already lost business,
+Learning about a problem from your customers means that you've already lost business,
 and your customers are already having a negative experience using your website or
 application. Rackspace Monitoring prevents these types of problems from occurring
 
@@ -109,16 +114,17 @@ continues to monitor your resources and send you notifications.
 
 #### How can I tell Rackspace about features I would like added or issues I discover while using Rackspace Monitoring?
 
-Please file a ticket or contact your account team.
+File a ticket or contact your account team.
 
 #### Does the service support SNMP traps?
 
-Not at this time.
+At this time, Rackspace Monitoring does not support Simple Network Management
+Protocol (SNMP) traps.
 
 #### How is Rackspace Monitoring billed?
 
 Rackspace Monitoring bills by hourly usage based on how many checks were running in
-that hour, and from how many monitoring zones were involved. Adjusting your usage is
+that hour, and how many monitoring zones were involved. Adjusting your usage is
 quick and easy, and this flexibility can help reduce unnecessary costs.
 
 ### Notification plans
@@ -137,12 +143,13 @@ check triggers the critical state, the notification plan associated with the che
 
 If you do not set up a custom notification plan, then email is sent to all of the technical
 contacts on your account. If your account lists no technical contacts, then the primary
-contact is emailed. You can view the list of contacts for your account on the User
-Management page in the [Cloud Control Panel](https://login.rackspace.com).
+contact is emailed. You can view the list of contacts for your account on the
+**User Management** page in the [Cloud Control Panel](https://login.rackspace.com).
 
 #### What does the Rackspace Managed Notifications plan do?
 
-It creates a support ticket within your account. This feature is available only to customers with a Managed Operations service level.
+Rackspace Managed Notifications creates a support ticket within your account.
+This feature is available only to customers with a Managed Operations service level.
 
 #### How do I set up a custom notification plan?
 
@@ -152,7 +159,7 @@ You can use the Rackspace Monitoring API. For instructions, see the
 #### Where can I find the API documentation for Rackspace Monitoring notification plans?
 
 Information about Rackspace Monitoring [notification plans](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/notification-plans-operations/)
-is located Rackspace Monitoring API Reference.
+is in the Rackspace Monitoring API Reference.
 
 
 ### General
@@ -162,7 +169,7 @@ is located Rackspace Monitoring API Reference.
 To create a custom service plan that covers your monitoring needs and fits your budget,
 contact our sales department.
 
-#### Can Managed Servers customers, use Rackspace Monitoring?
+#### Can Managed Servers customers use Rackspace Monitoring?
 
 Yes, but you need a Cloud account. You configure your own notifications, so alerts
 might go only to you (the user). Rackers can’t respond to your alarms unless they are
@@ -173,7 +180,7 @@ included in the notifications.
 Rackspace Monitoring is a global product supported in both the US and the UK. Our UK
 data center can process alerts on its own if the link between the US and UK goes offline,
 and other data centers act as safety nets in case of localized data center failure. No
-matter what, your monitoring service will remain functional.
+matter what, your monitoring service remains functional.
 
 #### What is a monitoring zone?
 
@@ -187,9 +194,9 @@ on the result of the check.
 
 #### What mechanism does Rackspace use to check that the site content is reliably correct?
 
-At this time, Rackspace doesn't use "synthetic transactions" (a simulated set of
+At this time, Rackspace doesn't use *synthetic transactions* (a simulated set of
 actions.) However, we do support checking the HTML of the response. We
-follow redirects but don't check content within a frame/iframe.
+follow redirects but don't check content within a frame or iframe.
 
 #### What is a notification?
 
@@ -205,15 +212,15 @@ addressed.
 
 #### What is a check?
 
-A check specifies what aspect of the resource you wish to monitor. To learn
+A check specifies what aspect of the resource you want to monitor. To learn
 more, see [Rackspace Monitoring checks and alarms](/how-to/rackspace-monitoring-checks-and-alarms/).
 
 #### What is a remote service check?
 
-Remote Service Checks monitor the availability of your website from different
+Remote service checks monitor the availability of your website from different
 points on the Internet.
 
-The following list briefly describes the available Remote Service Checks:
+The following list briefly describes the available remote service checks:
 
 - **HTTP Check (Website)**: This check monitors the availability of your website
 either by URL or by IP address and alerts you if the site becomes unavailable
@@ -222,41 +229,41 @@ for more than 30 seconds.
 - **TCP Check (Port)**: This check monitors the response from a specific port
 on your server, to determine if the process that is bound to that port is running.
 
-- **Ping Check (Server)**: `Ping` is a network utility that checks the
-availability of a computer (node) on a network. If the node responds, the `Ping`
-utility alsos measure how long it take for a small packet of information to
+- **Ping Check (Server)**: Ping is a network utility that checks the
+availability of a computer (node) on a network. If the node responds, the Ping
+utility also measures how long it take for a small packet of information to
 make a round trip from your computer to that remote system. This check monitors
 the general responsiveness of your server on the network and alerts you if it
 fails to respond.
 
-#### What is an Agent Check?
+#### What is an agent check?
 
-You need to install a monitoring agent on your Cloud Server to use Agent Checks.
+You need to install a monitoring agent on your cloud server to use agent checks.
 If you have a cloud account with a managed service level, the build process
 installs the monitoring agent for you as part of the build process. If you have
-an infrastructure account, youneed to install the agent manually.
+an infrastructure account, you need to install the agent manually.
 
-Once the agent is installed, you can see current and historical performance
-information about a Cloud Server from it's detail screen. Agent check enables
+After the agent is installed, you can see current and historical performance
+information about a cloud server from it's detail screen. Agent checks enable
 you to set specific thresholds that trigger notifications.
 
 The following list briefly describes the available Agent Checks:
 
 - **Memory Check**: Your server has a finite amount of memory. Running low on
 memory negatively affects the performance of your entire server and might cause
-it to be unresponsive. This check alerts you when your Cloud Server’s memory
+it to be unresponsive. This check alerts you when your cloud server’s memory
 utilization surpasses 80%, but that value can be changed to meet your needs.
 
 - **CPU Check**: Like memory, your server is useless if it runs out of CPU. This
 check returns a warning for 90% CPU used and a critical warning for 95% CPU used.
 These thresholds can be configured to your needs.
 
-- **Load Average (Linux Only)**: Unique to UNIX systems, a server’s load average
-represents the average amount of system work (CPU, disk, memory, etc.) that a
-computer has performed over a period of time. This alarm triggers when your
-server becomes heavily loaded. By default, it returns a warning when load
-average exceeds 1x the number of vCPUs and a critical warning when it exceeds
-1.5x the number of vCPUs.
+- **Load Average (Linux&reg; Only)**: Unique to UNIX&reg; systems, a server’s
+load average represents the average amount of system work (CPU, disk, memory,
+and so on) that a computer has performed over a period of time. This alarm
+triggers when your server becomes heavily loaded. By default, it returns a
+warning when load average exceeds 1 times the number of vCPUs and a critical
+warning when it exceeds 1.5 times the number of vCPUs.
 
 - **Filesystem**: Your server needs a certain amount of free disk space to operate.
 This check monitors your server’s disk utilization and alerts you when used
@@ -267,7 +274,7 @@ the server reaches 90% of capacity.
 - **Network**: Even if your server is operating properly, it does little good
 if it cannot communicate over the network. This check monitors the rate at which
 your server is sending and receiving data. It sends a warning or alert if either
-rate drops below a value which you configure.
+rate drops below a value that you configure.
 
 #### What is an entity?
 
@@ -286,13 +293,13 @@ them.
 
 #### How does Rackspace Monitoring compare to open source solutions like Nagios?
 
-Rackspace Monitoring is intended to replace these type of tools. Although Rackspace
-Monitoring doesn’t offer all the features of Nagios, it is hosted as a service, API driven,
-and built for the cloud. Rackspace Monitoring also provides geographically redundant
-checks, which is generally difficult to get with any solution. Customers can leverage our
-big data center footprint, incredible scalability, and our continuous release feature.
-Future improvements to the service are released as they become functional, so there is
-no need to wait for an upgrade package, and no need for downtime.
+Rackspace Monitoring is intended to replace these types of tools. Although Rackspace
+Monitoring doesn’t offer all the features of Nagios&reg;, it is hosted as a service,
+API driven, and built for the cloud. Rackspace Monitoring also provides geographically
+redundant checks, which is generally difficult to get with any solution. Customers
+can leverage our big data center footprint, incredible scalability, and our continuous
+release feature. Future improvements to the service are released as they become
+functional, so there is no need to wait for an upgrade package, and no need for downtime.
 
 #### Can I request to retain alert log data for less than 60 days?
 
@@ -306,7 +313,7 @@ placed into spam folders.
 #### Why separate out the concepts of checks and alarms?
 
 To build a state-of-the-art monitoring platform, data collection should be separate from
-the thresholds. On the CLI/API level, this is a more complex user experience, but it
+the thresholds. On the CLI and API level, this is a more complex user experience, but it
 provides the most flexibility. The UI simplifies the process for those users who don't
 want to work with a CLI.
 
@@ -319,8 +326,9 @@ Rackspace Monitoring Technical Reference.
 
 #### Is there a set of command line tools to use with Rackspace Monitoring?
 
-Yes. Check out the [Raxmon project](https://github.com/racker/rackspace-monitoring-cli). It uses
-the Apache Libcloud framework for building a reliable API implementation that functions well.
+Yes. Check out the [Raxmon project](https://github.com/racker/rackspace-monitoring-cli).
+It uses the Apache&reg; Libcloud framework for building a reliable API
+implementation that functions well.
 
 To avoid repeating the Raxmon installation on each new cloud server, install it on your workstation and not on your server.
 
@@ -328,7 +336,8 @@ To avoid repeating the Raxmon installation on each new cloud server, install it 
 
 #### Is there a good tutorial for customers unfamiliar with monitoring in general?
 
-Yes - please visit our [Rackspace Monitoring Getting Started Guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/), which can guide you through the steps in creating your Rackspace Monitoring setup from scratch.
+Yes. Visit our [Rackspace Monitoring Getting Started Guide](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/),
+which can guide you through the steps in creating your Rackspace Monitoring setup from scratch.
 
 #### Why would I want to monitor from multiple monitoring zones?
 
@@ -337,7 +346,7 @@ customers from many locations, which is important for companies that do business
 more than one region. Consider that your website might be working fine in the western
 United States, but users from the eastern half of the country are experiencing high load
 times and unresponsive web pages. Monitoring from just a western data center would
-report an OK status, but if you also monitor from an eastern data center, you will be
+report an OK status, but if you also monitor from an eastern data center, you are
 alerted to this problem before it affects your customers.
 
 If you're only monitoring from a single zone, and for some reason there is an error with
