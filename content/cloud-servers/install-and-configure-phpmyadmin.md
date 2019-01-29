@@ -247,34 +247,34 @@ configuration file.
 1. Open a text editor and create the file **/etc/nginx/conf.d/phpMyAdmin.conf**.
 2. Enter the following configuration settings:
 
-    server {
-    listen 80;
-    server_name 95.138.162.233;
-    root /var/www;
-    location /phpMyAdmin {
-        root /usr/share/;
-        index index.php;
+       server {
+       listen 80;
+       server_name 95.138.162.233;
+       root /var/www;
+       location /phpMyAdmin {
+           root /usr/share/;
+           index index.php;
 
-    # auth_basic "phpMyAdmin Login";                # uncomment if using .htaccess & .htpasswd security
-    # auth_basic_user_file /etc/nginx/.pma_pass;    # uncomment if using .htaccess & .htpasswd security
+       # auth_basic "phpMyAdmin Login";                # uncomment if using .htaccess & .htpasswd security
+       # auth_basic_user_file /etc/nginx/.pma_pass;    # uncomment if using .htaccess & .htpasswd security
 
-        location ~\.php$ {
-            try_files $uri =404;
-            fastcgi_pass 127.0.0.1:9000;
-            fastcgi_index index.php;
-            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-            include /etc/nginx/fastcgi_params;
-            }
+           location ~\.php$ {
+               try_files $uri =404;
+               fastcgi_pass 127.0.0.1:9000;
+               fastcgi_index index.php;
+               fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+               include /etc/nginx/fastcgi_params;
+               }
 
-        location ~* ^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$ {
+           location ~* ^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$ {
             root /usr/share/;
-            }
-        }
+               }
+           }
 
-    location /phpmyadmin {
-        rewrite ^/* /phpMyAdmin last;
-        }
-    }
+       location /phpmyadmin {
+           rewrite ^/* /phpMyAdmin last;
+           }
+       }
 
 3. Save and exit the file.
 
@@ -531,7 +531,7 @@ syntax of the file and then gracefully restart or reload the web server.
 
 Use the following command to check the syntax of the configuration files:
 
-    anginx -t
+    nginx -t
 
 Then reload the Apache web server by running the following command:
 
