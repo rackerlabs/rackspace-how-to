@@ -1,113 +1,155 @@
 ---
-permalink: centos-nginx-virtual-hosts
-audit_date:
-title: CentOS - Nginx Virtual Hosts
+permalink: create-centos-nginx-virtual-hosts/
+audit_date: '2019-01-23'
+title: Create CentOS NGINX virtual hosts
 created_date: '2019-01-23'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-29'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### Create the layout
+This article shows you how to create NGINX&reg; virtual hosts that serve
+multiple web domains.
 
-In this example we'll be creating two domains, domain1.com and domain2.com
-As the default permissions only allow us, the 'demo' user, to browse our home folder, let's start off by giving Nginx access to this folder as well:
-chmod 755 /home/demo
-OK, good.
-We can now create the basic layout for each domain. In your home directory create a 'public_html' folder:
-mkdir /home/demo/public_html
-Now for each domain you want to host (I use the examples of domain1.com and domain2.com) create a folder with a standard set of sub-folders:
-mkdir -p /home/demo/public_html/domain1.com/{public,private,log,backup}
-and
-mkdir -p /home/demo/public_html/domain2.com/{public,private,log,backup}
-That will create the folders public, private, log and backup for each of our domains (domain1.com and domain2.com).
+### Create the layout for each domain
 
-### Index.html
+This example creates two domains, `domain1.com` and `domain2.com`.
 
-The content of the public folder is, naturally, up to you but for this example I am going to use a very simple html file so we can check the virtual hosts work.
-So for each domain:
-nano /home/demo/public_html/domain1.com/public/index.html
-Enter something like this into the file:
-<html>
-  <head>
-    <title>domain1.com</title>
-  </head>
+Because the default permissions only enable you, the `demo` user, to browse
+your home folder, you need to grant NGINX access to this folder as well by
+running the following command:
 
-  <body>
-    <h1>domain1.com</h1>
-  </body>
-</html>
-Repeat the process so you have a similar file for domain2.com (don't forget to change the index.html content so it shows domain2.com and not domain1.com).
+    chmod 755 /home/demo
 
-### Virtual Hosts Layout
+You can now create the basic layout for each domain. In your `home` directory,
+create a `public_html` folder by running the following command:
 
-If you have been following the articles for the Nginx install, you will have a 'CentOS' style layout (using a conf.d directory to store your configuration files) whether you installed via the package manager or via source.
-As such, we'll use that layout from now on when creating the virtual hosts.
+    mkdir /home/demo/public_html
 
-### Virtual Host
+For each domain that you want to host, create a folder with a standard set of
+subfolders, as shown in the following examples:
 
-Let's go ahead and edit the virtual file to add domain1.com:
-sudo nano /etc/nginx/conf.d/virtual.conf
-Remember to adjust the path according to your install. So installing from source would require:
-sudo nano /usr/local/nginx/conf/conf.d/virtual.conf
-And add the following:
-server {
+    mkdir -p /home/demo/public_html/domain1.com/{public,private,log,backup}
 
-            listen   80;
-            server_name  www.domain1.com;
-            rewrite ^/(.*) http://domain1.com/$1 permanent;
+    mkdir -p /home/demo/public_html/domain2.com/{public,private,log,backup}
 
-           }
+These commands create the folders `public`, `private`, `log`, and `backup` for
+each of your domains.
+
+### Add public content for your website
+
+In this example, the public folder contains a very simple HTML
+file so that enables you to quickly check that the virtual hosts work.
+
+Run the following command for each domain, replacing `domain1.com` with the
+domain that you want to use:
+
+    nano /home/demo/public_html/domain1.com/public/index.html
+
+Enter code that is similar to the following example into the file:
+
+    <html>
+      <head>
+        <title>domain1.com</title>
+      </head>
+
+      <body>
+        <h1>domain1.com</h1>
+      </body>
+    </html>
+
+Repeat the process so that you have a similar file for `domain2.com`.
+
+**Note**: Ensure that you change the content in the **index.html** file to
+show domain2.com and not domain1.com.
+
+### Virtual hosts layout
+
+This article uses a CentOS&reg;-style layout (that uses a `conf.d` directory
+to store your configuration files) when creating the virtual hosts. You
+might also have this layout, whether you installed NGINX by using the
+package manager or from source.
+
+### Add your virtual hosts to the virtual file
+
+Edit the virtual file to add `domain1.com` by running the following command:
+
+    sudo nano /etc/nginx/conf.d/virtual.conf
+
+**Note**: Ensure that you adjust the path according to your installation.
+
+If you are installing from source, you need to enter the following path:
+
+    sudo nano /usr/local/nginx/conf/conf.d/virtual.conf
+
+Add the following code to the file:
+
+    server {
+
+                listen   80;
+                server_name  www.domain1.com;
+                rewrite ^/(.*) http://domain1.com/$1 permanent;
+
+               }
 
 
-server {
+    server {
 
-            listen   80;
-            server_name domain1.com;
+                listen   80;
+                server_name domain1.com;
 
-            access_log /home/demo/public_html/domain1.com/log/access.log;
-            error_log /home/demo/public_html/domain1.com/log/error.log;
+                access_log /home/demo/public_html/domain1.com/log/access.log;
+                error_log /home/demo/public_html/domain1.com/log/error.log;
 
-            location / {
+                location / {
 
-                        root   /home/demo/public_html/domain1.com/public/;
-                        index  index.html;
+                            root   /home/demo/public_html/domain1.com/public/;
+                            index  index.html;
 
-                        }
+                            }
 
-            }
-The first server module in the file is a simple rewrite rule that redirects visitors to domain1.com from www.domain1.com.
-You can, of course, have this the other way around if you prefer.
-The second server module has very basic information including the server_name which is the domain name you want to serve.
-It then defines the log locations for easy analysis and finally sets the server root and the index file.
-As said, very basic at this stage.
+                }
 
-### Reload
+The first server module in the file is a simple rewrite rule that redirects
+visitors to `domain1.com` from `www.domain1.com`.
 
-All that is left to enable our site is to reload Nginx:
-sudo /etc/init.d/nginx reload
+The second server module has very basic information, including the
+`server_name`, which is the domain name that you want to serve.
 
-### Navigate
+Then, the code defines the log locations so that you can easily find them.
+Finally, it sets the server root and the index file.
 
-Now when you navigate to your domain:
+### Reload NGINX
+
+To enable your site, reload NGINX by running the following command:
+
+    sudo /etc/init.d/nginx reload
+
+### Navigate to your domain
+
+Navigate to your domain by pasting the following URL into your web browser's
+navigation bar:
+
 http://www.domain1.com
-You will see the equivalent of this:
-Nice.
-### Repeat as necessary
 
-All you need to do for your next virtual host (domain2.com in this example) is to repeat the process:
-sudo nano /etc/nginx/conf.d/nginx.conf
-...
-# Enter the details for domain2.com as per the example shown above
-I know I mention it a lot, but do remember to adjust any paths to match your Nginx installation.
+You should see a simple test web page that displays the information in the
+**index.html** file.
 
-### Logs
+### Check the logs
 
-Remember we defined custom locations for the domain logs?
-Well, let's have a check they are there:
-ls /home/demo/public_html/domain1.com/log/
-...
-access.log  error.log
-Excellent, everything is working as we expected and we have our domain logs in a nice and convenient location.
+In a previous step, you added code to the **virtual.conf** that configured the
+locations of the logs. Run the following commands to check that there are now
+logs in that location:
+
+    ls /home/demo/public_html/domain1.com/log/
+    ...
+    access.log  error.log
+
+### Repeat for additional domains
+
+Repeat the same process for your next virtual host (domain2.com in
+this example).
+
+**Note**: Remember to adjust any paths to match your NGINX installation.
