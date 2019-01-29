@@ -40,7 +40,7 @@ installed:
     <th>Command</th>
   </tr>
   <tr>
-    <td>CentOS and RHEL</td
+    <td>CentOS and RHEL</td>
     <td>Apache</td>
     <td><code>rpm -qa | grep httpd</code></td>
   </tr>
