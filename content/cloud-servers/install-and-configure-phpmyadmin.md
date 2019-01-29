@@ -470,7 +470,7 @@ After installing phpMyAdmin, the package configuration screen displays.
 Use the space bar to select **apache2**, press **Tab** to select
 **Ok**, and then press **Enter**.
 
-<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.php %}" />
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.png %}" />
 
 The installation process continues until another configuration screen displays
 that confirms if you want to configure your database for phpMyAdmin by using
