@@ -56,10 +56,10 @@ section in the Rackspace Monitoring Getting Started Guide.
 
 #### How do I configure my monitoring system?
 
-Cloud Monitoring is used by configuring one or more checks that monitor the
-internal performance of your cloud server (agent checks) as well as the
-availability of your website from different points on the Internet (remote
-service checks). Use these checks to ensure consistent improvement and
+You can set up Rackspace Monitoring by configuring one or more checks that
+monitor the internal performance of your cloud server (agent checks) as well
+as the availability of your website from different points on the Internet
+(remote service checks). Use these checks to ensure consistent improvement and
 optimization of your application’s code and infrastructure as well as the
 ability to maintain high availability for your customers.
 
@@ -74,7 +74,7 @@ by using the following methods:
 
 #### How will I receive an alert when my website is down?
 
-The service currently supports email, SHort Message Service(SMS), PagerDuty,
+The service currently supports email, SHort Message Service (SMS), PagerDuty,
 VictorOps&reg;, and webhook notifications. For more information, see the
 [Notification types](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/notification-type-operations/)
 section in the Rackspace Monitoring API Reference.
@@ -195,7 +195,7 @@ on the result of the check.
 #### What mechanism does Rackspace use to check that the site content is reliably correct?
 
 At this time, Rackspace doesn't use *synthetic transactions* (a simulated set of
-actions.) However, we do support checking the HTML of the response. We
+actions). However, we do support checking the HTML of the response. We
 follow redirects but don't check content within a frame or iframe.
 
 #### What is a notification?
@@ -227,7 +227,7 @@ either by URL or by IP address and alerts you if the site becomes unavailable
 for more than 30 seconds.
 
 - **TCP Check (Port)**: This check monitors the response from a specific port
-on your server, to determine if the process that is bound to that port is running.
+on your server to determine if the process that is bound to that port is running.
 
 - **Ping Check (Server)**: Ping is a network utility that checks the
 availability of a computer (node) on a network. If the node responds, the Ping
@@ -239,24 +239,24 @@ fails to respond.
 #### What is an agent check?
 
 You need to install a monitoring agent on your cloud server to use agent checks.
-If you have a cloud account with a managed service level, the build process
-installs the monitoring agent for you as part of the build process. If you have
-an infrastructure account, you need to install the agent manually.
+If you have a cloud account with a managed service level agreement, the build
+process installs the monitoring agent for you as part of the build process. If
+you have an infrastructure account, you need to install the agent manually.
 
 After the agent is installed, you can see current and historical performance
-information about a cloud server from it's detail screen. Agent checks enable
-you to set specific thresholds that trigger notifications.
+information about a cloud server from it's **Details** screen. Agent checks
+enable you to set specific thresholds that trigger notifications.
 
 The following list briefly describes the available Agent Checks:
 
 - **Memory Check**: Your server has a finite amount of memory. Running low on
 memory negatively affects the performance of your entire server and might cause
 it to be unresponsive. This check alerts you when your cloud server’s memory
-utilization surpasses 80%, but that value can be changed to meet your needs.
+utilization surpasses 80%, but you can change that value to meet your needs.
 
-- **CPU Check**: Like memory, your server is useless if it runs out of CPU. This
-check returns a warning for 90% CPU used and a critical warning for 95% CPU used.
-These thresholds can be configured to your needs.
+- **CPU Check**: By default, this check returns a warning when 90% of the CPU
+is used and a critical warning when 95% of the CPU is used. You can configure
+these thresholds to suit your needs.
 
 - **Load Average (Linux&reg; Only)**: Unique to UNIX&reg; systems, a server’s
 load average represents the average amount of system work (CPU, disk, memory,
@@ -297,7 +297,7 @@ Rackspace Monitoring is intended to replace these types of tools. Although Racks
 Monitoring doesn’t offer all the features of Nagios&reg;, it is hosted as a service,
 API driven, and built for the cloud. Rackspace Monitoring also provides geographically
 redundant checks, which is generally difficult to get with any solution. Customers
-can leverage our big data center footprint, incredible scalability, and our continuous
+can leverage our large data center footprint, incredible scalability, and our continuous
 release feature. Future improvements to the service are released as they become
 functional, so there is no need to wait for an upgrade package, and no need for downtime.
 
@@ -324,7 +324,7 @@ thresholds in a JavaScript-like language. It gives you the ability to write some
 concise thresholds. For a list of examples, see [Best practices for creating alerts](https://developer.rackspace.com/docs/rackspace-monitoring/v1/tech-ref-info/alert-triggers-and-alarms/#best-practices-for-creating-alerts) in the
 Rackspace Monitoring Technical Reference.
 
-#### Is there a set of command line tools to use with Rackspace Monitoring?
+#### Is there a set of command-line tools to use with Rackspace Monitoring?
 
 Yes. Check out the [Raxmon project](https://github.com/racker/rackspace-monitoring-cli).
 It uses the Apache&reg; Libcloud framework for building a reliable API

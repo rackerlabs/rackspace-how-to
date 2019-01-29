@@ -139,7 +139,7 @@ retention settings).
 See the section on [Scheduling and Deduplication](/how-to/rackspace-cloud-backup-backup-actions)
 in the list of Cloud Backup actions.
 
-#### Can I use  Cloud Backup on my server?
+#### Can I use Cloud Backup on my server?
 
 You can use Cloud Backup on virtually any server in the
 Rackspace Cloud. The exceptions are FreeBSD 9, Debian&reg; 5 and Windows&reg;
