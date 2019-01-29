@@ -4,7 +4,7 @@ audit_date: '2019-01-28'
 title: Install and configure phpMyAdmin
 type: article
 created_date: '2019-01-28'
-created_by: 'Stephanie Fillmon & Paul Dolbear'
+created_by: Paul Dolbear
 last_modified_date: '2019-01-28'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
