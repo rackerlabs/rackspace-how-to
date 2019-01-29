@@ -38,13 +38,12 @@ subfolders, as shown in the following examples:
 These commands create the folders `public`, `private`, `log`, and `backup` for
 each of your domains.
 
-### Add public content for your website
+### Add public content for the website at domain1.com
 
-In this example, the public folder contains a very simple HTML
-file so that enables you to quickly check that the virtual hosts work.
+This example creates a very simple HTML file in the public folder
+that enables you to quickly check that the virtual host works.
 
-Run the following command for each domain, replacing `domain1.com` with the
-domain that you want to use:
+Run the following command to add content for domain1.com:
 
     nano /home/demo/public_html/domain1.com/public/index.html
 
@@ -127,12 +126,12 @@ To enable your site, reload NGINX by running the following command:
 
     sudo /etc/init.d/nginx reload
 
-### Navigate to your domain
+### View your website
 
 Navigate to your domain by pasting the following URL into your web browser's
 navigation bar:
 
-http://www.domain1.com
+**http://www.domain1.com**
 
 You should see a simple test web page that displays the information in the
 **index.html** file.
@@ -149,7 +148,4 @@ logs in that location:
 
 ### Repeat for additional domains
 
-Repeat the same process for your next virtual host (domain2.com in
-this example).
-
-**Note**: Remember to adjust any paths to match your NGINX installation.
+Repeat the same process for your next virtual host, domain2.com.
