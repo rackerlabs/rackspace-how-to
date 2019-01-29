@@ -1,82 +1,112 @@
 ---
 permalink: creating-a-chroot-jail
-audit_date:
+audit_date: '2019-01-29'
 title: Creating a Chroot Jail
-created_date: '2019-01-17'
+created_date: '2019-01-29'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-29'
+last_modified_by: William Loy
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-How to create chroot jail on the directory /var/www/vhost/domain.com
-group: sftponly
-user: ftpuploader
-This will work on ===>> CentOS 6.3
-This will not work on CentOS5/RHEL5
-Why is it important to give the permission only on this directory?
-It is important to avoid that your employees have access to the entire server, or you contract a 3rd part company to develop your website and you want that them to have access only on this directory to upload the files.
-------------------------------------------------------------------------------------------------------------------------
-### Create a group/user to upload the files.
-# groupadd sftponly
+This article instructs you on how to configure a **chroot jail** on both Debian and RPM Package Manager (RPM) based distributions.
 
-1 domain managed by 1 or more users:
-# useradd -d /var/www/vhosts/domain.com -s /bin/false -G sftponly ftpuploader
-# passwd ftpuploader
--------------------------------------------------------------------------------------------------------------------
-### Start the process
+The instructions in this article create the chroot jail using the following example group and user names:
 
-Comment out the following line in /etc/ssh/sshd_config
+  **group: sftponly
+  user: ftpuploader**
 
-#Subsystem sftp /usr/lib/openssh/sftp-server
 
-Add the following directly after the commented line:
+### Create a group for jailed users
 
-Subsystem sftp internal-sftp
-1 domain managed by 1 or more users:
-Add the following set of lines to the very bottom of the file:
+Use the following instructions to create a group for jailed users:
 
- Match Group sftponly
-     ChrootDirectory %h
-     X11Forwarding no
-     AllowTCPForwarding no
-     ForceCommand internal-sftp
-# service sshd restart
+1. Create the group using the following command:
 
-Check the permissions of the directory
+   `groupadd sftponly`
 
-#ls -la
-drwxr-xr-x 2 root root 4096 Apr 28 22:00 domain.com 
+   **Note:** This group will be used to restrict or **jail** users added to it to their home directory.
 
-(You can notice that the owner is the root and the group root)  you do not have permission to write on this directory.
+2. Verify that the following subsystem has been created in the /etc/ssh/sshd_config file prior to creating the user:
 
-Now, lets create the html folder
+   `less /etc/ssh/sshd_config
+   Subsystem:
+   Subsystem     sftp   internal-sftp
+   Match Group sftponly
+        ChrootDirectory %h
+        X11Forwarding no
+        AllowTCPForwarding no
+        ForceCommand internal-sftp`
 
-#mkdir html
-# pwd
+    If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
 
-/var/www/vhosts/domain.com/html
-#ls -la
-drwxr-xr-x 2 root root 4096 Apr 30 22:49 html
-# chown root:sftponly html
+3. If the subsystem the previous step is not present you will need to edit the file with the following actions:
 
-# chmod 775 html
-#ls -la
-drwxrwxr-x 2 root sftponly 4096 Apr 30 22:49 htm
-Now your user ftpuploader can upload the files into this directory "html"
-Note: If you change the permission or group owner for the "domain.com" directory your ftp will not connect anymore, because as you set up the home directory chroot the user will have permission only under this directory.
-In particular, remember that any chroot environment requires that the chroot directory is owned by root:root.
+   1. Comment out the following line:
 
-Another note on permissions: acls set on the chroot directory will break the chrooted sftp users login
-Cleanup
+   `Subsystem       sftp    /usr/libexec/openssh/sftp-server`
 
-From here, the chroot environment is configured. There are several things you should do to ensure the environment is ready:
-1. Ensure that apache DocumentRoots are properly configured to subdirectories of the chroot jails
-2. Ensure that the chroot user has write access to the specified DocumentRoot
-3. Log in via sftp and verify that the chroot jail works properly
+   2. Add the following to the end of the config file:
 
-Error Logging
+   `Subsystem     sftp   internal-sftp
+   Match Group sftponly
+        ChrootDirectory %h
+        X11Forwarding no
+        AllowTCPForwarding no
+        ForceCommand internal-sftp`
 
-Oftentimes incorrectly configured chroot environments will result in the chrooted user no being able to log in. These authorization failures should be logged to the following locations:
-* CentOS/RHEL: /var/log/secure
+4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
+
+   `sshd –t`
+   `service sshd reload`
+
+### Create a Secure File Transfer Protocol (SFTP) user
+
+Create a home directory for the SFTP user using the following command:
+
+   `mkdir -p /home/chroot/ftpuploader/public`
+
+#### Instructions to create an SFTP user on RPM based distributions (CentOS&reg;,RedHat&reg;)
+
+Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
+
+   `useradd -d /home/chroot/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
+
+If you already have an SFTP user created then you need to set the user's shell access to **/bin/false** and add them to group **sftponly** using the followinf command:
+
+   `usermod -s /sbin/nologin -G sftponly ftpuploader`
+
+Now, set a new password for the SFTP user using the following command:
+
+   `Passwd ftpuploader`
+
+#### Instructions to create an SFTP user on DEB based distribution (Debian&reg;, Ubuntu&reg;)
+
+Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
+
+   `adduser -d /home/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
+
+If you already have an SFTP user created then you need to set the user's shell access to **/bin/false** and add them to group **sftponly** using the followinf command:
+
+   `adduser -s /sbin/nologin -G sftponly ftpuploader`
+
+Now, set a new password for the SFTP user using the following command:
+
+   `Passwd ftpuploader`
+
+
+### Change permissions and ownership of the home directory using RPM and DEP based distributions:
+
+
+1. `chown root:root /home/chroot/ftpuploader/`
+
+2. `chown ftpuploader:sftponly /home/chroot/ftpuploader/public`
+
+3. `chmod 711 /home/chroot/`
+
+4. `chmod 755 /home/chroot/ftpuploader/`
+
+5. `chmod 755 /home/chroot/ftpuploader/public`
+
+**Note:**In the above commands the group will be **sftponly** if the user is going to be part of the **sftponly** group. 
