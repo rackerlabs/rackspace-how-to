@@ -74,7 +74,7 @@ by using the following methods:
 
 #### How will I receive an alert when my website is down?
 
-The service currently supports email, SHort Message Service (SMS), PagerDuty,
+The service currently supports email, Short Message Service (SMS), PagerDuty,
 VictorOps&reg;, and webhook notifications. For more information, see the
 [Notification types](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/notification-type-operations/)
 section in the Rackspace Monitoring API Reference.
