@@ -351,8 +351,8 @@ is added to **/etc/apache2/conf-enabled/phpmyadmin.conf**.
 
 If this file doesn't exist after the installation is complete, you can copy it
 from **/etc/phpmyadmin/apache.conf** to **/etc/apache2/conf-enabled**. If
-that file doesn't exist, you must create a virtual host for phpMyAdmin with the
-following settings:
+that file doesn't exist, you must create a virtual host for phpMyAdmin
+with the following settings:
 
     server {
            listen 80;
