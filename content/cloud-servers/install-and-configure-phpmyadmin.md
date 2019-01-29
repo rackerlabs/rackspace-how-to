@@ -236,7 +236,7 @@ expected by using the following command:
 
 You should now be able to view phpMyAdmin through a web browser.
 
-<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
 #### NGINX web server
 
@@ -311,7 +311,7 @@ expected by using the following command:
 
 You should now be able to view phpMyAdmin through a web browser.
 
-<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
 ### Configure phpMyAdmin on Ubuntu
 
@@ -330,7 +330,7 @@ After installing phpMyAdmin, the package configuration screen displays.
 Use the space bar to select **apache2**, press **Tab** to select
 **Ok**, and then press **Enter**.
 
-<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.php %}" />
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.png %}" />
 
 The installation process continues until another configuration screen displays
 that confirms if you want to configure your database for phpMyAdmin by using
@@ -462,7 +462,7 @@ expected by running the following command:
 
 You should now be able to view phpMyAdmin through a web browser.
 
-<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
 #### NGINX web server
 
@@ -556,7 +556,7 @@ expected by running the following command:
 
 You should now be able to view phpMyAdmin through a web browser.
 
-<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.php %}" />
+<img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
 ### Configure additional security (optional)
 
