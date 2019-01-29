@@ -59,7 +59,7 @@ Enter code that is similar to the following example into the file:
       </body>
     </html>
 
-Repeat the process so that you have a similar file for `domain2.com`.
+Repeat the process so that you have a similar HTML index file for `domain2.com`.
 
 **Note**: Ensure that you change the content in the **index.html** file to
 show domain2.com and not domain1.com.
