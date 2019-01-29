@@ -31,19 +31,19 @@ create a `public_html` folder by running the following command:
 For each domain that you want to host, create a folder with a standard set of
 subfolders, as shown in the following examples:
 
-    mkdir -p /home/demo/public_html/domain1.com/{public,private,log,backup}
+    mkdir -p /home/demo/public_html/domain1.com/{public,private,,backup}
 
     mkdir -p /home/demo/public_html/domain2.com/{public,private,log,backup}
 
 These commands create the folders `public`, `private`, `log`, and `backup` for
-each of your domains.
+each of your domains.log
 
 ### Add public content for the website at domain1.com
 
 This example creates a very simple HTML file in the public folder
 that enables you to quickly check that the virtual host works.
 
-Run the following command to add content for domain1.com:
+Run the following command to add content for `domain1.com`:
 
     nano /home/demo/public_html/domain1.com/public/index.html
 
@@ -62,13 +62,13 @@ Enter code that is similar to the following example into the file:
 Repeat the process so that you have a similar HTML index file for `domain2.com`.
 
 **Note**: Ensure that you change the content in the **index.html** file to
-show domain2.com and not domain1.com.
+show `domain2.com` and not `domain1.com`.
 
 ### Virtual hosts layout
 
 This article uses a CentOS&reg;-style layout (that uses a `conf.d` directory
 to store your configuration files) when creating the virtual hosts. You
-might also have this layout, whether you installed NGINX by using the
+might also have this layout if you installed NGINX by using the
 package manager or from source.
 
 ### Add your virtual hosts to the virtual file
@@ -138,7 +138,7 @@ You should see a simple test web page that displays the information in the
 
 ### Check the logs
 
-In a previous step, you added code to the **virtual.conf** that configured the
+In a previous step, you added code to the **virtual.conf** file that configured the
 locations of the logs. Run the following commands to check that there are now
 logs in that location:
 
@@ -148,4 +148,4 @@ logs in that location:
 
 ### Repeat for additional domains
 
-Repeat the same process for your next virtual host, domain2.com.
+Repeat the same process for your next virtual host, `domain2.com`.
