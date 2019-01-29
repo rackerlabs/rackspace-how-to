@@ -5,8 +5,8 @@ title: Cloud Backup FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2019-01-07'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-01-29'
+last_modified_by: Cat Lookabaugh
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -48,6 +48,14 @@ Rackspace Support](https://www.rackspace.com/support).
 ### Backups
 
 #### What is Rackspace Cloud Backup?
+
+Even though the cloud is engineered to prevent data loss, maintaining recent
+backups of your important data is still considered a fundamental best practice.
+Cloud Backups is a file-based backup solution that uses compression, encryption
+and de-duplication to ensure your data is protected and recoverable.
+
+Cloud Backup should not be confused with the ability to image your servers,
+which is a strategy for horizontal scalability and not recommended for backup.
 
 Rackspace Cloud Backup is a service that enables you to select and back up
 specific files and folders from your Cloud Server. You can schedule any
@@ -104,7 +112,7 @@ Backup](/how-to/generate-your-encrypted-key-in-cloud-backup).
 
 All of your Cloud Backups are stored in your Cloud Files account.
 
-####What if I never set up a Cloud Files account?
+#### What if I never set up a Cloud Files account?
 
 When you establish your Cloud account, a Cloud Files account is set
 up as well. You are not charged storage fees for your Cloud Files
@@ -128,7 +136,8 @@ data. An added benefit is that this capability enables you to retrieve
 previous versions of your files (up to the limits specified in your data
 retention settings).
 
-See the section on [Scheduling and Deduplication](/how-to/rackspace-cloud-backup-backup-actions) in the list of Cloud Backup actions.
+See the section on [Scheduling and Deduplication](/how-to/rackspace-cloud-backup-backup-actions)
+in the list of Cloud Backup actions.
 
 #### Can I use Rackspace Cloud Backup on my server?
 
@@ -142,6 +151,15 @@ you can use the equivalent service offered by [JungleDisk](https://jungledisk.co
 If you have a server with a Managed Operations Service Level, you may
 already have the Cloud Backup agent installed on your system. If not,
 contact your account representative to get started.
+
+Before you can use Cloud Backup, you must have the backup agent installed and
+running on your Cloud Server. Cloud Servers with a Managed Operations service
+level should have this additional piece of software installed by default. If it
+is not installed, contact your account representative to get started. If you
+have an infrastructure-only account, you must manually install the agent by
+following these instructions for [Linux%&reg;](https://support.rackspace.com/how-to/install-or-update-the-cloud-backup-agent-on-linux/)
+or for [Windows&reg;](https://support.rackspace.com/how-to/rackspace-cloud-backup-install-the-agent-on-windows-by-using-silent-installation/).
+
 
 For more information, see the [Rackspace Cloud Backup introduction](/how-to/cloud-backup).
 

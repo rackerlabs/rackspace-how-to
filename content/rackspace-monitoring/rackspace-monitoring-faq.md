@@ -5,8 +5,8 @@ title: Rackspace Monitoring FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-10-25'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2019-01-29'
+last_modified_by: Cat Lookabaugh
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -20,6 +20,10 @@ It provides a simple yet powerful feature set that allows flexibility in configu
 execution. Rackspace Monitoring helps keep your applications up and running. Remote
 monitoring tests connectivity from regional zones deployed throughout our global data
 centers, and agent-based monitoring gathers information from inside each resource.
+
+Rackspace Monitoring provides you with a set of tools that monitor, analyze and
+report on the availability and performance of your websites, servers and other
+cloud resources.
 
 #### How do I set up Rackspace Monitoring?
 
@@ -52,7 +56,16 @@ section in the Rackspace Monitoring Getting Started Guide.
 
 #### How do I configure my monitoring system?
 
-Rackspace Monitoring is an API-based system. You can access it using the and [start creating monitoring checks](/how-to/available-checks-for-rackspace-monitoring/) by using the following methods:
+Cloud Monitoring is used by configuring one or more checks that monitor the
+internal performance of your Cloud Server (Agent Checks) as well as the
+availability of your website from different points on the Internet (Remote
+Service Checks). Use these checks to ensure consistent improvement and
+optimization of your application’s code and infrastructure as well as the
+ability to maintain high availability for your customers.
+
+Rackspace Monitoring is an API-based system, so you can
+[start creating monitoring checks](/how-to/available-checks-for-rackspace-monitoring/)
+by using the following methods:
 
 -   [Cloud Control Panel](/how-to/creating-a-monitoring-check-using-the-cloud-control-panel/)
 -   [raxmon command-line interface (CLI)](/how-to/getting-started-with-rackspace-monitoring-cli/)
@@ -192,7 +205,69 @@ addressed.
 
 #### What is a check?
 
-A check specifies what aspect of the resource you wish to monitor.
+A check specifies what aspect of the resource you wish to monitor. To learn
+more, see [Rackspace Monitoring checks and alarms](/how-to/rackspace-monitoring-checks-and-alarms/).
+
+#### What is a remote service check?
+
+Remote Service Checks monitor the availability of your website from different
+points on the Internet.
+
+The following list briefly describes the available Remote Service Checks:
+
+- **HTTP Check (Website)**: This check monitors the availability of your website
+either by URL or by IP address and alerts you if the site becomes unavailable
+for more than 30 seconds.
+
+- **TCP Check (Port)**: This check monitors the response from a specific port
+on your server, to determine if the process that is bound to that port is running.
+
+- **Ping Check (Server)**: `Ping` is a network utility that checks the
+availability of a computer (node) on a network. If the node responds, the `Ping`
+utility alsos measure how long it take for a small packet of information to
+make a round trip from your computer to that remote system. This check monitors
+the general responsiveness of your server on the network and alerts you if it
+fails to respond.
+
+#### What is an Agent Check?
+
+You need to install a monitoring agent on your Cloud Server to use Agent Checks.
+If you have a cloud account with a managed service level, the build process
+installs the monitoring agent for you as part of the build process. If you have
+an infrastructure account, youneed to install the agent manually.
+
+Once the agent is installed, you can see current and historical performance
+information about a Cloud Server from it's detail screen. Agent check enables
+you to set specific thresholds that trigger notifications.
+
+The following list briefly describes the available Agent Checks:
+
+- **Memory Check**: Your server has a finite amount of memory. Running low on
+memory negatively affects the performance of your entire server and might cause
+it to be unresponsive. This check alerts you when your Cloud Server’s memory
+utilization surpasses 80%, but that value can be changed to meet your needs.
+
+- **CPU Check**: Like memory, your server is useless if it runs out of CPU. This
+check returns a warning for 90% CPU used and a critical warning for 95% CPU used.
+These thresholds can be configured to your needs.
+
+- **Load Average (Linux Only)**: Unique to UNIX systems, a server’s load average
+represents the average amount of system work (CPU, disk, memory, etc.) that a
+computer has performed over a period of time. This alarm triggers when your
+server becomes heavily loaded. By default, it returns a warning when load
+average exceeds 1x the number of vCPUs and a critical warning when it exceeds
+1.5x the number of vCPUs.
+
+- **Filesystem**: Your server needs a certain amount of free disk space to operate.
+This check monitors your server’s disk utilization and alerts you when used
+space reaches a set threshold on the default mount point. By default, it returns
+a warning when the server reaches 80% of capacity and a critical warning when
+the server reaches 90% of capacity.
+
+- **Network**: Even if your server is operating properly, it does little good
+if it cannot communicate over the network. This check monitors the rate at which
+your server is sending and receiving data. It sends a warning or alert if either
+rate drops below a value which you configure.
 
 #### What is an entity?
 
