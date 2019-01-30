@@ -1,11 +1,11 @@
 ---
 permalink: install-and-configure-phpmyadmin/
-audit_date: '2019-01-28'
+audit_date: '2019-01-30'
 title: Install and configure phpMyAdmin
 type: article
 created_date: '2019-01-28'
 created_by: Paul Dolbear
-last_modified_date: '2019-01-28'
+last_modified_date: '2019-01-30'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -17,7 +17,7 @@ phpMyAdmin has become one of the most popular MySQL administration tools,
 especially for web hosting services.
 
 This article describes how to install and configure phpMyAdmin on your
-web server for CentOS&reg; 7, Red Hat&reg; Enterprise Linux&reg; 7, and
+web server for CentOS&reg; 7, Red Hat&reg; Enterprise Linux&reg; (RHEL) 7, and
 Ubuntu&reg; 16.04 LTS.
 
 ### Prerequisites
@@ -234,7 +234,8 @@ expected by using the following command:
 
     systemctl status httpd
 
-You should now be able to view phpMyAdmin through a web browser.
+You should now be able to view phpMyAdmin through a web browser, as shown
+in the following image:
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
@@ -309,7 +310,8 @@ expected by using the following command:
 
     systemctl status nginx
 
-You should now be able to view phpMyAdmin through a web browser.
+You should now be able to view phpMyAdmin through a web browser, as shown
+in the following image:
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
@@ -326,15 +328,17 @@ you can do by running the following command:
 
     sudo phpenmod mbstring
 
-After installing phpMyAdmin, the package configuration screen displays.
-Use the space bar to select **apache2**, press **Tab** to select
-**Ok**, and then press **Enter**.
+After installing phpMyAdmin, the package configuration screen displays, as
+shown in the following image.
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.png %}" />
 
+Use the space bar to select **apache2**, press **Tab** to select
+**Ok**, and then press **Enter**.
+
 The installation process continues until another configuration screen displays
-that confirms if you want to configure your database for phpMyAdmin by using
-`dbconfig-common`.
+that prompts you to confirm if you want to configure your database for
+phpMyAdmin by using `dbconfig-common`.
 
 Select **Yes**, and then press **Enter**.
 
@@ -406,12 +410,13 @@ the following line:
 | `$cfg['Servers'][$i]['host'] = '$dbserver';` | `$cfg['Servers'][$i]['host'] = '192.168.71.21';` |
 
 **Note:** Replace `$dbserver` with the actual remote database server name or
-IP address. Also, be sure that the phpMyAdmin host has permissions to access
+IP address. Also, ensure that the phpMyAdmin host has permissions to access
 the remote database.
 
 The other configuration file that you must edit is
 **/etc/phpmyadmin/apache.conf**. This file is linked symbolically to
-**/etc/apache2/conf-available/phpmyadmin.conf**, and after enabled, is used
+**/etc/apache2/conf-available/phpmyadmin.conf**. After it is
+enabled, it is used
 to configure Apache2 to serve the phpMyAdmin site. The file contains
 directives for loading PHP, directory permissions, and so on.
 
@@ -460,21 +465,24 @@ expected by running the following command:
 
     system status apache2
 
-You should now be able to view phpMyAdmin through a web browser.
+You should now be able to view phpMyAdmin through a web browser, as shown
+in the following image:
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
 #### NGINX web server
 
-After installing phpMyAdmin, the package configuration screen displays.
-Use the space bar to select **apache2**, press **Tab** to select
-**Ok**, and then press **Enter**.
+After installing phpMyAdmin, the package configuration screen displays, as
+shown in the following image:
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-package-configuration-select-apache2.png %}" />
 
+Use the space bar to select **apache2**, press **Tab** to select
+**Ok**, and then press **Enter**.
+
 The installation process continues until another configuration screen displays
-that confirms if you want to configure your database for phpMyAdmin by using
-`dbconfig-common`.
+that prompts you to confirm if you want to configure your database for
+phpMyAdmin by using `dbconfig-common`.
 
 Select **Yes**, and then press **Enter**.
 
@@ -520,8 +528,8 @@ Enter the following information in the file and then save it:
 
 Your phpMyAdmin files are located in the **/usr/share/phpmyadmin/** directory.
 The configuration above tells NGINX that if visitors enter
-**http://ip_address/phpmyadmin** in the browser address bar to find the
-**index.php** file in the **/usr/share/phpmyadmin/** directory and
+**http://ip_address/phpmyadmin** in the browser address bar, it should find
+the **index.php** file in the **/usr/share/phpmyadmin/** directory and
 display it.
 
 ##### Reload the web server
@@ -554,16 +562,17 @@ expected by running the following command:
 
     systemctl status nginx
 
-You should now be able to view phpMyAdmin through a web browser.
+You should now be able to view phpMyAdmin through a web browser, as shown
+in the following image:
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
 ### Configure additional security (optional)
 
-`htpasswd` is used to create and update the flat files used to store
+`htpasswd` is used to create and update the flat files that store
 usernames and passwords for the basic authentication of HTTP users. If
-`htpasswd` cannot access a file, such as not being able to write to the
-output file or not being able to read the file in order to update it,
+`htpasswd` cannot access a file (cannot write to the
+output file or read the file in order to update it),
 it returns an error status and makes no changes.
 
 Use the steps in the following sections to set up basic authentication on
@@ -572,7 +581,7 @@ a web server running phpMyAdmin.
 #### Apache web server
 
 By default, Apache does not allow the use of `.htaccess`. You must configure
-Apache to allow `.htaccess` based authentication.
+Apache to allow `.htaccess`-based authentication.
 
 Open the Apache configuration file in a text editor and find the section that
 begins with `<Directory "/var/www/html">`.
