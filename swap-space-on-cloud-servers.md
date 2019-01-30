@@ -1,7 +1,7 @@
 ---
 permalink: swap-space-on-cloud-servers/
 audit_date: '2019-01-22'
-title: Swap Space on Cloud Servers
+title: Swap Space on cloud servers
 created_date: '2019-01-30'
 created_by: Rackspace Community
 last_modified_date: '2019-01-30'
@@ -9,7 +9,7 @@ last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
-As of October 28, 2013, Cloud Servers built by using our base Linux&reg;
+As of October 28, 2013, cloud servers built by using our base Linux&reg;
 images are created without a dedicated swap partition and with _swappiness_
 (a measure of how the Linux kernel tries to use swap memory) set to 0. Any
 Linux cloud servers that you have built from older base images or server
@@ -29,7 +29,7 @@ processes, while a setting of 0 swaps only to avoid an out-of-memory condition.
 
 In a multitenant cloud environment, certain resources are shared among
 customers. In the case of swap, the key resource that sharing affects is
-_disk IOPS_. IOPS stands for Input/Output Operations per Second, which is the
+_disk IOPS_. IOPS stands for input/output operations per second, which is the
 number of read and write operations that can be performed on the disk per
 second. Disk IOPS are consumed whenever an application performs any sort of
 read or write operation on the physical hard disks.
