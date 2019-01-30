@@ -1,5 +1,5 @@
 ---
-permalink: using-holland-and-cloud-backup-to-backup-databases-with-Ubuntu/
+permalink: use-holland-and-cloud-backup-to-backup-databases-with-ubuntu/
 audit_date: '2019-01-30'
 title: Use Holland and Cloud Backup to back up databases with Ubuntu
 created_date: '2019-01-17'
@@ -47,12 +47,12 @@ If you don't have that file, create one and enter the following information:
       password=yourpasswordhere
 
 The default location for your backups is **/var/spool/holland**. If you want to store your backups in a different
-location, open the **/etc/holland/holland.conf** file in a text editor, and edit the following line:
+location, open the **/etc/holland/holland.conf** file in a text editor and edit the following line:
 
     backup_directory = /var/spool/holland
 
 Holland stores only one backup in the backup directory by default. If you want to have multiple backups in your backup
-directory, open the **/etc/holland/backupsets/default** file in a text editor, and edit the following line:
+directory, open the **/etc/holland/backupsets/default** file in a text editor and edit the following line:
 
     backups-to-keep = 1
     
@@ -76,7 +76,7 @@ cron job. The following example tells Holland to run a backup every day at 3:00 
 
     0 3 * * * root holland bk
 
-The following syntax is for forming a cron job:
+The following syntax forms a cron job:
 
     Minute(0-59) Hour(0-24) Day_of_month(1-31) Month(1-12) Day_of_week(0-6) Command_to_execute
     
