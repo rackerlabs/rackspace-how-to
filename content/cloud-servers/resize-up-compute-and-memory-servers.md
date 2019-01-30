@@ -20,7 +20,10 @@ allocation.
 **Note:** Compute and memory servers can only be resized up. They can’t be
 resized down.
 
-Use the following steps to resize up your servers:
+### Cloud Control Panel
+
+Use the following steps to resize up your servers by using the Cloud
+Control Panel:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
@@ -72,12 +75,27 @@ Use the following steps to resize up your servers:
    you cannot revert a server after you have manually confirmed the resize or
    after 24 hours have passed.
 
+### Pitchfork
+
+You can also use Pitchfork, interactive web API application that allows a user
+to interact quickly with Rackspace Cloud products, to resize up your server.
+Use the following steps to resize up your server by using Pitchfork:
+
+1. Navigate to [Pitchfork](https://pitchfork.rax.io/) and log in by using
+   your cloud account username and API key.
+
+2. Click the **Cloud Servers** icon to access the Cloud Servers page.
+
+3. In the **Region** drop-down menu, select the region for the cloud server
+   that you want to resize.
+
+
 ### Additional resources
 
 For more information, see the following resources:
 
 - [Cloud Servers API reference: Resize specified server](https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#resize-specified-server)
-- [How to Resize Compute and Memory Flavor Servers: Pitchfork method](https://community.rackspace.com/general/f/general-discussion-forum/8567/how-to-resize-compute-and-memory-flavor-servers) (scroll to "Pitchfork method" section)
+- [Pitchfork - the Rackspace Cloud API web application](/how-to/pitchfork-the-rackspace-cloud-api-web-application)
 - [Reset your server password](/how-to/reset-your-server-password)
 - [Basic Cloud Server security](/how-to/basic-cloud-server-security)
 - [Reboot your server](/how-to/reboot-your-server)
