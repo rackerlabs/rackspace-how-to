@@ -40,10 +40,7 @@ heavily. When this occurs, a large portion of the available disk IOPS pool is
 consumed, creating the _noisy neighbor effect_, in which other virtual
 machines can monopolize the disk and affect your performance.
 
-Prior to the change previously described, a separate partition solely
-dedicated to swap memory, would be given to .
-
-In order to provide the best service and consistent performance and to align
+To provide the best service and consistent performance and to align
 with industry standard practice, we have removed the swap partition that each
 virtual machine was previously given by default. We believe that this change
 enables a better customer experience.
