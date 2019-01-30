@@ -1,7 +1,7 @@
 ---
 permalink: swap-space-on-cloud-servers/
 audit_date: '2019-01-22'
-title: Swap Space on cloud servers
+title: Swap space on cloud servers
 created_date: '2019-01-30'
 created_by: Rackspace Community
 last_modified_date: '2019-01-30'
@@ -37,7 +37,7 @@ read or write operation on the physical hard disks.
 If cloud servers that are running on the same physical host run more processes
 than their allotted random access memory (RAM), they begin to use swap
 heavily. When this occurs, a large portion of the available disk IOPS pool is
-consumed, creating the _noisy neighbor effect_, in which other virtual
+consumed, creating the _noisy neighbor effect_ in which other virtual
 machines can monopolize the disk and affect your performance.
 
 To provide the best service and consistent performance and to align
