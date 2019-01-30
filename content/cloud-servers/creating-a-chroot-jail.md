@@ -31,14 +31,14 @@ Use the following instructions to create a group for jailed users:
 
 2. Verify that the following subsystem has been created in the /etc/ssh/sshd_config file prior to creating the user:
 
-   `less /etc/ssh/sshd_config\
-   Subsystem:\
-   Subsystem     sftp   internal-sftp\
-   Match Group sftponly\
-        ChrootDirectory %h\
-        X11Forwarding no\
-        AllowTCPForwarding no\
-        ForceCommand internal-sftp`\
+    less /etc/ssh/sshd_config
+    Subsystem:
+    Subsystem     sftp   internal-sftp
+    Match Group sftponly
+        ChrootDirectory %h
+        X11Forwarding no
+        AllowTCPForwarding no
+        ForceCommand internal-sftp
 
   
     If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
@@ -47,16 +47,16 @@ Use the following instructions to create a group for jailed users:
 
    1. Comment out the following line:
 
-    `Subsystem       sftp    /usr/libexec/openssh/sftp-server`
+     `Subsystem       sftp    /usr/libexec/openssh/sftp-server`
 
    2. Add the following to the end of the config file:
 
-       Subsystem     sftp   internal-sftp
-       Match Group sftponly
-       ChrootDirectory %h 
-       X11Forwarding no
-       AllowTCPForwarding no  
-       ForceCommand internal-sftp 
+      Subsystem     sftp   internal-sftp
+      Match Group sftponly
+      ChrootDirectory %h 
+      X11Forwarding no
+      AllowTCPForwarding no  
+      ForceCommand internal-sftp 
 
 4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
@@ -112,5 +112,3 @@ Now, set a new password for the SFTP user using the following command:
 5. `chmod 755 /home/chroot/ftpuploader/public`
 
 **Note:**In the above commands the group will be **sftponly** if the user is going to be part of the **sftponly** group.
-
-
