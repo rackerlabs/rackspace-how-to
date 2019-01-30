@@ -49,12 +49,15 @@ Use the following instructions to create a group for jailed users:
 
    2. Add the following to the end of the config file:
 
+   <p>
    `Subsystem     sftp   internal-sftp
-   Match Group sftponly
+    Match Group sftponly
         ChrootDirectory %h
         X11Forwarding no
         AllowTCPForwarding no
         ForceCommand internal-sftp`
+   </p>
+        
 
 4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
