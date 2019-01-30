@@ -70,7 +70,7 @@ Create a home directory for the SFTP user using the following command:
 
    `mkdir -p /home/chroot/ftpuploader/public`
 
-#### Instructions to create an SFTP user on RPM based distributions (CentOS&reg;,RedHat&reg;)
+#### Instructions to create an SFTP user on RPM and DEB based distributions
 
 Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
 
@@ -84,22 +84,8 @@ Now, set a new password for the SFTP user using the following command:
 
    `Passwd ftpuploader`
 
-#### Instructions to create an SFTP user on DEB based distribution (Debian&reg;, Ubuntu&reg;)
 
-Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
-
-   `adduser -d /home/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
-
-If you already have an SFTP user created then you need to set the user's shell access to **/bin/false** and add them to group **sftponly** using the followinf command:
-
-   `adduser -s /sbin/nologin -G sftponly ftpuploader`
-
-Now, set a new password for the SFTP user using the following command:
-
-   `Passwd ftpuploader`
-
-
-### Change permissions and ownership of the home directory using RPM and DEP based distributions:
+### Change permissions and ownership of the home directory using RPM and DEB based distributions:
 
 
 1. `chown root:root /home/chroot/ftpuploader/`
