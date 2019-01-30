@@ -37,43 +37,48 @@ This article describes how to back up MySQL&reg; databases with Ubuntu&reg; by u
 
 ### Configure Holland
 
-A couple of things need to be in place to make your life easier. If you do not already have a .my.cnf file in your /root/ directory, you should create one, that file should look like this:
- 
- [client]
+Before you configure Holland for your back ups, ensure that you have a **.my.cnf** file in your **/root/** directory.
+If you don't have that file, create one and enter the following information:
 
-  user=root
+     [client]
 
-  password=yourpasswordhere
+      user=root
 
-As well, if you don't make any configuration changes, the default location for your backups will be /var/spool/holland/
-If you're looking to change this, you would edit the file /etc/holland/holland.conf file and look for this line:
-backup_directory = /var/spool/holland
-Feel free to change this as you see fit. We'll just leave it there as is.
-Last bit of configuration changes to consider, if you're wanting to have multiple backups present in your backups directory, check out the file /etc/holland/backupsets/default and look for the line
-backups-to-keep = 1
-Feel free to change this as you see fit!
-Now to make sure all your configs are correct run the following command:
+      password=yourpasswordhere
 
-holland bk
+The default location for your backups is **/var/spool/holland**. If you want your backups to be stored in a different
+location, open the **/etc/holland/holland.conf** file in a text editor, and edit the following line:
 
-This should output some text for you to let you know what happened, and you should get a Backup complete message. Your holland back up directory should look like the following:
-root@ubuntu:/etc/holland# ls -la /var/spool/holland/default/
-total 12
-  drwxrwx--- 3 root root 4096 Sep 29 19:37 .
-  drwxr-xr-x 3 root root 4096 Sep 29 19:08 ..
-  drwxrwx--- 3 root root 4096 Sep 29 19:37 20130929_193720
-  lrwxrwxrwx 1 root root   42 Sep 29 19:37 newest -> /var/spool/holland/default/20130929_193720
-  lrwxrwxrwx 1 root root   42 Sep 29 19:37 oldest -> /var/spool/holland/default/20130929_193720
-Setting up scheduled holland:
-Last thing we need to do with holland is to schedule a time to back up our database:
-  vim /etc/crontab
-This file is where you may already have some various jobs running, now the cron is customizable depending on how you want it to run, comment below if you need some help specifying a specific time, mine below as an example will run every day at 3am:
-  0 3 * * * root holland bk
-And voila! You're all holland out!
-Cloud Backup:
+    backup_directory = /var/spool/holland
 
-All that's left to do now is backup the holland directory you specified in your holland configuration, to do that, follow this article on configuring a backup from our control panel:
-http://www.rackspace.com/knowledge_center/article/rackspace-cloud-backup-create-a-backup-0
-The backup is now complete.  Of course to restore any of these backups is super easy now using the driveclient, and then restoring them to MySQL is as easy now as running the below command, thanks to the .my.cnf file we made earlier.
+Holland stores only one backup in the backup directory by default. If you want to have mulitple backups in your backup
+directory, open the **/etc/holland/backupsets/default** file in a text editor, and edit the following line:
 
-  mysql < NAMEOFBACKUP.sql
+    backups-to-keep = 1
+    
+To ensure that all of your configuration settings are correct, run the following command:
+
+    holland bk
+
+Your Holland backup directory should now look similar to the following example:
+
+    total 12
+      drwxrwx--- 3 root root 4096 Sep 29 19:37 .
+      drwxr-xr-x 3 root root 4096 Sep 29 19:08 ..
+      drwxrwx--- 3 root root 4096 Sep 29 19:37 20130929_193720
+      lrwxrwxrwx 1 root root   42 Sep 29 19:37 newest -> /var/spool/holland/default/20130929_193720
+      lrwxrwxrwx 1 root root   42 Sep 29 19:37 oldest -> /var/spool/holland/default/20130929_193720
+
+### Schedule Holland back ups
+
+You can use Holland to schedule regular backups of your database. To do so, open the **/etc/crontab** file and add a new
+cron job. Following is an example that tells Holland to run a backup every day at 3:00 am: 
+
+    0 3 * * * root holland bk
+
+The syntax for forming a cron job is `Minute(0-59) Hour(0-24) Day_of_month(1-31) Month(1-12) Day_of_week(0-6) Command_to_execute`, so you can set your scheduled backup as frequently as you want.
+
+### Back up Holland by using Cloud Backup
+
+For instructions about how to back up your Holland backup files to Rackspace Cloud Backup, see
+[Create a backup](/how-to/rackspace-cloud-backup-create-a-backup).
