@@ -1,50 +1,41 @@
 ---
 permalink: using-holland-and-cloud-backup-to-backup-databases-with-Ubuntu
-audit_date:
-title: Using Holland and Cloud Backup to Backup Databases with Ubuntu
+audit_date: '2019-01-30'
+title: Use Holland and Cloud Backup to back up databases with Ubuntu
 created_date: '2019-01-17'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-30'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This walkthrough will get you up and running with holland backups, and then backing up your holland back ups. For now, this walkthrough is going to assume Ubuntu, but I may update this in the future to include RHEL/CentOS (Or if someone wants to chime in!)
+This article describes how to back up MySQL&reg; databases with Ubuntu&reg; by using Holland and Cloud Backup. 
 
--### Installation
-Grab the key
-wget http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_XX.XX/Release.key -O - | sudo apt-key add -
+### Install Holland
 
+1. Get the release key for Holland by running the following command:
 
-NOTE: Here you should replace Ubuntu_XX.XX with your ubuntu release. So for Ubuntu 13.04 that command would look like this:
+       wget http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_XX.XX/Release.key -O - | sudo apt-key add -
 
+   **Note:** Replace `xUbuntu_XX.XX` with the version of Ubuntu that you are using. For example, for Ubuntu 13.04, you use
+   `xUbuntu_13.04`.
 
-  wget http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_13.04/Release.key -O - | sudo apt-key add -
+2. Open the list file **/etc/apt/sources.list.d/holland.list** in a text editor and add the following line:
 
+       deb http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_XX.XX/ ./
+       
+   **Note:** Replace `xUbuntu_XX.XX` with the version of Ubuntu that you are using.
+   
+   Save and close the file.
+   
+3. Run the following commands to update and install Holland:
 
-Now let's get our list file set up for that feel free to use your favourite editor:
+       apt-get update
+       apt-get install holland-common holland-mysqldump
+   
 
-
-  vim /etc/apt/sources.list.d/holland.list
-
-
-And add the following line in there:
-
-
-  deb http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_XX.XX/ ./
-
-
-NOTE: again, change XX.XX with your distro so for 13.04:
-
-
-  deb http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_13.04/ ./
-  Update
-  apt-get update
-  Install
-  apt-get install holland-common holland-mysqldump
-
-### Configuration
+### Configure Holland
 
 A couple of things need to be in place to make your life easier. If you do not already have a .my.cnf file in your /root/ directory, you should create one, that file should look like this:
  
