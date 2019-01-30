@@ -40,7 +40,7 @@ Use the following instructions to create a group for jailed users:
         AllowTCPForwarding no
         ForceCommand internal-sftp
 
-  
+
     If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
 
 3. If the subsystem the previous step is not present you will need to edit the file with the following actions:
@@ -51,12 +51,12 @@ Use the following instructions to create a group for jailed users:
 
   2. Add the following to the end of the config file:
 
-      Subsystem     sftp   internal-sftp
-      Match Group sftponly
-      ChrootDirectory %h 
-      X11Forwarding no
-      AllowTCPForwarding no  
-      ForceCommand internal-sftp 
+      <br>`Subsystem     sftp   internal-sftp`</br>
+      <br>`Match Group sftponly`</br>
+      <br>`ChrootDirectory %h`</br>
+      <br>`X11Forwarding no`</br>
+      <br>`AllowTCPForwarding no`</br>
+      <br>`ForceCommand internal-sftp`</br>
 
 4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
