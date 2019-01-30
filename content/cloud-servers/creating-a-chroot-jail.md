@@ -14,7 +14,7 @@ This article instructs you on how to configure a **chroot jail** on both Debian 
 
 The instructions in this article create the chroot jail using the following example group and user names:
 
-  **group: sftponly**
+  **group: sftponly**</br>
 
   **user: ftpuploader**
 
@@ -32,7 +32,7 @@ Use the following instructions to create a group for jailed users:
 2. Verify that the following subsystem has been created in the /etc/ssh/sshd_config file prior to creating the user:
 
   <p>
-   `less /etc/ssh/sshd_config</b>
+   `less /etc/ssh/sshd_config</br>
    Subsystem:
    Subsystem     sftp   internal-sftp
    Match Group sftponly
@@ -48,11 +48,11 @@ Use the following instructions to create a group for jailed users:
 
    1. Comment out the following line:
 
-   `Subsystem       sftp    /usr/libexec/openssh/sftp-server`
+    `Subsystem       sftp    /usr/libexec/openssh/sftp-server`
 
    2. Add the following to the end of the config file:
 
-   `Subsystem     sftp   internal-sftp  
+   `Subsystem     sftp   internal-sftp</br> 
    Match Group sftponly  
         ChrootDirectory %h  
         X11Forwarding no  
