@@ -1,7 +1,7 @@
 ---
 permalink: creating-a-chroot-jail
 audit_date: '2019-01-29'
-title: Creating a Chroot Jail
+title: Creating a chroot jail
 created_date: '2019-01-29'
 created_by: Rackspace Community
 last_modified_date: '2019-01-29'
@@ -14,8 +14,9 @@ This article instructs you on how to configure a **chroot jail** on both Debian 
 
 The instructions in this article create the chroot jail using the following example group and user names:
 
-  **group: sftponly
-  user: ftpuploader**
+  **group: sftponly**
+
+  **user: ftpuploader**
 
 
 ### Create a group for jailed users
@@ -30,7 +31,8 @@ Use the following instructions to create a group for jailed users:
 
 2. Verify that the following subsystem has been created in the /etc/ssh/sshd_config file prior to creating the user:
 
-   `less /etc/ssh/sshd_config
+  <p>
+   `less /etc/ssh/sshd_config</b>
    Subsystem:
    Subsystem     sftp   internal-sftp
    Match Group sftponly
@@ -38,7 +40,8 @@ Use the following instructions to create a group for jailed users:
         X11Forwarding no
         AllowTCPForwarding no
         ForceCommand internal-sftp`
-
+  </p>
+  
     If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
 
 3. If the subsystem the previous step is not present you will need to edit the file with the following actions:
@@ -49,15 +52,12 @@ Use the following instructions to create a group for jailed users:
 
    2. Add the following to the end of the config file:
 
-   <p>
-   `Subsystem     sftp   internal-sftp
-    Match Group sftponly
-        ChrootDirectory %h
-        X11Forwarding no
-        AllowTCPForwarding no
-        ForceCommand internal-sftp`
-   </p>
-        
+   `Subsystem     sftp   internal-sftp  
+   Match Group sftponly  
+        ChrootDirectory %h  
+        X11Forwarding no  
+        AllowTCPForwarding no  
+        ForceCommand internal-sftp`  
 
 4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
@@ -70,7 +70,7 @@ Create a home directory for the SFTP user using the following command:
 
    `mkdir -p /home/chroot/ftpuploader/public`
 
-#### Instructions to create an SFTP user on RPM and DEB based distributions
+#### Instructions to create an SFTP user on RPM based distributions (CentOS&reg;,RedHat&reg;)
 
 Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
 
@@ -84,8 +84,22 @@ Now, set a new password for the SFTP user using the following command:
 
    `Passwd ftpuploader`
 
+#### Instructions to create an SFTP user on DEB based distribution (Debian&reg;, Ubuntu&reg;)
 
-### Change permissions and ownership of the home directory using RPM and DEB based distributions:
+Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
+
+   `adduser -d /home/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
+
+If you already have an SFTP user created then you need to set the user's shell access to **/bin/false** and add them to group **sftponly** using the followinf command:
+
+   `adduser -s /sbin/nologin -G sftponly ftpuploader`
+
+Now, set a new password for the SFTP user using the following command:
+
+   `Passwd ftpuploader`
+
+
+### Change permissions and ownership of the home directory using RPM and DEP based distributions:
 
 
 1. `chown root:root /home/chroot/ftpuploader/`
