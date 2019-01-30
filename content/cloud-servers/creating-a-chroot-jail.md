@@ -113,3 +113,4 @@ Now, set a new password for the SFTP user using the following command:
 5. `chmod 755 /home/chroot/ftpuploader/public`
 
 **Note:**In the above commands the group will be **sftponly** if the user is going to be part of the **sftponly** group.
+
