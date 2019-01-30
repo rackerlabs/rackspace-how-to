@@ -1,5 +1,5 @@
 ---
-permalink: using-holland-and-cloud-backup-to-backup-databases-with-Ubuntu
+permalink: using-holland-and-cloud-backup-to-backup-databases-with-Ubuntu/
 audit_date: '2019-01-30'
 title: Use Holland and Cloud Backup to back up databases with Ubuntu
 created_date: '2019-01-17'
