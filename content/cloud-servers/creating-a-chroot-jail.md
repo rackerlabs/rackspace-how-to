@@ -33,19 +33,19 @@ Use the following instructions to create a group for jailed users:
 
     `less /etc/ssh/sshd_config`
 
-    `Subsystem:
+      Subsystem:
 
-    Subsystem     sftp   internal-sftp
+      Subsystem     sftp   internal-sftp
 
-    Match Group sftponly
+      Match Group sftponly
 
-        ChrootDirectory %h
+          ChrootDirectory %h
 
-        X11Forwarding no
+          X11Forwarding no
 
-        AllowTCPForwarding no
+          AllowTCPForwarding no
 
-        ForceCommand internal-sftp`
+          ForceCommand internal-sftp
 
 
     If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
@@ -58,17 +58,17 @@ Use the following instructions to create a group for jailed users:
 
   2. Add the following to the end of the config file:
 
-      `Subsystem     sftp   internal-sftp
+        Subsystem     sftp   internal-sftp
 
-       Match Group sftponly
+        Match Group sftponly
 
-        ChrootDirectory %h
+          ChrootDirectory %h
 
-        X11Forwarding no
+          X11Forwarding no
 
-        AllowTCPForwarding no
+          AllowTCPForwarding no
 
-        ForceCommand internal-sftp`
+          ForceCommand internal-sftp`
 
 4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
