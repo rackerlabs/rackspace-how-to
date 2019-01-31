@@ -25,55 +25,57 @@ Use the following instructions to create a group for jailed users:
 
 1. Create the group using the following command:
 
-   `groupadd sftponly`
+       groupadd sftponly
 
    **Note:** This group will be used to restrict or **jail** users added to it to their home directory.
 
 2. Verify that the following subsystem has been created in the /etc/ssh/sshd_config file prior to creating the user:
 
-    `less /etc/ssh/sshd_config`
+       less /etc/ssh/sshd_config
 
-      Subsystem:
+   The output should be similar to the following example:
+   
+       Subsystem:
 
-      Subsystem     sftp   internal-sftp
+       Subsystem     sftp   internal-sftp
 
-      Match Group sftponly
+       Match Group sftponly
 
-          ChrootDirectory %h
+           ChrootDirectory %h
 
-          X11Forwarding no
+           X11Forwarding no
 
-          AllowTCPForwarding no
+           AllowTCPForwarding no
 
-          ForceCommand internal-sftp
+           ForceCommand internal-sftp
 
 
-    If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
+   If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
 
 3. If the subsystem the previous step is not present you will need to edit the file with the following actions:
 
   1. Comment out the following line:
 
-       `Subsystem       sftp    /usr/libexec/openssh/sftp-server`
+         Subsystem       sftp    /usr/libexec/openssh/sftp-server
 
   2. Add the following to the end of the config file:
 
-        Subsystem     sftp   internal-sftp
+         Subsystem     sftp   internal-sftp
 
-        Match Group sftponly
+         Match Group sftponly
 
-          ChrootDirectory %h
+             ChrootDirectory %h
 
-          X11Forwarding no
+             X11Forwarding no
 
-          AllowTCPForwarding no
+             AllowTCPForwarding no
 
-          ForceCommand internal-sftp`
+             ForceCommand internal-sftp`
 
 4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
-   `sshd –t`
-   `service sshd reload`
+       sshd –t
+       service sshd reload
 
 ### Create a Secure File Transfer Protocol (SFTP) user
 
