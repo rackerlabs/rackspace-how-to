@@ -86,11 +86,11 @@ Use the following steps to create a Secure File Transfer Protocol (SFTP) user:
 5. Change permissions and ownership of the home directory using RPM and DEB based distributions as shown in the following code:
 
 
-    chown root:root /home/chroot/ftpuploader/
-    chown ftpuploader:sftponly /home/chroot/ftpuploader/public
-    chmod 711 /home/chroot/
-    chmod 755 /home/chroot/ftpuploader/
-    chmod 755 /home/chroot/ftpuploader/public
+       chown root:root /home/chroot/ftpuploader/
+       chown ftpuploader:sftponly /home/chroot/ftpuploader/public
+       chmod 711 /home/chroot/
+       chmod 755 /home/chroot/ftpuploader/
+       chmod 755 /home/chroot/ftpuploader/public
 
 **Note:** In the preceeding commands, the group is **sftponly** if the user is going to be part of the **sftponly** group.
 
