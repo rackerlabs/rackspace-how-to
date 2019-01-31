@@ -1,22 +1,22 @@
 ---
-permalink: creating-a-chroot-jail
-audit_date: '2019-01-29'
-title: Creating a chroot jail
-created_date: '2019-01-29'
+permalink: create-a-chroot-jail/
+audit_date: '2019-01-31'
+title: Create a chroot jail
+created_date: '2019-01-31'
 created_by: Rackspace Community
-last_modified_date: '2019-01-29'
+last_modified_date: '2019-01-31'
 last_modified_by: William Loy
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article describes how to configure a chroot jail by using both Debian&reg; and RPM Package Manager (RPM) based distributions.
+This article describes how to configure a chroot jail by using both Debian&reg; and RPM Package Manager (RPM)-based distributions.
 
 These instructions create the chroot jail by using the following example group and user names:
 
-  - group: **sftponly**
+  - Group: **sftponly**
 
-  - user: **ftpuploader**
+  - User: **ftpuploader**
 
 
 ### Create a group for jailed users
@@ -32,7 +32,7 @@ Use the following instructions to create a group for jailed users:
 
 2. Open **/etc/ssh/sshd_config** in a text editor and edit the file by using the following steps:
 
-  1. Comment out the following line by placing `#` before the line:
+  1. Comment out the following line by placing a number sign (`#`) before the line:
       
       Before:
 
@@ -65,12 +65,12 @@ Use the following instructions to create a group for jailed users:
 
 Use the following steps to create a Secure File Transfer Protocol (SFTP) user:
 
-1.	Create a home directory for the SFTP user by using the following command:
+1. Create a home directory for the SFTP user by using the following command:
 
     `mkdir -p /home/chroot/ftpuploader/public`
 
 
-2. Create a new user with a home directory that has no shell access, and add it to the group sftponly by using the following command:
+2. Create a new user with a home directory that has no shell access, and add it to the group **sftponly** by using the following command:
 
     `useradd -d /home/chroot/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
 
@@ -83,7 +83,7 @@ Use the following steps to create a Secure File Transfer Protocol (SFTP) user:
     `Passwd ftpuploader`
 
 
-5. Change permissions and ownership of the home directory using RPM and DEB based distributions as shown in the following code:
+5. Change permissions and ownership of the home directory using RPM and Debian-based distributions as shown in the following code:
 
 
        chown root:root /home/chroot/ftpuploader/
