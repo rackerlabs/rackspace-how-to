@@ -34,27 +34,27 @@ Use the following instructions to create a group for jailed users:
 
     1. Comment out the following line by placing a number sign (`#`) before the line:
       
-      Before:
+        Before:
 
-         Subsystem       sftp    /usr/libexec/openssh/sftp-server
+           Subsystem       sftp    /usr/libexec/openssh/sftp-server
          
-      After:
+        After:
          
-         #Subsystem       sftp    /usr/libexec/openssh/sftp-server
+           #Subsystem       sftp    /usr/libexec/openssh/sftp-server
 
     2. Add the following lines to the end of the configuration file:
 
-         Subsystem     sftp   internal-sftp
+           Subsystem     sftp   internal-sftp
 
-         Match Group sftponly
+           Match Group sftponly
 
-             ChrootDirectory %h
+              ChrootDirectory %h
 
-             X11Forwarding no
+              X11Forwarding no
 
-             AllowTCPForwarding no
+              AllowTCPForwarding no
 
-             ForceCommand internal-sftp`
+              ForceCommand internal-sftp`
 
 3. Verify that the syntax is correct in the new configuration and reload **sshd** by using the following commands:
 
