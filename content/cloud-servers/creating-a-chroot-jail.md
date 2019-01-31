@@ -10,27 +10,27 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article instructs you on how to configure a **chroot jail** using both Debian and RPM Package Manager (RPM) based distributions.
+This article describes how to configure a chroot jail by using both Debian&reg; and RPM Package Manager (RPM) based distributions.
 
-The instructions in this article create the chroot jail using the following example group and user names:
+These instructions create the chroot jail by using the following example group and user names:
 
-  group: **sftponly**
+  - group: **sftponly**
 
-  user: **ftpuploader**
+  - user: **ftpuploader**
 
 
 ### Create a group for jailed users
 
 Use the following instructions to create a group for jailed users:
 
-1. Create the jailed group using the following command:
+1. Create the jailed group by using the following command:
 
        groupadd sftponly
 
-   **Note:** This group will be used to restrict or **jail** users added to it to their home directory.
+   **Note:** This group is used to restrict or jail users to their home directory.
 
 
-2. Open **/etc/ssh/sshd_config** in a text editor and edit the file using the following actions:
+2. Open **/etc/ssh/sshd_config** in a text editor and edit the file by using the following steps:
 
   1. Comment out the following line by placing `#` before the line:
       
@@ -42,7 +42,7 @@ Use the following instructions to create a group for jailed users:
          
          #Subsystem       sftp    /usr/libexec/openssh/sftp-server
 
-  2. Add the following to the end of the configuration file:
+  2. Add the following lines to the end of the configuration file:
 
          Subsystem     sftp   internal-sftp
 
@@ -56,44 +56,41 @@ Use the following instructions to create a group for jailed users:
 
              ForceCommand internal-sftp`
 
-3. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
+3. Verify that the syntax is correct in the new configuration and reload **sshd** by using the following commands:
 
        sshd –t
        service sshd reload
 
-### Create a Secure File Transfer Protocol (SFTP) user
+### Create a Secure File Transfer Protocol user
 
-Create a home directory for the SFTP user using the following command:
+Use the following steps to create a Secure File Transfer Protocol (SFTP) user:
 
-   `mkdir -p /home/chroot/ftpuploader/public`
+1.	Create a home directory for the SFTP user by using the following command:
 
-#### Instructions on creating an SFTP using an RPM or DEB based distribution
-
-Create a new user with a home directory, no shell access, and add it to the group **sftponly** using the following command:
-
-   `useradd -d /home/chroot/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
-
-If you already have an SFTP user created then you need to set the user's shell access to **/bin/false** and add them to group **sftponly** using the followinf command:
-
-   `usermod -s /sbin/nologin -G sftponly ftpuploader`
-
-Now, set a new password for the SFTP user using the following command:
-
-   `Passwd ftpuploader`
+    `mkdir -p /home/chroot/ftpuploader/public`
 
 
-### Change permissions and ownership of the home directory using RPM and DEP based distributions:
+2. Create a new user with a home directory that has no shell access, and add it to the group sftponly by using the following command:
+
+    `useradd -d /home/chroot/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
+
+3. If you already have an SFTP user created, then you need to set the user's shell access to **/sbin/nologin** and add them to group **sftponly** by using the following command:
+
+    `usermod -s /sbin/nologin -G sftponly ftpuploader`
+
+4. Now, set a new password for the SFTP user by using the following command:
+
+    `Passwd ftpuploader`
 
 
-1. `chown root:root /home/chroot/ftpuploader/`
+5. Change permissions and ownership of the home directory using RPM and DEB based distributions as shown in the following code:
 
-2. `chown ftpuploader:sftponly /home/chroot/ftpuploader/public`
 
-3. `chmod 711 /home/chroot/`
+    chown root:root /home/chroot/ftpuploader/
+    chown ftpuploader:sftponly /home/chroot/ftpuploader/public
+    chmod 711 /home/chroot/
+    chmod 755 /home/chroot/ftpuploader/
+    chmod 755 /home/chroot/ftpuploader/public
 
-4. `chmod 755 /home/chroot/ftpuploader/`
-
-5. `chmod 755 /home/chroot/ftpuploader/public`
-
-**Note:** In the above commands the group will be **sftponly** if the user is going to be part of the **sftponly** group.
+**Note:** In the preceeding commands, the group is **sftponly** if the user is going to be part of the **sftponly** group.
 
