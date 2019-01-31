@@ -32,7 +32,7 @@ Use the following instructions to create a group for jailed users:
 
 2. Open **/etc/ssh/sshd_config** in a text editor and edit the file by using the following steps:
 
-  1. Comment out the following line by placing a number sign (`#`) before the line:
+    1. Comment out the following line by placing a number sign (`#`) before the line:
       
       Before:
 
@@ -42,7 +42,7 @@ Use the following instructions to create a group for jailed users:
          
          #Subsystem       sftp    /usr/libexec/openssh/sftp-server
 
-  2. Add the following lines to the end of the configuration file:
+    2. Add the following lines to the end of the configuration file:
 
          Subsystem     sftp   internal-sftp
 
