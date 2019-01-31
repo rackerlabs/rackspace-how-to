@@ -95,3 +95,4 @@ Use the following steps to create a Secure File Transfer Protocol (SFTP) user:
 **Note:** In the preceeding commands, the group is **sftponly** if the user is going to be part of the **sftponly** group.
 
 
+
