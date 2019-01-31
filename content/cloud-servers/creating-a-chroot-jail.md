@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article instructs you on how to configure a **chroot jail** on both Debian and RPM Package Manager (RPM) based distributions.
+This article instructs you on how to configure a **chroot jail** using both Debian and RPM Package Manager (RPM) based distributions.
 
 The instructions in this article create the chroot jail using the following example group and user names:
 
@@ -31,14 +31,21 @@ Use the following instructions to create a group for jailed users:
 
 2. Verify that the following subsystem has been created in the /etc/ssh/sshd_config file prior to creating the user:
 
-    less /etc/ssh/sshd_config
-    Subsystem:
+    `less /etc/ssh/sshd_config`
+    
+    `Subsystem:
+    
     Subsystem     sftp   internal-sftp
+     
     Match Group sftponly
+    
         ChrootDirectory %h
+        
         X11Forwarding no
+        
         AllowTCPForwarding no
-        ForceCommand internal-sftp
+        
+        ForceCommand internal-sftp`
 
 
     If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
@@ -55,13 +62,13 @@ Use the following instructions to create a group for jailed users:
       
        Match Group sftponly
       
-       ChrootDirectory %h
+        ChrootDirectory %h
        
-       X11Forwarding no
+        X11Forwarding no
        
-       AllowTCPForwarding no
+        AllowTCPForwarding no
        
-       ForceCommand internal-sftp`
+        ForceCommand internal-sftp`
 
 4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
@@ -74,29 +81,15 @@ Create a home directory for the SFTP user using the following command:
 
    `mkdir -p /home/chroot/ftpuploader/public`
 
-#### Instructions to create an SFTP user on RPM based distributions (CentOS&reg;,RedHat&reg;)
+#### Instructions on creating an SFTP using an RPM or DEB based distribution
 
-Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
+Create a new user with a home directory, no shell access, and add it to the group **sftponly** using the following command:
 
    `useradd -d /home/chroot/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
 
 If you already have an SFTP user created then you need to set the user's shell access to **/bin/false** and add them to group **sftponly** using the followinf command:
 
    `usermod -s /sbin/nologin -G sftponly ftpuploader`
-
-Now, set a new password for the SFTP user using the following command:
-
-   `Passwd ftpuploader`
-
-#### Instructions to create an SFTP user on DEB based distribution (Debian&reg;, Ubuntu&reg;)
-
-Create a new user with home directory, no shell access, and added to the group **sftponly** using the following command:
-
-   `adduser -d /home/ftpuploader -s /sbin/nologin -G sftponly ftpuploader`
-
-If you already have an SFTP user created then you need to set the user's shell access to **/bin/false** and add them to group **sftponly** using the followinf command:
-
-   `adduser -s /sbin/nologin -G sftponly ftpuploader`
 
 Now, set a new password for the SFTP user using the following command:
 
