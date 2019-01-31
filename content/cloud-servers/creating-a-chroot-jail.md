@@ -14,51 +14,35 @@ This article instructs you on how to configure a **chroot jail** using both Debi
 
 The instructions in this article create the chroot jail using the following example group and user names:
 
-  **group: sftponly**
+  group: **sftponly**
 
-  **user: ftpuploader**
+  user: **ftpuploader**
 
 
 ### Create a group for jailed users
 
 Use the following instructions to create a group for jailed users:
 
-1. Create the group using the following command:
+1. Create the jailed group using the following command:
 
        groupadd sftponly
 
    **Note:** This group will be used to restrict or **jail** users added to it to their home directory.
 
-2. Verify that the following subsystem has been created in the /etc/ssh/sshd_config file prior to creating the user:
 
-       less /etc/ssh/sshd_config
+2. Open **/etc/ssh/sshd_config** in a text editor and edit the file using the following actions:
 
-   The output should be similar to the following example:
-   
-       Subsystem:
-
-       Subsystem     sftp   internal-sftp
-
-       Match Group sftponly
-
-           ChrootDirectory %h
-
-           X11Forwarding no
-
-           AllowTCPForwarding no
-
-           ForceCommand internal-sftp
-
-
-   If this subsystem is not present in the sshd_config file, proceed to step 3 of this section. If the subsystem is present you should proceed to [creating a user](#creating-a-user).
-
-3. If the subsystem the previous step is not present you will need to edit the file with the following actions:
-
-  1. Comment out the following line:
+  1. Comment out the following line by placing `#` before the line:
+      
+      Before:
 
          Subsystem       sftp    /usr/libexec/openssh/sftp-server
+         
+      After:
+         
+         #Subsystem       sftp    /usr/libexec/openssh/sftp-server
 
-  2. Add the following to the end of the config file:
+  2. Add the following to the end of the configuration file:
 
          Subsystem     sftp   internal-sftp
 
@@ -72,7 +56,7 @@ Use the following instructions to create a group for jailed users:
 
              ForceCommand internal-sftp`
 
-4. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
+3. Verify the syntax is correct in the new configuration and reload sshd using the following commands:
 
        sshd –t
        service sshd reload
@@ -111,4 +95,4 @@ Now, set a new password for the SFTP user using the following command:
 
 5. `chmod 755 /home/chroot/ftpuploader/public`
 
-**Note:**In the above commands the group will be **sftponly** if the user is going to be part of the **sftponly** group.
+**Note:** In the above commands the group will be **sftponly** if the user is going to be part of the **sftponly** group.
