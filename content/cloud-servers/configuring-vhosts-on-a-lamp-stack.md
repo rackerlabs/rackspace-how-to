@@ -87,7 +87,6 @@ You configure the vhosts for all three customers by using the following command 
         $ mkdir -p /var/www/vhosts/site1.com /var/www/vhosts/site2.com /var/www/vhosts/site3.com /var/www/vhosts/mobile.site3.com
         $ apache2ctl configtest
         $ apache2ctl restart
-        You’ll probably get a warning message similar to: “apache2: Could not reliably determine the server’s fully qualified domain name.” This can be ignored for now. Now, we have 4 sites enabled - meaning apache can serve HTTP requests to these 4 sites - and 4 vhosts to act as the document roots.
         /var/www/
         ├── html
         │   └── index.html
@@ -97,6 +96,6 @@ You configure the vhosts for all three customers by using the following command 
             ├── site2.com
             ├── site3.com
 
-Each directory underneath the vhosts directory is a “document root” for the listed site. As HTTP requests come into the server, Apache determines which domain the request is for, then routes the request to the appropriate document root, as specified in the vhosts configuration file.
+Each directory underneath the vhosts directory is a _document root_ for the listed site. As HTTP requests come into the server, Apache determines which domain the request is for, then routes the request to the appropriate document root, as specified in the vhosts configuration file.
 
 
