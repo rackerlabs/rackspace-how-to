@@ -99,3 +99,4 @@ You configure the vhosts for all three customers by using the following command 
 
 Each directory underneath the vhosts directory is a “document root” for the listed site. As HTTP requests come into the server, Apache determines which domain the request is for, then routes the request to the appropriate document root, as specified in the vhosts configuration file.
 
+
