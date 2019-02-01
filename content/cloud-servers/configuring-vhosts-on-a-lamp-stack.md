@@ -1,5 +1,5 @@
 ---
-permalink: configuring-vhosts-on-a-lamp-stack
+permalink: configuring-vhosts-on-a-lamp-stack/
 audit_date: '2019-02-01'
 title: Configuring vhosts on a LAMP Stack
 created_date: '2019-02-01'
