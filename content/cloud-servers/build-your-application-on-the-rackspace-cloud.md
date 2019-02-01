@@ -1,11 +1,11 @@
 ---
-permalink: building-your-application-on-rackspace
-audit_date:
-title: Building an Application on Rackspace
+permalink: build-your-application-on-the-rackspace-cloud/
+audit_date: '2019-01-22'
+title: Build your application on the Rackspace cloud
 created_date: '2019-01-22'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-02-01'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
