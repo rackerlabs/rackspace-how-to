@@ -57,7 +57,7 @@ for more information.
 We strongly recommend that you create a modular application. Modular design is
 one of the [_Five Pillars of
 Cloudiness_](https://blog.rackspace.com/explore-the-five-pillars-of-cloudiness). Modularizing your application can eliminate a single point of
-failure, and allow for significantly faster scaling if necessary. The
+failure, and allows for significantly faster scaling if necessary. The
 following tips help you create a modular application:
 
 - Decouple your database from your web and app servers. You can do this by
@@ -102,7 +102,7 @@ Take the following security measures at the infrastructure level:
 - Configure [two-factor
   authentication](/how-to/myrackspace-multi-factor-authentication/).
 
-#### Security at the server level
+#### Server level
 
 Take the following security measures at the server level:
 
@@ -110,7 +110,7 @@ Take the following security measures at the server level:
 - Lock down your firewalls manually or by using a service such as Dome9 or
   CloudPassage&reg;.
 
-#### Security at the application level
+#### Application level
 
 Take the following security measures at the application level:
 
@@ -157,7 +157,7 @@ Configure backups of the following directories for your databases:
 - /etc
 - /var/lib/mysqlbackup
 
-The last directory is for servers that run mySQL databases. Managed
+The last directory is for servers that run MySQL databases. Managed
 Operations customers automatically dump their databases to this location.
 Managed Infrastructure customers can configure the same backup by using
 the Holland Backup Manager.
@@ -182,12 +182,12 @@ that your application can use. You can include block storage in a cloud
 backup, and also save the volumes as image snapshots. If you’re using Cloud
 Block Storage, it is important to verify the following things:
 
-- Verify/configure backup of any Cloud Block Storage volumes.
+- Verify and configure backup of any Cloud Block Storage volumes.
 - Verify that your attached Cloud Block Storage volumes reconnect after reboot.
 
 ### Monitoring
 
-Monitoring can alert you if your site becomes non-responsive. Customers with
+Monitoring can alert you if your site becomes nonresponsive. Customers with
 our Managed Operations service level can choose to automatically alert
 Rackspace Support when monitoring notices conditions that might be of concern.
 
