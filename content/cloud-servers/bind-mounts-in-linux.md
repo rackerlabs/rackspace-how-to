@@ -10,11 +10,11 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Bind Mounts allow you to mount an already mounted filesystem to another location within the filesystem.
-
-Bind mounts restrict the access of specified users to designated parts of a website. You can grant a user access to a directory by bind mounting the directory to the home directory of the user.
+Bind Mounts allow you to mount an already mounted filesystem to another location within the filesystem. Genenerally, bind mounts are used to restrict the access of specified users to designated parts of a website. 
 
 #### Configure a bind mount
+
+This section instructs you on how to grant a user access to a directory by using bind mounting to bind the directory to that user's home directory. 
 
 Configure a bind mount by using the following command:
 
@@ -32,7 +32,7 @@ If the **nobootwait** option is not included in the fstab entry, you see the fol
 
     `Continue to wait; or Press S to skip mounting or M for manual recovery`. 
     
-Adding **nobootwait** to the options section of the **fstab** ensures that the system will boot even if the bind mount directory has been removed from the system. 
+Adding **nobootwait** to the options section of the **fstab** configuration ensures that the system will boot even if the bind mount directory has been removed from the system. 
 
 
 
