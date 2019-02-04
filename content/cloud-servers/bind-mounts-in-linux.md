@@ -18,7 +18,7 @@ This section provides steps for how to grant a user access to a directory by usi
 
 Configure a bind mount by using the following command:
 
-    `mount --bind /path/to/domain /path/to/home/directory`
+  `mount --bind /path/to/domain /path/to/home/directory`
 
 **Warning:** Bind mounts are not persistent when you restart your server unless you create an entry for the bind mount in your server's File Systems Table (**fstab**).
 
@@ -26,11 +26,11 @@ Configure a bind mount by using the following command:
 
 Add an **fstab** entry for the bind mount by using the following command:
 
-    `/path/to/domain /path/to/home/directory none bind,nobootwait 0 0`
+  `/path/to/domain /path/to/home/directory none bind,nobootwait 0 0`
 
 If the **nobootwait** option is not included in the **fstab** entry, you see the following message in the server console:
 
-    `Continue to wait; or Press S to skip mounting or M for manual recovery`. 
+  `Continue to wait; or Press S to skip mounting or M for manual recovery`. 
     
 Adding **nobootwait** to the options section of the **fstab** configuration ensures that the system boots even if the bind mount directory has been removed from the system. 
 
