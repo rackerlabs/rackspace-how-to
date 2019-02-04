@@ -29,3 +29,4 @@ Add an **fstab** entry for the bind mount by using the following command:
 Adding **nobootwait** to the options section of the **fstab** in `/path/to/domain /path/to/home/directory none bind,nobootwait 0 0` ensures that the system will boot even if the bind mount directory has been removed from the system. Without the **nobootwait** option you see a message on the console that says, `Continue to wait; or Press S to skip mounting or M for manual recovery`. This message persists until the option to skip is initiated or you perform a manual recovery.
 
 
+
