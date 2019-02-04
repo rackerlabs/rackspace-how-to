@@ -14,7 +14,9 @@ Bind Mounts allow you to mount an already mounted filesystem to another location
 
 Bind mounts restrict the access of specified users to designated parts of a website. You can grant a user access to a directory by bind mounting the directory to the home directory of the user.
 
-#### Configure a bind mount by using the following command:
+#### Configure a bind mount
+
+Configure a bind mount by using the following command:
 
     `mount --bind /path/to/domain /path/to/home/directory`
 
