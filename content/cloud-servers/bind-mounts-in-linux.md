@@ -34,7 +34,3 @@ If the **nobootwait** option is not included in the **fstab** entry, you see the
     
 Adding **nobootwait** to the options section of the **fstab** configuration ensures that the system boots even if the bind mount directory has been removed from the system. 
 
-
-
-
-
