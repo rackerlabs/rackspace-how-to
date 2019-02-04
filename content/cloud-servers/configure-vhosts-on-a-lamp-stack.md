@@ -1,7 +1,7 @@
 ---
-permalink: configuring-vhosts-on-a-lamp-stack/
+permalink: configure-vhosts-on-a-lamp-stack/
 audit_date: '2019-02-01'
-title: Configuring vhosts on a LAMP Stack
+title: Configure vhosts on a LAMP stack
 created_date: '2019-02-01'
 created_by: Rackspace Community
 last_modified_date: '2019-02-04'
@@ -12,7 +12,7 @@ product_url: cloud-servers
 
 Whether you host a single site, or dozens of sites on your new Linux&reg; Apache&reg; MySQL&reg; PHP&reg; (LAMP) server, virtual hosts (vhosts) help you efficiently organize your sites.
 
-In the following example, you see that your LAMP server is already configured to serve content directly out of the **/var/www/html** directory in the example below:
+In the following example, the LAMP server is already configured to serve content directly from the **/var/www/html** directory in the example below:
 
     /var/www
     ├── html
@@ -29,7 +29,7 @@ Use the following instructions to configure your vhosts:
 
 **Note:** Replace _yoursitename.com_ in the instructions below with your actual site or domain name. We recommend that you use the top-level domain such as .com, .net, and so on on one server.
 
-1. Navigate to move the **sites-available** folder by using the following command:
+1. Navigate to the **sites-available** folder by using the following command:
 
     `$ cd /etc/apache2/sites-available`
 
@@ -51,7 +51,7 @@ Use the following instructions to configure your vhosts:
 
     `$ a2ensite yoursitename.com.conf`
 
-4. Create the directory for your site.
+4. Create the directory for your site by using the following command:
 
     `$ mkdir -p /var/www/vhosts/yoursitename.com`
 
@@ -62,11 +62,11 @@ Use the following instructions to configure your vhosts:
 
 ### Test your vhost configuration
 
-1. In this step you should see a response of `Syntax OK`. Test the configuration by using the following command:
+This test should see produce a response of `Syntax OK`. Test the configuration by using the following command:
 
     `$ apache2ctl configtest`
 
-2. Restart Apache to finalize the configuration change by using the following command:
+Restart Apache to finalize the configuration change by using the following command:
 
     `$ apache2ctl restart`
 
