@@ -2,7 +2,7 @@
 permalink: build-your-application-on-the-rackspace-cloud/
 audit_date: '2019-01-22'
 title: Build your application on the Rackspace cloud
-created_date: '2019-02-04'
+created_date: '2019-01-31'
 created_by: Rackspace Community
 last_modified_date: '2019-02-04'
 last_modified_by: Kate Dougherty
