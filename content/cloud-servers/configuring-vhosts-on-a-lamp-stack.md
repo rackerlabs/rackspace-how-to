@@ -4,7 +4,7 @@ audit_date: '2019-02-01'
 title: Configuring vhosts on a LAMP Stack
 created_date: '2019-02-01'
 created_by: Rackspace Community
-last_modified_date: '2019-02-01'
+last_modified_date: '2019-02-04'
 last_modified_by: William Loy
 product: Cloud Servers
 product_url: cloud-servers
