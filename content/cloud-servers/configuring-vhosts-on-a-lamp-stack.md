@@ -12,24 +12,22 @@ product_url: cloud-servers
 
 Whether you host a single site, or dozens of sites on your new Linux&reg; Apache&reg; MySQL&reg; PHP&reg; (LAMP) server, virtual hosts (vhosts) help you efficiently organize your sites.
 
-You see that your LAMP server is already configured to serve content directly out of the **/var/www/html** directory in the example below:
+In the following example, you see that your LAMP server is already configured to serve content directly out of the **/var/www/html** directory in the example below:
 
     /var/www
     ├── html
     │   └── index.html
     └── vhosts
 
-The existing index.html file is the standard apache test page. You can immediately serve content by replacing the existing file with your own site files. Alternatively, you can serve one or more sites by using vhosts. Your LAMP stack contains a template that you can modify to create new vhost configuration files for each site you need to host.
+The existing **index.html** file is the standard Apache test page. You can immediately serve content by replacing the existing file with your own site files. Alternatively, you can serve one or more sites by using vhosts. Your LAMP stack contains a template that you can modify to create new vhost configuration files for each site that you need to host.
 
 ### How to configure vhosts
 
-**Note:** In Ubuntu&reg;, each vhost has its own separate configuration file, and is then _enabled_ in Apache.
+**Note:** In Ubuntu&reg;, each vhost has its own separate configuration file, and is then enabled in Apache.
 
 Use the following instructions to configure your vhosts:
 
-Find and replace the default site name, example.com, in the **default.template** file by using the `sed` stream editor. Then copy the new version to a new file.
-
-Note: Replace “yoursitename.com” in the instructions below with your actual site or domain name. We recommend that you use the top level domain - i.e. .com - as many customers host .com, .net, etc on one server.
+**Note:** Replace _yoursitename.com_ in the instructions below with your actual site or domain name. We recommend that you use the top-level domain such as .com, .net, and so on on one server.
 
 1. Navigate to move the **sites-available** folder by using the following command:
 
@@ -45,26 +43,26 @@ Note: Replace “yoursitename.com” in the instructions below with your actual 
 
         `$ sed -e 's/example.com/yoursitename.com/' default.template > yoursitename.com.conf`
 
-    3. You verify that the file was written with the proper project name using the following command:
+    3. Verify that the file was written with the proper project name by using the following command:
 
         `$ cat yoursitename.com.conf`
 
-3. Add the project to the list of available sites in the apache configuration file by using the following command:
+3. Add the project to the list of available sites in the Apache configuration file by using the following command:
 
     `$ a2ensite yoursitename.com.conf`
 
-4. You create the directory for your site.
+4. Create the directory for your site.
 
     `$ mkdir -p /var/www/vhosts/yoursitename.com`
 
-    **Note:** The vhost you made previously is configured to look in this directory.
+    **Note:** The vhost that you made previously is configured to look in this directory.
 
 5. Repeat steps 1 - 4 to add additional vhosts.
 
 
 ### Test your vhost configuration
 
-1. In this step you should see see a response of `Syntax OK`. Test the configuration by using the following command:
+1. In this step you should see a response of `Syntax OK`. Test the configuration by using the following command:
 
     `$ apache2ctl configtest`
 
@@ -74,7 +72,7 @@ Note: Replace “yoursitename.com” in the instructions below with your actual 
 
 ### Vhost configuration example
 
-In this example you are creating sites for three customers, one of which is a completely different mobile site.
+In this example, you create sites for three customers, one of which is a completely different mobile site.
 
 You configure the vhosts for all three customers by using the following command sequence:
 
@@ -96,6 +94,6 @@ You configure the vhosts for all three customers by using the following command 
             ├── site2.com
             ├── site3.com
 
-Each directory underneath the vhosts directory is a _document root_ for the listed site. As HTTP requests come into the server, Apache determines which domain the request is for, then routes the request to the appropriate document root, as specified in the vhosts configuration file.
+Each directory below the vhosts directory is a _document root_ for the listed site. A document root is a directory that is stored on your host's servers and that is designated for holding web pages. As HTTP requests come into the server, Apache determines which domain the request is for, then routes the request to the appropriate document root, as specified in the vhosts configuration file.
 
 
