@@ -1,11 +1,11 @@
 ---
 permalink: resize-up-compute-and-memory-servers/
-audit_date: '2018-08-30'
+audit_date: '2019-02-05'
 title: Resize up compute and memory servers
 type: article
 created_date: '2018-08-30'
 created_by: Rackspace Support
-last_modified_date: '2018-12-06'
+last_modified_date: '2019-02-05'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -88,6 +88,26 @@ Use the following steps to resize up your server by using Pitchfork:
 
 3. In the **Region** drop-down menu, select the region for the cloud server
    that you want to resize.
+
+4. Scroll down to the **List Flavors** function and click **Details**. Enter
+   "limit=100" for the filter parameter, and then click **Send API Call**.
+
+   <img src="{% asset_path cloud-servers/resize-up-compute-and-memory-servers/pitchfork-list-flavors.png %}" />
+
+5. Find the server that you want to resize and take note of the server
+   UUID and flavor_id. You need it for the **Resize Server** API call.
+
+6. Scroll down to the **Resize Server** function and click **Details.** Enter
+   the **server_id** (UUID) and **flavor_id** that you gathered in the previous
+   step, and then click **Send API Call**.
+
+   <img src="{% asset_path cloud-servers/resize-up-compute-and-memory-servers/pitchfork-resize-server.png %}" />
+
+The server status in the Cloud Control Panel should change to **Resizing**.
+After the operation is complete, you must verify the server resize by
+navigating to the **Server Details** page for the server that you resized.
+
+<img src="{% asset_path cloud-servers/resize-up-compute-and-memory-servers/pitchfork-verify-resize.png %}" />
 
 
 ### Additional resources
