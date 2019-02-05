@@ -26,8 +26,7 @@ The Managed Infrastructure service level gives you 24x7x365 access to our Cloud
 Engineers. You can communicate with these experts by chat, phone, or by
 creating a ticket. These engineers can provide guidance, but they do not have
 access to log in to your servers directly. If you experience an issue with
-your server or web site, they can help you rule out the underlying hardware as
-the cause.
+your server or web site, they can help you.
 
 #### Architecture advice
 
@@ -65,7 +64,7 @@ Managed Infrastructure does, and also provides additional services.
 
 Similar to the Managed Infrastructure service level, you have access to our
 Cloud Engineers. However, at the Managed SysOps level, they are able to access
-your servers. If you experience an issue with your server or web site they are
+your servers. If you experience an issue with your server or website, they are
 able to log in to the machine and help pinpoint the cause. If the cause is
 code-related, your developer will know where to go to resolve it.
 
@@ -82,10 +81,10 @@ can provide guidance about how to configure your environment.
 This service level offers code development assistance. If your code leverages
 our API interfaces, we help you ensure that it is accessing them correctly.
 Similar to the Managed Infrastructure service level, we cannot adjust your
-code. However, we can log into the server, review what you are doing, and test
+code. However, we can log in to the server, review what you are doing, and test
 accessing the interfaces from your server to ensure that there aren't any
-issues with access. These checks help determine whether an issue is code-
-related. If so, your developer will know how to address the issue.
+issues with access. These checks help determine whether an issue is
+code-related. If so, your developer will know how to address the issue.
 
 #### Backups
 
@@ -118,8 +117,8 @@ For Windows this includes (but is not limited to) the following technologies:
 We can configure the servers to serve website content and assist with
 troubleshooting if the site experiences issues.
 
-We can also configure monitor alerts that are configured for your needs, and
-respond to any alarm conditions 24x7x365. If an alarm triggers at 2 am on a
+We can also configure monitoring alerts for your needs, and
+respond to any alarm conditions 24x7x365. If an alarm triggers at 2 AM on a
 Saturday morning, our Cloud Engineers will find a resolution.
 
 Your Account Manager is your first point of contact for any account-related
@@ -133,7 +132,7 @@ additional features.
 
 #### Configuration management
 
-For example, we provide configuration management services at this level.
+We provide configuration management services at this level.
 Configuration management enables you to scale horizontally, without a manual
 setup. We can take your existing infrastructure (development, staging, and
 production) and automate it by using Chef&trade; or Microsoft&reg; Desired
