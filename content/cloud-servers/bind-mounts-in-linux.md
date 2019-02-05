@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Bind mounts in Linux&reg; enable you to mount an already mounted filesystem to another location within the filesystem. Generally, bind mounts are used to restrict the access of specified users to designated parts of a website. 
+Bind mounts in Linux&reg; enable you to mount an already mounted filesystem to another location within the filesystem. Generally, bind mounts are used when restricting the access of specified users to designated parts of a website by replicating the website's directory into a jailed user's home directory.
 
 #### Configure a bind mount
 
