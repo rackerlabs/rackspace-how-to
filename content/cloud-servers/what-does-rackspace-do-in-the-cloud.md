@@ -16,7 +16,7 @@ levels](https://www.rackspace.com/openstack/public/service-levels) on our
 website. But what do these service levels really mean for you? This article
 briefly describes each service level in more detail.
 
-### Managed Infrastructure
+### Managed Infrastructure service level
 
 This section describes the Managed Infrastructure service level.
 
@@ -56,7 +56,7 @@ leverages our API interfaces, we can help you ensure that it is accessing them
 correctly. We cannot adjust your code, but we can help you troubleshoot any
 API errors that you might encounter.
 
-### Managed SysOps
+### Managed SysOps service level
 
 The Managed SysOps service level includes the basic pillars of support that
 Managed Infrastructure does, and also provides additional services.
