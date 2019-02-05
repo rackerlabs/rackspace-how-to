@@ -1,16 +1,16 @@
 ---
 permalink: bind-mounts-in-linux/
-audit_date: '2019-02-04'
+audit_date: '2019-02-05'
 title: Bind mounts in Linux
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: '2019-02-04'
+last_modified_date: '2019-02-05'
 last_modified_by: William Loy
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Bind mounts in Linux&reg; enable you to mount an already mounted filesystem to another location within the filesystem. Generally, bind mounts are used when restricting the access of specified users to designated parts of a website by replicating the website's directory into a jailed user's home directory.
+Bind mounts in Linux&reg; enable you to mount an already-mounted filesystem to another location within the filesystem. Generally, bind mounts are used when restricting the access of specified users to designated parts of a website by replicating the website's directory into a jailed user's home directory.
 
 #### Configure a bind mount
 
