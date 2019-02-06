@@ -13,7 +13,7 @@ product_url: cloud-servers
 This article provides instructions on creating Security Groups, applying inbound and outbound rules and deleting rules through the Rackspace Control Panel.
 
 ### Create a Security Group
-1. Log into https://mycloud.rackspace.com
+1. Log into [my.rackspace.com](https://mycloud.rackspace.com)
 
 2.  Navigate to **Networking** and click **Security Groups**.
 
@@ -41,7 +41,7 @@ Outbound rules must be created by using the Application Programming Interface (A
 
 `desiredProtocol` - Replace this with the protocol want to use.
 
-`yourSGID` - **Security Group UUID**. The **Security Group UUID** is located on the Security Group Details Page next to **Group ID**.
+`yourSGID` - **Security Group UUID**. The **Security Group UUID** is located on the Security Group Details page next to **Group ID**.
 
 Create an outbound security rule by using the following `curl` command example:
 
