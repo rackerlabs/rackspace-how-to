@@ -123,19 +123,22 @@ server boots up when the download to the server is complete.
 
 #### Nova-agent
 
-Nova-agent is an important Rackspace boot-time service that should be running
+The nova-agent communicates between the server and the host. Nova-agent is an 
+important Rackspace boot-time service that should be running
 on all cloud servers that are imaged.
 
 **Important**: It is critically important that this service is running at boot
 time before you take a cloud server image that you intend to use later. This
 step is necessary because nova-agent is used to alter the networking
-configuration of newly built cloud servers that are built in different network
+configuration of new cloud servers that are built in different network
 subnets.
 
-**Warning**: If nova-agent isn't running, it isn't able to set the new IP on
-boot, and doesn't get its networking interface. When you use cloud server
-images as a backup, it is important that you ensure that nova-agent is set to
-start at boot time test the cloud server image before you rely on it.
+**Warning**: If the nova-agent isn't running, it cannot set the new 
+Internet Protocol (IP) address on start, and the server doesn't get 
+its networking interface. When you use cloud server 
+images as a backup, it is important to ensure that nova-agent is set 
+to start at boot time and test the cloud server image 
+before you rely on it. 
 
 For more information about using Cloud Images, see the [Cloud Images API
 developer
