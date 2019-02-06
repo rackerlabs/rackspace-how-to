@@ -23,7 +23,7 @@ on a backup solution.
 
 #### Functionality
 
-Ensure that you answer the following questions regarding functionality:
+Ensure that you answer the following question regarding functionality:
 
 - What can you do with your backup application functionally?
 
