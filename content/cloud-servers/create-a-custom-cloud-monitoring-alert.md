@@ -59,18 +59,18 @@ Use the following steps to create a custom monitoring alert:
 3. Ensure that the plug-in is executable and can run from the command line by
    running the following command:
 
-      chmod +x <filename>
+       chmod +x <filename>
 
 4. To create the check within Cloud Monitoring, modify and run the following
    cURL command:
 
-      curl -i -X POST \
-      -H 'X-Auth-Token: [AUTH_TOKEN]' \
-      -H 'Content-Type: application/json; charset=UTF-8' \
-      -H 'Accept: application/json' \
-      --data-binary \
-      '{"label": "[CHECK_NAME]", "type": "agent.plugin", "details": {"file": "[FILENAME]","args": ["arg1","arg2"]}}' \
-      'https://monitoring.api.rackspacecloud.com/v1.0/[ACCOUNT_ID]/entities/[ENTITY_ID]/checks'
+       curl -i -X POST \
+       -H 'X-Auth-Token: [AUTH_TOKEN]' \
+       -H 'Content-Type: application/json; charset=UTF-8' \
+       -H 'Accept: application/json' \
+       --data-binary \
+       '{"label": "[CHECK_NAME]", "type": "agent.plugin", "details": {"file": "[FILENAME]","args": ["arg1","arg2"]}}' \
+       'https://monitoring.api.rackspacecloud.com/v1.0/[ACCOUNT_ID]/entities/[ENTITY_ID]/checks'
 
    **Note**: To learn how to obtain your authentication token, see the
    [Getting Started](https://developer.rackspace.com/docs/cloud-servers/v2/getting-started/) section of the developer documentation.
@@ -97,16 +97,16 @@ on the server on which the plug-in resides. If there is more than 100 MB,
 the check receives an `OK` response and no alert triggers.
 
 To learn more about alarm language, see [Alarm language in Rackspace
-Monitoring](how-to/alarm-language-in-rackspace-monitoring/).
+Monitoring](/how-to/alarm-language-in-rackspace-monitoring/).
 
-After you have created your alarm language, you need to add it to the check
+After you have created your alarm language, you need to add the alarm to the entity
 by using one of the following methods:
 
 - The [Cloud Control Panel](/how-to/working-with-alarms/)
 - The [raxmon command-line
   tool](https://developer.rackspace.com/blog/using-raxmon-to-configure-rackspace-cloud-monitoring/) for interacting with the Rackspace Cloud
   Monitoring application programming interface (API)
-- A cURL command
+- A [cURL command](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#create-an-alarm)
 
 ### Use an Ansible playbook to install plug-ins
 
