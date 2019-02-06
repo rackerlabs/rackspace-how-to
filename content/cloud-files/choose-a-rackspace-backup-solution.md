@@ -2,9 +2,9 @@
 permalink: choose-a-rackspace-backup-solution/
 audit_date: '2019-01-22'
 title: Choose a Rackspace backup solution
-created_date: '2019-01-30'
+created_date: '2019-02-06'
 created_by: Rackspace Community
-last_modified_date: '2019-01-30'
+last_modified_date: '2019-02-06'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
