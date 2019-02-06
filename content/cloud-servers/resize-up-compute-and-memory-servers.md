@@ -1,11 +1,11 @@
 ---
 permalink: resize-up-compute-and-memory-servers/
-audit_date: '2019-02-05'
+audit_date: '2019-02-06'
 title: Resize up compute and memory servers
 type: article
 created_date: '2018-08-30'
 created_by: Rackspace Support
-last_modified_date: '2019-02-05'
+last_modified_date: '2019-02-06'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -17,8 +17,7 @@ This article shows you how to use the Cloud Control Panel to resize up a
 compute or memory server. Resizing a server changes the RAM and disk space
 allocation.
 
-**Note:** Compute and memory servers can only be resized up. They can’t be
-resized down.
+**Note:** You can only resize up compute and memory servers. You can't resize them down.
 
 ### Cloud Control Panel
 
@@ -53,9 +52,9 @@ Control Panel:
    you have to revert to the original size and cancel any changes to your
    server.
 
-   For a Linux server, you can Secure Shell (SSH) to either the public or
+   For a Linux&reg; server, you can Secure Shell (SSH) to either the public or
    private Internet Protocol (IP) address and run the commands `df -h` (hard
-   disk usage) and `free -m` (available RAM memory) to verify the changes.
+   disk usage) and `free -m` (available RAM) to verify the changes.
 
    For a Windows&reg; server, additional steps are required to use additional
    space after resizing up. For more information, see [Adding Disk Space After
@@ -73,12 +72,12 @@ Control Panel:
 
    **Note**: Resizes are automatically confirmed after 24 hours. Therefore,
    you cannot revert a server after you have manually confirmed the resize or
-   after 24 hours have passed.
+   until 24 hours have passed.
 
 ### Pitchfork
 
-You can also use Pitchfork, interactive web API application that allows a user
-to interact quickly with Rackspace Cloud products, to resize up your server.
+You can also use Pitchfork, an interactive web API application that enables you
+to interact quickly with Rackspace Cloud products to resize up your server.
 Use the following steps to resize up your server by using Pitchfork:
 
 1. Navigate to [Pitchfork](https://pitchfork.rax.io/) and log in by using
@@ -89,16 +88,16 @@ Use the following steps to resize up your server by using Pitchfork:
 3. In the **Region** drop-down menu, select the region for the cloud server
    that you want to resize.
 
-4. Scroll down to the **List Flavors** function and click **Details**. Enter
-   "limit=100" for the filter parameter, and then click **Send API Call**.
+4. Scroll down to **List Flavors** and click **Details**. Enter
+   **limit=100** for the **Filter** parameter, and then click **Send API Call**.
 
    <img src="{% asset_path cloud-servers/resize-up-compute-and-memory-servers/pitchfork-list-flavors.png %}" />
 
 5. Find the server that you want to resize and take note of the server
-   UUID and flavor_id. You need it for the **Resize Server** API call.
+   **UUID** and **flavor_id**. You need these values for the **Resize Server** API call.
 
-6. Scroll down to the **Resize Server** function and click **Details.** Enter
-   the **server_id** (UUID) and **flavor_id** that you gathered in the previous
+6. Scroll down to **Resize Server** and click **Details.** Enter
+   the **server_id (UUID)** and **flavor_id** that you gathered in the previous
    step, and then click **Send API Call**.
 
    <img src="{% asset_path cloud-servers/resize-up-compute-and-memory-servers/pitchfork-resize-server.png %}" />
@@ -116,8 +115,8 @@ For more information, see the following resources:
 
 - [Cloud Servers API reference: Resize specified server](https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#resize-specified-server)
 - [Pitchfork - the Rackspace Cloud API web application](/how-to/pitchfork-the-rackspace-cloud-api-web-application)
-- [Reset your server password](/how-to/reset-your-server-password)
+- [Reset your server password](/how-to/reset-a-server-password)
 - [Basic Cloud Server security](/how-to/basic-cloud-server-security)
-- [Reboot your server](/how-to/reboot-your-server)
+- [Reboot your server](/how-to/reboot-a-server)
 - [Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server)
 - [Delete a server](/how-to/delete-a-server)
