@@ -10,11 +10,11 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-In most cases, Rackspace Cloud Backup or Rackspace Cloud Images is the best
-fit for backing up your data. When you choose a backup solution, it is
+When you choose a backup solution, it is
 important to understand the functionality, flexibility, extensibility, cost,
 and life cycle of the backups that you are using. These factors can
-significantly influence your requirements.
+significantly influence your requirements. In most cases, Rackspace Cloud Backup
+or Rackspace Cloud Images is the best fit for backing up your data.
 
 ### Backup considerations
 
@@ -31,10 +31,10 @@ Ensure that you answer the following questions regarding functionality:
 
 Answer the following questions regarding extensibility:
 
-- To what extent will the application be functional, useful and practical?
+- To what extent will the application be functional, useful, and practical?
 
-- What limits exist, in terms of the size of the data, and the frequency of
-  backups?
+- What limits exist, in terms of the size of the data, and what is
+  the frequency of backups?
 
 #### Cost
 
@@ -48,8 +48,10 @@ Know the following information about cost:
 
 Ask the following questions about the life cycles of backups:
 
-- How long will the backup exist? How permanent does the backup need to be?
-  Will the application that you use still exist in three, five, or 10 years?
+- How long will the backup exist?
+  
+- How permanent does the backup need to be? Will the application 
+  that you use still exist in three, five, or 10 years?
 
 - What measures are in place to ensure accessibility if the level of support
   changes?
@@ -71,9 +73,10 @@ To perform this action, use Cloud Images.
 
 Cloud Backup offers the following benefits and functionality:
 
-1. Fully manageable through the Cloud Control Panel and an API.
+1. Fully manageable through the Cloud Control Panel and an 
+   application programming interface (API).
 
-2. De-duplicates files, reducing costs and disk usage.
+2. Deduplicates files, reducing costs and disk usage.
 
 3. Offers Cyclic Redundancy Checking (CRC) of files, which verifies
    consistency and checks for corruption after archiving.
@@ -91,9 +94,9 @@ Cloud Backup offers the following benefits and functionality:
 
 Rackspace Cloud Backup uses a cloud server backup agent called _driveclient_.
 The driveclient agent runs on your cloud server and connects through an
-application programming interface (API) to retrieve schedules from a central
+API to retrieve schedules from a central
 API endpoint location. It also connects to Cloud Files to store backup
-data. The agent enables you to restore the files to any Rackspace cloud server
+data. The agent enables you to restore the files from any Rackspace cloud server
 or Rackspace dedicated server to any other cloud server or dedicated server
 that also runs the agent.
 
@@ -148,7 +151,7 @@ guide](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/).
 
 Rackspace Cloud Files is a hard disk on the cloud to which you can read and
 write by using your username and API key credentials. It is not as fast as
-Rackspace Cloud Block Storage, but it is much much bigger.
+Rackspace Cloud Block Storage, but it is much bigger.
 
 Rackspace Cloud Files is very similar to the Amazon&reg; Simple Storage
 Service&reg; (S3&reg;) product. It is a very large disk, and you can store a
@@ -161,8 +164,8 @@ Cloud Files has the following characteristics:
    consistent copies of the same file.
 
 2. Because each cloud file is copied two times, the file exists on three
-   different _just a bunch of disks_ (JBODS). Each JBOD is independently
-   RAID-backed.
+   different _just a bunch of disks_ (JBODs). Each JBOD is independently
+   backed by a Redundant Array of Independent Disks (RAID).
 
 3. Each customer can have up to 500,000 containers per account in Cloud Files.
 
@@ -209,8 +212,8 @@ files in **/var/www/mysite.co.uk** to Cloud Files:
 
 #### How Cloud Files works
 
-Rackspace Cloud Files is an API-driven service. It is possible to connect a
-whole manner of different frameworks and software, such as Bash, Python, PHP,
+Rackspace Cloud Files is an API-driven service. It is possible to connect 
+different frameworks and software, such as Bash, Python, PHP,
 and Node.js.
 
 For more information about using Cloud Files, see the [Cloud Files API
@@ -219,27 +222,26 @@ guide](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/).
 
 ### Cloud Block Storage
 
-Rackspace Cloud Block Storage (CBS) is not intended as a cloud backup utility.
-However, CBS disk store might be superior for some use cases.
+Rackspace Cloud Block Storage is not intended as a cloud backup utility.
+However, a Cloud Block Storage disk store might be superior for some use cases.
 
 For example, if you have a large number of small files for which you don't
 have space locally on your cloud server and you previously used Cloud Files to
-store and retrieve them, using CBS instead significantly speeds up the
+store and retrieve them, using Cloud Block Storage instead significantly speeds up the
 processing workflow.
 
-#### How CBS works
+#### How Cloud Block Storage works
 
-By using CBS with your cloud server, you add an additional network-attached
+By using Cloud Block Storage with your cloud server, you add an additional network-attached
 storage (NAS) device that your cloud server accesses through an Internet Small
 Computer Systems Interface (ISCSI) connection between the cloud server
-hypervisor and a Redundant Array of Independent Disks (RAID) 10-backed CBS
-node.
+hypervisor and a RAID 10-backed Cloud Block Storage node.
 
-The maximum performance of CBS can be much higher than all of the other
+The maximum performance of Cloud Block Storage can be much higher than all of the other
 solutions. However, there are limitations regarding portability and
-redundancy, which is why CBS is not considered for most backup use cases where
+redundancy, which is why Cloud Block Storage is not considered for most backup use cases where
 consistency, redundancy, and failsafe are required. The greatest advantage of
-using CBS is its very fast speed and suitability for many small, temporary
+using Cloud Block Storage is its very fast speed and suitability for many small, temporary
 files.
 
 For more information, see the [Cloud Block Storage API developer
