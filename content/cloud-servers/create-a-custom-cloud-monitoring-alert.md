@@ -10,8 +10,8 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
-The Rackspace Cloud Control Panel enables you to create the following
-monitoring checks:
+The Rackspace Cloud Control Panel enables you to create the
+following monitoring checks:
 
 - Hyper Text Transfer Protocol (HTTP) Check (Website)
 - Transmission Control Protocol (TCP) Check (Port)
