@@ -121,3 +121,4 @@ Use the following `curl` command example to delete a Security Group rule through
 4. Click **Select Security Groups**.
 
 5. Uncheck the check box next to the Security Group and click **Save Selected Security Group**.
+
