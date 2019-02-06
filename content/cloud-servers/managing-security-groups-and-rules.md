@@ -1,80 +1,123 @@
 ---
-permalink: managing-security-groups-and-rules
-audit_date:
+permalink: managing-security-groups-and-rules/
+audit_date: '2019-02-06'
 title: Managing Security Groups and Rules
 created_date: '2019-01-23'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-02-06'
+last_modified_by: William Loy
 product: Cloud Servers
 product_url: cloud-servers
---- 
+---
 
-This document will go over the basics for creating Security Groups, applying Inbound and Outbound rules and rule deletion.
+This article provides instructions on creating Security Groups, applying inbound and outbound rules and deleting rules through the Rackspace Control Panel.
 
-Note - Adding Outbound Security Group Rules are only available via the API currently, so you can use the curl commands covered below to manage their creation.
+### Create a Security Group
+1. Log into https://mycloud.rackspace.com
 
-### Create a Security Group and Inbound Rule
-- Log into https://mycloud.rackspace.com
-- Navigate to "Networking" and select "Security Groups.
-- Select "Create Security Group" and set a name, region, and option description if needed.
-- Select the "Create Security Group" option in the Step 1 of 2: Create Security Group box.
-The next step is for adding an inbound rule. This is optional so you can choose to add rules later if you want.
-- Here you will want to set the IP version, protocol and source ip or ip range for the rule you want to add.
-- Select the "Add Rule" option inside the Step 2 of 2: Add Inbound Rule box.
+2.  Navigate to **Networking** and click **Security Groups**.
+
+3.  Click **Create Security Group**. You are prompted with a box labeled as **Step 1 of 2: Create Security Group** asking you to set a name, region, and an optional description. After completing this step click the **Create Security Group** button within the prompt.
+
+4.  Click the **Create Security Group** button within the box labeled as **Step 1 of 2: Create Security Group**. You are prompted with a box labeled as **Step 2 of 2: Add Inbound Rule**.
+
+    **Note:** Creating an inbound Security Group rule is optional and can be skipped by clicking **No thanks. I'll add rules later**.
+
+5. Set the Internet Protocol (IP) version, protocol and source IP or IP range for the rule being added.
+
+6. Select the **Add Rule** option inside the box labeled as **Step 2 of 2: Add Inbound Rule**.
 
 ### Create Outbound Security Group Rule
-You will need to use the api to create the outbound rule. You can use the curl command below but be sure to substitute the variables referenced below with the appropriate values for your account.
-- region will be the region you are working in.
-- yourAuthToken will be the authentication token for your user account ( more on that here https://developer.rackspace.com/docs/cloud-networks/v2/getting-started/send-request-ovw/#how-curl-commands-work  ).
-- portNumber will be the port number you want to add to the rule (ie 22, 80, 443).
-- IPv4 or IPv6 will be which ever ip version you want to use.
-- desiredProtocol will be the protocol you want to use (ie tcp, icmp, all).
-- yourSGID will be the Security Group UUID which you can get from the Security Group Details Page next to "Group ID".
-- securityGroupRuleID will be used later to explain how to delete a rule with curl
-Create Outbound SG Rule curl command
 
-curl -XPOST https://<region>.networks.api.rackspacecloud.com/v2.0/security-group-rules \
+Outbound rules must be created by using the Application Programming Interface (API). Use the Client URL (`curl`) command example in this section to create an outbound Security Group rule. Substitute the variables in the `curl` example by using the appropriate values for your account referenced in the following:
 
-    -H "Content-type: application/json" \
+`region` - Use the region for the Security Group.
 
-    -H "X-Auth-Token: <yourAuthToken>" \
+`yourAuthToken` - Use the authentication token for your user account. See [How curl commands work](https://developer.rackspace.com/docs/cloud-networks/v2/getting-started/send-request-ovw/#how-curl-commands-work) for information on authentication using `curl` commands.
 
-    -H "User-Agent: python-novaclient" \
+`portNumber or null` - Replace this with the port number you want to add to the rule (ie 22, 80, 443).
 
-    -H "Accept: application/json" \
+`IPv4 or IPv6` - Specify IPv4 or IPv6.
 
-    -d '{"security_group_rule":{"direction":"egress","port_range_min":"<portNumber or null>","ethertype":"<IPv4 or IPv6>","port_range_max":"<portNumber or null>","protocol":"<desiredProtocol>","security_group_id":"<yourSGID>"}}' \
+`desiredProtocol` - Replace this with the protocol want to use.
 
-    | python -m json.tool
-- When you run this you will get output that provides an outline of the rule you have just added in a json block. Take note of the "id" field in the output as this will be the value you use for securityGroupRuleID to delete the rule when using the curl method outlined below.
+`yourSGID` - **Security Group UUID**. The **Security Group UUID** is located on the Security Group Details Page next to **Group ID**.
 
-### Apply Security Group to Cloud Server
-- Navigate to Servers > Select the server you want to apply the rules to.
-- On the Server Details page locate the "Networks and Security Groups" section.
-- Select the gear icon next to the network interface you want to apply the SG to. (Note - Can only be applied to PublicNet and ServiceNet)
-- Click "Select Security Groups..".
-- Select the check box next to the Security Group and click "Save Selected Security Group(s)".
+Create an outbound security rule by using the following `curl` command example:
 
-### Delete Security Group Rules
-This can be accomplished by navigating back to "Networking" > "Security Groups" or using curl commands. Once there, you can follow the steps below.
-- Select the Security Group you want to remove the rule from.
-- On the Security Group Details page under "Rules" you can select the check box and click the delete option.
-CURL Method
+        curl -XPOST https://<region>.networks.api.rackspacecloud.com/v2.0/security-group-rules \
 
-curl -XDELETE https://<region>.networks.api.rackspacecloud.com/v2.0/security-group-rules/<securityGroupRuleID> \
+            -H "Content-type: application/json" \
 
-    -H "Content-type: application/json" \
+            -H "X-Auth-Token: <yourAuthToken>" \
 
-    -H "X-Auth-Token: <yourAuthToken>" \
+            -H "User-Agent: python-novaclient" \
 
-    -H "Accept: application/json" \
+            -H "Accept: application/json" \
 
-    | python -m json.tool
+            -d '{"security_group_rule":{"direction":"egress","port_range_min":"<portNumber or null>","ethertype":"<IPv4 or IPv6>","port_range_max":"<portNumber or null>","protocol":"<desiredProtocol>","security_group_id":"<yourSGID>"}}' \
 
-### Remove Security Group from Server
-- Navigate to Servers > select the cloud server you want to remove the Security Group from.
-- Locate the "Networks and Security Groups" section.
-- Select the gear icon next to the network interface you want to remove the SG from.
-- Click "Select Security Groups..".
-- Uncheck the check box next to the Security Group and click "Save Selected Security Group(s)".
+            | python -m json.tool
+
+
+This command outputs the rule you have just added in a JavaScript&reg; Object Notation (JSON) block.
+
+**Note:** The `id` field in the JSON output is the value you use for the `securityGroupRuleID` field to delete the rule using the `curl` method.
+
+### Apply a Security Group to Cloud Server
+
+Use the following instructions to apply a Security Group rule to a Cloud Server:
+
+1. Navigate to **Servers** and select the server you want to apply the Security Group rules to.
+
+2. Navigate to the **Networks and Security Groups** section on the **Server Details** page .
+
+3. Click the gear icon next to the network interface you want to apply the Security Group rule to.
+
+    **Note:** Security Group rules can only be applied to **PublicNet** and **ServiceNet**.
+
+4. Click **Select Security Groups**.
+
+5. Select the check box or the corresponding Security Group and click **Save Selected Security Group**.
+
+
+
+### Delete a Security Group Rule through the Control Panel
+
+Use the following instructions to delete a Security Group rule through the Control Panel:
+
+1. Select the **Networking** tab in the Control Panel and select **Security Groups**.
+
+2. Select the Security Group you want to remove the rule from.
+
+3. On the Security Group Details page under rules you can select the check box and click the delete option.
+
+### Delete a Security Group Rule through the API
+
+`securityGroupRuleID` - The `id` field in the JSON output from creating the rule originally is the value you use for the `securityGroupRuleID`.
+
+`yourAuthToken` - Use the authentication token for your user account. See [How curl commands work](https://developer.rackspace.com/docs/cloud-networks/v2/getting-started/send-request-ovw/#how-curl-commands-work) for information on authentication using `curl` commands.
+
+Use the following `curl` command example to delete a Security Group rule through the API:
+
+        curl -XDELETE https://<region>.networks.api.rackspacecloud.com/v2.0/security-group-rules/<securityGroupRuleID> \
+
+            -H "Content-type: application/json" \
+
+            -H "X-Auth-Token: <yourAuthToken>" \
+
+            -H "Accept: application/json" \
+
+            | python -m json.tool
+
+### Remove a Security Group from a server
+
+1. Navigate to **Servers** in the Control Panel and select the cloud server you want to remove the Security Group from.
+
+2. Navigate to the **Networks and Security Groups** section.
+
+3. Click the gear icon next to the network interface you want to remove the Security Group from.
+
+4. Click **Select Security Groups**.
+
+5. Uncheck the check box next to the Security Group and click **Save Selected Security Group**.
