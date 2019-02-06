@@ -115,8 +115,8 @@ For more information, see the following resources:
 
 - [Cloud Servers API reference: Resize specified server](https://developer.rackspace.com/docs/cloud-servers/v2/api-reference/svr-basic-operations/#resize-specified-server)
 - [Pitchfork - the Rackspace Cloud API web application](/how-to/pitchfork-the-rackspace-cloud-api-web-application)
-- [Reset your server password](/how-to/reset-a-server-password)
+- [Reset a server password](/how-to/reset-a-server-password)
 - [Basic Cloud Server security](/how-to/basic-cloud-server-security)
-- [Reboot your server](/how-to/reboot-a-server)
+- [Reboot a server](/how-to/reboot-a-server)
 - [Rebuild a Cloud Server](/how-to/rebuild-a-cloud-server)
 - [Delete a server](/how-to/delete-a-server)
