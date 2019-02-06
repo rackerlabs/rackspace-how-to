@@ -44,7 +44,7 @@ trigger alarms.
 
 You can see sample scripts that Rackers have written in our publicly available
 [GitHub
-repository](https://github.com/racker/rackspace-monitoring-agent-plugins-contrib)
+repository](https://github.com/racker/rackspace-monitoring-agent-plugins-contrib).
 
 Use the following steps to create a custom monitoring alert:
 
