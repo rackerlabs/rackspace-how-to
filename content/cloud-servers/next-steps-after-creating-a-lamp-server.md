@@ -12,10 +12,10 @@ product_url: cloud-servers
 You can use [Cloud
 Orchestration](/how-to/quick-set-up-with-rackspace-cloud-orchestration/) to
 set up a Linux&reg; Apache&reg; MySQL&reg; PHP&reg; (LAMP) server. The
-resulting server has a baseline setup, but you can use it to host many PHP-
-based websites. The LAMP Cloud Orchestration template is built to host
-multiple simple sites, but we strongly recommend that you use a multiple-
-server setup as you grow to a larger scale.
+resulting server has a baseline setup, but you can use it to host many 
+PHP-based websites. The LAMP Cloud Orchestration template is built to host
+multiple simple sites, but we strongly recommend that you use a 
+multiple-server setup as you grow to a larger scale.
 
 With other Cloud Orchestration templates, most of the configuration is already
 complete, and you only need to import your content. This tutorial uses
@@ -31,7 +31,7 @@ this tutorial.
 When you create a server by using a Cloud Orchestration template, you receive
 a set of credentials. For a LAMP server, you receive three credentials: a
 Secure Shell (SSH) key, a phpMyAdmin password, and a MySQL root password. (You
-should have already set your phpMyAdmin user name during the setup process.)
+should have already set your phpMyAdmin username during the setup process.)
 
 You first need to log in to your server by using your SSH key. Using an SSH
 key is much more secure than a using password.
@@ -67,9 +67,9 @@ The following output displays:
 
 ### Basic cloud server security
 
-Rackspace makes your default Cloud Server image as secure as possible, but the
+Rackspace makes your default cloud server image as secure as possible, but the
 first line of defense lies in your hands. At a minimum, we recommend that you
-secure your sever by performing the following steps:
+secure your server by performing the following steps:
 
 1. Create an administrative user so that you do not have to perform actions
    as the root user.
