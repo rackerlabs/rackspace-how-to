@@ -20,8 +20,8 @@ This is the only time that you need the registration code,
 unless you forget your user name.
 
 The Primary contact on the account is the only person who can change this
-code. When they add a new user, that new user receives a registration code.
-The Primary must give the individual their code.
+code. When the Primary contact adds a new user, the new user receives a 
+registration code. The Primary contact must give the new user their code.
 
 If you are the Primary contact on the account and you forget the code and need
 to reset your login, contact your Account Manager or Rackspace Support.
