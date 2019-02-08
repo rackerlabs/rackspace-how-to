@@ -45,7 +45,7 @@ Following are examples of active voice:
 - Create a server.                                              
 - Rackspace products and services solve your business problems.
 
-For more information about voice, see the [Use active voice](https://developer.rackspace.com/docs/style-guide/writing/use-active-voice/#use-active-voice) section in the complete style guide.
+For more information about voice, see the [Use active voice](#use-active-voice) section in the complete style guide.
 
 ### Use present tense
 
