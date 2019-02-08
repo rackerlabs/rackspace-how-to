@@ -15,9 +15,9 @@ account, much like two-factor authentication. If an account administrator
 adds you as a new user, an account registration code is generated for 
 your new user account and you receive an email notification that 
 walks you through how to log in to the 
-[Cloud Control Panel](https://login.rackspace.com) for the first time. 
-This is the only time that you need the registration code, 
-unless you forget your user name.
+[Cloud Control Panel](https://login.rackspace.com) 
+for the first time. This is the only time that you need the 
+registration code, unless you forget your user name.
 
 The Primary contact on the account is the only person who can change this
 code. When the Primary contact adds a new user, the new user receives a 
