@@ -1,5 +1,5 @@
 ---
-permalink: reissue-rackspace-ssl-certificates
+permalink: reissue-rackspace-ssl-certificates/
 audit_date: '2019-02-08'
 title: Reissue Rackspace SSL certificates
 created_date: '2019-01-21'
