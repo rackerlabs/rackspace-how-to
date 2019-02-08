@@ -1,5 +1,5 @@
 ---
-permalink: sftp-chrooted-bind-mount-user/
+permalink: bind-mount-sftp-chrooted-user/
 audit_date:
 title: Bind Mount a SFTP Chrooted User
 created_date: '2019-01-18'
