@@ -1,74 +1,148 @@
 ---
-permalink: cdn-access-control-allow-origin
-audit_date:
-title: CDN Access-Control-Allow-Origin
-created_date: '2019-01-22'
+permalink: use-cdn-access-control-to-allow-your-origin/
+audit_date: '2019-01-22'
+title: Use CDN access control to allow your origin
+created_date: '2019-02-11'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-02-11'
+last_modified_by: Kate Dougherty
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-With Rackspace CDN, all you have to do is set the headers on the files on the Origin server.  These headers, and most custom headers are automatically passed from the Origin to the CDN without an issue.  There are a few exceptions to this, including the Expires header, which is used by the
-Setting CORS  headers (which Access-Control-Allow-Origin is part of this), you will need to address it on the Origin web server.  Here is some great documentation for the different web server software that can help.
-http://enable-cors.org/server.html
+An _origin_ is an address (IP or domain) from which a Content Delivery
+Network (CDN) pulls content. Because that content comes from a different
+domain, you need to _allow_ a CDN to pull your content from your origin for
+security reasons. This article shows you how to use CDN access control to
+allow [Rackspace CDN and Cloud Files
+CDN](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files/)
+to pull content from your origin.
 
-As for Cloud Files CDN, this is a little more in depth.  With Cloud Files CDN, you will do the modifications on the Cloud Files API (storage). 
+### Overview for Rackspace CDN
 
-1.)  Headers that need to be set on the Container level:
+With Rackspace CDN, all you need to do is set Cross-Origin Resource Sharing
+(CORS) headers on the origin web server that hosts your content. These headers
+are automatically passed from the origin to the CDN. To view instructions for
+different web server software packages, see [I want to add CORS support to my
+server](https://enable-cors.org/server.html).
 
-1a.) Set Access-Control-Allow-Origin on the 'default' object of the container.  This is used with 'Static Websites' functionality of Cloud Files CDN:
-Static WebSites in Cloud Files CDN:
-https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-static-websites-using-cdn-enabled-containers/index
-Set Access-Control-Allow-Origin on default object:
-X-Container-Meta-Access-Control-Allow-Origin: *
-https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#create-or-update-container-metadata
-An Example curl call of this would be:
-Set the header:
-curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "X-Container-Meta-Access-Control-Allow-Origin: *" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
-Get the headers to verify:
-curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
+For information about the Cloud Files CDN application programming interface
+(API), see the [CDN API
+Reference](https://developer.rackspace.com/docs/cloud-files/v1/cdn-api-reference/#cdn-api-reference).
 
-1b.) Expose the Object level headers:
-X-Container-Meta-Access-Control-Expose-Headers: Access-Control-Allow-Origin
-Get the current headers that are exposed:
-curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
-X-Container-Meta-Access-Control-Expose-Headers: etag location x-timestamp x-trans-id
-Note that etag, location, x-timestamp, and x-trans-id are already set.  These are used through the control panel and for troubleshooting.  If you have any questions about if you should keep the existing headers, you should keep them to be on the safe side.
+### Overview for Cloud Files CDN
 
-Set the header:
-curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "X-Container-Meta-Access-Control-Expose-Headers: etag location x-timestamp x-trans-id Access-Control-Allow-Origin" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
-Get the headers to verify:
-curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
+The process for Cloud Files CDN is more involved. With the Cloud Files
+CDN, you make the modifications by using the [Cloud Files Storage
+API](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/#storage-api-reference). This section shows you how to perform this task.
 
-2.) Set 'Access-Control-Allow-Origin' on each object you need this on.
-Now that we have set, you need to set 'Access-Control-Allow-Origin' on each of the objects you want it on.
-curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "Access-Control-Allow-Origin: *" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
-Verify:
-curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
+#### Set headers on containers
 
-3.)  From here, you have to purge, or do a Content Refresh on each of the objects and the Container level.  The container level might be the hardest, as it requires an API call.  If you need help with this, please contact support.
-https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#delete-cdn-enabled-object
-A Cloud Files CDN Purge deletes the content off of the CDN Edge Nodes, and takes between 7 and 10 minutes to fully complete per call.  This API call allows you to set a email to be notified when the purge completes. You just set the following header on the curl request.
-X-Purge-Email: user@domain.com
-Example:
-curl -si -X DELETE -H "X-Auth-Token:{AUTHTOKEN}" -H "X-Purge-Email: user@domain.com"  https://cdn5.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
-**NOTE the different domain name for the request.  Remember that we are using the Cloud Files CDN API to make the Purge request, and not the standard Cloud Files API (Storage).  Please review the ServiceCatalog on the Cloud Identity API call or the Cloud Files CDN Service End-points here:
-https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#service-access
+You need to set the headers in this section at the container level.
 
-INFORMATION:
+##### Access-Control-Allow-Origin
 
-A.) More about CORS headers supported on the Container level:
-https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-public-access-to-your-cloud-files-account/cors
+First, you need to set the `Access-Control-Allow-Origin` header on the
+`default` object of the container. This header is a list of origins that are
+allowed to make cross-origin requests. Ensure that you separate each origin by
+using spaces.
 
-B.) I use '-I' with curl to handle the HTTP HEAD requests.  Commonly referred to as '-X HEAD'.  '-X HEAD' does a HTTP GET request, and only returns the Headers, where '-I' only does the HTTP HEAD request.
+You use this header with the [Static
+Websites](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-static-websites-using-cdn-enabled-containers/index) functionality of
+Cloud Files CDN.
 
-C.) Above I use a few strings encompassed in "{}".  These are to indicate variables or your own custom strings.
-{AUTHTOKEN} :  This is a token generated by the Cloud Identity API.
-https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/#generate-an-authentication-token
-{CONTAINER}:  This is just a container you are using.  Please check your naming schemes, and make sure you URL Encode and watch out as it is Case Sensative:
-{Account UUID}:  As in https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/
-This is a Unique identifier for your particular Cloud Account.  Please review the ServiceCatalog returned when generating an Authentication Token from Cloud Identity to find yours.
+For detailed instructions, see the [Create or update container metadata](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/container-services-operations/#create-or-update-container-metadata) section of the Cloud Files Developer Guide.
 
-D.)  Cloud Files CDN allows for 25 purges per day (counter reset at Midnight UTC).  If you are updating all of your files at once, and need to do more than this, please contact support.  They can direct you to the team that can handle cleaning up the CDN Edge for you with a one time Purge All files in a Cloud Files container.
+The following code shows an example cURL call that sets the
+`X-Container-Meta-Access-Control-Allow-Origin` header on the default object:
+
+    curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "X-Container-Meta-Access-Control-Allow-Origin: *" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
+
+**Note**: The asterisk (`*`) indicates the default object.
+
+The preceding example uses the following placeholders:
+
+- `AUTHTOKEN`: The token that the Identity API generates when you
+  [make an authentication request](https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/#generate-an-authentication-token).
+
+- `Account UUID`: The unique identifier for your cloud account. You can find
+  this identifier in the service catalog that is returned when you generate
+  an authentication token.
+
+- `CONTAINER`: The name of the container that you are using. Check your naming
+  schemes, and ensure that you URL encode them. This parameter is case
+  sensitive.
+
+Next, use the following cURL command to retrieve the headers and verify that
+the `X-Container-Meta-Access-Control-Allow-Origin` header that you just added
+appears:
+
+    curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
+
+##### Expose the object-level headers
+
+Get the current headers that are exposed by running the following command:
+
+    curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
+    X-Container-Meta-Access-Control-Expose-Headers: etag location x-timestamp x-trans-id
+
+Note that the `etag`, `location`, `x-timestamp`, and `x-trans-id` headers are
+already set. These headers are used in the Cloud Control Panel and for
+troubleshooting. If you are unsure if you should keep the existing headers,
+keep them.
+
+Set the header by running the following command:
+
+    curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "X-Container-Meta-Access-Control-Expose-Headers: etag location x-timestamp x-trans-id Access-Control-Allow-Origin" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
+
+Next, use the following cURL command to retrieve the headers and verify that
+the new header exists:
+
+    curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
+
+#### Set the Access-Control-Allow-Origin header on each object
+
+Next, you need to set the `Access-Control-Allow-Origin` header on each of the
+objects to which you want it to apply. Run the following example command,
+replacing `image.png` with the object on which you want to set the header:
+
+    curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "Access-Control-Allow-Origin: *" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
+
+Verify that the new header exists by running the following command:
+
+    curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
+
+#### Purge objects
+
+Next, you need to purge (perform a content refresh on) each object. You must
+also perform this action at the container level.
+
+A Cloud Files CDN purge deletes the content from the CDN edge nodes, and takes
+between 7 and 10 minutes to complete. The following example
+shows how to use the `X-Purge-Email` header to include your email address:
+
+    X-Purge-Email: user@domain.com
+
+The following code shows an example purge request:
+
+    curl -si -X DELETE -H "X-Auth-Token:{AUTHTOKEN}" -H "X-Purge-Email: user@domain.com"  https://cdn5.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
+
+Note that the domain name is different in this request. This difference occurs
+because you are using the Cloud Files CDN API to make the purge request, and
+not the standard Cloud Files Storage API. To see a list of Cloud Files CDN
+endpoints, see [Service access endpoints](https://developer.rackspace.com/docs/cloud-files/v1/general-api-info/service-access/#service-access-endpoints).
+
+For more information about performing purges on CDN-enabled objects by using
+the Cloud Files CDN API, see the [Delete CDN-enabled
+object](https://developer.rackspace.com/docs/cloud-files/v1/cdn-api-reference/cdn-object-services-operations/#delete-cdn-enabled-object) section of the
+Cloud Files API Developer Guide.
+
+### Additional information
+
+We recommend that you use the `-I` flag with cURL to handle HTTP HEAD
+requests (`-X HEAD`). '-X HEAD' makes an HTTP GET request and only returns
+the headers, and `-I` only makes the HTTP HEAD request.
+
+Cloud Files CDN allows you to purge 25 objects per day (the counter resets at
+Midnight UTC). If you are updating all of your files at once and need to
+purge more than 25 objects, contact Rackspace Support.
