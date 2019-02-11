@@ -1,5 +1,5 @@
 ---
-permalink: reissue-rackspace-ssl-certificates/
+permalink: reissue-rackspace-ssl-certificates
 audit_date: '2019-02-08'
 title: Reissue Rackspace SSL certificates
 created_date: '2019-01-21'
@@ -18,6 +18,10 @@ product_url: general
 
 4. Select **Reissue** or **Revoke & Replace** on the right-hand side of the screen.
 
-    **NOTE:** Your SSL certificate will not be automatically revoked. The current SSL certificate will remain valid until the new certificate is placed on the intended device.
+    - Symantec&reg; certificates prompt with the option to **Revoke and Replace** the certificate. 
+
+        **NOTE:** Your SSL certificate will not be automatically revoked. The current SSL certificate will remain valid until         the new certificate is placed on the intended device.
+
+    - Thawte&reg; certificates prompt with the option to **Reissue** the certificate. 
 
 5. Click **Submit** to begin the reissue process. 
