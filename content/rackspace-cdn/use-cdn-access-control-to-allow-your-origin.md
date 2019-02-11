@@ -34,7 +34,8 @@ Reference](https://developer.rackspace.com/docs/cloud-files/v1/cdn-api-reference
 
 The process for Cloud Files CDN is more involved. With the Cloud Files
 CDN, you make the modifications by using the [Cloud Files Storage
-API](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/#storage-api-reference). This section shows you how to perform this task.
+API](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/#storage-api-reference). 
+This section shows you how to perform this task.
 
 #### Set headers on containers
 
