@@ -28,4 +28,4 @@ This article provides instructions for reissuing or revoking and replacing Racks
 
     - Thawte&reg; certificates prompt with the option to **Reissue** the certificate.
 
-5. Click **Submit** to begin the reissue or revoke and replace process.
+5. Click **Submit** to reissue or revoke and replace the SSL certificate. 
