@@ -10,9 +10,9 @@ product: general
 product_url: general
 ---
 
-This article provides instructions for reissuing or revoking and replacing Rackspace Secure Sockets Layer (SSL) certificates by using the Rackspace Control Panel. 
+This article provides instructions for reissuing or revoking and replacing Rackspace Secure Sockets Layer (SSL) certificates by using the Rackspace Control Panel.
 
-### Reissue or revoke and replace an SSL certificate. 
+### Reissue or revoke and replace an SSL certificate.
 
 1. Log in to [my.rackspace.com](https://my.rackspace.com).
 
@@ -22,11 +22,10 @@ This article provides instructions for reissuing or revoking and replacing Racks
 
 4. Select **Reissue** or **Revoke & Replace** on the right-hand side of the screen.
 
-    - Symantec&reg; certificates prompt with the option to **Revoke and Replace** the certificate. 
+    - Symantec&reg; certificates prompt with the option to **Revoke and Replace** the certificate.
 
         **NOTE:** Your SSL certificate is not automatically revoked on your server. The current SSL certificate remains valid until the new certificate is placed on the intended device.
 
-    - Thawte&reg; certificates prompt with the option to **Reissue** the certificate. 
+    - Thawte&reg; certificates prompt with the option to **Reissue** the certificate.
 
-5. Click **Submit** to begin the reissue or the revoke and replace process. 
-
+5. Click **Submit** to begin the reissue process.
