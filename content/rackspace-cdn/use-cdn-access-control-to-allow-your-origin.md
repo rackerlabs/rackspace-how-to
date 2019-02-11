@@ -28,8 +28,7 @@ server](https://enable-cors.org/server.html).
 
 ### Overview for Cloud Files CDN
 
-The process for Cloud Files CDN is more involved. With the Cloud Files
-CDN, you make the modifications by using the [Cloud Files Storage
+The process for Cloud Files CDN is more involved, and you make the modifications by using the [Cloud Files Storage
 API](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/#storage-api-reference). 
 This section shows you how to perform this task.
 
@@ -40,7 +39,7 @@ You need to set the headers in this section at the container level.
 ##### Access-Control-Allow-Origin
 
 First, you need to set the `Access-Control-Allow-Origin` header on the
-`default` object of the container. This header is a list of origins that are
+`default` object of the container. This header specifies a list of origins that are
 allowed to make cross-origin requests. Ensure that you separate each origin by
 using spaces.
 
@@ -50,7 +49,7 @@ Cloud Files CDN.
 
 For detailed instructions, see the [Create or update container metadata](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/container-services-operations/#create-or-update-container-metadata) section of the Cloud Files Developer Guide.
 
-The following code shows an example cURL call that sets the
+The following code shows an example cURL request that sets the
 `X-Container-Meta-Access-Control-Allow-Origin` header on the default object:
 
     curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "X-Container-Meta-Access-Control-Allow-Origin: *" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
@@ -60,7 +59,7 @@ The following code shows an example cURL call that sets the
 The preceding example uses the following placeholders:
 
 - `AUTHTOKEN`: The token that the Identity API generates when you
-  [make an authentication request](https://developer.rackspace.com/docs/cloud-identity/v2/developer-guide/#generate-an-authentication-token).
+  [make an authentication request](https://developer.rackspace.com/docs/cloud-identity/v2/getting-started/send-request-ovw/).
 
 - `Account UUID`: The unique identifier for your cloud account. You can find
   this identifier in the service catalog that is returned when you generate
@@ -70,7 +69,7 @@ The preceding example uses the following placeholders:
   schemes, and ensure that you URL encode them. This parameter is case
   sensitive.
 
-Next, use the following cURL command to retrieve the headers and verify that
+Next, use the following cURL request to retrieve the headers and verify that
 the `X-Container-Meta-Access-Control-Allow-Origin` header that you just added
 appears:
 
@@ -78,7 +77,7 @@ appears:
 
 ##### Expose the object-level headers
 
-Get the current headers that are exposed by running the following command:
+Get the current headers that are exposed by using the following cURL request:
 
     curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
     X-Container-Meta-Access-Control-Expose-Headers: etag location x-timestamp x-trans-id
@@ -88,11 +87,11 @@ already set. These headers are used in the Cloud Control Panel and for
 troubleshooting. If you are unsure if you should keep the existing headers,
 keep them.
 
-Set the header by running the following command:
+Set the header by using the following cURL request:
 
     curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "X-Container-Meta-Access-Control-Expose-Headers: etag location x-timestamp x-trans-id Access-Control-Allow-Origin" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
 
-Next, use the following cURL command to retrieve the headers and verify that
+Next, use the following cURL request to retrieve the headers and verify that
 the new header exists:
 
     curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/
@@ -100,12 +99,12 @@ the new header exists:
 #### Set the Access-Control-Allow-Origin header on each object
 
 Next, you need to set the `Access-Control-Allow-Origin` header on each of the
-objects to which you want it to apply. Run the following example command,
+objects to which you want it to apply. Send the following example request,
 replacing `image.png` with the object on which you want to set the header:
 
     curl -si -X POST -H "X-Auth-Token: {AUTHTOKEN}" -H "Access-Control-Allow-Origin: *" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
 
-Verify that the new header exists by running the following command:
+Verify that the new header exists by using the following cURL request:
 
     curl -si -I -H "X-Auth-Token: {AUTHTOKEN}" https://storage101.iad3.clouddrive.com/v1/MossoCloudFS_{Account UUID}/{CONTAINER}/image.png
 
