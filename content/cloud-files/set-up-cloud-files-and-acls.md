@@ -59,7 +59,7 @@ acceptable.
 
 ### Authenticate by using cURL
 
-First, you need to authenticate with the Rackspace Identity service by
+First, you need to authenticate with the Identity service by
 using your username and API key, as shown in the following example:
 
     curl -s -XPOST https://identity.api.rackspacecloud.com/v2.0/tokens -d '{ "auth":{ "RAX-KSKEY:apiKeyCredentials":{ "username":"USERNAME_HERE", "apiKey":"API_KEY_HERE" } } }' -H "Content-type: application/json" |python -m json.tool
@@ -177,7 +177,7 @@ This command returns a `201 Created` HTTP response and uploads the file.
 
 Because you gave `No Access` to `RBAC_USER` when you created this user,
 `RBAC_USER` cannot access the container from the Cloud Control Panel.
-After using the tools described in this article, `RBAC_USER` now has 
+After using the tools described in this article, `RBAC_USER` now has
 read and write access to the container `ACL_Container` and
 can only access the container and its objects by using the Cloud Files API.
 
