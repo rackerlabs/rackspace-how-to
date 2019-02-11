@@ -12,7 +12,7 @@ product_url: rackspace-cdn
 
 An _origin_ is an address (IP or domain) from which a Content Delivery
 Network (CDN) pulls content. Because that content comes from a different
-domain, you need to _allow_ a CDN to pull your content from your origin for
+domain, you need to _allow_ your CDN to pull it for
 security reasons. This article shows you how to use CDN access control to
 allow [Rackspace CDN and Cloud Files
 CDN](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files/)
@@ -25,10 +25,6 @@ With Rackspace CDN, all you need to do is set Cross-Origin Resource Sharing
 are automatically passed from the origin to the CDN. To view instructions for
 different web server software packages, see [I want to add CORS support to my
 server](https://enable-cors.org/server.html).
-
-For information about the Cloud Files CDN application programming interface
-(API), see the [CDN API
-Reference](https://developer.rackspace.com/docs/cloud-files/v1/cdn-api-reference/#cdn-api-reference).
 
 ### Overview for Cloud Files CDN
 
