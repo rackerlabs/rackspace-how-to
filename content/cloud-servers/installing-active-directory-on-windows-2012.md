@@ -12,7 +12,7 @@ product_url: cloud-servers
 
 ### Set up services
 
-1. On the **Start Menu**, click **Server Manager**.
+1. On the **Start Menu**, click **Server Manager**..
 2. Click **Tools > Services**. The services screen appears.
 3. Scroll down to and right-click **Remote Registry** and select **Start**.
 4. If the **Startup Type** is set to **Disabled**, click **Properties** and change it to **Automatic**.
