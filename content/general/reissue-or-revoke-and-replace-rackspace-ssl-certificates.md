@@ -14,6 +14,8 @@ This article provides instructions for reissuing or revoking and replacing Racks
 
 ### Reissue or revoke and replace an SSL certificate.
 
+Use the following steps to reissue or revoke and replace the certificates:
+
 1. Log in to [my.rackspace.com](https://my.rackspace.com).
 
 2. Expand the **Network** dropdown menu, then click the **SSL certificates** option.
