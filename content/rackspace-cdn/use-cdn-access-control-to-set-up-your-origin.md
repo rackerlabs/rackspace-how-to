@@ -137,8 +137,7 @@ Cloud Files API Developer Guide.
 ### Additional information
 
 We recommend that you use the `-I` flag with cURL to handle HTTP HEAD
-requests (`-X HEAD`). `-X HEAD` makes an HTTP GET request and only returns
-the headers, and `-I` only makes the HTTP HEAD request.
+requests (`-X HEAD`). Using this flag includes the HTTP header in the output.
 
 Cloud Files CDN allows you to purge 25 objects per day. The counter resets at
 Midnight UTC. If you are updating all of your files at one time and need to
