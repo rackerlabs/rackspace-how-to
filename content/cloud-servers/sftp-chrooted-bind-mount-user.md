@@ -63,21 +63,21 @@ Use the following steps to bind mount the user.
 
     1. Comment out the following line:
 
-           Subsystem       sftp    /usr/libexec/openssh/sftp-server
+            Subsystem       sftp    /usr/libexec/openssh/sftp-server
 
     2. Add the following lines to the end of the file:
 
-           Subsystem     sftp   internal-sftp
-           Match Group sftponly
-           ChrootDirectory /home/chroot   # OR     ChrootDirectory %h
-           X11Forwarding no
-           AllowTCPForwarding no
-           ForceCommand internal-sftp
+            Subsystem     sftp   internal-sftp
+            Match Group sftponly
+            ChrootDirectory /home/chroot   # OR     ChrootDirectory %h
+            X11Forwarding no
+            AllowTCPForwarding no
+            ForceCommand internal-sftp
 
     3. Test the configuration, and then reload the SSHD:
 
-           # sshd -t`
-           # service sshd reload`
+            # sshd -t
+            # service sshd reload
 
 #### Set up the user's homedir afer the chroot operation
 
