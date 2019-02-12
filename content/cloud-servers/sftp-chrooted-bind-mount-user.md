@@ -31,11 +31,13 @@ As an alternative, you can move the document root directory to the user’s home
 and then symlink it to the original location (for example, `ln -s /var/www/html /home/user1/html`).
 
 The SSH daemon (SSHD) offers some dynamic variables in the configuration for the chroot operation:
+
 * `%u` – username of the user logging in
 * `%h` – $HOME of the user logging in
 
 SSHD is very strict about how you must set permissions. One of these restrictions is that the user cannot write to the top level of the chroot directory.
 You must choose an appropriate top level for the chroot directory, such as the following settings:
+
 * Set ChrootDirectory to `%h` - The user cannot write to their home path. They need either a subfolder they can write to (for example uploads), or a bind mount to another location they can write to (for example `/var/www/html`).
 * Set ChrootDirectory to `/home/chroot` - The user can write to their home path, but the top level of the chroot directory is protected with filesystem permissions, not the chroot jail.
 
@@ -49,19 +51,19 @@ Use the following steps to bind mount the user.
 
 1. Create a group in which you will assign any user that needs to be jailed to their home directory:
 
-`# groupadd sftponly`
+   ```# groupadd sftponly```
 
 2. Create the user. Set the shell to `/bin/false` and assign the user to the group that you created above:
 
-`# mkdir -p /home/chroot/$NEWUSER`
-`# useradd -d /$NEWUSER -s /bin/false -G sftponly $NEWUSER    # Note: homedir is relative to the chroot`
-`# passwd $NEWUSER`
+    ```# mkdir -p /home/chroot/$NEWUSER```
+    ```# useradd -d /$NEWUSER -s /bin/false -G sftponly $NEWUSER    # Note: homedir is relative to the chroot```
+    ```# pass}wd $NEWUSER```
 
 3. Update the `/etc/ssh/sshd_config` file.
 
     1. Comment out the following line:
 
-       `Subsystem       sftp    /usr/libexec/openssh/sftp-server`
+           Subsystem       sftp    /usr/libexec/openssh/sftp-server
 
     2. Add the following lines to the end of the file:
 
@@ -145,4 +147,5 @@ Directory permissions can cause the following problems:
 #### SCP does not work
 
 This type of user only works with SFTP and will not work with other protocols (for example, remote shell (RSH), secure contain protect (SCP), or File Transfer Protocol (FTP)).
+
 
