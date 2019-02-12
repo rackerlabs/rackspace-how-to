@@ -2,17 +2,17 @@
 permalink: use-cdn-access-control-to-set-up-your-origin/
 audit_date: '2019-01-22'
 title: Use CDN access control to set up your origin
-created_date: '2019-02-11'
+created_date: '2019-02-12'
 created_by: Rackspace Community
-last_modified_date: '2019-02-11'
+last_modified_date: '2019-02-12'
 last_modified_by: Kate Dougherty
 product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-An _origin_ is an address (Internet Protocol (IP) or domain) from which a Content Delivery
-Network (CDN) pulls content. Because that content comes from a different
-domain, you need to _allow_ your CDN to pull it for
+An _origin_ is an address (Internet Protocol (IP) or domain) from which a 
+Content Delivery Network (CDN) pulls content. Because that content comes from 
+a different domain, you need to _allow_ your CDN to pull it for
 security reasons. This article shows you how to use CDN access control to
 allow [Rackspace CDN and Cloud Files
 CDN](/how-to/differences-between-rackspace-cdn-and-rackspace-cloud-files/)
@@ -28,7 +28,8 @@ server](https://enable-cors.org/server.html).
 
 ### Overview for Cloud Files CDN
 
-The process for Cloud Files CDN is more involved, and you make the modifications by using the [Cloud Files Storage
+The process for Cloud Files CDN is more involved, and you make the modifications 
+by using the [Cloud Files Storage
 API](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/#storage-api-reference) and the 
 [Cloud Files CDN API](https://developer.rackspace.com/docs/cloud-files/v1/cdn-api-reference/). 
 This section shows you how to perform this task.
