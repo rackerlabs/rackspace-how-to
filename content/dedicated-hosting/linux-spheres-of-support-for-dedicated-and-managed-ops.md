@@ -22,7 +22,7 @@ The following operating systems are supported for both Dedicated and Managed Ope
 - Red Hat&reg; Enterprise Linux&reg; 7
 - Red Hat Enterprise Linux 6
 - Ubuntu&reg; 18.04 LTS (Bionic Beaver)
-- Ubuntu&reg; 16.04 LTS (Xenial Xerus)
+- Ubuntu 16.04 LTS (Xenial Xerus)
 - Ubuntu 14.04 LTS (Trusty Tahr)
 
 The following operating systems are supported only for Managed Operations:
