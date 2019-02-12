@@ -51,13 +51,13 @@ Use the following steps to bind mount the user.
 
 1. Create a group in which you will assign any user that needs to be jailed to their home directory:
 
-   ```# groupadd sftponly```
+      # groupadd sftponly
 
 2. Create the user. Set the shell to `/bin/false` and assign the user to the group that you created above:
 
-    ```# mkdir -p /home/chroot/$NEWUSER```
-    ```# useradd -d /$NEWUSER -s /bin/false -G sftponly $NEWUSER    # Note: homedir is relative to the chroot```
-    ```# pass}wd $NEWUSER```
+     # mkdir -p /home/chroot/$NEWUSER
+     # useradd -d /$NEWUSER -s /bin/false -G sftponly $NEWUSER    # Note: homedir is relative to the chroot
+     # pass}wd $NEWUSER
 
 3. Update the `/etc/ssh/sshd_config` file.
 
@@ -67,40 +67,40 @@ Use the following steps to bind mount the user.
 
     2. Add the following lines to the end of the file:
 
-       `Subsystem     sftp   internal-sftp`
-       `Match Group sftponly`
-       `ChrootDirectory /home/chroot   # OR     ChrootDirectory %h`
-       `X11Forwarding no`
-       `AllowTCPForwarding no`
-       `ForceCommand internal-sftp`
+           Subsystem     sftp   internal-sftp
+           Match Group sftponly
+           ChrootDirectory /home/chroot   # OR     ChrootDirectory %h
+           X11Forwarding no
+           AllowTCPForwarding no
+           ForceCommand internal-sftp
 
     3. Test the configuration, and then reload the SSHD:
 
-       `# sshd -t`
-       `# service sshd reload`
+           # sshd -t`
+           # service sshd reload`
 
 #### Set up the user's homedir afer the chroot operation
 
 1. If the ChrootDirectory is `/home/chroot` run the following commands:
 
-   `# chmod 711 /home/chroot            # This prevents chrooted users from seeing other chrooted users' homedirs`
-   `# chmod 755 /home/chroot/$NEWUSER`
-   `# chown $NEWUSER:sftponly /home/chroot/$NEWUSER`
+       # chmod 711 /home/chroot            # This prevents chrooted users from seeing other chrooted users' homedirs
+       # chmod 755 /home/chroot/$NEWUSER
+       # chown $NEWUSER:sftponly /home/chroot/$NEWUSER
 
 2. If the ChrootDirectory is `%h` run the following command:
 
-   `# chown root:root /home/chroot/$NEWUSER`
+       # chown root:root /home/chroot/$NEWUSER
 
 #### Create bind mounts to any path outside the chroot directory that the user needs to access
 
 1. Add the following line to the `/etc/fstab` file:
 
-   `/var/www/html   /home/chroot/$NEWUSER/www        none    bind    0 0`
+       /var/www/html   /home/chroot/$NEWUSER/www        none    bind    0 0`
 
 2. Mount the directory:
 
-   `# mkdir /home/chroot/$NEWUSER/www`
-   `# mount /home/chroot/$NEWUSER/www`
+       # mkdir /home/chroot/$NEWUSER/www
+       # mount /home/chroot/$NEWUSER/www
 
 #### Update permissions
 
@@ -111,8 +111,8 @@ such as changing user ownership, changing group ownership or permissions, or add
 
 The following example shows commands for adding FACLs:
 
-`# setfacl -Rm u:$NEWUSER:rwX /home/chroot/$NEWUSER/www/`
-`# setfacl -Rm d:u:$NEWUSER:rwX /home/chroot/$NEWUSER/www/`
+        # setfacl -Rm u:$NEWUSER:rwX /home/chroot/$NEWUSER/www/
+        # setfacl -Rm d:u:$NEWUSER:rwX /home/chroot/$NEWUSER/www/
 
 ### Potential problems
 
@@ -125,24 +125,24 @@ Directory permissions can cause the following problems:
 * The built-in chroot function of SFTP is very strict about permissions.
    If the permissions are not secure enough, you receive the following error when you try to log in:
 
-   `root@ftp01[ ~ ]# sftp $NEWUSER@localhost`
-   `Connecting to localhost...`
-   `chroottest@localhost's password:`
-   `Write failed: Broken pipe`
-   `Couldn't read packet: Connection reset by peer`
+         root@ftp01[ ~ ]# sftp $NEWUSER@localhost
+         Connecting to localhost...
+         chroottest@localhost's password:
+         Write failed: Broken pipe
+         Couldn't read packet: Connection reset by peer
 
 * You might be able to log in, but you cannot upload files. In this case you receive the
    following error:
 
-    `sftp> put test`
-    `Uploading test to /$NEWUSER/test`
-    `Couldn't get handle: Permission denied`
-    `In both cases the problem is directory permissions.  Here's what a known-good directory structure looks like:`
-    `root@ftp01[ ~ ]# ls -ld / /home /home/chroot /home/chroot/$NEWUSERdrwxr-xr-x. 28 root     root     4096 Aug 22 10:31 /`
-    `drwxr-xr-x. 18 root     root     4096 Oct 10 10:49 /home`
-    `drwx--x--x   3 root     root     4096 Oct 10 10:49 /home/chroot`
-    `drwxr-xr-x   3 $NEWUSER $NEWUSER 4096 Oct 10 11:40 /home/chroot/$NEWUSER`
-    `root@ftp01[ ~ ]#`
+          sftp> put test
+          Uploading test to /$NEWUSER/test
+          Couldn't get handle: Permission denied
+          In both cases the problem is directory permissions.  Here's what a known-good directory structure looks like:
+          root@ftp01[ ~ ]# ls -ld / /home /home/chroot /home/chroot/$NEWUSERdrwxr-xr-x. 28 root     root     4096 Aug 22 10:31 /
+          drwxr-xr-x. 18 root     root     4096 Oct 10 10:49 /home
+          drwx--x--x   3 root     root     4096 Oct 10 10:49 /home/chroot
+          drwxr-xr-x   3 $NEWUSER $NEWUSER 4096 Oct 10 11:40 /home/chroot/$NEWUSER
+          root@ftp01[ ~ ]#
 
 #### SCP does not work
 
