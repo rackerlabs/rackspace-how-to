@@ -9,37 +9,45 @@ last_modified_by:
 product: Cloud Servers
 product_url: cloud-servers
 ---
-Problem:  You are unable to access your Cloud Server via a Remote Desktop Connection due to a licensing Error
-Cause:  By default, Rackspace Cloud Servers come with a Remote Desktop license that allows for 2 concurrent users to access your server.  If you need more than 2 people to be able to access the Cloud Server at the same time, you will need to purchase and install a Terminal Services license.  You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors. 
-Note:  In Windows Server 2003 R2 and 2008 this feature is named Terminal Services.  In Windows Server 2008 R2 and 2012 R2 this feature is named Remote Desktop Services. 
-Resolution:   You will need to add Terminal Services and/or Remote Desktop licenses to your Cloud Server.
-Windows 2008
-1. Open Server Manager and highlight Roles in the left side of the Server Manager window
-2. Click Remove Roles on the right side of the Server Manager window
-3. Locate and uncheck Terminal Services, then hit Next, then hit Remove
-Windows 2008 R2
-1. Open Server Manager and highlight Roles in the left side of the Server Manager window
-2. Click Remove Roles on the right side of the Server Manager window
-3. Locate and uncheck Remote Desktop Services, then hit Next, then hit Remove
-Windows 2012 and 2012 R2
+Problem: A licensing error is preventing you from accessing your Cloud Server via a Remote Desktop Connection.
+Cause: By default, Rackspace Cloud Servers come with a Remote Desktop license that allows 2 concurrent users to access your server. If you need more than 2 users to be able to access the Cloud Server at the same time, you will need to purchase and install a Terminal Services license. You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors. 
+Note: In Microsoft Windows &reg; Server 2008 this feature is named Terminal Services. In Windows Server 2008 R2 and 2012 R2 this feature is named Remote Desktop Services. 
+Solution: Add Terminal Services or Remote Desktop licenses to your Cloud Server.
+
+### Remove Services
+#### Windows 2008
+1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
+2. Click **Remove Roles** on the right side of the **Server Manager** window.
+3. Locate and uncheck **Terminal Services**, click **Next**, then click **Remove**.
+
+#### Windows 2008 R2
+1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
+2. Click **Remove Roles** on the right side of the **Server Manager** window.
+3. Locate and uncheck **Remote Desktop Services**, click **Next**, then click **Remove**.
+
+#### Windows 2012 and 2012 R2
 See the Set up Remote Desktop Services in Windows 2012 article.
  
-* Install Licensing for Terminal Services/Remote Desktop Services
-Windows 2008
-1. Open Server Manager and highlight Roles in the left side of the Server Manager window
-2. Click Add Roles on the right side of the Server Manager window
-3. Place a check in the box next to Terminal Services and select Next, and hit Next again
-4. In the Role Services window, select Terminal Server Licensing and select Next
-5. In the Configure Discovery Scope window, you would choose the discovery option which best fits your environment (most situations would leave the default configuration) and select Next
-6. Click Install to load the Terminal Services Licensing role service.
-7. After the installation is complete, close out of the wizard and open the Start Menu, select Administrative Tools, Terminal Services, Terminal Services Licensing Manager
-8. Within the Terminal Services Licensing Manager window, right-click on the server name and select Activate.
-9. Select Next, then choose your Activation method (most situations would use the Automatic connection method)
-10. Fill out the appropriate information in the fields provided and select Next, then fill out the next set of fields and select Next
-11. The server will attempt to activate against a Microsoft licensing server, and once it’s finished, please select Next twice, then select Next again to launch the Install Licenses Wizard
-12. Choose the License Program you purchased your licenses through (most situations would use a License Pak) and select Next
-13. Enter the product code for your Terminal Services license and click Add, then hit Next.
-14. Click Finish to exit out of the wizard and at this point your server is ready to function as a terminal services licensing server.
+### Install Licensing for Terminal Services/Remote Desktop Services
+#### Windows 2008
+1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
+2. Click **Add Roles** on the right side of the **Server Manager** window.
+3. Place a check in the box next to Terminal Services, click **Next**, and click **Next** again.
+4. In the **Role Services** window, select **Terminal Server Licensing**, and click **Next**.
+5. In the **Configure Discovery Scope** window, select the discovery option that best fits your environment. In most situations, accept the default configuration and click **Next**.
+6. Click **Install** to install the Terminal Services Licensing role service.
+7. After the installation is complete, exit out of the wizard.
+8. Click the Start Menu, and select **Administrative Tools > Terminal Services > Terminal Services Licensing Manager**.
+9. On the **Terminal Services Licensing Manager** window, right-click the server name and select **Activate**.
+10. Click **Next** and choose an Activation method. In most situations use the **Automatic** connection method.
+11. Complete the information in the fields provided and click **Next**.
+12. Complete the next set of fields and click **Next**.
+13. After the server activates against a Microsoft licensing server, click **Next** twice, and then click **Next** again to launch the **Install Licenses Wizard**.
+12. Choose the **License Program** through which you purchased your licenses and click **Next**. In most situations select a License Pak.
+13. Enter the product code for your Terminal Services license, click **Add**, and then click **Next**.
+14. Click **Finish** to exit out of the wizard.
+
+Your server is now ready to function as a terminal services licensing server.
  
 Windows 2008 R2
 1. Open Server Manager and highlight Roles in the left side of the Server Manager window
