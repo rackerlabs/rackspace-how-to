@@ -29,16 +29,16 @@ Solution: Add Terminal Services or Remote Desktop licenses to your Cloud Server.
 See the Set up Remote Desktop Services in Windows 2012 article.
  
 ### Install Licensing for Terminal Services/Remote Desktop Services
-#### Windows 2008
+#### Windows 2008 R2 and Windows 2008
 1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
 2. Click **Add Roles** on the right side of the **Server Manager** window.
-3. Place a check in the box next to Terminal Services, click **Next**, and click **Next** again.
-4. In the **Role Services** window, select **Terminal Server Licensing**, and click **Next**.
+3. Place a check in the box next to Remote Desktop Services (Terminal Services for Windows 2008), click **Next**, and click **Next** again.
+4. In the **Role Services** window, select **Remote Desktop Licensing** (**Terminal Server Licensing** for Windows 2008), and click **Next**.
 5. In the **Configure Discovery Scope** window, select the discovery option that best fits your environment. In most situations, accept the default configuration and click **Next**.
-6. Click **Install** to install the Terminal Services Licensing role service.
+6. Click **Install** to install the Remote Desktop Licensing (Terminal Services Licensing for Windows 2008) role service.
 7. After the installation is complete, exit out of the wizard.
-8. Click the Start Menu, and select **Administrative Tools > Terminal Services > Terminal Services Licensing Manager**.
-9. On the **Terminal Services Licensing Manager** window, right-click the server name and select **Activate**.
+8. Click the Start Menu, and select **Administrative Tools > Remote Desktop Services (or Terminal Services) > Remote Desktop Licensing Manager (or Terminal Services Licensing Manager)**.
+9. On the **Remote Desktop Licensing Manager** (**Terminal Services Licensing Manager** for Windows 2008) window, right-click the server name and select **Activate**.
 10. Click **Next** and choose an Activation method. In most situations use the **Automatic** connection method.
 11. Complete the information in the fields provided and click **Next**.
 12. Complete the next set of fields and click **Next**.
@@ -48,22 +48,6 @@ See the Set up Remote Desktop Services in Windows 2012 article.
 14. Click **Finish** to exit out of the wizard.
 
 Your server is now ready to function as a terminal services licensing server.
- 
-Windows 2008 R2
-1. Open Server Manager and highlight Roles in the left side of the Server Manager window
-2. Click Add Roles on the right side of the Server Manager window
-3. Place a check in the box next to Remote Desktop Services and select Next, and hit Next again
-4. In the Role Services window, select Remote Desktop Licensing and select Next
-5. In the Configure Discovery Scope window, you would choose the discovery option which best fits your environment (most situations would leave the default configuration) and select Next
-6. Click Install to load the Remote Desktop Licensing role service.
-7. After the installation is complete, close out of the wizard and open the Start Menu, select Administrative Tools, Remote Desktop Services, Remote Desktop Licensing Manager
-8. Within the Remote Desktop Licensing Manager window, right-click on the server name and select Activate.
-9. Select Next, then choose your Activation method (most situations would use the Automatic connection method)
-10. Fill out the appropriate information in the fields provided and select Next, then fill out the next set of fields and select Next
-11. The server will attempt to activate against a Microsoft licensing server, and once it’s finished, please select Next twice, then select Next again to launch the Install Licenses Wizard
-12. Choose the License Program you purchased your licenses through (most situations would use a License Pak) and select Next
-13. Enter the product code for your Remote Desktop Services license and click Add, then hit Next.
-14. Click Finish to exit out of the wizard and at this point your server is ready to function as a Remote Desktop licensing server.
  
 Note:  Rackspace no longer offers Cloud Servers with Windows 2003, but these instructions are here for legacy support purposes.
 
