@@ -10,11 +10,11 @@ product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-This article shows you how to use Rackspace CDN with a WordPress website.
+This article shows you how to use Rackspace CDN with a WordPress&reg; website.
 
 This setup involves the following services:
 
-1. WordPress&reg;
+1. WordPress
 2. Rackspace Cloud Files
 3. Akamai&reg; Content Delivery Network (CDN)
 
