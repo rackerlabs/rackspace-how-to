@@ -1,7 +1,7 @@
 ---
-permalink: use-cdn-access-control-to-allow-your-origin/
+permalink: use-cdn-access-control-to-set-up-your-origin/
 audit_date: '2019-01-22'
-title: Use CDN access control to allow your origin
+title: Use CDN access control to set up your origin
 created_date: '2019-02-11'
 created_by: Rackspace Community
 last_modified_date: '2019-02-11'
@@ -10,7 +10,7 @@ product: Rackspace CDN
 product_url: rackspace-cdn
 ---
 
-An _origin_ is an address (IP or domain) from which a Content Delivery
+An _origin_ is an address (Internet Protocol (IP) or domain) from which a Content Delivery
 Network (CDN) pulls content. Because that content comes from a different
 domain, you need to _allow_ your CDN to pull it for
 security reasons. This article shows you how to use CDN access control to
@@ -29,7 +29,8 @@ server](https://enable-cors.org/server.html).
 ### Overview for Cloud Files CDN
 
 The process for Cloud Files CDN is more involved, and you make the modifications by using the [Cloud Files Storage
-API](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/#storage-api-reference). 
+API](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/#storage-api-reference) and the 
+[Cloud Files CDN API](https://developer.rackspace.com/docs/cloud-files/v1/cdn-api-reference/). 
 This section shows you how to perform this task.
 
 #### Set headers on containers
@@ -44,8 +45,7 @@ allowed to make cross-origin requests. Ensure that you separate each origin by
 using spaces.
 
 You use this header with the [Static
-Websites](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#document-static-websites-using-cdn-enabled-containers/index) functionality of
-Cloud Files CDN.
+Websites](https://developer.rackspace.com/docs/cloud-files/v1/use-cases/static-websites-using-cdn-enabled-containers/) functionality of Cloud Files CDN.
 
 For detailed instructions, see the [Create or update container metadata](https://developer.rackspace.com/docs/cloud-files/v1/storage-api-reference/container-services-operations/#create-or-update-container-metadata) section of the Cloud Files Developer Guide.
 
@@ -136,9 +136,9 @@ Cloud Files API Developer Guide.
 ### Additional information
 
 We recommend that you use the `-I` flag with cURL to handle HTTP HEAD
-requests (`-X HEAD`). '-X HEAD' makes an HTTP GET request and only returns
+requests (`-X HEAD`). `-X HEAD` makes an HTTP GET request and only returns
 the headers, and `-I` only makes the HTTP HEAD request.
 
-Cloud Files CDN allows you to purge 25 objects per day (the counter resets at
-Midnight UTC). If you are updating all of your files at once and need to
+Cloud Files CDN allows you to purge 25 objects per day. The counter resets at
+Midnight UTC. If you are updating all of your files at one time and need to
 purge more than 25 objects, contact Rackspace Support.
