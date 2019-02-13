@@ -2,9 +2,9 @@
 permalink: use-rackspace-cdn-with-a-wordpress-site/
 audit_date: '2019-02-12'
 title: Use Rackspace CDN with a WordPress site
-created_date: '2019-02-12'
+created_date: '2019-02-13'
 created_by: Rackspace Community
-last_modified_date: '2019-02-12'
+last_modified_date: '2019-02-13'
 last_modified_by: Kate Dougherty
 product: Rackspace CDN
 product_url: rackspace-cdn
@@ -29,7 +29,7 @@ certain configurations.
 ### About Cloud Files
 
 Rackspace Cloud Files is an independent, redundant, cloud-based solution for
-file storage. It uses containers that are limited to 5 GB of storage, but you
+file storage. Cloud Files uses containers that are limited to 5 GB of storage, but you
 have an unlimited number of containers available to you.
 
 These files are not directly accessible from any server by default. However,
