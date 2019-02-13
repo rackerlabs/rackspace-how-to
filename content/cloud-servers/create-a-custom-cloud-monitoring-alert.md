@@ -106,7 +106,7 @@ by using one of the following methods:
 - The [raxmon command-line
   tool](https://developer.rackspace.com/blog/using-raxmon-to-configure-rackspace-cloud-monitoring/) for interacting with the Rackspace Cloud
   Monitoring application programming interface (API)
-- A cURL POST command that [creates the alarm](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#create-an-alarm) by using [alarm criteria](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#alarms-operations) 
+- A [cURL POST command](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#create-an-alarm)
 
 ### Use an Ansible playbook to install plug-ins
 
