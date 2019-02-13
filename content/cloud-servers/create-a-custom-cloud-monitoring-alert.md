@@ -13,9 +13,9 @@ product_url: cloud-files
 The Rackspace Cloud Control Panel enables you to create the
 following monitoring checks:
 
-- Hyper Text Transfer Protocol (HTTP) Check (Website)
-- Transmission Control Protocol (TCP) Check (Port)
-- Ping Check (Server)
+- Hyper Text Transfer Protocol (HTTP) Check (website)
+- Transmission Control Protocol (TCP) Check (port)
+- Ping Check (server)
 - Memory
 - Central processing unit (CPU)
 - Load Average (Linux&reg;)
