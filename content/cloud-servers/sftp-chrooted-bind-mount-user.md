@@ -42,8 +42,8 @@ You must choose an appropriate top level for the chroot directory, such as the f
 * Set ChrootDirectory to `/home/chroot`: The user can write to their home path, but the top level of the chroot directory is protected with file system permissions, not the chroot jail.
 
 The first option uses the chroot directory to guarantee security instead of relying on file system permissions.
-The second option allows writing to the home directory but means the chroot directory is shared with other users,
-and only file system permissions stop information disclosure. The right option depends on your needs.
+The second option allows writing to the home directory but means the chroot directory is shared with other users, and
+only file system permissions stop information disclosure. The right option depends on your needs.
 
 ### Bind mount an SFTP user after a chrooted operation
 
