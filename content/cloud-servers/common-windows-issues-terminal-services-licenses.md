@@ -26,7 +26,7 @@ product_url: cloud-servers
 2. Click **Remove Roles** on the right side of the **Server Manager** window.
 3. Locate and deselect **Terminal Services**, click **Next**, then click **Remove**.
 
-#### Remove the Remote Desktop Service role on Windows 2008 R2
+### Remove the Remote Desktop Service role on Windows 2008 R2
 1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
 2. Click **Remove Roles** on the right side of the **Server Manager** window.
 3. Locate and deselect **Remote Desktop Services**, click **Next**, then click **Remove**.
