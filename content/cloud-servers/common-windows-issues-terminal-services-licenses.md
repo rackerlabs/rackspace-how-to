@@ -14,7 +14,9 @@ product_url: cloud-servers
 **Cause**: By default, Rackspace Cloud Servers come with a Remote Desktop license that allows 2 concurrent users to access your server. If you need more than 2 users to be able to access the Cloud Server at the same time, you will need to purchase and install a Terminal Services license. You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors.
 
 ---
+
 **Note:** In Microsoft Windows &reg; Server 2008 this feature is named Terminal Services. In Windows Server 2008 R2 this feature is named Remote Desktop Services.
+
 ---
 
 **Solution**: Add Terminal Services or Remote Desktop licenses to your Cloud Server.
@@ -43,8 +45,8 @@ product_url: cloud-servers
 11. Complete the information in the fields provided and click **Next**.
 12. Complete the next set of fields and click **Next**.
 13. After the server activates against a Microsoft licensing server, click **Next** twice, and then click **Next** again to launch the **Install Licenses Wizard**.
-12. Choose the **License Program** through which you purchased your licenses and click **Next**. In most situations select a License Pak.
-13. Enter the product code for your Terminal Services license, click **Add**, and then click **Next**.
-14. Click **Finish** to exit out of the wizard.
+14. Choose the **License Program** through which you purchased your licenses and click **Next**. In most situations select a License Pak.
+15. Enter the product code for your Terminal Services license, click **Add**, and then click **Next**.
+16. Click **Finish** to exit out of the wizard.
 
 Your server is now ready to function as a terminal services licensing server.
