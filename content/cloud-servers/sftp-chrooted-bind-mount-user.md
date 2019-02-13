@@ -1,8 +1,8 @@
 ---
-permalink: bind-mount-an-SFTP-user-after-the-use-of-chroot/
-audit_date:
-title: Bind mount an SFTP user after the use of chroot
-created_date: '2019-01-18'
+permalink: bind-mount-an-sftp-user-after-the-using-chroot/
+audit_date: '2019-07-18'
+title: Bind mount an SFTP user after the using chroot
+created_date: '2019-07-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-08'
 last_modified_by: Erik Wilson
@@ -23,7 +23,7 @@ on your Red Hat® Enterprise Linux® (RHEL®) and CentOS® 6 (OpenSSH is 4.9p1 o
 
 This article describes how to use the chroot operation for the user to their home directory
 and create a bind mount within that home directory for any of the external (document root) directories
-that they need to access. A bind mount is the only way to give the user access to data outside of
+to which they need access. A bind mount is the only way to give the user access to data outside of
 their chroot directory. You are not able to use a symbolic link (symlink) to data outside of the chroot
 directory into it (for example, `ln -s /home/user/http /var/www/http`). After the chroot operation,
 the file system has no knowledge of any data outside of the chroot directory. This lack of knowledge breaks the symlink.
@@ -32,24 +32,24 @@ and then symlink it to the original location (for example, `ln -s /var/www/html 
 
 The SSH daemon (SSHD) offers some dynamic variables in the configuration for the chroot operation:
 
-* `%u` – username of the user logging in
-* `%h` – $HOME of the user logging in
+* `%u`: username of the user logging in
+* `%h`: $HOME of the user logging in
 
 SSHD is very strict about how you must set permissions. One of these restrictions is that the user cannot write to the top level of the chroot directory.
 You must choose an appropriate top level for the chroot directory, such as the following settings:
 
-* Set ChrootDirectory to `%h` - The user cannot write to their home path. They need either a subfolder they can write to (for example uploads), or a bind mount to another location they can write to (for example `/var/www/html`).
-* Set ChrootDirectory to `/home/chroot` - The user can write to their home path, but the top level of the chroot directory is protected with filesystem permissions, not the chroot jail.
+* Set ChrootDirectory to `%h`: The user cannot write to their home path. They need either a subfolder they can write to (for example uploads), or a bind mount to another location they can write to (for example `/var/www/html`).
+* Set ChrootDirectory to `/home/chroot`: The user can write to their home path, but the top level of the chroot directory is protected with file system permissions, not the chroot jail.
 
-The first option uses the chroot directory to guarantee security instead of relying on filesystem permissions.
+The first option uses the chroot directory to guarantee security instead of relying on file system permissions.
 The second option allows writing to the home directory but means the chroot directory is shared with other users,
-and only filesystem permissions stop information disclosure. The right option depends on your needs.
+and only file system permissions stop information disclosure. The right option depends on your needs.
 
 ### Bind mount an SFTP user after a chrooted operation
 
-Use the following steps to bind mount the user.
+Use the following steps to bind mount the user:
 
-1. Create a group in which you will assign any user that needs to be jailed to their home directory:
+1. Create a group to which you will assign any user that needs to be jailed to their home directory:
 
        # groupadd sftponly
 
@@ -59,7 +59,7 @@ Use the following steps to bind mount the user.
        # useradd -d /$NEWUSER -s /bin/false -G sftponly $NEWUSER    # Note: homedir is relative to the chroot
        # pass}wd $NEWUSER
 
-3. Update the `/etc/ssh/sshd_config` file.
+3. Update the `/etc/ssh/sshd_config` file:
 
     1. Comment out the following line:
 
@@ -81,13 +81,13 @@ Use the following steps to bind mount the user.
 
 #### Set up the user's homedir afer the chroot operation
 
-1. If the ChrootDirectory is `/home/chroot` run the following commands:
+1. If the ChrootDirectory is `/home/chroot`, run the following commands:
 
         # chmod 711 /home/chroot            # This prevents chrooted users from seeing other chrooted users' homedirs
         # chmod 755 /home/chroot/$NEWUSER
         # chown $NEWUSER:sftponly /home/chroot/$NEWUSER
 
-2. If the ChrootDirectory is `%h` run the following command:
+2. If the ChrootDirectory is `%h`, run the following command:
 
         # chown root:root /home/chroot/$NEWUSER
 
@@ -104,9 +104,9 @@ Use the following steps to bind mount the user.
 
 #### Update permissions
 
-Update the filesystem permissions on the directories the user accesses.
+Update the file system permissions on the directories the user accesses.
 Take into consideration other users that currently have read/write access to make sure you
-do not inadvertently remove their permissions. You can do this step in several different ways,
+do not inadvertently remove their permissions. You can complete this step in in several different ways,
 such as changing user ownership, changing group ownership or permissions, or adding file access control lists (FACLs).
 
 The following example shows commands for adding FACLs:
@@ -146,6 +146,6 @@ Directory permissions can cause the following problems:
 
 #### SCP does not work
 
-This type of user only works with SFTP and will not work with other protocols (for example, remote shell (RSH), secure contain protect (SCP), or File Transfer Protocol (FTP)).
+This type of user only works with SFTP and does not work with other protocols (for example, remote shell (RSH), secure contain protect (SCP), or File Transfer Protocol (FTP)).
 
 
