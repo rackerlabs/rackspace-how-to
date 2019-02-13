@@ -21,7 +21,7 @@ on your Red Hat® Enterprise Linux® (RHEL®) and CentOS® 6 (OpenSSH is 4.9p1 o
 * This bind mounting is often needed for a developer that might need write access to one (or more) Apache® document root or roots or some other directory for the purpose of uploading or editing web content.
 
 
-This article describes how to use the chroot operation for the user to their home directory
+This article describes how to use the chroot operation to set the home directory for the user
 and create a bind mount within that home directory for any of the external (document root) directories
 to which they need access. A bind mount is the only way to give the user access to data outside of
 their chroot directory. You are not able to use a symbolic link (symlink) to data outside of the chroot
