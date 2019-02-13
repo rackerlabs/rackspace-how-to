@@ -13,13 +13,13 @@ product_url: cloud-files
 The Rackspace Cloud Control Panel enables you to create the
 following monitoring checks:
 
-- Hyper Text Transfer Protocol (HTTP) Check (website)
-- Transmission Control Protocol (TCP) Check (port)
+- Hyper Text Transfer Protocol (HTTP) check (website)
+- Transmission Control Protocol (TCP) check (port)
 - Ping Check (server)
 - Memory
 - Central processing unit (CPU)
 - Load Average (Linux&reg;)
-- Filesystem
+- File system
 - Network
 
 However, you might also want to trigger an alert if the live syncing
@@ -32,8 +32,8 @@ trigger custom alerts.
 Before you follow the steps in this article, ensure that you have the following
 capabilities:
 
-- A basic knowledge of Git
-- Cloud Monitoring Agent installed on the server
+- A basic knowledge of Git&reg;
+- The Cloud Monitoring Agent installed on the server
 - A basic knowledge of the Linux command line
 
 ### Create a custom monitoring alert
@@ -43,7 +43,7 @@ additional metrics, and write custom alarm language that uses these metrics to
 trigger alarms.
 
 You can see sample scripts that Rackers have written in our publicly available
-[GitHub
+[GitHub&reg;
 repository](https://github.com/racker/rackspace-monitoring-agent-plugins-contrib).
 
 Use the following steps to create a custom monitoring alert:
@@ -84,15 +84,15 @@ Use the following steps to create a custom monitoring alert:
 
 Finally, you need to add your alarm criteria for the new metrics.
 
-The following code shows a basic example of alarm language:
+The following code shows a basic example of the alarm language:
 
     if (metric['avail'] < 102400) {
         return new AlarmStatus(CRITICAL, 'Less than 100MB of available space remains');
     }
     return new AlarmStatus(OK, 'More than 100MB of space is available');
 
-This is the alarm language for the default file system agent check. It
-triggers a `Critical` alert if there is less than 100 MB available
+This is the alarm language for the default file system agent check. The example
+triggers a `CRITICAL` alert if there is less than 100 MB available
 on the server on which the plug-in resides. If there is more than 100 MB,
 the check receives an `OK` response and no alert triggers.
 
@@ -114,10 +114,10 @@ An [Ansible&reg;
 playbook](https://github.com/stevekaten/cloud-monitoring-plugin-deploy)
 for installing Cloud Monitoring plug-ins on the local host is available.
 
-If your account has a Managed Infrastructure service level, you need to modify
+If your account has THE Managed Infrastructure service level, you need to modify
 the **group_vars/all** file. Because this playbook is specifically for Managed
 Operations, the default is to notify our administrators if an alert triggers.
-Modify the file so that your own staff is notified if a custom alert triggers.
+Modify the file so that Cloud Monitoring notifies your staff if a custom alert triggers.
 
-If your account has a Managed Infrastructure service level, you need to change
+If your account has the Managed Infrastructure service level, you need to change
 the notification plan from **npManaged** to **npTechnicalContactsEmail**.
