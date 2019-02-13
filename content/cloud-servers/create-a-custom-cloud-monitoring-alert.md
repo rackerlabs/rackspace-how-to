@@ -2,9 +2,9 @@
 permalink: create-a-custom-cloud-monitoring-alert/
 audit_date: '2019-01-22'
 title: Create a custom Cloud Monitoring alert
-created_date: '2019-02-06'
+created_date: '2019-02-13'
 created_by: Rackspace Community
-last_modified_date: '2019-02-06'
+last_modified_date: '2019-02-13'
 last_modified_by: Kate Dougherty
 product: Cloud Files
 product_url: cloud-files
@@ -106,7 +106,7 @@ by using one of the following methods:
 - The [raxmon command-line
   tool](https://developer.rackspace.com/blog/using-raxmon-to-configure-rackspace-cloud-monitoring/) for interacting with the Rackspace Cloud
   Monitoring application programming interface (API)
-- A [cURL command](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#create-an-alarm)
+- A cURL POST command that [creates the alarm](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#create-an-alarm) by using [alarm criteria](https://developer.rackspace.com/docs/rackspace-monitoring/v1/api-reference/alarms-operations/#alarms-operations) 
 
 ### Use an Ansible playbook to install plug-ins
 
