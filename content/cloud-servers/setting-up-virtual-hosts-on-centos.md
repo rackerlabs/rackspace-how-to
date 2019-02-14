@@ -28,13 +28,13 @@ Your server must have Apache&reg; installed in order to configure vhosts. Instal
 
 1. Create a new directory by using the following command:
 
-    sudo mkdir -p /var/www/vhosts/domain.com/public_html
+       sudo mkdir -p /var/www/vhosts/domain.com/public_html
 
    This directory is used to store the web content for your site. This is known as the **Document Root** location in the Apache `vhost` configuration file. Using `-p` automatically adds the parents of your new directory.
 
 2. Set the necessary permissions on the new directory by using the following command:
 
-    sudo chown -R username:vhostuser /var/www/vhosts/domain.com/public_html
+       sudo chown -R username:vhostuser /var/www/vhosts/domain.com/public_html
 
   **Note:** Replace `vhostuser` in `username:vhostuser` with the user that should have access to the new directory.
 
@@ -70,7 +70,7 @@ Your server must have Apache&reg; installed in order to configure vhosts. Instal
 
 7. Insert the following code within the **/etc/httpd/vhost.d/default.template** file:
 
-    `<VirtualHost *:80>
+       <VirtualHost *:80>
 
          ServerName domain.com
 
@@ -125,7 +125,7 @@ Your server must have Apache&reg; installed in order to configure vhosts. Instal
        #        SSLCertificateFile    /etc/ssl/certs/domain.crt
 
        #        SSLCertificateKeyFile /etc/ssl/certs/domain.key
-       #</VirtualHost>`
+       #</VirtualHost>
 
 8. Save the changes to the file and exit `vi`.
 
@@ -147,9 +147,9 @@ Your server must have Apache&reg; installed in order to configure vhosts. Instal
 
    You receive the following message:
 
-        Stopping httpd:                                                                                                [  OK  ]
-        Starting httpd: httpd: Could not reliably determine the server's fully qualified                                                                              domain name, using 0000:0000:0000:0000:0000:0000:0000:0000 for ServerName
-                                                                                                                       [  OK  ]
+        Stopping httpd:                                                                                                [OK]
+        Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using 0000:0000:0000:0000:0000:0000:0000:0000 for ServerName
+                                                                                                                       [OK]
 This is a default warning that can be ignored.
 
 Your virtual host is now set up and ready to use. You must upload web content to the **DocumentRoot** directory that you have created on your server to have content served when you navigate to your domain name using a browser.
