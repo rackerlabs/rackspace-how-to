@@ -12,8 +12,8 @@ product_url: cloud-servers
 
 This article is intended for use with the following technologies:
 
-- Cloud servers that are running Apache&reg;
-- Dedicated servers that are running Apache
+- Linux&reg; cloud servers that are running Apache&reg;
+- Dedicated Linux servers that are running Apache
 - Rackspace Cloud Sites
 
 You can make modifications to your site by using an **.htaccess** file.
