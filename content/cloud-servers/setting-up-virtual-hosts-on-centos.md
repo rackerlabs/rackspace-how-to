@@ -1,9 +1,9 @@
 ---
-permalink: setting-up-virtual-hosts-on-centos/
+permalink: set-up-virtual-hosts-on-centos/
 audit_date: '2019-02-14'
-title: Setting up virtual hosts on CentOS
+title: Set up virtual hosts on CentOS
 created_date: '2019-01-18'
-created_by: Rackspace Support
+created_by: Rackspace Community 
 last_modified_date: '2019-02-14'
 last_modified_by: William Loy
 product: Cloud Servers
@@ -38,7 +38,7 @@ Your server must have Apache&reg; installed in order to configure vhosts. Instal
 
   **Note:** Replace `vhostuser` in `username:vhostuser` with the user that should have access to the new directory.
 
-  Grant read access to everyone for the files within your vhosts directory by using the following(optional):
+  Grant read access to everyone for the files within your vhosts directory by using the following:
 
     sudo chmod -R 755 /var/www/vhosts/
 
@@ -150,7 +150,7 @@ Your server must have Apache&reg; installed in order to configure vhosts. Instal
         Stopping httpd:                                                                                                [OK]
         Starting httpd: httpd: Could not reliably determine the server's fully qualified domain name, using 0000:0000:0000:0000:0000:0000:0000:0000 for ServerName
                                                                                                                        [OK]
-This is a default warning that can be ignored.
+This is a default warning that you can ignore.
 
 Your virtual host is now set up and ready to use. You must upload web content to the **DocumentRoot** directory that you have created on your server to have content served when you navigate to your domain name using a browser.
 
