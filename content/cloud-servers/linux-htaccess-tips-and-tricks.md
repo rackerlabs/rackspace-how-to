@@ -23,8 +23,8 @@ This article covers some of the modifications that you can make.
 
 In the UNIX&reg; and Linux&reg; file systems, the names of hidden files are
 preceded by a period (for example, **.htaccess** and **.htpasswd**). FileMan
-and many File Transfer Protocol (FTP) applications do not display hidden files
-by default.
+and many File Transfer Protocol (FTP) applications do not display hidden 
+files by default.
 
 The way that you display hidden files, including your **.htaccess** file,
 depends on the FTP program that you are using. This section shows you how to
