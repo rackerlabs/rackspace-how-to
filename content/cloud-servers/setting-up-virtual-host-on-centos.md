@@ -1,128 +1,155 @@
 ---
-permalink: setting-up-virtual-host-on-centos
-audit_date:
-title: Setting Up Virtual Hosts on CentOS
+permalink: setting-up-virtual-host-on-centos/
+audit_date: '2019-02-14'
+title: Setting up virtual hosts on CentOS
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-02-14'
+last_modified_by: William Loy
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Virtual hosts are used to serve multiple domains off of one server/ip address. Depending which site a user would access on the server, a different page will be displayed according to what has been set in the vhost file for that particular site. You can add as many virtual hosts as you need to your server.
-This article assumes that you already have the domain you wish to use for your site pointing to your server via DNS or that you are using a local hosts file on your computer to point the domain to the server for testing purposes.
-Your server would need to have Apache installed in order to achieve this. If you need to install Apache, run the following command:
-sudo yum install httpd
-You would need to make sure the firewall on your server is configured to allow http traffic on port 80.
+Virtual hosts (vhost) are used to serve multiple domains by using a single server or Internet Protocol (IP) address. Different pages are displayed according to what has been set in the host file for that particular site. You can add as many virtual hosts as you need to your server. This article provides instructions for creating vhosts on CentOS&reg; specifically.
 
-Step 1:
-Create a new directory:
+**Note:** Replace any instance of `domain.com` in this article with the domain name of your site.
 
-This will create the directory where the web content for your site will be stored on the server. This is known as the Document Root location in the Apache vhost configuration file. Using -p will automatically add the parents of your new directory. You can replace domain.com in this documentation with the domain/name of your site.
-sudo mkdir -p /var/www/vhosts/domain.com/public_html
+### Vhost configuration prerequisites for CentOS&reg;
 
-Step 2:
-Permissions on new directory:
+This article assumes that you have configured the Domain Name Services (DNS) for your domain to point to your site or that you are using a local hosts file on your computer to point the domain to the server for testing purposes.
 
-We will need to change the ownership and permissions set on the directory that was created in step 1. Username would need to be replaced by the user you wish to give access to the directory.
-sudo chown -R username:username /var/www/vhosts/domain.com/public_html 
-The following command will allow everyone to read the files within your vhosts directory:
-sudo chmod -R 755 /var/www/vhosts/
+Your server must have Apache&reg; installed in order to configure vhosts. Install Apache by running the following command:
 
-Step 3:
-Creating the virtual host.
+    sudo yum install httpd
 
-We will first need to edit the httpd.conf file.
-sudo vi /etc/httpd/conf/httpd.conf
-At the bottom of this file insert the following line:
+**Note:** Verify the firewall on your server is configured to allow http traffic on port 80.
 
-Include vhost.d/*.conf
+#### Create a vhost directory on CentOS
 
-This will set apache to read all files ending in .conf within the /etc/httpd/vhost.d directory which we will create shortly.
-Save and exit the configuration file.
-Now we need to create the directory for the vhost conf files:
-sudo mkdir /etc/httpd/vhost.d/
-Now we will need to create a vhost template where we can make future virtual hosts from:
-touch /etc/httpd/vhost.d/default.template
+1. Create a new directory by using the following command:
 
-vi /etc/httpd/vhost.d/default.template
+    sudo mkdir -p /var/www/vhosts/domain.com/public_html
 
-Within this file you will need to insert the following:
-<VirtualHost *:80>
+   This directory is used to store the web content for your site. This is known as the **Document Root** location in the Apache `vhost` configuration file. Using `-p` automatically adds the parents of your new directory.
 
-       ServerName domain.com
+2. Set the necessary permissions on the new directory by using the following command:
 
-       ServerAlias www.domain.com
+       sudo chown -R username:vhostuser /var/www/vhosts/domain.com/public_html
 
-       DocumentRoot /var/www/vhosts/domain.com/public_html
+  **Note:** Replace `vhostuser` in `username:vhostuser`, with the user that should have access to the new directory.
 
-       <Directory /var/www/vhosts/domain.com/public_html>
+3. Grant everyone read access to the files within your vhosts directory by using the following:
 
-                Options Indexes FollowSymLinks MultiViews
+       sudo chmod -R 755 /var/www/vhosts/
 
-                AllowOverride All
+### Configure the virtual host file
 
-        </Directory>
+1. Open the **httpd.conf** file in the `vi` text editor by using the following command:
+
+       sudo vi /etc/httpd/conf/httpd.conf
+
+2. Insert the following line at the end of the file:
+
+    `Include vhost.d/*.conf`
+
+  This action sets Apache to read all files ending in **.conf** within the **/etc/httpd/vhost.d** directory.
+
+3. Save and exit the configuration file.
+
+4. Create the directory for the vhost configuration files by using the following command:
+
+       sudo mkdir /etc/httpd/vhost.d/
+
+5. Create a vhost template where future virtual hosts can be made by using the following command:
+
+       touch /etc/httpd/vhost.d/default.template
+
+6. Open the **default.template** file in the text editor `vi` by using the following command:
+
+       vi /etc/httpd/vhost.d/default.template
+
+7. Insert the following code within the **/etc/httpd/vhost.d/default.template** file:
+
+    `<VirtualHost *:80>
+
+         ServerName domain.com
+
+         ServerAlias www.domain.com
+
+         DocumentRoot /var/www/vhosts/domain.com/public_html
+
+         <Directory /var/www/vhosts/domain.com/public_html>
+
+                  Options Indexes FollowSymLinks MultiViews
+
+                  AllowOverride All
+
+          </Directory>
 
 
 
-CustomLog /var/log/httpd/domain.com-access.log combined
+       CustomLog /var/log/httpd/domain.com-access.log combined
 
-ErrorLog /var/log/httpd/domain.com-error.log
-        # Possible values include: debug, info, notice, warn, error, crit, 
+       ErrorLog /var/log/httpd/domain.com-error.log
+          # Possible values include: debug, info, notice, warn, error, crit,
 
-        # alert, emerg.
+          # alert, emerg.
 
-        LogLevel warn
+          LogLevel warn
 
-</VirtualHost>
- 
-#<VirtualHost _default_:443>
+       </VirtualHost>
 
-#        ServerName example.com
+       #<VirtualHost _default_:443>
 
-#        DocumentRoot /var/www/vhosts/domain.com/public_html
+       #        ServerName example.com
 
-#        <Directory /var/www/vhosts/domain.com/public_html>
+       #        DocumentRoot /var/www/vhosts/domain.com/public_html
 
-#                Options Indexes FollowSymLinks MultiViews
+       #        <Directory /var/www/vhosts/domain.com/public_html>
 
-#                AllowOverride All
+       #                Options Indexes FollowSymLinks MultiViews
 
-#        </Directory>
-#        CustomLog /var/log/httpd/example.com-ssl-access.log combined
+       #                AllowOverride All
 
-#        ErrorLog /var/log/httpd/example.com-ssl-error.log
-        # Possible values include: debug, info, notice, warn, error, crit,
+       #        </Directory>
+       #        CustomLog /var/log/httpd/example.com-ssl-access.log combined
 
-        # alert, emerg.
+       #        ErrorLog /var/log/httpd/example.com-ssl-error.log
+            # Possible values include: debug, info, notice, warn, error, crit,
 
-#        LogLevel warn
-#        SSLEngine on
+            # alert, emerg.
 
-#        SSLCertificateFile    /etc/ssl/certs/domain.crt
+       #        LogLevel warn
+       #        SSLEngine on
 
-#        SSLCertificateKeyFile /etc/ssl/certs/domain.key
-#</VirtualHost>
- 
-We will now need to save and exit this file.
+       #        SSLCertificateFile    /etc/ssl/certs/domain.crt
 
-We can now start creating vhost files within the /etc/httpd/vhost.d directory:
-sudo cp /etc/httpd/vhost.d/default.template /etc/httpd/vhost.d/domain.com.conf
+       #        SSLCertificateKeyFile /etc/ssl/certs/domain.key
+       #</VirtualHost>`
 
-You can now customise your newly created vhost conf file according to the domain name you are wanting to use.
-sudo vi /etc/httpd/vhost.d/domain.com.conf
-Once you have configured the file according to your needs, you can then save and exit the file.
- 
-Step 4:
-All set! We just need to restart apache by running the following command:
-sudo service httpd restart
-You should see something like the following example:
+8. Save the changes to the file and exit `vi`.
 
-Stopping httpd:                                                                                                [  OK  ]
-Starting httpd: httpd: Could not reliably determine the server's fully qualified                                                                              domain name, using 0000:0000:0000:0000:0000:0000:0000:0000 for ServerName                                                                                                                    
-                                                                                                               [  OK  ]
-This is just a warning which can be ignored.
-Your virtual host is now setup and ready to use. You will need to upload your webcontent to the DocumentRoot directory that you have created on your server and this will now be served when navigating to your domain name from your browser.viii) Add firewall policy to communicate to allow traffic between the two private subnets
-ix)Once every thing, navigate to VPN --> Monitor --> IPsec Monitor .  There status should be UP
+### Create the vhost file and restart Apache service
+
+1. Create the vhost file within the **/etc/httpd/vhost.d** directory using the following command:
+
+       sudo cp /etc/httpd/vhost.d/default.template /etc/httpd/vhost.d/domain.com.conf
+
+2. Open the **domain.com.conf** file in the text editor `vi` by using the following command:
+
+       sudo vi /etc/httpd/vhost.d/domain.com.conf
+
+3. Save the changes to the file and exit `vi`.
+
+4. Restart Apace by running the following command:
+
+       sudo service httpd restart
+
+5. You are prompted with the following message:
+
+        Stopping httpd:                                                                                                [  OK  ]
+        Starting httpd: httpd: Could not reliably determine the server's fully qualified                                                                              domain name, using 0000:0000:0000:0000:0000:0000:0000:0000 for ServerName
+                                                                                                                       [  OK  ]
+This is a default warning that can be ignored.
+
+Your virtual host is now setup and ready to use. You must upload web content to the **DocumentRoot** directory that you have created on your server to have content served when navigating to your domain name using a browser.
