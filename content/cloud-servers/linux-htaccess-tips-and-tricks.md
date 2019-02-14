@@ -40,7 +40,7 @@ include the following line:
 
     php_value max_execution_time <PHP maximum execution time>
 
-Replace the `PHP maximum execution time` placeholder with the value that you
+Replace `PHP maximum execution time` with the value that you
 want to use as the PHP maximum execution time. The default time is 30 seconds.
 When you successfully modify the file, the new maximum execution displays in
 your PHP information file.
@@ -55,7 +55,7 @@ include the following line:
 
     php_value memory_limit <megabytes>M
 
-Replace the `megabytes` placeholder with the megabyte value that you want to
+Replace `megabytes` with the megabyte value that you want to
 use. The default size is 128MB. When you successfully modify the file, the new
 memory limit displays in your PHP information file.
 
@@ -69,7 +69,7 @@ include the following line:
 
     php_value upload_max_filesize <megabytes>M
 
-Replace the `megabytes` placeholder with the megabyte value that you want
+Replace `megabytes` with the megabyte value that you want
 to use. The default size is 8MB. When you successfully modify the file,
 the new maximum upload size displays in your PHP information file.
 
@@ -89,7 +89,7 @@ include the following line:
 
     php_value post_max_size <megabytes>M
 
-Replace the `megabytes` placeholder with the megabyte value that you want
+Replace `megabytes` with the megabyte value that you want
 to use (for example, `16`).
 
 ### Create a 301 redirect
@@ -123,23 +123,23 @@ by adding code to your **.htaccess** file:
   </tr>
   <tr>
     <td>Redirect a single page</td>
-    <td>Redirect 301 /pagename.php http://www.domain.com/pagename.html</td>
+    <td>`Redirect 301 /pagename.php http://www.domain.com/pagename.html`</td>
   </tr>
   <tr>
     <td>Redirect an entire site</td>
-    <td>Redirect 301 / http://www.domain.com/</td>
+    <td>`Redirect 301 / http://www.domain.com/`</td>
   </tr>
   <tr>
     <td>Redirect an entire site to a subfolder</td>
-    <td>Redirect 301 / http://www.domain.com/subfolder/</td>
+    <td>`Redirect 301 / http://www.domain.com/subfolder/`</td>
   </tr>
   <tr>
     <td>Redirect a subfolder to another site</td>
-    <td>Redirect 301 /subfolder http://www.domain.com/</td>
+    <td>`Redirect 301 /subfolder http://www.domain.com/`</td>
   </tr>
 </table>
 
-##### Redirect using RedirectMatch 301
+##### Redirect by using RedirectMatch 301
 
 The following syntax redirects a file with the **.html** extension to use
 the same file name, but with the **.php** extension instead:
@@ -322,7 +322,7 @@ To enable directory listing in PHP, add the following line to your
 
     Options +Indexes
 
-### Turn off _magic quotes_
+### Turn off Magic Quotes
 
 For many Joomla!&reg; content management system (CMS) installations, customers
 need to turn off the **Magic Quotes** option in PHP 5.3. (This feature was
