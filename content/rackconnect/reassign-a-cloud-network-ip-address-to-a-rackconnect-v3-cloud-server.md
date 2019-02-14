@@ -1,7 +1,7 @@
 ---
 permalink: reassign-a-cloud-network-ip-address-to-a-rackconnect-v3-cloud-server/
 audit_date: '2019-02-14'
-title: Reassign a Cloud Network IP address to a RackConnect v3.0 Cloud Server
+title: Reassign a Cloud Network IP address to a RackConnect v3 Cloud Server
 type: article
 created_date: '2019-02-14'
 created_by: Rackspace Support
@@ -14,15 +14,15 @@ product_url: rackconnect
 **Applies to**: RackConnect v3.0
 
 This article shows you how to reassign a Cloud Network Internet Protocol (IP)
-address to one of your existing RackConnect v3 Cloud Servers by using our API
-tool, Pitchfork. You must use your primary username and API key to login to
-Pitchfork.
+address to one of your existing RackConnect v3 Cloud Servers by using the
+Rackspace API tool, [Pitchfork](https://pitchfork.rax.io/). You must use your
+primary username and API key to log in to Pitchfork.
 
 **Note:** Reassigning an IP address requires network downtime of up to 30
 minutes, so you should perform these steps during off hours.
 
-Instead of Pitchfork, you can use other tools such as the Neutron client or cURL
-to issue the appropriate API calls, if you prefer.
+Instead of Pitchfork, you can use other tools such as the OpenStack&reg;
+Networking (Neutron) client or cURL to issue the appropriate API calls.
 
 ### Prerequisites
 
@@ -33,10 +33,9 @@ appropriate API call to assign a specific IP address to your Cloud Server:
 
 - The subnet ID of the Cloud Network
 
-- The Universally Unique Identifiers (UUID) of the Cloud Servers
+- The Universal Unique Identifiers (UUIDs) of the Cloud Servers
 
-The following Pitchfork Uniform Resource Locators (URL) return your network IDs
-and subnet IDs:
+The following Pitchfork calls return your network IDs and subnet IDs:
 
 - [List networks](https://pitchfork.rax.io/networks/#list_networks-networks)
 - [List subnets](https://pitchfork.rax.io/networks/#list_subnets-networks)
@@ -65,19 +64,19 @@ Perform the following steps to detach the Cloud network:
   allocation pool.
 
 
-### Create new Port
+### Create a new port
 
 Perform the following steps to create a new port:
 
-- Use the Pitchfork call, [Create Port](https://pitchfork.rax.io/networks/#create_port-networks)
+- Use the Pitchfork call, [Create port](https://pitchfork.rax.io/networks/#create_port-networks)
 
-- Enter the appropriate values for the network\_id, device\_id (server uuid),
-  subnet\_id, and desired ip\_address.
+- Enter the appropriate values for the `network_id`, `device_id` (server UUID),
+  `subnet_id`, and desired `ip_address`.
 
 - Submit the call.
 
 
-### Attach Cloud Network
+### Attach the Cloud Network
 
 Perform the following steps to attach the Cloud Network:
 
