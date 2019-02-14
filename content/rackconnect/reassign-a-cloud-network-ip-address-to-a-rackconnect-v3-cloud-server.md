@@ -49,7 +49,7 @@ Servers** and choose the server that you want to use.
 
 Perform the following steps to detach the Cloud network:
 
-- Log into the [Cloud Control Panel](https://login.rackspace.com).
+- Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
 - In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
@@ -68,7 +68,7 @@ Perform the following steps to detach the Cloud network:
 
 Perform the following steps to create a new port:
 
-- Use the Pitchfork call, [Create port](https://pitchfork.rax.io/networks/#create_port-networks)
+- Use the Pitchfork call, [Create port](https://pitchfork.rax.io/networks/#create_port-networks).
 
 - Enter the appropriate values for the `network_id`, `device_id` (server UUID),
   `subnet_id`, and desired `ip_address`.
@@ -80,7 +80,7 @@ Perform the following steps to create a new port:
 
 Perform the following steps to attach the Cloud Network:
 
-- Log into the [Cloud Control Panel](https://login.rackspace.com).
+- Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
 - In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
