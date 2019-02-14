@@ -27,8 +27,8 @@ and many File Transfer Protocol (FTP) applications do not display hidden
 files by default.
 
 The way that you display hidden files, including your **.htaccess** file,
-depends on the FTP program that you are using. This section shows you how to
-do this in popular FTP programs.
+depends on the FTP program that you are using. This section 
+shows you how to do this in popular FTP programs.
 
 ### Change the PHP maximum execution time
 
