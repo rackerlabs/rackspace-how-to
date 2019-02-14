@@ -17,11 +17,11 @@ This article is intended for use with the following technologies:
 - Rackspace Cloud Sites
 
 You can make modifications to your site by using an **.htaccess** file.
-This article covers some of the modifications that you can make.
+This article shows you some of the modifications that you can make.
 
 ### Locate your .htaccess file
 
-In the UNIX&reg; and Linux&reg; file systems, the names of hidden files are
+In the UNIX&reg; and Linux file systems, the names of hidden files are
 preceded by a period (for example, **.htaccess** and **.htpasswd**). FileMan
 and many File Transfer Protocol (FTP) applications do not display hidden 
 files by default.
@@ -41,9 +41,9 @@ include the following line:
     php_value max_execution_time <PHP maximum execution time>
 
 Replace `PHP maximum execution time` with the value that you
-want to use as the PHP maximum execution time. The default time is 30 seconds.
-When you successfully modify the file, the new maximum execution displays in
-your PHP information file.
+want to use as the maximum execution time. The default time is 30 seconds.
+When you successfully modify the file, the new maximum execution time 
+displays in your PHP information file.
 
 ### Change the PHP memory limit
 
@@ -56,7 +56,7 @@ include the following line:
     php_value memory_limit <megabytes>M
 
 Replace `megabytes` with the megabyte value that you want to
-use. The default size is 128MB. When you successfully modify the file, the new
+use. The default size is 128 MB. When you successfully modify the file, the new
 memory limit displays in your PHP information file.
 
 ### Change the PHP maximum upload file size
@@ -70,7 +70,7 @@ include the following line:
     php_value upload_max_filesize <megabytes>M
 
 Replace `megabytes` with the megabyte value that you want
-to use. The default size is 8MB. When you successfully modify the file,
+to use. The default size is 8 MB. When you successfully modify the file,
 the new maximum upload size displays in your PHP information file.
 
 If you're running WordPress&reg; and continue to have problems after you
@@ -94,10 +94,11 @@ to use (for example, `16`).
 
 ### Create a 301 redirect
 
-A 301 redirect is an HTTP status message that permanently transfers a user or
-search engine to a URL that is different from the one that was originally
-requested. Using a 301 redirect is an effective way to ensure that users and
-search engines find your content.
+A 301 redirect is a HyperText Transfer Protocol (HTTP) status message 
+that permanently transfers a user or search engine to a 
+Uniform Resource Locator (URL) that is different from the one that was 
+originally requested. Using a 301 redirect is an effective way 
+to ensure that users and search engines find your content.
 
 The following examples are specific to PHP and work only if your cloud site is
 configured for PHP. These examples do not work for Internet Information
@@ -106,7 +107,7 @@ Services (IIS) with Active Server Pages (ASP) or ASP.NET.
 #### Redirect examples
 
 The following examples are basic 301 redirect examples that use an
-**.htaccess** text file. Save this file in the folder from which you want
+**.htaccess** file. Save this file in the folder from which you want
 to perform the redirect.
 
 For example, if you place the **.htaccess** file in the
@@ -123,19 +124,19 @@ by adding code to your **.htaccess** file:
   </tr>
   <tr>
     <td>Redirect a single page</td>
-    <td>`Redirect 301 /pagename.php http://www.domain.com/pagename.html`</td>
+    <td><code>Redirect 301 /pagename.php http://www.domain.com/pagename.html</code></td>
   </tr>
   <tr>
     <td>Redirect an entire site</td>
-    <td>`Redirect 301 / http://www.domain.com/`</td>
+    <td><code>Redirect 301 / http://www.domain.com/</code></td>
   </tr>
   <tr>
     <td>Redirect an entire site to a subfolder</td>
-    <td>`Redirect 301 / http://www.domain.com/subfolder/`</td>
+    <td><code>Redirect 301 / http://www.domain.com/subfolder/</code></td>
   </tr>
   <tr>
     <td>Redirect a subfolder to another site</td>
-    <td>`Redirect 301 /subfolder http://www.domain.com/`</td>
+    <td><code>Redirect 301 /subfolder http://www.domain.com/</code></td>
   </tr>
 </table>
 
@@ -147,7 +148,7 @@ the same file name, but with the **.php** extension instead:
     RedirectMatch 301 (.*)\.html$ http://www.domain.com$1.php
 
 You can also perform a 301 redirect by _rewriting_ a URL in your **.htaccess**
-file. This section includes example code for performing this task.
+file. Several of the following sections include example code for performing this task.
 
 **Redirect from an old domain to a new domain**
 
@@ -212,7 +213,7 @@ For an extensive list of the MIME types that Apache supports, see the [Apache
 Software Foundation Subversion
 Server](http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types).
 
-**Note**: The formatting in the preceding link might not be entirely correctly
+**Note**: The formatting in the preceding link might not be entirely correct
 for use in an **.htaccess** file.
 
 ### Force SSL on your PHP site
@@ -275,7 +276,7 @@ frame, as shown in the following example:
 ### Stop PHP scripts from executing in a directory
 
 To stop PHP scripts from executing in a directory, create an **.htaccess**
-file in that directory and xadd the following line:
+file in that directory and add the following line:
 
     removehandler .php
 
@@ -361,7 +362,7 @@ The following example shows how to set the time zone to Dubai:
 
 #### Test the time zone change
 
-To test the time zone change, check the PHP information file, or run the
+To test the time-zone change, check the PHP information file, or run the
 following PHP file:
 
     <?php echo date('l jS \of F Y h:i:s A'); ?>
