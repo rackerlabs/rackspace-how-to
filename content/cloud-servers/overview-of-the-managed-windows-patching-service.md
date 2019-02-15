@@ -59,11 +59,11 @@ responsible for any issues that might arise due to the installation.
 
 You can choose to receive approved patches at one of the following intervals:
 
-- **Early release week**: The first week after Microsoft's patch Tuesday.
+- **Early release week**: The first week after Microsoft's Patch Tuesday.
 
-- **Default release week**: The second week after Microsoft's patch Tuesday.
+- **Default release week**: The second week after Microsoft's Patch Tuesday.
 
-- **Delayed release week**: The third week after Microsoft's patch Tuesday.
+- **Delayed release week**: The third week after Microsoft's Patch Tuesday.
 
 You can also choose the day of the week and the time that the update occurs.
 
