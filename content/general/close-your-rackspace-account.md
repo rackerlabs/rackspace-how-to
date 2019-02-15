@@ -12,7 +12,7 @@ product_url: cloud-servers
 
 We understand that some of our customers must sever their relationship with Rackspace for varying reasons. Before doing so, we encourage you to take extra precaution to ensure that you have properly migrated all data and services being used at Rackspace.
 
-You can close your account at any time by using the following instructions:
+You can close your Rackspace account at any time by using the following instructions:
 
 1. Log in to your [Cloud Control Panel](https://login.rackspace.com).
 
