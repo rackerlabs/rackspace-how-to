@@ -18,7 +18,7 @@ determining which updates we will approve.
 
 We approve the following Microsoft updates:
 
-- Updates that apply to the Windows operating system (OS) itself.
+- Updates that apply to the Windows&reg; operating system (OS) itself.
   This category includes the following updates:
   - Updates that are installed by default.
   - Available add-on roles or services (such as Internet Explorer&reg; or
