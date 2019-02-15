@@ -1,7 +1,7 @@
 ---
 permalink: close-your-rackspace-account/
 audit_date: '2019-02-15'
-title: Close Your Rackspace account
+title: Close your Rackspace account
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-15'
