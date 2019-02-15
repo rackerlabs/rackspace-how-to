@@ -4,8 +4,8 @@ audit_date:
 title: Install licensing services to Cloud Servers for Windows 2008 and Windows 2008 R2
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-02-14'
+last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -21,17 +21,18 @@ product_url: cloud-servers
 
 **Solution**: Add Terminal Services or Remote Desktop licenses to your Cloud Server.
 
-### Remove the Terminal Services role on Windows 2008
+### Remove the Remote Desktop Services on Windows Server 2008 R2 (Terminal Services on Windows Server 2008)
+
+Complete the following steps to remove the default Remote Desktop or Terminal Services role from your Windows 2008 server. 
+
 1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
 2. Click **Remove Roles** on the right side of the **Server Manager** window.
-3. Locate and deselect **Terminal Services**, click **Next**, then click **Remove**.
+3. Locate and deselect **Remote Desktop Services** (**Terminal Services** for Windows 2008), click **Next**, then click **Remove**.
 
-### Remove the Remote Desktop Service role on Windows 2008 R2
-1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
-2. Click **Remove Roles** on the right side of the **Server Manager** window.
-3. Locate and deselect **Remote Desktop Services**, click **Next**, then click **Remove**.
+### Install Licensing for Remote Desktop Services on Windows 2008 R2 (Terminal Services on Windows Server 2008)
 
-### Install Licensing for Remote Desktop Services (or Terminal Services) on Windows 2008 R2 and Windows 2008
+Complete the following steps to install licensing on Window Server 2008 R2 or Windows Server 2008
+
 1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
 2. Click **Add Roles** on the right side of the **Server Manager** window.
 3. Place a check in the box next to Remote Desktop Services (Terminal Services for Windows 2008), click **Next**, and click **Next** again.
