@@ -1,33 +1,30 @@
 ---
-permalink: troubleshooting-mysql-with-mysqltuner
-audit_date:
-title: Troubleshooting MySQL with MySQLTuner
+permalink: troubleshooting-mysql-configuration-with-mysqltuner-script
+audit_date: '2019-01-18'
+title: Troubleshooting MySQL configuration with MySQLTuner script
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-01-18'
+last_modified_by: '2019-01-18'
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-MySQL tuner is a script originally written by a Racker (Major Hayden) that executes a series of SQL queries to identify some common configuration issues that could lead to problems in certain circumstances.
-It's important to remember that scripts are no more then that. They are only scripts. While many of the suggestions should be taken into considerations, it can be just as bad to blindly implement changes without fully understanding the changes being made. That being said, let's jump right in!
+MySQLTuner is an original script written by Rackspace that executes a series of SQL queries to identify some common configuration issues with MySQL.
 
-* First, we must ensure we have a properly configured ~/.my.cnf file. With this file, we can easily configure mysqltuner to automatically connect to the remote database.
+While many of the suggestions provided by the script should be taken into consideration, do not implement any changes without fully understanding the changes being made.
+
+1. Ensure that your  `~/.my.cnf` file is properly configured. Using this file, you can configure MySQLTuner to automatically connect to the remote database.
 [client]
 
-user=[Your User goes here.] 
+    user=*userName*
 
-password=[Your Password goes here.] 
+    password=*password*
 
-host=[Cloud DB hostname goes here.]
+    host=*cloudDBHostname*
 
-* We also need to obtain the script.
+2. Obtain the wget **mysqltuner.pl** script.
 
-wget mysqltuner.pl
+3. Execute the script using perl.
 
-* The file extension is .pl which tells us we should use perl to execute it!
-
-perl mysqltuner.pl
-
-**Note** Please keep in mind that scripts are not magical and you should always back up your configuration before testing optimizations. Optimizations should not be performed unless you fully understand (or at least have researched it) the implication of changing the setting.
+Always back up your configuration before testing the optimizations. Optimizations should not be performed unless you fully understand (or have researched) the implication of changing the setting.
