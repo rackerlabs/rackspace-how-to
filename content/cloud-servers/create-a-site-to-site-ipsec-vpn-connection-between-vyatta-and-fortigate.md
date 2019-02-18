@@ -119,14 +119,14 @@ Use the following steps to configure the IPsec VPN in the FortiGate firewall:
 3. In the **Name** field, enter **RSVPN**.
 4. Select **Static IP address** and enter the public IP address of the Vyatta
    router appliance in the **IP Address** column.
-4. In the **Authentication** section, select **Pre-shared Key** and enter the
+5. In the **Authentication** section, select **Pre-shared Key** and enter the
    key as **test_test_111**. The preshared key should be same in Vyatta and
    FortiGate.
 
-5. Ensure that the Internet Key Exchange version (**IKE version**) is **1**
+6. Ensure that the Internet Key Exchange version (**IKE version**) is **1**
    and the **Mode** is set to **Main**.
 
-6. You must use the following encryptions and settings:
+7. You must use the following encryptions and settings:
 
    - Advanced Encryption Standard 128 (AES128), with authentication set to
      Secure Hash Algorithm 1 (SHA1)
@@ -139,7 +139,7 @@ Use the following steps to configure the IPsec VPN in the FortiGate firewall:
    - **Diffie-Hellman (DH) Groups**: 14,5, and 2
    - **Key lifetime**: 3600 seconds
 
-7. The **Local Address** is the address of the LAN. The **Remote Address** is
+8. The **Local Address** is the address of the LAN. The **Remote Address** is
    the Vyatta appliance's private subnet IP. Use the following encryptions and
    settings:
 
@@ -152,10 +152,10 @@ Use the following steps to configure the IPsec VPN in the FortiGate firewall:
    - **DH Groups**: 14,5, and 2
    - **Key Lifetime**: 3600 seconds
 
-8. Select **Network** and add static route **10.181.192.0/19** (the
+9. Select **Network** and add static route **10.181.192.0/19** (the
    subnet of the Vyatta appliance).
 
-9. Add a firewall policy that allows traffic between the two private subnets.
+10. Add a firewall policy that allows traffic between the two private subnets.
 
-10. Finally, select **VPN > Monitor > IPsec Monitor** and verify that the
+11. Finally, select **VPN > Monitor > IPsec Monitor** and verify that the
     **Status** displays as **UP**.
