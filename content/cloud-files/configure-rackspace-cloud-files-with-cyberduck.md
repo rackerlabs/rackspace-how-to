@@ -7,6 +7,8 @@ created_date: '2019-02-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-18'
 last_modified_by: Cat Lookabaugh
+product: Cloud Files
+product_url: cloud-files
 ---
 
 You can use Cyberduck&reg; to manage your Rackspace Cloud Files storage account
