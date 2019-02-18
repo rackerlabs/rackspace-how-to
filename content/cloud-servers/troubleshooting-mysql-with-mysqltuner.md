@@ -20,7 +20,7 @@ MySQLTuner is an original Perl script written by Rackspace that executes a serie
 
     host=*cloudDBHostname*
 
-2. Download the **mysqltuner.pl** script from **https://github.com/major/MySQLTuner-perl**.
+2. Download the **mysqltuner.pl** script at https://github.com/major/MySQLTuner-perl.
 
 3. Run the script using Perl.
 
