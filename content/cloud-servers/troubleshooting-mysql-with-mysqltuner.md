@@ -10,15 +10,15 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-MySQLTuner is an original Perl script written by Rackspace that executes a series of SQL queries to identify some common configuration issues with MySQL. Using the results you can make adjustments to increase performance and stability.
+MySQLTuner is an original Perl script written by Rackspace that executes a series of SQL queries to identify some common configuration issues with MySQL. Using the results, you can make adjustments to increase performance and stability.
 
 1. Ensure that your  **~/.my.cnf** file is properly configured. Using this file, you can configure MySQLTuner to automatically connect to the remote database (client).
 
-    user=*userName*
+       user=*userName*
 
-    password=*password*
+       password=*password*
 
-    host=*cloudDBHostname*
+       host=*cloudDBHostname*
 
 2. Download the **mysqltuner.pl** script at https://github.com/major/MySQLTuner-perl.
 
