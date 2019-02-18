@@ -14,11 +14,11 @@ MySQLTuner is an original Perl script written by Rackspace that executes a serie
 
 1. Ensure that your  **~/.my.cnf** file is properly configured. Using this file, you can configure MySQLTuner to automatically connect to the remote database (client).
 
-       user=*userName*
+         user=*userName*
 
-       password=*password*
+         password=*password*
 
-       host=*cloudDBHostname*
+         host=*cloudDBHostname*
 
 2. Download the **mysqltuner.pl** script at https://github.com/major/MySQLTuner-perl.
 
