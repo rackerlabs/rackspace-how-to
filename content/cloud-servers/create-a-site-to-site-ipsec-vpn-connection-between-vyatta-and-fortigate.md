@@ -25,18 +25,18 @@ dynamic IP address and DDNS name) as point B:
 <table>
   <tr>
     <th>Point A (Vyatta router)</th>
-    <th>Point B (FortiGate with dynamic a IP address and DDNS name)</th>
+    <th>Point B (FortiGate with a dynamic IP address and DDNS name)</th>
   </tr>
   <tr>
     <td>
-      **Device**: Vyatta router appliance at Rackspace<br />
-      **eth0**: 134.213.135.XXX (public IP)<br />
-      **eth1**: 10.181.200.XXX (private IP)
+      <strong>Device</strong>: Vyatta router appliance at Rackspace<br />
+      <strong>eth0</strong>: 134.213.135.XXX (public IP)<br />
+      <strong>eth1</strong>: 10.181.200.XXX (private IP)
     </td>
     <td>
-      **Device**: Fortigate firewall<br />
-      **wan1**: Dynamic IP with the DDNS name forti.fortiddns.com<br />
-      **internal**: 192.168.10.0/24 (local area network (LAN) subnet)
+      <strong>Device</strong>: Fortigate firewall<br />
+      <strong>wan1</strong>: Dynamic IP with the DDNS name forti.fortiddns.com<br />
+      <strong>internal</strong>: 192.168.10.0/24 (local area network (LAN) subnet)
     </td>
   </tr>
 </table>
@@ -57,35 +57,35 @@ appliance:
 1. Log in to Vyatta server by using Secure Shell (SSH), as shown in the
    following example:
 
-      $ssh vyatta@cloud-server-09
-      vyatta@cloud-server-09:~$ show interfaces ethernet                        //Get interface IP details
-      $configure                                                                                         //Move to configuration mode
-      vyatta@cloud-server-09# set vpn ipsec ipsec-interfaces interface eth0
-      [edit]
-      vyatta@cloud-server-09# show vpn ipsec ipsec-interfaces
-      +interface eth0
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 1
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 1 encryption aes256
-      vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 1 hash sha1
-      vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 2 encryption aes128
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 2 hash sha1
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS lifetime 3600
-      vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 1
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 1 encryption aes256
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 1 hash sha1
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 2 encryption 3des
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 2 hash md5
-      [edit]
-      vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS lifetime 3600
-      [edit]
+       $ssh vyatta@cloud-server-09
+       vyatta@cloud-server-09:~$ show interfaces ethernet                        //Get interface IP details
+       $configure                                                                                         //Move to configuration mode
+       vyatta@cloud-server-09# set vpn ipsec ipsec-interfaces interface eth0
+       [edit]
+       vyatta@cloud-server-09# show vpn ipsec ipsec-interfaces
+       +interface eth0
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 1
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 1 encryption aes256
+       vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 1 hash sha1
+       vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 2 encryption aes128
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS proposal 2 hash sha1
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec ike-group IKE-RS lifetime 3600
+       vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 1
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 1 encryption aes256
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 1 hash sha1
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 2 encryption 3des
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS proposal 2 hash md5
+       [edit]
+       vyatta@cloud-server-09# set vpn ipsec esp-group ESP-RS lifetime 3600
+       [edit]
 
 2. Configure the IPsec connection key and DDNS settings, as shown in the
    following example:
