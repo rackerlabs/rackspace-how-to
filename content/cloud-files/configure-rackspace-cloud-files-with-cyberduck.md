@@ -57,19 +57,19 @@ configuration:
 
     <img src="{% asset_path cloud-files/configuring-rackspace-cloud-files-with-cyberduck/cyberduck_for_UK_1.png %}" width="393" height="319" border="1" alt=""  />
 
-2.	In the popup dialog box, perform the following steps:
+2.	In the pop-up dialog box, perform the following steps:
 
     A. Select **Swift (OpenStack Object Storage)** from the drop-down menu.
 
     B. In the **Server** field, enter **identity.api.rackspacecloud.com**.
 
-    C. In the Username field, enter your Rackspace Cloud username.
+    C. In the **Username** field, enter your Rackspace Cloud username.
 
 	<img src="{% asset_path cloud-files/configuring-rackspace-cloud-files-with-cyberduck/cyberduck6.png %}" width="299" height="373" border="1" alt=""  />
 
 3.	Close the dialog box, and then double-click on the bookmark.
 
-4. In the popup dialog box, enter your Cloud username, and paste the API key
+4. In the pop-up dialog box, enter your Cloud username and paste the API key
 into the **Password** field.
 
 5. When the connection is complete, click **Login**.
@@ -80,8 +80,8 @@ After you are logged in, you can view, share, and add Cloud Files content throug
 the Cyberduck interface.
 
 Before uploading any files or folders, ensure that your account contains at least
-one folder (container) in the region where your files should be stored. You can
-create a folder by using the **New Folder** command from the File menu. Without
+one folder (container) in the region where you plan to store your files. You can
+create a folder by using the **New Folder** command from the **File** menu. Without
 an existing folder as a guide, Cyberduck chooses a default region on its own
 when performing bulk uploads.
 
