@@ -1,5 +1,5 @@
 ---
-permalink: use-scheduler-hints-to-a-create-server/
+permalink: use-scheduler-hints-to-create-a-server/
 audit_date: '2019-02-18'
 title: Use scheduler hints to create a server
 type: article
@@ -21,33 +21,33 @@ authentication tokens and how to interact with the API by using curl is required
 
 The scheduler hint extension enables you to specify the proximity of newly
 provisioned cloud servers to already existing cloud servers on your account.
-For more details on why this is important, please see our
+For more details on why this is important, see our
 [Cloud Server API Guide](https://developer.rackspace.com/docs/cloud-servers/v2/extensions/ext-sched-hint/).
 
 ### Create a server with scheduler hints
 
 You can create a server with scheduler hints by using curl calls or API browser
-plug-ins. Make sure that you have the server Universal Uniform Identifiers (UUIDs)
-for any servers that you want to build *close to* or *far away* from. The UUIDs
-can be found on the **Server Details** page in the **Servers** section of the
+plug-ins. Make sure that you have the server UUIDs for any servers that you want
+to build *close to* or *far away* from. The UUIDs can be found on the
+**Server Details** page in the **Servers** section of the
 [Cloud Control Panel](https:\\login.rackspace.com).
 
 In the following cURL examples, substitute the following variables with the
 corresponding values for your account:
 
-- region: The region of your new server.
+- **region**: The region of your new server.
 
-- yourAccountNumber: Your Rackspace account number.
+- **yourAccountNumber**: Your Rackspace account number.
 
-- yourAuthToken: An authentication token from the Identity service.
+- **yourAuthToken**: An authentication token from the Identity service.
 
-- serverUUID: The UUID of the cloud server that you are building near to or far from.
+- **serverUUID**: The UUID of the cloud server that you are building near to or far from.
 
-- serverName: The name of your new cloud server.
+- **serverName**: The name of your new cloud server.
 
-- serverImage: The UUID of the server image for your new server.
+- **serverImage**: The UUID of the server image for your new server.
 
-- flavorID: The ID of the flavor for your new server.
+- **flavorID**: The ID of the flavor for your new server.
 
 
 ### Create a server near another server
