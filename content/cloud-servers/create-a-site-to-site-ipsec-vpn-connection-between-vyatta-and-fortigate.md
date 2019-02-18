@@ -19,8 +19,8 @@ appliance has an option to configure a dynamic DNS (DDNS) name to configure a
 VPN.
 
 The following table shows the left side as point A (the Rackspace Vyatta
-router appliance) and the right side (FortiGate with a dynamic IP address and
-DDNS name) as point B:
+router appliance) and the right side (FortiGate with a 
+dynamic IP address and DDNS name) as point B:
 
 <table>
   <tr>
