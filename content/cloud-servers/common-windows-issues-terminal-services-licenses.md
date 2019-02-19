@@ -1,46 +1,44 @@
 ---
-permalink: common-windows-issues-terminal-services-licenses
+permalink: install-licensing-services-to-cloud-servers-for-windows-2008-to-prevent-licensing-error
 audit_date:
-title: Install licensing services to Cloud Servers for Windows 2008 and Windows 2008 R2
+title: Install licensing services to Cloud Servers for Windows 2008 and Windows 2008 R2 to prevent a licensing error
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: '2019-02-14'
+last_modified_date: '2019-02-19'
 last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
 ---
-**Problem**: A licensing error prevents you from accessing your Cloud Server via a Remote Desktop Connection.
+This article shows you how to install licensing services for Cloud Servers for Windows® 2008 and Windows 2008 R2 to prevent a licensing error that keeps you from accessing your Cloud Server by using a Remote Desktop Connection (RDC).
 
-**Cause**: By default, Rackspace Cloud Servers come with a Remote Desktop license that allows 2 concurrent users to access your server. If you need more than 2 users to be able to access the Cloud Server at the same time, you need to purchase and install a Terminal Services license. You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors.
-
----
-
-**Note:** In Microsoft Windows &reg; Server 2008 this feature is named Terminal Services. In Windows Server 2008 R2 this feature is named Remote Desktop Services.
+By default, Rackspace Cloud Servers come with an RDC license that allows two concurrent users to access your server. If you need more than two users to be able to access the Cloud Server at the same time, you need to purchase and install a Terminal Services license. You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors.
 
 ---
 
-**Solution**: Add Terminal Services or Remote Desktop licenses to your Cloud Server.
+**Note:** In Microsoft Windows 2008, this feature is named Terminal Services. In Windows 2008 R2, this feature is named Remote Desktop Services (RDS).
 
-### Remove the Remote Desktop Services on Windows Server 2008 R2 (Terminal Services on Windows Server 2008)
+---
 
-Complete the following steps to remove the default Remote Desktop or Terminal Services role from your Windows 2008 server. 
+### Remove Terminal Services on Windows 2008 or RDS on Windows 2008 R2
 
-1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
+Complete the following steps to remove the default RDS or Terminal Services role from your Windows server. 
+
+1. Open **Server Manager** and click **Roles** in the left side of the **Server Manager** window.
 2. Click **Remove Roles** on the right side of the **Server Manager** window.
-3. Locate and deselect **Remote Desktop Services** (**Terminal Services** for Windows 2008), click **Next**, then click **Remove**.
+3. Locate and deselect **Terminal Services** for Windows 2008 or **Remote Desktop Services** for Windows 2008 R2, click **Next**, then click **Remove**.
 
-### Install Licensing for Remote Desktop Services on Windows 2008 R2 (Terminal Services on Windows Server 2008)
+### Install licensing for Terminal Services for Windows 2008 or RDS on Windows 2008 R2
 
-Complete the following steps to install licensing on Window Server 2008 R2 or Windows Server 2008
+Complete the following steps to install licensing on Windows Server 2008 or Windows Server 2008 R2:
 
-1. Open Server Manager and click **Roles** in the left side of the **Server Manager** window.
+1. Open **Server Manager** and click **Roles** in the left side of the **Server Manager** window.
 2. Click **Add Roles** on the right side of the **Server Manager** window.
-3. Place a check in the box next to Remote Desktop Services (Terminal Services for Windows 2008), click **Next**, and click **Next** again.
+3. Place a check in the box next to **Remote Desktop Services** (**Terminal Services** for Windows 2008), click **Next**, and click **Next** again.
 4. In the **Role Services** window, select **Remote Desktop Licensing** (**Terminal Server Licensing** for Windows 2008), and click **Next**.
 5. In the **Configure Discovery Scope** window, select the discovery option that best fits your environment. In most situations, accept the default configuration and click **Next**.
 6. Click **Install** to install the Remote Desktop Licensing (Terminal Services Licensing for Windows 2008) role service.
-7. After the installation is complete, exit out of the wizard.
-8. Click the Start Menu, and select **Administrative Tools > Remote Desktop Services (or Terminal Services) > Remote Desktop Licensing Manager (or Terminal Services Licensing Manager)**.
+7. After the installation is complete, exit the wizard.
+8. Click the **Start Menu**, and select **Administrative Tools > Remote Desktop Services (or Terminal Services) > Remote Desktop Licensing Manager (or Terminal Services Licensing Manager)**.
 9. On the **Remote Desktop Licensing Manager** (**Terminal Services Licensing Manager** for Windows 2008) window, right-click the server name and select **Activate**.
 10. Click **Next** and choose an Activation method. In most situations use the **Automatic** connection method.
 11. Complete the information in the fields provided and click **Next**.
