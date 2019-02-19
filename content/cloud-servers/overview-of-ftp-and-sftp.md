@@ -2,6 +2,7 @@
 permalink: overview-of-ftp-and-sftp/
 audit_date: '2019-01-18'
 title: Overview of FTP and SFTP
+type: article
 created_date: '2019-02-19'
 created_by: Rackspace Community
 last_modified_date: '2019-02-19'
@@ -27,7 +28,7 @@ commands, and the files themselves. As a result, anyone with
 access to the network can potentially read them.
 
 SFTP is an extension of the Secure Shell Protocol (SSH).
-It is a more secure option that provides end-to-end encryption through 
+It is a more secure option that provides end-to-end encryption through
 the SSH tunnel.
 
 #### Setup and user management
@@ -39,9 +40,9 @@ SSH or SFTP. Any user with SSH access can also access the server by using
 SFTP. The groups and permissions that are associated with your users also
 determine their ability to manage files.
 
-FTP requires you to install an FTP server (such as very secure File Transfer Protocol
-(FTP) daemon (vsftpd)), open port 21, and create and maintain separate users and
-permissions for accessing files and directories.
+FTP requires you to install an FTP server (such as very secure File Transfer
+Protocol (FTP) daemon (vsftpd)), open port 21, and create and maintain
+separate users and permissions for accessing files and directories.
 
 However, FTP has the following advantages over SFTP:
 
@@ -54,7 +55,7 @@ However, FTP has the following advantages over SFTP:
 ### Use vsftpd for FTP
 
 If you plan to use FTP, we recommend that you review the following resources
-that show you how to install and configure vsftpd on a cloud server. 
+that show you how to install and configure vsftpd on a cloud server.
 Vsftpd is an open source FTP server that you can use to transfer files.
 
   - [Rackspace Cloud Essentials - Install vsftpd for
