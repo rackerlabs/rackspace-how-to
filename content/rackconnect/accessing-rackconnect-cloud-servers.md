@@ -47,13 +47,13 @@ You can view the IP addresses assigned to your cloud servers by querying
 the Cloud Servers API or by using one of the following methods.
 
 RackConnect v2.0 customers can look up the cloud server's details in the
-MyRackspace portal as follows:
+MyRackspace Portal as follows:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 3. Click **Products > Devices**.
 4. Click the name of the server for which you want to view the details.
-   
+
    In the **Details** tab, the **IP Details** section lists the public IPv4 address.
 
 RackConnect v2.0 and v3.0 customers can look up the cloud server's details in the [Cloud Control

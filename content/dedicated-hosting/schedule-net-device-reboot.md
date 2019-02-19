@@ -20,7 +20,7 @@ For more information about the reboot button process, see the [Network device re
 
 ### Schedule a net device reboot
 
-1. Log in to the [MyRackspace portal](https://my.rackspace.com/).
+1. Log in to the [MyRackspace Portal](https://my.rackspace.com/).
 
 2. In the top navigation bar, click **Products > Devices**.
 
@@ -34,7 +34,7 @@ For more information about the reboot button process, see the [Network device re
    - **Reason**: The reason that you want to reboot your net device
    - **Date/Time**: The date and time when you want your net device to reboot
    - **Devices**: The net device or devices that you want to reboot
-   
+
      - **HA network devices**: Select only one net device in an HA pair for code version updates. The standby unit will be updated automatically as a part of failover/HA functionality.
 
    <img src="{% asset_path dedicated-hosting/schedule-net-device-reboot/enter-reboot-info-rev.png %}" />

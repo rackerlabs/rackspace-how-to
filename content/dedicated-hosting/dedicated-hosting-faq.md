@@ -51,7 +51,7 @@ subnavigation bar.
 permission, you must have one of the following permissions:
 
   - **Account Administrator**: This permission grants a user unlimited access
-    to every section of the MyRackspace portal.
+    to every section of the MyRackspace Portal.
 
   - **Admin**: This permission (on a device or service) grants a user the
     ability to manage the device or service, as well as which users can access the device or service.

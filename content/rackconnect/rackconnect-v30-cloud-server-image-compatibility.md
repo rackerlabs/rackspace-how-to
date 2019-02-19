@@ -32,7 +32,7 @@ v3.0 compatibility matrix](/how-to/rackconnect-v30-compatibility)
 for a list of all products with which RackConnect v3.0 is compatible.
 
 To provide you with the best experience possible, we recommend that you
-use the Cloud Control Panel, rather than the MyRackspace portal, when
+use the Cloud Control Panel, rather than the MyRackspace Portal, when
 building new RackConnect v3.0 cloud servers or when working and
 performing any tasks with your RackConnect v3.0 associated cloud
 account.

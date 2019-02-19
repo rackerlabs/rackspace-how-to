@@ -38,7 +38,7 @@ We support current versions of the following OSs:
 
 The [Cloud Control Panel](https://login.rackspace.com) (choose **Rackspace Cloud**
 from **Select a Product** in the top navigation bar),
-[MyRackspace Customer Portal](https://login.rackspace.com) (choose **Dedicated Hosting**
+[MyRackspace Portal](https://login.rackspace.com) (choose **Dedicated Hosting**
 from **Select a Product** in the top navigation bar), and
 [Cloud Office Control Panel](https://cp.rackspace.com) are supported on the
 following evergreen browsers:

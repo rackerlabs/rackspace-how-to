@@ -64,14 +64,14 @@ reboots automatically.
 2) If you are on your own patching schedule, the automation will still run on
 your servers to remediate the issue. At your discretion, either (1) wait until
 the next set of patches are applied to your servers (devices will reboot
-automatically), or (2) schedule reboots through the MyRackspace portal.
+automatically), or (2) schedule reboots through the MyRackspace Portal.
 
 Q: Can I reboot devices myself after the maintenance?
 
 A: Yes, you can reboot devices any time after the maintenance window. You know
 your operational requirements and when your devices can incur downtime. If you
 keep patching up to date, your servers will reboot the next time they are
-patched. You can also schedule reboots through the MyRackspace portal or do them
+patched. You can also schedule reboots through the MyRackspace Portal or do them
 manually.
 
 Q: Do I need to respond to this notification?
@@ -99,4 +99,3 @@ Q: Where can I get more information?
 
 A: If you would like more information on this issue, see the
 [documentation provided by VMware](https://kb.vmware.com/s/article/2148218).
-

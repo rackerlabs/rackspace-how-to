@@ -72,7 +72,7 @@ access to the software, speak to your Rackspace account team about
 
 #### How do I re-image a VM?
 
-You can request this through an action in the MyRackspace portal.
+You can request this through an action in the MyRackspace Portal.
 
 #### Are imaged-based backups part of the VMware Server Virtualization offering?
 
@@ -87,7 +87,7 @@ and therefore fault tolerance is not enabled.
 #### Can I turn off utility billing for VMs?
 
 You have the ability to suspend the utility billing of virtual machines when
-they are not in use by powering down VMs through the MyRackspace portal.
+they are not in use by powering down VMs through the MyRackspace Portal.
 By powering off a VM from within the OS you will not only generate an
 alert ticket for support to investigate, but the VM will continue billing
 at the daily utility rate. To
@@ -106,7 +106,7 @@ machine. Snapshots give you the ability to roll back (Windows
 patching at the disk level). Snapshots are not a permanent backup and
 generally should not be kept for more than 72 hours.
 
-#### What can I use the MyRackspace portal for?
+#### What can I use the MyRackspace Portal for?
 
 -  Ordering new or multiple VMs
 -  Change the resources of a VM
@@ -142,7 +142,7 @@ cloning, snapshotting, or vMotion.
 #### How do I add RAM or CPU to a VM?
 
 To add RAM or CPU to your VM, request a ticket with your Rackspace VMware
-support team through the MyRackspace portal.
+support team through the MyRackspace Portal.
 
 #### What are the differences between snapshot, clones, and templates?
 
@@ -189,7 +189,7 @@ specify the virtual disk that you want expanded.
 
 #### How do I view the performance or monitor my available resources of a VM or host?
 
-You can use the MyRackspace portal to view hypervisor and virtual machine
+You can use the MyRackspace Portal to view hypervisor and virtual machine
 performance. For instructions on how to view performance, see the
 [Viewing hypervisor and virtual machine performance section](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-hyps-clusters/) of
 the Server Virtualization Customer Handbook.

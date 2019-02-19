@@ -47,10 +47,10 @@ miles from DFW1.
 
 #### What are the advantages of moving to DFW3?
 
-DFW3 is one of Rackspace’s newest data center facilities. It benefits from the latest infrastructure and networking, enabling efficiencies through higher power densities. 
+DFW3 is one of Rackspace’s newest data center facilities. It benefits from the latest infrastructure and networking, enabling efficiencies through higher power densities.
 
 From a power perspective, the busway combined with taller cabinets gives us much more capability to run cabinets at higher power levels than in DFW1. Lower cost is one positive side effect of this improvement, and another advantage is the reduced likelihood of having to migrate a customer solution because of power concerns. Power redundancy is also doubled (full 2N) from the cabinet to the floor power distribution units (PDU).
- 
+
 From a networking perspective, DFW3 has our latest shared aggregation platform (Nexus 7k) providing 20G redundant connections from the Top-of-Rack (ToR) switches to the aggregation (aggr) switch layer and standard 1G in cabinets. We also have aggregated exnet throughout, again lessening the likelihood of requiring in-DC migrations because of localized network constraints. This is a big departure from DFW1, which has areas with no aggregated exnet, no 1G connections between ToR and aggr switches, and has 100Mb in cabinets in many areas.
 
 #### Will service be interrupted?
@@ -226,7 +226,7 @@ night:
 
 -   Perform a test reboot of your servers before the migration to ensure that
     applications and services start correctly. You can schedule reboots from
-    the MyRackspace portal.
+    the MyRackspace Portal.
 
 #### I would like to run a full backup before my migration. Can this be arranged?
 
@@ -275,14 +275,14 @@ more risk. As such, we recommend that you make all the necessary preparations
 required to stay with the original move date.
 
 If it is absolutely necessary for you to change your move date, then you might
-be required to change the public IP addresses of your solution's edge device. 
+be required to change the public IP addresses of your solution's edge device.
 These changes will include DNS changes and potential configuration work on your side.
 
 #### I have more than one solution in DFW1. Will they all be migrated at the same time?
 
-The migration date depends on the VLANs in which your solutions are located.  If the 
-solutions are in the same VLAN, they will be moved at the same time.  If they are in 
-different VLANs, they might be scheduled to move on different dates. 
+The migration date depends on the VLANs in which your solutions are located.  If the
+solutions are in the same VLAN, they will be moved at the same time.  If they are in
+different VLANs, they might be scheduled to move on different dates.
 
 **Note**: Solution means everything behind the edge device, which is usually a
 firewall but might be a load balancer or a server.
@@ -302,9 +302,9 @@ selected appropriate partners.
 The vehicles will be loaded within the data-center compound and so will be
 subject to our stringent physical security controls. They will be unloaded
 within the same conditions in DFW3. The tailgates of the vehicles will be
-locked with special bolts by two Rackspace personnel, and photographs of the 
-secured bolts will be taken at both locations to prove that they have not been 
-tampered with.  The vehicles will have GPS tracking, will not display the Rackspace 
+locked with special bolts by two Rackspace personnel, and photographs of the
+secured bolts will be taken at both locations to prove that they have not been
+tampered with.  The vehicles will have GPS tracking, will not display the Rackspace
 logo, and will be followed by Rackspace personnel.
 
 Data in our shared SAN environment will be replicated over to DFW3 before each
@@ -321,10 +321,8 @@ years.
 
 Contact us in any of the following ways:
 
--   Create a ticket in the MyRackspace portal. Request in the ticket that it
+-   Create a ticket in the MyRackspace Portal. Request in the ticket that it
     be assigned to the DFW1 Migration ticket queue.
 -   Ask a member of your account team for more information.
 -   Respond to one of the ticket notifications that you will receive before
     your move night.
-
-

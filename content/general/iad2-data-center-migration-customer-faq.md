@@ -221,7 +221,7 @@ night:
 
 -   Perform a test reboot of your servers before the migration to ensure that
     applications and services start correctly. You can schedule reboots from
-    the MyRackspace portal.
+    the MyRackspace Portal.
 
 #### I would like to run a full backup before my migration. Can this be arranged?
 
@@ -309,7 +309,7 @@ years.
 
 Contact us in any of the following ways:
 
--   Create a ticket in the MyRackspace portal. Request in the ticket that it
+-   Create a ticket in the MyRackspace Portal. Request in the ticket that it
     be assigned to the DC Migration ticket queue.
 -   Ask a member of your account team for more information.
 -   Respond to one of the ticket notifications that you will receive before

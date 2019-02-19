@@ -11,11 +11,11 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-The MyRackspace portal contains a self-service feature that enables you to download a copy of your firewall's or load balancer's running configuration. You can use this feature for your documentation and auditing purposes.
+The MyRackspace Portal contains a self-service feature that enables you to download a copy of your firewall's or load balancer's running configuration. You can use this feature for your documentation and auditing purposes.
 
 ### Viewing your network device's configuration
 
-1. Log in to the [MyRackspace customer portal](https://my.rackspace.com/portal/auth/login) by using your account number, username, and password.
+1. Log in to the [MyRackspace Portal](https://my.rackspace.com/portal/auth/login) by using your account number, username, and password.
 
 2. In the top navigation bar click **Products** > **Devices**.
 

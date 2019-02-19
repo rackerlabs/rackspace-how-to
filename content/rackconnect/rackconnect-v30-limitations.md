@@ -48,7 +48,7 @@ software gateways because of the translation that is done in the hardware Applic
 
 - As with RackConnect v2.0, RackConnect v3.0 bandwidth might be limited by the capabilities of the cloud servers flavors that you are running, your network device's capabilities, and your dedicated server's capabilities.
 
-- The default setting for RackConnect v3.0 access between cloud and dedicated network segments is to restrict all communication. During the RackConnect v3.0 implementation process and afterwards, you can provide us with details about how you want the access between your network segments configured. Alternatively, you can also set up any necessary firewall rules on your own by using the Firewall Manager feature that is available in the [MyRackspace portal](https://login.rackspace.com/).
+- The default setting for RackConnect v3.0 access between cloud and dedicated network segments is to restrict all communication. During the RackConnect v3.0 implementation process and afterwards, you can provide us with details about how you want the access between your network segments configured. Alternatively, you can also set up any necessary firewall rules on your own by using the Firewall Manager feature that is available in the [MyRackspace Portal](https://login.rackspace.com/).
 
 - Your devices must be deployed in a region supported by RackConnect v3.0. The regions supported are DFW, IAD, ORD, LON, HKG, and SYD.
 

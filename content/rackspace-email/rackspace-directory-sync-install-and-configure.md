@@ -150,7 +150,7 @@ Directory Sync by performing the following steps:
 2. On the Sync Registration Page, enter the admin ID and password
     associated with your Rackspace Cloud Office account, and then click
     **Register**.
-    - Customers who logged in to the [MyRackspace portal](https://login.rackspace.com)
+    - Customers who logged in to the [MyRackspace Portal](https://login.rackspace.com)
         will automatically create an admin ID through the MyRackspace
         Portal before download
     - Customers who logged in to the [Cloud Office Control Panel](https://cp.rackspace.com)

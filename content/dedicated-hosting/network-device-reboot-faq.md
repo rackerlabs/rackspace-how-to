@@ -24,14 +24,14 @@ The warm-boot process reboots your network appliance which resets all memory uti
 #### Why would I want to reboot my network device?
 
 Generally, you need to reboot a network device only when a new version of the operating system needs to be loaded or the operating system contains a bug that has caused processes on the device to operate improperly. Rackspace prestages the new operating system or the operating system updates on the network device. During the next reboot, the operating system is updated to the staged code. Rackspace notifies you when new code is staged on your device so that you are aware of any pending updates.
- 
+
 #### When should I reboot my network devices?
 
 You can reboot your network devices whenever you like. Rackspace highly recommends that except in the case of emergency, you always reboot your network devices in a maintenance window when you expect the least impact to your production or business.
 
 #### Can I schedule the reboot?
 
-Yes, you can schedule a reboot to occur. We have a "Schedule Reboot" feature built into our MyRackspace portal. For more information about scheduling a reboot, see the [Scheduling a network device reboot](https://support.rackspace.com/how-to/schedule-network-device-reboot/) article.
+Yes, you can schedule a reboot to occur. We have a "Schedule Reboot" feature built into our MyRackspace Portal. For more information about scheduling a reboot, see the [Scheduling a network device reboot](https://support.rackspace.com/how-to/schedule-network-device-reboot/) article.
 
 #### I was notified that my network device is vulnerable to a bug or a security related exploit. How do I proceed?
 
@@ -49,12 +49,12 @@ Every device located behind the network device will be unavailable while the dev
 #### Will any “device down” alerts be generated while my network devices reboot?
 
 No alerts should be generated. During the reboot process, alert suppression is put in place for any devices behind the network device. This alert suppression is removed after the reboot process has completed.
- 
+
 #### Who can reboot my network device?
 
 Any contact on your account that has administrative or edit permissions on the network
 device can start the reboot process in the MyRackspace Portal.
- 
+
 #### What specifically occurs during the reboot process?
 
 The following events occur during this process:
@@ -67,7 +67,7 @@ The following events occur during this process:
 6. The device is reloaded.
 7. Alert suppression is lifted.
 8. The ticket is updated with the relevant details of the reboot, including the code version running when the process completes.
- 
+
 #### What risks are associated with a reboot event?
 
 The biggest risk during in a network device reboot is hardware failure. This risk can be lessened by employing a high availability (HA) solution.
@@ -78,17 +78,16 @@ The process monitors the reboot actions. If the device does not recover in the e
 
 
 ### Reboots for high-availability network device pairs
- 
+
 #### I have an HA network device pair. How does the reboot process work in this case?
 
-Either device can own the primary device role at any time. The reboot process first determines which device is currently the active device and which device currently owns the standby role. The standby device is rebooted first. After the standby device has been rebooted and is in a healthy status, the network traffic fails over to this device (which is now the active device) and the formerly active device is rebooted. After the formerly active device has rebooted, it assumes the standby role, and the process is complete. 
+Either device can own the primary device role at any time. The reboot process first determines which device is currently the active device and which device currently owns the standby role. The standby device is rebooted first. After the standby device has been rebooted and is in a healthy status, the network traffic fails over to this device (which is now the active device) and the formerly active device is rebooted. After the formerly active device has rebooted, it assumes the standby role, and the process is complete.
 
 #### In my HA pair, which network device should I reboot?
 
 You can select either of the HA network devices for reboot. The reboot process
 determines which device owns the standby role and which device owns the primary role
- 
+
 #### In my HA pair, do I need to reboot both network devices?
 
 No, you need to click the reboot button for only one network device in your HA pair. After the process starts, both devices are rebooted.
-

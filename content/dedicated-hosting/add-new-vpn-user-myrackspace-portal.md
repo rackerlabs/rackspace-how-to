@@ -11,11 +11,11 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Adding new client VPN users is now an automated task within the MyRackspace portal. This article describes how to add a new VPN using a ticket template.
+Adding new client VPN users is now an automated task within the MyRackspace Portal. This article describes how to add a new VPN using a ticket template.
 
-### Create a ticket in the MyRackspace portal
+### Create a ticket in the MyRackspace Portal
 
-1. Log in to the [MyRackspace customer portal](https://my.rackspace.com/portal/auth/login).
+1. Log in to the [MyRackspace Portal](https://my.rackspace.com/portal/auth/login).
 
    You will need your Rackspace account number, as well as your username and password.
 
@@ -31,7 +31,7 @@ Adding new client VPN users is now an automated task within the MyRackspace port
 
    VPN user automation can generate a secure password for the username you entered, or you can create a custom password. This password must have at least 8 characters with uppercase, lowercase, numbers, and special characters.
 
-   After the ticket is created, you are redirected back to your ticket list in the MyRackspace portal. Automation runs in the background while the ticket is created, which typically takes less than a minute to complete. After you refresh your browser, the ticket *Create New VPN User on Firewall Request (from template)* is in **Confirm Solved** status.
+   After the ticket is created, you are redirected back to your ticket list in the MyRackspace Portal. Automation runs in the background while the ticket is created, which typically takes less than a minute to complete. After you refresh your browser, the ticket *Create New VPN User on Firewall Request (from template)* is in **Confirm Solved** status.
 
 5. Retrieve the password for your new VPN user by opening the ticket. The password is in the most recent comment.
 

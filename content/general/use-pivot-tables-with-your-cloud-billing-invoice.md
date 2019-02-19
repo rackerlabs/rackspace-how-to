@@ -40,7 +40,7 @@ Use the following steps to view billing data in pivot tables:
 
 2.  Log in to the portal.
 
-      a.  **Dedicated account customers**: Log in to the [MyRackspace customer portal](https://login.rackspace.com/).
+      a.  **Dedicated account customers**: Log in to the [MyRackspace Portal](https://login.rackspace.com/).
 
       b.  **Cloud customers**: Log in to the [Cloud Control Panel](https://login.rackspace.com).
 

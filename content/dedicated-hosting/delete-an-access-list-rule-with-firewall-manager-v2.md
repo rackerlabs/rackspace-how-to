@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a tool within the MyRackspace portal that allows you to manage your Cisco firewall.
+Firewall Manager v2 is a tool within the MyRackspace Portal that allows you to manage your Cisco firewall.
 
 This article describes how to delete an access-list rule by using Firewall Manager v2.
 

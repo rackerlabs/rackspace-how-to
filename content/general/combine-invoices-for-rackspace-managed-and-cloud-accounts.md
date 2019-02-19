@@ -23,7 +23,7 @@ contracting entities, or have an outstanding balance on a child account.
 
 ### Combine invoices
 
-1. For Cloud accounts, log in to the [Cloud Control Panel](https://login.rackspace.com/). For Managed accounts, log in to the [MyRackspace portal](https://login.rackspace.com/).
+1. For Cloud accounts, log in to the [Cloud Control Panel](https://login.rackspace.com/). For Managed accounts, log in to the [MyRackspace Portal](https://login.rackspace.com/).
 2. In the upper-right corner of the page, click **Billing**.
 
    The Rackspace Billing portal displays.

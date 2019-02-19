@@ -15,7 +15,7 @@ When you use Sitecore Managed Cloud, you are given a fully customizable dedicate
 
 While Rackspace manages your Sitecore environment, access to three portals gives you more control and direction over your Sitecore environment and website.
 
-- **MyRackspace portal**: Contains your credentials for logging in to the Azure and Sitecore portals.
+- **MyRackspace Portal**: Contains your credentials for logging in to the Azure and Sitecore portals.
 
 - **Azure portal**: Manages your Sitecore environment.
 
@@ -23,9 +23,9 @@ While Rackspace manages your Sitecore environment, access to three portals gives
 
 ### Get your login credentials
 
-The MyRackspace portal provides the login credentials for both the Azure and Sitecore portals. While these credentials are sent through a link to the MyRackspace portal in the Welcome email received at deployment, you can also find the credentials inside a support ticket in the MyRackspace portal. To find this ticket:
+The MyRackspace Portal provides the login credentials for both the Azure and Sitecore portals. While these credentials are sent through a link to the MyRackspace Portal in the Welcome email received at deployment, you can also find the credentials inside a support ticket in the MyRackspace Portal. To find this ticket:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com/portal/).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/portal/).
 
 2. In the top navigation bar, click **Tickets**.
 
@@ -40,7 +40,7 @@ Sitecore runs on Windows .NET services, hosted on Azure Web Apps. Therefore, all
 - Restart your website or application
 - Access logs
 
-Log in to the [Azure portal](https://portal.azure.com/) using the credentials sent to you by Rackspace in a support ticket. This ticket is accessible through the [MyRackspace portal](https://login.rackspace.com/portal/).
+Log in to the [Azure portal](https://portal.azure.com/) using the credentials sent to you by Rackspace in a support ticket. This ticket is accessible through the [MyRackspace Portal](https://login.rackspace.com/portal/).
 
 **Note:** You cannot delete your application or website through the Azure portal. To delete your application, contact [Rackspace Support](https://www.rackspace.com/en-us/information/contactus).
 

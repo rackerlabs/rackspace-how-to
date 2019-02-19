@@ -51,12 +51,10 @@ After you have completed your renewal, you're ready to install the new certifica
 
 ### MyRackspace users
 
-If you are a Managed or Dedicated customer and use the [MyRackspace portal](https://login.rackspace.com/), you can purchase an SSL certificate from Rackspace. Contact your Support team or submit a ticket to start the certificate purchase process.
+If you are a Managed or Dedicated customer and use the [MyRackspace Portal](https://login.rackspace.com/), you can purchase an SSL certificate from Rackspace. Contact your Support team or submit a ticket to start the certificate purchase process.
 
 When it is time to renew your certificate, Rackspace will contact you before the end of the validity period.
 
 ### Next steps
 
 - [Install an SSL certificate](/how-to/install-an-ssl-certificate)
-
-

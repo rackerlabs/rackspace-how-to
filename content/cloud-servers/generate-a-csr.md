@@ -16,11 +16,11 @@ Before you can install a [Secure Socket Layer (SSL) certificate](/how-to/install
 - [(Linux&reg; server) OpenSSL](#openssl)
 - [(Microsoft&reg; Windows&reg; server) Internet Information Services (IIS) Manager](#windows-iis-manager)
 - [(Cloud customers) Cloud Control Panel](#cloud-control-panel)
-- [(Managed customers) MyRackspace portal](#myrackspace-portal)
+- [(Managed customers) MyRackspace Portal](#myrackspace-portal)
 
 ### OpenSSL
 
-The following sections describe how to use OpenSSL to generate a CSR for a single host name. If you want to generate a CSR for multiple host names, we recommend using the [Cloud Control Panel](#cloud-control-panel) or the [MyRackspace portal](#myrackspace-portal).
+The following sections describe how to use OpenSSL to generate a CSR for a single host name. If you want to generate a CSR for multiple host names, we recommend using the [Cloud Control Panel](#cloud-control-panel) or the [MyRackspace Portal](#myrackspace-portal).
 
 #### Install OpenSSL
 
@@ -183,11 +183,11 @@ To request your SSL certificate, copy the **Certificate Request** text and submi
 
 Copy the private key to the server that will host the certificate.  See your application documentation to determine where to install the private key and certificate on your server.
 
-### MyRackspace portal
+### MyRackspace Portal
 
-If you are a Managed or Dedicated customer, you can request a CSR through the MyRackspace portal by using the following steps:
+If you are a Managed or Dedicated customer, you can request a CSR through the MyRackspace Portal by using the following steps:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com) and select **Dedicated Hosting** from the drop-down product menu in the top navigation bar.
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com) and select **Dedicated Hosting** from the drop-down product menu in the top navigation bar.
 2. In the top navigation bar, click **Tickets > Create Ticket**.
 3. On the **Tickets / Create New Ticket** page, select **Generate Certificate Signing Request (CSR)** from the **Subject** drop-down list.
 4. Enter the following information in the **Ticket Details** section:

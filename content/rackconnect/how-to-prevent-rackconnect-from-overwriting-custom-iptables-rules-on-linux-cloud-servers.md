@@ -64,7 +64,7 @@ merge method on a particular server, perform the following steps:
         touch /etc/rackconnect-allow-custom-iptables
 
 2.  Force a software firewall update by creating a network policy in the
-    MyRackspace portal that affects the server on which you created the
+    MyRackspace Portal that affects the server on which you created the
     `/etc/rackconnect-allow-custom-iptables` file. The easiest way to do
     this is to create a temporary Dedicated to Cloud Server policy for a
     bogus IP address to all cloud servers. After the policy has been pushed to
@@ -135,7 +135,7 @@ disk in order to experiment with new rules, knowing that they can simply
 restart the iptables "service" to restore the old ruleset. If you are
 one of these users, be aware that updates to your network policies (by
 yourself or by another user in your organization with access to your
-account in the MyRackspace portal) might cause RackConnect Automation to
+account in the MyRackspace Portal) might cause RackConnect Automation to
 save the running ruleset to disk in the background while you are
 experimenting.
 
