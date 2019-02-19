@@ -18,11 +18,11 @@ Use the following steps to run MySQLTuner:
 
 1. Ensure that your  **~/.my.cnf** file is properly configured. By using this file, you can configure MySQLTuner to automatically connect to the remote database (client). Enter the following values:
 
-    user=*userName*
+       user=*userName*
 
-    password=*password*
+       password=*password*
 
-    host=*cloudDBHostname*
+       host=*cloudDBHostname*
 
 2. Download the **mysqltuner.pl** script from [https://github.com/major/MySQLTuner-perl](https://github.com/major/MySQLTuner-perl).
 
