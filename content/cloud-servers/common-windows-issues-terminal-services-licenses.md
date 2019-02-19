@@ -1,6 +1,6 @@
 ---
-permalink: install-licensing-services-to-cloud-servers-for-windows-2008-to-prevent-licensing-error
-audit_date:
+permalink: install-licensing-services-to-cloud-servers-for-windows-2008-to-prevent-licensing-error/
+audit_date: '2019-01-18'
 title: Install licensing services to Cloud Servers for Windows 2008 and Windows 2008 R2 to prevent a licensing error
 created_date: '2019-01-18'
 created_by: Rackspace Community
@@ -9,7 +9,7 @@ last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
 ---
-This article shows you how to install licensing services for Cloud Servers for Windows® 2008 and Windows 2008 R2 to prevent a licensing error that keeps you from accessing your Cloud Server by using a Remote Desktop Connection (RDC).
+This article shows you how to install licensing services for Cloud Servers for Microsoft® Windows® 2008 and Windows 2008 R2 to prevent a licensing error that keeps you from accessing your Cloud Server by using a Remote Desktop Connection (RDC).
 
 By default, Rackspace Cloud Servers come with an RDC license that allows two concurrent users to access your server. If you need more than two users to be able to access the Cloud Server at the same time, you need to purchase and install a Terminal Services license. You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors.
 
@@ -21,7 +21,7 @@ By default, Rackspace Cloud Servers come with an RDC license that allows two con
 
 ### Remove Terminal Services on Windows 2008 or RDS on Windows 2008 R2
 
-Complete the following steps to remove the default RDS or Terminal Services role from your Windows server. 
+Complete the following steps to remove the default RDS or Terminal Services role from your Windows server:
 
 1. Open **Server Manager** and click **Roles** in the left side of the **Server Manager** window.
 2. Click **Remove Roles** on the right side of the **Server Manager** window.
@@ -40,7 +40,7 @@ Complete the following steps to install licensing on Windows Server 2008 or Wind
 7. After the installation is complete, exit the wizard.
 8. Click the **Start Menu**, and select **Administrative Tools > Remote Desktop Services (or Terminal Services) > Remote Desktop Licensing Manager (or Terminal Services Licensing Manager)**.
 9. On the **Remote Desktop Licensing Manager** (**Terminal Services Licensing Manager** for Windows 2008) window, right-click the server name and select **Activate**.
-10. Click **Next** and choose an Activation method. In most situations use the **Automatic** connection method.
+10. Click **Next** and choose an **Activation** method. In most situations use the **Automatic** connection method.
 11. Complete the information in the fields provided and click **Next**.
 12. Complete the next set of fields and click **Next**.
 13. After the server activates against a Microsoft licensing server, click **Next** twice, and then click **Next** again to launch the **Install Licenses Wizard**.
@@ -48,4 +48,4 @@ Complete the following steps to install licensing on Windows Server 2008 or Wind
 15. Enter the product code for your Terminal Services license, click **Add**, and then click **Next**.
 16. Click **Finish** to exit out of the wizard.
 
-Your server is now ready to function as a terminal services licensing server.
+Your server is now ready to function as a Terminal Services licensing server.
