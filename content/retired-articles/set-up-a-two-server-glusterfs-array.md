@@ -7,8 +7,7 @@ created_date: '2014-06-03'
 created_by: Matt Sherborne
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
+
 ---
 
 This article presents a step-by-step description for how to set up a two-server GlusterFS array.
