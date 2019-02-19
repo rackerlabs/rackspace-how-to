@@ -10,7 +10,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article discuss the advantages and disadvantages of using File Transfer
+This article discusses the advantages and disadvantages of using File Transfer
 Protocol (FTP) and SSH File Transfer Protocol (SFTP).
 
 ### Differences between FTP and SFTP
@@ -22,9 +22,9 @@ difference is in the level of security that they offer.
 #### Security
 
 FTP traffic is unencrypted. All FTP
-transmissions are sent as regular text, including usernames, passwords, commands, 
-and the files themselves. As a result, anyone with access to the network
-can potentially read them.
+transmissions are sent as regular text, including usernames, passwords,
+commands, and the files themselves. As a result, anyone with
+access to the network can potentially read them.
 
 SFTP is an extension of the Secure Shell Protocol (SSH).
 It is a more secure option that provides end-to-end encryption through 
