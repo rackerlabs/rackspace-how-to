@@ -15,19 +15,20 @@ Protocol (FTP) and SSH File Transfer Protocol (SFTP).
 
 ### Differences between FTP and SFTP
 
-FTP and SFTP are two separate protocols that work in a similar way.
+FTP and SFTP are separate protocols that work in a similar way.
 Both offer file transfer and management on remote machines. The primary
-difference is in the level of security that each protocol offers.
+difference is in the level of security that they offer.
 
 #### Security
 
 FTP traffic is unencrypted. All FTP
-transmissions are in clear text, including usernames, passwords, commands, 
-and the actual files. As a result, anyone with access to the network
+transmissions are sent as regular text, including usernames, passwords, commands, 
+and the files themselves. As a result, anyone with access to the network
 can potentially read them.
 
-SFTP, on the other hand, is an extension of the Secure Shell Protocol (SSH).
-It provides end-to-end encryption through the SSH tunnel.
+SFTP is an extension of the Secure Shell Protocol (SSH).
+It is a more secure option that provides end-to-end encryption through 
+the SSH tunnel.
 
 #### Setup and user management
 
@@ -38,8 +39,8 @@ SSH or SFTP. Any user with SSH access can also access the server by using
 SFTP. The groups and permissions that are associated with your users also
 determine their ability to manage files.
 
-FTP requires you to install an FTP server (if you use FTP, we recommend
-vsftpd), open port 21, and create and maintain separate users and
+FTP requires you to install an FTP server (such as very secure File Transfer Protocol
+(FTP) daemon (vsftpd)), open port 21, and create and maintain separate users and
 permissions for accessing files and directories.
 
 However, FTP has the following advantages over SFTP:
@@ -53,14 +54,13 @@ However, FTP has the following advantages over SFTP:
 ### Use vsftpd for FTP
 
 If you plan to use FTP, we recommend that you review the following resources
-that show you how to install and configure very secure File Transfer Protocol
-(FTP) daemon (vsftpd) on a cloud server. Vsftpd is an open source FTP server
-that you can use to transfer files.
+that show you how to install and configure vsftpd on a cloud server. 
+Vsftpd is an open source FTP server that you can use to transfer files.
 
   - [Rackspace Cloud Essentials - Install vsftpd for
-    CentOS](https://support.rackspace.com/how-to/rackspace-cloud-essentials-centos-installing-vsftpd/)
+    CentOS](/how-to/rackspace-cloud-essentials-centos-installing-vsftpd/)
   - [Rackspace Cloud Essentials - Configure a user in vsftpd for
-    CentOS](https://support.rackspace.com/how-to/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd/)
+    CentOS](/how-to/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd/)
 
 ### Recommendation
 
