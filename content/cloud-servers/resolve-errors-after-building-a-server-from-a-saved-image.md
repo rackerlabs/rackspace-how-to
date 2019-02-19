@@ -16,7 +16,7 @@ not properly configured.
 
 The services that cause these errors are xe-linux-distribution and
 nova-agent. The article does not discuss these services in detail, but does
-show you how these services should be configured on start.
+show you how you how to configure these services on startup.
 
 Because these errors are more prominent on Debian&reg;-based servers, the
 example troubleshoots an Ubuntu&reg; 13.10 server. The instructions also work
@@ -40,20 +40,20 @@ server from a saved image:
 
    Because this is a new server, nova-agent (`S20nova-agent` in blue in the
    image, or s20) is set to start immediately after xe-linux-distribution
-   (`S14xe-linux-distribution` in the preceding image, or s14). However, if you
+   (`S14xe-linux-distribution` in the image, or s14). However, if you
    install certain applications, the installation might reorder the startup
    processes and place another service in between S14 and S20. If this
    reordering occurs, nova-agent does not start immediately after
    xe-linux-distribution. This reordering is what causes the error.
 
 3. Move the run levels for these services so that they start up consecutively
-   and are the first services in the `init.d` start process. The following
+   and are the first services in the `init.d` startup process. The following
    commands move the xe-linux-distribution to S01 and nova-agent to S02:
 
        cd /etc/rc$(runlevel | cut -d " " -f 2).d/
        mv S14xe-linux-distribution S01xe-linux-distribution && mv S20nova-agent S02nova-agent
 
-   Depending on your runlevels (which determine how the system starts),
+   Depending on your run levels (which determine how the system starts),
    the preceding command varies. Ensure that you use the appropriate numbers
    that display in your output.
 
