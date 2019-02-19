@@ -1,27 +1,29 @@
 ---
-permalink: troubleshooting-mysql-configuration-with-mysqltuner-script
-audit_date: '2019-02-18'
-title: Troubleshooting MySQL configuration with MySQLTuner script
+permalink: troubleshoot-mysql-configuration-with-mysqltuner-script
+audit_date: '2019-01-18'
+title: Troubleshoot MySQL configuration with MySQLTuner script
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: '2019-02-18'
-last_modified_by: 'Erik Wilson'
+last_modified_date: '2019-01-19'
+last_modified_by: '2019-01-18'
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-MySQLTuner is an original Perl script written by Rackspace that executes a series of SQL queries to identify some common configuration issues with MySQL. Using the results, you can make adjustments to increase performance and stability.
+MySQLTuner is an original Perl® script written by Rackspace that executes a series of Structured Query Language (SQL®) queries to identify some common configuration issues with MySQL®. By using the results, you can make adjustments to increase performance and stability.
 
-1. Ensure that your  **~/.my.cnf** file is properly configured. Using this file, you can configure MySQLTuner to automatically connect to the remote database (client).
+Always back up your configuration files before testing the optimizations. You should not perform optimizations unless you fully understand (or have researched) the implication of changing the settings.
 
-         user=*userName*
+Use the following steps to run MySQLTuner:
 
-         password=*password*
+1. Ensure that your  **~/.my.cnf** file is properly configured. By using this file, you can configure MySQLTuner to automatically connect to the remote database (client). Enter the following values:
 
-         host=*cloudDBHostname*
+    user=*userName*
 
-2. Download the **mysqltuner.pl** script at https://github.com/major/MySQLTuner-perl.
+    password=*password*
 
-3. Run the script using Perl.
+    host=*cloudDBHostname*
 
-Always back up your configuration files before testing the optimizations. Optimizations should not be performed unless you fully understand (or have researched) the implication of changing the settings.
+2. Download the **mysqltuner.pl** script from [https://github.com/major/MySQLTuner-perl](https://github.com/major/MySQLTuner-perl).
+
+3. Run the script by using Perl.
