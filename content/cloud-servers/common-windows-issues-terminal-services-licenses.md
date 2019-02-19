@@ -9,9 +9,9 @@ last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
 ---
-**Problem**: A licensing error is preventing you from accessing your Cloud Server via a Remote Desktop Connection.
+**Problem**: A licensing error prevents you from accessing your Cloud Server via a Remote Desktop Connection.
 
-**Cause**: By default, Rackspace Cloud Servers come with a Remote Desktop license that allows 2 concurrent users to access your server. If you need more than 2 users to be able to access the Cloud Server at the same time, you will need to purchase and install a Terminal Services license. You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors.
+**Cause**: By default, Rackspace Cloud Servers come with a Remote Desktop license that allows 2 concurrent users to access your server. If you need more than 2 users to be able to access the Cloud Server at the same time, you need to purchase and install a Terminal Services license. You may have already installed a trial version of the Terminal Services license, and the grace period has recently expired, causing the recent appearance of licensing errors.
 
 ---
 
