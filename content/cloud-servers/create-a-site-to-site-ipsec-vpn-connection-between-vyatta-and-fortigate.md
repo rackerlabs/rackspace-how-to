@@ -11,11 +11,11 @@ product_url: cloud-servers
 ---
 
 This article shows you how to create a site-to-site Internet Protocol Security
-(IPsec) virtual private network (VPN) connection between Vyatta&reg; router
-(Rackspace) and FortiGate&reg; by using a Dynamic Domain Name System (DNS)
+(IPsec) virtual private network (VPN) connection between a Vyatta&reg; router
+(Rackspace) and FortiGate&reg; by using a dynamic Domain Name System (DDNS)
 name. Configuring an IPsec VPN between two end points typically requires a
 static Internet Protocol (IP) address on both ends. However, the Vyatta server
-appliance has an option to configure a dynamic DNS (DDNS) name to configure a
+appliance has an option to configure a DDNS name to configure a
 VPN.
 
 The following table shows the left side as point A (the Rackspace Vyatta
@@ -43,7 +43,7 @@ dynamic IP address and DDNS name) as point B:
 
 After you successfully establish a site-to-site IPsec VPN tunnel connection
 between Vyatta and FortiGate, you can ping the Vyatta router's private IP
-address (such as 10.181.200.xx) from any internal IP address
+address (such as 10.181.200.XXX) from any internal IP address
 (such as 192.168.1.7).
 
 FortiGate enables you to create a DDNS name. To learn how to configure a DDNS
@@ -54,7 +54,7 @@ name in FortiGate, see [How to set up DDNS on a FortiGate device](https://video.
 Use the following steps to configure the IPsec VPN in the Vyatta router
 appliance:
 
-1. Log in to Vyatta server by using Secure Shell (SSH), as shown in the
+1. Log in to the Vyatta server by using Secure Shell (SSH), as shown in the
    following example:
 
        $ssh vyatta@cloud-server-09
@@ -114,7 +114,7 @@ appliance:
 
 Use the following steps to configure the IPsec VPN in the FortiGate firewall:
 
-1. Log in to FortiGate firewall as an administrative user.
+1. Log in to the FortiGate firewall as an administrative user.
 2. Select **VPN > IPsec > Tunnel > Create new > Custom VPN Tunnel**.
 3. In the **Name** field, enter **RSVPN**.
 4. Select **Static IP address** and enter the public IP address of the Vyatta
