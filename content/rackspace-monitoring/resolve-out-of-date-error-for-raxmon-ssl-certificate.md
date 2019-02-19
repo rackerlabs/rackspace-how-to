@@ -11,7 +11,7 @@ product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
 
-This article covers how to manually update the **cacert.pem** file to avoid
+This article shows you how to update the **cacert.pem** file manually to avoid
 Secure Socket Layer (SSL) verification errors that you might see when viewing
 or accessing monitoring entities by using the Raxmon client.
 
@@ -27,14 +27,16 @@ Find and replace the Raxmon **cacert.pem** file with the following updated file:
 [https://curl.haxx.se/ca/cacert.pem](https://curl.haxx.se/ca/cacert.pem)
 
 The location of **cacert.pem** might vary based on the operating system you are
-running. Typically, on Linux systems it is **/usr/local/lib/python2.7/dist-packages/raxmon_cli/data/cacert.pem**.
+running. Typically, on Linux&reg; systems, the location is
+**/usr/local/lib/python2.7/dist-packages/raxmon_cli/data/cacert.pem**.
 
 After you have updated **cacert.pem**, you should be able to run the raxmon
 commands without issue.
 
 ### Upgrade the Raxmon client
 
-If you're not running Raxmon version 0.7.3 or greater, which includes the CA
-cert, upgrade your client by running the following command:
+If you're not running Raxmon version 0.7.3 or later, which includes the
+Certificate Authority (CA) certificate, upgrade your client by running the
+following command:
 
     sudo pip install -U rackspace-monitoring-cli
