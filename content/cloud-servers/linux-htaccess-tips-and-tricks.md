@@ -4,7 +4,7 @@ audit_date: '2019-01-18'
 title: Linux .htaccess tips and tricks
 created_date: '2019-02-14'
 created_by: Rackspace Community
-last_modified_date: '2019-02-14'
+last_modified_date: '2019-02-19'
 last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
@@ -23,11 +23,11 @@ This article shows you some of the modifications that you can make.
 
 In the UNIX&reg; and Linux file systems, the names of hidden files are
 preceded by a period (for example, **.htaccess** and **.htpasswd**). FileMan
-and many File Transfer Protocol (FTP) applications do not display hidden 
+and many File Transfer Protocol (FTP) applications do not display hidden
 files by default.
 
 The way that you display hidden files, including your **.htaccess** file,
-depends on the FTP program that you are using. This section 
+depends on the FTP program that you are using. This section
 shows you how to do this in popular FTP programs.
 
 ### Change the PHP maximum execution time
@@ -42,7 +42,7 @@ include the following line:
 
 Replace `PHP maximum execution time` with the value that you
 want to use as the maximum execution time. The default time is 30 seconds.
-When you successfully modify the file, the new maximum execution time 
+When you successfully modify the file, the new maximum execution time
 displays in your PHP information file.
 
 ### Change the PHP memory limit
@@ -94,10 +94,10 @@ to use (for example, `16`).
 
 ### Create a 301 redirect
 
-A 301 redirect is a HyperText Transfer Protocol (HTTP) status message 
-that permanently transfers a user or search engine to a 
-Uniform Resource Locator (URL) that is different from the one that was 
-originally requested. Using a 301 redirect is an effective way 
+A 301 redirect is a HyperText Transfer Protocol (HTTP) status message
+that permanently transfers a user or search engine to a
+Uniform Resource Locator (URL) that is different from the one that was
+originally requested. Using a 301 redirect is an effective way
 to ensure that users and search engines find your content.
 
 The following examples are specific to PHP and work only if your cloud site is
@@ -157,24 +157,24 @@ domain:
 
     RewriteEngine on RewriteBase / RewriteRule (.*) http://www.newdomain.com/$1 [R=301,L]
 
-**Redirect to a location that uses the www URL prefix**
+**Redirect to a location that uses a subdomain**
 
 Use the following rewriting syntax to redirect to a location that uses the
-`www` URL prefix:
+subdomain `www`:
 
     RewriteEngine on RewriteBase / RewriteCond %{HTTP_HOST} ^domain.com [NC] RewriteRule ^(.*)$ http://www.domain.com/$1 [R=301,NC]
 
-**Redirect to a subdirectory of a location that uses the www URL prefix**
+**Redirect to a subdirectory of a location that uses the subdomain**
 
 Use the following rewriting syntax to redirect to a subdirectory of a location
-that uses the `www` URL prefix:
+that uses the subdomain:
 
     RewriteEngine on RewriteBase / RewriteCond %{HTTP_HOST} domain.com [NC] RewriteRule ^(.*)$ http://www.domain.com/directory/index.html [R=301,NC]
 
-**Redirect from a location that uses the the www URL prefix to one that does not**
+**Redirect from a location that uses the the subdomain to one that does not**
 
 Use the following rewriting syntax to redirect from a location that uses the
-`www` URL prefix to one that does not:
+subdomain to one that does not:
 
     RewriteEngine on RewriteBase / RewriteCond %{HTTP_HOST} ^www.domain.com [NC] RewriteRule ^(.*)$ http://domain.com/$1 [R=301,L]
 
