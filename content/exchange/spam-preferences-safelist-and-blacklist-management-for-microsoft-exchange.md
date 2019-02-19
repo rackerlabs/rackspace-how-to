@@ -40,7 +40,7 @@ override the spam filtering for the entire domain.
 
 ### Managing safelists
 
-A safelist identifies sources of trusted email and ensure an email is delivered to the user's Inbox. Safelists do not prevent a message from being flagged as spam.
+A safelist identifies sources of trusted email and ensure emails from those sources are delivered to the user's Inbox. Safelists do not prevent a message from being flagged as spam.
 
 1. Log into the [Cloud Office Control Panel](https://cp.rackspace.com).
 
