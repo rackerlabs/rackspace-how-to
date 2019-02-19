@@ -1,21 +1,69 @@
 ---
-permalink: ftp-vs-sftp
-audit_date:
-title: ftp vs sftp
-created_date: '2019-01-18'
+permalink: overview-of-ftp-and-sftp/
+audit_date: '2019-01-18'
+title: Overview of FTP and SFTP
+created_date: '2019-02-19'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-02-19'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-A common support request from our customers is for instructions on installing and configuring vsftpd on our cloud servers. vsftpd is an open source FTP server that many people use to facilitate file transfers. Many people use vsftpd successfully with their servers, but not everyone needs to configure FTP on their server. In fact, many of our customers don’t know that every Rackspace Managed Cloud server comes configured and ready to transfer files with a much more secure method: SFTP – SSH File Transfer Protocol. Let’s discuss the pros and cons of using SFTP or FTP, and then provide some instructions for configuring each.
-So what’s the difference? 
+This article discuss the advantages and disadvantages of using File Transfer
+Protocol (FTP) and SSH File Transfer Protocol (SFTP).
 
-These are two separate protocols that work in very much the same way. Both offer file transfer and management on remote machines.  The primary difference is in the security offered by each method. FTP traffic is unencrypted. All transmissions are in clear text, including usernames, passwords, individual commands, and the actual files. This means they can potentially be read by anyone with access to the network. SFTP, on the other hand, is an extension of the Secure Shell Protocol (SSH), and provides end-to-end encryption through the SSH tunnel.
-Setup and user management are also very different between SFTP and FTP. When using a Rackspace Managed Cloud Server, SFTP is already available for all Linux images. In fact, the only port open on a brand new image is port 22, so that the administrators can access the server via SSH or SFTP. Any system user with SSH access also has access via SFTP. The users’ groups and permissions also dictate their ability to manage files. FTP requires the installation of an FTP server (if you use FTP, we recommend vsftpd), opening port 21, and creating and maintaining separate users and permissions for accessing files and directories. 
-FTP does have some additional advantages over SFTP. By default, each user is “jailed” to only have access to those files the administrator has given them access to. Since SFTP works with the Linux system user, additional considerations for jailing users are required. Additionally, some applications are limited to only handle file transfers via FTP, which prevents using SFTP for file transfer.
-Recommendations and Instructions
+### Differences between FTP and SFTP
 
-If you ask a dozen Rackers, they will almost all recommend SFTP barring any mitigating circumstances. Many of our customers use both. If you are part of our Managed Operations service level our Linux Admins will gladly setup SFTP or vsftp for you.
+FTP and SFTP are two separate protocols that work in a similar way.
+Both offer file transfer and management on remote machines. The primary
+difference is in the level of security that each protocol offers.
+
+#### Security
+
+FTP traffic is unencrypted. All FTP
+transmissions are in clear text, including usernames, passwords, commands, 
+and the actual files. As a result, anyone with access to the network
+can potentially read them.
+
+SFTP, on the other hand, is an extension of the Secure Shell Protocol (SSH).
+It provides end-to-end encryption through the SSH tunnel.
+
+#### Setup and user management
+
+By default, SFTP is already available on all Linux&reg; images for Rackspace
+managed cloud servers. The only port that is open on a new image is port 22.
+Opening this port enables administrators to access the server by using either
+SSH or SFTP. Any user with SSH access can also access the server by using
+SFTP. The groups and permissions that are associated with your users also
+determine their ability to manage files.
+
+FTP requires you to install an FTP server (if you use FTP, we recommend
+vsftpd), open port 21, and create and maintain separate users and
+permissions for accessing files and directories.
+
+However, FTP has the following advantages over SFTP:
+
+- By default, each user is _jailed_ to only have access to those files to
+  which the administrator has given them access. Because SFTP works with the
+  Linux system user, SFTP requires you to take additional steps to jail users.
+- Some applications can only handle file transfers by using FTP, which
+  prevents you from using SFTP.
+
+### Use vsftpd for FTP
+
+If you plan to use FTP, we recommend that you review the following resources
+that show you how to install and configure very secure File Transfer Protocol
+(FTP) daemon (vsftpd) on a cloud server. Vsftpd is an open source FTP server
+that you can use to transfer files.
+
+  - [Rackspace Cloud Essentials - Install vsftpd for
+    CentOS](https://support.rackspace.com/how-to/rackspace-cloud-essentials-centos-installing-vsftpd/)
+  - [Rackspace Cloud Essentials - Configure a user in vsftpd for
+    CentOS](https://support.rackspace.com/how-to/rackspace-cloud-essentials-centos-configuring-a-user-in-vsftpd/)
+
+### Recommendation
+
+We recommend that you use SFTP instead of FTP to ensure that file
+transmissions are secure. SFTP encrypts the data that it transfers to the
+FTP server and prevents unauthorized access during the transmission.
