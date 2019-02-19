@@ -16,7 +16,7 @@ distribution lists. To use an external address for either of these
 functions, it must be set up as a contact. A contact is simply an
 Exchange alias that points to a real mailbox outside of your domain.
 
-1. Log in to the [Cloud Office control panel](https://apps.rackspace.com/?cp).
+1. Log in to the [Cloud Office Control Panel](https://apps.rackspace.com/?cp).
 
 2. In the Microsoft Exchange section, click the **Contacts** link.
 

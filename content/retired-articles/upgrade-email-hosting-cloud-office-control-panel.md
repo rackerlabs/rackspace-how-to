@@ -15,7 +15,7 @@ To add mailboxes, storage, or other add-ons to your email hosting, log in to the
 If you did not sign up online, you will need to navigate to the Cloud Office
 Control Panel through the [MyRackspace Portal ](https://login.rackspace.com).
 
-After you have logged in to the Cloud Office control panel, complete the following steps:
+After you have logged in to the Cloud Office Control Panel, complete the following steps:
 
 1.  At the top of the page, click your account name and select **Upgrades & Services**.
 

@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article describes how to enable two-factor authentication for Cloud Office control panel administrators.
+This article describes how to enable two-factor authentication for Cloud Office Control Panel administrators.
 
 ### Prerequisites
 
@@ -28,7 +28,7 @@ As an administrator of your company's email solution, you have a great deal of c
 
 ### Enable two factor authentication for your own admin ID
 
-1. Log in to your [Cloud Office control panel](https://cp.rackspace.com).
+1. Log in to your [Cloud Office Control Panel](https://cp.rackspace.com).
 
 2. Click your username and account number, for example **adminusername (acct#)**, in the upper-right corner to expand the menu.
 
@@ -60,7 +60,7 @@ You have successfully logged in using two-factor authentication.
 
 You might need to perform these steps if an administrator gets a new device without first disabling two-factor authentication.
 
-1. Log in to the [Cloud Office control panel](https://cp.rackspace.com).
+1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com).
 2. Click your username and account number, for example **adminusername(acct#)**, in the upper right hand corner to expand the menu.
 3. From the menu, select **Admins & Contacts**.
 4. Click the blue username of the admin for whom you need to disable two-factor authentication.
