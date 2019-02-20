@@ -78,7 +78,7 @@ The only output from this command is a command prompt.
 
 Use the following steps to unmount a volume from a Windows server:
 
-1. In Windows **Server Manager**, Select **File and Storage Services > Disks**.
+1. In Windows **Server Manager**, select **File and Storage Services > Disks**.
 2. Under the **Disks** window, right-click the Cloud Block Storage volume.
 3. Select **Take Offline** from the pop-up menu. If the **Take Disk Offline**
    warning window displays, click **Yes**.
@@ -137,12 +137,12 @@ your volume remains attached to your server after the server restarts.
 
 Use the following steps to make the volume persistent:
 
-1. Open the **/etc/fstab** configuration file if it is not already open. The
+1. If it is not already open, open the **/etc/fstab** configuration file. The
    following example command opens it in the `nano` text editor:
 
        root@nosnetdfw:~# nano /etc/fstab
 
-   The file should look like the following example:
+   The file should look similar to the following example:
 
        #
        # /etc/fstab
