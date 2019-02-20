@@ -2,11 +2,11 @@
 permalink: secure-cloud-files-and-cdn-urls
 audit_date: '2019-02-20'
 title: Secure Cloud Files and CDN URLs
+type: article
 created_date: '2019-02-11'
 created_by: Rackspace Community
 last_modified_date: '2019-02-20'
 last_modified_by: Cat Lookabaugh
-type: article
 product: Cloud Files
 product_url: cloud-files
 ---
