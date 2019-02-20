@@ -16,7 +16,8 @@ Always back up your configuration files before testing the optimizations. You sh
 
 Use the following steps to run MySQLTuner:
 
-1. Ensure that your  **~/.my.cnf** file is properly configured. By using this file, you can configure MySQLTuner to automatically connect to the remote database (client). Enter the following values:
+1. Ensure that your  **~/.my.cnf** file is properly configured. By using this file, you can configure
+   MySQLTuner to automatically connect to the remote database (client). Enter the following values:
 
        user=<userName>
 
