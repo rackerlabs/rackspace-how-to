@@ -9,7 +9,7 @@ last_modified_by: Kate Dougherty
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
-If your Cloud Block Storage volume has entered read-only mode, you need to
+If your Cloud Block Storage volume enters read-only mode, you need to
 unmount the volume, run a file system check, then remount the volume to get it
 back into read-write mode. This article shows you how to perform these tasks.
 
@@ -60,7 +60,7 @@ shown in the following example:
 
     # cat /etc/fstab
 
-Comment out the line that begins with `/dev/xvdb1` (which is circled in the following image)
+Comment out the line or lines that begin with `/dev/xvdb1` (which are circled in the following image)
 in **/etc/fstab** to prevent the volume from trying to mount on the next boot:
 
 <img src="{% asset_path cloud-block-storage/troubleshoot-a-cloud-block-storage-volume-in-read-only-mode/picture1.png %}" />
@@ -85,7 +85,7 @@ Use the following steps to unmount a volume from a Windows server:
 The Cloud Block Storage volume no longer displays as a drive under
 **Computer**.
 
-### Check the filesystem
+### Check the file system
 
 After the volume is unmounted, run a file system check by using the following
 command for your operating system:
@@ -128,7 +128,7 @@ Your drive is ready for use with your Linux server. However, you should
 consider performing the steps in the following section to ensure that your
 volume remains persistent after a server restart.
 
-#### (Recommended) Make the volume persistent when the restarts
+#### Make the volume persistent when the server restarts (Recommended)
 
 We recommend that you add the volume to the static file system information in
 your `fstab` configuration file. This step is optional, but it ensures that
