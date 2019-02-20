@@ -60,8 +60,8 @@ shown in the following example:
 
     # cat /etc/fstab
 
-Comment out second line (which is highlighted in the following image) in
-**/etc/fstab** to prevent the volume from trying to mount on the next boot:
+Comment out the line that begins with `/dev/xvdb1` (which is circled in the following image)
+in **/etc/fstab** to prevent the volume from trying to mount on the next boot:
 
 <img src="{% asset_path cloud-block-storage/troubleshoot-a-cloud-block-storage-volume-in-read-only-mode/picture1.png %}" />
 
