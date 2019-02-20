@@ -41,7 +41,7 @@ The cross-origin resource sharing standard (CORS) is also supported, but it solv
 an entirely different problem. Specifically, CORS solves the access problem of asynchronous requests
 by a browser that browses a website with a domain that is different from the Cloud Files link.
 For more information on this topic, see [the Enable CORS site](http://enable-cors.org) or
-the Cloud Files [API documentation](https://developer.rackspace.com/docs/cloud-files/v1/developer-guide/#cors).
+the Cloud Files [API documentation](https://developer.rackspace.com/docs/cloud-files/v1/use-cases/public-access-to-your-cloud-files-account/#cors).
 
 ### Access CDN-enabled objects
 
