@@ -1,5 +1,5 @@
 ---
-permalink: secure-cloud-files-and-cdn-urls
+permalink: secure-cloud-files-and-cdn-urls/
 audit_date: '2019-02-20'
 title: Secure Cloud Files and CDN URLs
 type: article
