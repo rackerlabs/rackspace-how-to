@@ -3,9 +3,9 @@ permalink: troubleshoot-mysql-configuration-with-a-mysqltuner-script/
 audit_date: '2019-01-18'
 title: Troubleshoot MySQL configuration with a MySQLTuner script
 created_date: '2019-01-18'
-created_by: Erik Wilson
+created_by: Rackspace Community
 last_modified_date: '2019-01-19'
-last_modified_by: '2019-02-20'
+last_modified_by: Erik Wilson
 product: Cloud Servers
 product_url: cloud-servers
 ---
