@@ -1,38 +1,96 @@
 ---
-permalink: launch-on-rackspace-cloud
-audit_date:
+permalink: launch-on-rackspace-cloud/
+audit_date: '2019-01-23'
 title: Launch on Rackspace Cloud
 created_date: '2019-01-23'
 created_by: Rackspace Community
-last_modified_date: 
-last_modified_by: 
+last_modified_date: '2019-02-21'
+last_modified_by: Kate Dougherty
 product: Cloud Servers
 product_url: cloud-servers
 ---
-Moving your applications to Rackspace is the first step to launching your app at Rackpsace; “turning it on” is the next step. If your application is currently hosted elsewhere, you will need to point your DNS to Rackspace. Here are some steps we recommend for launching on Rackspace.
+
+This article shares steps and recommendations for launching your website or
+application on the Rackspace Cloud.
 
 ### Pre-launch
 
-A little bit of planning goes a long way, so make sure you lower your TTLs and update your local hosts file.
-* Change local host file - In order to view your content exactly as it will be presented to your consumers, you will likely need to modify your local hosts file on your desktop. This will override global DNS, which will allow you to visit your site as it appears live on Rackspace, prior to shifting DNS to Rackspace. Any existing customers will continue to the existing site.
-* Lower TTLs - The TTL (Time to Live) determines how long your DNS information is cached in each DNS host. A long TTL when you try to switch to Rackspace could potentially mean yourapplication’s visitors would continue to be sent to your previous hosting provider. Lowering the TTL allows changes to be made more frequently. Lower the TTL ASAP, so that the DNS change will happen as fast as possible.
-Now it’s time to test, test, test. Does everything work as planned? What’s different than your current host? Hopefully it’s better, but if not, what needs to be changed? Test, iterate, and test some more until you’re ready to launch.
+Before you launch, you should perform the tasks in this section.
+
+#### Change your local hosts file
+
+To view your content exactly as it will be presented to your users, you
+probably need to modify your local hosts file on your desktop. Modifying your
+local hosts file overrides the global Domain Name Servers (DNS), enabling you
+you to visit your site as it appears live on Rackspace, before you change your
+DNS records to point to Rackspace. Any current users continue to the existing
+site.
+
+#### Lower the TTL for your DNS records
+
+The Time to Live (TTL) that you assign to your DNS records determines how long
+DNS hosts cache your DNS information. If you have a long TTL when you try to
+switch to Rackspace, your users might continue to go to your previous hosting
+provider. Lowering the TTL enables DNS hosts to refresh their caches and
+reflect your changes more frequently. Lower the TTL for your DNS entries as
+soon as possible, so that the DNS changes propagate as quickly as possible.
+
+#### Conduct robust testing
+
+We recommend that you test your website or application and perform the
+following steps:
+
+- Ensure that everything works the way that you expect.
+- If applicable, note any website or application behavior that is different
+  from what occurs on your current hosting provider.
+- Iterate and test until you are confident that your site or application will
+  work the way the you expect when you launch on the Rackspace Cloud.
+  You should also take the following steps:
+
+#### Additional pre-launch steps
+
+You should also take the following steps:
+
+  - Determine exactly what will switch over and back up your current DNS
+    configuration. Ensure that you document and back up all components.
+  - If you are switching all of your DNS hosting, ensure that you move your
+    email and other system configurations.
 
 ### Launch day
 
-Once everything is tested, it’s time for launch. The actual switch will vary based on your current DNS host, so check with them. We encourage you to use Rackspace Cloud DNS (either as a primary or backup DNS provider), but you do not need to host your DNS with us.
-* Determine exactly what will be switched and backup your current DNS configuration. Make sure you get all components.
-* If you’re switching all of your DNS hosting, make sure your email and other systems configurations have been moved.
+The mechanism that switches your application to Rackspace varies based on your
+current DNS host. We recommend that you consult with them before you launch.
 
-### How to configure Rackspace DNS for Rackspace Cloud
+**Note**: We encourage you to use [Rackspace Cloud
+DNS](https://www.rackspace.com/cloud/dns) as a primary or backup DNS
+provider, but you do not need to host your DNS with us.
 
-1. In your MyCloud control panel, add your domain and copy your existing records.
-2. Ensure your domain’s A record is pointing to your cloud load balancer.
-3. Move your site to Rackspace.
-4. At your domain registrar, update your nameservers to ‘dns1.stabletransit.com’ & ‘dns2.stabletransit.com’ - Once this step completes (5 minutes to 48 hours depending on DNS host) anyone visiting your domain will be directed to the server(s) at Rackspace. Make sure to do this step last, when you are ready to send traffic to Rackspace.
+### Configure your DNS records to point to Rackspace
 
+Next, you need to edit the DNS records at your DNS hosting provider so that
+they point to Rackspace's servers.
+
+**Important**: Ensure that you perform this step last, and only when you are
+ready to send traffic to Rackspace.
+
+To learn how to perform this step, see [Find your DNS
+host](https://support.rackspace.com/how-to/find-dns-host/).
+
+#### Configure Rackspace DNS
+
+If you are using Rackspace Cloud DNS as your DNS hosting provider, you must
+complete the steps in [Transfer your DNS hosting to Rackspace](https://support.rackspace.com/how-to/transferring-your-dns-hosting-to-rackspace/).
+
+The changes to your DNS records take 5 minutes to 48 hours to propagate,
+depending on the DNS host.
+
+After you complete the steps in the article, visitors to your domain are
+directed to Rackspace's servers.
 
 ### Post-launch
 
-* Verify all systems are still in production.
-* Immediately contact Rackspace Support if anything is not working.
+Take the following steps after you launch:
+
+- Verify that all systems are still in production.
+- Immediately contact Rackspace Support if your application or website is not
+  working the way that you expect.
