@@ -14,8 +14,8 @@ Layer Security protocol (TLS 1.2)](https://www.paypal.com/us/smarthelp/article/w
 to process payments, you might have to take action if your operating system (OS) 
 does not support TLS 1.2. 
 
-This article provides guidance for addressing this issue for some common
-Rackspace operating systems.
+This article provides guidance for addressing this issue for some 
+common Rackspace operating systems.
 
 ### Table of contents
 
