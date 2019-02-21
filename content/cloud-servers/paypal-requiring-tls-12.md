@@ -19,7 +19,7 @@ Rackspace operating systems.
 
 ### Table of contents
 
-* [Find which OS your server is running](#findos)
+* [Find the OS that your server is running](#findos)
 
 **Red Hat&reg; Enterprise Linux&reg; (RHEL) and CentOS&reg;**
 
@@ -43,7 +43,7 @@ Rackspace operating systems.
 * [Windows Server 2008 R2](#windows2008_r2)
 * [Windows Server 2003 and 2008](#windows2003_2008)
 
-### <a id="findos">Find which OS your server is running</a>
+### <a id="findos">Find the OS that your server is running</a>
 
 If you do not know which OS your server is running, 
 use the following steps to find out:
