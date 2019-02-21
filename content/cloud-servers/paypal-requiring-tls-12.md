@@ -45,7 +45,8 @@ Rackspace operating systems.
 
 ### <a id="findos">Find which OS your server is running</a>
 
-If you do not know which OS your server is running, use the following steps to find out:
+If you do not know which OS your server is running, 
+use the following steps to find out:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
