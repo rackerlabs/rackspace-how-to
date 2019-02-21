@@ -105,19 +105,19 @@ comes with TLS 1.2 configured by default.
 
 ### <a id="debian7">Debian 7</a>
 
-If you are running Debian 7, you should not need to take action because the OS comes with
+If you are running Debian 7, you do not need to take action because the OS comes with
 TLS 1.2 configured by default.
 
 ### <a id="windows2012">Windows Server 2012</a>
 
 If you are running Windows Server 2012, you do not need to take action because
-the OS comes with TLS 1.2 con figured by default.
+the OS comes with TLS 1.2 configured by default.
 
 ### <a id="windows2008_r2">Windows Server 2008 R2</a>
 
 Windows Server 2008 R2 supports TLS 1.2, but you need to modify some settings
 on the server to ensure that you are leveraging that protocol. To make the
-changes, open PowerShell and run the following commands:
+changes, open PowerShell&reg; and run the following commands:
 
     #make TSL 1.2 protocol reg keys
     md "HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2"
@@ -134,9 +134,9 @@ changes, open PowerShell and run the following commands:
 Next, you need to restart the server to ensure that the changes take effect.
 
 **Note**: Servers that are running Windows Server 2008 R2 but are using the
-.NET framework to enable TLS must update to .Net 4.5. Before you perform
+.NET framework to enable TLS must update to .NET 4.5. Before you perform
 this step, we recommend that you determine how it might impact your
-application and re-work any portions of it that are not compatible with the
+application and rework any portions of it that are not compatible with the
 upgrade.
 
 ### <a id="windows2003_2008">Windows Server 2003 and 2008</a>
@@ -147,11 +147,11 @@ payments because the server is no longer able to talk to the PayPal endpoint.
 
 The only way to ensure continuity of the service is to migrate to Windows
 Server 2008 R2 or 2012. We encourage you to engage with Rackspace Support
-before you taking this step to ensure you understand how it might affect your
+before you take this step to ensure you understand how it might affect your
 configuration and if your hardware supports the OS.
 
 **Note**: Servers that are running Windows Server 2008 but are using the .NET
-framework to enable TLS must update to .Net 4.5. However, Before you perform
+framework to enable TLS must update to .NET 4.5. However, before you perform
 this step, we recommend that you determine how it might impact your
-application and re-work any portions of it that are not compatible with the
+application and rework any portions of it that are not compatible with the
 upgrade.
