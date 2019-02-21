@@ -10,14 +10,16 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 As of June 2016, [PayPal&reg; requires you to use version 1.2 of the Transport
-Layer Security protocol (TLS 1.2)](https://www.paypal.com/us/smarthelp/article/why-do-i-need-to-upgrade-my-system-to-tls-1.2-faq3898) when communicating with
-their service. If you leverage PayPal to process payments, you might have to
-take action if your operating system (OS) does not support TLS 1.2. You can find
-the OS on which your server is running in the [Cloud Control
-Panel](https://login.rackspace.com).
+Layer Security protocol (TLS 1.2)](https://www.paypal.com/us/smarthelp/article/why-do-i-need-to-upgrade-my-system-to-tls-1.2-faq3898) when communicating with their service. If you leverage PayPal 
+to process payments, you might have to take action if your operating system (OS) 
+does not support TLS 1.2. 
 
 This article provides guidance for addressing this issue for some common
 Rackspace operating systems.
+
+### Table of contents
+
+* [Find which OS your server is running](#findos)
 
 **Red Hat&reg; Enterprise Linux&reg; (RHEL) and CentOS&reg;**
 
@@ -40,6 +42,19 @@ Rackspace operating systems.
 * [Windows Server 2012](#windows2012)
 * [Windows Server 2008 R2](#windows2008_r2)
 * [Windows Server 2003 and 2008](#windows2003_2008)
+
+### <a id="findos">Find which OS your server is running</a>
+
+If you do not know which OS your server is running, use the following steps to find out:
+
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+3. Select **Servers > Cloud Servers**.
+4. Click the name of the server that you want to check.
+
+   The **Server Details** page appears.
+
+5. The OS appears in the **System Image** field.
 
 ### <a id="rhel_and_centos7">RHEL and CentOS 7</a>
 
