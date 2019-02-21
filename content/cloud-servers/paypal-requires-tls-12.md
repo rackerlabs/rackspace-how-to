@@ -71,8 +71,8 @@ normal patching cycle.
 ### <a id="rhel_and_centos5">RHEL and CentOS 5</a>
 
 RHEL and CentOS 5 do not support TLS 1.2. As a result, your websites and
-applications will no longer be able to take payments by using the PayPal
-service because the server is no longer able to talk to the PayPal endpoint.
+applications can no longer take payments by using the PayPal
+service because the server can no longer talk to the PayPal endpoint.
 (Other payment gateway providers might not be affected.)
 
 You can resolve this issue in one of the following ways:
