@@ -12,8 +12,8 @@ product_url: cloud-servers
 As of June 2016, [PayPal&reg; requires you to use version 1.2 of the Transport
 Layer Security protocol (TLS 1.2)](https://www.paypal.com/us/smarthelp/article/why-do-i-need-to-upgrade-my-system-to-tls-1.2-faq3898) when communicating with
 their service. If you leverage PayPal to process payments, you might have to
-take action if your operating system does not support TLS 1.2. You can check
-the operating system (OS) on which your server is running in the [Cloud Control
+take action if your operating system (OS) does not support TLS 1.2. You can find
+the OS on which your server is running in the [Cloud Control
 Panel](https://login.rackspace.com).
 
 This article provides guidance for addressing this issue for some common
@@ -61,16 +61,16 @@ service because the server is no longer able to talk to the PayPal endpoint.
 
 You can resolve this issue in one of the following ways:
 
-1. Migrate to RHEL 6 or 7, CentOS 6 or 7, or Ubuntu 14.04 Long Term Support
-   (LTS). We encourage you to engage with your account manager or Rackspace
-   Support before you take this step to ensure that you understand how it
-   might affect your configuration and if your hardware supports the OS.
+- Migrate to RHEL 6 or 7, CentOS 6 or 7, or Ubuntu 14.04 Long Term Support
+  (LTS). We encourage you to engage with your account manager or Rackspace
+  Support before you take this step to ensure that you understand how it
+  might affect your configuration and if your hardware supports the OS.
 
-2. Perform a custom compile of packages to provide TLS 1.2. Rackspace does not
-   perform this work and does not recommend this option. If you use this
-   approach, Rackspace is not able to provide support for the OS. If this step
-   is performed incorrectly, it might also create security vulnerabilities
-   because these packages are not continuously patched.
+- Perform a custom compile of packages to provide TLS 1.2. Rackspace does not
+  perform this work and does not recommend this option. If you use this
+  approach, Rackspace is not able to provide support for the OS. If this step
+  is performed incorrectly, it might also create security vulnerabilities
+  because these packages are not continuously patched.
 
 ### <a id="ubuntu_1404">Ubuntu 14.04 LTS</a>
 
@@ -89,7 +89,7 @@ comes with TLS 1.2 configured by default.
 
 ### <a id="debian7">Debian 7</a>
 
-Customers running Debian 7 should not need to take action as the OS comes with
+If you are running Debian 7, you should not need to take action because the OS comes with
 TLS 1.2 configured by default.
 
 ### <a id="windows2012">Windows Server 2012</a>
@@ -125,7 +125,7 @@ upgrade.
 
 ### <a id="windows2003_2008">Windows Server 2003 and 2008</a>
 
-Windows Server 2003 and 2008 (SCHANNEL) do not support TLS 1.2. As a result,
+Windows Server 2003 and 2008 do not support TLS 1.2. As a result,
 websites and applications that run on these systems are no longer able to take
 payments because the server is no longer able to talk to the PayPal endpoint.
 
