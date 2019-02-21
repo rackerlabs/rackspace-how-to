@@ -88,8 +88,4 @@ your domain are directed to Rackspace's servers.
 
 ### Post-launch
 
-Take the following steps after you launch:
-
-- Verify that all systems are still in production.
-- Immediately contact Rackspace Support if your application or website is not
-  working the way that you expect.
+After you launch, verify that all systems are still in production.
