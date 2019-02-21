@@ -10,8 +10,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article shares steps and recommendations for launching your website or
-application on the Rackspace Cloud.
+This article shares steps and recommendations for launching your 
+website or application on the Rackspace Cloud.
 
 ### Pre-launch
 
