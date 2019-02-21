@@ -15,7 +15,7 @@ website or application on the Rackspace Cloud.
 
 ### Pre-launch
 
-Before you launch, you should perform the tasks in this section.
+Before you launch, you should perform the tasks in the following sections.
 
 #### Change your local hosts file
 
@@ -45,7 +45,6 @@ following steps:
   from what occurs on your current hosting provider.
 - Iterate and test until you are confident that your site or application will
   work the way the you expect when you launch on the Rackspace Cloud.
-  You should also take the following steps:
 
 #### Additional pre-launch steps
 
@@ -63,7 +62,7 @@ current DNS host. We recommend that you consult with them before you launch.
 
 **Note**: We encourage you to use [Rackspace Cloud
 DNS](https://www.rackspace.com/cloud/dns) as a primary or backup DNS
-provider, but you do not need to host your DNS with us.
+provider, but you do not need to host your DNS records with us.
 
 ### Configure your DNS records to point to Rackspace
 
@@ -81,11 +80,11 @@ host](https://support.rackspace.com/how-to/find-dns-host/).
 If you are using Rackspace Cloud DNS as your DNS hosting provider, you must
 complete the steps in [Transfer your DNS hosting to Rackspace](https://support.rackspace.com/how-to/transferring-your-dns-hosting-to-rackspace/).
 
-The changes to your DNS records take 5 minutes to 48 hours to propagate,
-depending on the DNS host.
+#### Wait for the changes to propagate
 
-After you complete the steps in the article, visitors to your domain are
-directed to Rackspace's servers.
+The changes to your DNS records take 5 minutes to 48 hours to propagate,
+depending on the DNS host. After the changes take effect, visitors to 
+your domain are directed to Rackspace's servers.
 
 ### Post-launch
 
