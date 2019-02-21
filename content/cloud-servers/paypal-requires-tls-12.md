@@ -1,7 +1,7 @@
 ---
-permalink: paypal-requiring-tls-12/
+permalink: paypal-requires-tls-12/
 audit_date: '2019-01-18'
-title: PayPal requiring TLS 1.2
+title: PayPal requires TLS 1.2
 created_date: '2019-02-21'
 created_by: Rackspace Community
 last_modified_date: '2019-02-21'
