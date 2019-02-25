@@ -2,6 +2,7 @@
 permalink: swap-space-on-cloud-servers/
 audit_date: '2019-01-22'
 title: Swap space on cloud servers
+type: article
 created_date: '2019-01-31'
 created_by: Rackspace Community
 last_modified_date: '2019-01-31'

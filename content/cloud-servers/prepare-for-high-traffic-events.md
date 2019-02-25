@@ -2,6 +2,7 @@
 permalink: prepare-for-high-traffic-events/
 audit_date: '2019-01-22'
 title: Prepare for high-traffic events
+type: article
 created_date: '2019-01-25'
 created_by: Rackspace Community
 last_modified_date: '2019-01-25'

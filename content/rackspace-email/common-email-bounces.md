@@ -3,6 +3,7 @@ permalink: common-email-bounces/
 audit_date: '2018-02-07'
 title: Common email bounce messages
 type: article
+type: article
 created_date: '2017-05-18'
 created_by: William Loy
 last_modified_date: '2018-02-07'

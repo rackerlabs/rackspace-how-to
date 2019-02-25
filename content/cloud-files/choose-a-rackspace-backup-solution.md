@@ -2,6 +2,7 @@
 permalink: choose-a-rackspace-backup-solution/
 audit_date: '2019-01-22'
 title: Choose a Rackspace backup solution
+type: article
 created_date: '2019-02-06'
 created_by: Rackspace Community
 last_modified_date: '2019-02-06'

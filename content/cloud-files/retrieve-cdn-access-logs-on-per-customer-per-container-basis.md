@@ -2,6 +2,7 @@
 permalink: retrieve-cdn-access-logs-on-per-customer-per-container-basis/
 audit_date: '2019-01-22'
 title: Retrieve CDN access logs on a per-customer, per-container basis
+type: article
 created_date: '2019-02-14'
 created_by: Rackspace Community
 last_modified_date: '2019-02-14'

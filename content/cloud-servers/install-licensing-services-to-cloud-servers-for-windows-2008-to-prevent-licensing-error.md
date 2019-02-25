@@ -2,6 +2,7 @@
 permalink: install-licensing-services-to-cloud-servers-for-windows-2008-to-prevent-licensing-error/
 audit_date: '2019-01-18'
 title: Install licensing services to Cloud Servers for Windows 2008 and Windows 2008 R2 to prevent a licensing error
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-19'

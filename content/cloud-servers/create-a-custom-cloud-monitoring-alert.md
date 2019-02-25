@@ -2,6 +2,7 @@
 permalink: create-a-custom-cloud-monitoring-alert/
 audit_date: '2019-01-22'
 title: Create a custom Cloud Monitoring alert
+type: article
 created_date: '2019-02-13'
 created_by: Rackspace Community
 last_modified_date: '2019-02-13'

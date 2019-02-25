@@ -2,6 +2,7 @@
 permalink: rpc-microsoft-faq/
 audit_date: '2016-10-21'
 title: Rackspace Private Cloud Powered by Microsoft Cloud Platform FAQ
+type: article
 type: product
 created_date: '2016-01-17'
 created_by: Rackspace Support

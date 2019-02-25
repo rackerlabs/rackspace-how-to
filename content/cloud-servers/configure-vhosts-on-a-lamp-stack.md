@@ -2,6 +2,7 @@
 permalink: configure-vhosts-on-a-lamp-stack/
 audit_date: '2019-02-01'
 title: Configure vhosts on a LAMP stack
+type: article
 created_date: '2019-02-01'
 created_by: Rackspace Community
 last_modified_date: '2019-02-04'

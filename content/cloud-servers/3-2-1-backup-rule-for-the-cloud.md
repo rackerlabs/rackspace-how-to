@@ -2,6 +2,7 @@
 permalink: 3-2-1-backup-rule-for-the-cloud/
 audit_date: '2019-01-22'
 title: 3-2-1 backup rule for the cloud
+type: article
 created_date: '2019-01-22'
 created_by: Rackspace Community
 last_modified_date: '2019-02-01'

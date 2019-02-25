@@ -2,6 +2,7 @@
 permalink: overview-of-the-managed-windows-patching-service/
 audit_date: '2019-01-22'
 title:  Overview of the Managed Windows Patching service
+type: article
 created_date: '2019-02-15'
 created_by: Rackspace Community
 last_modified_date: '2019-02-15'

@@ -2,6 +2,7 @@
 permalink: use-rackspace-cdn-with-a-wordpress-site/
 audit_date: '2019-02-12'
 title: Use Rackspace CDN with a WordPress site
+type: article
 created_date: '2019-02-13'
 created_by: Rackspace Community
 last_modified_date: '2019-02-13'

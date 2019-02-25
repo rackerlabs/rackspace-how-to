@@ -2,6 +2,7 @@
 permalink: create-centos-nginx-virtual-hosts/
 audit_date: '2019-01-23'
 title: Create CentOS NGINX virtual hosts
+type: article
 created_date: '2019-01-23'
 created_by: Rackspace Community
 last_modified_date: '2019-01-29'

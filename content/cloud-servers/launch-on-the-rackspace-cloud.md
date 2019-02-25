@@ -2,6 +2,7 @@
 permalink: launch-on-the-rackspace-cloud/
 audit_date: '2019-01-23'
 title: Launch on the Rackspace Cloud
+type: article
 created_date: '2019-02-25'
 created_by: Rackspace Community
 last_modified_date: '2019-02-25'

@@ -2,6 +2,7 @@
 permalink: bind-mounts-in-linux/
 audit_date: '2019-02-05'
 title: Bind mounts in Linux
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-05'

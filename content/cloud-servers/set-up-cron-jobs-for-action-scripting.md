@@ -2,6 +2,7 @@
 permalink: set-up-cron-jobs-for-action-scripting/
 audit_date: '2019-02-05'
 title: Set up cron jobs for action scripting
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-05'

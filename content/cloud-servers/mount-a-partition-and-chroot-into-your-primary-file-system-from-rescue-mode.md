@@ -2,6 +2,7 @@
 permalink: mount-a-partition-and-chroot-into-your-primary-file-system-from-rescue-mode/
 audit_date:
 title: Mount a partition and chroot into your primary file-system from rescue mode
+type: article
 created_date: '2019-01-17'
 created_by: Rackspace Community
 last_modified_date: '2019-01-17'

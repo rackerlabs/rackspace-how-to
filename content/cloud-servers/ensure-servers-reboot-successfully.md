@@ -2,6 +2,7 @@
 permalink: ensure-servers-reboot-successfully/
 audit_date:
 title: Ensure servers reboot successfully
+type: article
 created_date: '2019-01-21'
 created_by: Rackspace Community
 last_modified_date: '2019-01-21'

@@ -2,6 +2,7 @@
 permalink: set-up-virtual-hosts-on-centos/
 audit_date: '2019-02-14'
 title: Set up virtual hosts on CentOS
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community 
 last_modified_date: '2019-02-14'

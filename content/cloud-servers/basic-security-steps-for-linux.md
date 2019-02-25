@@ -2,6 +2,7 @@
 permalink: basic-security-steps-for-linux
 audit_date: '2019-01-25'
 title: Basic security steps for Linux
+type: article
 created_date: '2019-01-25'
 created_by: Rackspace Community
 last_modified_date: '2019-01-28'

@@ -2,6 +2,7 @@
 permalink: use-cdn-access-control-to-set-up-your-origin/
 audit_date: '2019-01-22'
 title: Use CDN access control to set up your origin
+type: article
 created_date: '2019-02-12'
 created_by: Rackspace Community
 last_modified_date: '2019-02-12'

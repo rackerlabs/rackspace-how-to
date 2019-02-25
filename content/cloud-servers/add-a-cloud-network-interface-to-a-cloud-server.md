@@ -2,6 +2,7 @@
 permalink: add-a-cloud-network-interface-to-a-cloud-server/
 audit_date:
 title: Add a Cloud Networks interface to a Cloud Server
+type: article
 created_date: '2019-01-21'
 created_by: Rackspace Community
 last_modified_date: '2019-01-21'

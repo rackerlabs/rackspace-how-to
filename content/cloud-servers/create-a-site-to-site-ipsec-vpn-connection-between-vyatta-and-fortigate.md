@@ -2,6 +2,7 @@
 permalink: create-a-site-to-site-ipsec-vpn-connection-between-vyatta-and-fortigate/
 audit_date: '2019-01-18'
 title: Create a site-to-site IPsec VPN connection between Vyatta and FortiGate
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-18'

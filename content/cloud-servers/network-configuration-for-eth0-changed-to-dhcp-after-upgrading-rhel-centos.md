@@ -2,6 +2,7 @@
 permalink: network-configuration-for-eth0-changed-to-dhcp-after-upgrading-rhel-centos/
 audit_date: '2019-02-18'
 title: Network configuration for eth0 changed to DHCP after upgrading RHEL/CentOS
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-02-18'

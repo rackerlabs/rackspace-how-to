@@ -2,6 +2,7 @@
 permalink: use-holland-and-cloud-backup-to-backup-databases-with-ubuntu/
 audit_date: '2019-01-30'
 title: Use Holland and Cloud Backup to back up databases with Ubuntu
+type: article
 created_date: '2019-01-17'
 created_by: Rackspace Community
 last_modified_date: '2019-01-30'

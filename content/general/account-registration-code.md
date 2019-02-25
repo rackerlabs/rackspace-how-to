@@ -2,6 +2,7 @@
 permalink: account-registration-code/
 audit_date: '2019-01-22'
 title: Account registration code
+type: article
 created_date: '2019-02-08'
 created_by: Rackspace Community
 last_modified_date: '2019-02-08'

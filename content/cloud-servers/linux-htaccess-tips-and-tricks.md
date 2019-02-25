@@ -2,6 +2,7 @@
 permalink: linux-htaccess-tips-and-tricks/
 audit_date: '2019-01-18'
 title: Linux .htaccess tips and tricks
+type: article
 created_date: '2019-02-14'
 created_by: Rackspace Community
 last_modified_date: '2019-02-19'

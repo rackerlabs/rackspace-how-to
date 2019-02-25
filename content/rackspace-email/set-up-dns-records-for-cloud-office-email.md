@@ -3,6 +3,7 @@ permalink: set-up-dns-records-for-cloud-office-email/
 audit_date: '2017-05-30'
 title: Set up DNS records for Cloud Office email
 type: article
+type: article
 created_date: '2014-08-15'
 created_by: William Loy
 last_modified_date: '2017-10-20'

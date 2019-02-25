@@ -2,6 +2,7 @@
 permalink: manage-security-groups-and-rules/
 audit_date: '2019-02-07'
 title: Manage security groups and rules
+type: article
 created_date: '2019-01-23'
 created_by: Rackspace Community
 last_modified_date: '2019-02-07'

@@ -2,6 +2,7 @@
 permalink: what-does-rackspace-do-in-the-cloud/
 audit_date: '2019-01-23'
 title: What does Rackspace do in the cloud?
+type: article
 created_date: '2019-02-04'
 created_by: Rackspace Community
 last_modified_date: '2019-02-04'
