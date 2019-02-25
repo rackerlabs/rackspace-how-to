@@ -1,8 +1,8 @@
 ---
-permalink: cloud-backup-basic-troubleshooting-on-linux-servers/
+permalink: troubleshoot-cloud-backup-on-linux-servers/
 audit_date: '2018-10-25'
 type: article
-title: Basic troubleshooting for Cloud Backup on Linux servers
+title: Troubleshoot Cloud Backup on Linux servers
 created_date: '2018-08-23'
 created_by: Shaun Crumpler
 last_modified_date: '2019-02-25'
