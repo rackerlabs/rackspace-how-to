@@ -43,8 +43,8 @@ following steps:
 - Ensure that everything works the way that you expect.
 - If applicable, note any website or application behavior that is different
   from what occurs on your current hosting provider.
-- Iterate and test until you are confident that your site or application will
-  work the way the you expect when you launch on the Rackspace Cloud.
+- Iterate and test until you are confident that your site or application 
+  will work the way the you expect when you launch on the Rackspace Cloud.
 
 #### Additional prelaunch steps
 
