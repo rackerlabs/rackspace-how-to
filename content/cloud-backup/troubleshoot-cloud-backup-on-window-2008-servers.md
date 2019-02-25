@@ -1,5 +1,5 @@
 ---
-permalink: troubleshoot-cloud-backup-on-window-2008-servers/
+permalink: cloud-backup-basic-troubleshooting-on-window-2008-servers/
 audit_date: '2018-08-30'
 title: Troubleshoot Cloud Backup on Windows 2008 servers
 created_date: '2018-08-30'
