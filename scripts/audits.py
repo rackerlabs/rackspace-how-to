@@ -1,3 +1,5 @@
+# Instructions for using this script are available at https:// pages.github.rackspace.com/IX/writers-handbook/processes/how-to/scripts/list-audited-articles.html
+
 import os
 import sys
 import datetime
@@ -21,7 +23,7 @@ def filter_files(start_date=first_arg, end_date=second_arg):
         # convert the string arguments to date format
         start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').date()
         end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').date()
-    except ValueError:
+    except (ValueError, IndexError) as error:
         print('A problem occurred. Did you follow the correct date format?')
     # Loop through each file in the folder
     for root, dirs, files in os.walk(dir):
@@ -103,9 +105,7 @@ def filter_files(start_date=first_arg, end_date=second_arg):
           " \n \n"
           "YOUR RESULTS HAVE BEEN SAVED TO ..FILES/H2-AUDITS.XLSX. \n \n"
           "To make this information editable for all Info Devs, copy and paste"
-          " the content into a new Excel file in O365 online and share it, "
-          "then \n"
-          "** delete the local file at ../files/h2-audits.xlsx **.\n"
+          " the content into a new Excel file in O365 online and share it. "
           "\n".format(count))
 
 
