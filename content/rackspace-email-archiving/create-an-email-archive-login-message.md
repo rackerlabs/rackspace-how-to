@@ -14,7 +14,7 @@ product_url: rackspace-email-archiving
 Account administrators can create a login message for users to see when they log in to their email archive
 at `https://domaincom.archivesrvr.com`. The message can include any kind of useful information including login instructions or terms of use. 
 
-**Note:** Only account administrators can create a login message, and only one message can be shown on the login screen at a
+**Note:** Only account administrators can create a login message, and only one message is shown on the login screen at a
 time.
 
 Complete the following steps to create a login message for Archive Manager users:
