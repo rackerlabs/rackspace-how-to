@@ -15,7 +15,7 @@ def filter_files(dir):
     for root, dirs, files in os.walk(dir):
         for file in files:
             path = root + "/" + file
-            if "all.md" in path or "index.md" in path or "retired-" in path:
+            if "all.md" in path or "index.md" in path or "retired-" or "cloud-queues" in pathin path:
                 continue
             else:
                 text = open(path, 'r')

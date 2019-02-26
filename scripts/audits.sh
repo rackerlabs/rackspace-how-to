@@ -34,7 +34,7 @@ FILES=`find .  -type f -name '*md' -print`
 for f in $FILES
 do
    # filter out index.md and all.md files
-   if [[ "$f" == */all.md ]] || [[ "$f" == *index.md ]] || [[ "$f" == */retired-articles/* ]] ;
+   if [[ "$f" == */all.md ]] || [[ "$f" == *index.md ]] || [[ "$f" == */retired-articles/* ]] || [[ "$f" == *cloud-queues* ]] ;
    then
       # skip file
       continue

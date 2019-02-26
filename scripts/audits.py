@@ -30,7 +30,7 @@ def filter_files(start_date=first_arg, end_date=second_arg):
             path = root + "/" + file
             # skip files that aren't relevant
             if ("all.md" in path or "index.md" in path or "retired-" in path or
-                    "DS_Store" in path or len(path) < 11):
+                    "DS_Store" in path or "cloud-queues" in path or len(path) < 11):
                 continue
             else:
                 # open the file and read the content
