@@ -11,6 +11,8 @@ product: Cloud Files
 product_url: cloud-files
 ---
 
+### Install Swiftly
+
 Swiftly is a client tool that you can use to upload objects to and
 download objects from your Cloud Files account. Swiftly manages the
 storage of large objects in Cloud Files. If you have a very large object
@@ -24,7 +26,7 @@ For more information about Swiftly, see the following sites:
 -   Swiftly documentation: <http://gholt.github.io/swiftly/>
 -   Swiftly source code: <https://github.com/gholt/swiftly>
 
-### Install Swiftly on Ubuntu
+#### Install Swiftly on Ubuntu
 
 These instructions were verified on a server built from a Rackspace
 Ubuntu 13.10 public image.
@@ -43,7 +45,7 @@ Invoke the following instructions from a bash shell on your server.
 
         sudo pip install swiftly
 
-### Install Swiftly on CentOS
+#### Install Swiftly on CentOS
 
 These instructions were verified on a server built from a Rackspace
 CentOS 6.5 public image.
@@ -210,7 +212,7 @@ The response displays similarly to the following list:
         .CDN_ACCESS_LOGS
         Books
         
-#### Get a list of containers
+#### Get a list of containers with details
 
 Run the following command to get a list of containers including detailed information:
 
@@ -239,7 +241,8 @@ prefix (case sensitive):
         
 #### Post new headers to an object
 
-Run the following command to post new headers to an object (supports multiple headers in a single command, separated out as shown):
+Run the following command to post new headers to an object (supports multiple headers 
+in a single command, separated out as shown):
 
         swiftly post -h "<headerName1>:<headerValue1>" -h "<headerName2>:<headerValue2>" <containerName>/<objectName>
         
