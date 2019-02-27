@@ -5,7 +5,7 @@ title: Install MySQL Server on Ubuntu
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2018-12-21'
+last_modified_date: '2019-02-27'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -83,13 +83,12 @@ focuses on the most basic and compatible approach, the `mysql` shell.
 If you logged in by entering a blank password, or if you want to change the root
 password that you set, you can create or change the password.
 
-1. Until MySQL 5.6, Enter the following command in the `mysql` shell, replace `password` with
+1. For versions earlier than MySQL 5.7, enter the following command in the `mysql` shell, replace `password` with
    your new password:
 
        UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root';
    
-   For MySQL 5.7 and above, enter the following command in the 'mysql' shell, again replacing 'password' with 
-   your new password:
+   For version MySQL 5.7 and later, enter the following command in the `mysql` shell, replacing `password` with your new password:
    
        UPDATE mysql.user SET authentication_string = PASSWORD('ywMVTT5QRDDlFSZejOdt') WHERE User='root';
 
