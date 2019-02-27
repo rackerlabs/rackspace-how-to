@@ -1,12 +1,12 @@
 ---
 permalink: install-the-swiftly-client-for-cloud-files/
-node_id: 4030
+audit_date: '2019-02-28'
 title: Install the Swiftly client for Cloud Files
 type: article
 created_date: '2014-04-21'
 created_by: Cloud Images
-last_modified_date: '2016-04-18'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2019-02-28'
+last_modified_by: Regan Murley
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -64,6 +64,7 @@ Invoke the following instructions from a bash shell on your server.
         sudo pip install swiftly
         
 ### Configure Swiftly for Rackspace Cloud Files
+
 Edit or create the file `~/.swiftly.conf`. By default, swiftly will use the configuration file in the same local directory where it is run, or you can define a file path while running swiftly commands using the `--conf=PATH` flag. Include the following contents in your `.swiftly.conf` file:
 
         [swiftly]
@@ -75,9 +76,12 @@ Edit or create the file `~/.swiftly.conf`. By default, swiftly will use the conf
 For the full list of options available in the `.swiftly.conf` file, see [the sample config file in the swiftly repo](https://github.com/gholt/swiftly/blob/master/swiftly.conf-sample).
 
 ### Install Eventlet (optional)
+
 Eventlet is an optional pip package that allows you to set a concurrency count when using swiftly. This is useful when performing bulk actions that are threaded, because the Cloud Files API has a limit of 100 concurrent write requests per container. 
 
-### Install Eventlet on Ubuntu
+#### Install Eventlet on Ubuntu
+
+Invoke the following instructions from a bash shell on your server.
 
 1. Install the Python developer library package using `apt-get`.
 
@@ -87,7 +91,9 @@ Eventlet is an optional pip package that allows you to set a concurrency count w
 
         sudo pip install eventlet
         
-### Install Eventlet on CentOS
+#### Install Eventlet on CentOS
+
+Invoke the following instructions from a bash shell on your server.
 
 1. Install the Python developer library package using `yum`.
 
@@ -101,7 +107,7 @@ Eventlet is an optional pip package that allows you to set a concurrency count w
 
 GNU Screen is a program that you can use to start a screen session. A
 screen session looks just like an ordinary shell except that you can
-"detach" a terminal from a screen session, and whatever commands you are
+*detach* a terminal from a screen session, and whatever commands you are
 running  continue running in the session. This functionality is useful
 when you start a long running process (such as a large object upload)
 from the command line. If your laptop battery dies, or your wireless
@@ -184,79 +190,113 @@ following command:
 
 ### Swiftly Example Commands
 
-Important Note: Swiftly allows for destructive actions to be run against 
-one or all containers on an account. Please use caution when performing 
-updates and deletes to cloud files objects, as these cannot be undone, 
-and test out your commands first against test containers wherever possible.
+**Important** Swiftly allows for destructive actions to be run against 
+one or all containers on an account. Use caution when performing updates 
+and deletes to cloud files objects, because these cannot be undone. 
+Test your commands against test containers wherever possible before
+running them in production.
 
-Get a list of containers for the configured account:
+Following are some common swiftly command examples.
+
+#### Get a list of containers
+
+Run the following command to get a list of containers for the configured account:
 
         swiftly get
         
-The response will be in a list:
+The response displays similarly to the following list:
 
         .ACCESS_LOGS
         .CDN_ACCESS_LOGS
         Books
         
-Get a list of containers including detailed information:
+#### Get a list of containers
+
+Run the following command to get a list of containers including detailed information:
 
         swiftly get --raw
         
-The response will be in json format:
+The response displays in json format:
 
         [{"count": 103, "bytes": 22296, "name": ".ACCESS_LOGS"}, 
         {"count": 126, "bytes": 32708, "name": ".CDN_ACCESS_LOGS"}, 
         {"count": 417, "bytes": 1177376576, "name": "Books"}]
         
-Get a list of objects in a container:
+#### Get a list of objects in a container
+
+Run the following command to get a list of objects in a container:
 
         swiftly get <containerName>
         
-Get containers or objects that match a beginning prefix (case sensitive):
+#### Get containers or objects that match a beginning prefix (case sensitive)
+
+Run the following command to get containers or objects that match a beginning 
+prefix (case sensitive):
 
         swiftly get --prefix <startingText>
         
         swiftly get <containerName> --prefix <startingText>
         
-Post new headers to an object (supports multiple headers in a single 
-command, separated out as shown):
+#### Post new headers to an object
+
+Run the following command to post new headers to an object (supports multiple headers in a single command, separated out as shown):
 
         swiftly post -h "<headerName1>:<headerValue1>" -h "<headerName2>:<headerValue2>" <containerName>/<objectName>
         
-Upload an object (This example will upload the local directory file 
-`somefile.png` and rename it to `newfilename.png` in the specified 
-container, placing the object into the pseudo directory `/images/`):
+#### Upload an object 
+
+This example uploads the local directory file **somefile.png** and renames it to 
+**newfilename.png** in the specified container and places the object into the pseudo 
+directory **/images/**).
+
+Run the following command to upload an object:
 
         swiftly put -i ~/somefile.png <containerName>/images/newfilename.png
         
-Delete an object, or delete an object within a pseudo directory:
+#### Delete an object
+
+Run the following command to delete an object, or delete an object within a pseudo directory:
 
         swiftly delete <containerName>/somefile.png
         swiftly delete <containerName>/images/newfilename.png
         
-Delete all objects within a container, then delete the container:
+#### Delete all objects within a container and delete the container
+
+Run the following command to delete all objects within a container and delete the container:
 
         swiftly delete <containerName> --until-empty --recursive
         
-Bulk update all files in a container to add the Header "HEADERNAME" 
-with a value of "HEADERVALUE". Note that swiftly for/do commands contain 
-literal `<` and `>` characters, include the exact text `<item>` in 
-the examples shown here. For best practices on for/do commands, `--cache-auth` 
+#### Bulk update
+        
+This command performs a bulk update all files in a container to add the Header **HEADERNAME** 
+with a value of **HEADERVALUE**. Note that swiftly for/do commands contain 
+literal open and close angle bracket characters (`<` and `>`), such as `<item>` in 
+the examples shown here. The angle brackets are part of the command not placeholders 
+for variable content. 
+
+As a best practice with for/do commands, `--cache-auth` 
 is set to temporarily store the authentication token rather than make repeated 
-calls to the Cloud Identity API, and `--concurrency` is limited to 100 maximum 
+calls to the Identity API, and `--concurrency` is limited to 100 maximum 
 api calls to Cloud Files:
+
+Run the following command to perform a bulk update:
 
         swiftly --cache-auth --eventlet --concurrency=100 for CONTAINER do post -H "HEADERNAME:HEADERVALUE" "<item>"
 
-Bulk delete only objects within a container whose name beings with a certain 
-prefix (caching the identity token and limiting to 100 concurrent API calls):
+#### Bulk delete specified objects
+
+Run the following command to perform a bulk delete of only objects within a container 
+whose name beings with a certain prefix (caching the identity token and limiting to 
+100 concurrent API calls):
 
         swiftly --cache-auth --eventlet --concurrency=100 for CONTAINER --prefix STARTINGTEXT --output-names do delete "<item>"
 
+#### Bulk delete specified containers
 
-Bulk delete only containers whose name begins with a certain prefix (caching 
-the identity token and limiting to 100 concurrent API calls):
+Run the following command to perform  Bulk delete OF only containers whose name 
+begins with a certain prefix (caching the identity token and limiting to 100 
+concurrent API calls):
+
 
         swiftly --cache-auth --eventlet --concurrency=100 for "" --prefix STARTINGTEXT --output-names do delete "<item>" --recursive --until-empty
         
