@@ -302,4 +302,3 @@ concurrent API calls):
 
 
         swiftly --cache-auth --eventlet --concurrency=100 for "" --prefix STARTINGTEXT --output-names do delete "<item>" --recursive --until-empty
-        
