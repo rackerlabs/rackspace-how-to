@@ -10,7 +10,7 @@ last_modified_by: Kyle Laffoon
 ---
 
 Access the RackConnect Management Interface from the
-[MyRackspace portal](https://my.rackspace.com/). To view your
+[MyRackspace Portal](https://my.rackspace.com/). To view your
 RackConnect users, click **Account > User List**.
 
 On the RackConnect **User List** page, you can view active or invited users

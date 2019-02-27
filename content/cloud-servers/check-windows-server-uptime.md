@@ -2,6 +2,7 @@
 permalink: check-windows-server-uptime/
 audit_date: '2019-01-15'
 title: Check Windows Server uptime
+type: article
 created_date: '2019-01-15'
 created_by: Shaun Crumpler
 last_modified_date: '2019-01-15'

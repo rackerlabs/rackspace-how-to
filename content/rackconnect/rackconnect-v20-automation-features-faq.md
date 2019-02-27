@@ -129,7 +129,7 @@ The new cloud server, upon creation, will inherit the automation features settin
 
 #### How do I verify the current automation features settings for my cloud accounts?
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 2. Click **Network > RackConnect** to open the RackConnect Management Interface.
 3. In the left pane, select your RackConnect configuration, and then select your cloud account. The cloud account's overview page lists your current automation features settings.
@@ -138,7 +138,7 @@ The new cloud server, upon creation, will inherit the automation features settin
 
 #### How do I verify the current automation features settings for my cloud servers?
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 2. Click **Network > RackConnect** to open the RackConnect Management Interface.
 3. In the left pane, select your RackConnect configuration, select your cloud account, and then select one of your cloud servers. The cloud server's overview page lists your current automation features settings.
@@ -179,7 +179,7 @@ because automation features are disabled at the cloud server level.
 Although new cloud servers will be created with automation features
 enabled, because the cloud account has automation features enabled, so all
 five network policies will work normally for new cloud servers. We are
-working on adding some warnings to the MyRackspace portal when you
+working on adding some warnings to the MyRackspace Portal when you
 attempt to create network policies that are not actually valid for
 preexisting cloud servers, as in the above scenario.
 
@@ -204,7 +204,7 @@ network policy options, but only the two types of network policies listed
 above will be valid for all of your cloud servers. If you create
 invalid network policies, they will look like they deployed correctly,
 but they will not actually work as expected.  We are working on adding
-some warnings to the MyRackspace portal when you attempt to create
+some warnings to the MyRackspace Portal when you attempt to create
 network policies that are not actually valid, as in the preceding scenario.
 
 #### What network policies are available if automation features are *enabled* at the cloud account level?
@@ -227,7 +227,7 @@ Cloud Server to Internet&mdash;are valid for those preexisting cloud
 servers. If you create invalid network policies for these preexisting
 cloud servers, they will look like they deployed correctly, but they
 will not actually work as expected. We are working on adding some
-warnings to the MyRackspace portal when you attempt to create
+warnings to the MyRackspace Portal when you attempt to create
 network policies that are not actually valid, as in the preceding scenario.
 
 #### Can I disable automation features on my cloud account associated with RackConnect?
@@ -253,4 +253,4 @@ automatically generated.
 
 For Linux cloud servers only, you can create iptables rules that are not overwritten by these periodic software firewall updates; for details about how to accomplish this, see [Prevent RackConnect from overwriting custom iptables rules on Linux cloud servers](/how-to/how-to-prevent-rackconnect-from-overwriting-custom-iptables-rules-on-linux-cloud-servers).
 
-Software firewall modifications should only be made via the network policies section of the MyRackspace portal. For more information, see [Managing RackConnect v2.0 network policies](/how-to/managing-rackconnect-v20-network-policies).
+Software firewall modifications should only be made via the network policies section of the MyRackspace Portal. For more information, see [Managing RackConnect v2.0 network policies](/how-to/managing-rackconnect-v20-network-policies).

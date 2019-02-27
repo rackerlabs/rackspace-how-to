@@ -17,11 +17,11 @@ how to manage these permissions.
 You manage permissions in the [MyRackspace
 portal](https://login.rackspace.com) under **Account > Permissions**.
 
-**Note**: To access the **Permissions** area in the MyRackspace portal and
+**Note**: To access the **Permissions** area in the MyRackspace Portal and
 modify another user’s permissions, you must have either the **Account
 Administrator** permission or the **Admin** permission. The **Account
 Administrator** permission grants the user unlimited access to all sections of
-the MyRackspace portal. The **Admin** permission (on a device or service)
+the MyRackspace Portal. The **Admin** permission (on a device or service)
 grants the user the ability to access and manage the device or service.
 
 ### Categories of permissions
@@ -40,7 +40,7 @@ permissions. MyRackspace uses the highest level of permission granted.
 
 ### Methods for assigning permissions
 
-You can assign permissions in the MyRackspace portal in the following ways:
+You can assign permissions in the MyRackspace Portal in the following ways:
 
 - **Assign by User**: Enables you to select an individual and grant them
   access to account-level permissions, linked cloud accounts, devices,
@@ -65,7 +65,7 @@ This section shows you how to manage groups.
 
 Use the following steps to create a user group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. At the top of the page, click **Manage Groups**.
 4. In the **User Groups** section, enter a name for the group, then click the
@@ -77,7 +77,7 @@ Use the following steps to create a user group:
 
 Use the following steps to create a product group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. At the top of the page, click **Manage Groups**.
 4. In the **Product Groups** section, enter a name for the group, then click
@@ -89,7 +89,7 @@ Use the following steps to create a product group:
 
 Use the following steps to grant a user group access to a product group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. In the **User Groups** section, select an existing user group.
 4. Click **Assign by User** at the top of the page (if it isn't already the
@@ -106,7 +106,7 @@ Use the following steps to grant a user group access to a product group:
 
 Use the following steps to grant a product group access to a user group:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the subnavigation bar, select **Account > Permissions**.
 3. At the top of the page, click **Assign by Product**.
 4. In the **Product Groups** section, select an existing product group.

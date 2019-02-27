@@ -2,6 +2,7 @@
 permalink: delete-a-cloud-server/
 audit_date: '2018-10-26'
 title: Delete a Cloud Server
+type: article
 created_date: ‘2018-09-05'
 created_by: Shaun Crumpler
 last_modified_date: '2018-10-26'

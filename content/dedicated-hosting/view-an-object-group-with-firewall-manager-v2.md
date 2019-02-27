@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a tool within the MyRackspace portal. This article describes how to view object-groups, an easy to use feature that groups and sorts like items such as Internet protocol (IP) addresses, ports, or protocols.
+Firewall Manager v2 is a tool within the MyRackspace Portal. This article describes how to view object-groups, an easy to use feature that groups and sorts like items such as Internet protocol (IP) addresses, ports, or protocols.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 
@@ -27,7 +27,7 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 
 ### View object-groups
 
-1. Log in to the [MyRackspace customer portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
+1. Log in to the [MyRackspace Portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
 
 2. In the top navigation bar, click **Network** > **Firewall Manager v2**.
 

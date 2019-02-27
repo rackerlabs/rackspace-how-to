@@ -2,6 +2,7 @@
 permalink: export-and-download-a-saved-image-with-pitchfork-cyberduck/
 audit_date: '2019-01-23'
 title: Export and download a saved image with Pitchfork and Cyberduck
+type: article
 created_date: '2019-01-25'
 created_by: Rackspace Community
 last_modified_date: '2019-01-25'

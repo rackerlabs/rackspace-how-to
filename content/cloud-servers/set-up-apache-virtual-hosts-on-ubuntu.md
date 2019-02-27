@@ -389,7 +389,7 @@ configuration folders).
 You can consider using the SymLinksIfOwnerMatch directive instead of
 FollowSymLinks. The SymLinksIfOwnerMatch directive allows symbolic links
 to be followed only if the owner of the link is identical to the owner
-of the target file or directory (in terms of Linux filesystem
+of the target file or directory (in terms of Linux file system
 ownership/permissions). This prevents many of the security risks that a
 simple FollowSymlinks directive can create.
 

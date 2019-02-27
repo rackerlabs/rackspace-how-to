@@ -32,7 +32,7 @@ If you would prefer a video tutorial see [Email Help - Blacklisting / Safelistin
 
 ### Blacklist an email address or domain
 
-1. Log into your mailbox at [apps.rackspace.com](https://apps.rackspace.com).
+1. Log in to your mailbox at [apps.rackspace.com](https://apps.rackspace.com).
 
 2. Click your email address in the upper right-hand corner, and select **Settings** from the menu.
 

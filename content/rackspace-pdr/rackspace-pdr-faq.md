@@ -2,6 +2,7 @@
 permalink: rackspace-pdr-faq/
 title: Rackspace PDR FAQ
 type: faq
+type: article
 audit_date: '2018-11-12'
 created_date: '2018-10-11'
 created_by: Nick Shobe

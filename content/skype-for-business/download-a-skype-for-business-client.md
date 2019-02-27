@@ -3,6 +3,7 @@ permalink: download-a-skype-for-business-client/
 audit_date: '2017-05-25'
 title: Download a Skype for Business client
 type: article
+type: article
 created_date: '2014-04-16'
 created_by: Kevin Richey
 last_modified_date: '2017-05-23'

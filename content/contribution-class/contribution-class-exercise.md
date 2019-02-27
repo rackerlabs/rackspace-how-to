@@ -2,6 +2,7 @@
 title: Contribution class exercise
 type: practice
 created_date: '2016-05-25'
+type: article
 created_by: Nate Archer
 last_modified_date: '2017-07-04'
 last_modified_by: Paige Warmker

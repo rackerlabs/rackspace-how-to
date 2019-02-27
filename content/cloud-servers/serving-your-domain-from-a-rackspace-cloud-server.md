@@ -25,7 +25,7 @@ name servers by following these steps:
 1.  Use the Rackspace Cloud Control Panel to create corresponding DNS
     records for your domain.
 
-2.  Log into your domain registrar's account and locate the section that
+2.  Log in to your domain registrar's account and locate the section that
     specifies the name servers.
 
 3.  Change the name servers to the Rackspace Cloud name servers:

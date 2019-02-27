@@ -1,4 +1,8 @@
+# Instructions for using this script are available at https://pages.github.rackspace.com/IX/writers-handbook/processes/how-to/scripts/list-articles-without-audit-dates.html
+
 import os
+import sys
+import datetime
 import xlsxwriter
 
 # Create a workbook and add a worksheet.
@@ -15,7 +19,7 @@ def filter_files(dir):
     for root, dirs, files in os.walk(dir):
         for file in files:
             path = root + "/" + file
-            if "all.md" in path or "index.md" in path or "retired-" in path:
+            if "all.md" in path or "index.md" in path or "retired-" in path or "cloud-queues" in path:
                 continue
             else:
                 text = open(path, 'r')
@@ -53,8 +57,7 @@ def filter_files(dir):
           "YOUR RESULTS HAVE BEEN SAVED TO ..FILES/H2-NO-AUDITS.XLSX. \n \n"
           "To make this information editable for all Info Devs, copy and "
           "paste the content into a new Excel file in O365 online and "
-          "share it, then \n ** delete the local file at "
-          "../files/h2-no-audits.xlsx **.\n \n".format(count))
+          "share it.\n \n".format(count))
 
 
 # Call the main function

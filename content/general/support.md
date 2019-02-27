@@ -2,6 +2,7 @@
 permalink: support/
 audit_date: '2018-12-13'
 title: How to contact Rackspace Support
+type: article
 type: page
 created_date: '2013-06-17'
 created_by: Rackspace Support
@@ -26,7 +27,7 @@ Call Dedicated Hosting support at the following numbers:
 - US: 1-800-961-4454
 - International: +1-210-312-4600
 
-You can also log in to the [MyRackspace portal](https://login.rackspace.com/) to access chat
+You can also log in to the [MyRackspace Portal](https://login.rackspace.com/) to access chat
 support, the knowledge base, and How-To videos.
 
 ### Email support

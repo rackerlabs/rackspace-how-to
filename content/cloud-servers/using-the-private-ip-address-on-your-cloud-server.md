@@ -32,7 +32,7 @@ private IP address as soon as it is built.
 
 ### How Do I Find My Private IP Address?
 
-If you log into your Cloud Server, via SSH or the Console, you can type
+If you log in to your Cloud Server, via SSH or the Console, you can type
 the command ip addr show eth1on most distributions to find your private
 IP address. Then look for the inet addrline. A sample output is posted
 here:

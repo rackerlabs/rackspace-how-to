@@ -18,7 +18,7 @@ This article shows how to create an alias that will forward to another mailbox o
 - **Applies to:** Administrator
 - **Difficulty:** Easy
 - **Time needed:** 5 minutes
-- **Tools required:** Cloud Office control panel access
+- **Tools required:** Cloud Office Control Panel access
 
 For more information on prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 

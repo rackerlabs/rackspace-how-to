@@ -17,7 +17,7 @@ For the Rackspace Public Cloud offering, the image list for RackConnect
 customers with the Managed Infrastructure service level has been
 simplified. If your RackConnect implementation is complete, you can
 select any of the base images displayed in your image list (via the API,
-the [MyRackspace portal](https://login.rackspace.com/), or the [Cloud Control
+the [MyRackspace Portal](https://login.rackspace.com/), or the [Cloud Control
 Panel](https://login.rackspace.com/)), and we can configure
 RackConnect on your cloud servers. This is now true for Windows and
 Linux images, as well as for Managed Operations service level and
@@ -29,7 +29,7 @@ incompatible with RackConnect. You can find a list of these images in
 
 ### Server flavors and regions
 
-In the MyRackspace portal and Cloud Control Panel, you can choose the
+In the MyRackspace Portal and Cloud Control Panel, you can choose the
 *flavor* of server that you want to provision. You can choose from
 standard and workload-optimized flavors. When creating new cloud
 servers, always be sure to select the *region* where your RackConnect
@@ -39,7 +39,7 @@ configuration is located.
 
 The *access IP* is the IP address used by RackConnect automation to
 access the server. This value is accessible via the API. The access IP is
-already part of the MyRackspace portal and is being added to the Cloud
+already part of the MyRackspace Portal and is being added to the Cloud
 Control Panel soon. At the time a server is built, it is populated with
 the public IP address of the server. In the case of a cloud server
 connected through RackConnect, the RackConnect automation updates the

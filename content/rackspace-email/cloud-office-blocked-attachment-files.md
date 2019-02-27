@@ -3,6 +3,7 @@ permalink: cloud-office-blocked-attachment-files/
 audit_date: '2017-05-30'
 title: Cloud Office Blocked Attachment Types
 type: article
+type: article
 created_date: '2017-05-19'
 created_by: William Loy
 last_modified_date: '2017-06-02'

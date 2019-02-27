@@ -2,6 +2,7 @@
 permalink: set-up-python-on-iis-75/
 audit_date:
 title: Set up Python on IIS 7.5
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-01-18'

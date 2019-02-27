@@ -38,7 +38,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email/updating-your-whois-information/contact_info.png %}" />  
 
-5. Log into the mailbox listed as the WHOIS contact email address to receive the email asking you to verify the changes you just made.  
+5. Log in to the mailbox listed as the WHOIS contact email address to receive the email asking you to verify the changes you just made.  
 
 6. To verify your changes, click the link provided in the email or copy the provided URL and paste it into your browser's search bar.
 

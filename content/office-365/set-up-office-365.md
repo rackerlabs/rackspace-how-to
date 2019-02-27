@@ -49,7 +49,7 @@ The tenant name, user name, and password that you enter in Cloud Office form you
 
 After you create an Office 365 tenant ID, choose an Office 365 subscription. To compare Office 365 subscriptions offered by Rackspace, see [Office 365 - Pick your plan](https://www.rackspace.com/office-365/pick-your-plan).
 
-1. In the [Office 365 manager page of the Cloud Office control panel](https://cp.rackspace.com/Office365#/Manage), click **Add Subscription**.
+1. In the [Office 365 manager page of the Cloud Office Control Panel](https://cp.rackspace.com/Office365#/Manage), click **Add Subscription**.
 2. Select a plan. To compare Office 365 subscriptions offered by Rackspace, see [Office 365 - Pick your plan](https://www.rackspace.com/office-365/pick-your-plan).
 3. Enter the number of licenses that you need.
 4. Click **Add Subscription**.

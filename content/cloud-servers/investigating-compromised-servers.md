@@ -2,6 +2,7 @@
 permalink: investigate-compromised-servers/
 audit_date:
 title: Investigate compromised servers
+type: article
 created_date: '2019-01-17'
 created_by: Rackspace Community
 last_modified_date: '2019-01-17'

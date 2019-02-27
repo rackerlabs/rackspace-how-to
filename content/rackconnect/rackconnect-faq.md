@@ -167,7 +167,7 @@ If you need help with RackConnect, contact us via any of our [usual Support chan
 
 If you believe your issue is cloud-server specific, send the
 appropriate query to the Cloud team through the Cloud Control Panel;
-otherwise, send other requests through the MyRackspace portal.
+otherwise, send other requests through the MyRackspace Portal.
 
 #### I already have a cloud account. Can I connect to my existing servers?
 
@@ -356,7 +356,7 @@ You can view the public IP address of your RackConnect cloud server in
 the following places:
 
 -   In the RackConnect Management Interface of the
-    [MyRackspace portal](https://login.rackspace.com/), view the IP address
+    [MyRackspace Portal](https://login.rackspace.com/), view the IP address
     on the **Overview** tab for the server.
 
 -   You can retrieve the public IP address through the Cloud Servers API

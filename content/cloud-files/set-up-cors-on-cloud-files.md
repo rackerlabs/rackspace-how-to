@@ -2,6 +2,7 @@
 permalink: set-up-cors-on-cloud-files/
 audit_date: '2019-01-18'
 title: Set up CORS on Cloud Files
+type: article
 created_date: '2019-01-22'
 created_by: Rackspace Community
 last_modified_date: '2019-01-22'

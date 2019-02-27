@@ -51,10 +51,10 @@ re-attach the volume by following the "Attach volume to a server" steps
 on the [Create and attach a Cloud Block Storage volume](/how-to/create-and-attach-a-cloud-block-storage-volume)
 article.
 
-More advanced users may sync the filesystem in order ensure the
+More advanced users may sync the file system in order ensure the
 integrity of the data on your snapshots. Performing a sync will flush
 file system buffers and write the data out to disk. If you are
-unfamiliar with how to sync your filesystem, consider detaching your
+unfamiliar with how to sync your file system, consider detaching your
 volume prior to snapshotting.
 
 Steps to create a volume clone:

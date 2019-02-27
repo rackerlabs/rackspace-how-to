@@ -3,6 +3,7 @@ permalink: set-up-dns-records-for-cloud-office-email/
 audit_date: '2017-05-30'
 title: Set up DNS records for Cloud Office email
 type: article
+type: article
 created_date: '2014-08-15'
 created_by: William Loy
 last_modified_date: '2017-10-20'
@@ -40,7 +41,7 @@ Use the following steps to ensure your domain properly routes incoming and outgo
 
 **Warning:** If you host your email through our Office 365 solution please see [Office 365 domain setup](/how-to/add-a-domain-in-office-365/) for instructions.
 
-1. Log in to the control panel for your domain DNS host. If you host your DNS with Rackspace Cloud Office please see [Edit DNS in the Cloud Office control panel](/how-to/edit-dns-in-the-cloud-office-control-panel).
+1. Log in to the control panel for your domain DNS host. If you host your DNS with Rackspace Cloud Office please see [Edit DNS in the Cloud Office Control Panel](/how-to/edit-dns-in-the-cloud-office-control-panel).
 
 2. Set the DNS entries to the values shown in the following table. Ensure that no other MX record entries exist or you will experience complications with your email. For more information, see [Add or edit entries for your DNS host](/how-to/find-dns-host#add-or-edit-entries-for-your-dns-host).
 

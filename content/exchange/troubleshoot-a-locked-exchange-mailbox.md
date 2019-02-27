@@ -33,7 +33,7 @@ Answering yes to any of the following questions could mean that your Exchange ma
 
 - Are you repeatedly being prompted for a password on any of your devices?
 
-- Have you attempted to log into [apps.rackspace.com](apps.rackspace.com) without success?
+- Have you attempted to log in to [apps.rackspace.com](apps.rackspace.com) without success?
 
 It could also be time to [update your password](/how-to/change-a-microsoft-exchange-mailbox-password) if you are having trouble remembering the current password.
 

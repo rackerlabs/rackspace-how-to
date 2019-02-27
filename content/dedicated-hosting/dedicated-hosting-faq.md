@@ -2,6 +2,7 @@
 permalink: dedicated-hosting-faq/
 audit_date: '2016-11-09'
 title: Dedicated Hosting FAQ
+type: article
 type: product
 created_date: '2016-11-01'
 created_by: Stephanie Fillmon
@@ -51,7 +52,7 @@ subnavigation bar.
 permission, you must have one of the following permissions:
 
   - **Account Administrator**: This permission grants a user unlimited access
-    to every section of the MyRackspace portal.
+    to every section of the MyRackspace Portal.
 
   - **Admin**: This permission (on a device or service) grants a user the
     ability to manage the device or service, as well as which users can access the device or service.

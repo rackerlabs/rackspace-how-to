@@ -2,6 +2,7 @@
 permalink: use-cloudflare-with-rackspace/
 audit_date: '2019-01-18'
 title: Use CloudFlare with Rackspace
+type: article
 created_date: '2019-01-22'
 created_by: Rackspace Community
 last_modified_date: '2019-01-23'

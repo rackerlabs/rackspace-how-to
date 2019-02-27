@@ -16,9 +16,9 @@ product_url: rackconnect
 RackConnect v3.0 is a hybrid offering that provides network connectivity
 between your dedicated and cloud environments. By default, you can
 manage your dedicated environment within the
-[MyRackspace portal](https://login.rackspace.com/),
+[MyRackspace Portal](https://login.rackspace.com/),
 but you cannot manage any of your cloud environments. To perform some
-cloud account administration tasks from the MyRackspace portal, you must
+cloud account administration tasks from the MyRackspace Portal, you must
 *link* your cloud accounts with your dedicated account.
 
 A RackConnect v3.0 *configuration* represents a single deployment of a
@@ -28,13 +28,13 @@ more cloud accounts. For more information about configurations, see
 terms](/how-to/rackconnect-key-terms).
 
 After you link your cloud accounts with your dedicated account, you can then *associate* a cloud account with a particular RackConnect v3.0
-configuration from within the MyRackspace portal. After you associate a cloud account with a configurations, a ticket is automatically generated for us, and we will work with you to fully configure the cloud account for use with RackConnect v3.0. See the [RackConnect v3.0 requirements](/how-to/rackconnect-v30-requirements) article for more details.
+configuration from within the MyRackspace Portal. After you associate a cloud account with a configurations, a ticket is automatically generated for us, and we will work with you to fully configure the cloud account for use with RackConnect v3.0. See the [RackConnect v3.0 requirements](/how-to/rackconnect-v30-requirements) article for more details.
 
 The following sections provide steps for linking and associating a cloud account.
 
 ### Create a new cloud account or link an existing account
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com/).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 3. Click **Products > Rackspace Cloud**.
 
@@ -50,7 +50,7 @@ The following sections provide steps for linking and associating a cloud account
 
 1.  Ensure that you have already linked a cloud account to your
     dedicated account. You can verify this from the
-    [MyRackspace portal](https://login.rackspace.com/)
+    [MyRackspace Portal](https://login.rackspace.com/)
     by clicking **Select a Product > Dedicated Hosting**, and then
     **Products > Rackspace Cloud**. Your
     linked cloud account's details are displayed on the right-hand pane

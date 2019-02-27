@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-You can send an email to everyone on your domain. To email everyone, [log into the Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
+You can send an email to everyone on your domain. To email everyone, [log in to the Cloud Office Control Panel](https://cp.rackspace.com), and perform the following steps:
 
 1.  From the **Go to section** menu, select **Domains**.
 2.  In the **Tools** section, click **Email Everyone**.

@@ -17,7 +17,7 @@ The RackConnect API provides a way for you to access certain read-only
 information about your cloud servers and their RackConnect
 configuration. The RackConnect API is available to all customers who can
 manage their RackConnect configurations
-through the [MyRackspace portal](https://login.rackspace.com/) interface.
+through the [MyRackspace Portal](https://login.rackspace.com/) interface.
 
 You can use the RackConnect API to access the following information:
 

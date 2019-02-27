@@ -2,6 +2,7 @@
 permalink: create-and-edit-users-in-mysql/
 audit_date: '2019-01-23'
 title: Create and edit users in MySQL
+type: article
 created_date: '2019-01-23'
 created_by: Rackspace Community
 last_modified_date: '2019-01-23'

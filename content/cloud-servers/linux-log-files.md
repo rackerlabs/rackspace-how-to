@@ -48,7 +48,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 
   Contains information about the boot process after the kernel is loaded.
   Information includes things such as system file checks, mounting a
-  filesystem, starting a firewall, starting network devices, and starting services.
+  file system, starting a firewall, starting network devices, and starting services.
 
 - **/var/log/btmp**
 
@@ -112,7 +112,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 - **/var/log/samba/**
 
   Contains log information stored by the `samba` daemon, which is used to
-  connect to Microsoft&reg; Windows&reg; and Linux filesystems.
+  connect to Microsoft&reg; Windows&reg; and Linux file systems.
 
 - **/var/log/setroubleshoot/**
 

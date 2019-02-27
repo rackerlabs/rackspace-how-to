@@ -43,7 +43,7 @@ Kernel updates to mitigate specific variants of the exploits on the supported Li
 
 Servers must be rebooted to apply the new kernel. At this time, Rackspace does not intend to force reboots of customer servers. For those customers who want to apply the update, Rackspace can install the new kernel and reboot servers immediately. Alternatively, Rackspace can install the new kernel and customers can schedule the reboots to occur in the future via the following methods:
 
-- Dedicated Physical Server: [MyRackspace Customer Portal](https://login.rackspace.com) -> Services -> Reboot Scheduling
+- Dedicated Physical Server: [MyRackspace Portal](https://login.rackspace.com) -> Services -> Reboot Scheduling
 
 - VMware&reg;  Virtual Server and Managed Operations Rackspace Public Cloud Servers: Supply the date, time, and time zone. Rackspace will schedule an automated reboot on behalf of the customer.
 

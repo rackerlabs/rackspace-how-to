@@ -99,11 +99,11 @@ Okta](https://developer.rackspace.com/docs/rackspace-federation/config-3p-saml/c
 
 **Note**: While you can also create a new Identity Provider by using the
 Rackspace Identity Federation API, we recommend that you perform this task
-in the MyRackspace portal.
+in the MyRackspace Portal.
 
 Use the following steps to configure your Identity Provider with Rackspace:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the top navigation bar, select **Account > User Management**.
 3. In the third tier of the top navigation, click **Federation**.
 4. Click **Add Identity Provider**.
@@ -129,7 +129,7 @@ Use the following steps to configure your Identity Provider with Rackspace:
 ### Default Attribute Mapping Policy
 
 A default Attribute Mapping Policy is generated when you create an Identity
-Provider by using the MyRackspace portal or the Rackspace Identity Federation
+Provider by using the MyRackspace Portal or the Rackspace Identity Federation
 API. This policy shows the default attributes that are required for users
 logging in to Rackspace, as shown in the following example:
 
@@ -158,9 +158,9 @@ Attribute Mapping Policy to Rackspace.
 #### Retrieve your default Attribute Mapping Policy
 
 You can retrieve your default Attribute Mapping Policy from the
-MyRackspace portal by using the following steps:
+MyRackspace Portal by using the following steps:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the top navigation bar, select **Account > User Management**.
 3. In the third tier of the top navigation, click **Federation**.
 4. Select the Identity Provider whose mapping policy you want to update.
@@ -213,7 +213,7 @@ Your Attribute Mapping Policy must contain the following information:
     <td>groups</td>
     <td>The Rackspace Identity user groups that you want to assign to the user.</td>
     <td>YAML array of alphanumeric strings</td>
-    <td>Identity user groups are self-defined in the MyRackspace portal as having specific Dedicated permissions. For information about how to set up user groups, see <a href="manage-user-permissions-for-dedicated-hosting/">Manage user permissions for Dedicated Hosting</a></td>
+    <td>Identity user groups are self-defined in the MyRackspace Portal as having specific Dedicated permissions. For information about how to set up user groups, see <a href="manage-user-permissions-for-dedicated-hosting/">Manage user permissions for Dedicated Hosting</a></td>
   </tr>
   <tr>
     <td>expires</td>
@@ -341,10 +341,10 @@ guide](https://developer.rackspace.com/docs/rackspace-federation/attribmap-refer
 
 ##### Upload your customized Attribute Mapping Policy
 
-You can update the policy in the MyRackspace portal by using the following
+You can update the policy in the MyRackspace Portal by using the following
 steps:
 
-1. Log in to the [MyRackspace portal](https://login.rackspace.com).
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com).
 2. In the top navigation bar, select **Account > User Management**.
 3. In the third tier of the top navigation, click **Federation**.
 4. Select the Identity Provider whose mapping policy you want to update.

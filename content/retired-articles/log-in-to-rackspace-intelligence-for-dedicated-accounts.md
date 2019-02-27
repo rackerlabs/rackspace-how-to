@@ -12,12 +12,12 @@ last_modified_by: Kate Dougherty
 
 To use Rackspace Intelligence, you must have a dedicated Rackspace
 customer account and you must be logged in to the
-[MyRackspace portal](https://login.rackspace.com) for that account.
+[MyRackspace Portal](https://login.rackspace.com) for that account.
 Rackspace Intelligence has no separate login process.
 
 To access Rackspace Intelligence:
 
-1.  Log in to the [MyRackspace portal](https://login.rackspace.com/).
+1.  Log in to the [MyRackspace Portal](https://login.rackspace.com/).
 2.  In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 3.  Click **Services > Availability Monitoring**.
 

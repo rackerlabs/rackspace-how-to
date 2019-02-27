@@ -54,16 +54,15 @@ This article includes the networking requirements for the Rackspace Proactive De
 | 54.183.39.68 | 54.183.215.154 | |
 
 ### Rapid7 Agent Endpoints
+ 
+| Region | IP Address |
+| ------ | ---------- |
+| United States | 34.226.68.35,  54.144.111.231,  52.203.25.223,  34.236.161.191 |
+| Canada | 52.60.40.157,  52.60.107.153 |
+| Europe | 3.120.196.152,  3.120.221.108 |
+| Australia | 52.64.24.140,  13.55.81.47,  13.236.168.124 |
+| Japan | 103.4.8.209,  18.182.167.99 |
 
-| Source | Destination | Protocol | Port | Description |
-| ------ | ----------- | -------- | ---- | ----------- |
-| Agents | endpoint.ingress.rapid7.com | TCP | 443 | United States Agent messages and beacons |
-| Agents | ca.endpoint.ingress.rapid7.com | TCP | 443 | Canada Agent messages and beacons |
-| Agents | eu.endpoint.ingress.rapid7.com | TCP | 443 | Europe Agent messages and beacons |
-| Agents | ap.endpoint.ingress.rapid7.com | TCP | 443 | Japan  Agent messages and beacons |
-| Agents | au.endpoint.ingress.rapid7.com | TCP | 443 | Australia Agent messages and beacons |
-| Agents | s3.amazonaws.com | TCP | 443 | United States Agent file uploads for collection and update downloads |
-| Agents | s3.ca-central-1.amazonaws.com | TCP | 443 | Canada Agent file uploads for collection and update downloads |
-| Agents | s3.eu-central-1.amazonaws.com | TCP | 443 | Europe Agent file uploads for collection and update downloads |
-| Agents | s3.ap-northeast-1.amazonaws.com | TCP | 443 | Japan Agent file uploads for collection and update downloads |
-| Agents | s3-ap-southeast-2.amazonaws.com | TCP | 443 | Australia Agent file uploads for collection and update downloads |
+  
+
+

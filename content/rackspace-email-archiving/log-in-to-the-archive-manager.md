@@ -29,7 +29,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email-archiving/log-in-to-the-archive-manager/domains_archive.png %}" />
 
-3. Select the domain for the archive that you want to log into, and then click **Manage My Archive**.
+3. Select the domain for the archive that you want to log in to, and then click **Manage My Archive**.
 
    The dashboard for the domain's archive displays.
 

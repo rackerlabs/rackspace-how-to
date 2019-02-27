@@ -1,7 +1,7 @@
 ---
 permalink: edit-dns-in-the-cloud-office-control-panel/
 audit_date:
-title: Edit DNS in the Cloud Office control panel
+title: Edit DNS in the Cloud Office Control Panel
 type: article
 created_date: '2017-09-18'
 created_by: William Loy
@@ -11,7 +11,7 @@ product: Rackspace Email
 product_url: rackspace-email
 ---
 
-This article explains how to edit your domain's DNS settings in the Cloud Office Control Panel. 
+This article explains how to edit your domain's DNS settings in the Cloud Office Control Panel.
 
 ### Prerequisites
 
@@ -42,6 +42,6 @@ To edit DNS records at Cloud Office, log in to the [Cloud Office Control Panel](
 
     **Warning**: Changes to your DNS impacts other services, such as website hosting, that are tied to your domain and will cause service disruption if not performed properly.
 
-5. After you have completed your edits, click **Save**. 
+5. After you have completed your edits, click **Save**.
 
 If your DNS is hosted elsewhere, see [Set up DNS records for Cloud Office email](/how-to/set-up-dns-records-for-cloud-office-email).

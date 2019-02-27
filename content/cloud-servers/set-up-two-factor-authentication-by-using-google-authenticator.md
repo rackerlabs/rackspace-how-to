@@ -2,6 +2,7 @@
 permalink: set-up-two-factor-authentication-by-using-google-authenticator/
 audit_date:
 title: Set up two-factor authentication by using Google Authenticator
+type: article
 created_date: '2019-01-17'
 created_by: Rackspace Community
 last_modified_date: '2019-01-17'

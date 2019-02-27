@@ -16,9 +16,9 @@ originally configured with RackConnect v1.0, you can disregard this article.
 #### Now that my RackConnect v1.0 configuration has been upgraded, what new functionality do I have?
 
 -   You can access the RackConnect Management Interface in the
-    [MyRackspace portal](https://my.rackspace.com/) to view and manage
+    [MyRackspace Portal](https://my.rackspace.com/) to view and manage
     your RackConnect configurations and network policies. Take
-    advantage of this by logging in to the MyRackspace portal, selecting
+    advantage of this by logging in to the MyRackspace Portal, selecting
     **Network**, and then selecting **RackConnect**. You can also
     navigate directly by going to the [RackConnect Management Interface](https://my.rackspace.com/portal/rackConnect/index).
 

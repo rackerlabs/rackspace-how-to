@@ -30,14 +30,14 @@ This article describes how to manage individual user spam settings and how to sa
 
     - **Send spam to the quarantine for this recipient** - Each Exchange mailbox
     has its own Quarantine Manager, located in the User Control Panel.
-    (Users can log into the User Control Panel at <https://cp.rackspace.com/usercp>, using their Exchange email address and password.) Email that is filtered as spam will be
+    (Users can log in to the User Control Panel at <https://cp.rackspace.com/usercp>, using their Exchange email address and password.) Email that is filtered as spam will be
     directed to the Quarantine Manager, where the user can then view and
     delete quarantined emails, or mark them as **Not Spam**.
     - **Send spam to domain quarantine** - Spam will be directed to the
     domain-level quarantine, rather than to the individual Quarantine
     Manager for the mailbox.
 
-      **Note:** To log into the domain-level Quarantine Manager, click the **Log
+      **Note:** To log in to the domain-level Quarantine Manager, click the **Log
 into the Quarantine Manager** link. Email that is filtered as spam will be directed to the domain-level Quarantine Manager, where the administrator can then view and delete quarantined emails, or mark them as **Not Spam**.
 
     - **Send quarantine notifications to** - If you choose to send spam to the

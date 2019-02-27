@@ -24,7 +24,7 @@ installation of the IIS framework.
 ### Install PHP with Web PI
 
 1. Open the Web PI application from the following location on your
-filesystem.
+file system.
 
        C:\Program Files\Microsoft\Web Platform Installer\WebPlatformInstaller.exe
 

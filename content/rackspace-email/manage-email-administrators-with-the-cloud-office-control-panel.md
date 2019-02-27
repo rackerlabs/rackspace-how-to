@@ -21,7 +21,7 @@ permissions via the MyRackspace Portal.
 
 ### Add an administrator
 
-1.  Log into the [Cloud Office Control Panel](https://cp.rackspace.com/).
+1.  Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/).
 2.  Under **Common Actions**, click **Manage Administrators**.
 3.  Click **Add Administrator**.
 4.  Enter the following information under **Add Administrator**:

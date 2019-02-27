@@ -47,4 +47,4 @@ For more information about prerequisite terminology, see [Cloud Office support t
    <img src="{% asset_path exchange/clear-keychain-access/delete_keychain.png %}"/>
 
 
-After you have completed the above process, you can reopen your desktop mail application, where you will be prompted to enter your email credentials. If you continue to be prompted for your credentials, navigate to the Cloud Office control panel to unlock the mailbox.
+After you have completed the above process, you can reopen your desktop mail application, where you will be prompted to enter your email credentials. If you continue to be prompted for your credentials, navigate to the Cloud Office Control Panel to unlock the mailbox.

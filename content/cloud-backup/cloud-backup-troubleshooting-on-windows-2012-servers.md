@@ -60,7 +60,7 @@ Use the following steps to establish a connection:
 
 ## Restart the DriveClient service
 
-1. Log into the server via RDP and click the **Windows** symbol in the bottom-left corner.
+1. Log in to the server via RDP and click the **Windows** symbol in the bottom-left corner.
 2. Click the **Search** icon in the top-right corner.
 3. Enter **services.msc** in the search field.
 4. Locate the DriveClient service, right-click it, and select the **Restart**. A pop-up windows shows the status of the restart.

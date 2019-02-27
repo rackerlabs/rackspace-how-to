@@ -12,20 +12,20 @@ product_url: cloud-servers
 ---
 
 This article provides quick answers to common questions about seamless single
-sign-on (SSO) between the MyRackspace Customer Portal and the Rackspace Cloud
+sign-on (SSO) between the MyRackspace Portal and the Rackspace Cloud
 Control Panel.
 
 #### What is seamless SSO?
 
 Seamless SSO enables dedicated customers to manage their public cloud
 environments through a single sign-on. After you log in
-to the MyRackspace Customer Portal, you can seamlessly move between your
+to the MyRackspace Portal, you can seamlessly move between your
 dedicated account and the cloud accounts that are linked to it.
 
 #### How do I use seamless SSO?
 
 Seamless SSO is integrated into Rackspace products to the greatest extent possible.
-When you navigate Cloud accounts in the MyRackspace portal, hyperlinks for
+When you navigate Cloud accounts in the MyRackspace Portal, hyperlinks for
 products such as Cloud Servers, Cloud Networks, and Cloud DNS take you
 to the Cloud Control Panel, where you are logged in automatically.
 
@@ -35,7 +35,7 @@ to the Cloud Control Panel, where you are logged in automatically.
 
 If you do not want a user to have seamless SSO access to a linked Cloud
 account, you can remove user permissions for that account. To manage user
-permissions in the MyRackspace portal, navigate to **Account > Permissions >
+permissions in the MyRackspace Portal, navigate to **Account > Permissions >
 Assign by Product**.
 
 #### What permissions do I have when using seamless SSO?
@@ -99,7 +99,7 @@ are trying to access.
 #### How are user permissions set or changed for seamless SSO?
 
 User permissions for seamless SSO map directly to the user's Cloud
-account permission settings. The MyRackspace Customer Portal enables you to view
+account permission settings. The MyRackspace Portal enables you to view
 permissions by user or by product.
 
 **View permissions by user**

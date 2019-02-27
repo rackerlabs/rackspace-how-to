@@ -2,6 +2,7 @@
 permalink: reset-the-root-password-from-rescue-mode/
 audit_date:
 title: Reset the root user password from rescue mode
+type: article
 created_date: '2019-01-21'
 created_by: Rackspace Community
 last_modified_date: '2019-01-21'

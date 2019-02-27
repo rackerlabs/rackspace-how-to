@@ -112,7 +112,7 @@ You can also reschedule or cancel the migration before the scheduled time by cli
 
   <img src="{% asset_path exchange/upgrade-to-exchange-2016/exchange-upgrade-5.png %}" />
 
-When the migration completes you can log into the [Mail Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f) and manage the mailboxes.
+When the migration completes you can log in to the [Mail Control Panel](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f) and manage the mailboxes.
 
 
 ### Frequently asked questions

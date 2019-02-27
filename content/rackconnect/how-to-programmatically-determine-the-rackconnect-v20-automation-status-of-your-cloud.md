@@ -110,7 +110,7 @@ you need more information about the Cloud Servers API, see the [Cloud Servers AP
 To improve your experience with RackConnect, we
 made an automation change that affects RackConnect customers with the
 Managed Operations service level. This change is transparent for the
-majority of customers&mdash;including those using the MyRackspace portal or
+majority of customers&mdash;including those using the MyRackspace Portal or
 the Cloud Control Panel to provision servers&mdash;but might require changes
 for any customers who performed automated processes or configuration on
 their servers immediately after the RackConnect Automation completed.

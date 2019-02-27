@@ -24,7 +24,7 @@ We recommend the following best practices for using RackConnect.
 When you need to open ports to or from your cloud server, or you need to
 make changes to the software firewall, you *must* use the RackConnect
 network policies section of the
-[MyRackspace portal](https://login.rackspace.com/) to make the changes. If
+[MyRackspace Portal](https://login.rackspace.com/) to make the changes. If
 you use the Firewall Control Panel, the RackConnect Automation that
 services your installation could fail, a conflict in your network
 policies might arise, and your rules will be removed when there are
@@ -36,7 +36,7 @@ Windows Firewall in Windows.
 #### Monitor your cloud server status during a rebuild
 
 If you rebuild a server, you can monitor its automation status in the RackConnect Management Interface in the
-[MyRackspace portal](https://login.rackspace.com/) or you can use the [API to monitor the automation status](/how-to/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud).
+[MyRackspace Portal](https://login.rackspace.com/) or you can use the [API to monitor the automation status](/how-to/how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud).
 
 #### Understand how your servers use RackConnect
 
@@ -79,7 +79,7 @@ service account is used to configure the server for RackConnect and implement up
 changed before the service account can be created, the automation
 fails. You may change the root/administrator password after your cloud
 server is deployed. You know it is deployed when the server's status
-shows a green circle in the MyRackspace portal under **Network
+shows a green circle in the MyRackspace Portal under **Network
 > RackConnect > *yourCloudAccount* > *yourCloudServer*** (*not* under the **Cloud Server** tab).
 
 #### Do not delete or modify the "rackconnect" user

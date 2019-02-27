@@ -12,8 +12,9 @@ Follow these guidelines when writing content:
 - [Clarify gerunds and participles](#clarify-gerunds-and-participles)
 - [Write clear and consistent code examples](#write-clear-and-consistent-code-examples)
 - [Use consistent terminology](#use-consistent-terminology)
+- [When and when not to suggest contacting Support](when-and-when-not-to-suggest-contacting-support)
 
-For comprehensive writing and style guidelines, see the [complete style guide for technical content](http://rackerlabs.github.io/docs-rackspace/style-guide/index.html).
+For comprehensive writing and style guidelines, see the [complete style guide for technical content](https://developer.rackspace.com/docs/style-guide/).
 
 ### Use sentence-style capitalization for titles and headings
 
@@ -27,7 +28,7 @@ Following are some examples:
 - Troubleshooting a Vyatta site-to-site VPN connection
 - Differences between IMAP and POP
 
-For more information about titles and headings, see the [Titles and headings](http://rackerlabs.github.io/docs-rackspace/style-guide/m-z-style-guidelines.html#titles-and-headings) topic in the complete style guide.
+For more information about titles and headings, see the [Titles and headings](https://developer.rackspace.com/docs/style-guide/style/titles-and-headings/) topic in the complete style guide.
 
 ### Use active voice
 
@@ -45,7 +46,7 @@ Following are examples of active voice:
 - Create a server.                                              
 - Rackspace products and services solve your business problems.
 
-For more information about voice, see the [Use active voice](http://rackerlabs.github.io/docs-rackspace/style-guide/basic-writing-guidelines.html#use-active-voice) section in the complete style guide.
+For more information about voice, see the [Use active voice](https://developer.rackspace.com/docs/style-guide/writing/use-active-voice/) section in the complete style guide.
 
 ### Use present tense
 
@@ -59,6 +60,8 @@ Following are examples of present tense:
 - Any user with a Cloud account can provision multiple ServiceNet database instances.
 - The product prompts you to verify the deletion.
 - To back up Cloud Sites to Cloud Files by using this example, you create two cron jobs. One job backs up the cloud site and database, and the second job uploads the backup to Cloud Files.
+
+For more information about present tense, see the [Use present tense](https://developer.rackspace.com/docs/style-guide/writing/use-present-tense/#use-present-tense) section in the complete style guide.
 
 ### Write to the user by using second person and imperative mood
 
@@ -74,9 +77,11 @@ Avoid switching person (point of view) in the same document.
 
 **Note:** This guidelines document is written in second person, and the headings and task examples use imperative mood.
 
+For more information about this topic, see the [Write to the user by using second person and imperative mood](https://developer.rackspace.com/docs/style-guide/writing/write-to-the-user/#write-to-the-user) section in the complete style guide.
+
 ### Write clear and consistent step text
 
-When you are providing instructions to users, you should generally number the steps (unless you have just one step). For the steps, use the following guidelines. The guidelines are followed by an example. For more extensive examples, see the [Procedural steps](http://rackerlabs.github.io/docs-rackspace/style-guide/m-z-style-guidelines.html#procedural-steps) section of the complete style guide.
+When you are providing instructions to users, you should generally number the steps (unless you have just one step). For the steps, use the following guidelines. The guidelines are followed by an example. For more extensive examples, see the [Procedural steps](https://developer.rackspace.com/docs/style-guide/style/tasks/#steps) section of the complete style guide.
 
 - Write each step as a complete imperative sentence (that is, a sentence that starts with an imperative verb) and use ending punctuation. In steps, the focus is on the user, and the voice is active.
 
@@ -100,7 +105,7 @@ When you are providing instructions to users, you should generally number the st
 
 Certain text should be formatted differently from the surrounding text to designate a special meaning or to make the text stand out to the user. Usually this formatting is accomplished by applying a different font treatment (such as bold, italics, or monospace).
 
-The following table covers the most common items that should be formatted. For more detailed formatting information, see the [Text formatting](http://rackerlabs.github.io/docs-rackspace/style-guide/m-z-style-guidelines.html#text-formatting) section of the complete style guide.
+The following table covers the most common items that should be formatted. For more detailed formatting information, see the [Text formatting](https://developer.rackspace.com/docs/style-guide/style/text-formatting/) section of the complete style guide.
 
 Text item | Treatment | Example
 --- | --- | ---
@@ -124,13 +129,13 @@ Pronouns are useful, but you must ensure that their antecedents (the words that 
 
 - **That** - Avoid using *that* as a demonstrative pronoun (which stands in for or points to a noun). Instead, use it as an adjective and follow it with a noun.
 
-For more examples, see the [Clarify pronouns](http://rackerlabs.github.io/docs-rackspace/style-guide/basic-writing-guidelines.html#clarify-pronouns) section of the complete style guide.
+For more examples, see the [Use pronouns carefully](https://developer.rackspace.com/docs/style-guide/writing/use-pronouns-carefully/) section of the complete style guide.
 
 ### Clarify gerunds and participles
 
 Participles are verbs that end in *-ed* or *-ing* and act as modifiers. Gerunds are verbs that end in *-ing* and act as nouns. Both types of words are useful and acceptable, but confusion can arise if they are not placed precisely in a sentence. For example, the word *meeting* can be a gerund or a modifier (or even a noun) depending on its placement in a sentence. Clarify gerunds and participles as necessary.
 
-For more information and examples, see the [Clarify gerunds and participles](http://rackerlabs.github.io/docs-rackspace/style-guide/basic-writing-guidelines.html#clarify-gerunds-and-participles) section of the complete style guide.
+For more information and examples, see the [Clarify gerunds and participles](https://developer.rackspace.com/docs/style-guide/writing/clarify-gerunds-participles/) section of the complete style guide.
 
 ### Write clear and consistent code examples
 
@@ -152,7 +157,7 @@ Observe the following guidelines when creating blocks of code as input or output
 
 - If the input includes a list of arguments or parameters, show the important or relevant ones first, and group related ones. If no other order makes sense, use alphabetical order. If you explain the arguments or parameters in text, show them in the same order that they appear in the code block.
 
-The following example illustrates many of these guidelines. For more examples, see the [Code examples](http://rackerlabs.github.io/docs-rackspace/style-guide/a-l-style-guidelines.html#code-examples) section of the complete style guide.
+The following example illustrates many of these guidelines. For more examples, see the [Code examples](https://developer.rackspace.com/docs/style-guide/style/code-examples/) section of the complete style guide.
 
 #### Example: Create a VM running a Docker host
 1. Show all the available virtual machines (VMs) that are running Docker.
@@ -169,7 +174,7 @@ The following example illustrates many of these guidelines. For more examples, s
 
     The `--driver` flag indicates what type of driver the machine will run on. In this case, `virtualbox` indicates that the driver is Oracle VirtualBox. The final argument in the command gives the VM a name, in this case, `test`.
 
-    The output should as follows:
+    The output should look as follows:
 
     ```
     Creating VirtualBox VM...
@@ -247,5 +252,21 @@ since |	because (describing a reason for)
 using |	by using
 
 For more guidelines about terminology, see the following sections in the complete style guide:
-- [Write for a global audience](http://rackerlabs.github.io/docs-rackspace/style-guide/basic-writing-guidelines.html#write-for-a-global-audience)
-- [Terminology](http://rackerlabs.github.io/docs-rackspace/style-guide/terminology-guidelines.html)
+- [Terminology for a global audience](https://developer.rackspace.com/docs/style-guide/terminology/terms-for-global-audience/#terms-for-global-audiencee)
+- [Terminology](https://developer.rackspace.com/docs/style-guide/terminology/)
+
+### When and when not to suggest contacting Support
+
+A customer who has sought out documentation has inherently communicated that documentation is their
+preferred channel of support at that moment. Suggesting that they contact the Support team directly
+undermines the purpose of the documentation and diminishes the user's confidence in the instructions.
+
+- Don't suggest contacting Support directly.
+
+- Don't include Support phone numbers.
+
+- Don't recommend creating a ticket unless it is for gaining access to a Rackspace feature.
+
+  You should not recommend contacting the Support team in an article unless doing so is a required step. A
+  required step is a task that the customer cannot complete without contacting Support by phone or by
+  opening a ticket.

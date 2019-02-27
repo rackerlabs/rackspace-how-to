@@ -29,7 +29,7 @@ scott@example.com. Adding all members of the billing team to one distribution
 list makes it possible to communicate new upcoming billing updates
 within the team by writing to one address, such as billingupdates@example.com.
 
-To set up a list, log into the Cloud Office Control Panel
+To set up a list, log in to the Cloud Office Control Panel
 [here](https://cp.rackspace.com/Exchange/Mail/Lists/).
 
 ### Outlook Web App (OWA)
@@ -37,7 +37,7 @@ To set up a list, log into the Cloud Office Control Panel
 The Outlook Web App is a direct connection to your email without the
 need for additional software; your web browser is enough.
 Messages that are sent and received using OWA will be
-waiting for you the next time you log into the portal. The OWA portal
+waiting for you the next time you log in to the portal. The OWA portal
 provides most of the functionality that a mail client would offer, including
 sending and receiving email, setting up email signatures, and setting
 rules to filter messages to sub-folders.

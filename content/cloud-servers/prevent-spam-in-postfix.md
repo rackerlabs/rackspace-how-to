@@ -2,6 +2,7 @@
 permalink: prevent-spam-in-postfix/
 audit_date: '2019-01-18'
 title: Prevent spam in Postfix
+type: article
 created_date: '2019-01-23'
 created_by: Rackspace Community
 last_modified_date: '2019-01-23'

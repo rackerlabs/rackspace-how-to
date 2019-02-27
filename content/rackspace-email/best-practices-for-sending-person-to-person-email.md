@@ -3,6 +3,7 @@ permalink: best-practices-for-sending-person-to-person-email/
 audit_date: '2017-05-30'
 title: Best practices for sending person-to-person email
 type: article
+type: article
 created_date: '2017-05-17'
 created_by: Beau Bailey
 last_modified_date: '2017-10-19'

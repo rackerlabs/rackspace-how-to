@@ -2,6 +2,7 @@
 permalink: use-iptables-with-centos-7/
 audit_date: '2019-01-16'
 title: Use iptables with CentOS 7
+type: article
 created_date: '2019-01-16'
 created_by: Shaun Crumpler
 last_modified_date: '2019-01-16'

@@ -62,8 +62,8 @@ your business.
   </tr>
   <tr>
     <td><strong>Ticketing system, control panel</strong></td>
-    <td><a href="https://login.rackspace.com/" MyRackspace portal</a></td>
-    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If your server is set up with RackConnect or linked to managed Dedicated services, you should still use the MyRackspace portal. However, the MyRackspace portal does not replace the Cloud Control Panel for managing Cloud services.</td>
-    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If you are using RackConnect, you can also leverage the MyRackspace portal to manage your Cloud services.</td>
+    <td><a href="https://login.rackspace.com/" MyRackspace Portal</a></td>
+    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If your server is set up with RackConnect or linked to managed Dedicated services, you should still use the MyRackspace Portal. However, the MyRackspace Portal does not replace the Cloud Control Panel for managing Cloud services.</td>
+    <td><a href="https://login.rackspace.com/" Cloud Control Panel</a> and API<br><br>If you are using RackConnect, you can also leverage the MyRackspace Portal to manage your Cloud services.</td>
   </tr>
 </table>

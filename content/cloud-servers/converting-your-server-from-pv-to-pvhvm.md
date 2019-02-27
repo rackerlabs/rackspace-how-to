@@ -49,8 +49,8 @@ displayed:
 
 File system considerations include the following: 
 
--  The lower-performance ext3 filesystem is used for all PV Linux images. 
--  The higher-performance ext4 filesystem is used on PVHVM Linux images.
+-  The lower-performance ext3 file system is used for all PV Linux images. 
+-  The higher-performance ext4 file system is used on PVHVM Linux images.
 
 ### Boot loader
 

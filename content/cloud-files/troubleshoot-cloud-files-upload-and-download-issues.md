@@ -5,8 +5,8 @@ title: Troubleshoot Cloud Files upload and download issues
 type: article
 created_date: '2018-08-10'
 created_by: Shaun Crumpler
-last_modified_date: '2018-10-24'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-02-18'
+last_modified_by: Cat Lookabaugh
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -51,7 +51,7 @@ the following steps:
    a third-party tool that can be configured to use direct calls with the
    Cloud Files API. For more information, see [How to configure Cyberduck for
    Rackspace Cloud
-   Files](https://community.rackspace.com/general/f/general-discussion-forum/8486/how-to-configure-cyberduck-for-rackspace-cloud-files).
+   Files](https://support.rackspace.com/how-to/configure-rackspace-cloud-files-with-cyberduck/).
 
     If you receive an error message, document it so that you can include it in
     your support request and then skip to step 6.

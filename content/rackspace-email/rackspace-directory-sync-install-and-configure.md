@@ -70,7 +70,7 @@ and encryption.
 #### Installation files
 
 You can find the installation files while logged in to
-either the [Cloud Office control panel](https://cp.rackspace.com) or the
+either the [Cloud Office Control Panel](https://cp.rackspace.com) or the
 [MyRackspace Portal](https://login.rackspace.com), depending on how you
 normally log in.
 
@@ -81,7 +81,7 @@ the primary contact can use the following steps:
 2. Click **Products > Cloud Office**.
 3. Click on your domain. The Directory Sync installers are located in the right column.
 
-Administrators who log in to the Cloud Office control panel with
+Administrators who log in to the Cloud Office Control Panel with
 Super Admin permission can use the following steps:
 
 1. While on the home page, click **Domains**.
@@ -150,7 +150,7 @@ Directory Sync by performing the following steps:
 2. On the Sync Registration Page, enter the admin ID and password
     associated with your Rackspace Cloud Office account, and then click
     **Register**.
-    - Customers who logged in to the [MyRackspace portal](https://login.rackspace.com)
+    - Customers who logged in to the [MyRackspace Portal](https://login.rackspace.com)
         will automatically create an admin ID through the MyRackspace
         Portal before download
     - Customers who logged in to the [Cloud Office Control Panel](https://cp.rackspace.com)

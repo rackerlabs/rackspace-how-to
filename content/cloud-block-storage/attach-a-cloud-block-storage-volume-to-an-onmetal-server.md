@@ -144,7 +144,7 @@ detach a volume from your OnMetal server.
 
 1. From inside the instance, perform all commands as root.
 
-2. Unmount filesystems. (For instructions, see [Detach and delete Cloud Block Storage volumes](/how-to/detach-and-delete-cloud-block-storage-volumes)).
+2. Unmount file systems. (For instructions, see [Detach and delete Cloud Block Storage volumes](/how-to/detach-and-delete-cloud-block-storage-volumes)).
 
 3. Disconnect the volume.
 

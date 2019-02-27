@@ -2,6 +2,7 @@
 permalink: set-up-sftp-users-in-rhel-centos-ubuntu-and-debian/
 audit_date: '2019-01-18'
 title: Set up SFTP users in RHEL 6, CentOS 6, Ubuntu, and Debian
+type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
 last_modified_date: '2019-01-22'

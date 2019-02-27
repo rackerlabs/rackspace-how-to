@@ -50,7 +50,7 @@ No. Do not add/disconnect networks . This will cause serious issues with
 networking on the Vyatta and the only recourse will be to rebuild the
 Vyatta.
 
-#### I cannot log into the Vyatta using username 'root' and the password that was set when the Vyatta was created. What is wrong?
+#### I cannot log in to the Vyatta using username 'root' and the password that was set when the Vyatta was created. What is wrong?
 
 Please log in with username 'vyatta' to login to the appliance.
 

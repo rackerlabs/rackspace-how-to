@@ -19,7 +19,7 @@ This following article provides instructions on how to create, access, and edit 
 
 ### Create a custom dashboard
 
-1. Log into the Cloud Control Panel.
+1. Log in to the Cloud Control Panel.
 2. In the top navigation bar, select **Servers** > **Rackspace Intelligence**.
 3. At the top of the Rackspace Intelligence page, click **Dashboard**.
 4. In the dashboard page, click **Custom**.

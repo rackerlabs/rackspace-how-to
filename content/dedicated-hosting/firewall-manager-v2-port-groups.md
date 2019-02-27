@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-Firewall Manager v2 is a new tool within the MyRackspace portal. This article describes the port-group feature within this tool.
+Firewall Manager v2 is a new tool within the MyRackspace Portal. This article describes the port-group feature within this tool.
 
 To learn more about the tool, see [Firewall Manager v2](/how-to/firewall-manager-v2).
 

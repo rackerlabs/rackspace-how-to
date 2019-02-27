@@ -27,14 +27,14 @@ provider.
 To associate your BlackBerry Internet Service (BIS) account with Outlook
 Web Access (OWA), perform the following steps:
 
-1. Log into your User Control Panel at <https://admin.emailsrvr.com/usercp>.
+1. Log in to your User Control Panel at <https://admin.emailsrvr.com/usercp>.
 
 2. Under the Client Setup section, click the **Entourage 2008**
 link. This will open the **Setting Up Entourage 2008** window. Though
 BIS is not based on Entourage, the addresses and the user name are the
 same. You will need this information to set up the account.
 
-3. Log into the BIS website for your carrier.
+3. Log in to the BIS website for your carrier.
    Links to some major carriers' sites are listed below:
 
 - Alltel:

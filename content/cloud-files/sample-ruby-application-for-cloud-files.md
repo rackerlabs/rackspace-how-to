@@ -21,7 +21,7 @@ see [View and reset your API key.](/how-to/view-and-reset-your-api-key)
     #!/usr/bin/env ruby
     require 'rubygems'
     require 'cloudfiles'
-    # Log into the Cloud Files system
+    # Log in to the Cloud Files system
     cf = CloudFiles::Connection.new('UsernameGoesHere','APIKeyGoesHere')
     #Create a Container
     container = cf.create_container('ContainerNameGoesHere')

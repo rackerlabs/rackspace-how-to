@@ -3,6 +3,7 @@ permalink: dns-record-definitions/
 audit_date: '2017-05-30'
 title: DNS record definitions
 type: article
+type: article
 created_date: '2017-05-17'
 created_by: William Loy
 last_modified_date: '2017-05-30'

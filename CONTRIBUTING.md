@@ -11,7 +11,7 @@
 	- [Writing guidelines](#writing-guidelines)
 	- [Support and feedback](#support-and-feedback)
 
-**Important:** You need to log into public GitHub, not the enterprise GitHub, to contribute. If you have questions, contact us at [how-to@rackspace.com](mailto:how-to@rackspace.com).
+**Important:** You need to log in to public GitHub, not the enterprise GitHub, to contribute. If you have questions, contact us at [how-to@rackspace.com](mailto:how-to@rackspace.com).
 
 ## Contributing to the Rackspace How-To content repository
 

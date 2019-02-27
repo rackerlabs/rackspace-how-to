@@ -38,7 +38,7 @@ with SSH, review the following article for your platform:
 
 - [Mac OSX](https://support.rackspace.com/how-to/connecting-to-linux-from-mac-os-x-by-using-terminal/)
 
-### Log into a Linux server
+### Log in to a Linux server
 
 To log in to a Linux server, you need the following information:
 

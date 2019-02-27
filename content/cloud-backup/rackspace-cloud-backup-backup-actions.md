@@ -1,6 +1,6 @@
 ---
 permalink: rackspace-cloud-backup-backup-actions/
-audit_date:  '2017-07-05'
+audit_date: '2017-07-05'
 title: Cloud Backup backup actions
 type: article
 created_date: '2012-08-22'

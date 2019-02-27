@@ -7,8 +7,7 @@ created_date: '2014-06-03'
 created_by: Matt Sherborne
 last_modified_date: '2016-01-12'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
+
 ---
 
 This article presents a step-by-step description for how to set up a two-server GlusterFS array.
@@ -137,7 +136,7 @@ The volume exists, but it is not being actively synchronized nor served.
 
 3.  Create the mount point, configure it in `/etc/fstab`, and then actually mount the GlusterFS volume.
 
-4.  In `/etc/fstab`, add one special option: `_netdev`. This option tells Ubuntu that the filesystem resides on a device that requires network access, and to not mount it until the network has been enabled.
+4.  In `/etc/fstab`, add one special option: `_netdev`. This option tells Ubuntu that the file system resides on a device that requires network access, and to not mount it until the network has been enabled.
 
 ### Test it
 

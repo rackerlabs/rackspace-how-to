@@ -1,7 +1,7 @@
 ---
 permalink: log-into-a-linux-server-with-an-ssh-private-key-on-windows/
 audit_date: '2018-09-26'
-title: Log into a Linux server with an SSH private key on a Windows client
+title: Log in to a Linux server with an SSH private key on a Windows client
 type: article
 created_date: '2013-09-25'
 created_by: Brint Ohearn

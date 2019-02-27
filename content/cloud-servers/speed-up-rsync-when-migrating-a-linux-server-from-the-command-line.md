@@ -58,7 +58,7 @@ and truncating log files in **log/** to zero bytes with the command:
 
     rake log:clear
 
-If you are running a caching server that caches to disk (as opposed to RAM), identify its file-storage directory and prune with vigor. Check your filesystem for small session and cache files created by custom applications. Again, prune with vigor. If migrating an email server that has a Mail Delivery Agent (MDA) such as Dovecot installed, have your email users clean their email archives of old email first.
+If you are running a caching server that caches to disk (as opposed to RAM), identify its file-storage directory and prune with vigor. Check your file system for small session and cache files created by custom applications. Again, prune with vigor. If migrating an email server that has a Mail Delivery Agent (MDA) such as Dovecot installed, have your email users clean their email archives of old email first.
 
 ### Constantly changing files
 

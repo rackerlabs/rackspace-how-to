@@ -5,7 +5,7 @@ title: Cisco ASA firewall end-of-life migration FAQ
 type: article
 created_date: '2019-01-25'
 created_by: Shannon Enix
-last_modified_date: '2019-01-25'
+last_modified_date: '2019-01-28'
 last_modified_by: William Loy
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -15,7 +15,7 @@ The Cisco&reg; Adaptive Security Appliance (ASA) 5505, 5510, 5520, 5540, and 555
 
 #### What does the Rackspace end of life of Cisco ASA Firewalls mean?
 
-This means that beginning on the end-of-life date, hardware Service Level Agreements (SLA) and support services will no longer apply, and the platforms will be subject to the Extended Lifecycle Support terms found here: [Legal end-of-life terms](https://www.rackspace.com/information/legal/eolterms.).
+This means that beginning on the end-of-life date, hardware Service Level Agreements (SLA) and support services will no longer apply, and the platforms will be subject to the Extended Lifecycle Support terms found here: [Legal end-of-life terms](https://www.rackspace.com/information/legal/eolterms).
 
 
 #### Why do I need to migrate to a new firewall?

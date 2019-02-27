@@ -2,6 +2,7 @@
 permalink: configure-apache-for-ssl-termination-on-a-cloud-load-balancer/
 audit_date:
 title: Configure Apache for SSL termination on a Cloud Load Balancer
+type: article
 created_date: '2019-01-17'
 created_by: Rackspace Community
 last_modified_date: '2019-01-17'

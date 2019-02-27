@@ -88,9 +88,11 @@ password that you set, you can create or change the password.
 
        UPDATE mysql.user SET Password = PASSWORD('password') WHERE User = 'root';
    
-   For version MySQL 5.7 and later, enter the following command in the `mysql` shell, replacing `password` with your new password:
+   For version MySQL 5.7 and later, enter the following command in the `mysql` shell, replacing `password` with
+   your new password:
    
-       UPDATE mysql.user SET authentication_string = PASSWORD('ywMVTT5QRDDlFSZejOdt') WHERE User='root';
+       UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root';
+
 
 2. To make the change take effect, reload the stored user information with the following command:
 
@@ -174,7 +176,7 @@ Some applications create a database as part of their setup process, but others
 require you to create a database yourself and tell the
 application about it.
 
-To create a database, log into the `mysql` shell and run the following command,
+To create a database, log in to the `mysql` shell and run the following command,
 replacing `demodb` with the  name of the database that you want to create:
 
     CREATE DATABASE demodb;
