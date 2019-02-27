@@ -1,6 +1,6 @@
 ---
 permalink: install-the-swiftly-client-for-cloud-files/
-audit_date:
+node_id: 4030
 title: Install the Swiftly client for Cloud Files
 type: article
 created_date: '2014-04-21'
@@ -62,6 +62,40 @@ Invoke the following instructions from a bash shell on your server.
 2.  Install swiftly using `pip`.
 
         sudo pip install swiftly
+        
+### Configure Swiftly for Rackspace Cloud Files
+Edit or create the file `~/.swiftly.conf`. By default, swiftly will use the configuration file in the same local directory where it is run, or you can define a file path while running swiftly commands using the `--conf=PATH` flag. Include the following contents in your `.swiftly.conf` file:
+
+        [swiftly]
+        auth_user = <yourUserName>
+        auth_key = <yourAPIkey>
+        auth_url = https://identity.api.rackspacecloud.com/v2.0
+        region = <datacenter>
+
+For the full list of options available in the `.swiftly.conf` file, see [the sample config file in the swiftly repo](https://github.com/gholt/swiftly/blob/master/swiftly.conf-sample).
+
+### Install Eventlet (optional)
+Eventlet is an optional pip package that allows you to set a concurrency count when using swiftly. This is useful when performing bulk actions that are threaded, because the Cloud Files API has a limit of 100 concurrent write requests per container. 
+
+### Install Eventlet on Ubuntu
+
+1. Install the Python developer library package using `apt-get`.
+
+        sudo apt-get python-dev
+
+2. Install Eventlet using `pip`.
+
+        sudo pip install eventlet
+        
+### Install Eventlet on CentOS
+
+1. Install the Python developer library package using `yum`.
+
+        sudo yum install python-devel
+
+2. Install Eventlet using `pip`.
+
+        sudo pip install eventlet
 
 ### Install GNU Screen (optional)
 
@@ -147,3 +181,82 @@ you note the session number (in this example, 3004) and then use the
 following command:
 
     screen -r 3004
+
+### Swiftly Example Commands
+
+Important Note: Swiftly allows for destructive actions to be run against 
+one or all containers on an account. Please use caution when performing 
+updates and deletes to cloud files objects, as these cannot be undone, 
+and test out your commands first against test containers wherever possible.
+
+Get a list of containers for the configured account:
+
+        swiftly get
+        
+The response will be in a list:
+
+        .ACCESS_LOGS
+        .CDN_ACCESS_LOGS
+        Books
+        
+Get a list of containers including detailed information:
+
+        swiftly get --raw
+        
+The response will be in json format:
+
+        [{"count": 103, "bytes": 22296, "name": ".ACCESS_LOGS"}, 
+        {"count": 126, "bytes": 32708, "name": ".CDN_ACCESS_LOGS"}, 
+        {"count": 417, "bytes": 1177376576, "name": "Books"}]
+        
+Get a list of objects in a container:
+
+        swiftly get <containerName>
+        
+Get containers or objects that match a beginning prefix (case sensitive):
+
+        swiftly get --prefix <startingText>
+        
+        swiftly get <containerName> --prefix <startingText>
+        
+Post new headers to an object (supports multiple headers in a single 
+command, separated out as shown):
+
+        swiftly post -h "<headerName1>:<headerValue1>" -h "<headerName2>:<headerValue2>" <containerName>/<objectName>
+        
+Upload an object (This example will upload the local directory file 
+`somefile.png` and rename it to `newfilename.png` in the specified 
+container, placing the object into the pseudo directory `/images/`):
+
+        swiftly put -i ~/somefile.png <containerName>/images/newfilename.png
+        
+Delete an object, or delete an object within a pseudo directory:
+
+        swiftly delete <containerName>/somefile.png
+        swiftly delete <containerName>/images/newfilename.png
+        
+Delete all objects within a container, then delete the container:
+
+        swiftly delete <containerName> --until-empty --recursive
+        
+Bulk update all files in a container to add the Header "HEADERNAME" 
+with a value of "HEADERVALUE". Note that swiftly for/do commands contain 
+literal `<` and `>` characters, include the exact text `<item>` in 
+the examples shown here. For best practices on for/do commands, `--cache-auth` 
+is set to temporarily store the authentication token rather than make repeated 
+calls to the Cloud Identity API, and `--concurrency` is limited to 100 maximum 
+api calls to Cloud Files:
+
+        swiftly --cache-auth --eventlet --concurrency=100 for CONTAINER do post -H "HEADERNAME:HEADERVALUE" "<item>"
+
+Bulk delete only objects within a container whose name beings with a certain 
+prefix (caching the identity token and limiting to 100 concurrent API calls):
+
+        swiftly --cache-auth --eventlet --concurrency=100 for CONTAINER --prefix STARTINGTEXT --output-names do delete "<item>"
+
+
+Bulk delete only containers whose name begins with a certain prefix (caching 
+the identity token and limiting to 100 concurrent API calls):
+
+        swiftly --cache-auth --eventlet --concurrency=100 for "" --prefix STARTINGTEXT --output-names do delete "<item>" --recursive --until-empty
+        
