@@ -296,7 +296,7 @@ Run the following command to perform a bulk update:
 #### Bulk delete specified objects
 
 Run the following command to perform a bulk delete of only objects within a container 
-whose name beings with a certain prefix (caching the Identity token and limiting to 
+whose name begins with a certain prefix (caching the Identity token and limiting to 
 100 concurrent API calls):
 
         swiftly --cache-auth --eventlet --concurrency=100 for CONTAINER --prefix STARTINGTEXT --output-names do delete "<item>"
