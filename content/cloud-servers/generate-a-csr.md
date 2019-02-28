@@ -135,10 +135,10 @@ When you are done with the generator, you can return to the Cloud Control Panel 
 
 Access the CSR Generator [directly](https://csrgenerator.rackspace.com) or through the control panel by using the following steps:
 
-1. Log in to the [Cloud Control Panel](https://login.rackspace.com) and select **Rackspace Cloud** from the drop-down product menu in the top nagivation bar.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com) and select **Rackspace Cloud** from the drop-down product menu in the top navigation bar.
 2. In the top navigation bar, click **Servers > Cloud Servers**.
 3. Click the name of the server for which you want to generate a CSR.
-4. In the left-hand **Managing Your Server** section under **Help me with**, click **Generate a CSR**.
+4. In the right-hand **Managing Your Server** section under **Help me with**, click **Generate a CSR**.
 
 The generator lists your existing CSRs, if you have any, organized by domain name.
 
