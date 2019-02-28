@@ -12,13 +12,13 @@ product_url: cloud-dns
 ---
 
 Modifying your hosts file enables you to override the domain name system
-(DNS) for a domain on a specific machine. [DNS management](https://www.rackspace.com/cloud/dns) 
-is useful when you want to test your site without the test link prior to going live with SSL, 
+(DNS) for a domain on a specific machine. [DNS management](https://www.rackspace.com/cloud/dns)
+is useful when you want to test your site without the test link prior to going live with SSL,
 verify that an alias site works prior to DNS changes, and for other DNS-related reasons.
 
 Modifying your hosts file causes your local machine to look directly at
-the Internet Protocol (IP) address that you specify. Rackspace offers 
-[managed hosting solutions](https://www.rackspace.com/managed-hosting) to assist with 
+the Internet Protocol (IP) address that you specify. Rackspace offers
+[managed hosting solutions](https://www.rackspace.com/managed-hosting) to assist with
 the handling of these resources.
 
 Modifying the hosts file involves adding two entries to it. Each entry
@@ -46,7 +46,7 @@ these entries.
 
 ### Windows
 
-If you are using a [Microsoft operating system](https://www.rackspace.com/microsoft) 
+If you are using a [Microsoft operating system](https://www.rackspace.com/microsoft)
 like Windows 10, Windows 8, Windows 7, and Windows Vista you must run Microsoft Notepad
 as an administrator.
 
@@ -178,36 +178,203 @@ Use the following instructions if you're running MacOS X 10.6 through 10.12:
         dscacheutil -flushcache
 
 
+
 <script type="application/ld+json">
-   {
-   "@context": "http://schema.org/",
-   "@type": "HowTo",
-   "name":"Modify your hosts file",
-   "description": "This article provides the steps (for several operating systems) to modify your hosts file, which enables you to override the domain name system (DNS) for a domain on a specific machine.",
-   "step": [
-   	{
-   	"@type": "HowToSection",
-   	"name": "On a Windows machine, access the search function.",
-       "position": "1",
-   	"itemListElement": "To access the search function, press the Windows key."
-   	},{
-   	"@type": "HowToSection",
-   	"name": "Find the Notepad application.",
-       "position": "2",
-   	"itemListElement": [
-   		{
-           "@type": "HowToStep",
-           "position": "1",
-   		"text": "Type 'Notepad' in the search field."
-   		},{
-           "@type": "HowToStep",
-           "position": "2",
-           "text": "In the search results, right-click **Notepad** and select **Run as administrator**."
-   		}]
-   	},{
-   	"@type": "HowToSection",
-   	"name": "Test the connection remotely",
-       "position": "3",
-   	"itemListElement": "From Notepad, open the following file:"
-   }]}
-</script>
+{
+  "@context": "http://schema.org",
+  "@type": "HowTo",
+  "text": "Modify your hosts file",
+  "description": "This article provides instructions for locating and editing the hosts file on Microsoft Windows, Linux, and MacOS",
+  "step": [{
+	"@type": "HowToSection",
+	"text": "Windows 10 and 8",
+	"name": "Use the following instructions if you’re running Windows 10 or Windows 8:",
+	"itemListElement": [
+		{
+		"@type": "HowToStep",
+		"text": "Press the Windows key."
+		},{
+		"@type": "HowToStep",
+		"text": "Type Notepad in the search field."
+		},{
+		"@type": "HowToStep",
+		"text": "In the search results, right-click Notepad and select Run as administrator."
+		},{
+		"@type": "HowToStep",
+		"text": "From Notepad, open the following file: c:\\Windows\\System32\\Drivers\\etc\\hosts"
+		},{
+		"@type": "HowToStep",
+		"text": "Make the necessary changes to the file."
+		},{
+		"@type": "HowToStep",
+		"text": "Select File > Save to save your changes."
+	}]},{
+	"@type": "HowToSection",
+	"text": "Windows 7 and Vista",
+	"name": "Use the following instructions if you’re running Windows 7 or Windows Vista:",
+	"itemListElement": [
+		{
+		"@type": "HowToStep",
+		"text": "Select Start > All Programs > Accessories."
+		},{
+		"@type": "HowToStep",
+		"text": "Right-click Notepad and select Run as administrator.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "The Windows needs your permission UAC window appears."
+		}]},{
+		"@type": "HowToStep",
+		"text": "Click Continue to grant permission.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "Notepad opens."
+		}]},{
+		"@type": "HowToStep",
+		"text": "In Notepad, select File > Open."
+		},{
+		"@type": "HowToStep",
+		"text": "In the File name field, enter the following path: c:\\Windows\\System32\\Drivers\\etc\\hosts"
+		},{
+		"@type": "HowToStep",
+		"text": "Select Open."
+		},{
+		"@type": "HowToStep",
+		"text": "Make the necessary changes to the file."
+		},{
+		"@type": "HowToStep",
+		"text": "Select File > Save to save your changes."
+		}]},{
+	"@type": "HowToSection",
+	"text": "Windows NT, Windows 2000, and Windows XP",
+	"name": "Use the following instructions if you’re running Windows NT, Windows 2000, or Windows XP:",
+	"itemListElement": [
+		{
+		"@type": "HowToStep",
+		"text": "Select Start > All Programs > Accessories > Notepad."
+		},{
+		"@type": "HowToStep",
+		"text": "Select File > Open."
+		},{
+		"@type": "HowToStep",
+		"text": "In the File name field, enter c:\\Windows\\System32\\Drivers\\etc\\hosts."
+		},{
+		"@type": "HowToStep",
+		"text": "Select Open."
+		},{
+		"@type": "HowToStep",
+		"text": "Make the necessary changes to the file."
+		},{
+		"@type": "HowToStep",
+		"text": "Select File > Save to save your changes."
+	}]},{
+	"@type": "HowToSection",
+	"text": "Linux",
+	"name": "Use the following instructions if you’re running Linux:",
+	"itemListElement": [
+		{
+		"@type": "HowToStep",
+		"text": "Open a Terminal window."
+		},{
+		"@type": "HowToStep",
+		"text": "Enter the following command to open the hosts file in a text editor: sudo nano /etc/hosts"
+		},{
+		"@type": "HowToStep",
+		"text": "Enter your domain user password."
+		},{
+		"@type": "HowToStep",
+		"text": "Make the necessary changes to the file."
+		},{
+		"@type": "HowToStep",
+		"text": "Press Control-X."
+		},{
+		"@type": "HowToStep",
+		"text": "When you are asked if you want to save your changes, enter y."
+	}]},{
+	"@type": "HowToSection",
+	"text": "MacOS X 10.0 through 10.1.5",
+	"name": "Use the following instructions if you’re running MacOS X 10.0 through 10.1.5:",
+	"itemListElement": [
+		{
+		"@type": "HowToStep",
+		"text": "Open /Applications/Utilities/NetInfo Manager."
+		},{
+		"@type": "HowToStep",
+		"text": "To enable editing of the Network Information database (NetInfo), click the padlock icon in the lower-left corner of the window."
+		},{
+		"@type": "HowToStep",
+		"text": "Enter your domain user password and select OK."
+		},{
+		"@type": "HowToStep",
+		"text": "In the second column of the browser view, select the node named machines."
+		},{
+		"@type": "HowToStep",
+		"text": "In the third column, select the entry named localhost."
+		},{
+		"@type": "HowToStep",
+		"text": "From the Edit menu, select Duplicate.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "A confirmation alert appears."
+		}]},{
+		"@type": "HowToStep",
+		"text": "Click Duplicate.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "A new entry named localhost copy appears and its properties are displayed below the browser view."
+		}]},{
+		"@type": "HowToStep",
+		"text": "Double-click the value of the ip_address property and enter the IP address of the other computer."
+		},{
+		"@type": "HowToStep",
+		"text": "Double-click the value of the name property and enter the host name that you want use for the other computer."
+		},{
+		"@type": "HowToStep",
+		"text": "Click the serves property and select Delete from the Edit menu."
+		},{
+		"@type": "HowToStep",
+		"text": "From the File menu, select Save.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "A confirmation alert appears."
+		}]},{
+		"@type": "HowToStep",
+		"text": "Click Update this copy."
+		},{
+		"@type": "HowToStep",
+		"text": "Repeat steps 6 through 12 for each additional host entry that you want to add."
+		},{
+		"@type": "HowToStep",
+		"text": "From the NetInfo Manager menu, select Quit.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "You do not need to restart the computer"
+		}]}]},{
+	"@type": "HowToSection",
+	"text": "MacOS X 10.6 through 10.12",
+	"name": "Use the following instructions if you’re running MacOS X 10.6 through 10.12:",
+	"itemListElement": [
+		{
+		"@type": "HowToStep",
+		"text": "On your computer, select Applications > Utilities > Terminal to open a Terminal window."
+		},{
+		"@type": "HowToStep",
+		"text": "Enter the following command in the Terminal window to open the hosts file: sudo nano /private/etc/hosts"
+		},{
+		"@type": "HowToStep",
+		"text": "When you are prompted, enter your domain user password."
+		},{
+		"@type": "HowToStep",
+		"text": "Edit the hosts file.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "The file contains comments (lines that begin with the # symbol) and some default host name mappings (for example, 127.0.0.1 – local host). Add your new mappings after the default mappings."
+		}]},{
+		"@type": "HowToStep",
+		"text": "To save the hosts file, press Control+X."
+		},{
+		"@type": "HowToStep",
+		"text": "When you are asked if you want to save your changes, enter y."
+		},{
+		"@type": "HowToStep",
+		"text": "To force your changes to take effect, flush the DNS cache by entering the following command: dscacheutil -flushcache"
+		}]}]}

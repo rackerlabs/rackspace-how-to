@@ -109,3 +109,97 @@ troubleshooting that has been completed.
 If your server is not returning responses for any of the commands in the previous
 troubleshooting steps, open a support ticket and include all of the steps that you
 have attempted to expedite the issue.
+
+
+<script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "HowTo",
+"text": "Troubleshoot a downed Linux cloud server",
+"description": "You can use these troubleshooting steps to diagnose whether you can solve the issue, or escalate the issue to Rackspace support.",
+"step": [{
+	"@type": "HowToStep",
+	"text": "Check Rackspace system status",
+	"description": "Before diagnosing a downed Linux cloud server yourself, visit the Rackspace System Status page and check for open issues that might be impacting the service."
+	},{
+	"@type": "HowToStep",
+	"text": "Check support tickets",
+	"description": "Check your open support tickets for information about any incidents that might be affecting the service. To check your open support tickets, log in to the Cloud Control Panel and click Tickets > Ticket List in the top navigation bar."
+	},{
+	"@type": "HowToStep",
+	"text": "Check the console of the downed cloud server",
+	"description": "Use the following steps the check the downed server’s console:",
+	"itemListElement": [{
+		"@type": "HowToDirection",
+		"text": "Connect to your cloud server and check the console. For steps on how to connect to the cloud server, see Connect to a cloud server.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "If you are able to successfully connect using the command line application, such as terminal or powershell, then skip to step 5."
+			},{
+			"@type": "HowToDirection",
+			"text": "If you can not connect using a command line application, use the Emergency console in Cloud Control Panel. Directions for finding the emergency console are found in steps 2 - 6."
+		}]},{
+		"@type": "HowToDirection",
+		"text": "Log in to the Cloud Control Panel."
+		},{
+		"@type": "HowToDirection",
+		"text": "In the top navigation bar, click Select a Product > Rackspace Cloud."
+		},{
+		"@type": "HowToDirection",
+		"text": "Select Servers > Cloud Servers."
+		},{
+		"@type": "HowToDirection",
+		"text": "Find the downed server in question and click the gear icon to the left of its name."
+		},{
+		"@type": "HowToDirection",
+		"text": "Select Emergency Console. This starts a browser based command line application."
+		},{
+		"@type": "HowToDirection",
+		"text": "Test the responsiveness of your server by clicking into the command line and pressing Enter.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "If you see a response, the server is responsive. Skip to the Ping/Nmap IP Address section."
+			},{
+			"@type": "HowToDirection",
+			"text": "If the console is not responding or displays errors such as being out of system resources, go to the Attempt Reboot section."
+	}]}]},{
+	"@type": "HowToStep",
+	"text": "Attempt Reboot",
+	"description": "If your server is not responding through the command line, a hard reboot might make the server responsive again.",
+	"itemListElement": [{
+		"@type": "HowToDirection",
+		"text": "Return to the server list in the Cloud Control panel and click the gear icon next to the downed server’s name. From the drop-down, select Reboot Server."
+	},{
+		"@type": "HowToDirection",
+		"text": "Review the message on the screen. After you’re reviewed the message, click Reboot Server."
+	},{
+		"@type": "HowToDirection",
+		"text": "Repeat the steps in the Check the console section.",
+		"itemListElement": [{
+			"@type": "HowToDirection",
+			"text": "If the server is responsive, move on to the Ping/Nmap IP Address troubleshooting step."
+			},{
+			"@type": "HowToDirection",
+			"text": "If the console is still not responsive, check for either the status page or any open support tickets about an incident that impacts the server in question. If you can’t find any information regarding the status of your server, create a support ticket. Give a brief description of the troubleshooting steps you performed to expedite response time."
+	}]}]},{
+	"@type": "HowToStep",
+	"text": "Ping/Nmap IP Address",
+	"itemListElement": [{
+		"@type": "HowToDirection",
+		"text": "From your cloud server’s Details page, go to the Networks and Security Groups section and then copy the Public IPv4 address."
+		},{
+		"@type": "HowToDirection",
+		"text": "In your command line application or console, enter ping <ipv4-address>. Take note if a response is received or not."
+		},{
+		"@type": "HowToDirection",
+		"text": "In a terminal window, run the command nmap -sV -Pn followed by the copied IP address.",
+		"itemListElement": [{
+			"@type": "HowToTip",
+			"text": "The nmap state can be misleading. closed means that the port is open but the service is not running. filtered means that the port is closed in the firewall. open means that the port is open and the service is running on the instance."
+			},{
+			"@type": "HowToDirection",
+			"text": "If these commands return a response, then the server is healthy and the issues are at the operating system level."
+			},{
+			"@type": "HowToDirection",
+			"text": "If your server is not returning responses for any of the commands in the previous troubleshooting steps, open a support ticket and include all of the steps that you have attempted to expedite the issue."
+		}]}]}]}

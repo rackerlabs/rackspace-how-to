@@ -74,36 +74,54 @@ Test the new password by logging in to the database.
 Enter your new password when prompted.
 
 
+
 <script type="application/ld+json">
-   {
-   "@context": "http://schema.org/",
-   "@type": "HowTo",
-   "name":"Reset a MySQL root password",
-   "description": "The MySQL root password allows the root user to have full access to the MySQL databases. This article shows you do to reset a MySQL root password by using the command line interface.",
-   "step": [
-   	{
-   	"@type": "HowToSection",
-   	"name": "Stop the MySQL service",
-       "position": "1",
-   	"itemListElement": "To stop MySQL for Ubuntu and Debian, run the following command: sudo /etc/init.d/mysql stop"
-   	},{
-   	"@type": "HowToSection",
-   	"name": "Start MySQL and connect",
-       "position": "2",
-   	"itemListElement": [
-   		{
-           "@type": "HowToStep",
-           "position": "1",
-   		"text": "To start MySQL without a password, run the following command: sudo mysqld_safe --skip-grant-tables &"
-   		},{
-           "@type": "HowToStep",
-           "position": "2",
-           "text": "To connect to MySQL, run the following command: mysql -uroot"
-   		}]
-   	},{
-   	"@type": "HowToSection",
-   	"name": "Reset the MySQL password",
-       "position": "3",
-   	"itemListElement": "To set a new MySQL root password, run the following command:"
-   }]}
-</script>
+{
+"@context": "http://schema.org/",
+"@type": "HowTo",
+"text":"Reset a MySQL root password",
+"description": "Use the following steps to reset a MySQL root password by using the command line interface.",
+"step": [{
+	"@type": "HowToStep",
+	"text": "Stop the MySQL service",
+	"description": "You need to know the Internet Protocol (IP) address of the computer from which you’re connecting.",
+	"itemListElement": [{
+		"@type": "HowToDirection",
+		"text": "(Ubuntu and Debian) Run the following command: sudo /etc/init.d/mysql stop"
+		},{
+		"@type": "HowToDirection",
+		"text": "(CentOS, Fedora, and Red Hat Enterprise Linux) Run the following command: sudo /etc/init.d/mysqld stop"
+	}]},{
+	"@type": "HowToStep",
+	"text": "Start MySQL without a password",
+	"description": "Run the following command. The ampersand (&) at the end of the command is required: sudo mysqld_safe --skip-grant-tables &"
+	},{
+	"@type": "HowToStep",
+	"text": "Connect to MySQL",
+	"description": "Run the following command: mysql -uroot"
+	},{
+	"@type": "HowToStep",
+	"text": "Set a new MySQL root password",
+	"description": "Run the following command: use mysql;\r\n\r\nupdate user set authentication_string=PASSWORD(\"mynewpassword\") where User='root';\r\n\r\nflush privileges;\r\n\r\nquit"
+	},{
+	"@type": "HowToStep",
+	"text": "Stop and start the MySQL service",
+	"itemListElement": [{
+		"@type": "HowToDirection",
+		"text": "(Ubuntu and Debian) Run the following commands: sudo \/etc\/init.d\/mysql stop\r\n...\r\nsudo \/etc\/init.d\/mysql start"
+		},{
+		"@type": "HowToDirection",
+		"text": "(CentOS, Fedora, and Red Hat Enterprise Linux) Run the following commands: sudo \/etc\/init.d\/mysqld stop\r\n...\r\nsudo \/etc\/init.d\/mysqld start"
+	}]},{
+	"@type": "HowToStep",
+	"text": "Log in to the database",
+	"itemListElement": [{
+		"@type": "HowToDirection",
+		"text": "Test the new password by logging in to the database."
+		},{
+		"@type": "HowToDirection",
+		"text": "mysql -u root -p"
+		},{
+		"@type": "HowToDirection",
+		"text": "Enter your new password when prompted."
+}]}]}
