@@ -5,11 +5,11 @@ title: Move a Cloud Block Storage volume between servers
 type: article
 created_date: '2014-02-14'
 created_by: Trenton Guthrie
-last_modified_date: '2018-10-24'
-last_modified_by: Kate Dougherty
-product: Cloud Block Storage
-product_url: cloud-block-storage
+last_modified_date: '2019-03-01'
+last_modified_by: Catlookabaugh
 ---
+
+RETIRED on advice of Brian King
 
 This article describes how to move a software RAID Cloud Block Storage
 volume from one Cloud server to another. You might want to perform this

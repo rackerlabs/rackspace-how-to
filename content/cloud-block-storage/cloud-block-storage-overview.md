@@ -5,8 +5,8 @@ title: Overview of Cloud Block Storage
 type: article
 created_date: '2012-10-22'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-03-01'
+last_modified_by: Cat Lookabaugh
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -23,7 +23,8 @@ intact and ready for the next time you need it. And since you're
 leveraging the power of the Cloud, you only pay for what you use. Cloud
 Block Storage offers you power and ease with the kind of storage that
 works for you. For information on Cloud Block Storage and Cloud Backup
-options on General Purpose servers, see [Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
+options on General Purpose servers, see [
+Best Practices for Backing Up Your Data: Cloud Block Storage versus Cloud Backup](/how-to/best-practices-for-backing-up-your-data-cloud-block-storage-versus-cloud-backup).
 
 There are two types of volumes that you can attach to your server:
 
@@ -54,7 +55,11 @@ Cloud Block Storage has the following use cases:
 ### Access Cloud Block Storage
 
 Access Cloud Block Storage the way you like: you can use it through the
-GUI interface of the [Cloud Control Panel](https://login.rackspace.com/) or through the API. This product introduction walks you through Cloud Control Panel access. If you prefer to interact with Cloud Block Storage programmatically, view the [Developer Guide](https://developer.rackspace.com/docs/cloud-block-storage/v1/developer-guide/).
+GUI interface of the [Cloud Control Panel](https://login.rackspace.com/) or
+through the API. This product introduction walks you through Cloud Control
+Panel access. If you prefer to interact with Cloud Block Storage
+programmatically, view the
+[Developer Guide](https://developer.rackspace.com/docs/cloud-block-storage/v1/developer-guide/).
 
 ### Limits of Cloud Block Storage
 
@@ -101,7 +106,6 @@ In this product overview, you learn how to perform the following tasks:
 -   [Prepare your volume for use with a server (Linux or Windows)](/how-to/create-and-attach-a-cloud-block-storage-volume).
 -   [Take snapshots of your volume](/how-to/create-and-use-cloud-block-storage-snapshots).
 -   [Detach and delete a volume](/how-to/detach-and-delete-cloud-block-storage-volumes).
--   [Move a Cloud Block Storage volume between servers](/how-to/moving-a-software-raid-cloud-block-storage-volume-from-one-cloud-server-to-another).
 -   [Attach a Cloud Block Storage volume to an OnMetal server](/how-to/attach-a-cloud-block-storage-volume-to-an-onmetal-server).
 
 
