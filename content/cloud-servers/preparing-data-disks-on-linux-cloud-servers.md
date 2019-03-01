@@ -1,7 +1,7 @@
 ---
 permalink: preparing-data-disks-on-linux-cloud-servers/
 audit_date: '2019-03-01'
-title: Prepare Data Disks on Linux Cloud Servers
+title: Prepare data disks on Linux Cloud Servers
 type: article
 created_date: '2013-10-31'
 created_by: Jered Heeschen
@@ -28,9 +28,10 @@ use.
         sudo fdisk -l
 
    In the volume list, the device `/dev/xvda` is the system disk. Other volumes
-   listed are your data, or Cloud Block Storage, disks.
+   listed are your data or Cloud Block Storage disks.
 
-2. To partition the disk, run the following `fdisk` utility and specify the disk.
+2. To partition the disk, run the following `fdisk` utility and specify the disk,
+   which produces the output similar to that which is shown:
 
         root@nosnetdfw:~# fdisk /dev/xvde
 
@@ -66,7 +67,8 @@ use.
 
         Command (m for help):
 
-3. Enter `n` to create a new partition, as shown in the following example:
+3. Enter `n` to create a new partition, as shown in the following example,
+   which includes the results:
 
         Command (m for help): n
 
@@ -75,14 +77,14 @@ use.
            p   primary partition (1-4)
 
 4. Enter `p` to create a new partition to indicate a primary partition, as
-   shown in the following example:
+   shown in the following example with its results:
 
         p
 
         Partition number (1-4):
 
 5. Because this is the first and only partition that you are creating on the
-   volume, enter `l`, as shown in the following example:
+   volume, enter `l`, as shown in the following example along with its results:
 
         Partition number (1-4): 1
 
@@ -102,7 +104,8 @@ use.
 
         Command (m for help):
 
-8. Enter `w` to write the partition, as shown in the following example:
+8. Enter `w` to write the partition, as shown in the following example along
+   with the output:
 
         Command (m for help): w
 
@@ -111,7 +114,7 @@ use.
         Calling ioctl() to re-read partition table.
         Syncing disks.
 
-9. Your data disk is ready as a disk. It was attached at `/dev/xvde` and you
+9. Your data disk is ready. It was attached at `/dev/xvde` and you
    created one partition on it, so now your available disk appears at
    `/dev/xvde1`. Run the following command to list the disks:
 
@@ -138,21 +141,21 @@ use.
             Device Boot      Start         End      Blocks   Id  System
         /dev/xvde1               1       13054   104856223+  83  Linux
 
-9. Run the following command to format the main partition of each attached data
+10. Run the following command to format the main partition of each attached data
    disk, substituting the device and partition number for `/dev/xvde1`:
 
         sudo mkfs -t ext3 /dev/xvde1
 
 
-10. Create mount points for each data disk as needed.
+11. Create mount points for each data disk as needed.
 
-    Data disks must be assigned directories as mount points in order for the
-    system to use them for storage. If a data disk is meant to hold a database,
-    for example, its mount point should be the database's storage location (for
-    example, `/var/lib/mysql`).
+   You must assign directories as mount points for the data disks in order for
+   the system to use them for storage. If a data disk is meant to hold a
+   database, for example, its mount point is the database's storage location
+   (for example, `/var/lib/mysql`).
 
-    If the directory does not yet have an assigned disk, create one with the
-    following command:
+   If the directory does not yet have an assigned disk, create one with the
+   following command:
 
         sudo mkdir -p /path/to/directory
 
