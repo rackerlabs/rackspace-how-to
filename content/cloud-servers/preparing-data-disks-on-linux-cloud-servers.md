@@ -11,9 +11,10 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-The data disks attached to some flavors of Cloud Servers are unformatted when
-created. Before you can use them to store data on Linux, you have to format
-them, determine their mount points, and add them to the system's **fstab** file.
+The data disks attached to some flavors of Linux&reg; Cloud Servers are
+unformatted when created. Before you can use them to store data on Linux, you
+have to format them, determine their mount points, and add them to the system's
+ **fstab** file.
 
 **Note:** If your server has a data disk attached to it, the data disk is listed
 in your server's **Details** page in the [Cloud Control Panel](https://login.rackspace.com).
