@@ -24,34 +24,34 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
 As an administrator of your company's email solution, you have a great deal of control over your account. If your administrator access is compromised, the results can be devastating to your business. A strong security policy is not complete without enabling two-factor authentication.
 
-### Multi-factor authentication options
+### Multifactor authentication options
 
-The Cloud Office Control Panel provides two options for enabling multi-factor authentication when you first log in. Upon login you are presented the option to opt-in to setting up multi-factor authentication. You can proceed with setting up multi-factor authentication or skip this option.
+The Cloud Office Control Panel provides two options for enabling multifactor authentication when you first log in. Upon login you are presented the option to opt-in to setting up multifactor authentication. You can proceed with setting up multifactor authentication or skip this option.
 
-#### Use text message multi-factor authentication
+#### Use text message multifactor authentication
 
-With text message multi-factor authentication, you can use your phone number to receive a one time code that allows you access to the control panel.
+With text message multifactor authentication, you can use your phone number to receive a one time code that allows you access to the control panel.
 
-Use the following steps to enable text message multi-factor authentication:
+Use the following steps to enable text message multifactor authentication:
 
 1. Log in to your [Cloud Office Control Panel](https://cp.rackspace.com).
 
-2. When you are prompted with a screen titled **Choose Your Multi-Factor Authentication Method** select the option **Get A Text Message**.
+2. When you are prompted with a screen titled **Choose Your Multi-Factor Authentication Method**, select the option **Get A Text Message**.
 
-3. Enter the phone number that you would like to link the multi-factor SMS messaging with.
+3. Enter the phone number that you would like to link the multifactor SMS messaging with.
 
 4. Once a verification code has been sent to your phone, enter the code in the verification field and click **Verify Code**.
 
 5. The last step displays the message **You have successfully set up Multi-Factor Authentication!**.
 
 
-#### Use a multi-factor authentication mobile application
+#### Use a multifactor authentication mobile application
 
 Use the following steps to enable a mobile multi-factor authentication application:
 
 1. Log in to your [Cloud Office Control Panel](https://cp.rackspace.com).
 
-2. When you are prompted with a screen titled **Choose Your Multi-Factor Authentication Method** select the option **Use a Mobile App**.
+2. When you are prompted with a screen titled **Choose Your Multi-Factor Authentication Method**, select the option **Use a Mobile App**.
 
 3. Link your mobile device to your admin account by using the following instructions in the prompt:
 
@@ -68,13 +68,13 @@ Use the following steps to enable a mobile multi-factor authentication applicati
 
 3. From the menu, select **Admins & Contacts**.
 
-4. Click the username for the administrator that you are going to require uses two factor authentication.
+4. Click the username for the administrator that you are going to require to use two-factor authentication.
 
 5. Expand the section labeled **Security Settings**.
 
 6. Check the box next to **Require Multi-Factor Authentication**.
 
-This administrator is now required to set up multi-factor authentication upon their next login to [cp.rackspace.com](https://cp.rackspace.com). They have the option to [Use text message multi-factor authentication](#use-text-message-multi-factor-authentication) or [Use a multi-factor authentication mobile application](#use-a-multi-factor-authentication-mobile-application).
+This administrator is now required to set up multifactor authentication upon their next login to [cp.rackspace.com](https://cp.rackspace.com). They have the option to [Use text message multifactor authentication](#use-text-message-multifactor-authentication) or [Use a multifactor authentication mobile application](#use-a-multifactor-authentication-mobile-application).
 
 
 **Note:** When you change mobile devices, you will need to [Disable two factor authentication](#disable-two-factor-authentication-for-other-administrators) and re-enable it on the new device.
@@ -99,7 +99,7 @@ You might need to perform these steps if an administrator gets a new device with
 
 3. From the menu, select **Admins & Contacts**.
 
-4. Click the username for the administrator that you are going to require uses two factor authentication.
+4. Click the username for the administrator that you are going to require to use two-factor authentication.
 
 5. Expand the section labeled **Security Settings**.
 
@@ -110,9 +110,9 @@ You might need to perform these steps if an administrator gets a new device with
 You have successfully disabled two-factor authentication for another admin.
 
 
-### Manage multi-factor authentication linked devices
+### Manage multifactor authentication linked devices
 
-You have the option to trust devices when using multi-factor authentication. This option to trust a device is presented to you the first time you setup multi-factor authentication on that device.
+You have the option to trust devices when using multifactor authentication. This option to trust a device is presented to you the first time you setup multifactor authentication on that device.
 
 Use the following instructions to edit your trusted devices:
 
