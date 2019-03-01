@@ -74,7 +74,7 @@ Use the following steps to enable a mobile multi-factor authentication applicati
 
 6. Check the box next to **Require Multi-Factor Authentication**.
 
-This administrator is now required to set up multi-factor authentication upon their next login to [cp.rackspace.com](https://cp.rackspace.com). They have the option to [Use text message multi-factor authentication](#use-text-message multi-factor-authentication) or [Use a multi-factor authentication mobile application](#use-a-multi-factor-authentication-mobile-application).
+This administrator is now required to set up multi-factor authentication upon their next login to [cp.rackspace.com](https://cp.rackspace.com). They have the option to [Use text message multi-factor authentication](#use-text-message-multi-factor-authentication) or [Use a multi-factor authentication mobile application](#use-a-multi-factor-authentication-mobile-application).
 
 
 **Note:** When you change mobile devices, you will need to [Disable two factor authentication](#disable-two-factor-authentication-for-other-administrators) and re-enable it on the new device.
