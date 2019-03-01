@@ -30,9 +30,9 @@ The Cloud Office Control Panel provides two options for enabling multi-factor au
 
 #### Use text message multi-factor authentication
 
-With Short Message Service (SMS) two factor authentication you can use your phone number to receive a one time code that allows you access to the control panel.
+With text message multi-factor authentication, you can use your phone number to receive a one time code that allows you access to the control panel.
 
-Use the following steps to enable SMS two factor authentication:
+Use the following steps to enable text message multi-factor authentication:
 
 1. Log in to your [Cloud Office Control Panel](https://cp.rackspace.com).
 
