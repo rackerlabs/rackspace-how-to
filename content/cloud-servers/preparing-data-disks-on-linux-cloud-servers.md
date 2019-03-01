@@ -159,7 +159,7 @@ use.
 
         sudo mkdir -p /path/to/directory
 
-11. Assign disks to mount points by adding them to the **/etc/fstab** file.
+12. Assign disks to mount points by adding them to the **/etc/fstab** file.
 
     Edit the file with your favorite text editor. The following example uses
     the **nano** editor:
@@ -171,11 +171,11 @@ use.
 
          /dev/xvde1   path/to/directory  ext3    defaults,noatime,nofail      0      0
 
-12. Mount any new drives by running the following command:
+13. Mount any new drives by running the following command:
 
         sudo mount -a
 
-13. Confirm that the data disks are mounted by running the following disk space
+14. Confirm that the data disks are mounted by running the following disk space
     check command:
 
         df -h
