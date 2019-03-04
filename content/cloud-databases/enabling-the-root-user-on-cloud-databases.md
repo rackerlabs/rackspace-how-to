@@ -14,16 +14,16 @@ Enabling the root user for a Cloud Databases instance can cause unpredictable be
 you make as a root user might cause detrimental effects to the database instance and
 unpredictable behavior for API operations. 
 
-**Warning**: When you enable the root user, you accept the possibility that Rackspace is not able
-to support your database instance. While enabling root does not prevent Rackspace from a “best effort” approach
-to helping you if something goes wrong with your instance, we cannot ensure that we are able to assist
+**Warning**: When you enable the root user, you accept the possibility that Rackspace cannot
+support your database instance. While enabling root does not prevent Rackspace from a “best effort” approach
+to helping you if something goes wrong with your instance, we cannot ensure that we can assist
 you if you change core MySQL&reg; settings. These changes can be (but are not limited to) turning off
 binary logs (binlogs), removing users that we use to access your instance, and so forth. An additional aspect to
 keep in mind is that you cannot disable the root user.
 
 Use the cURL commands in the following steps to enable the root user for a Cloud Databases instance in the ORD data center.
-Your Cloud Databases instances might be in another data center and the URLs that you
-use below need to be modified to use the appropriate data center.
+Your Cloud Databases instances might be in another data center and you need to modify the URLs to the
+appropriate data center in the following sample code.
 
 1. Authenticate to obtain an authentication token:
 
