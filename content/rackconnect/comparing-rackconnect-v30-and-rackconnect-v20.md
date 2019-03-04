@@ -107,5 +107,3 @@ The following diagrams show high-level views of network traffic flow for RackCon
 
 #### RackConnect v3.0 network traffic flow over Cloud Networks
 <img src="{% asset_path rackconnect/comparing-rackconnect-v30-and-rackconnect-v20/RCv3Example.png %}" alt="" width="692" height="456" border="2" id="rcv3" />
-
-If you have any questions, reach out to us. Our contact information is available on the [Contact Us page](/how-to/support).

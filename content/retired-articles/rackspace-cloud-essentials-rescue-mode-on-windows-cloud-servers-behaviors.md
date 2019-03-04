@@ -54,7 +54,7 @@ For Windows 2008 SP2, the BCD store will reside on the System Partition. When fi
     resumeobject            {1d25cc4b-fc03-11de-b973-d1d82d39e489}
     nx                      OptOut
 
-You'll need to grab the unique identifier under the Windows Boot Loader section. In this example it's `\{1d25cc4a-fc03-11de-b973-d1d82d39e489}` however, on most of the instances it will be `{Default}`. Please check the identifier and use the appropriate one. If you have ANY doubts, contact support for assistance. The default path for the BCD store is **\boot\bcd** so if the drive you are working with is **D:**, then the full path is **D:\boot\bcd**. Following is the format for the `BCD` command:
+You'll need to grab the unique identifier under the Windows Boot Loader section. In this example it's `\{1d25cc4a-fc03-11de-b973-d1d82d39e489}` however, on most of the instances it will be `{Default}`. Please check the identifier and use the appropriate one. The default path for the BCD store is **\boot\bcd** so if the drive you are working with is **D:**, then the full path is **D:\boot\bcd**. Following is the format for the `BCD` command:
 
     bcdedit /store <full path to BCD store> /set <Windows Boot Loader Unique Indentifier> osdevice partition=<drive letter where original \Windows folder resides>
     bcdedit /store <full path to BCD store> /set <Windows Boot Loader Unique Indentifier> device partition=<drive letter where original \Windows folder resides>

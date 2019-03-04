@@ -112,8 +112,6 @@ Files, to communicate between your cloud servers in a given region, or
 in the case of RackConnect v2.0, to communicate with your dedicated
 network. If enabled, it is very important to secure this network because other Rackspace Public Cloud customers are also on this network.
 
-If you have any questions, reach out to us. Our contact
-information is available on the [Contact Us](/how-to/support) page.
 
 ### Next step
 

@@ -67,6 +67,3 @@ a new server. Select a region to see if the OnMetal Server tab is available.
     comparison](/how-to/rackconnect-network-device-comparison).
 
 -   Even though OnMetal servers require the use of SSH keys, the RackConnect automation systems still create and use a "rackconnect" user account for administering the OnMetal servers. Do not disable, modify, or remove this user account. Additionally, the other [RackConnect best practices](/how-to/rackconnect-v20-best-practices) still apply to OnMetal servers.
-
-If you have any questions, reach out to
-us on the [Contact Us](/how-to/support) page.

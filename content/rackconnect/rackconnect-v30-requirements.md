@@ -76,6 +76,3 @@ To use RackConnect v3.0, you must have a Dedicated Hosting account with Rackspac
 -   Additionally, to have RackConnect v3.0 connectivity, any cloud
     servers that you build must be built with a RackConnect v3.0
     associated cloud network.
-
-If you have any questions, reach out to us. Contact information
-is available on the [Contact Us](/how-to/support) page.

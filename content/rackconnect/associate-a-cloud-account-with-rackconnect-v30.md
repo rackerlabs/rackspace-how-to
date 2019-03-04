@@ -62,6 +62,3 @@ The following sections provide steps for linking and associating a cloud account
     only one RackConnect configuration.
 
     <img src="{% asset_path rackconnect/associate-a-cloud-account-with-rackconnect-v30/RCv3-associate-to-RCv3-config_1.png %}" width="600" height="93" />
-
-If you have any questions, reach out to us. Our contact
-information is available on the [Contact Us](/how-to/support) page.

@@ -105,7 +105,3 @@ alternative methods for connecting to these cloud servers:
 **Important:** When connecting between cloud and dedicated
 environments with RackConnect, always use the private IP addresses of
 the dedicated and cloud servers to avoid bandwidth charges.
-
-If you have any questions, reach out to us. Our contact
-information is available on the [Contact
-Us](/how-to/support) page.

@@ -43,8 +43,6 @@ higher levels of support for your hybrid environment.
 For more information about our support service levels, see [Dedicated service levels](http://www.rackspace.com/managed-hosting/service-levels/) and
 [Cloud service levels](http://www.rackspace.com/cloud/compare-service-levels).
 
-If you have any questions,  reach out to us. Our contact
-information is available on the [Contact Us](/how-to/support) page.
 
 ### Next step
 

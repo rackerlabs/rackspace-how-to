@@ -15,7 +15,7 @@ product_url: rackconnect
 
 Because only a highly restricted ServiceNet option is
 available for RackConnect v3.0, RackConnect v3.0 does *not* support the
-Cloud Load Balancers offering by default. If you do require access to Cloud Load Balancers in your RackConnect v3 environment, contact Rackspace Support, and we can help you enable Cloud Load Balancer use in your RackConnect v3 environment. 
+Cloud Load Balancers offering by default. If you do require access to Cloud Load Balancers in your RackConnect v3 environment, contact Rackspace Support, and we can help you enable Cloud Load Balancer use in your RackConnect v3 environment.
 For more details about the offerings that are support by RackConnect v3.0 and the differences between RackConnect
 v3.0 and v2.0, see the following articles:
 
@@ -138,8 +138,3 @@ The following image shows some use cases that further illustrate the
 limitations of using cloud load balancers:
 
 <img src="{% asset_path rackconnect/using-cloud-load-balancers-with-rackconnect/CLB.Use_.Cases__0.png %}" width="700" />
-
-
-If you have any questions, please reach out to us. Our contact
-information is available on the [Contact
-Us](/how-to/support) page.

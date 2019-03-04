@@ -45,6 +45,3 @@ levels and our cloud [Managed Operations and Managed
 Infrastructure](http://www.rackspace.com/cloud/compare-service-levels) service levels,
 giving you the ability to select the level of **Fanatical Support**&reg; that
 you need to properly manage your hybrid environment.
-
-If you have questions, reach out to us. Our contact information
-is available on the [Contact Us](/how-to/support) page.

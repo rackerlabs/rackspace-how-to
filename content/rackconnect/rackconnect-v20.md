@@ -126,9 +126,6 @@ them after the implementation process is complete. You should also
 verify that you have network policies in place to allow traffic to and
 from your cloud servers before creating new cloud servers.
 
-If you have any questions, reach out to us. Our contact
-information is available on the [Contact Us](/how-to/support) page.
-
 ### Next step
 
 [Access the RackConnect Management

@@ -48,9 +48,7 @@ of hybrid hosting.
     Storage](http://www.rackspace.com/cloud/block-storage/) for
     easy scalability.
 
-If you have any questions, reach out to us. Our contact
-information is available on the [Contact
-Us](/how-to/support) page.
+
 
 ### Next step
 

@@ -81,5 +81,3 @@ Consider the following information about cloud servers for RackConnect v3.0:
 - Currently, you cannot have multiple cloud network IP addresses on individual RackConnect v3.0 cloud servers.
 
 - Currently, you cannot move, change, add, or remove IP addresses from RackConnect v3.0 cloud servers.
-
-If you have any questions, reach out to us. Contact information is available on the [Contact Us](/how-to/support) page.

@@ -99,6 +99,3 @@ address to the cloud server.
           metadata:
             rax-heat: { get_param: "OS::stack_id" }
             stack-name: { get_param: "OS::stack_name" }
-
-If you have any questions, reach out to us. Our contact information is available on the [Contact Us](/how-to/support)
-page.

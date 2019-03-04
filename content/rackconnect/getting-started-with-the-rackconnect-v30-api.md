@@ -304,6 +304,3 @@ Sample data entries for this example are as follows:
 
 For information about the many other API calls available with the
 RackConnect v3.0 API, visit <http://docs.rcv3.apiary.io/>.
-
-If you have any questions, reach out to us. Contact information is
-available on the [Contact Us](/how-to/support) page.

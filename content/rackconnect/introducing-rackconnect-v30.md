@@ -40,6 +40,3 @@ Networks, see [Getting Started with Cloud
 Networks](/how-to/cloud-networks).
 For a complete list of dedicated network devices currently supported by
 RackConnect, see [RackConnect network device comparison](/how-to/rackconnect-network-device-comparison).
-
-If you have any questions, reach out to us. Our contact
-information is available on the [Contact Us](/how-to/support) page.

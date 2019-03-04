@@ -136,9 +136,6 @@ By default, the Cloud Monitoring systems have access to your RackConnect
 cloud servers. You should not need to create any custom network policies
 to allow the Cloud Monitoring systems to connect.
 
-If you have any questions, reach out to us. Our contact information is
-available on the [Contact Us](/how-to/support) page.
-
 ### Next step
 
 [Accessing RackConnect cloud servers](/how-to/accessing-rackconnect-cloud-servers)
