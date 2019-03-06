@@ -113,15 +113,15 @@ file, you can use `chgrp` as shown in the following example:
 
 This works just like `chown :group file1`, but it’s easier to type and read.
 
-##### The -R flag
+##### The -R option
 
 If you want to change the owner a particular directory and its files and
-subdirectories, use the `-R` flag to make a recursive change as shown in the
+subdirectories, use the `-R` option to make a recursive change as shown in the
 following example:
 
     chown -R user:group directoryname
 
-The `-R` flag works with `chgrp` as well. With both commands the change applied
+The `-R` option works with `chgrp` as well. With both commands the change applied
 first to the parent directory and then iterated through everything inside the
 directory (including subdirectories).
 
