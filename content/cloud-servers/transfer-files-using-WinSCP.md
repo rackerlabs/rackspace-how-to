@@ -25,10 +25,10 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 A custom installation gives you the option to select the file's destination, the components to be installed, and the features within the WinSCP application, including:
 
-- Drag & drop shell extension (allows direct downloads, may require restart)
-- Pageant (SSH authentication agent)
-- PuTTYgen (key generator)
-- Translations
+* Drag & drop shell extension (allows direct downloads, may require restart)
+* Pageant (SSH authentication agent)
+* PuTTYgen (key generator)
+* Translations
 
     <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/install-type.png %}" />
 
@@ -38,7 +38,7 @@ The **Commander** interface displays two panes with your local files on the left
 
 We recommend starting with the **Commander** interface. You can change the default style later within the **Preferences** menu.
 
-    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/interface-type.png %}" />
+     <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/interface-type.png %}" />
 
 5. Configure `sshd` (the ssh/sftp server) to listen to a port that is different from the default.
 
@@ -64,4 +64,4 @@ WinSCP stores configurations in **Stored Sessions**. Use a different name for ea
 
 This warning is not shown during subsequent connections to this server.
 
-    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/accept-key.png %}" />
+     <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/accept-key.png %}" />
