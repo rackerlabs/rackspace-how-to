@@ -65,7 +65,7 @@ Use the following commands in Linux&reg; to stop and restart the DriveClient age
 
    If the DriveClient does not stop, you can force DriveClient to stop by running the following command:
 
-        `killall -9 driveclient`
+    `killall -9 driveclient`
 
 
 3. Restart the DriveClient service:
