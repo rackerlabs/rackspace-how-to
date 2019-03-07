@@ -17,7 +17,7 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 ### Download and install WinSCP
 
-1. [Download](https://winscp.net/eng/download.php) WinSCP.
+1. [Download](https://winscp.net/eng/download.php) WinSCP..
 
 2. Double-click WinSCP to begin the installation process.
 
