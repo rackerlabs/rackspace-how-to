@@ -1,7 +1,7 @@
 ---
 permalink: restarting-a-stalled-driveclient-agent/
 audit_date: '2019-03-07'
-title: Restarting a stalled Driveclient agent
+title: Restarting a stalled driveclient agent
 type: article
 created_date: '2019-03-07'
 created_by: Rackspace Support
