@@ -18,7 +18,7 @@ This article provides instructions to restart a stalled Cloud Backup DriveClient
 
 Use the following instructions to resolve a stalled Cloud Backup DriveClient:
 
-1.	Log in to your [Cloud Control Panel](login.rackspace.com) and manually stop all jobs by using your Cloud Backups control panel.
+1.	Log in to your [Cloud Control Panel](https://login.rackspace.com) and manually stop all jobs by using your Cloud Backups control panel.
 
 2.	Stop the DriveClient service on the server.
 
