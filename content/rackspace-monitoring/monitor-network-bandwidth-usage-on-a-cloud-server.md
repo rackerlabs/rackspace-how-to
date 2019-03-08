@@ -61,4 +61,3 @@ If you have servers in the same data center, there is no charge for bandwidth
 when configuring your application to use a private network. If you configured
 the application to use the public network, this incurs a charge, and it is less
 secure than using a private network.  Use a private network whenever possible.
-
