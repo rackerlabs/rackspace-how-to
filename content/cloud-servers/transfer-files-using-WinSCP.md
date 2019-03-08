@@ -37,8 +37,7 @@ This article describes how to download, install, and use WinSCP to transfer file
    The **Commander** interface displays two panes with your local files on the left and remote files  on the right. The **Explorer** style displays only remote files in a single window.
 
    We recommend starting with the **Commander** interface. You can change the default style later within the **Preferences** menu.
-
-    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/interface-type.png %}" />
+  <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/interface-type.png %}" />
 
 5. Configure `sshd` (the ssh/sftp server) to listen to a port that is different from the default.
 
@@ -48,7 +47,7 @@ This article describes how to download, install, and use WinSCP to transfer file
    * **Username**: demo
    * **IP address**: 123.45.67.89
 
- **Note**: For the Host Name, enter the IP address of your server and change the Port to match your sshd port.
+  **Note**: For the Host Name, enter the IP address of your server and change the Port to match your sshd port.
 
 6. Ensure that the **Connection Type** is set to `sftp`.
 
@@ -58,10 +57,10 @@ This article describes how to download, install, and use WinSCP to transfer file
 
    WinSCP stores configurations in **Stored Sessions**. Use a different name for each server.
 
- **Note**: You can use a private key to log in to a slice. See [Generate RSA keys with SSH by using PuTTYgen](how-to/generating-rsa-keys-with-ssh-puttygen/) for information about setting up public/private keys.
+  **Note**: You can use a private key to log in to a slice. See [Generate RSA keys with SSH by using PuTTYgen](how-to/generating-rsa-keys-with-ssh-puttygen/) for information about setting up public/private keys.
 
 9. If this is the first time you have used WinSCP, and you are sure you've entered the correct configuration details, click **Yes** on the **Warning** dialog box.
 
   This warning is not shown during subsequent connections to this server.
 
-    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/accept-key.png %}" />
+  <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/accept-key.png %}" />
