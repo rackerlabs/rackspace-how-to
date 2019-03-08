@@ -113,7 +113,7 @@ reference.
       **Note:** On some distributions, the text editor that system uses for
       `visudo` is `vi`. It's not a user-friendly editor, so you may need to
       consult a [vi tutorial](http://bignosebird.com/docs/vi.shtml) for help.
-   
+
     b.  Add the following line directly after the line containing
         `root ALL=(ALL:ALL) ALL`:
 
@@ -180,8 +180,7 @@ Now that your additional user is created with sudo permissions and an SSH key
 pair, you can move on to the next part of securing your Linux system. You will
 work with the SSH daemon (server) configuration to improve security.
 
-**Note:** **Managed Operations and RackConnect customers only** To ensure that our automated systems have access to your server when needed, we request that you do not change the SSH configuration, and that you skip to the next section. When connecting to your server, Rackspace Support logs in as the user rack using password authentication on port 22. In addition, rebuilding existing servers or building a new server from a snapshot requires that root logins are enabled via the PermitRootLogin option set to yes. If you need to change these values, speak with an administrator at Rackspace to do so in a way that does not impact our ability to provide you with
-**Fanatical Support**&reg;.
+**Note:** **Managed Operations and RackConnect customers only** To ensure that our automated systems have access to your server when needed, we request that you do not change the SSH configuration, and that you skip to the next section. When connecting to your server, Rackspace Support logs in as the user `rack` using password authentication on port 22. In addition, rebuilding existing servers or building a new server from a snapshot requires that root logins are enabled by having the PermitRootLogin option set to yes. If you need to change these values, speak with an administrator at Rackspace, so the change is made in a way that does not impact our ability to provide you with a Fanatical Experience&trade;.
 
 The example commands assume that you're no longer logged in as root and are logged in
 as your new user, using sudo to perform privileged operations.
@@ -209,7 +208,7 @@ This section focuses on the following options:
 SSH uses port 22 by default for communication. Hackers try port 22 with the
 username `root` on every server that they attack. For this reason,
 disabling the root user via SSH and changing SSH to listen on a nonstandard port
-helps prevent a breach. 
+helps prevent a breach.
 
 Changing the port won't stop a determined intruder, but it does cause most
 superficial scans for SSH connection opportunities to overlook your server.
@@ -421,7 +420,7 @@ Through the use of
 you can create users and grant permissions to individuals or applications that
 are responsible for using various Rackspace services. By leveraging RBAC, you
 can give your team and contractors access only the utilities that they need
-and revoke the access when and if necessary. 
+and revoke the access when and if necessary.
 
 Following are some usage scenarios:
 

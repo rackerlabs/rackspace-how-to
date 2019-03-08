@@ -29,7 +29,7 @@ dedicated [Managed and Intensive service
 levels](http://www.rackspace.com/dedicated-servers/service-levels/) and
 our cloud [Managed Operations and Managed
 Infrastructure](http://www.rackspace.com/cloud/compare-service-levels) service levels,
-giving you the ability to select the level of **Fanatical Support**&reg; that you need to properly manage your hybrid environment.
+giving you the ability to select the level of support that you need to properly manage your hybrid environment.
 
 RackConnect provides an isolated path for network traffic to traverse
 between your cloud and dedicated environments located within the same

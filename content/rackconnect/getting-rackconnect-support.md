@@ -18,7 +18,7 @@ product_url: rackconnect
 RackConnect&reg; is compatible with our dedicated Managed,
 dedicated Intensive, cloud Managed Operations, and cloud Managed
 Infrastructure service-level offerings, giving you the ability to select
-the level of **Fanatical Support**&reg; that you need to properly manage your
+the level of support that you need to properly manage your
 hybrid environment. Your dedicated and cloud support teams are your
 first points of contact for any RackConnect issues that you encounter.
 

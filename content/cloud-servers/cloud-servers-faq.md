@@ -149,12 +149,12 @@ support that you need to get the most out of the cloud.
     source for articles and tutorials to help you get the precise
     answers that you need.
 -   Do you have a quick question that you can't find an answer for in the
-    Rackspace How-To? Open Chat and talk with our **Fanatical Support**&reg;
-    staff anytime, 24x7x365.
+    Rackspace How-To? As part of the Rackspace Fanatical Experience&trade;, open
+    Chat and talk with our Support staff anytime, 24x7x365.
 -   Do you have a specialized Service Request or are you experiencing a
     problem with our service? Open a ticket. In the Rackspace
     [Cloud Control Panel](https://login.rackspace.com), select
-    **Tickets > **Create Ticket** to open a ticket directly with our support
+    **Tickets > Create Ticket** to open a ticket directly with our support
     teams to report a problem or make a service request.
 -   Call us 24x7x365 at 800 961 4454 (toll-free) or +1 210 312 4000 (international).
 

@@ -25,9 +25,9 @@ license](/how-to/add-an-activesync-or-bes-license),
 assign it to your email address, and provide you with an activation PIN.
 
 **Note:** We are currently investigating BES10 and awaiting
-official hosting guidance from Blackberry. Once we have this information
-we will conduct testing to ensure our BES10 offering has the same
-**Fanatical Support**&reg; you expect from Rackspace. To date, Blackberry has not
+official hosting guidance from Blackberry. After we have this information,
+we will conduct testing to ensure that our BES10 offering provides the
+Fanatical Experience&trade; you expect from Rackspace. To date, Blackberry has not
 released an estimated date to distribute this information. In the
 meantime, please feel free to continue using ActiveSync.
 

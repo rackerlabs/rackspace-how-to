@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-This article outlines Rackspace **Fanatical Support®** for software and server configurations for virtual and physical machines that run a supported Microsoft Windows® operating system. The article presents a high-level overview of Rackspace offerings. Contact Rackspace Sales or your account representative for more information regarding the components of specific Windows roles and features that are supported in Rackspace offerings.
+This article outlines Rackspace support for software and server configurations for virtual and physical machines that run a supported Microsoft Windows® operating system. The article presents a high-level overview of Rackspace offerings. Contact Rackspace Sales or your account representative for more information regarding the components of specific Windows roles and features that are supported in Rackspace offerings.
 
 
 
@@ -175,4 +175,4 @@ Except as set forth in Rackspace general terms and conditions, cloud terms of se
 
 Although part of the document explains how Rackspace services may work with third-party products, the information contained in the document is not designed to work with all scenarios. Any use or changes to third-party products and/or configurations should be made at the discretion of your administrators and are subject to the applicable terms and conditions of such third party. Rackspace does not provide technical support for third-party products, other than specified in your hosting services or other agreement you have with Rackspace, and Rackspace accepts no responsibility for third-party products.
 
-Rackspace cannot guarantee the accuracy of any information presented after the date of publication. Copyright &copy; 2016 Rackspace &#124; Rackspace&reg;, **Fanatical Support**&reg;, and other Rackspace marks are either registered service marks or service marks of Rackspace US, Inc. in the United States and other countries. All other trademarks, service marks, images, products, and brands remain the sole property of their respective holders and do not imply endorsement or sponsorship.
+Rackspace cannot guarantee the accuracy of any information presented after the date of publication. Rackspace&reg; and other Rackspace marks are either registered service marks or service marks of Rackspace US, Inc. in the United States and other countries. All other trademarks, service marks, images, products, and brands remain the sole property of their respective holders and do not imply endorsement or sponsorship.

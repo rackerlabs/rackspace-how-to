@@ -52,13 +52,13 @@ lead that you passed us. It's hassle free and totally transparent.
 
 For more information about the payout, see the [Rackspace Referral Program](https://partners.rackspace.com/English/referrals.aspx) page.
 
-### Fanatical Support for you and your customers
+### Support for you and your customers
 
-Our dedication to our customers is legendary. As part of the referral
-program, we extend the [Fanatical Support Promise&trade;](http://www.rackspace.com/whyrackspace/support/) to you and
-your customers. It's what differentiates us from other companies in our
+Our dedication to our customers is legendary. It's what differentiates us
+from other companies in our
 field, and we encourage you to use it as a selling point in your
-conversations. **Fanatical Support**&reg; means that whether you need assistance
+conversations. Rackspace support for the Referral Program means that whether
+you need assistance
 warming up a lead or assistance strategizing how you can pitch combined
 services, we can and will help you.
 

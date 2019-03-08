@@ -13,7 +13,7 @@ product_url: managed-operations
 
 Managed Operations for Windows 2012 R2 Servers includes upsizes,
 snapshots, host machine issues, adding and removing servers, and
-managing IP addresses. To ensure **Fanatical Support**&reg;, Rackspace provides
+managing IP addresses. Rackspace provides
 support for specific software and server configurations on Cloud Servers
 with Managed Operations. The purpose of this of article is to detail the
 differences in functionality among versions of Windows Server 2012 R2,

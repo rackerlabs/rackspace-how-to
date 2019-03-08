@@ -57,10 +57,10 @@ instance size for your Rackspace Cloud Server:
 | High-Memory Extra Large:<br />17 GB RAM, 6.5 ECUs, 420 GB storage, 64 bit | Standard: 15 GB RAM, 620 GB HDD, 6 vCPUs<br />Performance: 15 GB RAM, 40 GB and 150 GB SSDs, 4 vCPU |
 | High-Memory Double Extra Large:<br />34 GB RAM, 13 ECUs, 850 GB local storage, 64 bit | Standard: 30 GB RAM, 1200 GB HDD, 8 vCPUs<br />Performance: 30 GB RAM, 40 GB and 300 GB SSDs, 8 vCPU |
 
-### Fanatical Support
+### Support
 
-For more information, contact [Rackspace **Fanatical
-Support**&reg;](http://www.rackspace.com/whyrackspace/support).
+For more information, contact
+[Rackspace Support](https://www.rackspace.com/support).
 
 ### Next section
 

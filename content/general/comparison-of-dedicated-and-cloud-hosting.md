@@ -25,7 +25,7 @@ your business.
   </tr>
   <tr>
     <td><strong>Support level</strong></td>
-    <td>Dedicated hosting includes unlimited <strong>Fanatical Support</strong>&reg; for all supported products, services, and software.</td>
+    <td>Dedicated hosting includes unlimited support for all supported products, services, and software.</td>
     <td>The Cloud Managed Operations service level includes support of the data center environment, host server hardware, and Rackspace Cloud APIs.<br><br>Managed Operations support also gives Rackspace employees direct server access to perform troubleshooting and configuration of supported applications for Linux and Windows.</td>
     <td>The Cloud Managed Infrastructure service level includes support of data center environment, host server hardware, and Rackspace Cloud APIs only.<br><br>Rackspace employees are prohibited from logging in to customers' servers to provide systems administration support.</td>
   </tr>

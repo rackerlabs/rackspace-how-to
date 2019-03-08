@@ -10,7 +10,7 @@ product: Office 365
 product_url: office-365
 ---
 
-Rackspace's **Fanatical Support**&reg; for Microsoft Office 365 gives you access to hundreds of Microsoft Certified Professionals, available 24x7x365.  Experience minimized downtime and lower costs with Office 365 plans that fit all business needs.
+Rackspace support for Microsoft Office 365 gives you access to hundreds of Microsoft Certified Professionals, available 24x7x365.  Experience minimized downtime and lower costs with Office 365 plans that fit all business needs.
 
 The following support articles help you get start using Office 365:
 

@@ -11,9 +11,9 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-The Spheres of Support for network security (NetSec) lists the technologies and features 
-in the network security domain and defines the support level for each item. 
- 
+The Spheres of Support for network security (NetSec) lists the technologies and features
+in the network security domain and defines the support level for each item.
+
 ### Firewall support
 
 Firewall support contains the following elements:
@@ -89,11 +89,11 @@ Load balancer support contains the following elements:
 * Configuration changes on behalf of the customer
 * Performance monitoring and tuning
 
-The following table shows which features are supported in F5&reg; LTM&reg;, Brocade&reg; ADX, 
+The following table shows which features are supported in F5&reg; LTM&reg;, Brocade&reg; ADX,
 NetScaler&reg; VPX, and NetScaler MPX load balancers:
 
-**Note**: Citrix made the VPX software platform available in early access and will soon 
-release it in limited access. They have not released the MPX hardware platform yet but 
+**Note**: Citrix made the VPX software platform available in early access and will soon
+release it in limited access. They have not released the MPX hardware platform yet but
 currently are planning support for it.
 
 | | Feature | F5 LTM | Brocade ADX | NetScaler VPX | NetScaler MPX|
@@ -124,7 +124,7 @@ currently are planning support for it.
 ||Pools - connection limits (pool, node)  |✓|✓|✓|✓|
 ||Pools - priority group activation |✓||||
 ||LB - pools - group monitor applied to all pool members  |✓||✓|✓|
-||LB - pools - individual monitors applied to each pool member  |✓|✓|✓|✓| 
+||LB - pools - individual monitors applied to each pool member  |✓|✓|✓|✓|
 ||LB - pools - combination of individual and group monitors across different pool members |✓||✓|✓|
 ||LB - application profiles - HTTP (OneConnect, custom HTTP profile settings) |✓||✓|✓|
 ||LB - application profiles - SSL (client and server) |✓|✓|✓|✓|
@@ -157,7 +157,7 @@ The following table shows which global load balancer features are supported in F
 | :--- |:--- | :---: | :---: | :---: | :---: |
 | **Interfaces** |  VLAN tagged (Cisco trunk)|✓||||
 ||VLAN untagged (Cisco access)  |✓| |||     
-||LACP bundling with the number of interfaces is a power of 2 |✓|||| 
+||LACP bundling with the number of interfaces is a power of 2 |✓||||
 | **Routing** | Static routes |✓||||
 | **IPv6** |  Static routes |✓||||
 | **Load balancing** |  Single listener address |✓||||
@@ -180,19 +180,19 @@ The following table shows which global load balancer features are supported in F
 
 ### Cisco Content Service Switches support
 
-End of support for Cisco Content Service Switches (CSS) occurred on September 30, 2014. Customers 
-that continue to use the platform fall under the Extended Lifecycle Support agreement. Any 
+End of support for Cisco Content Service Switches (CSS) occurred on September 30, 2014. Customers
+that continue to use the platform fall under the Extended Lifecycle Support agreement. Any
 support is considered a reasonable endeavor.
 
 ### Redhill&reg; WebMux support
 
-End of support for the Redhill MebMux load balancer occurred on September 1, 2014. Customers that 
-continue to use the platform fall under the Extended Lifecycle Support agreement. Any support 
+End of support for the Redhill MebMux load balancer occurred on September 1, 2014. Customers that
+continue to use the platform fall under the Extended Lifecycle Support agreement. Any support
 is considered a reasonable endeavor.
 
-**Note:** Rackspace makes every effort to align our support dates for operating systems with the 
-manufacturer’s support dates. If a manufacturer decides to shorten the support life of an operating 
-system, Rackspace might be forced to end support sooner than originally anticipated. For full details 
+**Note:** Rackspace makes every effort to align our support dates for operating systems with the
+manufacturer’s support dates. If a manufacturer decides to shorten the support life of an operating
+system, Rackspace might be forced to end support sooner than originally anticipated. For full details
 on support life, see the [Rackspace End of Life Terms](https://www.rackspace.com/information/legal/eolterms?_ga=2.83585110.1185508516.1551714471-1563606307.1544215242).
 
 ### DDoS mitigation
@@ -206,4 +206,4 @@ Except as set forth in the agreements you sign with Rackspace, Rackspace assumes
 
 Although part of this document explains how Rackspace services may work with third-party products, the information contained in the document is not designed to work with all scenarios. Any use or changes to third-party products and configurations should be made at the discretion of your administrators and are subject to the applicable terms and conditions of such third party. Rackspace does not provide technical support for third-party products, other than specified in the agreement or agreements you have with Rackspace, and Rackspace accepts no responsibility for third-party products.
 
-Rackspace cannot guarantee the accuracy of any information presented after the date of publication. Copyright &copy; 2019 Rackspace, Rackspace&reg;, Fanatical Support&reg;, and other Rackspace marks are either registered service marks or service marks of Rackspace US, Inc. in the United States and other countries. All other trademarks, service marks, images, products, and brands remain the sole property of their respective holders and do not imply endorsement or sponsorship.
+Rackspace cannot guarantee the accuracy of any information presented after the date of publication. Rackspace&reg; and other Rackspace marks are either registered service marks or service marks of Rackspace US, Inc. in the United States and other countries. All other trademarks, service marks, images, products, and brands remain the sole property of their respective holders and do not imply endorsement or sponsorship.

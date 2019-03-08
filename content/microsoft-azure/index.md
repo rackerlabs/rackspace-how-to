@@ -1,5 +1,5 @@
 ---
-title: Fanatical Support for Microsoft Azure
+title: Support for Microsoft Azure
 type: product
 created_date: '2017-04-12'
 created_by: Rackspace Support

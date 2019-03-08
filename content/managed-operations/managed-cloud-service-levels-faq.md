@@ -64,9 +64,9 @@ pricing changes will cause some new customers who don’t value support to choos
 other providers. As a result, we will be able to shift more resources to serve
 customers who do value support and are willing to pay for it.
 
-#### What do I get with Fanatical Support?
+#### What do I get with support from Rackspace?
 
-There are five foundational components to **Fanatical Support**&reg;:
+There are five foundational components to support from Rackspace:
 
 -   **Architecture advisors**: Move beyond one-size-fits-all reference
     architectures. Let our experts tailor your workload architecture to your

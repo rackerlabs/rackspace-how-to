@@ -45,8 +45,8 @@ The Managed Colocation hosting option offers limited financial risk
 compared to a DIY solution. Upfront costs can be reallocated to other
 business differentiators, and operations can be fully focused on driving
 innovation. With your technicians managing the operating system and
-mission-critical applications, you are still able to maintain the desired 
-level of control. And because the provider handles the infrastructure, you 
+mission-critical applications, you are still able to maintain the desired
+level of control. And because the provider handles the infrastructure, you
 no longer have to commit to a large capital outlay simply to have that
 level of control. An important consideration, however, is the
 Service Level Agreement that your provider offers. An aggressive
@@ -75,10 +75,11 @@ also help manage and plan for your growth needs and deployments.
 > *"We want to transition from a total in-house scenario. Colocation is
 the logical first step, but I need some help."*
 
-[**Fanatical Support**&reg;](https://www.rackspace.com/why-rackspace),
+[Fanatical Experience&trade;](https://www.rackspace.com/why-rackspace),
 which is our can-do, no-excuses way of thinking, has made Rackspace the
 world's leader in hosting. Since our beginning in 1998, we have grown to
 more than 80,000 customers and 2,800 employees&mdash;we call them
-Rackers&mdash;around the world serving our customers. Fanatical Support is
+Rackers&mdash;around the world serving our customers. Providing you with a
+Fanatical Experience is
 what drives our industry-leading SLAs so that you can focus on your core
 business, not on managing servers.

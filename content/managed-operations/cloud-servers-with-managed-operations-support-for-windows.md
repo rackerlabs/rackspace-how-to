@@ -14,8 +14,8 @@ product_url: managed-operations
 The Managed Operations service level provides support beyond the
 Managed Infrastructure service level, including direct assistance
 with resizes, snapshots, host machine issues, adding and removing
-servers, and managing IP addresses. To ensure
-**Fanatical Support**&reg;, Rackspace provides support for
+servers, and managing IP addresses. To ensure that you have a Fanatical
+Experience, Rackspace provides support for
 specific software and server configurations on Windows&reg; cloud servers
 with Managed Operations support.
 

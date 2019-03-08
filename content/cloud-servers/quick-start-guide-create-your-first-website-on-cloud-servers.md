@@ -205,6 +205,7 @@ image:
 
 Several resources are available to help you progress:
 
-- [Rackspace How-To](/how-to/): Information about all Rackspace products
-- [**Fanatical Support**&reg;](http://www.rackspace.com/support): Contact
-  Rackspace Support
+- [Rackspace How-To articles](/how-to/): Information about all
+  Rackspace products
+- [Rackspace Support](http://www.rackspace.com/support): Information about
+  how to contact Rackspace Support

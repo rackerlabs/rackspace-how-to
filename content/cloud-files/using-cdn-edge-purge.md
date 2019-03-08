@@ -30,7 +30,7 @@ of a given edge server, and allow it to cache a newer version of a file
 after the first time it is requested from a given geographic area.
 Customers are allowed up to 25 object purges a day, per account. If a
 customer needs to purge an entire container, they can simply contact our
-**Fanatical Support**&reg; team for assistance.
+Support team for assistance.
 
 Purging content from edge servers is a great feature to have for CDN,
 especially when you're really in a pickle. However, edge purge isn't

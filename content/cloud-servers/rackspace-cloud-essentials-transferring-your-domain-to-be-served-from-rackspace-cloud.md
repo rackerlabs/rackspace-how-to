@@ -34,7 +34,7 @@ enablement.
 
 No, Rackspace is not a domain registrar. Rackspace is a provider of
 world-class, on-demand Cloud Hosting services that are backed by our
-commitment to **Fanatical Support**&reg;.
+commitment to provide you with a Fanatical Experience&trade;.
 
 In order to host a domain from your Cloud Server, you first need to
 register it at a domain registrar and then enable it at Rackspace.

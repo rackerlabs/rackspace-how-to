@@ -18,7 +18,7 @@ For more information on managing both Rackspace Email and Microsoft Exchange thr
 
 The following lists Cloud Office Control Panel features:
 
-- **Fanatical Support**&reg;: Administrators can access live chat and ticket support 24x7x365. Easily access the support site for step-by-step guides.
+- **Fanatical Experience**&trade;: Administrators can access live chat and ticket support 24x7x365. Easily access the support site for step-by-step guides.
 
 -  **Easy to learn**: An intuitive interface puts the tools you need at your fingertips. Get tasks done quickly with multiple navigation options and clearly labeled buttons and links.
 

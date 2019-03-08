@@ -15,7 +15,7 @@ product_url: rackconnect
 
 RackConnect Global is a connectivity service that makes it
 possible for you to deploy a hybrid cloud infrastructure connecting Rackspace
-to infrastructure hosted on your premises, at a colocation provider, or in AWS, 
+to infrastructure hosted on your premises, at a colocation provider, or in AWS,
 Microsoft Azure, Google Cloud Platform or Alibaba Cloud. For more details, see
 <http://www.rackspace.com/cloud/hybrid/rackconnect/global>.
 
@@ -30,8 +30,8 @@ results in unpredictable latency and throughput, and the latter involves
 working with a third-party provider, which can be costly.
 RackConnect Global enables you to deploy your hybrid cloud in a network with low
 latency, predictable throughput, and predictable redundancy at a
-reasonable cost to you, all managed by Rackspace **Fanatical Support**&reg;.
-You can also use RackConnect Global to connect Rackspace regions across the 
+reasonable cost to you, all managed by the Rackspace Support team.
+You can also use RackConnect Global to connect Rackspace regions across the
 U.S. and Europe along the Rackspace backbone, which avoids the Internet.
 
 #### What are the primary use cases?
@@ -78,23 +78,23 @@ Users can connect via the following means:
 
 #### What speeds are supported?
 
-Connectivity speeds of 100 Mbps, 200 Mbps, 500 Mbps, 1 Gbps, 2 Gbps, 
-5 Gbps, and 10 Gbps are supportedat launch. Higher speeds will be 
-handled on a case-by-case basis. Note that these are the speeds 
-supported by Rackspace and can be supported only if the other end 
+Connectivity speeds of 100 Mbps, 200 Mbps, 500 Mbps, 1 Gbps, 2 Gbps,
+5 Gbps, and 10 Gbps are supportedat launch. Higher speeds will be
+handled on a case-by-case basis. Note that these are the speeds
+supported by Rackspace and can be supported only if the other end
 of the virtual circuit is capable of
 supporting these speeds.
 
 #### Is a dedicated aggregation switch (customer edge device) and top of rack (TOR) switch needed to use this service?
 
-No, at Rackspace we offer customers the choice of utilizing dedicated 
+No, at Rackspace we offer customers the choice of utilizing dedicated
 10G switches or shared 10G switches (which is a more affordable option).
 
 #### Is the traffic secure?
 
-Use RackConnect Global to securely transfer data without going over the 
-Internet, using a private circuit that isn’t shared with others — for an 
-additional layer of protection for your business data and apps. The 
+Use RackConnect Global to securely transfer data without going over the
+Internet, using a private circuit that isn’t shared with others — for an
+additional layer of protection for your business data and apps. The
 service does not provide encryption of any sort. It is purely an
 MPLS VPN connection. The traffic rides all the way through the Rackspace
 Backbone (the network that interconnects Rackspace regions and provides
@@ -103,7 +103,7 @@ is inherently secure.
 
 #### Does the service have an SLA?
 
-Yes. RackConnect Global includes a 99.9% Connectivity Uptime Guarantee, industry-leading SLAs and Fanatical Support — the commitment to 24x7x365 service and support that’s at the core of what we do. (Rackspace guarantees that the termination end point for the RackConnect Global Service virtual circuit will be able to accept connections 99.9% of the time in any calendar month, provided that there are two or more virtual circuit termination end points at the Rackspace data center location.) You can read the agreement at [https://www.rackspace.com/information/legal/rackconnect-global-regionlink](https://www.rackspace.com/information/legal/rackconnect-global-regionlink).
+Yes. RackConnect Global includes a 99.9% Connectivity Uptime Guarantee, industry-leading SLAs, and the commitment to 24x7x365 service and support that’s at the core of what we do. (Rackspace guarantees that the termination end point for the RackConnect Global Service virtual circuit will be able to accept connections 99.9% of the time in any calendar month, provided that there are two or more virtual circuit termination end points at the Rackspace data center location.) You can read the agreement at [https://www.rackspace.com/information/legal/rackconnect-global-regionlink](https://www.rackspace.com/information/legal/rackconnect-global-regionlink).
 
 #### What is the high-level procedure by which an RackConnect Global connection can be ordered and provisioned for the customer?
 
