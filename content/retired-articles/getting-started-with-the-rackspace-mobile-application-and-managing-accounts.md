@@ -15,7 +15,7 @@ mobile applications provide a seamless way for customers to access,
 create, and manage Cloud Servers across the Rackspace Cloud.
 Specifically, you will be able to create, rename, reboot, and rebuild
 servers; check response times across multiple data centers; look up the
-Rackspace Cloud System Status; and contact Rackspace **Fanatical Support**&reg;
+Rackspace Cloud System Status; and contact Rackspace support
 across all regions.
 
 ### Download the application

@@ -11,7 +11,7 @@ product: Fanatical Support for AWS
 product_url: fanatical-support-for-aws
 ---
 
-Rackspace builds your **Fanatical Support**&reg; for AWS (FAWS) environment on private networks. Therefore, if a customer uses an RDS database in their environment, that database must be accessed through a site-to-site VPN.
+Rackspace builds your Fanatical Support for AWS (FAWS) environment on private networks. Therefore, if a customer uses an RDS database in their environment, that database must be accessed through a site-to-site VPN.
 
 Customers without a site-to-site VPN can access their RDS private instance with Putty by using the following steps:
 
