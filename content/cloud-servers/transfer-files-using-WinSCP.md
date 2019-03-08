@@ -23,32 +23,32 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 3. Select **Typical** installation or **Custom** installation, and click **Next**.
 
-   A custom installation gives you the option to select the file's destination, the components to be installed, and the features within the WinSCP application, including:
+    A custom installation gives you the option to select the file's destination, the components to be installed, and the features within the WinSCP application, including:
 
-   * Drag & drop shell extension (allows direct downloads, may require restart)
-   * Pageant (SSH authentication agent)
-   * PuTTYgen (key generator)
-   * Translations
+    * Drag & drop shell extension (allows direct downloads, may require restart)
+    * Pageant (SSH authentication agent)
+    * PuTTYgen (key generator)
+    * Translations
 
-   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/install-type.png %}" />
+    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/install-type.png %}" />
 
 4. Choose the interface type with which you want to work, and click **Next**.
 
-   The **Commander** interface displays two panes with your local files on the left and remote files  on the right. The **Explorer** style displays only remote files in a single window..
+    The **Commander** interface displays two panes with your local files on the left and remote files  on the right. The **Explorer** style displays only remote files in a single window..
 
-   We recommend starting with the **Commander** interface. You can change the default style later within the **Preferences** menu.
+    We recommend starting with the **Commander** interface. You can change the default style later within the **Preferences** menu.
 
-   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/interface-type.png %}" />
+    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/interface-type.png %}" />
 
 5. Configure `sshd` (the ssh/sftp server) to listen to a port that is different from the default.
 
-   The following example uses port 30000:
+    The following example uses port 30000:
 
-   * **SFTP port**: 30000
-   * **Username**: demo
-   * **IP address**: 123.45.67.89
+    * **SFTP port**: 30000
+    * **Username**: demo
+    * **IP address**: 123.45.67.89
 
-   **Note**: For the Host Name, enter the IP address of your server and change the Port to match your sshd port.
+    **Note**: For the Host Name, enter the IP address of your server and change the Port to match your sshd port.
 
 6. Ensure that the **Connection Type** is set to `sftp`.
 
@@ -56,15 +56,15 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 8. Enter a configuration name that you will remember, for example, **server-ORD-local23**.
 
-   WinSCP stores configurations in **Stored Sessions**. Use a different name for each server.
+    WinSCP stores configurations in **Stored Sessions**. Use a different name for each server.
 
-   **Note**: You can use a private key to log in to a slice. See [Generate RSA keys with SSH by using PuTTYgen](how-to/generating-rsa-keys-with-ssh-puttygen/) for information about setting up public/private keys.
+    **Note**: You can use a private key to log in to a slice. See [Generate RSA keys with SSH by using PuTTYgen](how-to/generating-rsa-keys-with-ssh-puttygen/) for information about setting up public/private keys.
 
 9. If this is the first time you have used WinSCP, and you are sure you've entered the correct configuration details, click **Yes** on the **Warning** dialog box.
 
-   This warning is not shown during subsequent connections to this server.
+    This warning is not shown during subsequent connections to this server.
 
-   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/accept-key.png %}" />
+    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/accept-key.png %}" />
 
 ### Transfer files
 
@@ -72,13 +72,13 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 2. To transfer files, drag-and-drop files from your local machine, which is shown in the left pane, to the server file system, which is shown in the right pane.
 
-   If you don't have permission to write to the server file system, an **Error** dialog box appears.
+    If you don't have permission to write to the server file system, an **Error** dialog box appears.
 
-   **Note**: The lock on the lower right side of the **Commander** window indicates that the connection is secure. If you double-click the  icon you see security features of your connection, such as the encryption algorithm used by sftp.
+    **Note**: The lock on the lower right side of the **Commander** window indicates that the connection is secure. If you double-click the  icon you see security features of your connection, such as the encryption algorithm used by sftp.
 
-   If you use WinSCP to connect an ftp server, the lock icon does not appear because ftp doesn't provide secure (encrypted) communication.
+    If you use WinSCP to connect an ftp server, the lock icon does not appear because ftp doesn't provide secure (encrypted) communication.
 
-   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/transfer-files.png %}" />
+    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/transfer-files.png %}" />
 
 ### Create files and directories
 
@@ -86,13 +86,13 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 2. Enter a file name and click **OK**.
 
-   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/file-name.png %}" />
+    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/file-name.png %}" />
 
 3. In the text editor, enter the contents of the new file and click the **Save** icon.
 
-   When you save the remote file, WinSCP begins the upload process.
+    When you save the remote file, WinSCP begins the upload process.
 
-   **Note**: If you want to use a more sophisticated text editor, you can select a different editor in the **Preferences** menu.
+    **Note**: If you want to use a more sophisticated text editor, you can select a different editor in the **Preferences** menu.
 
 4. To create a folder, click **File > New** and select **Folder**.
 
@@ -100,8 +100,8 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 6. To set permissions, select **Set permissions** and change the permissions for the new directory by selecting **R**, **W** and **X** (for read, write, and execute) for each user profile.
 
-   You can also see the equivalent octal value for your settings. The new directory will be owned by the user you used to login via sftp.
+    You can also see the equivalent octal value for your settings. The new directory will be owned by the user you used to login via sftp.
 
-   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/permissions.png %}" />
+    <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/permissions.png %}" />
 
 7. To change permissions, right-click the file or directory and select **Properties**.
