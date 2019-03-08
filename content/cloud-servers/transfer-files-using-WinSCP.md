@@ -11,9 +11,9 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-WinSCP is an open-source, free sftp and ftp client for Windows. You can use WinSCP to copy and transfer files between local and remote computers.
+WinSCP is an open-source, free sftp and ftp client for Microsoft® Windows®. You can use WinSCP to securely transfer files between your local Microsoft Windows machine and a remote server.
 
-This article describes how to download, install, and use WinSCP to transfer files between computers. This article also describes how to set permissions and create new files.
+This article describes how to download, install, and use WinSCP to transfer files between computers. This article also describes how to create files and folders, and set permissions.
 
 ### Download and install WinSCP
 
@@ -64,3 +64,43 @@ This article describes how to download, install, and use WinSCP to transfer file
   This warning is not shown during subsequent connections to this server.
 
   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/accept-key.png %}" />
+
+### Transfer files
+
+1. Launch WinSCP.
+
+2. To transfer files, drag-and-drop files from your local machine, which is shown in the left pane, to the server file system, which is shown in the right pane.
+
+  If you don't have permission to write to the server file system, an **Error** dialog box appears.
+
+  **Note**: The lock on the lower right side of the **Commander** window indicates that the connection is secure. If you double-click the  icon you see security features of your connection, such as the encryption algorithm used by sftp.
+
+  If you use WinSCP to connect an ftp server, the lock icon does not appear because ftp doesn't provide secure (encrypted) communication.
+
+  <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/transfer-files.png %}" />
+
+### Create files and directories
+
+1. To create a file, click **File > New** and select **File**.
+
+2. Enter a file name and click **OK**.
+
+  <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/file-name.png %}" />
+
+3. In the text editor, enter the contents of the new file and click the **Save** icon.
+
+  When you save the remote file, WinSCP begins the upload process.
+
+  **Note**: If you want to use a more sophisticated text editor, you can select a different editor in the **Preferences** menu.
+
+4. To create a folder, click **File > New** and select **Folder**.
+
+5. Enter a folder name.
+
+6. To set permissions, select **Set permissions** and change the permissions for the new directory by selecting **R**, **W** and **X** (for read, write, and execute) for each user profile.
+
+  You can also see the equivalent octal value for your settings. The new directory will be owned by the user you used to login via sftp.
+
+  <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/permissions.png %}" />
+
+7. To change permissions, right-click the file or directory and select **Properties**.
