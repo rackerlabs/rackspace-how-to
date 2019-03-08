@@ -34,8 +34,8 @@ This article describes how to download, install, and use WinSCP to transfer file
 
 4. Choose the interface type with which you want to work, and click **Next**.
 
-   The **Commander** interface displays two panes with your local files on the left and remote files  on the right. The **Explorer** style displays only remote files in a single window.
-   
+   The **Commander** interface displays two panes with your local files on the left and remote files  on the right. The **Explorer** style displays only remote files in a single window..
+
    We recommend starting with the **Commander** interface. You can change the default style later within the **Preferences** menu.
   <img src="{% asset_path cloud-servers/transfer-files-using-WinSCP/interface-type.png %}" />
 
