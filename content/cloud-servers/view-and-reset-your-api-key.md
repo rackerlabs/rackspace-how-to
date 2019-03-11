@@ -33,8 +33,8 @@ To view or reset your API key, use the following steps:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
-2.	In the upper-right corner of the Cloud Control Panel, click the **username**
-   menu and select **My Profile & Settings**.
+2.	In the upper-right corner of the Cloud Control Panel, click your username
+   and select **My Profile & Settings**.
 
 3. Scroll down to **Security Settings**.
 
