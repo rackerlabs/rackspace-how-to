@@ -58,7 +58,7 @@ This article describes how to download, install, and use WinSCP to transfer file
 
     WinSCP stores configurations in **Stored Sessions**. Use a different name for each server.
 
-    **Note**: You can use a private key to log in to the cloud server. See [Generate RSA keys with SSH by using PuTTYgen](how-to/generating-rsa-keys-with-ssh-puttygen) for information about setting up public and private keys.
+    **Note**: You can use a private key to log in to the cloud server. See [Generate RSA keys with SSH by using PuTTYgen](/how-to/generating-rsa-keys-with-ssh-puttygen) for information about setting up public and private keys.
 
 9. If this is the first time you have used WinSCP, and you are sure you've entered the correct configuration details, click **Yes** on the **Warning** dialog box.
 
