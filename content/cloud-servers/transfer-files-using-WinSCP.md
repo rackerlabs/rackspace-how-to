@@ -1,11 +1,11 @@
 ---
 permalink: transfer-files-using-WinSCP/
-audit_date:
+audit_date: '2019-03-12'
 title: Transfer files using WinSCP
 type: article
 created_date: '2019-03-07'
 created_by: Chris Moyer
-last_modified_date: '2019-03-08'
+last_modified_date: '2019-03-12'
 last_modified_by: Chris Moyer
 product: Cloud Servers
 product_url: cloud-servers
@@ -58,7 +58,7 @@ This article describes how to download, install, and use WinSCP to transfer file
 
     WinSCP stores configurations in **Stored Sessions**. Use a different name for each server.
 
-    **Note**: You can use a private key to log in to a slice. See [Generate RSA keys with SSH by using PuTTYgen](how-to/generating-rsa-keys-with-ssh-puttygen/) for information about setting up public/private keys.
+    **Note**: You can use a private key to log in to the cloud server. See [Generate RSA keys with SSH by using PuTTYgen](how-to/generating-rsa-keys-with-ssh-puttygen/) for information about setting up public/private keys.
 
 9. If this is the first time you have used WinSCP, and you are sure you've entered the correct configuration details, click **Yes** on the **Warning** dialog box.
 
