@@ -13,7 +13,7 @@ product_url: cloud-servers
 
 WinSCP is an open-source, ffree Secure File Transfer Protocol (sftp) and File Transfer Protocol (ftp) client for Microsoft® Windows®. You can use WinSCP to securely transfer files between your local Microsoft Windows machine and a remote server.
 
-This article describes how to download, install, and use WinSCP to transfer files between computers. This article also describes how to create files and folders, and set permissions.
+This article describes how to download, install, and use WinSCP to transfer files between computers. This article also describes how to create files and folders, and set permissions..
 
 ### Download and install WinSCP
 
