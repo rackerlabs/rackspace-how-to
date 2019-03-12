@@ -4,7 +4,7 @@ audit_date: '2019-03-12'
 title: Transfer files by using WinSCP
 type: article
 created_date: '2019-03-12'
-created_by: Chris Moyer
+created_by: Rackspace Community
 last_modified_date: '2019-03-12'
 last_modified_by: Chris Moyer
 product: Cloud Servers
