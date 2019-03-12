@@ -13,15 +13,15 @@ product_url: cloud-servers
 
 WinSCP is an open-source, free Secure File Transfer Protocol (sftp) and File Transfer Protocol (ftp) client for Microsoft® Windows®. You can use WinSCP to securely transfer files between your local Microsoft Windows machine and a remote server.
 
-This article describes how to download, install, and use WinSCP to transfer files between computers. This article also describes how to create files and folders, and set permissions..
+This article describes how to download, install, and use WinSCP to transfer files between computers. This article also describes how to create files and folders, and set permissions.
 
 ### Download and install WinSCP
 
 1. [Download](https://winscp.net/eng/download.php) WinSCP.
 
-2. Double-click WinSCP to begin the installation process.
+2. Double-click the WinSCP executable to begin the installation process.
 
-3. Select **Typical** installation or **Custom** installation for the Setup type and click **Next**.
+3. Select **Typical** installation or **Custom** installation for the **Setup** type and click **Next**.
 
     A custom installation provides the option to select the file's destination, the components to install, and the features within the WinSCP application including:
 
@@ -74,7 +74,7 @@ This article describes how to download, install, and use WinSCP to transfer file
 
     If you don't have permission to write to the server file system, an **Error** dialog box appears.
 
-    **Note**: The lock on the lower right side of the **Commander** window indicates that the connection is secure. If you double-click the icon, you see the security features of your connection, such as the encryption algorithm used by sftp.
+    **Note**: The lock on the lower right side of the **Commander** window indicates that the connection is secure. If you double-click the icon, you see the security features of your connection, such as the encryption algorithm used by `sftp`.
 
     If you use WinSCP to connect an ftp server, the lock icon does not appear because ftp doesn't provide secure (encrypted) communication.
 
