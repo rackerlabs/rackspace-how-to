@@ -5,7 +5,7 @@ title: Enable or disable two-factor authentication for administrators
 type: article
 created_date: '2017-10-02'
 created_by: William Loy
-last_modified_date: '2019-03-04'
+last_modified_date: '2019-03-12'
 last_modified_by: William Loy
 product: Rackspace Email
 product_url: rackspace-email
@@ -17,7 +17,7 @@ This article describes how to enable two-factor authentication for Cloud Office 
 
 - **Applies to:** Administrator
 - **Difficulty:** Easy
-- **Time Needed:** Approximately 10 minutes
+- **Time Needed:** Approximately 5 minutes
 - **Tools Needed:** Administrators need access to their Cloud Office Control Panel
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
