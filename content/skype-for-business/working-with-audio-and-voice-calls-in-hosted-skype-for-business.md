@@ -11,7 +11,7 @@ product: Microsoft Skype for Business
 product_url: skype-for-business
 ---
 
-When you use Hosted Skype for Business&reg; at Rackspace, you can make and
+When you use Hosted Skype&reg; for Business at Rackspace, you can make and
 answer audio calls through the application, as described in the following sections:
 
 -   [Set up your audio device](#set-up-your-audio-device)
@@ -20,8 +20,7 @@ answer audio calls through the application, as described in the following sectio
 
 ### Set up your audio device
 
-You must set up your audio device and test your audio device before using Skype for Business to make or join an audio call.
-Compatible audio devices can be a microphone and speakers, or you can use a headset or earphones.
+You must set up your audio device and test your audio device before using Skype for Business to make or join an audio call. You can use compatible audio devices such as a microphone and speakers, or you can use a headset or earphones.
 
 1.  In the lower-left corner of the Skype for Business main window,
     click the **Select Your Primary Device** icon, and select **Audio
@@ -29,14 +28,13 @@ Compatible audio devices can be a microphone and speakers, or you can use a head
 
     <img src="{% asset_path skype-for-business/working-with-audio-and-voice-calls-in-hosted-skype-for-business/4372.1.png %}" width="277" height="157" />
 
-2.  Click the **Select the device you want to use for audio** calls
-    menu, and select the device that you want to use.
+2.  Click **Select the device you want to use for audio calls**, and select the device that you want to use.
 
 3.  In the **Customize your device** section, drag the sliders to adjust
-    the volumes of the speakers and microphone.
+    the volumes for the speakers and microphone.
 
     -   To hear a sample tone, click the green arrow for the speaker.
-    -   Adjust and test your microphone, by using the blue indicator to
+    -   Adjust and test your microphone by using the blue indicator to
         choose the appropriate level. If you are using a handset, speak into the receiver. If you are using a headset,
         speak into the microphone.
 
@@ -54,7 +52,7 @@ id="cke_bm_432E"> </span>
 
 ### Answer an audio call
 
-When receiving a call, the following notification appears on your screen:
+When you receive a call, the following notification appears on your screen:
 
 <img src="{% asset_path skype-for-business/working-with-audio-and-voice-calls-in-hosted-skype-for-business/Audio2.JPG %}" width="170" height="204" />
 
