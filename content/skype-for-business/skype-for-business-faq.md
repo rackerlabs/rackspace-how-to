@@ -232,7 +232,7 @@ To change the default font details for incoming IMs as well:
 -   From the Skype for Business main window, click the **Options** button,
     click **General** , click **Change Font** , and then select a default
     font, font style, font size, and font color. Then select the **Apply
-    settings to incoming messages** checkbox, and then click **OK**.
+    settings to incoming messages** checkbox, and click **OK**.
 
 #### Can I add customized emoticons to my Skype for Business IMs?
 
@@ -290,31 +290,14 @@ To help ensure that your IM alerts are noticeable, try the following:
     for Business Main window onto the display monitor you are
     working on.
 -   Confirm that the volume is turned up on your computer speakers and
-    other audio device(s).
+    other audio devices.
 -   Confirm that Skype for Business is set to send audible alerts. To do
     this, click the **Options** button, click **Ringtones and Sounds**,
     select **Play sounds in Skype for Business (including ringtones for
     incoming calls and IM alerts)** , and confirm that the other check
     boxes in the panel are not selected.
 -   Consider choosing a more distinctive or more prominent alert sound
-    than the default to notify you of an incoming message. To do this:
-
-1.  Click **Options**&gt; **Ringtones and Sounds**&gt;**Sounds
-    Settings** and then click the **Sounds** tab.
-2.  Drag the slider on the Program Events display panel down to the
-    Microsoft Skype for Business listings.
-3.  Click **Incoming Instant Message**. The **Sounds** display at bottom
-    of the window should read **COMMUNICATOR\_iminvite**.
-4.  Click the drop-down arrow next to **COMMUNICATOR\_iminvite** to
-    sample some of the other sounds on the list. *(Optional)* You can
-    also record your own .wav file for this purpose, and then browse to
-    that file to select it as your IM alert.
-5.  Select the sound you want to use for incoming IM alerts, and then
-    click **Apply**.
-    The Program Events display panel should now read **Incoming Instant
-    Message** and the Sounds panel should display the name of the .wav
-    file you selected.
-6.  Click **OK**.
+    than the default to notify you of an incoming message.
 
 ------------------------------------------------------------------------
 
@@ -349,14 +332,13 @@ currently displayed.
 
 #### What do the settings on the Status options window mean?
 
-On the Status options window you can change the number of minutes that
-elapse before your presence status changes to **Inactive** and **Away**
-, if you don't want to use the default settings. You can also have Skype
+On the **Status options** window you can change the number of minutes that
+elapse before your presence status changes to **Inactive** and **Away**. You can also have Skype
 for Business automatically detect when you are sharing information from
-this computer. Skype for Business will set your status as Presenting and
+this computer. Skype for Business will set your status as **Presenting**, and
 block others from sending messages to you during that time.
 
-To set these presence status options:
+Set these status options by using the following instructions:
 
 1.  In the Skype for Business main window, click the **Options** button,
     and then click **Status** .
@@ -369,7 +351,7 @@ To set these presence status options:
 
 Select the checkboxes labeled **Show me as Do Not Disturb when I
 present my desktop** and **Show me as Do Not Disturb when my monitor is
-duplicated** to let others know not to interrrupt you when you are
+duplicated** to let others know not to interrupt you when you are
 giving a presentation or otherwise collaborating online from your Skype
 for Business-enabled computer.
 
@@ -386,8 +368,7 @@ to your Workgroup.
 
 #### How do I get rid of the Out of Office note in Skype for Business?
 
-If your Skype for Business account is synced via Microsoft Exchange
-Server to your Outlook calendar, an out-of-office message appears in
+If your Skype for Business account is synced via Microsoft Exchange&reg; to your Outlook calendar, an out-of-office message appears in
 Skype for Business after you turn on the Out of Office reply in
 Microsoft Outlook. To get rid of the out-of-office message display in
 Skype for Business, you need to turn off the Out of Office reply in
