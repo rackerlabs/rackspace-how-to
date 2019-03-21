@@ -36,7 +36,7 @@ If you're not hearing audio, check the following things:
     **Options &gt; Personal.**
 2.  Uncheck the box labeled **Automatically start Skype for Business
     when I log on to Windows**. The next time you log on, if you want to
-    use Skype for Business you'll need to select it from the **Start** menu.
+    use Skype for Business, you'll need to select it from the **Start** menu.
 
 #### How do I confine Skype for Business to the task bar until it's needed?
 
