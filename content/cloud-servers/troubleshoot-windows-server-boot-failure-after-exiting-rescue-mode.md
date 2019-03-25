@@ -11,11 +11,11 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Rescue mode is a maintenance state that can allow you access to an
+Rescue mode is a maintenance state that allows you access to an
 unresponsive server. You can use rescue mode to fix configuration problems
 or to copy your data and move it to another server.
 
-Enter your server into rescue mode temporarily sets aside your original
+Entering your server into rescue mode temporarily sets aside your original
 disk. Meanwhile, a new server builds based on the
 original stock image of your selected operating system (OS). Your original
 volume then attaches as a secondary device to the rescued instance.
@@ -38,7 +38,7 @@ in the following sections to edit the boot loader settings.
 
 ### Windows Server 2008
 
-First, ensure that the volume has an automatically assigned drive letter,
+Ensure that the volume has an automatically assigned drive letter,
 usually **D:**, by opening **Computer Management**. Right-click **Disk 1**
 and then select **On-line**.
 
