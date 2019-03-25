@@ -12,24 +12,24 @@ product_url: cloud-servers
 ---
 
 Rescue mode is a maintenance state that can allow you access to an
-unresponsive server. You can use rescue mode to fix configuration problems,
+unresponsive server. You can use rescue mode to fix configuration problems
 or to copy your data and move it to another server.
 
-When you enter your server into rescue mode, your original disk volume is
-temporarily set aside. Meanwhile, a new server is built based from the
+Enter your server into rescue mode temporarily sets aside your original
+disk. Meanwhile, a new server builds based on the
 original stock image of your selected operating system (OS). Your original
-volume is then attached as a secondary device to the rescued instance.
+volume then attaches as a secondary device to the rescued instance.
 Then you have the opportunity to assign a drive letter to your existing drive
 in order to access it.
 
-After the rescue image has completed building, you receive an email with the
+After the rescue image completes building, you receive an email with the
 new password for the temporary rescue mode image. After you enter rescue mode,
 you have 24 hours to repair your instance before it automatically reverts
-back to the previous instance.
+to the previous instance.
 
 Some versions of the Windows&reg; OS modify the original disk signature when
 mounting a secondary drive. If you reboot, you are likely to receive a
-**winload.exe** error or a **0xc000000e** error. This occurs with the
+**winload.exe** error or a **0xc000000e** error. This situation occurs with the
 BCD boot loader and not with the NTLDR loader.
 
 If you receive one of these errors, you can re-rescue the system and fix
@@ -38,11 +38,12 @@ in the following sections to edit the boot loader settings.
 
 ### Windows Server 2008
 
-First, ensure that the volume is automatically assigned a drive letter,
+First, ensure that the volume has an automatically assigned drive letter,
 usually **D:**, by opening **Computer Management**. Right-click **Disk 1**
 and then select **On-line**.
 
-For Windows 2008 SP2, the BCD store resides on the system partition. When
+For Windows Server&reg; 2008 SP2, the boot configuration data (BCD) store
+resides on the system partition. When
 you edit the boot loader settings, you need to ensure that the
 partition setting is the driver where the system partition is located. By
 putting the correct disk signature into the BCD store, the Windows server
@@ -54,7 +55,7 @@ to display the settings of the boot loader:
 
     bcdetit /store D:\boot\bcd
 
-The output should be similar to the following example:
+The output should look similar to the following example:
 
     Windows Boot Manager
     --------------------
@@ -85,8 +86,8 @@ The output should be similar to the following example:
 Take note of the identifier listed under the **Windows Boot Loader** section.
 In this example, the identifier is `{1d25cc4a-fc03-11de-b973-d1d82d39e489}`.
 
-The default path for the BCD store is **\boot\bed**, so if the drive you are
-working with is **D:**, the full path is **D:\boot\bed**.
+The default path for the BCD store is **\boot\bed**, so if **D:** is the drive
+you are working with, the full path is **D:\boot\bed**.
 
 Use the following commands to update the BCD store with the Windows Boot
 Loader identifier:
@@ -113,13 +114,14 @@ The commands and output should look similar to the following example:
 ### Windows Server 2008 R2
 
 Open **Computer Management**, right-click **Disk 1** and then select
-**On-line**. The System Reserved Partition is set to **D:** and your
-original storage volume is set to **E:**.
+**On-line**. **D:** is the setting for the System Reserved Partition and
+**E:** is the setting for your original storage volume.
 
-**Note:** Occasionally, the drive order is flipped so that the System
-Reserved Partition is **E:** and the original storage volume is **D:**.
+**Note:** Occasionally, the drive order flips so that **E:** is the setting
+for the System
+Reserved Partition and **D:** is the setting for the original storage volume.
 
-For Windows Server 2008 R2, the BCD store resides on the boot partition
+For Windows Server 2008 R2, the BCD store resides on the boot partition,
 which is 100 MB in size. When you edit the boot loader settings, you need to
 ensure that the partition setting is the driver where the system partition is
 located. By putting the correct disk signature into the BCD store, the Windows
@@ -131,7 +133,7 @@ to display the settings of the boot loader:
 
     bcdetit /store E:\boot\bcd
 
-The output should be similar to the following example:
+The output should look similar to the following example:
 
     Windows Boot Manager
     --------------------
@@ -164,8 +166,8 @@ The output should be similar to the following example:
 Take note of the identifier listed under the **Windows Boot Loader** section.
 In this example, the identifier is `{1d25cc4a-fc03-11de-b973-d1d82d39e489}`.
 
-The default path for the BCD store is **\boot\bed**, so if the drive you are
-working with is **E:**, the full path is **E:\boot\bed**.
+The default path for the BCD store is **\boot\bed**, so if **E:** is the drive
+you are working with, the full path is **E:\boot\bed**.
 
 Use the following commands to update the BCD store with the Windows Boot
 Loader identifier:
@@ -175,7 +177,7 @@ Loader identifier:
     bcdedit /store <fullPath> /set {bootmgr} device partition=<driveLetter>
     bcdedit /store <fullPath> /set {memdiag} device partition=<driveLetter>
 
-**Note:** The drive letter that you use should be for your original storage
+**Note:** The `driveLetter` that you use is for your original storage
 volume.
 
 The commands and output should look similar to the following example:
