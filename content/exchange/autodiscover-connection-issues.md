@@ -31,7 +31,7 @@ When Outlook sends a request to the server for email, it checks for open connect
 
      - `https://yourdomain/autodiscover/autodiscover.xml`
 
-     - `https://autodiscover.yourdomain/autodiscover.xml`
+     - `https://autodiscover.yourdomain/autodiscover/autodiscover.xml`
 
 3. It checks your Domain Name Services(DNS) for an Autodiscover record.
 
@@ -44,7 +44,7 @@ See [Test Autodiscover functionality in Outlook](https://support.rackspace.com/h
 ### Identifying issues connecting Outlook using autodiscover
 
 Replace** `yourdomain` in `https://yourdomain/autodiscover/autodiscover.xml` and
-`https://autodiscover.yourdomain/autodiscover.xml` with your domain, and enter the URLs sequentially into a web browser search bar to test for any of the following errors:
+`https://autodiscover.yourdomain/autodiscover/autodiscover.xml` with your domain, and enter the URLs sequentially into a web browser search bar to test for any of the following errors:
 
   - `This site can’t be reached: ERR_CONNECTION_TIMED_OUT`
   - `Autodiscover and Autoconfig support is disabled.`
@@ -56,18 +56,18 @@ Replace** `yourdomain` in `https://yourdomain/autodiscover/autodiscover.xml` and
 
 When Outlook receives the responses listed above, it has established a connection with that server but does not progress to the server that your Exchange mailbox is hosted on. This situation causes Outlook to produce the error `cannot connect to server automatically`. To summarize, Outlook is not able to retrieve your mail because something is blocking its path to your Exchange server.
 
-Both `https://yourdomain/autodiscover/autodiscover.xml` and `https://autodiscover.yourdomain/autodiscover.xml` must produce a standard `404` error for Autodiscover to establish the correct connection to your Exchange server, which means that Outlook gets no response when Autodiscover attempts a connection to those servers. After you have set up these URLs correctly, the browser says something like `404: this page doesn't exist` or `server cannot be found` with no additional information on the page. After Autodiscover failed to connect to those servers, it proceeds to the next steps in the process, and then finds the CNAME entry in your public DNS.
+Both `https://yourdomain/autodiscover/autodiscover.xml` and `https://autodiscover.yourdomain/autodiscover/autodiscover.xml` must produce a standard `404` error for Autodiscover to establish the correct connection to your Exchange server, which means that Outlook gets no response when Autodiscover attempts a connection to those servers. After you have set up these URLs correctly, the browser says something like `404: this page doesn't exist` or `server cannot be found` with no additional information on the page. After Autodiscover failed to connect to those servers, it proceeds to the next steps in the process, and then finds the CNAME entry in your public DNS.
 
-To resolve this issue, you must reach out to your website host and request they configure both `https://yourdomain/autodiscover/autodiscover.xml` and `https://autodiscover.yourdomain/autodiscover.xml` to produce a `404` error.
+To resolve this issue, you must reach out to your website host and request they configure both `https://yourdomain/autodiscover/autodiscover.xml` and `https://autodiscover.yourdomain/autodiscover/autodiscover.xml` to produce a `404` error.
 
 #### Certificate errors
 
-If `https://yourdomain/autodiscover/autodiscover.xml` or `https://autodiscover.yourdomain/autodiscover.xml` produce a certificate error, this response also prevents Autodiscover from connecting to your Exchange server. Your website host must address certificate errors.
+If `https://yourdomain/autodiscover/autodiscover.xml` or `https://autodiscover.yourdomain/autodiscover/autodiscover.xml` produce a certificate error, this response also prevents Autodiscover from connecting to your Exchange server. Your website host must address certificate errors.
 
 
 #### GoDaddy cPanel user issues connecting with Autodiscover
 
-GoDaddy&reg; cPanel users may see the following error when attempting a connection to `https://yourdomain/autodiscover/autodiscover.xml` or `https://autodiscover.yourdomain/autodiscover.xml`:
+GoDaddy&reg; cPanel users may see the following error when attempting a connection to `https://yourdomain/autodiscover/autodiscover.xml` or `https://autodiscover.yourdomain/autodiscover/autodiscover.xml`:
 
     autodiscovery must be provided a valid email address
 
