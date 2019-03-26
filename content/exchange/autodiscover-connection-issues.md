@@ -29,8 +29,9 @@ When Outlook sends a request to the server for email, it checks for open connect
 1. It checks for an internal server on your network.
 2. It checks the website server for the domain and then checks the following URL's:
 
-     https://yourdomain/autodiscover/autodiscover.xml
-     https://autodiscover.yourdomain/autodiscover.xml
+     - `https://yourdomain/autodiscover/autodiscover.xml`
+
+     - `https://autodiscover.yourdomain/autodiscover.xml`
 
 3. It checks your Domain Name Services(DNS) for an Autodiscover record.
 
@@ -45,9 +46,9 @@ See [Test Autodiscover functionality in Outlook](https://support.rackspace.com/h
 Replace** `yourdomain` in `https://yourdomain/autodiscover/autodiscover.xml` and
 `https://autodiscover.yourdomain/autodiscover.xml` with your domain, and enter the URLs sequentially into a web browser search bar to test for any of the following errors:
 
-    - `This site can’t be reached: ERR_CONNECTION_TIMED_OUT`
-    - `Autodiscover and Autoconfig support is disabled.`
-    - `This site can’t be reached DOMAIN.com took too long to respond.`
+  - `This site can’t be reached: ERR_CONNECTION_TIMED_OUT`
+  - `Autodiscover and Autoconfig support is disabled.`
+  - `This site can’t be reached DOMAIN.com took too long to respond.`
 
 
  **Important:** You must test both URLs for errors because Autodiscover performs a lookup on both of them. Additionally, the errors you can receive that are not the required `404` are not limited to those examples.
