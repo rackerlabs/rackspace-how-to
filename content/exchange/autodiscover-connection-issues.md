@@ -90,4 +90,4 @@ I can’t contact my web host currently. How can I just access my email?
 
 Why can’t I just set it up manually, like on Outlook 2013?
 
-Outlook 2016 requires Autodiscover. See this article for a detailed explanation from Microsoft&reg;: [Outlook 2016 What Exchange admins need to know](https://blogs.technet.microsoft.com/exchange/2015/11/19/outlook-2016-what-exchange-admins-need-to-know/)
+  - Outlook 2016 requires Autodiscover. See this article for a detailed explanation from Microsoft&reg;: [Outlook 2016 What Exchange admins need to know](https://blogs.technet.microsoft.com/exchange/2015/11/19/outlook-2016-what-exchange-admins-need-to-know/)
