@@ -49,7 +49,8 @@ Replace `yourdomain` in `https://yourdomain/autodiscover/autodiscover.xml` and
     Autodiscover and Autoconfig support is disabled.
     This site can’t be reached DOMAIN.com took too long to respond.
 
-  **Important:** You must test both URLs for errors as Autodiscover performs a lookup on both of them.
+
+ **Important:** You must test both URLs for errors as Autodiscover performs a lookup on both of them.
 
 
 When Outlook receives the responses listed above, it has established a connection with that server and will not progress to the server that your Exchange mailbox is hosted on. This in turn causes Outlook to produce the error `cannot connect to server automatically`. To summarize, Outlook is not able to retrieve your mail because there is something blocking it's path to your Exchange server.
