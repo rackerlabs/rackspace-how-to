@@ -4,7 +4,7 @@ audit_date: '2019-03-25'
 title: Autodiscover connection issues
 type: article
 created_date: '2019-03-25'
-created_by: William Loy
+created_by: Ari Antwine
 last_modified_date: '2019-03-25'
 last_modified_by: William Loy
 product: Microsoft Exchange
