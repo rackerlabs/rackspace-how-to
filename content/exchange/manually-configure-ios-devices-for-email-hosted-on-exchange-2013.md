@@ -5,7 +5,7 @@ title: Manually configure iOS devices for email hosted on Exchange 2013
 type: article
 created_date: '2014-01-16'
 created_by: Mawutor Amesawu
-last_modified_date: '2019-03-27'
+last_modified_date: '2019-03-28'
 last_modified_by: Chris Moyer
 product: Microsoft Exchange
 product_url: exchange
