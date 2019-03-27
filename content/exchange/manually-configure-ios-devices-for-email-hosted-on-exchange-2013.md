@@ -5,21 +5,21 @@ title: Manually configure iOS devices for email hosted on Exchange 2013
 type: article
 created_date: '2014-01-16'
 created_by: Mawutor Amesawu
-last_modified_date: '2016-01-28'
-last_modified_by: Rose Coste
+last_modified_date: '2019-03-27'
+last_modified_by: Chris Moyer
 product: Microsoft Exchange
 product_url: exchange
 ---
 
 This article describes how to configure an Exchange 2013 account on your
-Apple iOS device.  The administrator of your account must verify that an
+Apple iOS 7 device. The administrator of your account must verify that an
 ActiveSync license is attached in your account via the Cloud Control
-Panel.  If any Internet connectivity issues prevent you from
+Panel. If any Internet connectivity issues prevent you from
 successfully setting up Exchange, contact your wireless provider or
 ISP.
 
-**Note:**  The images in this article show iPhone 5 running iOS 7.  Though
-screens on other iOS devices will differ, the process is the same.
+**Note:** The images in this article show iPhone 5 running iOS 7. Though
+screens on other iOS devices differ, the process is similar. For more modern iOS versions, refere
 
 1. On the home screen of your device, tap **Settings &gt;** **Mail,
    Contacts, Calendars** &gt; **Add Account**.
