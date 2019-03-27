@@ -15,7 +15,7 @@ This article describes how to configure an Exchange 2013 account on your
 Apple iOS 7 device.
 
 **Note:** The images in this article show iPhone 5 running iOS 7. Although
-screens on other iOS devices differ, the process is similar. For more modern iOS versions, refer to [The Cloud Office Help Center](https://emailhelp.rackspace.com) for instructions.
+screens on other iOS devices differ, the process is similar. For more modern iOS versions, refer to the [Cloud Office Email Help Tool](https://emailhelp.rackspace.com) for instructions.
 
 The administrator of your account must verify that an
 ActiveSync license is attached in your account via the Cloud Control
@@ -63,6 +63,8 @@ ISP.
 
 You have successfully added your Exchange email account on your iOS
 device.
+
+If you are still having issues connecting, refer to the troubleshooting information available on the [Cloud Office Email Help Tool](https://emailhelp.rackspace.com)
 
 **Note:** Depending on how much data is in the mailbox, it might take some
 time before your information is completely downloaded into your device.
