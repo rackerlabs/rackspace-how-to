@@ -11,7 +11,7 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes how to configure an Microsoft&reg; Exchange&reg; 2013 account on your
+This article describes how to configure a Microsoft&reg; Exchange&reg; 2013 account on your
 Apple&reg; iOS 7 device.
 
 **Note:** The images in this article show iPhone&reg; 5 running iOS 7. Although
