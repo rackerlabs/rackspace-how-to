@@ -64,7 +64,7 @@ ISP.
 You have successfully added your Exchange email account on your iOS
 device.
 
-If you are still having issues connecting, refer to the troubleshooting information available on the [Cloud Office Email Help Tool](https://emailhelp.rackspace.com)
+If you are still having issues connecting, refer to the troubleshooting information available on the [Cloud Office Email Help Tool](https://emailhelp.rackspace.com).
 
 **Note:** Depending on how much data is in the mailbox, it might take some
 time before your information is completely downloaded into your device.
