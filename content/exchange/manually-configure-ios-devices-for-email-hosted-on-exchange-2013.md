@@ -11,17 +11,17 @@ product: Microsoft Exchange
 product_url: exchange
 ---
 
-This article describes how to configure an Exchange 2013 account on your
-Apple iOS 7 device.
+This article describes how to configure an Microsoft&reg; Exchange&reg; 2013 account on your
+Apple&reg; iOS 7 device.
 
-**Note:** The images in this article show iPhone 5 running iOS 7. Although
+**Note:** The images in this article show iPhone&reg; 5 running iOS 7. Although
 screens on other iOS devices differ, the process is similar. For more modern iOS versions, refer to the [Cloud Office Email Help Tool](https://emailhelp.rackspace.com) for instructions.
 
 The administrator of your account must verify that an
-ActiveSync license is attached in your account via the Cloud Control
+ActiveSync&reg; license is attached in your account via the Cloud Control
 Panel. If any Internet connectivity issues prevent you from
 successfully setting up Exchange, contact your wireless provider or
-ISP.
+Internet Service Provider (ISP).
 
 1. On the home screen of your device, tap **Settings &gt;** **Mail,
    Contacts, Calendars** &gt; **Add Account**.
