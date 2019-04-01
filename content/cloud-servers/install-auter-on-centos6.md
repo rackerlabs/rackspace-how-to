@@ -5,8 +5,8 @@ title: 'Install Auter on CentOS 6'
 type: article
 created_date: '2017-07-06'
 created_by: Ruth Lee
-last_modified_date: '2017-08-24'
-last_modified_by: Nate Archer
+last_modified_date: '2019-04-01'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
