@@ -1,17 +1,17 @@
 ---
 permalink: attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/
-audit_date:
+audit_date: '2019-04-05'
 title: Attach a Cloud Block Storage volume to a Windows OnMetal server
 type: article
 created_date: '2017-07-25'
 created_by: Aaron Davis
-last_modified_date: '2018-10-25'
+last_modified_date: '2019-04-05'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-If you need more than 32 GB of storage but do not have a requirement for
+If you want more than 32 GB of storage but do not need
 the fast I/O normally provided by an OnMetal server, you  can connect an
 OnMetal server to a Cloud Block Storage (CBS) volume. Using an OnMetal
 server with CBS is particularly useful for OnMetal Compute and Memory v1
@@ -44,14 +44,14 @@ already exists.
 
 3. Select **Storage > Block Storage Volumes**.
 
-4. Click the cog beside the volume that you want to attach and select **Attach
-   Volume**.
+4. Click the cog beside the volume that you want to attach and select 
+   **Attach Volume**.
 
 5. Select a server from the list and click **Attach Volume**.
 
    **Note:** You can attach more than one volume to a server.
 
-   Result: a window pops up with the following information:
+   Result: A window pops up with the following information:
 
        # set initiator name
        echo InitiatorName=iqn.2008-10.org.openstack: ae9f0492-d19d-45d3-9eac-6987b07f145a > /etc/iscsi/initiatorname.iscsi
@@ -67,7 +67,7 @@ already exists.
    values are:
 
        Target = iqn.2010-11.com.rackspace: ae9f0492-d19d-45d3-9eac-6987b07f145a
-       Address = 10.190.142.197:3260
+       Portal address = 10.190.142.197:3260
 
 ### Connect the volume in Windows
 
@@ -97,7 +97,7 @@ With the preceding information noted, perform the following steps:
 
    <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-3.png %}" alt="" />
 
-   Result: the target server appears in the list on the Discovery page.
+   Result: The target server appears in the list on the Discovery page.
 
 7. Click the **Targets** page, and enter the target ICQ (the `targetname`, which
    you noted earlier).
