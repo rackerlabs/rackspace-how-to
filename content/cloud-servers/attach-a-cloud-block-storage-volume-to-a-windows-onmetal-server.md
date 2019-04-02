@@ -17,6 +17,13 @@ OnMetal server to a Cloud Block Storage (CBS) volume. Using an OnMetal
 server with CBS is particularly useful for OnMetal Compute and Memory v1
 flavors.
 
+This article covers creating a CBS volume, attaching the volume to a server,
+and connecting the volume in a Microsoft&reg; Windows&reg; server.
+
+**Note**: Before you can delete an OnMetal server, you must detach the volume.
+See [Detach and delete Cloud Block Storage volumes](https://support.rackspace.com/how-to/detach-and-delete-cloud-block-storage-volumes/) 
+for detach instructions.
+
 If you don't already have a CBS volume, use the following procedure to create
 a new a volume by using the Cloud Control Panel.
 
