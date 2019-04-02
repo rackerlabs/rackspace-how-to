@@ -98,7 +98,7 @@ With the preceding information noted, perform the following steps:
 
    <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-2.png %}" alt="" />
 
-  A window opens where you can enter the Cloud Block Storage node address.
+   A window opens where you can enter the Cloud Block Storage node address.
 
 6. Enter the IP address (the `portal` IP address and port, which you noted
    earlier), and click **OK**.
