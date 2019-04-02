@@ -125,3 +125,4 @@ With the preceding information noted, perform the following steps:
     listed and can then be prepared and brought online.
 
    <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-5.png %}" alt="" />
+
