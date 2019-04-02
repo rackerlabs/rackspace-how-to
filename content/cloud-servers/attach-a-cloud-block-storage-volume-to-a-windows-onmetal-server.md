@@ -119,7 +119,7 @@ With the preceding information noted, perform the following steps:
 
 10. Select **Storage** -> **Disk Management** to see all of your drives.
 
-    Because the Cloud Block Storage volume is attached, a second disk&em;the target&em; is
+    Because the Cloud Block Storage volume is attached, a second disk, the target, is
     listed and can then be prepared and brought online.
 
    <img src="{% asset_path cloud-servers/attach-a-cloud-block-storage-volume-to-a-windows-onmetal-server/attach-cbs-to-win-onmetal-5.png %}" alt="" />
