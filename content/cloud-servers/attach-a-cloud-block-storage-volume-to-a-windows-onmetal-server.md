@@ -24,10 +24,10 @@ server.
 **Note**: Before you can delete an OnMetal server, you must detach the volume.
 See [Detach and delete Cloud Block Storage volumes](https://support.rackspace.com/how-to/detach-and-delete-cloud-block-storage-volumes/) for instructions.
 
+### Create a new Cloud Block Storage volume
+
 If you don't already have a Cloud Block Storage volume, use the following procedure to create
 a new a volume by using the Cloud Control Panel.
-
-### Create a new Cloud Block Storage volume
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
@@ -39,11 +39,12 @@ a new a volume by using the Cloud Control Panel.
 
 5. Click **Create Volume** again.
 
+
+### Attach an existing Cloud Block Storage volume to a server
+
 Use the following procedure to attach a Cloud Block Storage volume to your
 OnMetal server by using the Cloud Control Panel. The procedure assumes that
 the server instance already exists.
-
-### Attach an existing Cloud Block Storage volume to a server
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
 
