@@ -1,14 +1,12 @@
 ---
 permalink: using-the-private-ip-address-on-your-cloud-server/
-audit_date:
+audit_date: '2019-04-03'
 title: Using Private IP Address on Cloud Servers
 type: article
 created_date: '2011-03-15'
 created_by: Rackspace Support
-last_modified_date: '2015-08-20'
-last_modified_by: Kyle Laffoon
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2019-04-03'
+last_modified_by: Cat Lookabaugh
 ---
 
 Each Cloud Server comes with two addresses that are available for your
