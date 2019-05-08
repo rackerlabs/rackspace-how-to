@@ -5,7 +5,7 @@ title: Delete an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
 created_by: Trevor Becker
-last_modified_date: '2018-12-06'
+last_modified_date: '2019-05-08'
 last_modified_by: Stephanie Fillmon
 product: Dedicated Hosting
 product_url: dedicated-hosting
@@ -28,21 +28,23 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 
 ### Delete an object-group
 
-1. Log in to the [MyRackspace Portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/) by using your username and password.
 
-2. In the top navigation bar, click **Network** > **Firewall Manager v2**.
+2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 
-3. In the navigation pane on the left side of the panel, click the firewall for which you want to see object-groups.
+3. Select **Network** > **Firewall Manager v2**.
 
-4. Under **Rules** in the navigation pane, click **IP Groups**.
+4. In the navigation pane on the left side of the panel, click the firewall for which you want to see object-groups.
+
+5. Under **Rules** in the navigation pane, click **IP Groups**.
 
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/ip-groups.png %}" />
 
-5. Scroll through or search the object-group list and click the object-group that you want to delete.
+6. Scroll through or search the object-group list and click the object-group that you want to delete.
 
-6. Click **Delete Group** to make a request to remove the object-group.
+7. Click **Delete Group** to make a request to remove the object-group.
 
-7. Enter any additional information in the text box, and then click **Submit Ticket**.
+8. Enter any additional information in the text box, and then click **Submit Ticket**.
 
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/delete-object-group.png %}" />
 

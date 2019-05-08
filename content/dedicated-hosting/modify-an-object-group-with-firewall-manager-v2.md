@@ -5,8 +5,8 @@ title: Modify an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
 created_by: Trevor Becker
-last_modified_date: '2019-01-21'
-last_modified_by: Renee Rendon
+last_modified_date: '2019-05-08'
+last_modified_by: Stephanie Fillmon
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -29,26 +29,28 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 
 **Warning:** It’s important that you understand the impact of modifying an object-group. Incorrectly modifying an existing object-group that is already referenced in an access list has the potential to either create unwanted network access or remove critical access.
 
-1. Log in to the [MyRackspace Portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/) by using your username and password.
 
-2. In the top navigation bar, click **Network** > **Firewall Manager v2**.
+2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 
-3. In the navigation pane on the left side of the panel, click the firewall for which you want to see object-groups.
+3. Select **Network** > **Firewall Manager v2**.
 
-4. Under **Rules** in the navigation pane, click **IP Groups**.
+4. In the navigation pane on the left side of the panel, click the firewall for which you want to see object-groups.
+
+5. Under **Rules** in the navigation pane, click **IP Groups**.
 
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/ip-groups.png %}" />
 
-5. Scroll through or search the object-group list and click the group that you want to modify.
+6. Scroll through or search the object-group list and click the group that you want to modify.
 
-6. Click **Edit Group**.
+7. Click **Edit Group**.
 
-7. To add an entry, click **Add IP(s)** and add IP hosts or subnet ranges to the group. For instructions, see [Add an object-group](/how-to/create-an-object-group-with-firewall-manager-v2).
+8. To add an entry, click **Add IP(s)** and add IP hosts or subnet ranges to the group. For instructions, see [Add an object-group](/how-to/create-an-object-group-with-firewall-manager-v2).
 
    <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/modify-object-group.png %}" />
 
-8. To remove an entry, click on the minus (-) symbol to the right of the object-group entry.
+9. To remove an entry, click on the minus (-) symbol to the right of the object-group entry.
 
-9. Click **Save Changes**.
+10. Click **Save Changes**.
 
 Firewall Manager v2 interacts with your firewall and modifies the configuration. This typically takes about 30 seconds, depending on the size of your firewall's configuration.

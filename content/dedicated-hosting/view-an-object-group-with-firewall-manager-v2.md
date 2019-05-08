@@ -5,8 +5,8 @@ title: View an object-group with Firewall Manager v2
 type: article
 created_date: '2018-07-10'
 created_by: Trevor Becker
-last_modified_date: '2019-01-21'
-last_modified_by: Renee Rendon
+last_modified_date: '2019-05-08'
+last_modified_by: Stephanie Fillmon
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -27,17 +27,19 @@ In Firewall Manager v2, object-groups are referred to as *IP groups*. You can vi
 
 ### View object-groups
 
-1. Log in to the [MyRackspace Portal](https://my.rackspace.com/portal/auth/login) by using your Rackspace account number, username, and password.
+1. Log in to the [MyRackspace Portal](https://login.rackspace.com/) by using your username and password.
 
-2. In the top navigation bar, click **Network** > **Firewall Manager v2**.
+2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
 
-3. In the navigation pane on the left side of the panel, click the firewall for which you want to see object-groups.
+3. Select **Network** > **Firewall Manager v2**.
 
-4. Under **Rules** in the navigation pane, click **IP Groups**.
+4. In the navigation pane on the left side of the panel, click the firewall for which you want to see object-groups.
+
+5. Under **Rules** in the navigation pane, click **IP Groups**.
 
     <img src="{% asset_path dedicated-hosting/firewall-manager-v2-object-groups/ip-groups.png %}" />
 
-5. Scroll through or search the object-group list and click the appropriate object-group. The contents of the object-group are automatically displayed.
+6. Scroll through or search the object-group list and click the appropriate object-group. The contents of the object-group are automatically displayed.
 
 Firewall Manager v2 organizes the object-groups in case-sensitive alphabetical order. Therefore, object-group names with uppercase letters are displayed before those with lowercase letters. If you can’t locate an object-group, search for the object-group by using your browser’s search function.
 
