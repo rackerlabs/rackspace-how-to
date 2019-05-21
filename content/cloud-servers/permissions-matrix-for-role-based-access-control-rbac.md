@@ -51,4 +51,3 @@ Account service | Admin | Observer
 [Billing services](/how-to/detailed-permissions-matrix-for-billing-services) | Yes | Yes
 [Payment services](/how-to/detailed-permissions-matrix-for-billing-services) | Yes | Yes
 [Support tickets](/how-to/detailed-permissions-matrix-for-support-tickets) | Yes | Yes
-
