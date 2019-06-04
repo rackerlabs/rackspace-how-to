@@ -1,11 +1,11 @@
 ---
 permalink: configuring-basic-security/
-audit_date:
+audit_date: '2019-06-04'
 title: Configure basic security
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2016-06-20'
+last_modified_date: '2019-06-04'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -427,7 +427,7 @@ the symptoms to determine what might be wrong.
 
 The incorrect configuration of SSH, sudo, or iptables could cause you to
 be locked out of your system.  If this occurs, log in to the The
-Rackspace Cloud Control Panel and use the Web Console or Rescue Mode to
+Rackspace Cloud Control Panel and use the Emergency Console or Rescue Mode to
 repair the configurations.
 
 These are the basics of connecting to a Linux Cloud Server and setting
