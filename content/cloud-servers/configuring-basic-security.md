@@ -83,15 +83,16 @@ for applicable OnMetal steps.
 
 4.  When you are finished adding this line, exit, confirm, and save the
     file as follows:
-    a.  Press **Ctrl-X** to exit.
-    b.  Press **y** to confirm the changes.
-    c.  Press **Enter** to save the file as `/etc/sudoers.tmp`.
+    
+    a. Press **Ctrl-X** to exit.
+    b. Press **y** to confirm the changes.
+    c. Press **Enter** to save the file as `/etc/sudoers.tmp`.
 
-        **Note**: While working in the nano editor, the backspace/delete
-        key works unexpectedly, deleting characters in front of the
-        cursor rather than behind it. You can resolve this issue by
-        editing the `/etc/nanorc` file (with nano, for example) and
-        either uncommenting the following line or adding it:
+       **Note**: While working in the nano editor, the backspace/delete
+       key works unexpectedly, deleting characters in front of the
+       cursor rather than behind it. You can resolve this issue by
+       editing the `/etc/nanorc` file (with nano, for example) and
+       either uncommenting the following line or adding it:
 
             set rebinddelete
 
