@@ -24,3 +24,15 @@ If you’re going to make Domain Name System (DNS) changes, we suggest lowering 
 Generally, we recommend a TTL of 24 hours (86,400 seconds). However, if you are planning to make DNS changes, you should lower the TTL to 5 minutes (300 seconds) at least 24 hours in advance of making the changes. After the changes are made, increase the TTL back to 24 hours.
 
 **Note**: If DNS is used for failover, then you should probably keep the TTL at approximately 5 minutes all the time.
+
+Change your TTL by using the following steps:
+
+1. Log in to the Cloud Contol Panel (URL).
+2. Select **Rackspace Cloud** in the top navigation bar.
+3. Select **Network > Cloud DNS**.
+   A list of your domains displays.
+4. Select the domain that you want to change the TTL for and click it to open it.
+5. In the upper-left corner, open the **Actions** menu and select **Edit Time to Live (TTL)**.
+6. In the window that opens, enter the TTL that you want to use. 
+   You can select minutes or seconds for the units for the TTL.
+7. Click **Save TTL**.
