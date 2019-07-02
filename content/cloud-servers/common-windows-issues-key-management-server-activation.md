@@ -14,40 +14,69 @@ product_url: cloud-servers
 **Problem**: Periodic activation requests to the Key Management Server (KMS)
 are rejected and the operating system shows as unlicensed.
 
-**Cause**: Windows cannot locate the KMS after changing the time zone of the
-cloud server. As a result, your server's system clock does not sync with the
-KMS.
+**Cause**: There are two main causes of this issue. (1) Windows cannot locate the KMS and (2) The server's clock differs from the KMS's by more than four hours.
 
-**Resolution**: You must re-sync your cloud server with the KMS server:
+**Resolution (1)**: Ensure that the Windows Server is configured to use the correct KMS server:
+  Locate the appropriate KMS server in the following list.
+  <table>
+     <tr>
+       <th>Data center</th>
+       <th>KMS Server</th>
+     </tr>
+     <tr>
+       <td>ORD (Chicago)</td>
+       <td>winactivate.ord1.servers.rackspacecloud.com</td>
+     </tr>
+     <tr>
+       <td>DFW (Dallas)</td>
+       <td>winactivate.dfw1.servers.rackspacecloud.com</td>
+     </tr>
+     <tr>
+       <td>IAD (Ashburn)</td>
+       <td>winactivate.iad3.servers.rackspacecloud.com</td>
+     </tr>
+     <tr>
+       <td>LON (London)</td>
+       <td>winactivate.lon3.servers.rackspacecloud.com</td>
+     </tr>
+     <tr>
+       <td>HKG (Hong Kong)</td>
+       <td>winactivate.hkg1.servers.rackspacecloud.com</td>
+     </tr>
+     <tr>
+       <td>SYD (Sydney)</td>
+       <td>winactivate.syd2.servers.rackspacecloud.com</td>
+     </tr>
 
-1. Log in to your cloud server as administrator by clicking
+
+1a. Log in to your cloud server as administrator by clicking
    **Start > All Programs > Accessories**. Then, right-click **Command
    Prompt** and select **Run as Administrator**.
 
-2. Confirm that you can ping the Rackspace KMS server by running the following command:
+1b. Confirm that you can ping the Rackspace KMS server by running the following command:
 
-        ping kms.rackspace.com
+        ping kms-server-from-table-above 
 
-   **Note**: If there is a reply, move on to step 3. No reply means that there
+   **Note**: If there is a reply, move on to step 1c. No reply means that there
    is an interface, hardware, or routing issue. We recommend the following
    article for help resolving the issue: [Update ServiceNet routes on cloud
    servers](/how-to/updating-servicenet-routes-on-cloud-servers/)
 
-3. Set the KMS manually within the registry:
+1c. Set the KMS manually within the registry:
 
-        slmgr.vbs /skms kms.rackspace.com:1688
+        slmgr.vbs /skms kms-server-from-table-above:1688
 
-4. Request activation from the KMS:
+1d. Request activation from the KMS:
 
         slmgr.vbs /ato
 
     If you recieve the error  ``0xC004F074 The Key
-    Management Server (KMS) is unavailable``, skip to step 9
+    Management Server (KMS) is unavailable``, skip to step 2
 
-5. If the device does not activate then the server may be set to MAK activation instead of KMS activation.
+1e. If the device does not activate then the server may be set to MAK activation instead of KMS activation.
     To confirm which activation method is set on the device, run the following command:
 
-        SLMGR -dlv
+        slmgr -dlv
 
     Look for the **Product Key Channel** setting. **Volume:GVLK** means the device is set to **KMS activation**,
     **Volume:MAK** means the device is set to **MAK** activation.
@@ -62,7 +91,7 @@ KMS.
 
      <img src="{% asset_path cloud-servers/common-windows-issues-key-management-server-activation/mak.png %}" />
 
-6. If your device is set to **MAK activation** then you should set the device back to **KMS activation**.
+1f. If your device is set to **MAK activation** then you should set the device back to **KMS activation**.
     First find and take note of the appropriate KMS client setup key from Microsoft: [KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx)
 
     To find wich Server edition you are running, run the following command and look for the section labelled **OS name**:
@@ -74,25 +103,21 @@ KMS.
         PS C:\Users\Administrator> systeminfo | findstr OS
         OS Name:                   Microsoft Windows Server 2012 R2 Datacenter
 
-7. Set the device to **KMS acivation** using the key found in the  previously referenced article and entering the following command:
+1g. Set the device to **KMS acivation** using the key found in the  previously referenced article and entering the following command:
 
         slmgr /ipk %key%
 
     Make sure to replace **%key%** with the key from the Microsoft document.
 
-8. To activate the device, run the below command:
+1h. To activate the device, run the below command:
 
         slmgr.vbs /ato
 
-9. If step 4 returned the error ``0xC004F074 The Key
-   Management Server (KMS) is unavailable``, run the following command:
+**Resolution (2)**: If step 1d above returned the error ``0xC004F074 The Key
+   Management Server (KMS) is unavailable``, the time on the cloud server is drastically different than
+     what is on the KMS
 
-        w32tm /resync
-
-10. If the time on the cloud server is drastically different than
-     what is on the KMS, the re-sync will fail.  At this point, you should
-     either set the time manually or configure the server to use an NTP
-     instance over the Internet.
+2a. At this point, you should configure the server to use an NTP time source by executing the appropriate command.
 
      <table>
      <tr>
@@ -125,12 +150,12 @@ KMS.
      </tr>
      </table>
 
-11. After the time is synced up, attempt each of the following commands:
+2b. After the time is synced up, attempt each of the following commands:
 
         w32tm /resync
 
         slmgr.vbs /ato
 
-12. You must open UDP port 123 to allow the sync.
+2c. You must open UDP port 123 to allow the sync.
 
-13. Make sure your firewall allows outbound connections to TCP port 1688.
+2d. Make sure your firewall allows outbound connections to TCP port 1688.
