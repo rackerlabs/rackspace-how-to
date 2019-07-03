@@ -47,7 +47,7 @@ are rejected and the operating system shows as unlicensed.
        <td>SYD (Sydney)</td>
        <td>winactivate.syd2.servers.rackspacecloud.com</td>
      </tr>
-
+</table>
 
 1a. Log in to your cloud server as administrator by clicking
    **Start > All Programs > Accessories**. Then, right-click **Command
