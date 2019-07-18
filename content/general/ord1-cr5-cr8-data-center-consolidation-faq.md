@@ -58,7 +58,7 @@ team to establish any specific requirements for the move. For example, let us
 know if you have a specific order in which your devices should be turned off or
 brought back online.
 
-2.	Rackspace will run non-disruptive audits on your devices prior to the
+2.	Rackspace will run non-disruptive audits on your devices before the
 migration date to ensure that we have the necessary access to your devices to
 run our shutdown scripts and identify issues that could impede a speedy return
 to service.
@@ -142,13 +142,13 @@ night:
 disk corruption issues by running a check disk (`chkdsk`). Doing so prevents
 any forced `chkdsk` operations when your server is turned on.
 - Fully install any pending Microsoft&reg; Windows&reg; updates before the scheduled
-migration. If updates stop us from being able to gracefully turn off your servers,
+migration. If updates stop us from being able to turn off your servers gracefully,
 the downtime for the entire move group could be extended.
 - Perform a test reboot of your servers before the migration to ensure that
 applications and services start correctly. You can schedule reboots from the
 MyRackspace Portal.
 
-### I would like to run a full backup before my migration. Can this be arranged?
+### I want to run a full backup before my migration. Can this be arranged?
 
 Because it may not complete in time, we do not recommend that you initiate a
 full backup just before the migration. Approximately two hours before the
@@ -189,7 +189,7 @@ downtime.
 No. Migration move dates are grouped together due to cabinet and IP address
 locations.
 
-### Who should I contact if I have more questions about the migration?
+### Whom should I contact if I have more questions about the migration?
 
 Contact us in any of the following ways:
 
