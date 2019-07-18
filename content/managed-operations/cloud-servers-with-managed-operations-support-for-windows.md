@@ -5,8 +5,8 @@ title: Cloud Servers with Managed Operations support for Windows
 type: article
 created_date: '2011-03-16'
 created_by: David Hendler
-last_modified_date: '2018-09-04'
-last_modified_by: Chris Moyer
+last_modified_date: '2019-07-18'
+last_modified_by: Cat Lookabaugh
 product: Managed Operations
 product_url: managed-operations
 ---
@@ -22,13 +22,16 @@ with Managed Operations support.
 ### Operating systems
 
 The Managed Operations spheres of support include the following
-operating systems for Windows cloud servers:
+operating systems for all Windows cloud servers:
 
 - [Windows Server 2008 with Service Pack
  R2](http://technet.microsoft.com/library/dd349801)
 
 - [Windows Server 2012 with Service Pack
  R2](http://technet.microsoft.com/en-US/windowsserver/hh534429)
+ 
+For OnMetal Windows cloud servers, the Managed Operations spheres of support also includes the following
+operating system:
 
 - [Windows Server 2016](https://docs.microsoft.com/en-us/windows-server/windows-server)
 
