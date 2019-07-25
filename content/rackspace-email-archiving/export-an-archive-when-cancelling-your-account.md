@@ -29,22 +29,22 @@ for preserving your archive after account cancellation.
 
 |Archive options |Time Required | Cost | Technical Difficulty |
 |---|---|---|---|
-| Transfer to Sonian | No time required | No transfer cost | No technical work |
+| Transfer to Barracuda | No time required | No transfer cost | No technical work |
 | Self export the archive | Days or weeks | No cost | Difficult to complete |
 | Bulk archive export request | Weeks | Priced per GB exported | Moderate technical work after receiving the export |
 
-### Migrate your archive using Sonian (recommended)
+### Migrate your archive using Barracuda&reg; (recommended)
 
-Archiving services are provided by Rackspace’s partner, Sonian Inc. Sonian's
+Archiving services are provided by Rackspace’s partner, Barracuda Inc. Barracuda's
 cloud email archiving solution is compatible with all of leading email service
 providers such as Office 365, Gmail, and Exchange.
 
 This option requires no additional work. You maintain uninterrupted access to
 all archive data and attachments.
 
-To move archiving support to Sonian directly, simply click
-[Transfer to Sonain](https://www.barracuda.com/products/cloudarchive/rackspace),
-complete the short form on the page that follows, and Sonian will contact you
+To move archiving support to Barracuda directly, simply click
+[Transfer to Barracuda](https://www.barracuda.com/products/cloudarchive/rackspace),
+complete the short form on the page that follows, and Barracuda will contact you
 to ensure a seamless transition of your existing archive to your new mail service.
 
 ### Export you own archive
