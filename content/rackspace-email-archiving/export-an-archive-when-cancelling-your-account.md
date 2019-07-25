@@ -5,8 +5,8 @@ title: Export an archive before cancelling a Cloud Office account
 type: article
 created_date: '2017-10-17'
 created_by: William Loy
-last_modified_date: '2019-06-05'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-07-25'
+last_modified_by: William Loy
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
