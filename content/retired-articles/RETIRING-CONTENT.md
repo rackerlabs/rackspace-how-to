@@ -39,7 +39,7 @@ by using the @ht-review tag.
 
 6. If there any images associated with the article, locate the image or folder of images in the assets/img/<product>/<article>
     directory and delete the directory of images for the article.
-    
+
 7. Commit the changes and create a pull request.
 
 After the pull request is created, post a link in the #how-to slack channel for review and merge.
@@ -94,9 +94,12 @@ You need to install a JSON validation tool before entering the redirect.
 
 1. In your local clone of the nexus-control repo, create a branch for your changes and check out that branch.
 
-2. In Atom, open `nexus-control/config/rewrites.d/support.rackspace.com.json`.
+2. In Atom, open `nexus-control/config/rewrites.d/support.rackspace.com.json`,
+`nexus-control/config/rewrites.d/support-revs.staging.deconst.org.json`,
+`nexus-control/config/rewrites.d/support.staging.deconst.org.json`, and
+`nexus-control/config/rewrites.d/support.test.deconst.org.json`.
 
-3. Add the rewrite at the end of the file, substituting your article details.
+3. Add the rewrite at the end of each file, substituting your article details.
 
   ```json
   {
