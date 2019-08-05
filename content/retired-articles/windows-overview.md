@@ -5,10 +5,8 @@ title: Windows overview
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-14'
-last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_date: '2019-08-05'
+last_modified_by: Cat Lookabaugh
 ---
 
 ### Getting Started
