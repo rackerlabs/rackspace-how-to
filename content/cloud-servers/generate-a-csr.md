@@ -5,7 +5,7 @@ title: Generate a certificate signing request
 type: article
 created_date: '2018-10-23'
 created_by: Stephanie Fillmon
-last_modified_date: '2018-12-21'
+last_modified_date: '2019-08-13'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -127,55 +127,19 @@ After you have generated the CSR, you can submit it to a CA to purchase an SSL c
 
 ### Cloud Control Panel
 
-Rackspace provides the CSR Generator for generating a CSR. The CSR Generator shows you the CSRs that you currently have and lets you create new CSRs with a simple form. After you have entered your details, the generator combines them with your private key so that you can submit the combined encoded information to a CA.
+After you send a ticket requesting a CSR, Rackspace provides you with a CSR. 
 
-When you are done with the generator, you can return to the Cloud Control Panel by clicking any of the terms in the top navigation or by going to [login.rackspace.com](https://login.rackspace.com) and selecting **Rackspace Cloud** from the drop-down product menu in the top navigation bar.
+#### Request a CSR
 
-#### Access the CSR Generator
+To request a CSR, use the following steps:
 
-Access the CSR Generator [directly](https://csrgenerator.rackspace.com) or through the control panel by using the following steps:
-
-1. Log in to the [Cloud Control Panel](https://login.rackspace.com) and select **Rackspace Cloud** from the drop-down product menu in the top navigation bar.
-2. In the top navigation bar, click **Servers > Cloud Servers**.
-3. Click the name of the server for which you want to generate a CSR.
-4. In the right-hand **Managing Your Server** section under **Help me with**, click **Generate a CSR**.
-
-The generator lists your existing CSRs, if you have any, organized by domain name.
-
-#### Generate a CSR
-
-1. Click **Create CSR**.
-
-2. Enter the following information, which will be associated with the CSR:
-
-   | Field | Explanation | Example |
-   | --- | --- | --- |
-   | Domain Name | The fully qualified domain name to which the certificate applies. The domain names **example.com** and **www.example.com** are distinct from each other, so be sure to submit your request for the right domain. If you want to secure both domains, you can use the **Alt Names** field.  If you are purchasing a wildcard certificate, use **\*.example.com**. | example.com |
-   | Alt Names | *(Optional)* Additional domains that you want to add to the request. Each CA treats these differently, and the CA might charge for additional names. You can submit a comma-separated list. | www.example.com, secure.example.com |
-   | Email Address | *(Optional)* A contact email address for the certificate. | support@example.com |
-   | Organization Name | The exact legal name of your organization. The CA might seek to confirm that your organization is real and legally registered, so don't abbreviate words that aren't abbreviated in the organization's legal name. | Example Inc. |
-   | Organizational Unit |  *(Optional)* The branch of your organization that is making the request. | Marketing |
-   | City | The city where your organization is legally located. Do not abbreviate the city name. | San Antonio |
-   | State or Province | The state or province where your organization is legally located. Do not abbreviate the state or province name. | Texas |
-   | Country | Choose your country from the drop-down menu. The two-letter ISO abbreviation for your country is included in the CSR. | United States |
-   | Private Key Bit Length | Key sizes smaller than 2048 are considered insecure and might not be accepted by a CA. | 1024,2048,4096 |
-   | Hashing Algorithm | Both algorithms are currently trusted in mainstream browsers and offer industry recommended security.  SHA-512 requires additional CPU processing. | SHA-256, SHA-512 |
-
-   **Note:** You cannot use the following characters in the **Organization Name** or **Organizational Unit** fields: `< > ~ ! @ # $ % ^ * / \ ( ) ? . , &`
-
-3. After you have entered all the required information, click **Create CSR**.
-
-It can take between 5 and 60 seconds for the CSR to be generated.  You might need to refresh the page that displays your CSRs before the new CSR is listed.
-
-#### View CSR details
-
-When CSR has been generated, you can click its UUID (unique identifier) in the CSR list to view its details screen.
-
-This screen displays the information that you provided, the text of the CSR, and its associated private key.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com).
+2. In the top navigation bar, click **Account > Account Management**.
+3. Select **Generate Certificate Signing Request (CSR)** from the list of common ticket requests, fill in the details, and submit the ticket.
 
 #### Submit the CSR to the CA
 
-The text in the **Certificate Request** field is the CSR. It contains encoded details of the CSR and your public key.
+After CSR has been generated and sent to you, look for the **Certificate Request** field is the CSR, which contains encoded details of the CSR and your public key.
 
 To request your SSL certificate, copy the **Certificate Request** text and submit it to your CA. Include all the text, including the **BEGIN** and **END**  lines at the beginning and end of the text block.
 
