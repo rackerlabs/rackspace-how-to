@@ -10,6 +10,7 @@ permalink: /
 
 			<div class="filter-product-type">
 				<ul>
+				  <li><a id="getting-started" class="inactive">Getting Started</a></li>
 					<li><a id="cloud-ctrl" class="inactive">Cloud Hosting</a></li>
 					<li><a id="office-ctrl" class="inactive">Cloud Office</a></li>
 					<li>
@@ -22,8 +23,24 @@ permalink: /
 			</div>
 		</div>
 	</div>
+
 	<div class="container">
-		<div class="content home product-type product-type-cloud" id="cloud-display">
+	  <div class="content home product-type product-type-gs" id="gs-display">
+	    <div class="row">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id orci sed eros porttitor volutpat eget eget eros. Nunc ut pharetra massa, eu consequat risus. Proin feugiat erat sit amet ex condimentum pretium. Nulla et feugiat diam. Quisque dignissim sollicitudin mi non placerat. Curabitur faucibus lacinia libero, quis efficitur nisi convallis sed. Praesent non porta orci. Donec imperdiet, leo a gravida faucibus, quam ex ullamcorper magna, vitae maximus nunc velit eget urna. In sit amet dolor in leo viverra porta. In hac habitasse platea dictumst.</p>
+			<br>
+			<br>
+			<aside class="cta">
+				<p class="button">
+					<a href="/how-to/getting-started-with-public-cloud/" id="email-button" class="banner-button">Get Started with Rackspace Public Cloud</a>
+				</p>
+			</aside>
+			</div>
+			</div>
+			</div>
+
+	<div class="container">
+		<div class="content home product-type product-type-cloud inactive" id="cloud-display">
 		   <div class="row">
 			   <h3>Rackspace Managed Security</h3>
 			   <div class="twelve columns">
