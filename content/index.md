@@ -27,8 +27,7 @@ permalink: /
 	<div class="container">
 	  <div class="content home product-type product-type-gs" id="gs-display">
 	    <div class="row">
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id orci sed eros porttitor volutpat eget eget eros. Nunc ut pharetra massa, eu consequat risus. Proin feugiat erat sit amet ex condimentum pretium. Nulla et feugiat diam. Quisque dignissim sollicitudin mi non placerat. Curabitur faucibus lacinia libero, quis efficitur nisi convallis sed. Praesent non porta orci. Donec imperdiet, leo a gravida faucibus, quam ex ullamcorper magna, vitae maximus nunc velit eget urna. In sit amet dolor in leo viverra porta. In hac habitasse platea dictumst.</p>
-			<br>
+	    <p>With all the services that the cloud offers, it can be difficult to figure out where to start. Whether you want to build a webserver for a content management system, host an email server, or create a system backup, there are a few services that are essential to building an effect cloud.<br><br>The getting started guides help you figure out which services you need to create, in the most effective order, to get your cloud up and running.</p>
 			<br>
 			<aside class="cta">
 				<p class="button">
