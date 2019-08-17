@@ -29,10 +29,9 @@ Install the MySQL server by using the Ubuntu package manager:
 
 The installer installs MySQL and all dependencies.
 
-After installation is complete, the `mysql_secure_installation`
-utility runs. This utility prompts you to define the mysql root password
-and other security related options, including removing remote access
-to the root user and setting the root password.
+After installation is complete, you should run the mysql_secure_installation utility. This utility prompts you to define the mysql root password and other security related options, including removing remote access to the root user and setting the root password.
+
+    sudo mysql_secure_installation utility
 
 ### Allow remote access
 
@@ -43,6 +42,7 @@ is running on the same server.
 
 Run the following command to allow remote access to the mysql server:
 
+    sudo ufw enable
     sudo ufw allow mysql
 
 ### Start the MySQL service
@@ -51,14 +51,28 @@ After the installation is complete, you can start the database service by
 running the following command. If the service is already started, a message
 informs you that the service is already running:
 
-    systemctl start mysql
+    sudo systemctl start mysql
 
 ### Launch at reboot
 
 To ensure that the database server launches after a reboot, run the following
 command:
 
-    systemctl enable mysql
+    sudo systemctl enable mysql
+
+### Configure interfaces
+
+MySQL, by default is no longer bound to ( listening on ) any remotely accessible interfaces.
+Edit the "bind-address" directive in /etc/mysql/mysql.conf.d/mysqld.cnf:
+
+    bind-address		= 127.0.0.1 ( The default. )
+    bind-address		= XXX.XXX.XXX.XXX ( The ip address of your Public Net interface. )
+    bind-address		= ZZZ.ZZZ.ZZZ.ZZZ ( The ip address of your Service Net interface. )
+    bind-address		= 0.0.0.0 ( All ip addresses. )
+
+Restart the mysql service.
+
+    sudo systemctl restart mysql
 
 ### Start the mysql shell
 
@@ -142,7 +156,7 @@ The following example is the output for the preceding query:
     | debian-sys-maint | localhost | *27E7CA2445405AB10C656AFD0F86AF76CCC57692 |
     +------------------+-----------+-------------------------------------------+
 
-Users are associated with a host, specifically, the host to which they connect.
+Users are associated with a host, specifically, the host from which they connect.
 The root user in this example is defined for **localhost**, for the IP address
 of **localhost**, and the hostname of the server.
 You'll usually need to set a user for only one host, the one from which you
