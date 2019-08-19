@@ -13,15 +13,15 @@ product_url: cloud-servers
 
 ### Initial considerations
 
-Consider the following items as you plan a cloud-to-cloud migration:
+Consider the following items as you plan a cloud-to-cloud migration.
 
 #### Plan ahead because DNS changes are not automatic
 
-If your current cloud server, the origin server, is not behind a load balancer, the IP address will change. This means you must update the Domain Name server (DNS) to point to a new IP. You should make sure to set the time to live (TTL) record to 5 minutes and then wait 24 hours to ensure that the change has propagated out properly. After that, any DNS changes you make should take effect within 5 minutes.
+If your current cloud server, the origin server, is not behind a load balancer, the IP address changes. This change means you must update the Domain Name server (DNS) to point to a new IP. You should make sure to set the time-to-live (TTL) record to 5 minutes and then wait 24 hours to ensure that the change propagates out properly. After that, any DNS changes you make should take effect within 5 minutes.
 
 #### Server purpose
 
-Does the origin server host web applications, email, or databases? Does it do one thing or handle a variety of tasks? A good initial assessment,done in advance, can save you a last-minute panic when you flip the switch between the origin server and the new, or destination, server. Be sure to identify you store the data, the configuration files, and other important data. The more you know about your environment heading into the migration, the smoother it will be.
+Does the origin server host web applications, email, or databases? Does it do one thing or handle a variety of tasks? A good initial assessment, done in advance, can save you a last-minute panic when you flip the switch between the origin server and the new, or destination, server. Be sure to identify where you store the data, the configuration files, and other important data. The more you know about your environment heading into the migration makes for a smoother migration.
 
 #### Test the migration
 
@@ -45,7 +45,7 @@ If you require more than 160 GB (the maximum disk size for a General Purpose fla
 
 When you are setting up Cloud Block Storage volumes, check the sizes of the directories on your origin server. This information helps you plan the data organization on the destination server, such as what data goes on the system disk and what data you should store on the additional volumes.
 
-On Linux, you can determine the disk space that files use and subdirectories in the current directory by running the following command:
+On Linux, you can determine the disk space that files use and the subdirectories in the current directory by running the following command:
 
     du -hs *
 
@@ -59,7 +59,7 @@ After you know which data to copy to your system disk and which to copy to an at
 
 When you create the destination server, consider your storage requirements as well as the memory, CPU, and network requirements.
 
-If you have more data than fits on the destination server’s system disk,decide whether you want to use one or more data disks (I/O flavor only),or attach Cloud Block Storage volumes to the server.
+If you have more data than fits on the destination server’s system disk, decide whether you want to use one or more data disks (I/O flavor only), or attach Cloud Block Storage volumes to the server.
 
 When choosing the size of your destination server, consider your current needs and any scaling you might need to do in the future.
 
@@ -78,7 +78,7 @@ After you create your server, prepare any attached data disks or Cloud Block Sto
 
 If you’ve attached Cloud Block Storage volumes, see [Prepare your Cloud Block Storage volume](https://support.rackspace.com/how-to/prepare-your-cloud-block-storage-volume/) for more information.
 
-For instructions on formatting and mounting data disks on I/O-optimized servers, see the following article: [Prepare data disks on a Linux Cloud Servers](https://support.rackspace.com/how-to/preparing-data-disks-on-linux-cloud-servers/)
+For instructions on formatting and mounting data disks on I/O-optimized servers, see [Prepare data disks on a Linux Cloud Servers](https://support.rackspace.com/how-to/preparing-data-disks-on-linux-cloud-servers/).
 
 If you are setting up attached volumes in a software RAID on Linux, see [the Linux Software-RAID HOWTO](http://www.tldp.org/HOWTO/Software-RAID-HOWTO.html) for instructions.
 
@@ -106,10 +106,10 @@ For more information about `rsync`, see [Back up your files with rsync](https://
 
 #### Application-specific options
 
-Other applications might have their own means of facilitating data migration. For example, to migrate a database, you could make the destination server a slave of the origin database to automatically replicate your data to the destination server. You can find information on how to do mysql master-slave replication [here](https://support.rackspace.com/how-to/set-up-mysql-master-slave-replication/).
+Other applications might have their own means of facilitating data migration. For example, to migrate a database, you could make the destination server a slave of the origin database to automatically replicate your data to the destination server. You can find information on how to do MySQL&reg; master-slave replication [here](https://support.rackspace.com/how-to/set-up-mysql-master-slave-replication/).
 
 ### Post-migration tasks
 
-After all your data is on the destination server, test your application thoroughly to ensure it works as expected in the destination environment. As mentioned at the start of this article, we encourage clients to power down the origin server but not to delete it for one to seven days. This gives you time to determine if you have missed anything in your migration that, for example, was using an IP rather than DNS to resolve to the origin server. If after seven days, nothing has broken and you've noticed no issues, it should be safe to delete the origin server.
+After all your data is on the destination server, test your application thoroughly to ensure it works as expected in the destination environment. As mentioned at the start of this article, we encourage clients to power down the origin server but not to delete it for one to seven days. This practice gives you time to determine if you have missed anything in your migration. For example, that an IP address rather than DNS was used to resolve to the origin server. If after seven days, nothing has broken and you've noticed no issues, it should be safe to delete the origin server.
 
 If you haven’t done so already, implement a backup plan on the destination server to prevent significant data loss in case of a catastrophe.
