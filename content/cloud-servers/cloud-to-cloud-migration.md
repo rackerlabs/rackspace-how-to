@@ -17,15 +17,15 @@ Consider the following items as you plan a cloud-to-cloud migration:
 
 #### Plan ahead because DNS changes are not automatic
 
-If your current cloud server, the origin server, is not behind a load balancer, the IP address will change. This means you must update the Domain Name server (DNS) to point to a new IP. You should make sure to set the time to live (TTL) record to 5 minutes and then wait 24 hours to ensure that the change has propogated out properly. After that, any DNS changes you make should take effect within 5 minutes.
+If your current cloud server, the origin server, is not behind a load balancer, the IP address will change. This means you must update the Domain Name server (DNS) to point to a new IP. You should make sure to set the time to live (TTL) record to 5 minutes and then wait 24 hours to ensure that the change has propagated out properly. After that, any DNS changes you make should take effect within 5 minutes.
 
 #### Server purpose
 
-Does the origin server host web applications, email, or databases? Does it do one thing or handle a variety of tasks? A good initial assessment,done in advance, can save you a last minute panic when you flip the switch between the origin server and the new, or destination, server. Be sure to identify you store the data, the configuration files, and other important data. The more you know about your environment heading into the migration, the smoother it will be.
+Does the origin server host web applications, email, or databases? Does it do one thing or handle a variety of tasks? A good initial assessment,done in advance, can save you a last-minute panic when you flip the switch between the origin server and the new, or destination, server. Be sure to identify you store the data, the configuration files, and other important data. The more you know about your environment heading into the migration, the smoother it will be.
 
 #### Test the migration
 
-One advantage to doing a migration in the cloud is how quickly and easily you can spin a server up or down. We strongly encourage you to power the origin server down after the migration rather than deleting it right away. Leave it powered down for 24 hours to a week. If your website and applications are running as expected, then your migration was probably completed successfully. However, if turning off the origin server leads to problems, it means some processes still depend on the old server. You can bring the origin server back up and identify what you missed and migrate it properly.
+One advantage of doing a cloud migration is how quickly and easily you can spin a server up or down. We strongly encourage you to power the origin server down after the migration rather than deleting it right away. Leave it powered down for 24 hours to a week. If your website and applications are running as expected, then your migration was probably completed successfully. However, if turning off the origin server leads to problems, it means some processes still depend on the old server. You can bring the origin server back up and identify what you missed and migrate it properly.
 
 ### Perform the work
 
