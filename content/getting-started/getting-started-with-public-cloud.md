@@ -13,10 +13,10 @@ product_url: getting-started
 
 This article guides you through creating, managing, building, and growing your Rackspace Public Cloud account. This guide is designed remove the complexity of getting started on your first Public Cloud projects. We recommend completing tasks in the following order:
 
-1. [Create an account](#create)
-2. [Manage and secure an account](#manage)
-3. [Build your cloud](#build)
-4. [Grow your cloud](#grow)
+1. [Create an account](#create-an-account)
+2. [Manage and secure an account](#manage-and-secure-an-account)
+3. [Build your cloud](#build-your-cloud)
+4. [Grow your cloud](#grow-your-cloud)
 
 #### Create an account
 
