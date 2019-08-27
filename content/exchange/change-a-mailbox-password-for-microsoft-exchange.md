@@ -5,7 +5,7 @@ title: Change a Microsoft Exchange mailbox password
 type: article
 created_date: '2017-06-08'
 created_by: William Loy
-last_modified_date: '2017-11-29'
+last_modified_date: '2019-08-27'
 last_modified_by: William Loy
 product: Microsoft Exchange
 product_url: exchange
@@ -21,6 +21,8 @@ This article describes how to change the password for a Hosted Microsoft Exchang
 - **Tools required**: Users need their current mailbox password; administrators need Cloud Office Control Panel access
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology/#cloud-office-terminology).
+
+**Note:** If you are using an Office 365 Microsoft Exchange mailbox, see the [Office 365 documentation](/how-to/office-365/) for assistance with this task.
 
 ### Change your password through the User Control Panel
 

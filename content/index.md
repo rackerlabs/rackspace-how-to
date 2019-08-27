@@ -10,6 +10,7 @@ permalink: /
 
 			<div class="filter-product-type">
 				<ul>
+				  <li><a id="getting-started" class="inactive">Getting Started</a></li>
 					<li><a id="cloud-ctrl" class="inactive">Cloud Hosting</a></li>
 					<li><a id="office-ctrl" class="inactive">Cloud Office</a></li>
 					<li>
@@ -22,8 +23,23 @@ permalink: /
 			</div>
 		</div>
 	</div>
+
 	<div class="container">
-		<div class="content home product-type product-type-cloud" id="cloud-display">
+	  <div class="content home product-type product-type-gs" id="gs-display">
+	    <div class="row">
+	    <p>With all the services that the cloud offers, it can be difficult to figure out where to start. Whether you want to build a web server for a content management system, host an email server, or create a system backup, there are a few services that are essential to building an effective cloud.<br><br>The getting started guides help you figure out which services you need to create, in the most effective order, to get your cloud up and running.</p>
+			<br>
+			<aside class="cta">
+				<p class="button">
+					<a href="/how-to/getting-started-with-public-cloud/" id="email-button" class="banner-button">Get Started with Rackspace Public Cloud</a>
+				</p>
+			</aside>
+			</div>
+			</div>
+			</div>
+
+	<div class="container">
+		<div class="content home product-type product-type-cloud inactive" id="cloud-display">
 		   <div class="row">
 			   <h3>Rackspace Managed Security</h3>
 			   <div class="twelve columns">

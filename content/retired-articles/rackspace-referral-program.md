@@ -7,8 +7,6 @@ created_date: '2013-09-23'
 created_by: Rackspace Support
 last_modified_date: '2018-01-30'
 last_modified_by: Nate Archer
-product: undefined
-product_url: undefined
 ---
 
 The [Rackspace Referral Program](https://partners.rackspace.com/English/referrals.aspx)

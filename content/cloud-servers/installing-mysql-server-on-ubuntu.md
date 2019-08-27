@@ -5,8 +5,8 @@ title: Install MySQL Server on Ubuntu
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2019-07-23'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2019-08-23'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -29,9 +29,14 @@ Install the MySQL server by using the Ubuntu package manager:
 
 The installer installs MySQL and all dependencies.
 
-After installation is complete, you should run the mysql_secure_installation utility. This utility prompts you to define the mysql root password and other security related options, including removing remote access to the root user and setting the root password.
-
+If the secure installation utility does not launch automatically after the 
+installation completes, enter the following command:
+     
     sudo mysql_secure_installation utility
+
+This utility prompts you to define the mysql root password
+and other security-related options, including removing remote access
+to the root user and setting the root password.
 
 ### Allow remote access
 
@@ -132,7 +137,7 @@ The following list describes the parts of that command:
 
  - **SELECT** tells MySQL that you are asking for data.
  - **User**, **Host**, **authentication_string** tells MySQL what fields you want it to
-   look in. Fields are categories for the data in a table. In this case you
+   look in. Fields are categories for the data in a table. In this case, you
    are looking for the username, the host associated with the username, and
    the encrypted password entry.
  - **FROM mysql.user** " tells MySQL to get the data from the **mysql**
@@ -159,7 +164,7 @@ The following example is the output for the preceding query:
 Users are associated with a host, specifically, the host from which they connect.
 The root user in this example is defined for **localhost**, for the IP address
 of **localhost**, and the hostname of the server.
-You'll usually need to set a user for only one host, the one from which you
+You usually need to set a user for only one host, the one from which you
 typically connect.
 
 If you're running your application on the same computer as the MySQL
