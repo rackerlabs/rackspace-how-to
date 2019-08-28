@@ -45,7 +45,7 @@ Hub and GuardDuty on the master account and all other accounts that are in
 scope, including configuration of the master-member relationship.
 
 Security Hub will be configured to ingest security findings from GuardDuty. It
-will also be configured to deliver the events to Rackspace SIEM (Security
+will also be configured to deliver the events to the Rackspace SIEM (Security
 Information and Event Management), a system that is used by our security
 specialists to monitor the security of customer environments 24/7/365.
 
