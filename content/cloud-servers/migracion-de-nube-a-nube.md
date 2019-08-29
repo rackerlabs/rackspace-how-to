@@ -24,7 +24,7 @@ que tenga un valor bajo (300 segundos / 5 minutos) y esperar al menos 24
 horas para que el cambio tome efecto. Este cambio asegura que cualquier
 cambio que hagas en tus DNS se propague por el sistema en 5 minutos o menos.
 
-#### Cuál es el propósito de éste servidor?
+#### ¿Cuál es el propósito de éste servidor?
 
 Es importante tomar tiempo para determinar qué función ejerce el
 servidor. ¿Es sólo para aplicaciones web? ¿Hospeda correo electrónico?
