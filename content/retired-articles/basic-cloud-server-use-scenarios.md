@@ -1,14 +1,12 @@
 ---
 permalink: basic-cloud-server-use-scenarios/
-audit_date:
+audit_date: '2019-09-10'
 title: Basic Cloud Server use Scenarios
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
+last_modified_date: '2019-09-10'
 last_modified_by: Stephanie Fillmon
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 ### Setting Up Websites
