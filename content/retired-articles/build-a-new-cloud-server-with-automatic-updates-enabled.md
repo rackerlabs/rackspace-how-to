@@ -7,8 +7,6 @@ created_date: '2018-10-16'
 created_by: Rackspace Support
 last_modified_date: '2018-10-25'
 last_modified_by: Cat Lookabaugh
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 Keeping your servers up to date with security fixes helps you to avoid server
