@@ -4,8 +4,8 @@ type: practice
 created_date: '2016-05-25'
 type: article
 created_by: Nate Archer
-last_modified_date: '2019-05-16'
-last_modified_by: Hiten Mistry
+last_modified_date: '2019-09-11'
+last_modified_by: Walter Stubbs
 product: undefined
 product_url: undefined
 ---
@@ -29,6 +29,8 @@ Yes
 Yes
 
 Somewhat
+Yes
+
 **Answer options**
 - Yes 
 - Somewhat
@@ -48,6 +50,7 @@ Somewhat Often
 Often
 
 Somewhat Often
+Often
 **Answer options**
 - Often
 - Somewhat often
@@ -65,6 +68,7 @@ Yes
 Yes
 
 Yes
+Yes
 **Answer options**
 - Yes
 - No
@@ -81,6 +85,7 @@ Yes
 Yes
 
 No
+Yes
 **Answer options**
 - Yes
 - No
@@ -92,11 +97,12 @@ I had to keep going back since there was no pause button but easy, 10 min traini
 Consideration for how people will come across this training; a lot of people will come from the one.rackspace wiki. Having links to this GitHub page along with next-steps on what to do to gain access (go to this GitHub proj and watch the training video, etc)
 Finally can update all this out of date documentation
 no
-Thanks!
+
 Video should be a bit slower or provide download slides
 
 This is a good way of helping others to contribute and learn a bit more about GITHub. Does require a bit of technical know-how!
-
+This was a lot more simple than I thought it was going to be, and it's invaluable! I knew absolutely nothing about GitHub before but now I feel I can tackle a lot in less than an hour. Thank you!
+Thanks!
 **Answer options**
 - Open ended
 
