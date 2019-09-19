@@ -7,9 +7,10 @@ created_date: '2013-12-04'
 created_by: Milton Prado
 last_modified_date: '2016-01-18'
 last_modified_by: Kyle Laffoon
-product: Rackspace Email
-product_url: rackspace-email
+
 ---
+
+(Retired by Cat L. 9/18.  Only 53 unique views in last 6 months)
 
 When you migrate your email from Google, it is important to note that
 Google email does not use subfolders. Instead, Google categorizes
