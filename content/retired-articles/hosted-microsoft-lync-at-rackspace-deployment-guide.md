@@ -7,9 +7,9 @@ created_date: '2014-10-20'
 created_by: Aaron Medrano
 last_modified_date: '2018-01-18'
 last_modified_by: William Loy
-product: Microsoft Skype for Business
-product_url: skype-for-business
 ---
+
+<!-- Retired 9/25/19 as per Aaron M.'s recommendation -->
 
 Hosted Microsoft Lync is a unified communications tool that offers
 secure instant messaging, video chat, file transfer, and presence to
