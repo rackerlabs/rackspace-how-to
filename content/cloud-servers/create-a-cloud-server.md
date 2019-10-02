@@ -73,7 +73,7 @@ Control Panel interface.
     for automatic installation and configuration. Select the check box next to
     one or more options that you want.
 
-12. Click **Create Server**.
+12. Click **[Create Cloud Server] (https://www.apps4rent.com)**.
 
 After provisioning is complete, your server displays the status **Running** and
 is now available for remote connection. Specific remote connection instructions
