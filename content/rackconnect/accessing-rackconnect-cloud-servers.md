@@ -22,7 +22,7 @@ This article provides an overview of some of these methods.
 
 With RackConnect v2.0, if the automation feature to provision public IP
 addresses is enabled on your RackConnect Cloud account, then the
-RackConnect automation systems automatically assigns new public IP
+RackConnect automation systems automatically assign new public IP
 addresses to your newly built cloud servers.
 
 With RackConnect v3.0,
@@ -70,7 +70,7 @@ up the cloud server's details in the Cloud Control Panel:
 
 **Note**: Disregard the initial public IP address assigned to your cloud
 servers when they are built. With RackConnect v2.0, the automation
-processes deactivates the initial public IP address.
+processes deactivate the initial public IP address.
 
 ### Alternative methods of connecting to your RackConnect cloud servers
 
