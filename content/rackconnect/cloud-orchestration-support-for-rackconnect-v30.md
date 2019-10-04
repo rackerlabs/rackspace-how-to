@@ -12,7 +12,7 @@ product_url: rackconnect
 ---
 
 Rackspace Cloud Orchestration support for RackConnect v3.0 enables you
-to build a stack of RackConnect v3.0 cloud servers and have them
+to build a stack of RackConnect v3.0 cloud servers. It has them
 automatically provisioned on your RackConnect v3.0 cloud network,
 assigned public IP addresses, and automatically added to your
 dedicated load balancer pools. When you use Cloud Orchestration, the
