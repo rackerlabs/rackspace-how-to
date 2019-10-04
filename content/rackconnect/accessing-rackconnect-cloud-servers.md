@@ -1,6 +1,6 @@
 ---
 permalink: accessing-rackconnect-cloud-servers/
-audit_date: '2018-03-28'
+audit_date: '2019-10-04'
 title: Accessing RackConnect cloud servers
 type: article
 created_date: '2012-08-21'
@@ -11,8 +11,7 @@ product: RackConnect
 product_url: rackconnect
 ---
 
-**Previous section:** [Managing RackConnect v2.0 network
-policies](/how-to/managing-rackconnect-v20-network-policies)
+**Previous section:** [Managing RackConnect v2.0 network policies](/how-to/managing-rackconnect-v20-network-policies)
 
 **Applies to:** RackConnect v3.0 and RackConnect v2.0
 
@@ -24,30 +23,32 @@ This article provides an overview of some of these methods.
 With RackConnect v2.0, if the automation feature to provision public IP
 addresses is enabled on your RackConnect Cloud account, then the
 RackConnect automation systems automatically assigns new public IP
-addresses to your newly built cloud servers. With RackConnect v3.0,
+addresses to your newly built cloud servers.
+
+With RackConnect v3.0,
 automation features are no longer available, but you can still provision
 public IP addresses to your cloud servers by using the RackConnect v3.0
 API. In either case, the public IP addresses assigned to your cloud
 servers are allocated out of one of your dedicated public IP address
-blocks. A NAT (network address translation) entry is then configured on
+blocks. A network address translation (NAT) entry is then configured on
 your RackConnect edge network device, which is a one-to-one association
 from the allocated dedicated public IP address to the cloud server's
 ServiceNet IP address, in the case of RackConnect v2.0, or to its cloud
 network IP address, in the case of RackConnect v3.0.
 
-You can use these dedicated public IP addresses to use SSH or RDP to
+You can use these dedicated public IP addresses to use Secure Shell (SSH) or
+Remote Desktop Protocol (RDP) to
 directly access your cloud servers, as long as access is allowed. Access
 might be allowed via network policies with RackConnect v2.0. With
 RackConnect v3.0, access might be allowed via firewall access list
 entries created by the Network Security Team or via the Firewall Manager
-feature available within the [MyRackspace
-portal](https://login.rackspace.com/).
+feature available within the [MyRackspace portal](https://login.rackspace.com/).
 
 You can view the IP addresses assigned to your cloud servers by querying
 the Cloud Servers API or by using one of the following methods.
 
-RackConnect v2.0 customers can look up the cloud server's details in the
-MyRackspace Portal as follows:
+RackConnect v2.0 customers can use the following instructions to look up the
+cloud server's details in the MyRackspace Portal:
 
 1. Log in to the [MyRackspace Portal](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Dedicated Hosting**.
@@ -56,8 +57,8 @@ MyRackspace Portal as follows:
 
    In the **Details** tab, the **IP Details** section lists the public IPv4 address.
 
-RackConnect v2.0 and v3.0 customers can look up the cloud server's details in the [Cloud Control
-Panel](https://login.rackspace.com/) as follows:
+RackConnect v2.0 and v3.0 customers can use the following instructions to look
+up the cloud server's details in the Cloud Control Panel:
 
 1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.

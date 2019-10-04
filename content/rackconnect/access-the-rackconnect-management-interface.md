@@ -1,6 +1,6 @@
 ---
 permalink: access-the-rackconnect-management-interface/
-audit_date: '2018-06-06'
+audit_date: '2019-10-04'
 title: Access the RackConnect Management Interface
 type: article
 created_date: '2012-08-21'
