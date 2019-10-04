@@ -29,8 +29,8 @@ more cloud accounts. For more information about configurations, see
 After you link your cloud accounts with your dedicated account, you can
 then *associate* a cloud account with a particular RackConnect v3.0
 configuration from within the MyRackspace Portal. After you associate a
-cloud account with a configurations, a ticket is automatically generated
-for us, and we will work with you to fully configure the cloud account for
+cloud account with a configuration, a ticket is automatically generated
+for us, and we work with you to fully configure the cloud account for
 use with RackConnect v3.0. See the
 [RackConnect v3.0 requirements](/how-to/rackconnect-v30-requirements)
 article for more details.
@@ -49,7 +49,7 @@ cloud account.
 
    <img src="{% asset_path rackconnect/associate-a-cloud-account-with-rackconnect-v30/RCv3-link-create-cloud-account_2.png %}" width="500" height="144" />
 
-4. Click the appropriate option, and follow the guide to complete the
+4. Click the appropriate option and follow the guide to complete the
    process.
 
 ### Associate a cloud account with a RackConnect v3.0 configuration
