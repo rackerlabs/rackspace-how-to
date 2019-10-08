@@ -1,12 +1,12 @@
 ---
 permalink: features-introduced-in-rackconnect-v20/
-audit_date:
+audit_date: '2019-10-08'
 title: Features introduced in RackConnect v2.0
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2016-09-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-10-08'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -30,7 +30,7 @@ security features:
     events**, which means that RackConnect picks up changes in your
     Cloud environment much faster
 
--   **A RackConnect Management Interface in the MyRackspace&reg; portal**,
+-   **A RackConnect Management Interface in the MyRackspace portal**,
     where you can perform the following tasks:
     -   Set RackConnect network policies.
     -   Manage cloud servers.
@@ -43,8 +43,8 @@ security features:
         software firewalls.
 
 -   **Managed software firewalls for cloud servers:**
-    -   Iptables for Linux
-    -   Advanced firewall for Windows
+    -   Iptables for Linux&reg;
+    -   Advanced firewall for Windows&reg;
 
 -   **Optional automation features:**
     -   Provision public IP addresses: Cloud servers are
