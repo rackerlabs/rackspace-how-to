@@ -21,15 +21,15 @@ completed the RackConnect Automation process and is fully deployed with RackConn
 You can use the RackConnect API to query RackConnect Automation status
 from any of your cloud servers. You can also use it to query the
 RackConnect Gateway IP, automation status, automation status details,
-and the automation features. If you want to use the
+and automation features. If you want to use the
 RackConnect API, see [RackConnect v2.0 API](/how-to/the-rackconnect-v20-api) for more details.
 
-### Using the Cloud Servers API to query your cloud servers’ metadata
+### Using the Cloud Servers API to query the metadata of your cloud servers
 
 You can also use the Cloud Servers API to query the RackConnect
 Automation status of your cloud servers. The benefit of using this
 method is that you do not need to query the status from the same
-server you want the status of.
+server from which you want the status.
 
 To use this method, query
 the Cloud Servers API and look for the metadata key named
@@ -75,12 +75,12 @@ username credentials for `<cloudUsername>` and `<cloudPassword>`:
     | python -m json.tool
 
 **Note:** The backslashes (\\) at the end of each line are optional and are
-    primarily there to improve readability (they basically mean that you
+    primarily there to improve readability (they mean that you
     are going to continue with this single command on the next line).
     You can place all the lines of a cURL command on a single line.
 
 The results of running this query display a ``"token"`` section, and
-you need to copy the ``"id"`` value in that section. The authentication token will look as follows:
+you need to copy the ``"id"`` value in that section. The authentication token looks as follows:
 
     "id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx"
 
@@ -118,8 +118,8 @@ their servers immediately after the RackConnect Automation completed.
 #### What was changed?
 
 For RackConnect customers with the Managed Operations service level,
-there are two distinct automation routines that run after a cloud server
-is built. Previously, automation for Managed Operations ran first,
+two distinct automation routines run after a cloud server
+builds. Previously, automation for Managed Operations ran first,
 followed by RackConnect Automation. We reversed the order of automation
 so that RackConnect runs first.
 
@@ -130,7 +130,7 @@ improve your RackConnect experience. By allowing
 RackConnect Automation to run first, we can more quickly and more
 reliably deliver a RackConnect cloud server to you.
 
-#### Who does this affect?
+#### Whom does this affect?
 
 This change affects all RackConnect customers with the Managed
 Operations service level.
@@ -139,7 +139,7 @@ For the limited set of customers who leverage their own configuration
 management scripts, note that RackConnect Automation runs first,
 followed by Managed Operations automation. We recommend that you
 adjust your post-build configuration management to note when Managed
-Operations automation is complete; this will be the new trigger to start
+Operations automation is complete. This becomes the new trigger to start
 any post-build configuration tasks that you want to run.
 
 #### How can I tell when Managed Operations post-build automation is complete?
@@ -158,4 +158,4 @@ For standard and workload-optimized cloud servers only, you can also
 obtain the Managed Operations post-build automation status via the Cloud
 Servers API.
 
-To accomplish this, you follow the same process described in the "Obtaining the metadata information via the Cloud Servers API (examples)" section, but this time, you find the metadata key value `"rax_service_level_automation"`. This metadata key will have a value of Pending, In Progress, Complete, Build Error, or Authentication Error, depending on the current status of the Managed Operations post-build automation process.
+To accomplish this, you follow the same process described in the "Obtaining the metadata information via the Cloud Servers API (examples)" section, but this time, you find the metadata key value `"rax_service_level_automation"`. This metadata key has a value of Pending, In Progress, Complete, Build Error, or Authentication Error, depending on the current status of the Managed Operations post-build automation process.
