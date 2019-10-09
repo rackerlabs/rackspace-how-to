@@ -16,7 +16,7 @@ cloud servers. You can assign one of the specific public IP
 addresses from the set to new RackConnect cloud servers at build time.
 These IP addresses are allocated out of your dedicated IP address space,
 just like normal RackConnect public IP addresses are, but with Auto NAT
-IP addresses, you now have the ability to select the specific IP address that is
+IP addresses, you can select the specific IP address that is
 assigned to a cloud server at build time.
 
 ### Requirements for using the RackConnect Auto NAT feature
@@ -27,7 +27,7 @@ assigned to a cloud server at build time.
     with the Auto NAT feature. Your Support team can help you set this
     up.
 - After your Auto NAT IP addresses have been allocated, your Support
-    team will provide you with a list of Auto NAT Public IP addresses
+    team provides you with a list of Auto NAT Public IP addresses
     that have been allocated to you.
 - When creating new cloud servers, you must use the Cloud Servers API
     to enter the metadata information required to assign an Auto NAT IP address
@@ -50,7 +50,7 @@ long as each cloud account has automation features enabled.
 
 ### Using the Auto NAT feature
 
-By using the Auto NAT feature, you now have the ability to effectively move a single public IP address across cloud servers as you provision and unprovision them. The Auto NAT feature assigns a designated IP address to a cloud server only during the initial build process, so the Auto NAT feature does *not* enable you to move an Auto NAT IP address between two cloud servers that are already in an active state.
+By using the Auto NAT feature, you can effectively move a single public IP address across cloud servers as you provision and un-provision them. The Auto NAT feature assigns a designated IP address to a cloud server only during the initial build process, so the Auto NAT feature does *not* enable you to move an Auto NAT IP address between two cloud servers that are already in an active state.
 
 The following scenario presents one possible method that you can use to move a single public IP address to a new cloud server by using the Auto NAT feature. Suppose that you have created a cloud server called MyAutoNAT-A and built it with an Auto NAT IP address of 10.A.A.A. You then decide to build a
 new server called MyAutoNAT-B, but you want it to use the Auto NAT IP address that is currently assigned to MyAutoNAT-A (10.A.A.A). You could perform the following steps:
