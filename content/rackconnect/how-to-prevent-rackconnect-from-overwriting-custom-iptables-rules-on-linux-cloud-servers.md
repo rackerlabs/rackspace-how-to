@@ -1,12 +1,12 @@
 ---
 permalink: how-to-prevent-rackconnect-from-overwriting-custom-iptables-rules-on-linux-cloud-servers/
-audit_date:
+audit_date: '2019-10-09'
 title: Prevent RackConnect from overwriting custom iptables rules on Linux cloud servers
 type: article
 created_date: '2013-01-26'
 created_by: Russell Lambert
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2019-10-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -25,7 +25,7 @@ policies.
 
 This article describes a method that advanced users can use to modify the
 default behavior of RackConnect Automation's software firewall
-management on Linux cloud servers to allow them to create their
+management on Linux&reg; cloud servers to allow them to create their
 own iptables rules.
 
 ### Target audience for this article

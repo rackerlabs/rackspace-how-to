@@ -1,12 +1,12 @@
 ---
 permalink: how-to-programmatically-determine-the-rackconnect-v20-automation-status-of-your-cloud/
-audit_date:
+audit_date: '2019-10-09'
 title: Programmatically determine the RackConnect v2.0 Automation status of your cloud servers
 type: article
 created_date: '2012-10-02'
 created_by: Juan Perez
-last_modified_date: '2016-09-13'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-10-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -116,6 +116,7 @@ for any customers who performed automated processes or configuration on
 their servers immediately after the RackConnect Automation completed.
 
 #### What was changed?
+
 For RackConnect customers with the Managed Operations service level,
 there are two distinct automation routines that run after a cloud server
 is built. Previously, automation for Managed Operations ran first,
@@ -123,12 +124,14 @@ followed by RackConnect Automation. We reversed the order of automation
 so that RackConnect runs first.
 
 #### Why was this change made?
+
 We determined that this change could reduce post-build automation failures and
 improve your RackConnect experience. By allowing
 RackConnect Automation to run first, we can more quickly and more
 reliably deliver a RackConnect cloud server to you.
 
 #### Who does this affect?
+
 This change affects all RackConnect customers with the Managed
 Operations service level.
 
@@ -141,11 +144,11 @@ any post-build configuration tasks that you want to run.
 
 #### How can I tell when Managed Operations post-build automation is complete?
 
-For Windows cloud servers, the following file is created when post-build automation is complete:
+For Windows&reg; cloud servers, the following file is created when post-build automation is complete:
 
 `C:\windows\temp\rs_managed_cloud_automation_complete.txt`
 
-For Linux cloud servers, the following file is created when post-build automation is complete:
+For Linux&reg; cloud servers, the following file is created when post-build automation is complete:
 
 `/tmp/rs_managed_cloud_automation_complete`
 
@@ -156,5 +159,3 @@ obtain the Managed Operations post-build automation status via the Cloud
 Servers API.
 
 To accomplish this, you follow the same process described in the "Obtaining the metadata information via the Cloud Servers API (examples)" section, but this time, you find the metadata key value `"rax_service_level_automation"`. This metadata key will have a value of Pending, In Progress, Complete, Build Error, or Authentication Error, depending on the current status of the Managed Operations post-build automation process.
-
-If you have any questions about RackConnect, Managed Operations, or this change, contact your Rackspace Support team.

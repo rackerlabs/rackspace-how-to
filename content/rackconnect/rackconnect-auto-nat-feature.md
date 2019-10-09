@@ -1,12 +1,12 @@
 ---
 permalink: rackconnect-auto-nat-feature/
-audit_date:
+audit_date: '2019-10-09'
 title: RackConnect Auto NAT feature
 type: article
 created_date: '2013-01-16'
 created_by: Juan Perez
-last_modified_date: '2014-10-21'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-10-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -49,6 +49,7 @@ long as each cloud account has automation features enabled.
 **Important:** If you try to assign an Auto NAT IP address that is already in use, the allocation process fails silently and reverts to allocating a normal (not Auto NAT) IP address to your cloud server.
 
 ### Using the Auto NAT feature
+
 By using the Auto NAT feature, you now have the ability to effectively move a single public IP address across cloud servers as you provision and unprovision them. The Auto NAT feature assigns a designated IP address to a cloud server only during the initial build process, so the Auto NAT feature does *not* enable you to move an Auto NAT IP address between two cloud servers that are already in an active state.
 
 The following scenario presents one possible method that you can use to move a single public IP address to a new cloud server by using the Auto NAT feature. Suppose that you have created a cloud server called MyAutoNAT-A and built it with an Auto NAT IP address of 10.A.A.A. You then decide to build a
@@ -68,9 +69,5 @@ that is still active.
 
 ### Additional information
 
-For details
-about the RackConnect automation features, see the
+For details about the RackConnect automation features, see the
 [RackConnect v2.0 automation features FAQ](/how-to/rackconnect-v20-automation-features-faq).
-
-If you have any questions regarding the RackConnect Auto NAT
-feature, contact your Support team.

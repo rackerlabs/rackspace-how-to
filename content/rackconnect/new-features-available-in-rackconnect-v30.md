@@ -1,12 +1,12 @@
 ---
 permalink: new-features-available-in-rackconnect-v30/
-audit_date:
+audit_date: '2019-10-09'
 title: New features available in RackConnect v3.0
 type: article
 created_date: '2014-08-25'
 created_by: Juan Perez
-last_modified_date: '2016-09-12'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-10-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---

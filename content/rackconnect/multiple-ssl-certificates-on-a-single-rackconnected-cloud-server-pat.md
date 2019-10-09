@@ -1,12 +1,12 @@
 ---
 permalink: multiple-ssl-certificates-on-a-single-rackconnected-cloud-server-pat/
-audit_date:
+audit_date: '2019-10-09'
 title: Multiple SSL certificates on a single RackConnect cloud server (PAT)
 type: article
 created_date: '2012-08-23'
 created_by: Juan Perez
-last_modified_date: '2014-10-03'
-last_modified_by: Jered Heeschen
+last_modified_date: '2019-10-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
