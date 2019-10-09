@@ -1,11 +1,11 @@
 ---
 permalink: managing-rackconnect-v20-network-policies/
-audit_date:
+audit_date: '2019-10-09'
 title: Managing RackConnect v2.0 network policies
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2018-10-25'
+last_modified_date: '2019-10-09'
 last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
@@ -78,8 +78,6 @@ are context sensitive, based on the access scenario that you choose.
 -   Selecting **Host** enables you to enter the IP address of the host
     to define.
 
-    <img src="{% asset_path rackconnect/managing-rackconnect-v20-network-policies/SampleNP.png %}" width="447" height="365" />
-
 **Important:** Destination port range entries are limited to 100 ports,
 and they have valid integer values between 0 and 65535 with a range of
 the form xxxxxx-xxxxxx.
@@ -94,11 +92,6 @@ portal to view the updated status indicators, which can have the following meani
 -   Blue = Deploying
 -   Red = Failed
 -   Yellow = Removing
-
-In the following image, the indicators are all green, which means that
-the network policies were successfully deployed.
-
-<img src="{% asset_path rackconnect/managing-rackconnect-v20-network-policies/Status.Indicator.png %}" width="700" />
 
 **Tip:** From the **Network Policies** tab, you can also apply a network
 policy *template*. Network policy templates provide a quick way to get

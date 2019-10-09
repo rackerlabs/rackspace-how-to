@@ -1,12 +1,12 @@
 ---
 permalink: getting-started-with-the-rackconnect-v30-api/
-audit_date:
+audit_date: '2019-10-09'
 title: Get started with the RackConnect v3.0 API
 type: article
 created_date: '2014-09-10'
 created_by: Juan Perez
-last_modified_date: '2019-01-25'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-10-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
@@ -37,7 +37,7 @@ active, you can use the RackConnect v3.0 API to add and remove public IP
 addresses from them at any time.
 
 **Note:** This walkthrough uses cURL commands to make the API calls.
-cURL is installed by default on many Linux distributions. If it is not
+cURL is installed by default on many Linux&reg; distributions. If it is not
 already installed on your computer, you can download and install it; versions are available for most operating systems.
 
 ### Obtain an authentication token through Identity

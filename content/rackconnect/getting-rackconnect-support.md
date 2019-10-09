@@ -1,12 +1,12 @@
 ---
 permalink: getting-rackconnect-support/
-audit_date:
+audit_date: '2019-10-09'
 title: Getting RackConnect support
 type: article
 created_date: '2012-08-21'
 created_by: Juan Perez
-last_modified_date: '2016-01-21'
-last_modified_by: Kelly Holcomb
+last_modified_date: '2019-10-09'
+last_modified_by: Stephanie Fillmon
 product: RackConnect
 product_url: rackconnect
 ---
