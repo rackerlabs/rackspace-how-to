@@ -37,7 +37,7 @@ policies](/how-to/managing-rackconnect-v20-network-policies).
 
 If you are unfamiliar with iptables syntax or how to write custom
 iptables rules in Linux, or if you do not have a pressing need to create
-and maintain your own iptables rules, it we recommend that you do not
+and maintain your own iptables rules, we recommend that you do not
 modify the default behavior of RackConnect Automation. [RackConnect
 network
 policies](/how-to/managing-rackconnect-v20-network-policies)
@@ -53,8 +53,8 @@ it checks for the existence of a file called
 slightly different method to update the iptables rules on the server.
 Instead of completely replacing the iptables filter rules, it rebuilds
 only the RackConnect created rules while preserving all other iptables
-rules. Because it merges RackConnect rules with custom rules, this new
-method is often referred to as the *merge method* (as opposed to the
+rules. Because it merges RackConnect rules with custom rules, we often
+refer to this new method as the *merge method* (as opposed to the
 traditional *clobber method*). To tell RackConnect Automation to use the
 merge method on a particular server, perform the following steps:
 
@@ -101,19 +101,19 @@ note.
 
 #### RackConnect rules always run before custom rules
 
-All RackConnect related ACCEPT/DENY rules are kept in filter chains
+RackConnect keeps all of its related ACCEPT/DENY rules in filter chains
 named `RS-RackConnect-*` (such as `RS-RackConnect-INBOUND`). The first
-rule of a primary iptables filter chain (such as `INPUT`) will always be
+rule of a primary iptables filter chain (such as `INPUT`) is always
 an unconditional jump to the relevant `RS-RackConnect-*` chain. **This
 jump rule needs to remain the first rule in the basic chains; otherwise,
 your custom rules might prevent RackConnect Automation from being able to
 log in to your server.**
 
 If you try to add iptables rules above this jump rule, RackConnect
-Automation will automatically move it back to the top of the list the
+Automation automatically moves it back to the top of the list the
 next time network policies affecting that server are updated. Because
 the merge method adds an unconditional RETURN statement to the end of
-each of the `RS-RackConnect-*` chains, iptables will automatically
+each of the `RS-RackConnect-*` chains, iptables automatically
 continue processing rules underneath the jump rule if none of the rules
 in the `RS-RackConnect-*` chain match.
 
@@ -121,14 +121,14 @@ in the `RS-RackConnect-*` chain match.
 
 All of the `RS-RackConnect-*` chains are rebuilt whenever network
 policies affecting a server are updated. As a result, any manual changes
-to a `RS-RackConnect-*` chain will be overwritten on the next update.
+to a `RS-RackConnect-*` chain are overwritten on the next update.
 
 #### RackConnect Automation saves iptables rules so they are restored on reboot
 
 Every time RackConnect Automation runs, it saves the current rules to the
 default system location for the Linux distribution running on that
-server, ensuring that they will be restored on reboot. Normally, this is
-desired behavior; after all, you don't want your server to be
+server, ensuring that they are restored on reboot. Normally, this is
+the desired behavior. After all, you don't want your server to be
 unprotected if it reboots. Occasionally, advanced users exploit the
 fact that iptables rules are held in memory until manually committed to
 disk in order to experiment with new rules, knowing that they can simply
@@ -159,7 +159,7 @@ If you created `/etc/rackconnect-allow-custom-iptables`, but it doesn't appear t
 
 -   RackConnect Automation has not updated iptables on the server since `/etc/rackconnect-allow-custom-iptables` was created.
 
-    RackConnect Automation creates a RETURN rule at the end of the `RS-RackConnect-*` chains only when it is operating in merge mode. If you have created the `/etc/rackconnect-allow-custom-iptables` file but RackConnect Automation has not yet updated iptables on your server, there will not be a RETURN rule and iptables will stop processing rules as soon as it reaches the end of the relevant `RS-RackConnect-*` chain. You can remedy the situation by forcing a software firewall refresh using the *create a temporary network policy* method detailed earlier in this article. As long as `/etc/rackconnect-allow-custom-iptables` exists, RackConnect Automation does not remove the custom rules that you have created; it simply adds the RETURN rule necessary for iptables to process them.
+    RackConnect Automation creates a RETURN rule at the end of the `RS-RackConnect-*` chains only when it is operating in merge mode. If you have created the `/etc/rackconnect-allow-custom-iptables` file, but RackConnect Automation has not yet updated iptables on your server, there is not a RETURN rule and iptables stop processing rules as soon as it reaches the end of the relevant `RS-RackConnect-*` chain. You can remedy the situation by forcing a software firewall refresh by using the *create a temporary network policy* method detailed earlier in this article. As long as `/etc/rackconnect-allow-custom-iptables` exists, RackConnect Automation does not remove the custom rules that you have created. It simply adds the RETURN rule necessary for iptables to process them.
 
 -   A RackConnect rule is already handling the packet.
 
