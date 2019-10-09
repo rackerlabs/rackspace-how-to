@@ -26,7 +26,7 @@ host `https:// www.example-domain.com` and `https://
 www.example-domain-2.com`, you could set up your network device as
 follows:
 
--   The Cloud server private IP address is 10.1.1.1.
+-   The cloud server private IP address is 10.1.1.1.
 -   DNS points `www.example-domain.com` to the public IP address 1.1.1.1.
 -   DNS points `www.example-domain-2.com` to the public IP address 1.1.1.2.
 -   The PAT entry on the network device points 1.1.1.1 port 443 to 10.1.1.1 port
@@ -36,7 +36,7 @@ follows:
 
 On your cloud server, you would configure your web server software (for example,
 Apache or IIS) to listen on ports 8443 and 8444. They could
-distinguish which site the encrypted traffic was destined for based on
-the unique port number.m
+distinguish the destination site for the encrypted traffic based on
+the unique port number.
 
 If you need help setting up PAT on your network device, contact your Dedicated Support team.
