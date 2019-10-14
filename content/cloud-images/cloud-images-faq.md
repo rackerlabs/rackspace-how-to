@@ -5,8 +5,8 @@ title: Cloud Images FAQ
 type: article
 created_date: '2014-01-14'
 created_by: Cloud Images
-last_modified_date: '2018-04-10'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-04-10'
+last_modified_by: Brian King
 product: Cloud Images
 product_url: cloud-images
 ---
@@ -123,26 +123,6 @@ with you. For instructions for accepting an image, consult the [Cloud Images
 v2 API
 documentation](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
 
-#### Can I share or accept an image in the Chicago region?
-
-If you are an image producer and want to share an image in the Chicago (ORD)
-region of the Rackspace cloud, be aware that the provisioning of
-cloud services in the ORD region is not available to recent
-customers. If you share an image with one of these customers, the sharing
-occurs without error from your perspective. However, if the consumer that you
-are sharing with doesn't have cloud services in ORD, they cannot see the image
-and cannot boot from it.
-
-Customers can determine if they have access to the ORD region in one of the following ways:
-
-1) Cloud Control Panel users can navigate to **Servers > Cloud Servers** and
-look for **Chicago (ORD)** as an option in the dropdown on the left.
-
-2) API users can look directly in their API service catalogs.
-
-To learn more about regions in the Rackspace cloud, see [Rackspace data
-centers and regions](/how-to/rackspace-data-centers-and-regions).
-
 #### What if someone shares an image with me that I don't want, or if I don't know the person?
 
 The process of image sharing requires you to accept the share request
@@ -184,18 +164,6 @@ you no longer have access to the image. If access to a particular
 image is important to you, create your own image of a server you've
 built from that image. You are the owner of the image that you create
 and can create new servers from that image.
-
-#### Some images have disappeared from my Compute v2 API (nova) image list. Where did they go?
-
-Images that were manually shared by Support previous to this API release
-have been put in a pending state. The nova client's `image-list` command
-originally displayed those images. However, in order to match the
-API's behavior, planned changes to the client cause it to display only images
-in an accepted state.
-
-To add those images back to your displayed images list, accept the
-images by using [the
-API](https://developer.rackspace.com/docs/cloud-images/v2/developer-guide/#image-sharing).
 
 #### Can I share an image across regions?
 
