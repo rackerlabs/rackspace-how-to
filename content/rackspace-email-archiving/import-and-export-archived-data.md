@@ -5,8 +5,8 @@ title: Import and export archived data
 type: article
 created_date: '2015-05-18'
 created_by: Beau Bailey
-last_modified_date: '2019-04-23'
-last_modified_by: Catherine Richardson
+last_modified_date: '2019-10-18'
+last_modified_by: Joe Brooks
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -38,8 +38,8 @@ Rackspace Archiving account:
     in Cloud
     Office](/how-to/export-archive-search-results-in-cloud-office).
 
-    **Note:** You can export searches with a maximum of 15,000
-results and a total size of 3.5 GB.
+    **Note:** You can export searches with a maximum of 30,000
+results and a total size of 20 GB.
 
 -   If you want to get a bulk export of your archived data, we can
     perform the export and provide you with links from which you can
@@ -75,7 +75,7 @@ range, or mailbox users.
 You can also provide search names based on the following criteria:
 
 -   Date
--   Search term
+-   Keywords
 -   Subject
 -   Sender
 -   Recipient
