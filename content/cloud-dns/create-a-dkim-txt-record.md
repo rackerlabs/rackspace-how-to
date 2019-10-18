@@ -1,12 +1,12 @@
 ---
 permalink: create-a-dkim-txt-record/
-audit_date: '2017-03-06'
+audit_date: '2019-10-18'
 title: Create a DKIM TXT record
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '20189-03-12'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-10-18'
+last_modified_by: Stephanie Fillmon
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -28,11 +28,11 @@ SPF records.
 The process of setting up DKIM involves the tasks that are detailed
 in the following steps:
 
-1.  Choose a DKIM selector. 
+1.  Choose a DKIM selector.
 
 2.  Generate a public-private key pair.
 
-3.  Publish the selector and public key by creating a DKIM TXT record. 
+3.  Publish the selector and public key by creating a DKIM TXT record.
 
 4.  Attach the token to each outgoing email.
 
@@ -46,41 +46,57 @@ Selectors enable multiple keys under a domain name, which can provide separate s
 
 A selector can be anything you want, such as a word, number, or a string of letter and numbers.
 
+For example, if you choose `oct2019` for your selector, the domain name would
+become `oct2019._domain.example.com`.
+
+### Before you begin
+
+Before you log in to the control panel and create a DKIM record, there are
+a couple things that you need:
+
+1. Choose a simple, user-defined text string to be your DKIM selector. The
+   selector is appended to the domain name to help identify the DKIM public
+   key. See the previous section for more information about choosing a
+   DKIM selector.
+
+2. Generate a public-private key pair by using a tool such as ssh-keygen on
+   Linux or PuTTYgen on Windows. For help creating key pairs, see
+   [Generate RSA keys with SSH by using PuTTYgen](https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen).
+
+
 ### Create a DKIM TXT record
 
-1.  Choose a simple, user-defined text string to be your DKIM selector. The selector is appended 
-    to the domain name to help identify the DKIM public key.
-    
-2.  Generate a public-private key pair by using a tool such as ssh-keygen on
-    Linux or PuTTYgen on Windows. For help creating key pairs, see 
-    [Generate RSA keys with SSH by using PuTTYgen](https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen).
-    
-3.  Log in to the [Cloud Control Panel](https://login.rackspace.com/).
+Use the following steps to create a DKIM TXT record in the Cloud Control
+Panel:
 
-4.  In the top navigation bar, click **Select a Product > Rackspace Cloud**.
+1. Log in to the [Cloud Control Panel](https://login.rackspace.com/).
 
-5.  Select **Networking > Cloud DNS**.
+2. In the top navigation bar, click **Select a Product > Rackspace Cloud**.
 
-6.  Click the gear icon next to the name of an existing domain and
-    select **Add DNS Record**.
+3. Select **Networking > Cloud DNS**.
 
-7.  In the popup dialog box, select **TXT Record** as the record type.
+4. Click the gear icon next to the name of an existing domain and
+   select **Add DNS Record**.
 
-8.  In the **Hostname** text box, enter the selector text string that you chose in Step 1 followed 
-    by the literal string `._domainkey`. For example, if you use the default as the text
-    string, you enter `default._domainkey` in the **Hostname** text box.
+5. In the popup dialog box, select **TXT Record** as the record type.
 
-9.  Expand the **Text** box by dragging the corner, and then enter the following information, 
-    pasting the public key that you generated in Step 2 after the `p=` prompt:
+6. In the **Hostname** text box, enter the selector text string that you chose
+   in Step 1 followed by the literal string `._domainkey`. For example, if you
+   use the default as the text string, you enter `default._domainkey` in the
+   **Hostname** text box.
 
-        v=DKIM1; p=yourPublicKey
+7. Expand the **Text** box by dragging the corner, and then enter the
+   following information, pasting the public key that you generated in the
+   previous section after the `p=` prompt:
 
-    When you're finished, the TXT record looks similar to the following
-    example:
+       v=DKIM1; p=yourPublicKey
 
-    <img src="{% asset_path cloud-dns/create-a-dkim-txt-record/Add%20DKIM%20DNS%20TXT%20Record.png %}" alt="DKIM DNS TXT Record" />
+   When you're finished, the TXT record looks similar to the following
+   example:
 
-10.  Click **Add Record**.
+   <img src="{% asset_path cloud-dns/create-a-dkim-txt-record/Add%20DKIM%20DNS%20TXT%20Record.png %}" alt="DKIM DNS TXT Record" />
+
+8.  Click **Add Record**.
 
 The DKIM TXT record is added to your domain.
 
