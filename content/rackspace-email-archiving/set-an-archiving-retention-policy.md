@@ -5,7 +5,7 @@ title: Set an Archiving Retention Policy
 type: article
 created_date: '2018-03-01'
 created_by: William Loy
-last_modified_date: '2019-10-21'
+last_modified_date: '2019-10-22'
 last_modified_by: Joe Brooks
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
