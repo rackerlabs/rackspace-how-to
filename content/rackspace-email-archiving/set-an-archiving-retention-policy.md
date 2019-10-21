@@ -5,8 +5,8 @@ title: Set an Archiving Retention Policy
 type: article
 created_date: '2018-03-01'
 created_by: William Loy
-last_modified_date: '2018-03-28'
-last_modified_by: William Loy
+last_modified_date: '2019-10-21'
+last_modified_by: Joe Brooks
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -31,28 +31,23 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/domains_archive.png %}" />
 
-3. Select the domain for which you want to enable a retention policy, and then click **Manage My Archive**. 
+3. Select the domain for which you want to enable a retention policy, and then click **Manage My Archive**.
 
    The dashboard for the domain's archive displays.
 
    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/manage_archive.png %}" />
 
-4. In the top right corner, click **Admin**.
+4. In the top right corner, click the <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Gear_icon.png %}" /> icon.
 
-   <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/admin_tab.png %}" />
 
 5. In the top navigation bar, click **Policies**.
 
-   <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/policies.png %}" />
+   <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Set_an_Archiving_Retention_Policy(1).png %}" />
 
-6. Check the box to the right of **Enable Retention Policy**. Set the duration that you want items to be retained in the email archive.
+6. Once the policy has been set, click **Update**.
 
     **Warning:** Any items older than the set retention duration will be immediately purged from the archive and be unrecoverable. Items that later exceed the retention duration will also be permanently deleted.
 
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/enable_retention.png %}" />
+    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Set_an_Archiving_Retention_Policy(2).png %}" />
 
-7. Click **OK** to confirm that you want to implement the retention policy.
-
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/warning.png %}" />
-
-Archive retention polices should be created only for specific reasons. There is no need to keep your archive under a certain data limit should you choose to not have a retention policy.
+    **Note:** Archive retention polices should be created only for specific reasons. There is no need to keep your archive under a certain data limit should you choose to not have a retention policy.
