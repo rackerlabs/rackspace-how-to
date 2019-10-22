@@ -37,12 +37,12 @@ To create an archive audit report, perform the following steps:
 2.  In the upper-right corner of the window, click <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Gear_icon.png %}" /> icon.
 
 3.  On the **Reports** line, click **Manage**.
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_audit_report(1).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/create-an-archive-audit-report/Create_an_archive_audit_report(1).png %}" />
 
 4.  Under the **Audits** sections, click **+New**.
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_audit_report(2).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/create-an-archive-audit-report/Create_an_archive_audit_report(2).png %}" />
 
 5.  After entering the guidelines for the Audit, click **Create**.
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_audit_report(3).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/create-an-archive-audit-report/Create_an_archive_audit_report(3).png %}" />
 
 6.  After the Audit is created, you can download it as a .CSV file.
