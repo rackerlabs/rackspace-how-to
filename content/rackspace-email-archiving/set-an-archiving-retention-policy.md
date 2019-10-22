@@ -11,7 +11,7 @@ product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
-This article describes how to set a retention policy in your email archive. This feature can be useful for companies that enact polices that only allow the retention of email records for a certain duration of time.
+This article describes how to set a retention policy in your email archive. This feature can be useful for companies that enact policies that only allow the retention of email records for a certain duration of time.
 
 
 ### Prerequisites
@@ -27,7 +27,7 @@ For more information about prerequisite terminology, see [Cloud Office support t
 ### Set an archive retention policy
 
 1. Log in to the [Cloud Office Control Panel](https://cp.rackspace.com/) by using your Rackspace Cloud Office admin ID and password.
-2. Scroll down to the **Domains** section. In the far right column of this section, click **Email Archiving**.
+2. Scroll down to the **Domains** section. In the far-right column of this section, click **Email Archiving**.
 
    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/domains_archive.png %}" />
 
@@ -37,17 +37,17 @@ For more information about prerequisite terminology, see [Cloud Office support t
 
    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/manage_archive.png %}" />
 
-4. In the top right corner, click the <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Gear_icon.png %}" /> icon.
+4. In the top-right corner, click the <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Gear_icon.png %}" /> icon.
 
 
 5. In the top navigation bar, click **Policies**.
 
    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Set_an_Archiving_Retention_Policy(1).png %}" />
 
-6. Once the policy has been set, click **Update**.
+6. After you set the policy, click **Update**.
 
-    **Warning:** Any items older than the set retention duration will be immediately purged from the archive and be unrecoverable. Items that later exceed the retention duration will also be permanently deleted.
+    **Warning:** Any items older than the set retention duration are immediately purged from the archive and are unrecoverable. Items that later exceed the retention duration are also permanently deleted.
 
     <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Set_an_Archiving_Retention_Policy(2).png %}" />
 
-    **Note:** Archive retention polices should be created only for specific reasons. There is no need to keep your archive under a certain data limit should you choose to not have a retention policy.
+    **Note:** Archive retention policies should be created only for specific reasons. There is no need to keep your archive under a certain data limit should you choose not to have a retention policy.
