@@ -5,8 +5,8 @@ title: Manage Archive Search Results
 type: article
 created_date: '2015-05-19'
 created_by: Beau Bailey
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2019-10-22'
+last_modified_by: Joe Brooks
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -20,60 +20,91 @@ reviewed, filtered, tagged, and exported.
 To access and manage search results, perform the following steps after
 [Logging into the Archive Manager](/how-to/log-in-to-the-archive-manager):
 
-1.  There are two dashboards for top level administrators: **Search**
-    and **Admin**. Click **Admin**, located in the upper right corner of
-    the screen, to access the Admin dashboard.
+(**Note**: This section is available to user with **Administrator**, **Compliance Officer**, or **Search Administrator** permissions.)
 
-2.  Click the **Search** tab.
+1.  On the left side of the page, click the **Searches** tab.
 
-3.  Click the **Name** of a saved search.
+2.  Then click **Run**.
 
-There are many options available when reviewing the results of a search.
-These options include:
+    <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(1).png %}" />
 
-### Find in results ###
 
-To narrow search results, click **Filter My Results** at the top of the
-window.
+### Filter results ###
 
-<img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/Manage%20Archive%20Search%20Results%201.png %}" width="858" height="220" />
+To narrow search results, click **Filter** at the top of the message list.
 
-#### Multiple views ####
+  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(2).png %}" />
 
--   Expand all - Shows the subject, sender, recipients, date, and full
-    message contents. In the **Expand All** view, you can also click the
-    **Text view** or **Original view** in the message to see full text
-    including headers or the original appearance of the email.
--   Collapse all - Shows the subject, sender, recipients, and date.
--   Mini view - Shows the subject, sender, and date.
 
 #### Sorting ####
 
-Click the appropriate option by which to sort: **Date**, **Relevance**,
-**Sender**, **Subject**, or **\# of Attachments**.
+Click the appropriate option by which to sort: **Date**, **Sender** (A-Z or Z-A), **Subject**, or **Attachments**.
 
-<img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/Manage%20Archive%20Search%20Results%202.png %}" width="413" height="27" />
+  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(3).png %}" />
+
 
 #### Tags ####
 
-Predefined system tags can be added to messages by clicking the
-**Save**, **Reviewed**, **Starred**, or **Attention** buttons. To add
-your own predefined tag (created under the **Settings** tab), click
-**TAGS**. You can also enter a new tag name in the blank under **TAGS,**
-and then click the **Save** button.
+Follow the steps listed below to tag a specific messages for review.
 
-#### Comments ####
+1.   Click the specific message.
+2.   On the right, click **Tag this email**.
 
-Comments can be added to any message. To add a comment, click **Add
-comment**.
+    <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(4).png %}" />
 
-#### Message Actions ####
+3.   Once the message has been reviewed, click **Needs Review** to remove the tag.    
 
-Messages can be exported from the search results. Options include the
-following:
+     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(5).png %}" />
 
--   PDF - Create and download a PDF of the message.
--   Download - Download the message in EML format. This file can be opened
-    by Microsoft Outlook and other email clients.
--   Send - Forward the message as an attachment.
--   Recover - Send the message back to your mailbox.
+
+#### Holds ####
+
+This option can be enabled for individual or multiple messages.
+
+To place a hold on an individual message, please follow the steps listed below:
+
+1.   Select the message then click **Hold** on the right.
+2.   Select a Hold type, then click **Save**.
+
+     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(6).png %}" />
+
+3. 	 To remove hold on an individual message, simply click **Hold** (**#**), uncheck the previous selection(s) then click **Save** when finished.
+
+To place a hold on multiple messages, please follow the steps listed below:
+
+1.   Check the box on left of each desire messages.
+
+     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(7).png %}" />
+
+2.   Then click the <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/Gear_icon.png %}" /> icon, select the hold type, then click **Add**.
+
+      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(8).png %}" />  
+
+      **Note**: Messages placed on **Hold** will be identifiable by a <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/Red_lock_icon.png %}" /> icon.
+
+3.    To remove these holds, check the boxes for the messages that have been identified.
+
+      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(9).png %}" />    
+
+4.    Click the <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/black_lock_icon.png %}" /> icon, check the boxes for the holds that are no longer needed, then click **Remove**.    
+
+      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(10).png %}" />
+
+
+#### Send Message as an Attachment ####
+
+To send a copy of a message as an attachment simply select the message that needs to be sent and click **Send**. Then enter the recipient’s address and click **Send**.
+
+**Note**: The recipient will receive the attachment in .EML format and we recommend using a mail client to view the information.
+
+  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(11).png %}" />
+
+
+#### Download the message ####
+
+
+If necessary, the message can be downloaded directly for the results page.
+
+**Note**: The message must be viewed in a mail client and can be forwarded as an individual email or sent as an attachment.)
+
+<img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(12).png %}" />
