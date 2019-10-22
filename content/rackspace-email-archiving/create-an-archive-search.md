@@ -26,28 +26,28 @@ archive. This article describes the steps for creating an archive search in the 
 
 3\. Click the **+New** tab.
 
-  **Note**: This function is available for users with **Administrator**, **Compliance Officer**, **Search Administrator** permissions only.
+  **Note**: This function is available for users with **Administrator**, **Compliance Officer**, and **Search Administrator** permissions only.
 
-4\. Click **Simple** or **Advanced** search tab.
+4\. Click the **Simple** or **Advanced** search tab.
 
 -   **Simple** - Search for keywords, sender(from), recipient (to, cc, bcc), date, attachment, size, and hold.
 
--   **Advanced** - Search by sender, recipient, subject, body, and attachment with greater fine-tuning control. For more information, see “**Advanced Search**” section below.
+-   **Advanced** - Search by sender, recipient, subject, body, and attachment with greater fine-tuning control. For more information, see the **Advanced search** section below.
 
-5\. Enter the search terms, then click **Search**.
+5\. Enter the search terms, and then click **Search**.
 
-6\. When the search returns the results, click **Save**.
+6\. When the search returns the results click **Save**.
 
-7\. Fill out the **Basic Information** section, click **Save**.
+7\. Fill out the **Basic Information** section and click **Save**.
 
   **Note**: Only a **Search Name** is required to proceed.
 
--   In this section, users can be designated to have access to the search.
+-   In this section, you can designate users to have access to the search.
 
 
 ### Advanced search ###
 
-Sometimes a search may require additional search criteria, in these cases, it is often best to use the **Advanced** option. The more specific information given, the better and more accurate the results will be.
+Sometimes a search might require additional search criteria. In these cases, it is often best to use the **Advanced** option. The more specific the information you give, the better and more accurate the results are.
 
 <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(2).png %}" />
 
@@ -57,10 +57,10 @@ Enter as much available search information as possible in the fields under **Add
 <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(3).png %}" />
 
 
-**Note**: If a more granular search is required, after selecting **Add Criteria**, click **Add Group**. Add more search details for each search criteria then click **Search** at the bottom.
+**Note**: If you require a more granular search, after selecting **Add Criteria**, click **Add Group**. 
 
 <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(4).png %}" />
 
-Add more search details for each search criteria then click **Search** at the bottom.
+Add more search details for each search criteria, and then click **Search** at the bottom.
 
 <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(5).png %}" />
