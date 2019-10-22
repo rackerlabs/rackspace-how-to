@@ -92,7 +92,7 @@ Use the following steps to add multiple users to the Archive Manager:
 
 6.  Click **Open** to specify the CSV file.
 
-7.  The users are added, and the Welcome Emailis sent to the specified address.
+7.  The users are added, and the Welcome Email is sent to the specified address.
 
    **Note**: When bulk adding users, the End User role is assigned by default.
 
