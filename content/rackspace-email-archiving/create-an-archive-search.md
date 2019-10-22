@@ -22,7 +22,7 @@ archive. This article describes the steps for creating an archive search in the 
 
 2\. On the left side of the screen, click **Search**.
 
-  <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(1).png %}" />
+  <img src="{% asset_path rackspace-email-archiving/create-an-archive-search/Create_an_archive_search(1).png %}" />
 
 3\. Click the **+New** tab.
 
@@ -49,18 +49,18 @@ archive. This article describes the steps for creating an archive search in the 
 
 Sometimes a search might require additional search criteria. In these cases, it is often best to use the **Advanced** option. The more specific the information you give, the better and more accurate the results are.
 
-<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(2).png %}" />
+<img src="{% asset_path rackspace-email-archiving/create-an-archive-search/Create_an_archive_search(2).png %}" />
 
 
 Enter as much available search information as possible in the fields under **Add Criteria**.
 
-<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(3).png %}" />
+<img src="{% asset_path rackspace-email-archiving/create-an-archive-search/Create_an_archive_search(3).png %}" />
 
 
-**Note**: If you require a more granular search, after selecting **Add Criteria**, click **Add Group**. 
+**Note**: If you require a more granular search, after selecting **Add Criteria**, click **Add Group**.
 
-<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(4).png %}" />
+<img src="{% asset_path rackspace-email-archiving/create-an-archive-search/Create_an_archive_search(4).png %}" />
 
 Add more search details for each search criteria, and then click **Search** at the bottom.
 
-<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(5).png %}" />
+<img src="{% asset_path rackspace-email-archiving/create-an-archive-search/Create_an_archive_search(5).png %}" />
