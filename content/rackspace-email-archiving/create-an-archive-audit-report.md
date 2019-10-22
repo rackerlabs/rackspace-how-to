@@ -19,13 +19,13 @@ activity, users with Administrator or Compliance Officer permissions can create 
 -   User management
 -   Logins
 -   Exports/Downloads
--   Search Activity
--   Tags Activity
--   Holds Activity
--   Purge
--   Settings and Policies
+-   Search activity
+-   Tags activity
+-   Holds activity
+-   Purges
+-   Settings and policies
 
-**Note:** Reports can be downloaded directly from the Archive Manager.
+**Note:** You can download reports directly from the Archive Manager.
 
 To create an archive audit report, perform the following steps:
 
@@ -39,10 +39,10 @@ To create an archive audit report, perform the following steps:
 3.  On the **Reports** line, click **Manage**.
     <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_audit_report(1).png %}" />
 
-4.  Under the **Audits** sections, click **+New**
+4.  Under the **Audits** sections, click **+New**.
     <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_audit_report(2).png %}" />
 
 5.  After entering the guidelines for the Audit, click **Create**.
     <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_audit_report(3).png %}" />
 
-6.  Once the Audit has been created, it can be downloaded as a .CSV.
+6.  After the Audit is created, you can download it as a .CSV file.
