@@ -17,8 +17,8 @@ Office.
 ### Importing data ###
 
 If you want to import data, create a request ticket in your control
-panel and include your domain name in the request. Rackspace will gather
-the necessary information and provide you with the best import method.
+panel and include your domain name in the request. Rackspace gathers
+the necessary information and provides you with the best import method.
 
 Cost and turnaround time both depend on how much data you want to
 recover.
@@ -41,10 +41,10 @@ Rackspace Archiving account:
     **Note:** You can export searches with a maximum of 30,000
 results and a total size of 20 GB.
 
--   If you want to get a bulk export of your archived data, we can
+-   If you want to get a bulk export of your archived data, Rackspace can
     perform the export and provide you with links from which you can
     download your data directly. If you have access to an FTP site,
-    provide your credentials and we can export your data to the
+    provide your credentials, and Rackspace can export your data to the
     FTP site.
 
 The pricing for a bulk export is a one-time fee of \$6 per GB
@@ -60,15 +60,15 @@ is much faster than requesting a bulk export.
 
 **To which format do you need to export?**
 
-We offer bulk exports in either PST or EML format. Although PST is a
+Rackspace offers bulk exports in either PST or EML format. Although PST is a
 more well-known format, exporting in EML tends to be easier to search,
-faster for us to produce, and much cheaper. We recommend that you first
+faster to produce, and much cheaper. Rackspace recommends that you first
 determine whether there is a preferred format. If there is no preferred
 format, then we recommend using EML.
 
 **Do you need to export all data or only data that meets certain criteria?**
 
-In most cases, more data means a longer and more expensive export. We
+In most cases, more data means a longer and more expensive export. Rackspace
 can export data that meets certain criteria, such as search, date,
 range, or mailbox users.
 
