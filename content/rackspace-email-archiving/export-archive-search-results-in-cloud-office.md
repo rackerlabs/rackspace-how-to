@@ -5,8 +5,8 @@ title: Export archive search results in Cloud Office
 type: article
 created_date: '2015-05-18'
 created_by: Beau Bailey
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2019-10-22'
+last_modified_by: Joe Brooks
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
@@ -23,32 +23,31 @@ the Archive Manager.
     For more information, see [Log in to the Archive
     Manager](/how-to/log-in-to-the-archive-manager).
 
-2.  In the upper-right corner of the window, click **Search** to access
-    the Search dashboard.
+2.  On the left side of the dashboard, click **Searches**.
 
-    **Note:** There are three dashboards for top level administrators: **Search**,  **Admin**, and **Admin User**.
+3. 	Locate the search name to be exported and click **Run**.
+    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(1).png %}" />
 
-3.  Click the **Search** tab.
+    **Note**: This option will be available to users with **Administrator**, **Compliance Officer**, or **Search Administrator** permissions.
 
-4.  Locate the search name that you want to export, and click the
-    **View** option.
+4. 	Then check the box for the messages to be exported and click the <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_icon.png %}" /> icon above the message list.
 
-5.  Select the type of export: PST, File (.eml format), Text, PDF, or
-    HTML.
+    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(2).png %}" />
 
-6.  (*Optional*) Add a note that will be displayed next to the export
-    file in the search list*.*
+5.  Click **Next** to confirm the number of messages to exported.
 
-7.  (*Optional*) Select to be notified by email when the file is ready
-    for download.
+    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(3).png %}" />
 
-8.  Click **Export**.
+6.  Select a format .**EML**, .**PST**, or .**PDF** and click **Next**.
 
-9.  To begin the download process, click the **Search** tab.
+7.  Enter an **Export Name** and check the box to receive an email notification when the export is ready.
 
-10. Locate the search that you exported, and click the number in the
-    **Exp** column.
+8.  Click **Request Export**.
 
-    All export files for this search are displayed.
+9.  To begin the download process, click the **Exports** tab.
 
-11. Click the file name to save the file.
+10. Locate the search that was exported and click **Download**.
+
+    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(4).png %}" />
+
+    **Note**: The export will remain available for approximately 30 days.
