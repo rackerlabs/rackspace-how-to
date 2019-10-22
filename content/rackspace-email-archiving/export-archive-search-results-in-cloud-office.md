@@ -26,17 +26,17 @@ the Archive Manager.
 2.  On the left side of the dashboard, click **Searches**.
 
 3. 	Locate the search name to be exported and click **Run**.
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(1).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/export-archive-search-results/Export_archive_search_results(1).png %}" />
 
     **Note**: This option will be available to users with **Administrator**, **Compliance Officer**, or **Search Administrator** permissions.
 
-4. 	Then check the box for the messages to be exported and click the <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_icon.png %}" /> icon above the message list.
+4. 	Then check the box for the messages to be exported and click the <img src="{% asset_path rackspace-email-archiving/export-archive-search-results/Export_icon.png %}" /> icon above the message list.
 
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(2).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/export-archive-search-results/Export_archive_search_results(2).png %}" />
 
 5.  Click **Next** to confirm the number of messages to exported.
 
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(3).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/export-archive-search-results/Export_archive_search_results(3).png %}" />
 
 6.  Select a format .**EML**, .**PST**, or .**PDF** and click **Next**.
 
@@ -48,6 +48,6 @@ the Archive Manager.
 
 10. Locate the search that was exported and click **Download**.
 
-    <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Export_archive_search_results(4).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/export-archive-search-results/Export_archive_search_results(4).png %}" />
 
     **Note**: The export will remain available for approximately 30 days.
