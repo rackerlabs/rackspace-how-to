@@ -5,86 +5,62 @@ title: Create an archive search
 type: article
 created_date: '2015-05-18'
 created_by: Beau Bailey
-last_modified_date: '2016-01-26'
-last_modified_by: Catherine Richardson
+last_modified_date: '2019-10-22'
+last_modified_by: Joe Brooks
 product: Rackspace Email Archiving
 product_url: rackspace-email-archiving
 ---
 
 After your email data has been received and indexed, you can perform
 archive searches. Nightly collections index the email and add it to the
-archive. You can also run collections manually through the Archive
-Manager. This article describes the steps for creating an archive search
-in Cloud Office.
+archive. This article describes the steps for creating an archive search in the Archive Manager.
 
 1\. Log in to the [Archive
     Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).
     For more information, see [Log in to the Archive
     Manager](/how-to/log-in-to-the-archive-manager).
 
-2\. In the upper-right corner of the window, click **Search** to access
-    the Search dashboard.
+2\. On the left side of the screen, click **Search**.
 
-**Note:** There are three dashboards for top level administrators: **Search**, **Admin**, and **Admin User**.
+  <img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(1).png %}" />
 
-3\. Click the **Search** tab.
+3\. Click the **+New** tab.
 
-4\. Click **Start new search**.
+  **Note**: This function is available for users with **Administrator**, **Compliance Officer**, **Search Administrator** permissions only.
 
-5\. Click the tab for the type of search and choose from four different
-    search types:
+4\. Click **Simple** or **Advanced** search tab.
 
--   **Simple** - Search for text in messages or attachments.
+-   **Simple** - Search for keywords, sender(from), recipient (to, cc, bcc), date, attachment, size, and hold.
 
--   **Wizard** - Add conditions to the search query and inspect all
-    parts of the message, including sender, recipient, subject,
-    body, and attachment.
+-   **Advanced** - Search by sender, recipient, subject, body, and attachment with greater fine-tuning control. For more information, see “**Advanced Search**” section below.
 
--   **Advanced** - Search by sender, recipient, subject, body, and
-    attachment with greater fine-tuning control. For more
-    information, see "Advanced Search" after these
-    steps.
+5\. Enter the search terms, then click **Search**.
 
-6\. Enter a name for the search.
+6\. When the search returns the results, click **Save**.
 
-7\. Enter any terms you wish to search for under **Search Terms**, as
-    appropriate.
+7\. Fill out the **Basic Information** section, click **Save**.
 
-8\. If you wish to send alerts whenever a search is conducted, click
-    **Enable Search Alerting on this search**. You can select which
-    users receive the alert by their permission level (ie. if you
-    select, "Search User" any user with Admin User access will receive
-    an alert).
+  **Note**: Only a **Search Name** is required to proceed.
 
-9\. You now can chose any optional parameters for the search.
-
--   **Dates** allows you to select when dates you want the search to
-        include.
-
--   **Tags** assist in categorizing searches.Tags can be predefined
-    under the **Settings** tab. To access predefined tags, click
-    **Tags** on the **New Search** page.
-
--   **Legal hold** allows you to sort out results on legal hold.
-
--   **Note** allows you to describe the search.
-
-10\. Click **Permissions** and designate which users can access, change
-    the scope of, or export the search.
-
-11\. To search and display results immediately, click **Save and display
-    results**. To save the search and return to the list of searches,
-    click **Save and return to list**.
+-   In this section, users can be designated to have access to the search.
 
 
 ### Advanced search ###
 
-Sometimes your search results can be too large to sort through, and in
-cases when you are looking for something specific, it is often best to
-use the **Advanced Search** option. The more specific information you
-give the search, the better and more accurate your results will be.
+Sometimes a search may require additional search criteria, in these cases, it is often best to use the **Advanced** option. The more specific information given, the better and more accurate the results will be.
 
-Enter as much available search information as possible in the fields
-under **Search Options**.
+<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(2).png %}" />
 
-<img src="{% asset_path rackspace-email-archiving/create-an-archive-search/searchoptionsadvanced.png %}" width="615" height="424" />
+
+Enter as much available search information as possible in the fields under **Add Criteria**.
+
+<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(3).png %}" />
+
+
+**Note**: If a more granular search is required, after selecting **Add Criteria**, click **Add Group**. Add more search details for each search criteria then click **Search** at the bottom.
+
+<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(4).png %}" />
+
+Add more search details for each search criteria then click **Search** at the bottom.
+
+<img src="{% asset_path rackspace-email-archiving/set-an-archiving-retention-policy/Create_an_archive_search(5).png %}" />
