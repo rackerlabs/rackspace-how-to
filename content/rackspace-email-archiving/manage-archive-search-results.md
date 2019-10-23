@@ -86,7 +86,7 @@ To place a hold on multiple messages, please follow the steps listed below:
 
       <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(9).png %}" />    
 
-4.    Click the <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/black_lock_icon.png %}" /> icon, check the boxes for the holds that are no longer needed, then click **Remove**.    
+4.    Click the <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/Black_lock_icon.png %}" /> icon, check the boxes for the holds that are no longer needed, then click **Remove**.    
 
       <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(10).png %}" />
 
