@@ -63,4 +63,4 @@ Enter as much available search information as possible in the fields under **Add
 
 Add more search details for each search criteria, and then click **Search** at the bottom.
 
-<img src="{% asset_path rackspace-email-archiving/create-an-archive-search/Create_an_archive_search(5).png %}" />
+<img src="{% asset_path rackspace-email-archiving/create-an-archive-search/create_an_archive_search(5).png %}" />
