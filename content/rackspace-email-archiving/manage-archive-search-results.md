@@ -26,21 +26,21 @@ To access and manage search results, perform the following steps after
 
 2.  Then click **Run**.
 
-    <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(1).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(1).png %}" />
 
 
 ### Filter results ###
 
 To narrow search results, click **Filter** at the top of the message list.
 
-  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(2).png %}" />
+  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(2).png %}" />
 
 
 #### Sorting ####
 
 Click the appropriate option by which to sort: **Date**, **Sender** (A-Z or Z-A), **Subject**, or **Attachments**.
 
-  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(3).png %}" />
+  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(3).png %}" />
 
 
 #### Tags ####
@@ -50,11 +50,11 @@ Follow the steps listed below to tag a specific messages for review.
 1.   Click the specific message.
 2.   On the right, click **Tag this email**.
 
-    <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(4).png %}" />
+    <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(4).png %}" />
 
 3.   Once the message has been reviewed, click **Needs Review** to remove the tag.    
 
-     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(5).png %}" />
+     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(5).png %}" />
 
 
 #### Holds ####
@@ -66,7 +66,7 @@ To place a hold on an individual message, please follow the steps listed below:
 1.   Select the message then click **Hold** on the right.
 2.   Select a Hold type, then click **Save**.
 
-     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(6).png %}" />
+     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(6).png %}" />
 
 3. 	 To remove hold on an individual message, simply click **Hold** (**#**), uncheck the previous selection(s) then click **Save** when finished.
 
@@ -74,21 +74,21 @@ To place a hold on multiple messages, please follow the steps listed below:
 
 1.   Check the box on left of each desire messages.
 
-     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(7).png %}" />
+     <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(7).png %}" />
 
 2.   Then click the <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/Gear_icon.png %}" /> icon, select the hold type, then click **Add**.
 
-      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(8).png %}" />  
+      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(8).png %}" />  
 
       **Note**: Messages placed on **Hold** will be identifiable by a <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/Red_lock_icon.png %}" /> icon.
 
 3.    To remove these holds, check the boxes for the messages that have been identified.
 
-      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(9).png %}" />    
+      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(9).png %}" />    
 
 4.    Click the <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/black_lock_icon.png %}" /> icon, check the boxes for the holds that are no longer needed, then click **Remove**.    
 
-      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(10).png %}" />
+      <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(10).png %}" />
 
 
 #### Send Message as an Attachment ####
@@ -97,7 +97,7 @@ To send a copy of a message as an attachment simply select the message that need
 
 **Note**: The recipient will receive the attachment in .EML format and we recommend using a mail client to view the information.
 
-  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(11).png %}" />
+  <img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(11).png %}" />
 
 
 #### Download the message ####
@@ -107,4 +107,4 @@ If necessary, the message can be downloaded directly for the results page.
 
 **Note**: The message must be viewed in a mail client and can be forwarded as an individual email or sent as an attachment.)
 
-<img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_result(12).png %}" />
+<img src="{% asset_path rackspace-email-archiving/manage-archive-search-results/manage_archive_search_results(12).png %}" />
