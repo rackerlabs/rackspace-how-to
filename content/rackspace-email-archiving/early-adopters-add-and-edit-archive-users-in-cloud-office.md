@@ -1,7 +1,7 @@
 ---
-permalink: add-and-edit-archive-users-in-cloud-office/
+permalink: early-adopters-add-and-edit-archive-users-in-cloud-office/
 audit_date: '2018-04-06'
-title: Add and edit archive users
+title: Early Adopters- Add and edit archive users
 type: article
 created_date: '2015-05-18'
 created_by: Beau Bailey
