@@ -3,8 +3,8 @@ permalink: early-adopters-add-and-edit-archive-users-in-cloud-office/
 audit_date: '2019-11-11'
 title: Early Adopters&mdash;Add and edit archive users
 type: article
-created_date: '2015-05-18'
-created_by: Beau Bailey
+created_date: '2019-11-11'
+created_by: Joe Brooks
 last_modified_date: '2019-11-11'
 last_modified_by: Joe Brooks
 product: Rackspace Email Archiving
@@ -101,7 +101,7 @@ Use the following steps to add multiple users to the Archive Manager:
 
 To edit an Archive User’s role, use the following steps:
 
-1.  Click **Users**, check the box by the user’s name, and then click **Roles** on the top right. 
+1.  Click **Users**, check the box by the user’s name, and then click **Roles** on the top right.
 
 2.  After selecting a new role, click **Add** to save changes.
 
@@ -113,6 +113,6 @@ To remove a role, use the following steps:
 
 To edit the settings for an archive user, use the following steps:
 
-1.  Click **Users** on the left, and then click **Edit** for the specific user. 
+1.  Click **Users** on the left, and then click **Edit** for the specific user.
 
 2.  Edit specific user information as needed and then click **Save**.
