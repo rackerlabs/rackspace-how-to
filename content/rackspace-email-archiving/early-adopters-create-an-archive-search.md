@@ -15,8 +15,15 @@ After your email data has been received and indexed, you can perform
 archive searches. Nightly collections index the email and add it to the
 archive. This article describes the steps for creating an archive search in the Archive Manager.
 
+### Prerequisites
+
+- **Applies to:** Administrator
+- **Difficulty:** Easy
+- **Time needed:** Approximately 10 minutes
+- **Tools required:** Archive Portal access
+
 1. Log in to the [Archive Manager](https://cp.rackspace.com/Login.aspx?ReturnUrl=%2f).
-   
+
    For more information, see [Log in to the Archive Manager](/how-to/log-in-to-the-archive-manager).
 
 2. On the left side of the screen, click **Search**.
