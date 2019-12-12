@@ -27,7 +27,7 @@ This article explains how to generate a Certificate Signing Request(CSR).
 
 5. From the dropdown menu, Select **Generate a Certificate Signing Request**. 
 
-    <img src="{% asset_path cloud-load-balancers/reset-user-password-on-active-directory-domain/password1.png %}" />
+    <img src="{% asset_path dedicated-hosting/generate-certificate-signing-request/generatecert1.png %}" />
 
 5. In the Ticket Details section, select a device from the dropdown menu. 
 
@@ -41,4 +41,4 @@ This article explains how to generate a Certificate Signing Request(CSR).
 
 7. Select **Create Ticket**.
 
-    <img src="{% asset_path cloud-load-balancers/reset-user-password-on-active-directory-domain/password2.png %}" />
+    <img src="{% asset_path dedicated-hosting/generate-certificate-signing-request/generatecert2.png %}" />
