@@ -1,12 +1,12 @@
 ---
 permalink: preparing-an-image-for-import-into-the-rackspace-opencloud/
-audit_date: '2019-03-11'
+audit_date: '2019-12-18'
 title: Prepare an image for import into the Rackspace Open Cloud
 type: article
 created_date: '2014-02-16'
 created_by: Cloud Images
 last_modified_date: '2019-03-11'
-last_modified_by: Cat Lookabaugh
+last_modified_by: Stephanie Fillmon
 product: Cloud Images
 product_url: cloud-images
 ---
@@ -48,9 +48,7 @@ If you are preparing an image specifically for use in the Rackspace Open
 Cloud, we recommend that you prepare it offline by using a local
 installation of XenServer.
 
-For instructions for preparing an image on Linux, see [Create a server image
-for the Rackspace Open
-Cloud](/how-to/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud).
+For instructions for preparing an image on Linux, see [Cloud image creation format and process](/how-to/cloud-image-creation-format-and-process).
 
 ### Prepare an image online in another cloud
 
@@ -81,7 +79,7 @@ We suggest that you take the following steps:
 
 For a tutorial on this process, see [Bootstrap your QCOW images for the
 Rackspace Public
-Cloud](https://developer.rackspace.com/blog/bootstrap-your-qcow-images-for-the-rackspace-public-cloud/). 
+Cloud](https://developer.rackspace.com/blog/bootstrap-your-qcow-images-for-the-rackspace-public-cloud/).
 This tutorial walks through the process of preparing
 a QEMU Copy on Write (QCOW) image and converting it to the VHD format so that
 it can be imported.

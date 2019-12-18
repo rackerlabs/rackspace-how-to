@@ -1,7 +1,7 @@
 ---
 title: Cloud Images
 type: product
-created_date: '2016-01-17'
+created_date: '2019-12-18'
 created_by: Rackspace Support
 last_modified_date: '2016-04-20'
 last_modified_by: Stephanie Fillmon
@@ -15,7 +15,7 @@ The Rackspace Cloud Images service offers retrieval, storage, and metadata assig
 ###  Preparing images
 
 - [Preparing an image for import into the Rackspace open cloud](/how-to/preparing-an-image-for-import-into-the-rackspace-opencloud)
-- [Create a server image for the Rackspace open cloud](/how-to/creating-an-ubuntu-1310-image-for-the-rackspace-open-cloud)
+- [Cloud image creation format and process](/how-to/cloud-image-creation-format-and-process)
 
 ###  Uploading and downloading images
 
