@@ -5,7 +5,7 @@ title: Add a Linux User With Document Root Permissions
 type: article
 created_date: '2011-11-23'
 created_by: Rackspace Support
-last_modified_date: '2016-06-24'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -33,7 +33,7 @@ We've listed the default values for the apache web server running on some Linux 
 
 On Red Hat-based systems apache runs under the group "apache" with a document root of "/var/www/html".
 
-**Ubuntu and Debian**
+**Ubuntu operating system and Debian**
 
 On Debian-based systems apache runs under the group "www-data" with a document root of "/var/www".
 
@@ -52,7 +52,7 @@ On CentOS, Fedora, or RHEL, the command to create the user would look like this:
 
     sudo useradd -d /var/www/html -G apache demo
 
-On Ubuntu or Debian systems you would use different values:
+On Debian or Ubuntu operating systems you would use different values:
 
     sudo useradd -d /var/www -G www-data demo
 
@@ -70,7 +70,7 @@ On CentOS, Fedora, or RHEL, the command would look like this:
 
     sudo usermod -a -G apache demo
 
-And on Ubuntu or Debian it might look like:
+And on the Ubuntu operating system or Debian it might look like:
 
     sudo usermod -a -G www-data demo
 
@@ -80,7 +80,7 @@ On CentOS, Fedora, or RHEL you would run:
 
     sudo usermod -d /var/www/html demo
 
-And on Ubuntu or Debian:
+And on the Ubuntu operating system or Debian:
 
     sudo usermod -d /var/www demo
 
@@ -94,7 +94,7 @@ On CentOS, Fedora, or RHEL run:
 
     sudo chgrp -R apache /var/www/html
 
-And on Ubuntu or Debian:
+And on the Ubuntu operating system or Debian:
 
     sudo chgrp -R www-data /var/www
 
@@ -109,7 +109,7 @@ On CentOS, Fedora, or RHEL you can set the right permissions with the commands:
     sudo chmod -R g+w /var/www/html
     sudo chmod g+s /var/www/html
 
-The Ubuntu and Debian versions of the commands would be:
+The Ubuntu operating system and Debian versions of the commands would be:
 
     sudo chmod -R g+w /var/www
     sudo chmod g+s /var/www

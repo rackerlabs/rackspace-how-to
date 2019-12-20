@@ -5,8 +5,8 @@ title: Install an SSL certificate
 type: article
 created_date: '2018-10-23'
 created_by: Cat Lookabaugh
-last_modified_date: '2018-10-23'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -356,7 +356,7 @@ To reload Apache, run the following command:
 
     # service httpd reload
 
-**Ubuntu**
+**The Ubuntu operating system**
 
     # /etc/init.d/apache2 reload
 

@@ -5,7 +5,7 @@ title: Install and configure phpMyAdmin
 type: article
 created_date: '2019-01-28'
 created_by: Paul Dolbear
-last_modified_date: '2019-01-30'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -50,12 +50,12 @@ installed:
     <td><code>rpm -qa | grep nginx</code></td>
   </tr>
   <tr>
-    <td>Ubuntu</td>
+    <td>Ubuntu operating system</td>
     <td>Apache</td>
     <td><code>dpkg -l | grep apache</code></td>
   </tr>
   <tr>
-    <td>Ubuntu</td>
+    <td>Ubuntu operating system</td>
     <td> NGINX</td>
     <td><code>dpkg -l | grep nginx</code></td>
   </tr>
@@ -68,7 +68,7 @@ or RHEL:
 
     rpm -qa | grep php
 
-Use the following command to check whether PHP is installed on Ubuntu:
+Use the following command to check whether PHP is installed on the Ubuntu operating system:
 
     dpkg -l | grep php
 
@@ -102,7 +102,7 @@ The output should be similar to the following example:
     --> Processing Dependency: php-php-gettext for package: phpMyAdmin-4.4.15.10-3.el7.noarch
     --> Running transaction check
 
-#### Ubuntu
+#### The Ubuntu operating system
 
 Install phpMyAdmin by using the following command:
 
@@ -125,7 +125,7 @@ The output should be similar to the following example:
     Do you want to continue? [Y/n]
 
 Press **Y** and then press **Enter** to continue to the configuration
-process. See the **Configure phpMyAdmin on Ubuntu** section for further
+process. See the **Configure phpMyAdmin on the Ubuntu operating system** section for further
 instructions.
 
 ### Configure phpMyAdmin on CentOS and RHEL
@@ -315,9 +315,9 @@ in the following image:
 
 <img src="{% asset_path cloud-servers/install-and-configure-phpmyadmin/phpmyadmin-browser.png %}" />
 
-### Configure phpMyAdmin on Ubuntu
+### Configure phpMyAdmin on the Ubuntu operating system
 
-Use the steps in the following sections to configure phpMyAdmin on Ubuntu.
+Use the steps in the following sections to configure phpMyAdmin on the Ubuntu operating system.
 
 #### Apache web server
 
@@ -588,7 +588,7 @@ begins with `<Directory "/var/www/html">`.
 
 For RHEL and CentOS, the configuration file is **/etc/httpd/conf/httpd.conf**.
 
-For Ubuntu, the configuration file is **/etc/apache2/conf/httpd.conf**.
+For the Ubuntu operating system, the configuration file is **/etc/apache2/conf/httpd.conf**.
 
 Change the line from `AllowOverride none` to `AllowOverride AuthConfig`.
 

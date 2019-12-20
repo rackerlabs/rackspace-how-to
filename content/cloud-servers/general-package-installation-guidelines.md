@@ -5,8 +5,8 @@ title: General package installation guidelines
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-12-28'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -46,7 +46,7 @@ package management systems or of all installed packages between versions on
 Rackspace Cloud Servers. This operation can break the configurations that
 enable Rackspace Cloud Servers to communicate with the hypervisors.
 
-#### APT (Debian and Ubuntu)
+#### APT (Debian and Ubuntu operating system)
 
 Advanced Package Tool (APT) is a command-line tool for interacting with dpkg,
 the packaging system used by Debian&trade;. Use the following commands to
@@ -83,7 +83,7 @@ manage packages by using APT:
 For more information about APT-based package management, see the following
 resources:
 
-- [Ubuntu&reg; documentation:
+- [Ubuntu&reg; operating system documentation:
   dpkg](https://help.ubuntu.com/lts/serverguide/dpkg.html.en)
 
 - [Debian GNU/Linux
@@ -93,10 +93,10 @@ resources:
 - [APT
   HOWTO](http://www.debian.org/doc/manuals/apt-howto/)
 
-#### apt-get (Debian and Ubuntu)
+#### apt-get (Debian and the Ubuntu operating system)
 
 Apt-get is a popular alternative to APT that you can use to manage packages on
-Debian and Ubuntu.
+Debian and the Ubuntu operating system.
 
 Use the following commands to manage packages by using apt-get:
 

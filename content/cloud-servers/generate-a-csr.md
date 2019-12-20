@@ -5,8 +5,8 @@ title: Generate a certificate signing request
 type: article
 created_date: '2018-10-23'
 created_by: Stephanie Fillmon
-last_modified_date: '2019-09-12'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -36,7 +36,7 @@ Check whether OpenSSL is installed by using the following command:
       openssl-devel-1.0.1e-48.el6_8.1.x86_64
       openssl-1.0.1e-48.el6_8.1.i686
 
-- Debian&reg; and Ubuntu&reg;
+- Debian&reg; and the Ubuntu&reg; operating system
 
       dpkg -l | grep openssl
 
@@ -51,7 +51,7 @@ If the preceding packages are not returned, install OpenSSL by running the follo
 
       yum install openssl openssl-devel
 
-- Debian and Ubuntu
+- Debian and the Ubuntu operating system
 
       apt-get install openssl
 

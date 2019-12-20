@@ -5,7 +5,7 @@ title: Get started with GlusterFS - considerations and installation
 type: article
 created_date: '2014-08-14'
 created_by: Marcin Stangel
-last_modified_date: '2016-01-15'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -107,9 +107,9 @@ Some of the required packages might already be installed on the cluster nodes.
     http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-epel.repo
     yum -y install glusterfs glusterfs-fuse glusterfs-server
 
-**Ubuntu**
+**Ubuntu operating system**
 
-The default Ubuntu repository has glusterfs 3.4.2 installed. Use the following code to install 3.5.1:
+The default Ubuntu operating system repository has glusterfs 3.4.2 installed. Use the following code to install 3.5.1:
 
     apt-get install lvm2 xfsprogs python-software-properties
     add-apt-repository ppa:semiosis/ubuntu-glusterfs-3.5
@@ -121,7 +121,7 @@ Use the following commands to ensure that the gluster* packages are filtered out
     grep ^exclude /etc/yum.conf
     exclude=kernel* gluster*
 
-**Ubuntu**
+**Ubuntu operating system**
 
     apt-mark hold glusterfs*
 
@@ -433,7 +433,7 @@ The FUSE client allows the mount to happen with a GlusterFS "round robin" style 
     http://download.gluster.org/pub/gluster/glusterfs/LATEST/CentOS/glusterfs-epel.repo
     yum -y install glusterfs glusterfs-fuse
 
-**Ubuntu**:
+**Ubuntu operating system**:
 
 glusterfs-client 3.4.2 works with glusterfs-server 3.5.1, but for the most recent version, use the following code:
 
@@ -464,7 +464,7 @@ The standard Linux NFSv3 client tools are used to mount one of the GlusterFS nod
     service rpcbind restart; chkconfig rpcbind on
     service nfslock restart; chkconfig on
 
-**Ubuntu**:
+**Ubuntu operating system**:
 
     apt-get install nfs-common
 
