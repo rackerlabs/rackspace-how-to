@@ -5,8 +5,8 @@ title: Retrieve CDN access logs on a per-customer, per-container basis
 type: article
 created_date: '2019-02-14'
 created_by: Rackspace Community
-last_modified_date: '2019-02-14'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
@@ -17,8 +17,8 @@ on your Cloud Files storage.
 
 HyperText Transfer Protocol (HTTP) logs have functional limitations. The same
 restrictions that apply to virtual host domains on web servers also apply to
-Cloud Files. As a result, you should not put files belonging to 
-different customers in the same container, in the same way that you do not 
+Cloud Files. As a result, you should not put files belonging to
+different customers in the same container, in the same way that you do not
 put files belonging to different customers on the same virtual host.
 
 This tutorial covers generating a different log set for each container for
@@ -39,7 +39,7 @@ instead.
 Think of Cloud Files CDN access logs in the same way that you would any
 customer virtual host that is running on a Plesk&reg; or cPanel&reg; box.
 In such cases, keeping the virtual hosts separate so that you
-can bill each customer based on the log file for that virtual host is important. 
+can bill each customer based on the log file for that virtual host is important.
 You should also use the same approach for the container logs.
 
 ### Step 1: Enable the CDN access logs for a Cloud Files container
@@ -66,7 +66,7 @@ customer so that you can bill customers individually.
 ### Step 2: Retrieve the CDN access logs recursively (all CDN container logs)
 
 You can download the **.CDN_ACCESS_LOGS** by using cURL, but this
-example uses [Swiftly](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/), 
+example uses [Swiftly](https://support.rackspace.com/how-to/install-the-swiftly-client-for-cloud-files/),
 a Rackspace-developed client tool that
 enables you to download from and upload to Cloud Files. This tool
 simplifies the process and enables you to automate it.
@@ -89,9 +89,9 @@ dependencies:
     yum install python-devel gcc python-pip
     pip install swiftly eventlet
 
-**Debian, Ubuntu, and other aptitude-based operating systems**
+**APT-based systems**
 
-If you are using Debian&reg;, Ubuntu&reg;, or another aptitude-based operating
+If you are using Debian&reg;, the Ubuntu&reg; operating system, or another aptitude-based operating
 system (OS), run the following commands to install Swiftly dependencies:
 
     apt-get install python-dev gcc python-pip
@@ -121,7 +121,7 @@ following example, which assumes that you are the root user:
     echo "region = LON" >> /root/.swiftly.conf
 
 **Note**: You can find your API key in the **My Profile & Settings** area
-under your username in the Cloud Control Panel. Click **Show** 
+under your username in the Cloud Control Panel. Click **Show**
 next to the **Rackspace API Key** field to display it.
 
 After you set your username, API key, and region in the **.swiftly.conf**
@@ -231,7 +231,7 @@ Run the following command to install the Apache&reg; HTTP daemon (httpd) for the
 If you do not have thousands of containers, you might want to generate an
 index of the logs so that you can browse through them.
 
-**Important**: If each container name is the host name of the CDN, you can 
+**Important**: If each container name is the host name of the CDN, you can
 use the following commands to index your logs. If you are not using this
 approach, the steps that you need to use might differ.
 

@@ -5,15 +5,15 @@ title: Install the Swiftly client for Cloud Files
 type: article
 created_date: '2014-04-21'
 created_by: Cloud Images
-last_modified_date: '2019-02-28'
-last_modified_by: Regan Murley
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Files
 product_url: cloud-files
 ---
 
 ### Install Swiftly
 
-Swiftly is a client tool that you can use to upload objects to and download 
+Swiftly is a client tool that you can use to upload objects to and download
 objects from your Rackspace Cloud Files account. Swiftly manages the
 storage of large objects in Cloud Files. If you have a very large object
 (such as a virtual disk image file), Swiftly splits the file into
@@ -26,9 +26,9 @@ For more information about Swiftly, see the following sites:
 -   Swiftly documentation: <http://gholt.github.io/swiftly/>
 -   Swiftly source code: <https://github.com/gholt/swiftly>
 
-#### Install Swiftly on Ubuntu
+#### Install Swiftly on the Ubuntu operating system
 
-These instructions were built by Rackspace on an Ubuntu&reg; 13.10 public 
+These instructions were built by Rackspace on an Ubuntu&reg; 13.10 public
 image.
 
 Use the following instructions from a Bash shell on your server:
@@ -47,7 +47,7 @@ Use the following instructions from a Bash shell on your server:
 
 #### Install Swiftly on CentOS
 
-These instructions were verified by Rackspace on a CentOS&reg; 6.5 public 
+These instructions were verified by Rackspace on a CentOS&reg; 6.5 public
 image.
 
 Use the following instructions from a Bash shell on your server:
@@ -64,12 +64,12 @@ Use the following instructions from a Bash shell on your server:
 2.  Install Swiftly by using `pip`.
 
         sudo pip install swiftly
-        
+
 ### Configure Swiftly for Cloud Files
 
-Edit or create the file `~/.swiftly.conf`. By default, Swiftly uses the configuration file 
-in the same local directory where it is run, or you can define a file path while running 
-Swiftly commands by using the `--conf=PATH` flag. Include the following contents in your 
+Edit or create the file `~/.swiftly.conf`. By default, Swiftly uses the configuration file
+in the same local directory where it is run, or you can define a file path while running
+Swiftly commands by using the `--conf=PATH` flag. Include the following contents in your
 **.swiftly.conf** file:
 
         [swiftly]
@@ -78,17 +78,17 @@ Swiftly commands by using the `--conf=PATH` flag. Include the following contents
         auth_url = https://identity.api.rackspacecloud.com/v2.0
         region = <datacenter>
 
-For the full list of options available in the **.swiftly.conf** file, see 
+For the full list of options available in the **.swiftly.conf** file, see
 [the sample config file in the Swiftly repo](https://github.com/gholt/swiftly/blob/master/swiftly.conf-sample).
 
 ### Install Eventlet (*optional*)
 
-Eventlet is an optional `pip` package that allows you to set a concurrency count when using 
-Swiftly. This count is useful when performing bulk actions that are threaded because the Cloud 
-Files application programming interface (API) has a limit of 100 concurrent write requests 
-per container. 
+Eventlet is an optional `pip` package that allows you to set a concurrency count when using
+Swiftly. This count is useful when performing bulk actions that are threaded because the Cloud
+Files application programming interface (API) has a limit of 100 concurrent write requests
+per container.
 
-#### Install Eventlet on Ubuntu
+#### Install Eventlet on the Ubuntu operating system
 
 Use the following instructions from a Bash shell on your server:
 
@@ -99,7 +99,7 @@ Use the following instructions from a Bash shell on your server:
 2. Install Eventlet by using `pip`.
 
         sudo pip install eventlet
-        
+
 #### Install Eventlet on CentOS
 
 Use the following instructions from a Bash shell on your server:
@@ -123,16 +123,16 @@ from the command line. If your laptop battery dies, or your wireless
 connection is lost, or you are otherwise disconnected, the process
 continues to run in your Screen session.
 
-#### Install Screen in Ubuntu
+#### Install Screen in the Ubuntu operating system
 
-Use the following instructions from a Bash shell on your server to install 
-Screen in Ubuntu:
+Use the following instructions from a Bash shell on your server to install
+Screen in the Ubuntu operating system:
 
     sudo apt-get install screen
 
 #### Installing Screen in CentOS
 
-Invoke the following instructions from a Bash shell on your server to install 
+Invoke the following instructions from a Bash shell on your server to install
 Screen in CentOS:
 
     sudo yum install screen
@@ -146,9 +146,9 @@ sessions running at the same time.
 
     screen -s /bin/bash -S display-Name-For-Screen
 
-After you start Screen, you can enter regular Bash commands. Screen commands, 
-that is, commands requesting Screen to do something, are escaped with `Control-a` 
-(or `C-a`) . Some Screen commands are single character. For example, to detach from 
+After you start Screen, you can enter regular Bash commands. Screen commands,
+that is, commands requesting Screen to do something, are escaped with `Control-a`
+(or `C-a`) . Some Screen commands are single character. For example, to detach from
 Screen, type the following command:
 
     C-a d
@@ -200,9 +200,9 @@ following command:
 
 ### Swiftly example commands
 
-**Important:** Swiftly allows destructive actions to run against 
-one or all containers on an account. Use caution when performing updates 
-and deletes to Cloud Files objects because these cannot be undone. 
+**Important:** Swiftly allows destructive actions to run against
+one or all containers on an account. Use caution when performing updates
+and deletes to Cloud Files objects because these cannot be undone.
 Test your commands against test containers wherever possible before
 running them in production.
 
@@ -213,80 +213,80 @@ Following are some common Swiftly command examples.
 Run the following command to get a list of containers for the configured account:
 
         swiftly get
-        
+
 The response is similar to the following list:
 
         .ACCESS_LOGS
         .CDN_ACCESS_LOGS
         Books
-        
+
 #### Get a list of containers with details
 
 Run the following command to get a list of containers including detailed information:
 
         swiftly get --raw
-        
+
 The response displays in JavaScript&reg; Object Notation (JSON)  format:
 
-        [{"count": 103, "bytes": 22296, "name": ".ACCESS_LOGS"}, 
-        {"count": 126, "bytes": 32708, "name": ".CDN_ACCESS_LOGS"}, 
+        [{"count": 103, "bytes": 22296, "name": ".ACCESS_LOGS"},
+        {"count": 126, "bytes": 32708, "name": ".CDN_ACCESS_LOGS"},
         {"count": 417, "bytes": 1177376576, "name": "Books"}]
-        
+
 #### Get a list of objects in a container
 
 Run the following command to get a list of objects in a container:
 
         swiftly get <containerName>
-        
+
 #### Get containers or objects that match a beginning prefix
 
-Run the following command to get containers or objects that match a beginning 
+Run the following command to get containers or objects that match a beginning
 prefix (case sensitive):
 
         swiftly get --prefix <startingText>
-        
+
         swiftly get <containerName> --prefix <startingText>
-        
+
 #### Post new headers to an object
 
-Run the following command to post new headers to an object (supports multiple headers 
+Run the following command to post new headers to an object (supports multiple headers
 in a single command, separated as shown):
 
         swiftly post -h "<headerName1>:<headerValue1>" -h "<headerName2>:<headerValue2>" <containerName>/<objectName>
-        
-#### Upload an object 
 
-The following example uploads the local directory file **somefile.png**, renames it to 
-**newfilename.png** in the specified container, and places the object into the pseudo 
+#### Upload an object
+
+The following example uploads the local directory file **somefile.png**, renames it to
+**newfilename.png** in the specified container, and places the object into the pseudo
 directory **/images/**).
 
 Run the following command to upload an object:
 
         swiftly put -i ~/somefile.png <containerName>/images/newfilename.png
-        
+
 #### Delete an object
 
 Run the following command to delete an object, or delete an object within a pseudo directory:
 
         swiftly delete <containerName>/somefile.png
         swiftly delete <containerName>/images/newfilename.png
-        
+
 #### Delete all objects within a container and delete the container
 
 Run the following command to delete all objects within a container and delete the container:
 
         swiftly delete <containerName> --until-empty --recursive
-        
-#### Bulk update
-        
-This command performs a bulk update of all files in a container to add the header **HEADERNAME** 
-with a value of **HEADERVALUE**. Note that Swiftly `for/do` commands contain 
-literal open and close angle bracket characters (`<` and `>`), such as `<item>` in 
-the examples shown here. The angle brackets are part of the command, not placeholders 
-for variable content. 
 
-As a best practice with `for/do` commands, `--cache-auth` is set to temporarily store 
-the authentication token rather than make repeated calls to the Identity API, and 
+#### Bulk update
+
+This command performs a bulk update of all files in a container to add the header **HEADERNAME**
+with a value of **HEADERVALUE**. Note that Swiftly `for/do` commands contain
+literal open and close angle bracket characters (`<` and `>`), such as `<item>` in
+the examples shown here. The angle brackets are part of the command, not placeholders
+for variable content.
+
+As a best practice with `for/do` commands, `--cache-auth` is set to temporarily store
+the authentication token rather than make repeated calls to the Identity API, and
 `--concurrency` is limited to 100 maximum API calls to Cloud Files:
 
 Run the following command to perform a bulk update:
@@ -295,16 +295,16 @@ Run the following command to perform a bulk update:
 
 #### Bulk delete specified objects
 
-Run the following command to perform a bulk delete of only objects within a container 
-whose name begins with a certain prefix (caching the Identity token and limiting to 
+Run the following command to perform a bulk delete of only objects within a container
+whose name begins with a certain prefix (caching the Identity token and limiting to
 100 concurrent API calls):
 
         swiftly --cache-auth --eventlet --concurrency=100 for CONTAINER --prefix STARTINGTEXT --output-names do delete "<item>"
 
 #### Bulk delete specified containers
 
-Run the following command to perform a bulk delete of only containers whose name 
-begins with a certain prefix (caching the Identity token and limiting to 100 
+Run the following command to perform a bulk delete of only containers whose name
+begins with a certain prefix (caching the Identity token and limiting to 100
 concurrent API calls):
 
 

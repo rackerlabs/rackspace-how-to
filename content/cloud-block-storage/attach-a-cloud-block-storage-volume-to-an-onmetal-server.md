@@ -5,8 +5,8 @@ title: Attach a Cloud Block Storage volume to an OnMetal server
 type: article
 created_date: '2015-07-22'
 created_by: Catherine Richardson
-last_modified_date: '2016-06-06'
-last_modified_by: Nate Archer
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -91,7 +91,7 @@ string.
 
 7. Ensure that the iSCSI tooling is installed.
 
-   For Ubuntu and Debian:
+   For the Ubuntu operating system and Debian:
 
        $ apt-get update
        $ apt-get install open-iscsi

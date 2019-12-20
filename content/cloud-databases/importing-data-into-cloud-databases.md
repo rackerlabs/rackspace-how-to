@@ -5,8 +5,8 @@ title: Import data into Cloud Databases
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2018-10-23'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -83,7 +83,8 @@ sections of this article.
 
 5.  If you don't have a MySQL client installed on your server, install one.
 
-    - On Ubuntu and Debian, install the client with the following command:
+    - On the Ubuntu operating system and Debian, install the client with the
+      following command:
 
             sudo apt-get install mysql-client
 

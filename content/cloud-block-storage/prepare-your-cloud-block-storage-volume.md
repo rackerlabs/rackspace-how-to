@@ -5,8 +5,8 @@ title: Prepare your Cloud Block Storage volume
 type: article
 created_date: '2012-10-21'
 created_by: David Hendler
-last_modified_date: '2018-10-24'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -34,6 +34,8 @@ click the gear icon next to the server name, and select **Change Password**.
 
 2.  Using SSH, log in to the server as root by using its IP address and
     root password.
+
+    The output should be similar to the following output:
 
         $ ssh root@198.61.222.58
         root@198.61.222.58's password:

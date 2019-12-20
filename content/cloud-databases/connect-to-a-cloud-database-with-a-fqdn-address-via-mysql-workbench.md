@@ -5,8 +5,8 @@ title: Connect to a Cloud Database with a FQDN Address via MySQL Workbench
 type: article
 created_date: '2012-08-02'
 created_by: Rae D. Cabello
-last_modified_date: '2015-09-04'
-last_modified_by: Constanze Kratel
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Databases
 product_url: cloud-databases
 ---
@@ -19,9 +19,9 @@ Workbench.
 
 1.  Go to <http://www.mysql.com/products/workbench/> and install MySQL
     WorkBench.
-    The following platforms are supported: Windows, Fedora, Ubuntu,
-    Oracle and Redhat, and Mac OS X. Registration is required before
-    you download.
+    The following platforms are supported: Windows, Fedora, the Ubuntu
+    operating system, Oracle and Redhat, and Mac OS X. Registration
+    is required before you download.
 
 2.  Launch MySQL Workbench, and select the **New Server Instance**
     option under **Server Administration**.
