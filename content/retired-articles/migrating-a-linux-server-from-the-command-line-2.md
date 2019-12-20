@@ -5,8 +5,8 @@ title: Migrate a Linux server per-package from the command line
 type: article
 created_date: '2011-03-16'
 created_by: Jered Heeschen
-last_modified_date: '2015-12-30'
-last_modified_by: Nate Archer
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 ---
 
 ### Other scenarios
@@ -188,7 +188,7 @@ We left out the "exclude-from" flag because we wouldn't usually need to
 exclude any files from this sync.
 
 The configuration directory for your web server may vary by
-distribution, particularly for apache. Ubuntu and Debian use
+distribution, particularly for apache. Ubuntu operating systems and Debian use
 **/etc/apache2**, CentOS and other Red Hat-based distributions use
 **/etc/httpd**, and so on. So first, find your config directory.
 

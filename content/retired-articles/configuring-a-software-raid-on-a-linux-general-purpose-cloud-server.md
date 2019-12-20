@@ -5,8 +5,8 @@ title: Configure a Software RAID on a Linux General Purpose Cloud Server
 type: article
 created_date: '2013-11-03'
 created_by: Tim Pownall
-last_modified_date: '2016-04-21'
-last_modified_by: Nate Archer
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 ---
 
 This article will demonstrate how to put multiple data disks on a
@@ -31,7 +31,7 @@ may need to be installed.
 
     sudo yum install mdadm
 
-#### Ubuntu/Debian mdadm installation
+#### Ubuntu operating systems/Debian mdadm installation
 
     sudo apt-get update
     sudo apt-get install mdadm

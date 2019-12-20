@@ -5,8 +5,8 @@ title: Cloud Servers with Managed Operations support for Linux
 type: article
 created_date: '2011-05-26'
 created_by: David Hendler
-last_modified_date: '2016-11-28'
-last_modified_by: Nate Archer
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 ---
 
 The Managed Operations service level provides support beyond the Managed Infrastructure service level, including direct
@@ -90,7 +90,7 @@ The Managed Operations service level supports the following firewall software:
 |    | **Installation** | **Configuration** | **Troubleshooting** |
 | --- | --- | --- | --- |
 | [**iptables**](http://www.netfilter.org/projects/iptables/) | **Yes** | **Yes** | **Yes** |
-| [**UBUNTU ufw**](https://wiki.ubuntu.com/UncomplicatedFirewall) | **Yes** | **Yes** | **Yes** |
+| [**UBUNTU operating system ufw**](https://wiki.ubuntu.com/UncomplicatedFirewall) | **Yes** | **Yes** | **Yes** |
 
 
 ### FTP
@@ -121,6 +121,6 @@ services.
 -  **Cloud Files**:  Integration with Cloud Files is supported via the API, however no development support is offered to help utilize Cloud Files via the API.
 -  **Load Balancing**: Cloud Load Balancers are supported by Managed Operations.
 -  **Email**:  The default SMTP configuration for outbound email on Linux is through Postfix.  Cloud Servers with a Managed Operations service level are preconfigured to use our mail relay service Mailgun to ensure reliable mail delivery.  The first 50,000 emails sent each month are free, and your mail package can be upgraded if higher volume is expected. For more information, see the [Mailgun Rackspace pricing page](http://www.mailgun.com/rackspace).
--  **Firewalls**: Support is provided for  [iptables](http://www.netfilter.org/),  [Ubuntu ufw](https://help.ubuntu.com/community/UFW), and  [fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page).
+-  **Firewalls**: Support is provided for  [iptables](http://www.netfilter.org/),  [Ubuntu operating system ufw](https://help.ubuntu.com/community/UFW), and  [fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page).
 -  **Control Panels**: Control panel applications such as Plesk, Webmin, or cPanel are  *not* supported at this time.
 -  **DNS**: Managed Operations supports the use of the Rackspace Cloud name servers for DNS.  Bind is *not* supported at this time.

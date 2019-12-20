@@ -5,8 +5,8 @@ title: Generate a CSR with OpenSSL
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-06-24'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 ---
 
 This article shows how to create a certificate signing request (CSR) for an SSL
@@ -42,7 +42,7 @@ If these packages are not returned, install OpenSSL by running the following com
 
     yum install openssl openssl-devel
 
-To check whether OpenSSL is installed in a Debian or Ubuntu system, run the following
+To check whether OpenSSL is installed in a Debian or Ubuntu operating system, run the following
 command:
 
     dpkg -l |grep openssl

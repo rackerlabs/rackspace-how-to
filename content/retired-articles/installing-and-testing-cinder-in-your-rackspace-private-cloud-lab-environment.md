@@ -5,8 +5,8 @@ title: Install and test Cinder in your Rackspace Private Cloud lab environment
 type: article
 created_date: '2014-04-24'
 created_by: Jason Grimm
-last_modified_date: '2016-07-14'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 ---
 
 This article provides instructions for setting up the OpenStack Cinder
@@ -151,7 +151,7 @@ The following configuration tasks are to be completed on controller-1.
 4.  Here are a couple of convenient tips I've found for setting up this
     volume group.
 
--   You may have noticed that the default behavior of the Ubuntu server
+-   You may have noticed that the default behavior of the Ubuntu operating system server
     installation (as well as most templates) is to use LVM; however, it
     typically creates only a single physical volume, a single volume
     group and also consumes all space on the device.

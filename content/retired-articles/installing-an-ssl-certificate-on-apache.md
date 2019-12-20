@@ -5,8 +5,8 @@ title: Install an SSL certificate on Apache
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-10-02'
-last_modified_by: Shaun Crumpler
+last_modified_date: '2019-12-020'
+last_modified_by: Stephanie Fillmon
 ---
 
 This article describes how to install a Secure Socket Layer (SSL) certificate on your Apache server. There are many SSL vendors that you can choose from. Where you buy your SSL certificate is up to you.
@@ -107,7 +107,7 @@ To reload Apache, run the following command:
 
     # service httpd reload
 
-**Ubuntu**
+**Ubuntu operating systems**
 
     # /etc/init.d/apache2 reload
 

@@ -5,7 +5,7 @@ title: Migrate your Drupal database to Cloud Servers
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 ---
 
@@ -115,7 +115,7 @@ prompt and you'll see something similar to the following:
 
 Next we need to configure our firewall to keep our server protected on
 the Internet. The firewall that is built into your server is called
-*iptables* and works very well. By default Ubuntu does not have any
+*iptables* and works very well. By default the Ubuntu operating system does not have any
 firewall rules configured so we will need to configure them.
 
 We will configure our rules based on the following assumptions:
@@ -133,7 +133,7 @@ you out of your server!** If you do this you must use the console as the
 Please note that these are basic rules and may not cover all situations
 or server configurations.
 
-For more information about iptables rules with Ubuntu, check out the
+For more information about iptables rules with Ubuntu operating systems, check out the
 following link: <https://help.ubuntu.com/community/IptablesHowTo>
 
 Let's start by adding a rule to allow established traffic to our server:
