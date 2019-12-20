@@ -5,8 +5,8 @@ title: Monitor Network Traffic
 type: article
 created_date: '2012-04-04'
 created_by: Rackspace Support
-last_modified_date: '2019-05-28'
-last_modified_by: William Loy
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -18,7 +18,7 @@ This article discusses the following topics:
 
 -   [Monitoring in Linux](#monitoring-in-linux)
 -   [About the VNstat and IPtraf tools](#about-the-vnstat-and-iptraf-tools)
--   [Ubuntu and Debian installation](#ubuntu-and-debian-installation)
+-   [Ubuntu operating systems and Debian installation](#ubuntu-operating-systems-and-debian-installation)
 -   [CentOS and RHEL installation](#centos-and-rhel-installation)
 -   [Fedora (16+) installation](#fedora-installation)
 -   [openSUSE installation](#opensuse-installation)
@@ -78,13 +78,13 @@ gathers a variety of figures including the following types:
 The following sections provide steps to install these VNstat and IPtraf in various
 operating systems.
 
-#### Ubuntu and Debian installation
+#### Ubuntu operating systems and Debian installation
 
-##### Install VNstat and IPtraf on Ubuntu and Debian
+##### Install VNstat and IPtraf on Ubuntu operating systems and Debian
 
 Use the following steps to install VNstat and IPtraf on an Ubunto&reg; or Debian&reg; slice:
 
-1. Use the following commands to search for the following packages from Ubuntu and Debian repositories:
+1. Use the following commands to search for the following packages from Ubuntu operating systems and Debian repositories:
 
        apt-get update
 
@@ -346,7 +346,7 @@ The following examples show some common IPtraf commands with sample output:
 ### Conclusion
 
 After you install these packages, you have full network monitoring in place.
-VNstat monitors the servers' internal and external network interfaces for all 
+VNstat monitors the servers' internal and external network interfaces for all
 sent and received traffic. IPtraf allows you to use a utility from the shell to
 gauge network traffic in real time. These tools are invaluable and provide insight
 into your overall operations.

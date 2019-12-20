@@ -5,7 +5,7 @@ title: Rackspace mitigations against CPU speculative execution vulnerabilities
 type: article
 created_date: '2018-01-09'
 created_by: Marc Nourani
-last_modified_date: '2018-08-15'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
@@ -15,9 +15,9 @@ This page lists various Rackspace services and their current mitigation status f
 vulnerabilities. In some cases, customers might need to take additional action to mitigate these vulnerabilities.
 
 **Spectre and Meltdown**
-  
+
 Details related to the vulnerabilities can be found in:
-  
+
   - [CVE-2017-5753](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5753)
   - [CVE-2017-5715](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5715)
   - [CVE-2017-5754](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-5754)
@@ -25,7 +25,7 @@ Details related to the vulnerabilities can be found in:
 **Spectre and Meltdown variants 3A and 4** (May 21, 2018)
 
 Details related to the vulnerabilities can be found in:
-  
+
   - [CVE-2018-3639](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3639)
   - [CVE-2018-3640](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3640)
   - [US Cert's Alert TA18-141A](https://www.us-cert.gov/ncas/alerts/TA18-141A)
@@ -33,7 +33,7 @@ Details related to the vulnerabilities can be found in:
 **L1 Terminal Fault (L1TF) or Foreshadow** (August 14, 2018)
 
 Details related to the vulnerabilities can be found in:
-  
+
   - [CVE-2018-3615](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3615)
   - [CVE-2018-3620](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3620)
   - [CVE-2018-3646](http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-3646)
@@ -58,7 +58,7 @@ available. If we need to take action that would impact customers, we will provid
 | **Rackspace Application Services** | Currently, normal Rackspace Application Services patching processes will apply. Rackspace will add vendor patches to the patching schedule as they become available and are tested by Rackspace.<br/><br/>Customers who want to update devices in advance of typical patching windows should contact their support team.<br/><br/>For more Linux information, see [Linux OS mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/linux-os-mitigations-against-cpu-speculative-execution-vulnerabilities/).<br/><br/>For more Hypervisor information see [VMware OS mitigations against CPU speculative execution vulnerabilities](/how-to/vmware-os-mitigations-against-cpu-speculative-execution-vulnerabilities).<br/><br/>For more Windows information, see [Windows OS mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/windows-os-mitigations-against-cpu-speculative-execution-vulnerabilities/). |
 | **Rackspace Managed Security (RMS)** | Customers should review the platform-specific guidance provided on this page. Customers who have specific questions regarding RMS services or other security concerns should contact the RMS Customer Experience Team. |
 | **Rackspace Network Infrastructure** | Engineers have confirmed with all vendors that these vulnerabilities cannot be exploited on the Rackspace network infrastructure. |
-| **Rackspace Private Cloud** | **RedHat® OpenStack® Platform**: Rackspace has provided guidance to affected customers that patches are currently available.<br/><br/>**Rackspace Private Cloud Ubuntu®**: Rackspace will provide additional guidance to affected customers, including options to patch or upgrade OpenStack release based on Ubuntu kernel version.<br/><br/>**Guest Instances**: Rackspace recommends that customers follow guidance provided by the applicable OS vendor. <br/><br/>For more RPC information, see [RPC mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/rpc-mitigations-against-cpu-speculative-execution-vulnerabilities/). |
+| **Rackspace Private Cloud** | **RedHat® OpenStack® Platform**: Rackspace has provided guidance to affected customers that patches are currently available.<br/><br/>**Rackspace Private Cloud Ubuntu® operating systems**: Rackspace will provide additional guidance to affected customers, including options to patch or upgrade OpenStack release based on Ubuntu operating system kernel version.<br/><br/>**Guest Instances**: Rackspace recommends that customers follow guidance provided by the applicable OS vendor. <br/><br/>For more RPC information, see [RPC mitigations against CPU speculative execution vulnerabilities](https://support.rackspace.com/how-to/rpc-mitigations-against-cpu-speculative-execution-vulnerabilities/). |
 | **Rackspace Public Cloud** | The vast majority of Rackspace Public Cloud infrastructure is not vulnerable and the remaining threat vectors are minimal.  For security reasons, we won't disclose the exact nature of those vectors but they are aligned with similar industry-leading cloud providers. To date, we have consciously executed remediation with non-impacting mitigation work. While new information from our upstream vendors could alter this stance, we do not anticipate impactful action to our customers associated with remediation of these vulnerabilities.  For more information, see [Rackspace Public Cloud OS mitigations against CPU speculative execution vulnerabilities](/how-to/rackspace-public-cloud-os-mitigations-against-cpu-speculative-execution-vulnerabilities).<br/><br/>Rackspace has provided additional guidance directly to Managed Operations customers on Rackspace Public Cloud.<br/><br/>We suggest that Managed Infrastructure customers on Rackspace Public Cloud follow guidance provided by the applicable operating system vendor. |
 | **Storage and Managed Backup** | Risk to Managed Storage appliances and Managed Backup services are assessed to be minimal. |
 | **VMware®** | Customers who elect to patch hypervisors with the updates currently available should contact the VMware support team for further assistance.<br/><br/>For guest VMs, we recommend that customers also follow the guidance provided for Windows OS or Linux OS, as applicable.<br/><br/> For more information see [VMware OS mitigations against CPU speculative execution vulnerabilities](/how-to/vmware-os-mitigations-against-cpu-speculative-execution-vulnerabilities). |

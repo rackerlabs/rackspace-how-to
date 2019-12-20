@@ -5,8 +5,8 @@ title: Linux Spheres of Support for Dedicated and Managed Operations
 type: article
 created_date: '2017-03-03'
 created_by: Alex Juarez
-last_modified_date: '2018-12-17'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
@@ -151,7 +151,7 @@ Although we don't support all technologies, we do offer *reasonable endeavor* su
 -  **Cloud Files**: Integration with Cloud Files is supported via the API; however, no development
    support is offered to help use Cloud Files via the API.
 -  **DNS**: Rackspace supports the use of the public Rackspace name servers for DNS. Bind/named are *not* supported at this time.
--  **Firewall**: Support is provided for iptables, Ubuntu ufw, and fail2ban.
+-  **Firewall**: Support is provided for iptables, Ubuntu operating system ufw, and fail2ban.
 -  **Load Balancing**: Cloud Load Balancers are supported.
 
 ### Third-party repositories

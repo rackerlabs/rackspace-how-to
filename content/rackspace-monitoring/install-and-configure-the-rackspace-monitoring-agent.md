@@ -5,8 +5,8 @@ title: Install and configure the Rackspace Monitoring Agent
 type: article
 created_date: '2012-11-13'
 created_by: Susan Million
-last_modified_date: '2016-01-22'
-last_modified_by: Constanze Kratel
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
@@ -32,13 +32,13 @@ This article describes the following tasks:
 -   Uninstall the monitoring agent
 
 ### Install the monitoring agent
-Rackspace Monitoring agents are packaged in the standard way for the ease of installation process.  To check out 
+Rackspace Monitoring agents are packaged in the standard way for the ease of installation process.  To check out
 individual steps for each platform, please see the [Install and configure the agent](https://developer.rackspace.com/docs/rackspace-monitoring/v1/getting-started/install-configure/) section of the *Rackspace Monitoring Developer Guide*.
 
 We recommend using the Rackspace Intelligence web-based interface to install
 and configure the monitoring agent. The Rackspace Intelligence
-interface provides easy installation and set up based on the Windows or Linux platform you select. 
-The Rackspace Intelligence interface also provides graphs for visualizing data collected by Rackspace Monitoring. 
+interface provides easy installation and set up based on the Windows or Linux platform you select.
+The Rackspace Intelligence interface also provides graphs for visualizing data collected by Rackspace Monitoring.
 
 Rackspace Intelligence has many more monitoring
 configuration and visualization options than the Cloud Control Panel,
@@ -125,9 +125,9 @@ to the agent every three to four weeks.
 Use the standard method for your operating system to uninstall the
 agent.
 
-#### Ubuntu and Debian
+#### Debian and Ubuntu operating systems
 
-On Ubuntu and Debian systems, run the following command:
+On Debian and Ubuntu operating systems, run the following command:
 
     sudo apt-get remove rackspace-monitoring-agent
 

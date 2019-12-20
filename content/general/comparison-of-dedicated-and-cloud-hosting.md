@@ -5,7 +5,7 @@ title: Comparison of dedicated and cloud hosting
 type: article
 created_date: '2012-02-21'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: undefined
 product_url: undefined
@@ -56,7 +56,7 @@ your business.
   </tr>
   <tr>
     <td><strong>Operating system availability</strong></td>
-    <td>Red Hat Enterprise Linux<br>CentOS<br>Debian<br>Ubuntu<br>Windows Server (from 2008 R2 to 2016)</td>
+    <td>Red Hat Enterprise Linux<br>CentOS<br>Debian<br>Ubuntu operating systems<br>Windows Server (from 2008 R2 to 2016)</td>
     <td>Same as dedicated
     <td>Please see the following two links for details: <a href="/how-to/cloud-servers-with-managed-operations-support-for-linux">Cloud Servers with Managed Operations support for Linux</a> and <a href="/how-to/cloud-servers-with-managed-operations-support-for-windows">Cloud Servers with Managed Operations support for Windows</a>.</td>
   </tr>
