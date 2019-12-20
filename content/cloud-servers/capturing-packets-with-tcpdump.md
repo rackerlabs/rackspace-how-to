@@ -5,7 +5,7 @@ title: Capture Packets with Tcpdump
 type: article
 created_date: '2013-04-25'
 created_by: Rose Contreras
-last_modified_date: '2013-04-25'
+last_modified_date: '2019-12-20'
 last_modified_by: Jered Heeschen
 product: Cloud Servers
 product_url: cloud-servers
@@ -19,8 +19,8 @@ packets you want to see.
 ### Installation
 
 In this example, we are using Ubuntu 8.10, but the installation
-steps are similar for other Linux distributions. The following command
-installs tcpdump under Ubuntu:
+steps are similar for other Linux distributions. Use the following command
+to install tcpdump on a server running the Ubuntu operating system:
 
     sudo apt-get install tcpdump
 
@@ -29,7 +29,7 @@ installs tcpdump under Ubuntu:
     sudo tcpdump [options] [filter expression]
 
 By default, tcpdump captures packets on eth0. We can specify a
-different interface using the `-i` command line flag. This command 
+different interface using the `-i` command line flag. This command
 captures all packets on the eth1 interface:
 
     sudo tcpdump -i eth1
@@ -51,7 +51,7 @@ command below to see incoming packets.
 
     sudo tcpdump dst port 80
 
-You can also capture packets for a specific host. This command 
+You can also capture packets for a specific host. This command
 catches packets coming only from IP 1.2.3.4:
 
     sudo tcpdump src host 1.2.3.4

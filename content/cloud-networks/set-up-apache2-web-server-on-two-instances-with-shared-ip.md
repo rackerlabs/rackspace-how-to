@@ -5,8 +5,8 @@ title: Set up Apache2 web server on two instances with shared ip
 type: article
 created_date: '2016-08-15'
 created_by: Rackspace Support
-last_modified_date: '2016-08-15'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -17,10 +17,10 @@ need to change addresses when the second server seamlessly takes over from the f
 the first server goes down.
 
 The use case in this article shows an Apache web server deployed on two
-Ubuntu cloud servers with a shared IP address on PublicNet that is used
-to reach the web servers. A heartbeat is used as the protocol to determine
-which cloud server is currently the "owner" of the shared IP address and
-will respond to a web request.
+cloud servers running the Ubuntu operating system with a shared IP address on
+PublicNet that is used to reach the web servers. A heartbeat is used as the
+protocol to determine which cloud server is currently the "owner" of the
+shared IP address and will respond to a web request.
 
 The following sections show you how to:
 
@@ -44,14 +44,14 @@ Perform the following steps from your local computer.
 1. Boot the master server. Save the server ID for future reference.
 
    *Request:*
-   
+
         curl -s https://dfw.servers.api.rackspacecloud.com/v2/5831008/servers
            -X POST -H "Content-Type: application/json"
            -H "X-Auth-Token: $token"
            -d " {"server": {"name": "isol1", "imageRef": "adb78bf4-81ae-4dce-a417-8eb2b7f7f0c3", "flavorRef": "2", "max_count": 1, "min_count": 1, "networks": [{"uuid": "00000000-0000-0000-0000-000000000000"}, {"uuid": "11111111-1111-1111-1111-111111111111"}, {"uuid": "7af32f1c-85de-44c5-be68-4b1465566683"}]}}"
 
    *Response:*
-   
+
         {"server": {
             "OS-DCF:diskConfig": "AUTO",
             "id": "96bbd712-0f64-4146-bfb2-b2bd91f20319",
@@ -73,7 +73,7 @@ Perform the following steps from your local computer.
            -H "X-Auth-Token: $token"
 
    *Response:*
-   
+
         {"server": {
             "OS-DCF:diskConfig": "AUTO",
             "OS-EXT-STS:power_state": 1,
@@ -126,22 +126,22 @@ Perform the following steps from your local computer.
    a scheduler hint. Save the server ID for future reference.
 
    *Request:*
-   
+
         curl -vv -s -k https://dfw.servers.api.rackspacecloud.com/v2/5831008/servers
            -X POST -H "Content-Type: application/json"
            -H "X-Auth-Token: $token"
-           -d "{"server":{"name": "isol2","imageRef": "adb78bf4-81ae-4dce-a417-8eb2b7f7f0c3","os:scheduler_hints": {"public_ip_zone:near": 
+           -d "{"server":{"name": "isol2","imageRef": "adb78bf4-81ae-4dce-a417-8eb2b7f7f0c3","os:scheduler_hints": {"public_ip_zone:near":
              ["96bbd712-0f64-4146-bfb2-b2bd91f20319"]
            },
            "flavorRef": "2",
            "max_count": 1,
            "min_count": 1,
-           "networks": 
+           "networks":
              [
                {"uuid": "00000000-0000-0000-0000-000000000000"
-               }, 
+               },
                {"uuid": "11111111-1111-1111-1111-111111111111"
-               }, 
+               },
                {"uuid": "7af32f1c-85de-44c5-be68-4b1465566683"
                }
               ]
@@ -149,7 +149,7 @@ Perform the following steps from your local computer.
           }&rdquo;
 
    *Response:*
-   
+
         {"server": {
             "OS-DCF:diskConfig": "AUTO",
             "id": "ffec9d55-2d54-4718-bc3a-0d47fb8c52c1",
@@ -165,13 +165,13 @@ Perform the following steps from your local computer.
    the same publicIPZoneId as master server.
 
    *Request:*
-   
+
       curl -s https://dfw.servers.api.rackspacecloud.com/v2/5831008/servers/ffec9d55-2d54-4718-bc3a-0d47fb8c52c1
            -X GET -H "Content-Type: application/json"
            -H "X-Auth-Token: $token"
 
    *Response:*
-   
+
         {"server": {
             "OS-DCF:diskConfig": "AUTO",
             "OS-EXT-STS:power_state": 1,
@@ -228,13 +228,13 @@ Perform the following steps from your local computer.
    PublicNet (network ID that is all zeroes). Find the sections of the response where the value of device_id matches the master server, and save the corresponding ID (which is the port ID) for future reference. Do the same thing for the slave server.
 
    *Request:*
-   
+
         curl -s https://dfw.networks.api.rackspacecloud.com/v2.0/ports?network_id=00000000-0000-0000-0000-000000000000
            -X GET
            -H "X-Auth-Token: $token" | python -m json.tool
 
    *Response:*
-   
+
         {"ports": [
             {
                "admin_state_up": true,
@@ -293,23 +293,23 @@ Perform the following steps from your local computer.
    servers. For future reference, note the IP address and the IP address ID in the response.
 
    *Request:*
-   
+
         curl -s https://dfw.networks.api.rackspacecloud.com/v2.0/ip_addresses
            -X POST -H "Content-Type: application/json"
            -H "X-Auth-Token: $token"
            -d " {"ip_address":{"network_id": "00000000-0000-0000-0000-000000000000","port_ids": ["a1bb7074-9ccc-4bc0-991e-7847de374af3", "0b5a23ec-be78-4ea3-9251-b64444236c1d"],"tenant_id": "5831008","version": 4}}"
 
    *Response:*
-   
+
         {
-          "ip_address": 
+          "ip_address":
             {
               "subnet_id": "535ca638-a358-4d02-8271-1e6f795f8a0c",
               "version": 4,
               "address": "10.23.233.31",
               "network_id": "00000000-0000-0000-0000-000000000000",
               "tenant_id": "5831008",
-              "port_ids": 
+              "port_ids":
                 [
                  "a1bb7074-9ccc-4bc0-991e-7847de374af3",
                  "0b5a23ec-be78-4ea3-9251-b64444236c1d"
@@ -322,22 +322,22 @@ Perform the following steps from your local computer.
 3. Confirm that both server ports share the IP address.
 
    *Request:*
-   
-        curl 
+
+        curl
         -s https://dfw.networks.api.rackspacecloud.com/v2.0/ip_addresses
         -X GET -H "Content-Type: application/json"
         -H "X-Auth-Token: $token"
 
    *Response:*
-   
-        "ip_addresses": 
+
+        "ip_addresses":
           {
             [
               {
                 "address": "2001:4801:787f:205:a8bb:ccff:fe00:108",
                 "id": "068652fe-33e2-44b6-9ad3-c0362e5d7e18",
                 "network_id": "00000000-0000-0000-0000-000000000000",
-                "port_ids": 
+                "port_ids":
                   [
                     "0b5a23ec-be78-4ea3-9251-b64444236c1d"
                   ],
@@ -350,7 +350,7 @@ Perform the following steps from your local computer.
                "address": "10.183.232.82",
                "id": "59202862-7b4c-4bad-bcef-6c33dcfc29d7",
                "network_id": "11111111-1111-1111-1111-111111111111",
-               "port_ids": 
+               "port_ids":
                  [
                    "3d1269a5-090b-4fe7-b839-4dafc8b42425"
                  ],
@@ -363,7 +363,7 @@ Perform the following steps from your local computer.
                "address": "10.23.233.31",
                "id": "e201f500-6d57-4901-b7a0-3842a3a32207",
                "network_id": "00000000-0000-0000-0000-000000000000",
-               "port_ids": 
+               "port_ids":
                  [
                   "0b5a23ec-be78-4ea3-9251-b64444236c1d",
                   "a1bb7074-9ccc-4bc0-991e-7847de374af3"
@@ -377,7 +377,7 @@ Perform the following steps from your local computer.
                "address": "10.23.233.89",
                "id": "f2263b79-221d-46c0-9436-2b4bf98df227",
                "network_id": "00000000-0000-0000-0000-000000000000",
-               "port_ids": 
+               "port_ids":
                  [
                   "a1bb7074-9ccc-4bc0-991e-7847de374af3"
                  ],
@@ -392,19 +392,19 @@ Perform the following steps from your local computer.
 4. Associate the shared IP address with the master server.
 
    *Request:*
-   
-        curl 
-          -vv 
-          -s 
-          -k 
+
+        curl
+          -vv
+          -s
+          -k
           https://dfw.servers.api.rackspacecloud.com/v2/5831008/servers/96bbd712-0f64-4146-bfb2-b2bd91f20319/ip_associations/e201f500-6d57-4901-b7a0-3842a3a32207
           -X PUT -H "Content-Type: application/json"
           -H "X-Auth-Token: $token"
 
    *Response:*
-   
+
         {
-         "ip_association": 
+         "ip_association":
            {
              "id": "e201f500-6d57-4901-b7a0-3842a3a32207",
              "address": "10.23.233.31"
@@ -415,19 +415,19 @@ Perform the following steps from your local computer.
 
    *Request:*
 
-        curl 
-          -vv 
-          -s 
-          -k 
+        curl
+          -vv
+          -s
+          -k
           https://dfw.servers.api.rackspacecloud.com/v2/5831008/servers/ffec9d55-2d54-4718-bc3a-0d47fb8c52c1/ip_associations/e201f500-6d57-4901-b7a0-3842a3a32207
-          -X PUT 
+          -X PUT
           -H "Content-Type: application/json" <br>
           -H "X-Auth-Token: $token"
 
    *Response:*
-   
+
         {
-          "ip_association": 
+          "ip_association":
             {
               "id": "e201f500-6d57-4901-b7a0-3842a3a32207",
               "address": "10.23.233.31"
@@ -442,15 +442,15 @@ indicates where to perform the step.
 1. (Master) Install Apache on the master server by running the following
    commands:
 
-        sudo apt-get update 
-        sudo apt-get install heartbeat 
+        sudo apt-get update
+        sudo apt-get install heartbeat
         sudo apt-get install apache2
 
 2. (Master) Create the ***/etc/heartbeat/authkeys*** file on the master server
    and enter the following text. The contents are the same for the master server and the slave server. Substitute your own passphrase.
 
    *File contents:*
-   
+
         auth 1
         1 sha1 YourSecretPassPhrase
 
@@ -463,7 +463,7 @@ indicates where to perform the step.
    server and enter the following contents (with your master server public IP address). The contents are the same for the master server and the slave server.
 
    *File contents:*
-   
+
         master-instance-hostname 10.23.233.113/24
 
 5. (Master) Create the ***/etc/heartbeat/ha.cf*** file on master server and
@@ -472,8 +472,8 @@ indicates where to perform the step.
    *File contents:*
 
         logfacility daemon
-        keepalive 2 
-        deadtime 15 
+        keepalive 2
+        deadtime 15
         warntime 5
         initdead 120
         udpport 694
@@ -495,8 +495,8 @@ indicates where to perform the step.
    and enter the following text. The contents are the same for the master server and the slave server. Substitute your own passphrase.
 
    *File contents:*
-   
-        auth 1 
+
+        auth 1
         1 sha1 YourSecretPassPhrase
 
 8. (Slave) Set the correct permissions on the ***/etc/heartbeat/authkeys***
@@ -508,14 +508,14 @@ indicates where to perform the step.
    server and populate it with the shared IP address (with you master server public IP address). The contents are the same for the master server and the slave server.
 
    *File contents:*
-   
+
         master-instance-hostname 10.23.233.113/24
 
-10. (Slave) Create the ***/etc/heartbeat/ha.cf*** file on the slave server and 
+10. (Slave) Create the ***/etc/heartbeat/ha.cf*** file on the slave server and
     enter the following text. The lines with comments are the ones that have to be modified.
-    
+
     *File contents:*
-   
+
         logfacility daemon
         keepalive 2
         deadtime 15
@@ -530,27 +530,27 @@ indicates where to perform the step.
 
 11. (Slave) Restart the heartbeat on the slave server by running the following
     command:
-    
+
         sudo service heartbeat restart
 
 12. (Master) Set up Apache to respond with the hostname on the master server
     by running the following command:
-    
+
         echo `hostname` > /var/www/html/index.html
 
 13. (Slave) Set up Apache to respond with the hostname on the slave server by
     running the following command:
-    
+
         echo `hostname` > /var/www/html/index.html
 
 14. (Master) Restart Apache on the master server by running the following
     command:
-    
+
         sudo service apache2 restart
 
 15. (Slave) Restart Apache on the slave server by running the following
     command:
-    
+
         sudo service apache2 restart
 
 ### Test the configuration
@@ -564,7 +564,7 @@ local computer. Each step indicates where to perform the step.
         ifconfig
 
    *Response:*
-   
+
         eth0 Link encap:Ethernet HWaddr aa:bb:cc:00:00:e4
         inet addr:10.23.233.89 Bcast:10.23.233.255 Mask:255.255.255.0
         inet6 addr: fe80::a8bb:ccff:fe00:e4/64 Scope:Link
@@ -573,11 +573,11 @@ local computer. Each step indicates where to perform the step.
         TX packets:6016 errors:0 dropped:0 overruns:0 carrier:0
         collisions:0 txqueuelen:1000
         RX bytes:27487494 (27.4 MB) TX bytes:805941 (805.9 KB)
-        
+
         eth0:0 Link encap:Ethernet HWaddr aa:bb:cc:00:00:e4
         inet addr:10.23.233.31 Bcast:10.23.233.255 Mask:255.55.255.0
         UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
-        
+
         eth1 Link encap:Ethernet HWaddr aa:bb:cc:00:00:e5
         inet addr:10.183.232.82 Bcast:10.183.239.255 Mask:255.255.248.0
         inet6 addr: fe80::a8bb:ccff:fe00:e5/64 Scope:Link
@@ -586,10 +586,10 @@ local computer. Each step indicates where to perform the step.
         TX packets:615 errors:0 dropped:0 overruns:0 carrier:0
         collisions:0 txqueuelen:1000
         RX bytes:52142 (52.1 KB) TX bytes:85084 (85.0 KB)
-        
+
         lo Link encap:Local Loopback
         inet addr:127.0.0.1 Mask:255.0.0.0
-        
+
         inet6 addr: ::1/128 Scope:Host
         UP LOOPBACK RUNNING MTU:65536 Metric:1
         RX packets:46268 errors:0 dropped:0 overruns:0 frame:0
@@ -617,7 +617,7 @@ local computer. Each step indicates where to perform the step.
 
 6. (Local computer) Use SSH to connect to the slave server by running the
    following command (substituting your username and your master server IP address):
-   
+
        ssh username@slave_server_ip_address
 
 7. (Local computer) After a few moments, browse to the shared IP address,
@@ -625,7 +625,7 @@ local computer. Each step indicates where to perform the step.
 
 8. (Slave) Validate the eth0 interface configured with shared IP address on
    the slave server by running the following command:
-   
+
         sudo ifconfig
 
    *Response:*
@@ -639,11 +639,11 @@ local computer. Each step indicates where to perform the step.
         TX packets:6662 errors:0 dropped:0 overruns:0 carrier:0
         collisions:0 txqueuelen:1000
         RX bytes:27526381 (27.5 MB) TX bytes:848469 (848.4 KB)
-        
+
         eth0:0 Link encap:Ethernet HWaddr aa:bb:cc:00:01:08
         inet addr:10.23.233.31 Bcast:10.23.233.255 Mask:255.255.255.0
         UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
-        
+
         eth1 Link encap:Ethernet HWaddr aa:bb:cc:00:01:09
         inet addr:10.183.232.104 Bcast:10.183.239.255 Mask:255.255.248.0
         inet6 addr: fe80::a8bb:ccff:fe00:109/64 Scope:Link
@@ -652,7 +652,7 @@ local computer. Each step indicates where to perform the step.
         TX packets:16 errors:0 dropped:0 overruns:0 carrier:0
         collisions:0 txqueuelen:1000
         RX bytes:0 (0.0 B) TX bytes:1296 (1.2 KB)
-        
+
         lo Link encap:Local Loopback
         inet addr:127.0.0.1 Mask:255.0.0.0
         inet6 addr: ::1/128 Scope:Host

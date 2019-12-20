@@ -5,8 +5,8 @@ title: Check running services on Linux
 type: article
 created_date: '2012-06-21'
 created_by: Rackspace Support
-last_modified_date: '2019-01-24'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -23,7 +23,7 @@ command references a service by using its init script, which is stored in the
 If you don't know the name that the system uses for a service, check either
 of the preceding directories by using the `ls` command followed by the
 directory name. Some names vary depending on your distribution. For example,
-Apache&reg; is `httpd` on CentOS&reg; and `apache2` on Ubuntu&reg;.
+Apache&reg; is `httpd` on CentOS&reg; and `apache2` on the Ubuntu&reg; operating system.
 
 **Note**: Many newer Linux&reg; distributions use `systemd` instead of
 `netstat` to check services. If you're using `systemd`, replace all

@@ -5,7 +5,7 @@ title: Connect to a cloud server with Filezilla by using SFTP
 type: article
 created_date: '2019-01-16'
 created_by: Rackspace Community
-last_modified_date: '2019-01-28'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -18,7 +18,7 @@ SSH File Transfer Protocol (SFTP).
 encrypts the data transferred to the FTP server and prevents unauthorized access
 during the transmission.
 
-Cloud servers running Linux&reg; come with the `openssh` package that includes and configures 
+Cloud servers running Linux&reg; come with the `openssh` package that includes and configures
 SFTP by default.
 
 Like Secure Shell (SSH), SFTP runs on port 22 by default on cloud servers. If you have changed
@@ -40,12 +40,12 @@ following information during the configuration process:
 Use the following steps to configure Filezilla to use SFTP:
 
 1. Launch Filezilla and input the following information:
-   
+
    - **Host**: Your servers public IP address
    - **Username**: root (or another username if you created one on the server)
    - **Password**: The password for the root user or any other user being used
-   - **Port**: Port 22 by default (unless you changed the port for SSH, and then use that port) 
-  
+   - **Port**: Port 22 by default (unless you changed the port for SSH, and then use that port)
+
 2. Click **QuickConnect**.
 
 If you experience any issues, check the server logs to see if connections are reaching the
@@ -55,6 +55,6 @@ server by using the following command:
 
     check /var/log/secure
 
-**Ubuntu&reg; and Debian&reg;**
+**Ubuntu&reg; operatig system and Debian&reg;**
 
     check in /var/log/auth.log

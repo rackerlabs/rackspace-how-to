@@ -5,8 +5,8 @@ title: Back up your files with rsync
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-11-01'
-last_modified_by: Cat lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -19,9 +19,17 @@ Although you could download every individual file when you want to save them, us
 
 `rsync` is available on most Linux distributions by default. If you need to install it manually, however, you can do so by using your distribution's package manager. For example, the following commands are some common Linux&reg; `rsync` installation commands:
 
-    Ubuntu: sudo aptitude install rsync
-    Gentoo: sudo emerge rsync
-    CentOS: sudo yum install rsync
+**The Ubuntu operating system**
+
+    sudo aptitude install rsync
+
+**Gentoo**
+
+    sudo emerge rsync
+
+**CentOS**
+
+    sudo yum install rsync
 
 **Note:** If you are downloading files to another system, both systems must have `rsync` installed.
 
@@ -38,45 +46,45 @@ To back up your files from one server to another, run the following command on t
 
 The following explanation covers each part of the command:
 
--  `-e 'ssh -p 30000'` 
-    
+-  `-e 'ssh -p 30000'`
+
     Ensures that `rsync` uses the SSH protocol and sets the port.
 
--  `-avl` 
-   
+-  `-avl`
+
    A shortcut that contains the following options:
 
-    -  `-a` 
-      
+    -  `-a`
+
        **Archive**. Saves the permission settings for the files.
-       
-    -  `-v` 
-    
+
+    -  `-v`
+
        **Verbose**. Returns more information about what `rsync` is doing. You can change how much information `rsync` returns by eliminating `-v`, or you can request more information with `-vv` or `-vvv`. Setting verbose mode with `-vvv` returns all information about the `rsync` process.
-       
-    -  `-l` 
-    
+
+    -  `-l`
+
        **Links**. Preserves any symbolic links (symlinks) that you created on the source server.
-       
-    -  `-P` 
-    
+
+    -  `-P`
+
        **Progress**. Displays the progress of each file transfer.
 
--  `--delete` 
+-  `--delete`
 
    Deletes files from the destination folder that are no longer required (that is, they have been deleted from the originating folders). Typically, you delete files to save space, but if you think you might need it later, ensure that you have a backed-up copy before deleting it.
 
--  `--stats` 
+-  `--stats`
 
    Adds more output regarding the file transfer status.
 
--  `demo@123.45.67.890:/home/demo` 
+-  `demo@123.45.67.890:/home/demo`
 
    The originating folders to back up.
 
    **Note:** `rsync` differentiates between `/home/demo` and `/home/demo/`. With the trailing slash, `rsync` copies the contents of the directory, but doesn't recreate the directory. This example backs up a folder from one system to another, so omitting the trailing slash replicates the entire directory structure.
 
--  `/backup/` 
+-  `/backup/`
 
    Identifies the folder on the backup server in which to place the files.
 
@@ -100,4 +108,3 @@ Your output should look similar to the following example:
     ...
 
 In the preceding example, `rsync` receives a list of 31,345 files and, because this is the first time `rsync` has been run, downloads them all. When `rsync` runs again, only files that have changed since the last backup are synchronized to the backup folder.
-

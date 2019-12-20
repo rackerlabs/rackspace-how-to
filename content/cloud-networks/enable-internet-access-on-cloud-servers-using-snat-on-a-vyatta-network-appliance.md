@@ -5,8 +5,8 @@ title: Enable Internet Access on Cloud Servers Using SNAT on a Vyatta Network Ap
 type: article
 created_date: '2013-01-08'
 created_by: Sameer Satyam
-last_modified_date: '2015-09-29'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Networks
 product_url: cloud-networks
 ---
@@ -145,9 +145,9 @@ In operational mode, use the following command:
 You'll need to configure a default gateway on the server. The gateway
 address should be the interface of the Vyatta Appliance that is on the
 same isolated network that the server belongs to. An example of a static
-route configured on an Ubuntu server is shown below. 192.x.x.129 is the
-IP address of the interface on the Vyatta appliance that is being used
-as the gateway.
+route configured on a server running the Ubuntu operating system is shown
+below. 192.x.x.129 is the IP address of the interface on the Vyatta appliance
+that is being used as the gateway.
 
     root@ubun-2:~# route add -net 0.0.0.0/0 gw 192.x.x.129
 

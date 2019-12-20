@@ -5,8 +5,8 @@ title: Configure vhosts on a LAMP stack
 type: article
 created_date: '2019-02-01'
 created_by: Rackspace Community
-last_modified_date: '2019-02-04'
-last_modified_by: William Loy
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -24,7 +24,7 @@ The existing **index.html** file is the standard Apache test page. You can immed
 
 ### How to configure vhosts
 
-**Note:** In Ubuntu&reg;, each vhost has its own separate configuration file, and is then enabled in Apache.
+**Note:** On the Ubuntu&reg; operating system, each vhost has its own separate configuration file, and is then enabled in Apache.
 
 Use the following instructions to configure your vhosts:
 
@@ -96,5 +96,3 @@ You configure the vhosts for all three customers by using the following command 
             ├── site3.com
 
 Each directory below the vhosts directory is a _document root_ for the listed site. A document root is a directory that is stored on your host's servers and that is designated for holding web pages. As HTTP requests come into the server, Apache determines which domain the request is for, then routes the request to the appropriate document root, as specified in the vhosts configuration file.
-
-

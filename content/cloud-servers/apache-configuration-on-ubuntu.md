@@ -1,23 +1,23 @@
 ---
-permalink: apache-configuration-on-ubuntu/
+permalink: configure-apache-on-the-ubuntu-operating-system/
 audit_date: '2016-06-21'
-title: Configure Apache on Ubuntu
+title: Configure Apache on the Ubuntu operating system
 type: article
 created_date: '2012-07-23'
 created_by: Rackspace Support
-last_modified_date: '2016-06-21'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Ubuntu uses a different Apache layout than is used in non-Debian based operating systems. The differences are small, but helpful in configuring and deploying websites. This article explains some of the site and module configuration settings for Apache on Ubuntu, and describes how to enable and disable sites and modules as needed.
+The Ubuntu operating system uses a different Apache layout than is used in non-Debian based operating systems. The differences are small, but helpful in configuring and deploying websites. This article explains some of the site and module configuration settings for Apache on the Ubuntu operating system, and describes how to enable and disable sites and modules as needed.
 
 ### Before you begin
 
-Use `aptitude` to install Apache on your Ubuntu server.
+Use `aptitude` to install Apache on your server running the Ubuntu operating system.
 
-The advantage of using `aptitude` is that you will get any security updates from Ubuntu (if and when distributed) and dependencies are automatically installed.
+The advantage of using `aptitude` is that you will get any security updates from the Ubuntu operating system (if and when distributed) and dependencies are automatically installed.
 
 ### View the configuration file
 

@@ -5,8 +5,8 @@ title: Ensure servers reboot successfully
 type: article
 created_date: '2019-01-21'
 created_by: Rackspace Community
-last_modified_date: '2019-01-21'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -63,7 +63,7 @@ server reboots. To learn how to perform this task, select the following
 resource that corresponds to your server's operating system (OS):
 
 - Windows: [Prepare to migrate a Windows server](https://support.rackspace.com/how-to/prepare-to-migrate-a-windows-server/#ensureAutoStart)
-- Ubuntu&reg;: [UPDATE-RC.D(8)](https://manpages.debian.org/wheezy/sysv-rc/update-rc.d.8.en.html)
+- Ubuntu&reg; operating system: [UPDATE-RC.D(8)](https://manpages.debian.org/wheezy/sysv-rc/update-rc.d.8.en.html)
 - RHEL&reg; and CentOS&reg;: [Using the chkconfig utility](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/s2-services-chkconfig)
 
 ### Ensure that iptables or Windows Firewall rules are saved and configured to restart on reboot

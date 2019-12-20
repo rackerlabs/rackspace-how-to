@@ -5,8 +5,8 @@ title: Connect to a server by using SSH on Linux or Mac OS X
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2018-11-13'
-last_modified_by: Cat lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -62,7 +62,8 @@ step and delete the record of the old SSH host key as follows:
 On your *local* computer, edit the SSH `known_hosts` file and remove any
 lines that start with your cloud server's IP address.
 
-**Note:** Use the editor of your choice, such as `nano` on Debian or Ubuntu servers
+**Note:** Use the editor of your choice, such as `nano` on Debian or the
+Ubuntu operating system
 or `vi` on RPM or CENTOS servers.  For simplicity, this article just uses `nano`. If you prefer to use `vi`,
 substitute `vi` for `nano` in the edit commands.
 For more on using `nano`, see

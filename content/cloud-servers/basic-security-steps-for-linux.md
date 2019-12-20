@@ -5,8 +5,8 @@ title: Basic security steps for Linux
 type: article
 created_date: '2019-01-25'
 created_by: Rackspace Community
-last_modified_date: '2019-01-28'
-last_modified_by: William Loy
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -16,7 +16,7 @@ This article discusses basic security settings for an initial setup of a Linux&r
 
 ### Root account security
 
-**Note:** Ubuntu&reg; has disabled the root account by default. Ubuntu users should begin at [disabling root login](#disabling-root-login).
+**Note:** The Ubuntu&reg; operating system has disabled the root account by default. If you use the Ubuntu operating system, begin at [disabling root login](#disabling-root-login).
 
 This section covers the importance of root account security and the steps to take to make root more secure.
 Rather than disabling the root account, you should change the password to an unreadable string.
@@ -79,10 +79,10 @@ Manual changes to the **/boot/grub2/grub.cfg** file persist when new kernel vers
 
 Use the steps below for distributions that use GRUB2:
 
-1. Run the following command: 
+1. Run the following command:
 
    `grub2-mkpasswd-pbkdf2`
-    
+
    You are prompted to set the password.
 
     1. Enter the new password.
@@ -91,7 +91,7 @@ Use the steps below for distributions that use GRUB2:
 
     3. Copy the resulting encrypted password, starting at ```grub.pbkdf2```.
 
-2. Run the following command: 
+2. Run the following command:
 
    `vi /etc/grub.d/40_custom`
 
@@ -108,7 +108,7 @@ You should be able to start the system without any issue or human intervention, 
 
 #### Instructions for distributions that use legacy GRUB
 
-1. Run the following command: 
+1. Run the following command:
 
    `grub-md5-crypt`
 
@@ -118,11 +118,10 @@ You should be able to start the system without any issue or human intervention, 
 
     3. Copy the resulting encrypted password.
 
-2. Run the following command: 
+2. Run the following command:
 
    `vi /boot/grub/menu.lst`
 
 3. Locate the line that begins with ```timeout=```.
 
 4. Create a new line after that line which sets ```password --md5``` _(paste copied password here)_.
-

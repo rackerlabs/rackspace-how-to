@@ -5,14 +5,15 @@ title: Basic cloud server security
 type: article
 created_date: '2011-03-16'
 created_by: Everett Toews
-las_modified_date: '2019-08-07'
-last_modified_by: Cat Lookabaugh
+las_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 This article provides a script to make web servers more secure. Run the
-following script for Ubuntu cloud servers to provide more security than the
+following script for cloud servers running the Ubuntu operating system to
+provide more security than the
 default configuration. While this script helps protect your server, it can't
 prevent an attack. Ensure that you are writing secure application code.
 

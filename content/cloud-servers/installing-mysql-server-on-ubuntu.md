@@ -1,12 +1,12 @@
 ---
-permalink: installing-mysql-server-on-ubuntu/
+permalink: install-mysql-server-on-the-ubuntu-operating-system/
 audit_date: '2018-03-13'
-title: Install MySQL Server on Ubuntu
+title: Install MySQL Server on the Ubuntu operating system
 type: article
 created_date: '2011-07-29'
 created_by: Jered Heeschen
-last_modified_date: '2019-08-23'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -16,22 +16,22 @@ a good choice if you know that you need a database but don't know much about
 all the available options.
 
 This article describes a basic installation of a MySQL database server on
-Ubuntu Linux. You might need to install other packages to let applications use
-MySQL, like extensions for PHP. Check your application documentation for
-details.
+the Ubuntu operating system. You might need to install other packages to let
+applications use MySQL, like extensions for PHP. Check your application
+documentation for details.
 
 ### Install MySQL
 
-Install the MySQL server by using the Ubuntu package manager:
+Install the MySQL server by using the Ubuntu operating system package manager:
 
     sudo apt-get update
     sudo apt-get install mysql-server
 
 The installer installs MySQL and all dependencies.
 
-If the secure installation utility does not launch automatically after the 
+If the secure installation utility does not launch automatically after the
 installation completes, enter the following command:
-     
+
     sudo mysql_secure_installation utility
 
 This utility prompts you to define the mysql root password
@@ -283,7 +283,7 @@ covered here should give you a solid start from which to learn more.
 
 ### Related articles
 
-- [Configure MySQL server on Ubuntu](/how-to/configuring-mysql-server-on-ubuntu)
+- [Configure MySQL server on the Ubuntu operating system](/how-to/configure-mysql-server-on-the-ubuntu-operating-system)
 - [Reset a MySQL root password](/how-to/mysql-resetting-a-lost-mysql-root-password)
 
 
@@ -291,14 +291,14 @@ covered here should give you a solid start from which to learn more.
    {
    "@context": "http://schema.org/",
    "@type": "HowTo",
-   "name":"Install MySQL Server on Ubuntu",
-   "description": "This article describes a basic installation of a MySQL database server on Ubuntu Linux.",
+   "name":"Install MySQL Server on the Ubuntu operating system",
+   "description": "This article describes a basic installation of a MySQL database server on the Ubuntu operating system.",
    "step": [
    	{
    	"@type": "HowToSection",
    	"name": "Install MySQL",
        "position": "1",
-   	"itemListElement": "To install the MySQL server by using the Ubuntu package manager, run the following command: sudo apt-get install mysql-server"
+   	"itemListElement": "To install the MySQL server by using the Ubuntu operating system package manager, run the following command: sudo apt-get install mysql-server"
    	},{
    	"@type": "HowToSection",
    	"name": "Allow remote access and start the service",

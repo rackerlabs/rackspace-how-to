@@ -5,7 +5,7 @@ title: Configure basic security
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2019-06-04'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -72,7 +72,8 @@ for applicable OnMetal steps.
     administrative tasks.
 
 2.  To assign the sudo privileges to the admin user, issue the following
-    command, which invokes the nano editor by default on Ubuntu:
+    command, which invokes the nano editor by default on the Ubuntu operating
+    system:
 
         visudo
 
@@ -83,7 +84,7 @@ for applicable OnMetal steps.
 
 4.  When you are finished adding this line, exit, confirm, and save the
     file as follows:
-    
+
     a. Press **Ctrl-X** to exit.
     b. Press **y** to confirm the changes.
     c. Press **Enter** to save the file as `/etc/sudoers.tmp`.
@@ -290,7 +291,7 @@ the following commands.
 ### Set up iptables in Red Hat
 
 If you are using a Red Hat distribution, iptables works a little
-differently than it does in an Ubuntu distribution. Using the following
+differently than it does on the Ubuntu operating system. Using the following
 commands, you can change your iptables ruleset directly from the command
 line.
 
@@ -408,7 +409,7 @@ command:
 
     sudo service sshd restart
 
-On Ubuntu and some other distributions, the service is called ssh and
+On the Ubuntu operating system and some other distributions, the service is called ssh and
 you restart it with a similar command:
 
     sudo service ssh restart
