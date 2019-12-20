@@ -5,8 +5,8 @@ title: Create your first website on Cloud Servers quickly
 type: article
 created_date: '2013-11-11'
 created_by: David Hendler
-last_modified_date: '2019-01-10'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -189,7 +189,7 @@ Apache is configured to look in a specific directory for content to
 serve on the web. This special directory is referred to as the
 **DocumentRoot**.
 
-On an Ubuntu&reg; server, the DocumentRoot is located at ``/var/www``, so you
+On a server running the Ubuntu&reg; operating system, the DocumentRoot is located at ``/var/www``, so you
 must upload your site file to that directory. Navigate to that directory in
 your SFTP client, then replace the existing **index.html** file with your file.
 

@@ -5,8 +5,8 @@ title: Nova-agent (Linux) and Rackspace agent (Windows)
 type: article
 created_date: '2019-09-27'
 created_by: Brian King
-last_modified_date: '2019-09-27'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -131,7 +131,7 @@ General fixes in order of desirability:
 
 If starting the nova-agent service doesn't work, you can troubleshoot by looking
 at the nova-agent logs. The newest version of nova-agent is now available in EPEL
-and Rackspace's internal, Ubuntu&reg;, and Debian&reg; repositories. Typically, package
+and Rackspace's internal, Ubuntu&reg; operating system, and Debian&reg; repositories. Typically, package
 installation commands (`yum install nova-agent` or `apt-get install nova-agent`)
 should install or update the agent.
 
@@ -159,7 +159,7 @@ Topic | 2.x branch | 1.3.9 branch
 ---|---|---
 **Recommended** <br /> <br /> **install method** | `yum` or `apt` package managers| Download the release from github and run the script
 **Github link** | [2.x link](https://github.com/Rackspace-DOT/nova-agent) | [1.3.9 link](https://github.com/rackerlabs/openstack-guest-agents-unix)
-**OS** <br /> <br /> **compatibility** | Only OS currently supported in <br /> <br /> Rackspace Cloud (Fedora&reg;, <br />  <br /> CoreOS&reg;, Red Hat/CentOS, <br />  <br /> Debian, and Ubuntu; | Supported OS plus some older <br /> <br /> unsupported OS such as <br /> <br /> OpenSuSE&reg;, Gentoo&reg;, FreeBSD, <br /> <br /> and Arch&reg;
+**OS** <br /> <br /> **compatibility** | Only OS currently supported in <br /> <br /> Rackspace Cloud (Fedora&reg;, <br />  <br /> CoreOS&reg;, Red Hat/CentOS, <br />  <br /> Debian, and Ubuntu operating system; | Supported OS plus some older <br /> <br /> unsupported OS such as <br /> <br /> OpenSuSE&reg;, Gentoo&reg;, FreeBSD, <br /> <br /> and Arch&reg;
 **Python3 support** | Yes | No
 
 <br />

@@ -5,8 +5,8 @@ title: Post-migration considerations when migrating from Amazon Web Services
 type: article
 created_date: '2013-07-02'
 created_by: Rackspace Support
-last_modified_date: '2018-11-06'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -30,7 +30,7 @@ authentication on your newly provisioned cloud server. For instructions, see
 the following reference that corresponds to your server's operating system
 (OS) distribution:
 
--   [Ubuntu&reg;](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
+-   [Ubuntu&reg; operating system](https://help.ubuntu.com/community/SSH/OpenSSH/Keys)
 -   [CentOS&reg;](http://wiki.centos.org/HowTos/Network/SecuringSSH)
 -   [openSUSE](http://en.opensuse.org/SDB:OpenSSH_public_key_authentication)
 

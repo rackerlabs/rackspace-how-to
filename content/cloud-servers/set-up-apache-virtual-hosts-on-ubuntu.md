@@ -1,11 +1,11 @@
 ---
-permalink: set-up-apache-virtual-hosts-on-ubuntu/
+permalink: set-up-apache-virtual-hosts-on-the-ubuntu-operating-system/
 audit_date:
-title: Set up Apache virtual hosts on Ubuntu
+title: Set up Apache virtual hosts on the Ubuntu operating system
 type: article
 created_date: '2011-03-09'
 created_by: Rackspace Support
-last_modified_date: '2016-07-08'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -70,7 +70,7 @@ Each interface and port on which Apache is set to listen needs a
 NameVirtualHost directive. You can define the directive only once per
 port.
 
-In the Apache layout for Ubuntu there is a default NameVirtualHost
+In the Apache layout for the Ubuntu operating system there is a default NameVirtualHost
 directive in the `ports.conf` file.
 
 Run the following command to look at the contents of `ports.conf`:
@@ -98,8 +98,8 @@ present - Apache will apply named based virtual host logic and settings
 for HTTP requests made on any available interface (\*) at port 80.
 
 **Note**: The placement of the default NameVirtualHost directive in
-'ports.conf' is new to Ubuntu's Apache layout; prior Ubuntu releases
-placed a similar setting in the default vhost.
+'ports.conf' is new to the Ubuntu operating system's Apache layout; prior
+releases placed a similar setting in the default vhost.
 
 
 ### Define custom virtual hosts
@@ -333,7 +333,7 @@ are On, Off, and Email.
     ServerSignature On
 
 The level of detail in the signature is configured via ServerTokens,
-which cannot be set in the Virtual Hosts file. For Ubuntu's Apache
+which cannot be set in the Virtual Hosts file. For the Ubuntu operating system's Apache
 layout, this is properly set in '/etc/apache2/conf.d/security'. See the
 Apache configuration \#2 NEED LINK article for more details.
 

@@ -5,8 +5,8 @@ title: Set up two-factor authentication by using Google Authenticator
 type: article
 created_date: '2019-01-17'
 created_by: Rackspace Community
-last_modified_date: '2019-01-17'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -65,7 +65,7 @@ Use the following steps to install the module on Debian&reg;-based systems:
 
          service sshd restart
 
-   - On Ubuntu:
+   - On the Ubuntu operating system:
 
          service ssh restart
 
