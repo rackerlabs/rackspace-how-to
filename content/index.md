@@ -13,7 +13,8 @@ permalink: /
 				  <li><a id="gs-ctrl" class="inactive">Getting Started</a></li>
 					<li><a id="cloud-ctrl" class="inactive">Cloud Services</a></li>
 					<li><a id="office-ctrl" class="inactive">Cloud Office</a></li>
-					<li><a id="cloud=ctrl" class"inactive">Private Cloud</a></li>
+					<li>
+					  <a href="/how-to/dedicated-hosting">Dedicated</a></li>
 					<li>
 					  <a href="/how-to/account-management">Account Management</a>
 						        </li>
@@ -229,24 +230,6 @@ permalink: /
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<div class="container">
-		<div class="content home product-type product-type-cloud inactive" id="cloud-display">
-		  <div class="row">
-			  <div class="twelve columns">
-				  <div class="three columns icon private">
-				 	  <h4><a href="/how-to/dedicated-hosting/"><span>Dedicated Hosting<</a></h4>
-				  </div>
-		      <div class="three columns icon private">
-			      <h4><a href="/how-to/rpc-openstack/"><span>Rackspace Private Cloud</span> Powered by OpenStack</a></h4>
-		      </div>
-		      <div class="three columns icon private">
-			      <h4><a href="/how-to/rpc-vmware/"><span>Rackspace Private Cloud</span> Powered by VMware</a></h4>
-		      </div>
-		    </div>
-		  </div>
-	  </div>
 	</div>
 
 </article>
