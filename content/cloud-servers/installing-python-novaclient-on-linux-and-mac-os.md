@@ -5,8 +5,8 @@ title: Install python-openstackclient on Linux and Mac OS
 type: article
 created_date: '2012-07-23'
 created_by: Jered Heeschen
-last_modified_date: '2019-07-12'
-last_modified_by: Brian King
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -91,7 +91,7 @@ offers suggested values:
 | OS\_PASSWORD     | password | Set this value to your Rackspace Cloud account password.         |
 | OS\_AUTH\_URL    | identity endpoint   | Set this value to the endpoint for the identity service the client uses to authenticate for API operations, which is `https://identity.api.rackspacecloud.com/v2.0`.                                                                             |
 | OS\_REGION\_NAME | datacenter region   | The code for the data center region containing the servers you want to manipulate. You can check your server's datacenter by checking its details screen in the Cloud Control Panel. The datacenter code is just the first three letters of the datacenter's identifier; e.g. `DFW, IAD, ORD, HKG, SYD, or LON.` You can override the region setting with the `--os-region-name` command-line option. |
-| OS\_NO\_CACHE    | 0 or 1              | On newer versions of Ubuntu the `openstackclient` tries to use a system keyring that's usually not set up on servers. Setting this value to "1" works around the issue. It shouldn't be necessary on other systems, but it shouldn't interfere with the client's operations either. You can override the no\_cache setting with the `--no-cache` command-line option.                             |
+| OS\_NO\_CACHE    | 0 or 1              | On newer versions of the Ubuntu operating system the `openstackclient` tries to use a system keyring that's usually not set up on servers. Setting this value to "1" works around the issue. It shouldn't be necessary on other systems, but it shouldn't interfere with the client's operations either. You can override the no\_cache setting with the `--no-cache` command-line option.                             |
 
 #### Loading the environment variables
 
@@ -112,7 +112,7 @@ to you when creating a server.
 
 #### Keychain password message
 
-If you're running the client on an Ubuntu&reg; system and it asks for a
+If you're running the client on the Ubuntu&reg; operating system and it asks for a
 keychain password, run the client with the  `--no-cache` option, as shown in
 the following example:
 

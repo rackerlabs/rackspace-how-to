@@ -5,8 +5,8 @@ title: Manually enable automatic updates on Debian and Ubuntu 14.04 and 16.04  p
 type: article
 created_date: '2018-10-05'
 created_by: Rackspace Support
-last_modified_date: '2018-10-05'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -25,7 +25,7 @@ crucial updates are installed and current.
 Use the following steps to enable automatic updates on your Debian and
 Ubuntu 14.04 and 16.04 for Rackspace public Cloud Servers:
 
-1. Connect to your Debian or Ubuntu server.
+1. Connect to your Debian or Ubuntu 14.04 or 16.04 server.
 
 2. Run the following command:
 

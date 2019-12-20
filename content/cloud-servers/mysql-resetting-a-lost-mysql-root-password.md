@@ -5,7 +5,7 @@ title: Reset a MySQL root password
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2019-07-23'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -19,7 +19,7 @@ Use the following steps to reset a MySQL root password by using the command line
 
 ### Stop the MySQL service
 
-(Ubuntu and Debian) Run the following command:
+(Ubuntu operating system and Debian) Run the following command:
 
     sudo /etc/init.d/mysql stop
 
@@ -53,7 +53,7 @@ Run the following command:
 
 ### Stop and start the MySQL service
 
-(Ubuntu and Debian) Run the following commands:
+(Ubuntu operating system and Debian) Run the following commands:
 
     sudo /etc/init.d/mysql stop
     ...
@@ -75,8 +75,8 @@ Enter your new password when prompted.
 
 ### Related articles
 
-- [Install MySQL server on Ubuntu](/how-to/installing-mysql-server-on-ubuntu)
-- [Configure MySQL server on Ubuntu](/how-to/configuring-mysql-server-on-ubuntu)
+- [Install MySQL server on the Ubuntu operating system](/how-to/install-mysql-server-on-the-ubuntu-operating-system)
+- [Configure MySQL server on the Ubuntu operating system](/how-to/configure-mysql-server-on-the-ubuntu-operating-system)
 
 <script type="application/ld+json">
 {
@@ -90,7 +90,7 @@ Enter your new password when prompted.
 	"description": "You need to know the Internet Protocol (IP) address of the computer from which you’re connecting.",
 	"itemListElement": [{
 		"@type": "HowToDirection",
-		"text": "(Ubuntu and Debian) Run the following command: sudo /etc/init.d/mysql stop"
+		"text": "(Ubuntu operating system and Debian) Run the following command: sudo /etc/init.d/mysql stop"
 		},{
 		"@type": "HowToDirection",
 		"text": "(CentOS, Fedora, and Red Hat Enterprise Linux) Run the following command: sudo /etc/init.d/mysqld stop"
@@ -111,7 +111,7 @@ Enter your new password when prompted.
 	"text": "Stop and start the MySQL service",
 	"itemListElement": [{
 		"@type": "HowToDirection",
-		"text": "(Ubuntu and Debian) Run the following commands: sudo \/etc\/init.d\/mysql stop\r\n...\r\nsudo \/etc\/init.d\/mysql start"
+		"text": "(Ubuntu operating system and Debian) Run the following commands: sudo \/etc\/init.d\/mysql stop\r\n...\r\nsudo \/etc\/init.d\/mysql start"
 		},{
 		"@type": "HowToDirection",
 		"text": "(CentOS, Fedora, and Red Hat Enterprise Linux) Run the following commands: sudo \/etc\/init.d\/mysqld stop\r\n...\r\nsudo \/etc\/init.d\/mysqld start"

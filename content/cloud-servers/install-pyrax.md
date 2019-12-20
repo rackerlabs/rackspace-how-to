@@ -5,16 +5,16 @@ title: Install pyrax
 type: article
 created_date: '2014-06-02'
 created_by: Chris Mendoza
-last_modified_date: '2016-01-05'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Complete the following steps on a new Ubuntu or CentOS server to install
-and configure pyrax.
+Complete the following steps on a new server running CentOS or the Ubuntu
+operating system to install and configure pyrax.
 
-### Install pyrax on an Ubuntu server
+### Install pyrax on the Ubuntu operating system
 
 1.  Update the server:
 
@@ -95,7 +95,7 @@ and configure pyrax.
 ### Run the test script
 
 Run this test script to configure pyrax. This script works on both
-Ubuntu and CentOS servers.
+CentOS and the Ubuntu operating system.
 
     #!/usr/bin/env python2
     #import the pyrax module

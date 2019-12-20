@@ -5,8 +5,8 @@ title: Linux log files
 type: article
 created_date: '2018-08-21'
 created_by: Rackspace Community
-last_modified_date: '2019-01-24'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -17,17 +17,17 @@ stored, and which distributions (distro) use the logs.
 For most of the following logs, you can use `vi`, `less`, `tail`, or `cat`
 to view the log details. Exceptions to this rule are noted in the descriptions.
 
-- **/var/log/alternatives.log** (Ubuntu&reg;/Debian&reg; (DEB))
+- **/var/log/alternatives.log** (Ubuntu&reg; operating system/Debian&reg; (DEB))
 
   Stores information from `update-alternatives`.
 
-- **/var/log/apache2/access.log** (Ubuntu/DEB)
+- **/var/log/apache2/access.log** (Ubuntu operating system/DEB)
 
   Stores requests, such as HTTP `GET` and `POST` requests, that are processed
   by Apache&reg;. Parse these logs by using log parsers such as `awstats` or
   `webalizer`. Configure this log by using the `CustomLog` directive.
 
-- **/var/log/apache2/error.log** (Ubuntu/DEB)
+- **/var/log/apache2/error.log** (Ubuntu operating system/DEB)
 
   Stores all Apache errors and diagnostic information found while serving
   requests. The location of the **error.log** file is set by the `ErrorLog`
@@ -66,7 +66,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
   boot process. This file is overwritten when new messages are sent to it, such
   as during the next boot.
 
-- **/var/log/dpkg.log** (Ubuntu/DEB)
+- **/var/log/dpkg.log** (Ubuntu operating system/DEB)
 
   Stores information that is logged when a package is installed or removed by
   using the `dpkg` command.
@@ -75,7 +75,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
 
   Contains failed user login attempts. Use `faillog` to access the information.
 
-- **/var/log/kern.log** (Ubuntu/DEB, and can be configured for Centos&reg; and Red Hat&reg;)
+- **/var/log/kern.log** (Ubuntu operating system/DEB, and can be configured for Centos&reg; and Red Hat&reg;)
 
   Contains log details from the kernel's initialization at system bootup, as well
   as any kernel errors or informational messages that are sent from the kernel.
@@ -89,7 +89,7 @@ to view the log details. Exceptions to this rule are noted in the descriptions.
   Stores information from the mail server that is running on your system, such
   as Sendmail&reg; logging information.
 
-- **/var/log/mail.log** (Ubuntu/DEB)
+- **/var/log/mail.log** (Ubuntu operating system/DEB)
 
   Stores information from the mail server that is running on your system, similar
   to maillog.log for the Centos and Red Hat flavors.

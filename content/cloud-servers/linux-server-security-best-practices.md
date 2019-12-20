@@ -5,8 +5,8 @@ title: Linux server security best practices
 type: article
 created_date: '2014-07-16'
 created_by: Christoph Champ and Reese McJunkin
-last_modified_date: '2017-04-11'
-last_modified_by: Nate Archer
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -59,7 +59,7 @@ guidelines advocated by proponents of software system security:
 -   Do not use passwords that consist wholly of any simple combination of the
     aforementioned weak components.
 
-#### Add a user (Debian and Ubuntu)
+#### Add a user (Debian and Ubuntu operating system)
 
 1.  Create a new user and set the user's password:
 
@@ -269,9 +269,10 @@ use [rescue mode](how-to/rescue-mode) or the
 shouldn't change the SSH port, either, if you use RackConnect, but for more information about firewalls and RackConnect, see
 [Managing RackConnect v2.0 network policies](/how-to/managing-rackconnect-v20-network-policies).
 
-1.  Verify that the firewall is open. By default, Ubuntu does not have any
-    restrictions, whereas CentOS and Red Hat do. The following output shows what
-    the system looks like when no ports are blocked and the policy is `ACCEPT`:
+1.  Verify that the firewall is open. By default, the Ubuntu operating
+    system does not have any restrictions, whereas CentOS and Red Hat do.
+    The following output shows what the system looks like when no ports are
+    blocked and the policy is `ACCEPT`:
 
         $ sudo iptables -L
         Chain INPUT (policy ACCEPT)
@@ -323,7 +324,7 @@ shouldn't change the SSH port, either, if you use RackConnect, but for more info
 If you were able to connect with the new configuration, save your `iptables`
 rules before continuing to ensure SSH port stays open.
 
-On Ubuntu and Debian, run the following command:
+On the Ubuntu operating system and Debian, run the following command:
 
     sudo -c "iptables-save > /etc/iptables.rules"
 
@@ -357,7 +358,7 @@ distribution. Some distributions allow you to save elsewhere by using the
 `iptables-save` command.
 
 -   Fedora, Red Hat Enterprise Linux, and CentOS: `/etc/sysconfig/iptables`
--   Ubuntu and Debian: `/etc/iptables.rules`
+-   Ubuntu operating system and Debian: `/etc/iptables.rules`
 
 You can save the following example `iptables` ruleset in the appropriate
 location for your distribution. Change the rule for port `9001` to use the
@@ -472,7 +473,7 @@ and [rescue mode investigation](/how-to/check-for-a-security-compromise-rescue-m
 Keeping your kernel, packages, and dependencies up-to-date is very important. This is especially true for security-related modules and packages. Some updates (for example, kernel updates) require your server to be rebooted. Plan for a
 time that will cause the least amount of disruption during the (normally very short) downtime while your server is rebooting.
 
-To check for and install updates on Ubuntu and Debian systems, run the following commands:
+To check for and install updates on Ubuntu operating systems and Debian, run the following commands:
 
     sudo apt-get update
     sudo apt-get upgrade
@@ -492,7 +493,7 @@ release well before your current release reaches its EOL.
 Use the following links to find out when your Linux distribution release will
 reach its EOL:
 
--   Ubuntu: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
+-   Ubuntu operating systems: [https://wiki.ubuntu.com/Releases](https://wiki.ubuntu.com/Releases)
 -   Red Hat Enterprise Linux: [https://access.redhat.com/support/policy/updates/errata/](https://access.redhat.com/support/policy/updates/errata/)
 -   CentOS: Same as Red Hat
 -   Fedora: [https://fedoraproject.org/wiki/End_of_life](https://fedoraproject.org/wiki/End_of_life)

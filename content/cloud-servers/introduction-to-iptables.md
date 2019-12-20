@@ -5,7 +5,7 @@ title: Introduction to iptables
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2015-12-08'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -89,7 +89,7 @@ Simple Rules:
          sudo iptables -A INPUT -i eth0 -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 - To allow connections on ServiceNet (required by other Rackspace Cloud products such as Cloud Backup and Cloud Monitoring)
- 
+
          sudo iptables -A INPUT -i eth1 -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 -  Allow connections to SSH
@@ -152,11 +152,11 @@ you want to make permanent you will need one of the following commands:
 
         /etc/init.d/iptables save
 
--   for Ubuntu
+-   for the Ubuntu operating system
 
         iptables-save > /etc/iptables.rules
 
--   for all other Distros
+-   for all other distributions
 
         iptables-save > /etc/sysconfig/iptables
 
