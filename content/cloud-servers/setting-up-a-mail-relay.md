@@ -5,8 +5,8 @@ title: Set up a Mail Relay
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2013-04-17'
-last_modified_by: Jered Heeschen
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -49,7 +49,7 @@ the basic setup.
 
         yum install postfix cyrus-sasl-plain cyrus-sasl-md5
 
-   For Ubuntu:
+   For Ubuntu operating systems:
 
         aptitude update
         apt-get install postfix libsasl2-modules

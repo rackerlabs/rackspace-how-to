@@ -5,8 +5,8 @@ title: Use Cloud Servers tags
 type: article
 created_date: '2012-07-24'
 created_by: Rackspace Support
-last_modified_date: '2018-10-25'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -71,8 +71,8 @@ you plan maintenance.
 #### Operating system
 
 Tags can let you quickly see which servers are running Linux or Windows,
-or what Linux distributions are being used on each server (like Ubuntu
-or CentOS).
+or what Linux distributions are being used on each server (like the Ubuntu
+  operating system or CentOS).
 
 ### Summary
 

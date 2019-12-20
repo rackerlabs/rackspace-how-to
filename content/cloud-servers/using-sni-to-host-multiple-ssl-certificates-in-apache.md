@@ -5,7 +5,7 @@ title: Using SNI to host multiple SSL certificates in Apache
 type: article
 created_date: '2019-01-16'
 created_by: Rackspace Community
-last_modified_date: '2019-01-28'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
@@ -31,7 +31,7 @@ The following operating systems support SNI without additional modifications:
 - CentOS&reg; 6
 - Debian&reg; 6 and later
 - Ubuntu&reg; 10.04 and later
-  
+
 The following operating systems require Apache, OpenSSL, and mod_ssl to be compiled
 with proper versions:
 
@@ -46,7 +46,7 @@ Before you use SNI, check that mod_ssl is installed by running the following com
 
     yum list installed | grep mod_ssl
 
-**Debian and Ubuntu**
+**Debian and Ubuntu operating systems**
 
     dpkg -s apache2.2-common
 
@@ -55,22 +55,22 @@ If mod_ssl is not installed, use the following command to install it:
 **RHEL, CentOS, and Fedora**
 
     yum install mod_ssl
-    
-**Debian and Ubuntu**
 
- For Debian and Ubuntu, install mod_ssl by using the following command:
- 
+**Debian and Ubuntu operating systems**
+
+ For Debian and Ubuntu operating systems, install mod_ssl by using the following command:
+
      apt-get install apache2.2-common
- 
+
  Then enable the module by running `a2enmod ssl; /etc/init.d/apache2 reload`.  
- 
+
 ### Set up vhosts
 
 Add the following lines in your root Apache configuration file (**apache2.conf** or **httpd.conf**):
 
     # Ensure that Apache listens on port 443
     Listen 443
-    
+
     # Listen for virtual host requests on all IP addresses
     NameVirtualHost *:443
 
@@ -115,7 +115,7 @@ Second vhost:
      SSLCertificateChainFile /path/to/DigiCertCA.crt
 
     </Virtual Host>
-    
+
 You can test the configuration with a self-signed certificate by using the following
 command:
 
@@ -139,7 +139,7 @@ and any Windows&reg; XP&reg; browser do not support SNI.
   - Supported on Windows XP on Chrome 6 and later
   - Supported on Vista and later by default
   - Supported on OS X 10.5.7 in Chrome Version 5.0.342.0 and later
-  
+
 - Chromium&reg; 11.0.696.28 and later
 - Safari 2.1 and later (requires OS X 10.5.6 and later or Windows Vista and later).
 

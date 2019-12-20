@@ -5,8 +5,8 @@ title: Using server logs
 type: article
 created_date: '2018-08-28'
 created_by: Kate Dougherty
-last_modified_date: '2018-08-28'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -27,7 +27,7 @@ correctly, you might want to review the Apache error logs. You can find Apache
 error logs at the following locations:
 
 - CentOS: **/var/log/httpd/**
-- Ubuntu&reg;: **/var/log/apache2/**
+- Ubuntu&reg; operating systems: **/var/log/apache2/**
 
 Apache server logs show you any errors that your site is experiencing.
 To identify errors within the logs, look for the `Error` label. To identify

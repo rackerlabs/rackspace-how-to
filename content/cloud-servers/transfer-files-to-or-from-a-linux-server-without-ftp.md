@@ -5,8 +5,8 @@ title: Transfer files to or from a Linux server without FTP
 type: article
 created_date: '2019-01-24'
 created_by: Rackspace Community
-last_modified_date: '2019-05-09'
-last_modified_by: William Loy
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -62,9 +62,9 @@ If SFTP has not been installed successfully, the following output displays:
 
     # rpm -qa | grep -E "vsftp|proftp"
 
-#### Ubuntu
+#### Ubuntu operating systems
 
-To confirm whether SFTP has been installed on Ubuntu&reg;, run the following
+To confirm whether SFTP has been installed on Ubuntu&reg; operating systems, run the following
 command:
 
     # dpkg-1 | grep -E "vsftp|proftp"

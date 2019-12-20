@@ -5,8 +5,8 @@ title: Supported Operating Systems and Browsers in Rackspace Public Cloud
 type: article
 created_date: '2015-07-16'
 created_by: Nate Archer
-last_modified_date: '2018-10-26'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -26,7 +26,7 @@ We support current versions of the following OSs:
 -   Debian®
 -   Fedora® *
 -   Red Hat® Enterprise Linux® (OnMetal Servers only)
--   Ubuntu®
+-   Ubuntu® operating systems
 -   Vyatta®
 -   Windows® Server® 2008 R2
 -   Windows Server 2012 R2

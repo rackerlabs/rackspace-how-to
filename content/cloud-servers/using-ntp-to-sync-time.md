@@ -5,8 +5,8 @@ title: Use NTP to Sync Time
 type: article
 created_date: '2013-04-15'
 created_by: Jered Heeschen
-last_modified_date: '2013-04-18'
-last_modified_by: Jered Heeschen
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -42,7 +42,7 @@ second.
 The first thing to do is install the NTP server. Grab the package by
 running:
 
-#### Ubuntu / Debian:
+#### Ubuntu operating systems / Debian:
 
     sudo aptitude update
     sudo aptitude install ntp
@@ -88,7 +88,7 @@ running:
 
 To make sure the NTP service starts after installing it, run:
 
-#### Ubuntu / Debian / CentOS / RHEL / Gentoo:
+#### Ubuntu operating systems / Debian / CentOS / RHEL / Gentoo:
 
     sudo /etc/init.d/ntp start
 
@@ -292,8 +292,8 @@ Fortunately there's a tool for that included with the NTP server called
 
 The ntpdate command will sync your clock with an NTP server. It's
 similar to what the NTP server does on a regular basis. The ntpd program
-is a separate package on Ubuntu and Debian. The other distributions
-install ntpdate at the time of ntpd installation. To use ntpdate, Ubuntu
+is a separate package on Ubuntu operating systems and Debian. The other distributions
+install ntpdate at the time of ntpd installation. To use ntpdate, Ubuntu operating system
 and Debian users must first install it.
 
     sudo aptitude install ntpdate
@@ -308,7 +308,7 @@ run ntpdate and get a response like "the NTP socket is in use," this
 means your NTP server is running. Stop it with the appropriate command
 for your distribution:
 
-#### Ubuntu / Debian
+#### Ubuntu operating systems / Debian
 
     sudo /etc/init.d/ntp stop
 
@@ -328,7 +328,7 @@ argument. For example, to tell ntpdate to try and sync with
 
 When you're finished testing, remember to restart NTP:
 
-#### Ubuntu / Debian
+#### Ubuntu operating systems / Debian
 
     sudo /etc/init.d/ntp start
 

@@ -5,8 +5,8 @@ title: Understanding logrotate utility
 type: article
 created_date: '2011-11-23'
 created_by: Jered Heeschen
-last_modified_date: '2016-06-29'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -75,7 +75,7 @@ which logrotate reads when it rotates the system logs. This file contains an
 entry for various system logs, along with some commands similar to those
 contained in `logrotate.conf`.
 
-**NOTE:** On versions of Ubuntu earlier than Karmic Koala (9.10) there is no
+**NOTE:** On versions of Ubuntu operating systems earlier than Karmic Koala (9.10) there is no
 entry for a syslog service. Before that release, the system logs were rotated
 by a `savelog` command run from the `/etc/cron.daily/sysklogd` script.
 
