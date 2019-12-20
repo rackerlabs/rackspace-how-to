@@ -5,8 +5,8 @@ title: Cloud Backup FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2019-09-13'
-last_modified_by: Brett Johnson
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -91,9 +91,9 @@ bad actor is able to delete them, too.
 
 #### Can Cloud Backup change my system configuration file, even after I have modified it?
 
-Yes. Some Ubuntu&reg; users have older agents installed on their machines.
-In order to communicate properly with your system, the configuration file
-might need to be overwritten with a current version.
+Yes. Some machines running the Ubuntu&reg; operating system have older agents
+installed. In order to communicate properly with your system, the
+configuration file might need to be overwritten with a current version.
 
 #### How does Cloud Backup handle corrupt files?
 

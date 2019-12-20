@@ -1,17 +1,17 @@
 ---
-permalink: use-holland-and-cloud-backup-to-backup-databases-with-ubuntu/
+permalink: use-holland-and-cloud-backup-to-back-up-mysql-databases/
 audit_date: '2019-01-30'
-title: Use Holland and Cloud Backup to back up databases with Ubuntu
+title: Use Holland and Cloud Backup to back up MySQL databases
 type: article
 created_date: '2019-01-17'
 created_by: Rackspace Community
-last_modified_date: '2019-01-30'
+last_modified_date: '2019-12-20'
 last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article describes how to back up MySQL&reg; databases with Ubuntu&reg; by using Holland and Cloud Backup. 
+This article describes how to back up MySQL&reg; databases on the Ubuntu&reg; operating system by using Holland and Cloud Backup.
 
 ### Install Holland
 
@@ -19,22 +19,22 @@ This article describes how to back up MySQL&reg; databases with Ubuntu&reg; by u
 
        wget http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_XX.XX/Release.key -O - | sudo apt-key add -
 
-   **Note:** Replace `xUbuntu_XX.XX` with the version of Ubuntu that you are using. For example, for Ubuntu 13.04, use
+   **Note:** Replace `xUbuntu_XX.XX` with the version of the Ubuntu operating system that you are using. For example, for Ubuntu 13.04, use
    `xUbuntu_13.04`.
 
 2. Open the list file **/etc/apt/sources.list.d/holland.list** in a text editor and add the following line:
 
        deb http://download.opensuse.org/repositories/home:/holland-backup/xUbuntu_XX.XX/ ./
-       
-   **Note:** Replace `xUbuntu_XX.XX` with the version of Ubuntu that you are using.
-   
+
+   **Note:** Replace `xUbuntu_XX.XX` with the version of the Ubuntu operating system that you are using.
+
    Save and close the file.
-   
+
 3. Run the following commands to update and install Holland:
 
        apt-get update
        apt-get install holland-common holland-mysqldump
-   
+
 
 ### Configure Holland
 
@@ -56,7 +56,7 @@ Holland stores only one backup in the backup directory by default. If you want t
 directory, open the **/etc/holland/backupsets/default** file in a text editor and edit the following line:
 
     backups-to-keep = 1
-    
+
 To ensure that all of your configuration settings are correct, run the following command:
 
     holland bk
@@ -73,14 +73,14 @@ Your Holland backup directory should now look similar to the following example:
 ### Schedule Holland backups
 
 You can use Holland to schedule regular backups of your database. To do so, open the **/etc/crontab** file and add a new
-cron job. The following example tells Holland to run a backup every day at 3:00 am: 
+cron job. The following example tells Holland to run a backup every day at 3:00 am:
 
     0 3 * * * root holland bk
 
 The following syntax forms a cron job:
 
     Minute(0-59) Hour(0-24) Day_of_month(1-31) Month(1-12) Day_of_week(0-6) Command_to_execute
-    
+
 You can set your scheduled backup to run as frequently as you want.
 
 ### Back up Holland by using Cloud Backup

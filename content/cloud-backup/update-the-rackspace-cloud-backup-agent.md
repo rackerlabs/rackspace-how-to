@@ -5,8 +5,8 @@ title: Manually update the Rackspace Cloud Backup agent
 type: article
 created_date: '2013-01-08'
 created_by: Rackspace Support
-last_modified_date: '2018-08-21'
-last_modified_by: Brett Johnson
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -25,7 +25,7 @@ features, and bug fixes in Cloud Backup.
 **Note:** These instructions assume that the agent has been previously
 installed.
 
-### Update the agent for apt-based systems, including Ubuntu, Debian, and Vyatta.
+### Update the agent for APT-based systems
 
 You might want to review
 [Install or update the Cloud Backup agent on Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
@@ -35,6 +35,8 @@ before performing these steps.
 the driveclient service as part of the update process. Driveclient versions
 1.28 and later install the Cloud Backup updater service, which keeps the agent
 up-to-date on the system.
+
+Use the following steps to update the backup agent for APT-based systems, such as the Ubuntu operating system, Debian, and Vyatta:
 
 1. Use SSH to log in to your server as a user with sudo or superuser privileges.
 

@@ -5,8 +5,8 @@ title: Install or update the Cloud Backup agent on Linux
 type: article
 created_date: '2014-05-05'
 created_by: Kyle Laffoon
-last_modified_date: '2019-09-13'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -48,7 +48,9 @@ a message that the command can't be found, you must install the agent.
 The following instructions detail installation procedures for APT-based, RPM-based,
 or other Linux distributions.
 
-### Install the agent on APT-based systems, such as Ubuntu &reg; and Debian
+### Install the agent on APT-based systems
+
+Use the following steps to install the backup agent on APT-based systems such as the Ubuntu operating system or Debian.
 
 1. Use SSH to log in to your server, and run any commands as a user with sudo
 or superuser privileges.
@@ -298,7 +300,7 @@ Run the following command:
 
     sudo yum remove cloudbackup-updater driveclient
 
-#### Uninstall from Ubuntu
+#### Uninstall from the Ubuntu operating system
 
 Run the following command:
 
