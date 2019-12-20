@@ -5,8 +5,8 @@ title: Move a Cloud Block Storage volume between servers
 type: article
 created_date: '2014-02-14'
 created_by: Trenton Guthrie
-last_modified_date: '2019-03-01'
-last_modified_by: Catlookabaugh
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 ---
 
 RETIRED on advice of Brian King
@@ -93,7 +93,7 @@ Storage volumes.
 
        sudo yum install mdadm
 
-  For Ubuntu or Debian:
+  For Ubuntu operating system or Debian:
 
        sudo apt-get update
        sudo apt-get install mdadm

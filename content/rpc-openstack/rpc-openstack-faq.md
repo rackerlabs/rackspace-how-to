@@ -5,8 +5,8 @@ title: Rackspace Private Cloud powered by OpenStack FAQ
 type: article
 created_date: '2014-09-09'
 created_by: Karin Levenstein
-last_modified_date: '2017-04-21'
-last_modified_by: Arun Rajan
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
@@ -91,7 +91,7 @@ Currently, Rackspace Private Cloud software does not include any images. Users c
 
 #### Why does the node IP address need to have Internet access?
 
-Rackspace Private Cloud software downloads Ubuntu installation files as part of
+Rackspace Private Cloud software downloads Ubuntu operating system installation files as part of
 the installation process to ensure that you have the most up-to-date operating
 system that works with our software. If the node doesn't have Internet access,
 the installation process fails.
@@ -104,7 +104,7 @@ at [rpcsales@rackspace.com](mailto:rpcsales@rackspace.com).
 
 #### What devices are certified for Rackspace Private Cloud compute nodes?
 
-All devices certified for Ubuntu Server 16.04 LTS are certified for Rackspace Private Cloud. Refer to the [Ubuntu Server certified hardware page](http://www.ubuntu.com/certification/server/) for the full list.
+All devices certified for Ubuntu Server 16.04 LTS are certified for Rackspace Private Cloud. Refer to the [Ubuntu operating system certified hardware page](http://www.ubuntu.com/certification/server/) for the full list.
 
 #### Where can I get more technical information?
 

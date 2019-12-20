@@ -5,8 +5,8 @@ title: Rackspace Private Cloud Software Package Update - 20 March 2013
 type: article
 created_date: '2013-03-19'
 created_by: Karin Levenstein
-last_modified_date: '2013-03-27'
-last_modified_by: Jered Heeschen
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 ---
 
 Rackspace has released a package update for Rackspace Private Cloud
@@ -25,7 +25,7 @@ updating the agents.
 
 1.  Log in to the Server node and run the following commands.
 
-    On Ubuntu:
+    On Ubuntu operating systems:
 
         $ apt-get install opencenter-server opencenter-agent opencenter-client
 
@@ -44,7 +44,7 @@ After the server has been successfully updated, update each agent.
 
 1.  Log in to the Server node and run the following commands.
 
-    On Ubuntu:
+    On Ubuntu operating systems:
 
         $ apt-get install opencenter-agent opencenter-client
 
@@ -134,7 +134,7 @@ reflect these changes.
 -   Virtualization is enabled for clusters and availability zones.
     (opencenter issue \#415)
 
--   An issue where an installation on RHEL 6.4 could use the Ubuntu
+-   An issue where an installation on RHEL 6.4 could use the Ubuntu operating system
     package has been resolved. (opencenter-install-scripts issue \#123)
 
 -   The OHAI passwd plugin has been disabled to prevent

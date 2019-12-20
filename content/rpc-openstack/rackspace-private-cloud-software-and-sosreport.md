@@ -5,8 +5,8 @@ title: Rackspace Private Cloud Software and sosreport
 type: article
 created_date: '2012-11-09'
 created_by: Karin Levenstein
-last_modified_date: '2018-09-13'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
@@ -20,7 +20,7 @@ OpenStack&reg;.
 ### The SOS tool
 
 Rackspace Private Cloud Software installs the [sosreport tool for
-Ubuntu&reg;](https://github.com/sosreport/sosreport), which you can use
+Ubuntu&reg; operating systems](https://github.com/sosreport/sosreport), which you can use
 to collect, analyze, and report information that helps you or Rackspace
 Support troubleshoot issues in your Rackspace Private Cloud environment.
 The `sosreport` package is installed from the [OS Ops team

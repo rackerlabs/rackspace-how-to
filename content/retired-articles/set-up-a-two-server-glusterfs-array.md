@@ -136,7 +136,7 @@ The volume exists, but it is not being actively synchronized nor served.
 
 3.  Create the mount point, configure it in `/etc/fstab`, and then actually mount the GlusterFS volume.
 
-4.  In `/etc/fstab`, add one special option: `_netdev`. This option tells Ubuntu that the file system resides on a device that requires network access, and to not mount it until the network has been enabled.
+4.  In `/etc/fstab`, add one special option: `_netdev`. This option tells the Ubuntu operating system that the file system resides on a device that requires network access, and to not mount it until the network has been enabled.
 
 ### Test it
 

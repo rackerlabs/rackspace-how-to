@@ -5,8 +5,8 @@ title: Rackspace Private Cloud documentation
 type: article
 created_date: '2014-06-16'
 created_by: Karin Levenstein
-last_modified_date: '2018-08-31'
-last_modified_by: Kate Dougherty
+last_modified_date: '2019-12-20'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Private Cloud Powered by OpenStack
 product_url: rpc-openstack
 ---
@@ -17,7 +17,7 @@ enables you to install an OpenStack private cloud with the configuration that
 Rackspace OpenStack specialists recommend.
 
 Rackspace Private Cloud Powered by OpenStack uses Ansible&trade; to create an
-OpenStack cluster on Ubuntu&reg; Linux&reg;. The installation process provides
+OpenStack cluster on Ubuntu&reg; operating systems. The installation process provides
 a familiar approach for Linux system administrators.
 
 ### Documentation
