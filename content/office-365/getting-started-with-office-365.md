@@ -35,7 +35,7 @@ Now that you have created an account, there are a few things that you should do 
 
 3. Learn how to monitor your account's [billing activity](/how-to/view-invoice-history-cloud-office-control-panel/) to ensure that resources are allocated efficiently.
 
-4. Secure your Office 365 administrator accont by [enabling multi-factor authentication](/how-to/manage-multi-factor-authentication-for-users-in-office-365/).
+4. Secure your Office 365 administrator account by [enabling multi-factor authentication](/how-to/manage-multi-factor-authentication-for-users-in-office-365/).
 
 #### Add and verify your domain
 
