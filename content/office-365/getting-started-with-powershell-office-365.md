@@ -31,13 +31,16 @@ Use the following steps to install the MSOnline module.
 1.	Run the Windows PowerShell app with elevated privileges (Run as Administrator).
 
 2.	Type the following command to allow PowerShell to run signed scripts and hit **Enter**:
-
-  Set-ExecutionPolicy RemoteSigned
-
+    
+    ```PowerShell
+    Set-ExecutionPolicy RemoteSigned
+    ```
 3.	To Install the MSOnline module, type the following command and hit **Enter**:
 
-  Install-Module MSOnline
-
+    ```PowerShell
+    Install-Module MSOnline
+    ```
+    
 **NOTE:** If prompted about installing modules from an untrusted repository, type Y and press ENTER.
 
 4.	Copy and paste the following code block into PowerShell. This code block is a script that will connect you to your Office 365 tenant using the administrative credentials you provide. Lines that begin with # are comments relating to the line of code above them. When prompted, enter your Global Administrator credentials:
