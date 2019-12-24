@@ -60,6 +60,8 @@ Use the following steps to install the MSOnline module.
 
 5.  After you are connected to your Office 365 tenant, we recommend validating your connection by running the following simple command to get a list of all of your users:
 
-    Get-MSOLUser
-
+     ```PowerShell
+     Get-MSOLUser
+     ```
+     
 6.  When you are finished with PowerShell, simply close the PowerShell application.
