@@ -42,6 +42,7 @@ Use the following steps to install the MSOnline module.
 
 4.	Copy and paste the following code block into PowerShell. This code block is a script that will connect you to your Office 365 tenant using the administrative credentials you provide. Lines that begin with # are comments relating to the line of code above them. When prompted, enter your Global Administrator credentials:
 
+    ```PowerShell
     Import-Module Msonline
     #Imports the MSOnline module that you just installed
     $Cred = Get-Credential
@@ -52,6 +53,7 @@ Use the following steps to install the MSOnline module.
     #Connects to Office 365 and Azure Active Directory using the previously stored credential
     Import-PSSession $Session
     #Starts your Exchange Online PowerShell Session
+    ```
 
 5.  After you are connected to your Office 365 tenant, we recommend validating your connection by running the following simple command to get a list of all of your users:
 
