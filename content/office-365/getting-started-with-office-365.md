@@ -35,7 +35,7 @@ Now that you have created an account, there are a few things that you should do 
 
 3. Learn how to monitor your account's [billing activity](/how-to/view-invoice-history-cloud-office-control-panel/) to ensure that resources are allocated efficiently.
 
-4. Secure your Office 365 administrator account by [enabling multi-factor authentication](/how-to/manage-multi-factor-authentication-for-users-in-office-365/).
+4. Secure your Office 365&reg; administrator account by [enabling multi-factor authentication](/how-to/manage-multi-factor-authentication-for-users-in-office-365/).
 
 #### Add and verify your domain
 
@@ -43,9 +43,9 @@ You are now ready to add your domain to Office 365. Use [this guide to add and v
 
 #### Creating users and assigning licenses
 
-Your account is now ready for you to create users and assign licenses. Before your email data can be migrated and your users can begin using their new email solution, you will need create their new user accounts and assign them licenses. Listed below are resources with short instructions for creating users in Office 365.
+Your account is now ready for you to create users and assign licenses. Before your email data can be migrated and your users can begin using their new email solution, you need to create their user accounts and assign them licenses. Listed below are resources with short instructions for creating users in Office 365.
 
-- [Add a license and assign it to a user](/how-to/add-an-office-365-license/)
+  - [Add a license and assign it to a user](/how-to/add-an-office-365-license/)
 
 #### Migrate your email
 
@@ -61,4 +61,4 @@ After creating your users, configure your domain to use your Office 365 services
 
 #### Configure desktop and mobile devices
 
-When your email migration has completed, and your users are ready to start receiving email to their desktop and mobile email clients, they can find detailed instructions for many of the most popular devices by using our [Email Help Tool](https://emailhelp.rackspace.com). This tool walks the user through an interactive portal that asks a series of questions that leads them to their device-specific email configuration instructions. To use the tool, they navigate to emailhelp.rackspace.com and log in by using their Office 365 email address and password.
+When your email migration has completed, and your users are ready to start receiving email to their desktop and mobile email clients, they can find detailed instructions for many of the most popular devices by using our [Email Help Tool](https://emailhelp.rackspace.com). This tool walks the user through an interactive portal that asks a series of questions that leads them to their device-specific email configuration instructions. To use the tool, they navigate to [emailhelp.rackspace.com](https://emailhelp.rackspace.com) and log in by using their Office 365 email address and password.
