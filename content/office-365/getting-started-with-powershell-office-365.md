@@ -1,7 +1,7 @@
 ---
 permalink: getting-started-with-powershell-office-365/
-audit_date:
-title: How to Access and Manage your Office 365 Tenant with PowerShell
+audit_date: '2019-12-24'
+title: How to access and manage your Office 365 tenant with PowerShell
 type: article
 created_date: '2019-12-24'
 created_by: Simon Ponder
@@ -16,17 +16,17 @@ product_url: office-365
 - **Applies to:** Administrator
 - **Difficulty:** Moderate
 - **Time Needed:** Approximately 15 minutes
-- **Tools Needed:** Office 365 Administrator access, 64-Bit Version of Windows, Microsoft .NET Framework 4.5.x, Windows Management Framework 4.0
+- **Tools Needed:** Office 365&reg; administrator access, 64-Bit Version of Windows&reg;, Microsoft .NET Framework&reg; 4.5.x, Windows Management Framework&reg; 4.0
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-As an Office 365 Administrator, you may be required to utilize PowerShell to perform certain administrative tasks on your tenant. PowerShell is also useful for performing bulk operations and accessing data.
+As an Office 365 administrator, you may be required to utilize PowerShell&reg; to perform certain administrative tasks on your tenant. PowerShell is also useful for performing bulk operations and accessing data.
 
 ### Installing the MSOnline Module for PowerShell
 
-There are several PowerShell modules that are required to manage Office 365. This article will only cover the primary management module, the MSOnline module.
+There are several PowerShell modules that are required to manage Office 365. This article covers the primary management module, which is MSOnline module.
 
-Use the following steps to install the MSOnline module.
+Use the following steps to install the MSOnline module:
 
 1.	Run the Windows PowerShell app with elevated privileges (Run as Administrator).
 
@@ -41,9 +41,9 @@ Use the following steps to install the MSOnline module.
     Install-Module MSOnline
     ```
     
-**NOTE:** If prompted about installing modules from an untrusted repository, type Y and press ENTER.
+**Note:** If prompted about installing modules from an untrusted repository, type **Y** and press **Enter**.
 
-4.	Copy and paste the following code block into PowerShell. This code block is a script that will connect you to your Office 365 tenant using the administrative credentials you provide. Lines that begin with # are comments relating to the line of code above them. When prompted, enter your Global Administrator credentials:
+4. This code block is a script that will connect you to your Office 365 tenant using the administrative credentials you provide. Lines that begin with ```#``` are comments relating to the line of code above them. Copy and paste the following code block into PowerShell and enter your Global Administrator credentials when prompted:
 
     ```PowerShell
     Import-Module Msonline
