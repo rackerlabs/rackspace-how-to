@@ -1,12 +1,12 @@
 ---
-permalink: set-up-sftp-users-in-rhel-centos-ubuntu-and-debian/
+permalink: set-up-sftp-users-in-linux-based-systems/
 audit_date: '2019-01-18'
-title: Set up SFTP users in RHEL 6, CentOS 6, Ubuntu, and Debian
+title: Set up SFTP users in Linux-based systems
 type: article
 created_date: '2019-01-18'
 created_by: Rackspace Community
-last_modified_date: '2019-01-22'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-01-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -17,7 +17,7 @@ This article shows you how to create secured SSH File Transfer Protocol (SFTP) u
 
 Before you begin, review the following best practices:
 
-- The home directory of the SFTP user must be owned by `root:root`. Other directories 
+- The home directory of the SFTP user must be owned by `root:root`. Other directories
   can (and should) be owned (and writable) by the user.
 
 - It's important to ensure the chroot user has write access to the specified DocumentRoot.
@@ -26,10 +26,10 @@ Before you begin, review the following best practices:
 
 - It's important to ensure that the SFTP user added is added to the SFTP group.
 
-- These instructions are for adding a single domain (SFTP user), but you could potentially 
+- These instructions are for adding a single domain (SFTP user), but you could potentially
   use them to manage multiple domains.
 
-**Important**: The steps in this article do not work with RHEL&reg; 7 or CentOS&reg; 7. As with any proper chroot operation, this configuration does not provide write access to the chroot directory. Only subdirectories of the chroot jail are writable. This is due to the way that root permissions are interpreted at the higher-level directories in which the SFTP user is contained. 
+**Important**: The steps in this article do not work with RHEL&reg; 7 or CentOS&reg; 7. As with any proper chroot operation, this configuration does not provide write access to the chroot directory. Only subdirectories of the chroot jail are writable. This is due to the way that root permissions are interpreted at the higher-level directories in which the SFTP user is contained.
 
 Use the following steps to create secured SFTP users that are jailed to their home directories:
 
@@ -55,8 +55,8 @@ Use the following steps to create secured SFTP users that are jailed to their ho
 
 7. Add the following line directly below the line that you just commented out:
 
-       Subsystem sftp internal-sftp 
- 
+       Subsystem sftp internal-sftp
+
 8. Add the following code to the bottom of the file:
 
        Match Group sftponly
@@ -65,7 +65,7 @@ Use the following steps to create secured SFTP users that are jailed to their ho
             AllowTCPForwarding no
             ForceCommand internal-sftp
 
-9. Run the `sshd` command to test the changes, then restart the service. 
+9. Run the `sshd` command to test the changes, then restart the service.
 
    **Important**: If this step is performed incorrectly, it might break your SSHD configuration.
 
@@ -97,8 +97,8 @@ Next, you need to verify that the file permissions on the file system are correc
        drwxr-xr-x    2 5001     33           4096 Sep 28 08:52 html
        -rw-r--r--    1 0        0               0 Sep 28 08:09 test.php
 
-   **Note**: Use the `cd` command to go to the HTML directory (which is located at `/var/www/vhosts/mywebsite.com/html` 
-   because the website 'documentroot' is one level below the SSH SFTP user's `root` directory. You should use this setup 
+   **Note**: Use the `cd` command to go to the HTML directory (which is located at `/var/www/vhosts/mywebsite.com/html`
+   because the website 'documentroot' is one level below the SSH SFTP user's `root` directory. You should use this setup
    because your `www-data` users (the web server's users) have root `user:group` permissions on its files.
 
 4. Test the ability to upload files by running the following commands:
@@ -120,7 +120,7 @@ Next, you need to verify that the file permissions on the file system are correc
 
        Remote working directory: /html
 
-   SFTP only sees the files in the `/var/www/vhosts/mywebsite.com/` directory, and considers 
+   SFTP only sees the files in the `/var/www/vhosts/mywebsite.com/` directory, and considers
    this directory the highest-level, root ('/') directory.
 
 7. Use the following steps to connect to SFTP and set up your SFTP client:
@@ -128,9 +128,9 @@ Next, you need to verify that the file permissions on the file system are correc
     1. Install [Cyberduck&reg;](https://cyberduck.io/download/).
     2. Open the Cyberduck application.
     3. At the top of the window, click the icon for **Open Connection**.
-    4. In the drop-down menu, select **SFTP (SSH File Transfer Protocol)**. 
+    4. In the drop-down menu, select **SFTP (SSH File Transfer Protocol)**.
     5. In the **Server** field, enter the Internet Protocol (IP) address for the server.
-    6. Enter the username and password that you use to connect to SFTP. 
+    6. Enter the username and password that you use to connect to SFTP.
     7. Click **Connect**.
 
 **Important**: Always test your website after you change file permissions.

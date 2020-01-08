@@ -1,12 +1,12 @@
 ---
-permalink: ubuntu-mongrel-and-mongrel-cluster-installation/
+permalink: install-mongrel-and-mongrel-clusters-on-the-ubuntu-operating-system/
 audit_date:
-title: Install Mongrel and mongrel clusters on Ubuntu
+title: Install Mongrel and mongrel clusters on the Ubuntu operating system
 type: article
 created_date: '2011-03-16'
 created_by: Rackspace Support
-last_modified_date: '2016-01-13'
-last_modified_by: Nate Archer
+last_modified_date: '2020-01-08'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -221,7 +221,7 @@ Remember you may need to put a sudo in front of the 'stop' command if
 you have just rebooted as the process started on reboot is owned by
 root.
 
-### Summary 
+### Summary
 
 There is a lot happening in this article but when followed all the way
 through, we have all the necessary gems and information to create
