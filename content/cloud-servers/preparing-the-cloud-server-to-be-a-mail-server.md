@@ -76,7 +76,6 @@ The output is now:
 
 **Note:** `mail.democloud.com` is an example of a hostname.
 
-
 ### Change the RDNS in the Control Panel
 
 Now, you must configure the RDNS on the server.
