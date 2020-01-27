@@ -5,7 +5,7 @@ title: Install the Cloud Backup agent on Windows by using silent installation
 type: article
 created_date: '2015-01-20'
 created_by: Rose Contreras
-last_modified_date: '2020-01-15
+last_modified_date: '2020-01-15'
 last_modified_by: Brett Johnson
 product: Cloud Backup
 product_url: cloud-backup
