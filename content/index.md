@@ -57,7 +57,7 @@ permalink: /
 			<div class="row">
 				<h3>Application Services</h3>
 				<div class="twelve columns">
-					<div class="primary twelve columns icon databases">
+					<div class="primary three columns icon databases">
 						<h4><a href="/how-to/database-services"><span>Database</span> Services</a></h4>
 					</div>
 					<div class="three columns icon cdn">
