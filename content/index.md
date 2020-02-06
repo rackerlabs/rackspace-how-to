@@ -55,10 +55,16 @@ permalink: /
 			<hr/>
 
 			<div class="row">
-				<h3>Managed Operations</h3>
+				<h3>Application Services</h3>
 				<div class="twelve columns">
-					<div class="primary twelve columns icon managed-operations">
-						<h4><a href="/how-to/managed-operations"><span>Managed</span> Operations</a></h4>
+					<div class="primary twelve columns icon databases">
+						<h4><a href="/how-to/database-services"><span>Database</span> Services</a></h4>
+					</div>
+					<div class="three columns icon cdn">
+					  <h4><a href="/how-to/digital-experience"><span>Digital</span> Experience</a></h4>
+					</div>
+					<div class="three columns icon intelligence">
+					  <h4><a href="/how-to/business-intelligence"><span>Business></span> Intelligence</a></h4>
 					</div>
 				</div>
 			</div>
