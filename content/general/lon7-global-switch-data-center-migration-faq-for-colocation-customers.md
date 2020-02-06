@@ -31,7 +31,7 @@ relocate outside of the current facility.
 
 #### When will the relocation take place?
 
-All colocation customers in J2 must vacate the suite by May 30, 2020. We will
+All colocation customers in J2 must vacate the suite by April 30, 2020. We will
 work with you to establish a suitable window for the move according to your
 requirements and the availability of any necessary Rackspace resources.
 
