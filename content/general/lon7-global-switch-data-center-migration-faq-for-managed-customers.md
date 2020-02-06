@@ -38,7 +38,7 @@ infrastructure and the Stratosphere&reg; products (EStrat, VStrat, and PCIStrat)
 #### When will the relocation take place?
 
 Rackspace assigns all customers to a move group, which we will schedule for a
-date in May and June 2020. We schedule the move groups to run in a maintenance
+date in April and May 2020. We schedule the move groups to run in a maintenance
 window starting on either a Friday or Saturday night and running through to the
 following morning. We plan to keep the maintenance window shorter than 12 hours.
 We confirm the exact timings when we allocate the move groups, at least 60 days
