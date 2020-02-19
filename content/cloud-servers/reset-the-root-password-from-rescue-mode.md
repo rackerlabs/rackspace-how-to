@@ -1,12 +1,12 @@
 ---
 permalink: reset-the-root-password-from-rescue-mode/
-audit_date:
+audit_date: '2020-02-19'
 title: Reset the root user password from rescue mode
 type: article
 created_date: '2019-01-21'
 created_by: Rackspace Community
-last_modified_date: '2019-01-21'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-02-19'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -15,7 +15,10 @@ If you're unable to reset the password for your Linux&reg; cloud server by
 using the Cloud Control Panel, you can use the following steps to perform
 this task by using rescue mode:
 
-1. Place the server into rescue mode.
+1. Place the server into rescue mode. 
+
+   For more information on placing your server into rescue mode, see
+   [Rescue Mode](/how-to/rescue-mode).
 
 2. Connect to the server that is in rescue mode by  the following
    command, replacing `ip address of the server` with the Internet Protocol
