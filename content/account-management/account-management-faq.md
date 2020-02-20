@@ -141,8 +141,8 @@ After you delete the server, load balancer, or service from your
 account, its resources are available for someone else to use, and you are no
 longer billed for them.
 
-You can delete cloud servers and services by using the [Cloud Control
-Panel](https://login.rackspace.com). To cancel Rackspace support for Azure,
+Follow the process outlined in the [Cloud Control
+Panel](https://login.rackspace.com) to delete your cloud servers and services. To cancel Rackspace support for Azure,
 create a ticket for our Billing team.
 
 #### Am I still charged if my servers are suspended?
