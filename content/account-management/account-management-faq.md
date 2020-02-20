@@ -5,8 +5,8 @@ title: Account Management FAQ
 type: article
 created_date: '2019-05-16'
 created_by: Stephanie Fillmon
-last_modified_date: '2019-05-16'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2019-02-20'
+last_modified_by: Chad Sterling
 product: Account Management
 product_url: account-management
 ---
@@ -158,36 +158,6 @@ suspension."
 The Rackspace [Cloud Terms of
 Service](https://www.rackspace.com/information/legal/cloud/tos) explains
 when customers are entitled to credits.
-
-#### How do I delete or cancel my services?
-
-Cloud accounts can be closed by the account owner at any time, but Rackspace
-cannot perform this action. Instead, the account owner must initiate the
-closure through the MyCloud portal by using the following steps:
-
-1. Ensure that all products (such as Cloud Servers, Images, Cloud Files, Cloud
-   Block Storage, and so on) are deleted.
-2. Log in to the [Cloud Control Panel](https://login.rackspace.com/) and
-   review all services to ensure that all your data is backed up outside of
-   the Rackspace environment.
-3.  In the upper-right corner of the page, click **Account > Account
-    Settings**.
-4.  At the bottom of the **Account Settings** page, click **Cancel My Account**.
-5.  Choose a reason from the provided list.
-6.  Check the check box at the bottom of the page.
-7.  Type the word _CANCEL_ into the text box.
-8.  Click **Cancel Account**.
-
-Cancellations cannot be initiated over the phone or with a support ticket. The
-cancellation submission is your authorized approval for Rackspace to delete
-your account and cancel your services in their entirety. If you do not
-have a copy of your data outside of our Cloud infrastructure, Rackspace is not
-liable for data loss.
-
-**Note**: Your Rackspace cloud account is billed one month in arrears on your
-anniversary date. Depending on the date on which your cancellation is
-finalized, you might still receive an additional, final invoice on your next
-invoice date. Refer to your billing overview for your monthly invoice date.
 
 #### I don't agree with my bill. How can I dispute a charge?
 
