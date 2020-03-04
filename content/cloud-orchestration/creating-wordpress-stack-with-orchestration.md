@@ -2,7 +2,7 @@
 permalink: creating-wordpress-stack-with-orchestration/
 audit_date:
 title: Rackspace Orchestration - Building a Wordpress Stack
-Type: article
+type: article
 created_date: '2020-03-04'
 created_by: Chris Silva
 last_modified_date: 
