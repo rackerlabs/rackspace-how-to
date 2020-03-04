@@ -1,12 +1,12 @@
 ---
 permalink: how-to-install-a-lamp-stack-on-centos-fedora-or-red-hat/
 audit_date:
-title: 'Install a LAMP stack on CentOS, Fedora, or Red Hat'
+title: 'Install a LAMP stack on RHEL 6 based distrobutions'
 type: article
 created_date: '2014-08-04'
 created_by: Rackspace Support
-last_modified_date: '2014-08-19'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2020-03-04'
+last_modified_by: Shaun Crumpler
 product: Cloud Servers
 product_url: cloud-servers
 ---
