@@ -2,6 +2,7 @@
 permalink: memory-monitoring-and-management	
 audit_date:
 title: Memory monitoring and management
+type: article
 created_date: '2020-03-04'
 created_by: Matthew Brown
 last_modified_date: 
