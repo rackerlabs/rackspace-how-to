@@ -29,6 +29,8 @@ Yes
 Yes
 
 Somewhat
+Yes
+
 **Answer options**
 - Yes 
 - Somewhat
@@ -48,6 +50,8 @@ Somewhat Often
 Often
 
 Somewhat Often
+Somewhat Often
+
 **Answer options**
 - Often
 - Somewhat often
@@ -65,6 +69,8 @@ Yes
 Yes
 
 Yes
+Yes
+
 **Answer options**
 - Yes
 - No
@@ -81,6 +87,8 @@ Yes
 Yes
 
 No
+Yes
+
 **Answer options**
 - Yes
 - No
@@ -96,6 +104,8 @@ Thanks!
 Video should be a bit slower or provide download slides
 
 This is a good way of helping others to contribute and learn a bit more about GITHub. Does require a bit of technical know-how!
+
+Very straightforward video and easily understood. 
 
 **Answer options**
 - Open ended
