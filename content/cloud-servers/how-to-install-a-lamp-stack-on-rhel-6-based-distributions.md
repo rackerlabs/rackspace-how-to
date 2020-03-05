@@ -5,7 +5,7 @@ title: 'Install a LAMP stack on RHEL 6-based distributions'
 type: article
 created_date: '2014-08-04'
 created_by: Rackspace Support
-last_modified_date: '2020-03-04'
+last_modified_date: '2020-03-05'
 last_modified_by: Chris Silva
 product: Cloud Servers
 product_url: cloud-servers
@@ -37,7 +37,7 @@ stack on your server operating system:
 
 2. Provide answers for the following system prompts:
 
-    -   **Enter current password for root (enter for none):**: Leave blank.
+    -   **Enter current password for root (enter for none)**: Leave blank.
     -   **Set root password? [Y/n]** Select **Yes**
     -   **New password**: You decide, but make it secure.
     -   **Remove anonymous users? [Y/n]**: Select **Yes**.
@@ -60,7 +60,7 @@ steps.
 
 3.  Provide answers for the following system prompts:
 
-    -   **Enter current password for root (enter for none):**: Leave blank.
+    -   **Enter current password for root (enter for none)**: Leave blank.
     -   **Set root password? [Y/n]** Select **Yes**
     -   **New password**: You decide, but make it secure.
     -   **Remove anonymous users? [Y/n]**: Select **Yes**.
