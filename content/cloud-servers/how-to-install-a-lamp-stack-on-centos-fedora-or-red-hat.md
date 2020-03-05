@@ -1,18 +1,18 @@
 ---
-permalink: how-to-install-a-lamp-stack-on-centos-fedora-or-red-hat/
+permalink: how-to-install-a-lamp-stack-on-rhel-6-based-distributions/
 audit_date:
-title: 'Install a LAMP stack on CentOS, Fedora, or Red Hat'
+title: 'Install a LAMP stack on CentOS 6, Fedora 21, or Red Hat 6'
 type: article
 created_date: '2014-08-04'
 created_by: Rackspace Support
-last_modified_date: '2014-08-19'
-last_modified_by: Kyle Laffoon
+last_modified_date: '2020-03-04'
+last_modified_by: Chris Silva
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
 This article provides instructions for installing a LAMP (Linux, Apache, MySQL, PHP) stack 
-on your server. Linux (CentOS, Fedora, or Red Hat Enterprise Linux) is your operating
+on your server. Linux (CentOS 6, Fedora 21, or Red Hat Enterprise Linux 6) is your operating
 system, and Apache is your web daemon, which serves information that is
 stored in your MySQL database through PHP scripting for your users. By
 the end of this article, you will have a fully operational LAMP server,
@@ -21,20 +21,30 @@ ready to serve out multiple virtual hosts.
 ### Prerequisites
 
 -   Basic understanding of SSH.
+-   Sudo/Admin access to your server.
 -   A Cloud Server with CentOS 6, Fedora 21, or Red Hat Enterprise Linux 6.
 
 ### Install the LAMP stack
 
-Log on to your server via SSH and then complete the following steps for
+Log on to your server via SSH, elevate to root, and then complete the following steps for
 your preferred set up method.
 
 **One-line command method**
 
-Use the following one-line command for an expedient set up of your LAMP
-server on your server operating system:
+1. Use the following one-line command for an expedient set up of your LAMP
+stack on your server operating system:
 
-    sudo sh -c "yum install httpd httpd-devel mysql mysql-server mysql-devel php php-mysql php-common php-gd php-mbstring php-mcrypt php-devel php-xml -y; service mysqld start && mysql_secure_installation && service mysqld restart && service httpd start && chkconfig httpd on && chkconfig mysqld on &&iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT && /etc/init.d/iptables save"
+    sudo sh -c "yum install httpd httpd-devel mysql mysql-server mysql-devel php php-mysql php-common php-gd php-mbstring php-mcrypt php-devel php-xml -y; service mysqld start && mysql_secure_installation && service mysqld restart && service httpd start && chkconfig httpd on && chkconfig mysqld on && iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT && iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT && /etc/init.d/iptables save"
 
+2. Provide answers for the following system prompts:
+
+    -   **Enter current password for root (enter for none):**: Leave blank.
+    -   **Set root password? [Y/n]** Select **Yes**
+    -   **New password**: You decide, but make it secure.
+    -   **Remove anonymous users? [Y/n]**: Select **Yes**.
+    -   **Disallow root login remotely? [Y/n]**: Select **Yes**.
+    -   **Remove test database and access to it? [Y/n]**: Select **Yes**.
+    -   **Reload privilege tables now? [Y/n]**: Select **Yes**.
 
 **Individual commands method**
 
@@ -51,11 +61,13 @@ steps.
 
 3.  Provide answers for the following system prompts:
 
-    -   **Current mysql password**: Leave blank.
+    -   **Enter current password for root (enter for none):**: Leave blank.
+    -   **Set root password? [Y/n]** Select **Yes**
     -   **New password**: You decide, but make it secure.
-    -   **Delete test data?**: Select **Yes**.
-    -   **Remove anonymous-user accounts?**: Select **Yes**.
-    -   **Allow remote users?**: Select **No**.
+    -   **Remove anonymous users? [Y/n]**: Select **Yes**.
+    -   **Disallow root login remotely? [Y/n]**: Select **Yes**.
+    -   **Remove test database and access to it? [Y/n]**: Select **Yes**.
+    -   **Reload privilege tables now? [Y/n]**: Select **Yes**.
 
 4.  Enter the following command to restart mysqld, start httpd, and
     configure httpd and mysqld to start on boot.
@@ -64,9 +76,9 @@ steps.
 
 5.  Allow web traffic through the firewall:
 
-        sudo sh -c "iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT && service iptables save"
+        sudo sh -c "iptables -I INPUT -p tcp -m tcp --dport 80 -j ACCEPT && iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT && service iptables save"
 
-    This command allows port 80 (web) inbound traffic through the
+    This command allows port 80 (web) and port 443 (secure web) inbound traffic through the
     firewall, and saves the rule for reboots.
 
 The installation is complete. To test it, browse to
