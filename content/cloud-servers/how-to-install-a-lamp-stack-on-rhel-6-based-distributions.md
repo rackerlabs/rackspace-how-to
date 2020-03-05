@@ -38,7 +38,7 @@ stack on your server operating system:
 2. Provide answers for the following system prompts:
 
     -   **Enter current password for root (enter for none)**: Leave blank.
-    -   **Set root password? [Y/n]** Select **Yes**
+    -   **Set root password? [Y/n]**: Select **Yes**
     -   **New password**: You decide, but make it secure.
     -   **Remove anonymous users? [Y/n]**: Select **Yes**.
     -   **Disallow root login remotely? [Y/n]**: Select **Yes**.
@@ -61,7 +61,7 @@ steps.
 3.  Provide answers for the following system prompts:
 
     -   **Enter current password for root (enter for none)**: Leave blank.
-    -   **Set root password? [Y/n]** Select **Yes**
+    -   **Set root password? [Y/n]**: Select **Yes**
     -   **New password**: You decide, but make it secure.
     -   **Remove anonymous users? [Y/n]**: Select **Yes**.
     -   **Disallow root login remotely? [Y/n]**: Select **Yes**.
