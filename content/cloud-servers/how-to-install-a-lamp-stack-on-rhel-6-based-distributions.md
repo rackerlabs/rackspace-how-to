@@ -1,7 +1,7 @@
 ---
 permalink: how-to-install-a-lamp-stack-on-rhel-6-based-distributions/
-audit_date:
-title: 'Install a LAMP stack on CentOS 6, Fedora 21, or Red Hat 6'
+audit_date: '2020-03-04'
+title: 'Install a LAMP stack on RHEL 6-based distributions'
 type: article
 created_date: '2014-08-04'
 created_by: Rackspace Support
@@ -11,17 +11,16 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article provides instructions for installing a LAMP (Linux, Apache, MySQL, PHP) stack 
+This article provides instructions for installing a LAMP (Linux, Apache, MySQL, PHP) stack
 on your server. Linux (CentOS 6, Fedora 21, or Red Hat Enterprise Linux 6) is your operating
-system, and Apache is your web daemon, which serves information that is
-stored in your MySQL database through PHP scripting for your users. By
-the end of this article, you will have a fully operational LAMP server,
-ready to serve out multiple virtual hosts.
+system, and Apache is your web daemon, which serves information that is stored in your MySQL
+database through PHP scripting for your users. This article shows you how to create a fully
+operational LAMP server, ready to serve out multiple virtual hosts.
 
 ### Prerequisites
 
--   Basic understanding of SSH.
--   Sudo/Admin access to your server.
+-   A basic understanding of Secure Shell (SSH).
+-   Sudo or admin access to your server.
 -   A Cloud Server with CentOS 6, Fedora 21, or Red Hat Enterprise Linux 6.
 
 ### Install the LAMP stack
@@ -69,8 +68,8 @@ steps.
     -   **Remove test database and access to it? [Y/n]**: Select **Yes**.
     -   **Reload privilege tables now? [Y/n]**: Select **Yes**.
 
-4.  Enter the following command to restart mysqld, start httpd, and
-    configure httpd and mysqld to start on boot.
+4.  Enter the following command to restart `mysqld`, start `httpd`, and
+    configure `httpd` and `mysqld` to start on boot.
 
         sudo sh -c "service mysqld restart && service httpd start && chkconfig httpd on && chkconfig mysqld on"
 
@@ -81,5 +80,4 @@ steps.
     This command allows port 80 (web) and port 443 (secure web) inbound traffic through the
     firewall, and saves the rule for reboots.
 
-The installation is complete. To test it, browse to
-***http://serverIpAddress/***.
+The installation is complete. To test it, browse to ***http://serverIpAddress/***.
