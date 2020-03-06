@@ -1,5 +1,5 @@
 ---
-permalink: memory-monitoring-and-management	
+permalink: memory-monitoring-and-management/
 audit_date: '2020-03-04'
 title: Memory monitoring and management
 type: article
