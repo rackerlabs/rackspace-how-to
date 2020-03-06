@@ -20,7 +20,7 @@ By default, this Orchestration template includes the following Cloud resources:
 
 The Cloud server comes with the following configuration:
 •	NGINX 
-•	PHP 7.4
+•	PHP 7.3
 •	php-fpm
 •	lsyncd (Installed but not configured by default on single server builds)
 •	phpMyAdmin (Optional)
@@ -67,12 +67,14 @@ This action displays a pop-up box, however as Production is the only available b
 
 ## Making your Wordpress site live
 At this point, you now have a functional Wordpress website, however there are a few steps required to get your site live and publicly accessible.
+
 # Logging into your server
 If you have any server side changes that need to be made, you can log into the master node. This node is configured with lsyncd for your web root, but any new users or special configurations you make to the master server will need to be done on all instances. To access the master server:
 1. In the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com), click on **Orchestration > Stacks**.
 2. Click on the server resource as listed in the **Infrastructure** section.
 3. Connect to the server via SSH or Emergency Console.
 4. Once logged in, you can make any custom changes needed on the server.
+
 # Setting up your DNS
 In order to make your site publicly accessible, you will need to create DNS records for your new domain. For this section, you will need the Load Balancer IP address. If you do not want to make the site pubiclly available at this time, you can modify your host file to allow local access. More information [here](https://support.rackspace.com/how-to/modify-your-hosts-file/)
 1. In the [Rackspace Cloud Control Panel](https://mycloud.rackspace.com), **Networking** >> **Cloud DNS**. 	
