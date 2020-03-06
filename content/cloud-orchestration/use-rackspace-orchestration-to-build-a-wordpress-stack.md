@@ -163,12 +163,15 @@ server to avoid bottlenecks and unbalanced server traffic.
    page in the Control Panel. You need substitute this for **$ServiceNet IP*** in Step 5.
 3. Edit **/etc/lsyncd/lsync.conf.lua**.
 4. Locate the following lines:
+
 	settings {
         logfile = "/var/log/lsyncd/lsyncd.log",
         statusFile = "/var/log/lsyncd/lsyncd-status.log",
         statusInterval = 20
         }
+	
 5. After the preceding lines, add the following lines to the config file:
+
 	sync {
         default.rsync,
         source = "/var/www/vhosts",
@@ -179,9 +182,10 @@ server to avoid bottlenecks and unbalanced server traffic.
                 acls = true,
                 verbose = true,
                 rsh = "/usr/bin/ssh -p 22 -o StrictHostKeyChecking=no",
-                \_extra = {"-a"}
+                _extra = {"-a"}
         	}
 	}
+	
 6. Save and exit the file. 
 7. Restart the `lsyncd` service. 
 
