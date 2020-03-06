@@ -11,9 +11,7 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-### How to view memory usage 
-
-This article shows you how to check and monitor the memory usage of a Linux&reg; server. You need to
+This article shows you how to check and monitor the memory usage of a Linux&reg; server. You must
 consider many different things when managing memory use for a Linux server, but this article focuses
 on the following:
 
@@ -27,18 +25,18 @@ You can use the `free`, `top`, or `htop` commands to view memory usage.
 
 #### The free command
 
-Use the `free` command to display the amount of free and used memory in the system. When you 
-run it, this command displays the following output:
+Use the `free` command to display the amount of free and used memory in the system. After you 
+run it, you should see output similar to the following example:
 
     $ free
                   total        used        free      shared  buff/cache   available
     Mem:        8009408     1878604      970740      470152     5160064     5341764
     Swap:       4194300       92160     4102140
     
-You can the following flag options to the command to change the output:
+You can add the following flag options to the command to customize the output:
 
  - **-h**: Makes the output of the command human readable.
- - **-[b, k, m, g]**: Outputs the data in the corresponding data type (byte, kilobyte, megabyte, or gigabyte).
+ - **-[b, k, m, g]**: Formats the data in the corresponding data type (byte, kilobyte, megabyte, or gigabyte).
  - **-s**: Outputs the data at the specified interval.  For example, `-s 3` displays data every 3 seconds.
 
 #### The top and htop commands
@@ -50,8 +48,8 @@ servers by default.
 ### Swap space 
 
 Swap space is the amount of space that is reserved whenever the random access memory (RAM) is
-used up. You can use the preceding commands to view the swap space along with the memory. If you
-want to view more information about swap space, see
+used up. You can use the commands in the preceding sections to view the swap space along with the memory. If you
+want to learn more about swap space, see
 [Swap space on Cloud Servers](https://support.rackspace.com/how-to/swap-space-on-cloud-servers/).
 
 ### OOM Killer
