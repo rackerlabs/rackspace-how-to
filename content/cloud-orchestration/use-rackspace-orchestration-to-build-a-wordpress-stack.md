@@ -179,7 +179,7 @@ server to avoid bottlenecks and unbalanced server traffic.
                 acls = true,
                 verbose = true,
                 rsh = "/usr/bin/ssh -p 22 -o StrictHostKeyChecking=no",
-                _extra = {"-a"}
+                \_extra = {"-a"}
         	}
 	}
 6. Save and exit the file. 
