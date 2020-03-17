@@ -1,7 +1,7 @@
 ---
-permalink: os-billable-services-overview/
+permalink: os-billable-services-for-managed-infrastructure-customers/
 audit_date: '2020-03-11'
-title: OS Billable Services overview
+title: OS Billable Services for Managed Infrastructure Customers
 type: article
 created_date: '2020-03-11'
 created_by: Stephanie Fillmon
@@ -42,10 +42,8 @@ limitations:
   hour period
 - Rackspace won't proactively monitor or troubleshoot any issues that might
   arise after the requested task is completed or with the task itself
-- If a request is taking longer to complete than initially estimated, Rackspace
-  will reach out to the customer before proceeding
-- If there is a strong possibility that there could be a negative impact to the
-  environment, Rackspace reserves the right to roll back and cancel the request
+- Rackspace will reach out before proceeding if a request is found to take longer to complete than initially estimated
+- Rackspace reserves the right to not proceed with any specific customer requests that could/might negatively impact customer environments
 - Time to completion is subject to change due to updates of circumstances and
   environment
 
