@@ -5,7 +5,7 @@ title: 'Allow web traffic in ufw software firewall'
 type: article
 created_date: '2020-03-17'
 created_by: Chris Silva
-last_modified_date: '2020-03-17'
+last_modified_date: '2020-03-18'
 last_modified_by: Chris Silva
 product: Cloud Servers
 product_url: cloud-servers
@@ -29,6 +29,7 @@ your preferred setup method.
 #### One-line command method
 
 Use the following steps for the one-line command method:
+
 1. Use the following one-line command to open the open the firewall ports:
 
         sudo sh -c "ufw allow http && ufw allow https"
@@ -37,9 +38,11 @@ Use the following steps for the one-line command method:
 
 If you prefer to configure the software firewall using discrete steps instead of by using the
 one-line command, perform the following steps:
+
 1.  Run the following command to allow traffic on port 80:
 
         sudo ufw allow http
+        
 2.  Run the following command to allow traffic on port 443:
 
         sudo ufw allow https
