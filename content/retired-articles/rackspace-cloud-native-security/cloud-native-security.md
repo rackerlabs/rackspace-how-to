@@ -7,9 +7,9 @@ created_date: '2019-08-19'
 created_by: Toby Dillman
 last_modified_date: '2019-08-28'
 last_modified_by: Stephanie Fillmon
-product: undefined
-product_url: undefined
 ---
+
+<!-- retired per PM instruction -->
 
 Cloud providers are constantly expanding their portfolio of native security
 products. These native products often fill a gap that other 3rd party tools
