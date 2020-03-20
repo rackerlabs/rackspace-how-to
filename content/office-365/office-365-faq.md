@@ -1,12 +1,12 @@
 ---
 permalink: office-365-faq/
-audit_date: '2018-10-11'
+audit_date: '2020-03-20'
 title: Microsoft Office 365 FAQ
 type: article
 created_date: '2016-01-20'
 created_by: Nate Archer
-last_modified_date: '2018-10-25'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2020-03-20'
+last_modified_by: Chris Moyer
 product: Office 365
 product_url: office-365
 ---
@@ -15,17 +15,12 @@ product_url: office-365
 
 #### Where do I access my Office 365 account?
 
-You access your account from two different locations:
+Log in to the [Office 365 Control Panel](https://office365.cp.rackspace.com) to
+manage users and licenses, open chat support, and create support tickets.
+To manage other settings, such as the Exchange Admin Center or the Security and
+Compliance center, click **Office 365 Admin Center** on the left sidebar. This action automatically
+logs you in to the Office 365 Admin Center.
 
--   You manage your Microsoft&reg; Office 365&reg; services at
-    [portal.office.com](https://portal.office.com). From here you can
-    create new users and work with Microsoft Exchange, Skype&reg; for Business,
-    SharePoint&reg;, Yammer&reg;, and the rest of the Office 365 suite.
--   You manage your Office 365 Rackspace account at either
-    [login.rackspace.com](https://login.rackspace.com) or
-    [cp.rackspace.com](https://cp.rackspace.com). Use these portals to
-    handle account administration, open chat support, create support
-    tickets, and pay your bill.
 
 #### What are the system requirements to run Office 365?
 
@@ -96,9 +91,8 @@ You need to provide the following information when you sign up for Office
 
 #### Can I add my domain to Office 365?
 
-Yes. You can find instructions about how to add your domain on the [Office 365
-support
-website](https://support.office.com/en-za/article/Verify-your-domain-in-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611?ui=en-US&rs=en-ZA&ad=ZA).
+Yes. You can find instructions about how to add your domain in [this support article](https://support.rackspace.com/how-to/add-a-domain-in-office-365/).
+
 
 #### What administrative centers exist for Office 365?
 
