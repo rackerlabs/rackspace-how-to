@@ -15,11 +15,13 @@ product_url: office-365
 
 #### Where do I access my Office 365 account?
 
-Log in to the [Office 365 Control Panel](https://office365.cp.rackspace.com) to
-manage users and licenses, open chat support, and create support tickets.
+Log in to the [Office 365 Control Panel](https://office365.cp.rackspace.com)
+with your Global Administrator credentials to manage users and licenses, open
+chat support, and create support tickets.
+
 To manage other settings, such as the Exchange Admin Center or the Security and
-Compliance center, click **Office 365 Admin Center** on the left sidebar. This action automatically
-logs you in to the Office 365 Admin Center.
+Compliance center, click **Office 365 Admin Center** on the left sidebar.
+This action automatically logs you in to the Office 365 Admin Center.
 
 
 #### What are the system requirements to run Office 365?
