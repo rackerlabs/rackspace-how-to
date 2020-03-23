@@ -19,8 +19,7 @@ corresponding ticket with important information that you will need to reference.
 You may need to request that a new username and password be set up, as well. After you
 receive a username and password, you can install the AnyConnect software client.
 
-Before you begin:
-  * Install Java before you install the AnyConnect client software.
+Before you begin, install Java before you install the AnyConnect client software.
 
 Complete the following steps to install the AnyConnect client software:
 
@@ -39,6 +38,7 @@ Complete the following steps to install the AnyConnect client software:
 2. Open a web browser of your choice, and in the address bar, enter **https://Firewall_Management_IP_Address**.
 
 3. To connect to the page, accept any invalid certifications warnings.
+
    These warnings appear because the firewall uses a self-signed certificate instead
    of a certificate purchased from a trusted CA.
 
