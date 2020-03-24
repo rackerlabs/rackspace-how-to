@@ -40,7 +40,7 @@ If you are unsure which company a name server belongs to, a quick Google search 
 
 ### Find which nameservers your new DNS hosting provider uses
 
-If you want to host your DNS with Rackspace, you will use two of the following name servers:
+If you want to host your DNS with Rackspace, you use two of the following name servers:
 
 - ns.rackspace.com    
 - ns2.rackspace.com
@@ -54,33 +54,33 @@ If you want to host your DNS elsewhere, inquire the authoritative name servers f
 
 ### Export your DNS zone file from your current DNS hosting provider
 
-If your DNS is hosted with Rackspace, you can export your domain to a bind9-formatted file by using the API:
+If Rackspace hosts your DNS, you can export your domain to a bind9-formatted file by using the API:
 [Rackspace Cloud DNS API 1.0](https://developer.rackspace.com/docs/cloud-dns/v1/?_ga=2.82690198.1048316456.1584305948-1177037268.1583792228).
 
-Alternatively, you can open a support ticket, and we will assist you in exporting your DNS zone file.
+Alternatively, you can open a support ticket, and we assist you in exporting your DNS zone file.
 
-If your DNS is hosted with another hosting provider, contact them for assistance.
+If another hosting provider hosts your DNS, contact them for assistance.
 
-After you export the DNS zone file, be sure to not make any changes to the DNS records as this can cause conflicts during the migration period.
+After you export the DNS zone file, be sure not to make any changes to the DNS records because this can cause conflicts during the migration period.
 
 ### Import your DNS zone file at your new DNS hosting provider
 
 If you want to host your DNS with Rackspace, you can import a valid bind9-formatted zone file by using the Cloud API:
 [Rackspace Cloud DNS API 1.0](https://developer.rackspace.com/docs/cloud-dns/v1/?_ga=2.82690198.1048316456.1584305948-1177037268.1583792228).
 
-Alternatively, you can open a support ticket, and we will assist you in importing a bind9-formatted  zone file.
+Alternatively, you can open a support ticket, and we assist you in importing a bind9-formatted  zone file.
 
 If you are switching to another hosting provider, contact them for assistance in importing your zone file.
 
-### Change the nameservers at your domain registar
+### Change the nameservers at your domain registrar
 
 After following the previous steps, your DNS zone file should be residing with both your current and new DNS hosting provider. It is important to keep both DNS zone files identical and live until you are sure that the migration has completed successfully. We recommend that you wait for about a week before you delete your zone file with your old hosting provider to ensure worldwide propagation.
 
 Log in to the portal of your domain registrar and update the name servers to the name servers of your new DNS hosting provider. Keep in mind that Rackspace is not a domain registrar, like Namecheap, Dreamhost, or GoDaddy. If you are unsure who your domain registrar is, you can use a lookup tool like [Whois](http://whois.domaintools.com/).
 
-### Verify that the NS records have been updated successfully
+### Verify that the NS records are successfully updated
 
-Now you can verify that your NS records have been updated to the new nameservers by performing a DNS lookup as described in the section **Find your current DNS hosting provider**. Allow for up to 48 hours for the DNS records to update correctly. 
+Now you can verify that your NS records are successfully updated to the new nameservers by performing a DNS lookup as described in the section **Find your current DNS hosting provider**. Allow for up to 48 hours for the DNS records to update correctly. 
 
 ### Delete DNS records with previous DNS provider
 
