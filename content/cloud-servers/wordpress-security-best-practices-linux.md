@@ -18,7 +18,7 @@ that there are many steps that you can take to make your WordPress installation 
 ### Linux users and permissions
 
 It's common for users who are new to WordPress to set their permissions wide open (set 777 permissions) when they see a
-`Permission Denied` error from WordPress. This configuration allows any user (most importantly the web server process) to
+`Permission Denied` error from WordPress. This configuration allows any user (most importantly, the web server process) to
 modify the files in your WordPress installation. To lock this down, we recommend that you create one user for each WordPress
 installation as the file transfer protocol (FTP) user for the site. This article assumes that you have a single site and that
 you name this server `wp-user`.
@@ -31,7 +31,7 @@ Use the following command to create this user:
 
 ### Set permissions
 
-You should make a user other than the web service's system user the owner of the document root of your
+You should make a user, other than the web service's system user, the owner of the document root of your
 site. You should also deny write permissions to the web service. The web service only needs read permission to serve content,
 and assigning write or execute permissions to it leaves an attack vector for outsiders. However, because WordPress must be
 able to upload files and update its own code, you need to bend these rules slightly.
@@ -119,4 +119,4 @@ the following plug-ins to promote security:
 
 - **[WP Security Pro](https://wordpress.org/plugins/wp-security-pro/)**: This is an all-in-one plug-in that has protection features such as login protection, malware scanner, two-factor authentication, and a firewall.
 - **[Disable XML-RPC](https://wordpress.org/plugins/disable-xml-rpc)**: You can lock down XML-RPC by using an **.htaccess** file. However, unless you have a compelling reason to need remote control of your WordPress installation, it's better to disable it to prevent pingback attacks.
-- **[Disqus](https://wordpress.org/plugins/disqus-comment-system)**: Because the built-in user comment system for WordPress is very prone to spam, we recommend that you disable open registration (by navigating to **Settings > General**, then unchecking **Anyone can register**), then using Disqus to moderate comments instead and have users authenticate against their Facebook&reg; or Google&reg; accounts.
+- **[Disqus](https://wordpress.org/plugins/disqus-comment-system)**: Because the built-in user comment system for WordPress is very prone to spam, we recommend that you disable open registration. Do this by navigating to **Settings > General**, then unchecking **Anyone can register**. Then use Disqus to moderate comments instead and have users authenticate against their Facebook&reg; or Google&reg; accounts.
