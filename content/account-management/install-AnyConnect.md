@@ -42,7 +42,7 @@ Complete the following steps to install the AnyConnect client software:
    These warnings appear because the firewall uses a self-signed certificate instead
    of a certificate purchased from a trusted CA.
 
-  To avoid the warnings in the future, you can buy a certificate from a CA. Rackspace can apply that certificate to your firewall.
+   To avoid the warnings in the future, you can buy a certificate from a CA. Rackspace can apply that certificate to your firewall.
 
 4. At the AnyConnect login prompt, enter the username and password provided in the ticket.
 
