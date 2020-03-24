@@ -1,6 +1,6 @@
 ---
 permalink: basic-cloud-server-security/
-audit_date: '2018-05-11'
+audit_date: '2020-03-24'
 title: Basic cloud server security
 type: article
 created_date: '2011-03-16'

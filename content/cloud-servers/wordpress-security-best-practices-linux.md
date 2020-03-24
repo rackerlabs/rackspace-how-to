@@ -1,6 +1,6 @@
 ---
 permalink: wordpress-security-best-practices-linux/
-audit_date: '2019-01-14'
+audit_date: '2020-03-24'
 title: Wordpress security best practices on Linux
 type: article
 created_date: '2019-01-15'
@@ -11,17 +11,17 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-WordPress&reg; is a great content management system (CMS), especially if you're new to blogging or coding. However, 
-due to the  high number of WordPress installations, Wordpress has become a target for attackers. The good news is 
+WordPress&reg; is a great content management system (CMS), especially if you're new to blogging or coding. However,
+due to the  high number of WordPress installations, Wordpress has become a target for attackers. The good news is
 that there are many steps that you can take to make your WordPress installation more secure.
 
 ### Linux users and permissions
 
-It's common for users who are new to WordPress to set their permissions wide open (set 777 permissions) when they see a 
-`Permission Denied` error from WordPress. This configuration allows any user (most importantly the web server process) to 
-modify the files in your WordPress installation. To lock this down, we recommend that you create one user for each WordPress 
-installation as the file transfer protocol (FTP) user for the site. This article assumes that you have a single site and that 
-you name this server `wp-user`. 
+It's common for users who are new to WordPress to set their permissions wide open (set 777 permissions) when they see a
+`Permission Denied` error from WordPress. This configuration allows any user (most importantly the web server process) to
+modify the files in your WordPress installation. To lock this down, we recommend that you create one user for each WordPress
+installation as the file transfer protocol (FTP) user for the site. This article assumes that you have a single site and that
+you name this server `wp-user`.
 
 Use the following command to create this user:
 
@@ -31,10 +31,10 @@ Use the following command to create this user:
 
 ### Set permissions
 
-You should make a user other than the web service's system user the owner of the document root of your 
-site. You should also deny write permissions to the web service. The web service only needs read permission to serve content, 
-and assigning write or execute permissions to it leaves an attack vector for outsiders. However, because WordPress must be 
-able to upload files and update its own code, you need to bend these rules slightly. 
+You should make a user other than the web service's system user the owner of the document root of your
+site. You should also deny write permissions to the web service. The web service only needs read permission to serve content,
+and assigning write or execute permissions to it leaves an attack vector for outsiders. However, because WordPress must be
+able to upload files and update its own code, you need to bend these rules slightly.
 
 For example, you should set the ownership of the entire directory as `wp-user:www-data`.
 
@@ -47,15 +47,15 @@ Use the following base permissions for your WordPress installation:
 - 755 (drwxr-xr-x) for folders
 - 644 (-rw-r--r--) for files
 
-These permissions grant `wp-user` the ability to modify anything, and the web server read-only access. 
+These permissions grant `wp-user` the ability to modify anything, and the web server read-only access.
 
 The following example show how to assign these permissions:
 
     find /var/www/example.com/ -type d -exec sudo chmod  755 {} \;
     find /var/www/example.com/ -type f -exec sudo chmod 644 {} \;
 
-These permissions grant `wp-user` the ability to modify anything, and the web server read-only access. While this is common 
-practice for static sites, there are some files that WordPress must be able to access and execute to function correctly. The 
+These permissions grant `wp-user` the ability to modify anything, and the web server read-only access. While this is common
+practice for static sites, there are some files that WordPress must be able to access and execute to function correctly. The
 following list shows the exceptions and the permissions that you need to set, assuming the same document root:
 
 - `find /var/www/example.com/wp-content/uploads -type d -exec sudo chmod 775 {} \;`
@@ -95,7 +95,7 @@ FTP is inherently insecure, especially when you are using password-based authent
        mkdir ~/.ssh; cd ~/.ssh
        echo 'from="127.0.0.1"' cat ~/.ssh/id_rsa.pub > authorized_keys
        exit
-        
+
 4. Next, ensure that you set permissions correctly by using the following commands:
 
        sudo chmod 700 /home/wp-user/.ssh
@@ -114,9 +114,9 @@ You should be able to update WordPress, plug-ins, and themes without being promp
 
 ### Plug-ins
 
-We recommend that you use as few plug-ins as possible to achieve the results that you want. However, we recommend that you use 
+We recommend that you use as few plug-ins as possible to achieve the results that you want. However, we recommend that you use
 the following plug-ins to promote security:
 
-- **[Login Security Solution](https://wordpress.org/plugins/login-security-solution)**: This is an all-in-one plug-in that enables you to set strict password requirements, set password expiration periods, and receive email notifications for repeated failed logins.
+- **[WP Security Pro](https://wordpress.org/plugins/wp-security-pro/)**: This is an all-in-one plug-in that has protection features such as login protection, malware scanner, two-factor authentication, and a firewall.
 - **[Disable XML-RPC](https://wordpress.org/plugins/disable-xml-rpc)**: You can lock down XML-RPC by using an **.htaccess** file. However, unless you have a compelling reason to need remote control of your WordPress installation, it's better to disable it to prevent pingback attacks.
 - **[Disqus](https://wordpress.org/plugins/disqus-comment-system)**: Because the built-in user comment system for WordPress is very prone to spam, we recommend that you disable open registration (by navigating to **Settings > General**, then unchecking **Anyone can register**), then using Disqus to moderate comments instead and have users authenticate against their Facebook&reg; or Google&reg; accounts.
