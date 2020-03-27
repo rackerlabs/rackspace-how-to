@@ -1,32 +1,27 @@
 ---
 permalink: anyconnect-install/
-audit_date: '2020-03-20'
+audit_date: '2020-03-27'
 title: Install AnyConnect
 type: article
 created_date: '2020-03-20'
 created_by: Chris Moyer
-last_modified_date: '2020-03-24'
+last_modified_date: '2020-03-27'
 last_modified_by: Chris Moyer
 product: Account Management
 product_url: account-management
 ---
 
-AnyConnect is a simple and reliable client-to-site VPN solution available
-for Windows, Mac, and various Linux distributions.
+AnyConnect is a simple and reliable client-to-site VPN solution available for Windows, Mac, and various Linux distributions.
 
-After you license and configure AnyConnect on your firewall, there should be a
-corresponding ticket with important information that you will need to reference.
-You may need to request that a new username and password be set up, as well. After you
-receive a username and password, you can install the AnyConnect software client.
+After an AnyConnect license is obtained and the necessary configurations have been made on your firewall, there should be a corresponding ticket with important information that you will need to reference. You may need to request that a new username and password be set up, as well. After you receive a username and password, you can install the AnyConnect software client.
 
-Before you begin, install Java before you install the AnyConnect client software.
+Please ensure Java is installed before proceeding with the AnyConnect client software installation.
 
 Complete the following steps to install the AnyConnect client software:
 
-1. Determine the WAN Management IP assigned to the firewall's external interface.
+1. Determine the WAN Management IP assigned to the firewall’s external interface.
 
-   This information should be provided in a ticket update, but you can also complete
-   the following steps to locate the WAN Management IP address in the MyRackspace portal:
+   This information should be provided in a ticket update, but you can also complete the following steps to locate the WAN Management IP address in the MyRackspace portal:
 
     a. Click the **Network** drop-down tab.
 
