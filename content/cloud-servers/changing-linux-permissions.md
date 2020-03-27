@@ -17,18 +17,18 @@ This article describes how to change permissions on a Linux&reg; cloud server by
 
 Put simply, `chmod` stands for *change mode* and is used to set file or directory permissions in Linux. `chmod` is used by the root user to determine what users, groups, and others can access files or directories.
 
-Typically, the chmod command will be used in the following formats:
+Typically, you use the `chmod` command in the following formats:
 
     $ chmod (options) (permissions) (file name)
     $ chmod (permissions) (file name)
 
-As illustrated above, the use of options with the `chmod` command is optional. The second example is used most frequently. Without an option present, `chmod` modifies the permissions of the file or directory designated in the command.
+The use of options with the `chmod` command is optional. The second example is used most frequently. Without an option present, `chmod` modifies the permissions of the file or directory designated in the command.
 
 ### Permissions
 
-In a Linux system, permissions are used to refer to the owner of the file or directory (user), the group that owns the file or directory (group), and anyone else who would access the file or directory (others).
+In a Linux&reg; system, permissions are used to refer to the owner of the file or directory (user), the group that owns the file or directory (group), and anyone else who would access the file or directory (others).
 
-There are two ways to state these permissions:
+State these permissions by using the following notation:
 
   - alphanumeric characters (r, w, x)
   - octal numbers (0-7)
@@ -39,7 +39,7 @@ For example, you have a file called **example.txt** and you want to set the foll
   - The group members can read and execute, but not write the file
   - Any others can only read the file
 
-The following command option will set your desired permissions to **example.txt**:
+The following command option sets your desired permissions to **example.txt**:
 
     $ chmod u=rwx,g=rx,o=r example.txt
 
@@ -109,9 +109,7 @@ As explained earlier in the article, the first three letters in `rwsr-xr-x` repr
 
 **Note:** This permission would be represented as the 4 in front of the usual octal permission set. So instead of `755`, the permission would be written as `4755`.
 
-A word of warning is needed before explaining what this special permission does. This permission should be granted with extreme caution.
-
-The reason for such caution is this particular permission allows a user to execute a binary program as though they were the owner of that program even though they are not. The most well-known example of this is the `passwd` command.
+You should use this option with caution because this particular permission allows a user to execute a binary program as though they were the owner of that program even though they are not. The most well-known example of this is the `passwd` command.
 
 In the case of `passwd`, the user is able to execute the program even though the binary program is owned by root. However, because `passwd` is set as a SUID by default, it always executes as the root user.
 
@@ -133,7 +131,7 @@ Like SUID, SGID permissions only work on binaries. They do not work on scripts. 
 
 This permission is typically used on directories where members of the group need to have access within the directory shared by the group. Any files created in this directory have the same group owner no matter which group member created the file.
 
-#### Sticky Bit
+#### Sticky bit
 
 This permission is represented by a `t` in the others’ `rwx` permission set, replacing the `x`, shown in the following example:
 
@@ -145,9 +143,9 @@ Notice the `t` in the last set of three letters. The octal equivalent of the `t`
 
 What does this sticky bit do? Typically, this permission is used on a **tmp** directory, and its function is to prevent users from deleting files owned by other users. Usually, if a group has write access to a directory, any user within that group can delete any file within that directory. The sticky bit permission halts that. Only the creator of the file can delete it.
 
-It is considered best practices to set the sticky bit permission on any directory whose ‘others’ permission is octal 7 (read, write, execute). In our `754` example, you would want to use the sticky bit permission if the octals were `757` where 7 is the third octal (representing the others’ permissions).
+As a best practice, you should set the sticky bit permission on any directory whose ‘others’ permission is octal 7 (read, write, execute). In our `754` example, you would want to use the sticky bit permission if the octals were `757` where 7 is the third octal (representing the others’ permissions).
 
-### File / Directory Permissions Cheat Sheet
+### Pemissions cheat sheet for files and directories
 
 Following is a quick cheat sheet explaining each part of the example output:
 
@@ -162,3 +160,4 @@ Following is a quick cheat sheet explaining each part of the example output:
 - `123G`: The size of the file in gigabytes. An ‘M’ would denote megabytes, and a ‘K’ would denote kilobytes.
 - `Feb 03 15:36`: This denotes the date and time that the file was last modified.
 - `example.txt`: The name of the file. If this were listed as ‘/example’, it would be the name of the directory.
+
