@@ -13,45 +13,56 @@ product_url: account-management
 
 ## Rackspace Private Cloud default values
 
+|                                |                                  |
 |--------------------------------|----------------------------------|
 |**Data Center Time Zone:**      | Set Local to data center, time is NTP synced. Servers use a Rackspace caching name server by default as its resolver.|
 |**System Locale:** | Local to data center (Windows), en_US (Linux)|
 |**Patching:** | Rackspace automatic patching (Windows), nightly (Linux)|
 
+&nbsp;
+
+|                                |                                  |
 |--------------------------------|----------------------------------|
 |**Naming Defaults:**| Rackspace-generated six digit number + indication of intended use and numeric tag --> e.g. 123456-web2|
 
+&nbsp;
+
+|                                |                                  |
 |--------------------------------|----------------------------------|
-|**Partitioning Defaults:**|
-|**Windows:|
-All servers are set up with a single C:\ partition, then D:\ for second Raid, E:\ for third RAID, etc.
-Linux:
-Ubuntu/RHEL/CentOS 6+
-Size --> Partition --> Mount Point:
-1GB --> Physical (/dev/sda1) --> /boot
-pv0 --> Physical volume
-vglocalyyyymmdd --> Volume Group
-2GB --> LVM (vglocalyyyymmdd-swap00) --> Swap
-2GB --> LVM (vglocalyyyymmdd-tmp00) --> /tmp
-Remainder -->LVM (vglocalyyyymmdd-root00) --> /
-The default filesystem type is ext4
+|**Partitioning Defaults:**|                |
+|**Windows:|                                |
+|All servers are set up with a single C:\ partition, then D:\ for second Raid, E:\ for third RAID, etc.|      |
+|Linux:|          |
+|Ubuntu/RHEL/CentOS 6+|          |
+|Size --> Partition --> Mount Point:|          |
+|1GB --> Physical (/dev/sda1) --> /boot|          |
+|pv0 --> Physical volume|          |
+|vglocalyyyymmdd --> Volume Group|          |
+|2GB --> LVM (vglocalyyyymmdd-swap00) --> Swap|          |
+|2GB --> LVM (vglocalyyyymmdd-tmp00) --> /tmp|          |
+Remainder -->LVM (vglocalyyyymmdd-root00) --> /|          |
+|The default filesystem type is ext4|          |
+
+&nbsp;
+
+|Rackspace SQL Server Defaults:|    |
+|Version: As specified in your agreement|    |
+|Service Pack: Latest supported will be installed|    |
+|Instance Name: MSSQLSERVER|    |
+|Features:|    |
+|Database Engine and Services (e.g., Replications and Full-Text Search)|    |
+|SQL Client Tools|    |
+|SSMS - Latest supported and only applies to SQL Server 2016 and 2017|    |
+|Collation:|    |
+|For US based Data Centers: SQL_Latin1_General_CP1_CI_AS|    |
+For UK based Data Centers: Latin1_General_CI_AS|    |
+|Port: 1433|    |
+|Max Memory: Apply best practice|    |
+|Drive Format: 64k allocation unit size|    |
+
+&nbsp;
 
 
-Rackspace SQL Server Defaults:
-Version: As specified in your agreement
-Service Pack: Latest supported will be installed
-Instance Name: MSSQLSERVER
-Features:
-Database Engine and Services (e.g., Replications and Full-Text Search)
-SQL Client Tools
-SSMS - Latest supported and only applies to SQL Server 2016 and 2017
-Collation:
-For US based Data Centers: SQL_Latin1_General_CP1_CI_AS
-For UK based Data Centers: Latin1_General_CI_AS
-Port: 1433
-Max Memory: Apply best practice
-Drive Format: 64k allocation unit size
-———————————————————————————————
 SQL Customization:
 You have asked us to install Microsoft SQL Server on your server.
 Please take a moment to review and answer the below questions.
