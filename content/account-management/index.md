@@ -33,7 +33,7 @@ managing invoices, and more.
 
 - [Account registration code](/how-to/account-registration-code)
 - [Getting started with Role Based Access Control (RBAC)](/how-to/getting-started-with-role-based-access-control-rbac/)
-- [Install AnyConnect](/how-to/install-AnyConnect)
+- [Install AnyConnect](/how-to/anyconnect-install)
 - [Known issues and suggested workarounds for RBAC](/how-to/known-issues-and-suggested-workarounds-role-based-access-control-rbac/)
 - [Rackspace Cloud user groups](/how-to/rackspace-cloud-user-groups/)
 - [Viewing and editing user information for your account](/how-to/viewing-and-editing-user-information-for-your-account/)
