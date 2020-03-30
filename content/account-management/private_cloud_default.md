@@ -12,6 +12,11 @@ product_url: account-management
 ---
 
 ## Rackspace Private Cloud default values
+The following is a list of Rackspace Configuration Defaults. Rackspace performs all initial deployment with this information. Please contact your Implementation leader if you require any changes.
+
+. . note::
+
+    Once your deployment begins, Rackspace is unable to make any changes until your device has been handed over to you and billing has begun.
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
@@ -63,36 +68,41 @@ For UK based Data Centers: Latin1_General_CI_AS|    |
 &nbsp;
 
 
-SQL Customization:
-You have asked us to install Microsoft SQL Server on your server.
-Please take a moment to review and answer the below questions.
-Will you require multiple named instances installed if so provide the additional names?
-Where would you like your database files (data, log, tempdb, and backup) to reside?
+### SQL Customization:
+If you have requested Microsoft SQL Server installation on your server, review and answer the below questions:
+
+- Will you require multiple named instances installed if so provide the additional names?
+
+- Where would you like your database files (data, log, tempdb, and backup) to reside?
 For optimal performance the database and OS files should reside on separate drives.
 
-Make your selection below if you require the additional SQL features installed.
-Note: Web Edition only supports Reporting Services
-[ ] Data Quality Services
-[ ] Data Quality Client
-[ ] Distributed Replay Controller
-[ ] Distributed Replay Client
-[ ] Reporting Services - SharePoint
-[ ] Reporting Services Add-in for SharePoint Products
-[ ] Reporting Services*
-[ ] Integration Services*
-[ ] Analysis Services*
-*If requested the customer is responsible for configuring these features.
-Requests to configure these features are on a reasonable endeavor basis.
-Applicable for Microsoft SQL Server 2016 and 2017
-[ ] R Services (In-Database)
-[ ] PolyBase Query Service for External Data
-[ ] Master Data Services - Applies to Enterprise Edition
-[ ] R Server (Standalone) - Applies to Enterprise Edition
-Applicable for Microsoft SQL Server 2016 and 2017
-The Grant Perform Volume Maintenance Task privilege improves performance when creating or extending database files, but can allow deleted content to be access by an unauthorized user.
-Enable 'Grant Performance Volume Maintenance Task privilege to SQL Server Database Engine Service'.
-[ ] Yes
-[ ] No
+Select from the below options if you require the additional SQL features installed.
+
+. . note::
+
+    Web Edition only supports Reporting Services
+
+- Data Quality Services
+- Data Quality Client
+- Distributed Replay Controller
+- Distributed Replay Client
+- Reporting Services - SharePoint
+- Reporting Services Add-in for SharePoint Products
+- Reporting Services*
+- Integration Services*
+- Analysis Services*
+
+    If requested the customer is responsible for configuring these features. Requests to configure these features are on a reasonable endeavor basis. Applicable for Microsoft SQL Server 2016 and 2017
+
+- R Services (In-Database)
+- PolyBase Query Service for External Data
+- Master Data Services - Applies to Enterprise Edition
+- R Server (Standalone) - Applies to Enterprise Edition
+
+    Applicable for Microsoft SQL Server 2016 and 2017
+    The Grant Perform Volume Maintenance Task privilege improves performance when creating or extending database files, but can allow deleted content to be access by an unauthorized user.
+
+Enable 'Grant Performance Volume Maintenance Task privilege to SQL Server Database Engine Service'? Yes or No 
 
 
 Domain: WORKGROUP, unless specified / "intensive" domain for Intensive SLA
@@ -125,6 +135,7 @@ RackConnect: 172.24.48.0/22
 DR: 172.25.0.0
 VPNs:     A VPN questionnaire will be provided via ticket.
 
+ . . note::
 Storage Defaults:
 Please note: Each LUN needs a minimum of 50 GB and we can expand in increments of 25GB.
 
