@@ -50,6 +50,8 @@ Remainder -->LVM (vglocalyyyymmdd-root00) --> /|          |
 
 &nbsp;
 
+|                                |                                  |
+|--------------------------------|----------------------------------|
 |Rackspace SQL Server Defaults:|    |
 |Version: As specified in your agreement|    |
 |Service Pack: Latest supported will be installed|    |
@@ -92,39 +94,49 @@ Select from the below options if you require the additional SQL features install
 - Integration Services*
 - Analysis Services*
 
-    If requested the customer is responsible for configuring these features. Requests to configure these features are on a reasonable endeavor basis. Applicable for Microsoft SQL Server 2016 and 2017
+    If requested the customer is responsible for configuring these features. Requests to configure these features are on a reasonable endeavor basis.
+
+#### Applicable for Microsoft SQL Server 2016 and 2017
 
 - R Services (In-Database)
 - PolyBase Query Service for External Data
 - Master Data Services - Applies to Enterprise Edition
 - R Server (Standalone) - Applies to Enterprise Edition
 
-    Applicable for Microsoft SQL Server 2016 and 2017
-    The Grant Perform Volume Maintenance Task privilege improves performance when creating or extending database files, but can allow deleted content to be access by an unauthorized user.
+### Applicable for Microsoft SQL Server 2016 and 2017
 
-Enable 'Grant Performance Volume Maintenance Task privilege to SQL Server Database Engine Service'? Yes or No 
+The Grant Perform Volume Maintenance Task privilege improves performance when creating or extending database files, but can allow deleted content to be access by an unauthorized user.
+
+Enable 'Grant Performance Volume Maintenance Task privilege to SQL Server Database Engine Service'? Yes or No
 
 
 Domain: WORKGROUP, unless specified / "intensive" domain for Intensive SLA
+|                                |                                  |
+|--------------------------------|----------------------------------|
+|Windows Cluster Defaults|   |
+|Cluster Configuration| Active orPassive |
+|Clustered File Share Required | No  |
+|Domain Setup for Clustering | Customer AD |
 
-Windows Cluster Defaults:
-Cluster Configuration: Active\Passive
-Clustered File Share Required: No
-Domain Setup for Clustering: Customer AD
+|                                |                                  |
+|--------------------------------|----------------------------------|
+| Linux Defaults:  |   |
+| MySQL Version:   |   |
+| MySQL 5.5 on RHEL 6/CentOS 6 |   |
+| MariaDB on RHEL7 or CentOS 7 |   |
 
-Linux Defaults:
-MySQL Version:
-MySQL 5.5 on RHEL 6/CentOS 6
-MariaDB on RHEL7 /CentOS 7
-
-Linux Cluster Defaults:
-Clustered NFS Share: Default is one large NFS Share, unless otherwise specified.
+|                                |                                  |
+|--------------------------------|----------------------------------|
+| Linux Cluster Defaults:| Clustered NFS Share: Default is one large NFS Share, unless otherwise specified.|
 
 Network Defaults:
 - Firewall Only:  Flat Segment labeled as “FW-INSIDE”
 - With Load Balancer:  2 additional segments – “Load Balanced DMZ” and "FW-LB”
 - With Hypervisor: (Hyper-V and vSphere Management): 1 additional segment – Secure “HYP-MGMT”
-Note: VMNet is standard when there is a hypervisor.
+
+. . note::
+
+    VMNet is standard when there is a hypervisor.
 
 Devices identified as Web servers will belong to the DMZ segment, DB servers to the INSIDE segment
 
@@ -143,4 +155,3 @@ Datastores: If no datastores are chosen, Rackspace Implementation Engineering wi
 
 Virtualization Defaults:
 Clustering: If there is an existing cluster, the new hypervisor(s) will be joined to that cluster unless instructed otherwise.
-***END RACKSPACE CONFIGURATION DEFAULTS***
