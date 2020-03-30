@@ -140,18 +140,14 @@ Network Defaults:
 
 Devices identified as Web servers will belong to the DMZ segment, DB servers to the INSIDE segment
 
-Default Ranges:
-FW-INSIDE network: 172.24.16.0/22
-DMZ network: 172.24.32.0/22
-RackConnect: 172.24.48.0/22
-DR: 172.25.0.0
-VPNs:     A VPN questionnaire will be provided via ticket.
-
- . . note::
-Storage Defaults:
-Please note: Each LUN needs a minimum of 50 GB and we can expand in increments of 25GB.
-
-Datastores: If no datastores are chosen, Rackspace Implementation Engineering will choose based on space and availability. Database devices will go on RAID 10 LUNs and everything else will go on RAID 5 or wherever there is space.
-
-Virtualization Defaults:
-Clustering: If there is an existing cluster, the new hypervisor(s) will be joined to that cluster unless instructed otherwise.
+|                                |                                  |
+|--------------------------------|----------------------------------|
+|Default Ranges: |
+|FW-INSIDE network: | 172.24.16.0/22 |
+|DMZ network: | 172.24.32.0/22 |
+|RackConnect: | 172.24.48.0/22 |
+|DR: | 172.25.0.0 |
+|VPNs:     | A VPN questionnaire will be provided via ticket. |
+| Storage Defaults: | Each LUN needs a minimum of 50 GB and we can expand in increments of 25 GB |
+| Datastores: | If no datastores are chosen, Rackspace Implementation Engineering will choose based on space and availability. Database devices will go on RAID 10 LUNs and everything else will go on RAID 5 or wherever there is space. |
+| Virtualization Defaults: | Clustering: If there is an existing cluster, the new hypervisor(s) will be joined to that cluster unless instructed otherwise. |
