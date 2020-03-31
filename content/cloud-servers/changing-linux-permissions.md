@@ -15,7 +15,7 @@ This article describes how to change permissions on a Linux&reg; cloud server by
 
 ### What is the chmod command?
 
-Put simply, `chmod` stands for *change mode* and is used to set file or directory permissions in Linux. `chmod` is used by the root user to determine what users, groups, and others can access files or directories.
+Put simply, `chmod` stands for *change mode* and is used to set file or directory permissions in Linux. Root users use `chmod` to determine what users, groups, and others can access files or directories.
 
 Typically, you use the `chmod` command in the following formats:
 
@@ -26,7 +26,7 @@ The use of options with the `chmod` command is optional. The second example is u
 
 ### Permissions
 
-In a Linux&reg; system, permissions are used to refer to the owner of the file or directory (user), the group that owns the file or directory (group), and anyone else who would access the file or directory (others).
+In a Linux&reg; system, you can use permissions to refer to the owner of the file or directory (user), the group that owns the file or directory (group), and anyone else who would access the file or directory (others).
 
 State these permissions by using the following notation:
 
@@ -62,7 +62,7 @@ Next, we have the octal option for our **example.txt** exercise:
 
     $ chmod 754 example.txt
 
-In this example, the numbers 7, 5, and 4 each present the user, group, and others permissions. The first number position determines the user's permission, the second number determines the group's permissions, and the third number assigns the permissions for others.
+In this example, the numbers 7, 5, and 4 each represent the user, group, and others permissions. The first number position determines the user's permission, the second number determines the group's permissions, and the third number assigns the permissions for others.
 
 These numbers are not randomly selected. They are determined from adding together the numbers 4, 2, 1, and 0.
 
@@ -130,7 +130,7 @@ This `s` is found in the second group of three permissions, which we discovered 
 
 Like SUID, SGID permissions only work on binaries. They do not work on scripts. As to what SGID does, it allows unprivileged group members to execute a binary as if they were the root user.
 
-This permission is typically used on directories where members of the group need to have access within the directory shared by the group. Any files created in this directory have the same group owner no matter which group member created the file.
+Typically, you can use this permission on directories where members of the group need to have access within the directory shared by the group. Any files created in this directory have the same group owner no matter which group member created the file.
 
 #### Sticky bit
 
