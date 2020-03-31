@@ -78,20 +78,21 @@ Therefore, in our previous example, the 7 is determined from the combination of 
 You typically don't need to use options in the `chmod` command, but in case you do, the following
 options can be used with `chmod`:
 
-- `-c`, `--changes` = gives a verbose output when a change is made
-- `-f`, `--silent`, `--quiet` = silences most error messages
-- `-v`, `--verbose` = outputs a detailed message for every action processed
-- `--no-preserve-root` = ignores the deference normally given by default to the / (root) directory
-- `--preserve-root` = does not operate recursively on the / (root) directory
-- `--reference=RFILE` = sets permissions to match those of RFILE, ignoring any specific MODE
-- `-R`, `--recursive` = changes made to files or directories are applied recursively
-- `--help` = displays the help message, then exits
-- `--version` = displays version information, then exits
+- `-c`, `--changes`: Gives a verbose output when a change is made
+- `-f`, `--silent`, `--quiet`: Silences most error messages
+- `-v`, `--verbose`: Outputs a detailed message for every action processed
+- `--no-preserve-root`: Ignores the deference normally given by default to the / (root) directory
+- `--preserve-root`: Does not operate recursively on the / (root) directory
+- `--reference=RFILE`: Sets permissions to match those of RFILE, ignoring any specific MODE
+- `-R`, `--recursive`: Dhanges made to files or directories are applied recursively
+- `--help`: Sisplays the help message, then exits
+- `--version`: Displays version information, then exits
 
 
 ### Extras
 
-In addition to the permissions already discussed, there are three other "special" permissions that the `chmod` command is used to set in Linux.
+In addition to the permissions already discussed, the `chmod` command can set
+three other "special" permissions in Linux.
 
   - SUID (Set User ID)
   - SGID (Set Group ID)
@@ -105,7 +106,7 @@ This permission is represented as an `s` in the user’s `rwx` permission set, r
     $ ls -lh /usr/bin/passwd
     -rwsr-xr-x.  1  root  root  28K  Mar  10  2020  /usr/bin/passwd
 
-As explained earlier in the article, the first three letters in `rwsr-xr-x` represent the user’s permissions. Notice that instead of an `x` there is an `s` in the user’s three permission slots. Instead of showing `x` for execute, there is an `s` in the execute spot. Why is that?
+The first three letters in `rwsr-xr-x` represent the user’s permissions. Notice that instead of an `x` there is an `s` in the user’s three permission slots. Instead of showing `x` for execute, there is an `s` in the execute spot. Why is that?
 
 **Note:** This permission would be represented as the 4 in front of the usual octal permission set. So instead of `755`, the permission would be written as `4755`.
 
