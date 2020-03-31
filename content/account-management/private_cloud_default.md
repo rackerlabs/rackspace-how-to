@@ -31,10 +31,11 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 &nbsp;
 
 ### Partitioning defaults
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 |**Windows:**|  All servers are set up with a single C:\ partition, then D:\ for second Raid, E:\ for third RAID, etc.|
-|**Linux:**| Ubuntu/RHEL/CentOS 6+|          |
+|**Linux:**| Ubuntu/RHEL/CentOS 6+|
 |  |Size --> Partition --> Mount Point:|
 |  |1GB --> Physical (/dev/sda1) --> /boot|
 |  |pv0 --> Physical volume|
@@ -45,7 +46,9 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 |  |The default filesystem type is ext4|
 
 &nbsp;
-### Rackspace SQL Server Defaults:
+
+### Rackspace SQL Server Defaults
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 |Version| As specified in your agreement|
@@ -99,16 +102,19 @@ If requested the customer is responsible for configuring these features. Request
 
 The Grant Perform Volume Maintenance Task privilege improves performance when creating or extending database files, but can allow deleted content to be access by an unauthorized user.
 
-Enable 'Grant Performance Volume Maintenance Task privilege to SQL Server Database Engine Service'? Yes or No
+- Enable 'Grant Performance Volume Maintenance Task privilege to SQL Server Database Engine Service'? Yes or No
 
 
-Domain: WORKGROUP, unless specified / "intensive" domain for Intensive SLA
+- Domain: WORKGROUP, unless specified / "intensive" domain for Intensive SLA
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 |Windows Cluster Defaults|   |
 |Cluster Configuration| Active orPassive |
 |Clustered File Share Required | No  |
 |Domain Setup for Clustering | Customer AD |
+
+&nbsp;
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
@@ -117,11 +123,15 @@ Domain: WORKGROUP, unless specified / "intensive" domain for Intensive SLA
 | MySQL 5.5 on RHEL 6/CentOS 6 |   |
 | MariaDB on RHEL7 or CentOS 7 |   |
 
+&nbsp;
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 | Linux Cluster Defaults:| Clustered NFS Share: Default is one large NFS Share, unless otherwise specified.|
 
-Network Defaults:
+
+### Network Defaults
+
 - Firewall Only:  Flat Segment labeled as “FW-INSIDE”
 - With Load Balancer:  2 additional segments – “Load Balanced DMZ” and "FW-LB”
 - With Hypervisor: (Hyper-V and vSphere Management): 1 additional segment – Secure “HYP-MGMT”
@@ -132,7 +142,7 @@ Devices identified as Web servers will belong to the DMZ segment, DB servers to 
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
-|Default Ranges: |
+|**Default Ranges:** | 
 |FW-INSIDE network: | 172.24.16.0/22 |
 |DMZ network: | 172.24.32.0/22 |
 |RackConnect: | 172.24.48.0/22 |
@@ -141,3 +151,5 @@ Devices identified as Web servers will belong to the DMZ segment, DB servers to 
 | Storage Defaults: | Each LUN needs a minimum of 50 GB and we can expand in increments of 25 GB |
 | Datastores: | If no datastores are chosen, Rackspace Implementation Engineering will choose based on space and availability. Database devices will go on RAID 10 LUNs and everything else will go on RAID 5 or wherever there is space. |
 | Virtualization Defaults: | Clustering: If there is an existing cluster, the new hypervisor(s) will be joined to that cluster unless instructed otherwise. |
+
+&nbsp;
