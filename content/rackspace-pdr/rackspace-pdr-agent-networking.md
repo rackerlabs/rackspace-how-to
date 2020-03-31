@@ -29,6 +29,10 @@ This article includes the networking requirements for the Rackspace Proactive De
 | Agent | Endpoint IPs Below | TCP | 443 | Crowd Strike agent endpoint |
 
 ### Crowd-Strike Agent Endpoint IPs
+<details>
+  <summary>Expand</summary>
+
+#### Endpoint IP addresses
 
 |             |               |               |
 |-------------|---------------|---------------|
@@ -52,6 +56,7 @@ This article includes the networking requirements for the Rackspace Proactive De
 | 52.8.32.113 | 54.67.17.131 | |
 | 54.183.148.116 | 54.67.4.108 | |
 | 54.183.39.68 | 54.183.215.154 | |
+</details>
 
 ### Rapid7 Agent Endpoints
  
