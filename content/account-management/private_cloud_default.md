@@ -14,9 +14,7 @@ product_url: account-management
 ## Rackspace Private Cloud default values
 The following is a list of Rackspace Configuration Defaults. Rackspace performs all initial deployment with this information. Please contact your Implementation leader if you require any changes.
 
-. . note::
-
-    Once your deployment begins, Rackspace is unable to make any changes until your device has been handed over to you and billing has begun.
+**Note:** Once your deployment begins, Rackspace is unable to make any changes until your device has been handed over to you and billing has begun.
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
@@ -32,40 +30,36 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 
 &nbsp;
 
+### Partitioning defaults
 |                                |                                  |
 |--------------------------------|----------------------------------|
-|**Partitioning Defaults:**|                |
-|**Windows:|                                |
-|All servers are set up with a single C:\ partition, then D:\ for second Raid, E:\ for third RAID, etc.|      |
-|Linux:|          |
-|Ubuntu/RHEL/CentOS 6+|          |
-|Size --> Partition --> Mount Point:|          |
-|1GB --> Physical (/dev/sda1) --> /boot|          |
-|pv0 --> Physical volume|          |
-|vglocalyyyymmdd --> Volume Group|          |
-|2GB --> LVM (vglocalyyyymmdd-swap00) --> Swap|          |
-|2GB --> LVM (vglocalyyyymmdd-tmp00) --> /tmp|          |
-Remainder -->LVM (vglocalyyyymmdd-root00) --> /|          |
-|The default filesystem type is ext4|          |
+|**Windows:**|  All servers are set up with a single C:\ partition, then D:\ for second Raid, E:\ for third RAID, etc.|
+|**Linux:**| Ubuntu/RHEL/CentOS 6+|          |
+|  |Size --> Partition --> Mount Point:|
+|  |1GB --> Physical (/dev/sda1) --> /boot|
+|  |pv0 --> Physical volume|
+|  |vglocalyyyymmdd --> Volume Group|
+|  |2GB --> LVM (vglocalyyyymmdd-swap00) --> Swap|
+|  |2GB --> LVM (vglocalyyyymmdd-tmp00) --> /tmp|
+|  |Remainder -->LVM (vglocalyyyymmdd-root00) --> /|
+|  |The default filesystem type is ext4|
 
 &nbsp;
-
+### Rackspace SQL Server Defaults:
 |                                |                                  |
 |--------------------------------|----------------------------------|
-|Rackspace SQL Server Defaults:|    |
-|Version: As specified in your agreement|    |
-|Service Pack: Latest supported will be installed|    |
-|Instance Name: MSSQLSERVER|    |
-|Features:|    |
-|Database Engine and Services (e.g., Replications and Full-Text Search)|    |
-|SQL Client Tools|    |
-|SSMS - Latest supported and only applies to SQL Server 2016 and 2017|    |
-|Collation:|    |
-|For US based Data Centers: SQL_Latin1_General_CP1_CI_AS|    |
-For UK based Data Centers: Latin1_General_CI_AS|    |
-|Port: 1433|    |
-|Max Memory: Apply best practice|    |
-|Drive Format: 64k allocation unit size|    |
+|Version| As specified in your agreement|
+|Service Pack| Latest supported will be installed|
+|Instance Name| MSSQLSERVER|
+|Features: |Database Engine and Services (e.g., Replications and Full-Text Search)|
+| |SQL Client Tools|
+| |SSMS - Latest supported and only applies to SQL Server 2016 and 2017|
+| |Collation:|
+| |For US based Data Centers: SQL_Latin1_General_CP1_CI_AS|
+| |For UK based Data Centers: Latin1_General_CI_AS|
+| |Port: 1433|
+| |Max Memory: Apply best practice|
+| |Drive Format: 64k allocation unit size|
 
 &nbsp;
 
@@ -80,9 +74,7 @@ For optimal performance the database and OS files should reside on separate driv
 
 Select from the below options if you require the additional SQL features installed.
 
-. . note::
-
-    Web Edition only supports Reporting Services
+**Note:** Web Edition only supports Reporting Services
 
 - Data Quality Services
 - Data Quality Client
@@ -94,7 +86,7 @@ Select from the below options if you require the additional SQL features install
 - Integration Services*
 - Analysis Services*
 
-    If requested the customer is responsible for configuring these features. Requests to configure these features are on a reasonable endeavor basis.
+If requested the customer is responsible for configuring these features. Requests to configure these features are on a reasonable endeavor basis.
 
 #### Applicable for Microsoft SQL Server 2016 and 2017
 
@@ -134,9 +126,7 @@ Network Defaults:
 - With Load Balancer:  2 additional segments – “Load Balanced DMZ” and "FW-LB”
 - With Hypervisor: (Hyper-V and vSphere Management): 1 additional segment – Secure “HYP-MGMT”
 
-. . note::
-
-    VMNet is standard when there is a hypervisor.
+**Note:** VMNet is standard when there is a hypervisor.
 
 Devices identified as Web servers will belong to the DMZ segment, DB servers to the INSIDE segment
 
