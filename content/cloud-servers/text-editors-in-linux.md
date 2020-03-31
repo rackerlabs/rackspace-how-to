@@ -1,117 +1,114 @@
 ---
-permalink: text-editors-in-linux/
-audit_date:
-title: 'Text Editors in Linux'
+permalink: command-line-text-editors-in-linux/
+audit_date: '2020-03-31'
+title: 'Command-line text editors in Linux'
 type: article
 created_date: '2020-03-19'
 created_by: John Abercrombie
-last_modified_date: '2020-03-19'
-last_modified_by: John Abercrombie
+last_modified_date: '2020-03-31'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-## Text Editors in Linux
+There are two command-line text editors in Linux&reg;: vim and nano.
 
-The two command line text editors in Linux are called:
+These are the two options available to you should you ever need to write a script, edit a configuration file, create a virtual host, or jot down a quick note for yourself. These are but a few examples of what you can do with these tools.
 
-- Vim
-- Nano
+While these tools might seem daunting at first, any Linux user should become accustomed to using at least one. Ask any Linux Administrator or regular user, and you'll soon find that everyone has their favorite. 
 
-These are the two options available to you should you ever need to write a script, edit a configuration file, create a virtual host, or just jot down a quick note for yourself when your pen and paper decide that today is a great day for a mutiny. These are but a few examples of what you can do with these tools.
+This article covers the basics of each editing tool and how they differ.
 
-While these tools may seem daunting at first, it behooves any Linux user to become accustomed with at least one. Ask any Linux Administrator or regular user, and you’ll soon find that everyone has their favorite. In that vein, let’s find out what these two are all about, and how they differ from one another.
+### Vim
 
-## Vim
+Vim comes from Vi Improved since it is the successor of an older editor called vi. Because this editor (through its predecessor) has been around a long time, it is usually favored by Linux Administrators or coders. Vim is typically used by people who are familiar with Linux because it can have a bit of an uphill learning curve.
 
-Vim comes from Vi Improved since it is the successor of an older editor called vi. Since this editor (through its predecessor) has been around a long time, it is usually favored by Linux Admins or coders. It is typically the text editor used when someone is familiar with Linux. The reason for this is that it can have a bit of an uphill learning curve to it, but rest assured, anyone can learn it.
-
-Vim can be used to edit, write, and save a document from the command line. It does this through the use of two different modes:
+You can use vim to edit, write, and save a document from the command line. It does this through the use of two different modes:
 
 - Command
 - Insert
 
-The default mode that the vim editor opens in is command mode. In order to open the vim editor, you’ll use the following in the command line:
+The default mode that the vim editor opens in is command mode. To open the vim editor, use the following syntax at the command line:
 
-```sh
-$ vim (name of file)
-OR
-$ vim (full path of file)
-```
+    $ vim (name of file)
 
-In order to start writing or editing, you’ll want to enter insert mode. You accomplish this by hitting the letter [i] on your keyboard. “I” for insert. You’ll see “---INSERT---” at the bottom of your terminal page if you’ve done it correctly. This tells you that vim is ready for you to get to work.
+or
 
-When you are finished typing, and you want to save your work, you’ll need to exit Insert mode. It’s really easy to do. Just hit the [ESC], or escape, key. This will place you back in Command mode. Here is where you can save your work.
+    $ vim (full path of file)
 
-After you’ve hit escape, the next two buttons you’ll need to press are [shift] + [;]. Basically, you’re wanting to type a colon. The bottom of your terminal screen will have changed to reflect that you’ve done it correctly. You’ll now see a ‘:’ where the ‘---INSERT---’ used to be.
+To start writing or editing, you must enter **insert** mode by pressing the letter **i** on your keyboard. “I” for insert. You should see `---INSERT---` at the bottom of your terminal page if you’ve done it correctly.
 
-Once you see the ‘:’ in the lower left-hand corner of your vim editor, you can hit the [w] button, followed by [Enter], to save your work. Then, you can either hit [i] again to go back into Insert mode if you wanted to continue writing, or you can quit the file. To quit, you would hit [shift] + [;] again, then once you see the [:] button in the lower left, you would hit the letter [q] followed the [Enter] key. This will save your file and close vim. You’ll see your usual terminal screen again.
+When you are finished typing, and you want to save your work, you need to exit **insert** mode. Press the escape (**esc**) key, which places you back in **command** mode. Then you can save your work.
 
-Both the save and quit functions can be entered at the same time. You are correct. In other to save and quit vim in one swoop, you’ll enter [wq] after the ‘:’ and hit [Enter]. The file will save and close.
+After you’ve pressed escape, press **shift + ;**. The bottom of your terminal screen will have changed to reflect that you’ve done it correctly. You’ll now see a `:` where the `---INSERT---` used to be.
 
-If you start working on a file, but you change your mind. You are a strong, independent Linux user who don’t need no text editor, and you just want to exit without saving. Fear not, that is possible too. To do this, you’ll want to enter Command mode ([Esc], [shift] + [;]). Once you see the ‘:’ at the lower left, you’ll enter [q!]. This will force quit vim without saving. As you may have guessed, the [!] key is the force function.
+Once you see the `:` in the lower left-hand corner of your vim editor, type `w` and then **enter** to save your work. Then, you can either type `i` again to go back into **insert** mode if you want to continue writing, or you can quit the file. To quit, press **shift + ;** again, type `q` and then press **enter**. This saves your file and closes vim. You should see your usual terminal screen again.
 
-Those are the keys that you are going to be using 99% of the time, but just in case, for that 1%, here is a quick cheat sheet for vim.
+You can also enter both the save and quit functions at the same time. To save and quit vim in one command, type `wq` after the `:` and then press **enter**. The file saves and closes.
 
-# Vim Editor Commands Cheat Sheet
+If you start working on a file, but you change your mind, you can exit without saving. To do this, enter **command** mode by pressing **esc** followed by **shift + ;**. Once you see the `:` at the lower left, enter `q!`. This force quits vim without saving. `!` is the force function.
 
-    > h = moves cursor to the left by one character; this also works by hitting the left arrow
-    > j = moves the cursor one line down; this also works by hitting the down arrow
-    > k = moves the cursor  one line up; this also works by hitting the up arrow
-    > l = moves the cursor to the right by one character; this also works by hitting the right arrow
-    > w = moves the cursor one full word to the right
-    > b = moves the cursor one full word to the left
-    > 0 = moves the cursor to the beginning of the current line
-    > $ = moves the cursor to the end of the current line
-    > ~ = changes the case of the current character
-    > dd = deletes the current line
-    > D = deletes everything on the line to the right of the cursor’s current position
-    > x = deletes the current character
-    > u = undo the last command
-    > . = repeats the last command
-    > :w = saves current file, but does not exit
-    > :wq = saves current file, and quits
+Those are the commands that you are going to be using most of the time, but you can use the following cheat sheet if you want to do more complex actions with vim.
 
-These following commands also will place you into Insert Mode:
+#### Vim editor cheat sheet
 
-    > i = inserts to the left of the current cursor position
-    > a = appends to the right of the current cursor position
-    > dw = deletes the current word
-    > cw = changes the current word
+Use the following commands in **command** mode:
 
-As stated earlier, 99% of the time you will use the arrows, w, q, i, :, and ! keys. The beauty of the vim editor is you can be as basic or as fancy as you like with it. Make it yours. Be you. Vim doesn’t judge.
+- `h` - Moves cursor to the left by one character; you can also press the left arrow
+- `j` - Moves the cursor one line down; you can also press the down arrow
+- `k` - Moves the cursor  one line up; you can also press the up arrow
+- `l` - Moves the cursor to the right by one character; you can also press the right arrow
+- `w` - Moves the cursor one full word to the right
+- `b` - Moves the cursor one full word to the left
+- `0` - Moves the cursor to the beginning of the current line
+- `$` - Moves the cursor to the end of the current line
+- `~` - Changes the case of the current character
+- `dd` - Deletes the current line
+- `D` - Deletes everything on the line to the right of the cursor’s current position
+- `x` - Deletes the current character
+- `u` - Undo the last command
+- `.` - Repeats the last command
+- `:w` - Saves current file, but does not exit
+- `:wq` - Saves current file, and quits
 
-## Nano
+The following commands place into **insert** mode:
 
-Nano is the new editor in town. It’s claim to fame is that it’s simpler and easier to use.
+- `i` - Inserts to the left of the current cursor position
+- `a` - Appends to the right of the current cursor position
+- `dw` - Deletes the current word
+- `cw` - Changes the current word
 
-Let’s dive right in. In order to open a nano file, type to following into the command line:
+### Nano
 
-```sh
-$ nano (name of file)
-OR
-$ nano (full path of file)
-```
+Nano is a newer text editor in Linux systems. It’s simpler and easier to use than vim.
 
-Once the nano editor opens, you can begin typing. When you’re ready to save your work, you’ll type [Ctrl] + [o]. This is called a “write out”. It saves your current work while allowing you to continue your work. If you’re done with your work, you can save and quit by typing [Ctrl] + [x]. When a file is saved in nano, it color codes your current work based on what you’re writing. Don’t be alarmed! This is normal.
+To open a file with nano, use the following syntax at the command line:
 
-Another major difference with nano is the editor will list out the commands you can use within the editor. It’s time for another text editor cheat sheet! One thing to note is that the commands will be presented as ‘^G’. What this refers to is pressing [Ctrl] + [g], for example.
+    $ nano (name of file)
+    
+or
 
-## Nano Editor Commands Cheat Sheet
+    $ nano (full path of file)
 
-    > ^G = Get Help
-    > ^X = Exit : Nano will ask if you want to save with a ‘Y’ or ‘N’ option following.
-    > ^O = Write Out : Also known as save.
-    > ^R = Read File : Enter the name of a file you want to paste into the current document at your cursor’s position
-    > ^W = Where Is : Search function
-    > ^\ = Replace
-    > ^K = Cut Text
-    > ^U = Uncut Text
-    > ^J = Justify
-    > ^T = To Spell
-    > ^C = Cur Pos : Fancy way of saying cancel save
-    > ^_ = Go to Line
+After the nano editor opens, you can begin typing. When you’re ready to save your work, press **ctrl + o**. This is called a *write out*. It saves your current work while allowing you to continue your work. If you’re done writing, you can save and quit by pressing **ctrl + x**. When you save a file in nano, your current work is color coded based on what you’re writing.
 
-As always, you can use the man pages to find out more in-depth answers. The commands are ‘man vim’ or ‘man nano’, respectively.
+Another major difference with nano is that you can access a list of commands within the editor, but you can use the following cheat sheet as well. 
 
-Try both out, and see which one works best for you. There is no right or wrong choice, regardless of what any Linux user tells you. Whether your Team Vim or Team Nano, there’s a text editor for you.
+#### Nano editor cheat sheet
+
+**Note:** The commands in the following list use `^` to indicate that you should press the **ctrl** key along with the other key. For example `^G` means that you should press **ctrl + G**.
+
+- `^G` - Get Help
+- `^X` - Exit. Nano then asks if you want to save with a `Y` or `N` option.
+- `^O` - Write Out; also known as save.
+- `^R` - Read File. Enter the name of a file you want to paste into the current document at your cursor’s position
+- `^W` - Where Is; Search function
+- `^\` - Replace
+- `^K` - Cut Text
+- `^U` - Uncut Text
+- `^J` - Justify
+- `^T` - To Spell
+- `^C` - Cur Pos; Cancel save
+- `^_` - Go to Line
+
+You can use the man pages to find out more in-depth information about each text editor. The commands are ‘man vim’ or ‘man nano’, respectively.
