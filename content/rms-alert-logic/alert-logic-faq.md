@@ -58,7 +58,9 @@ Daily node counts are averaged over a calendar month to determine usage.
 
 #### How is log volume calculated?
 
-
+Log Volume is the aggregate log volume per day for the cumulative number of nodes
+within the covered environment. For example, if you have 10 nodes, you must be
+below 1GB per day in volume regardless of which nodes are generating the logs.
 
 #### How do I know where agents are deployed?
 
