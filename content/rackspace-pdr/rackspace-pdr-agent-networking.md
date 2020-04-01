@@ -33,7 +33,8 @@ This article includes the networking requirements for the Rackspace Proactive De
   <summary>Expand</summary>
 
 #### Endpoint IP addresses
-
+<p>
+```
 |             |               |               |
 |-------------|---------------|---------------|
 | 52.8.160.82 | 54.193.90.171 | 54.219.179.25 |
@@ -56,6 +57,8 @@ This article includes the networking requirements for the Rackspace Proactive De
 | 52.8.32.113 | 54.67.17.131 | |
 | 54.183.148.116 | 54.67.4.108 | |
 | 54.183.39.68 | 54.183.215.154 | |
+```
+</p>
 </details>
 
 ### Rapid7 Agent Endpoints
