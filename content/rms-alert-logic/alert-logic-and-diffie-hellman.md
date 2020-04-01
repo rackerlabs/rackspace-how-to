@@ -78,14 +78,16 @@ The following is the math that is used by the Diffie-Hellman key exchange protoc
 
 Alice picks two prime numbers g and p and shares them with Bob. Alice then picks a secret number c and calculates A = gc mod p. And Alice shares the number A with Bob. Bob then picks his own secret number d and calculates B = gd mod p. And Bob shares the number B with Alice. Alice takes B and calculates kA = Bc mod p. And Bob takes A and calculates kB = Ad mod p.
 
-> A = gc mod p
-> B = gd mod p
-> kA = Bc mod p
-> kB = Ad mod p
-> Since B = gd mod p
-> Bc mod p = gdc mod p
-> Since A = gc mod p
-> Ad mod p = gcd mod p
-> Therefore, kA = kB
+```
+A = gc mod p
+B = gd mod p
+kA = Bc mod p
+kB = Ad mod p
+Since B = gd mod p
+Bc mod p = gdc mod p
+Since A = gc mod p
+Ad mod p = gcd mod p
+Therefore, kA = kB
+```
 
 Any third party observer will be unable to derive the shared key.
