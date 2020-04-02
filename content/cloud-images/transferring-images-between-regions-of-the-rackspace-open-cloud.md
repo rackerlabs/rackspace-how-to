@@ -5,8 +5,8 @@ title: Transfer images between regions of the Rackspace open cloud
 type: article
 created_date: '2014-02-27'
 created_by: Cloud Images
-last_modified_date: '2018-10-24'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-04-02'
+last_modified_by: Cat Lookabaugh
 product: Cloud Images
 product_url: cloud-images
 ---
@@ -54,8 +54,9 @@ To work in the source region, use the following steps:
     use the Cloud Control Panel for this step.) This example uses an image ID
     of `a6da1504-e1c0-4f40-8461-1ed9a9990e90`. For example, you can create an
     image property named `com.mycompany.image-of` and give it the value
-    `db-slave-3`. You can add the metadata by using the Images API,
-    as shown in the following example:
+    `db-slave-3`. 
+    
+    You can add the metadata by using the Images API, as shown in the following example:
 
         OS_AUTH_TOKEN="<your auth token>"
         OS_IMAGE_URL="<cloud images baseurl in source region>"
@@ -65,6 +66,9 @@ To work in the source region, use the following steps:
           -H "Content-type: application/openstack-images-v2.1-json-patch" <br>
           -d '[{ "op": "add", "path": "/com.mycompany.image-of", "value": "db-slave-3"}]' <br>
           "$OS_IMAGE_URL/v2/images/$MY_IMG"
+          
+    The `OS_IMAGE_URL` in the preceding example could be the same URL provided by authenticating to Cloud Identity.
+    For example, https://iad.images.api.rackspacecloud.com/v2), where "iad" is the region.
 
     **Note**: Images are stored differently inside the cloud. They are not in
     the same Virtual Hard Disk (VHD) format that is used for image
