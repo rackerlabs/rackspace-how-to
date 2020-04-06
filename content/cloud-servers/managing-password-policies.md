@@ -19,16 +19,16 @@ password security.
 
 ### Setting policies for future new user accounts
 
-Password policies for new user accounts are
-stored in the **/etc/login.defs** configuration file. This file contains
+Cloud Servers stores password policies for new user accounts
+in the **/etc/login.defs** configuration file. This file contains
 a couple of useful options:
 
-- `PASS_MAX_DAYS`: Maximum number of days a password can be used.
+- `PASS_MAX_DAYS`: Maximum number of days you can use a password.
 - `PASS_MIN_DAYS`: Minimum number of days allowed between password changes.
 - `PASS_MIN_LEN`: Minimum acceptable password length.
-- `PASS_WARN_AGE`: Number of days that warning is given before a password expires.
+- `PASS_WARN_AGE`: Number of days before a password expires for giving a warning.
 
-By default these options are set to the following values:
+By default, Cloud Servers sets these options to the following values:
 
     PASS_MAX_DAYS 99999  PASS_MIN_DAYS 0  PASS_MIN_LEN 5  PASS_WARN_AGE 7
 
@@ -41,16 +41,16 @@ the default settings:
 
     PASS_MAX_DAYS 60  PASS_MIN_DAYS 5  PASS_MIN_LEN 8  PASS_WARN_AGE 7
 
-These new rules would apply to all newly created accounts. Passwords for
-these accounts would have to be 8 characters long and last only 60 days,
-and users would not be able to change them for 5 days, counted from the
-day the password was set. Users would also receive a warning 7 days
-before the password expired.
+These new rules apply to all newly created accounts. Passwords for
+these accounts have to be 8 characters long and last only 60 days,
+and users cannot change them for 5 days, counted from the
+day they set the password. Users also receive a warning 7 days
+before the password expires.
 
 ### Setting policies for existing user accounts
 
-Changes in the **/etc/login.defs** file apply only to accounts that are
-created after the changes are implemented; they don't apply to accounts
+Changes in the **/etc/login.defs** file apply only to accounts that users
+create after the changes are implemented; they don't apply to accounts
 that already exist.
 
 You can, however, change the same settings on existing accounts by
@@ -58,7 +58,7 @@ using the `chage` command. For example:
 
     chage <options> <username>
 
-You can also run `chage` with only a username and it opens an interactive mode
+You can also run `chage` with only a username, and it opens an interactive mode
 for you to adjust the settings for the password policy.
 
 The syntax for this command is as follows:
