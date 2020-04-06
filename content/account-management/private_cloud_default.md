@@ -49,6 +49,7 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 
 ### Rackspace SQL Server Defaults
 
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 |Version| As specified in your agreement|
@@ -68,6 +69,7 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 
 
 ### SQL Customization:
+
 If you have requested Microsoft SQL Server installation on your server, review and answer the below questions:
 
 - Will you require multiple named instances installed if so provide the additional names?
@@ -107,6 +109,7 @@ The Grant Perform Volume Maintenance Task privilege improves performance when cr
 
 - Domain: WORKGROUP, unless specified / "intensive" domain for Intensive SLA
 
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 |Windows Cluster Defaults|   |
@@ -142,7 +145,7 @@ Devices identified as Web servers will belong to the DMZ segment, DB servers to 
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
-|**Default Ranges:** | 
+|**Default Ranges:** |
 |FW-INSIDE network: | 172.24.16.0/22 |
 |DMZ network: | 172.24.32.0/22 |
 |RackConnect: | 172.24.48.0/22 |
