@@ -1,12 +1,12 @@
 ---
 permalink: reboot-a-server/
-audit_date:
+audit_date: '2020-04-06'
 title: Reboot a Server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
-last_modified_date: '2018-10-25'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2020-04-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -21,7 +21,7 @@ similar to turning a computer off and then on.
 We recommend attempting a soft reboot of a server whenever possible,
 using a hard reboot only when the server is unresponsive.
 
-Note: You should ensure that critical services will start at reboot and
+**Note:** You should ensure that critical services will start at reboot and
 that there are no tasks pending that could slow the reboot process.
 
 ### Perform a soft reboot
@@ -54,7 +54,7 @@ If a dialog box appears, select **Restart** from the dropdown menu. Click **OK**
 ### Perform a hard reboot
 
 If your server is not responding or was shut down manually, perform a
-hard reboot via the Cloud Control Panel to simulate power cycling the
+hard reboot by using the Cloud Control Panel to simulate power cycling the
 server.
 
 **Warning:** A hard reboot does not shut down applications gracefully
