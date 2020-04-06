@@ -1,7 +1,7 @@
 ---
 permalink: reboot-a-server/
 audit_date: '2020-04-06'
-title: Reboot a Server
+title: Reboot a server
 type: article
 created_date: '2012-07-19'
 created_by: Ari Liberman
@@ -14,14 +14,14 @@ product_url: cloud-servers
 **Previous section:** [Create a Cloud Server](/how-to/create-a-cloud-server)
 
 You can reboot a server in one of two ways. A *soft reboot* uses the
-operating system's reboot process so that applications are shut down
+operating system's reboot process so that applications shut down
 gracefully. A *hard reboot* halts the instance and then restarts it,
 similar to turning a computer off and then on.
 
 We recommend attempting a soft reboot of a server whenever possible,
 using a hard reboot only when the server is unresponsive.
 
-**Note:** You should ensure that critical services will start at reboot and
+**Note:** You should ensure that critical services start at reboot and
 that there are no tasks pending that could slow the reboot process.
 
 ### Perform a soft reboot
@@ -42,14 +42,14 @@ appropriate section for your server operating system:
 Select the method that matches your installation:
 
 - Open **Settings** in the Charms Bar. Click **Power > Restart**.
-- Click **Start**. Click the arrow next to **Shut down**, and select **Restart** from the menu.
+- Click **Start**. Click the arrow next to **Shut down** and select **Restart** from the menu.
 
 Alternatively, you can initiate a soft reboot from the command line by
 entering the following command:
 
     shutdown /r
 
-If a dialog box appears, select **Restart** from the dropdown menu. Click **OK**.
+If a dialog box appears, select **Restart** from the drop-down menu. Click **OK**.
 
 ### Perform a hard reboot
 
@@ -83,9 +83,9 @@ account with superuser or administrator
 permissions. For information about logging in to a cloud
 server, see [Connect to a cloud server](/how-to/connect-to-a-cloud-server).
 
-**Note:** Shutting down a server does *not* stop billing for the server,
-because resources are still allocated to the server instance. Billing
-for a server stops only when the server is deleted.
+**Note:** Shutting down a server does *not* stop billing for the server
+because the server still has resources allocated to the server instance. Billing
+for a server stops only when someone deletes the server.
 
 #### Linux
 
@@ -93,7 +93,7 @@ Log in as a sudo-enabled user via SSH and enter the following command:
 
     sudo shutdown -h now
 
-The command shuts down the server and you must perform a hard reboot to
+The command shuts down the server, and you must perform a hard reboot to
 restart the server.
 
 #### Windows
