@@ -7,7 +7,7 @@ created_date: '2014-08-13'
 created_by: Bekki Bolthouse
 last_modified_date: '2016-01-22'
 last_modified_by: Constanze Kratel
-product: RackspaceMonitoring
+product: Rackspace Monitoring
 product_url: rackspace-monitoring
 ---
 
