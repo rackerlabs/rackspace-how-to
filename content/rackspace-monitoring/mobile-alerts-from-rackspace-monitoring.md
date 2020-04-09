@@ -5,7 +5,7 @@ title: Mobile alerts from Rackspace Monitoring
 type: article
 created_date: '2014-08-13'
 created_by: Bekki Bolthouse
-last_modified_date: '2016-01-22'
+last_modified_date: '2020-04-09'
 last_modified_by: Constanze Kratel
 product: Rackspace Monitoring
 product_url: rackspace-monitoring
