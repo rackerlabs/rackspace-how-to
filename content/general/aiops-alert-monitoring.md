@@ -16,13 +16,13 @@ server configurations for virtual and physical machines that run a
 supported operating system. The article presents a high-level overview of
 changes to Rackspace alert monitoring offerings. Contact Rackspace Sales
 or your account representative for more information regarding the components
-of specific features that are supported in Rackspace offerings.
+of specific features that Rackspace supports in our offerings.
 
 ### What is changing
 
-Rackspace has been hard at work to bring you AIOps powered improvements
-to its event processing system. These improvements are now ready for
-production and bring the value of event correlation to Rackspace’s
+Rackspace has been hard at work to bring you AIOps-powered improvements
+to its event processing system. These improvements, now ready for
+production, bring the value of event correlation to Rackspace’s
 monitoring system.
 
 The new improvements provide the following additional features to Rackspace’s
@@ -32,31 +32,31 @@ monitoring system:
 	or multiple devices
 - Improved alert routing to the Rackspace team best suited to
 	provide support
-- Enhanced alert reporting via “situation” notices, which
+- Enhanced alert reporting via *situation* notices, which
 	aggregate related alerts into a single notification
 
 ### Why
 
-Rackspace is constantly seeking to improve its event processing system to
+Rackspace constantly seeks to improve its event-processing system to
 reduce resolution time, decrease ticket noise, and create a better
 overall customer experience.
 
 ### What is AIOps
 
-Rackspace is using deterministic clustering algorithms which create
+Rackspace is using deterministic clustering algorithms that create
 situations defined by the relationships between alerts. Situation creation
 is based on sets of filters, triggers, and other calculations such
 as priority ordering.
 
 ### Change details
 
-**MyRacksapce RNS notifications and Alert Tickets**
+MyRackspace RNS notifications and alert tickets have the following charactistics:
 
-- Alerts will be grouped into correlated situations.
-- A Rackspace support ticket will be created for each situation.
+- Alerts are grouped into correlated situations.
+- A Rackspace support ticket is created for each situation.
 - Situations might contain one or more alerts.
-- Individual alerts notifications will be sent to Rackspace Notification
-  system along with for each situation ticket created.
+- Individual alerts notifications are sent to the Rackspace Notification
+  system along with each situation ticket created.
 
 ### Situation ticket information
 
