@@ -6,7 +6,7 @@ type: article
 created_date: '2019-05-16'
 created_by: Stephanie Fillmon
 last_modified_date: '2019-02-20'
-last_modified_by: Chad Sterling
+last_modified_by: Chadwick Sterling
 product: Account Management
 product_url: account-management
 ---

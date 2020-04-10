@@ -149,13 +149,13 @@ product_url: dedicated-hosting
   </tr>
   <tr>
     <td><b>SSL Outbound Decryption</b> (requires PKI infrastructure)</td>
-    <td style="background-color: yellow;"><b>Roadmap Item</b></td>
-    <td style="background-color: yellow;"><b>Roadmap Item</b></td>
+    <td style="background-color: green;color:white;"><b>Supported</b></td>
+    <td style="background-color: green;color:white;"><b>Supported</b></td>
     <td><b>SSL Outbound Decryption</b> (requires PKI infrastructure)</td>
   </tr>
   <tr>
     <td><b>SSH Decryption</b></td>
-    <td style="background-color: yellow;"><b>Roadmap Item</b></td>
+    <td style="background-color: green;color:white;"><b>Supported</b></td>
     <td style="background-color: green;color:white;"></td>
     <td></td>
   </tr>
@@ -209,7 +209,7 @@ product_url: dedicated-hosting
     <td><b>Anti-Malware Protection (AMP for Networks)</b></td>
   </tr>
   <tr>
-    <td><b>Instant Signature Updates</b> (Less than 5 minutes)</td>
+    <td><b>Signature Updates</b> (Less than 5 minutes)</td>
     <td style="background-color: green;color:white;"><b>Supported</b></td>
     <td></td>
     <td></td>
@@ -234,7 +234,7 @@ product_url: dedicated-hosting
   </tr>
   <tr>
     <td><b>Wildfire Advanced file support</b></td>
-    <td style="background-color: yellow;"><b>Roadmap Item</b></td>
+    <td style="background-color: green;color:white;"><b>Supported</b></td>
     <td></td>
     <td></td>
   </tr>
@@ -254,7 +254,7 @@ product_url: dedicated-hosting
     <th colspan="4"><div align ="center"><b>Endpoint Protection</b></div></th>
   </tr>
   <tr>
-    <td><b>Traps</b></td>
+    <td><b>Cortex XDR Endpoints</b></td>
     <td style="background-color: yellow;"><b>Roadmap Item</b></td>
     <td style="background-color: yellow;"><b>Roadmap item</b></td>
     <td><b>Anti-malware Protection (AMP for Endpoints)</b></td>
@@ -282,19 +282,13 @@ product_url: dedicated-hosting
   </tr>
   <tr>
     <td><div align="right">Global Protect Mobile Support</div></td>
-    <td style="background-color: red;green;color:white;"><b>Professional Services Required<</b>/td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><div align="right">Global Protect IPv6 Support</div></td>
-    <td style="background-color: red; green;color:white;"><b>Professional Services Required</b></td>
+    <td style="background-color: red;green;color:white;"><b>Professional Services Required</b></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
     <td><div align="right">Global Protect Clientless Mode</div></td>
-    <td style="background-color: red;green;color:white;"><b>Professional Services Required</b></td>
+    <td style="background-color: yellow;"><b>Roadmap Item</b></td>
     <td></td>
     <td></td>
   </tr>

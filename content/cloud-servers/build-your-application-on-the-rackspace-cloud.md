@@ -1,12 +1,12 @@
 ---
 permalink: build-your-application-on-the-rackspace-cloud/
-audit_date: '2020-03-26'
+audit_date: '2020-04-7'
 title: Build your application on the Rackspace cloud
 type: article
 created_date: '2019-02-05'
 created_by: Rackspace Community
-last_modified_date: '2020-03-31'
-last_modified_by: Chad Sterling
+last_modified_date: '2020-04-7'
+last_modified_by: Chad Sterling 
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -54,9 +54,7 @@ for more information.
 
 ### Modularize your application
 
-Rackspace strongly recommends that you create a modular application. Modular design is
-one of the [Five Pillars of
-Cloudiness](https://blog.rackspace.com/explore-the-five-pillars-of-cloudiness). Modularizing your
+Rackspace strongly recommends that you create a modular application. Modularizing your
 application can eliminate a single point of
 failure and allows for significantly faster scaling if necessary. The
 following are some tips to help you create a modular application:
@@ -94,20 +92,21 @@ Take the following security measure at the account level:
 - Set up [RBAC](/how-to/getting-started-with-role-based-access-control-rbac/)
   for your team. Use strong passwords, security questions, and answers for
   each team member.
+- Configure [two-factor
+  authentication](/how-to/myrackspace-multi-factor-authentication/).
 
 #### Infrastructure level
 
 Take the following security measures at the infrastructure level:
 
 - Keep software and security patches up to date.
-- Configure [two-factor
-  authentication](/how-to/myrackspace-multi-factor-authentication/).
+
 
 #### Server level
 
 Take the following security measures at the server level:
 
-- Practice basic server security.
+- Practice [basic server security](https://support.rackspace.com/how-to/configuring-basic-security/).
 - Lockdown your firewalls manually or by using a service like Dome9 or
   CloudPassage&reg;.
 
@@ -163,6 +162,8 @@ Operations customers automatically dump their databases to this location.
 Managed Infrastructure customers can configure the same backup by using
 the Holland Backup Manager.
 
+[This article](https://support.rackspace.com/how-to/install-or-update-the-cloud-backup-agent-on-linux/) provides more information about setting up Rackspace Cloud Backup for your Linux system.
+
 **Note**: Rackspace recommends that you back up databases often and retain them
 for a long period of time.
 
@@ -175,6 +176,8 @@ If you are using Windows&reg;, Rackspace recommends that you take the following 
 - Verify or configure your database backups (the location to which you are
   dumping your database files). You should use frequent backups and
   long retention.
+
+[This article](https://support.rackspace.com/how-to/rackspace-cloud-backup-install-the-agent-on-windows/) provides more information about setting up Rackspace Cloud Backup for your Windows system.
 
 ### Back up with Cloud Block Storage
 
@@ -196,6 +199,6 @@ You might want to use the following monitoring resources:
 
 - **URL Check**: Add a Cloud Monitoring check for your site’s URL to ensure
   that your site is responding.
-- **New Relic**: Consider signing up for a [free New Relic&reg;
-  account](http://newrelic.com/rackspace), and installing New Relic’s server
+- **New Relic**: Sign up for a free trial of a [New Relic&reg;
+  account](http://newrelic.com/rackspace), and install New Relic’s server
   and application monitoring agents on your cloud servers.
