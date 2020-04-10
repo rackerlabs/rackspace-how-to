@@ -53,7 +53,7 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 
 ### Rackspace SQL server defaults
 
-**Note:** If you want to create a SQL cluster, contact the support team for help. 
+**Note:** If you want to create a SQL cluster, contact the support team for help.
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
@@ -153,12 +153,14 @@ Devices identified as Web servers will belong to the DMZ segment, DB servers to 
 |VPNs:     | A VPN questionnaire will be provided via ticket. |
 
 &nbsp;
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 | Storage Defaults: | Each LUN needs a minimum of 50 GB and we can expand in increments of 25 GB |
 
 
 &nbsp;
+
 |                                |                                  |
 |--------------------------------|----------------------------------|
 | Virtualization Defaults: | Clustering: If there is an existing cluster, the new hypervisor(s) will be joined to that cluster unless instructed otherwise. |
