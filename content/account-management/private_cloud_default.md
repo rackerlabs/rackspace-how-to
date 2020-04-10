@@ -11,10 +11,13 @@ product: Account Management
 product_url: account-management
 ---
 
-## Rackspace Private Cloud default values
+## Rackspace private cloud default values
+
 The following is a list of Rackspace Configuration Defaults. Rackspace performs all initial deployment with this information. Please contact your Implementation leader if you require any changes.
 
 **Note:** Once your deployment begins, Rackspace is unable to make any changes until your device has been handed over to you and billing has begun.
+
+### Default values
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
@@ -44,11 +47,13 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 |  |2GB --> LVM (vglocalyyyymmdd-tmp00) --> /tmp|
 |  |Remainder -->LVM (vglocalyyyymmdd-root00) --> /|
 |  |The default filesystem type is ext4|
+| Datastores: | If no datastores are chosen, Rackspace Implementation Engineering will choose based on space and availability. Database devices will go on RAID 10 LUNs and everything else will go on RAID 5 or wherever there is space. |
 
 &nbsp;
 
-### Rackspace SQL Server Defaults
+### Rackspace SQL server defaults
 
+**Note:** If you want to create a SQL cluster, contact the support team for help. 
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
@@ -68,7 +73,7 @@ The following is a list of Rackspace Configuration Defaults. Rackspace performs 
 &nbsp;
 
 
-### SQL Customization:
+### SQL customization:
 
 If you have requested Microsoft SQL Server installation on your server, review and answer the below questions:
 
@@ -109,15 +114,9 @@ The Grant Perform Volume Maintenance Task privilege improves performance when cr
 
 - Domain: WORKGROUP, unless specified / "intensive" domain for Intensive SLA
 
-
-|                                |                                  |
-|--------------------------------|----------------------------------|
-|Windows Cluster Defaults|   |
-|Cluster Configuration| Active orPassive |
-|Clustered File Share Required | No  |
-|Domain Setup for Clustering | Customer AD |
-
 &nbsp;
+
+### Linux defaults
 
 |                                |                                  |
 |--------------------------------|----------------------------------|
@@ -132,8 +131,9 @@ The Grant Perform Volume Maintenance Task privilege improves performance when cr
 |--------------------------------|----------------------------------|
 | Linux Cluster Defaults:| Clustered NFS Share: Default is one large NFS Share, unless otherwise specified.|
 
+&nbsp;
 
-### Network Defaults
+### Network defaults
 
 - Firewall Only:  Flat Segment labeled as “FW-INSIDE”
 - With Load Balancer:  2 additional segments – “Load Balanced DMZ” and "FW-LB”
@@ -151,8 +151,16 @@ Devices identified as Web servers will belong to the DMZ segment, DB servers to 
 |RackConnect: | 172.24.48.0/22 |
 |DR: | 172.25.0.0 |
 |VPNs:     | A VPN questionnaire will be provided via ticket. |
+
+&nbsp;
+|                                |                                  |
+|--------------------------------|----------------------------------|
 | Storage Defaults: | Each LUN needs a minimum of 50 GB and we can expand in increments of 25 GB |
-| Datastores: | If no datastores are chosen, Rackspace Implementation Engineering will choose based on space and availability. Database devices will go on RAID 10 LUNs and everything else will go on RAID 5 or wherever there is space. |
+
+
+&nbsp;
+|                                |                                  |
+|--------------------------------|----------------------------------|
 | Virtualization Defaults: | Clustering: If there is an existing cluster, the new hypervisor(s) will be joined to that cluster unless instructed otherwise. |
 
 &nbsp;
