@@ -1,7 +1,7 @@
 ---
 permalink: import-a-mysql-databases/
 audit_date: '2020-04-02'
-title: 'Import a MySQL Databases'
+title: 'Import a MySQL Database'
 type: article
 created_date: '2020-03-25'
 created_by: James Andrade
