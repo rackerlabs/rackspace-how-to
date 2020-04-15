@@ -1,7 +1,7 @@
 ---
 permalink: install-or-update-the-cloud-backup-agent-on-linux/
 audit_date: '2018-02-20'
-title: Install or update the Cloud Backup agent on Linux
+title: 'Install or update the Cloud Backup agent on Linux (Deprecated)'
 type: article
 created_date: '2014-05-05'
 created_by: Kyle Laffoon
@@ -11,10 +11,10 @@ product: Cloud Backup
 product_url: cloud-backup
 ---
 
-   **Note**: Rackspace deprecated the Red Hat&reg; and Debian&reg; updaters in
-   favor of an updater designed to support multiple flavors of Linux&reg;. At some point,
-   we will no longer support the old **.rpm** and **.deb** installers and automated updaters.
-   Instead, see the documentation for the [standard RCBU Linux updater](/how-to/rackspace-cloud-backup-install-the-agent-on-linux).
+**Note**: Rackspace deprecated the Red Hat&reg; and Debian&reg; updaters in
+favor of an updater designed to support multiple flavors of Linux&reg;. At some point,
+we will no longer support the old **.rpm** and **.deb** installers and automated updaters.
+Instead, see the documentation for the [standard RCBU Linux updater](/how-to/update-or-install-the-cloud-backup-agent-on-linux/).
 
 The Rackspace Cloud Backup agent facilitates the backup process on your servers.
 You must install the agent on every server that you want to back up. This
