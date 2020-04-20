@@ -26,6 +26,7 @@ data centers.
 | Vulnerability and configuration visibility | Discover and visualize weaknesses in your deployed assets and cloud-configuration through internal network scans, external network scans and PCI Scans.  Prioritize vulnerabilities to be remediated based on threat risk index scoring and based on ‘biggest-bang-for-the-buck’ grouping of multiple hosts sharing the same vulnerable images being run, and multiple vulnerabilities that can be addressed using the same patches. |
 | Support services - PCI Scanning ASV Support | Get help with intricacies of scan scheduling, interpretation of PCI accredited scan vendor results and working through the remediation and exception processes to reach scan PCI compliance. |
 
+
 **Professional**
 
 | Feature | Functionality |
@@ -35,6 +36,7 @@ data centers.
 | Log management, storage, and search | Collection, storage, online search of Infrastructure, Cloud, System, Application and custom logs. |
 | Security Incident Management and response support | SOC 24x7 support with incident triage, assessment, escalation and response support. |
 | Compliance Readiness | Professional embedded security capabilities help to meet key compliance mandates and support compliance audit processes. |
+
 
 The solution is designed to be used side by side for different environments, in
 a blended model. Not all environments face the same threats and have the same
