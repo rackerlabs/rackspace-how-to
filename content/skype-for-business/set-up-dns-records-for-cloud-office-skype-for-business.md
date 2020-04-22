@@ -63,12 +63,14 @@ locate your specific records in the tables below.
 | CNAME | lyncdiscover.example.com | lyncdiscover.mex06.emailsrvr.com | Lowest possible |
 | CNAME | sip.example.com | sip.mex06.emailsrvr.com | Lowest possible |
 
+<br />
 
 | Type | Host| Destination | Service | Protocol | Port |
 | --- | --- | --- | --- | ---| ---|
 | SRV | example.com | lync01.mex06.emailsrvr.com | _sipfederationtls | _tcp | 5061 |
 | SRV | example.com | sip.mex06.emailsrvr.com |  _sip | _tls | 5061 |
 
+<br />
 
 #### mex08.emailsrvr.com
 
@@ -78,12 +80,14 @@ locate your specific records in the tables below.
 | CNAME | lyncdiscover.example.com | lyncdiscover.mex08.emailsrvr.com | Lowest possible |
 | CNAME | sip.example.com | sip.mex08.emailsrvr.com | Lowest possible |
 
+<br />
 
 | Type | Host| Destination | Service | Protocol | Port |
 | --- | --- | --- | --- | ---| ---|
 | SRV | example.com | lync01.mex08.emailsrvr.com | _sipfederationtls | _tcp | 5061 |
 | SRV | example.com | sip.mex08.emailsrvr.com |  _sip | _tls | 5061 |
 
+<br />
 
 #### mex09.emailsrvr.com
 
@@ -93,12 +97,14 @@ locate your specific records in the tables below.
 | CNAME | lyncdiscover.example.com | lyncdiscover.mex09.emailsrvr.com | Lowest possible |
 | CNAME | sip.example.com | sip.mex09.emailsrvr.com | Lowest possible |
 
+<br />
 
 | Type | Host| Destination | Service | Protocol | Port |
 | --- | --- | --- | --- | ---| --- |
 | SRV | example.com | lync01.mex09.emailsrvr.com | _sipfederationtls | _tcp | 5061 |
 | SRV | example.com | sip.mex09.emailsrvr.com |  _sip | _tls | 5061
 
+<br />
 
 **Note:** If you have an internal DNS, you must also set up these records on
 your internal DNS. If you want to enable Skype for Business federation with
