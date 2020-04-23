@@ -1,0 +1,139 @@
+---
+permalink: basic-linux-user-management/
+audit_date: '2020-04-20'
+title: 'Basic Linux User Management'
+type: article
+created_date: '2020-04-20'
+created_by: Chris Silva
+last_modified_date: '2020-04-20'
+last_modified_by: Chris Silva
+product: Cloud Servers
+product_url: cloud-servers
+---
+This article describes the available options for basic Linux server user management. By the end of this article, you'll be able to add, remove, lock/expire or modify users on a Linux server. 
+
+**Note**: If you need to give a user `sudo` or `admin` level permissions on the server, please see the following articles:
+
+RHEL/CentOS Article Link 
+
+Debian/Ubuntu Article Link
+
+### Prerequisites
+You need to have the following prerequisites:
+- Basic understanding of Secure Shell (SSH)
+- Sudo or administrative access to your server
+- A Cloud Server running supported versions of Linux.
+
+Log in to your server by using SSH and then complete the steps in the following sections for
+your preferred setup method.
+
+#### Adding a basic SSH user
+Use the following steps to add a basic user to your Linux server with default settings.
+
+1. Run the following command to create the user:
+
+       useradd <user>
+
+2. Set the password for the user:
+
+       passwd <some-secure-password>
+
+#### Adding users with flags
+You can utilize flags with the `useradd` command to specify the configuration of the new user. 
+
+Here are a few of the most commonly used flags:
+         -G, --groups GROUPS           list of supplementary groups of the new account
+         -d, --home-dir HOME_DIR       home directory of the new account
+         -s, --shell SHELL             login shell of the new account
+
+As an example, you can create a user and specify a specific directory, the login shell, and also add the user to a supplemental group. 
+
+       useradd -d /home/nonDefaultHome/ -s /bin/bash -G developers <newuser> 
+
+This will create a new user with a home directory of `/home/nonDefaultHome/` with the `/bin/bash/` shell. This user is also added to the group `developers`. 
+
+There are several other options available to customize the new user. You can see the available options by using the following command:
+         useradd --help
+       
+#### Locking or Expiring users
+There may come a time when you need to disable a user's access to your server. This can be done by expiring or locking the Linux user account. This can be done by either locking the account or expiring the account. Each method essentially performs the same task, but with a few differences. 
+
+### Locking/Unlocking a user
+Locking a user will change a user's password to an unreadable string. This will prevent login for the user via password authentication. Use the following command to `lock` a Linux user account:
+
+       usermod -L <user>
+
+You can verify the user was successfully locked by using the following command: 
+
+       passwd -S <user>
+
+If the user was successfully locked, you will see the following message:
+
+     <user> LK <date> 0 99999 7 -1 (Password locked.)
+
+If you need to `unlock` the user, the following command can be used:
+
+     usermod -U <user>
+
+You can verify the user is unlocked with the following command:
+
+     passwd -S <user>
+
+If the command was successful, you will see the following message:
+
+     <user> PS <date> 0 99999 7 -1 (Password set, SHA512 crypt.)
+
+
+### Expiring/Unexpiring a user
+While locking a user is a viable option, this will not disable other forms of authentication such as SSH Key authentication. Another method of disabling a user's access is to `expire` the account. Use the following command to expire a user account:
+
+      usermod -e $(date '+1970-01-01') <user>
+
+**Note**: This command will expire the user as of the date January 1, 1970. You can also set the expiriation date to the current date by replacing the date section with: `$(date '+%Y-%m-%d')`
+
+You can verify the user was successfully expired by running the following command:
+
+       chage -l <user>
+
+You will see the following output for the user:
+
+       Last password change					                : Apr 20, 2020
+       Password expires					    				: never
+       Password inactive									: never
+       Account expires										: Jan 01, 1970
+       Minimum number of days between password change		: 0
+       Maximum number of days between password change		: 99999
+       Number of days of warning before password expires	: 7
+
+If you need to unexpire the user on the server, you can run the following command:
+
+       usermod -e -1 <user>
+
+In order to verify the user has been unexpired, you can run the following command:
+
+       chage -l <user>
+
+You will see the following output for the user:
+
+       Last password change					                : Apr 20, 2020
+       Password expires					    				: never
+       Password inactive									: never
+       Account expires										: never
+       Minimum number of days between password change		: 0
+       Maximum number of days between password change		: 99999
+       Number of days of warning before password expires	: 7
+
+### Deleting a user
+If you are certain that you will not need a Linux user, you can delete the user from the server. 
+
+**Note**: While this will not delete the user's home directory, this can cause issues with ownership or other permissions on the server. Before deleting the user, ensure removing the user will not cause applications on your server to break. 
+
+To `delete` a user on your server, you can run the following command:
+
+       userdel <user>
+
+You can verify the user has been deleted with the following command:
+
+       getent passwd <user>
+
+If the user was successfully deleted, you should not receive any output as the user does not exist within the `/etc/passwd` file. 
