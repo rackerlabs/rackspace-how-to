@@ -47,8 +47,11 @@ permalink: /
 		   <div class="row">
 			   <h3>Rackspace Managed Security</h3>
 			   <div class="twelve columns">
-				   <div class="primary twelve columns icon pdr">
+				   <div class="primary three columns icon pdr">
 					   <h4><a href="/how-to/rackspace-pdr/"><span>Rackspace</span> Proactive Detection & Response</a></h4>
+				   </div>
+				   <div class="six columns icon alert-logic">
+					   <h4><a href="/how-to/rms-alert-logic/"><span>Alert Logic</span> Security Solutions</a></h4>
 				   </div>
 			   </div>
 		   </div>
