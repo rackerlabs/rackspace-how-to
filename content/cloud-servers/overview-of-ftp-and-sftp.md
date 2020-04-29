@@ -5,8 +5,8 @@ title: Overview of FTP and SFTP
 type: article
 created_date: '2019-02-19'
 created_by: Rackspace Community
-last_modified_date: '2019-02-19'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-04-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
