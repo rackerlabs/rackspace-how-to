@@ -51,6 +51,7 @@ Attach/detach Cloud Network | Sets/removes interface IPs and routes
 
 <br />
 <br />
+
 ### What does nova-agent require?
 
 - UNIX-like systems (Linux and FreeBSD&reg;) must run the *xe-linux-distribution*
@@ -144,20 +145,18 @@ If you're using an imported image of a distro that supports `cloud-init`, you mi
 find it easier to use `cloud-init` instead of nova-agent. This requires setting
 the following metadata on your imported image:
 
-Metadata key/value |What it does
+Metadata key/value | What it does
 ---|---
-**img_config_drive=mandatory** |Always attach the config drive on builds from this image. The
+**img_config_drive=mandatory** | Always attach the config drive on builds from this image. The
 config-drive always contains **meta-data.json**, **network-data.json**, and **vendor-data.json**.
 Any distro with the `cloud-init` service active at boot should be able to read these files and
 inject a SecureShell (SSH) key, set network configuration, and so on.
-**vm_mode=hvm** |Boot in hardware virtual machine (HVM) mode as opposed to the deprecated
+**vm_mode=hvm** | Boot in hardware virtual machine (HVM) mode as opposed to the deprecated
 paravirtual (PV) mode. PV mode is implicit, so you get bootloader errors unless you set this mode.
 **xenapi_use_agent=False** | Don't check for the nova-agent response before marking the server as
 **ACTIVE** in the Cloud Servers API.
 
 <br />
-<br />
-
 
 **Note**: A RHEL&reg; 7.2/CentOS&reg; 7.2 update pushed in December 2015 broke legacy
 behavior that older nova-agents relied on. You might still see this issue on
