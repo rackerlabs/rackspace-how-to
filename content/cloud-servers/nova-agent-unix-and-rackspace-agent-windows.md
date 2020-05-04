@@ -20,8 +20,7 @@ agent.
 ### What is nova-agent?
 
 Nova-agent is a required service for all virtualized servers in the Rackspace
-public cloud. Thus OnMetal is excluded. The service interacts with XenServer&reg;,
-so it is not relevant to typical Rackspace private cloud deployments. According
+public cloud. Thus OnMetal is excluded. The service interacts with XenServer&reg. According
 to the [Rackspace developer docs](https://developer.rackspace.com/docs/user-guides/infrastructure/cloud-config/compute/cloud-servers-product-concepts/nova-agent/),
 nova-agent is a service that:
 
@@ -135,13 +134,24 @@ and Rackspace's internal, Ubuntu&reg; operating system, and Debian&reg; reposito
 installation commands (`yum install nova-agent` or `apt-get install nova-agent`)
 should install or update the agent.
 
+If that doesn't work, you can also try installing the packages from [the OSPC repo](https://mirror.rackspace.com/ospc/).
+
 If you're not on a Rackspace-supported distribution, you can try to install an
 [older version of nova-agent](https://github.com/rackerlabs/openstack-guest-agents-unix)
 from the rackerlabs Github repository. However, this is technically unsupported.
 
 If you're using an imported image of a distro that supports `cloud-init`, you might
 find it easier to use `cloud-init` instead of nova-agent. This requires setting
-some metadata on your imported image.
+the following metadata on your imported image:
+Metadata key/value |What it does
+---|---
+img_config_drive=mandatory |Always attach the config drive on builds from this image. In additional to optional user-data, the config-drive always contains meta-data.json,  network-data.json, and vendor-data.json. Any distro with the cloud-init service active at boot should be able to read these files and inject an SSH key, set network configuration, etc.
+vm_mode=hvm |Boot in HVM mode as opposed to the deprecated PV mode. PV mode is implicit, so you will get bootloader errors unless you set this.
+xenapi_use_agent=False | Don't check for nova-agent response before marking the server ACTIVE in the Cloud Servers API
+
+<br />
+<br />
+
 
 **Note**: A RHEL&reg; 7.2/CentOS&reg; 7.2 update pushed in December 2015 broke legacy
 behavior that older nova-agents relied on. You might still see this issue on
