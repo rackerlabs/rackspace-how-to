@@ -1,12 +1,12 @@
 ---
 permalink: nova-agent-unix-and-rackspace-agent-windows/
-audit_date: '2019-09-27'
+audit_date: '2020-05-04'
 title: Nova-agent (Linux) and Rackspace agent (Windows)
 type: article
 created_date: '2019-09-27'
 created_by: Brian King
-last_modified_date: '2019-12-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2020-05-04'
+last_modified_by: Brian King
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -143,11 +143,17 @@ from the rackerlabs Github repository. However, this is technically unsupported.
 If you're using an imported image of a distro that supports `cloud-init`, you might
 find it easier to use `cloud-init` instead of nova-agent. This requires setting
 the following metadata on your imported image:
+
 Metadata key/value |What it does
 ---|---
-img_config_drive=mandatory |Always attach the config drive on builds from this image. In additional to optional user-data, the config-drive always contains meta-data.json,  network-data.json, and vendor-data.json. Any distro with the cloud-init service active at boot should be able to read these files and inject an SSH key, set network configuration, etc.
-vm_mode=hvm |Boot in HVM mode as opposed to the deprecated PV mode. PV mode is implicit, so you will get bootloader errors unless you set this.
-xenapi_use_agent=False | Don't check for nova-agent response before marking the server ACTIVE in the Cloud Servers API
+**img_config_drive=mandatory** |Always attach the config drive on builds from this image. The
+config-drive always contains **meta-data.json**, **network-data.json**, and **vendor-data.json**.
+Any distro with the `cloud-init` service active at boot should be able to read these files and
+inject a SecureShell (SSH) key, set network configuration, and so on.
+**vm_mode=hvm** |Boot in hardware virtual machine (HVM) mode as opposed to the deprecated
+paravirtual (PV) mode. PV mode is implicit, so you get bootloader errors unless you set this mode.
+**xenapi_use_agent=False** | Don't check for the nova-agent response before marking the server as
+**ACTIVE** in the Cloud Servers API.
 
 <br />
 <br />
