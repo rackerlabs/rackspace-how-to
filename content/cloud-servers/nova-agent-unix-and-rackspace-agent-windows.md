@@ -1,12 +1,12 @@
 ---
 permalink: nova-agent-unix-and-rackspace-agent-windows/
-audit_date: '2019-09-27'
+audit_date: '2020-05-04'
 title: Nova-agent (Linux) and Rackspace agent (Windows)
 type: article
 created_date: '2019-09-27'
 created_by: Brian King
-last_modified_date: '2019-12-20'
-last_modified_by: Stephanie Fillmon
+last_modified_date: '2020-05-04'
+last_modified_by: Brian King
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -20,8 +20,7 @@ agent.
 ### What is nova-agent?
 
 Nova-agent is a required service for all virtualized servers in the Rackspace
-public cloud. Thus OnMetal is excluded. The service interacts with XenServer&reg;,
-so it is not relevant to typical Rackspace private cloud deployments. According
+public cloud. Thus OnMetal is excluded. The service interacts with XenServer&reg. According
 to the [Rackspace developer docs](https://developer.rackspace.com/docs/user-guides/infrastructure/cloud-config/compute/cloud-servers-product-concepts/nova-agent/),
 nova-agent is a service that:
 
@@ -52,6 +51,7 @@ Attach/detach Cloud Network | Sets/removes interface IPs and routes
 
 <br />
 <br />
+
 ### What does nova-agent require?
 
 - UNIX-like systems (Linux and FreeBSD&reg;) must run the *xe-linux-distribution*
@@ -135,13 +135,24 @@ and Rackspace's internal, Ubuntu&reg; operating system, and Debian&reg; reposito
 installation commands (`yum install nova-agent` or `apt-get install nova-agent`)
 should install or update the agent.
 
+If that doesn't work, you can also try installing the packages from [the OSPC repo](https://mirror.rackspace.com/ospc/).
+
 If you're not on a Rackspace-supported distribution, you can try to install an
 [older version of nova-agent](https://github.com/rackerlabs/openstack-guest-agents-unix)
 from the rackerlabs Github repository. However, this is technically unsupported.
 
 If you're using an imported image of a distro that supports `cloud-init`, you might
 find it easier to use `cloud-init` instead of nova-agent. This requires setting
-some metadata on your imported image.
+the following metadata on your imported image:
+
+Metadata key and value | Description
+---|---
+`img_config_drive=mandatory` | Always attach the config drive on builds from this image. <br /> The config-drive always contains **meta-data.json**, <br /> **network-data.json**, and **vendor-data.json**. <br /> Any distro with the `cloud-init` service active at boot <br /> should be able to read these files and inject <br /> a SecureShell (SSH) key, set network configuration, and so on.
+`vm_mode=hvm` | Boot in hardware virtual machine (HVM) mode as opposed to <br /> the deprecated paravirtual (PV) mode. <br /> PV mode is implicit, so you get bootloader errors <br /> unless you set this mode.
+`xenapi_use_agent=False` | Don't check for the nova-agent response before marking <br /> the server as **ACTIVE** in the Cloud Servers API.
+
+<br />
+
 
 **Note**: A RHEL&reg; 7.2/CentOS&reg; 7.2 update pushed in December 2015 broke legacy
 behavior that older nova-agents relied on. You might still see this issue on
@@ -157,9 +168,9 @@ gained, and the process is extremely complex.
 
 Topic | 2.x branch | 1.3.9 branch
 ---|---|---
-**Recommended** <br /> <br /> **install method** | `yum` or `apt` package managers| Download the release from github and run the script
+**Recommended** <br /> **install method** | `yum` or `apt` package managers| Download the release from github and run the script
 **Github link** | [2.x link](https://github.com/Rackspace-DOT/nova-agent) | [1.3.9 link](https://github.com/rackerlabs/openstack-guest-agents-unix)
-**OS** <br /> <br /> **compatibility** | Only OS currently supported in <br /> <br /> Rackspace Cloud (Fedora&reg;, <br />  <br /> CoreOS&reg;, Red Hat/CentOS, <br />  <br /> Debian, and Ubuntu operating system; | Supported OS plus some older <br /> <br /> unsupported OS such as <br /> <br /> OpenSuSE&reg;, Gentoo&reg;, FreeBSD, <br /> <br /> and Arch&reg;
+**OS** <br /> **compatibility** | Only OS currently supported in <br /> Rackspace Cloud (Fedora&reg;, <br />  CoreOS&reg;, Red Hat/CentOS, <br />  Debian, and Ubuntu operating system; | Supported OS plus some older <br /> unsupported OS such as <br />  OpenSuSE&reg;, Gentoo&reg;, FreeBSD, <br /> and Arch&reg;
 **Python3 support** | Yes | No
 
 <br />
