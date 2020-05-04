@@ -158,6 +158,13 @@ paravirtual (PV) mode. <br /> PV mode is implicit, so you get bootloader errors 
 
 <br />
 
+Metadata | Description
+---|---
+`img_config_drive=mandatory` | Always attach the config drive on builds from this image. <br /> The
+config-drive always contains **meta-data.json**, <br /> **network-data.json**, and **vendor-data.json**.
+Password reset request through the Cloud Control Panel or API | Sets root password (Administrator for Windows)
+Attach/detach Cloud Network | Sets/removes interface IPs and routes
+
 **Note**: A RHEL&reg; 7.2/CentOS&reg; 7.2 update pushed in December 2015 broke legacy
 behavior that older nova-agents relied on. You might still see this issue on
 older custom images or on servers that haven't been updated lately. Tag
