@@ -145,15 +145,15 @@ If you're using an imported image of a distro that supports `cloud-init`, you mi
 find it easier to use `cloud-init` instead of nova-agent. This requires setting
 the following metadata on your imported image:
 
-Metadata key/value | What it does
+Metadata key and value | Description
 ---|---
-**img_config_drive=mandatory** | Always attach the config drive on builds from this image. The
-config-drive always contains **meta-data.json**, **network-data.json**, and **vendor-data.json**.
-Any distro with the `cloud-init` service active at boot should be able to read these files and
-inject a SecureShell (SSH) key, set network configuration, and so on.
-**vm_mode=hvm** | Boot in hardware virtual machine (HVM) mode as opposed to the deprecated
-paravirtual (PV) mode. PV mode is implicit, so you get bootloader errors unless you set this mode.
-**xenapi_use_agent=False** | Don't check for the nova-agent response before marking the server as
+`img_config_drive=mandatory` | Always attach the config drive on builds from this image. <br /> The
+config-drive always contains **meta-data.json**, <br /> **network-data.json**, and **vendor-data.json**. <br />
+Any distro with the `cloud-init` service active at boot <br /> should be able to read these files and
+inject <br /> a SecureShell (SSH) key, set network configuration, and so on.
+`vm_mode=hvm` | Boot in hardware virtual machine (HVM) mode as opposed to <br /> the deprecated
+paravirtual (PV) mode. <br /> PV mode is implicit, so you get bootloader errors <br /> unless you set this mode.
+`xenapi_use_agent=False` | Don't check for the nova-agent response before marking <br /> the server as
 **ACTIVE** in the Cloud Servers API.
 
 <br />
@@ -172,9 +172,9 @@ gained, and the process is extremely complex.
 
 Topic | 2.x branch | 1.3.9 branch
 ---|---|---
-**Recommended** <br /> <br /> **install method** | `yum` or `apt` package managers| Download the release from github and run the script
+**Recommended** <br /> **install method** | `yum` or `apt` package managers| Download the release from github and run the script
 **Github link** | [2.x link](https://github.com/Rackspace-DOT/nova-agent) | [1.3.9 link](https://github.com/rackerlabs/openstack-guest-agents-unix)
-**OS** <br /> <br /> **compatibility** | Only OS currently supported in <br /> <br /> Rackspace Cloud (Fedora&reg;, <br />  <br /> CoreOS&reg;, Red Hat/CentOS, <br />  <br /> Debian, and Ubuntu operating system; | Supported OS plus some older <br /> <br /> unsupported OS such as <br /> <br /> OpenSuSE&reg;, Gentoo&reg;, FreeBSD, <br /> <br /> and Arch&reg;
+**OS** <br /> **compatibility** | Only OS currently supported in <br /> Rackspace Cloud (Fedora&reg;, <br />  CoreOS&reg;, Red Hat/CentOS, <br />  Debian, and Ubuntu operating system; | Supported OS plus some older <br /> unsupported OS such as <br />  OpenSuSE&reg;, Gentoo&reg;, FreeBSD, <br /> and Arch&reg;
 **Python3 support** | Yes | No
 
 <br />
