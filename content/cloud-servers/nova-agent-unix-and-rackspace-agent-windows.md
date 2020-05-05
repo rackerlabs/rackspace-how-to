@@ -1,6 +1,6 @@
 ---
 permalink: nova-agent-unix-and-rackspace-agent-windows/
-audit_date: '2020-05-04'
+audit_date: '2020-05-05'
 title: Nova-agent (Linux) and Rackspace agent (Windows)
 type: article
 created_date: '2019-09-27'
@@ -147,23 +147,12 @@ the following metadata on your imported image:
 
 Metadata key and value | Description
 ---|---
-`img_config_drive=mandatory` | Always attach the config drive on builds from this image. <br /> The
-config-drive always contains **meta-data.json**, <br /> **network-data.json**, and **vendor-data.json**. <br />
-Any distro with the `cloud-init` service active at boot <br /> should be able to read these files and
-inject <br /> a SecureShell (SSH) key, set network configuration, and so on.
-`vm_mode=hvm` | Boot in hardware virtual machine (HVM) mode as opposed to <br /> the deprecated
-paravirtual (PV) mode. <br /> PV mode is implicit, so you get bootloader errors <br /> unless you set this mode.
-`xenapi_use_agent=False` | Don't check for the nova-agent response before marking <br /> the server as
-**ACTIVE** in the Cloud Servers API.
+`img_config_drive=mandatory` | Always attach the config drive on builds from this image. <br /> The config-drive always contains **meta-data.json**, <br /> **network-data.json**, and **vendor-data.json**. <br /> Any distro with the `cloud-init` service active at boot <br /> should be able to read these files and inject <br /> a SecureShell (SSH) key, set network configuration, and so on.
+`vm_mode=hvm` | Boot in hardware virtual machine (HVM) mode as opposed to <br /> the deprecated paravirtual (PV) mode. <br /> PV mode is implicit, so you get bootloader errors <br /> unless you set this mode.
+`xenapi_use_agent=False` | Don't check for the nova-agent response before marking <br /> the server as **ACTIVE** in the Cloud Servers API.
 
 <br />
 
-Metadata | Description
----|---
-`img_config_drive=mandatory` | Always attach the config drive on builds from this image. <br /> The
-config-drive always contains **meta-data.json**, <br /> **network-data.json**, and **vendor-data.json**.
-Password reset request through the Cloud Control Panel or API | Sets root password (Administrator for Windows)
-Attach/detach Cloud Network | Sets/removes interface IPs and routes
 
 **Note**: A RHEL&reg; 7.2/CentOS&reg; 7.2 update pushed in December 2015 broke legacy
 behavior that older nova-agents relied on. You might still see this issue on
