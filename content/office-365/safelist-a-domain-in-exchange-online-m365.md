@@ -1,5 +1,5 @@
 ---
-permalink: safelist-a- domain-in-exchange-online-m365/
+permalink: safelist-a-domain-in-exchange-online-m365/
 audit_date: '2020-05-13'
 title: Safelist a domain in Exchange Online
 type: article
