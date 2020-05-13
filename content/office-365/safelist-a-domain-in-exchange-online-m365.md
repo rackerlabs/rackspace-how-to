@@ -61,6 +61,7 @@ When you use mail flow rules to bypass spam filtering, Exchange Online can perfo
 6.	Give the rule a descriptive name such as “Bypass spam filtering for domain.com”.
 
 7.	Under the **Apply this rule if…** section in the first drop-down menu.
+
     a. Select **The sender…**.
     b. Select **domain is**. 
     c. When prompted, type the domain you want to safelist into the text box.
@@ -68,34 +69,41 @@ When you use mail flow rules to bypass spam filtering, Exchange Online can perfo
     e. Click **OK**.
 
 8.	Select **Add Condition**. 
+
     a. From the new drop-down menu, select **The sender…**.
     b. Select **is external/internal**. 
     c. When prompted, select **Outside the organization** from the drop-down menu.
     d. Click **OK**.
 
 9.	Select **Add Condition**. 
+
     a. From the new drop-down menu, select **A message header…**.
     b. Select **includes any of these words**.
 
 10.	Select the **Enter text…** hyperlink on the right side. 
+
     a. In the **Specify Header Name** field, enter **Authentication-Results**. 
     b. Select **OK**.
 
 11.	Select the **Enter words…** hyperlink on the right side, in the text box, enter **dmarc=pass**.
+
     a. Select **+**.
     b. Type **dmarc=bestguesspass**.
     c. Select **+**.
     d. Click **OK**.
 
 12.	Select **Add Action** from the new drop-down menu.
+
     a. Select **Modify the message properties…**.
     b. Select **set a message header**.
 
 13.	Select the first **Enter text…** hyperlink on the right.
+
     a. Enter **X-ETR** into the message header text box.
     b. Select **OK**.
 
 14.	Select the second **Enter text…** hyperlink on the right.
+
     a. Enter **Bypass spam filtering for authenticated sender domain.com**.
     b. Select **OK**.
 
