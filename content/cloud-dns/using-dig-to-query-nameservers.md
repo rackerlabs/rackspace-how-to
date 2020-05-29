@@ -105,11 +105,12 @@ are the authorities for the domain. They can be useful for
 troubleshooting.
 
 Using `+nssearch` gives the value of how long responses take to find
-the SOA.
+the Start of Authority (SOA), a record which stores the domain's
+authoritative name servers and the defined minimum time-to-live (TTL)
+on other servers.
 
-The second command queries the "SOA" for the domain's zone file. SOA stands for "Start of Authority", and this record stores the domain's authoritative name servers and the defined minimum
-time-to-live (TTL) on other servers. Depending on a DNS server's
-configuration the SOA may contain additional information, like a domain
+The second command queries the SOA for the domain's zone file. Depending on a DNS server's
+configuration, the SOA might contain additional information, like a domain
 administrator's email address.
 
 ### Causes of DNS problems
