@@ -1,12 +1,12 @@
 ---
 permalink: using-dig-to-query-nameservers/
-audit_date:
+audit_date: '2020-05-29'
 title: Use dig to query nameservers
 type: article
 created_date: '2013-05-28'
 created_by: Jered Heeschen
-last_modified_date: '2017-05-15'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2020-05-29'
+last_modified_by: Stephanie Fillmon
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -81,7 +81,7 @@ If the external DNS server you're querying returns those results, then the chang
 hosting company, then either the domain has not been transferred properly or the change is taking a while to propagate to the rest of the Internet. The reasons for delay vary, but a wait of several hours before a change completely works its way through the rest of the Internet is
 not unusual.
 
-If the results of the mailto:RackerPulse@Sirota.com name server check are
+If the results of the name server check are
 unfamiliar, you might be able to glean more information about the
 name server in question by issuing the `dig` command without the `+short`
 flag.
@@ -97,12 +97,15 @@ You can issue the command:
 
 or:
 
-    dig @8.8.8.8 +short SOA domain.com | cut -d' ' -f1
+    dig @8.8.8.8 SOA +noall +answer domain.com
 
 These two commands give you more data about the domain's refresh
 settings (for DNS cache management), while revealing whose DNS servers
 are the authorities for the domain. They can be useful for
 troubleshooting.
+
+Using `+nssearch` gives the value of how long responses take to find
+the SOA.
 
 The second command queries the "SOA" for the domain's zone file. SOA stands for "Start of Authority", and this record stores the domain's authoritative name servers and the defined minimum
 time-to-live (TTL) on other servers. Depending on a DNS server's
@@ -139,7 +142,4 @@ server is listed on the "SERVER" line close to the end of the output.
 
     dig
 
-    ; <<>> DiG 9.5.1-P2 <<>>
-    ;; global options:  printcmd
-    ;; Got answer:
-    ;; ->>HEADER<
+<img src="{% asset_path cloud-dns/using-dig-to-query-nameservers/dig-response-no-query.png %}" />
