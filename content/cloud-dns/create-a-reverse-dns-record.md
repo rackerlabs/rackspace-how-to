@@ -1,12 +1,12 @@
 ---
 permalink: create-a-reverse-dns-record/
-audit_date:
+audit_date: '2020-06-01'
 title: Create a reverse DNS record
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
-last_modified_date: '2018-10-24'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-06-01'
+last_modified_by: Stephanie Fillmon
 product: Cloud DNS
 product_url: cloud-dns
 ---
@@ -19,7 +19,7 @@ This means that after the sending IP address is checked, if the reverse
 DNS does not match the sending domain, then it is classed as
 "unauthenticated".
 
-We put "unauthenticated" in quotes because having a Reverse DNS record
+Having a Reverse DNS record
 attached to your domain does not automatically guarantee acceptance of
 email originating from your domain by the recipient's email server. It's
 just that non-matching or generic reverse DNS lookup settings are often
