@@ -1,12 +1,12 @@
 ---
 permalink: getting-started-with-office-365/
-audit_date:
+audit_date: '2020-06-05'
 title: Getting started with Office 365
 type: article
 created_date: '2019-11-27'
 created_by: Walter Stubbs
-last_modified_date: '2019-12-23'
-last_modified_by: Walter Stubbs
+last_modified_date: '2020-06-05'
+last_modified_by: Stephanie Fillmon
 product: Office 365
 product_url: office-365
 ---
