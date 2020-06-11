@@ -50,9 +50,12 @@ permalink: /
 				   <div class="primary three columns icon pdr">
 					   <h4><a href="/how-to/rackspace-pdr/"><span>Rackspace</span> Proactive Detection & Response</a></h4>
 				   </div>
-				   <div class="six columns icon alert-logic">
+				   <div class="three columns icon alert-logic">
 					   <h4><a href="/how-to/rms-alert-logic/"><span>Alert Logic</span> Security Solutions</a></h4>
 				   </div>
+					 <div class="three columns icon cloudflare">
+					   <h4><a href="/how-to/rms-cloudflare/"><span>Cloudflare</span> Edge Security</a></h4>
+					 </div>
 			   </div>
 		   </div>
 			<hr/>
