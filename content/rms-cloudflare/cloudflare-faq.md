@@ -4,14 +4,14 @@ title: Cloudflare Edge Security FAQ
 type: faq
 audit_date: '2020-06-11'
 created_date: '2020-06-11'
-created_by:
+created_by: Rackspace Managed Security
 last_modified_date: '2020-06-11'
 last_modified_by: Stephanie Fillmon
 product: Cloudflare Edge Security
 product_url: rms-cloudflare
 ---
 
-#### How do I contact the Rackspace Technology team?
+#### How do I contact the Rackspace team?
 
 The best way to reach us is by creating a ticket in the
 [MyRackspace portal](https://login.rackspace.com/) and selecting your
@@ -21,8 +21,8 @@ device, if applicable. You can also call us at (US) 1-800-961-4454 or
 
 #### When should I contact Cloudflare&reg;?
 
-Always contact Rackspace Technology for support. If required, the Rackspace
-Technology team will escalate issues to Cloudflare where we have a direct
+Always contact Rackspace for support. If required, the Rackspace
+team will escalate issues to Cloudflare where we have a direct
 line to quickly solve the problem.
 
 #### Is Cloudflare a free DNS provider?
