@@ -53,34 +53,6 @@ minutes or less.
 such, propagation everywhere might take longer than 5 minutes (in rare cases
 up to 48 hours).
 
-#### Can I use add-on domains with Cloudflare?
-
-Add-on domains are technically different domains that point to another "main"
-domain server.
-
-From a Cloudflare perspective, however, the domains are looked at as unique
-entities, which means that you would have to add each domain separately.
-
-Cloudflare treats each of the following as a separate domain:
-
-- example1.com
-- example2.com
-- example3.com
-
-Each domain needs to be added separately to your Cloudflare account. There's
-no limit on the number of host entries or other DNS entries in a Cloudflare
-account. If you have hundreds or thousands, as some customers do, this will
-impact the onboarding time with Rackspace Technology.
-
-All subdomains are included, as long as they are managed through the root of
-the domain, so these would all be considered one domain for your plan:
-
-- example1.com (Root domain)
-
-  - www.example1.com (subdomain 1)
-  - blog.example1.com (subdomain 2)
-  - Store.example1.com (subdomain 3)
-
 #### Can I add domains to my Cloudflare account?
 
 Yes, however Cloudflare considers each separate domain unique

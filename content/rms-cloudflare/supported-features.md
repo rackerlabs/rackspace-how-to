@@ -24,7 +24,7 @@ updated as we include new features and functionality:
 
 | Feature | Information |
 | --- | --- |
-| Argo Smart Routing | Monitors routing paths, ensuring traffic takes the most optimal path |
+| Argo (Argo Smart Routing, Argo Tunnel, and Argo Tiered Caching) | Monitors routing paths, ensuring traffic takes the most optimal path. Creates an encrypted tunnel between your origin web server and Cloudflare’s nearest data center |
 | Argo Tunnel | Creates an encrypted tunnel between your origin web server and Cloudflare's nearest data center |
 | Bot Management | Deploy a fast and accurate bot management solution without complex configuration or maintenance. Cloudflare Bot Management automatically recommends rules to manage bots out-of-the-box. No instrumentation with third-party JavaScript required. |
 | China Network | Deliver content directly from China-based servers to customers |
