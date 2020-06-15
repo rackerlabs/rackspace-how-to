@@ -25,11 +25,11 @@ fighting ever adaptive and motivated adversaries.
   operate on social media platforms like Facebook Bot.
 - **Bad bots** - Bots which are designed to perform malicious actions,
   ultimately hurting businesses, such as credential stuffing bots,
-  third-party scraping bots, spam bots, and sneakerbots.
+  third-party scraping bots, spambots, and sneaker bots.
 - **Bot management** - Blocking undesired or malicious Internet bot traffic
   while still allowing useful bots to access web properties by detecting
   bot activity, discerning between desirable and undesirable bot behavior,
-  and identifying the sources of the undesirable activity.
+  and identifying the sources of the unwanted activity.
 - **Web Application Firewall (WAF)** - A security system that monitors and
   controls network traffic based on a set of security rules.
 
@@ -49,18 +49,18 @@ detection mechanisms.
 
 The Cloudflare Bot Management platform currently uses five complementary
 detection mechanisms, producing their own scores, which we combine to form
-the single score going to the Firewall. Most of the detection mechanisms are
-applied on every request, while some are enabled on a per customer basis to
+the single score going to the firewall. Most of the detection mechanisms are
+applied on every request, while some are enabled on a per-customer basis to
 better fit their needs.
 
-Overall globally, more than third of the Internet traffic visible to
+Overall globally, more than a third of the Internet traffic visible to
 Cloudflare is coming from bad bots, while Bot Management customers have the
 ratio of bad bots even higher at approximately 43%.
 
 ### Summary
 
 Cloudflare has the unique ability to collect data from trillions of requests
-flowing through its network every week. With this data, Cloudflare is able to
+flowing through its network every week. With this data, Cloudflare can
 identify likely bot activity with machine learning, heuristics, behavioral
 analysis, and other detection mechanisms. Cloudflare Bot Management
 integrates seamlessly with other Cloudflare products, such as WAF and Workers.
