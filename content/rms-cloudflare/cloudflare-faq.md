@@ -22,7 +22,7 @@ device, if applicable. You can also call us at (US) 1-800-961-4454 or
 #### When should I contact Cloudflare&reg;?
 
 Always contact Rackspace for support. If required, the Rackspace
-team will escalate issues to Cloudflare where we have a direct
+team escalates issues to Cloudflare where we have a direct
 line to quickly solve the problem.
 
 #### Is Cloudflare a free DNS provider?
@@ -45,32 +45,32 @@ Cloudflare.
 
 #### How long does it take for a DNS change I made to take effect?
 
-The Cloudflare DNS default Time-To-Live (TTL) is 300 seconds (5 minutes). Any
-changes or additions you make to your Cloudflare zone file will push out in 5
+The Cloudflare DNS default Time-To-Live (TTL) is 300 seconds (five minutes). Any
+changes or additions you make to your Cloudflare zone file push out in five
 minutes or less.
 
-**Note**: Your local DNS cache may take longer to update; as
-such, propagation everywhere might take longer than 5 minutes (in rare cases
-up to 48 hours).
+**Note**: Your local DNS cache might take longer to update. Thus,
+propagation everywhere might take longer than five minutes. In rare cases,
+it could take up to 48 hours.
 
 #### Can I add domains to my Cloudflare account?
 
 Yes, however Cloudflare considers each separate domain unique
 with their own service contracts attached. This might result in a mixture of
-server levels in one account and should be considered in the deployment of a
-subdomain.  
+server levels in one account, so you should consider this concern when you
+deploy a subdomain.  
 
-In the following example, we see **example1.com** has been added to an
-account with an enterprise support agreement. Any subdomains, such as www
-and dev will inherit this contract as they are deployed simply as a DNS
-record. If, however, we want to deploy and manage a sub domain as a
-separate entity, different service level agreements apply. See the
-following **blog.example1.com**:
+In the following example, we added **example1.com** to an
+account with an enterprise support agreement. Any subdomains, such as **www**
+and **dev** inherit this contract because we deployed them simply as a DNS
+record. If, however, we want to deploy and manage a subdomain as a
+separate entity, different service-level agreements apply. See the
+following **blog.example1.com** example:
 
 - Example1.com (Enterprise)
 
   - www.example1.com (Enterprise - inherited)
-  - dev.example.com (Enterprise -inherited)
+  - dev.example.com (Enterprise - inherited)
 
 - Blog.example1.com (free)
 
@@ -84,5 +84,5 @@ cost implications.
 
 #### Does Cloudflare offer domain masking?
 
-No, Cloudflare does not offer domain masking or DNS redirect services, only
+No, Cloudflare does not offer domain masking or DNS redirect services. It offers only
 URL forwarding through [Page Rules](http://blog.cloudflare.com/introducing-pagerules-url-forwarding).
