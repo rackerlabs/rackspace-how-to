@@ -1,30 +1,30 @@
 ---
-permalink: using-event-viewer-to-troubleshoot-system-freezing/
-title: 'Using Event Viewer for reports of System Freezing'
+permalink: using-event-viewer-to-troubleshoot-system-freezes/
+title: 'Using Event Viewer to troubleshoot system freezes'
 type: article
+audit_date: '2020-06-16'
 created_date: '2020-06-15'
 created_by: Benji Ivey
-last_modified_date:
-last_modified_by:
+last_modified_date: '2020-06-16'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-## Using Event Viewer for reports of System Freezing
+This article describes how to use Windows&reg; Event Viewer to identify system freezes.
 
-This articles serves as a guide for navigating through your Event Viewer to identify system freezes.
-
-1. Click the **Start** > **Run** and type **eventvwr**.
-    - You can also open this using Powershell or in Command Prompt.
+1. Open Event Viewer by clicking **Start** > **Run** and then typing **eventvwr**.
+   
+   You can also enter **eventvwr** in Powershell or Command Prompt to open Event Viewer.
     
-2. Once you are at the Event Viewer screen look in the left-hand column. Click **Windows Logs** > **Application**/**System** (Sometimes you will need to check one or both to find the issue)
+2. After Event Viewer opens, in the left-hand column click **Windows Logs** > **Application**.
 
-3. Click **Filter** on the right hand side. Check the boxes for **Critical**, **Warning**, and **Error**.
+   **Note**: If you don't see any freeze events in the **Application** section, try looking in **Windows Logs > Systems**.
+
+3. On the right-hand side, click **Filter** and then check the boxes for **Critical**, **Warning**, and **Error**.
 
 4. Find the event associated with the freezing by searching for the time and date the issue occurred.
 
 5. Note the Event ID and message text and use a search engine to find potential resolutions.
 
-Note: You can use the following link to find your specific event ID and troubleshoot it. Make sure to sort by your OS in the upper right-hand corner.
-
-https://support.microsoft.com/en-us/hub/4338813/windows-help?os=windows-7
+**Note**: You can use [Windows support](https://support.microsoft.com/en-us/hub/4338813/windows-help?os=windows-7) to find your specific event ID and troubleshoot it. Filter the support information for your Windows Operating System version by using the **Select your product** drop-down menu in the upper right-hand corner.
