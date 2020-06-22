@@ -11,11 +11,11 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This guide is intended to provide guidance when you try to transfer a file from/to a remote server.
+This artile describes how to transfer a file from and to a remote server.
 
 # Copying files/directories in a remote way to/from your server
 
-There are two different tools to transfer files remotely in an easy way, SSH and RSYNC. The difference between them resides in that SCP uses SSH to copy files or directories indicated by user. RSYNC on the other way the first time is used copy all files/ directories and the further times only copy a delta (files modified, new files or directories), it does not copy all files/directories again.
+You can use either SSH or RSYNC to transfer files to a remote server. SCP uses SSH to copy only files or directories selected by the user. On first use, RSYNC copies all files and directories and then only copies files and directories that you have changed. RSYNC does not copy all files and directories again.
 
 ##### SSH/SCP:
 #
@@ -39,14 +39,14 @@ Copy a directory **"to"** a remote server:
 
 ##### RSYNC:
 #
-RSYNC transfer the files in a recursive way so a -r flag is not necesary but you may prefer to transfer the files in an archive and compressed way, for that you can use:
+Because RSYNC transfers files recursively, you do not need to add the -r flag. You can use the following commands to transfer the files in an archived and compressed way:
 
 	-a, --archive
-	       It is a quick way  of  saying  you  want  recursion  and  want  to preserve  source characteristics (like permissions).
+	       Like recursion, this option preserves source characteristics (for example, permissions).
 	-v, --verbose
-	       This  option shows you more information during the transfer.
+	       This option shows you more information during the transfer.
 	-z, --compress
-	       With  this  option, rsync compresses the file data as it is sent to the destination machine.
+	       With this option, RSYNC compresses the file data sent to the destination machine.
 
 Copy a file **"from"** a remote server:
 ```sh
@@ -68,7 +68,7 @@ Copy a directory **"to"** a remote server:
 
 
 #### Note:
-> A  trailing  slash on the source changes the behavior to avoid creating an additional directory level at the destination. With the '/' the directory content will be copied without creating a new folder, without the '/' a new directory will be created with the source directory´s name.
+> A  trailing  slash on the source changes the transfer behavior to avoid creating an additional directory level at the destination. With the '/', the directory content is copied without creating a new folder. Without the '/', a new directory is created with the source directory´s name.
             `
             ~$ rsync [-avz] /local/path/directory  user@IP.address:/destination/path/
             `
