@@ -1,6 +1,6 @@
 ---
 permalink: remediating-compromised-mailbox-office-365/
-audit_date:
+audit_date: '2020-06-25'
 title: How to remediate a compromised user account and mailbox in Office 365
 type: article
 created_date: '2020-01-08'
@@ -36,7 +36,7 @@ The following symptoms may indicate that a user account or mailbox is compromise
   - Inbox rules that were not created by the user. These rules typically forward emails externally or move them to the Notes,   Junk Email, RSS Subscription folders, or the Deleted Items folder.
   - Changes to the user's Display Name or other contact information.
   - Mailbox blocked from sending email.
-  - User receives the following Non-Delivery Report (NDR) when trying to send out email: 
+  - User receives the following Non-Delivery Report (NDR) when trying to send out email:
     `Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is  that your email address is suspected of sending spam and it's no longer allowed to send email. Contact your email admin for assistance. Remote Server returned '550 5.1.8 Access denied, bad outbound sender.'`
 
 ### Secure a compromised account
@@ -57,11 +57,11 @@ Use the following steps to secure a compromised user account:
 
 7.  Select the key icon under the user's name, then select the options that you prefer, then click **Reset**.
 
-8.  Uncheck the box to the left of **Send password in email**. If you selected to auto-generate a password, be sure to copy down the sign-in information on the next screen. 
+8.  Uncheck the box to the left of **Send password in email**. If you selected to auto-generate a password, be sure to copy down the sign-in information on the next screen.
 
 **NOTE:** Do not send the password in an email to the user. They might have other accounts, including personal email accounts, that are compromised which could provide the attacker with access to the account again.
 
-### Remove email forwarding and malicious inbox rules 
+### Remove email forwarding and malicious inbox rules
 
 Use the following steps to remove any email forwarding and inbox rules from the user's mailbox:
 
