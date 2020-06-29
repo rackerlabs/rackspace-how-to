@@ -15,13 +15,22 @@ The following permissions matrix displays specific permissions for the roles in 
 
 ### As of January 20, 2015
 
-Role | Private Feeds: Get or Post | Other: Get or Post
---- | :---: | :---:
-Cloud Feeds: Observer | &nbsp; | GET
-Admin | &nbsp; | &nbsp;
-Observer | &nbsp; | &nbsp;
-Identity: User-Admin | &nbsp; |&nbsp;
-Any other users with just valid token, irrespective of the role | &nbsp; | &nbsp;
+Role | Restricted Publishing: Get / Post | Private Feeds: Get / Post | Typical Feeds: Get / Post
+--- | :---: | :---: | :---: 
+cloud feeds: observer | NO/NO | NO/NO | YES*/NO 
+cloudfeeds: service-observer | YES/NO |	YES/NO	|YES/NO
+cloudfeeds:service-admin | YES/NO |YES/YES |YES/YES
+cloudfeeds:cadf-publisher | NO/NO |	NO/NO  | YES**/YES**
+cloudfeeds:{unique-name}-publisher | NO/YES | NO/NO | NO/NO
+Admin | NO/NO	| NO/NO	| YES*/NO
+Observer | NO/NO| NO/NO	| YES*/NO
+Identity: User-Admin | NO/NO |	NO/NO | YES*/NO
+identity:admin | NO/NO|	NO/NO |	NO/NO
+Any other users with just valid token, irrespective of the role | NO/NO	| NO/NO | NO/NO
+
+* *Users can retrieve only events matching their own Tenant ID.
+* ** Users can retrieve and publish only CADF events.
+
 
 **Note:** Beginning January 20, users must have one of the cloudfeeds roles to access feeds (read or write).
 
