@@ -11,7 +11,7 @@ product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-This article shows how to check the bandwidth on your account for multiple devices by using the MyRackspace Portal.
+This article describes how to check the bandwidth on your account for multiple devices by using the MyRackspace Portal.
 
 
 ### Prerequisites
@@ -30,8 +30,8 @@ on the device.
 3. At the top of the panel, select **Network > Bandwidth**.
 
    A bandwidth report for the current month displays. You can change the month shown by
-   clicking the drop down menu and selecting the month that you want to view.
+   clicking the drop-down menu and selecting the month that you want to view.
 
 
 From the top navigation bar, you can access other reports such as Device Bandwidth, Bandwidth
-Data or MRTG Graphs, where you can filter the information that you need.
+Data, or MRTG Graphs, where you can filter the information that you need.
