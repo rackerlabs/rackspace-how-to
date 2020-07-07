@@ -54,7 +54,7 @@ Alternatively, if you have an Office 365 license which includes a downloadable v
 
 5.  On the first installation screen, select **Continue** to begin the installation process.
 
-6. When prompted, enter your Mac login password to complete the installation.
+6.  When prompted, enter your Mac login password to complete the installation.
 
 ### Configure your Office 365 mailbox for use with the Outlook for Mac desktop client
 
@@ -68,7 +68,7 @@ Use the following steps to setup your Office 365 mailbox within the Outlook for 
 
 4.	Enter your Office 365 email address when prompted, then select **Continue**
 
-5. Finally, enter your Office 365 mailbox password when prompted to complete the setup process.  
+5.  Finally, enter your Office 365 mailbox password when prompted to complete the setup process.  
 
 ### Troubleshooting
 
