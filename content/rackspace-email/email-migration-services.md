@@ -1,12 +1,12 @@
 ---
 permalink: email-migration-services/
-audit_date: '2016-11-03'
+audit_date: '2017-11-03'
 title: Email migration services
 type: article
 created_date: '2013-07-15'
 created_by: Rackspace Support
-last_modified_date: '2017-07-03'
-last_modified_by: William Loy
+last_modified_date: '2020-07-08'
+last_modified_by: Stephanie Fillmon
 product: Rackspace Email
 product_url: rackspace-email
 ---
@@ -21,6 +21,10 @@ you have any questions or concerns.
 - **Difficulty:** Easy
 - **Time needed:** Dependent on migration type
 - **Tools required:** Cloud Office Control Panel access
+
+**Warning**: Special characters in mailbox folder names cause the migration
+to fail. Before migrating your data, be sure to remove any special characters
+from your mailbox folders: `! @ # $ % ^ & * ( ) + = < , > ? / ; : " ' { } [ ] \ | .`
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
