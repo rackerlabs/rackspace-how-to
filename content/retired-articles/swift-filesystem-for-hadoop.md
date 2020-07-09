@@ -6,10 +6,11 @@ type: article
 created_date: '2013-12-13'
 created_by: David Dobbins
 last_modified_date: '2015-09-01'
-last_modified_by: Catherine Richardson
-product: Cloud Servers
-product_url: cloud-servers
+last_modified_by: Stephanie Fillmon
 ---
+
+<!--we don't offer big data solutions in public cloud anymore, so retiring
+per Dan Versons advice-->
 
 The Swift filesystem for Hadoop (swiftfs, for short) is a Hadoop file
 system implementation that allows applications such as MapReduce, Pig,
