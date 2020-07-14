@@ -269,11 +269,8 @@ product_url: dedicated-hosting
 </table>
 <pre>
 
+
 </pre>
-
-&nbsp;
-
-
 <table>
   <tr>
     <th colspan="4"><div align ="center"><b>Endpoint protection</b></div></th>
