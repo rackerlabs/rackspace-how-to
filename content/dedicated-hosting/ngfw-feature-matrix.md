@@ -268,12 +268,12 @@ product_url: dedicated-hosting
   </tr>
 </table>
 <pre>
-</pre>
-<pre>
-
-
 
 </pre>
+
+&nbsp;
+
+
 <table>
   <tr>
     <th colspan="4"><div align ="center"><b>Endpoint protection</b></div></th>
@@ -311,7 +311,7 @@ product_url: dedicated-hosting
     <td></td>
     <td></td>
   </tr>
-    <tr>
+  <tr>
     <td><div align="right">Global Protect IPv6 support</div></td>
     <td style="background-color: red;color:white;"><b>Professional Services required</b></td>
     <td></td>
