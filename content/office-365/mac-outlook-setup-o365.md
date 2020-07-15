@@ -1,7 +1,7 @@
 ---
 permalink: mac-outlook-setup-o365/
-audit_date:
-title: How to setup your Office 365 Mailbox in the Outlook for Mac Desktop Application
+audit_date: '2020-07-15'
+title: Set up your Office 365 mailbox in Outlook for Mac
 type: article
 created_date: '2020-07-07'
 created_by: Kimberly Jay
@@ -11,28 +11,28 @@ product: Office 365
 product_url: office-365
 ---
 
+This article walks you through the steps to install, configure, and perform basic functions within the Outlook for Mac desktop application.
+
 ### Prerequisites
 
 - **Applies to:** User
 - **Difficulty:** Easy
-- **Time Needed:** 20 Minutes for installation and initial setup (full propagation of the email may vary based on the size of the mailbox)
-- **Tools Needed:** Outlook for Mac desktop application installed (This article will not cover the pre-installed native Apple Mail application)
+- **Time Needed:** 20 Minutes for installation and initial setup. Full propagation of email varies based on the size of the mailbox.
+- **Tools Needed:** Outlook for Mac desktop application installed. This article does not cover the pre-installed native Apple Mail application.
 
 For more information about prerequisite terminology, see [Cloud Office support terminology](/how-to/cloud-office-support-terminology).
 
-This following article will walk you through the steps necessary to install, configure, and perform basic functions within the Outlook for Mac desktop application.
-
-### Installation of the Outlook for Mac desktop application  
+### Install Outlook for Mac 
 
 Prior to starting, ensure that your device is on Mac OS x 10.10 or later, as this is a requirement to utilize Office for Mac 2016.
 
-When installing the Outlook for Mac desktop application, there are two options available - the following steps will cover both scenarios:
+When you install Outlook for Mac, there are two options available: a company or personal product key or an Office 365 license that includes a downloadable version of the Office Suite.
 
 If you have a company or personal product key, navigate to the link below, select the appropriate language, and then select **Download**:
 
 https://www.microsoft.com/en-us/download/details.aspx?id=45492
 
-1.  Once the download has completed, open the 'Finder', then go to **Downloads**, and finally double-click **Microsoft_Office_2016_Installer.pkg**.
+1.  After the download has completed, open the 'Finder', then go to **Downloads**, and finally double-click **Microsoft_Office_2016_Installer.pkg**.
 
 2.  On the first installation screen, select **Continue** to begin the installation process.
 
