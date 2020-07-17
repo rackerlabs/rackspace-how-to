@@ -271,24 +271,6 @@ product_url: dedicated-hosting
 
 
 </pre>
-
-<br />
-
-<table>
-  <tr>
-    <th colspan="4"><div align ="center"><b>Endpoint protection</b></div></th>
-  </tr>
-  <tr>
-    <td><b>Traps</b></td>
-    <td style="background-color: yellow;"><b>Roadmap item</b></td>
-    <td style="background-color: yellow;"><b>Roadmap item</b></td>
-    <td><b>Anti-malware protection (AMP for endpoints)</b></td>
-  </tr>
-</table>
-<pre>
-
-
-</pre>
 <table>
   <tr>
     <th colspan="4"><div align ="center"><b>Advanced connectivity options</b></div></th>
@@ -340,6 +322,21 @@ product_url: dedicated-hosting
   </tr>
   <tr>
     <td colspan="4">IPsec DMVPN is not supported.</td>
+  </tr>
+</table>
+<pre>
+
+
+</pre>
+<table>
+  <tr>
+    <th colspan="4"><div align ="center"><b>Endpoint protection</b></div></th>
+  </tr>
+  <tr>
+    <td><b>Traps</b></td>
+    <td style="background-color: yellow;"><b>Roadmap item</b></td>
+    <td style="background-color: yellow;"><b>Roadmap item</b></td>
+    <td><b>Anti-malware protection (AMP for endpoints)</b></td>
   </tr>
 </table>
 <pre>
