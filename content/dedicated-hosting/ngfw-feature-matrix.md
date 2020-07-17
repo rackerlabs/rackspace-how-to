@@ -266,12 +266,10 @@ product_url: dedicated-hosting
     <td><b>File-type filtering and blocking</b></td>
   </tr>
 </table>
-.
-.
-.
 <pre>
-
-
+.
+.
+.
 </pre>
 <table>
   <tr>
@@ -284,9 +282,6 @@ product_url: dedicated-hosting
     <td><b>Anti-malware protection (AMP for endpoints)</b></td>
   </tr>
 </table>
-x
-x
-x
 <pre>
 
 
