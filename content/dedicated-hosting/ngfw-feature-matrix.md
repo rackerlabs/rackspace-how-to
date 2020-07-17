@@ -211,6 +211,68 @@ product_url: dedicated-hosting
 </pre>
 <table>
   <tr>
+    <th colspan="4"><div align="center"><b>MALWARE protection</b></div></th>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><b>Wildfire</b></div></td>
+    <td colspan="2"><div align="center"><b>Threat Grid Cloud</b></div></td>
+  </tr>
+  <tr>
+    <td><b>Wildfire basic</b></td>
+    <td style="background-color: green;color:white;"><b>Supported (Default template)</b></td>
+    <td style="background-color: green;color:white;"><b>Supported on Firepower hardware only</b></td>
+    <td><b>Anti-malware protection (AMP for networks)</b></td>
+  </tr>
+  <tr>
+    <td><b>Wildfire signature updates</b> (24-48 hours)</td>
+    <td style="background-color: green;color:white;"><b>Supported</b></td>
+    <td style="background-color: red; green;color:white;"><b>Not supported on ASA-X hardware</b></td>
+    <td><b>Anti-malware protection (AMP for networks)</b></td>
+  </tr>
+  <tr>
+    <td><b>Instant signature updates</b> (Less than 5 minutes)</td>
+    <td style="background-color: green;color:white;"><b>Supported</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Wildfire API</b></td>
+    <td style="background-color: yellow;"><b>Roadmap item</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Wildfire appliance</b></td>
+    <td style="background-color: yellow;"><b>Roadmap item</b></td>
+    <td style="background-color: yellow;"><b>Roadmap item</b></td>
+    <td><b>Threat Grid appliance</b></td>
+  </tr>
+  <tr>
+    <td><b>Autofocus</td>
+    <td style="background-color: yellow;"><b>Roadmap item</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Wildfire advanced file support</b></td>
+      <td style="background-color: yellow;"><b>Roadmap item</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b>Data filtering and file blocking</b></td>
+    <td style="background-color: green;color:white;"><b>Supported (default template)</b></td>
+    <td style="background-color: green;color:white;"><b>Supported</b></td>
+    <td><b>File-type filtering and blocking</b></td>
+  </tr>
+</table>
+.
+<pre>
+
+
+</pre>
+<table>
+  <tr>
     <th colspan="4"><div align ="center"><b>Endpoint protection</b></div></th>
   </tr>
   <tr>
@@ -275,67 +337,6 @@ product_url: dedicated-hosting
   </tr>
   <tr>
     <td colspan="4">IPsec DMVPN is not supported.</td>
-  </tr>
-</table>
-<pre>
-
-
-</pre>
-<table>
-  <tr>
-    <th colspan="4"><div align="center"><b>MALWARE protection</b></div></th>
-  </tr>
-  <tr>
-    <td colspan="2"><div align="center"><b>Wildfire</b></div></td>
-    <td colspan="2"><div align="center"><b>Threat Grid Cloud</b></div></td>
-  </tr>
-  <tr>
-    <td><b>Wildfire basic</b></td>
-    <td style="background-color: green;color:white;"><b>Supported (Default template)</b></td>
-    <td style="background-color: green;color:white;"><b>Supported on Firepower hardware only</b></td>
-    <td><b>Anti-malware protection (AMP for networks)</b></td>
-  </tr>
-  <tr>
-    <td><b>Wildfire signature updates</b> (24-48 hours)</td>
-    <td style="background-color: green;color:white;"><b>Supported</b></td>
-    <td style="background-color: red; green;color:white;"><b>Not supported on ASA-X hardware</b></td>
-    <td><b>Anti-malware protection (AMP for networks)</b></td>
-  </tr>
-  <tr>
-    <td><b>Instant signature updates</b> (Less than 5 minutes)</td>
-    <td style="background-color: green;color:white;"><b>Supported</b></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><b>Wildfire API</b></td>
-    <td style="background-color: yellow;"><b>Roadmap item</b></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><b>Wildfire appliance</b></td>
-    <td style="background-color: yellow;"><b>Roadmap item</b></td>
-    <td style="background-color: yellow;"><b>Roadmap item</b></td>
-    <td><b>Threat Grid appliance</b></td>
-  </tr>
-  <tr>
-    <td><b>Autofocus</td>
-    <td style="background-color: yellow;"><b>Roadmap item</b></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><b>Wildfire advanced file support</b></td>
-      <td style="background-color: yellow;"><b>Roadmap item</b></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><b>Data filtering and file blocking</b></td>
-    <td style="background-color: green;color:white;"><b>Supported (default template)</b></td>
-    <td style="background-color: green;color:white;"><b>Supported</b></td>
-    <td><b>File-type filtering and blocking</b></td>
   </tr>
 </table>
 <pre>
