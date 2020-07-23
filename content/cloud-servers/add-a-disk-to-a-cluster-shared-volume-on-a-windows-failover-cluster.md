@@ -1,34 +1,30 @@
 ---
-permalink: adding-a-disk-to-a-cluster-shared-volume-on-a-windows-failover-cluster/
-audit_date:
-title: 'Adding a disk to a cluster shared volume on a Windows failover cluster'
+permalink: add-a-disk-to-a-cluster-shared-volume-on-a-windows-failover-cluster/
+audit_date: '2020-07-23'
+title: 'Add a disk to a cluster shared volume on a Windows failover cluster'
 type: article
 created_date: '2020-07-19'
 created_by: Travis Gentry
-last_modified_date:
-last_modified_by:
+last_modified_date: '2020-07-23'
+last_modified_by: Stephanie Fillmon
 product: Cloud Product
 product_url: cloud-product
 ---
 
-### Add a disk to a cluster shared volume on a Windows failover cluster
-
-This article describes the process of adding a disk to a cluster shared volume on a Windows failover cluster.
+This article describes how to add a disk to a cluster shared volume on a Windows&reg; failover cluster.
 
 ### Prerequisites
-   - For Windows Server 2012 and earlier, the disk to be added must be a basic disk and partitioned with NTFS.
-   - For Windows Server 2012 R2 and later, the disk to be added must be a basic disk and partitioned with either NTFS or ReFS.
-   - The drive letter of the system disk for all cluster nodes must be the same.
-   - The NTLM authentication protocol needs to be enabled for all cluster nodes (enabled by default).
 
-
+- For Windows Server&reg; 2012 and earlier, the disk you want to add must be a basic disk and partitioned with NTFS.
+- For Windows Server 2012 R2 and later, the disk you want to add must be a basic disk and partitioned with either NTFS or ReFS.
+- The drive letter of the system disk for all cluster nodes must be the same.
+- The NTLM authentication protocol must enabled for all cluster nodes. This protocol is enabled by default.
 
 ### Limitations
 
 The cluster shared volume cannot be used as a cluster quorum witness disk.
 
-> **Note:** You will need to be a user with administrative privileges for the server in order to make these changes.
-
+**Note:** You must be a user with administrative privileges for the server in order to make these changes.
 
 
 ### Add the disk to Available Storage in Failover Cluster Manager
