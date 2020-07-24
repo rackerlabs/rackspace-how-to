@@ -1,87 +1,108 @@
 ---
 permalink: install-nextcloud-on-debian-10/
-audit_date:
+audit_date: '2020-07-24'
 title: 'Install Nextcloud on Debian 10'
 type: article
 created_date: '2020-07-22'
 created_by: Rackspace Support
-last_modified_date:
-last_modified_by:
+last_modified_date: '2020-07-24'
+last_modified_by: Stephanie Fillmon
 product: Cloud Product
 product_url: cloud-product
 ---
 
-Nextcloud is a file sharing software similar to Google drive or Dropbox. The difference is you have full control as Nextcloud is open source and the server can be installed on your own machine. In this article, we’ll be installing Nextcloud on a Debian 10 Cloud Server.
+Nextcloud is a file sharing software similar to Google drive or Dropbox. Because Nextcloud is open source, you
+have full control and the server can be installed on your own machine. This article describes how
+to install Nextcloud on a Debian 10 Cloud Server.
 
 ### Prerequisites
 
-A Cloud Server running Debian 10
+- A Cloud Server running Debian 10
+- Access to the root or admin user
 
-Access to the root or admin user
+### Install and configure a LAMP stack
 
-Install LAMP Stack
-First thing to do is install and configure the LAMP (Linux Apache Mariadb PHP)  stack on your server.
+Before you install Nextcloud, you must have a LAMP (Linux, Apache, MySQL or MariaDB, and PHP) stack on your server.
 
-### Step 1: Install software
-apt install apache2 mariadb-server libapache2-mod-php7.3 unzip
+At the command line, enter the following commands to install Apache, MySQL, and PHP:
 
-apt install php7.3-gd php7.3-json php7.3-mysql php7.3-curl php7.3-mbstring
+    apt install apache2 mariadb-server libapache2-mod-php7.3 unzip
 
-apt install php7.3-intl php-imagick php7.3-xml php7.3-zip
+    apt install php7.3-gd php7.3-json php7.3-mysql php7.3-curl php7.3-mbstring
 
-###Step 2: MySQL secure installation
-It’s a good idea to always run the mysql_secure_installation command right after installing MariaDB or MySQL in order to set a root password, disallow remote root logins, and delete the test database.
+    apt install php7.3-intl php-imagick php7.3-xml php7.3-zip
 
-mysql_secure_installation
-Step 3: Database configuration
-Enter your MariaDB installation.
 
-mysql
-Create a nextcloud database.
+After you install MySQL or MariaDB, you should run the following command to secure your database:
 
-CREATE DATABASE nextcloud;
-Create a nextcloud user. Make sure to replace <PASSWORD> with a secure password of your choosing.
+    mysql_secure_installation
 
-CREATE USER 'nextcloud'@'localhost' IDENTIFIED BY '<PASSWORD>';
-Give nextcloud user access to the nextcloud database.
 
-GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextcloud'@'localhost';
-Flush privileges.
+This command enables you to set a root password, disallow remote root logins, and delete the test database.
 
-FLUSH PRIVILEGES;
-Exit MariaDB.
+Configure your database by using the following steps:
 
-exit
+1. Enter your MySQL or MariaDB installation by using the following command:
+
+       mysql
+
+2. Create a database for Nextcloud:
+
+       CREATE DATABASE nextcloud;
+
+3. Create a `nextcloud` user. Replace <PASSWORD> with a secure password of your choosing.
+
+       CREATE USER 'nextcloud'@'localhost' IDENTIFIED BY '<PASSWORD>';
+
+4. Give nextcloud user access to the nextcloud database:
+
+       GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextcloud'@'localhost';
+
+5. Flush privileges:
+
+       FLUSH PRIVILEGES;
+
+6. Exit MySQL or MariaDB:
+
+       exit
+
+Take note of these credential settings. You need them to access the database in Nextcloud.
 
 ### Install Nextcloud
 
 Now that we have our base LAMP stack set up, we can move on to installing Nextcloud itself.
+Use the commands in the following steps to download and install Nextcloud:
 
-### Step 1: Download and prepare Nextcloud
+1. Change to the document root directory.:
 
-Change to the document root directory.
+       cd /var/www/html/
 
-cd /var/www/html/
-Download the latest version of Nextcloud.
+2. Download the latest version of Nextcloud:
 
-wget https://download.nextcloud.com/server/releases/latest.zip
-Decompress the file.
+       wget https://download.nextcloud.com/server/releases/latest.zip
 
-unzip latest.zip
-Remove the compressed file.
+3. Decompress the file:
 
-rm latest.zip
-Give ownership to the web server.
+       unzip latest.zip
 
-chown -R www-data:www-data nextcloud/
-Restart Apache.
+4. Remove the compressed file:
 
-systemctl restart apache2
+       rm latest.zip
 
-### Step 2: Install Nextcloud through web browser
+5. Give ownership to the web server:
 
-In your web browser on your local machine, navigate to http://<internet_ip_address>/nextcloud
+       chown -R www-data:www-data nextcloud/
 
-Here, you’ll be able to create your admin user and configure database access. As far as the admin account, choose any secure username/password combination. For the database, enter the same credentials we configured earlier in the Database configuration step. It should be nextcloud as the user and database and the password you set.
+6. Restart Apache:
 
-Nextcloud will then install the base system as well as a few apps you may find useful. Once this is done, you’ll be greeted with the Nextcloud panel and will be ready to upload some files!
+       systemctl restart apache2
+
+7. In your web browser on your local machine, navigate to http://<internet_ip_address>/nextcloud
+
+   Here, you can create create your admin user and configure database access. For the admin
+   account, choose any secure username and password combination. For the database, enter the same
+   credentials that you configured earlier. It should be nextcloud as
+   the user and database and the password you set.
+
+Nextcloud then installs the base system as well as a few applicationss you might find useful. After this is
+finished, you’ll be greeted with the Nextcloud panel and will be ready to upload some files.
