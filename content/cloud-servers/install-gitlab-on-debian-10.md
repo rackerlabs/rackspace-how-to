@@ -11,20 +11,20 @@ product: Cloud Product
 product_url: cloud-product
 ---
 
-GitLab Community Edition, or GitLab CE, is an open-source web-based Git repository featuring
+GitLab&reg; Community Edition, or GitLab CE, is an open-source web-based Git repository featuring
 a wiki and issue tracking. This article describes how to install GitLab CE and configure
-Secure Socket Layer (SSL) on a Debian 10 cloud server.
+Secure Sockets Layer (SSL) on a Debian&reg; 10 cloud server.
 
 ### Prerequisites:
 
-- A Debian 10 server with at least 8GB of ram
+- A Debian 10 server with at least 8GB of RAM
 - A domain name pointed at your server
 
-#### Install Dependencies
+#### Install dependencies
 
 There are a few dependencies that you must install before you install GitLab. 
 
-First, at the command line, update your apt cache with the following command:
+First, at the command line, update your `apt` cache with the following command:
 
     sudo apt update
 
@@ -36,46 +36,48 @@ During the postfix installation, select **Internet Site**. On the next page, ent
 
 ### Install GitLab CE
 
-After you finish installing the dependencies, change directory to **/tmp**:
+After you finish installing the dependencies, perform teh following steps:
 
-    cd /tmp
+1. Change directory to **/tmp**:
+
+       cd /tmp
     
-Run the repository script from **gitlab.com**:
+2. Run the repository script from **gitlab.com**:
 
-    wget https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
+       wget https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh
 
-Install the repository by using the following command:
+3. Install the repository by using the following command:
 
-    sudo bash script.deb.sh
+       sudo bash script.deb.sh
 
-Then, install GitLab CE:
+4. Then, install GitLab CE:
 
-    sudo apt install gitlab-ce
+       sudo apt install gitlab-ce
 
 ### Configure GitLab
 
 After the command to install GitLab CE, you should see a warning about setting your domain name. While
-fixing that, we’ll also go ahead and enable SSL with `letsencrypt`. Open the GitLab configuration 
-file with a text editor. This example uses `nano`.
+fixing that, go ahead and enable SSL with `letsencrypt`. Perform the following steps:
 
-    sudo nano /etc/gitlab/gitlab.rb
+1. Open the GitLab configuration file with a text editor. This example uses `nano`.
 
-Find the `external_url field` and update it to match your domain name, changing http to https.
-It should look similar to the following example:
+       sudo nano /etc/gitlab/gitlab.rb
 
-    external_url 'https://example.com'
+2. Find the `external_url field` and update it to match your domain name, changing http to https.
+   It should look similar to the following example:
 
-Next, look for the `letsencrypt[‘contact_emails’]` field. The email addresses listed in this field
-are alerted if there is ever a problem with your SSL certificate. It should look similar
-to the following example:
+       external_url 'https://example.com'
 
-    letsencrypt['contact_emails'] = ['bob@example.com']
+3. Look for the `letsencrypt[‘contact_emails’]` field. If there is ever a problem with your SSL
+   certificate, the system alerts the email addresses listed in this field. It should look similar
+   to the following example:
 
-Save the file and exit.
+       letsencrypt['contact_emails'] = ['bob@example.com']
 
-Now we’ll reconfigure GitLab to have it read the new configuration
-file. This part may take a few minutes.
+4. Save the file and exit.
 
-    sudo gitlab-ctl reconfigure
+5. Reconfigure GitLab to have it read the new configuration file. This part may take a few minutes.
 
-After the reconfiguration is finished, navigate to your domain name in your web browser to start using GitLab CE.
+       sudo gitlab-ctl reconfigure
+
+After the reconfiguration finishes, navigate to your domain name in your web browser to start using GitLab CE.
