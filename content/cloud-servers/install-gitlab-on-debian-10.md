@@ -54,16 +54,28 @@ Then, install GitLab CE:
 
 ### Configure GitLab
 
-After the last command, you should have gotten a warning about setting your domain name. While fixing that, we’ll also go ahead and enable SSL with letsencrypt. Open the gitlab configuration file with nano:
+After the command to install GitLab CE, you should see a warning about setting your domain name. While
+fixing that, we’ll also go ahead and enable SSL with `letsencrypt`. Open the GitLab configuration 
+file with a text editor. This example uses `nano`.
 
-sudo nano /etc/gitlab/gitlab.rb
-Here you’re looking for the external_url field. Update it to match your domain name and change http to https. It should look something like this once done.
+    sudo nano /etc/gitlab/gitlab.rb
 
-external_url 'https://example.com'
-Next, look for the letsencrypt[‘contact_emails’] field. The email addresses here will be alerted if there is ever a problem with your SSL certificate. Once done, it should look something like this:
+Find the `external_url field` and update it to match your domain name, changing http to https.
+It should look similar to the following example:
 
-letsencrypt['contact_emails'] = ['bob@example.com']
-Save the file and exit. Now we’ll reconfigure gitlab to have it re-read the new configuration file. This part may take a few minutes.
+    external_url 'https://example.com'
 
-sudo gitlab-ctl reconfigure
-Once the reconfiguration is finished, navigate to your domain name in your web browser to start using GitLab CE!
+Next, look for the `letsencrypt[‘contact_emails’]` field. The email addresses listed in this field
+are alerted if there is ever a problem with your SSL certificate. It should look similar
+to the following example:
+
+    letsencrypt['contact_emails'] = ['bob@example.com']
+
+Save the file and exit.
+
+Now we’ll reconfigure GitLab to have it read the new configuration
+file. This part may take a few minutes.
+
+    sudo gitlab-ctl reconfigure
+
+After the reconfiguration is finished, navigate to your domain name in your web browser to start using GitLab CE.
