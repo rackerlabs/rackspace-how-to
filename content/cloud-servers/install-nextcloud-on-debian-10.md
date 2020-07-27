@@ -46,17 +46,19 @@ Configure your database by using the following steps:
 
        mysql
 
-2. Create a database for Nextcloud:
+2. Create a database for Nextcloud. Replace <database> with a database name of your choice. We
+   recommend choosing a database name that clearly indicates the purpose of the database.
 
-       CREATE DATABASE nextcloud;
+       CREATE DATABASE <database>;
 
-3. Create a user for the new database. Replace <PASSWORD> with a secure password of your choice.
+3. Create a user for the new database. Replace <dbUser> with a username and <PASSWORD> with a
+   secure password of your choice.
 
-       CREATE USER 'nextcloud'@'localhost' IDENTIFIED BY '<PASSWORD>';
+       CREATE USER '<dbUser>'@'localhost' IDENTIFIED BY '<PASSWORD>';
 
-4. Give the **nextcloud** user access to the **nextcloud** database:
+4. Give the <dbUser> user access to the <database> database:
 
-       GRANT ALL PRIVILEGES ON nextcloud.* TO 'nextcloud'@'localhost';
+       GRANT ALL PRIVILEGES ON <database>.* TO '<dbUser>'@'localhost';
 
 5. Flush privileges:
 
@@ -101,8 +103,7 @@ Use the commands in the following steps to download and install Nextcloud:
 
    Here, you can create the admin user and configure database access. For the admin
    account, choose any secure username and password combination. For the database, enter the same
-   credentials that you configured earlier. The user should be **nextcloud** with the database and the
-   password you set.
+   credentials that you configured earlier. 
 
 Nextcloud then installs the base system as well as a few applications you might find useful. After this
 finishes, the Nextcloud panel displays and you are ready to upload some files.
