@@ -24,7 +24,7 @@ describes how to install Nextcloud on a Debian&reg; 10 cloud server.
 
 Before you install Nextcloud, you must have a LAMP (Linux&reg;, Apache&reg;, MySQL&reg; or MariaDB&reg;, and PHP) stack on your server.
 
-At the command line, enter the following commands to install Apache, MySQL, and PHP:
+At the command line, enter the following commands to install Apache, MariaDB, and PHP:
 
     apt install apache2 mariadb-server libapache2-mod-php7.3 unzip
 
@@ -33,7 +33,7 @@ At the command line, enter the following commands to install Apache, MySQL, and 
     apt install php7.3-intl php-imagick php7.3-xml php7.3-zip
 
 
-After you install MySQL or MariaDB, you should run the following command to secure your database:
+After you install MariaDB, you should run the following command to secure your database:
 
     mysql_secure_installation
 
@@ -42,7 +42,7 @@ This command enables you to set a root password, disallow remote root logins, an
 
 Configure your database by using the following steps:
 
-1. Enter your MySQL or MariaDB installation by using the following command:
+1. Enter your MariaDB installation by using the following command:
 
        mysql
 
@@ -64,7 +64,7 @@ Configure your database by using the following steps:
 
        FLUSH PRIVILEGES;
 
-6. Exit MySQL or MariaDB:
+6. Exit MariaDB:
 
        exit
 
