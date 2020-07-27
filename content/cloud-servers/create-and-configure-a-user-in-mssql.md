@@ -1,7 +1,7 @@
 ---
-permalink: creating-and-configuring-a-user-in-mssql/
+permalink: create-and-configure-a-user-in-mssql/
 audit_date: '2020-07-27'
-title: Create and Configure a User in MSSQL
+title: Create and configure a user in MSSQL
 type: article
 created_date: '2011-04-04'
 created_by: Rackspace Support
@@ -11,21 +11,21 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Use the following steps to create and configure a user in MSSQL:
+Use the following steps to create and configure a user in MSSQL&reg;:
 
-1. Open SQL Server Management Studio (SSMS).
+1. Open the Microsoft &reg; **SQL Server&reg; Management Studio** (SSMS).
 
-2. Connect to SQL Server using your log in information.
+2. Connect to SQL Server by using your login information.
 
 3. In the left-hand panel, expand **Security > Logins**.
 
-4. Right click **Logins** and select **New Login** from the drop-down menu.
+4. Right-click **Logins** and select **New Login** from the drop-down menu.
 
-5. Assign a Login name and select the authentication method and default database/language.
+5. Assign a login name and select the authentication method and default database or language.
 
    If you are using SQL authentication, you must enter an initial password and choose the
-   enforcement options for password policy and expiration as well as whether or not the user will
-   need to change their password when they log in.
+   enforcement options for password policy and expiration as well as whether or not the user
+   needs to change their password when they log in.
 
    <img src="{% asset_path cloud-servers/creating-and-configuring-a-user-in-mssql/ssmsnewlogin1.PNG %}" alt="ssmsnewlogin1.PNG" />
 
@@ -34,19 +34,19 @@ Use the following steps to create and configure a user in MSSQL:
 
 7. In the left-hand panel, click **Securables** and then click **Search**.
 
-   The Add Objects dialog box displays, where you can choose specific objects, objects of a
-   certain type or the server itself. Select one and click **OK**.
+   The **Add Objects** dialog box displays, where you can choose specific objects, objects of a
+   certain type, or the server itself. Select one and click **OK**.
 
 8. On the **Securables** page, select **Grant**, **With Grant**, or **Deny** as necessary for any of the
    objects in the explicit box.
 
    **Grant** gives access to the securable, **With Grant** allows the user to grant access to the
    securable, and **Deny** expressly denies permission to the securable no matter what roles or
-   permissions the user may have.
+   permissions the user might have.
 
    <img src="{% asset_path cloud-servers/creating-and-configuring-a-user-in-mssql/ssmsnewlogin3.PNG %}" alt="ssmsnewlogin3.PNG" />
 
-9. In the left-hand panel, click **Status** to grant or deny permission to the Database Engine,
+9. In the left-hand panel, click **Status** to grant or deny permission to the database engine,
    enable or disable the login, and to unlock the account should it get
    locked out.
 
