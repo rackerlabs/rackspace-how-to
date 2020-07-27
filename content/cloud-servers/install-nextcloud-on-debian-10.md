@@ -99,7 +99,7 @@ Use the commands in the following steps to download and install Nextcloud:
 
        systemctl restart apache2
 
-7. In the web browser on your local machine, navigate to **http://<internet_ip_address>/nextcloud**.
+7. In the web browser on your local machine, navigate to `http://<internet_ip_address>/nextcloud`.
 
    Here, you can create the admin user and configure database access. For the admin
    account, choose any secure username and password combination. For the database, enter the same
