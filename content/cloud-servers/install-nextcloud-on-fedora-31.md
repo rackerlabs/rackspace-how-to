@@ -111,7 +111,7 @@ Use the commands in the following steps to download and install Nextcloud:
 
        firewall-cmd --reload
 
-8. In your web browser on your local machine, navigate to **http://<internet_ip_address>/nextcloud**.
+8. In your web browser on your local machine, navigate to `http://<internet_ip_address>/nextcloud`.
 
    Here, you can create the admin user and configure database access. For the admin
    account, choose any secure username and password combination.
