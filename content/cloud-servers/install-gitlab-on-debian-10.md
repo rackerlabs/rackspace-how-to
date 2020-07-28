@@ -36,7 +36,7 @@ During the postfix installation, select **Internet Site**. On the next page, ent
 
 ### Install GitLab CE
 
-After you finish installing the dependencies, perform teh following steps:
+After you finish installing the dependencies, perform the following steps:
 
 1. Change directory to **/tmp**:
 
