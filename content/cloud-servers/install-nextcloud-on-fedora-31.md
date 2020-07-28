@@ -121,4 +121,4 @@ Use the commands in the following steps to download and install Nextcloud:
    Enter the credentials that you configured in the previous section.
 
 Nextcloud then installs the base system as well as a few applications you might find useful. After this
-finishes, the Nextcloud panel displays and you are ready to upload some files.
+finishes, the Nextcloud panel displays, and you are ready to upload some files.
