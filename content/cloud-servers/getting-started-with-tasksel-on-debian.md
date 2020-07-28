@@ -21,15 +21,15 @@ To install Tasksel, execute the following command from the server:
 
 # sudo apt-get install tasksel
 Running Tasksel
-Once Tasksel is installed, run Tasksel with the following command:
+After you install Tasksel, run Tasksel with the following command:
 
 # sudo tasksel
 
 ###Installing Software
 
-After initiating Tasksel, you’ll be brought to a GUI based interface with a list of Tasks you can choose to install to your server. Use the ARROW KEYS to move your cursor, and the SPACEBAR to check a box next to the Task you wish to install. Once you’ve selected the software, press ENTER.
+After initiating Tasksel, a GUI-based interface appears that contains a list of Tasks you can install to your server. Use the ARROW KEYS to move your cursor, and the SPACEBAR to check a box next to the Task you want to install. After you’ve selected the software, press ENTER.
 
- As the software is installed, you’ll be given a progress bar. Once Tasksel returns you to the command prompt, your software should be installed.
+You will see a progress bar as the software installs. When Tasksel returns you to the command prompt, your software is installed.
 
 # sudo service apache2 status
 ● apache2.service - The Apache HTTP Server
@@ -51,9 +51,9 @@ Feb 25 18:57:30 tasksel systemd[1]: Starting The Apache HTTP Server...
 Feb 25 18:57:30 tasksel systemd[1]: Started The Apache HTTP Server.
 
 ###Tasksel Options
-For more information on the packages available via Tasksel, you can run the following command:
+For more information about the packages available via Tasksel, run the following command:
 
 # sudo tasksel --list-tasks
-Further information on Tasksel and it’s features can be found in the ‘man‘ pages for the service:
+Refer to the 'man' pages for the service for additional information about Tasksel and its features:
 
 # sudo man tasksel
