@@ -1,17 +1,17 @@
 ---
 permalink: getting-started-with-tasksel-on-debian/
-audit_date:
+audit_date: 
 title: 'Getting Started with Tasksel on Debian'
 type: article
 created_date: '2020-07-24'
 created_by: Rackspace Support
-last_modified_date:
-last_modified_by:
+last_modified_date: '2020-07-28'
+last_modified_by: Chris Moyer
 product: Cloud Product
 product_url: cloud-product
 ---
 
-Tasksel is a Debian/Ubuntu tool that allows you to install multiple related packages as coordinated “tasks” onto your server. For example, instead of going step-by-step and installing each part of a LAMP stack, you could have Tasksel install all the parts of the LAMP stack for you in a single keystroke.
+Tasksel is a Debian/Ubuntu tool that allows you to install multiple related packages as coordinated tasks onto your server. For example, instead of going step-by-step and installing each part of a LAMP stack, you could have Tasksel install all the parts of the LAMP stack for you in a single keystroke.
 
 ###Prerequisites:
 •Debian Server
