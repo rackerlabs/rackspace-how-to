@@ -7,8 +7,8 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date:
 last_modified_by:
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Froxlor is an open-source server management software designed to simplify server management through a web interface. This guide will walk you through installing Froxlor on a CentOS 8 server.
@@ -29,7 +29,7 @@ systemctl start mariadb
 systemctl enable mariad
 Access your local MariaDB installation with the MySQL command:
 
-###mysql
+### mysql
 
 In the MySQL prompt, run these two commands to set the root password. Make sure to replace <PASSWORD> with the password you choose.
 
@@ -43,7 +43,7 @@ We’ll download and install Froxlor in the /var/www/html/  directory. Change di
 
 cd /var/www/html
 
-###Download Froxlor:
+### Download Froxlor:
 
 wget http://files.froxlor.org/releases/froxlor-latest.tar.gz
 
@@ -59,7 +59,7 @@ Change ownership to apache:
 
 chown -R apache:apache /var/www/html/froxlor
 
-###Firewall
+### Firewall
 
 Before we can proceed, we need to open up ports 80 and 443 in the firewall.
 
