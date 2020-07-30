@@ -1,59 +1,84 @@
 ---
 permalink: install-gitlab-on-centos-7/
-audit_date:
+audit_date: '2020-07-30'
 title: 'Install GitLab on CentOS 7'
 type: article
 created_date: '2020-07-22'
 created_by: Rackspace Support
-last_modified_date:
-last_modified_by:
-product: Cloud Product
-product_url: cloud-product
+last_modified_date: '2020-07-30'
+last_modified_by: Stephanie Fillmon
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
-GitLab Community Edition, or GitLab CE is an open source web based Git repository featuring a wiki and issue tracking. In this guide, we’ll be installing GitLab CE and configuring SSL on a CentOS 7 Cloud Server.
+GitLab&reg; Community Edition, or GitLab CE, is an open-source web-based Git repository featuring
+a wiki and issue tracking. This article describes how to install GitLab CE and configure
+Secure Sockets Layer (SSL) on a CentOS 7 Cloud Server.
 
-###Prerequisites:
-A server with at least 8GB of ram
-A domain name pointed at your server.
+### Prerequisites
 
-###Installing Dependencies
-Before we can install GitLab, there are a few dependencies needed. Install the packages with yum.
+- A CentOS 7 server with at least 8GB of ram
+- A domain name pointed at your server
 
-sudo yum install -y curl policycoreutils-python openssh-server postfix
-Most if not all of these packages will be installed by default in CentOS 7. During the postfix installation, select Internet Site. On the next page, enter your domain name.
+### Install dependencies
 
-Start and enable Postfix:
+There are a few dependencies that you must install before you install GitLab.
+Most if not all of these packages are installed by default in CentOS 7, but you
+want to make sure that they are installed before you try to install GitLab.
+Install the packages with `yum` by using the following command:
 
-sudo systemctl enable postfix && sudo systemctl start postfix
+    sudo yum install -y curl policycoreutils-python openssh-server postfix
 
-###Installing GitLab CE
-Change directory to /tmp:
+During the postfix installation, select **nternet Site**. On the next
+page, enter your domain name. Then, start and enable Postfix:
 
-cd /tmp
-Grab the repository script from gitlab.com:
+    sudo systemctl enable postfix && sudo systemctl start postfix
 
-wget https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh
+### Install GitLab CE
 
-###Install the repository:
+After you finishing installing the dependences, perform the following steps:
 
-sudo bash script.rpm.sh
+1. Change directory to **/tmp**:
 
-###Install GitLab CE:
+       cd /tmp
 
-sudo yum install gitlab-ce
+2. Run the repository script from **gitlab.com**:
 
-###Configuring GitLab
-After the last command, you should have gotten a warning about setting your domain name. While fixing that, we’ll also go ahead and enable SSL with letsencrypt. Open the gitlab configuration file with nano:
+       wget https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh
 
-sudo nano /etc/gitlab/gitlab.rb
-Here you’re looking for the external_url field. Update it to match your domain name and change http to https. It should look something like this once done.
+3. Install the repository:
 
-external_url 'https://example.com'
-Next, look for the letsencrypt[‘contact_emails’] field. The email addresses here will be alerted if there is ever a problem with your SSL certificate. Once done, it should look something like this:
+       sudo bash script.rpm.sh
 
-letsencrypt['contact_emails'] = ['bob@example.com']
-Save the file and exit. Now we’ll reconfigure gitlab to have it re-read the new configuration file. This part may take a few minutes.
+4. Then, install GitLab CE:
 
-sudo gitlab-ctl reconfigure
-Once the reconfiguration is finished, navigate to your domain name in your web browser to start using GitLab CE!
+       sudo yum install gitlab-ce
+
+
+### Configure GitLab
+
+After the command to install GitLab CE, you should see a warning about setting your domain name. While
+fixing that, go ahead and enable SSL with `letsencrypt`. Perform the following steps:
+
+1. Open the GitLab configuration file with a text editor. This example uses `nano`.
+
+       sudo nano /etc/gitlab/gitlab.rb
+
+2. Find the `external_url field` and update it to match your domain name, changing http to https.
+   It should look similar to the following example:
+
+       external_url 'https://example.com'
+
+3. Look for the `letsencrypt[‘contact_emails’]` field. If there is ever a problem with your SSL
+   certificate, the system alerts the email addresses listed in this field. It should look similar
+   to the following example:
+
+       letsencrypt['contact_emails'] = ['bob@example.com']
+
+4. Save the file and exit.
+
+5. Reconfigure GitLab to have it read the new configuration file. This part may take a few minutes.
+
+       sudo gitlab-ctl reconfigure
+
+After the reconfiguration finishes, navigate to your domain name in your web browser to start using GitLab CE.

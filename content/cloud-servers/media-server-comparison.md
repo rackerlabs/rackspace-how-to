@@ -7,8 +7,8 @@ created_date: '2020-07-24'
 created_by: Rackspace Support
 last_modified_date: '2020-07-29'
 last_modified_by: Chris Moyer
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Are you looking for a media server solution but are not sure which software to choose? Between Plex&reg;,

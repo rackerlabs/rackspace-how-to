@@ -7,8 +7,8 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date: '2020-07-24'
 last_modified_by: Stephanie Fillmon
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Nextcloud&reg; is a file-sharing software similar to Google&reg; Drive or Dropbox&reg;. Because Nextcloud
@@ -103,7 +103,7 @@ Use the commands in the following steps to download and install Nextcloud:
 
    Here, you can create the admin user and configure database access. For the admin
    account, choose any secure username and password combination. For the database, enter the same
-   credentials that you configured earlier. 
+   credentials that you configured earlier.
 
 Nextcloud then installs the base system as well as a few applications you might find useful. After this
 finishes, the Nextcloud panel displays and you are ready to upload some files.

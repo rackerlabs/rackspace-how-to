@@ -7,8 +7,8 @@ created_date: '2020-07-04'
 created_by: Travis Gentry
 last_modified_date: '2020-07-20'
 last_modified_by: Rose Morales
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article describes how to install Internet Information

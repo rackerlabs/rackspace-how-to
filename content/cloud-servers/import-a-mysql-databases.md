@@ -7,8 +7,8 @@ created_date: '2020-03-25'
 created_by: James Andrade
 last_modified_date: '2020-04-02'
 last_modified_by: Cat Lookabaugh
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Before you import a MySQL&reg; backup, you can create a **.my.cnf** file with the root credentials. This file enables you to avoid having to input the password when you restore the databases and also helps if you want to create a cron job script to backup MySQL daily.

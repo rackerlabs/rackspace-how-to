@@ -7,8 +7,8 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date: '2020-07-28'
 last_modified_by: Stephanie Fillmon
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 GitLab&reg; Community Edition, or GitLab CE, is an open-source web-based Git repository featuring
@@ -22,7 +22,7 @@ Secure Sockets Layer (SSL) on an Ubuntu&reg; 18.04 LTS cloud server.
 
 ### Install Dependencies
 
-There are a few dependencies that you must install before you install GitLab. 
+There are a few dependencies that you must install before you install GitLab.
 
 First, at the command line, update your `apt` cache with the following command:
 
@@ -41,7 +41,7 @@ After you finish installing the dependencies, perform the following steps:
 1. Change directory to **/tmp**:
 
        cd /tmp
-       
+
 2. Run the repository script from **gitlab.com**:
 
        wget https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh

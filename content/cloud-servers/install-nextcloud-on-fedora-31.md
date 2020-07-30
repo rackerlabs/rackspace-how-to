@@ -7,8 +7,8 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date: '2020-07-27'
 last_modified_by: Stephanie Fillmon
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Nextcloud&reg; is a file-sharing software similar to Google&reg; Drive or Dropbox&reg;. Because Nextcloud
@@ -28,18 +28,18 @@ This example uses MariaDB for the database in the stack.
 At the command line, enter the following commands to install Apache, MariaDB, and PHP:
 
     dnf install httpd unzip
-    
+
     dnf install php php-gd php-mbstring php-intl php-mysqlnd php-opcache php-json php-zip php-xml
-    
+
     dnf install mariadb mariadb-server
 
 
 After you install MariaDB, you should run `mysql_secure_installation` to set a root password, disallow remote root logins, and delete the test databases. Use the following commands to start MariaDB and secure the database:
 
     systemctl enable mariadb
-    
+
     systemctl start mariadb
-    
+
     mysql_secure_installation
 
 Next, configure your database by using the following steps:
@@ -96,7 +96,7 @@ Use the commands in the following steps to download and install Nextcloud:
 5. Give ownership to the webserver:
 
        chown -R apache:apache nextcloud/
-       
+
 6. Restart Apache:
 
        systemctl enable httpd

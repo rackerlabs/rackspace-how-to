@@ -7,8 +7,8 @@ created_date: '2020-07-24'
 created_by: Rackspace Support
 last_modified_date: '2020-07-28'
 last_modified_by: Chris Moyer
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Tasksel is a Debian&reg; and Ubuntu&reg; operating system tool that allows you to install multiple related
@@ -24,7 +24,7 @@ You need a Debian or Ubuntu operating system server.
 To install Tasksel, execute the following command from the server:
 
     sudo apt-get install tasksel
-    
+
 ### Run Tasksel
 
 After you install Tasksel, run Tasksel with the following command:
@@ -41,7 +41,7 @@ As the software installs, a progress bar displays. When the installation complet
 command prompt.
 
     # sudo service apache2 status
-    
+
     apache2.service - The Apache HTTP Server
     Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
     Drop-In: /lib/systemd/system/apache2.service.d

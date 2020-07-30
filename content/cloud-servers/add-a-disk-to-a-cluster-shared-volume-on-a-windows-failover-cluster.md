@@ -7,8 +7,8 @@ created_date: '2020-07-19'
 created_by: Travis Gentry
 last_modified_date: '2020-07-24'
 last_modified_by: Stephanie Fillmon
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article describes how to add a disk to a cluster shared volume on a Windows&reg; failover cluster.
@@ -40,7 +40,7 @@ You cannot use the cluster shared volume as a cluster quorum witness disk.
 5. Select the disk you want to add from the list and then click **OK**.
 
 
-You can now add the disk, assigned to the *Available Storage* group, to the Cluster Shared Volume. 
+You can now add the disk, assigned to the *Available Storage* group, to the Cluster Shared Volume.
 
 
 ### Add the disk in Available Storage to the Cluster Shared Volume
