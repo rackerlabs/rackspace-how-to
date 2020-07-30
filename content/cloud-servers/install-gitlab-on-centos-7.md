@@ -13,30 +13,30 @@ product_url: cloud-servers
 
 GitLab&reg; Community Edition, or GitLab CE, is an open-source web-based Git repository featuring
 a wiki and issue tracking. This article describes how to install GitLab CE and configure
-Secure Sockets Layer (SSL) on a CentOS 7 Cloud Server.
+Secure Sockets Layer (SSL) on a CentOS&reg; 7 Cloud Server.
 
 ### Prerequisites
 
-- A CentOS 7 server with at least 8GB of ram
+- A CentOS 7 server with at least 8 GB of RAM
 - A domain name pointed at your server
 
 ### Install dependencies
 
 There are a few dependencies that you must install before you install GitLab.
-Most if not all of these packages are installed by default in CentOS 7, but you
-want to make sure that they are installed before you try to install GitLab.
+CentOS 7 installs most, if not all, of these packages by default, but you
+should ensure that they are installed before you try to install GitLab.
 Install the packages with `yum` by using the following command:
 
     sudo yum install -y curl policycoreutils-python openssh-server postfix
 
-During the postfix installation, select **nternet Site**. On the next
+During the postfix installation, select **Internet Site**. On the next
 page, enter your domain name. Then, start and enable Postfix:
 
     sudo systemctl enable postfix && sudo systemctl start postfix
 
 ### Install GitLab CE
 
-After you finishing installing the dependences, perform the following steps:
+After you finish installing the dependencies, perform the following steps:
 
 1. Change directory to **/tmp**:
 
@@ -57,14 +57,14 @@ After you finishing installing the dependences, perform the following steps:
 
 ### Configure GitLab
 
-After the command to install GitLab CE, you should see a warning about setting your domain name. While
+After you enter the command to install GitLab CE, you should see a warning about setting your domain name. While
 fixing that, go ahead and enable SSL with `letsencrypt`. Perform the following steps:
 
 1. Open the GitLab configuration file with a text editor. This example uses `nano`.
 
        sudo nano /etc/gitlab/gitlab.rb
 
-2. Find the `external_url field` and update it to match your domain name, changing http to https.
+2. Find the `external_url field` and update it to match your domain name, changing `HTTP` to `HTTPS`.
    It should look similar to the following example:
 
        external_url 'https://example.com'
