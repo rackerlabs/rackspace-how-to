@@ -27,7 +27,7 @@ boot disk. So, it might be unclear how to move to a flavor that boots from a vol
 ### Limitations
 
 Cloud images created from large servers don’t allow you to take an image and create a bootable Block Storage
-volume. If the cloud server from which the image was taken has a root disk, or if the image has a `min_disk` parameter
+volume. If you took the image from a cloud server with a root disk, or if the image has a `min_disk` parameter
 larger than 127 GB, you can’t create a volume from that image. If you have a 4GB Standard, an 8GB General
 Purpose server, or anything larger, you fall into this category. 
 
