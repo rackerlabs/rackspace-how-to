@@ -7,13 +7,13 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date:
 last_modified_by:
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Froxlor is an open-source server management software designed to simplify server management through a web interface. This guide will walk you through installing Froxlor on an Ubuntu 18.04 server.
 
-###Prerequisites:
+### Prerequisites:
 
 A Cloud Server Running Ubuntu 18.04
 SSH Access as root or an equally privileged user
@@ -34,7 +34,7 @@ Update package list:
 
 sudo apt update
 
-###Install Froxlor
+### Install Froxlor
 
 With the repo enabled, simply install Froxlor with apt.
 
@@ -59,7 +59,7 @@ Install MySQL-client to access your database from the command line:
 apt install mysql-client
 Once the client is installed, you can access your local database with the MySQL command:
 
-###mysql
+### mysql
 
 In the MySQL prompt, run these two commands to set the root password. Make sure to replace <PASSWORD> with the password you choose.
 
