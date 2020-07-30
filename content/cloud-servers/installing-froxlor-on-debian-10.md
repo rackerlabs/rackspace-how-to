@@ -7,13 +7,13 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date:
 last_modified_by:
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 Froxlor is an open-source server management software designed to simplify server management through a web interface. This guide will walk you through installing Froxlor on a Debian 10 server.
 
-###Prerequisites:
+### Prerequisites:
 
 A Cloud Server Running Debian 10
 SSH Access as root or an equally privileged user
