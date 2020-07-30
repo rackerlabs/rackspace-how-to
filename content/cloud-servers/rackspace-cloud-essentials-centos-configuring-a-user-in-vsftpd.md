@@ -59,3 +59,5 @@ even if the file is going to remain empty:
 After the file is created and you have set up your **chroot_list**, restart vsftpd with the following command:
 
     service vsftpd restart
+
+
