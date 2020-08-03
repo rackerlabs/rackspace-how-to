@@ -15,8 +15,8 @@ Froxlor is an open-source server management software designed to simplify server
 
 ### Prerequisites:
 
-- You need a Linux&reg; server running distribution Debian version 10.
-- A user with SSH administrator privileges.
+- A Linux&reg; server running distribution Debian version 10
+- A user with SSH administrator privileges
 
 ### Froxlor installation
 
@@ -42,7 +42,8 @@ Froxlor is an open-source server management software designed to simplify server
 
 ### Configure Database and Web Server
 
-Froxlor expects the document root of your webserver to be in **/var/www/**. Edit Apache’s configuration file to reflect it.
+Froxlor expects the 
+server's root document to be in **/var/www/**. Edit Apache’s configuration file to reflect it.
 
 1. Open Apache configuration file.
 
@@ -61,6 +62,7 @@ Froxlor expects the document root of your webserver to be in **/var/www/**. Edit
 5. Access the local database with the MySQL command.
 
         mysql
+
 6. Run the following commands to set the root password. Make sure to replace `<PASSWORD>` with the password you choose.
 
         alter user 'root'@'localhost' identified via mysql_native_password;
@@ -76,7 +78,7 @@ Froxlor expects the document root of your webserver to be in **/var/www/**. Edit
 
 10. Click **Click here to continue**.
 
-11. Select your language and input your details. Make sure you give the same MySQL root password you set earlier.
+11. Select a language and input your details. Make sure you give the same MySQL root password you set earlier.
 
 12. Click **Click here to continue**.
 
