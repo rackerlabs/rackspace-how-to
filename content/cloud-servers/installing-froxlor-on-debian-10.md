@@ -1,79 +1,85 @@
 ---
 permalink: installing-froxlor-on-debian-10/
-audit_date:
+audit_date: '2020-07-22'
 title: 'Installing Froxlor on Debian 10'
 type: article
 created_date: '2020-07-22'
 created_by: Rackspace Support
-last_modified_date:
-last_modified_by:
+last_modified_date: '2020-07-31'
+last_modified_by: Rose Morales
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Froxlor is an open-source server management software designed to simplify server management through a web interface. This guide will walk you through installing Froxlor on a Debian 10 server.
+Froxlor is an open-source server management software designed to simplify server management through a web interface. This guide describes how to install Froxlor on a Debian&reg; 10 server.
 
 ### Prerequisites:
 
-A Cloud Server Running Debian 10
-SSH Access as root or an equally privileged user
-Enable Official Froxlor repo
+- You need a Linux&reg; server running distribution Debian version 10.
+- A user with SSH administrator privileges.
 
-Install https support for apt:
+### Froxlor installation
 
-sudo apt install apt-transport-https gnupg
-Add gpg key:
+1. Enable HTTPS (`443`) for Advanced Package Tool (APT), for versions of apt before 1.5. Later versions include https support by default.
 
-wget -O - https://deb.froxlor.org/froxlor.gpg | sudo apt-key add -
-Enable repo:
+        sudo apt install apt-transport-https gnupg
 
-sudo echo "deb https://deb.froxlor.org/debian buster main" > /etc/apt/sources.list.d/froxlor.listdeb https://deb.froxlor.org/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/froxlor.list
-Update package list:
+2. Add GNU Privacy Guard (gpg) key.
 
-sudo apt update
-Install Froxlor
-With the repo enabled, simply install Froxlor with apt.
+        wget -O - https://deb.froxlor.org/froxlor.gpg | sudo apt-key add -
 
-apt install froxlor
-Configure Database and Web Server
-Froxlor expects the document root of your webserver to be in /var/www/. We’ll need to edit Apache’s configuration file to reflect this.
+3. Enable repository.
 
-Open Apache configuration file:
+        sudo echo "deb https://deb.froxlor.org/debian buster main" > /etc/apt/sources.list.d/froxlor.listdeb https://deb.froxlor.org/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/froxlor.list
 
-nano /etc/apache2/sites-enabled/000-default.conf
-Here, you’ll want to find this line:
+4. Update package list.
 
-DocumentRoot /var/www/html
-And change it to this:
+        sudo apt update
 
-DocumentRoot /var/www
-Once done, restart the Apache service to reload the configuration change.
+5. Install Froxlor using apt.
 
-systemctl restart apache2
-Install MySQL-client to access your database from the command line:
+        apt install froxlor
 
-apt install mysql-client
-Once the client is installed, you can access your local database with the MySQL command:
+### Configure Database and Web Server
 
-mysql
-In the MySQL prompt, run these two commands to set the root password. Make sure to replace <PASSWORD> with the password you choose.
+Froxlor expects the document root of your webserver to be in **/var/www/**. Edit Apache’s configuration file to reflect it.
 
-alter user 'root'@'localhost' identified via mysql_native_password;
-alter user 'root'@'localhost' identified by '<PASSWORD>';
-Exit MySQL:
+1. Open Apache configuration file.
 
-exit
-Finish Installation In Browser
-In your web browser, navigate to http://<Internet_IP_address>/froxlor
+        nano /etc/apache2/sites-enabled/000-default.conf
 
-Click Start install.
+2. Find line **DocumentRoot /var/www/html** and replace it with **DocumentRoot /var/www**.
 
+3. Restart the Apache service to reload the configuration change.
 
-All dependencies should be installed and ready to go. Click Click here to continue.
+        systemctl restart apache2
 
+4. Install MySQL-client to access your database from the command line.
 
-Select your language and input your details. Make sure you give the same MySQL root password you set earlier. Click Click here to continue.
+        apt install mysql-client
 
-Froxlor will then finish the install. Once done, click Click here to login.
+5. Access the local database with the MySQL command.
 
-You’ll be greeted with a login screen. Log in and Froxlor is ready to go!
+        mysql
+6. Run the following commands to set the root password. Make sure to replace `<PASSWORD>` with the password you choose.
+
+        alter user 'root'@'localhost' identified via mysql_native_password;
+        alter user 'root'@'localhost' identified by '<PASSWORD>';
+
+7. Exit MySQL.
+
+        exit
+
+8. In your web browser, navigate to http://<Internet_IP_address>/froxlor
+
+9. Click **Start install**.
+
+10. Click **Click here to continue**.
+
+11. Select your language and input your details. Make sure you give the same MySQL root password you set earlier.
+
+12. Click **Click here to continue**.
+
+13. Click **Click here to login**.
+
+14. Log in and proceed with [Foxlor's initial setup](https://support.rackspace.com/how-to/froxlor-initial-setup-and-overview/).
