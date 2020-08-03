@@ -1,7 +1,7 @@
 ---
-permalink: installing-froxlor-on-debian-10/
+permalink: install-froxlor-on-debian-10/
 audit_date: '2020-07-22'
-title: 'Installing Froxlor on Debian 10'
+title: 'Install Froxlor on Debian 10'
 type: article
 created_date: '2020-07-22'
 created_by: Rackspace Support
@@ -11,7 +11,8 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Froxlor is an open-source server management software designed to simplify server management through a web interface. This guide describes how to install Froxlor on a Debian&reg; 10 server.
+Froxlor is an open-source server management software designed to simplify server management through a web interface.
+This guide describes how to install Froxlor on a Debian&reg; 10 server.
 
 ### Prerequisites:
 
@@ -42,10 +43,9 @@ Froxlor is an open-source server management software designed to simplify server
 
 ### Configure Database and Web Server
 
-Froxlor expects the 
-server's root document to be in **/var/www/**. Edit Apache’s configuration file to reflect it.
+Froxlor expects the server's root document to be in **/var/www/**. Edit the Apache&reg; configuration file to reflect this change.
 
-1. Open Apache configuration file.
+1. Open the Apache configuration file.
 
         nano /etc/apache2/sites-enabled/000-default.conf
 
