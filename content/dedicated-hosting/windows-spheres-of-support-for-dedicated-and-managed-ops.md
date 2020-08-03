@@ -117,7 +117,7 @@ The following types of database servers are supported in the indicated areas:
 | MSSQL 2014    |                     |                     | Yes                 | Yes                    | Yes          |              |
 | MSSQL 2016    |                     |                     |                     | Yes                    | Yes          |              |
 | MSSQL 2017    |                     |                     |                     |                        | Yes          | Yes          |
-
+| MSSQL 2019    |                     |                     |                     |                        | Yes          | Yes          |
 
 ## Supported platforms for Microsoft SQL editions
 
