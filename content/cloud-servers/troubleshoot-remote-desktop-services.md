@@ -7,8 +7,8 @@ created_date: '2020-06-10'
 created_by: Paola Howard
 last_modified_date: '2020-06-11'
 last_modified_by: Cat Lookabaugh
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 This article shows you how to troubleshoot problems with Microsoft&reg; Remote Desktop Protocol (RDP).

@@ -1,12 +1,12 @@
 ---
 permalink: vmware-server-virtualization-faq/
-audit_date: '2018-01-29'
+audit_date: '2020-07-29'
 title: VMware Server Virtualization FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2018-01-29'
-last_modified_by: Alexandra Settle
+last_modified_date: '2020-07-29'
+last_modified_by: Cat Lookabaugh
 product: VMware Server Virtualization
 product_url: vmware-server-virtualization
 ---
@@ -27,12 +27,12 @@ Rackspace offers two different solutions for DR:
 
   VM Replication provides geographical redundancy and helps protect
   business-critical VMs in the event of a data center outage or unplanned
-  downtime. Geographical redundancy is a key component to any sound
+  downtime. Geographical redundancy is a key component of any sound
   DR strategy. VM Replication helps protect and recover
   VMware Server Virtualization VMs by easily and cost-effectively
   replicating VMs between our data centers.
 
-#### Are imaged-based backups part of the VMware Server Virtualization offering?
+#### Are image-based backups part of the VMware Server Virtualization offering?
 
 - [Virtual Machine Recovery](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/getting-started/vm-recovery/):
 
@@ -48,15 +48,14 @@ With VMware Server Virtualization, you can use the MyRackspace Web Portal
 to easily administer your hosted environment and resources. Offload the
 maintenance and monitoring of the infrastructure, VMware stack, and Guest
 OS layer to your virtual IT team consisting of VMware Certified Professionals
-and experts in storage, networking and infrastructure, so you can focus more
-on your core business. With industry leading SLAs which include 100% Network
-Uptime Guarantees and 1-Hour Hardware Replacement Guarantees, we can help
-make sure your mission critical applications stay up and running.
-
+and experts in storage, networking, and infrastructure. This way you can focus more
+on your core business. With industry-leading SLAs that include 100% network
+uptime guarantees and one-hour hardware replacement guarantees, we can help
+make sure your mission-critical applications stay up and running.
 
 #### With VMware Server Virtualization, can I log in to the hypervisor?
 
-No. However, you are able to view the performance and other statistics
+No. However, you can view the performance and other statistics
 through the MyRackspace&reg; portal. Contact your Rackspace VMware support team
 for more details.
 
@@ -74,24 +73,23 @@ access to the software, speak to your Rackspace account team about
 
 You can request this through an action in the MyRackspace Portal.
 
-#### Are imaged-based backups part of the VMware Server Virtualization offering?
+#### Are image-based backups part of the VMware Server Virtualization offering?
 
-Yes, they are available for an additional service fee. This is accomplished via VM
-Recovery.
+Yes, they are available for an additional service fee by using VM Recovery.
 
 #### Can I use fault tolerance with my Rackspace VMs?
 
 VMware Server Virtualization does not currently allow VMware vSphere&reg; Storage vMotion&reg;
-and therefore fault tolerance is not enabled.
+so you cannot enable fault tolerance.
 
 #### Can I turn off utility billing for VMs?
 
-You have the ability to suspend the utility billing of virtual machines when
+You can suspend the utility billing of virtual machines when
 they are not in use by powering down VMs through the MyRackspace Portal.
-By powering off a VM from within the OS you will not only generate an
-alert ticket for support to investigate, but the VM will continue billing
-at the daily utility rate. To
-power down VMs through the portal, see [Powering a virtual machine on and off](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#svh-power-vm).
+By powering off a VM from within the OS, you not only generate an
+alert ticket for support to investigate, but the VM continues billing
+at the daily utility rate. To power down VMs through the portal, see
+[Powering a virtual machine on and off](https://developer.rackspace.com/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#svh-power-vm).
 
 #### How are my VMs backed up?
 
@@ -99,12 +97,12 @@ Rackspace can back up VMs through Rackspace Managed Backup service.
 Guest OS agent-based backups are available along with image-level
 backup through the VM Recovery add-on Service.
 
-#### What is a snapshot and how does it work?
+#### What is a snapshot, and how does it work?
 
-Snapshot is a point-in-time delta file to track all changes to a virtual
+A snapshot is a point-in-time delta file to track all changes to a virtual
 machine. Snapshots give you the ability to roll back (Windows
-patching at the disk level). Snapshots are not a permanent backup and
-generally should not be kept for more than 72 hours.
+patching at the disk level), but they are not a permanent backup. You
+generally should not keep them for more than 72 hours.
 
 #### What can I use the MyRackspace Portal for?
 
@@ -124,7 +122,7 @@ generally should not be kept for more than 72 hours.
 #### How do I appropriately size my VMs?
 
 Less is better. It is more important to size VMs closer to what they
-need as opposed to loading in extra capacity that might not be used.
+need as opposed to loading in extra capacity that you might not use.
 Assigning too many CPUs slows performance down. Begin with two CPUs, and go to
 four if necessary. Very rarely start with four or more. Regardless of vendor
 recommendation for a physical environment, virtual CPUs do not map 1 to 1
@@ -144,22 +142,21 @@ cloning, snapshotting, or vMotion.
 To add RAM or CPU to your VM, request a ticket with your Rackspace VMware
 support team through the MyRackspace Portal.
 
-#### What are the differences between snapshot, clones, and templates?
+#### What are the differences between snapshots, clones, and templates?
 
--   **Snapshot** : A snapshot is a point-in-time instance of a VM that
-    can be reverted or remerged (deleted). When a snapshot is taken, the
-    hypervisor software begins recording changes in what is known as a
-    *delta disk*. If the snapshot is reverted, the delta disk is removed
-    and the parent disk is restored, which has the effect of taking the
-    VM back to the instant the snapshot was created. Any subsequent
-    changes after the snapshot no longer exist. If the snapshot is
-    remerged (deleted), the delta disk is merged into the parent disk
-    and the ability to jump back to the snapshot is no longer present.
-    Snapshots are best used in situations such as patching, where a
-    snapshot is reverted or remerged (deleted) depending on
-    patch success. Snapshots are stored with the VM and therefore use
-    your storage allocation. We recommend that you keep
-    snapshots only for two to three days to prevent overuse of the disk.
+-   **Snapshot**: A snapshot is a point-in-time instance of a VM that
+    can be reverted or remerged (deleted). When you take a snapshot, the
+    hypervisor software begins recording changes in the
+    *delta disk*. If you revert the snapshot, the system removes the delta disk
+    and restores the parent disk, which has the effect of taking the
+    VM back to the instant you created the snapshot. Any subsequent
+    changes after the snapshot no longer exist. If you remerge (or delete)
+    the snapshot, the system merges the delta disk into the parent disk,
+    and you can no longer jump back to the snapshot.
+    Use snapshots in situations such as patching, where you revert or remerge
+    (delete) a snapshot depending on the patch success. Snapshots are stored
+    with the VM and therefore use your storage allocation. We recommend that you
+    keep snapshots for only two to three days to prevent overusing the disk.
 -   **Clone**: A clone is a one-to-one image copy of an existing VM. It
     acts independently from a parent VM, but it is an exact copy of the
     parent VM when it is initially created. You can create new VMs from
@@ -168,23 +165,20 @@ support team through the MyRackspace Portal.
     infrastructure, so it doesn't use up your storage allocation. While
     clones can act and operate independently of the parent,
     snapshots cannot.
--   **Template**: A template is a clone that is designed for deployment
+-   **Template**: A template is a clone that is designed for the deployment
     of future VMs. A template is also stored on the Rackspace
     storage infrastructure. You can create one template per VM.
 
-#### Where is data stored if I create a snapshot, copy as clone, or template?
+#### Where is data stored if I create a snapshot, copy as a clone, or template?
 
 -   Snapshots are stored with the parent disk of VM and consume your
-    allocated storage infrastructure. Snapshots must be carefully managed to
-    ensure that they don't consume all the disk space.
--   Clones are stored on the Rackspace infrastructure, so they don't use
-    allocated disk resources. You can create one clone per VM.
--   Templates are stored on the Rackspace infrastructure. You can create
-    one template per VM.
+    allocated storage infrastructure. You must carefully manage snapshots to
+    ensure that they don’t consume all the disk space.
+-   You must have sufficient additional storage to store clones and templates.
 
 #### How can I expand or shrink my virtual disk?
 
-You can expand your virtual disk but you can't shrink it. To expand, submit a ticket and
+You can expand your virtual disk, but you can't shrink it. To expand it, submit a ticket and
 specify the virtual disk that you want expanded.
 
 #### How do I view the performance or monitor my available resources of a VM or host?

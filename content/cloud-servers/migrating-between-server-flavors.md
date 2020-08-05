@@ -1,14 +1,14 @@
 ---
 permalink: migrating-between-server-flavors/
-audit_date:
+audit_date: '2020-07-30'
 title: 'Migrate between server flavors'
 type: article
-created_date: '2020-07-d3'
+created_date: '2020-07-23'
 created_by: Brian Abshier
-last_modified_date:
-last_modified_by:
+last_modified_date: '2020-07-23'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
-product_url: cloud-product
+product_url: cloud-servers
 ---
 
 Within the Rackspace Cloud, you have different server flavors from which to choose. 
@@ -27,7 +27,7 @@ boot disk. So, it might be unclear how to move to a flavor that boots from a vol
 ### Limitations
 
 Cloud images created from large servers don’t allow you to take an image and create a bootable Block Storage
-volume. If the cloud server from which the image was taken has a root disk, or if the image has a `min_disk` parameter
+volume. If you took the image from a cloud server with a root disk, or if the image has a `min_disk` parameter
 larger than 127 GB, you can’t create a volume from that image. If you have a 4GB Standard, an 8GB General
 Purpose server, or anything larger, you fall into this category. 
 

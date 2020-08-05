@@ -7,8 +7,8 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date: '2020-07-24'
 last_modified_by: Cat Lookabaugh
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 A LAMP stack is a collection of open-source software that you can use as a platform to create websites

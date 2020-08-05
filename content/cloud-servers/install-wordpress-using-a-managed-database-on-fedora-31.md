@@ -13,6 +13,7 @@ product_url: cloud-server
 
 WordPress&reg; is a simple content management system based on PHP&reg; and MySQL&reg; and has features that simplify the setup and customization of a website or blog, which is part of what makes it so popular. It is estimated that about one-third of the sites on the internet run on WordPress. In addition to its ease of use, several plugins provide additional features.
 
+
 This guide describes how to install WordPress, using a remote database separate from our server, to scale in the future.
 
 ### Prerequisites
@@ -21,6 +22,7 @@ This guide describes how to install WordPress, using a remote database separate 
 - A user with SSH administrator privileges
 
 ### Create a sudo user
+
 
 Sudo users are beneficial because they allow normal users to operate within the server with root user permissions.
 

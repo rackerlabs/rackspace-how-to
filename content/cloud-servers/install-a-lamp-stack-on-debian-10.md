@@ -7,8 +7,8 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date: '2020-07-24'
 last_modified_by: Cat Lookabaugh
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 A LAMP stack is a collection of open-source software that you can use as a platform to create websites
@@ -28,7 +28,7 @@ Perform the following steps to install a LAMP stack:
 
        sudo apt update
 
-2. To install Apache, set it to start on boot, and start the service, run the following commands: 
+2. To install Apache, set it to start on boot, and start the service, run the following commands:
 
        sudo apt install apache2
        sudo systemctl start apache2.service
@@ -56,7 +56,7 @@ Perform the following steps to install a LAMP stack:
    install additional modules if your application requires them.
 
        sudo apt install php7.3 libapache2-mod-php7.3 php7.3-common php7.3-gmp php7.3-curl php7.3-soap php7.3-bcmath php7.3-intl php7.3-mbstring php7.3-xmlrpc php7.3-mysql php7.3-gd php7.3-xml php7.3-cli php7.3-zip
-       
+
 7. To restart Apache, run the following command:
 
         sudo systemctl restart apache2

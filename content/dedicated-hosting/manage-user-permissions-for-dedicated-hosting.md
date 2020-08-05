@@ -1,17 +1,17 @@
 ---
 permalink: manage-user-permissions-for-dedicated-hosting/
-audit_date: '2018-11-28'
+audit_date: '2020-07-17'
 title: 'Manage user permissions for Dedicated Hosting'
 type: article
 created_date: '2018-11-28'
 created_by: Kate Dougherty
-last_modified_date: '2019-01-14'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-07-17'
+last_modified_by: Rose Morales
 product: Dedicated Hosting
 product_url: dedicated-hosting
 ---
 
-This article explains user permissions for Dedicated Hosting and shows you
+This article describes user permissions for Dedicated Hosting and shows you
 how to manage these permissions.
 
 You manage permissions in the [MyRackspace
@@ -29,11 +29,10 @@ grants the user the ability to access and manage the device or service.
 The following categories of permissions are available for Dedicated Hosting
 accounts:
 
-- **Direct permissions**: The permissions that grant the user direct access to
+- **Direct permissions**: Grant the user direct access to
   account permissions, linked cloud accounts, devices, or services.
 
-- **Effective permissions**: The permissions that a user inherits as a result
-  of their memberships in user and product groups.
+- **Effective permissions**: Are inherited as a result of their memberships in user and product groups.
 
 **Note**: You can grant a user a combination of direct and effective
 permissions. MyRackspace uses the highest level of permission granted.
@@ -42,21 +41,58 @@ permissions. MyRackspace uses the highest level of permission granted.
 
 You can assign permissions in the MyRackspace Portal in the following ways:
 
-- **Assign by User**: Enables you to select an individual and grant them
-  access to account-level permissions, linked cloud accounts, devices,
-  services, and product groups.
+#### Assign by user
 
-- **Assign by User Group**: Enables you to select a group of users and
-  grant them access to account-level permissions, linked cloud accounts,
-  devices, services, and product groups.
+Allows you to select an individual and grant them:
 
-- **Assign by Product**: Enables you to select a linked cloud account, device,
-  or service and assign users and user groups to that product.
+- Permissions at the account level.
+- Access to linked cloud accounts, devices, services or **Product Groups**.
 
-- **Assign by Product Group**: Enables you to select a group of
-  accounts, devices, or services and assign users and user groups to that
-  product group.
+To assign permissions by user, perform the following steps:
 
+1. Click on **Assign by User**.
+
+2. Click on the specific user and select the tab accordingly.
+
+#### Assign by user group
+
+Allows you to select a group of users and grant them:
+
+- Permissions at the account level.
+- Access to linked cloud accounts, devices, services or **Product Groups**.
+
+To assign permissions by user group, perform the following steps:
+  
+1. Click on **Assign by Group**.
+
+2. Click on the specific group and select the tab accordingly.
+
+#### Assign by product
+
+Allows you to select a linked cloud account, device, or service and do the following tasks:
+
+- Associate it with users or **User Groups**.
+- Assign users or **User Groups** portal access permissions.
+  
+To assign permissions by product, perform the following steps:
+
+1. Click on **Assign by Product**.
+
+2. Click on the specific linked cloud account, device, or service and select the tab accordingly.
+
+#### Assign by product group
+
+Allows you to select a **Product Group** containing linked cloud accounts, devices, or services and do the following tasks:
+
+- Associate it with users or **User Groups**
+- Assign users or **User Groups** portal access permissions.
+ 
+To assign permissions by product group, perform the following steps:
+
+1. Click on **Assign by Product Group**.
+
+2. Click on the specific **Product Group** and select the tab accordingly.
+  
 ### Manage groups
 
 This section shows you how to manage groups.
@@ -94,10 +130,7 @@ Use the following steps to grant a user group access to a product group:
 3. In the **User Groups** section, select an existing user group.
 4. Click **Assign by User** at the top of the page (if it isn't already the
    active tab).
-5. Click the **Product Groups** tab.
-
-    A list of products appears.
-
+5. Click the **Product Groups** tab to display a list of products.
 6. In the row for each product for which you want to assign permissions,
    select the radio button that corresponds to the permission level that you
    want to set for the product.
@@ -110,10 +143,7 @@ Use the following steps to grant a product group access to a user group:
 2. In the subnavigation bar, select **Account > Permissions**.
 3. At the top of the page, click **Assign by Product**.
 4. In the **Product Groups** section, select an existing product group.
-5. Click the **User Groups** tab.
-
-    A list of user groups appears.
-
+5. Click the **User Groups** tab to display a list of user groups.
 6. In the row for each user group for which you want to assign permissions,
    select the radio button that corresponds to the permission level that you
    want to set for the user group.
@@ -122,12 +152,8 @@ Use the following steps to grant a product group access to a user group:
 
 Use the following steps to delete a user or product group:
 
-1. Click the arrow icon to the left of the user or product group.
-
-    The row for that group expands.
-
+1. Click the arrow icon to the left of the user or product group to expand the row for that group.
 2. Click **Edit Group**.
-
 3. Select **Actions > Delete Group**.
 
 ### Manage global permissions
@@ -135,7 +161,7 @@ Use the following steps to delete a user or product group:
 The **Global Permissions** section enables you to make changes across your
 entire account.
 
-**Ticketing Settings** enable you to control the tickets that your users have
+**Ticketing Settings** enables you to control the tickets that your users have
 permission to see when those tickets concern one or more devices.
 
 The following table shows the ticketing settings that are required for common

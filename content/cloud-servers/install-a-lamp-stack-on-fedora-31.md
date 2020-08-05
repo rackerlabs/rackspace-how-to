@@ -7,8 +7,8 @@ created_date: '2020-07-22'
 created_by: Rackspace Support
 last_modified_date: '2020-07-24'
 last_modified_by: Cat Lookabaugh
-product: Cloud Product
-product_url: cloud-product
+product: Cloud Servers
+product_url: cloud-servers
 ---
 
 A LAMP stack is a collection of open-source software that you can use as a platform to create websites
@@ -54,4 +54,3 @@ You should now be able to navigate to the IP address of your server in a browser
 page to confirm you’ve configured the server correctly. The LAMP stack is all set up and ready to act as
 a base for our application after you install it. Because the applications you choose to use , especially
 with PHP, often require additional modules, be prepared to install those modules as needed.
-
