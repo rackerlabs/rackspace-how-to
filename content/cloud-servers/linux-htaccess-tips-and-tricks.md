@@ -5,8 +5,8 @@ title: Linux .htaccess tips and tricks
 type: article
 created_date: '2019-02-14'
 created_by: Rackspace Community
-last_modified_date: '2019-02-19'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-08-06'
+last_modified_by: Stephanie Fillmon
 product: Cloud Servers
 product_url: cloud-servers
 ---
@@ -15,7 +15,6 @@ This article is intended for use with the following technologies:
 
 - Linux&reg; cloud servers that are running Apache&reg;
 - Dedicated Linux servers that are running Apache
-- Rackspace Cloud Sites
 
 You can make modifications to your site by using an **.htaccess** file.
 This article shows you some of the modifications that you can make.
