@@ -1,7 +1,7 @@
 ---
-permalink: install-wordpress-using-a-managed-database-on-fedora-31/
+permalink: install-wordpress-using-a-managed-database-on-fedora-31-and-centos-8/
 audit_date: '2020-07-24'
-title: 'Install WordPress using a managed database on Fedora 31'
+title: 'Install WordPress using a managed database on Fedora and CentOS'
 type: article
 created_date: '2020-07-24'
 created_by: Rackspace Support
@@ -13,12 +13,11 @@ product_url: cloud-server
 
 WordPress&reg; is a simple content management system based on PHP&reg; and MySQL&reg; and has features that simplify the setup and customization of a website or blog, which is part of what makes it so popular. It is estimated that about one-third of the sites on the internet run on WordPress. In addition to its ease of use, several plugins provide additional features.
 
-
 This guide describes how to install WordPress, using a remote database separate from our server, to scale in the future.
 
 ### Prerequisites
 
-- A Linux&reg; server running the Fedora distribution version 31
+- A Linux&reg; server running the Fedora distribution version 31 or CentOS version 8
 - A user with SSH administrator privileges
 
 ### Create a sudo user
