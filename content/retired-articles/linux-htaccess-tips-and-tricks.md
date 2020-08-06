@@ -7,8 +7,6 @@ created_date: '2019-02-14'
 created_by: Rackspace Community
 last_modified_date: '2019-02-19'
 last_modified_by: Kate Dougherty
-product: Cloud Servers
-product_url: cloud-servers
 ---
 
 This article is intended for use with the following technologies:
