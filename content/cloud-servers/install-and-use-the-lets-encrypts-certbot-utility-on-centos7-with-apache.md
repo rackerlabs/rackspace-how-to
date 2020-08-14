@@ -18,19 +18,24 @@ This article describes how to install and use the Let's Encrypt&reg; Certbot uti
 Let's Encrypt is a Certificate Authority (CA) that provides free 90-day SSL Certificates.  The following details
 come from their [About Page](https://letsencrypt.org/about/):
 
-> **Let's Encrypt is a free, automated, and open certificate authority (CA), run for the public's benefit. It is a service provided by the Internet Security Research Group (ISRG).**
+> Let's Encrypt is a free, automated, and open certificate authority (CA), run for the public's
+> benefit. It is a service provided by the Internet Security Research Group (ISRG).
 >
-> **We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for websites, for free, in the most user-friendly way we can. We do this because we want to create a more secure and privacy-respecting Web.**
+> We give people the digital certificates they need in order to enable HTTPS (SSL/TLS) for
+> websites, for free, in the most user-friendly way we can. We do this because we want to create
+> a more secure and privacy-respecting Web.
 >
+> The key principles behind Let's Encrypt are:
 >
-> **The key principles behind Let's Encrypt are:**
->
-> - **Free: Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate at zero cost.**
-> - **Automatic: Software running on a web server can interact with Let's Encrypt to painlessly obtain a certificate, securely configure it for use, and automatically take care of renewal.**
-> - **Secure: Let's Encrypt will serve as a platform for advancing TLS security best practices, both on the CA side and by helping site operators properly secure their servers.**
-> - **Transparent: All certificates issued or revoked will be publicly recorded and available for anyone to inspect.**
-> - **Open: The automatic issuance and renewal protocol will be published as an open standard that others can adopt.**
-> - **Cooperative: Much like the underlying Internet protocols themselves, Let's Encrypt is a joint effort to benefit the community, beyond the control of any one organization.**
+> - **Free**: Anyone who owns a domain name can use Let's Encrypt to obtain a trusted certificate at zero cost.
+> - **Automatic**: Software running on a web server can interact with Let's Encrypt to painlessly
+>   obtain a certificate, securely configure it for use, and automatically take care of renewal.
+> - **Secure**: Let's Encrypt will serve as a platform for advancing TLS security best practices, both
+>   on the CA side and by helping site operators properly secure their servers.
+> - **Transparent**: All certificates issued or revoked will be publicly recorded and available for anyone to inspect.
+> - **Open**: The automatic issuance and renewal protocol will be published as an open standard that others can adopt.
+> - **Cooperative**: Much like the underlying Internet protocols themselves, Let's Encrypt is a joint
+>   effort to benefit the community, beyond the control of any one organization.
 
 ### What is the difference between Let's Encrypt and other SSL certificates?
 
