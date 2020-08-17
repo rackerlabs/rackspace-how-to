@@ -94,33 +94,31 @@ After you set up your server to serve your web page, use the following command t
 
 Certbot requires the following dependencies:
 
-```
-=================================================================================================================================
- Package                                   Arch                    Version                           Repository             Size
-=================================================================================================================================
-Installing:
- certbot                                   noarch                  1.6.0-1.el7                       epel                   44 k
-Installing for dependencies:
- pyOpenSSL                                 x86_64                  0.13.1-4.el7                      base                  135 k
- python-ndg_httpsclient                    noarch                  0.3.2-1.el7                       epel                   43 k
- python-requests-toolbelt                  noarch                  0.8.0-3.el7                       epel                   78 k
- python-zope-component                     noarch                  1:4.1.0-5.el7                     epel                  228 k
- python-zope-event                         noarch                  4.0.3-2.el7                       epel                   79 k
- python-zope-interface                     x86_64                  4.0.5-4.el7                       base                  138 k
- python2-acme                              noarch                  1.6.0-1.el7                       epel                   81 k
- python2-certbot                           noarch                  1.6.0-1.el7                       epel                  374 k
- python2-configargparse                    noarch                  0.11.0-2.el7                      epel                   31 k
- python2-future                            noarch                  0.18.2-2.el7                      epel                  806 k
- python2-josepy                            noarch                  1.3.0-2.el7                       epel                   89 k
- python2-mock                              noarch                  1.0.1-10.el7                      epel                   92 k
- python2-parsedatetime                     noarch                  2.4-6.el7                         epel                   78 k
- python2-pyrfc3339                         noarch                  1.1-3.el7                         epel                   16 k
- python2-six                               noarch                  1.9.0-0.el7                       epel                  2.9 k
- pytz                                      noarch                  2016.10-2.el7                     base                   46 k
+    =================================================================================================================================
+     Package                                   Arch                    Version                           Repository             Size
+    =================================================================================================================================
+    Installing:
+     certbot                                   noarch                  1.6.0-1.el7                       epel                   44 k
+    Installing for dependencies:
+     pyOpenSSL                                 x86_64                  0.13.1-4.el7                      base                  135 k
+     python-ndg_httpsclient                    noarch                  0.3.2-1.el7                       epel                   43 k
+     python-requests-toolbelt                  noarch                  0.8.0-3.el7                       epel                   78 k
+     python-zope-component                     noarch                  1:4.1.0-5.el7                     epel                  228 k
+     python-zope-event                         noarch                  4.0.3-2.el7                       epel                   79 k
+     python-zope-interface                     x86_64                  4.0.5-4.el7                       base                  138 k
+     python2-acme                              noarch                  1.6.0-1.el7                       epel                   81 k
+     python2-certbot                           noarch                  1.6.0-1.el7                       epel                  374 k
+     python2-configargparse                    noarch                  0.11.0-2.el7                      epel                   31 k
+     python2-future                            noarch                  0.18.2-2.el7                      epel                  806 k
+     python2-josepy                            noarch                  1.3.0-2.el7                       epel                   89 k
+     python2-mock                              noarch                  1.0.1-10.el7                      epel                   92 k
+     python2-parsedatetime                     noarch                  2.4-6.el7                         epel                   78 k
+     python2-pyrfc3339                         noarch                  1.1-3.el7                         epel                   16 k
+     python2-six                               noarch                  1.9.0-0.el7                       epel                  2.9 k
+     pytz                                      noarch                  2016.10-2.el7                     base                   46 k
 
-Transaction Summary
-=================================================================================================================================
-```
+    Transaction Summary
+    =================================================================================================================================
 
 ### Request a new certificate by using Certbot
 
@@ -151,7 +149,7 @@ An explanation of the command elements follows:
 **Note:** If you want to cover both the **www** and **non-www** versions of a domain on a single certificate, you must use
 a `-d` flag for each one.
 
-After you enter the command, the following output dsiplays:
+After you enter the command, the following output displays:
 
     Obtaining a new certificate
     Performing the following challenges:
@@ -161,32 +159,30 @@ After you enter the command, the following output dsiplays:
 
 If there are no issues with the validation, you see the following output:
 
-```
-Cleaning up challenges
+    Cleaning up challenges
 
-IMPORTANT NOTES:
- - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/example.com/fullchain.pem
-   Your key file has been saved at:
-   /etc/letsencrypt/live/example.com/privkey.pem
-   Your cert will expire on 2020-10-30. To obtain a new or tweaked
-   version of this certificate in the future, simply run certbot
-   again. To non-interactively renew *all* of your certificates, run
-   "certbot renew"
- - Your account credentials have been saved in your Certbot
-   configuration directory at /etc/letsencrypt. You should make a
-   secure backup of this folder now. This configuration directory will
-   also contain certificates and private keys obtained by Certbot so
-   making regular backups of this folder is ideal.
- - If you like Certbot, please consider supporting our work by:
+    IMPORTANT NOTES:
+     - Congratulations! Your certificate and chain have been saved at:
+       /etc/letsencrypt/live/example.com/fullchain.pem
+       Your key file has been saved at:
+       /etc/letsencrypt/live/example.com/privkey.pem
+       Your cert will expire on 2020-10-30. To obtain a new or tweaked
+       version of this certificate in the future, simply run certbot
+       again. To non-interactively renew *all* of your certificates, run
+       "certbot renew"
+     - Your account credentials have been saved in your Certbot
+       configuration directory at /etc/letsencrypt. You should make a
+       secure backup of this folder now. This configuration directory will
+       also contain certificates and private keys obtained by Certbot so
+       making regular backups of this folder is ideal.
+     - If you like Certbot, please consider supporting our work by:
 
-   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
-   Donating to EFF:                    https://eff.org/donate-le
-```
+       Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+       Donating to EFF:                    https://eff.org/donate-le
 
 ### Certificate file locations
 
-Certbot, by default, installs the certificates to **/etc/letsencrypt/live/<domain.tld>/**.
+Certbot, by default, installs the certificates to <b>/etc/letsencrypt/live/\<domain.tld\>/</b>.
 
 `<domain.tld>` is always the first domain you set when running the `certbot` command. Keep this in mind when you
 configure your virtual host or server blocks to point to the certificate files.
@@ -248,8 +244,8 @@ so you should schedule it to run as a `cron` job.  The Cerbot renewal process us
 3. Certbot attempts to renew these expiring certificates by using the same validation method used for the original
    certificate request.
 
-4. After the renewal succeeds, Certbot creates new files inside the **/etc/letsencrypt/archive/<donain.tld>/** directory,
-   incrementing the number for each renewal iteration, and updates the symlinks in **/etc/letsencrypt/live/<domain.tld>/**.
+4. After the renewal succeeds, Certbot creates new files inside the <b>/etc/letsencrypt/archive/\<donain.tld\>/</b> directory,
+   incrementing the number for each renewal iteration, and updates the symlinks in <b>/etc/letsencrypt/live/\<domain.tld\>/</b>.
    Because the certificate file names don't actually change, you don't need to change the file path in the virtual host
    or server block configuration files. This makes for a more seamless renewal process.
 
