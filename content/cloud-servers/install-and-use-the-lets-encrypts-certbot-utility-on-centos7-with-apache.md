@@ -1,7 +1,7 @@
 ---
 permalink: install-and-use-the-lets-encrypt-certbot-utility-on-centos7-with-apache/
 audit_date: '2020-08-12'
-title: 'Install and use the Let's Encrypt Certbot utility on CentOS 7 with Apache'
+title: 'Install and use the Let&apos;s Encrypt Certbot utility on CentOS 7 with Apache'
 type: article
 created_date: '2020-08-01'
 created_by: Z McCrocklin
