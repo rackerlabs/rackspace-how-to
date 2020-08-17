@@ -182,7 +182,7 @@ If there are no issues with the validation, you see the following output:
 
 ### Certificate file locations
 
-Certbot, by default, installs the certificates to <b>/etc/letsencrypt/live/\<domain.tld\>/</b>.
+Certbot, by default, installs the certificates to **/etc/letsencrypt/live/\<domain.tld\>/**.
 
 `<domain.tld>` is always the first domain you set when running the `certbot` command. Keep this in mind when you
 configure your virtual host or server blocks to point to the certificate files.
@@ -244,8 +244,8 @@ so you should schedule it to run as a `cron` job.  The Cerbot renewal process us
 3. Certbot attempts to renew these expiring certificates by using the same validation method used for the original
    certificate request.
 
-4. After the renewal succeeds, Certbot creates new files inside the <b>/etc/letsencrypt/archive/\<donain.tld\>/</b> directory,
-   incrementing the number for each renewal iteration, and updates the symlinks in <b>/etc/letsencrypt/live/\<domain.tld\>/</b>.
+4. After the renewal succeeds, Certbot creates new files inside the **/etc/letsencrypt/archive/\<donain.tld\>/** directory,
+   incrementing the number for each renewal iteration, and updates the symlinks in **/etc/letsencrypt/live/\<domain.tld\>/**.
    Because the certificate file names don't actually change, you don't need to change the file path in the virtual host
    or server block configuration files. This makes for a more seamless renewal process.
 
