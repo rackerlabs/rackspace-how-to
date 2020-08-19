@@ -26,7 +26,7 @@ command to update the current versions of packages installed on your server:
       root@server-01:~# sudo apt-get upgrade
 
 **Note:**  The preceding command provides a summary of packages to be upgraded and prompts you with the required
-of additional space for the installation.  Type "**y**" to continue with the upgrade.
+additional space for the installation.  Type "**y**" to continue with the upgrade.
 
 ### Install Fail2Ban
 
@@ -85,7 +85,7 @@ The following example shows a basic ban setting from within the **jail.local** f
 
     maxretry = 3
      
-The following example shows three unsuccessful login attempts.  You can see the IP address is now banned as proof of concept.
+The following example shows three unsuccessful login attempts and the resulting IP address ban.
 
     [user@test ~]$ ssh root@23.253.159.172
     root@23.253.159.172's password:
