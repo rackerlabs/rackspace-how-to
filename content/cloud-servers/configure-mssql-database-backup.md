@@ -1,7 +1,7 @@
 ---
 permalink: configure-mssql-database-backup/
 audit_date: '2020-08-19'
-title: ‘Configure MSSQL database backups’
+title: 'Configure MSSQL database backups'
 type: article
 created_date: '2020-07-31'
 created_by: Karoline Mills
@@ -35,16 +35,16 @@ Alternatively, you can use the following steps to initiate a backup operation:
 
 1.	When logged into the correct database instance, select **New Query**. 
 2.	Use the following query when backing up to a disk. Replace the location and database name with the respective names
-on your server:
+   on your server:
 
-    USE SQLTestDatabase;
-    GO
-    BACKUP DATABASE SQLTestDatabase
-    TO DISK = 'd:\backups\SQLTestDatabase.bak'
-   	 WITH FORMAT,
-       MEDIANAME = 'SQLServerBackups',
-       NAME = 'Full Backup of SQLTestDatabase';
-    GO
+        USE SQLTestDatabase;
+        GO
+        BACKUP DATABASE SQLTestDatabase
+        TO DISK = 'd:\backups\SQLTestDatabase.bak'
+       	 WITH FORMAT,
+          MEDIANAME = 'SQLServerBackups',
+          NAME = 'Full Backup of SQLTestDatabase';
+        GO
 
 ### Use PowerShell to create a database backup
 
