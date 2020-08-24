@@ -1,7 +1,7 @@
 ---
-permalink: apache-vhost-setup-on-ubuntu-20-04-and-debian-10/
+permalink: set-up-apache-vhost-on-ubuntu-20-04-and-debian-10/
 audit_date: '2020-08-24'
-title: 'Apache vhost Setup on Ubuntu 20.04 and Debian 10'
+title: 'Set up an Apache vhost on Ubuntu 20.04 and Debian 10'
 type: article
 created_date: '2020-07-24'
 created_by: Rackspace Support
@@ -11,11 +11,11 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-Vhost stands for virtual host. You can use Vhosts to serve multiple domains without the need for additional Internet
+You can use virtual hosts (vhosts) to serve multiple domains without the need for additional Internet
 Protocol (IP) addresses. With vhosts, the different pages display according to settings in the host file for the
-particular site requested. This article describes how to create vhosts on Ubuntu® 20.04 and Debian&reg; 10.
+particular site requested. This article describes how to create a vhost on Ubuntu® 20.04 and Debian&reg; 10.
 
-  **Note:** In this article, you can replace the placeholder of **example.com** with the domain for which you’re setting up the vhost.
+**Note:** In this article, you can replace the placeholder of **example.com** with the domain for which you’re setting up the vhost.
 
 ### Prerequisites
 
@@ -24,6 +24,10 @@ particular site requested. This article describes how to create vhosts on Ubuntu
 - DNS pointing the site to the server’s IP
 - A user with SSH administrator privileges
 - Firewall configured to allow traffic on port 80
+
+### Set up a vhost
+
+Use the following steps to set up an Apache&reg; vhost:
 
 1. Create a new directory to store the website’s content. This directory is known as the *root document* folder in
    your Apache vhost configuration file.
