@@ -1,7 +1,7 @@
 ---
-permalink: apache-vhost-setup-on-fedora-31/
+permalink: set-up-an-apache-vhost-on-fedora-31/
 audit_date: '2020-08-24'
-title: 'Apache vhost Setup on Fedora 31'
+title: 'Set up an Apache vhost on Fedora 31'
 type: article
 created_date: '2020-07-29'
 created_by: Rackspace Support
@@ -11,50 +11,59 @@ product: Cloud Servers
 product_url: cloud-servers
 ---
 
-You can use virtual hosts (vhosts) to serve multiple domains without the need for additional Internet Protocol (IP) addresses. With vhosts, the different pages display according to settings in the host file for the
-particular site requested. This article describes how to create a vhost on Fedora® 31.
+You can use virtual hosts (vhosts) to serve multiple domains without additional Internet Protocol (IP) addresses. With vhosts,
+the different pages display according to settings in the host file for the particular site requested. This article describes
+how to create a vhost on Fedora® 31.
 
 **Note:** In this article, you can replace the placeholder of **example.com** with the domain for which you’re setting up the vhost.
 
 ### Prerequisites
 
 - A Linux&reg; server running distribution Fedora version 31
-- Apache installed. Install it by using the following command: `sudo dnf install httpd`
+- Apache&erg; installed. Install it by using the following command: `sudo dnf install httpd`
 - DNS pointing the site to the server’s IP
 - A user with SSH administrator privileges
 - Firewall configured to allow traffic on port 80
 
-1. Create a new directory to store the website’s content. This directory is known as the *root document* folder in your Apache vhost configuration file.
+### Create an Apache vhost
+
+Use the following steps to create an Apache vhost:
+
+1. Create a new directory to store the website’s content. This directory is known as the *root document* folder in your
+   Apache vhost configuration file.
 
         sudo mkdir -p /var/www/vhosts/example.com/public_html
 
-2. Set the permissions for the new directory. Replace `vhostuser` in the **username:vhostuser** parameter with a user on the server who has access to the directory.
+2. Set the permissions for the new directory. Replace `vhostuser` in the **username:vhostuser** parameter with a user
+   on the server who has access to the directory.
 
         sudo chown -R username:vhostuser /var/www/vhosts/example.com/public_html
 
-3. Set read permissions to all users for the directory.
+3. Set read permissions for all users for the directory.
 
         sudo chmod -R 755 /var/www/vhosts/
 
-4. Open the Apache configuration file. You can open and edit it with whichever text editor you are comfortable with, for this guide we will use `vi`.
+4. Open the Apache configuration file. While you use any text editor, this guide uses `vi`.
 
         sudo vi /etc/httpd/conf/httpd.conf
 
-5. At the end of the file, add the following line to instruct Apache to read all files ending in **.conf** within the **/etc/httpd/vhost.d** directory.
+5. At the end of the file, add the following line to instruct Apache to read all files ending in **.conf** within
+   the **/etc/httpd/vhost.d** directory.
 
         Include vhost.d/*.conf
 
-    **Note:** After you finish making the changes, save the file pressing the **Esc** key to switch to command mode and typing `:xq` to exit and save the changes.
+    **Note:** After you finish making the changes, save the file by pressing the **Esc** key to switch to command mode
+    and typing `:xq` to exit and save the changes.
 
 6. Create the directory for the vhost configuration file.
 
         sudo mkdir /etc/httpd/vhost.d/
 
-7. Create a default template to allow us to make vhosts in the future. The following command creates and opens our new file:
+7. Create a default template to enable future vhosts. The following command creates and opens the new file:
 
         vi /etc/httpd/vhost.d/default.template
 
-8. Open the file, paste the following information in the file and save the change.
+8. Open the file, paste the following information in the file, and save the change.
 
         <VirtualHost *:80>
           ServerName example.com
@@ -90,21 +99,22 @@ particular site requested. This article describes how to create a vhost on Fedor
         #        SSLCertificateKeyFile /etc/ssl/certs/example.key
         #</VirtualHost>
 
-9. With the template in place, we can create new vhosts using the following steps.
+With the template in place, you can create new vhosts as described in the following section.
 
-### Creating additional vhosts
+### Create additional vhosts
 
-1. Create a vhost configuration file for the new site using the following command. Remember to replace **domain.com** with your own site.
+1. Create a vhost configuration file for the new site by using the following command. Remember to replace
+   **domain.com** with your own site.
 
         sudo cp /etc/httpd/vhost.d/default.template /etc/httpd/vhost.d/domain.com.conf
 
-2. Open the new file we created called **domain.com.conf** replace **domain.com** with your site and save the file.
+2. Open the file you previously created, **domain.com.conf**, replace **domain.com** with your site, and save the file.
 
-3. Restart apache.
+3. Restart Apache.
 
         sudo systemctl restart httpd
 
-4. If you want to see a test page, you can create a file named **index.html** in your root folder and pasting the following text inside.
+4. If you want to see a test page, you can create a file named **index.html** in your root folder and paste the following text inside.
 
         <!DOCTYPE html>
         <html lang="en" dir="ltr">
