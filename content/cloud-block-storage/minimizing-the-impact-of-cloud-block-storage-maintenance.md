@@ -5,8 +5,8 @@ title: Minimizing the impact of Cloud Block Storage maintenance
 type: article
 created_date: '2020-01-7'
 created_by: Brian King
-last_modified_date: '2020-01-7'
-last_modified_by: Chad Sterling
+last_modified_date: '2020-08-25'
+last_modified_by: Mason Stevens
 product: Cloud Block Storage
 product_url: cloud-block-storage
 ---
@@ -31,12 +31,9 @@ After you [clone your Cloud Block Storage volume](https://support.rackspace.com/
 
 **System disk Cloud Block Storage volumes (Boot from volume servers):**
 
-- After you clone your Cloud Block Storage volume, you can deploy a new server by using the new clone
-as the system disk. From the [mycloud portal](https://login.rackspace.com/), select **Servers** > **Create Resources**>**Bootable Volumes**. Then deploy a new server from the clone.
+- [Replace your current system disk with a clone.](https://support.rackspace.com/how-to/increase-size-of-cloud-boot-from-volume-server-system-disk/)
 
-**Note:** Clones are not verified. Ensure the newly-cloned volume can build a server before you delete your current server.
-
-**Note:** Your new server has new IP address.
+**Note:** Clones are not verified. Ensure the newly-cloned volume is working before deleting your current Cloud Block Storage volume.
 
 #### Stop all writes to the device
 
