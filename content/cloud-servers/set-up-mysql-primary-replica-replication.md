@@ -161,9 +161,9 @@ replication.
     replica (`db02`) server.
 
 4.  Use the following command to ensure that nothing can write to the
-    primary database during a database dump: Also note the filename and
+    primary database during a database dump. Also note the filename and
     position of the binary log because you need these values to
-    complete the replication configuration on db02.
+    complete the replication configuration on db02:
 
 
         # mysql -u root -p
@@ -177,18 +177,19 @@ replication.
         +------------------+--------------------------+------------------+
         1 row in set (0.00 sec)
 
-      **Note:** Record the filename and position of the binary log because you need these values to
+      **Note 1:** Record the filename and position of the binary log because you need these values to
       complete the replication configuration on `db02`.
-
+      
+      **Note 2:** Keep this session open, closing it releases the lock!
+      
 5.  Perform a database dump by using `mysqldump` as follows:
 
         # mysqldump -u root -p --databases [database-1] [database-2] ...  > /root/db_dump.sql
 
-6.  After the database dump has completed, lift the read lock from the
-    primary (`db01`):
+6.  After the database dump has completed, lift the read lock from the primary
+    (`db01`) by typing the following, or by exiting the open session:
 
 
-        # mysql -u root -p
         mysql> UNLOCK TABLES;
 
 7.  Copy the database dump file to the replica server so that it can
