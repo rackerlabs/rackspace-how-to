@@ -78,7 +78,9 @@ If you're running WordPress&reg; and continue to have problems after you
 increase the maximum upload size, you can try including the following
 additional settings:
 
-    php_value post_max_size ?M php_value max_execution_time 200 php_value max_input_time 200
+    php_value post_max_size ?M
+    php_value max_execution_time 200
+    php_value max_input_time 200
 
 ### Change the post maximum size value
 
@@ -156,28 +158,39 @@ file. Several of the following sections include example code for performing this
 Use the following rewrite syntax to redirect from an old domain to a new
 domain:
 
-    RewriteEngine on RewriteBase / RewriteRule (.*) http://www.newdomain.com/$1 [R=301,L]
+    RewriteEngine on
+    RewriteBase / 
+    RewriteRule (.*) http://www.newdomain.com/$1 [R=301,L]
 
 **Redirect to a location that uses a subdomain**
 
 Use the following rewriting syntax to redirect to a location that uses the
 subdomain `www`:
 
-    RewriteEngine on RewriteBase / RewriteCond %{HTTP_HOST} ^domain.com [NC] RewriteRule ^(.*)$ http://www.domain.com/$1 [R=301,NC]
+    RewriteEngine on
+    RewriteBase /
+    RewriteCond %{HTTP_HOST} ^domain.com [NC]
+    RewriteRule ^(.*)$ http://www.domain.com/$1 [R=301,NC]
 
 **Redirect to a subdirectory of a location that uses the subdomain**
 
 Use the following rewriting syntax to redirect to a subdirectory of a location
 that uses the subdomain:
 
-    RewriteEngine on RewriteBase / RewriteCond %{HTTP_HOST} domain.com [NC] RewriteRule ^(.*)$ http://www.domain.com/directory/index.html [R=301,NC]
+    RewriteEngine on 
+    RewriteBase / 
+    RewriteCond %{HTTP_HOST} domain.com [NC] 
+    RewriteRule ^(.*)$ http://www.domain.com/directory/index.html [R=301,NC]
 
 **Redirect from a location that uses the the subdomain to one that does not**
 
 Use the following rewriting syntax to redirect from a location that uses the
 subdomain to one that does not:
 
-    RewriteEngine on RewriteBase / RewriteCond %{HTTP_HOST} ^www.domain.com [NC] RewriteRule ^(.*)$ http://domain.com/$1 [R=301,L]
+    RewriteEngine on
+    RewriteBase /
+    RewriteCond %{HTTP_HOST} ^www.domain.com [NC]
+    RewriteRule ^(.*)$ http://domain.com/$1 [R=301,L]
 
 **Note**: Use the [Search Engine Friendly Redirect Checker
 tool](https://www.webconfs.com/redirect-check.php) to verify that your
@@ -224,11 +237,19 @@ You can force users to access your PHP site securely over Secure Sockets Layer
 
 Use the following code to force SSL on an entire website:
 
-    #Force SSL on entire site RewriteEngine On RewriteBase / RewriteCond %{ENV:HTTPS} !on [NC] RewriteRule ^(.*)$ https://(YOURDOMAIN)/$1 [R,L]
+    #Force SSL on entire site 
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{ENV:HTTPS} !on [NC] 
+    RewriteRule ^(.*)$ https://(YOURDOMAIN)/$1 [R,L]
 
 Use the following code to force SSL on a specific directory:
 
-    #Force SSL on a specific directory  RewriteEngine On RewriteBase / RewriteCond %{ENV:HTTPS} !on [NC] RewriteRule ^DIRNAME/(.*)$ https://YOURDOMAIN/DIRNAME/$1 [R,L]
+    #Force SSL on a specific directory
+    RewriteEngine On
+    RewriteBase / 
+    RewriteCond %{ENV:HTTPS} !on [NC]
+    RewriteRule ^DIRNAME/(.*)$ https://YOURDOMAIN/DIRNAME/$1 [R,L]
 
 ### Change the default document on your PHP site
 
@@ -266,7 +287,9 @@ specify a different one in an **.htaccess** file.
 You can activate Server Side Includes (SSI) by using **.htaccess** with the
 following directives:
 
-    AddType text/html .shtml AddHandler server-parsed .shtml Options Indexes FollowSymLinks Includes
+    AddType text/html .shtml 
+    AddHandler server-parsed .shtml 
+    Options Indexes FollowSymLinks Includes
 
 **Note**: You cannot serve PHP content by using SSI. For PHP content, we
 recommend that you use PHP's include or require statements, or use an inline
