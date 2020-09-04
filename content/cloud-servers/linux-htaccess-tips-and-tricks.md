@@ -1,17 +1,17 @@
 ---
 permalink: linux-htaccess-tips-and-tricks/
-audit_date: '2019-01-18'
+audit_date: '2020-09-04'
 title: Linux .htaccess tips and tricks
 type: article
 created_date: '2019-02-14'
 created_by: Rackspace Community
-last_modified_date: '2019-02-19'
-last_modified_by: Kate Dougherty
+last_modified_date: '2020-09-04'
+last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
 ---
 
-This article is intended for use with the following technologies:
+This article is uses the following technologies:
 
 - Linux&reg; cloud servers that are running Apache&reg;
 - Dedicated Linux servers that are running Apache
@@ -22,8 +22,8 @@ This article shows you some of the modifications that you can make.
 
 ### Locate your .htaccess file
 
-In the UNIX&reg; and Linux file systems, the names of hidden files are
-preceded by a period (for example, **.htaccess** and **.htpasswd**). FileMan
+In the UNIX&reg; and Linux file systems, a period precedes the names of hidden
+files are (for example, **.htaccess** and **.htpasswd**). FileMan
 and many File Transfer Protocol (FTP) applications do not display hidden
 files by default.
 
@@ -103,8 +103,8 @@ Uniform Resource Locator (URL) that is different from the one that was
 originally requested. Using a 301 redirect is an effective way
 to ensure that users and search engines find your content.
 
-The following examples are specific to PHP and work only if your cloud site is
-configured for PHP. These examples do not work for Internet Information
+The following examples are specific to PHP and work only if you configured
+your cloud site for PHP. These examples do not work for Internet Information
 Services (IIS) with Active Server Pages (ASP) or ASP.NET.
 
 #### Redirect examples
@@ -182,7 +182,7 @@ that uses the subdomain:
     RewriteCond %{HTTP_HOST} domain.com [NC] 
     RewriteRule ^(.*)$ http://www.domain.com/directory/index.html [R=301,NC]
 
-**Redirect from a location that uses the the subdomain to one that does not**
+**Redirect from a location that uses the subdomain to one that does not**
 
 Use the following rewriting syntax to redirect from a location that uses the
 subdomain to one that does not:
@@ -266,7 +266,7 @@ example:
 ### Change the default character set for HTML
 
 To change the default character set for HTML, add the following lines to
-an **.htaccess** file that is located in the directory for which you want to
+an **.htaccess** file located in the directory for which you want to
 change the character set, as shown in the following example:
 
     AddDefaultCharset <character set>
@@ -372,7 +372,7 @@ follows:
 
 #### Change the time zone
 
-To change the time zone for your website that is running on Linux and PHP, you
+To change the time zone for your website running on Linux and PHP, you
 must edit your **.htaccess** file to include the following line:
 
     php_value date.timezone <TIMEZONE>
