@@ -20,8 +20,7 @@ Rackspace Technology is deploying AIOps, a feature that applies artificial intel
 - Instructions on how to view related alerts in Notifications
 - Instructions on how to modify notification preferences to limit email notifications
 
-**Intended audience:** This guide serves for existing Rackspace Technology customers who are familiar with how the current monitoring and alerting system works.
-</br>
+**Intended audience:** This guide serves for existing Rackspace Technology customers who are familiar with how the current monitoring and alerting system works.  
 
 ### Overview of what's changing
 
@@ -38,10 +37,9 @@ For example, if a server goes down because it ran out of RAM, the monitoring sys
 
 <img src="{% asset_path account-management/aiops-tier2-situations/current-state.png %}" />
 
-The AIOps integration creates a situation (a collection of one or more alerts) and creates a single corresponding ticket referencing the situation. The system notifies and engages the support teams required to work the situation, and you receive updates from the single ticket.
+The AIOps integration creates a situation (a collection of one or more alerts) and creates a single corresponding ticket referencing the situation. The system notifies and engages the support teams required to work the situation, and you receive updates from the single ticket.  
 
-<img src="{% asset_path account-management/aiops-tier2-situations/future-state.png %}" />
-</br>
+<img src="{% asset_path account-management/aiops-tier2-situations/future-state.png %}" />  
 
 ### About situation tickets
 
@@ -51,8 +49,7 @@ AIOps ingests the data collected by your monitoring systems, maps the event prop
 - by the time, text string or description
 - by using a deterministic logic set up by your administrator to clustr alerts in a specific way
 
-AIOps also correlates the situation information with the information from other systems. At the enrichment phase, AIOps ties any related information to a ticket and immediately notifies the right people to respond, and when you receive a notification, you can jump into the war room. Because the data from resolved cases become referenceable automatically, AIOps can identify historical cases similar to new ones and propose them as a reference.
-</br>
+AIOps also correlates the situation information with the information from other systems. At the enrichment phase, AIOps ties any related information to a ticket and immediately notifies the right people to respond, and when you receive a notification, you can jump into the war room. Because the data from resolved cases become referenceable automatically, AIOps can identify historical cases similar to new ones and propose them as a reference.  
 
 ### Interpret a situation ticket
 
@@ -60,8 +57,7 @@ This section describes how to interpret the following sections of a situation ti
 
 - Subject line
 - Initial and additional comments
-- Ticket summary
-</br>
+- Ticket summary  
 
 #### Subject line
 
@@ -72,14 +68,13 @@ The following image illustrates the subject line of a situation ticket:
 
 The following table describes each part of the subject line of a situation ticket:
 
-| **Section** | **Description** |
-| --- | --- |
-| **Situation number** | A unique situation number.|
-| **Alert description** | A short summary of why the alert fired. |
-| **Device count** | The number of devices included in the scope of the situation ticket. |
-| **Alert count** | The number of alerts associated with the situation ticket. |
-| **Ticket number** | A unique ticket number. |
-</br>
+ **Section** | **Description**
+ --- | ---
+ **Situation number** | A unique situation number.
+ **Alert description** | A short summary of why the alert fired.
+ **Device count** | The number of devices included in the scope of the situation ticket.
+ **Alert count** | The number of alerts associated with the situation ticket.
+ **Ticket number** | A unique ticket number.  
 
 #### Initial and additional comments
 
@@ -95,7 +90,6 @@ Refer to the following table to understand how to interpret a situation ticket.
 | **A** | **Notifications Link** : Shows the link to the notifications. Click the link to view the associated alerts on the **Notifications** page of the Rackspace Technology Customer Portal. </br>**Important** : You do not see notifications for devices for which you do not have permissions. If you do not see any related notifications, review your device permissions. After you adjust the permissions, you will see alerts generated from that point forward. |
 | **B** | **Situation Details** : Shows the unique situation number, the Account Number associated with the situation, and the date/time the system generated the situation ticket. |
 | **C** | **Clustered Alerts** : Lists the alerts associated with the situation ticket. |
-</br>
 
 #### Ticket summary
 
@@ -111,7 +105,6 @@ Refer to the following table to understand how to interpret a situation ticket s
 | --- | --- |
 | **A** | **Situation Cleared** : Identifies a resolved situation as cleared. |
 | **B** | **Clustered Alerts** : Lists the alerts associated with the situation ticket that have also been cleared. |
-</br>
 
 ### Navigate to alerts in RNS
 
@@ -146,7 +139,6 @@ By default, the notification system sends you an email for each alert associated
 The following image shows you an example notification email:
 
 <img src="{% asset_path account-management/aiops-tier2-situations/navigate-to-rns-4.png %}" />
-</br>
 
 ### Configure notification email preferences
 
@@ -171,7 +163,7 @@ Complete the following steps to configure notification email preferences:
 4. Perform one of the following:
 
     - To turn off email notifications globally for all devices, click the slider to the off position, and click **Update Preferences**.
-<img src="{% asset_path account-management/aiops-tier2-situations/email-preference-1.png %}" />
-    
-- To turn off email notifications for a device, expand the **Monitoring** section, clear the checkbox for each device for which you do not want to receive notification emails, and click **Update Preferences**.
-<img src="{% asset_path account-management/aiops-tier2-situations/email-preference-2.png %}" />
+    <img src="{% asset_path account-management/aiops-tier2-situations/email-preference-1.png %}" />
+
+    - To turn off email notifications for a device, expand the **Monitoring** section, clear the checkbox for each device for which you do not want to receive notification emails, and click **Update Preferences**.
+    <img src="{% asset_path account-management/aiops-tier2-situations/email-preference-2.png %}" />
