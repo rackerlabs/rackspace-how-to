@@ -86,7 +86,7 @@ The following image illustrates an updated sample situation ticket:
 Refer to the following table to understand how to interpret a situation ticket.
 
 | **Section** | **Description** |
-| --- | --- |
+| :---: | --- |
 | **A** | **Notifications Link** : Shows the link to the notifications. Click the link to view the associated alerts on the **Notifications** page of the Rackspace Technology Customer Portal. </br>**Important** : You do not see notifications for devices for which you do not have permissions. If you do not see any related notifications, review your device permissions. After you adjust the permissions, you will see alerts generated from that point forward. |
 | **B** | **Situation Details** : Shows the unique situation number, the Account Number associated with the situation, and the date/time the system generated the situation ticket. |
 | **C** | **Clustered Alerts** : Lists the alerts associated with the situation ticket. |
