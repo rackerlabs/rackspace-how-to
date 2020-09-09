@@ -18,6 +18,7 @@ Cloud API tool, Pitchfork.
 
 Log in to Pitchfork at [https://pitchfork.rax.io/](https://pitchfork.rax.io/).
 
+
 To learn how to log in to and use Pitchfork, refer to (https://support.rackspace.com/how-to/pitchfork-the-rackspace-cloud-api-web-application/)[Pitchfork&mdash;the Rackspace Cloud API web application].
 
 ### List the Cloud Monitoring zones with Pitchfork
