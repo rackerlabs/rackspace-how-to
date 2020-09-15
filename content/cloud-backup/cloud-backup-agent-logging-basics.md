@@ -50,11 +50,10 @@ similar to the following example of a Windows configuration file:
     </log4j:configuration>
 
 For information about how to locate the **log4cxx.xml** configuration file on
-Windows or Linux, see "Agent file locations on Linux" at
-[Update or install the Cloud Backup agent on Linux&reg;](/how-to/update-or-install-the-cloud-backup-agent-on-linux)
-for Linux files locations and "Agent file locations on Windows" at
-[Install the Cloud Backup agent on Windows&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
-for Windows files locations.
+Linux, see **Agent file locations on Linux"** in
+[Update or install the Cloud Backup agent on Linux&reg;](/how-to/update-or-install-the-cloud-backup-agent-on-linux).
+For the same information for Windows, see **Agent file locations on Windows** in
+[Install the Cloud Backup agent on Windows&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-windows).
 
 ### Agent logging operations
 
