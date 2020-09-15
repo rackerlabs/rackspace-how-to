@@ -5,8 +5,8 @@ title: Update or install the Cloud Backup agent on Linux
 type: article
 created_date: '2020-03-27'
 created_by: Brett Johnson
-last_modified_date: '2020-04-10'
-last_modified_by: Cat Lookabaugh
+last_modified_date: '2020-09-15'
+last_modified_by: Brett Johnson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -60,6 +60,24 @@ For the LON region, you must use `api.drivesrvr.co.uk`.
 the server in question. You must do a backup migration to reassociate the backup
 data from a disconnected registration. However, the old registration with its backup
 data remains attached to the customer account until you delete it.
+
+#### Agent file locations on Linux
+
+Assuming a default installation, following are the agent file locations
+on Linux systems:
+
+-   Configuration files: **/etc/driveclient**
+-   Logs: **/var/log** (This value might be different on your server,
+    depending on your settings in the **log4cxx.xml** file.)
+-   Startup script: **/etc/init.d**
+-   Application: **/usr/local/bin**
+-   Process Identification (PID) file for running the agent:
+    **/var/run/driveclient.pid**
+-   Database: Search for a **\*.db** file under **/var/cache/driveclient**
+
+**Note**: If `driveclient` is installed as an individual user,
+most of these files are under **~/.driveclient**.
+
 
 #### Non-cloud, non-Rackspace installation
 
@@ -194,7 +212,6 @@ updater, or it eventually re-enables the agent.
 ### More troubleshooting tips
 
 For more troubleshooting tips and FAQs, see the following articles:
-
-    [Cloud Backup Troubleshooting](/how-to/cloud-backup-troubleshooting/)
-    [Cloud Backup FAQs](/how-to/cloud-backup-faq/)
+[Cloud Backup Troubleshooting](/how-to/cloud-backup-troubleshooting/)
+and [Cloud Backup FAQs](/how-to/cloud-backup-faq/).
     

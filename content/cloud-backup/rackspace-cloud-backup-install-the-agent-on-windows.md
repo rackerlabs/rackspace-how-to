@@ -5,8 +5,8 @@ title: Install the Cloud Backup agent on Windows
 type: article
 created_date: '2014-05-01'
 created_by: Megan Meza
-last_modified_date: '2020-05-20'
-last_modified_by: William Loy
+last_modified_date: '2020-09-15'
+last_modified_by: Brett Johnson
 product: Cloud Backup
 product_url: cloud-backup
 ---
@@ -27,6 +27,14 @@ A new agent installation disconnects any previous registrations from that server
 Determine whether your Windows server architecture is 64-bit or 32-bit, and download the latest MSI installation file for that architecture from <http://agentrepo.drivesrvr.com/>.
 
 ### Installation
+
+    **Note**: For any of these modes of installation or uninstallation,
+    the agent may be put into debug or trace mode by setting the following
+    registry value to "true": HKLM\SOFTWARE\Rackspace\CloudBackup\Debug.
+    The log file name for the installer will be located in the %TMP%
+    folder and the name will be similar to driveclient-2.27.009073-en-us.msi.install.log
+    for the installer and driveclient-2.27.009073-en-us.msi.uninstall.log
+    for the uninstaller.
 
 You can choose one of the following methods of installation:
 
@@ -197,6 +205,28 @@ Run the following command from the command line:
     powershell -command "& { (New-Object Net.WebClient).DownloadFile('http://agentrepo.drivesrvr.com/version.txt', 'deleteme.txt') }" & type deleteme.txt & del deleteme.txt
 
 View the version number and make sure that it matches the ``Product Version`` number in the registry.
+
+#### Agent file locations on Windows
+
+Finding the `driveclient` files under various flavors of Windows is
+a little complicated. In general, you can find these files under the
+folder to which **CSIDL_COMMON_APPDATA** points.
+
+-   For more information about this location on Windows versions
+    starting with Vista, see
+    <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd378457(v=vs.85).aspx">KNOWNFOLDERID</a>.
+-   For more information about this location on earlier versions of
+    Windows, see
+    <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb762494(v=vs.85).aspx">CSIDL</a>.
+
+In a typical installation, the files are located in the following folders:
+
+-   Configuration files: **%ProgramData%\\Driveclient**
+-   Logs: **%ProgramData%\\Driveclient\\logs** (This value might be different
+    on your server, depending on your settings in the **log4cxx.xml** file
+    under Configuration files.)
+-   Application: **%ProgramFiles%\\Driveclient**
+-   Database: Search for a **\*.db** file under **%ProgramData%\\Driveclient**
 
 ### Troubleshooting installs, upgrades, and uninstalls
 

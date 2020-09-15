@@ -13,6 +13,7 @@ product_url: cloud-backup
 
 If the Cloud Backup updater, which is described in
 [Install or update the Cloud Backup agent on Linux&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
+or [Install the Cloud Backup agent on Windows&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
 failed, use the steps in this article to manually update the Rackspace Cloud
 Backup agent.
 
@@ -25,100 +26,46 @@ features, and bug fixes in Cloud Backup.
 **Note:** These instructions assume that the agent has been previously
 installed.
 
-### Update the agent for APT-based systems
+### Update the agent for Linux-based systems
 
-For APT-based systems, you might want to review
+For Linux-based systems, you might want to review
 [Install or update the Cloud Backup agent on Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
 before performing these steps.
 
-**Note:** The Advanced Packaging Tool (APT) automatically stops and restarts
-the driveclient service as part of the update process. Driveclient versions
-1.28 and later install the Cloud Backup updater service, which keeps the agent
-up-to-date on the system.
-
-Use the following steps to update the backup agent for APT-based systems, such as the Ubuntu operating system, Debian, and Vyatta:
+Use the following steps to update the backup agent for Linux-based systems, such as the Red Hat operating system, Debian, etc.:
 
 1. Use SSH to log in to your server as a user with sudo or superuser privileges.
 
-2.  Download the new [Cloud Backup Keyring package](http://agentrepo.drivesrvr.com/debian/pool/main/c/cloudbackup-keyring/cloudbackup-keyring_2016.12.02-1_all.deb).
+2. Download the latest [Linux CBU package](http://agentrepo.drivesrvr.com/tar/driveclient-latest.tar.bz2).
 
-3.  Install the Keyring package manually.
+3. Extract the package manually.
 
-		  sudo dpkg -i cloudbackup-keyring_2016.12.02-1_all.deb
+		  sudo tar jxvf driveclient-latest.tar.bz2
 
-4.  Update the apt repository information.
+4. Move the agent app to /usr/local/bin.
 
-        sudo apt-get update
+      sudo mv driveclient*/driveclient /usr/local/bin/. && sudo chown root:root /usr/local/bin/driveclient &&
+      sudo chmod 755 /usr/local/bin/driveclient
 
-5. Install the Cloud Backup updater.
+5. Create an install folder and move the agent cert.
 
-        apt-get install --reinstall --assume-yes driveclient
+      mkdir /etc/driveclient && mv driveclient*/cacert.pem /etc/driveclient/.
 
-### Update the agent for yum-based systems, including CentOS and Red Hat
+6. Register the driveclient.
 
-For yum-based systems, including CentOS&reg; and Red Hat&reg;, you might want to review
-[Install or update the Cloud Backup agent on Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
-before performing these steps.
+      /usr/local/bin/driveclient --configure --username myuserid --apikey ${apikey} --flavor raxcloudserver --datacenter DFW
 
-**Note:** `yum` automatically stops and restarts the driveclient service as
-part of the update process. Driveclient versions 1.28 and later install the
-Cloud Backup updater service, which keeps the agent up-to-date on the system.
+7. Start the driveclient.
 
-1. Use SSH to log in to your server as a user with sudo or superuser privileges.
+      /usr/local/bin/driveclient --daemon
 
-2. Update the driveclient.
+For more detailed information on these configuration settings, see
+[Update or install the Cloud Backup agent on Linux](/how-to/update-or-install-the-cloud-backup-agent-on-linux/).
 
-        yum upgrade -y driveclient
-
-**Note:** Fedora&reg; 22 and later use a new package manager called DNF. This is not supported.
-(Dandified Yum).
-
-### Update the agent for Arch, Gentoo, and SUSE systems
-
-For Arch&reg;, Gentoo&reg;, and SUSE&reg; systems, you might want to review
-[Install or update the Cloud Backup agent on Linux](/how-to/rackspace-cloud-backup-install-the-agent-on-linux)
-before performing these steps.
-
-**Note:** The `tarball` that you download has the most up-to-date instructions.
-If the `tarball` instructions differ from the following ones, use the `tarball`
-instructions instead.
-
-1. Use SSH to log in to your server as a user with sudo or superuser privileges.
-
-2. Stop the current agent.
-
-        pkill driveclient
-
-3. Delete (or rename) the previously downloaded tarball.
-
-        rm driveclient-latest.tar
-
-4. Download the new tarball.
-
-        wget http://agentrepo.drivesrvr.com/tar/driveclient-latest.tar.bz2
-
-5. Extract the files.
-
-        tar -xjf driveclient-latest.tar.bz2
-
-6. Change to the new directory created in the preceding step. The following
-command includes an example of the new directory.
-
-        cd driveclient-1.12.006246
-
-7. Copy the updated agent over the current agent.
-
-       cp driveclient /usr/local/bin/
-       chown root:root /usr/local/bin/driveclient
-       chmod 700 /usr/local/bin/driveclient
-
-       cp cacert.pem  /etc/driveclient
-
-8. Start the updated agent.
-
-        driveclient --daemon
-
-Example init/startup scripts are included in the tarball.
+**Warning:** This assumes that the reason the agent is being manually installed is because it is being installed on a
+system not yet supported by the current updater. For that reason, we make no assumptions about the requirements to
+add the agent or the updater as a service. This means the driveclient will have to be started manually every time
+the server is restarted.
 
 ### Update the agent on a Windows system
 

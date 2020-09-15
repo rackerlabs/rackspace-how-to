@@ -5,7 +5,7 @@ title: Cloud Backup agent logging basics
 type: article
 created_date: '2014-05-29'
 created_by: Ross Diaz
-last_modified_date: '2020-01-15'
+last_modified_date: '2020-09-15'
 last_modified_by: Brett Johnson
 product: Cloud Backup
 product_url: cloud-backup
@@ -50,8 +50,11 @@ similar to the following example of a Windows configuration file:
     </log4j:configuration>
 
 For information about how to locate the **log4cxx.xml** configuration file on
-Windows or Linux, see the "Locations of Cloud Backup agent files" section of
-this article.
+Windows or Linux, see "Agent file locations on Linux" at
+[Update or install the Cloud Backup agent on Linux&reg;](/how-to/update-or-install-the-cloud-backup-agent-on-linux)
+for Linux files locations and "Agent file locations on Windows" at
+[Install the Cloud Backup agent on Windows&reg;](/how-to/rackspace-cloud-backup-install-the-agent-on-windows)
+for Windows files locations.
 
 ### Agent logging operations
 
@@ -170,50 +173,6 @@ large to attach to a support ticket. To make your logs easily available to
 Rackspace Support, we recommend that you upload them to your Cloud Files
 account in a public container. From there, you can copy the download
 links for the log files and paste the links into your support ticket.
-
-### Locations of Cloud Backup agent files
-
-The following section lists the locations of the Cloud Backup agent on
-both Linux and Windows servers.
-
-#### Agent file locations (Linux)
-
-Assuming a default installation, following are the agent file locations
-on Linux systems:
-
--   Configuration files: **/etc/driveclient**
--   Logs: **/var/log** (This value might be different on your server,
-    depending on your settings in the **log4cxx.xml** file.)
--   Startup script: **/etc/init.d**
--   Application: **/usr/local/bin**
--   Process Identification (PID) file for running the agent:
-    **/var/run/driveclient.pid**
--   Database: Search for a **\*.db** file under **/var/cache/driveclient**
-
-**Note**: If `driveclient` is installed as an individual user,
-most of these files are under **~/.driveclient**.
-
-#### Agent file locations (Windows)
-
-Finding the `driveclient` files under various flavors of Windows is
-a little complicated. In general, you can find these files under the
-folder to which **CSIDL_COMMON_APPDATA** points.
-
--   For more information about this location on Windows versions
-    starting with Vista, see
-    <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd378457(v=vs.85).aspx">KNOWNFOLDERID</a>.
--   For more information about this location on earlier versions of
-    Windows, see
-    <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/bb762494(v=vs.85).aspx">CSIDL</a>.
-
-In a typical installation, the files are located in the following folders:
-
--   Configuration files: **%ProgramData%\\Driveclient**
--   Logs: **%ProgramData%\\Driveclient\\logs** (This value might be different
-    on your server, depending on your settings in the **log4cxx.xml** file
-    under Configuration files.)
--   Application: **%ProgramFiles%\\Driveclient**
--   Database: Search for a **\*.db** file under **%ProgramData%\\Driveclient**
 
 ### Disable logging
 

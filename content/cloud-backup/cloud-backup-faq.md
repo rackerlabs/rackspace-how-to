@@ -5,7 +5,7 @@ title: Cloud Backup FAQ
 type: article
 created_date: '2015-12-10'
 created_by: Rackspace Support
-last_modified_date: '2020-01-15'
+last_modified_date: '2020-09-15'
 last_modified_by: Brett Johnson
 product: Cloud Backup
 product_url: cloud-backup
@@ -151,12 +151,14 @@ in the list of Cloud Backup actions.
 
 #### Can I use Cloud Backup on my server?
 
-You can use Cloud Backup on virtually any server in the
-Rackspace Cloud. Some exceptions are FreeBSD&reg; 9, Debian&reg; 5, and Windows&reg;
-2003.
+You can use Cloud Backup on Linux and Windows in the Rackspace Cloud. Some exceptions are
+FreeBSD&reg; 9, Debian&reg; 5, and Windows&reg; 2003.
+You can also use Cloud Backup on Linux and Windows servers external to Rackspace Cloud, 
+including just about any server connected to the public internet, such as personal laptops,
+servers located on your company's premesis, and servers hosted by other cloud providers.
 
 **Note**: If you have servers that are not in the Rackspace Cloud that are running operating
-systems that are supported by Rackspace, the following installer links for more details.
+systems that are supported by Rackspace, see the following installer links for more details.
 
 Before you can use Cloud Backup, you must have the backup agent installed and
 running on your cloud server. Cloud servers with a Managed Operations service
@@ -263,3 +265,26 @@ our API server on port 443.
 
 This functionality is not officially supported, but it is physically possible
 to do it. See the following link for more information on [cross-DC restore hacks](/how-to/performing-cross-dc-restores-and-backups/).
+
+#### Where my backup-related files?
+
+For Linux they are here:
+
+-   Configuration files: **/etc/driveclient**
+-   Logs: **/var/log** (This value might be different on your server,
+    depending on your settings in the **log4cxx.xml** file.)
+-   Startup script: **/etc/init.d** OR **/etc/systemd/system**
+-   Application: **/usr/local/bin**
+-   Process Identification (PID) file for running the agent:
+    **/var/run/driveclient.pid**
+-   Database: Search for a **\*.db** file under **/var/cache/driveclient**
+
+And for Windows they are typically here:
+
+-   Configuration files: **%ProgramData%\\Driveclient**
+-   Logs: **%ProgramData%\\Driveclient\\logs** (This value might be different
+    on your server, depending on your settings in the **log4cxx.xml** file
+    under Configuration files.)
+-   Application: **%ProgramFiles%\\Driveclient**
+-   Database: Search for a **\*.db** file under **%ProgramData%\\Driveclient**
+
