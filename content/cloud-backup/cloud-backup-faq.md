@@ -157,8 +157,8 @@ You can also use Cloud Backup on Linux and Windows servers external to Rackspace
 including just about any server connected to the public internet, such as personal laptops,
 servers located on your company's premesis, and servers hosted by other cloud providers.
 
-**Note**: If you have servers that are not in the Rackspace Cloud that are running operating
-systems that are supported by Rackspace, see the following installer links for more details.
+**Note**: If you have servers that are not in the Rackspace Cloud and run operating
+systems supported by Rackspace, see the following installer links for more details.
 
 Before you can use Cloud Backup, you must have the backup agent installed and
 running on your cloud server. Cloud servers with a Managed Operations service
