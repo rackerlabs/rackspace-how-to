@@ -62,10 +62,10 @@ Use the following steps to update the backup agent for Linux-based systems, such
 For more detailed information on these configuration settings, see
 [Update or install the Cloud Backup agent on Linux](/how-to/update-or-install-the-cloud-backup-agent-on-linux/).
 
-**Warning:** This assumes that the reason the agent is being manually installed is because it is being installed on a
-system not yet supported by the current updater. For that reason, we make no assumptions about the requirements to
-add the agent or the updater as a service. This means the driveclient will have to be started manually every time
-the server is restarted.
+**Warning:** This assumes that you are manually installing the agent because the system you are installing it on is
+not yet supported by the current updater. For that reason, we make no assumptions about the requirements to
+add the agent or the updater as a service. This means you must manually start the driveclient every time you
+restart the server.
 
 ### Update the agent on a Windows system
 
