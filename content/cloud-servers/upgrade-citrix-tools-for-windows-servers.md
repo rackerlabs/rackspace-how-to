@@ -1,5 +1,5 @@
 ---
-permalink: upgrade-citrix-xen-server-tools-for-windows-cloud-servers/
+permalink: upgrade-citrix-xenserver-tools-for-windows-cloud-servers/
 audit_date:
 title: Upgrade Citrix (XenServer) Tools for Windows cloud servers
 type: article
