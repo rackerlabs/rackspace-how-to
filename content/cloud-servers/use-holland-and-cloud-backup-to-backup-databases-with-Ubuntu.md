@@ -1,5 +1,5 @@
 ---
-permalink: use-holland-and-cloud-backup-to-back-up-mysql-databases/
+permalink: use-holland-and-cloud-backup-to-backup-mysql-databases/
 audit_date: '2019-01-30'
 title: Use Holland and Cloud Backup to back up MySQL databases
 type: article
