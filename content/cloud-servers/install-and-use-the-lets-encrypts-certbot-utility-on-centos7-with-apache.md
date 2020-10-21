@@ -5,7 +5,7 @@ title: 'Install and use the Let&apos;s Encrypt Certbot utility on CentOS 7 with 
 type: article
 created_date: '2020-08-01'
 created_by: Z McCrocklin
-last_modified_date: '2020-08-12'
+last_modified_date: '2020-10-21'
 last_modified_by: Cat Lookabaugh
 product: Cloud Servers
 product_url: cloud-servers
@@ -222,7 +222,7 @@ Use the following commands to configure Apache:
 
 3. Run the following commmand to do a syntax check:  
 
-       httpd -t 
+       httpd -t
 
 4. If you get `Syntax OK`, then run the following command to reload Apache:  
 
