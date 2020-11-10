@@ -41,6 +41,7 @@ variable with the API key:
 
     echo -n 'API key: ' && read -s apikey && export apikey && echo ''
 
+To install the updater where an agent is already registered, simply run the ./cloudbackup-updater.
 To both install the updater and install and register the Cloud Backup agent, run
 the following command:
 
