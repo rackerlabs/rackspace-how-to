@@ -84,7 +84,7 @@ Archiving account:
     export the results of a search, see [Export archive search results
     in Cloud Office](/how-to/export-archive-search-results-in-cloud-office).
 
-    **Note:** You can export searches with a maximum of 15,000 results or a total size of 3.5 GB
+    **Note:** You can export searches with a maximum of 30,000 results and a total size of 20 GB
 
 - To export an entire archive, divide your searches into monthly intervals for
   the duration of the archive's existence.
