@@ -4,8 +4,8 @@ type: practice
 created_date: '2016-05-25'
 type: article
 created_by: Nate Archer
-last_modified_date: '2019-05-16'
-last_modified_by: Hiten Mistry
+last_modified_date: '2021-03-31'
+last_modified_by: Ana Ma Corpus
 product: undefined
 product_url: undefined
 ---
@@ -29,6 +29,8 @@ Yes
 Yes
 
 Somewhat
+Yes
+
 **Answer options**
 - Yes 
 - Somewhat
@@ -48,6 +50,8 @@ Somewhat Often
 Often
 
 Somewhat Often
+Often
+
 **Answer options**
 - Often
 - Somewhat often
@@ -65,6 +69,8 @@ Yes
 Yes
 
 Yes
+Yes
+
 **Answer options**
 - Yes
 - No
@@ -81,6 +87,8 @@ Yes
 Yes
 
 No
+Yes
+
 **Answer options**
 - Yes
 - No
@@ -96,6 +104,8 @@ Thanks!
 Video should be a bit slower or provide download slides
 
 This is a good way of helping others to contribute and learn a bit more about GITHub. Does require a bit of technical know-how!
+
+Very helpful.
 
 **Answer options**
 - Open ended
